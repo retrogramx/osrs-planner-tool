@@ -1,0 +1,98 @@
+{
+    "id": "full_graceful",
+    "name": "Full Graceful Set",
+    "description": "Obtain all 6 pieces of the Graceful outfit",
+    "target_marks": 260,
+    "tasks": [
+        {
+            "task_type": "agility_course",
+            "skill": "agility",
+            "name": "Draynor Village Rooftop Course",
+            "from_level": 1,
+            "to_level": 20,
+            "xp_per_hour": 10000,
+            "marks_per_hour": 12,
+            "combat_requirement": false
+        },
+        {
+            "task_type": "agility_course",
+            "skill": "agility",
+            "name": "Al Kharid Rooftop Course",
+            "from_level": 20,
+            "to_level": 30,
+            "xp_per_hour": 12000,
+            "marks_per_hour": 10,
+            "combat_requirement": false
+        },
+        {
+            "task_type": "agility_course",
+            "skill": "agility",
+            "name": "Varrock Rooftop Course",
+            "from_level": 30,
+            "to_level": 40,
+            "xp_per_hour": 14000,
+            "marks_per_hour": 10,
+            "combat_requirement": false
+        },
+        {
+            "task_type": "agility_course",
+            "skill": "agility",
+            "name": "Canifis Rooftop Course",
+            "from_level": 40,
+            "to_level": 50,
+            "xp_per_hour": 19700,
+            "marks_per_hour": 17,
+            "combat_requirement": true
+        },
+        {
+            "task_type": "agility_course",
+            "skill": "agility",
+            "name": "Falador Rooftop Course",
+            "from_level": 50,
+            "to_level": 60,
+            "xp_per_hour": 35000,
+            "marks_per_hour": 11,
+            "combat_requirement": false
+        },
+        {
+            "task_type": "agility_course",
+            "skill": "agility",
+            "name": "Seers' Village Rooftop Course",
+            "from_level": 60,
+            "to_level": 70,
+            "xp_per_hour": 46800,
+            "marks_per_hour": 12,
+            "combat_requirement": false
+        },
+        {
+            "task_type": "agility_course",
+            "skill": "agility",
+            "name": "Pollnivneach Rooftop Course",
+            "from_level": 70,
+            "to_level": 80,
+            "xp_per_hour": 52300,
+            "marks_per_hour": 13,
+            "combat_requirement": false
+        },
+        {
+            "task_type": "agility_course",
+            "skill": "agility",
+            "name": "Rellekka Rooftop Course",
+            "from_level": 80,
+            "to_level": 90,
+            "xp_per_hour": 55000,
+            "marks_per_hour": 14,
+            "combat_requirement": false
+        },
+        {
+            "task_type": "agility_course",
+            "skill": "agility",
+            "name": "Ardougne Rooftop Course",
+            "from_level": 90,
+            "to_level": 99,
+            "xp_per_hour": 70000,
+            "marks_per_hour": 17,
+            "combat_requirement": false
+        }
+    ]
+}
