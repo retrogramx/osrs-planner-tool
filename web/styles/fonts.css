@@ -1,0 +1,44 @@
+/* ============================================================================
+   GILDED LEDGER — Real OSRS Fonts (@font-face)
+   ----------------------------------------------------------------------------
+   The ACTUAL in-game RuneScape fonts, extracted by RuneStar (github.com/
+   RuneStar/fonts), released CC0 / public domain — "every font with all
+   characters exactly as appears in-game." Self-hosted from web/fonts/ so the
+   app works offline and never depends on a CDN staying up.
+
+   NOTE on rendering: these are bitmap fonts. They look crisp and authentic at
+   their native small sizes (~16px) and get blocky when scaled large. So we use
+   them for UI text, labels, and stat numbers — NOT long paragraphs — and keep
+   a modern body font (Hanken Grotesk) for readable prose on the tracker side.
+   ============================================================================ */
+
+@font-face {
+  font-family: "RuneScape Plain 12";          /* almost every in-game interface */
+  src: url("../fonts/RuneScape-Plain-12.otf") format("opentype");
+  font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "RuneScape Bold 12";           /* bold interface text / labels */
+  src: url("../fonts/RuneScape-Bold-12.otf") format("opentype");
+  font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "RuneScape Quill";             /* dialogue / "ledger" flourish */
+  src: url("../fonts/RuneScape-Quill.otf") format("opentype");
+  font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "RuneScape Quill Caps";        /* decorative caps headings */
+  src: url("../fonts/RuneScape-Quill-Caps.otf") format("opentype");
+  font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "RuneScape Quill 8";           /* small dialogue-box text */
+  src: url("../fonts/RuneScape-Quill-8.otf") format("opentype");
+  font-weight: normal; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: "RuneScape Plain 11";          /* tiny inventory item amounts */
+  src: url("../fonts/RuneScape-Plain-11.otf") format("opentype");
+  font-weight: normal; font-style: normal; font-display: swap;
+}

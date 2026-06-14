@@ -1,0 +1,119 @@
+/* ============================================================================
+   GILDED LEDGER — Design Tokens
+   ----------------------------------------------------------------------------
+   The single source of truth for the whole app's look. Every color, font,
+   size, and spacing value lives here as a CSS custom property (variable).
+   Components NEVER hardcode a hex code or pixel value — they reference a token.
+   Change a value here once and it updates everywhere. This is what keeps a
+   design cohesive instead of drifting into 20 slightly-different greys.
+   ============================================================================ */
+
+:root {
+  /* --- COLOR: CANVAS & MODERN SURFACES ------------------------------------
+     Warm, near-black browns that bridge OSRS's earthy palette with a modern
+     dark dashboard. Everything sits on these. */
+  --canvas:        #15120c;  /* page background base */
+  --canvas-deep:   #0e0b07;  /* deepest wells, vignette edges */
+  --surface:       #1d1810;  /* modern card base */
+  --surface-2:     #262017;  /* a raised/hovered card */
+  --hairline:      #3a3022;  /* 1px borders, dividers */
+
+  /* --- COLOR: AUTHENTIC STONE (the in-game interface material) ------------
+     Used for the "account mirror" panels so they read like RuneScape's UI. */
+  --stone:         #3e3529;  /* panel face */
+  --stone-hi:      #5d4f3a;  /* lighter bevel edge (top/left) */
+  --stone-lo:      #28231b;  /* darker bevel edge (bottom/right) */
+  --stone-edge:    #6f5e44;  /* the thin highlight ring */
+  --rivet:         #c9a04a;  /* gold corner rivets */
+  --parchment:     #d8cca8;  /* aged paper text on stone */
+
+  /* --- COLOR: GOLD SPINE (the language of achievement) --------------------
+     The one accent that ties the authentic and modern halves together.
+     Reserved for: earned/important things, progress fills, focus. */
+  --gold:          #f0a830;
+  --gold-bright:   #ffc24d;
+  --gold-deep:     #b9831f;
+  --gold-glow:     rgba(240, 168, 48, 0.20);
+
+  /* --- COLOR: STATUS (goal states) ---------------------------------------- */
+  --done:          #5ec46a;  /* complete / requirement met */
+  --progress:      #f0a830;  /* in progress (shares the gold) */
+  --blocked:       #d2492f;  /* blocked by a prerequisite */
+  --locked:        #6b6151;  /* not started / locked */
+
+  /* --- COLOR: IN-GAME ACCENTS --------------------------------------------- */
+  --hp:            #c0392b;  /* hitpoints red */
+  --prayer:        #58c4d4;  /* prayer cyan */
+  --iron:          #aab0b6;  /* ironman brushed steel */
+  --rs-yellow:     #ffff00;  /* THE iconic overhead / public-chat yellow */
+  --rs-white:      #ffffff;  /* in-game drop / item amounts */
+  /* Authentic in-game stone (matches the wiki Skills_tab.png) */
+  --gstone:        #6b6656;  /* light stone — frame / pillars between cells */
+  --gstone-lo:     #46443a;  /* recessed cell face */
+  --gstone-dk:     #26241c;  /* deep bevel / total-bar centre */
+  --stone-tex:     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='110' height='110'%3E%3Cfilter id='s'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23s)' opacity='0.55'/%3E%3C/svg%3E");
+
+  /* --- COLOR: TEXT (warm off-whites, never pure #fff on dark) ------------- */
+  --ink:           #efe6d2;  /* primary text */
+  --ink-mute:      #a99f8a;  /* secondary text */
+  --ink-faint:     #6f6552;  /* tertiary / captions */
+
+  /* --- TYPE: FAMILIES -----------------------------------------------------
+     The authentic side uses the REAL in-game OSRS fonts (RuneStar, CC0; see
+     fonts.css). The modern side keeps a warm body sans + a data mono. */
+  --font-rs:       "RuneScape Plain 12", monospace;  /* in-game interface text */
+  --font-rs-bold:  "RuneScape Bold 12", monospace;   /* bold interface / labels */
+  --font-rs-quill: "RuneScape Quill", serif;         /* dialogue / ledger flourish */
+  --font-rs-small: "RuneScape Plain 11", monospace;  /* tiny item-amount numbers */
+
+  /* Semantic roles used across the app: */
+  --font-pixel:    var(--font-rs-bold);              /* small caps labels (kickers) */
+  --font-display:  var(--font-rs-bold);              /* interface headings */
+  --font-body:     "Hanken Grotesk", sans-serif;     /* modern UI + body copy */
+  --font-mono:     "JetBrains Mono", monospace;       /* numbers, stats, data */
+
+  /* --- TYPE: SCALE (a modular scale, ~1.27 ratio) ------------------------- */
+  --fs-2xs:  10px;
+  --fs-xs:   12px;
+  --fs-sm:   13px;
+  --fs-base: 15px;
+  --fs-md:   18px;
+  --fs-lg:   22px;
+  --fs-xl:   28px;
+  --fs-2xl:  36px;
+  --fs-3xl:  48px;
+
+  /* --- SPACE: 4px base scale (consistent rhythm everywhere) --------------- */
+  --s1: 4px;  --s2: 8px;  --s3: 12px; --s4: 16px;
+  --s5: 24px; --s6: 32px; --s7: 48px; --s8: 64px;
+
+  /* --- RADIUS: sharp for stone (authentic), soft for cards (modern) ------- */
+  --r-stone: 2px;
+  --r-card:  12px;
+  --r-pill:  999px;
+
+  /* --- ELEVATION ----------------------------------------------------------
+     Stone uses inset bevels (carved). Modern cards use soft drop shadows. */
+  --bevel-stone:
+    inset 0 0 0 1px var(--stone-edge),
+    inset 2px 2px 0 0 rgba(0,0,0,0.35),
+    inset -2px -2px 0 0 var(--stone-lo);
+  --shadow-card:
+    0 1px 0 rgba(255,255,255,0.03) inset,
+    0 10px 30px -12px rgba(0,0,0,0.7);
+  --glow-gold: 0 0 0 1px rgba(240,168,48,0.35), 0 0 20px -4px var(--gold-glow);
+  /* The signature OSRS hard 1px black text shadow — every glyph in-game has it.
+     This single line is most of what makes RS-font text read as "the game." */
+  --rs-shadow: 1px 1px 0 #000;
+
+  /* --- MOTION ------------------------------------------------------------- */
+  --ease:     cubic-bezier(0.2, 0.7, 0.2, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 0.16s;
+  --dur:      0.26s;
+  --dur-slow: 0.5s;
+
+  /* --- LAYOUT -------------------------------------------------------------- */
+  --maxw:    1280px;
+  --gutter:  var(--s5);
+}

@@ -1,0 +1,109 @@
+/* ============================================================================
+   GILDED LEDGER — Base Layer
+   ----------------------------------------------------------------------------
+   Sits directly on top of tokens.css. Responsibilities:
+     1. A small, modern reset (predictable box model + sane defaults)
+     2. THE CANVAS — the atmospheric background everything is staged on
+     3. Base typography (how raw text looks before any component touches it)
+   No components live here. This is the "stage" the blocks get built on.
+   ============================================================================ */
+
+/* --- 1. RESET ------------------------------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+html { -webkit-text-size-adjust: 100%; }
+img, svg { display: block; max-width: 100%; }
+button, input, select, textarea { font: inherit; color: inherit; }
+a { color: inherit; text-decoration: none; }
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+/* --- 2. THE CANVAS -------------------------------------------------------
+   Three stacked layers create atmosphere instead of a flat fill:
+     a) a warm GOLD GLOW bleeding from the top-right (the "achievement light")
+     b) a faint cool wash from the top-left (depth / contrast to the gold)
+     c) a vertical gradient from canvas -> canvas-deep (a subtle vignette)
+   A separate grain overlay (::before) sits above the fill at low opacity so
+   the dark areas have tooth instead of looking like dead flat black. */
+body {
+  min-height: 100vh;
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  line-height: 1.55;
+  color: var(--ink);
+  background-color: var(--canvas);
+  background-image:
+    radial-gradient(1100px 620px at 78% -12%, var(--gold-glow), transparent 60%),
+    radial-gradient(820px 480px at 2% -6%, rgba(88, 196, 212, 0.05), transparent 55%),
+    linear-gradient(180deg, var(--canvas) 0%, var(--canvas-deep) 100%);
+  background-attachment: fixed;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Film grain: a tiny SVG noise tile, tiled and blended over everything.
+   Very low opacity — you should feel it, not see it. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+}
+
+/* Keep real content above the grain. */
+body > * { position: relative; z-index: 1; }
+
+/* --- 3. BASE TYPOGRAPHY --------------------------------------------------
+   Defaults so raw markup already looks intentional. Components refine from here. */
+h1, h2, h3 { font-family: var(--font-display); font-weight: 600; line-height: 1.05; color: var(--ink); text-shadow: var(--rs-shadow); }
+h1 { font-size: var(--fs-3xl); }
+h2 { font-size: var(--fs-xl); }
+h3 { font-size: var(--fs-lg); }
+
+/* The pixel "kicker" — small uppercase labels in the chunky OSRS voice.
+   A utility because it appears all over (section headers, badges, tabs). */
+.kicker {
+  font-family: var(--font-pixel);
+  font-size: var(--fs-2xs);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gold);
+  line-height: 1;
+  text-shadow: var(--rs-shadow);
+}
+
+/* Numbers and stats always use the mono voice + tabular figures so columns
+   of digits line up perfectly — essential for a stats dashboard. */
+.num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+}
+
+.muted  { color: var(--ink-mute); }
+.faint  { color: var(--ink-faint); }
+.gold   { color: var(--gold); }
+
+/* --- AUTHENTIC IN-GAME TEXT ----------------------------------------------
+   The hard black shadow every OSRS glyph carries, plus the iconic yellow
+   "overhead / important" voice and the white "drop" voice. Reserve yellow
+   for genuine in-game moments (level-ups, drops, goal hints) so it lands as
+   a knowing wink, not wallpaper. */
+.rs-text  { text-shadow: var(--rs-shadow); }
+.overhead { font-family: var(--font-rs-bold); color: var(--rs-yellow); text-shadow: var(--rs-shadow); }
+.drop     { font-family: var(--font-rs-bold); color: var(--rs-white);  text-shadow: var(--rs-shadow); }
+
+/* Sprites: OSRS art is low-res — scale it crisp & blocky, never blurry. */
+.sprite { image-rendering: -moz-crisp-edges; image-rendering: pixelated; display: block; }
+
+/* --- MOBILE ---------------------------------------------------------------
+   Everything is built mobile-first / touch-friendly. Tighten the page gutter
+   and base size on small screens; components stay fixed-size and reflow. */
+@media (max-width: 640px) {
+  :root { --gutter: 12px; }
+  body { font-size: 14px; }
+}

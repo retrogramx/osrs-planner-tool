@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gilded Ledger — Block 1: Materials</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles/fonts.css" />
+<link rel="stylesheet" href="styles/tokens.css" />
+<link rel="stylesheet" href="styles/base.css" />
+<link rel="stylesheet" href="styles/components.css" />
+<style>
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: var(--s7) var(--gutter); }
+  .head { margin-bottom: var(--s6); }
+  .head p { color: var(--ink-mute); max-width: 64ch; margin-top: var(--s3); }
+  .sec-head { display: flex; align-items: baseline; gap: var(--s3); margin: var(--s7) 0 var(--s5); }
+  .sec-head .n { font-family: var(--font-mono); color: var(--ink-faint); font-size: var(--fs-sm); }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s5); }
+  @media (max-width: 760px){ .grid2 { grid-template-columns: 1fr; } }
+  @media (max-width: 640px){
+    .skills-panel { margin-inline: auto; }   /* keep fixed compact cells; just centre the panel */
+  }
+  .row { display: flex; gap: var(--s3); flex-wrap: wrap; align-items: center; }
+  .stack { display: flex; flex-direction: column; gap: var(--s3); }
+  .speclabel { font-family: var(--font-mono); font-size: var(--fs-2xs); color: var(--ink-faint); text-transform: uppercase; letter-spacing: .06em; margin-bottom: var(--s2); }
+  .num-lg { font-family: var(--font-rs-bold); font-size: 28px; color: var(--gold-bright); text-shadow: var(--rs-shadow); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="head">
+    <span class="kicker">Gilded Ledger · Block 1</span>
+    <h2 style="margin-top:10px">Materials</h2>
+    <p>The reusable primitives. Two surfaces — authentic <b>stone</b> for the account mirror, modern <b>card</b> for the tracker — plus buttons, badges, and progress. Everything ahead is built from these.</p>
+  </div>
+
+  <!-- SURFACES -->
+  <div class="sec-head"><span class="n">A</span><h3>Surfaces</h3></div>
+  <div class="grid2">
+    <div>
+      <div class="speclabel">.panel — authentic stone</div>
+      <div class="panel">
+        <div class="panel__title">Skills</div>
+        <div class="row" style="gap:var(--s5)">
+          <div><div class="speclabel" style="color:var(--parchment);opacity:.7">Attack</div><div class="num-lg">72</div></div>
+          <div><div class="speclabel" style="color:var(--parchment);opacity:.7">Slayer</div><div class="num-lg">63</div></div>
+          <div><div class="speclabel" style="color:var(--parchment);opacity:.7">Total</div><div class="num-lg">1,930</div></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="speclabel">.card &amp; .card--featured — modern</div>
+      <div class="stack">
+        <div class="card">
+          <div class="card__head"><span class="card__title">Collection Log</span><span class="badge badge--live"><span class="dot"></span>Live</span></div>
+          <div class="row" style="justify-content:space-between"><span class="num" style="font-size:var(--fs-2xl);font-weight:700">260<span class="faint" style="font-size:var(--fs-md)">/1701</span></span><span class="muted" style="font-size:var(--fs-sm)">15.3%</span></div>
+        </div>
+        <div class="card card--featured">
+          <div class="card__head"><span class="card__title">Barrows Gloves</span><span class="badge badge--blocked"><span class="dot"></span>Blocked</span></div>
+          <p class="muted" style="font-size:var(--fs-sm)">Featured card — gold focus glow for the active goal.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BUTTONS -->
+  <div class="sec-head"><span class="n">B</span><h3>Buttons</h3></div>
+  <div class="card">
+    <div class="speclabel">primary · secondary · ghost &nbsp;—&nbsp; sizes sm / base / lg</div>
+    <div class="row">
+      <button class="btn btn--primary">Add a goal</button>
+      <button class="btn btn--confirm">Complete goal</button>
+      <button class="btn btn--secondary">Refresh stats</button>
+      <button class="btn btn--ghost">Import sheet</button>
+    </div>
+    <div class="row" style="margin-top:var(--s4)">
+      <button class="btn btn--primary btn--sm">Small</button>
+      <button class="btn btn--primary">Base</button>
+      <button class="btn btn--primary btn--lg">Large</button>
+    </div>
+  </div>
+
+  <!-- BADGES -->
+  <div class="sec-head"><span class="n">C</span><h3>Badges &amp; status</h3></div>
+  <div class="grid2">
+    <div class="card">
+      <div class="speclabel">Goal status</div>
+      <div class="row">
+        <span class="badge badge--done"><span class="dot"></span>Done</span>
+        <span class="badge badge--progress"><span class="dot"></span>In progress</span>
+        <span class="badge badge--blocked"><span class="dot"></span>Blocked</span>
+        <span class="badge badge--locked"><span class="dot"></span>Locked</span>
+      </div>
+    </div>
+    <div class="card">
+      <div class="speclabel">Data provenance — where a number came from</div>
+      <div class="row">
+        <span class="badge badge--live"><span class="dot"></span>Live</span>
+        <span class="badge badge--plugin"><span class="dot"></span>Plugin</span>
+        <span class="badge badge--manual"><span class="dot"></span>Manual</span>
+      </div>
+      <p class="muted" style="font-size:var(--fs-sm);margin-top:var(--s3)">Every stat in the app wears one of these, so you always know if a number is auto-fetched, plugin-synced, or hand-entered.</p>
+    </div>
+  </div>
+
+  <!-- PROGRESS -->
+  <div class="sec-head"><span class="n">D</span><h3>Progress</h3></div>
+  <div class="card">
+    <div class="stack" style="gap:var(--s5)">
+      <div>
+        <div class="row" style="justify-content:space-between"><span class="speclabel" style="margin:0">85 Slayer &nbsp;<span class="badge badge--live" style="vertical-align:middle"><span class="dot"></span>Live</span></span><span class="num muted" style="font-size:var(--fs-sm)">63 / 85 · 74%</span></div>
+        <div class="progress" style="margin-top:8px"><div class="progress__fill" style="width:74%"></div></div>
+      </div>
+      <div>
+        <div class="row" style="justify-content:space-between"><span class="speclabel" style="margin:0">70 Prayer (met)</span><span class="num muted" style="font-size:var(--fs-sm)">100%</span></div>
+        <div class="progress" style="margin-top:8px"><div class="progress__fill progress__fill--done" style="width:100%"></div></div>
+      </div>
+      <div>
+        <div class="row" style="justify-content:space-between"><span class="speclabel" style="margin:0">Corrupted Bowfa (blocked)</span><span class="num muted" style="font-size:var(--fs-sm)">blocked by Song of the Elves</span></div>
+        <div class="progress" style="margin-top:8px"><div class="progress__fill progress__fill--blocked" style="width:30%"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WINDOWS & SLOTS (from SlayerScape) -->
+  <div class="sec-head"><span class="n">E</span><h3>Interface windows &amp; the skills panel</h3><span class="muted" style="font-size:var(--fs-sm)">— the OSRS window chrome + the tight in-game stat cell</span></div>
+  <div class="grid2" style="align-items:start">
+    <div class="panel window">
+      <div class="window__bar"><span class="window__title">Add a goal</span><button class="window__close">✕</button></div>
+      <p style="color:var(--parchment);font-family:var(--font-rs);font-size:15px;text-shadow:var(--rs-shadow);line-height:1.5">A real dialog uses this exact chrome — stone frame, gold corner brackets, centered title, gold X close.</p>
+      <div class="row" style="margin-top:var(--s4);justify-content:flex-end">
+        <button class="btn btn--ghost btn--sm">Cancel</button>
+        <button class="btn btn--confirm btn--sm">Create</button>
+      </div>
+    </div>
+    <div>
+      <div class="speclabel">.statcell — tight in-game skill cells: icon · current/base on a diagonal · XP bar</div>
+      <div class="panel skills-panel" style="width:fit-content;padding:var(--s4)">
+        <div class="panel__title" style="font-size:15px;margin-bottom:var(--s3)">Skills</div>
+        <div id="skills-grid" style="display:grid;grid-template-columns:repeat(3,64px);gap:1px;background-color:var(--gstone);background-image:var(--stone-tex);background-blend-mode:soft-light;padding:1px;border-radius:2px"></div>
+        <div style="margin-top:2px;background:var(--gstone-dk);border-radius:2px;text-align:center;padding:6px 0;box-shadow:inset 0 0 0 1px rgba(0,0,0,0.5),inset 0 0 0 2px rgba(132,127,107,0.4)"><span class="overhead" id="skills-total" style="font-size:15px">Total level: —</span></div>
+      </div>
+      <p class="muted" style="font-size:var(--fs-sm);margin-top:var(--s3)">Your real levels &amp; skill order from the screenshot (live data will be canonical). Tighter, with the in-game current/base split and XP bar.</p>
+    </div>
+  </div>
+
+  <div class="footnote" style="margin-top:var(--s7);color:var(--ink-faint);font-size:var(--fs-xs)">Block 1 of the Gilded Ledger build · materials only · next: Block 2 — App shell (header + the left-mirror / right-tracker layout).</div>
+</div>
+<script>
+  // OSRS XP table + virtual levels (up to level 126 / 200M XP).
+  const MAX_XP = 200000000, MAX_LEVEL = 126;
+  const XP_TABLE = [0, 0];
+  for (let l = 2; l <= MAX_LEVEL; l++) { let t = 0; for (let x = 1; x < l; x++) t += Math.floor(x + 300 * Math.pow(2, x / 7)); XP_TABLE[l] = Math.floor(t / 4); }
+  function xpForLevel(l){ return l <= 1 ? 0 : (XP_TABLE[l] || XP_TABLE[MAX_LEVEL]); }
+  function levelFromXp(xp){ let l = 1; while (l < MAX_LEVEL && XP_TABLE[l + 1] <= xp) l++; return l; }
+
+  // Tiger0295 — live hiscores snapshot: [skill, level, xp], in the in-game order.
+  const SKILLS = [
+    ['attack',72,906609], ['hitpoints',75,1315565], ['mining',92,7059399],
+    ['strength',81,2402103], ['agility',85,3388868], ['smithing',85,3424013],
+    ['defence',71,814518], ['herblore',73,1087614], ['fishing',99,14038423],
+    ['ranged',68,626935], ['thieving',85,3458429], ['cooking',80,2094630],
+    ['prayer',70,740278], ['crafting',76,1468392], ['firemaking',99,13878413],
+    ['magic',82,2611284], ['fletching',65,461563], ['woodcutting',83,2893955],
+    ['runecraft',71,829144], ['slayer',63,406034], ['farming',94,8744005],
+    ['construction',83,2854578], ['hunter',82,2423445], ['sailing',96,10417752]
+  ];
+
+  const grid = document.getElementById('skills-grid');
+  if (grid) {
+    grid.innerHTML = SKILLS.map(([s, , xp]) => {
+      const lvl = levelFromXp(xp);                                   // virtual level (caps at 126)
+      const lo = xpForLevel(lvl), hi = lvl >= MAX_LEVEL ? MAX_XP : xpForLevel(lvl + 1);
+      const pct = xp >= MAX_XP ? 100 : Math.round((xp - lo) / (hi - lo) * 100);
+      const hue = Math.round(pct * 1.2);                             // 0% red -> 100% green
+      const name = s[0].toUpperCase() + s.slice(1);
+      return `<div class="statcell" tabindex="0" data-skill="${name}" data-level="${lvl}" data-xp="${xp}">` +
+               `<span class="statcell__icon"><img class="sprite" src="assets/sprites/skills/${s}.png" alt="${name}"></span>` +
+               `<span class="statcell__nums"><span class="statcell__cur">${lvl}</span><span class="statcell__base">${lvl}</span></span>` +
+               `<span class="statcell__bar"><i style="width:${pct}%;background:hsl(${hue},65%,45%)"></i></span></div>`;
+    }).join('');
+    document.getElementById('skills-total').textContent =
+      'Total level: ' + SKILLS.reduce((a, [, l]) => a + Math.min(99, l), 0);
+  }
+
+  // ---- In-game style XP tooltip (hover on desktop, tap on mobile) ----
+  const tip = document.createElement('div');
+  tip.className = 'osrs-tip'; tip.hidden = true;
+  document.body.appendChild(tip);
+
+  function fillTip(cell){
+    const skill = cell.dataset.skill, lvl = +cell.dataset.level, xp = +cell.dataset.xp;
+    let html = `<div class="osrs-tip__title">${skill} — level ${lvl}</div>` +
+               `<div class="osrs-tip__row">Total XP: <b>${xp.toLocaleString()}</b></div>`;
+    if (xp >= MAX_XP) {
+      html += `<div class="osrs-tip__row">200M XP — maxed</div>`;
+    } else if (lvl >= MAX_LEVEL) {
+      html += `<div class="osrs-tip__row">200M XP at: <b>${MAX_XP.toLocaleString()}</b></div>` +
+              `<div class="osrs-tip__row">Remaining: <b>${(MAX_XP - xp).toLocaleString()}</b></div>`;
+    } else {
+      const next = xpForLevel(lvl + 1);
+      const label = lvl >= 99 ? 'Next virtual level at' : 'Next level at';
+      html += `<div class="osrs-tip__row">${label}: <b>${next.toLocaleString()}</b></div>` +
+              `<div class="osrs-tip__row">Remaining: <b>${(next - xp).toLocaleString()}</b></div>`;
+    }
+    tip.innerHTML = html;
+  }
+  function placeTip(x, y){
+    tip.hidden = false;
+    const w = tip.offsetWidth, h = tip.offsetHeight;
+    let px = x + 14, py = y + 16;
+    if (px + w > innerWidth - 6) px = x - w - 14;
+    if (py + h > innerHeight - 6) py = y - h - 16;
+    tip.style.left = Math.max(6, px) + 'px';
+    tip.style.top  = Math.max(6, py) + 'px';
+  }
+  function showFor(cell, x, y){ fillTip(cell); placeTip(x, y); }
+  function hideTip(){ tip.hidden = true; }
+
+  if (grid) {
+    grid.querySelectorAll('.statcell').forEach(cell => {
+      cell.addEventListener('mouseenter', e => showFor(cell, e.clientX, e.clientY));
+      cell.addEventListener('mousemove', e => { if (!tip.hidden) placeTip(e.clientX, e.clientY); });
+      cell.addEventListener('mouseleave', hideTip);
+      cell.addEventListener('focus', () => { const r = cell.getBoundingClientRect(); showFor(cell, r.left, r.bottom); });
+      cell.addEventListener('blur', hideTip);
+      cell.addEventListener('click', e => {            // tap (mobile): toggle this cell's tooltip
+        e.stopPropagation();
+        const r = cell.getBoundingClientRect();
+        showFor(cell, e.clientX || (r.left + r.width / 2), e.clientY || r.bottom);
+      });
+    });
+    document.addEventListener('click', hideTip);
+    addEventListener('scroll', hideTip, true);
+  }
+</script>
+</body>
+</html>
