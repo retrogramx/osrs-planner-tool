@@ -228,7 +228,7 @@ X1–X3/X5 unresolved ⇒ row dropped+logged (never node fabricated, never crash
 
 **Three narrow jobs (strict structured output):**
 
-1. **Quest-residual → REQUIRES cond tree** (v1-CORE). Input = `quest.requirements` with skill/qp/combat spans **stripped** (the schema's enum omits skill/combat atoms so the LLM can't re-derive them). Emits flat groups + atoms (`quest_done`, **`quest_started`** [added so partial-completion is expressible rather than dropped or wrongly upgraded to `quest_done`], `has_item`, `has_node`, `diary_done`, `ca_done`, `qp_at_least`, `account_type`) + `unresolved`. "and/both/comma"→AND, "or/either"→OR, depth ≤3. Anything still inexpressible → `unresolved` + `verify` + WARN, **never coerced**.
+1. **Quest-residual → REQUIRES cond tree** (v1-CORE). Input = `quest.requirements` with skill/qp/combat spans **stripped** (the schema's enum omits skill/combat atoms so the LLM can't re-derive them). Emits flat groups + atoms (`quest_done`, **`quest_stage`** [a quest-progress-varbit `>= N` atom that subsumes `quest_done` (stage=end) and the old `quest_started` (stage>=1); real gates like fairy-ring access need stage>=40 — see research/scale-gaps.md], `has_item`, `has_node`, `diary_done`, `ca_done`, `qp_at_least`, `account_type`) + `unresolved`. "and/both/comma"→AND, "or/either"→OR, depth ≤3. Anything still inexpressible → `unresolved` + `verify` + WARN, **never coerced**.
 2. **`{{efn}}` footnote → predicate** (v1-CORE for the closed set-footnote table). Key field = **`kind` triage**: `condition`→`cond_group` FK on the loadout/rec edge; `advisory`→`loadout_item.data.note` (never a fake requirement); `none`→prose. v1 win: `"full Void"`→`AND(has_node access:full-void)` via a short cached mapping table over existing `access:*` nodes; free-text Prayer/quest-conditional tail deferred (emit only if fully grounded, else WARN). **Position-bound** (§3): the predicate attaches to the specific rank the footnote followed.
 3. **In-cell `>`/`/` → ranked/alternative items** (v1-CORE, mostly deterministic). The deterministic splitter owns structure + exact-name resolution (with a **variant-suffix / charge-number normalizer** so `glory` vs `glory(6)` is resolved by rule, not LLM). The LLM is invoked **only** for a plink that fails deterministic resolution (ambiguous/renamed/variant, or the X9 multi-numeric-id case), handed the small candidate set, picks one id (constrained to the set, then FK-checked) **and the choice is round-trip checked** (`chosen_id ∈ candidates ∧ FK-resolves`; ordering preserved) — or null + `verify="tier3:plink-ambiguous"`.
 
@@ -261,9 +261,15 @@ def slug_id(prefix, *p): return ":".join([prefix, *[slug(x) for x in p]])
 **Stage 2 — fact edges + ACCESS construction.** `drops` (verbatim `data.rate`/`qty_low`/`qty_high`/`variant`/`rarity_alt`, never re-mathed, excluded from requires_dag / I15); `located_in`; `gated_by`. **Access sink mechanism:** mint `access:<slug>` iff ≥2 nodes gate the same capability **or** it's a set-completion; else REQUIRE the producer directly. Producers `--grants-->access`, consumers `--requires-->access` — no producer edge targets another producer → the requires projection can't cycle through the glue. **Conditional grant for sets** = a *single* grant carrying an AND-of-pieces tree (NOT four OR-able grants — the false-full-Void-on-one-piece bug):
 
 ```python
-cg = build_tree(AND, [has_item("item:11665"), has_item("item:8839"),
-                      has_item("item:8840"),  has_item("item:8842")])
-edge(type="grants", src="access:full-void", dst="access:full-void", cond_group=cg, data={"method": "own_set"})
+helm_or = build_tree(OR, [has_item("item:11663"),   # Void mage helm
+                          has_item("item:11664"),   # Void ranger helm
+                          has_item("item:11665")])  # Void melee helm — any one helm is the set rule
+cg = build_tree(AND, [helm_or, has_item("item:8839"),
+                      has_item("item:8840"), has_item("item:8842")])
+# producer node so grants reads Activity→Access (legal under I3, no I1 self-loop)
+node(id="activity:own-full-void", kind="activity", data={"activity_kind": "item_set"})
+edge(type="grants", src="activity:own-full-void", dst="access:full-void",
+     cond_group=cg, data={"method": "own_set"})
 ```
 
 I16 guard: ≥2 unconditional grants from distinct producers on one access node → WARN (alternatives belong as an OR `cond_group` on the *requirer*, not conjoined prereqs).

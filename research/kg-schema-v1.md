@@ -115,6 +115,8 @@ CREATE TABLE monster_attr (
 | **spell** | Individual spell (teleport/combat) | spine | deferred (id-reserved) |
 | **collection_log_slot** | A specific clog item-in-source slot | spine | deferred (id-reserved) |
 
+**`combat_achievement` scope (v1):** combat_achievement nodes model per-TASK gates only (`ca_done`); CA tier-reward gates (Ghommal's hilt etc.) use the `ca_points` atom against the point total, NOT a `ca:<tier>` done-membership (which is not a real OSRS state). (scale-G3/G6 de-overload.)
+
 **Why `access` is the most important invented node:** it absorbs the messy real world ("can I get to X / do X / have the full set?") into one clean kind, so REQUIRES edges stay simple *and* the prereq graph stays acyclic. Quests/diaries/items/CA-tasks `GRANTS` an `access:*`; bosses/regions `REQUIRES` it. Producers never point at each other directly — they meet at `access` sink nodes (the acyclicity mechanism). **Guidance:** create an `access:*` node only when ≥2 things gate on the same capability, *or* when a capability is a multi-item set completion (e.g. `access:full-void`); otherwise REQUIRE the quest/item directly.
 
 **Why `account_type` is a node, not just an enum:** acquisition rules become *data* (`data.must_self_acquire`, `data.can_ge`) the engine reads, rather than game modes special-cased in Python.
@@ -156,7 +158,7 @@ CREATE TABLE monster_attr (
 2. **Canonical game ids where they exist** (items, NPCs): the id IS the key — `item:<id>`, `npc:<id>`. Jagex never recycles these; they survive renames and join directly to Hiscores/RuneLite/cache dumps. Store the integer also in `node.game_id`.
 3. **Slugs where no game id exists** (skills, quests, access, regions, loadouts, diaries, CAs): authored once via a fixed slugify (lowercase, spaces→`-`, strip punctuation, keep roman numerals: `dragon-slayer-ii`) and **frozen** — never re-derived from a changed name.
 4. **`UNIQUE(kind, slug)`** catches accidental dup-slug authoring; cross-kind collisions are impossible by prefix namespacing.
-5. **Parse on the first colon** for the prefix; the remainder is the opaque key (composite keys like `diary:varrock:hard` use `:` throughout; slugs never contain colons).
+5. **Parse on the first colon** for the prefix; the remainder is the opaque key (single-key slugs never contain colons; composite-key kinds — `gear_loadout`, `diary`, `combat_achievement`, `collection_log_slot` — carry colon-separated slugs, e.g. `melee:mid`, `varrock:hard`, so the slug is the full post-prefix key that `UNIQUE(kind,slug)` needs).
 6. **Look up game ids before authoring** — swapping `npc:scurrius` → `npc:7221` later is a breaking id change. A `node_alias(old_id, new_id)` table (deferred) absorbs the rare unavoidable rename.
 
 ---
@@ -249,12 +251,14 @@ Structural integrity lives in SQL (FKs, CHECKs, the acyclic invariant); payload 
 > **Fix applied (stress-test MUST-FIX #2):** the original "flip every `grants` edge into the DAG" was semantically lossy in two ways and is **replaced**:
 > 1. **Alternative grant sources must not collapse into an AND.** If `access:A` is granted by `Q1` *or* `Q2` (common in OSRS), flipping both emits `A→Q1` and `A→Q2`, so `nx.descendants(A)` falsely claims you must complete *both*. **Fix:** grant disjunction is represented as an **`OR` `cond_group`** on whatever *requires* A (an `OR` of `quest_done` atoms / `has_node`), so alternatives are **evaluated, not conjoined**. Grants are not hard prereq edges.
 > 2. **Parallel `requires` edges must not collapse.** Projecting a `MultiDiGraph` into a plain `DiGraph` silently drops parallel edges' distinct `cond_group`/`qty` (last-writer-wins). **Fix:** project into a `MultiDiGraph` (or merge parallels under an implicit AND) so every condition survives.
-> 3. **Cycle-checking still sees grants.** Grant edges and condition `has_*` leaves are added to the projection as **synthetic, cycle-only** edges — exactly as condition leaves are (see Conditions § QA) — so an authoring tangle that loops through a grant is still caught, without those edges being treated as hard prerequisites.
+> 3. **Cycle-checking sees grants and all ref-bearing cond-leaves.** Grant edges are cycle-only synthetics; ref-bearing condition leaves (`has_*`, `quest_done`, `quest_stage`, `diary_done`, `ca_done`, `kc_at_least`) are projected as real `cond_dep` edges (so the closure is complete) that the cycle check also sees — so a tangle through a grant **or** any ref-bearing atom is caught, without grant flips being treated as hard prerequisites.
 
 ```python
 def requires_dag(g: nx.MultiDiGraph) -> nx.MultiDiGraph:
     """Acyclic REQUIRES projection. Edge a→b means 'a requires b' (b is the prerequisite).
-       Parallel edges preserved (MultiDiGraph); grants/cond-leaves are cycle-only synthetics."""
+       Parallel edges preserved (MultiDiGraph). Ref-bearing condition leaves are projected as
+       'cond_dep' edges so the prereq closure is COMPLETE even for dst=NULL pure-condition edges;
+       grant flips remain cycle-only synthetics."""
     dag = nx.MultiDiGraph()
     dag.add_nodes_from(g.nodes(data=True))
 
@@ -263,20 +267,28 @@ def requires_dag(g: nx.MultiDiGraph) -> nx.MultiDiGraph:
         if d["etype"] == "requires" and v is not None:
             dag.add_edge(u, v, cond_group=d["cond_group"], qty=d["qty"], kind="requires")
 
-    # 2) cycle-only synthetics (NOT hard prereqs): grant flips + condition has_* leaves
+    # 1b) ref-bearing condition leaves → real closure edges (FIX gap 1: a dst=NULL requires edge
+    #     carries its prereqs ONLY in its cond tree, so without this descendants(dag, goal) misses
+    #     them). EVERY atom whose atom_type carries a ref_node FK — has_node, has_item, quest_done,
+    #     quest_stage, diary_done, ca_done, kc_at_least — projects as a 'cond_dep' edge (a dependency,
+    #     possibly an OR alternative; NOT a forced single step). Planner reads `kind` to tell hard
+    #     'requires' from 'cond_dep'. Non-ref atoms (qp_at_least, ca_points, account_type) → skipped.
+    for atom in iter_ref_leaves(g):
+        dag.add_edge(atom.owner_src, atom.ref_node, kind="cond_dep", cond_group=atom.group_id)
+
+    # 2) cycle-only synthetic: grant flips. cyc inherits dag's cond_dep edges, so the acyclicity
+    #    check now sees ALL ref-bearing atoms (FIX gap 2: previously only has_* leaves were checked).
     cyc = dag.copy()
     for u, v, d in g.edges(data=True):
         if d["etype"] == "grants":
-            cyc.add_edge(v, u, kind="grant_synthetic")          # granted depends-on granter (cycle check only)
-    for atom in iter_has_leaves(g):                              # has_node/has_item atoms under any requires/grants cond
-        cyc.add_edge(atom.owner_src, atom.ref_node, kind="cond_synthetic")
+            cyc.add_edge(v, u, kind="grant_synthetic")   # granted depends-on granter (cycle check only)
 
-    if not nx.is_directed_acyclic_graph(cyc):                   # ← QA INVARIANT — fails the build
+    if not nx.is_directed_acyclic_graph(cyc):            # ← QA INVARIANT — fails the build
         raise ValueError(f"REQUIRES projection has a cycle: {list(nx.simple_cycles(cyc))[:20]}")
     return dag
 ```
 
-**Direction is fixed and documented:** `a → b` = "a requires b", so the full prerequisite closure of a goal is `nx.descendants(dag, goal)`; a valid completion order is `reversed(list(nx.topological_sort(dag)))`. The acyclicity check runs on the *synthetic-augmented* graph; the returned `dag` (real `requires` only, parallels preserved) is what the planner traverses.
+**Direction is fixed and documented:** `a → b` = "a requires b", so the full prerequisite closure of a goal is `nx.descendants(dag, goal)`; a valid completion order is `reversed(list(nx.topological_sort(dag)))`. The acyclicity check runs on the grant-flip-augmented graph; the returned `dag` (hard `requires` **plus** `cond_dep` leaves, parallels preserved) is what the planner traverses — it filters on `kind` to tell a forced prerequisite from an OR-alternative dependency, and `nx.descendants(dag, goal)` is now a complete closure even for `dst=NULL` condition edges.
 
 ---
 
@@ -304,7 +316,8 @@ CREATE TABLE condition_atom (
     group_id  INTEGER NOT NULL REFERENCES condition_group(id) ON DELETE CASCADE,
     atom_type TEXT NOT NULL CHECK (atom_type IN (
                 'skill_level','skill_xp','combat_level','quest_done','diary_done',
-                'ca_done','has_item','has_node','kc_at_least','qp_at_least','account_type'
+                'ca_done','has_item','has_node','kc_at_least','qp_at_least','account_type',
+                'quest_stage','count_done','ca_points'
               )),
     ref_node  TEXT REFERENCES node(id) ON DELETE CASCADE,  -- the skill/quest/item/access the atom tests
     threshold INTEGER,                                     -- 70 (level), 43 (prayer), KC count, qp…
@@ -314,6 +327,9 @@ CREATE TABLE condition_atom (
 );
 CREATE INDEX ix_atom_group ON condition_atom(group_id);
 CREATE INDEX ix_atom_ref   ON condition_atom(ref_node);
+-- quest_stage: threshold = min quest-progress stage (varbit) >=; subsumes quest_done(end)/quest_started(1)
+-- ca_points:   threshold = total Combat Achievement points >=, no ref_node (twin of qp_at_least)
+-- count_done:  threshold = n; names its set via data.set_ref = [node ids]; '>= n members satisfied'
 ```
 
 Atom semantics (always `>=` for thresholds — the only comparator OSRS prereqs use; a `cmp` field is deferred until a `<` requirement appears, which it never does in prereqs):
@@ -322,7 +338,11 @@ Atom semantics (always `>=` for thresholds — the only comparator OSRS prereqs 
 - `combat_level` → `state.combat_level >= threshold` (OSRS combat level is a derived formula computed once into state, not re-derived in the tree)
 - `quest_done` / `diary_done` / `ca_done` → `ref_node ∈ state.done`
 - `has_item` → `progress[ref_node] >= (qty or 1)`; `has_node` → boolean presence
-- `kc_at_least` / `qp_at_least` → `progress[ref_node] >= threshold`
+- `kc_at_least` → `progress[ref_node] >= threshold` (ref_node = the monster whose KC is tested)
+- `qp_at_least` → `state.qp >= threshold` (global quest-point counter, no ref_node — like `combat_level`)
+- `quest_stage` → `state.quest_stage[ref_node] >= threshold` (ref_node = the quest; threshold = min stage; subsumes `quest_done`/`quest_started`)
+- `ca_points` → `state.ca_points >= threshold` (global Combat-Achievement point total, no ref_node)
+- `count_done` → `count(m in data.set_ref if m satisfied) >= threshold` (cardinality over a named set; no single ref_node)
 - `account_type` → `account.mode == data.value` (lets a branch be mode-specific)
 
 ### Account-type-awareness mechanism
@@ -359,9 +379,19 @@ def expand_need_item(item_id, account, kg):
     methods = kg.acquisition_methods(item_id, account.mode)  # in-scope ge|drop|shop|quest_reward|skilling
     if at["can_ge"] and not at["must_self_acquire"] and "ge" in methods:
         return GpGoal(item_id, gp=price(item_id))         # MAIN: a gp goal (price from ingest layer)
-    chosen = cheapest_method([m for m in methods if m != "ge"] or methods, account)
-    return AcquireVia(chosen, recurse=True)               # IRON: self-acquire via chosen route → recurse into its prereqs
+    candidates = [m for m in methods if m != "ge"] if not at["can_ge"] else methods
+    if not candidates:
+        return Unacquirable(item_id, reason="no in-scope acquisition method")  # surface the dead end
+    chosen = cheapest_method(candidates, account, kg)     # ranks by per-method data.cost (see below)
+    cost = kg.method_cost(item_id, chosen)                # {currency, amount} | None  (G4 cost model)
+    if cost and cost["currency"] == "coins":
+        return AcquireVia(chosen, gp=cost["amount"], recurse=True)   # coin shop cost = a gp goal
+    if cost:
+        return AcquireVia(chosen, currency=cost, recurse=True)       # alt currency → its producer goal
+    return AcquireVia(chosen, recurse=True)               # IRON: self-acquire via chosen route → recurse
 ```
+
+Cost model (scale-G4): shop/quest_reward acquisition facts may carry `data.cost = {currency, amount}` (currency ∈ `coins | void_commendation | …`); the planner emits a gp goal for coins or a currency goal (recursing into the currency's producer, e.g. Pest Control for commendation points) for alt currencies. Without it `cheapest_method` has nothing to rank — it is what makes per-mode effort estimation real.
 
 For one `npc:7221` (Scurrius) goal, a NORMAL account's gear leaves terminate at gp goals; an IRONMAN's *same* leaves expand into the bosses/minigames/skills that produce the gear — a genuinely different required subgraph from one shared graph. GE price is **not** in the KG (it's volatile; the ingest layer caches it). The KG only flags *that* an item is buyable and *what other routes exist*.
 
@@ -388,18 +418,24 @@ VALUES ('requires','fact','npc:7221', NULL, 1, NULL);
 
 ```
 condition_group:  G_set (id=10, op=AND, parent=NULL, note="full Void Knight set owned")
-condition_atom:   has_item ref=item:11665 (helm) ; has_item ref=item:8839 (top) ;
-                  has_item ref=item:8840 (robe) ; has_item ref=item:8842 (gloves)
+                    └─ G_helm (id=11, op=OR, parent=10, note="any one Void helm")
+condition_atom:   (in G_helm) has_item ref=item:11663 (mage helm) ; has_item ref=item:11664 (ranger helm) ;
+                              has_item ref=item:11665 (melee helm)
+                  (in G_set)  has_item ref=item:8839 (top) ; has_item ref=item:8840 (robe) ;
+                              has_item ref=item:8842 (gloves)
 ```
 
 ```sql
 -- one conditional grant: owning the 4-piece set GRANTS the capability (fix #1)
+-- mint a producer node so grants is Activity→Access (legal under I3) and not a self-loop (I1)
+INSERT INTO node (id, kind, name, slug, data)
+VALUES ('activity:own-full-void','activity','Own Full Void','own-full-void','{"activity_kind":"item_set"}');
 INSERT INTO edge (type, edge_class, src, dst, cond_group, data)
-VALUES ('grants','fact','access:full-void','access:full-void', 10, '{"method":"own_set"}');
--- (src=dst here is just "this access derives from owning its set"; equivalently an item_set activity node)
+VALUES ('grants','fact','activity:own-full-void','access:full-void', 10, '{"method":"own_set"}');
+-- (the producer `activity:own-full-void` carries the set-completion tree; `grants` reads producer → access, so it is legal under I3 and introduces no self-loop under I1.)
 ```
 
-Without conditional grants, four independent `item --grants--> access:full-void` edges would be **implicitly OR-ed**, so owning *one* piece would falsely grant full Void. The `AND` tree on a single grant fixes it.
+Without conditional grants, four independent `item --grants--> access:full-void` edges would be **implicitly OR-ed**, so owning *one* piece would falsely grant full Void. The `AND` tree on a single grant fixes it. The helm clause is an `OR` of the three Void helms (mage/ranger/melee) — that is the real set rule (the helm slot has three valid fillers), not a false-OR; the MUST-FIX #1 conjunction is across the four *slots*, not the helm variants.
 
 The recursive evaluator (state from the per-account overlay):
 
@@ -461,6 +497,7 @@ CREATE TABLE loadout_item (
     rank        INTEGER NOT NULL DEFAULT 1,   -- 1 = most effective (the ranked-list dimension)
     qty         INTEGER,                       -- consumable counts (8x brews)
     cond_group  INTEGER REFERENCES condition_group(id) ON DELETE SET NULL,  -- per-line footnote (loadout-wide)
+    verify      TEXT,                 -- 'verify vs wiki later' marker
     data        TEXT NOT NULL DEFAULT '{}',
     CHECK (json_valid(data))
 );
@@ -484,6 +521,7 @@ CREATE TABLE loadout_override (
     item_node   TEXT REFERENCES node(id) ON DELETE CASCADE,  -- replacement item (NULL = suppress this slot here)
     rank        INTEGER NOT NULL DEFAULT 1,
     cond_group  INTEGER REFERENCES condition_group(id) ON DELETE SET NULL,  -- per-target line footnote
+    verify      TEXT,                 -- 'verify vs wiki later' marker
     data        TEXT NOT NULL DEFAULT '{}',
     CHECK (json_valid(data))
 );
@@ -571,14 +609,11 @@ def load_kg(conn: sqlite3.Connection) -> nx.MultiDiGraph:
                    game_id=r["game_id"], **json.loads(r["data"]))
     # enrich the 3 engine-hot kinds from side tables in 3 bulk passes (not 15)
     for r in conn.execute("SELECT * FROM item_attr"):
-        g.nodes[r["id"]].update(slot=r["slot"], buyable_ge=bool(r["buyable_ge"]),
-                                tradeable=bool(r["tradeable"]), members=bool(r["members"]))
+        g.nodes[r["id"]].update({k: r[k] for k in r.keys() if k != "id"})
     for r in conn.execute("SELECT * FROM skill_attr"):
-        g.nodes[r["id"]].update(is_combat=bool(r["is_combat"]), max_level=r["max_level"],
-                                hiscore_index=r["hiscore_index"])
+        g.nodes[r["id"]].update({k: r[k] for k in r.keys() if k != "id"})
     for r in conn.execute("SELECT * FROM monster_attr"):
-        g.nodes[r["id"]].update(is_boss=bool(r["is_boss"]), combat_level=r["combat_level"],
-                                hiscore_index=r["hiscore_index"])
+        g.nodes[r["id"]].update({k: r[k] for k in r.keys() if k != "id"})
     for r in conn.execute(
         "SELECT id, type, edge_class, src, dst, cond_group, scope, qty, weight, data FROM edge"):
         g.add_edge(r["src"], r["dst"], key=f'{r["type"]}:{r["id"]}',
@@ -660,7 +695,7 @@ Every check has a **severity** (`FAIL` blocks the atomic swap; `WARN` surfaces i
 | **I4** | dst-nullability | `dst IS NULL` only where a pure-condition edge is allowed (`requires`, and conditional `grants`) | Null `dst` on `drops` is a load-time NPE | SQL | **FAIL** |
 | **I5** | Condition tree well-formed | Single root; `NOT`⇒1 child; `AND`/`OR`⇒≥1 child; no orphan atoms; no `parent` cycles | Malformed tree makes `evaluate` raise / return garbage | SQL child-counts + NetworkX parent-acyclicity | **FAIL** |
 | **I6** | Condition ref typing | Every `condition_atom.ref_node` resolves to a node of the kind its `atom_type` implies | A `skill_level` atom on a quest is silently never satisfied → goal looks permanently locked | SQL vs `atom_type→kind` map | **FAIL** |
-| **I7** | Threshold sanity | `threshold`/`qty` in-range per atom type (skill 1–max_level, qp 0–~350, kc/qty ≥1) | Out-of-range = unsatisfiable / trivially-true reqs | SQL (joins `skill_attr.max_level`) | **FAIL\*** range / **WARN** missing |
+| **I7** | Threshold sanity | `threshold`/`qty` in-range per atom type (skill 1–max_level, qp 0–~350, kc/qty ≥1) | Out-of-range = unsatisfiable / trivially-true reqs (a missing threshold on a `requires` atom silently never-satisfies — worse than out-of-range; aligns with pipeline §7) | SQL (joins `skill_attr.max_level`) | **FAIL\*** range / **FAIL** missing |
 | **I8** | Provenance completeness | Every `edge_class='opinion'` edge AND every `loadout_item` AND every `loadout_override` has ≥1 `provenance` row with non-null url/license/accessed_at | CC BY-NC-SA attribution is data-driven; a missing source = a licensing defect shipped | SQL `NOT EXISTS` | **FAIL** |
 | **I9** | Edge-class coherence | `(type='recommended_for') = (edge_class='opinion')` | The licensing seam: a fact mislabeled opinion breaks separability | DB CHECK | **FAIL** |
 | **I10** | ID format & uniqueness | `id` matches `<prefix>:<key>`; prefix legal for `kind`; `UNIQUE(kind,slug)`; canonical kinds carry `game_id` and `id = prefix:game_id` | IDs are the cross-layer contract; malformed/dup id dangles account refs | SQL vs `_qa_id_prefix` + DB UNIQUE | **FAIL** |
@@ -690,6 +725,8 @@ Completeness is **measured, not gated** — each check emits `(check_id, total, 
 | C10 | Orphan nodes | degree-0 nodes (authoring stubs) | WARN |
 | C11 | Verify-debt | count of `verify`-marked rows, trended | WARN (trend) |
 | C12 | Iron acquirability | every boss whose gear includes a non-buyable item has *some* acquisition route (drop/shop/quest/skilling) for irons | WARN |
+| C13 | RDT linkage | every monster with `Rolls>1` or a known RDT flag has explicit RDT linkage (`access:rolls-rare-drop-table`) or a `verify` marker | WARN (FAIL core) |
+| C14 | Source symmetry | reconcile-eligible kinds (`monster`,`item`) have both expected sources present or a `verify` marker | WARN |
 
 ### Where validation runs
 
@@ -742,7 +779,8 @@ Every row below is a legal instance of the v1-CORE DDL. Uncertain real-world val
   { "id": "loadout:ranged:mid", "kind": "gear_loadout", "name": "Ranged (mid-level)",
     "slug": "ranged:mid", "data": { "style": "ranged", "bracket": "mid" } },
   { "id": "activity:fight-caves", "kind": "activity", "name": "Fight Caves", "slug": "fight-caves",
-    "data": { "activity_kind": "minigame" } }
+    "data": { "activity_kind": "minigame" } },
+  { "id": "activity:own-full-void", "kind": "activity", "name": "Own Full Void", "slug": "own-full-void", "data": { "activity_kind": "item_set" } }
 ]
 ```
 
@@ -774,12 +812,12 @@ Scurrius is a deliberately low-barrier first boss: no quest, no hard stat gate. 
 
 ```json
 [
-  { "id": 9100, "type": "grants", "edge_class": "fact", "src": "access:full-void",
+  { "id": 9100, "type": "grants", "edge_class": "fact", "src": "activity:own-full-void",
     "dst": "access:full-void", "cond_group": 10, "data": { "method": "own_set" } }
 ]
 ```
 
-with `cond_group 10 = AND( has_item item:11665, has_item item:8839, has_item item:8840, has_item item:8842 )` (helm AND top AND robe AND gloves). One conditional grant; no false single-piece OR (MUST-FIX #1).
+with `cond_group 10 = AND( OR(has_item item:11663, has_item item:11664, has_item item:11665), has_item item:8839, has_item item:8840, has_item item:8842 )` (any one of the three Void helms AND top AND robe AND gloves). One conditional grant; no false single-piece OR (MUST-FIX #1).
 
 ### Opinion — RECOMMENDED_FOR + a per-boss override
 
@@ -841,6 +879,9 @@ State (separate layer): account `ironman`; goal `node_ref=npc:7221, metric=kc, t
 | `node_alias(old_id, new_id)` rename machinery | IDs are designed immutable; renames rare | First unavoidable rename |
 | Comparator field (`cmp`) on thresholds | OSRS prereqs only ever use `>=` | If a `<` requirement ever appears |
 | Deeper condition nesting beyond 2–3 levels | Two-level AND-of-ORs covers all real v1 reqs | A real requirement needing deeper trees |
+| `count_done` cardinality atom (N-of-M over a named set) | Subquest structure is deferred; headline set-gated items need the FULL quest (`quest_done`) which works today | When intermediate-tier / subquest acquisition routes are authored |
+| `ca_points` accumulator atom + `combat_achievement` de-overload | Per-task `ca_done` ships; tier-reward gating is post-v1 content | When CA tier-reward unlocks are authored (needs STATE layer) |
+| Acquisition `cost{currency, amount}` (shop/alt-currency) | Static display KG needs no costs; structural QA passes without them | HARD when the planner makes per-mode effort/cost estimates (the moat) |
 | `item_set` sugar node (full Void / Inquisitor's / blood moon) | Conditional-`GRANTS` + an `access` node express set completion now; sugar is ergonomics, not capability | When many sets make hand-wiring `access`+grant tedious |
 | Drop-table-as-unit + roll structure ("rolls main table 3×, unique 1×") | `DROPS` handles single lines; v1 only needs uniques/clog | When a loot-tracker feature needs per-roll math |
 | First-class `collection_log_slot` edges (vs `clog.data` JSON) | Clog membership not yet traversed as edges | When a clog tracker queries membership |
@@ -853,3 +894,5 @@ State (separate layer): account `ironman`; goal `node_ref=npc:7221, metric=kc, t
 | GE price storage | Volatile; belongs in the ingest layer | Never in the KG; ingest caches it |
 | Native Postgres `ENUM` / `jsonb` GIN indexes | Plain B-trees + CHECKs portable and sufficient at this scale | Only if profiling demands |
 | Per-account loadout overrides (user edits a recommended loadout) | That's the state layer, not the opinion KG | The goal-tracker plan |
+
+> **Note (scale amendment).** The load-bearing claim "depth≤3 / two-level AND-of-ORs covers all real reqs" is AMENDED to: "covers all single-scalar and set-cardinality reqs via {`quest_stage`, `count_done`, `ca_points`}; deeper/stage/accumulator structure via those atoms." `quest_stage` is now IN v1-CORE (it resolves the pipeline-emits-`quest_started`-vs-enum-rejects contradiction). See research/scale-gaps.md.

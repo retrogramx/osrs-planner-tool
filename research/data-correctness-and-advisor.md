@@ -188,12 +188,12 @@ trustworthy and conversational — the combination neither competitor has.
 
 ## Open questions / next threads
 
-- **Prototype the determinism-first claim on Scurrius**: pull combat level / slot / drops from Cargo
+- **Prototype the determinism-first claim on Scurrius**: pull combat level / slot / drops from the **Bucket** API (`action=bucket`)
   *and* the game cache, reconcile, and show the freeform footnote as the one Tier-3 field. Small
-  proof before writing the real pipeline.
-- **Verify the wiki's actual structured surface**: which Cargo tables + API endpoints expose
+  proof before writing the real pipeline. (largely DONE — implemented against Bucket in data-pipeline-v1.md §10).
+- **Verify the wiki's actual structured surface**: which **Bucket** tables + API endpoints expose
   monster/item/drop/quest data; what `/Strategies` tables look like in raw wikitext. (Reconnaissance,
-  not memory.)
+  not memory.) (ANSWERED by the recon update above — verified buckets: infobox_monster/item/bonuses, dropsline, recommended_equipment, item_id/npc_id/object_id).
 - **Define the golden set** (`qa/core_set.yaml` from the schema) — initial members + verified values.
 - **Define the engine's tool-use surface** for the advisor: `is_unlocked`, `prereqs_for`,
   `next_steps`, `expand_for_account`, `recommendations_for` — the function contract the LLM calls.
