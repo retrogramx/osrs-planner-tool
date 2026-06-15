@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gilded Ledger — Foundation (Block 0)</title>
+
+<!-- Modern-side fonts from Google: Hanken Grotesk (body) + JetBrains Mono (data). -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+<!-- Real in-game OSRS fonts (RuneStar, CC0) first, then tokens, then the stage. -->
+<link rel="stylesheet" href="styles/fonts.css" />
+<link rel="stylesheet" href="styles/tokens.css" />
+<link rel="stylesheet" href="styles/base.css" />
+
+<style>
+  /* Showcase-only layout. The real app won't use these — this page exists
+     purely to make the foundation visible and reviewable. */
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: var(--s8) var(--gutter) var(--s7); }
+
+  .lede { max-width: 60ch; margin-top: var(--s4); }
+  .lede h1 { font-family: var(--font-rs-quill); font-size: clamp(32px, 6vw, 46px); line-height: 1.12; }
+  .lede h1 .em { color: var(--gold); }
+  .lede p { color: var(--ink-mute); font-size: var(--fs-md); margin-top: var(--s4); }
+
+  .rule { height: 1px; background: var(--hairline); margin: var(--s7) 0 var(--s6); }
+  .sec-head { display: flex; align-items: baseline; gap: var(--s3); margin-bottom: var(--s5); }
+  .sec-head .n { font-family: var(--font-mono); color: var(--ink-faint); font-size: var(--fs-sm); }
+
+  /* Swatches */
+  .swatch-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: var(--s3); }
+  .swatch { border-radius: var(--r-card); overflow: hidden; border: 1px solid var(--hairline); background: var(--surface); }
+  .swatch .chip { height: 76px; }
+  .swatch .meta { padding: var(--s2) var(--s3) var(--s3); }
+  .swatch .name { font-size: var(--fs-sm); font-weight: 600; }
+  .swatch .hex { font-family: var(--font-mono); font-size: var(--fs-2xs); color: var(--ink-faint); text-transform: uppercase; }
+  .group-label { grid-column: 1 / -1; margin-top: var(--s4); }
+
+  /* Type specimens */
+  .type-row { display: grid; grid-template-columns: 132px 1fr; gap: var(--s4); align-items: center; padding: var(--s3) 0; border-bottom: 1px solid var(--hairline); }
+  .type-row .tag { font-family: var(--font-mono); font-size: var(--fs-xs); color: var(--ink-faint); }
+  .scale-row { display: flex; align-items: baseline; gap: var(--s4); flex-wrap: wrap; color: var(--ink); }
+  .scale-row span { font-family: var(--font-display); }
+
+  /* Materials teaser — the two surfaces every component will be built from */
+  .materials { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s5); }
+  @media (max-width: 720px) { .materials { grid-template-columns: 1fr; } }
+
+  /* Authentic stone panel (preview of Block 1) */
+  .panel-stone {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,0.03), transparent 40%),
+      var(--stone);
+    border-radius: var(--r-stone);
+    box-shadow: var(--bevel-stone);
+    padding: var(--s5);
+    position: relative;
+  }
+  .panel-stone::after { /* gold corner rivets */
+    content: ""; position: absolute; inset: 5px; border-radius: var(--r-stone);
+    background:
+      radial-gradient(3px 3px at 0 0, var(--rivet), transparent 60%),
+      radial-gradient(3px 3px at 100% 0, var(--rivet), transparent 60%),
+      radial-gradient(3px 3px at 0 100%, var(--rivet), transparent 60%),
+      radial-gradient(3px 3px at 100% 100%, var(--rivet), transparent 60%);
+    pointer-events: none;
+  }
+  .panel-stone .parch { color: var(--parchment); font-family: var(--font-display); font-size: var(--fs-lg); }
+
+  /* Modern card (preview of Block 1) */
+  .card {
+    background: linear-gradient(180deg, var(--surface-2), var(--surface));
+    border: 1px solid var(--hairline);
+    border-radius: var(--r-card);
+    box-shadow: var(--shadow-card);
+    padding: var(--s5);
+  }
+  .card .big { font-family: var(--font-mono); font-size: var(--fs-2xl); font-weight: 700; }
+
+  /* Status chips */
+  .chips { display: flex; gap: var(--s2); flex-wrap: wrap; margin-top: var(--s4); }
+  .status { display: inline-flex; align-items: center; gap: var(--s2); padding: 5px 10px; border-radius: var(--r-pill); font-size: var(--fs-xs); font-weight: 600; }
+  .status .dot { width: 8px; height: 8px; border-radius: 50%; }
+  .s-done    { color: var(--done);     background: color-mix(in srgb, var(--done) 14%, transparent); }
+  .s-prog    { color: var(--progress); background: color-mix(in srgb, var(--progress) 14%, transparent); }
+  .s-block   { color: var(--blocked);  background: color-mix(in srgb, var(--blocked) 14%, transparent); }
+  .s-lock    { color: var(--locked);   background: color-mix(in srgb, var(--locked) 16%, transparent); }
+  .s-done .dot{background:var(--done)} .s-prog .dot{background:var(--progress)}
+  .s-block .dot{background:var(--blocked)} .s-lock .dot{background:var(--locked)}
+
+  .footnote { margin-top: var(--s7); color: var(--ink-faint); font-size: var(--fs-xs); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- DIRECTION -->
+  <span class="kicker">Gilded Ledger · Block 0 · Foundation</span>
+  <div class="lede">
+    <h1>The reverent record of an <span class="em">ironman's</span> earned progress.</h1>
+    <p>Authentic OSRS interface materials — carved stone, parchment, riveted gold, pixel type —
+       fused with a calm modern analytics cockpit. Gold is the one language of achievement.
+       Everything below is built only from the tokens in <span class="num gold">tokens.css</span>.</p>
+  </div>
+
+  <div class="rule"></div>
+
+  <!-- PALETTE -->
+  <div class="sec-head"><span class="n">01</span><h2>Palette</h2></div>
+  <div class="swatch-grid">
+    <div class="group-label kicker">Canvas &amp; surfaces</div>
+    <div class="swatch"><div class="chip" style="background:var(--canvas)"></div><div class="meta"><div class="name">Canvas</div><div class="hex">#15120C</div></div></div>
+    <div class="swatch"><div class="chip" style="background:var(--canvas-deep)"></div><div class="meta"><div class="name">Canvas Deep</div><div class="hex">#0E0B07</div></div></div>
+    <div class="swatch"><div class="chip" style="background:var(--surface)"></div><div class="meta"><div class="name">Surface</div><div class="hex">#1D1810</div></div></div>
+    <div class="swatch"><div class="chip" style="background:var(--surface-2)"></div><div class="meta"><div class="name">Surface 2</div><div class="hex">#262017</div></div></div>
+
+    <div class="group-label kicker">Authentic stone</div>
+    <div class="swatch"><div class="chip" style="background:var(--stone)"></div><div class="meta"><div class="name">Stone</div><div class="hex">#3E3529</div></div></div>
+    <div class="swatch"><div class="chip" style="background:var(--stone-hi)"></div><div class="meta"><div class="name">Stone Hi</div><div class="hex">#5D4F3A</div></div></div>
+    <div class="swatch"><div class="chip" style="background:var(--rivet)"></div><div class="meta"><div class="name">Rivet</div><div class="hex">#C9A04A</div></div></div>
+    <div class="swatch"><div class="chip" style="background:var(--parchment)"></div><div class="meta"><div class="name">Parchment</div><div class="hex">#D8CCA8</div></div></div>
+
+    <div class="group-label kicker">Gold spine &amp; status</div>
+    <div class="swatch"><div class="chip" style="background:var(--gold)"></div><div class="meta"><div class="name">Gold</div><div class="hex">#F0A830</div></div></div>
+    <div class="swatch"><div class="chip" style="background:var(--gold-bright)"></div><div class="meta"><div class="name">Gold Bright</div><div class="hex">#FFC24D</div></div></div>
+    <div class="swatch"><div class="chip" style="background:var(--done)"></div><div class="meta"><div class="name">Done</div><div class="hex">#5EC46A</div></div></div>
+    <div class="swatch"><div class="chip" style="background:var(--blocked)"></div><div class="meta"><div class="name">Blocked</div><div class="hex">#D2492F</div></div></div>
+
+    <div class="group-label kicker">In-game accents</div>
+    <div class="swatch"><div class="chip" style="background:var(--hp)"></div><div class="meta"><div class="name">Hitpoints</div><div class="hex">#C0392B</div></div></div>
+    <div class="swatch"><div class="chip" style="background:var(--prayer)"></div><div class="meta"><div class="name">Prayer</div><div class="hex">#58C4D4</div></div></div>
+    <div class="swatch"><div class="chip" style="background:var(--iron)"></div><div class="meta"><div class="name">Ironman</div><div class="hex">#AAB0B6</div></div></div>
+    <div class="swatch"><div class="chip" style="background:var(--ink)"></div><div class="meta"><div class="name">Ink</div><div class="hex">#EFE6D2</div></div></div>
+  </div>
+
+  <div class="rule"></div>
+
+  <!-- TYPE -->
+  <div class="sec-head"><span class="n">02</span><h2>Type</h2></div>
+  <div class="type-row"><div class="tag">RS Bold 12 · labels</div><div style="font-family:var(--font-rs-bold);font-size:16px;color:var(--gold);letter-spacing:.02em">COLLECTION LOG &nbsp;·&nbsp; COMBAT ACHIEVEMENTS</div></div>
+  <div class="type-row"><div class="tag">RS Plain 12 · interface</div><div style="font-family:var(--font-rs);font-size:16px;color:var(--parchment)">Attack 72 &nbsp; Slayer 63 &nbsp; Construction 70 &nbsp; Total level 1,930</div></div>
+  <div class="type-row"><div class="tag">RS Quill · ledger</div><div style="font-family:var(--font-rs-quill);font-size:26px;color:var(--ink)">Tiger0295 — the reverent ledger of an ironman</div></div>
+  <div class="type-row"><div class="tag">RS Plain 11 · amounts</div><div style="font-family:var(--font-rs-small);font-size:16px;color:var(--gold-bright)">260 / 1701 &nbsp;&nbsp; x1,000 &nbsp;&nbsp; 569 KC</div></div>
+  <div class="type-row"><div class="tag">Hanken · body</div><div style="font-size:var(--fs-base);max-width:60ch">Every item earned, never bought — the collection log is the ledger of a self-made account. The modern body font carries readable prose the bitmap fonts can't.</div></div>
+  <div class="type-row"><div class="tag">JetBrains · data</div><div class="num" style="font-size:var(--fs-lg)">1,930 &nbsp; 88,345,949 &nbsp; 565.9 EHP</div></div>
+  <div style="margin-top:var(--s5)" class="scale-row">
+    <span style="font-size:var(--fs-3xl)">48</span><span style="font-size:var(--fs-2xl)">36</span><span style="font-size:var(--fs-xl)">28</span><span style="font-size:var(--fs-lg)">22</span><span style="font-size:var(--fs-md)">18</span><span style="font-size:var(--fs-base)">15</span><span style="font-size:var(--fs-sm)">13</span>
+  </div>
+
+  <div class="rule"></div>
+
+  <!-- MATERIALS -->
+  <div class="sec-head"><span class="n">03</span><h2>Materials</h2><span class="muted" style="font-size:var(--fs-sm)">— the two surfaces every component is built from (preview of Block 1)</span></div>
+  <div class="materials">
+    <div class="panel-stone">
+      <span class="kicker" style="color:var(--parchment);opacity:.75">Account Mirror</span>
+      <div class="parch" style="margin-top:8px">Authentic stone</div>
+      <p style="color:var(--parchment);opacity:.8;font-size:var(--fs-sm);margin-top:6px">Carved, beveled, riveted. Used for skills, the collection log, and everything that should feel like the game's own interface.</p>
+    </div>
+    <div class="card">
+      <span class="kicker">Goal Tracker</span>
+      <div class="big" style="margin-top:8px">260<span style="color:var(--ink-faint);font-size:var(--fs-lg)">/1701</span></div>
+      <p class="muted" style="font-size:var(--fs-sm);margin-top:6px">Soft, elevated, modern. Used for goals, progress, and analytics — calm and legible.</p>
+      <div class="chips">
+        <span class="status s-done"><span class="dot"></span>Done</span>
+        <span class="status s-prog"><span class="dot"></span>In progress</span>
+        <span class="status s-block"><span class="dot"></span>Blocked</span>
+        <span class="status s-lock"><span class="dot"></span>Locked</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="rule"></div>
+
+  <!-- IN-GAME TEXT -->
+  <div class="sec-head"><span class="n">04</span><h2>In-game text</h2><span class="muted" style="font-size:var(--fs-sm)">— the hard black shadow + the iconic yellow "overhead" voice</span></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--s5)">
+    <!-- the overhead look, recreated on a "ship deck" -->
+    <div style="border-radius:var(--r-card);overflow:hidden;border:1px solid var(--hairline);background:repeating-linear-gradient(118deg,#6b4f34 0 24px,#5d4530 24px 48px);min-height:240px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;position:relative">
+      <div class="overhead" style="font-size:30px">Example text</div>
+      <div class="drop" style="font-size:24px">200</div>
+      <div class="kicker" style="position:absolute;bottom:10px;left:12px;color:var(--parchment);opacity:.75">Overhead · drop feed</div>
+    </div>
+    <!-- why it matters + the goal-hint idea -->
+    <div class="card">
+      <span class="kicker">Why the shadow matters</span>
+      <div style="margin-top:14px;display:flex;flex-direction:column;gap:8px">
+        <div style="font-family:var(--font-rs-bold);font-size:18px;color:var(--parchment)">Collection Log <span class="faint" style="font-family:var(--font-body);font-size:11px;text-shadow:none">— flat</span></div>
+        <div class="rs-text" style="font-family:var(--font-rs-bold);font-size:18px;color:var(--parchment)">Collection Log <span class="faint" style="font-family:var(--font-body);font-size:11px;text-shadow:none">— shadowed (legible over anything)</span></div>
+      </div>
+      <div style="margin-top:18px;display:flex;gap:16px;flex-wrap:wrap;align-items:baseline">
+        <span class="overhead" style="font-size:20px">Level up!</span>
+        <span class="overhead" style="font-size:20px">99 Slayer</span>
+        <span class="drop" style="font-size:20px">Twisted bow</span>
+      </div>
+      <div style="margin-top:18px;padding-top:14px;border-top:1px solid var(--hairline)">
+        <div class="kicker" style="color:var(--ink-faint)">Goal hint, OSRS-style</div>
+        <div class="overhead" style="font-size:18px;margin-top:8px">You'll need 70 Prayer first.</div>
+        <div class="muted" style="font-size:var(--fs-sm);margin-top:6px">The dependency engine can speak in the game's own overhead voice.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footnote" style="margin-top:var(--s7)">Block 0 of the Gilded Ledger build · foundation only · next: Block 1 — Materials (the reusable stone-panel and card primitives).</div>
+</div>
+</body>
+</html>

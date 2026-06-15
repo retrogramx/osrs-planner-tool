@@ -1,0 +1,233 @@
+/* ============================================================================
+   GILDED LEDGER — Block 1: Materials (reusable component primitives)
+   ----------------------------------------------------------------------------
+   Built ONLY from tokens. Two surfaces (authentic stone + modern card), the
+   button set, badges/status chips, and a progress bar. Every later block is
+   just composition of these. Nothing here hardcodes a color or size.
+   ============================================================================ */
+
+/* ---------------------------------------------------------------------------
+   SURFACE A — STONE PANEL (the authentic "account mirror" material)
+   A carved interface box: stone face, double bevel, gold corner rivets, and a
+   parchment title in the in-game Bold-12 voice with the signature shadow.
+   --------------------------------------------------------------------------- */
+.panel {
+  position: relative;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.04), transparent 42%),
+    var(--stone);
+  border-radius: var(--r-stone);
+  box-shadow: var(--bevel-stone);
+  padding: var(--s5);
+}
+.panel::after {                     /* gold L-brackets at each corner — the OSRS window look */
+  content: "";
+  position: absolute; inset: 4px; border-radius: var(--r-stone);
+  pointer-events: none;
+  --bl: 16px;                       /* bracket arm length */
+  --bt: 3px;                        /* bracket thickness */
+  background:
+    linear-gradient(var(--rivet), var(--rivet)) 0 0       / var(--bl) var(--bt) no-repeat,
+    linear-gradient(var(--rivet), var(--rivet)) 0 0       / var(--bt) var(--bl) no-repeat,
+    linear-gradient(var(--rivet), var(--rivet)) 100% 0    / var(--bl) var(--bt) no-repeat,
+    linear-gradient(var(--rivet), var(--rivet)) 100% 0    / var(--bt) var(--bl) no-repeat,
+    linear-gradient(var(--rivet), var(--rivet)) 0 100%    / var(--bl) var(--bt) no-repeat,
+    linear-gradient(var(--rivet), var(--rivet)) 0 100%    / var(--bt) var(--bl) no-repeat,
+    linear-gradient(var(--rivet), var(--rivet)) 100% 100% / var(--bl) var(--bt) no-repeat,
+    linear-gradient(var(--rivet), var(--rivet)) 100% 100% / var(--bt) var(--bl) no-repeat;
+}
+.panel__title {
+  font-family: var(--font-rs-bold);
+  font-size: 16px;
+  color: var(--parchment);
+  text-shadow: var(--rs-shadow);
+  padding-bottom: var(--s2);
+  margin-bottom: var(--s4);
+  border-bottom: 1px solid color-mix(in srgb, var(--rivet) 30%, transparent);
+}
+
+/* ---------------------------------------------------------------------------
+   SURFACE B — MODERN CARD (the "goal tracker" material)
+   Soft, elevated, legible. --featured adds the gold focus glow for the active
+   or hero item; __head lays out a kicker title + an optional action.
+   --------------------------------------------------------------------------- */
+.card {
+  background: linear-gradient(180deg, var(--surface-2), var(--surface));
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-card);
+  box-shadow: var(--shadow-card);
+  padding: var(--s5);
+}
+.card--featured { border-color: color-mix(in srgb, var(--gold) 45%, var(--hairline)); box-shadow: var(--shadow-card), var(--glow-gold); }
+.card__head { display: flex; align-items: center; justify-content: space-between; gap: var(--s3); margin-bottom: var(--s4); }
+.card__title { font-family: var(--font-body); font-weight: 700; font-size: var(--fs-md); color: var(--ink); }
+
+/* ---------------------------------------------------------------------------
+   BUTTONS — primary (solid gold), secondary (stone), ghost (outline)
+   Labels use the body font (Hanken), not pixel — buttons must read instantly.
+   --------------------------------------------------------------------------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--s2);
+  font-family: var(--font-body); font-weight: 700; font-size: var(--fs-sm);
+  padding: 10px 18px; border-radius: 8px; border: 1px solid transparent;
+  cursor: pointer; user-select: none; line-height: 1;
+  transition: transform var(--dur-fast) var(--ease), background var(--dur-fast) var(--ease), box-shadow var(--dur-fast) var(--ease), border-color var(--dur-fast) var(--ease);
+}
+.btn:active { transform: translateY(1px); }
+.btn--primary {
+  background: linear-gradient(180deg, var(--gold-bright), var(--gold));
+  color: var(--canvas-deep);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.35) inset, 0 6px 16px -8px var(--gold);
+}
+.btn--primary:hover { background: var(--gold-bright); box-shadow: var(--glow-gold), 0 1px 0 rgba(255,255,255,0.4) inset; }
+.btn--secondary {
+  background: linear-gradient(180deg, var(--stone-hi), var(--stone));
+  color: var(--parchment); box-shadow: var(--bevel-stone);
+}
+.btn--secondary:hover { background: var(--stone-hi); }
+.btn--ghost { background: transparent; border-color: var(--hairline); color: var(--ink-mute); }
+.btn--ghost:hover { border-color: var(--gold); color: var(--ink); }
+.btn--sm { padding: 6px 12px; font-size: var(--fs-xs); }
+.btn--lg { padding: 14px 24px; font-size: var(--fs-base); }
+
+/* ---------------------------------------------------------------------------
+   BADGES — status (goal state) + provenance (where the data came from)
+   --------------------------------------------------------------------------- */
+.badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 4px 10px; border-radius: var(--r-pill);
+  font-family: var(--font-body); font-size: var(--fs-2xs); font-weight: 700;
+  letter-spacing: 0.02em; line-height: 1;
+}
+.badge .dot { width: 7px; height: 7px; border-radius: 50%; background: currentColor; flex: none; }
+
+/* status */
+.badge--done    { color: var(--done);     background: color-mix(in srgb, var(--done) 14%, transparent); }
+.badge--progress{ color: var(--progress); background: color-mix(in srgb, var(--progress) 14%, transparent); }
+.badge--blocked { color: var(--blocked);  background: color-mix(in srgb, var(--blocked) 14%, transparent); }
+.badge--locked  { color: var(--locked);   background: color-mix(in srgb, var(--locked) 18%, transparent); }
+
+/* provenance — where a number comes from (a core idea of this app) */
+.badge--live   { color: var(--done);   background: color-mix(in srgb, var(--done) 12%, transparent); }
+.badge--live .dot { animation: pulse 1.8s var(--ease) infinite; }
+.badge--plugin { color: var(--prayer); background: color-mix(in srgb, var(--prayer) 12%, transparent); }
+.badge--manual { color: var(--ink-mute); background: color-mix(in srgb, var(--ink-mute) 14%, transparent); }
+@keyframes pulse { 0%,100% { opacity: 1; box-shadow: 0 0 0 0 currentColor; } 50% { opacity: .5; box-shadow: 0 0 0 3px transparent; } }
+
+/* ---------------------------------------------------------------------------
+   PROGRESS BAR — track + fill, colored by status via a modifier on the fill
+   --------------------------------------------------------------------------- */
+.progress { height: 8px; border-radius: var(--r-pill); background: var(--canvas-deep); overflow: hidden; box-shadow: inset 0 1px 2px rgba(0,0,0,0.5); }
+.progress__fill { height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--gold-deep), var(--gold)); transition: width var(--dur-slow) var(--ease-out); }
+.progress__fill--done    { background: linear-gradient(90deg, color-mix(in srgb,var(--done) 70%, #000), var(--done)); }
+.progress__fill--blocked { background: linear-gradient(90deg, color-mix(in srgb,var(--blocked) 70%, #000), var(--blocked)); }
+
+/* a thin divider that matches the canvas */
+.divider { height: 1px; background: var(--hairline); border: 0; }
+
+/* ---------------------------------------------------------------------------
+   WINDOW / MODAL (from SlayerScape) — an OSRS interface window: the stone
+   frame (.panel) + a title bar with centered title and a gold X close.
+   Use as class="panel window" for dialogs (add goal, settings, details).
+   --------------------------------------------------------------------------- */
+.window__bar {
+  display: flex; align-items: center; justify-content: center; position: relative;
+  margin: calc(var(--s5) * -1) calc(var(--s5) * -1) var(--s4);
+  padding: var(--s3) var(--s6);
+  border-bottom: 1px solid color-mix(in srgb, var(--rivet) 30%, transparent);
+}
+.window__title { font-family: var(--font-rs-bold); font-size: 18px; color: var(--parchment); text-shadow: var(--rs-shadow); letter-spacing: 0.02em; }
+.window__close {
+  position: absolute; right: var(--s2); top: 50%; transform: translateY(-50%);
+  background: none; border: 0; cursor: pointer; padding: 4px 8px;
+  font-family: var(--font-rs-bold); font-size: 22px; line-height: 1;
+  color: var(--gold); text-shadow: var(--rs-shadow);
+  transition: color var(--dur-fast) var(--ease), transform var(--dur-fast) var(--ease);
+}
+.window__close:hover { color: var(--gold-bright); transform: translateY(-50%) scale(1.12); }
+
+/* GREEN confirm button (the OSRS "New Account"/confirm green) */
+.btn--confirm { background: linear-gradient(180deg, #7e9a52, #5f7a3c); color: #14110c; box-shadow: 0 1px 0 rgba(255,255,255,0.25) inset, 0 6px 16px -8px #5f7a3c; }
+.btn--confirm:hover { background: #87a558; }
+
+/* ---------------------------------------------------------------------------
+   RECESSED SLOT (from SlayerScape) — an inset cell for a skill/item icon with
+   a level or a gold padlock. The padlock is our "locked / blocked" language.
+   --------------------------------------------------------------------------- */
+.slot {
+  position: relative; display: flex; align-items: center; gap: 8px;
+  padding: 8px 10px; min-width: 70px; border-radius: var(--r-stone);
+  background: var(--stone-lo);
+  box-shadow: inset 1.5px 1.5px 0 rgba(0,0,0,0.5), inset -1.5px -1.5px 0 var(--stone-hi);
+}
+.slot__icon { width: 22px; height: 22px; flex: none; display: grid; place-items: center; }
+.slot__icon img { width: 100%; height: 100%; object-fit: contain; image-rendering: -moz-crisp-edges; image-rendering: pixelated; }
+.slot__lvl  { font-family: var(--font-rs-bold); font-size: 15px; color: var(--rs-yellow); text-shadow: var(--rs-shadow); }
+.slot--locked .slot__icon { filter: grayscale(1) brightness(0.6); }
+
+/* ---------------------------------------------------------------------------
+   STAT CELL — tight in-game skill widget: icon + current/base on a diagonal +
+   a thin XP bar. Kept COMPACT (fixed-width cells); the panel hugs them, exactly
+   like the real OSRS stats tab — never stretched to fill its container.
+   --------------------------------------------------------------------------- */
+.statcell {
+  position: relative; display: flex; align-items: stretch; gap: 2px;
+  padding: 2px 3px 6px 3px; min-height: 36px;
+  background-color: var(--gstone-lo);
+  background-image: var(--stone-tex);
+  background-blend-mode: soft-light;
+  box-shadow: inset 1px 1px 0 rgba(0,0,0,0.45), inset -1px -1px 0 rgba(132,127,107,0.5);
+}
+.statcell__icon { width: 23px; height: 23px; flex: none; align-self: center; display: grid; place-items: center; }
+.statcell__icon img { max-width: 100%; max-height: 100%; image-rendering: -moz-crisp-edges; image-rendering: pixelated; }
+/* numbers sit on the RIGHT, a long diagonal sweeps the cell behind them */
+.statcell__nums { position: relative; flex: 1; }
+.statcell__nums::before {                 /* long "/" diagonal: current over base */
+  content: ""; position: absolute; left: 0; right: 1px; top: 2px; bottom: 2px;
+  background: linear-gradient(to top left, transparent calc(50% - 0.8px), rgba(0,0,0,0.6) calc(50% - 0.8px), rgba(0,0,0,0.6) calc(50% + 0.8px), transparent calc(50% + 0.8px));
+}
+.statcell__cur, .statcell__base {
+  position: absolute; font-family: var(--font-rs-bold); font-size: 13px; line-height: 1;
+  color: var(--rs-yellow); text-shadow: var(--rs-shadow);
+}
+.statcell__cur  { top: 1px; right: 17px; }   /* upper-left of the pair */
+.statcell__base { bottom: 1px; right: 5px; } /* lower-right of the pair */
+/* XP bar: full cell width at the bottom, width + colour set per-skill */
+.statcell__bar  { position: absolute; left: 3px; right: 3px; bottom: 2px; height: 3px; background: rgba(0,0,0,0.55); border-radius: 1px; overflow: hidden; }
+.statcell__bar > i { display: block; height: 100%; }
+
+/* Authentic in-game skills tab — textured stone, no gold brackets, no title. */
+.skills-panel {
+  background-color: var(--gstone);
+  background-image: var(--stone-tex);
+  background-blend-mode: soft-light;
+  box-shadow: inset 0 0 0 1px var(--gstone-dk), inset 0 0 0 2px rgba(132,127,107,0.55);
+  border-radius: 2px;
+}
+.skills-panel::after { content: none; }       /* the vanilla tab has no gold corner brackets */
+.skills-panel .panel__title { display: none; } /* ...and no title row */
+.statcell { cursor: pointer; }
+.statcell:hover, .statcell:focus-visible { outline: 1px solid var(--gold); outline-offset: -1px; }
+
+/* ---------------------------------------------------------------------------
+   IN-GAME XP TOOLTIP — dark box, yellow RS text. Shows on hover (desktop) or
+   tap (mobile). Positioned by JS; pointer-events off so it never blocks taps.
+   --------------------------------------------------------------------------- */
+.osrs-tip {
+  position: fixed; z-index: 1000; pointer-events: none;
+  background: rgba(8,6,3,0.96); border: 1px solid var(--stone-hi);
+  box-shadow: 0 4px 14px -4px rgba(0,0,0,0.8);
+  padding: 5px 9px; border-radius: 2px;
+  font-family: var(--font-rs-bold); font-size: 13px; line-height: 1.5;
+  color: var(--parchment); text-shadow: var(--rs-shadow); max-width: 78vw;
+}
+.osrs-tip[hidden] { display: none; }
+.osrs-tip__title { color: var(--rs-yellow); margin-bottom: 2px; }
+.osrs-tip__row b { color: var(--rs-white); }
+
+/* gold padlock — inline SVG, no asset dependency */
+.lock {
+  width: 16px; height: 18px; display: inline-block;
+  background: no-repeat center / contain
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 26'%3E%3Cpath d='M6 11V8a6 6 0 0 1 12 0v3' fill='none' stroke='%23c9a04a' stroke-width='2.5'/%3E%3Crect x='4' y='11' width='16' height='12' rx='2' fill='%23c9a04a'/%3E%3Crect x='11' y='15' width='2' height='5' fill='%23241f17'/%3E%3C/svg%3E");
+}

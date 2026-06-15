@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gilded Ledger — Hero/Identity font: Quill vs Bold 12</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles/fonts.css" />
+<link rel="stylesheet" href="styles/tokens.css" />
+<link rel="stylesheet" href="styles/base.css" />
+<style>
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: var(--s7) var(--gutter); }
+  .head { margin-bottom: var(--s6); }
+  .head p { color: var(--ink-mute); max-width: 64ch; margin-top: var(--s3); }
+
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s5); }
+  @media (max-width: 880px) { .cols { grid-template-columns: 1fr; } }
+
+  .opt {
+    background: linear-gradient(180deg, var(--surface-2), var(--surface));
+    border: 1px solid var(--hairline); border-radius: var(--r-card);
+    box-shadow: var(--shadow-card); padding: var(--s6) var(--s5); position: relative;
+  }
+  .opt.pick { border-color: color-mix(in srgb, var(--gold) 45%, var(--hairline)); box-shadow: var(--shadow-card), var(--glow-gold); }
+  .opt .tab {
+    position: absolute; top: -11px; left: var(--s5);
+    font-family: var(--font-mono); font-size: var(--fs-2xs); letter-spacing: .08em; text-transform: uppercase;
+    color: var(--canvas-deep); background: var(--gold); padding: 3px 10px; border-radius: var(--r-pill); font-weight: 700;
+  }
+  .opt .tab.neutral { background: var(--stone-hi); color: var(--ink); }
+
+  .spec { padding: var(--s4) 0; border-top: 1px solid var(--hairline); }
+  .spec:first-of-type { border-top: 0; }
+  .spec .lbl { font-family: var(--font-mono); font-size: var(--fs-2xs); letter-spacing: .08em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: var(--s2); }
+
+  /* the two candidate fonts */
+  .q  { font-family: var(--font-rs-quill); }
+  .b  { font-family: var(--font-rs-bold); }
+
+  .identity { font-size: 40px; color: var(--ink); line-height: 1; }
+  .ironman  { color: var(--gold); }
+  .header   { font-size: 24px; color: var(--parchment); }
+  .label    { font-size: 15px; letter-spacing: .04em; text-transform: uppercase; color: var(--gold); }
+  .number   { font-size: 30px; color: var(--gold-bright); }
+  .sentence { font-size: 20px; color: var(--ink); line-height: 1.3; max-width: 30ch; }
+
+  .third { margin-top: var(--s6); }
+  .rec { margin-top: var(--s6); padding: var(--s4) var(--s5); border-left: 3px solid var(--gold); background: color-mix(in srgb, var(--gold) 7%, transparent); border-radius: 0 var(--r-card) var(--r-card) 0; }
+  .rec b { color: var(--gold); }
+  .rec p { color: var(--ink-mute); margin-top: 6px; font-size: var(--fs-sm); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="head">
+    <span class="kicker">Gilded Ledger · Type decision</span>
+    <h2 style="margin-top:10px">Hero &amp; identity voice: <span class="q" style="color:var(--gold)">Quill</span> vs <span class="b" style="color:var(--gold)">Bold 12</span></h2>
+    <p>Same content, both fonts, at the sizes they'd actually be used. Watch the <b>identity</b> and <b>header</b> rows (short text — where this font lives) and the <b>sentence</b> row (a readability stress-test).</p>
+  </div>
+
+  <div class="cols">
+    <!-- OPTION A: QUILL -->
+    <div class="opt">
+      <span class="tab neutral">Option A · RuneScape Quill</span>
+      <div class="spec"><div class="lbl">Identity</div><div class="identity q">Tiger0295</div></div>
+      <div class="spec"><div class="lbl">Section header</div><div class="header q">Collection Log</div></div>
+      <div class="spec"><div class="lbl">Label / kicker</div><div class="label q">Account Mirror</div></div>
+      <div class="spec"><div class="lbl">Number</div><div class="number q">1,930</div></div>
+      <div class="spec"><div class="lbl">Sentence (readability test)</div><div class="sentence q">The reverent record of an ironman's earned progress.</div></div>
+    </div>
+
+    <!-- OPTION B: BOLD 12 -->
+    <div class="opt">
+      <span class="tab neutral">Option B · RuneScape Bold 12</span>
+      <div class="spec"><div class="lbl">Identity</div><div class="identity b">Tiger0295</div></div>
+      <div class="spec"><div class="lbl">Section header</div><div class="header b">Collection Log</div></div>
+      <div class="spec"><div class="lbl">Label / kicker</div><div class="label b">Account Mirror</div></div>
+      <div class="spec"><div class="lbl">Number</div><div class="number b">1,930</div></div>
+      <div class="spec"><div class="lbl">Sentence (readability test)</div><div class="sentence b">The reverent record of an ironman's earned progress.</div></div>
+    </div>
+  </div>
+
+  <!-- OPTION C: bonus -->
+  <div class="third">
+    <div class="opt pick">
+      <span class="tab">Option C · Hybrid (my lean)</span>
+      <div class="cols" style="gap:var(--s6)">
+        <div>
+          <div class="spec" style="border:0;padding-top:0"><div class="lbl">Identity &amp; headers → Bold 12 (in-game UI voice)</div>
+            <div class="identity b" style="font-size:34px">Tiger0295</div>
+            <div class="header b" style="margin-top:10px">Collection Log · Combat Achievements</div>
+          </div>
+        </div>
+        <div>
+          <div class="spec" style="border:0;padding-top:0"><div class="lbl">Brand / "Ledger" moments → Quill (dialogue voice)</div>
+            <div class="q" style="font-size:30px;color:var(--ink)">The Gilded Ledger</div>
+            <div class="q" style="font-size:18px;color:var(--ink-mute);margin-top:8px">Tiger0295 — a self-made account</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rec">
+    <b>My lean: Option C.</b> Use <b>Bold 12</b> for identity + section headers + stat numbers — it IS the in-game interface voice, so the account mirror reads as authentically "the game." Reserve <b>Quill</b> for a few brand/ledger flourishes (the app title, a tagline). Pure-Quill everywhere can feel storybook; pure-Bold-12 everywhere can feel rigid. The split gives you authentic UI <i>and</i> the ledger soul. But this is your taste call — tell me which column wins.
+  </div>
+</div>
+</body>
+</html>
