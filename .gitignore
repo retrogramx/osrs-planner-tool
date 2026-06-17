@@ -5,3 +5,6 @@ __pycache__/
 .pytest_cache/
 dist/
 build/
+.DS_Store
+# Raw wiki/API fetches — large intermediates, re-fetchable from each dataset's _provenance.source_urls
+data/raw/
