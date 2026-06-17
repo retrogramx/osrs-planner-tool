@@ -18,22 +18,23 @@
   ],
   "source_query": null,
   "accessed": "2026-06-17T18:22:53Z",
+  "fix_note": "2026-06-17: repaired 12 broken raw_files paths (diary_<Region>_Diary.wikitext -> diary_<Region>.wikitext, the real on-disk names; '_Diary' is the wiki page-title suffix, not the file name); recovered the Varrock hard/elite reward fields (15 records) that the reward-extraction regex dropped because those headers are written '===Rewards=== ' with trailing whitespace; and fixed 9 conditional-skill parse artifacts where Raiments-of-the-Eye / Ironman / item-based alternative levels (e.g. Runecraft 88 + 77 + 66 + 55) were emitted as duplicate flat skill requirements and left stranded qualifier fragments in items. Flat skills now carry only the primary/unconditional level; each conditional alternative is preserved as a self-contained item-note with its skill+level inline. Re-parsed from the saved OSRS Wiki raw wikitext; no values fabricated.",
   "license": "CC BY-NC-SA 3.0",
   "extraction_method": "script",
   "raw_files": [
    "data/raw/achievement_diaries_all_raw.wikitext",
-   "data/raw/diary_Ardougne_Diary.wikitext",
-   "data/raw/diary_Desert_Diary.wikitext",
-   "data/raw/diary_Falador_Diary.wikitext",
-   "data/raw/diary_Fremennik_Diary.wikitext",
-   "data/raw/diary_Kandarin_Diary.wikitext",
-   "data/raw/diary_Karamja_Diary.wikitext",
-   "data/raw/diary_Kourend_&_Kebos_Diary.wikitext",
-   "data/raw/diary_Lumbridge_&_Draynor_Diary.wikitext",
-   "data/raw/diary_Morytania_Diary.wikitext",
-   "data/raw/diary_Varrock_Diary.wikitext",
-   "data/raw/diary_Western_Provinces_Diary.wikitext",
-   "data/raw/diary_Wilderness_Diary.wikitext",
+   "data/raw/diary_Ardougne.wikitext",
+   "data/raw/diary_Desert.wikitext",
+   "data/raw/diary_Falador.wikitext",
+   "data/raw/diary_Fremennik.wikitext",
+   "data/raw/diary_Kandarin.wikitext",
+   "data/raw/diary_Karamja.wikitext",
+   "data/raw/diary_Kourend_&_Kebos.wikitext",
+   "data/raw/diary_Lumbridge_&_Draynor.wikitext",
+   "data/raw/diary_Morytania.wikitext",
+   "data/raw/diary_Varrock.wikitext",
+   "data/raw/diary_Western_Provinces.wikitext",
+   "data/raw/diary_Wilderness.wikitext",
    "data/raw/parse_diaries_authoritative.py",
    "data/raw/assemble_diaries_envelope.py"
   ],
@@ -1936,15 +1937,11 @@
      {
       "skill": "Farming",
       "level": 23
-     },
-     {
-      "skill": "Farming",
-      "level": 47
      }
     ],
     "quests": [],
     "items": [
-     "(Ironman accounts require or the ability to kill gryphons)",
+     "(Ironman accounts require Farming 47 or the ability to kill gryphons)",
      "Bronze spear, watermelon, and a hay sack (you can fill an empty sack with hay at the hay bale in the chicken coop nearby.)"
     ]
    },
@@ -2014,7 +2011,6 @@
     ],
     "quests": [],
     "items": [
-     ", , and",
      "Mith grapple and any crossbow"
     ]
    },
@@ -2194,15 +2190,11 @@
      {
       "skill": "Runecraft",
       "level": 56
-     },
-     {
-      "skill": "Runecraft",
-      "level": 42
      }
     ],
     "quests": [],
     "items": [
-     "with 3+ Raiments of the Eye pieces",
+     "Runecraft 42 with 3+ Raiments of the Eye pieces",
      "28 pure, daeyalt, or rune essence (less may suffice at higher Runecraft levels)",
      "Access to the Mind Altar (mind talisman/tiara, catalytic talisman/tiara, or the Abyss)"
     ]
@@ -2427,25 +2419,13 @@
      {
       "skill": "Runecraft",
       "level": 88
-     },
-     {
-      "skill": "Runecraft",
-      "level": 77
-     },
-     {
-      "skill": "Runecraft",
-      "level": 66
-     },
-     {
-      "skill": "Runecraft",
-      "level": 55
      }
     ],
     "quests": [],
     "items": [
-     "with 2 Raiments of the Eye pieces",
-     "with 3 Raiments of the Eye pieces",
-     "with 4 Raiments of the Eye pieces",
+     "Runecraft 77 with 2 Raiments of the Eye pieces",
+     "Runecraft 66 with 3 Raiments of the Eye pieces",
+     "Runecraft 55 with 4 Raiments of the Eye pieces",
      "28 pure, daeyalt, or rune essence (less may suffice at higher Runecraft levels)",
      "Access to the Air Altar (air talisman/tiara, elemental talisman/tiara, or the Abyss)"
     ]
@@ -2868,15 +2848,11 @@
      {
       "skill": "Hunter",
       "level": 45
-     },
-     {
-      "skill": "Hunter",
-      "level": 35
      }
     ],
     "quests": [],
     "items": [
-     "with a butterfly net and jar"
+     "Hunter 35 with a butterfly net and jar"
     ]
    },
    "boostable": false,
@@ -3565,17 +3541,12 @@
      {
       "skill": "Ranged",
       "level": 39
-     },
-     {
-      "skill": "Agility",
-      "level": 70
      }
     ],
     "quests": [],
     "items": [
-     ", , and",
      "Mith grapple and any crossbow",
-     "Dusty key or",
+     "Dusty key or Agility 70",
      "Protection from dragonfire recommended"
     ]
    },
@@ -3808,7 +3779,6 @@
     "quests": [],
     "items": [
      "Access to Barbarian Fishing",
-     ", , and",
      "Barbarian rod and suitable bait (fishing bait, feathers, fish offcuts, roe, or caviar)"
     ]
    },
@@ -5804,7 +5774,6 @@
     ],
     "quests": [],
     "items": [
-     ", , and",
      "Any pickaxe and chisel"
     ]
    },
@@ -6778,20 +6747,12 @@
      {
       "skill": "Runecraft",
       "level": 76
-     },
-     {
-      "skill": "Runecraft",
-      "level": 57
-     },
-     {
-      "skill": "Runecraft",
-      "level": 38
      }
     ],
     "quests": [],
     "items": [
-     "with 3 Raiments of the Eye pieces",
-     "with 4 Raiments of the Eye pieces (random chance, not guaranteed)",
+     "Runecraft 57 with 3 Raiments of the Eye pieces",
+     "Runecraft 38 with 4 Raiments of the Eye pieces (random chance, not guaranteed)",
      "28 pure, daeyalt, or rune essence (less may suffice at higher Runecraft levels)",
      "Access to the Water Altar (water talisman/tiara, elemental talisman/tiara, or the Abyss)"
     ]
@@ -6958,15 +6919,11 @@
      {
       "skill": "Farming",
       "level": 23
-     },
-     {
-      "skill": "Farming",
-      "level": 47
      }
     ],
     "quests": [],
     "items": [
-     "(Ironman accounts require or the ability to kill gryphons)",
+     "(Ironman accounts require Farming 47 or the ability to kill gryphons)",
      "Bronze spear, watermelon, and a hay sack"
     ]
    },
@@ -8153,20 +8110,16 @@
      {
       "skill": "Hunter",
       "level": 66
-     },
-     {
-      "skill": "Hunter",
-      "level": 69
      }
     ],
     "quests": [],
     "items": [
      "800 coins",
-     "2 dashing kebbit fur (requires if playing as Ironman)"
+     "2 dashing kebbit fur (requires Hunter 69 if playing as Ironman)"
     ]
    },
    "boostable": true,
-   "reward": null,
+   "reward": "Varrock armour 3: | Can be worn in place of a chef's hat to access the Cooks' Guild | While worn, 10% chance of mining double ores up to and including adamantite, as well as various other minerals (experience granted for both minerals) | While worn, 10% chance of smelting 2 bars at once, up to and including adamantite, when using the Edgeville furnace (experience granted for both bars) | Antique lamp worth 15,000 experience in any skill of at least level 50 | Zaff will sell you 60 noted battlestaves as a single stack every day for 420,000 coins, resellable on the Grand Exchange for a profit of coins (after tax) | The skull sceptre will now hold up to 22 charges, up from 18 | Individual parts used to make the skull sceptre now give three extra bone fragments per component when chiselled | Access to the bank in the Cooks' Guild and a range at only 2 tiles away from it",
    "source_url": "https://oldschool.runescape.wiki/w/Varrock_Diary"
   },
   {
@@ -8182,7 +8135,7 @@
     ]
    },
    "boostable": false,
-   "reward": null,
+   "reward": "Varrock armour 3: | Can be worn in place of a chef's hat to access the Cooks' Guild | While worn, 10% chance of mining double ores up to and including adamantite, as well as various other minerals (experience granted for both minerals) | While worn, 10% chance of smelting 2 bars at once, up to and including adamantite, when using the Edgeville furnace (experience granted for both bars) | Antique lamp worth 15,000 experience in any skill of at least level 50 | Zaff will sell you 60 noted battlestaves as a single stack every day for 420,000 coins, resellable on the Grand Exchange for a profit of coins (after tax) | The skull sceptre will now hold up to 22 charges, up from 18 | Individual parts used to make the skull sceptre now give three extra bone fragments per component when chiselled | Access to the bank in the Cooks' Guild and a range at only 2 tiles away from it",
    "source_url": "https://oldschool.runescape.wiki/w/Varrock_Diary"
   },
   {
@@ -8203,7 +8156,7 @@
     ]
    },
    "boostable": false,
-   "reward": null,
+   "reward": "Varrock armour 3: | Can be worn in place of a chef's hat to access the Cooks' Guild | While worn, 10% chance of mining double ores up to and including adamantite, as well as various other minerals (experience granted for both minerals) | While worn, 10% chance of smelting 2 bars at once, up to and including adamantite, when using the Edgeville furnace (experience granted for both bars) | Antique lamp worth 15,000 experience in any skill of at least level 50 | Zaff will sell you 60 noted battlestaves as a single stack every day for 420,000 coins, resellable on the Grand Exchange for a profit of coins (after tax) | The skull sceptre will now hold up to 22 charges, up from 18 | Individual parts used to make the skull sceptre now give three extra bone fragments per component when chiselled | Access to the bank in the Cooks' Guild and a range at only 2 tiles away from it",
    "source_url": "https://oldschool.runescape.wiki/w/Varrock_Diary"
   },
   {
@@ -8227,7 +8180,7 @@
     ]
    },
    "boostable": false,
-   "reward": null,
+   "reward": "Varrock armour 3: | Can be worn in place of a chef's hat to access the Cooks' Guild | While worn, 10% chance of mining double ores up to and including adamantite, as well as various other minerals (experience granted for both minerals) | While worn, 10% chance of smelting 2 bars at once, up to and including adamantite, when using the Edgeville furnace (experience granted for both bars) | Antique lamp worth 15,000 experience in any skill of at least level 50 | Zaff will sell you 60 noted battlestaves as a single stack every day for 420,000 coins, resellable on the Grand Exchange for a profit of coins (after tax) | The skull sceptre will now hold up to 22 charges, up from 18 | Individual parts used to make the skull sceptre now give three extra bone fragments per component when chiselled | Access to the bank in the Cooks' Guild and a range at only 2 tiles away from it",
    "source_url": "https://oldschool.runescape.wiki/w/Varrock_Diary"
   },
   {
@@ -8243,7 +8196,7 @@
     ]
    },
    "boostable": false,
-   "reward": null,
+   "reward": "Varrock armour 3: | Can be worn in place of a chef's hat to access the Cooks' Guild | While worn, 10% chance of mining double ores up to and including adamantite, as well as various other minerals (experience granted for both minerals) | While worn, 10% chance of smelting 2 bars at once, up to and including adamantite, when using the Edgeville furnace (experience granted for both bars) | Antique lamp worth 15,000 experience in any skill of at least level 50 | Zaff will sell you 60 noted battlestaves as a single stack every day for 420,000 coins, resellable on the Grand Exchange for a profit of coins (after tax) | The skull sceptre will now hold up to 22 charges, up from 18 | Individual parts used to make the skull sceptre now give three extra bone fragments per component when chiselled | Access to the bank in the Cooks' Guild and a range at only 2 tiles away from it",
    "source_url": "https://oldschool.runescape.wiki/w/Varrock_Diary"
   },
   {
@@ -8268,7 +8221,7 @@
     ]
    },
    "boostable": false,
-   "reward": null,
+   "reward": "Varrock armour 3: | Can be worn in place of a chef's hat to access the Cooks' Guild | While worn, 10% chance of mining double ores up to and including adamantite, as well as various other minerals (experience granted for both minerals) | While worn, 10% chance of smelting 2 bars at once, up to and including adamantite, when using the Edgeville furnace (experience granted for both bars) | Antique lamp worth 15,000 experience in any skill of at least level 50 | Zaff will sell you 60 noted battlestaves as a single stack every day for 420,000 coins, resellable on the Grand Exchange for a profit of coins (after tax) | The skull sceptre will now hold up to 22 charges, up from 18 | Individual parts used to make the skull sceptre now give three extra bone fragments per component when chiselled | Access to the bank in the Cooks' Guild and a range at only 2 tiles away from it",
    "source_url": "https://oldschool.runescape.wiki/w/Varrock_Diary"
   },
   {
@@ -8290,7 +8243,7 @@
     ]
    },
    "boostable": false,
-   "reward": null,
+   "reward": "Varrock armour 3: | Can be worn in place of a chef's hat to access the Cooks' Guild | While worn, 10% chance of mining double ores up to and including adamantite, as well as various other minerals (experience granted for both minerals) | While worn, 10% chance of smelting 2 bars at once, up to and including adamantite, when using the Edgeville furnace (experience granted for both bars) | Antique lamp worth 15,000 experience in any skill of at least level 50 | Zaff will sell you 60 noted battlestaves as a single stack every day for 420,000 coins, resellable on the Grand Exchange for a profit of coins (after tax) | The skull sceptre will now hold up to 22 charges, up from 18 | Individual parts used to make the skull sceptre now give three extra bone fragments per component when chiselled | Access to the bank in the Cooks' Guild and a range at only 2 tiles away from it",
    "source_url": "https://oldschool.runescape.wiki/w/Varrock_Diary"
   },
   {
@@ -8316,7 +8269,7 @@
     ]
    },
    "boostable": false,
-   "reward": null,
+   "reward": "Varrock armour 3: | Can be worn in place of a chef's hat to access the Cooks' Guild | While worn, 10% chance of mining double ores up to and including adamantite, as well as various other minerals (experience granted for both minerals) | While worn, 10% chance of smelting 2 bars at once, up to and including adamantite, when using the Edgeville furnace (experience granted for both bars) | Antique lamp worth 15,000 experience in any skill of at least level 50 | Zaff will sell you 60 noted battlestaves as a single stack every day for 420,000 coins, resellable on the Grand Exchange for a profit of coins (after tax) | The skull sceptre will now hold up to 22 charges, up from 18 | Individual parts used to make the skull sceptre now give three extra bone fragments per component when chiselled | Access to the bank in the Cooks' Guild and a range at only 2 tiles away from it",
    "source_url": "https://oldschool.runescape.wiki/w/Varrock_Diary"
   },
   {
@@ -8335,7 +8288,7 @@
     "items": []
    },
    "boostable": false,
-   "reward": null,
+   "reward": "Varrock armour 3: | Can be worn in place of a chef's hat to access the Cooks' Guild | While worn, 10% chance of mining double ores up to and including adamantite, as well as various other minerals (experience granted for both minerals) | While worn, 10% chance of smelting 2 bars at once, up to and including adamantite, when using the Edgeville furnace (experience granted for both bars) | Antique lamp worth 15,000 experience in any skill of at least level 50 | Zaff will sell you 60 noted battlestaves as a single stack every day for 420,000 coins, resellable on the Grand Exchange for a profit of coins (after tax) | The skull sceptre will now hold up to 22 charges, up from 18 | Individual parts used to make the skull sceptre now give three extra bone fragments per component when chiselled | Access to the bank in the Cooks' Guild and a range at only 2 tiles away from it",
    "source_url": "https://oldschool.runescape.wiki/w/Varrock_Diary"
   },
   {
@@ -8354,7 +8307,7 @@
     "items": []
    },
    "boostable": false,
-   "reward": null,
+   "reward": "Varrock armour 3: | Can be worn in place of a chef's hat to access the Cooks' Guild | While worn, 10% chance of mining double ores up to and including adamantite, as well as various other minerals (experience granted for both minerals) | While worn, 10% chance of smelting 2 bars at once, up to and including adamantite, when using the Edgeville furnace (experience granted for both bars) | Antique lamp worth 15,000 experience in any skill of at least level 50 | Zaff will sell you 60 noted battlestaves as a single stack every day for 420,000 coins, resellable on the Grand Exchange for a profit of coins (after tax) | The skull sceptre will now hold up to 22 charges, up from 18 | Individual parts used to make the skull sceptre now give three extra bone fragments per component when chiselled | Access to the bank in the Cooks' Guild and a range at only 2 tiles away from it",
    "source_url": "https://oldschool.runescape.wiki/w/Varrock_Diary"
   },
   {
@@ -8377,7 +8330,7 @@
     ]
    },
    "boostable": false,
-   "reward": null,
+   "reward": "Varrock armour 4: | Can be worn in place of a prospector jacket for clue steps, and provides the experience bonus of the full outfit | While worn, 10% chance of mining double of any ore, as well as various other minerals (experience granted for both minerals) | While worn, 10% chance of smelting 2 bars at once, of any kind, when using the Edgeville furnace (experience granted for both bars) | Antique lamp worth 50,000 experience in any skill of at least level 70 | Zaff will sell you 120 noted battlestaves as a single stack every day for 840,000 coins, resellable on the Grand Exchange for a profit of coins (after tax) | The skull sceptre will now hold up to 26 charges, up from 22 | Individual parts used to make the skull sceptre now give four extra bone fragments per component when chiselled",
    "source_url": "https://oldschool.runescape.wiki/w/Varrock_Diary"
   },
   {
@@ -8402,7 +8355,7 @@
     ]
    },
    "boostable": false,
-   "reward": null,
+   "reward": "Varrock armour 4: | Can be worn in place of a prospector jacket for clue steps, and provides the experience bonus of the full outfit | While worn, 10% chance of mining double of any ore, as well as various other minerals (experience granted for both minerals) | While worn, 10% chance of smelting 2 bars at once, of any kind, when using the Edgeville furnace (experience granted for both bars) | Antique lamp worth 50,000 experience in any skill of at least level 70 | Zaff will sell you 120 noted battlestaves as a single stack every day for 840,000 coins, resellable on the Grand Exchange for a profit of coins (after tax) | The skull sceptre will now hold up to 26 charges, up from 22 | Individual parts used to make the skull sceptre now give four extra bone fragments per component when chiselled",
    "source_url": "https://oldschool.runescape.wiki/w/Varrock_Diary"
   },
   {
@@ -8424,7 +8377,7 @@
     ]
    },
    "boostable": false,
-   "reward": null,
+   "reward": "Varrock armour 4: | Can be worn in place of a prospector jacket for clue steps, and provides the experience bonus of the full outfit | While worn, 10% chance of mining double of any ore, as well as various other minerals (experience granted for both minerals) | While worn, 10% chance of smelting 2 bars at once, of any kind, when using the Edgeville furnace (experience granted for both bars) | Antique lamp worth 50,000 experience in any skill of at least level 70 | Zaff will sell you 120 noted battlestaves as a single stack every day for 840,000 coins, resellable on the Grand Exchange for a profit of coins (after tax) | The skull sceptre will now hold up to 26 charges, up from 22 | Individual parts used to make the skull sceptre now give four extra bone fragments per component when chiselled",
    "source_url": "https://oldschool.runescape.wiki/w/Varrock_Diary"
   },
   {
@@ -8451,7 +8404,7 @@
     ]
    },
    "boostable": false,
-   "reward": null,
+   "reward": "Varrock armour 4: | Can be worn in place of a prospector jacket for clue steps, and provides the experience bonus of the full outfit | While worn, 10% chance of mining double of any ore, as well as various other minerals (experience granted for both minerals) | While worn, 10% chance of smelting 2 bars at once, of any kind, when using the Edgeville furnace (experience granted for both bars) | Antique lamp worth 50,000 experience in any skill of at least level 70 | Zaff will sell you 120 noted battlestaves as a single stack every day for 840,000 coins, resellable on the Grand Exchange for a profit of coins (after tax) | The skull sceptre will now hold up to 26 charges, up from 22 | Individual parts used to make the skull sceptre now give four extra bone fragments per component when chiselled",
    "source_url": "https://oldschool.runescape.wiki/w/Varrock_Diary"
   },
   {
@@ -8464,21 +8417,17 @@
      {
       "skill": "Runecraft",
       "level": 78
-     },
-     {
-      "skill": "Runecraft",
-      "level": 52
      }
     ],
     "quests": [],
     "items": [
-     "with 2+ Raiments of the Eye pieces",
+     "Runecraft 52 with 2+ Raiments of the Eye pieces",
      "28 pure, daeyalt, or rune essence (fewer may suffice with more Raiments of the Eye pieces)",
      "Access to the Earth Altar (earth talisman/tiara, elemental talisman/tiara, or the Abyss)"
     ]
    },
    "boostable": false,
-   "reward": null,
+   "reward": "Varrock armour 4: | Can be worn in place of a prospector jacket for clue steps, and provides the experience bonus of the full outfit | While worn, 10% chance of mining double of any ore, as well as various other minerals (experience granted for both minerals) | While worn, 10% chance of smelting 2 bars at once, of any kind, when using the Edgeville furnace (experience granted for both bars) | Antique lamp worth 50,000 experience in any skill of at least level 70 | Zaff will sell you 120 noted battlestaves as a single stack every day for 840,000 coins, resellable on the Grand Exchange for a profit of coins (after tax) | The skull sceptre will now hold up to 26 charges, up from 22 | Individual parts used to make the skull sceptre now give four extra bone fragments per component when chiselled",
    "source_url": "https://oldschool.runescape.wiki/w/Varrock_Diary"
   },
   {
@@ -9358,7 +9307,6 @@
     ],
     "quests": [],
     "items": [
-     ", , , , , , , and",
      "Any void helm (melee, ranger, or mage helm)",
      "Void knight top, robe, and gloves"
     ]

@@ -93,3 +93,6 @@ The proof files surfaced real modeling nuances; bake these into the full run:
 
 ## 6. Done criteria
 Golden set passes · every method has the required fields + provenance · account-type tags present · coverage report emitted with gaps logged · datasets load against the KG schema.
+
+## 10. Status (2026-06-17) — COMPLETE v1
+Built and committed on branch `research/wiki-data-foundation`. **17 datasets in `data/`** = the 16 domains + a canonical **`item_dictionary`** (the universal item↔id join key, 15,496 items, tradeable + untradeable). All **P0/P1/P2/P3 cleared and independently re-validated**: frozen envelope uniform across all files; account-gate fields `{audience, pricing_basis, realization_channel, requires_ge}` standardized across the 5 money domains; iron income gated (no GE-priced method shown as iron-viable; DKs-class drops excluded); join keys in place (`items_equipment.item_id` 98.3%, `banked_xp` ~47% — remainder = unresolvable RuneLite enum constants, disclosed). **Remaining:** skill xp/hr rates are partial (the hardest domain; `research/skill-rate-baseline-task.md` is the manual fallback) + minor disclosed gaps. The foundation is wireable into the engine.

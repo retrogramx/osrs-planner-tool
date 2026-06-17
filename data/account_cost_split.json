@@ -34,7 +34,7 @@
       "https://oldschool.runescape.wiki/w/Pay-to-play_Woodcutting_training"
     ],
     "source_query": null,
-    "accessed": "2026-06-17T00:00:00Z",
+    "accessed": "2026-06-17T13:00:00Z",
     "license": "CC BY-NC-SA 3.0",
     "extraction_method": "agent",
     "raw_files": [
@@ -153,7 +153,8 @@
       }
     },
     "fix_notes": [
-      "2026-06-17: P1 gate fix — ensured every record carries the four canonical account-gate fields (audience, pricing_basis, realization_channel, requires_ge). Added realization_channel (previously absent). Remapped pricing_basis enum: gp_per_xp->ge; gather pure->none; gather with store coins (Construction/Crafting/Magic ironman)->mixed. realization_channel: gp_per_xp->ge; gather pure->n/a; gather-with-store->shop. audience derived from account_family. Originals preserved (cost_basis, realization, value.pricing_basis); legacy pricing_basis=\"value\" kept under pricing_basis_orig. No new fetches; values derived from existing records/source."
+      "2026-06-17: P1 gate fix — ensured every record carries the four canonical account-gate fields (audience, pricing_basis, realization_channel, requires_ge). Added realization_channel (previously absent). Remapped pricing_basis enum: gp_per_xp->ge; gather pure->none; gather with store coins (Construction/Crafting/Magic ironman)->mixed. realization_channel: gp_per_xp->ge; gather pure->n/a; gather-with-store->shop. audience derived from account_family. Originals preserved (cost_basis, realization, value.pricing_basis); legacy pricing_basis=\"value\" kept under pricing_basis_orig. No new fetches; values derived from existing records/source.",
+      "2026-06-17: gp/xp SIGN normalization — normalized every snapshot value.gp_per_xp to the OSRS Wiki sign convention (NEGATIVE = cost, positive = profit). The wiki computes the GP/XP column as (product_GE_price - material_cost)/xp and writes costs as negatives (verified in source: Magic Imbue wikitext literally states cost '-{{GEP|Astral rune|2}}/86 round 1' per xp; Crafting glassblowing column = ({{GEPT|item}} - {{GEP|Molten glass}})/xp). Flipped the 4 cost values that were stored unsigned/positive: Prayer (11.77 -> -11.77, dragon bones), Construction (14.55 -> -14.55, mahogany plank), Herblore (6.38 -> -6.38, attack mix), Magic (2.3 -> -2.3, Magic Imbue). Crafting glassblowing value (-1.4) was already correctly signed but was MISLABELED 'slightly profitable' in notes — it is a slight COST (low-level glass items sell for less than the molten glass consumed); corrected the label/notes. No value magnitudes changed except sign; no new fetches. Verified signs against existing raw wikitext (ptp_Magic, ptp_Crafting, ptp_Herblore) and a live OSRS Wiki check of Pay-to-play Crafting training."
     ]
   },
   "records": [
@@ -163,17 +164,17 @@
       "method": "Offer bones (e.g. dragon / superior dragon bones) at a gilded altar in a POH with both incense burners lit (350% xp/bone)",
       "cost_basis": "gp_per_xp",
       "value": {
-        "gp_per_xp": 11.77,
-        "basis": "gp/xp, GE prices via OSRS Wiki {{GEP}} live templates, snapshot @ 2026-06-17 (price-volatile)",
+        "gp_per_xp": -11.77,
+        "basis": "gp/xp, GE prices via OSRS Wiki {{GEP}} live templates, snapshot @ 2026-06-17 (price-volatile); wiki sign convention: negative = cost",
         "priced_item": "Dragon bones",
         "pricing_basis": "ge",
-        "note": "Snapshot; wiki recomputes from live GE prices and drifts."
+        "note": "Snapshot; wiki recomputes from live GE prices and drifts. Negative = cost per xp (offering bones is a pure cost)."
       },
       "requires_ge": true,
       "audience": "main",
       "pricing_basis": "ge",
       "realization": "gp_per_xp_spend",
-      "notes": "Fastest Prayer is buying bones on the GE and burning them at a gilded altar. Wiki snapshot: dragon bones ~11.77 gp/xp, superior dragon bones ~42.78 gp/xp. Requires 75 Construction (boostable) for the altar. 'Most Prayer training methods are relatively expensive.'",
+      "notes": "Fastest Prayer is buying bones on the GE and burning them at a gilded altar. Wiki snapshot (cost, negative sign): dragon bones ~-11.77 gp/xp, superior dragon bones ~-42.78 gp/xp. Requires 75 Construction (boostable) for the altar. 'Most Prayer training methods are relatively expensive.'",
       "realization_channel": "ge"
     },
     {
@@ -196,17 +197,17 @@
       "method": "Build & remove furniture (e.g. mahogany/teak) using GE-bought planks; Mahogany Homes or oak larders at lower levels",
       "cost_basis": "gp_per_xp",
       "value": {
-        "gp_per_xp": 14.55,
-        "basis": "gp/xp, GE prices via OSRS Wiki {{GEP}} live templates, snapshot @ 2026-06-17 (price-volatile)",
+        "gp_per_xp": -14.55,
+        "basis": "gp/xp, GE prices via OSRS Wiki {{GEP}} live templates, snapshot @ 2026-06-17 (price-volatile); wiki sign convention: negative = cost",
         "priced_item": "Mahogany plank",
         "pricing_basis": "ge",
-        "note": "Snapshot; wiki recomputes from live GE prices and drifts."
+        "note": "Snapshot; wiki recomputes from live GE prices and drifts. Negative = cost per xp (planks are consumed for no return)."
       },
       "requires_ge": true,
       "audience": "main",
       "pricing_basis": "ge",
       "realization": "gp_per_xp_spend",
-      "notes": "Mains buy planks on the GE. Wiki snapshot gp/xp: oak plank ~7.93, teak plank ~9.21, mahogany plank ~14.55. 'Using planks costs money... use the highest-tier planks for the fastest experience rates, or look into cheaper alternatives if trying to save money.'",
+      "notes": "Mains buy planks on the GE. Wiki snapshot gp/xp (cost, negative sign): oak plank ~-7.93, teak plank ~-9.21, mahogany plank ~-14.55. 'Using planks costs money... use the highest-tier planks for the fastest experience rates, or look into cheaper alternatives if trying to save money.'",
       "realization_channel": "ge"
     },
     {
@@ -229,17 +230,17 @@
       "method": "Buy herbs + secondaries on the GE, clean & make potions (e.g. attack/strength/prayer/super potions)",
       "cost_basis": "gp_per_xp",
       "value": {
-        "gp_per_xp": 6.38,
-        "basis": "gp/xp, GE prices via OSRS Wiki {{GEP}} live templates, snapshot @ 2026-06-17 (price-volatile)",
+        "gp_per_xp": -6.38,
+        "basis": "gp/xp, GE prices via OSRS Wiki {{GEP}} live templates, snapshot @ 2026-06-17 (price-volatile); wiki sign convention: negative = cost",
         "priced_item": "Attack potion(4)/2 + Roe (attack mix example)",
         "pricing_basis": "ge",
-        "note": "Snapshot; wiki recomputes from live GE prices and drifts."
+        "note": "Snapshot; wiki recomputes from live GE prices and drifts. Negative = cost per xp (this example method is a net loss; some other potions can be profit-positive)."
       },
       "requires_ge": true,
       "audience": "main",
       "pricing_basis": "ge",
       "realization": "gp_per_xp_spend",
-      "notes": "Mains buy grimy herbs and secondaries on the GE. Per-potion gp/xp varies by potion; example attack mix ~6.38 gp/xp (wiki table snapshot). Many high-tier potions cost notably more per xp.",
+      "notes": "Mains buy grimy herbs and secondaries on the GE. Per-potion gp/xp varies by potion; example attack mix ~-6.38 gp/xp (cost, negative sign; wiki table snapshot). Many high-tier potions cost notably more per xp; a minority of methods can be profit-positive.",
       "realization_channel": "ge"
     },
     {
@@ -317,16 +318,16 @@
       "cost_basis": "gp_per_xp",
       "value": {
         "gp_per_xp": -1.4,
-        "basis": "gp/xp, GE prices via OSRS Wiki {{GEP}} live templates, snapshot @ 2026-06-17 (price-volatile)",
+        "basis": "gp/xp, GE prices via OSRS Wiki {{GEP}} live templates, snapshot @ 2026-06-17 (price-volatile); wiki sign convention: negative = cost",
         "priced_item": "Molten glass (glassblowing)",
         "pricing_basis": "ge",
-        "note": "Snapshot; wiki recomputes from live GE prices and drifts."
+        "note": "Snapshot; wiki recomputes from live GE prices and drifts. Negative = cost per xp (glassblowing low-level items are a net loss, not a profit)."
       },
       "requires_ge": true,
       "audience": "main",
       "pricing_basis": "ge",
       "realization": "gp_per_xp_spend",
-      "notes": "Mains buy molten glass / dragonhide / battlestaves / gems on the GE. Glassblowing snapshot ~ -1.40 gp/xp (slightly profitable). Battlestaves/d'hide are higher gp/xp. Many Crafting methods are cheap or profitable for mains.",
+      "notes": "Mains buy molten glass / dragonhide / battlestaves / gems on the GE. Glassblowing snapshot ~-1.40 gp/xp (a slight cost, not profit: low-level glass items sell for less than the molten glass consumed; wiki: 'Most low-level items are not viable due to high cost'). Battlestaves/d'hide vary; some Crafting methods are genuinely profitable (those would show a positive gp/xp).",
       "realization_channel": "ge"
     },
     {
@@ -376,17 +377,17 @@
       "method": "Buy runes (+ items to alch) on the GE: High Level Alchemy, enchanting bolts, Magic Imbue, splashing",
       "cost_basis": "gp_per_xp",
       "value": {
-        "gp_per_xp": 2.3,
-        "basis": "gp/xp, GE prices via OSRS Wiki {{GEP}} live templates, snapshot @ 2026-06-17 (price-volatile)",
+        "gp_per_xp": -2.3,
+        "basis": "gp/xp, GE prices via OSRS Wiki {{GEP}} live templates, snapshot @ 2026-06-17 (price-volatile); wiki sign convention: negative = cost",
         "priced_item": "Astral rune x2 (Magic Imbue)",
         "pricing_basis": "ge",
-        "note": "Snapshot; wiki recomputes from live GE prices and drifts."
+        "note": "Snapshot; wiki recomputes from live GE prices and drifts. Negative = cost per xp; wiki itself writes this as a negative ('costs -{{GEP|Astral rune|2}}/86 round 1' per xp)."
       },
       "requires_ge": true,
       "audience": "main",
       "pricing_basis": "ge",
       "realization": "gp_per_xp_spend",
-      "notes": "Mains buy runes (and alch fodder) on the GE. High Level Alchemy is the staple passive route and is often net-profitable per cast. Magic Imbue snapshot ~2.30 gp/xp. Enchanting bolts 4-55/99 also buyable.",
+      "notes": "Mains buy runes (and alch fodder) on the GE. High Level Alchemy is the staple passive route and is often net-profitable per cast (would be a positive gp/xp). Magic Imbue snapshot ~-2.30 gp/xp (cost, negative sign). Enchanting bolts 4-55/99 also buyable.",
       "realization_channel": "ge"
     },
     {

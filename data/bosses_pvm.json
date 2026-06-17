@@ -6,7 +6,7 @@
       "https://oldschool.runescape.wiki/api.php?action=bucket&format=json&query=bucket('money_making_guide').select('page_name','value','recurring','json').limit(5000).run()"
     ],
     "source_query": "bucket('money_making_guide')...; combat rows (category startswith 'Combat') joined to /w/Boss list",
-    "accessed": "2026-06-17T18:47:08.477707+00:00",
+    "accessed": "2026-06-17T19:48:04.023272+00:00",
     "license": "CC BY-NC-SA 3.0",
     "extraction_method": "script",
     "raw_files": [
@@ -80,7 +80,8 @@
       "ACCOUNT GATE: boss/raid PvM is DIRECT-DROP income (not buy-process-sell), so every record has requires_ge=false and audience='all' — irons CAN do these bosses. The published gp_hr is GE-priced (pricing_basis='ge'); for irons the realized number differs, disclosed per-record via iron_income_recompute_needed + iron_realizable_drops (coins/alchables/resources/runes irons keep & alch/use) and iron_ge_only_drops (tradeable uniques an iron cannot GE-sell). Members carried per shared rules; the f2p record is Bryophyta. _excluded holds non-boss combat rows (no buy-process-sell boss methods exist, so the iron-exclusion mirror is empty).",
       "Drop classification: 'aggregate' = pseudo-item drop table (flagged, not a literal item); 'coins' = literal direct coins (iron-realizable); gear_alchable/resource/rune are iron-realizable via alch/value; untradeable (pets, jars, hilts/crystals) are not income.",
       "requirements.quests is honest-empty: the Money making guide bucket rows do not expose quest prerequisites as structured data, and the Boss-list table requirements column could not be parsed reliably due to rowspan/multi-line cells. Quest gating should be sourced from per-boss infoboxes in a later pass (see known_missing handling).",
-      "P1 gate fix (2026-06-17): added canonical 'realization_channel' to all 74 records, derived as 'ge' from existing pricing_basis/gp_hr_basis='ge' (the published gp_hr is GE-priced). Other three canonical gate fields (audience, pricing_basis, requires_ge) already present & unchanged (audience='all', requires_ge=false per documented direct-drop rationale below). No new fetch; data-only field add."
+      "P1 gate fix (2026-06-17): added canonical 'realization_channel' to all 74 records, derived as 'ge' from existing pricing_basis/gp_hr_basis='ge' (the published gp_hr is GE-priced). Other three canonical gate fields (audience, pricing_basis, requires_ge) already present & unchanged (audience='all', requires_ge=false per documented direct-drop rationale below). No new fetch; data-only field add.",
+      "Polish (2026-06-17): (1) drop_class split — replaced the single 'untradeable' bucket with 'tradeable_iron_no_ge' for GE-tradeable items an iron cannot GE-sell (pricetype=gemw; 47 drop entries / 32 distinct items: hilts/sigils/crystal seeds/crystals/jars/Crystal key/Tome of earth, all verified Tradeable=Yes on OSRS Wiki) vs 'untradeable_no_income' for genuinely-untradeable items (pricetype=value; 2 entries = Crystal shard, Tradeable=No). These items already matched per-record iron_ge_only_drops (0 mismatches). (2) Fixed 7 malformed boss names: 4x 'Contract of' -> 'Yama' (Yama contract methods), 'Gauntlet' -> 'The Gauntlet', 'Corrupted Gauntlet' -> 'The Corrupted Gauntlet', lowercase 'crazy archaeologist' -> 'Crazy archaeologist' (canonical wiki sentence-case). Data-only edit; no new fetch beyond OSRS Wiki tradeability verification."
     ]
   },
   "records": [
@@ -927,7 +928,7 @@
         },
         {
           "name": "Jar of swamp",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 61002,
           "qty_per_hr_or_kill": 0.00033333333333333,
@@ -1004,7 +1005,7 @@
       "risk": null
     },
     {
-      "boss": "crazy archaeologist",
+      "boss": "Crazy archaeologist",
       "activity": "Killing the crazy archaeologist",
       "method_page": "Money making guide/Killing the Crazy archaeologist",
       "combat_tier": "Combat/High",
@@ -1831,7 +1832,7 @@
         },
         {
           "name": "Zamorak hilt",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 18325506,
           "qty_per_hr_or_kill": 0.0019685039370079,
@@ -2868,7 +2869,7 @@
       "notable_drops": [
         {
           "name": "Primordial crystal",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 18955727,
           "qty_per_hr_or_kill": "0.0019230769230769",
@@ -2877,7 +2878,7 @@
         },
         {
           "name": "Pegasian crystal",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 147222,
           "qty_per_hr_or_kill": "0.0019230769230769",
@@ -2886,7 +2887,7 @@
         },
         {
           "name": "Eternal crystal",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 3146200,
           "qty_per_hr_or_kill": "0.0019230769230769",
@@ -3183,7 +3184,7 @@
         },
         {
           "name": "Jar of souls",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 66628,
           "qty_per_hr_or_kill": "0.0005",
@@ -3699,7 +3700,7 @@
         },
         {
           "name": "Bandos hilt",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 18939522,
           "qty_per_hr_or_kill": 0.0019685039370079,
@@ -4085,7 +4086,7 @@
         },
         {
           "name": "Jar of miasma",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 50793,
           "qty_per_hr_or_kill": 0.001015625,
@@ -5057,7 +5058,7 @@
         },
         {
           "name": "Crystal key",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 21317,
           "qty_per_hr_or_kill": 0.0078125,
@@ -5093,7 +5094,7 @@
         },
         {
           "name": "Jar of dirt",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 40205,
           "qty_per_hr_or_kill": 0.001,
@@ -5705,7 +5706,7 @@
         },
         {
           "name": "Crystal key",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 21317,
           "qty_per_hr_or_kill": 0.019688948514021,
@@ -5741,7 +5742,7 @@
         },
         {
           "name": "Jar of chemicals",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 71211,
           "qty_per_hr_or_kill": 0.0005,
@@ -5950,7 +5951,7 @@
         },
         {
           "name": "Voidwaker hilt",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 4236916,
           "qty_per_hr_or_kill": 0.0027777777777778,
@@ -6492,7 +6493,7 @@
         },
         {
           "name": "Saradomin hilt",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 26523181,
           "qty_per_hr_or_kill": 0.0019685039370079,
@@ -7692,7 +7693,7 @@
         },
         {
           "name": "Crystal key",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 21317,
           "qty_per_hr_or_kill": "0.070422535211268",
@@ -7701,7 +7702,7 @@
         },
         {
           "name": "Jar of stone",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 1430995,
           "qty_per_hr_or_kill": "0.0002",
@@ -8176,7 +8177,7 @@
         },
         {
           "name": "Crystal key",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 21317,
           "qty_per_hr_or_kill": 0.0093457943925234,
@@ -8185,7 +8186,7 @@
         },
         {
           "name": "Jar of smoke",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 108330,
           "qty_per_hr_or_kill": 0.0005,
@@ -8649,7 +8650,7 @@
         },
         {
           "name": "Crystal key",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 21317,
           "qty_per_hr_or_kill": "0.01",
@@ -8694,7 +8695,7 @@
         },
         {
           "name": "Jar of eyes",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 63385,
           "qty_per_hr_or_kill": "0.0005",
@@ -9321,7 +9322,7 @@
         },
         {
           "name": "Jar of decay",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 60394,
           "qty_per_hr_or_kill": 0.00033333333333333,
@@ -9982,7 +9983,7 @@
         },
         {
           "name": "Jar of decay",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 60394,
           "qty_per_hr_or_kill": 0.00033333333333333,
@@ -10647,7 +10648,7 @@
         },
         {
           "name": "Jar of decay",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 60394,
           "qty_per_hr_or_kill": 0.00033333333333333,
@@ -10949,7 +10950,7 @@
         },
         {
           "name": "Ancient crystal",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 149193,
           "qty_per_hr_or_kill": "0.00061996280223187",
@@ -11356,7 +11357,7 @@
       "risk": "PvP/Wilderness risk — items can be lost on death"
     },
     {
-      "boss": "Gauntlet",
+      "boss": "The Gauntlet",
       "activity": "Completing The Gauntlet",
       "method_page": "Money making guide/Completing The Gauntlet",
       "combat_tier": "Combat/High",
@@ -11403,7 +11404,7 @@
       "notable_drops": [
         {
           "name": "Crystal shard",
-          "drop_class": "untradeable",
+          "drop_class": "untradeable_no_income",
           "is_aggregate_pseudo_item": false,
           "value_each": 14732.5,
           "qty_per_hr_or_kill": 7,
@@ -11412,7 +11413,7 @@
         },
         {
           "name": "Enhanced crystal weapon seed",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 135724130,
           "qty_per_hr_or_kill": 0.0005,
@@ -11421,7 +11422,7 @@
         },
         {
           "name": "Crystal armour seed",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 6131149,
           "qty_per_hr_or_kill": 0.0083333333333333,
@@ -11430,7 +11431,7 @@
         },
         {
           "name": "Crystal weapon seed",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 383947,
           "qty_per_hr_or_kill": 0.0083333333333333,
@@ -11698,7 +11699,7 @@
       "risk": null
     },
     {
-      "boss": "Corrupted Gauntlet",
+      "boss": "The Corrupted Gauntlet",
       "activity": "Completing The Corrupted Gauntlet",
       "method_page": "Money making guide/Completing The Corrupted Gauntlet",
       "combat_tier": "Combat/High",
@@ -11745,7 +11746,7 @@
       "notable_drops": [
         {
           "name": "Crystal shard",
-          "drop_class": "untradeable",
+          "drop_class": "untradeable_no_income",
           "is_aggregate_pseudo_item": false,
           "value_each": 14732.5,
           "qty_per_hr_or_kill": 9.5,
@@ -11754,7 +11755,7 @@
         },
         {
           "name": "Enhanced crystal weapon seed",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 135724130,
           "qty_per_hr_or_kill": 0.0025,
@@ -11763,7 +11764,7 @@
         },
         {
           "name": "Crystal armour seed",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 6131149,
           "qty_per_hr_or_kill": 0.02,
@@ -11772,7 +11773,7 @@
         },
         {
           "name": "Crystal weapon seed",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 383947,
           "qty_per_hr_or_kill": 0.02,
@@ -12517,7 +12518,7 @@
         },
         {
           "name": "Jar of sand",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 679425,
           "qty_per_hr_or_kill": 0.0005,
@@ -12974,7 +12975,7 @@
         },
         {
           "name": "Jar of dreams",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 936733,
           "qty_per_hr_or_kill": 0.0005,
@@ -13085,7 +13086,7 @@
       "notable_drops": [
         {
           "name": "Elysian sigil",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 597068743,
           "qty_per_hr_or_kill": 0.00024420024420024,
@@ -13094,7 +13095,7 @@
         },
         {
           "name": "Arcane sigil",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 134225804,
           "qty_per_hr_or_kill": 0.00073260073260073,
@@ -13103,7 +13104,7 @@
         },
         {
           "name": "Spectral sigil",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 28570588,
           "qty_per_hr_or_kill": 0.00073260073260073,
@@ -13112,7 +13113,7 @@
         },
         {
           "name": "Jar of spirits",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 77193,
           "qty_per_hr_or_kill": 0.001,
@@ -14350,7 +14351,7 @@
         },
         {
           "name": "Jar of dreams",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 936733,
           "qty_per_hr_or_kill": 0.00025,
@@ -14541,7 +14542,7 @@
         },
         {
           "name": "Ancient hilt",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 37981429,
           "qty_per_hr_or_kill": 0.0003953488372093,
@@ -15224,7 +15225,7 @@
         },
         {
           "name": "Armadyl hilt",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 7079963,
           "qty_per_hr_or_kill": "0.0019685039370079",
@@ -15350,7 +15351,7 @@
         },
         {
           "name": "Crystal key",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 21317,
           "qty_per_hr_or_kill": "0.0078740157480315",
@@ -16115,7 +16116,7 @@
         },
         {
           "name": "Ancient hilt",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 37981429,
           "qty_per_hr_or_kill": 0.0010174418604651,
@@ -18065,7 +18066,7 @@
         },
         {
           "name": "Voidwaker hilt",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 4236916,
           "qty_per_hr_or_kill": 0.0010964912280702,
@@ -19354,7 +19355,7 @@
         },
         {
           "name": "Ancient crystal",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 149193,
           "qty_per_hr_or_kill": "0.00061996280223187",
@@ -20262,7 +20263,7 @@
         },
         {
           "name": "Jar of swamp",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 61002,
           "qty_per_hr_or_kill": 0.00033333333333333,
@@ -24092,7 +24093,7 @@
         },
         {
           "name": "Echo crystal",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 3668558,
           "qty_per_hr_or_kill": "0.095575619946659",
@@ -25662,7 +25663,7 @@
         },
         {
           "name": "Avernic defender hilt",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 31886505,
           "qty_per_hr_or_kill": 0.01542317331791,
@@ -26109,7 +26110,7 @@
         },
         {
           "name": "Tome of earth (empty)",
-          "drop_class": "untradeable",
+          "drop_class": "tradeable_iron_no_ge",
           "is_aggregate_pseudo_item": false,
           "value_each": 638715,
           "qty_per_hr_or_kill": "0.011111111111111",
@@ -29292,7 +29293,7 @@
       "risk": null
     },
     {
-      "boss": "Contract of",
+      "boss": "Yama",
       "activity": "Completing the Contract of shard acquisition (duo)",
       "method_page": "Money making guide/Killing Yama (Contract of shard acquisition, duo)",
       "combat_tier": "Combat/High",
@@ -29485,7 +29486,7 @@
       "risk": null
     },
     {
-      "boss": "Contract of",
+      "boss": "Yama",
       "activity": "Completing the Contract of oathplate acquisition",
       "method_page": "Money making guide/Killing Yama (Contract of oathplate acquisition)",
       "combat_tier": "Combat/High",
@@ -29799,7 +29800,7 @@
       "risk": "PvP/Wilderness risk — items can be lost on death"
     },
     {
-      "boss": "Contract of",
+      "boss": "Yama",
       "activity": "Completing the Contract of catalyst acquisition (duo)",
       "method_page": "Money making guide/Killing Yama (Contract of catalyst acquisition, duo)",
       "combat_tier": "Combat/High",
@@ -29992,7 +29993,7 @@
       "risk": null
     },
     {
-      "boss": "Contract of",
+      "boss": "Yama",
       "activity": "Completing the Contract of harmony acquisition",
       "method_page": "Money making guide/Killing Yama (Contract of harmony acquisition)",
       "combat_tier": "Combat/High",

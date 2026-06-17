@@ -30,17 +30,20 @@
       "main_rows": 234,
       "main_true_quests": 189,
       "ironman_rows": 228,
-      "ironman_true_quests": 190,
+      "ironman_true_quests": 189,
       "f2p_rows": 23,
       "f2p_true_quests": 23,
       "row_type_counts": {
-        "quest": 402,
+        "quest": 401,
         "unlock": 14,
         "miniquest": 23,
-        "achievement_diary": 39,
+        "achievement_diary": 40,
         "partial_quest_step": 7
       }
-    }
+    },
+    "fix_notes": [
+      "2026-06-17: Re-tagged 1 mis-classified row (ironman order_index 179, 'All Easy Achievement Diaries') from row_type=quest/is_quest=true to row_type=achievement_diary/is_quest=false (group diary row, qp=0, per source wikitext); corrected domain_stats counters (ironman_true_quests 190->189, row_type_counts.quest 402->401, achievement_diary 39->40). No new data fetched."
+    ]
   },
   "records": [
     {
@@ -3411,8 +3414,8 @@
       "order_index": 179,
       "quest": "All Easy Achievement Diaries",
       "account_variant": "ironman",
-      "row_type": "quest",
-      "is_quest": true,
+      "row_type": "achievement_diary",
+      "is_quest": false,
       "quest_points": 0
     },
     {

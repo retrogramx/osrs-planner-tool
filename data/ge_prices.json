@@ -6,13 +6,14 @@
       "https://prices.runescape.wiki/api/v1/osrs/mapping"
     ],
     "source_query": null,
-    "accessed": "2026-06-17T18:13:58.632467+00:00",
+    "accessed": "2026-06-17T20:00:00+00:00",
     "license": "CC BY-NC-SA 3.0",
     "extraction_method": "script",
     "raw_files": [
       "data/raw/ge_latest.json",
       "data/raw/ge_mapping.json"
     ],
+    "fix_note": "Doc-only clarification (2026-06-17, no record changes): price.capturedAt is the /latest highTime (the instant-buy timestamp), NOT a single snapshot time for both sides. The /latest endpoint reports independent highTime and lowTime per item; price.low may be FRESHER (more recently traded) than price.high, so the low value can post-date capturedAt. Verified against data/raw/ge_latest.json: 4419 of 4420 priced records have capturedAt == highTime; the lone exception (Morrigan's javelin, item_id 22636) has a null highTime, so capturedAt falls back to lowTime. Rule: capturedAt = highTime when present, else lowTime. RE-VERIFIED (2026-06-17, no record changes): re-checked all 4420 priced records against data/raw/ge_latest.json — 4419 have capturedAt == highTime, 1 (item_id 22636) falls back to lowTime (null highTime), 0 mismatches; the highTime==capturedAt / low-may-be-fresher documentation is accurate.",
     "record_count": 4572,
     "completeness": {
       "bounded_by": "prices.runescape.wiki /mapping item universe (all GE-tradeable items)",
