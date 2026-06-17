@@ -1,0 +1,5605 @@
+{
+  "_provenance": {
+    "domain": "quests",
+    "source_urls": [
+      "https://oldschool.runescape.wiki/w/Module:Questreq/data?action=raw"
+    ],
+    "source_query": null,
+    "accessed": "2026-06-17T18:18:04Z",
+    "license": "CC BY-NC-SA 3.0",
+    "extraction_method": "script",
+    "raw_files": [
+      "data/raw/questreq_data.lua",
+      "data/raw/questreq_data.lua.PROVENANCE.txt",
+      "data/raw/parse_quests.py"
+    ],
+    "record_count": 213,
+    "completeness": {
+      "bounded_by": "Module:Questreq/data top-level entries",
+      "universe_count": 213,
+      "records_count": 213,
+      "known_missing": [
+        "Architectural Alliance",
+        "Beneath Cursed Sands",
+        "Land of the Goblins"
+      ],
+      "known_missing_note": "known_missing = quest names referenced as prereqs but absent as their own Questreq entry (dangling targets). Questreq only lists nodes that HAVE requirements, so prereq-free quests like these are not module keys; this is a source property, not a capture gap. All 213 module top-level entries were captured (records_count == universe_count)."
+    },
+    "domain_stats": {
+      "node_type_counts": {
+        "quest": 177,
+        "miniquest": 28,
+        "diary": 8
+      },
+      "prereq_edge_count": 317,
+      "skill_req_count": 450,
+      "started_stage_prereq_count": 14,
+      "dangling_prereq_count": 3,
+      "note": "Diaries here (node_type='diary') must be deduped against the achievement_diaries domain. Skill req levels reflect Questreq data; some carry ironman/boostable flags. node_type classified by source section: official+unofficial miniquest sections -> 'miniquest'; achievement diary section -> 'diary'; rest -> 'quest'."
+    },
+    "fix_notes": [
+      "P1 alias fix (2026-06-17): added 'alias' field {domain:'achievement_diaries', region, tier} to the 8 node_type='diary' records (Ardougne/Kandarin tiers) so the KG can merge them with the achievement_diaries domain. Records retained (they are prereq targets); alias (region, tier) validated against achievement_diaries diary_region/tier."
+    ]
+  },
+  "records": [
+    {
+      "name": "Animal Magnetism",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Ernest the Chicken",
+          "stage": "completed"
+        },
+        {
+          "quest": "Priest in Peril",
+          "stage": "completed"
+        },
+        {
+          "quest": "The Restless Ghost",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Crafting",
+          "level": 19,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Prayer",
+          "level": 31,
+          "ironman": true,
+          "boostable": false
+        },
+        {
+          "skill": "Ranged",
+          "level": 30,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Slayer",
+          "level": 18,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Woodcutting",
+          "level": 35,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Another Slice of H.A.M.",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Death to the Dorgeshuun",
+          "stage": "completed"
+        },
+        {
+          "quest": "The Dig Site",
+          "stage": "completed"
+        },
+        {
+          "quest": "The Giant Dwarf",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Attack",
+          "level": 15,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Prayer",
+          "level": 25,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "The Ascent of Arceuus",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Client of Kourend",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Hunter",
+          "level": 12,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "At First Light",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Children of the Sun",
+          "stage": "completed"
+        },
+        {
+          "quest": "Eagles' Peak",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Hunter",
+          "level": 46,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Herblore",
+          "level": 30,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Construction",
+          "level": 27,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Below Ice Mountain",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Quest point",
+          "level": 16,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Between a Rock...",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Dwarf Cannon",
+          "stage": "completed"
+        },
+        {
+          "quest": "Fishing Contest",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Defence",
+          "level": 30,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Mining",
+          "level": 40,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Smithing",
+          "level": 50,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Big Chompy Bird Hunting",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Cooking",
+          "level": 30,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Fletching",
+          "level": 5,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Ranged",
+          "level": 30,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Biohazard",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Plague City",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": []
+    },
+    {
+      "name": "Black Knights' Fortress",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Quest point",
+          "level": 12,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Bone Voyage",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "The Dig Site",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Kudos",
+          "level": 100,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Cabin Fever",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Pirate's Treasure",
+          "stage": "completed"
+        },
+        {
+          "quest": "Rum Deal",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 42,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Crafting",
+          "level": 45,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Smithing",
+          "level": 50,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Ranged",
+          "level": 40,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Children of the Sun",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Client of Kourend",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "X Marks the Spot",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": []
+    },
+    {
+      "name": "Clock Tower",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Cold War",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 30,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Construction",
+          "level": 34,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Crafting",
+          "level": 30,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Hunter",
+          "level": 10,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Thieving",
+          "level": 15,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Woodcutting",
+          "level": 50,
+          "ironman": true,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Contact!",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Prince Ali Rescue",
+          "stage": "completed"
+        },
+        {
+          "quest": "Icthlarin's Little Helper",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": []
+    },
+    {
+      "name": "Cook's Assistant",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "The Corsair Curse",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Creature of Fenkenstrain",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Priest in Peril",
+          "stage": "completed"
+        },
+        {
+          "quest": "The Restless Ghost",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Crafting",
+          "level": 20,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Smithing",
+          "level": 4,
+          "ironman": true,
+          "boostable": true
+        },
+        {
+          "skill": "Thieving",
+          "level": 25,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "The Curse of Arrav",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Defender of Varrock",
+          "stage": "completed"
+        },
+        {
+          "quest": "Troll Romance",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Mining",
+          "level": 64,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Ranged",
+          "level": 62,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Thieving",
+          "level": 62,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Agility",
+          "level": 61,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Strength",
+          "level": 58,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Slayer",
+          "level": 37,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Darkness of Hallowvale",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "In Aid of the Myreque",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 26,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Construction",
+          "level": 5,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Crafting",
+          "level": 32,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Magic",
+          "level": 33,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Mining",
+          "level": 20,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Strength",
+          "level": 40,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Thieving",
+          "level": 22,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Death on the Isle",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Children of the Sun",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 32,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Thieving",
+          "level": 34,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Death Plateau",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Death to the Dorgeshuun",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "The Lost Tribe",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 23,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Thieving",
+          "level": 23,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Defender of Varrock",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Shield of Arrav",
+          "stage": "completed"
+        },
+        {
+          "quest": "Temple of Ikov",
+          "stage": "completed"
+        },
+        {
+          "quest": "Below Ice Mountain",
+          "stage": "completed"
+        },
+        {
+          "quest": "Family Crest",
+          "stage": "completed"
+        },
+        {
+          "quest": "Garden of Tranquillity",
+          "stage": "completed"
+        },
+        {
+          "quest": "What Lies Below",
+          "stage": "completed"
+        },
+        {
+          "quest": "Romeo & Juliet",
+          "stage": "completed"
+        },
+        {
+          "quest": "Demon Slayer",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Smithing",
+          "level": 55,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Hunter",
+          "level": 52,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Demon Slayer",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "The Depths of Despair",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Client of Kourend",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 18,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Desert Treasure I",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "The Dig Site",
+          "stage": "completed"
+        },
+        {
+          "quest": "Temple of Ikov",
+          "stage": "completed"
+        },
+        {
+          "quest": "The Tourist Trap",
+          "stage": "completed"
+        },
+        {
+          "quest": "Troll Stronghold",
+          "stage": "completed"
+        },
+        {
+          "quest": "Priest in Peril",
+          "stage": "completed"
+        },
+        {
+          "quest": "Waterfall Quest",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Firemaking",
+          "level": 50,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Magic",
+          "level": 50,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Slayer",
+          "level": 10,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Thieving",
+          "level": 53,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Desert Treasure II - The Fallen Empire",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Desert Treasure I",
+          "stage": "completed"
+        },
+        {
+          "quest": "Secrets of the North",
+          "stage": "completed"
+        },
+        {
+          "quest": "Enakhra's Lament",
+          "stage": "completed"
+        },
+        {
+          "quest": "Temple of the Eye",
+          "stage": "completed"
+        },
+        {
+          "quest": "The Garden of Death",
+          "stage": "completed"
+        },
+        {
+          "quest": "Below Ice Mountain",
+          "stage": "completed"
+        },
+        {
+          "quest": "His Faithful Servants",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Firemaking",
+          "level": 75,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Magic",
+          "level": 75,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Herblore",
+          "level": 62,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Thieving",
+          "level": 70,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Runecraft",
+          "level": 60,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Construction",
+          "level": 60,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Devious Minds",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Doric's Quest",
+          "stage": "completed"
+        },
+        {
+          "quest": "Enter the Abyss",
+          "stage": "completed"
+        },
+        {
+          "quest": "Troll Stronghold",
+          "stage": "completed"
+        },
+        {
+          "quest": "Wanted!",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Fletching",
+          "level": 50,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Runecraft",
+          "level": 50,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Smithing",
+          "level": 65,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "The Dig Site",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Druidic Ritual",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 10,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Herblore",
+          "level": 10,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Thieving",
+          "level": 25,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Doric's Quest",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Mining",
+          "level": 15,
+          "ironman": true,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Dragon Slayer I",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Quest point",
+          "level": 32,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Crafting",
+          "level": 8,
+          "ironman": true,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Dragon Slayer II",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Animal Magnetism",
+          "stage": "completed"
+        },
+        {
+          "quest": "Barbarian Firemaking",
+          "stage": "completed"
+        },
+        {
+          "quest": "Bone Voyage",
+          "stage": "completed"
+        },
+        {
+          "quest": "Client of Kourend",
+          "stage": "completed"
+        },
+        {
+          "quest": "Dream Mentor",
+          "stage": "completed"
+        },
+        {
+          "quest": "Ghosts Ahoy",
+          "stage": "completed"
+        },
+        {
+          "quest": "Legends' Quest",
+          "stage": "completed"
+        },
+        {
+          "quest": "A Tail of Two Cats",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Quest point",
+          "level": 200,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Agility",
+          "level": 60,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Construction",
+          "level": 50,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Crafting",
+          "level": 62,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Hitpoints",
+          "level": 50,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Magic",
+          "level": 75,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Mining",
+          "level": 68,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Smithing",
+          "level": 70,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Thieving",
+          "level": 60,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Dream Mentor",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Eadgar's Ruse",
+          "stage": "completed"
+        },
+        {
+          "quest": "Lunar Diplomacy",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Combat",
+          "level": 85,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Druidic Ritual",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Dwarf Cannon",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Eadgar's Ruse",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Druidic Ritual",
+          "stage": "completed"
+        },
+        {
+          "quest": "Troll Stronghold",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Herblore",
+          "level": 31,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Eagles' Peak",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Hunter",
+          "level": 27,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Elemental Workshop I",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Crafting",
+          "level": 20,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Mining",
+          "level": 20,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Mining",
+          "level": 30,
+          "ironman": true,
+          "boostable": true
+        },
+        {
+          "skill": "Smithing",
+          "level": 20,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Elemental Workshop II",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Elemental Workshop I",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Magic",
+          "level": 20,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Smithing",
+          "level": 30,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Enakhra's Lament",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Crafting",
+          "level": 50,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Firemaking",
+          "level": 45,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Magic",
+          "level": 39,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Mining",
+          "level": 45,
+          "ironman": true,
+          "boostable": true
+        },
+        {
+          "skill": "Prayer",
+          "level": 43,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Enlightened Journey",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Quest point",
+          "level": 20,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Firemaking",
+          "level": 20,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Farming",
+          "level": 30,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Crafting",
+          "level": 36,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Ernest the Chicken",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Ethically Acquired Antiquities",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Children of the Sun",
+          "stage": "completed"
+        },
+        {
+          "quest": "Shield of Arrav",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Thieving",
+          "level": 25,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "The Eyes of Glouphrie",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "The Grand Tree",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Construction",
+          "level": 5,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Magic",
+          "level": 46,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Runecraft",
+          "level": 13,
+          "ironman": true,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Fairytale I - Growing Pains",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Lost City",
+          "stage": "completed"
+        },
+        {
+          "quest": "Nature Spirit",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": []
+    },
+    {
+      "name": "Fairytale II - Cure a Queen",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Druidic Ritual",
+          "stage": "completed"
+        },
+        {
+          "quest": "Fairytale I - Growing Pains",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Farming",
+          "level": 49,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Herblore",
+          "level": 57,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Thieving",
+          "level": 40,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Family Crest",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Crafting",
+          "level": 40,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Magic",
+          "level": 59,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Mining",
+          "level": 40,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Smithing",
+          "level": 40,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "The Feud",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Thieving",
+          "level": 30,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Fight Arena",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Fishing Contest",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Fishing",
+          "level": 10,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Forgettable Tale...",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "The Giant Dwarf",
+          "stage": "completed"
+        },
+        {
+          "quest": "Fishing Contest",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Cooking",
+          "level": 22,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Farming",
+          "level": 17,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "The Forsaken Tower",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Client of Kourend",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": []
+    },
+    {
+      "name": "The Fremennik Exiles",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "The Fremennik Isles",
+          "stage": "completed"
+        },
+        {
+          "quest": "Lunar Diplomacy",
+          "stage": "completed"
+        },
+        {
+          "quest": "Mountain Daughter",
+          "stage": "completed"
+        },
+        {
+          "quest": "Heroes' Quest",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Crafting",
+          "level": 65,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Fishing",
+          "level": 60,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Runecraft",
+          "level": 55,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Slayer",
+          "level": 60,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Smithing",
+          "level": 60,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "The Fremennik Isles",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "The Fremennik Trials",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Construction",
+          "level": 20,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Crafting",
+          "level": 46,
+          "ironman": true,
+          "boostable": true
+        },
+        {
+          "skill": "Woodcutting",
+          "level": 56,
+          "ironman": true,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "The Fremennik Trials",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "The Garden of Death",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Farming",
+          "level": 20,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Garden of Tranquillity",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Creature of Fenkenstrain",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Farming",
+          "level": 25,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Gertrude's Cat",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Getting Ahead",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Construction",
+          "level": 26,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Crafting",
+          "level": 30,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Ghosts Ahoy",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Priest in Peril",
+          "stage": "completed"
+        },
+        {
+          "quest": "The Restless Ghost",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 25,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Cooking",
+          "level": 20,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "The Giant Dwarf",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Crafting",
+          "level": 12,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Firemaking",
+          "level": 16,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Magic",
+          "level": 33,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Thieving",
+          "level": 14,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Goblin Diplomacy",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "The Golem",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Crafting",
+          "level": 20,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Thieving",
+          "level": 25,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "The Grand Tree",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 25,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "The Great Brain Robbery",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Cabin Fever",
+          "stage": "completed"
+        },
+        {
+          "quest": "Creature of Fenkenstrain",
+          "stage": "completed"
+        },
+        {
+          "quest": "Recipe for Disaster/Freeing Pirate Pete",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Crafting",
+          "level": 16,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Construction",
+          "level": 30,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Prayer",
+          "level": 50,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Grim Tales",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Druidic Ritual",
+          "stage": "completed"
+        },
+        {
+          "quest": "Witch's House",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 59,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Farming",
+          "level": 45,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Herblore",
+          "level": 52,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Thieving",
+          "level": 58,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Woodcutting",
+          "level": 71,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "The Hand in the Sand",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Crafting",
+          "level": 49,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Thieving",
+          "level": 17,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Haunted Mine",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Priest in Peril",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Crafting",
+          "level": 35,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Hazeel Cult",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "The Heart of Darkness",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Twilight's Promise",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Mining",
+          "level": 55,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Thieving",
+          "level": 48,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Slayer",
+          "level": 48,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Agility",
+          "level": 46,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Heroes' Quest",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Dragon Slayer I",
+          "stage": "completed"
+        },
+        {
+          "quest": "Druidic Ritual",
+          "stage": "completed"
+        },
+        {
+          "quest": "Lost City",
+          "stage": "completed"
+        },
+        {
+          "quest": "Merlin's Crystal",
+          "stage": "completed"
+        },
+        {
+          "quest": "Shield of Arrav",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Quest point",
+          "level": 55,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Cooking",
+          "level": 53,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Fishing",
+          "level": 53,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Herblore",
+          "level": 25,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Mining",
+          "level": 50,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Holy Grail",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Merlin's Crystal",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Attack",
+          "level": 20,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Horror from the Deep",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Alfred Grimhand's Barcrawl",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 35,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Icthlarin's Little Helper",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Gertrude's Cat",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": []
+    },
+    {
+      "name": "Imp Catcher",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "In Aid of the Myreque",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "In Search of the Myreque",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 25,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Crafting",
+          "level": 25,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Fishing",
+          "level": 16,
+          "ironman": true,
+          "boostable": true
+        },
+        {
+          "skill": "Magic",
+          "level": 7,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Mining",
+          "level": 15,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Smithing",
+          "level": 50,
+          "ironman": true,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "In Search of the Myreque",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Nature Spirit",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 25,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Jungle Potion",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Druidic Ritual",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Herblore",
+          "level": 3,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "King's Ransom",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Black Knights' Fortress",
+          "stage": "completed"
+        },
+        {
+          "quest": "Holy Grail",
+          "stage": "completed"
+        },
+        {
+          "quest": "Murder Mystery",
+          "stage": "completed"
+        },
+        {
+          "quest": "One Small Favour",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Defence",
+          "level": 65,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Magic",
+          "level": 45,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "A Kingdom Divided",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Architectural Alliance",
+          "stage": "completed"
+        },
+        {
+          "quest": "The Ascent of Arceuus",
+          "stage": "completed"
+        },
+        {
+          "quest": "The Depths of Despair",
+          "stage": "completed"
+        },
+        {
+          "quest": "Druidic Ritual",
+          "stage": "completed"
+        },
+        {
+          "quest": "The Forsaken Tower",
+          "stage": "completed"
+        },
+        {
+          "quest": "The Queen of Thieves",
+          "stage": "completed"
+        },
+        {
+          "quest": "Tale of the Righteous",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 54,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Crafting",
+          "level": 38,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Herblore",
+          "level": 50,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Magic",
+          "level": 35,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Mining",
+          "level": 42,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Thieving",
+          "level": 52,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Woodcutting",
+          "level": 52,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "The Knight's Sword",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Cooking",
+          "level": 10,
+          "ironman": true,
+          "boostable": true
+        },
+        {
+          "skill": "Mining",
+          "level": 10,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Mining",
+          "level": 15,
+          "ironman": true,
+          "boostable": true
+        },
+        {
+          "skill": "Smithing",
+          "level": 15,
+          "ironman": true,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Legends' Quest",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Family Crest",
+          "stage": "completed"
+        },
+        {
+          "quest": "Heroes' Quest",
+          "stage": "completed"
+        },
+        {
+          "quest": "Shilo Village",
+          "stage": "completed"
+        },
+        {
+          "quest": "Underground Pass",
+          "stage": "completed"
+        },
+        {
+          "quest": "Waterfall Quest",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Quest point",
+          "level": 107,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Agility",
+          "level": 50,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Crafting",
+          "level": 50,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Herblore",
+          "level": 45,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Magic",
+          "level": 56,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Mining",
+          "level": 52,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Prayer",
+          "level": 42,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Smithing",
+          "level": 50,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Strength",
+          "level": 50,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Thieving",
+          "level": 50,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Woodcutting",
+          "level": 50,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Lost City",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Crafting",
+          "level": 31,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Woodcutting",
+          "level": 36,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "The Lost Tribe",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Goblin Diplomacy",
+          "stage": "completed"
+        },
+        {
+          "quest": "Rune Mysteries",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 13,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Mining",
+          "level": 17,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Thieving",
+          "level": 13,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Lunar Diplomacy",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "The Fremennik Trials",
+          "stage": "completed"
+        },
+        {
+          "quest": "Lost City",
+          "stage": "completed"
+        },
+        {
+          "quest": "Rune Mysteries",
+          "stage": "completed"
+        },
+        {
+          "quest": "Shilo Village",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Crafting",
+          "level": 61,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Defence",
+          "level": 40,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Firemaking",
+          "level": 49,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Herblore",
+          "level": 5,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Magic",
+          "level": 65,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Mining",
+          "level": 60,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Woodcutting",
+          "level": 55,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Making Friends with My Arm",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Cold War",
+          "stage": "completed"
+        },
+        {
+          "quest": "My Arm's Big Adventure",
+          "stage": "completed"
+        },
+        {
+          "quest": "Romeo & Juliet",
+          "stage": "completed"
+        },
+        {
+          "quest": "Swan Song",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 68,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Construction",
+          "level": 35,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Firemaking",
+          "level": 66,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Mining",
+          "level": 72,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Making History",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Priest in Peril",
+          "stage": "completed"
+        },
+        {
+          "quest": "The Restless Ghost",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": []
+    },
+    {
+      "name": "Meat and Greet",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Children of the Sun",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": []
+    },
+    {
+      "name": "Merlin's Crystal",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Misthalin Mystery",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Monk's Friend",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Monkey Madness I",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "The Grand Tree",
+          "stage": "completed"
+        },
+        {
+          "quest": "Tree Gnome Village",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": []
+    },
+    {
+      "name": "Monkey Madness II",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Enlightened Journey",
+          "stage": "completed"
+        },
+        {
+          "quest": "The Eyes of Glouphrie",
+          "stage": "completed"
+        },
+        {
+          "quest": "Recipe for Disaster/Freeing King Awowogei",
+          "stage": "completed"
+        },
+        {
+          "quest": "Troll Stronghold",
+          "stage": "completed"
+        },
+        {
+          "quest": "Watchtower",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 55,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Crafting",
+          "level": 70,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Firemaking",
+          "level": 60,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Hunter",
+          "level": 60,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Slayer",
+          "level": 69,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Thieving",
+          "level": 55,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Mountain Daughter",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 20,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Mourning's End Part I",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Big Chompy Bird Hunting",
+          "stage": "completed"
+        },
+        {
+          "quest": "Roving Elves",
+          "stage": "completed"
+        },
+        {
+          "quest": "Sheep Herder",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Ranged",
+          "level": 60,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Thieving",
+          "level": 50,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Mourning's End Part II",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Mourning's End Part I",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": []
+    },
+    {
+      "name": "Murder Mystery",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "My Arm's Big Adventure",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Eadgar's Ruse",
+          "stage": "completed"
+        },
+        {
+          "quest": "The Feud",
+          "stage": "completed"
+        },
+        {
+          "quest": "Jungle Potion",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Farming",
+          "level": 29,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Woodcutting",
+          "level": 10,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Nature Spirit",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Priest in Peril",
+          "stage": "completed"
+        },
+        {
+          "quest": "The Restless Ghost",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Crafting",
+          "level": 18,
+          "ironman": true,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "A Night at the Theatre",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "A Taste of Hope",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": []
+    },
+    {
+      "name": "Observatory Quest",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Olaf's Quest",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "The Fremennik Trials",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Firemaking",
+          "level": 40,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Woodcutting",
+          "level": 50,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "One Small Favour",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Rune Mysteries",
+          "stage": "completed"
+        },
+        {
+          "quest": "Shilo Village",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 36,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Crafting",
+          "level": 25,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Herblore",
+          "level": 18,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Smithing",
+          "level": 30,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "The Path of Glouphrie",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "The Eyes of Glouphrie",
+          "stage": "completed"
+        },
+        {
+          "quest": "Waterfall Quest",
+          "stage": "completed"
+        },
+        {
+          "quest": "Tree Gnome Village",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Strength",
+          "level": 60,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Slayer",
+          "level": 56,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Thieving",
+          "level": 56,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Ranged",
+          "level": 47,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Agility",
+          "level": 45,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Perilous Moons",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Twilight's Promise",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Slayer",
+          "level": 48,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Hunter",
+          "level": 20,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Fishing",
+          "level": 20,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Runecraft",
+          "level": 20,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Construction",
+          "level": 10,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Pirate's Treasure",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Plague City",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "A Porcine of Interest",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Priest in Peril",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Prince Ali Rescue",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "The Queen of Thieves",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Client of Kourend",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Thieving",
+          "level": 20,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Rag and Bone Man I",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Rag and Bone Man II",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "The Fremennik Trials",
+          "stage": "completed"
+        },
+        {
+          "quest": "Horror from the Deep",
+          "stage": "completed"
+        },
+        {
+          "quest": "Rag and Bone Man I",
+          "stage": "completed"
+        },
+        {
+          "quest": "Skippy and the Mogres",
+          "stage": "completed"
+        },
+        {
+          "quest": "Creature of Fenkenstrain",
+          "stage": "started"
+        },
+        {
+          "quest": "Waterfall Quest",
+          "stage": "started"
+        },
+        {
+          "quest": "Zogre Flesh Eaters",
+          "stage": "started"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Defence",
+          "level": 20,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Slayer",
+          "level": 40,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Ratcatchers",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Icthlarin's Little Helper",
+          "stage": "completed"
+        },
+        {
+          "quest": "The Giant Dwarf",
+          "stage": "started"
+        }
+      ],
+      "skill_reqs": []
+    },
+    {
+      "name": "Recipe for Disaster",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Recipe for Disaster/Defeating the Culinaromancer",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": []
+    },
+    {
+      "name": "Recipe for Disaster/Another Cook's Quest",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Cook's Assistant",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Cooking",
+          "level": 10,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Recipe for Disaster/Freeing the Mountain Dwarf",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Fishing Contest",
+          "stage": "completed"
+        },
+        {
+          "quest": "Recipe for Disaster/Another Cook's Quest",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": []
+    },
+    {
+      "name": "Recipe for Disaster/Freeing the Goblin generals",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Goblin Diplomacy",
+          "stage": "completed"
+        },
+        {
+          "quest": "Recipe for Disaster/Another Cook's Quest",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": []
+    },
+    {
+      "name": "Recipe for Disaster/Freeing Pirate Pete",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Recipe for Disaster/Another Cook's Quest",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Cooking",
+          "level": 31,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Crafting",
+          "level": 42,
+          "ironman": true,
+          "boostable": true
+        },
+        {
+          "skill": "Smithing",
+          "level": 31,
+          "ironman": true,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Recipe for Disaster/Freeing the Lumbridge Guide",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Big Chompy Bird Hunting",
+          "stage": "completed"
+        },
+        {
+          "quest": "Biohazard",
+          "stage": "completed"
+        },
+        {
+          "quest": "Demon Slayer",
+          "stage": "completed"
+        },
+        {
+          "quest": "Murder Mystery",
+          "stage": "completed"
+        },
+        {
+          "quest": "Nature Spirit",
+          "stage": "completed"
+        },
+        {
+          "quest": "Recipe for Disaster/Another Cook's Quest",
+          "stage": "completed"
+        },
+        {
+          "quest": "Witch's House",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Cooking",
+          "level": 40,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Recipe for Disaster/Freeing Evil Dave",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Gertrude's Cat",
+          "stage": "completed"
+        },
+        {
+          "quest": "Recipe for Disaster/Another Cook's Quest",
+          "stage": "completed"
+        },
+        {
+          "quest": "Shadow of the Storm",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Cooking",
+          "level": 25,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Recipe for Disaster/Freeing Skrach Uglogwee",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Big Chompy Bird Hunting",
+          "stage": "completed"
+        },
+        {
+          "quest": "Recipe for Disaster/Another Cook's Quest",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Cooking",
+          "level": 41,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Firemaking",
+          "level": 20,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Recipe for Disaster/Freeing Sir Amik Varze",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Recipe for Disaster/Another Cook's Quest",
+          "stage": "completed"
+        },
+        {
+          "quest": "Legends' Quest",
+          "stage": "started"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Farming",
+          "level": 20,
+          "ironman": true,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Recipe for Disaster/Freeing King Awowogei",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Monkey Madness I",
+          "stage": "completed"
+        },
+        {
+          "quest": "Recipe for Disaster/Another Cook's Quest",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 48,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Cooking",
+          "level": 70,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Recipe for Disaster/Defeating the Culinaromancer",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Desert Treasure I",
+          "stage": "completed"
+        },
+        {
+          "quest": "Horror from the Deep",
+          "stage": "completed"
+        },
+        {
+          "quest": "Recipe for Disaster/Freeing the Mountain Dwarf",
+          "stage": "completed"
+        },
+        {
+          "quest": "Recipe for Disaster/Freeing the Goblin generals",
+          "stage": "completed"
+        },
+        {
+          "quest": "Recipe for Disaster/Freeing Pirate Pete",
+          "stage": "completed"
+        },
+        {
+          "quest": "Recipe for Disaster/Freeing the Lumbridge Guide",
+          "stage": "completed"
+        },
+        {
+          "quest": "Recipe for Disaster/Freeing Evil Dave",
+          "stage": "completed"
+        },
+        {
+          "quest": "Recipe for Disaster/Freeing Skrach Uglogwee",
+          "stage": "completed"
+        },
+        {
+          "quest": "Recipe for Disaster/Freeing Sir Amik Varze",
+          "stage": "completed"
+        },
+        {
+          "quest": "Recipe for Disaster/Freeing King Awowogei",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Quest point",
+          "level": 175,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Recruitment Drive",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Black Knights' Fortress",
+          "stage": "completed"
+        },
+        {
+          "quest": "Druidic Ritual",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": []
+    },
+    {
+      "name": "Regicide",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Underground Pass",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 56,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Crafting",
+          "level": 10,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "The Restless Ghost",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "The Ribbiting Tale of a Lily Pad Labour Dispute",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Children of the Sun",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Woodcutting",
+          "level": 15,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Romeo & Juliet",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Roving Elves",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Regicide",
+          "stage": "completed"
+        },
+        {
+          "quest": "Waterfall Quest",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 56,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Royal Trouble",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Throne of Miscellania",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 40,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Slayer",
+          "level": 40,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Rum Deal",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Priest in Peril",
+          "stage": "completed"
+        },
+        {
+          "quest": "Zogre Flesh Eaters",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Crafting",
+          "level": 42,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Farming",
+          "level": 40,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Fishing",
+          "level": 50,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Prayer",
+          "level": 47,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Slayer",
+          "level": 42,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Rune Mysteries",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Scorpion Catcher",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Alfred Grimhand's Barcrawl",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Prayer",
+          "level": 31,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Sea Slug",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Firemaking",
+          "level": 30,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Secrets of the North",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Making Friends with My Arm",
+          "stage": "completed"
+        },
+        {
+          "quest": "The General's Shadow",
+          "stage": "completed"
+        },
+        {
+          "quest": "Devious Minds",
+          "stage": "completed"
+        },
+        {
+          "quest": "Hazeel Cult",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 69,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Thieving",
+          "level": 64,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Hunter",
+          "level": 56,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Shades of Mort'ton",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Druidic Ritual",
+          "stage": "completed"
+        },
+        {
+          "quest": "Priest in Peril",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Crafting",
+          "level": 20,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Firemaking",
+          "level": 5,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Herblore",
+          "level": 15,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Shadow of the Storm",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Demon Slayer",
+          "stage": "completed"
+        },
+        {
+          "quest": "The Golem",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Crafting",
+          "level": 30,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Sheep Herder",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Sheep Shearer",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Shield of Arrav",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Shilo Village",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Jungle Potion",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 32,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Crafting",
+          "level": 20,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Smithing",
+          "level": 4,
+          "ironman": true,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Sins of the Father",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "A Taste of Hope",
+          "stage": "completed"
+        },
+        {
+          "quest": "Vampyre Slayer",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 52,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Attack",
+          "level": 50,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Crafting",
+          "level": 56,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Fletching",
+          "level": 60,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Magic",
+          "level": 49,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Slayer",
+          "level": 50,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Woodcutting",
+          "level": 62,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "The Slug Menace",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Sea Slug",
+          "stage": "completed"
+        },
+        {
+          "quest": "Wanted!",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Crafting",
+          "level": 30,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Runecraft",
+          "level": 30,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Slayer",
+          "level": 30,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Thieving",
+          "level": 30,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Song of the Elves",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Druidic Ritual",
+          "stage": "completed"
+        },
+        {
+          "quest": "Making History",
+          "stage": "completed"
+        },
+        {
+          "quest": "Mourning's End Part II",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 70,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Construction",
+          "level": 70,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Farming",
+          "level": 70,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Herblore",
+          "level": 70,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Hunter",
+          "level": 70,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Mining",
+          "level": 70,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Smithing",
+          "level": 70,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Woodcutting",
+          "level": 70,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "A Soul's Bane",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Spirits of the Elid",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Magic",
+          "level": 33,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Mining",
+          "level": 37,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Ranged",
+          "level": 37,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Thieving",
+          "level": 37,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Swan Song",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Garden of Tranquillity",
+          "stage": "completed"
+        },
+        {
+          "quest": "One Small Favour",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Quest point",
+          "level": 100,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Cooking",
+          "level": 62,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Crafting",
+          "level": 40,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Firemaking",
+          "level": 42,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Fishing",
+          "level": 62,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Magic",
+          "level": 66,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Smithing",
+          "level": 45,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Tai Bwo Wannai Trio",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Jungle Potion",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 15,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Cooking",
+          "level": 30,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Fishing",
+          "level": 5,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Fishing",
+          "level": 65,
+          "ironman": true,
+          "boostable": true
+        },
+        {
+          "skill": "Herblore",
+          "level": 34,
+          "ironman": true,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "A Tail of Two Cats",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Icthlarin's Little Helper",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": []
+    },
+    {
+      "name": "Tale of the Righteous",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Client of Kourend",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Mining",
+          "level": 10,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Strength",
+          "level": 16,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "A Taste of Hope",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Darkness of Hallowvale",
+          "stage": "completed"
+        },
+        {
+          "quest": "Druidic Ritual",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 45,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Attack",
+          "level": 40,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Crafting",
+          "level": 48,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Herblore",
+          "level": 40,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Slayer",
+          "level": 38,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Tears of Guthix",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Quest point",
+          "level": 43,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Crafting",
+          "level": 20,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Firemaking",
+          "level": 49,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Mining",
+          "level": 20,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Temple of Ikov",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Ranged",
+          "level": 40,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Thieving",
+          "level": 42,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Temple of the Eye",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Enter the Abyss",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Runecraft",
+          "level": 10,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Throne of Miscellania",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "The Fremennik Trials",
+          "stage": "completed"
+        },
+        {
+          "quest": "Heroes' Quest",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": []
+    },
+    {
+      "name": "The Tourist Trap",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Fletching",
+          "level": 10,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Smithing",
+          "level": 20,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Tower of Life",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Construction",
+          "level": 10,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Tree Gnome Village",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Tribal Totem",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Thieving",
+          "level": 21,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Troll Romance",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Troll Stronghold",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 28,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Woodcutting",
+          "level": 45,
+          "ironman": true,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Troll Stronghold",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Death Plateau",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 15,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Twilight's Promise",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Children of the Sun",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": []
+    },
+    {
+      "name": "Underground Pass",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Biohazard",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Ranged",
+          "level": 25,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Vampyre Slayer",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Wanted!",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "The Lost Tribe",
+          "stage": "completed"
+        },
+        {
+          "quest": "Priest in Peril",
+          "stage": "completed"
+        },
+        {
+          "quest": "Recruitment Drive",
+          "stage": "completed"
+        },
+        {
+          "quest": "Enter the Abyss",
+          "stage": "started"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Quest point",
+          "level": 32,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Watchtower",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Druidic Ritual",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 25,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Herblore",
+          "level": 14,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Magic",
+          "level": 15,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Mining",
+          "level": 40,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Thieving",
+          "level": 15,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Waterfall Quest",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "What Lies Below",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Rune Mysteries",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Runecraft",
+          "level": 35,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "While Guthix Sleeps",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Defender of Varrock",
+          "stage": "completed"
+        },
+        {
+          "quest": "The Path of Glouphrie",
+          "stage": "completed"
+        },
+        {
+          "quest": "Fight Arena",
+          "stage": "completed"
+        },
+        {
+          "quest": "Dream Mentor",
+          "stage": "completed"
+        },
+        {
+          "quest": "The Hand in the Sand",
+          "stage": "completed"
+        },
+        {
+          "quest": "Wanted!",
+          "stage": "completed"
+        },
+        {
+          "quest": "Temple of the Eye",
+          "stage": "completed"
+        },
+        {
+          "quest": "Tears of Guthix",
+          "stage": "completed"
+        },
+        {
+          "quest": "Nature Spirit",
+          "stage": "completed"
+        },
+        {
+          "quest": "A Tail of Two Cats",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Quest point",
+          "level": 180,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Thieving",
+          "level": 72,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Magic",
+          "level": 67,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Agility",
+          "level": 66,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Farming",
+          "level": 65,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Herblore",
+          "level": 65,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Hunter",
+          "level": 62,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Witch's Potion",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Witch's House",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "X Marks the Spot",
+      "node_type": "quest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Zogre Flesh Eaters",
+      "node_type": "quest",
+      "prereqs": [
+        {
+          "quest": "Big Chompy Bird Hunting",
+          "stage": "completed"
+        },
+        {
+          "quest": "Jungle Potion",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Herblore",
+          "level": 8,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Ranged",
+          "level": 30,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Smithing",
+          "level": 4,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Alfred Grimhand's Barcrawl",
+      "node_type": "miniquest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Barbarian Training",
+      "node_type": "miniquest",
+      "prereqs": [
+        {
+          "quest": "Barbarian Firemaking",
+          "stage": "completed"
+        },
+        {
+          "quest": "Barbarian Fishing",
+          "stage": "completed"
+        },
+        {
+          "quest": "Barbarian Herblore",
+          "stage": "completed"
+        },
+        {
+          "quest": "Barbarian Smithing",
+          "stage": "completed"
+        },
+        {
+          "quest": "Barbarian Farming",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": []
+    },
+    {
+      "name": "Bear Your Soul",
+      "node_type": "miniquest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Curse of the Empty Lord",
+      "node_type": "miniquest",
+      "prereqs": [
+        {
+          "quest": "Desert Treasure I",
+          "stage": "completed"
+        },
+        {
+          "quest": "The Restless Ghost",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Prayer",
+          "level": 31,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Thieving",
+          "level": 53,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Daddy's Home",
+      "node_type": "miniquest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "The Enchanted Key",
+      "node_type": "miniquest",
+      "prereqs": [
+        {
+          "quest": "Making History",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": []
+    },
+    {
+      "name": "Enter the Abyss",
+      "node_type": "miniquest",
+      "prereqs": [
+        {
+          "quest": "Rune Mysteries",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": []
+    },
+    {
+      "name": "Family Pest",
+      "node_type": "miniquest",
+      "prereqs": [
+        {
+          "quest": "Family Crest",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": []
+    },
+    {
+      "name": "The Frozen Door",
+      "node_type": "miniquest",
+      "prereqs": [
+        {
+          "quest": "Desert Treasure I",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 70,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Hitpoints",
+          "level": 70,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Ranged",
+          "level": 70,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Strength",
+          "level": 70,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "The General's Shadow",
+      "node_type": "miniquest",
+      "prereqs": [
+        {
+          "quest": "Curse of the Empty Lord",
+          "stage": "completed"
+        },
+        {
+          "quest": "Fight Arena",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": []
+    },
+    {
+      "name": "His Faithful Servants",
+      "node_type": "miniquest",
+      "prereqs": [
+        {
+          "quest": "Priest in Peril",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": []
+    },
+    {
+      "name": "Hopespear's Will",
+      "node_type": "miniquest",
+      "prereqs": [
+        {
+          "quest": "The Restless Ghost",
+          "stage": "started"
+        },
+        {
+          "quest": "Desert Treasure I",
+          "stage": "completed"
+        },
+        {
+          "quest": "Fairytale II - Cure a Queen",
+          "stage": "completed"
+        },
+        {
+          "quest": "Land of the Goblins",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Prayer",
+          "level": 50,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "In Search of Knowledge",
+      "node_type": "miniquest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Into the Tombs",
+      "node_type": "miniquest",
+      "prereqs": [
+        {
+          "quest": "Beneath Cursed Sands",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": []
+    },
+    {
+      "name": "Lair of Tarn Razorlor",
+      "node_type": "miniquest",
+      "prereqs": [
+        {
+          "quest": "Haunted Mine",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Slayer",
+          "level": 40,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Mage Arena I",
+      "node_type": "miniquest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Magic",
+          "level": 60,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Mage Arena II",
+      "node_type": "miniquest",
+      "prereqs": [
+        {
+          "quest": "Mage Arena I",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Magic",
+          "level": 75,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Skippy and the Mogres",
+      "node_type": "miniquest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Cooking",
+          "level": 20,
+          "ironman": false,
+          "boostable": true
+        }
+      ]
+    },
+    {
+      "name": "Barbarian Firemaking",
+      "node_type": "miniquest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Crafting",
+          "level": 11,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Firemaking",
+          "level": 35,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Barbarian Farming",
+      "node_type": "miniquest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Farming",
+          "level": 15,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Barbarian Fishing",
+      "node_type": "miniquest",
+      "prereqs": [],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 15,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Fishing",
+          "level": 55,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Strength",
+          "level": 35,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Barbarian Herblore",
+      "node_type": "miniquest",
+      "prereqs": [
+        {
+          "quest": "Druidic Ritual",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Herblore",
+          "level": 4,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Barbarian Smithing",
+      "node_type": "miniquest",
+      "prereqs": [
+        {
+          "quest": "Tai Bwo Wannai Trio",
+          "stage": "completed"
+        },
+        {
+          "quest": "Barbarian Firemaking",
+          "stage": "completed"
+        },
+        {
+          "quest": "Barbarian Fishing",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Smithing",
+          "level": 5,
+          "ironman": false,
+          "boostable": false
+        }
+      ]
+    },
+    {
+      "name": "Knight Waves Training Grounds",
+      "node_type": "miniquest",
+      "prereqs": [
+        {
+          "quest": "King's Ransom",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": []
+    },
+    {
+      "name": "Natural History Quiz",
+      "node_type": "miniquest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Rogue Trader",
+      "node_type": "miniquest",
+      "prereqs": [
+        {
+          "quest": "The Feud",
+          "stage": "completed"
+        },
+        {
+          "quest": "Rune Mysteries",
+          "stage": "completed"
+        },
+        {
+          "quest": "Icthlarin's Little Helper",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": []
+    },
+    {
+      "name": "Sacred Bone Burner restoration",
+      "node_type": "miniquest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Tutorial Island",
+      "node_type": "miniquest",
+      "prereqs": [],
+      "skill_reqs": []
+    },
+    {
+      "name": "Easy Ardougne Diary",
+      "node_type": "diary",
+      "prereqs": [
+        {
+          "quest": "Biohazard",
+          "stage": "completed"
+        },
+        {
+          "quest": "Rune Mysteries",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Thieving",
+          "level": 5,
+          "ironman": false,
+          "boostable": true
+        }
+      ],
+      "alias": {
+        "domain": "achievement_diaries",
+        "region": "Ardougne",
+        "tier": "easy"
+      }
+    },
+    {
+      "name": "Medium Ardougne Diary",
+      "node_type": "diary",
+      "prereqs": [
+        {
+          "quest": "Enlightened Journey",
+          "stage": "completed"
+        },
+        {
+          "quest": "The Hand in the Sand",
+          "stage": "completed"
+        },
+        {
+          "quest": "Tower of Life",
+          "stage": "completed"
+        },
+        {
+          "quest": "Underground Pass",
+          "stage": "completed"
+        },
+        {
+          "quest": "Fairytale II - Cure a Queen",
+          "stage": "started"
+        },
+        {
+          "quest": "Sea Slug",
+          "stage": "started"
+        },
+        {
+          "quest": "Watchtower",
+          "stage": "started"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Strength",
+          "level": 38,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Ranged",
+          "level": 21,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Magic",
+          "level": 51,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Agility",
+          "level": 39,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Thieving",
+          "level": 38,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Crafting",
+          "level": 36,
+          "ironman": true,
+          "boostable": true
+        },
+        {
+          "skill": "Fletching",
+          "level": 59,
+          "ironman": true,
+          "boostable": true
+        },
+        {
+          "skill": "Smithing",
+          "level": 59,
+          "ironman": true,
+          "boostable": true
+        },
+        {
+          "skill": "Firemaking",
+          "level": 50,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Woodcutting",
+          "level": 36,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Farming",
+          "level": 31,
+          "ironman": false,
+          "boostable": true
+        }
+      ],
+      "alias": {
+        "domain": "achievement_diaries",
+        "region": "Ardougne",
+        "tier": "medium"
+      }
+    },
+    {
+      "name": "Hard Ardougne Diary",
+      "node_type": "diary",
+      "prereqs": [
+        {
+          "quest": "Legends' Quest",
+          "stage": "completed"
+        },
+        {
+          "quest": "Monkey Madness I",
+          "stage": "completed"
+        },
+        {
+          "quest": "Mourning's End Part II",
+          "stage": "completed"
+        },
+        {
+          "quest": "Watchtower",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Strength",
+          "level": 50,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Ranged",
+          "level": 60,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Prayer",
+          "level": 42,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Magic",
+          "level": 66,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Runecraft",
+          "level": 65,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Construction",
+          "level": 50,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Agility",
+          "level": 56,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Herblore",
+          "level": 45,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Thieving",
+          "level": 72,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Crafting",
+          "level": 50,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Fletching",
+          "level": 5,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Hunter",
+          "level": 59,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Mining",
+          "level": 52,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Smithing",
+          "level": 68,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Fishing",
+          "level": 53,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Cooking",
+          "level": 53,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Woodcutting",
+          "level": 50,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Farming",
+          "level": 70,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Quest point",
+          "level": 107,
+          "ironman": false,
+          "boostable": false
+        }
+      ],
+      "alias": {
+        "domain": "achievement_diaries",
+        "region": "Ardougne",
+        "tier": "hard"
+      }
+    },
+    {
+      "name": "Elite Ardougne Diary",
+      "node_type": "diary",
+      "prereqs": [
+        {
+          "quest": "Desert Treasure I",
+          "stage": "completed"
+        },
+        {
+          "quest": "Haunted Mine",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Ranged",
+          "level": 40,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Magic",
+          "level": 94,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Agility",
+          "level": 90,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Thieving",
+          "level": 10,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Thieving",
+          "level": 82,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Crafting",
+          "level": 35,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Fletching",
+          "level": 69,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Smithing",
+          "level": 91,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Fishing",
+          "level": 81,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Cooking",
+          "level": 91,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Firemaking",
+          "level": 50,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Farming",
+          "level": 85,
+          "ironman": false,
+          "boostable": true
+        }
+      ],
+      "alias": {
+        "domain": "achievement_diaries",
+        "region": "Ardougne",
+        "tier": "elite"
+      }
+    },
+    {
+      "name": "Easy Kandarin Diary",
+      "node_type": "diary",
+      "prereqs": [
+        {
+          "quest": "Elemental Workshop I",
+          "stage": "started"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 20,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Crafting",
+          "level": 42,
+          "ironman": true,
+          "boostable": true
+        },
+        {
+          "skill": "Farming",
+          "level": 13,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Fishing",
+          "level": 16,
+          "ironman": false,
+          "boostable": true
+        }
+      ],
+      "alias": {
+        "domain": "achievement_diaries",
+        "region": "Kandarin",
+        "tier": "easy"
+      }
+    },
+    {
+      "name": "Medium Kandarin Diary",
+      "node_type": "diary",
+      "prereqs": [
+        {
+          "quest": "Easy Kandarin Diary",
+          "stage": "completed"
+        },
+        {
+          "quest": "Alfred Grimhand's Barcrawl",
+          "stage": "completed"
+        },
+        {
+          "quest": "Elemental Workshop II",
+          "stage": "completed"
+        },
+        {
+          "quest": "Fairytale II - Cure a Queen",
+          "stage": "started"
+        },
+        {
+          "quest": "Waterfall Quest",
+          "stage": "started"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 36,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Cooking",
+          "level": 43,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Farming",
+          "level": 26,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Fishing",
+          "level": 46,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Fletching",
+          "level": 50,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Fletching",
+          "level": 59,
+          "ironman": true,
+          "boostable": true
+        },
+        {
+          "skill": "Herblore",
+          "level": 48,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Magic",
+          "level": 45,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Mining",
+          "level": 30,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Ranged",
+          "level": 40,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Smithing",
+          "level": 59,
+          "ironman": true,
+          "boostable": true
+        },
+        {
+          "skill": "Strength",
+          "level": 22,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Thieving",
+          "level": 47,
+          "ironman": false,
+          "boostable": true
+        }
+      ],
+      "alias": {
+        "domain": "achievement_diaries",
+        "region": "Kandarin",
+        "tier": "medium"
+      }
+    },
+    {
+      "name": "Hard Kandarin Diary",
+      "node_type": "diary",
+      "prereqs": [
+        {
+          "quest": "Medium Kandarin Diary",
+          "stage": "completed"
+        },
+        {
+          "quest": "Barbarian Firemaking",
+          "stage": "completed"
+        },
+        {
+          "quest": "Barbarian Fishing",
+          "stage": "completed"
+        },
+        {
+          "quest": "Barbarian Smithing",
+          "stage": "completed"
+        },
+        {
+          "quest": "Knight Waves Training Grounds",
+          "stage": "completed"
+        },
+        {
+          "quest": "Tai Bwo Wannai Trio",
+          "stage": "completed"
+        },
+        {
+          "quest": "Desert Treasure I",
+          "stage": "started"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 60,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Construction",
+          "level": 50,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Crafting",
+          "level": 10,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Defence",
+          "level": 70,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Firemaking",
+          "level": 65,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Fishing",
+          "level": 70,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Fletching",
+          "level": 70,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Magic",
+          "level": 56,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Prayer",
+          "level": 70,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Smithing",
+          "level": 75,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Strength",
+          "level": 50,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Thieving",
+          "level": 53,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Woodcutting",
+          "level": 60,
+          "ironman": false,
+          "boostable": true
+        }
+      ],
+      "alias": {
+        "domain": "achievement_diaries",
+        "region": "Kandarin",
+        "tier": "hard"
+      }
+    },
+    {
+      "name": "Elite Kandarin Diary",
+      "node_type": "diary",
+      "prereqs": [
+        {
+          "quest": "Hard Kandarin Diary",
+          "stage": "completed"
+        },
+        {
+          "quest": "Barbarian Training",
+          "stage": "completed"
+        },
+        {
+          "quest": "Family Crest",
+          "stage": "completed"
+        },
+        {
+          "quest": "Lunar Diplomacy",
+          "stage": "completed"
+        },
+        {
+          "quest": "Tai Bwo Wannai Trio",
+          "stage": "completed"
+        }
+      ],
+      "skill_reqs": [
+        {
+          "skill": "Agility",
+          "level": 60,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Cooking",
+          "level": 80,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Crafting",
+          "level": 85,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Farming",
+          "level": 79,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Firemaking",
+          "level": 85,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Fishing",
+          "level": 76,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Herblore",
+          "level": 86,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Magic",
+          "level": 87,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Smithing",
+          "level": 90,
+          "ironman": false,
+          "boostable": true
+        },
+        {
+          "skill": "Barbarian Assault: Attacker",
+          "level": 5,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Barbarian Assault: Collector",
+          "level": 5,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Barbarian Assault: Defender",
+          "level": 5,
+          "ironman": false,
+          "boostable": false
+        },
+        {
+          "skill": "Barbarian Assault: Healer",
+          "level": 5,
+          "ironman": false,
+          "boostable": false
+        }
+      ],
+      "alias": {
+        "domain": "achievement_diaries",
+        "region": "Kandarin",
+        "tier": "elite"
+      }
+    }
+  ],
+  "_excluded": []
+}
