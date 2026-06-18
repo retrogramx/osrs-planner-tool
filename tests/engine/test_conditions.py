@@ -28,3 +28,30 @@ def test_skill_level_atom_true_false_and_absent_is_false():
     assert atom_satisfied(atom, met, kg) is Tri.TRUE
     assert atom_satisfied(atom, under, kg) is Tri.FALSE
     assert atom_satisfied(atom, absent, kg) is Tri.FALSE
+
+
+def test_skill_xp_atom():
+    kg = _store(nodes=[Node(id="skill:slayer", kind=NodeKind.SKILL, name="Slayer", slug="slayer")])
+    atom = ConditionAtom(atom_type=AtomType.SKILL_XP, ref_node="skill:slayer", threshold=100_000)
+    assert atom_satisfied(atom, AccountState(mode="normal", xp={"skill:slayer": 100_000}), kg) is Tri.TRUE
+    assert atom_satisfied(atom, AccountState(mode="normal", xp={"skill:slayer": 99_999}), kg) is Tri.FALSE
+    assert atom_satisfied(atom, AccountState(mode="normal"), kg) is Tri.FALSE  # absent xp = 0
+
+
+def test_combat_level_atom_reads_derived_scalar():
+    kg = _store()
+    atom = ConditionAtom(atom_type=AtomType.COMBAT_LEVEL, threshold=100)
+    assert atom_satisfied(atom, AccountState(mode="normal", combat_level=100), kg) is Tri.TRUE
+    assert atom_satisfied(atom, AccountState(mode="normal", combat_level=99), kg) is Tri.FALSE
+    # default combat_level=3 always exists -> never UNKNOWN
+    assert atom_satisfied(atom, AccountState(mode="normal"), kg) is Tri.FALSE
+
+
+def test_quest_points_and_ca_points_atoms():
+    kg = _store()
+    qp = ConditionAtom(atom_type=AtomType.QUEST_POINTS, threshold=32)
+    cap = ConditionAtom(atom_type=AtomType.COMBAT_ACHIEVEMENT_POINTS, threshold=500)
+    assert atom_satisfied(qp, AccountState(mode="normal", qp=32), kg) is Tri.TRUE
+    assert atom_satisfied(qp, AccountState(mode="normal", qp=31), kg) is Tri.FALSE
+    assert atom_satisfied(cap, AccountState(mode="normal", ca_points=500), kg) is Tri.TRUE
+    assert atom_satisfied(cap, AccountState(mode="normal", ca_points=499), kg) is Tri.FALSE

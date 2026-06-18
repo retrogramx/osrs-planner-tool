@@ -19,6 +19,19 @@ def atom_satisfied(atom: ConditionAtom, state: AccountState, kg: KGStore) -> Tri
         # skill levels are observable for any tracked account -> absent = level 1 = real FALSE
         return from_bool(state.levels.get(atom.ref_node, 1) >= (atom.threshold or 0))
 
+    if at is AtomType.SKILL_XP:
+        return from_bool(state.xp.get(atom.ref_node, 0) >= (atom.threshold or 0))
+
+    if at is AtomType.COMBAT_LEVEL:
+        # engine-derived scalar, always present (defaults to 3) -> never UNKNOWN
+        return from_bool(state.combat_level >= (atom.threshold or 0))
+
+    if at is AtomType.QUEST_POINTS:
+        return from_bool(state.qp >= (atom.threshold or 0))
+
+    if at is AtomType.COMBAT_ACHIEVEMENT_POINTS:
+        return from_bool(state.ca_points >= (atom.threshold or 0))
+
     raise NotImplementedError(f"atom_satisfied: {at!r} not implemented")
 
 
