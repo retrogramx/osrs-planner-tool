@@ -55,3 +55,26 @@ def test_quest_points_and_ca_points_atoms():
     assert atom_satisfied(qp, AccountState(mode="normal", qp=31), kg) is Tri.FALSE
     assert atom_satisfied(cap, AccountState(mode="normal", ca_points=500), kg) is Tri.TRUE
     assert atom_satisfied(cap, AccountState(mode="normal", ca_points=499), kg) is Tri.FALSE
+
+
+def test_item_atom_qty_observable_absent_is_false():
+    kg = _store(nodes=[Node(id="item:8839", kind=NodeKind.ITEM, name="Void top", slug="void-top")])
+    atom = ConditionAtom(atom_type=AtomType.ITEM, ref_node="item:8839", qty=2)
+    assert atom_satisfied(atom, AccountState(mode="normal", counts={"item:8839": 2}), kg) is Tri.TRUE
+    assert atom_satisfied(atom, AccountState(mode="normal", counts={"item:8839": 1}), kg) is Tri.FALSE
+    # items are observable (bank feed) -> absent = 0 owned = FALSE
+    assert atom_satisfied(atom, AccountState(mode="normal"), kg) is Tri.FALSE
+
+
+def test_item_atom_qty_defaults_to_one():
+    kg = _store(nodes=[Node(id="item:8842", kind=NodeKind.ITEM, name="Void gloves", slug="void-gloves")])
+    atom = ConditionAtom(atom_type=AtomType.ITEM, ref_node="item:8842")  # qty None -> 1
+    assert atom_satisfied(atom, AccountState(mode="normal", counts={"item:8842": 1}), kg) is Tri.TRUE
+    assert atom_satisfied(atom, AccountState(mode="normal"), kg) is Tri.FALSE
+
+
+def test_account_type_atom_matches_mode():
+    kg = _store()
+    atom = ConditionAtom(atom_type=AtomType.ACCOUNT_TYPE, data={"value": "ironman"})
+    assert atom_satisfied(atom, AccountState(mode="ironman"), kg) is Tri.TRUE
+    assert atom_satisfied(atom, AccountState(mode="normal"), kg) is Tri.FALSE

@@ -32,6 +32,14 @@ def atom_satisfied(atom: ConditionAtom, state: AccountState, kg: KGStore) -> Tri
     if at is AtomType.COMBAT_ACHIEVEMENT_POINTS:
         return from_bool(state.ca_points >= (atom.threshold or 0))
 
+    if at is AtomType.ITEM:
+        # items observable via the bank feed -> absent = 0 owned = real FALSE
+        return from_bool(state.counts.get(atom.ref_node, 0) >= (atom.qty or 1))
+
+    if at is AtomType.ACCOUNT_TYPE:
+        # mode is always known for a loaded account -> never UNKNOWN
+        return from_bool(state.mode == atom.data.get("value"))
+
     raise NotImplementedError(f"atom_satisfied: {at!r} not implemented")
 
 
