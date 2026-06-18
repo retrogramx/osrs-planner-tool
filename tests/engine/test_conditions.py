@@ -17,17 +17,21 @@ def _store(nodes=None, edges=None, groups=None):
     )
 
 
-def test_skill_level_atom_true_false_and_absent_is_false():
+def test_skill_level_atom_true_false_and_absent_honours_observable_families():
     kg = _store(nodes=[Node(id="skill:attack", kind=NodeKind.SKILL, name="Attack", slug="attack")])
     atom = ConditionAtom(atom_type=AtomType.SKILL_LEVEL, ref_node="skill:attack", threshold=70)
 
     met = AccountState(mode="normal", levels={"skill:attack": 70})
     under = AccountState(mode="normal", levels={"skill:attack": 69})
-    absent = AccountState(mode="normal")  # skill levels are observable -> absent means level 1 -> FALSE
+    # absent + "skill_level" observable (Hiscores synced) -> real level 1 -> FALSE
+    absent_obs = AccountState(mode="normal", observable_families={"skill_level"})
+    # absent + "skill_level" NOT observable (account not yet loaded) -> UNKNOWN (§6)
+    absent_unobs = AccountState(mode="normal")
 
     assert atom_satisfied(atom, met, kg) is Tri.TRUE
     assert atom_satisfied(atom, under, kg) is Tri.FALSE
-    assert atom_satisfied(atom, absent, kg) is Tri.FALSE
+    assert atom_satisfied(atom, absent_obs, kg) is Tri.FALSE
+    assert atom_satisfied(atom, absent_unobs, kg) is Tri.UNKNOWN
 
 
 def test_skill_xp_atom():

@@ -80,3 +80,56 @@ def test_is_unlocked_folds_all_requires_edges(scurrius_kg):
     res = Engine(scurrius_kg).is_unlocked(state, SCURRIUS)
     assert isinstance(res, Ok)
     assert res.card.status == "unlocked"
+
+
+def test_unobservable_atom_indeterminate_not_false_locked(scurrius_kg):
+    # Strength absent AND not observable AND not asserted -> UNKNOWN (§6), not FALSE.
+    state = AccountState(
+        mode="main",
+        levels={"skill:attack": 75},   # strength deliberately absent
+        counts={},                      # no Void -> that branch FALSE
+        observable_families={"item"},   # 'skill_level' is NOT observable here
+    )
+    eng = Engine(scurrius_kg)
+    res = eng.is_unlocked(state, SCURRIUS)
+
+    assert isinstance(res, Ok)
+    # The whole point of §6: an unverifiable input must NOT read as locked.
+    assert res.card.status == "indeterminate"
+    assert res.card.status != "locked"
+
+    cant_verify = [b for b in res.card.blockers if b.status == "cant_verify"]
+    assert cant_verify, "an UNKNOWN leaf must surface a cant_verify blocker"
+    assert any(b.node_id == "skill:strength" for b in cant_verify)
+    assert "skill:strength" in res.refs.nodes
+
+
+def test_missing_node_returns_problem_not_found(scurrius_kg):
+    state = AccountState(mode="main", levels={"skill:attack": 75})
+    eng = Engine(scurrius_kg)
+    res = eng.is_unlocked(state, "npc:does-not-exist")
+
+    assert isinstance(res, Problem)
+    assert res.kind == ProblemKind.NOT_FOUND
+    # D7: NOT_FOUND carries an EMPTY Refs; the unknown id is named in the message,
+    # NOT inside refs.nodes (an unknown id is not a node, so not a NodeRef).
+    assert res.refs.nodes == {}
+    assert "npc:does-not-exist" in res.message
+
+
+def test_none_state_returns_problem_missing_state(scurrius_kg):
+    eng = Engine(scurrius_kg)
+    res = eng.is_unlocked(None, SCURRIUS)  # D4: only state is None is MISSING_STATE
+
+    assert isinstance(res, Problem)
+    assert res.kind == ProblemKind.MISSING_STATE
+    assert SCURRIUS in res.refs.nodes  # the subject is named even on failure (§7.4)
+
+
+def test_fresh_valid_account_is_not_missing_state(scurrius_kg):
+    # D4: a fresh real account (mode set, empty progress, combat_level == 3) is VALID,
+    # not missing — its absent values resolve via the Kleene rule, never MISSING_STATE.
+    fresh = AccountState(mode="main")
+    res = Engine(scurrius_kg).is_unlocked(fresh, SCURRIUS)
+    assert isinstance(res, Ok)
+    assert res.card.status in {"locked", "indeterminate"}  # never MISSING_STATE

@@ -62,10 +62,11 @@ def test_flagship_true_for_main_full_void():
 
 
 def test_fresh_main_flagship_is_unknown():
-    # fresh_main: mode="normal", empty observable_families (we haven't synced a bank feed).
-    #   stats branch: skill levels are always-observable (absent = level 1) -> 1 < 70 = FALSE
+    # fresh_main: mode="normal", empty observable_families (Hiscores not yet synced).
+    #   stats branch: "skill_level" NOT observable -> absent levels are UNKNOWN (§6)
+    #                 AND(UNKNOWN, UNKNOWN) = UNKNOWN
     #   void branch : items absent AND "item" NOT observable -> UNKNOWN (can't see the bank)
-    # OR(FALSE, UNKNOWN) = UNKNOWN (Kleene): we can't rule out that the player owns full Void,
+    # OR(UNKNOWN, UNKNOWN) = UNKNOWN (Kleene): we can't verify either branch is satisfied,
     # so the flagship is UNKNOWN, not a false "locked". This is the cardinal "absence != zero".
     kg = build_store()
     assert evaluate(G_SCURRIUS_OR, fresh_main(), kg) is Tri.UNKNOWN

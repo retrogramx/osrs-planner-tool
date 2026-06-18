@@ -11,6 +11,8 @@ from osrs_planner.engine.kg.model import AtomType, Op, ConditionAtom
 from osrs_planner.engine.kg.store import KGStore
 from osrs_planner.engine.state import AccountState, QUEST_STATE_ORDER, family_is_observed
 
+_SKILL_LEVEL_FAMILY = AtomType.SKILL_LEVEL.value  # "skill_level"
+
 
 def _done_membership(family: str, ref_node: str, state: AccountState) -> Tri:
     """Binary 'ref_node in state.done', honoring the absence-aware UNKNOWN rule.
@@ -52,8 +54,15 @@ def atom_satisfied(atom: ConditionAtom, state: AccountState, kg: KGStore) -> Tri
     at = atom.atom_type
 
     if at is AtomType.SKILL_LEVEL:
-        # skill levels are observable for any tracked account -> absent = level 1 = real FALSE
-        return from_bool(state.levels.get(atom.ref_node, 1) >= (atom.threshold or 0))
+        # Honour the absence-aware UNKNOWN rule (§6 / ADR-0004): an absent level is a
+        # real level-1 FALSE only when "skill_level" is in observable_families (the
+        # account's Hiscores or plugin feed has been synced).  Without that signal, we
+        # cannot distinguish "level 1" from "level 99 not yet loaded" -> UNKNOWN.
+        if atom.ref_node in state.levels:
+            return from_bool(state.levels[atom.ref_node] >= (atom.threshold or 0))
+        if family_is_observed(_SKILL_LEVEL_FAMILY, state, manually_asserted=False):
+            return from_bool(1 >= (atom.threshold or 0))
+        return Tri.UNKNOWN
 
     if at is AtomType.SKILL_XP:
         return from_bool(state.xp.get(atom.ref_node, 0) >= (atom.threshold or 0))
