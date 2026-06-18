@@ -39,6 +39,9 @@
     },
     "fix_notes": [
       "P1 alias fix (2026-06-17): added 'alias' field {domain:'achievement_diaries', region, tier} to the 8 node_type='diary' records (Ardougne/Kandarin tiers) so the KG can merge them with the achievement_diaries domain. Records retained (they are prereq targets); alias (region, tier) validated against achievement_diaries diary_region/tier."
+    ],
+    "notes": [
+      "2026-06-18 quest-state vocabulary: prereq stage values aligned to the in-game journal 3-state enum {not_started, in_progress, completed}; the wiki \"Started:\" convention -> \"in_progress\". (Requirements only ever require in_progress or completed; not_started is an account-state value.)"
     ]
   },
   "records": [
@@ -2915,15 +2918,15 @@
         },
         {
           "quest": "Creature of Fenkenstrain",
-          "stage": "started"
+          "stage": "in_progress"
         },
         {
           "quest": "Waterfall Quest",
-          "stage": "started"
+          "stage": "in_progress"
         },
         {
           "quest": "Zogre Flesh Eaters",
-          "stage": "started"
+          "stage": "in_progress"
         }
       ],
       "skill_reqs": [
@@ -2951,7 +2954,7 @@
         },
         {
           "quest": "The Giant Dwarf",
-          "stage": "started"
+          "stage": "in_progress"
         }
       ],
       "skill_reqs": []
@@ -3151,7 +3154,7 @@
         },
         {
           "quest": "Legends' Quest",
-          "stage": "started"
+          "stage": "in_progress"
         }
       ],
       "skill_reqs": [
@@ -4202,7 +4205,7 @@
         },
         {
           "quest": "Enter the Abyss",
-          "stage": "started"
+          "stage": "in_progress"
         }
       ],
       "skill_reqs": [
@@ -4596,7 +4599,7 @@
       "prereqs": [
         {
           "quest": "The Restless Ghost",
-          "stage": "started"
+          "stage": "in_progress"
         },
         {
           "quest": "Desert Treasure I",
@@ -4897,15 +4900,15 @@
         },
         {
           "quest": "Fairytale II - Cure a Queen",
-          "stage": "started"
+          "stage": "in_progress"
         },
         {
           "quest": "Sea Slug",
-          "stage": "started"
+          "stage": "in_progress"
         },
         {
           "quest": "Watchtower",
-          "stage": "started"
+          "stage": "in_progress"
         }
       ],
       "skill_reqs": [
@@ -5224,7 +5227,7 @@
       "prereqs": [
         {
           "quest": "Elemental Workshop I",
-          "stage": "started"
+          "stage": "in_progress"
         }
       ],
       "skill_reqs": [
@@ -5277,11 +5280,11 @@
         },
         {
           "quest": "Fairytale II - Cure a Queen",
-          "stage": "started"
+          "stage": "in_progress"
         },
         {
           "quest": "Waterfall Quest",
-          "stage": "started"
+          "stage": "in_progress"
         }
       ],
       "skill_reqs": [
@@ -5400,7 +5403,7 @@
         },
         {
           "quest": "Desert Treasure I",
-          "stage": "started"
+          "stage": "in_progress"
         }
       ],
       "skill_reqs": [
