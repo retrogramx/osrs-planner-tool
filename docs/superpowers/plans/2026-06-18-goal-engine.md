@@ -2304,10 +2304,12 @@ Behavioral anchors from the source docs (do not re-derive):
 
 
   def _store(nodes=None, edges=None, groups=None):
+      # Task 5's InMemoryKGStore expects groups as a dict[int, ConditionGroup];
+      # callers pass a list[ConditionGroup], so index it by id here.
       return InMemoryKGStore(
           nodes=list(nodes or []),
           edges=list(edges or []),
-          groups=list(groups or []),
+          groups={g.id: g for g in (groups or [])},
       )
 
 
@@ -3069,7 +3071,8 @@ This task is **test infrastructure**, not TDD — it builds the shared fixture t
 **Files:**
 - `tests/engine/__init__.py` (created earlier; create here if absent)
 - `tests/engine/fixtures/__init__.py` (new — makes `fixtures` an importable package)
-- `tests/engine/fixtures/kg_fixture.py` (new — the hand-authored store + sample states + pytest fixtures)
+- `tests/engine/fixtures/kg_fixture.py` (new — the hand-authored store builder + sample states + pytest fixtures)
+- `tests/engine/conftest.py` (new — pytest-auto-discovered fixtures `scurrius_kg`, `fresh_main`, `iron_75atk_60str` that Tasks 10–13 resolve by name)
 - `tests/engine/test_fixture_smoke.py` (new — the single red→green smoke test)
 
 ---
@@ -3331,6 +3334,54 @@ def states() -> dict[str, AccountState]:
     }
 ```
 
+> **Builder vs fixture (so the conftest can reuse it).** `build_store()` is a plain importable function (NOT a pytest fixture); the `kg()` fixture is just a thin wrapper around it. The conftest in Step 2b imports `build_store` directly. Keep `build_store` importable.
+
+- [ ] **Step 2b — write the pytest conftest (auto-discovered fixtures).** Create `tests/engine/conftest.py`. pytest auto-discovers `conftest.py` for every test module under `tests/engine/`, so a fixture defined here resolves by name in Tasks 10–13 without an explicit import (unlike `kg_fixture.py`, which is a plain module pytest does NOT scan for fixtures). It re-exports the worked `(70 Att AND 70 Str) OR full-Void` Scurrius store (rooted at `npc:7221`) as `scurrius_kg`, plus two sample `AccountState`s, all built from the importable `kg_fixture` builders.
+
+```python
+# tests/engine/conftest.py
+"""Auto-discovered pytest fixtures for the engine test suite.
+
+Wraps the plain importable builders in tests/engine/fixtures/kg_fixture.py so
+Tasks 10–13 can request `scurrius_kg` / `fresh_main` / `iron_75atk_60str`
+by fixture name (pytest scans conftest.py for fixtures; it does NOT scan the
+kg_fixture module). The store is the kg-schema-v1 worked example rooted at
+npc:7221 with requires-tree OR( AND(70 Attack, 70 Strength), gear_loadout:void ).
+"""
+
+from __future__ import annotations
+
+import pytest
+
+from osrs_planner.engine.kg.store import InMemoryKGStore
+from osrs_planner.engine.state import AccountState
+from tests.engine.fixtures.kg_fixture import (
+    build_store,
+    fresh_main as _fresh_main,
+    iron_75atk_60str_novoid as _iron_75atk_60str_novoid,
+)
+
+
+@pytest.fixture
+def scurrius_kg() -> InMemoryKGStore:
+    """The worked (70 Att AND 70 Str) OR full-Void Scurrius KG (npc:7221)."""
+    return build_store()
+
+
+@pytest.fixture
+def fresh_main() -> AccountState:
+    """A brand-new NORMAL account (no observable families set)."""
+    return _fresh_main()
+
+
+@pytest.fixture
+def iron_75atk_60str() -> AccountState:
+    """The flagship counter-example: ironman 75 Atk / 60 Str, no Void."""
+    return _iron_75atk_60str_novoid()
+```
+
+> **Fixture-name reconciliation (Tasks 10–13).** Task 10's seven tests request `scurrius_kg` (provided here). Tasks 11/12 use their own module-local `_fixture_kg()`/`_two_layer_kg()` helpers and construct `AccountState` inline, so they need nothing from conftest. Task 13 defines its OWN module-local `kg` and `ironman` fixtures (a module-local fixture shadows conftest, so there is no clash); it does not consume `scurrius_kg`. The conftest deliberately does NOT export a bare `kg` fixture to avoid shadowing Task 13's local one. The sample states `fresh_main`/`iron_75atk_60str` are available to any task that wants them by fixture name.
+
 - [ ] **Step 3 — write the smoke test (the one red→green step).** Create `tests/engine/test_fixture_smoke.py`. It is the failing test (the fixture module/import surface doesn't exist yet at this point in the plan if you author the test before the module — but since Step 2 already wrote the module, run it now and watch it go green; if you prefer strict red-first, write this test file BEFORE Step 2's module and observe the collection error). The asserts pin the worked-example structure and exercise the spine evaluator end-to-end.
 
 ```python
@@ -3430,8 +3481,9 @@ Expected: all engine tests pass, including the 6 new smoke tests (exact count gr
 
 ```bash
 git add tests/engine/__init__.py tests/engine/fixtures/__init__.py \
-        tests/engine/fixtures/kg_fixture.py tests/engine/test_fixture_smoke.py && \
-git commit -m "test: hand-authored KG fixture + smoke test for goal-engine
+        tests/engine/fixtures/kg_fixture.py tests/engine/conftest.py \
+        tests/engine/test_fixture_smoke.py && \
+git commit -m "test: hand-authored KG fixture + conftest + smoke test for goal-engine
 
 Encodes the kg-schema-v1 worked examples (Scurrius access tree, the
 '(70 Att AND 70 Str) OR full-Void' condition, gear_loadout:void
@@ -3456,7 +3508,7 @@ Expected: one commit created listing the four files.
 
 **Caveats for the plan author / executor:**
 - This task assumes earlier tasks already created `tests/engine/__init__.py` and the full type-spine; if `tests/engine/__init__.py` is missing, Step 1's `touch` creates it.
-- `InMemoryKGStore(nodes=..., edges=..., groups=...)` is invoked with `nodes`/`groups` as a `list[Node]`/`dict[int, ConditionGroup]` here. The spine says "InMemoryKGStore … built from lists of Node/Edge/ConditionGroup" — if the constructor authored in the `store.py` task takes `groups` as a `list[ConditionGroup]` instead of a dict, change `build_groups()` to return a list and pass it through (the smoke test is unaffected). Confirm against the actual `store.py` constructor signature from that task before running.
+- `InMemoryKGStore(nodes=..., edges=..., groups=...)` is invoked with `nodes`/`edges` as `list[Node]`/`list[Edge]` and `groups` as a `dict[int, ConditionGroup]` here — matching Task 5's constructor signature (`groups: dict[int, ConditionGroup]`). `build_groups()` returns that dict directly; do NOT change it to a list. Every `InMemoryKGStore(...)` call in the plan must pass `groups` as a `dict[int, ConditionGroup]` (Task 7's `_store` helper indexes its list arg by `g.id` for exactly this reason).
 - Relevant absolute paths: `/Users/adrian/Documents/workspace/github.com/retrogramx/osrs-planner-tool/tests/engine/fixtures/kg_fixture.py` and `/Users/adrian/Documents/workspace/github.com/retrogramx/osrs-planner-tool/tests/engine/test_fixture_smoke.py`.
 
 ---
@@ -3991,10 +4043,11 @@ This task assumes the Task 8 fixture exists at `tests/engine/conftest.py` provid
   from osrs_planner.engine.cards import UnlockCard
   from osrs_planner.engine.state import AccountState
 
-  # The Task 8 fixture (conftest.py) exposes:
-  #   scurrius_kg      -> InMemoryKGStore with node npc:7221 carrying the
-  #                       (70 Att AND 70 Str) OR full-Void requires cond_group
-  #   make_state(**kw) -> AccountState builder (mode, levels, counts, observable_families, ...)
+  # The Task 8 conftest.py exposes by fixture name:
+  #   scurrius_kg -> InMemoryKGStore with node npc:7221 carrying the
+  #                  (70 Att AND 70 Str) OR full-Void requires cond_group
+  #   fresh_main / iron_75atk_60str -> sample AccountStates (optional here;
+  #   these tests construct AccountState directly via the spine constructor).
   # SCURRIUS is the goal node id under test.
   SCURRIUS = "npc:7221"
 
@@ -4807,9 +4860,10 @@ All run commands are from the repo root `/Users/adrian/Documents/workspace/githu
       assert by_id["access:scur-lair"].status == "satisfiable" # is_unlocked false
       assert by_id["access:scur-lair"].reason == "is_unlocked"
 
-      # §7.4 grounding invariant: every step node is in refs.nodes
+      # §7.4 grounding invariant: every step node is in refs.nodes (refs live on the
+      # envelope, NOT on PlanCard — see Task 9 cards.py + Task 13 integration test).
       for nid in ids:
-          assert nid in card.refs.nodes
+          assert nid in res.refs.nodes
 
 
   def test_prereqs_for_collects_referenced_atoms():
@@ -5077,6 +5131,8 @@ Assumes Tasks 1–11 are merged: `result.py`, `kleene.py`, `kg/model.py`, `kg/st
               return base
 
           plan = base.card
+          # refs live on the Ok envelope, NOT on PlanCard (see Task 9 cards.py).
+          base_refs = base.refs
 
           # Which prereq node-ids are already satisfied?
           satisfied = {s.node_id for s in plan.steps if s.status == "satisfied"}
@@ -5098,17 +5154,17 @@ Assumes Tasks 1–11 are merged: `result.py`, `kleene.py`, `kg/model.py`, `kg/st
                   frontier.append(step)
 
           if not frontier:
-              return Empty(refs=plan.refs, reason=TerminalReason.NO_FRONTIER)
+              return Empty(refs=base_refs, reason=TerminalReason.NO_FRONTIER)
 
-          # Reuse the parent card's refs/referenced_atoms (subset is still grounded;
-          # every frontier node is already in plan.refs). §7.4 refs ⊆ touched-this-turn.
+          # Reuse the parent envelope's refs/referenced_atoms (subset is still grounded;
+          # every frontier node is already in base_refs). §7.4 refs ⊆ touched-this-turn.
           return Ok(
               card=PlanCard(
                   goal_id=plan.goal_id,
                   steps=frontier,
                   referenced_atoms=plan.referenced_atoms,
               ),
-              refs=plan.refs,
+              refs=base_refs,
           )
   ```
 
