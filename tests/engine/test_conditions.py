@@ -150,3 +150,15 @@ def test_achievement_diary_atom_ordered_and_unobservable():
     assert atom_satisfied(atom, done, kg) is Tri.TRUE
     assert atom_satisfied(atom, partial, kg) is Tri.FALSE
     assert atom_satisfied(atom, AccountState(mode="normal"), kg) is Tri.UNKNOWN  # not on Hiscores
+
+
+def test_kill_count_atom_absence_is_unknown_not_zero():
+    kg = _store(nodes=[Node(id="npc:7221", kind=NodeKind.MONSTER, name="Scurrius", slug="scurrius")])
+    atom = ConditionAtom(atom_type=AtomType.KILL_COUNT, ref_node="npc:7221", threshold=100)
+    assert atom_satisfied(atom, AccountState(mode="normal", kc={"npc:7221": 100}), kg) is Tri.TRUE
+    assert atom_satisfied(atom, AccountState(mode="normal", kc={"npc:7221": 99}), kg) is Tri.FALSE
+    # cardinal rule: absent KC may be below the Hiscores cutoff, NOT zero -> UNKNOWN
+    assert atom_satisfied(atom, AccountState(mode="normal"), kg) is Tri.UNKNOWN
+    # when observed (plugin), absence is a real 0 -> FALSE
+    observed = AccountState(mode="normal", observable_families={"kill_count"})
+    assert atom_satisfied(atom, observed, kg) is Tri.FALSE

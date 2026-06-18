@@ -91,6 +91,15 @@ def atom_satisfied(atom: ConditionAtom, state: AccountState, kg: KGStore) -> Tri
         return _ordered_state("achievement_diary", atom.ref_node, atom.data["state"],
                               state.diary_state, state)
 
+    if at is AtomType.KILL_COUNT:
+        if atom.ref_node in state.kc:
+            return from_bool(state.kc[atom.ref_node] >= (atom.threshold or 0))
+        # absence != zero (could be below the Hiscores tracking cutoff); D6 routes
+        # the observed-vs-UNKNOWN decision through family_is_observed.
+        if family_is_observed("kill_count", state, manually_asserted=False):
+            return from_bool(0 >= (atom.threshold or 0))
+        return Tri.UNKNOWN
+
     raise NotImplementedError(f"atom_satisfied: {at!r} not implemented")
 
 
