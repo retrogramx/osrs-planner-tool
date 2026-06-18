@@ -243,3 +243,34 @@ def test_gear_loadout_atom_dynamic_partial_false_full_true():
     # only one piece (a helm) -> FALSE (would be a false TRUE without the AND-of-slots tree)
     one = AccountState(mode="normal", counts={"item:11665": 1})
     assert atom_satisfied(atom, one, kg) is Tri.FALSE
+
+
+def test_clue_scrolls_cardinality_atom():
+    nodes = [
+        Node(id="clue:easy", kind=NodeKind.ACTIVITY, name="Easy clue", slug="easy-clue"),
+        Node(id="clue:medium", kind=NodeKind.ACTIVITY, name="Medium clue", slug="medium-clue"),
+        Node(id="clue:hard", kind=NodeKind.ACTIVITY, name="Hard clue", slug="hard-clue"),
+    ]
+    kg = _store(nodes=nodes)
+    # need >= 2 of the 3 clue tiers completed at least once
+    atom = ConditionAtom(atom_type=AtomType.CLUE_SCROLLS, threshold=2,
+                         data={"set_ref": ["clue:easy", "clue:medium", "clue:hard"]})
+
+    # 2 satisfied (easy + hard) -> TRUE  (observed family so absent members are real 0)
+    obs2 = AccountState(mode="normal",
+                        clue_counts={"clue:easy": 4, "clue:hard": 1},
+                        observable_families={"clue_scrolls"})
+    assert atom_satisfied(atom, obs2, kg) is Tri.TRUE
+
+    # only 1 satisfied, family observed -> the other two are real FALSE -> 1 < 2 -> FALSE
+    obs1 = AccountState(mode="normal", clue_counts={"clue:easy": 4},
+                        observable_families={"clue_scrolls"})
+    assert atom_satisfied(atom, obs1, kg) is Tri.FALSE
+
+    # 1 known-satisfied + 2 UNKNOWN (unobservable): could still reach 2 -> verdict UNKNOWN
+    unk = AccountState(mode="normal", clue_counts={"clue:easy": 4})
+    assert atom_satisfied(atom, unk, kg) is Tri.UNKNOWN
+
+    # 2 already known-satisfied + 1 UNKNOWN: TRUE regardless of the unknown (k_or short-circuit)
+    enough = AccountState(mode="normal", clue_counts={"clue:easy": 4, "clue:medium": 1})
+    assert atom_satisfied(atom, enough, kg) is Tri.TRUE

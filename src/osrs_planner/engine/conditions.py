@@ -105,6 +105,25 @@ def atom_satisfied(atom: ConditionAtom, state: AccountState, kg: KGStore) -> Tri
         # (never read from done -- gear is ownable/losable). kg-schema-v1 worked Void example.
         return evaluate(kg.composition_of(atom.ref_node), state, kg)
 
+    if at is AtomType.CLUE_SCROLLS:
+        members = atom.data.get("set_ref", [])
+        threshold = atom.threshold or 0
+        per_member: list[Tri] = []
+        for m in members:
+            if state.clue_counts.get(m, 0) >= 1:
+                per_member.append(Tri.TRUE)
+            elif family_is_observed("clue_scrolls", state, manually_asserted=False):
+                per_member.append(Tri.FALSE)  # observed absence = a real 0 (D6)
+            else:
+                per_member.append(Tri.UNKNOWN)  # absence != zero
+        n_true = sum(1 for t in per_member if t is Tri.TRUE)
+        n_unknown = sum(1 for t in per_member if t is Tri.UNKNOWN)
+        if n_true >= threshold:
+            return Tri.TRUE                      # already enough, unknowns can't undo it
+        if n_true + n_unknown < threshold:
+            return Tri.FALSE                     # can't reach threshold even if all unknowns flip
+        return Tri.UNKNOWN                        # might or might not reach it
+
     raise NotImplementedError(f"atom_satisfied: {at!r} not implemented")
 
 
