@@ -24,7 +24,6 @@ from osrs_planner.engine.result import (
 )
 from osrs_planner.engine import cards
 from osrs_planner.engine.cards import PlanCard, Step, ReferencedAtom
-from osrs_planner.engine.kg.model import ConditionGroup
 
 
 def _is_state_absent(state: Optional[AccountState]) -> bool:
@@ -360,6 +359,7 @@ class Engine:
                 # which by construction it does not (no closure to gate it).
                 frontier.append(step)
                 continue
+            # A prereq is actionable iff every node in its own requires-closure is already satisfied.
             own_prereqs = self.kg.descendants(step.node_id)
             if all(p in satisfied for p in own_prereqs):
                 frontier.append(step)

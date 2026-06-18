@@ -3,10 +3,11 @@
 A human-eyeball demo over the (70 Att AND 70 Str) OR full-Void worked example, so the
 end-to-end story can be seen without reading pytest output. Not used by the web/advisor.
 
-The fixture uses the CANONICAL OR model (no hard skill edges).  skill_level atoms are
-not ref-bearing, so Attack/Strength appear as cond-tree leaf BLOCKERS in is_unlocked
-but NOT as Steps in prereqs_for/next_steps.  The step universe is the Void branch:
-gear_loadout:void + its six item leaves + access:scurrius-lair (unconditionally satisfied).
+The fixture uses the same OR structure as the Scurrius flagship subgraph in build_store
+(no hard skill edges).  skill_level atoms are not ref-bearing, so Attack/Strength appear
+as cond-tree leaf BLOCKERS in is_unlocked but NOT as Steps in prereqs_for/next_steps.
+The step universe is the Void branch: gear_loadout:void + its six item leaves +
+access:scurrius-lair (unconditionally satisfied).
 
 Expected output for a 75 Att / 60 Str ironman with no Void:
   is_unlocked: locked
@@ -134,7 +135,8 @@ def main() -> None:
     iron = AccountState(
         mode="ironman",
         levels={ATTACK: 75, STRENGTH: 60},
-        observable_families={"skill_level", "skill_xp", "item", "gear_loadout"},
+        # kept in sync with iron_75atk_60str_novoid() in tests/engine/fixtures/kg_fixture.py
+        observable_families={"skill_level", "item", "quest", "achievement_diary"},
     )
     print("=== Gilded Tome engine demo: Scurrius on an ironman (75 Att / 60 Str, no Void) ===")
     _print_unlock(engine, iron)

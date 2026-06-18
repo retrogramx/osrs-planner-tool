@@ -49,13 +49,13 @@ VOID_ITEM_LEAVES = {HELM_MAGE, HELM_RANGE, HELM_MELEE, VOID_TOP, VOID_ROBE, VOID
 @pytest.fixture
 def kg():
     """Canonical KG store: OR(AND(70 Att, 70 Str), gear_loadout:void) + access edge."""
-    return build_store()
+    return build_store()  # local alias of kg_fixture.build_store / conftest scurrius_kg
 
 
 @pytest.fixture
 def ironman():
     """75 Att / 60 Str, no Void.  Observable so item absence reads as a real FALSE."""
-    return iron_75atk_60str_novoid()
+    return iron_75atk_60str_novoid()  # local alias of kg_fixture.iron_75atk_60str_novoid
 
 
 def test_scurrius_is_locked_with_single_strength_blocker(kg, ironman):
@@ -245,7 +245,7 @@ def test_coherent_story_across_three_reads(kg, ironman):
     assert STRENGTH not in step_ids, "Strength must NOT be a prereq step node"
 
     # A Void item leaf appears as both a step and on the frontier
-    sample_void_item = VOID_MELEE_HELM = HELM_MELEE
+    sample_void_item = HELM_MELEE
     assert sample_void_item in step_ids, f"{sample_void_item} must be a prereq step"
     assert sample_void_item in frontier_ids, f"{sample_void_item} must be on the frontier"
 

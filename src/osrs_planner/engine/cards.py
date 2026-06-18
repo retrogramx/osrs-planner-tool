@@ -8,13 +8,17 @@ so they project cleanly to JSON / LLM tool-schemas. See contract §5.
 
 from __future__ import annotations
 
-from typing import Optional
+from typing import Literal, Optional
 
 from pydantic import BaseModel, Field
 
 
 class NodeRef(BaseModel):
-    """Card-layer twin of result.NodeRef (a node the card points at)."""
+    """Card-layer twin of result.NodeRef (a node the card points at).
+
+    Part of the public card API for future consumers (e.g. Advisor tool-schema
+    projections); not yet used internally in src/ but intentionally exported.
+    """
 
     id: str
     kind: str
@@ -43,7 +47,7 @@ class Step(BaseModel):
     node_id: Optional[str] = None
     name: str
     reason: str
-    status: str
+    status: Literal["satisfied", "satisfiable", "cant_verify", "impossible_for_mode"]
 
 
 class UnlockCard(BaseModel):
@@ -54,7 +58,7 @@ class UnlockCard(BaseModel):
     """
 
     node_id: str
-    status: str
+    status: Literal["unlocked", "locked", "indeterminate"]
     blockers: list[Step] = Field(default_factory=list)
 
 
