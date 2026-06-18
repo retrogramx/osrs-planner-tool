@@ -14,13 +14,17 @@ from osrs_planner.engine.kleene import Tri, k_and
 from osrs_planner.engine.conditions import evaluate, atom_satisfied
 from osrs_planner.engine.result import (
     Ok,
+    Empty,
     Problem,
     ProblemKind,
+    TerminalReason,
     Result,
     Refs,
     NodeRef,
 )
 from osrs_planner.engine import cards
+from osrs_planner.engine.cards import PlanCard, Step, ReferencedAtom
+from osrs_planner.engine.kg.model import ConditionGroup
 
 
 def _is_state_absent(state: Optional[AccountState]) -> bool:
@@ -181,8 +185,26 @@ class Engine:
             status="cant_verify" if tri is Tri.UNKNOWN else "satisfiable",
         )
 
-    def prereqs_for(self, state: AccountState, node_id: str) -> Result[cards.PlanCard]:
-        raise NotImplementedError  # later task
+    def prereqs_for(self, state: Optional[AccountState], node_id: str) -> "Result[PlanCard]":
+        # §10: guard source ∈ dag before descendants()
+        node = self.kg.node(node_id)
+        if node is None:
+            # D7: NOT_FOUND carries an EMPTY Refs; the unknown id is named in the
+            # message only (an unknown id is not a node, so it cannot be a NodeRef).
+            return Problem(
+                kind=ProblemKind.NOT_FOUND,
+                refs=Refs(),
+                message=f"no node with id {node_id!r}",
+            )
+        # D4: MISSING_STATE only when there is no account at all (state is None);
+        # a fresh valid account (mode set, empty progress, combat_level == 3) is NOT missing.
+        if state is None:
+            return Problem(
+                kind=ProblemKind.MISSING_STATE,
+                refs=Refs(nodes={node_id: NodeRef(id=node.id, kind=node.kind, name=node.name)}),
+                message=f"no account state to evaluate {node_id!r}",
+            )
+        raise NotImplementedError  # filled in by later steps
 
     def next_steps(self, state: AccountState, node_id: str) -> Result[cards.PlanCard]:
         raise NotImplementedError  # later task
