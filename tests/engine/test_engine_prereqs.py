@@ -7,6 +7,7 @@ from osrs_planner.engine.kg.model import (
     Node, Edge, ConditionGroup, ConditionAtom,
     NodeKind, EdgeType, Op, AtomType,
 )
+from osrs_planner.engine.cards import PlanCard
 
 
 def _fixture_kg():
@@ -118,3 +119,67 @@ def test_prereqs_for_satisfied_goal_is_empty_already_satisfied():
     assert res.reason is TerminalReason.ALREADY_SATISFIED
     assert res.status == "ok"
     assert "npc:scur" in res.refs.nodes
+
+
+def test_prereqs_for_returns_ordered_plancard():
+    eng = Engine(_fixture_kg())
+    res = eng.prereqs_for(_partial_state(), "npc:scur")
+    assert isinstance(res, Ok)
+    card = res.card
+    assert isinstance(card, PlanCard)
+    assert card.goal_id == "npc:scur"
+
+    ids = [s.node_id for s in card.steps]
+    assert set(ids) == {"access:scur-lair", "quest:rfd", "skill:attack"}
+
+    # valid completion order: access requires quest + skill, so it must come AFTER both.
+    assert ids.index("access:scur-lair") > ids.index("quest:rfd")
+    assert ids.index("access:scur-lair") > ids.index("skill:attack")
+
+    by_id = {s.node_id: s for s in card.steps}
+    assert by_id["skill:attack"].status == "satisfied"      # 70 >= 50
+    assert by_id["skill:attack"].reason == "satisfied"
+    assert by_id["quest:rfd"].status == "satisfiable"        # not_started < completed
+    assert by_id["quest:rfd"].reason == "quest"
+    assert by_id["access:scur-lair"].status == "satisfiable" # is_unlocked false
+    assert by_id["access:scur-lair"].reason == "is_unlocked"
+
+    # §7.4 grounding invariant: every step node is in refs.nodes (refs live on the
+    # envelope, NOT on PlanCard — see Task 9 cards.py + Task 13 integration test).
+    for nid in ids:
+        assert nid in res.refs.nodes
+
+
+def test_prereqs_for_collects_referenced_atoms():
+    eng = Engine(_fixture_kg())
+    card = eng.prereqs_for(_partial_state(), "npc:scur").card
+    kinds = {(a.atom_type, a.ref_node) for a in card.referenced_atoms}
+    assert ("skill_level", "skill:attack") in kinds
+    assert ("quest", "quest:rfd") in kinds
+    assert ("is_unlocked", "access:scur-lair") in kinds
+    # the quest atom carries its required state for the §7.2 scalar check
+    quest_atom = next(a for a in card.referenced_atoms if a.atom_type == "quest")
+    assert quest_atom.state == "completed"
+    # skill_level atom carries its threshold
+    skill_atom = next(a for a in card.referenced_atoms if a.atom_type == "skill_level")
+    assert skill_atom.threshold == 50
+
+
+def _unobservable_quest_state():
+    return AccountState(
+        mode="main",
+        levels={"skill:attack": 70},
+        # quest_state intentionally absent; 'quest' NOT in observable_families
+        observable_families={"skill_level"},
+    )
+
+
+def test_prereqs_for_unobservable_atom_is_cant_verify():
+    eng = Engine(_fixture_kg())
+    res = eng.prereqs_for(_unobservable_quest_state(), "npc:scur")
+    assert isinstance(res, Ok)
+    by_id = {s.node_id: s for s in res.card.steps}
+    assert by_id["quest:rfd"].status == "cant_verify"
+    assert by_id["quest:rfd"].reason == "quest"
+    # the observable, met skill stays satisfied (UNKNOWN must not bleed across steps)
+    assert by_id["skill:attack"].status == "satisfied"

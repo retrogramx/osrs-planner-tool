@@ -294,7 +294,44 @@ class Engine:
         all_done = all(self._account_meets_tri(state, pid) is Tri.TRUE for pid in prereq_ids)
         if goal_tri is Tri.TRUE and all_done:
             return Empty(refs=Refs(nodes=goal_ref), reason=TerminalReason.ALREADY_SATISFIED)
-        raise NotImplementedError  # PlanCard build in the next step
+        steps: list[Step] = []
+        refs_nodes = dict(goal_ref)
+        ref_atoms: list[ReferencedAtom] = []
+        seen_atoms: set[tuple] = set()
+
+        for pid in prereq_ids:                       # prereqs-first order (D1), goal excluded
+            pnode = self.kg.node(pid)
+            status, reason = self._step_status_for(state, pid)   # account-meets-prereq (Defect 5)
+            steps.append(Step(node_id=pid,
+                              name=(pnode.name if pnode else pid),
+                              reason=reason,
+                              status=status))
+            if pnode is not None:
+                refs_nodes[pid] = NodeRef(id=pnode.id, kind=pnode.kind.value, name=pnode.name)
+
+        # referenced_atoms = every atom the Engine read across the goal's + prereqs' requires
+        # trees (the goal's own atoms reference the top-level prereqs, so include node_id).
+        for owner in [node_id] + prereq_ids:
+            for atom in self._iter_atoms_for(owner):
+                key = (atom.atom_type.value, atom.ref_node, atom.threshold, atom.qty)
+                if key in seen_atoms:
+                    continue
+                seen_atoms.add(key)
+                partial = (atom.atom_type.value == "quest"
+                           and atom.data.get("state", "completed") != "completed")
+                ref_atoms.append(ReferencedAtom(
+                    atom_type=atom.atom_type.value,
+                    ref_node=atom.ref_node,
+                    threshold=atom.threshold,
+                    qty=atom.qty,
+                    state=atom.data.get("state"),
+                    is_partial=partial,
+                ))
+
+        return Ok(
+            card=PlanCard(goal_id=node_id, steps=steps, referenced_atoms=ref_atoms),
+            refs=Refs(nodes=refs_nodes),
+        )
 
     def next_steps(self, state: AccountState, node_id: str) -> Result[cards.PlanCard]:
         raise NotImplementedError  # later task
