@@ -3,9 +3,9 @@
 
 Contract §6 (three-valued / Kleene) + ADR-0004 observability families:
 state distinguishes *absent* from *zero*. Per-skill levels/XP and activity
-scores (KC, clues, CA points, minigames), the clog COUNT, and account_type
-are Hiscores-observable -> absence is a real zero/FALSE. Everything else
-(quest, achievement_diary, combat_achievement, item, is_unlocked, clog_slot,
+scores (KC, clues, CA points, minigames) and account_type are
+Hiscores-observable -> absence is a real zero/FALSE. Everything else
+(quest, achievement_diary, combat_achievement, item, is_unlocked,
 quest_points) is UNKNOWN until a plugin or manual fact supplies it.
 """
 from __future__ import annotations
