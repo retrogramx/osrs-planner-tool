@@ -25,7 +25,7 @@
       ]
     },
     "domain_stats": {
-      "node_type": "collection_log_slot (record granularity = one (item,source) placement)",
+      "node_type": "clog_slot (record granularity = one (item,source) placement)",
       "unique_items_by_id": 1701,
       "unique_item_names": 1609,
       "total_slots_extracted": 1907,

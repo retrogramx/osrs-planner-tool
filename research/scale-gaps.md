@@ -35,39 +35,41 @@ fall outside that vocabulary.
 
 ## The 4 gaps
 
-### G1 — No quest-STAGE atom **(BLOCKER)**
+### G1 — No partial-completion state on the quest atom **(BLOCKER)**
 
-Mid-quest progress gates need *quest at stage ≥ N*, which `quest_done` (stage 100) and the proposed
-`quest_started` (stage ≥ 1) **bracket from opposite sides**. The flagship case: **fairy-ring access
-needs Fairytale II at varbit ≥ 40** (partial completion — *not* finished). `quest_done` false-negatives
-the huge population that stopped at the Fairy Godfather step; `quest_started` false-positives FT2
-stages 1–39. Fairy rings underpin dozens of downstream diaries/quests/boss routes, so the error
-**poisons the prereq closure graph-wide**.
+Mid-quest progress gates need *quest at least partway through*, which a binary "completed" check and a
+binary "started" check **bracket from opposite sides**. The flagship case: **fairy-ring access
+needs Fairytale II partially completed** (the Fairy Godfather step reached — *not* finished). A bare
+"completed" requirement false-negatives the huge population that stopped at the Fairy Godfather step;
+a bare "started" requirement false-positives every early FT2 stage. Fairy rings underpin dozens of
+downstream diaries/quests/boss routes, so the error **poisons the prereq closure graph-wide**.
 
 - **Triangulated across all 3 sources:** quest-helper `VarbitRequirement(QUEST_FAIRYTALE_II_CURE_A_QUEEN, GREATER_EQUAL, 40)` (5+ sites + 4 medium diaries); shortest-path routes the same gate through its varbit-threshold column because its quest column is binary; wiki confirms partial completion.
-- **Also resolves a live contradiction:** the pipeline already emits `quest_started` (`data-pipeline-v1.md` §5 Job 1), an atom the schema's closed `CHECK` enum **rejects** — a build-breaking drift. The correct fix is the `>= N` generalization, not the boolean.
-- **Fix (folded into v1):** add atom `quest_stage{quest_id, min_stage}` = quest-progress-varbit ≥ N. Subsumes both `quest_done` (min_stage = end) and `quest_started` (min_stage = 1). Single-fact-vs-constant `>=`, no new operator, no spine change. Author `access:fairy-rings` via one conditional grant: `AND(quest_stage(fairytale_2, 40), quest_done × 5 precursors)`.
+- **Also resolves a live contradiction:** the pipeline already emits an in-progress quest reading (`data-pipeline-v1.md` §5 Job 1) that a binary-only schema **rejects** — a build-breaking drift. The correct fix is the 3-state generalization, not the boolean.
+- **Fix (folded into v1):** model partial completion via the `quest` atom's `state` field ∈ `{not_started, in_progress, completed}` (an ORDERED enum; a requirement means "state ≥ the required value", and an account's quest may be at any of the three). The old wiki "Started:" convention maps to `in_progress`; a bare quest prereq means `completed`. This subsumes both the "completed" check (`state = completed`) and the "started" check (`state ≥ in_progress`). One field, no new operator, no spine change. Author `access:fairy-rings` via one conditional grant: `AND(quest(fairytale_2, in_progress), quest(× 5 precursors, completed))`.
 
 ### G2 — No cardinality / N-of-M atom **(important-soon)**
 
 The Culinaromancer's Chest sells a glove tier keyed to the **count** of RFD subquests completed
 (any order): "adamant gloves" == "any 6 of 8 subquests done". A faithful condition tree is an
 `OR` of `C(8,6)=28` (up to `C(8,4)=70`) AND-clauses — combinatorially absurd and past the depth-3
-cap. The access-sink hatch **can't count** (`OR(8 quest_done)` collapses to a boolean that forgets
+cap. The access-sink hatch **can't count** (`OR(8 quest)` collapses to a boolean that forgets
 *which* member satisfied it, so it can't demand a distinct second).
 
-- **Defer-safe** because sub-quest structure is already deferred (the 8 RFD subquests aren't even nodes); the headline items (Barrows/dragon gloves) need the **full** quest, expressible *today* via `quest_done(quest:rfd)`. Only the 7 intermediate count-gated tiers are lost.
-- **Fix (documented, deferred w/ trigger):** add atom `count_done(set_ref, n)` = "≥ n members of the named set are satisfied" (quest-helper's `Conditions(LogicType, Operation, quantity)` primitive). **Trigger:** when intermediate-tier / subquest acquisition routes are authored.
+- **Defer-safe** because sub-quest structure is already deferred (the 8 RFD subquests aren't even nodes); the headline items (Barrows/dragon gloves) need the **full** quest, expressible *today* via `quest(quest:rfd, completed)`. Only the 7 intermediate count-gated tiers are lost.
+- **Fix (documented, deferred w/ trigger):** add atom `count_satisfied(set_ref, n)` = "≥ n members of the named set are satisfied" (quest-helper's `Conditions(LogicType, Operation, quantity)` primitive). **Trigger:** when intermediate-tier / subquest acquisition routes are authored.
 
 ### G3 — No CA-points accumulator atom **(important-soon)**
 
 Combat Achievement **tier rewards gate on accumulated points across any task mix**, not on completing
-a tier (Ghommal's hilt 1–6 at 41/161/416/1064/1904/2630 points; DHCB(b/t) upgrades). `ca_done` is
-set-membership; minting `ca:<tier>` + `ca_done` is incoherent ("hard tier done" is not a real OSRS
-state and the ingest layer can't populate it). v1 mirrored the accumulator pattern for the other two
-globals (boss KC → `kc_at_least`, quest points → `qp_at_least`) but omitted the CA-points twin.
+a tier (Ghommal's hilt 1–6 at 41/161/416/1064/1904/2630 points; DHCB(b/t) upgrades). The
+`combat_achievement` atom is a per-*task* atom and is BINARY (a single task is completed or not — never
+"in progress"); minting `ca:<tier>` + per-task membership is incoherent for tiers ("hard tier done" is
+not a real OSRS state and the ingest layer can't populate it). A CA tier is reached via points from
+ANY tasks, not by completing all of that tier's tasks. v1 mirrored the accumulator pattern for the
+other two globals (boss KC → `kill_count`, quest points → `quest_points`) but omitted the CA-points twin.
 
-- **Fix (documented, deferred w/ trigger):** add atom `ca_points{threshold}` (structural twin of `qp_at_least`, no `ref_node`). **De-overload** the `combat_achievement` node kind: keep it for per-*task* gates only; express all tier-reward gates via `ca_points`. **Trigger:** when CA-reward unlocks are authored. Needs the STATE layer to expose the CA-points total.
+- **Fix (documented, deferred w/ trigger):** add atom `combat_achievement_points{threshold}` (structural twin of `quest_points`, no `ref_node`). Keep the `combat_achievement` atom for per-*task* gates only; express all tier-reward gates via `combat_achievement_points`. **Trigger:** when CA-reward unlocks are authored. Needs the STATE layer to expose the CA-points total.
 
 ### G4 — No cost/currency model on acquisition **(important-soon)**
 
@@ -83,12 +85,12 @@ points are an accumulating, capped, **spendable** currency no atom models.
 ## Cross-cutting notes
 
 - **Escape-hatch test:** the access/activity/conditional-grant hatches are genuinely powerful (they *passed* the multi-hop fairy-ring web), but for stage/cardinality/CA-points they only **relocate** the missing predicate — minting the node is trivial, but its grant's `cond_group` still needs a leaf the closed atom set lacks. "Resolves vs relocates" is the test that separated real gaps from noise.
-- **STATE-layer dependency:** 3 of 4 fixes (`quest_stage`, `ca_points`, `cost`) need the per-account STATE layer (a separate deferred brick) to expose the underlying readings (quest stage, CA-points total, currency balances). The KG-side atom additions are cheap now; useful once STATE lands.
-- **Amend the load-bearing claim:** "depth ≤ 3 / two-level AND-of-ORs covers all real v1 reqs" → "covers all single-scalar and set-cardinality reqs via {`quest_stage`, `count_done`, `ca_points`}". Do this before graduating to a binding ADR.
+- **STATE-layer dependency:** 3 of 4 fixes (the `quest` atom's `state` field, `combat_achievement_points`, `cost`) need the per-account STATE layer (a separate deferred brick) to expose the underlying readings (quest stage, CA-points total, currency balances). The KG-side atom additions are cheap now; useful once STATE lands.
+- **Amend the load-bearing claim:** "depth ≤ 3 / two-level AND-of-ORs covers all real v1 reqs" → "covers all single-scalar and set-cardinality reqs via {the `quest` atom's 3-state `state` field, `count_satisfied`, `combat_achievement_points`}". Do this before graduating to a binding ADR.
 
 ## Recommendation
 
-Land **`quest_stage` now** (blocker + resolves the pipeline contradiction). Document `count_done`,
-`ca_points`, and generic `cost{currency, amount}` as additive, spine-safe additions with the triggers
-above. Do **not** graduate the schema to a binding plan/ADR until `quest_stage` lands and the
-"covers all reqs" claim is amended.
+Land **the `quest` atom's 3-state `state` field now** (blocker + resolves the pipeline contradiction).
+Document `count_satisfied`, `combat_achievement_points`, and generic `cost{currency, amount}` as
+additive, spine-safe additions with the triggers above. Do **not** graduate the schema to a binding
+plan/ADR until the `quest` atom's `state` field lands and the "covers all reqs" claim is amended.

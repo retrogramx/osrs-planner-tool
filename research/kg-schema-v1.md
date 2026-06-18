@@ -49,7 +49,7 @@ CREATE TABLE node (
     CHECK (kind IN (
         'skill','item','monster','quest','access','region','account_type',
         'gear_loadout','activity','diary','combat_achievement','minigame',
-        'spellbook','spell','collection_log_slot'
+        'spellbook','spell','clog_slot'
     ))
 );
 CREATE INDEX ix_node_kind    ON node(kind);
@@ -113,11 +113,11 @@ CREATE TABLE monster_attr (
 | **minigame** | Minigame | spine | deferred (id-reserved) |
 | **spellbook** | Standard/Ancient/Lunar/Arceuus | spine | deferred (id-reserved) |
 | **spell** | Individual spell (teleport/combat) | spine | deferred (id-reserved) |
-| **collection_log_slot** | A specific clog item-in-source slot | spine | deferred (id-reserved) |
+| **clog_slot** | A specific clog item-in-source slot | spine | deferred (id-reserved) |
 
-**`combat_achievement` scope (v1):** combat_achievement nodes model per-TASK gates only (`ca_done`); CA tier-reward gates (Ghommal's hilt etc.) use the `ca_points` atom against the point total, NOT a `ca:<tier>` done-membership (which is not a real OSRS state). (scale-G3/G6 de-overload.)
+**`combat_achievement` scope (v1):** `combat_achievement` nodes model per-TASK gates only, tested by the BINARY `combat_achievement` atom (a single task is completed or not — never "in progress"); CA tier-reward gates (Ghommal's hilt etc.) use the `combat_achievement_points` atom against the point total (a tier is reached via points from ANY tasks), NOT a `ca:<tier>` done-membership and NOT "all that tier's tasks done" (neither is a real OSRS state). (scale-G3/G6 de-overload.)
 
-**Why `access` is the most important invented node:** it absorbs the messy real world ("can I get to X / do X / have the full set?") into one clean kind, so REQUIRES edges stay simple *and* the prereq graph stays acyclic. Quests/diaries/items/CA-tasks `GRANTS` an `access:*`; bosses/regions `REQUIRES` it. Producers never point at each other directly — they meet at `access` sink nodes (the acyclicity mechanism). **Guidance:** create an `access:*` node only when ≥2 things gate on the same capability, *or* when a capability is a multi-item set completion (e.g. `access:full-void`); otherwise REQUIRE the quest/item directly.
+**Why `access` is the most important invented node:** it absorbs the messy real world ("can I get to X / do X / have the full set?") into one clean kind, so REQUIRES edges stay simple *and* the prereq graph stays acyclic. Quests/diaries/items/CA-tasks `GRANTS` an `access:*`; bosses/regions `REQUIRES` it. Producers never point at each other directly — they meet at `access` sink nodes (the acyclicity mechanism). **Guidance — `access` vs `gear_loadout` (the discriminator):** use `access:*` only for a **permanent unlock** — a capability *granted by completing content* (quest/diary/CA/region) that you cannot lose (fairy rings, a spellbook, a slayer unlock, region/instance entry). Use **`gear_loadout`** for a **worn equipment set** — items that resolve to equippable gear in `items_equipment.json` (Void, Barrows, Bandos): ownable, losable, variant (3 Void helms), and tiered (base → Elite). **Oracle:** if a node's composition is dominated by `item` atoms resolving to *equippable* items, it is a `gear_loadout`, **not** an `access` (enforced by invariant I12). Create an `access:*` node only when ≥2 things gate on the same unlock; otherwise REQUIRE the quest/item directly.
 
 **Why `account_type` is a node, not just an enum:** acquisition rules become *data* (`data.must_self_acquire`, `data.can_ge`) the engine reads, rather than game modes special-cased in Python.
 
@@ -140,17 +140,17 @@ CREATE TABLE monster_attr (
 | monster | `npc:` | game npc id | `npc:7221` |
 | skill | `skill:` | canonical slug | `skill:attack` |
 | quest | `quest:` | slug | `quest:dragon-slayer-i` |
-| access | `access:` | slug | `access:fairy-rings`, `access:full-void` |
+| access | `access:` | slug | `access:fairy-rings`, `access:scurrius-lair` |
 | region | `region:` | slug | `region:varrock-sewers` |
 | account_type | `account:` | slug (from `AccountMode`) | `account:ironman` |
-| gear_loadout | `loadout:` | `style:bracket[:variant]` | `loadout:melee:mid` |
+| gear_loadout | `gear_loadout:` / `loadout:` | slug or `style:bracket[:variant]` | `gear_loadout:void`, `loadout:melee:mid` |
 | activity | `activity:` | slug | `activity:ge-buy`, `activity:fight-caves` |
 | diary | `diary:` | `region:tier` | `diary:varrock:hard` |
 | combat_achievement | `ca:` | `monster-slug:task-slug` | `ca:scurrius:smashing-the-rat` |
 | minigame | `minigame:` | slug | `minigame:wintertodt` |
 | spellbook | `spellbook:` | slug | `spellbook:lunar` |
 | spell | `spell:` | slug | `spell:high-alchemy` |
-| collection_log_slot | `clog:` | `source-slug:item-slug` | `clog:scurrius:scurrius-spine` |
+| clog_slot | `clog:` | `source-slug:item-slug` | `clog:scurrius:scurrius-spine` |
 
 **Stability rules:**
 
@@ -158,7 +158,7 @@ CREATE TABLE monster_attr (
 2. **Canonical game ids where they exist** (items, NPCs): the id IS the key — `item:<id>`, `npc:<id>`. Jagex never recycles these; they survive renames and join directly to Hiscores/RuneLite/cache dumps. Store the integer also in `node.game_id`.
 3. **Slugs where no game id exists** (skills, quests, access, regions, loadouts, diaries, CAs): authored once via a fixed slugify (lowercase, spaces→`-`, strip punctuation, keep roman numerals: `dragon-slayer-ii`) and **frozen** — never re-derived from a changed name.
 4. **`UNIQUE(kind, slug)`** catches accidental dup-slug authoring; cross-kind collisions are impossible by prefix namespacing.
-5. **Parse on the first colon** for the prefix; the remainder is the opaque key (single-key slugs never contain colons; composite-key kinds — `gear_loadout`, `diary`, `combat_achievement`, `collection_log_slot` — carry colon-separated slugs, e.g. `melee:mid`, `varrock:hard`, so the slug is the full post-prefix key that `UNIQUE(kind,slug)` needs).
+5. **Parse on the first colon** for the prefix; the remainder is the opaque key (single-key slugs never contain colons; composite-key kinds — `gear_loadout`, `diary`, `combat_achievement`, `clog_slot` — carry colon-separated slugs, e.g. `melee:mid`, `varrock:hard`, so the slug is the full post-prefix key that `UNIQUE(kind,slug)` needs).
 6. **Look up game ids before authoring** — swapping `npc:scurrius` → `npc:7221` later is a breaking id change. A `node_alias(old_id, new_id)` table (deferred) absorbs the rare unavoidable rename.
 
 ---
@@ -169,7 +169,7 @@ CREATE TABLE monster_attr (
 
 One typed `edge` table holds all edge types. It promotes only `qty` and `weight` to columns (the two scalars read on a hot path / used for opinion ordering), references a condition tree by id, and carries a `scope` JSON for account-type filtering.
 
-> **Fix applied (stress-test MUST-FIX #1):** `GRANTS` edges may now carry a `cond_group`. The column already lives on the shared `edge` table; the change is to **lift the CHECK that implicitly treated grants as unconditional** and let the loader evaluate the tree. This is what makes "owning all 4 Void pieces GRANTS `access:full-void`" expressible (an `AND`-of-4 `has_item` tree on one grant edge), which the flagship `(70 Att AND 70 Str) OR full Void` example *depends on* — otherwise its full-Void branch is either unsatisfiable or falsely true on one piece.
+> **Fix applied (stress-test MUST-FIX #1):** `GRANTS` edges **and `gear_loadout` composition edges** may carry a `cond_group`. The column already lives on the shared `edge` table; the change is to **lift the CHECK that implicitly treated grants as unconditional** and let the loader evaluate the tree. This enables both **conditional access grants** (an unlock gated by a conjunction, e.g. quest AND skill) and **gear-set compositions** — "full Void = an `AND`-of-4-slots `item` tree (helm = `OR` of 3)" carried on the `gear_loadout:void` node — which the flagship `(70 Att AND 70 Str) OR full Void` example *depends on*: otherwise its full-Void branch is either unsatisfiable or falsely true on a single piece.
 
 ```sql
 CREATE TABLE edge (
@@ -213,7 +213,7 @@ Direction convention: producer-style edges read `producer → produced`; `REQUIR
 |---|---|---|---|---|
 | **requires** | "src needs dst" | Quest, Activity, Item(craft), Diary, CA, Access, GearLoadout, Monster → Skill, Quest, Item, Access, Diary, CA, AccountType | `cond_group` (thresholds/OR), `qty` (item counts) | **CORE** |
 | **grants** | "src gives dst" | Quest, Diary, CA, Minigame, Item, Activity, Region → Access, Spellbook, Region | `cond_group` (**now allowed** — conjunctive/conditional grants) | **CORE** |
-| **drops** | "src drops dst" | Monster, Activity → Item, CollectionLogSlot | `data.rate` (verbatim string e.g. "1/3000"), `data.members` | **CORE** |
+| **drops** | "src drops dst" | Monster, Activity → Item, ClogSlot | `data.rate` (verbatim string e.g. "1/3000"), `data.members` | **CORE** |
 | **located_in** | "src is in dst" | Monster, Quest, Item-source, Activity, Access → Region | — | **CORE** |
 | **gated_by** | "src is gated behind dst" | Region, Activity, Item → Access | — | **CORE** |
 
@@ -249,9 +249,9 @@ Structural integrity lives in SQL (FKs, CHECKs, the acyclic invariant); payload 
 **The prereq DAG is built from `requires` edges plus synthetic dependency edges; `grants` is NOT projected structurally.**
 
 > **Fix applied (stress-test MUST-FIX #2):** the original "flip every `grants` edge into the DAG" was semantically lossy in two ways and is **replaced**:
-> 1. **Alternative grant sources must not collapse into an AND.** If `access:A` is granted by `Q1` *or* `Q2` (common in OSRS), flipping both emits `A→Q1` and `A→Q2`, so `nx.descendants(A)` falsely claims you must complete *both*. **Fix:** grant disjunction is represented as an **`OR` `cond_group`** on whatever *requires* A (an `OR` of `quest_done` atoms / `has_node`), so alternatives are **evaluated, not conjoined**. Grants are not hard prereq edges.
+> 1. **Alternative grant sources must not collapse into an AND.** If `access:A` is granted by `Q1` *or* `Q2` (common in OSRS), flipping both emits `A→Q1` and `A→Q2`, so `nx.descendants(A)` falsely claims you must complete *both*. **Fix:** grant disjunction is represented as an **`OR` `cond_group`** on whatever *requires* A (an `OR` of the specific typed atoms — e.g. `quest` atoms, or an `is_unlocked` atom on the granted `access` node), so alternatives are **evaluated, not conjoined**. Grants are not hard prereq edges.
 > 2. **Parallel `requires` edges must not collapse.** Projecting a `MultiDiGraph` into a plain `DiGraph` silently drops parallel edges' distinct `cond_group`/`qty` (last-writer-wins). **Fix:** project into a `MultiDiGraph` (or merge parallels under an implicit AND) so every condition survives.
-> 3. **Cycle-checking sees grants and all ref-bearing cond-leaves.** Grant edges are cycle-only synthetics; ref-bearing condition leaves (`has_*`, `quest_done`, `quest_stage`, `diary_done`, `ca_done`, `kc_at_least`) are projected as real `cond_dep` edges (so the closure is complete) that the cycle check also sees — so a tangle through a grant **or** any ref-bearing atom is caught, without grant flips being treated as hard prerequisites.
+> 3. **Cycle-checking sees grants and all ref-bearing cond-leaves.** Grant edges are cycle-only synthetics; ref-bearing condition leaves (`item`, `is_unlocked`, `quest`, `achievement_diary`, `combat_achievement`, `kill_count`) are projected as real `cond_dep` edges (so the closure is complete) that the cycle check also sees — so a tangle through a grant **or** any ref-bearing atom is caught, without grant flips being treated as hard prerequisites.
 
 ```python
 def requires_dag(g: nx.MultiDiGraph) -> nx.MultiDiGraph:
@@ -269,15 +269,15 @@ def requires_dag(g: nx.MultiDiGraph) -> nx.MultiDiGraph:
 
     # 1b) ref-bearing condition leaves → real closure edges (FIX gap 1: a dst=NULL requires edge
     #     carries its prereqs ONLY in its cond tree, so without this descendants(dag, goal) misses
-    #     them). EVERY atom whose atom_type carries a ref_node FK — has_node, has_item, quest_done,
-    #     quest_stage, diary_done, ca_done, kc_at_least — projects as a 'cond_dep' edge (a dependency,
+    #     them). EVERY atom whose atom_type carries a ref_node FK — item, is_unlocked, quest,
+    #     achievement_diary, combat_achievement, kill_count — projects as a 'cond_dep' edge (a dependency,
     #     possibly an OR alternative; NOT a forced single step). Planner reads `kind` to tell hard
-    #     'requires' from 'cond_dep'. Non-ref atoms (qp_at_least, ca_points, account_type) → skipped.
+    #     'requires' from 'cond_dep'. Non-ref atoms (quest_points, combat_achievement_points, account_type) → skipped.
     for atom in iter_ref_leaves(g):
         dag.add_edge(atom.owner_src, atom.ref_node, kind="cond_dep", cond_group=atom.group_id)
 
     # 2) cycle-only synthetic: grant flips. cyc inherits dag's cond_dep edges, so the acyclicity
-    #    check now sees ALL ref-bearing atoms (FIX gap 2: previously only has_* leaves were checked).
+    #    check now sees ALL ref-bearing atoms (FIX gap 2: previously only item/is_unlocked leaves were checked).
     cyc = dag.copy()
     for u, v, d in g.edges(data=True):
         if d["etype"] == "grants":
@@ -315,34 +315,37 @@ CREATE TABLE condition_atom (
     id        INTEGER PRIMARY KEY,
     group_id  INTEGER NOT NULL REFERENCES condition_group(id) ON DELETE CASCADE,
     atom_type TEXT NOT NULL CHECK (atom_type IN (
-                'skill_level','skill_xp','combat_level','quest_done','diary_done',
-                'ca_done','has_item','has_node','kc_at_least','qp_at_least','account_type',
-                'quest_stage','count_done','ca_points'
+                'skill_level','skill_xp','combat_level','quest','achievement_diary',
+                'combat_achievement','item','is_unlocked','gear_loadout','kill_count','quest_points','account_type',
+                'clue_scrolls','combat_achievement_points'
               )),
     ref_node  TEXT REFERENCES node(id) ON DELETE CASCADE,  -- the skill/quest/item/access the atom tests
     threshold INTEGER,                                     -- 70 (level), 43 (prayer), KC count, qp…
-    qty       INTEGER,                                     -- quantity for has_item (100x)
+    qty       INTEGER,                                     -- quantity for item (100x)
     data      TEXT NOT NULL DEFAULT '{}',                  -- e.g. account_type value
     CHECK (json_valid(data))
 );
 CREATE INDEX ix_atom_group ON condition_atom(group_id);
 CREATE INDEX ix_atom_ref   ON condition_atom(ref_node);
--- quest_stage: threshold = min quest-progress stage (varbit) >=; subsumes quest_done(end)/quest_started(1)
--- ca_points:   threshold = total Combat Achievement points >=, no ref_node (twin of qp_at_least)
--- count_done:  threshold = n; names its set via data.set_ref = [node ids]; '>= n members satisfied'
+-- quest: data.state = required quest progress ∈ {not_started, in_progress, completed} (ORDERED enum; "state >= required"); a bare quest prereq = completed, the wiki "Started:" convention = in_progress
+-- combat_achievement_points:   threshold = total Combat Achievement points >=, no ref_node (twin of quest_points)
+-- clue_scrolls:  threshold = n; names its set via data.set_ref = [node ids]; '>= n members satisfied'
 ```
 
 Atom semantics (always `>=` for thresholds — the only comparator OSRS prereqs use; a `cmp` field is deferred until a `<` requirement appears, which it never does in prereqs):
 
 - `skill_level` / `skill_xp` → `progress[ref_node] >= threshold`
 - `combat_level` → `state.combat_level >= threshold` (OSRS combat level is a derived formula computed once into state, not re-derived in the tree)
-- `quest_done` / `diary_done` / `ca_done` → `ref_node ∈ state.done`
-- `has_item` → `progress[ref_node] >= (qty or 1)`; `has_node` → boolean presence
-- `kc_at_least` → `progress[ref_node] >= threshold` (ref_node = the monster whose KC is tested)
-- `qp_at_least` → `state.qp >= threshold` (global quest-point counter, no ref_node — like `combat_level`)
-- `quest_stage` → `state.quest_stage[ref_node] >= threshold` (ref_node = the quest; threshold = min stage; subsumes `quest_done`/`quest_started`)
-- `ca_points` → `state.ca_points >= threshold` (global Combat-Achievement point total, no ref_node)
-- `count_done` → `count(m in data.set_ref if m satisfied) >= threshold` (cardinality over a named set; no single ref_node)
+- `quest` → `state.quest_state[ref_node] >= data.state` (ref_node = the quest; `data.state` ∈ {not_started, in_progress, completed}, an ORDERED enum, so a `completed` requirement is met only by `completed` while an `in_progress` requirement is met by `in_progress` or `completed`; account-state may be any of the three)
+- `achievement_diary` → `state.diary_state[ref_node] >= data.state` (3-state {not_started, in_progress, completed}; a diary TIER reaches `completed` only when ALL its tasks are done — task-based)
+- `combat_achievement` → `ref_node ∈ state.done` (per-TASK and BINARY: a single CA task is either completed or not — never "in progress")
+- `item` → `progress[ref_node] >= (qty or 1)`
+- `is_unlocked` → `ref_node ∈ state.done` — boolean presence of a **permanent unlock** (an `access:*` node: fairy rings, a spellbook, a slayer unlock, region/instance entry). Once granted it persists; checked against the durable `done` set.
+- `gear_loadout` → evaluate the `gear_loadout:*` node's **composition** cond_group (the AND/OR-of-`item` tree that defines the worn set) against **current** `state.counts`. **Dynamic, not `done`:** gear is ownable/losable, so it is re-checked from live item counts every time — the key difference from `is_unlocked`. (e.g. `gear_loadout:void` = a Void helm + top + robe + gloves, with variant ORs; see the worked example.)
+- `kill_count` → `progress[ref_node] >= threshold` (ref_node = the monster whose KC is tested)
+- `quest_points` → `state.qp >= threshold` (global quest-point counter, no ref_node — like `combat_level`)
+- `combat_achievement_points` → `state.combat_achievement_points >= threshold` (global Combat-Achievement point total, no ref_node; a CA TIER reward is reached via this points threshold accumulated from ANY tasks, NOT a "all that tier's tasks done" membership)
+- `clue_scrolls` → `count(m in data.set_ref if m satisfied) >= threshold` (cardinality over a named set; no single ref_node)
 - `account_type` → `account.mode == data.value` (lets a branch be mode-specific)
 
 ### Account-type-awareness mechanism
@@ -405,7 +408,7 @@ Stored as a tree on a `requires` edge whose `dst` is NULL (the constraint *is* t
 condition_group:                         condition_atom:
   G_root  (id=1, op=OR,  parent=NULL)      a1 (group=2, skill_level, ref=skill:attack,    threshold=70)
     ├─ G_stats (id=2, op=AND, parent=1)    a2 (group=2, skill_level, ref=skill:strength,  threshold=70)
-    └─ G_void  (id=3, op=AND, parent=1)    a3 (group=3, has_node,    ref=access:full-void)
+    └─ G_void  (id=3, op=AND, parent=1)    a3 (group=3, gear_loadout, ref=gear_loadout:void)
 ```
 
 ```sql
@@ -414,28 +417,28 @@ INSERT INTO edge (type, edge_class, src, dst, cond_group, scope)
 VALUES ('requires','fact','npc:7221', NULL, 1, NULL);
 ```
 
-**What makes `access:full-void` true (the conditional-GRANTS fix in action).** The `has_node access:full-void` leaf must be true **iff** the account owns all four Void pieces — a real conjunction. One conditional `grants` edge carries that AND-of-4 tree:
+**What makes `gear_loadout:void` satisfied (its composition, re-checked against current items).** A `gear_loadout:*` node carries its **composition** as a `cond_group` on a `requires` edge with `dst=NULL` — the same "the constraint *is* the tree" pattern as above. The `gear_loadout` leaf is satisfied **iff the account currently owns the set** (evaluated from live item counts, never cached as `done` — gear is losable):
 
 ```
-condition_group:  G_set (id=10, op=AND, parent=NULL, note="full Void Knight set owned")
+condition_group:  G_set (id=10, op=AND, parent=NULL, note="full Void Knight set, currently owned")
                     └─ G_helm (id=11, op=OR, parent=10, note="any one Void helm")
-condition_atom:   (in G_helm) has_item ref=item:11663 (mage helm) ; has_item ref=item:11664 (ranger helm) ;
-                              has_item ref=item:11665 (melee helm)
-                  (in G_set)  has_item ref=item:8839 (top) ; has_item ref=item:8840 (robe) ;
-                              has_item ref=item:8842 (gloves)
+condition_atom:   (in G_helm) item ref=item:11663 (mage helm) ; item ref=item:11664 (ranger helm) ;
+                              item ref=item:11665 (melee helm)
+                  (in G_set)  item ref=item:8839 (top) ; item ref=item:8840 (robe) ;
+                              item ref=item:8842 (gloves)
 ```
 
 ```sql
--- one conditional grant: owning the 4-piece set GRANTS the capability (fix #1)
--- mint a producer node so grants is Activity→Access (legal under I3) and not a self-loop (I1)
+-- the gear_loadout node + its composition: a dst=NULL `requires` edge carrying the AND-of-slots tree
 INSERT INTO node (id, kind, name, slug, data)
-VALUES ('activity:own-full-void','activity','Own Full Void','own-full-void','{"activity_kind":"item_set"}');
-INSERT INTO edge (type, edge_class, src, dst, cond_group, data)
-VALUES ('grants','fact','activity:own-full-void','access:full-void', 10, '{"method":"own_set"}');
--- (the producer `activity:own-full-void` carries the set-completion tree; `grants` reads producer → access, so it is legal under I3 and introduces no self-loop under I1.)
+VALUES ('gear_loadout:void','gear_loadout','Full Void','void','{"styles":["melee","ranged","magic"]}');
+INSERT INTO edge (type, edge_class, src, dst, cond_group)
+VALUES ('requires','fact','gear_loadout:void', NULL, 10);
+-- (the composition is owned by the loadout node itself; the `gear_loadout` atom re-evaluates this
+--  tree against current item counts every read, so a dropped/alched piece is reflected immediately.)
 ```
 
-Without conditional grants, four independent `item --grants--> access:full-void` edges would be **implicitly OR-ed**, so owning *one* piece would falsely grant full Void. The `AND` tree on a single grant fixes it. The helm clause is an `OR` of the three Void helms (mage/ranger/melee) — that is the real set rule (the helm slot has three valid fillers), not a false-OR; the MUST-FIX #1 conjunction is across the four *slots*, not the helm variants.
+Without the `AND` tree, four independent piece checks would be **implicitly OR-ed**, so owning *one* piece would falsely satisfy "full Void." The helm clause is an `OR` of the three Void helms (mage/ranger/melee) — the real set rule (the helm slot has three valid fillers), not a false-OR; the conjunction is across the four *slots*. **Tiers:** a stricter `gear_loadout:elite-void` swaps the top/robe for their Elite versions — which themselves carry `requires → achievement_diary(western-provinces:hard, completed)` to obtain — so the engine routes an account through the diary before the upgrade. Modeling Void as `is_unlocked`/`access` would instead collapse all of this (the 3 style helms, base→Elite tiers, and *partial* 3/4-piece progress) into one binary, which it is not.
 
 The recursive evaluator (state from the per-account overlay):
 
@@ -451,14 +454,15 @@ def evaluate(group_id, st, kg) -> bool:
 def atom_satisfied(a, st) -> bool:
     if a.atom_type == "skill_level": return st.levels.get(a.ref_node, 1) >= a.threshold
     if a.atom_type == "combat_level":return st.combat_level >= a.threshold
-    if a.atom_type == "has_item":    return st.counts.get(a.ref_node, 0) >= (a.qty or 1)
-    if a.atom_type == "has_node":    return a.ref_node in st.done
+    if a.atom_type == "item":    return st.counts.get(a.ref_node, 0) >= (a.qty or 1)
+    if a.atom_type == "is_unlocked": return a.ref_node in st.done                          # permanent unlock
+    if a.atom_type == "gear_loadout":return evaluate(kg.composition_of(a.ref_node), st, kg)  # dynamic: re-check the set's item tree vs current counts
     if a.atom_type == "account_type":return st.mode == a.data["value"]
-    if a.atom_type == "quest_done":  return a.ref_node in st.done
+    if a.atom_type == "quest":   return QUEST_STATE_ORDER[st.quest_state.get(a.ref_node, "not_started")] >= QUEST_STATE_ORDER[a.data["state"]]
     ...
 ```
 
-On an ironman with 75 Atk / 60 Str / no Void: `OR( AND(75≥70=T, 60≥70=F)=F, has(access:full-void)=F ) = False`. A sibling `unmet_leaves` walk returns the cheapest failing branch — `[skill_level strength 70]` (cheaper than acquiring full Void) → *"next: train Strength to 70."*
+On an ironman with 75 Atk / 60 Str / no Void: `OR( AND(75≥70=T, 60≥70=F)=F, gear_loadout(void)=F ) = False`. A sibling `unmet_leaves` walk returns the cheapest failing branch — `[skill_level strength 70]` (cheaper than acquiring full Void) → *"next: train Strength to 70."*
 
 ### Ironman-vs-main divergence (concrete)
 
@@ -466,7 +470,7 @@ For *reaching* Scurrius there is **no** divergence — access is free for all mo
 
 ### Condition QA
 
-- **Acyclic REQUIRES includes condition leaves.** The linter emits each `has_node`/`has_item` atom referencing node N as a synthetic `src → N` dependency edge *to the cycle checker only* (not stored), so OR/AND logic — on `requires` **and** the new conditional `grants` — can't smuggle in a cycle.
+- **Acyclic REQUIRES includes condition leaves.** The linter emits each `is_unlocked`/`gear_loadout`/`item` atom referencing node N as a synthetic `src → N` dependency edge *to the cycle checker only* (not stored), so OR/AND logic — on `requires` **and** the new conditional `grants` / loadout-composition trees — can't smuggle in a cycle.
 - **Referential integrity comes free** from the `condition_atom.ref_node` FK.
 - **Grammar validity:** a load-time linter rejects unknown `op`/`atom_type` and malformed trees (NOT with ≠1 child, AND/OR with 0 children). Caught in CI, not production.
 
@@ -689,7 +693,7 @@ Every check has a **severity** (`FAIL` blocks the atomic swap; `WARN` surfaces i
 
 | # | Invariant | Statement | Why | How-checked | Sev |
 |---|---|---|---|---|---|
-| **I1** | Acyclic REQUIRES | The `requires` + synthetic (`grants`-flip + `has_*` cond-leaf) projection is a DAG; report **all** simple cycles (capped) | Planner does `topological_sort`/`descendants`; a cycle = infinite loop / unsatisfiable goal | NetworkX `is_directed_acyclic_graph` on the cycle-augmented graph | **FAIL** |
+| **I1** | Acyclic REQUIRES | The `requires` + synthetic (`grants`-flip + ref-bearing cond-leaf) projection is a DAG; report **all** simple cycles (capped) | Planner does `topological_sort`/`descendants`; a cycle = infinite loop / unsatisfiable goal | NetworkX `is_directed_acyclic_graph` on the cycle-augmented graph | **FAIL** |
 | **I2** | Edge endpoint integrity | Every `edge.src`/`edge.dst` resolves to a `node.id` | Dangling edge crashes loader / silently drops a path | SQL `LEFT JOIN ... IS NULL` | **FAIL** |
 | **I3** | Edge type legality | Each edge type's endpoints match the allowed-`kind` matrix | A `drops` from a Quest is meaningless data | SQL vs data-driven `_qa_edge_typing` | **FAIL\*** |
 | **I4** | dst-nullability | `dst IS NULL` only where a pure-condition edge is allowed (`requires`, and conditional `grants`) | Null `dst` on `drops` is a load-time NPE | SQL | **FAIL** |
@@ -706,6 +710,7 @@ Every check has a **severity** (`FAIL` blocks the atomic swap; `WARN` surfaces i
 | **I15** | Drops excluded from DAG | No `drops`/`located_in`/`gated_by` edge leaks into `requires_dag` | A boss "requiring" its own drop = false/cyclic prereq | Asserted in the projection | **FAIL** |
 | **I16** | Grant-OR not conjoined | No `access` node is the `dst` of >1 unconditional `grants` edge from distinct producers that the projection would treat as AND (alternatives must be modeled as an `OR` `cond_group` on the requirer, or as conditional grants) | The MUST-FIX #2 regression guard: prevents alternative grant sources collapsing into a false AND prereq | NetworkX: flag any `access` with ≥2 unconditional inbound grants for author review | **WARN** |
 | **I17** | Enum domain | `kind`,`type`,`edge_class`,`op`,`atom_type`,`slot`,`account_type` ∈ closed sets | Typos ("mage" vs "magic") fragment data invisibly | DB CHECK | **FAIL** |
+| **I18** | access-vs-gear typing | An `access:*` node whose grant/composition is dominated by `item` atoms resolving to *equippable* items (present in `items_equipment`) should be a `gear_loadout` — and a `gear_loadout` granted only by quest/diary should be an `access` | A worn set mis-tagged as a permanent unlock collapses its variants/tiers/partial-progress into a binary (the Void class) — and gear is losable while `access` is `done`-permanent | join composition `item` ref_nodes vs `items_equipment` (equip slot present) | **FAIL** |
 
 ### Completeness checks (coverage — measured, mostly WARN)
 
@@ -768,8 +773,8 @@ Every row below is a legal instance of the v1-CORE DDL. Uncertain real-world val
     "slug": "varrock-sewers", "data": {} },
   { "id": "access:scurrius-lair", "kind": "access", "name": "Scurrius Lair Access",
     "slug": "scurrius-lair", "data": { "note": "ability to enter the Scurrius fight instance" } },
-  { "id": "access:full-void", "kind": "access", "name": "Full Void Knight", "slug": "full-void",
-    "data": { "note": "owns a complete Void Knight set" } },
+  { "id": "gear_loadout:void", "kind": "gear_loadout", "name": "Full Void Knight", "slug": "void",
+    "data": { "styles": ["melee", "ranged", "magic"] } },
   { "id": "account:normal",  "kind": "account_type", "name": "Normal", "slug": "normal",
     "data": { "must_self_acquire": false, "can_ge": true } },
   { "id": "account:ironman", "kind": "account_type", "name": "Ironman", "slug": "ironman",
@@ -779,8 +784,7 @@ Every row below is a legal instance of the v1-CORE DDL. Uncertain real-world val
   { "id": "loadout:ranged:mid", "kind": "gear_loadout", "name": "Ranged (mid-level)",
     "slug": "ranged:mid", "data": { "style": "ranged", "bracket": "mid" } },
   { "id": "activity:fight-caves", "kind": "activity", "name": "Fight Caves", "slug": "fight-caves",
-    "data": { "activity_kind": "minigame" } },
-  { "id": "activity:own-full-void", "kind": "activity", "name": "Own Full Void", "slug": "own-full-void", "data": { "activity_kind": "item_set" } }
+    "data": { "activity_kind": "minigame" } }
 ]
 ```
 
@@ -808,16 +812,18 @@ Scurrius is a deliberately low-barrier first boss: no quest, no hard stat gate. 
 
 `descendants(requires_dag, "npc:7221") ≈ {access:scurrius-lair}` — correctly trivial for this boss. Ironman vs main: **identical** for access (no item to acquire). The account-type axis is inert here; it fires only in the gear subgraph below.
 
-### Conditional GRANTS — what makes `access:full-void` true
+### Gear-loadout composition — what makes `gear_loadout:void` satisfied
+
+A `gear_loadout:*` node carries its **item-composition** directly: a `requires` edge with `dst=NULL` whose `cond_group` is the AND-of-slots tree ("the constraint *is* the tree"). No minted producer activity and no `grants` to an access node — the loadout is owned (or not), evaluated against current items.
 
 ```json
 [
-  { "id": 9100, "type": "grants", "edge_class": "fact", "src": "activity:own-full-void",
-    "dst": "access:full-void", "cond_group": 10, "data": { "method": "own_set" } }
+  { "id": 9100, "type": "requires", "edge_class": "fact", "src": "gear_loadout:void",
+    "dst": null, "cond_group": 10 }
 ]
 ```
 
-with `cond_group 10 = AND( OR(has_item item:11663, has_item item:11664, has_item item:11665), has_item item:8839, has_item item:8840, has_item item:8842 )` (any one of the three Void helms AND top AND robe AND gloves). One conditional grant; no false single-piece OR (MUST-FIX #1).
+with `cond_group 10 = AND( OR(item item:11663, item item:11664, item item:11665), item item:8839, item item:8840, item item:8842 )` (any one of the three Void helms AND top AND robe AND gloves). No false single-piece OR (MUST-FIX #1). (Conditional `grants` still serve **genuine** `access:*` unlocks gated by a conjunction — e.g. quest AND skill — but full Void is a worn set, so it lives as a loadout composition, not a grant.)
 
 ### Opinion — RECOMMENDED_FOR + a per-boss override
 
@@ -841,7 +847,7 @@ A `loadout_item` row in the **generic** `loadout:melee:mid` (reused across bosse
 | 4 | `loadout:melee:mid` | `item:4587` Dragon scimitar | weapon | melee | mid | 1 | NULL |
 | 12 | `loadout:melee:mid` | `item:11665` Void melee helm | head | melee | mid | 3 | **50** |
 
-with `cond_group 50 = AND( has_node access:full-void )` — the loadout-wide "only with full Void" footnote, cross-referencing the conditional-grant `access` node above.
+with `cond_group 50 = AND( gear_loadout gear_loadout:void )` — the loadout-wide "only with full Void" footnote, cross-referencing the `gear_loadout` set-composition node above.
 
 **Scurrius-specific neck swap, without forking the shared loadout** (MUST-FIX #3):
 
@@ -862,7 +868,7 @@ with `cond_group 50 = AND( has_node access:full-void )` — the loadout-wide "on
 
 ### The goal: "Scurrius 100 KC" resolved for an ironman
 
-State (separate layer): account `ironman`; goal `node_ref=npc:7221, metric=kc, target=100`; progress `kc=0`, `attack=70`, `strength=65`, `access:scurrius-lair` not done, `access:full-void` not done.
+State (separate layer): account `ironman`; goal `node_ref=npc:7221, metric=kc, target=100`; progress `kc=0`, `attack=70`, `strength=65`, `access:scurrius-lair` not done, `gear_loadout:void` not owned (evaluated from current items, not the `done` set).
 
 1. **Fact gate:** `requires npc:7221 → access:scurrius-lair` (unconditional); `access:scurrius-lair` granted free by Varrock Sewers ⇒ **gate OPEN**, identical for main/iron.
 2. **Goal target is a count:** unlocked ✓ + `kc (0) >= 100` ✗ ⇒ goal **active, 0/100**. "Next: Scurrius is unlocked — kill it 100 times."
@@ -874,17 +880,17 @@ State (separate layer): account `ironman`; goal `node_ref=npc:7221, metric=kc, t
 
 | Deferred | Why safe to defer | Trigger to revisit |
 |---|---|---|
-| Non-core node kinds as *data* (`minigame`, `spellbook`, `spell`, `collection_log_slot`) | Enum + ID prefixes reserved; no DDL change needed | When authoring that content |
+| Non-core node kinds as *data* (`minigame`, `spellbook`, `spell`, `clog_slot`) | Enum + ID prefixes reserved; no DDL change needed | When authoring that content |
 | Side-table promotion for a deferred kind | Hybrid spine makes it an additive migration | When the engine hot-filters that kind's fields |
 | `node_alias(old_id, new_id)` rename machinery | IDs are designed immutable; renames rare | First unavoidable rename |
 | Comparator field (`cmp`) on thresholds | OSRS prereqs only ever use `>=` | If a `<` requirement ever appears |
 | Deeper condition nesting beyond 2–3 levels | Two-level AND-of-ORs covers all real v1 reqs | A real requirement needing deeper trees |
-| `count_done` cardinality atom (N-of-M over a named set) | Subquest structure is deferred; headline set-gated items need the FULL quest (`quest_done`) which works today | When intermediate-tier / subquest acquisition routes are authored |
-| `ca_points` accumulator atom + `combat_achievement` de-overload | Per-task `ca_done` ships; tier-reward gating is post-v1 content | When CA tier-reward unlocks are authored (needs STATE layer) |
+| `clue_scrolls` cardinality atom (N-of-M over a named set) | Subquest structure is deferred; headline set-gated items need the FULL quest (a `quest` atom with `data.state = completed`) which works today | When intermediate-tier / subquest acquisition routes are authored |
+| `combat_achievement_points` accumulator atom + `combat_achievement` de-overload | Per-task `combat_achievement` ships; tier-reward gating is post-v1 content | When CA tier-reward unlocks are authored (needs STATE layer) |
 | Acquisition `cost{currency, amount}` (shop/alt-currency) | Static display KG needs no costs; structural QA passes without them | HARD when the planner makes per-mode effort/cost estimates (the moat) |
-| `item_set` sugar node (full Void / Inquisitor's / blood moon) | Conditional-`GRANTS` + an `access` node express set completion now; sugar is ergonomics, not capability | When many sets make hand-wiring `access`+grant tedious |
+| `item_set` sugar node (full Void / Inquisitor's / blood moon) | A `gear_loadout` node + its composition `cond_group` (AND-of-slots, helm-OR) express set ownership now; sugar is ergonomics, not capability | When many sets make hand-wiring `gear_loadout` compositions tedious |
 | Drop-table-as-unit + roll structure ("rolls main table 3×, unique 1×") | `DROPS` handles single lines; v1 only needs uniques/clog | When a loot-tracker feature needs per-roll math |
-| First-class `collection_log_slot` edges (vs `clog.data` JSON) | Clog membership not yet traversed as edges | When a clog tracker queries membership |
+| First-class `clog_slot` edges (vs `clog.data` JSON) | Clog membership not yet traversed as edges | When a clog tracker queries membership |
 | Soft/advisory stat guidance ("suggested combat, prefer ranged") | Neither a hard `requires` nor gear; lives as a note for now | When advisory UI is built (candidate: an `advisory` edge type) |
 | Consumable quantity scaling with trip length / KC-per-trip | `qty` is static; fine for display | When "supplies for N KC" planning is needed |
 | `style` overload on shared consumables | Works because v1 loadouts are mostly per-style; ambiguous only under heavy reuse | When a shared consumable must mean "this style only" precisely |
@@ -895,4 +901,4 @@ State (separate layer): account `ironman`; goal `node_ref=npc:7221, metric=kc, t
 | Native Postgres `ENUM` / `jsonb` GIN indexes | Plain B-trees + CHECKs portable and sufficient at this scale | Only if profiling demands |
 | Per-account loadout overrides (user edits a recommended loadout) | That's the state layer, not the opinion KG | The goal-tracker plan |
 
-> **Note (scale amendment).** The load-bearing claim "depth≤3 / two-level AND-of-ORs covers all real reqs" is AMENDED to: "covers all single-scalar and set-cardinality reqs via {`quest_stage`, `count_done`, `ca_points`}; deeper/stage/accumulator structure via those atoms." `quest_stage` is now IN v1-CORE (it resolves the pipeline-emits-`quest_started`-vs-enum-rejects contradiction). See research/scale-gaps.md.
+> **Note (scale amendment).** The load-bearing claim "depth≤3 / two-level AND-of-ORs covers all real reqs" is AMENDED to: "covers all single-scalar and set-cardinality reqs via {the `quest` atom's `state` field, `clue_scrolls`, `combat_achievement_points`}; deeper/stage/accumulator structure via those atoms." The `quest` atom's 3-state `state` field (not_started/in_progress/completed) is now IN v1-CORE and models partial completion (it resolves the pipeline-emits-`in_progress`-vs-enum-rejects contradiction). See research/scale-gaps.md.

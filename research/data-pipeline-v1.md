@@ -12,7 +12,7 @@
 > - Amulet of glory base item is **`item:1704`** (not `1712`, a charge variant). Live `infobox_item.where('item_name','Amulet of glory')` returns **three** rows: `["1704"]`, `["20586"]` (a different charge variant), and `["interface8283"]` with case-variant name `'Amulet of Glory'` (an interface sprite, **not** a real item). Non-numeric and multi-numeric ids are real and live.
 > - Bucket `.join()` works live (used for item×bonuses slot). Drops are filterable **only** by `page_name` (`.where('Rarity',…)` / `.where('Dropped item',…)` return a hard `error:"Field X not found in bucket dropsline"`, not empty). RDT/Gem-DT items **do not appear as `dropsline` rows at all** — a coverage hole, not a parse problem.
 > - Rarity grammar and the drop-variant suffix space are **open sets** (live: `1/26.9` decimal denominator; `Vorkath#Post-quest`; undocumented `Alt Rarity`/`Approx` keys; `'5–15 (noted)'` en-dash quantity). Classify by regex + quarantine-with-verify; never enumerate.
-> - Quest `requirements` is one HTML string whose `scp` spans include `data-skill="Quest points"` (route to `qp_at_least`, **not** a `skill_level` FK that fails I6).
+> - Quest `requirements` is one HTML string whose `scp` spans include `data-skill="Quest points"` (route to `quest_points`, **not** a `skill_level` FK that fails I6).
 
 ---
 
@@ -158,7 +158,7 @@ Politeness: serialized requests, `maxlag=5`, descriptive UA, inter-call pause, b
 def scp_to_atom(span) -> Atom:
     skill, level = span["data-skill"], int(span["data-level"])
     if skill in SKILL_SET:          return skill_level(ref=f"skill:{slug(skill)}", threshold=level)
-    if skill == "Quest points":     return qp_at_least(threshold=level)          # NO skill FK
+    if skill == "Quest points":     return quest_points(threshold=level)          # NO skill FK
     if skill == "Combat level":     return combat_level(threshold=level)
     return Tier3Queue(span)         # unknown → LLM + verify, never a skill_level FK
 ```
@@ -228,8 +228,8 @@ X1–X3/X5 unresolved ⇒ row dropped+logged (never node fabricated, never crash
 
 **Three narrow jobs (strict structured output):**
 
-1. **Quest-residual → REQUIRES cond tree** (v1-CORE). Input = `quest.requirements` with skill/qp/combat spans **stripped** (the schema's enum omits skill/combat atoms so the LLM can't re-derive them). Emits flat groups + atoms (`quest_done`, **`quest_stage`** [a quest-progress-varbit `>= N` atom that subsumes `quest_done` (stage=end) and the old `quest_started` (stage>=1); real gates like fairy-ring access need stage>=40 — see research/scale-gaps.md], `has_item`, `has_node`, `diary_done`, `ca_done`, `qp_at_least`, `account_type`) + `unresolved`. "and/both/comma"→AND, "or/either"→OR, depth ≤3. Anything still inexpressible → `unresolved` + `verify` + WARN, **never coerced**.
-2. **`{{efn}}` footnote → predicate** (v1-CORE for the closed set-footnote table). Key field = **`kind` triage**: `condition`→`cond_group` FK on the loadout/rec edge; `advisory`→`loadout_item.data.note` (never a fake requirement); `none`→prose. v1 win: `"full Void"`→`AND(has_node access:full-void)` via a short cached mapping table over existing `access:*` nodes; free-text Prayer/quest-conditional tail deferred (emit only if fully grounded, else WARN). **Position-bound** (§3): the predicate attaches to the specific rank the footnote followed.
+1. **Quest-residual → REQUIRES cond tree** (v1-CORE). Input = `quest.requirements` with skill/qp/combat spans **stripped** (the schema's enum omits skill/combat atoms so the LLM can't re-derive them). Emits flat groups + atoms (**`quest`** [carries a 3-state `state` field ∈ {not_started, in_progress, completed} (ORDERED — a requirement means "state >= the required value"); a bare quest prereq = `completed`, the wiki "Started:" convention = `in_progress`; the `state` field models partial completion, e.g. a gate that needs the quest in progress rather than finished — see the G1 partial-completion discussion in research/scale-gaps.md], `item`, `achievement_diary`, `combat_achievement`, `quest_points`, `account_type`) + `unresolved`. "and/both/comma"→AND, "or/either"→OR, depth ≤3. Anything still inexpressible → `unresolved` + `verify` + WARN, **never coerced**.
+2. **`{{efn}}` footnote → predicate** (v1-CORE for the closed set-footnote table). Key field = **`kind` triage**: `condition`→`cond_group` FK on the loadout/rec edge; `advisory`→`loadout_item.data.note` (never a fake requirement); `none`→prose. v1 win: `"full Void"`→`AND( gear_loadout gear_loadout:void )` (a `gear_loadout` predicate on the `gear_loadout:void` node) via a short cached mapping table over existing `gear_loadout:*` / `access:*` nodes; free-text Prayer/quest-conditional tail deferred (emit only if fully grounded, else WARN). **Position-bound** (§3): the predicate attaches to the specific rank the footnote followed.
 3. **In-cell `>`/`/` → ranked/alternative items** (v1-CORE, mostly deterministic). The deterministic splitter owns structure + exact-name resolution (with a **variant-suffix / charge-number normalizer** so `glory` vs `glory(6)` is resolved by rule, not LLM). The LLM is invoked **only** for a plink that fails deterministic resolution (ambiguous/renamed/variant, or the X9 multi-numeric-id case), handed the small candidate set, picks one id (constrained to the set, then FK-checked) **and the choice is round-trip checked** (`chosen_id ∈ candidates ∧ FK-resolves`; ordering preserved) — or null + `verify="tier3:plink-ambiguous"`.
 
 **The gate (`land_tier3`):**
@@ -239,7 +239,7 @@ X1–X3/X5 unresolved ⇒ row dropped+logged (never node fabricated, never crash
 
 Pass → write rows `verify=NULL` + provenance (oldid); fail → quarantine `verify="tier3:…"` + WARN (kept, not dropped; feeds C11). Job 3's "judge" is the deterministic round-trip check above. Tier-3 rides existing invariants I1/I2/I5/I6/I8 — no new ones.
 
-**Judge calibration (S3).** A small hand-labeled set (~30 trees, half deliberately *unfaithful* — OR↔AND flip, dropped NOT, invented atom) measures judge precision/recall on catching the unfaithful ones. A judge that can't catch a hand-injected OR→AND flip is theater; this is the **judge's own mutation test**. DSII-class prose and an **adversarial plausible-wrong pin** (e.g. an "antifire" footnote that must NOT become `has_item Anti-dragon shield`) are golden pins with manually-authored expected trees, so the FK-passes-but-wrong class is regression-caught.
+**Judge calibration (S3).** A small hand-labeled set (~30 trees, half deliberately *unfaithful* — OR↔AND flip, dropped NOT, invented atom) measures judge precision/recall on catching the unfaithful ones. A judge that can't catch a hand-injected OR→AND flip is theater; this is the **judge's own mutation test**. DSII-class prose and an **adversarial plausible-wrong pin** (e.g. an "antifire" footnote that must NOT become `item Anti-dragon shield`) are golden pins with manually-authored expected trees, so the FK-passes-but-wrong class is regression-caught.
 
 ---
 
@@ -251,25 +251,24 @@ One ordered pass; later stages FK into earlier. **Idempotency = ids are pure fun
 def item_id(raw): return f"item:{coerce_gid(raw)}"     # raw may be ["1704"]; non-numeric → quarantine upstream
 def npc_id(raw):  return f"npc:{coerce_gid(raw)}"
 def slug_id(prefix, *p): return ":".join([prefix, *[slug(x) for x in p]])
-# quest:dragon-slayer-ii | access:full-void | diary:varrock:hard | loadout:melee:mid
+# quest:dragon-slayer-ii | gear_loadout:void | diary:varrock:hard | loadout:melee:mid
 ```
 
 `slug_freeze.yaml` asserts authored slugs are stable across rebuilds (a wiki rename that would churn a slug **fails the build** → routes to `node_alias`).
 
 **Stage 1 — nodes + side tables.** One mapping per kind (§3 source map); side-table writes obey I13 (1:1, right kind) by construction. Reconciliation already happened (§4); here we record the winning source in `node.data`, store `wiki_name` on conflict, and stamp `verify` on disagreement.
 
-**Stage 2 — fact edges + ACCESS construction.** `drops` (verbatim `data.rate`/`qty_low`/`qty_high`/`variant`/`rarity_alt`, never re-mathed, excluded from requires_dag / I15); `located_in`; `gated_by`. **Access sink mechanism:** mint `access:<slug>` iff ≥2 nodes gate the same capability **or** it's a set-completion; else REQUIRE the producer directly. Producers `--grants-->access`, consumers `--requires-->access` — no producer edge targets another producer → the requires projection can't cycle through the glue. **Conditional grant for sets** = a *single* grant carrying an AND-of-pieces tree (NOT four OR-able grants — the false-full-Void-on-one-piece bug):
+**Stage 2 — fact edges + ACCESS construction.** `drops` (verbatim `data.rate`/`qty_low`/`qty_high`/`variant`/`rarity_alt`, never re-mathed, excluded from requires_dag / I15); `located_in`; `gated_by`. **Access sink mechanism:** mint `access:<slug>` iff ≥2 nodes gate the same **permanent unlock**; else REQUIRE the producer directly. Producers `--grants-->access`, consumers `--requires-->access` — no producer edge targets another producer → the requires projection can't cycle through the glue. **Worn sets are NOT access:** a gear set (full Void, Barrows) is a `gear_loadout` node carrying its item-composition as a *single* `cond_group` — an AND-of-slots tree (NOT four OR-able grants — the false-full-Void-on-one-piece bug) — on a `requires` edge with `dst=NULL` ("the constraint *is* the tree"), evaluated dynamically against current items rather than cached in `done`:
 
 ```python
-helm_or = build_tree(OR, [has_item("item:11663"),   # Void mage helm
-                          has_item("item:11664"),   # Void ranger helm
-                          has_item("item:11665")])  # Void melee helm — any one helm is the set rule
-cg = build_tree(AND, [helm_or, has_item("item:8839"),
-                      has_item("item:8840"), has_item("item:8842")])
-# producer node so grants reads Activity→Access (legal under I3, no I1 self-loop)
-node(id="activity:own-full-void", kind="activity", data={"activity_kind": "item_set"})
-edge(type="grants", src="activity:own-full-void", dst="access:full-void",
-     cond_group=cg, data={"method": "own_set"})
+helm_or = build_tree(OR, [item("item:11663"),   # Void mage helm
+                          item("item:11664"),   # Void ranger helm
+                          item("item:11665")])  # Void melee helm — any one helm is the set rule
+cg = build_tree(AND, [helm_or, item("item:8839"),
+                      item("item:8840"), item("item:8842")])
+# the loadout node owns its composition; the gear_loadout atom re-evaluates cg vs live counts
+node(id="gear_loadout:void", kind="gear_loadout", data={"styles": ["melee", "ranged", "magic"]})
+edge(type="requires", src="gear_loadout:void", dst=None, cond_group=cg)
 ```
 
 I16 guard: ≥2 unconditional grants from distinct producers on one access node → WARN (alternatives belong as an OR `cond_group` on the *requirer*, not conjoined prereqs).
@@ -382,7 +381,7 @@ extractor_sha NOT NULL, prev_rev, qa_report_sha, source_notes
 **Steps.**
 (a) Reconcile id + combat_level → emit `monster_attr.combat_level ∈ {200, 250}`, choose `npc:7221` canonical + `7222` variant (both mint nodes; `recommended_for`/`located_in` target the canonical 7221, else 7222 orphans → C10), write the 7223/408 correction to `recon_report.json`.
 (b) Decode one `dropsline` row + group-by → ≥1 `drops` edge with a resolved real `item:<gid>` dst + parsed rarity (open grammar) + `data.variant`.
-(c) Parse `Scurrius/Strategies` @ oldid 15164664 → `loadout:melee:mid` with ≥3 `loadout_item` rows (one carrying the `{{efn}}`-derived `AND(has_node access:full-void)` from the single Tier-3 call, **position-bound to its rank**) + the neck `loadout_override`; every `{{plink}}` FK-resolves; a deliberately multi-numeric-id plink (glory) routes to Job 3, not a silent pick.
+(c) Parse `Scurrius/Strategies` @ oldid 15164664 → `loadout:melee:mid` with ≥3 `loadout_item` rows (one carrying the `{{efn}}`-derived `AND( gear_loadout gear_loadout:void )` from the single Tier-3 call, **position-bound to its rank**) + the neck `loadout_override`; every `{{plink}}` FK-resolves; a deliberately multi-numeric-id plink (glory) routes to Job 3, not a silent pick.
 (d) Emit legal `node/monster_attr/edge/condition_*/loadout_*/provenance` into `kg_candidate.sqlite` with oldid-pinned provenance; run I2/I5/I6/I8/I9/I10/I14 on the subgraph.
 (e) **Run the mutation check** — inject `combat_level 250→408` into the candidate and assert the reconcile/golden layer goes RED **without** the answer pre-told.
 (f) **Run one full 38k-row `dropsline` paginate** (keyset) and assert `≥0.95×38707` — n=1 does **not** retire the pagination-truncation risk.
@@ -396,7 +395,7 @@ extractor_sha NOT NULL, prev_rev, qa_report_sha, source_notes
 | Drops pattern | `where('page_name')` + client group-by → FK-valid `drops` with `#variant` split + open rarity grammar |
 | Bucket capability mapped | `.join` yes, top-level-where only, no LIKE/groupBy, ids = arrays (incl. non-numeric), false = omitted, bad-field errors hard — recorded |
 | Pagination doesn't truncate | full `dropsline` paginate ≥0.95×38707 |
-| Tier-3 narrow & validated | exactly one LLM call; output FK-resolves to `access:full-void`; position-bound; spine has zero LLM |
+| Tier-3 narrow & validated | exactly one LLM call; output FK-resolves to `gear_loadout:void`; position-bound; spine has zero LLM |
 | Legal provenanced rows | subgraph passes I2/I5/I6/I8/I9/I10/I14 |
 | Reproducible | re-run same oldids + build_id ⇒ identical rows (modulo `built_at`) — labeled an **idempotency** gate, not a correctness one |
 
