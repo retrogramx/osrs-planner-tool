@@ -162,3 +162,36 @@ def test_kill_count_atom_absence_is_unknown_not_zero():
     # when observed (plugin), absence is a real 0 -> FALSE
     observed = AccountState(mode="normal", observable_families={"kill_count"})
     assert atom_satisfied(atom, observed, kg) is Tri.FALSE
+
+
+def test_evaluate_and_or_not_fold_via_kleene():
+    # group 1 = OR( group 2 = AND(att>=70, str>=70), NOT(group 3 = AND(qp>=99)) )
+    nodes = [
+        Node(id="skill:attack", kind=NodeKind.SKILL, name="Attack", slug="attack"),
+        Node(id="skill:strength", kind=NodeKind.SKILL, name="Strength", slug="strength"),
+    ]
+    groups = [
+        ConditionGroup(id=1, op=Op.OR, parent=None, children=[2, 4]),
+        ConditionGroup(id=2, op=Op.AND, parent=1, children=[
+            ConditionAtom(atom_type=AtomType.SKILL_LEVEL, ref_node="skill:attack", threshold=70),
+            ConditionAtom(atom_type=AtomType.SKILL_LEVEL, ref_node="skill:strength", threshold=70),
+        ]),
+        ConditionGroup(id=3, op=Op.AND, parent=4, children=[
+            ConditionAtom(atom_type=AtomType.QUEST_POINTS, threshold=99),
+        ]),
+        ConditionGroup(id=4, op=Op.NOT, parent=1, children=[3]),
+    ]
+    kg = _store(nodes=nodes, groups=groups)
+
+    # AND branch TRUE -> whole OR TRUE
+    both = AccountState(mode="normal", levels={"skill:attack": 70, "skill:strength": 70})
+    assert evaluate(1, both, kg) is Tri.TRUE
+
+    # AND branch FALSE (str 60), but NOT(qp>=99) = NOT(FALSE) = TRUE -> OR TRUE
+    low_str = AccountState(mode="normal", levels={"skill:attack": 70, "skill:strength": 60}, qp=0)
+    assert evaluate(1, low_str, kg) is Tri.TRUE
+
+    # AND branch FALSE AND NOT(qp>=99)=NOT(TRUE)=FALSE -> OR FALSE
+    low_str_high_qp = AccountState(mode="normal",
+                                   levels={"skill:attack": 70, "skill:strength": 60}, qp=99)
+    assert evaluate(1, low_str_high_qp, kg) is Tri.FALSE
