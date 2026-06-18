@@ -1,3 +1,7 @@
+import itertools
+
+import pytest
+
 from osrs_planner.engine.kleene import Tri, k_and, k_or, k_not, from_bool
 
 
@@ -115,10 +119,6 @@ class TestKOr:
 
     def test_accepts_generator(self):
         assert k_or(t for t in (Tri.FALSE, Tri.TRUE)) is Tri.TRUE
-
-
-import itertools
-import pytest
 
 
 @pytest.mark.parametrize("a,b", itertools.product(list(Tri), repeat=2))

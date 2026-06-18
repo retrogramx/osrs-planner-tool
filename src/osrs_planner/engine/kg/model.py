@@ -103,7 +103,7 @@ class ConditionGroup:
     id: int
     op: Op
     parent: Optional[int]
-    children: list
+    children: list[int | ConditionAtom]
 
 
 @dataclass(frozen=True)

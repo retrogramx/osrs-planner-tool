@@ -1,3 +1,7 @@
+import dataclasses
+
+import pytest
+
 from osrs_planner.engine.kg.model import (
     NodeKind, EdgeType, Op, AtomType,
     Node, ConditionAtom, ConditionGroup, Edge,
@@ -38,10 +42,6 @@ def test_atom_type_locked_set_includes_gear_loadout_and_ca_split():
     # the de-overload (schema §"combat_achievement scope"): the binary
     # per-task atom and the accumulator tier-points atom are DISTINCT members.
     assert AtomType.COMBAT_ACHIEVEMENT != AtomType.COMBAT_ACHIEVEMENT_POINTS
-
-
-import dataclasses
-import pytest
 
 
 def test_node_construction_and_data_default():

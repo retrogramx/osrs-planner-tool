@@ -6,7 +6,7 @@ the verdict -- i.e. a FALSE dominates AND, a TRUE dominates OR.
 """
 
 from enum import Enum
-from typing import Iterable
+from collections.abc import Iterable
 
 
 class Tri(Enum):
