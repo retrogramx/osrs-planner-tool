@@ -31,7 +31,7 @@ def _done_membership(family: str, ref_node: str, state: AccountState) -> Tri:
 
 
 def _ordered_state(family: str, ref_node: str, required: str,
-                   observed: dict, state: AccountState) -> Tri:
+                   observed: dict[str, str], state: AccountState) -> Tri:
     """3-state ordered comparison via QUEST_STATE_ORDER (reused for quest + diary).
 
     Satisfied iff order[current] >= order[required]. Absent value:
@@ -40,8 +40,7 @@ def _ordered_state(family: str, ref_node: str, required: str,
     """
     have = observed.get(ref_node)
     if have is None:
-        # D6: an absent value is a real not_started only if the family is observed
-        # (or manually asserted); otherwise it is genuinely UNKNOWN.
+        # D6: absent = real not_started only if the family is observed; else UNKNOWN.
         if family_is_observed(family, state, manually_asserted=False):
             have = "not_started"
         else:
@@ -78,17 +77,17 @@ def atom_satisfied(atom: ConditionAtom, state: AccountState, kg: KGStore) -> Tri
         return from_bool(state.mode == atom.data.get("value"))
 
     if at is AtomType.IS_UNLOCKED:
-        return _done_membership("is_unlocked", atom.ref_node, state)
+        return _done_membership(at.value, atom.ref_node, state)
 
     if at is AtomType.COMBAT_ACHIEVEMENT:
-        return _done_membership("combat_achievement", atom.ref_node, state)
+        return _done_membership(at.value, atom.ref_node, state)
 
     if at is AtomType.QUEST:
-        return _ordered_state("quest", atom.ref_node, atom.data["state"],
+        return _ordered_state(at.value, atom.ref_node, atom.data["state"],
                               state.quest_state, state)
 
     if at is AtomType.ACHIEVEMENT_DIARY:
-        return _ordered_state("achievement_diary", atom.ref_node, atom.data["state"],
+        return _ordered_state(at.value, atom.ref_node, atom.data["state"],
                               state.diary_state, state)
 
     if at is AtomType.KILL_COUNT:
@@ -96,7 +95,7 @@ def atom_satisfied(atom: ConditionAtom, state: AccountState, kg: KGStore) -> Tri
             return from_bool(state.kc[atom.ref_node] >= (atom.threshold or 0))
         # absence != zero (could be below the Hiscores tracking cutoff); D6 routes
         # the observed-vs-UNKNOWN decision through family_is_observed.
-        if family_is_observed("kill_count", state, manually_asserted=False):
+        if family_is_observed(at.value, state, manually_asserted=False):
             return from_bool(0 >= (atom.threshold or 0))
         return Tri.UNKNOWN
 
@@ -112,7 +111,7 @@ def atom_satisfied(atom: ConditionAtom, state: AccountState, kg: KGStore) -> Tri
         for m in members:
             if state.clue_counts.get(m, 0) >= 1:
                 per_member.append(Tri.TRUE)
-            elif family_is_observed("clue_scrolls", state, manually_asserted=False):
+            elif family_is_observed(at.value, state, manually_asserted=False):
                 per_member.append(Tri.FALSE)  # observed absence = a real 0 (D6)
             else:
                 per_member.append(Tri.UNKNOWN)  # absence != zero
