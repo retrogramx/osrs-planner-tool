@@ -274,3 +274,43 @@ def test_clue_scrolls_cardinality_atom():
     # 2 already known-satisfied + 1 UNKNOWN: TRUE regardless of the unknown (k_or short-circuit)
     enough = AccountState(mode="normal", clue_counts={"clue:easy": 4, "clue:medium": 1})
     assert atom_satisfied(atom, enough, kg) is Tri.TRUE
+
+
+def test_evaluate_unknown_surfaces_only_when_it_flips_the_verdict():
+    # G1 = OR( quest:x completed [UNKNOWN when absent], skill:attack >= 70 )
+    nodes = [
+        Node(id="quest:x", kind=NodeKind.QUEST, name="Quest X", slug="quest-x"),
+        Node(id="skill:attack", kind=NodeKind.SKILL, name="Attack", slug="attack"),
+    ]
+    groups = [
+        ConditionGroup(id=1, op=Op.OR, parent=None, children=[
+            ConditionAtom(atom_type=AtomType.QUEST, ref_node="quest:x", data={"state": "completed"}),
+            ConditionAtom(atom_type=AtomType.SKILL_LEVEL, ref_node="skill:attack", threshold=70),
+        ]),
+    ]
+    kg = _store(nodes=nodes, groups=groups)
+
+    # quest unknown, but attack>=70 TRUE -> OR is TRUE (k_or short-circuits the UNKNOWN)
+    high_att = AccountState(mode="normal", levels={"skill:attack": 70})
+    assert evaluate(1, high_att, kg) is Tri.TRUE
+
+    # quest unknown AND attack 60 FALSE -> OR is UNKNOWN (the unknown now flips it)
+    low_att = AccountState(mode="normal", levels={"skill:attack": 60})
+    assert evaluate(1, low_att, kg) is Tri.UNKNOWN
+
+
+def test_evaluate_and_with_one_false_is_false_despite_unknown():
+    # G1 = AND( skill:attack >= 70 [FALSE], quest:x [UNKNOWN] ) -> FALSE
+    nodes = [
+        Node(id="quest:x", kind=NodeKind.QUEST, name="Quest X", slug="quest-x"),
+        Node(id="skill:attack", kind=NodeKind.SKILL, name="Attack", slug="attack"),
+    ]
+    groups = [
+        ConditionGroup(id=1, op=Op.AND, parent=None, children=[
+            ConditionAtom(atom_type=AtomType.SKILL_LEVEL, ref_node="skill:attack", threshold=70),
+            ConditionAtom(atom_type=AtomType.QUEST, ref_node="quest:x", data={"state": "completed"}),
+        ]),
+    ]
+    kg = _store(nodes=nodes, groups=groups)
+    st = AccountState(mode="normal", levels={"skill:attack": 60})  # quest absent -> UNKNOWN
+    assert evaluate(1, st, kg) is Tri.FALSE  # any FALSE in AND wins over UNKNOWN
