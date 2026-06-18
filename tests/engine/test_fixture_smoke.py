@@ -61,11 +61,11 @@ def test_flagship_true_for_main_full_void():
     assert evaluate(G_SCURRIUS_OR, main_full_void(), kg) is Tri.TRUE
 
 
-def test_fresh_main_flagship_is_false():
-    # fresh_main has no levels and no items; conditions.py treats absent skill levels
-    # as level 1 (always-observable default) and absent items as count 0 (bank-observable).
-    # Both branches evaluate to FALSE -> OR is FALSE.
-    # NOTE: the plan's comment claimed UNKNOWN here, but conditions.py's SKILL_LEVEL and
-    # ITEM branches never return UNKNOWN -- they hardcode absence as 1/0 respectively.
+def test_fresh_main_flagship_is_unknown():
+    # fresh_main: mode="normal", empty observable_families (we haven't synced a bank feed).
+    #   stats branch: skill levels are always-observable (absent = level 1) -> 1 < 70 = FALSE
+    #   void branch : items absent AND "item" NOT observable -> UNKNOWN (can't see the bank)
+    # OR(FALSE, UNKNOWN) = UNKNOWN (Kleene): we can't rule out that the player owns full Void,
+    # so the flagship is UNKNOWN, not a false "locked". This is the cardinal "absence != zero".
     kg = build_store()
-    assert evaluate(G_SCURRIUS_OR, fresh_main(), kg) is Tri.FALSE
+    assert evaluate(G_SCURRIUS_OR, fresh_main(), kg) is Tri.UNKNOWN

@@ -47,30 +47,49 @@ def test_combat_level_atom_reads_derived_scalar():
     assert atom_satisfied(atom, AccountState(mode="normal"), kg) is Tri.FALSE
 
 
-def test_quest_points_and_ca_points_atoms():
+def test_quest_points_atom_observable_compares_unobservable_is_unknown():
     kg = _store()
     qp = ConditionAtom(atom_type=AtomType.QUEST_POINTS, threshold=32)
+    # quest_points derive from quests (plugin-only, NOT on the Hiscores). Without
+    # "quest_points" observable, an unsynced account's scalar qp (default 0) can't
+    # be trusted -> UNKNOWN, never a fabricated FALSE.
+    assert atom_satisfied(qp, AccountState(mode="normal", qp=32), kg) is Tri.UNKNOWN
+    assert atom_satisfied(qp, AccountState(mode="normal", qp=0), kg) is Tri.UNKNOWN
+    # with "quest_points" observable (plugin/manual) -> real numeric compare
+    obs_met = AccountState(mode="normal", qp=32, observable_families={"quest_points"})
+    obs_under = AccountState(mode="normal", qp=31, observable_families={"quest_points"})
+    assert atom_satisfied(qp, obs_met, kg) is Tri.TRUE
+    assert atom_satisfied(qp, obs_under, kg) is Tri.FALSE
+
+
+def test_combat_achievement_points_atom_is_hiscores_observable_scalar():
+    kg = _store()
+    # CA points ARE on the Hiscores -> always-present scalar, plain compare, never UNKNOWN
     cap = ConditionAtom(atom_type=AtomType.COMBAT_ACHIEVEMENT_POINTS, threshold=500)
-    assert atom_satisfied(qp, AccountState(mode="normal", qp=32), kg) is Tri.TRUE
-    assert atom_satisfied(qp, AccountState(mode="normal", qp=31), kg) is Tri.FALSE
     assert atom_satisfied(cap, AccountState(mode="normal", ca_points=500), kg) is Tri.TRUE
     assert atom_satisfied(cap, AccountState(mode="normal", ca_points=499), kg) is Tri.FALSE
 
 
-def test_item_atom_qty_observable_absent_is_false():
+def test_item_atom_qty_observable_absent_is_false_unobservable_is_unknown():
     kg = _store(nodes=[Node(id="item:8839", kind=NodeKind.ITEM, name="Void top", slug="void-top")])
     atom = ConditionAtom(atom_type=AtomType.ITEM, ref_node="item:8839", qty=2)
+    # present in counts -> numeric compare by owned count
     assert atom_satisfied(atom, AccountState(mode="normal", counts={"item:8839": 2}), kg) is Tri.TRUE
     assert atom_satisfied(atom, AccountState(mode="normal", counts={"item:8839": 1}), kg) is Tri.FALSE
-    # items are observable (bank feed) -> absent = 0 owned = FALSE
-    assert atom_satisfied(atom, AccountState(mode="normal"), kg) is Tri.FALSE
+    # absent + "item" observable (bank feed synced) -> 0 owned = real FALSE for qty>=1
+    observed = AccountState(mode="normal", observable_families={"item"})
+    assert atom_satisfied(atom, observed, kg) is Tri.FALSE
+    # cardinal rule: absent + "item" NOT observable (can't see the bank) -> UNKNOWN
+    assert atom_satisfied(atom, AccountState(mode="normal"), kg) is Tri.UNKNOWN
 
 
 def test_item_atom_qty_defaults_to_one():
     kg = _store(nodes=[Node(id="item:8842", kind=NodeKind.ITEM, name="Void gloves", slug="void-gloves")])
     atom = ConditionAtom(atom_type=AtomType.ITEM, ref_node="item:8842")  # qty None -> 1
     assert atom_satisfied(atom, AccountState(mode="normal", counts={"item:8842": 1}), kg) is Tri.TRUE
-    assert atom_satisfied(atom, AccountState(mode="normal"), kg) is Tri.FALSE
+    # absent + "item" observable -> 0 owned < 1 = real FALSE
+    observed = AccountState(mode="normal", observable_families={"item"})
+    assert atom_satisfied(atom, observed, kg) is Tri.FALSE
 
 
 def test_account_type_atom_matches_mode():
@@ -187,13 +206,18 @@ def test_evaluate_and_or_not_fold_via_kleene():
     both = AccountState(mode="normal", levels={"skill:attack": 70, "skill:strength": 70})
     assert evaluate(1, both, kg) is Tri.TRUE
 
+    # quest_points is plugin-only (not on the Hiscores); these states model a SYNCED
+    # account ("quest_points" observable) so the qp compare is a real TRUE/FALSE, not
+    # UNKNOWN -- which is what these NOT(qp) fold assertions are exercising.
     # AND branch FALSE (str 60), but NOT(qp>=99) = NOT(FALSE) = TRUE -> OR TRUE
-    low_str = AccountState(mode="normal", levels={"skill:attack": 70, "skill:strength": 60}, qp=0)
+    low_str = AccountState(mode="normal", levels={"skill:attack": 70, "skill:strength": 60},
+                           qp=0, observable_families={"quest_points"})
     assert evaluate(1, low_str, kg) is Tri.TRUE
 
     # AND branch FALSE AND NOT(qp>=99)=NOT(TRUE)=FALSE -> OR FALSE
     low_str_high_qp = AccountState(mode="normal",
-                                   levels={"skill:attack": 70, "skill:strength": 60}, qp=99)
+                                   levels={"skill:attack": 70, "skill:strength": 60},
+                                   qp=99, observable_families={"quest_points"})
     assert evaluate(1, low_str_high_qp, kg) is Tri.FALSE
 
 
@@ -228,20 +252,23 @@ def test_gear_loadout_atom_dynamic_partial_false_full_true():
     kg = _store(nodes=nodes, edges=edges, groups=groups)
     atom = ConditionAtom(atom_type=AtomType.GEAR_LOADOUT, ref_node="gear_loadout:void")
 
+    # These states model a SYNCED account (bank feed observed) so that an absent piece
+    # reads as a real 0 owned -> the partial-set FALSE verdicts mean what they intend
+    # (without "item" observable, an absent piece is correctly UNKNOWN, not FALSE).
     # full set (melee helm + top + robe + gloves) -> TRUE
-    full = AccountState(mode="normal", counts={
+    full = AccountState(mode="normal", observable_families={"item"}, counts={
         "item:11665": 1, "item:8839": 1, "item:8840": 1, "item:8842": 1,
     })
     assert atom_satisfied(atom, full, kg) is Tri.TRUE
 
     # 3/4 pieces (missing gloves) -> FALSE (the false-single-piece-OR guard)
-    three = AccountState(mode="normal", counts={
+    three = AccountState(mode="normal", observable_families={"item"}, counts={
         "item:11665": 1, "item:8839": 1, "item:8840": 1,
     })
     assert atom_satisfied(atom, three, kg) is Tri.FALSE
 
     # only one piece (a helm) -> FALSE (would be a false TRUE without the AND-of-slots tree)
-    one = AccountState(mode="normal", counts={"item:11665": 1})
+    one = AccountState(mode="normal", observable_families={"item"}, counts={"item:11665": 1})
     assert atom_satisfied(atom, one, kg) is Tri.FALSE
 
 

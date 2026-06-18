@@ -63,14 +63,25 @@ def atom_satisfied(atom: ConditionAtom, state: AccountState, kg: KGStore) -> Tri
         return from_bool(state.combat_level >= (atom.threshold or 0))
 
     if at is AtomType.QUEST_POINTS:
-        return from_bool(state.qp >= (atom.threshold or 0))
+        # quest_points derive from quest completion (plugin-only, NOT on the
+        # Hiscores). The scalar qp defaults to 0, so an unsynced account must read
+        # UNKNOWN, not a fabricated FALSE -> gate the compare on family_is_observed.
+        if family_is_observed(at.value, state, manually_asserted=False):
+            return from_bool(state.qp >= (atom.threshold or 0))
+        return Tri.UNKNOWN
 
     if at is AtomType.COMBAT_ACHIEVEMENT_POINTS:
         return from_bool(state.ca_points >= (atom.threshold or 0))
 
     if at is AtomType.ITEM:
-        # items observable via the bank feed -> absent = 0 owned = real FALSE
-        return from_bool(state.counts.get(atom.ref_node, 0) >= (atom.qty or 1))
+        if atom.ref_node in state.counts:
+            return from_bool(state.counts[atom.ref_node] >= (atom.qty or 1))
+        # absence != zero: only when the bank feed is synced ("item" observed) is an
+        # absent item a real 0 owned (-> FALSE for qty>=1); else we can't see the
+        # bank -> UNKNOWN. D6 routes the decision through family_is_observed.
+        if family_is_observed(at.value, state, manually_asserted=False):
+            return from_bool(0 >= (atom.qty or 1))
+        return Tri.UNKNOWN
 
     if at is AtomType.ACCOUNT_TYPE:
         # mode is always known for a loaded account -> never UNKNOWN
