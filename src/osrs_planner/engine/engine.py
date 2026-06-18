@@ -204,7 +204,23 @@ class Engine:
                 refs=Refs(nodes={node_id: NodeRef(id=node.id, kind=node.kind, name=node.name)}),
                 message=f"no account state to evaluate {node_id!r}",
             )
-        raise NotImplementedError  # filled in by later steps
+        # I1: cycles fail the build; guard at runtime so a bad fixture fails closed (§10).
+        cycles = self.kg.find_cycles()
+        cycle_nodes = {n for cyc in cycles for n in cyc}
+        closure = self.kg.descendants(node_id)
+        relevant = cycle_nodes & (closure | {node_id})
+        if relevant:
+            cyc_refs = {
+                nid: NodeRef(id=nid, kind=(self.kg.node(nid).kind if self.kg.node(nid) else "?"),
+                             name=(self.kg.node(nid).name if self.kg.node(nid) else nid))
+                for nid in relevant
+            }
+            return Problem(
+                kind=ProblemKind.UNSATISFIABLE_CYCLE,
+                refs=Refs(mentions=cyc_refs),
+                message=f"prereq cycle: {sorted(relevant)}",
+            )
+        raise NotImplementedError  # closure build filled in by later steps
 
     def next_steps(self, state: AccountState, node_id: str) -> Result[cards.PlanCard]:
         raise NotImplementedError  # later task

@@ -76,3 +76,26 @@ def test_prereqs_for_fresh_valid_account_is_not_missing_state():
     eng = Engine(_fixture_kg())
     res = eng.prereqs_for(AccountState(mode="main"), "npc:scur")
     assert not (isinstance(res, Problem) and res.kind is ProblemKind.MISSING_STATE)
+
+
+def _cyclic_kg():
+    """A:requires->B, B:requires->A. find_cycles() must report it."""
+    nodes = [
+        Node(id="a", kind=NodeKind.ACCESS, name="A", slug="a"),
+        Node(id="b", kind=NodeKind.ACCESS, name="B", slug="b"),
+    ]
+    edges = [
+        Edge(id=1, type=EdgeType.REQUIRES, src="a", dst="b"),
+        Edge(id=2, type=EdgeType.REQUIRES, src="b", dst="a"),
+    ]
+    return InMemoryKGStore(nodes=nodes, edges=edges, groups={})
+
+
+def test_prereqs_for_cycle_is_unsatisfiable_cycle():
+    eng = Engine(_cyclic_kg())
+    state = AccountState(mode="main", done={"x"})  # non-empty so we pass the missing_state guard
+    res = eng.prereqs_for(state, "a")
+    assert isinstance(res, Problem)
+    assert res.kind is ProblemKind.UNSATISFIABLE_CYCLE
+    # cycle nodes are surfaced for the Advisor (§4: refs ⊆ touched nodes)
+    assert "a" in res.refs.mentions or "a" in res.refs.nodes
