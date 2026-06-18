@@ -2,7 +2,7 @@
 
 > **Spec-Driven Development.** This file is the living **design document**: the project's current architecture and roadmap. Per-change **plans** live in [`plans/`](plans/); **architecture decisions** (ADRs) live in [`decisions/`](decisions/). Changes flow **plan → code** (never the reverse); this document records current state. Adrian owns it — scope changes happen here, and in a plan, before code.
 
-**Status:** Active · `feat/web-foundation` shipped → PR #1 · updated 2026-06-13
+**Status:** Active · `feat/web-foundation` shipped → PR #1 · `feat/goal-engine` design+data locked (the engine↔advisor contract, KG schema v1, data foundation) · updated 2026-06-18
 **Scope:** public · hosted · multi-account — search any OSRS Hiscores account (Tiger0295 = reference/dev account) · **Repo:** `retrogramx/osrs-planner-tool` (public) · `main` protected, PR-only.
 
 ## 0. Document model (how this maps to SDD)
@@ -52,7 +52,7 @@ Two tiers: **public** (any searched account, pulled on demand + cached) and **cl
 
 ## 4. Goal model
 
-Unified, discriminated `Goal` table + dependency DAG + grouping + templates. Types: SKILL_LEVEL, SKILL_XP, TOTAL_LEVEL, TOTAL_XP/EHP/EHB, BOSS_KC, CLUE_COUNT, CLOG_SLOTS, CLOG_ITEM, CA_POINTS/CA_TIER/CA_TASK, DIARY, QUEST, ITEM_QTY, MANUAL. Dependencies as `GoalDependency{goal_id, requires_goal_id, kind}`. Goals belong to a **claimed account** (owner verified by account-hash); the prereq graph + planning logic are **account-type-aware** — an ironman must self-acquire where a main can buy, so the optimal path differs by game mode. Detailed schema is specified in the `feat/goal-tracker` plan when that brick is built.
+Unified, discriminated `Goal` table + dependency DAG + grouping + templates. Types: SKILL_LEVEL, SKILL_XP, TOTAL_LEVEL, TOTAL_XP/EHP/EHB, BOSS_KC, CLUE_COUNT, CLOG_SLOTS, CLOG_ITEM, CA_POINTS/CA_TIER/CA_TASK, DIARY, QUEST, ITEM_QTY, MANUAL. Dependencies as `GoalDependency{goal_id, requires_goal_id, kind}`. Goals belong to a **claimed account** (owner verified by account-hash); the prereq graph + planning logic are **account-type-aware** — an ironman must self-acquire where a main can buy, so the optimal path differs by game mode. Detailed schema is specified in the `feat/goal-tracker` plan; the prerequisite-graph **evaluation** (Kleene three-valued unlock/prereq/next-step logic over the KG) is the `feat/goal-engine` brick, designed in the engine↔advisor contract and KG schema v1 and built on a hand-authored KG fixture before ingest exists.
 
 ## 5. Visual design language
 
@@ -70,7 +70,9 @@ One feature branch + PR each. Detailed scope/acceptance lives in each brick's pl
 | `feat/account-search` | Search any username → live **public mirror** (first public feature) | todo | — |
 | `feat/store` | Multi-account state (SQLite → Postgres) | todo | — |
 | `feat/clog-panel` · `feat/quests-diaries-cas` | Deep panels (populated for claimed accounts) | todo | — |
-| `feat/goal-tracker` · `feat/goal-engine` | The differentiator — account-type-aware goal-DAG | todo | — |
+| `feat/goal-engine` | The differentiator's brain — deterministic engine over a hand-authored KG fixture (Result envelope + Kleene + cards). **Design:** engine↔advisor contract (`docs/superpowers/specs/2026-06-15-engine-advisor-contract-design.md`) + KG schema v1 (`research/kg-schema-v1.md`). **Data:** the source datasets in `data/*.json` (the engine runs on a KG fixture for now, not these directly). | in progress | (this plan) |
+| `feat/goal-tracker` | Per-account STATE layer: the goal-DAG DDL (§9 of the contract — `goal`/`account_progress`, two-writer rule) + tracker UI. Inherits the engine's `Result`/card shapes. | todo | — |
+| `feat/kg-ingest` | **Separate brick:** the data pipeline that builds the real KG (`data/*.json` → `node`/`edge`/`condition_*` per KG schema v1) which the engine's `KGStore` loads. `feat/goal-engine` ships first on a hand-authored fixture and does NOT block on this. | todo | — |
 | `feat/runelite-plugin` | Java sync → `/sync`: deep-data shipper **+ account claim/auth** | todo | — |
 | `feat/hosting` | Deploy to the real host + domain + cache / rate-limit hardening | todo | — |
 
@@ -97,7 +99,7 @@ One feature branch + PR each. Detailed scope/acceptance lives in each brick's pl
 ## 9. Open decisions
 
 Resolve here (and in the relevant brick's plan) before building that brick:
-- Prerequisite graph: curated/opinionated path vs neutral graph the user orders.
+- ~~Prerequisite graph: curated/opinionated path vs neutral graph the user orders.~~ **Resolved** (KG schema v1 + contract §13.1): a **neutral facts graph** is the source of truth; the engine never auto-picks a route — it returns all branches as choices, with a crude `fewest_unmet_leaves` efficiency hint. Curated orderings are an optional opinion overlay that must be a valid topo order of the facts graph.
 - Project/milestone roll-up: equal-weight vs EHP/EHB-weighted.
 - Google Sheet role: one-time import (seed the author's DAG) vs ongoing sync.
 - **Storage:** SQLite (dev) → Postgres (hosted multi-account)? Confirm the migration point.
