@@ -17,4 +17,5 @@ dependencies = [
     "httpx",
     "fastapi",
     "uvicorn",
+    "networkx",
 ]
