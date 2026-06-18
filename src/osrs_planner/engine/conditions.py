@@ -30,6 +30,25 @@ def _done_membership(family: str, ref_node: str, state: AccountState) -> Tri:
     return Tri.UNKNOWN
 
 
+def _ordered_state(family: str, ref_node: str, required: str,
+                   observed: dict, state: AccountState) -> Tri:
+    """3-state ordered comparison via QUEST_STATE_ORDER (reused for quest + diary).
+
+    Satisfied iff order[current] >= order[required]. Absent value:
+      family observable -> treat as 'not_started' (order 0) = real comparison;
+      family unobservable -> UNKNOWN.
+    """
+    have = observed.get(ref_node)
+    if have is None:
+        # D6: an absent value is a real not_started only if the family is observed
+        # (or manually asserted); otherwise it is genuinely UNKNOWN.
+        if family_is_observed(family, state, manually_asserted=False):
+            have = "not_started"
+        else:
+            return Tri.UNKNOWN
+    return from_bool(QUEST_STATE_ORDER[have] >= QUEST_STATE_ORDER[required])
+
+
 def atom_satisfied(atom: ConditionAtom, state: AccountState, kg: KGStore) -> Tri:
     at = atom.atom_type
 
@@ -63,6 +82,14 @@ def atom_satisfied(atom: ConditionAtom, state: AccountState, kg: KGStore) -> Tri
 
     if at is AtomType.COMBAT_ACHIEVEMENT:
         return _done_membership("combat_achievement", atom.ref_node, state)
+
+    if at is AtomType.QUEST:
+        return _ordered_state("quest", atom.ref_node, atom.data["state"],
+                              state.quest_state, state)
+
+    if at is AtomType.ACHIEVEMENT_DIARY:
+        return _ordered_state("achievement_diary", atom.ref_node, atom.data["state"],
+                              state.diary_state, state)
 
     raise NotImplementedError(f"atom_satisfied: {at!r} not implemented")
 

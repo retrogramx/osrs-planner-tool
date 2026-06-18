@@ -106,3 +106,47 @@ def test_combat_achievement_atom_binary_in_done():
     assert atom_satisfied(atom, done, kg) is Tri.TRUE
     assert atom_satisfied(atom, absent, kg) is Tri.UNKNOWN
     assert atom_satisfied(atom, observed, kg) is Tri.FALSE
+
+
+def test_quest_atom_ordered_state_in_progress_req_met_by_completed():
+    kg = _store(nodes=[Node(id="quest:dragon-slayer-i", kind=NodeKind.QUEST,
+                            name="Dragon Slayer I", slug="dragon-slayer-i")])
+    needs_completed = ConditionAtom(atom_type=AtomType.QUEST, ref_node="quest:dragon-slayer-i",
+                                    data={"state": "completed"})
+    needs_in_progress = ConditionAtom(atom_type=AtomType.QUEST, ref_node="quest:dragon-slayer-i",
+                                      data={"state": "in_progress"})
+
+    completed = AccountState(mode="normal", quest_state={"quest:dragon-slayer-i": "completed"})
+    in_progress = AccountState(mode="normal", quest_state={"quest:dragon-slayer-i": "in_progress"})
+
+    # completed satisfies a 'completed' requirement
+    assert atom_satisfied(needs_completed, completed, kg) is Tri.TRUE
+    # in_progress does NOT satisfy a 'completed' requirement (ordered <)
+    assert atom_satisfied(needs_completed, in_progress, kg) is Tri.FALSE
+    # an 'in_progress' requirement is met by BOTH in_progress and completed (ordered >=)
+    assert atom_satisfied(needs_in_progress, in_progress, kg) is Tri.TRUE
+    assert atom_satisfied(needs_in_progress, completed, kg) is Tri.TRUE
+
+
+def test_quest_atom_unobservable_absent_is_unknown():
+    kg = _store(nodes=[Node(id="quest:cooks-assistant", kind=NodeKind.QUEST,
+                            name="Cook's Assistant", slug="cooks-assistant")])
+    atom = ConditionAtom(atom_type=AtomType.QUEST, ref_node="quest:cooks-assistant",
+                         data={"state": "completed"})
+    # quests are NOT on the Hiscores -> absent + unobservable -> UNKNOWN
+    assert atom_satisfied(atom, AccountState(mode="normal"), kg) is Tri.UNKNOWN
+    # when observed (plugin), absence resolves to not_started -> real FALSE
+    observed = AccountState(mode="normal", observable_families={"quest"})
+    assert atom_satisfied(atom, observed, kg) is Tri.FALSE
+
+
+def test_achievement_diary_atom_ordered_and_unobservable():
+    kg = _store(nodes=[Node(id="diary:varrock:hard", kind=NodeKind.DIARY,
+                            name="Varrock Hard Diary", slug="varrock:hard")])
+    atom = ConditionAtom(atom_type=AtomType.ACHIEVEMENT_DIARY, ref_node="diary:varrock:hard",
+                         data={"state": "completed"})
+    done = AccountState(mode="normal", diary_state={"diary:varrock:hard": "completed"})
+    partial = AccountState(mode="normal", diary_state={"diary:varrock:hard": "in_progress"})
+    assert atom_satisfied(atom, done, kg) is Tri.TRUE
+    assert atom_satisfied(atom, partial, kg) is Tri.FALSE
+    assert atom_satisfied(atom, AccountState(mode="normal"), kg) is Tri.UNKNOWN  # not on Hiscores
