@@ -1,0 +1,1446 @@
+{
+  "_provenance": {
+    "domain": "ironman_money_making",
+    "source_urls": [
+      "https://oldschool.runescape.wiki/w/Ironman_money_making_guide",
+      "https://oldschool.runescape.wiki/w/Ironman_money_making_guide?action=raw"
+    ],
+    "source_query": null,
+    "accessed": "2026-06-17T00:00:00Z",
+    "license": "CC BY-NC-SA 3.0",
+    "extraction_method": "agent",
+    "raw_files": [
+      "data/raw/ironman_money_making_guide_raw.txt"
+    ],
+    "record_count": 49,
+    "completeness": {
+      "bounded_by": "OSRS Wiki Ironman_money_making_guide: 39 enumerable money-making table rows (Recommended 20 / Low requirements 13 / High requirements 6) form the bounded universe; prose sections (Early, Mid-Late, Selling to shops, Treasure Trails) add further non-enumerable methods captured as additional records.",
+      "universe_count": 39,
+      "records_count": 49,
+      "known_missing": [
+        "BOUNDED UNIVERSE STATUS: all 39 enumerable table rows (Recommended 20 / Low 13 / High 6) are captured -> ZERO bounded-universe gap. Items below are clarifications/informational, not dropped methods.",
+        "Clue casket GE-value column rendered values (beginner 3,220.01 / easy 33,356.20 / medium 137,453.09 / hard 133,042.09 / elite 288,711.51 / master 726,079.46) captured in the Treasure Trails record's outputs as informational/main-only; not iron-realizable (GE).",
+        "Clue scroll SOURCE drop-rate table (Common Sources of Clue Scrolls: Puro-Puro implings, H.A.M. Members, Scurrius, Jelly, Chambers of Xeric, Dorgesh-Kaan/Aldarin/Rogues' Castle chests, Corrupted Gauntlet, crabs, guards, Sarachnis, Barracuda salvage) is a clue-acquisition reference, not a money method; rates summarized in Treasure Trails record account_note rather than as separate records.",
+        "Casket HA-value cells use wiki {{Average drop value}} templates; rendered HA figures captured from WebFetch snapshot (price-volatile)."
+      ]
+    },
+    "domain_stats": {
+      "table_data_rows": {
+        "recommended": 20,
+        "low_requirements": 13,
+        "high_requirements": 6,
+        "total_table_rows": 39
+      },
+      "records_by_stage": {
+        "early": 16,
+        "mid": 18,
+        "late": 15
+      },
+      "records_by_realization_channel": {
+        "coins": 7,
+        "mixed": 12,
+        "shop": 13,
+        "high_alch": 17
+      },
+      "excluded_count": 0,
+      "ge_dependent_excluded": 0,
+      "note_table_vs_record_count": "Several table rows are merged with their Early/Mid-Late prose mentions into a single record (e.g. Wintertodt appears in prose + Recommended table; eclipse red, steel platebodies, agility pyramid, selling cats appear in both Early prose and Low table). Records also include prose-only methods with no table row. Hence record_count != raw table-row count."
+    },
+    "fix_note": "P1 gate fix (2026-06-17): added audience='ironman', pricing_basis (derived from realization_channel: coins/high_alch/shop/mixed identity), and requires_ge=false to all 49 records; corrected one out-of-enum value_basis 'mixed' -> 'store' on the steel platebodies record (fixed per-item shop/high-alch prices). No new fetches; no records added/removed."
+  },
+  "records": [
+    {
+      "method": "Stronghold of Security (loot chests)",
+      "stage": "early",
+      "gp_hr": null,
+      "requirements": {
+        "skills": {},
+        "quests": [],
+        "items": [
+          "food to survive high-level monster attacks"
+        ]
+      },
+      "realization_channel": "coins",
+      "outputs": {
+        "gold": 10000,
+        "note": "one-time 10,000 coins reward; not hourly"
+      },
+      "risk": "high-level monsters in dungeon; run past them",
+      "account_note": "Earliest starting cash available to ALL account types (main/iron/uim, members & f2p). Direct coins, iron-realizable.",
+      "source_section": "Early Money Making (prose)",
+      "value_basis": "value",
+      "value_note": "Fixed one-time 10,000 coins. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "coins",
+      "requires_ge": false
+    },
+    {
+      "method": "Pickpocketing men and women in Lumbridge (early Thieving)",
+      "stage": "early",
+      "gp_hr": null,
+      "requirements": {
+        "skills": {},
+        "quests": [],
+        "items": []
+      },
+      "realization_channel": "coins",
+      "outputs": {
+        "gold": "small amounts (direct coins)",
+        "xp": "Thieving"
+      },
+      "risk": null,
+      "account_note": "Trainable immediately; quickest way to accrue small gold; levels Thieving toward blackjacking / stealing valuables. Direct coins, iron-realizable.",
+      "source_section": "Early Money Making (prose)",
+      "value_basis": "value",
+      "value_note": "Qualitative 'small amounts'; no hourly given. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "coins",
+      "requires_ge": false
+    },
+    {
+      "method": "Wintertodt (early)",
+      "stage": "early",
+      "gp_hr": null,
+      "requirements": {
+        "skills": {
+          "Firemaking": 50
+        },
+        "quests": [],
+        "items": []
+      },
+      "realization_channel": "mixed",
+      "outputs": {
+        "gold": "cash",
+        "xp": "Firemaking",
+        "resources": "skilling supplies (no food/potions required)"
+      },
+      "risk": null,
+      "account_note": "Early game boss generating skilling supplies and cash without food/potions. Mixed (gold + XP + resources); iron-realizable. See Recommended-table Wintertodt row for hourly figures.",
+      "source_section": "Early Money Making (prose)",
+      "value_basis": "value",
+      "value_note": "Qualitative in prose; hourly profit quantified in Recommended table. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "mixed",
+      "requires_ge": false
+    },
+    {
+      "method": "Selling cats for death runes (West Ardougne)",
+      "stage": "early",
+      "gp_hr": 13300,
+      "requirements": {
+        "skills": {},
+        "quests": [
+          "Gertrude's Cat",
+          "Easy Ardougne Diary (for 200 death runes; 100 before)"
+        ],
+        "items": [
+          "kittens",
+          "9 fish per kitten"
+        ]
+      },
+      "realization_channel": "mixed",
+      "outputs": {
+        "gold": "~21,600 coins worth of death runes every few hours if sold to Aubury (Varrock)",
+        "resources": "200 death runes per cat (100 pre-diary)",
+        "value_if_kept": "36,000 coins saved if death runes used rather than bought"
+      },
+      "risk": null,
+      "account_note": "Death runes either sold to Aubury (coins) or kept as runes (value saved). 'mixed' = coins OR resource value. Iron-realizable (shop sale to Aubury / self-use). Also appears in Low-requirements table at 13,300 gp/hr.",
+      "source_section": "Early Money Making (prose) + Low requirements table",
+      "value_basis": "value",
+      "value_note": "13,300 gp/hr equiv assumes runes valued at 200 coins each (saved cost). gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "mixed",
+      "requires_ge": false
+    },
+    {
+      "method": "Picking up ground spawns and selling to specialty/general stores (general)",
+      "stage": "early",
+      "gp_hr": null,
+      "requirements": {
+        "skills": {},
+        "quests": [],
+        "items": []
+      },
+      "realization_channel": "shop",
+      "outputs": {
+        "gold": "near high-alch value per item from shops"
+      },
+      "risk": null,
+      "account_note": "Ground spawns picked up via world-hopping, sold to specialty shops or general stores (e.g. Pollnivneach general store buys near high-alch value). Shop channel, iron-realizable. Sub-spawns below.",
+      "source_section": "Early Money Making (prose)",
+      "value_basis": "store",
+      "value_note": "Near high-alch value at shops; qualitative. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "shop",
+      "requires_ge": false
+    },
+    {
+      "method": "Selling Eclipse red (Varlamore) at Moonrise Wines",
+      "stage": "early",
+      "gp_hr": 280000,
+      "requirements": {
+        "skills": {},
+        "quests": [
+          "Children of the Sun"
+        ],
+        "items": []
+      },
+      "realization_channel": "shop",
+      "outputs": {
+        "gold": "700 coins per bottle of eclipse red wine; ~400 wines/hr"
+      },
+      "risk": null,
+      "account_note": "Eclipse red ground-spawn in Guildmaster Apatura's quarters (Hunter Guild; no Hunter req for spawn or bank chest). Sold to Moonrise Wines at fixed 700gp regardless of stock. Shop channel, iron-realizable. Also Low-requirements table 'Gathering eclipse red' at 280,000 gp/hr.",
+      "source_section": "Early Money Making (prose) + Low requirements table",
+      "value_basis": "store",
+      "value_note": "700 coins/bottle fixed shop price; ~400/hr assumed. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "shop",
+      "requires_ge": false
+    },
+    {
+      "method": "Collecting steel platebodies (Wilderness) and selling to Horvik / general store / high-alch",
+      "stage": "early",
+      "gp_hr": 128000,
+      "requirements": {
+        "skills": {},
+        "quests": [],
+        "items": [
+          "looting bag (optional)"
+        ]
+      },
+      "realization_channel": "mixed",
+      "outputs": {
+        "gold": "general store 800; Horvik's Armour Shop 1,200; high-alch 1,200 per steel platebody",
+        "note": "Lava Maze level 40-45 Wilderness also has staff of earth spawn"
+      },
+      "risk": "Wilderness (lvl 40-45 Lava Maze); player killers; not recommended for HCIM; UIM only viable very early",
+      "account_note": "Steel platebody spawn in Lava Maze. Realized via general store/Horvik (shop) OR high-alch -> mixed channels. Iron-realizable. Safer alt: steel platelegs in Eastern Ruins (lvl 25-28 Wild): general store 400 / Louie's 650 / high-alch 600. Lower-risk alts: bronze chainbodies (Dwarven Mines) or iron swords (Briget's) make <20,000 gp/hr. UIM badge: Maybe. Also Low-requirements table 'Collecting steel platebodies' 128,000 gp/hr.",
+      "source_section": "Early Money Making (prose) + Low requirements table",
+      "value_basis": "store",
+      "value_note": "Per-item shop/alch prices fixed; 128,000 gp/hr aggregate. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "mixed",
+      "requires_ge": false
+    },
+    {
+      "method": "Picking up ruby rings (Varrock west bank) and high-alching",
+      "stage": "mid",
+      "gp_hr": 400000,
+      "requirements": {
+        "skills": {
+          "Magic": 55
+        },
+        "quests": [
+          "Crack the Clue III"
+        ],
+        "items": [
+          "fire/nature runes for High Level Alchemy"
+        ]
+      },
+      "realization_channel": "high_alch",
+      "outputs": {
+        "gold": "from high-alching ruby rings",
+        "xp": "22,000 Magic/hr"
+      },
+      "risk": null,
+      "account_note": "Ruby ring spawn after Crack the Clue III; respawn ~240s so profit depends heavily on competition; hourly includes time to high-alch the rings. Also sellable to Grum (Varrock west bank) per prose. high_alch channel, iron-realizable. Recommended table top entry.",
+      "source_section": "Recommended Methods table (+ Early prose 'Ruby rings to Grum')",
+      "value_basis": "value",
+      "value_note": "400,000 gp/hr competition-dependent; includes alch time. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "high_alch",
+      "requires_ge": false
+    },
+    {
+      "method": "Agility Pyramid",
+      "stage": "early",
+      "gp_hr": 100000,
+      "requirements": {
+        "skills": {
+          "Agility": 30
+        },
+        "quests": [],
+        "items": [
+          "food",
+          "waterskins (Shantay Pass / Pollnivneach)"
+        ]
+      },
+      "realization_channel": "coins",
+      "outputs": {
+        "gold": "10,000 coins per successful lap (turn pyramid tops to Simon Templeton); up to ~200,000 coins/hr",
+        "xp": "Agility"
+      },
+      "risk": "desert heat (need waterskins)",
+      "account_note": "Unlocks at 30 Agility but 50-70+ recommended for success rate. Direct coins from Simon Templeton, iron-realizable. UIM badge: Yes (no banking needed, reliable early method). Listed 100,000+ gp/hr (up to ~200k). Both Early prose and Low-requirements table.",
+      "source_section": "Early Money Making (prose) + Low requirements table",
+      "value_basis": "value",
+      "value_note": "10,000 coins/lap fixed; 100,000-200,000 gp/hr range. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "coins",
+      "requires_ge": false
+    },
+    {
+      "method": "Selling items to Martin Thwait (Rogues' Den) at High Alchemy price",
+      "stage": "early",
+      "gp_hr": null,
+      "requirements": {
+        "skills": {
+          "Agility": 50,
+          "Thieving": 50
+        },
+        "quests": [],
+        "items": [
+          "bulk unwanted items"
+        ]
+      },
+      "realization_channel": "shop",
+      "outputs": {
+        "gold": "High Alchemy price per item via Martin Thwait"
+      },
+      "risk": null,
+      "account_note": "Sells unwanted bulk items (lenses, unstrung bows, skilling products) at high-alch price without runes. Alternatives for many items at once: Void Knight General Store, Jennifer's General Supplies (best given low change value). Shop channel, iron-realizable.",
+      "source_section": "Early Money Making (prose) + Selling Items to Shops (prose)",
+      "value_basis": "store",
+      "value_note": "High-alch-equivalent shop price; qualitative. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "shop",
+      "requires_ge": false
+    },
+    {
+      "method": "High Level Alchemy (convert items to coins) - primary mid-late income",
+      "stage": "mid",
+      "gp_hr": null,
+      "requirements": {
+        "skills": {
+          "Magic": 55
+        },
+        "quests": [],
+        "items": [
+          "fire runes",
+          "nature runes"
+        ]
+      },
+      "realization_channel": "high_alch",
+      "outputs": {
+        "gold": "high-alch value of items minus rune cost (~200 coins / 5 fire + 1 nature)",
+        "xp": "Magic"
+      },
+      "risk": null,
+      "account_note": "Most reliable mid-late conversion of items to coins. Profitable if high-alch value > ~200 coins (rune shop cost). Notable alchables: adamant/rune/dragon equipment, elemental battlestaves, dragonhide equipment, rune & dragon javelin tips, onyx bolt tips (-> onyx bolts (e)), rune arrows, jewellery, high-level Fletching (yew longbows). Most efficient alched during other activities (Agility, travel, Sailing). high_alch channel, iron-realizable.",
+      "source_section": "Mid-Late Game: High Alchemy (prose)",
+      "value_basis": "value",
+      "value_note": "Per-item; profit threshold ~200 coins rune cost. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "high_alch",
+      "requires_ge": false
+    },
+    {
+      "method": "Skilling for alchables (Crafting / Smithing / Hallowed Sepulchre & Wilderness Agility Course / Runecraft / Fletching / Sailing)",
+      "stage": "mid",
+      "gp_hr": null,
+      "requirements": {
+        "skills": {},
+        "quests": [],
+        "items": []
+      },
+      "realization_channel": "mixed",
+      "outputs": {
+        "gold": "via high-alch or shop sale of products",
+        "xp": "Crafting/Smithing/Agility/Runecraft/Fletching/Sailing",
+        "resources": "alchables, runes, gold"
+      },
+      "risk": null,
+      "account_note": "Umbrella prose: Crafting (gems->jewellery, battlestaves, dragonhide armour); ores/bars alched or smithed then alched; Hallowed Sepulchre & Wilderness Agility Course reward large alchable+gold quantities; Runecraft at runic altars/Ourania/Guardians of the Rift -> runes sold to shops; Fletching (bows/shields) using Miscellania/Vale Totems flax & logs; Sailing via Shipwreck Salvaging (good profit after 53). Mixed channel; iron-realizable. Specific rows captured separately (Hallowed Sepulchre, ZMI, Battlestaves).",
+      "source_section": "Mid-Late Game: Skilling (prose)",
+      "value_basis": "value",
+      "value_note": "Umbrella; specific hourly figures in tables. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "mixed",
+      "requires_ge": false
+    },
+    {
+      "method": "PVM for alchables (Slayer tasks, bosses & raids)",
+      "stage": "mid",
+      "gp_hr": null,
+      "requirements": {
+        "skills": {},
+        "quests": [],
+        "items": []
+      },
+      "realization_channel": "high_alch",
+      "outputs": {
+        "gold": "high-alch value of dropped alchables",
+        "resources": "drop-table loot (aggregate)"
+      },
+      "risk": "combat",
+      "account_note": "High-level Slayer tasks and bosses/raids have lucrative drop tables; many irons earn coins while farming rare drops. Realized via high-alch (NOT GE for irons). Outputs include 'drop table' aggregate pseudo-items (flagged aggregate). Iron-realizable. Specific bosses (Vorkath, Green dragons, Corrupted Gauntlet, Zombie pirates, Rune dragons) captured separately.",
+      "source_section": "Mid-Late Game: PVM (prose)",
+      "value_basis": "value",
+      "value_note": "Per drop table; aggregate. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "high_alch",
+      "requires_ge": false
+    },
+    {
+      "method": "Selling extra runes to shops (TzHaar / Ali Morrisane)",
+      "stage": "mid",
+      "gp_hr": null,
+      "requirements": {
+        "skills": {},
+        "quests": [],
+        "items": [
+          "extra runes (Zeah runecrafting, Barrows)"
+        ]
+      },
+      "realization_channel": "shop",
+      "outputs": {
+        "gold": "coins from Ali's Discount Wares (fixed prices, no overstock decrease)",
+        "resources": "Tokkul from TzHaar-Mej-Roh's Rune Store"
+      },
+      "risk": null,
+      "account_note": "Extra runes (Zeah RC, Barrows) sold to TzHaar shop for Tokkul or to Ali's Discount Wares / Ali Morrisane for coins at fixed prices. Shop channel, iron-realizable.",
+      "source_section": "Mid-Late Game: Selling Items to Shops (prose)",
+      "value_basis": "store",
+      "value_note": "Fixed shop prices. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "shop",
+      "requires_ge": false
+    },
+    {
+      "method": "Treasure Trails / Clue scrolls (clue casket rewards)",
+      "stage": "mid",
+      "gp_hr": null,
+      "requirements": {
+        "skills": {},
+        "quests": [
+          "X Marks the Spot (for scroll boxes)"
+        ],
+        "items": [
+          "STASH units, teleports for efficiency"
+        ]
+      },
+      "realization_channel": "high_alch",
+      "outputs": {
+        "gold_high_alch_per_casket": {
+          "beginner": "2 x avg(beginner) ~= 542.10 (HA value)",
+          "easy": "3 x avg(easy) ~= 1,694.08 (HA value)",
+          "medium": "4 x avg(medium) ~= 7,586.64 (HA value)",
+          "hard": "5 x avg(hard) ~= 59,112.36 (HA value)",
+          "elite": "5 x avg(elite) ~= 71,285.60 (HA value)",
+          "master": "6 x avg(master) ~= 156,926.37 (HA value)"
+        },
+        "ge_value_per_casket_NOT_iron_realizable": {
+          "beginner": 3220.01,
+          "easy": 33356.2,
+          "medium": 137453.09,
+          "hard": 133042.09,
+          "elite": 288711.51,
+          "master": 726079.46
+        },
+        "resources": "alchables, useful runes, unique items (Ranger boots, Blessed d'hide); clue 'reward casket' is an aggregate pseudo-item (flagged aggregate)"
+      },
+      "risk": null,
+      "account_note": "Iron-realizable value = High-alchemy column only (high_alch channel). GE Value column is GE-dependent and NOT realizable for irons (informational; mains could use GE). Rare/cosmetic non-alch items can fill Death's Coffer. Clues passively obtained via Slayer/Thieving/Fishing/Woodcutting; Combat Achievement tiers increase clue drop rates. Excludes value of master clues from lower caskets. Outputs are aggregate drop tables (flagged).",
+      "source_section": "Alternative Money Making: Treasure Trails (prose + casket table)",
+      "value_basis": "value",
+      "value_note": "HA values iron-realizable; GE values main-only and price-volatile. Snapshot from rendered page. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "high_alch",
+      "requires_ge": false
+    },
+    {
+      "method": "Wintertodt (Recommended table)",
+      "stage": "early",
+      "gp_hr": 30000,
+      "requirements": {
+        "skills": {
+          "Woodcutting": 50,
+          "Firemaking": 50
+        },
+        "quests": [],
+        "items": []
+      },
+      "realization_channel": "mixed",
+      "outputs": {
+        "gold": 30000,
+        "xp": "300,000 Firemaking, 20,000 Woodcutting",
+        "resources": "Various logs, gems, ores, herbs, seeds, fish"
+      },
+      "risk": null,
+      "account_note": "Absolute hourly profit low; not efficient to continue past target Firemaking level. Mixed (gold + XP + resources); iron-realizable.",
+      "source_section": "Recommended Methods table",
+      "value_basis": "value",
+      "value_note": "30,000 gp/hr. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "mixed",
+      "requires_ge": false
+    },
+    {
+      "method": "Blackjacking (50 Thieving)",
+      "stage": "mid",
+      "gp_hr": 127000,
+      "requirements": {
+        "skills": {
+          "Thieving": 45
+        },
+        "quests": [
+          "The Feud"
+        ],
+        "items": [
+          "Rogue equipment"
+        ]
+      },
+      "realization_channel": "coins",
+      "outputs": {
+        "gold": "direct coins from pickpocketing",
+        "xp": "103,000 Thieving"
+      },
+      "risk": null,
+      "account_note": "Not macroefficient for Thieving; intense; efficient routes stop after gold for Desert Treasure / efficient battlestaves. Direct coins, iron-realizable.",
+      "source_section": "Recommended Methods table",
+      "value_basis": "value",
+      "value_note": "127,000 gp/hr. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "coins",
+      "requires_ge": false
+    },
+    {
+      "method": "Blackjacking (99 Thieving)",
+      "stage": "late",
+      "gp_hr": 220000,
+      "requirements": {
+        "skills": {
+          "Thieving": 45
+        },
+        "quests": [
+          "The Feud"
+        ],
+        "items": [
+          "Rogue equipment"
+        ]
+      },
+      "realization_channel": "coins",
+      "outputs": {
+        "gold": "direct coins from pickpocketing",
+        "xp": "265,000 Thieving"
+      },
+      "risk": null,
+      "account_note": "Same caveats as 50 Thieving row (intense, not macroefficient). Direct coins, iron-realizable.",
+      "source_section": "Recommended Methods table",
+      "value_basis": "value",
+      "value_note": "220,000 gp/hr. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "coins",
+      "requires_ge": false
+    },
+    {
+      "method": "Battlestaves (shop-bought, crafted into elemental staves then alched)",
+      "stage": "mid",
+      "gp_hr": 928000,
+      "requirements": {
+        "skills": {},
+        "quests": [
+          "Desert Treasure I",
+          "Lunar Diplomacy"
+        ],
+        "items": [
+          "air/earth orbs",
+          "battlestaves from Magic Guild Store"
+        ]
+      },
+      "realization_channel": "high_alch",
+      "outputs": {
+        "gold": "high-alch value of elemental battlestaves",
+        "xp": "96,000 Crafting"
+      },
+      "risk": null,
+      "account_note": "Buy 5 battlestaves/world from Magic Guild Store (shop, iron-realizable input), add air orbs (via Superglass Make/glassblowing during normal Crafting), then high-alch. Rate assumes air orbs, 5 staves/world, glass time discounted. high_alch channel, iron-realizable.",
+      "source_section": "Recommended Methods table",
+      "value_basis": "value",
+      "value_note": "928,000 gp/hr, assumption-heavy. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "high_alch",
+      "requires_ge": false
+    },
+    {
+      "method": "Battlestaves (monster drops, crafted into elemental staves then alched)",
+      "stage": "mid",
+      "gp_hr": 2057000,
+      "requirements": {
+        "skills": {},
+        "quests": [
+          "Desert Treasure I",
+          "Lunar Diplomacy"
+        ],
+        "items": [
+          "air/earth orbs",
+          "battlestaves from monster drops"
+        ]
+      },
+      "realization_channel": "high_alch",
+      "outputs": {
+        "gold": "high-alch value of elemental battlestaves",
+        "xp": "96,000 Crafting"
+      },
+      "risk": null,
+      "account_note": "Same processing as shop-bought row but battlestaff input from monster drops (free input). high_alch channel, iron-realizable.",
+      "source_section": "Recommended Methods table",
+      "value_basis": "value",
+      "value_note": "2,057,000 gp/hr. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "high_alch",
+      "requires_ge": false
+    },
+    {
+      "method": "Green dragons (lance setup)",
+      "stage": "mid",
+      "gp_hr": 496000,
+      "requirements": {
+        "skills": {},
+        "quests": [
+          "A Kingdom Divided (for thralls)"
+        ],
+        "items": [
+          "Dragon defender",
+          "Berserker ring (i)",
+          "Dragon hunter lance (implied)"
+        ]
+      },
+      "realization_channel": "high_alch",
+      "outputs": {
+        "gold": "alchables",
+        "xp": "96,000 Melee, 175,000 Prayer",
+        "resources": "320 dragon bones, 9 Ensouled Dragon heads"
+      },
+      "risk": "Wilderness green dragons (implied PK risk)",
+      "account_note": "Worthwhile only before Piety unlock (big DPS) or after all upgrades (max efficiency). Realized via high-alch of dragonhide/bones-derived items + Prayer XP. high_alch channel, iron-realizable. Dragon bones aggregate resource.",
+      "source_section": "Recommended Methods table",
+      "value_basis": "value",
+      "value_note": "496,000 gp/hr. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "high_alch",
+      "requires_ge": false
+    },
+    {
+      "method": "Green dragons (minimum gear)",
+      "stage": "mid",
+      "gp_hr": 265000,
+      "requirements": {
+        "skills": {},
+        "quests": [
+          "A Kingdom Divided (for thralls)"
+        ],
+        "items": [
+          "Dragon defender",
+          "Berserker ring (i)"
+        ]
+      },
+      "realization_channel": "high_alch",
+      "outputs": {
+        "gold": "alchables",
+        "xp": "54,000 Melee, 98,000 Prayer",
+        "resources": "180 dragon bones, 5 Ensouled Dragon heads"
+      },
+      "risk": "Wilderness green dragons (implied PK risk)",
+      "account_note": "Lower-gear variant of green dragons. high_alch channel, iron-realizable.",
+      "source_section": "Recommended Methods table",
+      "value_basis": "value",
+      "value_note": "265,000 gp/hr. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "high_alch",
+      "requires_ge": false
+    },
+    {
+      "method": "Hallowed Sepulchre (Floor 3, levels 72-82)",
+      "stage": "mid",
+      "gp_hr": 94000,
+      "requirements": {
+        "skills": {
+          "Agility": 72
+        },
+        "quests": [
+          "Sins of the Father"
+        ],
+        "items": []
+      },
+      "realization_channel": "mixed",
+      "outputs": {
+        "gold": "coins + alchables from chests",
+        "xp": "63,700 Agility, 2,100 Thieving",
+        "resources": "~3.5 Prayer potions, Runes, 40 Hallowed marks"
+      },
+      "risk": null,
+      "account_note": "Floor 3 chests looted for drops or to unlock Hallowed equipment for floors 4/5; recommend skipping all but fastest chests for XP. Mixed (gold + XP + resources); iron-realizable.",
+      "source_section": "Recommended Methods table",
+      "value_basis": "value",
+      "value_note": "94,000 gp/hr. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "mixed",
+      "requires_ge": false
+    },
+    {
+      "method": "Hallowed Sepulchre (Floor 4, levels 82-92)",
+      "stage": "late",
+      "gp_hr": 181000,
+      "requirements": {
+        "skills": {
+          "Agility": 82
+        },
+        "quests": [
+          "Sins of the Father"
+        ],
+        "items": [
+          "planks",
+          "nails",
+          "vampyre dust (certain chests)"
+        ]
+      },
+      "realization_channel": "mixed",
+      "outputs": {
+        "gold": "coins + alchables from chests",
+        "xp": "72,900 Agility, 2,500 Thieving (plus Construction/Magic/Prayer)",
+        "resources": "~10 Prayer potions, Runes, 200 Hallowed marks"
+      },
+      "risk": null,
+      "account_note": "Gains extra Construction/Magic/Prayer XP; requires planks/nails/vampyre dust for certain chests; idle time for zero-time activities (fletching/alching/crafting). Mixed; iron-realizable.",
+      "source_section": "Recommended Methods table",
+      "value_basis": "value",
+      "value_note": "181,000 gp/hr. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "mixed",
+      "requires_ge": false
+    },
+    {
+      "method": "Hallowed Sepulchre (Floor 5, levels 92-99)",
+      "stage": "late",
+      "gp_hr": 990000,
+      "requirements": {
+        "skills": {
+          "Agility": 92
+        },
+        "quests": [
+          "Sins of the Father"
+        ],
+        "items": [
+          "planks",
+          "nails",
+          "vampyre dust (certain chests)"
+        ]
+      },
+      "realization_channel": "mixed",
+      "outputs": {
+        "gold": "coins + high-level alchables from chests",
+        "xp": "88,200 Agility, 7,200 Thieving (plus Construction/Magic/Prayer)",
+        "resources": "~40 Prayer potions, High level runes, 230 Hallowed marks"
+      },
+      "risk": null,
+      "account_note": "Top floor; highest profit. Mixed; iron-realizable.",
+      "source_section": "Recommended Methods table",
+      "value_basis": "value",
+      "value_note": "990,000 gp/hr. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "mixed",
+      "requires_ge": false
+    },
+    {
+      "method": "Corrupted Gauntlet",
+      "stage": "late",
+      "gp_hr": 900000,
+      "requirements": {
+        "skills": {},
+        "quests": [
+          "Song of the Elves"
+        ],
+        "items": []
+      },
+      "realization_channel": "high_alch",
+      "outputs": {
+        "gold": "alchables",
+        "xp": "24,000 Combat experience",
+        "resources": "Uncut gems, runes, crystal shards, dragon arrows"
+      },
+      "risk": null,
+      "account_note": "Efficient chiefly because bow of Faerdhinen is a strong item most collect anyway; stop after a bow + six armour seeds. Realized via high-alch / direct resources; iron-realizable.",
+      "source_section": "Recommended Methods table",
+      "value_basis": "value",
+      "value_note": "900,000 gp/hr. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "high_alch",
+      "requires_ge": false
+    },
+    {
+      "method": "ZMI / Ourania Altar (banked pure essence)",
+      "stage": "late",
+      "gp_hr": 1470000,
+      "requirements": {
+        "skills": {
+          "Magic": 71
+        },
+        "quests": [
+          "Lunar Diplomacy",
+          "Sins of the Father"
+        ],
+        "items": [
+          "Raiments of the Eye",
+          "Colossal pouch",
+          "banked Pure essence (from PvM)"
+        ]
+      },
+      "realization_channel": "shop",
+      "outputs": {
+        "gold": "coins from selling runes to shops",
+        "xp": "80,000 Runecraft"
+      },
+      "risk": null,
+      "account_note": "Runes accounted as profit (sold to shops). Not efficient to do inefficient PvM just to bank essence. Shop channel, iron-realizable.",
+      "source_section": "Recommended Methods table",
+      "value_basis": "value",
+      "value_note": "1,470,000 gp/hr. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "shop",
+      "requires_ge": false
+    },
+    {
+      "method": "ZMI / Ourania Altar (1.5 Daeyalt)",
+      "stage": "late",
+      "gp_hr": 780000,
+      "requirements": {
+        "skills": {
+          "Magic": 71
+        },
+        "quests": [
+          "Lunar Diplomacy",
+          "Sins of the Father"
+        ],
+        "items": [
+          "Raiments of the Eye",
+          "Colossal pouch"
+        ]
+      },
+      "realization_channel": "shop",
+      "outputs": {
+        "gold": "coins from selling runes to shops",
+        "xp": "120,000 Runecraft"
+      },
+      "risk": null,
+      "account_note": "Daeyalt rates include time mining Daeyalt; if discounted as low-intensity, treat as banked pure essence. Shop channel, iron-realizable.",
+      "source_section": "Recommended Methods table",
+      "value_basis": "value",
+      "value_note": "780,000 gp/hr. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "shop",
+      "requires_ge": false
+    },
+    {
+      "method": "ZMI / Ourania Altar (AFK Daeyalt)",
+      "stage": "late",
+      "gp_hr": 510000,
+      "requirements": {
+        "skills": {
+          "Magic": 71
+        },
+        "quests": [
+          "Lunar Diplomacy",
+          "Sins of the Father"
+        ],
+        "items": [
+          "Raiments of the Eye",
+          "Colossal pouch"
+        ]
+      },
+      "realization_channel": "shop",
+      "outputs": {
+        "gold": "coins from selling runes to shops",
+        "xp": "90,000 Runecraft"
+      },
+      "risk": null,
+      "account_note": "AFK Daeyalt variant. Shop channel, iron-realizable.",
+      "source_section": "Recommended Methods table",
+      "value_basis": "value",
+      "value_note": "510,000 gp/hr. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "shop",
+      "requires_ge": false
+    },
+    {
+      "method": "Three Tick Gem Mining",
+      "stage": "mid",
+      "gp_hr": 165000,
+      "requirements": {
+        "skills": {
+          "Mining": null
+        },
+        "quests": [],
+        "items": [
+          "charged Amulet of glory",
+          "Shilo Village access",
+          "Medium Karamja Diary"
+        ]
+      },
+      "realization_channel": "high_alch",
+      "outputs": {
+        "gold": "from cut gems / diamonds processed to amulets (u) then alched",
+        "xp": "110,000 Mining",
+        "resources": "23,000 banked Crafting XP"
+      },
+      "risk": null,
+      "account_note": "Profit increased by processing diamonds into amulets (u) to alch (only efficient before 87 Crafting). Realized via high-alch. Iron-realizable.",
+      "source_section": "Recommended Methods table",
+      "value_basis": "value",
+      "value_note": "165,000 gp/hr. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "high_alch",
+      "requires_ge": false
+    },
+    {
+      "method": "Vorkath",
+      "stage": "late",
+      "gp_hr": 1500000,
+      "requirements": {
+        "skills": {},
+        "quests": [
+          "Dragon Slayer II"
+        ],
+        "items": [
+          "Osmumten's fang"
+        ]
+      },
+      "realization_channel": "high_alch",
+      "outputs": {
+        "gold": "alchables",
+        "xp": "26,000 Slayer; banked: 110,000 Cooking, 72,000 Prayer, 23,000 Crafting, 15,000 Fletching, 5,000 Smithing",
+        "resources": "Dragon bolts/darts/arrows, ~150 Blue dragon scales, ~18 Manta rays, ~54 Shark lures"
+      },
+      "risk": null,
+      "account_note": "Most efficient on Slayer task. Realized via high-alch of alchables + banked processing XP/resources. high_alch channel, iron-realizable.",
+      "source_section": "Recommended Methods table",
+      "value_basis": "value",
+      "value_note": "1,500,000 gp/hr. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "high_alch",
+      "requires_ge": false
+    },
+    {
+      "method": "Zombie pirates (Recommended table, with Wilderness Medium Diary)",
+      "stage": "mid",
+      "gp_hr": 650000,
+      "requirements": {
+        "skills": {
+          "Prayer": 37
+        },
+        "quests": [],
+        "items": [
+          "Wilderness Diary Medium (recommended)"
+        ]
+      },
+      "realization_channel": "mixed",
+      "outputs": {
+        "gold": "coins + alchables",
+        "xp": "25,000 Melee",
+        "resources": "~100 Blood/death/chaos/mind runes; ~210 Blighted food, ~14 Blighted super restores, ~140 Blighted ancient ice sacks; ~35 Adamant seeds, ~400 steel cannonballs, ~70 Gold ore"
+      },
+      "risk": "Wilderness (Blighted/PvP zone); bring cheaply-reclaimable/untradeable gear to minimise risk",
+      "account_note": "Without Medium Wilderness Diary drops decreased 70%. Assume ~200 kills/hr without cannon. Realized via mixed (coins + alchables + resources). Iron-realizable. Wilderness risk flagged.",
+      "source_section": "Recommended Methods table",
+      "value_basis": "value",
+      "value_note": "650,000 gp/hr at ~200 kills/hr. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "mixed",
+      "requires_ge": false
+    },
+    {
+      "method": "Processing adamantite ore (ore -> bar -> adamant sword -> high alch)",
+      "stage": "mid",
+      "gp_hr": 3150000,
+      "requirements": {
+        "skills": {
+          "Smithing": 70,
+          "Magic": 55
+        },
+        "quests": [],
+        "items": [
+          "1,200 adamantite ore (pre-banked)"
+        ]
+      },
+      "realization_channel": "high_alch",
+      "outputs": {
+        "gold": "high-alch value of adamant swords",
+        "xp": "80,000 Smithing"
+      },
+      "risk": null,
+      "account_note": "Hourly assumes 1,200 adamantite ore already banked (~1,200 high-alch casts/hr); ~225k/hr if mining 120 ore/hr. Process: adamantite ore -> adamantite bar -> adamant sword -> high alch. high_alch channel, iron-realizable.",
+      "source_section": "Recommended Methods table",
+      "value_basis": "value",
+      "value_note": "3,150,000 gp/hr assuming pre-banked ore. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "high_alch",
+      "requires_ge": false
+    },
+    {
+      "method": "Processing runite ore (ore -> bar -> rune sword -> high alch)",
+      "stage": "late",
+      "gp_hr": 15774000,
+      "requirements": {
+        "skills": {
+          "Smithing": 85,
+          "Magic": 55
+        },
+        "quests": [],
+        "items": [
+          "1,200 runite ore (pre-banked)"
+        ]
+      },
+      "realization_channel": "high_alch",
+      "outputs": {
+        "gold": "high-alch value of rune swords",
+        "xp": "104,000 Smithing"
+      },
+      "risk": null,
+      "account_note": "Hourly assumes 1,200 runite ore already banked; ~875k/hr if mining 70 ore/hr. Caveat: converting banked runite to coins may endanger Rune Dart upkeep for Toxic blowpipe. Process: runite ore -> runite bar -> rune sword -> high alch. high_alch channel, iron-realizable.",
+      "source_section": "Recommended Methods table",
+      "value_basis": "value",
+      "value_note": "15,774,000 gp/hr assuming pre-banked ore. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "high_alch",
+      "requires_ge": false
+    },
+    {
+      "method": "Cutting gems at a gem shop",
+      "stage": "early",
+      "gp_hr": 90000,
+      "requirements": {
+        "skills": {
+          "Crafting": 20
+        },
+        "quests": [],
+        "items": [
+          "coins to buy uncut gems"
+        ],
+        "note": "Crafting 27 recommended to cut emeralds"
+      },
+      "realization_channel": "shop",
+      "outputs": {
+        "gold": "profit reselling cut gems to gem shop",
+        "xp": "Crafting"
+      },
+      "risk": null,
+      "account_note": "Buy uncut gems, cut, resell cut to gem shop for profit. No Wilderness; low req; medium intensity; hop gem shops for stock. Not sustainable long periods (slow restock). UIM badge: Yes. Shop channel, iron-realizable (buy+resell to NPC shop, not GE).",
+      "source_section": "Low requirements table",
+      "value_basis": "store",
+      "value_note": "90,000 gp/hr. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "shop",
+      "requires_ge": false
+    },
+    {
+      "method": "Fletching willow shortbows",
+      "stage": "early",
+      "gp_hr": 13000,
+      "requirements": {
+        "skills": {
+          "Fletching": 35,
+          "Woodcutting": 30,
+          "Crafting": 10
+        },
+        "quests": [],
+        "items": []
+      },
+      "realization_channel": "mixed",
+      "outputs": {
+        "gold": "high-alch or general store sale of bows",
+        "xp": "Fletching, Woodcutting"
+      },
+      "risk": null,
+      "account_note": "Fletch highest available bow; high-alch or sell to general stores. Low intensity, useful, quest-relevant skills. UIM badge: Yes. Mixed (high_alch or shop). Iron-realizable.",
+      "source_section": "Low requirements table",
+      "value_basis": "value",
+      "value_note": "13,000 gp/hr. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "mixed",
+      "requires_ge": false
+    },
+    {
+      "method": "Stealing from H.A.M. Store rooms",
+      "stage": "early",
+      "gp_hr": 67000,
+      "requirements": {
+        "skills": {
+          "Thieving": 20
+        },
+        "quests": [
+          "Death to the Dorgeshuun (at least half completed)"
+        ],
+        "items": [
+          "food",
+          "rogue equipment (recommended)"
+        ]
+      },
+      "realization_channel": "mixed",
+      "outputs": {
+        "gold": "high-alch or bank loot (jewellery from chests)",
+        "xp": "Thieving",
+        "resources": "emerald rings, sapphire necklaces (save some for personal use)"
+      },
+      "risk": null,
+      "account_note": "Pickpocket guards for keys to chests with jewellery. Best low-level method for early jewellery + starting cash. Rate assumes 200 chests/hr. Full H.A.M. robes reduce kick chance in Hideout (never kicked in storeroom; rogue equipment recommended to ~double key rate). UIM badge: 'Yes with alch'. Mixed (high_alch / kept resources). Iron-realizable.",
+      "source_section": "Low requirements table",
+      "value_basis": "value",
+      "value_note": "67,000 gp/hr at 200 chests/hr. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "mixed",
+      "requires_ge": false
+    },
+    {
+      "method": "Stealing silk (Ardougne market)",
+      "stage": "early",
+      "gp_hr": 24000,
+      "requirements": {
+        "skills": {
+          "Thieving": 20
+        },
+        "quests": [],
+        "items": []
+      },
+      "realization_channel": "shop",
+      "outputs": {
+        "gold": "60 coins each sold to silk merchant after 20 min wait",
+        "xp": "Thieving"
+      },
+      "risk": null,
+      "account_note": "Steal silk from Ardougne market stalls; after 20 min sell to silk merchant for 60 coins each. Assumes 400 stolen/sold per hour. UIM badge: No. Shop channel, iron-realizable.",
+      "source_section": "Low requirements table",
+      "value_basis": "store",
+      "value_note": "24,000 gp/hr; 60 coins/silk; 400/hr. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "shop",
+      "requires_ge": false
+    },
+    {
+      "method": "Pickpocketing Wealthy citizens (distracted by Street urchins, Varlamore)",
+      "stage": "mid",
+      "gp_hr": 100000,
+      "requirements": {
+        "skills": {
+          "Thieving": 50
+        },
+        "quests": [],
+        "items": [
+          "Rogue equipment (recommended)"
+        ]
+      },
+      "realization_channel": "coins",
+      "outputs": {
+        "gold": "direct coins; 100,000+ (200,000+ with Rogue equipment)",
+        "xp": "Thieving"
+      },
+      "risk": null,
+      "account_note": "Wealthy citizens in Civitas illa Fortis, Varlamore. Rogue equipment doubles loot. Low intensity / semi-AFK. UIM badge: Yes. Direct coins, iron-realizable.",
+      "source_section": "Low requirements table",
+      "value_basis": "value",
+      "value_note": "100,000+ gp/hr (200,000+ with rogue equipment). gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "coins",
+      "requires_ge": false
+    },
+    {
+      "method": "Selling runes from Guardians of the Rift to Ali Morrisane",
+      "stage": "mid",
+      "gp_hr": 60000,
+      "requirements": {
+        "skills": {
+          "Runecraft": 27
+        },
+        "quests": [
+          "Temple of the Eye",
+          "Rogue Trader"
+        ],
+        "items": []
+      },
+      "realization_channel": "shop",
+      "outputs": {
+        "gold": "coins from Ali Morrisane's rune shop",
+        "xp": "~30,000 Runecraft",
+        "resources": "Nature, chaos, law, blood runes (also useful for magic/teleports)"
+      },
+      "risk": null,
+      "account_note": "GotR yields valuable catalytic runes sold to Ali Morrisane for coins. RC level reqs gainable via Enter the Abyss / Temple of the Eye. Increases as higher-tier catalytic runes unlock. UIM badge: Yes. Shop channel, iron-realizable.",
+      "source_section": "Low requirements table",
+      "value_basis": "store",
+      "value_note": "60,000 gp/hr, ~30,000 RC XP/hr. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "shop",
+      "requires_ge": false
+    },
+    {
+      "method": "Giants' Foundry",
+      "stage": "early",
+      "gp_hr": 92000,
+      "requirements": {
+        "skills": {
+          "Smithing": 15
+        },
+        "quests": [
+          "Sleeping Giants"
+        ],
+        "items": [
+          "bars / equipment bought from shops (bronze+iron or iron+steel)"
+        ],
+        "note": "Smithing 15 up to iron, 30 up to steel"
+      },
+      "realization_channel": "shop",
+      "outputs": {
+        "gold": "coins (depending on alloys; can profit or loss)",
+        "xp": "Smithing"
+      },
+      "risk": null,
+      "account_note": "Minigame; profit/loss depends on alloys. Cheapest bar input = claws (mithril claws from Jatizso's Weapons galore). To profit from purchased equipment: buy bronze+iron (Smithing 15) or iron+steel (Smithing 30); better moulds increase profit. UIM badge: Yes (run/teleport to Al Kharid for platelegs/plateskirts). Shop channel, iron-realizable (buy from NPC shops, smith via minigame).",
+      "source_section": "Low requirements table",
+      "value_basis": "store",
+      "value_note": "92,000 gp/hr. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "shop",
+      "requires_ge": false
+    },
+    {
+      "method": "High alching rune arrows from Last Man Standing",
+      "stage": "mid",
+      "gp_hr": 144000,
+      "requirements": {
+        "skills": {
+          "Magic": 55,
+          "Runecraft": 44
+        },
+        "quests": [],
+        "items": [
+          "staff of fire",
+          "ring of dueling"
+        ],
+        "note": "Runecraft 44 recommended to craft own nature runes"
+      },
+      "realization_channel": "high_alch",
+      "outputs": {
+        "gold": "high-alch value of rune arrows (240 coins each)",
+        "xp": "Magic"
+      },
+      "risk": null,
+      "account_note": "LMS PvP minigame, no death risk. Justine's shop sells 300 rune arrows for 3 points; high-alch for 240 each. Strategy yields 4-3 points/game. Assumes 6 LMS points + 600 self-crafted nature runes/hr -> 144,000 coins/hr (vs 72,000 if RC'ing natures, 12,000 if buying natures). Skiller alt: 350 adamant arrows/point sold to Brian (Rimmington) 50/world. UIM badge: Yes. high_alch channel, iron-realizable.",
+      "source_section": "Low requirements table",
+      "value_basis": "value",
+      "value_note": "144,000 gp/hr (assumes self-RC nature runes). gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "high_alch",
+      "requires_ge": false
+    },
+    {
+      "method": "Zombie pirates (Low-requirements table, no Wilderness Medium Diary)",
+      "stage": "early",
+      "gp_hr": 100000,
+      "requirements": {
+        "skills": {
+          "Prayer": 37
+        },
+        "quests": [],
+        "items": [
+          "Dragon scimitar + 60 Strength sufficient"
+        ]
+      },
+      "realization_channel": "mixed",
+      "outputs": {
+        "gold": "coins + alchables",
+        "xp": "Combat",
+        "resources": "runes, blighted supplies, seeds, cannonballs, gold ore (reduced 70% without diary)"
+      },
+      "risk": "Wilderness (Blighted/PvP zone)",
+      "account_note": "Without Wilderness Medium Diary drops decreased 70%. Assumes ~100 kills/hr. UIM badge: Maybe. Mixed; iron-realizable. Wilderness risk flagged. (Distinct lower-tier entry from the Recommended-table 650k row.)",
+      "source_section": "Low requirements table",
+      "value_basis": "value",
+      "value_note": "100,000 gp/hr at ~100 kills/hr. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "mixed",
+      "requires_ge": false
+    },
+    {
+      "method": "Pickpocketing Knights of Ardougne",
+      "stage": "late",
+      "gp_hr": 270000,
+      "requirements": {
+        "skills": {
+          "Thieving": 55
+        },
+        "quests": [
+          "Ardougne Diary medium tasks"
+        ],
+        "items": [
+          "Full rogue equipment"
+        ],
+        "note": "Thieving 95+ strongly recommended"
+      },
+      "realization_channel": "coins",
+      "outputs": {
+        "gold": "direct coins; 270,000-280,000 from level 95+",
+        "xp": "Thieving"
+      },
+      "risk": null,
+      "account_note": "Easier, slightly more profitable alternative to blackjacking; higher reqs. UIM badge: Yes. Direct coins, iron-realizable.",
+      "source_section": "High requirements table",
+      "value_basis": "value",
+      "value_note": "270,000 (270k-280k from lvl 95). gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "coins",
+      "requires_ge": false
+    },
+    {
+      "method": "Crafting blood runes",
+      "stage": "late",
+      "gp_hr": 330000,
+      "requirements": {
+        "skills": {
+          "Runecraft": 77,
+          "Agility": 73
+        },
+        "quests": [],
+        "items": [
+          "any pickaxe",
+          "chisel"
+        ]
+      },
+      "realization_channel": "shop",
+      "outputs": {
+        "gold": "212 blood runes/run sold to Ali Morrisane at 200 coins each",
+        "xp": "up to 38,000 Runecraft",
+        "resources": "blood runes"
+      },
+      "risk": null,
+      "account_note": "Mine dense essence, venerate, run to Blood Altar; 212 blood runes/run sold to Ali Morrisane @200 ea. Up to 460,000 coins/hr + 38,000 RC XP with optimised runs. UIM badge: Yes. Shop channel, iron-realizable.",
+      "source_section": "High requirements table",
+      "value_basis": "store",
+      "value_note": "330,000 gp/hr (up to 460,000 optimised); 200 coins/blood rune fixed. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "shop",
+      "requires_ge": false
+    },
+    {
+      "method": "Blast mining and smithing runite (ore -> bar -> rune items -> high alch)",
+      "stage": "late",
+      "gp_hr": 650000,
+      "requirements": {
+        "skills": {
+          "Mining": 75,
+          "Smithing": 89
+        },
+        "quests": [],
+        "items": [
+          "Dynamite (330/hr)",
+          "Coal for smelting bars"
+        ]
+      },
+      "realization_channel": "high_alch",
+      "outputs": {
+        "gold": "high-alch value of rune items",
+        "xp": "Mining, Smithing",
+        "resources": "runite ore"
+      },
+      "risk": null,
+      "account_note": "Blast mining gives runite at lvl 75 (bulk of profit). Needs lots of dynamite (CoX, or 80/day from Thirus with Kourend&Kebos elite diary; buying not recommended). Smelt at Blast Furnace, smith runite bars to rune items (e.g. rune swords), high-alch. UIM badge: Maybe. high_alch channel, iron-realizable.",
+      "source_section": "High requirements table",
+      "value_basis": "value",
+      "value_note": "650,000 gp/hr. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "high_alch",
+      "requires_ge": false
+    },
+    {
+      "method": "Crafting amethyst javelin tips (mine amethyst -> craft tips -> high alch)",
+      "stage": "late",
+      "gp_hr": 364000,
+      "requirements": {
+        "skills": {
+          "Mining": 92,
+          "Crafting": 87
+        },
+        "quests": [],
+        "items": [
+          "chisel",
+          "runes for High Alchemy"
+        ]
+      },
+      "realization_channel": "high_alch",
+      "outputs": {
+        "gold": "364,800-456,000 (700k-900k with tick manipulation) coins of javelin tips high-alched",
+        "xp": "Mining, Crafting",
+        "resources": "amethyst"
+      },
+      "risk": null,
+      "account_note": "Mine amethyst, craft amethyst javelin tips, high-alch. 80-100 amethyst/hr standard, 160-200 with 3t tick manip -> 400-500 tips/hr. Low inventory need (good for UIM). Varrock Elite Diary (Varrock armour 4) gives extra amethyst chance; Expert mining gloves (25% no-deplete); Celestial ring +4 Mining. UIM badge: Yes. high_alch channel, iron-realizable.",
+      "source_section": "High requirements table",
+      "value_basis": "value",
+      "value_note": "364,000 (364,800-456,000; 700k-900k tick-manip) gp/hr. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "high_alch",
+      "requires_ge": false
+    },
+    {
+      "method": "Killing rune dragons",
+      "stage": "late",
+      "gp_hr": 1000000,
+      "requirements": {
+        "skills": {
+          "Combat": "High"
+        },
+        "quests": [
+          "Dragon Slayer II"
+        ],
+        "items": [
+          "Dragon hunter lance (highly recommended)"
+        ]
+      },
+      "realization_channel": "high_alch",
+      "outputs": {
+        "gold": "over 1m/hr in alchables (at cost of supplies)",
+        "xp": "Combat",
+        "resources": "runite bars, valuable alchables"
+      },
+      "risk": null,
+      "account_note": "Relatively low effort, lucrative; runite bars + valuable alchables. UIM badge: Yes. high_alch channel, iron-realizable.",
+      "source_section": "High requirements table",
+      "value_basis": "value",
+      "value_note": "1,000,000 gp/hr in alchables, net of supplies. gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "high_alch",
+      "requires_ge": false
+    },
+    {
+      "method": "Crafting nature runes with the Achievement Diary Cape (double natures)",
+      "stage": "late",
+      "gp_hr": 2376000,
+      "requirements": {
+        "skills": {
+          "Runecraft": 91
+        },
+        "quests": [],
+        "items": [
+          "Achievement diary cape",
+          "Colossal pouch",
+          "Full Raiments of the eye set"
+        ]
+      },
+      "realization_channel": "shop",
+      "outputs": {
+        "gold": "coins from selling nature runes to Ali's Discount Wares",
+        "xp": "Runecraft",
+        "resources": "nature runes"
+      },
+      "risk": null,
+      "account_note": "Achievement Diary Cape teleport for double nature runes. Rate does NOT account for time selling natures to Ali's Discount Wares. UIM badge: Maybe. Shop channel, iron-realizable.",
+      "source_section": "High requirements table",
+      "value_basis": "store",
+      "value_note": "2,376,000 gp/hr (excludes selling time). gp values are price-volatile snapshots from the OSRS Wiki guide; high-alch/shop prices are fixed but coin worth assumptions may drift.",
+      "audience": "ironman",
+      "pricing_basis": "shop",
+      "requires_ge": false
+    }
+  ],
+  "_excluded": []
+}

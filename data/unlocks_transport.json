@@ -1,0 +1,1506 @@
+{
+  "_provenance": {
+    "domain": "unlocks_transport",
+    "source_urls": [
+      "https://oldschool.runescape.wiki/w/Transportation?action=raw",
+      "https://oldschool.runescape.wiki/w/Fairy_rings?action=raw",
+      "https://oldschool.runescape.wiki/w/Spirit_tree?action=raw",
+      "https://oldschool.runescape.wiki/w/Gnome_glider?action=raw"
+    ],
+    "source_query": null,
+    "accessed": "2026-06-17T18:18:46Z",
+    "license": "CC BY-NC-SA 3.0",
+    "extraction_method": "script",
+    "raw_files": [
+      "data/raw/transportation_raw.wikitext",
+      "data/raw/Fairy_rings_raw.wikitext",
+      "data/raw/Spirit_tree_raw.wikitext",
+      "data/raw/Gnome_glider_raw.wikitext"
+    ],
+    "record_count": 107,
+    "completeness": {
+      "bounded_by": "OSRS Wiki Transportation page + per-feature pages (Fairy rings, Spirit tree, Gnome glider). Transport is an open-ended semi-structured domain; this captures the major networks/systems, the full fairy-ring node table, all spirit-tree and gnome-glider nodes, the three alternate spellbook unlocks, and notable quest-gated teleport items and area-access unlocks.",
+      "universe_count": null,
+      "records_count": 107,
+      "known_missing": [
+        "Standard-spellbook basic/teleother/tele-group teleport spells without quest/area gates (level-only) are summarised, not enumerated per spell.",
+        "Enchanted jewellery (glory/games necklace/ring of dueling/skills necklace/combat bracelet/digsite pendant etc.) destinations are not enumerated as individual records.",
+        "Portal nexus / magic tablets / teleport scrolls catalogue (per-destination items) not enumerated individually.",
+        "Achievement-diary and combat-achievement reward teleport items beyond the examples given are not all enumerated.",
+        "Ship/boat/two-way-shuttle and one-way transportation lists are captured at system level only, not as per-route records.",
+        "Account-type axes (members/f2p) noted in record notes rather than as a structured field; nearly all listed transport systems are members-only (carry 'members')."
+      ]
+    },
+    "domain_stats": {
+      "records_by_type": {
+        "transport": 83,
+        "feature": 19,
+        "area": 5
+      },
+      "records_by_group": {
+        "system": 37,
+        "fairy_ring_node": 55,
+        "spirit_tree_node": 8,
+        "gnome_glider_node": 7
+      },
+      "quest_gated_records": 46,
+      "skill_gated_records": 14,
+      "item_gated_records": 10,
+      "fairy_ring_nodes_parsed": 55,
+      "fairy_ring_codes": [
+        "AIQ",
+        "AIR",
+        "AIS",
+        "AJP",
+        "AJQ",
+        "AJR",
+        "AJS",
+        "AKP",
+        "AKQ",
+        "AKR",
+        "AKS",
+        "ALP",
+        "ALQ",
+        "ALR",
+        "ALS",
+        "BIP",
+        "BIQ",
+        "BIS",
+        "BJP",
+        "BJR",
+        "BJS",
+        "BKP",
+        "BKQ",
+        "BKR",
+        "BKS",
+        "BLP",
+        "BLQ",
+        "BLR",
+        "BLS",
+        "CIP",
+        "CIQ",
+        "CIR",
+        "CIS",
+        "CJQ",
+        "CJR",
+        "CKP",
+        "CKQ",
+        "CKR",
+        "CKS",
+        "CLP",
+        "CLR",
+        "CLS",
+        "DIP",
+        "DIQ",
+        "DIR",
+        "DIS",
+        "DJP",
+        "DJR",
+        "DKP",
+        "DKR",
+        "DKS",
+        "DLP",
+        "DLQ",
+        "DLR",
+        "DLS"
+      ],
+      "spirit_tree_nodes_parsed": 8,
+      "gnome_glider_nodes_parsed": 7,
+      "note": "Value/price fields are not applicable to this domain (transport unlocks). Coin fares (e.g. Lovakengj minecart, charter ships) are noted as sinks in record notes, not income; no money records here."
+    }
+  },
+  "records": [
+    {
+      "unlock": "Fairy ring network",
+      "type": "transport",
+      "requirements": {
+        "quests": [
+          "Fairytale I - Growing Pains",
+          "Fairytale II - Cure a Queen"
+        ],
+        "skills": {},
+        "items": [
+          "Dramen staff or lunar staff (to use rings; not needed with Elite Lumbridge & Draynor Diary)"
+        ]
+      },
+      "notes": "Members. Network of 55 fairy rings. Fairytale I - Growing Pains MUST be completed; Fairytale II - Cure a Queen need only be STARTED (permission from the Fairy Godfather) to access the network - it does not need to be completed, and no skill requirements are needed. A dramen staff or lunar staff is required to enter a ring unless the Elite Lumbridge & Draynor Diary is completed.",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Spirit tree network",
+      "type": "transport",
+      "requirements": {
+        "quests": [
+          "Tree Gnome Village"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Members. Completion of Tree Gnome Village is required for access to the network. Additional completion of The Grand Tree is required to travel FROM the Tree Gnome Stronghold tree (not required to travel TO it). Several specific trees require further quests/skills (see spirit_tree_node records).",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Gnome glider network",
+      "type": "transport",
+      "requirements": {
+        "quests": [
+          "The Grand Tree"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Members. Gnome gliders are available after completing The Grand Tree. Can be combined with teleport spells, spirit trees and the fairy ring network. Some individual gliders need further quests (see gnome_glider_node records).",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Wilderness Obelisks",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Six Wilderness Obelisks teleport anyone standing on the pad to a randomly chosen obelisk; completing the Hard Wilderness Diary allows choosing the arrival point. An obelisk can also be built in a player-owned house but cannot be used to teleport out of the Wilderness. WILDERNESS / risk flag: located in the Wilderness.",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Lovakengj Minecart Network",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": [
+          "20 coins per ride (waived permanently after The Forsaken Tower)"
+        ]
+      },
+      "notes": "Members. Rapid transit serving twelve destinations across Kourend and Kebos. 20 coins per ride; the fee is waived permanently upon completion of The Forsaken Tower (which is then a free, iron-realizable convenience - the coin cost is a sink, not income).",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Quetzal Transport System",
+      "type": "transport",
+      "requirements": {
+        "quests": [
+          "Twilight's Promise"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Members. Transportation within Varlamore. During Twilight's Promise players are gifted their own quetzal, Renu. Eight landing sites available after Twilight's Promise plus six more that can be built.",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Mycelium Transportation System",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Members. System of Magic Mushtrees allowing transport around Fossil Island (four mushtrees: House on the Hill, Verdant Valley, Sticky Swamp, Mushroom Meadow). Fossil Island access is gained via Bone Voyage.",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Keldagrim minecart system",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Members. Listed under Other Transportation Systems on the Transportation page.",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Magic carpet network (Kharidian Desert)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Members. Magic carpets in the Kharidian Desert. Listed under Other Transportation Systems.",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Eagle transport system",
+      "type": "transport",
+      "requirements": {
+        "quests": [
+          "Eagles' Peak"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Members. Eagle transport system; unlocked via the Eagles' Peak quest (per Eagle transport system page / Transportation listing).",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Balloon transport system (hot air balloon)",
+      "type": "transport",
+      "requirements": {
+        "quests": [
+          "Enlightened Journey"
+        ],
+        "skills": {
+          "Firemaking": 20
+        },
+        "items": [
+          "One log of the appropriate type per flight"
+        ]
+      },
+      "notes": "Members. Hot air balloon transport requires completion of Enlightened Journey; individual destinations unlock as the quest/related steps are done and require logs to fly.",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Charter ships",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": [
+          "Coins (fare varies by route)"
+        ]
+      },
+      "notes": "Members. Charter ship network between many ports; fares paid in coins (iron-realizable sink).",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Canoe system",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {
+          "Woodcutting": 12
+        },
+        "items": [
+          "Axe"
+        ]
+      },
+      "notes": "Canoes (River Lum). Higher Woodcutting allows larger canoes reaching farther destinations; the Waka canoe can reach the Wilderness pond (destination only). Available in free-to-play and members.",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Ancient Magicks spellbook (teleports)",
+      "type": "feature",
+      "requirements": {
+        "quests": [
+          "Desert Treasure I"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Members. Players must have completed Desert Treasure I to use Ancient Magicks. Unlocks Paddewwa, Senntisten, Kharyrll, Lassar, Dareeyak, Carrallanger, Annakarl and Ghorrock teleports (several land in the Wilderness - risk flag).",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Lunar spellbook (teleports)",
+      "type": "feature",
+      "requirements": {
+        "quests": [
+          "Lunar Diplomacy"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Members. Players must have completed Lunar Diplomacy to use Lunar spells. Ourania Teleport additionally requires speaking to Baba Yaga to unlock.",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Arceuus spellbook (teleports)",
+      "type": "feature",
+      "requirements": {
+        "quests": [
+          "Client of Kourend"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Members. The Arceuus spellbook is unlocked via Client of Kourend (Tower of Magincta). Individual teleports have further gates: West Ardougne Teleport requires Biohazard; Harmony Island Teleport requires The Great Brain Robbery.",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Camelot Teleport (standard)",
+      "type": "feature",
+      "requirements": {
+        "quests": [],
+        "skills": {
+          "Magic": 45
+        },
+        "items": []
+      },
+      "notes": "Members. Teleports south of Camelot castle, or to Seers' Village bank upon completion of the Hard Kandarin Diary.",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Kourend Castle Teleport (standard)",
+      "type": "feature",
+      "requirements": {
+        "quests": [
+          "Client of Kourend"
+        ],
+        "skills": {
+          "Magic": 48
+        },
+        "items": []
+      },
+      "notes": "Members. Requires completion of Client of Kourend. Teleports to Kourend Castle courtyard.",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Ardougne Teleport (standard)",
+      "type": "feature",
+      "requirements": {
+        "quests": [
+          "Plague City"
+        ],
+        "skills": {
+          "Magic": 51
+        },
+        "items": []
+      },
+      "notes": "Members. Requires completion of Plague City. Teleports to centre of Ardougne.",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Watchtower Teleport (standard)",
+      "type": "feature",
+      "requirements": {
+        "quests": [
+          "Watchtower"
+        ],
+        "skills": {
+          "Magic": 58
+        },
+        "items": []
+      },
+      "notes": "Members. Requires completion of Watchtower. Teleports to the Watchtower near Yanille.",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Varrock Teleport (standard)",
+      "type": "feature",
+      "requirements": {
+        "quests": [],
+        "skills": {
+          "Magic": 25
+        },
+        "items": []
+      },
+      "notes": "Free-to-play. Teleports to centre of Varrock, or Grand Exchange upon completion of the Medium Varrock Diary.",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Ectophial (teleport to Ectofuntus)",
+      "type": "feature",
+      "requirements": {
+        "quests": [
+          "Ghosts Ahoy"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Members. Obtained during Ghosts Ahoy. Unlimited teleport to the Ectofuntus; automatically refilled on arrival.",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Royal seed pod (teleport to Grand Tree)",
+      "type": "feature",
+      "requirements": {
+        "quests": [
+          "Monkey Madness II"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Members. Obtained from Monkey Madness II. Unlimited teleport to the Grand Tree.",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Drakan's medallion (Morytania teleports)",
+      "type": "feature",
+      "requirements": {
+        "quests": [
+          "A Taste of Hope"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Members. Obtained during A Taste of Hope. Unlimited teleports to Ver Sinhaza and Darkmeyer; a Slepey tablet unlocks an unlimited teleport to the Sisterhood Sanctuary.",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Kharedst's memoirs (Kourend teleports)",
+      "type": "feature",
+      "requirements": {
+        "quests": [
+          "X Marks the Spot",
+          "The Queen of Thieves",
+          "The Depths of Despair",
+          "Tale of the Righteous",
+          "The Forsaken Tower",
+          "A Kingdom Divided"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Members. Book teleports to Great Kourend cities; each city page is added by completing the associated Kourend quest. Recharged by inspecting the Old Memorial with law/body/mind/soul runes.",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Mythical cape (teleport to Myths' Guild)",
+      "type": "feature",
+      "requirements": {
+        "quests": [
+          "Dragon Slayer II"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Members. Obtained from the Myths' Guild after Dragon Slayer II. Unlimited teleport to the Myths' Guild.",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Enchanted lyre (Fremennik teleports)",
+      "type": "feature",
+      "requirements": {
+        "quests": [
+          "The Fremennik Trials"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Members. Obtained during The Fremennik Trials. Teleports to Rellekka (and Waterbirth Island/Neitiznot/Jatizso once unlocked). Recharged at Fossegrimen's altar.",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Fairy ring use without a staff",
+      "type": "feature",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Members. Players who have completed the Elite Lumbridge & Draynor Diary no longer need a dramen or lunar staff to use a fairy ring.",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Fairy ring (player-owned house, Construction)",
+      "type": "feature",
+      "requirements": {
+        "quests": [],
+        "skills": {
+          "Construction": 85
+        },
+        "items": [
+          "Watering can (>=1 dose water)",
+          "Fairy enchantment",
+          "10 unnoted mushrooms"
+        ]
+      },
+      "notes": "Members. A fairy ring can be grown in the POH superior garden at 85 Construction (boostable).",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Spirit tree (player-owned house, Construction)",
+      "type": "feature",
+      "requirements": {
+        "quests": [
+          "Tree Gnome Village"
+        ],
+        "skills": {
+          "Construction": 75,
+          "Farming": 83
+        },
+        "items": [
+          "Spirit sapling"
+        ]
+      },
+      "notes": "Members. A spirit tree can be planted in the POH superior garden at 75 Construction (also requires 83 Farming). Grows instantly and does not count toward the player-grown spirit tree limit.",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Spirit tree & fairy ring (Spiritual Fairy Tree, POH)",
+      "type": "feature",
+      "requirements": {
+        "quests": [
+          "Tree Gnome Village",
+          "Fairytale I - Growing Pains"
+        ],
+        "skills": {
+          "Construction": 95,
+          "Farming": 83
+        },
+        "items": []
+      },
+      "notes": "Members. At 95 Construction (and 83 Farming) players can build a Spiritual Fairy Tree in the POH, granting access to both the spirit tree and fairy ring networks at once.",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Player-grown spirit trees (Farming patches)",
+      "type": "feature",
+      "requirements": {
+        "quests": [
+          "Tree Gnome Village"
+        ],
+        "skills": {
+          "Farming": 83
+        },
+        "items": [
+          "Spirit sapling (from untradeable spirit seed)"
+        ]
+      },
+      "notes": "Members. At 83 Farming players can grow spirit trees in five patches (Etceteria, Brimhaven, Port Sarim, Hosidius, Farming Guild advanced tier). Limit: 1 at 83, 2 at 88, 3 at 93, 4 at 96, unlimited at 99 (boostable).",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Fossil Island access",
+      "type": "area",
+      "requirements": {
+        "quests": [
+          "Bone Voyage"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Members. Fossil Island (and its Mycelium Transportation System / rowboats) is unlocked by completing Bone Voyage.",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Lunar Isle access",
+      "type": "area",
+      "requirements": {
+        "quests": [
+          "Lunar Diplomacy"
+        ],
+        "skills": {},
+        "items": [
+          "Seal of passage (before Lunar Diplomacy completion)"
+        ]
+      },
+      "notes": "Members. Reached by boat (Lady Zay from Pirates' Cove). A seal of passage is required to remain on the island until Lunar Diplomacy is completed.",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Prifddinas access",
+      "type": "area",
+      "requirements": {
+        "quests": [
+          "Song of the Elves"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Members. The elf city Prifddinas (with its spirit tree and teleport crystal destinations) is unlocked by completing Song of the Elves.",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Great Kourend access",
+      "type": "area",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Members. Great Kourend / Kebos (and many Arceuus/Kourend transport features) become available after travelling there (e.g. via Veos). Several fairy rings in the region require having visited Great Kourend at least once.",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Weiss access (Icy basalt teleport)",
+      "type": "area",
+      "requirements": {
+        "quests": [
+          "Making Friends with My Arm"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Members. Weiss is unlocked via Making Friends with My Arm; the Icy basalt provides a one-use teleport to Weiss (rechargeable basalt obtained there).",
+      "domain_group": "system"
+    },
+    {
+      "unlock": "Fairy ring AIQ (Asgarnia: Mudskipper Point)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Mogres, Rimmington, Port Sarim, Asgarnia Ice Dungeon.",
+      "domain_group": "fairy_ring_node",
+      "code": "AIQ"
+    },
+    {
+      "unlock": "Fairy ring AIR (Islands: South-east of Ardougne)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Empty island, used for clue scroll coordinates and the medium Ardougne diary. This is also the first fairy ring in the sequence used to access the Fairy Queen's hideout during and after the Fairytale II - Cure a Queen quest.",
+      "domain_group": "fairy_ring_node",
+      "code": "AIR"
+    },
+    {
+      "unlock": "Fairy ring AIS (Varlamore: Auburn Valley)",
+      "type": "transport",
+      "requirements": {
+        "quests": [
+          "Children of the Sun"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Requires having travelled to Civitas illa Fortis via Regulus Cento, after completion of Children of the Sun. Is in the route for Vale Totems, allowing to bank then teleport back",
+      "domain_group": "fairy_ring_node",
+      "code": "AIS"
+    },
+    {
+      "unlock": "Fairy ring AJP (Varlamore: Avium Savannah)",
+      "type": "transport",
+      "requirements": {
+        "quests": [
+          "Children of the Sun",
+          "The Ribbiting Tale of a Lily Pad Labour Dispute"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Requires having travelled to Civitas illa Fortis via Regulus Cento, after completion of Children of the Sun. A hardwood tree farming patch can be found near the fairy ring, available after the completion of The Ribbiting Tale of a Lily Pad Labour Dispute.",
+      "domain_group": "fairy_ring_node",
+      "code": "AJP"
+    },
+    {
+      "unlock": "Fairy ring AJQ (Dungeons: Cave south of Dorgesh-Kaan)",
+      "type": "transport",
+      "requirements": {
+        "quests": [
+          "Death to the Dorgeshuun"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Completion of Death to the Dorgeshuun is required and a light source is recommended but not required. Cave crawlers, Cave bugs, Cave slimes and Molanisks can be found here. The Dorgesh-Kaan Agility Course is also be found here.",
+      "domain_group": "fairy_ring_node",
+      "code": "AJQ"
+    },
+    {
+      "unlock": "Fairy ring AJR (Kandarin: Slayer cave south-east of Rellekka)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Fremennik Slayer Dungeon, Rellekka west of fairy ring.",
+      "domain_group": "fairy_ring_node",
+      "code": "AJR"
+    },
+    {
+      "unlock": "Fairy ring AJS (Islands: Penguins near Miscellania.)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Penguins; no other access. This is also the fourth and final fairy ring in the sequence used to access the Fairy Queen's hideout during and after the Fairytale II - Cure a Queen quest.",
+      "domain_group": "fairy_ring_node",
+      "code": "AJS"
+    },
+    {
+      "unlock": "Fairy ring AKP (Kharidian Desert: Necropolis)",
+      "type": "transport",
+      "requirements": {
+        "quests": [
+          "Beneath Cursed Sands"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Sophanem and Menaphos to the north, Necropolis to the east. Unlocked by entering the Necropolis in the beginning of Beneath Cursed Sands.",
+      "domain_group": "fairy_ring_node",
+      "code": "AKP"
+    },
+    {
+      "unlock": "Fairy ring AKQ (Kandarin: Piscatoris Hunter area)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Kraken Cove, Chinchompas (grey), Mining spots, Piscatoris Fishing Colony.",
+      "domain_group": "fairy_ring_node",
+      "code": "AKQ"
+    },
+    {
+      "unlock": "Fairy ring AKR (Great Kourend: Hosidius Vinery)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Hosidius Vinery, Tithe Farm minigame.",
+      "domain_group": "fairy_ring_node",
+      "code": "AKR"
+    },
+    {
+      "unlock": "Fairy ring AKS (Feldip Hills: Feldip Hunter area)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Hunter jungle area, Chompy hunting grounds, Gnome glider.",
+      "domain_group": "fairy_ring_node",
+      "code": "AKS"
+    },
+    {
+      "unlock": "Fairy ring ALP (Islands: Lighthouse)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Jossik, Barbarian Outpost, Rellekka, Dagannoths.",
+      "domain_group": "fairy_ring_node",
+      "code": "ALP"
+    },
+    {
+      "unlock": "Fairy ring ALQ (Morytania: Haunted Woods east of Canifis)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Can be used in conjunction with the Ectophial to quickly access the fairy ring network, but this ring is surrounded by aggressive Vampyres and Leeches. Farming patch, Port Phasmatys east.",
+      "domain_group": "fairy_ring_node",
+      "code": "ALQ"
+    },
+    {
+      "unlock": "Fairy ring ALR (Other Realms: Abyssal Area)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Abyssal leeches, guardians, walkers, and Abyssal demons. Alternative area for players to get essence pouches.",
+      "domain_group": "fairy_ring_node",
+      "code": "ALR"
+    },
+    {
+      "unlock": "Fairy ring ALS (Kandarin: McGrubor's Wood)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Seers' Village, Coal trucks, Fishing Guild, Ranging Guild, Hemenster Going here is required for the medium Kandarin Diary. } ===\"B\" combinations=== {| class=\"wikitable sortable sticky-header lighttable align-center-1\" width=\"95%\" style=\"text-align:center\" ! Code ! Map !Location !Points of Interest",
+      "domain_group": "fairy_ring_node",
+      "code": "ALS"
+    },
+    {
+      "unlock": "Fairy ring BIP (Islands: South-west of Mort Myre, on the river Salve)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Empty island with a shortcut to enter Mort Myre, requiring level 50 Agility. This fairy ring is also used for the hard cryptic clue \"BIP 7013\".",
+      "domain_group": "fairy_ring_node",
+      "code": "BIP"
+    },
+    {
+      "unlock": "Fairy ring BIQ (Kharidian Desert near the Kalphite Hive.)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Kalphite Lair for Kalphites and the Kalphite Queen, Shantay Pass nearby.",
+      "domain_group": "fairy_ring_node",
+      "code": "BIQ"
+    },
+    {
+      "unlock": "Fairy ring BIS (Kandarin: Ardougne Zoo - Unicorns)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Unicorns; no other access. Required for the medium Ardougne Diary.",
+      "domain_group": "fairy_ring_node",
+      "code": "BIS"
+    },
+    {
+      "unlock": "Fairy ring BJP (Islands: Isle of Souls)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Crumbling Tower, Isle of Souls Dungeon.",
+      "domain_group": "fairy_ring_node",
+      "code": "BJP"
+    },
+    {
+      "unlock": "Fairy ring BJR (Other Realms: Realm of the Fisher King)",
+      "type": "transport",
+      "requirements": {
+        "quests": [
+          "Holy Grail"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Requires partial completion of the Holy Grail quest.",
+      "domain_group": "fairy_ring_node",
+      "code": "BJR"
+    },
+    {
+      "unlock": "Fairy ring BJS (Islands: Near Zul-Andra)",
+      "type": "transport",
+      "requirements": {
+        "quests": [
+          "Regicide"
+        ],
+        "skills": {
+          "Agility": 76
+        },
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Requires completion of the Regicide quest. 76 Agility is needed to jump off the island.",
+      "domain_group": "fairy_ring_node",
+      "code": "BJS"
+    },
+    {
+      "unlock": "Fairy ring BKP (Feldip Hills: Chompy Marsh, south of Castle Wars)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Smoke Devil Dungeon and Chompy bird hunting grounds. Teak tree to the west, Castle Wars north.",
+      "domain_group": "fairy_ring_node",
+      "code": "BKP"
+    },
+    {
+      "unlock": "Fairy ring BKQ (Other Realms: Enchanted Valley)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Tree spirits.",
+      "domain_group": "fairy_ring_node",
+      "code": "BKQ"
+    },
+    {
+      "unlock": "Fairy ring BKR (Morytania: Mort Myre Swamp, south of Canifis)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Swamp boat south-east (towards Barrows and Burgh de Rott).",
+      "domain_group": "fairy_ring_node",
+      "code": "BKR"
+    },
+    {
+      "unlock": "Fairy ring BKS (Other Realms: Zanaris)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Impetuous Impulses, Chaeldar, Cosmic runic altar.",
+      "domain_group": "fairy_ring_node",
+      "code": "BKS"
+    },
+    {
+      "unlock": "Fairy ring BLP (Dungeons: TzHaar area)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: TzHaar Fight Cave, TzHaar Fight Pit, TzHaar monsters.",
+      "domain_group": "fairy_ring_node",
+      "code": "BLP"
+    },
+    {
+      "unlock": "Fairy ring BLQ (Other Realms: Yu'biusk)",
+      "type": "transport",
+      "requirements": {
+        "quests": [
+          "Land of the Goblins"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: |Requires partial completion of the Land of the Goblins quest. Used during the Hopespear's Will miniquest.",
+      "domain_group": "fairy_ring_node",
+      "code": "BLQ"
+    },
+    {
+      "unlock": "Fairy ring BLR (Kandarin: Legends' Guild)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Legends' Guild, Mining spots, Magic and Maple trees north, Witchaven south, East Ardougne west.",
+      "domain_group": "fairy_ring_node",
+      "code": "BLR"
+    },
+    {
+      "unlock": "Fairy ring BLS (Kebos Lowlands: South of Mount Quidamortem)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Rowboat to The Stranglewood, Mountain Guide for quick access to the Chambers of Xeric. } ===\"C\" combinations=== {| class=\"wikitable sortable sticky-header lighttable align-center-1\" width=\"95%\" style=\"text-align:center\" ! Code !Map !Location !Points of Interest",
+      "domain_group": "fairy_ring_node",
+      "code": "BLS"
+    },
+    {
+      "unlock": "Fairy ring CIP (Islands: Miscellania)",
+      "type": "transport",
+      "requirements": {
+        "quests": [
+          "The Fremennik Trials"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Requires completion of The Fremennik Trials quest. Miscellania, Etceteria east, Managing Miscellania Required for the medium Fremennik Diary.",
+      "domain_group": "fairy_ring_node",
+      "code": "CIP"
+    },
+    {
+      "unlock": "Fairy ring CIQ (Kandarin: North-west of Yanille)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Tree Gnome Village north, Yanille south-east, Gu'Tanoth south, Castle Wars west.",
+      "domain_group": "fairy_ring_node",
+      "code": "CIQ"
+    },
+    {
+      "unlock": "Fairy ring CIR (Kebos Lowlands: South of Mount Karuulm)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Requires having visited Great Kourend at least once. Points of interest / access notes: The player must have visited Great Kourend at least once to access this fairy ring. Directly south of Mount Karuulm, and north-east of the Farming Guild. Required for the medium Kourend & Kebos Diary.",
+      "domain_group": "fairy_ring_node",
+      "code": "CIR"
+    },
+    {
+      "unlock": "Fairy ring CIS (Great Kourend: Arceuus Library)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: The player must have visited Great Kourend at least once to access this fairy ring. North of the Arceuus Library in Arceuus.",
+      "domain_group": "fairy_ring_node",
+      "code": "CIS"
+    },
+    {
+      "unlock": "Fairy ring CJQ (The Great Conch)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: The player must have visited The Great Conch at least once to access this fairy ring.",
+      "domain_group": "fairy_ring_node",
+      "code": "CJQ"
+    },
+    {
+      "unlock": "Fairy ring CJR (Kandarin: Sinclair Mansion (east))",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Sinclair Mansion east, Seers' Village south.",
+      "domain_group": "fairy_ring_node",
+      "code": "CJR"
+    },
+    {
+      "unlock": "Fairy ring CKP (Other Realms: Cosmic entity's plane)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Used during the Fairytale II - Cure a Queen quest.",
+      "domain_group": "fairy_ring_node",
+      "code": "CKP"
+    },
+    {
+      "unlock": "Fairy ring CKQ (Varlamore: Aldarin)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Requires having travelled to Civitas illa Fortis via Regulus Cento, after completion of Children of the Sun. Mastering Mixology minigame.",
+      "domain_group": "fairy_ring_node",
+      "code": "CKQ"
+    },
+    {
+      "unlock": "Fairy ring CKR (Karamja: South of Tai Bwo Wannai Village)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Graahks, Shilo Village nearby, Tai Bwo Wannai Village, Nature Altar.",
+      "domain_group": "fairy_ring_node",
+      "code": "CKR"
+    },
+    {
+      "unlock": "Fairy ring CKS (Morytania: Canifis)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Morytania Slayer Tower, Canifis east, Paterdomus west, Mort Myre swamp south.",
+      "domain_group": "fairy_ring_node",
+      "code": "CKS"
+    },
+    {
+      "unlock": "Fairy ring CLP (Islands: Draynor island)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: This is the solution to the hard coordinate clue \"01 degrees 30 minutes north, 20 degrees 01 minutes east \".",
+      "domain_group": "fairy_ring_node",
+      "code": "CLP"
+    },
+    {
+      "unlock": "Fairy ring CLR (Islands: Ape Atoll)",
+      "type": "transport",
+      "requirements": {
+        "quests": [
+          "Monkey Madness I"
+        ],
+        "skills": {
+          "Agility": 48
+        },
+        "items": [
+          "Ninja monkey greegree or Kruk monkey greegree"
+        ]
+      },
+      "notes": "Points of interest / access notes: Requires completion of the Monkey Madness I quest. In addition, 48 Agility and a Ninja monkey greegree or Kruk monkey greegree are required to exit the agility course and travel to the city (note that other monkey greegree types are not sufficient) without taking damage. If you do not have the greegree, you can still attempt the rope swing but will automatically fail and fall to the beginning of the course, taking some damage. If you have the greegree, but lack the Agility requirement, you will be unable to exit into the city.",
+      "domain_group": "fairy_ring_node",
+      "code": "CLR"
+    },
+    {
+      "unlock": "Fairy ring CLS (Islands: Yanille Chain)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Hazelmere's house can be found here. } ===\"D\" combinations=== {| class=\"wikitable sortable sticky-header lighttable align-center-1\" width=\"95%\" style=\"text-align:center\" !Code !Map !Location !Points of Interest",
+      "domain_group": "fairy_ring_node",
+      "code": "CLS"
+    },
+    {
+      "unlock": "Fairy ring DIP (Other Realms: Abyssal Nexus)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Abyssal Sire.",
+      "domain_group": "fairy_ring_node",
+      "code": "DIP"
+    },
+    {
+      "unlock": "Fairy ring DIQ (Player-owned house superior garden)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Only works if the player has a fairy ring in their house.",
+      "domain_group": "fairy_ring_node",
+      "code": "DIQ"
+    },
+    {
+      "unlock": "Fairy ring DIR (Other Realms: Gorak's Plane)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: The only place Goraks can be found other than the God Wars Dungeon.",
+      "domain_group": "fairy_ring_node",
+      "code": "DIR"
+    },
+    {
+      "unlock": "Fairy ring DIS (Misthalin: Wizards' Tower)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Wizards' Tower, Rune essence mine Required for the medium Lumbridge & Draynor Diary.",
+      "domain_group": "fairy_ring_node",
+      "code": "DIS"
+    },
+    {
+      "unlock": "Fairy ring DJP (Kandarin: Tower of Life)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Ardougne Monastery and Ardougne cloak unlimited teleport west, East Ardougne and Spirit tree north-west, Port Khazard south.",
+      "domain_group": "fairy_ring_node",
+      "code": "DJP"
+    },
+    {
+      "unlock": "Fairy ring DJR (Great Kourend: Chasm of Fire)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: The player must have visited Great Kourend at least once to access this fairy ring. Chasm of Fire, north-west corner of Shayzien.",
+      "domain_group": "fairy_ring_node",
+      "code": "DJR"
+    },
+    {
+      "unlock": "Fairy ring DKP (Karamja: Gnome glider)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Karambwan fishing spots.",
+      "domain_group": "fairy_ring_node",
+      "code": "DKP"
+    },
+    {
+      "unlock": "Fairy ring DKR (Misthalin: Edgeville)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Grand Exchange east, Edgeville bank west, Wilderness north.",
+      "domain_group": "fairy_ring_node",
+      "code": "DKR"
+    },
+    {
+      "unlock": "Fairy ring DKS (Fremennik: Polar Hunter area)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Keldagrim entrance, Brine Rat Cavern, Rock crabs, Rellekka west.",
+      "domain_group": "fairy_ring_node",
+      "code": "DKS"
+    },
+    {
+      "unlock": "Fairy ring DLP (Grimstone)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Requires having visited Grimstone at least once. Points of interest / access notes: Grimstone Dungeon, available once Grimstone has been visited",
+      "domain_group": "fairy_ring_node",
+      "code": "DLP"
+    },
+    {
+      "unlock": "Fairy ring DLQ (Kharidian Desert: North of Nardah)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Desert lizards, Jackals, Nardah south.",
+      "domain_group": "fairy_ring_node",
+      "code": "DLQ"
+    },
+    {
+      "unlock": "Fairy ring DLR (Islands: Poison Waste south of Isafdar)",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Player can use Broken Handz's telescope to spectate players fighting Zulrah. There are also unattackable badgers on the island. This is also the second fairy ring in the sequence used to access the Fairy Queen's hideout during and after the Fairytale II - Cure a Queen quest.",
+      "domain_group": "fairy_ring_node",
+      "code": "DLR"
+    },
+    {
+      "unlock": "Fairy ring DLS (Dungeons: Myreque hideout under The Hollows)",
+      "type": "transport",
+      "requirements": {
+        "quests": [
+          "In Search of the Myreque"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Points of interest / access notes: Requires completion of the In Search of the Myreque quest. Find the cracks in the walls to enter the main tunnel under the Hair of the Dog pub in Canifis. } ===Sequences=== {| class=\"wikitable sortable sticky-header lighttable align-center-1\" width=\"95%\" style=\"text-align:center\" ! Code !Map !Location !Points of Interest",
+      "domain_group": "fairy_ring_node",
+      "code": "DLS"
+    },
+    {
+      "unlock": "Spirit tree: Tree Gnome Village in the middle of the Gnome Maze",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Tree Gnome Village in the middle of the Gnome Maze",
+      "domain_group": "spirit_tree_node"
+    },
+    {
+      "unlock": "Spirit tree: Gnome Stronghold",
+      "type": "transport",
+      "requirements": {
+        "quests": [
+          "The Grand Tree"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Gnome Stronghold (requires completion of The Grand Tree quest to travel from this location. Before the quest, it can still be used as the destination while travelling from other trees).",
+      "domain_group": "spirit_tree_node"
+    },
+    {
+      "unlock": "Spirit tree: Battlefield of Khazard - just south of West Ardougne.",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Battlefield of Khazard - just south of West Ardougne.",
+      "domain_group": "spirit_tree_node"
+    },
+    {
+      "unlock": "Spirit tree: North-east corner of the Grand Exchange in Varrock.",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "North-east corner of the Grand Exchange in Varrock.",
+      "domain_group": "spirit_tree_node"
+    },
+    {
+      "unlock": "Spirit tree: South-west corner of Feldip Hills, next to the Myths' Guild.",
+      "type": "transport",
+      "requirements": {
+        "quests": [],
+        "skills": {},
+        "items": []
+      },
+      "notes": "South-west corner of Feldip Hills, next to the Myths' Guild.",
+      "domain_group": "spirit_tree_node"
+    },
+    {
+      "unlock": "Spirit tree: East of the Poison Waste",
+      "type": "transport",
+      "requirements": {
+        "quests": [
+          "The Path of Glouphrie"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "East of the Poison Waste (requires partial completion of The Path of Glouphrie)",
+      "domain_group": "spirit_tree_node"
+    },
+    {
+      "unlock": "Spirit tree: Prifddinas",
+      "type": "transport",
+      "requirements": {
+        "quests": [
+          "Song of the Elves"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "Prifddinas (requires completion of Song of the Elves quest)",
+      "domain_group": "spirit_tree_node"
+    },
+    {
+      "unlock": "Spirit tree: Laguna Aurorae",
+      "type": "transport",
+      "requirements": {
+        "quests": [
+          "Pandemonium"
+        ],
+        "skills": {
+          "Sailing": 58
+        },
+        "items": []
+      },
+      "notes": "Laguna Aurorae (requires completion of Pandemonium, 58 Sailing, and having moored at the island at least once)",
+      "domain_group": "spirit_tree_node"
+    },
+    {
+      "unlock": "Gnome glider: Ta Quir Priw",
+      "type": "transport",
+      "requirements": {
+        "quests": [
+          "The Grand Tree"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "* Ta Quir Priw – The Grand Tree, piloted by Captain Errdo | ** The top level provides normal service. | ** On the there is a special service during the Monkey Madness I quest.",
+      "domain_group": "gnome_glider_node"
+    },
+    {
+      "unlock": "Gnome glider: Gandius",
+      "type": "transport",
+      "requirements": {
+        "quests": [
+          "The Grand Tree"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "* Gandius – South of the Shipyard on Karamja, piloted by Captain Klemfoodle",
+      "domain_group": "gnome_glider_node"
+    },
+    {
+      "unlock": "Gnome glider: Kar-Hewo",
+      "type": "transport",
+      "requirements": {
+        "quests": [
+          "The Grand Tree"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "* Kar-Hewo – Al Kharid, piloted by Captain Dalbur",
+      "domain_group": "gnome_glider_node"
+    },
+    {
+      "unlock": "Gnome glider: Sindarpos",
+      "type": "transport",
+      "requirements": {
+        "quests": [
+          "The Grand Tree"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "* Sindarpos – The peak of White Wolf Mountain, piloted by Captain Bleemadge",
+      "domain_group": "gnome_glider_node"
+    },
+    {
+      "unlock": "Gnome glider: Lemanto Andra",
+      "type": "transport",
+      "requirements": {
+        "quests": [
+          "The Grand Tree"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "* Lemanto Andra – Just west of the Digsite near Varrock, piloted by Captain Errdo | Note: ** This trip is one-way; the glider will crash and you cannot fly back from here. Also, you cannot use the closest gate unless you have 153 kudos at the Varrock Museum.",
+      "domain_group": "gnome_glider_node"
+    },
+    {
+      "unlock": "Gnome glider: Lemantolly Undri",
+      "type": "transport",
+      "requirements": {
+        "quests": [
+          "The Grand Tree",
+          "One Small Favour"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "* Lemantolly Undri – Western Feldip Hills, piloted by Gnormadium Avlafrim | ** Close to Fairy Ring | ** One Small Favour must be completed to access this glider.",
+      "domain_group": "gnome_glider_node"
+    },
+    {
+      "unlock": "Gnome glider: Ookookolly Undri",
+      "type": "transport",
+      "requirements": {
+        "quests": [
+          "The Grand Tree",
+          "Monkey Madness II"
+        ],
+        "skills": {},
+        "items": []
+      },
+      "notes": "* Ookookolly Undri – North-west on Ape Atoll, piloted by Captain Shoracks | ** Monkey Madness II must be completed to access this glider.",
+      "domain_group": "gnome_glider_node"
+    }
+  ],
+  "_excluded": [
+    {
+      "unlock": "Grand Exchange-dependent transport convenience",
+      "reason": "No GE-buy/sell transport methods exist in this domain; account-type income gate (requires_ge) is not triggered for unlock/transport records. Listed here only to document that the account-type exclusion rule was evaluated and found N/A."
+    }
+  ]
+}

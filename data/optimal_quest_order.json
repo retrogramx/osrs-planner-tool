@@ -1,0 +1,3999 @@
+{
+  "_provenance": {
+    "domain": "optimal_quest_order",
+    "source_urls": [
+      "https://oldschool.runescape.wiki/w/Optimal_quest_guide?action=raw",
+      "https://oldschool.runescape.wiki/w/Optimal_quest_guide/Ironman?action=raw",
+      "https://oldschool.runescape.wiki/w/Optimal_quest_guide/Free-to-play?action=raw"
+    ],
+    "source_query": null,
+    "accessed": "2026-06-17T18:21:00Z",
+    "license": "CC BY-NC-SA 3.0",
+    "extraction_method": "script",
+    "raw_files": [
+      "data/raw/optimal_quest_guide_main.wikitext",
+      "data/raw/optimal_quest_guide_ironman.wikitext",
+      "data/raw/optimal_quest_guide_f2p.wikitext"
+    ],
+    "record_count": 485,
+    "completeness": {
+      "bounded_by": "OSRS Wiki Optimal quest guide tables (main + Ironman + F2P editorial sequences)",
+      "universe_count": 485,
+      "records_count": 485,
+      "known_missing": [
+        "Notable quest unlocks section (transcluded template {{Optimal quest guide/Recommended Quests}}; not in raw wikitext of these pages)",
+        "Per-quest skill/XP requirements columns omitted by domain spec (record schema is order_index/quest/account_variant/notable_unlocks)",
+        "Free-to-play/Ironman combined sub-guide (Optimal quest guide/Free-to-play/Ironman) not requested"
+      ]
+    },
+    "domain_stats": {
+      "main_rows": 234,
+      "main_true_quests": 189,
+      "ironman_rows": 228,
+      "ironman_true_quests": 189,
+      "f2p_rows": 23,
+      "f2p_true_quests": 23,
+      "row_type_counts": {
+        "quest": 401,
+        "unlock": 14,
+        "miniquest": 23,
+        "achievement_diary": 40,
+        "partial_quest_step": 7
+      }
+    },
+    "fix_notes": [
+      "2026-06-17: Re-tagged 1 mis-classified row (ironman order_index 179, 'All Easy Achievement Diaries') from row_type=quest/is_quest=true to row_type=achievement_diary/is_quest=false (group diary row, qp=0, per source wikitext); corrected domain_stats counters (ironman_true_quests 190->189, row_type_counts.quest 402->401, achievement_diary 39->40). No new data fetched."
+    ]
+  },
+  "records": [
+    {
+      "order_index": 1,
+      "quest": "Learning the Ropes",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 2,
+      "quest": "Cook's Assistant",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 3,
+      "quest": "Sheep Shearer",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 4,
+      "quest": "Misthalin Mystery",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 5,
+      "quest": "Prince Ali Rescue",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3
+    },
+    {
+      "order_index": 6,
+      "quest": "The Restless Ghost",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 7,
+      "quest": "Rune Mysteries",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Unlocks the ability to use lamps and books of knowledge on the Runecraft skill."
+    },
+    {
+      "order_index": 8,
+      "quest": "Unlock: Stronghold of Security",
+      "account_variant": "main",
+      "row_type": "unlock",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 9,
+      "quest": "Imp Catcher",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 10,
+      "quest": "Witch's Potion",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 11,
+      "quest": "Gertrude's Cat",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Allows raising of cats. It is recommended to start raising a kitten to speed up Recipe for Disaster/Freeing Evil Dave and Ratcatchers."
+    },
+    {
+      "order_index": 12,
+      "quest": "Children of the Sun",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Allows access to Varlamore. Consider completing this quest whilst in Varrock Square during Gertrude's Cat to minimise time spent moving back and forth. Additionally, visit Varlamore once via Regulus Cento in order to unlock all other transportation methods to the region."
+    },
+    {
+      "order_index": 13,
+      "quest": "Natural history quiz (miniquest)",
+      "account_variant": "main",
+      "row_type": "miniquest",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 14,
+      "quest": "Daddy's Home (miniquest)",
+      "account_variant": "main",
+      "row_type": "miniquest",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 15,
+      "quest": "Dwarf Cannon",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "It is recommended to complete (or choose the option to skip) the Barbarian Assault tutorial, to unlock the minigame teleport. This makes it easier to reach the quest finish location more quickly. Or just use the teleport from a games necklace. Be sure to start the Alfred Grimhand's Barcrawl miniquest when you are there, and visit nearby bars while questing. Grants access to the dwarf multicannon and allows smithing of cannonballs. It may be advantageous to progress Doric's Quest and The Knight's Sword when visiting Nulodion near Falador for this quest."
+    },
+    {
+      "order_index": 16,
+      "quest": "Waterfall Quest",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Speak to King Bolren part-way through the quest to start Tree Gnome Village and unlock Elkoy's follow option."
+    },
+    {
+      "order_index": 17,
+      "quest": "Tree Gnome Village",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2,
+      "notable_unlocks": "Grants the ability to use spirit trees."
+    },
+    {
+      "order_index": 18,
+      "quest": "Doric's Quest",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 19,
+      "quest": "Witch's House",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 4
+    },
+    {
+      "order_index": 20,
+      "quest": "The Knight's Sword",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 21,
+      "quest": "The Tourist Trap",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 22,
+      "quest": "Black Knights' Fortress",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3
+    },
+    {
+      "order_index": 23,
+      "quest": "Druidic Ritual",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 4,
+      "notable_unlocks": "Grants access to the Herblore skill. Players can start (but unadvised to attempt to finish) Dragon Slayer I after this quest to be allowed to equip the anti-dragon shield to make some quests easier. However this will enable dragon tasks for Slayer which give low experience per hour."
+    },
+    {
+      "order_index": 24,
+      "quest": "Recruitment Drive",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 25,
+      "quest": "Goblin Diplomacy",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 5
+    },
+    {
+      "order_index": 26,
+      "quest": "Sleeping Giants",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Gives access to Giants' Foundry minigame. If you complete nine iron/steel sword commissions now, it will take care of Smithing training you will need later."
+    },
+    {
+      "order_index": 27,
+      "quest": "Fight Arena",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 28,
+      "quest": "Plague City",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Grants the use of Ardougne teleport and Ardougne teleport (tablet)."
+    },
+    {
+      "order_index": 29,
+      "quest": "Monk's Friend",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 30,
+      "quest": "Hazeel Cult",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 31,
+      "quest": "Sheep Herder",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 4
+    },
+    {
+      "order_index": 32,
+      "quest": "Biohazard",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3
+    },
+    {
+      "order_index": 33,
+      "quest": "Tower of Life",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2,
+      "notable_unlocks": "Gives access to Creature Creation minigame."
+    },
+    {
+      "order_index": 34,
+      "quest": "Tribal Totem",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 35,
+      "quest": "Death Plateau",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 36,
+      "quest": "Merlin's Crystal",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 6
+    },
+    {
+      "order_index": 37,
+      "quest": "Holy Grail",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 38,
+      "quest": "Murder Mystery",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3
+    },
+    {
+      "order_index": 39,
+      "quest": "The Grand Tree",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 5,
+      "notable_unlocks": "Allows use of gnome glider transportation system. Along with the earlier completion of Fight Arena, Holy Grail, Tree Gnome Village, and Witch's House, this unlocks the Nightmare Zone minigame teleport due to having five quest bosses unlocked."
+    },
+    {
+      "order_index": 40,
+      "quest": "Easy Ardougne Diary",
+      "account_variant": "main",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0,
+      "notable_unlocks": "Use the Antique lamp (easy) on Agility. This unlocks an infinite teleport to the Ardougne Monastery."
+    },
+    {
+      "order_index": 41,
+      "quest": "Rag and Bone Man I",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 42,
+      "quest": "Priest in Peril",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Allows access to Morytania. Consider gathering all resources for both this quest and Nature Spirit to reduce travel back and forth."
+    },
+    {
+      "order_index": 43,
+      "quest": "Nature Spirit",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 44,
+      "quest": "Ghosts Ahoy",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2,
+      "notable_unlocks": "The quest unlocks Ectophial and gives free access to Port Phasmatys."
+    },
+    {
+      "order_index": 45,
+      "quest": "Making History",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3
+    },
+    {
+      "order_index": 46,
+      "quest": "The Ides of Milk",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 47,
+      "quest": "The Lost Tribe",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Allows access to Nardok's Bone Weapons where players can purchase the Dorgeshuun crossbow and bone bolts for early Ranged training."
+    },
+    {
+      "order_index": 48,
+      "quest": "Death to the Dorgeshuun",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 49,
+      "quest": "Elemental Workshop I",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 50,
+      "quest": "Icthlarin's Little Helper",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 51,
+      "quest": "The Golem",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 52,
+      "quest": "The Ribbiting Tale of a Lily Pad Labour Dispute",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 53,
+      "quest": "Lost City",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3,
+      "notable_unlocks": "Grants the ability to make cosmic runes and to use the dragon dagger and the dragon longsword. It is recommended to cut and save two dramen branches for use in later quests."
+    },
+    {
+      "order_index": 54,
+      "quest": "Fairytale I - Growing Pains",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2,
+      "notable_unlocks": "Immediately start Fairytale II - Cure a Queen and progress until you unlock the fairy ring network (see that quest's guide), and leave the rest of the quest for later. Unlocking this greatly improves mobility around the world, and gives access to several Achievement Diary tasks."
+    },
+    {
+      "order_index": 55,
+      "quest": "Recipe for Disaster/Another Cook's Quest",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 56,
+      "quest": "Recipe for Disaster/Freeing the Goblin generals",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 57,
+      "quest": "Sea Slug",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 58,
+      "quest": "Pandemonium",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 59,
+      "quest": "Prying Times",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 60,
+      "quest": "Current Affairs",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 61,
+      "quest": "Fishing Contest",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 62,
+      "quest": "Recipe for Disaster/Freeing the Mountain Dwarf",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 63,
+      "quest": "Mountain Daughter",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 64,
+      "quest": "Ratcatchers",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2,
+      "notable_unlocks": "Requires starting The Giant Dwarf to access Keldagrim, but completion is not required. Unlocks lazy and wily cats, useful for catching hell-rats later on. To save time, one can easily grab Rat poison and complete Clock Tower when in Ardougne for Jimmy Dazzler. Additionally, complete The Feud while in Pollnivneach for the snake charmer."
+    },
+    {
+      "order_index": 65,
+      "quest": "The Feud",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 66,
+      "quest": "Death on the Isle",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 67,
+      "quest": "Alfred Grimhand's Barcrawl (miniquest)",
+      "account_variant": "main",
+      "row_type": "miniquest",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 68,
+      "quest": "Scorpion Catcher",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 69,
+      "quest": "The Dig Site",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 70,
+      "quest": "Elemental Workshop II",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 71,
+      "quest": "A Soul's Bane",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 72,
+      "quest": "Enter the Abyss (miniquest)",
+      "account_variant": "main",
+      "row_type": "miniquest",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 73,
+      "quest": "X Marks the Spot",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 74,
+      "quest": "Pirate's Treasure",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 75,
+      "quest": "Client of Kourend",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 76,
+      "quest": "The Queen of Thieves",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 77,
+      "quest": "The Depths of Despair",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 78,
+      "quest": "A Porcine of Interest",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 79,
+      "quest": "Wanted!",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 80,
+      "quest": "Shield of Arrav",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "You need a partner for this quest. This quest also gives access to another lamp when talking to Historian Minas."
+    },
+    {
+      "order_index": 81,
+      "quest": "Unlock: Varrock Museum Kudos",
+      "account_variant": "main",
+      "row_type": "unlock",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 82,
+      "quest": "Bone Voyage",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Unlocks Fossil Island, which gives access to ammonite crabs for combat training and possible fossil drops, and bird house trapping for fast Hunter experience. It is recommended to train Hunter on bird houses from now on."
+    },
+    {
+      "order_index": 83,
+      "quest": "Watchtower",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 4
+    },
+    {
+      "order_index": 84,
+      "quest": "The Giant Dwarf",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 85,
+      "quest": "Forgettable Tale...",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 86,
+      "quest": "Another Slice of H.A.M.",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Unlocks the Dorgesh-Kaan–Keldagrim train system."
+    },
+    {
+      "order_index": 87,
+      "quest": "Vampyre Slayer",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3
+    },
+    {
+      "order_index": 88,
+      "quest": "Ernest the Chicken",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 4
+    },
+    {
+      "order_index": 89,
+      "quest": "Demon Slayer",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3
+    },
+    {
+      "order_index": 90,
+      "quest": "Shadow of the Storm",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 91,
+      "quest": "Horror from the Deep",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 92,
+      "quest": "Animal Magnetism",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Unlocks access to Ava's devices."
+    },
+    {
+      "order_index": 93,
+      "quest": "Creature of Fenkenstrain",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 94,
+      "quest": "Big Chompy Bird Hunting",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 95,
+      "quest": "Jungle Potion",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 96,
+      "quest": "Shilo Village",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 97,
+      "quest": "Easy Karamja Diary",
+      "account_variant": "main",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 98,
+      "quest": "Zogre Flesh Eaters",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 99,
+      "quest": "Observatory Quest",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 100,
+      "quest": "Spirits of the Elid",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 101,
+      "quest": "Garden of Tranquillity",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 102,
+      "quest": "Enlightened Journey",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Unlocks access to the balloon transport system."
+    },
+    {
+      "order_index": 103,
+      "quest": "Unlock: Balloon transport system to Crafting Guild",
+      "account_variant": "main",
+      "row_type": "unlock",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 104,
+      "quest": "Unlock: Balloon transport system to Varrock",
+      "account_variant": "main",
+      "row_type": "unlock",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 105,
+      "quest": "Romeo & Juliet",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 5,
+      "notable_unlocks": "Useful for its reward of 5 Quest points, which grants players more time inside the Tears of Guthix minigame."
+    },
+    {
+      "order_index": 106,
+      "quest": "Tears of Guthix",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Gives access to the Tears of Guthix minigame, which provides experience in your lowest skill."
+    },
+    {
+      "order_index": 107,
+      "quest": "In Search of the Myreque",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 108,
+      "quest": "Shades of Mort'ton",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3
+    },
+    {
+      "order_index": 109,
+      "quest": "In Aid of the Myreque",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 110,
+      "quest": "Skippy and the Mogres (miniquest)",
+      "account_variant": "main",
+      "row_type": "miniquest",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 111,
+      "quest": "Troll Stronghold",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Grants the ability to make law runes."
+    },
+    {
+      "order_index": 112,
+      "quest": "Troll Romance",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 113,
+      "quest": "Darkness of Hallowvale",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 114,
+      "quest": "Underground Pass",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 5
+    },
+    {
+      "order_index": 115,
+      "quest": "Regicide",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3
+    },
+    {
+      "order_index": 116,
+      "quest": "Dragon Slayer I",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2,
+      "notable_unlocks": "Starting this quest unlocks dragons Slayer tasks, and access to anti-dragon shields and antifire potions. These tasks give low experience per hour, so it can be beneficial not to start this quest any earlier."
+    },
+    {
+      "order_index": 117,
+      "quest": "The Fremennik Trials",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3
+    },
+    {
+      "order_index": 118,
+      "quest": "The Fremennik Isles",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 119,
+      "quest": "Recipe for Disaster/Freeing Evil Dave",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Gives access to spicy stews, which can be useful for boosting stats."
+    },
+    {
+      "order_index": 120,
+      "quest": "Recipe for Disaster/Freeing Pirate Pete",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 121,
+      "quest": "Tai Bwo Wannai Trio",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 122,
+      "quest": "Easy Kandarin Diary",
+      "account_variant": "main",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 123,
+      "quest": "Contact!",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 124,
+      "quest": "Temple of Ikov",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 125,
+      "quest": "The Eyes of Glouphrie",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2,
+      "notable_unlocks": "Unlocks access to the crystal saw, which gives an invisible +3 boost to Construction."
+    },
+    {
+      "order_index": 126,
+      "quest": "Temple of the Eye",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 127,
+      "quest": "One Small Favour",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 128,
+      "quest": "The Ascent of Arceuus",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 129,
+      "quest": "Tale of the Righteous",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 130,
+      "quest": "The Forsaken Tower",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 131,
+      "quest": "Easy Desert Diary",
+      "account_variant": "main",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 132,
+      "quest": "Easy Fremennik Diary",
+      "account_variant": "main",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 133,
+      "quest": "Easy Falador Diary",
+      "account_variant": "main",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 134,
+      "quest": "Easy Kourend & Kebos Diary",
+      "account_variant": "main",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 135,
+      "quest": "Easy Lumbridge & Draynor Diary",
+      "account_variant": "main",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 136,
+      "quest": "Easy Morytania Diary",
+      "account_variant": "main",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 137,
+      "quest": "Easy Varrock Diary",
+      "account_variant": "main",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 138,
+      "quest": "Easy Western Provinces Diary",
+      "account_variant": "main",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 139,
+      "quest": "Easy Wilderness Diary",
+      "account_variant": "main",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 140,
+      "quest": "Between a Rock...",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 141,
+      "quest": "The Slug Menace",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 142,
+      "quest": "Getting Ahead",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 143,
+      "quest": "Unlock: Museum Camp",
+      "account_variant": "main",
+      "row_type": "unlock",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 144,
+      "quest": "Cold War",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 145,
+      "quest": "The Hand in the Sand",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 146,
+      "quest": "Enakhra's Lament",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 147,
+      "quest": "Eadgar's Ruse",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 148,
+      "quest": "My Arm's Big Adventure",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 149,
+      "quest": "The Garden of Death",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 150,
+      "quest": "Rag and Bone Man II",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 151,
+      "quest": "Rum Deal",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 152,
+      "quest": "Cabin Fever",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 153,
+      "quest": "Meat and Greet",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 154,
+      "quest": "Recipe for Disaster/Freeing the Lumbridge Guide",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 155,
+      "quest": "Recipe for Disaster/Freeing Skrach Uglogwee",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 156,
+      "quest": "Heroes' Quest",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 157,
+      "quest": "Throne of Miscellania",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Gives access to Managing Miscellania."
+    },
+    {
+      "order_index": 158,
+      "quest": "Royal Trouble",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 159,
+      "quest": "Haunted Mine",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 160,
+      "quest": "Lair of Tarn Razorlor (miniquest)",
+      "account_variant": "main",
+      "row_type": "miniquest",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 161,
+      "quest": "Monkey Madness I",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3
+    },
+    {
+      "order_index": 162,
+      "quest": "Ethically Acquired Antiquities",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 163,
+      "quest": "Twilight's Promise",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Ability to use the Civitas illa Fortis Teleport spell and the Quetzal Transport System in Varlamore"
+    },
+    {
+      "order_index": 164,
+      "quest": "Roving Elves",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 165,
+      "quest": "Mourning's End Part I",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 166,
+      "quest": "Mourning's End Part II",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 167,
+      "quest": "Desert Treasure I",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3,
+      "notable_unlocks": "Unlocks the ability to use Ancient Magicks."
+    },
+    {
+      "order_index": 168,
+      "quest": "Family Crest",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Boost magic using a magic potion, or alternatively train 2 more levels and boost using a wizard's mind bomb. Unlocks steel gauntlets which can be useful when training Smithing, Cooking or Magic."
+    },
+    {
+      "order_index": 169,
+      "quest": "What Lies Below",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Unlocks access to battlestaves in Zaff's Superior Staffs!"
+    },
+    {
+      "order_index": 170,
+      "quest": "Eagles' Peak",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2,
+      "notable_unlocks": "Unlocks box trap hunting."
+    },
+    {
+      "order_index": 171,
+      "quest": "A Tail of Two Cats",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 172,
+      "quest": "Legends' Quest",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 4
+    },
+    {
+      "order_index": 173,
+      "quest": "Land of the Goblins",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 174,
+      "quest": "Recipe for Disaster/Freeing Sir Amik Varze",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 175,
+      "quest": "Olaf's Quest",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 176,
+      "quest": "A Kingdom Divided",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2,
+      "notable_unlocks": "Unlocks more spells in the Arceuus spellbook. Use both Antique lamp (A Kingdom Divided) on Slayer."
+    },
+    {
+      "order_index": 177,
+      "quest": "A Taste of Hope",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 178,
+      "quest": "At First Light",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Access to Master Tier Hunters' Rumours. This shouldn't require much training if birdhouses were done during prior quests."
+    },
+    {
+      "order_index": 179,
+      "quest": "Unlock: Balloon transport system to Castle Wars",
+      "account_variant": "main",
+      "row_type": "unlock",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 180,
+      "quest": "Medium Ardougne Diary",
+      "account_variant": "main",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 181,
+      "quest": "Medium Desert Diary",
+      "account_variant": "main",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 182,
+      "quest": "Medium Falador Diary",
+      "account_variant": "main",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 183,
+      "quest": "Medium Fremennik Diary",
+      "account_variant": "main",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 184,
+      "quest": "Medium Kandarin Diary",
+      "account_variant": "main",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 185,
+      "quest": "Medium Kourend & Kebos Diary",
+      "account_variant": "main",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 186,
+      "quest": "Medium Lumbridge & Draynor Diary",
+      "account_variant": "main",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 187,
+      "quest": "Medium Morytania Diary",
+      "account_variant": "main",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 188,
+      "quest": "Medium Varrock Diary",
+      "account_variant": "main",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 189,
+      "quest": "Medium Western Provinces Diary",
+      "account_variant": "main",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 190,
+      "quest": "Curse of the Empty Lord (miniquest)",
+      "account_variant": "main",
+      "row_type": "miniquest",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 191,
+      "quest": "The General's Shadow (miniquest)",
+      "account_variant": "main",
+      "row_type": "miniquest",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 192,
+      "quest": "Unlock: More Varrock Museum Kudos",
+      "account_variant": "main",
+      "row_type": "unlock",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 193,
+      "quest": "His Faithful Servants (miniquest)",
+      "account_variant": "main",
+      "row_type": "miniquest",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 194,
+      "quest": "The Great Brain Robbery",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 195,
+      "quest": "Scrambled!",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 196,
+      "quest": "Fairytale II - Cure a Queen",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 197,
+      "quest": "Recipe for Disaster/Freeing King Awowogei",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 198,
+      "quest": "Recipe for Disaster/Defeating the Culinaromancer",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 199,
+      "quest": "Perilous Moons",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 200,
+      "quest": "The Path of Glouphrie",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 201,
+      "quest": "The Heart of Darkness",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 202,
+      "quest": "Lunar Diplomacy",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2,
+      "notable_unlocks": "Unlocks the Lunar spellbook's core spells."
+    },
+    {
+      "order_index": 203,
+      "quest": "King's Ransom",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 204,
+      "quest": "Knight Waves Training Grounds (miniquest)",
+      "account_variant": "main",
+      "row_type": "miniquest",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 205,
+      "quest": "Swan Song",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 206,
+      "quest": "Below Ice Mountain",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 207,
+      "quest": "Defender of Varrock",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 0
+    },
+    {
+      "order_index": 208,
+      "quest": "Devious Minds",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 209,
+      "quest": "Grim Tales",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 210,
+      "quest": "Dream Mentor",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2,
+      "notable_unlocks": "Unlocks additional spells in the Lunar spellbook. Use the Dreamy lamp on Magic."
+    },
+    {
+      "order_index": 211,
+      "quest": "Medium Karamja Diary",
+      "account_variant": "main",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 212,
+      "quest": "Medium Wilderness Diary",
+      "account_variant": "main",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 213,
+      "quest": "The Fremennik Exiles",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 214,
+      "quest": "Sins of the Father",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 215,
+      "quest": "Unlock: Balloon transport system to Grand Tree",
+      "account_variant": "main",
+      "row_type": "unlock",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 216,
+      "quest": "In Search of Knowledge (miniquest)",
+      "account_variant": "main",
+      "row_type": "miniquest",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 217,
+      "quest": "Hopespear's Will (miniquest)",
+      "account_variant": "main",
+      "row_type": "miniquest",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 218,
+      "quest": "Beneath Cursed Sands",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 219,
+      "quest": "Shadows of Custodia",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 220,
+      "quest": "Troubled Tortugans",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 221,
+      "quest": "The Red Reef",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 222,
+      "quest": "Monkey Madness II",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 4
+    },
+    {
+      "order_index": 223,
+      "quest": "Into the Tombs (miniquest)",
+      "account_variant": "main",
+      "row_type": "miniquest",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 224,
+      "quest": "A Night at the Theatre",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 225,
+      "quest": "Dragon Slayer II",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 5
+    },
+    {
+      "order_index": 226,
+      "quest": "The Curse of Arrav",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 227,
+      "quest": "Making Friends with My Arm",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 228,
+      "quest": "Secrets of the North",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 229,
+      "quest": "The Final Dawn",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3
+    },
+    {
+      "order_index": 230,
+      "quest": "While Guthix Sleeps",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 5
+    },
+    {
+      "order_index": 231,
+      "quest": "Desert Treasure II - The Fallen Empire",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 5
+    },
+    {
+      "order_index": 232,
+      "quest": "Song of the Elves",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 4
+    },
+    {
+      "order_index": 233,
+      "quest": "Clock Tower",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 234,
+      "quest": "The Corsair Curse",
+      "account_variant": "main",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2,
+      "notable_unlocks": "Unlocks access to the Feldip Hills via boat."
+    },
+    {
+      "order_index": 1,
+      "quest": "Learning the Ropes",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 2,
+      "quest": "Cook's Assistant",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 3,
+      "quest": "Sheep Shearer",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 4,
+      "quest": "Misthalin Mystery",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 5,
+      "quest": "The Restless Ghost",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 6,
+      "quest": "X Marks the Spot",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 7,
+      "quest": "Witch's Potion",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 8,
+      "quest": "Client of Kourend",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 9,
+      "quest": "Pandemonium",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 10,
+      "quest": "Partially complete: Pirate's Treasure",
+      "account_variant": "ironman",
+      "row_type": "partial_quest_step",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 11,
+      "quest": "Unlock: Stronghold of Security",
+      "account_variant": "ironman",
+      "row_type": "unlock",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 12,
+      "quest": "Children of the Sun",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Allows access to Varlamore. While in the Varrock town square:"
+    },
+    {
+      "order_index": 13,
+      "quest": "Romeo & Juliet",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 5
+    },
+    {
+      "order_index": 14,
+      "quest": "Gertrude's Cat",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Allows raising of cats. Raise a kitten to a cat to speed up Recipe for Disaster/Freeing Evil Dave and Ratcatchers. Note: Raw karambwanji is a stackable fish that can be fed to cats. Consider catching some on the next trip to Karamja. Save the stew reward for The Queen of Thieves, and the chocolate cake for A Tail of Two Cats."
+    },
+    {
+      "order_index": 15,
+      "quest": "Daddy's Home (miniquest)",
+      "account_variant": "ironman",
+      "row_type": "miniquest",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 16,
+      "quest": "Natural history quiz (miniquest)",
+      "account_variant": "ironman",
+      "row_type": "miniquest",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 17,
+      "quest": "Partially complete: Demon Slayer",
+      "account_variant": "ironman",
+      "row_type": "partial_quest_step",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 18,
+      "quest": "Rune Mysteries",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Unlocks the ability to use lamps and books of knowledge on the Runecraft skill. Complete during Demon Slayer."
+    },
+    {
+      "order_index": 19,
+      "quest": "Partially complete: Enter the Abyss",
+      "account_variant": "ironman",
+      "row_type": "partial_quest_step",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 20,
+      "quest": "Tree Gnome Village",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2,
+      "notable_unlocks": "Allows the use of spirit trees. Optional: Hardcore ironmen may consider completing Witch's House first for the safety of the additional hitpoints."
+    },
+    {
+      "order_index": 21,
+      "quest": "Hazeel Cult",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 22,
+      "quest": "Clock Tower",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 23,
+      "quest": "Monk's Friend",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 24,
+      "quest": "Plague City",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Allows use of Ardougne teleport spell."
+    },
+    {
+      "order_index": 25,
+      "quest": "Biohazard",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3
+    },
+    {
+      "order_index": 26,
+      "quest": "Demon Slayer",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3
+    },
+    {
+      "order_index": 27,
+      "quest": "Enter the Abyss (miniquest)",
+      "account_variant": "ironman",
+      "row_type": "miniquest",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 28,
+      "quest": "Easy Ardougne Diary",
+      "account_variant": "ironman",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 29,
+      "quest": "Fight Arena",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 30,
+      "quest": "Sheep Herder",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 4
+    },
+    {
+      "order_index": 31,
+      "quest": "Partially complete: Dwarf Cannon",
+      "account_variant": "ironman",
+      "row_type": "partial_quest_step",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 32,
+      "quest": "Unlock: Barbarian Assault teleport Partially complete Alfred Grimhand's Barcrawl",
+      "account_variant": "ironman",
+      "row_type": "unlock",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 33,
+      "quest": "Waterfall Quest",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 34,
+      "quest": "Murder Mystery",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3
+    },
+    {
+      "order_index": 35,
+      "quest": "Merlin's Crystal",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 6
+    },
+    {
+      "order_index": 36,
+      "quest": "Holy Grail",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 37,
+      "quest": "Doric's Quest",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 38,
+      "quest": "Druidic Ritual",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 4,
+      "notable_unlocks": "Grants access to the Herblore skill."
+    },
+    {
+      "order_index": 39,
+      "quest": "Witch's House",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 4
+    },
+    {
+      "order_index": 40,
+      "quest": "Dwarf Cannon",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "You should be at the step to bring the ammo mould and Nulodion's notes to Captain Lawgof to complete the quest. Completion of this quest allows the use of the dwarf multicannon and smithing of cannonballs."
+    },
+    {
+      "order_index": 41,
+      "quest": "Below Ice Mountain",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 42,
+      "quest": "Black Knights' Fortress",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3
+    },
+    {
+      "order_index": 43,
+      "quest": "Pirate's Treasure",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 44,
+      "quest": "The Ides of Milk",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 45,
+      "quest": "Observatory Quest",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 46,
+      "quest": "Priest in Peril",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Allows access to Morytania. After completion of this quest, use the antique lamp you have been holding since completing the easy Ardougne diary on Prayer."
+    },
+    {
+      "order_index": 47,
+      "quest": "Partially complete: Rag and Bone Man I",
+      "account_variant": "ironman",
+      "row_type": "partial_quest_step",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 48,
+      "quest": "Nature Spirit",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 49,
+      "quest": "Recruitment Drive",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 50,
+      "quest": "Alfred Grimhand's Barcrawl (miniquest)",
+      "account_variant": "ironman",
+      "row_type": "miniquest",
+      "is_quest": false,
+      "quest_points": 0,
+      "notable_unlocks": "You should now have visited all of the required bars. Return to the Barbarian Guard at the gate to the east of the Barbarian Assault building with the barcrawl card to complete the miniquest. Allows use of Barbarian Outpost Agility Course which is required in Scorpion Catcher and Horror from the Deep."
+    },
+    {
+      "order_index": 51,
+      "quest": "Unlock: Anti-dragon shield",
+      "account_variant": "ironman",
+      "row_type": "unlock",
+      "is_quest": false,
+      "quest_points": 0,
+      "notable_unlocks": "Before starting Scorpion Catcher, partial completion of Dragon Slayer I will unlock the Anti-dragon shield to make this quest safer by protecting you from dragonfire in the Taverley Dungeon step. To collect the shield:"
+    },
+    {
+      "order_index": 52,
+      "quest": "Scorpion Catcher",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 53,
+      "quest": "Jungle Potion",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 54,
+      "quest": "Vampyre Slayer",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3
+    },
+    {
+      "order_index": 55,
+      "quest": "A Porcine of Interest",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 56,
+      "quest": "Rag and Bone Man I",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 57,
+      "quest": "Partially complete: Rag and Bone Man II",
+      "account_variant": "ironman",
+      "row_type": "partial_quest_step",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 58,
+      "quest": "Death Plateau",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 59,
+      "quest": "The Queen of Thieves",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 60,
+      "quest": "The Depths of Despair",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 61,
+      "quest": "The Forsaken Tower",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 62,
+      "quest": "Tale of the Righteous",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 63,
+      "quest": "Mountain Daughter",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 64,
+      "quest": "The Grand Tree",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 5,
+      "notable_unlocks": "Allows use of gnome glider transportation system."
+    },
+    {
+      "order_index": 65,
+      "quest": "Tribal Totem",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 66,
+      "quest": "The Dig Site",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 67,
+      "quest": "The Golem",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 68,
+      "quest": "Recipe for Disaster/Another Cook's Quest",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 69,
+      "quest": "The Knight's Sword",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Completion of this quest grants you the Smithing level required to smith iron bars. Smelt both the iron ore and the blurite ore you have gathered at the Falador furnace."
+    },
+    {
+      "order_index": 70,
+      "quest": "Elemental Workshop I",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 71,
+      "quest": "Prince Ali Rescue",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3
+    },
+    {
+      "order_index": 72,
+      "quest": "Shadow of the Storm",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 73,
+      "quest": "Prying Times",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 74,
+      "quest": "Imp Catcher",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 75,
+      "quest": "Elemental Workshop II",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Grants the ability to make and use elemental mind equipment. Bring an extra 4 coal if you plan on making a mind shield."
+    },
+    {
+      "order_index": 76,
+      "quest": "The Ribbiting Tale of a Lily Pad Labour Dispute",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 77,
+      "quest": "Lost City",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3,
+      "notable_unlocks": "Grants the ability to make cosmic runes and to use the dragon dagger and the dragon longsword."
+    },
+    {
+      "order_index": 78,
+      "quest": "Fairytale I - Growing Pains",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 79,
+      "quest": "Partially complete: Fairytale II - Cure a Queen",
+      "account_variant": "ironman",
+      "row_type": "partial_quest_step",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 80,
+      "quest": "Goblin Diplomacy",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 5
+    },
+    {
+      "order_index": 81,
+      "quest": "Recipe for Disaster/Freeing the Goblin generals",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 82,
+      "quest": "Sleeping Giants",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Unlocks Giants' Foundry."
+    },
+    {
+      "order_index": 83,
+      "quest": "Shield of Arrav",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 84,
+      "quest": "Creature of Fenkenstrain",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 85,
+      "quest": "A Soul's Bane",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 86,
+      "quest": "The Lost Tribe",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Allows access to Nardok's Bone Weapons where players can purchase the Dorgeshuun crossbow and bone bolts for early Ranged training. Keep the ring of life quest reward for Curse of Arrav if you do not plan to obtain more."
+    },
+    {
+      "order_index": 87,
+      "quest": "Death to the Dorgeshuun",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Make sure to keep a set of polished buttons from H.A.M. members for Animal Magnetism later. Kill a Cave bug during the quest while traveling underground for an easy Lumbridge & Draynor Diary task. The sapphire lantern is required to complete Tears of Guthix. Consider completing this quest earlier if you have 49 Firemaking as it unlocks a useful weekly minigame for gathering experience in your lowest skill."
+    },
+    {
+      "order_index": 88,
+      "quest": "The Giant Dwarf",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 89,
+      "quest": "Another Slice of H.A.M.",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 90,
+      "quest": "Making History",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3
+    },
+    {
+      "order_index": 91,
+      "quest": "In Search of the Myreque",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 92,
+      "quest": "Shades of Mort'ton",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3
+    },
+    {
+      "order_index": 93,
+      "quest": "In Aid of the Myreque",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2,
+      "notable_unlocks": "A good tip for lower levels: Using Efaritay's aid allows you to use weapons other than the silver sickle when equipped. A mithril bar is needed for this quest. One can be easily obtained by killing chaos dwarves in Taverley Dungeon."
+    },
+    {
+      "order_index": 94,
+      "quest": "Unlock: Varrock Museum Kudos",
+      "account_variant": "ironman",
+      "row_type": "unlock",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 95,
+      "quest": "Bone Voyage",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 96,
+      "quest": "Wanted!",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 97,
+      "quest": "The Feud",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 98,
+      "quest": "Troll Stronghold",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Grants the ability to make law runes."
+    },
+    {
+      "order_index": 99,
+      "quest": "Troll Romance",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 100,
+      "quest": "Dragon Slayer I",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2,
+      "notable_unlocks": "Starting this quest unlocks dragon tasks for Slayer. Completing this quest allows you to use green d'hide body, rune platebody and dragon platebody."
+    },
+    {
+      "order_index": 101,
+      "quest": "Horror from the Deep",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2,
+      "notable_unlocks": "Completing this quest allows you to buy God books. The book of war is cheap protection for God Wars Dungeon."
+    },
+    {
+      "order_index": 102,
+      "quest": "Ernest the Chicken",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 4
+    },
+    {
+      "order_index": 103,
+      "quest": "Animal Magnetism",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 104,
+      "quest": "Shilo Village",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 105,
+      "quest": "Spirits of the Elid",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 106,
+      "quest": "Icthlarin's Little Helper",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 107,
+      "quest": "Ethically Acquired Antiquities",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 108,
+      "quest": "Twilight's Promise",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 109,
+      "quest": "Death on the Isle",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 110,
+      "quest": "Ratcatchers",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 111,
+      "quest": "The Garden of Death",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 112,
+      "quest": "Enlightened Journey",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Allows use of balloon transport system. If the 12 willow branches are obtained from planting the Auguste's sapling, it will require wait 4 hours for the willow tree to grow and then 5 more minutes per branch after checking its health. It may be more desirable to grow your own willow tree before even starting the quest. If you're growing your own willow tree during this quest, you should obtain an extra 6 willow branches so that you may complete the medium Falador Diary task of crafting a basket on the Falador farm loom."
+    },
+    {
+      "order_index": 113,
+      "quest": "Unlock: Balloon transport system to Crafting Guild",
+      "account_variant": "ironman",
+      "row_type": "unlock",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 114,
+      "quest": "Sea Slug",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 115,
+      "quest": "Current Affairs",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 116,
+      "quest": "Fishing Contest",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 117,
+      "quest": "Recipe for Disaster/Freeing the Mountain Dwarf",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 118,
+      "quest": "Ghosts Ahoy",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2,
+      "notable_unlocks": "This quest unlocks the ectophial for an unlimited teleport to the Ectofuntus, and gives free access to Port Phasmatys."
+    },
+    {
+      "order_index": 119,
+      "quest": "Forgettable Tale...",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 120,
+      "quest": "Garden of Tranquillity",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 121,
+      "quest": "Recipe for Disaster/Freeing Evil Dave",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Gain access to spicy stews during the quest, which can be useful for boosting stats."
+    },
+    {
+      "order_index": 122,
+      "quest": "Big Chompy Bird Hunting",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2,
+      "notable_unlocks": "Completion of this quest allows you to make ogre arrows. Keep the Ogre bow for Recipe for Disaster/Freeing Skrach Uglogwee."
+    },
+    {
+      "order_index": 123,
+      "quest": "Zogre Flesh Eaters",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 124,
+      "quest": "Easy Varrock Diary",
+      "account_variant": "ironman",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 125,
+      "quest": "Easy Desert Diary",
+      "account_variant": "ironman",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 126,
+      "quest": "Darkness of Hallowvale",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 127,
+      "quest": "Tower of Life",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 128,
+      "quest": "Recipe for Disaster/Freeing Pirate Pete",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 129,
+      "quest": "Easy Falador Diary",
+      "account_variant": "ironman",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 130,
+      "quest": "Tai Bwo Wannai Trio",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 131,
+      "quest": "The Tourist Trap",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 132,
+      "quest": "Eadgar's Ruse",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 133,
+      "quest": "My Arm's Big Adventure",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 134,
+      "quest": "The Fremennik Trials",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3
+    },
+    {
+      "order_index": 135,
+      "quest": "The Fremennik Isles",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 136,
+      "quest": "Getting Ahead",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 137,
+      "quest": "Recipe for Disaster/Freeing the Lumbridge Guide",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 138,
+      "quest": "Recipe for Disaster/Freeing Skrach Uglogwee",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 139,
+      "quest": "Haunted Mine",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2,
+      "notable_unlocks": "Alternatively can be left until you have 60+ combat stats as this quest has a difficult boss and unlocks no others."
+    },
+    {
+      "order_index": 140,
+      "quest": "Easy Karamja Diary",
+      "account_variant": "ironman",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 141,
+      "quest": "Watchtower",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 4
+    },
+    {
+      "order_index": 142,
+      "quest": "Contact!",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 143,
+      "quest": "The Eyes of Glouphrie",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 144,
+      "quest": "Temple of the Eye",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Unlocks Guardians of the Rift."
+    },
+    {
+      "order_index": 145,
+      "quest": "Unlock: Balloon transport system to Varrock",
+      "account_variant": "ironman",
+      "row_type": "unlock",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 146,
+      "quest": "Olaf's Quest",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 147,
+      "quest": "Tears of Guthix",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1,
+      "notable_unlocks": "Also allows access to the Tears of Guthix minigame, which provides experience in your lowest skill."
+    },
+    {
+      "order_index": 148,
+      "quest": "Temple of Ikov",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 149,
+      "quest": "One Small Favour",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 150,
+      "quest": "A Tail of Two Cats",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 151,
+      "quest": "The Slug Menace",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 152,
+      "quest": "Between a Rock...",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 153,
+      "quest": "Monkey Madness I",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3
+    },
+    {
+      "order_index": 154,
+      "quest": "Cold War",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 155,
+      "quest": "The Ascent of Arceuus",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 156,
+      "quest": "Eagles' Peak",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 157,
+      "quest": "Underground Pass",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 5
+    },
+    {
+      "order_index": 158,
+      "quest": "Skippy and the Mogres (miniquest)",
+      "account_variant": "ironman",
+      "row_type": "miniquest",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 159,
+      "quest": "Rag and Bone Man II",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 160,
+      "quest": "Lair of Tarn Razorlor (miniquest)",
+      "account_variant": "ironman",
+      "row_type": "miniquest",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 161,
+      "quest": "Rum Deal",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 162,
+      "quest": "Cabin Fever",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 163,
+      "quest": "His Faithful Servants (miniquest)",
+      "account_variant": "ironman",
+      "row_type": "miniquest",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 164,
+      "quest": "The Great Brain Robbery",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 165,
+      "quest": "Scrambled!",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 166,
+      "quest": "The Hand in the Sand",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 167,
+      "quest": "Enakhra's Lament",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 168,
+      "quest": "Meat and Greet",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 169,
+      "quest": "Heroes' Quest",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 170,
+      "quest": "Throne of Miscellania",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 171,
+      "quest": "Royal Trouble",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 172,
+      "quest": "Desert Treasure I",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3
+    },
+    {
+      "order_index": 173,
+      "quest": "A Taste of Hope",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 174,
+      "quest": "Family Crest",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 175,
+      "quest": "Legends' Quest",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 4
+    },
+    {
+      "order_index": 176,
+      "quest": "Recipe for Disaster/Freeing Sir Amik Varze",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 177,
+      "quest": "Curse of the Empty Lord (miniquest)",
+      "account_variant": "ironman",
+      "row_type": "miniquest",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 178,
+      "quest": "The General's Shadow (miniquest)",
+      "account_variant": "ironman",
+      "row_type": "miniquest",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 179,
+      "quest": "All Easy Achievement Diaries",
+      "account_variant": "ironman",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 180,
+      "quest": "Medium Ardougne Diary",
+      "account_variant": "ironman",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 181,
+      "quest": "Medium Falador Diary",
+      "account_variant": "ironman",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 182,
+      "quest": "Medium Varrock Diary",
+      "account_variant": "ironman",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 183,
+      "quest": "Medium Kandarin Diary",
+      "account_variant": "ironman",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 184,
+      "quest": "Land of the Goblins",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 185,
+      "quest": "Fairytale II - Cure a Queen",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 186,
+      "quest": "A Kingdom Divided",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 187,
+      "quest": "The Heart of Darkness",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 188,
+      "quest": "Perilous Moons",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 189,
+      "quest": "Recipe for Disaster/Freeing King Awowogei",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 190,
+      "quest": "Regicide",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3
+    },
+    {
+      "order_index": 191,
+      "quest": "Roving Elves",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 192,
+      "quest": "Mourning's End Part I",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 193,
+      "quest": "Mourning's End Part II",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 194,
+      "quest": "Lunar Diplomacy",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 195,
+      "quest": "What Lies Below",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 196,
+      "quest": "King's Ransom",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 197,
+      "quest": "Knight Waves Training Grounds (miniquest)",
+      "account_variant": "ironman",
+      "row_type": "miniquest",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 198,
+      "quest": "Swan Song",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 199,
+      "quest": "Recipe for Disaster/Defeating the Culinaromancer",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 200,
+      "quest": "Grim Tales",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 201,
+      "quest": "Dream Mentor",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 202,
+      "quest": "At First Light",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 203,
+      "quest": "Defender of Varrock",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 204,
+      "quest": "Medium Wilderness Diary",
+      "account_variant": "ironman",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 205,
+      "quest": "Medium Karamja Diary",
+      "account_variant": "ironman",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 206,
+      "quest": "Medium Kourend & Kebos Diary",
+      "account_variant": "ironman",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 207,
+      "quest": "Medium Lumbridge & Draynor Diary",
+      "account_variant": "ironman",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 208,
+      "quest": "Medium Morytania Diary",
+      "account_variant": "ironman",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 209,
+      "quest": "Devious Minds",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 210,
+      "quest": "The Final Dawn",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3
+    },
+    {
+      "order_index": 211,
+      "quest": "Shadows of Custodia",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 212,
+      "quest": "The Path of Glouphrie",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 213,
+      "quest": "The Fremennik Exiles",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 214,
+      "quest": "Sins of the Father",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 215,
+      "quest": "Beneath Cursed Sands",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 216,
+      "quest": "The Curse of Arrav",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 217,
+      "quest": "Making Friends with My Arm",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 218,
+      "quest": "Troubled Tortugans",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 219,
+      "quest": "The Red Reef",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 220,
+      "quest": "Monkey Madness II",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 4
+    },
+    {
+      "order_index": 221,
+      "quest": "Medium Fremennik Diary",
+      "account_variant": "ironman",
+      "row_type": "achievement_diary",
+      "is_quest": false,
+      "quest_points": 0
+    },
+    {
+      "order_index": 222,
+      "quest": "A Night at the Theatre",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 223,
+      "quest": "Dragon Slayer II",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 5
+    },
+    {
+      "order_index": 224,
+      "quest": "Secrets of the North",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 225,
+      "quest": "While Guthix Sleeps",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 5
+    },
+    {
+      "order_index": 226,
+      "quest": "Song of the Elves",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 4
+    },
+    {
+      "order_index": 227,
+      "quest": "Desert Treasure II - The Fallen Empire",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 5
+    },
+    {
+      "order_index": 228,
+      "quest": "The Corsair Curse",
+      "account_variant": "ironman",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 1,
+      "quest": "Cook's Assistant",
+      "account_variant": "f2p",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 2,
+      "quest": "Sheep Shearer",
+      "account_variant": "f2p",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 3,
+      "quest": "X Marks the Spot",
+      "account_variant": "f2p",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 4,
+      "quest": "Pirate's Treasure",
+      "account_variant": "f2p",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 5,
+      "quest": "Rune Mysteries",
+      "account_variant": "f2p",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 6,
+      "quest": "Romeo & Juliet",
+      "account_variant": "f2p",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 5
+    },
+    {
+      "order_index": 7,
+      "quest": "The Restless Ghost",
+      "account_variant": "f2p",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 8,
+      "quest": "Prince Ali Rescue",
+      "account_variant": "f2p",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3
+    },
+    {
+      "order_index": 9,
+      "quest": "Misthalin Mystery",
+      "account_variant": "f2p",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 10,
+      "quest": "Imp Catcher",
+      "account_variant": "f2p",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 11,
+      "quest": "Ernest the Chicken",
+      "account_variant": "f2p",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 4
+    },
+    {
+      "order_index": 12,
+      "quest": "Vampyre Slayer",
+      "account_variant": "f2p",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3
+    },
+    {
+      "order_index": 13,
+      "quest": "Doric's Quest",
+      "account_variant": "f2p",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 14,
+      "quest": "Black Knights' Fortress",
+      "account_variant": "f2p",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3
+    },
+    {
+      "order_index": 15,
+      "quest": "Shield of Arrav",
+      "account_variant": "f2p",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 16,
+      "quest": "Demon Slayer",
+      "account_variant": "f2p",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 3
+    },
+    {
+      "order_index": 17,
+      "quest": "Below Ice Mountain",
+      "account_variant": "f2p",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 18,
+      "quest": "The Knight's Sword",
+      "account_variant": "f2p",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 19,
+      "quest": "Witch's Potion",
+      "account_variant": "f2p",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 20,
+      "quest": "The Corsair Curse",
+      "account_variant": "f2p",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    },
+    {
+      "order_index": 21,
+      "quest": "Goblin Diplomacy",
+      "account_variant": "f2p",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 5
+    },
+    {
+      "order_index": 22,
+      "quest": "The Ides of Milk",
+      "account_variant": "f2p",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 1
+    },
+    {
+      "order_index": 23,
+      "quest": "Dragon Slayer I",
+      "account_variant": "f2p",
+      "row_type": "quest",
+      "is_quest": true,
+      "quest_points": 2
+    }
+  ],
+  "_excluded": []
+}

@@ -1,0 +1,2579 @@
+{
+  "_provenance": {
+    "domain": "minigames",
+    "source_urls": [
+      "https://oldschool.runescape.wiki/api.php?action=bucket&format=json&query=bucket('infobox_activity').select('page_name','is_members_only').limit(500).run()",
+      "https://oldschool.runescape.wiki/api.php?action=parse&prop=wikitext&redirects=1&page=<each infobox_activity page>"
+    ],
+    "source_query": null,
+    "accessed": "2026-06-17",
+    "license": "CC BY-NC-SA 3.0",
+    "extraction_method": "script",
+    "raw_files": [
+      "data/raw/minigames_activity_bucket.json",
+      "data/raw/minigames_pages_wikitext.json"
+    ],
+    "record_count": 93,
+    "completeness": {
+      "bounded_by": "bucket('infobox_activity') page_name universe (OSRS Wiki)",
+      "universe_count": 93,
+      "records_count": 93,
+      "known_missing": []
+    },
+    "domain_stats": {
+      "bucket_rows": 98,
+      "distinct_pages": 93,
+      "pages_with_multiple_activity_infoboxes": {
+        "Brewing": 3,
+        "Grotesque Guardians": 2,
+        "Moons of Peril": 3
+      },
+      "by_activity_type": {
+        "Minigame": 48,
+        "Random event": 14,
+        "Forestry": 9,
+        "unspecified": 8,
+        "Raid": 4,
+        "Boss": 3,
+        "Activity": 3,
+        "Distraction and Diversion": 3,
+        "Quest": 1
+      },
+      "members_count": 67,
+      "f2p_count": 26,
+      "with_rewards_info": 82,
+      "with_requirements_info": 17,
+      "note_members": "members=true derived from bucket is_members_only field being present (empty-string flag = 'Yes'); absent = F2P. Verified against raw infobox 'members=' for a sample.",
+      "note_scope": "Universe is the full infobox_activity bucket, which includes Minigames plus Random events, Forestry events, Raids, Bosses, D&D, and an Activity/Quest tagged page. activity_type (from the infobox 'type' field) distinguishes them; nothing is dropped.",
+      "note_rewards_requirements": "rewards.linked_entities and requirements.linked_entities are verbatim wiki-link targets from the page Rewards/Requirements sections (facts, not paraphrase). requirements.stated and currency are taken verbatim from the infobox. linked_entities preserve verbatim casing (OSRS link targets only normalise the first letter), so 'X points' and 'x points' may both appear.",
+      "note_unlocks": "The optional DOMAIN 'unlocks' field is represented inside rewards.linked_entities (reward-shop items/equipment a minigame unlocks); no separate unlocks key is emitted to avoid duplicating the same wiki facts.",
+      "note_account_type": "Minigames are activities, not money methods; none are GE buy/sell flips, so no records meet the GE-dependent exclusion criterion and _excluded is empty. The members/F2P axis is carried per record via the boolean 'members' field."
+    }
+  },
+  "records": [
+    {
+      "minigame": "Barbarian Assault",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Barbarian Outpost",
+      "players": "5",
+      "skills": [
+        "Combat"
+      ],
+      "release": "4 January 2007",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "Honour points"
+        ],
+        "linked_entities": [
+          "Honour points",
+          "Penance Queen",
+          "Commander Connad",
+          "Barbarian Assault Reward Shop",
+          "Elite Kandarin Diary",
+          "coins",
+          "collection log",
+          "Pet penance queen"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Barrows",
+      "members": true,
+      "activity_type": "Boss",
+      "location": "East of Mort'ton",
+      "players": "1",
+      "skills": [
+        "Combat"
+      ],
+      "release": "9 May 2005",
+      "requirements": {
+        "linked_entities": [
+          "Priest in Peril",
+          "Morytania",
+          "His Faithful Servants"
+        ]
+      },
+      "rewards": {
+        "currency": [
+          "N/A"
+        ],
+        "linked_entities": [
+          "Chest (Barrows)"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Beehive (Forestry event)",
+      "members": true,
+      "activity_type": "Forestry",
+      "location": "Various",
+      "players": null,
+      "skills": [
+        "Woodcutting",
+        "Construction"
+      ],
+      "release": "25 October 2023",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "Anima-infused bark"
+        ],
+        "linked_entities": [
+          "sturdy beehive parts",
+          "Beehive (Construction)",
+          "garden",
+          "formal garden",
+          "player-owned house"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Beekeeper (Random Event)",
+      "members": false,
+      "activity_type": "Random event",
+      "location": "N/A",
+      "players": null,
+      "skills": null,
+      "release": "4 July 2006",
+      "requirements": null,
+      "rewards": {
+        "linked_entities": [
+          "beekeeper's outfit"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Blast Furnace",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Keldagrim",
+      "players": "1+",
+      "skills": [
+        "Smithing",
+        "Firemaking",
+        "Strength",
+        "Agility",
+        "Crafting"
+      ],
+      "release": "23 August 2005",
+      "requirements": {
+        "linked_entities": [
+          "The Giant Dwarf",
+          "Keldagrim",
+          "ring of charos (a)",
+          "Blast Furnace Foreman",
+          "World",
+          "coffer (Blast Furnace)",
+          "RuneScape clock",
+          "Ice gloves",
+          "smiths gloves (i)",
+          "bucket of water"
+        ]
+      },
+      "rewards": {
+        "currency": [
+          "N/A"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Blast mine",
+      "members": true,
+      "activity_type": "Activity",
+      "location": "Lovakengj",
+      "players": null,
+      "skills": null,
+      "release": "7 January 2016",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "None"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Bounty Hunter",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Daimon's Crater",
+      "players": "2+ (11+ for continuous targets)",
+      "skills": [
+        "Combat"
+      ],
+      "release": "18 September 2014",
+      "requirements": {
+        "stated": [
+          "Combat 32 combat level",
+          "Time 12 hours play time"
+        ]
+      },
+      "rewards": {
+        "currency": [
+          "N/A"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Brewing",
+      "members": true,
+      "activity_type": null,
+      "location": "Laughing Miner Pub",
+      "players": null,
+      "skills": [
+        "Cooking"
+      ],
+      "release": "11 July 2005",
+      "requirements": null,
+      "rewards": null,
+      "infobox_variants": 3,
+      "has_infobox": true
+    },
+    {
+      "minigame": "Brimhaven Agility Arena",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Brimhaven",
+      "players": "1",
+      "skills": [
+        "Agility"
+      ],
+      "release": "27 July 2004",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "Brimhaven voucher"
+        ],
+        "linked_entities": [
+          "Agility arena ticket",
+          "Brimhaven voucher",
+          "Karamja Diary",
+          "Pirate Jackie the Fruit",
+          "Agility",
+          "experience",
+          "Karamja gloves 2",
+          "Karamja gloves 3",
+          "Karamja gloves 4"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Burthorpe Games Room",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Burthorpe Castle",
+      "players": "2",
+      "skills": null,
+      "release": "24 November 2004",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "N/A"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Capt' Arnav's Chest",
+      "members": false,
+      "activity_type": "Random event",
+      "location": "N/A",
+      "players": null,
+      "skills": null,
+      "release": "9 August 2005",
+      "requirements": null,
+      "rewards": null,
+      "has_infobox": true
+    },
+    {
+      "minigame": "Castle Wars",
+      "members": false,
+      "activity_type": "Minigame",
+      "location": "West of Yanille (P2P); Ferox Enclave (F2P)",
+      "players": "2+",
+      "skills": [
+        "Combat"
+      ],
+      "release": "13 December 2004",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "Castle wars ticket",
+          "Plaudits"
+        ],
+        "linked_entities": [
+          "Plaudits",
+          "Castle Wars ticket",
+          "Lanthus",
+          "Castle Wars supply crate",
+          "Castle Wars Ticket Exchange"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Certer",
+      "members": false,
+      "activity_type": "Random event",
+      "location": "N/A",
+      "players": null,
+      "skills": null,
+      "release": "9 August 2005",
+      "requirements": null,
+      "rewards": null,
+      "has_infobox": true
+    },
+    {
+      "minigame": "Chambers of Xeric",
+      "members": true,
+      "activity_type": "Raid",
+      "location": "Mount Quidamortem",
+      "players": "1-100",
+      "skills": [
+        "Combat",
+        "Mining",
+        "Woodcutting",
+        "Herblore",
+        "Farming",
+        "Hunter",
+        "Cooking",
+        "Fishing",
+        "Thieving",
+        "Firemaking",
+        "Agility"
+      ],
+      "release": "5 January 2017",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "N/A"
+        ],
+        "linked_entities": [
+          "Ancient chest",
+          "dark journal",
+          "metamorphic dust",
+          "twisted ancestral colour kit",
+          "Chambers of Xeric/Challenge Mode",
+          "creature keeper",
+          "Corrupted scavenger",
+          "Muttadile",
+          "Vasa Nistirio",
+          "Tekton",
+          "Vanguard",
+          "Vespula",
+          "Great Olm",
+          "Captain Rimor"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Champions' Challenge",
+      "members": true,
+      "activity_type": "Distraction and Diversion",
+      "location": "Champions' Guild",
+      "players": null,
+      "skills": [
+        "Combat"
+      ],
+      "release": "12 December 2005",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "None"
+        ],
+        "linked_entities": [
+          "Hitpoints",
+          "Slayer",
+          "Champion's lamp",
+          "Leon d'Cour",
+          "champion's cape"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Clan Wars",
+      "members": false,
+      "activity_type": "Minigame",
+      "location": "Ferox Enclave",
+      "players": "1+",
+      "skills": [
+        "Combat"
+      ],
+      "release": "19 June 2014",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "N/A"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Dorgesh-Kaan market trading",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Dorgesh-Kaan",
+      "players": "1",
+      "skills": null,
+      "release": "20 March 2007",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "Coins"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Drill Demon",
+      "members": false,
+      "activity_type": "Random event",
+      "location": "N/A",
+      "players": null,
+      "skills": null,
+      "release": "24 October 2005",
+      "requirements": null,
+      "rewards": {
+        "linked_entities": [
+          "camouflage outfit"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Duel Arena",
+      "members": false,
+      "activity_type": "Minigame",
+      "location": "Al Kharid",
+      "players": "2",
+      "skills": [
+        "Combat"
+      ],
+      "release": "25 March 2004",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "N/A"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Emir's Arena",
+      "members": false,
+      "activity_type": "Minigame",
+      "location": "Al Kharid",
+      "players": "2+",
+      "skills": [
+        "Combat"
+      ],
+      "release": "13 July 2022",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "N/A"
+        ],
+        "linked_entities": [
+          "Mubariz",
+          "PvP Arena Rewards",
+          "Scroll of imbuing",
+          "Dom Onion's Reward Shop",
+          "Soul Wars Reward Shop",
+          "Blighted surge sack",
+          "surge spells",
+          "Update:The PvP Arena",
+          "amulet of fury",
+          "onyx",
+          "Death rune",
+          "soul rune",
+          "poison",
+          "venom",
+          "Dwarf weed potion (unf)",
+          "white lily",
+          "Snare",
+          "Ice spells",
+          "Poll:Rewards for Beneath Cursed Sands & PvP Arena",
+          "poll",
+          "Last Man Standing",
+          "Dagon'hai robes ornament kit",
+          "Dragon claws ornament kit",
+          "Dragon warhammer ornament kit",
+          "Heavy ballista ornament kit",
+          "Elder maul ornament kit",
+          "Elder chaos robes ornament kit",
+          "Armadyl armour ornament kit",
+          "Bandos armour ornament kit",
+          "Wristbands of the arena",
+          "Barrows gloves",
+          "Wristbands of the arena (i)",
+          "Centurion cuirass",
+          "Fighter torso",
+          "royal seed pod",
+          "Humble Chivalry",
+          "Humble Piety",
+          "Chivalry",
+          "Piety",
+          "Calamity armour",
+          "Void Knight equipment",
+          "Update:PvP Arena Revised Rewards",
+          "Poll:PvP Arena Rewards v2"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Enchantment Ritual",
+      "members": true,
+      "activity_type": "Forestry",
+      "location": "Various",
+      "players": null,
+      "skills": [
+        "Woodcutting"
+      ],
+      "release": "25 October 2023",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "Anima-infused bark"
+        ],
+        "linked_entities": [
+          "petal garland",
+          "Woodcutting",
+          "Lumberjack outfit",
+          "Forestry outfit",
+          "Friendly Forester"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Evil twin",
+      "members": false,
+      "activity_type": "Random event",
+      "location": "N/A",
+      "players": null,
+      "skills": null,
+      "release": "22 May 2006",
+      "requirements": null,
+      "rewards": null,
+      "has_infobox": true
+    },
+    {
+      "minigame": "Farming contracts",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Farming Guild",
+      "players": "1",
+      "skills": [
+        "Farming"
+      ],
+      "release": "10 January 2019",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "None"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Fishing Trawler",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Port Khazard",
+      "players": "1+",
+      "skills": [
+        "Fishing"
+      ],
+      "release": "28 July 2003",
+      "requirements": {
+        "stated": [
+          "Fishing 15 to catch fish"
+        ]
+      },
+      "rewards": {
+        "currency": [
+          "None"
+        ],
+        "linked_entities": [
+          "Trawler net",
+          "Fishing",
+          "experience",
+          "fish",
+          "angler's outfit",
+          "heron",
+          "player-owned house",
+          "Construction",
+          "Port Khazard",
+          "Temporary skill boost",
+          "Temporary skill drain",
+          "bank chest",
+          "Ardougne Diary"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Flowering Tree (Forestry event)",
+      "members": true,
+      "activity_type": "Forestry",
+      "location": "Various",
+      "players": null,
+      "skills": [
+        "Woodcutting"
+      ],
+      "release": "29 June 2023",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "Anima-infused bark"
+        ],
+        "linked_entities": [
+          "Farming",
+          "Seed pack"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Forestry",
+      "members": false,
+      "activity_type": null,
+      "location": "Various",
+      "players": null,
+      "skills": [
+        "Woodcutting"
+      ],
+      "release": "28 June 2023",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "Anima-infused bark"
+        ],
+        "linked_entities": [
+          "Golden pheasant egg",
+          "Pheasant (pet)",
+          "Fox whistle",
+          "Fox (pet)",
+          "Petal garland",
+          "Pheasant tail feathers",
+          "pheasant costume",
+          "Sturdy beehive parts",
+          "Beehive (Construction)",
+          "Player-owned house",
+          "anima-infused bark",
+          "Forestry Shop",
+          "Friendly Forester",
+          "Log basket",
+          "Lumberjack outfit",
+          "Skilling equipment",
+          "Forestry outfit",
+          "Log brace",
+          "sturdy harness",
+          "Forestry basket",
+          "Clothes pouch blueprint",
+          "clothes pouch",
+          "Cape pouch",
+          "woodcutting cape",
+          "Felling axe handle",
+          "felling axe",
+          "free-to-play",
+          "Funky shaped log",
+          "metamorphosis",
+          "Secateurs blade",
+          "Secateurs attachment",
+          "Sawmill voucher",
+          "sawmill",
+          "Plank Make",
+          "Ritual mulch",
+          "nature offerings",
+          "Twitcher's gloves"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Fortis Colosseum",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Civitas illa Fortis",
+      "players": "1",
+      "skills": null,
+      "release": "20 March 2024",
+      "requirements": null,
+      "rewards": {
+        "linked_entities": [
+          "Rewards Chest (Fortis Colosseum)",
+          "Sunfire fanatic armour",
+          "guardian boots",
+          "echo boots",
+          "Sol Heredit",
+          "sunfire rune",
+          "searing page",
+          "Jug of sunfire wine",
+          "Dizana's quiver",
+          "Minimus",
+          "Smol heredit",
+          "Glory",
+          "respawn point",
+          "Oriana",
+          "valuables",
+          "ring of dueling",
+          "herb patch",
+          "Outer Fortis",
+          "Disease (Farming)",
+          "Fortis Salute"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Friendly Ent (Forestry event)",
+      "members": false,
+      "activity_type": "Forestry",
+      "location": "Various",
+      "players": null,
+      "skills": [
+        "Woodcutting",
+        "Fletching"
+      ],
+      "release": "25 October 2023",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "Anima-infused bark"
+        ],
+        "linked_entities": [
+          "Forestry outfit",
+          "Lumberjack outfit"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Games Zone",
+      "members": false,
+      "activity_type": "Activity",
+      "location": "Grand Exchange",
+      "players": "2",
+      "skills": null,
+      "release": "5 May 2021",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "N/A"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Giants' Foundry",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Giants' Plateau",
+      "players": null,
+      "skills": [
+        "Smithing"
+      ],
+      "release": "8 June 2022",
+      "requirements": null,
+      "rewards": {
+        "linked_entities": [
+          "Foundry Reputation",
+          "Dwarf Cannon",
+          "ice gloves",
+          "smiths gloves (i)"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Gnome Ball",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Tree Gnome Stronghold",
+      "players": "Any",
+      "skills": [
+        "Ranged",
+        "Agility"
+      ],
+      "release": "28 January 2003",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "None"
+        ],
+        "linked_entities": [
+          "gnomeball",
+          "Grand Exchange"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Gnome Restaurant",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Grand Tree,",
+      "players": "1",
+      "skills": [
+        "Cooking"
+      ],
+      "release": "7 August 2006",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "Reward points"
+        ],
+        "linked_entities": [
+          "Reward token (Gnome Restaurant)",
+          "Captain Ninto",
+          "Captain Daerkin",
+          "Wingstone",
+          "Penwie",
+          "Brambickle",
+          "Professor Manglethorp",
+          "Professor Imblewyn",
+          "Professor Onglewip"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Gravedigger",
+      "members": false,
+      "activity_type": "Random event",
+      "location": "N/A",
+      "players": null,
+      "skills": null,
+      "release": "15 March 2006",
+      "requirements": null,
+      "rewards": {
+        "linked_entities": [
+          "Zombie mask",
+          "zombie outfit",
+          "emotes"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Grotesque Guardians",
+      "members": true,
+      "activity_type": "Boss",
+      "location": "Slayer Tower",
+      "players": "1",
+      "skills": null,
+      "release": "26 October 2017",
+      "requirements": null,
+      "rewards": null,
+      "infobox_variants": 2,
+      "has_infobox": true
+    },
+    {
+      "minigame": "Guardians of the Rift",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Temple of the Eye",
+      "players": "1+",
+      "skills": [
+        "Runecraft",
+        "Mining",
+        "Crafting"
+      ],
+      "release": "23 March 2022",
+      "requirements": {
+        "linked_entities": [
+          "Temple of the Eye",
+          "Runecraft",
+          "Leagues",
+          "pickaxe",
+          "chisel"
+        ]
+      },
+      "rewards": {
+        "currency": [
+          "Abyssal pearls"
+        ],
+        "linked_entities": [
+          "Rewards Guardian",
+          "Temple Supplies",
+          "tarnished locket",
+          "lost bag",
+          "Clue scroll (hard)",
+          "runic altar",
+          "essence pouch",
+          "colossal pouch",
+          "Abyssal dye",
+          "raiments of the eye",
+          "amulet of the eye",
+          "Abyssal red dye",
+          "Abyssal green dye",
+          "Abyssal blue dye",
+          "Abyssal guardian (Guardians of the Rift)",
+          "Abyssal pearls",
+          "Runecrafting",
+          "Hat of the eye",
+          "Robe top of the eye",
+          "Robe bottoms of the eye",
+          "Boots of the eye",
+          "rift guardian",
+          "Greatish guardian",
+          "Elemental talisman",
+          "Catalytic talisman",
+          "wrath talisman",
+          "Blood talisman",
+          "Death talisman",
+          "Air talisman",
+          "Water talisman",
+          "Earth talisman",
+          "Fire talisman",
+          "Mind talisman",
+          "Body talisman",
+          "Chaos talisman",
+          "Cosmic talisman",
+          "Nature talisman",
+          "Law talisman"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Hallowed Sepulchre",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Darkmeyer",
+      "players": "1",
+      "skills": [
+        "Agility",
+        "Thieving",
+        "Construction",
+        "Prayer",
+        "Magic"
+      ],
+      "release": "4 June 2020",
+      "requirements": {
+        "linked_entities": [
+          "Darkmeyer",
+          "Sins of the Father",
+          "Saradomin",
+          "Magical Obelisk",
+          "energy",
+          "Armadyl crossbow",
+          "Coffin (Hallowed Sepulchre)",
+          "hallowed marks",
+          "Bridge (Hallowed Sepulchre)",
+          "Saradomin brazier",
+          "portal frame",
+          "Pillar (Hallowed Sepulchre)"
+        ]
+      },
+      "rewards": {
+        "currency": [
+          "Hallowed mark"
+        ],
+        "linked_entities": [
+          "Coffin (Hallowed Sepulchre)",
+          "Hallowed marks",
+          "Mysterious Hallowed Goods",
+          "Pillar (Hallowed Sepulchre)",
+          "Portal Frame",
+          "Saradomin Brazier",
+          "Bridge (Hallowed Sepulchre)",
+          "Graceful outfit",
+          "Giant Squirrel",
+          "Pet",
+          "God Wars Dungeon",
+          "Mysterious Stranger (Hallowed Sepulchre)",
+          "Grand Hallowed Coffin",
+          "strange hallowed tome",
+          "pet",
+          "giant squirrel",
+          "lockpick",
+          "c4ssi4n",
+          "c0lect0r890",
+          "Jyn",
+          "Darkmeyer Slave",
+          "fishrunner82",
+          "mad melvin96",
+          "r2t2pnsh0Ty",
+          "weast side49",
+          "ring of visibility",
+          "Ghostspeak amulet",
+          "Knight of the Unicorn",
+          "Knight of the Wolf",
+          "Knight of the Lion",
+          "Knight of the Owl",
+          "archpriest of the unicorn"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Impetuous Impulses",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Puro-Puro",
+      "players": "1",
+      "skills": [
+        "Hunter"
+      ],
+      "release": "11 June 2007",
+      "requirements": {
+        "linked_entities": [
+          "Lost City",
+          "Fairytale II - Cure a Queen",
+          "fairy rings",
+          "Hunter",
+          "Strength",
+          "Magic",
+          "entangle",
+          "dark lure",
+          "butterfly net",
+          "impling jar",
+          "Elnock Inquisitor",
+          "impling scroll",
+          "Impetuous Impulses",
+          "magic butterfly net",
+          "weight-reducing clothing",
+          "magic armour",
+          "ring of endurance",
+          "stamina potion"
+        ]
+      },
+      "rewards": {
+        "currency": [
+          "None"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Inferno",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Mor Ul Rek",
+      "players": "1",
+      "skills": [
+        "Combat"
+      ],
+      "release": "1 June 2017",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "Tokkul"
+        ],
+        "linked_entities": [
+          "infernal cape",
+          "Tokkul",
+          "Karamja Diary",
+          "Jal-nib-rek",
+          "pet",
+          "Slayer",
+          "TzHaar-Ket-Keh"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Intelligence Gathering",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Great Kourend",
+      "players": "1+",
+      "skills": [
+        "Combat"
+      ],
+      "release": "7 January 2016",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "N/A"
+        ],
+        "linked_entities": [
+          "Intelligence",
+          "Ginea",
+          "training manual",
+          "Attack",
+          "Strength",
+          "Defence",
+          "Hitpoints",
+          "oak planks",
+          "teak plank",
+          "mahogany plank"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Jekyll and Hyde",
+      "members": true,
+      "activity_type": "Random event",
+      "location": "N/A",
+      "players": null,
+      "skills": null,
+      "release": "9 August 2005",
+      "requirements": null,
+      "rewards": null,
+      "has_infobox": true
+    },
+    {
+      "minigame": "Keldagrim tasks",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Keldagrim",
+      "players": "1",
+      "skills": null,
+      "release": "31 May 2005",
+      "requirements": null,
+      "rewards": null,
+      "has_infobox": true
+    },
+    {
+      "minigame": "Kiss the frog",
+      "members": false,
+      "activity_type": "Random event",
+      "location": "N/A",
+      "players": null,
+      "skills": null,
+      "release": "1 August 2005",
+      "requirements": null,
+      "rewards": null,
+      "has_infobox": true
+    },
+    {
+      "minigame": "Knight Waves",
+      "members": true,
+      "activity_type": "Quest",
+      "location": "Camelot Castle",
+      "players": null,
+      "skills": null,
+      "release": "24 July 2007",
+      "requirements": null,
+      "rewards": {
+        "linked_entities": [
+          "Attack",
+          "Strength",
+          "Defence",
+          "Hitpoints",
+          "prayers",
+          "Chivalry",
+          "Piety",
+          "Spawning",
+          "Camelot"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Last Man Standing",
+      "members": false,
+      "activity_type": "Minigame",
+      "location": "Ferox Enclave",
+      "players": "4-24",
+      "skills": [
+        "Combat"
+      ],
+      "release": "4 August 2016",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "Points"
+        ],
+        "linked_entities": [
+          "Justine",
+          "Justine's stuff for the Last Shopper Standing",
+          "reward chest (Last Man Standing)"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Lost and Found",
+      "members": false,
+      "activity_type": "Random event",
+      "location": "Abyssal Space",
+      "players": null,
+      "skills": null,
+      "release": "1 August 2005",
+      "requirements": null,
+      "rewards": null,
+      "has_infobox": true
+    },
+    {
+      "minigame": "Mage Arena",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Northern Wilderness",
+      "players": "1",
+      "skills": [
+        "Magic"
+      ],
+      "release": "22 September 2003",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "None"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Mage Training Arena",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "North of the Emir's Arena",
+      "players": "1",
+      "skills": [
+        "Magic"
+      ],
+      "release": "4 January 2006",
+      "requirements": {
+        "linked_entities": [
+          "Magic",
+          "Lvl-1 Enchant",
+          "Telekinetic Grab",
+          "Lvl-7 Enchant",
+          "Lvl-6 Enchant",
+          "experience",
+          "Clue scroll",
+          "casket",
+          "Coins",
+          "coin pouch"
+        ]
+      },
+      "rewards": {
+        "currency": [
+          "Pizazz points"
+        ],
+        "linked_entities": [
+          "runes",
+          "infinity robes",
+          "wand",
+          "mage's book",
+          "Bones to Peaches",
+          "pizazz points",
+          "arena book",
+          "apprentice wand",
+          "teacher wand",
+          "master wand",
+          "Pizazz points",
+          "Mage's book",
+          "Master wand",
+          "Infinity gloves",
+          "Infinity hat",
+          "Infinity top",
+          "Infinity bottoms",
+          "Infinity boots"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Mahogany Homes",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Falador, Varrock, East Ardougne, Hosidius",
+      "players": null,
+      "skills": [
+        "Construction"
+      ],
+      "release": "26 August 2020",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "Carpenter points"
+        ],
+        "linked_entities": [
+          "carpenter points",
+          "Construction",
+          "plank sack",
+          "NPC Contact",
+          "Carpenter points",
+          "carpenter's outfit",
+          "Mahogany Homes Reward Shop",
+          "planks"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Mastering Mixology",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Aldarin",
+      "players": "1",
+      "skills": [
+        "Herblore"
+      ],
+      "release": "25 September 2024",
+      "requirements": {
+        "linked_entities": [
+          "Herblore",
+          "Children of the Sun",
+          "Herb",
+          "Unfinished potion (disambiguation)"
+        ]
+      },
+      "rewards": {
+        "currency": [
+          "Mox, Aga, and Lye resin"
+        ],
+        "linked_entities": [
+          "Supervisor Lalo",
+          "Mixology Rewards",
+          "digweed",
+          "alchemist's outfit",
+          "bank",
+          "amulet of chemistry",
+          "goading potion",
+          "prayer regeneration potion",
+          "aldarium",
+          "mox resin",
+          "aga resin",
+          "lye resin"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Maze",
+      "members": false,
+      "activity_type": "Random event",
+      "location": "N/A",
+      "players": null,
+      "skills": null,
+      "release": "2 August 2004",
+      "requirements": null,
+      "rewards": {
+        "linked_entities": [
+          "Coins",
+          "Feather",
+          "Iron arrow",
+          "Chaos rune",
+          "Steel arrow",
+          "Death rune",
+          "Coal",
+          "Mithril ore",
+          "Nature rune",
+          "runes",
+          "bronze arrows",
+          "Bronze bolts",
+          "iron arrows",
+          "attack potion",
+          "strength potion",
+          "defence potion",
+          "Ultimate Ironman"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Mime (Random Event)",
+      "members": false,
+      "activity_type": "Random event",
+      "location": "N/A",
+      "players": null,
+      "skills": null,
+      "release": "2 August 2004",
+      "requirements": null,
+      "rewards": {
+        "linked_entities": [
+          "mime outfit",
+          "emotes"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Moons of Peril",
+      "members": true,
+      "activity_type": "Boss",
+      "location": "Neypotzli",
+      "players": "1",
+      "skills": null,
+      "release": "20 March 2024",
+      "requirements": null,
+      "rewards": {
+        "linked_entities": [
+          "Lunar Chest",
+          "Blood moon armour",
+          "Blue moon armour",
+          "Eclipse moon armour",
+          "Eyatlalli",
+          "Neypotzli"
+        ]
+      },
+      "infobox_variants": 3,
+      "has_infobox": true
+    },
+    {
+      "minigame": "Nightmare Zone",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Yanille",
+      "players": "1-5",
+      "skills": [
+        "Combat"
+      ],
+      "release": "5 September 2013",
+      "requirements": {
+        "linked_entities": [
+          "The Ascent of Arceuus",
+          "Meleeing",
+          "Contact!",
+          "The Corsair Curse",
+          "The Depths of Despair",
+          "Desert Treasure I",
+          "Smoke Barrage",
+          "Smoke Burst",
+          "chinning",
+          "Dragon Slayer I",
+          "Dream Mentor",
+          "Fairytale I - Growing Pains",
+          "Family Crest",
+          "Fight Arena",
+          "The Fremennik Isles",
+          "Getting Ahead",
+          "The Grand Tree",
+          "The Great Brain Robbery",
+          "Grim Tales",
+          "Haunted Mine",
+          "Holy Grail",
+          "Horror from the Deep",
+          "In Search of the Myreque",
+          "Legends' Quest",
+          "Lost City",
+          "Lunar Diplomacy",
+          "Monkey Madness I",
+          "Mountain Daughter",
+          "My Arm's Big Adventure",
+          "One Small Favour",
+          "Recipe for Disaster",
+          "Roving Elves",
+          "Shadow of the Storm",
+          "Shilo Village",
+          "Song of the Elves",
+          "Tale of the Righteous",
+          "Tree Gnome Village",
+          "Troll Romance",
+          "Troll Stronghold",
+          "Vampyre Slayer",
+          "What Lies Below",
+          "Witch's House"
+        ]
+      },
+      "rewards": {
+        "currency": [
+          "Nightmare Zone Points"
+        ],
+        "linked_entities": [
+          "Dominic Onion",
+          "Herblore",
+          "runes",
+          "herb box",
+          "scroll of redirection",
+          "Ironman mode",
+          "Grand Exchange",
+          "Herb box",
+          "empty vial",
+          "Overload (Nightmare Zone)",
+          "combo food",
+          "Absorption",
+          "herb"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Pest Control",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Void Knights' Outpost",
+      "players": "5-25",
+      "skills": [
+        "Combat",
+        "Crafting",
+        "Woodcutting"
+      ],
+      "release": "18 April 2006",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "Void Knight commendation points"
+        ],
+        "linked_entities": [
+          "Commendation points",
+          "commendation points",
+          "Combat Achievements",
+          "Void Knight equipment",
+          "Void Knight mace",
+          "Void Knight top",
+          "Void knight robe",
+          "Void knight gloves",
+          "Void Knight helmet"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Pheasant Control",
+      "members": true,
+      "activity_type": "Forestry",
+      "location": "Various",
+      "players": null,
+      "skills": [
+        "Woodcutting",
+        "Thieving"
+      ],
+      "release": "25 October 2023",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "Anima-infused bark"
+        ],
+        "linked_entities": [
+          "golden pheasant egg",
+          "beaver",
+          "pet",
+          "Pheasant (pet)",
+          "needle",
+          "thread",
+          "Pheasant costume",
+          "Talk:Golden_pheasant_egg"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Pillory",
+      "members": false,
+      "activity_type": "Random event",
+      "location": "N/A",
+      "players": null,
+      "skills": null,
+      "release": "24 October 2005",
+      "requirements": null,
+      "rewards": {
+        "linked_entities": [
+          "free-to-play"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Pinball",
+      "members": false,
+      "activity_type": "Random event",
+      "location": "N/A",
+      "players": null,
+      "skills": null,
+      "release": "22 May 2006",
+      "requirements": null,
+      "rewards": null,
+      "has_infobox": true
+    },
+    {
+      "minigame": "Poachers (Forestry event)",
+      "members": true,
+      "activity_type": "Forestry",
+      "location": "Various",
+      "players": null,
+      "skills": [
+        "Woodcutting",
+        "Hunter"
+      ],
+      "release": "25 October 2023",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "Anima-infused bark"
+        ],
+        "linked_entities": [
+          "fox whistle"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "PvM Arena",
+      "members": true,
+      "activity_type": null,
+      "location": "Edgeville",
+      "players": "2+",
+      "skills": [
+        "Combat"
+      ],
+      "release": "3 December 2015",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "N/A"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Pyramid Plunder",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Sophanem",
+      "players": "1",
+      "skills": [
+        "Thieving"
+      ],
+      "release": "17 July 2006",
+      "requirements": {
+        "linked_entities": [
+          "Thieving",
+          "Icthlarin's Little Helper",
+          "Sophanem",
+          "Contact!",
+          "Sophanem Dungeon",
+          "Prayer",
+          "Protect from Melee",
+          "Mummy (Pyramid Plunder)",
+          "scarab swarm"
+        ]
+      },
+      "rewards": {
+        "currency": [
+          "N/A"
+        ],
+        "linked_entities": [
+          "Pharaoh's sceptre",
+          "Simon Templeton",
+          "Agility Pyramid",
+          "Sophanem",
+          "Easy Desert Diary",
+          "Grand Exchange",
+          "ivory comb",
+          "GE",
+          "Grand Gold Chest",
+          "Sarcophagus (Pyramid Plunder)",
+          "Guardian mummy"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Rat Pits",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "* Varrock * Ardougne * Keldagrim * Port Sarim",
+      "players": "2",
+      "skills": null,
+      "release": "28 November 2005",
+      "requirements": null,
+      "rewards": {
+        "linked_entities": [
+          "coins",
+          "Ardougne",
+          "Varrock",
+          "cat"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Rising roots",
+      "members": false,
+      "activity_type": "Forestry",
+      "location": "Various",
+      "players": null,
+      "skills": [
+        "Woodcutting"
+      ],
+      "release": "28 June 2023",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "Anima-infused bark"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Rogues' Den",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Under The Toad and Chicken",
+      "players": "1",
+      "skills": [
+        "Agility",
+        "Thieving"
+      ],
+      "release": "22 June 2005",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "None"
+        ],
+        "linked_entities": [
+          "experience",
+          "Rogue kit",
+          "rope",
+          "chisel",
+          "tinderbox",
+          "spade",
+          "Rogue's equipment crate",
+          "rogue equipment",
+          "Rogue mask",
+          "Rogue top",
+          "Rogue trousers",
+          "Rogue gloves",
+          "Rogue boots",
+          "NPC",
+          "armour case",
+          "costume room",
+          "player-owned house",
+          "rogue kit"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Shades of Mort'ton (minigame)",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Mort'ton",
+      "players": "1+",
+      "skills": [
+        "Combat",
+        "Crafting",
+        "Firemaking",
+        "Prayer"
+      ],
+      "release": "18 October 2004",
+      "requirements": {
+        "linked_entities": [
+          "Shades of Mort'ton",
+          "Serum 208",
+          "Razmire Keelgan"
+        ]
+      },
+      "rewards": {
+        "currency": [
+          "None"
+        ],
+        "linked_entities": [
+          "sacred oil",
+          "Money_making_guide/Making_sacred_oil",
+          "Crafting",
+          "Prayer",
+          "Firemaking",
+          "flamtaer hammer",
+          "combat",
+          "Herblore",
+          "shade key",
+          "Shade Catacombs",
+          "runes",
+          "armour",
+          "clue scroll",
+          "swamp paste",
+          "Bronze chest",
+          "Steel equipment",
+          "Mithril equipment",
+          "Clue scroll (easy)",
+          "Steel chest",
+          "Adamant equipment",
+          "Clue scroll (medium)",
+          "Black chest",
+          "Black equipment",
+          "Silver chest",
+          "Rune equipment",
+          "Clue scroll (hard)",
+          "Gold chest",
+          "Dragon equipment",
+          "Clue scroll (elite)",
+          "Zealot's robes",
+          "Silver key black",
+          "Silver key brown",
+          "value",
+          "death rune",
+          "bronze locks",
+          "Swamp paste",
+          "flamtaer bag",
+          "amulet of glory",
+          "barrows equipment",
+          "timber beam",
+          "limestone bricks",
+          "splitbark armour",
+          "Locks",
+          "broken coffin",
+          "Coffin_(disambiguation)",
+          "swampbark armour",
+          "tree wizards' journal",
+          "bloodbark armour",
+          "bloody notes",
+          "Prayer bonus",
+          "Dampe",
+          "Bronze locks",
+          "Steel locks",
+          "Black locks",
+          "Silver locks",
+          "gold locks"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Shooting Stars",
+      "members": false,
+      "activity_type": "Distraction and Diversion",
+      "location": "Global",
+      "players": null,
+      "skills": [
+        "Mining"
+      ],
+      "release": "17 March 2021",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "Stardust"
+        ],
+        "linked_entities": [
+          "Stardust",
+          "crashed star",
+          "Dusuri's Star Shop",
+          "celestial ring",
+          "Dragon pickaxe"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Skilling Arena",
+      "members": true,
+      "activity_type": null,
+      "location": "Edgeville",
+      "players": "5",
+      "skills": [
+        "Mining",
+        "Fishing",
+        "Woodcutting",
+        "Hunter",
+        "Thieving"
+      ],
+      "release": "17 July 2014",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "N/A"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Sled Racing",
+      "members": false,
+      "activity_type": "Activity",
+      "location": "Scrubfoot's cave in Goblin Village",
+      "players": null,
+      "skills": null,
+      "release": "9 December 2020",
+      "requirements": null,
+      "rewards": null,
+      "has_infobox": true
+    },
+    {
+      "minigame": "Sorceress's Garden",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Al Kharid",
+      "players": "1",
+      "skills": [
+        "Farming",
+        "Thieving"
+      ],
+      "release": "12 February 2007",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "No"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Soul Wars",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Isle of Souls",
+      "players": "10 per team",
+      "skills": [
+        "Combat"
+      ],
+      "release": "6 January 2021",
+      "requirements": {
+        "stated": [
+          "overall 500 total level",
+          "combat 40 combat level"
+        ]
+      },
+      "rewards": {
+        "currency": [
+          "Zeal Tokens"
+        ],
+        "linked_entities": [
+          "Zeal Tokens",
+          "Nomad",
+          "Soul Wars cape",
+          "ammunition",
+          "Ava's device",
+          "max cape"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Stealing artefacts",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Port Piscarilius",
+      "players": "1",
+      "skills": [
+        "Thieving"
+      ],
+      "release": "7 January 2016",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "Coins"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Stealing valuables",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Civitas illa Fortis",
+      "players": "1",
+      "skills": [
+        "Thieving"
+      ],
+      "release": "20 March 2024",
+      "requirements": {
+        "stated": [
+          "Thieving 50"
+        ]
+      },
+      "rewards": {
+        "currency": [
+          "Valuables"
+        ],
+        "linked_entities": [
+          "Fortis Colosseum",
+          "Gems"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Struggling sapling (Forestry event)",
+      "members": false,
+      "activity_type": "Forestry",
+      "location": "Various",
+      "players": null,
+      "skills": [
+        "Woodcutting",
+        "Farming"
+      ],
+      "release": "28 June 2023",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "Anima-infused bark"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Surprise Exam",
+      "members": false,
+      "activity_type": "Random event",
+      "location": "ScapeRune",
+      "players": null,
+      "skills": null,
+      "release": "17 July 2007",
+      "requirements": null,
+      "rewards": {
+        "linked_entities": [
+          "book of knowledge",
+          "door (Surprise Exam)",
+          "lamp"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Tai Bwo Wannai Cleanup",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Tai Bwo Wannai",
+      "players": "1",
+      "skills": [
+        "Woodcutting",
+        "Combat",
+        "Agility",
+        "Cooking",
+        "Herblore",
+        "Mining"
+      ],
+      "release": "9 August 2005",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "Trading sticks"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Tears of Guthix (minigame)",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Chasm of Tears",
+      "players": "1",
+      "skills": [
+        "Skills"
+      ],
+      "release": "4 May 2005",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "None"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Temple Trekking",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Paterdomus & Burgh de Rott",
+      "players": "1",
+      "skills": [
+        "Combat",
+        "Woodcutting",
+        "Firemaking",
+        "Cooking"
+      ],
+      "release": "28 March 2006",
+      "requirements": {
+        "linked_entities": [
+          "In Aid of the Myreque",
+          "quest",
+          "axe",
+          "knife",
+          "silver weaponry",
+          "druid pouch"
+        ]
+      },
+      "rewards": {
+        "currency": [
+          "Reward token"
+        ],
+        "linked_entities": [
+          "reward token",
+          "Grimy tarromin",
+          "Grimy harralander",
+          "Grimy toadflax",
+          "experience",
+          "Morytania legs 3",
+          "Burgh de Rott",
+          "rejuvenation pool",
+          "Nardah",
+          "desert amulet 4",
+          "Head (Temple Trekking)",
+          "Tentacle (Temple Trekking)",
+          "Lumberjack outfit",
+          "Forestry"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "The Fractured Archive",
+      "members": true,
+      "activity_type": "Raid",
+      "location": "Ancient Guthixian Temple",
+      "players": null,
+      "skills": null,
+      "release": null,
+      "requirements": null,
+      "rewards": {
+        "linked_entities": [
+          "torva armour",
+          "ancestral robes",
+          "bandos armour",
+          "flat armour",
+          "Scythe of vitur"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "The Gauntlet",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Prifddinas",
+      "players": "1",
+      "skills": null,
+      "release": "25 July 2019",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "No"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "The Gwenith Glide",
+      "members": true,
+      "activity_type": null,
+      "location": "Porth Gwenith",
+      "players": null,
+      "skills": [
+        "Sailing"
+      ],
+      "release": "19 November 2025",
+      "requirements": null,
+      "rewards": {
+        "linked_entities": [
+          "serrated key",
+          "heart of ithell",
+          "Gwyna's fabric roll",
+          "crystal extractor",
+          "Barracuda paint",
+          "experience",
+          "Horizon's lure"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "The Jubbly Jive",
+      "members": true,
+      "activity_type": null,
+      "location": "Backwater",
+      "players": null,
+      "skills": [
+        "Sailing"
+      ],
+      "release": "19 November 2025",
+      "requirements": null,
+      "rewards": {
+        "linked_entities": [
+          "fetid key",
+          "captured wind mote",
+          "Gurtob's fabric roll",
+          "wind catcher",
+          "gale catcher",
+          "Barracuda paint"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "The Tempor Tantrum",
+      "members": true,
+      "activity_type": null,
+      "location": "The Storm Tempor",
+      "players": null,
+      "skills": [
+        "Sailing"
+      ],
+      "release": "19 November 2025",
+      "requirements": null,
+      "rewards": {
+        "linked_entities": [
+          "stormy key",
+          "barrel stand",
+          "Ralph's fabric roll",
+          "keg (Facility)",
+          "Whirlpool surprise",
+          "Rum-dashed Ralph",
+          "Barracuda paint",
+          "sawmill coupon (oak plank)"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Theatre of Blood",
+      "members": true,
+      "activity_type": "Raid",
+      "location": "Ver Sinhaza",
+      "players": "1-5",
+      "skills": [
+        "Combat"
+      ],
+      "release": "7 June 2018",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "None"
+        ],
+        "linked_entities": [
+          "Chambers of Xeric",
+          "dragon defender",
+          "Justiciar armour",
+          "Vials of blood",
+          "bastion potion",
+          "battlemage potion",
+          "grand bookshelves",
+          "The Maiden of Sugadinti",
+          "Pestilent Bloat",
+          "Nylocas Vasilias",
+          "Sotetseg",
+          "Xarpus",
+          "Verzik Vitur",
+          "Mysterious Stranger"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Tithe Farm",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Hosidius",
+      "players": "1",
+      "skills": [
+        "Farming"
+      ],
+      "release": "7 January 2016",
+      "requirements": {
+        "linked_entities": [
+          "spade",
+          "seed dibber",
+          "Barbarian Training",
+          "watering can",
+          "Gricoller's can",
+          "Golovanova seed",
+          "Bologano seed",
+          "Logavano seed"
+        ]
+      },
+      "rewards": {
+        "currency": [
+          "Points"
+        ],
+        "linked_entities": [
+          "Farmer Gricoller's Rewards",
+          "Golovanova fruit",
+          "Bologano fruit",
+          "Logavano fruit",
+          "Tithe Farm",
+          "Farmer's outfit",
+          "Tithe Farm/Strategies",
+          "farmer's outfit",
+          "Farmer's strawhat",
+          "make-over mage",
+          "Farmer's jacket",
+          "Farmer's shirt",
+          "Farmer's boro trousers",
+          "Farmer's boots",
+          "vinery",
+          "grapes",
+          "Bologa's blessing",
+          "Zamorak's grapes",
+          "Bologa",
+          "Zamorak",
+          "grimy herbs",
+          "Herblore",
+          "watering can",
+          "Auto-weed",
+          "Managing Miscellania"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Tombs of Amascut",
+      "members": true,
+      "activity_type": "Raid",
+      "location": "Jaltevas Pyramid",
+      "players": "1-8",
+      "skills": [
+        "Combat",
+        "Mining"
+      ],
+      "release": "24 August 2022",
+      "requirements": null,
+      "rewards": {
+        "linked_entities": [
+          "Osmumten",
+          "Amascut",
+          "Theatre of Blood",
+          "Sarcophagus (Osmumten)",
+          "Masori armour",
+          "divine rune pouch",
+          "keris partisan",
+          "fossilised dung",
+          "Ba-Ba",
+          "Zebak",
+          "Akkha",
+          "Kephri",
+          "Tumeken's Warden",
+          "Elidinis' Warden"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Treasure Trails",
+      "members": false,
+      "activity_type": "Distraction and Diversion",
+      "location": "Global",
+      "players": null,
+      "skills": null,
+      "release": "5 May 2004",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "No"
+        ],
+        "linked_entities": [
+          "ranger boots",
+          "gilded equipment",
+          "3rd age equipment",
+          "Reward casket"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Trouble Brewing",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Mos Le'Harmless",
+      "players": "2+",
+      "skills": [
+        "Cooking",
+        "Woodcutting",
+        "Firemaking",
+        "Crafting",
+        "Agility",
+        "Strength"
+      ],
+      "release": "4 July 2006",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "Pieces of eight"
+        ],
+        "linked_entities": [
+          "piece of eight",
+          "bucket of water",
+          "Crafting",
+          "Cooking",
+          "Firemaking",
+          "bowl of red water",
+          "bowl of blue water",
+          "Hopper (Trouble Brewing)",
+          "Honest Jimmy",
+          "pieces of eight",
+          "the stuff",
+          "Brewing",
+          "rum (Trouble Brewing)"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "TzHaar Fight Cave",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Mor Ul Rek",
+      "players": "1",
+      "skills": null,
+      "release": "4 October 2005",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "Tokkul"
+        ],
+        "linked_entities": [
+          "TzTok-Jad",
+          "Tokkul",
+          "fire cape",
+          "cape of legends",
+          "obsidian cape",
+          "infernal cape",
+          "Inferno",
+          "TzRek-jad",
+          "TzHaar-Mej-Jal",
+          "Elite Karamja Diary"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "TzHaar Fight Pit",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Mor Ul Rek",
+      "players": "2+",
+      "skills": [
+        "Combat"
+      ],
+      "release": "19 September 2005",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "Tokkul"
+        ],
+        "linked_entities": [
+          "Tokkul",
+          "Mor Ul Rek",
+          "Skull (status)",
+          "Karamja Diary"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "TzHaar-Ket-Rak's Challenges",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Mor Ul Rek",
+      "players": "1",
+      "skills": [
+        "Combat"
+      ],
+      "release": "3 March 2021",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "Tokkul"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Vale Totems",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Auburn Valley",
+      "players": "1",
+      "skills": [
+        "Fletching"
+      ],
+      "release": "23 July 2025",
+      "requirements": {
+        "linked_entities": [
+          "Vale Totems (miniquest)",
+          "Miniquests",
+          "Fletching",
+          "knife",
+          "fletching knife",
+          "axe",
+          "Log (disambiguation)",
+          "Temporary skill boost"
+        ]
+      },
+      "rewards": {
+        "currency": [
+          "Vale offerings",
+          "Vale Research Points"
+        ],
+        "linked_entities": [
+          "vale offerings",
+          "Vale Research Points",
+          "Vale offerings",
+          "Vale Research Exchange",
+          "Ranulph",
+          "Auburnvale",
+          "Ironman Mode"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Volcanic Mine",
+      "members": true,
+      "activity_type": "Minigame",
+      "location": "Fossil Island Volcano",
+      "players": "1-50",
+      "skills": [
+        "Mining"
+      ],
+      "release": "7 September 2017",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "Points"
+        ],
+        "linked_entities": [
+          "Petrified Pete",
+          "Mining",
+          "Petrified Pete's Ore Shop",
+          "Calcite",
+          "pyrophosphite",
+          "Fossil Island fossil",
+          "numulite",
+          "prospector kit",
+          "Runite ore",
+          "Volcanic ash",
+          "Ironman Mode"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Wise Old Man tasks",
+      "members": true,
+      "activity_type": null,
+      "location": "Draynor Village",
+      "players": "1",
+      "skills": null,
+      "release": "6 June 2005",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "None"
+        ],
+        "linked_entities": [
+          "Hitpoints",
+          "experience",
+          "Prayer"
+        ]
+      },
+      "has_infobox": true
+    },
+    {
+      "minigame": "Woodcutting Leprechaun (Forestry event)",
+      "members": true,
+      "activity_type": "Forestry",
+      "location": "Various",
+      "players": null,
+      "skills": [
+        "Woodcutting"
+      ],
+      "release": "28 June 2023",
+      "requirements": null,
+      "rewards": {
+        "currency": [
+          "Anima-infused bark"
+        ]
+      },
+      "has_infobox": true
+    }
+  ],
+  "_excluded": []
+}
