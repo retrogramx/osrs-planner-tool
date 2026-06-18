@@ -2,6 +2,7 @@
 import pytest
 
 from osrs_planner.engine.engine import Engine
+from osrs_planner.engine.kg.model import EdgeType
 from osrs_planner.engine.result import Ok, Problem, ProblemKind
 from osrs_planner.engine.cards import UnlockCard
 from osrs_planner.engine.state import AccountState
@@ -60,12 +61,12 @@ def test_locked_ironman_or_tree_surfaces_strength_blocker(scurrius_kg):
 
     # No blocker is falsely flagged cant_verify when the family is observable.
     assert all(b.status != "cant_verify" for b in res.card.blockers)
+    assert all(b.status in {"satisfiable", "impossible_for_mode"} for b in res.card.blockers)
 
 
 def test_is_unlocked_folds_all_requires_edges(scurrius_kg):
     # D5: Scurrius has TWO requires edges (the access:scurrius-lair prereq edge AND
     # the flagship cond_group edge). The engine must read and fold BOTH, not just one.
-    from osrs_planner.engine.kg.model import EdgeType
     req_edges = [
         e for e in scurrius_kg.edges
         if e.type is EdgeType.REQUIRES and e.src == SCURRIUS

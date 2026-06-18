@@ -8,7 +8,7 @@ from __future__ import annotations
 from typing import Optional
 
 from osrs_planner.engine.kg.store import KGStore
-from osrs_planner.engine.kg.model import EdgeType, Op, AtomType, ConditionAtom
+from osrs_planner.engine.kg.model import Edge, EdgeType, AtomType, ConditionAtom
 from osrs_planner.engine.state import AccountState
 from osrs_planner.engine.kleene import Tri, k_and
 from osrs_planner.engine.conditions import evaluate, atom_satisfied
@@ -39,7 +39,7 @@ class Engine:
         self.kg = kg
 
     # -- helpers ----------------------------------------------------------
-    def _requires_edges(self, node_id: str) -> list:
+    def _requires_edges(self, node_id: str) -> list[Edge]:
         """ALL of node_id's `requires` edges (D5: a node may have many; folded as AND).
 
         Each edge contributes (cond_group, dst): the edge is satisfied iff its
@@ -110,10 +110,12 @@ class Engine:
                     blockers.extend(
                         self._collect_failures(edge.cond_group, state, refs_nodes)
                     )
-                if edge.dst is not None and self._node_verdict(edge.dst, state) is not Tri.TRUE:
-                    # the prerequisite node itself is not unlocked -> surface it as a leaf
-                    refs_nodes.setdefault(edge.dst, self._noderef(edge.dst))
-                    blockers.append(self._dst_step(edge.dst, state))
+                if edge.dst is not None:
+                    dst_tri = self._node_verdict(edge.dst, state)
+                    if dst_tri is not Tri.TRUE:
+                        # the prerequisite node itself is not unlocked -> surface it as a leaf
+                        refs_nodes.setdefault(edge.dst, self._noderef(edge.dst))
+                        blockers.append(self._dst_step(edge.dst, dst_tri))
 
         card = cards.UnlockCard(
             node_id=node_id,
@@ -123,7 +125,7 @@ class Engine:
         return Ok(card=card, refs=Refs(nodes=refs_nodes))
 
     def _collect_failures(
-        self, group_id: int, state: AccountState, refs_nodes: dict
+        self, group_id: int, state: AccountState, refs_nodes: dict[str, NodeRef]
     ) -> list[cards.Step]:
         """Walk the cond tree; record every non-TRUE *leaf* as a failing/unverifiable Step.
 
@@ -165,13 +167,12 @@ class Engine:
             status=status,
         )
 
-    def _dst_step(self, dst_id: str, state: AccountState) -> cards.Step:
+    def _dst_step(self, dst_id: str, tri: Tri) -> cards.Step:
         """A prerequisite NODE (D5 edge.dst) that is itself not unlocked -> a Step.
 
         'is_unlocked' is the reason family (the dst is gated by its own requires);
         UNKNOWN -> cant_verify, otherwise satisfiable.
         """
-        tri = self._node_verdict(dst_id, state)
         n = self.kg.node(dst_id)
         return cards.Step(
             node_id=dst_id,
