@@ -31,3 +31,52 @@ def test_unlocked_main_meets_stat_branch(scurrius_kg):
     assert res.card.blockers == []
     # grounding leash (§7.4): the subject node is in refs.nodes
     assert SCURRIUS in res.refs.nodes
+
+
+def test_locked_ironman_or_tree_surfaces_strength_blocker(scurrius_kg):
+    state = AccountState(
+        mode="ironman",
+        levels={"skill:attack": 75, "skill:strength": 60},
+        counts={},  # no Void
+        observable_families={"skill_level", "item"},  # both real-FALSE here
+    )
+    eng = Engine(scurrius_kg)
+    res = eng.is_unlocked(state, SCURRIUS)
+
+    assert isinstance(res, Ok)
+    assert res.card.status == "locked"
+    assert res.card.blockers, "a locked node must surface blockers"
+
+    # The cheapest branch (train Strength to 70) is present as a failing skill_level leaf.
+    strength_blockers = [
+        b
+        for b in res.card.blockers
+        if b.node_id == "skill:strength" and b.reason == "skill_level"
+    ]
+    assert strength_blockers, "expected a Strength skill_level blocker"
+    sb = strength_blockers[0]
+    assert sb.status == "satisfiable"  # not cant_verify, not satisfied
+    assert "skill:strength" in res.refs.nodes  # blocker node entered refs (§7.4)
+
+    # No blocker is falsely flagged cant_verify when the family is observable.
+    assert all(b.status != "cant_verify" for b in res.card.blockers)
+
+
+def test_is_unlocked_folds_all_requires_edges(scurrius_kg):
+    # D5: Scurrius has TWO requires edges (the access:scurrius-lair prereq edge AND
+    # the flagship cond_group edge). The engine must read and fold BOTH, not just one.
+    from osrs_planner.engine.kg.model import EdgeType
+    req_edges = [
+        e for e in scurrius_kg.edges
+        if e.type is EdgeType.REQUIRES and e.src == SCURRIUS
+    ]
+    assert len(req_edges) == 2, "fixture Scurrius must carry two requires edges (D5)"
+    # both edges satisfied for the 70/70 main -> the AND-of-edges folds to unlocked
+    state = AccountState(
+        mode="main",
+        levels={"skill:attack": 75, "skill:strength": 75},
+        observable_families={"skill_level"},
+    )
+    res = Engine(scurrius_kg).is_unlocked(state, SCURRIUS)
+    assert isinstance(res, Ok)
+    assert res.card.status == "unlocked"

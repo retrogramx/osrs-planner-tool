@@ -125,8 +125,45 @@ class Engine:
     def _collect_failures(
         self, group_id: int, state: AccountState, refs_nodes: dict
     ) -> list[cards.Step]:
-        # Filled in Step 4. Empty for now so Step 1 (no blockers) passes.
-        return []
+        """Walk the cond tree; record every non-TRUE *leaf* as a failing/unverifiable Step.
+
+        - FALSE leaf            -> status 'satisfiable'  (or 'impossible_for_mode' for a
+                                   false account_type atom that prunes its branch, §5.3b)
+        - UNKNOWN leaf          -> status 'cant_verify'  (Kleene; never a false 'locked', §6)
+        Each ref-bearing leaf's ref_node enters refs_nodes (the grounding leash, §7.4).
+        """
+        steps: list[cards.Step] = []
+        for child in self.kg.children_of(group_id):
+            if isinstance(child, ConditionAtom):
+                tri = atom_satisfied(child, state, self.kg)
+                if tri is Tri.TRUE:
+                    continue
+                if child.ref_node is not None:
+                    refs_nodes.setdefault(child.ref_node, self._noderef(child.ref_node))
+                steps.append(self._leaf_step(child, tri))
+            else:  # a sub-group id (int)
+                steps.extend(self._collect_failures(int(child), state, refs_nodes))
+        return steps
+
+    def _leaf_step(self, atom: ConditionAtom, tri: Tri) -> cards.Step:
+        if tri is Tri.UNKNOWN:
+            status = "cant_verify"
+        elif atom.atom_type == AtomType.ACCOUNT_TYPE:
+            # a false account_type atom is a hard mode wall, not a trainable gap (§5.3b)
+            status = "impossible_for_mode"
+        else:
+            status = "satisfiable"
+        name = atom.ref_node
+        if atom.ref_node is not None:
+            n = self.kg.node(atom.ref_node)
+            if n is not None:
+                name = n.name
+        return cards.Step(
+            node_id=atom.ref_node,
+            name=name if name is not None else atom.atom_type.value,
+            reason=atom.atom_type.value,
+            status=status,
+        )
 
     def _dst_step(self, dst_id: str, state: AccountState) -> cards.Step:
         """A prerequisite NODE (D5 edge.dst) that is itself not unlocked -> a Step.
