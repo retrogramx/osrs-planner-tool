@@ -324,5 +324,56 @@ class Engine:
             refs=Refs(nodes=refs_nodes),
         )
 
-    def next_steps(self, state: AccountState, node_id: str) -> Result[cards.PlanCard]:
-        raise NotImplementedError  # later task
+    def next_steps(self, state: Optional[AccountState], node_id: str) -> "Result[PlanCard]":
+        """The frontier subset of prereqs_for: prerequisites whose OWN prerequisites
+        are all already satisfied (immediately-doable). Contract §3.1.
+
+        - Reuses prereqs_for so the two reads share Step instances (contract §5.2).
+        - A prereq is on the frontier iff it is not yet satisfied AND every node in
+          its own requires-closure is satisfied for the account.
+        - impossible_for_mode / cant_verify prereqs are never actionable, and any
+          prereq blocked behind such a node stays off the frontier.
+        - Nothing actionable -> Empty(NO_FRONTIER) (a success state, §4).
+        """
+        base = self.prereqs_for(state, node_id)
+        # Propagate Problem (NOT_FOUND / MISSING_STATE / ...) and the
+        # ALREADY_SATISFIED terminal verbatim — same preconditions as prereqs_for.
+        if not isinstance(base, Ok):
+            return base
+
+        plan = base.card
+        # refs live on the Ok envelope, NOT on PlanCard (see Task 9 cards.py).
+        base_refs = base.refs
+
+        # Which prereq node-ids are already satisfied?
+        satisfied = {s.node_id for s in plan.steps if s.status == "satisfied"}
+
+        frontier: list[Step] = []
+        for step in plan.steps:
+            if step.status == "satisfied":
+                continue
+            if step.status != "satisfiable":
+                # impossible_for_mode or cant_verify is not actionable now.
+                continue
+            if step.node_id is None:
+                # ref-less accumulator atom: actionable only if it has no node-prereqs,
+                # which by construction it does not (no closure to gate it).
+                frontier.append(step)
+                continue
+            own_prereqs = self.kg.descendants(step.node_id)
+            if all(p in satisfied for p in own_prereqs):
+                frontier.append(step)
+
+        if not frontier:
+            return Empty(refs=base_refs, reason=TerminalReason.NO_FRONTIER)
+
+        # Reuse the parent envelope's refs/referenced_atoms (subset is still grounded;
+        # every frontier node is already in base_refs). §7.4 refs ⊆ touched-this-turn.
+        return Ok(
+            card=PlanCard(
+                goal_id=plan.goal_id,
+                steps=frontier,
+                referenced_atoms=plan.referenced_atoms,
+            ),
+            refs=base_refs,
+        )
