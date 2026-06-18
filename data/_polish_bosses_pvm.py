@@ -17,9 +17,10 @@ payload key 'records'; record_count == len(records). No fabrication.
 """
 import json
 import datetime
+import os
 from collections import Counter
 
-PATH = "bosses_pvm.json"
+PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "bosses_pvm.json")
 
 with open(PATH) as f:
     d = json.load(f)

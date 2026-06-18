@@ -18,10 +18,30 @@ make the iron exclusion explicit per the shared rules.
 """
 import json, re, datetime, os
 
-ROOT = "/Users/adrian/Documents/workspace/github.com/retrogramx/osrs-planner-tool"
-BUCKET = f"{ROOT}/data/raw/money_making_bucket_full.json"
-BOSSPAGE = f"{ROOT}/data/raw/boss_page.wikitext"
-OUT = f"{ROOT}/data/bosses_pvm.json"
+DATA = os.path.dirname(os.path.abspath(__file__))           # .../data
+BUCKET = os.path.join(DATA, "raw", "money_making_bucket_full.json")
+BOSSPAGE = os.path.join(DATA, "raw", "boss_page.wikitext")
+ITEMS_EQUIP = os.path.join(DATA, "items_equipment.json")
+OUT = os.path.join(DATA, "bosses_pvm.json")
+
+
+def _load_equippable_names():
+    """Set of lowercased names of every EQUIPPABLE item (from items_equipment.json,
+    the foundation's equipment-bonus dataset). An equippable tradeable drop is gear
+    an ironman keeps & USES (or alchs) — they cannot GE-sell it, so its published
+    GE value is NOT iron-realizable income. The join cleanly separates worn gear
+    (Twisted bow, Torva, rings, Rune scimitar...) from consumable resources
+    (ore/herb/rune/seed/fish/log/bones), which are not equippable and stay
+    iron-realizable. Empty set if the file is missing (degrades to name-hints only)."""
+    try:
+        with open(ITEMS_EQUIP) as f:
+            ie = json.load(f)
+        return {(r.get("item") or "").strip().lower() for r in ie.get("records", []) if r.get("item")}
+    except (OSError, ValueError):
+        return set()
+
+
+EQUIPPABLE = _load_equippable_names()
 
 # --------------------------------------------------------------------------
 # 1. Bounded universe: the Boss list (structured wikitable rows on /w/Boss)
@@ -120,6 +140,12 @@ ALCHABLES_HINT = re.compile(
 UNTRADEABLE_HINT = re.compile(
     r"(pet |jar of|hilt|ornament kit|ranger boots|crystal|tome|"
     r"award|broken|dust$|chunk|ungael|sigil$|sigil )", re.I)
+# Fallback name-hints for equippable gear (jewellery + named unique weapons), used
+# only when the items_equipment join misses (name mismatch). The primary signal is
+# membership in EQUIPPABLE (the items_equipment dataset).
+TRADEABLE_GEAR_HINT = re.compile(
+    r"\b(ring|amulet|necklace|bracelet)\b|whip|tentacle|\bfangs?\b|\bclaws?\b|seercull",
+    re.I)
 
 def classify_drop(name):
     nl = name.lower().strip()
@@ -133,12 +159,21 @@ def classify_drop(name):
         return "rune"
     if UNTRADEABLE_HINT.search(nl):
         return "untradeable"
+    if nl in EQUIPPABLE or TRADEABLE_GEAR_HINT.search(nl):
+        # Equippable tradeable item: gear an iron keeps/uses (or alchs); the
+        # published GE value is NOT realizable as iron income (no GE access).
+        return "tradeable_gear"
     if ALCHABLES_HINT.search(nl):
         return "gear_alchable"
     return "resource"
 
 def realizable_for_iron(cls):
-    # what an iron can still realize as income from this drop type
+    # What an iron can realize as GOLD income (without the GE) from this drop type.
+    # NOT tradeable_gear: any equippable tradeable item is worn/kept gear the iron
+    # cannot GE-sell, so its GE value is not income (the smaller High-Alchemy value
+    # an iron could realise from junk gear is a disclosed iron-income recompute
+    # follow-up, see _provenance.notes). coins = direct; resource/rune = used/alched
+    # consumables; gear_alchable = the rare non-equippable alchable left after join.
     return cls in ("coins", "gear_alchable", "resource", "rune")
 
 # --------------------------------------------------------------------------
@@ -200,7 +235,7 @@ def build_record(page_name, j):
         cls = classify_drop(nm)
         entry = {"item": nm, "qty_per_hr_or_kill": inp.get("qty"),
                  "value_each": inp.get("value"), "pricetype": inp.get("pricetype")}
-        if cls in ("gear_alchable", "untradeable"):
+        if cls in ("gear_alchable", "untradeable", "tradeable_gear"):
             gear.append(entry)
         else:
             items.append(entry)
@@ -262,6 +297,7 @@ def build_record(page_name, j):
         "gp_hr_volatile_snapshot": True,
         "audience": "all",                     # direct-drop PvM: all account types can do it
         "pricing_basis": "ge",                 # the gp_hr figure as published is GE-priced
+        "realization_channel": "ge",           # published gp_hr is realized via GE; irons recompute (see iron_* fields)
         "requires_ge": requires_ge,            # false: not buy-process-sell; irons keep/alch drops
         "iron_income_recompute_needed": iron_recompute,
         "iron_realizable_drops": iron_realizable_drops,
@@ -423,6 +459,18 @@ def main():
                 "(tradeable uniques an iron cannot GE-sell). Members carried per shared rules; "
                 "the f2p record is Bryophyta. _excluded holds non-boss combat rows (no buy-process-sell "
                 "boss methods exist, so the iron-exclusion mirror is empty).",
+                "ACCOUNT GATE (iron drops) — KNOWN RESIDUAL: equippable tradeable gear "
+                "(joined against items_equipment.json) is classed 'tradeable_gear' and is NOT "
+                "iron-realizable income (an iron cannot GE-sell worn gear), e.g. Twisted bow, "
+                "Torva (equipped form), rings. BUT non-equippable tradeable BIS COMPONENTS — "
+                "uncharged/damaged forms (Scythe of vitur (uncharged), Tumeken's shadow "
+                "(uncharged), Torva *(damaged)), orbs/visages/shards/insignia — are not in the "
+                "equipment dataset, so they are still classed resource/gear_alchable and counted "
+                "as iron_realizable at full GE value. This OVER-states iron income for those few "
+                "high-value components. The correct, complete fix is the iron-income recompute "
+                "(iron-realizable gold = coins + High-Alchemy value; ~0 for these components), a "
+                "tracked follow-up. validate_iron_gate.py enforces the equippable-gear + "
+                "Skilling-conversion invariants; it does NOT yet cover this component residual.",
                 "Drop classification: 'aggregate' = pseudo-item drop table (flagged, not a literal item); "
                 "'coins' = literal direct coins (iron-realizable); gear_alchable/resource/rune are "
                 "iron-realizable via alch/value; untradeable (pets, jars, hilts/crystals) are not income.",

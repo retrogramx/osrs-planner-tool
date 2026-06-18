@@ -6,5 +6,8 @@ __pycache__/
 dist/
 build/
 .DS_Store
-# Raw wiki/API fetches — large intermediates, re-fetchable from each dataset's _provenance.source_urls
-data/raw/
+# Raw wiki/API fetches — large intermediates, re-fetchable from each dataset's _provenance.source_urls.
+# Ignore the raw DATA, but KEEP the extraction/builder scripts that live alongside it (reproducibility).
+data/raw/**
+!data/raw/**/
+!data/raw/**/*.py

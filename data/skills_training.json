@@ -64,7 +64,7 @@
     "accessed": "2026-06-17",
     "license": "CC BY-NC-SA 3.0",
     "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
-    "extraction_method": "agent: enumerated Category:Training_guides; fetched per-skill training guides for main(Pay-to-play+combined)/f2p(Free-to-play)/ironman(Ironman Guide subpages) via MediaWiki API (action=parse rendered HTML, redirects resolved); parsed every wikitable with a Level column + one or more XP/h columns into one record per (row x XP/h column). Rendered HTML used because many guides compute XP/h via parser-function/#var templates not present in raw wikitext.",
+    "extraction_method": "agent",
     "raw_files": [
       "data/raw/guide_Agility_training.wikitext",
       "data/raw/guide_Construction_training.wikitext",
@@ -463,7 +463,8 @@
     },
     "fix_notes": [
       "2026-06-17 P1 gate + disclosure fix (no re-fetch): added canonical account-gate fields to every record (audience, pricing_basis, realization_channel, requires_ge) derived deterministically from existing account_family + cost_basis; originals (cost_basis, value_basis) retained. Mapping: cost_basis 'ge' (main+f2p) -> pricing_basis 'ge' / realization_channel 'ge' / requires_ge true; cost_basis 'gather/sawmill' (ironman) -> pricing_basis 'none' / realization_channel 'n/a' / requires_ge false (methods are self-supplied gathering/skilling, e.g. Barbarian Fishing, Guardians of the Rift, Wintertodt -- none use high-alch realization, so the generic 'high_alch' hint was NOT applied to avoid fabrication). Also disclosed the gold/profit/material source columns dropped at extraction (see completeness.known_missing[1])."
-    ]
+    ],
+    "extraction_notes": "agent: enumerated Category:Training_guides; fetched per-skill training guides for main(Pay-to-play+combined)/f2p(Free-to-play)/ironman(Ironman Guide subpages) via MediaWiki API (action=parse rendered HTML, redirects resolved); parsed every wikitable with a Level column + one or more XP/h columns into one record per (row x XP/h column). Rendered HTML used because many guides compute XP/h via parser-function/#var templates not present in raw wikitext."
   },
   "records": [
     {
