@@ -245,3 +245,57 @@ def test_requires_dag_gear_loadout_enters_closure():
     assert "item:8839" in closure, (
         "item:8839 (loadout leaf) must enter the requires closure of activity:boss"
     )
+
+
+def test_requires_dag_shared_cond_group_projects_for_all_owners():
+    """I1: two REQUIRES edges from DIFFERENT src nodes referencing the SAME cond_group
+    id must BOTH get their cond_dep edges projected.  The old setdefault(gid, src)
+    silently dropped the second owner."""
+    nodes = [
+        Node(id="npc:1", kind=NodeKind.MONSTER, name="Boss1", slug="boss1"),
+        Node(id="npc:2", kind=NodeKind.MONSTER, name="Boss2", slug="boss2"),
+        Node(id="item:x", kind=NodeKind.ITEM, name="Item X", slug="item-x"),
+    ]
+    # A single cond_group containing one ref-bearing ITEM atom
+    groups = {
+        99: ConditionGroup(
+            id=99,
+            op=Op.AND,
+            parent=None,
+            children=[ConditionAtom(atom_type=AtomType.ITEM, ref_node="item:x")],
+        ),
+    }
+    edges = [
+        # Both npc:1 AND npc:2 reference the same cond_group=99
+        Edge(id=1, type=EdgeType.REQUIRES, src="npc:1", dst=None, cond_group=99),
+        Edge(id=2, type=EdgeType.REQUIRES, src="npc:2", dst=None, cond_group=99),
+    ]
+    kg = InMemoryKGStore(nodes=nodes, edges=edges, groups=groups)
+    dag = kg.requires_dag()
+
+    assert dag.has_edge("npc:1", "item:x"), (
+        "cond_dep edge from npc:1 to item:x must be projected"
+    )
+    assert dag.has_edge("npc:2", "item:x"), (
+        "cond_dep edge from npc:2 to item:x must be projected (was silently dropped)"
+    )
+
+
+def test_iter_ref_leaves_raises_on_condition_group_cycle():
+    """I2: a cycle in condition-group children (group 1 -> group 2 -> group 1)
+    must raise ValueError, NOT recurse infinitely into RecursionError."""
+    nodes = [
+        Node(id="npc:1", kind=NodeKind.MONSTER, name="Boss", slug="boss"),
+    ]
+    # group 1 children include group 2; group 2 children include group 1 -> cycle
+    groups = {
+        1: ConditionGroup(id=1, op=Op.AND, parent=None, children=[2]),
+        2: ConditionGroup(id=2, op=Op.AND, parent=None, children=[1]),
+    }
+    edges = [
+        Edge(id=1, type=EdgeType.REQUIRES, src="npc:1", dst=None, cond_group=1),
+    ]
+    kg = InMemoryKGStore(nodes=nodes, edges=edges, groups=groups)
+
+    with pytest.raises(ValueError, match="cycle"):
+        kg.requires_dag()
