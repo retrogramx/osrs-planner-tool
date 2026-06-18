@@ -77,6 +77,29 @@ class Engine:
             return NodeRef(id=node_id, kind="", name=node_id)
         return NodeRef(id=n.id, kind=n.kind.value, name=n.name)
 
+    # -- shared guard helpers ---------------------------------------------
+    def _cycle_problem_if_any(self, node_id: str) -> Optional[Problem]:
+        """I1: if node_id's requires-closure intersects any cycle, fail closed.
+
+        Both is_unlocked and prereqs_for call this so the logic stays DRY.
+        Returns Problem(UNSATISFIABLE_CYCLE) when a cycle is present, else None.
+        refs uses mentions (not nodes) to match the prereqs_for shape.
+        """
+        cycles = self.kg.find_cycles()
+        if not cycles:
+            return None
+        cycle_nodes = {n for cyc in cycles for n in cyc}
+        closure = self.kg.descendants(node_id)
+        relevant = cycle_nodes & (closure | {node_id})
+        if not relevant:
+            return None
+        cyc_refs = {nid: self._noderef(nid) for nid in relevant}
+        return Problem(
+            kind=ProblemKind.UNSATISFIABLE_CYCLE,
+            refs=Refs(mentions=cyc_refs),
+            message=f"prereq cycle: {sorted(relevant)}",
+        )
+
     # -- §3.1 reads -------------------------------------------------------
     def is_unlocked(self, state: Optional[AccountState], node_id: str) -> Result[cards.UnlockCard]:
         # D7: NOT_FOUND carries an EMPTY Refs; the unknown id is named in the message.
@@ -94,6 +117,10 @@ class Engine:
                 refs=Refs(nodes={node_id: self._noderef(node_id)}),
                 message=f"no account state to evaluate {node_id!r}",
             )
+        # I1: cycles fail closed; guard BEFORE _node_verdict to avoid RecursionError.
+        cycle_problem = self._cycle_problem_if_any(node_id)
+        if cycle_problem is not None:
+            return cycle_problem
 
         refs_nodes = {node_id: self._noderef(node_id)}
         # D5: fold ALL of the node's requires edges as an AND.
@@ -218,8 +245,12 @@ class Engine:
             return ("satisfied", "satisfied")
         if tri is Tri.UNKNOWN:
             return ("cant_verify", self._first_reason(state, node_id, Tri.UNKNOWN))
-        # FALSE -> not yet met but reachable; impossible_for_mode is set elsewhere
-        # (only via Unacquirable / pruned account_type branch — not computed in v1 here).
+        # FALSE -> not yet met but reachable.
+        # NOTE: impossible_for_mode is intentionally NOT emitted here. _leaf_step
+        # (called from is_unlocked's _collect_failures) maps a FALSE account_type atom
+        # to "impossible_for_mode" (§5.3b), but prereqs_for maps ALL FALSE to
+        # "satisfiable" — the account-type pruning / Unacquirable expansion is deferred
+        # to the future expand_for_account task. This divergence is by design; see §13.1.
         return ("satisfiable", self._first_reason(state, node_id, Tri.FALSE))
 
     def _iter_atoms_for(self, node_id: str):
@@ -264,18 +295,10 @@ class Engine:
                 refs=Refs(nodes={node_id: self._noderef(node_id)}),
                 message=f"no account state to evaluate {node_id!r}",
             )
-        # I1: cycles fail the build; guard at runtime so a bad fixture fails closed (§10).
-        cycles = self.kg.find_cycles()
-        cycle_nodes = {n for cyc in cycles for n in cyc}
-        closure = self.kg.descendants(node_id)
-        relevant = cycle_nodes & (closure | {node_id})
-        if relevant:
-            cyc_refs = {nid: self._noderef(nid) for nid in relevant}
-            return Problem(
-                kind=ProblemKind.UNSATISFIABLE_CYCLE,
-                refs=Refs(mentions=cyc_refs),
-                message=f"prereq cycle: {sorted(relevant)}",
-            )
+        # I1: cycles fail closed; shared helper keeps guard logic DRY with is_unlocked.
+        cycle_problem = self._cycle_problem_if_any(node_id)
+        if cycle_problem is not None:
+            return cycle_problem
         goal_ref = {node_id: self._noderef(node_id)}
         # Already satisfied = the goal's own requires fold is TRUE AND the account meets
         # every prereq. prereq_ids is PREREQS-FIRST (D1: reversed topological_sort).
@@ -303,7 +326,7 @@ class Engine:
         # trees (the goal's own atoms reference the top-level prereqs, so include node_id).
         for owner in [node_id] + prereq_ids:
             for atom in self._iter_atoms_for(owner):
-                key = (atom.atom_type.value, atom.ref_node, atom.threshold, atom.qty)
+                key = (atom.atom_type.value, atom.ref_node, atom.threshold, atom.qty, atom.data.get("state"))
                 if key in seen_atoms:
                     continue
                 seen_atoms.add(key)

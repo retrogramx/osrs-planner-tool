@@ -2,7 +2,8 @@
 import pytest
 
 from osrs_planner.engine.engine import Engine
-from osrs_planner.engine.kg.model import EdgeType
+from osrs_planner.engine.kg.model import EdgeType, Node, Edge, NodeKind
+from osrs_planner.engine.kg.store import InMemoryKGStore
 from osrs_planner.engine.result import Ok, Problem, ProblemKind
 from osrs_planner.engine.cards import UnlockCard
 from osrs_planner.engine.state import AccountState
@@ -134,3 +135,26 @@ def test_fresh_valid_account_is_not_missing_state(scurrius_kg):
     res = Engine(scurrius_kg).is_unlocked(fresh, SCURRIUS)
     assert isinstance(res, Ok)
     assert res.card.status in {"locked", "indeterminate"}  # never MISSING_STATE
+
+
+def _cyclic_kg():
+    """A:requires->B, B:requires->A — same pattern as test_engine_prereqs._cyclic_kg."""
+    nodes = [
+        Node(id="a", kind=NodeKind.ACCESS, name="A", slug="a"),
+        Node(id="b", kind=NodeKind.ACCESS, name="B", slug="b"),
+    ]
+    edges = [
+        Edge(id=1, type=EdgeType.REQUIRES, src="a", dst="b"),
+        Edge(id=2, type=EdgeType.REQUIRES, src="b", dst="a"),
+    ]
+    return InMemoryKGStore(nodes=nodes, edges=edges, groups={})
+
+
+def test_is_unlocked_cycle_is_unsatisfiable_cycle():
+    """I1: is_unlocked must fail closed on a requires cycle (UNSATISFIABLE_CYCLE),
+    not raise RecursionError via unbounded _node_verdict recursion."""
+    eng = Engine(_cyclic_kg())
+    state = AccountState(mode="main")
+    res = eng.is_unlocked(state, "a")
+    assert isinstance(res, Problem)
+    assert res.kind is ProblemKind.UNSATISFIABLE_CYCLE
