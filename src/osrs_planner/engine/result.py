@@ -15,7 +15,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 from enum import Enum
-from typing import Generic, TypeVar, Union
+from typing import Generic, Literal, TypeVar
 
 T = TypeVar("T")
 
@@ -85,7 +85,7 @@ class Empty:
 
     refs: Refs
     reason: TerminalReason
-    status: str = "ok"
+    status: Literal["ok"] = "ok"
 
 
 @dataclass(frozen=True)
@@ -99,4 +99,4 @@ class Problem:
 
 
 # The envelope every Engine function returns. Consumers branch on the variant.
-Result = Union[Ok[T], Empty, Problem]
+type Result[T] = Ok[T] | Empty | Problem
