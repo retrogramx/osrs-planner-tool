@@ -195,3 +195,51 @@ def test_evaluate_and_or_not_fold_via_kleene():
     low_str_high_qp = AccountState(mode="normal",
                                    levels={"skill:attack": 70, "skill:strength": 60}, qp=99)
     assert evaluate(1, low_str_high_qp, kg) is Tri.FALSE
+
+
+def test_gear_loadout_atom_dynamic_partial_false_full_true():
+    # Void composition (kg-schema worked example): AND( OR(helm a/b/c), top, robe, gloves )
+    nodes = [
+        Node(id="gear_loadout:void", kind=NodeKind.GEAR_LOADOUT, name="Full Void", slug="void"),
+        Node(id="item:11663", kind=NodeKind.ITEM, name="Void mage helm", slug="void-mage-helm"),
+        Node(id="item:11664", kind=NodeKind.ITEM, name="Void ranger helm", slug="void-ranger-helm"),
+        Node(id="item:11665", kind=NodeKind.ITEM, name="Void melee helm", slug="void-melee-helm"),
+        Node(id="item:8839", kind=NodeKind.ITEM, name="Void top", slug="void-top"),
+        Node(id="item:8840", kind=NodeKind.ITEM, name="Void robe", slug="void-robe"),
+        Node(id="item:8842", kind=NodeKind.ITEM, name="Void gloves", slug="void-gloves"),
+    ]
+    # composition cond_group 10 lives on gear_loadout:void's dst=NULL requires edge
+    groups = [
+        ConditionGroup(id=10, op=Op.AND, parent=None, children=[
+            11,  # the helm-OR subgroup
+            ConditionAtom(atom_type=AtomType.ITEM, ref_node="item:8839"),
+            ConditionAtom(atom_type=AtomType.ITEM, ref_node="item:8840"),
+            ConditionAtom(atom_type=AtomType.ITEM, ref_node="item:8842"),
+        ]),
+        ConditionGroup(id=11, op=Op.OR, parent=10, children=[
+            ConditionAtom(atom_type=AtomType.ITEM, ref_node="item:11663"),
+            ConditionAtom(atom_type=AtomType.ITEM, ref_node="item:11664"),
+            ConditionAtom(atom_type=AtomType.ITEM, ref_node="item:11665"),
+        ]),
+    ]
+    edges = [
+        Edge(id=9100, type=EdgeType.REQUIRES, src="gear_loadout:void", dst=None, cond_group=10),
+    ]
+    kg = _store(nodes=nodes, edges=edges, groups=groups)
+    atom = ConditionAtom(atom_type=AtomType.GEAR_LOADOUT, ref_node="gear_loadout:void")
+
+    # full set (melee helm + top + robe + gloves) -> TRUE
+    full = AccountState(mode="normal", counts={
+        "item:11665": 1, "item:8839": 1, "item:8840": 1, "item:8842": 1,
+    })
+    assert atom_satisfied(atom, full, kg) is Tri.TRUE
+
+    # 3/4 pieces (missing gloves) -> FALSE (the false-single-piece-OR guard)
+    three = AccountState(mode="normal", counts={
+        "item:11665": 1, "item:8839": 1, "item:8840": 1,
+    })
+    assert atom_satisfied(atom, three, kg) is Tri.FALSE
+
+    # only one piece (a helm) -> FALSE (would be a false TRUE without the AND-of-slots tree)
+    one = AccountState(mode="normal", counts={"item:11665": 1})
+    assert atom_satisfied(atom, one, kg) is Tri.FALSE

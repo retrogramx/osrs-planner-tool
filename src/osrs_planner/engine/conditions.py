@@ -100,6 +100,11 @@ def atom_satisfied(atom: ConditionAtom, state: AccountState, kg: KGStore) -> Tri
             return from_bool(0 >= (atom.threshold or 0))
         return Tri.UNKNOWN
 
+    if at is AtomType.GEAR_LOADOUT:
+        # DYNAMIC: re-evaluate the loadout's item-composition tree against CURRENT counts
+        # (never read from done -- gear is ownable/losable). kg-schema-v1 worked Void example.
+        return evaluate(kg.composition_of(atom.ref_node), state, kg)
+
     raise NotImplementedError(f"atom_satisfied: {at!r} not implemented")
 
 
