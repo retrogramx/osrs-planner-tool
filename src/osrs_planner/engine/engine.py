@@ -185,6 +185,71 @@ class Engine:
             status="cant_verify" if tri is Tri.UNKNOWN else "satisfiable",
         )
 
+    # -- prereqs_for helpers -----------------------------------------------
+    def _atoms_referencing(self, node_id: str) -> list:
+        """Every condition atom (in any requires cond_group across the KG) whose
+        ref_node is node_id — i.e. how a PARENT references this prereq (quest state,
+        is_unlocked, skill_level threshold, …). This is the account-meets-prereq test,
+        not the prereq's own downstream requires (Defect 5)."""
+        out = []
+        for e in self.kg.edges:
+            if e.type.value == "requires" and e.cond_group is not None:
+                for atom in self._iter_group_atoms(e.cond_group):
+                    if atom.ref_node == node_id:
+                        out.append(atom)
+        return out
+
+    def _account_meets_tri(self, state: AccountState, node_id: str) -> Tri:
+        """AND-fold of every atom that references node_id (does the ACCOUNT meet it?).
+        No referencing atom (e.g. the goal itself, or a bare dst node) -> fold its OWN
+        requires edges so a node-type prereq reads as 'is it itself unlocked' (D5)."""
+        refs = self._atoms_referencing(node_id)
+        if refs:
+            return k_and([atom_satisfied(a, state, self.kg) for a in refs])
+        # node-type prereq with no referencing atom: is it itself unlocked? (D5 recursion)
+        own = [
+            evaluate(e.cond_group, state, self.kg)
+            for e in self.kg.edges
+            if e.type.value == "requires" and e.src == node_id and e.cond_group is not None
+        ]
+        return k_and(own) if own else Tri.TRUE
+
+    def _step_status_for(self, state: AccountState, node_id: str) -> tuple[str, str]:
+        """Map whether the ACCOUNT meets a prereq to a Step (status, reason). §5.2 vocab:
+        satisfied | satisfiable | cant_verify (UNKNOWN) | impossible_for_mode."""
+        tri = self._account_meets_tri(state, node_id)
+        if tri is Tri.TRUE:
+            return ("satisfied", "satisfied")
+        if tri is Tri.UNKNOWN:
+            return ("cant_verify", self._first_reason(state, node_id, Tri.UNKNOWN))
+        # FALSE -> not yet met but reachable; impossible_for_mode is set elsewhere
+        # (only via Unacquirable / pruned account_type branch — not computed in v1 here).
+        return ("satisfiable", self._first_reason(state, node_id, Tri.FALSE))
+
+    def _iter_atoms_for(self, node_id: str):
+        for e in self.kg.edges:
+            if e.type.value == "requires" and e.src == node_id and e.cond_group is not None:
+                yield from self._iter_group_atoms(e.cond_group)
+
+    def _iter_group_atoms(self, group_id: int):
+        for child in self.kg.children_of(group_id):
+            if isinstance(child, ConditionAtom):
+                yield child
+            else:
+                gid = child.id if isinstance(child, ConditionGroup) else child
+                yield from self._iter_group_atoms(gid)
+
+    def _first_reason(self, state: AccountState, node_id: str, want: Tri) -> str:
+        # name the atom (referencing the prereq) whose verdict is `want` (FALSE/UNKNOWN)
+        for atom in self._atoms_referencing(node_id):
+            if atom_satisfied(atom, state, self.kg) is want:
+                return atom.atom_type.value
+        for atom in self._iter_atoms_for(node_id):
+            if atom_satisfied(atom, state, self.kg) is want:
+                return atom.atom_type.value
+        return "requires"
+
+    # -- §3.2 reads -------------------------------------------------------
     def prereqs_for(self, state: Optional[AccountState], node_id: str) -> "Result[PlanCard]":
         # §10: guard source ∈ dag before descendants()
         node = self.kg.node(node_id)
@@ -201,7 +266,7 @@ class Engine:
         if state is None:
             return Problem(
                 kind=ProblemKind.MISSING_STATE,
-                refs=Refs(nodes={node_id: NodeRef(id=node.id, kind=node.kind, name=node.name)}),
+                refs=Refs(nodes={node_id: NodeRef(id=node.id, kind=node.kind.value, name=node.name)}),
                 message=f"no account state to evaluate {node_id!r}",
             )
         # I1: cycles fail the build; guard at runtime so a bad fixture fails closed (§10).
@@ -211,7 +276,7 @@ class Engine:
         relevant = cycle_nodes & (closure | {node_id})
         if relevant:
             cyc_refs = {
-                nid: NodeRef(id=nid, kind=(self.kg.node(nid).kind if self.kg.node(nid) else "?"),
+                nid: NodeRef(id=nid, kind=(self.kg.node(nid).kind.value if self.kg.node(nid) else "?"),
                              name=(self.kg.node(nid).name if self.kg.node(nid) else nid))
                 for nid in relevant
             }
@@ -220,7 +285,16 @@ class Engine:
                 refs=Refs(mentions=cyc_refs),
                 message=f"prereq cycle: {sorted(relevant)}",
             )
-        raise NotImplementedError  # closure build filled in by later steps
+        goal_ref = {node_id: NodeRef(id=node.id, kind=node.kind.value, name=node.name)}
+        # Already satisfied = the goal's own requires fold is TRUE AND the account meets
+        # every prereq. prereq_ids is PREREQS-FIRST (D1: reversed topological_sort).
+        goal_tri = self._node_verdict(node_id, state)  # the goal's own requires fold (D5)
+        prereq_ids = self.kg.topo_order(node_id)        # prerequisites BEFORE the goal (D1)
+        prereq_ids = [pid for pid in prereq_ids if pid != node_id]
+        all_done = all(self._account_meets_tri(state, pid) is Tri.TRUE for pid in prereq_ids)
+        if goal_tri is Tri.TRUE and all_done:
+            return Empty(refs=Refs(nodes=goal_ref), reason=TerminalReason.ALREADY_SATISFIED)
+        raise NotImplementedError  # PlanCard build in the next step
 
     def next_steps(self, state: AccountState, node_id: str) -> Result[cards.PlanCard]:
         raise NotImplementedError  # later task

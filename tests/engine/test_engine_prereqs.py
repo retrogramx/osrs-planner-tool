@@ -99,3 +99,22 @@ def test_prereqs_for_cycle_is_unsatisfiable_cycle():
     assert res.kind is ProblemKind.UNSATISFIABLE_CYCLE
     # cycle nodes are surfaced for the Advisor (§4: refs ⊆ touched nodes)
     assert "a" in res.refs.mentions or "a" in res.refs.nodes
+
+
+def _satisfied_state():
+    return AccountState(
+        mode="main",
+        levels={"skill:attack": 70},
+        quest_state={"quest:rfd": "completed"},
+        done={"access:scur-lair"},
+        observable_families={"skill_level", "quest", "is_unlocked"},
+    )
+
+
+def test_prereqs_for_satisfied_goal_is_empty_already_satisfied():
+    eng = Engine(_fixture_kg())
+    res = eng.prereqs_for(_satisfied_state(), "npc:scur")
+    assert isinstance(res, Empty)
+    assert res.reason is TerminalReason.ALREADY_SATISFIED
+    assert res.status == "ok"
+    assert "npc:scur" in res.refs.nodes
