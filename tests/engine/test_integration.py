@@ -1,30 +1,36 @@
 """End-to-end: the (70 Att AND 70 Str) OR full-Void Scurrius goal on an ironman.
 
-Builds the hand-authored KG fixture from kg-schema-v1.md's worked example and asserts
-is_unlocked / prereqs_for / next_steps tell ONE coherent story.
+Uses the canonical KG fixture from kg-schema-v1.md's worked example (build_store).
+Asserts is_unlocked / prereqs_for / next_steps tell ONE coherent story, modelling
+the TRUE OR semantics — no hard skill edges.
 
-Adaptation notes (plan vs. real engine):
+Design notes:
 - skill_level atoms are NOT ref-bearing (AtomType.SKILL_LEVEL not in _REF_BEARING_ATOMS),
-  so skill nodes only enter the requires_dag via explicit dst-based edges.  The fixture
-  therefore adds two dst-based edges (edges 3 & 4) for Attack/Strength with their own
-  single-atom cond groups (4, 5) so the skill nodes appear in prereqs_for's closure.
-- Empty(ALREADY_SATISFIED) requires ALL nodes in the closure to be individually satisfied.
-  Because the OR has three helm nodes (11663/11664/11665) each individually checked, the
-  "done" account must own ALL three helms (not just one) so every node in the topo order
-  reads as satisfied.
+  so skill nodes do NOT enter the requires_dag closure.  Attack/Strength are cond-tree
+  leaves evaluated by is_unlocked (where they appear as BLOCKERS on the failing branch)
+  but are NOT Steps in prereqs_for/next_steps.
+- The Void branch items (item:*) and gear_loadout:void ARE ref-bearing dst-side nodes:
+  they appear as both STEPS in prereqs_for and candidates on the next_steps frontier.
+- access:scurrius-lair has no requires edges of its own -> unconditionally "satisfied";
+  it appears as a Step but is already met for every account.
+- Empty(ALREADY_SATISFIED) fires only when every node in the topo closure is
+  individually satisfied.  Because the closure contains all three helm alternatives
+  (item:11663/11664/11665), every account presented to prereqs_for must own all three
+  helms (the OR is evaluated per-node, not as a branch truth value).
 """
+
 import pytest
 
-from osrs_planner.engine.kg.model import (
-    Node, NodeKind, Edge, EdgeType, ConditionGroup, ConditionAtom, Op, AtomType,
-)
-from osrs_planner.engine.kg.store import InMemoryKGStore
-from osrs_planner.engine.state import AccountState
 from osrs_planner.engine.engine import Engine
 from osrs_planner.engine.result import Ok, Empty, Problem, ProblemKind, TerminalReason
+from osrs_planner.engine.state import AccountState
+from tests.engine.fixtures.kg_fixture import (
+    build_store,
+    iron_75atk_60str_novoid,
+    main_full_void,
+)
 
-
-# ---- Node ids (kg-schema-v1.md worked example) ----
+# Canonical node ids (kg-schema-v1.md worked example)
 SCURRIUS = "npc:7221"
 ATTACK = "skill:attack"
 STRENGTH = "skill:strength"
@@ -35,83 +41,30 @@ HELM_MELEE = "item:11665"
 VOID_TOP = "item:8839"
 VOID_ROBE = "item:8840"
 VOID_GLOVES = "item:8842"
+ACCESS = "access:scurrius-lair"
+
+VOID_ITEM_LEAVES = {HELM_MAGE, HELM_RANGE, HELM_MELEE, VOID_TOP, VOID_ROBE, VOID_GLOVES}
 
 
 @pytest.fixture
 def kg():
-    """Scurrius requires (70 Att AND 70 Str) OR full-Void; Void composition = AND-of-slots.
-
-    Edges 3 & 4 are explicit dst-based requires edges for Attack/Strength (with cond_groups
-    4, 5) so the skill nodes enter the requires_dag closure and appear in prereqs_for steps.
-    Groups 4 & 5 mirror the same skill_level thresholds as the OR-branch cond atoms.
-    """
-    nodes = [
-        Node(id=SCURRIUS, kind=NodeKind.MONSTER, name="Scurrius", slug="scurrius"),
-        Node(id=ATTACK, kind=NodeKind.SKILL, name="Attack", slug="attack"),
-        Node(id=STRENGTH, kind=NodeKind.SKILL, name="Strength", slug="strength"),
-        Node(id=VOID, kind=NodeKind.GEAR_LOADOUT, name="Full Void", slug="void"),
-        Node(id=HELM_MAGE, kind=NodeKind.ITEM, name="Void mage helm", slug="void-mage-helm"),
-        Node(id=HELM_RANGE, kind=NodeKind.ITEM, name="Void ranger helm", slug="void-ranger-helm"),
-        Node(id=HELM_MELEE, kind=NodeKind.ITEM, name="Void melee helm", slug="void-melee-helm"),
-        Node(id=VOID_TOP, kind=NodeKind.ITEM, name="Void knight top", slug="void-knight-top"),
-        Node(id=VOID_ROBE, kind=NodeKind.ITEM, name="Void knight robe", slug="void-knight-robe"),
-        Node(id=VOID_GLOVES, kind=NodeKind.ITEM, name="Void knight gloves", slug="void-knight-gloves"),
-    ]
-    groups = {
-        # Scurrius requires-tree: OR( AND(att,str), void )
-        1: ConditionGroup(id=1, op=Op.OR, parent=None, children=[2, 3]),
-        2: ConditionGroup(id=2, op=Op.AND, parent=1, children=[
-            ConditionAtom(atom_type=AtomType.SKILL_LEVEL, ref_node=ATTACK, threshold=70),
-            ConditionAtom(atom_type=AtomType.SKILL_LEVEL, ref_node=STRENGTH, threshold=70),
-        ]),
-        3: ConditionGroup(id=3, op=Op.AND, parent=1, children=[
-            ConditionAtom(atom_type=AtomType.GEAR_LOADOUT, ref_node=VOID),
-        ]),
-        # dst-edge cond groups for the skill nodes (mirror the OR-branch thresholds)
-        4: ConditionGroup(id=4, op=Op.AND, parent=None, children=[
-            ConditionAtom(atom_type=AtomType.SKILL_LEVEL, ref_node=ATTACK, threshold=70),
-        ]),
-        5: ConditionGroup(id=5, op=Op.AND, parent=None, children=[
-            ConditionAtom(atom_type=AtomType.SKILL_LEVEL, ref_node=STRENGTH, threshold=70),
-        ]),
-        # Void composition: AND( OR(3 helms), top, robe, gloves )
-        10: ConditionGroup(id=10, op=Op.AND, parent=None, children=[
-            11,
-            ConditionAtom(atom_type=AtomType.ITEM, ref_node=VOID_TOP, qty=1),
-            ConditionAtom(atom_type=AtomType.ITEM, ref_node=VOID_ROBE, qty=1),
-            ConditionAtom(atom_type=AtomType.ITEM, ref_node=VOID_GLOVES, qty=1),
-        ]),
-        11: ConditionGroup(id=11, op=Op.OR, parent=10, children=[
-            ConditionAtom(atom_type=AtomType.ITEM, ref_node=HELM_MAGE, qty=1),
-            ConditionAtom(atom_type=AtomType.ITEM, ref_node=HELM_RANGE, qty=1),
-            ConditionAtom(atom_type=AtomType.ITEM, ref_node=HELM_MELEE, qty=1),
-        ]),
-    }
-    edges = [
-        # Scurrius's requires edge: the constraint IS the tree (dst=None, cond_group=1)
-        Edge(id=1, type=EdgeType.REQUIRES, src=SCURRIUS, dst=None, cond_group=1),
-        # Explicit dst-based edges so Attack/Strength nodes enter the requires_dag closure
-        # (skill_level atoms are not ref-bearing, so cond_dep edges are not projected for them)
-        Edge(id=3, type=EdgeType.REQUIRES, src=SCURRIUS, dst=ATTACK, cond_group=4),
-        Edge(id=4, type=EdgeType.REQUIRES, src=SCURRIUS, dst=STRENGTH, cond_group=5),
-        # Void loadout composition: dst=None requires edge carrying the AND-of-slots tree (cond_group=10)
-        Edge(id=2, type=EdgeType.REQUIRES, src=VOID, dst=None, cond_group=10),
-    ]
-    return InMemoryKGStore(nodes=nodes, edges=edges, groups=groups)
+    """Canonical KG store: OR(AND(70 Att, 70 Str), gear_loadout:void) + access edge."""
+    return build_store()
 
 
 @pytest.fixture
 def ironman():
-    """75 Att / 60 Str, no Void. Bank plugin present so item absence reads as a real FALSE."""
-    return AccountState(
-        mode="ironman",
-        levels={ATTACK: 75, STRENGTH: 60},
-        observable_families={"skill_level", "skill_xp", "item", "gear_loadout"},
-    )
+    """75 Att / 60 Str, no Void.  Observable so item absence reads as a real FALSE."""
+    return iron_75atk_60str_novoid()
 
 
-def test_scurrius_is_locked_with_strength_blocker(kg, ironman):
-    """Ironman is 10 levels short of the 70 Str branch and owns no Void: locked, not indeterminate."""
+def test_scurrius_is_locked_with_single_strength_blocker(kg, ironman):
+    """Ironman is 10 levels short of the 70 Str branch and owns no Void: locked.
+
+    Exactly ONE Strength blocker surfaces (no duplicate from a mis-modelled hard edge).
+    A Full Void Knight gear_loadout blocker also surfaces.
+    No cant_verify blockers — item absence is observable.
+    """
     engine = Engine(kg)
     res = engine.is_unlocked(ironman, SCURRIUS)
 
@@ -121,21 +74,31 @@ def test_scurrius_is_locked_with_strength_blocker(kg, ironman):
     assert card.status == "locked"
     # the subject node is grounded in refs
     assert SCURRIUS in res.refs.nodes
-    # the failing strength leaf is surfaced as a blocker, none are cant_verify
-    blocker_reasons = {b.reason for b in card.blockers}
-    assert "skill_level" in blocker_reasons
+    # no cant_verify blockers — iron_75atk_60str_novoid has observable_families set
     assert all(b.status != "cant_verify" for b in card.blockers)
-    strength_blocker = [b for b in card.blockers if b.node_id == STRENGTH]
-    assert strength_blocker, "expected a Strength blocker step"
-    assert strength_blocker[0].status == "satisfiable"
+
+    strength_blockers = [b for b in card.blockers if b.node_id == STRENGTH]
+    assert len(strength_blockers) == 1, (
+        f"expected exactly ONE Strength blocker, got {len(strength_blockers)}: "
+        f"{[b.name for b in strength_blockers]}"
+    )
+    assert strength_blockers[0].status == "satisfiable"
+    assert strength_blockers[0].reason == "skill_level"
+
+    void_blockers = [b for b in card.blockers if b.node_id == VOID]
+    assert void_blockers, "expected a Full Void Knight gear_loadout blocker"
+    assert void_blockers[0].status == "satisfiable"
 
 
-def test_scurrius_prereqs_are_ordered_and_account_typed(kg, ironman):
-    """prereqs_for yields a Step per prereq with done/satisfiable status, ordered.
+def test_scurrius_prereqs_are_void_branch_not_skill_nodes(kg, ironman):
+    """prereqs_for yields Void-branch nodes + access as Steps; skills are NOT steps.
 
-    The engine projects the full requires-closure: both skill AND Void-branch nodes appear.
-    Attack 70 is met (75 >= 70) -> satisfied; Strength 70 is not (60 < 70) -> satisfiable.
-    Void items are also in steps as satisfiable (no Void owned).
+    The OR's stats branch contributes cond-tree leaves only (evaluated by is_unlocked),
+    not separate requires-dag nodes.  The step universe is:
+      - 6 void item leaves: satisfiable (none owned)
+      - gear_loadout:void: satisfiable (incomplete)
+      - access:scurrius-lair: satisfied (no requires edges of its own)
+    Attack and Strength MUST NOT appear as step node-ids.
     """
     engine = Engine(kg)
     res = engine.prereqs_for(ironman, SCURRIUS)
@@ -143,51 +106,106 @@ def test_scurrius_prereqs_are_ordered_and_account_typed(kg, ironman):
     assert isinstance(res, Ok)
     steps = res.card.steps
     assert res.card.goal_id == SCURRIUS
-    assert steps, "expected at least the stat prereqs"
+    assert steps, "expected prereq steps for the Void branch + access"
+
     by_node = {s.node_id: s for s in steps}
-    # Attack 70 is met (75) -> satisfied; Strength 70 is not (60) -> satisfiable
-    assert ATTACK in by_node and by_node[ATTACK].status == "satisfied"
-    assert STRENGTH in by_node and by_node[STRENGTH].status == "satisfiable"
-    # every step's node is grounded
+
+    # Skills are NOT steps (they are cond-tree leaves, not ref-bearing dst nodes)
+    assert ATTACK not in by_node, "Attack must not be a prereq step node"
+    assert STRENGTH not in by_node, "Strength must not be a prereq step node"
+
+    # Void item leaves ARE steps (ref-bearing via gear_loadout composition edges)
+    for item_id in VOID_ITEM_LEAVES:
+        assert item_id in by_node, f"expected {item_id} as a prereq step"
+        assert by_node[item_id].status == "satisfiable"
+
+    # gear_loadout:void is a step
+    assert VOID in by_node, "gear_loadout:void must be a prereq step"
+    assert by_node[VOID].status == "satisfiable"
+
+    # access:scurrius-lair is a step (dst edge from npc:7221), unconditionally satisfied
+    assert ACCESS in by_node, "access:scurrius-lair must be a prereq step"
+    assert by_node[ACCESS].status == "satisfied"
+
+    # every step's node is grounded in refs
     for s in steps:
         if s.node_id is not None:
             assert s.node_id in res.refs.nodes
 
 
-def test_scurrius_next_steps_is_the_doable_frontier(kg, ironman):
-    """next_steps = the prereqs whose own prereqs are all satisfied (immediately doable)."""
+def test_scurrius_next_steps_is_void_item_frontier(kg, ironman):
+    """next_steps = the Void item leaves (immediately doable: no sub-prereqs of their own)."""
     engine = Engine(kg)
     res = engine.next_steps(ironman, SCURRIUS)
 
     assert isinstance(res, Ok)
-    frontier = {s.node_id for s in res.card.steps if s.status != "satisfied"}
-    # Strength (a bare skill leaf, no sub-prereqs) is doable right now
-    assert STRENGTH in frontier
+    frontier_ids = {s.node_id for s in res.card.steps}
+
+    # At least one Void item leaf is on the frontier
+    assert frontier_ids & VOID_ITEM_LEAVES, (
+        f"expected at least one Void item leaf in frontier, got {frontier_ids}"
+    )
+
+    # gear_loadout:void is NOT on the frontier (it depends on the item leaves)
+    assert VOID not in frontier_ids, "gear_loadout:void should not be on the frontier"
+
+    # frontier is a subset of the unmet prereqs from prereqs_for
+    prereqs_res = engine.prereqs_for(ironman, SCURRIUS)
+    assert isinstance(prereqs_res, Ok)
+    unmet_prereq_ids = {s.node_id for s in prereqs_res.card.steps if s.status != "satisfied"}
+    assert frontier_ids <= unmet_prereq_ids, (
+        f"frontier {frontier_ids} is not a subset of unmet prereqs {unmet_prereq_ids}"
+    )
+
+
+def test_full_void_unlocks_despite_low_stats(kg):
+    """A 60/60 account with full Void is UNLOCKED — the Void branch satisfies the OR.
+
+    This is the regression-lock test: the old mis-modelled fixture (hard skill edges)
+    caused a full-Void low-stats account to read as 'locked' because is_unlocked
+    AND-folded the hard Attack/Strength dst edges alongside the cond-tree OR.
+    With the canonical OR model (no hard skill edges) this must return 'unlocked'.
+    """
+    engine = Engine(kg)
+    state = main_full_void()  # 60/60, full Void (melee helm + top + robe + gloves)
+    res = engine.is_unlocked(state, SCURRIUS)
+    assert isinstance(res, Ok)
+    assert res.card.status == "unlocked", (
+        f"full-Void 60/60 account must be unlocked via the Void OR branch, got {res.card.status!r}"
+    )
 
 
 def test_already_satisfied_goal_is_empty(kg):
-    """An ironman with 70/70 AND all Void pieces is fully done -> Empty(ALREADY_SATISFIED).
+    """An account that owns all Void pieces (all 3 helms + top + robe + gloves) is fully done.
 
-    All three helm nodes (HELM_MAGE/HELM_RANGE/HELM_MELEE) must be owned because each node
-    is individually checked by prereqs_for's all_done guard (the OR is evaluated per-node,
-    not as a branch truth value). Any unowned item in the closure keeps the state as Ok.
+    Empty(ALREADY_SATISFIED) requires EVERY node in the topo closure to be individually
+    satisfied.  The closure contains item:11663, item:11664, and item:11665 (all three
+    helm alternatives from the OR sub-group) — so all three must be owned, even though
+    only one helm is required at runtime by the OR evaluation.  Owning only one helm
+    leaves the other two as 'satisfiable', keeping the result as Ok (not Empty).
+
+    access:scurrius-lair has no requires edges -> unconditionally satisfied for all
+    accounts; no explicit access grant is needed.
+    Skills (Attack/Strength) are NOT in the closure (no hard dst edges) -> not checked.
     """
-    done_iron = AccountState(
-        mode="ironman",
-        levels={ATTACK: 99, STRENGTH: 99},
+    # All 3 helms + body + legs + hands = every item in the closure is owned
+    done_account = AccountState(
+        mode="normal",
         counts={
             HELM_MAGE: 1, HELM_RANGE: 1, HELM_MELEE: 1,
             VOID_TOP: 1, VOID_ROBE: 1, VOID_GLOVES: 1,
         },
-        observable_families={"skill_level", "skill_xp", "item", "gear_loadout"},
+        observable_families={"skill_level", "item", "quest", "achievement_diary"},
     )
     engine = Engine(kg)
 
-    unlocked = engine.is_unlocked(done_iron, SCURRIUS)
+    unlocked = engine.is_unlocked(done_account, SCURRIUS)
     assert isinstance(unlocked, Ok) and unlocked.card.status == "unlocked"
 
-    prereqs = engine.prereqs_for(done_iron, SCURRIUS)
-    assert isinstance(prereqs, Empty)
+    prereqs = engine.prereqs_for(done_account, SCURRIUS)
+    assert isinstance(prereqs, Empty), (
+        f"expected Empty(ALREADY_SATISFIED), got {type(prereqs).__name__}"
+    )
     assert prereqs.reason == TerminalReason.ALREADY_SATISFIED
 
 
@@ -199,7 +217,16 @@ def test_missing_node_is_a_problem(kg, ironman):
 
 
 def test_coherent_story_across_three_reads(kg, ironman):
-    """The three reads must agree: locked <=> has prereqs <=> Strength on the frontier."""
+    """The three reads agree: locked <=> has unmet prereqs <=> Void items on the frontier.
+
+    Blocker story (is_unlocked): Strength is a cond-tree BLOCKER (not a step).
+    Step story (prereqs_for): Void items + gear_loadout + access are STEPS (not skills).
+    Frontier story (next_steps): Void item leaves are immediately doable.
+
+    Cross-read invariant: frontier ⊆ unmet prereqs.
+    Honest distinction: Strength in blockers but NOT in prereq step-ids.
+    A Void item (e.g. Void melee helm) appears in BOTH the step list and the frontier.
+    """
     engine = Engine(kg)
     unlocked = engine.is_unlocked(ironman, SCURRIUS)
     prereqs = engine.prereqs_for(ironman, SCURRIUS)
@@ -208,13 +235,21 @@ def test_coherent_story_across_three_reads(kg, ironman):
     assert isinstance(unlocked, Ok) and unlocked.card.status == "locked"
     assert isinstance(prereqs, Ok) and isinstance(nxt, Ok)
 
-    # the locked blocker, the unsatisfied prereq, and the frontier all point at Strength
-    locked_nodes = {b.node_id for b in unlocked.card.blockers}
-    unmet_prereqs = {s.node_id for s in prereqs.card.steps if s.status == "satisfiable"}
-    frontier = {s.node_id for s in nxt.card.steps if s.status != "satisfied"}
-    assert STRENGTH in locked_nodes
-    assert STRENGTH in unmet_prereqs
-    assert STRENGTH in frontier
+    locked_blocker_ids = {b.node_id for b in unlocked.card.blockers}
+    step_ids = {s.node_id for s in prereqs.card.steps}
+    unmet_prereq_ids = {s.node_id for s in prereqs.card.steps if s.status != "satisfied"}
+    frontier_ids = {s.node_id for s in nxt.card.steps}
 
-    # next_steps is a subset of prereqs_for (the same Step universe, filtered)
-    assert frontier <= unmet_prereqs
+    # Strength is a BLOCKER (cond-tree leaf) but NOT a prereq step
+    assert STRENGTH in locked_blocker_ids, "Strength must appear as a blocker"
+    assert STRENGTH not in step_ids, "Strength must NOT be a prereq step node"
+
+    # A Void item leaf appears as both a step and on the frontier
+    sample_void_item = VOID_MELEE_HELM = HELM_MELEE
+    assert sample_void_item in step_ids, f"{sample_void_item} must be a prereq step"
+    assert sample_void_item in frontier_ids, f"{sample_void_item} must be on the frontier"
+
+    # frontier ⊆ unmet_prereqs (subset invariant)
+    assert frontier_ids <= unmet_prereq_ids, (
+        f"frontier {frontier_ids} is not a subset of unmet prereqs {unmet_prereq_ids}"
+    )
