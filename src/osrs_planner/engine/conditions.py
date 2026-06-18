@@ -12,6 +12,24 @@ from osrs_planner.engine.kg.store import KGStore
 from osrs_planner.engine.state import AccountState, QUEST_STATE_ORDER, family_is_observed
 
 
+def _done_membership(family: str, ref_node: str, state: AccountState) -> Tri:
+    """Binary 'ref_node in state.done', honoring the absence-aware UNKNOWN rule.
+
+    D6: presence of the value in the relevant state dict is 'known'; the
+    observed-vs-UNKNOWN decision for an ABSENT value routes through
+    family_is_observed (the single source of the §6 rule).
+
+    Present in done  -> TRUE (a manually-confirmed value is present here too).
+    Absent + family observed -> real FALSE (we'd have seen it if it were done).
+    Absent + family unobservable -> UNKNOWN (can't tell; never a false 'locked').
+    """
+    if ref_node in state.done:
+        return Tri.TRUE
+    if family_is_observed(family, state, manually_asserted=False):
+        return Tri.FALSE
+    return Tri.UNKNOWN
+
+
 def atom_satisfied(atom: ConditionAtom, state: AccountState, kg: KGStore) -> Tri:
     at = atom.atom_type
 
@@ -39,6 +57,12 @@ def atom_satisfied(atom: ConditionAtom, state: AccountState, kg: KGStore) -> Tri
     if at is AtomType.ACCOUNT_TYPE:
         # mode is always known for a loaded account -> never UNKNOWN
         return from_bool(state.mode == atom.data.get("value"))
+
+    if at is AtomType.IS_UNLOCKED:
+        return _done_membership("is_unlocked", atom.ref_node, state)
+
+    if at is AtomType.COMBAT_ACHIEVEMENT:
+        return _done_membership("combat_achievement", atom.ref_node, state)
 
     raise NotImplementedError(f"atom_satisfied: {at!r} not implemented")
 

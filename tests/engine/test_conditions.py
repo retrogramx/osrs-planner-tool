@@ -78,3 +78,31 @@ def test_account_type_atom_matches_mode():
     atom = ConditionAtom(atom_type=AtomType.ACCOUNT_TYPE, data={"value": "ironman"})
     assert atom_satisfied(atom, AccountState(mode="ironman"), kg) is Tri.TRUE
     assert atom_satisfied(atom, AccountState(mode="normal"), kg) is Tri.FALSE
+
+
+def test_is_unlocked_atom_done_membership_and_unobservable_absent_is_unknown():
+    kg = _store(nodes=[Node(id="access:fairy-rings", kind=NodeKind.ACCESS,
+                            name="Fairy rings", slug="fairy-rings")])
+    atom = ConditionAtom(atom_type=AtomType.IS_UNLOCKED, ref_node="access:fairy-rings")
+
+    has = AccountState(mode="normal", done={"access:fairy-rings"})
+    # access is engine-derived/unobservable; absent + not asserted -> UNKNOWN (not a false locked)
+    absent = AccountState(mode="normal")
+    # but if the family IS observed, absence is a real FALSE
+    observed = AccountState(mode="normal", observable_families={"is_unlocked"})
+
+    assert atom_satisfied(atom, has, kg) is Tri.TRUE
+    assert atom_satisfied(atom, absent, kg) is Tri.UNKNOWN
+    assert atom_satisfied(atom, observed, kg) is Tri.FALSE
+
+
+def test_combat_achievement_atom_binary_in_done():
+    kg = _store(nodes=[Node(id="ca:scurrius:smashing-the-rat", kind=NodeKind.COMBAT_ACHIEVEMENT,
+                            name="Smashing the Rat", slug="scurrius:smashing-the-rat")])
+    atom = ConditionAtom(atom_type=AtomType.COMBAT_ACHIEVEMENT, ref_node="ca:scurrius:smashing-the-rat")
+    done = AccountState(mode="normal", done={"ca:scurrius:smashing-the-rat"})
+    absent = AccountState(mode="normal")  # per-task CAs unobservable on Hiscores -> UNKNOWN
+    observed = AccountState(mode="normal", observable_families={"combat_achievement"})
+    assert atom_satisfied(atom, done, kg) is Tri.TRUE
+    assert atom_satisfied(atom, absent, kg) is Tri.UNKNOWN
+    assert atom_satisfied(atom, observed, kg) is Tri.FALSE
