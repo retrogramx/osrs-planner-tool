@@ -94,7 +94,7 @@ def _cyclic_kg():
 
 def test_prereqs_for_cycle_is_unsatisfiable_cycle():
     eng = Engine(_cyclic_kg())
-    state = AccountState(mode="main", done={"x"})  # non-empty so we pass the missing_state guard
+    state = AccountState(mode="main", done={"x"})  # non-None state passes the MISSING_STATE guard; done content is irrelevant here
     res = eng.prereqs_for(state, "a")
     assert isinstance(res, Problem)
     assert res.kind is ProblemKind.UNSATISFIABLE_CYCLE

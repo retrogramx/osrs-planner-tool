@@ -193,7 +193,7 @@ class Engine:
         not the prereq's own downstream requires (Defect 5)."""
         out = []
         for e in self.kg.edges:
-            if e.type.value == "requires" and e.cond_group is not None:
+            if e.type is EdgeType.REQUIRES and e.cond_group is not None:
                 for atom in self._iter_group_atoms(e.cond_group):
                     if atom.ref_node == node_id:
                         out.append(atom)
@@ -201,18 +201,15 @@ class Engine:
 
     def _account_meets_tri(self, state: AccountState, node_id: str) -> Tri:
         """AND-fold of every atom that references node_id (does the ACCOUNT meet it?).
-        No referencing atom (e.g. the goal itself, or a bare dst node) -> fold its OWN
-        requires edges so a node-type prereq reads as 'is it itself unlocked' (D5)."""
+        No referencing atom (e.g. the goal itself, or a bare dst node) -> delegate to
+        _node_verdict so a node-type prereq reads as 'is it itself unlocked' (D5),
+        including bare dst-only edges that carry no cond_group."""
         refs = self._atoms_referencing(node_id)
         if refs:
             return k_and([atom_satisfied(a, state, self.kg) for a in refs])
-        # node-type prereq with no referencing atom: is it itself unlocked? (D5 recursion)
-        own = [
-            evaluate(e.cond_group, state, self.kg)
-            for e in self.kg.edges
-            if e.type.value == "requires" and e.src == node_id and e.cond_group is not None
-        ]
-        return k_and(own) if own else Tri.TRUE
+        # node-type prereq with no referencing atom: delegate to _node_verdict (D5)
+        # so that bare dst-only requires edges (no cond_group) are also folded in.
+        return self._node_verdict(node_id, state)
 
     def _step_status_for(self, state: AccountState, node_id: str) -> tuple[str, str]:
         """Map whether the ACCOUNT meets a prereq to a Step (status, reason). §5.2 vocab:
@@ -228,16 +225,15 @@ class Engine:
 
     def _iter_atoms_for(self, node_id: str):
         for e in self.kg.edges:
-            if e.type.value == "requires" and e.src == node_id and e.cond_group is not None:
+            if e.type is EdgeType.REQUIRES and e.src == node_id and e.cond_group is not None:
                 yield from self._iter_group_atoms(e.cond_group)
 
     def _iter_group_atoms(self, group_id: int):
         for child in self.kg.children_of(group_id):
             if isinstance(child, ConditionAtom):
                 yield child
-            else:
-                gid = child.id if isinstance(child, ConditionGroup) else child
-                yield from self._iter_group_atoms(gid)
+            else:  # int sub-group id
+                yield from self._iter_group_atoms(int(child))
 
     def _first_reason(self, state: AccountState, node_id: str, want: Tri) -> str:
         # name the atom (referencing the prereq) whose verdict is `want` (FALSE/UNKNOWN)
@@ -266,7 +262,7 @@ class Engine:
         if state is None:
             return Problem(
                 kind=ProblemKind.MISSING_STATE,
-                refs=Refs(nodes={node_id: NodeRef(id=node.id, kind=node.kind.value, name=node.name)}),
+                refs=Refs(nodes={node_id: self._noderef(node_id)}),
                 message=f"no account state to evaluate {node_id!r}",
             )
         # I1: cycles fail the build; guard at runtime so a bad fixture fails closed (§10).
@@ -275,17 +271,13 @@ class Engine:
         closure = self.kg.descendants(node_id)
         relevant = cycle_nodes & (closure | {node_id})
         if relevant:
-            cyc_refs = {
-                nid: NodeRef(id=nid, kind=(self.kg.node(nid).kind.value if self.kg.node(nid) else "?"),
-                             name=(self.kg.node(nid).name if self.kg.node(nid) else nid))
-                for nid in relevant
-            }
+            cyc_refs = {nid: self._noderef(nid) for nid in relevant}
             return Problem(
                 kind=ProblemKind.UNSATISFIABLE_CYCLE,
                 refs=Refs(mentions=cyc_refs),
                 message=f"prereq cycle: {sorted(relevant)}",
             )
-        goal_ref = {node_id: NodeRef(id=node.id, kind=node.kind.value, name=node.name)}
+        goal_ref = {node_id: self._noderef(node_id)}
         # Already satisfied = the goal's own requires fold is TRUE AND the account meets
         # every prereq. prereq_ids is PREREQS-FIRST (D1: reversed topological_sort).
         goal_tri = self._node_verdict(node_id, state)  # the goal's own requires fold (D5)
@@ -306,8 +298,7 @@ class Engine:
                               name=(pnode.name if pnode else pid),
                               reason=reason,
                               status=status))
-            if pnode is not None:
-                refs_nodes[pid] = NodeRef(id=pnode.id, kind=pnode.kind.value, name=pnode.name)
+            refs_nodes[pid] = self._noderef(pid)
 
         # referenced_atoms = every atom the Engine read across the goal's + prereqs' requires
         # trees (the goal's own atoms reference the top-level prereqs, so include node_id).
