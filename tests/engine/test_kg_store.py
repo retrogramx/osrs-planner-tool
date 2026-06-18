@@ -182,3 +182,66 @@ def test_find_cycles_detects_grant_flip_tangle():
     # (access:g -> quest:p) closes the loop, which I1 must catch.
     cycles = kg.find_cycles()
     assert cycles
+
+
+def test_requires_dag_gear_loadout_enters_closure():
+    """D3 projection rule: a GEAR_LOADOUT ref-bearing atom must project a cond_dep
+    edge to its gear_loadout:* node AND the loadout's own composition edge (a dst=None
+    REQUIRES edge) causes its item leaves to enter the requires closure.
+
+    Chain: activity:boss --cond_dep--> gear_loadout:void --cond_dep--> item:8839
+    Both gear_loadout:void and item:8839 must appear in descendants("activity:boss").
+    """
+    nodes = [
+        Node(id="activity:boss", kind=NodeKind.ACTIVITY, name="Boss", slug="boss"),
+        Node(id="gear_loadout:void", kind=NodeKind.GEAR_LOADOUT, name="Void", slug="void"),
+        Node(id="item:8839", kind=NodeKind.ITEM, name="Void top", slug="void-top"),
+    ]
+    # group 20: activity's condition tree — requires the void loadout
+    # group 10: gear_loadout:void's composition — contains one item leaf (reuse from _loadout_store style)
+    groups = {
+        20: ConditionGroup(
+            id=20,
+            op=Op.AND,
+            parent=None,
+            children=[
+                ConditionAtom(
+                    atom_type=AtomType.GEAR_LOADOUT,
+                    ref_node="gear_loadout:void",
+                )
+            ],
+        ),
+        10: ConditionGroup(
+            id=10,
+            op=Op.AND,
+            parent=None,
+            children=[ConditionAtom(atom_type=AtomType.ITEM, ref_node="item:8839")],
+        ),
+    }
+    edges = [
+        # activity has a pure-condition requires edge (dst=None) pointing at group 20
+        Edge(id=1, type=EdgeType.REQUIRES, src="activity:boss", dst=None, cond_group=20),
+        # gear_loadout:void's composition edge — dst=None, cond_group is its item list
+        Edge(id=2, type=EdgeType.REQUIRES, src="gear_loadout:void", dst=None, cond_group=10),
+    ]
+    kg = InMemoryKGStore(nodes=nodes, edges=edges, groups=groups)
+    dag = kg.requires_dag()
+
+    # cond_dep edge from activity to the gear_loadout node must exist
+    assert dag.has_edge("activity:boss", "gear_loadout:void"), (
+        "requires_dag must project a cond_dep edge from activity:boss to gear_loadout:void"
+    )
+    cond_out = [d for _, _, d in dag.out_edges("activity:boss", data=True)]
+    assert any(d.get("kind") == "cond_dep" for d in cond_out), (
+        "the edge from activity:boss to gear_loadout:void must carry kind='cond_dep'"
+    )
+
+    # the loadout's item leaf must also enter the closure via the loadout's own
+    # composition requires edge (gear_loadout:void -> item:8839 as cond_dep)
+    closure = kg.descendants("activity:boss")
+    assert "gear_loadout:void" in closure, (
+        "gear_loadout:void must be in the requires closure of activity:boss"
+    )
+    assert "item:8839" in closure, (
+        "item:8839 (loadout leaf) must enter the requires closure of activity:boss"
+    )
