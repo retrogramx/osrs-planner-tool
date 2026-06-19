@@ -18,6 +18,10 @@ from osrs_planner.cost.channels import build_index_from_repo
 from osrs_planner.cost.overlay import expand_for_account
 from osrs_planner.cost.prices import SnapshotPriceProvider
 from osrs_planner.engine.kg.json_store import JsonKGStore
+from osrs_planner.engine.kg.model import (
+    AtomType, ConditionAtom, ConditionGroup, Edge, EdgeType, Node, NodeKind, Op,
+)
+from osrs_planner.engine.kg.store import InMemoryKGStore
 from osrs_planner.engine.state import AccountState
 
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -101,3 +105,27 @@ def test_notes_empty_without_kg(provider, index):
     state = AccountState(mode="main")
     card = expand_for_account("item:4587", state, provider, index, kg=None)
     assert card.notes == []
+
+
+def test_or_of_items_composite_raises_not_implemented(provider, index):
+    # Over-collection guard: an OR group whose branches are item atoms requires
+    # only ONE branch, so flattening all of them would overstate the assemble
+    # cost. _item_needs must fail loud rather than silently over-collect. The
+    # committed KG's only OR groups are ironman wrappers (account_type/skill
+    # atoms -> zero item needs), so this exercises the dormant guard directly.
+    goal = "item:99001"
+    group = ConditionGroup(
+        id=1,
+        op=Op.OR,
+        parent=None,
+        children=[
+            ConditionAtom(atom_type=AtomType.ITEM, ref_node="item:4587", qty=1),
+            ConditionAtom(atom_type=AtomType.ITEM, ref_node="item:1333", qty=1),
+        ],
+    )
+    nodes = [Node(id=goal, kind=NodeKind.ITEM, name="OR goal", slug="or-goal")]
+    edges = [Edge(id=1, type=EdgeType.REQUIRES, src=goal, dst=None, cond_group=1)]
+    kg = InMemoryKGStore(nodes=nodes, edges=edges, groups={1: group})
+    state = AccountState(mode="main")
+    with pytest.raises(NotImplementedError, match="OR-of-items"):
+        expand_for_account(goal, state, provider, index, kg=kg)

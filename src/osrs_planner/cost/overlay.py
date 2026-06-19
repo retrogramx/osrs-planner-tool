@@ -14,7 +14,7 @@ from osrs_planner.cost.cards import CostCard, Route, rank_by_gold, roll_up_gold_
 from osrs_planner.cost.channels import ChannelRecord
 from osrs_planner.cost.prices import PriceProvider
 from osrs_planner.cost.routing import price_routes
-from osrs_planner.engine.kg.model import AtomType, EdgeType
+from osrs_planner.engine.kg.model import AtomType, EdgeType, Op
 from osrs_planner.engine.state import AccountState, account_family
 
 
@@ -27,10 +27,16 @@ def _requires_group(kg, node_id: str) -> int | None:
 
 
 def _item_needs(kg, group_id: int, _seen=None) -> list[tuple[str, int]]:
-    """Flatten an AND/OR group to (item_id, qty) needs.
+    """Flatten a group to the CONJUNCTIVE (AND) set of (item_id, qty) needs.
 
     item atoms -> (ref_node, qty or 1); gear_loadout atoms -> expand via
-    composition_of(ref_node); nested sub-groups (int children) recurse.
+    composition_of(ref_node); nested sub-groups (int children) recurse. v1
+    assumes every contributing group is conjunctive: all collected needs are
+    required together. An OR group that would contribute item/gear_loadout
+    needs (only ONE branch is actually required) would overstate an assemble
+    cost, so it raises NotImplementedError rather than over-collect. OR groups
+    that contribute no item/gear_loadout needs -- e.g. the ironman wrappers
+    OR(account_type=='main', skill_req) -- are unaffected and collect nothing.
     """
     _seen = _seen if _seen is not None else set()
     if group_id in _seen:
@@ -44,6 +50,12 @@ def _item_needs(kg, group_id: int, _seen=None) -> list[tuple[str, int]]:
             needs.append((child.ref_node, child.qty or 1))
         elif child.atom_type is AtomType.GEAR_LOADOUT:
             needs.extend(_item_needs(kg, kg.composition_of(child.ref_node), _seen))
+    if needs and kg.groups[group_id].op is Op.OR:
+        raise NotImplementedError(
+            f"OR-of-items composites are not supported in v1: group {group_id} "
+            "(op=OR) contributes item/gear_loadout needs; only one branch is "
+            "required, so collecting all would overstate the assemble cost."
+        )
     return needs
 
 
@@ -82,12 +94,8 @@ def expand_for_account(
         all_known = True
         for item_id, qty in needs:
             sub = price_routes(item_id, family, provider, index)
-            ranked = sorted(
-                sub,
-                key=lambda r: (r.gold_status == "unavailable" or r.gold_cost is None,
-                               r.gold_cost if r.gold_cost is not None else 0),
-            )
-            chosen = ranked[0] if ranked else Route(
+            # Single source of truth for the unavailable-last ordering.
+            chosen = sub[rank_by_gold(sub)[0]] if sub else Route(
                 channel="none", currency="currency:coins", gold_cost=None,
                 gold_status="unavailable", account_allowed=False, source="kg",
                 notes=[f"no {family}-allowed route for {item_id}"],
