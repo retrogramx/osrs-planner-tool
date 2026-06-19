@@ -161,8 +161,11 @@ class InMemoryKGStore(KGStore):
             if e.type is EdgeType.REQUIRES and e.dst is not None:
                 dag.add_edge(e.src, e.dst, kind=EDGE_KIND_REQUIRES, cond_group=e.cond_group)
         # 1b) ref-bearing condition leaves -> cond_dep closure edges
+        # Skip self-loops: an ITEM atom whose ref_node equals its owner (goal owns
+        # itself) carries no topological dependency and must not form a cycle.
         for owner, ref_node, gid in self._iter_ref_leaves():
-            dag.add_edge(owner, ref_node, kind=EDGE_KIND_COND_DEP, cond_group=gid)
+            if owner != ref_node:
+                dag.add_edge(owner, ref_node, kind=EDGE_KIND_COND_DEP, cond_group=gid)
         return dag
 
     def descendants(self, goal_id: str) -> set[str]:
