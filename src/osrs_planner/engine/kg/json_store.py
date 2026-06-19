@@ -14,6 +14,8 @@ Serialized shapes (spec §5) — all enum fields are the enum .value string:
     group: {"id","op","parent","children"}          (parent may be null)
              children = list of (int sub-group id) | (inline atom-dict)
     atom:  {"atom_type","ref_node","threshold","qty","data"}
+
+The kg_ingest assembler MUST import node_to_dict / edge_to_dict / group_to_dict / atom_to_dict from this module to write kg/*.json — do NOT re-implement the serialization shape (prevents encode/decode drift).
 """
 from __future__ import annotations
 
@@ -91,7 +93,8 @@ def group_from_dict(d: dict) -> ConditionGroup:
             children.append(atom_from_dict(child))
         else:
             children.append(int(child))
-    return ConditionGroup(id=int(d["id"]), op=Op(d["op"]), parent=d.get("parent"),
+    return ConditionGroup(id=int(d["id"]), op=Op(d["op"]),
+                          parent=int(d["parent"]) if d.get("parent") is not None else None,
                           children=children)
 
 
