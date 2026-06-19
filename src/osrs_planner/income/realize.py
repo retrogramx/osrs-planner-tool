@@ -1,21 +1,30 @@
 # src/osrs_planner/income/realize.py
-"""Per-family income realization (v1 RAW realization).
+"""Per-family income realization (best-realization, with the iron processing chain).
 
 realize_income(method, family, provider, recipe_index) -> (gp_hr, gp_hr_status)
 computes a method's COINS-ONLY gp/hr at query time, the inverse of cost's price
-walk. v1 ships the RAW realization:
+walk:
 
   main      -> sum over outputs of GE value (provider.ge_price; coins face) * rate
                MINUS sum over inputs of GE cost * rate.
-  iron/uim  -> sum over outputs of (coins face) + High-Alch of the RAW drop
-               (provider.high_alch) * rate. The multi-step tan->craft->alch walk
-               lands in T5 (best_realization), wired via recipe_index.
+  iron/uim  -> sum over outputs of best_realization(output) * rate. Each non-coins
+               iron output is valued at max(RAW High-Alch, process-then-alch via
+               the tan->craft->alch walk over recipe_index), gated by the account's
+               skills, minus internal costs (per-hide tan service fee + secondary
+               inputs). Green dragons: 1539/hide via the body chain (Crafting 63)
+               vs 81 raw alch.
 
 NEVER fabricate (design §4): a missing price, a null/NaN rate, or (for iron) a
 processing_dependent method whose chain isn't covered -> gp_hr_status="unknown",
-gp_hr=None. A non-coin output that can't be valued in coins makes the whole
-method unknown (no partial fabricated number). recipe_index is accepted now (the
-T5 seam) but UNUSED in v1 raw realization.
+gp_hr=None. A NORMAL non-coin item output (item_id set) that can't be valued in
+coins makes the whole method unknown (no partial fabricated number).
+
+AGGREGATE/BUNDLE outputs (item_id is None AND not is_coins -- e.g. an unitemized
+"gem drop table") are SKIPPED: they contribute 0 and do NOT force unknown, for
+BOTH families. These bundles are excluded from v1 income -- a DISCLOSED honest
+under-count (the safe direction), not a fabricated value. Valuing them is a v2
+follow-up. Without this skip, any method carrying a bundle output (like the real
+green-dragons record) would falsely return unknown for every family.
 
 family is one of {"main","ironman","uim"} (from engine.state.account_family).
 """
@@ -32,21 +41,6 @@ _IRON_FAMILIES = frozenset({"ironman", "uim"})
 def _bad_rate(rate) -> bool:
     """A rate is unusable when absent or NaN (a null/NaN rate = not modelled)."""
     return rate is None or (isinstance(rate, float) and math.isnan(rate))
-
-
-def _coin_value_of_output(flow: Flow, family: str, provider: PriceProvider) -> int | None:
-    """Coin value of ONE output unit for the family, or None if unpriceable.
-
-    Coins -> face (1). main -> GE price. iron/uim -> RAW High-Alch (the
-    multi-step process-then-alch walk is T5).
-    """
-    if flow.is_coins:
-        return 1
-    if flow.item_id is None:
-        return None
-    if family in _IRON_FAMILIES:
-        return provider.high_alch(flow.item_id)
-    return provider.ge_price(flow.item_id)
 
 
 def _coin_cost_of_input(flow: Flow, provider: PriceProvider) -> int | None:
@@ -80,9 +74,28 @@ def realize_income(method: MethodRecord, family: str, provider: PriceProvider,
     total = 0.0
     for out in method.outputs:
         rate = out.qty_per_hour
-        unit = _coin_value_of_output(out, family, provider)
-        if _bad_rate(rate) or unit is None:
+        if _bad_rate(rate):
             return (None, "unknown")
+        if out.is_coins:
+            unit = 1
+        elif out.item_id is None:
+            # AGGREGATE/BUNDLE output (item_id None, not coins -- e.g. an
+            # unitemized "gem drop table"). Excluded from v1 income: SKIP it
+            # (contributes 0; does NOT force unknown), for BOTH families. A
+            # disclosed honest under-count, the SAFE direction -- never a
+            # fabricated value. (A NORMAL item output that can't be valued
+            # still forces unknown below; only unitemized bundles are skipped.)
+            continue
+        elif is_iron:
+            unit, ostatus = best_realization(
+                out.item_id, family, provider, recipe_index, method.requirements.skills
+            )
+            if ostatus != "known" or unit is None:
+                return (None, "unknown")
+        else:
+            unit = provider.ge_price(out.item_id)
+            if unit is None:
+                return (None, "unknown")
         total += unit * rate
 
     for inp in method.inputs:
@@ -93,3 +106,78 @@ def realize_income(method: MethodRecord, family: str, provider: PriceProvider,
         total -= unit * rate
 
     return (int(total), "known")
+
+
+def _level_ok(recipe: dict, skills: dict) -> bool:
+    """The account meets the recipe's skill gate.
+
+    A recipe with no skill (null) is always craftable. A skill gate requires
+    skills[skill] >= level. The caller passes the account's REAL levels; an
+    absent skill is treated as below the gate. Skill keys are DISPLAY names
+    ("Crafting"), matching the recipe `skill` field and method.requirements skill
+    slugs both -- the caller normalizes when needed.
+    """
+    skill = recipe.get("skill")
+    if not skill:
+        return True
+    return int(skills.get(skill, 0)) >= int(recipe.get("level") or 1)
+
+
+def best_realization(item_id: str, family: str, provider: PriceProvider,
+                     recipe_index: dict[str, list[dict]], skills: dict,
+                     _seen: frozenset[str] | None = None) -> tuple[int | None, str]:
+    """Best coins-realization for a single iron output, in coins.
+
+    Compares: high_alch(raw) vs every process-then-realize route walking
+    recipe_index (raw -> product), recursively, gated by the account's skills,
+    subtracting internal costs (per-unit service_fee_coins + secondary inputs).
+    Returns (best_coins_per_unit_of_item_id, status). status == "unknown" only
+    when NOTHING is priceable (no alch, no covered chain). _seen guards cycles.
+    """
+    _seen = _seen or frozenset()
+    if item_id in _seen:
+        return None, "unknown"
+    seen = _seen | {item_id}
+
+    candidates: list[int] = []
+
+    raw = provider.high_alch(item_id)
+    if raw is not None:
+        candidates.append(int(raw))
+
+    for recipe in recipe_index.get(item_id, []):
+        if not _level_ok(recipe, skills):
+            continue
+        out_id = recipe["output_item_id"]
+        out_qty = int(recipe.get("output_qty") or 1)
+        inputs = recipe.get("inputs") or []
+        this_in = next((i for i in inputs if i["item_id"] == item_id), None)
+        if this_in is None:
+            continue
+        consumed = float(this_in["qty"]) or 1.0
+
+        prod_val, prod_status = best_realization(out_id, family, provider, recipe_index, skills, seen)
+        if prod_status != "known" or prod_val is None:
+            continue
+
+        service_fee = float(recipe.get("service_fee_coins") or 0) * consumed
+        secondary_cost = 0.0
+        ok = True
+        for inp in inputs:
+            if inp["item_id"] == item_id:
+                continue
+            sec_val, sec_status = best_realization(inp["item_id"], family, provider, recipe_index, skills, seen)
+            if sec_status != "known" or sec_val is None:
+                ok = False
+                break
+            secondary_cost += sec_val * float(inp["qty"])
+        if not ok:
+            continue
+
+        net_per_product = prod_val * out_qty - service_fee - secondary_cost
+        per_this_item = net_per_product / consumed
+        candidates.append(int(per_this_item))
+
+    if not candidates:
+        return None, "unknown"
+    return max(candidates), "known"
