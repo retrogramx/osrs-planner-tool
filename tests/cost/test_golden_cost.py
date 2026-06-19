@@ -75,7 +75,9 @@ def test_scimitar_main_lists_ge_and_shop_ge_ranks_first(provider, kg, index):
     ge = next(r for r in card.routes if r.channel == "ge")
     shop = next(r for r in card.routes if r.channel == "shop")
     assert ge.gold_cost == _ge_high(SCIMITAR)
+    assert ge.amount == ge.gold_cost  # coin route: amount mirrors gold_cost
     assert shop.gold_cost > ge.gold_cost
+    assert shop.currency == "currency:coins" and shop.amount == shop.gold_cost
     assert card.routes[card.rankings["by_gold"][0]].channel == "ge"
     assert len(card.rankings["by_gold"]) == len(card.routes)
 
@@ -99,9 +101,17 @@ def test_obby_maul_ironman_priced_in_tokkul(provider, kg, index):
     assert "ge" not in channels
     shop = next(r for r in card.routes if r.channel == "shop")
     assert shop.currency == "currency:tokkul"  # non-coin currency surfaces
-    assert shop.gold_cost == 75001  # face amount, in tokkul
-    assert shop.gold_status == "known"
+    # gold_cost is COINS only -> None for tokkul; the tokkul figure lives in
+    # `amount` so by_gold never face-compares it to coins (spec §11 Tokkul trap).
+    assert shop.gold_cost is None
+    assert shop.amount == 75001
+    assert shop.gold_status == "known"  # a tokkul shop buy IS a known acquisition
     assert shop.time_status == "not_estimated"
+    # The card does not present the tokkul route as a coin price: by_gold[0] is
+    # the tokkul route (only route), but it carries no coin gold_cost.
+    by_gold = card.rankings["by_gold"]
+    assert card.routes[by_gold[0]].channel == "shop"
+    assert card.routes[by_gold[0]].gold_cost is None
 
 
 def test_obby_maul_main_lists_ge_and_tokkul_shop(provider, kg, index):
@@ -110,6 +120,15 @@ def test_obby_maul_main_lists_ge_and_tokkul_shop(provider, kg, index):
     assert "ge" in channels and "shop" in channels
     ge = next(r for r in card.routes if r.channel == "ge")
     assert ge.gold_cost == _ge_high(OBBY_MAUL)
+    assert ge.amount == ge.gold_cost  # coin route: amount mirrors gold_cost
+    shop = next(r for r in card.routes if r.channel == "shop")
+    assert shop.currency == "currency:tokkul"
+    assert shop.gold_cost is None and shop.amount == 75001  # non-coin: no coin price
+    # The Tokkul trap is FIXED: by_gold[0] is the GE COIN route, NOT the 75,001
+    # tokkul shop route (no cross-currency face comparison -- spec §11).
+    by_gold = card.rankings["by_gold"]
+    assert card.routes[by_gold[0]].channel == "ge"
+    assert card.routes[by_gold[0]].gold_cost == _ge_high(OBBY_MAUL)
 
 
 # --- Attack potion: craft recursion (main vs ironman); values READ at runtime ---
@@ -158,6 +177,7 @@ def test_voidwaker_main_full_route_set_and_ranking(provider, kg, index):
     assert len(card.rankings["by_gold"]) == len(card.routes)
     comps = ("item:27681", "item:27684", "item:27687")
     assert assemble[0].gold_cost == sum(_ge_high(c) for c in comps)
+    assert assemble[0].amount == assemble[0].gold_cost  # coin total: amount mirrors
 
 
 def test_full_infinity_five_pieces_sum(provider, kg, index):
@@ -166,6 +186,7 @@ def test_full_infinity_five_pieces_sum(provider, kg, index):
     pieces = ("item:6918", "item:6916", "item:6924", "item:6922", "item:6920")
     assert len(assemble.inputs) == 5
     assert assemble.gold_cost == sum(_ge_high(p) for p in pieces)
+    assert assemble.amount == assemble.gold_cost  # coin total: amount mirrors
     assert card.rankings["by_time"] == []  # skeleton stays empty
 
 

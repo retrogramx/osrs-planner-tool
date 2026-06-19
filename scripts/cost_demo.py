@@ -26,7 +26,14 @@ GOALS = [
 
 
 def fmt_gold(r):
-    return f"{r.gold_cost:,} {r.currency}" if r.gold_cost is not None else f"{r.gold_status} ({r.currency})"
+    # Coin route: show the coin figure. Non-coin but known: show amount +
+    # currency, flagged (non-coin) so it is never read as a coin price (spec
+    # §11). Otherwise: status only (unavailable / unpriced).
+    if r.gold_cost is not None:
+        return f"{r.gold_cost:,} {r.currency}"
+    if r.gold_status == "known" and r.amount is not None:
+        return f"{r.amount:,} {r.currency} (non-coin)"
+    return f"{r.gold_status} ({r.currency})"
 
 
 def main():
@@ -40,7 +47,10 @@ def main():
             print(f"  [{mode}] gold_status={card.gold_status} routes={len(card.routes)}")
             for rank, i in enumerate(card.rankings["by_gold"]):
                 r = card.routes[i]
-                tag = " (cheapest gold)" if rank == 0 else ""
+                # "cheapest gold" only for the rank-0 route that actually has a
+                # coin gold_cost -- a non-coin route (gold_cost None) is never
+                # labelled cheapest gold even if it sorts first (spec §11).
+                tag = " (cheapest gold)" if rank == 0 and r.gold_cost is not None else ""
                 extra = f"  inputs={len(r.inputs)}" if r.inputs else ""
                 print(f"    - {r.channel:>5}: {fmt_gold(r)}{extra}{tag}")
             if card.notes:

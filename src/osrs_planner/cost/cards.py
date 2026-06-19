@@ -12,7 +12,14 @@ class Route(BaseModel):
 
     channel: str
     currency: str
+    # COINS only: the coin-equivalent cost. None for any non-coin currency
+    # (spec §11 -- no face-amount comparison across currencies). A non-coin
+    # route carries its figure in `amount` and is excluded from the coin ranking.
     gold_cost: int | None
+    # The cost figure in THIS route's `currency` (coins, tokkul, etc.). For a
+    # coin route amount == gold_cost; for a non-coin route gold_cost is None but
+    # amount holds the currency figure (e.g. 75001 tokkul). None when unpriced.
+    amount: int | None = None
     gold_status: Literal["known", "unavailable"]
     inputs: list["Route"] = Field(default_factory=list)
     time_status: str = "not_estimated"

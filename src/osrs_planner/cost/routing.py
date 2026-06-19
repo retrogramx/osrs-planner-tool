@@ -44,27 +44,37 @@ def price_routes(
         if family not in rec.account_allow:
             continue
         if rec.channel == "ge":
+            # GE is coins-only and main-only; price IS the coin figure.
             price = provider.ge_price(item_id)
             if price is None:
                 out.append(Route(
                     channel="ge", currency=rec.currency, gold_cost=None,
-                    gold_status="unavailable", account_allowed=True,
+                    amount=None, gold_status="unavailable", account_allowed=True,
                     source=rec.source, notes=["ge price unavailable"],
                 ))
             else:
                 out.append(Route(
                     channel="ge", currency=rec.currency, gold_cost=int(price),
-                    gold_status="known", account_allowed=True, source=rec.source,
+                    amount=int(price), gold_status="known", account_allowed=True,
+                    source=rec.source,
                 ))
         elif rec.channel == "shop":
+            # amount = the figure in rec.currency; gold_cost is coins ONLY
+            # (None for tokkul etc.) so by_gold never face-compares currencies
+            # (spec §11 Tokkul trap). A known non-coin buy stays gold_status
+            # "known" -- it IS a known acquisition, just not coin-priced.
+            is_coins = rec.currency == "currency:coins"
             out.append(Route(
-                channel="shop", currency=rec.currency, gold_cost=rec.amount,
+                channel="shop", currency=rec.currency,
+                gold_cost=rec.amount if is_coins else None,
+                amount=rec.amount,
                 gold_status="known" if rec.amount is not None else "unavailable",
                 account_allowed=True, source=rec.source,
             ))
         elif rec.channel == "spawn":
+            # Spawns are free pickups, denominated in coins (0 coins).
             out.append(Route(
-                channel="spawn", currency=rec.currency, gold_cost=0,
+                channel="spawn", currency=rec.currency, gold_cost=0, amount=0,
                 gold_status="known", account_allowed=True, source=rec.source,
             ))
         elif rec.channel in _PRODUCE_CHANNELS:
@@ -108,14 +118,20 @@ def _price_produce(
             sub_routes.append(chosen)
             total += cheapest * qty
     if priced and rec.inputs:
+        # Produce routes are coin-denominated: `total` is a sum of component
+        # COIN costs (_cheapest_gold reads gold_cost, which is coins-only), so a
+        # component whose only route is non-coin yields cheapest=None ->
+        # priced=False and we fall through to the unavailable branch below
+        # (can't coin-sum a non-coin input -- spec §11). amount mirrors the coin
+        # gold_cost for the produce path.
+        per_unit = total // rec.output_qty  # floor (batch recipe), not a rounding bug
         return Route(
             channel=rec.channel, currency=rec.currency,
-            # gold is integer: floor the per-unit cost of a batch recipe (not a rounding bug).
-            gold_cost=total // rec.output_qty, gold_status="known",
+            gold_cost=per_unit, amount=per_unit, gold_status="known",
             inputs=sub_routes, account_allowed=True, source=rec.source,
         )
     return Route(
-        channel=rec.channel, currency=rec.currency, gold_cost=None,
+        channel=rec.channel, currency=rec.currency, gold_cost=None, amount=None,
         gold_status="unavailable", inputs=sub_routes, account_allowed=True,
         source=rec.source, notes=["input not priceable"],
     )

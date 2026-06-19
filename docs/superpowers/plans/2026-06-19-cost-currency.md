@@ -2900,7 +2900,8 @@ End-to-end golden tests over the REAL datasets (`SnapshotPriceProvider` + `JsonK
       assert "ge" not in channels
       shop = next(r for r in card.routes if r.channel == "shop")
       assert shop.currency == "currency:tokkul"     # non-coin currency surfaces
-      assert shop.gold_cost == 75001                # face amount, in tokkul
+      assert shop.gold_cost is None                 # coins-only -> None for tokkul
+      assert shop.amount == 75001                   # face figure, in tokkul
       assert shop.gold_status == "known"
       assert shop.time_status == "not_estimated"
 
@@ -2911,8 +2912,10 @@ End-to-end golden tests over the REAL datasets (`SnapshotPriceProvider` + `JsonK
       assert "ge" in channels and "shop" in channels
       ge = next(r for r in card.routes if r.channel == "ge")
       assert ge.gold_cost == _ge_high(OBBY_MAUL)
+      # Tokkul trap fixed: by_gold[0] is the GE COIN route, not the tokkul shop.
+      assert card.routes[card.rankings["by_gold"][0]].channel == "ge"
   ```
-  NOTE on the Tokkul figure: per the binding contract, a `shop` route's `gold_cost` is the record `amount` in its `currency` (the routing `shop` branch sets `gold_cost=rec.amount`). For the obby maul that is `75001` in `currency:tokkul` — a NON-coin face amount, NOT comparable to coins (the "75k Tokkul ≠ < 209k gp" trap is avoided because the currency field is surfaced and `by_gold` does not normalize across currencies; the advisor never compares a tokkul figure to a coin figure). `currency:tokkul` must exist in `data/currencies.json` (Task 2, `self_earned_only:true`).
+  NOTE on the Tokkul figure (implemented model, spec §11): `gold_cost` means **coins only** (the coin-equivalent), and is `None` for any non-coin currency. The figure in the route's own `currency` lives in `Route.amount`. For the obby maul shop route that is `gold_cost=None`, `amount=75001`, `currency=currency:tokkul`, `gold_status="known"` (a tokkul shop buy IS a known acquisition — just not coin-priced). Because the tokkul route has `gold_cost=None`, `rank_by_gold` sorts it last (it sorts `gold_cost is None` last), so for a main `by_gold[0]` is the 215,000-coin GE route — the cross-currency face-amount comparison spec §11 forbids never happens. (The earlier draft of this NOTE described stuffing the tokkul amount into `gold_cost`; that WAS the §11 "Tokkul trap" and is what this model removes — `by_gold` ranks coins only and a tokkul figure is never compared to a coin figure.) `currency:tokkul` must exist in `data/currencies.json` (Task 2, `self_earned_only:true`).
   Run: `./venv/bin/python -m pytest tests/cost/test_golden_cost.py -k obby -q` → GREEN.
 
 - [ ] **11.6 RED — Attack potion craft recursion (main GE inputs vs iron gather inputs).** Append:

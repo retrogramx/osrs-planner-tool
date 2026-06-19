@@ -97,10 +97,13 @@ def expand_for_account(
             # Single source of truth for the unavailable-last ordering.
             chosen = sub[rank_by_gold(sub)[0]] if sub else Route(
                 channel="none", currency="currency:coins", gold_cost=None,
-                gold_status="unavailable", account_allowed=False, source="kg",
-                notes=[f"no {family}-allowed route for {item_id}"],
+                amount=None, gold_status="unavailable", account_allowed=False,
+                source="kg", notes=[f"no {family}-allowed route for {item_id}"],
             )
             component_routes.append(chosen)
+            # gold_cost is coins-only: a component whose cheapest route is
+            # non-coin (gold_cost=None even when gold_status="known") cannot be
+            # coin-summed, so the assemble's coin total becomes None (spec §11).
             if chosen.gold_status == "known" and chosen.gold_cost is not None:
                 total += chosen.gold_cost * qty
             else:
@@ -108,6 +111,7 @@ def expand_for_account(
         assemble = Route(
             channel="craft", currency="currency:coins",
             gold_cost=total if all_known else None,
+            amount=total if all_known else None,
             gold_status="known" if all_known else "unavailable",
             inputs=component_routes, account_allowed=True, source="kg-composition",
         )
