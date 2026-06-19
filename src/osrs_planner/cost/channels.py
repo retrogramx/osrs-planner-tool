@@ -142,8 +142,33 @@ def load_recipes(path: str) -> list[ChannelRecord]:
     return records
 
 
-def load_gather(path: str) -> list[ChannelRecord]:  # replaced in Task 7
-    return []
+def load_gather(path: str) -> list[ChannelRecord]:
+    """Load data/gather.json into `gather` ChannelRecords.
+
+    Cost is computed from seed/bait/compost inputs at routing time
+    (amount=None), reusing the same input-summing branch as craft.
+    """
+    with open(path, encoding="utf-8") as f:
+        payload = json.load(f)
+    records: list[ChannelRecord] = []
+    for r in payload["records"]:
+        records.append(
+            ChannelRecord(
+                item_id=r["resource_item_id"],
+                channel="gather",
+                currency=r["currency"],
+                amount=None,
+                inputs=[(i["item_id"], i["qty"]) for i in r["inputs"]],
+                output_qty=r["output_qty"],
+                account_allow=frozenset({"main", "ironman", "uim"}),
+                source=r["source"],
+                audience=r["audience"],
+                pricing_basis=r["pricing_basis"],
+                realization_channel=r["realization_channel"],
+                requires_ge=r["requires_ge"],
+            )
+        )
+    return records
 
 
 def load_spawns(path: str) -> list[ChannelRecord]:  # replaced in Task 8

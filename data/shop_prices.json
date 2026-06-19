@@ -10,7 +10,7 @@
     "license": "CC BY-NC-SA 3.0",
     "extraction_method": "hand-curated",
     "notes": "v1 HAND-CURATED proof rows for the cost-layer golden set (Dragon scimitar divergence; obby maul non-coin currency). Bulk wiki sourcing (Bucket storeline ~6.2k rows) is a DISCLOSED v1 follow-up; no live wiki fetch happens during build. Obby maul Tokkul base price = 75001 (65001 with Karamja gloves -- a deferred account-STATE cost modifier, not modeled in v1; see research/currency-model.md). Gate fields {audience,pricing_basis,realization_channel,requires_ge} present on every row; iron-gate discipline (shop rows are audience=both, requires_ge=false). Task 7 appends the Guam seed row.",
-    "record_count": 2
+    "record_count": 3
   },
   "records": [
     {
@@ -28,6 +28,16 @@
       "shop": "TzHaar-Hur-Tel's Equipment Store",
       "amount": 75001,
       "currency": "currency:tokkul",
+      "audience": "both",
+      "pricing_basis": "shop",
+      "realization_channel": "shop",
+      "requires_ge": false
+    },
+    {
+      "item_id": "item:5291",
+      "shop": "Olivia's Seed Stall",
+      "amount": 25,
+      "currency": "currency:coins",
       "audience": "both",
       "pricing_basis": "shop",
       "realization_channel": "shop",
