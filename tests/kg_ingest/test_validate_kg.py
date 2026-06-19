@@ -296,6 +296,39 @@ def test_duplicate_group_id_is_flagged_in_raw_list():
     assert any("duplicate group id" in x and "4001" in x for x in v), v
 
 
+# --- Acyclicity (I1): genuine-cycle path + amendment-E find_cycles()-raised except path ---
+
+def test_genuine_requires_cycle_is_flagged():
+    # Branch (a): two REQUIRES edges form a real cycle (quest:a -> quest:b -> quest:a).
+    # find_cycles() returns normally and the normal path appends an [acyclic] violation
+    # naming the cycle members. R2: edges built directly (frozen dataclasses).
+    nodes = [
+        Node(id="quest:a", kind=NodeKind.QUEST, name="A", slug="a", data={}),
+        Node(id="quest:b", kind=NodeKind.QUEST, name="B", slug="b", data={}),
+    ]
+    edges = [
+        Edge(id=7001, type=EdgeType.REQUIRES, src="quest:a", dst="quest:b", cond_group=None),
+        Edge(id=7002, type=EdgeType.REQUIRES, src="quest:b", dst="quest:a", cond_group=None),
+    ]
+    v = validate_kg.check_kg(_store_with(nodes, edges, {}), _quests_data(["A", "B"]))
+    assert any("[acyclic]" in x and "cycle" in x for x in v), v
+    assert any("[acyclic]" in x and "quest:a" in x and "quest:b" in x for x in v), v
+
+
+def test_dangling_group_ref_makes_find_cycles_raise_and_is_caught():
+    # Branch (b) / amendment E: a REQUIRES edge points at a cond_group id that does not
+    # exist, so find_cycles() (via requires_dag -> _iter_ref_leaves -> self.groups[gid])
+    # raises KeyError BEFORE the [ref] check runs. The except branch must catch it,
+    # append an [acyclic] find_cycles() raised ... violation, and let check_kg degrade
+    # gracefully (return a non-empty violation set rather than crashing).
+    nodes = [Node(id="quest:b", kind=NodeKind.QUEST, name="B", slug="b", data={})]
+    edges = [Edge(id=7001, type=EdgeType.REQUIRES, src="quest:b", dst=None, cond_group=9999)]
+    # check_kg must NOT raise (the whole point of the amendment-E guard).
+    v = validate_kg.check_kg(_store_with(nodes, edges, {}), _quests_data(["B"]))
+    assert any("[acyclic] find_cycles() raised" in x and "9999" in x for x in v), v
+    assert v, v  # degraded gracefully: still a non-empty (non-zero exit) violation set
+
+
 # --- Step 4: on-real-data acceptance test ---
 
 def test_main_passes_on_committed_kg():
