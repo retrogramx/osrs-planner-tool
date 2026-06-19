@@ -77,7 +77,11 @@ it in CI / pre-commit):
 2. Every `currency` ref resolves in `currencies.json`.
 3. `craft`/`gather` `inputs` item_ids resolve in `item_dictionary.json`.
 4. Gate coherence: no `ge` channel is iron-eligible (`requires_ge=True` AND
-   `account_allow == {"main"}`).
+   `account_allow == {"main"}`). Note the live `ge` channel is **synthetic** —
+   built in-memory by `channels.ge_record()`, never a dataset row — so this
+   check never fires on current data; it is a **defensive guard for any FUTURE
+   `ge` dataset row**. The real ge-is-main-only invariant is covered by the
+   channels unit tests (`tests/cost/test_channels.py`).
 5. The KG stays cost-free: no `price`/`cost`/`currency` token in `kg/*.json`.
 6. Shop `currency` values join to `currencies.json`.
 

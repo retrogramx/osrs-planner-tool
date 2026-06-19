@@ -159,7 +159,7 @@ v1 computes the **full cost from scratch** — it assumes none of the item or it
 
 ## 7. Price freshness
 
-v1 ships `SnapshotPriceProvider` reading the committed `data/ge_prices.json` (deterministic, testable — like the kg-ingest golden set). The **daily-refresh seam** is designed: a `LivePriceProvider` (or a scheduled re-fetch into the cache) drops into the same `PriceProvider` interface. The refresh **job** is a follow-up, not v1. `capturedAt` is preserved so staleness is visible; `gp_status` degrades to `unavailable` when a price is missing.
+v1 ships `SnapshotPriceProvider` reading the committed `data/ge_prices.json` (deterministic, testable — like the kg-ingest golden set). The **daily-refresh seam** is designed: a `LivePriceProvider` (or a scheduled re-fetch into the cache) drops into the same `PriceProvider` interface. The refresh **job** is a follow-up, not v1. The committed snapshot **preserves `capturedAt` in the data file**, but in v1 the cost layer's API does **not yet surface staleness** to callers (the `LivePriceProvider` / refresh seam that would expose it is deferred, §9) — `capturedAt` is retained against that future, not consumed today. The price-missing half **is** implemented: `gp_status` degrades to `unavailable` when a price is missing.
 
 ---
 
@@ -177,8 +177,8 @@ v1 ships `SnapshotPriceProvider` reading the committed `data/ge_prices.json` (de
 ### 8.2 Golden cost-set (hand-verified, via real datasets + `SnapshotPriceProvider`)
 - **Dragon scimitar** — main = `min(GE ~59k, shop 100k)` = GE; ironman = shop 100k *(flagship divergence)*.
 - **Obby maul (Tzhaar-ket-om)** — main GE; ironman = Tokkul *(non-coin currency surfaces)*.
-- **A potion** (simple Herblore item) — `craft` route recurses into inputs; main prices via GE, ironman via `gather` *(recursion + herb→potion chain)*.
-- **Voidwaker** — main = `min(buy assembled, assemble-from-3-components)`; ironman = assemble.
+- **A potion** (simple Herblore item) — the `craft` route recurses into its inputs and picks the **cheapest route per input regardless of account type** (the cheapest-route walk takes `gather` for BOTH families when gather beats GE, which it does for the herb). The main/iron **divergence** is structural, not "main=GE inputs / iron=gather inputs": the main also has a cheaper direct buy-the-finished-item GE route (so it never needs to craft at all), while the ironman has no GE route anywhere and its entire craft recursion bottoms out GE-free (shop/gather leaves) *(recursion + herb→potion chain)*.
+- **Voidwaker** — main = `min(buy assembled, assemble-from-3-components)`; ironman = assemble. In v1 the **ironman Voidwaker card is `unavailable`**: the 3 components are drop-only and `drop` is a deferred channel (§9), so the iron has no priceable route until the drop channel lands. The iron Voidwaker becomes priceable only once `drop` is sourced.
 - **Full Infinity** — 5 pieces summed.
 - Each test asserts the **full route set + gp-ranking** — never a single collapsed winner (enforces no-auto-pick).
 
@@ -201,7 +201,7 @@ v1 ships `SnapshotPriceProvider` reading the committed `data/ge_prices.json` (de
 
 1. `expand_for_account(goal_id, state, provider)` returns a `CostCard` listing **all** viable routes for the account family, with a gp-ranking, for the golden-set goals.
 2. The flagship divergence holds on real data: scimitar main = GE, ironman = shop; obby maul ironman = Tokkul.
-3. A potion's `craft` route recurses into inputs and prices differently for main (GE inputs) vs ironman (gather inputs).
+3. A potion's `craft` route recurses into inputs, picking the cheapest route **per input regardless of account type** (gather wins for both when it beats GE). The main/iron divergence is that the main has a cheaper direct buy-the-finished-item GE route (so it skips crafting), while the ironman has no GE route at all and its whole craft recursion is GE-free.
 4. `data/validate_cost.py` exits 0; datasets are byte-stable and committed == freshly-built.
 5. The KG remains cost-free; `engine` does not import `cost`.
 6. The full suite stays green; the cost layer is additive.
