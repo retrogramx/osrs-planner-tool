@@ -1,0 +1,117 @@
+# src/osrs_planner/cost/routing.py
+"""price_routes -- the account-aware acquisition walk (design spec §4).
+
+Enumerates an item's channels from the prebuilt index, keeps those whose
+account_allow includes the family, prices each (ge via PriceProvider, shop via
+the record amount, spawn = 0, craft/gather = sum of cheapest input routes), and
+returns ALL routes. Cycle-safe (_visited) + depth-capped.
+"""
+from __future__ import annotations
+
+from osrs_planner.cost.cards import Route
+from osrs_planner.cost.channels import ChannelRecord
+from osrs_planner.cost.prices import PriceProvider
+
+DEPTH_CAP = 12
+_PRODUCE_CHANNELS = {"craft", "gather"}
+
+
+def _cheapest_gold(routes: list[Route]) -> int | None:
+    """Smallest known gold_cost among routes, or None if none are priced."""
+    known = [
+        r.gold_cost
+        for r in routes
+        if r.gold_status == "known" and r.gold_cost is not None
+    ]
+    return min(known) if known else None
+
+
+def price_routes(
+    item_id: str,
+    family: str,
+    provider: PriceProvider,
+    index: dict[str, list[ChannelRecord]],
+    owned: frozenset[str] = frozenset(),
+    _visited: frozenset[str] = frozenset(),
+    _depth: int = 0,
+) -> list[Route]:
+    if _depth > DEPTH_CAP:
+        return []
+    out: list[Route] = []
+    for rec in index.get(item_id, []):
+        if family not in rec.account_allow:
+            continue
+        if rec.channel == "ge":
+            price = provider.ge_price(item_id)
+            if price is None:
+                out.append(Route(
+                    channel="ge", currency=rec.currency, gold_cost=None,
+                    gold_status="unavailable", account_allowed=True,
+                    source=rec.source, notes=["ge price unavailable"],
+                ))
+            else:
+                out.append(Route(
+                    channel="ge", currency=rec.currency, gold_cost=int(price),
+                    gold_status="known", account_allowed=True, source=rec.source,
+                ))
+        elif rec.channel == "shop":
+            out.append(Route(
+                channel="shop", currency=rec.currency, gold_cost=rec.amount,
+                gold_status="known" if rec.amount is not None else "unavailable",
+                account_allowed=True, source=rec.source,
+            ))
+        elif rec.channel == "spawn":
+            out.append(Route(
+                channel="spawn", currency=rec.currency, gold_cost=0,
+                gold_status="known", account_allowed=True, source=rec.source,
+            ))
+        elif rec.channel in _PRODUCE_CHANNELS:
+            out.append(_price_produce(
+                rec, family, provider, index, owned, _visited, _depth,
+            ))
+    return out
+
+
+def _price_produce(
+    rec: ChannelRecord,
+    family: str,
+    provider: PriceProvider,
+    index: dict[str, list[ChannelRecord]],
+    owned: frozenset[str],
+    _visited: frozenset[str],
+    _depth: int,
+) -> Route:
+    """Price a craft/gather record: sum cheapest(input) * qty / output_qty."""
+    sub_routes: list[Route] = []
+    total = 0
+    priced = True
+    next_visited = _visited | {rec.item_id}
+    for input_id, qty in rec.inputs:
+        if input_id in next_visited or _depth + 1 > DEPTH_CAP:
+            priced = False
+            continue
+        input_routes = price_routes(
+            input_id, family, provider, index, owned, next_visited, _depth + 1,
+        )
+        cheapest = _cheapest_gold(input_routes)
+        if cheapest is None:
+            priced = False
+        else:
+            # record the cheapest priced sub-route for the breakdown
+            chosen = next(
+                r for r in input_routes
+                if r.gold_status == "known" and r.gold_cost == cheapest
+            )
+            sub_routes.append(chosen)
+            total += cheapest * qty
+    if priced and rec.inputs:
+        return Route(
+            channel=rec.channel, currency=rec.currency,
+            gold_cost=total // rec.output_qty, gold_status="known",
+            inputs=sub_routes, account_allowed=True, source=rec.source,
+        )
+    return Route(
+        channel=rec.channel, currency=rec.currency, gold_cost=None,
+        gold_status="unavailable", inputs=sub_routes, account_allowed=True,
+        source=rec.source, notes=["input not priceable"],
+    )
