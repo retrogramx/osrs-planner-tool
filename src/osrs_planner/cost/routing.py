@@ -31,10 +31,12 @@ def price_routes(
     family: str,
     provider: PriceProvider,
     index: dict[str, list[ChannelRecord]],
-    owned: frozenset[str] = frozenset(),
+    owned: frozenset[str] = frozenset(),  # SKELETON: unused in v1 (future per-account balance subtraction)
     _visited: frozenset[str] = frozenset(),
     _depth: int = 0,
 ) -> list[Route]:
+    # Single depth backstop for the whole recursion: every _price_produce input
+    # recurses via price_routes(..., _depth+1), so this entry guard terminates depth.
     if _depth > DEPTH_CAP:
         return []
     out: list[Route] = []
@@ -87,7 +89,8 @@ def _price_produce(
     priced = True
     next_visited = _visited | {rec.item_id}
     for input_id, qty in rec.inputs:
-        if input_id in next_visited or _depth + 1 > DEPTH_CAP:
+        # Cycle guard only; depth is handled by price_routes' entry guard below.
+        if input_id in next_visited:
             priced = False
             continue
         input_routes = price_routes(
@@ -107,6 +110,7 @@ def _price_produce(
     if priced and rec.inputs:
         return Route(
             channel=rec.channel, currency=rec.currency,
+            # gold is integer: floor the per-unit cost of a batch recipe (not a rounding bug).
             gold_cost=total // rec.output_qty, gold_status="known",
             inputs=sub_routes, account_allowed=True, source=rec.source,
         )
