@@ -1,7 +1,13 @@
 """build_recipe_reverse_index: input_item_id -> products consuming it."""
 from __future__ import annotations
 
+import json
+import os
+
 from osrs_planner.income.methods import build_recipe_reverse_index
+
+REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+RECIPES = os.path.join(REPO, "data", "recipes.json")
 
 
 def _recipes_doc():
@@ -22,7 +28,7 @@ def _recipes_doc():
                 "level": 1,
                 "inputs": [{"item_id": "item:1753", "qty": 1}],
                 "output_qty": 1,
-                "service_fee_coins": 40,
+                "service_fee_coins": 20,  # standard tanner fee (NOT 40, which is Eodan)
             },
         ]
     }
@@ -51,5 +57,21 @@ def test_unknown_input_absent_from_index():
 def test_full_recipe_record_carried_through():
     idx = build_recipe_reverse_index(_recipes_doc())
     rec = idx["item:1753"][0]
-    assert rec.get("service_fee_coins") == 40
+    assert rec.get("service_fee_coins") == 20
     assert "output_qty" in rec and "inputs" in rec
+
+
+def test_committed_recipes_contain_green_dragons_chain():
+    with open(RECIPES, encoding="utf-8") as f:
+        doc = json.load(f)
+    idx = build_recipe_reverse_index(doc)
+    # hide -> leather (tan, 20gp/hide -- standard tanner fee, NOT 40 (Eodan))
+    leather = next(p for p in idx["item:1753"] if p["output_item_id"] == "item:1745")
+    assert leather.get("service_fee_coins") == 20
+    assert leather["inputs"][0]["item_id"] == "item:1753"
+    assert leather["inputs"][0]["qty"] == 1
+    # leather -> body (craft, 3 leather, Crafting 63)
+    body = next(p for p in idx["item:1745"] if p["output_item_id"] == "item:1135")
+    assert body["level"] == 63 and body["skill"] == "Crafting"
+    leather_in = next(i for i in body["inputs"] if i["item_id"] == "item:1745")
+    assert leather_in["qty"] == 3
