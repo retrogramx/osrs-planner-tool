@@ -45,4 +45,26 @@ def build_quests(
             data["miniquest"] = True
         nodes.append(Node(id=nid, kind=NodeKind.QUEST, name=name, slug=slugify(name), data=data))
 
+        # --- the requires edge's root AND group (sub_index 0) ---
+        root_gid = group_id(nid, 0)
+        children: list = []
+
+        # one quest atom per prereq (K3): state from stage, default 'completed'.
+        for prereq in rec["prereqs"]:
+            stage = prereq.get("stage") or _DEFAULT_STAGE
+            children.append(ConditionAtom(
+                atom_type=AtomType.QUEST, ref_node=quest_id(prereq["quest"]),
+                data={"state": stage}))
+
+        # one skill_level atom per skill_req (K3,K6); ironman-wrapped (K4) in Step 8.
+        for skill_req in rec["skill_reqs"]:
+            children.append(ConditionAtom(
+                atom_type=AtomType.SKILL_LEVEL, ref_node=skill_id(skill_req["skill"]),
+                threshold=skill_req["level"],
+                data={"boostable": bool(skill_req.get("boostable", False))}))
+
+        groups[root_gid] = ConditionGroup(id=root_gid, op=Op.AND, parent=None, children=children)
+        edges.append(Edge(id=edge_id(nid), type=EdgeType.REQUIRES, src=nid,
+                          dst=None, cond_group=root_gid))
+
     return nodes, edges, groups, diary_records

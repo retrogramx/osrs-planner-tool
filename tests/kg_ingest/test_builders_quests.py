@@ -86,3 +86,51 @@ def test_build_quests_node_kinds_and_miniquest_flag():
     mini = _node_by_id(nodes, "quest:alfred-grimhands-barcrawl")
     assert mini.kind is NodeKind.QUEST
     assert mini.data.get("miniquest") is True
+
+
+def test_build_quests_requires_edge_and_root_group():
+    nodes, edges, groups, _d = build_quests(_sample_records())
+    req_edges = [e for e in edges if e.type is EdgeType.REQUIRES]
+    assert len(req_edges) == 3
+    am_edges = [e for e in edges if e.src == "quest:animal-magnetism"]
+    assert len(am_edges) == 1
+    e = am_edges[0]
+    assert e.type is EdgeType.REQUIRES
+    assert e.dst is None
+    assert e.id == edge_id("quest:animal-magnetism")
+    root_gid = group_id("quest:animal-magnetism", 0)
+    assert e.cond_group == root_gid
+    root = groups[root_gid]
+    assert root.op is Op.AND
+    assert root.parent is None
+
+
+def test_build_quests_prereq_quest_atom_state_from_stage():
+    _n, _e, groups, _d = build_quests(_sample_records())
+    root = groups[group_id("quest:animal-magnetism", 0)]
+    quest_atoms = [c for c in root.children
+                   if isinstance(c, ConditionAtom) and c.atom_type is AtomType.QUEST]
+    assert len(quest_atoms) == 1
+    a = quest_atoms[0]
+    assert a.ref_node == "quest:ernest-the-chicken"
+    assert a.data["state"] == "completed"
+
+
+def test_build_quests_nonironman_skill_level_atom_with_boostable():
+    _n, _e, groups, _d = build_quests(_sample_records())
+    root = groups[group_id("quest:animal-magnetism", 0)]
+    skill_atoms = [c for c in root.children
+                   if isinstance(c, ConditionAtom) and c.atom_type is AtomType.SKILL_LEVEL]
+    crafting = [a for a in skill_atoms if a.ref_node == "skill:crafting"]
+    assert len(crafting) == 1
+    assert crafting[0].threshold == 19
+    assert crafting[0].data["boostable"] is False
+
+
+def test_build_quests_empty_reqs_quest_gets_empty_and_group():
+    _n, edges, groups, _d = build_quests(_sample_records())
+    mini_id = "quest:alfred-grimhands-barcrawl"
+    e = [e for e in edges if e.src == mini_id][0]
+    root = groups[e.cond_group]
+    assert root.op is Op.AND
+    assert root.children == []
