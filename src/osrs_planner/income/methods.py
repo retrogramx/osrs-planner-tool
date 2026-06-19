@@ -80,7 +80,11 @@ class MethodRecord(BaseModel, frozen=True):
 
 # Pseudo-"skills" in skill_requirements_html that are NOT KG skill nodes
 # (combat level is derived; quest points handled by the engine elsewhere).
-_NON_SKILL_PSEUDO = frozenset({"combat level", "quest points"})
+# "Sailing" is an unreleased skill (no KG node); "Skills" is a Total-level
+# pseudo-gate -- both dropped like "Combat level" (total-level gating is a
+# deferred enhancement). Compared lowercased to match the .lower() membership
+# test in parse_requirements_html.
+_NON_SKILL_PSEUDO = frozenset({"combat level", "quest points", "sailing", "skills"})
 
 
 def _slug(name: str) -> str:
