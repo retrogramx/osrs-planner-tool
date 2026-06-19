@@ -16,6 +16,7 @@ from osrs_planner.engine.kg.model import Node, NodeKind
 _REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 _ITEMS_PATH = os.path.join(_REPO_ROOT, "data", "items_equipment.json")
 
+# region slug -> display label; module-level so validate_kg / future builders can reuse
 DIARY_REGION_LABELS: dict[str, str] = {
     "ardougne": "Ardougne", "desert": "Desert", "falador": "Falador",
     "fremennik": "Fremennik", "kandarin": "Kandarin", "karamja": "Karamja",
@@ -46,7 +47,10 @@ def _build_one(ref_id: str) -> Node:
         return Node(id=ref_id, kind=NodeKind.SKILL, name=_spaced(rest).title(), slug=rest)
     if domain == "item":
         names = _item_names()
-        item_id = int(rest)
+        try:
+            item_id = int(rest)
+        except ValueError:
+            raise ValueError(f"{ref_id}: item id must be a numeric item_id, got {rest!r}") from None
         if item_id not in names:
             raise KeyError(f"{ref_id}: item_id not found in data/items_equipment.json")
         return Node(id=ref_id, kind=NodeKind.ITEM, name=names[item_id], slug=rest)
@@ -57,6 +61,7 @@ def _build_one(ref_id: str) -> Node:
     if domain == "gear_loadout":
         return Node(id=ref_id, kind=NodeKind.GEAR_LOADOUT, name=_spaced(rest).capitalize(), slug=rest)
     if domain == "npc":
+        # NPC display names aren't in the data layer yet; name stays numeric-ish for v1.
         return Node(id=ref_id, kind=NodeKind.MONSTER, name=f"NPC {rest}", slug=rest)
     if domain == "diary":
         region, _, tier = rest.partition(":")

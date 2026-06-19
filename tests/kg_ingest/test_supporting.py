@@ -18,7 +18,7 @@ def test_skill_node_kind_and_name():
     assert n.slug == "attack"
 
 
-def test_multi_word_skill_name_titlecased():
+def test_skill_name_titlecased():
     assert _by_id(build_supporting({"skill:woodcutting"}))["skill:woodcutting"].name == "Woodcutting"
 
 
@@ -32,6 +32,11 @@ def test_item_name_resolved_from_items_equipment():
 def test_unknown_item_id_raises():
     with pytest.raises(KeyError, match="item:99999999"):
         build_supporting({"item:99999999"})
+
+
+def test_non_numeric_item_id_raises_clear_error():
+    with pytest.raises(ValueError, match="numeric item_id"):
+        build_supporting({"item:dragon-scimitar"})
 
 
 def test_access_node():
