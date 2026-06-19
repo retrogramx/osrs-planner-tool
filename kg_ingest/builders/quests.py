@@ -56,12 +56,29 @@ def build_quests(
                 atom_type=AtomType.QUEST, ref_node=quest_id(prereq["quest"]),
                 data={"state": stage}))
 
-        # one skill_level atom per skill_req (K3,K6); ironman-wrapped (K4) in Step 8.
+        # one skill_level atom per skill_req (K3,K6). ironman:true reqs (K4) are
+        # wrapped as a plain 2-child OR(account_type=="main", req); each wrapper
+        # consumes ONE deterministic sub-group id (the OR group), allocated from a
+        # per-node counter so multiple ironman reqs on one quest never collide.
+        # No NOT group is used — mains satisfy account_type=="main" directly;
+        # all non-mains (ironman-family + UIM) fail it and reduce to the real req.
+        sub_index = 1  # 0 is the root AND group
         for skill_req in rec["skill_reqs"]:
-            children.append(ConditionAtom(
+            atom = ConditionAtom(
                 atom_type=AtomType.SKILL_LEVEL, ref_node=skill_id(skill_req["skill"]),
                 threshold=skill_req["level"],
-                data={"boostable": bool(skill_req.get("boostable", False))}))
+                data={"boostable": bool(skill_req.get("boostable", False))})
+            if not skill_req.get("ironman", False):
+                children.append(atom)
+                continue
+            # K4 wrapper: OR( account_type == "main", atom )
+            or_gid = group_id(nid, sub_index)
+            sub_index += 1
+            acct_atom = ConditionAtom(atom_type=AtomType.ACCOUNT_TYPE,
+                                      data={"value": _MAIN_FAMILY})
+            groups[or_gid] = ConditionGroup(id=or_gid, op=Op.OR, parent=root_gid,
+                                            children=[acct_atom, atom])
+            children.append(or_gid)
 
         groups[root_gid] = ConditionGroup(id=root_gid, op=Op.AND, parent=None, children=children)
         edges.append(Edge(id=edge_id(nid), type=EdgeType.REQUIRES, src=nid,

@@ -134,3 +134,116 @@ def test_build_quests_empty_reqs_quest_gets_empty_and_group():
     root = groups[e.cond_group]
     assert root.op is Op.AND
     assert root.children == []
+
+
+def test_build_quests_ironman_skill_req_wrapped_in_or_main():
+    _n, _e, groups, _d = build_quests(_sample_records())
+    nid = "quest:animal-magnetism"
+    root = groups[group_id(nid, 0)]
+    # ironman:true req (Prayer 31) must NOT appear as a bare atom on the root AND group
+    bare_prayer = [c for c in root.children
+                   if isinstance(c, ConditionAtom) and c.atom_type is AtomType.SKILL_LEVEL
+                   and c.ref_node == "skill:prayer"]
+    assert bare_prayer == []
+    # it MUST be wrapped in a 2-child OR group (no NOT group needed)
+    or_gid = group_id(nid, 1)
+    assert or_gid in root.children
+    or_group = groups[or_gid]
+    assert or_group.op is Op.OR
+    assert or_group.parent == group_id(nid, 0)
+    assert len(or_group.children) == 2
+    # child 1: account_type == "main" (family value)
+    acct_atoms = [c for c in or_group.children
+                  if isinstance(c, ConditionAtom) and c.atom_type is AtomType.ACCOUNT_TYPE]
+    assert len(acct_atoms) == 1
+    assert acct_atoms[0].data["value"] == "main"
+    # child 2: the real skill_level requirement
+    other = [c for c in or_group.children if c is not acct_atoms[0]]
+    assert len(other) == 1
+    req = other[0]
+    assert isinstance(req, ConditionAtom)
+    assert req.atom_type is AtomType.SKILL_LEVEL
+    assert req.ref_node == "skill:prayer"
+    assert req.threshold == 31
+    assert req.data["boostable"] is True
+
+
+def test_build_quests_ironman_wrapper_evaluates_per_family():
+    from osrs_planner.engine.kg.store import InMemoryKGStore
+    from osrs_planner.engine.conditions import evaluate
+    from osrs_planner.engine.state import AccountState
+    from osrs_planner.engine.kleene import Tri
+    nodes, edges, groups, _d = build_quests(_sample_records())
+    kg = InMemoryKGStore(nodes=nodes, edges=edges, groups=groups)
+    or_gid = group_id("quest:animal-magnetism", 1)
+    # main (normal) → account_type=="main" TRUE → OR satisfied → req invisible
+    main = AccountState(mode="normal", observable_families={"skill_level", "account_type"})
+    assert evaluate(or_gid, main, kg) is Tri.TRUE
+    # ironman at insufficient level → req applies and fails
+    iron_low = AccountState(mode="ironman", levels={"skill:prayer": 30},
+                            observable_families={"skill_level", "account_type"})
+    assert evaluate(or_gid, iron_low, kg) is Tri.FALSE
+    # ironman at sufficient level → req applies and passes
+    iron_ok = AccountState(mode="ironman", levels={"skill:prayer": 31},
+                           observable_families={"skill_level", "account_type"})
+    assert evaluate(or_gid, iron_ok, kg) is Tri.TRUE
+    # UIM at insufficient level → req applies (UIM is NOT main-family) → fails
+    uim_low = AccountState(mode="ultimate_ironman", levels={"skill:prayer": 30},
+                           observable_families={"skill_level", "account_type"})
+    assert evaluate(or_gid, uim_low, kg) is Tri.FALSE
+    # UIM at sufficient level → req applies and passes
+    uim_ok = AccountState(mode="ultimate_ironman", levels={"skill:prayer": 31},
+                          observable_families={"skill_level", "account_type"})
+    assert evaluate(or_gid, uim_ok, kg) is Tri.TRUE
+
+
+import json
+from pathlib import Path
+
+_REPO = Path(__file__).resolve().parents[2]
+
+
+def test_build_quests_rfd_subquest_is_granular_node():
+    nodes, _e, groups, _d = build_quests(_sample_records())
+    sub_id = "quest:recipe-for-disaster-another-cooks-quest"
+    sub = _node_by_id(nodes, sub_id)
+    assert sub.kind is NodeKind.QUEST
+    root = groups[group_id(sub_id, 0)]
+    qa = [c for c in root.children
+          if isinstance(c, ConditionAtom) and c.atom_type is AtomType.QUEST]
+    assert len(qa) == 1
+    assert qa[0].ref_node == "quest:cooks-assistant"
+
+
+def test_build_quests_rfd_parent_requires_all_subquests_transitively():
+    data = json.loads((_REPO / "data" / "quests.json").read_text())
+    nodes, _e, groups, _d = build_quests(data["records"])
+    node_ids = {n.id for n in nodes}
+    parent_id = "quest:recipe-for-disaster"
+    culi_id = "quest:recipe-for-disaster-defeating-the-culinaromancer"
+    assert parent_id in node_ids
+    assert culi_id in node_ids
+    parent_root = groups[group_id(parent_id, 0)]
+    parent_prereq_refs = {c.ref_node for c in parent_root.children
+                          if isinstance(c, ConditionAtom) and c.atom_type is AtomType.QUEST}
+    assert culi_id in parent_prereq_refs
+    culi_root = groups[group_id(culi_id, 0)]
+    culi_prereq_refs = {c.ref_node for c in culi_root.children
+                        if isinstance(c, ConditionAtom) and c.atom_type is AtomType.QUEST}
+    assert "quest:recipe-for-disaster-freeing-king-awowogei" in culi_prereq_refs
+    assert "quest:recipe-for-disaster-freeing-the-mountain-dwarf" in culi_prereq_refs
+    assert len([r for r in culi_prereq_refs
+                if r.startswith("quest:recipe-for-disaster-freeing")]) == 8
+
+
+def test_build_quests_on_full_dataset_counts():
+    data = json.loads((_REPO / "data" / "quests.json").read_text())
+    nodes, edges, groups, diaries = build_quests(data["records"])
+    assert len(nodes) == 205
+    assert len(diaries) == 8
+    assert len([e for e in edges if e.type is EdgeType.REQUIRES]) == 205
+    for n in nodes:
+        assert group_id(n.id, 0) in groups
+    assert len(groups) == len(set(groups.keys()))
+    edge_ids = [e.id for e in edges]
+    assert len(edge_ids) == len(set(edge_ids))
