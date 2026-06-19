@@ -62,3 +62,32 @@ iron-income recompute is a tracked follow-up. See `money_making.json._provenance
 ² `account_cost_split.json`'s `realization_channel` was applied by a one-off gate step that was not preserved;
 the field is correct in the committed data but not yet re-derivable from `build_account_cost_split.py` alone.
 Tracked as a reproducibility follow-up.
+
+## Cost-layer data (`src/osrs_planner/cost/`)
+
+The cost overlay reads hand-curated channel datasets — `currencies.json`,
+`shop_prices.json`, `recipes.json`, `gather.json`, `spawns.json` — plus the
+GE snapshot (`ge_prices.json`) and `item_dictionary.json`. The item→channels
+index is built **in-memory at load** (no committed derived artifact), so there
+is no index freshness-guard; the validator below is the sole gate.
+
+**`data/validate_cost.py` enforces the cost-layer invariants** (design §8.1; run
+it in CI / pre-commit):
+1. Every channel record `item_id` resolves in `item_dictionary.json`.
+2. Every `currency` ref resolves in `currencies.json`.
+3. `craft`/`gather` `inputs` item_ids resolve in `item_dictionary.json`.
+4. Gate coherence: no `ge` channel is iron-eligible (`requires_ge=True` AND
+   `account_allow == {"main"}`).
+5. The KG stays cost-free: no `price`/`cost`/`currency` token in `kg/*.json`.
+6. Shop `currency` values join to `currencies.json`.
+
+```
+python3 data/validate_cost.py
+```
+
+Channel-dataset coverage is the **golden-set goals + a small representative
+sample** (scimitar/obby maul shops, the Guam potion craft chain, Guam-leaf
+gather, Hammer spawn). **Bulk wiki sourcing** (Bucket storeline ~6.2k rows,
+full production/farming/spawn tables, the full ~50 Currencies page) **is a
+disclosed v1 follow-up**, stated in each dataset's `_provenance` and in the
+validator's docstring.
