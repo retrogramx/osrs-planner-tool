@@ -1,0 +1,70 @@
+{
+  "_provenance": {
+    "domain": "currencies",
+    "source_urls": ["https://oldschool.runescape.wiki/w/Currencies"],
+    "accessed": "2026-06-19T00:00:00+00:00",
+    "license": "CC BY-NC-SA 3.0",
+    "extraction_method": "hand-curated",
+    "notes": "v1 seed: coins (universal baseline) + the non-coin currencies the golden-set channels reference (tokkul for the obby maul) + honour-points/marks-of-grace to exercise the virtual + physical_untradeable categories. Sinks/categories verified from research/currency-model.md. earn_rate_per_hour is a null skeleton (filled when skill/minigame rate baselines land). Full Currencies-page coverage (~50) is a disclosed v1 follow-up.",
+    "record_count": 4
+  },
+  "records": [
+    {
+      "id": "currency:coins",
+      "name": "Coins",
+      "category": "physical_tradeable",
+      "is_item": true,
+      "ge_tradeable": true,
+      "observable": "plugin",
+      "source_activity": null,
+      "earn_rate_per_hour": null,
+      "self_earned_only": false,
+      "example_sinks": [
+        {"item": "item:4587", "name": "Dragon scimitar", "amount": 100000, "note": "Daga shop (Dragon Slayer); GE ~60k is cheaper for a main"}
+      ]
+    },
+    {
+      "id": "currency:tokkul",
+      "name": "Tokkul",
+      "category": "physical_untradeable",
+      "is_item": true,
+      "ge_tradeable": false,
+      "observable": "plugin",
+      "source_activity": "activity:tzhaar",
+      "earn_rate_per_hour": null,
+      "self_earned_only": true,
+      "example_sinks": [
+        {"item": "item:6528", "name": "Tzhaar-ket-om", "amount": 75001, "note": "TzHaar-Hur store; 65,001 with Karamja gloves (diary discount)"}
+      ]
+    },
+    {
+      "id": "currency:honour-points",
+      "name": "Honour points",
+      "category": "virtual",
+      "is_item": false,
+      "ge_tradeable": false,
+      "observable": "plugin_or_unknown",
+      "source_activity": "activity:barbarian-assault",
+      "earn_rate_per_hour": null,
+      "self_earned_only": true,
+      "example_sinks": [
+        {"item": "item:10551", "name": "Fighter torso", "amount": 375, "note": "375 per role x4 + 1 Penance Queen kill"}
+      ]
+    },
+    {
+      "id": "currency:marks-of-grace",
+      "name": "Marks of grace",
+      "category": "physical_untradeable",
+      "is_item": true,
+      "ge_tradeable": false,
+      "observable": "plugin",
+      "source_activity": "minigame:rooftop-agility",
+      "earn_rate_per_hour": null,
+      "self_earned_only": true,
+      "example_sinks": [
+        {"item": "item:11850", "name": "Graceful hood", "amount": 35, "note": "Rooftop Agility shops"}
+      ]
+    }
+  ],
+  "_excluded": []
+}

@@ -1,0 +1,32 @@
+{
+  "_provenance": {
+    "domain": "gather",
+    "description": "Hand-curated, wiki-verified gathered resources for the cost-layer gather channel. v1 covers the golden-set herb (Guam via Farming) only; bulk gather sourcing (Farming/Fishing/Mining/Woodcutting/Hunter tables) is a disclosed v1 follow-up. No live wiki fetch during build.",
+    "source_urls": [
+      "https://oldschool.runescape.wiki/w/Guam_leaf",
+      "https://oldschool.runescape.wiki/w/Guam_seed"
+    ],
+    "license": "OSRS Wiki content CC BY-NC-SA 3.0",
+    "curated": true,
+    "record_count": 1
+  },
+  "records": [
+    {
+      "resource_item_id": "item:249",
+      "name": "Guam leaf",
+      "skill": "Farming",
+      "level": 9,
+      "inputs": [
+        { "item_id": "item:5291", "qty": 1 }
+      ],
+      "output_qty": 1,
+      "currency": "currency:coins",
+      "source": "Farming: Guam seed in a herb patch",
+      "audience": "both",
+      "pricing_basis": "inputs",
+      "realization_channel": "gather",
+      "requires_ge": false
+    }
+  ],
+  "_excluded": []
+}

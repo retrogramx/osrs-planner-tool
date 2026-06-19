@@ -1,0 +1,67 @@
+{
+  "_provenance": {
+    "domain": "recipes",
+    "description": "Hand-curated, wiki-verified production recipes for the cost-layer craft channel. v1 covers the golden-set potion chain (Attack potion via Guam) only; bulk recipe sourcing from the OSRS Wiki production tables is a disclosed v1 follow-up. No live wiki fetch during build. The Vial of water (item:227) record models filling an empty Vial (item:229) at any water source: filling is FREE, so the produced cost is exactly the empty vial -- this gives the potion chain a non-GE route for every input so the iron potion is priceable.",
+    "source_urls": [
+      "https://oldschool.runescape.wiki/w/Attack_potion",
+      "https://oldschool.runescape.wiki/w/Guam_potion_(unf)",
+      "https://oldschool.runescape.wiki/w/Vial_of_water"
+    ],
+    "license": "OSRS Wiki content CC BY-NC-SA 3.0",
+    "curated": true,
+    "record_count": 3
+  },
+  "records": [
+    {
+      "output_item_id": "item:121",
+      "name": "Attack potion(3)",
+      "skill": "Herblore",
+      "level": 3,
+      "inputs": [
+        { "item_id": "item:91", "qty": 1 },
+        { "item_id": "item:221", "qty": 1 }
+      ],
+      "output_qty": 1,
+      "currency": "currency:coins",
+      "source": "Herblore: mix Guam potion (unf) + Eye of newt",
+      "audience": "both",
+      "pricing_basis": "inputs",
+      "realization_channel": "craft",
+      "requires_ge": false
+    },
+    {
+      "output_item_id": "item:91",
+      "name": "Guam potion (unf)",
+      "skill": "Herblore",
+      "level": 3,
+      "inputs": [
+        { "item_id": "item:249", "qty": 1 },
+        { "item_id": "item:227", "qty": 1 }
+      ],
+      "output_qty": 1,
+      "currency": "currency:coins",
+      "source": "Herblore: Guam leaf + Vial of water",
+      "audience": "both",
+      "pricing_basis": "inputs",
+      "realization_channel": "craft",
+      "requires_ge": false
+    },
+    {
+      "output_item_id": "item:227",
+      "name": "Vial of water",
+      "skill": null,
+      "level": 1,
+      "inputs": [
+        { "item_id": "item:229", "qty": 1 }
+      ],
+      "output_qty": 1,
+      "currency": "currency:coins",
+      "source": "Fill an empty Vial at any water source (free); cost is the empty vial",
+      "audience": "both",
+      "pricing_basis": "inputs",
+      "realization_channel": "craft",
+      "requires_ge": false
+    }
+  ],
+  "_excluded": []
+}
