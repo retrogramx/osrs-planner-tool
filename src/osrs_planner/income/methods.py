@@ -253,6 +253,49 @@ def _net_sign(outputs: list[Flow], inputs: list[Flow]) -> str:
     return "earner" if has_out else "sink"
 
 
+# Methods the guide treats as net sinks where the coffer/seed spend is NOT in
+# the inputs list (so a face-value outputs-vs-inputs compare mis-reads them as
+# earners). Curated, disclosed. Managing Miscellania spends coffer coins to seed
+# the kingdom; its outputs face-value exceeds the listed 75000-coin input.
+_KNOWN_SINKS = frozenset({"Managing Miscellania"})
+
+
+def _compute_net_sign(raw_outputs, raw_inputs, kph=None) -> str:
+    """earner vs sink from the source dataset's own face values, PER HOUR.
+
+    A method is a "sink" when its modeled input value/hr exceeds its modeled
+    output value/hr. Missing/None values count as 0. (Recomputed precisely per
+    family in realize.py; this is the coarse load-time classification for the card.)
+
+    PLAN DEVIATION (necessary, disclosed): the plan's draft compared raw
+    ``value*qty`` WITHOUT the per-hour scaling. But the main dataset mixes scales
+    -- per-kill outputs carry ``isph=False`` (qty is per single kill) while inputs
+    carry ``isph=True`` (already per-hour). A raw compare therefore weighs a
+    per-hour input cost against a per-KILL output value, falsely flagging ~89
+    per-kill combat methods as sinks -- including the contract's load-bearing
+    golden earner "Killing green dragons" (per-kill outputs 4,929 vs per-hour
+    inputs 74,645 -> "sink"), which would wrongly sort it LAST. Applying the same
+    ``isph``/``kph`` per-hour normalization the loader already uses (``_qty_per_hour``)
+    fixes this: green dragons -> out/hr 887k > in/hr 83k -> earner; and the only
+    methods left as computed sinks are genuine (Collecting buckets of sand:
+    runes+buckets cost > sand; Catching anglerfish (Diabolic worms): the source's
+    own gp_hr is -191,600). Managing Miscellania still relies on _KNOWN_SINKS (its
+    coffer spend is not in inputs).
+    """
+    def _val(io) -> float:
+        try:
+            qty = float(io.get("qty") or 0)
+            if not io.get("isph") and kph:
+                qty *= float(kph)
+            return float(io.get("value") or 0) * qty
+        except (TypeError, ValueError):
+            return 0.0
+
+    out_total = sum(_val(o) for o in (raw_outputs or []))
+    in_total = sum(_val(i) for i in (raw_inputs or []))
+    return "sink" if in_total > out_total else "earner"
+
+
 def _from_main(rec: dict, name_idx: dict[str, int]) -> MethodRecord:
     kph = rec.get("kph")
     outputs = [_flow_from_main(o, kph, name_idx) for o in (rec.get("outputs") or [])]
@@ -273,7 +316,8 @@ def _from_main(rec: dict, name_idx: dict[str, int]) -> MethodRecord:
         stage=None,
         tags={"intensity": rec.get("intensity"), "wilderness": bool(rec.get("wilderness"))},
         processing_dependent=False,
-        net_sign=_net_sign(outputs, inputs),
+        net_sign=("sink" if rec["name"] in _KNOWN_SINKS
+                  else _compute_net_sign(rec.get("outputs"), rec.get("inputs"), kph)),
         source="OSRS Wiki money_making_guide",
         url=rec.get("url") or "https://oldschool.runescape.wiki/w/Money_making_guide",
         accessed_at="2026-06-18T04:06:25Z",
