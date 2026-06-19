@@ -57,26 +57,27 @@ def _green_dragons_method(**over):
 
 
 def test_main_realizes_outputs_at_ge_value(provider):
-    gp_hr, status = realize_income(_green_dragons_method(), "main", provider, recipe_index={})
+    gp_hr, status = realize_income(_green_dragons_method(), "main", provider, recipe_index={}, account_skills={})
     assert status == "known"
     assert gp_hr == 1000 * _ge(provider, GREEN_HIDE) + 50000
 
 
 def test_ironman_realizes_raw_high_alch(provider):
-    gp_hr, status = realize_income(_green_dragons_method(), "ironman", provider, recipe_index={})
+    # No recipe_index -> no chain available; the hide falls to raw High-Alch.
+    gp_hr, status = realize_income(_green_dragons_method(), "ironman", provider, recipe_index={}, account_skills={})
     assert status == "known"
     assert gp_hr == 1000 * _ha(provider, GREEN_HIDE) + 50000
 
 
 def test_uim_realizes_same_as_ironman(provider):
-    iron, _ = realize_income(_green_dragons_method(), "ironman", provider, recipe_index={})
-    uim, _ = realize_income(_green_dragons_method(), "uim", provider, recipe_index={})
+    iron, _ = realize_income(_green_dragons_method(), "ironman", provider, recipe_index={}, account_skills={})
+    uim, _ = realize_income(_green_dragons_method(), "uim", provider, recipe_index={}, account_skills={})
     assert uim == iron
 
 
 def test_main_and_ironman_differ_and_main_higher(provider):
-    main, _ = realize_income(_green_dragons_method(), "main", provider, recipe_index={})
-    iron, _ = realize_income(_green_dragons_method(), "ironman", provider, recipe_index={})
+    main, _ = realize_income(_green_dragons_method(), "main", provider, recipe_index={}, account_skills={})
+    iron, _ = realize_income(_green_dragons_method(), "ironman", provider, recipe_index={}, account_skills={})
     assert main != iron
     assert main > iron  # GE hide (~1557) >> raw alch (81)
 
@@ -84,32 +85,32 @@ def test_main_and_ironman_differ_and_main_higher(provider):
 def test_main_subtracts_ge_input_cost(provider):
     base = _green_dragons_method()
     with_input = base.model_copy(update={"inputs": [Flow(item_id=GREEN_HIDE, is_coins=False, qty_per_hour=10.0)]})
-    gp_no, _ = realize_income(base, "main", provider, recipe_index={})
-    gp_with, _ = realize_income(with_input, "main", provider, recipe_index={})
+    gp_no, _ = realize_income(base, "main", provider, recipe_index={}, account_skills={})
+    gp_with, _ = realize_income(with_input, "main", provider, recipe_index={}, account_skills={})
     assert gp_with == gp_no - 10 * _ge(provider, GREEN_HIDE)
 
 
 def test_unpriceable_output_is_unknown(provider):
     m = _green_dragons_method(outputs=[Flow(item_id="item:99999999", is_coins=False, qty_per_hour=1.0)])
-    gp_hr, status = realize_income(m, "main", provider, recipe_index={})
+    gp_hr, status = realize_income(m, "main", provider, recipe_index={}, account_skills={})
     assert status == "unknown" and gp_hr is None
 
 
 def test_null_rate_output_is_unknown(provider):
     m = _green_dragons_method(outputs=[Flow(item_id=GREEN_HIDE, is_coins=False, qty_per_hour=None)])
-    gp_hr, status = realize_income(m, "main", provider, recipe_index={})
+    gp_hr, status = realize_income(m, "main", provider, recipe_index={}, account_skills={})
     assert status == "unknown" and gp_hr is None
 
 
 def test_nan_rate_output_is_unknown(provider):
     m = _green_dragons_method(outputs=[Flow(item_id=GREEN_HIDE, is_coins=False, qty_per_hour=float("nan"))])
-    gp_hr, status = realize_income(m, "main", provider, recipe_index={})
+    gp_hr, status = realize_income(m, "main", provider, recipe_index={}, account_skills={})
     assert status == "unknown" and gp_hr is None
 
 
 def test_processing_dependent_iron_unknown_main_known(provider):
     m = _green_dragons_method(processing_dependent=True)
-    iron_gp, iron_status = realize_income(m, "ironman", provider, recipe_index={})
+    iron_gp, iron_status = realize_income(m, "ironman", provider, recipe_index={}, account_skills={})
     assert iron_status == "unknown" and iron_gp is None
-    main_gp, main_status = realize_income(m, "main", provider, recipe_index={})
+    main_gp, main_status = realize_income(m, "main", provider, recipe_index={}, account_skills={})
     assert main_status == "known" and main_gp is not None

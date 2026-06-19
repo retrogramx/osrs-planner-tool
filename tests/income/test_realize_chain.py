@@ -55,8 +55,10 @@ def _committed_tan_fee():
 
 
 def test_iron_below_crafting_level_falls_back_to_raw(provider, recipe_index):
-    # Crafting 40 (< 63): cannot craft body -> raw alch 81 (leather alch 30 is lower)
-    per_hide, status = best_realization("item:1753", "ironman", provider, recipe_index, {"Crafting": 40})
+    # Crafting 40 (< 63): cannot craft body -> raw alch 81 (leather alch 30 is lower).
+    # Skills are keyed like AccountState.levels (skill:<name> slugs); _level_ok
+    # normalizes the recipe's display "Crafting" to skill:crafting to match.
+    per_hide, status = best_realization("item:1753", "ironman", provider, recipe_index, {"skill:crafting": 40})
     assert status == "known"
     assert per_hide == 81
 
@@ -75,49 +77,74 @@ def test_iron_at_crafting_level_uses_body_chain(provider, recipe_index):
     assert body_ha == 4680 and thread_ha == 1  # guard the pinned ids didn't drift
     leather = (body_ha - thread_ha) // 3
     expected = leather - tan_fee  # 1539
-    per_hide, status = best_realization("item:1753", "ironman", provider, recipe_index, {"Crafting": 63})
+    per_hide, status = best_realization("item:1753", "ironman", provider, recipe_index, {"skill:crafting": 63})
     assert status == "known"
     assert expected == 1539  # documents the pinned golden value (fee 20)
     assert per_hide == expected
 
 
-def test_realize_income_iron_green_dragons_known(green_dragons, provider, recipe_index):
-    # The FULL REAL record now prices KNOWN for iron: every normal item output is
-    # valued (raw High-Alch via best_realization), the unitemized gem-drop-table
-    # bundle (item_id None, not coins) is SKIPPED (disclosed under-count, the safe
-    # direction -- NOT forced unknown), and the combat-supply inputs are
-    # GE-subtracted. Via realize_income the MAIN record carries NO Crafting req (and
-    # its skill keys are skill:<slug>, not the recipe display-name "Crafting"), so
-    # the hide line falls to the RAW floor (81/hide), per the plan's binding
-    # skills-source decision -- the 1539 body chain is proven by the two direct
-    # best_realization tests above. FINDING: at raw-alch realization with the real
-    # consumed combat supplies GE-valued, the iron net is NEGATIVE -- green dragons
-    # is a money-LOSER for an iron on this realization (an honest, non-fabricated
-    # number, not under-counted to unknown).
-    gp_hr, status = realize_income(green_dragons, "ironman", provider, recipe_index)
+def test_realize_income_iron_green_dragons_63_crafting_flagship(green_dragons, provider, recipe_index):
+    # THE FLAGSHIP, on the FULL REAL record via the real call path: a 63-Crafting
+    # iron realizes the green-dragon hides via the body chain (1539/hide, not the
+    # raw-alch 81 floor), so green dragons becomes POSITIVE and LARGE even after the
+    # GE-valued combat supplies are subtracted (hides 1539*180 ~= 277k dominates the
+    # ~84k supplies). The gate is on the ACCOUNT's Crafting, not the method's
+    # requirements (killing green dragons needs no Crafting). account_skills is keyed
+    # like AccountState.levels (skill:crafting).
+    gp_hr, status = realize_income(
+        green_dragons, "ironman", provider, recipe_index, account_skills={"skill:crafting": 63}
+    )
     assert status == "known"
     assert gp_hr is not None
-    # raw-alch hide line (81*180) is the floor for the hide output specifically;
-    # the whole-method net is dominated by the GE-valued combat-supply inputs.
-    hide = _hide_flow(green_dragons)
-    assert provider.high_alch(hide.item_id) == 81  # guard the raw-floor pin
+    assert gp_hr > 200000  # positive and large (~248k): the body chain triggered
+    # the hide line is realized via the chain, not the raw 81 floor
+    assert best_realization("item:1753", "ironman", provider, recipe_index, {"skill:crafting": 63})[0] == 1539
+
+
+def test_realize_income_iron_green_dragons_low_crafting_falls_to_raw(green_dragons, provider, recipe_index):
+    # A low/no-Crafting iron CANNOT craft the body, so the hides fall to the raw-alch
+    # floor (81/hide); with the GE-valued combat supplies subtracted the net is much
+    # lower (here NEGATIVE) -- an honest, non-fabricated number. account_skills is the
+    # gate: an absent skill:crafting (== empty levels) is below the 63 gate.
+    no_craft_gp, no_craft_status = realize_income(
+        green_dragons, "ironman", provider, recipe_index, account_skills={}
+    )
+    low_craft_gp, low_craft_status = realize_income(
+        green_dragons, "ironman", provider, recipe_index, account_skills={"skill:crafting": 40}
+    )
+    assert no_craft_status == "known" and low_craft_status == "known"
+    assert no_craft_gp == low_craft_gp  # both below the 63 gate -> identical raw-floor
+    # far below the 63-Crafting flagship (which is > 200k)
+    flagship_gp, _ = realize_income(
+        green_dragons, "ironman", provider, recipe_index, account_skills={"skill:crafting": 63}
+    )
+    assert low_craft_gp < flagship_gp
+    assert provider.high_alch("item:1753") == 81  # guard the raw-floor pin
 
 
 def test_realize_income_main_green_dragons_uses_ge(green_dragons, provider, recipe_index):
-    gp_hr, status = realize_income(green_dragons, "main", provider, recipe_index)
+    gp_hr, status = realize_income(green_dragons, "main", provider, recipe_index, account_skills={})
     assert status == "known"
     assert gp_hr >= 280260  # GE hide line alone is 1557*180; full record far exceeds
 
 
-def test_realize_income_green_dragons_main_higher_both_known(green_dragons, provider, recipe_index):
-    # The load-bearing account-type divergence, asserted on the FULL REAL record:
-    # both families KNOWN (the aggregate-skip refinement makes the real gem-table
-    # bundle non-fatal), and main (GE) strictly > iron (raw High-Alch).
-    main_gp, main_status = realize_income(green_dragons, "main", provider, recipe_index)
-    iron_gp, iron_status = realize_income(green_dragons, "ironman", provider, recipe_index)
-    assert main_status == "known" and iron_status == "known"
-    assert main_gp is not None and iron_gp is not None
-    assert main_gp > iron_gp
+def test_realize_income_green_dragons_account_type_divergence_all_known(green_dragons, provider, recipe_index):
+    # The load-bearing account-type divergence, asserted on the FULL REAL record, all
+    # KNOWN: main (GE) > a 63-Crafting iron (body chain) > a low-Crafting iron (raw
+    # floor). The 63-Crafting iron is the flagship -- positive and large.
+    main_gp, main_status = realize_income(green_dragons, "main", provider, recipe_index, account_skills={})
+    iron63_gp, iron63_status = realize_income(
+        green_dragons, "ironman", provider, recipe_index, account_skills={"skill:crafting": 63}
+    )
+    iron_low_gp, iron_low_status = realize_income(
+        green_dragons, "ironman", provider, recipe_index, account_skills={}
+    )
+    assert main_status == "known" and iron63_status == "known" and iron_low_status == "known"
+    assert main_gp is not None and iron63_gp is not None and iron_low_gp is not None
+    assert iron63_gp > 200000          # flagship: 63-Crafting iron is positive and large
+    assert main_gp > iron63_gp         # main (GE) still beats iron (alch ceiling)
+    assert iron63_gp > iron_low_gp     # body chain >> raw floor
+    assert main_gp > iron_low_gp       # main > the low-Crafting iron
 
 
 def _mk(outputs, **over):
@@ -143,8 +170,9 @@ def test_aggregate_output_is_skipped_not_unknown_both_families(provider, recipe_
         Flow(item_id="item:1753", is_coins=False, qty_per_hour=10.0),  # priceable
         Flow(item_id=None, is_coins=False, qty_per_hour=5.0),          # aggregate -> skip
     ])
-    main_gp, main_status = realize_income(m, "main", provider, recipe_index)
-    iron_gp, iron_status = realize_income(m, "ironman", provider, recipe_index)
+    main_gp, main_status = realize_income(m, "main", provider, recipe_index, account_skills={})
+    # empty account_skills (no Crafting) -> iron hide falls to the raw-alch floor (81)
+    iron_gp, iron_status = realize_income(m, "ironman", provider, recipe_index, account_skills={})
     assert main_status == "known" and iron_status == "known"
     # the aggregate contributes 0: value == priceable line only
     assert main_gp == 10 * provider.ge_price("item:1753")
@@ -157,8 +185,8 @@ def test_normal_item_output_unpriceable_still_unknown(provider, recipe_index):
     # (Only unitemized bundles with item_id None are skipped; this is item_id set.)
     from osrs_planner.income.methods import Flow
     m = _mk(outputs=[Flow(item_id="item:999999999", is_coins=False, qty_per_hour=1.0)])
-    main_gp, main_status = realize_income(m, "main", provider, recipe_index)
-    iron_gp, iron_status = realize_income(m, "ironman", provider, recipe_index)
+    main_gp, main_status = realize_income(m, "main", provider, recipe_index, account_skills={})
+    iron_gp, iron_status = realize_income(m, "ironman", provider, recipe_index, account_skills={})
     assert main_status == "unknown" and main_gp is None
     assert iron_status == "unknown" and iron_gp is None
 
@@ -171,7 +199,7 @@ def test_aggregate_only_output_is_known_zero(provider, recipe_index):
         Flow(item_id=None, is_coins=True, qty_per_hour=1000.0),  # coins -> face
         Flow(item_id=None, is_coins=False, qty_per_hour=5.0),    # aggregate -> skip
     ])
-    iron_gp, iron_status = realize_income(m, "ironman", provider, recipe_index)
+    iron_gp, iron_status = realize_income(m, "ironman", provider, recipe_index, account_skills={})
     assert iron_status == "known" and iron_gp == 1000
 
 
@@ -186,5 +214,5 @@ def test_processing_dependent_uncovered_is_unknown(provider, recipe_index):
         stage=None, tags={}, processing_dependent=True, net_sign="earner",
         source="test", url="test", accessed_at="2026-06-19",
     )
-    gp_hr, status = realize_income(m, "ironman", provider, recipe_index)
+    gp_hr, status = realize_income(m, "ironman", provider, recipe_index, account_skills={})
     assert status == "unknown" and gp_hr is None

@@ -1,18 +1,20 @@
 # src/osrs_planner/income/realize.py
 """Per-family income realization (best-realization, with the iron processing chain).
 
-realize_income(method, family, provider, recipe_index) -> (gp_hr, gp_hr_status)
-computes a method's COINS-ONLY gp/hr at query time, the inverse of cost's price
-walk:
+realize_income(method, family, provider, recipe_index, account_skills) ->
+(gp_hr, gp_hr_status) computes a method's COINS-ONLY gp/hr at query time, the
+inverse of cost's price walk:
 
   main      -> sum over outputs of GE value (provider.ge_price; coins face) * rate
                MINUS sum over inputs of GE cost * rate.
   iron/uim  -> sum over outputs of best_realization(output) * rate. Each non-coins
                iron output is valued at max(RAW High-Alch, process-then-alch via
-               the tan->craft->alch walk over recipe_index), gated by the account's
-               skills, minus internal costs (per-hide tan service fee + secondary
-               inputs). Green dragons: 1539/hide via the body chain (Crafting 63)
-               vs 81 raw alch.
+               the tan->craft->alch walk over recipe_index), gated by the ACCOUNT's
+               skills (``account_skills``, not the method's requirements -- killing
+               green dragons needs no Crafting, but turning the hides into bodies
+               does), minus internal costs (per-hide tan service fee + secondary
+               inputs). Green dragons: 1539/hide via the body chain (a 63-Crafting
+               account) vs 81 raw alch (a low-Crafting account).
 
 NEVER fabricate (design §4): a missing price, a null/NaN rate, or (for iron) a
 processing_dependent method whose chain isn't covered -> gp_hr_status="unknown",
@@ -58,13 +60,23 @@ def _coin_cost_of_input(flow: Flow, provider: PriceProvider) -> int | None:
 
 
 def realize_income(method: MethodRecord, family: str, provider: PriceProvider,
-                   recipe_index: dict[str, list[dict]]) -> tuple[int | None, str]:
+                   recipe_index: dict[str, list[dict]],
+                   account_skills: dict[str, int]) -> tuple[int | None, str]:
     """Return (gp_hr_coins_only, gp_hr_status) for `method` realized for `family`.
 
     gp_hr_status in {"known","unknown"}. Any unpriceable output/input or bad rate
     -> ("unknown", None). For iron/uim, a processing_dependent method is unknown
     in v1 (its real number needs the T5 chain walk; disclosing beats
-    under-counting). recipe_index is the T5 seam; unused here.
+    under-counting).
+
+    ``account_skills`` is the PLAYER's skill levels, keyed like
+    ``AccountState.levels`` (``skill:<name>`` slugs, e.g. ``{"skill:crafting": 63}``).
+    It -- NOT ``method.requirements.skills`` -- gates the iron processing chain:
+    income is account-specific, and whether a hide can be turned into a body
+    depends on the ACCOUNT's Crafting level, not on whether the kill method
+    happens to require Crafting (it doesn't). Threaded into ``best_realization``;
+    the main/coins/input paths ignore it. (Accepted deviation from the plan's
+    "skills-source" decision -- T6 ``suggest_methods`` passes ``state.levels``.)
     """
     is_iron = family in _IRON_FAMILIES
 
@@ -88,7 +100,7 @@ def realize_income(method: MethodRecord, family: str, provider: PriceProvider,
             continue
         elif is_iron:
             unit, ostatus = best_realization(
-                out.item_id, family, provider, recipe_index, method.requirements.skills
+                out.item_id, family, provider, recipe_index, account_skills
             )
             if ostatus != "known" or unit is None:
                 return (None, "unknown")
@@ -108,19 +120,30 @@ def realize_income(method: MethodRecord, family: str, provider: PriceProvider,
     return (int(total), "known")
 
 
+def _skill_key(skill: str) -> str:
+    """Normalize a recipe's DISPLAY skill name to the account key convention.
+
+    Recipes carry display names ("Crafting"); the account's levels (and the KG)
+    key skills as ``skill:<name>`` slugs, lowercased (``AccountState.levels`` ==
+    ``{"skill:crafting": 63}``). Bridge the two so the gate lookup matches.
+    """
+    return f"skill:{skill.strip().lower()}"
+
+
 def _level_ok(recipe: dict, skills: dict) -> bool:
     """The account meets the recipe's skill gate.
 
-    A recipe with no skill (null) is always craftable. A skill gate requires
-    skills[skill] >= level. The caller passes the account's REAL levels; an
-    absent skill is treated as below the gate. Skill keys are DISPLAY names
-    ("Crafting"), matching the recipe `skill` field and method.requirements skill
-    slugs both -- the caller normalizes when needed.
+    A recipe with no skill (null) is always craftable. A skill gate requires the
+    ACCOUNT's level for that skill (``skills[skill:<name>]``) >= the recipe level.
+    ``skills`` is the player's levels, keyed like ``AccountState.levels``
+    (``skill:<name>`` slugs); an absent skill is treated as below the gate. The
+    recipe's display skill name ("Crafting") is normalized to that key
+    (``skill:crafting``) so the two conventions match.
     """
     skill = recipe.get("skill")
     if not skill:
         return True
-    return int(skills.get(skill, 0)) >= int(recipe.get("level") or 1)
+    return int(skills.get(_skill_key(skill), 0)) >= int(recipe.get("level") or 1)
 
 
 def best_realization(item_id: str, family: str, provider: PriceProvider,
@@ -129,10 +152,13 @@ def best_realization(item_id: str, family: str, provider: PriceProvider,
     """Best coins-realization for a single iron output, in coins.
 
     Compares: high_alch(raw) vs every process-then-realize route walking
-    recipe_index (raw -> product), recursively, gated by the account's skills,
+    recipe_index (raw -> product), recursively, gated by the ACCOUNT's skills,
     subtracting internal costs (per-unit service_fee_coins + secondary inputs).
-    Returns (best_coins_per_unit_of_item_id, status). status == "unknown" only
-    when NOTHING is priceable (no alch, no covered chain). _seen guards cycles.
+    ``skills`` is the player's levels keyed like ``AccountState.levels``
+    (``skill:<name>`` slugs); ``_level_ok`` normalizes each recipe's display skill
+    name to that key. Returns (best_coins_per_unit_of_item_id, status). status ==
+    "unknown" only when NOTHING is priceable (no alch, no covered chain). _seen
+    guards cycles.
     """
     _seen = _seen or frozenset()
     if item_id in _seen:
