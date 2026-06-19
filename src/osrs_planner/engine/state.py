@@ -49,6 +49,33 @@ class AccountState:
     observable_families: set[str] = field(default_factory=set)
 
 
+# K5 (§6.4): map a specific OSRS account mode to a product *family*. The
+# account_type atom (engine/conditions.py) and the §6.3 ironman wrapper compare
+# against these families so every iron variant (HCIM/GIM/HCGIM) shares one gate.
+# Hardcore/group variants are ironman-family; Ultimate is its own family
+# (its no-bank constraint is a storage strategy, deferred — §6.4); everything
+# else (normal/main/unknown) is 'main'.
+_ACCOUNT_FAMILY: dict[str, str] = {
+    "main": "main",
+    "normal": "main",
+    "ironman": "ironman",
+    "hardcore_ironman": "ironman",
+    "group_ironman": "ironman",
+    "hardcore_group_ironman": "ironman",
+    "ultimate_ironman": "uim",
+}
+
+
+def account_family(mode: str) -> str:
+    """Collapse a specific account ``mode`` to its product family.
+
+    Returns one of ``{"main", "ironman", "uim"}``. Unknown/empty modes default
+    to ``"main"`` (the least-restrictive family) so an unrecognised mode never
+    fabricates an iron-only blocker.
+    """
+    return _ACCOUNT_FAMILY.get(mode, "main")
+
+
 def family_is_observed(
     atom_family: str,
     state: AccountState,
