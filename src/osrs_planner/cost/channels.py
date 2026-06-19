@@ -171,8 +171,29 @@ def load_gather(path: str) -> list[ChannelRecord]:
     return records
 
 
-def load_spawns(path: str) -> list[ChannelRecord]:  # replaced in Task 8
-    return []
+def load_spawns(path: str) -> list[ChannelRecord]:
+    """Load data/spawns.json into `spawn` ChannelRecords (gold cost 0)."""
+    with open(path, encoding="utf-8") as f:
+        payload = json.load(f)
+    records: list[ChannelRecord] = []
+    for r in payload["records"]:
+        records.append(
+            ChannelRecord(
+                item_id=r["item_id"],
+                channel="spawn",
+                currency=r["currency"],
+                amount=0,
+                inputs=[],
+                output_qty=r.get("count", 1),
+                account_allow=frozenset({"main", "ironman", "uim"}),
+                source=r["source"],
+                audience=r["audience"],
+                pricing_basis=r["pricing_basis"],
+                realization_channel=r["realization_channel"],
+                requires_ge=r["requires_ge"],
+            )
+        )
+    return records
 
 
 def build_index(
