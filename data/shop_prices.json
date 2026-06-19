@@ -65,5 +65,6 @@
       "requires_ge": false,
       "source": "https://oldschool.runescape.wiki/w/Vial -- empty vial fixed shop sell price = item base Value 2 coins (Jatix's Herblore Shop, Taverley); wiki-verified 2026-06-19"
     }
-  ]
+  ],
+  "_excluded": []
 }

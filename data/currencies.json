@@ -5,7 +5,8 @@
     "accessed": "2026-06-19T00:00:00+00:00",
     "license": "CC BY-NC-SA 3.0",
     "extraction_method": "hand-curated",
-    "notes": "v1 seed: coins (universal baseline) + the non-coin currencies the golden-set channels reference (tokkul for the obby maul) + honour-points/marks-of-grace to exercise the virtual + physical_untradeable categories. Sinks/categories verified from research/currency-model.md. earn_rate_per_hour is a null skeleton (filled when skill/minigame rate baselines land). Full Currencies-page coverage (~50) is a disclosed v1 follow-up."
+    "notes": "v1 seed: coins (universal baseline) + the non-coin currencies the golden-set channels reference (tokkul for the obby maul) + honour-points/marks-of-grace to exercise the virtual + physical_untradeable categories. Sinks/categories verified from research/currency-model.md. earn_rate_per_hour is a null skeleton (filled when skill/minigame rate baselines land). Full Currencies-page coverage (~50) is a disclosed v1 follow-up.",
+    "record_count": 4
   },
   "records": [
     {

@@ -1,6 +1,6 @@
 {
   "_provenance": {
-    "dataset": "recipes",
+    "domain": "recipes",
     "description": "Hand-curated, wiki-verified production recipes for the cost-layer craft channel. v1 covers the golden-set potion chain (Attack potion via Guam) only; bulk recipe sourcing from the OSRS Wiki production tables is a disclosed v1 follow-up. No live wiki fetch during build. The Vial of water (item:227) record models filling an empty Vial (item:229) at any water source: filling is FREE, so the produced cost is exactly the empty vial -- this gives the potion chain a non-GE route for every input so the iron potion is priceable.",
     "source_urls": [
       "https://oldschool.runescape.wiki/w/Attack_potion",
@@ -8,13 +8,13 @@
       "https://oldschool.runescape.wiki/w/Vial_of_water"
     ],
     "license": "OSRS Wiki content CC BY-NC-SA 3.0",
-    "curated": true
+    "curated": true,
+    "record_count": 3
   },
   "records": [
     {
       "output_item_id": "item:121",
       "name": "Attack potion(3)",
-      "channel": "craft",
       "skill": "Herblore",
       "level": 3,
       "inputs": [
@@ -32,7 +32,6 @@
     {
       "output_item_id": "item:91",
       "name": "Guam potion (unf)",
-      "channel": "craft",
       "skill": "Herblore",
       "level": 3,
       "inputs": [
@@ -50,7 +49,6 @@
     {
       "output_item_id": "item:227",
       "name": "Vial of water",
-      "channel": "craft",
       "skill": null,
       "level": 1,
       "inputs": [

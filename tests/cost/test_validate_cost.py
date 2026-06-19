@@ -27,7 +27,17 @@ def test_validator_passes_on_committed_data():
     assert "COST VALIDATION PASSED" in r.stdout
 
 
-def _make_broken_root(tmp_path, *, shop_records=None, kg_text=None):
+def _envelope(records):
+    """Wrap rows in the normalized cost-dataset envelope the validator expects
+    ({_provenance.record_count, records, _excluded})."""
+    return {
+        "_provenance": {"record_count": len(records)},
+        "records": records,
+        "_excluded": [],
+    }
+
+
+def _make_broken_root(tmp_path, *, shop_records=None, recipe_records=None, kg_text=None):
     """Construct a minimal broken data+kg root (never touch committed files)."""
     data = tmp_path / "data"
     kgd = tmp_path / "kg"
@@ -38,7 +48,9 @@ def _make_broken_root(tmp_path, *, shop_records=None, kg_text=None):
     (data / "currencies.json").write_text(json.dumps(
         {"records": [{"id": "currency:coins", "name": "Coins"}]}))
     (data / "shop_prices.json").write_text(json.dumps(
-        {"records": shop_records if shop_records is not None else []}))
+        _envelope(shop_records if shop_records is not None else [])))
+    if recipe_records is not None:
+        (data / "recipes.json").write_text(json.dumps(_envelope(recipe_records)))
     (kgd / "nodes.json").write_text(kg_text if kg_text is not None else "[]")
     return str(data), str(kgd)
 
@@ -77,3 +89,14 @@ def test_cost_token_in_kg_fails(tmp_path):
     r = _run("--data", d, "--kg", k)
     assert r.returncode == 1
     assert "cost token leaked" in r.stdout
+
+
+def test_unresolvable_craft_input_fails(tmp_path):
+    # Recipe output resolves (item:4587) but an INPUT item_id does not -- inv 3.
+    d, k = _make_broken_root(tmp_path, shop_records=[], recipe_records=[
+        {"output_item_id": "item:4587", "currency": "currency:coins", "output_qty": 1,
+         "inputs": [{"item_id": "item:99999999", "qty": 1}],
+         "account_allow": ["main", "ironman", "uim"], "requires_ge": False}])
+    r = _run("--data", d, "--kg", k)
+    assert r.returncode == 1
+    assert "input item_id does not resolve" in r.stdout

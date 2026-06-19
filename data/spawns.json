@@ -1,19 +1,19 @@
 {
   "_provenance": {
-    "dataset": "spawns",
+    "domain": "spawns",
     "description": "Hand-curated, wiki-verified free item-spawn locations for the cost-layer spawn channel. v1 covers a representative free spawn (Hammer); bulk item-spawn sourcing from the OSRS Wiki spawn-location tables is a disclosed v1 follow-up. No live wiki fetch during build.",
     "source_urls": [
       "https://oldschool.runescape.wiki/w/Hammer",
       "https://oldschool.runescape.wiki/w/Item_spawn"
     ],
     "license": "OSRS Wiki content CC BY-NC-SA 3.0",
-    "curated": true
+    "curated": true,
+    "record_count": 1
   },
   "records": [
     {
       "item_id": "item:2347",
       "name": "Hammer",
-      "channel": "spawn",
       "locations": [
         "Lumbridge castle (upstairs)",
         "Barbarian Village (hut)",
