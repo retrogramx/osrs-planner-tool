@@ -41,9 +41,12 @@ class IncomeCard(BaseModel):
     notes: list[str] = Field(default_factory=list)
 
 
-# T7 refines this with a status tier; v1 ranks earners (known gp) first, then
-# unknown gp, then sinks. STATUS_RANK keys are tolerated-absent in v1 (placeholder
-# requirements_status has status "doable_now").
+# LIVE (T7): within the known-gp earner band, doable_now ranks ABOVE
+# future_gated/unverified -- so a lower-gp method you can do NOW outranks a
+# higher-gp one you can't yet (both shown, both labeled, never auto-picked).
+# A missing status key defaults to tier 0 (e.g. suggest_methods called with
+# kg=None still emits a "doable_now" placeholder, so this default is never hit
+# in practice; it only keeps an unexpected status from crashing the sort).
 _STATUS_RANK = {"doable_now": 0, "future_gated": 1, "unverified": 1}
 
 
