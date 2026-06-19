@@ -20,6 +20,8 @@ GOALS = [
     ("Barrows gloves", "item:7462"),
     ("Fairy rings", "access:fairy-rings"),
     ("Tzhaar-ket-om", "item:6528"),
+    ("Voidwaker", "item:27690"),
+    ("Full Infinity", "gear_loadout_goal:infinity"),
 ]
 
 OBSERVABLE = {"skill_level", "skill_xp", "combat_level", "quest", "item",

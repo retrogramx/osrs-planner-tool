@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import pathlib
 
 import pytest
 
@@ -143,3 +144,27 @@ def test_assemble_output_loads_via_jsonkgstore(tmp_path, monkeypatch):
     store = JsonKGStore.from_dir(str(out_dir))
     assert store.node("quest:dragon-slayer-i") is not None
     assert store.find_cycles() == []
+
+
+def test_committed_kg_matches_freshly_assembled(tmp_path, monkeypatch):
+    """The committed kg/*.json MUST be byte-identical to a fresh assembler run.
+
+    Without this, a builder edit that forgets to regenerate kg/*.json sails
+    through the whole acceptance gate green (the validator + golden set read the
+    STALE committed files). Re-run the assembler into a temp dir and byte-compare
+    each output to the committed file; on drift, tell the dev exactly how to fix.
+    """
+    import kg_ingest.assemble as A
+    out_dir = tmp_path / "kg"
+    monkeypatch.setattr(A, "OUT_DIR", out_dir)
+    A.assemble()
+    # Resolve the committed kg/ dir the same way the assembler computes its real
+    # OUT_DIR (repo-root/kg): assemble.py is kg_ingest/assemble.py, parents[1] = root.
+    committed_dir = pathlib.Path(A.__file__).resolve().parents[1] / "kg"
+    for fname in ("nodes.json", "edges.json", "condition_groups.json"):
+        fresh_bytes = (out_dir / fname).read_bytes()
+        committed_bytes = (committed_dir / fname).read_bytes()
+        assert fresh_bytes == committed_bytes, (
+            f"committed kg/{fname} is stale — regenerate with "
+            f"`./venv/bin/python -m kg_ingest.assemble`"
+        )

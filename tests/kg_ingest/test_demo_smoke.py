@@ -8,6 +8,7 @@ from kg_ingest.demo import run_demo
 def test_demo_runs_over_real_kg(capsys):
     run_demo()
     out = capsys.readouterr().out
-    for label in ("Dragon scimitar", "Barrows gloves", "Fairy rings", "Tzhaar-ket-om"):
+    for label in ("Dragon scimitar", "Barrows gloves", "Fairy rings", "Tzhaar-ket-om",
+                  "Voidwaker", "Full Infinity"):
         assert label in out, f"demo output missing {label!r}:\n{out}"
     assert "is_unlocked:" in out, out
