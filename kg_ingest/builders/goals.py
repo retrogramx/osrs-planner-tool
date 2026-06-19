@@ -10,6 +10,13 @@ Each goal = one Node + one REQUIRES edge (dst=None: "the constraint IS the tree"
   wield skill gate -> AtomType.SKILL_LEVEL (threshold, data.boostable),
   quest gate       -> AtomType.QUEST (data.state from the chain stage).
 
+B2 two-node pattern: a "wield item X" goal is modelled as a SEPARATE
+gear_loadout:<slug> node whose ITEM atom references the item:<id> LEAF (created by
+build_supporting), NOT as the item node owning an atom about itself. That avoids a
+self-loop in store.requires_dag() (owner == ref_node) that find_cycles() would flag
+as UNSATISFIABLE_CYCLE — and that Task 8's acyclicity check is meant to CATCH.
+Mirrors gear_loadout:void referencing its piece items in the engine fixture.
+
 IDs (K9): item:<item_id>, access:<slug>, gear_loadout:<slug>. Group/edge ints are
 builder-local DETERMINISTIC via _group_id/_edge_id(owner_id, slot); assemble.py
 re-keys to global ids. Atoms reference quest/skill nodes by quest:<slug> /
@@ -53,15 +60,21 @@ def build_goals() -> tuple[list[Node], list[Edge], dict[int, ConditionGroup]]:
     edges: list[Edge] = []
     groups: dict[int, ConditionGroup] = {}
 
-    # --- Goal 1: Dragon scimitar (item:4587) ---
-    # M2: ids minted via the locked helpers (item_id/skill_id/quest_id) so slugs
-    # are never hand-duplicated; the helper output IS the ref_node string.
-    scim = item_id(4587)
+    # --- Goal 1: Dragon scimitar (gear_loadout:dragon-scimitar) ---
+    # B2 two-node pattern: the GOAL node is distinct from the ITEM node it gates on.
+    # The ITEM atom references item:4587 — a LEAF created by build_supporting in the
+    # full pipeline (mirrors gear_loadout:void referencing its piece items) — so the
+    # goal never references itself: no self-loop in requires_dag(), no spurious cycle.
+    # M2: ids minted via the locked helpers (gear_loadout_id/item_id/skill_id/quest_id)
+    # so slugs are never hand-duplicated; the helper output IS the ref_node string.
+    scim = gear_loadout_id("Dragon scimitar")
+    scim_item = item_id(4587)
     g_scim = _group_id(scim, 0)
-    nodes.append(Node(id=scim, kind=NodeKind.ITEM, name="Dragon scimitar",
-                      slug="dragon-scimitar", data={"tradeable": True}))
+    nodes.append(Node(id=scim, kind=NodeKind.GEAR_LOADOUT,
+                      name="Wielding a Dragon scimitar", slug="dragon-scimitar",
+                      data={}))
     groups[g_scim] = ConditionGroup(id=g_scim, op=Op.AND, parent=None, children=[
-        ConditionAtom(atom_type=AtomType.ITEM, ref_node=scim, qty=1),
+        ConditionAtom(atom_type=AtomType.ITEM, ref_node=scim_item, qty=1),
         ConditionAtom(atom_type=AtomType.SKILL_LEVEL, ref_node=skill_id("Attack"),
                       threshold=60, data={"boostable": True}),
         ConditionAtom(atom_type=AtomType.QUEST, ref_node=quest_id("Monkey Madness I"),
@@ -86,15 +99,16 @@ def build_goals() -> tuple[list[Node], list[Edge], dict[int, ConditionGroup]]:
     edges.append(Edge(id=_edge_id(fairy, 0), type=EdgeType.REQUIRES,
                       src=fairy, dst=None, cond_group=g_fairy))
 
-    # --- Goal 3: Tzhaar-ket-om / obby maul (item:6528) ---
-    maul = item_id(6528)
+    # --- Goal 3: Tzhaar-ket-om / obby maul (gear_loadout:obby-maul) ---
+    # B2 two-node pattern again: the goal node is distinct from item:6528, which the
+    # ITEM atom references as a LEAF (built by build_supporting) — no self-loop.
+    maul = gear_loadout_id("Obby maul")
+    maul_item = item_id(6528)
     g_maul = _group_id(maul, 0)
-    # Name casing MUST match data/items_equipment.json exactly ('Tzhaar-ket-om',
-    # lowercase z/k) — that is the wiki/data casing the golden set asserts (M3).
-    nodes.append(Node(id=maul, kind=NodeKind.ITEM, name="Tzhaar-ket-om",
-                      slug="tzhaar-ket-om", data={"tradeable": True}))
+    nodes.append(Node(id=maul, kind=NodeKind.GEAR_LOADOUT,
+                      name="Wielding a Tzhaar-ket-om", slug="obby-maul", data={}))
     groups[g_maul] = ConditionGroup(id=g_maul, op=Op.AND, parent=None, children=[
-        ConditionAtom(atom_type=AtomType.ITEM, ref_node=maul, qty=1),
+        ConditionAtom(atom_type=AtomType.ITEM, ref_node=maul_item, qty=1),
         ConditionAtom(atom_type=AtomType.SKILL_LEVEL, ref_node=skill_id("Strength"),
                       threshold=60, data={"boostable": True}),
     ])
