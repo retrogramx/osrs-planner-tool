@@ -1,7 +1,7 @@
 """Builder for the v1 goal set (spec §3, decision K8).
 
 build_goals() emits goal NODES + their requires EDGES + AND condition GROUPS for
-the wiki-verified v1 goals. Part 1 (this task) = the first three; Task 6 appends
+the wiki-verified v1 goals. Part 1 (Task 5) = the first three; Task 6 appends
 Barrows gloves, full Infinity, Voidwaker to the SAME function.
 
 Each goal = one Node + one REQUIRES edge (dst=None: "the constraint IS the tree",
@@ -18,41 +18,35 @@ as UNSATISFIABLE_CYCLE — and that Task 8's acyclicity check is meant to CATCH.
 Mirrors gear_loadout:void referencing its piece items in the engine fixture.
 
 IDs (K9): item:<item_id>, access:<slug>, gear_loadout:<slug>. Group/edge ints are
-builder-local DETERMINISTIC via _group_id/_edge_id(owner_id, slot); assemble.py
-re-keys to global ids. Atoms reference quest/skill nodes by quest:<slug> /
-skill:<slug> (slug = lowercased name, spaces and '/' collapsed to single hyphens,
+builder-local DETERMINISTIC via _group_id/_edge_id(owner_id, slot) — implemented
+using _stable_hash from kg_ingest/ids.py (single source of truth; no duplication);
+assemble.py re-keys to global ids. Atoms reference quest/skill nodes by quest:<slug>
+/ skill:<slug> (slug = lowercased name, spaces and '/' collapsed to single hyphens,
 other punctuation removed; e.g. Monkey Madness I -> quest:monkey-madness-i).
 """
 from __future__ import annotations
-
-import hashlib
 
 from osrs_planner.engine.kg.model import (
     AtomType, ConditionAtom, ConditionGroup, Edge, EdgeType, Node, NodeKind, Op,
 )
 from kg_ingest.ids import (
-    access_id, gear_loadout_id, item_id, quest_id, skill_id, slugify,
+    _stable_hash, access_id, gear_loadout_id, item_id, quest_id, skill_id, slugify,
 )
 
 # Goal-domain id bands, disjoint from the quest bands in kg_ingest/ids.py
 # (0x10000000 group / 0x20000000 edge). assemble.py re-keys to global ids anyway.
 _GROUP_BAND = 0x30000000
 _EDGE_BAND = 0x40000000
-_MASK = 0x0FFFFFFF
-
-
-def _stable(text: str) -> int:
-    return int(hashlib.md5(text.encode("utf-8")).hexdigest(), 16) & _MASK
 
 
 def _group_id(owner_id: str, slot: int) -> int:
     """Deterministic builder-local condition_group id for owner_id's slot-th group."""
-    return _GROUP_BAND | _stable(f"{owner_id}#group#{slot}")
+    return _GROUP_BAND | _stable_hash(f"{owner_id}#group#{slot}")
 
 
 def _edge_id(owner_id: str, slot: int) -> int:
     """Deterministic builder-local requires-edge id for owner_id's slot-th edge."""
-    return _EDGE_BAND | _stable(f"{owner_id}#edge#{slot}")
+    return _EDGE_BAND | _stable_hash(f"{owner_id}#edge#{slot}")
 
 
 def build_goals() -> tuple[list[Node], list[Edge], dict[int, ConditionGroup]]:
@@ -114,5 +108,21 @@ def build_goals() -> tuple[list[Node], list[Edge], dict[int, ConditionGroup]]:
     ])
     edges.append(Edge(id=_edge_id(maul, 0), type=EdgeType.REQUIRES,
                       src=maul, dst=None, cond_group=g_maul))
+
+    # ---- Barrows gloves (item:7462) — untradeable RFD reward (K8). ----
+    # Convergence: requires RFD *completed*; the quest:recipe-for-disaster node is
+    # created by build_quests (K2), NOT here — we only reference it (via quest_id, M2).
+    barrows = item_id(7462)
+    nodes.append(Node(id=barrows, kind=NodeKind.ITEM, name="Barrows gloves",
+                      slug="barrows-gloves", data={"tradeable": False}))
+    barrows_group_id = _group_id(barrows, 0)
+    groups[barrows_group_id] = ConditionGroup(id=barrows_group_id, op=Op.AND, parent=None,
+        children=[
+            ConditionAtom(atom_type=AtomType.ITEM, ref_node=barrows, qty=1),
+            ConditionAtom(atom_type=AtomType.QUEST, ref_node=quest_id("Recipe for Disaster"),
+                          data={"state": "completed"}),
+        ])
+    edges.append(Edge(id=_edge_id(barrows, 0), type=EdgeType.REQUIRES,
+                      src=barrows, dst=None, cond_group=barrows_group_id))
 
     return nodes, edges, groups
