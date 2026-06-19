@@ -168,3 +168,59 @@ def test_infinity_composition_evaluates_against_live_counts(built):
                                  counts={p: 1 for p in INFINITY_PIECES if p != "item:6920"},
                                  observable_families={"item"})
     assert evaluate(comp_id, missing_boots, store) is Tri.FALSE
+
+
+# ---------------------------------------------------------------------------
+# Voidwaker — multi-component assembly (K8/§6.2; B1)
+# ---------------------------------------------------------------------------
+# (item_id, name) pairs — wiki-verified at build time. The 3 COMPONENT items are
+# NOT in data/items_equipment.json (only assembled 27690 is), so build_goals emits
+# their NODES directly (goal-supplied) and build_supporting never resolves them (B1).
+VOIDWAKER_COMPONENTS = [
+    (27681, "Voidwaker hilt"),
+    (27684, "Voidwaker blade"),
+    (27687, "Voidwaker gem"),
+]
+VOIDWAKER_PARTS = ["item:27681", "item:27684", "item:27687"]  # hilt, blade, gem
+
+
+def test_voidwaker_node_exists(built):
+    nodes, _, _ = built
+    n = _node(nodes, "item:27690")
+    assert n.kind is NodeKind.ITEM
+    assert n.name == "Voidwaker"
+    assert n.slug == "voidwaker"
+
+
+def test_voidwaker_component_nodes_are_goal_supplied(built):
+    # B1: the 3 component item nodes must be EMITTED by build_goals (they are absent
+    # from data/items_equipment.json, so build_supporting cannot resolve them).
+    nodes, _, _ = built
+    for (iid, name) in VOIDWAKER_COMPONENTS:
+        n = _node(nodes, f"item:{iid}")
+        assert n.kind is NodeKind.ITEM
+        assert n.name == name
+        assert n.slug == str(iid)
+
+
+def test_voidwaker_requires_and_of_three_component_items(built):
+    nodes, edges, groups = built
+    root = groups[_requires_edge(edges, "item:27690").cond_group]
+    assert root.op is Op.AND
+    item_atoms = _atoms(root)
+    assert all(a.atom_type is AtomType.ITEM for a in item_atoms)
+    assert sorted(a.ref_node for a in item_atoms) == sorted(VOIDWAKER_PARTS)
+    assert all((a.qty or 1) == 1 for a in item_atoms)
+
+
+def test_voidwaker_assembly_evaluates_against_live_counts(built):
+    nodes, edges, groups = built
+    store = InMemoryKGStore(nodes, edges, groups)
+    gid = _requires_edge(edges, "item:27690").cond_group
+    has_all = AccountState(mode="main", counts={p: 1 for p in VOIDWAKER_PARTS},
+                           observable_families={"item"})
+    assert evaluate(gid, has_all, store) is Tri.TRUE
+    missing_gem = AccountState(mode="main",
+                               counts={p: 1 for p in VOIDWAKER_PARTS if p != "item:27687"},
+                               observable_families={"item"})
+    assert evaluate(gid, missing_gem, store) is Tri.FALSE

@@ -159,3 +159,18 @@ def test_build_goals_emits_three_goal_nodes_and_edges():
         if e.type is EdgeType.REQUIRES and e.src in goal_ids:
             assert e.dst is None
             assert e.cond_group in groups
+
+
+def test_skill_atoms_carry_boostable_field():
+    """K6 field-guard: every SKILL_LEVEL atom in build_goals must carry data['boostable'].
+    This field is the 'boostable carried' invariant (K6/§6.1); the engine verdict stays
+    strict — boostable is a flag for the suggestion layer, not the evaluator."""
+    from osrs_planner.engine.kg.model import AtomType, ConditionAtom
+    nodes, edges, groups = build_goals()
+    for group in groups.values():
+        for child in group.children:
+            if isinstance(child, ConditionAtom) and child.atom_type is AtomType.SKILL_LEVEL:
+                assert "boostable" in (child.data or {}), (
+                    f"SKILL_LEVEL atom ref_node={child.atom_type!r} "
+                    f"ref={child.ref_node!r} is missing data['boostable'] (K6)"
+                )

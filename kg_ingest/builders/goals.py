@@ -49,6 +49,36 @@ def _edge_id(owner_id: str, slot: int) -> int:
     return _EDGE_BAND | _stable_hash(f"{owner_id}#edge#{slot}")
 
 
+def _add_goal(
+    node_id: str,
+    kind: NodeKind,
+    name: str,
+    slug: str,
+    atoms: list[ConditionAtom],
+    nodes: list[Node],
+    edges: list[Edge],
+    groups: dict[int, ConditionGroup],
+    node_data: dict | None = None,
+) -> None:
+    """Append one goal node + its AND requires edge + cond_group (the common shape).
+
+    Covers every goal that maps cleanly to: ONE node + ONE dst=None REQUIRES edge
+    whose cond_group is an AND of the given atoms (K3/§6.2).  Infinity's two-node
+    pattern (B2/B3) wires two calls to this helper — one for the loadout, one for
+    the wield-gate goal — with the loadout call passing ITEM atoms and the goal call
+    passing a GEAR_LOADOUT atom referencing the loadout node.
+
+    Group/edge ids use slot 0 (each node has exactly one requires edge here; B3).
+    """
+    gid = _group_id(node_id, 0)
+    eid = _edge_id(node_id, 0)
+    nodes.append(Node(id=node_id, kind=kind, name=name, slug=slug,
+                      data=node_data or {}))
+    groups[gid] = ConditionGroup(id=gid, op=Op.AND, parent=None, children=list(atoms))
+    edges.append(Edge(id=eid, type=EdgeType.REQUIRES,
+                      src=node_id, dst=None, cond_group=gid))
+
+
 def build_goals() -> tuple[list[Node], list[Edge], dict[int, ConditionGroup]]:
     nodes: list[Node] = []
     edges: list[Edge] = []
@@ -61,53 +91,53 @@ def build_goals() -> tuple[list[Node], list[Edge], dict[int, ConditionGroup]]:
     # goal never references itself: no self-loop in requires_dag(), no spurious cycle.
     # M2: ids minted via the locked helpers (gear_loadout_id/item_id/skill_id/quest_id)
     # so slugs are never hand-duplicated; the helper output IS the ref_node string.
-    scim = gear_loadout_id("Dragon scimitar")
-    scim_item = item_id(4587)
-    g_scim = _group_id(scim, 0)
-    nodes.append(Node(id=scim, kind=NodeKind.GEAR_LOADOUT,
-                      name="Wielding a Dragon scimitar", slug="dragon-scimitar",
-                      data={}))
-    groups[g_scim] = ConditionGroup(id=g_scim, op=Op.AND, parent=None, children=[
-        ConditionAtom(atom_type=AtomType.ITEM, ref_node=scim_item, qty=1),
-        ConditionAtom(atom_type=AtomType.SKILL_LEVEL, ref_node=skill_id("Attack"),
-                      threshold=60, data={"boostable": True}),
-        ConditionAtom(atom_type=AtomType.QUEST, ref_node=quest_id("Monkey Madness I"),
-                      data={"state": "completed"}),
-    ])
-    edges.append(Edge(id=_edge_id(scim, 0), type=EdgeType.REQUIRES,
-                      src=scim, dst=None, cond_group=g_scim))
+    _add_goal(
+        node_id=gear_loadout_id("Dragon scimitar"),
+        kind=NodeKind.GEAR_LOADOUT,
+        name="Wielding a Dragon scimitar",
+        slug="dragon-scimitar",
+        atoms=[
+            ConditionAtom(atom_type=AtomType.ITEM, ref_node=item_id(4587), qty=1),
+            ConditionAtom(atom_type=AtomType.SKILL_LEVEL, ref_node=skill_id("Attack"),
+                          threshold=60, data={"boostable": True}),
+            ConditionAtom(atom_type=AtomType.QUEST, ref_node=quest_id("Monkey Madness I"),
+                          data={"state": "completed"}),
+        ],
+        nodes=nodes, edges=edges, groups=groups,
+    )
 
     # --- Goal 2: Fairy rings (access:fairy-rings) ---
     # The in-progress quest-gate pattern (§3): fairy-ring travel unlocks during
     # Fairytale II - Cure a Queen, so the gate is that quest IN_PROGRESS (>=).
-    fairy = access_id("Fairy rings")
-    g_fairy = _group_id(fairy, 0)
-    nodes.append(Node(id=fairy, kind=NodeKind.ACCESS, name="Fairy rings",
-                      slug="fairy-rings",
-                      data={"note": "fairy-ring travel network; unlocks during Fairytale II"}))
-    groups[g_fairy] = ConditionGroup(id=g_fairy, op=Op.AND, parent=None, children=[
-        ConditionAtom(atom_type=AtomType.QUEST,
-                      ref_node=quest_id("Fairytale II - Cure a Queen"),
-                      data={"state": "in_progress"}),
-    ])
-    edges.append(Edge(id=_edge_id(fairy, 0), type=EdgeType.REQUIRES,
-                      src=fairy, dst=None, cond_group=g_fairy))
+    _add_goal(
+        node_id=access_id("Fairy rings"),
+        kind=NodeKind.ACCESS,
+        name="Fairy rings",
+        slug="fairy-rings",
+        atoms=[
+            ConditionAtom(atom_type=AtomType.QUEST,
+                          ref_node=quest_id("Fairytale II - Cure a Queen"),
+                          data={"state": "in_progress"}),
+        ],
+        nodes=nodes, edges=edges, groups=groups,
+        node_data={"note": "fairy-ring travel network; unlocks during Fairytale II"},
+    )
 
     # --- Goal 3: Tzhaar-ket-om / obby maul (gear_loadout:obby-maul) ---
     # B2 two-node pattern again: the goal node is distinct from item:6528, which the
     # ITEM atom references as a LEAF (built by build_supporting) — no self-loop.
-    maul = gear_loadout_id("Obby maul")
-    maul_item = item_id(6528)
-    g_maul = _group_id(maul, 0)
-    nodes.append(Node(id=maul, kind=NodeKind.GEAR_LOADOUT,
-                      name="Wielding a Tzhaar-ket-om", slug="obby-maul", data={}))
-    groups[g_maul] = ConditionGroup(id=g_maul, op=Op.AND, parent=None, children=[
-        ConditionAtom(atom_type=AtomType.ITEM, ref_node=maul_item, qty=1),
-        ConditionAtom(atom_type=AtomType.SKILL_LEVEL, ref_node=skill_id("Strength"),
-                      threshold=60, data={"boostable": True}),
-    ])
-    edges.append(Edge(id=_edge_id(maul, 0), type=EdgeType.REQUIRES,
-                      src=maul, dst=None, cond_group=g_maul))
+    _add_goal(
+        node_id=gear_loadout_id("Obby maul"),
+        kind=NodeKind.GEAR_LOADOUT,
+        name="Wielding a Tzhaar-ket-om",
+        slug="obby-maul",
+        atoms=[
+            ConditionAtom(atom_type=AtomType.ITEM, ref_node=item_id(6528), qty=1),
+            ConditionAtom(atom_type=AtomType.SKILL_LEVEL, ref_node=skill_id("Strength"),
+                          threshold=60, data={"boostable": True}),
+        ],
+        nodes=nodes, edges=edges, groups=groups,
+    )
 
     # ---- Barrows gloves (item:7462) — untradeable RFD reward (K8). ----
     # Convergence: requires RFD *completed*; the quest:recipe-for-disaster node is
@@ -119,17 +149,18 @@ def build_goals() -> tuple[list[Node], list[Edge], dict[int, ConditionGroup]]:
     # requires_dag (owner == ref_node), flagged as UNSATISFIABLE_CYCLE by find_cycles.
     # Ownership is expressed by the item leaf existing as a node; the engine's is_unlocked
     # logic drives from the player's bank state, not from a self-atom.
-    barrows = item_id(7462)
-    nodes.append(Node(id=barrows, kind=NodeKind.ITEM, name="Barrows gloves",
-                      slug="barrows-gloves", data={"tradeable": False}))
-    barrows_group_id = _group_id(barrows, 0)
-    groups[barrows_group_id] = ConditionGroup(id=barrows_group_id, op=Op.AND, parent=None,
-        children=[
+    _add_goal(
+        node_id=item_id(7462),
+        kind=NodeKind.ITEM,
+        name="Barrows gloves",
+        slug="barrows-gloves",
+        atoms=[
             ConditionAtom(atom_type=AtomType.QUEST, ref_node=quest_id("Recipe for Disaster"),
                           data={"state": "completed"}),
-        ])
-    edges.append(Edge(id=_edge_id(barrows, 0), type=EdgeType.REQUIRES,
-                      src=barrows, dst=None, cond_group=barrows_group_id))
+        ],
+        nodes=nodes, edges=edges, groups=groups,
+        node_data={"tradeable": False},
+    )
 
     # ---- Full Infinity — canonical two-node Void pattern (K8; B2/B3). ----
     # Mirrors tests/engine/fixtures/kg_fixture.py (gear_loadout:void + npc:7221):
@@ -144,28 +175,58 @@ def build_goals() -> tuple[list[Node], list[Edge], dict[int, ConditionGroup]]:
     infinity_loadout = gear_loadout_id("Infinity")          # gear_loadout:infinity
     infinity_goal = f"gear_loadout_goal:{slugify('Infinity')}"  # gear_loadout_goal:infinity
     # (a) loadout node + its single composition edge.
-    nodes.append(Node(id=infinity_loadout, kind=NodeKind.GEAR_LOADOUT,
-                      name="Full Infinity", slug="infinity", data={}))
-    infinity_comp_id = _group_id(infinity_loadout, 0)
-    groups[infinity_comp_id] = ConditionGroup(id=infinity_comp_id, op=Op.AND, parent=None,
-        children=[ConditionAtom(atom_type=AtomType.ITEM, ref_node=item_id(p), qty=1)
-                  for p in _INFINITY_PIECES])
-    edges.append(Edge(id=_edge_id(infinity_loadout, 0), type=EdgeType.REQUIRES,
-                      src=infinity_loadout, dst=None, cond_group=infinity_comp_id))
+    _add_goal(
+        node_id=infinity_loadout,
+        kind=NodeKind.GEAR_LOADOUT,
+        name="Full Infinity",
+        slug="infinity",
+        atoms=[ConditionAtom(atom_type=AtomType.ITEM, ref_node=item_id(p), qty=1)
+               for p in _INFINITY_PIECES],
+        nodes=nodes, edges=edges, groups=groups,
+    )
     # (b) separate goal node "wielding full Infinity" + its single wield-gate edge.
-    nodes.append(Node(id=infinity_goal, kind=NodeKind.GEAR_LOADOUT,
-                      name="Wielding full Infinity", slug="infinity-wield",
-                      data={"loadout": infinity_loadout}))
-    infinity_wield_id = _group_id(infinity_goal, 0)
-    groups[infinity_wield_id] = ConditionGroup(id=infinity_wield_id, op=Op.AND, parent=None,
-        children=[
+    _add_goal(
+        node_id=infinity_goal,
+        kind=NodeKind.GEAR_LOADOUT,
+        name="Wielding full Infinity",
+        slug="infinity-wield",
+        atoms=[
             ConditionAtom(atom_type=AtomType.GEAR_LOADOUT, ref_node=infinity_loadout),
             ConditionAtom(atom_type=AtomType.SKILL_LEVEL, ref_node=skill_id("Magic"),
                           threshold=50, data={"boostable": False}),
             ConditionAtom(atom_type=AtomType.SKILL_LEVEL, ref_node=skill_id("Defence"),
                           threshold=25, data={"boostable": False}),
-        ])
-    edges.append(Edge(id=_edge_id(infinity_goal, 0), type=EdgeType.REQUIRES,
-                      src=infinity_goal, dst=None, cond_group=infinity_wield_id))
+        ],
+        nodes=nodes, edges=edges, groups=groups,
+        node_data={"loadout": infinity_loadout},
+    )
+
+    # ---- Voidwaker (item:27690) — multi-component assembly (K8/§6.2; B1). ----
+    # Own the 3 components; acquiring each (drop vs GE) is the deferred cost layer.
+    # The 3 COMPONENT items are NOT in data/items_equipment.json (only the assembled
+    # 27690 is), so build_goals emits the component item NODES DIRECTLY here
+    # (goal-supplied; ids + names wiki-verified at build). assemble.py subtracts these
+    # owner ids before calling build_supporting, so the components are never looked up
+    # there (which would KeyError). The assembled node requires an AND of the 3
+    # component item-possession atoms.
+    _VOIDWAKER_COMPONENTS = [
+        (27681, "Voidwaker hilt"),
+        (27684, "Voidwaker blade"),
+        (27687, "Voidwaker gem"),
+    ]
+    # emit the 3 component item nodes directly (goal-supplied, bypass build_supporting).
+    for (cid, cname) in _VOIDWAKER_COMPONENTS:
+        nodes.append(Node(id=item_id(cid), kind=NodeKind.ITEM, name=cname,
+                          slug=str(cid), data={}))
+    _add_goal(
+        node_id=item_id(27690),
+        kind=NodeKind.ITEM,
+        name="Voidwaker",
+        slug="voidwaker",
+        atoms=[ConditionAtom(atom_type=AtomType.ITEM, ref_node=item_id(cid), qty=1)
+               for (cid, _name) in _VOIDWAKER_COMPONENTS],
+        nodes=nodes, edges=edges, groups=groups,
+        node_data={"tradeable": True},
+    )
 
     return nodes, edges, groups
