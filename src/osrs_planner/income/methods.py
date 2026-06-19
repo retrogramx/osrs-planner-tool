@@ -419,6 +419,18 @@ def load_methods(data_dir: str) -> list[MethodRecord]:
     Deterministic. On the committed data this yields 377 main + 36 iron-only = 413
     (13 iron records merge onto a canonical main); ``test_counts_are_sane``
     asserts that exact total.
+
+    Disclosed residual (last-write-wins on stage/tags): when MULTIPLE distinct
+    iron records share one lossy ``_activity_key`` and fold onto the SAME canonical
+    main (real cases: Hallowed Sepulchre floors 3/4/5; zombie pirates; Vorkath;
+    adamantite/runite ore), the LAST iron record processed wins on ``stage`` and
+    ``tags`` -- the earlier iron variants' stage/tags are silently dropped.
+    Requirements are UNION-merged across every folded iron record (DR-1), so the
+    requirement gates remain correct and unaffected (mains also carry their own
+    per-variant HTML reqs, and main-skills-are-authoritative-on-collision preserves
+    them) -- this is NOT a wrong gate. Fully accumulating per-variant iron
+    ``stage``/``tags`` (e.g. a list keyed by iron variant) is a deferred
+    enhancement; Tasks 4/7 will read ``stage``.
     """
     name_idx = _name_index(data_dir)
     main = [_from_main(r, name_idx) for r in _load_envelope(os.path.join(data_dir, "money_making.json"))]
@@ -446,6 +458,12 @@ def load_methods(data_dir: str) -> list[MethodRecord]:
                 candidates[0],
             )
             base = by_id[canon.id]  # MERGE: keep main outputs/inputs; UNION reqs
+            # LAST-WRITE-WINS on stage/tags: if N distinct iron records share this
+            # one lossy activity key and fold onto the same canonical main (e.g.
+            # Hallowed Sepulchre floors 3/4/5, vorkath, adam/rune ore), the last
+            # iron processed overwrites stage/tags from earlier ones. Requirements
+            # are union-merged below so gates stay correct; per-variant stage/tags
+            # accumulation is a deferred enhancement (see docstring residual).
             by_id[canon.id] = base.model_copy(update={
                 "requirements": _merge_requirements(base.requirements, im.requirements),
                 "stage": im.stage or base.stage,

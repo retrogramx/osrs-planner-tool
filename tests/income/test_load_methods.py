@@ -98,9 +98,8 @@ def test_iron_green_dragons_quest_gate_resolves_with_paren_stripped():
 def test_dedupe_merges_rune_dragons_with_structured_reqs():
     methods = load_methods(DATA_DIR)
     rd = [m for m in methods if "rune dragons" in m.name.lower()]
-    assert len(rd) >= 1
     # exactly one merged record for the rune-dragons activity key
-    keys = {m.id for m in rd}
+    assert len(rd) == 1
     merged = rd[0]
     # the merged record carries structured (iron) requirements
     assert merged.requirements.quests == ["quest:dragon-slayer-ii"]
