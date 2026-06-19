@@ -63,6 +63,30 @@ def test_rekey_remaps_groups_and_edges_to_stable_ids():
     assert sub.id == new_sub_id and sub.parent == new_root_id
 
 
+def test_rekey_raises_on_group_id_collision(monkeypatch):
+    """A hash collision mapping two distinct local groups to the same global id must
+    fail fast (not silently overwrite/drop a group). Force it by making
+    stable_group_id return a CONSTANT for every input — the toy builder's root +
+    sub groups then collide."""
+    import kg_ingest.assemble as A
+    monkeypatch.setattr(A, "stable_group_id", lambda owner, idx: 4_000_000)
+    nodes, edges, groups = _toy_builder_output()
+    with pytest.raises(ValueError, match="group id collision at 4000000"):
+        A.rekey(nodes, edges, groups)
+
+
+def test_rekey_raises_on_edge_id_collision(monkeypatch):
+    """Two distinct edges re-keyed to the same global id must fail fast rather than
+    silently overwrite. Force it by pinning stable_edge_id to a CONSTANT."""
+    import kg_ingest.assemble as A
+    node = Node(id="quest:toy", kind=NodeKind.QUEST, name="Toy", slug="toy", data={})
+    e1 = Edge(id=10, type=EdgeType.REQUIRES, src="quest:toy", dst="skill:attack", cond_group=None)
+    e2 = Edge(id=11, type=EdgeType.REQUIRES, src="quest:toy", dst="skill:strength", cond_group=None)
+    monkeypatch.setattr(A, "stable_edge_id", lambda owner, idx: 6_000_000)
+    with pytest.raises(ValueError, match="edge id collision at 6000000"):
+        A.rekey([node], [e1, e2], {})
+
+
 def test_rekey_is_deterministic_across_calls():
     from kg_ingest.assemble import rekey
     n1, e1, g1 = rekey(*_toy_builder_output())

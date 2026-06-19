@@ -69,11 +69,20 @@ def _walk_group_ids(root_local_id: int, groups: dict[int, ConditionGroup]) -> li
 def rekey(nodes: list[Node], edges: list[Edge],
           groups: dict[int, ConditionGroup]) -> tuple[list[Node], list[Edge], dict[int, ConditionGroup]]:
     """Re-key every edge and group to a GLOBAL deterministic id derived from the
-    owning node id (the edge's src). Nodes pass through unchanged."""
+    owning node id (the edge's src). Nodes pass through unchanged.
+
+    TWO-TIER ID SCHEME: builders mint builder-LOCAL band ids via ids.py (so each
+    builder is independently testable with stable ids); rekey re-keys all of them
+    into the committed offset scheme (stable_group_id / stable_edge_id). Builder-
+    local ids never reach the committed kg/*.json. Re-keyed ids are hash-derived,
+    so a collision is theoretically possible — we fail fast on it (a dropped
+    group/edge is unrecoverable), mirroring dedup_nodes' raise-on-conflict.
+    """
     edge_local_index: dict[str, int] = {}
     local_to_new_group: dict[int, int] = {}
 
     new_edges: list[Edge] = []
+    seen_edge_ids: dict[int, Edge] = {}
     for e in edges:
         owner = e.src
         e_idx = edge_local_index.get(owner, 0)
@@ -84,16 +93,32 @@ def rekey(nodes: list[Node], edges: list[Edge],
                 if local_gid not in local_to_new_group:
                     local_to_new_group[local_gid] = stable_group_id(owner, local_idx)
             new_cond_group = local_to_new_group[e.cond_group]
-        new_edges.append(Edge(id=stable_edge_id(owner, e_idx), type=e.type, src=e.src,
-                              dst=e.dst, cond_group=new_cond_group))
+        new_edge_id = stable_edge_id(owner, e_idx)
+        if new_edge_id in seen_edge_ids:
+            prior = seen_edge_ids[new_edge_id]
+            raise ValueError(
+                f"edge id collision at {new_edge_id}: {prior.src}->{prior.dst} and "
+                f"{e.src}->{e.dst} hash to the same global id (unrecoverable; not "
+                f"silently droppable)")
+        new_edge = Edge(id=new_edge_id, type=e.type, src=e.src, dst=e.dst,
+                        cond_group=new_cond_group)
+        seen_edge_ids[new_edge_id] = new_edge
+        new_edges.append(new_edge)
 
     new_groups: dict[int, ConditionGroup] = {}
+    new_id_to_local: dict[int, int] = {}
     for local_gid, grp in groups.items():
         if local_gid not in local_to_new_group:
             raise ValueError(
                 f"group {local_gid} is not reachable from any requires edge (orphan); "
                 f"builders must root every group in an edge cond_group")
         new_id = local_to_new_group[local_gid]
+        if new_id in new_id_to_local and new_id_to_local[new_id] != local_gid:
+            raise ValueError(
+                f"group id collision at {new_id}: local groups {new_id_to_local[new_id]} "
+                f"and {local_gid} hash to the same global id (unrecoverable; not "
+                f"silently droppable)")
+        new_id_to_local[new_id] = local_gid
         new_parent = local_to_new_group[grp.parent] if grp.parent is not None else None
         new_children: list[int | ConditionAtom] = []
         for child in grp.children:
