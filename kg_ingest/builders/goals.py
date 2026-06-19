@@ -112,17 +112,60 @@ def build_goals() -> tuple[list[Node], list[Edge], dict[int, ConditionGroup]]:
     # ---- Barrows gloves (item:7462) — untradeable RFD reward (K8). ----
     # Convergence: requires RFD *completed*; the quest:recipe-for-disaster node is
     # created by build_quests (K2), NOT here — we only reference it (via quest_id, M2).
+    #
+    # B2 / no-self-loop: the requires group holds ONLY the quest atom (the exclusive
+    # prerequisite for obtaining the item). We do NOT add a self-referential ITEM atom
+    # referencing item:7462 here — that would create a cond_dep self-loop in the
+    # requires_dag (owner == ref_node), flagged as UNSATISFIABLE_CYCLE by find_cycles.
+    # Ownership is expressed by the item leaf existing as a node; the engine's is_unlocked
+    # logic drives from the player's bank state, not from a self-atom.
     barrows = item_id(7462)
     nodes.append(Node(id=barrows, kind=NodeKind.ITEM, name="Barrows gloves",
                       slug="barrows-gloves", data={"tradeable": False}))
     barrows_group_id = _group_id(barrows, 0)
     groups[barrows_group_id] = ConditionGroup(id=barrows_group_id, op=Op.AND, parent=None,
         children=[
-            ConditionAtom(atom_type=AtomType.ITEM, ref_node=barrows, qty=1),
             ConditionAtom(atom_type=AtomType.QUEST, ref_node=quest_id("Recipe for Disaster"),
                           data={"state": "completed"}),
         ])
     edges.append(Edge(id=_edge_id(barrows, 0), type=EdgeType.REQUIRES,
                       src=barrows, dst=None, cond_group=barrows_group_id))
+
+    # ---- Full Infinity — canonical two-node Void pattern (K8; B2/B3). ----
+    # Mirrors tests/engine/fixtures/kg_fixture.py (gear_loadout:void + npc:7221):
+    #  (a) the LOADOUT node holds ONLY its composition (one dst=None requires edge,
+    #      AND of the 5 piece item atoms) — no gear_loadout atom, no skill atoms.
+    #      composition_of returns this group; one such edge => unambiguous (B3).
+    #  (b) a SEPARATE goal node holds the wield gate, AND(gear_loadout atom -> the
+    #      loadout node, 50 Magic, 25 Def). It references a DIFFERENT node, so there
+    #      is no self-loop (B2); the gear_loadout atom re-evaluates the loadout's
+    #      composition against live counts (engine D3).
+    _INFINITY_PIECES = [6918, 6916, 6924, 6922, 6920]  # hat, top, bottoms, gloves, boots
+    infinity_loadout = gear_loadout_id("Infinity")          # gear_loadout:infinity
+    infinity_goal = f"gear_loadout_goal:{slugify('Infinity')}"  # gear_loadout_goal:infinity
+    # (a) loadout node + its single composition edge.
+    nodes.append(Node(id=infinity_loadout, kind=NodeKind.GEAR_LOADOUT,
+                      name="Full Infinity", slug="infinity", data={}))
+    infinity_comp_id = _group_id(infinity_loadout, 0)
+    groups[infinity_comp_id] = ConditionGroup(id=infinity_comp_id, op=Op.AND, parent=None,
+        children=[ConditionAtom(atom_type=AtomType.ITEM, ref_node=item_id(p), qty=1)
+                  for p in _INFINITY_PIECES])
+    edges.append(Edge(id=_edge_id(infinity_loadout, 0), type=EdgeType.REQUIRES,
+                      src=infinity_loadout, dst=None, cond_group=infinity_comp_id))
+    # (b) separate goal node "wielding full Infinity" + its single wield-gate edge.
+    nodes.append(Node(id=infinity_goal, kind=NodeKind.GEAR_LOADOUT,
+                      name="Wielding full Infinity", slug="infinity-wield",
+                      data={"loadout": infinity_loadout}))
+    infinity_wield_id = _group_id(infinity_goal, 0)
+    groups[infinity_wield_id] = ConditionGroup(id=infinity_wield_id, op=Op.AND, parent=None,
+        children=[
+            ConditionAtom(atom_type=AtomType.GEAR_LOADOUT, ref_node=infinity_loadout),
+            ConditionAtom(atom_type=AtomType.SKILL_LEVEL, ref_node=skill_id("Magic"),
+                          threshold=50, data={"boostable": False}),
+            ConditionAtom(atom_type=AtomType.SKILL_LEVEL, ref_node=skill_id("Defence"),
+                          threshold=25, data={"boostable": False}),
+        ])
+    edges.append(Edge(id=_edge_id(infinity_goal, 0), type=EdgeType.REQUIRES,
+                      src=infinity_goal, dst=None, cond_group=infinity_wield_id))
 
     return nodes, edges, groups
