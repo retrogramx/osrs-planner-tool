@@ -6,16 +6,19 @@ Barrows gloves, full Infinity, Voidwaker to the SAME function.
 
 Each goal = one Node + one REQUIRES edge (dst=None: "the constraint IS the tree",
 §6.2) whose cond_group is an AND of the locked atoms (K3/§6.1):
-  item possession  -> AtomType.ITEM (qty>=1),
   wield skill gate -> AtomType.SKILL_LEVEL (threshold, data.boostable),
   quest gate       -> AtomType.QUEST (data.state from the chain stage).
 
-B2 two-node pattern: a "wield item X" goal is modelled as a SEPARATE
-gear_loadout:<slug> node whose ITEM atom references the item:<id> LEAF (created by
-build_supporting), NOT as the item node owning an atom about itself. That avoids a
-self-loop in store.requires_dag() (owner == ref_node) that find_cycles() would flag
-as UNSATISFIABLE_CYCLE — and that Task 8's acyclicity check is meant to CATCH.
-Mirrors gear_loadout:void referencing its piece items in the engine fixture.
+K8/K1 gates-only stance (single bought items): single tradeable items are gated by
+prerequisites only (skills/quests); owning the final item is the deferred
+acquisition/cost layer. The goal node IS the item node (item:<id>), requiring only
+its prerequisite gates — no self-loop since the requires group references skill/quest
+nodes, NOT the item node itself. Multi-piece sets (Infinity) and assemblies
+(Voidwaker) still require owning their component items (the components are the gate).
+
+Barrows gloves already follows this shape (item:7462 requires only quest:rfd).
+Dragon scimitar (item:4587) and Tzhaar-ket-om (item:6528) now follow the same
+shape: the goal node IS the item node, requiring only skill/quest gates.
 
 IDs (K9): item:<item_id>, access:<slug>, gear_loadout:<slug>. Group/edge ints are
 builder-local DETERMINISTIC via _group_id/_edge_id(owner_id, slot) — implemented
@@ -84,20 +87,19 @@ def build_goals() -> tuple[list[Node], list[Edge], dict[int, ConditionGroup]]:
     edges: list[Edge] = []
     groups: dict[int, ConditionGroup] = {}
 
-    # --- Goal 1: Dragon scimitar (gear_loadout:dragon-scimitar) ---
-    # B2 two-node pattern: the GOAL node is distinct from the ITEM node it gates on.
-    # The ITEM atom references item:4587 — a LEAF created by build_supporting in the
-    # full pipeline (mirrors gear_loadout:void referencing its piece items) — so the
-    # goal never references itself: no self-loop in requires_dag(), no spurious cycle.
-    # M2: ids minted via the locked helpers (gear_loadout_id/item_id/skill_id/quest_id)
-    # so slugs are never hand-duplicated; the helper output IS the ref_node string.
+    # --- Goal 1: Dragon scimitar (item:4587) ---
+    # K8/K1 gates-only: the goal node IS the item node. Requires only the prerequisite
+    # gates (60 Attack + Monkey Madness I completed). Owning the item is the deferred
+    # acquisition/cost layer — no ITEM atom, no separate gear_loadout node.
+    # No self-loop: the requires group references skill:attack and quest:monkey-madness-i,
+    # NOT item:4587 itself, so store.requires_dag() has no owner==ref_node cycle.
+    # M2: ids minted via the locked helpers (item_id/skill_id/quest_id).
     _add_goal(
-        node_id=gear_loadout_id("Dragon scimitar"),
-        kind=NodeKind.GEAR_LOADOUT,
-        name="Wielding a Dragon scimitar",
+        node_id=item_id(4587),
+        kind=NodeKind.ITEM,
+        name="Dragon scimitar",
         slug="dragon-scimitar",
         atoms=[
-            ConditionAtom(atom_type=AtomType.ITEM, ref_node=item_id(4587), qty=1),
             ConditionAtom(atom_type=AtomType.SKILL_LEVEL, ref_node=skill_id("Attack"),
                           threshold=60, data={"boostable": True}),
             ConditionAtom(atom_type=AtomType.QUEST, ref_node=quest_id("Monkey Madness I"),
@@ -123,16 +125,16 @@ def build_goals() -> tuple[list[Node], list[Edge], dict[int, ConditionGroup]]:
         node_data={"note": "fairy-ring travel network; unlocks during Fairytale II"},
     )
 
-    # --- Goal 3: Tzhaar-ket-om / obby maul (gear_loadout:obby-maul) ---
-    # B2 two-node pattern again: the goal node is distinct from item:6528, which the
-    # ITEM atom references as a LEAF (built by build_supporting) — no self-loop.
+    # --- Goal 3: Tzhaar-ket-om / obby maul (item:6528) ---
+    # K8/K1 gates-only: the goal node IS the item node. Requires only the prerequisite
+    # gate (60 Strength). No ITEM atom, no separate gear_loadout node.
+    # No self-loop: the requires group references skill:strength, NOT item:6528.
     _add_goal(
-        node_id=gear_loadout_id("Obby maul"),
-        kind=NodeKind.GEAR_LOADOUT,
-        name="Wielding a Tzhaar-ket-om",
-        slug="obby-maul",
+        node_id=item_id(6528),
+        kind=NodeKind.ITEM,
+        name="Tzhaar-ket-om",
+        slug="tzhaar-ket-om",
         atoms=[
-            ConditionAtom(atom_type=AtomType.ITEM, ref_node=item_id(6528), qty=1),
             ConditionAtom(atom_type=AtomType.SKILL_LEVEL, ref_node=skill_id("Strength"),
                           threshold=60, data={"boostable": True}),
         ],
@@ -143,12 +145,11 @@ def build_goals() -> tuple[list[Node], list[Edge], dict[int, ConditionGroup]]:
     # Convergence: requires RFD *completed*; the quest:recipe-for-disaster node is
     # created by build_quests (K2), NOT here — we only reference it (via quest_id, M2).
     #
-    # B2 / no-self-loop: the requires group holds ONLY the quest atom (the exclusive
-    # prerequisite for obtaining the item). We do NOT add a self-referential ITEM atom
-    # referencing item:7462 here — that would create a cond_dep self-loop in the
-    # requires_dag (owner == ref_node), flagged as UNSATISFIABLE_CYCLE by find_cycles.
-    # Ownership is expressed by the item leaf existing as a node; the engine's is_unlocked
-    # logic drives from the player's bank state, not from a self-atom.
+    # K8/K1 gates-only: the goal node IS the item node (item:7462). Requires only the
+    # quest gate (RFD completed). No ITEM atom — no self-referential atom referencing
+    # item:7462, which would create a cond_dep self-loop in requires_dag() flagged as
+    # UNSATISFIABLE_CYCLE by find_cycles. Ownership = item leaf existing as a node;
+    # engine is_unlocked drives from player bank state, not from a self-atom.
     _add_goal(
         node_id=item_id(7462),
         kind=NodeKind.ITEM,
