@@ -23,6 +23,9 @@ class _FakeProvider(PriceProvider):
     def high_alch(self, item_id: str) -> int | None:
         return None
 
+    def priced_item_ids(self) -> frozenset[str]:
+        return frozenset(self._ge)
+
 
 SCIMITAR = "item:4587"
 

@@ -23,6 +23,9 @@ class _FakeProvider(PriceProvider):
     def high_alch(self, item_id):
         return None
 
+    def priced_item_ids(self):
+        return frozenset(self._ge)
+
 
 def _ge_rec():
     return ChannelRecord(

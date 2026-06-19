@@ -72,9 +72,14 @@ def price_routes(
                 account_allowed=True, source=rec.source,
             ))
         elif rec.channel == "spawn":
-            # Spawns are free pickups, denominated in coins (0 coins).
+            # Free pickup. Gate coins-only like the shop branch: a coin spawn is
+            # 0 coins (rec.amount is 0 today), a future non-coin spawn -> None so
+            # by_gold never face-compares currencies (spec §11). amount stays
+            # as-is (the figure in rec.currency).
+            is_coins = rec.currency == "currency:coins"
             out.append(Route(
-                channel="spawn", currency=rec.currency, gold_cost=0, amount=0,
+                channel="spawn", currency=rec.currency,
+                gold_cost=rec.amount if is_coins else None, amount=rec.amount,
                 gold_status="known", account_allowed=True, source=rec.source,
             ))
         elif rec.channel in _PRODUCE_CHANNELS:

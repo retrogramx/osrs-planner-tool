@@ -35,6 +35,15 @@ class PriceProvider(ABC):
     def high_alch(self, item_id: str) -> int | None:
         """High-alchemy value for an ``"item:<n>"`` id, or ``None``."""
 
+    @abstractmethod
+    def priced_item_ids(self) -> frozenset[str]:
+        """The set of KG-style ``"item:<n>"`` ids this provider can price.
+
+        The single public seam channels.build_index_from_repo uses to derive
+        the synthetic ge channel's item ids -- so it never reaches into a
+        provider's private store.
+        """
+
 
 class SnapshotPriceProvider(PriceProvider):
     """``PriceProvider`` backed by a committed ``data/ge_prices.json`` snapshot.
@@ -67,3 +76,7 @@ class SnapshotPriceProvider(PriceProvider):
         if rec is None:
             return None
         return rec.get("high_alch")
+
+    def priced_item_ids(self) -> frozenset[str]:
+        """KG-style ``"item:<n>"`` ids for every snapshot record."""
+        return frozenset(f"item:{iid}" for iid in self._records)

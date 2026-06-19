@@ -10,12 +10,17 @@ resolved through the KG to its item needs, priced, and rolled up.
 """
 from __future__ import annotations
 
+from typing import TYPE_CHECKING
+
 from osrs_planner.cost.cards import CostCard, Route, rank_by_gold, roll_up_gold_status
 from osrs_planner.cost.channels import ChannelRecord
 from osrs_planner.cost.prices import PriceProvider
 from osrs_planner.cost.routing import price_routes
 from osrs_planner.engine.kg.model import AtomType, EdgeType, Op
 from osrs_planner.engine.state import AccountState, account_family
+
+if TYPE_CHECKING:
+    from osrs_planner.engine.kg.json_store import JsonKGStore
 
 
 def _requires_group(kg, node_id: str) -> int | None:
@@ -79,7 +84,7 @@ def expand_for_account(
     state: AccountState,
     provider: PriceProvider,
     index: dict[str, list[ChannelRecord]],
-    kg=None,
+    kg: "JsonKGStore | None" = None,
 ) -> CostCard:
     family = account_family(state.mode)
     name = _resolve_name(goal_id, kg)

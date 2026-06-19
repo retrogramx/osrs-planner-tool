@@ -47,18 +47,29 @@ class CostCard(BaseModel):
 
 
 def rank_by_gold(routes: list[Route]) -> list[int]:
-    """Indices of routes sorted ascending by gold_cost; unavailable LAST."""
+    """Indices of routes sorted ascending by gold_cost; non-coin-rankable LAST.
+
+    `no_coin_rank` covers BOTH the genuinely unavailable routes AND the
+    known-but-non-coin routes (e.g. a Tokkul shop route: gold_status=="known"
+    but gold_cost is None). Neither has a coin figure to sort on, so both sort
+    after every coin route (spec §11 -- no face-amount comparison).
+    """
 
     def key(i: int):
         r = routes[i]
-        unavailable = r.gold_status == "unavailable" or r.gold_cost is None
-        return (1 if unavailable else 0, r.gold_cost if not unavailable else 0)
+        no_coin_rank = r.gold_status == "unavailable" or r.gold_cost is None
+        return (1 if no_coin_rank else 0, r.gold_cost if not no_coin_rank else 0)
 
     return sorted(range(len(routes)), key=key)
 
 
 def roll_up_gold_status(routes: list[Route]) -> Literal["known", "partial", "unavailable"]:
-    """known = all priced; unavailable = none priced / empty; partial = mixed."""
+    """known = all priced; unavailable = none priced / empty; partial = mixed.
+
+    NB: gold_status=="known" does NOT imply a coin-comparable price exists -- a
+    non-coin route (e.g. Tokkul) is "known" but carries gold_cost None, so a card
+    can roll up to "known" yet have no coin figure in by_gold (spec §11).
+    """
     if not routes:
         return "unavailable"
     known = sum(1 for r in routes if r.gold_status == "known")

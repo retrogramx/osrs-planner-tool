@@ -64,6 +64,20 @@ def test_high_alch_missing_item_is_none(provider: SnapshotPriceProvider) -> None
     assert provider.high_alch("item:99999999") is None
 
 
+def test_ge_price_malformed_id_raises(provider: SnapshotPriceProvider) -> None:
+    # A bare numeric id (missing the "item:" prefix) is a programming error --
+    # fail loud rather than silently mis-resolve.
+    with pytest.raises(ValueError):
+        provider.ge_price("4587")
+
+
+def test_priced_item_ids_are_kg_style(provider: SnapshotPriceProvider) -> None:
+    ids = provider.priced_item_ids()
+    assert "item:4587" in ids
+    assert all(i.startswith("item:") for i in ids)
+    assert len(ids) == len(provider._records)
+
+
 def test_abstract_base_cannot_instantiate() -> None:
     with pytest.raises(TypeError):
         PriceProvider()  # type: ignore[abstract]

@@ -38,8 +38,9 @@ ALL_ALLOW: frozenset[str] = frozenset({"main", "ironman", "uim"})
 class ChannelRecord(BaseModel):
     """One acquisition channel for one item, normalized across all 8 channels.
 
-    Frozen/immutable so records are hashable and de-dup-safe in the index.
-    amount is the direct cost in `currency` (shop) or None (ge: priced live;
+    Frozen/immutable so records can't be mutated after construction (NOT
+    hashable in general -- a record with a non-empty `inputs` list is
+    unhashable). amount is the direct cost in `currency` (shop) or None (ge: priced live;
     craft/gather: computed from inputs by routing). inputs is (item_id, qty)
     pairs for craft/gather; empty for buy/spawn. yield_/time are DEFINED-but-
     unused skeleton slots (spec §9). The four gate fields mirror the iron-gate
@@ -62,6 +63,21 @@ class ChannelRecord(BaseModel):
     pricing_basis: str
     realization_channel: str
     requires_ge: bool
+
+
+def _gate_fields(r: dict) -> dict:
+    """The four iron-gate fields, read verbatim from a dataset row.
+
+    Shared by all dataset loaders so the gate tail is written once
+    (data/validate_iron_gate.py discipline; these mirror the canonical
+    {audience, pricing_basis, realization_channel, requires_ge} set).
+    """
+    return {
+        "audience": r["audience"],
+        "pricing_basis": r["pricing_basis"],
+        "realization_channel": r["realization_channel"],
+        "requires_ge": r["requires_ge"],
+    }
 
 
 def ge_record(item_id: str) -> ChannelRecord:
@@ -104,10 +120,7 @@ def load_shop(path: str) -> list[ChannelRecord]:
                 amount=r["amount"],
                 account_allow=ALL_ALLOW,
                 source=r["shop"],
-                audience=r["audience"],
-                pricing_basis=r["pricing_basis"],
-                realization_channel=r["realization_channel"],
-                requires_ge=r["requires_ge"],
+                **_gate_fields(r),
             )
         )
     return records
@@ -131,12 +144,9 @@ def load_recipes(path: str) -> list[ChannelRecord]:
                 amount=None,
                 inputs=[(i["item_id"], i["qty"]) for i in r["inputs"]],
                 output_qty=r["output_qty"],
-                account_allow=frozenset({"main", "ironman", "uim"}),
+                account_allow=ALL_ALLOW,
                 source=r["source"],
-                audience=r["audience"],
-                pricing_basis=r["pricing_basis"],
-                realization_channel=r["realization_channel"],
-                requires_ge=r["requires_ge"],
+                **_gate_fields(r),
             )
         )
     return records
@@ -160,12 +170,9 @@ def load_gather(path: str) -> list[ChannelRecord]:
                 amount=None,
                 inputs=[(i["item_id"], i["qty"]) for i in r["inputs"]],
                 output_qty=r["output_qty"],
-                account_allow=frozenset({"main", "ironman", "uim"}),
+                account_allow=ALL_ALLOW,
                 source=r["source"],
-                audience=r["audience"],
-                pricing_basis=r["pricing_basis"],
-                realization_channel=r["realization_channel"],
-                requires_ge=r["requires_ge"],
+                **_gate_fields(r),
             )
         )
     return records
@@ -185,12 +192,9 @@ def load_spawns(path: str) -> list[ChannelRecord]:
                 amount=0,
                 inputs=[],
                 output_qty=r.get("count", 1),
-                account_allow=frozenset({"main", "ironman", "uim"}),
+                account_allow=ALL_ALLOW,
                 source=r["source"],
-                audience=r["audience"],
-                pricing_basis=r["pricing_basis"],
-                realization_channel=r["realization_channel"],
-                requires_ge=r["requires_ge"],
+                **_gate_fields(r),
             )
         )
     return records
@@ -250,7 +254,7 @@ def build_index_from_repo(repo_root: str, provider) -> dict[str, list[ChannelRec
     recipes = _maybe(load_recipes, "recipes.json")
     gather = _maybe(load_gather, "gather.json")
     spawns = _maybe(load_spawns, "spawns.json")
-    ge_item_ids = frozenset(f"item:{iid}" for iid in provider._records.keys())
+    ge_item_ids = provider.priced_item_ids()
     return build_index(
         shop_records=shop,
         recipe_records=recipes,
