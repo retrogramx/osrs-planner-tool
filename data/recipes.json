@@ -1,0 +1,51 @@
+{
+  "_provenance": {
+    "dataset": "recipes",
+    "description": "Hand-curated, wiki-verified production recipes for the cost-layer craft channel. v1 covers the golden-set potion chain (Attack potion via Guam) only; bulk recipe sourcing from the OSRS Wiki production tables is a disclosed v1 follow-up. No live wiki fetch during build.",
+    "source_urls": [
+      "https://oldschool.runescape.wiki/w/Attack_potion",
+      "https://oldschool.runescape.wiki/w/Guam_potion_(unf)"
+    ],
+    "license": "OSRS Wiki content CC BY-NC-SA 3.0",
+    "curated": true
+  },
+  "records": [
+    {
+      "output_item_id": "item:121",
+      "name": "Attack potion(3)",
+      "channel": "craft",
+      "skill": "Herblore",
+      "level": 3,
+      "inputs": [
+        { "item_id": "item:91", "qty": 1 },
+        { "item_id": "item:221", "qty": 1 }
+      ],
+      "output_qty": 1,
+      "currency": "currency:coins",
+      "source": "Herblore: mix Guam potion (unf) + Eye of newt",
+      "audience": "both",
+      "pricing_basis": "inputs",
+      "realization_channel": "craft",
+      "requires_ge": false
+    },
+    {
+      "output_item_id": "item:91",
+      "name": "Guam potion (unf)",
+      "channel": "craft",
+      "skill": "Herblore",
+      "level": 3,
+      "inputs": [
+        { "item_id": "item:249", "qty": 1 },
+        { "item_id": "item:227", "qty": 1 }
+      ],
+      "output_qty": 1,
+      "currency": "currency:coins",
+      "source": "Herblore: Guam leaf + Vial of water",
+      "audience": "both",
+      "pricing_basis": "inputs",
+      "realization_channel": "craft",
+      "requires_ge": false
+    }
+  ],
+  "_excluded": []
+}
