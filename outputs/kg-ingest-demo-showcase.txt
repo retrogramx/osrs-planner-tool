@@ -1,0 +1,90 @@
+
+======================================================================
+SCENARIO 1  -  The Dragon scimitar journey (a main account)
+======================================================================
+
+A brand-new main (level 3, no quests) asks: can I wield a Dragon scimitar?
+   is_unlocked  -> [X]    LOCKED
+                    - needs: Attack  (skill_level, satisfiable)
+                    - needs: Monkey Madness I  (quest, satisfiable)
+   prereqs_for  -> 3 steps in the plan (3 still to do)
+                    * Tree Gnome Village  (quest)
+                    * The Grand Tree  (quest)
+                    * Monkey Madness I  (quest)
+
+Same main after training Attack to 60 and finishing Monkey Madness I:
+   is_unlocked  -> [OK]   UNLOCKED
+
+======================================================================
+SCENARIO 2  -  'You can wield it, but your quest log is inconsistent'
+======================================================================
+
+A main who marked Monkey Madness I done -- but NOT its own prerequisite
+quests. The engine answers two DIFFERENT questions honestly:
+   is_unlocked  -> [OK]   UNLOCKED
+   prereqs_for  -> 3 steps in the plan (2 still to do)
+                    * Tree Gnome Village  (quest)
+                    * The Grand Tree  (quest)
+
+   -> is_unlocked checks the IMMEDIATE gate (met). prereqs_for walks the
+      WHOLE chain and surfaces the ancestor quests that were never done.
+
+======================================================================
+SCENARIO 3  -  Barrows gloves: immediate blocker vs the whole mountain
+======================================================================
+
+Fresh main. is_unlocked shows only the NEXT wall; prereqs_for shows it all:
+   is_unlocked  -> [X]    LOCKED
+                    - needs: Recipe for Disaster  (quest, satisfiable)
+   prereqs_for  -> 49 steps in the plan (49 still to do)
+                    * Plague City  (quest)
+                    * Druidic Ritual  (quest)
+                    * Biohazard  (quest)
+                    * Jungle Potion  (quest)
+                    * Shield of Arrav  (quest)
+                    * Merlin's Crystal  (quest)
+                    * Lost City  (quest)
+                    * Dragon Slayer I  (quest)
+                    * ... and 41 more
+
+======================================================================
+SCENARIO 4  -  Same quest, different account types (the divergence)
+======================================================================
+
+Doric's Quest has a Mining 15 requirement modelled as an OR:
+'be a main (just buy/trade the bar) OR have Mining 15 (self-source it)'.
+Watch the same quest answer differently by account type:
+
+   main                     (family=main   ) -> no extra requirement (a main just buys it)
+   ironman                  (family=ironman) -> must self-source: Mining 15
+   ultimate_ironman         (family=uim    ) -> must self-source: Mining 15
+   hardcore_group_ironman   (family=ironman) -> must self-source: Mining 15
+
+   -> The engine faithfully reports BOTH OR-branches; the advisor/UI layer
+      hides 'or be a main' from an ironman (it's not an action they can take).
+
+======================================================================
+SCENARIO 5  -  Voidwaker: a 3-component build (AND logic)
+======================================================================
+
+Owning only 2 of the 3 parts (hilt + blade, no gem):
+   is_unlocked  -> [X]    LOCKED
+                    - needs: Voidwaker gem  (item, satisfiable)
+
+Owning all 3 parts:
+   is_unlocked  -> [OK]   UNLOCKED
+
+======================================================================
+SCENARIO 6  -  Full Infinity: a gear set AND the stats to use it
+======================================================================
+
+Owning 4 of 5 pieces (missing the hat), Magic 50 / Defence 25:
+   is_unlocked  -> [X]    LOCKED
+                    - needs: Full Infinity  (gear_loadout, satisfiable)
+
+All 5 pieces + Magic 50 / Defence 25:
+   is_unlocked  -> [OK]   UNLOCKED
+
+======================================================================
+All verdicts above are computed live by the engine over the real KG.
+======================================================================

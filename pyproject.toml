@@ -19,3 +19,7 @@ dependencies = [
     "uvicorn",
     "networkx",
 ]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

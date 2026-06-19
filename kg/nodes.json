@@ -1,0 +1,1788 @@
+[
+  {
+    "data": {
+      "note": "fairy-ring travel network; unlocks during Fairytale II"
+    },
+    "id": "access:fairy-rings",
+    "kind": "access",
+    "name": "Fairy rings",
+    "slug": "fairy-rings"
+  },
+  {
+    "data": {},
+    "id": "gear_loadout:infinity",
+    "kind": "gear_loadout",
+    "name": "Full Infinity",
+    "slug": "infinity"
+  },
+  {
+    "data": {
+      "loadout": "gear_loadout:infinity"
+    },
+    "id": "gear_loadout_goal:infinity",
+    "kind": "gear_loadout",
+    "name": "Wielding full Infinity",
+    "slug": "infinity-wield"
+  },
+  {
+    "data": {},
+    "id": "item:27681",
+    "kind": "item",
+    "name": "Voidwaker hilt",
+    "slug": "27681"
+  },
+  {
+    "data": {},
+    "id": "item:27684",
+    "kind": "item",
+    "name": "Voidwaker blade",
+    "slug": "27684"
+  },
+  {
+    "data": {},
+    "id": "item:27687",
+    "kind": "item",
+    "name": "Voidwaker gem",
+    "slug": "27687"
+  },
+  {
+    "data": {
+      "tradeable": true
+    },
+    "id": "item:27690",
+    "kind": "item",
+    "name": "Voidwaker",
+    "slug": "voidwaker"
+  },
+  {
+    "data": {},
+    "id": "item:4587",
+    "kind": "item",
+    "name": "Dragon scimitar",
+    "slug": "dragon-scimitar"
+  },
+  {
+    "data": {},
+    "id": "item:6528",
+    "kind": "item",
+    "name": "Tzhaar-ket-om",
+    "slug": "tzhaar-ket-om"
+  },
+  {
+    "data": {},
+    "id": "item:6916",
+    "kind": "item",
+    "name": "Infinity top",
+    "slug": "6916"
+  },
+  {
+    "data": {},
+    "id": "item:6918",
+    "kind": "item",
+    "name": "Infinity hat",
+    "slug": "6918"
+  },
+  {
+    "data": {},
+    "id": "item:6920",
+    "kind": "item",
+    "name": "Infinity boots",
+    "slug": "6920"
+  },
+  {
+    "data": {},
+    "id": "item:6922",
+    "kind": "item",
+    "name": "Infinity gloves",
+    "slug": "6922"
+  },
+  {
+    "data": {},
+    "id": "item:6924",
+    "kind": "item",
+    "name": "Infinity bottoms",
+    "slug": "6924"
+  },
+  {
+    "data": {
+      "tradeable": false
+    },
+    "id": "item:7462",
+    "kind": "item",
+    "name": "Barrows gloves",
+    "slug": "barrows-gloves"
+  },
+  {
+    "data": {},
+    "id": "quest:a-kingdom-divided",
+    "kind": "quest",
+    "name": "A Kingdom Divided",
+    "slug": "a-kingdom-divided"
+  },
+  {
+    "data": {},
+    "id": "quest:a-night-at-the-theatre",
+    "kind": "quest",
+    "name": "A Night at the Theatre",
+    "slug": "a-night-at-the-theatre"
+  },
+  {
+    "data": {},
+    "id": "quest:a-porcine-of-interest",
+    "kind": "quest",
+    "name": "A Porcine of Interest",
+    "slug": "a-porcine-of-interest"
+  },
+  {
+    "data": {},
+    "id": "quest:a-souls-bane",
+    "kind": "quest",
+    "name": "A Soul's Bane",
+    "slug": "a-souls-bane"
+  },
+  {
+    "data": {},
+    "id": "quest:a-tail-of-two-cats",
+    "kind": "quest",
+    "name": "A Tail of Two Cats",
+    "slug": "a-tail-of-two-cats"
+  },
+  {
+    "data": {},
+    "id": "quest:a-taste-of-hope",
+    "kind": "quest",
+    "name": "A Taste of Hope",
+    "slug": "a-taste-of-hope"
+  },
+  {
+    "data": {
+      "miniquest": true
+    },
+    "id": "quest:alfred-grimhands-barcrawl",
+    "kind": "quest",
+    "name": "Alfred Grimhand's Barcrawl",
+    "slug": "alfred-grimhands-barcrawl"
+  },
+  {
+    "data": {},
+    "id": "quest:animal-magnetism",
+    "kind": "quest",
+    "name": "Animal Magnetism",
+    "slug": "animal-magnetism"
+  },
+  {
+    "data": {},
+    "id": "quest:another-slice-of-h-a-m",
+    "kind": "quest",
+    "name": "Another Slice of H.A.M.",
+    "slug": "another-slice-of-h-a-m"
+  },
+  {
+    "data": {},
+    "id": "quest:at-first-light",
+    "kind": "quest",
+    "name": "At First Light",
+    "slug": "at-first-light"
+  },
+  {
+    "data": {
+      "miniquest": true
+    },
+    "id": "quest:barbarian-farming",
+    "kind": "quest",
+    "name": "Barbarian Farming",
+    "slug": "barbarian-farming"
+  },
+  {
+    "data": {
+      "miniquest": true
+    },
+    "id": "quest:barbarian-firemaking",
+    "kind": "quest",
+    "name": "Barbarian Firemaking",
+    "slug": "barbarian-firemaking"
+  },
+  {
+    "data": {
+      "miniquest": true
+    },
+    "id": "quest:barbarian-fishing",
+    "kind": "quest",
+    "name": "Barbarian Fishing",
+    "slug": "barbarian-fishing"
+  },
+  {
+    "data": {
+      "miniquest": true
+    },
+    "id": "quest:barbarian-herblore",
+    "kind": "quest",
+    "name": "Barbarian Herblore",
+    "slug": "barbarian-herblore"
+  },
+  {
+    "data": {
+      "miniquest": true
+    },
+    "id": "quest:barbarian-smithing",
+    "kind": "quest",
+    "name": "Barbarian Smithing",
+    "slug": "barbarian-smithing"
+  },
+  {
+    "data": {
+      "miniquest": true
+    },
+    "id": "quest:barbarian-training",
+    "kind": "quest",
+    "name": "Barbarian Training",
+    "slug": "barbarian-training"
+  },
+  {
+    "data": {
+      "miniquest": true
+    },
+    "id": "quest:bear-your-soul",
+    "kind": "quest",
+    "name": "Bear Your Soul",
+    "slug": "bear-your-soul"
+  },
+  {
+    "data": {},
+    "id": "quest:below-ice-mountain",
+    "kind": "quest",
+    "name": "Below Ice Mountain",
+    "slug": "below-ice-mountain"
+  },
+  {
+    "data": {},
+    "id": "quest:between-a-rock",
+    "kind": "quest",
+    "name": "Between a Rock...",
+    "slug": "between-a-rock"
+  },
+  {
+    "data": {},
+    "id": "quest:big-chompy-bird-hunting",
+    "kind": "quest",
+    "name": "Big Chompy Bird Hunting",
+    "slug": "big-chompy-bird-hunting"
+  },
+  {
+    "data": {},
+    "id": "quest:biohazard",
+    "kind": "quest",
+    "name": "Biohazard",
+    "slug": "biohazard"
+  },
+  {
+    "data": {},
+    "id": "quest:black-knights-fortress",
+    "kind": "quest",
+    "name": "Black Knights' Fortress",
+    "slug": "black-knights-fortress"
+  },
+  {
+    "data": {},
+    "id": "quest:bone-voyage",
+    "kind": "quest",
+    "name": "Bone Voyage",
+    "slug": "bone-voyage"
+  },
+  {
+    "data": {},
+    "id": "quest:cabin-fever",
+    "kind": "quest",
+    "name": "Cabin Fever",
+    "slug": "cabin-fever"
+  },
+  {
+    "data": {},
+    "id": "quest:children-of-the-sun",
+    "kind": "quest",
+    "name": "Children of the Sun",
+    "slug": "children-of-the-sun"
+  },
+  {
+    "data": {},
+    "id": "quest:client-of-kourend",
+    "kind": "quest",
+    "name": "Client of Kourend",
+    "slug": "client-of-kourend"
+  },
+  {
+    "data": {},
+    "id": "quest:clock-tower",
+    "kind": "quest",
+    "name": "Clock Tower",
+    "slug": "clock-tower"
+  },
+  {
+    "data": {},
+    "id": "quest:cold-war",
+    "kind": "quest",
+    "name": "Cold War",
+    "slug": "cold-war"
+  },
+  {
+    "data": {},
+    "id": "quest:contact",
+    "kind": "quest",
+    "name": "Contact!",
+    "slug": "contact"
+  },
+  {
+    "data": {},
+    "id": "quest:cooks-assistant",
+    "kind": "quest",
+    "name": "Cook's Assistant",
+    "slug": "cooks-assistant"
+  },
+  {
+    "data": {},
+    "id": "quest:creature-of-fenkenstrain",
+    "kind": "quest",
+    "name": "Creature of Fenkenstrain",
+    "slug": "creature-of-fenkenstrain"
+  },
+  {
+    "data": {
+      "miniquest": true
+    },
+    "id": "quest:curse-of-the-empty-lord",
+    "kind": "quest",
+    "name": "Curse of the Empty Lord",
+    "slug": "curse-of-the-empty-lord"
+  },
+  {
+    "data": {
+      "miniquest": true
+    },
+    "id": "quest:daddys-home",
+    "kind": "quest",
+    "name": "Daddy's Home",
+    "slug": "daddys-home"
+  },
+  {
+    "data": {},
+    "id": "quest:darkness-of-hallowvale",
+    "kind": "quest",
+    "name": "Darkness of Hallowvale",
+    "slug": "darkness-of-hallowvale"
+  },
+  {
+    "data": {},
+    "id": "quest:death-on-the-isle",
+    "kind": "quest",
+    "name": "Death on the Isle",
+    "slug": "death-on-the-isle"
+  },
+  {
+    "data": {},
+    "id": "quest:death-plateau",
+    "kind": "quest",
+    "name": "Death Plateau",
+    "slug": "death-plateau"
+  },
+  {
+    "data": {},
+    "id": "quest:death-to-the-dorgeshuun",
+    "kind": "quest",
+    "name": "Death to the Dorgeshuun",
+    "slug": "death-to-the-dorgeshuun"
+  },
+  {
+    "data": {},
+    "id": "quest:defender-of-varrock",
+    "kind": "quest",
+    "name": "Defender of Varrock",
+    "slug": "defender-of-varrock"
+  },
+  {
+    "data": {},
+    "id": "quest:demon-slayer",
+    "kind": "quest",
+    "name": "Demon Slayer",
+    "slug": "demon-slayer"
+  },
+  {
+    "data": {},
+    "id": "quest:desert-treasure-i",
+    "kind": "quest",
+    "name": "Desert Treasure I",
+    "slug": "desert-treasure-i"
+  },
+  {
+    "data": {},
+    "id": "quest:desert-treasure-ii-the-fallen-empire",
+    "kind": "quest",
+    "name": "Desert Treasure II - The Fallen Empire",
+    "slug": "desert-treasure-ii-the-fallen-empire"
+  },
+  {
+    "data": {},
+    "id": "quest:devious-minds",
+    "kind": "quest",
+    "name": "Devious Minds",
+    "slug": "devious-minds"
+  },
+  {
+    "data": {},
+    "id": "quest:dorics-quest",
+    "kind": "quest",
+    "name": "Doric's Quest",
+    "slug": "dorics-quest"
+  },
+  {
+    "data": {},
+    "id": "quest:dragon-slayer-i",
+    "kind": "quest",
+    "name": "Dragon Slayer I",
+    "slug": "dragon-slayer-i"
+  },
+  {
+    "data": {},
+    "id": "quest:dragon-slayer-ii",
+    "kind": "quest",
+    "name": "Dragon Slayer II",
+    "slug": "dragon-slayer-ii"
+  },
+  {
+    "data": {},
+    "id": "quest:dream-mentor",
+    "kind": "quest",
+    "name": "Dream Mentor",
+    "slug": "dream-mentor"
+  },
+  {
+    "data": {},
+    "id": "quest:druidic-ritual",
+    "kind": "quest",
+    "name": "Druidic Ritual",
+    "slug": "druidic-ritual"
+  },
+  {
+    "data": {},
+    "id": "quest:dwarf-cannon",
+    "kind": "quest",
+    "name": "Dwarf Cannon",
+    "slug": "dwarf-cannon"
+  },
+  {
+    "data": {},
+    "id": "quest:eadgars-ruse",
+    "kind": "quest",
+    "name": "Eadgar's Ruse",
+    "slug": "eadgars-ruse"
+  },
+  {
+    "data": {},
+    "id": "quest:eagles-peak",
+    "kind": "quest",
+    "name": "Eagles' Peak",
+    "slug": "eagles-peak"
+  },
+  {
+    "data": {},
+    "id": "quest:elemental-workshop-i",
+    "kind": "quest",
+    "name": "Elemental Workshop I",
+    "slug": "elemental-workshop-i"
+  },
+  {
+    "data": {},
+    "id": "quest:elemental-workshop-ii",
+    "kind": "quest",
+    "name": "Elemental Workshop II",
+    "slug": "elemental-workshop-ii"
+  },
+  {
+    "data": {},
+    "id": "quest:enakhras-lament",
+    "kind": "quest",
+    "name": "Enakhra's Lament",
+    "slug": "enakhras-lament"
+  },
+  {
+    "data": {},
+    "id": "quest:enlightened-journey",
+    "kind": "quest",
+    "name": "Enlightened Journey",
+    "slug": "enlightened-journey"
+  },
+  {
+    "data": {
+      "miniquest": true
+    },
+    "id": "quest:enter-the-abyss",
+    "kind": "quest",
+    "name": "Enter the Abyss",
+    "slug": "enter-the-abyss"
+  },
+  {
+    "data": {},
+    "id": "quest:ernest-the-chicken",
+    "kind": "quest",
+    "name": "Ernest the Chicken",
+    "slug": "ernest-the-chicken"
+  },
+  {
+    "data": {},
+    "id": "quest:ethically-acquired-antiquities",
+    "kind": "quest",
+    "name": "Ethically Acquired Antiquities",
+    "slug": "ethically-acquired-antiquities"
+  },
+  {
+    "data": {},
+    "id": "quest:fairytale-i-growing-pains",
+    "kind": "quest",
+    "name": "Fairytale I - Growing Pains",
+    "slug": "fairytale-i-growing-pains"
+  },
+  {
+    "data": {},
+    "id": "quest:fairytale-ii-cure-a-queen",
+    "kind": "quest",
+    "name": "Fairytale II - Cure a Queen",
+    "slug": "fairytale-ii-cure-a-queen"
+  },
+  {
+    "data": {},
+    "id": "quest:family-crest",
+    "kind": "quest",
+    "name": "Family Crest",
+    "slug": "family-crest"
+  },
+  {
+    "data": {
+      "miniquest": true
+    },
+    "id": "quest:family-pest",
+    "kind": "quest",
+    "name": "Family Pest",
+    "slug": "family-pest"
+  },
+  {
+    "data": {},
+    "id": "quest:fight-arena",
+    "kind": "quest",
+    "name": "Fight Arena",
+    "slug": "fight-arena"
+  },
+  {
+    "data": {},
+    "id": "quest:fishing-contest",
+    "kind": "quest",
+    "name": "Fishing Contest",
+    "slug": "fishing-contest"
+  },
+  {
+    "data": {},
+    "id": "quest:forgettable-tale",
+    "kind": "quest",
+    "name": "Forgettable Tale...",
+    "slug": "forgettable-tale"
+  },
+  {
+    "data": {},
+    "id": "quest:garden-of-tranquillity",
+    "kind": "quest",
+    "name": "Garden of Tranquillity",
+    "slug": "garden-of-tranquillity"
+  },
+  {
+    "data": {},
+    "id": "quest:gertrudes-cat",
+    "kind": "quest",
+    "name": "Gertrude's Cat",
+    "slug": "gertrudes-cat"
+  },
+  {
+    "data": {},
+    "id": "quest:getting-ahead",
+    "kind": "quest",
+    "name": "Getting Ahead",
+    "slug": "getting-ahead"
+  },
+  {
+    "data": {},
+    "id": "quest:ghosts-ahoy",
+    "kind": "quest",
+    "name": "Ghosts Ahoy",
+    "slug": "ghosts-ahoy"
+  },
+  {
+    "data": {},
+    "id": "quest:goblin-diplomacy",
+    "kind": "quest",
+    "name": "Goblin Diplomacy",
+    "slug": "goblin-diplomacy"
+  },
+  {
+    "data": {},
+    "id": "quest:grim-tales",
+    "kind": "quest",
+    "name": "Grim Tales",
+    "slug": "grim-tales"
+  },
+  {
+    "data": {},
+    "id": "quest:haunted-mine",
+    "kind": "quest",
+    "name": "Haunted Mine",
+    "slug": "haunted-mine"
+  },
+  {
+    "data": {},
+    "id": "quest:hazeel-cult",
+    "kind": "quest",
+    "name": "Hazeel Cult",
+    "slug": "hazeel-cult"
+  },
+  {
+    "data": {},
+    "id": "quest:heroes-quest",
+    "kind": "quest",
+    "name": "Heroes' Quest",
+    "slug": "heroes-quest"
+  },
+  {
+    "data": {
+      "miniquest": true
+    },
+    "id": "quest:his-faithful-servants",
+    "kind": "quest",
+    "name": "His Faithful Servants",
+    "slug": "his-faithful-servants"
+  },
+  {
+    "data": {},
+    "id": "quest:holy-grail",
+    "kind": "quest",
+    "name": "Holy Grail",
+    "slug": "holy-grail"
+  },
+  {
+    "data": {
+      "miniquest": true
+    },
+    "id": "quest:hopespears-will",
+    "kind": "quest",
+    "name": "Hopespear's Will",
+    "slug": "hopespears-will"
+  },
+  {
+    "data": {},
+    "id": "quest:horror-from-the-deep",
+    "kind": "quest",
+    "name": "Horror from the Deep",
+    "slug": "horror-from-the-deep"
+  },
+  {
+    "data": {},
+    "id": "quest:icthlarins-little-helper",
+    "kind": "quest",
+    "name": "Icthlarin's Little Helper",
+    "slug": "icthlarins-little-helper"
+  },
+  {
+    "data": {},
+    "id": "quest:imp-catcher",
+    "kind": "quest",
+    "name": "Imp Catcher",
+    "slug": "imp-catcher"
+  },
+  {
+    "data": {},
+    "id": "quest:in-aid-of-the-myreque",
+    "kind": "quest",
+    "name": "In Aid of the Myreque",
+    "slug": "in-aid-of-the-myreque"
+  },
+  {
+    "data": {
+      "miniquest": true
+    },
+    "id": "quest:in-search-of-knowledge",
+    "kind": "quest",
+    "name": "In Search of Knowledge",
+    "slug": "in-search-of-knowledge"
+  },
+  {
+    "data": {},
+    "id": "quest:in-search-of-the-myreque",
+    "kind": "quest",
+    "name": "In Search of the Myreque",
+    "slug": "in-search-of-the-myreque"
+  },
+  {
+    "data": {
+      "miniquest": true
+    },
+    "id": "quest:into-the-tombs",
+    "kind": "quest",
+    "name": "Into the Tombs",
+    "slug": "into-the-tombs"
+  },
+  {
+    "data": {},
+    "id": "quest:jungle-potion",
+    "kind": "quest",
+    "name": "Jungle Potion",
+    "slug": "jungle-potion"
+  },
+  {
+    "data": {},
+    "id": "quest:kings-ransom",
+    "kind": "quest",
+    "name": "King's Ransom",
+    "slug": "kings-ransom"
+  },
+  {
+    "data": {
+      "miniquest": true
+    },
+    "id": "quest:knight-waves-training-grounds",
+    "kind": "quest",
+    "name": "Knight Waves Training Grounds",
+    "slug": "knight-waves-training-grounds"
+  },
+  {
+    "data": {
+      "miniquest": true
+    },
+    "id": "quest:lair-of-tarn-razorlor",
+    "kind": "quest",
+    "name": "Lair of Tarn Razorlor",
+    "slug": "lair-of-tarn-razorlor"
+  },
+  {
+    "data": {},
+    "id": "quest:legends-quest",
+    "kind": "quest",
+    "name": "Legends' Quest",
+    "slug": "legends-quest"
+  },
+  {
+    "data": {},
+    "id": "quest:lost-city",
+    "kind": "quest",
+    "name": "Lost City",
+    "slug": "lost-city"
+  },
+  {
+    "data": {},
+    "id": "quest:lunar-diplomacy",
+    "kind": "quest",
+    "name": "Lunar Diplomacy",
+    "slug": "lunar-diplomacy"
+  },
+  {
+    "data": {
+      "miniquest": true
+    },
+    "id": "quest:mage-arena-i",
+    "kind": "quest",
+    "name": "Mage Arena I",
+    "slug": "mage-arena-i"
+  },
+  {
+    "data": {
+      "miniquest": true
+    },
+    "id": "quest:mage-arena-ii",
+    "kind": "quest",
+    "name": "Mage Arena II",
+    "slug": "mage-arena-ii"
+  },
+  {
+    "data": {},
+    "id": "quest:making-friends-with-my-arm",
+    "kind": "quest",
+    "name": "Making Friends with My Arm",
+    "slug": "making-friends-with-my-arm"
+  },
+  {
+    "data": {},
+    "id": "quest:making-history",
+    "kind": "quest",
+    "name": "Making History",
+    "slug": "making-history"
+  },
+  {
+    "data": {},
+    "id": "quest:meat-and-greet",
+    "kind": "quest",
+    "name": "Meat and Greet",
+    "slug": "meat-and-greet"
+  },
+  {
+    "data": {},
+    "id": "quest:merlins-crystal",
+    "kind": "quest",
+    "name": "Merlin's Crystal",
+    "slug": "merlins-crystal"
+  },
+  {
+    "data": {},
+    "id": "quest:misthalin-mystery",
+    "kind": "quest",
+    "name": "Misthalin Mystery",
+    "slug": "misthalin-mystery"
+  },
+  {
+    "data": {},
+    "id": "quest:monkey-madness-i",
+    "kind": "quest",
+    "name": "Monkey Madness I",
+    "slug": "monkey-madness-i"
+  },
+  {
+    "data": {},
+    "id": "quest:monkey-madness-ii",
+    "kind": "quest",
+    "name": "Monkey Madness II",
+    "slug": "monkey-madness-ii"
+  },
+  {
+    "data": {},
+    "id": "quest:monks-friend",
+    "kind": "quest",
+    "name": "Monk's Friend",
+    "slug": "monks-friend"
+  },
+  {
+    "data": {},
+    "id": "quest:mountain-daughter",
+    "kind": "quest",
+    "name": "Mountain Daughter",
+    "slug": "mountain-daughter"
+  },
+  {
+    "data": {},
+    "id": "quest:mournings-end-part-i",
+    "kind": "quest",
+    "name": "Mourning's End Part I",
+    "slug": "mournings-end-part-i"
+  },
+  {
+    "data": {},
+    "id": "quest:mournings-end-part-ii",
+    "kind": "quest",
+    "name": "Mourning's End Part II",
+    "slug": "mournings-end-part-ii"
+  },
+  {
+    "data": {},
+    "id": "quest:murder-mystery",
+    "kind": "quest",
+    "name": "Murder Mystery",
+    "slug": "murder-mystery"
+  },
+  {
+    "data": {},
+    "id": "quest:my-arms-big-adventure",
+    "kind": "quest",
+    "name": "My Arm's Big Adventure",
+    "slug": "my-arms-big-adventure"
+  },
+  {
+    "data": {
+      "miniquest": true
+    },
+    "id": "quest:natural-history-quiz",
+    "kind": "quest",
+    "name": "Natural History Quiz",
+    "slug": "natural-history-quiz"
+  },
+  {
+    "data": {},
+    "id": "quest:nature-spirit",
+    "kind": "quest",
+    "name": "Nature Spirit",
+    "slug": "nature-spirit"
+  },
+  {
+    "data": {},
+    "id": "quest:observatory-quest",
+    "kind": "quest",
+    "name": "Observatory Quest",
+    "slug": "observatory-quest"
+  },
+  {
+    "data": {},
+    "id": "quest:olafs-quest",
+    "kind": "quest",
+    "name": "Olaf's Quest",
+    "slug": "olafs-quest"
+  },
+  {
+    "data": {},
+    "id": "quest:one-small-favour",
+    "kind": "quest",
+    "name": "One Small Favour",
+    "slug": "one-small-favour"
+  },
+  {
+    "data": {},
+    "id": "quest:perilous-moons",
+    "kind": "quest",
+    "name": "Perilous Moons",
+    "slug": "perilous-moons"
+  },
+  {
+    "data": {},
+    "id": "quest:pirates-treasure",
+    "kind": "quest",
+    "name": "Pirate's Treasure",
+    "slug": "pirates-treasure"
+  },
+  {
+    "data": {},
+    "id": "quest:plague-city",
+    "kind": "quest",
+    "name": "Plague City",
+    "slug": "plague-city"
+  },
+  {
+    "data": {},
+    "id": "quest:priest-in-peril",
+    "kind": "quest",
+    "name": "Priest in Peril",
+    "slug": "priest-in-peril"
+  },
+  {
+    "data": {},
+    "id": "quest:prince-ali-rescue",
+    "kind": "quest",
+    "name": "Prince Ali Rescue",
+    "slug": "prince-ali-rescue"
+  },
+  {
+    "data": {},
+    "id": "quest:rag-and-bone-man-i",
+    "kind": "quest",
+    "name": "Rag and Bone Man I",
+    "slug": "rag-and-bone-man-i"
+  },
+  {
+    "data": {},
+    "id": "quest:rag-and-bone-man-ii",
+    "kind": "quest",
+    "name": "Rag and Bone Man II",
+    "slug": "rag-and-bone-man-ii"
+  },
+  {
+    "data": {},
+    "id": "quest:ratcatchers",
+    "kind": "quest",
+    "name": "Ratcatchers",
+    "slug": "ratcatchers"
+  },
+  {
+    "data": {},
+    "id": "quest:recipe-for-disaster",
+    "kind": "quest",
+    "name": "Recipe for Disaster",
+    "slug": "recipe-for-disaster"
+  },
+  {
+    "data": {},
+    "id": "quest:recipe-for-disaster-another-cooks-quest",
+    "kind": "quest",
+    "name": "Recipe for Disaster/Another Cook's Quest",
+    "slug": "recipe-for-disaster-another-cooks-quest"
+  },
+  {
+    "data": {},
+    "id": "quest:recipe-for-disaster-defeating-the-culinaromancer",
+    "kind": "quest",
+    "name": "Recipe for Disaster/Defeating the Culinaromancer",
+    "slug": "recipe-for-disaster-defeating-the-culinaromancer"
+  },
+  {
+    "data": {},
+    "id": "quest:recipe-for-disaster-freeing-evil-dave",
+    "kind": "quest",
+    "name": "Recipe for Disaster/Freeing Evil Dave",
+    "slug": "recipe-for-disaster-freeing-evil-dave"
+  },
+  {
+    "data": {},
+    "id": "quest:recipe-for-disaster-freeing-king-awowogei",
+    "kind": "quest",
+    "name": "Recipe for Disaster/Freeing King Awowogei",
+    "slug": "recipe-for-disaster-freeing-king-awowogei"
+  },
+  {
+    "data": {},
+    "id": "quest:recipe-for-disaster-freeing-pirate-pete",
+    "kind": "quest",
+    "name": "Recipe for Disaster/Freeing Pirate Pete",
+    "slug": "recipe-for-disaster-freeing-pirate-pete"
+  },
+  {
+    "data": {},
+    "id": "quest:recipe-for-disaster-freeing-sir-amik-varze",
+    "kind": "quest",
+    "name": "Recipe for Disaster/Freeing Sir Amik Varze",
+    "slug": "recipe-for-disaster-freeing-sir-amik-varze"
+  },
+  {
+    "data": {},
+    "id": "quest:recipe-for-disaster-freeing-skrach-uglogwee",
+    "kind": "quest",
+    "name": "Recipe for Disaster/Freeing Skrach Uglogwee",
+    "slug": "recipe-for-disaster-freeing-skrach-uglogwee"
+  },
+  {
+    "data": {},
+    "id": "quest:recipe-for-disaster-freeing-the-goblin-generals",
+    "kind": "quest",
+    "name": "Recipe for Disaster/Freeing the Goblin generals",
+    "slug": "recipe-for-disaster-freeing-the-goblin-generals"
+  },
+  {
+    "data": {},
+    "id": "quest:recipe-for-disaster-freeing-the-lumbridge-guide",
+    "kind": "quest",
+    "name": "Recipe for Disaster/Freeing the Lumbridge Guide",
+    "slug": "recipe-for-disaster-freeing-the-lumbridge-guide"
+  },
+  {
+    "data": {},
+    "id": "quest:recipe-for-disaster-freeing-the-mountain-dwarf",
+    "kind": "quest",
+    "name": "Recipe for Disaster/Freeing the Mountain Dwarf",
+    "slug": "recipe-for-disaster-freeing-the-mountain-dwarf"
+  },
+  {
+    "data": {},
+    "id": "quest:recruitment-drive",
+    "kind": "quest",
+    "name": "Recruitment Drive",
+    "slug": "recruitment-drive"
+  },
+  {
+    "data": {},
+    "id": "quest:regicide",
+    "kind": "quest",
+    "name": "Regicide",
+    "slug": "regicide"
+  },
+  {
+    "data": {
+      "miniquest": true
+    },
+    "id": "quest:rogue-trader",
+    "kind": "quest",
+    "name": "Rogue Trader",
+    "slug": "rogue-trader"
+  },
+  {
+    "data": {},
+    "id": "quest:romeo-juliet",
+    "kind": "quest",
+    "name": "Romeo & Juliet",
+    "slug": "romeo-juliet"
+  },
+  {
+    "data": {},
+    "id": "quest:roving-elves",
+    "kind": "quest",
+    "name": "Roving Elves",
+    "slug": "roving-elves"
+  },
+  {
+    "data": {},
+    "id": "quest:royal-trouble",
+    "kind": "quest",
+    "name": "Royal Trouble",
+    "slug": "royal-trouble"
+  },
+  {
+    "data": {},
+    "id": "quest:rum-deal",
+    "kind": "quest",
+    "name": "Rum Deal",
+    "slug": "rum-deal"
+  },
+  {
+    "data": {},
+    "id": "quest:rune-mysteries",
+    "kind": "quest",
+    "name": "Rune Mysteries",
+    "slug": "rune-mysteries"
+  },
+  {
+    "data": {
+      "miniquest": true
+    },
+    "id": "quest:sacred-bone-burner-restoration",
+    "kind": "quest",
+    "name": "Sacred Bone Burner restoration",
+    "slug": "sacred-bone-burner-restoration"
+  },
+  {
+    "data": {},
+    "id": "quest:scorpion-catcher",
+    "kind": "quest",
+    "name": "Scorpion Catcher",
+    "slug": "scorpion-catcher"
+  },
+  {
+    "data": {},
+    "id": "quest:sea-slug",
+    "kind": "quest",
+    "name": "Sea Slug",
+    "slug": "sea-slug"
+  },
+  {
+    "data": {},
+    "id": "quest:secrets-of-the-north",
+    "kind": "quest",
+    "name": "Secrets of the North",
+    "slug": "secrets-of-the-north"
+  },
+  {
+    "data": {},
+    "id": "quest:shades-of-mortton",
+    "kind": "quest",
+    "name": "Shades of Mort'ton",
+    "slug": "shades-of-mortton"
+  },
+  {
+    "data": {},
+    "id": "quest:shadow-of-the-storm",
+    "kind": "quest",
+    "name": "Shadow of the Storm",
+    "slug": "shadow-of-the-storm"
+  },
+  {
+    "data": {},
+    "id": "quest:sheep-herder",
+    "kind": "quest",
+    "name": "Sheep Herder",
+    "slug": "sheep-herder"
+  },
+  {
+    "data": {},
+    "id": "quest:sheep-shearer",
+    "kind": "quest",
+    "name": "Sheep Shearer",
+    "slug": "sheep-shearer"
+  },
+  {
+    "data": {},
+    "id": "quest:shield-of-arrav",
+    "kind": "quest",
+    "name": "Shield of Arrav",
+    "slug": "shield-of-arrav"
+  },
+  {
+    "data": {},
+    "id": "quest:shilo-village",
+    "kind": "quest",
+    "name": "Shilo Village",
+    "slug": "shilo-village"
+  },
+  {
+    "data": {},
+    "id": "quest:sins-of-the-father",
+    "kind": "quest",
+    "name": "Sins of the Father",
+    "slug": "sins-of-the-father"
+  },
+  {
+    "data": {
+      "miniquest": true
+    },
+    "id": "quest:skippy-and-the-mogres",
+    "kind": "quest",
+    "name": "Skippy and the Mogres",
+    "slug": "skippy-and-the-mogres"
+  },
+  {
+    "data": {},
+    "id": "quest:song-of-the-elves",
+    "kind": "quest",
+    "name": "Song of the Elves",
+    "slug": "song-of-the-elves"
+  },
+  {
+    "data": {},
+    "id": "quest:spirits-of-the-elid",
+    "kind": "quest",
+    "name": "Spirits of the Elid",
+    "slug": "spirits-of-the-elid"
+  },
+  {
+    "data": {},
+    "id": "quest:swan-song",
+    "kind": "quest",
+    "name": "Swan Song",
+    "slug": "swan-song"
+  },
+  {
+    "data": {},
+    "id": "quest:tai-bwo-wannai-trio",
+    "kind": "quest",
+    "name": "Tai Bwo Wannai Trio",
+    "slug": "tai-bwo-wannai-trio"
+  },
+  {
+    "data": {},
+    "id": "quest:tale-of-the-righteous",
+    "kind": "quest",
+    "name": "Tale of the Righteous",
+    "slug": "tale-of-the-righteous"
+  },
+  {
+    "data": {},
+    "id": "quest:tears-of-guthix",
+    "kind": "quest",
+    "name": "Tears of Guthix",
+    "slug": "tears-of-guthix"
+  },
+  {
+    "data": {},
+    "id": "quest:temple-of-ikov",
+    "kind": "quest",
+    "name": "Temple of Ikov",
+    "slug": "temple-of-ikov"
+  },
+  {
+    "data": {},
+    "id": "quest:temple-of-the-eye",
+    "kind": "quest",
+    "name": "Temple of the Eye",
+    "slug": "temple-of-the-eye"
+  },
+  {
+    "data": {},
+    "id": "quest:the-ascent-of-arceuus",
+    "kind": "quest",
+    "name": "The Ascent of Arceuus",
+    "slug": "the-ascent-of-arceuus"
+  },
+  {
+    "data": {},
+    "id": "quest:the-corsair-curse",
+    "kind": "quest",
+    "name": "The Corsair Curse",
+    "slug": "the-corsair-curse"
+  },
+  {
+    "data": {},
+    "id": "quest:the-curse-of-arrav",
+    "kind": "quest",
+    "name": "The Curse of Arrav",
+    "slug": "the-curse-of-arrav"
+  },
+  {
+    "data": {},
+    "id": "quest:the-depths-of-despair",
+    "kind": "quest",
+    "name": "The Depths of Despair",
+    "slug": "the-depths-of-despair"
+  },
+  {
+    "data": {},
+    "id": "quest:the-dig-site",
+    "kind": "quest",
+    "name": "The Dig Site",
+    "slug": "the-dig-site"
+  },
+  {
+    "data": {
+      "miniquest": true
+    },
+    "id": "quest:the-enchanted-key",
+    "kind": "quest",
+    "name": "The Enchanted Key",
+    "slug": "the-enchanted-key"
+  },
+  {
+    "data": {},
+    "id": "quest:the-eyes-of-glouphrie",
+    "kind": "quest",
+    "name": "The Eyes of Glouphrie",
+    "slug": "the-eyes-of-glouphrie"
+  },
+  {
+    "data": {},
+    "id": "quest:the-feud",
+    "kind": "quest",
+    "name": "The Feud",
+    "slug": "the-feud"
+  },
+  {
+    "data": {},
+    "id": "quest:the-forsaken-tower",
+    "kind": "quest",
+    "name": "The Forsaken Tower",
+    "slug": "the-forsaken-tower"
+  },
+  {
+    "data": {},
+    "id": "quest:the-fremennik-exiles",
+    "kind": "quest",
+    "name": "The Fremennik Exiles",
+    "slug": "the-fremennik-exiles"
+  },
+  {
+    "data": {},
+    "id": "quest:the-fremennik-isles",
+    "kind": "quest",
+    "name": "The Fremennik Isles",
+    "slug": "the-fremennik-isles"
+  },
+  {
+    "data": {},
+    "id": "quest:the-fremennik-trials",
+    "kind": "quest",
+    "name": "The Fremennik Trials",
+    "slug": "the-fremennik-trials"
+  },
+  {
+    "data": {
+      "miniquest": true
+    },
+    "id": "quest:the-frozen-door",
+    "kind": "quest",
+    "name": "The Frozen Door",
+    "slug": "the-frozen-door"
+  },
+  {
+    "data": {},
+    "id": "quest:the-garden-of-death",
+    "kind": "quest",
+    "name": "The Garden of Death",
+    "slug": "the-garden-of-death"
+  },
+  {
+    "data": {
+      "miniquest": true
+    },
+    "id": "quest:the-generals-shadow",
+    "kind": "quest",
+    "name": "The General's Shadow",
+    "slug": "the-generals-shadow"
+  },
+  {
+    "data": {},
+    "id": "quest:the-giant-dwarf",
+    "kind": "quest",
+    "name": "The Giant Dwarf",
+    "slug": "the-giant-dwarf"
+  },
+  {
+    "data": {},
+    "id": "quest:the-golem",
+    "kind": "quest",
+    "name": "The Golem",
+    "slug": "the-golem"
+  },
+  {
+    "data": {},
+    "id": "quest:the-grand-tree",
+    "kind": "quest",
+    "name": "The Grand Tree",
+    "slug": "the-grand-tree"
+  },
+  {
+    "data": {},
+    "id": "quest:the-great-brain-robbery",
+    "kind": "quest",
+    "name": "The Great Brain Robbery",
+    "slug": "the-great-brain-robbery"
+  },
+  {
+    "data": {},
+    "id": "quest:the-hand-in-the-sand",
+    "kind": "quest",
+    "name": "The Hand in the Sand",
+    "slug": "the-hand-in-the-sand"
+  },
+  {
+    "data": {},
+    "id": "quest:the-heart-of-darkness",
+    "kind": "quest",
+    "name": "The Heart of Darkness",
+    "slug": "the-heart-of-darkness"
+  },
+  {
+    "data": {},
+    "id": "quest:the-knights-sword",
+    "kind": "quest",
+    "name": "The Knight's Sword",
+    "slug": "the-knights-sword"
+  },
+  {
+    "data": {},
+    "id": "quest:the-lost-tribe",
+    "kind": "quest",
+    "name": "The Lost Tribe",
+    "slug": "the-lost-tribe"
+  },
+  {
+    "data": {},
+    "id": "quest:the-path-of-glouphrie",
+    "kind": "quest",
+    "name": "The Path of Glouphrie",
+    "slug": "the-path-of-glouphrie"
+  },
+  {
+    "data": {},
+    "id": "quest:the-queen-of-thieves",
+    "kind": "quest",
+    "name": "The Queen of Thieves",
+    "slug": "the-queen-of-thieves"
+  },
+  {
+    "data": {},
+    "id": "quest:the-restless-ghost",
+    "kind": "quest",
+    "name": "The Restless Ghost",
+    "slug": "the-restless-ghost"
+  },
+  {
+    "data": {},
+    "id": "quest:the-ribbiting-tale-of-a-lily-pad-labour-dispute",
+    "kind": "quest",
+    "name": "The Ribbiting Tale of a Lily Pad Labour Dispute",
+    "slug": "the-ribbiting-tale-of-a-lily-pad-labour-dispute"
+  },
+  {
+    "data": {},
+    "id": "quest:the-slug-menace",
+    "kind": "quest",
+    "name": "The Slug Menace",
+    "slug": "the-slug-menace"
+  },
+  {
+    "data": {},
+    "id": "quest:the-tourist-trap",
+    "kind": "quest",
+    "name": "The Tourist Trap",
+    "slug": "the-tourist-trap"
+  },
+  {
+    "data": {},
+    "id": "quest:throne-of-miscellania",
+    "kind": "quest",
+    "name": "Throne of Miscellania",
+    "slug": "throne-of-miscellania"
+  },
+  {
+    "data": {},
+    "id": "quest:tower-of-life",
+    "kind": "quest",
+    "name": "Tower of Life",
+    "slug": "tower-of-life"
+  },
+  {
+    "data": {},
+    "id": "quest:tree-gnome-village",
+    "kind": "quest",
+    "name": "Tree Gnome Village",
+    "slug": "tree-gnome-village"
+  },
+  {
+    "data": {},
+    "id": "quest:tribal-totem",
+    "kind": "quest",
+    "name": "Tribal Totem",
+    "slug": "tribal-totem"
+  },
+  {
+    "data": {},
+    "id": "quest:troll-romance",
+    "kind": "quest",
+    "name": "Troll Romance",
+    "slug": "troll-romance"
+  },
+  {
+    "data": {},
+    "id": "quest:troll-stronghold",
+    "kind": "quest",
+    "name": "Troll Stronghold",
+    "slug": "troll-stronghold"
+  },
+  {
+    "data": {
+      "miniquest": true
+    },
+    "id": "quest:tutorial-island",
+    "kind": "quest",
+    "name": "Tutorial Island",
+    "slug": "tutorial-island"
+  },
+  {
+    "data": {},
+    "id": "quest:twilights-promise",
+    "kind": "quest",
+    "name": "Twilight's Promise",
+    "slug": "twilights-promise"
+  },
+  {
+    "data": {},
+    "id": "quest:underground-pass",
+    "kind": "quest",
+    "name": "Underground Pass",
+    "slug": "underground-pass"
+  },
+  {
+    "data": {},
+    "id": "quest:vampyre-slayer",
+    "kind": "quest",
+    "name": "Vampyre Slayer",
+    "slug": "vampyre-slayer"
+  },
+  {
+    "data": {},
+    "id": "quest:wanted",
+    "kind": "quest",
+    "name": "Wanted!",
+    "slug": "wanted"
+  },
+  {
+    "data": {},
+    "id": "quest:watchtower",
+    "kind": "quest",
+    "name": "Watchtower",
+    "slug": "watchtower"
+  },
+  {
+    "data": {},
+    "id": "quest:waterfall-quest",
+    "kind": "quest",
+    "name": "Waterfall Quest",
+    "slug": "waterfall-quest"
+  },
+  {
+    "data": {},
+    "id": "quest:what-lies-below",
+    "kind": "quest",
+    "name": "What Lies Below",
+    "slug": "what-lies-below"
+  },
+  {
+    "data": {},
+    "id": "quest:while-guthix-sleeps",
+    "kind": "quest",
+    "name": "While Guthix Sleeps",
+    "slug": "while-guthix-sleeps"
+  },
+  {
+    "data": {},
+    "id": "quest:witchs-house",
+    "kind": "quest",
+    "name": "Witch's House",
+    "slug": "witchs-house"
+  },
+  {
+    "data": {},
+    "id": "quest:witchs-potion",
+    "kind": "quest",
+    "name": "Witch's Potion",
+    "slug": "witchs-potion"
+  },
+  {
+    "data": {},
+    "id": "quest:x-marks-the-spot",
+    "kind": "quest",
+    "name": "X Marks the Spot",
+    "slug": "x-marks-the-spot"
+  },
+  {
+    "data": {},
+    "id": "quest:zogre-flesh-eaters",
+    "kind": "quest",
+    "name": "Zogre Flesh Eaters",
+    "slug": "zogre-flesh-eaters"
+  },
+  {
+    "data": {},
+    "id": "skill:agility",
+    "kind": "skill",
+    "name": "Agility",
+    "slug": "agility"
+  },
+  {
+    "data": {},
+    "id": "skill:attack",
+    "kind": "skill",
+    "name": "Attack",
+    "slug": "attack"
+  },
+  {
+    "data": {},
+    "id": "skill:combat",
+    "kind": "skill",
+    "name": "Combat",
+    "slug": "combat"
+  },
+  {
+    "data": {},
+    "id": "skill:construction",
+    "kind": "skill",
+    "name": "Construction",
+    "slug": "construction"
+  },
+  {
+    "data": {},
+    "id": "skill:cooking",
+    "kind": "skill",
+    "name": "Cooking",
+    "slug": "cooking"
+  },
+  {
+    "data": {},
+    "id": "skill:crafting",
+    "kind": "skill",
+    "name": "Crafting",
+    "slug": "crafting"
+  },
+  {
+    "data": {},
+    "id": "skill:defence",
+    "kind": "skill",
+    "name": "Defence",
+    "slug": "defence"
+  },
+  {
+    "data": {},
+    "id": "skill:farming",
+    "kind": "skill",
+    "name": "Farming",
+    "slug": "farming"
+  },
+  {
+    "data": {},
+    "id": "skill:firemaking",
+    "kind": "skill",
+    "name": "Firemaking",
+    "slug": "firemaking"
+  },
+  {
+    "data": {},
+    "id": "skill:fishing",
+    "kind": "skill",
+    "name": "Fishing",
+    "slug": "fishing"
+  },
+  {
+    "data": {},
+    "id": "skill:fletching",
+    "kind": "skill",
+    "name": "Fletching",
+    "slug": "fletching"
+  },
+  {
+    "data": {},
+    "id": "skill:herblore",
+    "kind": "skill",
+    "name": "Herblore",
+    "slug": "herblore"
+  },
+  {
+    "data": {},
+    "id": "skill:hitpoints",
+    "kind": "skill",
+    "name": "Hitpoints",
+    "slug": "hitpoints"
+  },
+  {
+    "data": {},
+    "id": "skill:hunter",
+    "kind": "skill",
+    "name": "Hunter",
+    "slug": "hunter"
+  },
+  {
+    "data": {},
+    "id": "skill:kudos",
+    "kind": "skill",
+    "name": "Kudos",
+    "slug": "kudos"
+  },
+  {
+    "data": {},
+    "id": "skill:magic",
+    "kind": "skill",
+    "name": "Magic",
+    "slug": "magic"
+  },
+  {
+    "data": {},
+    "id": "skill:mining",
+    "kind": "skill",
+    "name": "Mining",
+    "slug": "mining"
+  },
+  {
+    "data": {},
+    "id": "skill:prayer",
+    "kind": "skill",
+    "name": "Prayer",
+    "slug": "prayer"
+  },
+  {
+    "data": {},
+    "id": "skill:quest-point",
+    "kind": "skill",
+    "name": "Quest Point",
+    "slug": "quest-point"
+  },
+  {
+    "data": {},
+    "id": "skill:ranged",
+    "kind": "skill",
+    "name": "Ranged",
+    "slug": "ranged"
+  },
+  {
+    "data": {},
+    "id": "skill:runecraft",
+    "kind": "skill",
+    "name": "Runecraft",
+    "slug": "runecraft"
+  },
+  {
+    "data": {},
+    "id": "skill:slayer",
+    "kind": "skill",
+    "name": "Slayer",
+    "slug": "slayer"
+  },
+  {
+    "data": {},
+    "id": "skill:smithing",
+    "kind": "skill",
+    "name": "Smithing",
+    "slug": "smithing"
+  },
+  {
+    "data": {},
+    "id": "skill:strength",
+    "kind": "skill",
+    "name": "Strength",
+    "slug": "strength"
+  },
+  {
+    "data": {},
+    "id": "skill:thieving",
+    "kind": "skill",
+    "name": "Thieving",
+    "slug": "thieving"
+  },
+  {
+    "data": {},
+    "id": "skill:woodcutting",
+    "kind": "skill",
+    "name": "Woodcutting",
+    "slug": "woodcutting"
+  }
+]

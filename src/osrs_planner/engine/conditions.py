@@ -9,9 +9,10 @@ from __future__ import annotations
 from osrs_planner.engine.kleene import Tri, k_and, k_or, k_not, from_bool
 from osrs_planner.engine.kg.model import AtomType, Op, ConditionAtom
 from osrs_planner.engine.kg.store import KGStore
-from osrs_planner.engine.state import AccountState, QUEST_STATE_ORDER, family_is_observed
+from osrs_planner.engine.state import AccountState, QUEST_STATE_ORDER, family_is_observed, account_family
 
 _SKILL_LEVEL_FAMILY = AtomType.SKILL_LEVEL.value  # "skill_level"
+_ACCOUNT_FAMILIES = frozenset({"main", "ironman", "uim"})  # K5/§6.4 family-name targets
 
 
 def _done_membership(family: str, ref_node: str, state: AccountState) -> Tri:
@@ -93,8 +94,15 @@ def atom_satisfied(atom: ConditionAtom, state: AccountState, kg: KGStore) -> Tri
         return Tri.UNKNOWN
 
     if at is AtomType.ACCOUNT_TYPE:
-        # mode is always known for a loaded account -> never UNKNOWN
-        return from_bool(state.mode == atom.data.get("value"))
+        # mode is always known for a loaded account -> never UNKNOWN.
+        # K5/§6.4: a FAMILY-name target ({main,ironman,uim}) matches via
+        # account_family(mode) so every iron variant (HCIM/GIM/HCGIM) shares one
+        # gate (the §6.3 ironman wrapper relies on this); a specific-mode target
+        # compares to state.mode literally.
+        target = atom.data.get("value")
+        if target in _ACCOUNT_FAMILIES:
+            return from_bool(account_family(state.mode) == target)
+        return from_bool(state.mode == target)
 
     if at is AtomType.IS_UNLOCKED:
         return _done_membership(at.value, atom.ref_node, state)
