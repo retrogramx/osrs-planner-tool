@@ -11,6 +11,7 @@ quests ``quest:<slug>``, skills ``skill:<name>``.
 """
 from __future__ import annotations
 
+import re
 from typing import Literal, Optional
 
 from pydantic import BaseModel, Field
@@ -72,3 +73,60 @@ class MethodRecord(BaseModel, frozen=True):
     source: str
     url: str
     accessed_at: str
+
+
+# Pseudo-"skills" in skill_requirements_html that are NOT KG skill nodes
+# (combat level is derived; quest points handled by the engine elsewhere).
+_NON_SKILL_PSEUDO = frozenset({"combat level", "quest points"})
+
+
+def _slug(name: str) -> str:
+    """A wiki page name -> a KG slug fragment.
+
+    Lowercase; apostrophes dropped; every run of non-alphanumerics -> a single
+    hyphen; trim leading/trailing hyphens. "Fairytale II - Cure a Queen" ->
+    "fairytale-ii-cure-a-queen".
+    """
+    s = name.strip().lower().replace("'", "")
+    s = re.sub(r"[^a-z0-9]+", "-", s)
+    return s.strip("-")
+
+
+_WIKILINK = re.compile(r"\[\[([^\]|]+)(?:\|[^\]]+)?\]\]")
+# data-skill, then OPTIONALLY a data-level somewhere later in the same tag.
+_SCP_SPAN = re.compile(r'data-skill="([^"]+)"(?:[^>]*?data-level="([^"]+)")?')
+
+
+def parse_requirements_html(skill_html, quest_html=None) -> Requirements:
+    """Parse the main dataset's prose requirement fields into Requirements.
+
+    ``skill_html`` = a money_making.json ``skill_requirements_html`` value.
+    Each span with a numeric ``data-level`` becomes a ``skill:<name>`` gate
+    (trailing ``+`` stripped; pseudo-skills combat-level/quest-points dropped; a
+    span with no level is a recommendation, dropped). ``quest_html`` = the
+    ``quest`` prose field; EVERY ``[[Quest]]`` wikilink becomes a ``quest:<slug>``
+    gate (v1 is conservative -- a "recommended" quest over-gates to future_gated,
+    which is safe; under-gating is not, spec §11).
+    """
+    skills: dict[str, int] = {}
+    if skill_html:
+        for m in _SCP_SPAN.finditer(skill_html):
+            raw_skill = m.group(1).strip()
+            raw_level = m.group(2)
+            if raw_skill.lower() in _NON_SKILL_PSEUDO:
+                continue
+            if not raw_level:
+                continue  # no numeric gate -> recommendation, not a requirement
+            level = int(raw_level.rstrip("+ ").strip())
+            skills[f"skill:{_slug(raw_skill)}"] = level
+
+    quests: list[str] = []
+    if quest_html and quest_html.strip().lower() != "none":
+        seen: set[str] = set()
+        for m in _WIKILINK.finditer(quest_html):
+            qid = f"quest:{_slug(m.group(1))}"
+            if qid not in seen:
+                seen.add(qid)
+                quests.append(qid)
+
+    return Requirements(skills=skills, quests=quests, items=[])
