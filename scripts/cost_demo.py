@@ -1,0 +1,51 @@
+#!/usr/bin/env python3
+"""Cost-layer demo: golden goals x account family (read-only over committed data).
+
+Run: ./venv/bin/python scripts/cost_demo.py
+Prints the full CostCard route set + by_gold ranking for each golden goal under
+both a main and an ironman -- the flagship divergences, no auto-pick.
+"""
+from __future__ import annotations
+
+import os
+
+from osrs_planner.cost.channels import build_index_from_repo
+from osrs_planner.cost.overlay import expand_for_account
+from osrs_planner.cost.prices import SnapshotPriceProvider
+from osrs_planner.engine.kg.json_store import JsonKGStore
+from osrs_planner.engine.state import AccountState
+
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+GOALS = [
+    ("Dragon scimitar", "item:4587"),
+    ("Tzhaar-ket-om (obby maul)", "item:6528"),
+    ("Attack potion(3)", "item:121"),
+    ("Voidwaker", "item:27690"),
+    ("Full Infinity", "gear_loadout_goal:infinity"),
+]
+
+
+def fmt_gold(r):
+    return f"{r.gold_cost:,} {r.currency}" if r.gold_cost is not None else f"{r.gold_status} ({r.currency})"
+
+
+def main():
+    provider = SnapshotPriceProvider.from_file(os.path.join(REPO, "data", "ge_prices.json"))
+    kg = JsonKGStore.from_dir(os.path.join(REPO, "kg"))
+    index = build_index_from_repo(REPO, provider)
+    for name, goal_id in GOALS:
+        print(f"\n=== {name} ({goal_id}) ===")
+        for mode in ("main", "ironman"):
+            card = expand_for_account(goal_id, AccountState(mode=mode), provider, index, kg=kg)
+            print(f"  [{mode}] gold_status={card.gold_status} routes={len(card.routes)}")
+            for rank, i in enumerate(card.rankings["by_gold"]):
+                r = card.routes[i]
+                tag = " (cheapest gold)" if rank == 0 else ""
+                extra = f"  inputs={len(r.inputs)}" if r.inputs else ""
+                print(f"    - {r.channel:>5}: {fmt_gold(r)}{extra}{tag}")
+            if card.notes:
+                print(f"    notes (downstream goals): {card.notes}")
+
+
+if __name__ == "__main__":
+    main()
