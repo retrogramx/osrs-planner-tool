@@ -17,13 +17,16 @@ def _setup():
     return provider, index
 
 
-def test_main_craft_unf_gold_is_summed_ge_inputs():
+def test_main_craft_unf_gold_is_summed_cheapest_inputs():
     provider, index = _setup()
     routes = price_routes("item:91", "main", provider, index)
     craft = [r for r in routes if r.channel == "craft"]
     assert len(craft) == 1
-    # Guam leaf (item:249) GE 248 + Vial of water (item:227) GE 4 = 252
-    assert craft[0].gold_cost == 252
+    # craft gold = sum of the CHEAPEST route of each input.
+    # Guam leaf (item:249): Task 7's gather route (Guam seed @ cheapest 25) now beats
+    # GE 248, so the leaf input is gathered, not ge-bought: gather 25.
+    # + Vial of water (item:227) GE 4 = 29 (was 252 before the gather route existed).
+    assert craft[0].gold_cost == 29
     assert craft[0].gold_status == "known"
     assert len(craft[0].inputs) == 2  # recursive sub-routes recorded
 
@@ -33,6 +36,8 @@ def test_main_craft_attack_potion_recurses_one_level():
     routes = price_routes("item:121", "main", provider, index)
     craft = [r for r in routes if r.channel == "craft"]
     assert len(craft) == 1
-    # unf cheapest = min(ge 434, craft 252) = 252 ; + eye of newt (item:221) ge 5 = 257
-    assert craft[0].gold_cost == 257
+    # Recurses into the unf, which now itself uses the cheaper gather route for Guam
+    # leaf (Task 7): unf cheapest = min(ge 434, craft 29) = 29 ;
+    # + eye of newt (item:221) ge 5 = 34 (was 257 before the gather route existed).
+    assert craft[0].gold_cost == 34
     assert craft[0].gold_status == "known"
