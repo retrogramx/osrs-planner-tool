@@ -1,6 +1,8 @@
 """Unit tests for kg_ingest.ids and kg_ingest.builders.quests (Task 3)."""
 from __future__ import annotations
 
+import pytest
+
 from osrs_planner.engine.kg.model import (
     AtomType, ConditionAtom, ConditionGroup, Edge, EdgeType, Node, NodeKind, Op,
 )
@@ -244,6 +246,47 @@ def test_build_quests_on_full_dataset_counts():
     assert len([e for e in edges if e.type is EdgeType.REQUIRES]) == 205
     for n in nodes:
         assert group_id(n.id, 0) in groups
-    assert len(groups) == len(set(groups.keys()))
+    records = data["records"]
+    expected_groups = sum(
+        1 + sum(1 for sr in rec.get("skill_reqs", []) if sr.get("ironman", False))
+        for rec in records
+        if rec["node_type"] in ("quest", "miniquest")
+    )
+    assert len(groups) == expected_groups, f"group id collision? {len(groups)} != {expected_groups}"
     edge_ids = [e.id for e in edges]
     assert len(edge_ids) == len(set(edge_ids))
+
+
+def test_build_quests_raises_on_unknown_node_type():
+    with pytest.raises(ValueError):
+        build_quests([{"name": "X", "node_type": "monster", "prereqs": [], "skill_reqs": []}])
+
+
+def test_build_quests_multi_ironman_reqs_get_distinct_or_groups():
+    rec = {
+        "name": "Test Multi Iron",
+        "node_type": "quest",
+        "prereqs": [],
+        "skill_reqs": [
+            {"skill": "Agility", "level": 60, "ironman": True, "boostable": False},
+            {"skill": "Thieving", "level": 55, "ironman": True, "boostable": False},
+        ],
+    }
+    _n, _e, groups, _d = build_quests([rec])
+    nid = quest_id("Test Multi Iron")
+    root_gid = group_id(nid, 0)
+    or_gid1 = group_id(nid, 1)
+    or_gid2 = group_id(nid, 2)
+    # both OR-wrapper groups must be distinct and present
+    assert or_gid1 != or_gid2
+    assert or_gid1 in groups
+    assert or_gid2 in groups
+    # both must be children of the root AND group
+    root = groups[root_gid]
+    assert or_gid1 in root.children
+    assert or_gid2 in root.children
+    # each OR group must have op=OR and parent=root
+    assert groups[or_gid1].op is Op.OR
+    assert groups[or_gid1].parent == root_gid
+    assert groups[or_gid2].op is Op.OR
+    assert groups[or_gid2].parent == root_gid

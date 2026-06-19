@@ -13,6 +13,8 @@ import re
 _GROUP_BAND = 0x10000000  # quest condition-group ids live at >= this
 _EDGE_BAND = 0x20000000   # quest requires-edge ids live at >= this
 _MASK = 0x0FFFFFFF        # 28-bit hash payload
+# IMPORTANT: future builders must use non-overlapping bands for their own group/edge ids;
+# assemble.py re-keys all builder-local ids to global ids before writing kg/*.json (Task 7).
 
 
 def slugify(name: str) -> str:

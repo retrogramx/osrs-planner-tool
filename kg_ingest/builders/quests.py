@@ -40,10 +40,8 @@ def build_quests(
 
         name = rec["name"]
         nid = quest_id(name)
-        data: dict = {}
-        if node_type == "miniquest":
-            data["miniquest"] = True
-        nodes.append(Node(id=nid, kind=NodeKind.QUEST, name=name, slug=slugify(name), data=data))
+        nodes.append(Node(id=nid, kind=NodeKind.QUEST, name=name, slug=slugify(name),
+                          data={"miniquest": True} if node_type == "miniquest" else {}))
 
         # --- the requires edge's root AND group (sub_index 0) ---
         root_gid = group_id(nid, 0)
