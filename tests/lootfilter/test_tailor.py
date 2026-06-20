@@ -11,6 +11,18 @@ def test_missing_beam_obtained_dim_and_hide_owned():
     assert "#define HIDE_OWNED false" in out
     assert "HIDE_OWNED && id:[400]" in out                    # hide-owned excludes ALL clog (200 is clog, kept)
 
+def test_rarity_splits_missing_beams():
+    # rarity_index buckets missing slots: ULTRA = red border + beam, RARE = beam, COMMON = panel only
+    st = build_account_state("ironman", bank_tsv="", clog_obtained=set())
+    out = emit_tailoring(st, clog_ids={11, 22, 33}, rarity_index={11: "ULTRA", 33: "COMMON"})  # 22 -> RARE default
+    lines = out.splitlines()
+    ultra = next(l for l in lines if "id:[11]" in l)
+    rare = next(l for l in lines if "id:[22]" in l)
+    common = next(l for l in lines if "id:[33]" in l)
+    assert "#ffff2b2b" in ultra and "showLootbeam = true;" in ultra   # rarest: red border + beam
+    assert "showLootbeam = true;" in rare                             # rare: beam
+    assert "showLootbeam" not in common                              # common: gold PANEL only, NO beam
+
 def test_no_account_state_empty():
     assert emit_tailoring(None, clog_ids={1, 2}).strip().endswith("*/")  # just the module header
 

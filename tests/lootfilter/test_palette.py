@@ -10,8 +10,16 @@ def test_escalation_beam_at_S_sound_at_A():
     assert e["A"]["sound"] and not e["B"]["sound"]
 
 def test_style_for_renders_hue():
-    s = style_for("#ff4169e1", "S")
-    assert s["textColor"] == "#ff4169e1" and s["showLootbeam"] == "true" and s["lootbeamColor"] == "#ff4169e1"
+    s = style_for("#ff4169e1", "S")  # S grade: solid hue PANEL + beam (text is auto-contrast, not the hue)
+    assert s["backgroundColor"] == "#ff4169e1" and s["showLootbeam"] == "true" and s["lootbeamColor"] == "#ff4169e1"
+
+def test_style_for_border_override():
+    # divine potions pass an icy border that overrides the auto-contrast border
+    assert style_for("#ff2a7a14", "C", border="#ffaee8ff")["borderColor"] == "#ffaee8ff"
+
+def test_style_for_low_value_is_text_only():
+    # D/E (cheap uncategorised loot) is plain text -- no panel -> keeps the screen calm
+    assert "backgroundColor" not in style_for("#ff52e052", "E")
 
 def test_material_colors():
     for m in ("bronze","iron","steel","black","mithril","adamant","rune","dragon"):
