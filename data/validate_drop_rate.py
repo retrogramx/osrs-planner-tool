@@ -58,12 +58,22 @@ def main() -> int:
         check(r["item_id"] in clog_ids, f"item_id outside collection-log scope: {r['item_id']}")
         check(r["item_id"] in item_ids or r["item_id"] in clog_ids,
               f"item_id neither in dictionary nor collection-log: {r['item_id']}")
-        # Inv 6: variants well-formed
+        # Inv 6: variants well-formed AND never-fabricated. The alt-rarity work added
+        # numeric variant rates, so the Inv-2 re-parse guard must apply here too: a
+        # numeric variant rate must have a raw string that re-parses to it.
         for v in r.get("variants", []):
             check("condition" in v, f"variant missing condition: {r['item']}@{r['source']}")
             vr = v.get("drop_rate")
             check(vr is None or (isinstance(vr, (int, float)) and 0 < vr <= 1),
                   f"variant rate out of range: {r['item']}@{r['source']} {v}")
+            if vr is not None:
+                vraw = v.get("drop_rate_raw")
+                check(bool(vraw), f"fabricated variant rate (no raw): {r['item']}@{r['source']} {v}")
+                if vraw:
+                    vrp, _vr2, _vs2 = parse_rarity(vraw)
+                    check(vrp is not None and math.isclose(vrp, vr, rel_tol=1e-6),
+                          f"variant raw does not re-parse to rate (fabricated?): "
+                          f"{r['item']}@{r['source']} raw={vraw!r} rate={vr}")
 
     # Inv 7: envelope consistency
     check(doc.get("_provenance", {}).get("record_count") == len(records),
