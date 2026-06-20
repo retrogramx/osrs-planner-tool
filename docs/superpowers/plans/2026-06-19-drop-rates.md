@@ -13,7 +13,7 @@
 - **Data sourcing ONLY from the OSRS Wiki** (Bucket `dropsline`); pin values from the source, never from memory. Descriptive `User-Agent` required on every wiki API call (default client UAs are blocked).
 - **Never fabricate:** a numeric `drop_rate` MUST have a `drop_rate_raw` string that re-parses to it; otherwise `drop_rate` is `null` with a machine-readable `drop_rate_status` reason. No invented/blended numbers.
 - **Committed + deterministic:** raw API responses are cached to committed `data/raw/dropsline_*.json`; `drop_rates.json` is regenerable from that cache byte-stably. No live fetch during validate/test.
-- **Scope = collection-log items only** (1,907 records / 1,701 distinct item ids in `data/collection_log.json`). Clue reward-casket rarities and regular-monster full tables are deferred (spec §12).
+- **Scope = collection-log items only** (1,907 records / 1,701 distinct item ids / **1,609 distinct item names** in `data/collection_log.json`; the fetch loops over distinct names). Clue reward-casket rarities and regular-monster full tables are deferred (spec §12).
 - **IDs:** items are numeric `item_id` (resolve via `data/item_dictionary.json`); the dataset stores the integer `item_id` + display `item`/`source`.
 - **Confirmed API shape (verified live 2026-06-19):** `GET https://oldschool.runescape.wiki/api.php?action=bucket&format=json&query=bucket('dropsline').select('item_name','drop_json','rare_drop_table').where('item_name','<NAME>').limit(<N>).run()`. Each result row's `drop_json` carries keys `"Dropped from"` (source, may have a `#variant` suffix e.g. `"Abyssal demon#Wilderness Slayer Cave"`), `"Rarity"` (e.g. `"1/512"`, `"12/128"`), `"Drop Quantity"`, `"Rolls"` (int, may be >1), `"Drop level"`. Golden truth: Abyssal whip → `Abyssal demon` @ `1/512`.
 
@@ -50,6 +50,7 @@
 
 ```python
 import json, os
+import pytest
 from data._dropsline import dropsline_query_url, parse_bucket_response
 
 def test_query_url_targets_dropsline_bucket():
@@ -59,6 +60,16 @@ def test_query_url_targets_dropsline_bucket():
     assert "select('item_name','drop_json','rare_drop_table')" in url
     assert "Abyssal%20whip" in url or "Abyssal+whip" in url
     assert ".limit(30).run()" in url
+
+def test_query_url_escapes_apostrophe():  # M1 — 182 clog names carry an apostrophe
+    url = dropsline_query_url("Ahrim's hood")
+    # the apostrophe must be backslash-escaped INSIDE the Lua literal, then URL-encoded
+    from urllib.parse import unquote
+    assert "\\'" in unquote(url), "apostrophe not escaped -> the API would return an error envelope"
+
+def test_parse_bucket_raises_on_error_envelope():  # M2 — never swallow API errors
+    with pytest.raises(ValueError):
+        parse_bucket_response({"error": "')' expected near 's'."})
 
 def test_parse_bucket_decodes_drop_json_string():
     # Bucket may deliver drop_json as a JSON-encoded STRING; decode it.
@@ -104,15 +115,31 @@ import urllib.request
 API = "https://oldschool.runescape.wiki/api.php"
 UA = "GildedTome/0.1 (drop-rate data brick; contact: retrogramx on github)"
 
+def _lua_escape(name: str) -> str:
+    """Escape a name for a single-quoted Lua bucket string literal. An unescaped
+    apostrophe (Ahrim's, Tumeken's, d'hide -- 182 of the 1,609 clog names) closes
+    the literal early and the API returns an ERROR envelope, not rows. Verified
+    fix: backslash-escape backslashes then apostrophes."""
+    return name.replace(chr(92), chr(92) * 2).replace(chr(39), chr(92) + chr(39))
+
 def dropsline_query_url(item_name: str, limit: int = 500) -> str:
     q = ("bucket('dropsline')"
          ".select('item_name','drop_json','rare_drop_table')"
-         f".where('item_name','{item_name}')"
+         f".where('item_name','{_lua_escape(item_name)}')"
          f".limit({limit}).run()")
     return f"{API}?action=bucket&format=json&query={urllib.parse.quote(q)}"
 
 def parse_bucket_response(payload: dict) -> list[dict]:
-    rows = payload.get("bucket") or payload.get("data", {}).get("bucket") or []
+    # An API error (e.g. a malformed query) returns an envelope with NO 'bucket'
+    # key but an 'error' string. RAISE -- never let it silently become [] (which
+    # build_records would mislabel 'null-not-in-bucket', hiding a real failure).
+    rows = payload.get("bucket")
+    if rows is None:
+        rows = payload.get("data", {}).get("bucket")
+    if rows is None:
+        if "error" in payload:
+            raise ValueError(f"dropsline query error: {payload['error']}")
+        rows = []
     out = []
     for r in rows:
         dj = r.get("drop_json")
@@ -154,18 +181,27 @@ Expected: PASS (3 tests).
 
 - [ ] **Step 5: Produce the committed raw fixture (live fetch, small)**
 
-Run a one-off to fetch ~6 representative items live and commit them as the fixture every later task tests against (whip = note-1 proof; granite maul = generic-Slayer resolution; Tumeken's shadow = a ToA unique for §7; Dragon pickaxe = multi-source; Twisted bow = CoX raid; Bandos chestplate = boss).
+Fetch a representative set live and commit it as the fixture every later task tests against. Each item pins a specific case the adversarial review found on real data:
+- `Abyssal whip` — note-1 proof (→ `Abyssal demon` 1/512) + a superior alt-source (`Greater abyssal demon`, no `#`) + Unsired.
+- `Tumeken's shadow (uncharged)` — **apostrophe (M1)** AND the ToA case (→ `Chest (Tombs of Amascut)` **1/24**, a flat fraction — M4).
+- `Ahrim's hood` — another **apostrophe (M1)**.
+- `Pet kraken` — **comma denominator (M3)** (→ `Kraken` `1/3,000`).
+- `Imbued heart` — **superior + comma (M3/M6)** (rows like `1/1,288`).
+- `Twisted bow` — CoX raid (→ `Ancient chest` 2/69).
+- `Granite maul` — generic-Slayer resolution (→ `Gargoyle`).
+- `Coins` — **multi-slot same base (M6)** (`Mithril dragon` at 17/128, 7/128, 1/780.19).
 
 Run:
 ```bash
 venv/bin/python -c "
 from data._dropsline import fetch_dropsline
-items=['Abyssal whip','Granite maul',\"Tumeken's shadow (uncharged)\",'Dragon pickaxe','Twisted bow','Bandos chestplate']
+items=['Abyssal whip',\"Tumeken's shadow (uncharged)\",\"Ahrim's hood\",'Pet kraken',
+       'Imbued heart','Twisted bow','Granite maul','Coins']
 fetch_dropsline(items, 'data/raw/dropsline_fixture.json')
 print('fixture written')
 "
 ```
-Then eyeball `data/raw/dropsline_fixture.json`: confirm `Abyssal whip` rows include `"Dropped from": "Abyssal demon#..."` with `"Rarity":"1/512"`. If the envelope key differs from `bucket`, fix `parse_bucket_response` and re-run. **Commit only after the fixture is confirmed correct.**
+Then eyeball `data/raw/dropsline_fixture.json` and confirm ON REAL DATA: (1) `Abyssal whip` → `"Dropped from":"Abyssal demon#..."`, `"Rarity":"1/512"`; (2) the **apostrophe** items (`Tumeken's shadow`, `Ahrim's hood`) returned real rows, NOT an error/empty list (proves M1/M2); (3) `Pet kraken` Rarity is literally `"1/3,000"` (proves the M3 comma case is live). If any apostrophe item is empty, the escaping is broken — fix before committing. **Commit only after the fixture is confirmed correct.**
 
 - [ ] **Step 6: Commit**
 
@@ -203,6 +239,14 @@ def test_non_unit_numerator():
 def test_decimal_denominator():
     rate, _, status = parse_rarity("1/26.9")
     assert approx(rate, 1/26.9) and status == "sourced"
+
+def test_comma_thousands_separator():  # M3 — real API emits "1/3,000", "1/16,384"
+    rate, _, status = parse_rarity("1/3,000")
+    assert approx(rate, 1/3000) and status == "sourced"
+    rate2, _, status2 = parse_rarity("1/16,384")
+    assert approx(rate2, 1/16384) and status2 == "sourced"
+    rate3, _, status3 = parse_rarity("1/2,687.2")  # comma + decimal
+    assert approx(rate3, 1/2687.2) and status3 == "sourced"
 
 def test_embedded_rolls_multiplier():
     rate, rolls, status = parse_rarity("2 × 1/128")
@@ -252,7 +296,11 @@ def parse_rarity(raw):
     """Return (rate_per_roll: float|None, rolls_in_string: int, status: str)."""
     if raw is None:
         return (None, 1, "null-qualitative")
-    s = str(raw).strip()
+    # M3: the API emits comma thousands-separators ("1/3,000", "1/16,384") for the
+    # RAREST uniques -- strip them so the fraction regex matches (a comma never
+    # appears except as a group separator in these strings). Without this every
+    # denominator >=1000 silently becomes null-unparsed.
+    s = str(raw).strip().replace(",", "")
     low = s.lower()
     if low in ("always", "1/1"):
         return (1.0, 1, "sourced")
@@ -296,7 +344,7 @@ git commit -m "drop-rates: rarity grammar parser (never-fabricate)"
 
 **Interfaces:**
 - Consumes: `data._dropsline` (cache shape `{item_name: [rows]}`), `data._rarity_grammar.parse_rarity`.
-- Produces: `split_source(dropped_from: str) -> tuple[str, str | None]` (`"Abyssal demon#Wilderness Slayer Cave"` → `("Abyssal demon", "Wilderness Slayer Cave")`); `build_records(clog_records: list[dict], cache: dict) -> list[dict]` returning `drop_rates.json` records per the spec §3 schema (each clog record already carries `item_id`, so no name→id map is needed; ToA-special handling + non-`#` variants are Tasks 5/6).
+- Produces: `split_source(dropped_from) -> (base, variant|None)` (`"Abyssal demon#Wilderness Slayer Cave"` → `("Abyssal demon", "Wilderness Slayer Cave")`); `classify_node_type(base, clog_node) -> str`; `build_records(clog_records, cache) -> list[dict]` — one record per `(item_id, base source)` per spec §3, iterating per `item_id` (a name maps to several ids), emitting `source_condition` ("superior"|None), keeping EVERY input row (non-canonical rows → `variants[]`), and deferring clue reward-caskets to null. ToA disclosure is layered by Task 5's `apply_toa`.
 
 - [ ] **Step 1: Write the failing test** (`tests/drop_rates/test_parse_drop_rates.py`)
 
@@ -363,67 +411,82 @@ def split_source(dropped_from):
     return (base.strip(), variant.strip() or None)
 
 def _status_for_no_rows(node_type):
-    if node_type in ("clue",):
-        return "null-not-in-bucket"
     if node_type in ("minigame", "activity"):
         return "null-activity"
     return "null-not-in-bucket"
 
+# Raid reward-chest source labels (dropsline names the CHEST, not the raid).
+_RAID_CHESTS = {"Chest (Tombs of Amascut)", "Ancient chest", "Monumental chest"}
+# Deterministic canonical pick (N3): prefer the plain/Standard/Regular variant.
+_CANON_RANK = {None: 0, "Standard": 1, "Regular": 1, "Normal": 1}
+
+def _is_superior(base):  # M6 — superior slayer monsters are a distinct source
+    low = (base or "").lower()
+    return low.startswith("greater ") or "superior" in low
+
+def classify_node_type(base, clog_node):
+    """Coarse v1 source classification (disclosed simplification): clue if a reward
+    casket; raid if a known raid chest; else 'monster' (boss vs monster is not
+    distinguished without a curated list -- a documented v1 limitation)."""
+    if base.startswith("Reward casket"):
+        return "clue"
+    if base in _RAID_CHESTS:
+        return "raid"
+    return "monster"
+
+def _null_record(item_id, item, source, node_type, status):
+    return {"item_id": item_id, "item": item, "source": source,
+            "source_node_type": node_type, "source_condition": None,
+            "drop_rate": None, "drop_rate_raw": "", "rolls": 1,
+            "drop_rate_status": status, "variants": []}
+
 def build_records(clog_records, cache):
-    """Return drop_rates.json records (base v1: #-variant sources collapsed to a
-    canonical base source; the first/highest-rate row per base wins, alternates
-    captured as variants). ToA + non-# conditional variants are Tasks 5/6."""
-    out = []
-    seen = set()  # (item_id, base_source) dedupe
-    # one pass over distinct clog item names
-    by_name = {}
+    """One record per (item_id, base source). NO input row is dropped (M6): every
+    non-canonical row of a base -- alternate drop-table slots AND #variants -- lands
+    in variants[]. Iterates per item_id, since a name can map to several ids (M5).
+    Clue reward-casket sources are DEFERRED to v2 (spec §12): null + reason. Never
+    fabricates. ToA canonical/scaling is layered on in Task 5 (apply_toa)."""
+    # item_id -> (name, fallback clog node_type); a name may carry several ids (M5)
+    by_id = {}
     for c in clog_records:
-        by_name.setdefault(c["item"], c)
-    for item_name, c in by_name.items():
-        item_id = c["item_id"]
+        by_id.setdefault(c["item_id"], (c["item"], c.get("node_type", "other")))
+    out = []
+    for item_id, (item_name, clog_node) in by_id.items():
         rows = cache.get(item_name) or []
-        if not rows:
-            key = (item_id, "(unsourced)")
-            if key in seen:
-                continue
-            seen.add(key)
-            out.append({
-                "item_id": item_id, "item": item_name, "source": "(unsourced)",
-                "source_node_type": c.get("node_type", "other"),
-                "drop_rate": None, "drop_rate_raw": "", "rolls": 1,
-                "drop_rate_status": _status_for_no_rows(c.get("node_type", "other")),
-                "variants": [],
-            })
-            continue
-        # group rows by base source
         by_base = {}
         for row in rows:
             dj = row.get("drop_json") or {}
             base, variant = split_source(dj.get("Dropped from"))
-            if not base:
-                continue
-            by_base.setdefault(base, []).append((variant, dj))
+            if base:
+                by_base.setdefault(base, []).append((variant, dj))
+        if not by_base:
+            out.append(_null_record(item_id, item_name, "(unsourced)", clog_node,
+                                    _status_for_no_rows(clog_node)))
+            continue
         for base, entries in by_base.items():
-            key = (item_id, base)
-            if key in seen:
+            node_type = classify_node_type(base, clog_node)
+            if base.startswith("Reward casket"):  # N2: clue caskets deferred (spec §12)
+                out.append(_null_record(item_id, item_name, base, node_type,
+                                        "null-clue-casket-deferred"))
                 continue
-            seen.add(key)
-            # canonical = the first entry; capture #-variants as variants[]
-            primary_variant, dj = entries[0]
+            # N3: deterministic canonical (prefer plain/Standard/Regular, then name)
+            entries = sorted(entries, key=lambda e: (_CANON_RANK.get(e[0], 2), e[0] or ""))
+            _pv, dj = entries[0]
             rate, str_rolls, status = parse_rarity(dj.get("Rarity"))
             field_rolls = dj.get("Rolls")
             rolls = int(field_rolls) if isinstance(field_rolls, (int, float)) and field_rolls else str_rolls
             variants = []
-            for variant, edj in entries:
-                if variant is None:
-                    continue
+            for variant, edj in entries[1:]:  # M6: keep EVERY other row, none dropped
                 vrate, _vr, _vs = parse_rarity(edj.get("Rarity"))
-                variants.append({"condition": variant, "drop_rate": vrate,
+                cond = variant if variant else "alternate drop-table slot"
+                variants.append({"condition": cond, "drop_rate": vrate,
                                  "drop_rate_raw": str(edj.get("Rarity") or "")})
             out.append({
                 "item_id": item_id, "item": item_name, "source": base,
-                "source_node_type": c.get("node_type", "other"),
-                "drop_rate": rate, "drop_rate_raw": (str(dj.get("Rarity")) if status == "sourced" else ""),
+                "source_node_type": node_type,
+                "source_condition": "superior" if _is_superior(base) else None,
+                "drop_rate": rate,
+                "drop_rate_raw": str(dj.get("Rarity")) if status == "sourced" else "",
                 "rolls": rolls, "drop_rate_status": status, "variants": variants,
             })
     out.sort(key=lambda r: (r["item_id"], r["source"]))
@@ -494,7 +557,7 @@ if __name__ == "__main__":
 
 - [ ] **Step 2: Bulk-fetch the raw cache (live)**
 
-First confirm whether Bucket supports an `in`-list (one batched query) or needs per-item calls; if unsure, per-item is acceptable (cache it). Distinct clog item names ≈ 1,701.
+The Bucket `where('item_name','in',[...])` form is REJECTED by the API (`"unexpected symbol near '['"`), so a **per-item loop is mandatory** — ~**1,609 distinct clog item names** (verified), with `sleep_s` + the descriptive UA. The M1 apostrophe escape + M2 error-raise mean apostrophe items now resolve (and a real API error aborts the run loudly instead of caching `[]`).
 
 ```bash
 venv/bin/python -c "
@@ -502,12 +565,12 @@ import json
 from data._dropsline import fetch_dropsline
 clog=json.load(open('data/collection_log.json'))['records']
 names=sorted({c['item'] for c in clog})
-print('fetching', len(names), 'items...')
+print('fetching', len(names), 'items...')  # ~1,609
 fetch_dropsline(names, 'data/raw/dropsline_full.json', sleep_s=0.1)
 print('done')
 "
 ```
-Spot-check: open `data/raw/dropsline_full.json`, confirm `Abyssal whip` and `Granite maul` have rows with `Dropped from`/`Rarity`. (If the wiki rate-limits, raise `sleep_s` or chunk.)
+Spot-check `data/raw/dropsline_full.json`: confirm `Abyssal whip`/`Granite maul` have rows; AND confirm an **apostrophe item** (`Ahrim's hood`, `Osmumten's fang`) returned real rows (proves the M1 fix held over the full run). If the wiki rate-limits, raise `sleep_s`. (~1,609 × 0.1s ≈ 3 min + latency.)
 
 - [ ] **Step 3: Generate + sanity-check the dataset**
 
@@ -547,41 +610,42 @@ git commit -m "drop-rates: bulk-source dropsline + emit committed drop_rates.jso
 - Modify: `data/parse_drop_rates.py` (apply ToA overrides in `build_records`)
 
 **Interfaces:**
-- Produces: `TOA_UNIQUES: dict[str, dict]` (canonical rate + formula notes per ToA unique) and `apply_toa(record: dict) -> dict` that, when `record["source"]` is a ToA source, sets `drop_rate` to the documented canonical (reference invocation) and populates `variants[]` with the invocation scaling + a `drop_rate_status`/note disclosing it is invocation-canonical.
+- Produces: `TOA_UNIQUES: dict[str, dict]` (per-unique invocation/points notes, keyed by item name) and `apply_toa(record: dict) -> dict`. **Reality (verified live, M4):** dropsline gives ToA uniques a SINGLE flat row `"Dropped from": "Chest (Tombs of Amascut)"`, `"Rarity": "1/24"` (Osmumten's fang `7/24`) — already a `sourced` numeric, NOT a formula and NOT `"Tombs of Amascut"`. So `apply_toa` does NOT rescue a null; it keys on `record["source"] == "Chest (Tombs of Amascut)"` and, for an already-`sourced` record, **ATTACHES** an invocation-scaling disclosure to `variants[]` (the points→chance formula is self-sourced from the ToA wiki, since dropsline does not expose it). No-op for every other source.
 
 - [ ] **Step 1: RESEARCH (pin from the wiki, not memory)**
 
-Read the OSRS Wiki Tombs of Amascut drop-mechanics pages (e.g. `Tombs_of_Amascut/Strategies`, `Tombs_of_Amascut` rewards, the unique-table mechanic). Determine, with source URLs in the module docstring:
-- The per-raid unique-chance formula vs raid level (invocation) and how points partition which unique drops.
-- A sensible **canonical reference** (e.g. a commonly-run invocation like 300/400) to store as `drop_rate`.
-- Each ToA unique item + its source label as it appears in `dropsline` (the §5 spike fixture includes `Tumeken's shadow (uncharged)` — confirm its `Dropped from` label).
+dropsline gives only the flat reference fraction (`1/24` at the chest). The raid-level (invocation) + points → unique-chance formula is NOT in dropsline — **self-source it** from the OSRS Wiki ToA pages (`Tombs_of_Amascut`, `Tombs_of_Amascut/Strategies`, the rewards/unique-table mechanic). Determine, with source URLs in the module docstring:
+- The unique-chance vs raid level (invocation) relationship + how points partition which unique drops, and the per-unique split.
+- Each ToA unique item name + confirm its `dropsline` `Dropped from` label is `"Chest (Tombs of Amascut)"` and its flat rate (from the committed fixture/full cache).
 
-Write the findings as a module docstring with pinned formulae + source URLs.
+Write the findings as a module docstring with pinned formulae + source URLs. **Keep the dropsline flat fraction as the record's `drop_rate`/`drop_rate_raw`** (it is a real reference number); the formula goes in `variants[]`/notes as a disclosure.
 
 - [ ] **Step 2: Write the failing test** (`tests/drop_rates/test_toa.py`)
 
 ```python
 from data._toa_drop_rates import TOA_UNIQUES, apply_toa
 
-def test_toa_unique_is_invocation_canonical():
-    # a ToA source record gets a canonical numeric + a disclosed scaling variant
-    rec = {"item": "Tumeken's shadow (uncharged)", "source": "Tombs of Amascut",
-           "drop_rate": None, "drop_rate_raw": "", "rolls": 1,
-           "drop_rate_status": "null-unparsed", "variants": []}
+def test_toa_attaches_invocation_disclosure():
+    # dropsline already gives a flat 1/24 -> 'sourced'. apply_toa ATTACHES the
+    # invocation-scaling disclosure to variants[]; it does NOT rescue a null (M4).
+    rec = {"item": "Tumeken's shadow (uncharged)", "source": "Chest (Tombs of Amascut)",
+           "source_node_type": "raid", "source_condition": None,
+           "drop_rate": 1/24, "drop_rate_raw": "1/24", "rolls": 1,
+           "drop_rate_status": "sourced", "variants": []}
     out = apply_toa(rec)
-    assert out["drop_rate"] is not None and 0 < out["drop_rate"] <= 1
-    assert out["drop_rate_status"] == "sourced"
+    assert out["drop_rate_status"] == "sourced" and out["drop_rate"] is not None
     assert any("invocation" in v["condition"].lower() for v in out["variants"])
 
 def test_apply_toa_noop_for_non_toa():
-    rec = {"item": "Abyssal whip", "source": "Abyssal demon", "drop_rate": 1/512,
-           "drop_rate_raw": "1/512", "rolls": 1, "drop_rate_status": "sourced", "variants": []}
+    rec = {"item": "Abyssal whip", "source": "Abyssal demon", "source_node_type": "monster",
+           "source_condition": None, "drop_rate": 1/512, "drop_rate_raw": "1/512",
+           "rolls": 1, "drop_rate_status": "sourced", "variants": []}
     assert apply_toa(rec) == rec
 ```
 
-- [ ] **Step 3: Implement `data/_toa_drop_rates.py`** with the researched `TOA_UNIQUES` table (canonical rate + invocation formula notes, pinned from Step 1) and `apply_toa(record) -> record`. `apply_toa` is a no-op (returns the record unchanged) unless `record["source"]` is a ToA source; for ToA uniques it sets `drop_rate` to the documented canonical, `drop_rate_status="sourced"`, and appends an `{"condition": "invocation <ref> (scales with raid level/points)", ...}` entry to `variants[]`.
+- [ ] **Step 3: Implement `data/_toa_drop_rates.py`** with the researched `TOA_UNIQUES` table (per-unique invocation/points notes, pinned from Step 1) and `apply_toa(record) -> record`. `apply_toa` is a no-op unless `record["source"] == "Chest (Tombs of Amascut)"`. For a ToA record (already `sourced` with the flat `1/24`-style `drop_rate` from dropsline), it does NOT overwrite `drop_rate`/`drop_rate_raw`; it APPENDS an `{"condition": "invocation <ref> (scales with raid level/points)", "drop_rate": <if known>, "drop_rate_raw": ""}` disclosure to `variants[]`.
 
-  Then wire it into `build_records`: add `from data._toa_drop_rates import apply_toa` to the imports (the repo-root path insert at the top already makes `data.X` resolve), and change the two `out.append({...})` calls to `out.append(apply_toa({...}))` so every record passes through it (non-ToA records are returned unchanged). Re-run `venv/bin/python data/parse_drop_rates.py` to regenerate `drop_rates.json`.
+  Then wire it into `build_records`: add `from data._toa_drop_rates import apply_toa` to the imports (the repo-root path insert already makes `data.X` resolve), and wrap the MAIN sourced append — change `out.append({ ... })` (the sourced-record branch, not the two `_null_record` branches) to `out.append(apply_toa({ ... }))` so ToA records get the disclosure and every other record passes through unchanged. Re-run `venv/bin/python data/parse_drop_rates.py` to regenerate `drop_rates.json`.
 
 - [ ] **Step 4: Run tests + regenerate**
 
@@ -596,46 +660,83 @@ git commit -m "drop-rates: ToA invocation/points resolver (deep-dive, wiki-pinne
 
 ---
 
-## Task 6: Conditional `variants[]` — superior / on-task / raid scaling
+## Task 6: CoX/ToB raid-scaling disclosure + verify variants/superior on real data
+
+Superior tagging (`source_condition`), `#variant` location/mode rows, and multi-slot
+no-drop were all folded into Task 3's `build_records`. This task (a) VERIFIES that
+behavior on the committed fixture (so M5/M6 are pinned by tests), and (b) adds the
+remaining §6 raid-scaling DISCLOSURE for CoX/ToB (parallel to Task 5's ToA). Detailed
+CoX/ToB formulae are a v2 follow-up; v1 ships the disclosure note.
 
 **Files:**
-- Modify: `data/parse_drop_rates.py` (enrich `variants[]`), `tests/drop_rates/test_parse_drop_rates.py`
+- Create: `data/_raid_scaling.py`
+- Modify: `data/parse_drop_rates.py` (apply the raid disclosure), `tests/drop_rates/test_parse_drop_rates.py`
 
 **Interfaces:**
-- Consumes: the `#variant` rows already captured in Task 3 (location/mode variants like `"Wilderness Slayer Cave"`).
-- Produces: variants now also tag the **superior-slayer** condition (a source whose base name starts with `"Greater "` or is a known superior, e.g. the orb/heart drops) and carry raid-scaling notes for CoX/ToB sources, per spec §6. Base `drop_rate` stays the canonical; variants never overwrite it.
+- Produces: `apply_raid_scaling(record) -> record`, a no-op unless `record["source"]` is a CoX (`"Ancient chest"`) or ToB (`"Monumental chest"`) raid chest; for those it APPENDS a `{"condition": "scales with points/team size", "drop_rate": None, "drop_rate_raw": ""}` disclosure to `variants[]` (the flat dropsline rate stays as `drop_rate`).
 
-- [ ] **Step 1: Write the failing test** (append to `tests/drop_rates/test_parse_drop_rates.py`)
+- [ ] **Step 1: Write the failing tests** (append to `tests/drop_rates/test_parse_drop_rates.py`)
 
 ```python
-def test_superior_source_tagged_as_variant_condition():
-    from data.parse_drop_rates import classify_condition
-    assert classify_condition("Greater abyssal demon", None) == "superior"
-    assert classify_condition("Abyssal demon", "Wilderness Slayer Cave") == "Wilderness Slayer Cave"
-    assert classify_condition("Abyssal demon", None) is None
+import math
+from data.parse_drop_rates import build_records
+from data._raid_scaling import apply_raid_scaling
+
+def _fixture():
+    import json, os
+    return json.load(open(os.path.join(REPO, "data", "raw", "dropsline_fixture.json")))
+
+def test_superior_source_tagged_on_real_data():  # M6 — superior is a record field
+    cache = _fixture()
+    clog = [{"item": "Abyssal whip", "item_id": 4151, "source": "Slayer", "node_type": "activity"}]
+    recs = build_records(clog, cache)
+    greater = [r for r in recs if r["source"] == "Greater abyssal demon"]
+    assert greater and greater[0]["source_condition"] == "superior"
+
+def test_multi_slot_same_base_keeps_all_rates():  # M6 — no input row dropped
+    cache = {"Coins": [
+        {"item_name": "Coins", "drop_json": {"Dropped from": "Mithril dragon", "Rarity": "17/128", "Rolls": 1}},
+        {"item_name": "Coins", "drop_json": {"Dropped from": "Mithril dragon", "Rarity": "7/128", "Rolls": 1}},
+    ]}
+    clog = [{"item": "Coins", "item_id": 995, "source": "x", "node_type": "other"}]
+    recs = build_records(clog, cache)
+    md = [r for r in recs if r["source"] == "Mithril dragon"]
+    assert len(md) == 1
+    rates = [md[0]["drop_rate"]] + [v["drop_rate"] for v in md[0]["variants"]]
+    assert any(math.isclose(x, 17/128) for x in rates) and any(math.isclose(x, 7/128) for x in rates)
+
+def test_apply_raid_scaling_attaches_for_cox_noop_otherwise():
+    cox = {"source": "Ancient chest", "variants": []}
+    assert any("scales" in v["condition"].lower() for v in apply_raid_scaling(cox)["variants"])
+    other = {"source": "Abyssal demon", "variants": []}
+    assert apply_raid_scaling(other)["variants"] == []
 ```
 
 - [ ] **Step 2: Run to verify it fails**
 
-Run: `venv/bin/python -m pytest tests/drop_rates/test_parse_drop_rates.py::test_superior_source_tagged_as_variant_condition -v`
-Expected: FAIL (`classify_condition` undefined).
+Run: `venv/bin/python -m pytest tests/drop_rates/test_parse_drop_rates.py -k "superior or multi_slot or raid_scaling" -v`
+Expected: FAIL (`data._raid_scaling` not found).
 
-- [ ] **Step 3: Implement `classify_condition` + use it in `build_records`**
+- [ ] **Step 3: Implement `data/_raid_scaling.py`**
 
 ```python
-_SUPERIOR_PREFIXES = ("greater ",)
-_SUPERIOR_NAMES = {"superior"}  # extended from the wiki superior list during impl
+# data/_raid_scaling.py
+"""CoX/ToB raid-scaling DISCLOSURE. dropsline gives a flat chest rate; the real
+chance scales with points (CoX) / team size + mode (ToB). v1 attaches a disclosure
+note to variants[]; the detailed formula is a v2 follow-up (like clue caskets)."""
+from __future__ import annotations
 
-def classify_condition(base_source, hash_variant):
-    """Return a variant condition label, or None if this is the plain base drop."""
-    if hash_variant:
-        return hash_variant
-    low = (base_source or "").lower()
-    if low.startswith(_SUPERIOR_PREFIXES) or any(n in low for n in _SUPERIOR_NAMES):
-        return "superior"
-    return None
+_RAID_CHESTS = {"Ancient chest", "Monumental chest"}  # CoX, ToB (ToA -> apply_toa)
+
+def apply_raid_scaling(record):
+    if record.get("source") in _RAID_CHESTS:
+        record = dict(record)
+        record["variants"] = list(record.get("variants", [])) + [
+            {"condition": "scales with points/team size", "drop_rate": None, "drop_rate_raw": ""}
+        ]
+    return record
 ```
-Use `classify_condition` when building `variants[]` so superior/location/mode rows are tagged. Re-run `python data/parse_drop_rates.py`.
+Wire it into `build_records`: add `from data._raid_scaling import apply_raid_scaling` and wrap the main sourced append as `out.append(apply_raid_scaling(apply_toa({ ... })))`. Re-run `venv/bin/python data/parse_drop_rates.py`.
 
 - [ ] **Step 4: Run tests + regenerate**
 
@@ -644,8 +745,8 @@ Run: `venv/bin/python -m pytest tests/drop_rates/ -v` (all PASS), then `venv/bin
 - [ ] **Step 5: Commit**
 
 ```bash
-git add data/parse_drop_rates.py tests/drop_rates/test_parse_drop_rates.py data/drop_rates.json
-git commit -m "drop-rates: conditional variants (superior/on-task/location/raid)"
+git add data/_raid_scaling.py data/parse_drop_rates.py tests/drop_rates/test_parse_drop_rates.py data/drop_rates.json
+git commit -m "drop-rates: CoX/ToB raid-scaling disclosure + superior/multi-slot verification"
 ```
 
 ---
@@ -774,13 +875,20 @@ def main() -> int:
         print(f"DROP-RATE VALIDATION FAILED -- {len(errors)} violation(s):")
         for e in errors[:50]: print("  -", e)
         return 1
-    # coverage report (informational)
+    # coverage report (informational; spec §9.8)
     by_status = Counter(r["drop_rate_status"] for r in records)
     by_node = Counter(r["source_node_type"] for r in records)
+    clog = json.load(open(os.path.join(ns.data, "collection_log.json"), encoding="utf-8"))["records"]
+    slayer_ids = {c["item_id"] for c in clog if c.get("source") == "Slayer"}
+    resolved_ids = {r["item_id"] for r in records if r["drop_rate_status"] == "sourced"}
+    slayer_resolved = len(slayer_ids & resolved_ids)
+    toa = sum(1 for r in records if r["source"] == "Chest (Tombs of Amascut)")
     print("DROP-RATE VALIDATION PASSED -- all invariants hold.")
     print(f"  records: {len(records)} | sourced: {by_status.get('sourced', 0)}")
     print(f"  by status: {dict(by_status)}")
     print(f"  by source_node_type: {dict(by_node)}")
+    print(f"  slayer-bundle uniques resolved to a real monster rate: {slayer_resolved}/{len(slayer_ids)}")
+    print(f"  ToA records (invocation-canonical, scaling disclosed in variants): {toa}")
     return 0
 
 if __name__ == "__main__":
@@ -827,6 +935,14 @@ def test_whip_from_abyssal_demon():  # note-1 proof on real data
 def test_granite_maul_resolves_to_a_real_monster():
     hits = [r for r in RECS if r["item"] == "Granite maul" and r["drop_rate_status"] == "sourced"]
     assert hits, "Granite maul did not resolve to any sourced monster rate"
+
+def test_comma_denominator_unique_parsed():  # M3 — a rare unique with a comma rate
+    pk = [r for r in RECS if r["item"] == "Pet kraken" and r["source"] == "Kraken"]
+    assert pk and pk[0]["drop_rate_status"] == "sourced"
+    assert math.isclose(pk[0]["drop_rate"], 1/3000, rel_tol=1e-6)  # raw "1/3,000"
+
+def test_superior_condition_present_somewhere():  # M6 — superior tagging survived to data
+    assert any(r.get("source_condition") == "superior" for r in RECS)
 
 def test_no_fabricated_rates():
     for r in RECS:

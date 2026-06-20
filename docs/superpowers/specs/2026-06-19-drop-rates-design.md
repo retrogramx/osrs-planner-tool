@@ -40,7 +40,8 @@ Standard envelope (`_provenance` / `records` / `_excluded`) matching the other `
   "item_id": 4151,
   "item": "Abyssal whip",
   "source": "Abyssal demon",            // the REAL dropping NPC/activity (resolved, not a clog label)
-  "source_node_type": "monster",         // monster | boss | raid | minigame | activity | clue | other
+  "source_node_type": "monster",         // monster | raid | clue (coarse v1; boss/monster not split)
+  "source_condition": null,              // "superior" for superior-slayer sources (Greater <X>); else null
   "drop_rate": 0.001953,                 // canonical numeric probability in (0,1], or null
   "drop_rate_raw": "1/512",              // verbatim wiki string (audit + forward-compat); "" only when null
   "rolls": 1,                            // independent roll count for this drop (default 1)
@@ -53,11 +54,11 @@ Standard envelope (`_provenance` / `records` / `_excluded`) matching the other `
 
 **`drop_rate_status` enum (the honesty ledger — every null carries a reason):**
 - `sourced` — a real numeric rate parsed from `dropsline`.
-- `null-not-in-bucket` — item/source not present in `dropsline` (e.g. clue reward-casket items, many activities).
+- `null-not-in-bucket` — item/source genuinely absent from `dropsline` (many pure activities).
 - `null-activity` — source is an activity/minigame with no kill-based `1/N` (points/action-based).
+- `null-clue-casket-deferred` — the source IS a `Reward casket (…)` row in `dropsline` (so a real casket rarity exists), but clue-casket rarities are **deferred to v2** (§12), so v1 stores null with this reason. *(Verified live: clue items DO appear in dropsline, e.g. Ranger boots → `Reward casket (medium)` 1/1,133 — they are not absent, just deferred.)*
 - `null-qualitative` — `dropsline` gives only a word (`"Common"`, `"Varies"`) with no number; we do NOT invent one.
 - `null-unparsed` — a rate string the v1 grammar could not parse (logged for follow-up).
-- `null-multi-source` — a generic source that could not be resolved to a single NPC (rare; see §5).
 
 **Invariant:** `drop_rate` is non-null ⟺ `drop_rate_status == "sourced"` ⟺ `drop_rate_raw` is a non-empty string that re-parses to `drop_rate`.
 
@@ -85,7 +86,7 @@ Output: `(drop_rate: float\|None, rolls: int, status: str)`. Pure, deterministic
 
 ## 5. Sourcing & source resolution — `data/parse_drop_rates.py`
 
-**Query `dropsline` BY ITEM** for each of the 1,701 distinct clog item ids. One bulk-ish set of API calls (batched by item, descriptive User-Agent per the wiki API rules; do not loop naively). **Raw responses are cached to a committed `data/raw/dropsline_*.json`** (the established pattern — no live wiki fetch at validate/build time; the dataset is committed and deterministic).
+**Query `dropsline` BY ITEM** for each of the **~1,609 distinct clog item names** (a name can map to several item_ids — the parser emits a record per id). The Bucket `where(...,'in',[...])` list form is rejected by the API, so this is a **per-item loop** (~1,609 sequential GETs with a short sleep + descriptive User-Agent per the wiki API rules) — verified, not naive. **Raw responses are cached to a committed `data/raw/dropsline_*.json`** (the established pattern — no live wiki fetch at validate/build time; deterministic). Item names with apostrophes (182 of them — Barrows, `d'hide`, `Tumeken's`) MUST be escaped in the Lua query string, and an API error envelope MUST raise (never silently cache `[]`).
 
 For each item, `dropsline` returns rows of `{from (the NPC/source), drop_json (rarity, rolls, conditions)}`. We:
 1. Parse each row's rarity via `_rarity_grammar`.
@@ -127,7 +128,7 @@ Expected v1 coverage, by clog `node_type` (the real 1,907-record split — these
 |---|---|---|
 | **boss** | 373 | `sourced` from `dropsline` (the core) |
 | **raid** | 67 | `sourced` (canonical) + `variants` scaling; ToA per §7 |
-| **clue** | 674 | `null-not-in-bucket` — reward-casket model is a clean v2 add |
+| **clue** | 674 | `null-clue-casket-deferred` — they DO appear in `dropsline` as `Reward casket (…)` with a real rarity, but clue-casket rarities are deferred to v2 (§12); v1 nulls them with this reason (the raw rarity is re-derivable when v2 lands) |
 | **minigame** | 261 | mostly `null-activity` (no kill-based `1/N`) |
 | **activity** | 532 | mostly `null-activity` — **BUT** the ~88 generic-`"Slayer"` uniques live in this bucket (the clog files Slayer under "Other"/activity) and **resolve to real monster rates** via item-keyed sourcing (note 1) → `sourced`, not null |
 
@@ -172,7 +173,7 @@ Exits non-zero on any violation; runnable in CI/pre-commit. Invariants:
 
 ## 12. Scope boundaries / deferred to v2 (designed-for, not built)
 
-- **Clue reward-casket rarities** (674 clue items) — a distinct reward-table model (`DropsLineReward`, per-roll/shared/unique tiers); clean additive dataset later.
+- **Clue reward-casket rarities** (674 clue items) — *deferred by choice, not difficulty.* The adversarial review found these DO appear in `dropsline` as `Reward casket (…)` rows with real rarities (Ranger boots 1/1,133), so v1 could ingest them trivially — but they're a distinct "reward-casket" semantic (per-roll/shared/unique tiers) and the user deferred them, so v1 nulls them (`null-clue-casket-deferred`) and a v2 follow-up flips them on by removing the skip. (If desired, this is a ~one-line scope change — promote `Reward casket` sources from null to sourced + add a golden case.)
 - **Full per-variant enumeration** (every team-size/region permutation) — v1 captures the significant conditions (§6) + preserves raw strings; the rest is additive.
 - **Regular-monster full drop tables** (the common long tail, for a future "slayer task" loot filter) — `dropsline` supports it; out of v1 clog scope.
 - **Consumer wiring** — income gp/hr recompute (drop the `qty_per_hr_or_kill` proxy) and loot-filter rarity beams are each separate follow-up bricks.
