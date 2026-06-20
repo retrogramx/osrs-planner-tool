@@ -1,23 +1,25 @@
-# Loot-Filter Generator Implementation Plan
+# Loot-Filter Generator Implementation Plan (v2)
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Generate a genuinely-impressive ironman RuneLite Loot-Filters (`.rs2f`) filter from our committed data — a two-axis visual language (hue = identity, emphasis = value) with a collection-log trophy layer.
+**Goal:** Generate an impressive ironman RuneLite Loot-Filters (`.rs2f`) filter — two-axis visual language (hue=identity, emphasis=value), a collection-log trophy layer, and **account tailoring** (beam the log slots you still need; optionally hide what you bank).
 
-**Architecture:** A new independent overlay `src/osrs_planner/lootfilter/` that ASSEMBLES a modular `.rs2f` filter from committed config (`palette.py` colours/grades + `categories.py` name-patterns) + data (`collection_log.json` trophy ids, `item_dictionary.json` for id resolution), via an `emit.py` text emitter and a `generate.py` orchestrator, writing a committed `outputs/gilded-tome-iron.rs2f`. Gated by a structural `data/validate_loot_filter.py`. It does NOT import engine/cost/income (item `value` is computed by the plugin at runtime); the KG is untouched.
+**Architecture:** `src/osrs_planner/lootfilter/` assembles a `.rs2f` from committed config (`palette` colours/grades + `categories` explicit name-lists) + data (`collection_log.json` ids via `item_dictionary.json`) + an optional real `AccountState` (`tailor.py`), through an `emit.py` text emitter and a `generate.py` orchestrator. Writes a committed **generic** `outputs/gilded-tome-iron.rs2f`; the **tailored** output is account-specific and never committed. Independent of the engine/cost/income overlays (the plugin computes `value`).
 
-**Tech Stack:** Python 3 (stdlib `json`/`re`/`os`), pytest. Output target = the `riktenx/loot-filters` rs2f DSL.
+**Tech Stack:** Python 3 (stdlib `json`/`re`/`os`), pytest. Target = the `riktenx/loot-filters` rs2f DSL. Consumes `osrs_planner.account` (merged) for tailoring.
 
 ## Global Constraints
 
-- **rs2f grammar (verified from the plugin's `filter-lang.md` + real filters):** `meta { name = "…"; description = "…"; }`; `rule (<conds>) { <prop> = <val>; }` (terminal) / `apply (<conds>) { … }` (non-terminal); conditions `id:995`/`id:[995,996]`, `name:"x"`/`name:["a","b"]`/wildcards `"*godsword"`, `value:>=N`/`havalue:>=N`/`gevalue:>=N` (ops `> < >= <= ==`, underscores allowed in ints), `accountType:1`, `ownership:0|1|2|3`, joined with `&& || !`; style props `textColor`/`backgroundColor`/`borderColor`/`lootbeamColor`/`menuTextColor`/`textAccentColor` (8-hex ARGB `"#aarrggbb"`), `showLootbeam`/`showValue`/`showDespawn`/`notify`/`hidden`/`hideOverlay`/`highlightTile` (bool), `fontType` (1/2/3), `textAccent` (1/2/3/4), `menuSort` (int), `sound` (int cache-id or `"x.wav"`), `icon` (`Item(<id>)`); `#define NAME value` macros (multi-line end lines with `\`). Module annotations (filterscape): `/*@ define:module:<id>\nname: …\n*/` and `/*@ define:input:<module>\nlabel: …\ntype: boolean\ngroup: …\n*/`.
-- **Colours are 8-hex ARGB** `"#aarrggbb"` (alpha `ff` = opaque), matching Storn's filter.
-- **The whole filter is `accountType:1`-gated** via a `#define IRON accountType:1` macro prepended to every styling rule's conditions, so it is inert on a non-iron account.
-- **General tiering uses `value` (max GE/HA), GE-inclusive** (the plugin computes it). `havalue` only for alch-specific calls.
-- **Module/evaluation order:** `settings` → `trophies` → `categories` → `fallback` (specific wins over general).
-- **Determinism:** all id-lists sorted; modules emitted in fixed order; re-running `generate.py` is byte-stable (a CI gate).
-- **Licensing:** the rs2f format is the plugin's (free to emit). Storn's/Joe's filters are all-rights-reserved — design reference ONLY. All module names, lists, and colours here are our own / Gilded-Tome-branded.
-- **Boundary:** `lootfilter/` imports only stdlib (+ may read `data/*.json`); it must NOT import `osrs_planner.engine` / `.cost` / `.income`; the KG (`kg/*.json`) is untouched.
+- **rs2f grammar (verified from `filter-lang.md` + Storn's real filter):** `meta { name=…; description=…; }`; `rule (<conds>) { <prop>=<val>; }` (terminal) / `apply (<conds>) { … }` (non-terminal); conds `id:995`/`id:[995,996]`, `name:"x"`/`name:["a","b"]`/wildcards `"*godsword"`, `value:>=N`/`value:<N`/`havalue:>=N` (ops `> < >= <= ==`), `accountType:1`, `ownership:0|1|2|3`, joined `&& || !`; style `textColor`/`backgroundColor`/`borderColor`/`lootbeamColor`/`menuTextColor` (8-hex ARGB `"#aarrggbb"`), `showLootbeam`/`showValue`/`showDespawn`/`notify`/`hidden` (bare bool), `fontType` (1/2/3), `textAccent` (1/2/3/4), `menuSort` (int), `sound` (int cache-id). `#define NAME value`. Module annotations: `/*@ define:module:<id>\nname: …\n*/` and `/*@ define:input:<module>\nlabel: …\ntype: boolean\ngroup: …\n*/` (filterscape layer; verified against Storn's filter, NOT in `filter-lang.md`).
+- **Verified toggle idiom (Storn):** `#define SHOW_X true` then `apply (!SHOW_X && cond) { hidden = true; }` parses and works.
+- **Iron gate = `#define IRONMAN accountType:1`** (NOT `IRON` — collides with the built-in `IRON` colour keyword). Prepend `IRONMAN` to EVERY styling rule AND every settings/trophy/tailoring `apply`.
+- **Colours are 8-hex ARGB** `"#aarrggbb"` (alpha `ff`).
+- **Categories are EXPLICIT name-lists, never bare `"{Metal} *"` globs** (over-match ammo/essence/etc.). Bars/ores use REAL names (`Bronze` is not an ore; bars/ores are `Adamantite`/`Runite`, not `Adamant`/`Rune`; `Coal` has no "ore" suffix).
+- **Nothing hidden by default:** `HIDE_FLOOR` default `0`, `HIDE_OWNED` default `false`.
+- **Module/eval order:** `settings → tailoring(if account) → trophies → categories → fallback`.
+- **Determinism:** id-lists sorted; fixed module order; generic re-gen byte-stable.
+- **Licensing:** rs2f format is the plugin's (free to emit); Storn's/Joe's filters are design reference ONLY — our own modules/names/colours.
+- **Boundary:** `lootfilter/` imports stdlib + `osrs_planner.account.state` (for tailoring types); NOT `osrs_planner.engine`/`.cost`/`.income` overlay logic; KG untouched.
 
 ---
 
@@ -26,72 +28,62 @@
 | File | Responsibility |
 |---|---|
 | `src/osrs_planner/lootfilter/__init__.py` | package marker |
-| `src/osrs_planner/lootfilter/palette.py` | the visual language: `VALUE_GRADES` (SS→E thresholds + emphasis), `MATERIAL_COLORS`/`RUNE_COLORS`/`GEM_COLORS`/`LOG_COLORS` maps, `TROPHY_GRADES`. Pure data. |
-| `src/osrs_planner/lootfilter/categories.py` | `CATEGORIES` (name-pattern → category + hue) + `categorize(name)` matcher (for tests). Pure data + matcher. |
-| `src/osrs_planner/lootfilter/emit.py` | rs2f text emitter: `meta`, a rule/apply builder, a graded-ladder builder, module wrappers. |
-| `src/osrs_planner/lootfilter/generate.py` | orchestrator `generate_filter(account_state=None) -> str` + `write_filter()`. |
-| `data/validate_loot_filter.py` | committed structural validator. |
-| `outputs/gilded-tome-iron.rs2f` | committed generated artifact (byte-stable). |
-| `scripts/lootfilter_demo.py` | regenerates + prints a summary. |
+| `src/osrs_planner/lootfilter/palette.py` | `VALUE_GRADES`, `style_for`, `TROPHY_GRADES`, colour maps. Pure data. |
+| `src/osrs_planner/lootfilter/categories.py` | `categorize()` matcher + `category_rules()` (explicit name-lists). |
+| `src/osrs_planner/lootfilter/emit.py` | rs2f emitter (meta, rule builder, modules, IRONMAN preamble, fallback+HIDE_FLOOR, settings, trophies, categories). |
+| `src/osrs_planner/lootfilter/tailor.py` | account-aware module: missing-clog beam, obtained dim, hide-owned. |
+| `src/osrs_planner/lootfilter/generate.py` | `generate_filter(account_state=None)` + `write_filter`. |
+| `data/validate_loot_filter.py` | structural validator. |
+| `outputs/gilded-tome-iron.rs2f` | committed generic artifact. |
+| `scripts/lootfilter_demo.py` | regen generic + a tailored example over account fixtures. |
 | `tests/lootfilter/test_*.py` | per-unit tests. |
 
 ---
 
-## Task 1: Scaffold + palette (the visual language) + boundary
+## Task 1: Palette (visual language) + boundary
 
-**Files:**
-- Create: `src/osrs_planner/lootfilter/__init__.py`, `src/osrs_planner/lootfilter/palette.py`, `tests/lootfilter/__init__.py`, `tests/lootfilter/test_palette.py`, `tests/lootfilter/test_boundary.py`
+**Files:** Create `src/osrs_planner/lootfilter/__init__.py`, `palette.py`, `tests/lootfilter/__init__.py`, `tests/lootfilter/test_palette.py`, `tests/lootfilter/test_boundary.py`
 
 **Interfaces:**
-- Produces: `VALUE_GRADES: list[tuple[str, int, dict]]` ordered SS→E, each `(grade, min_value, emphasis)` where `emphasis` has keys `beam: bool`, `sound: bool`, `border: bool`, `fontType: int`, `accent: int`, `bg_alpha: str` (2-hex). `style_for(hue_hex, grade) -> dict[str,str]` returns rs2f style props (textColor/backgroundColor/etc.) for an item-hue at a grade. `TROPHY_GRADES` same shape with the gold/bronze ramp. Colour maps are `dict[str,str]` name→`"#aarrggbb"`.
+- Produces: `VALUE_GRADES: list[(grade, min_value, emphasis)]` SS→E; `style_for(hue, grade) -> dict[str,str]`; `TROPHY_GRADES`; `MATERIAL_COLORS`/`RUNE_COLORS`/`GEM_COLORS`/`LOG_COLORS` (`dict[str,"#aarrggbb"]`).
 
 - [ ] **Step 1: Write the failing test** (`tests/lootfilter/test_palette.py`)
 
 ```python
 from osrs_planner.lootfilter.palette import VALUE_GRADES, style_for, TROPHY_GRADES, MATERIAL_COLORS
 
-def test_grades_descend_SS_to_E():
-    names = [g[0] for g in VALUE_GRADES]
-    assert names == ["SS", "S", "A", "B", "C", "D", "E"]
-    mins = [g[1] for g in VALUE_GRADES]
-    assert mins == [10_000_000, 1_000_000, 100_000, 10_000, 1_000, 100, 0]
+def test_grades_descend():
+    assert [g[0] for g in VALUE_GRADES] == ["SS","S","A","B","C","D","E"]
+    assert [g[1] for g in VALUE_GRADES] == [10_000_000,1_000_000,100_000,10_000,1_000,100,0]
 
-def test_emphasis_escalates_beam_at_S_sound_at_A():
-    emph = {g[0]: g[2] for g in VALUE_GRADES}
-    assert emph["SS"]["beam"] and emph["S"]["beam"] and not emph["A"]["beam"]
-    assert emph["SS"]["sound"] and emph["A"]["sound"] and not emph["B"]["sound"]
+def test_escalation_beam_at_S_sound_at_A():
+    e = {g[0]: g[2] for g in VALUE_GRADES}
+    assert e["S"]["beam"] and not e["A"]["beam"]
+    assert e["A"]["sound"] and not e["B"]["sound"]
 
-def test_style_for_renders_hue_at_grade():
-    s = style_for("#ff4169e1", "S")  # mithril blue at grade S -> beam in that hue
-    assert s["textColor"] == "#ff4169e1"
-    assert s["showLootbeam"] == "true" and s["lootbeamColor"] == "#ff4169e1"
+def test_style_for_renders_hue():
+    s = style_for("#ff4169e1", "S")
+    assert s["textColor"] == "#ff4169e1" and s["showLootbeam"] == "true" and s["lootbeamColor"] == "#ff4169e1"
 
-def test_material_colors_present():
-    for m in ("bronze", "iron", "steel", "black", "mithril", "adamant", "rune", "dragon"):
+def test_material_colors():
+    for m in ("bronze","iron","steel","black","mithril","adamant","rune","dragon"):
         assert MATERIAL_COLORS[m].startswith("#ff") and len(MATERIAL_COLORS[m]) == 9
 
-def test_trophy_uses_gold_bronze_and_always_beams():
-    grades = {g[0]: g[2] for g in TROPHY_GRADES}
-    assert all(grades[g]["beam"] and grades[g]["sound"] for g in ("SS", "S", "A", "B", "C"))
+def test_trophy_always_beams():
+    g = {x[0]: x[2] for x in TROPHY_GRADES}
+    assert all(g[k]["beam"] and g[k]["sound"] for k in ("SS","S","A","B","C"))
 ```
 
-- [ ] **Step 2: Run to verify it fails**
+- [ ] **Step 2: Run → fail** — `venv/bin/python -m pytest tests/lootfilter/test_palette.py -v` (module not found).
 
-Run: `venv/bin/python -m pytest tests/lootfilter/test_palette.py -v`
-Expected: FAIL (module not found).
-
-- [ ] **Step 3: Write minimal implementation** (`src/osrs_planner/lootfilter/palette.py`)
+- [ ] **Step 3: Implement** (`src/osrs_planner/lootfilter/palette.py`)
 
 ```python
 # src/osrs_planner/lootfilter/palette.py
-"""The visual language: value grades (emphasis ladder) + item material/type colours.
-
-Two axes (design §6): HUE = identity (these colour maps), EMPHASIS = value (the
-grade ladder). style_for(hue, grade) renders the grade's emphasis IN the item's
-hue. Colours are 8-hex ARGB. Modelled on Storn's palette; authored ourselves."""
+"""Visual language (design §6/§7): HUE = material/type colour, EMPHASIS = value grade.
+style_for renders a grade's emphasis IN an item's hue. 8-hex ARGB. Authored ourselves."""
 from __future__ import annotations
 
-# (grade, min `value`, emphasis). Escalation: beam at S+, sound at A+ (design §7).
 VALUE_GRADES = [
     ("SS", 10_000_000, {"beam": True,  "sound": True,  "border": True,  "fontType": 3, "accent": 3, "bg_alpha": "ff"}),
     ("S",   1_000_000, {"beam": True,  "sound": True,  "border": True,  "fontType": 3, "accent": 3, "bg_alpha": "ff"}),
@@ -102,39 +94,30 @@ VALUE_GRADES = [
     ("E",           0, {"beam": False, "sound": False, "border": False, "fontType": 1, "accent": 1, "bg_alpha": "00"}),
 ]
 
-# Trophy (collection-log) ramp: gold/bronze, ALWAYS beam + sound (design §8).
 _GOLD, _BRONZE = "#ffd8b01a", "#ffbc6025"
 TROPHY_GRADES = [
-    ("SS", 10_000_000, {"hue": "#ffff0000", "beam": True, "sound": True, "border": True, "fontType": 3, "accent": 3, "bg_alpha": "ff"}),
-    ("S",   1_000_000, {"hue": _GOLD,       "beam": True, "sound": True, "border": True, "fontType": 3, "accent": 3, "bg_alpha": "ff"}),
-    ("A",     100_000, {"hue": _BRONZE,     "beam": True, "sound": True, "border": True, "fontType": 2, "accent": 3, "bg_alpha": "cc"}),
-    ("B",      10_000, {"hue": _BRONZE,     "beam": True, "sound": True, "border": True, "fontType": 2, "accent": 3, "bg_alpha": "99"}),
-    ("C",           0, {"hue": _BRONZE,     "beam": True, "sound": True, "border": True, "fontType": 1, "accent": 3, "bg_alpha": "33"}),
+    ("SS", 10_000_000, {"hue": "#ffff0000", "beam": True, "sound": True, "fontType": 3, "accent": 3}),
+    ("S",   1_000_000, {"hue": _GOLD,       "beam": True, "sound": True, "fontType": 3, "accent": 3}),
+    ("A",     100_000, {"hue": _BRONZE,     "beam": True, "sound": True, "fontType": 2, "accent": 3}),
+    ("B",      10_000, {"hue": _BRONZE,     "beam": True, "sound": True, "fontType": 2, "accent": 3}),
+    ("C",           0, {"hue": _BRONZE,     "beam": True, "sound": True, "fontType": 1, "accent": 3}),
 ]
 
-def _argb(alpha2: str, hue: str) -> str:
-    """Recolour `hue` (#aarrggbb) with a new 2-hex alpha for a tinted background."""
-    return "#" + alpha2 + hue[3:]
-
 def style_for(hue: str, grade: str) -> dict[str, str]:
-    """rs2f style props for an item of colour `hue` at value `grade` (design §6/§7)."""
     emph = next(e for g, _m, e in VALUE_GRADES if g == grade)
-    s: dict[str, str] = {"textColor": hue, "fontType": str(emph["fontType"]), "textAccent": str(emph["accent"])}
+    s = {"textColor": hue, "fontType": str(emph["fontType"]), "textAccent": str(emph["accent"])}
     if grade == "E":
-        s["textColor"] = "#66" + hue[3:]  # faded
-        s["menuSort"] = "-10000"
+        s["textColor"] = "#66" + hue[3:]; s["menuSort"] = "-10000"
     if emph["bg_alpha"] not in ("00", "ff"):
-        s["backgroundColor"] = _argb(emph["bg_alpha"], hue)
+        s["backgroundColor"] = "#" + emph["bg_alpha"] + hue[3:]
     if emph["border"]:
-        s["borderColor"] = hue
-        s["backgroundColor"] = "#ffffffff"
+        s["borderColor"] = hue; s["backgroundColor"] = "#ffffffff"
     if emph["beam"]:
         s["showLootbeam"] = "true"; s["lootbeamColor"] = hue
     if emph["sound"]:
-        s["sound"] = "3925"  # plugin built-in cache sound id (design §11; tune later)
+        s["sound"] = "3925"
     return s
 
-# Material/type colour maps (design §9). Metals carry the gear leverage.
 MATERIAL_COLORS = {
     "bronze": "#ffcd7f32", "iron": "#ff6b6b6b", "steel": "#ffb5c0c9", "black": "#ff3b3b3b",
     "mithril": "#ff4169e1", "adamant": "#ff3cb371", "rune": "#ff40e0d0", "dragon": "#ffc83232",
@@ -155,235 +138,196 @@ LOG_COLORS = {
 }
 ```
 
-- [ ] **Step 4: Run to verify it passes**
+- [ ] **Step 4: Run → pass.** `venv/bin/python -m pytest tests/lootfilter/test_palette.py -v` (5 pass).
 
-Run: `venv/bin/python -m pytest tests/lootfilter/test_palette.py -v`
-Expected: PASS (5 tests).
-
-- [ ] **Step 5: Write the boundary test** (`tests/lootfilter/test_boundary.py`)
+- [ ] **Step 5: Boundary test** (`tests/lootfilter/test_boundary.py`)
 
 ```python
 import ast, os
 PKG = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
                    "src", "osrs_planner", "lootfilter")
+FORBIDDEN = ("osrs_planner.engine", "osrs_planner.cost", "osrs_planner.income")
 
-def test_lootfilter_never_imports_engine_cost_income():
-    offenders = []
+def test_lootfilter_imports_no_overlay():
+    bad = []
     for fn in os.listdir(PKG):
-        if not fn.endswith(".py"):
-            continue
-        tree = ast.parse(open(os.path.join(PKG, fn), encoding="utf-8").read())
-        for node in ast.walk(tree):
+        if not fn.endswith(".py"): continue
+        for node in ast.walk(ast.parse(open(os.path.join(PKG, fn), encoding="utf-8").read())):
             mods = ([a.name for a in node.names] if isinstance(node, ast.Import)
                     else [node.module] if isinstance(node, ast.ImportFrom) and node.module else [])
             for m in mods:
-                if any(b in (m or "") for b in ("osrs_planner.engine", "osrs_planner.cost", "osrs_planner.income")):
-                    offenders.append(f"{fn}: {m}")
-    assert not offenders, f"lootfilter imports a forbidden overlay: {offenders}"
+                if any(b in (m or "") for b in FORBIDDEN): bad.append(f"{fn}: {m}")
+    assert not bad, f"forbidden overlay import: {bad}"
 ```
+Create `src/osrs_planner/lootfilter/__init__.py` + `tests/lootfilter/__init__.py` (empty).
 
-- [ ] **Step 6: Run boundary test + commit**
-
-Run: `venv/bin/python -m pytest tests/lootfilter/ -v` (PASS)
+- [ ] **Step 6: Run + commit.** `venv/bin/python -m pytest tests/lootfilter/ -v` (pass)
 ```bash
 git add src/osrs_planner/lootfilter/__init__.py src/osrs_planner/lootfilter/palette.py tests/lootfilter/
-git commit -m "loot-filter: palette (visual language: grades + material colours) + boundary"
+git commit -m "loot-filter: palette (visual language) + boundary"
 ```
 
 ---
 
-## Task 2: Categories (name-pattern matcher)
+## Task 2: Categoriser (gear-word-gated, exclusions)
 
-**Files:**
-- Create: `src/osrs_planner/lootfilter/categories.py`, `tests/lootfilter/test_categories.py`
+**Files:** Create `src/osrs_planner/lootfilter/categories.py`, `tests/lootfilter/test_categories.py`
 
 **Interfaces:**
-- Consumes: `palette` colour maps.
-- Produces: `CATEGORIES: list[dict]` each `{id, name, patterns: list[str], hue: str, show_default: bool}` (patterns are rs2f `name:` globs, hue is `#aarrggbb`); `categorize(item_name) -> dict | None` (the first matching category, or None → fallback). Metal/rune/gem/log items resolve to their material hue.
+- Produces: `categorize(item_name) -> dict | None` (`{id, hue}`) — gear requires a metal prefix AND a gear word; ammo/essence/pouch/bones → None; crystal/weapon/armour seeds → None; `Grimy *` → herbs. Used by tests; the emitter uses `category_rules()` (Task 5).
 
 - [ ] **Step 1: Write the failing test** (`tests/lootfilter/test_categories.py`)
 
 ```python
-from osrs_planner.lootfilter.categories import categorize, CATEGORIES
+from osrs_planner.lootfilter.categories import categorize
 from osrs_planner.lootfilter.palette import MATERIAL_COLORS, RUNE_COLORS
 
-def test_mithril_gear_is_metal_mithril_blue():
-    c = categorize("Mithril platebody")
-    assert c and c["id"] == "gear" and c["hue"] == MATERIAL_COLORS["mithril"]
+def test_mithril_gear_is_metal():
+    assert categorize("Mithril platebody")["id"] == "gear"
+    assert categorize("Mithril platebody")["hue"] == MATERIAL_COLORS["mithril"]
 
-def test_dragon_gear_metal():
-    assert categorize("Dragon scimitar")["hue"] == MATERIAL_COLORS["dragon"]
+def test_rune_ammo_and_essence_not_gear():
+    assert categorize("Rune arrow") is None
+    assert categorize("Rune essence") is None
+    assert categorize("Runite ore")["id"] == "ores"     # ore, not gear
 
-def test_fire_rune_is_rune_red():
+def test_black_mask_and_dragon_bones_not_gear():
+    assert categorize("Black mask") is None              # slayer unique, not 'black gear'
+    assert categorize("Dragon bones") is None            # prayer supply, not 'dragon gear'
+
+def test_fire_rune_is_rune():
     c = categorize("Fire rune")
-    assert c and c["id"] == "runes" and c["hue"] == RUNE_COLORS["fire"]
+    assert c["id"] == "runes" and c["hue"] == RUNE_COLORS["fire"]
 
-def test_grimy_herb_is_herb_green():
-    c = categorize("Grimy ranarr weed")
-    assert c and c["id"] == "herbs"
+def test_grimy_herb_is_herb():
+    assert categorize("Grimy ranarr weed")["id"] == "herbs"
 
-def test_non_resource_returns_none():
-    assert categorize("Twisted bow") is None  # -> fallback value ladder
+def test_crystal_seed_not_seed_category():
+    assert categorize("Crystal weapon seed") is None     # high-value unique, not a green seed
+    assert categorize("Ranarr seed")["id"] == "seeds"
 
-def test_bar_is_not_misread_as_gear():
-    # "Mithril bar" is a bar, not gear; it still gets the mithril hue but category 'bars'
-    c = categorize("Mithril bar")
-    assert c and c["id"] == "bars" and c["hue"] == MATERIAL_COLORS["mithril"]
+def test_twisted_bow_falls_through():
+    assert categorize("Twisted bow") is None
 ```
 
-- [ ] **Step 2: Run to verify it fails**
+- [ ] **Step 2: Run → fail.**
 
-Run: `venv/bin/python -m pytest tests/lootfilter/test_categories.py -v`
-Expected: FAIL (module not found).
-
-- [ ] **Step 3: Write minimal implementation** (`src/osrs_planner/lootfilter/categories.py`)
+- [ ] **Step 3: Implement** (`src/osrs_planner/lootfilter/categories.py`)
 
 ```python
 # src/osrs_planner/lootfilter/categories.py
-"""Name-pattern -> category + item hue (design §9). OSRS names are systematic, so
-these patterns reliably classify the big mechanical groups. NOT granular per-content
-curation (deferred). categorize() is the matcher used by tests + the emitter."""
+"""Name-pattern -> category + item hue (design §9). Gear requires a metal prefix AND
+a gear-word (so ammo/essence/pouch/bones/masks are NOT mis-coloured as 'metal gear').
+Crystal/weapon/armour seeds excluded from seeds. categorize() backs the tests; the
+emitter iterates category_rules() (Task 5)."""
 from __future__ import annotations
-
-import re
 
 from osrs_planner.lootfilter.palette import MATERIAL_COLORS, RUNE_COLORS, GEM_COLORS, LOG_COLORS
 
-_METALS = list(MATERIAL_COLORS)         # bronze..dragon
-_GEAR_WORDS = ("platebody", "platelegs", "plateskirt", "full helm", "med helm", "chainbody",
-               "sq shield", "kiteshield", "sword", "longsword", "dagger", "scimitar", "mace",
-               "warhammer", "battleaxe", "2h sword", "spear", "hasta", "claws", "boots", "axe", "pickaxe")
-
-def _metal_in(name_lc: str) -> str | None:
-    for m in _METALS:
-        if name_lc.startswith(m + " "):
-            return m
-    return None
+GEAR_PIECES = ("platebody","platelegs","plateskirt","full helm","med helm","chainbody",
+    "sq shield","kiteshield","sword","longsword","dagger","scimitar","mace","warhammer",
+    "battleaxe","2h sword","spear","hasta","claws","boots","axe","pickaxe","halberd")
+# metal prefix used by GEAR (the gear naming uses 'adamant'/'rune'); ores/bars differ (Task 5).
+_GEAR_METALS = list(MATERIAL_COLORS)  # bronze..dragon
+# ores/bars use the smithing-material names (real in-game items)
+ORE_NAMES = {"Copper ore":"bronze","Tin ore":"bronze","Iron ore":"iron","Coal":"steel",
+    "Silver ore":"iron","Gold ore":"dragon","Mithril ore":"mithril","Adamantite ore":"adamant","Runite ore":"rune"}
+BAR_NAMES = {"Bronze bar":"bronze","Iron bar":"iron","Steel bar":"steel","Silver bar":"iron",
+    "Gold bar":"dragon","Mithril bar":"mithril","Adamantite bar":"adamant","Runite bar":"rune"}
+CRYSTAL_SEEDS = {"Crystal seed","Crystal weapon seed","Crystal armour seed","Crystal tool seed",
+    "Crystal teleport seed","Crystal chime seed","Crystal saw seed",
+    "Enhanced crystal weapon seed","Enhanced crystal teleport seed"}
 
 def categorize(name: str):
-    """Return the first matching category dict, or None (-> fallback ladder)."""
-    n = name.strip().lower()
-    metal = _metal_in(n)
-    if metal:
-        if n.endswith(" bar"):
-            return {"id": "bars", "name": "Bars", "patterns": [f"{metal.title()} bar"], "hue": MATERIAL_COLORS[metal], "show_default": True}
-        if n.endswith(" ore"):
-            return {"id": "ores", "name": "Ores", "patterns": [f"{metal.title()} ore"], "hue": MATERIAL_COLORS[metal], "show_default": True}
-        if any(w in n for w in _GEAR_WORDS):
-            return {"id": "gear", "name": "Gear", "patterns": [f"{metal.title()} *"], "hue": MATERIAL_COLORS[metal], "show_default": True}
-    if n.endswith(" rune"):
-        elem = n[:-5]
-        if elem in RUNE_COLORS:
-            return {"id": "runes", "name": "Runes", "patterns": [f"{elem.title()} rune"], "hue": RUNE_COLORS[elem], "show_default": True}
-    if n.startswith("grimy ") or (n.startswith("clean ")):
-        return {"id": "herbs", "name": "Herbs", "patterns": ["Grimy *", "Clean *"], "hue": "#ff2e8b57", "show_default": True}
-    if n.endswith(" seed") or n.endswith(" seedling"):
-        return {"id": "seeds", "name": "Seeds", "patterns": ["* seed", "* seedling"], "hue": "#ff00e024", "show_default": True}
-    if n.endswith(" logs"):
-        tree = n[:-5]
-        return {"id": "logs", "name": "Logs", "patterns": [f"{tree.title()} logs", "Logs"], "hue": LOG_COLORS.get(tree, "#ff9c6b3f"), "show_default": True}
-    if n.startswith("uncut "):
-        gem = n[6:]
-        if gem in GEM_COLORS:
-            return {"id": "gems", "name": "Gems", "patterns": [f"Uncut {gem}"], "hue": GEM_COLORS[gem], "show_default": True}
-    if n.endswith(" bones") or n.endswith(" ashes"):
-        return {"id": "bones", "name": "Bones & Ashes", "patterns": ["* bones", "* ashes"], "hue": "#ffe8e0d0", "show_default": True}
+    n = name.strip()
+    nl = n.lower()
+    if n in BAR_NAMES: return {"id": "bars", "hue": MATERIAL_COLORS[BAR_NAMES[n]]}
+    if n in ORE_NAMES: return {"id": "ores", "hue": MATERIAL_COLORS[ORE_NAMES[n]]}
+    for metal in _GEAR_METALS:
+        if nl.startswith(metal + " ") and any(w in nl for w in GEAR_PIECES):
+            return {"id": "gear", "hue": MATERIAL_COLORS[metal]}
+    if nl.endswith(" rune"):
+        elem = nl[:-5]
+        if elem in RUNE_COLORS: return {"id": "runes", "hue": RUNE_COLORS[elem]}
+    if nl.startswith("grimy "):
+        return {"id": "herbs", "hue": "#ff2e8b57"}
+    if nl.startswith("uncut "):
+        gem = nl[6:]
+        if gem in GEM_COLORS: return {"id": "gems", "hue": GEM_COLORS[gem]}
+    if nl.endswith(" logs"):
+        tree = nl[:-5]
+        return {"id": "logs", "hue": LOG_COLORS.get(tree, "#ff9c6b3f")}
+    if (nl.endswith(" seed") or nl.endswith(" seedling")) and n not in CRYSTAL_SEEDS:
+        return {"id": "seeds", "hue": "#ff00e024"}
+    if nl.endswith(" bones") or nl.endswith(" ashes"):
+        return {"id": "bones", "hue": "#ffe8e0d0"}
     return None
-
-# The committed category table the emitter iterates (deterministic order, specific
-# before generic). Each entry's `patterns` are emitted as rs2f name: globs.
-CATEGORIES = [
-    {"id": "gear",  "name": "Gear (by metal)", "by": "metal"},
-    {"id": "bars",  "name": "Bars",  "by": "metal-bar"},
-    {"id": "ores",  "name": "Ores",  "by": "metal-ore"},
-    {"id": "runes", "name": "Runes", "by": "rune"},
-    {"id": "gems",  "name": "Gems",  "by": "gem"},
-    {"id": "logs",  "name": "Logs",  "by": "log"},
-    {"id": "herbs", "name": "Herbs", "patterns": ["Grimy *", "Clean *"], "hue": "#ff2e8b57"},
-    {"id": "seeds", "name": "Seeds", "patterns": ["* seed", "* seedling"], "hue": "#ff00e024"},
-    {"id": "bones", "name": "Bones & Ashes", "patterns": ["* bones", "* ashes"], "hue": "#ffe8e0d0"},
-]
 ```
 
-- [ ] **Step 4: Run to verify it passes**
-
-Run: `venv/bin/python -m pytest tests/lootfilter/test_categories.py -v`
-Expected: PASS (6 tests).
-
-- [ ] **Step 5: Commit**
-
+- [ ] **Step 4: Run → pass** (7 tests). **Step 5: Commit.**
 ```bash
 git add src/osrs_planner/lootfilter/categories.py tests/lootfilter/test_categories.py
-git commit -m "loot-filter: name-pattern categoriser + item-hue mapping"
+git commit -m "loot-filter: gear-word-gated categoriser with exclusions"
 ```
 
 ---
 
-## Task 3: emit core — meta, rule builder, value-grade fallback ladder
+## Task 3: Emit core — meta, rule builder, IRONMAN preamble, fallback + hide floor
 
-**Files:**
-- Create: `src/osrs_planner/lootfilter/emit.py`, `tests/lootfilter/test_emit.py`
+**Files:** Create `src/osrs_planner/lootfilter/emit.py`, `tests/lootfilter/test_emit.py`
 
 **Interfaces:**
-- Consumes: `palette.VALUE_GRADES`, `palette.style_for`.
-- Produces: `emit_meta(name, desc) -> str`; `emit_rule(conds: str, style: dict, terminal=True) -> str` (a `rule`/`apply` line); `style_str(style: dict) -> str` (the `{ k = v; }` body); `emit_module(module_id, name, body) -> str` (wraps with the `/*@ define:module */` header); `emit_fallback() -> str` (the SS→E ladder gated `IRON`). `IRON = "accountType:1"` and `#define IRON accountType:1` is emitted once in the preamble by generate.py.
+- Produces: `IRONMAN = "IRONMAN"`; `style_str(style) -> str`; `emit_rule(conds, style, terminal=True) -> str`; `emit_meta(name, desc) -> str`; `emit_module(id, name, body) -> str`; `emit_preamble() -> str` (`#define IRONMAN accountType:1` + `#define HIDE_FLOOR 0`); `emit_fallback() -> str` (the SS→E ladder + the HIDE_FLOOR cut, all IRONMAN-gated).
 
 - [ ] **Step 1: Write the failing test** (`tests/lootfilter/test_emit.py`)
 
 ```python
-from osrs_planner.lootfilter.emit import emit_meta, emit_rule, style_str, emit_fallback
+from osrs_planner.lootfilter.emit import emit_meta, emit_rule, style_str, emit_fallback, emit_preamble
 
 def test_meta():
-    m = emit_meta("Gilded Tome — Iron", "x")
-    assert m.strip().startswith("meta {") and 'name = "Gilded Tome — Iron";' in m
+    assert 'name = "Gilded Tome — Iron";' in emit_meta("Gilded Tome — Iron", "x")
 
-def test_style_str_props():
-    s = style_str({"textColor": "#ff4169e1", "showLootbeam": "true"})
-    assert s == '{ textColor = "#ff4169e1"; showLootbeam = true; }'  # bools unquoted, colours quoted
+def test_style_str():
+    assert style_str({"textColor": "#ff4169e1", "showLootbeam": "true"}) == '{ textColor = "#ff4169e1"; showLootbeam = true; }'
 
-def test_emit_rule_terminal_vs_apply():
-    assert emit_rule("IRON && value:>=1000", {"textColor": "#ffffffff"}).startswith("rule (")
+def test_emit_rule_terminal_and_apply():
+    assert emit_rule("IRONMAN && value:>=1000", {"textColor": "#ffffffff"}).startswith("rule (")
     assert emit_rule("ownership:2", {"hidden": "true"}, terminal=False).startswith("apply (")
 
-def test_fallback_has_seven_graded_rules_iron_gated():
+def test_preamble_defines_macros():
+    p = emit_preamble()
+    assert "#define IRONMAN accountType:1" in p and "#define HIDE_FLOOR 0" in p
+
+def test_fallback_iron_gated_with_hide_floor():
     fb = emit_fallback()
-    assert fb.count("rule (") == 7
-    assert "value:>=10000000" in fb and "value:>=0" in fb
-    assert fb.count("IRON &&") == 7  # every fallback rule is iron-gated
+    assert fb.count("rule (IRONMAN") == 8                 # 7 grades + 1 HIDE_FLOOR cut
+    assert "value:<HIDE_FLOOR" in fb and "value:>=10000000" in fb and "value:>=0" in fb
 ```
 
-- [ ] **Step 2: Run to verify it fails**
+- [ ] **Step 2: Run → fail.**
 
-Run: `venv/bin/python -m pytest tests/lootfilter/test_emit.py -v`
-Expected: FAIL (module not found).
-
-- [ ] **Step 3: Write minimal implementation** (`src/osrs_planner/lootfilter/emit.py`)
+- [ ] **Step 3: Implement** (`src/osrs_planner/lootfilter/emit.py`)
 
 ```python
 # src/osrs_planner/lootfilter/emit.py
-"""rs2f text emitter (design §4/§5). Bools are bare (true/false), ints bare,
-colours + sound .wav names quoted; cache-id sounds are bare ints. Every styling
-rule is iron-gated via the IRON macro."""
+"""rs2f emitter (design §4/§5). Bools/ints bare, colours quoted. Every styling rule
+is iron-gated via the IRONMAN macro. HIDE_FLOOR default 0 hides nothing."""
 from __future__ import annotations
 
 from osrs_planner.lootfilter.palette import VALUE_GRADES, style_for
 
-IRON = "IRON"  # the rs2f MACRO name (defined once via emit_preamble: #define IRON accountType:1)
-_BARE = {"true", "false"}  # already-bare values
+IRONMAN = "IRONMAN"
+_BARE = {"true", "false"}
 
 def style_str(style: dict) -> str:
     parts = []
     for k, v in style.items():
         v = str(v)
-        if v in _BARE or v.lstrip("-").isdigit():
-            parts.append(f"{k} = {v};")          # bool / int -> bare
-        else:
-            parts.append(f'{k} = "{v}";')        # colour / string -> quoted
+        parts.append(f"{k} = {v};" if (v in _BARE or v.lstrip("-").isdigit()) else f'{k} = "{v}";')
     return "{ " + " ".join(parts) + " }"
 
 def emit_rule(conds: str, style: dict, terminal: bool = True) -> str:
-    kw = "rule" if terminal else "apply"
-    return f"{kw} ({conds}) {style_str(style)}"
+    return f"{'rule' if terminal else 'apply'} ({conds}) {style_str(style)}"
 
 def emit_meta(name: str, desc: str) -> str:
     return f'meta {{\n    name = "{name}";\n    description = "{desc}";\n}}\n'
@@ -391,38 +335,31 @@ def emit_meta(name: str, desc: str) -> str:
 def emit_module(module_id: str, name: str, body: str) -> str:
     return f"/*@ define:module:{module_id}\nname: {name}\n*/\n{body}\n"
 
+def emit_preamble() -> str:
+    return ("#define IRONMAN accountType:1\n"
+            '/*@ define:input:settings\nlabel: Hide below value\ntype: number\ngroup: Hide\n*/\n'
+            "#define HIDE_FLOOR 0\n")
+
 def emit_fallback() -> str:
-    lines = []
-    for grade, minv, _emph in VALUE_GRADES:
-        # the fallback ladder is uncoloured (white hue) -> pure value emphasis
-        style = style_for("#ffffffff", grade)
-        lines.append(emit_rule(f"{IRON} && value:>={minv}", style))
+    lines = [emit_rule(f"{IRONMAN} && value:<HIDE_FLOOR", {"hidden": "true"})]  # default 0 -> hides nothing
+    for grade, minv, _e in VALUE_GRADES:
+        lines.append(emit_rule(f"{IRONMAN} && value:>={minv}", style_for("#ffffffff", grade)))
     return emit_module("fallback", "Value fallback (SS→E)", "\n".join(lines))
 ```
 
-- [ ] **Step 4: Run to verify it passes**
-
-Run: `venv/bin/python -m pytest tests/lootfilter/test_emit.py -v`
-Expected: PASS (4 tests).
-
-- [ ] **Step 5: Commit**
-
+- [ ] **Step 4: Run → pass** (5 tests). **Step 5: Commit.**
 ```bash
 git add src/osrs_planner/lootfilter/emit.py tests/lootfilter/test_emit.py
-git commit -m "loot-filter: rs2f emitter core (meta, rule builder, value fallback)"
+git commit -m "loot-filter: rs2f emitter core (IRONMAN gate, fallback + hide floor)"
 ```
 
 ---
 
 ## Task 4: Trophy module (collection-log id-list, never-hide)
 
-**Files:**
-- Modify: `src/osrs_planner/lootfilter/emit.py` (add `emit_trophies`)
-- Test: `tests/lootfilter/test_trophies.py`
+**Files:** Modify `emit.py` (add `emit_trophies`); Test `tests/lootfilter/test_trophies.py`
 
-**Interfaces:**
-- Consumes: `data/collection_log.json` (item_ids), `palette.TROPHY_GRADES`.
-- Produces: `emit_trophies(clog_item_ids: list[int]) -> str` — a `trophies` module with (1) a non-terminal `apply (IRON && id:[…]) { hidden = false; }` never-hide guard, then (2) the SS→C trophy ladder `rule (IRON && id:[…] && value:>=…) { gold/bronze beam+sound }`. ids sorted.
+**Interfaces:** `emit_trophies(clog_item_ids) -> str` — a `trophies` module: a non-terminal `apply (IRONMAN && id:[…]) { hidden=false; }` never-hide guard, then the SS→C gold/bronze ladder `rule (IRONMAN && id:[…] && value:>=…) { … beam+sound }`. ids sorted.
 
 - [ ] **Step 1: Write the failing test** (`tests/lootfilter/test_trophies.py`)
 
@@ -431,21 +368,15 @@ from osrs_planner.lootfilter.emit import emit_trophies
 
 def test_trophies_never_hide_and_graded():
     out = emit_trophies([4151, 11920, 995])
-    assert "apply (" in out and "hidden = false;" in out       # never-hide guard
-    assert "id:[995, 4151, 11920]" in out                       # sorted id-list
+    assert "apply (IRONMAN" in out and "hidden = false;" in out
+    assert "id:[995, 4151, 11920]" in out
     assert "showLootbeam = true;" in out and "value:>=10000000" in out
-    assert "IRON &&" in out                                     # iron-gated via the macro
 
 def test_empty_clog_safe():
     assert "module:trophies" in emit_trophies([])
 ```
 
-- [ ] **Step 2: Run to verify it fails**
-
-Run: `venv/bin/python -m pytest tests/lootfilter/test_trophies.py -v`
-Expected: FAIL (`emit_trophies` undefined).
-
-- [ ] **Step 3: Implement `emit_trophies` in `emit.py`**
+- [ ] **Step 2: Run → fail. Step 3: Implement in `emit.py`:**
 
 ```python
 from osrs_planner.lootfilter.palette import TROPHY_GRADES  # add to imports
@@ -454,41 +385,33 @@ def _id_list(ids) -> str:
     return "id:[" + ", ".join(str(i) for i in sorted(set(ids))) + "]"
 
 def _trophy_style(emph: dict) -> dict:
-    s = {"textColor": "#ffffffff", "backgroundColor": "#ff" + emph["hue"][3:],
-         "borderColor": emph["hue"], "fontType": str(emph["fontType"]),
-         "textAccent": str(emph["accent"]), "showLootbeam": "true",
-         "lootbeamColor": emph["hue"], "sound": "3930"}
-    return s
+    return {"textColor": "#ffffffff", "backgroundColor": "#ff" + emph["hue"][3:], "borderColor": emph["hue"],
+            "fontType": str(emph["fontType"]), "textAccent": str(emph["accent"]),
+            "showLootbeam": "true", "lootbeamColor": emph["hue"], "sound": "3930"}
 
 def emit_trophies(clog_item_ids) -> str:
     if not clog_item_ids:
         return emit_module("trophies", "Collection-log trophies", "")
     idl = _id_list(clog_item_ids)
-    lines = [emit_rule(f"{IRON} && {idl}", {"hidden": "false"}, terminal=False)]  # never-hide
+    lines = [emit_rule(f"{IRONMAN} && {idl}", {"hidden": "false"}, terminal=False)]
     for grade, minv, emph in TROPHY_GRADES:
-        lines.append(emit_rule(f"{IRON} && {idl} && value:>={minv}", _trophy_style(emph)))
+        lines.append(emit_rule(f"{IRONMAN} && {idl} && value:>={minv}", _trophy_style(emph)))
     return emit_module("trophies", "Collection-log trophies", "\n".join(lines))
 ```
 
-- [ ] **Step 4: Run + commit**
-
-Run: `venv/bin/python -m pytest tests/lootfilter/test_trophies.py -v` (PASS)
+- [ ] **Step 4: Run → pass. Step 5: Commit.**
 ```bash
 git add src/osrs_planner/lootfilter/emit.py tests/lootfilter/test_trophies.py
-git commit -m "loot-filter: collection-log trophy module (gold/bronze, never-hide)"
+git commit -m "loot-filter: collection-log trophy module (never-hide)"
 ```
 
 ---
 
-## Task 5: Category modules (name-pattern, hue × grade)
+## Task 5: Category modules (explicit name-lists, real ore/bar names)
 
-**Files:**
-- Modify: `src/osrs_planner/lootfilter/emit.py` (add `emit_categories`)
-- Modify: `src/osrs_planner/lootfilter/categories.py` (add `category_rules()` yielding (id, name, patterns, hue))
-- Test: `tests/lootfilter/test_emit_categories.py`
+**Files:** Modify `categories.py` (add `category_rules`); Modify `emit.py` (add `emit_categories`); Test `tests/lootfilter/test_emit_categories.py`
 
-**Interfaces:**
-- Produces: `categories.category_rules() -> list[tuple[str,str,list[str],str]]` (id, display name, rs2f name-patterns, hue) — expands metal/rune/gem/log maps into concrete pattern groups. `emit.emit_categories() -> str` — a `categories` module; per category, a graded ladder `rule (IRON && name:[patterns] && value:>=…) { style_for(hue, grade) }`.
+**Interfaces:** `categories.category_rules() -> list[(id, name, patterns: list[str], hue)]` — explicit name-lists (gear = `["{Metal} platebody", …]` per metal; ores/bars = real names; runes/gems/logs explicit; herbs `["Grimy *"]`; seeds `["* seed","* seedling"]`). `emit.emit_categories() -> str` — per group, the graded ladder; **seeds carry a `!name:[CRYSTAL_SEEDS]` exclusion** so crystal uniques fall through.
 
 - [ ] **Step 1: Write the failing test** (`tests/lootfilter/test_emit_categories.py`)
 
@@ -496,143 +419,247 @@ git commit -m "loot-filter: collection-log trophy module (gold/bronze, never-hid
 from osrs_planner.lootfilter.emit import emit_categories
 from osrs_planner.lootfilter.categories import category_rules
 
-def test_category_rules_expand_metals_and_runes():
-    rules = {r[0] + ":" + r[3] for r in category_rules()}
-    assert any(r.startswith("gear:") for r in rules)
-    # mithril gear hue present
-    assert any("#ff4169e1" in r for r in rules)
+def test_no_bare_metal_glob():
+    pats = [p for _i,_n,ps,_h in category_rules() for p in ps]
+    assert "Rune *" not in pats and "Mithril *" not in pats   # explicit lists only
+    assert "Mithril platebody" in pats and "Mithril scimitar" in pats
 
-def test_emit_categories_has_mithril_blue_and_fire_red():
+def test_real_ore_bar_names_only():
+    pats = [p for _i,_n,ps,_h in category_rules() for p in ps]
+    assert "Runite ore" in pats and "Adamantite bar" in pats and "Coal" in pats
+    assert "Bronze ore" not in pats and "Rune bar" not in pats  # non-existent items
+
+def test_emit_has_mithril_blue_fire_red_and_seed_exclusion():
     out = emit_categories()
-    assert 'name:["Mithril *"]' in out and "#ff4169e1" in out      # mithril gear blue
-    assert 'name:["Fire rune"]' in out and "#ffff4500" in out       # fire rune red
-    assert out.count("module:categories") == 1
-    assert "IRON &&" in out                                         # iron-gated via the macro
+    assert '"Mithril platebody"' in out and "#ff4169e1" in out
+    assert '"Fire rune"' in out and "#ffff4500" in out
+    assert "Crystal weapon seed" in out and "!name:" in out     # seed exclusion present
+    assert out.count("module:categories") == 1 and "IRONMAN &&" in out
 ```
 
-- [ ] **Step 2: Run to verify it fails**
-
-Run: `venv/bin/python -m pytest tests/lootfilter/test_emit_categories.py -v`
-Expected: FAIL.
-
-- [ ] **Step 3: Implement `category_rules()` + `emit_categories()`**
+- [ ] **Step 2: Run → fail. Step 3: Implement.**
 
 In `categories.py`:
 ```python
 def category_rules():
-    """Expand the colour maps into concrete (id, name, patterns, hue) groups."""
     out = []
     for metal, hue in MATERIAL_COLORS.items():
-        out.append(("gear", f"{metal.title()} gear", [f"{metal.title()} *"], hue))
-        out.append(("bars", f"{metal.title()} bar", [f"{metal.title()} bar"], hue))
-        out.append(("ores", f"{metal.title()} ore", [f"{metal.title()} ore"], hue))
+        out.append(("gear", f"{metal.title()} gear", [f"{metal.title()} {p}" for p in GEAR_PIECES], hue))
+    out.append(("ores", "Ores", list(ORE_NAMES), None))   # per-name hue resolved in emit (mixed metals)
+    out.append(("bars", "Bars", list(BAR_NAMES), None))
     for elem, hue in RUNE_COLORS.items():
         out.append(("runes", f"{elem.title()} rune", [f"{elem.title()} rune"], hue))
     for gem, hue in GEM_COLORS.items():
         out.append(("gems", f"Uncut {gem}", [f"Uncut {gem}"], hue))
     for tree, hue in LOG_COLORS.items():
         out.append(("logs", f"{tree.title()} logs", [f"{tree.title()} logs"], hue))
-    out.append(("herbs", "Herbs", ["Grimy *", "Clean *"], "#ff2e8b57"))
+    out.append(("herbs", "Herbs", ["Grimy *"], "#ff2e8b57"))
     out.append(("seeds", "Seeds", ["* seed", "* seedling"], "#ff00e024"))
     out.append(("bones", "Bones & ashes", ["* bones", "* ashes"], "#ffe8e0d0"))
     return out
 ```
-In `emit.py`:
+Note: ores/bars pass `hue=None` and are expanded per-name in emit (each ore/bar gets its own metal hue). In `emit.py`:
 ```python
-from osrs_planner.lootfilter.categories import category_rules  # add to imports
+from osrs_planner.lootfilter.categories import category_rules, ORE_NAMES, BAR_NAMES, CRYSTAL_SEEDS, MATERIAL_COLORS  # add
 
 def _name_list(patterns) -> str:
     return "name:[" + ", ".join(f'"{p}"' for p in patterns) + "]"
 
+def _emit_group(cid, patterns, hue, lines):
+    nl = _name_list(patterns)
+    extra = f" && !{_name_list(sorted(CRYSTAL_SEEDS))}" if cid == "seeds" else ""
+    for grade, minv, _e in VALUE_GRADES:
+        lines.append(emit_rule(f"{IRONMAN} && {nl}{extra} && value:>={minv}", style_for(hue, grade)))
+
 def emit_categories() -> str:
     lines = []
-    for _cid, _name, patterns, hue in category_rules():
-        nl = _name_list(patterns)
-        for grade, minv, _emph in VALUE_GRADES:
-            lines.append(emit_rule(f"{IRON} && {nl} && value:>={minv}", style_for(hue, grade)))
+    for cid, _name, patterns, hue in category_rules():
+        if hue is None:  # ores/bars -> per-name metal hue
+            table = ORE_NAMES if cid == "ores" else BAR_NAMES
+            for nm in patterns:
+                _emit_group(cid, [nm], MATERIAL_COLORS[table[nm]], lines)
+        else:
+            _emit_group(cid, patterns, hue, lines)
     return emit_module("categories", "Categories (by material/type)", "\n".join(lines))
 ```
 
-- [ ] **Step 4: Run + commit**
-
-Run: `venv/bin/python -m pytest tests/lootfilter/ -v` (all PASS)
+- [ ] **Step 4: Run → pass. Step 5: Commit.**
 ```bash
 git add src/osrs_planner/lootfilter/emit.py src/osrs_planner/lootfilter/categories.py tests/lootfilter/test_emit_categories.py
-git commit -m "loot-filter: category modules (item-hue x value-grade)"
+git commit -m "loot-filter: category modules (explicit name-lists, real ore/bar names, seed exclusion)"
 ```
 
 ---
 
-## Task 6: Settings module + the account-state seam + generate orchestrator
+## Task 6: Settings module (IRONMAN-gated toggles)
 
-**Files:**
-- Modify: `src/osrs_planner/lootfilter/emit.py` (add `emit_settings`, `emit_preamble`)
-- Create: `src/osrs_planner/lootfilter/generate.py`
-- Test: `tests/lootfilter/test_generate.py`
+**Files:** Modify `emit.py` (add `emit_settings`); Test `tests/lootfilter/test_settings.py`
+
+**Interfaces:** `emit_settings() -> str` — a `settings` module of `/*@ define:input */` toggles, EVERY apply IRONMAN-gated: show world-spawns, show unowned, despawn timer, item-value display. (HIDE_FLOOR macro lives in the preamble; its cut is in fallback.)
+
+- [ ] **Step 1: Write the failing test** (`tests/lootfilter/test_settings.py`)
+
+```python
+from osrs_planner.lootfilter.emit import emit_settings
+
+def test_settings_iron_gated_and_covers_toggles():
+    out = emit_settings()
+    assert "module:settings" in out
+    assert out.count("apply (IRONMAN") == out.count("apply (")   # every apply iron-gated
+    for macro in ("SHOW_WORLD_SPAWNS", "SHOW_UNOWNED", "SHOW_DESPAWN", "SHOW_VALUE"):
+        assert f"#define {macro}" in out
+    assert "showValue = true;" in out and "showDespawn = true;" in out
+```
+
+- [ ] **Step 2: Run → fail. Step 3: Implement in `emit.py`:**
+
+```python
+def emit_settings() -> str:
+    body = "\n".join([
+        '/*@ define:input:settings\nlabel: Show world spawns\ntype: boolean\ngroup: Show\n*/\n#define SHOW_WORLD_SPAWNS true',
+        f"apply ({IRONMAN} && !SHOW_WORLD_SPAWNS && ownership:0) {{ hidden = true; }}",
+        '/*@ define:input:settings\nlabel: Show unowned drops\ntype: boolean\ngroup: Show\n*/\n#define SHOW_UNOWNED false',
+        f"apply ({IRONMAN} && !SHOW_UNOWNED && ownership:2) {{ hidden = true; }}",
+        '/*@ define:input:settings\nlabel: Despawn timer\ntype: boolean\ngroup: Show\n*/\n#define SHOW_DESPAWN true',
+        f"apply ({IRONMAN} && SHOW_DESPAWN) {{ showDespawn = true; }}",
+        '/*@ define:input:settings\nlabel: Item value\ntype: boolean\ngroup: Show\n*/\n#define SHOW_VALUE true',
+        f"apply ({IRONMAN} && SHOW_VALUE) {{ showValue = true; }}",
+    ])
+    return emit_module("settings", "Settings", body)
+```
+
+- [ ] **Step 4: Run → pass. Step 5: Commit.**
+```bash
+git add src/osrs_planner/lootfilter/emit.py tests/lootfilter/test_settings.py
+git commit -m "loot-filter: IRONMAN-gated settings module (incl. value display)"
+```
+
+---
+
+## Task 7: Tailoring module (account-aware — the payoff)
+
+**Files:** Create `src/osrs_planner/lootfilter/tailor.py`, `tests/lootfilter/test_tailor.py`
 
 **Interfaces:**
-- Produces: `emit.emit_preamble() -> str` (the `#define IRON accountType:1` + any colour macros); `emit.emit_settings() -> str` (a `settings` module with `/*@ define:input */` toggles: show world-spawns, show unowned, despawn, value display — each compiling to an `apply` guard). `generate.generate_filter(account_state=None) -> str` assembles `meta + preamble + settings + trophies + categories + fallback`; `generate.load_clog_ids(data_dir) -> list[int]`; `generate.write_filter(path, account_state=None)`. **`account_state` is the wired-unused seam** (assigned to `_`).
+- Consumes: `osrs_planner.account.state.AccountState` (`.counts`, `.clog_obtained` — `"item:<n>"` keys), `emit.py` helpers (`emit_module`/`emit_rule`/`IRONMAN`/`_id_list`).
+- Produces: `emit_tailoring(account_state, clog_ids, value_index=None) -> str` (the caller passes the clog id-set, e.g. `set(generate.load_clog_ids())`) — a `tailoring` module: (1) `rule (IRONMAN && id:[missing]) { gold beam + sound + notify }` (missing = clog_ids − obtained); (2) `rule (IRONMAN && id:[obtained∩clog]) { quiet highlight, NO beam }`; (3) `apply (IRONMAN && HIDE_OWNED && id:[bank − ALL clog − high_value]) { hidden=true; }` with `#define HIDE_OWNED false`. Hide-owned excludes the WHOLE collection-log (never hide a trophy you own) and high-value items (via `value_index` `{id:value}`; None → nothing high-value). Empty/None account_state → empty module.
+
+- [ ] **Step 1: Write the failing test** (`tests/lootfilter/test_tailor.py`)
+
+```python
+from osrs_planner.lootfilter.tailor import emit_tailoring
+from osrs_planner.account.state import build_account_state
+
+def test_missing_beam_obtained_dim_and_hide_owned():
+    # clog universe {100,200,300}; obtained {200}; bank {200, 400}
+    st = build_account_state("ironman", bank_tsv="200\tX\t1\n400\tY\t1\n", clog_obtained={"item:200"})
+    out = emit_tailoring(st, clog_ids={100, 200, 300})
+    assert "module:tailoring" in out
+    assert "id:[100, 300]" in out and "showLootbeam = true;" in out and "notify = true;" in out  # missing beam
+    assert "id:[200]" in out                                  # obtained dim
+    assert "#define HIDE_OWNED false" in out
+    assert "HIDE_OWNED && id:[400]" in out                    # hide-owned excludes ALL clog (200 is clog, kept)
+
+def test_no_account_state_empty():
+    assert emit_tailoring(None, clog_ids={1, 2}).strip().endswith("*/")  # just the module header
+
+def test_high_value_owned_not_hidden():
+    st = build_account_state("ironman", bank_tsv="400\tY\t1\n", clog_obtained=set())
+    out = emit_tailoring(st, clog_ids=set(), value_index={400: 5_000_000})
+    assert "id:[400]" not in out                              # valuable owned item never hidden
+```
+
+- [ ] **Step 2: Run → fail. Step 3: Implement** (`src/osrs_planner/lootfilter/tailor.py`)
+
+```python
+# src/osrs_planner/lootfilter/tailor.py
+"""Account tailoring (design §9): beam the collection-log slots you still NEED, dim
+the ones you HAVE, optionally hide what you bank. Consumes an already-built
+AccountState (counts + clog_obtained); never calls the ingestion itself. The caller
+supplies the clog id-set (generate.load_clog_ids)."""
+from __future__ import annotations
+
+from osrs_planner.lootfilter.emit import emit_module, emit_rule, IRONMAN, _id_list
+
+_HIGH_VALUE = 100_000  # A grade -> never hide an owned item worth this much
+
+def _ids(keys) -> set[int]:
+    return {int(k.split(":")[1]) for k in keys}
+
+def emit_tailoring(account_state, clog_ids, value_index=None) -> str:
+    if account_state is None:
+        return emit_module("tailoring", "Account tailoring", "")
+    clog = set(clog_ids)
+    obtained = _ids(account_state.clog_obtained)
+    owned = _ids(account_state.counts)
+    missing = sorted(clog - obtained)
+    have = sorted(clog & obtained)
+    value_index = value_index or {}
+    hide = sorted(i for i in owned if i not in clog and value_index.get(i, 0) < _HIGH_VALUE)
+    lines = ['/*@ define:input:tailoring\nlabel: Hide items already in my bank\ntype: boolean\ngroup: Tailor\n*/\n#define HIDE_OWNED false']
+    if missing:
+        lines.append(emit_rule(f"{IRONMAN} && {_id_list(missing)}",
+            {"textColor": "#ffffffff", "backgroundColor": "#ffd8b01a", "borderColor": "#ffffd700",
+             "showLootbeam": "true", "lootbeamColor": "#ffffd700", "sound": "3930", "notify": "true", "fontType": "3"}))
+    if have:
+        lines.append(emit_rule(f"{IRONMAN} && {_id_list(have)}",
+            {"textColor": "#66d8b01a", "fontType": "1"}))   # quiet, no beam
+    if hide:
+        lines.append(emit_rule(f"{IRONMAN} && HIDE_OWNED && {_id_list(hide)}", {"hidden": "true"}, terminal=False))
+    return emit_module("tailoring", "Account tailoring", "\n".join(lines))
+```
+
+- [ ] **Step 4: Run → pass. Step 5: Commit.**
+```bash
+git add src/osrs_planner/lootfilter/tailor.py tests/lootfilter/test_tailor.py
+git commit -m "loot-filter: account tailoring (missing-clog beam, obtained dim, hide-owned)"
+```
+
+---
+
+## Task 8: Generate orchestrator + committed generic artifact + tailored demo
+
+**Files:** Create `src/osrs_planner/lootfilter/generate.py`, `scripts/lootfilter_demo.py`, `tests/lootfilter/test_generate.py`; generate `outputs/gilded-tome-iron.rs2f`
+
+**Interfaces:** `generate.load_clog_ids(data_dir) -> list[int]`; `generate_filter(account_state=None, data_dir=…) -> str` assembling `meta + preamble + settings + tailoring(if account) + trophies + categories + fallback`; `write_filter(path, account_state=None)`.
 
 - [ ] **Step 1: Write the failing test** (`tests/lootfilter/test_generate.py`)
 
 ```python
 import os
 from osrs_planner.lootfilter.generate import generate_filter, load_clog_ids
+from osrs_planner.account.state import build_account_state
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 
-def test_generate_has_all_modules_in_order():
+def test_generic_modules_in_order_no_tailoring():
     f = generate_filter()
-    for mod in ("module:settings", "module:trophies", "module:categories", "module:fallback"):
-        assert mod in f
-    # order: settings < trophies < categories < fallback
+    for m in ("module:settings", "module:trophies", "module:categories", "module:fallback"):
+        assert m in f
+    assert "module:tailoring" not in f                        # generic omits tailoring
     assert f.index("module:settings") < f.index("module:trophies") < f.index("module:categories") < f.index("module:fallback")
-    assert f.startswith("meta {") and "#define IRON accountType:1" in f
+    assert f.startswith("meta {") and "#define IRONMAN accountType:1" in f
 
-def test_account_state_seam_accepted_and_ignored():
-    a = generate_filter(account_state=None)
-    b = generate_filter(account_state={"levels": {"skill:crafting": 99}})
-    assert a == b  # v1 ignores it (seam)
+def test_tailored_inserts_tailoring_above_trophies():
+    st = build_account_state("ironman", bank_tsv="995\tCoins\t1\n", clog_obtained={"item:4151"})
+    f = generate_filter(account_state=st)
+    assert "module:tailoring" in f and f.index("module:tailoring") < f.index("module:trophies")
 
-def test_real_clog_ids_load_and_appear():
+def test_real_clog_ids_load():
     ids = load_clog_ids(os.path.join(REPO, "data"))
-    assert len(ids) > 500 and 4151 in ids  # Abyssal whip is a clog item
-    assert f"id:[" in generate_filter()
+    assert len(ids) > 500 and 4151 in ids
 ```
 
-- [ ] **Step 2: Run to verify it fails**
+- [ ] **Step 2: Run → fail. Step 3: Implement** (`src/osrs_planner/lootfilter/generate.py`)
 
-Run: `venv/bin/python -m pytest tests/lootfilter/test_generate.py -v`
-Expected: FAIL.
-
-- [ ] **Step 3: Implement `emit_settings`/`emit_preamble` + `generate.py`**
-
-In `emit.py`:
-```python
-def emit_preamble() -> str:
-    return "#define IRON accountType:1\n"
-
-def emit_settings() -> str:
-    body = "\n".join([
-        '/*@ define:input:settings\nlabel: Show world spawns\ntype: boolean\ngroup: Show\n*/\n#define SHOW_WORLD_SPAWNS true',
-        "apply (!SHOW_WORLD_SPAWNS && ownership:0) { hidden = true; }",
-        '/*@ define:input:settings\nlabel: Show unowned drops\ntype: boolean\ngroup: Show\n*/\n#define SHOW_UNOWNED false',
-        "apply (!SHOW_UNOWNED && ownership:2) { hidden = true; }",
-        '/*@ define:input:settings\nlabel: Despawn timer\ntype: boolean\ngroup: Show\n*/\n#define SHOW_DESPAWN true',
-        "apply (SHOW_DESPAWN) { showDespawn = true; }",
-    ])
-    return emit_module("settings", "Settings", body)
-```
-Create `generate.py`:
 ```python
 # src/osrs_planner/lootfilter/generate.py
-"""Assemble the full iron .rs2f filter (design §3/§5). account_state is the wired-
-unused v2 tailoring seam."""
+"""Assemble the full iron .rs2f (design §3/§5). Generic (account_state=None) omits the
+tailoring module and is the committed/byte-stable artifact; tailored is account-specific."""
 from __future__ import annotations
 
-import json
-import os
-
+import json, os
 from osrs_planner.lootfilter import emit
+from osrs_planner.lootfilter import tailor
 
 DATA = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))), "data")
 
@@ -641,17 +668,15 @@ def load_clog_ids(data_dir: str = DATA) -> list[int]:
     return sorted({r["item_id"] for r in recs})
 
 def generate_filter(account_state=None, data_dir: str = DATA) -> str:
-    _ = account_state  # SEAM: wired, unused in v1 (v2 tailoring). Do not remove.
     clog = load_clog_ids(data_dir)
     parts = [
-        emit.emit_meta("Gilded Tome — Iron",
-                       "Generated ironman loot filter. Value tiers + collection-log trophies."),
+        emit.emit_meta("Gilded Tome — Iron", "Generated ironman loot filter. Value tiers + collection-log trophies."),
         emit.emit_preamble(),
         emit.emit_settings(),
-        emit.emit_trophies(clog),
-        emit.emit_categories(),
-        emit.emit_fallback(),
     ]
+    if account_state is not None:
+        parts.append(tailor.emit_tailoring(account_state, set(clog)))
+    parts += [emit.emit_trophies(clog), emit.emit_categories(), emit.emit_fallback()]
     return "\n".join(parts) + "\n"
 
 def write_filter(path: str, account_state=None, data_dir: str = DATA) -> None:
@@ -659,96 +684,70 @@ def write_filter(path: str, account_state=None, data_dir: str = DATA) -> None:
         f.write(generate_filter(account_state, data_dir))
 ```
 
-- [ ] **Step 4: Run + commit**
-
-Run: `venv/bin/python -m pytest tests/lootfilter/ -v` (all PASS)
-```bash
-git add src/osrs_planner/lootfilter/emit.py src/osrs_planner/lootfilter/generate.py tests/lootfilter/test_generate.py
-git commit -m "loot-filter: settings module + account-state seam + generator"
-```
-
----
-
-## Task 7: Emit the committed artifact + demo + byte-stability
-
-**Files:**
-- Create (by running): `outputs/gilded-tome-iron.rs2f`, `scripts/lootfilter_demo.py`
-- Test: `tests/lootfilter/test_byte_stable.py`
-
-- [ ] **Step 1: Write `scripts/lootfilter_demo.py`**
+- [ ] **Step 4: Run → pass.** **Step 5: Write `scripts/lootfilter_demo.py`** (regen generic + a tailored sample over the account fixtures):
 
 ```python
 #!/usr/bin/env python3
-"""Regenerate outputs/gilded-tome-iron.rs2f and print a summary."""
-import os
-from osrs_planner.lootfilter.generate import write_filter, generate_filter
+"""Regenerate outputs/gilded-tome-iron.rs2f (generic) + print a tailored example."""
+import json, os
+from osrs_planner.lootfilter.generate import write_filter, generate_filter, load_clog_ids
+from osrs_planner.account.state import build_account_state
+from osrs_planner.account.temple import parse_temple_clog
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(REPO, "outputs", "gilded-tome-iron.rs2f")
+FIX = os.path.join(REPO, "tests", "account", "fixtures")
 
 def main():
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
     write_filter(OUT)
-    f = generate_filter()
-    print(f"wrote {OUT}")
-    print(f"  bytes: {len(f)} | rules: {f.count('rule (')} | applies: {f.count('apply (')}")
-    print(f"  modules: settings, trophies, categories, fallback")
+    g = generate_filter()
+    print(f"generic: {OUT} | bytes {len(g)} | rules {g.count('rule (')}")
+    obtained = parse_temple_clog(json.load(open(os.path.join(FIX, "sample_temple.json"), encoding="utf-8")))["obtained"]
+    st = build_account_state("ironman", bank_tsv=open(os.path.join(FIX, "sample_bank.tsv"), encoding="utf-8").read(), clog_obtained=obtained)
+    t = generate_filter(account_state=st)
+    miss = len(set(load_clog_ids()) - {int(k.split(':')[1]) for k in st.clog_obtained})
+    print(f"tailored: bytes {len(t)} | has tailoring module: {'module:tailoring' in t} | missing-clog slots beamed: {miss}")
 
 if __name__ == "__main__":
     main()
 ```
 
-- [ ] **Step 2: Generate the committed artifact**
-
-Run: `venv/bin/python scripts/lootfilter_demo.py`
-Expected: writes `outputs/gilded-tome-iron.rs2f`, prints a summary (rules > 100).
-Eyeball the file: `meta {` header, `#define IRON accountType:1`, the four modules, mithril-blue gear rules, the trophy id-list, the SS→E fallback.
-
-- [ ] **Step 3: Byte-stability test** (`tests/lootfilter/test_byte_stable.py`)
-
+- [ ] **Step 6: Generate + byte-stability test.** Run `venv/bin/python scripts/lootfilter_demo.py` (writes the artifact). Add `tests/lootfilter/test_byte_stable.py`:
 ```python
 import os
 from osrs_planner.lootfilter.generate import generate_filter
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
-
-def test_committed_artifact_matches_fresh_generation():
-    committed = open(os.path.join(REPO, "outputs", "gilded-tome-iron.rs2f"), encoding="utf-8").read()
-    assert committed == generate_filter()  # re-gen is byte-identical
+def test_committed_matches_fresh():
+    assert open(os.path.join(REPO, "outputs", "gilded-tome-iron.rs2f"), encoding="utf-8").read() == generate_filter()
 ```
 
-- [ ] **Step 4: Run + commit**
-
-Run: `venv/bin/python -m pytest tests/lootfilter/test_byte_stable.py -v` (PASS)
+- [ ] **Step 7: Run + commit.**
 ```bash
-git add scripts/lootfilter_demo.py outputs/gilded-tome-iron.rs2f tests/lootfilter/test_byte_stable.py
-git commit -m "loot-filter: committed iron filter artifact + demo + byte-stability"
+git add src/osrs_planner/lootfilter/generate.py scripts/lootfilter_demo.py outputs/gilded-tome-iron.rs2f tests/lootfilter/test_generate.py tests/lootfilter/test_byte_stable.py
+git commit -m "loot-filter: generator (generic+tailored) + committed artifact + byte-stability"
 ```
 
 ---
 
-## Task 8: Structural validator + golden + final verification
+## Task 9: Structural validator + golden + final verification
 
-**Files:**
-- Create: `data/validate_loot_filter.py`, `tests/lootfilter/test_validate.py`, `tests/lootfilter/test_golden.py`
+**Files:** Create `data/validate_loot_filter.py`, `tests/lootfilter/test_validate.py`, `tests/lootfilter/test_golden.py`
 
-**Interfaces:**
-- Produces: `python data/validate_loot_filter.py` exits 0 on the committed artifact, 1 on a structural violation.
+**Interfaces:** `python data/validate_loot_filter.py` exits 0 on the committed generic artifact, 1 on a structural violation.
 
 - [ ] **Step 1: Write the validator** (`data/validate_loot_filter.py`)
 
 ```python
 #!/usr/bin/env python3
-"""Structural validator for the generated loot filter (design §12). We cannot run
-the plugin's Java parser, so we check structure: balanced braces, every #define
-referenced is defined, colours are 8-hex ARGB, every trophy id resolves in
-item_dictionary.json, the filter is accountType:1-gated, modules in order."""
+"""Structural validator for the GENERIC loot filter (design §12): balanced braces +
+block comments, colours are 8-hex ARGB, IRON-gating (every rule( and every settings/
+trophy apply( references IRONMAN), trophy ids resolve, module order, hide-floor default 0."""
 from __future__ import annotations
-
 import argparse, json, os, re, sys
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-REPO = os.path.dirname(HERE)
-errors: list[str] = []
+HERE = os.path.dirname(os.path.abspath(__file__)); REPO = os.path.dirname(HERE)
+errors = []
 def check(c, m):
     if not c: errors.append(m)
 
@@ -761,84 +760,70 @@ def main() -> int:
 
     check(text.count("{") == text.count("}"), "unbalanced braces")
     check(text.count("/*") == text.count("*/"), "unbalanced block comments")
-    # colours: every #rrggbb/#aarrggbb literal is 6 or 8 hex
     for col in re.findall(r'"(#[0-9a-fA-F]+)"', text):
-        check(len(col) in (7, 9) and re.fullmatch(r"#[0-9a-fA-F]+", col),
-              f"bad colour literal: {col}")
-    # iron-gating: the IRON macro is defined, and EVERY styling rule references it
-    check("#define IRON accountType:1" in text, "IRON macro not defined")
-    check(text.count("rule (IRON") == text.count("rule ("), "a rule is not iron-gated (rule ( without IRON)")
-    # module order
+        check(len(col) == 9, f"colour not 8-hex ARGB: {col}")
+    check("#define IRONMAN accountType:1" in text, "IRONMAN macro not defined")
+    check(text.count("rule (IRONMAN") == text.count("rule ("), "a rule( is not IRONMAN-gated")
+    check(text.count("apply (IRONMAN") == text.count("apply ("), "an apply( is not IRONMAN-gated")
+    check("#define HIDE_FLOOR 0" in text, "HIDE_FLOOR default not 0 (would hide by default)")
     order = ["module:settings", "module:trophies", "module:categories", "module:fallback"]
     idxs = [text.find(m) for m in order]
-    check(all(i >= 0 for i in idxs), "a module is missing")
-    check(idxs == sorted(idxs), f"modules out of order: {idxs}")
-    # trophy ids resolve in the dictionary OR collection-log scope
+    check(all(i >= 0 for i in idxs) and idxs == sorted(idxs), f"modules missing/out of order: {idxs}")
     idict = {r["item_id"] for r in json.load(open(os.path.join(ns.data, "item_dictionary.json"), encoding="utf-8"))["records"]}
     clog = {r["item_id"] for r in json.load(open(os.path.join(ns.data, "collection_log.json"), encoding="utf-8"))["records"]}
     for m in re.findall(r"id:\[([0-9, ]+)\]", text):
         for tok in m.split(","):
-            iid = int(tok)
-            check(iid in idict or iid in clog, f"trophy id not in dictionary/clog scope: {iid}")
-
+            iid = int(tok); check(iid in idict or iid in clog, f"trophy id unresolved: {iid}")
     if errors:
         print(f"LOOT-FILTER VALIDATION FAILED -- {len(errors)} violation(s):")
         for e in errors[:50]: print("  -", e)
         return 1
-    print("LOOT-FILTER VALIDATION PASSED -- structure OK.")
-    print(f"  rules: {text.count('rule (')} | applies: {text.count('apply (')} | bytes: {len(text)}")
+    print(f"LOOT-FILTER VALIDATION PASSED -- rules {text.count('rule (')}, bytes {len(text)}")
     return 0
 
 if __name__ == "__main__":
     sys.exit(main())
 ```
 
-- [ ] **Step 2: Write the validator + golden tests**
+- [ ] **Step 2: Validator + golden tests.**
 
 `tests/lootfilter/test_validate.py`:
 ```python
 import os, subprocess, sys
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 V = os.path.join(REPO, "data", "validate_loot_filter.py")
-
 def test_validator_passes_committed():
     r = subprocess.run([sys.executable, V], capture_output=True, text=True)
     assert r.returncode == 0, r.stdout + r.stderr
-
-def test_validator_fails_on_unbalanced(tmp_path):
-    p = tmp_path / "bad.rs2f"; p.write_text("meta { name = \"x\";")  # unbalanced
-    r = subprocess.run([sys.executable, V, "--filter", str(p)], capture_output=True, text=True)
-    assert r.returncode == 1
+def test_validator_fails_unbalanced(tmp_path):
+    p = tmp_path / "bad.rs2f"; p.write_text('meta { name = "x";')
+    assert subprocess.run([sys.executable, V, "--filter", str(p)], capture_output=True, text=True).returncode == 1
 ```
 `tests/lootfilter/test_golden.py`:
 ```python
 import os
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))
 F = open(os.path.join(REPO, "outputs", "gilded-tome-iron.rs2f"), encoding="utf-8").read()
-
 def test_mithril_gear_blue():
-    assert 'name:["Mithril *"]' in F and "#ff4169e1" in F
-def test_fire_rune_red():
-    assert 'name:["Fire rune"]' in F and "#ffff4500" in F
-def test_trophy_module_and_value_ladder():
-    assert "module:trophies" in F and "value:>=10000000" in F and "value:>=0" in F
-def test_iron_gated_and_meta():
-    assert "accountType:1" in F and F.startswith("meta {")
+    assert '"Mithril platebody"' in F and "#ff4169e1" in F
+def test_no_fake_items():
+    assert "Bronze ore" not in F and "Rune bar" not in F and "Rune *" not in F
+def test_trophy_and_ladder_and_floor():
+    assert "module:trophies" in F and "value:>=10000000" in F and "#define HIDE_FLOOR 0" in F
+def test_iron_gated_generic_has_no_tailoring():
+    assert "accountType:1" in F and F.startswith("meta {") and "module:tailoring" not in F
 ```
 
-- [ ] **Step 3: Run validator + golden + full verification**
-
-Run:
+- [ ] **Step 3: Run validator + full verification.**
 ```bash
 venv/bin/python data/validate_loot_filter.py
 venv/bin/python -m pytest tests/ -q
 for v in validate_income validate_cost validate_kg validate_drop_rate; do venv/bin/python data/$v.py >/dev/null && echo "$v ok"; done
 venv/bin/python scripts/lootfilter_demo.py && git diff --quiet outputs/gilded-tome-iron.rs2f && echo "byte-stable"
 ```
-Expected: validator exits 0; full suite passes (existing + new lootfilter tests); the 4 existing validators still exit 0; the artifact regenerates byte-stably.
+Expected: validator exit 0; full suite passes (existing + new lootfilter tests); 4 existing validators exit 0; artifact byte-stable.
 
-- [ ] **Step 4: Commit**
-
+- [ ] **Step 4: Commit.**
 ```bash
 git add data/validate_loot_filter.py tests/lootfilter/test_validate.py tests/lootfilter/test_golden.py
 git commit -m "loot-filter: structural validator + golden set + final verification"
@@ -847,4 +832,4 @@ git commit -m "loot-filter: structural validator + golden set + final verificati
 ---
 
 ## Deferred (spec §13 — do NOT build)
-Account tailoring (the `account_state` seam — beam log gaps, hide banked); granular per-content supply curation; rarity sub-ranking of trophies; main-account variant; custom `.wav` sound pack; live/auto-publish to filterscape.
+Granular per-content supply curation; rarity sub-ranking; main-account variant; custom `.wav` pack; per-category min-value knobs; live filterscape publish; banked-XP-aware value.
