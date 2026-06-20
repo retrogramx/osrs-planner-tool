@@ -191,9 +191,10 @@ def test_rune_ammo_and_essence_not_gear():
     assert categorize("Rune essence") is None
     assert categorize("Runite ore")["id"] == "ores"     # ore, not gear
 
-def test_black_mask_and_dragon_bones_not_gear():
-    assert categorize("Black mask") is None              # slayer unique, not 'black gear'
-    assert categorize("Dragon bones") is None            # prayer supply, not 'dragon gear'
+def test_black_mask_not_gear_dragon_bones_is_bones():
+    assert categorize("Black mask") is None                  # slayer unique, not 'black gear'
+    assert categorize("Dragon bones")["id"] == "bones"       # prayer supply -> bones, not 'dragon gear'
+    assert categorize("Rune thrownaxe") is None              # ranged ammo, not melee 'axe' gear
 
 def test_fire_rune_is_rune():
     c = categorize("Fire rune")
@@ -226,26 +227,29 @@ from osrs_planner.lootfilter.palette import MATERIAL_COLORS, RUNE_COLORS, GEM_CO
 
 GEAR_PIECES = ("platebody","platelegs","plateskirt","full helm","med helm","chainbody",
     "sq shield","kiteshield","sword","longsword","dagger","scimitar","mace","warhammer",
-    "battleaxe","2h sword","spear","hasta","claws","boots","axe","pickaxe","halberd")
-# metal prefix used by GEAR (the gear naming uses 'adamant'/'rune'); ores/bars differ (Task 5).
-_GEAR_METALS = list(MATERIAL_COLORS)  # bronze..dragon
-# ores/bars use the smithing-material names (real in-game items)
-ORE_NAMES = {"Copper ore":"bronze","Tin ore":"bronze","Iron ore":"iron","Coal":"steel",
-    "Silver ore":"iron","Gold ore":"dragon","Mithril ore":"mithril","Adamantite ore":"adamant","Runite ore":"rune"}
-BAR_NAMES = {"Bronze bar":"bronze","Iron bar":"iron","Steel bar":"steel","Silver bar":"iron",
-    "Gold bar":"dragon","Mithril bar":"mithril","Adamantite bar":"adamant","Runite bar":"rune"}
-CRYSTAL_SEEDS = {"Crystal seed","Crystal weapon seed","Crystal armour seed","Crystal tool seed",
-    "Crystal teleport seed","Crystal chime seed","Crystal saw seed",
+    "battleaxe","2h sword","spear","hasta","claws","boots","axe","pickaxe","halberd",
+    "crossbow","defender")
+_GEAR_METALS = list(MATERIAL_COLORS)  # bronze..dragon (gear naming uses 'adamant'/'rune')
+# ores/bars: REAL in-game item NAME -> an ore/bar-appropriate hue (NOT borrowed from the
+# gear-metal palette, so Coal reads dark and Gold reads gold -- design 'hue = identity').
+_COAL, _GOLDH, _SILVERH, _IRONORE = "#ff2b2b2b", "#ffd8b01a", "#ffd0d8e0", "#ffa05a3a"
+ORE_NAMES = {"Copper ore":"#ffcd7f32","Tin ore":"#ffb5c0c9","Iron ore":_IRONORE,"Coal":_COAL,
+    "Silver ore":_SILVERH,"Gold ore":_GOLDH,"Mithril ore":"#ff4169e1","Adamantite ore":"#ff3cb371","Runite ore":"#ff40e0d0"}
+BAR_NAMES = {"Bronze bar":"#ffcd7f32","Iron bar":"#ff6b6b6b","Steel bar":"#ffb5c0c9","Silver bar":_SILVERH,
+    "Gold bar":_GOLDH,"Mithril bar":"#ff4169e1","Adamantite bar":"#ff3cb371","Runite bar":"#ff40e0d0"}
+CRYSTAL_SEEDS = {"Crystal seed","Crystal seedling","Crystal weapon seed","Crystal armour seed",
+    "Crystal tool seed","Crystal teleport seed","Crystal chime seed","Crystal saw seed",
     "Enhanced crystal weapon seed","Enhanced crystal teleport seed"}
 
 def categorize(name: str):
     n = name.strip()
     nl = n.lower()
-    if n in BAR_NAMES: return {"id": "bars", "hue": MATERIAL_COLORS[BAR_NAMES[n]]}
-    if n in ORE_NAMES: return {"id": "ores", "hue": MATERIAL_COLORS[ORE_NAMES[n]]}
-    for metal in _GEAR_METALS:
-        if nl.startswith(metal + " ") and any(w in nl for w in GEAR_PIECES):
-            return {"id": "gear", "hue": MATERIAL_COLORS[metal]}
+    if n in BAR_NAMES: return {"id": "bars", "hue": BAR_NAMES[n]}
+    if n in ORE_NAMES: return {"id": "ores", "hue": ORE_NAMES[n]}
+    if "thrownaxe" not in nl:  # ranged ammo, not melee 'axe' gear
+        for metal in _GEAR_METALS:
+            if nl.startswith(metal + " ") and any(w in nl for w in GEAR_PIECES):
+                return {"id": "gear", "hue": MATERIAL_COLORS[metal]}
     if nl.endswith(" rune"):
         elem = nl[:-5]
         if elem in RUNE_COLORS: return {"id": "runes", "hue": RUNE_COLORS[elem]}
@@ -256,7 +260,8 @@ def categorize(name: str):
         if gem in GEM_COLORS: return {"id": "gems", "hue": GEM_COLORS[gem]}
     if nl.endswith(" logs"):
         tree = nl[:-5]
-        return {"id": "logs", "hue": LOG_COLORS.get(tree, "#ff9c6b3f")}
+        if tree in LOG_COLORS:                 # only the trees the emitter actually ships
+            return {"id": "logs", "hue": LOG_COLORS[tree]}
     if (nl.endswith(" seed") or nl.endswith(" seedling")) and n not in CRYSTAL_SEEDS:
         return {"id": "seeds", "hue": "#ff00e024"}
     if nl.endswith(" bones") or nl.endswith(" ashes"):
@@ -435,6 +440,12 @@ def test_emit_has_mithril_blue_fire_red_and_seed_exclusion():
     assert '"Fire rune"' in out and "#ffff4500" in out
     assert "Crystal weapon seed" in out and "!name:" in out     # seed exclusion present
     assert out.count("module:categories") == 1 and "IRONMAN &&" in out
+
+def test_ore_bar_hue_identity():
+    out = emit_categories()
+    # Coal reads dark, Gold reads gold -- NOT borrowed gear-metal steel/dragon hues
+    assert '"Coal"' in out and "#ff2b2b2b" in out               # Coal dark, not steel grey
+    assert "#ffd8b01a" in out                                   # Gold ore/bar gold, not dragon red
 ```
 
 - [ ] **Step 2: Run → fail. Step 3: Implement.**
@@ -460,7 +471,7 @@ def category_rules():
 ```
 Note: ores/bars pass `hue=None` and are expanded per-name in emit (each ore/bar gets its own metal hue). In `emit.py`:
 ```python
-from osrs_planner.lootfilter.categories import category_rules, ORE_NAMES, BAR_NAMES, CRYSTAL_SEEDS, MATERIAL_COLORS  # add
+from osrs_planner.lootfilter.categories import category_rules, ORE_NAMES, BAR_NAMES, CRYSTAL_SEEDS  # add
 
 def _name_list(patterns) -> str:
     return "name:[" + ", ".join(f'"{p}"' for p in patterns) + "]"
@@ -474,10 +485,10 @@ def _emit_group(cid, patterns, hue, lines):
 def emit_categories() -> str:
     lines = []
     for cid, _name, patterns, hue in category_rules():
-        if hue is None:  # ores/bars -> per-name metal hue
+        if hue is None:  # ores/bars -> each item NAME carries its own hue
             table = ORE_NAMES if cid == "ores" else BAR_NAMES
             for nm in patterns:
-                _emit_group(cid, [nm], MATERIAL_COLORS[table[nm]], lines)
+                _emit_group(cid, [nm], table[nm], lines)
         else:
             _emit_group(cid, patterns, hue, lines)
     return emit_module("categories", "Categories (by material/type)", "\n".join(lines))
@@ -599,7 +610,7 @@ def emit_tailoring(account_state, clog_ids, value_index=None) -> str:
     lines = ['/*@ define:input:tailoring\nlabel: Hide items already in my bank\ntype: boolean\ngroup: Tailor\n*/\n#define HIDE_OWNED false']
     if missing:
         lines.append(emit_rule(f"{IRONMAN} && {_id_list(missing)}",
-            {"textColor": "#ffffffff", "backgroundColor": "#ffd8b01a", "borderColor": "#ffffd700",
+            {"hidden": "false", "textColor": "#ffffffff", "backgroundColor": "#ffd8b01a", "borderColor": "#ffffd700",
              "showLootbeam": "true", "lootbeamColor": "#ffffd700", "sound": "3930", "notify": "true", "fontType": "3"}))
     if have:
         lines.append(emit_rule(f"{IRONMAN} && {_id_list(have)}",
@@ -647,6 +658,20 @@ def test_tailored_inserts_tailoring_above_trophies():
 def test_real_clog_ids_load():
     ids = load_clog_ids(os.path.join(REPO, "data"))
     assert len(ids) > 500 and 4151 in ids
+
+def test_tailored_hide_owned_spares_high_value():
+    # the high-value guard must be LIVE in the real generate path (not just the unit test)
+    import re
+    from osrs_planner.lootfilter.generate import load_value_index
+    D = os.path.join(REPO, "data")
+    vi = load_value_index(D); clog = set(load_clog_ids(D))
+    hv = next(i for i in sorted(vi) if vi[i] >= 1_000_000 and i not in clog)   # valuable, non-clog
+    lv = next(i for i in sorted(vi) if 0 < vi[i] < 50_000 and i not in clog)   # cheap, non-clog
+    st = build_account_state("ironman", bank_tsv=f"{hv}\tH\t1\n{lv}\tL\t1\n", clog_obtained=set())
+    m = re.search(r"HIDE_OWNED && (id:\[[0-9, ]+\])", generate_filter(account_state=st))
+    assert m, "expected a HIDE_OWNED rule for the cheap item"
+    ids = set(m.group(1)[4:-1].replace(" ", "").split(","))
+    assert str(lv) in ids and str(hv) not in ids   # cheap hideable; valuable spared
 ```
 
 - [ ] **Step 2: Run → fail. Step 3: Implement** (`src/osrs_planner/lootfilter/generate.py`)
@@ -667,6 +692,19 @@ def load_clog_ids(data_dir: str = DATA) -> list[int]:
     recs = json.load(open(os.path.join(data_dir, "collection_log.json"), encoding="utf-8"))["records"]
     return sorted({r["item_id"] for r in recs})
 
+def load_value_index(data_dir: str = DATA) -> dict:
+    """item_id -> max(GE high price [skip the int-max sentinel], High-Alch), for the
+    tailoring hide-owned high-value guard. Reads committed data only (ge_prices.json),
+    no overlay import (boundary). `price` is a {high, low, capturedAt} dict."""
+    recs = json.load(open(os.path.join(data_dir, "ge_prices.json"), encoding="utf-8"))["records"]
+    out = {}
+    for r in recs:
+        ge = (r.get("price") or {}).get("high") or 0
+        if ge >= 2_000_000_000:
+            ge = 0
+        out[r["item_id"]] = max(ge, r.get("high_alch") or 0)
+    return out
+
 def generate_filter(account_state=None, data_dir: str = DATA) -> str:
     clog = load_clog_ids(data_dir)
     parts = [
@@ -674,8 +712,8 @@ def generate_filter(account_state=None, data_dir: str = DATA) -> str:
         emit.emit_preamble(),
         emit.emit_settings(),
     ]
-    if account_state is not None:
-        parts.append(tailor.emit_tailoring(account_state, set(clog)))
+    if account_state is not None:  # tailored path: thread the value map so hide-owned spares valuables
+        parts.append(tailor.emit_tailoring(account_state, set(clog), value_index=load_value_index(data_dir)))
     parts += [emit.emit_trophies(clog), emit.emit_categories(), emit.emit_fallback()]
     return "\n".join(parts) + "\n"
 
@@ -766,6 +804,14 @@ def main() -> int:
     check(text.count("rule (IRONMAN") == text.count("rule ("), "a rule( is not IRONMAN-gated")
     check(text.count("apply (IRONMAN") == text.count("apply ("), "an apply( is not IRONMAN-gated")
     check("#define HIDE_FLOOR 0" in text, "HIDE_FLOOR default not 0 (would hide by default)")
+    # every macro referenced in a condition is #defined; no empty conditions/bodies
+    defined = set(re.findall(r"#define (\w+)", text))
+    referenced = set()
+    for c in re.findall(r"(?:rule|apply) \(([^)]*)\)", text):
+        referenced |= set(re.findall(r"\b([A-Z][A-Z0-9_]{2,})\b", c))
+    check(not (referenced - defined), f"macro(s) referenced but not defined: {sorted(referenced - defined)[:10]}")
+    check(not re.search(r"(?:rule|apply) \(\)", text), "a rule/apply has an empty condition")
+    check(not re.search(r"\)\s*\{\s*\}", text), "a rule/apply has an empty body")
     order = ["module:settings", "module:trophies", "module:categories", "module:fallback"]
     idxs = [text.find(m) for m in order]
     check(all(i >= 0 for i in idxs) and idxs == sorted(idxs), f"modules missing/out of order: {idxs}")
