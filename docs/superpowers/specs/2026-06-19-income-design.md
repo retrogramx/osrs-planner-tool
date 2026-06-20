@@ -74,7 +74,7 @@ One normalized **`MethodRecord`** (frozen pydantic) unifying both source dataset
 
 - **Value each output for the family.** Coins → face value (both). **main** → GE price × qty/hr (`provider.ge_price`). **ironman/uim** → the **best realization in coins**: `max(` High-Alch of the raw drop, **process-then-realize** `)`, where process-then-realize **walks the multi-step chain** for the drop (e.g. green dragonhide → **tan** [Tanner service fee] → leather → **craft** [Crafting level] → d'hide body → **High-Alch 4,680**), **subtracting internal costs** (tan fee, secondary inputs like thread) and **gated by the account's skills**. Non-gold drops (bones → Prayer) don't count as income.
 - This is the **inverse of cost's recursive `price_routes`**: cost sums input costs *down* an acquisition chain; income walks a drop *up* a processing chain. It reuses `PriceProvider` and `data/recipes.json` **reverse-indexed** (drop → what it can become), plus a small **service-cost** datum (tanning).
-- **minus method-level input cost** (e.g. nature runes for alching). v1 keeps iron input-handling simple and honest (GE-input methods are already excluded).
+- **minus method-level input cost** (e.g. nature runes for alching). v1 keeps iron input-handling simple and honest. **Clarification (post-review):** the iron-gate only excludes methods *flagged* `requires_ge` (GE-arbitrage); an iron-eligible combat method (e.g. green dragons) still carries consumable inputs (antifire, darts) that v1 values at the **GE price for every family**, including irons. This is the **SAFE direction** — charging an iron the GE price for a supply it actually gathers cheaper/free can only *lower* reported income, never inflate it — and is disclosed inline at `realize._coin_cost_of_input`. Per-family input acquisition (gather-time / iron shop) is a v2 follow-up; "already excluded" refers to GE-arbitrage methods, not to every GE-priced input.
 - **`gp_hr_status`:** `known` when priced; **`unknown`** when an output can't be priced, a rate is null, or a `processing_dependent` chain isn't yet covered — *never an invented number*.
 
 ### Processing scope (v1 vs v2)
@@ -134,7 +134,7 @@ suggest_methods(state, provider, index, current_gold=None) -> IncomeCard
 
 ### 8.2 Golden income-set (hand-verified, over real data + `SnapshotPriceProvider`, values read at runtime)
 1. **green dragons** — main (GE-realized) vs ironman (the **tan → craft → alch** multi-step realization) produce *different, correct* gp/hr; the iron number reflects the processing chain (the exemplar proving the framework).
-2. a **main-only** method (cleaning grimy ranarr) is **absent** from an ironman card.
+2. a **main-only** method is **absent** from an ironman card. *(Implementation note: the spec's original exemplar "cleaning grimy ranarr" is not in the committed datasets, so the golden test asserts the same property with a constructed `requires_ge=True` main-only stand-in, "Grinding chocolate bars". The invariant proven — main-only present on the main card, absent from the iron card — is unchanged.)*
 3. **future-gating** — rune dragons gated without Dragon Slayer II; a lance variant **unverified** without bank data.
 4. a **sink** (Managing Miscellania) is **flagged, not ranked**.
 5. **never-auto-pick** (no single "best"); a null-rate method shows `gp_hr_status = unknown`.

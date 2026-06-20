@@ -19,8 +19,11 @@ def _outputs_summary(method) -> str:
     parts = []
     for f in method.outputs:
         label = "coins" if f.is_coins else (f.item_id or "?")
-        rate = f.qty_per_hour if f.qty_per_hour is not None else 0
-        parts.append(f"{label} x{rate:g}/hr")
+        # never-fabricate in the DISPLAY string too: an unmodelled rate renders
+        # "x?/hr", not "x0/hr" (0 would read as "yields nothing", a fabricated fact;
+        # the rankable gp_hr independently surfaces unknown for such a method).
+        rate = f"{f.qty_per_hour:g}" if f.qty_per_hour is not None else "?"
+        parts.append(f"{label} x{rate}/hr")
     return ", ".join(parts) if parts else "(no outputs)"
 
 

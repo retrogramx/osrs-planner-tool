@@ -68,8 +68,13 @@ def kg():
 
 
 def _find(methods, needle):
-    hits = [m for m in methods if needle.lower() in m.name.lower()]
-    assert hits, f"no method matching {needle!r}"
+    # EXACT (case-insensitive) name match, not substring: "Killing green dragons"
+    # has 3 dataset variants ("(Myths Guild)", "(Ironman)") that all substring-match
+    # -- returning hits[0] would bind the flagship golden to whichever sorts first
+    # (dataset order), a silent-fragility bug. Exact-match pins the canonical base.
+    hits = [m for m in methods if m.name.lower() == needle.lower()]
+    assert hits, f"no method exactly named {needle!r}"
+    assert len(hits) == 1, f"{needle!r} resolves to {len(hits)} methods: {[m.name for m in hits]}"
     return hits[0]
 
 

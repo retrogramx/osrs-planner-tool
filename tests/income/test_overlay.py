@@ -6,8 +6,9 @@ import pytest
 from osrs_planner.cost.prices import SnapshotPriceProvider
 from osrs_planner.engine.state import AccountState
 from osrs_planner.income.methods import load_methods, build_method_index, build_recipe_reverse_index
-from osrs_planner.income.overlay import suggest_methods
+from osrs_planner.income.overlay import suggest_methods, _outputs_summary
 from osrs_planner.income.cards import IncomeCard
+from osrs_planner.income.methods import Flow, MethodRecord
 
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 DATA = os.path.join(REPO, "data")
@@ -31,6 +32,28 @@ def recipe_index():
 
 def _gd(card):
     return next((m for m in card.methods if m.name == "Killing green dragons"), None)
+
+
+def _stub_method(outputs):
+    return MethodRecord(
+        id="method:x", name="X", category="c", members=True, audience="main",
+        requires_ge=False, iron_eligible=True, realization_channel="coins",
+        outputs=outputs, inputs=[], net_sign="earner", source="t", url="u",
+        accessed_at="2026-06-19",
+    )
+
+
+def test_outputs_summary_unknown_rate_renders_question_mark_not_zero():
+    """never-fabricate in the display string: a None rate is 'x?/hr', not 'x0/hr'
+    (0 would falsely read as 'yields nothing')."""
+    summary = _outputs_summary(_stub_method([Flow(item_id="item:1", qty_per_hour=None)]))
+    assert "x?/hr" in summary
+    assert "x0/hr" not in summary
+
+
+def test_outputs_summary_known_rate_renders_number():
+    summary = _outputs_summary(_stub_method([Flow(item_id="item:1", qty_per_hour=180)]))
+    assert "x180/hr" in summary
 
 
 def test_main_card_is_ranked_incomecard(provider, index, recipe_index):

@@ -184,6 +184,8 @@ def best_realization(item_id: str, provider: PriceProvider,
         this_in = next((i for i in inputs if i["item_id"] == item_id), None)
         if this_in is None:
             continue
+        # `or 1.0` masks a 0/missing qty as 1 to avoid a divide-by-zero below; no
+        # committed recipe has qty 0, so this is a defensive default, not live math.
         consumed = float(this_in["qty"]) or 1.0
 
         prod_val, prod_status = best_realization(out_id, provider, recipe_index, skills, seen)
@@ -196,6 +198,13 @@ def best_realization(item_id: str, provider: PriceProvider,
         for inp in inputs:
             if inp["item_id"] == item_id:
                 continue
+            # DISCLOSED v1 under-cost (T5): a secondary input is charged at its
+            # best-REALIZATION value (what an iron could turn it back into, e.g.
+            # thread @ high_alch=1), NOT its acquisition cost (thread @ GE=7). For
+            # the only v1 chain this is ~1 coin/body (~0.13% of 1539/hide), the
+            # UNSAFE direction (under-cost), and is dwarfed by the SAFE-direction
+            # GE-costing of method-level inputs upstream. Proper acquisition-cost
+            # valuation of secondaries is a v2 follow-up.
             sec_val, sec_status = best_realization(inp["item_id"], provider, recipe_index, skills, seen)
             if sec_status != "known" or sec_val is None:
                 ok = False
@@ -206,7 +215,7 @@ def best_realization(item_id: str, provider: PriceProvider,
 
         net_per_product = prod_val * out_qty - service_fee - secondary_cost
         per_this_item = net_per_product / consumed
-        candidates.append(int(per_this_item))
+        candidates.append(int(per_this_item))  # floor to whole coins (alch/GE are integer)
 
     if not candidates:
         return None, "unknown"
