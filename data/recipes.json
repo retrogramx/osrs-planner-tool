@@ -1,15 +1,20 @@
 {
   "_provenance": {
     "domain": "recipes",
-    "description": "Hand-curated, wiki-verified production recipes for the cost-layer craft channel. v1 covers the golden-set potion chain (Attack potion via Guam) only; bulk recipe sourcing from the OSRS Wiki production tables is a disclosed v1 follow-up. No live wiki fetch during build. The Vial of water (item:227) record models filling an empty Vial (item:229) at any water source: filling is FREE, so the produced cost is exactly the empty vial -- this gives the potion chain a non-GE route for every input so the iron potion is priceable.",
+    "description": "Hand-curated, wiki-verified production recipes. (1) The cost-layer golden potion chain (Attack potion via Guam). (2) The income-layer green-dragons exemplar PROCESSING chain (green dragonhide --tan--> green dragon leather --craft--> green d'hide body), proving the multi-step iron realization (tan service fee + Crafting gate + best-realization). The tan record carries service_fee_coins (a tanner SERVICE, not an item input) so realize.py subtracts the internal cost. Bulk recipe/service sourcing from the OSRS Wiki production tables is a disclosed v1 follow-up. No live wiki fetch during build.",
     "source_urls": [
       "https://oldschool.runescape.wiki/w/Attack_potion",
       "https://oldschool.runescape.wiki/w/Guam_potion_(unf)",
-      "https://oldschool.runescape.wiki/w/Vial_of_water"
+      "https://oldschool.runescape.wiki/w/Vial_of_water",
+      "https://oldschool.runescape.wiki/w/Green_dragon_leather",
+      "https://oldschool.runescape.wiki/w/Green_d'hide_body",
+      "https://oldschool.runescape.wiki/w/Tanning",
+      "https://oldschool.runescape.wiki/w/Tanner"
     ],
     "license": "OSRS Wiki content CC BY-NC-SA 3.0",
     "curated": true,
-    "record_count": 3
+    "accessed_at": "2026-06-19",
+    "record_count": 5
   },
   "records": [
     {
@@ -57,6 +62,44 @@
       "output_qty": 1,
       "currency": "currency:coins",
       "source": "Fill an empty Vial at any water source (free); cost is the empty vial",
+      "audience": "both",
+      "pricing_basis": "inputs",
+      "realization_channel": "craft",
+      "requires_ge": false
+    },
+    {
+      "output_item_id": "item:1745",
+      "name": "Green dragon leather",
+      "skill": null,
+      "level": 1,
+      "inputs": [
+        { "item_id": "item:1753", "qty": 1 }
+      ],
+      "output_qty": 1,
+      "currency": "currency:coins",
+      "service_fee_coins": 20,
+      "source": "Tan a green dragonhide at a standard tanner (Ellis, Al Kharid / Crafting Guild / etc.). PINNED: standard tanner fee = 20 coins/hide (OSRS Wiki Tanning + Tanner + Green dragon leather pages all agree on 20 for green d'hide at a standard tanner). The 40-200 range is Eodan only -- a NON-STANDARD, diary-reducible tanner -- and is NOT the standard fee; not modelled in v1. Sbott/Chouani variants and the Magic Tan Leather spell (78 Magic) are alternate routes, not modelled.",
+      "source_url": "https://oldschool.runescape.wiki/w/Tanning",
+      "accessed_at": "2026-06-19",
+      "audience": "both",
+      "pricing_basis": "inputs",
+      "realization_channel": "tan",
+      "requires_ge": false
+    },
+    {
+      "output_item_id": "item:1135",
+      "name": "Green d'hide body",
+      "skill": "Crafting",
+      "level": 63,
+      "inputs": [
+        { "item_id": "item:1745", "qty": 3 },
+        { "item_id": "item:1734", "qty": 1 }
+      ],
+      "output_qty": 1,
+      "currency": "currency:coins",
+      "source": "Crafting: 3 Green dragon leather + 1 thread (item:1734; needle item:1733) at Crafting 63 -> 186 Crafting xp. PINNED from OSRS Wiki Green d'hide body.",
+      "source_url": "https://oldschool.runescape.wiki/w/Green_d'hide_body",
+      "accessed_at": "2026-06-19",
       "audience": "both",
       "pricing_basis": "inputs",
       "realization_channel": "craft",

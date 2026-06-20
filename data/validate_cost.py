@@ -24,6 +24,12 @@ Invariants:
   7. Shop currency values join to currencies.json.
   8. Envelope consistency: each cost dataset's _provenance.record_count ==
      len(records) and _excluded is a list.
+  9. Recipe-leak guard: the cost craft loader ingests ONLY true craft rows
+     (realization_channel=="craft", no service_fee_coins). data/recipes.json is
+     SHARED with the income overlay, whose tanner SERVICE rows the cost craft
+     channel cannot price (it has no fee slot) -- ingesting one would silently
+     drop the fee and under-price downstream items. This pins the load_recipes
+     filter so it cannot regress.
 
 Usage: python3 data/validate_cost.py [--data DATA_DIR] [--kg KG_DIR]
 """
@@ -33,6 +39,15 @@ import json
 import os
 import re
 import sys
+
+# Repo root + src on path so this script can import the cost loader when run
+# directly (./venv/bin/python data/validate_cost.py), mirroring validate_kg.py.
+_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+for _p in (_ROOT, os.path.join(_ROOT, "src")):
+    if _p not in sys.path:
+        sys.path.insert(0, _p)
+
+from osrs_planner.cost.channels import is_cost_craft_record, load_recipes
 
 errors: list[str] = []
 
@@ -136,6 +151,31 @@ def main() -> int:
                 check(rec.get("requires_ge") is True, f"[ge] record not requires_ge=True: {iid}")
                 check(allow == {"main"}, f"[ge] channel marked iron-eligible: {iid} allow={sorted(allow)}")
 
+    # --- Inv 9: recipe-leak guard (cost craft loader ingests only true craft) ---
+    # data/recipes.json is shared with the income overlay; the cost craft channel
+    # cannot model a per-unit service fee, so load_recipes ingests ONLY rows that
+    # are realization_channel=="craft" with no service_fee_coins. Pin the loader so
+    # a regression that drops the filter cannot silently re-introduce the under-
+    # pricing leak (income reads the skipped rows via its own reverse-index).
+    n_recipe_skipped = 0
+    recipes_path = os.path.join(data, "recipes.json")
+    if os.path.exists(recipes_path):
+        raw_recipes = load(recipes_path)["records"]
+        ingested = load_recipes(recipes_path)
+        for rec in ingested:
+            check(
+                rec.realization_channel == "craft",
+                f"[craft] cost loader ingested a non-craft realization_channel: "
+                f"{rec.item_id} rc={rec.realization_channel!r}",
+            )
+        expected = [r for r in raw_recipes if is_cost_craft_record(r)]
+        check(
+            len(ingested) == len(expected),
+            f"[craft] loader ingested {len(ingested)} rows; expected {len(expected)} "
+            f"true-craft (realization_channel=='craft', no service_fee_coins) rows",
+        )
+        n_recipe_skipped = len(raw_recipes) - len(expected)
+
     # --- KG stays cost-free ---
     # Conservative substring guard: any "price"/"cost"/"currency" JSON key in a
     # kg/*.json file fails. A future legitimate KG field literally named one of
@@ -159,6 +199,8 @@ def main() -> int:
     print(f"  item_dictionary: {len(item_ids)} resolvable item_ids")
     print(f"  currencies: {len(cur_ids)} ids")
     print(f"  channel records validated: {n_channel_records}")
+    if n_recipe_skipped:
+        print(f"  recipe rows skipped by cost loader (income-owned service/non-craft): {n_recipe_skipped}")
     print("  NOTE: hand-curated golden-set + sample coverage; bulk wiki sourcing is a v1 follow-up.")
     return 0
 

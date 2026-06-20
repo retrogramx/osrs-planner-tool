@@ -126,16 +126,38 @@ def load_shop(path: str) -> list[ChannelRecord]:
     return records
 
 
+def is_cost_craft_record(r: dict) -> bool:
+    """True if a recipes.json row is a TRUE craft route the cost layer can price.
+
+    data/recipes.json is SHARED with the income overlay (the income green-dragons
+    exemplar adds a tanner SERVICE row: realization_channel="tan" + per-unit
+    service_fee_coins). The cost craft channel computes cost = sum(cheapest input)
+    with NO slot for a service fee, so ingesting such a row would silently DROP the
+    fee and under-price everything downstream (the green d'hide body), crossing the
+    income/cost boundary through the shared file. Cost therefore ingests ONLY rows
+    that are realization_channel=="craft" AND carry no service_fee_coins; the income
+    overlay reads the skipped rows via its own recipe reverse-index (which honors
+    the fee). data/validate_cost.py asserts this so the filter cannot silently
+    regress.
+    """
+    return r.get("realization_channel") == "craft" and r.get("service_fee_coins") is None
+
+
 def load_recipes(path: str) -> list[ChannelRecord]:
     """Load data/recipes.json into `craft` ChannelRecords.
 
     Cost is computed from inputs at routing time (amount=None). Inputs are
-    (item_id, qty) tuples; output_qty divides the summed input cost.
+    (item_id, qty) tuples; output_qty divides the summed input cost. Rows the cost
+    craft channel cannot model correctly -- non-craft realization channels and
+    service-fee-bearing rows owned by the income overlay -- are SKIPPED (see
+    is_cost_craft_record).
     """
     with open(path, encoding="utf-8") as f:
         payload = json.load(f)
     records: list[ChannelRecord] = []
     for r in payload["records"]:
+        if not is_cost_craft_record(r):
+            continue  # income-owned service/non-craft row; cost can't price it
         records.append(
             ChannelRecord(
                 item_id=r["output_item_id"],
