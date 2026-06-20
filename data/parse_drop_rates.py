@@ -62,14 +62,19 @@ def _null_record(item_id, item, source, node_type, status):
 
 def _alt_rarity_variant(dj):
     """The dropsline 'Alt Rarity' field is a SECOND, conditional rate for the same
-    drop. For slayer monsters it is the ON-TASK boost (Wyrm dragon harpoon: Rarity
-    1/10,000, Alt Rarity 1/2,000); for other sources it is a context-dependent
-    alternate (The Mimic 3rd-age: a slightly different casket rate). We capture the
-    NUMBER + raw, but only label the condition as far as the source allows: the
-    wiki's 'Rarity Notes'/'Alt Rarity Dash' when present, else a neutral
-    "alternate rate (often the on-task slayer boost)" -- never fabricating "on task"
-    where the data does not say so. Returns the variant dict, or None when Alt Rarity
-    is absent or identical to the base Rarity (no real alternate)."""
+    drop -- but dropsline does NOT encode WHICH condition (verified: 0/382 rows for
+    GDT items carry a 'Rarity Notes'/'Alt Rarity Dash' field). The condition VARIES
+    and we cannot derive it from the number alone:
+      - ring of wealth on the rare/gem drop table (the dominant case -- the RDT/GDT
+        is shared across most monsters; RoW removes the 'nothing' slot -> boosts all
+        GDT items, e.g. Shield left half @ Obor 1/184,320 -> 1/10,968.75),
+      - on slayer task (some direct slayer drops, e.g. Wyrm harpoon 1/10,000 ->
+        1/2,000),
+      - quest-gated (e.g. Rune/Dragon spear need Legends' Quest).
+    So we capture the NUMBER + raw but NEVER fabricate the specific condition: when
+    the alt is a genuine boost (more likely than base) we say so generically and
+    list the possibilities; otherwise just "alternate rate". Use the wiki's notes
+    when present (rare). Returns None when Alt Rarity is absent/identical to base."""
     alt = dj.get("Alt Rarity")
     if alt in (None, "", []):
         return None
@@ -81,9 +86,10 @@ def _alt_rarity_variant(dj):
     if note:                                     # explicit wiki condition -> trust it
         cond = note
     elif arate is not None and brate is not None and arate > brate:
-        cond = "on slayer task"                  # alt is MORE likely than base = the boost
+        cond = ("conditional boost (ring of wealth / on slayer task / quest "
+                "-- not specified by dropsline)")
     else:
-        cond = "alternate rate"                  # worse/other -> no on-task claim (e.g. The Mimic)
+        cond = "alternate rate"                  # worse/other (e.g. The Mimic 3rd-age)
     return {"condition": cond, "drop_rate": arate, "drop_rate_raw": str(alt)}
 
 def build_records(clog_records, cache):

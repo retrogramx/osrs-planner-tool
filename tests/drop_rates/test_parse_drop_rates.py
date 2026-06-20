@@ -63,9 +63,13 @@ def test_alt_rarity_captured_as_variant():  # Alt Rarity = on-task slayer boost
     wyrm = [r for r in recs if r["source"] == "Wyrm"][0]
     assert math.isclose(wyrm["drop_rate"], 1/10000, rel_tol=1e-6)  # base = unconditional (off-task)
     alt = [v for v in wyrm["variants"] if v["drop_rate_raw"] == "1/2,000"]
-    assert alt, "Alt Rarity (on-task 1/2,000) not captured as a variant"
+    assert alt, "Alt Rarity (boost 1/2,000) not captured as a variant"
     assert math.isclose(alt[0]["drop_rate"], 1/2000, rel_tol=1e-6)
-    assert "task" in alt[0]["condition"].lower()  # better-than-base alt -> "on slayer task"
+    # better-than-base alt -> a conditional BOOST, but the condition is NOT fabricated:
+    # dropsline does not say which (ring of wealth / on-task / quest).
+    c = alt[0]["condition"].lower()
+    assert "conditional boost" in c and "not specified" in c
+    assert "ring of wealth" in c  # the dominant cause is disclosed as one possibility
 
 def test_alt_rarity_worse_is_labeled_alternate_not_on_task():
     # The Mimic: Alt Rarity (1/6,072) is WORSE than base (1/5,750) -> not a boost
