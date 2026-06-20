@@ -109,3 +109,37 @@ def build_records(clog_records, cache):
             })
     out.sort(key=lambda r: (r["item_id"], r["source"]))
     return out
+
+def load_clog():
+    recs = json.load(open(os.path.join(DATA, "collection_log.json"), encoding="utf-8"))["records"]
+    return recs
+
+def write_dataset(records, path):
+    sourced = sum(1 for r in records if r["drop_rate_status"] == "sourced")
+    envelope = {
+        "_provenance": {
+            "domain": "drop_rates",
+            "source_urls": ["https://oldschool.runescape.wiki/w/Module:DropsLine",
+                            "https://oldschool.runescape.wiki/api.php (bucket dropsline)"],
+            "license": "OSRS Wiki content CC BY-NC-SA 3.0",
+            "accessed_at": "2026-06-19",
+            "record_count": len(records),
+            "sourced_count": sourced,
+            "note": "Per-(item_id, source) rarity for collection-log items via Bucket dropsline. "
+                    "Clue caskets + activity/minigame mostly null-by-reason (v1). ToA invocation-canonical.",
+        },
+        "records": records,
+        "_excluded": [],
+    }
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(envelope, f, indent=2, ensure_ascii=False)
+
+def main():
+    clog = load_clog()
+    cache = json.load(open(os.path.join(DATA, "raw", "dropsline_full.json"), encoding="utf-8"))
+    records = build_records(clog, cache)
+    write_dataset(records, os.path.join(DATA, "drop_rates.json"))
+    print(f"drop_rates.json: {len(records)} records")
+
+if __name__ == "__main__":
+    main()
