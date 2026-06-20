@@ -1,0 +1,7 @@
+{"data": {"player": "TestIron", "game_mode": 1, "total_collections_finished": 2,
+  "total_collections_available": 1701, "last_changed": "2026-06-20 10:00:00",
+  "items": {
+    "alchemical_hydra": [{"id": 22804, "count": 79, "date": "2026-06-18 01:23:43"}],
+    "amoxliatl": [{"id": 29889, "count": 1, "date": "2025-11-15 00:00:00"}],
+    "abyssal_sire": [{"id": 13262, "count": 0, "date": null}]
+  }}}
