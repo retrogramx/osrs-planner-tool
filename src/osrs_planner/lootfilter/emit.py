@@ -109,25 +109,42 @@ def emit_settings() -> str:
     ])
     return emit_module("settings", "Settings", body)
 
-# Untradeable rewards have ~0 GE value, so colour them by WHAT THEY ARE, not gp: a small
-# (extensible) set of reward-type buckets, then "earned violet" for the rest. tradeable:false
-# gates every rule, so a bucket pattern only ever matches the untradeable variant.
+# Untradeable rewards have ~0 GE value, so colour them by WHAT THEY ARE, not gp.
+# CLUE TIERS get the full per-tier treatment (like potions): the seal colour as the panel, plus a
+# unifying PARCHMENT border so "tier-colour panel + parchment border" is unmistakably a clue. The
+# tier seals collide with coins/clog/etc., but nothing else in the filter has a parchment border.
+_CLUE_BORDER = "#ffc8b088"   # scroll parchment -- the shared "this is a clue" signature
+CLUE_TIERS = [   # (tier suffix, seal-colour panel) -- canonical OSRS clue tier seals
+    ("beginner", "#ffa49a90"),  # grey seal
+    ("easy",     "#ff1c8030"),  # green
+    ("medium",   "#ff3a8aa0"),  # blue
+    ("hard",     "#ffa83cc6"),  # purple
+    ("elite",    "#fff2c828"),  # yellow
+    ("master",   "#ffc4342a"),  # red
+]
+_CLUE_CONTAINERS = ["Clue scroll", "Scroll box", "Clue bottle", "Clue nest", "Clue geode", "Reward casket"]
+
+# Other untradeable reward-type buckets, then "earned violet" for the rest. tradeable:false gates
+# every rule, so a bucket pattern only ever matches the untradeable variant.
 UNTRADEABLE_TYPES = [
     (["*cape*", "*cloak*"], "#ffc0392b"),                            # capes/cloaks (diary, skill; catches cape(t)) -> regal crimson
-    (["Clue scroll*", "Reward casket*", "Scroll box*"], "#ffd4a017"),  # clues/caskets -> treasure gold
     (["Pet *", "* ahrim*", "Vorki", "Tzrek*"], "#ffff6fc0"),           # a few obvious pets -> pet pink
 ]
 _UNTRADEABLE_DEFAULT = "#ff8a2be2"  # earned violet
 
-def _untradeable_panel(hue: str) -> dict:
-    return {"backgroundColor": hue, "borderColor": _border_on(hue), "textColor": _text_on(hue),
+def _untradeable_panel(hue: str, border: str | None = None) -> dict:
+    return {"backgroundColor": hue, "borderColor": border or _border_on(hue), "textColor": _text_on(hue),
             "fontType": "2", "textAccent": "3", "icon": "CurrentItem()"}
 
 def emit_untradeables() -> str:
     """Iron-specific: an untradeable drop is EARNED account progression that GE value can't rank.
-    Colour it by TYPE (capes/clues/pets...), else an "earned" violet -- always a panel + icon so
-    it pops. Sits above categories/fallback (value can't bury it), below the clog trophies."""
-    lines = [emit_rule(f"{IRONMAN} && tradeable:false && {_name_list(p)}", _untradeable_panel(hue))
-             for p, hue in UNTRADEABLE_TYPES]
+    CLUE TIERS first (seal colour + parchment border), then colour by TYPE (capes/pets...), else an
+    "earned" violet -- always a panel + icon. Sits above categories/fallback, below the clog trophies."""
+    lines = []
+    for tier, hue in CLUE_TIERS:   # per-tier clue panels, all sharing the parchment border
+        pats = [f"{c} ({tier})" for c in _CLUE_CONTAINERS]
+        lines.append(emit_rule(f"{IRONMAN} && tradeable:false && {_name_list(pats)}", _untradeable_panel(hue, _CLUE_BORDER)))
+    lines += [emit_rule(f"{IRONMAN} && tradeable:false && {_name_list(p)}", _untradeable_panel(hue))
+              for p, hue in UNTRADEABLE_TYPES]
     lines.append(emit_rule(f"{IRONMAN} && tradeable:false", _untradeable_panel(_UNTRADEABLE_DEFAULT)))
-    return emit_module("untradeables", "Untradeables (by type, then earned-violet)", "\n".join(lines))
+    return emit_module("untradeables", "Untradeables (clue tiers, types, then earned-violet)", "\n".join(lines))

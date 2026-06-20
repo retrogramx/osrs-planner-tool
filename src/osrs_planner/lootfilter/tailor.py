@@ -8,17 +8,19 @@ from __future__ import annotations
 from osrs_planner.lootfilter.emit import emit_module, emit_rule, IRONMAN, _id_list
 
 _HIGH_VALUE = 100_000  # A grade -> never hide an owned item worth this much
-_GOLD = "#ffffd700"
+# Collection-log purple ("a purple!") -- the OSRS rare-unique colour. Distinct from coin gold so a
+# new clog slot reads as the special moment it is, not a coin pile.
+_CLOG = "#ffc23cf0"
 
 def _ids(keys) -> set[int]:
     return {int(k.split(":")[1]) for k in keys}
 
 def _missing_style(border: str, font: str, beam: bool) -> dict:
-    """A gold missing-clog panel; ULTRA/RARE add the loot beam + sound + notify, COMMON is panel-only."""
-    s = {"hidden": "false", "textColor": "#ff141414", "backgroundColor": _GOLD, "borderColor": border,
+    """A purple missing-clog panel; ULTRA/RARE add the loot beam + sound + notify, COMMON is panel-only."""
+    s = {"hidden": "false", "textColor": "#fff5f5f5", "backgroundColor": _CLOG, "borderColor": border,
          "fontType": font, "textAccent": "3", "icon": "CurrentItem()"}
     if beam:
-        s.update({"showLootbeam": "true", "lootbeamColor": _GOLD, "sound": "3930", "notify": "true"})
+        s.update({"showLootbeam": "true", "lootbeamColor": _CLOG, "sound": "3930", "notify": "true"})
     return s
 
 def emit_tailoring(account_state, clog_ids, value_index=None, rarity_index=None) -> str:
@@ -37,12 +39,14 @@ def emit_tailoring(account_state, clog_ids, value_index=None, rarity_index=None)
     common = sorted(i for i in missing if rarity_index.get(i) == "COMMON")
     rare = sorted(i for i in missing if rarity_index.get(i, "RARE") not in ("ULTRA", "COMMON"))
     lines = ['/*@ define:input:tailoring\nlabel: Hide items already in my bank\ntype: boolean\ngroup: Tailor\n*/\n#define HIDE_OWNED false']
-    if ultra:   # rarest slots: bold + red-bordered gold + beam + sound + notify
+    # Clog signature = purple panel + a GOLD border (no category/coin ever has a gold border, so the
+    # combo is unmistakably clog); ULTRA keeps a RED border so the rarest still pops hardest.
+    if ultra:   # rarest slots: bold + RED-bordered purple + beam + sound + notify
         lines.append(emit_rule(f"{IRONMAN} && {_id_list(ultra)}", _missing_style("#ffff2b2b", "3", True)))
-    if rare:    # rare / clue / pet / minigame slots: gold + beam + sound + notify
-        lines.append(emit_rule(f"{IRONMAN} && {_id_list(rare)}", _missing_style("#ffffffff", "2", True)))
-    if common:  # common slots: gold PANEL only, no beam/sound (cuts the spam)
-        lines.append(emit_rule(f"{IRONMAN} && {_id_list(common)}", _missing_style("#ffffffff", "1", False)))
+    if rare:    # rare / clue / pet / minigame slots: gold-bordered purple + beam + sound + notify
+        lines.append(emit_rule(f"{IRONMAN} && {_id_list(rare)}", _missing_style("#ffffd700", "2", True)))
+    if common:  # common slots: gold-bordered purple PANEL only, no beam/sound (cuts the spam)
+        lines.append(emit_rule(f"{IRONMAN} && {_id_list(common)}", _missing_style("#ffffd700", "1", False)))
     if have:   # obtained clog: a quiet bronze "collection" panel (still clearly visible) -- NO beam
         lines.append(emit_rule(f"{IRONMAN} && {_id_list(have)}",
             {"backgroundColor": "#ffbc6025", "borderColor": "#ff7a3f18", "textColor": "#fff5f5f5",

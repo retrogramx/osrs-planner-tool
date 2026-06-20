@@ -18,3 +18,12 @@ def test_fallback_iron_gated_with_hide_floor():
     fb = emit_fallback()
     assert fb.count("rule (IRONMAN") == 8                 # 7 grades + 1 HIDE_FLOOR cut
     assert "value:<HIDE_FLOOR" in fb and "value:>=10000000" in fb and "value:>=0" in fb
+
+def test_clue_tiers_seal_colour_plus_parchment_border():
+    from osrs_planner.lootfilter.emit import emit_untradeables
+    out = emit_untradeables()
+    assert '"Clue scroll (hard)"' in out and "#ffa83cc6" in out      # hard = purple seal
+    assert '"Reward casket (master)"' in out and "#ffc4342a" in out  # master = red seal
+    # the parchment border is the shared clue signature -- on every tier, and ONLY on clue rules
+    clue_lines = [l for l in out.splitlines() if "#ffc8b088" in l]
+    assert len(clue_lines) == 6 and all("Clue scroll (" in l for l in clue_lines)

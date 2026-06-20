@@ -23,6 +23,17 @@ def test_rarity_splits_missing_beams():
     assert "showLootbeam = true;" in rare                             # rare: beam
     assert "showLootbeam" not in common                              # common: gold PANEL only, NO beam
 
+def test_clog_purple_gold_signature():
+    # clog signature = purple panel + (gold border on RARE/COMMON, red on ULTRA) -- unique to clog
+    from osrs_planner.lootfilter.tailor import _CLOG
+    assert _CLOG == "#ffc23cf0"
+    st = build_account_state("ironman", bank_tsv="", clog_obtained=set())
+    out = emit_tailoring(st, clog_ids={11, 22}, rarity_index={11: "ULTRA"})  # 22 -> RARE default
+    ultra = next(l for l in out.splitlines() if "id:[11]" in l)
+    rare = next(l for l in out.splitlines() if "id:[22]" in l)
+    assert "#ffc23cf0" in ultra and "#ffff2b2b" in ultra   # purple panel + RED border
+    assert "#ffc23cf0" in rare and "#ffffd700" in rare     # purple panel + GOLD border
+
 def test_no_account_state_empty():
     assert emit_tailoring(None, clog_ids={1, 2}).strip().endswith("*/")  # just the module header
 
