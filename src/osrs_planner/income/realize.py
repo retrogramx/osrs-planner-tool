@@ -100,7 +100,7 @@ def realize_income(method: MethodRecord, family: str, provider: PriceProvider,
             continue
         elif is_iron:
             unit, ostatus = best_realization(
-                out.item_id, family, provider, recipe_index, account_skills
+                out.item_id, provider, recipe_index, account_skills
             )
             if ostatus != "known" or unit is None:
                 return (None, "unknown")
@@ -146,10 +146,14 @@ def _level_ok(recipe: dict, skills: dict) -> bool:
     return int(skills.get(_skill_key(skill), 0)) >= int(recipe.get("level") or 1)
 
 
-def best_realization(item_id: str, family: str, provider: PriceProvider,
+def best_realization(item_id: str, provider: PriceProvider,
                      recipe_index: dict[str, list[dict]], skills: dict,
                      _seen: frozenset[str] | None = None) -> tuple[int | None, str]:
     """Best coins-realization for a single iron output, in coins.
+
+    Only ever reached on the iron/uim path (the main path values outputs at GE in
+    realize_income), so it takes no ``family`` -- the iron-vs-main branch lives in
+    the caller.
 
     Compares: high_alch(raw) vs every process-then-realize route walking
     recipe_index (raw -> product), recursively, gated by the ACCOUNT's skills,
@@ -182,7 +186,7 @@ def best_realization(item_id: str, family: str, provider: PriceProvider,
             continue
         consumed = float(this_in["qty"]) or 1.0
 
-        prod_val, prod_status = best_realization(out_id, family, provider, recipe_index, skills, seen)
+        prod_val, prod_status = best_realization(out_id, provider, recipe_index, skills, seen)
         if prod_status != "known" or prod_val is None:
             continue
 
@@ -192,7 +196,7 @@ def best_realization(item_id: str, family: str, provider: PriceProvider,
         for inp in inputs:
             if inp["item_id"] == item_id:
                 continue
-            sec_val, sec_status = best_realization(inp["item_id"], family, provider, recipe_index, skills, seen)
+            sec_val, sec_status = best_realization(inp["item_id"], provider, recipe_index, skills, seen)
             if sec_status != "known" or sec_val is None:
                 ok = False
                 break

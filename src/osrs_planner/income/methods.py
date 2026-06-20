@@ -245,14 +245,6 @@ def _flow_from_main(flow: dict, kph, name_idx: dict[str, int]) -> Flow:
     return Flow(item_id=item_id, is_coins=False, qty_per_hour=qph)
 
 
-def _net_sign(outputs: list[Flow], inputs: list[Flow]) -> str:
-    """v1 naive: a record with at least one value-bearing output is an earner;
-    one with none is a sink. (REFINED at load in T8 with face-value compare +
-    a curated sink set; recomputed precisely in realize.py per family.)"""
-    has_out = any(o.is_coins or o.item_id is not None for o in outputs)
-    return "earner" if has_out else "sink"
-
-
 # Methods the guide treats as net sinks where the coffer/seed spend is NOT in
 # the inputs list (so a face-value outputs-vs-inputs compare mis-reads them as
 # earners). Curated, disclosed. Managing Miscellania spends coffer coins to seed

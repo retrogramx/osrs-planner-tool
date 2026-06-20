@@ -58,7 +58,7 @@ def test_iron_below_crafting_level_falls_back_to_raw(provider, recipe_index):
     # Crafting 40 (< 63): cannot craft body -> raw alch 81 (leather alch 30 is lower).
     # Skills are keyed like AccountState.levels (skill:<name> slugs); _level_ok
     # normalizes the recipe's display "Crafting" to skill:crafting to match.
-    per_hide, status = best_realization("item:1753", "ironman", provider, recipe_index, {"skill:crafting": 40})
+    per_hide, status = best_realization("item:1753", provider, recipe_index, {"skill:crafting": 40})
     assert status == "known"
     assert per_hide == 81
 
@@ -77,7 +77,7 @@ def test_iron_at_crafting_level_uses_body_chain(provider, recipe_index):
     assert body_ha == 4680 and thread_ha == 1  # guard the pinned ids didn't drift
     leather = (body_ha - thread_ha) // 3
     expected = leather - tan_fee  # 1539
-    per_hide, status = best_realization("item:1753", "ironman", provider, recipe_index, {"skill:crafting": 63})
+    per_hide, status = best_realization("item:1753", provider, recipe_index, {"skill:crafting": 63})
     assert status == "known"
     assert expected == 1539  # documents the pinned golden value (fee 20)
     assert per_hide == expected
@@ -98,7 +98,7 @@ def test_realize_income_iron_green_dragons_63_crafting_flagship(green_dragons, p
     assert gp_hr is not None
     assert gp_hr > 200000  # positive and large (~248k): the body chain triggered
     # the hide line is realized via the chain, not the raw 81 floor
-    assert best_realization("item:1753", "ironman", provider, recipe_index, {"skill:crafting": 63})[0] == 1539
+    assert best_realization("item:1753", provider, recipe_index, {"skill:crafting": 63})[0] == 1539
 
 
 def test_realize_income_iron_green_dragons_low_crafting_falls_to_raw(green_dragons, provider, recipe_index):

@@ -102,10 +102,10 @@ def test_green_dragons_main_vs_iron_differ_and_correct(provider, methods, recipe
     leather = (body_ha - thread_ha) // 3        # (4680 - 1)//3 = 1559
     expected_chain = leather - tan_fee          # 1559 - 20 = 1539
     assert expected_chain == 1539               # documents the pinned golden value (fee 20)
-    per_hide_chain, _ = best_realization("item:1753", "ironman", provider, recipe_index,
+    per_hide_chain, _ = best_realization("item:1753", provider, recipe_index,
                                          {"skill:crafting": 63})
     assert per_hide_chain == expected_chain
-    per_hide_raw, _ = best_realization("item:1753", "ironman", provider, recipe_index,
+    per_hide_raw, _ = best_realization("item:1753", provider, recipe_index,
                                        {"skill:crafting": 40})
     assert per_hide_raw == raw_ha  # 81
 

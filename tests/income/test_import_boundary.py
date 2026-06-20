@@ -1,26 +1,13 @@
-"""One-way boundary: income may import engine; engine must NOT import income."""
+"""One-way boundary (runtime): importing engine must NOT pull in income.
+
+The STATIC direction (engine source never imports income) is asserted precisely by
+the AST walk in test_boundary.py::test_engine_never_imports_income. This file owns
+the complementary RUNTIME check: a fresh `import osrs_planner.engine` loads no
+income module.
+"""
 from __future__ import annotations
 
-import os
 import sys
-
-REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-ENGINE_DIR = os.path.join(REPO, "src", "osrs_planner", "engine")
-
-
-def test_engine_source_does_not_reference_income():
-    offenders = []
-    for root, _dirs, files in os.walk(ENGINE_DIR):
-        if "__pycache__" in root:
-            continue
-        for fn in files:
-            if not fn.endswith(".py"):
-                continue
-            p = os.path.join(root, fn)
-            with open(p, encoding="utf-8") as f:
-                if "osrs_planner.income" in f.read():
-                    offenders.append(p)
-    assert offenders == [], f"engine references income: {offenders}"
 
 
 def test_importing_engine_does_not_load_income():
