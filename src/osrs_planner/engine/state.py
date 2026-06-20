@@ -31,6 +31,7 @@ class AccountState:
       ca_points        -> combat_achievement_points
       kc               -> kill_count
       clue_counts      -> clue_scrolls
+      clog_obtained    -> (reserved) future clog-completion atom; no evaluator in v1
     observable_families: atom_type values whose ABSENCE is OBSERVED-as-zero
       (a real FALSE) rather than UNKNOWN. Built from ADR-0004 per source.
     """
@@ -46,6 +47,7 @@ class AccountState:
     ca_points: int = 0
     kc: dict[str, int] = field(default_factory=dict)
     clue_counts: dict[str, int] = field(default_factory=dict)
+    clog_obtained: set[str] = field(default_factory=set)  # collection-log items obtained; reserved for a future 'clog' completion atom (no evaluator in v1)
     observable_families: set[str] = field(default_factory=set)
 
 
