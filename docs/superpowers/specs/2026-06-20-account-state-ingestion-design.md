@@ -13,7 +13,7 @@ Turn Gilded Tome from "generic" into "your account" by ingesting two real accoun
 1. **Bank** — the RuneLite **Bank Memory** plugin's right-click **TSV export** (`item_id ⇥ name ⇥ quantity`) → `AccountState.counts` (live owned quantities) + a **bank value** (iron-realizable coins+High-Alch = spend-now gold; total GE value = reference wealth).
 2. **Collection log** — the **TempleOSRS API** (`player_collection_log.php?player=<name>&categories=all`) → the set of **obtained** collection-log item ids → *done vs missing* slots.
 
-**v1 delivers:** `build_account_state(mode, bank_tsv=None, temple_clog=None, provider=None) -> AccountState` (both sources optional), the two parsers, and the bank-value computation — producing an `AccountState` with `counts` + `clog_obtained` + the right `observable_families`, plus the value figures.
+**v1 delivers:** `build_account_state(mode, bank_tsv=None, clog_obtained=None) -> AccountState` (both sources optional; `clog_obtained` is the already-parsed obtained set), the two parsers, and the bank-value computation (a separate `bank_value(...)` call) — producing an `AccountState` with `counts` + `clog_obtained` + the right `observable_families`, plus the value figures.
 
 **v1 does NOT:** consume the state (the loot-filter tailoring, income/cost re-eval are separate follow-ups — §10); read the RuneLite config/H2 stores or run a custom RuneLite plugin (the source is kept pluggable so those are drop-in later — §8); ingest banked XP, GE history, or per-tab layout. The bank is a manual TSV export (matched to the "regenerate periodically" cadence — automation isn't worth a Java plugin yet); the clog is fully automatic via the API.
 
@@ -75,13 +75,13 @@ Returns `TempleClog`: `obtained = {"item:<id>" for every item across all sources
 
 ## 6. AccountState integration (`build_account_state`)
 
-`build_account_state(mode, bank_tsv=None, temple_clog=None, provider=None) -> AccountState`:
+`build_account_state(mode, bank_tsv=None, clog_obtained=None) -> AccountState`:
 - `counts = parse_bank_tsv(bank_tsv)` when a bank is given; else `{}`.
-- `clog_obtained = parse_temple_clog(temple_clog).obtained` when clog given; else `set()`.
+- `clog_obtained` is the already-parsed obtained set (from `temple.parse_temple_clog(...)["obtained"]` or `fetch_collection_log(...)["obtained"]`), so the fixture and live paths compose identically; else `set()`.
 - `observable_families`: add `"item"` when a bank was ingested (so item-ownership atoms become a real own/don't-own, absence-aware §6, instead of UNKNOWN); add `"clog"` when clog was ingested.
 - Returns the `AccountState` (mode + counts + clog_obtained + observable_families). Bank value is computed separately via `bank_value` (so it's not forced when only clog is present).
 
-Observability is **source-gated** (only mark a family observed if its source was actually ingested) — so an absent item with NO bank stays UNKNOWN (absence ≠ zero), preserving the engine's Kleene contract.
+Observability is **source-gated on `is not None`** (mark a family observed only if its source was actually ingested — even an empty bank/clog counts as observed "own/completed nothing") — so a family whose source was NOT ingested stays UNKNOWN (absence ≠ zero), preserving the engine's Kleene contract.
 
 ---
 
