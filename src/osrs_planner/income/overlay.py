@@ -79,5 +79,8 @@ def suggest_methods(state, provider, index, recipe_index, kg=None, current_gold=
         notes=[
             f"account_family={family}; gp/hr realized per family (main=GE, iron/uim=coins+High-Alch).",
             "current_gold is reserved for the Option-2 shortfall hand-off (unused in v1).",
+            "v1 over-count (disclosed): iron gp/hr values ALL alchable outputs at High-Alch, "
+            "including Prayer fodder (bones) / herblore secondaries an iron would more likely use "
+            "for XP than alch; their true XP value is not modelled (a v2 {gold,xp,resources} follow-up).",
         ],
     )

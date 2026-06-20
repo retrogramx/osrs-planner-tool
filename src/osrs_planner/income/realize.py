@@ -99,6 +99,14 @@ def realize_income(method: MethodRecord, family: str, provider: PriceProvider,
             # still forces unknown below; only unitemized bundles are skipped.)
             continue
         elif is_iron:
+            # DISCLOSED v1 over-count: best_realization values ANY alchable output
+            # at its High-Alch floor, including items an iron would realistically use
+            # for XP/consumables, not alch -- Prayer fodder (dragon bones ~96 alch but
+            # gilded-altar Prayer is worth far more), ensouled heads, herblore
+            # secondaries (grimy herbs). So iron gp/hr slightly over-counts gold and
+            # omits those items' true (XP) value. Proper handling (bones -> Prayer XP,
+            # gold contribution 0) is the deferred {gold,xp,resources} accounting +
+            # a "non-income fodder" tag. (design §4)
             unit, ostatus = best_realization(
                 out.item_id, provider, recipe_index, account_skills
             )
