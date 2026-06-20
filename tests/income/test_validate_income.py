@@ -159,3 +159,76 @@ def test_kg_income_token_leak_fails(tmp_path):
     with open(os.path.join(kg, "nodes.json"), "w") as f:
         json.dump([{"id": "quest:dragon-slayer-ii", "gp_hr": 5}], f)
     assert _run(data, kg)[0] == 1
+
+
+# --- Task-9 carry-in: Invariant 6 (recipes realization-chain) negative fixtures ---
+# Inv 6 is the green-dragons exemplar chain guard (recipes.json output/input ids
+# resolve; service_fee_coins >= 0; the green d'hide body exemplar @ Crafting 63 is
+# present). The committed-data positive case is covered by test_committed_data_passes;
+# these cover the FATAL negatives the plan called out (a bad service_fee_coins; a
+# missing green-dhide-body exemplar). They write a recipes.json into the tmp data dir
+# (Inv 6 only fires when data/recipes.json exists) with the referenced items added to
+# the scaffold item_dictionary so the id-resolution checks isolate the failure.
+
+# items the body-chain recipe records reference (so Inv 6's id-resolution passes and
+# the targeted invariant is what trips, not an unresolved id).
+_RECIPE_ITEMS = [
+    {"item_id": 1753, "name": "Green dragonhide"},
+    {"item_id": 1745, "name": "Green dragon leather"},
+    {"item_id": 1135, "name": "Green d'hide body"},
+    {"item_id": 1734, "name": "Thread"},
+]
+
+
+def _add_recipe_items(data):
+    with open(os.path.join(data, "item_dictionary.json"), "w") as f:
+        json.dump({"_provenance": {}, "records": _RECIPE_ITEMS, "_excluded": []}, f)
+
+
+def _good_body_recipe():
+    return {
+        "output_item_id": "item:1135", "name": "Green d'hide body", "skill": "Crafting", "level": 63,
+        "inputs": [{"item_id": "item:1745", "qty": 3}, {"item_id": "item:1734", "qty": 1}],
+        "output_qty": 1,
+    }
+
+
+def _good_tan_recipe(service_fee=20):
+    return {
+        "output_item_id": "item:1745", "name": "Green dragon leather", "skill": None, "level": 1,
+        "inputs": [{"item_id": "item:1753", "qty": 1}], "output_qty": 1,
+        "service_fee_coins": service_fee,
+    }
+
+
+def _write_recipes(data, records):
+    with open(os.path.join(data, "recipes.json"), "w", encoding="utf-8") as f:
+        json.dump({"_provenance": {"record_count": len(records)}, "records": records, "_excluded": []}, f)
+
+
+def test_recipes_negative_service_fee_is_fatal(tmp_path):
+    # Inv 6: a negative service_fee_coins on the tan record is FATAL (a SERVICE fee
+    # can never be negative; realize.py subtracts it as an internal cost).
+    data, kg = _scaffold(tmp_path)
+    _add_recipe_items(data)
+    _write_recipes(data, [_good_tan_recipe(service_fee=-5), _good_body_recipe()])
+    assert _run(data, kg)[0] == 1
+
+
+def test_recipes_missing_green_dhide_body_exemplar_is_fatal(tmp_path):
+    # Inv 6: the golden-set chain REQUIRES the green d'hide body exemplar (item:1135)
+    # to be present -- a recipes.json with the tan record but NO body exemplar is FATAL
+    # (the exemplar is the hand-curated proof the whole iron processing chain rests on).
+    data, kg = _scaffold(tmp_path)
+    _add_recipe_items(data)
+    _write_recipes(data, [_good_tan_recipe()])  # tan present, body exemplar ABSENT
+    assert _run(data, kg)[0] == 1
+
+
+def test_recipes_good_chain_passes(tmp_path):
+    # Positive control: a well-formed tan + body chain (fee 20, body @ Crafting 63,
+    # 3 leather) passes Inv 6 -- proves the two negatives above isolate the invariant.
+    data, kg = _scaffold(tmp_path)
+    _add_recipe_items(data)
+    _write_recipes(data, [_good_tan_recipe(), _good_body_recipe()])
+    assert _run(data, kg)[0] == 0
