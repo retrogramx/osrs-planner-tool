@@ -47362,7 +47362,13 @@
       "drop_rate_raw": "7/24",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "invocation/points scaling: dropsline n/24 is the conditional which-unique weighting once a purple rolls, NOT the acquisition chance. P(any unique) = points / (10,500 - 20*RL), capped at 55% (RL = scaled raid level; e.g. RaidLevel 400 -> 1% per 3,700 points). See https://oldschool.runescape.wiki/w/Chest_(Tombs_of_Amascut)#Uniques",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 25985,
@@ -47374,7 +47380,13 @@
       "drop_rate_raw": "3/24",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "invocation/points scaling: dropsline n/24 is the conditional which-unique weighting once a purple rolls, NOT the acquisition chance. P(any unique) = points / (10,500 - 20*RL), capped at 55% (RL = scaled raid level; e.g. RaidLevel 400 -> 1% per 3,700 points). See https://oldschool.runescape.wiki/w/Chest_(Tombs_of_Amascut)#Uniques",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 26219,
@@ -47386,7 +47398,13 @@
       "drop_rate_raw": "7/24",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "invocation/points scaling: dropsline n/24 is the conditional which-unique weighting once a purple rolls, NOT the acquisition chance. P(any unique) = points / (10,500 - 20*RL), capped at 55% (RL = scaled raid level; e.g. RaidLevel 400 -> 1% per 3,700 points). See https://oldschool.runescape.wiki/w/Chest_(Tombs_of_Amascut)#Uniques",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 26221,
@@ -48496,7 +48514,13 @@
       "drop_rate_raw": "2/24",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "invocation/points scaling: dropsline n/24 is the conditional which-unique weighting once a purple rolls, NOT the acquisition chance. P(any unique) = points / (10,500 - 20*RL), capped at 55% (RL = scaled raid level; e.g. RaidLevel 400 -> 1% per 3,700 points). See https://oldschool.runescape.wiki/w/Chest_(Tombs_of_Amascut)#Uniques",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 27229,
@@ -48508,7 +48532,13 @@
       "drop_rate_raw": "2/24",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "invocation/points scaling: dropsline n/24 is the conditional which-unique weighting once a purple rolls, NOT the acquisition chance. P(any unique) = points / (10,500 - 20*RL), capped at 55% (RL = scaled raid level; e.g. RaidLevel 400 -> 1% per 3,700 points). See https://oldschool.runescape.wiki/w/Chest_(Tombs_of_Amascut)#Uniques",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 27232,
@@ -48520,7 +48550,13 @@
       "drop_rate_raw": "2/24",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "invocation/points scaling: dropsline n/24 is the conditional which-unique weighting once a purple rolls, NOT the acquisition chance. P(any unique) = points / (10,500 - 20*RL), capped at 55% (RL = scaled raid level; e.g. RaidLevel 400 -> 1% per 3,700 points). See https://oldschool.runescape.wiki/w/Chest_(Tombs_of_Amascut)#Uniques",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 27248,
@@ -48532,7 +48568,13 @@
       "drop_rate_raw": "Always",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "invocation/points scaling: dropsline n/24 is the conditional which-unique weighting once a purple rolls, NOT the acquisition chance. P(any unique) = points / (10,500 - 20*RL), capped at 55% (RL = scaled raid level; e.g. RaidLevel 400 -> 1% per 3,700 points). See https://oldschool.runescape.wiki/w/Chest_(Tombs_of_Amascut)#Uniques",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 27255,
@@ -48544,7 +48586,13 @@
       "drop_rate_raw": "Always",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "invocation/points scaling: dropsline n/24 is the conditional which-unique weighting once a purple rolls, NOT the acquisition chance. P(any unique) = points / (10,500 - 20*RL), capped at 55% (RL = scaled raid level; e.g. RaidLevel 400 -> 1% per 3,700 points). See https://oldschool.runescape.wiki/w/Chest_(Tombs_of_Amascut)#Uniques",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 27257,
@@ -48616,7 +48664,13 @@
       "drop_rate_raw": "1/24",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "invocation/points scaling: dropsline n/24 is the conditional which-unique weighting once a purple rolls, NOT the acquisition chance. P(any unique) = points / (10,500 - 20*RL), capped at 55% (RL = scaled raid level; e.g. RaidLevel 400 -> 1% per 3,700 points). See https://oldschool.runescape.wiki/w/Chest_(Tombs_of_Amascut)#Uniques",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 27279,
@@ -48628,7 +48682,13 @@
       "drop_rate_raw": "1/10",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "invocation/points scaling: dropsline n/24 is the conditional which-unique weighting once a purple rolls, NOT the acquisition chance. P(any unique) = points / (10,500 - 20*RL), capped at 55% (RL = scaled raid level; e.g. RaidLevel 400 -> 1% per 3,700 points). See https://oldschool.runescape.wiki/w/Chest_(Tombs_of_Amascut)#Uniques",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 27283,
@@ -48640,7 +48700,13 @@
       "drop_rate_raw": "1/50",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "invocation/points scaling: dropsline n/24 is the conditional which-unique weighting once a purple rolls, NOT the acquisition chance. P(any unique) = points / (10,500 - 20*RL), capped at 55% (RL = scaled raid level; e.g. RaidLevel 400 -> 1% per 3,700 points). See https://oldschool.runescape.wiki/w/Chest_(Tombs_of_Amascut)#Uniques",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 27285,
@@ -48652,7 +48718,13 @@
       "drop_rate_raw": "1/50",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "invocation/points scaling: dropsline n/24 is the conditional which-unique weighting once a purple rolls, NOT the acquisition chance. P(any unique) = points / (10,500 - 20*RL), capped at 55% (RL = scaled raid level; e.g. RaidLevel 400 -> 1% per 3,700 points). See https://oldschool.runescape.wiki/w/Chest_(Tombs_of_Amascut)#Uniques",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 27289,
@@ -48664,7 +48736,13 @@
       "drop_rate_raw": "1/50",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "invocation/points scaling: dropsline n/24 is the conditional which-unique weighting once a purple rolls, NOT the acquisition chance. P(any unique) = points / (10,500 - 20*RL), capped at 55% (RL = scaled raid level; e.g. RaidLevel 400 -> 1% per 3,700 points). See https://oldschool.runescape.wiki/w/Chest_(Tombs_of_Amascut)#Uniques",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 27293,
@@ -48676,7 +48754,13 @@
       "drop_rate_raw": "1/27",
       "rolls": 3,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "invocation/points scaling: dropsline n/24 is the conditional which-unique weighting once a purple rolls, NOT the acquisition chance. P(any unique) = points / (10,500 - 20*RL), capped at 55% (RL = scaled raid level; e.g. RaidLevel 400 -> 1% per 3,700 points). See https://oldschool.runescape.wiki/w/Chest_(Tombs_of_Amascut)#Uniques",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 27352,
@@ -48688,7 +48772,13 @@
       "drop_rate_raw": "",
       "rolls": 1,
       "drop_rate_status": "null-qualitative",
-      "variants": []
+      "variants": [
+        {
+          "condition": "invocation/points scaling: dropsline n/24 is the conditional which-unique weighting once a purple rolls, NOT the acquisition chance. P(any unique) = points / (10,500 - 20*RL), capped at 55% (RL = scaled raid level; e.g. RaidLevel 400 -> 1% per 3,700 points). See https://oldschool.runescape.wiki/w/Chest_(Tombs_of_Amascut)#Uniques",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 27372,
@@ -48700,7 +48790,13 @@
       "drop_rate_raw": "Always",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "invocation/points scaling: dropsline n/24 is the conditional which-unique weighting once a purple rolls, NOT the acquisition chance. P(any unique) = points / (10,500 - 20*RL), capped at 55% (RL = scaled raid level; e.g. RaidLevel 400 -> 1% per 3,700 points). See https://oldschool.runescape.wiki/w/Chest_(Tombs_of_Amascut)#Uniques",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 27377,
@@ -48712,7 +48808,13 @@
       "drop_rate_raw": "Always",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "invocation/points scaling: dropsline n/24 is the conditional which-unique weighting once a purple rolls, NOT the acquisition chance. P(any unique) = points / (10,500 - 20*RL), capped at 55% (RL = scaled raid level; e.g. RaidLevel 400 -> 1% per 3,700 points). See https://oldschool.runescape.wiki/w/Chest_(Tombs_of_Amascut)#Uniques",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 27378,
@@ -48724,7 +48826,13 @@
       "drop_rate_raw": "Always",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "invocation/points scaling: dropsline n/24 is the conditional which-unique weighting once a purple rolls, NOT the acquisition chance. P(any unique) = points / (10,500 - 20*RL), capped at 55% (RL = scaled raid level; e.g. RaidLevel 400 -> 1% per 3,700 points). See https://oldschool.runescape.wiki/w/Chest_(Tombs_of_Amascut)#Uniques",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 27379,
@@ -48736,7 +48844,13 @@
       "drop_rate_raw": "Always",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "invocation/points scaling: dropsline n/24 is the conditional which-unique weighting once a purple rolls, NOT the acquisition chance. P(any unique) = points / (10,500 - 20*RL), capped at 55% (RL = scaled raid level; e.g. RaidLevel 400 -> 1% per 3,700 points). See https://oldschool.runescape.wiki/w/Chest_(Tombs_of_Amascut)#Uniques",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 27380,
@@ -48748,7 +48862,13 @@
       "drop_rate_raw": "Always",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "invocation/points scaling: dropsline n/24 is the conditional which-unique weighting once a purple rolls, NOT the acquisition chance. P(any unique) = points / (10,500 - 20*RL), capped at 55% (RL = scaled raid level; e.g. RaidLevel 400 -> 1% per 3,700 points). See https://oldschool.runescape.wiki/w/Chest_(Tombs_of_Amascut)#Uniques",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 27381,
@@ -48760,7 +48880,13 @@
       "drop_rate_raw": "Always",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "invocation/points scaling: dropsline n/24 is the conditional which-unique weighting once a purple rolls, NOT the acquisition chance. P(any unique) = points / (10,500 - 20*RL), capped at 55% (RL = scaled raid level; e.g. RaidLevel 400 -> 1% per 3,700 points). See https://oldschool.runescape.wiki/w/Chest_(Tombs_of_Amascut)#Uniques",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 27590,
@@ -51805,7 +51931,13 @@
       "drop_rate_raw": "1/50",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "invocation/points scaling: dropsline n/24 is the conditional which-unique weighting once a purple rolls, NOT the acquisition chance. P(any unique) = points / (10,500 - 20*RL), capped at 55% (RL = scaled raid level; e.g. RaidLevel 400 -> 1% per 3,700 points). See https://oldschool.runescape.wiki/w/Chest_(Tombs_of_Amascut)#Uniques",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 30895,
