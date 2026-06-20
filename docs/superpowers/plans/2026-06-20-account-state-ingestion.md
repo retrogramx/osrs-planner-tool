@@ -28,7 +28,7 @@
 | `src/osrs_planner/account/__init__.py` | package marker. |
 | `src/osrs_planner/account/bank.py` | `parse_bank_tsv(text) -> dict[str,int]` + `bank_value(counts, provider, family) -> dict`. |
 | `src/osrs_planner/account/temple.py` | `collection_log_url(player)`, `parse_temple_clog(payload) -> dict`, `fetch_collection_log(player, fetcher)`. |
-| `src/osrs_planner/account/state.py` | `build_account_state(mode, bank_tsv=None, temple_clog=None) -> AccountState`. |
+| `src/osrs_planner/account/state.py` | `build_account_state(mode, bank_tsv=None, clog_obtained=None) -> AccountState`. |
 | `scripts/account_demo.py` | demo over fixtures (or `--bank`/`--player`). |
 | `tests/account/fixtures/sample_bank.tsv`, `sample_temple.json` | synthetic fixtures. |
 | `tests/account/test_*.py` | per-unit tests. |
@@ -67,13 +67,13 @@ Expected: FAIL (`TypeError: __init__() got an unexpected keyword argument 'clog_
 
 ```python
     clue_counts: dict[str, int] = field(default_factory=dict)
-    clog_obtained: set[str] = field(default_factory=set)  # collection-log items obtained (feeds the 'clog' atom family)
+    clog_obtained: set[str] = field(default_factory=set)  # collection-log items obtained; reserved for a future 'clog' completion atom (no evaluator in v1)
     observable_families: set[str] = field(default_factory=set)
 ```
-Also add to the docstring family map (after the `clue_counts` line ~33):
+Also add to the docstring family map (after the `clue_counts` line ~33). NOTE: there is no `clog` atom_type today (`CLOG_SLOT` is a NodeKind, not an atom) — this field is forward-looking, so label it as reserved, not as feeding an existing atom:
 ```python
       clue_counts      -> clue_scrolls
-      clog_obtained    -> clog (collection-log completion)
+      clog_obtained    -> (reserved) future clog-completion atom; no evaluator in v1
 ```
 
 - [ ] **Step 4: Run to verify it passes + no engine regression**
@@ -201,40 +201,52 @@ git commit -m "account: Bank Memory TSV parser"
 
 **Interfaces:**
 - Consumes: a `PriceProvider`-shaped object (`.ge_price(id)`, `.high_alch(id)` → int|None).
-- Produces: `bank_value(counts, provider, family) -> dict` with keys `iron_realizable` (coins at face + `high_alch × qty`), `ge_value` (`ge_price × qty`), `headline` (`ge_value` for family "main", else `iron_realizable`), `per_item` (id → {ge, ha}), `unpriced_count` (items neither GE- nor alch-priced). Coins (`item:995`) count at face in BOTH.
+- Produces: `bank_value(counts, provider, family) -> dict` with keys `iron_realizable` (currency at face + `high_alch × qty` for TRADEABLE items only), `ge_value` (`ge_price × qty`), `headline` (`ge_value` for family "main", else `iron_realizable`), `per_item` (id → {ge, ha}), `unpriced_count` (untradeable / no-real-GE items). Currency (coins `item:995` = 1gp, platinum token `item:13204` = 1000gp) counts at face in BOTH; an item with no live GE price (or the int-max sentinel) is untradeable → its nominal High-Alch is NOT added to `iron_realizable` (it's counted in `unpriced_count`).
 
 - [ ] **Step 1: Create the synthetic fixture** (`tests/account/fixtures/sample_bank.tsv`)
 
 ```
 995	Coins                  	1000000
+13204	Platinum token         	5000
 561	Nature rune            	5000
 4151	Abyssal whip           	1
-20011	Untradeable test thing 	1
+30682	Accumulation charm     	1
 ```
 
 - [ ] **Step 2: Write the failing test** (`tests/account/test_bank_value.py`)
 
 ```python
-import math, os
+import os
 from osrs_planner.account.bank import parse_bank_tsv, bank_value
 
 FIX = os.path.join(os.path.dirname(__file__), "fixtures", "sample_bank.tsv")
 
 class FakeProvider:  # deterministic prices, no dependency on the committed snapshot
-    GE = {"item:561": 120, "item:4151": 1_500_000}        # nature rune, whip
-    HA = {"item:561": 108, "item:4151": 72_000}            # whip alchs for far less than GE
+    GE = {"item:561": 120, "item:4151": 1_500_000}        # nature rune, whip (tradeable)
+    HA = {"item:561": 108, "item:4151": 72_000,           # whip alchs for far less than GE
+          "item:30682": 6_000}                            # Accumulation charm: HA but NO GE (untradeable)
     def ge_price(self, i): return self.GE.get(i)
     def high_alch(self, i): return self.HA.get(i)
 
-def test_iron_realizable_vs_ge_differ():
+def test_iron_realizable_vs_ge_plat_and_untradeable():
     counts = parse_bank_tsv(open(FIX, encoding="utf-8").read())
     v = bank_value(counts, FakeProvider(), "ironman")
-    # coins 1,000,000 face in both; nature 5000*120 GE vs 5000*108 HA; whip 1.5M GE vs 72k HA
-    assert v["ge_value"] == 1_000_000 + 5000*120 + 1*1_500_000
-    assert v["iron_realizable"] == 1_000_000 + 5000*108 + 1*72_000
-    assert v["iron_realizable"] < v["ge_value"]            # iron can't realise GE
+    plat = 5000 * 1000                                     # 5000 platinum tokens @ 1000gp each
+    # coins 1,000,000 + plat face; nature 5000*120 GE vs *108 HA; whip 1.5M GE vs 72k HA
+    assert v["ge_value"] == 1_000_000 + plat + 5000*120 + 1*1_500_000
+    assert v["iron_realizable"] == 1_000_000 + plat + 5000*108 + 1*72_000
+    assert v["iron_realizable"] < v["ge_value"]            # iron can't realise GE, only HA
     assert v["headline"] == v["iron_realizable"]           # iron headline
-    assert v["unpriced_count"] == 1                        # the untradeable thing
+    assert v["unpriced_count"] == 1                        # Accumulation charm (untradeable HA)
+
+def test_untradeable_ha_not_counted_as_realizable():
+    # an untradeable item with a NOMINAL high-alch must NOT inflate iron_realizable
+    v = bank_value({"item:30682": 10}, FakeProvider(), "ironman")
+    assert v["iron_realizable"] == 0 and v["ge_value"] == 0 and v["unpriced_count"] == 1
+
+def test_platinum_tokens_count_as_currency():
+    v = bank_value({"item:13204": 3}, FakeProvider(), "ironman")
+    assert v["iron_realizable"] == 3000 and v["ge_value"] == 3000
 
 def test_main_headline_is_ge():
     counts = parse_bank_tsv(open(FIX, encoding="utf-8").read())
@@ -250,28 +262,34 @@ Expected: FAIL (`bank_value` undefined).
 - [ ] **Step 4: Implement `bank_value` in `bank.py`**
 
 ```python
-_COINS = "item:995"
+# Currencies the GE snapshot does not price -> count at face. Plat tokens are how
+# large coin stacks are stored, so omitting them badly understates spend-now gold.
+_CURRENCY = {"item:995": 1, "item:13204": 1000}   # coins=1gp, platinum token=1000gp
+_NO_GE = 2_000_000_000  # ge_prices.json uses int-max (2147483647) as a "no real GE price" sentinel
 
 def bank_value(counts: dict[str, int], provider, family: str) -> dict:
-    """Iron-realizable (coins + High-Alch) + total GE value of a bank (design §4).
-    Never fabricates: an item with no GE and no alch price -> unpriced_count, 0."""
+    """Iron-realizable (currency + High-Alch of TRADEABLE items) + total GE value
+    of a bank (design §4). An item with no live GE price is untradeable -> it yields
+    no realizable gold (its nominal High-Alch is unusable), so it is counted in
+    unpriced_count, NOT added to iron_realizable. Never fabricates value."""
     iron = 0
     ge = 0
     per_item: dict[str, dict] = {}
     unpriced = 0
     for item_id, qty in counts.items():
-        if item_id == _COINS:
-            iron += qty
-            ge += qty
+        if item_id in _CURRENCY:
+            face = qty * _CURRENCY[item_id]
+            iron += face
+            ge += face
             continue
         gp = provider.ge_price(item_id)
-        ha = provider.high_alch(item_id)
-        if gp is None and ha is None:
+        if not gp or gp >= _NO_GE:           # untradeable / no real GE price -> not realizable
             unpriced += 1
             continue
-        ge += (gp or 0) * qty
-        iron += (ha or 0) * qty          # iron realises tradeables via High-Alch (no GE)
-        per_item[item_id] = {"ge": (gp or 0) * qty, "ha": (ha or 0) * qty}
+        ha = provider.high_alch(item_id) or 0
+        ge += gp * qty
+        iron += ha * qty                     # an iron realizes a TRADEABLE item via High-Alch
+        per_item[item_id] = {"ge": gp * qty, "ha": ha * qty}
     headline = ge if family == "main" else iron
     return {"iron_realizable": iron, "ge_value": ge, "headline": headline,
             "per_item": per_item, "unpriced_count": unpriced}

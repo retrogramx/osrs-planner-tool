@@ -25,7 +25,7 @@ Turn Gilded Tome from "generic" into "your account" by ingesting two real accoun
 2. **Bank source = the clean Bank Memory TSV export** (stable, parseable). Clog source = the **TempleOSRS API** (public, live, verified working). The source is **pluggable** (a future config/H2/RuneLite-plugin adapter normalises to the same `{item_id: qty}` / obtained-set — no redesign).
 3. **Personal data → runtime inputs, NOT committed source-of-truth.** We commit only small **synthetic** test fixtures. (Unlike the wiki-sourced bricks; no `data/` dataset, no committed validator.)
 4. **Reuse, don't rebuild:** ownership lands in the existing `AccountState.counts` (documented "item / gear_loadout (live owned quantities)"); bank value reuses the cost `PriceProvider`.
-5. **One minimal engine change:** add `AccountState.clog_obtained` (collection-log completion is genuinely account state and feeds the existing `clog` atom family). Backward-compatible (defaulted).
+5. **One minimal engine change:** add `AccountState.clog_obtained` (collection-log completion is genuinely account state; the field is **forward-looking** — there is no `clog` atom_type today, so v1 stores it but no evaluator reads it). Backward-compatible (defaulted).
 
 ---
 
@@ -37,7 +37,7 @@ A new package `src/osrs_planner/account/`:
 |---|---|
 | `account/bank.py` | `parse_bank_tsv(text) -> dict[str,int]` (KG-style `"item:<n>"` → qty) + `bank_value(counts, provider, family) -> BankValue`. |
 | `account/temple.py` | TempleOSRS clog client: `collection_log_url(player) -> str`; `parse_temple_clog(payload) -> TempleClog`; `fetch_collection_log(player, fetcher=…) -> TempleClog` (injectable fetcher; cached raw for tests). |
-| `account/state.py` | `build_account_state(mode, bank_tsv=None, temple_clog=None, provider=None) -> AccountState` — the combiner. |
+| `account/state.py` | `build_account_state(mode, bank_tsv=None, clog_obtained=None) -> AccountState` — the combiner (value is a separate `bank_value` call). |
 | `src/osrs_planner/engine/state.py` | **MODIFY:** add `clog_obtained: set[str] = field(default_factory=set)`. |
 | `scripts/account_demo.py` | demo over the committed fixtures (or a `--bank`/`--player` the user passes). |
 | `tests/account/` + `tests/account/fixtures/{sample_bank.tsv, sample_temple.json}` | per-unit tests + synthetic fixtures. |
@@ -51,9 +51,9 @@ A new package `src/osrs_planner/account/`:
 **Parse (`parse_bank_tsv`):** the Bank Memory export is tab-delimited `item_id ⇥ name(space-padded) ⇥ quantity`, one row per stack (verified: 883 rows). Parser splits on tab, strips, → `{"item:<id>": qty}` (KG-style ids to match `counts`/the engine). Blank lines / malformed rows are skipped (with a reason), never fabricated.
 
 **Value (`bank_value(counts, provider, family)`):** reuses `PriceProvider.ge_price`/`.high_alch`. Returns a `BankValue` dict:
-- `iron_realizable`: Σ over items of the spend-now coin value — coins at face, else `high_alch(id) × qty` for alchable items (the figure an iron can actually turn the bank into; untradeable/no-alch → 0, disclosed).
+- `iron_realizable`: Σ over items of the spend-now coin value — **currency at face** (coins `item:995` = 1gp, **platinum token `item:13204` = 1000gp**, neither of which the GE snapshot prices), plus `high_alch(id) × qty` **only for items with a live GE price** (i.e. tradeable → actually alchable). An item with no live GE price (or the int-max `2147483647` "no price" sentinel) is untradeable → its nominal High-Alch is unusable, so it adds **0** and is counted in `unpriced_count` (never inflates the figure). This is the gold an iron can actually turn the bank into.
 - `ge_value`: Σ `ge_price(id) × qty` — reference wealth (what a main's bank is "worth").
-- `per_item`: optional breakdown; `unpriced_count`: items the snapshot can't price (absence ≠ 0 — disclosed, not invented).
+- `per_item`: optional breakdown; `unpriced_count`: untradeable / no-real-GE items (absence ≠ 0 — disclosed, not invented).
 
 `family` (from `account_family(mode)`) selects the headline figure: main → `ge_value`; iron/uim → `iron_realizable` (the Hiscores blind spot — what they could spend now).
 
@@ -88,8 +88,8 @@ Observability is **source-gated on `is not None`** (mark a family observed only 
 ## 7. The engine change
 
 `src/osrs_planner/engine/state.py`: add one field to the `AccountState` dataclass —
-`clog_obtained: set[str] = field(default_factory=set)  # collection-log items obtained (feeds the 'clog' atom family)`
-— and a one-line docstring entry. Defaulted ⇒ every existing `AccountState(...)` construction and all current engine/income/cost tests keep working unchanged. No evaluator change in this brick (the `clog` atom already exists per the condition-atom vocabulary; wiring an evaluator path to read `clog_obtained` is a separate task if/when a clog atom is exercised).
+`clog_obtained: set[str] = field(default_factory=set)  # collection-log items obtained; reserved for a future 'clog' completion atom (no evaluator in v1)`
+— and a one-line docstring entry. Defaulted ⇒ every existing `AccountState(...)` construction and all current engine/income/cost tests keep working unchanged. **There is no `clog` atom_type today** (`CLOG_SLOT` is a NodeKind, not an atom — the locked condition-atom vocabulary confirms the engine does not evaluate clog), so this field is forward-looking: v1 stores it and the `"clog"` observability marker is reserved; wiring an evaluator path (and introducing a `clog` atom_type) is a separate future task.
 
 ---
 
