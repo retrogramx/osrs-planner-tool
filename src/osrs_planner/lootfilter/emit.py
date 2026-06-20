@@ -5,6 +5,7 @@ from __future__ import annotations
 
 from osrs_planner.lootfilter.palette import VALUE_GRADES, style_for
 from osrs_planner.lootfilter.palette import TROPHY_GRADES  # add to imports
+from osrs_planner.lootfilter.categories import category_rules, ORE_NAMES, BAR_NAMES, CRYSTAL_SEEDS  # add
 
 IRONMAN = "IRONMAN"
 _BARE = {"true", "false"}
@@ -52,3 +53,23 @@ def emit_trophies(clog_item_ids) -> str:
     for grade, minv, emph in TROPHY_GRADES:
         lines.append(emit_rule(f"{IRONMAN} && {idl} && value:>={minv}", _trophy_style(emph)))
     return emit_module("trophies", "Collection-log trophies", "\n".join(lines))
+
+def _name_list(patterns) -> str:
+    return "name:[" + ", ".join(f'"{p}"' for p in patterns) + "]"
+
+def _emit_group(cid, patterns, hue, lines):
+    nl = _name_list(patterns)
+    extra = f" && !{_name_list(sorted(CRYSTAL_SEEDS))}" if cid == "seeds" else ""
+    for grade, minv, _e in VALUE_GRADES:
+        lines.append(emit_rule(f"{IRONMAN} && {nl}{extra} && value:>={minv}", style_for(hue, grade)))
+
+def emit_categories() -> str:
+    lines = []
+    for cid, _name, patterns, hue in category_rules():
+        if hue is None:  # ores/bars -> each item NAME carries its own hue
+            table = ORE_NAMES if cid == "ores" else BAR_NAMES
+            for nm in patterns:
+                _emit_group(cid, [nm], table[nm], lines)
+        else:
+            _emit_group(cid, patterns, hue, lines)
+    return emit_module("categories", "Categories (by material/type)", "\n".join(lines))

@@ -49,3 +49,20 @@ def categorize(name: str):
     if nl.endswith(" bones") or nl.endswith(" ashes"):
         return {"id": "bones", "hue": "#ffe8e0d0"}
     return None
+
+def category_rules():
+    out = []
+    for metal, hue in MATERIAL_COLORS.items():
+        out.append(("gear", f"{metal.title()} gear", [f"{metal.title()} {p}" for p in GEAR_PIECES], hue))
+    out.append(("ores", "Ores", list(ORE_NAMES), None))   # per-name hue resolved in emit (mixed metals)
+    out.append(("bars", "Bars", list(BAR_NAMES), None))
+    for elem, hue in RUNE_COLORS.items():
+        out.append(("runes", f"{elem.title()} rune", [f"{elem.title()} rune"], hue))
+    for gem, hue in GEM_COLORS.items():
+        out.append(("gems", f"Uncut {gem}", [f"Uncut {gem}"], hue))
+    for tree, hue in LOG_COLORS.items():
+        out.append(("logs", f"{tree.title()} logs", [f"{tree.title()} logs"], hue))
+    out.append(("herbs", "Herbs", ["Grimy *"], "#ff2e8b57"))
+    out.append(("seeds", "Seeds", ["* seed", "* seedling"], "#ff00e024"))
+    out.append(("bones", "Bones & ashes", ["* bones", "* ashes"], "#ffe8e0d0"))
+    return out
