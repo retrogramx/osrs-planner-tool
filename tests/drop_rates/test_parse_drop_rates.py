@@ -52,3 +52,25 @@ def test_apply_raid_scaling_attaches_for_cox_noop_otherwise():
     assert any("scales" in v["condition"].lower() for v in apply_raid_scaling(cox)["variants"])
     other = {"source": "Abyssal demon", "variants": []}
     assert apply_raid_scaling(other)["variants"] == []
+
+def test_alt_rarity_captured_as_variant():  # Alt Rarity = on-task slayer boost
+    cache = {"Dragon harpoon": [
+        {"item_name": "Dragon harpoon", "drop_json": {
+            "Dropped from": "Wyrm", "Rarity": "1/10,000", "Alt Rarity": "1/2,000", "Rolls": 1}},
+    ]}
+    clog = [{"item": "Dragon harpoon", "item_id": 21028, "source": "Slayer", "node_type": "activity"}]
+    recs = build_records(clog, cache)
+    wyrm = [r for r in recs if r["source"] == "Wyrm"][0]
+    assert math.isclose(wyrm["drop_rate"], 1/10000, rel_tol=1e-6)  # base = unconditional (off-task)
+    alt = [v for v in wyrm["variants"] if v["drop_rate_raw"] == "1/2,000"]
+    assert alt, "Alt Rarity (on-task 1/2,000) not captured as a variant"
+    assert math.isclose(alt[0]["drop_rate"], 1/2000, rel_tol=1e-6)
+
+def test_alt_rarity_skipped_when_equal_to_base():  # no redundant variant
+    cache = {"X": [
+        {"item_name": "X", "drop_json": {"Dropped from": "Y", "Rarity": "1/100", "Alt Rarity": "1/100", "Rolls": 1}},
+    ]}
+    clog = [{"item": "X", "item_id": 1, "source": "z", "node_type": "other"}]
+    recs = build_records(clog, cache)
+    y = [r for r in recs if r["source"] == "Y"][0]
+    assert y["variants"] == []  # Alt == Rarity -> no alternate variant

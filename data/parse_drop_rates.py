@@ -60,6 +60,26 @@ def _null_record(item_id, item, source, node_type, status):
             "drop_rate": None, "drop_rate_raw": "", "rolls": 1,
             "drop_rate_status": status, "variants": []}
 
+def _alt_rarity_variant(dj):
+    """The dropsline 'Alt Rarity' field is a SECOND, conditional rate for the same
+    drop. For slayer monsters it is the ON-TASK boost (Wyrm dragon harpoon: Rarity
+    1/10,000, Alt Rarity 1/2,000); for other sources it is a context-dependent
+    alternate (The Mimic 3rd-age: a slightly different casket rate). We capture the
+    NUMBER + raw, but only label the condition as far as the source allows: the
+    wiki's 'Rarity Notes'/'Alt Rarity Dash' when present, else a neutral
+    "alternate rate (often the on-task slayer boost)" -- never fabricating "on task"
+    where the data does not say so. Returns the variant dict, or None when Alt Rarity
+    is absent or identical to the base Rarity (no real alternate)."""
+    alt = dj.get("Alt Rarity")
+    if alt in (None, "", []):
+        return None
+    if str(alt).strip() == str(dj.get("Rarity") or "").strip():
+        return None
+    arate, _r, _s = parse_rarity(alt)
+    note = str(dj.get("Rarity Notes") or dj.get("Alt Rarity Dash") or "").strip()
+    cond = note if note else "alternate rate (often the on-task slayer boost)"
+    return {"condition": cond, "drop_rate": arate, "drop_rate_raw": str(alt)}
+
 def build_records(clog_records, cache):
     """One record per (item_id, base source). NO input row is dropped (M6): every
     non-canonical row of a base -- alternate drop-table slots AND #variants -- lands
@@ -96,11 +116,17 @@ def build_records(clog_records, cache):
             field_rolls = dj.get("Rolls")
             rolls = int(field_rolls) if isinstance(field_rolls, (int, float)) and field_rolls else str_rolls
             variants = []
+            alt = _alt_rarity_variant(dj)  # canonical row's Alt Rarity (e.g. on-task boost)
+            if alt:
+                variants.append(alt)
             for variant, edj in entries[1:]:  # M6: keep EVERY other row, none dropped
                 vrate, _vr, _vs = parse_rarity(edj.get("Rarity"))
                 cond = variant if variant else "alternate drop-table slot"
                 variants.append({"condition": cond, "drop_rate": vrate,
                                  "drop_rate_raw": str(edj.get("Rarity") or "")})
+                ealt = _alt_rarity_variant(edj)  # each variant row may have its own Alt Rarity
+                if ealt:
+                    variants.append(ealt)
             out.append(apply_raid_scaling(apply_toa({
                 "item_id": item_id, "item": item_name, "source": base,
                 "source_node_type": node_type,
