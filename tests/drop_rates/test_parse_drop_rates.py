@@ -65,6 +65,19 @@ def test_alt_rarity_captured_as_variant():  # Alt Rarity = on-task slayer boost
     alt = [v for v in wyrm["variants"] if v["drop_rate_raw"] == "1/2,000"]
     assert alt, "Alt Rarity (on-task 1/2,000) not captured as a variant"
     assert math.isclose(alt[0]["drop_rate"], 1/2000, rel_tol=1e-6)
+    assert "task" in alt[0]["condition"].lower()  # better-than-base alt -> "on slayer task"
+
+def test_alt_rarity_worse_is_labeled_alternate_not_on_task():
+    # The Mimic: Alt Rarity (1/6,072) is WORSE than base (1/5,750) -> not a boost
+    cache = {"3rd age wand": [
+        {"item_name": "3rd age wand", "drop_json": {
+            "Dropped from": "The Mimic", "Rarity": "1/5,750", "Alt Rarity": "1/6,072", "Rolls": 1}},
+    ]}
+    clog = [{"item": "3rd age wand", "item_id": 2, "source": "Clues", "node_type": "clue"}]
+    recs = build_records(clog, cache)
+    m = [r for r in recs if r["source"] == "The Mimic"][0]
+    alt = [v for v in m["variants"] if v["drop_rate_raw"] == "1/6,072"][0]
+    assert "task" not in alt["condition"].lower() and "alternate" in alt["condition"].lower()
 
 def test_alt_rarity_skipped_when_equal_to_base():  # no redundant variant
     cache = {"X": [

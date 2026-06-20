@@ -76,8 +76,14 @@ def _alt_rarity_variant(dj):
     if str(alt).strip() == str(dj.get("Rarity") or "").strip():
         return None
     arate, _r, _s = parse_rarity(alt)
+    brate, _br, _bs = parse_rarity(dj.get("Rarity"))
     note = str(dj.get("Rarity Notes") or dj.get("Alt Rarity Dash") or "").strip()
-    cond = note if note else "alternate rate (often the on-task slayer boost)"
+    if note:                                     # explicit wiki condition -> trust it
+        cond = note
+    elif arate is not None and brate is not None and arate > brate:
+        cond = "on slayer task"                  # alt is MORE likely than base = the boost
+    else:
+        cond = "alternate rate"                  # worse/other -> no on-task claim (e.g. The Mimic)
     return {"condition": cond, "drop_rate": arate, "drop_rate_raw": str(alt)}
 
 def build_records(clog_records, cache):
