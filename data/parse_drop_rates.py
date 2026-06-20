@@ -19,6 +19,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from data._rarity_grammar import parse_rarity
 from data._toa_drop_rates import apply_toa
+from data._raid_scaling import apply_raid_scaling
 
 DATA = os.path.dirname(os.path.abspath(__file__))
 
@@ -100,14 +101,14 @@ def build_records(clog_records, cache):
                 cond = variant if variant else "alternate drop-table slot"
                 variants.append({"condition": cond, "drop_rate": vrate,
                                  "drop_rate_raw": str(edj.get("Rarity") or "")})
-            out.append(apply_toa({
+            out.append(apply_raid_scaling(apply_toa({
                 "item_id": item_id, "item": item_name, "source": base,
                 "source_node_type": node_type,
                 "source_condition": "superior" if _is_superior(base) else None,
                 "drop_rate": rate,
                 "drop_rate_raw": str(dj.get("Rarity")) if status == "sourced" else "",
                 "rolls": rolls, "drop_rate_status": status, "variants": variants,
-            }))
+            })))
     out.sort(key=lambda r: (r["item_id"], r["source"]))
     return out
 

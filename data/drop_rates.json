@@ -31617,7 +31617,13 @@
       "drop_rate_raw": "3/69",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "scales with points/team size",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 19529,
@@ -37385,7 +37391,13 @@
       "drop_rate_raw": "1/53",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "scales with points/team size",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 20997,
@@ -37397,7 +37409,13 @@
       "drop_rate_raw": "2/69",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "scales with points/team size",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 21000,
@@ -37409,7 +37427,13 @@
       "drop_rate_raw": "4/69",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "scales with points/team size",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 21003,
@@ -37421,7 +37445,13 @@
       "drop_rate_raw": "2/69",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "scales with points/team size",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 21009,
@@ -37469,7 +37499,13 @@
       "drop_rate_raw": "4/69",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "scales with points/team size",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 21015,
@@ -37481,7 +37517,13 @@
       "drop_rate_raw": "3/69",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "scales with points/team size",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 21018,
@@ -37493,7 +37535,13 @@
       "drop_rate_raw": "3/69",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "scales with points/team size",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 21021,
@@ -37505,7 +37553,13 @@
       "drop_rate_raw": "3/69",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "scales with points/team size",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 21024,
@@ -37517,7 +37571,13 @@
       "drop_rate_raw": "3/69",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "scales with points/team size",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 21027,
@@ -37529,7 +37589,13 @@
       "drop_rate_raw": "1/33",
       "rolls": 2,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "scales with points/team size",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 21028,
@@ -37577,7 +37643,13 @@
       "drop_rate_raw": "20/69",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "scales with points/team size",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 21043,
@@ -37589,7 +37661,13 @@
       "drop_rate_raw": "2/69",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "scales with points/team size",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 21047,
@@ -37601,7 +37679,13 @@
       "drop_rate_raw": "1/33",
       "rolls": 2,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "scales with points/team size",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 21061,
@@ -37685,7 +37769,13 @@
       "drop_rate_raw": "20/69",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "scales with points/team size",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 21202,
@@ -41236,6 +41326,11 @@
           "condition": "Normal Mode",
           "drop_rate": 0.10526315789473684,
           "drop_rate_raw": "2/19"
+        },
+        {
+          "condition": "scales with points/team size",
+          "drop_rate": null,
+          "drop_rate_raw": ""
         }
       ]
     },
@@ -41254,6 +41349,11 @@
           "condition": "Normal Mode",
           "drop_rate": 0.10526315789473684,
           "drop_rate_raw": "2/19"
+        },
+        {
+          "condition": "scales with points/team size",
+          "drop_rate": null,
+          "drop_rate_raw": ""
         }
       ]
     },
@@ -41272,6 +41372,11 @@
           "condition": "Normal Mode",
           "drop_rate": 0.10526315789473684,
           "drop_rate_raw": "2/19"
+        },
+        {
+          "condition": "scales with points/team size",
+          "drop_rate": null,
+          "drop_rate_raw": ""
         }
       ]
     },
@@ -41290,6 +41395,11 @@
           "condition": "Normal Mode",
           "drop_rate": 0.10526315789473684,
           "drop_rate_raw": "2/19"
+        },
+        {
+          "condition": "scales with points/team size",
+          "drop_rate": null,
+          "drop_rate_raw": ""
         }
       ]
     },
@@ -41381,7 +41491,13 @@
       "drop_rate_raw": "1/400",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "scales with points/team size",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 22388,
@@ -41453,7 +41569,13 @@
       "drop_rate_raw": "2/30",
       "rolls": 3,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "scales with points/team size",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 22473,
@@ -41465,7 +41587,13 @@
       "drop_rate_raw": "1/650",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "scales with points/team size",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 22477,
@@ -41482,6 +41610,11 @@
           "condition": "Normal Mode",
           "drop_rate": 0.42105263157894735,
           "drop_rate_raw": "8/19"
+        },
+        {
+          "condition": "scales with points/team size",
+          "drop_rate": null,
+          "drop_rate_raw": ""
         }
       ]
     },
@@ -41500,6 +41633,11 @@
           "condition": "Normal Mode",
           "drop_rate": 0.10526315789473684,
           "drop_rate_raw": "2/19"
+        },
+        {
+          "condition": "scales with points/team size",
+          "drop_rate": null,
+          "drop_rate_raw": ""
         }
       ]
     },
@@ -41518,6 +41656,11 @@
           "condition": "Normal Mode",
           "drop_rate": 0.05263157894736842,
           "drop_rate_raw": "1/19"
+        },
+        {
+          "condition": "scales with points/team size",
+          "drop_rate": null,
+          "drop_rate_raw": ""
         }
       ]
     },
@@ -44831,7 +44974,13 @@
       "drop_rate_raw": "1/75",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "scales with points/team size",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 24711,
@@ -47260,7 +47409,13 @@
       "drop_rate_raw": "1/100",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "scales with points/team size",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 25744,
@@ -47272,7 +47427,13 @@
       "drop_rate_raw": "1/150",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "scales with points/team size",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 25746,
@@ -47284,7 +47445,13 @@
       "drop_rate_raw": "1/275",
       "rolls": 1,
       "drop_rate_status": "sourced",
-      "variants": []
+      "variants": [
+        {
+          "condition": "scales with points/team size",
+          "drop_rate": null,
+          "drop_rate_raw": ""
+        }
+      ]
     },
     {
       "item_id": 25837,
