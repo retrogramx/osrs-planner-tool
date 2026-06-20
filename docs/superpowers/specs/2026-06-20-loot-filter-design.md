@@ -109,7 +109,7 @@ For each `collection_log.json` item id (1,907): the **gold/bronze "unique" palet
 
 ## 10. Settings module
 
-`/*@ define:input */` toggles, all **IRONMAN-gated** (finding [8]), mirroring Storn: show world-spawns (`!SHOW_WORLD_SPAWNS && ownership:0 → hidden`), show unowned (`ownership:2`), despawn timer (`showDespawn`), **item-value display** (`SHOW_VALUE → showValue`, finding [9]), and the **HIDE_FLOOR** knob (§7). Per-category min-value knobs are **disclosed-deferred** (a v2.1 add — finding [9]).
+`/*@ define:input */` toggles, all **IRONMAN-gated** (finding [8]), mirroring Storn: show world-spawns (`SHOW_WORLD_SPAWNS` default **true**), show unowned drops (`SHOW_UNOWNED` default **true** — unlike Storn, we never hide other-players' drops by default, per the user's "don't auto-hide anything"), despawn timer (`showDespawn`), **item-value display** (`SHOW_VALUE → showValue`, finding [9]), and the **HIDE_FLOOR** knob (§7, default 0). **No toggle hides anything at its default value** — every hide is opt-in. Per-category min-value knobs are **disclosed-deferred** (a v2.1 add — finding [9]).
 
 ---
 

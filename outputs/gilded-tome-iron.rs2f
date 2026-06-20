@@ -26,7 +26,7 @@ label: Show unowned drops
 type: boolean
 group: Show
 */
-#define SHOW_UNOWNED false
+#define SHOW_UNOWNED true
 apply (IRONMAN && !SHOW_UNOWNED && ownership:2) { hidden = true; }
 /*@ define:input:settings
 label: Despawn timer
