@@ -36,7 +36,7 @@ search "Tiger0295"
 
 ### 3.2 `src/osrs_planner/profile.py` — the contract + assembly (new, the linchpin)
 - Pydantic models (the **contract**): `SkillEntry`, `GoalStep`, `GoalStatus`, `Profile` (see §4).
-- `build_profile(rsn: str, goal_id: str = BARROWS_GLOVES_NODE) -> Profile`:
+- `build_profile(rsn: str, goal_id: str = DEFAULT_GOAL_NODE) -> Profile` (`DEFAULT_GOAL_NODE` = a skill-gated KG goal, exact id chosen in implementation — see §5):
   1. `mode = detect_account_type(rsn)`
   2. `account = fetch_stats(rsn, mode)` → skills/xp/total.
   3. `clog = fetch_collection_log(rsn)` → `clog_obtained`; **on failure/absent, continue with empty clog** + record it (clog is optional for a public account).
@@ -86,11 +86,19 @@ class Profile(BaseModel):
 
 The `goals` list (not a single goal) and `clog_synced` flag are the deliberate **extensibility seams** — adding more goals or a clog summary later doesn't change the contract shape.
 
-## 5. The featured goal — Barrows gloves
+## 5. The featured goal — configurable, skill-gated
 
-Barrows gloves (Recipe for Disaster) is already a known engine demo ("the Barrows-gloves mountain" in `demo_showcase.py`): a deep stack of quest + skill requirements, so it shows the engine's DAG/blocker reasoning well. For a **public** account we know the **skill** requirements (Hiscores) but the **quest** chain is unknown — the goal will read *"skills met / quest log unknown — sync the RuneLite plugin to verify,"* which is the honest, plugin-foreshadowing story, not a bug. The exact KG node id is resolved during planning (it exists in `kg/nodes.json`).
+The goal is a **configurable parameter** (`build_profile(rsn, goal_id=DEFAULT_GOAL_NODE)`); the page features one. The default is chosen for what a **public** account can honestly demo, which we verified by running the real engine over candidates with a skills-only state:
 
-**Disclosed v1 limitation:** the engine `AccountState` has *family-level* observability (skills/clog can be "unknown") but some **scalar** fields (`qp`, `ca_points`) default to `0` with no unknown state. For a public account we can't observe quest points, so a requirement gated purely on `qp` may read **unmet** rather than **unknown**. `combat_level` *is* derived from the (known) skills. Skill-gated requirements — the majority — evaluate honestly; the plugin (quest/diary sync) resolves the rest. This is disclosed, not hidden.
+- **Gear / achievement goals** (e.g. *Full Infinity*, *Void*) return **`cant_verify`** — the engine must know *which items you own* to evaluate them, and a public account's bank isn't visible. Not a usable first demo.
+- **Fire cape** isn't modelled in the KG, and has *no* requirements anyway (attemptable at any level) → zero blockers. Not usable.
+- **Skill-gated goals** demo cleanly: the blocker is a *skill level* we observe from Hiscores. In this KG those are quest *unlock* requirements (e.g. "can't start this quest yet — need Agility 50"). The **blockers are skills, not quests**, so it satisfies the "observable, skill-achievable" intent.
+
+So the default is a **skill-gated goal whose blockers are skill levels**. The exact node is picked **during implementation** by testing against real accounts — it must be one the demo account hasn't completed (a done goal shows no blockers and demos nothing).
+
+**Deferred to phase 2 (post-plugin):** the impressive gear/achievement goals (Fire cape, Infinity, Void, Barrows gloves) light up once the RuneLite plugin syncs bank/items/quests — then the engine can verify "do you own X / have you done quest Y." That's the natural next step, not this slice.
+
+**Disclosed v1 limitation:** the engine `AccountState` has *family-level* observability (skills/clog can be "unknown") but some **scalar** fields (`qp`, `ca_points`) default to `0` with no unknown state (the engine even models quest points as a pseudo-skill `skill:quest-point`, which Hiscores does not expose). So a requirement gated purely on quest points may read **unmet** rather than **unknown**. `combat_level` *is* derived from the (known) skills. Skill-gated requirements — the default goal's blockers — evaluate honestly; the plugin resolves the rest. Disclosed, not hidden.
 
 ## 6. Error handling
 
@@ -110,7 +118,7 @@ Barrows gloves (Recipe for Disaster) is already a known engine demo ("the Barrow
 
 **In:** search any account, auto-detect type (iron/HCIM/UIM/main), header + skills grid + one goal (Barrows gloves) with engine status, FastAPI serving page + API, graceful errors, tests.
 
-**Out (deliberately — the foundation sets these up):** public hosting/deployment, response caching, rate-limiting, persistence / saving progress, multiple goals, clog-summary display, quest/diary manual input, the goal-DAG visualisation, group-iron/HCGIM detection.
+**Out (deliberately — the foundation sets these up):** public hosting/deployment, response caching, rate-limiting, persistence / saving progress, multiple goals, clog-summary display, quest/diary manual input, the goal-DAG visualisation, group-iron/HCGIM detection, and **gear/achievement goals that need bank/item verification** (Fire cape, Infinity, Void, Barrows gloves → phase 2, post-plugin; see §5).
 
 ## 9. References
 
