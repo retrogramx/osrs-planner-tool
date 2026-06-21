@@ -15,8 +15,9 @@ from osrs_planner.engine.kg.json_store import JsonKGStore
 from osrs_planner.engine.state import AccountState
 from osrs_planner.engine.result import Ok, Empty
 
-# A skill-gated KG goal (blockers are observable skill levels). Confirmed/tuned in Task 5.
-DEFAULT_GOAL_NODE = "quest:cold-war"
+# A skill-gated KG goal (blockers are observable skill levels). Tuned in Task 5 against a real
+# account: Mage Arena I (unlocks the God spells) is locked purely on Magic for a mid account.
+DEFAULT_GOAL_NODE = "quest:mage-arena-i"
 
 _REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 _KG = JsonKGStore.from_dir(os.path.join(_REPO, "kg"))   # loaded once at import
@@ -49,10 +50,8 @@ _STEP_STATUS = {"satisfied": "met", "satisfiable": "unmet",
 _CARD_STATUS = {"unlocked": "met", "locked": "blocked", "indeterminate": "unknown"}
 
 def _goal_label(goal_id: str) -> str:
-    try:
-        return _KG.get_node(goal_id).name
-    except Exception:
-        return goal_id
+    node = _KG.node(goal_id)            # KGStore exposes .node(id) -> Node | None (not get_node)
+    return node.name if node is not None else goal_id
 
 def _goal_status(goal_id: str, result) -> GoalStatus:
     label = _goal_label(goal_id)

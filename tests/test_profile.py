@@ -32,3 +32,25 @@ def test_clog_failure_is_not_fatal(monkeypatch):
     monkeypatch.setattr(profmod, "fetch_collection_log", boom)
     p = build_profile("TestAcc")
     assert p.clog_synced is False and isinstance(p, Profile)
+
+
+def test_goal_label_resolves_to_human_name():
+    # regression: KGStore exposes .node(id), not .get_node — the label must be the node name
+    from osrs_planner.profile import _goal_label, DEFAULT_GOAL_NODE
+    assert _goal_label("quest:mage-arena-i") == "Mage Arena I"
+    assert _goal_label(DEFAULT_GOAL_NODE) != DEFAULT_GOAL_NODE   # not the raw id
+
+
+import os
+import pytest
+
+@pytest.mark.skipif(os.environ.get("LIVE") != "1", reason="hits live Hiscores/Temple; run with LIVE=1")
+def test_live_tiger0295_profile_has_a_real_goal():
+    p = build_profile("Tiger0295")
+    assert p.account_type in {"normal", "ironman", "hardcore_ironman", "ultimate_ironman"}
+    assert len(p.skills) >= 23 and p.total_level > 0          # 23 classic + Sailing
+    g = p.goals[0]
+    assert g.label != g.node_id and g.status in {"met", "blocked", "unknown"}
+    print(f"\nTiger0295: {p.account_type} total {p.total_level} | goal '{g.label}' = {g.status}, {len(g.steps)} steps")
+    for s in g.steps:
+        print("   ", s.status, s.label)
