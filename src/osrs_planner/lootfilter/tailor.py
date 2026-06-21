@@ -16,8 +16,10 @@ def _ids(keys) -> set[int]:
     return {int(k.split(":")[1]) for k in keys}
 
 def _missing_style(border: str, font: str, beam: bool) -> dict:
-    """A purple missing-clog panel; ULTRA/RARE add the loot beam + sound + notify, COMMON is panel-only."""
-    s = {"hidden": "false", "textColor": "#fff5f5f5", "backgroundColor": _CLOG, "borderColor": border,
+    """A purple missing-clog panel; ULTRA/RARE add the loot beam + sound + notify, COMMON is panel-only.
+    No `hidden` field -> FilterScape shows 'Default' display-mode (editable), like Storn's; the clog rule
+    already shows the item by matching it (terminal, above the hide rules), so hidden:false was redundant."""
+    s = {"textColor": "#fff5f5f5", "backgroundColor": _CLOG, "borderColor": border,
          "fontType": font, "textAccent": "3", "icon": "CurrentItem()"}
     if beam:
         s.update({"showLootbeam": "true", "lootbeamColor": _CLOG, "sound": "3930", "notify": "true"})
