@@ -8,4 +8,5 @@ def test_no_fake_items():
 def test_trophy_and_ladder_and_floor():
     assert "module:trophies" in F and "value:>=10000000" in F and "#define HIDE_FLOOR 0" in F
 def test_iron_gated_generic_has_no_tailoring():
-    assert "accountType:1" in F and F.startswith("meta {") and "module:tailoring" not in F
+    # starts with a module decl (FilterScape needs this); meta{} present but last; no tailoring
+    assert "accountType:1" in F and F.startswith("/*@ define:module:") and "meta {" in F and "module:tailoring" not in F

@@ -1,9 +1,3 @@
-meta {
-    name = "Tiger0295";
-    description = "Tiger0295 collection-log filter: beams your 1428 missing slots (purple), tiered by rarity. Clog state public via TempleOSRS; no bank data.";
-}
-
-
 /*@ define:module:settings
 name: Settings
 subtitle: Show/hide toggles
@@ -1045,4 +1039,9 @@ rule (IRONMAN && value:>=10000) { backgroundColor = "#ff27c2ff"; borderColor = "
 rule (IRONMAN && value:>=1000) { backgroundColor = "#ff52e052"; borderColor = "#ff181818"; textColor = "#ff141414"; fontType = 1; textAccent = 3; icon = CurrentItem(); }
 rule (IRONMAN && value:>=100) { textColor = "#ff6f7780"; textAccent = 1; fontType = 1; }
 rule (IRONMAN && value:>=0) { textColor = "#9e8c8c8c"; textAccent = 1; fontType = 1; menuSort = -10000; }
+
+meta {
+    name = "Tiger0295";
+    description = "Tiger0295 collection-log filter: beams your 1428 missing slots (purple), tiered by rarity. Clog state public via TempleOSRS; no bank data.";
+}
 

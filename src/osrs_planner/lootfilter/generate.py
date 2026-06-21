@@ -60,16 +60,14 @@ def generate_filter(account_state=None, data_dir: str = DATA, title=None, descri
     title = title or "Gilded Tome — Iron"
     description = description or "Generated ironman loot filter. Value tiers + collection-log trophies."
     clog = load_clog_ids(data_dir)
-    parts = [
-        emit.emit_meta(title, description),
-        emit.emit_preamble(),
-        emit.emit_settings(),
-    ]
+    # FilterScape/loot-filters-ui requires the FIRST token to be a module declaration, so settings
+    # leads and the meta{} block goes LAST (the parser regex-scans meta from anywhere in the file).
+    parts = [emit.emit_settings()]
     if account_state is not None:  # tailored: thread value (hide-owned guard) + rarity (beam intensity)
         parts.append(tailor.emit_tailoring(account_state, set(clog), value_index=load_value_index(data_dir),
                                            rarity_index=load_clog_rarity(data_dir)))
     parts += [emit.emit_trophies(clog), emit.emit_untradeables(), emit.emit_categories(),
-              emit.emit_coins(), emit.emit_fallback()]
+              emit.emit_coins(), emit.emit_fallback(), emit.emit_meta(title, description)]
     return "\n".join(parts) + "\n"
 
 def write_filter(path: str, account_state=None, data_dir: str = DATA, title=None, description=None) -> None:

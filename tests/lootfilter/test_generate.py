@@ -9,7 +9,8 @@ def test_generic_modules_in_order_no_tailoring():
         assert m in f
     assert "module:tailoring" not in f                        # generic omits tailoring
     assert f.index("module:settings") < f.index("module:trophies") < f.index("module:categories") < f.index("module:fallback")
-    assert f.startswith("meta {") and "#define IRONMAN accountType:1" in f
+    # filter must START with a module declaration (FilterScape); meta{} goes last but is still present
+    assert f.startswith("/*@ define:module:settings") and "meta {" in f and "#define IRONMAN accountType:1" in f
 
 def test_tailored_inserts_tailoring_above_trophies():
     st = build_account_state("ironman", bank_tsv="995\tCoins\t1\n", clog_obtained={"item:4151"})
