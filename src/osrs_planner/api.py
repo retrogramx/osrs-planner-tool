@@ -10,12 +10,6 @@ from osrs_planner.profile import build_profile
 app = FastAPI()
 
 
-@app.get("/")
-def root():
-    """Start the server with: uvicorn osrs_planner.api:app --reload"""
-    return {"message": "OSRS Planner API"}
-
-
 @app.get("/accounts/{rsn}/stats")
 def get_stats(rsn: str, mode: str = "normal"):
     """GET /accounts/{rsn}/stats?mode=ironman"""

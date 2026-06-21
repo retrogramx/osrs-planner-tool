@@ -3,7 +3,7 @@ from fastapi.testclient import TestClient
 import osrs_planner.api as apimod
 from osrs_planner.api import app
 from osrs_planner.profile import Profile, SkillEntry, GoalStatus
-from osrs_planner.hiscores import PlayerNotFoundError
+from osrs_planner.hiscores import PlayerNotFoundError, HiscoresError
 
 client = TestClient(app)
 
@@ -26,3 +26,10 @@ def test_profile_endpoint_not_found(monkeypatch):
     r = client.get("/accounts/FakeName123/profile")
     assert r.status_code == 404
     assert "not found" in r.json()["detail"].lower()
+
+def test_profile_endpoint_hiscores_error(monkeypatch):
+    def boom(rsn, **k): raise HiscoresError("timeout")
+    monkeypatch.setattr(apimod, "build_profile", boom)
+    r = client.get("/accounts/AnyPlayer/profile")
+    assert r.status_code == 502
+    assert "unreachable" in r.json()["detail"].lower()
