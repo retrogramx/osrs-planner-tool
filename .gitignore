@@ -14,3 +14,4 @@ data/raw/**
 # Drop-rate brick: the dropsline raw cache IS committed provenance (drop_rates.json
 # regenerates from it byte-stably, no live fetch at validate time — like kg/*.json).
 !data/raw/dropsline_*.json
+.superpowers/

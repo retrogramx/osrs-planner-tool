@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gilded Tome</title>
+  <link rel="stylesheet" href="/styles/tokens.css" />
+  <link rel="stylesheet" href="/styles/fonts.css" />
+  <link rel="stylesheet" href="/styles/base.css" />
+  <link rel="stylesheet" href="/styles/profile.css" />
+</head>
+<body>
+  <header class="gt-header">
+    <h1>Gilded Tome</h1>
+    <form id="search-form">
+      <input id="rsn-search" name="rsn" placeholder="Search any account…" autocomplete="off" />
+      <button type="submit">Search</button>
+    </form>
+  </header>
+  <main id="profile" hidden>
+    <section id="mirror" class="gt-panel">
+      <div id="identity"></div>
+      <div id="skills" class="skills-grid"></div>
+    </section>
+    <section id="tracker" class="gt-panel">
+      <h2>Goal</h2>
+      <div id="goal"></div>
+    </section>
+  </main>
+  <p id="status" class="gt-status"></p>
+  <script src="/app.js"></script>
+</body>
+</html>

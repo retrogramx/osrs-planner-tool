@@ -1,16 +1,13 @@
-from fastapi import FastAPI
-from osrs_planner.hiscores import fetch_stats
+import os
+from fastapi import FastAPI, HTTPException
+from fastapi.staticfiles import StaticFiles
+from osrs_planner.hiscores import fetch_stats, PlayerNotFoundError, HiscoresError
 from osrs_planner.planner import load_goal, generate_plan
 from osrs_planner.models import AccountMode
+from osrs_planner.profile import build_profile
 
 
 app = FastAPI()
-
-
-@app.get("/")
-def root():
-    """Start the server with: uvicorn osrs_planner.api:app --reload"""
-    return {"message": "OSRS Planner API"}
 
 
 @app.get("/accounts/{rsn}/stats")
@@ -31,3 +28,17 @@ def get_plan(rsn: str, goal_id: str, mode: str = "normal", skiller: bool = False
         "warnings": warnings,
         "plan": plan_steps
         }
+
+
+@app.get("/accounts/{rsn}/profile")
+def get_profile(rsn: str):
+    try:
+        return build_profile(rsn)
+    except PlayerNotFoundError:
+        raise HTTPException(status_code=404, detail=f"Account '{rsn}' not found on Hiscores")
+    except HiscoresError:
+        raise HTTPException(status_code=502, detail="Hiscores is unreachable right now — try again")
+
+
+_WEB = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "web")
+app.mount("/", StaticFiles(directory=_WEB, html=True), name="web")

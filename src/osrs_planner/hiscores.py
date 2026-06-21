@@ -14,6 +14,8 @@ def fetch_stats(rsn: str, mode: AccountMode) -> Account:
     """Fetch a player's stats from the OSRS hiscores."""
     if mode == AccountMode.normal:
         suffix = ""
+    elif mode == AccountMode.ultimate_ironman:
+        suffix = "_ultimate"          # OSRS board is "_ultimate", NOT "_ultimate_ironman"
     else:
         suffix = f"_{mode.name}"
     try:
