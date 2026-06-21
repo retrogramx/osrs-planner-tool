@@ -1,5 +1,16 @@
 .gt-header { display:flex; gap:var(--s4,1rem); align-items:center; padding:var(--s4,1rem); }
 #search-form { display:flex; gap:.5rem; }
+/* readable search: dark text on parchment input + dark text on a gold button */
+#rsn-search {
+  color:#1a140a; background:var(--parchment,#d8cca8); border:2px solid var(--gold-deep,#b9831f);
+  padding:.45rem .7rem; font-family:inherit; font-size:1rem;
+}
+#rsn-search::placeholder { color:#6b5a3a; }
+#search-form button {
+  color:#1a140a; background:var(--gold,#f0a830); border:2px solid var(--gold-deep,#b9831f);
+  padding:.45rem 1rem; font-family:inherit; font-weight:bold; cursor:pointer;
+}
+#search-form button:hover { background:var(--gold-bright,#ffc24d); }
 #profile { display:grid; grid-template-columns:1fr 1fr; gap:var(--s4,1rem); padding:var(--s4,1rem); }
 @media (max-width:720px){ #profile{ grid-template-columns:1fr; } }
 .gt-panel { padding:var(--s4,1rem); }
