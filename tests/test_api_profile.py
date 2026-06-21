@@ -33,3 +33,9 @@ def test_profile_endpoint_hiscores_error(monkeypatch):
     r = client.get("/accounts/AnyPlayer/profile")
     assert r.status_code == 502
     assert "unreachable" in r.json()["detail"].lower()
+
+def test_page_is_served():
+    r = client.get("/")
+    assert r.status_code == 200
+    assert 'id="rsn-search"' in r.text          # the search box exists
+    assert "app.js" in r.text                     # the script is wired
