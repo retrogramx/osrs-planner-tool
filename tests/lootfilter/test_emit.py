@@ -10,10 +10,11 @@ def test_emit_rule_terminal_and_apply():
     assert emit_rule("IRONMAN && value:>=1000", {"textColor": "#ffffffff"}).startswith("rule (")
     assert emit_rule("ownership:2", {"hidden": "true"}, terminal=False).startswith("apply (")
 
-def test_preamble_defines_macros():
+def test_core_macros_in_first_module_not_orphaned():
     from osrs_planner.lootfilter.emit import emit_settings
-    assert "#define IRONMAN accountType:1" in emit_preamble()
-    assert "#define HIDE_FLOOR 0" in emit_settings()   # HIDE_FLOOR moved into the settings module (declared-before-use)
+    s = emit_settings()
+    assert "#define IRONMAN accountType:1" in s and "#define HIDE_FLOOR 0" in s  # in the FIRST module's body
+    assert emit_preamble() == ""   # empty -> filter STARTS with a module declaration (FilterScape needs this)
 
 def test_modules_carry_filterscape_fields():
     from osrs_planner.lootfilter.emit import emit_module

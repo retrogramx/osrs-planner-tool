@@ -33,9 +33,10 @@ def emit_module(module_id: str, name: str, body: str, subtitle: str = "", descri
             f"description: |\n    {description or name}\n*/\n{body}\n")
 
 def emit_preamble() -> str:
-    # IRONMAN only -- HIDE_FLOOR's input moved INTO the settings module so it never references a
-    # module before that module is declared (which crashes the web customizer's importer).
-    return "#define IRONMAN accountType:1\n"
+    # Deliberately EMPTY: a FilterScape filter must START with a module declaration -- any content
+    # between meta{} and the first module (e.g. an orphaned #define) makes its parser discard the
+    # whole filter. The IRONMAN macro therefore lives at the top of the settings module instead.
+    return ""
 
 def emit_coins() -> str:
     """Coins + platinum tokens -> their own gold ladder, darkening as the stack value climbs."""
@@ -102,6 +103,7 @@ def emit_categories() -> str:
 
 def emit_settings() -> str:
     body = "\n".join([
+        "#define IRONMAN accountType:1",   # core gate -- lives here so the filter STARTS with a module
         '/*@ define:input:settings\nlabel: Hide below value\ntype: number\ngroup: Hide\n*/\n#define HIDE_FLOOR 0',
         '/*@ define:input:settings\nlabel: Show world spawns\ntype: boolean\ngroup: Show\n*/\n#define SHOW_WORLD_SPAWNS true',
         f"apply ({IRONMAN} && !SHOW_WORLD_SPAWNS && ownership:0) {{ hidden = true; }}",

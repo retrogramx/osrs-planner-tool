@@ -1,9 +1,8 @@
 meta {
     name = "Tiger0295";
-    description = "Tiger0295 collection-log filter: beams your 1428 missing slots (purple), tiered by rarity. Clog state is public via TempleOSRS; no bank data included.";
+    description = "Tiger0295 collection-log filter: beams your 1428 missing slots (purple), tiered by rarity. Clog state public via TempleOSRS; no bank data.";
 }
 
-#define IRONMAN accountType:1
 
 /*@ define:module:settings
 name: Settings
@@ -11,6 +10,7 @@ subtitle: Show/hide toggles
 description: |
     Display toggles for spawns, despawn timer, value, and the hide-below-value floor.
 */
+#define IRONMAN accountType:1
 /*@ define:input:settings
 label: Hide below value
 type: number

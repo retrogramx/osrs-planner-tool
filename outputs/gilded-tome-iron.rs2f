@@ -3,7 +3,6 @@ meta {
     description = "Generated ironman loot filter. Value tiers + collection-log trophies.";
 }
 
-#define IRONMAN accountType:1
 
 /*@ define:module:settings
 name: Settings
@@ -11,6 +10,7 @@ subtitle: Show/hide toggles
 description: |
     Display toggles for spawns, despawn timer, value, and the hide-below-value floor.
 */
+#define IRONMAN accountType:1
 /*@ define:input:settings
 label: Hide below value
 type: number
