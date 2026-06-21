@@ -11,8 +11,14 @@ def test_emit_rule_terminal_and_apply():
     assert emit_rule("ownership:2", {"hidden": "true"}, terminal=False).startswith("apply (")
 
 def test_preamble_defines_macros():
-    p = emit_preamble()
-    assert "#define IRONMAN accountType:1" in p and "#define HIDE_FLOOR 0" in p
+    from osrs_planner.lootfilter.emit import emit_settings
+    assert "#define IRONMAN accountType:1" in emit_preamble()
+    assert "#define HIDE_FLOOR 0" in emit_settings()   # HIDE_FLOOR moved into the settings module (declared-before-use)
+
+def test_modules_carry_filterscape_fields():
+    from osrs_planner.lootfilter.emit import emit_module
+    m = emit_module("demo", "Demo", "rule (x) {}")     # web customizer requires name+subtitle+description
+    assert "name: Demo" in m and "subtitle:" in m and "description: |" in m
 
 def test_fallback_iron_gated_with_hide_floor():
     fb = emit_fallback()

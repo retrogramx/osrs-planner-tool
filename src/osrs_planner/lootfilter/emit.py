@@ -25,13 +25,17 @@ def emit_rule(conds: str, style: dict, terminal: bool = True) -> str:
 def emit_meta(name: str, desc: str) -> str:
     return f'meta {{\n    name = "{name}";\n    description = "{desc}";\n}}\n'
 
-def emit_module(module_id: str, name: str, body: str) -> str:
-    return f"/*@ define:module:{module_id}\nname: {name}\n*/\n{body}\n"
+def emit_module(module_id: str, name: str, body: str, subtitle: str = "", description: str = "") -> str:
+    # FilterScape/loot-filters-ui require name + subtitle + description on EVERY module (the plugin
+    # is lenient, the web customizer isn't -- a missing field makes its importer build a bad module).
+    return (f"/*@ define:module:{module_id}\nname: {name}\n"
+            f"subtitle: {subtitle or name}\n"
+            f"description: |\n    {description or name}\n*/\n{body}\n")
 
 def emit_preamble() -> str:
-    return ("#define IRONMAN accountType:1\n"
-            '/*@ define:input:settings\nlabel: Hide below value\ntype: number\ngroup: Hide\n*/\n'
-            "#define HIDE_FLOOR 0\n")
+    # IRONMAN only -- HIDE_FLOOR's input moved INTO the settings module so it never references a
+    # module before that module is declared (which crashes the web customizer's importer).
+    return "#define IRONMAN accountType:1\n"
 
 def emit_coins() -> str:
     """Coins + platinum tokens -> their own gold ladder, darkening as the stack value climbs."""
@@ -98,6 +102,7 @@ def emit_categories() -> str:
 
 def emit_settings() -> str:
     body = "\n".join([
+        '/*@ define:input:settings\nlabel: Hide below value\ntype: number\ngroup: Hide\n*/\n#define HIDE_FLOOR 0',
         '/*@ define:input:settings\nlabel: Show world spawns\ntype: boolean\ngroup: Show\n*/\n#define SHOW_WORLD_SPAWNS true',
         f"apply ({IRONMAN} && !SHOW_WORLD_SPAWNS && ownership:0) {{ hidden = true; }}",
         '/*@ define:input:settings\nlabel: Show unowned drops\ntype: boolean\ngroup: Show\n*/\n#define SHOW_UNOWNED true',
@@ -107,7 +112,8 @@ def emit_settings() -> str:
         '/*@ define:input:settings\nlabel: Item value\ntype: boolean\ngroup: Show\n*/\n#define SHOW_VALUE true',
         f"apply ({IRONMAN} && SHOW_VALUE) {{ showValue = true; }}",
     ])
-    return emit_module("settings", "Settings", body)
+    return emit_module("settings", "Settings", body,
+                       "Show/hide toggles", "Display toggles for spawns, despawn timer, value, and the hide-below-value floor.")
 
 # Untradeable rewards have ~0 GE value, so colour them by WHAT THEY ARE, not gp.
 # CLUE TIERS get the full per-tier treatment (like potions): the seal colour as the panel, plus a
