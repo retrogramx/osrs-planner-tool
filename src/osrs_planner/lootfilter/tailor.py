@@ -5,7 +5,7 @@ AccountState (counts + clog_obtained); never calls the ingestion itself. The cal
 supplies the clog id-set (generate.load_clog_ids)."""
 from __future__ import annotations
 
-from osrs_planner.lootfilter.emit import emit_module, emit_rule, IRONMAN, _id_list
+from osrs_planner.lootfilter.emit import emit_module, emit_rule, emit_style_input, IRONMAN, _id_list
 
 _HIGH_VALUE = 100_000  # A grade -> never hide an owned item worth this much
 # Collection-log purple ("a purple!") -- the OSRS rare-unique colour. Distinct from coin gold so a
@@ -41,16 +41,20 @@ def emit_tailoring(account_state, clog_ids, value_index=None, rarity_index=None)
     lines = ['/*@ define:input:tailoring\nlabel: Hide items already in my bank\ntype: boolean\ngroup: Tailor\n*/\n#define HIDE_OWNED false']
     # Clog signature = purple panel + a GOLD border (no category/coin ever has a gold border, so the
     # combo is unmistakably clog); ULTRA keeps a RED border so the rarest still pops hardest.
-    if ultra:   # rarest slots: bold + RED-bordered purple + beam + sound + notify
-        lines.append(emit_rule(f"{IRONMAN} && {_id_list(ultra)}", _missing_style("#ffff2b2b", "3", True)))
+    if ultra:   # rarest slots: bold + RED-bordered purple + beam + sound + notify (editable picker)
+        lines.append(emit_style_input("tailoring", "Missing clog -- ULTRA (rarest)", "Collection log", "CLOG_ULTRA",
+            f"{IRONMAN} && {_id_list(ultra)}", _missing_style("#ffff2b2b", "3", True)))
     if rare:    # rare / clue / pet / minigame slots: gold-bordered purple + beam + sound + notify
-        lines.append(emit_rule(f"{IRONMAN} && {_id_list(rare)}", _missing_style("#ffffd700", "2", True)))
+        lines.append(emit_style_input("tailoring", "Missing clog -- rare", "Collection log", "CLOG_RARE",
+            f"{IRONMAN} && {_id_list(rare)}", _missing_style("#ffffd700", "2", True)))
     if common:  # common slots: gold-bordered purple PANEL only, no beam/sound (cuts the spam)
-        lines.append(emit_rule(f"{IRONMAN} && {_id_list(common)}", _missing_style("#ffffd700", "1", False)))
-    if have:   # obtained clog: a quiet bronze "collection" panel (still clearly visible) -- NO beam
-        lines.append(emit_rule(f"{IRONMAN} && {_id_list(have)}",
+        lines.append(emit_style_input("tailoring", "Missing clog -- common", "Collection log", "CLOG_COMMON",
+            f"{IRONMAN} && {_id_list(common)}", _missing_style("#ffffd700", "1", False)))
+    if have:    # obtained clog: a quiet bronze "collection" panel (still clearly visible) -- NO beam
+        lines.append(emit_style_input("tailoring", "Obtained clog", "Collection log", "CLOG_HAVE",
+            f"{IRONMAN} && {_id_list(have)}",
             {"backgroundColor": "#ffbc6025", "borderColor": "#ff7a3f18", "textColor": "#fff5f5f5",
              "fontType": "1", "textAccent": "3", "icon": "CurrentItem()"}))
     if hide:
         lines.append(emit_rule(f"{IRONMAN} && HIDE_OWNED && {_id_list(hide)}", {"hidden": "true"}, terminal=False))
-    return emit_module("tailoring", "Account tailoring", "\n".join(lines))
+    return emit_module("tailoring", "Account tailoring", "\n".join(lines), "Beam missing slots, dim owned")

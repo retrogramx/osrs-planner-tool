@@ -13,15 +13,17 @@ def test_missing_beam_obtained_dim_and_hide_owned():
 
 def test_rarity_splits_missing_beams():
     # rarity_index buckets missing slots: ULTRA = red border + beam, RARE = beam, COMMON = panel only
+    # styles now live in editable #define macros; rules apply them by id
     st = build_account_state("ironman", bank_tsv="", clog_obtained=set())
     out = emit_tailoring(st, clog_ids={11, 22, 33}, rarity_index={11: "ULTRA", 33: "COMMON"})  # 22 -> RARE default
     lines = out.splitlines()
-    ultra = next(l for l in lines if "id:[11]" in l)
-    rare = next(l for l in lines if "id:[22]" in l)
-    common = next(l for l in lines if "id:[33]" in l)
+    ultra = next(l for l in lines if l.startswith("#define CLOG_ULTRA"))
+    rare = next(l for l in lines if l.startswith("#define CLOG_RARE"))
+    common = next(l for l in lines if l.startswith("#define CLOG_COMMON"))
     assert "#ffff2b2b" in ultra and "showLootbeam = true;" in ultra   # rarest: red border + beam
     assert "showLootbeam = true;" in rare                             # rare: beam
     assert "showLootbeam" not in common                              # common: gold PANEL only, NO beam
+    assert "id:[11]) { CLOG_ULTRA }" in out and "id:[33]) { CLOG_COMMON }" in out  # rules apply the macros
 
 def test_clog_purple_gold_signature():
     # clog signature = purple panel + (gold border on RARE/COMMON, red on ULTRA) -- unique to clog
@@ -29,8 +31,8 @@ def test_clog_purple_gold_signature():
     assert _CLOG == "#ffc23cf0"
     st = build_account_state("ironman", bank_tsv="", clog_obtained=set())
     out = emit_tailoring(st, clog_ids={11, 22}, rarity_index={11: "ULTRA"})  # 22 -> RARE default
-    ultra = next(l for l in out.splitlines() if "id:[11]" in l)
-    rare = next(l for l in out.splitlines() if "id:[22]" in l)
+    ultra = next(l for l in out.splitlines() if l.startswith("#define CLOG_ULTRA"))
+    rare = next(l for l in out.splitlines() if l.startswith("#define CLOG_RARE"))
     assert "#ffc23cf0" in ultra and "#ffff2b2b" in ultra   # purple panel + RED border
     assert "#ffc23cf0" in rare and "#ffffd700" in rare     # purple panel + GOLD border
 
