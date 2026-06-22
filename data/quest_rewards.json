@@ -19,7 +19,9 @@
         "full quest corpus (deferred to follow-on sourcing plan)",
         "Ava's attractor alternative reward when Ranged < 50 (condition type 'less_than' not in atom vocabulary; attractor is modelled as unconditional fallback item reward)",
         "choice_lamp eligible_skills=Any quests beyond X Marks the Spot (many quests; taxonomy fully exercised by existing record)",
-        "special/scaling xp (e.g. While Guthix Sleeps Slayer=15x level; Observatory Quest constellation-random; Biohazard attack-dummy 300 XP capped; form=special deferred — formula not cleanly transcribable as a flat amount)"
+        "special/scaling xp (e.g. While Guthix Sleeps Slayer=15x level; Observatory Quest constellation-random; Biohazard attack-dummy 300 XP capped; form=special deferred — formula not cleanly transcribable as a flat amount)",
+        "PER-QUEST INCOMPLETENESS BY DESIGN: each included quest captures representative reward SHAPES, not its complete reward list. Verified by verbatim wiki sweep (2026-06-22): all included XP/item/QP/cosmetic/conditional values confirmed accurate. Examples of intentionally-omitted rewards: Waterfall Quest also grants 2 diamonds + 2 gold bars + 40 mithril seeds; Recipe for Disaster also grants a 20,000-XP antique lamp + multiple area/feature unlocks; X Marks the Spot also grants +1 clue-scroll tier cap; several quests grant 5 Kudos.",
+        "UNMODELED REWARD TYPES encountered in the sweep (deferred to the full-corpus follow-on + a taxonomy extension): currency rewards (Kudos, coins), and misc-ability unlocks (e.g. 'ability to make a steak sandwich', 'access to Crandor')."
       ],
       "known_missing_note": "Seed proves the taxonomy + builder + validator end-to-end. special/scaling xp deferred: the form=special data shape is supported by the builder but no quest in this seed uses it (formula not a flat integer)."
     }
@@ -59,7 +61,8 @@
           "effect_kind": "rate_multiplier",
           "magnitude": 0.10,
           "target": "Farming herb yield",
-          "condition": "while-wielded",
+          "condition": "while-held",
+          "condition_note": "active when equipped OR in the inventory (Poll 78); target shown is representative — also boosts allotments, bushes, etc.",
           "tier_source": "Fairytale I - Growing Pains"
         }
       ],
@@ -194,14 +197,7 @@
       "quest": "Demon Slayer",
       "quest_points": 3,
       "rewards": [
-        {"reward_type": "items", "item": "Silverlight", "item_id": 2402, "qty": 1, "tradeable": false},
-        {
-          "reward_type": "unlock",
-          "category": "slayer",
-          "name": "Shadow of the Storm quest access",
-          "stage": "completed",
-          "access": "Shadow of the Storm prerequisite"
-        }
+        {"reward_type": "items", "item": "Silverlight", "item_id": 2402, "qty": 1, "tradeable": false}
       ],
       "effects": [],
       "source_urls": ["https://oldschool.runescape.wiki/w/Demon_Slayer"],
@@ -224,7 +220,7 @@
         {
           "reward_type": "unlock",
           "category": "equipment",
-          "name": "Equip rune platebody and dragon platebody",
+          "name": "Equip green d'hide body, rune platebody, and dragon platebody",
           "stage": "completed",
           "access": "Rune platebody equip"
         }

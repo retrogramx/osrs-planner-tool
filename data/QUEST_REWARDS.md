@@ -203,6 +203,7 @@ serve all major game reward domains without schema changes.
 | Limitation | Status |
 |---|---|
 | **Seed not full corpus.** 14 quests cover all taxonomy shapes but ~140 free quests and ~190 member quests are not in the seed. | Disclosed in `_provenance.completeness.known_missing`; follow-on sourcing plan. |
+| **Per-quest shape sample, not exhaustive reward list.** Each included quest captures the reward shapes needed to exercise the taxonomy, not every reward the wiki lists. The included XP/item/QP/cosmetic/conditional values are verbatim-wiki-verified (2026-06-22 sweep; 1 fabrication found and removed — Demon Slayer's "Shadow of the Storm prerequisite" unlock, which is a quest prereq edge, not a reward). Per-quest completeness and unmodeled reward types (currency rewards such as Kudos and coins; misc-ability unlocks such as "ability to make a steak sandwich") are the full-corpus follow-on. | Disclosed in `_provenance.completeness.known_missing`. |
 | **Editorial correctness is owner-gated.** The structural validator checks IDs and enum values but cannot verify that XP amounts / QP values are correct. | Owner review required before PR merge. |
 | **Condition `< N` not expressible.** The `ConditionAtom` model only supports `≥ threshold`. Ava's attractor (Ranged < 50) is modelled as an unconditional fallback item. | Disclosed in `known_missing`. |
 | **`special`/scaling XP deferred.** Quests with formula-based XP (While Guthix Sleeps Slayer, Observatory Quest constellation-random) are not in the seed. | Disclosed in `known_missing`. |

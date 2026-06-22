@@ -59,13 +59,6 @@
   },
   {
     "data": {},
-    "id": "access:shadow-of-the-storm-prerequisite",
-    "kind": "access",
-    "name": "Shadow of the storm prerequisite",
-    "slug": "shadow-of-the-storm-prerequisite"
-  },
-  {
-    "data": {},
     "id": "gear_loadout:infinity",
     "kind": "gear_loadout",
     "name": "Full Infinity",

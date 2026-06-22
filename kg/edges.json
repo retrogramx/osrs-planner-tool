@@ -666,16 +666,12 @@
   {
     "cond_group": null,
     "data": {
-      "access": "Shadow of the Storm prerequisite",
-      "category": "slayer",
-      "name": "Shadow of the Storm quest access",
-      "reward": "unlock",
-      "stage": "completed"
+      "weight": 3
     },
-    "dst": "access:shadow-of-the-storm-prerequisite",
+    "dst": "goal:quest-point-cape",
     "id": 6517539,
     "src": "quest:demon-slayer",
-    "type": "grants"
+    "type": "progress_towards"
   },
   {
     "cond_group": 4789360,
@@ -1522,7 +1518,7 @@
     "data": {
       "access": "Rune platebody equip",
       "category": "equipment",
-      "name": "Equip rune platebody and dragon platebody",
+      "name": "Equip green d'hide body, rune platebody, and dragon platebody",
       "reward": "unlock",
       "stage": "completed"
     },
@@ -1554,16 +1550,6 @@
     "id": 7279258,
     "src": "quest:prince-ali-rescue",
     "type": "requires"
-  },
-  {
-    "cond_group": null,
-    "data": {
-      "weight": 3
-    },
-    "dst": "goal:quest-point-cape",
-    "id": 7287719,
-    "src": "quest:demon-slayer",
-    "type": "progress_towards"
   },
   {
     "cond_group": 4689210,
@@ -1690,7 +1676,8 @@
   {
     "cond_group": null,
     "data": {
-      "condition": "while-wielded",
+      "condition": "while-held",
+      "condition_note": "active when equipped OR in the inventory (Poll 78); target shown is representative — also boosts allotments, bushes, etc.",
       "effect_kind": "rate_multiplier",
       "magnitude": 0.1,
       "rides_on_item": "Magic secateurs",
