@@ -329,6 +329,40 @@ def test_dangling_group_ref_makes_find_cycles_raise_and_is_caught():
     assert v, v  # degraded gracefully: still a non-empty (non-zero exit) violation set
 
 
+# --- Task 7: Reward-aware invariants ---
+
+def test_progress_towards_without_weight_is_flagged():
+    nodes = [
+        Node(id="quest:x", kind=NodeKind.QUEST, name="X", slug="x", data={}),
+        Node(id="goal:quest-point-cape", kind=NodeKind.GOAL, name="QP cape",
+             slug="quest-point-cape", data={"counter_type": "points", "thresholds": [2]}),
+    ]
+    edges = [Edge(id=8001, type=EdgeType.PROGRESS_TOWARDS, src="quest:x",
+                  dst="goal:quest-point-cape", cond_group=None, data={})]  # no weight
+    store = InMemoryKGStore(nodes, edges, {})
+    v = validate_kg.check_kg(store, _quests_data(["X"]))
+    assert any("weight" in e and "8001" in e for e in v), v
+
+
+def test_goal_node_without_counter_type_is_flagged():
+    nodes = [Node(id="goal:bad", kind=NodeKind.GOAL, name="Bad", slug="bad", data={})]
+    store = InMemoryKGStore(nodes, [], {})
+    v = validate_kg.check_kg(store, _quests_data([]))
+    assert any("goal:bad" in e and "counter_type" in e for e in v), v
+
+
+def test_progress_towards_to_non_goal_is_flagged():
+    nodes = [
+        Node(id="quest:x", kind=NodeKind.QUEST, name="X", slug="x", data={}),
+        Node(id="skill:attack", kind=NodeKind.SKILL, name="Attack", slug="attack", data={}),
+    ]
+    edges = [Edge(id=8002, type=EdgeType.PROGRESS_TOWARDS, src="quest:x",
+                  dst="skill:attack", cond_group=None, data={"weight": 1})]
+    store = InMemoryKGStore(nodes, edges, {})
+    v = validate_kg.check_kg(store, _quests_data(["X"]))
+    assert any("8002" in e and "goal" in e for e in v), v
+
+
 # --- Step 4: on-real-data acceptance test ---
 
 def test_main_passes_on_committed_kg():

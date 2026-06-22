@@ -179,6 +179,27 @@ def check_kg(store: KGStore, quests_data: dict,
             else:
                 referenced_groups.add(e.cond_group)
 
+    # --- Reward-edge + goal-node invariants (quest-foundation) ---
+    goal_ids = {nid for nid, n in store.nodes.items()
+                if (n.kind.value if hasattr(n.kind, "value") else n.kind) == NodeKind.GOAL.value}
+    for e in store.edges:
+        if e.type is EdgeType.PROGRESS_TOWARDS:
+            w = (e.data or {}).get("weight")
+            if not isinstance(w, int) or w <= 0:
+                errors.append(f"[reward] progress_towards edge {e.id} has non-positive/missing "
+                              f"data.weight {w!r}")
+            if e.dst not in goal_ids:
+                errors.append(f"[reward] progress_towards edge {e.id} dst {e.dst!r} is not a goal node")
+        elif e.type is EdgeType.GRANTS:
+            if not (e.data or {}).get("reward"):
+                errors.append(f"[reward] grants edge {e.id} missing data.reward")
+    for nid in goal_ids:
+        data = store.nodes[nid].data or {}
+        if data.get("counter_type") is None:
+            errors.append(f"[goal] node {nid} missing data.counter_type")
+        if not data.get("thresholds"):
+            errors.append(f"[goal] node {nid} missing/empty data.thresholds")
+
     # --- 2 + 3: walk groups (atom ref_node, sub-group children, ops) ---
     for gid, group in store.groups.items():
         op = group.op.value if hasattr(group.op, "value") else group.op
