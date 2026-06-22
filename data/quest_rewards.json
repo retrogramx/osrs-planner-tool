@@ -1,0 +1,67 @@
+{
+  "_provenance": {
+    "domain": "quest_rewards",
+    "source_urls": [
+      "https://oldschool.runescape.wiki/w/Quest_experience_rewards",
+      "https://oldschool.runescape.wiki/w/Quest_item_rewards",
+      "https://oldschool.runescape.wiki/w/Unlockable_content"
+    ],
+    "accessed": "2026-06-22",
+    "license": "CC BY-NC-SA 3.0",
+    "extraction_method": "manual-transcription-from-wiki",
+    "record_count": 4,
+    "completeness": {
+      "bounded_by": "owner-verified seed (machinery proof); full corpus is a follow-on plan",
+      "universe_count": null,
+      "records_count": 4,
+      "known_missing": ["full quest corpus (deferred to follow-on sourcing plan)"],
+      "known_missing_note": "Seed proves the taxonomy + builder + validator end-to-end."
+    }
+  },
+  "records": [
+    {
+      "quest": "Waterfall Quest",
+      "rewards": [
+        {"reward_type": "xp", "form": "fixed", "skill": "Attack", "amount": 13750},
+        {"reward_type": "xp", "form": "fixed", "skill": "Strength", "amount": 13750}
+      ],
+      "effects": [],
+      "source_urls": ["https://oldschool.runescape.wiki/w/Waterfall_Quest"]
+    },
+    {
+      "quest": "Recipe for Disaster",
+      "rewards": [
+        {"reward_type": "items", "item": "Barrows gloves", "item_id": 7462, "qty": 1, "tradeable": false}
+      ],
+      "effects": [],
+      "source_urls": ["https://oldschool.runescape.wiki/w/Recipe_for_Disaster"]
+    },
+    {
+      "quest": "Fairytale I - Growing Pains",
+      "rewards": [
+        {"reward_type": "items", "item": "Magic secateurs", "item_id": 7409, "qty": 1, "tradeable": false}
+      ],
+      "effects": [
+        {
+          "rides_on_item": "Magic secateurs",
+          "rides_on_item_id": 7409,
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.10,
+          "target": "Farming herb yield",
+          "condition": "while-wielded",
+          "tier_source": "Fairytale I - Growing Pains"
+        }
+      ],
+      "source_urls": ["https://oldschool.runescape.wiki/w/Fairytale_I_-_Growing_Pains"]
+    },
+    {
+      "quest": "Fairytale II - Cure a Queen",
+      "rewards": [
+        {"reward_type": "unlock", "category": "transportation", "name": "Fairy ring network", "stage": "in_progress", "access": "Fairy rings"}
+      ],
+      "effects": [],
+      "source_urls": ["https://oldschool.runescape.wiki/w/Fairytale_II_-_Cure_a_Queen"]
+    }
+  ],
+  "_excluded": []
+}

@@ -26,6 +26,7 @@ from osrs_planner.engine.kg.json_store import (
     group_to_dict as serialize_group,
 )
 from kg_ingest.builders.goals import build_goals
+from kg_ingest.builders.quest_rewards import build_quest_rewards
 from kg_ingest.builders.quests import build_quests
 from kg_ingest.builders.supporting import build_supporting
 
@@ -171,6 +172,15 @@ def _load_quest_records() -> list[dict]:
     return json.loads(QUESTS_PATH.read_text())["records"]
 
 
+QUEST_REWARDS_PATH = Path(__file__).resolve().parents[1] / "data" / "quest_rewards.json"
+
+
+def _load_reward_records() -> list[dict]:
+    if not QUEST_REWARDS_PATH.exists():
+        return []
+    return json.loads(QUEST_REWARDS_PATH.read_text())["records"]
+
+
 def _write_json(path: Path, payload: list) -> None:
     text = json.dumps(payload, indent=2, sort_keys=True, ensure_ascii=False)
     path.write_text(text + "\n")
@@ -180,13 +190,16 @@ def assemble() -> None:
     """Build the full v1 KG from data/*.json and write kg/*.json (K10). Deterministic."""
     # 1) run the builders (each returns builder-LOCAL group/edge ids).
     q_nodes, q_edges, q_groups, _diaries = build_quests(_load_quest_records())
+    qr_nodes, qr_edges, qr_groups = build_quest_rewards(_load_reward_records())
     g_nodes, g_edges, g_groups = build_goals()
 
-    # 2) re-key quests and goals INDEPENDENTLY (each derives ids from its own owner
-    #    nodes, K9). Builder-local id spaces may overlap between builders; per-builder
-    #    re-keying before merge avoids any clash and is globally collision-safe because
-    #    re-keyed ids derive from the (globally-unique) owner node id.
-    q_nodes, q_edges, q_groups = rekey(q_nodes, q_edges, q_groups)
+    # 2) re-key. Quests + quest-rewards share quest:* owners (requires + grants from the
+    #    same quest), so they MUST be re-keyed in ONE call to get a continuous per-owner
+    #    edge/group index (Task 3). Goals own disjoint ids -> re-keyed independently.
+    qr_combined_nodes = q_nodes + qr_nodes
+    qr_combined_edges = q_edges + qr_edges          # requires first, then grants (stable order)
+    qr_combined_groups = {**q_groups, **qr_groups}
+    q_nodes, q_edges, q_groups = rekey(qr_combined_nodes, qr_combined_edges, qr_combined_groups)
     g_nodes, g_edges, g_groups = rekey(g_nodes, g_edges, g_groups)
 
     edges = q_edges + g_edges

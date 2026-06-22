@@ -88,6 +88,18 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "amount": 13750,
+      "form": "fixed",
+      "reward": "xp"
+    },
+    "dst": "skill:attack",
+    "id": 6141859,
+    "src": "quest:waterfall-quest",
+    "type": "grants"
+  },
+  {
     "cond_group": 5314079,
     "data": {},
     "dst": null,
@@ -134,6 +146,18 @@
     "id": 6173873,
     "src": "quest:horror-from-the-deep",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 13750,
+      "form": "fixed",
+      "reward": "xp"
+    },
+    "dst": "skill:strength",
+    "id": 6184000,
+    "src": "quest:waterfall-quest",
+    "type": "grants"
   },
   {
     "cond_group": 5875109,
@@ -350,6 +374,18 @@
     "id": 6415719,
     "src": "quest:scorpion-catcher",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": false
+    },
+    "dst": "item:7462",
+    "id": 6427692,
+    "src": "quest:recipe-for-disaster",
+    "type": "grants"
   },
   {
     "cond_group": 4068015,
@@ -1176,6 +1212,18 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": false
+    },
+    "dst": "item:7409",
+    "id": 7385610,
+    "src": "quest:fairytale-i-growing-pains",
+    "type": "grants"
+  },
+  {
     "cond_group": 4110619,
     "data": {},
     "dst": null,
@@ -1214,6 +1262,21 @@
     "id": 7447010,
     "src": "quest:a-night-at-the-theatre",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "while-wielded",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.1,
+      "rides_on_item": "Magic secateurs",
+      "target": "Farming herb yield",
+      "tier_source": "Fairytale I - Growing Pains"
+    },
+    "dst": null,
+    "id": 7452840,
+    "src": "item:7409",
+    "type": "effect"
   },
   {
     "cond_group": 5371171,
@@ -1654,6 +1717,20 @@
     "id": 7964367,
     "src": "quest:the-lost-tribe",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "access": "Fairy rings",
+      "category": "transportation",
+      "name": "Fairy ring network",
+      "reward": "unlock",
+      "stage": "in_progress"
+    },
+    "dst": "access:fairy-rings",
+    "id": 7964864,
+    "src": "quest:fairytale-ii-cure-a-queen",
+    "type": "grants"
   },
   {
     "cond_group": 5437937,
