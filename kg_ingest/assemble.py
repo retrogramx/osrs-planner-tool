@@ -83,15 +83,18 @@ def rekey(nodes: list[Node], edges: list[Edge],
 
     new_edges: list[Edge] = []
     seen_edge_ids: dict[int, Edge] = {}
+    group_local_index: dict[str, int] = {}  # per-owner cumulative group counter
     for e in edges:
         owner = e.src
         e_idx = edge_local_index.get(owner, 0)
         edge_local_index[owner] = e_idx + 1
         new_cond_group = None
         if e.cond_group is not None:
-            for local_idx, local_gid in enumerate(_walk_group_ids(e.cond_group, groups)):
+            for local_gid in _walk_group_ids(e.cond_group, groups):
                 if local_gid not in local_to_new_group:
-                    local_to_new_group[local_gid] = stable_group_id(owner, local_idx)
+                    gi = group_local_index.get(owner, 0)
+                    group_local_index[owner] = gi + 1
+                    local_to_new_group[local_gid] = stable_group_id(owner, gi)
             new_cond_group = local_to_new_group[e.cond_group]
         new_edge_id = stable_edge_id(owner, e_idx)
         if new_edge_id in seen_edge_ids:
@@ -101,7 +104,7 @@ def rekey(nodes: list[Node], edges: list[Edge],
                 f"{e.src}->{e.dst} hash to the same global id (unrecoverable; not "
                 f"silently droppable)")
         new_edge = Edge(id=new_edge_id, type=e.type, src=e.src, dst=e.dst,
-                        cond_group=new_cond_group)
+                        cond_group=new_cond_group, data=e.data)
         seen_edge_ids[new_edge_id] = new_edge
         new_edges.append(new_edge)
 
