@@ -12,6 +12,12 @@ build_completion_goals). Edge mapping per the spec reward taxonomy:
   quest_points(N) -> PROGRESS_TOWARDS quest -> goal:quest-point-cape data{weight:N}  (Task 5)
   effects[]       -> EFFECT item:<id> -> None           data{effect_kind,magnitude,...}
 
+Conditional rewards (§3.6): a `condition` dict on a reward entry produces a
+ConditionGroup (AND, one child ConditionAtom) and sets cond_group on the GRANTS edge.
+Supported condition types:
+  {"type": "skill_level", "skill": S, "level": N}  -> SKILL_LEVEL atom
+  {"type": "item",        "item_id": N, "qty": Q}  -> ITEM atom
+
 IDs (K9): builder-local group/edge ids use bands 0x50000000/0x60000000 (disjoint
 from quests 0x10/0x20 and goals 0x30/0x40). assemble.rekey() re-keys to global ids.
 """
@@ -42,6 +48,37 @@ def _gid(owner: str, slot: int) -> int:
     return _GROUP_BAND | _stable_hash(f"{owner}#reward-group#{slot}")
 
 
+def _build_condition_group(
+    owner: str,
+    slot: int,
+    cond: dict,
+) -> ConditionGroup:
+    """Build an AND ConditionGroup from a condition dict (§3.6).
+
+    Supported condition types:
+      skill_level: {"type": "skill_level", "skill": str, "level": int}
+      item:        {"type": "item", "item_id": int, "qty": int}
+    """
+    ctype = cond["type"]
+    if ctype == "skill_level":
+        atom = ConditionAtom(
+            atom_type=AtomType.SKILL_LEVEL,
+            ref_node=skill_id(cond["skill"]),
+            threshold=int(cond["level"]),
+        )
+    elif ctype == "item":
+        atom = ConditionAtom(
+            atom_type=AtomType.ITEM,
+            ref_node=item_id(int(cond["item_id"])),
+            qty=int(cond["qty"]),
+        )
+    else:
+        raise ValueError(f"_build_condition_group: unknown condition type {ctype!r}")
+
+    gid = _gid(owner, slot)
+    return ConditionGroup(id=gid, op=Op.AND, parent=None, children=[atom])
+
+
 def build_quest_rewards(
     reward_records: list[dict],
 ) -> tuple[list[Node], list[Edge], dict[int, ConditionGroup]]:
@@ -52,6 +89,7 @@ def build_quest_rewards(
     for rec in reward_records:
         qid = quest_id(rec["quest"])
         slot = 0  # per-owner edge slot; rekey re-derives global ids anyway
+        cond_slot = 0  # per-owner condition-group slot
 
         for rw in rec.get("rewards", []):
             rtype = rw["reward_type"]
@@ -67,7 +105,7 @@ def build_quest_rewards(
                 dst = item_id(rw["item_id"]) if rw.get("item_id") is not None else None
                 data = {"reward": "items",
                         **{k: v for k, v in rw.items()
-                           if k not in ("reward_type", "item", "item_id")}}
+                           if k not in ("reward_type", "item", "item_id", "condition")}}
             elif rtype == "unlock":
                 dst = access_id(rw["access"]) if rw.get("access") else None
                 data = {"reward": "unlock",
@@ -82,8 +120,17 @@ def build_quest_rewards(
             else:
                 raise ValueError(f"build_quest_rewards: unknown reward_type {rtype!r} "
                                  f"for quest {rec['quest']!r}")
+
+            # Build a cond_group if this reward has a condition (§3.6).
+            cond_group_id = None
+            if rw.get("condition"):
+                grp = _build_condition_group(qid, cond_slot, rw["condition"])
+                groups[grp.id] = grp
+                cond_group_id = grp.id
+                cond_slot += 1
+
             edges.append(Edge(id=_eid(qid, slot), type=EdgeType.GRANTS,
-                              src=qid, dst=dst, cond_group=None, data=data))
+                              src=qid, dst=dst, cond_group=cond_group_id, data=data))
             slot += 1
 
         # quest_points -> a counting contribution toward the QP cape (Task 5).

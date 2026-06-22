@@ -1,5 +1,19 @@
 [
   {
+    "data": {},
+    "id": "access:avas-device-upgrades",
+    "kind": "access",
+    "name": "Avas device upgrades",
+    "slug": "avas-device-upgrades"
+  },
+  {
+    "data": {},
+    "id": "access:dragon-slayer-task",
+    "kind": "access",
+    "name": "Dragon slayer task",
+    "slug": "dragon-slayer-task"
+  },
+  {
     "data": {
       "note": "fairy-ring travel network; unlocks during Fairytale II"
     },
@@ -10,10 +24,45 @@
   },
   {
     "data": {},
+    "id": "access:herblore-skill",
+    "kind": "access",
+    "name": "Herblore skill",
+    "slug": "herblore-skill"
+  },
+  {
+    "data": {},
     "id": "access:quest-point-cape",
     "kind": "access",
     "name": "Quest point cape",
     "slug": "quest-point-cape"
+  },
+  {
+    "data": {},
+    "id": "access:ruins-of-camdozaal",
+    "kind": "access",
+    "name": "Ruins of camdozaal",
+    "slug": "ruins-of-camdozaal"
+  },
+  {
+    "data": {},
+    "id": "access:rune-essence-mine",
+    "kind": "access",
+    "name": "Rune essence mine",
+    "slug": "rune-essence-mine"
+  },
+  {
+    "data": {},
+    "id": "access:rune-platebody-equip",
+    "kind": "access",
+    "name": "Rune platebody equip",
+    "slug": "rune-platebody-equip"
+  },
+  {
+    "data": {},
+    "id": "access:shadow-of-the-storm-prerequisite",
+    "kind": "access",
+    "name": "Shadow of the storm prerequisite",
+    "slug": "shadow-of-the-storm-prerequisite"
   },
   {
     "data": {},
@@ -42,6 +91,34 @@
     "kind": "goal",
     "name": "Quest point cape",
     "slug": "quest-point-cape"
+  },
+  {
+    "data": {},
+    "id": "item:10498",
+    "kind": "item",
+    "name": "Ava's attractor",
+    "slug": "10498"
+  },
+  {
+    "data": {},
+    "id": "item:10499",
+    "kind": "item",
+    "name": "Ava's accumulator",
+    "slug": "10499"
+  },
+  {
+    "data": {},
+    "id": "item:1478",
+    "kind": "item",
+    "name": "Amulet of accuracy",
+    "slug": "1478"
+  },
+  {
+    "data": {},
+    "id": "item:2402",
+    "kind": "item",
+    "name": "Silverlight",
+    "slug": "2402"
   },
   {
     "data": {},

@@ -66,3 +66,87 @@ def test_quest_points_becomes_progress_towards_the_cape():
     assert len(pt) == 1
     assert pt[0].src == "quest:waterfall-quest"
     assert pt[0].dst == "goal:quest-point-cape" and pt[0].data == {"weight": 1}
+
+
+def test_conditional_item_reward_emits_cond_group_with_skill_level_atom():
+    """A reward with condition.type=skill_level should:
+    - set cond_group on the GRANTS edge (non-None)
+    - populate the groups dict with a ConditionGroup whose child is a
+      ConditionAtom(atom_type=SKILL_LEVEL, ref_node=skill_id, threshold=N)
+    """
+    from osrs_planner.engine.kg.model import AtomType, ConditionAtom, Op
+    rec = {
+        "quest": "Animal Magnetism",
+        "quest_points": 1,
+        "rewards": [
+            {
+                "reward_type": "items",
+                "item": "Ava's accumulator",
+                "item_id": 10499,
+                "qty": 1,
+                "tradeable": False,
+                "condition": {"type": "skill_level", "skill": "Ranged", "level": 50},
+            }
+        ],
+        "effects": [],
+    }
+    _, edges, groups = build_quest_rewards([rec])
+    grants = [e for e in edges if e.type is EdgeType.GRANTS]
+    assert len(grants) == 1
+    edge = grants[0]
+    # cond_group must be set
+    assert edge.cond_group is not None
+    # the groups dict must contain that group
+    assert edge.cond_group in groups
+    grp = groups[edge.cond_group]
+    assert grp.op is Op.AND
+    assert len(grp.children) == 1
+    atom = grp.children[0]
+    assert isinstance(atom, ConditionAtom)
+    assert atom.atom_type is AtomType.SKILL_LEVEL
+    assert atom.ref_node == "skill:ranged"
+    assert atom.threshold == 50
+
+
+def test_conditional_item_reward_with_item_condition_emits_item_atom():
+    """A reward with condition.type=item should produce an ITEM-typed atom."""
+    from osrs_planner.engine.kg.model import AtomType, ConditionAtom, Op
+    rec = {
+        "quest": "Demon Slayer",
+        "quest_points": 3,
+        "rewards": [
+            {
+                "reward_type": "items",
+                "item": "Silverlight",
+                "item_id": 2402,
+                "qty": 1,
+                "tradeable": False,
+                "condition": {"type": "item", "item_id": 2402, "qty": 1},
+            }
+        ],
+        "effects": [],
+    }
+    _, edges, groups = build_quest_rewards([rec])
+    grants = [e for e in edges if e.type is EdgeType.GRANTS]
+    assert len(grants) == 1
+    edge = grants[0]
+    assert edge.cond_group is not None
+    assert edge.cond_group in groups
+    grp = groups[edge.cond_group]
+    assert grp.op is Op.AND
+    atom = grp.children[0]
+    assert isinstance(atom, ConditionAtom)
+    assert atom.atom_type is AtomType.ITEM
+    assert atom.ref_node == "item:2402"
+    assert atom.qty == 1
+
+
+def test_unconditional_item_has_no_cond_group():
+    """Rewards without a condition field must have cond_group=None and no groups entry."""
+    rec = {"quest": "Recipe for Disaster", "rewards": [
+        {"reward_type": "items", "item": "Barrows gloves", "item_id": 7462,
+         "qty": 1, "tradeable": False}]}
+    _, edges, groups = build_quest_rewards([rec])
+    g = _edges_by_type(edges, EdgeType.GRANTS)[0]
+    assert g.cond_group is None
+    assert groups == {}

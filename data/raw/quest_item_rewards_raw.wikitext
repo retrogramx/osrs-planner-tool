@@ -1,0 +1,418 @@
+{{Incomplete}}
+
+{{Otheruses|item rewards|experience rewards|Quest experience rewards}}
+
+This page is a list of the possible item rewards obtained upon completing [[quests]].
+
+===Weapons===
+{| class="wikitable sortable"
+! colspan="2" |Weapon rewards from quests
+|-
+!Quest
+!Reward
+|-
+|[[A Tail of Two Cats]]
+|{{Plink|Mouse toy}}
+|-
+|[[A Taste of Hope]]
+|{{Plink|Ivandis flail}}
+|-
+|[[Animal Magnetism]]
+|{{Plink|Blessed axe}}
+|-
+|[[Another Slice of H.A.M.]] || {{plink|Ancient mace}}
+|-
+|[[Beneath Cursed Sands]]||{{plink|Keris partisan}}
+|-
+|[[Between a Rock...]]
+|{{Plink|Rune pickaxe}}
+|-
+|[[Contact!]] || {{plink|Keris}}
+|-
+|[[Demon Slayer]] || {{plink|Silverlight}}
+|-
+|[[Desert Treasure I]]
+|{{Plink|Ancient staff}}
+|-
+|[[Fairytale I - Growing Pains]] || {{plink|Magic secateurs}}
+|-
+|[[In Aid of the Myreque]]
+|{{Plink|Gadderhammer}} and {{Plink|Rod of ivandis}}
+|-
+|[[Lost City]] || {{plink|Dramen staff}}
+|-
+|[[Lunar Diplomacy]] || {{plink|Lunar staff}}
+|-
+|[[Mage Arena I]]
+|{{Plink|Saradomin staff}}, {{Plink|Zamorak staff}} or {{Plink|Guthix staff}}<ref>The staff you will get depends on which [[God capes|God cape]] you chose after the quest.</ref>
+|-
+|[[Merlin's Crystal]] || {{plink|Excalibur}}
+|-
+|[[Nature Spirit]]
+|{{Plink|Silver sickle (b)}}
+|-
+|[[Priest in Peril]] || {{plink|Wolfbane}}
+|-
+|[[Ratcatchers]] || {{plink|Rat pole}}
+|-
+|[[Roving Elves]] || {{plink|Crystal bow}}
+|-
+|[[Shadow of the Storm]] || {{plink|Darklight}}
+|-
+|[[Sins of the Father]]
+|{{Plink|Blisterwood flail}}
+|-
+|[[Tai Bwo Wannai Trio]] || {{plink|Rune spear(kp)}}
+|-
+|[[The Enchanted Key]]
+|{{Plink|Saradomin mjolnir}}, {{Plink|Zamorak mjolnir}} and {{Plink|Guthix mjolnir}}
+|-
+|[[The Final Dawn]]
+|{{plink|Arkan blade}}
+|-
+|[[The General's Shadow]]
+|{{Plink|Shadow sword}}
+|-
+|[[The Great Brain Robbery]]||{{plink|Barrelchest anchor}}<ref>The barrelchest anchor must be repaired by [[Smith]] before it can be used as a weapon.</ref>
+|-
+|[[The Knight's Sword]]
+|{{Plink|Blurite sword}}
+|-
+|[[Underground Pass]] || {{plink|Iban's staff}}
+|}
+<references/>
+
+===Armour===
+{| class="wikitable sortable"
+! colspan="2" |Armour rewards from quests
+|-
+!Quest
+!Reward
+|-
+|[[Animal Magnetism]] || {{plink|Ava's attractor}} ''or'' {{plink|Ava's accumulator}}<ref>Ava's attractor is the standard reward, however ava's accumulator is rewarded if the player has at least level 50 [[Ranged]].</ref>
+|-
+|[[A Kingdom Divided]]
+|{{Plink|Book of the dead}}
+|-
+|[[Beneath Cursed Sands]]||{{plink|Circlet of water}}
+|-
+|[[Between a Rock...]]
+|{{Plink|Gold helmet}}
+|-
+|[[Client of Kourend]] || {{plink|Kharedst's memoirs}}
+|-
+|[[Dragon Slayer I]] || {{plink|Anti-dragon shield}}
+|-
+|[[Elemental Workshop I]] || {{plink|Elemental shield}}
+|-
+|[[Elemental Workshop II]] || {{plink|Mind helmet}}
+|-
+|[[Family Crest]]
+|{{Plink|Steel gauntlets}}<ref>These gauntlets can be turned into [[Cooking gauntlets]], [[Goldsmith gauntlets]] or [[Chaos gauntlets]].</ref>
+|-
+|[[Fight Arena]] || {{plinkp|Khazard helmet}} {{plinkp|Khazard armour}} [[Khazard armour set]]
+|-
+|[[The Fremennik Isles]] || {{plink|Helm of neitiznot}}
+|-
+|[[Grim Tales]] || {{plink|Dwarven helmet}}
+|-
+|[[Hazeel Cult]]
+|{{Plink|Carnillean armour}} or {{Plink|Hazeel's mark}}<ref>The Cernillean armour is only available during the quest so you will need to obtain an extra one if you want to keep it for yourself.</ref>
+|-
+|[[Haunted Mine]]
+|{{Plink|Salve amulet}}
+|-
+|[[Horror from the Deep]] || {{plink|God book|pic=Unholy book|txt=God books}}
+|-
+|[[Imp Catcher]] || {{plink|Amulet of accuracy}}
+|-
+|[[Lair of Tarn Razorlor]]
+|{{Plink|Salve amulet (e)}}
+|-
+|[[Legends' Quest]]
+|{{plink|Cape of legends}}
+|-
+|[[Lunar Diplomacy]]
+|{{Plinkp|Lunar helm}}{{Plinkp|Lunar torso}}{{Plinkp|Lunar legs}}{{Plinkp|Lunar boots}}{{Plinkp|Lunar gloves}}{{Plinkp|Lunar cape}}{{Plinkp|Lunar amulet}}{{Plinkp|Lunar ring}} [[Lunar equipment]]
+|-
+|[[Mage Arena I]]
+|{{Plink|Saradomin cape}}, {{Plink|Zamorak cape}} or {{Plink|Guthix cape}}
+|-
+|[[Mage Arena II]]
+|{{Plink|Imbued saradomin cape}}, {{Plink|Imbued zamorak cape}} or {{Plink|Imbued guthix cape}}
+|-
+|[[Mountain Daughter]] || {{plink|Bearhead}}
+|-
+|[[Rag and Bone Man II]]||{{plink|Bonesack}} and {{plink|Ram skull helm}}
+|-
+|[[Recipe for Disaster]] || {{plink|Culinaromancer's gloves|pic=Barrows gloves|txt=Culinaromancer's gloves}}
+|-
+|[[Recruitment Drive]]
+|{{Plink|Initiate sallet}}
+|-
+|[[Roving Elves]] || {{plink|Crystal shield}}
+|-
+|[[Shilo Village]] || {{plink|Beads of the dead}}
+|-
+|[[The Slug Menace]]
+|{{Plinkp|Proselyte sallet}}{{Plinkp|Proselyte hauberk}}{{Plinkp|Proselyte cuisse}}{{Plinkp|Proselyte tasset}} [[Proselyte armour]]
+|-
+|[[Tree Gnome Village]] || {{plink|Gnome amulet}}
+|-
+|[[Underground Pass]]
+|{{Plink|Klank's gauntlets}}
+|-
+|[[What Lies Below]] || {{plink|Beacon ring}}
+|}
+<references/>
+
+===Miscellaneous items===
+{| class="wikitable sortable"
+! colspan="2" |Miscellaneous rewards from quests
+|-
+!Quest
+!Reward
+|-
+|[[A Porcine of Interest]]
+|{{Plink|Reinforced goggles}}
+|-
+|[[A Tail of Two Cats]] || {{plink|Catspeak amulet (e)|pic=Catspeak amulet}}
+|-
+|[[A Taste of Hope]]
+|{{Plink|Drakan's medallion}}
+|-
+|[[Bear Your Soul]]
+|{{Plink|Soul bearer}}
+|-
+|[[Creature of Fenkenstrain]]||{{plink|Ring of charos}}
+|-
+|[[Death on the Isle]]
+|{{plink|Costume needle}}
+|-
+|[[Desert Treasure I]]||{{plink|Ring of visibility}}
+|-
+|[[Desert Treasure II]]||{{plink|Ring of shadows}}
+|-
+|[[Dragon Slayer I]]
+|{{plink|Maze key}}
+|-
+|[[Dragon Slayer II]]||{{plink|Locator orb}}
+|-
+|[[Enakhra's Lament]]||{{plink|Camulet}}
+|-
+|[[Enter the Abyss]]
+|{{Plink|Small pouch}}
+|-
+|[[Garden of Tranquillity]]
+|{{Plink|Ring of charos(a)}}
+|-
+|[[Ghosts Ahoy]]||{{plink|Ectophial}} and {{Plink|Bedsheet}}
+|-
+|[[Icthlarin's Little Helper]]||{{plink|Catspeak amulet}}
+|-
+|[[Lunar Diplomacy]]
+|{{Plink|Seal of passage}}
+|-
+|[[Making History]]||{{plink|Enchanted key}}
+|-
+|[[Monkey Madness I]]
+|{{Plink|M'speak amulet}} and {{Plink|10th squad sigil}}
+|-
+|[[Monkey Madness II]]||{{plink|Royal seed pod}}
+|-
+|[[Mourning's End Part I]]
+|{{Plink|Fixed device}}
+|-
+|[[Mourning's End Part II]]
+|{{Plink|Crystal trinket}}
+|-
+|[[One Small Favour]]||{{plink|Steel key ring}}
+|-
+|[[Rum Deal]] || {{plink|Holy wrench}}
+|-
+|[[Scrambled!]]
+|[[File:Egg (Humphrey Dumphrey).png|link=Humphrey Dumphrey]] [[Humphrey Dumphrey]] and {{plink|Alan's bones}}
+|-
+|[[Shadow of the Storm]]
+|{{Plink|Demonic sigil}}
+|-
+|[[Shilo Village]] || {{plink|Bone key (Shilo Village)|txt=Bone key}}
+|-
+|[[Tale of the Righteous]] || {{plink|History and hearsay}}
+|-
+|[[Temple of Ikov]]
+|{{Plink|Shiny key}}, {{Plink|Pendant of lucien}} and {{Plink|Armadyl pendant}}<ref>If you sided with [[Lucien]] during the quest, you must kill [[Guardians of Armadyl]] to obtain the Armadyl Pendant.</ref>
+|-
+|[[The Ascent of Arceuus]] || {{plink|A dark disposition}}
+|-
+|[[The Depths of Despair]]||{{plink|Lunch by the lancalliums}}
+|-
+|[[The Eyes of Glouphrie|The Eyes of Glouphire]]
+|{{Plink|Crystal saw seed}}
+|-
+|[[The Forsaken Tower]]||{{plink|Jewellery of jubilation}}
+|-
+|[[The Great Brain Robbery]]
+|{{Plink|Prayer book}}
+|-
+|[[The Queen of Thieves]] || {{plink|The fisher's flute}}
+|-
+|[[The Restless Ghost]] || {{plink|Ghostspeak amulet}}
+|-
+|[[The Tourist Trap]] || {{plink|Wrought iron key}} and {{Plink|Metal key}}
+|-
+|[[Troll Romance]]
+|{{Plink|Sled}}
+|-
+|[[Waterfall Quest]] || {{plink|Glarial's amulet}}
+|}{{ctg|Quests|List}}
+<references />
+
+===Cosmetics===
+{| class="wikitable sortable"
+! colspan="2" |Cosmetic rewards from quests
+|-
+!Quest
+!Reward
+|-
+|[[A Tail of Two Cats]]
+|{{Plink|Doctor's hat}} or {{Plink|Nurse hat}}
+|-
+|[[Biohazard]]
+|{{Plinkp|Medical gown}} [[Medical gown]]
+|-
+|[[Curse of the Empty Lord]]
+|{{Plinkp|Ghostly hood}}{{Plinkp|Ghostly robe (top)}}{{Plinkp|Ghostly robe (bottom)}}{{Plinkp|Ghostly boots}}{{Plinkp|Ghostly gloves}}{{Plinkp|Ghostly cloak}}[[Ghostly robes]]
+|-
+|[[Death on the Isle]]
+|{{Plink|Butler's tray}} and {{Plinkp|Snake mask}}{{Plinkp|Ram mask}}{{Plinkp|Wolf mask (Death on the Isle)}}{{Plinkp|Bird mask}}{{Plinkp|Jaguar mask}} [[Head Butler|Animal masks]]
+|-
+|[[Eagles' Peak]]
+|{{Plink|Fake beak}} and {{Plink|Eagle cape}}
+|-
+|[[Enakhra's Lament]]
+|{{Plink|Camel mask}}
+|-
+|[[Enlightened Journey]] || {{plinkp|Bomber cap}} {{plinkp|Bomber jacket}} [[Bomber jacket costume]]
+|-
+|[[Monkey Madness II]] || {{plink|Monkey (Monkey Madness II)|txt=Monkey}}
+|-
+|[[Mourning's End Part I]] || {{plinkp|Gas mask}} {{plinkp|Mourner top}} {{plinkp|Mourner trousers}} {{plinkp|Mourner boots}} {{plinkp|Mourner gloves}} {{plinkp|Mourner cloak}} [[Mourner gear]]
+|-
+|[[Murder Mystery]]
+|{{plinkp|Silver necklace}} [[Silver necklace]]<ref>Only if you drop it and pick it up after completing the quest.</ref>
+|-
+|[[Plague City]] || {{plinkp|Gas mask}} [[Gas mask]]
+|-
+|[[Sheep Herder]] || {{plinkp|Plague jacket}} {{plinkp|Plague trousers}} {{plinkp|Cattleprod}} [[Plague suit]]
+|-
+|[[Spirits of the Elid]] || {{plinkp|Robe of elidinis (top)}} {{plinkp|Robe of elidinis (bottom)}} [[Robe of elidinis (top)]] and [[Robe of elidinis (bottom)]]
+|-
+|[[The Fremennik Isles]] || {{plinkp|Silly jester hat}} {{plinkp|Silly jester top}} {{plinkp|Silly jester tights}} {{plinkp|Silly jester boots}} [[Silly jester costume]]
+|-
+|[[The Heart of Darkness]]
+|{{plinkp|Emissary hood}} {{plinkp|Emissary robe top}} {{plinkp|Emissary robe bottom}} {{plinkp|Emissary sandals}} [[Twilight Emissary Robes]]
+|-
+|[[The Tourist Trap]]||{{plinkp|Slave shirt}} {{plinkp|Slave robe}} {{plinkp|Slave boots}} [[Slave robes]]
+|-
+|[[Tower of Life]] || {{plinkp|Hard hat}} {{plinkp|Builder's shirt}} {{plinkp|Builder's trousers}} {{plinkp|Builder's boots}} [[Builder's costume]]
+|}
+
+<references />
+===Gold Coins===
+{| class="wikitable sortable"
+! colspan="2" |Gold rewards from quests
+|-
+!Quest
+!Reward
+|-
+|[[A Soul's Bane]] || 500 coins
+|-
+|[[Black Knights' Fortress]] || 2500 coins
+|-
+|[[Clock Tower]] || 500 coins
+|-
+|[[Doric's Quest]] || 180 coins
+|-
+|[[Ernest the Chicken]] || 300 coins
+|-
+|[[Ethically Acquired Antiquities]] || 5000 coins
+|-
+|[[Getting Ahead]] || 3000 coins
+|-
+|[[Hazeel Cult]] || 2000 coins
+|-
+|[[Making History]] || 750 coins
+|-
+|[[Olaf's Quest]] || 20000 coins
+|-
+|[[Prince Ali Rescue]] || 700 coins
+|-
+|[[Pirate's Treasure]] || 450 coins
+|-
+|[[Regicide]] || 15000 coins
+|-
+|[[Sheep Herder]] || 3100 coins
+|-
+|[[Sheep Shearer]] || 60 coins
+|-
+|[[Shield of Arrav]] || 600 coins
+|-
+|[[Swan Song]] || 25000 coins
+|-
+|[[The Ascent of Arceuus]] || 2000 coins
+|-
+|[[The Forsaken Tower]] || 6000 coins
+|-
+|[[Tale of the Righteous]] || 8000 coins
+|-
+|[[The Queen of Thieves]] || 2000 coins
+|-
+|[[X Marks the Spot]] || 200 coins
+|-
+|[[A Porcine of Interest|Porcine of Interest]]
+|5000 coins
+|}
+
+=== Tradeable Items (Obtainable without the Quest) ===
+{| class="wikitable sortable"
+! colspan="2" |Tradeable rewards from quests (Obtainable without listed Quest)
+|-
+!Quest
+!Reward
+|-
+|[[Eadgar's Ruse]] ||
+* 1 Burnt Meat
+|-
+|[[Garden of Tranquility]] ||
+* An [[apple tree seed]]
+* An [[acorn]]
+* 5 [[Guam seed|guam seeds]]
+* 4-dose [[compost potion]]
+|-
+| [[Misthalin Mystery]] ||
+* 1 Uncut ruby
+* 1 Uncut emerald
+* 1 Uncut sapphire
+|-
+| [[Olaf's Quest]]||
+* 4 cut [[Ruby|rubies]]
+|-
+| [[Pandemonium]] ||
+* 2 repair kits
+|-
+|[[Pirate's Treasure]] ||
+* a [[gold ring]]
+* an [[emerald]]
+|-
+|[[Rune Mysteries]]||
+* 1 Air Talisman. 
+* Note: Multiple air talismans can be obtained by using the drop trick at Duke Horacio. This may be useful for early runecraft training methods. For details, see this guide.
+|-
+|[[Shadow of the Storm]]||
+* 2 [[Sapphire|sapphires]], 2 [[rubies]] and 2 [[Emerald|emeralds]], if you use a hammer and chisel on the demon's throne and had not yet removed them during [[The Golem]].
+|-
+|[[The Dig Site|The Digsite]] ||
+* 2 [[Gold bar|gold bars]]
+* Show the museum [[Curator Haig Halen|curator]] the [[Level 3 certificate]] to choose between something to drink ([[Fruit blast]]) or something to eat ([[chocolate cake]]). Get the cake for [[Desert Treasure I]] / [[A Tail of Two Cats]] or the [[fruit blast]] for [[Recipe for Disaster]].
+|}

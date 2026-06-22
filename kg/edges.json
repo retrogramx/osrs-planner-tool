@@ -5,9 +5,31 @@
       "weight": 1
     },
     "dst": "goal:quest-point-cape",
+    "id": 6013367,
+    "src": "quest:imp-catcher",
+    "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:quest-point-cape",
     "id": 6013822,
     "src": "quest:waterfall-quest",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "kind": "emote",
+      "name": "Flex",
+      "reward": "cosmetic"
+    },
+    "dst": null,
+    "id": 6014659,
+    "src": "quest:below-ice-mountain",
+    "type": "grants"
   },
   {
     "cond_group": 4398639,
@@ -34,12 +56,49 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "amount": 250,
+      "form": "fixed",
+      "reward": "xp"
+    },
+    "dst": "skill:herblore",
+    "id": 6048584,
+    "src": "quest:druidic-ritual",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:quest-point-cape",
+    "id": 6050418,
+    "src": "quest:below-ice-mountain",
+    "type": "progress_towards"
+  },
+  {
     "cond_group": 4023955,
     "data": {},
     "dst": null,
     "id": 6058808,
     "src": "quest:a-taste-of-hope",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "access": "Dragon Slayer task",
+      "category": "slayer",
+      "name": "Dragon Slayer task assignment",
+      "note": "Dragons can be assigned as a Slayer task immediately after starting the quest",
+      "reward": "unlock",
+      "stage": "started"
+    },
+    "dst": "access:dragon-slayer-task",
+    "id": 6066351,
+    "src": "quest:dragon-slayer-i",
+    "type": "grants"
   },
   {
     "cond_group": 4944332,
@@ -110,6 +169,18 @@
     "type": "grants"
   },
   {
+    "cond_group": null,
+    "data": {
+      "amount": 2500,
+      "form": "fixed",
+      "reward": "xp"
+    },
+    "dst": "skill:woodcutting",
+    "id": 6155533,
+    "src": "quest:animal-magnetism",
+    "type": "grants"
+  },
+  {
     "cond_group": 5314079,
     "data": {},
     "dst": null,
@@ -124,6 +195,18 @@
     "id": 6164524,
     "src": "quest:the-dig-site",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 30000,
+      "form": "fixed",
+      "reward": "xp"
+    },
+    "dst": "skill:runecraft",
+    "id": 6167886,
+    "src": "quest:the-fremennik-exiles",
+    "type": "grants"
   },
   {
     "cond_group": 4436538,
@@ -192,6 +275,21 @@
     "id": 6241444,
     "src": "quest:throne-of-miscellania",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 300,
+      "count": 1,
+      "eligible_skills": "Any",
+      "form": "choice_lamp",
+      "min_level": null,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 6244096,
+    "src": "quest:x-marks-the-spot",
+    "type": "grants"
   },
   {
     "cond_group": 4208441,
@@ -414,6 +512,18 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "amount": 1000,
+      "form": "fixed",
+      "reward": "xp"
+    },
+    "dst": "skill:slayer",
+    "id": 6440981,
+    "src": "quest:animal-magnetism",
+    "type": "grants"
+  },
+  {
     "cond_group": 4020131,
     "data": {},
     "dst": null,
@@ -436,6 +546,18 @@
     "id": 6466411,
     "src": "quest:monkey-madness-ii",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": false
+    },
+    "dst": "item:2402",
+    "id": 6466737,
+    "src": "quest:demon-slayer",
+    "type": "grants"
   },
   {
     "cond_group": 5342894,
@@ -540,6 +662,20 @@
     "id": 6507542,
     "src": "quest:elemental-workshop-ii",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "access": "Shadow of the Storm prerequisite",
+      "category": "slayer",
+      "name": "Shadow of the Storm quest access",
+      "reward": "unlock",
+      "stage": "completed"
+    },
+    "dst": "access:shadow-of-the-storm-prerequisite",
+    "id": 6517539,
+    "src": "quest:demon-slayer",
+    "type": "grants"
   },
   {
     "cond_group": 4789360,
@@ -688,12 +824,59 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "amount": 4650,
+      "count": 2,
+      "eligible_skills": [
+        "Agility",
+        "Fletching",
+        "Smithing",
+        "Thieving"
+      ],
+      "form": "choice_lamp",
+      "min_level": null,
+      "note": "Player may choose the same skill twice",
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 6687554,
+    "src": "quest:the-tourist-trap",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 50000,
+      "form": "fixed",
+      "reward": "xp"
+    },
+    "dst": "skill:crafting",
+    "id": 6689280,
+    "src": "quest:the-fremennik-exiles",
+    "type": "grants"
+  },
+  {
     "cond_group": 4153643,
     "data": {},
     "dst": null,
     "id": 6695152,
     "src": "quest:the-generals-shadow",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "access": "Ava's device upgrades",
+      "category": "skilling-method",
+      "name": "Trade with Ava for Ava's devices",
+      "reward": "unlock",
+      "stage": "completed"
+    },
+    "dst": "access:avas-device-upgrades",
+    "id": 6707885,
+    "src": "quest:animal-magnetism",
+    "type": "grants"
   },
   {
     "cond_group": 5504143,
@@ -762,12 +945,17 @@
   {
     "cond_group": null,
     "data": {
-      "weight": 2
+      "amount": 2500,
+      "count": 1,
+      "eligible_skills": "Any",
+      "form": "choice_lamp",
+      "min_level": 30,
+      "reward": "xp"
     },
-    "dst": "goal:quest-point-cape",
+    "dst": null,
     "id": 6794971,
     "src": "quest:fairytale-ii-cure-a-queen",
-    "type": "progress_towards"
+    "type": "grants"
   },
   {
     "cond_group": 5104617,
@@ -1002,6 +1190,28 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "weight": 2
+    },
+    "dst": "goal:quest-point-cape",
+    "id": 7023194,
+    "src": "quest:the-fremennik-exiles",
+    "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:1478",
+    "id": 7024272,
+    "src": "quest:imp-catcher",
+    "type": "grants"
+  },
+  {
     "cond_group": 5703340,
     "data": {},
     "dst": null,
@@ -1010,12 +1220,60 @@
     "type": "requires"
   },
   {
+    "cond_group": 4513166,
+    "data": {
+      "note": "Awarded instead of Ava's attractor when Ranged level is 50 or higher",
+      "qty": 1,
+      "reward": "items",
+      "tradeable": false
+    },
+    "dst": "item:10499",
+    "id": 7031440,
+    "src": "quest:animal-magnetism",
+    "type": "grants"
+  },
+  {
     "cond_group": 4502612,
     "data": {},
     "dst": null,
     "id": 7038868,
     "src": "quest:shadow-of-the-storm",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 2
+    },
+    "dst": "goal:quest-point-cape",
+    "id": 7047077,
+    "src": "quest:the-tourist-trap",
+    "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:quest-point-cape",
+    "id": 7050597,
+    "src": "quest:rune-mysteries",
+    "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "while-equipped-in-cape-slot",
+      "effect_kind": "behavior_toggle",
+      "rides_on_external": false,
+      "rides_on_item": "Ava's accumulator",
+      "target": "Ranged ammunition recovery",
+      "tier_source": "Animal Magnetism"
+    },
+    "dst": null,
+    "id": 7060038,
+    "src": "item:10499",
+    "type": "effect"
   },
   {
     "cond_group": 4500601,
@@ -1032,6 +1290,19 @@
     "id": 7073695,
     "src": "quest:gertrudes-cat",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "note": "Awarded when Ranged level is below 50 at quest completion",
+      "qty": 1,
+      "reward": "items",
+      "tradeable": false
+    },
+    "dst": "item:10498",
+    "id": 7089013,
+    "src": "quest:animal-magnetism",
+    "type": "grants"
   },
   {
     "cond_group": 5171862,
@@ -1056,6 +1327,18 @@
     "id": 7095843,
     "src": "quest:bone-voyage",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 1000,
+      "form": "fixed",
+      "reward": "xp"
+    },
+    "dst": "skill:crafting",
+    "id": 7108858,
+    "src": "quest:animal-magnetism",
+    "type": "grants"
   },
   {
     "cond_group": 4022152,
@@ -1090,6 +1373,18 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "amount": 18650,
+      "form": "fixed",
+      "reward": "xp"
+    },
+    "dst": "skill:strength",
+    "id": 7128277,
+    "src": "quest:dragon-slayer-i",
+    "type": "grants"
+  },
+  {
     "cond_group": 4238316,
     "data": {},
     "dst": null,
@@ -1122,12 +1417,35 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "weight": 2
+    },
+    "dst": "goal:quest-point-cape",
+    "id": 7159473,
+    "src": "quest:fairytale-ii-cure-a-queen",
+    "type": "progress_towards"
+  },
+  {
     "cond_group": 5850990,
     "data": {},
     "dst": null,
     "id": 7161175,
     "src": "quest:ernest-the-chicken",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "kind": "title",
+      "name": "Dräpare",
+      "note": "Fremennik honorific suffix title added to the player's Fremennik name",
+      "reward": "cosmetic"
+    },
+    "dst": null,
+    "id": 7200063,
+    "src": "quest:the-fremennik-exiles",
+    "type": "grants"
   },
   {
     "cond_group": 4949060,
@@ -1162,6 +1480,28 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "amount": 18650,
+      "form": "fixed",
+      "reward": "xp"
+    },
+    "dst": "skill:defence",
+    "id": 7243780,
+    "src": "quest:dragon-slayer-i",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:quest-point-cape",
+    "id": 7251860,
+    "src": "quest:x-marks-the-spot",
+    "type": "progress_towards"
+  },
+  {
     "cond_group": 4441476,
     "data": {},
     "dst": null,
@@ -1176,6 +1516,20 @@
     "id": 7257422,
     "src": "quest:grim-tales",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "access": "Rune platebody equip",
+      "category": "equipment",
+      "name": "Equip rune platebody and dragon platebody",
+      "reward": "unlock",
+      "stage": "completed"
+    },
+    "dst": "access:rune-platebody-equip",
+    "id": 7271817,
+    "src": "quest:dragon-slayer-i",
+    "type": "grants"
   },
   {
     "cond_group": 5303493,
@@ -1202,12 +1556,34 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "weight": 3
+    },
+    "dst": "goal:quest-point-cape",
+    "id": 7287719,
+    "src": "quest:demon-slayer",
+    "type": "progress_towards"
+  },
+  {
     "cond_group": 4689210,
     "data": {},
     "dst": null,
     "id": 7290102,
     "src": "quest:demon-slayer",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 50000,
+      "form": "fixed",
+      "reward": "xp"
+    },
+    "dst": "skill:slayer",
+    "id": 7296783,
+    "src": "quest:the-fremennik-exiles",
+    "type": "grants"
   },
   {
     "cond_group": 5239662,
@@ -1232,6 +1608,16 @@
     "id": 7345822,
     "src": "goal:quest-point-cape",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 4
+    },
+    "dst": "goal:quest-point-cape",
+    "id": 7353539,
+    "src": "quest:druidic-ritual",
+    "type": "progress_towards"
   },
   {
     "cond_group": 4852444,
@@ -1317,6 +1703,18 @@
     "type": "effect"
   },
   {
+    "cond_group": null,
+    "data": {
+      "amount": 875,
+      "form": "fixed",
+      "reward": "xp"
+    },
+    "dst": "skill:magic",
+    "id": 7456816,
+    "src": "quest:imp-catcher",
+    "type": "grants"
+  },
+  {
     "cond_group": 5371171,
     "data": {},
     "dst": null,
@@ -1387,6 +1785,16 @@
     "id": 7527379,
     "src": "quest:the-eyes-of-glouphrie",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:quest-point-cape",
+    "id": 7530182,
+    "src": "quest:animal-magnetism",
+    "type": "progress_towards"
   },
   {
     "cond_group": 5735979,
@@ -1525,6 +1933,20 @@
     "id": 7663891,
     "src": "quest:rune-mysteries",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "access": "Ruins of Camdozaal",
+      "category": "area",
+      "name": "Ruins of Camdozaal",
+      "reward": "unlock",
+      "stage": "completed"
+    },
+    "dst": "access:ruins-of-camdozaal",
+    "id": 7673295,
+    "src": "quest:below-ice-mountain",
+    "type": "grants"
   },
   {
     "cond_group": 5672118,
@@ -1711,6 +2133,46 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "access": "Herblore skill",
+      "category": "skill",
+      "name": "Herblore skill access",
+      "reward": "unlock",
+      "stage": "completed"
+    },
+    "dst": "access:herblore-skill",
+    "id": 7887650,
+    "src": "quest:druidic-ritual",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 1000,
+      "form": "fixed",
+      "reward": "xp"
+    },
+    "dst": "skill:fletching",
+    "id": 7895276,
+    "src": "quest:animal-magnetism",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "access": "Rune essence mine",
+      "category": "skilling-method",
+      "name": "Mine rune essence",
+      "reward": "unlock",
+      "stage": "completed"
+    },
+    "dst": "access:rune-essence-mine",
+    "id": 7907142,
+    "src": "quest:rune-mysteries",
+    "type": "grants"
+  },
+  {
     "cond_group": 4214186,
     "data": {},
     "dst": null,
@@ -1808,6 +2270,16 @@
     "id": 7989518,
     "src": "goal:quest-point-cape",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 2
+    },
+    "dst": "goal:quest-point-cape",
+    "id": 7992633,
+    "src": "quest:dragon-slayer-i",
+    "type": "progress_towards"
   },
   {
     "cond_group": 4246175,

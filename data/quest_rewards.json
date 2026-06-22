@@ -4,18 +4,24 @@
     "source_urls": [
       "https://oldschool.runescape.wiki/w/Quest_experience_rewards",
       "https://oldschool.runescape.wiki/w/Quest_item_rewards",
-      "https://oldschool.runescape.wiki/w/Unlockable_content"
+      "https://oldschool.runescape.wiki/w/Unlockable_content",
+      "https://oldschool.runescape.wiki/w/Module:SkillChoice"
     ],
     "accessed": "2026-06-22",
     "license": "CC BY-NC-SA 3.0",
     "extraction_method": "manual-transcription-from-wiki",
-    "record_count": 4,
+    "record_count": 14,
     "completeness": {
       "bounded_by": "owner-verified seed (machinery proof); full corpus is a follow-on plan",
       "universe_count": null,
-      "records_count": 4,
-      "known_missing": ["full quest corpus (deferred to follow-on sourcing plan)"],
-      "known_missing_note": "Seed proves the taxonomy + builder + validator end-to-end."
+      "records_count": 14,
+      "known_missing": [
+        "full quest corpus (deferred to follow-on sourcing plan)",
+        "Ava's attractor alternative reward when Ranged < 50 (condition type 'less_than' not in atom vocabulary; attractor is modelled as unconditional fallback item reward)",
+        "choice_lamp eligible_skills=Any quests beyond X Marks the Spot (many quests; taxonomy fully exercised by existing record)",
+        "special/scaling xp (e.g. While Guthix Sleeps Slayer=15x level; Observatory Quest constellation-random; Biohazard attack-dummy 300 XP capped; form=special deferred — formula not cleanly transcribable as a flat amount)"
+      ],
+      "known_missing_note": "Seed proves the taxonomy + builder + validator end-to-end. special/scaling xp deferred: the form=special data shape is supported by the builder but no quest in this seed uses it (formula not a flat integer)."
     }
   },
   "records": [
@@ -27,7 +33,8 @@
         {"reward_type": "xp", "form": "fixed", "skill": "Strength", "amount": 13750}
       ],
       "effects": [],
-      "source_urls": ["https://oldschool.runescape.wiki/w/Waterfall_Quest"]
+      "source_urls": ["https://oldschool.runescape.wiki/w/Waterfall_Quest"],
+      "_shapes": ["fixed_xp", "quest_points"]
     },
     {
       "quest": "Recipe for Disaster",
@@ -36,7 +43,8 @@
         {"reward_type": "items", "item": "Barrows gloves", "item_id": 7462, "qty": 1, "tradeable": false}
       ],
       "effects": [],
-      "source_urls": ["https://oldschool.runescape.wiki/w/Recipe_for_Disaster"]
+      "source_urls": ["https://oldschool.runescape.wiki/w/Recipe_for_Disaster"],
+      "_shapes": ["untradeable_item", "quest_points"]
     },
     {
       "quest": "Fairytale I - Growing Pains",
@@ -55,17 +63,210 @@
           "tier_source": "Fairytale I - Growing Pains"
         }
       ],
-      "source_urls": ["https://oldschool.runescape.wiki/w/Fairytale_I_-_Growing_Pains"]
+      "source_urls": ["https://oldschool.runescape.wiki/w/Fairytale_I_-_Growing_Pains"],
+      "_shapes": ["untradeable_item", "numeric_effect", "quest_points"]
     },
     {
       "quest": "Fairytale II - Cure a Queen",
       "quest_points": 2,
       "rewards": [
-        {"reward_type": "unlock", "category": "transportation", "name": "Fairy ring network", "stage": "in_progress", "access": "Fairy rings"}
+        {"reward_type": "unlock", "category": "transportation", "name": "Fairy ring network", "stage": "in_progress", "access": "Fairy rings"},
+        {"reward_type": "xp", "form": "choice_lamp", "amount": 2500, "count": 1, "eligible_skills": "Any", "min_level": 30}
       ],
       "effects": [],
-      "source_urls": ["https://oldschool.runescape.wiki/w/Fairytale_II_-_Cure_a_Queen"]
+      "source_urls": [
+        "https://oldschool.runescape.wiki/w/Fairytale_II_-_Cure_a_Queen",
+        "https://oldschool.runescape.wiki/w/Module:SkillChoice"
+      ],
+      "_shapes": ["unlock_in_progress", "choice_lamp_xp", "quest_points"]
+    },
+    {
+      "quest": "X Marks the Spot",
+      "quest_points": 1,
+      "rewards": [
+        {"reward_type": "xp", "form": "choice_lamp", "amount": 300, "count": 1, "eligible_skills": "Any", "min_level": null}
+      ],
+      "effects": [],
+      "source_urls": [
+        "https://oldschool.runescape.wiki/w/X_Marks_the_Spot",
+        "https://oldschool.runescape.wiki/w/Module:SkillChoice"
+      ],
+      "_shapes": ["choice_lamp_xp_no_level_req", "quest_points"]
+    },
+    {
+      "quest": "The Tourist Trap",
+      "quest_points": 2,
+      "rewards": [
+        {
+          "reward_type": "xp",
+          "form": "choice_lamp",
+          "amount": 4650,
+          "count": 2,
+          "eligible_skills": ["Agility", "Fletching", "Smithing", "Thieving"],
+          "min_level": null,
+          "note": "Player may choose the same skill twice"
+        }
+      ],
+      "effects": [],
+      "source_urls": [
+        "https://oldschool.runescape.wiki/w/The_Tourist_Trap",
+        "https://oldschool.runescape.wiki/w/Module:SkillChoice"
+      ],
+      "_shapes": ["choice_lamp_xp_skill_restricted", "quest_points"]
+    },
+    {
+      "quest": "Druidic Ritual",
+      "quest_points": 4,
+      "rewards": [
+        {"reward_type": "xp", "form": "fixed", "skill": "Herblore", "amount": 250},
+        {"reward_type": "unlock", "category": "skill", "name": "Herblore skill access", "stage": "completed", "access": "Herblore skill"}
+      ],
+      "effects": [],
+      "source_urls": ["https://oldschool.runescape.wiki/w/Druidic_Ritual"],
+      "_shapes": ["skill_unlock", "fixed_xp", "quest_points"]
+    },
+    {
+      "quest": "Rune Mysteries",
+      "quest_points": 1,
+      "rewards": [
+        {"reward_type": "unlock", "category": "skilling-method", "name": "Mine rune essence", "stage": "completed", "access": "Rune essence mine"}
+      ],
+      "effects": [],
+      "source_urls": ["https://oldschool.runescape.wiki/w/Rune_Mysteries"],
+      "_shapes": ["skilling_method_unlock", "quest_points"]
+    },
+    {
+      "quest": "Imp Catcher",
+      "quest_points": 1,
+      "rewards": [
+        {"reward_type": "xp", "form": "fixed", "skill": "Magic", "amount": 875},
+        {"reward_type": "items", "item": "Amulet of accuracy", "item_id": 1478, "qty": 1, "tradeable": true}
+      ],
+      "effects": [],
+      "source_urls": ["https://oldschool.runescape.wiki/w/Imp_Catcher"],
+      "_shapes": ["tradeable_item", "fixed_xp", "quest_points"]
+    },
+    {
+      "quest": "Animal Magnetism",
+      "quest_points": 1,
+      "rewards": [
+        {"reward_type": "xp", "form": "fixed", "skill": "Crafting", "amount": 1000},
+        {"reward_type": "xp", "form": "fixed", "skill": "Fletching", "amount": 1000},
+        {"reward_type": "xp", "form": "fixed", "skill": "Slayer", "amount": 1000},
+        {"reward_type": "xp", "form": "fixed", "skill": "Woodcutting", "amount": 2500},
+        {
+          "reward_type": "items",
+          "item": "Ava's attractor",
+          "item_id": 10498,
+          "qty": 1,
+          "tradeable": false,
+          "note": "Awarded when Ranged level is below 50 at quest completion"
+        },
+        {
+          "reward_type": "items",
+          "item": "Ava's accumulator",
+          "item_id": 10499,
+          "qty": 1,
+          "tradeable": false,
+          "condition": {"type": "skill_level", "skill": "Ranged", "level": 50},
+          "note": "Awarded instead of Ava's attractor when Ranged level is 50 or higher"
+        },
+        {"reward_type": "unlock", "category": "skilling-method", "name": "Trade with Ava for Ava's devices", "stage": "completed", "access": "Ava's device upgrades"}
+      ],
+      "effects": [
+        {
+          "rides_on_item": "Ava's accumulator",
+          "rides_on_item_id": 10499,
+          "effect_kind": "behavior_toggle",
+          "target": "Ranged ammunition recovery",
+          "condition": "while-equipped-in-cape-slot",
+          "tier_source": "Animal Magnetism",
+          "rides_on_external": false
+        }
+      ],
+      "source_urls": [
+        "https://oldschool.runescape.wiki/w/Animal_Magnetism",
+        "https://oldschool.runescape.wiki/w/Unlockable_content"
+      ],
+      "_shapes": ["conditional_item", "fixed_xp", "behavior_toggle_effect", "quest_points"]
+    },
+    {
+      "quest": "Demon Slayer",
+      "quest_points": 3,
+      "rewards": [
+        {"reward_type": "items", "item": "Silverlight", "item_id": 2402, "qty": 1, "tradeable": false},
+        {
+          "reward_type": "unlock",
+          "category": "slayer",
+          "name": "Shadow of the Storm quest access",
+          "stage": "completed",
+          "access": "Shadow of the Storm prerequisite"
+        }
+      ],
+      "effects": [],
+      "source_urls": ["https://oldschool.runescape.wiki/w/Demon_Slayer"],
+      "_shapes": ["untradeable_item", "quest_points"]
+    },
+    {
+      "quest": "Dragon Slayer I",
+      "quest_points": 2,
+      "rewards": [
+        {"reward_type": "xp", "form": "fixed", "skill": "Strength", "amount": 18650},
+        {"reward_type": "xp", "form": "fixed", "skill": "Defence", "amount": 18650},
+        {
+          "reward_type": "unlock",
+          "category": "slayer",
+          "name": "Dragon Slayer task assignment",
+          "stage": "started",
+          "access": "Dragon Slayer task",
+          "note": "Dragons can be assigned as a Slayer task immediately after starting the quest"
+        },
+        {
+          "reward_type": "unlock",
+          "category": "equipment",
+          "name": "Equip rune platebody and dragon platebody",
+          "stage": "completed",
+          "access": "Rune platebody equip"
+        }
+      ],
+      "effects": [],
+      "source_urls": ["https://oldschool.runescape.wiki/w/Dragon_Slayer_I"],
+      "_shapes": ["unlock_started_stage", "unlock_completed", "fixed_xp", "quest_points"]
+    },
+    {
+      "quest": "The Fremennik Exiles",
+      "quest_points": 2,
+      "rewards": [
+        {"reward_type": "xp", "form": "fixed", "skill": "Slayer", "amount": 50000},
+        {"reward_type": "xp", "form": "fixed", "skill": "Crafting", "amount": 50000},
+        {"reward_type": "xp", "form": "fixed", "skill": "Runecraft", "amount": 30000},
+        {
+          "reward_type": "cosmetic",
+          "kind": "title",
+          "name": "Dräpare",
+          "note": "Fremennik honorific suffix title added to the player's Fremennik name"
+        }
+      ],
+      "effects": [],
+      "source_urls": ["https://oldschool.runescape.wiki/w/The_Fremennik_Exiles"],
+      "_shapes": ["cosmetic_title", "fixed_xp", "quest_points"]
+    },
+    {
+      "quest": "Below Ice Mountain",
+      "quest_points": 1,
+      "rewards": [
+        {"reward_type": "cosmetic", "kind": "emote", "name": "Flex"},
+        {"reward_type": "unlock", "category": "area", "name": "Ruins of Camdozaal", "stage": "completed", "access": "Ruins of Camdozaal"}
+      ],
+      "effects": [],
+      "source_urls": ["https://oldschool.runescape.wiki/w/Below_Ice_Mountain"],
+      "_shapes": ["cosmetic_emote", "unlock_completed", "quest_points"]
     }
   ],
-  "_excluded": []
+  "_excluded": [
+    {
+      "quest": "Cook's Assistant",
+      "reason": "Cook-o-matic 100 reduced-burning effect requires an area-gated behavior_toggle that rides on an in-game range object (not an item node) — the effect schema currently supports only item-mounted effects; deferred to follow-on. Cooking 300 XP and QP=1 noted but quest excluded from seed to keep effects well-typed."
+    }
+  ]
 }

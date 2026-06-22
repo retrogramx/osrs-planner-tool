@@ -2526,6 +2526,20 @@
     "children": [
       {
         "atom_type": "skill_level",
+        "data": {},
+        "qty": null,
+        "ref_node": "skill:ranged",
+        "threshold": 50
+      }
+    ],
+    "id": 4513166,
+    "op": "and",
+    "parent": null
+  },
+  {
+    "children": [
+      {
+        "atom_type": "skill_level",
         "data": {
           "boostable": true
         },
