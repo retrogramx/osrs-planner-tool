@@ -1,5 +1,15 @@
 [
   {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:quest-point-cape",
+    "id": 6013822,
+    "src": "quest:waterfall-quest",
+    "type": "progress_towards"
+  },
+  {
     "cond_group": 4398639,
     "data": {},
     "dst": null,
@@ -620,6 +630,16 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "weight": 2
+    },
+    "dst": "goal:quest-point-cape",
+    "id": 6615976,
+    "src": "quest:fairytale-i-growing-pains",
+    "type": "progress_towards"
+  },
+  {
     "cond_group": 5908675,
     "data": {},
     "dst": null,
@@ -738,6 +758,16 @@
     "id": 6790744,
     "src": "quest:romeo-juliet",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 2
+    },
+    "dst": "goal:quest-point-cape",
+    "id": 6794971,
+    "src": "quest:fairytale-ii-cure-a-queen",
+    "type": "progress_towards"
   },
   {
     "cond_group": 5104617,
@@ -1196,6 +1226,14 @@
     "type": "requires"
   },
   {
+    "cond_group": 4868001,
+    "data": {},
+    "dst": null,
+    "id": 7345822,
+    "src": "goal:quest-point-cape",
+    "type": "requires"
+  },
+  {
     "cond_group": 4852444,
     "data": {},
     "dst": null,
@@ -1389,6 +1427,16 @@
     "id": 7543955,
     "src": "quest:recipe-for-disaster-freeing-evil-dave",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 10
+    },
+    "dst": "goal:quest-point-cape",
+    "id": 7558319,
+    "src": "quest:recipe-for-disaster",
+    "type": "progress_towards"
   },
   {
     "cond_group": 4184444,
@@ -1747,6 +1795,19 @@
     "id": 7970155,
     "src": "quest:cooks-assistant",
     "type": "requires"
+  },
+  {
+    "cond_group": 4572335,
+    "data": {
+      "access": "Quest point cape",
+      "category": "equipment",
+      "name": "Quest point cape",
+      "reward": "unlock"
+    },
+    "dst": "access:quest-point-cape",
+    "id": 7989518,
+    "src": "goal:quest-point-cape",
+    "type": "grants"
   },
   {
     "cond_group": 4246175,

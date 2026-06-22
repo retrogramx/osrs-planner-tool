@@ -56,3 +56,13 @@ def test_unlock_with_access_targets_the_access_node():
     _, edges, _ = build_quest_rewards([rec])
     g = [e for e in edges if e.type is EdgeType.GRANTS][0]
     assert g.dst == "access:fairy-rings" and g.data["stage"] == "in_progress"
+
+
+def test_quest_points_becomes_progress_towards_the_cape():
+    from osrs_planner.engine.kg.model import EdgeType
+    rec = {"quest": "Waterfall Quest", "quest_points": 1, "rewards": []}
+    _, edges, _ = build_quest_rewards([rec])
+    pt = [e for e in edges if e.type is EdgeType.PROGRESS_TOWARDS]
+    assert len(pt) == 1
+    assert pt[0].src == "quest:waterfall-quest"
+    assert pt[0].dst == "goal:quest-point-cape" and pt[0].data == {"weight": 1}

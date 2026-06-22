@@ -21,6 +21,7 @@
   "records": [
     {
       "quest": "Waterfall Quest",
+      "quest_points": 1,
       "rewards": [
         {"reward_type": "xp", "form": "fixed", "skill": "Attack", "amount": 13750},
         {"reward_type": "xp", "form": "fixed", "skill": "Strength", "amount": 13750}
@@ -30,6 +31,7 @@
     },
     {
       "quest": "Recipe for Disaster",
+      "quest_points": 10,
       "rewards": [
         {"reward_type": "items", "item": "Barrows gloves", "item_id": 7462, "qty": 1, "tradeable": false}
       ],
@@ -38,6 +40,7 @@
     },
     {
       "quest": "Fairytale I - Growing Pains",
+      "quest_points": 2,
       "rewards": [
         {"reward_type": "items", "item": "Magic secateurs", "item_id": 7409, "qty": 1, "tradeable": false}
       ],
@@ -56,6 +59,7 @@
     },
     {
       "quest": "Fairytale II - Cure a Queen",
+      "quest_points": 2,
       "rewards": [
         {"reward_type": "unlock", "category": "transportation", "name": "Fairy ring network", "stage": "in_progress", "access": "Fairy rings"}
       ],

@@ -2595,6 +2595,20 @@
     "parent": null
   },
   {
+    "children": [
+      {
+        "atom_type": "quest_points",
+        "data": {},
+        "qty": null,
+        "ref_node": null,
+        "threshold": 335
+      }
+    ],
+    "id": 4572335,
+    "op": "and",
+    "parent": null
+  },
+  {
     "children": [],
     "id": 4589955,
     "op": "and",
@@ -4154,6 +4168,20 @@
       }
     ],
     "id": 4853457,
+    "op": "and",
+    "parent": null
+  },
+  {
+    "children": [
+      {
+        "atom_type": "quest_points",
+        "data": {},
+        "qty": null,
+        "ref_node": null,
+        "threshold": 335
+      }
+    ],
+    "id": 4868001,
     "op": "and",
     "parent": null
   },

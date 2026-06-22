@@ -10,6 +10,13 @@
   },
   {
     "data": {},
+    "id": "access:quest-point-cape",
+    "kind": "access",
+    "name": "Quest point cape",
+    "slug": "quest-point-cape"
+  },
+  {
+    "data": {},
     "id": "gear_loadout:infinity",
     "kind": "gear_loadout",
     "name": "Full Infinity",
@@ -23,6 +30,18 @@
     "kind": "gear_loadout",
     "name": "Wielding full Infinity",
     "slug": "infinity-wield"
+  },
+  {
+    "data": {
+      "counter_type": "points",
+      "thresholds": [
+        335
+      ]
+    },
+    "id": "goal:quest-point-cape",
+    "kind": "goal",
+    "name": "Quest point cape",
+    "slug": "quest-point-cape"
   },
   {
     "data": {},

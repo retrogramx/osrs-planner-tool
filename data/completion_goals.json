@@ -1,0 +1,30 @@
+{
+  "_provenance": {
+    "domain": "completion_goals",
+    "source_urls": [
+      "https://oldschool.runescape.wiki/w/Quest_point_cape",
+      "https://oldschool.runescape.wiki/w/Quests/List"
+    ],
+    "accessed": "2026-06-22",
+    "license": "CC BY-NC-SA 3.0",
+    "extraction_method": "manual-transcription-from-wiki",
+    "record_count": 1,
+    "completeness": {
+      "bounded_by": "quest-domain completion goals; member_count goals (music/diary/clog cape) arrive with their feeder domains",
+      "records_count": 1,
+      "known_missing": ["goal:music-cape", "goal:diary-cape", "goal:clog (DROPS-fed)"],
+      "known_missing_note": "The Quest cape IS the QP cape — one node. Other completion goals are deferred to their domains."
+    }
+  },
+  "records": [
+    {
+      "id": "goal:quest-point-cape",
+      "name": "Quest point cape",
+      "counter_type": "points",
+      "accumulator": "quest_points",
+      "thresholds": [335],
+      "grants": {"reward": "unlock", "category": "equipment", "name": "Quest point cape", "access": "Quest point cape"},
+      "note": "thresholds = total QP required for the cape; sourced from https://oldschool.runescape.wiki/w/Quest_point_cape (accessed 2026-06-22). OSRS is a living game — verify against the wiki after new quest releases."
+    }
+  ]
+}
