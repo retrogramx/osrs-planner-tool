@@ -132,6 +132,20 @@ The same taxonomy serves the next bricks — verified by the cross-domain stress
 
 **Out (own sub-projects / deferred):** the other four domains' *data builds* (Diaries/CAs/Clogs/Clues reuse this taxonomy under their own specs); the Skills/level-unlock layer; the Layer-2 route layer; the `supersedes` / `produces→consumes` edges; the audit of `items_equipment.json` / `unlocks_transport.json` (referenced now, verified when their domain comes up).
 
+### 10.1 Dimensional coverage (the 5 W's)
+
+A completeness lens — the model checked against the questions players actually ask. Each dimension is assigned the **layer that owns it**, not stamped onto every node:
+
+| W | Where it lives | Status |
+|---|---|---|
+| **What** — content + its rewards | nodes + reward types (§3) | covered |
+| **Why** — value / motivation | `grants` · `effect` · completion goals (§3–§6); editorial `prepares-for` (Layer 2) | covered (this brick) |
+| **Who** — the account | account-type overlay + live `AccountState` + the `members` flag | covered |
+| **When** — timing | quest-*stage* (`started`/`in_progress`/`completed`) covered here; account-*lifecycle* stage → Layer 2; game-*version*/recency (the favour-removal problem) → re-pull discipline (§11) | partial; deferrals named |
+| **Where** — geography | `location`/`transportation` unlock categories + `unlocks_transport.json`; **no spatial model** (regions, distances, travel-batching) | deferred — future spatial brick + the route layer |
+
+Discipline: each W lives in its owning layer; we do **not** force a five-field structure onto every node, nor model geography before a feature needs it (YAGNI). The lens confirms What/Why/Who are solid and makes the `Where` + account-stage-`When` deferrals explicit, on the record.
+
 ## 11. Disclosed limitations / discipline
 
 - **Source-grounded, never fabricated.** Reward/edge data is parsed from the canonical pages (§7), with provenance, and gated by a committed validator. Model memory proposes structure; sources dispose of specifics. A reward we cannot source is left out and disclosed, not invented.
