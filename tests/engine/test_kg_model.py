@@ -12,7 +12,7 @@ def test_node_kind_members_match_schema_taxonomy():
     assert {k.value for k in NodeKind} == {
         "skill", "item", "monster", "quest", "access", "region",
         "account_type", "gear_loadout", "activity", "diary",
-        "combat_achievement", "minigame", "clog_slot",
+        "combat_achievement", "minigame", "clog_slot", "goal",
     }
 
 
@@ -24,6 +24,7 @@ def test_node_kind_is_str_enum():
 def test_edge_type_members_match_schema():
     assert {e.value for e in EdgeType} == {
         "requires", "grants", "drops", "located_in", "gated_by",
+        "effect", "progress_towards",
     }
 
 

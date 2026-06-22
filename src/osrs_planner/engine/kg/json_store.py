@@ -55,7 +55,7 @@ def node_to_dict(node: Node) -> dict:
 
 def edge_to_dict(edge: Edge) -> dict:
     return {"id": edge.id, "type": edge.type.value, "src": edge.src,
-            "dst": edge.dst, "cond_group": edge.cond_group}
+            "dst": edge.dst, "cond_group": edge.cond_group, "data": edge.data}
 
 
 def group_to_dict(group: ConditionGroup) -> dict:
@@ -83,7 +83,7 @@ def node_from_dict(d: dict) -> Node:
 
 def edge_from_dict(d: dict) -> Edge:
     return Edge(id=d["id"], type=EdgeType(d["type"]), src=d["src"],
-                dst=d.get("dst"), cond_group=d.get("cond_group"))
+                dst=d.get("dst"), cond_group=d.get("cond_group"), data=d.get("data") or {})
 
 
 def group_from_dict(d: dict) -> ConditionGroup:

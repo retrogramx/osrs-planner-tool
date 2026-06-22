@@ -1,6 +1,7 @@
 [
   {
     "cond_group": 4398639,
+    "data": {},
     "dst": null,
     "id": 6014884,
     "src": "quest:death-on-the-isle",
@@ -8,6 +9,7 @@
   },
   {
     "cond_group": 5134978,
+    "data": {},
     "dst": null,
     "id": 6015434,
     "src": "quest:getting-ahead",
@@ -15,6 +17,7 @@
   },
   {
     "cond_group": 5087226,
+    "data": {},
     "dst": null,
     "id": 6033080,
     "src": "quest:perilous-moons",
@@ -22,6 +25,7 @@
   },
   {
     "cond_group": 4023955,
+    "data": {},
     "dst": null,
     "id": 6058808,
     "src": "quest:a-taste-of-hope",
@@ -29,6 +33,7 @@
   },
   {
     "cond_group": 4944332,
+    "data": {},
     "dst": null,
     "id": 6067408,
     "src": "quest:the-giant-dwarf",
@@ -36,6 +41,7 @@
   },
   {
     "cond_group": 4596297,
+    "data": {},
     "dst": null,
     "id": 6084043,
     "src": "quest:holy-grail",
@@ -43,6 +49,7 @@
   },
   {
     "cond_group": 4793239,
+    "data": {},
     "dst": null,
     "id": 6100271,
     "src": "quest:darkness-of-hallowvale",
@@ -50,6 +57,7 @@
   },
   {
     "cond_group": 5789759,
+    "data": {},
     "dst": null,
     "id": 6102029,
     "src": "quest:bear-your-soul",
@@ -57,6 +65,7 @@
   },
   {
     "cond_group": 4543916,
+    "data": {},
     "dst": null,
     "id": 6105303,
     "src": "item:6528",
@@ -64,6 +73,7 @@
   },
   {
     "cond_group": 5040337,
+    "data": {},
     "dst": null,
     "id": 6113686,
     "src": "quest:rag-and-bone-man-ii",
@@ -71,6 +81,7 @@
   },
   {
     "cond_group": 5954273,
+    "data": {},
     "dst": null,
     "id": 6137882,
     "src": "quest:into-the-tombs",
@@ -78,6 +89,7 @@
   },
   {
     "cond_group": 5314079,
+    "data": {},
     "dst": null,
     "id": 6160228,
     "src": "quest:x-marks-the-spot",
@@ -85,6 +97,7 @@
   },
   {
     "cond_group": 4028620,
+    "data": {},
     "dst": null,
     "id": 6164524,
     "src": "quest:the-dig-site",
@@ -92,6 +105,7 @@
   },
   {
     "cond_group": 4436538,
+    "data": {},
     "dst": null,
     "id": 6169563,
     "src": "gear_loadout_goal:infinity",
@@ -99,6 +113,7 @@
   },
   {
     "cond_group": 4400534,
+    "data": {},
     "dst": null,
     "id": 6171845,
     "src": "quest:recipe-for-disaster-defeating-the-culinaromancer",
@@ -106,6 +121,7 @@
   },
   {
     "cond_group": 5131451,
+    "data": {},
     "dst": null,
     "id": 6172194,
     "src": "quest:a-porcine-of-interest",
@@ -113,6 +129,7 @@
   },
   {
     "cond_group": 4612241,
+    "data": {},
     "dst": null,
     "id": 6173873,
     "src": "quest:horror-from-the-deep",
@@ -120,6 +137,7 @@
   },
   {
     "cond_group": 5875109,
+    "data": {},
     "dst": null,
     "id": 6209013,
     "src": "quest:recipe-for-disaster-another-cooks-quest",
@@ -127,6 +145,7 @@
   },
   {
     "cond_group": 4624134,
+    "data": {},
     "dst": null,
     "id": 6229167,
     "src": "quest:barbarian-training",
@@ -134,6 +153,7 @@
   },
   {
     "cond_group": 5392461,
+    "data": {},
     "dst": null,
     "id": 6241444,
     "src": "quest:throne-of-miscellania",
@@ -141,6 +161,7 @@
   },
   {
     "cond_group": 4208441,
+    "data": {},
     "dst": null,
     "id": 6247646,
     "src": "quest:icthlarins-little-helper",
@@ -148,6 +169,7 @@
   },
   {
     "cond_group": 4605866,
+    "data": {},
     "dst": null,
     "id": 6251320,
     "src": "quest:dragon-slayer-ii",
@@ -155,6 +177,7 @@
   },
   {
     "cond_group": 4956423,
+    "data": {},
     "dst": null,
     "id": 6251674,
     "src": "quest:the-grand-tree",
@@ -162,6 +185,7 @@
   },
   {
     "cond_group": 5441883,
+    "data": {},
     "dst": null,
     "id": 6252519,
     "src": "quest:hazeel-cult",
@@ -169,6 +193,7 @@
   },
   {
     "cond_group": 5587041,
+    "data": {},
     "dst": null,
     "id": 6252908,
     "src": "quest:clock-tower",
@@ -176,6 +201,7 @@
   },
   {
     "cond_group": 4657984,
+    "data": {},
     "dst": null,
     "id": 6258337,
     "src": "quest:fishing-contest",
@@ -183,6 +209,7 @@
   },
   {
     "cond_group": 4087366,
+    "data": {},
     "dst": null,
     "id": 6262188,
     "src": "quest:recipe-for-disaster-freeing-king-awowogei",
@@ -190,6 +217,7 @@
   },
   {
     "cond_group": 4789453,
+    "data": {},
     "dst": null,
     "id": 6263177,
     "src": "quest:a-tail-of-two-cats",
@@ -197,6 +225,7 @@
   },
   {
     "cond_group": 4919084,
+    "data": {},
     "dst": null,
     "id": 6266467,
     "src": "quest:the-garden-of-death",
@@ -204,6 +233,7 @@
   },
   {
     "cond_group": 4487045,
+    "data": {},
     "dst": null,
     "id": 6267338,
     "src": "quest:between-a-rock",
@@ -211,6 +241,7 @@
   },
   {
     "cond_group": 4705790,
+    "data": {},
     "dst": null,
     "id": 6276680,
     "src": "quest:wanted",
@@ -218,6 +249,7 @@
   },
   {
     "cond_group": 5590073,
+    "data": {},
     "dst": null,
     "id": 6281781,
     "src": "quest:the-fremennik-isles",
@@ -225,6 +257,7 @@
   },
   {
     "cond_group": 5657903,
+    "data": {},
     "dst": null,
     "id": 6290692,
     "src": "quest:goblin-diplomacy",
@@ -232,6 +265,7 @@
   },
   {
     "cond_group": 4034667,
+    "data": {},
     "dst": null,
     "id": 6296738,
     "src": "quest:his-faithful-servants",
@@ -239,6 +273,7 @@
   },
   {
     "cond_group": 5531528,
+    "data": {},
     "dst": null,
     "id": 6306222,
     "src": "quest:merlins-crystal",
@@ -246,6 +281,7 @@
   },
   {
     "cond_group": 4220496,
+    "data": {},
     "dst": null,
     "id": 6317209,
     "src": "quest:song-of-the-elves",
@@ -253,6 +289,7 @@
   },
   {
     "cond_group": 5063204,
+    "data": {},
     "dst": null,
     "id": 6343202,
     "src": "quest:the-heart-of-darkness",
@@ -260,6 +297,7 @@
   },
   {
     "cond_group": 4382774,
+    "data": {},
     "dst": null,
     "id": 6347012,
     "src": "quest:defender-of-varrock",
@@ -267,6 +305,7 @@
   },
   {
     "cond_group": 4424488,
+    "data": {},
     "dst": null,
     "id": 6361059,
     "src": "quest:the-curse-of-arrav",
@@ -274,6 +313,7 @@
   },
   {
     "cond_group": 4400407,
+    "data": {},
     "dst": null,
     "id": 6362881,
     "src": "quest:the-feud",
@@ -281,6 +321,7 @@
   },
   {
     "cond_group": 5068236,
+    "data": {},
     "dst": null,
     "id": 6365257,
     "src": "quest:a-souls-bane",
@@ -288,6 +329,7 @@
   },
   {
     "cond_group": 4698813,
+    "data": {},
     "dst": null,
     "id": 6368799,
     "src": "quest:while-guthix-sleeps",
@@ -295,6 +337,7 @@
   },
   {
     "cond_group": 4174021,
+    "data": {},
     "dst": null,
     "id": 6393321,
     "src": "quest:recipe-for-disaster-freeing-the-lumbridge-guide",
@@ -302,6 +345,7 @@
   },
   {
     "cond_group": 5976863,
+    "data": {},
     "dst": null,
     "id": 6415719,
     "src": "quest:scorpion-catcher",
@@ -309,6 +353,7 @@
   },
   {
     "cond_group": 4068015,
+    "data": {},
     "dst": null,
     "id": 6431672,
     "src": "quest:tai-bwo-wannai-trio",
@@ -316,6 +361,7 @@
   },
   {
     "cond_group": 4445405,
+    "data": {},
     "dst": null,
     "id": 6437523,
     "src": "quest:swan-song",
@@ -323,6 +369,7 @@
   },
   {
     "cond_group": 4020131,
+    "data": {},
     "dst": null,
     "id": 6458102,
     "src": "quest:temple-of-ikov",
@@ -330,6 +377,7 @@
   },
   {
     "cond_group": 5574628,
+    "data": {},
     "dst": null,
     "id": 6462474,
     "src": "quest:temple-of-the-eye",
@@ -337,6 +385,7 @@
   },
   {
     "cond_group": 4250719,
+    "data": {},
     "dst": null,
     "id": 6466411,
     "src": "quest:monkey-madness-ii",
@@ -344,6 +393,7 @@
   },
   {
     "cond_group": 5342894,
+    "data": {},
     "dst": null,
     "id": 6467210,
     "src": "quest:troll-stronghold",
@@ -351,6 +401,7 @@
   },
   {
     "cond_group": 4697620,
+    "data": {},
     "dst": null,
     "id": 6467307,
     "src": "quest:lunar-diplomacy",
@@ -358,6 +409,7 @@
   },
   {
     "cond_group": 5213487,
+    "data": {},
     "dst": null,
     "id": 6469900,
     "src": "quest:at-first-light",
@@ -365,6 +417,7 @@
   },
   {
     "cond_group": 4378761,
+    "data": {},
     "dst": null,
     "id": 6472420,
     "src": "quest:recipe-for-disaster-freeing-pirate-pete",
@@ -372,6 +425,7 @@
   },
   {
     "cond_group": 5202336,
+    "data": {},
     "dst": null,
     "id": 6473326,
     "src": "quest:biohazard",
@@ -379,6 +433,7 @@
   },
   {
     "cond_group": 5720380,
+    "data": {},
     "dst": null,
     "id": 6474453,
     "src": "quest:skippy-and-the-mogres",
@@ -386,6 +441,7 @@
   },
   {
     "cond_group": 4103909,
+    "data": {},
     "dst": null,
     "id": 6477512,
     "src": "quest:cabin-fever",
@@ -393,6 +449,7 @@
   },
   {
     "cond_group": 5985948,
+    "data": {},
     "dst": null,
     "id": 6485383,
     "src": "quest:dream-mentor",
@@ -400,6 +457,7 @@
   },
   {
     "cond_group": 5996296,
+    "data": {},
     "dst": null,
     "id": 6487933,
     "src": "quest:elemental-workshop-i",
@@ -407,6 +465,7 @@
   },
   {
     "cond_group": 4625272,
+    "data": {},
     "dst": null,
     "id": 6488466,
     "src": "quest:family-pest",
@@ -414,6 +473,7 @@
   },
   {
     "cond_group": 5310802,
+    "data": {},
     "dst": null,
     "id": 6500933,
     "src": "quest:secrets-of-the-north",
@@ -421,6 +481,7 @@
   },
   {
     "cond_group": 5476149,
+    "data": {},
     "dst": null,
     "id": 6506260,
     "src": "quest:dorics-quest",
@@ -428,6 +489,7 @@
   },
   {
     "cond_group": 4280009,
+    "data": {},
     "dst": null,
     "id": 6507542,
     "src": "quest:elemental-workshop-ii",
@@ -435,6 +497,7 @@
   },
   {
     "cond_group": 4789360,
+    "data": {},
     "dst": null,
     "id": 6535399,
     "src": "quest:tree-gnome-village",
@@ -442,6 +505,7 @@
   },
   {
     "cond_group": 5459373,
+    "data": {},
     "dst": null,
     "id": 6543650,
     "src": "quest:big-chompy-bird-hunting",
@@ -449,6 +513,7 @@
   },
   {
     "cond_group": 4265288,
+    "data": {},
     "dst": null,
     "id": 6544473,
     "src": "quest:kings-ransom",
@@ -456,6 +521,7 @@
   },
   {
     "cond_group": 4160009,
+    "data": {},
     "dst": null,
     "id": 6546717,
     "src": "quest:dragon-slayer-i",
@@ -463,6 +529,7 @@
   },
   {
     "cond_group": 4340138,
+    "data": {},
     "dst": null,
     "id": 6550231,
     "src": "item:4587",
@@ -470,6 +537,7 @@
   },
   {
     "cond_group": 5940504,
+    "data": {},
     "dst": null,
     "id": 6566310,
     "src": "quest:the-slug-menace",
@@ -477,6 +545,7 @@
   },
   {
     "cond_group": 5746001,
+    "data": {},
     "dst": null,
     "id": 6575691,
     "src": "quest:the-knights-sword",
@@ -484,6 +553,7 @@
   },
   {
     "cond_group": 4001576,
+    "data": {},
     "dst": null,
     "id": 6595586,
     "src": "quest:tale-of-the-righteous",
@@ -491,6 +561,7 @@
   },
   {
     "cond_group": 4141945,
+    "data": {},
     "dst": null,
     "id": 6600462,
     "src": "quest:the-ribbiting-tale-of-a-lily-pad-labour-dispute",
@@ -498,6 +569,7 @@
   },
   {
     "cond_group": 4159374,
+    "data": {},
     "dst": null,
     "id": 6604830,
     "src": "quest:druidic-ritual",
@@ -505,6 +577,7 @@
   },
   {
     "cond_group": 4615548,
+    "data": {},
     "dst": null,
     "id": 6613399,
     "src": "quest:below-ice-mountain",
@@ -512,6 +585,7 @@
   },
   {
     "cond_group": 5908675,
+    "data": {},
     "dst": null,
     "id": 6633752,
     "src": "quest:desert-treasure-ii-the-fallen-empire",
@@ -519,6 +593,7 @@
   },
   {
     "cond_group": 4801253,
+    "data": {},
     "dst": null,
     "id": 6646460,
     "src": "quest:regicide",
@@ -526,6 +601,7 @@
   },
   {
     "cond_group": 5855944,
+    "data": {},
     "dst": null,
     "id": 6651867,
     "src": "quest:the-enchanted-key",
@@ -533,6 +609,7 @@
   },
   {
     "cond_group": 4922582,
+    "data": {},
     "dst": null,
     "id": 6676810,
     "src": "access:fairy-rings",
@@ -540,6 +617,7 @@
   },
   {
     "cond_group": 5816701,
+    "data": {},
     "dst": null,
     "id": 6683790,
     "src": "quest:dwarf-cannon",
@@ -547,6 +625,7 @@
   },
   {
     "cond_group": 5553315,
+    "data": {},
     "dst": null,
     "id": 6684973,
     "src": "quest:recipe-for-disaster",
@@ -554,6 +633,7 @@
   },
   {
     "cond_group": 4153643,
+    "data": {},
     "dst": null,
     "id": 6695152,
     "src": "quest:the-generals-shadow",
@@ -561,6 +641,7 @@
   },
   {
     "cond_group": 5504143,
+    "data": {},
     "dst": null,
     "id": 6734517,
     "src": "quest:the-tourist-trap",
@@ -568,6 +649,7 @@
   },
   {
     "cond_group": 5098610,
+    "data": {},
     "dst": null,
     "id": 6740372,
     "src": "quest:mage-arena-ii",
@@ -575,6 +657,7 @@
   },
   {
     "cond_group": 5284709,
+    "data": {},
     "dst": null,
     "id": 6744188,
     "src": "quest:alfred-grimhands-barcrawl",
@@ -582,6 +665,7 @@
   },
   {
     "cond_group": 5023875,
+    "data": {},
     "dst": null,
     "id": 6747541,
     "src": "quest:watchtower",
@@ -589,6 +673,7 @@
   },
   {
     "cond_group": 4306721,
+    "data": {},
     "dst": null,
     "id": 6771088,
     "src": "quest:garden-of-tranquillity",
@@ -596,6 +681,7 @@
   },
   {
     "cond_group": 5156487,
+    "data": {},
     "dst": null,
     "id": 6772453,
     "src": "quest:enter-the-abyss",
@@ -603,6 +689,7 @@
   },
   {
     "cond_group": 5175922,
+    "data": {},
     "dst": null,
     "id": 6787247,
     "src": "quest:sacred-bone-burner-restoration",
@@ -610,6 +697,7 @@
   },
   {
     "cond_group": 4084667,
+    "data": {},
     "dst": null,
     "id": 6790744,
     "src": "quest:romeo-juliet",
@@ -617,6 +705,7 @@
   },
   {
     "cond_group": 5104617,
+    "data": {},
     "dst": null,
     "id": 6800530,
     "src": "quest:one-small-favour",
@@ -624,6 +713,7 @@
   },
   {
     "cond_group": 5679647,
+    "data": {},
     "dst": null,
     "id": 6823086,
     "src": "quest:daddys-home",
@@ -631,6 +721,7 @@
   },
   {
     "cond_group": 5178828,
+    "data": {},
     "dst": null,
     "id": 6823684,
     "src": "item:7462",
@@ -638,6 +729,7 @@
   },
   {
     "cond_group": 4213977,
+    "data": {},
     "dst": null,
     "id": 6836274,
     "src": "quest:recruitment-drive",
@@ -645,6 +737,7 @@
   },
   {
     "cond_group": 5478130,
+    "data": {},
     "dst": null,
     "id": 6852151,
     "src": "quest:nature-spirit",
@@ -652,6 +745,7 @@
   },
   {
     "cond_group": 5806289,
+    "data": {},
     "dst": null,
     "id": 6865274,
     "src": "quest:enakhras-lament",
@@ -659,6 +753,7 @@
   },
   {
     "cond_group": 4251809,
+    "data": {},
     "dst": null,
     "id": 6872045,
     "src": "quest:sea-slug",
@@ -666,6 +761,7 @@
   },
   {
     "cond_group": 4661326,
+    "data": {},
     "dst": null,
     "id": 6878829,
     "src": "quest:mournings-end-part-ii",
@@ -673,6 +769,7 @@
   },
   {
     "cond_group": 4110629,
+    "data": {},
     "dst": null,
     "id": 6879421,
     "src": "quest:desert-treasure-i",
@@ -680,6 +777,7 @@
   },
   {
     "cond_group": 4448501,
+    "data": {},
     "dst": null,
     "id": 6888294,
     "src": "quest:witchs-house",
@@ -687,6 +785,7 @@
   },
   {
     "cond_group": 5106526,
+    "data": {},
     "dst": null,
     "id": 6888521,
     "src": "quest:rag-and-bone-man-i",
@@ -694,6 +793,7 @@
   },
   {
     "cond_group": 5654036,
+    "data": {},
     "dst": null,
     "id": 6890107,
     "src": "quest:heroes-quest",
@@ -701,6 +801,7 @@
   },
   {
     "cond_group": 4589955,
+    "data": {},
     "dst": null,
     "id": 6903087,
     "src": "quest:misthalin-mystery",
@@ -708,6 +809,7 @@
   },
   {
     "cond_group": 5731262,
+    "data": {},
     "dst": null,
     "id": 6906881,
     "src": "quest:recipe-for-disaster-freeing-skrach-uglogwee",
@@ -715,6 +817,7 @@
   },
   {
     "cond_group": 4075652,
+    "data": {},
     "dst": null,
     "id": 6908067,
     "src": "quest:barbarian-smithing",
@@ -722,6 +825,7 @@
   },
   {
     "cond_group": 4462806,
+    "data": {},
     "dst": null,
     "id": 6910285,
     "src": "quest:eagles-peak",
@@ -729,6 +833,7 @@
   },
   {
     "cond_group": 4721964,
+    "data": {},
     "dst": null,
     "id": 6917087,
     "src": "quest:monks-friend",
@@ -736,6 +841,7 @@
   },
   {
     "cond_group": 5131411,
+    "data": {},
     "dst": null,
     "id": 6937724,
     "src": "quest:witchs-potion",
@@ -743,6 +849,7 @@
   },
   {
     "cond_group": 4732737,
+    "data": {},
     "dst": null,
     "id": 6942340,
     "src": "quest:mountain-daughter",
@@ -750,6 +857,7 @@
   },
   {
     "cond_group": 4457247,
+    "data": {},
     "dst": null,
     "id": 6960837,
     "src": "quest:tutorial-island",
@@ -757,6 +865,7 @@
   },
   {
     "cond_group": 4035500,
+    "data": {},
     "dst": null,
     "id": 6962509,
     "src": "quest:jungle-potion",
@@ -764,6 +873,7 @@
   },
   {
     "cond_group": 4830236,
+    "data": {},
     "dst": null,
     "id": 6962645,
     "src": "quest:making-friends-with-my-arm",
@@ -771,6 +881,7 @@
   },
   {
     "cond_group": 4146207,
+    "data": {},
     "dst": null,
     "id": 6964135,
     "src": "quest:sheep-shearer",
@@ -778,6 +889,7 @@
   },
   {
     "cond_group": 5376814,
+    "data": {},
     "dst": null,
     "id": 6982075,
     "src": "quest:rogue-trader",
@@ -785,6 +897,7 @@
   },
   {
     "cond_group": 5446890,
+    "data": {},
     "dst": null,
     "id": 6986081,
     "src": "quest:the-hand-in-the-sand",
@@ -792,6 +905,7 @@
   },
   {
     "cond_group": 4817490,
+    "data": {},
     "dst": null,
     "id": 7000964,
     "src": "quest:my-arms-big-adventure",
@@ -799,6 +913,7 @@
   },
   {
     "cond_group": 4033871,
+    "data": {},
     "dst": null,
     "id": 7006197,
     "src": "quest:shades-of-mortton",
@@ -806,6 +921,7 @@
   },
   {
     "cond_group": 4850184,
+    "data": {},
     "dst": null,
     "id": 7017140,
     "src": "quest:children-of-the-sun",
@@ -813,6 +929,7 @@
   },
   {
     "cond_group": 4053622,
+    "data": {},
     "dst": null,
     "id": 7018816,
     "src": "quest:sheep-herder",
@@ -820,6 +937,7 @@
   },
   {
     "cond_group": 5703340,
+    "data": {},
     "dst": null,
     "id": 7028425,
     "src": "quest:the-great-brain-robbery",
@@ -827,6 +945,7 @@
   },
   {
     "cond_group": 4502612,
+    "data": {},
     "dst": null,
     "id": 7038868,
     "src": "quest:shadow-of-the-storm",
@@ -834,6 +953,7 @@
   },
   {
     "cond_group": 4500601,
+    "data": {},
     "dst": null,
     "id": 7068769,
     "src": "quest:waterfall-quest",
@@ -841,6 +961,7 @@
   },
   {
     "cond_group": 4459868,
+    "data": {},
     "dst": null,
     "id": 7073695,
     "src": "quest:gertrudes-cat",
@@ -848,6 +969,7 @@
   },
   {
     "cond_group": 5171862,
+    "data": {},
     "dst": null,
     "id": 7090695,
     "src": "quest:barbarian-fishing",
@@ -855,6 +977,7 @@
   },
   {
     "cond_group": 5559691,
+    "data": {},
     "dst": null,
     "id": 7091907,
     "src": "quest:death-plateau",
@@ -862,6 +985,7 @@
   },
   {
     "cond_group": 5780113,
+    "data": {},
     "dst": null,
     "id": 7095843,
     "src": "quest:bone-voyage",
@@ -869,6 +993,7 @@
   },
   {
     "cond_group": 4022152,
+    "data": {},
     "dst": null,
     "id": 7111093,
     "src": "quest:vampyre-slayer",
@@ -876,6 +1001,7 @@
   },
   {
     "cond_group": 5869058,
+    "data": {},
     "dst": null,
     "id": 7116667,
     "src": "quest:troll-romance",
@@ -883,6 +1009,7 @@
   },
   {
     "cond_group": 4868443,
+    "data": {},
     "dst": null,
     "id": 7117639,
     "src": "quest:recipe-for-disaster-freeing-the-mountain-dwarf",
@@ -890,6 +1017,7 @@
   },
   {
     "cond_group": 5783406,
+    "data": {},
     "dst": null,
     "id": 7120728,
     "src": "quest:in-search-of-the-myreque",
@@ -897,6 +1025,7 @@
   },
   {
     "cond_group": 4238316,
+    "data": {},
     "dst": null,
     "id": 7134765,
     "src": "quest:what-lies-below",
@@ -904,6 +1033,7 @@
   },
   {
     "cond_group": 4075593,
+    "data": {},
     "dst": null,
     "id": 7142447,
     "src": "quest:murder-mystery",
@@ -911,6 +1041,7 @@
   },
   {
     "cond_group": 5804118,
+    "data": {},
     "dst": null,
     "id": 7144635,
     "src": "quest:zogre-flesh-eaters",
@@ -918,6 +1049,7 @@
   },
   {
     "cond_group": 4944333,
+    "data": {},
     "dst": null,
     "id": 7151817,
     "src": "quest:the-forsaken-tower",
@@ -925,6 +1057,7 @@
   },
   {
     "cond_group": 5850990,
+    "data": {},
     "dst": null,
     "id": 7161175,
     "src": "quest:ernest-the-chicken",
@@ -932,6 +1065,7 @@
   },
   {
     "cond_group": 4949060,
+    "data": {},
     "dst": null,
     "id": 7202445,
     "src": "quest:tower-of-life",
@@ -939,6 +1073,7 @@
   },
   {
     "cond_group": 5739518,
+    "data": {},
     "dst": null,
     "id": 7236015,
     "src": "quest:forgettable-tale",
@@ -946,6 +1081,7 @@
   },
   {
     "cond_group": 5830733,
+    "data": {},
     "dst": null,
     "id": 7241089,
     "src": "quest:roving-elves",
@@ -953,6 +1089,7 @@
   },
   {
     "cond_group": 4656755,
+    "data": {},
     "dst": null,
     "id": 7243527,
     "src": "quest:shield-of-arrav",
@@ -960,6 +1097,7 @@
   },
   {
     "cond_group": 4441476,
+    "data": {},
     "dst": null,
     "id": 7253165,
     "src": "quest:eadgars-ruse",
@@ -967,6 +1105,7 @@
   },
   {
     "cond_group": 5266718,
+    "data": {},
     "dst": null,
     "id": 7257422,
     "src": "quest:grim-tales",
@@ -974,6 +1113,7 @@
   },
   {
     "cond_group": 5303493,
+    "data": {},
     "dst": null,
     "id": 7275626,
     "src": "quest:curse-of-the-empty-lord",
@@ -981,6 +1121,7 @@
   },
   {
     "cond_group": 4563732,
+    "data": {},
     "dst": null,
     "id": 7277812,
     "src": "quest:imp-catcher",
@@ -988,6 +1129,7 @@
   },
   {
     "cond_group": 5247698,
+    "data": {},
     "dst": null,
     "id": 7279258,
     "src": "quest:prince-ali-rescue",
@@ -995,6 +1137,7 @@
   },
   {
     "cond_group": 4689210,
+    "data": {},
     "dst": null,
     "id": 7290102,
     "src": "quest:demon-slayer",
@@ -1002,6 +1145,7 @@
   },
   {
     "cond_group": 5239662,
+    "data": {},
     "dst": null,
     "id": 7300626,
     "src": "quest:animal-magnetism",
@@ -1009,6 +1153,7 @@
   },
   {
     "cond_group": 5892857,
+    "data": {},
     "dst": null,
     "id": 7302506,
     "src": "quest:shilo-village",
@@ -1016,6 +1161,7 @@
   },
   {
     "cond_group": 4852444,
+    "data": {},
     "dst": null,
     "id": 7364653,
     "src": "quest:meat-and-greet",
@@ -1023,6 +1169,7 @@
   },
   {
     "cond_group": 4690547,
+    "data": {},
     "dst": null,
     "id": 7375380,
     "src": "quest:barbarian-farming",
@@ -1030,6 +1177,7 @@
   },
   {
     "cond_group": 4110619,
+    "data": {},
     "dst": null,
     "id": 7386368,
     "src": "quest:lair-of-tarn-razorlor",
@@ -1037,6 +1185,7 @@
   },
   {
     "cond_group": 4609368,
+    "data": {},
     "dst": null,
     "id": 7403276,
     "src": "quest:hopespears-will",
@@ -1044,6 +1193,7 @@
   },
   {
     "cond_group": 5492395,
+    "data": {},
     "dst": null,
     "id": 7415458,
     "src": "quest:observatory-quest",
@@ -1051,6 +1201,7 @@
   },
   {
     "cond_group": 5081705,
+    "data": {},
     "dst": null,
     "id": 7430712,
     "src": "quest:mage-arena-i",
@@ -1058,6 +1209,7 @@
   },
   {
     "cond_group": 5631608,
+    "data": {},
     "dst": null,
     "id": 7447010,
     "src": "quest:a-night-at-the-theatre",
@@ -1065,6 +1217,7 @@
   },
   {
     "cond_group": 5371171,
+    "data": {},
     "dst": null,
     "id": 7470698,
     "src": "quest:the-ascent-of-arceuus",
@@ -1072,6 +1225,7 @@
   },
   {
     "cond_group": 4441195,
+    "data": {},
     "dst": null,
     "id": 7471934,
     "src": "quest:another-slice-of-h-a-m",
@@ -1079,6 +1233,7 @@
   },
   {
     "cond_group": 5057280,
+    "data": {},
     "dst": null,
     "id": 7477051,
     "src": "quest:legends-quest",
@@ -1086,6 +1241,7 @@
   },
   {
     "cond_group": 5381566,
+    "data": {},
     "dst": null,
     "id": 7514892,
     "src": "quest:twilights-promise",
@@ -1093,6 +1249,7 @@
   },
   {
     "cond_group": 5984109,
+    "data": {},
     "dst": null,
     "id": 7515169,
     "src": "quest:the-restless-ghost",
@@ -1100,6 +1257,7 @@
   },
   {
     "cond_group": 4905681,
+    "data": {},
     "dst": null,
     "id": 7521104,
     "src": "quest:the-corsair-curse",
@@ -1107,6 +1265,7 @@
   },
   {
     "cond_group": 4103011,
+    "data": {},
     "dst": null,
     "id": 7522791,
     "src": "quest:ethically-acquired-antiquities",
@@ -1114,6 +1273,7 @@
   },
   {
     "cond_group": 5128411,
+    "data": {},
     "dst": null,
     "id": 7523805,
     "src": "quest:client-of-kourend",
@@ -1121,6 +1281,7 @@
   },
   {
     "cond_group": 4249468,
+    "data": {},
     "dst": null,
     "id": 7527379,
     "src": "quest:the-eyes-of-glouphrie",
@@ -1128,6 +1289,7 @@
   },
   {
     "cond_group": 5735979,
+    "data": {},
     "dst": null,
     "id": 7530295,
     "src": "quest:knight-waves-training-grounds",
@@ -1135,6 +1297,7 @@
   },
   {
     "cond_group": 5294027,
+    "data": {},
     "dst": null,
     "id": 7532065,
     "src": "quest:contact",
@@ -1142,6 +1305,7 @@
   },
   {
     "cond_group": 4561587,
+    "data": {},
     "dst": null,
     "id": 7532078,
     "src": "quest:monkey-madness-i",
@@ -1149,6 +1313,7 @@
   },
   {
     "cond_group": 5928931,
+    "data": {},
     "dst": null,
     "id": 7542634,
     "src": "quest:lost-city",
@@ -1156,6 +1321,7 @@
   },
   {
     "cond_group": 5065688,
+    "data": {},
     "dst": null,
     "id": 7543955,
     "src": "quest:recipe-for-disaster-freeing-evil-dave",
@@ -1163,6 +1329,7 @@
   },
   {
     "cond_group": 4184444,
+    "data": {},
     "dst": null,
     "id": 7565293,
     "src": "item:27690",
@@ -1170,6 +1337,7 @@
   },
   {
     "cond_group": 4816881,
+    "data": {},
     "dst": null,
     "id": 7575942,
     "src": "quest:in-search-of-knowledge",
@@ -1177,6 +1345,7 @@
   },
   {
     "cond_group": 4005359,
+    "data": {},
     "dst": null,
     "id": 7607156,
     "src": "quest:underground-pass",
@@ -1184,6 +1353,7 @@
   },
   {
     "cond_group": 4255369,
+    "data": {},
     "dst": null,
     "id": 7610029,
     "src": "quest:the-path-of-glouphrie",
@@ -1191,6 +1361,7 @@
   },
   {
     "cond_group": 4040298,
+    "data": {},
     "dst": null,
     "id": 7619913,
     "src": "quest:pirates-treasure",
@@ -1198,6 +1369,7 @@
   },
   {
     "cond_group": 5973016,
+    "data": {},
     "dst": null,
     "id": 7625641,
     "src": "quest:plague-city",
@@ -1205,6 +1377,7 @@
   },
   {
     "cond_group": 4996635,
+    "data": {},
     "dst": null,
     "id": 7628722,
     "src": "quest:the-fremennik-trials",
@@ -1212,6 +1385,7 @@
   },
   {
     "cond_group": 4643948,
+    "data": {},
     "dst": null,
     "id": 7641749,
     "src": "quest:sins-of-the-father",
@@ -1219,6 +1393,7 @@
   },
   {
     "cond_group": 5507901,
+    "data": {},
     "dst": null,
     "id": 7645031,
     "src": "quest:recipe-for-disaster-freeing-the-goblin-generals",
@@ -1226,6 +1401,7 @@
   },
   {
     "cond_group": 4920250,
+    "data": {},
     "dst": null,
     "id": 7651582,
     "src": "quest:the-fremennik-exiles",
@@ -1233,6 +1409,7 @@
   },
   {
     "cond_group": 4229421,
+    "data": {},
     "dst": null,
     "id": 7663891,
     "src": "quest:rune-mysteries",
@@ -1240,6 +1417,7 @@
   },
   {
     "cond_group": 5672118,
+    "data": {},
     "dst": null,
     "id": 7689993,
     "src": "quest:recipe-for-disaster-freeing-sir-amik-varze",
@@ -1247,6 +1425,7 @@
   },
   {
     "cond_group": 5568932,
+    "data": {},
     "dst": null,
     "id": 7691396,
     "src": "quest:tribal-totem",
@@ -1254,6 +1433,7 @@
   },
   {
     "cond_group": 5087777,
+    "data": {},
     "dst": null,
     "id": 7692140,
     "src": "quest:olafs-quest",
@@ -1261,6 +1441,7 @@
   },
   {
     "cond_group": 5429338,
+    "data": {},
     "dst": null,
     "id": 7694357,
     "src": "quest:in-aid-of-the-myreque",
@@ -1268,6 +1449,7 @@
   },
   {
     "cond_group": 5110347,
+    "data": {},
     "dst": null,
     "id": 7732910,
     "src": "quest:natural-history-quiz",
@@ -1275,6 +1457,7 @@
   },
   {
     "cond_group": 4046430,
+    "data": {},
     "dst": null,
     "id": 7742464,
     "src": "quest:fight-arena",
@@ -1282,6 +1465,7 @@
   },
   {
     "cond_group": 4599079,
+    "data": {},
     "dst": null,
     "id": 7753591,
     "src": "quest:ratcatchers",
@@ -1289,6 +1473,7 @@
   },
   {
     "cond_group": 4103379,
+    "data": {},
     "dst": null,
     "id": 7773566,
     "src": "quest:rum-deal",
@@ -1296,6 +1481,7 @@
   },
   {
     "cond_group": 4956119,
+    "data": {},
     "dst": null,
     "id": 7798144,
     "src": "quest:mournings-end-part-i",
@@ -1303,6 +1489,7 @@
   },
   {
     "cond_group": 4722891,
+    "data": {},
     "dst": null,
     "id": 7801593,
     "src": "quest:making-history",
@@ -1310,6 +1497,7 @@
   },
   {
     "cond_group": 4033757,
+    "data": {},
     "dst": null,
     "id": 7811830,
     "src": "quest:the-golem",
@@ -1317,6 +1505,7 @@
   },
   {
     "cond_group": 5760053,
+    "data": {},
     "dst": null,
     "id": 7812061,
     "src": "quest:priest-in-peril",
@@ -1324,6 +1513,7 @@
   },
   {
     "cond_group": 5644500,
+    "data": {},
     "dst": null,
     "id": 7813972,
     "src": "quest:enlightened-journey",
@@ -1331,6 +1521,7 @@
   },
   {
     "cond_group": 5890566,
+    "data": {},
     "dst": null,
     "id": 7818043,
     "src": "quest:haunted-mine",
@@ -1338,6 +1529,7 @@
   },
   {
     "cond_group": 4554591,
+    "data": {},
     "dst": null,
     "id": 7822352,
     "src": "quest:fairytale-i-growing-pains",
@@ -1345,6 +1537,7 @@
   },
   {
     "cond_group": 5608638,
+    "data": {},
     "dst": null,
     "id": 7828664,
     "src": "quest:family-crest",
@@ -1352,6 +1545,7 @@
   },
   {
     "cond_group": 4717147,
+    "data": {},
     "dst": null,
     "id": 7839549,
     "src": "quest:barbarian-firemaking",
@@ -1359,6 +1553,7 @@
   },
   {
     "cond_group": 5090228,
+    "data": {},
     "dst": null,
     "id": 7839636,
     "src": "quest:the-depths-of-despair",
@@ -1366,6 +1561,7 @@
   },
   {
     "cond_group": 4853457,
+    "data": {},
     "dst": null,
     "id": 7843052,
     "src": "quest:a-kingdom-divided",
@@ -1373,6 +1569,7 @@
   },
   {
     "cond_group": 4796622,
+    "data": {},
     "dst": null,
     "id": 7854189,
     "src": "quest:death-to-the-dorgeshuun",
@@ -1380,6 +1577,7 @@
   },
   {
     "cond_group": 4671677,
+    "data": {},
     "dst": null,
     "id": 7860467,
     "src": "quest:fairytale-ii-cure-a-queen",
@@ -1387,6 +1585,7 @@
   },
   {
     "cond_group": 5901716,
+    "data": {},
     "dst": null,
     "id": 7868596,
     "src": "quest:devious-minds",
@@ -1394,6 +1593,7 @@
   },
   {
     "cond_group": 4378871,
+    "data": {},
     "dst": null,
     "id": 7882073,
     "src": "quest:the-queen-of-thieves",
@@ -1401,6 +1601,7 @@
   },
   {
     "cond_group": 4214186,
+    "data": {},
     "dst": null,
     "id": 7907239,
     "src": "quest:royal-trouble",
@@ -1408,6 +1609,7 @@
   },
   {
     "cond_group": 4808346,
+    "data": {},
     "dst": null,
     "id": 7912749,
     "src": "quest:black-knights-fortress",
@@ -1415,6 +1617,7 @@
   },
   {
     "cond_group": 5857536,
+    "data": {},
     "dst": null,
     "id": 7915776,
     "src": "quest:ghosts-ahoy",
@@ -1422,6 +1625,7 @@
   },
   {
     "cond_group": 5315804,
+    "data": {},
     "dst": null,
     "id": 7933091,
     "src": "quest:tears-of-guthix",
@@ -1429,6 +1633,7 @@
   },
   {
     "cond_group": 5596297,
+    "data": {},
     "dst": null,
     "id": 7936290,
     "src": "quest:spirits-of-the-elid",
@@ -1436,6 +1641,7 @@
   },
   {
     "cond_group": 4624848,
+    "data": {},
     "dst": null,
     "id": 7938331,
     "src": "quest:creature-of-fenkenstrain",
@@ -1443,6 +1649,7 @@
   },
   {
     "cond_group": 5574282,
+    "data": {},
     "dst": null,
     "id": 7964367,
     "src": "quest:the-lost-tribe",
@@ -1450,6 +1657,7 @@
   },
   {
     "cond_group": 5437937,
+    "data": {},
     "dst": null,
     "id": 7969931,
     "src": "quest:barbarian-herblore",
@@ -1457,6 +1665,7 @@
   },
   {
     "cond_group": 4136427,
+    "data": {},
     "dst": null,
     "id": 7970155,
     "src": "quest:cooks-assistant",
@@ -1464,6 +1673,7 @@
   },
   {
     "cond_group": 4246175,
+    "data": {},
     "dst": null,
     "id": 7993464,
     "src": "quest:cold-war",
@@ -1471,6 +1681,7 @@
   },
   {
     "cond_group": 5214366,
+    "data": {},
     "dst": null,
     "id": 7994824,
     "src": "gear_loadout:infinity",
@@ -1478,6 +1689,7 @@
   },
   {
     "cond_group": 4961365,
+    "data": {},
     "dst": null,
     "id": 7998454,
     "src": "quest:the-frozen-door",

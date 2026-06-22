@@ -132,7 +132,7 @@ def test_serialize_edge():
     from kg_ingest.assemble import serialize_edge
     e = Edge(id=6_000_5, type=EdgeType.REQUIRES, src="quest:toy", dst=None, cond_group=4_000_123)
     assert serialize_edge(e) == {"id": 6_000_5, "type": "requires", "src": "quest:toy",
-                                 "dst": None, "cond_group": 4_000_123}
+                                 "dst": None, "cond_group": 4_000_123, "data": {}}
 
 
 def test_assemble_writes_three_files_and_is_byte_stable(tmp_path, monkeypatch):

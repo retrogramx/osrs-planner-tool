@@ -27,6 +27,7 @@ class NodeKind(str, Enum):
     COMBAT_ACHIEVEMENT = "combat_achievement"
     MINIGAME = "minigame"
     CLOG_SLOT = "clog_slot"
+    GOAL = "goal"  # completion-goal aggregate node (Quest cape, music cape, ...): data={counter_type, thresholds}
 
 
 class EdgeType(str, Enum):
@@ -37,6 +38,8 @@ class EdgeType(str, Enum):
     DROPS = "drops"
     LOCATED_IN = "located_in"
     GATED_BY = "gated_by"
+    EFFECT = "effect"                  # a passive/permanent perk riding on a granted item/unlock (spec §4)
+    PROGRESS_TOWARDS = "progress_towards"  # counting contribution toward a goal node; data={weight} (spec §5)
 
 
 class Op(str, Enum):
@@ -120,3 +123,4 @@ class Edge:
     src: str
     dst: Optional[str] = None
     cond_group: Optional[int] = None
+    data: dict = field(default_factory=dict)
