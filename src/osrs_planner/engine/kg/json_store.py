@@ -10,7 +10,7 @@ query to an internal InMemoryKGStore (built from the loaded lists).
 
 Serialized shapes (spec §5) — all enum fields are the enum .value string:
     node:  {"id","kind","name","slug","data"}
-    edge:  {"id","type","src","dst","cond_group"}   (dst/cond_group may be null)
+    edge:  {"id","type","src","dst","cond_group","data"}   (dst/cond_group may be null)
     group: {"id","op","parent","children"}          (parent may be null)
              children = list of (int sub-group id) | (inline atom-dict)
     atom:  {"atom_type","ref_node","threshold","qty","data"}

@@ -188,7 +188,10 @@ def check_kg(store: KGStore, quests_data: dict,
             if not isinstance(w, int) or w <= 0:
                 errors.append(f"[reward] progress_towards edge {e.id} has non-positive/missing "
                               f"data.weight {w!r}")
-            if e.dst not in goal_ids:
+            if e.dst is None:
+                errors.append(f"[reward] progress_towards edge {e.id} has no dst "
+                              f"(progress_towards must target a goal node)")
+            elif e.dst not in goal_ids:
                 errors.append(f"[reward] progress_towards edge {e.id} dst {e.dst!r} is not a goal node")
         elif e.type is EdgeType.GRANTS:
             if not (e.data or {}).get("reward"):

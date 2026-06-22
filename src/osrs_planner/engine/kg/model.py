@@ -31,7 +31,8 @@ class NodeKind(str, Enum):
 
 
 class EdgeType(str, Enum):
-    """The 5 FACT edge types (schema: fact edge-type table). Opinion edges
+    """The 7 edge types (5 fact-spine: REQUIRES/GRANTS/DROPS/LOCATED_IN/GATED_BY +
+    EFFECT for item perks + PROGRESS_TOWARDS for goal counting). Opinion edges
     (recommended_for / recommended_method) are out of the engine's fact spine."""
     REQUIRES = "requires"
     GRANTS = "grants"

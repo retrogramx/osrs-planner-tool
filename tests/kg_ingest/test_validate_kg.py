@@ -363,6 +363,19 @@ def test_progress_towards_to_non_goal_is_flagged():
     assert any("8002" in e and "goal" in e for e in v), v
 
 
+def test_grants_edge_without_reward_is_flagged():
+    """A grants edge whose data lacks 'reward' must emit a [reward] grants edge violation."""
+    nodes = [
+        Node(id="quest:x", kind=NodeKind.QUEST, name="X", slug="x", data={}),
+        Node(id="skill:attack", kind=NodeKind.SKILL, name="Attack", slug="attack", data={}),
+    ]
+    edges = [Edge(id=8003, type=EdgeType.GRANTS, src="quest:x",
+                  dst="skill:attack", cond_group=None, data={"form": "fixed", "amount": 1000})]
+    store = InMemoryKGStore(nodes, edges, {})
+    v = validate_kg.check_kg(store, _quests_data(["X"]))
+    assert any("grants edge" in e and "8003" in e and "missing data.reward" in e for e in v), v
+
+
 # --- Step 4: on-real-data acceptance test ---
 
 def test_main_passes_on_committed_kg():

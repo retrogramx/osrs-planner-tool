@@ -2,7 +2,7 @@
 from osrs_planner.engine.kg.model import (
     Edge, EdgeType, Node, NodeKind, ConditionGroup, ConditionAtom, AtomType, Op,
 )
-from osrs_planner.engine.kg.json_store import edge_to_dict, edge_from_dict, node_from_dict
+from osrs_planner.engine.kg.json_store import edge_to_dict, edge_from_dict, node_from_dict, node_to_dict
 from osrs_planner.engine.kg.store import InMemoryKGStore
 
 
@@ -31,6 +31,16 @@ def test_goal_node_round_trips():
          "slug": "quest-point-cape", "data": {"counter_type": "points", "thresholds": [33]}}
     n = node_from_dict(d)
     assert n.kind is NodeKind.GOAL and n.data["thresholds"] == [33]
+    assert node_to_dict(node_from_dict(d)) == d
+
+
+def test_effect_edges_are_inert_to_cycle_detection():
+    # An EFFECT edge (src=item, dst=None) must not break find_cycles().
+    nodes = [Node(id="item:99", kind=NodeKind.ITEM, name="Item99", slug="99")]
+    edges = [Edge(id=1, type=EdgeType.EFFECT, src="item:99", dst=None,
+                  cond_group=None, data={"effect_kind": "stat_multiplier"})]
+    store = InMemoryKGStore(nodes, edges, {})
+    assert store.find_cycles() == []
 
 
 def test_progress_towards_edges_are_inert_to_cycle_detection():

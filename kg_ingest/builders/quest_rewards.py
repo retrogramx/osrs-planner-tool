@@ -24,20 +24,13 @@ from quests 0x10/0x20 and goals 0x30/0x40). assemble.rekey() re-keys to global i
 from __future__ import annotations
 
 from osrs_planner.engine.kg.model import (
-    AtomType, ConditionAtom, ConditionGroup, Edge, EdgeType, Node, NodeKind, Op,
+    AtomType, ConditionAtom, ConditionGroup, Edge, EdgeType, Node, Op,
 )
 from kg_ingest.ids import _stable_hash, access_id, item_id, quest_id, skill_id
 
 _GROUP_BAND = 0x50000000
 _EDGE_BAND = 0x60000000
 _QP_CAPE_GOAL = "goal:quest-point-cape"
-
-_UNLOCK_CATEGORIES = frozenset({
-    "skill", "equipment", "skilling-method", "magic", "spellbook", "prayer",
-    "location", "area", "transportation", "guild", "shortcut", "monster",
-    "slayer", "minigame", "shop", "respawn-point", "area-effect",
-})
-_REWARD_STAGES = frozenset({"started", "in_progress", "completed"})
 
 
 def _eid(owner: str, slot: int) -> int:

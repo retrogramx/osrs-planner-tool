@@ -207,8 +207,10 @@ serve all major game reward domains without schema changes.
 | **Condition `< N` not expressible.** The `ConditionAtom` model only supports `≥ threshold`. Ava's attractor (Ranged < 50) is modelled as an unconditional fallback item. | Disclosed in `known_missing`. |
 | **`special`/scaling XP deferred.** Quests with formula-based XP (While Guthix Sleeps Slayer, Observatory Quest constellation-random) are not in the seed. | Disclosed in `known_missing`. |
 | **`count_satisfied`/`member_count` accumulators not implemented.** The engine's `evaluate` loop does not yet fold PROGRESS_TOWARDS edges for goals with `counter_type: "member_count"`. | Deferred to collection-log domain. |
-| **Effect-edge collision caught by validate_kg.** If two quests grant the same item and both declare effects, the builder emits `_eid(iid, 0)` for both — a duplicate id caught by the KG duplicate-id guard. Fix: use a quest-scoped slot for effect edges in a future refactor. | Currently only one quest per item-effect in the seed; safe. |
+| **Cross-builder edge-id risk.** `rekey()` discards builder-local ids and reindexes per-owner cumulatively, so two effects on one item get distinct global ids within the quest-rewards builder. The residual risk is an `effect` whose item node is also referenced by a goal-owned `requires` edge: goals and quest-rewards are re-keyed in separate passes, and a hash collision between the two passes could produce a duplicate global edge id. This is caught by `validate_kg`'s duplicate-edge-id guard, not silently dropped. | Currently no item appears in both a goal requires edge and a quest-rewards effect in the seed; safe. |
 | **`choice_lamp` with `eligible_skills: "Any"` and `min_level: null` has no condition atom.** The lamp's skill eligibility is advisory metadata in `edge.data`, not a ConditionGroup. | By design — the player picks the skill at runtime, not the static KG. |
+
+| **Quest-state vocabulary mapping.** `Started:` (Questreq source) → `in_progress` (engine vocabulary); the audit's 0-drift status reflects this corrected mapping. | Corrected in `data/raw/questreq_parse.py`; prior parser emitted `"started"` which mismatched committed `quests.json`. |
 
 ---
 

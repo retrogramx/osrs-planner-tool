@@ -100,6 +100,10 @@ def parse_questreq_lua(lua_text: str) -> list[dict]:
                     raw = _unescape_lua(m.group("s"))
                     stage = "completed"
                     if raw.startswith("Started:"):
+                        # OSRS quest-state vocabulary: the source's "Started:" prefix maps to "in_progress"
+                        # (the engine's QUEST_STATE_ORDER vocabulary), NOT a literal "started". This corrected a
+                        # base-commit builder/data mismatch: the prior parser emitted "started" while committed
+                        # quests.json already used "in_progress" (so the old builder couldn't reproduce its own data).
                         stage = "in_progress"
                         raw = raw[len("Started:"):]
                     prereqs.append({"quest": _norm_ws(raw), "stage": stage})
