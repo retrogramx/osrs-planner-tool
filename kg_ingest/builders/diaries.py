@@ -30,7 +30,7 @@ from pathlib import Path
 from osrs_planner.engine.kg.model import (
     AtomType, ConditionAtom, ConditionGroup, Edge, EdgeType, Node, NodeKind, Op,
 )
-from kg_ingest.ids import _stable_hash, diary_tier_id, skill_id
+from kg_ingest.ids import _stable_hash, diary_tier_id, item_id, skill_id
 from kg_ingest.builders.supporting import DIARY_REGION_LABELS
 
 _GROUP_BAND = 0x90000000
@@ -171,6 +171,94 @@ def _parse_compound_quest_req(
     return quest_states, skipped
 
 
+def _emit_rewards(
+    tier_id: str,
+    rec: dict,
+    edges: list[Edge],
+    slot_start: int,
+) -> int:
+    """Emit reward edges for one tier record. Returns the next available slot.
+
+    Emits (per rec):
+      1. GRANTS src=tier, dst=item:<regional_item.item_id>  data={reward,qty,tradeable}
+      2. SUPERSEDES src=item:<higher>, dst=item:<lower>     (when supersedes_item_id present)
+      3. GRANTS src=tier, dst=None                          data={reward:xp,form:choice_lamp,...}
+      4. GRANTS per extra_unlock entry:
+           item_id present  -> src=tier, dst=item:<id>
+           item_id null + untracked -> src=tier, dst=None, data has name+untracked
+    Effects -> Task 7; not emitted here.
+    """
+    slot = slot_start
+
+    # 1. Regional item grant (tier -> item)
+    ri = rec["regional_item"]
+    riid = item_id(ri["item_id"])
+    edges.append(Edge(
+        id=_eid(tier_id, slot),
+        type=EdgeType.GRANTS,
+        src=tier_id,
+        dst=riid,
+        cond_group=None,
+        data={"reward": "items", "qty": 1, "tradeable": ri.get("tradeable", True)},
+    ))
+    slot += 1
+
+    # 2. Supersedes ladder: higher item -> lower item (owned by the item, not the tier)
+    if ri.get("supersedes_item_id") is not None:
+        lower_iid = item_id(ri["supersedes_item_id"])
+        edges.append(Edge(
+            id=_eid(riid, 0),
+            type=EdgeType.SUPERSEDES,
+            src=riid,
+            dst=lower_iid,
+            cond_group=None,
+            data={},
+        ))
+        # No slot increment — supersedes is owned by the item, not the tier
+
+    # 3. XP lamp grant (tier -> None)
+    lamp = rec["lamp"]
+    edges.append(Edge(
+        id=_eid(tier_id, slot),
+        type=EdgeType.GRANTS,
+        src=tier_id,
+        dst=None,
+        cond_group=None,
+        data={
+            "reward": "xp",
+            "form": "choice_lamp",
+            "amount": lamp["amount"],
+            "count": 1,
+            "eligible_skills": lamp["eligible_skills"],
+            "min_level": lamp.get("min_level"),
+            "lamp_item": lamp["lamp_item"],
+        },
+    ))
+    slot += 1
+
+    # 4. Extra unlocks
+    for unlock in rec.get("extra_unlocks", []):
+        iid_raw = unlock.get("item_id")
+        if iid_raw is not None:
+            dst = item_id(iid_raw)
+            data: dict = {"reward": "items", "qty": unlock.get("qty", 1),
+                          "tradeable": unlock.get("tradeable", False)}
+        else:
+            dst = None
+            data = {"reward": "items", "name": unlock["name"], "untracked": True}
+        edges.append(Edge(
+            id=_eid(tier_id, slot),
+            type=EdgeType.GRANTS,
+            src=tier_id,
+            dst=dst,
+            cond_group=None,
+            data=data,
+        ))
+        slot += 1
+
+    return slot
+
+
 def build_diaries(
     task_records: list[dict],
     reward_records: list[dict] | None = None,
@@ -297,5 +385,17 @@ def build_diaries(
             cond_group=None,
             data={"weight": 1},
         ))
+
+    # Emit reward edges after all tier nodes are built.
+    # Reward slot starts at 2 (slots 0=REQUIRES, 1=PROGRESS_TOWARDS already used per tier).
+    if reward_records:
+        _reward_by_key: dict[tuple[str, str], dict] = {}
+        for rr in reward_records:
+            _reward_by_key[(rr["region"], rr["tier"])] = rr
+        for (region, tier) in sorted(by_tier):
+            rr = _reward_by_key.get((region, tier))
+            if rr is not None:
+                tier_id = diary_tier_id(region, tier)
+                _emit_rewards(tier_id, rr, edges, slot_start=2)
 
     return nodes, edges, groups

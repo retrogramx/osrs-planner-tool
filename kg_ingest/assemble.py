@@ -187,6 +187,7 @@ def _load_reward_records() -> list[dict]:
 COMPLETION_GOALS_PATH = Path(__file__).resolve().parents[1] / "data" / "completion_goals.json"
 ACHIEVEMENT_DIARIES_PATH = Path(__file__).resolve().parents[1] / "data" / "achievement_diaries.json"
 DIARY_GOALS_PATH = Path(__file__).resolve().parents[1] / "data" / "diary_goals.json"
+DIARY_REWARDS_PATH = Path(__file__).resolve().parents[1] / "data" / "diary_rewards.json"
 
 
 def _load_diary_task_records() -> list[dict]:
@@ -207,6 +208,12 @@ def _load_diary_goal_records() -> list[dict]:
     return json.loads(DIARY_GOALS_PATH.read_text())["records"]
 
 
+def _load_diary_reward_records() -> list[dict]:
+    if not DIARY_REWARDS_PATH.exists():
+        return []
+    return json.loads(DIARY_REWARDS_PATH.read_text())["records"]
+
+
 def _write_json(path: Path, payload: list) -> None:
     text = json.dumps(payload, indent=2, sort_keys=True, ensure_ascii=False)
     path.write_text(text + "\n")
@@ -219,7 +226,9 @@ def assemble() -> None:
     qr_nodes, qr_edges, qr_groups = build_quest_rewards(_load_reward_records())
     g_nodes, g_edges, g_groups = build_goals()
     cg_nodes, cg_edges, cg_groups = build_completion_goals(_load_completion_goal_records())
-    d_nodes, d_edges, d_groups = build_diaries(_load_diary_task_records())
+    d_nodes, d_edges, d_groups = build_diaries(
+        _load_diary_task_records(), reward_records=_load_diary_reward_records()
+    )
     # Collect the 48 diary tier ids from the diary builder's nodes (sorted for determinism).
     from osrs_planner.engine.kg.model import NodeKind as _NK
     _tier_ids = sorted(n.id for n in d_nodes if n.kind is _NK.DIARY)

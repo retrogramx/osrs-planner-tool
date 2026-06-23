@@ -2712,6 +2712,27 @@
   },
   {
     "data": {},
+    "id": "item:13113",
+    "kind": "item",
+    "name": "Morytania legs 2",
+    "slug": "13113"
+  },
+  {
+    "data": {},
+    "id": "item:13114",
+    "kind": "item",
+    "name": "Morytania legs 3",
+    "slug": "13114"
+  },
+  {
+    "data": {},
+    "id": "item:13121",
+    "kind": "item",
+    "name": "Ardougne cloak 1",
+    "slug": "13121"
+  },
+  {
+    "data": {},
     "id": "item:1478",
     "kind": "item",
     "name": "Amulet of accuracy",

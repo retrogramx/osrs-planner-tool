@@ -205,6 +205,18 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13121",
+    "id": 6132479,
+    "src": "diary:ardougne:easy",
+    "type": "grants"
+  },
+  {
     "cond_group": 5954273,
     "data": {},
     "dst": null,
@@ -648,6 +660,18 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "name": "Bonecrusher",
+      "reward": "items",
+      "untracked": true
+    },
+    "dst": null,
+    "id": 6374230,
+    "src": "diary:morytania:hard",
+    "type": "grants"
+  },
+  {
     "cond_group": 4174021,
     "data": {},
     "dst": null,
@@ -964,6 +988,14 @@
     "id": 6575691,
     "src": "quest:the-knights-sword",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:13113",
+    "id": 6583520,
+    "src": "item:13114",
+    "type": "supersedes"
   },
   {
     "cond_group": 4001576,
@@ -2117,6 +2149,18 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13114",
+    "id": 7309259,
+    "src": "diary:morytania:hard",
+    "type": "grants"
+  },
+  {
     "cond_group": 5983686,
     "data": {},
     "dst": null,
@@ -2915,6 +2959,22 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "amount": 2500,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (easy)",
+      "min_level": 30,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 7854573,
+    "src": "diary:ardougne:easy",
+    "type": "grants"
+  },
+  {
     "cond_group": 4671677,
     "data": {},
     "dst": null,
@@ -2978,6 +3038,22 @@
     "dst": "access:herblore-skill",
     "id": 7887650,
     "src": "quest:druidic-ritual",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 15000,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (hard)",
+      "min_level": 50,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 7894859,
+    "src": "diary:morytania:hard",
     "type": "grants"
   },
   {

@@ -222,3 +222,179 @@ def test_each_tier_has_progress_towards_the_cape():
     _, edges, _ = build_diaries(_tasks())
     pt = [e for e in edges if e.type is EdgeType.PROGRESS_TOWARDS]
     assert pt and all(e.dst == "goal:achievement-diary-cape" and e.data == {"weight": 1} for e in pt)
+
+
+# ---------------------------------------------------------------------------
+# Task 5: reward emission tests — regional item, supersedes, lamp, extra unlocks
+# ---------------------------------------------------------------------------
+
+def _reward_record_ardougne_easy():
+    """Minimal ardougne-easy reward record (no supersedes_item_id, null min_level-variant)."""
+    return {
+        "region": "ardougne",
+        "tier": "easy",
+        "regional_item": {
+            "name": "Ardougne cloak 1",
+            "item_id": 13121,
+            "supersedes_item_id": None,
+        },
+        "lamp": {
+            "amount": 2500,
+            "min_level": None,
+            "eligible_skills": "any",
+            "lamp_item": "Antique lamp (easy)",
+        },
+        "effects": [],
+        "extra_unlocks": [],
+    }
+
+
+def _reward_record_morytania_hard():
+    """Minimal morytania-hard reward record (has supersedes + extra untracked unlock)."""
+    return {
+        "region": "morytania",
+        "tier": "hard",
+        "regional_item": {
+            "name": "Morytania legs 3",
+            "item_id": 13114,
+            "supersedes_item_id": 13113,
+        },
+        "lamp": {
+            "amount": 15000,
+            "min_level": 50,
+            "eligible_skills": "any",
+            "lamp_item": "Antique lamp (hard)",
+        },
+        "effects": [],
+        "extra_unlocks": [
+            {
+                "reward_type": "items",
+                "name": "Bonecrusher",
+                "item_id": None,
+                "untracked": True,
+                "note": "Inventory item; not in items_equipment.json.",
+            }
+        ],
+    }
+
+
+def _tasks_for_region(region_display: str, tier: str = "easy") -> list[dict]:
+    return [
+        {"diary_region": region_display, "tier": tier, "task_number": 1, "task": "T1",
+         "requirements": {"skills": [], "quests": [], "items": []},
+         "boostable": False, "reward": "r", "source_url": "u"},
+    ]
+
+
+def test_regional_item_grants_edge():
+    """Regional item produces GRANTS edge from tier node to item:<item_id>."""
+    tasks = _tasks_for_region("Ardougne", "easy")
+    rec = _reward_record_ardougne_easy()
+    _, edges, _ = build_diaries(tasks, reward_records=[rec])
+    grants = [e for e in edges if e.type is EdgeType.GRANTS]
+    item_grants = [e for e in grants if e.dst == "item:13121"]
+    assert len(item_grants) == 1
+    e = item_grants[0]
+    assert e.src == "diary:ardougne:easy"
+    assert e.data["reward"] == "items"
+    assert e.data["qty"] == 1
+
+
+def test_regional_item_grants_no_internal_keys():
+    """Grants edge data must not contain internal record keys (source_token, target, etc.)."""
+    tasks = _tasks_for_region("Ardougne", "easy")
+    rec = _reward_record_ardougne_easy()
+    _, edges, _ = build_diaries(tasks, reward_records=[rec])
+    item_grants = [e for e in edges if e.type is EdgeType.GRANTS and e.dst == "item:13121"]
+    assert item_grants
+    data = item_grants[0].data
+    forbidden = {"source_token", "target", "target_facet", "item_id", "name"}
+    assert not (forbidden & set(data)), f"forbidden keys found: {forbidden & set(data)}"
+
+
+def test_no_supersedes_edge_when_supersedes_item_id_is_null():
+    """When supersedes_item_id is None, no SUPERSEDES edge is emitted."""
+    tasks = _tasks_for_region("Ardougne", "easy")
+    rec = _reward_record_ardougne_easy()
+    _, edges, _ = build_diaries(tasks, reward_records=[rec])
+    supersedes = [e for e in edges if e.type is EdgeType.SUPERSEDES]
+    assert len(supersedes) == 0
+
+
+def test_supersedes_edge_emitted_when_present():
+    """When supersedes_item_id is set, SUPERSEDES edge src=higher item, dst=lower item."""
+    tasks = _tasks_for_region("Morytania", "hard")
+    rec = _reward_record_morytania_hard()
+    _, edges, _ = build_diaries(tasks, reward_records=[rec])
+    supersedes = [e for e in edges if e.type is EdgeType.SUPERSEDES]
+    assert len(supersedes) == 1
+    e = supersedes[0]
+    assert e.src == "item:13114"   # higher item supersedes
+    assert e.dst == "item:13113"   # lower item
+
+
+def test_choice_lamp_grants_dst_none():
+    """XP lamp produces GRANTS edge with dst=None and eligible_skills='any'."""
+    tasks = _tasks_for_region("Ardougne", "easy")
+    rec = _reward_record_ardougne_easy()
+    _, edges, _ = build_diaries(tasks, reward_records=[rec])
+    lamp_grants = [e for e in edges if e.type is EdgeType.GRANTS and e.dst is None
+                   and e.data.get("reward") == "xp"]
+    assert len(lamp_grants) == 1
+    d = lamp_grants[0].data
+    assert d["form"] == "choice_lamp"
+    assert d["eligible_skills"] == "any"
+    assert d["amount"] == 2500
+    assert d["lamp_item"] == "Antique lamp (easy)"
+
+
+def test_choice_lamp_min_level_null_honored():
+    """When lamp.min_level is null, the edge data has min_level=None (not omitted)."""
+    tasks = _tasks_for_region("Ardougne", "easy")
+    rec = _reward_record_ardougne_easy()
+    assert rec["lamp"]["min_level"] is None
+    _, edges, _ = build_diaries(tasks, reward_records=[rec])
+    lamp_grants = [e for e in edges if e.type is EdgeType.GRANTS and e.dst is None
+                   and e.data.get("reward") == "xp"]
+    assert lamp_grants[0].data["min_level"] is None
+
+
+def test_choice_lamp_min_level_set_when_present():
+    """When lamp.min_level is set, the edge data carries it."""
+    tasks = _tasks_for_region("Morytania", "hard")
+    rec = _reward_record_morytania_hard()
+    assert rec["lamp"]["min_level"] == 50
+    _, edges, _ = build_diaries(tasks, reward_records=[rec])
+    lamp_grants = [e for e in edges if e.type is EdgeType.GRANTS and e.dst is None
+                   and e.data.get("reward") == "xp"]
+    assert lamp_grants[0].data["min_level"] == 50
+
+
+def test_untracked_extra_unlock_grants_dst_none():
+    """Untracked extra_unlock (item_id=null, untracked=true) → GRANTS dst=None with name+untracked."""
+    tasks = _tasks_for_region("Morytania", "hard")
+    rec = _reward_record_morytania_hard()
+    _, edges, _ = build_diaries(tasks, reward_records=[rec])
+    # There should be a GRANTS edge for the untracked Bonecrusher
+    untracked = [e for e in edges if e.type is EdgeType.GRANTS and e.dst is None
+                 and e.data.get("untracked") is True]
+    assert len(untracked) == 1
+    d = untracked[0].data
+    assert d["name"] == "Bonecrusher"
+    assert d["reward"] == "items"
+
+
+def test_reward_edges_do_not_contaminate_task_only_build():
+    """Calling build_diaries without reward_records emits no GRANTS/SUPERSEDES edges."""
+    _, edges, _ = build_diaries(_tasks())
+    assert all(e.type not in (EdgeType.GRANTS, EdgeType.SUPERSEDES) for e in edges)
+
+
+def test_reward_edge_slot_distinct_from_requires_and_progress_towards():
+    """All edges from the same tier node must have distinct ids."""
+    tasks = _tasks_for_region("Morytania", "hard")
+    rec = _reward_record_morytania_hard()
+    _, edges, _ = build_diaries(tasks, reward_records=[rec])
+    tier_edges = [e for e in edges if e.src == "diary:morytania:hard"]
+    ids = [e.id for e in tier_edges]
+    assert len(ids) == len(set(ids)), f"duplicate edge ids: {ids}"
