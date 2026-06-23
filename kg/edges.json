@@ -68,6 +68,14 @@
     "type": "grants"
   },
   {
+    "cond_group": 5708040,
+    "data": {},
+    "dst": null,
+    "id": 6049609,
+    "src": "diary:western:hard",
+    "type": "requires"
+  },
+  {
     "cond_group": null,
     "data": {
       "weight": 1
@@ -114,6 +122,14 @@
     "dst": null,
     "id": 6084043,
     "src": "quest:holy-grail",
+    "type": "requires"
+  },
+  {
+    "cond_group": 4365065,
+    "data": {},
+    "dst": null,
+    "id": 6094084,
+    "src": "diary:wilderness:medium",
     "type": "requires"
   },
   {
@@ -169,6 +185,14 @@
     "type": "grants"
   },
   {
+    "cond_group": 4162559,
+    "data": {},
+    "dst": null,
+    "id": 6142056,
+    "src": "diary:ardougne:medium",
+    "type": "requires"
+  },
+  {
     "cond_group": null,
     "data": {
       "amount": 2500,
@@ -186,6 +210,14 @@
     "dst": null,
     "id": 6160228,
     "src": "quest:x-marks-the-spot",
+    "type": "requires"
+  },
+  {
+    "cond_group": 5424772,
+    "data": {},
+    "dst": null,
+    "id": 6162924,
+    "src": "diary:ardougne:easy",
     "type": "requires"
   },
   {
@@ -207,6 +239,14 @@
     "id": 6167886,
     "src": "quest:the-fremennik-exiles",
     "type": "grants"
+  },
+  {
+    "cond_group": 5557888,
+    "data": {},
+    "dst": null,
+    "id": 6168980,
+    "src": "diary:western:medium",
+    "type": "requires"
   },
   {
     "cond_group": 4436538,
@@ -241,6 +281,14 @@
     "type": "requires"
   },
   {
+    "cond_group": 5721634,
+    "data": {},
+    "dst": null,
+    "id": 6174608,
+    "src": "diary:falador:easy",
+    "type": "requires"
+  },
+  {
     "cond_group": null,
     "data": {
       "amount": 13750,
@@ -258,6 +306,14 @@
     "dst": null,
     "id": 6209013,
     "src": "quest:recipe-for-disaster-another-cooks-quest",
+    "type": "requires"
+  },
+  {
+    "cond_group": 4775004,
+    "data": {},
+    "dst": null,
+    "id": 6212552,
+    "src": "diary:lumbridge:elite",
     "type": "requires"
   },
   {
@@ -388,6 +444,14 @@
     "type": "requires"
   },
   {
+    "cond_group": 4162705,
+    "data": {},
+    "dst": null,
+    "id": 6288226,
+    "src": "diary:ardougne:hard",
+    "type": "requires"
+  },
+  {
     "cond_group": 5657903,
     "data": {},
     "dst": null,
@@ -417,6 +481,14 @@
     "dst": null,
     "id": 6317209,
     "src": "quest:song-of-the-elves",
+    "type": "requires"
+  },
+  {
+    "cond_group": 5467063,
+    "data": {},
+    "dst": null,
+    "id": 6320224,
+    "src": "diary:wilderness:easy",
     "type": "requires"
   },
   {
@@ -457,6 +529,14 @@
     "dst": null,
     "id": 6365257,
     "src": "quest:a-souls-bane",
+    "type": "requires"
+  },
+  {
+    "cond_group": 5656268,
+    "data": {},
+    "dst": null,
+    "id": 6367110,
+    "src": "diary:karamja:easy",
     "type": "requires"
   },
   {
@@ -624,6 +704,14 @@
     "type": "requires"
   },
   {
+    "cond_group": 4984522,
+    "data": {},
+    "dst": null,
+    "id": 6485398,
+    "src": "diary:wilderness:elite",
+    "type": "requires"
+  },
+  {
     "cond_group": 5996296,
     "data": {},
     "dst": null,
@@ -645,6 +733,14 @@
     "dst": null,
     "id": 6500933,
     "src": "quest:secrets-of-the-north",
+    "type": "requires"
+  },
+  {
+    "cond_group": 5330998,
+    "data": {},
+    "dst": null,
+    "id": 6503300,
+    "src": "diary:western:easy",
     "type": "requires"
   },
   {
@@ -772,6 +868,14 @@
     "type": "progress_towards"
   },
   {
+    "cond_group": 4473576,
+    "data": {},
+    "dst": null,
+    "id": 6628640,
+    "src": "diary:fremennik:easy",
+    "type": "requires"
+  },
+  {
     "cond_group": 5908675,
     "data": {},
     "dst": null,
@@ -788,6 +892,14 @@
     "type": "requires"
   },
   {
+    "cond_group": 5039481,
+    "data": {},
+    "dst": null,
+    "id": 6648293,
+    "src": "diary:kourend:elite",
+    "type": "requires"
+  },
+  {
     "cond_group": 5855944,
     "data": {},
     "dst": null,
@@ -801,6 +913,14 @@
     "dst": null,
     "id": 6676810,
     "src": "access:fairy-rings",
+    "type": "requires"
+  },
+  {
+    "cond_group": 4045334,
+    "data": {},
+    "dst": null,
+    "id": 6681802,
+    "src": "diary:lumbridge:hard",
     "type": "requires"
   },
   {
@@ -875,6 +995,22 @@
     "type": "grants"
   },
   {
+    "cond_group": 4780525,
+    "data": {},
+    "dst": null,
+    "id": 6718514,
+    "src": "diary:kandarin:medium",
+    "type": "requires"
+  },
+  {
+    "cond_group": 4798666,
+    "data": {},
+    "dst": null,
+    "id": 6722773,
+    "src": "diary:karamja:medium",
+    "type": "requires"
+  },
+  {
     "cond_group": 5504143,
     "data": {},
     "dst": null,
@@ -907,6 +1043,14 @@
     "type": "requires"
   },
   {
+    "cond_group": 4984430,
+    "data": {},
+    "dst": null,
+    "id": 6749156,
+    "src": "diary:fremennik:elite",
+    "type": "requires"
+  },
+  {
     "cond_group": 4306721,
     "data": {},
     "dst": null,
@@ -920,6 +1064,14 @@
     "dst": null,
     "id": 6772453,
     "src": "quest:enter-the-abyss",
+    "type": "requires"
+  },
+  {
+    "cond_group": 4881865,
+    "data": {},
+    "dst": null,
+    "id": 6776246,
+    "src": "diary:lumbridge:easy",
     "type": "requires"
   },
   {
@@ -962,6 +1114,14 @@
     "type": "requires"
   },
   {
+    "cond_group": 4628684,
+    "data": {},
+    "dst": null,
+    "id": 6816483,
+    "src": "diary:lumbridge:medium",
+    "type": "requires"
+  },
+  {
     "cond_group": 5679647,
     "data": {},
     "dst": null,
@@ -986,6 +1146,14 @@
     "type": "requires"
   },
   {
+    "cond_group": 4671236,
+    "data": {},
+    "dst": null,
+    "id": 6843177,
+    "src": "diary:wilderness:hard",
+    "type": "requires"
+  },
+  {
     "cond_group": 5478130,
     "data": {},
     "dst": null,
@@ -994,11 +1162,27 @@
     "type": "requires"
   },
   {
+    "cond_group": 5035358,
+    "data": {},
+    "dst": null,
+    "id": 6865202,
+    "src": "diary:desert:elite",
+    "type": "requires"
+  },
+  {
     "cond_group": 5806289,
     "data": {},
     "dst": null,
     "id": 6865274,
     "src": "quest:enakhras-lament",
+    "type": "requires"
+  },
+  {
+    "cond_group": 5764606,
+    "data": {},
+    "dst": null,
+    "id": 6869349,
+    "src": "diary:desert:easy",
     "type": "requires"
   },
   {
@@ -1026,6 +1210,14 @@
     "type": "requires"
   },
   {
+    "cond_group": 5921126,
+    "data": {},
+    "dst": null,
+    "id": 6883632,
+    "src": "diary:varrock:hard",
+    "type": "requires"
+  },
+  {
     "cond_group": 4448501,
     "data": {},
     "dst": null,
@@ -1047,6 +1239,14 @@
     "dst": null,
     "id": 6890107,
     "src": "quest:heroes-quest",
+    "type": "requires"
+  },
+  {
+    "cond_group": 5238281,
+    "data": {},
+    "dst": null,
+    "id": 6893449,
+    "src": "diary:kandarin:hard",
     "type": "requires"
   },
   {
@@ -1079,6 +1279,14 @@
     "dst": null,
     "id": 6910285,
     "src": "quest:eagles-peak",
+    "type": "requires"
+  },
+  {
+    "cond_group": 5605450,
+    "data": {},
+    "dst": null,
+    "id": 6910469,
+    "src": "diary:kandarin:easy",
     "type": "requires"
   },
   {
@@ -1186,6 +1394,14 @@
     "type": "requires"
   },
   {
+    "cond_group": 4292913,
+    "data": {},
+    "dst": null,
+    "id": 7020817,
+    "src": "diary:falador:hard",
+    "type": "requires"
+  },
+  {
     "cond_group": null,
     "data": {
       "weight": 2
@@ -1270,6 +1486,14 @@
     "id": 7060038,
     "src": "item:10499",
     "type": "effect"
+  },
+  {
+    "cond_group": 4323563,
+    "data": {},
+    "dst": null,
+    "id": 7066072,
+    "src": "diary:fremennik:medium",
+    "type": "requires"
   },
   {
     "cond_group": 4500601,
@@ -1397,6 +1621,14 @@
     "type": "requires"
   },
   {
+    "cond_group": 5554171,
+    "data": {},
+    "dst": null,
+    "id": 7143286,
+    "src": "diary:ardougne:elite",
+    "type": "requires"
+  },
+  {
     "cond_group": 5804118,
     "data": {},
     "dst": null,
@@ -1428,6 +1660,14 @@
     "dst": null,
     "id": 7161175,
     "src": "quest:ernest-the-chicken",
+    "type": "requires"
+  },
+  {
+    "cond_group": 5635210,
+    "data": {},
+    "dst": null,
+    "id": 7176223,
+    "src": "diary:desert:hard",
     "type": "requires"
   },
   {
@@ -1503,6 +1743,14 @@
     "dst": null,
     "id": 7253165,
     "src": "quest:eadgars-ruse",
+    "type": "requires"
+  },
+  {
+    "cond_group": 5675184,
+    "data": {},
+    "dst": null,
+    "id": 7254000,
+    "src": "diary:kandarin:elite",
     "type": "requires"
   },
   {
@@ -1588,6 +1836,14 @@
     "type": "requires"
   },
   {
+    "cond_group": 5983686,
+    "data": {},
+    "dst": null,
+    "id": 7316245,
+    "src": "diary:morytania:medium",
+    "type": "requires"
+  },
+  {
     "cond_group": 4868001,
     "data": {},
     "dst": null,
@@ -1611,6 +1867,14 @@
     "dst": null,
     "id": 7364653,
     "src": "quest:meat-and-greet",
+    "type": "requires"
+  },
+  {
+    "cond_group": 5933664,
+    "data": {},
+    "dst": null,
+    "id": 7374112,
+    "src": "diary:fremennik:hard",
     "type": "requires"
   },
   {
@@ -1663,6 +1927,14 @@
     "dst": null,
     "id": 7430712,
     "src": "quest:mage-arena-i",
+    "type": "requires"
+  },
+  {
+    "cond_group": 4368028,
+    "data": {},
+    "dst": null,
+    "id": 7438272,
+    "src": "diary:kourend:easy",
     "type": "requires"
   },
   {
@@ -1726,6 +1998,22 @@
     "type": "requires"
   },
   {
+    "cond_group": 5877831,
+    "data": {},
+    "dst": null,
+    "id": 7490065,
+    "src": "diary:falador:elite",
+    "type": "requires"
+  },
+  {
+    "cond_group": 5854354,
+    "data": {},
+    "dst": null,
+    "id": 7502854,
+    "src": "diary:karamja:elite",
+    "type": "requires"
+  },
+  {
     "cond_group": 5381566,
     "data": {},
     "dst": null,
@@ -1763,6 +2051,14 @@
     "dst": null,
     "id": 7523805,
     "src": "quest:client-of-kourend",
+    "type": "requires"
+  },
+  {
+    "cond_group": 5569641,
+    "data": {},
+    "dst": null,
+    "id": 7526052,
+    "src": "diary:karamja:hard",
     "type": "requires"
   },
   {
@@ -1824,6 +2120,14 @@
     "type": "requires"
   },
   {
+    "cond_group": 5596577,
+    "data": {},
+    "dst": null,
+    "id": 7547171,
+    "src": "diary:morytania:hard",
+    "type": "requires"
+  },
+  {
     "cond_group": null,
     "data": {
       "weight": 10
@@ -1850,6 +2154,14 @@
     "type": "requires"
   },
   {
+    "cond_group": 5654168,
+    "data": {},
+    "dst": null,
+    "id": 7584845,
+    "src": "diary:varrock:easy",
+    "type": "requires"
+  },
+  {
     "cond_group": 4005359,
     "data": {},
     "dst": null,
@@ -1871,6 +2183,22 @@
     "dst": null,
     "id": 7619913,
     "src": "quest:pirates-treasure",
+    "type": "requires"
+  },
+  {
+    "cond_group": 4808921,
+    "data": {},
+    "dst": null,
+    "id": 7623920,
+    "src": "diary:western:elite",
+    "type": "requires"
+  },
+  {
+    "cond_group": 4648202,
+    "data": {},
+    "dst": null,
+    "id": 7623985,
+    "src": "diary:morytania:elite",
     "type": "requires"
   },
   {
@@ -1914,6 +2242,14 @@
     "type": "requires"
   },
   {
+    "cond_group": 4940056,
+    "data": {},
+    "dst": null,
+    "id": 7658483,
+    "src": "diary:kourend:hard",
+    "type": "requires"
+  },
+  {
     "cond_group": 4229421,
     "data": {},
     "dst": null,
@@ -1934,6 +2270,14 @@
     "id": 7673295,
     "src": "quest:below-ice-mountain",
     "type": "grants"
+  },
+  {
+    "cond_group": 5134578,
+    "data": {},
+    "dst": null,
+    "id": 7680659,
+    "src": "diary:kourend:medium",
+    "type": "requires"
   },
   {
     "cond_group": 5672118,
@@ -2000,6 +2344,14 @@
     "type": "requires"
   },
   {
+    "cond_group": 4379307,
+    "data": {},
+    "dst": null,
+    "id": 7794900,
+    "src": "diary:desert:medium",
+    "type": "requires"
+  },
+  {
     "cond_group": 4956119,
     "data": {},
     "dst": null,
@@ -2056,11 +2408,27 @@
     "type": "requires"
   },
   {
+    "cond_group": 5501921,
+    "data": {},
+    "dst": null,
+    "id": 7828546,
+    "src": "diary:morytania:easy",
+    "type": "requires"
+  },
+  {
     "cond_group": 5608638,
     "data": {},
     "dst": null,
     "id": 7828664,
     "src": "quest:family-crest",
+    "type": "requires"
+  },
+  {
+    "cond_group": 4370599,
+    "data": {},
+    "dst": null,
+    "id": 7829919,
+    "src": "diary:falador:medium",
     "type": "requires"
   },
   {
@@ -2112,6 +2480,14 @@
     "type": "requires"
   },
   {
+    "cond_group": 4911451,
+    "data": {},
+    "dst": null,
+    "id": 7872098,
+    "src": "diary:varrock:elite",
+    "type": "requires"
+  },
+  {
     "cond_group": 4378871,
     "data": {},
     "dst": null,
@@ -2144,6 +2520,14 @@
     "id": 7895276,
     "src": "quest:animal-magnetism",
     "type": "grants"
+  },
+  {
+    "cond_group": 5697657,
+    "data": {},
+    "dst": null,
+    "id": 7903890,
+    "src": "diary:varrock:medium",
+    "type": "requires"
   },
   {
     "cond_group": null,
