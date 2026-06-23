@@ -28,6 +28,7 @@ Exit 0 if no discrepancies (PASSED), 1 otherwise (FAILED).
 from __future__ import annotations
 
 import argparse
+import datetime
 import json
 import os
 import re
@@ -39,7 +40,6 @@ REWARDS_PATH = os.path.join(ROOT, "data", "quest_rewards.json")
 CACHE_PATH = os.path.join(ROOT, "data", "raw", "quest_reward_blocks.json")
 WIKI_BASE = "https://oldschool.runescape.wiki/w/{name}?action=raw"
 UA = "GildedTome-research/1.0 (aalvarez0295@gmail.com)"
-CACHE_DATE = "2026-06-22"
 
 
 # ---------------------------------------------------------------------------
@@ -52,7 +52,7 @@ def extract_rewards_block(wikitext: str) -> str:
     tokens are checked against ONLY this section, not the whole page — that is
     what makes a fabricated unlock listed under "Required for completing" get
     flagged even if it appears elsewhere on the page."""
-    m = re.search(r"(==Rewards==\s*\n.*?)(?=\n==[^=]|\Z)", wikitext, re.DOTALL)
+    m = re.search(r"(==Rewards==\s*\n.*?)(?=\n*==[^=]|\Z)", wikitext, re.DOTALL)
     if m:
         return m.group(1).strip()
     return ""
@@ -222,13 +222,18 @@ def _fetch_block(quest: str) -> dict:
     return {
         "rewards_block": block,
         "source_url": url.replace("?action=raw", ""),
-        "accessed": CACHE_DATE,
+        "accessed": datetime.date.today().isoformat(),
     }
 
 
-def refresh_cache(seed_records: list[dict]) -> dict:
-    """Re-fetch wiki pages for all seed quests and return a fresh blocks dict."""
+def refresh_cache(seed_records: list[dict]) -> tuple[dict, list[str]]:
+    """Re-fetch wiki pages for all seed quests and return (blocks dict, failed_quests list).
+
+    If any quest fails, returns the failed list (non-empty). Caller should check
+    for failures before saving the cache.
+    """
     blocks: dict = {}
+    failed_quests: list[str] = []
     for rec in seed_records:
         quest = rec["quest"]
         print(f"  fetching: {quest}", flush=True)
@@ -236,7 +241,8 @@ def refresh_cache(seed_records: list[dict]) -> dict:
             blocks[quest] = _fetch_block(quest)
         except Exception as exc:
             print(f"  ERROR fetching {quest!r}: {exc}", file=sys.stderr)
-    return blocks
+            failed_quests.append(quest)
+    return blocks, failed_quests
 
 
 def load_cache() -> dict:
@@ -270,7 +276,16 @@ def main(argv=None) -> int:
 
     if args.refresh:
         print("QUEST-REWARDS SOURCE-GROUNDING: refreshing cache from live wiki ...")
-        blocks = refresh_cache(seed_records)
+        blocks, failed_quests = refresh_cache(seed_records)
+        if failed_quests:
+            print(
+                f"\nQUEST-REWARDS REFRESH FAILED -- {len(failed_quests)} quest(s) failed to fetch:",
+                file=sys.stderr,
+            )
+            for q in failed_quests:
+                print(f"  {q}", file=sys.stderr)
+            print("Cache NOT updated to prevent incomplete data.", file=sys.stderr)
+            return 1
         save_cache(blocks)
         print(f"  Cache written to {CACHE_PATH}")
     else:
