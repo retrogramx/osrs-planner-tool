@@ -228,3 +228,47 @@ serve all major game reward domains without schema changes.
 ---
 
 *Source: OSRS Wiki (CC BY-NC-SA 3.0). Accessed 2026-06-22.*
+
+## 7. Source-Grounding Verifier
+
+`data/verify_quest_rewards.py` is the **deterministic fabrication gate** for `quest_rewards.json`.
+
+**What it checks:** For each seed reward, it confirms that a distinctive SOURCE TOKEN is present
+(case-insensitive substring) in the quest's cached `==Rewards==` wiki block
+(`data/raw/quest_reward_blocks.json`).  This catches rewards fabricated or misassigned to the
+wrong wiki section — e.g. an unlock that appears under "Required for completing" instead of
+"Rewards" is NOT in the extracted block and is flagged as a discrepancy.
+
+**Token derivation by reward type:**
+- `items` → item name
+- `xp/fixed` → skill name + comma-formatted amount (e.g. "13,750")
+- `xp/choice_lamp` → comma-formatted amount (e.g. "2,500")
+- `unlock` → `access` field (or explicit `source_token` if set)
+- `cosmetic` → cosmetic `name`
+- `effect` → SKIPPED (rides on a granted item already token-checked)
+
+**Escape hatch:** A reward dict may carry a `"source_token"` string to override token derivation
+when the wiki phrasing doesn't textually match the derived field (e.g. `access = "Herblore skill"`
+when the wiki says "ability to use the [[Herblore]] skill" → `source_token = "Herblore"`).
+The source_token must still be a genuine substring of the rewards block.
+
+**Output:**
+- FATAL discrepancy: a required token is absent — exit 1 (gate fails)
+- INFORMATIONAL missing-note: a wiki bullet line has no matching seed reward (seed intentionally
+  omits many rewards per the shape-sample design) — printed but does NOT fail the gate
+
+**Usage:**
+```
+./venv/bin/python data/verify_quest_rewards.py           # offline (uses committed cache)
+./venv/bin/python data/verify_quest_rewards.py --refresh # re-fetches live wiki, rewrites cache
+```
+
+**Relationship to the LLM verbatim sweep:** This verifier is the repeatable deterministic gate
+(token presence, offline). The periodic LLM verbatim sweep (performed manually) is the deep
+semantic audit — it catches wrong amounts, incorrect conditions, and subtle misattributions that
+a token-presence heuristic cannot. Both layers are complementary; this verifier runs on every
+data change, the LLM sweep runs periodically or before major merges.
+
+**Generalise when Diaries/CAs arrive:** The same pattern (committed cache of `==Rewards==` blocks
++ source_tokens derivation) should be extended per domain when Achievement Diary reward data and
+Combat Achievement reward data are added.
