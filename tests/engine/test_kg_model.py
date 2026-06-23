@@ -24,7 +24,7 @@ def test_node_kind_is_str_enum():
 def test_edge_type_members_match_schema():
     assert {e.value for e in EdgeType} == {
         "requires", "grants", "drops", "located_in", "gated_by",
-        "effect", "progress_towards",
+        "effect", "progress_towards", "supersedes",
     }
 
 
@@ -39,6 +39,7 @@ def test_atom_type_locked_set_includes_gear_loadout_and_ca_split():
         "achievement_diary", "combat_achievement", "item",
         "is_unlocked", "gear_loadout", "kill_count", "quest_points",
         "account_type", "clue_scrolls", "combat_achievement_points",
+        "count_satisfied",
     }
     # the de-overload (schema §"combat_achievement scope"): the binary
     # per-task atom and the accumulator tier-points atom are DISTINCT members.

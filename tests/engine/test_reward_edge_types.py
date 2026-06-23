@@ -43,6 +43,16 @@ def test_effect_edges_are_inert_to_cycle_detection():
     assert store.find_cycles() == []
 
 
+def test_supersedes_enum_exists_and_is_inert():
+    from osrs_planner.engine.kg.model import EdgeType, Edge, Node, NodeKind
+    from osrs_planner.engine.kg.store import InMemoryKGStore
+    assert EdgeType.SUPERSEDES.value == "supersedes"
+    nodes = [Node(id="item:1", kind=NodeKind.ITEM, name="A", slug="1"),
+             Node(id="item:2", kind=NodeKind.ITEM, name="B", slug="2")]
+    edges = [Edge(id=1, type=EdgeType.SUPERSEDES, src="item:2", dst="item:1", cond_group=None, data={})]
+    assert InMemoryKGStore(nodes, edges, {}).find_cycles() == []
+
+
 def test_progress_towards_edges_are_inert_to_cycle_detection():
     # A goal node + a progress_towards edge from a quest must not break find_cycles().
     nodes = [Node(id="quest:x", kind=NodeKind.QUEST, name="X", slug="x"),

@@ -41,6 +41,7 @@ class EdgeType(str, Enum):
     GATED_BY = "gated_by"
     EFFECT = "effect"                  # a passive/permanent perk riding on a granted item/unlock (spec §4)
     PROGRESS_TOWARDS = "progress_towards"  # counting contribution toward a goal node; data={weight} (spec §5)
+    SUPERSEDES = "supersedes"          # item upgrade ladder (cloak 1≺2≺3≺4); inert to gating
 
 
 class Op(str, Enum):
@@ -68,6 +69,7 @@ class AtomType(str, Enum):
     ACCOUNT_TYPE = "account_type"
     CLUE_SCROLLS = "clue_scrolls"
     COMBAT_ACHIEVEMENT_POINTS = "combat_achievement_points"
+    COUNT_SATISFIED = "count_satisfied"  # cardinality of completed members of data.set_ref (goal:*-cape)
 
 
 @dataclass(frozen=True)
