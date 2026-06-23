@@ -93,23 +93,23 @@ def build_quest_rewards(
                 else:  # choice_lamp / special: no single skill -> dst=None, carry the spec
                     dst = None
                     data = {"reward": "xp", **{k: v for k, v in rw.items()
-                                               if k != "reward_type"}}
+                                               if k not in ("reward_type", "source_token")}}
             elif rtype == "items":
                 dst = item_id(rw["item_id"]) if rw.get("item_id") is not None else None
                 data = {"reward": "items",
                         **{k: v for k, v in rw.items()
-                           if k not in ("reward_type", "item", "item_id", "condition")}}
+                           if k not in ("reward_type", "item", "item_id", "condition", "source_token")}}
             elif rtype == "unlock":
                 dst = access_id(rw["access"]) if rw.get("access") else None
                 data = {"reward": "unlock",
                         **{k: v for k, v in rw.items()
-                           if k not in ("reward_type", "access")}}
+                           if k not in ("reward_type", "access", "source_token")}}
                 if rw.get("access"):
                     data["access"] = rw["access"]
             elif rtype == "cosmetic":
                 dst = None
                 data = {"reward": "cosmetic",
-                        **{k: v for k, v in rw.items() if k != "reward_type"}}
+                        **{k: v for k, v in rw.items() if k not in ("reward_type", "source_token")}}
             else:
                 raise ValueError(f"build_quest_rewards: unknown reward_type {rtype!r} "
                                  f"for quest {rec['quest']!r}")

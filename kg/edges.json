@@ -93,7 +93,6 @@
       "name": "Dragon Slayer task assignment",
       "note": "Dragons can be assigned as a Slayer task immediately after starting the quest",
       "reward": "unlock",
-      "source_token": "Slayer task",
       "stage": "started"
     },
     "dst": "access:dragon-slayer-task",
@@ -868,7 +867,6 @@
       "category": "skilling-method",
       "name": "Trade with Ava for Ava's devices",
       "reward": "unlock",
-      "source_token": "Ava's device",
       "stage": "completed"
     },
     "dst": "access:avas-device-upgrades",
@@ -1522,7 +1520,6 @@
       "category": "equipment",
       "name": "Equip green d'hide body, rune platebody, and dragon platebody",
       "reward": "unlock",
-      "source_token": "rune platebody",
       "stage": "completed"
     },
     "dst": "access:rune-platebody-equip",
@@ -2129,7 +2126,6 @@
       "category": "skill",
       "name": "Herblore skill access",
       "reward": "unlock",
-      "source_token": "Herblore",
       "stage": "completed"
     },
     "dst": "access:herblore-skill",
@@ -2156,7 +2152,6 @@
       "category": "skilling-method",
       "name": "Mine rune essence",
       "reward": "unlock",
-      "source_token": "rune essence",
       "stage": "completed"
     },
     "dst": "access:rune-essence-mine",
