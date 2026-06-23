@@ -65,6 +65,20 @@
     "slug": "rune-platebody-equip"
   },
   {
+    "data": {},
+    "id": "activity:barrows",
+    "kind": "activity",
+    "name": "Barrows",
+    "slug": "barrows"
+  },
+  {
+    "data": {},
+    "id": "activity:west-ardougne-cat-trade",
+    "kind": "activity",
+    "name": "West Ardougne cat trade",
+    "slug": "west-ardougne-cat-trade"
+  },
+  {
     "data": {
       "region": "ardougne",
       "skipped_quest_reqs": 0,
@@ -4330,6 +4344,20 @@
     "kind": "quest",
     "name": "Zogre Flesh Eaters",
     "slug": "zogre-flesh-eaters"
+  },
+  {
+    "data": {},
+    "id": "region:ardougne-monastery",
+    "kind": "region",
+    "name": "Ardougne Monastery",
+    "slug": "ardougne-monastery"
+  },
+  {
+    "data": {},
+    "id": "region:burgh-de-rott",
+    "kind": "region",
+    "name": "Burgh de Rott",
+    "slug": "burgh-de-rott"
   },
   {
     "data": {},

@@ -1,0 +1,40 @@
+{
+  "_provenance": {
+    "source_urls": [
+      "https://oldschool.runescape.wiki/w/Achievement_Diary",
+      "https://oldschool.runescape.wiki/w/Barrows",
+      "https://oldschool.runescape.wiki/w/Burgh_de_Rott",
+      "https://oldschool.runescape.wiki/w/Ardougne_Monastery"
+    ],
+    "license": "CC BY-NC-SA 3.0",
+    "extraction_method": "manual-transcription-from-wiki",
+    "note": "Bounded content-node set targeted by diary effects (spec §4): existence only (id/kind/name/slug) — facts (drops/location/stats) are out of scope and accrete in later bricks. Initial set covers the Task-4 reward seed (Ardougne easy + Morytania hard); expanded to all targeted content in Task 9. id slug derived via kg_ingest.ids slugify of the wiki page name.",
+    "kinds": ["activity", "monster", "region"]
+  },
+  "records": [
+    {
+      "id": "activity:barrows",
+      "kind": "activity",
+      "name": "Barrows",
+      "slug": "barrows"
+    },
+    {
+      "id": "activity:west-ardougne-cat-trade",
+      "kind": "activity",
+      "name": "West Ardougne cat trade",
+      "slug": "west-ardougne-cat-trade"
+    },
+    {
+      "id": "region:ardougne-monastery",
+      "kind": "region",
+      "name": "Ardougne Monastery",
+      "slug": "ardougne-monastery"
+    },
+    {
+      "id": "region:burgh-de-rott",
+      "kind": "region",
+      "name": "Burgh de Rott",
+      "slug": "burgh-de-rott"
+    }
+  ]
+}

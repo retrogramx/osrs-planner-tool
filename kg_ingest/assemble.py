@@ -26,6 +26,7 @@ from osrs_planner.engine.kg.json_store import (
     group_to_dict as serialize_group,
 )
 from kg_ingest.builders.completion_goals import build_completion_goals
+from kg_ingest.builders.content_nodes import build_content_nodes
 from kg_ingest.builders.diaries import build_diaries
 from kg_ingest.builders.diary_goals import build_diary_goals
 from kg_ingest.builders.goals import build_goals
@@ -188,6 +189,7 @@ COMPLETION_GOALS_PATH = Path(__file__).resolve().parents[1] / "data" / "completi
 ACHIEVEMENT_DIARIES_PATH = Path(__file__).resolve().parents[1] / "data" / "achievement_diaries.json"
 DIARY_GOALS_PATH = Path(__file__).resolve().parents[1] / "data" / "diary_goals.json"
 DIARY_REWARDS_PATH = Path(__file__).resolve().parents[1] / "data" / "diary_rewards.json"
+DIARY_CONTENT_NODES_PATH = Path(__file__).resolve().parents[1] / "data" / "diary_content_nodes.json"
 
 
 def _load_diary_task_records() -> list[dict]:
@@ -214,6 +216,12 @@ def _load_diary_reward_records() -> list[dict]:
     return json.loads(DIARY_REWARDS_PATH.read_text())["records"]
 
 
+def _load_diary_content_node_records() -> list[dict]:
+    if not DIARY_CONTENT_NODES_PATH.exists():
+        return []
+    return json.loads(DIARY_CONTENT_NODES_PATH.read_text())["records"]
+
+
 def _write_json(path: Path, payload: list) -> None:
     text = json.dumps(payload, indent=2, sort_keys=True, ensure_ascii=False)
     path.write_text(text + "\n")
@@ -233,6 +241,9 @@ def assemble() -> None:
     from osrs_planner.engine.kg.model import NodeKind as _NK
     _tier_ids = sorted(n.id for n in d_nodes if n.kind is _NK.DIARY)
     dg_nodes, dg_edges, dg_groups = build_diary_goals(_load_diary_goal_records(), _tier_ids)
+    # Content nodes (activity/monster/region) are pure existence nodes — no edges/groups
+    # to re-key; diary effect edges (build_diaries) reference them as dst.
+    content_nodes = build_content_nodes(_load_diary_content_node_records())
 
     # 2) re-key. Quests + quest-rewards share quest:* owners (requires + grants from the
     #    same quest), so they MUST be re-keyed in ONE call to get a continuous per-owner
@@ -271,6 +282,7 @@ def assemble() -> None:
         | {n.id for n in cg_nodes}
         | {n.id for n in d_nodes}
         | {n.id for n in dg_nodes}
+        | {n.id for n in content_nodes}
     )
     referenced = {
         r for r in _collect_referenced_ids(edges, groups)
@@ -282,7 +294,9 @@ def assemble() -> None:
     #    d_nodes placed BEFORE s_nodes so the diary builder's richer node definition
     #    (with tasks list) is first-seen and wins if any stale supporting diary node
     #    were somehow included (it shouldn't be, since diary is excluded from _LEAF_DOMAINS).
-    nodes = dedup_nodes(q_nodes + g_nodes + cg_nodes + d_nodes + dg_nodes + s_nodes)
+    nodes = dedup_nodes(
+        q_nodes + g_nodes + cg_nodes + d_nodes + dg_nodes + content_nodes + s_nodes
+    )
 
     # 5) serialize, sorted deterministically.
     nodes_out = [serialize_node(n) for n in sorted(nodes, key=lambda n: n.id)]
