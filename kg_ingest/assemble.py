@@ -27,6 +27,7 @@ from osrs_planner.engine.kg.json_store import (
 )
 from kg_ingest.builders.completion_goals import build_completion_goals
 from kg_ingest.builders.diaries import build_diaries
+from kg_ingest.builders.diary_goals import build_diary_goals
 from kg_ingest.builders.goals import build_goals
 from kg_ingest.builders.quest_rewards import build_quest_rewards
 from kg_ingest.builders.quests import build_quests
@@ -185,6 +186,7 @@ def _load_reward_records() -> list[dict]:
 
 COMPLETION_GOALS_PATH = Path(__file__).resolve().parents[1] / "data" / "completion_goals.json"
 ACHIEVEMENT_DIARIES_PATH = Path(__file__).resolve().parents[1] / "data" / "achievement_diaries.json"
+DIARY_GOALS_PATH = Path(__file__).resolve().parents[1] / "data" / "diary_goals.json"
 
 
 def _load_diary_task_records() -> list[dict]:
@@ -197,6 +199,12 @@ def _load_completion_goal_records() -> list[dict]:
     if not COMPLETION_GOALS_PATH.exists():
         return []
     return json.loads(COMPLETION_GOALS_PATH.read_text())["records"]
+
+
+def _load_diary_goal_records() -> list[dict]:
+    if not DIARY_GOALS_PATH.exists():
+        return []
+    return json.loads(DIARY_GOALS_PATH.read_text())["records"]
 
 
 def _write_json(path: Path, payload: list) -> None:
@@ -212,11 +220,16 @@ def assemble() -> None:
     g_nodes, g_edges, g_groups = build_goals()
     cg_nodes, cg_edges, cg_groups = build_completion_goals(_load_completion_goal_records())
     d_nodes, d_edges, d_groups = build_diaries(_load_diary_task_records())
+    # Collect the 48 diary tier ids from the diary builder's nodes (sorted for determinism).
+    from osrs_planner.engine.kg.model import NodeKind as _NK
+    _tier_ids = sorted(n.id for n in d_nodes if n.kind is _NK.DIARY)
+    dg_nodes, dg_edges, dg_groups = build_diary_goals(_load_diary_goal_records(), _tier_ids)
 
     # 2) re-key. Quests + quest-rewards share quest:* owners (requires + grants from the
     #    same quest), so they MUST be re-keyed in ONE call to get a continuous per-owner
     #    edge/group index (Task 3). Goals and completion-goals own disjoint ids ->
     #    re-keyed independently. Diaries own disjoint diary:* ids -> re-keyed independently.
+    #    diary_goals own disjoint goal:achievement-diary-cape -> re-keyed independently.
     qr_combined_nodes = q_nodes + qr_nodes
     qr_combined_edges = q_edges + qr_edges          # requires first, then grants (stable order)
     qr_combined_groups = {**q_groups, **qr_groups}
@@ -224,9 +237,10 @@ def assemble() -> None:
     g_nodes, g_edges, g_groups = rekey(g_nodes, g_edges, g_groups)
     cg_nodes, cg_edges, cg_groups = rekey(cg_nodes, cg_edges, cg_groups)
     d_nodes, d_edges, d_groups = rekey(d_nodes, d_edges, d_groups)
+    dg_nodes, dg_edges, dg_groups = rekey(dg_nodes, dg_edges, dg_groups)
 
-    edges = q_edges + g_edges + cg_edges + d_edges
-    groups = {**q_groups, **g_groups, **cg_groups, **d_groups}
+    edges = q_edges + g_edges + cg_edges + d_edges + dg_edges
+    groups = {**q_groups, **g_groups, **cg_groups, **d_groups, **dg_groups}
 
     # 3) supporting nodes cover every ref_node / edge endpoint referenced above,
     #    minus the quest + goal + diary nodes the builders already produced.
@@ -234,11 +248,11 @@ def assemble() -> None:
     #    gear_loadout/npc); quest: ids that aren't owned are known-missing quests
     #    (flagged by the validator, Task 8) — do not send them to build_supporting.
     #    goal: is not in _LEAF_DOMAINS, so progress_towards dst=goal:* resolves to
-    #    the node built by build_completion_goals (not sent to build_supporting).
-    #    diary: excluded here — the diary builder is the SOLE source of diary nodes
-    #    (all 48); build_supporting must NOT also mint them or dedup_nodes would raise
-    #    on a content conflict (builder data={region,tier,tasks,...} differs from the
-    #    supporting shape data={region,tier}).
+    #    the node built by build_completion_goals or build_diary_goals (not sent to
+    #    build_supporting). diary: excluded here — the diary builder is the SOLE source
+    #    of diary nodes (all 48); build_supporting must NOT also mint them or
+    #    dedup_nodes would raise on a content conflict (builder data={region,tier,
+    #    tasks,...} differs from the supporting shape data={region,tier}).
     _LEAF_DOMAINS = frozenset(
         {"skill", "item", "access", "minigame", "gear_loadout", "npc"}
     )
@@ -247,6 +261,7 @@ def assemble() -> None:
         | {n.id for n in g_nodes}
         | {n.id for n in cg_nodes}
         | {n.id for n in d_nodes}
+        | {n.id for n in dg_nodes}
     )
     referenced = {
         r for r in _collect_referenced_ids(edges, groups)
@@ -258,7 +273,7 @@ def assemble() -> None:
     #    d_nodes placed BEFORE s_nodes so the diary builder's richer node definition
     #    (with tasks list) is first-seen and wins if any stale supporting diary node
     #    were somehow included (it shouldn't be, since diary is excluded from _LEAF_DOMAINS).
-    nodes = dedup_nodes(q_nodes + g_nodes + cg_nodes + d_nodes + s_nodes)
+    nodes = dedup_nodes(q_nodes + g_nodes + cg_nodes + d_nodes + dg_nodes + s_nodes)
 
     # 5) serialize, sorted deterministically.
     nodes_out = [serialize_node(n) for n in sorted(nodes, key=lambda n: n.id)]

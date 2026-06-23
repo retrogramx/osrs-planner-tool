@@ -215,3 +215,10 @@ def test_compound_quest_req_integration_via_build_diaries():
     quest_ids = {a.ref_node for a in atoms if a.atom_type is AtomType.QUEST}
     assert "quest:the-fremennik-trials" in quest_ids
     assert "quest:fairytale-ii-cure-a-queen" in quest_ids
+
+
+def test_each_tier_has_progress_towards_the_cape():
+    from osrs_planner.engine.kg.model import EdgeType
+    _, edges, _ = build_diaries(_tasks())
+    pt = [e for e in edges if e.type is EdgeType.PROGRESS_TOWARDS]
+    assert pt and all(e.dst == "goal:achievement-diary-cape" and e.data == {"weight": 1} for e in pt)

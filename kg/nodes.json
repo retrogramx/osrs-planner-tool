@@ -1,6 +1,13 @@
 [
   {
     "data": {},
+    "id": "access:achievement-diary-cape",
+    "kind": "access",
+    "name": "Achievement diary cape",
+    "slug": "achievement-diary-cape"
+  },
+  {
+    "data": {},
     "id": "access:avas-device-upgrades",
     "kind": "access",
     "name": "Avas device upgrades",
@@ -2664,6 +2671,18 @@
     "kind": "gear_loadout",
     "name": "Wielding full Infinity",
     "slug": "infinity-wield"
+  },
+  {
+    "data": {
+      "counter_type": "member_count",
+      "thresholds": [
+        48
+      ]
+    },
+    "id": "goal:achievement-diary-cape",
+    "kind": "goal",
+    "name": "Achievement diary cape",
+    "slug": "achievement-diary-cape"
   },
   {
     "data": {

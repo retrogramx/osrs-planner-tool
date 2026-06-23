@@ -1,0 +1,9 @@
+{
+  "_provenance": {"domain": "diary_goals", "source_urls": ["https://oldschool.runescape.wiki/w/Achievement_diary_cape"],
+    "accessed": "2026-06-23", "license": "CC BY-NC-SA 3.0", "extraction_method": "manual-transcription-from-wiki", "record_count": 1},
+  "records": [
+    {"id": "goal:achievement-diary-cape", "name": "Achievement diary cape",
+     "counter_type": "member_count", "thresholds": [48],
+     "grants": {"reward": "unlock", "category": "equipment", "name": "Achievement diary cape", "access": "Achievement diary cape"}}
+  ]
+}

@@ -289,5 +289,13 @@ def build_diaries(
             dst=None,
             cond_group=root_gid,
         ))
+        edges.append(Edge(
+            id=_eid(nid, 1),
+            type=EdgeType.PROGRESS_TOWARDS,
+            src=nid,
+            dst="goal:achievement-diary-cape",
+            cond_group=None,
+            data={"weight": 1},
+        ))
 
     return nodes, edges, groups

@@ -48,6 +48,16 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 6018145,
+    "src": "diary:falador:elite",
+    "type": "progress_towards"
+  },
+  {
     "cond_group": 5087226,
     "data": {},
     "dst": null,
@@ -96,6 +106,26 @@
   {
     "cond_group": null,
     "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 6063113,
+    "src": "diary:ardougne:medium",
+    "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 6066224,
+    "src": "diary:lumbridge:medium",
+    "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "access": "Dragon Slayer task",
       "category": "slayer",
       "name": "Dragon Slayer task assignment",
@@ -123,6 +153,16 @@
     "id": 6084043,
     "src": "quest:holy-grail",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 6084247,
+    "src": "diary:western:medium",
+    "type": "progress_towards"
   },
   {
     "cond_group": 4365065,
@@ -309,6 +349,16 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 6212447,
+    "src": "diary:lumbridge:hard",
+    "type": "progress_towards"
+  },
+  {
     "cond_group": 4775004,
     "data": {},
     "dst": null,
@@ -323,6 +373,16 @@
     "id": 6229167,
     "src": "quest:barbarian-training",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 6232698,
+    "src": "diary:ardougne:easy",
+    "type": "progress_towards"
   },
   {
     "cond_group": 5392461,
@@ -394,6 +454,16 @@
     "id": 6258337,
     "src": "quest:fishing-contest",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 6259782,
+    "src": "diary:morytania:hard",
+    "type": "progress_towards"
   },
   {
     "cond_group": 4087366,
@@ -468,6 +538,16 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 6304152,
+    "src": "diary:kourend:medium",
+    "type": "progress_towards"
+  },
+  {
     "cond_group": 5531528,
     "data": {},
     "dst": null,
@@ -490,6 +570,16 @@
     "id": 6320224,
     "src": "diary:wilderness:easy",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 6334704,
+    "src": "diary:falador:medium",
+    "type": "progress_towards"
   },
   {
     "cond_group": 5063204,
@@ -522,6 +612,16 @@
     "id": 6362881,
     "src": "quest:the-feud",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 6363711,
+    "src": "diary:desert:medium",
+    "type": "progress_towards"
   },
   {
     "cond_group": 5068236,
@@ -602,6 +702,26 @@
     "id": 6440981,
     "src": "quest:animal-magnetism",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 6446851,
+    "src": "diary:kandarin:medium",
+    "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 6452960,
+    "src": "diary:wilderness:elite",
+    "type": "progress_towards"
   },
   {
     "cond_group": 4020131,
@@ -696,6 +816,16 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 6479527,
+    "src": "diary:falador:easy",
+    "type": "progress_towards"
+  },
+  {
     "cond_group": 5985948,
     "data": {},
     "dst": null,
@@ -767,6 +897,16 @@
     "dst": "goal:quest-point-cape",
     "id": 6517539,
     "src": "quest:demon-slayer",
+    "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 6524451,
+    "src": "diary:kandarin:hard",
     "type": "progress_towards"
   },
   {
@@ -884,6 +1024,26 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 6637380,
+    "src": "diary:wilderness:hard",
+    "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 6643457,
+    "src": "diary:morytania:elite",
+    "type": "progress_towards"
+  },
+  {
     "cond_group": 4801253,
     "data": {},
     "dst": null,
@@ -916,6 +1076,16 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 6681734,
+    "src": "diary:desert:hard",
+    "type": "progress_towards"
+  },
+  {
     "cond_group": 4045334,
     "data": {},
     "dst": null,
@@ -930,6 +1100,16 @@
     "id": 6683790,
     "src": "quest:dwarf-cannon",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 6684434,
+    "src": "diary:kandarin:easy",
+    "type": "progress_towards"
   },
   {
     "cond_group": 5553315,
@@ -1106,6 +1286,16 @@
     "type": "grants"
   },
   {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 6799825,
+    "src": "diary:ardougne:hard",
+    "type": "progress_towards"
+  },
+  {
     "cond_group": 5104617,
     "data": {},
     "dst": null,
@@ -1120,6 +1310,16 @@
     "id": 6816483,
     "src": "diary:lumbridge:medium",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 6820191,
+    "src": "diary:karamja:hard",
+    "type": "progress_towards"
   },
   {
     "cond_group": 5679647,
@@ -1298,6 +1498,16 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 6937573,
+    "src": "diary:falador:hard",
+    "type": "progress_towards"
+  },
+  {
     "cond_group": 5131411,
     "data": {},
     "dst": null,
@@ -1453,6 +1663,19 @@
     "type": "requires"
   },
   {
+    "cond_group": 5702429,
+    "data": {
+      "access": "Achievement diary cape",
+      "category": "equipment",
+      "name": "Achievement diary cape",
+      "reward": "unlock"
+    },
+    "dst": "access:achievement-diary-cape",
+    "id": 7043231,
+    "src": "goal:achievement-diary-cape",
+    "type": "grants"
+  },
+  {
     "cond_group": null,
     "data": {
       "weight": 2
@@ -1473,6 +1696,14 @@
     "type": "progress_towards"
   },
   {
+    "cond_group": 4635195,
+    "data": {},
+    "dst": null,
+    "id": 7057578,
+    "src": "goal:achievement-diary-cape",
+    "type": "requires"
+  },
+  {
     "cond_group": null,
     "data": {
       "condition": "while-equipped-in-cape-slot",
@@ -1486,6 +1717,16 @@
     "id": 7060038,
     "src": "item:10499",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 7062376,
+    "src": "diary:wilderness:easy",
+    "type": "progress_towards"
   },
   {
     "cond_group": 4323563,
@@ -1567,6 +1808,16 @@
     "id": 7111093,
     "src": "quest:vampyre-slayer",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 7114980,
+    "src": "diary:karamja:medium",
+    "type": "progress_towards"
   },
   {
     "cond_group": 5869058,
@@ -1663,6 +1914,16 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 7174609,
+    "src": "diary:kourend:hard",
+    "type": "progress_towards"
+  },
+  {
     "cond_group": 5635210,
     "data": {},
     "dst": null,
@@ -1700,6 +1961,16 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 7239079,
+    "src": "diary:varrock:elite",
+    "type": "progress_towards"
+  },
+  {
     "cond_group": 5830733,
     "data": {},
     "dst": null,
@@ -1726,6 +1997,16 @@
     "id": 7243780,
     "src": "quest:dragon-slayer-i",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 7251706,
+    "src": "diary:western:hard",
+    "type": "progress_towards"
   },
   {
     "cond_group": null,
@@ -1844,6 +2125,26 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 7334329,
+    "src": "diary:wilderness:medium",
+    "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 7343327,
+    "src": "diary:fremennik:medium",
+    "type": "progress_towards"
+  },
+  {
     "cond_group": 4868001,
     "data": {},
     "dst": null,
@@ -1906,12 +2207,42 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 7387517,
+    "src": "diary:karamja:easy",
+    "type": "progress_towards"
+  },
+  {
     "cond_group": 4609368,
     "data": {},
     "dst": null,
     "id": 7403276,
     "src": "quest:hopespears-will",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 7407339,
+    "src": "diary:kourend:elite",
+    "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 7410864,
+    "src": "diary:morytania:easy",
+    "type": "progress_towards"
   },
   {
     "cond_group": 5492395,
@@ -1938,12 +2269,32 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 7440180,
+    "src": "diary:fremennik:easy",
+    "type": "progress_towards"
+  },
+  {
     "cond_group": 5631608,
     "data": {},
     "dst": null,
     "id": 7447010,
     "src": "quest:a-night-at-the-theatre",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 7450020,
+    "src": "diary:varrock:hard",
+    "type": "progress_towards"
   },
   {
     "cond_group": null,
@@ -1972,6 +2323,16 @@
     "id": 7456816,
     "src": "quest:imp-catcher",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 7468684,
+    "src": "diary:morytania:medium",
+    "type": "progress_towards"
   },
   {
     "cond_group": 5371171,
@@ -2012,6 +2373,26 @@
     "id": 7502854,
     "src": "diary:karamja:elite",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 7509547,
+    "src": "diary:ardougne:elite",
+    "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 7512580,
+    "src": "diary:kandarin:elite",
+    "type": "progress_towards"
   },
   {
     "cond_group": 5381566,
@@ -2130,6 +2511,16 @@
   {
     "cond_group": null,
     "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 7554761,
+    "src": "diary:lumbridge:elite",
+    "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 10
     },
     "dst": "goal:quest-point-cape",
@@ -2160,6 +2551,16 @@
     "id": 7584845,
     "src": "diary:varrock:easy",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 7594272,
+    "src": "diary:karamja:elite",
+    "type": "progress_towards"
   },
   {
     "cond_group": 4005359,
@@ -2216,6 +2617,16 @@
     "id": 7628722,
     "src": "quest:the-fremennik-trials",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 7637534,
+    "src": "diary:kourend:easy",
+    "type": "progress_towards"
   },
   {
     "cond_group": 4643948,
@@ -2328,6 +2739,16 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 7744787,
+    "src": "diary:varrock:medium",
+    "type": "progress_towards"
+  },
+  {
     "cond_group": 4599079,
     "data": {},
     "dst": null,
@@ -2342,6 +2763,26 @@
     "id": 7773566,
     "src": "quest:rum-deal",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 7780948,
+    "src": "diary:western:elite",
+    "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 7793389,
+    "src": "diary:western:easy",
+    "type": "progress_towards"
   },
   {
     "cond_group": 4379307,
@@ -2406,6 +2847,16 @@
     "id": 7822352,
     "src": "quest:fairytale-i-growing-pains",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 7826618,
+    "src": "diary:desert:elite",
+    "type": "progress_towards"
   },
   {
     "cond_group": 5501921,
@@ -2486,6 +2937,26 @@
     "id": 7872098,
     "src": "diary:varrock:elite",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 7873593,
+    "src": "diary:desert:easy",
+    "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 7874547,
+    "src": "diary:varrock:easy",
+    "type": "progress_towards"
   },
   {
     "cond_group": 4378871,
@@ -2592,6 +3063,26 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 7948398,
+    "src": "diary:fremennik:hard",
+    "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 7950567,
+    "src": "diary:lumbridge:easy",
+    "type": "progress_towards"
+  },
+  {
     "cond_group": 5574282,
     "data": {},
     "dst": null,
@@ -2667,6 +3158,16 @@
     "id": 7994824,
     "src": "gear_loadout:infinity",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "weight": 1
+    },
+    "dst": "goal:achievement-diary-cape",
+    "id": 7996613,
+    "src": "diary:fremennik:elite",
+    "type": "progress_towards"
   },
   {
     "cond_group": 4961365,

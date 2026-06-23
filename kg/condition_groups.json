@@ -4275,6 +4275,71 @@
   {
     "children": [
       {
+        "atom_type": "count_satisfied",
+        "data": {
+          "set_ref": [
+            "diary:ardougne:easy",
+            "diary:ardougne:elite",
+            "diary:ardougne:hard",
+            "diary:ardougne:medium",
+            "diary:desert:easy",
+            "diary:desert:elite",
+            "diary:desert:hard",
+            "diary:desert:medium",
+            "diary:falador:easy",
+            "diary:falador:elite",
+            "diary:falador:hard",
+            "diary:falador:medium",
+            "diary:fremennik:easy",
+            "diary:fremennik:elite",
+            "diary:fremennik:hard",
+            "diary:fremennik:medium",
+            "diary:kandarin:easy",
+            "diary:kandarin:elite",
+            "diary:kandarin:hard",
+            "diary:kandarin:medium",
+            "diary:karamja:easy",
+            "diary:karamja:elite",
+            "diary:karamja:hard",
+            "diary:karamja:medium",
+            "diary:kourend:easy",
+            "diary:kourend:elite",
+            "diary:kourend:hard",
+            "diary:kourend:medium",
+            "diary:lumbridge:easy",
+            "diary:lumbridge:elite",
+            "diary:lumbridge:hard",
+            "diary:lumbridge:medium",
+            "diary:morytania:easy",
+            "diary:morytania:elite",
+            "diary:morytania:hard",
+            "diary:morytania:medium",
+            "diary:varrock:easy",
+            "diary:varrock:elite",
+            "diary:varrock:hard",
+            "diary:varrock:medium",
+            "diary:western:easy",
+            "diary:western:elite",
+            "diary:western:hard",
+            "diary:western:medium",
+            "diary:wilderness:easy",
+            "diary:wilderness:elite",
+            "diary:wilderness:hard",
+            "diary:wilderness:medium"
+          ]
+        },
+        "qty": null,
+        "ref_node": null,
+        "threshold": 48
+      }
+    ],
+    "id": 4635195,
+    "op": "and",
+    "parent": null
+  },
+  {
+    "children": [
+      {
         "atom_type": "quest",
         "data": {
           "state": "completed"
@@ -10906,6 +10971,71 @@
       }
     ],
     "id": 5697657,
+    "op": "and",
+    "parent": null
+  },
+  {
+    "children": [
+      {
+        "atom_type": "count_satisfied",
+        "data": {
+          "set_ref": [
+            "diary:ardougne:easy",
+            "diary:ardougne:elite",
+            "diary:ardougne:hard",
+            "diary:ardougne:medium",
+            "diary:desert:easy",
+            "diary:desert:elite",
+            "diary:desert:hard",
+            "diary:desert:medium",
+            "diary:falador:easy",
+            "diary:falador:elite",
+            "diary:falador:hard",
+            "diary:falador:medium",
+            "diary:fremennik:easy",
+            "diary:fremennik:elite",
+            "diary:fremennik:hard",
+            "diary:fremennik:medium",
+            "diary:kandarin:easy",
+            "diary:kandarin:elite",
+            "diary:kandarin:hard",
+            "diary:kandarin:medium",
+            "diary:karamja:easy",
+            "diary:karamja:elite",
+            "diary:karamja:hard",
+            "diary:karamja:medium",
+            "diary:kourend:easy",
+            "diary:kourend:elite",
+            "diary:kourend:hard",
+            "diary:kourend:medium",
+            "diary:lumbridge:easy",
+            "diary:lumbridge:elite",
+            "diary:lumbridge:hard",
+            "diary:lumbridge:medium",
+            "diary:morytania:easy",
+            "diary:morytania:elite",
+            "diary:morytania:hard",
+            "diary:morytania:medium",
+            "diary:varrock:easy",
+            "diary:varrock:elite",
+            "diary:varrock:hard",
+            "diary:varrock:medium",
+            "diary:western:easy",
+            "diary:western:elite",
+            "diary:western:hard",
+            "diary:western:medium",
+            "diary:wilderness:easy",
+            "diary:wilderness:elite",
+            "diary:wilderness:hard",
+            "diary:wilderness:medium"
+          ]
+        },
+        "qty": null,
+        "ref_node": null,
+        "threshold": 48
+      }
+    ],
+    "id": 5702429,
     "op": "and",
     "parent": null
   },
