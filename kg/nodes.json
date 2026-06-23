@@ -8,6 +8,13 @@
   },
   {
     "data": {},
+    "id": "access:achievement-diary-cape-t",
+    "kind": "access",
+    "name": "Achievement diary cape t",
+    "slug": "achievement-diary-cape-t"
+  },
+  {
+    "data": {},
     "id": "access:avas-device-upgrades",
     "kind": "access",
     "name": "Avas device upgrades",
@@ -2697,6 +2704,18 @@
     "kind": "goal",
     "name": "Achievement diary cape",
     "slug": "achievement-diary-cape"
+  },
+  {
+    "data": {
+      "counter_type": "member_count",
+      "thresholds": [
+        48
+      ]
+    },
+    "id": "goal:achievement-diary-cape-t",
+    "kind": "goal",
+    "name": "Achievement diary cape (t)",
+    "slug": "achievement-diary-cape-t"
   },
   {
     "data": {

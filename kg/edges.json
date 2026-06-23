@@ -1872,6 +1872,19 @@
   {
     "cond_group": null,
     "data": {
+      "access": "Achievement diary cape (t)",
+      "category": "equipment",
+      "name": "Achievement diary cape (t)",
+      "reward": "unlock"
+    },
+    "dst": "access:achievement-diary-cape-t",
+    "id": 7112407,
+    "src": "goal:achievement-diary-cape-t",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 1
     },
     "dst": "goal:achievement-diary-cape",
@@ -2895,6 +2908,14 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {},
+    "dst": "goal:achievement-diary-cape",
+    "id": 7805771,
+    "src": "goal:achievement-diary-cape-t",
+    "type": "supersedes"
+  },
+  {
     "cond_group": 4033757,
     "data": {},
     "dst": null,
@@ -3111,6 +3132,14 @@
     "type": "grants"
   },
   {
+    "cond_group": null,
+    "data": {},
+    "dst": "goal:achievement-diary-cape",
+    "id": 7901045,
+    "src": "goal:achievement-diary-cape-t",
+    "type": "requires"
+  },
+  {
     "cond_group": 5697657,
     "data": {},
     "dst": null,
@@ -3154,6 +3183,14 @@
     "dst": null,
     "id": 7915776,
     "src": "quest:ghosts-ahoy",
+    "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "goal:quest-point-cape",
+    "id": 7932642,
+    "src": "goal:achievement-diary-cape-t",
     "type": "requires"
   },
   {

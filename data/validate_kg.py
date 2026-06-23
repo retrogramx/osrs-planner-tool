@@ -203,6 +203,46 @@ def check_kg(store: KGStore, quests_data: dict,
         if not data.get("thresholds"):
             errors.append(f"[goal] node {nid} missing/empty data.thresholds")
 
+    # --- Diary-domain invariants (achievement-diaries brick) ---
+    def _kind_of(nid: str | None) -> str | None:
+        n = store.nodes.get(nid) if nid is not None else None
+        if n is None:
+            return None
+        return n.kind.value if hasattr(n.kind, "value") else n.kind
+
+    _CONTENT_KINDS = {NodeKind.SKILL.value, NodeKind.ACTIVITY.value, NodeKind.MONSTER.value,
+                      NodeKind.REGION.value, NodeKind.ITEM.value}
+    _EFFECT_KINDS = {"stat_multiplier", "rate_multiplier", "capacity_change", "fee_waiver",
+                     "behavior_toggle", "recurring_resource", "access"}
+    for e in store.edges:
+        if e.type is EdgeType.SUPERSEDES:
+            # the upgrade/cross-cape ladder: item ≻ item, or goal ≻ goal.
+            for end, label in ((e.src, "src"), (e.dst, "dst")):
+                k = _kind_of(end)
+                if k not in (NodeKind.ITEM.value, NodeKind.GOAL.value):
+                    errors.append(f"[diary] supersedes edge {e.id} {label} {end!r} is kind "
+                                  f"{k!r} (must be item or goal)")
+        elif e.type is EdgeType.EFFECT and e.dst is not None:
+            # The diary effect→content contract: a dst-bearing effect targets a
+            # content node and carries an enum effect_kind. (quest-brick effects
+            # leave dst=None and are exempt.)
+            k = _kind_of(e.dst)
+            if k not in _CONTENT_KINDS:
+                errors.append(f"[diary] effect edge {e.id} dst {e.dst!r} is kind {k!r} "
+                              f"(must be a content node: {sorted(_CONTENT_KINDS)})")
+            ek = (e.data or {}).get("effect_kind")
+            if ek not in _EFFECT_KINDS:
+                errors.append(f"[diary] effect edge {e.id} has invalid/missing "
+                              f"data.effect_kind {ek!r}")
+
+    # Every diary tier node carries its region + tier.
+    for nid, node in store.nodes.items():
+        kind = node.kind.value if hasattr(node.kind, "value") else node.kind
+        if kind == NodeKind.DIARY.value:
+            data = node.data or {}
+            if not data.get("region") or not data.get("tier"):
+                errors.append(f"[diary] tier node {nid} missing data.region/data.tier")
+
     # --- 2 + 3: walk groups (atom ref_node, sub-group children, ops) ---
     for gid, group in store.groups.items():
         op = group.op.value if hasattr(group.op, "value") else group.op
