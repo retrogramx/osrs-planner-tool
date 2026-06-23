@@ -1,0 +1,90 @@
+{
+  "_provenance": {
+    "source_urls": [
+      "https://oldschool.runescape.wiki/w/Ardougne_Diary",
+      "https://oldschool.runescape.wiki/w/Morytania_Diary"
+    ],
+    "note": "Initial 2-tier seed (Task 4). Remaining 46 tiers added in Task 9.",
+    "magnitude_convention": "bonus fraction (additive over baseline): 0.1 = +10%, 0.5 = +50%, 1.0 = +100%/double"
+  },
+  "records": [
+    {
+      "region": "ardougne",
+      "tier": "easy",
+      "regional_item": {
+        "name": "Ardougne cloak 1",
+        "item_id": 13121,
+        "supersedes_item_id": null
+      },
+      "lamp": {
+        "amount": 2500,
+        "min_level": 30,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (easy)"
+      },
+      "effects": [
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 1.0,
+          "target_facet": "death runes received from trading cats to civilians",
+          "target": {"kind": "activity", "name": "West Ardougne cat trade"},
+          "condition": "unconditional-once-earned",
+          "tier_source": "ardougne:easy"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "unlimited teleports to Ardougne Monastery",
+          "target": {"kind": "region", "name": "Ardougne Monastery"},
+          "condition": "unconditional-once-earned",
+          "tier_source": "ardougne:easy"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Ardougne_Diary"
+    },
+    {
+      "region": "morytania",
+      "tier": "hard",
+      "regional_item": {
+        "name": "Morytania legs 3",
+        "item_id": 13114,
+        "supersedes_item_id": 13113
+      },
+      "lamp": {
+        "amount": 15000,
+        "min_level": 50,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (hard)"
+      },
+      "effects": [
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.5,
+          "target_facet": "runes received from the Barrows chest",
+          "target": {"kind": "activity", "name": "Barrows"},
+          "condition": "unconditional-once-earned",
+          "tier_source": "morytania:hard"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "unlimited teleports to Burgh de Rott",
+          "target": {"kind": "region", "name": "Burgh de Rott"},
+          "condition": "unconditional-once-earned",
+          "tier_source": "morytania:hard"
+        }
+      ],
+      "extra_unlocks": [
+        {
+          "reward_type": "items",
+          "name": "Bonecrusher",
+          "item_id": null,
+          "untracked": true,
+          "note": "Inventory item; not in items_equipment.json. Claimable from ghost disciple while wearing ghostspeak amulet or Morytania legs 3+."
+        }
+      ],
+      "source_url": "https://oldschool.runescape.wiki/w/Morytania_Diary"
+    }
+  ]
+}
