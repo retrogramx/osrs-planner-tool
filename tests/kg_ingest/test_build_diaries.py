@@ -398,3 +398,85 @@ def test_reward_edge_slot_distinct_from_requires_and_progress_towards():
     tier_edges = [e for e in edges if e.src == "diary:morytania:hard"]
     ids = [e.id for e in tier_edges]
     assert len(ids) == len(set(ids)), f"duplicate edge ids: {ids}"
+
+
+# --- Task 7: effect edges with dst = content node -------------------------
+
+def _reward_record_with_effects():
+    """Morytania-hard-style record carrying two effects: an activity-targeted
+    rate_multiplier (Barrows) and a region-targeted access (Burgh de Rott)."""
+    rec = _reward_record_morytania_hard()
+    rec["effects"] = [
+        {"effect_kind": "rate_multiplier", "magnitude": 0.5,
+         "target_facet": "runes received from the Barrows chest",
+         "target": {"kind": "activity", "name": "Barrows"},
+         "condition": "unconditional-once-earned", "tier_source": "morytania:hard"},
+        {"effect_kind": "access", "magnitude": None,
+         "target_facet": "unlimited teleports to Burgh de Rott",
+         "target": {"kind": "region", "name": "Burgh de Rott"},
+         "condition": "unconditional-once-earned", "tier_source": "morytania:hard"},
+    ]
+    return rec
+
+
+def test_effect_edge_rides_on_regional_item_dst_is_content_node():
+    tasks = _tasks_for_region("Morytania", "hard")
+    _, edges, _ = build_diaries(tasks, reward_records=[_reward_record_with_effects()])
+    effects = [e for e in edges if e.type is EdgeType.EFFECT]
+    barrows = [e for e in effects if e.dst == "activity:barrows"]
+    assert len(barrows) == 1
+    e = barrows[0]
+    assert e.src == "item:13114"          # rides on the regional item
+    assert e.data["effect_kind"] == "rate_multiplier"
+    assert e.data["magnitude"] == 0.5
+    assert e.data["tier_source"] == "morytania:hard"
+    assert e.data["target_facet"] == "runes received from the Barrows chest"
+    assert e.data["condition"] == "unconditional-once-earned"
+
+
+def test_effect_edge_region_target_and_no_raw_target_key():
+    tasks = _tasks_for_region("Morytania", "hard")
+    _, edges, _ = build_diaries(tasks, reward_records=[_reward_record_with_effects()])
+    region = [e for e in edges if e.type is EdgeType.EFFECT and e.dst == "region:burgh-de-rott"]
+    assert len(region) == 1
+    d = region[0].data
+    assert d["effect_kind"] == "access"
+    assert "target" not in d              # the resolved dst replaces the raw target dict
+    assert "rides_on_item_id" not in d
+
+
+def test_effect_skill_target_resolves_to_skill_node():
+    tasks = _tasks_for_region("Morytania", "hard")
+    rec = _reward_record_morytania_hard()
+    rec["effects"] = [
+        {"effect_kind": "rate_multiplier", "magnitude": 0.075,
+         "target_facet": "Slayer XP in the Slayer Tower",
+         "target": {"kind": "skill", "name": "Slayer"},
+         "condition": "unconditional-once-earned", "tier_source": "morytania:hard"},
+    ]
+    _, edges, _ = build_diaries(tasks, reward_records=[rec])
+    skill = [e for e in edges if e.type is EdgeType.EFFECT and e.dst == "skill:slayer"]
+    assert len(skill) == 1 and skill[0].src == "item:13114"
+
+
+def test_effect_rides_on_item_id_override():
+    """An effect may ride on a specific item (e.g. the Bonecrusher) instead of the
+    regional item, via rides_on_item_id."""
+    tasks = _tasks_for_region("Morytania", "hard")
+    rec = _reward_record_morytania_hard()
+    rec["effects"] = [
+        {"effect_kind": "behavior_toggle", "magnitude": None,
+         "target_facet": "auto-buries bones", "rides_on_item_id": 4587,
+         "target": {"kind": "item", "item_id": 4587},
+         "condition": "while-carried", "tier_source": "morytania:hard"},
+    ]
+    _, edges, _ = build_diaries(tasks, reward_records=[rec])
+    eff = [e for e in edges if e.type is EdgeType.EFFECT]
+    assert len(eff) == 1
+    assert eff[0].src == "item:4587" and eff[0].dst == "item:4587"
+
+
+def test_no_effects_emits_no_effect_edges():
+    tasks = _tasks_for_region("Ardougne", "easy")
+    _, edges, _ = build_diaries(tasks, reward_records=[_reward_record_ardougne_easy()])
+    assert all(e.type is not EdgeType.EFFECT for e in edges)

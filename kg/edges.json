@@ -1195,6 +1195,20 @@
   {
     "cond_group": null,
     "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 1.0,
+      "target_facet": "death runes received from trading cats to civilians",
+      "tier_source": "ardougne:easy"
+    },
+    "dst": "activity:west-ardougne-cat-trade",
+    "id": 6701442,
+    "src": "item:13121",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "access": "Ava's device upgrades",
       "category": "skilling-method",
       "name": "Trade with Ava for Ava's devices",
@@ -1221,6 +1235,20 @@
     "id": 6722773,
     "src": "diary:karamja:medium",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "unlimited teleports to Burgh de Rott",
+      "tier_source": "morytania:hard"
+    },
+    "dst": "region:burgh-de-rott",
+    "id": 6725395,
+    "src": "item:13114",
+    "type": "effect"
   },
   {
     "cond_group": 5504143,
@@ -2333,6 +2361,20 @@
   {
     "cond_group": null,
     "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "unlimited teleports to Ardougne Monastery",
+      "tier_source": "ardougne:easy"
+    },
+    "dst": "region:ardougne-monastery",
+    "id": 7449525,
+    "src": "item:13121",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 1
     },
     "dst": "goal:achievement-diary-cape",
@@ -3208,6 +3250,20 @@
     "id": 7989518,
     "src": "goal:quest-point-cape",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.5,
+      "target_facet": "runes received from the Barrows chest",
+      "tier_source": "morytania:hard"
+    },
+    "dst": "activity:barrows",
+    "id": 7990056,
+    "src": "item:13114",
+    "type": "effect"
   },
   {
     "cond_group": null,

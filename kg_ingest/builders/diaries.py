@@ -30,7 +30,9 @@ from pathlib import Path
 from osrs_planner.engine.kg.model import (
     AtomType, ConditionAtom, ConditionGroup, Edge, EdgeType, Node, NodeKind, Op,
 )
-from kg_ingest.ids import _stable_hash, diary_tier_id, item_id, skill_id
+from kg_ingest.ids import (
+    _stable_hash, activity_id, diary_tier_id, item_id, monster_id, region_id, skill_id,
+)
 from kg_ingest.builders.supporting import DIARY_REGION_LABELS
 
 _GROUP_BAND = 0x90000000
@@ -169,6 +171,58 @@ def _parse_compound_quest_req(
             skipped += 1
 
     return quest_states, skipped
+
+
+def _resolve_effect_target(target: dict) -> str:
+    """Resolve an effect's `target` to the content-node id it benefits (spec §4).
+
+    skill -> skill:<slug> (exists already); activity/region/monster -> their content
+    node (created by build_content_nodes, Task 6); item -> item:<id>.
+    """
+    kind = target["kind"]
+    if kind == "skill":
+        return skill_id(target["name"])
+    if kind == "activity":
+        return activity_id(target["name"])
+    if kind == "region":
+        return region_id(target["name"])
+    if kind == "monster":
+        return monster_id(target["name"])
+    if kind == "item":
+        return item_id(target["item_id"])
+    raise ValueError(f"_resolve_effect_target: unknown target kind {kind!r}")
+
+
+def _emit_effects(tier_id: str, rec: dict, edges: list[Edge]) -> None:
+    """Emit one `effect` edge per reward effect (spec §4, Task 7).
+
+    src = the item the effect rides on (the regional item by default; an
+    `rides_on_item_id` override for effects on an extra-unlock item, e.g. the
+    Bonecrusher). dst = the resolved content node it benefits. data carries the
+    §4 effect attributes (effect_kind/magnitude/target_facet/tier_source/condition),
+    minus the raw `target` (replaced by dst) and the routing-only `rides_on_item_id`.
+
+    Owned by the src item; slots start at 1 (slot 0 is reserved for the item's
+    supersedes edge). rekey re-derives the global ids per-owner-cumulatively.
+    """
+    regional_iid = item_id(rec["regional_item"]["item_id"])
+    per_src_slot: dict[str, int] = {}
+    for ef in rec.get("effects", []):
+        rides_on = ef.get("rides_on_item_id")
+        src = item_id(rides_on) if rides_on is not None else regional_iid
+        dst = _resolve_effect_target(ef["target"])
+        slot = per_src_slot.get(src, 1)
+        per_src_slot[src] = slot + 1
+        data = {k: v for k, v in ef.items()
+                if k not in ("target", "rides_on_item_id")}
+        edges.append(Edge(
+            id=_eid(src, slot),
+            type=EdgeType.EFFECT,
+            src=src,
+            dst=dst,
+            cond_group=None,
+            data=data,
+        ))
 
 
 def _emit_rewards(
@@ -397,5 +451,6 @@ def build_diaries(
             if rr is not None:
                 tier_id = diary_tier_id(region, tier)
                 _emit_rewards(tier_id, rr, edges, slot_start=2)
+                _emit_effects(tier_id, rr, edges)
 
     return nodes, edges, groups
