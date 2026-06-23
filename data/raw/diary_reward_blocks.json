@@ -1,0 +1,242 @@
+{
+  "ardougne:easy": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Ardougne cloak 1: | Unlimited teleports to the Ardougne Monastery | Antique lamp worth 2,500 experience in any skill of at least level 30 | Earn twice as many death runes from trading in cats to civilians in West Ardougne | Drops from Jubsters and Frogeels will be noted in the Creature Creation activity",
+    "source_url": "https://oldschool.runescape.wiki/w/Ardougne_Diary"
+  },
+  "ardougne:elite": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Ardougne cloak 4: | Unlimited teleports to the farming patch at the Ardougne farm | Antique lamp worth 50,000 experience in any skill of at least level 70 | Bert automatically delivers 84 buckets of sand to your bank each day you log in, unless asked to stop. (Ultimate Ironmen are ineligible) | Wizard Cromperty offers you 250 noted pure essence for free every day | 50% more fish from Fishing Trawler | 25% more marks of grace from the Ardougne Rooftop Course | Hold up to 140 coin pouches at a time, up from 84",
+    "source_url": "https://oldschool.runescape.wiki/w/Ardougne_Diary"
+  },
+  "ardougne:hard": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Ardougne cloak 3: | Five daily teleports to the farming patch at the Ardougne farm | Antique lamp worth 15,000 experience in any skill of at least level 50 | Wizard Cromperty offers you 150 noted pure essence for free every day | Watchtower Teleport can now be used to teleport to Yanille instead | 10% increased chance of successfully pickpocketing anywhere around Gielinor | Hold up to 84 coin pouches at a time, up from 56",
+    "source_url": "https://oldschool.runescape.wiki/w/Ardougne_Diary"
+  },
+  "ardougne:medium": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Ardougne cloak 2: | Three daily teleports to the farming patch at the Ardougne farm | Antique lamp worth 7,500 experience in any skill of at least level 40 | Drops from Unicows, Newtroosts, and Spidines will be noted in the Creature Creation activity | Wizard Cromperty offers you 100 noted pure essence for free every day | Ability to change the ring of life teleport location to Ardougne | Chance on receiving additional runes at the Ourania Altar (chance varies per rune) | 10% increased chance of successfully pickpocketing within Ardougne | Hold up to 56 coin pouches at a time, up from 28",
+    "source_url": "https://oldschool.runescape.wiki/w/Ardougne_Diary"
+  },
+  "desert:easy": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Desert amulet 1: | No benefits aside from cosmetic purposes | Antique lamp worth 2,500 experience in any skill of at least level 30 | Pharaoh's sceptre will now hold up to 10 charges, up from 3 | Desert goat horns from goats are now noted | Simon Templeton now also buys artefacts in noted form",
+    "source_url": "https://oldschool.runescape.wiki/w/Desert_Diary"
+  },
+  "desert:elite": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Desert amulet 4: | Unlimited teleports to Nardah, closer to the Elidinis Statuette than the previous amulets | Unlimited teleports to the entrance of the Kalphite Cave | Fully protects against desert heat while worn | Antique lamp worth 50,000 experience in any skill of at least level 70 | Pharaoh's sceptre will now hold up to 100 charges, up from 50 | Free passage through Shantay Pass and the similar pass at Ruins of Unkah, down from a fee of 5 coins | Access to the crevice shortcut in the Kalphite Lair (with 86 Agility)",
+    "source_url": "https://oldschool.runescape.wiki/w/Desert_Diary"
+  },
+  "desert:hard": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Desert amulet 3: | No new benefits | Antique lamp worth 15,000 experience in any skill of at least level 50 | Pharaoh's sceptre will now hold up to 50 charges, up from 25 | Free carpet rides throughout the Kharidian Desert, down from a fee of 75-200 coins per ride | Ropes are now permanently secured once placed at the Kalphite Lair entrance and Queen's Lair | Roughly 14% increased experience and 25% more marks of grace from the Pollnivneach Rooftop Course | Camulet can now be rubbed to teleport to the entrance of Enakhra's Temple, aside from the inner sanctuary of that temple | Zahur now also cleans grimy herbs in noted form, and offers her potion-making services",
+    "source_url": "https://oldschool.runescape.wiki/w/Desert_Diary"
+  },
+  "desert:medium": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Desert amulet 2: | One daily teleport to Nardah | Antique lamp worth 7,500 experience in any skill of at least level 40 | Pharaoh's sceptre will now hold up to 25 charges, up from 10",
+    "source_url": "https://oldschool.runescape.wiki/w/Desert_Diary"
+  },
+  "falador:easy": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Falador shield 1: | Can restore 25% of prayer points once a day | Antique lamp worth 2,500 experience in any skill of at least level 30 | Access to the tight-gap shortcut from Burthorpe to the Chaos Temple (with 14 Agility)",
+    "source_url": "https://oldschool.runescape.wiki/w/Falador_Diary"
+  },
+  "falador:elite": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Falador shield 4: | Can restore full prayer points twice a day | Antique lamp worth 50,000 experience in any skill of at least level 70 | The tree patch in Falador Park will never get diseased | Access to the larger amethyst mine in the west of the Mining Guild | Slightly increased chance of receiving higher level ores when cleaning pay-dirt, by about 1% per ore",
+    "source_url": "https://oldschool.runescape.wiki/w/Falador_Diary"
+  },
+  "falador:hard": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Falador shield 3: | Can restore full prayer points once a day | Indicates the Giant Mole's location when equipped or held in the inventory in the Mole Hole | Antique lamp worth 15,000 experience in any skill of at least level 50 | The Giant Mole's mole skin and claw drops will be noted | Access to the bank chest and bank deposit box in the Crafting Guild | Access to the shortcut to the Fountain of Heroes in the Heroes' Guild basement (with 67 Agility)",
+    "source_url": "https://oldschool.runescape.wiki/w/Falador_Diary"
+  },
+  "falador:medium": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Falador shield 2: | Can restore 50% of prayer points once a day | Antique lamp worth 7,500 experience in any skill of at least level 40 | 10% more experience from the Falador farming patch | Access to the dark tunnel shortcut in the Motherlode Mine (with 54 Agility) | Roughly 21% increased chance of receiving a medium clue scroll from a guard in Falador (from 1/128 to 1/106)",
+    "source_url": "https://oldschool.runescape.wiki/w/Falador_Diary"
+  },
+  "fremennik:easy": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Fremennik sea boots 1: | One daily teleport to the Rellekka marketplace | Antique lamp worth 2,500 experience in any skill of at least level 30 | Peer the Seer will act as a bank deposit box | Fossegrimen gives your enchanted lyre an extra charge per offering | Fossegrimen will imbue your lyre with infinite charges for 800 of each required fish, down from 1,000",
+    "source_url": "https://oldschool.runescape.wiki/w/Fremennik_Diary"
+  },
+  "fremennik:elite": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Fremennik sea boots 4: | Unlimited teleports to the Rellekka marketplace | Antique lamp worth 50,000 experience in any skill of at least level 70 | Dagannoth bones from the Dagannoth Kings are now noted, unless this feature is disabled by talking to Thorodin south of Rellekka | 15% increased chance of gaining approval in Managing Miscellania when fishing or woodcutting (other activities always give approval) | Enchanted lyre and its imbued variant can now be played to teleport to Waterbirth Island, Jatizso, and Neitiznot, aside from Rellekka | The seal of passage is no longer needed to interact with anyone on Lunar Isle, which means you'll no longer be kicked off the island to Rellekka for doing so (you'll instead gain access to the Return Orb as a new way of reaching Rellekka) | Fossegrimen will imbue your lyre with infinite charges for 200 of each required fish, down from 400",
+    "source_url": "https://oldschool.runescape.wiki/w/Fremennik_Diary"
+  },
+  "fremennik:hard": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Fremennik sea boots 3: | Five daily teleports to the Rellekka marketplace | Antique lamp worth 15,000 experience in any skill of at least level 50 | Roughly 18% increased experience and 25% more marks of grace from the Rellekka Rooftop Course | Adamantite bars from aviansie killed in the God Wars Dungeon are now noted | Enchanted lyre and its imbued variant can now be played to teleport to Waterbirth Island, aside from Rellekka | Access to Tan Leather and Recharge Dragonstone from the Lunar spellbook | Stony basalt now teleports you on top of the Troll Stronghold, past the rocky shortcut (this requires 73 Agility) | Fossegrimen will imbue your lyre with infinite charges for 400 of each required fish, down from 600 | Access to Bosun Zarah as a crewmate after the completion of Royal Trouble (requires 80 Sailing)",
+    "source_url": "https://oldschool.runescape.wiki/w/Fremennik_Diary"
+  },
+  "fremennik:medium": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Fremennik sea boots 2: | Three daily teleports to the Rellekka marketplace | Antique lamp worth 7,500 experience in any skill of at least level 40 | 10% increased chance of gaining approval in Managing Miscellania when fishing or woodcutting (other activities always give approval) | Fossegrimen will imbue your lyre with infinite charges for 600 of each required fish, down from 800",
+    "source_url": "https://oldschool.runescape.wiki/w/Fremennik_Diary"
+  },
+  "kandarin:easy": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Kandarin headgear 1: | Acts as a light source when worn or held in the inventory | While worn, gain double logs from regular trees (no additional experience granted) | Antique lamp worth 2,500 experience in any skill of at least level 30 | Coal trucks can hold up to 140 coal, up from 120 | The flax keeper will offer you 30 noted bow strings every day for 30 noted flax, for a profit of coins on the Grand Exchange | 5% more marks of grace from the Seers' Village Rooftop Course",
+    "source_url": "https://oldschool.runescape.wiki/w/Kandarin_Diary"
+  },
+  "kandarin:elite": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Kandarin headgear 4: | Unlimited teleports to Sherlock | Antique lamp worth 50,000 experience in any skill of at least level 70 | The first 200 coal placed in the coal trucks every day will automatically be transported to your bank | The flax keeper will offer you 250 noted bow strings every day for 250 noted flax, for a profit of coins on the Grand Exchange | 15% increased chance to save a \"harvest life\" at the herb patch in Catherby, up from 10% | 50% discount on Thormacs' enchanting services, up from 25% (requires completion of Scorpion Catcher) | Otto Godblessed now turns your Zamorakian spear into a Zamorakian hasta for 150,000 coins, down from 300,000 coins",
+    "source_url": "https://oldschool.runescape.wiki/w/Kandarin_Diary"
+  },
+  "kandarin:hard": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Kandarin headgear 3: | One daily teleport to Sherlock | Antique lamp worth 15,000 experience in any skill of at least level 50 | Coal trucks can hold up to 308 coal, up from 280 | The flax keeper will offer you 120 noted bow strings every day for 120 noted flax, for a profit of coins on the Grand Exchange | 15% more marks of grace from the Seers' Village Rooftop Course, up from 10% | 10% increased chance to save a \"harvest life\" at the herb patch in Catherby, up from 5% | 25% discount on Thormacs' enchanting services (requires completion of Scorpion Catcher) | 10% more honour points from Barbarian Assault | Camelot Teleport can now be used to teleport to Seers' Village bank instead | 10% increased chance to trigger the special effect of enchanted bolts, even in PvP (stacks additively with other increases, such as that of the Armadyl crossbow's special attack)",
+    "source_url": "https://oldschool.runescape.wiki/w/Kandarin_Diary"
+  },
+  "kandarin:medium": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Kandarin headgear 2: | No new benefits | Antique lamp worth 7,500 experience in any skill of at least level 40 | Coal trucks can hold up to 280 coal, up from 140 | The flax keeper will offer you 60 noted bow strings every day for 60 noted flax, for a profit of coins on the Grand Exchange | 10% more marks of grace from the Seers' Village Rooftop Course, up from 5% | 10% increased experience from cutting maple trees in Seers' Village (stacks with the Lumberjack outfit) | 5% increased chance to save a \"harvest life\" at the herb patch in Catherby, slightly increasing your harvest yield | The spinning wheel in Seers' Village spins 33% faster | Ropes are now permanently secured at the Baxtorian Falls (with the completion of Waterfall Quest)",
+    "source_url": "https://oldschool.runescape.wiki/w/Kandarin_Diary"
+  },
+  "karamja:easy": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Karamja gloves 1: | While worn, Brimhaven—Ardougne and Musa Point—Port Sarim boat trips cost 15 coins instead of 30 coins | While worn, items in various shops around Karamja are sold at a discounted rate and bought for more | Antique lamp worth 1,000 experience in any skill of any level (instead of the usual antique lamp for this tier)",
+    "source_url": "https://oldschool.runescape.wiki/w/Karamja_Diary"
+  },
+  "karamja:elite": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Karamja gloves 4: | Unlimited teleports to Duradel/Kuradal | Antique lamp worth 50,000 experience in any skill of at least level 70 | 10% chance of receiving two Agility arena tickets and Brimhaven vouchers, instead of one, when successfully tagging a ticket dispenser at the Brimhaven Agility Arena | Free usage of Shilo Village's furnace, down from a fee of 20 coins per use | Free access to the Hardwood Grove, down from a fee of 100 trading sticks | Free cart rides between Brimhaven and Shilo Village, down from a fee of 10-200 coins | Red dragonhide from red dragons in the Brimhaven Dungeon is now noted (cannot be disabled) | Bars from metal dragons in the Brimhaven Dungeon are now noted, unless this feature is disabled by talking to Pirate Jackie the Fruit | Double Tokkul from the TzHaar Fight Cave, the Inferno, and TzHaar-Ket-Rak's Challenges | Resurrect with full health and restored stats once per day when you reach 0 hitpoints in the TzHaar Fight Cave, allowing you to continue on with the fight (the task list of this diary will show you whether you've used this daily resurrection)",
+    "source_url": "https://oldschool.runescape.wiki/w/Karamja_Diary"
+  },
+  "karamja:hard": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Karamja gloves 3: | Unlimited teleports to the underground portion of the Shilo Village mine | Jiminua's Jungle Store and the Karamja General Store are now also affected by the gloves' discounted store prices | Antique lamp worth 10,000 experience in any skill of at least level 40 (instead of the usual antique lamp for this tier)",
+    "source_url": "https://oldschool.runescape.wiki/w/Karamja_Diary"
+  },
+  "karamja:medium": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Karamja gloves 2: | While worn, 10% additional Agility experience from all obstacles in the Brimhaven Agility Arena and from Agility arena tickets | Antique lamp worth 5,000 experience in any skill of at least level 30 (instead of the usual antique lamp for this tier) | Access to the underground portion of the Shilo Village mine",
+    "source_url": "https://oldschool.runescape.wiki/w/Karamja_Diary"
+  },
+  "kourend:easy": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Rada's blessing 1: | Three daily teleports to the Kourend Woodland | 2% chance to catch two fish at once anywhere when equipped, excluding at Tempoross' Cove (no additional experience granted) | Antique lamp worth 2,500 experience in any skill of at least level 30 | Entrance fee for the Crabclaw Isle lowered to 5,000 coins, down from 10,000 coins | Doubled chance at receiving a Xeric's talisman from lizardmen, lizardman brutes, and lizardman shamans (1/125, up from 1/250) | 20% discount on Eodan's tanning services | Access to the cooking ranges in the Hosidius Kitchen, which have an additive 5% increased success rate over other ranges | The farming patches in Hosidius, south of the church, will never get diseased",
+    "source_url": "https://oldschool.runescape.wiki/w/Kourend_&_Kebos_Diary"
+  },
+  "kourend:elite": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Rada's blessing 4: | Unlimited teleports to the top of Mount Karuulm | 8% chance to catch two fish at once anywhere when equipped, excluding at Tempoross' Cove (no additional experience granted) | Has a Prayer bonus of +2, up from +1, the highest of any item in the ammunition slot | Antique lamp worth 50,000 experience in any skill of at least level 70 | Roughly 11% more slayer reward points from Konar quo Maten's tasks, including milestone tasks | 10% additive success rate when using the cooking ranges in the Hosidius Kitchen, up from 5% | Permanent protection from the burning effect in the Karuulm Slayer Dungeon without the need for protective footwear | Ashes scattered via the Ash sanctifier now grant full Prayer experience | 80% discount on Eodan's tanning service, up from 60% | 10% additional blood runes from the false blood altar (no additional experience granted) | 10% increased chance of obtaining higher-tier ores in the Blast mine | Thirus offers you 80 dynamite for free every day, worth a total of coins on the Grand Exchange",
+    "source_url": "https://oldschool.runescape.wiki/w/Kourend_&_Kebos_Diary"
+  },
+  "kourend:hard": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Rada's blessing 3: | Unlimited teleports to the Kourend Woodland | Three daily teleports to the top of Mount Karuulm | 6% chance to catch two fish at once anywhere when equipped, excluding at Tempoross' Cove (no additional experience granted) | Has a Prayer bonus of +1 when equipped, similar to the god blessings | Ash sanctifier, claimable from Tyss | An additional item that, when carried, causes demonic ashes dropped from killed monsters to be automatically scattered, granting half the Prayer experience that would have been granted for scattering them normally | This item is charged with death runes | Antique lamp worth 15,000 experience in any skill of at least level 50 | Any slayer helmet can be used in place of a Shayzien helm (5) for its protection against lizardman shamans, after talking to Captain Cleive (requires having the helm in your collection log) | 60% discount on Eodan's tanning services, up from 40% | 5% increased chance to save a \"harvest life\" at the herb patches in Hosidius and the Farming Guild, slightly increasing your harvest yield | Thirus offers you 40 dynamite for free every day, worth a total of coins on the Grand Exchange",
+    "source_url": "https://oldschool.runescape.wiki/w/Kourend_&_Kebos_Diary"
+  },
+  "kourend:medium": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Rada's blessing 2: | Five daily teleports to the Kourend Woodland | 4% chance to catch two fish at once anywhere when equipped, excluding at Tempoross' Cove (no additional experience granted) | Has a Prayer bonus of +1 when equipped, similar to the god blessings | Antique lamp worth 7,500 experience in any skill of at least level 40 | Free access to Crabclaw Isle, down from a fee of 5,000 coins | 40% discount on Eodan's tanning services, up from 20% | 5% chance to mine two dense essence blocks at once | Thirus offers you 20 dynamite for free every day, worth a total of coins on the Grand Exchange",
+    "source_url": "https://oldschool.runescape.wiki/w/Kourend_&_Kebos_Diary"
+  },
+  "lumbridge:easy": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Explorer's ring 1: | Can restore 50% of run energy twice a day | Allows 30 casts of Low Level Alchemy without runes each day (no experience granted unless done at the Alchemist's Playground, still requires 21 Magic) | Antique lamp worth 2,500 experience in any skill level of at least level 30",
+    "source_url": "https://oldschool.runescape.wiki/w/Lumbridge_&_Draynor_Diary"
+  },
+  "lumbridge:elite": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Explorer's ring 4: | Can restore full run energy three times a day | Allows 30 casts of High Level Alchemy without runes each day (no experience granted unless done at the Alchemist's Playground, still requires 55 Magic) | Antique lamp worth 50,000 experience in any skill of at least level 70 | 20% discount on items in the Culinaromancer's Chest | Steal twice as many cave goblin wires in Dorgesh-Kaan | Ability to use fairy rings without the need of a Dramen or Lunar staff | Unlocks the seventh slot for blocking Slayer tasks",
+    "source_url": "https://oldschool.runescape.wiki/w/Lumbridge_&_Draynor_Diary"
+  },
+  "lumbridge:hard": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Explorer's ring 3: | Can restore 50% of run energy four times a day | Unlimited teleports to the cabbage patch of South Falador Farm | Antique lamp worth 15,000 experience in any skill level of at least level 50 | 10% increased experience from Tears of Guthix",
+    "source_url": "https://oldschool.runescape.wiki/w/Lumbridge_&_Draynor_Diary"
+  },
+  "lumbridge:medium": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Explorer's ring 2: | Can restore 50% of run energy three times a day | Three daily teleports to the cabbage patch of South Falador Farm | Antique lamp worth 7,500 experience in any skill of at least level 40",
+    "source_url": "https://oldschool.runescape.wiki/w/Lumbridge_&_Draynor_Diary"
+  },
+  "morytania:easy": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Morytania legs 1: | Two daily teleports to the Pool of Slime beneath the Ectofuntus | Antique lamp worth 2,500 experience in any skill of at least level 30 | Ghasts in the Mort Myre Swamp will ignore you half of the time | 2.5% more Slayer experience in the Slayer Tower while on a Slayer task",
+    "source_url": "https://oldschool.runescape.wiki/w/Morytania_Diary"
+  },
+  "morytania:elite": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Morytania legs 4: | Prevents ghasts from turning your food into rotten food when worn | Unlimited teleports to the Pool of Slime beneath the Ectofuntus | Antique lamp worth 50,000 experience in any skill of at least level 70 | Robin exchanges 39 bones of any kind daily for a bucket of slime and a pot of bonemeal each, up from 26 | 50% more Firemaking experience when burning shade remains | Bones buried via the Bonecrusher now grant full Prayer experience | Access to the disease-free herb patch on Harmony Island | 10% more Slayer experience in the Slayer Tower while on a Slayer task, up from 7.5%",
+    "source_url": "https://oldschool.runescape.wiki/w/Morytania_Diary"
+  },
+  "morytania:hard": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Morytania legs 3: | Unlimited teleports to Burgh de Rott | Bonecrusher, claimable from a ghost disciple while wearing a ghostspeak amulet or Morytania legs 3+ | An additional item that, when carried, causes bones dropped from killed monsters to be automatically buried, granting half the usual Prayer experience that would have been granted for burying them normally | This item is charged with a small amount of ecto-tokens | Antique lamp worth 15,000 experience in any skill of at least level 50 | Robin exchanges 26 bones of any kind daily for a bucket of slime and a pot of bonemeal each, up from 13 | Double Mort myre fungi when casting Bloom | 50% more Prayer experience from burning shade remains | 50% more runes from the Barrows chest | 7.5% more Slayer experience in the Slayer Tower while on a Slayer task (instead of 5%)",
+    "source_url": "https://oldschool.runescape.wiki/w/Morytania_Diary"
+  },
+  "morytania:medium": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Morytania legs 2: | Five daily teleports to the Pool of Slime beneath the Ectofuntus | Acts as a ghostspeak amulet when worn | Antique lamp worth 7,500 experience in any skill of at least level 40 | Robin exchanges 13 bones of any kind daily for a bucket of slime and a pot of bonemeal each | 5% more Slayer experience in the Slayer Tower while on a Slayer task, up from 2.5%",
+    "source_url": "https://oldschool.runescape.wiki/w/Morytania_Diary"
+  },
+  "varrock:easy": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Varrock armour 1: | While worn, 10% chance of mining double clay, limestone, guardian fragments, tephra, and ores up to and including gold (experience granted for both minerals) | While worn, 10% chance of smelting 2 bars at once, up to steel, when using the Edgeville furnace (experience granted for both bars) | Antique lamp worth 2,500 experience in any skill of at least level 30 | Zaff will sell you 15 noted battlestaves as a single stack every day for 105,000 coins, resellable on the Grand Exchange for a profit of coins (after tax) | The skull sceptre will now hold up to 14 charges, up from 10 | Individual parts used to make the skull sceptre now give an extra bone fragment per component when chiselled",
+    "source_url": "https://oldschool.runescape.wiki/w/Varrock_Diary"
+  },
+  "varrock:elite": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Varrock armour 4: | Can be worn in place of a prospector jacket for clue steps, and provides the experience bonus of the full outfit | While worn, 10% chance of mining double of any ore, as well as various other minerals (experience granted for both minerals) | While worn, 10% chance of smelting 2 bars at once, of any kind, when using the Edgeville furnace (experience granted for both bars) | Antique lamp worth 50,000 experience in any skill of at least level 70 | Zaff will sell you 120 noted battlestaves as a single stack every day for 840,000 coins, resellable on the Grand Exchange for a profit of coins (after tax) | The skull sceptre will now hold up to 26 charges, up from 22 | Individual parts used to make the skull sceptre now give four extra bone fragments per component when chiselled",
+    "source_url": "https://oldschool.runescape.wiki/w/Varrock_Diary"
+  },
+  "varrock:hard": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Varrock armour 3: | Can be worn in place of a chef's hat to access the Cooks' Guild | While worn, 10% chance of mining double ores up to and including adamantite, as well as various other minerals (experience granted for both minerals) | While worn, 10% chance of smelting 2 bars at once, up to and including adamantite, when using the Edgeville furnace (experience granted for both bars) | Antique lamp worth 15,000 experience in any skill of at least level 50 | Zaff will sell you 60 noted battlestaves as a single stack every day for 420,000 coins, resellable on the Grand Exchange for a profit of coins (after tax) | The skull sceptre will now hold up to 22 charges, up from 18 | Individual parts used to make the skull sceptre now give three extra bone fragments per component when chiselled | Access to the bank in the Cooks' Guild and a range at only 2 tiles away from it",
+    "source_url": "https://oldschool.runescape.wiki/w/Varrock_Diary"
+  },
+  "varrock:medium": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Varrock armour 2: | While worn, 10% chance of mining double ores up to and including mithril, as well as various other minerals (experience granted for both minerals) | While worn, 10% chance of smelting 2 bars at once, up to and including mithril, when using the Edgeville furnace (experience granted for both bars) | Antique lamp worth 7,500 experience in any skill of at least level 40 | Zaff will sell you 30 noted battlestaves as a single stack every day for 210,000 coins, resellable on the Grand Exchange for a profit of coins (after tax) | The ability to toggle the destination of Varrock Teleport from Varrock Square to the Grand Exchange | The skull sceptre will now hold up to 18 charges, up from 14 | Individual parts used to make the skull sceptre now give two extra bone fragments per component when chiselled",
+    "source_url": "https://oldschool.runescape.wiki/w/Varrock_Diary"
+  },
+  "western:easy": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Western banner 1: | Depicts a chompy bird | No benefits aside from being a crush weapon | Antique lamp worth 2,500 experience in any skill of at least level 30 | 25% chance of two chompy birds appearing at once when chompy bird hunting | Rantz offers you 25 ogre arrows for free every day, worth a total of coins on the Grand Exchange",
+    "source_url": "https://oldschool.runescape.wiki/w/Western_Provinces_Diary"
+  },
+  "western:elite": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Western banner 4: | Depicts an elven pattern | Unlimited teleports to the Piscatoris Fishing Colony | Antique lamp worth 50,000 experience in any skill of at least level 70 | Two chompy birds will always appear at once when chompy bird hunting | Chance of receiving a chompy chick when chompy bird hunting, at a rate of 1/500 | Rantz offers you 150 ogre arrows for free every day, worth a total of coins on the Grand Exchange | Nieve/Steve now grant as many slayer reward points as Duradel/Kuradal | Resurrect with full health and restored stats once per day when you reach 0 hitpoints against Zulrah, allowing you to continue on with the fight (the task list of this diary will show you whether you've used this daily resurrection, and this is considered a \"safe death\" for Hardcore Ironman players)",
+    "source_url": "https://oldschool.runescape.wiki/w/Western_Provinces_Diary"
+  },
+  "western:hard": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Western banner 3: | Depicts a gnome child | One daily teleport to the Piscatoris Fishing Colony | Antique lamp worth 15,000 experience in any skill of at least level 50 | Rantz offers you 100 ogre arrows for free every day, worth a total of coins on the Grand Exchange | Teleport crystals will now hold up to 5 charges, up from 3 | The void knight top and robe can now be upgraded into an elite void top and robe for 200 commendation points each, by speaking to the Elite Void Knight | Access to the room with the monkey skull in the Temple of Marimbo Dungeon, allowing you to make the ancient gorilla greegree | Access to the Hunting expert's private Red chinchompa hunting ground | Islwyn now sells Crystal halberds for 750,000 coins, which can be wielded with 70 Attack and 35 Strength, and you gain the ability to create them yourself (with 78 Crafting and 78 Smithing)",
+    "source_url": "https://oldschool.runescape.wiki/w/Western_Provinces_Diary"
+  },
+  "western:medium": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Western banner 2: | Depicts King Awowogei | Antique lamp worth 7,500 experience in any skill of at least level 40 | 50% chance of two chompy birds appearing at once when chompy bird hunting | Rantz offers you 50 ogre arrows for free every day, worth a total of coins on the Grand Exchange | The crystal saw will now hold up to 56 charges, up from 28",
+    "source_url": "https://oldschool.runescape.wiki/w/Western_Provinces_Diary"
+  },
+  "wilderness:easy": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Wilderness sword 1: | Always slashes webs successfully | Identical stats to an iron sword | Antique lamp worth 2,500 experience in any skill of at least level 30 | You can now use the Wilderness lever to teleport to Edgeville, as an alternative to East Ardougne | Lundail offers you 40 random runes for free every day, worth a total average of coins on the Grand Exchange",
+    "source_url": "https://oldschool.runescape.wiki/w/Wilderness_Diary"
+  },
+  "wilderness:elite": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Wilderness sword 4: | Identical stats to an adamant sword (only weighs negligibly less) | Unlimited teleports to the Fountain of Rune | Antique lamp worth 50,000 experience in any skill of at least level 70 | Free access to the Resource Area, down from a fee of 3,750 coins | Lundail offers you 200 random runes for free every day, worth a total average of coins on the Grand Exchange | Dragon bones from dragons killed in the Wilderness are now noted, unless this feature is disabled by talking to the Lesser Fanatic in Edgeville (this excludes the dragon bones of King Black Dragon, as his lair is considered to be outside of the Wilderness) | Catch rate of dark crabs increased by 112.5%",
+    "source_url": "https://oldschool.runescape.wiki/w/Wilderness_Diary"
+  },
+  "wilderness:hard": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Wilderness sword 3: | Identical stats to a mithril sword (only weighs negligibly more) | One daily teleport to the Fountain of Rune | Antique lamp worth 15,000 experience in any skill of at least level 50 | Entrance fee for the Resource Area lowered to 3,750 coins, down from 6,000 coins | Possess up to 5 ecumenical keys at a time, up from 4 | Ecumenical keys can now be sold to the Lesser Fanatic in Edgeville for 61,500 coins each | Lundail offers you 120 random runes for free every day, worth an average of coins on the Grand Exchange | 50% more lava shards from grinding lava scales | 67% more loot from chests in the Rogues' Castle, up from 33% | You can now select your destination when using Wilderness obelisks, instead of being teleported to a random obelisk | You'll no longer have a delay of 3 ticks (1.8 seconds) when using a teleport in the Revenant Caves or any of the Wilderness boss caves. | Wine of zamorak taken from the Chaos Temple (hut) and Deep Wilderness Dungeon will now be noted | Access to Spindel, Artio, and Calvar'ion",
+    "source_url": "https://oldschool.runescape.wiki/w/Wilderness_Diary"
+  },
+  "wilderness:medium": {
+    "accessed": "2026-06-17T18:22:53Z",
+    "rewards_block": "Wilderness sword 2: | Identical stats to a steel sword | Antique lamp worth 7,500 experience in any skill of at least level 40 | Entrance fee for the Resource Area lowered to 6,000 coins, down from 7,500 coins | Possess up to 4 ecumenical keys at a time, up from 3 | Lundail offers you 80 random runes for free every day, worth a total average of coins on the Grand Exchange | Access to the crevice shortcut in the Deep Wilderness Dungeon (with 46 Agility) | Access to Callisto, Venenatis, and Vet'ion | 15% more chance to receive drops from cutting fallen ents | Ability to obtain loot from chests in the Rogues' Castle | Zombie pirates you kill have a 50% chance of dropping something in addition to their bones, up from 15%",
+    "source_url": "https://oldschool.runescape.wiki/w/Wilderness_Diary"
+  }
+}

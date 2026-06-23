@@ -214,7 +214,7 @@ def _emit_effects(tier_id: str, rec: dict, edges: list[Edge]) -> None:
         slot = per_src_slot.get(src, 1)
         per_src_slot[src] = slot + 1
         data = {k: v for k, v in ef.items()
-                if k not in ("target", "rides_on_item_id")}
+                if k not in ("target", "rides_on_item_id", "source_token")}
         edges.append(Edge(
             id=_eid(src, slot),
             type=EdgeType.EFFECT,

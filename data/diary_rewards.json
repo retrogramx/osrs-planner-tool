@@ -29,7 +29,8 @@
           "target_facet": "death runes received from trading cats to civilians",
           "target": {"kind": "activity", "name": "West Ardougne cat trade"},
           "condition": "unconditional-once-earned",
-          "tier_source": "ardougne:easy"
+          "tier_source": "ardougne:easy",
+          "source_token": "twice as many death runes"
         },
         {
           "effect_kind": "access",
@@ -37,7 +38,8 @@
           "target_facet": "unlimited teleports to Ardougne Monastery",
           "target": {"kind": "region", "name": "Ardougne Monastery"},
           "condition": "unconditional-once-earned",
-          "tier_source": "ardougne:easy"
+          "tier_source": "ardougne:easy",
+          "source_token": "Unlimited teleports to the Ardougne Monastery"
         }
       ],
       "extra_unlocks": [],
@@ -64,7 +66,8 @@
           "target_facet": "runes received from the Barrows chest",
           "target": {"kind": "activity", "name": "Barrows"},
           "condition": "unconditional-once-earned",
-          "tier_source": "morytania:hard"
+          "tier_source": "morytania:hard",
+          "source_token": "50% more runes from the Barrows chest"
         },
         {
           "effect_kind": "access",
@@ -72,7 +75,8 @@
           "target_facet": "unlimited teleports to Burgh de Rott",
           "target": {"kind": "region", "name": "Burgh de Rott"},
           "condition": "unconditional-once-earned",
-          "tier_source": "morytania:hard"
+          "tier_source": "morytania:hard",
+          "source_token": "Unlimited teleports to Burgh de Rott"
         }
       ],
       "extra_unlocks": [
