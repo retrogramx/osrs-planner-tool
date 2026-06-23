@@ -2526,6 +2526,20 @@
     "children": [
       {
         "atom_type": "skill_level",
+        "data": {},
+        "qty": null,
+        "ref_node": "skill:ranged",
+        "threshold": 50
+      }
+    ],
+    "id": 4513166,
+    "op": "and",
+    "parent": null
+  },
+  {
+    "children": [
+      {
+        "atom_type": "skill_level",
         "data": {
           "boostable": true
         },
@@ -2591,6 +2605,20 @@
   {
     "children": [],
     "id": 4563732,
+    "op": "and",
+    "parent": null
+  },
+  {
+    "children": [
+      {
+        "atom_type": "quest_points",
+        "data": {},
+        "qty": null,
+        "ref_node": null,
+        "threshold": 335
+      }
+    ],
+    "id": 4572335,
     "op": "and",
     "parent": null
   },
@@ -4154,6 +4182,20 @@
       }
     ],
     "id": 4853457,
+    "op": "and",
+    "parent": null
+  },
+  {
+    "children": [
+      {
+        "atom_type": "quest_points",
+        "data": {},
+        "qty": null,
+        "ref_node": null,
+        "threshold": 335
+      }
+    ],
+    "id": 4868001,
     "op": "and",
     "parent": null
   },

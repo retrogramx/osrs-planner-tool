@@ -1,0 +1,2228 @@
+{{External|rs=Quests/Experience rewards|rsc}}
+{{Otheruses|the rewards for all quests|the F2P rewards|Quest experience rewards (F2P)}}
+
+{| class="wikitable" style="text-align:center;" align="right"
+|+Quick links
+|-
+|[[File:Attack icon.png|link=#Attack]]
+|[[File:Hitpoints icon.png|link=#Hitpoints]]
+|[[File:Mining icon.png|link=#Mining]]
+|-
+|[[File:Strength icon.png|link=#Strength]]
+|[[File:Agility icon.png|link=#Agility]]
+|[[File:Smithing icon.png|link=#Smithing]]
+|-
+|[[File:Defence icon.png|link=#Defence]]
+|[[File:Herblore icon.png|link=#Herblore]]
+|[[File:Fishing icon.png|link=#Fishing]]
+|-
+|[[File:Ranged icon.png|link=#Ranged]]
+|[[File:Thieving icon.png|link=#Thieving]]
+|[[File:Cooking icon.png|link=#Cooking]]
+|-
+|[[File:Prayer icon.png|link=#Prayer]]
+|[[File:Crafting icon.png|link=#Crafting]]
+|[[File:Firemaking icon.png|link=#Firemaking]]
+|-
+|[[File:Magic icon.png|link=#Magic]]
+|[[File:Fletching icon.png|link=#Fletching]]
+|[[File:Woodcutting icon.png|link=#Woodcutting]]
+|-
+|[[File:Runecraft icon.png|link=#Runecraft]]
+|[[File:Slayer icon.png|link=#Slayer]]
+|[[File:Farming icon.png|link=#Farming]]
+|-
+|[[File:Construction icon.png|link=#Construction]]
+|[[File:Hunter icon.png|link=#Hunter]]
+|[[File:Sailing icon.png|link=#Sailing]]
+|-
+|colspan=3 | [[File:Stats icon.png|link=#Skill choice]]
+|}
+
+This page contains a list of [[quests]] which gives experience in a specific [[skill]]; each skill has its own section displaying the experience given in ascending order.
+
+There are also quests that let you choose between different skills, see [[Quest experience rewards#Skill choice|here]].
+
+==Set experience==
+This section lists the experience that is given in a specific [[skill]] post-quest completion. In addition, this section also shows the skill requirements for the listed quests.
+{{Sync}}
+==={{plink|Agility|pic=Agility icon}}===
+{| class="wikitable sortable lighttable qc-active oqg-table" style="text-align:center;"
+!Quest
+!Members
+!Experience<br/>reward
+!data-sort-type="number"|Agility<br/>requirement
+!class='unsortable'|Enemy to defeat
+|-
+|- data-rowid="Recruitment Drive"
+|[[Recruitment Drive]]
+|Yes||{{+=|agility|1,000.5|echo=2}}|| -
+|[[Sir Leye]] (level 20)
+|-
+|- data-rowid="The Depths of Despair"
+|[[The Depths of Despair]]
+|Yes||{{+=|agility|1,500|echo=2}}||{{SCP|Agility|18|sort=yes}}
+|[[Sand Snake]] ''(level 36)''
+|-
+|- data-rowid="The Fremennik Trials"
+|[[The Fremennik Trials]]
+|Yes||{{+=|agility|2,812.4|echo=2}}||-||Multiple mid level NPCs
+|-
+|- data-rowid="Underground Pass"
+|[[Underground Pass]]
+|Yes||{{+=|agility|3,000|echo=2}}|| -
+|Multiple high level NPCs
+|-
+|- data-rowid="Icthlarin's Little Helper"
+|[[Icthlarin's Little Helper]]
+|Yes||{{+=|agility|4,000|echo=2}}||-
+|Multiple high level NPCs
+|-
+|- data-rowid="Cold War"
+|[[Cold War]]
+|Yes||{{+=|agility|5,000|echo=2}}||{{SCP|Agility|30|sort=yes}}
+|1–3 [[Icelord|Icelords]] ''(level 51)''
+|-
+|- data-rowid="Royal Trouble"
+|[[Royal Trouble]]
+|Yes||{{+=|agility|5,000|echo=2}}||{{SCP|Agility|40|sort=yes}}
+|[[Giant Sea Snake]] ''(level 149)''
+|-
+|- data-rowid="Cabin Fever"
+|[[Cabin Fever]]
+|Yes||{{+=|agility|7,000|echo=2}}||{{SCP|Agility|42|sort=yes}}
+|[[Pirate|Pirates]] ''(level 57)''
+|-
+|- data-rowid="Darkness of Hallowvale"
+|[[Darkness of Hallowvale]]
+|Yes||{{+=|agility|7,000|echo=2}}||{{SCP|Agility|26|sort=yes}}
+|[[Vanstrom Klause]] (level 169)
+|-
+|- data-rowid="Death on the Isle"
+|[[Death on the Isle]]
+|Yes||{{+=|agility|7,500|echo=2}}
+|{{SCP|Agility|32|sort=yes}}
+|Two low-level enemies with no equipment
+|-
+|- data-rowid="The Grand Tree"
+|[[The Grand Tree]]
+|Yes||{{+=|agility|7,900|echo=2}}||{{SCP|Agility|25|sort=yes}}
+|[[Black demon]] ''(level 172)'' (can be safespotted)
+|- data-rowid="The Heart of Darkness"
+|[[The Heart of Darkness]]
+|Yes||{{+=|agility|8,000|echo=2}}
+|{{SCP|Agility|46|sort=yes}}
+|Multiple high level NPCs
+|- data-rowid="Land of the Goblins"
+|[[Land of the Goblins]]
+|Yes||{{+=|agility|8,000|echo=2}}
+|{{SCP|Agility|38|sort=yes}}
+|Multiple mid level NPCs
+|-
+|- data-rowid="Troll Romance"
+|[[Troll Romance]]
+|Yes||{{+=|agility|8,000|echo=2}}||{{SCP|Agility|28|sort=yes}}
+|[[Arrg]] ''(level 113)'' ([[Safespot|safespottable]])
+|-
+|- data-rowid="Recipe for Disaster/Freeing King Awowogei"
+|[[Recipe for Disaster]]<br/>([[Recipe for Disaster/Freeing King Awowogei|Awowogei subquest]])
+|Yes||{{+=|agility|10,000|echo=2}}||{{SCP|Agility|48|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Regicide"
+|[[Regicide]]
+|Yes||{{+=|agility|13,750|echo=2}}||{{SCP|Agility|56|sort=yes}}
+|[[Tyras guard]] ''(level 110)''
+|-
+|- data-rowid="Grim Tales"
+|[[Grim Tales]]
+|Yes||{{+=|agility|25,000|echo=2}}||{{SCP|Agility|59|sort=yes}}
+|[[Glod]] ''(level 138)''
+|-
+|- data-rowid="The Curse of Arrav"
+|[[The Curse of Arrav]]
+|Yes||{{+=|agility|40,000|echo=2}}||{{SCP|Agility|61|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Song of the Elves"
+|[[Song of the Elves]]
+|Yes||{{+=|agility|40,000|echo=2}}||{{SCP|Agility|70|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Dragon Slayer II"
+|[[Dragon Slayer II]]
+|Yes||{{+=|agility|50,000|echo=2}}||{{SCP|Agility|60|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Beneath Cursed Sands"
+|[[Beneath Cursed Sands]]
+|Yes||{{+=|agility|50,000|echo=2}}||{{SCP|Agility|62|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Making Friends with My Arm"
+|[[Making Friends with My Arm]]
+|Yes||{{+=|agility|50,000|echo=2}}||{{SCP|Agility|68|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Mourning's End Part II"
+|[[Mourning's End Part II]]
+|Yes||{{+=|agility|60,000|echo=2}}||{{SCP|Agility|56|sort=yes}}
+|None (but powerful level 73 [[Shadow (Temple of Light)|shadows]] are aggressive to players inside the temple)
+|-
+|- data-rowid="Monkey Madness II"
+|[[Monkey Madness II]]
+|Yes||{{+=|agility|60,000|echo=2}}||{{SCP|Agility|55|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Secrets of the North"
+|[[Secrets of the North]]
+|Yes||{{+=|agility|60,000|echo=2}}||{{SCP|Agility|69|sort=yes}}
+|Multiple high level NPCs
+|-
+!Total
+!
+!{{formatnum:{{#var:agility}}}}
+!
+!
+|}
+
+==={{plink|Attack|pic=Attack icon}}===
+{| class="wikitable sortable lighttable qc-active oqg-table" style="text-align:center;"
+!Quest
+!Members
+!Experience<br/>reward
+!data-sort-type="number"|Attack<br/>requirement
+!class='unsortable'|Enemy to defeat
+|-
+|- data-rowid="In Search of the Myreque"
+|[[In Search of the Myreque]]
+|Yes||{{+=|attack|600|echo=2}}|| -
+|[[Skeleton Hellhound]] ''(level 97)''
+|-
+|- data-rowid="Mountain Daughter"
+|[[Mountain Daughter]]
+|Yes||{{+=|attack|1,000|echo=2}}|| -
+|[[The Kendal]] ''(level 70)''
+|-
+|- data-rowid="Fairytale I - Growing Pains"
+|[[Fairytale I - Growing Pains]]
+|Yes||{{+=|attack|2,000|echo=2}}|| -
+|[[Tanglefoot]] ''(level 111)''
+|-
+|- data-rowid="In Aid of the Myreque"
+|[[In Aid of the Myreque]]
+|Yes||{{+=|attack|2,000|echo=2}}|| -
+|Multiple mid level NPCs
+|-
+|- data-rowid="Tai Bwo Wannai Trio"
+|[[Tai Bwo Wannai Trio]]
+|Yes||{{+=|attack|2,500|echo=2}}|| -
+|[[Monkey]] ''(level 3)''
+|-
+|- data-rowid="The Fremennik Trials"
+|[[The Fremennik Trials]]
+|Yes||{{+=|attack|2,812.4|echo=2}}|| -
+|Multiple mid level NPCs
+|-
+|- data-rowid="Death Plateau"
+|[[Death Plateau]]
+|Yes||{{+=|attack|3,000|echo=2}}|| -
+|None
+|-
+|- data-rowid="Underground Pass"
+|[[Underground Pass]]
+|Yes||{{+=|attack|3,000|echo=2}}|| -
+|Multiple high level NPCs
+|-
+|- data-rowid="Heroes' Quest"
+|[[Heroes' Quest]]
+|Yes||{{+=|attack|3,075|echo=2}}|| -
+|Multiple high level NPCs
+|-
+|- data-rowid="Vampyre Slayer"
+|[[Vampyre Slayer]]
+|No||{{+=|attack|4,825|echo=2}}|| -
+|[[Count Draynor]] ''(level 34)''
+|-
+|- data-rowid="Tree Gnome Village"
+|[[Tree Gnome Village]]
+|Yes||{{+=|attack|11,450|echo=2}}|| -
+|[[Khazard warlord]] ''(level 112)'' ([[Safespot|safespottable]])
+|-
+|- data-rowid="Fight Arena"
+|[[Fight Arena]]
+|Yes||{{+=|attack|12,175|echo=2}}|| -
+|Multiple high level NPCs
+|-
+|- data-rowid="Waterfall Quest"
+|[[Waterfall Quest]]
+|Yes||{{+=|attack|13,750|echo=2}}|| -
+|None
+|-
+|- data-rowid="The Grand Tree"
+|[[The Grand Tree]]
+|Yes||{{+=|attack|18,400|echo=2}}|| -
+|[[Black demon]] ''(level 172)'' (can be safespotted)
+|- data-rowid="Knight Waves"
+|[[Knight Waves]]<br/>([[Miniquests|miniquest]])
+|Yes||{{+=|attack|20,000|echo=2}}|| -
+|Multiple high level NPCs
+|-
+!Total
+!
+!{{formatnum:{{#var:attack}}}}
+!
+!
+|}
+{{reflist}}
+
+==={{plink|Construction|pic=Construction icon}}===
+{| class="wikitable sortable lighttable qc-active oqg-table" style="text-align:center;"
+!Quest
+!Members
+!Experience<br/>reward
+!data-sort-type="number"|Construction<br/>requirement
+!class='unsortable'|Enemy to defeat
+|-
+|- data-rowid="The Eyes of Glouphrie"
+|[[The Eyes of Glouphrie]]
+|Yes||{{+=|construction|250|echo=2}}||{{SCP|Construction|5|sort=yes}}
+|[[Evil creature]] (x6)
+|-
+|[[Daddy's Home]]<br/>([[Miniquests|miniquest]])
+|Yes
+|{{+=|construction|400|echo=2}}
+| -
+|None
+|-
+|- data-rowid="At First Light"
+|[[At First Light]]
+|Yes||{{+=|construction|800|echo=2}}||{{SCP|Construction|27|sort=yes}}
+|None
+|-
+|- data-rowid="Tower of Life"
+|[[Tower of Life]]
+|Yes||{{+=|construction|1,000|echo=2}}||{{SCP|Construction|10|sort=yes}}
+|None
+|-
+|- data-rowid="Cold War"
+|[[Cold War]]
+|Yes||{{+=|construction|1,500|echo=2}}||{{SCP|Construction|34|sort=yes}}
+|1–3 [[Icelord|Icelords]] ''(level 51)''
+|-
+|- data-rowid="Darkness of Hallowvale"
+|[[Darkness of Hallowvale]]
+|Yes||{{+=|construction|2,000|echo=2}}||{{SCP|Construction|5|sort=yes}}
+|[[Vanstrom Klause]] (level 169)
+|-
+|- data-rowid="The Great Brain Robbery"
+|[[The Great Brain Robbery]]
+|Yes||{{+=|construction|2,000|echo=2}}||{{SCP|Construction|30|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Shadows of Custodia"
+|[[Shadows of Custodia]]
+|Yes||{{+=|construction|3,000|echo=2}}||{{SCP|Construction|41|sort=yes}}
+|3 [[Strange creature (Shadows of Custodia)|Strange Creatures]] (''level 93'')
+|-
+|- data-rowid="Getting Ahead"
+|[[Getting Ahead]]
+|Yes||{{+=|construction|3,200|echo=2}}||{{SCP|Construction|26|sort=yes}}
+|[[Headless Beast]] (''level 82'')
+|-
+|- data-rowid="The Fremennik Isles"
+|[[The Fremennik Isles]]
+|Yes||{{+=|construction|5,000|echo=2}}||{{SCP|Construction|20|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Scrambled!"
+|[[Scrambled!]]
+|Yes||{{+=|construction|5,000|echo=2}}||{{SCP|Construction|38|sort=yes}}
+|[[Red Dragon]] (''level 106'') ([[Safespot|safespottable]])
+|-
+|- data-rowid="Making Friends with My Arm"
+|[[Making Friends with My Arm]]
+|Yes||{{+=|construction|10,000|echo=2}}||{{SCP|Construction|35|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Song of the Elves"
+|[[Song of the Elves]]
+|Yes||{{+=|construction|40,000|echo=2}}||{{SCP|Construction|70|sort=yes}}
+|Multiple high level NPCs
+|-
+!Total
+!
+!{{formatnum:{{#var:construction}}}}
+!
+!
+|}
+
+==={{plink|Cooking|pic=Cooking icon}}===
+{| class="wikitable sortable lighttable qc-active oqg-table" style="text-align:center;"
+!Quest
+!Members
+!Experience<br/>reward
+!data-sort-type="number"|Cooking<br/>requirement
+!class='unsortable'|Enemy to defeat
+|-
+|- data-rowid="Cook's Assistant"
+|[[Cook's Assistant]]
+|No||{{+=|cooking|300|echo=2}}|| -
+|None
+|-
+|- data-rowid="Rag and Bone Man I"
+|[[Rag and Bone Man I]]
+|Yes||{{+=|cooking|500|echo=2}}|| -
+|Multiple low level NPCs
+|-
+|- data-rowid="Recipe for Disaster/Freeing the Mountain Dwarf"
+|[[Recipe for Disaster]]<br/>([[Recipe for Disaster/Freeing the Mountain Dwarf|Mountain Dwarf subquest]])
+|Yes||{{+=|cooking|1,000|echo=2}}|| -
+|[[Icefiend]] ''(level 13)'' (only if you lack [[Ice gloves]])
+|-
+|- data-rowid="Recipe for Disaster/Freeing the Goblin generals"
+|[[Recipe for Disaster]]<br/>([[Recipe for Disaster/Freeing the Goblin generals|Goblin generals subquest]])
+|Yes||{{+=|cooking|1,000|echo=2}}|| -
+|None
+|-
+|- data-rowid="Recipe for Disaster/Freeing Pirate Pete"
+|[[Recipe for Disaster]]<br/>([[Recipe for Disaster/Freeing Pirate Pete|Pirate Pete subquest]])
+|Yes||{{+=|cooking|1,000|echo=2}}||{{SCP|Cooking|31|sort=yes}}
+|Multiple mid level NPCs
+|-
+|- data-rowid="Big Chompy Bird Hunting"
+|[[Big Chompy Bird Hunting]]
+|Yes||{{+=|cooking|1,470|echo=2}}||{{SCP|Cooking|30|sort=yes}}
+|[[Wolf|Wolves]] ''(level 64)''
+|-
+|- data-rowid="Recipe for Disaster/Freeing Skrach Uglogwee"
+|[[Recipe for Disaster]]<br/>([[Recipe for Disaster/Freeing Skrach Uglogwee|Skrach Uglogwee subquest]])
+|Yes||{{+=|cooking|1,500|echo=2}}||{{SCP|Cooking|41|sort=yes}}
+|None
+|-
+|- data-rowid="Gertrude's Cat"
+|[[Gertrude's Cat]]
+|Yes||{{+=|cooking|1,525|echo=2}}|| -
+|None
+|-
+|- data-rowid="Recipe for Disaster/Freeing the Lumbridge Guide"
+|[[Recipe for Disaster]]<br/>([[Recipe for Disaster/Freeing the Lumbridge Guide|Lumbridge Guide subquest]])
+|Yes||{{+=|cooking|2,500|echo=2}}||{{SCP|Cooking|40|sort=yes}}
+|None
+|-
+|- data-rowid="Heroes' Quest"
+|[[Heroes' Quest]]
+|Yes||{{+=|cooking|2,825|echo=2}}||{{SCP|Cooking|53|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Recipe for Disaster/Freeing Sir Amik Varze"
+|[[Recipe for Disaster]]<br/>([[Recipe for Disaster/Freeing Sir Amik Varze|Sir Amik Varze subquest]])
+|Yes||{{+=|cooking|4,000|echo=2}}|| -
+|Multiple high level NPCs
+|-
+|- data-rowid="Forgettable Tale..."
+|[[Forgettable Tale...]]
+|Yes||{{+=|cooking|5,000|echo=2}}||{{SCP|Cooking|22|sort=yes}}
+|None
+|-
+|- data-rowid="Scrambled!"
+|[[Scrambled!]]
+|Yes||{{+=|cooking|5,000|echo=2}}||{{SCP|Cooking|36|sort=yes}}
+|[[Red Dragon]] (''level 106'') ([[Safespot|safespottable]])
+|-
+|- data-rowid="Tai Bwo Wannai Trio"
+|[[Tai Bwo Wannai Trio]]
+|Yes||{{+=|cooking|5,000|echo=2}}||{{SCP|Cooking|30|sort=yes}}
+|[[Monkey]] ''(level 3)''
+|-
+|- data-rowid="Recipe for Disaster/Freeing Evil Dave"
+|[[Recipe for Disaster]]<br/>([[Recipe for Disaster/Freeing Evil Dave|Evil Dave subquest]])
+|Yes||{{+=|cooking|7,000|echo=2}}||{{SCP|Cooking|25|sort=yes}}
+|None
+|-
+|- data-rowid="Meat and Greet"
+|[[Meat and Greet]]
+|Yes||{{+=|cooking|8,000|echo=2}}|| -
+|Multiple high level NPCs
+|- data-rowid="Recipe for Disaster/Freeing King Awowogei"
+|[[Recipe for Disaster]]<br/>([[Recipe for Disaster/Freeing King Awowogei|Awowogei subquest]])
+|Yes||{{+=|cooking|10,000|echo=2}}||{{SCP|Cooking|70|sort=yes}}
+|Multiple high level NPCs
+|-
+!Total
+!
+!{{formatnum:{{#var:cooking}}}}
+!
+!
+|}
+
+==={{plink|Crafting|pic=Crafting icon}}===
+{| class="wikitable sortable lighttable qc-active oqg-table" style="text-align:center;"
+!Quest
+!Members
+!Experience<br/>reward
+!data-sort-type="number"|Crafting<br/>requirement
+!class='unsortable'|Enemy to defeat
+|-
+|- data-rowid="Sheep Shearer"
+|[[Sheep Shearer]]
+|No||{{+=|crafting|150|echo=2}}|| -
+|None
+|-
+|- data-rowid="Goblin Diplomacy"
+|[[Goblin Diplomacy]]
+|No||{{+=|crafting|200|echo=2}}|| -
+|None
+|-
+|- data-rowid="Tower of Life"
+|[[Tower of Life]]
+|Yes||{{+=|crafting|500|echo=2}}|| -
+|None
+|-
+|- data-rowid="In Search of the Myreque"
+|[[In Search of the Myreque]]
+|Yes||{{+=|crafting|600|echo=2}}|| -
+|[[Skeleton Hellhound]] ''(level 97)''
+|-
+|- data-rowid="Misthalin Mystery"
+|[[Misthalin Mystery]]
+|No||{{+=|crafting|600|echo=2}}|| -
+|None
+|-
+|- data-rowid="Dwarf Cannon"
+|[[Dwarf Cannon]]
+|Yes||{{+=|crafting|750|echo=2}}|| -
+|None
+|-
+|- data-rowid="Animal Magnetism"
+|[[Animal Magnetism]]
+|Yes||{{+=|crafting|1,000|echo=2}}||{{SCP|Crafting|19|sort=yes}}
+|None
+|-
+|- data-rowid="The Golem"
+|[[The Golem]]
+|Yes||{{+=|crafting|1,000|echo=2}}||{{SCP|Crafting|20|sort=yes}}
+|None
+|-
+|- data-rowid="Making History"
+|[[Making History]]
+|Yes||{{+=|crafting|1,000|echo=2}}||{{SCP|Crafting|24|sort=yes}}
+|None
+|-
+|- data-rowid="Tears of Guthix"
+|[[Tears of Guthix]]
+|Yes||{{+=|crafting|1,000|echo=2}}||{{SCP|Crafting|20|sort=yes}}
+|None
+|-
+|- data-rowid="Recipe for Disaster/Freeing the Goblin generals"
+|[[Recipe for Disaster]]<br/>([[Recipe for Disaster/Freeing the Goblin generals|Goblin generals subquest]])
+|Yes||{{+=|crafting|1,000|echo=2}}|| -
+|None
+|-
+|- data-rowid="Recipe for Disaster/Freeing Pirate Pete"
+|[[Recipe for Disaster]]<br/>([[Recipe for Disaster/Freeing Pirate Pete|Pirate Pete subquest]])
+|Yes||{{+=|crafting|1,000|echo=2}}|| -
+|Multiple low level NPCs
+|-
+|- data-rowid="Murder Mystery"
+|[[Murder Mystery]]
+|Yes||{{+=|crafting|1,406|echo=2}}|| -
+|None
+|-
+|- data-rowid="Recipe for Disaster/Freeing Skrach Uglogwee"
+|[[Recipe for Disaster]]<br/>([[Recipe for Disaster/Freeing Skrach Uglogwee|Skrach Uglogwee subquest]])
+|Yes||{{+=|crafting|1,500|echo=2}}|| -
+|None
+|-
+|- data-rowid="Cold War"
+|[[Cold War]]
+|Yes||{{+=|crafting|2,000|echo=2}}||{{SCP|Crafting|30|sort=yes}}
+|1–3 [[Icelord|Icelords]] ''(level 51)''
+|-
+|- data-rowid="Enlightened Journey"
+|[[Enlightened Journey]]
+|Yes||{{+=|crafting|2,000|echo=2}}||{{SCP|Crafting|36|sort=yes}}
+|None
+|-
+|- data-rowid="In Aid of the Myreque"
+|[[In Aid of the Myreque]]
+|Yes||{{+=|crafting|2,000|echo=2}}||{{SCP|Crafting|25|sort=yes}}
+|Multiple mid level NPCs
+|-
+|- data-rowid="Shades of Mort'ton"
+|[[Shades of Mort'ton]]
+|Yes||{{+=|crafting|2,000|echo=2}}||{{SCP|Crafting|20|sort=yes}}
+|5 [[Loar Shade|Loar Shades]] ''(level 40)''
+|-
+|- data-rowid="Observatory Quest"
+|[[Observatory Quest]]
+|Yes||{{+=|crafting|2,250|echo=2}}||-
+|None required
+|-
+|- data-rowid="The Giant Dwarf"
+|[[The Giant Dwarf]]
+|Yes||{{+=|crafting|2,500|echo=2}}||{{SCP|Crafting|12|sort=yes}}
+|None
+|-
+|- data-rowid="The Fremennik Trials"
+|[[The Fremennik Trials]]
+|Yes||{{+=|crafting|2,812.4|echo=2}}||-
+|Multiple mid level NPCs
+|-
+|- data-rowid="The Great Brain Robbery"
+|[[The Great Brain Robbery]]
+|Yes||{{+=|crafting|3,000|echo=2}}||{{SCP|Crafting|16|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Nature Spirit"
+|[[Nature Spirit]]
+|Yes||{{+=|crafting|3,000|echo=2}}||{{SCP|Crafting|18|sort=yes}}
+|3 [[Ghast|Ghasts]] ''(level 30)''
+|-
+|- data-rowid="The Slug Menace"
+|[[The Slug Menace]]
+|Yes||{{+=|crafting|3,500|echo=2}}||{{SCP|Crafting|30|sort=yes}}
+|[[Slug Prince]] ''(level 62)''
+|-
+|- data-rowid="Shilo Village"
+|[[Shilo Village]]
+|Yes||{{+=|crafting|3,875|echo=2}}||{{SCP|Crafting|20|sort=yes}}
+|Multiple mid level NPCs
+|-
+|- data-rowid="Getting Ahead"
+|[[Getting Ahead]]
+|Yes||{{+=|crafting|4,000|echo=2}}||{{SCP|Crafting|30|sort=yes}}
+|[[Headless Beast]] (''level 82'')
+|-
+|- data-rowid="Elemental Workshop I"
+|[[Elemental Workshop I]]
+|Yes||{{+=|crafting|5,000|echo=2}}||{{SCP|Crafting|20|sort=yes}}
+|[[Earth elemental]] ''(level 35)''
+|-
+|- data-rowid="The Fremennik Isles"
+|[[The Fremennik Isles]]
+|Yes||{{+=|crafting|5,000|echo=2}}||{{SCP|Crafting|46|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Death on the Isle"
+|[[Death on the Isle]]
+|Yes||{{+=|crafting|5,000|echo=2}}||-
+|Two low-level enemies with no equipment
+|-
+|- data-rowid="Cabin Fever"
+|[[Cabin Fever]]
+|Yes||{{+=|crafting|7,000|echo=2}}||{{SCP|Crafting|45|sort=yes}}
+|None
+|-
+|- data-rowid="Enakhra's Lament"
+|[[Enakhra's Lament]]
+|Yes||{{+=|crafting|7,000|echo=2}}||{{SCP|Crafting|50|sort=yes}}
+|None
+|-
+|- data-rowid="Elemental Workshop II"
+|[[Elemental Workshop II]]
+|Yes||{{+=|crafting|7,500|echo=2}}||{{SCP|Crafting|20|sort=yes}}
+|(If you do not have the elemental metal bars) 2 [[Earth elemental|Earth elementals]] ''(level 35)''
+|-
+|- data-rowid="The Hand in the Sand"
+|[[The Hand in the Sand]]
+|Yes||{{+=|crafting|9,000|echo=2}}||{{SCP|Crafting|49|sort=yes}}
+|None
+|-
+|- data-rowid="The Fremennik Exiles"
+|[[The Fremennik Exiles]]
+|Yes||{{+=|crafting|50,000|echo=2}}||{{SCP|Crafting|65|sort=yes}}
+|Multiple high level NPCs
+|-
+!Total
+!
+!{{formatnum:{{#var:crafting}}}}
+!
+!
+|}
+
+==={{plink|Defence|pic=Defence icon}}===
+{| class="wikitable sortable lighttable qc-active oqg-table" style="text-align:center;"
+!Quest
+!Members
+!Experience<br/>reward
+!data-sort-type="number"|Defence<br/>requirement
+!class='unsortable'|Enemy to defeat
+|-
+|- data-rowid="A Soul's Bane"
+|[[A Soul's Bane]]
+|Yes||{{+=|defence|500|echo=2}}|| -
+|Multiple level 40 to 46 enemies
+|-
+|- data-rowid="In Search of the Myreque"
+|[[In Search of the Myreque]]
+|Yes||{{+=|defence|600|echo=2}}|| -
+|[[Skeleton Hellhound]] ''(level 97)''
+|-
+|- data-rowid="In Aid of the Myreque"
+|[[In Aid of the Myreque]]
+|Yes||{{+=|defence|2,000|echo=2}}|| -
+|Multiple mid level NPCs
+|-
+|- data-rowid="Nature Spirit"
+|[[Nature Spirit]]
+|Yes||{{+=|defence|2,000|echo=2}}|| -
+|3 [[Ghast|Ghasts]] ''(level 30)''
+|-
+|- data-rowid="What Lies Below"
+|[[What Lies Below]]
+|Yes||{{+=|defence|2,000|echo=2}}|| -
+|Multiple mid level NPCs
+|-
+|- data-rowid="The Fremennik Trials"
+|[[The Fremennik Trials]]
+|Yes||{{+=|defence|2,812.4|echo=2}}|| -
+|Multiple mid level NPCs
+|-
+|- data-rowid="Heroes' Quest"
+|[[Heroes' Quest]]
+|Yes||{{+=|defence|3,075|echo=2}}|| -
+|Multiple mid level NPCs
+|-
+|- data-rowid="Between a Rock..."
+|[[Between a Rock...]]
+|Yes||{{+=|defence|5,000|echo=2}}||{{SCP|Defence|30|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Olaf's Quest"
+|[[Olaf's Quest]]
+|Yes||{{+=|defence|12,000|echo=2}}|| -
+|Multiple high level NPCs ([[Safespot|safespottable]])
+|-
+|- data-rowid="Holy Grail"
+|[[Holy Grail]]
+|Yes||{{+=|defence|15,300|echo=2}}|| -
+|[[Black Knight Titan]] ''(level 120)''
+|-
+|- data-rowid="Dragon Slayer I"
+|[[Dragon Slayer I]]
+|No||{{+=|defence|18,650|echo=2}}|| -
+|Multiple mid level NPCs
+|-
+|[[Knight Waves]]<br/>([[Miniquests|miniquest]])
+|Yes||{{+=|defence|20,000|echo=2}}||{{SCP|Defence|65|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="King's Ransom"
+|[[King's Ransom]]
+|Yes||{{+=|defence|33,000|echo=2}}||{{SCP|Defence|65|sort=yes}}
+|None
+|-
+!Total
+!
+!{{formatnum:{{#var:defence}}}}
+!
+!
+|}
+
+==={{plink|Farming|pic=Farming icon}}===
+{| class="wikitable sortable lighttable qc-active oqg-table" style="text-align:center;"
+!Quest
+!Members
+!Experience<br/>reward
+!data-sort-type="number"|Farming<br/>requirement
+!class='unsortable'|Enemy to defeat
+|-
+|- data-rowid="Recipe for Disaster/Freeing the Goblin generals"
+|[[Recipe for Disaster]]<br/>([[Recipe for Disaster/Freeing the Goblin generals|Goblin generals subquest]])
+|Yes||{{+=|farming|1,000|echo=2}}|| -
+|None
+|-
+|- data-rowid="Enlightened Journey"
+|[[Enlightened Journey]]
+|Yes||{{+=|farming|3,000|echo=2}}||{{SCP|Farming|30|sort=yes}}
+|None
+|-
+|- data-rowid="Fairytale I - Growing Pains"
+|[[Fairytale I - Growing Pains]]
+|Yes
+|{{+=|farming|3,500|echo=2}}|| -||[[Tanglefoot]] ''(level 111)''
+|-
+|- data-rowid="Forgettable Tale..."
+|[[Forgettable Tale...]]
+|Yes||{{+=|farming|5,000|echo=2}}||{{SCP|Farming|17|sort=yes}}
+|None
+|-
+|- data-rowid="Garden of Tranquillity"
+|[[Garden of Tranquillity]]
+|Yes||{{+=|farming|5,000|echo=2}}||{{SCP|Farming|25|sort=yes}}
+|None
+|-
+|- data-rowid="My Arm's Big Adventure"
+|[[My Arm's Big Adventure]]
+|Yes||{{+=|farming|5,000|echo=2}}||{{SCP|Farming|29|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Rum Deal"
+|[[Rum Deal]]
+|Yes||{{+=|farming|7,000|echo=2}}||{{SCP|Farming|40|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="The Garden of Death"
+|[[The Garden of Death]]
+|Yes||{{+=|farming|10,000|echo=2}}||{{SCP|Farming|20|sort=yes}}
+|None
+|-
+|- data-rowid="Grim Tales"
+|[[Grim Tales]]
+|Yes||{{+=|farming|10,000|echo=2}}||{{SCP|Farming|45|sort=yes}}
+|[[Glod]] ''(level 138)''
+|-
+|- data-rowid="Song of the Elves"
+|[[Song of the Elves]]
+|Yes||{{+=|farming|40,000|echo=2}}||{{SCP|Farming|70|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="While Guthix Sleeps"
+|[[While Guthix Sleeps]]
+|Yes||{{+=|farming|75,000|echo=2}}||{{SCP|Farming|65|sort=yes}}
+|Multiple high level NPCs
+|-
+!Total
+!
+!{{formatnum:{{#var:farming}}}}
+!
+!
+|}
+
+==={{plink|Firemaking|pic=Firemaking icon}}===
+{| class="wikitable sortable lighttable qc-active oqg-table" style="text-align:center;"
+!Quest
+!Members
+!Experience<br/>reward
+!data-sort-type="number"|Firemaking<br/>requirement
+!class='unsortable'|Enemy to defeat
+|-
+|- data-rowid="The Giant Dwarf"
+|[[The Giant Dwarf]]
+|Yes||{{+=|firemaking|1,500|echo=2}}||{{SCP|Firemaking|16|sort=yes}}
+|None
+|-
+|- data-rowid="Heroes' Quest"
+|[[Heroes' Quest]]
+|Yes||{{+=|firemaking|1,575|echo=2}}|| -
+|Multiple high level NPCs
+|-
+|- data-rowid="Enlightened Journey"
+|[[Enlightened Journey]]
+|Yes||{{+=|firemaking|4,000|echo=2}}||{{SCP|Firemaking|20|sort=yes}}
+|None
+|-
+|- data-rowid="Enakhra's Lament"
+|[[Enakhra's Lament]]
+|Yes||{{+=|firemaking|7,000|echo=2}}||{{SCP|Firemaking|45|sort=yes}}
+|None
+|-
+|- data-rowid="Making Friends with My Arm"
+|[[Making Friends with My Arm]]
+|Yes||{{+=|firemaking|40,000|echo=2}}||{{SCP|Firemaking|66|sort=yes}}
+|Multiple high level NPCs
+|-
+!Total
+!
+!{{formatnum:{{#var:firemaking}}}}
+!
+!
+|}
+
+==={{plink|Fishing|pic=Fishing icon}}===
+{| class="wikitable sortable lighttable qc-active oqg-table" style="text-align:center;"
+!Quest
+!Members
+!Experience<br/>reward
+!data-sort-type="number"|Fishing<br/>requirement
+!class='unsortable'|Enemy to defeat
+|-
+|- data-rowid="Recipe for Disaster/Freeing Pirate Pete"
+|[[Recipe for Disaster]]<br/>([[Recipe for Disaster/Freeing Pirate Pete|Pirate Pete subquest]])
+|Yes||{{+=|fishing|1,000|echo=2}}|| -
+|Multiple low level NPCs
+|-
+|- data-rowid="Current Affairs"
+|[[Current Affairs]]
+|Yes||{{+=|fishing|1,000|echo=2}}||{{SCP|Fishing|10|sort=yes}}
+|None
+|-
+|- data-rowid="Fishing Contest"
+|[[Fishing Contest]]
+|Yes||{{+=|fishing|2,437|echo=2}}||{{SCP|Fishing|10|sort=yes}}
+|None
+|-
+|- data-rowid="Heroes' Quest"
+|[[Heroes' Quest]]
+|Yes||{{+=|fishing|2,725|echo=2}}||{{SCP|Fishing|53|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="The Fremennik Trials"
+|[[The Fremennik Trials]]
+|Yes||{{+=|fishing|2,812.4|echo=2}}|| -
+|Multiple mid level NPCs
+|-
+|- data-rowid="Shadows of Custodia"
+|[[Shadows of Custodia]]
+|Yes||{{+=|fishing|3,000|echo=2}}||{{SCP|Fishing|45|sort=yes}}
+|3 [[Strange creature (Shadows of Custodia)|Strange Creatures]] (''level 93'')
+|-
+|- data-rowid="Perilous Moons"
+|[[Perilous Moons]]
+|Yes||{{+=|fishing|5,000|echo=2}}||{{SCP|Fishing|20|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Tai Bwo Wannai Trio"
+|[[Tai Bwo Wannai Trio]]
+|Yes||{{+=|fishing|5,000|echo=2}}||{{SCP|Fishing|5|sort=yes}}
+|[[Monkey]] ''(level 3)''
+|-
+|- data-rowid="Rum Deal"
+|[[Rum Deal]]
+|Yes||{{+=|fishing|7,000|echo=2}}|| -{{efn|The 50 Fishing requirement listed by the game can be bypassed, see [[Rum Deal#Details|here]] for more details.}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Sea Slug"
+|[[Sea Slug]]
+|Yes||{{+=|fishing|7,175|echo=2}}|| -
+|None
+|-
+|- data-rowid="Land of the Goblins"
+|[[Land of the Goblins]]
+|Yes
+||{{+=|fishing|8,000|echo=2}}
+|{{SCP|Fishing|40|sort=yes}}
+|Multiple mid level NPCs
+|-
+|- data-rowid="Swan Song"
+|[[Swan Song]]
+|Yes||{{+=|fishing|50,000|echo=2}}||{{SCP|Fishing|62|sort=yes}}
+|Multiple high level NPCs
+|-
+!Total
+!
+!{{formatnum:{{#var:fishing}}}}
+!
+!
+|}
+{{notelist}}
+
+==={{plink|Fletching|pic=Fletching icon}}===
+{| class="wikitable sortable lighttable qc-active oqg-table" style="text-align:center;"
+!Quest
+!Members
+!Experience<br/>reward
+!data-sort-type="number"|Fletching<br/>requirement
+!class='unsortable'|Enemy to defeat
+|-
+|- data-rowid="Big Chompy Bird Hunting"
+|[[Big Chompy Bird Hunting]]
+|Yes||{{+=|fletching|262|echo=2}}||{{SCP|Fletching|5|sort=yes}}
+|[[Wolf|Wolves]] ''(level 64)'' (optional)
+|-
+|- data-rowid="Animal Magnetism"
+|[[Animal Magnetism]]
+|Yes||{{+=|fletching|1,000|echo=2}}|| -
+|None
+|-
+|- data-rowid="Zogre Flesh Eaters"
+|[[Zogre Flesh Eaters]]
+|Yes||{{+=|fletching|2,000|echo=2}}|| -
+|Multiple high level NPCs
+|-
+|- data-rowid="The Fremennik Trials"
+|[[The Fremennik Trials]]
+|Yes||{{+=|fletching|2,812.4|echo=2}}|| -
+|Multiple mid level NPCs
+|-
+|- data-rowid="Devious Minds"
+|[[Devious Minds]]
+|Yes||{{+=|fletching|5,000|echo=2}}||{{SCP|Fletching|50|sort=yes}}
+|[[Abyssal creature|Abyssal creatures]] level 41+ (for a large pouch)
+|-
+|- data-rowid="Temple of Ikov"
+|[[Temple of Ikov]]
+|Yes||{{+=|fletching|8,000|echo=2}}|| -
+|Multiple mid level NPCs
+|-
+|- data-rowid="The Final Dawn"
+|[[The Final Dawn]]
+|Yes||{{+=|fletching|25,000|echo=2}}||{{SCP|Fletching|52|sort=yes}}
+|Multiple high level NPCs
+|-
+!Total
+!
+!{{formatnum:{{#var:fletching}}}}
+!
+!
+|}
+
+==={{plink|Herblore|pic=Herblore icon}}===
+{| class="wikitable sortable lighttable qc-active oqg-table" style="text-align:center;"
+!Quest
+!Members
+!Experience<br/>reward
+!data-sort-type="number"|Herblore<br/>requirement
+!class='unsortable'|Enemy to defeat
+|-
+|- data-rowid="Druidic Ritual"
+|[[Druidic Ritual]]
+|Yes||{{+=|herblore|250|echo=2}}|| -
+|None
+|-
+|- data-rowid="At First Light"
+|[[At First Light]]
+|Yes||{{+=|herblore|500|echo=2}}||{{SCP|Herblore|30|sort=yes}}
+|None
+|-
+|- data-rowid="Jungle Potion"
+|[[Jungle Potion]]
+|Yes||{{+=|herblore|775|echo=2}}||{{SCP|Herblore|3|sort=yes}}
+|None
+|-
+|- data-rowid="Recruitment Drive"
+|[[Recruitment Drive]]
+|Yes||{{+=|herblore|1,000.5|echo=2}}|| -
+|[[Sir Leye]] (level 20)
+|-
+|- data-rowid="Heroes' Quest"
+|[[Heroes' Quest]]
+|Yes||{{+=|herblore|1,325|echo=2}}||{{SCP|Herblore|25|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="The Dig Site"
+|[[The Dig Site]]
+|Yes||{{+=|herblore|2,000|echo=2}}||{{SCP|Herblore|10|sort=yes}}
+|None
+|-
+|- data-rowid="Shades of Mort'ton"
+|[[Shades of Mort'ton]]
+|Yes||{{+=|herblore|2,000|echo=2}}||{{SCP|Herblore|15|sort=yes}}
+|5 [[Loar Shade|Loar Shades]] ''(level 40)''
+|-
+|- data-rowid="Zogre Flesh Eaters"
+|[[Zogre Flesh Eaters]]
+|Yes||{{+=|herblore|2,000|echo=2}}||{{SCP|Herblore|8|sort=yes}}
+|[[Slash Bash]] (level 111) and a [[Zombie (Zogre Flesh Eaters)|zombie]] (level 39)
+|-
+|- data-rowid="Fairytale II - Cure a Queen"
+|[[Fairytale II - Cure a Queen]]
+|Yes||{{+=|herblore|3,500|echo=2}}||{{SCP|Herblore|57|sort=yes}}
+|[[Gorak]] ''(level 145)''—possibly multiple (protection prayers will not work)
+|-
+|- data-rowid="Land of the Goblins"
+|[[Land of the Goblins]]
+|Yes||{{+=|herblore|8,000|echo=2}}
+|{{SCP|Herblore|48|sort=yes}}
+|Multiple mid level NPCs
+|-
+|- data-rowid="My Arm's Big Adventure"
+|[[My Arm's Big Adventure]]
+|Yes||{{+=|herblore|10,000|echo=2}}||-
+|Multiple high level NPCs
+|-
+|- data-rowid="Eadgar's Ruse"
+|[[Eadgar's Ruse]]
+|Yes||{{+=|herblore|11,000|echo=2}}||{{SCP|Herblore|31|sort=yes}}
+|None
+|-
+|- data-rowid="Grim Tales"
+|[[Grim Tales]]
+|Yes||{{+=|herblore|15,000|echo=2}}||{{SCP|Herblore|52|sort=yes}}
+|[[Glod]] ''(level 138)''
+|-
+|- data-rowid="Song of the Elves"
+|[[Song of the Elves]]
+|Yes||{{+=|herblore|40,000|echo=2}}||{{SCP|Herblore|70|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="While Guthix Sleeps"
+|[[While Guthix Sleeps]]
+|Yes||{{+=|herblore|75,000|echo=2}}||{{SCP|Herblore|65|sort=yes}}
+|Multiple high level NPCs
+|-
+!Total
+!
+!{{formatnum:{{#var:herblore}}}}
+!
+!
+|}
+
+==={{plink|Hitpoints|pic=Hitpoints icon}}===
+{| class="wikitable sortable lighttable qc-active oqg-table" style="text-align:center;"
+|+
+|-
+!Quest
+!Member
+!Experience<br/>reward
+!data-sort-type="number"|Hitpoints<br/>requirement
+!class='unsortable'|Enemy to defeat
+|-
+|- data-rowid="A Soul's Bane"
+|[[A Soul's Bane]]
+|Yes||{{+=|hitpoints|500|echo=2}}|| -
+|Multiple level 40 to 46 enemies
+|-
+|- data-rowid="In Search of the Myreque"
+|[[In Search of the Myreque]]
+|Yes||{{+=|hitpoints|600|echo=2}}|| -
+|[[Skeleton Hellhound]] ''(level 97)''
+|-
+|- data-rowid="Nature Spirit"
+|[[Nature Spirit]]
+|Yes||{{+=|hitpoints|2,000|echo=2}}|| -
+|3 [[Ghast|Ghasts]] ''(level 30)''
+|-
+|- data-rowid="The Fremennik Trials"
+|[[The Fremennik Trials]]
+|Yes||{{+=|hitpoints|2,812.4|echo=2}}||-
+|Multiple mid level NPCs
+|-
+|- data-rowid="Heroes' Quest"
+|[[Heroes' Quest]]
+|Yes||{{+=|hitpoints|3,075|echo=2}}|| -
+|Multiple high level NPCs
+|-
+|- data-rowid="Recipe for Disaster/Freeing Sir Amik Varze"
+|[[Recipe for Disaster]]<br/>([[Recipe for Disaster/Freeing Sir Amik Varze|Sir Amik Varze subquest]])
+|Yes||{{+=|hitpoints|4,000|echo=2}}|| -
+|Multiple high level NPCs
+|-
+|- data-rowid="Grim Tales"
+|[[Grim Tales]]
+|Yes||{{+=|hitpoints|5,000|echo=2}}|| -
+|[[Glod]] ''(level 138)''
+|-
+|- data-rowid="Royal Trouble"
+|[[Royal Trouble]]
+|Yes||{{+=|hitpoints|5,000|echo=2}}|| -
+|[[Giant Sea Snake]] ''(level 149)''
+|-
+|- data-rowid="Witch's House"
+|[[Witch's House]]
+|Yes||{{+=|hitpoints|6,325|echo=2}}|| -
+|[[Witch's experiment]] ''(level 19, 30, 42 and 53)''
+|-
+|- data-rowid="Dream Mentor"
+|[[Dream Mentor]]
+|Yes||{{+=|hitpoints|15,000|echo=2}}|| -
+|Multiple high level NPCs
+|-
+|[[Knight Waves]]<br/>([[Miniquests|miniquest]])
+|Yes||{{+=|hitpoints|20,000|echo=2}}|| -
+|Multiple high level NPCs
+|-
+|- data-rowid="Mourning's End Part I"
+|[[Mourning's End Part I]]
+|Yes||{{+=|hitpoints|25,000|echo=2}}|| -
+|[[Mourner]] ''(level 11)''
+|-
+!Total
+!
+!{{formatnum:{{#var:hitpoints}}}}
+!
+!
+|}
+
+==={{plink|Hunter|pic=Hunter icon}}===
+{| class="wikitable sortable lighttable qc-active oqg-table" style="text-align:center;"
+!Quest
+!Members
+!Experience<br/>reward
+!data-sort-type="number"|Hunter<br/>requirement
+!class='unsortable'|Enemy to defeat
+|-
+|[[Natural history quiz]]<br/>([[Miniquests|miniquest]])
+|Yes||{{+=|hunter|1,000|echo=2}}|| -
+|None
+|-
+|- data-rowid="The Ascent of Arceuus"
+|[[The Ascent of Arceuus]]
+|Yes||{{+=|hunter|1,500|echo=2}}||{{SCP|Hunter|12|sort=yes}}
+|Multiple low level NPCs
+|-
+|- data-rowid="Eagles' Peak"
+|[[Eagles' Peak]]
+|Yes||{{+=|hunter|2,500|echo=2}}||{{SCP|Hunter|27|sort=yes}}
+|[[Kebbit (Eagles' Peak)|Kebbit]] ''(level 13)'' ''(optional)''
+|-
+|- data-rowid="Shadows of Custodia"
+|[[Shadows of Custodia]]
+|Yes||{{+=|hunter|4,000|echo=2}}||{{SCP|Hunter|36|sort=yes}}
+|3 [[Strange creature (Shadows of Custodia)|Strange Creatures]] (''level 93'')
+|-
+|- data-rowid="At First Light"
+|[[At First Light]]
+|Yes||{{+=|hunter|4,500|echo=2}}||{{SCP|Hunter|46|sort=yes}}
+|None
+|-
+|- data-rowid="Perilous Moons"
+|[[Perilous Moons]]
+|Yes||{{+=|hunter|5,000|echo=2}}||{{SCP|Hunter|20|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Defender of Varrock"
+|[[Defender of Varrock]]
+|Yes||{{+=|hunter|15,000|echo=2}}|| {{SCP|Hunter|52|sort=yes}}
+|Multiple mid level NPCs
+|-
+|- data-rowid="Secrets of the North"
+|[[Secrets of the North]]
+|Yes||{{+=|hunter|40,000|echo=2}}||{{SCP|Hunter|56|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Song of the Elves"
+|[[Song of the Elves]]
+|Yes||{{+=|hunter|40,000|echo=2}}||{{SCP|Hunter|70|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Monkey Madness II"
+|[[Monkey Madness II]]
+|Yes||{{+=|hunter|50,000|echo=2}}||{{SCP|Hunter|60|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="While Guthix Sleeps"
+|[[While Guthix Sleeps]]
+|Yes||{{+=|hunter|50,000|echo=2}}||{{SCP|Hunter|62|sort=yes}}
+|Multiple high level NPCs
+|-
+!Total
+!
+!{{formatnum:{{#var:hunter}}}}
+!
+!
+|}
+
+==={{plink|Magic|pic=Magic icon}}===
+{| class="wikitable sortable lighttable qc-active oqg-table" style="text-align:center;"
+!Quest
+!Members
+!Experience<br/>reward
+!data-sort-type="number"|Magic<br/>requirement
+!class='unsortable'|Enemy to defeat
+|-
+|- data-rowid="Witch's Potion"
+|[[Witch's Potion]]
+|No||{{+=|magic|325|echo=2}}|| -
+|[[Rat]] ''(level 1)''
+|-
+|- data-rowid="Imp Catcher"
+|[[Imp Catcher]]
+|No||{{+=|magic|875|echo=2}}|| -
+|Multiple [[Imp|imps]] ''(level 2)'' ('''optional''' unless [[Ironman Mode|ironman]])
+|-
+|- data-rowid="Fairytale I - Growing Pains"
+|[[Fairytale I - Growing Pains]]
+|Yes||{{+=|magic|1,000|echo=2}}|| -
+|[[Tanglefoot]] ''(level 111)''
+|-
+|- data-rowid="Spirits of the Elid"
+|[[Spirits of the Elid]]
+|Yes||{{+=|magic|1,000|echo=2}}||{{SCP|Magic|33|sort=yes}}
+|Multiple mid level NPCs
+|-
+|- data-rowid="The Giant Dwarf"
+|[[The Giant Dwarf]]
+|Yes||{{+=|magic|1,500|echo=2}}||{{SCP|Magic|33|sort=yes}}
+|None
+|-
+|- data-rowid="The Grand Tree"
+|[[The Grand Tree]]
+|Yes||{{+=|magic|2,150|echo=2}}|| -
+|[[Black demon]] ''(level 172)'' ([[Safespot|safespottable]])
+|-
+|- data-rowid="Recipe for Disaster/Freeing the Lumbridge Guide"
+|[[Recipe for Disaster]]<br/>([[Recipe for Disaster/Freeing the Lumbridge Guide|Lumbridge Guide subquest]])
+|Yes||{{+=|magic|2,500|echo=2}}|| -
+|None
+|-
+|- data-rowid="Horror from the Deep"
+|[[Horror from the Deep]]
+|Yes||{{+=|magic|4,662.5|echo=2}}|| -
+|Multiple high level NPCs
+|-
+|- data-rowid="King's Ransom"
+|[[King's Ransom]]
+|Yes||{{+=|magic|5,000|echo=2}}||{{SCP|Magic|45|sort=yes}}
+|None
+|-
+|- data-rowid="Lunar Diplomacy"
+|[[Lunar Diplomacy]]
+|Yes||{{+=|magic|5,000|echo=2}}||{{SCP|Magic|65|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="The Path of Glouphrie"
+|[[The Path of Glouphrie]]
+|Yes||{{+=|magic|5,000|echo=2}}|| -
+|3 [[Warped Terrorbird]]s ''(level 136)''
+|-
+|- data-rowid="Enakhra's Lament"
+|[[Enakhra's Lament]]
+|Yes||{{+=|magic|7,000|echo=2}}||{{SCP|Magic|39|sort=yes}}
+|None
+|-
+|- data-rowid="Dream Mentor"
+|[[Dream Mentor]]
+|Yes||{{+=|magic|10,000|echo=2}}||{{SCP|Magic|65|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="The Eyes of Glouphrie"
+|[[The Eyes of Glouphrie]]
+|Yes||{{+=|magic|12,000|echo=2}}||{{SCP|Magic|46|sort=yes}}
+|[[Evil creature]] (x6)
+|-
+|- data-rowid="Swan Song"
+|[[Swan Song]]
+|Yes||{{+=|magic|15,000|echo=2}}||{{SCP|Magic|66|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Watchtower"
+|[[Watchtower]]
+|Yes||{{+=|magic|15,250|echo=2}}||{{SCP|Magic|15|sort=yes}}
+|Multiple mid level NPCs
+|-
+|- data-rowid="Desert Treasure I"
+|[[Desert Treasure I]]
+|Yes||{{+=|magic|20,000|echo=2}}||{{SCP|Magic|50|sort=yes}}
+|Multiple high level NPCs
+|-
+!Total
+!
+!{{formatnum:{{#var:magic}}}}
+!
+!
+|}
+
+==={{plink|Mining|pic=Mining icon}}===
+{| class="wikitable sortable lighttable qc-active oqg-table" style="text-align:center;"
+!Quest
+!Members
+!Experience<br/>reward
+!data-sort-type="number"|Mining<br/>requirement
+!class='unsortable'|Enemy to defeat
+|-
+|- data-rowid="The Forsaken Tower"
+|[[The Forsaken Tower]]
+|Yes||{{+=|mining|500|echo=2}}|| -
+|None
+|-
+|- data-rowid="Doric's Quest"
+|[[Doric's Quest]]
+|No||{{+=|mining|1,300|echo=2}}|| -
+|None
+|-
+|- data-rowid="Plague City"
+|[[Plague City]]
+|Yes||{{+=|mining|2,425|echo=2}}|| -
+|None
+|-
+|- data-rowid="The Giant Dwarf"
+|[[The Giant Dwarf]]
+|Yes||{{+=|mining|2,500|echo=2}}|| -
+|None
+|-
+|- data-rowid="Heroes' Quest"
+|[[Heroes' Quest]]
+|Yes||{{+=|mining|2,575|echo=2}}||{{SCP|Mining|50|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Another Slice of H.A.M."
+|[[Another Slice of H.A.M.]]
+|Yes||{{+=|mining|3,000|echo=2}}|| -
+|Multiple low level NPCs
+|-
+|- data-rowid="The Lost Tribe"
+|[[The Lost Tribe]]
+|Yes||{{+=|mining|3,000|echo=2}}||{{SCP|Mining|17|sort=yes}}
+|None
+|-
+|- data-rowid="Between a Rock..."
+|[[Between a Rock...]]
+|Yes||{{+=|mining|5,000|echo=2}}||{{SCP|Mining|40|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Enakhra's Lament"
+|[[Enakhra's Lament]]
+|Yes||{{+=|mining|7,000|echo=2}}||{{SCP|Mining|45|sort=yes}}{{Ironman|icon}}
+|None
+|- data-rowid="The Heart of Darkness"
+|[[The Heart of Darkness]]
+|Yes||{{+=|mining|8,000|echo=2}}
+|{{SCP|Mining|55|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="The Dig Site"
+|[[The Dig Site]]
+|Yes||{{+=|mining|15,300|echo=2}}|| -
+|None
+|-
+|- data-rowid="The Curse of Arrav"
+|[[The Curse of Arrav]]
+|Yes||{{+=|mining|40,000|echo=2}}||{{SCP|Mining|64|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Song of the Elves"
+|[[Song of the Elves]]
+|Yes||{{+=|mining|40,000|echo=2}}||{{SCP|Mining|70|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Making Friends with My Arm"
+|[[Making Friends with My Arm]]
+|Yes||{{+=|mining|50,000|echo=2}}||{{SCP|Mining|72|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Dragon Slayer II"
+|[[Dragon Slayer II]]
+|Yes||{{+=|mining|60,000|echo=2}}||{{SCP|Mining|68|sort=yes}}
+|Multiple high level NPCs
+|-
+!Total
+!
+!{{formatnum:{{#var:mining}}}}
+!
+!
+|}
+
+==={{plink|Prayer|pic=Prayer icon}}===
+{| class="wikitable sortable lighttable qc-active oqg-table" style="text-align:center;"
+!Quest
+!Members
+!Experience<br/>reward
+!data-sort-type="number"|Prayer<br/>requirement
+!class='unsortable'|Enemy to defeat
+|-
+|- data-rowid="Rag and Bone Man I"
+|[[Rag and Bone Man I]]
+|Yes||{{+=|prayer|500|echo=2}}|| -
+|Multiple low level NPCs
+|-
+|- data-rowid="Making History"
+|[[Making History]]
+|Yes||{{+=|prayer|1,000|echo=2}}|| -
+|None
+|-
+|- data-rowid="Recruitment Drive"
+|[[Recruitment Drive]]
+|Yes||{{+=|prayer|1,000.5|echo=2}}|| -
+|[[Sir Leye]] (level 20)
+|-
+|- data-rowid="The Restless Ghost"
+|[[The Restless Ghost]]
+|No||{{+=|prayer|1,125|echo=2}}|| -
+|[[Skeleton]] ''(level 13)'' ''(can be avoided)''
+|-
+|- data-rowid="Priest in Peril"
+|[[Priest in Peril]]
+|Yes||{{+=|prayer|1,406|echo=2}}|| -
+|Multiple low level NPCs
+|-
+|- data-rowid="Mountain Daughter"
+|[[Mountain Daughter]]
+|Yes||{{+=|prayer|2,000|echo=2}}|| -
+|[[The Kendal]] ''(level 70)''
+|-
+|- data-rowid="Ghosts Ahoy"
+|[[Ghosts Ahoy]]
+|Yes||{{+=|prayer|2,400|echo=2}}|| -
+|[[Giant lobster (Ghosts Ahoy)|Giant lobster]] ''(level 32)'' Can be [[Safespot|safespotted]].
+|-
+|- data-rowid="Another Slice of H.A.M."
+|[[Another Slice of H.A.M.]]
+|Yes||{{+=|prayer|3,000|echo=2}}||{{SCP|Prayer|25|sort=yes}}
+|Multiple mid level NPCs
+|-
+|- data-rowid="Rag and Bone Man II"
+|[[Rag and Bone Man II]]
+|Yes||{{+=|prayer|5,000|echo=2}}|| -
+|Multiple mid level NPCs
+|-
+|- data-rowid="The Great Brain Robbery"
+|[[The Great Brain Robbery]]
+|Yes||{{+=|prayer|6,000|echo=2}}||{{SCP|Prayer|50|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Rum Deal"
+|[[Rum Deal]]
+|Yes||{{+=|prayer|7,000|echo=2}}||{{SCP|Prayer|47|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Spirits of the Elid"
+|[[Spirits of the Elid]]
+|Yes||{{+=|prayer|8,000|echo=2}}|| -
+|Multiple mid level NPCs
+|-
+|- data-rowid="Swan Song"
+|[[Swan Song]]
+|Yes||{{+=|prayer|10,000|echo=2}}|| -
+|Multiple high level NPCs
+|-
+|- data-rowid="Holy Grail"
+|[[Holy Grail]]
+|Yes||{{+=|prayer|11,000|echo=2}}|| -
+|[[Black Knight Titan]] ''(level 120)''
+|-
+|[[His Faithful Servants]]<br/>([[Miniquests|miniquest]])
+|Yes||{{+=|prayer|20,000|echo=2}}||-
+|All six [[Barrows Brothers]]
+|-
+|[[Hopespear's Will]]<br/>([[Miniquests|miniquest]])
+|Yes||{{+=|prayer|38,750|echo=2}}||{{SCP|Prayer|50|sort=yes}}
+|Multiple high level NPCs
+|-
+!Total
+!
+!{{formatnum:{{#var:prayer}}}}
+!
+!
+|}
+
+==={{plink|Ranged|pic=Ranged icon}}===
+{| class="wikitable sortable lighttable qc-active oqg-table" style="text-align:center;"
+!Quest
+!Members
+!Experience<br/>reward
+!data-sort-type="number"|Ranged<br/>requirement
+!class='unsortable'|Enemy to defeat
+|-
+|- data-rowid="Big Chompy Bird Hunting"
+|[[Big Chompy Bird Hunting]]
+|Yes||{{+=|ranged|735|echo=2}}||{{SCP|Ranged|30|sort=yes}}
+|[[Wolf|Wolves]] ''(level 64)'' (optional)
+|-
+|- data-rowid="Recipe for Disaster/Freeing Skrach Uglogwee"
+|[[Recipe for Disaster]]<br/>([[Recipe for Disaster/Freeing Skrach Uglogwee|Skrach Uglogwee subquest]])
+|Yes||{{+=|ranged|1,500|echo=2}}||{{SCP|Ranged|30|sort=yes}}
+|None
+|-
+|- data-rowid="Death to the Dorgeshuun"
+|[[Death to the Dorgeshuun]]
+|Yes||{{+=|ranged|2,000|echo=2}}|| -
+|Multiple low level NPCs
+|-
+|- data-rowid="Zogre Flesh Eaters"
+|[[Zogre Flesh Eaters]]
+|Yes||{{+=|ranged|2,000|echo=2}}||{{SCP|Ranged|30|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Heroes' Quest"
+|[[Heroes' Quest]]
+|Yes||{{+=|ranged|2,075|echo=2}}|| -
+|Multiple high level NPCs
+|-
+|- data-rowid="Horror from the Deep"
+|[[Horror from the Deep]]
+|Yes||{{+=|ranged|4,662.5|echo=2}}|| -
+|Multiple high level NPCs
+|- data-rowid="Temple of Ikov"
+|[[Temple of Ikov]]
+|Yes||{{+=|ranged|10,500|echo=2}}|| -{{efn|The 40 Ranged requirement listed by the game can be bypassed, see [[Temple of Ikov#Fire Warrior of Lesarkus|here]] for more details.}}
+|Multiple mid level NPCs
+|-
+!Total
+!
+!{{formatnum:{{#var:ranged}}}}
+!
+!
+|}
+{{notelist}}
+
+==={{plink|Runecraft|pic=Runecraft icon}}===
+{| class="wikitable sortable lighttable qc-active oqg-table" style="text-align:center;"
+!Quest
+!Members
+!Experience<br/>reward
+!data-sort-type="number"|Runecraft<br/>requirement
+!class='unsortable'|Enemy to defeat
+|-
+|- data-rowid="The Ascent of Arceuus"
+|[[The Ascent of Arceuus]]
+|Yes||{{+=|runecraft|500|echo=2}}|| -
+|Multiple low level NPCs
+|-
+|- data-rowid="Enter the Abyss"
+|[[Enter the Abyss]]<br/>([[Miniquests|miniquest]])
+|Yes||{{+=|runecraft|1,000|echo=2}}|| -
+|None
+|-
+|- data-rowid="The Slug Menace"
+|[[The Slug Menace]]
+|Yes||{{+=|runecraft|3,500|echo=2}}||{{SCP|Runecraft|30|sort=yes}}
+|[[Slug Prince]] ''(level 62)''
+|-
+|- data-rowid="Devious Minds"
+|[[Devious Minds]]
+|Yes||{{+=|runecraft|5,000|echo=2}}||{{SCP|Runecraft|50|sort=yes}}
+|[[Abyssal creature|Abyssal creatures]] level 41+ (for a large pouch)
+|-
+|- data-rowid="Lunar Diplomacy"
+|[[Lunar Diplomacy]]
+|Yes||{{+=|runecraft|5,000|echo=2}}|| -
+|Multiple high level NPCs
+|-
+|- data-rowid="Perilous Moons"
+|[[Perilous Moons]]
+|Yes||{{+=|runecraft|5,000|echo=2}}||{{SCP|Runecraft|20|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Temple of the Eye"
+|[[Temple of the Eye]]
+|Yes||{{+=|runecraft|5,000|echo=2}}||{{SCP|Runecraft|10|sort=yes}}
+|None
+|-
+|- data-rowid="The Eyes of Glouphrie"
+|[[The Eyes of Glouphrie]]
+|Yes||{{+=|runecraft|6,000|echo=2}}|| -
+|[[Evil creature]] (x6)
+|-
+|- data-rowid="What Lies Below"
+|[[What Lies Below]]
+|Yes||{{+=|runecraft|8,000|echo=2}}||{{SCP|Runecraft|35|sort=yes}}
+|Multiple low level NPCs
+|-
+|- data-rowid="The Final Dawn"
+|[[The Final Dawn]]
+|Yes
+|{{+=|runecraft|25,000|echo=2}}
+|{{SCP|Runecraft|52|sort=yes}}
+|[[Emissary Enforcer]] (lvl-196)
+|- data-rowid="The Fremennik Exiles"
+|[[The Fremennik Exiles]]
+|Yes||{{+=|runecraft|30,000|echo=2}}||{{SCP|Runecraft|55|sort=yes}}
+|Multiple high level NPCs
+|-
+!Total
+!
+!{{formatnum:{{#var:runecraft}}}}
+!
+!
+|}
+
+==={{plink|Sailing|pic=Sailing icon}}===
+{| class="wikitable sortable lighttable qc-active oqg-table" style="text-align:center;"
+!Quest
+!Members
+!Experience<br/>reward
+!data-sort-type="number"|Sailing<br/>requirement
+!class='unsortable'|Enemy to defeat
+|-
+|- data-rowid="Pandemonium"
+|[[Pandemonium]]
+|Yes||{{+=|sailing|300|echo=2}}||-
+|None
+|-
+|- data-rowid="Prying Times"
+|[[Prying Times]]
+|Yes||{{+=|sailing|800|echo=2}}||{{SCP|Sailing|12|sort=yes}}
+|[[Drink troll]] (level 14)
+|-
+|- data-rowid="Current Affairs"
+|[[Current Affairs]]
+|Yes||{{+=|sailing|1,400|echo=2}}||{{SCP|Sailing|22|sort=yes}}
+|None
+|-
+|- data-rowid="Troubled Tortugans"
+|[[Troubled Tortugans]]
+|Yes||{{+=|sailing|10,000|echo=2}}||{{SCP|Sailing|45|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="The Red Reef"
+|[[The Red Reef]]
+|Yes||{{+=|sailing|15,000|echo=2}}||{{SCP|Sailing|52|sort=yes}}
+|Multiple high level NPCs
+|-
+|-
+!Total
+!
+!{{formatnum:{{#var:sailing}}}}
+!
+!
+|}
+
+==={{plink|Slayer|pic=Slayer icon}}===
+{| class="wikitable sortable lighttable qc-active oqg-table" style="text-align:center;"
+!Quest
+!Members
+!Experience<br/>reward
+!data-sort-type="number"|Slayer<br/>requirement
+!class='unsortable'|Enemy to defeat
+|-
+|[[Natural history quiz]]<br/>([[Miniquests|miniquest]])
+|Yes||{{+=|slayer|1,000|echo=2}}|| -
+|None
+|-
+|- data-rowid="Recipe for Disaster/Freeing the Mountain Dwarf"
+|[[Recipe for Disaster]]<br/>([[Recipe for Disaster/Freeing the Mountain Dwarf|Mountain Dwarf subquest]])
+|Yes||{{+=|slayer|1,000|echo=2}}|| -
+|[[Icefiend]] ''(level 13)'' (only if you lack [[Ice gloves]])
+|-
+|- data-rowid="Animal Magnetism"
+|[[Animal Magnetism]]
+|Yes||{{+=|slayer|1,000|echo=2}}||{{SCP|Slayer|18|sort=yes}}
+|None
+|-
+|- data-rowid="A Porcine of Interest"
+|[[A Porcine of Interest]]
+|Yes
+|{{+=|slayer|1,000|echo=2}}
+| -
+|[[Sourhog]] (''level 37'')
+|-
+|[[The General's Shadow]]<br/>([[Miniquests|miniquest]])
+|Yes||{{+=|slayer|2,000|echo=2}}||{{SCP|Slayer|10|sort=yes}}
+|[[Bouncer (ghost)|Ghost of Bouncer]] (level 160) (cannot use Prayer)
+|-
+|- data-rowid="Royal Trouble"
+|[[Royal Trouble]]
+|Yes||{{+=|slayer|5,000|echo=2}}||{{SCP|Slayer|40|sort=yes}}
+|[[Giant Sea Snake]] ''(level 149)''
+|-
+|- data-rowid="Wanted!"
+|[[Wanted!]]
+|Yes||{{+=|slayer|5,000|echo=2}}|| -
+|Multiple low level NPCs
+|-
+|[[Lair of Tarn Razorlor]]<br/>([[Miniquests|miniquest]])
+|Yes||{{+=|slayer|5,000|echo=2}}||{{SCP|Slayer|40|sort=yes}}
+|Level 69 mutant [[Tarn]], followed by a level 69 ghost [[Tarn]]
+|-
+|- data-rowid="The Heart of Darkness"
+|[[The Heart of Darkness]]
+|Yes||{{+=|slayer|8,000|echo=2}}
+|{{SCP|Slayer|48|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Troubled Tortugans"
+|[[Troubled Tortugans]]
+|Yes||{{+=|slayer|8,000|echo=2}}||{{SCP|Slayer|51|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Shadows of Custodia"
+|[[Shadows of Custodia]]
+|Yes||{{+=|slayer|10,000|echo=2}}||{{SCP|Slayer|54|sort=yes}}
+|3 [[Strange creature (Shadows of Custodia)|Strange Creatures]] (''level 93'')
+|-
+|- data-rowid="The Path of Glouphrie"
+|[[The Path of Glouphrie]]
+|Yes||{{+=|slayer|20,000|echo=2}}||{{SCP|Slayer|56|sort=yes}}
+|3 [[Warped Terrorbird]]s ''(level 136)''
+|-
+|- data-rowid="Perilous Moons"
+|[[Perilous Moons]]
+|Yes||{{+=|slayer|40,000|echo=2}}||{{SCP|Slayer|48|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="The Fremennik Exiles"
+|[[The Fremennik Exiles]]
+|Yes||{{+=|slayer|50,000|echo=2}}||{{SCP|Slayer|60|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Monkey Madness II"
+|[[Monkey Madness II]]
+|Yes||{{+=|slayer|80,000|echo=2}}||{{SCP|Slayer|69|sort=yes}}
+|Multiple high level NPCs
+|-
+!Total
+!
+!{{formatnum:{{#var:slayer}}}}
+!
+!
+|}
+
+==={{plink|Smithing|pic=Smithing icon}}===
+{| class="wikitable sortable lighttable qc-active oqg-table" style="text-align:center;"
+!Quest
+!Members
+!Experience<br/>reward
+!data-sort-type="number"|Smithing<br/>requirement
+!class='unsortable'|Enemy to defeat
+|-
+|- data-rowid="The Forsaken Tower"
+|[[The Forsaken Tower]]
+|Yes||{{+=|smithing|500|echo=2}}|| -
+|None
+|-
+|- data-rowid="Recipe for Disaster/Freeing Pirate Pete"
+|[[Recipe for Disaster]]<br/>([[Recipe for Disaster/Freeing Pirate Pete|Pirate Pete subquest]])
+|Yes||{{+=|smithing|1,000|echo=2}}|| -
+|Multiple low level NPCs
+|-
+|- data-rowid="Prying Times"
+|[[Prying Times]]
+|Yes||{{+=|smithing|1,000|echo=2}}||{{SCP|Smithing|30|sort=yes}}
+|[[Drink troll]] (level 14)
+|-
+|- data-rowid="Heroes' Quest"
+|[[Heroes' Quest]]
+|Yes||{{+=|smithing|2,275|echo=2}}|| -
+|Multiple high level NPCs
+|-
+|- data-rowid="The Giant Dwarf"
+|[[The Giant Dwarf]]
+|Yes||{{+=|smithing|2,500|echo=2}}|| -
+|None
+|-
+|- data-rowid="Between a Rock..."
+|[[Between a Rock...]]
+|Yes||{{+=|smithing|5,000|echo=2}}||{{SCP|Smithing|50|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Elemental Workshop I"
+|[[Elemental Workshop I]]
+|Yes||{{+=|smithing|5,000|echo=2}}||{{SCP|Smithing|20|sort=yes}}
+|[[Earth elemental]] ''(level 35)''
+|-
+|- data-rowid="Scrambled!"
+|[[Scrambled!]]
+|Yes||{{+=|smithing|5,000|echo=2}}||{{SCP|Smithing|35|sort=yes}}
+|[[Red Dragon]] (''level 106'') ([[Safespot|safespottable]])
+|-
+|- data-rowid="The Red Reef"
+|[[The Red Reef]]
+|Yes||{{+=|smithing|5,000|echo=2}}||{{SCP|Smithing|48|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Sleeping Giants"
+|[[Sleeping Giants]]
+|Yes||{{+=|smithing|6,000|echo=2}}||{{SCP|Smithing|15|sort=yes}}
+|None
+|-
+|- data-rowid="Devious Minds"
+|[[Devious Minds]]
+|Yes||{{+=|smithing|6,500|echo=2}}||{{SCP|Smithing|65|sort=yes}}
+|[[Abyssal creature|Abyssal creatures]] level 41+ (for a large pouch)
+|-
+|- data-rowid="Cabin Fever"
+|[[Cabin Fever]]
+|Yes||{{+=|smithing|7,000|echo=2}}||{{SCP|Smithing|50|sort=yes}}
+|[[Pirate|Pirates]] ''(level 57)''
+|-
+|- data-rowid="Elemental Workshop II"
+|[[Elemental Workshop II]]
+|Yes||{{+=|smithing|7,500|echo=2}}||{{SCP|Smithing|30|sort=yes}}
+|(If you do not have the elemental metal bars) 2 [[Earth elemental|Earth elementals]] ''(level 35)''
+|-
+|- data-rowid="The Knight's Sword"
+|[[The Knight's Sword]]
+|No||{{+=|smithing|12,725|echo=2}}|| -
+|None
+|-
+|- data-rowid="Defender of Varrock"
+|[[Defender of Varrock]]
+|Yes||{{+=|smithing|15,000|echo=2}}||{{SCP|Smithing|55|sort=yes}}
+|Multiple mid level NPCs
+|-
+|- data-rowid="Song of the Elves"
+|[[Song of the Elves]]
+|Yes||{{+=|smithing|40,000|echo=2}}||{{SCP|Smithing|70|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Dragon Slayer II"
+|[[Dragon Slayer II]]
+|Yes||{{+=|smithing|80,000|echo=2}}||{{SCP|Smithing|70|sort=yes}}
+|Multiple high level NPCs
+|-
+!Total
+!
+!{{formatnum:{{#var:smithing}}}}
+!
+!
+|}
+
+==={{plink|Strength|pic=Strength icon}}===
+{| class="wikitable sortable lighttable qc-active oqg-table" style="text-align:center;"
+!Quest
+!Members
+!Experience<br/>reward
+!data-sort-type="number"|Strength<br/>requirement
+!class='unsortable'|Enemy to defeat
+|-
+|- data-rowid="In Search of the Myreque"
+|[[In Search of the Myreque]]
+|Yes||{{+=|strength|600|echo=2}}|| -
+|[[Skeleton Hellhound]] ''(level 97)''
+|-
+|- data-rowid="In Aid of the Myreque"
+|[[In Aid of the Myreque]]
+|Yes||{{+=|strength|2,000|echo=2}}|| -
+|Multiple mid level NPCs
+|-
+|- data-rowid="Tai Bwo Wannai Trio"
+|[[Tai Bwo Wannai Trio]]
+|Yes||{{+=|strength|2,500|echo=2}}|| -
+|None
+|-
+|- data-rowid="The Fremennik Trials"
+|[[The Fremennik Trials]]
+|Yes||{{+=|strength|2,812.4|echo=2}}|| -
+|Multiple mid level NPCs
+|-
+|- data-rowid="Heroes' Quest"
+|[[Heroes' Quest]]
+|Yes||{{+=|strength|3,075|echo=2}}|| -
+|[[Ice Queen]] ''(level 111)'' (for ice gloves) and [[Grip]] ''(level 26)''
+|-
+|- data-rowid="Troll Romance"
+|[[Troll Romance]]
+|Yes||{{+=|strength|4,000|echo=2}}|| -
+|[[Arrg]] ''(level 113)'' ([[Safespot|safespottable]])
+|-
+|- data-rowid="Horror from the Deep"
+|[[Horror from the Deep]]
+|Yes||{{+=|strength|4,662.5|echo=2}}|| -
+|[[Dagannoth]] ''(level 100)'' and [[Dagannoth mother]] ''(level 100)''
+|-
+|- data-rowid="Scorpion Catcher"
+|[[Scorpion Catcher]]
+|Yes||{{+=|strength|6,625|echo=2}}|| -
+|None
+|-
+|- data-rowid="Roving Elves"
+|[[Roving Elves]]
+|Yes||{{+=|strength|10,000|echo=2}}|| -
+|[[Moss Guardian]] ''(level 84)''
+|-
+|- data-rowid="Waterfall Quest"
+|[[Waterfall Quest]]
+|Yes||{{+=|strength|13,750|echo=2}}|| -
+|None
+|-
+|- data-rowid="Dragon Slayer I"
+|[[Dragon Slayer I]]
+|No||{{+=|strength|18,650|echo=2}}|| -
+|[[Elvarg]] ''(level 83)''
+|-
+|[[Knight Waves]]<br/>([[Miniquests|miniquest]])
+|Yes||{{+=|strength|20,000|echo=2}}|| -
+|Multiple high level NPCs
+|-
+|- data-rowid="Haunted Mine"
+|[[Haunted Mine]]
+|Yes||{{+=|strength|22,000|echo=2}}|| -
+|[[Treus Dayth]] ''(level 95)''
+|-
+|- data-rowid="The Path of Glouphrie"
+|[[The Path of Glouphrie]]
+|Yes||{{+=|strength|30,000|echo=2}}||{{SCP|Strength|60|sort=yes}}
+|3 [[Warped Terrorbird]]s ''(level 136)''
+|-
+!Total
+!
+!{{formatnum:{{#var:strength}}}}
+!
+!
+|}
+
+==={{plink|Thieving|pic=Thieving icon}}===
+{| class="wikitable sortable lighttable qc-active oqg-table" style="text-align:center;"
+!Quest
+!Members
+!Experience<br/>reward
+!data-sort-type="number"|Thieving<br/>requirement
+!class='unsortable'|Enemy to defeat
+|-
+|- data-rowid="Tower of Life"
+|[[Tower of Life]]
+|Yes||{{+=|thieving|500|echo=2}}|| -
+|
+|-
+|- data-rowid="Creature of Fenkenstrain"
+|[[Creature of Fenkenstrain]]
+|Yes||{{+=|thieving|1,000|echo=2}}||{{SCP|Thieving|25|sort=yes}}
+|[[Experiment]] ''(level 51)''
+|-
+|- data-rowid="The Golem"
+|[[The Golem]]
+|Yes||{{+=|thieving|1,000|echo=2}}||{{SCP|Thieving|25|sort=yes}}
+|
+|-
+|- data-rowid="The Hand in the Sand"
+|[[The Hand in the Sand]]
+|Yes||{{+=|thieving|1,000|echo=2}}||{{SCP|Thieving|17|sort=yes}}
+|
+|-
+|- data-rowid="Spirits of the Elid"
+|[[Spirits of the Elid]]
+|Yes||{{+=|thieving|1,000|echo=2}}||{{SCP|Thieving|37|sort=yes}}
+|
+|-
+|- data-rowid="Biohazard"
+|[[Biohazard]]
+|Yes||{{+=|thieving|1,250|echo=2}}|| -
+|[[Mourner]] ''(level 13)''
+|-
+|- data-rowid="The Giant Dwarf"
+|[[The Giant Dwarf]]
+|Yes||{{+=|thieving|1,500|echo=2}}||{{SCP|Thieving|14|sort=yes}}
+|
+|-
+|- data-rowid="Hazeel Cult"
+|[[Hazeel Cult]]
+|Yes||{{+=|thieving|1,500|echo=2}}|| -
+|
+|-
+|- data-rowid="Tribal Totem"
+|[[Tribal Totem]]
+|Yes||{{+=|thieving|1,775|echo=2}}||{{SCP|Thieving|21|sort=yes}}
+|
+|-
+|- data-rowid="Death to the Dorgeshuun"
+|[[Death to the Dorgeshuun]]
+|Yes||{{+=|thieving|2,000|echo=2}}||{{SCP|Thieving|23|sort=yes}}
+|
+|-
+|- data-rowid="The Queen of Thieves"
+|[[The Queen of Thieves]]
+|Yes||{{+=|thieving|2,000|echo=2}}||{{SCP|Thieving|20|sort=yes}}
+|
+|-
+|- data-rowid="Fight Arena"
+|[[Fight Arena]]
+|Yes||{{+=|thieving|2,175|echo=2}}|| -
+|Multiple high level NPCs
+|-
+|- data-rowid="Fairytale II - Cure a Queen"
+|[[Fairytale II - Cure a Queen]]
+|Yes||{{+=|thieving|2,500|echo=2}}||{{SCP|Thieving|40|sort=yes}}
+|
+|-
+|- data-rowid="The Fremennik Trials"
+|[[The Fremennik Trials]]
+|Yes||{{+=|thieving|2,812.4|echo=2}}|| -
+|Multiple mid level NPCs
+|-
+|- data-rowid="Twilight's Promise"
+|[[Twilight's Promise]]
+|Yes||{{+=|thieving|3,000|echo=2}}|| -
+|Multiple mid level NPCs
+|-
+|- data-rowid="The Slug Menace"
+|[[The Slug Menace]]
+|Yes||{{+=|thieving|3,500|echo=2}}||{{SCP|Thieving|30|sort=yes}}
+|[[Slug Prince]] (level 62)
+|-
+|- data-rowid="Icthlarin's Little Helper"
+|[[Icthlarin's Little Helper]]
+|Yes||{{+=|thieving|4,500|echo=2}}|| -
+|[[Possessed Priest]] (level 91)
+|-
+|- data-rowid="Ratcatchers"
+|[[Ratcatchers]]
+|Yes||{{+=|thieving|4,500|echo=2}}|| -
+|
+|-
+|- data-rowid="The Path of Glouphrie"
+|[[The Path of Glouphrie]]
+|Yes||{{+=|thieving|5,000|echo=2}}||{{SCP|Thieving|56|sort=yes}}
+|3 [[Warped Terrorbird]]s ''(level 136)''
+|-
+|- data-rowid="Darkness of Hallowvale"
+|[[Darkness of Hallowvale]]
+|Yes||{{+=|thieving|6,000|echo=2}}||{{SCP|Thieving|22|sort=yes}}
+|
+|-
+|- data-rowid="Ethically Acquired Antiquities"
+|[[Ethically Acquired Antiquities]]
+|Yes||{{+=|thieving|6,000|echo=2}}||{{SCP|Thieving|25|sort=yes}}
+|None
+|- data-rowid="Contact!"
+|[[Contact!]]
+|Yes||{{+=|thieving|7,000|echo=2}}|| -
+|[[Giant scarab]] ''(level 191)''
+|-
+|- data-rowid="Land of the Goblins"
+|[[Land of the Goblins]]
+|Yes||{{+=|thieving|8,000|echo=2}}
+|{{SCP|Thieving|45|sort=yes}}
+|Multiple mid level NPCs
+|- data-rowid="The Heart of Darkness"
+|[[The Heart of Darkness]]
+|Yes||{{+=|thieving|8,000|echo=2}}
+|{{SCP|Thieving|48|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Death on the Isle"
+|[[Death on the Isle]]
+|Yes||{{+=|thieving|10,000|echo=2}}
+|{{SCP|Thieving|34|sort=yes}}
+|Two low-level enemies with no equipment
+|-
+|- data-rowid="The Feud"
+|[[The Feud]]
+|Yes||{{+=|thieving|15,000|echo=2}}||{{SCP|Thieving|30|sort=yes}}
+|Multiple mid level NPCs
+|-
+|- data-rowid="Grim Tales"
+|[[Grim Tales]]
+|Yes||{{+=|thieving|25,000|echo=2}}||{{SCP|Thieving|58|sort=yes}}
+|[[Glod]] (level 138)
+|-
+|- data-rowid="Mourning's End Part I"
+|[[Mourning's End Part I]]
+|Yes||{{+=|thieving|40,000|echo=2}}||{{SCP|Thieving|50|sort=yes}}
+|
+|-
+|- data-rowid="The Curse of Arrav"
+|[[The Curse of Arrav]]
+|Yes||{{+=|thieving|40,000|echo=2}}||{{SCP|Thieving|62|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="Monkey Madness II"
+|[[Monkey Madness II]]
+|Yes||{{+=|thieving|50,000|echo=2}}||{{SCP|Thieving|55|sort=yes}}
+|
+|-
+|- data-rowid="Dragon Slayer II"
+|[[Dragon Slayer II]]
+|Yes||{{+=|thieving|50,000|echo=2}}||{{SCP|Thieving|60|sort=yes}}
+|
+|-
+|- data-rowid="Secrets of the North"
+|[[Secrets of the North]]
+|Yes||{{+=|thieving|50,000|echo=2}}||{{SCP|Thieving|64|sort=yes}}
+|Multiple high level NPCs
+|-
+|- data-rowid="The Final Dawn"
+|[[The Final Dawn]]
+|Yes
+|{{+=|thieving|55,000|echo=2}}
+|{{SCP|Thieving|66|sort=yes}}
+|[[Emissary Enforcer]] (lvl-196)
+|- data-rowid="While Guthix Sleeps"
+|[[While Guthix Sleeps]]
+|Yes||{{+=|thieving|80,000|echo=2}}||{{SCP|Thieving|72|sort=yes}}
+|Multiple high level NPCs
+|-
+!Total
+!
+!{{formatnum:{{#var:thieving}}}}
+!
+!
+|}
+
+==={{plink|Woodcutting|pic=Woodcutting icon}}===
+{| class="wikitable sortable lighttable qc-active oqg-table" style="text-align:center;"
+!Quest
+!Members
+!Experience<br/>reward
+!data-sort-type="number"|Woodcutting<br/>requirement
+!class='unsortable'|Enemy to defeat
+|-
+|- data-rowid="Enlightened Journey"
+|[[Enlightened Journey]]
+|Yes||{{+=|woodcutting|1,500|echo=2}}|| -
+|
+|-
+|[[Recipe for Disaster/Freeing Skrach Uglogwee]]
+|Yes||{{+=|woodcutting|1,500|echo=2}}|| -
+|[[Jubbly bird|Jubbly Bird]] (Level 9)
+|-
+|- data-rowid="Heroes' Quest"
+|[[Heroes' Quest]]
+|Yes||{{+=|woodcutting|1,575|echo=2}}|| -
+|
+|-
+|- data-rowid="Monk's Friend"
+|[[Monk's Friend]]
+|Yes||{{+=|woodcutting|2,000|echo=2}}|| -
+|
+|-
+|- data-rowid="The Ribbiting Tale of a Lily Pad Labour Dispute"
+|[[The Ribbiting Tale of a Lily Pad Labour Dispute]]
+|Yes||{{+=|woodcutting|2,000|echo=2}}||{{SCP|Woodcutting|15|sort=yes}}
+|[[Cuthbert, Lord of Dread]] ''(level 1)''
+|-
+|- data-rowid="Animal Magnetism"
+|[[Animal Magnetism]]
+|Yes||{{+=|woodcutting|2,500|echo=2}}||{{SCP|Woodcutting|35|sort=yes}}
+|
+|-
+|- data-rowid="The Eyes of Glouphrie"
+|[[The Eyes of Glouphrie]]
+|Yes||{{+=|woodcutting|2,500|echo=2}}||-
+|
+|-
+|- data-rowid="The Fremennik Trials"
+|[[The Fremennik Trials]]
+|Yes||{{+=|woodcutting|2,812.4|echo=2}}||-
+|Multiple mid level NPCs
+|-
+|- data-rowid="Icthlarin's Little Helper"
+|[[Icthlarin's Little Helper]]
+|Yes||{{+=|woodcutting|4,000|echo=2}}|| -
+|[[Possessed Priest]] (level 91)
+|-
+|- data-rowid="The Fremennik Isles"
+|[[The Fremennik Isles]]
+|Yes||{{+=|woodcutting|10,000|echo=2}}||{{SCP|Woodcutting|56|sort=yes}} {{Ironman|icon}}
+|
+|-
+|- data-rowid="Song of the Elves"
+|[[Song of the Elves]]
+|Yes||{{+=|woodcutting|40,000|echo=2}}||{{SCP|Woodcutting|70|sort=yes}}
+|
+|-
+|- data-rowid="Grim Tales"
+|[[Grim Tales]]
+|Yes||{{+=|woodcutting|60,000|echo=2}}||{{SCP|Woodcutting|71|sort=yes}}
+|
+|-
+!Total
+!
+!{{formatnum:{{#var:woodcutting}}}}
+!
+!
+|}
+
+==Skill choice==
+This section lists the experience rewards that can be allotted to a skill of the player's choosing, usually in the form of a lamp or book. It is recommended putting such experience rewards on skills that are slow or expensive to train, such as [[Slayer]], [[Runecraft]], [[Agility]], [[Construction]], or [[Herblore]].
+<div class="qc-active">
+{{SkillChoice|Any}}
+</div>
+
+==Other==
+*[[Observatory Quest]] - 875 experience in [[Attack]], [[Strength]], [[Defence]], or [[Hitpoints]] is a possible reward from completing the quest, depending on the constellation players observe, which is random. Some constellations do not give experience in any skill but give items instead.
+*The [[Varrock Museum]] - After completing a specific set of quests, players can speak to [[Historian Minas]] to inform him of their endeavours and their discoveries during these quests. Players will receive [[Kudos]] in addition to lamps which grant experience in a skill of the player's choosing. Players can receive additional experience from Kudos by speaking to the Varrock Museum's [[Information clerk]].
+*[[Biohazard]] - After completing, players can access the [[Combat Training Camp]], which has unique combat dummies. 300 total [[Attack]] experience can can be gained by attacking the dummy for 50 experience per hit, up to a total of 6 hits.
+*[[Shades of Mort'ton]] - During or after the quest, players can give the [[Diary (Shades of Mort'ton)|Diary]] obtained at the beginning of the quest to the [[Apothecary]] in [[Varrock]] for 335 [[Herblore]] experience. This can only be done once.
+*[[While Guthix Sleeps]] - Gives [[Slayer]] experience equal to 15x the player's level after speaking with [[Kuradal]] about [[Duradel]].
+
+== Quests that do not grant any experience rewards ==
+
+This does not include any quests that reward tomes, lamps, or other ways to get experience after the quest has been completed, but where the quest itself does not have a direct experience reward.
+
+===Free to Play Quests===
+*[[Below Ice Mountain]]
+*[[Black Knights' Fortress]]
+*[[The Corsair Curse]]
+*[[Demon Slayer]]
+*[[Ernest the Chicken]]
+*[[Pirate's Treasure]]
+*[[Prince Ali Rescue]]
+*[[Romeo & Juliet]]
+*[[Rune Mysteries]]
+*[[Shield of Arrav]]
+
+===Members Quests===
+*[[Bone Voyage]]
+*[[Children of the Sun]]
+*[[Clock Tower]]
+*[[Family Crest]]
+*[[Lost City]]
+*[[Merlin's Crystal]]
+*[[Recipe for Disaster/Another Cook's Quest]]
+*[[Sheep Herder]]
+*[[Tale of the Righteous]]
+*[[Throne of Miscellania]]
+*[[Troll Stronghold]]
+
+==Trivia==
+*The [[Waterfall Quest]] grants the most [[experience]] for any [[quest]] with no requirements, allowing a player to level up both their [[Attack]] and [[Strength]] from level 1 to level 30.
+
+==See also==
+*[[Quest experience rewards (F2P)]] (experience rewards page for free to play quests)
+*[[Quest skill requirements]] ([[Skills|skill]] levels required to begin or complete [[quests]])
+*[[Experience]] (experience table from levels 1 to 99)
+
+[[Category:Quests]]
+[[Category:Leagues]]

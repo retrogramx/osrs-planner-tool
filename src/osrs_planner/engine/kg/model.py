@@ -27,16 +27,20 @@ class NodeKind(str, Enum):
     COMBAT_ACHIEVEMENT = "combat_achievement"
     MINIGAME = "minigame"
     CLOG_SLOT = "clog_slot"
+    GOAL = "goal"  # completion-goal aggregate node (Quest cape, music cape, ...): data={counter_type, thresholds}
 
 
 class EdgeType(str, Enum):
-    """The 5 FACT edge types (schema: fact edge-type table). Opinion edges
+    """The 7 edge types (5 fact-spine: REQUIRES/GRANTS/DROPS/LOCATED_IN/GATED_BY +
+    EFFECT for item perks + PROGRESS_TOWARDS for goal counting). Opinion edges
     (recommended_for / recommended_method) are out of the engine's fact spine."""
     REQUIRES = "requires"
     GRANTS = "grants"
     DROPS = "drops"
     LOCATED_IN = "located_in"
     GATED_BY = "gated_by"
+    EFFECT = "effect"                  # a passive/permanent perk riding on a granted item/unlock (spec §4)
+    PROGRESS_TOWARDS = "progress_towards"  # counting contribution toward a goal node; data={weight} (spec §5)
 
 
 class Op(str, Enum):
@@ -120,3 +124,4 @@ class Edge:
     src: str
     dst: Optional[str] = None
     cond_group: Optional[int] = None
+    data: dict = field(default_factory=dict)

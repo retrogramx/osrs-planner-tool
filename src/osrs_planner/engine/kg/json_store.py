@@ -10,7 +10,7 @@ query to an internal InMemoryKGStore (built from the loaded lists).
 
 Serialized shapes (spec §5) — all enum fields are the enum .value string:
     node:  {"id","kind","name","slug","data"}
-    edge:  {"id","type","src","dst","cond_group"}   (dst/cond_group may be null)
+    edge:  {"id","type","src","dst","cond_group","data"}   (dst/cond_group may be null)
     group: {"id","op","parent","children"}          (parent may be null)
              children = list of (int sub-group id) | (inline atom-dict)
     atom:  {"atom_type","ref_node","threshold","qty","data"}
@@ -55,7 +55,7 @@ def node_to_dict(node: Node) -> dict:
 
 def edge_to_dict(edge: Edge) -> dict:
     return {"id": edge.id, "type": edge.type.value, "src": edge.src,
-            "dst": edge.dst, "cond_group": edge.cond_group}
+            "dst": edge.dst, "cond_group": edge.cond_group, "data": edge.data}
 
 
 def group_to_dict(group: ConditionGroup) -> dict:
@@ -83,7 +83,7 @@ def node_from_dict(d: dict) -> Node:
 
 def edge_from_dict(d: dict) -> Edge:
     return Edge(id=d["id"], type=EdgeType(d["type"]), src=d["src"],
-                dst=d.get("dst"), cond_group=d.get("cond_group"))
+                dst=d.get("dst"), cond_group=d.get("cond_group"), data=d.get("data") or {})
 
 
 def group_from_dict(d: dict) -> ConditionGroup:
