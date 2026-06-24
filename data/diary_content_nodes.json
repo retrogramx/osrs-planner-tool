@@ -1,22 +1,179 @@
 {
   "_provenance": {
     "source_urls": [
-      "https://oldschool.runescape.wiki/w/Achievement_Diary",
-      "https://oldschool.runescape.wiki/w/Barrows",
-      "https://oldschool.runescape.wiki/w/Burgh_de_Rott",
-      "https://oldschool.runescape.wiki/w/Ardougne_Monastery"
+      "https://oldschool.runescape.wiki/w/Ardougne_Diary",
+      "https://oldschool.runescape.wiki/w/Desert_Diary",
+      "https://oldschool.runescape.wiki/w/Falador_Diary",
+      "https://oldschool.runescape.wiki/w/Fremennik_Diary",
+      "https://oldschool.runescape.wiki/w/Kandarin_Diary",
+      "https://oldschool.runescape.wiki/w/Karamja_Diary",
+      "https://oldschool.runescape.wiki/w/Kourend_&_Kebos_Diary",
+      "https://oldschool.runescape.wiki/w/Lumbridge_&_Draynor_Diary",
+      "https://oldschool.runescape.wiki/w/Morytania_Diary",
+      "https://oldschool.runescape.wiki/w/Varrock_Diary",
+      "https://oldschool.runescape.wiki/w/Western_Provinces_Diary",
+      "https://oldschool.runescape.wiki/w/Wilderness_Diary",
+      "https://oldschool.runescape.wiki/w/Achievement_Diary"
     ],
     "license": "CC BY-NC-SA 3.0",
-    "extraction_method": "manual-transcription-from-wiki",
-    "note": "Bounded content-node set targeted by diary effects (spec §4): existence only (id/kind/name/slug) — facts (drops/location/stats) are out of scope and accrete in later bricks. Initial set covers the Task-4 reward seed (Ardougne easy + Morytania hard); expanded to all targeted content in Task 9. id slug derived via kg_ingest.ids slugify of the wiki page name.",
-    "kinds": ["activity", "monster", "region"]
+    "extraction_method": "derived from diary_rewards.json effect targets (existence-only content nodes)",
+    "note": "Bounded content-node set targeted by the 48 tiers' diary effects (spec §4): existence only (id/kind/name/slug). Facts (drops/location/stats) are out of scope and accrete in later bricks. id slug = kg_ingest.ids.slugify(name).",
+    "kinds": [
+      "activity",
+      "monster",
+      "region"
+    ]
   },
   "records": [
+    {
+      "id": "activity:ardougne-rooftop-course",
+      "kind": "activity",
+      "name": "Ardougne Rooftop Course",
+      "slug": "ardougne-rooftop-course"
+    },
+    {
+      "id": "activity:artefact-selling-to-simon-templeton",
+      "kind": "activity",
+      "name": "Artefact selling to Simon Templeton",
+      "slug": "artefact-selling-to-simon-templeton"
+    },
+    {
+      "id": "activity:barbarian-assault",
+      "kind": "activity",
+      "name": "Barbarian Assault",
+      "slug": "barbarian-assault"
+    },
     {
       "id": "activity:barrows",
       "kind": "activity",
       "name": "Barrows",
       "slug": "barrows"
+    },
+    {
+      "id": "activity:blast-mine",
+      "kind": "activity",
+      "name": "Blast Mine",
+      "slug": "blast-mine"
+    },
+    {
+      "id": "activity:brimhaven-agility-arena",
+      "kind": "activity",
+      "name": "Brimhaven Agility Arena",
+      "slug": "brimhaven-agility-arena"
+    },
+    {
+      "id": "activity:chompy-bird-hunting",
+      "kind": "activity",
+      "name": "Chompy bird hunting",
+      "slug": "chompy-bird-hunting"
+    },
+    {
+      "id": "activity:creature-creation",
+      "kind": "activity",
+      "name": "Creature Creation",
+      "slug": "creature-creation"
+    },
+    {
+      "id": "activity:eodans-tanning-services",
+      "kind": "activity",
+      "name": "Eodan's tanning services",
+      "slug": "eodans-tanning-services"
+    },
+    {
+      "id": "activity:fairy-rings",
+      "kind": "activity",
+      "name": "Fairy rings",
+      "slug": "fairy-rings"
+    },
+    {
+      "id": "activity:fallen-ents",
+      "kind": "activity",
+      "name": "Fallen ents",
+      "slug": "fallen-ents"
+    },
+    {
+      "id": "activity:false-blood-altar",
+      "kind": "activity",
+      "name": "False blood altar",
+      "slug": "false-blood-altar"
+    },
+    {
+      "id": "activity:fight-cave",
+      "kind": "activity",
+      "name": "Fight Cave",
+      "slug": "fight-cave"
+    },
+    {
+      "id": "activity:fishing-trawler",
+      "kind": "activity",
+      "name": "Fishing Trawler",
+      "slug": "fishing-trawler"
+    },
+    {
+      "id": "activity:god-wars-dungeon",
+      "kind": "activity",
+      "name": "God Wars Dungeon",
+      "slug": "god-wars-dungeon"
+    },
+    {
+      "id": "activity:grinding-lava-scales",
+      "kind": "activity",
+      "name": "Grinding lava scales",
+      "slug": "grinding-lava-scales"
+    },
+    {
+      "id": "activity:managing-miscellania",
+      "kind": "activity",
+      "name": "Managing Miscellania",
+      "slug": "managing-miscellania"
+    },
+    {
+      "id": "activity:motherlode-mine",
+      "kind": "activity",
+      "name": "Motherlode Mine",
+      "slug": "motherlode-mine"
+    },
+    {
+      "id": "activity:ourania-altar",
+      "kind": "activity",
+      "name": "Ourania Altar",
+      "slug": "ourania-altar"
+    },
+    {
+      "id": "activity:pollnivneach-rooftop-course",
+      "kind": "activity",
+      "name": "Pollnivneach Rooftop Course",
+      "slug": "pollnivneach-rooftop-course"
+    },
+    {
+      "id": "activity:rellekka-rooftop-course",
+      "kind": "activity",
+      "name": "Rellekka Rooftop Course",
+      "slug": "rellekka-rooftop-course"
+    },
+    {
+      "id": "activity:seers-village-rooftop-course",
+      "kind": "activity",
+      "name": "Seers' Village Rooftop Course",
+      "slug": "seers-village-rooftop-course"
+    },
+    {
+      "id": "activity:tears-of-guthix",
+      "kind": "activity",
+      "name": "Tears of Guthix",
+      "slug": "tears-of-guthix"
+    },
+    {
+      "id": "activity:thirus-dynamite",
+      "kind": "activity",
+      "name": "Thirus dynamite",
+      "slug": "thirus-dynamite"
+    },
+    {
+      "id": "activity:thormacs-enchanting-services",
+      "kind": "activity",
+      "name": "Thormac's enchanting services",
+      "slug": "thormacs-enchanting-services"
     },
     {
       "id": "activity:west-ardougne-cat-trade",
@@ -25,16 +182,400 @@
       "slug": "west-ardougne-cat-trade"
     },
     {
+      "id": "monster:artio",
+      "kind": "monster",
+      "name": "Artio",
+      "slug": "artio"
+    },
+    {
+      "id": "monster:callisto",
+      "kind": "monster",
+      "name": "Callisto",
+      "slug": "callisto"
+    },
+    {
+      "id": "monster:calvarion",
+      "kind": "monster",
+      "name": "Calvar'ion",
+      "slug": "calvarion"
+    },
+    {
+      "id": "monster:dagannoth-kings",
+      "kind": "monster",
+      "name": "Dagannoth Kings",
+      "slug": "dagannoth-kings"
+    },
+    {
+      "id": "monster:giant-mole",
+      "kind": "monster",
+      "name": "Giant Mole",
+      "slug": "giant-mole"
+    },
+    {
+      "id": "monster:goat",
+      "kind": "monster",
+      "name": "Goat",
+      "slug": "goat"
+    },
+    {
+      "id": "monster:guard",
+      "kind": "monster",
+      "name": "Guard",
+      "slug": "guard"
+    },
+    {
+      "id": "monster:lizardman",
+      "kind": "monster",
+      "name": "Lizardman",
+      "slug": "lizardman"
+    },
+    {
+      "id": "monster:spindel",
+      "kind": "monster",
+      "name": "Spindel",
+      "slug": "spindel"
+    },
+    {
+      "id": "monster:venenatis",
+      "kind": "monster",
+      "name": "Venenatis",
+      "slug": "venenatis"
+    },
+    {
+      "id": "monster:vetion",
+      "kind": "monster",
+      "name": "Vet'ion",
+      "slug": "vetion"
+    },
+    {
+      "id": "monster:zombie-pirate",
+      "kind": "monster",
+      "name": "Zombie pirate",
+      "slug": "zombie-pirate"
+    },
+    {
+      "id": "region:ardougne",
+      "kind": "region",
+      "name": "Ardougne",
+      "slug": "ardougne"
+    },
+    {
+      "id": "region:ardougne-farm",
+      "kind": "region",
+      "name": "Ardougne farm",
+      "slug": "ardougne-farm"
+    },
+    {
       "id": "region:ardougne-monastery",
       "kind": "region",
       "name": "Ardougne Monastery",
       "slug": "ardougne-monastery"
     },
     {
+      "id": "region:brimhaven",
+      "kind": "region",
+      "name": "Brimhaven",
+      "slug": "brimhaven"
+    },
+    {
+      "id": "region:brimhaven-dungeon",
+      "kind": "region",
+      "name": "Brimhaven Dungeon",
+      "slug": "brimhaven-dungeon"
+    },
+    {
       "id": "region:burgh-de-rott",
       "kind": "region",
       "name": "Burgh de Rott",
       "slug": "burgh-de-rott"
+    },
+    {
+      "id": "region:chaos-temple",
+      "kind": "region",
+      "name": "Chaos Temple",
+      "slug": "chaos-temple"
+    },
+    {
+      "id": "region:cooks-guild",
+      "kind": "region",
+      "name": "Cooks' Guild",
+      "slug": "cooks-guild"
+    },
+    {
+      "id": "region:crabclaw-isle",
+      "kind": "region",
+      "name": "Crabclaw Isle",
+      "slug": "crabclaw-isle"
+    },
+    {
+      "id": "region:crafting-guild",
+      "kind": "region",
+      "name": "Crafting Guild",
+      "slug": "crafting-guild"
+    },
+    {
+      "id": "region:culinaromancers-chest",
+      "kind": "region",
+      "name": "Culinaromancer's Chest",
+      "slug": "culinaromancers-chest"
+    },
+    {
+      "id": "region:deep-wilderness-dungeon",
+      "kind": "region",
+      "name": "Deep Wilderness Dungeon",
+      "slug": "deep-wilderness-dungeon"
+    },
+    {
+      "id": "region:duradel-kuradal",
+      "kind": "region",
+      "name": "Duradel/Kuradal",
+      "slug": "duradel-kuradal"
+    },
+    {
+      "id": "region:edgeville",
+      "kind": "region",
+      "name": "Edgeville",
+      "slug": "edgeville"
+    },
+    {
+      "id": "region:enakhras-temple",
+      "kind": "region",
+      "name": "Enakhra's Temple",
+      "slug": "enakhras-temple"
+    },
+    {
+      "id": "region:falador-park",
+      "kind": "region",
+      "name": "Falador Park",
+      "slug": "falador-park"
+    },
+    {
+      "id": "region:fountain-of-rune",
+      "kind": "region",
+      "name": "Fountain of Rune",
+      "slug": "fountain-of-rune"
+    },
+    {
+      "id": "region:grand-exchange",
+      "kind": "region",
+      "name": "Grand Exchange",
+      "slug": "grand-exchange"
+    },
+    {
+      "id": "region:hardwood-grove",
+      "kind": "region",
+      "name": "Hardwood Grove",
+      "slug": "hardwood-grove"
+    },
+    {
+      "id": "region:harmony-island",
+      "kind": "region",
+      "name": "Harmony Island",
+      "slug": "harmony-island"
+    },
+    {
+      "id": "region:heroes-guild",
+      "kind": "region",
+      "name": "Heroes' Guild",
+      "slug": "heroes-guild"
+    },
+    {
+      "id": "region:hosidius",
+      "kind": "region",
+      "name": "Hosidius",
+      "slug": "hosidius"
+    },
+    {
+      "id": "region:hosidius-kitchen",
+      "kind": "region",
+      "name": "Hosidius Kitchen",
+      "slug": "hosidius-kitchen"
+    },
+    {
+      "id": "region:kalphite-cave",
+      "kind": "region",
+      "name": "Kalphite Cave",
+      "slug": "kalphite-cave"
+    },
+    {
+      "id": "region:kalphite-lair",
+      "kind": "region",
+      "name": "Kalphite Lair",
+      "slug": "kalphite-lair"
+    },
+    {
+      "id": "region:karamja",
+      "kind": "region",
+      "name": "Karamja",
+      "slug": "karamja"
+    },
+    {
+      "id": "region:karuulm-slayer-dungeon",
+      "kind": "region",
+      "name": "Karuulm Slayer Dungeon",
+      "slug": "karuulm-slayer-dungeon"
+    },
+    {
+      "id": "region:kharidian-desert",
+      "kind": "region",
+      "name": "Kharidian Desert",
+      "slug": "kharidian-desert"
+    },
+    {
+      "id": "region:kourend-woodland",
+      "kind": "region",
+      "name": "Kourend Woodland",
+      "slug": "kourend-woodland"
+    },
+    {
+      "id": "region:lunar-isle",
+      "kind": "region",
+      "name": "Lunar Isle",
+      "slug": "lunar-isle"
+    },
+    {
+      "id": "region:mage-arena",
+      "kind": "region",
+      "name": "Mage Arena",
+      "slug": "mage-arena"
+    },
+    {
+      "id": "region:mining-guild",
+      "kind": "region",
+      "name": "Mining Guild",
+      "slug": "mining-guild"
+    },
+    {
+      "id": "region:mort-myre-swamp",
+      "kind": "region",
+      "name": "Mort Myre Swamp",
+      "slug": "mort-myre-swamp"
+    },
+    {
+      "id": "region:mount-karuulm",
+      "kind": "region",
+      "name": "Mount Karuulm",
+      "slug": "mount-karuulm"
+    },
+    {
+      "id": "region:nardah",
+      "kind": "region",
+      "name": "Nardah",
+      "slug": "nardah"
+    },
+    {
+      "id": "region:piscatoris-fishing-colony",
+      "kind": "region",
+      "name": "Piscatoris Fishing Colony",
+      "slug": "piscatoris-fishing-colony"
+    },
+    {
+      "id": "region:pool-of-slime",
+      "kind": "region",
+      "name": "Pool of Slime",
+      "slug": "pool-of-slime"
+    },
+    {
+      "id": "region:port-phasmatys",
+      "kind": "region",
+      "name": "Port Phasmatys",
+      "slug": "port-phasmatys"
+    },
+    {
+      "id": "region:red-chinchompa-hunting-ground",
+      "kind": "region",
+      "name": "Red chinchompa hunting ground",
+      "slug": "red-chinchompa-hunting-ground"
+    },
+    {
+      "id": "region:rellekka-marketplace",
+      "kind": "region",
+      "name": "Rellekka marketplace",
+      "slug": "rellekka-marketplace"
+    },
+    {
+      "id": "region:resource-area",
+      "kind": "region",
+      "name": "Resource Area",
+      "slug": "resource-area"
+    },
+    {
+      "id": "region:rogues-castle",
+      "kind": "region",
+      "name": "Rogues' Castle",
+      "slug": "rogues-castle"
+    },
+    {
+      "id": "region:seers-village-bank",
+      "kind": "region",
+      "name": "Seers' Village bank",
+      "slug": "seers-village-bank"
+    },
+    {
+      "id": "region:shantay-pass",
+      "kind": "region",
+      "name": "Shantay Pass",
+      "slug": "shantay-pass"
+    },
+    {
+      "id": "region:sherlock",
+      "kind": "region",
+      "name": "Sherlock",
+      "slug": "sherlock"
+    },
+    {
+      "id": "region:shilo-village",
+      "kind": "region",
+      "name": "Shilo Village",
+      "slug": "shilo-village"
+    },
+    {
+      "id": "region:shilo-village-mine",
+      "kind": "region",
+      "name": "Shilo Village mine",
+      "slug": "shilo-village-mine"
+    },
+    {
+      "id": "region:south-falador-farm",
+      "kind": "region",
+      "name": "South Falador Farm",
+      "slug": "south-falador-farm"
+    },
+    {
+      "id": "region:temple-of-marimbo-dungeon",
+      "kind": "region",
+      "name": "Temple of Marimbo Dungeon",
+      "slug": "temple-of-marimbo-dungeon"
+    },
+    {
+      "id": "region:troll-stronghold",
+      "kind": "region",
+      "name": "Troll Stronghold",
+      "slug": "troll-stronghold"
+    },
+    {
+      "id": "region:varrock",
+      "kind": "region",
+      "name": "Varrock",
+      "slug": "varrock"
+    },
+    {
+      "id": "region:waterbirth-island",
+      "kind": "region",
+      "name": "Waterbirth Island",
+      "slug": "waterbirth-island"
+    },
+    {
+      "id": "region:wilderness",
+      "kind": "region",
+      "name": "Wilderness",
+      "slug": "wilderness"
+    },
+    {
+      "id": "region:yanille",
+      "kind": "region",
+      "name": "Yanille",
+      "slug": "yanille"
     }
   ]
 }

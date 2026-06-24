@@ -2,10 +2,29 @@
   "_provenance": {
     "source_urls": [
       "https://oldschool.runescape.wiki/w/Ardougne_Diary",
-      "https://oldschool.runescape.wiki/w/Morytania_Diary"
+      "https://oldschool.runescape.wiki/w/Desert_Diary",
+      "https://oldschool.runescape.wiki/w/Falador_Diary",
+      "https://oldschool.runescape.wiki/w/Fremennik_Diary",
+      "https://oldschool.runescape.wiki/w/Kandarin_Diary",
+      "https://oldschool.runescape.wiki/w/Karamja_Diary",
+      "https://oldschool.runescape.wiki/w/Kourend_&_Kebos_Diary",
+      "https://oldschool.runescape.wiki/w/Lumbridge_&_Draynor_Diary",
+      "https://oldschool.runescape.wiki/w/Morytania_Diary",
+      "https://oldschool.runescape.wiki/w/Varrock_Diary",
+      "https://oldschool.runescape.wiki/w/Western_Provinces_Diary",
+      "https://oldschool.runescape.wiki/w/Wilderness_Diary"
     ],
-    "note": "Initial 2-tier seed (Task 4). Remaining 46 tiers added in Task 9.",
-    "magnitude_convention": "bonus fraction (additive over baseline): 0.1 = +10%, 0.5 = +50%, 1.0 = +100%/double"
+    "license": "CC BY-NC-SA 3.0",
+    "extraction_method": "structured-from-committed-wiki-snapshot (data/raw/diary_reward_blocks.json), adversarially verified",
+    "note": "Complete 48-tier reward overlay (Task 9). Every datum grounded against the committed offline reward-block cache (verify_diary_rewards.py); the cache derives from achievement_diaries.json's per-tier reward prose. Reward prose is a STARTING POINT, not truth — owner editorial review is the final gate.",
+    "magnitude_convention": "bonus fraction (additive over baseline): 0.1 = +10%, 0.5 = +50%, 1.0 = +100%/double. Set ONLY on percentage/multiplier effects; null otherwise.",
+    "editorial_decisions": [
+      "GRANULARITY: captured clearly-mechanical perks (XP/resource/drop/chance multipliers, teleport/area access, fee waivers, daily free resources, noting toggles, prayer/run-energy restoration, capacity changes with a clean target). Cosmetic/no-benefit/flavor bullets and item-charge tweaks without a clean skill/activity/region target are intentionally OMITTED and surface as informational notes from verify_diary_rewards.py.",
+      "EFFECT TARGETS restricted to skill/activity/region/monster content nodes (never item — an item target whose id is absent from items_equipment.json would crash assemble).",
+      "CONDITION: 'while-equipped' when the block says While worn/when equipped/when worn or held; otherwise 'unconditional-once-earned'.",
+      "EXTRA_UNLOCKS (claimable items, e.g. Bonecrusher, Ash sanctifier) recorded with item_id=null + untracked=true (disclosed); not resolved to equipment ids.",
+      "DISCOUNTS modelled as effect_kind=fee_waiver with magnitude = the discount fraction; full fee removals as fee_waiver magnitude=null."
+    ]
   },
   "records": [
     {
@@ -24,26 +43,2395 @@
       },
       "effects": [
         {
-          "effect_kind": "rate_multiplier",
-          "magnitude": 1.0,
-          "target_facet": "death runes received from trading cats to civilians",
-          "target": {"kind": "activity", "name": "West Ardougne cat trade"},
-          "condition": "unconditional-once-earned",
-          "tier_source": "ardougne:easy",
-          "source_token": "twice as many death runes"
-        },
-        {
           "effect_kind": "access",
           "magnitude": null,
-          "target_facet": "unlimited teleports to Ardougne Monastery",
-          "target": {"kind": "region", "name": "Ardougne Monastery"},
+          "target_facet": "unlimited teleports to the Ardougne Monastery",
+          "target": {
+            "kind": "region",
+            "name": "Ardougne Monastery"
+          },
           "condition": "unconditional-once-earned",
           "tier_source": "ardougne:easy",
           "source_token": "Unlimited teleports to the Ardougne Monastery"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 1.0,
+          "target_facet": "twice as many death runes from trading in cats to civilians in West Ardougne",
+          "target": {
+            "kind": "activity",
+            "name": "West Ardougne cat trade"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "ardougne:easy",
+          "source_token": "twice as many death runes from trading in cats to civilians in West Ardougne"
+        },
+        {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "drops from Jubsters and Frogeels noted in the Creature Creation activity",
+          "target": {
+            "kind": "activity",
+            "name": "Creature Creation"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "ardougne:easy",
+          "source_token": "Drops from Jubsters and Frogeels will be noted in the Creature Creation activity"
         }
       ],
       "extra_unlocks": [],
       "source_url": "https://oldschool.runescape.wiki/w/Ardougne_Diary"
+    },
+    {
+      "region": "ardougne",
+      "tier": "medium",
+      "regional_item": {
+        "name": "Ardougne cloak 2",
+        "item_id": 13122,
+        "supersedes_item_id": 13121
+      },
+      "lamp": {
+        "amount": 7500,
+        "min_level": 40,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (medium)"
+      },
+      "effects": [
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "three daily teleports to the farming patch at the Ardougne farm",
+          "target": {
+            "kind": "region",
+            "name": "Ardougne farm"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "ardougne:medium",
+          "source_token": "Three daily teleports to the farming patch at the Ardougne farm"
+        },
+        {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "drops from Unicows, Newtroosts, and Spidines noted in the Creature Creation activity",
+          "target": {
+            "kind": "activity",
+            "name": "Creature Creation"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "ardougne:medium",
+          "source_token": "Drops from Unicows, Newtroosts, and Spidines will be noted in the Creature Creation activity"
+        },
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "100 noted pure essence for free every day from Wizard Cromperty",
+          "target": {
+            "kind": "region",
+            "name": "Ardougne"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "ardougne:medium",
+          "source_token": "Wizard Cromperty offers you 100 noted pure essence for free every day"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "ability to change the ring of life teleport location to Ardougne",
+          "target": {
+            "kind": "region",
+            "name": "Ardougne"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "ardougne:medium",
+          "source_token": "Ability to change the ring of life teleport location to Ardougne"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": null,
+          "target_facet": "additional runes at the Ourania Altar (chance varies per rune)",
+          "target": {
+            "kind": "activity",
+            "name": "Ourania Altar"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "ardougne:medium",
+          "source_token": "Chance on receiving additional runes at the Ourania Altar"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.1,
+          "target_facet": "chance of successfully pickpocketing within Ardougne",
+          "target": {
+            "kind": "skill",
+            "name": "Thieving"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "ardougne:medium",
+          "source_token": "10% increased chance of successfully pickpocketing within Ardougne"
+        },
+        {
+          "effect_kind": "capacity_change",
+          "magnitude": null,
+          "target_facet": "hold up to 56 coin pouches at a time, up from 28",
+          "target": {
+            "kind": "skill",
+            "name": "Thieving"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "ardougne:medium",
+          "source_token": "Hold up to 56 coin pouches at a time, up from 28"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Ardougne_Diary"
+    },
+    {
+      "region": "ardougne",
+      "tier": "hard",
+      "regional_item": {
+        "name": "Ardougne cloak 3",
+        "item_id": 13123,
+        "supersedes_item_id": 13122
+      },
+      "lamp": {
+        "amount": 15000,
+        "min_level": 50,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (hard)"
+      },
+      "effects": [
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "five daily teleports to the farming patch at the Ardougne farm",
+          "target": {
+            "kind": "region",
+            "name": "Ardougne farm"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "ardougne:hard",
+          "source_token": "Five daily teleports to the farming patch at the Ardougne farm"
+        },
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "150 noted pure essence for free every day from Wizard Cromperty",
+          "target": {
+            "kind": "region",
+            "name": "Ardougne"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "ardougne:hard",
+          "source_token": "Wizard Cromperty offers you 150 noted pure essence for free every day"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "Watchtower Teleport can be used to teleport to Yanille instead",
+          "target": {
+            "kind": "region",
+            "name": "Yanille"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "ardougne:hard",
+          "source_token": "Watchtower Teleport can now be used to teleport to Yanille instead"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.1,
+          "target_facet": "chance of successfully pickpocketing anywhere around Gielinor",
+          "target": {
+            "kind": "skill",
+            "name": "Thieving"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "ardougne:hard",
+          "source_token": "10% increased chance of successfully pickpocketing anywhere around Gielinor"
+        },
+        {
+          "effect_kind": "capacity_change",
+          "magnitude": null,
+          "target_facet": "hold up to 84 coin pouches at a time, up from 56",
+          "target": {
+            "kind": "skill",
+            "name": "Thieving"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "ardougne:hard",
+          "source_token": "Hold up to 84 coin pouches at a time, up from 56"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Ardougne_Diary"
+    },
+    {
+      "region": "ardougne",
+      "tier": "elite",
+      "regional_item": {
+        "name": "Ardougne cloak 4",
+        "item_id": 13124,
+        "supersedes_item_id": 13123
+      },
+      "lamp": {
+        "amount": 50000,
+        "min_level": 70,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (elite)"
+      },
+      "effects": [
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "unlimited teleports to the farming patch at the Ardougne farm",
+          "target": {
+            "kind": "region",
+            "name": "Ardougne farm"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "ardougne:elite",
+          "source_token": "Unlimited teleports to the farming patch at the Ardougne farm"
+        },
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "Bert automatically delivers 84 buckets of sand to your bank each day you log in",
+          "target": {
+            "kind": "region",
+            "name": "Ardougne"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "ardougne:elite",
+          "source_token": "Bert automatically delivers 84 buckets of sand to your bank each day you log in"
+        },
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "250 noted pure essence for free every day from Wizard Cromperty",
+          "target": {
+            "kind": "region",
+            "name": "Ardougne"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "ardougne:elite",
+          "source_token": "Wizard Cromperty offers you 250 noted pure essence for free every day"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.5,
+          "target_facet": "more fish from Fishing Trawler",
+          "target": {
+            "kind": "activity",
+            "name": "Fishing Trawler"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "ardougne:elite",
+          "source_token": "50% more fish from Fishing Trawler"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.25,
+          "target_facet": "more marks of grace from the Ardougne Rooftop Course",
+          "target": {
+            "kind": "activity",
+            "name": "Ardougne Rooftop Course"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "ardougne:elite",
+          "source_token": "25% more marks of grace from the Ardougne Rooftop Course"
+        },
+        {
+          "effect_kind": "capacity_change",
+          "magnitude": null,
+          "target_facet": "hold up to 140 coin pouches at a time, up from 84",
+          "target": {
+            "kind": "skill",
+            "name": "Thieving"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "ardougne:elite",
+          "source_token": "Hold up to 140 coin pouches at a time, up from 84"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Ardougne_Diary"
+    },
+    {
+      "region": "desert",
+      "tier": "easy",
+      "regional_item": {
+        "name": "Desert amulet 1",
+        "item_id": 13133,
+        "supersedes_item_id": null
+      },
+      "lamp": {
+        "amount": 2500,
+        "min_level": 30,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (easy)"
+      },
+      "effects": [
+        {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "Desert goat horns dropped by goats become noted",
+          "target": {
+            "kind": "monster",
+            "name": "Goat"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "desert:easy",
+          "source_token": "Desert goat horns from goats are now noted"
+        },
+        {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "Simon Templeton buys artefacts in noted form",
+          "target": {
+            "kind": "activity",
+            "name": "Artefact selling to Simon Templeton"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "desert:easy",
+          "source_token": "Simon Templeton now also buys artefacts in noted form"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Desert_Diary"
+    },
+    {
+      "region": "desert",
+      "tier": "medium",
+      "regional_item": {
+        "name": "Desert amulet 2",
+        "item_id": 13134,
+        "supersedes_item_id": 13133
+      },
+      "lamp": {
+        "amount": 7500,
+        "min_level": 40,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (medium)"
+      },
+      "effects": [
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "One daily teleport to Nardah",
+          "target": {
+            "kind": "region",
+            "name": "Nardah"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "desert:medium",
+          "source_token": "One daily teleport to Nardah"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Desert_Diary"
+    },
+    {
+      "region": "desert",
+      "tier": "hard",
+      "regional_item": {
+        "name": "Desert amulet 3",
+        "item_id": 13135,
+        "supersedes_item_id": 13134
+      },
+      "lamp": {
+        "amount": 15000,
+        "min_level": 50,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (hard)"
+      },
+      "effects": [
+        {
+          "effect_kind": "fee_waiver",
+          "magnitude": null,
+          "target_facet": "Free carpet rides throughout the Kharidian Desert (down from a fee of 75-200 coins per ride)",
+          "target": {
+            "kind": "region",
+            "name": "Kharidian Desert"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "desert:hard",
+          "source_token": "Free carpet rides throughout the Kharidian Desert, down from a fee of 75-200 coins per ride"
+        },
+        {
+          "effect_kind": "stat_multiplier",
+          "magnitude": 0.14,
+          "target_facet": "Experience from the Pollnivneach Rooftop Course",
+          "target": {
+            "kind": "skill",
+            "name": "Agility"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "desert:hard",
+          "source_token": "Roughly 14% increased experience and 25% more marks of grace from the Pollnivneach Rooftop Course"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.25,
+          "target_facet": "Marks of grace from the Pollnivneach Rooftop Course",
+          "target": {
+            "kind": "activity",
+            "name": "Pollnivneach Rooftop Course"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "desert:hard",
+          "source_token": "25% more marks of grace from the Pollnivneach Rooftop Course"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "Camulet can be rubbed to teleport to the entrance of Enakhra's Temple",
+          "target": {
+            "kind": "region",
+            "name": "Enakhra's Temple"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "desert:hard",
+          "source_token": "Camulet can now be rubbed to teleport to the entrance of Enakhra's Temple"
+        },
+        {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "Zahur cleans grimy herbs in noted form and offers potion-making services",
+          "target": {
+            "kind": "skill",
+            "name": "Herblore"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "desert:hard",
+          "source_token": "Zahur now also cleans grimy herbs in noted form, and offers her potion-making services"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Desert_Diary"
+    },
+    {
+      "region": "desert",
+      "tier": "elite",
+      "regional_item": {
+        "name": "Desert amulet 4",
+        "item_id": 13136,
+        "supersedes_item_id": 13135
+      },
+      "lamp": {
+        "amount": 50000,
+        "min_level": 70,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (elite)"
+      },
+      "effects": [
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "Unlimited teleports to Nardah, closer to the Elidinis Statuette",
+          "target": {
+            "kind": "region",
+            "name": "Nardah"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "desert:elite",
+          "source_token": "Unlimited teleports to Nardah, closer to the Elidinis Statuette than the previous amulets"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "Unlimited teleports to the entrance of the Kalphite Cave",
+          "target": {
+            "kind": "region",
+            "name": "Kalphite Cave"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "desert:elite",
+          "source_token": "Unlimited teleports to the entrance of the Kalphite Cave"
+        },
+        {
+          "effect_kind": "fee_waiver",
+          "magnitude": null,
+          "target_facet": "Free passage through Shantay Pass and the pass at Ruins of Unkah (down from a fee of 5 coins)",
+          "target": {
+            "kind": "region",
+            "name": "Shantay Pass"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "desert:elite",
+          "source_token": "Free passage through Shantay Pass and the similar pass at Ruins of Unkah, down from a fee of 5 coins"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "Crevice shortcut in the Kalphite Lair (requires 86 Agility)",
+          "target": {
+            "kind": "region",
+            "name": "Kalphite Lair"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "desert:elite",
+          "source_token": "Access to the crevice shortcut in the Kalphite Lair (with 86 Agility)"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Desert_Diary"
+    },
+    {
+      "region": "falador",
+      "tier": "easy",
+      "regional_item": {
+        "name": "Falador shield 1",
+        "item_id": 13117,
+        "supersedes_item_id": null
+      },
+      "lamp": {
+        "amount": 2500,
+        "min_level": 30,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (easy)"
+      },
+      "effects": [
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "restore 25% of prayer points once a day",
+          "target": {
+            "kind": "skill",
+            "name": "Prayer"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "falador:easy",
+          "source_token": "Can restore 25% of prayer points once a day"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "tight-gap shortcut from Burthorpe to the Chaos Temple (14 Agility)",
+          "target": {
+            "kind": "region",
+            "name": "Chaos Temple"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "falador:easy",
+          "source_token": "Access to the tight-gap shortcut from Burthorpe to the Chaos Temple"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Falador_Diary"
+    },
+    {
+      "region": "falador",
+      "tier": "medium",
+      "regional_item": {
+        "name": "Falador shield 2",
+        "item_id": 13118,
+        "supersedes_item_id": 13117
+      },
+      "lamp": {
+        "amount": 7500,
+        "min_level": 40,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (medium)"
+      },
+      "effects": [
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "restore 50% of prayer points once a day",
+          "target": {
+            "kind": "skill",
+            "name": "Prayer"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "falador:medium",
+          "source_token": "Can restore 50% of prayer points once a day"
+        },
+        {
+          "effect_kind": "stat_multiplier",
+          "magnitude": 0.1,
+          "target_facet": "experience from the Falador farming patch",
+          "target": {
+            "kind": "skill",
+            "name": "Farming"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "falador:medium",
+          "source_token": "10% more experience from the Falador farming patch"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "dark tunnel shortcut in the Motherlode Mine (54 Agility)",
+          "target": {
+            "kind": "activity",
+            "name": "Motherlode Mine"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "falador:medium",
+          "source_token": "Access to the dark tunnel shortcut in the Motherlode Mine"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.21,
+          "target_facet": "chance of receiving a medium clue scroll from a guard in Falador",
+          "target": {
+            "kind": "monster",
+            "name": "Guard"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "falador:medium",
+          "source_token": "21% increased chance of receiving a medium clue scroll from a guard in Falador"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Falador_Diary"
+    },
+    {
+      "region": "falador",
+      "tier": "hard",
+      "regional_item": {
+        "name": "Falador shield 3",
+        "item_id": 13119,
+        "supersedes_item_id": 13118
+      },
+      "lamp": {
+        "amount": 15000,
+        "min_level": 50,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (hard)"
+      },
+      "effects": [
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "restore full prayer points once a day",
+          "target": {
+            "kind": "skill",
+            "name": "Prayer"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "falador:hard",
+          "source_token": "Can restore full prayer points once a day"
+        },
+        {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "indicates the Giant Mole's location in the Mole Hole",
+          "target": {
+            "kind": "monster",
+            "name": "Giant Mole"
+          },
+          "condition": "while-equipped",
+          "tier_source": "falador:hard",
+          "source_token": "Indicates the Giant Mole's location when equipped or held in the inventory in the Mole Hole"
+        },
+        {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "Giant Mole's mole skin and claw drops will be noted",
+          "target": {
+            "kind": "monster",
+            "name": "Giant Mole"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "falador:hard",
+          "source_token": "The Giant Mole's mole skin and claw drops will be noted"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "bank chest and bank deposit box in the Crafting Guild",
+          "target": {
+            "kind": "region",
+            "name": "Crafting Guild"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "falador:hard",
+          "source_token": "Access to the bank chest and bank deposit box in the Crafting Guild"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "shortcut to the Fountain of Heroes in the Heroes' Guild basement (67 Agility)",
+          "target": {
+            "kind": "region",
+            "name": "Heroes' Guild"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "falador:hard",
+          "source_token": "Access to the shortcut to the Fountain of Heroes in the Heroes' Guild basement"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Falador_Diary"
+    },
+    {
+      "region": "falador",
+      "tier": "elite",
+      "regional_item": {
+        "name": "Falador shield 4",
+        "item_id": 13120,
+        "supersedes_item_id": 13119
+      },
+      "lamp": {
+        "amount": 50000,
+        "min_level": 70,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (elite)"
+      },
+      "effects": [
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "restore full prayer points twice a day",
+          "target": {
+            "kind": "skill",
+            "name": "Prayer"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "falador:elite",
+          "source_token": "Can restore full prayer points twice a day"
+        },
+        {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "tree patch in Falador Park will never get diseased",
+          "target": {
+            "kind": "region",
+            "name": "Falador Park"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "falador:elite",
+          "source_token": "The tree patch in Falador Park will never get diseased"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "larger amethyst mine in the west of the Mining Guild",
+          "target": {
+            "kind": "region",
+            "name": "Mining Guild"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "falador:elite",
+          "source_token": "Access to the larger amethyst mine in the west of the Mining Guild"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.01,
+          "target_facet": "chance of receiving higher level ores when cleaning pay-dirt, about 1% per ore",
+          "target": {
+            "kind": "activity",
+            "name": "Motherlode Mine"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "falador:elite",
+          "source_token": "Slightly increased chance of receiving higher level ores when cleaning pay-dirt, by about 1% per ore"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Falador_Diary"
+    },
+    {
+      "region": "fremennik",
+      "tier": "easy",
+      "regional_item": {
+        "name": "Fremennik sea boots 1",
+        "item_id": 13129,
+        "supersedes_item_id": null
+      },
+      "lamp": {
+        "amount": 2500,
+        "min_level": 30,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (easy)"
+      },
+      "effects": [
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "one daily teleport to the Rellekka marketplace",
+          "target": {
+            "kind": "region",
+            "name": "Rellekka marketplace"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "fremennik:easy",
+          "source_token": "One daily teleport to the Rellekka marketplace"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Fremennik_Diary"
+    },
+    {
+      "region": "fremennik",
+      "tier": "medium",
+      "regional_item": {
+        "name": "Fremennik sea boots 2",
+        "item_id": 13130,
+        "supersedes_item_id": 13129
+      },
+      "lamp": {
+        "amount": 7500,
+        "min_level": 40,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (medium)"
+      },
+      "effects": [
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "three daily teleports to the Rellekka marketplace",
+          "target": {
+            "kind": "region",
+            "name": "Rellekka marketplace"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "fremennik:medium",
+          "source_token": "Three daily teleports to the Rellekka marketplace"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.1,
+          "target_facet": "chance of gaining approval in Managing Miscellania when fishing or woodcutting",
+          "target": {
+            "kind": "activity",
+            "name": "Managing Miscellania"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "fremennik:medium",
+          "source_token": "10% increased chance of gaining approval in Managing Miscellania"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Fremennik_Diary"
+    },
+    {
+      "region": "fremennik",
+      "tier": "hard",
+      "regional_item": {
+        "name": "Fremennik sea boots 3",
+        "item_id": 13131,
+        "supersedes_item_id": 13130
+      },
+      "lamp": {
+        "amount": 15000,
+        "min_level": 50,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (hard)"
+      },
+      "effects": [
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "five daily teleports to the Rellekka marketplace",
+          "target": {
+            "kind": "region",
+            "name": "Rellekka marketplace"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "fremennik:hard",
+          "source_token": "Five daily teleports to the Rellekka marketplace"
+        },
+        {
+          "effect_kind": "stat_multiplier",
+          "magnitude": 0.18,
+          "target_facet": "experience from the Rellekka Rooftop Course",
+          "target": {
+            "kind": "activity",
+            "name": "Rellekka Rooftop Course"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "fremennik:hard",
+          "source_token": "Roughly 18% increased experience and 25% more marks of grace from the Rellekka Rooftop Course"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.25,
+          "target_facet": "marks of grace from the Rellekka Rooftop Course",
+          "target": {
+            "kind": "activity",
+            "name": "Rellekka Rooftop Course"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "fremennik:hard",
+          "source_token": "25% more marks of grace from the Rellekka Rooftop Course"
+        },
+        {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "adamantite bars from aviansie killed in the God Wars Dungeon are now noted",
+          "target": {
+            "kind": "activity",
+            "name": "God Wars Dungeon"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "fremennik:hard",
+          "source_token": "Adamantite bars from aviansie killed in the God Wars Dungeon are now noted"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "enchanted lyre can be played to teleport to Waterbirth Island",
+          "target": {
+            "kind": "region",
+            "name": "Waterbirth Island"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "fremennik:hard",
+          "source_token": "Enchanted lyre and its imbued variant can now be played to teleport to Waterbirth Island"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "stony basalt teleports you on top of the Troll Stronghold, past the rocky shortcut (requires 73 Agility)",
+          "target": {
+            "kind": "region",
+            "name": "Troll Stronghold"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "fremennik:hard",
+          "source_token": "Stony basalt now teleports you on top of the Troll Stronghold"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Fremennik_Diary"
+    },
+    {
+      "region": "fremennik",
+      "tier": "elite",
+      "regional_item": {
+        "name": "Fremennik sea boots 4",
+        "item_id": 13132,
+        "supersedes_item_id": 13131
+      },
+      "lamp": {
+        "amount": 50000,
+        "min_level": 70,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (elite)"
+      },
+      "effects": [
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "unlimited teleports to the Rellekka marketplace",
+          "target": {
+            "kind": "region",
+            "name": "Rellekka marketplace"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "fremennik:elite",
+          "source_token": "Unlimited teleports to the Rellekka marketplace"
+        },
+        {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "Dagannoth bones from the Dagannoth Kings are now noted",
+          "target": {
+            "kind": "monster",
+            "name": "Dagannoth Kings"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "fremennik:elite",
+          "source_token": "Dagannoth bones from the Dagannoth Kings are now noted"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.15,
+          "target_facet": "chance of gaining approval in Managing Miscellania when fishing or woodcutting",
+          "target": {
+            "kind": "activity",
+            "name": "Managing Miscellania"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "fremennik:elite",
+          "source_token": "15% increased chance of gaining approval in Managing Miscellania"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "enchanted lyre can be played to teleport to Waterbirth Island, Jatizso, and Neitiznot",
+          "target": {
+            "kind": "region",
+            "name": "Waterbirth Island"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "fremennik:elite",
+          "source_token": "Enchanted lyre and its imbued variant can now be played to teleport to Waterbirth Island, Jatizso, and Neitiznot"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "the seal of passage is no longer needed to interact with anyone on Lunar Isle",
+          "target": {
+            "kind": "region",
+            "name": "Lunar Isle"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "fremennik:elite",
+          "source_token": "The seal of passage is no longer needed to interact with anyone on Lunar Isle"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Fremennik_Diary"
+    },
+    {
+      "region": "kandarin",
+      "tier": "easy",
+      "regional_item": {
+        "name": "Kandarin headgear 1",
+        "item_id": 13137,
+        "supersedes_item_id": null
+      },
+      "lamp": {
+        "amount": 2500,
+        "min_level": 30,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (easy)"
+      },
+      "effects": [
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 1.0,
+          "target_facet": "logs from regular trees",
+          "target": {
+            "kind": "skill",
+            "name": "Woodcutting"
+          },
+          "condition": "while-equipped",
+          "tier_source": "kandarin:easy",
+          "source_token": "gain double logs from regular trees"
+        },
+        {
+          "effect_kind": "capacity_change",
+          "magnitude": null,
+          "target_facet": "coal trucks can hold up to 140 coal, up from 120",
+          "target": {
+            "kind": "skill",
+            "name": "Mining"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kandarin:easy",
+          "source_token": "Coal trucks can hold up to 140 coal, up from 120"
+        },
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "flax keeper offers 30 noted bow strings every day for 30 noted flax",
+          "target": {
+            "kind": "skill",
+            "name": "Crafting"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kandarin:easy",
+          "source_token": "30 noted bow strings every day for 30 noted flax"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.05,
+          "target_facet": "marks of grace from the Seers' Village Rooftop Course",
+          "target": {
+            "kind": "activity",
+            "name": "Seers' Village Rooftop Course"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kandarin:easy",
+          "source_token": "5% more marks of grace from the Seers' Village Rooftop Course"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Kandarin_Diary"
+    },
+    {
+      "region": "kandarin",
+      "tier": "medium",
+      "regional_item": {
+        "name": "Kandarin headgear 2",
+        "item_id": 13138,
+        "supersedes_item_id": 13137
+      },
+      "lamp": {
+        "amount": 7500,
+        "min_level": 40,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (medium)"
+      },
+      "effects": [
+        {
+          "effect_kind": "capacity_change",
+          "magnitude": null,
+          "target_facet": "coal trucks can hold up to 280 coal, up from 140",
+          "target": {
+            "kind": "skill",
+            "name": "Mining"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kandarin:medium",
+          "source_token": "Coal trucks can hold up to 280 coal, up from 140"
+        },
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "flax keeper offers 60 noted bow strings every day for 60 noted flax",
+          "target": {
+            "kind": "skill",
+            "name": "Crafting"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kandarin:medium",
+          "source_token": "60 noted bow strings every day for 60 noted flax"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.1,
+          "target_facet": "marks of grace from the Seers' Village Rooftop Course",
+          "target": {
+            "kind": "activity",
+            "name": "Seers' Village Rooftop Course"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kandarin:medium",
+          "source_token": "10% more marks of grace from the Seers' Village Rooftop Course"
+        },
+        {
+          "effect_kind": "stat_multiplier",
+          "magnitude": 0.1,
+          "target_facet": "experience from cutting maple trees in Seers' Village",
+          "target": {
+            "kind": "skill",
+            "name": "Woodcutting"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kandarin:medium",
+          "source_token": "10% increased experience from cutting maple trees in Seers' Village"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.05,
+          "target_facet": "chance to save a harvest life at the herb patch in Catherby",
+          "target": {
+            "kind": "skill",
+            "name": "Farming"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kandarin:medium",
+          "source_token": "5% increased chance to save a \"harvest life\" at the herb patch in Catherby"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Kandarin_Diary"
+    },
+    {
+      "region": "kandarin",
+      "tier": "hard",
+      "regional_item": {
+        "name": "Kandarin headgear 3",
+        "item_id": 13139,
+        "supersedes_item_id": 13138
+      },
+      "lamp": {
+        "amount": 15000,
+        "min_level": 50,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (hard)"
+      },
+      "effects": [
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "one daily teleport to Sherlock",
+          "target": {
+            "kind": "region",
+            "name": "Sherlock"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kandarin:hard",
+          "source_token": "One daily teleport to Sherlock"
+        },
+        {
+          "effect_kind": "capacity_change",
+          "magnitude": null,
+          "target_facet": "coal trucks can hold up to 308 coal, up from 280",
+          "target": {
+            "kind": "skill",
+            "name": "Mining"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kandarin:hard",
+          "source_token": "Coal trucks can hold up to 308 coal, up from 280"
+        },
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "flax keeper offers 120 noted bow strings every day for 120 noted flax",
+          "target": {
+            "kind": "skill",
+            "name": "Crafting"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kandarin:hard",
+          "source_token": "120 noted bow strings every day for 120 noted flax"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.15,
+          "target_facet": "marks of grace from the Seers' Village Rooftop Course",
+          "target": {
+            "kind": "activity",
+            "name": "Seers' Village Rooftop Course"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kandarin:hard",
+          "source_token": "15% more marks of grace from the Seers' Village Rooftop Course"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.1,
+          "target_facet": "chance to save a harvest life at the herb patch in Catherby",
+          "target": {
+            "kind": "skill",
+            "name": "Farming"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kandarin:hard",
+          "source_token": "10% increased chance to save a \"harvest life\" at the herb patch in Catherby"
+        },
+        {
+          "effect_kind": "fee_waiver",
+          "magnitude": 0.25,
+          "target_facet": "discount on Thormacs' enchanting services",
+          "target": {
+            "kind": "activity",
+            "name": "Thormac's enchanting services"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kandarin:hard",
+          "source_token": "25% discount on Thormacs' enchanting services"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.1,
+          "target_facet": "honour points from Barbarian Assault",
+          "target": {
+            "kind": "activity",
+            "name": "Barbarian Assault"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kandarin:hard",
+          "source_token": "10% more honour points from Barbarian Assault"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "Camelot Teleport can be used to teleport to Seers' Village bank instead",
+          "target": {
+            "kind": "region",
+            "name": "Seers' Village bank"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kandarin:hard",
+          "source_token": "Camelot Teleport can now be used to teleport to Seers' Village bank instead"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Kandarin_Diary"
+    },
+    {
+      "region": "kandarin",
+      "tier": "elite",
+      "regional_item": {
+        "name": "Kandarin headgear 4",
+        "item_id": 13140,
+        "supersedes_item_id": 13139
+      },
+      "lamp": {
+        "amount": 50000,
+        "min_level": 70,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (elite)"
+      },
+      "effects": [
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "unlimited teleports to Sherlock",
+          "target": {
+            "kind": "region",
+            "name": "Sherlock"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kandarin:elite",
+          "source_token": "Unlimited teleports to Sherlock"
+        },
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "first 200 coal placed in the coal trucks every day automatically transported to your bank",
+          "target": {
+            "kind": "skill",
+            "name": "Mining"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kandarin:elite",
+          "source_token": "first 200 coal placed in the coal trucks every day will automatically be transported to your bank"
+        },
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "flax keeper offers 250 noted bow strings every day for 250 noted flax",
+          "target": {
+            "kind": "skill",
+            "name": "Crafting"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kandarin:elite",
+          "source_token": "250 noted bow strings every day for 250 noted flax"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.15,
+          "target_facet": "chance to save a harvest life at the herb patch in Catherby",
+          "target": {
+            "kind": "skill",
+            "name": "Farming"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kandarin:elite",
+          "source_token": "15% increased chance to save a \"harvest life\" at the herb patch in Catherby"
+        },
+        {
+          "effect_kind": "fee_waiver",
+          "magnitude": 0.5,
+          "target_facet": "discount on Thormacs' enchanting services",
+          "target": {
+            "kind": "activity",
+            "name": "Thormac's enchanting services"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kandarin:elite",
+          "source_token": "50% discount on Thormacs' enchanting services"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Kandarin_Diary"
+    },
+    {
+      "region": "karamja",
+      "tier": "easy",
+      "regional_item": {
+        "name": "Karamja gloves 1",
+        "item_id": 11136,
+        "supersedes_item_id": null
+      },
+      "lamp": {
+        "amount": 1000,
+        "min_level": null,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (Karamja Diary)"
+      },
+      "effects": [
+        {
+          "effect_kind": "fee_waiver",
+          "magnitude": null,
+          "target_facet": "Brimhaven-Ardougne and Musa Point-Port Sarim boat trips cost 15 coins instead of 30",
+          "target": {
+            "kind": "region",
+            "name": "Brimhaven"
+          },
+          "condition": "while-equipped",
+          "tier_source": "karamja:easy",
+          "source_token": "boat trips cost 15 coins instead of 30 coins"
+        },
+        {
+          "effect_kind": "fee_waiver",
+          "magnitude": null,
+          "target_facet": "items in various shops around Karamja sold at a discount and bought for more",
+          "target": {
+            "kind": "region",
+            "name": "Karamja"
+          },
+          "condition": "while-equipped",
+          "tier_source": "karamja:easy",
+          "source_token": "items in various shops around Karamja are sold at a discounted rate and bought for more"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Karamja_Diary"
+    },
+    {
+      "region": "karamja",
+      "tier": "medium",
+      "regional_item": {
+        "name": "Karamja gloves 2",
+        "item_id": 11138,
+        "supersedes_item_id": 11136
+      },
+      "lamp": {
+        "amount": 5000,
+        "min_level": 30,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (Karamja Diary)"
+      },
+      "effects": [
+        {
+          "effect_kind": "stat_multiplier",
+          "magnitude": 0.1,
+          "target_facet": "Agility experience from all obstacles in the Brimhaven Agility Arena and from Agility arena tickets",
+          "target": {
+            "kind": "skill",
+            "name": "Agility"
+          },
+          "condition": "while-equipped",
+          "tier_source": "karamja:medium",
+          "source_token": "10% additional Agility experience from all obstacles in the Brimhaven Agility Arena"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "access to the underground portion of the Shilo Village mine",
+          "target": {
+            "kind": "region",
+            "name": "Shilo Village mine"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "karamja:medium",
+          "source_token": "Access to the underground portion of the Shilo Village mine"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Karamja_Diary"
+    },
+    {
+      "region": "karamja",
+      "tier": "hard",
+      "regional_item": {
+        "name": "Karamja gloves 3",
+        "item_id": 11140,
+        "supersedes_item_id": 11138
+      },
+      "lamp": {
+        "amount": 10000,
+        "min_level": 40,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (Karamja Diary)"
+      },
+      "effects": [
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "unlimited teleports to the underground portion of the Shilo Village mine",
+          "target": {
+            "kind": "region",
+            "name": "Shilo Village mine"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "karamja:hard",
+          "source_token": "Unlimited teleports to the underground portion of the Shilo Village mine"
+        },
+        {
+          "effect_kind": "fee_waiver",
+          "magnitude": null,
+          "target_facet": "Jiminua's Jungle Store and Karamja General Store also affected by the gloves' discounted store prices",
+          "target": {
+            "kind": "region",
+            "name": "Karamja"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "karamja:hard",
+          "source_token": "are now also affected by the gloves' discounted store prices"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Karamja_Diary"
+    },
+    {
+      "region": "karamja",
+      "tier": "elite",
+      "regional_item": {
+        "name": "Karamja gloves 4",
+        "item_id": 13103,
+        "supersedes_item_id": 11140
+      },
+      "lamp": {
+        "amount": 50000,
+        "min_level": 70,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (Karamja Diary)"
+      },
+      "effects": [
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "unlimited teleports to Duradel/Kuradal",
+          "target": {
+            "kind": "region",
+            "name": "Duradel/Kuradal"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "karamja:elite",
+          "source_token": "Unlimited teleports to Duradel/Kuradal"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.1,
+          "target_facet": "10% chance of two Agility arena tickets and Brimhaven vouchers when tagging a ticket dispenser",
+          "target": {
+            "kind": "activity",
+            "name": "Brimhaven Agility Arena"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "karamja:elite",
+          "source_token": "10% chance of receiving two Agility arena tickets and Brimhaven vouchers"
+        },
+        {
+          "effect_kind": "fee_waiver",
+          "magnitude": null,
+          "target_facet": "free usage of Shilo Village's furnace, down from a fee of 20 coins per use",
+          "target": {
+            "kind": "region",
+            "name": "Shilo Village"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "karamja:elite",
+          "source_token": "Free usage of Shilo Village's furnace, down from a fee of 20 coins per use"
+        },
+        {
+          "effect_kind": "fee_waiver",
+          "magnitude": null,
+          "target_facet": "free access to the Hardwood Grove, down from a fee of 100 trading sticks",
+          "target": {
+            "kind": "region",
+            "name": "Hardwood Grove"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "karamja:elite",
+          "source_token": "Free access to the Hardwood Grove, down from a fee of 100 trading sticks"
+        },
+        {
+          "effect_kind": "fee_waiver",
+          "magnitude": null,
+          "target_facet": "free cart rides between Brimhaven and Shilo Village, down from a fee of 10-200 coins",
+          "target": {
+            "kind": "region",
+            "name": "Shilo Village"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "karamja:elite",
+          "source_token": "Free cart rides between Brimhaven and Shilo Village, down from a fee of 10-200 coins"
+        },
+        {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "red dragonhide from red dragons in the Brimhaven Dungeon is now noted",
+          "target": {
+            "kind": "region",
+            "name": "Brimhaven Dungeon"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "karamja:elite",
+          "source_token": "Red dragonhide from red dragons in the Brimhaven Dungeon is now noted"
+        },
+        {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "bars from metal dragons in the Brimhaven Dungeon are now noted",
+          "target": {
+            "kind": "region",
+            "name": "Brimhaven Dungeon"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "karamja:elite",
+          "source_token": "Bars from metal dragons in the Brimhaven Dungeon are now noted"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 1.0,
+          "target_facet": "double Tokkul from the Fight Cave, the Inferno, and TzHaar-Ket-Rak's Challenges",
+          "target": {
+            "kind": "activity",
+            "name": "Fight Cave"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "karamja:elite",
+          "source_token": "Double Tokkul from the TzHaar Fight Cave, the Inferno, and TzHaar-Ket-Rak's Challenges"
+        },
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "resurrect with full health and restored stats once per day at 0 hitpoints in the Fight Cave",
+          "target": {
+            "kind": "activity",
+            "name": "Fight Cave"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "karamja:elite",
+          "source_token": "Resurrect with full health and restored stats once per day when you reach 0 hitpoints in the TzHaar Fight Cave"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Karamja_Diary"
+    },
+    {
+      "region": "kourend",
+      "tier": "easy",
+      "regional_item": {
+        "name": "Rada's blessing 1",
+        "item_id": 22941,
+        "supersedes_item_id": null
+      },
+      "lamp": {
+        "amount": 2500,
+        "min_level": 30,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (easy)"
+      },
+      "effects": [
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "three daily teleports to the Kourend Woodland",
+          "target": {
+            "kind": "region",
+            "name": "Kourend Woodland"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kourend:easy",
+          "source_token": "Three daily teleports to the Kourend Woodland"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.02,
+          "target_facet": "chance to catch two fish at once anywhere when equipped",
+          "target": {
+            "kind": "skill",
+            "name": "Fishing"
+          },
+          "condition": "while-equipped",
+          "tier_source": "kourend:easy",
+          "source_token": "2% chance to catch two fish at once anywhere when equipped"
+        },
+        {
+          "effect_kind": "fee_waiver",
+          "magnitude": null,
+          "target_facet": "entrance fee for Crabclaw Isle lowered to 5,000 coins, down from 10,000 coins",
+          "target": {
+            "kind": "region",
+            "name": "Crabclaw Isle"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kourend:easy",
+          "source_token": "Entrance fee for the Crabclaw Isle lowered to 5,000 coins, down from 10,000 coins"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 1.0,
+          "target_facet": "Xeric's talisman drop chance from lizardmen, lizardman brutes, and lizardman shamans (1/125, up from 1/250)",
+          "target": {
+            "kind": "monster",
+            "name": "Lizardman"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kourend:easy",
+          "source_token": "Doubled chance at receiving a Xeric's talisman from lizardmen"
+        },
+        {
+          "effect_kind": "fee_waiver",
+          "magnitude": 0.2,
+          "target_facet": "discount on Eodan's tanning services",
+          "target": {
+            "kind": "activity",
+            "name": "Eodan's tanning services"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kourend:easy",
+          "source_token": "20% discount on Eodan's tanning services"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "access to the cooking ranges in the Hosidius Kitchen, with an additive 5% increased success rate over other ranges",
+          "target": {
+            "kind": "region",
+            "name": "Hosidius Kitchen"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kourend:easy",
+          "source_token": "Access to the cooking ranges in the Hosidius Kitchen"
+        },
+        {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "the farming patches in Hosidius, south of the church, will never get diseased",
+          "target": {
+            "kind": "region",
+            "name": "Hosidius"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kourend:easy",
+          "source_token": "The farming patches in Hosidius, south of the church, will never get diseased"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Kourend_&_Kebos_Diary"
+    },
+    {
+      "region": "kourend",
+      "tier": "medium",
+      "regional_item": {
+        "name": "Rada's blessing 2",
+        "item_id": 22943,
+        "supersedes_item_id": 22941
+      },
+      "lamp": {
+        "amount": 7500,
+        "min_level": 40,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (medium)"
+      },
+      "effects": [
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "five daily teleports to the Kourend Woodland",
+          "target": {
+            "kind": "region",
+            "name": "Kourend Woodland"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kourend:medium",
+          "source_token": "Five daily teleports to the Kourend Woodland"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.04,
+          "target_facet": "chance to catch two fish at once anywhere when equipped",
+          "target": {
+            "kind": "skill",
+            "name": "Fishing"
+          },
+          "condition": "while-equipped",
+          "tier_source": "kourend:medium",
+          "source_token": "4% chance to catch two fish at once anywhere when equipped"
+        },
+        {
+          "effect_kind": "fee_waiver",
+          "magnitude": null,
+          "target_facet": "free access to Crabclaw Isle, down from a fee of 5,000 coins",
+          "target": {
+            "kind": "region",
+            "name": "Crabclaw Isle"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kourend:medium",
+          "source_token": "Free access to Crabclaw Isle, down from a fee of 5,000 coins"
+        },
+        {
+          "effect_kind": "fee_waiver",
+          "magnitude": 0.4,
+          "target_facet": "discount on Eodan's tanning services, up from 20%",
+          "target": {
+            "kind": "activity",
+            "name": "Eodan's tanning services"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kourend:medium",
+          "source_token": "40% discount on Eodan's tanning services"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.05,
+          "target_facet": "chance to mine two dense essence blocks at once",
+          "target": {
+            "kind": "skill",
+            "name": "Mining"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kourend:medium",
+          "source_token": "5% chance to mine two dense essence blocks at once"
+        },
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "Thirus offers you 20 dynamite for free every day",
+          "target": {
+            "kind": "activity",
+            "name": "Thirus dynamite"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kourend:medium",
+          "source_token": "Thirus offers you 20 dynamite for free every day"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Kourend_&_Kebos_Diary"
+    },
+    {
+      "region": "kourend",
+      "tier": "hard",
+      "regional_item": {
+        "name": "Rada's blessing 3",
+        "item_id": 22945,
+        "supersedes_item_id": 22943
+      },
+      "lamp": {
+        "amount": 15000,
+        "min_level": 50,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (hard)"
+      },
+      "effects": [
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "unlimited teleports to the Kourend Woodland",
+          "target": {
+            "kind": "region",
+            "name": "Kourend Woodland"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kourend:hard",
+          "source_token": "Unlimited teleports to the Kourend Woodland"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "three daily teleports to the top of Mount Karuulm",
+          "target": {
+            "kind": "region",
+            "name": "Mount Karuulm"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kourend:hard",
+          "source_token": "Three daily teleports to the top of Mount Karuulm"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.06,
+          "target_facet": "chance to catch two fish at once anywhere when equipped",
+          "target": {
+            "kind": "skill",
+            "name": "Fishing"
+          },
+          "condition": "while-equipped",
+          "tier_source": "kourend:hard",
+          "source_token": "6% chance to catch two fish at once anywhere when equipped"
+        },
+        {
+          "effect_kind": "fee_waiver",
+          "magnitude": 0.6,
+          "target_facet": "discount on Eodan's tanning services, up from 40%",
+          "target": {
+            "kind": "activity",
+            "name": "Eodan's tanning services"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kourend:hard",
+          "source_token": "60% discount on Eodan's tanning services"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.05,
+          "target_facet": "chance to save a \"harvest life\" at the herb patches in Hosidius and the Farming Guild",
+          "target": {
+            "kind": "skill",
+            "name": "Farming"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kourend:hard",
+          "source_token": "5% increased chance to save a \"harvest life\" at the herb patches in Hosidius and the Farming Guild"
+        },
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "Thirus offers you 40 dynamite for free every day",
+          "target": {
+            "kind": "activity",
+            "name": "Thirus dynamite"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kourend:hard",
+          "source_token": "Thirus offers you 40 dynamite for free every day"
+        }
+      ],
+      "extra_unlocks": [
+        {
+          "reward_type": "items",
+          "name": "Ash sanctifier",
+          "item_id": null,
+          "untracked": true,
+          "note": "Ash sanctifier, claimable from Tyss"
+        }
+      ],
+      "source_url": "https://oldschool.runescape.wiki/w/Kourend_&_Kebos_Diary"
+    },
+    {
+      "region": "kourend",
+      "tier": "elite",
+      "regional_item": {
+        "name": "Rada's blessing 4",
+        "item_id": 22947,
+        "supersedes_item_id": 22945
+      },
+      "lamp": {
+        "amount": 50000,
+        "min_level": 70,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (elite)"
+      },
+      "effects": [
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "unlimited teleports to the top of Mount Karuulm",
+          "target": {
+            "kind": "region",
+            "name": "Mount Karuulm"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kourend:elite",
+          "source_token": "Unlimited teleports to the top of Mount Karuulm"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.08,
+          "target_facet": "chance to catch two fish at once anywhere when equipped",
+          "target": {
+            "kind": "skill",
+            "name": "Fishing"
+          },
+          "condition": "while-equipped",
+          "tier_source": "kourend:elite",
+          "source_token": "8% chance to catch two fish at once anywhere when equipped"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.11,
+          "target_facet": "more slayer reward points from Konar quo Maten's tasks, including milestone tasks",
+          "target": {
+            "kind": "skill",
+            "name": "Slayer"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kourend:elite",
+          "source_token": "Roughly 11% more slayer reward points from Konar quo Maten's tasks"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.1,
+          "target_facet": "additive success rate when using the cooking ranges in the Hosidius Kitchen, up from 5%",
+          "target": {
+            "kind": "region",
+            "name": "Hosidius Kitchen"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kourend:elite",
+          "source_token": "10% additive success rate when using the cooking ranges in the Hosidius Kitchen"
+        },
+        {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "permanent protection from the burning effect in the Karuulm Slayer Dungeon without protective footwear",
+          "target": {
+            "kind": "region",
+            "name": "Karuulm Slayer Dungeon"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kourend:elite",
+          "source_token": "Permanent protection from the burning effect in the Karuulm Slayer Dungeon without the need for protective footwear"
+        },
+        {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "ashes scattered via the Ash sanctifier now grant full Prayer experience",
+          "target": {
+            "kind": "skill",
+            "name": "Prayer"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kourend:elite",
+          "source_token": "Ashes scattered via the Ash sanctifier now grant full Prayer experience"
+        },
+        {
+          "effect_kind": "fee_waiver",
+          "magnitude": 0.8,
+          "target_facet": "discount on Eodan's tanning service, up from 60%",
+          "target": {
+            "kind": "activity",
+            "name": "Eodan's tanning services"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kourend:elite",
+          "source_token": "80% discount on Eodan's tanning service"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.1,
+          "target_facet": "additional blood runes from the false blood altar",
+          "target": {
+            "kind": "activity",
+            "name": "False blood altar"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kourend:elite",
+          "source_token": "10% additional blood runes from the false blood altar"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.1,
+          "target_facet": "chance of obtaining higher-tier ores in the Blast mine",
+          "target": {
+            "kind": "activity",
+            "name": "Blast Mine"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kourend:elite",
+          "source_token": "10% increased chance of obtaining higher-tier ores in the Blast mine"
+        },
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "Thirus offers you 80 dynamite for free every day",
+          "target": {
+            "kind": "activity",
+            "name": "Thirus dynamite"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kourend:elite",
+          "source_token": "Thirus offers you 80 dynamite for free every day"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Kourend_&_Kebos_Diary"
+    },
+    {
+      "region": "lumbridge",
+      "tier": "easy",
+      "regional_item": {
+        "name": "Explorer's ring 1",
+        "item_id": 13125,
+        "supersedes_item_id": null
+      },
+      "lamp": {
+        "amount": 2500,
+        "min_level": 30,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (easy)"
+      },
+      "effects": [
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "restore 50% of run energy twice a day",
+          "target": {
+            "kind": "skill",
+            "name": "Agility"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "lumbridge:easy",
+          "source_token": "Can restore 50% of run energy twice a day"
+        },
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "30 casts of Low Level Alchemy without runes each day",
+          "target": {
+            "kind": "skill",
+            "name": "Magic"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "lumbridge:easy",
+          "source_token": "Allows 30 casts of Low Level Alchemy without runes each day"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Lumbridge_&_Draynor_Diary"
+    },
+    {
+      "region": "lumbridge",
+      "tier": "medium",
+      "regional_item": {
+        "name": "Explorer's ring 2",
+        "item_id": 13126,
+        "supersedes_item_id": 13125
+      },
+      "lamp": {
+        "amount": 7500,
+        "min_level": 40,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (medium)"
+      },
+      "effects": [
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "restore 50% of run energy three times a day",
+          "target": {
+            "kind": "skill",
+            "name": "Agility"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "lumbridge:medium",
+          "source_token": "Can restore 50% of run energy three times a day"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "three daily teleports to the cabbage patch of South Falador Farm",
+          "target": {
+            "kind": "region",
+            "name": "South Falador Farm"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "lumbridge:medium",
+          "source_token": "Three daily teleports to the cabbage patch of South Falador Farm"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Lumbridge_&_Draynor_Diary"
+    },
+    {
+      "region": "lumbridge",
+      "tier": "hard",
+      "regional_item": {
+        "name": "Explorer's ring 3",
+        "item_id": 13127,
+        "supersedes_item_id": 13126
+      },
+      "lamp": {
+        "amount": 15000,
+        "min_level": 50,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (hard)"
+      },
+      "effects": [
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "restore 50% of run energy four times a day",
+          "target": {
+            "kind": "skill",
+            "name": "Agility"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "lumbridge:hard",
+          "source_token": "Can restore 50% of run energy four times a day"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "unlimited teleports to the cabbage patch of South Falador Farm",
+          "target": {
+            "kind": "region",
+            "name": "South Falador Farm"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "lumbridge:hard",
+          "source_token": "Unlimited teleports to the cabbage patch of South Falador Farm"
+        },
+        {
+          "effect_kind": "stat_multiplier",
+          "magnitude": 0.1,
+          "target_facet": "experience from Tears of Guthix",
+          "target": {
+            "kind": "activity",
+            "name": "Tears of Guthix"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "lumbridge:hard",
+          "source_token": "10% increased experience from Tears of Guthix"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Lumbridge_&_Draynor_Diary"
+    },
+    {
+      "region": "lumbridge",
+      "tier": "elite",
+      "regional_item": {
+        "name": "Explorer's ring 4",
+        "item_id": 13128,
+        "supersedes_item_id": 13127
+      },
+      "lamp": {
+        "amount": 50000,
+        "min_level": 70,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (elite)"
+      },
+      "effects": [
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "restore full run energy three times a day",
+          "target": {
+            "kind": "skill",
+            "name": "Agility"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "lumbridge:elite",
+          "source_token": "Can restore full run energy three times a day"
+        },
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "30 casts of High Level Alchemy without runes each day",
+          "target": {
+            "kind": "skill",
+            "name": "Magic"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "lumbridge:elite",
+          "source_token": "Allows 30 casts of High Level Alchemy without runes each day"
+        },
+        {
+          "effect_kind": "fee_waiver",
+          "magnitude": 0.2,
+          "target_facet": "discount on items in the Culinaromancer's Chest",
+          "target": {
+            "kind": "region",
+            "name": "Culinaromancer's Chest"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "lumbridge:elite",
+          "source_token": "20% discount on items in the Culinaromancer's Chest"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 1.0,
+          "target_facet": "cave goblin wires stolen in Dorgesh-Kaan",
+          "target": {
+            "kind": "skill",
+            "name": "Thieving"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "lumbridge:elite",
+          "source_token": "Steal twice as many cave goblin wires in Dorgesh-Kaan"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "use fairy rings without a Dramen or Lunar staff",
+          "target": {
+            "kind": "activity",
+            "name": "Fairy rings"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "lumbridge:elite",
+          "source_token": "Ability to use fairy rings without the need of a Dramen or Lunar staff"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "seventh slot for blocking Slayer tasks",
+          "target": {
+            "kind": "skill",
+            "name": "Slayer"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "lumbridge:elite",
+          "source_token": "Unlocks the seventh slot for blocking Slayer tasks"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Lumbridge_&_Draynor_Diary"
+    },
+    {
+      "region": "morytania",
+      "tier": "easy",
+      "regional_item": {
+        "name": "Morytania legs 1",
+        "item_id": 13112,
+        "supersedes_item_id": null
+      },
+      "lamp": {
+        "amount": 2500,
+        "min_level": 30,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (easy)"
+      },
+      "effects": [
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "two daily teleports to the Pool of Slime beneath the Ectofuntus",
+          "target": {
+            "kind": "region",
+            "name": "Pool of Slime"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "morytania:easy",
+          "source_token": "Two daily teleports to the Pool of Slime beneath the Ectofuntus"
+        },
+        {
+          "effect_kind": "stat_multiplier",
+          "magnitude": 0.025,
+          "target_facet": "Slayer experience in the Slayer Tower while on a Slayer task",
+          "target": {
+            "kind": "skill",
+            "name": "Slayer"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "morytania:easy",
+          "source_token": "2.5% more Slayer experience in the Slayer Tower while on a Slayer task"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Morytania_Diary"
+    },
+    {
+      "region": "morytania",
+      "tier": "medium",
+      "regional_item": {
+        "name": "Morytania legs 2",
+        "item_id": 13113,
+        "supersedes_item_id": 13112
+      },
+      "lamp": {
+        "amount": 7500,
+        "min_level": 40,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (medium)"
+      },
+      "effects": [
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "five daily teleports to the Pool of Slime beneath the Ectofuntus",
+          "target": {
+            "kind": "region",
+            "name": "Pool of Slime"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "morytania:medium",
+          "source_token": "Five daily teleports to the Pool of Slime beneath the Ectofuntus"
+        },
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "Robin exchanges 13 bones of any kind daily for a bucket of slime and a pot of bonemeal each",
+          "target": {
+            "kind": "region",
+            "name": "Port Phasmatys"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "morytania:medium",
+          "source_token": "Robin exchanges 13 bones of any kind daily for a bucket of slime and a pot of bonemeal each"
+        },
+        {
+          "effect_kind": "stat_multiplier",
+          "magnitude": 0.05,
+          "target_facet": "Slayer experience in the Slayer Tower while on a Slayer task",
+          "target": {
+            "kind": "skill",
+            "name": "Slayer"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "morytania:medium",
+          "source_token": "5% more Slayer experience in the Slayer Tower while on a Slayer task"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Morytania_Diary"
     },
     {
       "region": "morytania",
@@ -61,22 +2449,76 @@
       },
       "effects": [
         {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "unlimited teleports to Burgh de Rott",
+          "target": {
+            "kind": "region",
+            "name": "Burgh de Rott"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "morytania:hard",
+          "source_token": "Unlimited teleports to Burgh de Rott"
+        },
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "Robin exchanges 26 bones of any kind daily for a bucket of slime and a pot of bonemeal each",
+          "target": {
+            "kind": "region",
+            "name": "Port Phasmatys"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "morytania:hard",
+          "source_token": "Robin exchanges 26 bones of any kind daily for a bucket of slime and a pot of bonemeal each"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 1.0,
+          "target_facet": "Mort myre fungi received when casting Bloom",
+          "target": {
+            "kind": "region",
+            "name": "Mort Myre Swamp"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "morytania:hard",
+          "source_token": "Double Mort myre fungi when casting Bloom"
+        },
+        {
+          "effect_kind": "stat_multiplier",
+          "magnitude": 0.5,
+          "target_facet": "Prayer experience from burning shade remains",
+          "target": {
+            "kind": "skill",
+            "name": "Prayer"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "morytania:hard",
+          "source_token": "50% more Prayer experience from burning shade remains"
+        },
+        {
           "effect_kind": "rate_multiplier",
           "magnitude": 0.5,
           "target_facet": "runes received from the Barrows chest",
-          "target": {"kind": "activity", "name": "Barrows"},
+          "target": {
+            "kind": "activity",
+            "name": "Barrows"
+          },
           "condition": "unconditional-once-earned",
           "tier_source": "morytania:hard",
           "source_token": "50% more runes from the Barrows chest"
         },
         {
-          "effect_kind": "access",
-          "magnitude": null,
-          "target_facet": "unlimited teleports to Burgh de Rott",
-          "target": {"kind": "region", "name": "Burgh de Rott"},
+          "effect_kind": "stat_multiplier",
+          "magnitude": 0.075,
+          "target_facet": "Slayer experience in the Slayer Tower while on a Slayer task",
+          "target": {
+            "kind": "skill",
+            "name": "Slayer"
+          },
           "condition": "unconditional-once-earned",
           "tier_source": "morytania:hard",
-          "source_token": "Unlimited teleports to Burgh de Rott"
+          "source_token": "7.5% more Slayer experience in the Slayer Tower while on a Slayer task"
         }
       ],
       "extra_unlocks": [
@@ -85,10 +2527,965 @@
           "name": "Bonecrusher",
           "item_id": null,
           "untracked": true,
-          "note": "Inventory item; not in items_equipment.json. Claimable from ghost disciple while wearing ghostspeak amulet or Morytania legs 3+."
+          "note": "Bonecrusher, claimable from a ghost disciple while wearing a ghostspeak amulet or Morytania legs 3+"
         }
       ],
       "source_url": "https://oldschool.runescape.wiki/w/Morytania_Diary"
+    },
+    {
+      "region": "morytania",
+      "tier": "elite",
+      "regional_item": {
+        "name": "Morytania legs 4",
+        "item_id": 13115,
+        "supersedes_item_id": 13114
+      },
+      "lamp": {
+        "amount": 50000,
+        "min_level": 70,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (elite)"
+      },
+      "effects": [
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "unlimited teleports to the Pool of Slime beneath the Ectofuntus",
+          "target": {
+            "kind": "region",
+            "name": "Pool of Slime"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "morytania:elite",
+          "source_token": "Unlimited teleports to the Pool of Slime beneath the Ectofuntus"
+        },
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "Robin exchanges 39 bones of any kind daily for a bucket of slime and a pot of bonemeal each",
+          "target": {
+            "kind": "region",
+            "name": "Port Phasmatys"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "morytania:elite",
+          "source_token": "Robin exchanges 39 bones of any kind daily for a bucket of slime and a pot of bonemeal each"
+        },
+        {
+          "effect_kind": "stat_multiplier",
+          "magnitude": 0.5,
+          "target_facet": "Firemaking experience when burning shade remains",
+          "target": {
+            "kind": "skill",
+            "name": "Firemaking"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "morytania:elite",
+          "source_token": "50% more Firemaking experience when burning shade remains"
+        },
+        {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "bones buried via the Bonecrusher now grant full Prayer experience",
+          "target": {
+            "kind": "skill",
+            "name": "Prayer"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "morytania:elite",
+          "source_token": "Bones buried via the Bonecrusher now grant full Prayer experience"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "access to the disease-free herb patch on Harmony Island",
+          "target": {
+            "kind": "region",
+            "name": "Harmony Island"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "morytania:elite",
+          "source_token": "Access to the disease-free herb patch on Harmony Island"
+        },
+        {
+          "effect_kind": "stat_multiplier",
+          "magnitude": 0.1,
+          "target_facet": "Slayer experience in the Slayer Tower while on a Slayer task",
+          "target": {
+            "kind": "skill",
+            "name": "Slayer"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "morytania:elite",
+          "source_token": "10% more Slayer experience in the Slayer Tower while on a Slayer task"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Morytania_Diary"
+    },
+    {
+      "region": "varrock",
+      "tier": "easy",
+      "regional_item": {
+        "name": "Varrock armour 1",
+        "item_id": 13104,
+        "supersedes_item_id": null
+      },
+      "lamp": {
+        "amount": 2500,
+        "min_level": 30,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (easy)"
+      },
+      "effects": [
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.1,
+          "target_facet": "chance of mining double clay, limestone, guardian fragments, tephra, and ores up to and including gold",
+          "target": {
+            "kind": "skill",
+            "name": "Mining"
+          },
+          "condition": "while-equipped",
+          "tier_source": "varrock:easy",
+          "source_token": "10% chance of mining double clay, limestone, guardian fragments, tephra, and ores up to and including gold"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.1,
+          "target_facet": "chance of smelting 2 bars at once, up to steel, at the Edgeville furnace",
+          "target": {
+            "kind": "skill",
+            "name": "Smithing"
+          },
+          "condition": "while-equipped",
+          "tier_source": "varrock:easy",
+          "source_token": "10% chance of smelting 2 bars at once, up to steel, when using the Edgeville furnace"
+        },
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "Zaff sells 15 noted battlestaves as a single stack every day for 105,000 coins",
+          "target": {
+            "kind": "region",
+            "name": "Varrock"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "varrock:easy",
+          "source_token": "Zaff will sell you 15 noted battlestaves as a single stack every day"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock_Diary"
+    },
+    {
+      "region": "varrock",
+      "tier": "medium",
+      "regional_item": {
+        "name": "Varrock armour 2",
+        "item_id": 13105,
+        "supersedes_item_id": 13104
+      },
+      "lamp": {
+        "amount": 7500,
+        "min_level": 40,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (medium)"
+      },
+      "effects": [
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.1,
+          "target_facet": "chance of mining double ores up to and including mithril, as well as various other minerals",
+          "target": {
+            "kind": "skill",
+            "name": "Mining"
+          },
+          "condition": "while-equipped",
+          "tier_source": "varrock:medium",
+          "source_token": "10% chance of mining double ores up to and including mithril"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.1,
+          "target_facet": "chance of smelting 2 bars at once, up to and including mithril, at the Edgeville furnace",
+          "target": {
+            "kind": "skill",
+            "name": "Smithing"
+          },
+          "condition": "while-equipped",
+          "tier_source": "varrock:medium",
+          "source_token": "10% chance of smelting 2 bars at once, up to and including mithril, when using the Edgeville furnace"
+        },
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "Zaff sells 30 noted battlestaves as a single stack every day for 210,000 coins",
+          "target": {
+            "kind": "region",
+            "name": "Varrock"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "varrock:medium",
+          "source_token": "Zaff will sell you 30 noted battlestaves as a single stack every day"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "toggle the destination of Varrock Teleport from Varrock Square to the Grand Exchange",
+          "target": {
+            "kind": "region",
+            "name": "Grand Exchange"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "varrock:medium",
+          "source_token": "toggle the destination of Varrock Teleport from Varrock Square to the Grand Exchange"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock_Diary"
+    },
+    {
+      "region": "varrock",
+      "tier": "hard",
+      "regional_item": {
+        "name": "Varrock armour 3",
+        "item_id": 13106,
+        "supersedes_item_id": 13105
+      },
+      "lamp": {
+        "amount": 15000,
+        "min_level": 50,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (hard)"
+      },
+      "effects": [
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "can be worn in place of a chef's hat to access the Cooks' Guild",
+          "target": {
+            "kind": "region",
+            "name": "Cooks' Guild"
+          },
+          "condition": "while-equipped",
+          "tier_source": "varrock:hard",
+          "source_token": "Can be worn in place of a chef's hat to access the Cooks' Guild"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.1,
+          "target_facet": "chance of mining double ores up to and including adamantite, as well as various other minerals",
+          "target": {
+            "kind": "skill",
+            "name": "Mining"
+          },
+          "condition": "while-equipped",
+          "tier_source": "varrock:hard",
+          "source_token": "10% chance of mining double ores up to and including adamantite"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.1,
+          "target_facet": "chance of smelting 2 bars at once, up to and including adamantite, at the Edgeville furnace",
+          "target": {
+            "kind": "skill",
+            "name": "Smithing"
+          },
+          "condition": "while-equipped",
+          "tier_source": "varrock:hard",
+          "source_token": "10% chance of smelting 2 bars at once, up to and including adamantite, when using the Edgeville furnace"
+        },
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "Zaff sells 60 noted battlestaves as a single stack every day for 420,000 coins",
+          "target": {
+            "kind": "region",
+            "name": "Varrock"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "varrock:hard",
+          "source_token": "Zaff will sell you 60 noted battlestaves as a single stack every day"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "access to the bank in the Cooks' Guild and a range only 2 tiles away from it",
+          "target": {
+            "kind": "region",
+            "name": "Cooks' Guild"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "varrock:hard",
+          "source_token": "Access to the bank in the Cooks' Guild and a range at only 2 tiles away from it"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock_Diary"
+    },
+    {
+      "region": "varrock",
+      "tier": "elite",
+      "regional_item": {
+        "name": "Varrock armour 4",
+        "item_id": 13107,
+        "supersedes_item_id": 13106
+      },
+      "lamp": {
+        "amount": 50000,
+        "min_level": 70,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (elite)"
+      },
+      "effects": [
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.1,
+          "target_facet": "chance of mining double of any ore, as well as various other minerals",
+          "target": {
+            "kind": "skill",
+            "name": "Mining"
+          },
+          "condition": "while-equipped",
+          "tier_source": "varrock:elite",
+          "source_token": "10% chance of mining double of any ore"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.1,
+          "target_facet": "chance of smelting 2 bars at once, of any kind, at the Edgeville furnace",
+          "target": {
+            "kind": "skill",
+            "name": "Smithing"
+          },
+          "condition": "while-equipped",
+          "tier_source": "varrock:elite",
+          "source_token": "10% chance of smelting 2 bars at once, of any kind, when using the Edgeville furnace"
+        },
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "Zaff sells 120 noted battlestaves as a single stack every day for 840,000 coins",
+          "target": {
+            "kind": "region",
+            "name": "Varrock"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "varrock:elite",
+          "source_token": "Zaff will sell you 120 noted battlestaves as a single stack every day"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock_Diary"
+    },
+    {
+      "region": "western",
+      "tier": "easy",
+      "regional_item": {
+        "name": "Western banner 1",
+        "item_id": 13141,
+        "supersedes_item_id": null
+      },
+      "lamp": {
+        "amount": 2500,
+        "min_level": 30,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (easy)"
+      },
+      "effects": [
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.25,
+          "target_facet": "chance of two chompy birds appearing at once when chompy bird hunting",
+          "target": {
+            "kind": "activity",
+            "name": "Chompy bird hunting"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "western:easy",
+          "source_token": "25% chance of two chompy birds appearing at once when chompy bird hunting"
+        },
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "Rantz offers 25 free ogre arrows every day",
+          "target": {
+            "kind": "activity",
+            "name": "Chompy bird hunting"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "western:easy",
+          "source_token": "Rantz offers you 25 ogre arrows for free every day"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Western_Provinces_Diary"
+    },
+    {
+      "region": "western",
+      "tier": "medium",
+      "regional_item": {
+        "name": "Western banner 2",
+        "item_id": 13142,
+        "supersedes_item_id": 13141
+      },
+      "lamp": {
+        "amount": 7500,
+        "min_level": 40,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (medium)"
+      },
+      "effects": [
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.5,
+          "target_facet": "chance of two chompy birds appearing at once when chompy bird hunting",
+          "target": {
+            "kind": "activity",
+            "name": "Chompy bird hunting"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "western:medium",
+          "source_token": "50% chance of two chompy birds appearing at once when chompy bird hunting"
+        },
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "Rantz offers 50 free ogre arrows every day",
+          "target": {
+            "kind": "activity",
+            "name": "Chompy bird hunting"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "western:medium",
+          "source_token": "Rantz offers you 50 ogre arrows for free every day"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Western_Provinces_Diary"
+    },
+    {
+      "region": "western",
+      "tier": "hard",
+      "regional_item": {
+        "name": "Western banner 3",
+        "item_id": 13143,
+        "supersedes_item_id": 13142
+      },
+      "lamp": {
+        "amount": 15000,
+        "min_level": 50,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (hard)"
+      },
+      "effects": [
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "one daily teleport to the Piscatoris Fishing Colony",
+          "target": {
+            "kind": "region",
+            "name": "Piscatoris Fishing Colony"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "western:hard",
+          "source_token": "One daily teleport to the Piscatoris Fishing Colony"
+        },
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "Rantz offers 100 free ogre arrows every day",
+          "target": {
+            "kind": "activity",
+            "name": "Chompy bird hunting"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "western:hard",
+          "source_token": "Rantz offers you 100 ogre arrows for free every day"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "access to the room with the monkey skull in the Temple of Marimbo Dungeon to make the ancient gorilla greegree",
+          "target": {
+            "kind": "region",
+            "name": "Temple of Marimbo Dungeon"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "western:hard",
+          "source_token": "Access to the room with the monkey skull in the Temple of Marimbo Dungeon"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "access to the Hunting expert's private Red chinchompa hunting ground",
+          "target": {
+            "kind": "region",
+            "name": "Red chinchompa hunting ground"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "western:hard",
+          "source_token": "Access to the Hunting expert's private Red chinchompa hunting ground"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Western_Provinces_Diary"
+    },
+    {
+      "region": "western",
+      "tier": "elite",
+      "regional_item": {
+        "name": "Western banner 4",
+        "item_id": 13144,
+        "supersedes_item_id": 13143
+      },
+      "lamp": {
+        "amount": 50000,
+        "min_level": 70,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (elite)"
+      },
+      "effects": [
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "unlimited teleports to the Piscatoris Fishing Colony",
+          "target": {
+            "kind": "region",
+            "name": "Piscatoris Fishing Colony"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "western:elite",
+          "source_token": "Unlimited teleports to the Piscatoris Fishing Colony"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 1.0,
+          "target_facet": "two chompy birds always appear at once when chompy bird hunting",
+          "target": {
+            "kind": "activity",
+            "name": "Chompy bird hunting"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "western:elite",
+          "source_token": "Two chompy birds will always appear at once when chompy bird hunting"
+        },
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "Rantz offers 150 free ogre arrows every day",
+          "target": {
+            "kind": "activity",
+            "name": "Chompy bird hunting"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "western:elite",
+          "source_token": "Rantz offers you 150 ogre arrows for free every day"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Western_Provinces_Diary"
+    },
+    {
+      "region": "wilderness",
+      "tier": "easy",
+      "regional_item": {
+        "name": "Wilderness sword 1",
+        "item_id": 13108,
+        "supersedes_item_id": null
+      },
+      "lamp": {
+        "amount": 2500,
+        "min_level": 30,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (easy)"
+      },
+      "effects": [
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "Wilderness lever teleport to Edgeville, as an alternative to East Ardougne",
+          "target": {
+            "kind": "region",
+            "name": "Edgeville"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "wilderness:easy",
+          "source_token": "use the Wilderness lever to teleport to Edgeville"
+        },
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "Lundail offers 40 random runes for free every day",
+          "target": {
+            "kind": "region",
+            "name": "Mage Arena"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "wilderness:easy",
+          "source_token": "Lundail offers you 40 random runes for free every day"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Wilderness_Diary"
+    },
+    {
+      "region": "wilderness",
+      "tier": "medium",
+      "regional_item": {
+        "name": "Wilderness sword 2",
+        "item_id": 13109,
+        "supersedes_item_id": 13108
+      },
+      "lamp": {
+        "amount": 7500,
+        "min_level": 40,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (medium)"
+      },
+      "effects": [
+        {
+          "effect_kind": "fee_waiver",
+          "magnitude": null,
+          "target_facet": "Resource Area entrance fee lowered to 6,000 coins, down from 7,500",
+          "target": {
+            "kind": "region",
+            "name": "Resource Area"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "wilderness:medium",
+          "source_token": "Entrance fee for the Resource Area lowered to 6,000 coins"
+        },
+        {
+          "effect_kind": "capacity_change",
+          "magnitude": null,
+          "target_facet": "possess up to 4 ecumenical keys at a time, up from 3",
+          "target": {
+            "kind": "activity",
+            "name": "God Wars Dungeon"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "wilderness:medium",
+          "source_token": "Possess up to 4 ecumenical keys at a time, up from 3"
+        },
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "Lundail offers 80 random runes for free every day",
+          "target": {
+            "kind": "region",
+            "name": "Mage Arena"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "wilderness:medium",
+          "source_token": "Lundail offers you 80 random runes for free every day"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "crevice shortcut in the Deep Wilderness Dungeon (with 46 Agility)",
+          "target": {
+            "kind": "region",
+            "name": "Deep Wilderness Dungeon"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "wilderness:medium",
+          "source_token": "Access to the crevice shortcut in the Deep Wilderness Dungeon"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "access to fight Callisto",
+          "target": {
+            "kind": "monster",
+            "name": "Callisto"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "wilderness:medium",
+          "source_token": "Access to Callisto, Venenatis, and Vet'ion"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "access to fight Venenatis",
+          "target": {
+            "kind": "monster",
+            "name": "Venenatis"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "wilderness:medium",
+          "source_token": "Access to Callisto, Venenatis, and Vet'ion"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "access to fight Vet'ion",
+          "target": {
+            "kind": "monster",
+            "name": "Vet'ion"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "wilderness:medium",
+          "source_token": "Access to Callisto, Venenatis, and Vet'ion"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.15,
+          "target_facet": "chance to receive drops from cutting fallen ents",
+          "target": {
+            "kind": "activity",
+            "name": "Fallen ents"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "wilderness:medium",
+          "source_token": "15% more chance to receive drops from cutting fallen ents"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "ability to obtain loot from chests in the Rogues' Castle",
+          "target": {
+            "kind": "region",
+            "name": "Rogues' Castle"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "wilderness:medium",
+          "source_token": "Ability to obtain loot from chests in the Rogues' Castle"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.5,
+          "target_facet": "chance of zombie pirates dropping something in addition to their bones, up from 15%",
+          "target": {
+            "kind": "monster",
+            "name": "Zombie pirate"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "wilderness:medium",
+          "source_token": "Zombie pirates you kill have a 50% chance of dropping something in addition to their bones"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Wilderness_Diary"
+    },
+    {
+      "region": "wilderness",
+      "tier": "hard",
+      "regional_item": {
+        "name": "Wilderness sword 3",
+        "item_id": 13110,
+        "supersedes_item_id": 13109
+      },
+      "lamp": {
+        "amount": 15000,
+        "min_level": 50,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (hard)"
+      },
+      "effects": [
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "one daily teleport to the Fountain of Rune",
+          "target": {
+            "kind": "region",
+            "name": "Fountain of Rune"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "wilderness:hard",
+          "source_token": "One daily teleport to the Fountain of Rune"
+        },
+        {
+          "effect_kind": "fee_waiver",
+          "magnitude": null,
+          "target_facet": "Resource Area entrance fee lowered to 3,750 coins, down from 6,000",
+          "target": {
+            "kind": "region",
+            "name": "Resource Area"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "wilderness:hard",
+          "source_token": "Entrance fee for the Resource Area lowered to 3,750 coins"
+        },
+        {
+          "effect_kind": "capacity_change",
+          "magnitude": null,
+          "target_facet": "possess up to 5 ecumenical keys at a time, up from 4",
+          "target": {
+            "kind": "activity",
+            "name": "God Wars Dungeon"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "wilderness:hard",
+          "source_token": "Possess up to 5 ecumenical keys at a time, up from 4"
+        },
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "Lundail offers 120 random runes for free every day",
+          "target": {
+            "kind": "region",
+            "name": "Mage Arena"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "wilderness:hard",
+          "source_token": "Lundail offers you 120 random runes for free every day"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.5,
+          "target_facet": "lava shards from grinding lava scales",
+          "target": {
+            "kind": "activity",
+            "name": "Grinding lava scales"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "wilderness:hard",
+          "source_token": "50% more lava shards from grinding lava scales"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.67,
+          "target_facet": "loot from chests in the Rogues' Castle, up from 33%",
+          "target": {
+            "kind": "region",
+            "name": "Rogues' Castle"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "wilderness:hard",
+          "source_token": "67% more loot from chests in the Rogues' Castle"
+        },
+        {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "wine of zamorak taken from the Chaos Temple (hut) and Deep Wilderness Dungeon will now be noted",
+          "target": {
+            "kind": "region",
+            "name": "Deep Wilderness Dungeon"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "wilderness:hard",
+          "source_token": "Wine of zamorak taken from the Chaos Temple (hut) and Deep Wilderness Dungeon will now be noted"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "access to fight Spindel",
+          "target": {
+            "kind": "monster",
+            "name": "Spindel"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "wilderness:hard",
+          "source_token": "Access to Spindel, Artio, and Calvar'ion"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "access to fight Artio",
+          "target": {
+            "kind": "monster",
+            "name": "Artio"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "wilderness:hard",
+          "source_token": "Access to Spindel, Artio, and Calvar'ion"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "access to fight Calvar'ion",
+          "target": {
+            "kind": "monster",
+            "name": "Calvar'ion"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "wilderness:hard",
+          "source_token": "Access to Spindel, Artio, and Calvar'ion"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Wilderness_Diary"
+    },
+    {
+      "region": "wilderness",
+      "tier": "elite",
+      "regional_item": {
+        "name": "Wilderness sword 4",
+        "item_id": 13111,
+        "supersedes_item_id": 13110
+      },
+      "lamp": {
+        "amount": 50000,
+        "min_level": 70,
+        "eligible_skills": "any",
+        "lamp_item": "Antique lamp (elite)"
+      },
+      "effects": [
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "unlimited teleports to the Fountain of Rune",
+          "target": {
+            "kind": "region",
+            "name": "Fountain of Rune"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "wilderness:elite",
+          "source_token": "Unlimited teleports to the Fountain of Rune"
+        },
+        {
+          "effect_kind": "fee_waiver",
+          "magnitude": null,
+          "target_facet": "free access to the Resource Area, down from a fee of 3,750 coins",
+          "target": {
+            "kind": "region",
+            "name": "Resource Area"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "wilderness:elite",
+          "source_token": "Free access to the Resource Area, down from a fee of 3,750 coins"
+        },
+        {
+          "effect_kind": "recurring_resource",
+          "magnitude": null,
+          "target_facet": "Lundail offers 200 random runes for free every day",
+          "target": {
+            "kind": "region",
+            "name": "Mage Arena"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "wilderness:elite",
+          "source_token": "Lundail offers you 200 random runes for free every day"
+        },
+        {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "dragon bones from dragons killed in the Wilderness are now noted (excludes King Black Dragon)",
+          "target": {
+            "kind": "region",
+            "name": "Wilderness"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "wilderness:elite",
+          "source_token": "Dragon bones from dragons killed in the Wilderness are now noted"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 1.125,
+          "target_facet": "catch rate of dark crabs increased by 112.5%",
+          "target": {
+            "kind": "skill",
+            "name": "Fishing"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "wilderness:elite",
+          "source_token": "Catch rate of dark crabs increased by 112.5%"
+        }
+      ],
+      "extra_unlocks": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Wilderness_Diary"
     }
   ]
 }

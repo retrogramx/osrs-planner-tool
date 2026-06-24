@@ -2,6 +2,42 @@
   {
     "cond_group": null,
     "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "restore 50% of run energy four times a day",
+      "tier_source": "lumbridge:hard"
+    },
+    "dst": "skill:agility",
+    "id": 6000868,
+    "src": "item:13127",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:13110",
+    "id": 6001077,
+    "src": "item:13111",
+    "type": "supersedes"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "fee_waiver",
+      "magnitude": null,
+      "target_facet": "free access to Crabclaw Isle, down from a fee of 5,000 coins",
+      "tier_source": "kourend:medium"
+    },
+    "dst": "region:crabclaw-isle",
+    "id": 6002377,
+    "src": "item:22943",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 1
     },
     "dst": "goal:quest-point-cape",
@@ -50,6 +86,22 @@
   {
     "cond_group": null,
     "data": {
+      "amount": 7500,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (medium)",
+      "min_level": 40,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 6016074,
+    "src": "diary:morytania:medium",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 1
     },
     "dst": "goal:achievement-diary-cape",
@@ -58,12 +110,112 @@
     "type": "progress_towards"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "capacity_change",
+      "magnitude": null,
+      "target_facet": "hold up to 56 coin pouches at a time, up from 28",
+      "tier_source": "ardougne:medium"
+    },
+    "dst": "skill:thieving",
+    "id": 6020720,
+    "src": "item:13122",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.05,
+      "target_facet": "marks of grace from the Seers' Village Rooftop Course",
+      "tier_source": "kandarin:easy"
+    },
+    "dst": "activity:seers-village-rooftop-course",
+    "id": 6022218,
+    "src": "item:13137",
+    "type": "effect"
+  },
+  {
     "cond_group": 5087226,
     "data": {},
     "dst": null,
     "id": 6033080,
     "src": "quest:perilous-moons",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "while-equipped",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.08,
+      "target_facet": "chance to catch two fish at once anywhere when equipped",
+      "tier_source": "kourend:elite"
+    },
+    "dst": "skill:fishing",
+    "id": 6034776,
+    "src": "item:22947",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13137",
+    "id": 6037612,
+    "src": "diary:kandarin:easy",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "stat_multiplier",
+      "magnitude": 0.5,
+      "target_facet": "Prayer experience from burning shade remains",
+      "tier_source": "morytania:hard"
+    },
+    "dst": "skill:prayer",
+    "id": 6041218,
+    "src": "item:13114",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 15000,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (hard)",
+      "min_level": 50,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 6042967,
+    "src": "diary:kandarin:hard",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 2500,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (easy)",
+      "min_level": 30,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 6043534,
+    "src": "diary:kandarin:easy",
+    "type": "grants"
   },
   {
     "cond_group": null,
@@ -116,12 +268,70 @@
   {
     "cond_group": null,
     "data": {
+      "condition": "while-equipped",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.1,
+      "target_facet": "chance of smelting 2 bars at once, up to and including adamantite, at the Edgeville furnace",
+      "tier_source": "varrock:hard"
+    },
+    "dst": "skill:smithing",
+    "id": 6063599,
+    "src": "item:13106",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 15000,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (hard)",
+      "min_level": 50,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 6064285,
+    "src": "diary:varrock:hard",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 1
     },
     "dst": "goal:achievement-diary-cape",
     "id": 6066224,
     "src": "diary:lumbridge:medium",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "while-equipped",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.04,
+      "target_facet": "chance to catch two fish at once anywhere when equipped",
+      "tier_source": "kourend:medium"
+    },
+    "dst": "skill:fishing",
+    "id": 6066292,
+    "src": "item:22943",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 1.0,
+      "target_facet": "Mort myre fungi received when casting Bloom",
+      "tier_source": "morytania:hard"
+    },
+    "dst": "region:mort-myre-swamp",
+    "id": 6066333,
+    "src": "item:13114",
+    "type": "effect"
   },
   {
     "cond_group": null,
@@ -147,6 +357,62 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "Rantz offers 150 free ogre arrows every day",
+      "tier_source": "western:elite"
+    },
+    "dst": "activity:chompy-bird-hunting",
+    "id": 6067787,
+    "src": "item:13144",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "unlimited teleports to the Kourend Woodland",
+      "tier_source": "kourend:hard"
+    },
+    "dst": "region:kourend-woodland",
+    "id": 6074573,
+    "src": "item:22945",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "unlimited teleports to the Rellekka marketplace",
+      "tier_source": "fremennik:elite"
+    },
+    "dst": "region:rellekka-marketplace",
+    "id": 6078668,
+    "src": "item:13132",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "while-equipped",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.1,
+      "target_facet": "chance of mining double of any ore, as well as various other minerals",
+      "tier_source": "varrock:elite"
+    },
+    "dst": "skill:mining",
+    "id": 6078934,
+    "src": "item:13107",
+    "type": "effect"
+  },
+  {
     "cond_group": 4596297,
     "data": {},
     "dst": null,
@@ -165,12 +431,40 @@
     "type": "progress_towards"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "Watchtower Teleport can be used to teleport to Yanille instead",
+      "tier_source": "ardougne:hard"
+    },
+    "dst": "region:yanille",
+    "id": 6088710,
+    "src": "item:13123",
+    "type": "effect"
+  },
+  {
     "cond_group": 4365065,
     "data": {},
     "dst": null,
     "id": 6094084,
     "src": "diary:wilderness:medium",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "toggle the destination of Varrock Teleport from Varrock Square to the Grand Exchange",
+      "tier_source": "varrock:medium"
+    },
+    "dst": "region:grand-exchange",
+    "id": 6094938,
+    "src": "item:13105",
+    "type": "effect"
   },
   {
     "cond_group": 4793239,
@@ -197,12 +491,70 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "Lundail offers 80 random runes for free every day",
+      "tier_source": "wilderness:medium"
+    },
+    "dst": "region:mage-arena",
+    "id": 6113308,
+    "src": "item:13109",
+    "type": "effect"
+  },
+  {
     "cond_group": 5040337,
     "data": {},
     "dst": null,
     "id": 6113686,
     "src": "quest:rag-and-bone-man-ii",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 15000,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (hard)",
+      "min_level": 50,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 6117014,
+    "src": "diary:ardougne:hard",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.11,
+      "target_facet": "more slayer reward points from Konar quo Maten's tasks, including milestone tasks",
+      "tier_source": "kourend:elite"
+    },
+    "dst": "skill:slayer",
+    "id": 6120995,
+    "src": "item:22947",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "stat_multiplier",
+      "magnitude": 0.18,
+      "target_facet": "experience from the Rellekka Rooftop Course",
+      "tier_source": "fremennik:hard"
+    },
+    "dst": "activity:rellekka-rooftop-course",
+    "id": 6122874,
+    "src": "item:13131",
+    "type": "effect"
   },
   {
     "cond_group": null,
@@ -215,6 +567,32 @@
     "id": 6132479,
     "src": "diary:ardougne:easy",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13122",
+    "id": 6135544,
+    "src": "diary:ardougne:medium",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.25,
+      "target_facet": "Marks of grace from the Pollnivneach Rooftop Course",
+      "tier_source": "desert:hard"
+    },
+    "dst": "activity:pollnivneach-rooftop-course",
+    "id": 6136269,
+    "src": "item:13135",
+    "type": "effect"
   },
   {
     "cond_group": 5954273,
@@ -247,6 +625,64 @@
   {
     "cond_group": null,
     "data": {
+      "amount": 50000,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (elite)",
+      "min_level": 70,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 6146354,
+    "src": "diary:kandarin:elite",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "access to fight Venenatis",
+      "tier_source": "wilderness:medium"
+    },
+    "dst": "monster:venenatis",
+    "id": 6147505,
+    "src": "item:13109",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "behavior_toggle",
+      "magnitude": null,
+      "target_facet": "wine of zamorak taken from the Chaos Temple (hut) and Deep Wilderness Dungeon will now be noted",
+      "tier_source": "wilderness:hard"
+    },
+    "dst": "region:deep-wilderness-dungeon",
+    "id": 6151159,
+    "src": "item:13110",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.1,
+      "target_facet": "10% chance of two Agility arena tickets and Brimhaven vouchers when tagging a ticket dispenser",
+      "tier_source": "karamja:elite"
+    },
+    "dst": "activity:brimhaven-agility-arena",
+    "id": 6153023,
+    "src": "item:13103",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "amount": 2500,
       "form": "fixed",
       "reward": "xp"
@@ -265,6 +701,20 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "access to the room with the monkey skull in the Temple of Marimbo Dungeon to make the ancient gorilla greegree",
+      "tier_source": "western:hard"
+    },
+    "dst": "region:temple-of-marimbo-dungeon",
+    "id": 6162530,
+    "src": "item:13143",
+    "type": "effect"
+  },
+  {
     "cond_group": 5424772,
     "data": {},
     "dst": null,
@@ -273,12 +723,40 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.15,
+      "target_facet": "marks of grace from the Seers' Village Rooftop Course",
+      "tier_source": "kandarin:hard"
+    },
+    "dst": "activity:seers-village-rooftop-course",
+    "id": 6163057,
+    "src": "item:13139",
+    "type": "effect"
+  },
+  {
     "cond_group": 4028620,
     "data": {},
     "dst": null,
     "id": 6164524,
     "src": "quest:the-dig-site",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "unlimited teleports to Duradel/Kuradal",
+      "tier_source": "karamja:elite"
+    },
+    "dst": "region:duradel-kuradal",
+    "id": 6165579,
+    "src": "item:13103",
+    "type": "effect"
   },
   {
     "cond_group": null,
@@ -343,6 +821,20 @@
   {
     "cond_group": null,
     "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "restore 25% of prayer points once a day",
+      "tier_source": "falador:easy"
+    },
+    "dst": "skill:prayer",
+    "id": 6179171,
+    "src": "item:13117",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "amount": 13750,
       "form": "fixed",
       "reward": "xp"
@@ -350,6 +842,36 @@
     "dst": "skill:strength",
     "id": 6184000,
     "src": "quest:waterfall-quest",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "Rantz offers 50 free ogre arrows every day",
+      "tier_source": "western:medium"
+    },
+    "dst": "activity:chompy-bird-hunting",
+    "id": 6191155,
+    "src": "item:13142",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 7500,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (medium)",
+      "min_level": 40,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 6205873,
+    "src": "diary:desert:medium",
     "type": "grants"
   },
   {
@@ -379,6 +901,72 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:13129",
+    "id": 6214440,
+    "src": "item:13130",
+    "type": "supersedes"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 2500,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (easy)",
+      "min_level": 30,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 6214562,
+    "src": "diary:morytania:easy",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "ability to obtain loot from chests in the Rogues' Castle",
+      "tier_source": "wilderness:medium"
+    },
+    "dst": "region:rogues-castle",
+    "id": 6216716,
+    "src": "item:13109",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "while-equipped",
+      "effect_kind": "behavior_toggle",
+      "magnitude": null,
+      "target_facet": "indicates the Giant Mole's location in the Mole Hole",
+      "tier_source": "falador:hard"
+    },
+    "dst": "monster:giant-mole",
+    "id": 6225594,
+    "src": "item:13119",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "Wilderness lever teleport to Edgeville, as an alternative to East Ardougne",
+      "tier_source": "wilderness:easy"
+    },
+    "dst": "region:edgeville",
+    "id": 6225849,
+    "src": "item:13108",
+    "type": "effect"
+  },
+  {
     "cond_group": 4624134,
     "data": {},
     "dst": null,
@@ -389,12 +977,54 @@
   {
     "cond_group": null,
     "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "bank chest and bank deposit box in the Crafting Guild",
+      "tier_source": "falador:hard"
+    },
+    "dst": "region:crafting-guild",
+    "id": 6232026,
+    "src": "item:13119",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "shortcut to the Fountain of Heroes in the Heroes' Guild basement (67 Agility)",
+      "tier_source": "falador:hard"
+    },
+    "dst": "region:heroes-guild",
+    "id": 6232186,
+    "src": "item:13119",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 1
     },
     "dst": "goal:achievement-diary-cape",
     "id": 6232698,
     "src": "diary:ardougne:easy",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 1.0,
+      "target_facet": "Xeric's talisman drop chance from lizardmen, lizardman brutes, and lizardman shamans (1/125, up from 1/250)",
+      "tier_source": "kourend:easy"
+    },
+    "dst": "monster:lizardman",
+    "id": 6237963,
+    "src": "item:22941",
+    "type": "effect"
   },
   {
     "cond_group": 5392461,
@@ -452,12 +1082,40 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.05,
+      "target_facet": "chance to mine two dense essence blocks at once",
+      "tier_source": "kourend:medium"
+    },
+    "dst": "skill:mining",
+    "id": 6252902,
+    "src": "item:22943",
+    "type": "effect"
+  },
+  {
     "cond_group": 5587041,
     "data": {},
     "dst": null,
     "id": 6252908,
     "src": "quest:clock-tower",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "stat_multiplier",
+      "magnitude": 0.1,
+      "target_facet": "experience from cutting maple trees in Seers' Village",
+      "tier_source": "kandarin:medium"
+    },
+    "dst": "skill:woodcutting",
+    "id": 6256927,
+    "src": "item:13138",
+    "type": "effect"
   },
   {
     "cond_group": 4657984,
@@ -470,12 +1128,66 @@
   {
     "cond_group": null,
     "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13139",
+    "id": 6259252,
+    "src": "diary:kandarin:hard",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 1
     },
     "dst": "goal:achievement-diary-cape",
     "id": 6259782,
     "src": "diary:morytania:hard",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "use fairy rings without a Dramen or Lunar staff",
+      "tier_source": "lumbridge:elite"
+    },
+    "dst": "activity:fairy-rings",
+    "id": 6259799,
+    "src": "item:13128",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.5,
+      "target_facet": "chance of two chompy birds appearing at once when chompy bird hunting",
+      "tier_source": "western:medium"
+    },
+    "dst": "activity:chompy-bird-hunting",
+    "id": 6260262,
+    "src": "item:13142",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.01,
+      "target_facet": "chance of receiving higher level ores when cleaning pay-dirt, about 1% per ore",
+      "tier_source": "falador:elite"
+    },
+    "dst": "activity:motherlode-mine",
+    "id": 6261611,
+    "src": "item:13120",
+    "type": "effect"
   },
   {
     "cond_group": 4087366,
@@ -508,6 +1220,46 @@
     "id": 6267338,
     "src": "quest:between-a-rock",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13127",
+    "id": 6270335,
+    "src": "diary:lumbridge:hard",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "stat_multiplier",
+      "magnitude": 0.05,
+      "target_facet": "Slayer experience in the Slayer Tower while on a Slayer task",
+      "tier_source": "morytania:medium"
+    },
+    "dst": "skill:slayer",
+    "id": 6271234,
+    "src": "item:13113",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "unlimited teleports to the Pool of Slime beneath the Ectofuntus",
+      "tier_source": "morytania:elite"
+    },
+    "dst": "region:pool-of-slime",
+    "id": 6273114,
+    "src": "item:13115",
+    "type": "effect"
   },
   {
     "cond_group": 4705790,
@@ -568,12 +1320,40 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 1.0,
+      "target_facet": "double Tokkul from the Fight Cave, the Inferno, and TzHaar-Ket-Rak's Challenges",
+      "tier_source": "karamja:elite"
+    },
+    "dst": "activity:fight-cave",
+    "id": 6312828,
+    "src": "item:13103",
+    "type": "effect"
+  },
+  {
     "cond_group": 4220496,
     "data": {},
     "dst": null,
     "id": 6317209,
     "src": "quest:song-of-the-elves",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "30 casts of High Level Alchemy without runes each day",
+      "tier_source": "lumbridge:elite"
+    },
+    "dst": "skill:magic",
+    "id": 6318938,
+    "src": "item:13128",
+    "type": "effect"
   },
   {
     "cond_group": 5467063,
@@ -586,12 +1366,54 @@
   {
     "cond_group": null,
     "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "one daily teleport to the Rellekka marketplace",
+      "tier_source": "fremennik:easy"
+    },
+    "dst": "region:rellekka-marketplace",
+    "id": 6322636,
+    "src": "item:13129",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "restore 50% of run energy three times a day",
+      "tier_source": "lumbridge:medium"
+    },
+    "dst": "skill:agility",
+    "id": 6334220,
+    "src": "item:13126",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 1
     },
     "dst": "goal:achievement-diary-cape",
     "id": 6334704,
     "src": "diary:falador:medium",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 1.0,
+      "target_facet": "cave goblin wires stolen in Dorgesh-Kaan",
+      "tier_source": "lumbridge:elite"
+    },
+    "dst": "skill:thieving",
+    "id": 6338549,
+    "src": "item:13128",
+    "type": "effect"
   },
   {
     "cond_group": 5063204,
@@ -602,12 +1424,78 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "amount": 50000,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (elite)",
+      "min_level": 70,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 6344122,
+    "src": "diary:wilderness:elite",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "while-equipped",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.1,
+      "target_facet": "chance of mining double ores up to and including adamantite, as well as various other minerals",
+      "tier_source": "varrock:hard"
+    },
+    "dst": "skill:mining",
+    "id": 6345863,
+    "src": "item:13106",
+    "type": "effect"
+  },
+  {
     "cond_group": 4382774,
     "data": {},
     "dst": null,
     "id": 6347012,
     "src": "quest:defender-of-varrock",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "three daily teleports to the Rellekka marketplace",
+      "tier_source": "fremennik:medium"
+    },
+    "dst": "region:rellekka-marketplace",
+    "id": 6352295,
+    "src": "item:13130",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:13106",
+    "id": 6352332,
+    "src": "item:13107",
+    "type": "supersedes"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "flax keeper offers 120 noted bow strings every day for 120 noted flax",
+      "tier_source": "kandarin:hard"
+    },
+    "dst": "skill:crafting",
+    "id": 6358788,
+    "src": "item:13139",
+    "type": "effect"
   },
   {
     "cond_group": 4424488,
@@ -628,6 +1516,20 @@
   {
     "cond_group": null,
     "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "Robin exchanges 39 bones of any kind daily for a bucket of slime and a pot of bonemeal each",
+      "tier_source": "morytania:elite"
+    },
+    "dst": "region:port-phasmatys",
+    "id": 6363101,
+    "src": "item:13115",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 1
     },
     "dst": "goal:achievement-diary-cape",
@@ -636,12 +1538,42 @@
     "type": "progress_towards"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "first 200 coal placed in the coal trucks every day automatically transported to your bank",
+      "tier_source": "kandarin:elite"
+    },
+    "dst": "skill:mining",
+    "id": 6365255,
+    "src": "item:13140",
+    "type": "effect"
+  },
+  {
     "cond_group": 5068236,
     "data": {},
     "dst": null,
     "id": 6365257,
     "src": "quest:a-souls-bane",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 10000,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (Karamja Diary)",
+      "min_level": 40,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 6365714,
+    "src": "diary:karamja:hard",
+    "type": "grants"
   },
   {
     "cond_group": 5656268,
@@ -662,6 +1594,20 @@
   {
     "cond_group": null,
     "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "capacity_change",
+      "magnitude": null,
+      "target_facet": "coal trucks can hold up to 280 coal, up from 140",
+      "tier_source": "kandarin:medium"
+    },
+    "dst": "skill:mining",
+    "id": 6373112,
+    "src": "item:13138",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "name": "Bonecrusher",
       "reward": "items",
       "untracked": true
@@ -672,6 +1618,48 @@
     "type": "grants"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.05,
+      "target_facet": "chance to save a \"harvest life\" at the herb patches in Hosidius and the Farming Guild",
+      "tier_source": "kourend:hard"
+    },
+    "dst": "skill:farming",
+    "id": 6378996,
+    "src": "item:22945",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.1,
+      "target_facet": "chance of successfully pickpocketing anywhere around Gielinor",
+      "tier_source": "ardougne:hard"
+    },
+    "dst": "skill:thieving",
+    "id": 6390841,
+    "src": "item:13123",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "behavior_toggle",
+      "magnitude": null,
+      "target_facet": "Zahur cleans grimy herbs in noted form and offers potion-making services",
+      "tier_source": "desert:hard"
+    },
+    "dst": "skill:herblore",
+    "id": 6391857,
+    "src": "item:13135",
+    "type": "effect"
+  },
+  {
     "cond_group": 4174021,
     "data": {},
     "dst": null,
@@ -680,12 +1668,56 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "unlimited teleports to the cabbage patch of South Falador Farm",
+      "tier_source": "lumbridge:hard"
+    },
+    "dst": "region:south-falador-farm",
+    "id": 6406597,
+    "src": "item:13127",
+    "type": "effect"
+  },
+  {
     "cond_group": 5976863,
     "data": {},
     "dst": null,
     "id": 6415719,
     "src": "quest:scorpion-catcher",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 50000,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (elite)",
+      "min_level": 70,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 6421765,
+    "src": "diary:ardougne:elite",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "Unlimited teleports to the entrance of the Kalphite Cave",
+      "tier_source": "desert:elite"
+    },
+    "dst": "region:kalphite-cave",
+    "id": 6426129,
+    "src": "item:13136",
+    "type": "effect"
   },
   {
     "cond_group": null,
@@ -700,6 +1732,20 @@
     "type": "grants"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "ability to change the ring of life teleport location to Ardougne",
+      "tier_source": "ardougne:medium"
+    },
+    "dst": "region:ardougne",
+    "id": 6429315,
+    "src": "item:13122",
+    "type": "effect"
+  },
+  {
     "cond_group": 4068015,
     "data": {},
     "dst": null,
@@ -708,12 +1754,48 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "enchanted lyre can be played to teleport to Waterbirth Island",
+      "tier_source": "fremennik:hard"
+    },
+    "dst": "region:waterbirth-island",
+    "id": 6435000,
+    "src": "item:13131",
+    "type": "effect"
+  },
+  {
     "cond_group": 4445405,
     "data": {},
     "dst": null,
     "id": 6437523,
     "src": "quest:swan-song",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "five daily teleports to the Rellekka marketplace",
+      "tier_source": "fremennik:hard"
+    },
+    "dst": "region:rellekka-marketplace",
+    "id": 6439883,
+    "src": "item:13131",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:13138",
+    "id": 6440536,
+    "src": "item:13139",
+    "type": "supersedes"
   },
   {
     "cond_group": null,
@@ -740,6 +1822,20 @@
   {
     "cond_group": null,
     "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "Lundail offers 40 random runes for free every day",
+      "tier_source": "wilderness:easy"
+    },
+    "dst": "region:mage-arena",
+    "id": 6447566,
+    "src": "item:13108",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 1
     },
     "dst": "goal:achievement-diary-cape",
@@ -756,12 +1852,36 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13105",
+    "id": 6462046,
+    "src": "diary:varrock:medium",
+    "type": "grants"
+  },
+  {
     "cond_group": 5574628,
     "data": {},
     "dst": null,
     "id": 6462474,
     "src": "quest:temple-of-the-eye",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13113",
+    "id": 6463260,
+    "src": "diary:morytania:medium",
+    "type": "grants"
   },
   {
     "cond_group": 4250719,
@@ -800,12 +1920,56 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "amount": 50000,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (Karamja Diary)",
+      "min_level": 70,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 6467495,
+    "src": "diary:karamja:elite",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.67,
+      "target_facet": "loot from chests in the Rogues' Castle, up from 33%",
+      "tier_source": "wilderness:hard"
+    },
+    "dst": "region:rogues-castle",
+    "id": 6467806,
+    "src": "item:13110",
+    "type": "effect"
+  },
+  {
     "cond_group": 5213487,
     "data": {},
     "dst": null,
     "id": 6469900,
     "src": "quest:at-first-light",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.25,
+      "target_facet": "chance of two chompy birds appearing at once when chompy bird hunting",
+      "tier_source": "western:easy"
+    },
+    "dst": "activity:chompy-bird-hunting",
+    "id": 6471394,
+    "src": "item:13141",
+    "type": "effect"
   },
   {
     "cond_group": 4378761,
@@ -816,6 +1980,34 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "while-equipped",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.1,
+      "target_facet": "chance of smelting 2 bars at once, up to and including mithril, at the Edgeville furnace",
+      "tier_source": "varrock:medium"
+    },
+    "dst": "skill:smithing",
+    "id": 6472822,
+    "src": "item:13105",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "stat_multiplier",
+      "magnitude": 0.14,
+      "target_facet": "Experience from the Pollnivneach Rooftop Course",
+      "tier_source": "desert:hard"
+    },
+    "dst": "skill:agility",
+    "id": 6472943,
+    "src": "item:13135",
+    "type": "effect"
+  },
+  {
     "cond_group": 5202336,
     "data": {},
     "dst": null,
@@ -824,12 +2016,68 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.05,
+      "target_facet": "chance to save a harvest life at the herb patch in Catherby",
+      "tier_source": "kandarin:medium"
+    },
+    "dst": "skill:farming",
+    "id": 6474382,
+    "src": "item:13138",
+    "type": "effect"
+  },
+  {
     "cond_group": 5720380,
     "data": {},
     "dst": null,
     "id": 6474453,
     "src": "quest:skippy-and-the-mogres",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "one daily teleport to Sherlock",
+      "tier_source": "kandarin:hard"
+    },
+    "dst": "region:sherlock",
+    "id": 6475473,
+    "src": "item:13139",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "Thirus offers you 20 dynamite for free every day",
+      "tier_source": "kourend:medium"
+    },
+    "dst": "activity:thirus-dynamite",
+    "id": 6476151,
+    "src": "item:22943",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "behavior_toggle",
+      "magnitude": null,
+      "target_facet": "the farming patches in Hosidius, south of the church, will never get diseased",
+      "tier_source": "kourend:easy"
+    },
+    "dst": "region:hosidius",
+    "id": 6476629,
+    "src": "item:22941",
+    "type": "effect"
   },
   {
     "cond_group": 4103909,
@@ -842,12 +2090,40 @@
   {
     "cond_group": null,
     "data": {
+      "amount": 50000,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (elite)",
+      "min_level": 70,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 6478682,
+    "src": "diary:varrock:elite",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 1
     },
     "dst": "goal:achievement-diary-cape",
     "id": 6479527,
     "src": "diary:falador:easy",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13134",
+    "id": 6480534,
+    "src": "diary:desert:medium",
+    "type": "grants"
   },
   {
     "cond_group": 5985948,
@@ -882,12 +2158,54 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "Lundail offers 200 random runes for free every day",
+      "tier_source": "wilderness:elite"
+    },
+    "dst": "region:mage-arena",
+    "id": 6492107,
+    "src": "item:13111",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "fee_waiver",
+      "magnitude": null,
+      "target_facet": "Resource Area entrance fee lowered to 6,000 coins, down from 7,500",
+      "tier_source": "wilderness:medium"
+    },
+    "dst": "region:resource-area",
+    "id": 6499027,
+    "src": "item:13109",
+    "type": "effect"
+  },
+  {
     "cond_group": 5310802,
     "data": {},
     "dst": null,
     "id": 6500933,
     "src": "quest:secrets-of-the-north",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "five daily teleports to the Kourend Woodland",
+      "tier_source": "kourend:medium"
+    },
+    "dst": "region:kourend-woodland",
+    "id": 6502315,
+    "src": "item:22943",
+    "type": "effect"
   },
   {
     "cond_group": 5330998,
@@ -906,12 +2224,52 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:22943",
+    "id": 6506368,
+    "src": "diary:kourend:medium",
+    "type": "grants"
+  },
+  {
     "cond_group": 4280009,
     "data": {},
     "dst": null,
     "id": 6507542,
     "src": "quest:elemental-workshop-ii",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "while-equipped",
+      "effect_kind": "fee_waiver",
+      "magnitude": null,
+      "target_facet": "Brimhaven-Ardougne and Musa Point-Port Sarim boat trips cost 15 coins instead of 30",
+      "tier_source": "karamja:easy"
+    },
+    "dst": "region:brimhaven",
+    "id": 6508311,
+    "src": "item:11136",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "one daily teleport to the Fountain of Rune",
+      "tier_source": "wilderness:hard"
+    },
+    "dst": "region:fountain-of-rune",
+    "id": 6509091,
+    "src": "item:13110",
+    "type": "effect"
   },
   {
     "cond_group": null,
@@ -926,6 +2284,36 @@
   {
     "cond_group": null,
     "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "fee_waiver",
+      "magnitude": null,
+      "target_facet": "Jiminua's Jungle Store and Karamja General Store also affected by the gloves' discounted store prices",
+      "tier_source": "karamja:hard"
+    },
+    "dst": "region:karamja",
+    "id": 6523565,
+    "src": "item:11140",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 7500,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (medium)",
+      "min_level": 40,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 6523619,
+    "src": "diary:kourend:medium",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 1
     },
     "dst": "goal:achievement-diary-cape",
@@ -934,12 +2322,32 @@
     "type": "progress_towards"
   },
   {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:13127",
+    "id": 6531820,
+    "src": "item:13128",
+    "type": "supersedes"
+  },
+  {
     "cond_group": 4789360,
     "data": {},
     "dst": null,
     "id": 6535399,
     "src": "quest:tree-gnome-village",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13140",
+    "id": 6538585,
+    "src": "diary:kandarin:elite",
+    "type": "grants"
   },
   {
     "cond_group": 5459373,
@@ -974,6 +2382,56 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.15,
+      "target_facet": "chance of gaining approval in Managing Miscellania when fishing or woodcutting",
+      "tier_source": "fremennik:elite"
+    },
+    "dst": "activity:managing-miscellania",
+    "id": 6551063,
+    "src": "item:13132",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:13118",
+    "id": 6556239,
+    "src": "item:13119",
+    "type": "supersedes"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "unlimited teleports to Sherlock",
+      "tier_source": "kandarin:elite"
+    },
+    "dst": "region:sherlock",
+    "id": 6558687,
+    "src": "item:13140",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "Thirus offers you 80 dynamite for free every day",
+      "tier_source": "kourend:elite"
+    },
+    "dst": "activity:thirus-dynamite",
+    "id": 6563538,
+    "src": "item:22947",
+    "type": "effect"
+  },
+  {
     "cond_group": 5940504,
     "data": {},
     "dst": null,
@@ -991,11 +2449,85 @@
   },
   {
     "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "fee_waiver",
+      "magnitude": 0.4,
+      "target_facet": "discount on Eodan's tanning services, up from 20%",
+      "tier_source": "kourend:medium"
+    },
+    "dst": "activity:eodans-tanning-services",
+    "id": 6577701,
+    "src": "item:22943",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 2500,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (easy)",
+      "min_level": 30,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 6581647,
+    "src": "diary:kourend:easy",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 7500,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (medium)",
+      "min_level": 40,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 6582870,
+    "src": "diary:ardougne:medium",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
     "data": {},
     "dst": "item:13113",
     "id": 6583520,
     "src": "item:13114",
     "type": "supersedes"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "unlimited teleports to the underground portion of the Shilo Village mine",
+      "tier_source": "karamja:hard"
+    },
+    "dst": "region:shilo-village-mine",
+    "id": 6590632,
+    "src": "item:11140",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "behavior_toggle",
+      "magnitude": null,
+      "target_facet": "Dagannoth bones from the Dagannoth Kings are now noted",
+      "tier_source": "fremennik:elite"
+    },
+    "dst": "monster:dagannoth-kings",
+    "id": 6591975,
+    "src": "item:13132",
+    "type": "effect"
   },
   {
     "cond_group": 4001576,
@@ -1006,6 +2538,20 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "Unlimited teleports to Nardah, closer to the Elidinis Statuette",
+      "tier_source": "desert:elite"
+    },
+    "dst": "region:nardah",
+    "id": 6595633,
+    "src": "item:13136",
+    "type": "effect"
+  },
+  {
     "cond_group": 4141945,
     "data": {},
     "dst": null,
@@ -1014,12 +2560,102 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13144",
+    "id": 6600987,
+    "src": "diary:western:elite",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "fee_waiver",
+      "magnitude": null,
+      "target_facet": "free access to the Resource Area, down from a fee of 3,750 coins",
+      "tier_source": "wilderness:elite"
+    },
+    "dst": "region:resource-area",
+    "id": 6602529,
+    "src": "item:13111",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 2500,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (easy)",
+      "min_level": 30,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 6603158,
+    "src": "diary:fremennik:easy",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 2500,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (easy)",
+      "min_level": 30,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 6604614,
+    "src": "diary:western:easy",
+    "type": "grants"
+  },
+  {
     "cond_group": 4159374,
     "data": {},
     "dst": null,
     "id": 6604830,
     "src": "quest:druidic-ritual",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 7500,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (medium)",
+      "min_level": 40,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 6610123,
+    "src": "diary:western:medium",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 15000,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (hard)",
+      "min_level": 50,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 6613221,
+    "src": "diary:falador:hard",
+    "type": "grants"
   },
   {
     "cond_group": 4615548,
@@ -1032,6 +2668,20 @@
   {
     "cond_group": null,
     "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "behavior_toggle",
+      "magnitude": null,
+      "target_facet": "Desert goat horns dropped by goats become noted",
+      "tier_source": "desert:easy"
+    },
+    "dst": "monster:goat",
+    "id": 6615215,
+    "src": "item:13133",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 2
     },
     "dst": "goal:quest-point-cape",
@@ -1040,12 +2690,54 @@
     "type": "progress_towards"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "behavior_toggle",
+      "magnitude": null,
+      "target_facet": "ashes scattered via the Ash sanctifier now grant full Prayer experience",
+      "tier_source": "kourend:elite"
+    },
+    "dst": "skill:prayer",
+    "id": 6621812,
+    "src": "item:22947",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "capacity_change",
+      "magnitude": null,
+      "target_facet": "hold up to 84 coin pouches at a time, up from 56",
+      "tier_source": "ardougne:hard"
+    },
+    "dst": "skill:thieving",
+    "id": 6623475,
+    "src": "item:13123",
+    "type": "effect"
+  },
+  {
     "cond_group": 4473576,
     "data": {},
     "dst": null,
     "id": 6628640,
     "src": "diary:fremennik:easy",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "One daily teleport to Nardah",
+      "tier_source": "desert:medium"
+    },
+    "dst": "region:nardah",
+    "id": 6632219,
+    "src": "item:13134",
+    "type": "effect"
   },
   {
     "cond_group": 5908675,
@@ -1076,6 +2768,20 @@
     "type": "progress_towards"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "five daily teleports to the Pool of Slime beneath the Ectofuntus",
+      "tier_source": "morytania:medium"
+    },
+    "dst": "region:pool-of-slime",
+    "id": 6643885,
+    "src": "item:13113",
+    "type": "effect"
+  },
+  {
     "cond_group": 4801253,
     "data": {},
     "dst": null,
@@ -1098,6 +2804,28 @@
     "id": 6651867,
     "src": "quest:the-enchanted-key",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.1,
+      "target_facet": "chance of obtaining higher-tier ores in the Blast mine",
+      "tier_source": "kourend:elite"
+    },
+    "dst": "activity:blast-mine",
+    "id": 6665428,
+    "src": "item:22947",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:13142",
+    "id": 6674789,
+    "src": "item:13143",
+    "type": "supersedes"
   },
   {
     "cond_group": 4922582,
@@ -1154,6 +2882,28 @@
   {
     "cond_group": null,
     "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "enchanted lyre can be played to teleport to Waterbirth Island, Jatizso, and Neitiznot",
+      "tier_source": "fremennik:elite"
+    },
+    "dst": "region:waterbirth-island",
+    "id": 6686978,
+    "src": "item:13132",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:13137",
+    "id": 6687062,
+    "src": "item:13138",
+    "type": "supersedes"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "amount": 4650,
       "count": 2,
       "eligible_skills": [
@@ -1195,15 +2945,71 @@
   {
     "cond_group": null,
     "data": {
+      "amount": 50000,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (elite)",
+      "min_level": 70,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 6701316,
+    "src": "diary:kourend:elite",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "condition": "unconditional-once-earned",
-      "effect_kind": "rate_multiplier",
-      "magnitude": 1.0,
-      "target_facet": "death runes received from trading cats to civilians",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "unlimited teleports to the Ardougne Monastery",
       "tier_source": "ardougne:easy"
     },
-    "dst": "activity:west-ardougne-cat-trade",
+    "dst": "region:ardougne-monastery",
     "id": 6701442,
     "src": "item:13121",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13108",
+    "id": 6702205,
+    "src": "diary:wilderness:easy",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "unlimited teleports to the Fountain of Rune",
+      "tier_source": "wilderness:elite"
+    },
+    "dst": "region:fountain-of-rune",
+    "id": 6703518,
+    "src": "item:13111",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "unlimited teleports to the top of Mount Karuulm",
+      "tier_source": "kourend:elite"
+    },
+    "dst": "region:mount-karuulm",
+    "id": 6705490,
+    "src": "item:22947",
     "type": "effect"
   },
   {
@@ -1219,6 +3025,20 @@
     "id": 6707885,
     "src": "quest:animal-magnetism",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": null,
+      "target_facet": "additional runes at the Ourania Altar (chance varies per rune)",
+      "tier_source": "ardougne:medium"
+    },
+    "dst": "activity:ourania-altar",
+    "id": 6718373,
+    "src": "item:13122",
+    "type": "effect"
   },
   {
     "cond_group": 4780525,
@@ -1238,17 +3058,65 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "item:13105",
+    "id": 6722849,
+    "src": "item:13106",
+    "type": "supersedes"
+  },
+  {
+    "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "access",
       "magnitude": null,
-      "target_facet": "unlimited teleports to Burgh de Rott",
+      "target_facet": "access to the disease-free herb patch on Harmony Island",
+      "tier_source": "morytania:elite"
+    },
+    "dst": "region:harmony-island",
+    "id": 6724303,
+    "src": "item:13115",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "Robin exchanges 26 bones of any kind daily for a bucket of slime and a pot of bonemeal each",
       "tier_source": "morytania:hard"
     },
-    "dst": "region:burgh-de-rott",
+    "dst": "region:port-phasmatys",
     "id": 6725395,
     "src": "item:13114",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 1.125,
+      "target_facet": "catch rate of dark crabs increased by 112.5%",
+      "tier_source": "wilderness:elite"
+    },
+    "dst": "skill:fishing",
+    "id": 6727809,
+    "src": "item:13111",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13110",
+    "id": 6728695,
+    "src": "diary:wilderness:hard",
+    "type": "grants"
   },
   {
     "cond_group": 5504143,
@@ -1257,6 +3125,20 @@
     "id": 6734517,
     "src": "quest:the-tourist-trap",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "while-equipped",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.1,
+      "target_facet": "chance of mining double clay, limestone, guardian fragments, tephra, and ores up to and including gold",
+      "tier_source": "varrock:easy"
+    },
+    "dst": "skill:mining",
+    "id": 6738265,
+    "src": "item:13104",
+    "type": "effect"
   },
   {
     "cond_group": 5098610,
@@ -1291,6 +3173,50 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "restore full prayer points twice a day",
+      "tier_source": "falador:elite"
+    },
+    "dst": "skill:prayer",
+    "id": 6750749,
+    "src": "item:13120",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:13135",
+    "id": 6753874,
+    "src": "item:13136",
+    "type": "supersedes"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "behavior_toggle",
+      "magnitude": null,
+      "target_facet": "Simon Templeton buys artefacts in noted form",
+      "tier_source": "desert:easy"
+    },
+    "dst": "activity:artefact-selling-to-simon-templeton",
+    "id": 6767700,
+    "src": "item:13133",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:13122",
+    "id": 6771044,
+    "src": "item:13123",
+    "type": "supersedes"
+  },
+  {
     "cond_group": 4306721,
     "data": {},
     "dst": null,
@@ -1307,6 +3233,34 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "Zaff sells 60 noted battlestaves as a single stack every day for 420,000 coins",
+      "tier_source": "varrock:hard"
+    },
+    "dst": "region:varrock",
+    "id": 6773551,
+    "src": "item:13106",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "two daily teleports to the Pool of Slime beneath the Ectofuntus",
+      "tier_source": "morytania:easy"
+    },
+    "dst": "region:pool-of-slime",
+    "id": 6776021,
+    "src": "item:13112",
+    "type": "effect"
+  },
+  {
     "cond_group": 4881865,
     "data": {},
     "dst": null,
@@ -1315,12 +3269,40 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.15,
+      "target_facet": "chance to receive drops from cutting fallen ents",
+      "tier_source": "wilderness:medium"
+    },
+    "dst": "activity:fallen-ents",
+    "id": 6777814,
+    "src": "item:13109",
+    "type": "effect"
+  },
+  {
     "cond_group": 5175922,
     "data": {},
     "dst": null,
     "id": 6787247,
     "src": "quest:sacred-bone-burner-restoration",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.25,
+      "target_facet": "marks of grace from the Rellekka Rooftop Course",
+      "tier_source": "fremennik:hard"
+    },
+    "dst": "activity:rellekka-rooftop-course",
+    "id": 6789455,
+    "src": "item:13131",
+    "type": "effect"
   },
   {
     "cond_group": 4084667,
@@ -1348,6 +3330,20 @@
   {
     "cond_group": null,
     "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "Camulet can be rubbed to teleport to the entrance of Enakhra's Temple",
+      "tier_source": "desert:hard"
+    },
+    "dst": "region:enakhras-temple",
+    "id": 6797159,
+    "src": "item:13135",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 1
     },
     "dst": "goal:achievement-diary-cape",
@@ -1364,12 +3360,54 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:13130",
+    "id": 6809770,
+    "src": "item:13131",
+    "type": "supersedes"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "fee_waiver",
+      "magnitude": null,
+      "target_facet": "Free carpet rides throughout the Kharidian Desert (down from a fee of 75-200 coins per ride)",
+      "tier_source": "desert:hard"
+    },
+    "dst": "region:kharidian-desert",
+    "id": 6811099,
+    "src": "item:13135",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:13114",
+    "id": 6816281,
+    "src": "item:13115",
+    "type": "supersedes"
+  },
+  {
     "cond_group": 4628684,
     "data": {},
     "dst": null,
     "id": 6816483,
     "src": "diary:lumbridge:medium",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:11138",
+    "id": 6817664,
+    "src": "diary:karamja:medium",
+    "type": "grants"
   },
   {
     "cond_group": null,
@@ -1398,6 +3436,78 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "amount": 1000,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (Karamja Diary)",
+      "min_level": null,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 6824107,
+    "src": "diary:karamja:easy",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 7500,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (medium)",
+      "min_level": 40,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 6829733,
+    "src": "diary:varrock:medium",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "capacity_change",
+      "magnitude": null,
+      "target_facet": "coal trucks can hold up to 140 coal, up from 120",
+      "tier_source": "kandarin:easy"
+    },
+    "dst": "skill:mining",
+    "id": 6831467,
+    "src": "item:13137",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "stony basalt teleports you on top of the Troll Stronghold, past the rocky shortcut (requires 73 Agility)",
+      "tier_source": "fremennik:hard"
+    },
+    "dst": "region:troll-stronghold",
+    "id": 6831561,
+    "src": "item:13131",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13123",
+    "id": 6833031,
+    "src": "diary:ardougne:hard",
+    "type": "grants"
+  },
+  {
     "cond_group": 4213977,
     "data": {},
     "dst": null,
@@ -1414,12 +3524,100 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.5,
+      "target_facet": "chance of zombie pirates dropping something in addition to their bones, up from 15%",
+      "tier_source": "wilderness:medium"
+    },
+    "dst": "monster:zombie-pirate",
+    "id": 6844098,
+    "src": "item:13109",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:22945",
+    "id": 6845747,
+    "src": "item:22947",
+    "type": "supersedes"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13136",
+    "id": 6847136,
+    "src": "diary:desert:elite",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13115",
+    "id": 6851403,
+    "src": "diary:morytania:elite",
+    "type": "grants"
+  },
+  {
     "cond_group": 5478130,
     "data": {},
     "dst": null,
     "id": 6852151,
     "src": "quest:nature-spirit",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 1.0,
+      "target_facet": "two chompy birds always appear at once when chompy bird hunting",
+      "tier_source": "western:elite"
+    },
+    "dst": "activity:chompy-bird-hunting",
+    "id": 6854026,
+    "src": "item:13144",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.25,
+      "target_facet": "more marks of grace from the Ardougne Rooftop Course",
+      "tier_source": "ardougne:elite"
+    },
+    "dst": "activity:ardougne-rooftop-course",
+    "id": 6854400,
+    "src": "item:13124",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "fee_waiver",
+      "magnitude": null,
+      "target_facet": "entrance fee for Crabclaw Isle lowered to 5,000 coins, down from 10,000 coins",
+      "tier_source": "kourend:easy"
+    },
+    "dst": "region:crabclaw-isle",
+    "id": 6860823,
+    "src": "item:22941",
+    "type": "effect"
   },
   {
     "cond_group": 5035358,
@@ -1478,12 +3676,46 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.1,
+      "target_facet": "additional blood runes from the false blood altar",
+      "tier_source": "kourend:elite"
+    },
+    "dst": "activity:false-blood-altar",
+    "id": 6884682,
+    "src": "item:22947",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:11140",
+    "id": 6887669,
+    "src": "item:13103",
+    "type": "supersedes"
+  },
+  {
     "cond_group": 4448501,
     "data": {},
     "dst": null,
     "id": 6888294,
     "src": "quest:witchs-house",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13124",
+    "id": 6888371,
+    "src": "diary:ardougne:elite",
+    "type": "grants"
   },
   {
     "cond_group": 5106526,
@@ -1560,6 +3792,46 @@
   {
     "cond_group": null,
     "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "fee_waiver",
+      "magnitude": 0.2,
+      "target_facet": "discount on items in the Culinaromancer's Chest",
+      "tier_source": "lumbridge:elite"
+    },
+    "dst": "region:culinaromancers-chest",
+    "id": 6921575,
+    "src": "item:13128",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:22941",
+    "id": 6928025,
+    "src": "diary:kourend:easy",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "access to the bank in the Cooks' Guild and a range only 2 tiles away from it",
+      "tier_source": "varrock:hard"
+    },
+    "dst": "region:cooks-guild",
+    "id": 6928516,
+    "src": "item:13106",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 1
     },
     "dst": "goal:achievement-diary-cape",
@@ -1576,12 +3848,50 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13120",
+    "id": 6937944,
+    "src": "diary:falador:elite",
+    "type": "grants"
+  },
+  {
     "cond_group": 4732737,
     "data": {},
     "dst": null,
     "id": 6942340,
     "src": "quest:mountain-daughter",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13142",
+    "id": 6944143,
+    "src": "diary:western:medium",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "three daily teleports to the farming patch at the Ardougne farm",
+      "tier_source": "ardougne:medium"
+    },
+    "dst": "region:ardougne-farm",
+    "id": 6954923,
+    "src": "item:13122",
+    "type": "effect"
   },
   {
     "cond_group": 4457247,
@@ -1624,12 +3934,68 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "three daily teleports to the Kourend Woodland",
+      "tier_source": "kourend:easy"
+    },
+    "dst": "region:kourend-woodland",
+    "id": 6984476,
+    "src": "item:22941",
+    "type": "effect"
+  },
+  {
     "cond_group": 5446890,
     "data": {},
     "dst": null,
     "id": 6986081,
     "src": "quest:the-hand-in-the-sand",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 7500,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (medium)",
+      "min_level": 40,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 6989850,
+    "src": "diary:fremennik:medium",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "three daily teleports to the top of Mount Karuulm",
+      "tier_source": "kourend:hard"
+    },
+    "dst": "region:mount-karuulm",
+    "id": 6994347,
+    "src": "item:22945",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13118",
+    "id": 6998088,
+    "src": "diary:falador:medium",
+    "type": "grants"
   },
   {
     "cond_group": 4817490,
@@ -1640,12 +4006,48 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "behavior_toggle",
+      "magnitude": null,
+      "target_facet": "bars from metal dragons in the Brimhaven Dungeon are now noted",
+      "tier_source": "karamja:elite"
+    },
+    "dst": "region:brimhaven-dungeon",
+    "id": 7004355,
+    "src": "item:13103",
+    "type": "effect"
+  },
+  {
     "cond_group": 4033871,
     "data": {},
     "dst": null,
     "id": 7006197,
     "src": "quest:shades-of-mortton",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "access to fight Callisto",
+      "tier_source": "wilderness:medium"
+    },
+    "dst": "monster:callisto",
+    "id": 7014745,
+    "src": "item:13109",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:22941",
+    "id": 7016081,
+    "src": "item:22943",
+    "type": "supersedes"
   },
   {
     "cond_group": 4850184,
@@ -1702,6 +4104,20 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "behavior_toggle",
+      "magnitude": null,
+      "target_facet": "drops from Unicows, Newtroosts, and Spidines noted in the Creature Creation activity",
+      "tier_source": "ardougne:medium"
+    },
+    "dst": "activity:creature-creation",
+    "id": 7031090,
+    "src": "item:13122",
+    "type": "effect"
+  },
+  {
     "cond_group": 4513166,
     "data": {
       "note": "Awarded instead of Ava's attractor when Ranged level is 50 or higher",
@@ -1756,12 +4172,38 @@
     "type": "progress_towards"
   },
   {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13112",
+    "id": 7054074,
+    "src": "diary:morytania:easy",
+    "type": "grants"
+  },
+  {
     "cond_group": 4635195,
     "data": {},
     "dst": null,
     "id": 7057578,
     "src": "goal:achievement-diary-cape",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "the seal of passage is no longer needed to interact with anyone on Lunar Isle",
+      "tier_source": "fremennik:elite"
+    },
+    "dst": "region:lunar-isle",
+    "id": 7059527,
+    "src": "item:13132",
+    "type": "effect"
   },
   {
     "cond_group": null,
@@ -1789,12 +4231,40 @@
     "type": "progress_towards"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "restore full run energy three times a day",
+      "tier_source": "lumbridge:elite"
+    },
+    "dst": "skill:agility",
+    "id": 7063559,
+    "src": "item:13128",
+    "type": "effect"
+  },
+  {
     "cond_group": 4323563,
     "data": {},
     "dst": null,
     "id": 7066072,
     "src": "diary:fremennik:medium",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "stat_multiplier",
+      "magnitude": 0.1,
+      "target_facet": "Slayer experience in the Slayer Tower while on a Slayer task",
+      "tier_source": "morytania:elite"
+    },
+    "dst": "skill:slayer",
+    "id": 7067583,
+    "src": "item:13115",
+    "type": "effect"
   },
   {
     "cond_group": 4500601,
@@ -1815,6 +4285,28 @@
   {
     "cond_group": null,
     "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "fee_waiver",
+      "magnitude": 0.25,
+      "target_facet": "discount on Thormacs' enchanting services",
+      "tier_source": "kandarin:hard"
+    },
+    "dst": "activity:thormacs-enchanting-services",
+    "id": 7081008,
+    "src": "item:13139",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:13139",
+    "id": 7083109,
+    "src": "item:13140",
+    "type": "supersedes"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "note": "Awarded when Ranged level is below 50 at quest completion",
       "qty": 1,
       "reward": "items",
@@ -1824,6 +4316,46 @@
     "id": 7089013,
     "src": "quest:animal-magnetism",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "while-equipped",
+      "effect_kind": "fee_waiver",
+      "magnitude": null,
+      "target_facet": "items in various shops around Karamja sold at a discount and bought for more",
+      "tier_source": "karamja:easy"
+    },
+    "dst": "region:karamja",
+    "id": 7089883,
+    "src": "item:11136",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13132",
+    "id": 7090247,
+    "src": "diary:fremennik:elite",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.15,
+      "target_facet": "chance to save a harvest life at the herb patch in Catherby",
+      "tier_source": "kandarin:elite"
+    },
+    "dst": "skill:farming",
+    "id": 7090527,
+    "src": "item:13140",
+    "type": "effect"
   },
   {
     "cond_group": 5171862,
@@ -1842,12 +4374,80 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13126",
+    "id": 7092836,
+    "src": "diary:lumbridge:medium",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "Crevice shortcut in the Kalphite Lair (requires 86 Agility)",
+      "tier_source": "desert:elite"
+    },
+    "dst": "region:kalphite-lair",
+    "id": 7094847,
+    "src": "item:13136",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "stat_multiplier",
+      "magnitude": 0.1,
+      "target_facet": "experience from Tears of Guthix",
+      "tier_source": "lumbridge:hard"
+    },
+    "dst": "activity:tears-of-guthix",
+    "id": 7095330,
+    "src": "item:13127",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "100 noted pure essence for free every day from Wizard Cromperty",
+      "tier_source": "ardougne:medium"
+    },
+    "dst": "region:ardougne",
+    "id": 7095633,
+    "src": "item:13122",
+    "type": "effect"
+  },
+  {
     "cond_group": 5780113,
     "data": {},
     "dst": null,
     "id": 7095843,
     "src": "quest:bone-voyage",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "behavior_toggle",
+      "magnitude": null,
+      "target_facet": "adamantite bars from aviansie killed in the God Wars Dungeon are now noted",
+      "tier_source": "fremennik:hard"
+    },
+    "dst": "activity:god-wars-dungeon",
+    "id": 7105264,
+    "src": "item:13131",
+    "type": "effect"
   },
   {
     "cond_group": null,
@@ -1860,6 +4460,20 @@
     "id": 7108858,
     "src": "quest:animal-magnetism",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "Robin exchanges 13 bones of any kind daily for a bucket of slime and a pot of bonemeal each",
+      "tier_source": "morytania:medium"
+    },
+    "dst": "region:port-phasmatys",
+    "id": 7109566,
+    "src": "item:13113",
+    "type": "effect"
   },
   {
     "cond_group": 4022152,
@@ -1893,6 +4507,18 @@
     "type": "progress_towards"
   },
   {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13109",
+    "id": 7115128,
+    "src": "diary:wilderness:medium",
+    "type": "grants"
+  },
+  {
     "cond_group": 5869058,
     "data": {},
     "dst": null,
@@ -1909,12 +4535,40 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "five daily teleports to the farming patch at the Ardougne farm",
+      "tier_source": "ardougne:hard"
+    },
+    "dst": "region:ardougne-farm",
+    "id": 7117728,
+    "src": "item:13123",
+    "type": "effect"
+  },
+  {
     "cond_group": 5783406,
     "data": {},
     "dst": null,
     "id": 7120728,
     "src": "quest:in-search-of-the-myreque",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "stat_multiplier",
+      "magnitude": 0.1,
+      "target_facet": "experience from the Falador farming patch",
+      "tier_source": "falador:medium"
+    },
+    "dst": "skill:farming",
+    "id": 7125722,
+    "src": "item:13118",
+    "type": "effect"
   },
   {
     "cond_group": null,
@@ -1926,6 +4580,40 @@
     "dst": "skill:strength",
     "id": 7128277,
     "src": "quest:dragon-slayer-i",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "resurrect with full health and restored stats once per day at 0 hitpoints in the Fight Cave",
+      "tier_source": "karamja:elite"
+    },
+    "dst": "activity:fight-cave",
+    "id": 7128333,
+    "src": "item:13103",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:13134",
+    "id": 7130590,
+    "src": "item:13135",
+    "type": "supersedes"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13130",
+    "id": 7133123,
+    "src": "diary:fremennik:medium",
     "type": "grants"
   },
   {
@@ -1971,6 +4659,36 @@
   {
     "cond_group": null,
     "data": {
+      "amount": 7500,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (medium)",
+      "min_level": 40,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 7154355,
+    "src": "diary:wilderness:medium",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "unlimited teleports to the Piscatoris Fishing Colony",
+      "tier_source": "western:elite"
+    },
+    "dst": "region:piscatoris-fishing-colony",
+    "id": 7155201,
+    "src": "item:13144",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 2
     },
     "dst": "goal:quest-point-cape",
@@ -2007,6 +4725,48 @@
   {
     "cond_group": null,
     "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "30 casts of Low Level Alchemy without runes each day",
+      "tier_source": "lumbridge:easy"
+    },
+    "dst": "skill:magic",
+    "id": 7186760,
+    "src": "item:13125",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.5,
+      "target_facet": "more fish from Fishing Trawler",
+      "tier_source": "ardougne:elite"
+    },
+    "dst": "activity:fishing-trawler",
+    "id": 7187764,
+    "src": "item:13124",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "fee_waiver",
+      "magnitude": 0.6,
+      "target_facet": "discount on Eodan's tanning services, up from 40%",
+      "tier_source": "kourend:hard"
+    },
+    "dst": "activity:eodans-tanning-services",
+    "id": 7196246,
+    "src": "item:22945",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "kind": "title",
       "name": "Dräpare",
       "note": "Fremennik honorific suffix title added to the player's Fremennik name",
@@ -2024,6 +4784,134 @@
     "id": 7202445,
     "src": "quest:tower-of-life",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "Lundail offers 120 random runes for free every day",
+      "tier_source": "wilderness:hard"
+    },
+    "dst": "region:mage-arena",
+    "id": 7203261,
+    "src": "item:13110",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 2500,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (easy)",
+      "min_level": 30,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 7210932,
+    "src": "diary:wilderness:easy",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 7500,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (medium)",
+      "min_level": 40,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 7213148,
+    "src": "diary:kandarin:medium",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "while-equipped",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.1,
+      "target_facet": "chance of smelting 2 bars at once, of any kind, at the Edgeville furnace",
+      "tier_source": "varrock:elite"
+    },
+    "dst": "skill:smithing",
+    "id": 7213362,
+    "src": "item:13107",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "behavior_toggle",
+      "magnitude": null,
+      "target_facet": "bones buried via the Bonecrusher now grant full Prayer experience",
+      "tier_source": "morytania:elite"
+    },
+    "dst": "skill:prayer",
+    "id": 7219240,
+    "src": "item:13115",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "fee_waiver",
+      "magnitude": 0.2,
+      "target_facet": "discount on Eodan's tanning services",
+      "tier_source": "kourend:easy"
+    },
+    "dst": "activity:eodans-tanning-services",
+    "id": 7224147,
+    "src": "item:22941",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "fee_waiver",
+      "magnitude": null,
+      "target_facet": "free usage of Shilo Village's furnace, down from a fee of 20 coins per use",
+      "tier_source": "karamja:elite"
+    },
+    "dst": "region:shilo-village",
+    "id": 7224272,
+    "src": "item:13103",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "name": "Ash sanctifier",
+      "reward": "items",
+      "untracked": true
+    },
+    "dst": null,
+    "id": 7226441,
+    "src": "diary:kourend:hard",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "fee_waiver",
+      "magnitude": null,
+      "target_facet": "free cart rides between Brimhaven and Shilo Village, down from a fee of 10-200 coins",
+      "tier_source": "karamja:elite"
+    },
+    "dst": "region:shilo-village",
+    "id": 7227002,
+    "src": "item:13103",
+    "type": "effect"
   },
   {
     "cond_group": 5739518,
@@ -2118,6 +5006,34 @@
   {
     "cond_group": null,
     "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "unlimited teleports to the farming patch at the Ardougne farm",
+      "tier_source": "ardougne:elite"
+    },
+    "dst": "region:ardougne-farm",
+    "id": 7265351,
+    "src": "item:13124",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "Zaff sells 120 noted battlestaves as a single stack every day for 840,000 coins",
+      "tier_source": "varrock:elite"
+    },
+    "dst": "region:varrock",
+    "id": 7268295,
+    "src": "item:13107",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "access": "Rune platebody equip",
       "category": "equipment",
       "name": "Equip green d'hide body, rune platebody, and dragon platebody",
@@ -2152,6 +5068,28 @@
     "id": 7279258,
     "src": "quest:prince-ali-rescue",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:13133",
+    "id": 7286520,
+    "src": "item:13134",
+    "type": "supersedes"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "access to fight Spindel",
+      "tier_source": "wilderness:hard"
+    },
+    "dst": "monster:spindel",
+    "id": 7289811,
+    "src": "item:13110",
+    "type": "effect"
   },
   {
     "cond_group": 4689210,
@@ -2196,6 +5134,18 @@
       "reward": "items",
       "tradeable": true
     },
+    "dst": "item:13125",
+    "id": 7307896,
+    "src": "diary:lumbridge:easy",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
     "dst": "item:13114",
     "id": 7309259,
     "src": "diary:morytania:hard",
@@ -2212,12 +5162,92 @@
   {
     "cond_group": null,
     "data": {
+      "amount": 50000,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (elite)",
+      "min_level": 70,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 7323722,
+    "src": "diary:morytania:elite",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13107",
+    "id": 7325661,
+    "src": "diary:varrock:elite",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:13123",
+    "id": 7327209,
+    "src": "item:13124",
+    "type": "supersedes"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 15000,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (hard)",
+      "min_level": 50,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 7331459,
+    "src": "diary:kourend:hard",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 1
     },
     "dst": "goal:achievement-diary-cape",
     "id": 7334329,
     "src": "diary:wilderness:medium",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "one daily teleport to the Piscatoris Fishing Colony",
+      "tier_source": "western:hard"
+    },
+    "dst": "region:piscatoris-fishing-colony",
+    "id": 7335705,
+    "src": "item:13143",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "while-equipped",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.02,
+      "target_facet": "chance to catch two fish at once anywhere when equipped",
+      "tier_source": "kourend:easy"
+    },
+    "dst": "skill:fishing",
+    "id": 7340210,
+    "src": "item:22941",
+    "type": "effect"
   },
   {
     "cond_group": null,
@@ -2240,6 +5270,20 @@
   {
     "cond_group": null,
     "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "tight-gap shortcut from Burthorpe to the Chaos Temple (14 Agility)",
+      "tier_source": "falador:easy"
+    },
+    "dst": "region:chaos-temple",
+    "id": 7347398,
+    "src": "item:13117",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 4
     },
     "dst": "goal:quest-point-cape",
@@ -2248,12 +5292,34 @@
     "type": "progress_towards"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "150 noted pure essence for free every day from Wizard Cromperty",
+      "tier_source": "ardougne:hard"
+    },
+    "dst": "region:ardougne",
+    "id": 7355675,
+    "src": "item:13123",
+    "type": "effect"
+  },
+  {
     "cond_group": 4852444,
     "data": {},
     "dst": null,
     "id": 7364653,
     "src": "quest:meat-and-greet",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:13117",
+    "id": 7366154,
+    "src": "item:13118",
+    "type": "supersedes"
   },
   {
     "cond_group": 5933664,
@@ -2270,6 +5336,20 @@
     "id": 7375380,
     "src": "quest:barbarian-farming",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.21,
+      "target_facet": "chance of receiving a medium clue scroll from a guard in Falador",
+      "tier_source": "falador:medium"
+    },
+    "dst": "monster:guard",
+    "id": 7375780,
+    "src": "item:13118",
+    "type": "effect"
   },
   {
     "cond_group": null,
@@ -2300,6 +5380,28 @@
     "id": 7387517,
     "src": "diary:karamja:easy",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:13125",
+    "id": 7391759,
+    "src": "item:13126",
+    "type": "supersedes"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "while-equipped",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.1,
+      "target_facet": "chance of smelting 2 bars at once, up to steel, at the Edgeville furnace",
+      "tier_source": "varrock:easy"
+    },
+    "dst": "skill:smithing",
+    "id": 7396123,
+    "src": "item:13104",
+    "type": "effect"
   },
   {
     "cond_group": 4609368,
@@ -2338,12 +5440,90 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.1,
+      "target_facet": "chance of gaining approval in Managing Miscellania when fishing or woodcutting",
+      "tier_source": "fremennik:medium"
+    },
+    "dst": "activity:managing-miscellania",
+    "id": 7420101,
+    "src": "item:13130",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "fee_waiver",
+      "magnitude": null,
+      "target_facet": "Resource Area entrance fee lowered to 3,750 coins, down from 6,000",
+      "tier_source": "wilderness:hard"
+    },
+    "dst": "region:resource-area",
+    "id": 7422550,
+    "src": "item:13110",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "behavior_toggle",
+      "magnitude": null,
+      "target_facet": "red dragonhide from red dragons in the Brimhaven Dungeon is now noted",
+      "tier_source": "karamja:elite"
+    },
+    "dst": "region:brimhaven-dungeon",
+    "id": 7425477,
+    "src": "item:13103",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13119",
+    "id": 7425600,
+    "src": "diary:falador:hard",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:13119",
+    "id": 7430324,
+    "src": "item:13120",
+    "type": "supersedes"
+  },
+  {
     "cond_group": 5081705,
     "data": {},
     "dst": null,
     "id": 7430712,
     "src": "quest:mage-arena-i",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 2500,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (easy)",
+      "min_level": 30,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 7435151,
+    "src": "diary:lumbridge:easy",
+    "type": "grants"
   },
   {
     "cond_group": 4368028,
@@ -2356,12 +5536,56 @@
   {
     "cond_group": null,
     "data": {
+      "amount": 5000,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (Karamja Diary)",
+      "min_level": 30,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 7439917,
+    "src": "diary:karamja:medium",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "capacity_change",
+      "magnitude": null,
+      "target_facet": "hold up to 140 coin pouches at a time, up from 84",
+      "tier_source": "ardougne:elite"
+    },
+    "dst": "skill:thieving",
+    "id": 7440143,
+    "src": "item:13124",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 1
     },
     "dst": "goal:achievement-diary-cape",
     "id": 7440180,
     "src": "diary:fremennik:easy",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.1,
+      "target_facet": "chance of successfully pickpocketing within Ardougne",
+      "tier_source": "ardougne:medium"
+    },
+    "dst": "skill:thieving",
+    "id": 7446311,
+    "src": "item:13122",
+    "type": "effect"
   },
   {
     "cond_group": 5631608,
@@ -2375,15 +5599,23 @@
     "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
-      "effect_kind": "access",
-      "magnitude": null,
-      "target_facet": "unlimited teleports to Ardougne Monastery",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 1.0,
+      "target_facet": "twice as many death runes from trading in cats to civilians in West Ardougne",
       "tier_source": "ardougne:easy"
     },
-    "dst": "region:ardougne-monastery",
+    "dst": "activity:west-ardougne-cat-trade",
     "id": 7449525,
     "src": "item:13121",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:13109",
+    "id": 7449836,
+    "src": "item:13110",
+    "type": "supersedes"
   },
   {
     "cond_group": null,
@@ -2394,6 +5626,14 @@
     "id": 7450020,
     "src": "diary:varrock:hard",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:13131",
+    "id": 7451419,
+    "src": "item:13132",
+    "type": "supersedes"
   },
   {
     "cond_group": null,
@@ -2414,6 +5654,20 @@
   {
     "cond_group": null,
     "data": {
+      "condition": "while-equipped",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.1,
+      "target_facet": "chance of mining double ores up to and including mithril, as well as various other minerals",
+      "tier_source": "varrock:medium"
+    },
+    "dst": "skill:mining",
+    "id": 7453626,
+    "src": "item:13105",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "amount": 875,
       "form": "fixed",
       "reward": "xp"
@@ -2426,12 +5680,40 @@
   {
     "cond_group": null,
     "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "access to fight Artio",
+      "tier_source": "wilderness:hard"
+    },
+    "dst": "monster:artio",
+    "id": 7456917,
+    "src": "item:13110",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 1
     },
     "dst": "goal:achievement-diary-cape",
     "id": 7468684,
     "src": "diary:morytania:medium",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.5,
+      "target_facet": "lava shards from grinding lava scales",
+      "tier_source": "wilderness:hard"
+    },
+    "dst": "activity:grinding-lava-scales",
+    "id": 7469952,
+    "src": "item:13110",
+    "type": "effect"
   },
   {
     "cond_group": 5371171,
@@ -2458,12 +5740,90 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13141",
+    "id": 7478319,
+    "src": "diary:western:easy",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "access to the cooking ranges in the Hosidius Kitchen, with an additive 5% increased success rate over other ranges",
+      "tier_source": "kourend:easy"
+    },
+    "dst": "region:hosidius-kitchen",
+    "id": 7484193,
+    "src": "item:22941",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.1,
+      "target_facet": "additive success rate when using the cooking ranges in the Hosidius Kitchen, up from 5%",
+      "tier_source": "kourend:elite"
+    },
+    "dst": "region:hosidius-kitchen",
+    "id": 7485322,
+    "src": "item:22947",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 7500,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (medium)",
+      "min_level": 40,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 7488673,
+    "src": "diary:falador:medium",
+    "type": "grants"
+  },
+  {
     "cond_group": 5877831,
     "data": {},
     "dst": null,
     "id": 7490065,
     "src": "diary:falador:elite",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "capacity_change",
+      "magnitude": null,
+      "target_facet": "possess up to 4 ecumenical keys at a time, up from 3",
+      "tier_source": "wilderness:medium"
+    },
+    "dst": "activity:god-wars-dungeon",
+    "id": 7494901,
+    "src": "item:13109",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:11136",
+    "id": 7500574,
+    "src": "item:11138",
+    "type": "supersedes"
   },
   {
     "cond_group": 5854354,
@@ -2476,12 +5836,42 @@
   {
     "cond_group": null,
     "data": {
+      "amount": 2500,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (easy)",
+      "min_level": 30,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 7505529,
+    "src": "diary:desert:easy",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 1
     },
     "dst": "goal:achievement-diary-cape",
     "id": 7509547,
     "src": "diary:ardougne:elite",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "fee_waiver",
+      "magnitude": null,
+      "target_facet": "free access to the Hardwood Grove, down from a fee of 100 trading sticks",
+      "tier_source": "karamja:elite"
+    },
+    "dst": "region:hardwood-grove",
+    "id": 7512313,
+    "src": "item:13103",
+    "type": "effect"
   },
   {
     "cond_group": null,
@@ -2552,6 +5942,20 @@
   {
     "cond_group": null,
     "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "Rantz offers 25 free ogre arrows every day",
+      "tier_source": "western:easy"
+    },
+    "dst": "activity:chompy-bird-hunting",
+    "id": 7529288,
+    "src": "item:13141",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 1
     },
     "dst": "goal:quest-point-cape",
@@ -2584,6 +5988,36 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "restore full prayer points once a day",
+      "tier_source": "falador:hard"
+    },
+    "dst": "skill:prayer",
+    "id": 7536079,
+    "src": "item:13119",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 50000,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (elite)",
+      "min_level": 70,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 7540716,
+    "src": "diary:lumbridge:elite",
+    "type": "grants"
+  },
+  {
     "cond_group": 5928931,
     "data": {},
     "dst": null,
@@ -2600,6 +6034,14 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:13104",
+    "id": 7543959,
+    "src": "item:13105",
+    "type": "supersedes"
+  },
+  {
     "cond_group": 5596577,
     "data": {},
     "dst": null,
@@ -2610,12 +6052,40 @@
   {
     "cond_group": null,
     "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "stat_multiplier",
+      "magnitude": 0.5,
+      "target_facet": "Firemaking experience when burning shade remains",
+      "tier_source": "morytania:elite"
+    },
+    "dst": "skill:firemaking",
+    "id": 7553492,
+    "src": "item:13115",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 1
     },
     "dst": "goal:achievement-diary-cape",
     "id": 7554761,
     "src": "diary:lumbridge:elite",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "three daily teleports to the cabbage patch of South Falador Farm",
+      "tier_source": "lumbridge:medium"
+    },
+    "dst": "region:south-falador-farm",
+    "id": 7554939,
+    "src": "item:13126",
+    "type": "effect"
   },
   {
     "cond_group": null,
@@ -2644,12 +6114,98 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "fee_waiver",
+      "magnitude": null,
+      "target_facet": "Free passage through Shantay Pass and the pass at Ruins of Unkah (down from a fee of 5 coins)",
+      "tier_source": "desert:elite"
+    },
+    "dst": "region:shantay-pass",
+    "id": 7576555,
+    "src": "item:13136",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "fee_waiver",
+      "magnitude": 0.5,
+      "target_facet": "discount on Thormacs' enchanting services",
+      "tier_source": "kandarin:elite"
+    },
+    "dst": "activity:thormacs-enchanting-services",
+    "id": 7576636,
+    "src": "item:13140",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "Rantz offers 100 free ogre arrows every day",
+      "tier_source": "western:hard"
+    },
+    "dst": "activity:chompy-bird-hunting",
+    "id": 7582548,
+    "src": "item:13143",
+    "type": "effect"
+  },
+  {
     "cond_group": 5654168,
     "data": {},
     "dst": null,
     "id": 7584845,
     "src": "diary:varrock:easy",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "Zaff sells 15 noted battlestaves as a single stack every day for 105,000 coins",
+      "tier_source": "varrock:easy"
+    },
+    "dst": "region:varrock",
+    "id": 7585256,
+    "src": "item:13104",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.1,
+      "target_facet": "honour points from Barbarian Assault",
+      "tier_source": "kandarin:hard"
+    },
+    "dst": "activity:barbarian-assault",
+    "id": 7587935,
+    "src": "item:13139",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 15000,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (hard)",
+      "min_level": 50,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 7592884,
+    "src": "diary:western:hard",
+    "type": "grants"
   },
   {
     "cond_group": null,
@@ -2662,6 +6218,18 @@
     "type": "progress_towards"
   },
   {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:11140",
+    "id": 7607109,
+    "src": "diary:karamja:hard",
+    "type": "grants"
+  },
+  {
     "cond_group": 4005359,
     "data": {},
     "dst": null,
@@ -2670,12 +6238,56 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "behavior_toggle",
+      "magnitude": null,
+      "target_facet": "permanent protection from the burning effect in the Karuulm Slayer Dungeon without protective footwear",
+      "tier_source": "kourend:elite"
+    },
+    "dst": "region:karuulm-slayer-dungeon",
+    "id": 7609763,
+    "src": "item:22947",
+    "type": "effect"
+  },
+  {
     "cond_group": 4255369,
     "data": {},
     "dst": null,
     "id": 7610029,
     "src": "quest:the-path-of-glouphrie",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 15000,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (hard)",
+      "min_level": 50,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 7612352,
+    "src": "diary:lumbridge:hard",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.1,
+      "target_facet": "marks of grace from the Seers' Village Rooftop Course",
+      "tier_source": "kandarin:medium"
+    },
+    "dst": "activity:seers-village-rooftop-course",
+    "id": 7614250,
+    "src": "item:13138",
+    "type": "effect"
   },
   {
     "cond_group": 4040298,
@@ -2720,6 +6332,18 @@
   {
     "cond_group": null,
     "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13143",
+    "id": 7633353,
+    "src": "diary:western:hard",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 1
     },
     "dst": "goal:achievement-diary-cape",
@@ -2744,6 +6368,62 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "behavior_toggle",
+      "magnitude": null,
+      "target_facet": "tree patch in Falador Park will never get diseased",
+      "tier_source": "falador:elite"
+    },
+    "dst": "region:falador-park",
+    "id": 7645239,
+    "src": "item:13120",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13135",
+    "id": 7646455,
+    "src": "diary:desert:hard",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 2500,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (easy)",
+      "min_level": 30,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 7646665,
+    "src": "diary:varrock:easy",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "dark tunnel shortcut in the Motherlode Mine (54 Agility)",
+      "tier_source": "falador:medium"
+    },
+    "dst": "activity:motherlode-mine",
+    "id": 7646972,
+    "src": "item:13118",
+    "type": "effect"
+  },
+  {
     "cond_group": 4920250,
     "data": {},
     "dst": null,
@@ -2752,12 +6432,72 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "Zaff sells 30 noted battlestaves as a single stack every day for 210,000 coins",
+      "tier_source": "varrock:medium"
+    },
+    "dst": "region:varrock",
+    "id": 7652689,
+    "src": "item:13105",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "Thirus offers you 40 dynamite for free every day",
+      "tier_source": "kourend:hard"
+    },
+    "dst": "activity:thirus-dynamite",
+    "id": 7655787,
+    "src": "item:22945",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 15000,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (hard)",
+      "min_level": 50,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 7657119,
+    "src": "diary:wilderness:hard",
+    "type": "grants"
+  },
+  {
     "cond_group": 4940056,
     "data": {},
     "dst": null,
     "id": 7658483,
     "src": "diary:kourend:hard",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 7500,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (medium)",
+      "min_level": 40,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 7660034,
+    "src": "diary:lumbridge:medium",
+    "type": "grants"
   },
   {
     "cond_group": 4229421,
@@ -2790,6 +6530,20 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "capacity_change",
+      "magnitude": null,
+      "target_facet": "coal trucks can hold up to 308 coal, up from 280",
+      "tier_source": "kandarin:hard"
+    },
+    "dst": "skill:mining",
+    "id": 7685656,
+    "src": "item:13139",
+    "type": "effect"
+  },
+  {
     "cond_group": 5672118,
     "data": {},
     "dst": null,
@@ -2814,6 +6568,18 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13117",
+    "id": 7693853,
+    "src": "diary:falador:easy",
+    "type": "grants"
+  },
+  {
     "cond_group": 5429338,
     "data": {},
     "dst": null,
@@ -2822,12 +6588,128 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13103",
+    "id": 7699744,
+    "src": "diary:karamja:elite",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "behavior_toggle",
+      "magnitude": null,
+      "target_facet": "drops from Jubsters and Frogeels noted in the Creature Creation activity",
+      "tier_source": "ardougne:easy"
+    },
+    "dst": "activity:creature-creation",
+    "id": 7704197,
+    "src": "item:13121",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "while-equipped",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "can be worn in place of a chef's hat to access the Cooks' Guild",
+      "tier_source": "varrock:hard"
+    },
+    "dst": "region:cooks-guild",
+    "id": 7709152,
+    "src": "item:13106",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13138",
+    "id": 7718310,
+    "src": "diary:kandarin:medium",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 15000,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (hard)",
+      "min_level": 50,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 7730661,
+    "src": "diary:fremennik:hard",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "access to fight Calvar'ion",
+      "tier_source": "wilderness:hard"
+    },
+    "dst": "monster:calvarion",
+    "id": 7732793,
+    "src": "item:13110",
+    "type": "effect"
+  },
+  {
     "cond_group": 5110347,
     "data": {},
     "dst": null,
     "id": 7732910,
     "src": "quest:natural-history-quiz",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "250 noted pure essence for free every day from Wizard Cromperty",
+      "tier_source": "ardougne:elite"
+    },
+    "dst": "region:ardougne",
+    "id": 7737071,
+    "src": "item:13124",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:22943",
+    "id": 7740771,
+    "src": "item:22945",
+    "type": "supersedes"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:11136",
+    "id": 7741441,
+    "src": "diary:karamja:easy",
+    "type": "grants"
   },
   {
     "cond_group": 4046430,
@@ -2848,12 +6730,48 @@
     "type": "progress_towards"
   },
   {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:13112",
+    "id": 7752452,
+    "src": "item:13113",
+    "type": "supersedes"
+  },
+  {
     "cond_group": 4599079,
     "data": {},
     "dst": null,
     "id": 7753591,
     "src": "quest:ratcatchers",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "capacity_change",
+      "magnitude": null,
+      "target_facet": "possess up to 5 ecumenical keys at a time, up from 4",
+      "tier_source": "wilderness:hard"
+    },
+    "dst": "activity:god-wars-dungeon",
+    "id": 7767198,
+    "src": "item:13110",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "flax keeper offers 30 noted bow strings every day for 30 noted flax",
+      "tier_source": "kandarin:easy"
+    },
+    "dst": "skill:crafting",
+    "id": 7767721,
+    "src": "item:13137",
+    "type": "effect"
   },
   {
     "cond_group": 4103379,
@@ -2866,12 +6784,52 @@
   {
     "cond_group": null,
     "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13106",
+    "id": 7779693,
+    "src": "diary:varrock:hard",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 1
     },
     "dst": "goal:achievement-diary-cape",
     "id": 7780948,
     "src": "diary:western:elite",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.1,
+      "target_facet": "chance to save a harvest life at the herb patch in Catherby",
+      "tier_source": "kandarin:hard"
+    },
+    "dst": "skill:farming",
+    "id": 7788143,
+    "src": "item:13139",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "access to the underground portion of the Shilo Village mine",
+      "tier_source": "karamja:medium"
+    },
+    "dst": "region:shilo-village-mine",
+    "id": 7788883,
+    "src": "item:11138",
+    "type": "effect"
   },
   {
     "cond_group": null,
@@ -2892,6 +6850,20 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "stat_multiplier",
+      "magnitude": 0.075,
+      "target_facet": "Slayer experience in the Slayer Tower while on a Slayer task",
+      "tier_source": "morytania:hard"
+    },
+    "dst": "skill:slayer",
+    "id": 7796361,
+    "src": "item:13114",
+    "type": "effect"
+  },
+  {
     "cond_group": 4956119,
     "data": {},
     "dst": null,
@@ -2909,10 +6881,32 @@
   },
   {
     "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "behavior_toggle",
+      "magnitude": null,
+      "target_facet": "Giant Mole's mole skin and claw drops will be noted",
+      "tier_source": "falador:hard"
+    },
+    "dst": "monster:giant-mole",
+    "id": 7803261,
+    "src": "item:13119",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
     "data": {},
     "dst": "goal:achievement-diary-cape",
     "id": 7805771,
     "src": "goal:achievement-diary-cape-t",
+    "type": "supersedes"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:13143",
+    "id": 7809286,
+    "src": "item:13144",
     "type": "supersedes"
   },
   {
@@ -2940,12 +6934,82 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:22945",
+    "id": 7814308,
+    "src": "diary:kourend:hard",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "Camelot Teleport can be used to teleport to Seers' Village bank instead",
+      "tier_source": "kandarin:hard"
+    },
+    "dst": "region:seers-village-bank",
+    "id": 7816695,
+    "src": "item:13139",
+    "type": "effect"
+  },
+  {
     "cond_group": 5890566,
     "data": {},
     "dst": null,
     "id": 7818043,
     "src": "quest:haunted-mine",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 15000,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (hard)",
+      "min_level": 50,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 7819990,
+    "src": "diary:desert:hard",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13111",
+    "id": 7820161,
+    "src": "diary:wilderness:elite",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 50000,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (elite)",
+      "min_level": 70,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 7820732,
+    "src": "diary:desert:elite",
+    "type": "grants"
   },
   {
     "cond_group": 4554591,
@@ -2982,6 +7046,22 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:13141",
+    "id": 7829340,
+    "src": "item:13142",
+    "type": "supersedes"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:13126",
+    "id": 7829373,
+    "src": "item:13127",
+    "type": "supersedes"
+  },
+  {
     "cond_group": 4370599,
     "data": {},
     "dst": null,
@@ -3014,6 +7094,52 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "amount": 2500,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (easy)",
+      "min_level": 30,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 7846524,
+    "src": "diary:falador:easy",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "fee_waiver",
+      "magnitude": 0.8,
+      "target_facet": "discount on Eodan's tanning service, up from 60%",
+      "tier_source": "kourend:elite"
+    },
+    "dst": "activity:eodans-tanning-services",
+    "id": 7850230,
+    "src": "item:22947",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 50000,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (elite)",
+      "min_level": 70,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 7851693,
+    "src": "diary:fremennik:elite",
+    "type": "grants"
+  },
+  {
     "cond_group": 4796622,
     "data": {},
     "dst": null,
@@ -3036,6 +7162,28 @@
     "id": 7854573,
     "src": "diary:ardougne:easy",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "behavior_toggle",
+      "magnitude": null,
+      "target_facet": "dragon bones from dragons killed in the Wilderness are now noted (excludes King Black Dragon)",
+      "tier_source": "wilderness:elite"
+    },
+    "dst": "region:wilderness",
+    "id": 7858676,
+    "src": "item:13111",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:11138",
+    "id": 7859797,
+    "src": "item:11140",
+    "type": "supersedes"
   },
   {
     "cond_group": 4671677,
@@ -3074,6 +7222,20 @@
   {
     "cond_group": null,
     "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "access to fight Vet'ion",
+      "tier_source": "wilderness:medium"
+    },
+    "dst": "monster:vetion",
+    "id": 7873725,
+    "src": "item:13109",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 1
     },
     "dst": "goal:achievement-diary-cape",
@@ -3082,12 +7244,54 @@
     "type": "progress_towards"
   },
   {
+    "cond_group": null,
+    "data": {
+      "condition": "while-equipped",
+      "effect_kind": "stat_multiplier",
+      "magnitude": 0.1,
+      "target_facet": "Agility experience from all obstacles in the Brimhaven Agility Arena and from Agility arena tickets",
+      "tier_source": "karamja:medium"
+    },
+    "dst": "skill:agility",
+    "id": 7876035,
+    "src": "item:11138",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "seventh slot for blocking Slayer tasks",
+      "tier_source": "lumbridge:elite"
+    },
+    "dst": "skill:slayer",
+    "id": 7876306,
+    "src": "item:13128",
+    "type": "effect"
+  },
+  {
     "cond_group": 4378871,
     "data": {},
     "dst": null,
     "id": 7882073,
     "src": "quest:the-queen-of-thieves",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "Bert automatically delivers 84 buckets of sand to your bank each day you log in",
+      "tier_source": "ardougne:elite"
+    },
+    "dst": "region:ardougne",
+    "id": 7882281,
+    "src": "item:13124",
+    "type": "effect"
   },
   {
     "cond_group": null,
@@ -3102,6 +7306,34 @@
     "id": 7887650,
     "src": "quest:druidic-ritual",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "while-equipped",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 1.0,
+      "target_facet": "logs from regular trees",
+      "tier_source": "kandarin:easy"
+    },
+    "dst": "skill:woodcutting",
+    "id": 7888945,
+    "src": "item:13137",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.5,
+      "target_facet": "runes received from the Barrows chest",
+      "tier_source": "morytania:hard"
+    },
+    "dst": "activity:barrows",
+    "id": 7891000,
+    "src": "item:13114",
+    "type": "effect"
   },
   {
     "cond_group": null,
@@ -3130,6 +7362,34 @@
     "id": 7895276,
     "src": "quest:animal-magnetism",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "while-equipped",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.06,
+      "target_facet": "chance to catch two fish at once anywhere when equipped",
+      "tier_source": "kourend:hard"
+    },
+    "dst": "skill:fishing",
+    "id": 7899157,
+    "src": "item:22945",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "flax keeper offers 250 noted bow strings every day for 250 noted flax",
+      "tier_source": "kandarin:elite"
+    },
+    "dst": "skill:crafting",
+    "id": 7899851,
+    "src": "item:13140",
+    "type": "effect"
   },
   {
     "cond_group": null,
@@ -3187,6 +7447,28 @@
   },
   {
     "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "stat_multiplier",
+      "magnitude": 0.025,
+      "target_facet": "Slayer experience in the Slayer Tower while on a Slayer task",
+      "tier_source": "morytania:easy"
+    },
+    "dst": "skill:slayer",
+    "id": 7926998,
+    "src": "item:13112",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:13108",
+    "id": 7928237,
+    "src": "item:13109",
+    "type": "supersedes"
+  },
+  {
+    "cond_group": null,
     "data": {},
     "dst": "goal:quest-point-cape",
     "id": 7932642,
@@ -3202,6 +7484,32 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13133",
+    "id": 7933984,
+    "src": "diary:desert:easy",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "larger amethyst mine in the west of the Mining Guild",
+      "tier_source": "falador:elite"
+    },
+    "dst": "region:mining-guild",
+    "id": 7934987,
+    "src": "item:13120",
+    "type": "effect"
+  },
+  {
     "cond_group": 5596297,
     "data": {},
     "dst": null,
@@ -3210,12 +7518,80 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13129",
+    "id": 7938029,
+    "src": "diary:fremennik:easy",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "amount": 50000,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (elite)",
+      "min_level": 70,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 7938053,
+    "src": "diary:falador:elite",
+    "type": "grants"
+  },
+  {
     "cond_group": 4624848,
     "data": {},
     "dst": null,
     "id": 7938331,
     "src": "quest:creature-of-fenkenstrain",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13128",
+    "id": 7940365,
+    "src": "diary:lumbridge:elite",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "crevice shortcut in the Deep Wilderness Dungeon (with 46 Agility)",
+      "tier_source": "wilderness:medium"
+    },
+    "dst": "region:deep-wilderness-dungeon",
+    "id": 7943770,
+    "src": "item:13109",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "flax keeper offers 60 noted bow strings every day for 60 noted flax",
+      "tier_source": "kandarin:medium"
+    },
+    "dst": "skill:crafting",
+    "id": 7946603,
+    "src": "item:13138",
+    "type": "effect"
   },
   {
     "cond_group": null,
@@ -3236,6 +7612,32 @@
     "id": 7950567,
     "src": "diary:lumbridge:easy",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13104",
+    "id": 7955425,
+    "src": "diary:varrock:easy",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "restore 50% of prayer points once a day",
+      "tier_source": "falador:medium"
+    },
+    "dst": "skill:prayer",
+    "id": 7962122,
+    "src": "item:13118",
+    "type": "effect"
   },
   {
     "cond_group": 5574282,
@@ -3260,6 +7662,22 @@
     "type": "grants"
   },
   {
+    "cond_group": null,
+    "data": {
+      "amount": 50000,
+      "count": 1,
+      "eligible_skills": "any",
+      "form": "choice_lamp",
+      "lamp_item": "Antique lamp (elite)",
+      "min_level": 70,
+      "reward": "xp"
+    },
+    "dst": null,
+    "id": 7965765,
+    "src": "diary:western:elite",
+    "type": "grants"
+  },
+  {
     "cond_group": 5437937,
     "data": {},
     "dst": null,
@@ -3274,6 +7692,54 @@
     "id": 7970155,
     "src": "quest:cooks-assistant",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:13131",
+    "id": 7975641,
+    "src": "diary:fremennik:hard",
+    "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "restore 50% of run energy twice a day",
+      "tier_source": "lumbridge:easy"
+    },
+    "dst": "skill:agility",
+    "id": 7979791,
+    "src": "item:13125",
+    "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:13121",
+    "id": 7983683,
+    "src": "item:13122",
+    "type": "supersedes"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "condition": "unconditional-once-earned",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "access to the Hunting expert's private Red chinchompa hunting ground",
+      "tier_source": "western:hard"
+    },
+    "dst": "region:red-chinchompa-hunting-ground",
+    "id": 7985382,
+    "src": "item:13143",
+    "type": "effect"
   },
   {
     "cond_group": 4572335,
@@ -3292,12 +7758,12 @@
     "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
-      "effect_kind": "rate_multiplier",
-      "magnitude": 0.5,
-      "target_facet": "runes received from the Barrows chest",
+      "effect_kind": "access",
+      "magnitude": null,
+      "target_facet": "unlimited teleports to Burgh de Rott",
       "tier_source": "morytania:hard"
     },
-    "dst": "activity:barrows",
+    "dst": "region:burgh-de-rott",
     "id": 7990056,
     "src": "item:13114",
     "type": "effect"
@@ -3337,6 +7803,18 @@
     "id": 7996613,
     "src": "diary:fremennik:elite",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "reward": "items",
+      "tradeable": true
+    },
+    "dst": "item:22947",
+    "id": 7997722,
+    "src": "diary:kourend:elite",
+    "type": "grants"
   },
   {
     "cond_group": 4961365,
