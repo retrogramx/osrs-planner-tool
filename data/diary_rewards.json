@@ -21,6 +21,7 @@
     "editorial_decisions": [
       "GRANULARITY = INCLUSIVE: every mechanical reward bullet is captured. Only these are intentionally OMITTED (and surface as informational notes from verify_diary_rewards.py): pure cosmetic appearance, explicit 'No benefits'/'No new benefits' lines, and combat-stat-equivalence flavor ('Identical stats to an X sword'), plus the regional-item name line and the Antique lamp line (those are their own fields). A deterministic completeness gate confirms no mechanical bullet is dropped.",
       "EFFECT TARGETS restricted to skill/activity/region/monster content nodes (never item — item ids are inconsistent in items_equipment.json and an unresolved one would crash assemble). Item-charge/capacity perks (sceptre/lyre/coin-pouch/etc.) are anchored to the most relevant skill/activity/region; the verbatim numbers live in target_facet.",
+      "STATIC ITEM STATS are NOT diary effects (owner decision): a regional item's passive equipment bonus (e.g. Rada's blessing 'Prayer bonus of +1/+2') belongs in the item/equipment data layer, parsed there — not duplicated here. Such bullets are deliberately uncaptured.",
       "SAILING is modelled as a real, first-class skill (skill:sailing) — it is a released, fully trainable OSRS skill; the Fremennik hard Bosun Zarah crewmate perk targets it.",
       "CONDITION: 'while-equipped' (worn/equipped only), 'while-carried' (equipped OR held in inventory), or 'unconditional-once-earned' (account-wide) — matched to the block's wording.",
       "SHORTCUTS are worded as 'faster access', NOT as unlocking an area (e.g. the desert-elite Kalphite Lair crevice shortcut does not gate the lair).",
@@ -2044,18 +2045,6 @@
           "source_token": "4% chance to catch two fish at once anywhere when equipped"
         },
         {
-          "effect_kind": "stat_multiplier",
-          "magnitude": null,
-          "target_facet": "Prayer bonus of +1 when equipped, similar to the god blessings",
-          "target": {
-            "kind": "skill",
-            "name": "Prayer"
-          },
-          "condition": "while-equipped",
-          "tier_source": "kourend:medium",
-          "source_token": "Has a Prayer bonus of +1 when equipped, similar to the god blessings"
-        },
-        {
           "effect_kind": "fee_waiver",
           "magnitude": null,
           "target_facet": "free access to Crabclaw Isle, down from a fee of 5,000 coins",
@@ -2157,18 +2146,6 @@
           "condition": "while-equipped",
           "tier_source": "kourend:hard",
           "source_token": "6% chance to catch two fish at once anywhere when equipped"
-        },
-        {
-          "effect_kind": "stat_multiplier",
-          "magnitude": null,
-          "target_facet": "Prayer bonus of +1 when equipped, similar to the god blessings",
-          "target": {
-            "kind": "skill",
-            "name": "Prayer"
-          },
-          "condition": "while-equipped",
-          "tier_source": "kourend:hard",
-          "source_token": "Has a Prayer bonus of +1 when equipped, similar to the god blessings"
         },
         {
           "effect_kind": "behavior_toggle",
@@ -2292,18 +2269,6 @@
           "condition": "while-equipped",
           "tier_source": "kourend:elite",
           "source_token": "8% chance to catch two fish at once anywhere when equipped"
-        },
-        {
-          "effect_kind": "stat_multiplier",
-          "magnitude": null,
-          "target_facet": "Prayer bonus of +2, up from +1, the highest of any item in the ammunition slot",
-          "target": {
-            "kind": "skill",
-            "name": "Prayer"
-          },
-          "condition": "while-equipped",
-          "tier_source": "kourend:elite",
-          "source_token": "Has a Prayer bonus of +2, up from +1, the highest of any item in the ammunition slot"
         },
         {
           "effect_kind": "rate_multiplier",

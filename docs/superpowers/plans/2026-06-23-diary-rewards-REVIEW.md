@@ -5,7 +5,7 @@
 > (`kind` · target · the verbatim wiki phrase), and every **omitted** wiki bullet (the
 > granularity disclosure). Reward prose is a *starting point, not truth* — this is your gate.
 
-**Totals:** 48 tiers · 261 captured effects · 12 omitted bullets · 2 untracked extra-unlocks (Bonecrusher, Ash sanctifier).
+**Totals:** 48 tiers · 258 captured effects · 15 omitted bullets · 2 untracked extra-unlocks (Bonecrusher, Ash sanctifier).
 
 ### What to check
 1. **Captured effects** — is each one real (the quoted phrase is verbatim from the wiki) and sensibly classified (`kind`, magnitude, target)?
@@ -269,22 +269,21 @@
 **Omitted (0).**
 
 ### Medium — Rada's blessing 2 · lamp 7,500 @40
-**Captured (7):**
+**Captured (6):**
 - `access` → region · **Kourend Woodland** — "Five daily teleports to the Kourend Woodland"
 - `rate_multiplier` +4% → skill · **Fishing** · *while-equipped* — "4% chance to catch two fish at once anywhere when equipped"
-- `stat_multiplier` → skill · **Prayer** · *while-equipped* — "Has a Prayer bonus of +1 when equipped, similar to the god blessings"
 - `fee_waiver` → region · **Crabclaw Isle** — "Free access to Crabclaw Isle, down from a fee of 5,000 coins"
 - `fee_waiver` +40% → activity · **Eodan's tanning services** — "40% discount on Eodan's tanning services"
 - `rate_multiplier` +5% → skill · **Mining** — "5% chance to mine two dense essence blocks at once"
 - `recurring_resource` → activity · **Thirus dynamite** — "Thirus offers you 20 dynamite for free every day"
-**Omitted (0).**
+**Omitted (1):**
+- ~~Has a Prayer bonus of +1 when equipped, similar to the god blessings~~
 
 ### Hard — Rada's blessing 3 · lamp 15,000 @50
-**Captured (10):**
+**Captured (9):**
 - `access` → region · **Kourend Woodland** — "Unlimited teleports to the Kourend Woodland"
 - `access` → region · **Mount Karuulm** — "Three daily teleports to the top of Mount Karuulm"
 - `rate_multiplier` +6% → skill · **Fishing** · *while-equipped* — "6% chance to catch two fish at once anywhere when equipped"
-- `stat_multiplier` → skill · **Prayer** · *while-equipped* — "Has a Prayer bonus of +1 when equipped, similar to the god blessings"
 - `behavior_toggle` → skill · **Prayer** — "causes demonic ashes dropped from killed monsters to be automatically scattered, granting half the Prayer experience that would have been granted for scattering them normally"
 - `capacity_change` → skill · **Prayer** — "This item is charged with death runes"
 - `behavior_toggle` → monster · **Lizardman shaman** — "Any slayer helmet can be used in place of a Shayzien helm (5) for its protection against lizardman shamans, after talking to Captain Cleive"
@@ -292,13 +291,13 @@
 - `rate_multiplier` +5% → skill · **Farming** — "5% increased chance to save a "harvest life" at the herb patches in Hosidius and the Farming Guild"
 - `recurring_resource` → activity · **Thirus dynamite** — "Thirus offers you 40 dynamite for free every day"
 - 🎁 extra-unlock (untracked): **Ash sanctifier** — Ash sanctifier, claimable from Tyss
-**Omitted (0).**
+**Omitted (1):**
+- ~~Has a Prayer bonus of +1 when equipped, similar to the god blessings~~
 
 ### Elite — Rada's blessing 4 · lamp 50,000 @70
-**Captured (11):**
+**Captured (10):**
 - `access` → region · **Mount Karuulm** — "Unlimited teleports to the top of Mount Karuulm"
 - `rate_multiplier` +8% → skill · **Fishing** · *while-equipped* — "8% chance to catch two fish at once anywhere when equipped"
-- `stat_multiplier` → skill · **Prayer** · *while-equipped* — "Has a Prayer bonus of +2, up from +1, the highest of any item in the ammunition slot"
 - `rate_multiplier` +11% → skill · **Slayer** — "Roughly 11% more slayer reward points from Konar quo Maten's tasks"
 - `rate_multiplier` +10% → region · **Hosidius Kitchen** — "10% additive success rate when using the cooking ranges in the Hosidius Kitchen"
 - `behavior_toggle` → region · **Karuulm Slayer Dungeon** — "Permanent protection from the burning effect in the Karuulm Slayer Dungeon without the need for protective footwear"
@@ -307,7 +306,8 @@
 - `rate_multiplier` +10% → activity · **False blood altar** — "10% additional blood runes from the false blood altar"
 - `rate_multiplier` +10% → activity · **Blast Mine** — "10% increased chance of obtaining higher-tier ores in the Blast mine"
 - `recurring_resource` → activity · **Thirus dynamite** — "Thirus offers you 80 dynamite for free every day"
-**Omitted (0).**
+**Omitted (1):**
+- ~~Has a Prayer bonus of +2, up from +1, the highest of any item in the ammunition slot~~
 
 ---
 

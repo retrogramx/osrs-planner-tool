@@ -24,13 +24,13 @@
   {
     "cond_group": null,
     "data": {
-      "condition": "while-equipped",
-      "effect_kind": "stat_multiplier",
+      "condition": "unconditional-once-earned",
+      "effect_kind": "fee_waiver",
       "magnitude": null,
-      "target_facet": "Prayer bonus of +1 when equipped, similar to the god blessings",
+      "target_facet": "free access to Crabclaw Isle, down from a fee of 5,000 coins",
       "tier_source": "kourend:medium"
     },
-    "dst": "skill:prayer",
+    "dst": "region:crabclaw-isle",
     "id": 6002377,
     "src": "item:22943",
     "type": "effect"
@@ -545,13 +545,13 @@
   {
     "cond_group": null,
     "data": {
-      "condition": "while-equipped",
-      "effect_kind": "stat_multiplier",
-      "magnitude": null,
-      "target_facet": "Prayer bonus of +2, up from +1, the highest of any item in the ammunition slot",
+      "condition": "unconditional-once-earned",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.11,
+      "target_facet": "more slayer reward points from Konar quo Maten's tasks, including milestone tasks",
       "tier_source": "kourend:elite"
     },
-    "dst": "skill:prayer",
+    "dst": "skill:slayer",
     "id": 6120995,
     "src": "item:22947",
     "type": "effect"
@@ -1141,12 +1141,12 @@
     "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
-      "effect_kind": "fee_waiver",
-      "magnitude": 0.4,
-      "target_facet": "discount on Eodan's tanning services, up from 20%",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.05,
+      "target_facet": "chance to mine two dense essence blocks at once",
       "tier_source": "kourend:medium"
     },
-    "dst": "activity:eodans-tanning-services",
+    "dst": "skill:mining",
     "id": 6252902,
     "src": "item:22943",
     "type": "effect"
@@ -1691,9 +1691,9 @@
     "cond_group": null,
     "data": {
       "condition": "while-carried",
-      "effect_kind": "behavior_toggle",
+      "effect_kind": "capacity_change",
       "magnitude": null,
-      "target_facet": "demonic ashes dropped from killed monsters are automatically scattered, granting half the Prayer experience that would have been granted for scattering them normally (via Ash sanctifier)",
+      "target_facet": "Ash sanctifier is charged with death runes",
       "tier_source": "kourend:hard"
     },
     "dst": "skill:prayer",
@@ -2181,12 +2181,12 @@
     "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
-      "effect_kind": "rate_multiplier",
-      "magnitude": 0.05,
-      "target_facet": "chance to mine two dense essence blocks at once",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "Thirus offers you 20 dynamite for free every day",
       "tier_source": "kourend:medium"
     },
-    "dst": "skill:mining",
+    "dst": "activity:thirus-dynamite",
     "id": 6476151,
     "src": "item:22943",
     "type": "effect"
@@ -2561,12 +2561,12 @@
     "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
-      "effect_kind": "rate_multiplier",
-      "magnitude": 0.1,
-      "target_facet": "chance of obtaining higher-tier ores in the Blast mine",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "Thirus offers you 80 dynamite for free every day",
       "tier_source": "kourend:elite"
     },
-    "dst": "activity:blast-mine",
+    "dst": "activity:thirus-dynamite",
     "id": 6563538,
     "src": "item:22947",
     "type": "effect"
@@ -2592,11 +2592,11 @@
     "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "fee_waiver",
-      "magnitude": null,
-      "target_facet": "free access to Crabclaw Isle, down from a fee of 5,000 coins",
+      "magnitude": 0.4,
+      "target_facet": "discount on Eodan's tanning services, up from 20%",
       "tier_source": "kourend:medium"
     },
-    "dst": "region:crabclaw-isle",
+    "dst": "activity:eodans-tanning-services",
     "id": 6577701,
     "src": "item:22943",
     "type": "effect"
@@ -2849,10 +2849,10 @@
       "condition": "unconditional-once-earned",
       "effect_kind": "behavior_toggle",
       "magnitude": null,
-      "target_facet": "permanent protection from the burning effect in the Karuulm Slayer Dungeon without protective footwear",
+      "target_facet": "ashes scattered via the Ash sanctifier now grant full Prayer experience",
       "tier_source": "kourend:elite"
     },
-    "dst": "region:karuulm-slayer-dungeon",
+    "dst": "skill:prayer",
     "id": 6621812,
     "src": "item:22947",
     "type": "effect"
@@ -2979,10 +2979,10 @@
       "condition": "unconditional-once-earned",
       "effect_kind": "rate_multiplier",
       "magnitude": 0.1,
-      "target_facet": "additional blood runes from the false blood altar",
+      "target_facet": "chance of obtaining higher-tier ores in the Blast mine",
       "tier_source": "kourend:elite"
     },
-    "dst": "activity:false-blood-altar",
+    "dst": "activity:blast-mine",
     "id": 6665428,
     "src": "item:22947",
     "type": "effect"
@@ -3680,20 +3680,6 @@
   {
     "cond_group": null,
     "data": {
-      "condition": "unconditional-once-earned",
-      "effect_kind": "recurring_resource",
-      "magnitude": null,
-      "target_facet": "Thirus offers you 40 dynamite for free every day",
-      "tier_source": "kourend:hard"
-    },
-    "dst": "activity:thirus-dynamite",
-    "id": 6830037,
-    "src": "item:22945",
-    "type": "effect"
-  },
-  {
-    "cond_group": null,
-    "data": {
       "condition": "while-equipped",
       "effect_kind": "rate_multiplier",
       "magnitude": 1.0,
@@ -3917,12 +3903,12 @@
     "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
-      "effect_kind": "fee_waiver",
-      "magnitude": 0.8,
-      "target_facet": "discount on Eodan's tanning service, up from 60%",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.1,
+      "target_facet": "additional blood runes from the false blood altar",
       "tier_source": "kourend:elite"
     },
-    "dst": "activity:eodans-tanning-services",
+    "dst": "activity:false-blood-altar",
     "id": 6884682,
     "src": "item:22947",
     "type": "effect"
@@ -5092,20 +5078,6 @@
       "condition": "unconditional-once-earned",
       "effect_kind": "recurring_resource",
       "magnitude": null,
-      "target_facet": "Thirus offers you 20 dynamite for free every day",
-      "tier_source": "kourend:medium"
-    },
-    "dst": "activity:thirus-dynamite",
-    "id": 7182771,
-    "src": "item:22943",
-    "type": "effect"
-  },
-  {
-    "cond_group": null,
-    "data": {
-      "condition": "unconditional-once-earned",
-      "effect_kind": "recurring_resource",
-      "magnitude": null,
       "target_facet": "30 casts of Low Level Alchemy without runes each day",
       "tier_source": "lumbridge:easy"
     },
@@ -5131,10 +5103,10 @@
   {
     "cond_group": null,
     "data": {
-      "condition": "while-equipped",
-      "effect_kind": "stat_multiplier",
+      "condition": "while-carried",
+      "effect_kind": "behavior_toggle",
       "magnitude": null,
-      "target_facet": "Prayer bonus of +1 when equipped, similar to the god blessings",
+      "target_facet": "demonic ashes dropped from killed monsters are automatically scattered, granting half the Prayer experience that would have been granted for scattering them normally (via Ash sanctifier)",
       "tier_source": "kourend:hard"
     },
     "dst": "skill:prayer",
@@ -6260,11 +6232,11 @@
     "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "rate_multiplier",
-      "magnitude": 0.11,
-      "target_facet": "more slayer reward points from Konar quo Maten's tasks, including milestone tasks",
+      "magnitude": 0.1,
+      "target_facet": "additive success rate when using the cooking ranges in the Hosidius Kitchen, up from 5%",
       "tier_source": "kourend:elite"
     },
-    "dst": "skill:slayer",
+    "dst": "region:hosidius-kitchen",
     "id": 7485322,
     "src": "item:22947",
     "type": "effect"
@@ -6357,12 +6329,12 @@
     "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
-      "effect_kind": "fee_waiver",
-      "magnitude": 0.6,
-      "target_facet": "discount on Eodan's tanning services, up from 40%",
+      "effect_kind": "rate_multiplier",
+      "magnitude": 0.05,
+      "target_facet": "chance to save a \"harvest life\" at the herb patches in Hosidius and the Farming Guild",
       "tier_source": "kourend:hard"
     },
-    "dst": "activity:eodans-tanning-services",
+    "dst": "skill:farming",
     "id": 7505855,
     "src": "item:22945",
     "type": "effect"
@@ -6739,12 +6711,12 @@
     "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
-      "effect_kind": "behavior_toggle",
-      "magnitude": null,
-      "target_facet": "any slayer helmet can be used in place of a Shayzien helm (5) for its protection against lizardman shamans, after talking to Captain Cleive",
+      "effect_kind": "fee_waiver",
+      "magnitude": 0.6,
+      "target_facet": "discount on Eodan's tanning services, up from 40%",
       "tier_source": "kourend:hard"
     },
-    "dst": "monster:lizardman-shaman",
+    "dst": "activity:eodans-tanning-services",
     "id": 7605238,
     "src": "item:22945",
     "type": "effect"
@@ -6801,12 +6773,12 @@
     "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
-      "effect_kind": "rate_multiplier",
-      "magnitude": 0.1,
-      "target_facet": "additive success rate when using the cooking ranges in the Hosidius Kitchen, up from 5%",
+      "effect_kind": "behavior_toggle",
+      "magnitude": null,
+      "target_facet": "permanent protection from the burning effect in the Karuulm Slayer Dungeon without protective footwear",
       "tier_source": "kourend:elite"
     },
-    "dst": "region:hosidius-kitchen",
+    "dst": "region:karuulm-slayer-dungeon",
     "id": 7609763,
     "src": "item:22947",
     "type": "effect"
@@ -7022,13 +6994,13 @@
   {
     "cond_group": null,
     "data": {
-      "condition": "while-carried",
-      "effect_kind": "capacity_change",
+      "condition": "unconditional-once-earned",
+      "effect_kind": "behavior_toggle",
       "magnitude": null,
-      "target_facet": "Ash sanctifier is charged with death runes",
+      "target_facet": "any slayer helmet can be used in place of a Shayzien helm (5) for its protection against lizardman shamans, after talking to Captain Cleive",
       "tier_source": "kourend:hard"
     },
-    "dst": "skill:prayer",
+    "dst": "monster:lizardman-shaman",
     "id": 7655787,
     "src": "item:22945",
     "type": "effect"
@@ -7505,12 +7477,12 @@
     "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
-      "effect_kind": "rate_multiplier",
-      "magnitude": 0.05,
-      "target_facet": "chance to save a \"harvest life\" at the herb patches in Hosidius and the Farming Guild",
+      "effect_kind": "recurring_resource",
+      "magnitude": null,
+      "target_facet": "Thirus offers you 40 dynamite for free every day",
       "tier_source": "kourend:hard"
     },
-    "dst": "skill:farming",
+    "dst": "activity:thirus-dynamite",
     "id": 7801259,
     "src": "item:22945",
     "type": "effect"
@@ -7771,12 +7743,12 @@
     "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
-      "effect_kind": "behavior_toggle",
-      "magnitude": null,
-      "target_facet": "ashes scattered via the Ash sanctifier now grant full Prayer experience",
+      "effect_kind": "fee_waiver",
+      "magnitude": 0.8,
+      "target_facet": "discount on Eodan's tanning service, up from 60%",
       "tier_source": "kourend:elite"
     },
-    "dst": "skill:prayer",
+    "dst": "activity:eodans-tanning-services",
     "id": 7850230,
     "src": "item:22947",
     "type": "effect"
@@ -8124,20 +8096,6 @@
     "id": 7928237,
     "src": "item:13109",
     "type": "supersedes"
-  },
-  {
-    "cond_group": null,
-    "data": {
-      "condition": "unconditional-once-earned",
-      "effect_kind": "recurring_resource",
-      "magnitude": null,
-      "target_facet": "Thirus offers you 80 dynamite for free every day",
-      "tier_source": "kourend:elite"
-    },
-    "dst": "activity:thirus-dynamite",
-    "id": 7932354,
-    "src": "item:22947",
-    "type": "effect"
   },
   {
     "cond_group": null,
