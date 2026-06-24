@@ -19,9 +19,11 @@
     "note": "Complete 48-tier reward overlay (Task 9). Every datum grounded against the committed offline reward-block cache (verify_diary_rewards.py); the cache derives from achievement_diaries.json's per-tier reward prose. Reward prose is a STARTING POINT, not truth — owner editorial review is the final gate.",
     "magnitude_convention": "bonus fraction (additive over baseline): 0.1 = +10%, 0.5 = +50%, 1.0 = +100%/double. Set ONLY on percentage/multiplier effects; null otherwise.",
     "editorial_decisions": [
-      "GRANULARITY: captured clearly-mechanical perks (XP/resource/drop/chance multipliers, teleport/area access, fee waivers, daily free resources, noting toggles, prayer/run-energy restoration, capacity changes with a clean target). Cosmetic/no-benefit/flavor bullets and item-charge tweaks without a clean skill/activity/region target are intentionally OMITTED and surface as informational notes from verify_diary_rewards.py.",
-      "EFFECT TARGETS restricted to skill/activity/region/monster content nodes (never item — an item target whose id is absent from items_equipment.json would crash assemble).",
-      "CONDITION: 'while-equipped' when the block says While worn/when equipped/when worn or held; otherwise 'unconditional-once-earned'.",
+      "GRANULARITY = INCLUSIVE: every mechanical reward bullet is captured. Only these are intentionally OMITTED (and surface as informational notes from verify_diary_rewards.py): pure cosmetic appearance, explicit 'No benefits'/'No new benefits' lines, and combat-stat-equivalence flavor ('Identical stats to an X sword'), plus the regional-item name line and the Antique lamp line (those are their own fields). A deterministic completeness gate confirms no mechanical bullet is dropped.",
+      "EFFECT TARGETS restricted to skill/activity/region/monster content nodes (never item — item ids are inconsistent in items_equipment.json and an unresolved one would crash assemble). Item-charge/capacity perks (sceptre/lyre/coin-pouch/etc.) are anchored to the most relevant skill/activity/region; the verbatim numbers live in target_facet.",
+      "SAILING is modelled as a real, first-class skill (skill:sailing) — it is a released, fully trainable OSRS skill; the Fremennik hard Bosun Zarah crewmate perk targets it.",
+      "CONDITION: 'while-equipped' (worn/equipped only), 'while-carried' (equipped OR held in inventory), or 'unconditional-once-earned' (account-wide) — matched to the block's wording.",
+      "SHORTCUTS are worded as 'faster access', NOT as unlocking an area (e.g. the desert-elite Kalphite Lair crevice shortcut does not gate the lair).",
       "EXTRA_UNLOCKS (claimable items, e.g. Bonecrusher, Ash sanctifier) recorded with item_id=null + untracked=true (disclosed); not resolved to equipment ids.",
       "DISCOUNTS modelled as effect_kind=fee_waiver with magnitude = the discount fraction; full fee removals as fee_waiver magnitude=null."
     ]
@@ -148,7 +150,7 @@
         {
           "effect_kind": "rate_multiplier",
           "magnitude": null,
-          "target_facet": "additional runes at the Ourania Altar (chance varies per rune)",
+          "target_facet": "chance on receiving additional runes at the Ourania Altar (chance varies per rune)",
           "target": {
             "kind": "activity",
             "name": "Ourania Altar"
@@ -160,7 +162,7 @@
         {
           "effect_kind": "rate_multiplier",
           "magnitude": 0.1,
-          "target_facet": "chance of successfully pickpocketing within Ardougne",
+          "target_facet": "10% increased chance of successfully pickpocketing within Ardougne",
           "target": {
             "kind": "skill",
             "name": "Thieving"
@@ -227,7 +229,7 @@
         {
           "effect_kind": "access",
           "magnitude": null,
-          "target_facet": "Watchtower Teleport can be used to teleport to Yanille instead",
+          "target_facet": "Watchtower Teleport can now be used to teleport to Yanille instead",
           "target": {
             "kind": "region",
             "name": "Yanille"
@@ -239,7 +241,7 @@
         {
           "effect_kind": "rate_multiplier",
           "magnitude": 0.1,
-          "target_facet": "chance of successfully pickpocketing anywhere around Gielinor",
+          "target_facet": "10% increased chance of successfully pickpocketing anywhere around Gielinor",
           "target": {
             "kind": "skill",
             "name": "Thieving"
@@ -294,7 +296,7 @@
         {
           "effect_kind": "recurring_resource",
           "magnitude": null,
-          "target_facet": "Bert automatically delivers 84 buckets of sand to your bank each day you log in",
+          "target_facet": "Bert automatically delivers 84 buckets of sand to your bank each day you log in (Ultimate Ironmen ineligible)",
           "target": {
             "kind": "region",
             "name": "Ardougne"
@@ -318,7 +320,7 @@
         {
           "effect_kind": "rate_multiplier",
           "magnitude": 0.5,
-          "target_facet": "more fish from Fishing Trawler",
+          "target_facet": "50% more fish from Fishing Trawler",
           "target": {
             "kind": "activity",
             "name": "Fishing Trawler"
@@ -330,7 +332,7 @@
         {
           "effect_kind": "rate_multiplier",
           "magnitude": 0.25,
-          "target_facet": "more marks of grace from the Ardougne Rooftop Course",
+          "target_facet": "25% more marks of grace from the Ardougne Rooftop Course",
           "target": {
             "kind": "activity",
             "name": "Ardougne Rooftop Course"
@@ -370,6 +372,18 @@
         "lamp_item": "Antique lamp (easy)"
       },
       "effects": [
+        {
+          "effect_kind": "capacity_change",
+          "magnitude": null,
+          "target_facet": "Pharaoh's sceptre will now hold up to 10 charges, up from 3",
+          "target": {
+            "kind": "activity",
+            "name": "Pyramid Plunder"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "desert:easy",
+          "source_token": "Pharaoh's sceptre will now hold up to 10 charges, up from 3"
+        },
         {
           "effect_kind": "behavior_toggle",
           "magnitude": null,
@@ -424,6 +438,18 @@
           "condition": "unconditional-once-earned",
           "tier_source": "desert:medium",
           "source_token": "One daily teleport to Nardah"
+        },
+        {
+          "effect_kind": "capacity_change",
+          "magnitude": null,
+          "target_facet": "Pharaoh's sceptre will now hold up to 25 charges, up from 10",
+          "target": {
+            "kind": "activity",
+            "name": "Pyramid Plunder"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "desert:medium",
+          "source_token": "Pharaoh's sceptre will now hold up to 25 charges, up from 10"
         }
       ],
       "extra_unlocks": [],
@@ -445,6 +471,18 @@
       },
       "effects": [
         {
+          "effect_kind": "capacity_change",
+          "magnitude": null,
+          "target_facet": "Pharaoh's sceptre will now hold up to 50 charges, up from 25",
+          "target": {
+            "kind": "activity",
+            "name": "Pyramid Plunder"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "desert:hard",
+          "source_token": "Pharaoh's sceptre will now hold up to 50 charges, up from 25"
+        },
+        {
           "effect_kind": "fee_waiver",
           "magnitude": null,
           "target_facet": "Free carpet rides throughout the Kharidian Desert (down from a fee of 75-200 coins per ride)",
@@ -457,9 +495,21 @@
           "source_token": "Free carpet rides throughout the Kharidian Desert, down from a fee of 75-200 coins per ride"
         },
         {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "Ropes are now permanently secured once placed at the Kalphite Lair entrance and Queen's Lair",
+          "target": {
+            "kind": "region",
+            "name": "Kalphite Lair"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "desert:hard",
+          "source_token": "Ropes are now permanently secured once placed at the Kalphite Lair entrance and Queen's Lair"
+        },
+        {
           "effect_kind": "stat_multiplier",
           "magnitude": 0.14,
-          "target_facet": "Experience from the Pollnivneach Rooftop Course",
+          "target_facet": "Roughly 14% increased experience from the Pollnivneach Rooftop Course",
           "target": {
             "kind": "skill",
             "name": "Agility"
@@ -471,7 +521,7 @@
         {
           "effect_kind": "rate_multiplier",
           "magnitude": 0.25,
-          "target_facet": "Marks of grace from the Pollnivneach Rooftop Course",
+          "target_facet": "25% more marks of grace from the Pollnivneach Rooftop Course",
           "target": {
             "kind": "activity",
             "name": "Pollnivneach Rooftop Course"
@@ -526,7 +576,7 @@
         {
           "effect_kind": "access",
           "magnitude": null,
-          "target_facet": "Unlimited teleports to Nardah, closer to the Elidinis Statuette",
+          "target_facet": "Unlimited teleports to Nardah, closer to the Elidinis Statuette than the previous amulets",
           "target": {
             "kind": "region",
             "name": "Nardah"
@@ -548,6 +598,30 @@
           "source_token": "Unlimited teleports to the entrance of the Kalphite Cave"
         },
         {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "Fully protects against desert heat while worn",
+          "target": {
+            "kind": "region",
+            "name": "Kharidian Desert"
+          },
+          "condition": "while-equipped",
+          "tier_source": "desert:elite",
+          "source_token": "Fully protects against desert heat while worn"
+        },
+        {
+          "effect_kind": "capacity_change",
+          "magnitude": null,
+          "target_facet": "Pharaoh's sceptre will now hold up to 100 charges, up from 50",
+          "target": {
+            "kind": "activity",
+            "name": "Pyramid Plunder"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "desert:elite",
+          "source_token": "Pharaoh's sceptre will now hold up to 100 charges, up from 50"
+        },
+        {
           "effect_kind": "fee_waiver",
           "magnitude": null,
           "target_facet": "Free passage through Shantay Pass and the pass at Ruins of Unkah (down from a fee of 5 coins)",
@@ -562,7 +636,7 @@
         {
           "effect_kind": "access",
           "magnitude": null,
-          "target_facet": "Crevice shortcut in the Kalphite Lair (requires 86 Agility)",
+          "target_facet": "crevice shortcut in the Kalphite Lair (86 Agility) — faster access, does not unlock the lair",
           "target": {
             "kind": "region",
             "name": "Kalphite Lair"
@@ -605,7 +679,7 @@
         {
           "effect_kind": "access",
           "magnitude": null,
-          "target_facet": "tight-gap shortcut from Burthorpe to the Chaos Temple (14 Agility)",
+          "target_facet": "tight-gap shortcut / faster access from Burthorpe to the Chaos Temple (14 Agility)",
           "target": {
             "kind": "region",
             "name": "Chaos Temple"
@@ -660,7 +734,7 @@
         {
           "effect_kind": "access",
           "magnitude": null,
-          "target_facet": "dark tunnel shortcut in the Motherlode Mine (54 Agility)",
+          "target_facet": "dark tunnel shortcut / faster access in the Motherlode Mine (54 Agility)",
           "target": {
             "kind": "activity",
             "name": "Motherlode Mine"
@@ -672,7 +746,7 @@
         {
           "effect_kind": "rate_multiplier",
           "magnitude": 0.21,
-          "target_facet": "chance of receiving a medium clue scroll from a guard in Falador",
+          "target_facet": "increased chance of receiving a medium clue scroll from a guard in Falador (from 1/128 to 1/106)",
           "target": {
             "kind": "monster",
             "name": "Guard"
@@ -715,12 +789,12 @@
         {
           "effect_kind": "behavior_toggle",
           "magnitude": null,
-          "target_facet": "indicates the Giant Mole's location in the Mole Hole",
+          "target_facet": "indicates the Giant Mole's location when equipped or held in the inventory in the Mole Hole",
           "target": {
             "kind": "monster",
             "name": "Giant Mole"
           },
-          "condition": "while-equipped",
+          "condition": "while-carried",
           "tier_source": "falador:hard",
           "source_token": "Indicates the Giant Mole's location when equipped or held in the inventory in the Mole Hole"
         },
@@ -751,7 +825,7 @@
         {
           "effect_kind": "access",
           "magnitude": null,
-          "target_facet": "shortcut to the Fountain of Heroes in the Heroes' Guild basement (67 Agility)",
+          "target_facet": "shortcut / faster access to the Fountain of Heroes in the Heroes' Guild basement (67 Agility)",
           "target": {
             "kind": "region",
             "name": "Heroes' Guild"
@@ -818,7 +892,7 @@
         {
           "effect_kind": "rate_multiplier",
           "magnitude": 0.01,
-          "target_facet": "chance of receiving higher level ores when cleaning pay-dirt, about 1% per ore",
+          "target_facet": "increased chance of receiving higher level ores when cleaning pay-dirt, by about 1% per ore",
           "target": {
             "kind": "activity",
             "name": "Motherlode Mine"
@@ -857,6 +931,42 @@
           "condition": "unconditional-once-earned",
           "tier_source": "fremennik:easy",
           "source_token": "One daily teleport to the Rellekka marketplace"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "Peer the Seer will act as a bank deposit box",
+          "target": {
+            "kind": "region",
+            "name": "Rellekka"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "fremennik:easy",
+          "source_token": "Peer the Seer will act as a bank deposit box"
+        },
+        {
+          "effect_kind": "capacity_change",
+          "magnitude": null,
+          "target_facet": "Fossegrimen gives your enchanted lyre an extra charge per offering",
+          "target": {
+            "kind": "activity",
+            "name": "Fossegrimen offerings"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "fremennik:easy",
+          "source_token": "Fossegrimen gives your enchanted lyre an extra charge per offering"
+        },
+        {
+          "effect_kind": "fee_waiver",
+          "magnitude": null,
+          "target_facet": "Fossegrimen will imbue your lyre with infinite charges for 800 of each required fish, down from 1,000",
+          "target": {
+            "kind": "activity",
+            "name": "Fossegrimen offerings"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "fremennik:easy",
+          "source_token": "Fossegrimen will imbue your lyre with infinite charges for 800 of each required fish, down from 1,000"
         }
       ],
       "extra_unlocks": [],
@@ -892,7 +1002,7 @@
         {
           "effect_kind": "rate_multiplier",
           "magnitude": 0.1,
-          "target_facet": "chance of gaining approval in Managing Miscellania when fishing or woodcutting",
+          "target_facet": "10% increased chance of gaining approval in Managing Miscellania when fishing or woodcutting",
           "target": {
             "kind": "activity",
             "name": "Managing Miscellania"
@@ -900,6 +1010,18 @@
           "condition": "unconditional-once-earned",
           "tier_source": "fremennik:medium",
           "source_token": "10% increased chance of gaining approval in Managing Miscellania"
+        },
+        {
+          "effect_kind": "fee_waiver",
+          "magnitude": null,
+          "target_facet": "Fossegrimen will imbue your lyre with infinite charges for 600 of each required fish, down from 800",
+          "target": {
+            "kind": "activity",
+            "name": "Fossegrimen offerings"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "fremennik:medium",
+          "source_token": "Fossegrimen will imbue your lyre with infinite charges for 600 of each required fish, down from 800"
         }
       ],
       "extra_unlocks": [],
@@ -935,7 +1057,7 @@
         {
           "effect_kind": "stat_multiplier",
           "magnitude": 0.18,
-          "target_facet": "experience from the Rellekka Rooftop Course",
+          "target_facet": "roughly 18% increased experience from the Rellekka Rooftop Course",
           "target": {
             "kind": "activity",
             "name": "Rellekka Rooftop Course"
@@ -947,7 +1069,7 @@
         {
           "effect_kind": "rate_multiplier",
           "magnitude": 0.25,
-          "target_facet": "marks of grace from the Rellekka Rooftop Course",
+          "target_facet": "25% more marks of grace from the Rellekka Rooftop Course",
           "target": {
             "kind": "activity",
             "name": "Rellekka Rooftop Course"
@@ -959,10 +1081,10 @@
         {
           "effect_kind": "behavior_toggle",
           "magnitude": null,
-          "target_facet": "adamantite bars from aviansie killed in the God Wars Dungeon are now noted",
+          "target_facet": "Adamantite bars from aviansie killed in the God Wars Dungeon are now noted",
           "target": {
-            "kind": "activity",
-            "name": "God Wars Dungeon"
+            "kind": "monster",
+            "name": "Aviansie"
           },
           "condition": "unconditional-once-earned",
           "tier_source": "fremennik:hard",
@@ -971,7 +1093,7 @@
         {
           "effect_kind": "access",
           "magnitude": null,
-          "target_facet": "enchanted lyre can be played to teleport to Waterbirth Island",
+          "target_facet": "enchanted lyre and its imbued variant can now be played to teleport to Waterbirth Island",
           "target": {
             "kind": "region",
             "name": "Waterbirth Island"
@@ -983,14 +1105,50 @@
         {
           "effect_kind": "access",
           "magnitude": null,
-          "target_facet": "stony basalt teleports you on top of the Troll Stronghold, past the rocky shortcut (requires 73 Agility)",
+          "target_facet": "Access to Tan Leather and Recharge Dragonstone from the Lunar spellbook",
+          "target": {
+            "kind": "skill",
+            "name": "Magic"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "fremennik:hard",
+          "source_token": "Access to Tan Leather and Recharge Dragonstone from the Lunar spellbook"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "stony basalt now teleports you on top of the Troll Stronghold, past the rocky shortcut (requires 73 Agility)",
           "target": {
             "kind": "region",
             "name": "Troll Stronghold"
           },
           "condition": "unconditional-once-earned",
           "tier_source": "fremennik:hard",
-          "source_token": "Stony basalt now teleports you on top of the Troll Stronghold"
+          "source_token": "Stony basalt now teleports you on top of the Troll Stronghold, past the rocky shortcut"
+        },
+        {
+          "effect_kind": "fee_waiver",
+          "magnitude": null,
+          "target_facet": "Fossegrimen will imbue your lyre with infinite charges for 400 of each required fish, down from 600",
+          "target": {
+            "kind": "activity",
+            "name": "Fossegrimen offerings"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "fremennik:hard",
+          "source_token": "Fossegrimen will imbue your lyre with infinite charges for 400 of each required fish, down from 600"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "Access to Bosun Zarah as a crewmate after the completion of Royal Trouble (requires 80 Sailing)",
+          "target": {
+            "kind": "skill",
+            "name": "Sailing"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "fremennik:hard",
+          "source_token": "Access to Bosun Zarah as a crewmate after the completion of Royal Trouble"
         }
       ],
       "extra_unlocks": [],
@@ -1026,7 +1184,7 @@
         {
           "effect_kind": "behavior_toggle",
           "magnitude": null,
-          "target_facet": "Dagannoth bones from the Dagannoth Kings are now noted",
+          "target_facet": "Dagannoth bones from the Dagannoth Kings are now noted, unless disabled by talking to Thorodin",
           "target": {
             "kind": "monster",
             "name": "Dagannoth Kings"
@@ -1038,7 +1196,7 @@
         {
           "effect_kind": "rate_multiplier",
           "magnitude": 0.15,
-          "target_facet": "chance of gaining approval in Managing Miscellania when fishing or woodcutting",
+          "target_facet": "15% increased chance of gaining approval in Managing Miscellania when fishing or woodcutting",
           "target": {
             "kind": "activity",
             "name": "Managing Miscellania"
@@ -1050,7 +1208,7 @@
         {
           "effect_kind": "access",
           "magnitude": null,
-          "target_facet": "enchanted lyre can be played to teleport to Waterbirth Island, Jatizso, and Neitiznot",
+          "target_facet": "enchanted lyre and its imbued variant can now be played to teleport to Waterbirth Island, Jatizso, and Neitiznot",
           "target": {
             "kind": "region",
             "name": "Waterbirth Island"
@@ -1062,7 +1220,7 @@
         {
           "effect_kind": "access",
           "magnitude": null,
-          "target_facet": "the seal of passage is no longer needed to interact with anyone on Lunar Isle",
+          "target_facet": "the seal of passage is no longer needed to interact with anyone on Lunar Isle (you'll instead gain access to the Return Orb as a new way of reaching Rellekka)",
           "target": {
             "kind": "region",
             "name": "Lunar Isle"
@@ -1070,6 +1228,18 @@
           "condition": "unconditional-once-earned",
           "tier_source": "fremennik:elite",
           "source_token": "The seal of passage is no longer needed to interact with anyone on Lunar Isle"
+        },
+        {
+          "effect_kind": "fee_waiver",
+          "magnitude": null,
+          "target_facet": "Fossegrimen will imbue your lyre with infinite charges for 200 of each required fish, down from 400",
+          "target": {
+            "kind": "activity",
+            "name": "Fossegrimen offerings"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "fremennik:elite",
+          "source_token": "Fossegrimen will imbue your lyre with infinite charges for 200 of each required fish, down from 400"
         }
       ],
       "extra_unlocks": [],
@@ -1091,9 +1261,21 @@
       },
       "effects": [
         {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "acts as a light source when worn or held in the inventory",
+          "target": {
+            "kind": "region",
+            "name": "Kandarin"
+          },
+          "condition": "while-carried",
+          "tier_source": "kandarin:easy",
+          "source_token": "Acts as a light source when worn or held in the inventory"
+        },
+        {
           "effect_kind": "rate_multiplier",
           "magnitude": 1.0,
-          "target_facet": "logs from regular trees",
+          "target_facet": "logs from regular trees (no additional experience granted)",
           "target": {
             "kind": "skill",
             "name": "Woodcutting"
@@ -1184,7 +1366,7 @@
         {
           "effect_kind": "rate_multiplier",
           "magnitude": 0.1,
-          "target_facet": "marks of grace from the Seers' Village Rooftop Course",
+          "target_facet": "marks of grace from the Seers' Village Rooftop Course, up from 5%",
           "target": {
             "kind": "activity",
             "name": "Seers' Village Rooftop Course"
@@ -1196,7 +1378,7 @@
         {
           "effect_kind": "stat_multiplier",
           "magnitude": 0.1,
-          "target_facet": "experience from cutting maple trees in Seers' Village",
+          "target_facet": "experience from cutting maple trees in Seers' Village (stacks with the Lumberjack outfit)",
           "target": {
             "kind": "skill",
             "name": "Woodcutting"
@@ -1208,7 +1390,7 @@
         {
           "effect_kind": "rate_multiplier",
           "magnitude": 0.05,
-          "target_facet": "chance to save a harvest life at the herb patch in Catherby",
+          "target_facet": "chance to save a \"harvest life\" at the herb patch in Catherby, slightly increasing your harvest yield",
           "target": {
             "kind": "skill",
             "name": "Farming"
@@ -1216,6 +1398,30 @@
           "condition": "unconditional-once-earned",
           "tier_source": "kandarin:medium",
           "source_token": "5% increased chance to save a \"harvest life\" at the herb patch in Catherby"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.33,
+          "target_facet": "the spinning wheel in Seers' Village spins 33% faster",
+          "target": {
+            "kind": "skill",
+            "name": "Crafting"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kandarin:medium",
+          "source_token": "The spinning wheel in Seers' Village spins 33% faster"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "ropes permanently secured at the Baxtorian Falls (shortcut / faster access, with the completion of Waterfall Quest)",
+          "target": {
+            "kind": "region",
+            "name": "Baxtorian Falls"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kandarin:medium",
+          "source_token": "Ropes are now permanently secured at the Baxtorian Falls"
         }
       ],
       "extra_unlocks": [],
@@ -1275,7 +1481,7 @@
         {
           "effect_kind": "rate_multiplier",
           "magnitude": 0.15,
-          "target_facet": "marks of grace from the Seers' Village Rooftop Course",
+          "target_facet": "marks of grace from the Seers' Village Rooftop Course, up from 10%",
           "target": {
             "kind": "activity",
             "name": "Seers' Village Rooftop Course"
@@ -1287,7 +1493,7 @@
         {
           "effect_kind": "rate_multiplier",
           "magnitude": 0.1,
-          "target_facet": "chance to save a harvest life at the herb patch in Catherby",
+          "target_facet": "chance to save a \"harvest life\" at the herb patch in Catherby, up from 5%",
           "target": {
             "kind": "skill",
             "name": "Farming"
@@ -1299,7 +1505,7 @@
         {
           "effect_kind": "fee_waiver",
           "magnitude": 0.25,
-          "target_facet": "discount on Thormacs' enchanting services",
+          "target_facet": "discount on Thormacs' enchanting services (requires completion of Scorpion Catcher)",
           "target": {
             "kind": "activity",
             "name": "Thormac's enchanting services"
@@ -1323,14 +1529,26 @@
         {
           "effect_kind": "access",
           "magnitude": null,
-          "target_facet": "Camelot Teleport can be used to teleport to Seers' Village bank instead",
+          "target_facet": "Camelot Teleport can now be used to teleport to Seers' Village bank instead",
           "target": {
             "kind": "region",
-            "name": "Seers' Village bank"
+            "name": "Seers' Village"
           },
           "condition": "unconditional-once-earned",
           "tier_source": "kandarin:hard",
           "source_token": "Camelot Teleport can now be used to teleport to Seers' Village bank instead"
+        },
+        {
+          "effect_kind": "rate_multiplier",
+          "magnitude": 0.1,
+          "target_facet": "chance to trigger the special effect of enchanted bolts, even in PvP (stacks additively with other increases, such as that of the Armadyl crossbow's special attack)",
+          "target": {
+            "kind": "skill",
+            "name": "Ranged"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kandarin:hard",
+          "source_token": "10% increased chance to trigger the special effect of enchanted bolts, even in PvP"
         }
       ],
       "extra_unlocks": [],
@@ -1366,7 +1584,7 @@
         {
           "effect_kind": "recurring_resource",
           "magnitude": null,
-          "target_facet": "first 200 coal placed in the coal trucks every day automatically transported to your bank",
+          "target_facet": "the first 200 coal placed in the coal trucks every day will automatically be transported to your bank",
           "target": {
             "kind": "skill",
             "name": "Mining"
@@ -1390,7 +1608,7 @@
         {
           "effect_kind": "rate_multiplier",
           "magnitude": 0.15,
-          "target_facet": "chance to save a harvest life at the herb patch in Catherby",
+          "target_facet": "chance to save a \"harvest life\" at the herb patch in Catherby, up from 10%",
           "target": {
             "kind": "skill",
             "name": "Farming"
@@ -1402,7 +1620,7 @@
         {
           "effect_kind": "fee_waiver",
           "magnitude": 0.5,
-          "target_facet": "discount on Thormacs' enchanting services",
+          "target_facet": "discount on Thormacs' enchanting services, up from 25% (requires completion of Scorpion Catcher)",
           "target": {
             "kind": "activity",
             "name": "Thormac's enchanting services"
@@ -1410,6 +1628,18 @@
           "condition": "unconditional-once-earned",
           "tier_source": "kandarin:elite",
           "source_token": "50% discount on Thormacs' enchanting services"
+        },
+        {
+          "effect_kind": "fee_waiver",
+          "magnitude": null,
+          "target_facet": "Otto Godblessed turns your Zamorakian spear into a Zamorakian hasta for 150,000 coins, down from 300,000 coins",
+          "target": {
+            "kind": "skill",
+            "name": "Smithing"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kandarin:elite",
+          "source_token": "Otto Godblessed now turns your Zamorakian spear into a Zamorakian hasta for 150,000 coins, down from 300,000 coins"
         }
       ],
       "extra_unlocks": [],
@@ -1433,7 +1663,7 @@
         {
           "effect_kind": "fee_waiver",
           "magnitude": null,
-          "target_facet": "Brimhaven-Ardougne and Musa Point-Port Sarim boat trips cost 15 coins instead of 30",
+          "target_facet": "Brimhaven-Ardougne and Musa Point-Port Sarim boat trips cost 15 coins instead of 30 coins",
           "target": {
             "kind": "region",
             "name": "Brimhaven"
@@ -1445,7 +1675,7 @@
         {
           "effect_kind": "fee_waiver",
           "magnitude": null,
-          "target_facet": "items in various shops around Karamja sold at a discount and bought for more",
+          "target_facet": "items in various shops around Karamja sold at a discounted rate and bought for more",
           "target": {
             "kind": "region",
             "name": "Karamja"
@@ -1476,7 +1706,7 @@
         {
           "effect_kind": "stat_multiplier",
           "magnitude": 0.1,
-          "target_facet": "Agility experience from all obstacles in the Brimhaven Agility Arena and from Agility arena tickets",
+          "target_facet": "10% additional Agility experience from all obstacles in the Brimhaven Agility Arena and from Agility arena tickets",
           "target": {
             "kind": "skill",
             "name": "Agility"
@@ -1531,7 +1761,7 @@
         {
           "effect_kind": "fee_waiver",
           "magnitude": null,
-          "target_facet": "Jiminua's Jungle Store and Karamja General Store also affected by the gloves' discounted store prices",
+          "target_facet": "Jiminua's Jungle Store and the Karamja General Store are now also affected by the gloves' discounted store prices",
           "target": {
             "kind": "region",
             "name": "Karamja"
@@ -1574,7 +1804,7 @@
         {
           "effect_kind": "rate_multiplier",
           "magnitude": 0.1,
-          "target_facet": "10% chance of two Agility arena tickets and Brimhaven vouchers when tagging a ticket dispenser",
+          "target_facet": "10% chance of receiving two Agility arena tickets and Brimhaven vouchers, instead of one, when tagging a ticket dispenser at the Brimhaven Agility Arena",
           "target": {
             "kind": "activity",
             "name": "Brimhaven Agility Arena"
@@ -1622,7 +1852,7 @@
         {
           "effect_kind": "behavior_toggle",
           "magnitude": null,
-          "target_facet": "red dragonhide from red dragons in the Brimhaven Dungeon is now noted",
+          "target_facet": "red dragonhide from red dragons in the Brimhaven Dungeon is now noted (cannot be disabled)",
           "target": {
             "kind": "region",
             "name": "Brimhaven Dungeon"
@@ -1634,7 +1864,7 @@
         {
           "effect_kind": "behavior_toggle",
           "magnitude": null,
-          "target_facet": "bars from metal dragons in the Brimhaven Dungeon are now noted",
+          "target_facet": "bars from metal dragons in the Brimhaven Dungeon are now noted, unless this feature is disabled by talking to Pirate Jackie the Fruit",
           "target": {
             "kind": "region",
             "name": "Brimhaven Dungeon"
@@ -1646,7 +1876,7 @@
         {
           "effect_kind": "rate_multiplier",
           "magnitude": 1.0,
-          "target_facet": "double Tokkul from the Fight Cave, the Inferno, and TzHaar-Ket-Rak's Challenges",
+          "target_facet": "double Tokkul from the TzHaar Fight Cave, the Inferno, and TzHaar-Ket-Rak's Challenges",
           "target": {
             "kind": "activity",
             "name": "Fight Cave"
@@ -1658,7 +1888,7 @@
         {
           "effect_kind": "recurring_resource",
           "magnitude": null,
-          "target_facet": "resurrect with full health and restored stats once per day at 0 hitpoints in the Fight Cave",
+          "target_facet": "resurrect with full health and restored stats once per day when you reach 0 hitpoints in the TzHaar Fight Cave",
           "target": {
             "kind": "activity",
             "name": "Fight Cave"
@@ -1814,6 +2044,18 @@
           "source_token": "4% chance to catch two fish at once anywhere when equipped"
         },
         {
+          "effect_kind": "stat_multiplier",
+          "magnitude": null,
+          "target_facet": "Prayer bonus of +1 when equipped, similar to the god blessings",
+          "target": {
+            "kind": "skill",
+            "name": "Prayer"
+          },
+          "condition": "while-equipped",
+          "tier_source": "kourend:medium",
+          "source_token": "Has a Prayer bonus of +1 when equipped, similar to the god blessings"
+        },
+        {
           "effect_kind": "fee_waiver",
           "magnitude": null,
           "target_facet": "free access to Crabclaw Isle, down from a fee of 5,000 coins",
@@ -1917,6 +2159,54 @@
           "source_token": "6% chance to catch two fish at once anywhere when equipped"
         },
         {
+          "effect_kind": "stat_multiplier",
+          "magnitude": null,
+          "target_facet": "Prayer bonus of +1 when equipped, similar to the god blessings",
+          "target": {
+            "kind": "skill",
+            "name": "Prayer"
+          },
+          "condition": "while-equipped",
+          "tier_source": "kourend:hard",
+          "source_token": "Has a Prayer bonus of +1 when equipped, similar to the god blessings"
+        },
+        {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "demonic ashes dropped from killed monsters are automatically scattered, granting half the Prayer experience that would have been granted for scattering them normally (via Ash sanctifier)",
+          "target": {
+            "kind": "skill",
+            "name": "Prayer"
+          },
+          "condition": "while-carried",
+          "tier_source": "kourend:hard",
+          "source_token": "causes demonic ashes dropped from killed monsters to be automatically scattered, granting half the Prayer experience that would have been granted for scattering them normally"
+        },
+        {
+          "effect_kind": "capacity_change",
+          "magnitude": null,
+          "target_facet": "Ash sanctifier is charged with death runes",
+          "target": {
+            "kind": "skill",
+            "name": "Prayer"
+          },
+          "condition": "while-carried",
+          "tier_source": "kourend:hard",
+          "source_token": "This item is charged with death runes"
+        },
+        {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "any slayer helmet can be used in place of a Shayzien helm (5) for its protection against lizardman shamans, after talking to Captain Cleive",
+          "target": {
+            "kind": "monster",
+            "name": "Lizardman shaman"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "kourend:hard",
+          "source_token": "Any slayer helmet can be used in place of a Shayzien helm (5) for its protection against lizardman shamans, after talking to Captain Cleive"
+        },
+        {
           "effect_kind": "fee_waiver",
           "magnitude": 0.6,
           "target_facet": "discount on Eodan's tanning services, up from 40%",
@@ -2002,6 +2292,18 @@
           "condition": "while-equipped",
           "tier_source": "kourend:elite",
           "source_token": "8% chance to catch two fish at once anywhere when equipped"
+        },
+        {
+          "effect_kind": "stat_multiplier",
+          "magnitude": null,
+          "target_facet": "Prayer bonus of +2, up from +1, the highest of any item in the ammunition slot",
+          "target": {
+            "kind": "skill",
+            "name": "Prayer"
+          },
+          "condition": "while-equipped",
+          "tier_source": "kourend:elite",
+          "source_token": "Has a Prayer bonus of +2, up from +1, the highest of any item in the ammunition slot"
         },
         {
           "effect_kind": "rate_multiplier",
@@ -2231,7 +2533,7 @@
         {
           "effect_kind": "stat_multiplier",
           "magnitude": 0.1,
-          "target_facet": "experience from Tears of Guthix",
+          "target_facet": "increased experience from Tears of Guthix",
           "target": {
             "kind": "activity",
             "name": "Tears of Guthix"
@@ -2298,7 +2600,7 @@
         {
           "effect_kind": "rate_multiplier",
           "magnitude": 1.0,
-          "target_facet": "cave goblin wires stolen in Dorgesh-Kaan",
+          "target_facet": "steal twice as many cave goblin wires in Dorgesh-Kaan",
           "target": {
             "kind": "skill",
             "name": "Thieving"
@@ -2310,7 +2612,7 @@
         {
           "effect_kind": "access",
           "magnitude": null,
-          "target_facet": "use fairy rings without a Dramen or Lunar staff",
+          "target_facet": "use fairy rings without the need of a Dramen or Lunar staff",
           "target": {
             "kind": "activity",
             "name": "Fairy rings"
@@ -2363,6 +2665,18 @@
           "source_token": "Two daily teleports to the Pool of Slime beneath the Ectofuntus"
         },
         {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "Ghasts in the Mort Myre Swamp will ignore you half of the time",
+          "target": {
+            "kind": "region",
+            "name": "Mort Myre Swamp"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "morytania:easy",
+          "source_token": "Ghasts in the Mort Myre Swamp will ignore you half of the time"
+        },
+        {
           "effect_kind": "stat_multiplier",
           "magnitude": 0.025,
           "target_facet": "Slayer experience in the Slayer Tower while on a Slayer task",
@@ -2406,6 +2720,18 @@
           "source_token": "Five daily teleports to the Pool of Slime beneath the Ectofuntus"
         },
         {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "Acts as a ghostspeak amulet when worn",
+          "target": {
+            "kind": "region",
+            "name": "Morytania"
+          },
+          "condition": "while-equipped",
+          "tier_source": "morytania:medium",
+          "source_token": "Acts as a ghostspeak amulet when worn"
+        },
+        {
           "effect_kind": "recurring_resource",
           "magnitude": null,
           "target_facet": "Robin exchanges 13 bones of any kind daily for a bucket of slime and a pot of bonemeal each",
@@ -2420,7 +2746,7 @@
         {
           "effect_kind": "stat_multiplier",
           "magnitude": 0.05,
-          "target_facet": "Slayer experience in the Slayer Tower while on a Slayer task",
+          "target_facet": "Slayer experience in the Slayer Tower while on a Slayer task, up from 2.5%",
           "target": {
             "kind": "skill",
             "name": "Slayer"
@@ -2461,9 +2787,33 @@
           "source_token": "Unlimited teleports to Burgh de Rott"
         },
         {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "an additional item that, when carried, causes bones dropped from killed monsters to be automatically buried, granting half the usual Prayer experience that would have been granted for burying them normally",
+          "target": {
+            "kind": "skill",
+            "name": "Prayer"
+          },
+          "condition": "while-carried",
+          "tier_source": "morytania:hard",
+          "source_token": "causes bones dropped from killed monsters to be automatically buried, granting half the usual Prayer experience"
+        },
+        {
+          "effect_kind": "capacity_change",
+          "magnitude": null,
+          "target_facet": "this item is charged with a small amount of ecto-tokens",
+          "target": {
+            "kind": "skill",
+            "name": "Prayer"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "morytania:hard",
+          "source_token": "This item is charged with a small amount of ecto-tokens"
+        },
+        {
           "effect_kind": "recurring_resource",
           "magnitude": null,
-          "target_facet": "Robin exchanges 26 bones of any kind daily for a bucket of slime and a pot of bonemeal each",
+          "target_facet": "Robin exchanges 26 bones of any kind daily for a bucket of slime and a pot of bonemeal each, up from 13",
           "target": {
             "kind": "region",
             "name": "Port Phasmatys"
@@ -2511,7 +2861,7 @@
         {
           "effect_kind": "stat_multiplier",
           "magnitude": 0.075,
-          "target_facet": "Slayer experience in the Slayer Tower while on a Slayer task",
+          "target_facet": "Slayer experience in the Slayer Tower while on a Slayer task (instead of 5%)",
           "target": {
             "kind": "skill",
             "name": "Slayer"
@@ -2548,6 +2898,18 @@
       },
       "effects": [
         {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "Prevents ghasts from turning your food into rotten food when worn",
+          "target": {
+            "kind": "region",
+            "name": "Mort Myre Swamp"
+          },
+          "condition": "while-equipped",
+          "tier_source": "morytania:elite",
+          "source_token": "Prevents ghasts from turning your food into rotten food when worn"
+        },
+        {
           "effect_kind": "access",
           "magnitude": null,
           "target_facet": "unlimited teleports to the Pool of Slime beneath the Ectofuntus",
@@ -2562,7 +2924,7 @@
         {
           "effect_kind": "recurring_resource",
           "magnitude": null,
-          "target_facet": "Robin exchanges 39 bones of any kind daily for a bucket of slime and a pot of bonemeal each",
+          "target_facet": "Robin exchanges 39 bones of any kind daily for a bucket of slime and a pot of bonemeal each, up from 26",
           "target": {
             "kind": "region",
             "name": "Port Phasmatys"
@@ -2610,7 +2972,7 @@
         {
           "effect_kind": "stat_multiplier",
           "magnitude": 0.1,
-          "target_facet": "Slayer experience in the Slayer Tower while on a Slayer task",
+          "target_facet": "Slayer experience in the Slayer Tower while on a Slayer task, up from 7.5%",
           "target": {
             "kind": "skill",
             "name": "Slayer"
@@ -2673,6 +3035,30 @@
           "condition": "unconditional-once-earned",
           "tier_source": "varrock:easy",
           "source_token": "Zaff will sell you 15 noted battlestaves as a single stack every day"
+        },
+        {
+          "effect_kind": "capacity_change",
+          "magnitude": null,
+          "target_facet": "skull sceptre will now hold up to 14 charges, up from 10",
+          "target": {
+            "kind": "region",
+            "name": "Barbarian Village"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "varrock:easy",
+          "source_token": "The skull sceptre will now hold up to 14 charges, up from 10"
+        },
+        {
+          "effect_kind": "capacity_change",
+          "magnitude": null,
+          "target_facet": "individual parts used to make the skull sceptre give an extra bone fragment per component when chiselled",
+          "target": {
+            "kind": "region",
+            "name": "Barbarian Village"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "varrock:easy",
+          "source_token": "give an extra bone fragment per component when chiselled"
         }
       ],
       "extra_unlocks": [],
@@ -2740,6 +3126,30 @@
           "condition": "unconditional-once-earned",
           "tier_source": "varrock:medium",
           "source_token": "toggle the destination of Varrock Teleport from Varrock Square to the Grand Exchange"
+        },
+        {
+          "effect_kind": "capacity_change",
+          "magnitude": null,
+          "target_facet": "skull sceptre will now hold up to 18 charges, up from 14",
+          "target": {
+            "kind": "region",
+            "name": "Barbarian Village"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "varrock:medium",
+          "source_token": "The skull sceptre will now hold up to 18 charges, up from 14"
+        },
+        {
+          "effect_kind": "capacity_change",
+          "magnitude": null,
+          "target_facet": "individual parts used to make the skull sceptre give two extra bone fragments per component when chiselled",
+          "target": {
+            "kind": "region",
+            "name": "Barbarian Village"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "varrock:medium",
+          "source_token": "give two extra bone fragments per component when chiselled"
         }
       ],
       "extra_unlocks": [],
@@ -2819,6 +3229,30 @@
           "condition": "unconditional-once-earned",
           "tier_source": "varrock:hard",
           "source_token": "Access to the bank in the Cooks' Guild and a range at only 2 tiles away from it"
+        },
+        {
+          "effect_kind": "capacity_change",
+          "magnitude": null,
+          "target_facet": "skull sceptre will now hold up to 22 charges, up from 18",
+          "target": {
+            "kind": "region",
+            "name": "Barbarian Village"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "varrock:hard",
+          "source_token": "The skull sceptre will now hold up to 22 charges, up from 18"
+        },
+        {
+          "effect_kind": "capacity_change",
+          "magnitude": null,
+          "target_facet": "individual parts used to make the skull sceptre give three extra bone fragments per component when chiselled",
+          "target": {
+            "kind": "region",
+            "name": "Barbarian Village"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "varrock:hard",
+          "source_token": "give three extra bone fragments per component when chiselled"
         }
       ],
       "extra_unlocks": [],
@@ -2839,6 +3273,18 @@
         "lamp_item": "Antique lamp (elite)"
       },
       "effects": [
+        {
+          "effect_kind": "stat_multiplier",
+          "magnitude": null,
+          "target_facet": "can be worn in place of a prospector jacket for clue steps, and provides the experience bonus of the full outfit",
+          "target": {
+            "kind": "skill",
+            "name": "Mining"
+          },
+          "condition": "while-equipped",
+          "tier_source": "varrock:elite",
+          "source_token": "Can be worn in place of a prospector jacket for clue steps, and provides the experience bonus of the full outfit"
+        },
         {
           "effect_kind": "rate_multiplier",
           "magnitude": 0.1,
@@ -2874,6 +3320,30 @@
           "condition": "unconditional-once-earned",
           "tier_source": "varrock:elite",
           "source_token": "Zaff will sell you 120 noted battlestaves as a single stack every day"
+        },
+        {
+          "effect_kind": "capacity_change",
+          "magnitude": null,
+          "target_facet": "skull sceptre will now hold up to 26 charges, up from 22",
+          "target": {
+            "kind": "region",
+            "name": "Barbarian Village"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "varrock:elite",
+          "source_token": "The skull sceptre will now hold up to 26 charges, up from 22"
+        },
+        {
+          "effect_kind": "capacity_change",
+          "magnitude": null,
+          "target_facet": "individual parts used to make the skull sceptre give four extra bone fragments per component when chiselled",
+          "target": {
+            "kind": "region",
+            "name": "Barbarian Village"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "varrock:elite",
+          "source_token": "give four extra bone fragments per component when chiselled"
         }
       ],
       "extra_unlocks": [],
@@ -2960,6 +3430,18 @@
           "condition": "unconditional-once-earned",
           "tier_source": "western:medium",
           "source_token": "Rantz offers you 50 ogre arrows for free every day"
+        },
+        {
+          "effect_kind": "capacity_change",
+          "magnitude": null,
+          "target_facet": "crystal saw will now hold up to 56 charges, up from 28",
+          "target": {
+            "kind": "skill",
+            "name": "Construction"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "western:medium",
+          "source_token": "The crystal saw will now hold up to 56 charges, up from 28"
         }
       ],
       "extra_unlocks": [],
@@ -3005,6 +3487,30 @@
           "source_token": "Rantz offers you 100 ogre arrows for free every day"
         },
         {
+          "effect_kind": "capacity_change",
+          "magnitude": null,
+          "target_facet": "Teleport crystals will now hold up to 5 charges, up from 3",
+          "target": {
+            "kind": "region",
+            "name": "Lletya"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "western:hard",
+          "source_token": "Teleport crystals will now hold up to 5 charges, up from 3"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "void knight top and robe can now be upgraded into an elite void top and robe for 200 commendation points each",
+          "target": {
+            "kind": "activity",
+            "name": "Pest Control"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "western:hard",
+          "source_token": "The void knight top and robe can now be upgraded into an elite void top and robe for 200 commendation points each, by speaking to the Elite Void Knight"
+        },
+        {
           "effect_kind": "access",
           "magnitude": null,
           "target_facet": "access to the room with the monkey skull in the Temple of Marimbo Dungeon to make the ancient gorilla greegree",
@@ -3027,6 +3533,18 @@
           "condition": "unconditional-once-earned",
           "tier_source": "western:hard",
           "source_token": "Access to the Hunting expert's private Red chinchompa hunting ground"
+        },
+        {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "Islwyn now sells Crystal halberds for 750,000 coins, and you gain the ability to create them yourself (with 78 Crafting and 78 Smithing)",
+          "target": {
+            "kind": "skill",
+            "name": "Crafting"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "western:hard",
+          "source_token": "you gain the ability to create them yourself (with 78 Crafting and 78 Smithing)"
         }
       ],
       "extra_unlocks": [],
@@ -3062,7 +3580,7 @@
         {
           "effect_kind": "rate_multiplier",
           "magnitude": 1.0,
-          "target_facet": "two chompy birds always appear at once when chompy bird hunting",
+          "target_facet": "two chompy birds will always appear at once when chompy bird hunting",
           "target": {
             "kind": "activity",
             "name": "Chompy bird hunting"
@@ -3070,6 +3588,18 @@
           "condition": "unconditional-once-earned",
           "tier_source": "western:elite",
           "source_token": "Two chompy birds will always appear at once when chompy bird hunting"
+        },
+        {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "chance of receiving a chompy chick when chompy bird hunting, at a rate of 1/500",
+          "target": {
+            "kind": "activity",
+            "name": "Chompy bird hunting"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "western:elite",
+          "source_token": "Chance of receiving a chompy chick when chompy bird hunting, at a rate of 1/500"
         },
         {
           "effect_kind": "recurring_resource",
@@ -3082,6 +3612,30 @@
           "condition": "unconditional-once-earned",
           "tier_source": "western:elite",
           "source_token": "Rantz offers you 150 ogre arrows for free every day"
+        },
+        {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "Nieve/Steve now grant as many slayer reward points as Duradel/Kuradal",
+          "target": {
+            "kind": "skill",
+            "name": "Slayer"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "western:elite",
+          "source_token": "Nieve/Steve now grant as many slayer reward points as Duradel/Kuradal"
+        },
+        {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "resurrect with full health and restored stats once per day when you reach 0 hitpoints against Zulrah, considered a safe death for Hardcore Ironman players",
+          "target": {
+            "kind": "monster",
+            "name": "Zulrah"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "western:elite",
+          "source_token": "Resurrect with full health and restored stats once per day when you reach 0 hitpoints against Zulrah"
         }
       ],
       "extra_unlocks": [],
@@ -3102,6 +3656,18 @@
         "lamp_item": "Antique lamp (easy)"
       },
       "effects": [
+        {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "Wilderness sword always slashes webs successfully",
+          "target": {
+            "kind": "region",
+            "name": "Wilderness"
+          },
+          "condition": "while-equipped",
+          "tier_source": "wilderness:easy",
+          "source_token": "Always slashes webs successfully"
+        },
         {
           "effect_kind": "access",
           "magnitude": null,
@@ -3184,7 +3750,7 @@
         {
           "effect_kind": "access",
           "magnitude": null,
-          "target_facet": "crevice shortcut in the Deep Wilderness Dungeon (with 46 Agility)",
+          "target_facet": "crevice shortcut / faster access in the Deep Wilderness Dungeon (with 46 Agility)",
           "target": {
             "kind": "region",
             "name": "Deep Wilderness Dungeon"
@@ -3321,6 +3887,18 @@
           "source_token": "Possess up to 5 ecumenical keys at a time, up from 4"
         },
         {
+          "effect_kind": "access",
+          "magnitude": null,
+          "target_facet": "ecumenical keys can now be sold to the Lesser Fanatic in Edgeville for 61,500 coins each",
+          "target": {
+            "kind": "activity",
+            "name": "God Wars Dungeon"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "wilderness:hard",
+          "source_token": "Ecumenical keys can now be sold to the Lesser Fanatic in Edgeville for 61,500 coins each"
+        },
+        {
           "effect_kind": "recurring_resource",
           "magnitude": null,
           "target_facet": "Lundail offers 120 random runes for free every day",
@@ -3355,6 +3933,30 @@
           "condition": "unconditional-once-earned",
           "tier_source": "wilderness:hard",
           "source_token": "67% more loot from chests in the Rogues' Castle"
+        },
+        {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "select your destination when using Wilderness obelisks, instead of being teleported to a random obelisk",
+          "target": {
+            "kind": "region",
+            "name": "Wilderness"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "wilderness:hard",
+          "source_token": "select your destination when using Wilderness obelisks, instead of being teleported to a random obelisk"
+        },
+        {
+          "effect_kind": "behavior_toggle",
+          "magnitude": null,
+          "target_facet": "no longer a delay of 3 ticks (1.8 seconds) when using a teleport in the Revenant Caves or any of the Wilderness boss caves",
+          "target": {
+            "kind": "region",
+            "name": "Revenant Caves"
+          },
+          "condition": "unconditional-once-earned",
+          "tier_source": "wilderness:hard",
+          "source_token": "no longer have a delay of 3 ticks (1.8 seconds) when using a teleport in the Revenant Caves or any of the Wilderness boss caves"
         },
         {
           "effect_kind": "behavior_toggle",

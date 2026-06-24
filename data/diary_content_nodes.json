@@ -110,6 +110,12 @@
       "slug": "fishing-trawler"
     },
     {
+      "id": "activity:fossegrimen-offerings",
+      "kind": "activity",
+      "name": "Fossegrimen offerings",
+      "slug": "fossegrimen-offerings"
+    },
+    {
       "id": "activity:god-wars-dungeon",
       "kind": "activity",
       "name": "God Wars Dungeon",
@@ -140,10 +146,22 @@
       "slug": "ourania-altar"
     },
     {
+      "id": "activity:pest-control",
+      "kind": "activity",
+      "name": "Pest Control",
+      "slug": "pest-control"
+    },
+    {
       "id": "activity:pollnivneach-rooftop-course",
       "kind": "activity",
       "name": "Pollnivneach Rooftop Course",
       "slug": "pollnivneach-rooftop-course"
+    },
+    {
+      "id": "activity:pyramid-plunder",
+      "kind": "activity",
+      "name": "Pyramid Plunder",
+      "slug": "pyramid-plunder"
     },
     {
       "id": "activity:rellekka-rooftop-course",
@@ -188,6 +206,12 @@
       "slug": "artio"
     },
     {
+      "id": "monster:aviansie",
+      "kind": "monster",
+      "name": "Aviansie",
+      "slug": "aviansie"
+    },
+    {
       "id": "monster:callisto",
       "kind": "monster",
       "name": "Callisto",
@@ -230,6 +254,12 @@
       "slug": "lizardman"
     },
     {
+      "id": "monster:lizardman-shaman",
+      "kind": "monster",
+      "name": "Lizardman shaman",
+      "slug": "lizardman-shaman"
+    },
+    {
       "id": "monster:spindel",
       "kind": "monster",
       "name": "Spindel",
@@ -254,6 +284,12 @@
       "slug": "zombie-pirate"
     },
     {
+      "id": "monster:zulrah",
+      "kind": "monster",
+      "name": "Zulrah",
+      "slug": "zulrah"
+    },
+    {
       "id": "region:ardougne",
       "kind": "region",
       "name": "Ardougne",
@@ -270,6 +306,18 @@
       "kind": "region",
       "name": "Ardougne Monastery",
       "slug": "ardougne-monastery"
+    },
+    {
+      "id": "region:barbarian-village",
+      "kind": "region",
+      "name": "Barbarian Village",
+      "slug": "barbarian-village"
+    },
+    {
+      "id": "region:baxtorian-falls",
+      "kind": "region",
+      "name": "Baxtorian Falls",
+      "slug": "baxtorian-falls"
     },
     {
       "id": "region:brimhaven",
@@ -404,6 +452,12 @@
       "slug": "kalphite-lair"
     },
     {
+      "id": "region:kandarin",
+      "kind": "region",
+      "name": "Kandarin",
+      "slug": "kandarin"
+    },
+    {
       "id": "region:karamja",
       "kind": "region",
       "name": "Karamja",
@@ -428,6 +482,12 @@
       "slug": "kourend-woodland"
     },
     {
+      "id": "region:lletya",
+      "kind": "region",
+      "name": "Lletya",
+      "slug": "lletya"
+    },
+    {
       "id": "region:lunar-isle",
       "kind": "region",
       "name": "Lunar Isle",
@@ -450,6 +510,12 @@
       "kind": "region",
       "name": "Mort Myre Swamp",
       "slug": "mort-myre-swamp"
+    },
+    {
+      "id": "region:morytania",
+      "kind": "region",
+      "name": "Morytania",
+      "slug": "morytania"
     },
     {
       "id": "region:mount-karuulm",
@@ -488,6 +554,12 @@
       "slug": "red-chinchompa-hunting-ground"
     },
     {
+      "id": "region:rellekka",
+      "kind": "region",
+      "name": "Rellekka",
+      "slug": "rellekka"
+    },
+    {
       "id": "region:rellekka-marketplace",
       "kind": "region",
       "name": "Rellekka marketplace",
@@ -500,16 +572,22 @@
       "slug": "resource-area"
     },
     {
+      "id": "region:revenant-caves",
+      "kind": "region",
+      "name": "Revenant Caves",
+      "slug": "revenant-caves"
+    },
+    {
       "id": "region:rogues-castle",
       "kind": "region",
       "name": "Rogues' Castle",
       "slug": "rogues-castle"
     },
     {
-      "id": "region:seers-village-bank",
+      "id": "region:seers-village",
       "kind": "region",
-      "name": "Seers' Village bank",
-      "slug": "seers-village-bank"
+      "name": "Seers' Village",
+      "slug": "seers-village"
     },
     {
       "id": "region:shantay-pass",
