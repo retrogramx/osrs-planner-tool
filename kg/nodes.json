@@ -3741,6 +3741,16 @@
   },
   {
     "data": {
+      "is_canonical": true,
+      "members": true
+    },
+    "id": "item:22446",
+    "kind": "item",
+    "name": "Vial of blood",
+    "slug": "22446"
+  },
+  {
+    "data": {
       "is_canonical": false,
       "members": true,
       "version_anchor": "Uncharged"
@@ -3908,6 +3918,16 @@
     "kind": "item",
     "name": "Infernal axe (uncharged)",
     "slug": "25371"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
+    "id": "item:2550",
+    "kind": "item",
+    "name": "Ring of recoil",
+    "slug": "2550"
   },
   {
     "data": {
@@ -4218,6 +4238,16 @@
     "kind": "item",
     "name": "Dragon scimitar",
     "slug": "dragon-scimitar"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
+    "id": "item:565",
+    "kind": "item",
+    "name": "Blood rune",
+    "slug": "565"
   },
   {
     "data": {
@@ -6128,6 +6158,26 @@
     "kind": "quest",
     "name": "Zogre Flesh Eaters",
     "slug": "zogre-flesh-eaters"
+  },
+  {
+    "data": {
+      "charge_capacity": 100000,
+      "charge_yield": 40
+    },
+    "id": "recipe:charge-ring-of-suffering",
+    "kind": "recipe",
+    "name": "Charge Ring of suffering",
+    "slug": "charge-ring-of-suffering"
+  },
+  {
+    "data": {
+      "charge_capacity": 20000,
+      "charge_yield": 100
+    },
+    "id": "recipe:charge-scythe-of-vitur",
+    "kind": "recipe",
+    "name": "Charge Scythe of vitur",
+    "slug": "charge-scythe-of-vitur"
   },
   {
     "data": {},

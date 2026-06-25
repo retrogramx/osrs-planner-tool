@@ -33,6 +33,7 @@ from kg_ingest.builders.goals import build_goals
 from kg_ingest.builders.items import build_items
 from kg_ingest.builders.quest_rewards import build_quest_rewards
 from kg_ingest.builders.quests import build_quests
+from kg_ingest.builders.recipes import build_recipes
 from kg_ingest.builders.supporting import build_supporting
 
 GROUP_OFFSET = 4_000_000
@@ -244,6 +245,15 @@ def _load_diary_content_node_records() -> list[dict]:
     return json.loads(DIARY_CONTENT_NODES_PATH.read_text())["records"]
 
 
+CHARGE_RECIPES_PATH = Path(__file__).resolve().parents[1] / "data" / "charge_recipes.json"
+
+
+def _load_charge_recipe_records() -> list[dict]:
+    if not CHARGE_RECIPES_PATH.exists():
+        return []
+    return json.loads(CHARGE_RECIPES_PATH.read_text())["records"]
+
+
 def _write_json(path: Path, payload: list) -> None:
     text = json.dumps(payload, indent=2, sort_keys=True, ensure_ascii=False)
     path.write_text(text + "\n")
@@ -306,26 +316,28 @@ def assemble() -> None:
         | {n.id for n in dg_nodes}
         | {n.id for n in content_nodes}
     )
-    # Snapshot taken BEFORE i_edges are appended. Safe only while build_items emits
-    # exclusively item→item same_entity edges (both endpoints are item nodes it owns,
-    # and 'item' is already in _LEAF_DOMAINS). If build_items ever emits an edge to a
-    # NEW non-item leaf node, this snapshot would miss it — update the ordering then.
+    # Recipe layer: emit recipe nodes + consumes/produces edges FIRST, so the consumed/produced
+    # item ids land in referenced_item_ids and build_items auto-imports the material nodes.
+    r_nodes, r_edges, _ = build_recipes(_load_charge_recipe_records())
+    r_nodes, r_edges, _ = rekey(r_nodes, r_edges, {})
+    edges = edges + r_edges
+    owned_ids = owned_ids | {n.id for n in r_nodes}
+
     referenced_all = _collect_referenced_ids(edges, groups)
-    # Item nodes: build_items owns referenced items (in the dictionary) NOT already owned,
-    # plus the curated exemplar/family rosters. It is re-keyed in its own call.
     referenced_item_ids = {r for r in referenced_all if r.startswith("item:")} - owned_ids
     i_nodes, i_edges, _ = build_items(
         _load_item_dict_records(), _load_item_exemplars(), _load_item_families(),
         referenced_item_ids, owned_ids=frozenset(owned_ids),
     )
-    # rekey detects edge-id collisions only WITHIN a single call. The items edges are
-    # rekeyed here in their own call, so an item:* node that is the src of edges in BOTH
-    # an earlier builder's rekey and this one would mint the same global id in both calls.
-    # Inert today (no item node is a src in two builders), and validate_kg.py's
-    # duplicate-edge-id check (amendment C) is the committed backstop. The next
-    # edge-layer slice (charge/recipe edges with item srcs) must watch this.
     i_nodes, i_edges, _ = rekey(i_nodes, i_edges, {})
     edges = edges + i_edges
+    # Global edge-id uniqueness (fail-fast): rekey only de-dups WITHIN one call; this catches a
+    # cross-call collision (an item:* src re-keyed in two builders) before it ships. validate_kg's
+    # amendment-C duplicate-edge-id check is the committed backstop.
+    _eids = [e.id for e in edges]
+    if len(_eids) != len(set(_eids)):
+        _dupes = sorted({i for i in _eids if _eids.count(i) > 1})
+        raise ValueError(f"duplicate global edge ids after rekey: {_dupes[:10]}")
     owned_ids = owned_ids | {n.id for n in i_nodes}
     referenced = {
         r for r in referenced_all
@@ -338,7 +350,7 @@ def assemble() -> None:
     #    (with tasks list) is first-seen and wins if any stale supporting diary node
     #    were somehow included (it shouldn't be, since diary is excluded from _LEAF_DOMAINS).
     nodes = dedup_nodes(
-        q_nodes + g_nodes + cg_nodes + d_nodes + dg_nodes + content_nodes + i_nodes + s_nodes
+        q_nodes + g_nodes + cg_nodes + d_nodes + dg_nodes + content_nodes + r_nodes + i_nodes + s_nodes
     )
 
     # 5) serialize, sorted deterministically.

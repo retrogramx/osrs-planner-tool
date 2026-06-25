@@ -1648,6 +1648,17 @@
   {
     "cond_group": null,
     "data": {
+      "qty": 1,
+      "role": "material"
+    },
+    "dst": "item:22446",
+    "id": 6345139,
+    "src": "recipe:charge-scythe-of-vitur",
+    "type": "consumes"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "condition": "while-equipped",
       "effect_kind": "rate_multiplier",
       "magnitude": 0.1,
@@ -1940,6 +1951,17 @@
     "id": 6395512,
     "src": "item:25736",
     "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 200,
+      "role": "material"
+    },
+    "dst": "item:565",
+    "id": 6401279,
+    "src": "recipe:charge-scythe-of-vitur",
+    "type": "consumes"
   },
   {
     "cond_group": null,
@@ -3102,12 +3124,34 @@
     "type": "effect"
   },
   {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "role": "subject"
+    },
+    "dst": "item:19550",
+    "id": 6628302,
+    "src": "recipe:charge-ring-of-suffering",
+    "type": "consumes"
+  },
+  {
     "cond_group": 4473576,
     "data": {},
     "dst": null,
     "id": 6628640,
     "src": "diary:fremennik:easy",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1,
+      "role": "material"
+    },
+    "dst": "item:2550",
+    "id": 6632188,
+    "src": "recipe:charge-ring-of-suffering",
+    "type": "consumes"
   },
   {
     "cond_group": null,
@@ -6030,6 +6074,16 @@
   {
     "cond_group": null,
     "data": {
+      "qty": 1
+    },
+    "dst": "item:22325",
+    "id": 7292663,
+    "src": "recipe:charge-scythe-of-vitur",
+    "type": "produces"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "amount": 50000,
       "form": "fixed",
       "reward": "xp"
@@ -6752,6 +6806,17 @@
   {
     "cond_group": null,
     "data": {
+      "qty": 1,
+      "role": "subject"
+    },
+    "dst": "item:22486",
+    "id": 7460736,
+    "src": "recipe:charge-scythe-of-vitur",
+    "type": "consumes"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 1
     },
     "dst": "goal:achievement-diary-cape",
@@ -6908,6 +6973,16 @@
     "id": 7494901,
     "src": "item:13109",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "qty": 1
+    },
+    "dst": "item:20655",
+    "id": 7499247,
+    "src": "recipe:charge-ring-of-suffering",
+    "type": "produces"
   },
   {
     "cond_group": null,
