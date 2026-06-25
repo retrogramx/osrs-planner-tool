@@ -1,0 +1,11 @@
+{
+  "_provenance": {"note": "competency-questions CI gate (decision 9, from day one)", "accessed": "2026-06-25"},
+  "records": [
+    { "id": "cq-item-variants-amulet-of-glory",
+      "question": "What are all variants of the Amulet of glory?",
+      "method": "same_entity_members", "target": "item:amulet-of-glory", "expect_min": 5 },
+    { "id": "cq-item-family-scythe-of-vitur",
+      "question": "What are all Scythes of vitur (every kit)?",
+      "method": "same_entity_family", "target": "item:scythe-of-vitur-family", "expect_min": 5 }
+  ]
+}
