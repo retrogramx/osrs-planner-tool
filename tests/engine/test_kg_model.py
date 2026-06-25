@@ -24,7 +24,7 @@ def test_node_kind_is_str_enum():
 def test_edge_type_members_match_schema():
     assert {e.value for e in EdgeType} == {
         "requires", "grants", "drops", "located_in", "gated_by",
-        "effect", "progress_towards", "supersedes",
+        "effect", "progress_towards", "supersedes", "same_entity",
     }
 
 
@@ -199,3 +199,21 @@ def test_edge_is_frozen():
     e = Edge(id=9004, type=EdgeType.REQUIRES, src="npc:7221", dst="access:scurrius-lair")
     with pytest.raises(dataclasses.FrozenInstanceError):
         e.dst = "region:varrock"  # type: ignore[misc]
+
+
+def test_same_entity_edge_type_exists_and_roundtrips():
+    import json, pathlib
+    from osrs_planner.engine.kg.json_store import edge_to_dict, edge_from_dict
+
+    assert EdgeType.SAME_ENTITY.value == "same_entity"
+    e = Edge(id=1, type=EdgeType.SAME_ENTITY, src="item:1712", dst="item:amulet-of-glory",
+             cond_group=None, data={"basis": "x"})
+    assert edge_from_dict(edge_to_dict(e)) == e
+
+
+def test_schema_declares_same_entity_live():
+    import json, pathlib
+
+    schema = json.load(open(pathlib.Path(__file__).resolve().parents[2] / "kg" / "schema.json"))
+    assert schema["edge_kinds"]["same_entity"]["status"] == "live"
+    assert "is_page" in schema["node_kinds"]["item"]["data_keys"]

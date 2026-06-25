@@ -42,6 +42,7 @@ class EdgeType(str, Enum):
     EFFECT = "effect"                  # a passive/permanent perk riding on a granted item/unlock (spec §4)
     PROGRESS_TOWARDS = "progress_towards"  # counting contribution toward a goal node; data={weight} (spec §5)
     SUPERSEDES = "supersedes"          # item upgrade ladder (cloak 1≺2≺3≺4); inert to gating
+    SAME_ENTITY = "same_entity"        # identity bridge (variant->page, page->family); decision 5/6
 
 
 class Op(str, Enum):
