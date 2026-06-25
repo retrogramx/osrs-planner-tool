@@ -1,4 +1,6 @@
 import dataclasses
+import json
+import pathlib
 
 import pytest
 
@@ -6,6 +8,7 @@ from osrs_planner.engine.kg.model import (
     NodeKind, EdgeType, Op, AtomType,
     Node, ConditionAtom, ConditionGroup, Edge,
 )
+from osrs_planner.engine.kg.json_store import edge_to_dict, edge_from_dict
 
 
 def test_node_kind_members_match_schema_taxonomy():
@@ -202,9 +205,6 @@ def test_edge_is_frozen():
 
 
 def test_same_entity_edge_type_exists_and_roundtrips():
-    import json, pathlib
-    from osrs_planner.engine.kg.json_store import edge_to_dict, edge_from_dict
-
     assert EdgeType.SAME_ENTITY.value == "same_entity"
     e = Edge(id=1, type=EdgeType.SAME_ENTITY, src="item:1712", dst="item:amulet-of-glory",
              cond_group=None, data={"basis": "x"})
@@ -212,8 +212,7 @@ def test_same_entity_edge_type_exists_and_roundtrips():
 
 
 def test_schema_declares_same_entity_live():
-    import json, pathlib
-
-    schema = json.load(open(pathlib.Path(__file__).resolve().parents[2] / "kg" / "schema.json"))
+    with open(pathlib.Path(__file__).resolve().parents[2] / "kg" / "schema.json") as f:
+        schema = json.load(f)
     assert schema["edge_kinds"]["same_entity"]["status"] == "live"
     assert "is_page" in schema["node_kinds"]["item"]["data_keys"]
