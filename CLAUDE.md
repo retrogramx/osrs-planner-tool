@@ -14,9 +14,12 @@ ingestion) toward a **richly-typed entity graph of all of Gielinor**.
 ## Architecture (deterministic data pipeline)
 `data/*.json` (source-grounded data) → `kg_ingest/builders/*.py` (per-domain builders) → `kg_ingest/assemble.py`
 → committed **`kg/{nodes,edges,condition_groups}.json`** (the graph).
-- **Engine:** `src/osrs_planner/engine/kg/` — `model.py` (NodeKind/EdgeType/AtomType), `store.py`/`json_store.py`,
-  `conditions.py`. The `requires` + condition-atom (AND/OR/NOT) evaluator is the spine — reused for quests, diaries,
-  transport, shops, recipes, combat, difficulty.
+- **Graph model:** `src/osrs_planner/engine/kg/` — `model.py` (NodeKind/EdgeType/AtomType + ConditionAtom/Group),
+  `store.py`/`json_store.py` (KGStore).
+- **Evaluator (the spine):** `src/osrs_planner/engine/` — `conditions.py` (`atom_satisfied`/`evaluate`),
+  `state.py` (AccountState), `kleene.py` (three-valued `Tri`), `engine.py`, `cards.py`. Evaluates a `requires`
+  cond_group (AND/OR/NOT) against AccountState → met/blocked/unknown; reused for quests, diaries, transport, shops,
+  recipes, combat, difficulty. The entity-graph build reuses this — don't reinvent it.
 - **Validators (structural/graph invariants):** `data/validate_kg.py`, `data/validate_*.py`.
 - **Verifiers (source-grounding gates):** `data/verify_*.py` — check every datum against the wiki snapshot.
 - **Account mirror:** `src/osrs_planner/` (hiscores, profile, account detect).
