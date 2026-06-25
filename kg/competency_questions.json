@@ -7,5 +7,8 @@
     { "id": "cq-item-family-scythe-of-vitur",
       "question": "What are all Scythes of vitur (every kit)?",
       "method": "same_entity_family", "target": "item:scythe-of-vitur-family", "expect_min": 5 }
+    ,{ "id": "cq-charge-cost-scythe-of-vitur",
+      "question": "What materials does it cost to charge a Scythe of vitur?",
+      "method": "recipe_materials", "target": "recipe:charge-scythe-of-vitur", "expect_min": 2 }
   ]
 }

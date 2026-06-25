@@ -15,6 +15,10 @@ def _family(store, target):
         out |= _members(store, anchor)              # member page -> its variants
     return out
 
+def _recipe_materials(store, target):
+    return {e.dst for e in store.edges
+            if e.type is EdgeType.CONSUMES and e.src == target and (e.data or {}).get("role") == "material"}
+
 def test_all_competency_questions_pass():
     store = JsonKGStore.from_dir(KG)
     with open(ROOT / "kg" / "competency_questions.json") as f:
@@ -25,6 +29,8 @@ def test_all_competency_questions_pass():
             answer = _members(store, cq["target"])
         elif cq["method"] == "same_entity_family":
             answer = _family(store, cq["target"])
+        elif cq["method"] == "recipe_materials":
+            answer = _recipe_materials(store, cq["target"])
         else:
             raise AssertionError(f"unknown method {cq['method']!r}")
         assert len(answer) >= cq["expect_min"], f"{cq['id']}: got {len(answer)} < {cq['expect_min']}"
