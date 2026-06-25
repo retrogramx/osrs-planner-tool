@@ -33,8 +33,10 @@ def main() -> int:
         if slug in seen:
             errors.append(f"[slug] duplicate recipe slug {slug!r}")
         seen.add(slug)
-        if not rec.get("source_url") or not rec.get("source_token"):
-            errors.append(f"[source] {slug!r} missing source_url/source_token")
+        if not rec.get("source_url"):
+            errors.append(f"[source] {slug!r} missing source_url")
+        if not rec.get("source_token"):
+            errors.append(f"[source] {slug!r} missing source_token")
         prod, subj = rec.get("produces", {}), rec.get("subject", {})
         refs = [prod, subj] + list(rec.get("materials", []))
         for ref in refs:

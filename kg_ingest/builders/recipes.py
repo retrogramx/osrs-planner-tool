@@ -9,7 +9,7 @@ from __future__ import annotations
 from osrs_planner.engine.kg.model import Edge, EdgeType, Node, NodeKind
 from kg_ingest.ids import _stable_hash, item_id
 
-_EDGE_BAND = 0x60000000  # recipes-domain builder-local edge ids (rekeyed in assemble)
+_EDGE_BAND = 0x80000000  # recipes-domain builder-local edge ids (rekeyed in assemble)
 
 
 def _edge_id(recipe_id: str, slot: int) -> int:

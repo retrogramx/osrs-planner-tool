@@ -331,9 +331,10 @@ def assemble() -> None:
     )
     i_nodes, i_edges, _ = rekey(i_nodes, i_edges, {})
     edges = edges + i_edges
-    # Global edge-id uniqueness (fail-fast): rekey only de-dups WITHIN one call; this catches a
-    # cross-call collision (an item:* src re-keyed in two builders) before it ships. validate_kg's
-    # amendment-C duplicate-edge-id check is the committed backstop.
+    # Global edge-id uniqueness (fail-fast): rekey only de-dups WITHIN one call; this guards any
+    # duplicate global edge id across the combined builder edges (r_edges + i_edges + others),
+    # including cross-call collisions (e.g. an item:* src re-keyed in two builders) before they ship.
+    # validate_kg's amendment-C duplicate-edge-id check is the committed backstop.
     _eids = [e.id for e in edges]
     if len(_eids) != len(set(_eids)):
         _dupes = sorted({i for i in _eids if _eids.count(i) > 1})

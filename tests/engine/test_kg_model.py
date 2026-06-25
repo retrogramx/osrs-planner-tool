@@ -228,7 +228,6 @@ def test_recipe_kind_and_consumes_produces_edges_exist():
 
 
 def test_schema_declares_recipe_consumes_produces_live():
-    import json, pathlib
     schema = json.loads((pathlib.Path(__file__).resolve().parents[2] / "kg" / "schema.json").read_text())
     assert schema["node_kinds"]["recipe"]["status"] == "live"
     assert schema["edge_kinds"]["consumes"]["status"] == "live"
