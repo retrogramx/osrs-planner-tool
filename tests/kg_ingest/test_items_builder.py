@@ -53,3 +53,61 @@ def test_owned_variant_on_multivariant_page_skips_node_and_bridge():
     se_srcs = {e.src for e in edges if e.type is EdgeType.SAME_ENTITY}
     assert "item:1712" not in se_srcs                 # no bridge for the owned variant
     assert "item:1704" in se_srcs                     # bridge for the non-owned variant remains
+
+
+# --- L2 family tests ---
+
+FAMILY_DICT = DICT + [
+    {"item_id": 4081, "name": "Salve amulet", "members": True, "page_name": "Salve amulet",
+     "is_variant": False, "is_canonical": True},
+    {"item_id": 12017, "name": "Salve amulet(i)", "members": True, "page_name": "Salve amulet(i)",
+     "is_variant": True, "is_canonical": True, "version_anchor": "Nightmare Zone"},
+    {"item_id": 25250, "name": "Salve amulet(i)", "members": True, "page_name": "Salve amulet(i)",
+     "is_variant": True, "is_canonical": False, "version_anchor": "Soul Wars"},
+]
+SALVE_FAMILY = [{
+    "family_name": "Salve amulet (all variants)", "slug": "salve-amulet-family",
+    "members": [{"page": "Salve amulet", "basis": "base"},
+                {"page": "Salve amulet(i)", "basis": "imbue"}],
+}]
+
+
+def test_family_node_and_member_bridges():
+    nodes, edges, _ = build_items(FAMILY_DICT, set(), SALVE_FAMILY, set())
+    byid = _by_id(nodes)
+    fam = byid["item:salve-amulet-family"]
+    assert fam.data == {"is_family": True} and fam.name == "Salve amulet (all variants)"
+    se = {(e.src, e.dst, e.data["basis"]) for e in edges if e.type is EdgeType.SAME_ENTITY}
+    # single-variant member bridges from the VARIANT node; multi-variant member from the PAGE node
+    assert ("item:4081", "item:salve-amulet-family", "base") in se
+    assert ("item:salve-amulet-i", "item:salve-amulet-family", "imbue") in se
+
+
+def test_multicanonical_page_tolerated():
+    # Salve amulet(i) here has two is_canonical rows in real data; builder must not crash/assume singular.
+    multi = [
+        {"item_id": 25246, "name": "Ring of suffering (i)", "members": True,
+         "page_name": "Ring of suffering (i)", "is_variant": True, "is_canonical": True, "version_anchor": "Uncharged"},
+        {"item_id": 20657, "name": "Ring of suffering (i)", "members": True,
+         "page_name": "Ring of suffering (i)", "is_variant": True, "is_canonical": True, "version_anchor": "Recoil"},
+    ]
+    nodes, edges, _ = build_items(multi, {"Ring of suffering (i)"}, [], set())
+    canon = [n for n in nodes if n.data.get("is_canonical")]
+    assert len(canon) == 2   # both kept; page node still anchors
+    assert _by_id(nodes)["item:ring-of-suffering-i"].data == {"is_page": True}
+
+
+def test_owned_single_variant_family_member_skips_l2_bridge():
+    # If a single-variant member's anchor id is owned by another builder,
+    # the L2 family bridge must be skipped (src would collide on rekeyed global edge id).
+    owned_family = [{
+        "family_name": "Salve amulet (all variants)", "slug": "salve-amulet-family",
+        "members": [{"page": "Salve amulet", "basis": "base"},
+                    {"page": "Salve amulet(i)", "basis": "imbue"}],
+    }]
+    # item:4081 is the single-variant anchor for "Salve amulet" — mark it owned
+    nodes, edges, _ = build_items(FAMILY_DICT, set(), owned_family, set(),
+                                  owned_ids=frozenset({"item:4081"}))
+    se_srcs = {e.src for e in edges if e.type is EdgeType.SAME_ENTITY}
+    assert "item:4081" not in se_srcs                # owned single-variant anchor: bridge skipped
+    assert "item:salve-amulet-i" in se_srcs          # non-owned multi-variant page anchor: bridge present

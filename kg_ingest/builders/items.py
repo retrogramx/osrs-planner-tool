@@ -73,6 +73,24 @@ def build_items(dict_records, exemplar_page_names, family_records,
         if num in by_id:
             emit(_variant_node(by_id[num]))
 
-    # --- L2: cross-page families (Task 3 inserts here) ---
+    # --- L2: cross-page families (curated) ---
+    for fam in sorted(family_records, key=lambda f: f["slug"]):
+        fam_id = f"item:{fam['slug']}"
+        emit(Node(id=fam_id, kind=NodeKind.ITEM, name=fam["family_name"],
+                  slug=fam["slug"], data={"is_family": True}))
+        for m in fam["members"]:
+            recs = by_page.get(m["page"], [])
+            if len(recs) > 1:
+                anchor = _page_id(m["page"])
+            elif len(recs) == 1:
+                anchor = item_id(recs[0]["item_id"])
+                if anchor in owned_ids:
+                    continue   # single-variant anchor owned by another builder: skip bridge
+                               # (its rekeyed global edge id would collide)
+            else:
+                continue   # member page absent from dict; verify_item_families.py (Task 4) gates this
+            edges.append(Edge(id=_se_edge_id(anchor, fam_id), type=EdgeType.SAME_ENTITY,
+                              src=anchor, dst=fam_id, cond_group=None,
+                              data={"basis": m["basis"]}))
 
     return list(nodes.values()), edges, {}
