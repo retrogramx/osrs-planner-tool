@@ -1,112 +1,1859 @@
 {
-  "_about": "Varrock town ontology instance — hand-authored GOLD-STANDARD pilot for the entity graph. See data/map/ontology-template-guide.md. Pattern: copy a record, change the values. Zaff's shop below is the fully-worked example (incl. the diary-gated conditional offers); everything marked _TODO is yours to flesh out.",
+  "_about": "Varrock town ontology instance — transcribed from the full Varrock wiki page hierarchy (History/Transportation/Locations[Stores,Pubs,...]/Quests/Inhabitants/Music) into the entity-graph shape. GOLD-STANDARD PILOT — owner editorial review pending; the moneymaking profit tables are intentionally NOT stored (derived, computed by the moneymaking layer).",
   "_provenance": {
-    "source": "OSRS Wiki (https://oldschool.runescape.wiki)",
-    "accessed": "",
-    "author": "owner",
+    "source": "https://oldschool.runescape.wiki/w/Varrock",
+    "method": "LLM section extraction, owner-reviewed",
     "license": "CC BY-NC-SA 3.0"
   },
-
   "places": [
-    { "id": "place:gielinor",  "place_type": "world",   "name": "Gielinor",  "located_in": null,
-      "source_url": "https://oldschool.runescape.wiki/w/Gielinor" },
-    { "id": "place:misthalin", "place_type": "kingdom", "name": "Misthalin", "located_in": "place:gielinor",
-      "ruled_by": "npc:king-roald-iii", "faction": "humans",
-      "source_url": "https://oldschool.runescape.wiki/w/Misthalin" },
-    { "id": "place:varrock",   "place_type": "city",    "name": "Varrock",   "located_in": "place:misthalin",
-      "ruled_by": "npc:king-roald-iii",
-      "source_url": "https://oldschool.runescape.wiki/w/Varrock" },
-
-    { "id": "place:varrock-square", "place_type": "district", "name": "Varrock Square", "located_in": "place:varrock",
-      "source_url": "https://oldschool.runescape.wiki/w/Varrock_Square" },
-    { "id": "place:varrock-palace", "place_type": "district", "name": "Varrock Palace", "located_in": "place:varrock",
-      "source_url": "https://oldschool.runescape.wiki/w/Varrock_Palace" }
-  ],
-  "_places_todo": [
-    "Add the rest of Varrock's districts/areas as place_type=district located_in place:varrock:",
-    "Champions' Guild, Cooks' Guild, Varrock west/east bank areas, the south-east mine, the slums,",
-    "Aubury's rune shop area, the Grand Exchange, Saradomin church, the Museum, the sewers/entrance."
-  ],
-
-  "npcs": [
     {
-      "id": "npc:zaff", "name": "Zaff", "role": "shopkeeper", "located_in": "place:varrock-square",
-      "operates": ["shop:zaffs-superior-staffs"],
-      "source_url": "https://oldschool.runescape.wiki/w/Zaff"
+      "id": "place:gielinor",
+      "place_type": "world",
+      "name": "Gielinor",
+      "located_in": null,
+      "source_url": "https://oldschool.runescape.wiki/w/Gielinor"
     },
     {
-      "id": "npc:king-roald-iii", "name": "King Roald III", "role": "ruler", "located_in": "place:varrock-palace",
-      "source_url": "https://oldschool.runescape.wiki/w/King_Roald"
+      "id": "place:misthalin",
+      "place_type": "kingdom",
+      "name": "Misthalin",
+      "located_in": "place:gielinor",
+      "ruled_by": "npc:king-roald",
+      "faction": "humans",
+      "source_url": "https://oldschool.runescape.wiki/w/Misthalin"
+    },
+    {
+      "id": "place:varrock",
+      "place_type": "city",
+      "name": "Varrock",
+      "located_in": "place:misthalin",
+      "ruled_by": "npc:king-roald",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock",
+      "faction": "Misthalin"
+    },
+    {
+      "id": "place:varrock-sewers",
+      "name": "Varrock Sewers",
+      "place_type": "dungeon",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "place:varrock-palace",
+      "name": "Varrock Palace",
+      "place_type": "district",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "place:varrock-chapel",
+      "name": "Varrock chapel",
+      "place_type": "district",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "place:zamorakian-chapel-varrock",
+      "name": "Zamorakian chapel",
+      "place_type": "district",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "place:leptoc-mansion",
+      "name": "Leptoc Mansion",
+      "place_type": "district",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "place:varrock-square",
+      "name": "Varrock Square",
+      "place_type": "district",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "place:varrock-museum",
+      "name": "Varrock Museum",
+      "place_type": "museum",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "place:varrock-church",
+      "name": "Varrock Church",
+      "place_type": "church",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "place:blue-moon-inn",
+      "name": "Blue Moon Inn",
+      "place_type": "pub",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "place:dancing-donkey-inn",
+      "name": "Dancing Donkey Inn",
+      "place_type": "pub",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "place:jolly-boar-inn",
+      "name": "Jolly Boar Inn",
+      "place_type": "pub",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "place:rat-pits",
+      "name": "Rat Pits",
+      "place_type": "district",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "place:grand-exchange",
+      "name": "Grand Exchange",
+      "place_type": "grand_exchange",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
     }
   ],
-  "_npcs_todo": [
-    "Add notable Varrock NPCs: Aubury (runes), Thessaly (armour), Horvik (plate), Lowe (archery),",
-    "Baraek (fur), the Varrock bankers, Reldo (librarian), Curator Haig Halen (museum/Kudos), etc.",
-    "Wire each shopkeeper to its shop via operates[]."
+  "access": [
+    {
+      "id": "access:varrock-teleport-spell",
+      "name": "Varrock Teleport",
+      "mode": "spell",
+      "destination": "Varrock",
+      "condition": {
+        "type": "skill_level",
+        "skill": "Magic",
+        "level": 25,
+        "text": "level 25 Magic"
+      },
+      "requirement_text": "Players with level 25 Magic can cast Varrock Teleport.",
+      "source_token": "Players with level 25 Magic can cast Varrock Teleport.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "access:balloon-transport-lumber-yard",
+      "name": "Balloon transport system",
+      "mode": "transport",
+      "destination": "Varrock (stop south of the Lumber Yard)",
+      "source_token": "The balloon transport system has a stop south of the Lumber Yard.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "access:spirit-tree-grand-exchange",
+      "name": "Spirit tree (Grand Exchange)",
+      "mode": "transport",
+      "destination": "Grand Exchange",
+      "source_token": "There is also a spirit tree to the Grand Exchange",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "access:fairy-ring-dkr",
+      "name": "Fairy ring (code DKR)",
+      "mode": "transport",
+      "destination": "North-west of Varrock",
+      "condition": {
+        "type": "item",
+        "text": "fairy ring using the code DKR"
+      },
+      "requirement_text": "a fairy ring just north-west of Varrock, using the code DKR",
+      "source_token": "a fairy ring just north-west of Varrock, using the code DKR",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "access:canoe-transport-varrock",
+      "name": "Canoe transport system",
+      "mode": "transport",
+      "destination": "Champions' Guild, and the bridges to Barbarian Village and Edgeville",
+      "source_token": "The canoe transport system also has three landing points near Varrock, stopping at the Champions' Guild, and the bridges to Barbarian Village and Edgeville.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "access:combat-bracelet-champions-guild",
+      "name": "Combat bracelet teleport",
+      "mode": "item-teleport",
+      "destination": "Champions' Guild (south-west of the Varrock south gate)",
+      "condition": {
+        "type": "item",
+        "text": "charged combat bracelet"
+      },
+      "requirement_text": "Players can use a charged combat bracelet to teleport to the Champions' Guild, south-west of the Varrock south gate.",
+      "source_token": "Players can use a charged combat bracelet or buy a Chronicle and teleport cards from Diango's Toy Store to teleport to the Champions' Guild, south-west of the Varrock south gate.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "access:chronicle-champions-guild",
+      "name": "Chronicle teleport",
+      "mode": "item-teleport",
+      "destination": "Champions' Guild (south-west of the Varrock south gate)",
+      "condition": {
+        "type": "item",
+        "text": "Chronicle and teleport cards from Diango's Toy Store"
+      },
+      "requirement_text": "buy a Chronicle and teleport cards from Diango's Toy Store to teleport to the Champions' Guild, south-west of the Varrock south gate.",
+      "source_token": "Players can use a charged combat bracelet or buy a Chronicle and teleport cards from Diango's Toy Store to teleport to the Champions' Guild, south-west of the Varrock south gate.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "access:skills-necklace-cooks-guild",
+      "name": "Skills necklace teleport",
+      "mode": "item-teleport",
+      "destination": "Cooks' Guild (just west of the Grand Exchange)",
+      "condition": {
+        "type": "item",
+        "text": "skills necklace"
+      },
+      "requirement_text": "The skills necklace can be used to teleport to the Cooks' Guild just west of the Grand Exchange.",
+      "source_token": "The skills necklace can be used to teleport to the Cooks' Guild just west of the Grand Exchange.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "access:ring-of-wealth-grand-exchange",
+      "name": "Ring of wealth teleport",
+      "mode": "item-teleport",
+      "destination": "Grand Exchange",
+      "condition": {
+        "type": "item",
+        "text": "ring of wealth"
+      },
+      "requirement_text": "The ring of wealth can be used to teleport to the Grand Exchange.",
+      "source_token": "The ring of wealth can be used to teleport to the Grand Exchange.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "access:ring-of-the-elements-earth-altar",
+      "name": "Ring of the elements teleport",
+      "mode": "item-teleport",
+      "destination": "Earth Altar entrance (north-east of Varrock)",
+      "condition": {
+        "type": "item",
+        "text": "ring of the elements"
+      },
+      "requirement_text": "The ring of the elements can be used to teleport near to the Earth Altar entrance found north-east of Varrock.",
+      "source_token": "The ring of the elements can be used to teleport near to the Earth Altar entrance found north-east of Varrock.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "access:quetzal-transport-varrock",
+      "name": "Quetzal Transport System",
+      "mode": "transport",
+      "destination": "Varrock (stop east of the tea stall and across the Varrock wall)",
+      "condition": {
+        "type": "quest",
+        "ref": "Twilight's Promise",
+        "state": "completed",
+        "text": "after completing Twilight's Promise"
+      },
+      "requirement_text": "The Quetzal Transport System offers a stop east of the tea stall and across the Varrock wall after completing Twilight's Promise.",
+      "source_token": "The Quetzal Transport System offers a stop east of the tea stall and across the Varrock wall after completing Twilight's Promise.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "access:diary-cape-toby",
+      "name": "Achievement diary cape teleport",
+      "mode": "item-teleport",
+      "destination": "Toby (Varrock)",
+      "condition": {
+        "type": "achievement_diary",
+        "ref": "all",
+        "state": "completed",
+        "text": "completed all achievement diaries"
+      },
+      "requirement_text": "The diary cape can be used to teleport to Toby for players who have completed all achievement diaries.",
+      "source_token": "The diary cape can be used to teleport to Toby for players who have completed all achievement diaries.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "access:cooks-guild-entry",
+      "name": "Cooks' Guild entrance",
+      "mode": "obstacle",
+      "destination": "Cooks' Guild",
+      "condition": {
+        "type": "skill_level",
+        "skill": "Cooking",
+        "level": 32
+      },
+      "requirement_text": "Requires 32 Cooking to enter",
+      "source_token": "requires 32 Cooking to enter",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "access:varrock-rooftop-course-entry",
+      "name": "Varrock Rooftop Course start",
+      "mode": "obstacle",
+      "destination": "Varrock Rooftop Course",
+      "condition": {
+        "type": "skill_level",
+        "skill": "Agility",
+        "level": 30
+      },
+      "requirement_text": "Requires level 30 Agility; starts at rough wall behind general store",
+      "source_token": "which requires level 30 Agility",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    }
   ],
-
+  "npcs": [
+    {
+      "id": "npc:aubury",
+      "name": "Aubury",
+      "role": "shopkeeper",
+      "located_in": "place:varrock",
+      "operates": [
+        "shop:auburys-rune-shop"
+      ],
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:baraek",
+      "name": "Baraek",
+      "role": "fur trader",
+      "located_in": "place:varrock",
+      "operates": [
+        "shop:baraeks-fur-stall"
+      ],
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:fancy-clothes-store-owner",
+      "name": "Fancy Clothes Store owner",
+      "role": "shopkeeper",
+      "located_in": "place:varrock",
+      "operates": [
+        "shop:fancy-clothes-store"
+      ],
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:horvik",
+      "name": "Horvik",
+      "role": "armourer",
+      "located_in": "place:varrock",
+      "operates": [
+        "shop:horviks-armour-shop"
+      ],
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:lowe",
+      "name": "Lowe",
+      "role": "shopkeeper",
+      "located_in": "place:varrock",
+      "operates": [
+        "shop:lowes-archery-emporium"
+      ],
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:thessalia",
+      "name": "Thessalia",
+      "role": "shopkeeper",
+      "located_in": "place:varrock",
+      "operates": [
+        "shop:thessalias-fine-clothes"
+      ],
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:apothecary",
+      "name": "Apothecary",
+      "role": "shopkeeper",
+      "located_in": "place:varrock",
+      "operates": [
+        "shop:varrock-apothecary"
+      ],
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:shop-keeper-general",
+      "name": "Shop keeper",
+      "role": "shopkeeper",
+      "located_in": "place:varrock",
+      "operates": [
+        "shop:varrock-general-store"
+      ],
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:shop-keeper-swordshop",
+      "name": "Shop keeper",
+      "role": "shopkeeper",
+      "located_in": "place:varrock",
+      "operates": [
+        "shop:varrock-swordshop"
+      ],
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:zaff",
+      "name": "Zaff",
+      "role": "shopkeeper",
+      "located_in": "place:varrock",
+      "operates": [
+        "shop:zaffs-superior-staffs"
+      ],
+      "source_url": "https://oldschool.runescape.wiki/w/Zaff%27s_Superior_Staffs"
+    },
+    {
+      "id": "npc:bartender-blue-moon-inn",
+      "name": "Bartender (Blue Moon Inn)",
+      "role": "bartender",
+      "located_in": "place:varrock",
+      "operates": [
+        "shop:blue-moon-inn"
+      ],
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:bartender-dancing-donkey-inn",
+      "name": "Bartender (Dancing Donkey Inn)",
+      "role": "bartender",
+      "located_in": "place:varrock",
+      "operates": [
+        "shop:dancing-donkey-inn"
+      ],
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:bartender-jolly-boar-inn",
+      "name": "Bartender (Jolly Boar Inn)",
+      "role": "bartender",
+      "located_in": "place:varrock",
+      "operates": [
+        "shop:jolly-boar-inn"
+      ],
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:barman-ratpit-bar",
+      "name": "Barman (Ratpit bar)",
+      "role": "barman",
+      "located_in": "place:varrock",
+      "operates": [
+        "shop:ratpit-bar"
+      ],
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:juliet-leptoc",
+      "name": "Juliet Leptoc",
+      "located_in": "place:leptoc-mansion",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:aris",
+      "name": "Aris",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:banker",
+      "name": "Banker",
+      "role": "banker",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:bartender",
+      "name": "Bartender",
+      "role": "bartender",
+      "located_in": "place:blue-moon-inn",
+      "operates": [
+        "shop:blue-moon-inn"
+      ],
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:benny",
+      "name": "Benny",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:bob-mahogany-homes",
+      "name": "Bob (Mahogany Homes)",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:charlie-the-tramp",
+      "name": "Charlie the Tramp",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:cleaner",
+      "name": "Cleaner",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:cook-blue-moon-inn",
+      "name": "Cook (Blue Moon Inn)",
+      "located_in": "place:blue-moon-inn",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:draul-leptoc",
+      "name": "Draul Leptoc",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:eliza",
+      "name": "Eliza",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:emma",
+      "name": "Emma",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:gertrude",
+      "name": "Gertrude",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:iffie",
+      "name": "Iffie",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:jeff-mahogany-homes",
+      "name": "Jeff (Mahogany Homes)",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:jonny-the-beard",
+      "name": "Jonny the Beard",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:juliet",
+      "name": "Juliet",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:kanel",
+      "name": "Kanel",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:katrine",
+      "name": "Katrine",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:mage-of-zamorak",
+      "name": "Mage of Zamorak",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:marlo",
+      "name": "Marlo",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:master-smithing-tutor",
+      "name": "Master smithing tutor",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:nevet",
+      "name": "Nevet",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:phillipa",
+      "name": "Phillipa",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:philop",
+      "name": "Philop",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:romeo",
+      "name": "Romeo",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:sarah",
+      "name": "Sarah",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:sawmill-operator",
+      "name": "Sawmill operator",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:shilop",
+      "name": "Shilop",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:sookie",
+      "name": "Sookie",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:straven",
+      "name": "Straven",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:stray-dog",
+      "name": "Stray dog",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:suzie",
+      "name": "Suzie",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:tea-seller",
+      "name": "Tea Seller",
+      "role": "shopkeeper",
+      "located_in": "place:varrock",
+      "operates": [
+        "shop:ye-olde-tea-shoppe"
+      ],
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:toby",
+      "name": "Toby",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:town-crier",
+      "name": "Town Crier",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:tramp",
+      "name": "Tramp",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:weaponsmaster",
+      "name": "Weaponsmaster",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:wizard-gary",
+      "name": "Wizard Gary",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:wilough",
+      "name": "Wilough",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:aeonisig-raispher",
+      "name": "Aeonisig Raispher",
+      "located_in": "place:varrock-palace",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:ambassador-ferrnook",
+      "name": "Ambassador Ferrnook",
+      "located_in": "place:varrock-palace",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:captain",
+      "name": "Captain",
+      "located_in": "place:varrock-palace",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:captain-rovin",
+      "name": "Captain Rovin",
+      "located_in": "place:varrock-palace",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:queen-ellamaria",
+      "name": "Queen Ellamaria",
+      "role": "royalty",
+      "located_in": "place:varrock-palace",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:king-roald",
+      "name": "King Roald",
+      "role": "royalty",
+      "located_in": "place:varrock-palace",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:reldo",
+      "name": "Reldo",
+      "role": "librarian",
+      "located_in": "place:varrock-palace",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:sir-prysin",
+      "name": "Sir Prysin",
+      "located_in": "place:varrock-palace",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:surok-magis",
+      "name": "Surok Magis",
+      "located_in": "place:varrock-palace",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:trainee-guard",
+      "name": "Trainee Guard",
+      "located_in": "place:varrock-palace",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:treznor",
+      "name": "Treznor",
+      "located_in": "place:varrock-palace",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:curator-haig-halen",
+      "name": "Curator Haig Halen",
+      "role": "curator",
+      "located_in": "place:varrock-museum",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:art-critic-jacques",
+      "name": "Art Critic Jacques",
+      "located_in": "place:varrock-museum",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:father-lawrence",
+      "name": "Father Lawrence",
+      "role": "clergy",
+      "located_in": "place:varrock-church",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:jeremy-clerksin",
+      "name": "Jeremy Clerksin",
+      "located_in": "place:varrock-church",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:elsie",
+      "name": "Elsie",
+      "located_in": "place:varrock-church",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:martina-scorsby",
+      "name": "Martina Scorsby",
+      "located_in": "place:varrock-church",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:dr-harlow",
+      "name": "Dr Harlow",
+      "located_in": "place:blue-moon-inn",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:barbarian-warrior",
+      "name": "Barbarian warrior",
+      "located_in": "place:blue-moon-inn",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:hops",
+      "name": "Hops",
+      "located_in": "place:dancing-donkey-inn",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:da-vinci",
+      "name": "Da Vinci",
+      "located_in": "place:dancing-donkey-inn",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:chancy",
+      "name": "Chancy",
+      "located_in": "place:dancing-donkey-inn",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:johnathon",
+      "name": "Johnathon",
+      "located_in": "place:jolly-boar-inn",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:barman",
+      "name": "Barman",
+      "role": "bartender",
+      "located_in": "place:rat-pits",
+      "operates": [
+        "shop:ratpit-bar"
+      ],
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "npc:grand-exchange-clerk",
+      "name": "Grand Exchange Clerk",
+      "located_in": "place:grand-exchange",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    }
+  ],
   "shops": [
     {
-      "id": "shop:zaffs-superior-staffs", "name": "Zaff's Superior Staffs!",
-      "located_in": "place:varrock-square", "operator": "npc:zaff", "currency": "coins",
-      "source_url": "https://oldschool.runescape.wiki/w/Zaff%27s_Superior_Staffs!",
+      "id": "shop:auburys-rune-shop",
+      "name": "Aubury's Rune Shop",
+      "shop_type": "magic",
+      "located_in": "place:varrock",
+      "operator": "npc:aubury",
+      "currency": "coins",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock",
       "sells": [
-        { "item_name": "Battlestaff", "item_id": null, "base_price": 7000, "stock": 5,
-          "_note": "normal stock line — no condition" },
-
-        { "item_name": "Battlestaff (noted)", "item_id": null,
-          "price_each": 7000, "qty": 15, "frequency": "daily", "noted": true,
-          "condition": { "type": "achievement_diary", "ref": "varrock:easy", "state": "completed" },
-          "dispenser": "barrel on the ground floor of the shop",
-          "source_token": "Zaff will sell you 15 noted battlestaves as a single stack every day for 105,000 coins",
-          "source_url": "https://oldschool.runescape.wiki/w/Varrock_Diary" },
-
-        { "item_name": "Battlestaff (noted)", "item_id": null,
-          "price_each": 7000, "qty": 30, "frequency": "daily", "noted": true,
-          "condition": { "type": "achievement_diary", "ref": "varrock:medium", "state": "completed" },
-          "dispenser": "barrel on the ground floor of the shop",
-          "source_token": "Zaff will sell you 30 noted battlestaves as a single stack every day for 210,000 coins",
-          "source_url": "https://oldschool.runescape.wiki/w/Varrock_Diary" },
-
-        { "item_name": "Battlestaff (noted)", "item_id": null,
-          "price_each": 7000, "qty": 60, "frequency": "daily", "noted": true,
-          "condition": { "type": "achievement_diary", "ref": "varrock:hard", "state": "completed" },
-          "dispenser": "barrel on the ground floor of the shop",
-          "source_token": "Zaff will sell you 60 noted battlestaves as a single stack every day for 420,000 coins",
-          "source_url": "https://oldschool.runescape.wiki/w/Varrock_Diary" },
-
-        { "item_name": "Battlestaff (noted)", "item_id": null,
-          "price_each": 7000, "qty": 120, "frequency": "daily", "noted": true,
-          "condition": { "type": "achievement_diary", "ref": "varrock:elite", "state": "completed" },
-          "dispenser": "barrel on the ground floor of the shop",
-          "source_token": "Zaff will sell you 120 noted battlestaves as a single stack every day for 840,000 coins",
-          "source_url": "https://oldschool.runescape.wiki/w/Varrock_Diary" }
+        {
+          "item_name": "Runes (most types)",
+          "item_id": null,
+          "source_token": "Sells most types of runes"
+        }
+      ]
+    },
+    {
+      "id": "shop:baraeks-fur-stall",
+      "name": "Baraek's Fur Stall",
+      "shop_type": "general",
+      "located_in": "place:varrock",
+      "operator": "npc:baraek",
+      "currency": "coins",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock",
+      "sells": [
+        {
+          "item_name": "Furs",
+          "item_id": null,
+          "source_token": "fur trader in Varrock Square"
+        }
+      ]
+    },
+    {
+      "id": "shop:fancy-clothes-store",
+      "name": "Fancy Clothes Store",
+      "shop_type": "clothes",
+      "located_in": "place:varrock",
+      "operator": "npc:fancy-clothes-store-owner",
+      "currency": "coins",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock",
+      "sells": [
+        {
+          "item_name": "Camouflage and hunter armour (from furs)",
+          "item_id": null,
+          "source_token": "converts furs into camouflage and hunter armour"
+        },
+        {
+          "item_name": "Hunter armor",
+          "item_id": null
+        },
+        {
+          "item_name": "Camouflage gear",
+          "item_id": null
+        }
+      ]
+    },
+    {
+      "id": "shop:horviks-armour-shop",
+      "name": "Horvik's Armour Shop",
+      "shop_type": "melee",
+      "located_in": "place:varrock",
+      "operator": "npc:horvik",
+      "currency": "coins",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock",
+      "sells": [
+        {
+          "item_name": "Platebodies",
+          "item_id": null,
+          "source_token": "platebodies and chainbodies as well as platelegs and some leather armour"
+        },
+        {
+          "item_name": "Chainbodies",
+          "item_id": null,
+          "source_token": "platebodies and chainbodies as well as platelegs and some leather armour"
+        },
+        {
+          "item_name": "Platelegs",
+          "item_id": null,
+          "source_token": "platebodies and chainbodies as well as platelegs and some leather armour"
+        },
+        {
+          "item_name": "Leather armour",
+          "item_id": null,
+          "source_token": "platebodies and chainbodies as well as platelegs and some leather armour"
+        }
+      ]
+    },
+    {
+      "id": "shop:lowes-archery-emporium",
+      "name": "Lowe's Archery Emporium",
+      "shop_type": "archery",
+      "located_in": "place:varrock",
+      "operator": "npc:lowe",
+      "currency": "coins",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock",
+      "sells": [
+        {
+          "item_name": "Bows",
+          "item_id": null,
+          "source_token": "bows, crossbows, and their corresponding ammunition"
+        },
+        {
+          "item_name": "Crossbows",
+          "item_id": null,
+          "source_token": "bows, crossbows, and their corresponding ammunition"
+        },
+        {
+          "item_name": "Ammunition",
+          "item_id": null,
+          "source_token": "bows, crossbows, and their corresponding ammunition"
+        }
+      ]
+    },
+    {
+      "id": "shop:thessalias-fine-clothes",
+      "name": "Thessalia's Fine Clothes",
+      "shop_type": "clothes",
+      "located_in": "place:varrock",
+      "operator": "npc:thessalia",
+      "currency": "coins",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock",
+      "sells": [
+        {
+          "item_name": "Robes",
+          "item_id": null,
+          "source_token": "robes, capes, gloves, and boots"
+        },
+        {
+          "item_name": "Capes",
+          "item_id": null,
+          "source_token": "robes, capes, gloves, and boots"
+        },
+        {
+          "item_name": "Gloves",
+          "item_id": null,
+          "source_token": "robes, capes, gloves, and boots"
+        },
+        {
+          "item_name": "Boots",
+          "item_id": null,
+          "source_token": "robes, capes, gloves, and boots"
+        }
+      ]
+    },
+    {
+      "id": "shop:varrock-apothecary",
+      "name": "Varrock Apothecary",
+      "shop_type": "apothecary",
+      "located_in": "place:varrock",
+      "operator": "npc:apothecary",
+      "currency": "coins",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock",
+      "sells": [
+        {
+          "item_name": "Strength potion",
+          "item_id": null,
+          "source_token": "creates strength potions and energy potions for free-to-play players with proper ingredients"
+        },
+        {
+          "item_name": "Energy potion",
+          "item_id": null,
+          "source_token": "creates strength potions and energy potions for free-to-play players with proper ingredients"
+        },
+        {
+          "item_name": "Strength potions",
+          "item_id": null
+        },
+        {
+          "item_name": "Energy potions",
+          "item_id": null
+        }
+      ]
+    },
+    {
+      "id": "shop:varrock-general-store",
+      "name": "Varrock General Store",
+      "shop_type": "general",
+      "located_in": "place:varrock",
+      "operator": "npc:shop-keeper-general",
+      "currency": "coins",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock",
+      "sells": [
+        {
+          "item_name": "General store goods",
+          "item_id": null,
+          "source_token": "popular general merchant"
+        },
+        {
+          "item_name": "Newcomer map",
+          "item_id": null,
+          "source_token": "new players can purchase newcomer maps here"
+        },
+        {
+          "item_name": "Low-level items",
+          "item_id": null
+        },
+        {
+          "item_name": "Newcomer maps",
+          "item_id": null
+        }
+      ]
+    },
+    {
+      "id": "shop:varrock-swordshop",
+      "name": "Varrock Swordshop",
+      "shop_type": "melee",
+      "located_in": "place:varrock",
+      "operator": "npc:shop-keeper-swordshop",
+      "currency": "coins",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock",
+      "sells": [
+        {
+          "item_name": "Daggers (bronze through adamant)",
+          "item_id": null,
+          "source_token": "Bronze through adamant daggers, swords, and longswords"
+        },
+        {
+          "item_name": "Swords (bronze through adamant)",
+          "item_id": null,
+          "source_token": "Bronze through adamant daggers, swords, and longswords"
+        },
+        {
+          "item_name": "Longswords (bronze through adamant)",
+          "item_id": null,
+          "source_token": "Bronze through adamant daggers, swords, and longswords"
+        },
+        {
+          "item_name": "Bronze, iron, steel, black, mithril, adamant daggers",
+          "item_id": null
+        },
+        {
+          "item_name": "Swords",
+          "item_id": null
+        },
+        {
+          "item_name": "Longswords",
+          "item_id": null
+        }
+      ]
+    },
+    {
+      "id": "shop:zaffs-superior-staffs",
+      "name": "Zaff's Superior Staffs",
+      "shop_type": "magic",
+      "located_in": "place:varrock",
+      "operator": "npc:zaff",
+      "currency": "coins",
+      "source_url": "https://oldschool.runescape.wiki/w/Zaff%27s_Superior_Staffs",
+      "sells": [
+        {
+          "item_name": "Staff",
+          "item_id": null,
+          "source_token": "sells basic staves (Staff, Magic staff)"
+        },
+        {
+          "item_name": "Magic staff",
+          "item_id": null,
+          "source_token": "sells basic staves (Staff, Magic staff)"
+        },
+        {
+          "item_name": "Staff of air",
+          "item_id": null,
+          "source_token": "elemental staves (air, water, earth, fire)"
+        },
+        {
+          "item_name": "Staff of water",
+          "item_id": null,
+          "source_token": "elemental staves (air, water, earth, fire)"
+        },
+        {
+          "item_name": "Staff of earth",
+          "item_id": null,
+          "source_token": "elemental staves (air, water, earth, fire)"
+        },
+        {
+          "item_name": "Staff of fire",
+          "item_id": null,
+          "source_token": "elemental staves (air, water, earth, fire)"
+        },
+        {
+          "item_name": "Battlestaff",
+          "item_id": null,
+          "condition": {
+            "type": "quest",
+            "ref": "What Lies Below",
+            "state": "in_progress",
+            "text": "after completing most of What Lies Below"
+          },
+          "source_token": "Battlestaves are available only \"after completing most of What Lies Below.\""
+        },
+        {
+          "item_name": "Battlestaff (noted)",
+          "item_id": null,
+          "price_each": 7000,
+          "qty": 15,
+          "noted": true,
+          "frequency": "once per day",
+          "condition": {
+            "type": "achievement_diary",
+            "ref": "Varrock Diary - Easy",
+            "state": "completed",
+            "text": "completed Varrock Diary Easy tier"
+          },
+          "source_token": "Easy | 15 | 7,000 coins"
+        },
+        {
+          "item_name": "Battlestaff (noted)",
+          "item_id": null,
+          "price_each": 7000,
+          "qty": 30,
+          "noted": true,
+          "frequency": "once per day",
+          "condition": {
+            "type": "achievement_diary",
+            "ref": "Varrock Diary - Medium",
+            "state": "completed",
+            "text": "completed Varrock Diary Medium tier"
+          },
+          "source_token": "Medium | 30 | 7,000 coins"
+        },
+        {
+          "item_name": "Battlestaff (noted)",
+          "item_id": null,
+          "price_each": 7000,
+          "qty": 60,
+          "noted": true,
+          "frequency": "once per day",
+          "condition": {
+            "type": "achievement_diary",
+            "ref": "Varrock Diary - Hard",
+            "state": "completed",
+            "text": "completed Varrock Diary Hard tier"
+          },
+          "source_token": "Hard | 60 | 7,000 coins"
+        },
+        {
+          "item_name": "Battlestaff (noted)",
+          "item_id": null,
+          "price_each": 7000,
+          "qty": 120,
+          "noted": true,
+          "frequency": "once per day",
+          "condition": {
+            "type": "achievement_diary",
+            "ref": "Varrock Diary - Elite",
+            "state": "completed",
+            "text": "completed Varrock Diary Elite tier"
+          },
+          "source_token": "Elite | 120 | 7,000 coins"
+        },
+        {
+          "item_name": "Staves",
+          "item_id": null
+        },
+        {
+          "item_name": "Battlestaves",
+          "item_id": null,
+          "condition": {
+            "type": "quest",
+            "ref": "What Lies Below",
+            "state": "completed"
+          },
+          "source_token": "battlestaves ... to players who have completed What Lies Below"
+        },
+        {
+          "item_name": "Additional battlestaves",
+          "item_id": null,
+          "condition": {
+            "type": "achievement_diary",
+            "ref": "Varrock Diary",
+            "state": "completed"
+          },
+          "source_token": "additional battlestaves upon completion of the Varrock Diaries"
+        }
+      ]
+    },
+    {
+      "id": "shop:blue-moon-inn",
+      "name": "Blue Moon Inn",
+      "shop_type": "pub",
+      "located_in": "place:varrock",
+      "operator": "npc:bartender-blue-moon-inn",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock",
+      "sells": [
+        {
+          "item_name": "Beer",
+          "item_id": null,
+          "source_token": "Sells beer"
+        }
+      ]
+    },
+    {
+      "id": "shop:dancing-donkey-inn",
+      "name": "Dancing Donkey Inn",
+      "shop_type": "pub",
+      "located_in": "place:varrock",
+      "operator": "npc:bartender-dancing-donkey-inn",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock",
+      "sells": [
+        {
+          "item_name": "Beer",
+          "item_id": null,
+          "source_token": "Sells beer"
+        }
+      ]
+    },
+    {
+      "id": "shop:jolly-boar-inn",
+      "name": "Jolly Boar Inn",
+      "shop_type": "pub",
+      "located_in": "place:varrock",
+      "operator": "npc:bartender-jolly-boar-inn",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock",
+      "sells": [
+        {
+          "item_name": "Beer",
+          "item_id": null,
+          "source_token": "Sells beer"
+        }
+      ]
+    },
+    {
+      "id": "shop:ratpit-bar",
+      "name": "Ratpit Bar",
+      "shop_type": "pub",
+      "located_in": "place:varrock",
+      "operator": "npc:barman-ratpit-bar",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock",
+      "sells": [
+        {
+          "item_name": "Beer",
+          "item_id": null,
+          "source_token": "Sells beer and stew"
+        },
+        {
+          "item_name": "Stew",
+          "item_id": null,
+          "source_token": "the Rat Pit Bar also sells stew"
+        }
+      ]
+    },
+    {
+      "id": "shop:ye-olde-tea-shoppe",
+      "name": "Ye olde Tea Shoppe",
+      "shop_type": "general",
+      "located_in": "place:varrock",
+      "operator": "npc:tea-seller",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock",
+      "sells": [
+        {
+          "item_name": "Cup of tea",
+          "item_id": null,
+          "price_each": 10,
+          "source_token": "tea (10 coins)"
+        }
       ]
     }
   ],
-  "_shops_todo": [
-    "Add every Varrock shop with full sells[]: Aubury's Rune Shop, Thessaly's Makeovers/armour,",
-    "Horvik's Armour, Lowe's Archery, Baraek's fur stall, the general store, the staff/zaff shop above.",
-    "Put any diary/quest-gated offer as a sells[] entry with a `condition` + verbatim `source_token`."
-  ],
-
   "monsters": [
-    { "id": "monster:guard", "name": "Guard", "located_in": "place:varrock-square",
-      "source_url": "https://oldschool.runescape.wiki/w/Guard" }
+    {
+      "id": "monster:scurrius",
+      "name": "Scurrius",
+      "located_in": "place:varrock-sewers",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "monster:bryophyta",
+      "name": "Bryophyta",
+      "located_in": "place:varrock-sewers",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "monster:rat",
+      "name": "Rats",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "monster:man",
+      "name": "Men and women",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "monster:mugger",
+      "name": "Mugger",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "monster:barbarian-woman",
+      "name": "Barbarian Woman",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "monster:thief",
+      "name": "Thieves",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "monster:guard",
+      "name": "Guards",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "monster:outlaw",
+      "name": "Outlaws",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "monster:black-knight",
+      "name": "Black Knights",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "monster:lucien",
+      "name": "Lucien",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "monster:giant-rat",
+      "name": "Giant rat",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "monster:grizzly-bear",
+      "name": "Grizzly bear",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    }
   ],
-  "_monsters_todo": [
-    "Add town-spawn monsters: Man, Woman, Mugger, Dark wizard (SE of Varrock), Guard, etc.",
-    "(Drop tables are wired later by the existing drops brick — just place them here.)"
-  ],
-
   "activities": [
-    { "id": "activity:varrock-west-bank", "name": "Varrock West Bank", "activity_type": "bank",
-      "located_in": "place:varrock", "source_url": "https://oldschool.runescape.wiki/w/Bank" },
-    { "id": "activity:grand-exchange", "name": "Grand Exchange", "activity_type": "grand_exchange",
-      "located_in": "place:varrock", "source_url": "https://oldschool.runescape.wiki/w/Grand_Exchange" }
+    {
+      "id": "activity:varrock-west-bank",
+      "name": "Varrock west bank",
+      "activity_type": "bank",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "activity:varrock-east-bank",
+      "name": "Varrock east bank",
+      "activity_type": "bank",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "activity:grand-exchange",
+      "name": "Grand Exchange",
+      "activity_type": "grand_exchange",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "activity:champions-guild",
+      "name": "Champions' Guild",
+      "activity_type": "guild",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "activity:cooks-guild",
+      "name": "Cooks' Guild",
+      "activity_type": "guild",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "activity:varrock-museum",
+      "name": "Varrock Museum",
+      "activity_type": "museum",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "activity:varrock-palace-altar",
+      "name": "Varrock Palace altar",
+      "activity_type": "altar",
+      "located_in": "place:varrock-palace",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "activity:varrock-chapel-altar",
+      "name": "Varrock chapel altar",
+      "activity_type": "altar",
+      "located_in": "place:varrock-chapel",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "activity:varrock-chaos-altar",
+      "name": "Chaos altar",
+      "activity_type": "altar",
+      "located_in": "place:zamorakian-chapel-varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "activity:varrock-anvil-west-bank",
+      "name": "Anvil (south of west bank)",
+      "activity_type": "anvil",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "activity:varrock-anvil-horvik",
+      "name": "Anvil (Horvik's Armour Shop)",
+      "activity_type": "anvil",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "activity:varrock-anvil-east-bank",
+      "name": "Anvil (south of east bank)",
+      "activity_type": "anvil",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "activity:varrock-mine-south-east",
+      "name": "South-east Varrock mine",
+      "activity_type": "mine",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "activity:varrock-mine-south-west",
+      "name": "South-west Varrock mine",
+      "activity_type": "mine",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "activity:varrock-rooftop-course",
+      "name": "Varrock Rooftop Course",
+      "activity_type": "misc",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "activity:varrock-training-house",
+      "name": "Training house",
+      "activity_type": "misc",
+      "located_in": "place:varrock",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    }
   ],
-  "_activities_todo": [
-    "Add facilities: Varrock east bank, the anvils (Horvik), the cooking range, the Saradomin altar,",
-    "the Champions' Guild, the Cooks' Guild, the Varrock Museum (Kudos), the fountain, the GE."
+  "quests": [
+    {
+      "id": "quest:demon-slayer",
+      "name": "Demon Slayer",
+      "relation": "starts_in",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "quest:dragon-slayer-i",
+      "name": "Dragon Slayer I",
+      "relation": "starts_in",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "quest:romeo-and-juliet",
+      "name": "Romeo & Juliet",
+      "relation": "starts_in",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "quest:shield-of-arrav",
+      "name": "Shield of Arrav",
+      "relation": "starts_in",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "quest:a-souls-bane",
+      "name": "A Soul's Bane",
+      "relation": "starts_in",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "quest:bone-voyage",
+      "name": "Bone Voyage",
+      "relation": "starts_in",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "quest:children-of-the-sun",
+      "name": "Children of the Sun",
+      "relation": "starts_in",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "quest:daddys-home",
+      "name": "Daddy's Home",
+      "relation": "starts_in",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "quest:defender-of-varrock",
+      "name": "Defender of Varrock",
+      "relation": "starts_in",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "quest:desert-treasure-i",
+      "name": "Desert Treasure I",
+      "relation": "starts_in",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "quest:the-dig-site",
+      "name": "The Dig Site",
+      "relation": "starts_in",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "quest:elemental-workshop-ii",
+      "name": "Elemental Workshop II",
+      "relation": "starts_in",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "quest:family-crest",
+      "name": "Family Crest",
+      "relation": "starts_in",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "quest:garden-of-tranquillity",
+      "name": "Garden of Tranquillity",
+      "relation": "starts_in",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "quest:gertrudes-cat",
+      "name": "Gertrude's Cat",
+      "relation": "starts_in",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "quest:the-golem",
+      "name": "The Golem",
+      "relation": "starts_in",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "quest:priest-in-peril",
+      "name": "Priest in Peril",
+      "relation": "starts_in",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "quest:ratcatchers",
+      "name": "Ratcatchers",
+      "relation": "starts_in",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "id": "quest:what-lies-below",
+      "name": "What Lies Below",
+      "relation": "starts_in",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    }
+  ],
+  "notes": [
+    {
+      "topic": "Founding",
+      "text": "Varrock was originally founded around year 700 of the Fourth Age as \"Avarrocka\", when a nomadic tribe settled near an exceptionally strong young boy they had discovered.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Origin of the name Arrav",
+      "text": "A decade after the settlement formed, the unnamed boy was sent on a quest to earn his name. He encountered goblins attacking the settlement, and when they screamed \"arrav\" he defeated them and became known as Arrav.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Zemouregal's first attacks",
+      "text": "The Zamorakian necromancer Zemouregal targeted the growing city of Avarrocka. Arrav left to seek a mythical shield for protection but returned to find the city burned. It was rebuilt, but about a century into Avarrocka's existence Zemouregal invaded with zombie forces, killing Arrav and retreating with his undead body.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Growth into Misthalin",
+      "text": "The settlement expanded into the kingdom of Misthalin and eventually became a monarchy.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Blessing of the River Salve",
+      "text": "Creatures from Morytania attacked Varrock until seven priestly warriors defeated them and blessed the River Salve, making it impassable to Zamorakian creatures.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Shield of Arrav and the gangs",
+      "text": "The Shield of Arrav was stolen by the Phoenix Gang, which later split into the Phoenix Gang and the Black Arm Gang, occupying different districts of the city. An adventurer eventually retrieved the shield and later helped Dimintheis Fitzharmon use its powers against Zemouregal's second invasion.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Original name persists",
+      "text": "The original name \"Avarrocka\" persists among some groups such as barbarians, while other races have their own names for the city.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "transport-prices",
+      "text": "The Varrock wiki Transportation section does not list specific prices for any teleport spell, jewellery teleport, or transport system.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Aubury teleport",
+      "text": "Aubury, in addition to running the rune shop, teleports players to the Rune Essence mine.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Estate Agent",
+      "text": "The Estate Agent in Varrock provides player-owned house services such as relocation and redecoration. Modeled as an NPC/activity rather than a buy/sell shop.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Hairdresser",
+      "text": "The Hairdresser's is run by Emma and Suzie and offers a free makeover service (not a buy/sell shop).",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Thessalia services",
+      "text": "Thessalia's Fine Clothes also offers free appearance changes and event item reclamation in addition to selling robes, capes, gloves, and boots.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Zaff noted battlestaff mechanic",
+      "text": "Verbatim: \"Players who have completed tiers of the Varrock Diary may buy noted battlestaves at a discounted price of 7,000 coins each once per day from the barrel on the ground floor.\" Daily stock scales by tier: Easy 15, Medium 30, Hard 60, Elite 120 (each at 7,000 coins). Profitable because the Grand Exchange price typically exceeds the 7,000 shop price.",
+      "source_url": "https://oldschool.runescape.wiki/w/Zaff%27s_Superior_Staffs"
+    },
+    {
+      "topic": "Varrock pubs general",
+      "text": "Most Varrockian pubs sell only beer. No prices are specified on the Varrock page for any pub items.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Ratpit Bar location",
+      "text": "Ratpit Bar is a very little known, very small pub located down a manhole in south-east Varrock within a cordoned-off area, occupied mostly by gamblers taking breaks from the Rat Pits minigame.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Jolly Boar Inn location",
+      "text": "The Jolly Boar Inn is a large inn located outside the city walls (north-east of Varrock).",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Blue Moon Inn",
+      "text": "The Blue Moon Inn is described as the most popular pub in Varrock; NPCs present include Dr Harlow (former Slayer master) and Johnny the Beard.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Varrock west bank",
+      "text": "Large facility south of the Grand Exchange, popular for Smithing training due to its proximity to an anvil.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Varrock east bank",
+      "text": "Small two-story bank south of the Varrock Museum.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Champions' Guild",
+      "text": "Prestigious guild offering tough battles, rune weapons and green dragonhide armour.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Cooks' Guild",
+      "text": "Includes a pie shop and a wheat grinder; requires 32 Cooking to enter.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Varrock Museum",
+      "text": "Features a natural history quiz, fossil displays, and a kudos system.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Varrock Palace altar",
+      "text": "Located on the 1st floor toward the rear of the palace.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Varrock chapel altar",
+      "text": "In the chapel at the north-east corner of Varrock.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Chaos altar",
+      "text": "Prayer altar in the Zamorakian chapel south of Aubury's Rune Shop.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Anvils",
+      "text": "Three anvils: south of the west bank, north-west of the east bank inside Horvik's Armour Shop, and south of the east bank.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "South-east Varrock mine",
+      "text": "Contains tin, copper, and iron rocks.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "South-west Varrock mine",
+      "text": "Near the Champions' Guild; contains clay, tin, silver, and iron rocks.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Varrock Sewers",
+      "text": "Large sewer system that hosts monsters and bosses such as Scurrius and Bryophyta.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Leptoc Mansion",
+      "text": "Large mansion where Juliet Leptoc resides.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Training house",
+      "text": "Building north of the east bank with attackable dummies for Attack training to level 8.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Varrock Palace",
+      "text": "Palace with a queen's garden and library; the palace altar is on the 1st floor toward the rear.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Furnace",
+      "text": "No furnace, spinning wheel, loom, or pottery wheel was explicitly listed for Varrock in the fetched Locations section.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Lucien combat appearance",
+      "text": "Lucien (level 14) is only fought during Temple of Ikov.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Giant rat level variance",
+      "text": "Giant rat appears at level 3 or 6.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Varrock Herald price",
+      "text": "The Varrock Herald costs 50 coins.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Aubury Rune Essence teleport",
+      "text": "Aubury teleports players to the Rune Essence mine.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "Champions' Guild",
+      "text": "A prestigious guild offering tough battles, rune weapons and green dragonhide armour; no resident NPC details given in the Inhabitants section.",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "music",
+      "text": "Adventure — unlocked within Varrock city walls",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "music",
+      "text": "Garden — unlocked within Varrock city walls",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "music",
+      "text": "Medieval — unlocked within Varrock city walls",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "music",
+      "text": "Spirit — unlocked within Varrock city walls",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "music",
+      "text": "Doorways — unlocked outside Varrock city walls",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "music",
+      "text": "Expanse — unlocked outside Varrock city walls",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "music",
+      "text": "Greatness — unlocked outside Varrock city walls",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "music",
+      "text": "Still Night — unlocked outside Varrock city walls",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    },
+    {
+      "topic": "music",
+      "text": "Looking Back — unlocked in the Varrock Museum basement",
+      "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+    }
   ]
 }
