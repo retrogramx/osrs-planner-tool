@@ -46,10 +46,11 @@ ingestion) toward a **richly-typed entity graph of all of Gielinor**.
 - **Editorial review by the owner is a hard human gate** for facts a validator can't check.
 
 ## Next: build sequence (per v2 spec §10)
-1. **`kg/schema.json`** (this spec as machine-readable data) + a generic **domain/range invariant** + **severity
-   tiers** (VIOLATION/WARNING/INFO) in `validate_kg.py`. ← start here.
-2. **Cache node-import:** OpenRS2 cache → RuneLite `net.runelite.cache` decoder → items(+variants)/npcs/scenery/
-   places, **cache-id-keyed**; bulk `aliases` from wiki redirects.
+1. ✅ **DONE** — **`kg/schema.json`** (the v2 ontology as data; closed vocabulary w/ `legacy_*` sections for the v1
+   graph) + a generic schema-driven **domain/range invariant** + **severity tiers** (VIOLATION/WARNING/INFO) in
+   `validate_kg.py`. TDD'd, adversarially reviewed; committed graph stays VIOLATION-clean + byte-stable.
+2. ← **start here** — **Cache node-import:** OpenRS2 cache → RuneLite `net.runelite.cache` decoder → items(+variants)/
+   npcs/scenery/places, **cache-id-keyed**; bulk `aliases` from wiki redirects.
 3. **Edge curation**, wiki-table-driven (Storeline/Dropsline/Recipe/Questreq…); `data/map/varrock.json` is the
    edge-authoring template; per-entity `source_url` resolver.
 4. **Competency-questions CI gate** (`kg/competency_questions.json`) live throughout.
@@ -58,6 +59,7 @@ ingestion) toward a **richly-typed entity graph of all of Gielinor**.
 - Python via `./venv/bin/python` (3.14). Data = committed JSON. Node ids are prefixed: `item:<cache_id>`,
   `npc:<id>`, `scenery:<object_id>`, `place:<slug>`, `quest:<slug>`, `diary:<region>:<tier>`.
 - Use subagent-driven-development for multi-task implementation; adversarially verify findings before merging.
-- Branch: the entity-graph work is on `feat/achievement-diaries` (diary brick complete; entity layer + cleanup pending).
+- Branch: the entity-graph **build** is on `feat/entity-graph-ontology` (branched off `feat/achievement-diaries`,
+  which holds the diary brick + locked v2 spec/research — all unmerged). Step 1 done; build sequence above.
 - Licensing seam (non-commercial project): wiki text = CC BY-NC-SA; cache content = Jagex IP; decoder tooling = BSD/ISC.
 ```
