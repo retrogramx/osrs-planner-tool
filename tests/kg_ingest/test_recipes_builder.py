@@ -5,7 +5,7 @@ REC = [{
     "slug": "charge-scythe-of-vitur", "name": "Charge Scythe of vitur",
     "produces": {"item_id": 22325, "qty": 1},
     "subject":  {"item_id": 22486, "qty": 1},
-    "materials": [{"item_id": 11697, "qty": 200, "name": "Blood rune"},
+    "materials": [{"item_id": 565, "qty": 200, "name": "Blood rune"},
                   {"item_id": 22446, "qty": 1, "name": "Vial of blood"}],
     "charge_yield": 100, "charge_capacity": 20000,
 }]
@@ -17,7 +17,7 @@ def test_recipe_node_consumes_and_produces():
     assert n.kind is NodeKind.RECIPE and n.name == "Charge Scythe of vitur"
     assert n.data == {"charge_yield": 100, "charge_capacity": 20000}
     consumes = [(e.dst, e.data["qty"], e.data["role"]) for e in edges if e.type is EdgeType.CONSUMES]
-    assert ("item:11697", 200, "material") in consumes
+    assert ("item:565", 200, "material") in consumes
     assert ("item:22446", 1, "material") in consumes
     assert ("item:22486", 1, "subject") in consumes      # the uncharged variant, role=subject
     produces = [(e.dst, e.data["qty"]) for e in edges if e.type is EdgeType.PRODUCES]

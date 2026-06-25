@@ -8,7 +8,7 @@
     { "slug": "charge-scythe-of-vitur", "name": "Charge Scythe of vitur",
       "produces": {"item_id": 22325, "qty": 1},
       "subject":  {"item_id": 22486, "qty": 1},
-      "materials": [ {"item_id": 11697, "qty": 200, "name": "Blood rune"},
+      "materials": [ {"item_id": 565, "qty": 200, "name": "Blood rune"},
                      {"item_id": 22446, "qty": 1, "name": "Vial of blood"} ],
       "charge_yield": 100, "charge_capacity": 20000,
       "source_url": "https://oldschool.runescape.wiki/w/Scythe_of_vitur",
