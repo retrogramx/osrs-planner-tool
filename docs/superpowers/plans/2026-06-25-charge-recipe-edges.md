@@ -16,7 +16,7 @@
 - **Schema changes are additive only.** `recipe`/`consumes`/`produces` are already declared in `kg/schema.json` (status `reserved`); this slice flips them to `live` and adds the enum members. No re-ingest.
 - **Never fabricate.** `data/charge_recipes.json` is editorial: every recipe carries `source_url` + a verbatim `source_token`, and the quantities are wiki-sourced + owner-reviewed.
 - **Node/edge ids:** recipe nodes `recipe:<slug>`; `consumes`/`produces` are recipe-`src` edges. Builder-local edge ids in a disjoint band (`0x60000000`), re-keyed to global ids by `assemble.rekey`.
-- **Charge data (wiki-sourced, owner-verifies):** Scythe of vitur = 1 vial of blood (item 22446) + 200 blood runes (item 11697) → 100 charges, capacity 20000; subject = uncharged scythe item 22486; produces = charged scythe item 22325. Ring of suffering = 1 ring of recoil (item 2550) → 40 charges, capacity 100000; subject = uncharged ring item 19550; produces = recoil ring item 20655.
+- **Charge data (wiki-sourced, owner-verifies):** Scythe of vitur = 1 vial of blood (item 22446) + 200 blood runes (item 565) → 100 charges, capacity 20000; subject = uncharged scythe item 22486; produces = charged scythe item 22325. Ring of suffering = 1 ring of recoil (item 2550) → 40 charges, capacity 100000; subject = uncharged ring item 19550; produces = recoil ring item 20655.
 
 ---
 
@@ -110,7 +110,7 @@ REC = [{
     "slug": "charge-scythe-of-vitur", "name": "Charge Scythe of vitur",
     "produces": {"item_id": 22325, "qty": 1},
     "subject":  {"item_id": 22486, "qty": 1},
-    "materials": [{"item_id": 11697, "qty": 200, "name": "Blood rune"},
+    "materials": [{"item_id": 565, "qty": 200, "name": "Blood rune"},
                   {"item_id": 22446, "qty": 1, "name": "Vial of blood"}],
     "charge_yield": 100, "charge_capacity": 20000,
 }]
@@ -122,7 +122,7 @@ def test_recipe_node_consumes_and_produces():
     assert n.kind is NodeKind.RECIPE and n.name == "Charge Scythe of vitur"
     assert n.data == {"charge_yield": 100, "charge_capacity": 20000}
     consumes = [(e.dst, e.data["qty"], e.data["role"]) for e in edges if e.type is EdgeType.CONSUMES]
-    assert ("item:11697", 200, "material") in consumes
+    assert ("item:565", 200, "material") in consumes
     assert ("item:22446", 1, "material") in consumes
     assert ("item:22486", 1, "subject") in consumes      # the uncharged variant, role=subject
     produces = [(e.dst, e.data["qty"]) for e in edges if e.type is EdgeType.PRODUCES]
@@ -229,7 +229,7 @@ git commit -m "feat(kg): build_recipes — recipe node + consumes/produces edges
     { "slug": "charge-scythe-of-vitur", "name": "Charge Scythe of vitur",
       "produces": {"item_id": 22325, "qty": 1},
       "subject":  {"item_id": 22486, "qty": 1},
-      "materials": [ {"item_id": 11697, "qty": 200, "name": "Blood rune"},
+      "materials": [ {"item_id": 565, "qty": 200, "name": "Blood rune"},
                      {"item_id": 22446, "qty": 1, "name": "Vial of blood"} ],
       "charge_yield": 100, "charge_capacity": 20000,
       "source_url": "https://oldschool.runescape.wiki/w/Scythe_of_vitur",
@@ -375,11 +375,11 @@ def test_committed_graph_has_charge_recipe_and_imported_materials():
     r = s.node("recipe:charge-scythe-of-vitur")
     assert r is not None and r.kind is NodeKind.RECIPE
     # materials auto-imported as item nodes via build_items (referenced mechanism)
-    assert s.node("item:11697") is not None   # Blood rune
+    assert s.node("item:565") is not None   # Blood rune
     assert s.node("item:22446") is not None    # Vial of blood
     # consumes/produces edges present, recipe-src
     cons = {(e.src, e.dst, e.data.get("role")) for e in s.edges if e.type is EdgeType.CONSUMES}
-    assert ("recipe:charge-scythe-of-vitur", "item:11697", "material") in cons
+    assert ("recipe:charge-scythe-of-vitur", "item:565", "material") in cons
     assert ("recipe:charge-scythe-of-vitur", "item:22486", "subject") in cons
     prod = {(e.src, e.dst) for e in s.edges if e.type is EdgeType.PRODUCES}
     assert ("recipe:charge-scythe-of-vitur", "item:22325") in prod

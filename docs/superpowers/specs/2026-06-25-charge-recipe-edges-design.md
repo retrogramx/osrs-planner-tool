@@ -57,7 +57,7 @@ nodes), and it proves the recipe/consumes/produces model on a bounded, source-gr
 
 ```
 recipe:charge-scythe-of-vitur   {charge_yield, charge_capacity}
-   --consumes {qty, role:material}--> item:11697  Blood rune          ← imported by build_items (referenced)
+   --consumes {qty, role:material}--> item:565  Blood rune          ← imported by build_items (referenced)
    --consumes {qty, role:material}--> item:22446  Vial of blood       ← imported by build_items (referenced)
    --consumes {qty:1, role:subject}-> item:22486  Scythe (uncharged)  ← already a node (slice-1 family)
    --produces {qty:1}--------------> item:22325  Scythe (charged)     ← already a node (slice-1 family)
@@ -83,7 +83,7 @@ Each record carries `source_url` + a verbatim `source_token`. Shape:
     { "slug": "charge-scythe-of-vitur", "name": "Charge Scythe of vitur",
       "produces": {"item_id": 22325, "qty": 1},
       "subject":  {"item_id": 22486, "qty": 1},
-      "materials": [ {"item_id": 11697, "qty": <owner-verified>, "name": "Blood rune"},
+      "materials": [ {"item_id": 565, "qty": <owner-verified>, "name": "Blood rune"},
                      {"item_id": 22446, "qty": <owner-verified>, "name": "Vial of blood"} ],
       "charge_yield": <owner-verified>, "charge_capacity": 20000,
       "source_url": "https://oldschool.runescape.wiki/w/Scythe_of_vitur", "source_token": "<verbatim wiki phrase>" },
@@ -96,7 +96,7 @@ Each record carries `source_url` + a verbatim `source_token`. Shape:
 ```
 The `<owner-verified>` quantities/yields are filled from the wiki during implementation and pass the **owner editorial
 gate** before merge (never invented). Verified item ids (resolve in `item_dictionary.json`): produces 22325/20655,
-subject 22486/19550, materials 11697/22446/2550.
+subject 22486/19550, materials 565/22446/2550.
 
 ### 4b. `data/verify_charge_recipes.py` — source-grounding gate
 Follows the `verify_item_families.py` / `verify_diary_rewards.py` pattern (committed, exits non-zero on violation):
@@ -118,7 +118,7 @@ positive ints; and a sanity check that `produces` and `subject` share an item-fa
   collection / `build_items` call.
 - Append `r_edges` to `edges` **before** `referenced_all = _collect_referenced_ids(edges, groups)` — so the
   consumed/produced item ids (materials + endpoints) land in `referenced_item_ids`, and `build_items` auto-imports
-  the **material nodes** (11697/22446/2550 — in `item_dictionary`, not yet graph nodes) via the slice-1 mechanism.
+  the **material nodes** (565/22446/2550 — in `item_dictionary`, not yet graph nodes) via the slice-1 mechanism.
   The endpoint nodes (22325/22486/19550/20655) are already imported by the slice-1 families.
 - Add `r_nodes` to `owned_ids` (recipe nodes are owned by this builder) and into the final `dedup_nodes(...)`.
 
