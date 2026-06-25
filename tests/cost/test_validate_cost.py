@@ -91,6 +91,32 @@ def test_cost_token_in_kg_fails(tmp_path):
     assert "cost token leaked" in r.stdout
 
 
+def test_schema_json_currency_kind_is_not_a_cost_leak(tmp_path):
+    # kg/schema.json is the LOCKED v2 ontology vocabulary; it legitimately NAMES a
+    # 'currency' node kind (decision: coins is just one currency). Invariant 6
+    # (cost-free KG) guards the graph INSTANCE files, not the schema's vocabulary,
+    # so a currency token in schema.json must NOT fail validation.
+    import pathlib
+    d, k = _make_broken_root(tmp_path, shop_records=[])
+    (pathlib.Path(k) / "schema.json").write_text(json.dumps(
+        {"node_kinds": {"currency": {"status": "reserved"}},
+         "edge_kinds": {"realizable_via": {"domain": ["currency"]}}}))
+    r = _run("--data", d, "--kg", k)
+    assert r.returncode == 0, f"schema currency kind wrongly flagged:\n{r.stdout}"
+    assert "COST VALIDATION PASSED" in r.stdout
+
+
+def test_cost_token_in_schema_instance_file_still_fails(tmp_path):
+    # The exclusion is schema.json ONLY: a real cost token in a graph INSTANCE
+    # file (nodes.json) must still fail (the iron-gate guard stays intact).
+    d, k = _make_broken_root(
+        tmp_path, shop_records=[],
+        kg_text=json.dumps([{"id": "item:4587", "kind": "item", "data": {"currency": "x"}}]))
+    r = _run("--data", d, "--kg", k)
+    assert r.returncode == 1
+    assert "cost token leaked" in r.stdout
+
+
 def test_unresolvable_craft_input_fails(tmp_path):
     # Recipe output resolves (item:4587) but an INPUT item_id does not -- inv 3.
     d, k = _make_broken_root(tmp_path, shop_records=[], recipe_records=[
