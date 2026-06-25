@@ -306,6 +306,10 @@ def assemble() -> None:
         | {n.id for n in dg_nodes}
         | {n.id for n in content_nodes}
     )
+    # Snapshot taken BEFORE i_edges are appended. Safe only while build_items emits
+    # exclusively item→item same_entity edges (both endpoints are item nodes it owns,
+    # and 'item' is already in _LEAF_DOMAINS). If build_items ever emits an edge to a
+    # NEW non-item leaf node, this snapshot would miss it — update the ordering then.
     referenced_all = _collect_referenced_ids(edges, groups)
     # Item nodes: build_items owns referenced items (in the dictionary) NOT already owned,
     # plus the curated exemplar/family rosters. It is re-keyed in its own call.
@@ -314,6 +318,12 @@ def assemble() -> None:
         _load_item_dict_records(), _load_item_exemplars(), _load_item_families(),
         referenced_item_ids, owned_ids=frozenset(owned_ids),
     )
+    # rekey detects edge-id collisions only WITHIN a single call. The items edges are
+    # rekeyed here in their own call, so an item:* node that is the src of edges in BOTH
+    # an earlier builder's rekey and this one would mint the same global id in both calls.
+    # Inert today (no item node is a src in two builders), and validate_kg.py's
+    # duplicate-edge-id check (amendment C) is the committed backstop. The next
+    # edge-layer slice (charge/recipe edges with item srcs) must watch this.
     i_nodes, i_edges, _ = rekey(i_nodes, i_edges, {})
     edges = edges + i_edges
     owned_ids = owned_ids | {n.id for n in i_nodes}

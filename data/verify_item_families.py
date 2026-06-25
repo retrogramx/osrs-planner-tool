@@ -18,8 +18,10 @@ FAMILIES = os.path.join(ROOT, "data", "item_node_families.json")
 
 def main() -> int:
     errors: list[str] = []
-    pages = {r["page_name"] for r in json.load(open(DICT, encoding="utf-8"))["records"]}
-    fam_doc = json.load(open(FAMILIES, encoding="utf-8"))
+    with open(DICT, encoding="utf-8") as f:
+        pages = {r["page_name"] for r in json.load(f)["records"]}
+    with open(FAMILIES, encoding="utf-8") as f:
+        fam_doc = json.load(f)
     seen_slugs: set[str] = set()
     for rec in fam_doc["records"]:
         slug = rec.get("slug", "")

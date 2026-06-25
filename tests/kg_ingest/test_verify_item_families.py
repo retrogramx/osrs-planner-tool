@@ -1,4 +1,4 @@
-import importlib.util, os, subprocess, sys
+import os, subprocess, sys
 _ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 def _run():

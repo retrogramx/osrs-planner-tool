@@ -17,7 +17,8 @@ def _family(store, target):
 
 def test_all_competency_questions_pass():
     store = JsonKGStore.from_dir(KG)
-    cqs = json.load(open(ROOT / "kg" / "competency_questions.json"))["records"]
+    with open(ROOT / "kg" / "competency_questions.json") as f:
+        cqs = json.load(f)["records"]
     assert cqs
     for cq in cqs:
         if cq["method"] == "same_entity_members":
