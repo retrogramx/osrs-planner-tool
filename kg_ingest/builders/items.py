@@ -56,8 +56,11 @@ def build_items(dict_records, exemplar_page_names, family_records,
             emit(Node(id=pid, kind=NodeKind.ITEM, name=page, slug=slugify(page),
                       data={"is_page": True}))
             for r in recs:
-                emit(_variant_node(r))
                 vid = item_id(r["item_id"])
+                if vid in owned_ids:
+                    continue   # another builder owns this variant: skip node AND bridge
+                               # (its same_entity edge would collide on the rekeyed global id)
+                emit(_variant_node(r))
                 edges.append(Edge(id=_se_edge_id(vid, pid), type=EdgeType.SAME_ENTITY,
                                   src=vid, dst=pid, cond_group=None,
                                   data={"basis": f"shares wiki page '{page}'"}))

@@ -41,3 +41,15 @@ def test_single_variant_referenced_item_has_no_page_or_bridge():
 def test_owned_ids_are_skipped_to_avoid_dedup_conflict():
     nodes, _, _ = build_items(DICT, set(), [], {"item:4587"}, owned_ids=frozenset({"item:4587"}))
     assert "item:4587" not in _by_id(nodes)          # build_goals owns it; build_items must not re-emit
+
+def test_owned_variant_on_multivariant_page_skips_node_and_bridge():
+    # A variant id owned by another builder must get NEITHER a node NOR a same_entity
+    # bridge — its rekeyed global edge id would collide with the owning builder's edge.
+    nodes, edges, _ = build_items(DICT, {"Amulet of glory"}, [], set(),
+                                  owned_ids=frozenset({"item:1712"}))
+    byid = _by_id(nodes)
+    assert "item:1712" not in byid                   # owned variant node not re-emitted
+    assert "item:1704" in byid                        # non-owned variant still emitted
+    se_srcs = {e.src for e in edges if e.type is EdgeType.SAME_ENTITY}
+    assert "item:1712" not in se_srcs                 # no bridge for the owned variant
+    assert "item:1704" in se_srcs                     # bridge for the non-owned variant remains
