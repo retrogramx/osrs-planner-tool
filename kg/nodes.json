@@ -2919,368 +2919,1214 @@
     "slug": "quest-point-cape"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:10498",
     "kind": "item",
     "name": "Ava's attractor",
     "slug": "10498"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:10499",
     "kind": "item",
     "name": "Ava's accumulator",
     "slug": "10499"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
+    "id": "item:10588",
+    "kind": "item",
+    "name": "Salve amulet (e)",
+    "slug": "10588"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:11136",
     "kind": "item",
     "name": "Karamja gloves 1",
     "slug": "11136"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:11138",
     "kind": "item",
     "name": "Karamja gloves 2",
     "slug": "11138"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:11140",
     "kind": "item",
     "name": "Karamja gloves 3",
     "slug": "11140"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true,
+      "version_anchor": "(8)"
+    },
+    "id": "item:11866",
+    "kind": "item",
+    "name": "Slayer ring (8)",
+    "slug": "11866"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "(7)"
+    },
+    "id": "item:11867",
+    "kind": "item",
+    "name": "Slayer ring (7)",
+    "slug": "11867"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "(6)"
+    },
+    "id": "item:11868",
+    "kind": "item",
+    "name": "Slayer ring (6)",
+    "slug": "11868"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "(5)"
+    },
+    "id": "item:11869",
+    "kind": "item",
+    "name": "Slayer ring (5)",
+    "slug": "11869"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "(4)"
+    },
+    "id": "item:11870",
+    "kind": "item",
+    "name": "Slayer ring (4)",
+    "slug": "11870"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "(3)"
+    },
+    "id": "item:11871",
+    "kind": "item",
+    "name": "Slayer ring (3)",
+    "slug": "11871"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "(2)"
+    },
+    "id": "item:11872",
+    "kind": "item",
+    "name": "Slayer ring (2)",
+    "slug": "11872"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "(1)"
+    },
+    "id": "item:11873",
+    "kind": "item",
+    "name": "Slayer ring (1)",
+    "slug": "11873"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "5"
+    },
+    "id": "item:11976",
+    "kind": "item",
+    "name": "Amulet of glory(5)",
+    "slug": "11976"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "6"
+    },
+    "id": "item:11978",
+    "kind": "item",
+    "name": "Amulet of glory(6)",
+    "slug": "11978"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": true,
+      "version_anchor": "(5)"
+    },
+    "id": "item:11980",
+    "kind": "item",
+    "name": "Ring of wealth (5)",
+    "slug": "11980"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "(4)"
+    },
+    "id": "item:11982",
+    "kind": "item",
+    "name": "Ring of wealth (4)",
+    "slug": "11982"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "(3)"
+    },
+    "id": "item:11984",
+    "kind": "item",
+    "name": "Ring of wealth (3)",
+    "slug": "11984"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "(2)"
+    },
+    "id": "item:11986",
+    "kind": "item",
+    "name": "Ring of wealth (2)",
+    "slug": "11986"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "(1)"
+    },
+    "id": "item:11988",
+    "kind": "item",
+    "name": "Ring of wealth (1)",
+    "slug": "11988"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": true,
+      "version_anchor": "Nightmare Zone"
+    },
+    "id": "item:12017",
+    "kind": "item",
+    "name": "Salve amulet(i)",
+    "slug": "12017"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": true,
+      "version_anchor": "Nightmare Zone"
+    },
+    "id": "item:12018",
+    "kind": "item",
+    "name": "Salve amulet(ei)",
+    "slug": "12018"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": true,
+      "version_anchor": "Unpoisoned"
+    },
+    "id": "item:1215",
+    "kind": "item",
+    "name": "Dragon dagger",
+    "slug": "1215"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "Poison"
+    },
+    "id": "item:1231",
+    "kind": "item",
+    "name": "Dragon dagger(p)",
+    "slug": "1231"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13103",
     "kind": "item",
     "name": "Karamja gloves 4",
     "slug": "13103"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13104",
     "kind": "item",
     "name": "Varrock armour 1",
     "slug": "13104"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13105",
     "kind": "item",
     "name": "Varrock armour 2",
     "slug": "13105"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13106",
     "kind": "item",
     "name": "Varrock armour 3",
     "slug": "13106"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13107",
     "kind": "item",
     "name": "Varrock armour 4",
     "slug": "13107"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13108",
     "kind": "item",
     "name": "Wilderness sword 1",
     "slug": "13108"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13109",
     "kind": "item",
     "name": "Wilderness sword 2",
     "slug": "13109"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13110",
     "kind": "item",
     "name": "Wilderness sword 3",
     "slug": "13110"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13111",
     "kind": "item",
     "name": "Wilderness sword 4",
     "slug": "13111"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13112",
     "kind": "item",
     "name": "Morytania legs 1",
     "slug": "13112"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13113",
     "kind": "item",
     "name": "Morytania legs 2",
     "slug": "13113"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13114",
     "kind": "item",
     "name": "Morytania legs 3",
     "slug": "13114"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13115",
     "kind": "item",
     "name": "Morytania legs 4",
     "slug": "13115"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13117",
     "kind": "item",
     "name": "Falador shield 1",
     "slug": "13117"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13118",
     "kind": "item",
     "name": "Falador shield 2",
     "slug": "13118"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13119",
     "kind": "item",
     "name": "Falador shield 3",
     "slug": "13119"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13120",
     "kind": "item",
     "name": "Falador shield 4",
     "slug": "13120"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13121",
     "kind": "item",
     "name": "Ardougne cloak 1",
     "slug": "13121"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13122",
     "kind": "item",
     "name": "Ardougne cloak 2",
     "slug": "13122"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13123",
     "kind": "item",
     "name": "Ardougne cloak 3",
     "slug": "13123"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13124",
     "kind": "item",
     "name": "Ardougne cloak 4",
     "slug": "13124"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13125",
     "kind": "item",
     "name": "Explorer's ring 1",
     "slug": "13125"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13126",
     "kind": "item",
     "name": "Explorer's ring 2",
     "slug": "13126"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13127",
     "kind": "item",
     "name": "Explorer's ring 3",
     "slug": "13127"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13128",
     "kind": "item",
     "name": "Explorer's ring 4",
     "slug": "13128"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13129",
     "kind": "item",
     "name": "Fremennik sea boots 1",
     "slug": "13129"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13130",
     "kind": "item",
     "name": "Fremennik sea boots 2",
     "slug": "13130"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13131",
     "kind": "item",
     "name": "Fremennik sea boots 3",
     "slug": "13131"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13132",
     "kind": "item",
     "name": "Fremennik sea boots 4",
     "slug": "13132"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13133",
     "kind": "item",
     "name": "Desert amulet 1",
     "slug": "13133"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13134",
     "kind": "item",
     "name": "Desert amulet 2",
     "slug": "13134"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13135",
     "kind": "item",
     "name": "Desert amulet 3",
     "slug": "13135"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13136",
     "kind": "item",
     "name": "Desert amulet 4",
     "slug": "13136"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13137",
     "kind": "item",
     "name": "Kandarin headgear 1",
     "slug": "13137"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13138",
     "kind": "item",
     "name": "Kandarin headgear 2",
     "slug": "13138"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13139",
     "kind": "item",
     "name": "Kandarin headgear 3",
     "slug": "13139"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13140",
     "kind": "item",
     "name": "Kandarin headgear 4",
     "slug": "13140"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13141",
     "kind": "item",
     "name": "Western banner 1",
     "slug": "13141"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13142",
     "kind": "item",
     "name": "Western banner 2",
     "slug": "13142"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13143",
     "kind": "item",
     "name": "Western banner 3",
     "slug": "13143"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:13144",
     "kind": "item",
     "name": "Western banner 4",
     "slug": "13144"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true,
+      "version_anchor": "Charged"
+    },
+    "id": "item:13241",
+    "kind": "item",
+    "name": "Infernal axe",
+    "slug": "13241"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "Uncharged"
+    },
+    "id": "item:13242",
+    "kind": "item",
+    "name": "Infernal axe (uncharged)",
+    "slug": "13242"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": false
+    },
     "id": "item:1478",
     "kind": "item",
     "name": "Amulet of accuracy",
     "slug": "1478"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "Uncharged"
+    },
+    "id": "item:1704",
+    "kind": "item",
+    "name": "Amulet of glory",
+    "slug": "1704"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "1"
+    },
+    "id": "item:1706",
+    "kind": "item",
+    "name": "Amulet of glory(1)",
+    "slug": "1706"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "2"
+    },
+    "id": "item:1708",
+    "kind": "item",
+    "name": "Amulet of glory(2)",
+    "slug": "1708"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "3"
+    },
+    "id": "item:1710",
+    "kind": "item",
+    "name": "Amulet of glory(3)",
+    "slug": "1710"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": true,
+      "version_anchor": "4"
+    },
+    "id": "item:1712",
+    "kind": "item",
+    "name": "Amulet of glory(4)",
+    "slug": "1712"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": true,
+      "version_anchor": "Uncharged"
+    },
+    "id": "item:19550",
+    "kind": "item",
+    "name": "Ring of suffering",
+    "slug": "19550"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": true,
+      "version_anchor": "Uncharged"
+    },
+    "id": "item:19710",
+    "kind": "item",
+    "name": "Ring of suffering (i)",
+    "slug": "19710"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "Recoil"
+    },
+    "id": "item:20655",
+    "kind": "item",
+    "name": "Ring of suffering (r)",
+    "slug": "20655"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "Recoil"
+    },
+    "id": "item:20657",
+    "kind": "item",
+    "name": "Ring of suffering (ri)",
+    "slug": "20657"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": true,
+      "version_anchor": "Charged"
+    },
+    "id": "item:22325",
+    "kind": "item",
+    "name": "Scythe of vitur",
+    "slug": "22325"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "Uncharged"
+    },
+    "id": "item:22486",
+    "kind": "item",
+    "name": "Scythe of vitur (uncharged)",
+    "slug": "22486"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": false
+    },
+    "id": "item:22664",
+    "kind": "item",
+    "name": "Scythe of vitur",
+    "slug": "22664"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:22941",
     "kind": "item",
     "name": "Rada's blessing 1",
     "slug": "22941"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:22943",
     "kind": "item",
     "name": "Rada's blessing 2",
     "slug": "22943"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:22945",
     "kind": "item",
     "name": "Rada's blessing 3",
     "slug": "22945"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:22947",
     "kind": "item",
     "name": "Rada's blessing 4",
     "slug": "22947"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true,
+      "version_anchor": "Active"
+    },
+    "id": "item:23680",
+    "kind": "item",
+    "name": "Crystal pickaxe",
+    "slug": "23680"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "Inactive"
+    },
+    "id": "item:23682",
+    "kind": "item",
+    "name": "Crystal pickaxe (inactive)",
+    "slug": "23682"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
+    "id": "item:23863",
+    "kind": "item",
+    "name": "Crystal pickaxe",
+    "slug": "23863"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": false,
+      "version_anchor": "Normal"
+    },
     "id": "item:2402",
     "kind": "item",
     "name": "Silverlight",
     "slug": "2402"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": true,
+      "version_anchor": "Charged"
+    },
+    "id": "item:25066",
+    "kind": "item",
+    "name": "Infernal axe (or)",
+    "slug": "25066"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": true,
+      "version_anchor": "Uncharged"
+    },
+    "id": "item:25246",
+    "kind": "item",
+    "name": "Ring of suffering (i)",
+    "slug": "25246"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "Recoil"
+    },
+    "id": "item:25248",
+    "kind": "item",
+    "name": "Ring of suffering (ri)",
+    "slug": "25248"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "Soul Wars"
+    },
+    "id": "item:25250",
+    "kind": "item",
+    "name": "Salve amulet(i)",
+    "slug": "25250"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "Soul Wars"
+    },
+    "id": "item:25278",
+    "kind": "item",
+    "name": "Salve amulet(ei)",
+    "slug": "25278"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "Uncharged"
+    },
+    "id": "item:25371",
+    "kind": "item",
+    "name": "Infernal axe (uncharged)",
+    "slug": "25371"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": true,
+      "version_anchor": "(8)"
+    },
+    "id": "item:2552",
+    "kind": "item",
+    "name": "Ring of dueling(8)",
+    "slug": "2552"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "(7)"
+    },
+    "id": "item:2554",
+    "kind": "item",
+    "name": "Ring of dueling(7)",
+    "slug": "2554"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "(6)"
+    },
+    "id": "item:2556",
+    "kind": "item",
+    "name": "Ring of dueling(6)",
+    "slug": "2556"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "(5)"
+    },
+    "id": "item:2558",
+    "kind": "item",
+    "name": "Ring of dueling(5)",
+    "slug": "2558"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "(4)"
+    },
+    "id": "item:2560",
+    "kind": "item",
+    "name": "Ring of dueling(4)",
+    "slug": "2560"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "(3)"
+    },
+    "id": "item:2562",
+    "kind": "item",
+    "name": "Ring of dueling(3)",
+    "slug": "2562"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "(2)"
+    },
+    "id": "item:2564",
+    "kind": "item",
+    "name": "Ring of dueling(2)",
+    "slug": "2564"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "(1)"
+    },
+    "id": "item:2566",
+    "kind": "item",
+    "name": "Ring of dueling(1)",
+    "slug": "2566"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "Uncharged"
+    },
+    "id": "item:2572",
+    "kind": "item",
+    "name": "Ring of wealth",
+    "slug": "2572"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": true,
+      "version_anchor": "Charged"
+    },
+    "id": "item:25736",
+    "kind": "item",
+    "name": "Holy scythe of vitur",
+    "slug": "25736"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "Uncharged"
+    },
+    "id": "item:25738",
+    "kind": "item",
+    "name": "Holy scythe of vitur (uncharged)",
+    "slug": "25738"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": true,
+      "version_anchor": "Charged"
+    },
+    "id": "item:25739",
+    "kind": "item",
+    "name": "Sanguine scythe of vitur",
+    "slug": "25739"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "Uncharged"
+    },
+    "id": "item:25741",
+    "kind": "item",
+    "name": "Sanguine scythe of vitur (uncharged)",
+    "slug": "25741"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "Inactive"
+    },
+    "id": "item:25862",
+    "kind": "item",
+    "name": "Bow of faerdhinen (inactive)",
+    "slug": "25862"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": true,
+      "version_anchor": "Charged"
+    },
+    "id": "item:25865",
+    "kind": "item",
+    "name": "Bow of faerdhinen",
+    "slug": "25865"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
+    "id": "item:25867",
+    "kind": "item",
+    "name": "Bow of faerdhinen (c)",
+    "slug": "25867"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": true,
+      "version_anchor": "Uncharged"
+    },
+    "id": "item:26761",
+    "kind": "item",
+    "name": "Ring of suffering (i)",
+    "slug": "26761"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "Recoil"
+    },
+    "id": "item:26762",
+    "kind": "item",
+    "name": "Ring of suffering (ri)",
+    "slug": "26762"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "Emir's Arena"
+    },
+    "id": "item:26763",
+    "kind": "item",
+    "name": "Salve amulet(i)",
+    "slug": "26763"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "Emir's Arena"
+    },
+    "id": "item:26782",
+    "kind": "item",
+    "name": "Salve amulet(ei)",
+    "slug": "26782"
   },
   {
     "data": {},
@@ -3313,11 +4159,87 @@
     "slug": "voidwaker"
   },
   {
+    "data": {
+      "is_canonical": true,
+      "members": true,
+      "version_anchor": "Charged"
+    },
+    "id": "item:28543",
+    "kind": "item",
+    "name": "Corrupted scythe of vitur",
+    "slug": "28543"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "Uncharged"
+    },
+    "id": "item:28545",
+    "kind": "item",
+    "name": "Corrupted scythe of vitur (uncharged)",
+    "slug": "28545"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": true,
+      "version_anchor": "Charged"
+    },
+    "id": "item:30347",
+    "kind": "item",
+    "name": "Infernal axe (or)",
+    "slug": "30347"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "Uncharged"
+    },
+    "id": "item:30348",
+    "kind": "item",
+    "name": "Infernal axe (uncharged)",
+    "slug": "30348"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
+    "id": "item:4081",
+    "kind": "item",
+    "name": "Salve amulet",
+    "slug": "4081"
+  },
+  {
     "data": {},
     "id": "item:4587",
     "kind": "item",
     "name": "Dragon scimitar",
     "slug": "dragon-scimitar"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "Poison+"
+    },
+    "id": "item:5680",
+    "kind": "item",
+    "name": "Dragon dagger(p+)",
+    "slug": "5680"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "Poison++"
+    },
+    "id": "item:5698",
+    "kind": "item",
+    "name": "Dragon dagger(p++)",
+    "slug": "5698"
   },
   {
     "data": {},
@@ -3327,42 +4249,60 @@
     "slug": "tzhaar-ket-om"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:6916",
     "kind": "item",
     "name": "Infinity top",
     "slug": "6916"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:6918",
     "kind": "item",
     "name": "Infinity hat",
     "slug": "6918"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:6920",
     "kind": "item",
     "name": "Infinity boots",
     "slug": "6920"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:6922",
     "kind": "item",
     "name": "Infinity gloves",
     "slug": "6922"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:6924",
     "kind": "item",
     "name": "Infinity bottoms",
     "slug": "6924"
   },
   {
-    "data": {},
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
     "id": "item:7409",
     "kind": "item",
     "name": "Magic secateurs",
@@ -3376,6 +4316,222 @@
     "kind": "item",
     "name": "Barrows gloves",
     "slug": "barrows-gloves"
+  },
+  {
+    "data": {
+      "is_page": true
+    },
+    "id": "item:amulet-of-glory",
+    "kind": "item",
+    "name": "Amulet of glory",
+    "slug": "amulet-of-glory"
+  },
+  {
+    "data": {
+      "is_page": true
+    },
+    "id": "item:bow-of-faerdhinen",
+    "kind": "item",
+    "name": "Bow of faerdhinen",
+    "slug": "bow-of-faerdhinen"
+  },
+  {
+    "data": {
+      "is_family": true
+    },
+    "id": "item:bow-of-faerdhinen-family",
+    "kind": "item",
+    "name": "Bow of faerdhinen (core)",
+    "slug": "bow-of-faerdhinen-family"
+  },
+  {
+    "data": {
+      "is_page": true
+    },
+    "id": "item:corrupted-scythe-of-vitur",
+    "kind": "item",
+    "name": "Corrupted scythe of vitur",
+    "slug": "corrupted-scythe-of-vitur"
+  },
+  {
+    "data": {
+      "is_page": true
+    },
+    "id": "item:crystal-pickaxe",
+    "kind": "item",
+    "name": "Crystal pickaxe",
+    "slug": "crystal-pickaxe"
+  },
+  {
+    "data": {
+      "is_family": true
+    },
+    "id": "item:crystal-pickaxe-family",
+    "kind": "item",
+    "name": "Crystal pickaxe (all variants)",
+    "slug": "crystal-pickaxe-family"
+  },
+  {
+    "data": {
+      "is_page": true
+    },
+    "id": "item:dragon-dagger",
+    "kind": "item",
+    "name": "Dragon dagger",
+    "slug": "dragon-dagger"
+  },
+  {
+    "data": {
+      "is_page": true
+    },
+    "id": "item:holy-scythe-of-vitur",
+    "kind": "item",
+    "name": "Holy scythe of vitur",
+    "slug": "holy-scythe-of-vitur"
+  },
+  {
+    "data": {
+      "is_page": true
+    },
+    "id": "item:infernal-axe",
+    "kind": "item",
+    "name": "Infernal axe",
+    "slug": "infernal-axe"
+  },
+  {
+    "data": {
+      "is_family": true
+    },
+    "id": "item:infernal-axe-family",
+    "kind": "item",
+    "name": "Infernal axe (all variants)",
+    "slug": "infernal-axe-family"
+  },
+  {
+    "data": {
+      "is_page": true
+    },
+    "id": "item:infernal-axe-or",
+    "kind": "item",
+    "name": "Infernal axe (or)",
+    "slug": "infernal-axe-or"
+  },
+  {
+    "data": {
+      "is_page": true
+    },
+    "id": "item:infernal-axe-or-trailblazer-reloaded",
+    "kind": "item",
+    "name": "Infernal axe (or) (Trailblazer Reloaded)",
+    "slug": "infernal-axe-or-trailblazer-reloaded"
+  },
+  {
+    "data": {
+      "is_page": true
+    },
+    "id": "item:ring-of-dueling",
+    "kind": "item",
+    "name": "Ring of dueling",
+    "slug": "ring-of-dueling"
+  },
+  {
+    "data": {
+      "is_page": true
+    },
+    "id": "item:ring-of-suffering",
+    "kind": "item",
+    "name": "Ring of suffering",
+    "slug": "ring-of-suffering"
+  },
+  {
+    "data": {
+      "is_family": true
+    },
+    "id": "item:ring-of-suffering-family",
+    "kind": "item",
+    "name": "Ring of suffering (all variants)",
+    "slug": "ring-of-suffering-family"
+  },
+  {
+    "data": {
+      "is_page": true
+    },
+    "id": "item:ring-of-suffering-i",
+    "kind": "item",
+    "name": "Ring of suffering (i)",
+    "slug": "ring-of-suffering-i"
+  },
+  {
+    "data": {
+      "is_page": true
+    },
+    "id": "item:ring-of-wealth",
+    "kind": "item",
+    "name": "Ring of wealth",
+    "slug": "ring-of-wealth"
+  },
+  {
+    "data": {
+      "is_page": true
+    },
+    "id": "item:salve-amulet-ei",
+    "kind": "item",
+    "name": "Salve amulet(ei)",
+    "slug": "salve-amulet-ei"
+  },
+  {
+    "data": {
+      "is_family": true
+    },
+    "id": "item:salve-amulet-family",
+    "kind": "item",
+    "name": "Salve amulet (all variants)",
+    "slug": "salve-amulet-family"
+  },
+  {
+    "data": {
+      "is_page": true
+    },
+    "id": "item:salve-amulet-i",
+    "kind": "item",
+    "name": "Salve amulet(i)",
+    "slug": "salve-amulet-i"
+  },
+  {
+    "data": {
+      "is_page": true
+    },
+    "id": "item:sanguine-scythe-of-vitur",
+    "kind": "item",
+    "name": "Sanguine scythe of vitur",
+    "slug": "sanguine-scythe-of-vitur"
+  },
+  {
+    "data": {
+      "is_page": true
+    },
+    "id": "item:scythe-of-vitur",
+    "kind": "item",
+    "name": "Scythe of vitur",
+    "slug": "scythe-of-vitur"
+  },
+  {
+    "data": {
+      "is_family": true
+    },
+    "id": "item:scythe-of-vitur-family",
+    "kind": "item",
+    "name": "Scythe of vitur (all variants)",
+    "slug": "scythe-of-vitur-family"
+  },
+  {
+    "data": {
+      "is_page": true
+    },
+    "id": "item:slayer-ring",
+    "kind": "item",
+    "name": "Slayer ring",
+    "slug": "slayer-ring"
   },
   {
     "data": {},

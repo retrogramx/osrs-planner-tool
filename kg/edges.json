@@ -272,6 +272,16 @@
   {
     "cond_group": null,
     "data": {
+      "basis": "shares wiki page 'Slayer ring'"
+    },
+    "dst": "item:slayer-ring",
+    "id": 6061474,
+    "src": "item:11869",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 1
     },
     "dst": "goal:achievement-diary-cape",
@@ -308,6 +318,16 @@
     "id": 6064285,
     "src": "diary:varrock:hard",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Crystal pickaxe'"
+    },
+    "dst": "item:crystal-pickaxe",
+    "id": 6064602,
+    "src": "item:23680",
+    "type": "same_entity"
   },
   {
     "cond_group": null,
@@ -383,6 +403,16 @@
     "id": 6067787,
     "src": "item:13144",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Ring of dueling'"
+    },
+    "dst": "item:ring-of-dueling",
+    "id": 6073054,
+    "src": "item:2566",
+    "type": "same_entity"
   },
   {
     "cond_group": null,
@@ -507,6 +537,16 @@
   {
     "cond_group": null,
     "data": {
+      "basis": "base"
+    },
+    "dst": "item:crystal-pickaxe-family",
+    "id": 6112112,
+    "src": "item:crystal-pickaxe",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "recurring_resource",
       "magnitude": null,
@@ -525,6 +565,16 @@
     "id": 6113686,
     "src": "quest:rag-and-bone-man-ii",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "enchant"
+    },
+    "dst": "item:bow-of-faerdhinen-family",
+    "id": 6115087,
+    "src": "item:25867",
+    "type": "same_entity"
   },
   {
     "cond_group": null,
@@ -655,6 +705,16 @@
   {
     "cond_group": null,
     "data": {
+      "basis": "shares wiki page 'Ring of suffering'"
+    },
+    "dst": "item:ring-of-suffering",
+    "id": 6146905,
+    "src": "item:19550",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "access",
       "magnitude": null,
@@ -713,6 +773,16 @@
     "id": 6160228,
     "src": "quest:x-marks-the-spot",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Salve amulet(ei)'"
+    },
+    "dst": "item:salve-amulet-ei",
+    "id": 6160413,
+    "src": "item:26782",
+    "type": "same_entity"
   },
   {
     "cond_group": null,
@@ -861,6 +931,26 @@
   {
     "cond_group": null,
     "data": {
+      "basis": "shares wiki page 'Salve amulet(i)'"
+    },
+    "dst": "item:salve-amulet-i",
+    "id": 6185988,
+    "src": "item:25250",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Salve amulet(ei)'"
+    },
+    "dst": "item:salve-amulet-ei",
+    "id": 6191029,
+    "src": "item:25278",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "recurring_resource",
       "magnitude": null,
@@ -871,6 +961,16 @@
     "id": 6191155,
     "src": "item:13142",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "base"
+    },
+    "dst": "item:ring-of-suffering-family",
+    "id": 6200303,
+    "src": "item:ring-of-suffering",
+    "type": "same_entity"
   },
   {
     "cond_group": null,
@@ -969,6 +1069,16 @@
   {
     "cond_group": null,
     "data": {
+      "basis": "broken"
+    },
+    "dst": "item:scythe-of-vitur-family",
+    "id": 6220173,
+    "src": "item:22664",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "condition": "while-carried",
       "effect_kind": "behavior_toggle",
       "magnitude": null,
@@ -993,6 +1103,16 @@
     "id": 6225849,
     "src": "item:13108",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Slayer ring'"
+    },
+    "dst": "item:slayer-ring",
+    "id": 6228767,
+    "src": "item:11870",
+    "type": "same_entity"
   },
   {
     "cond_group": 4624134,
@@ -1075,6 +1195,16 @@
     "id": 6241444,
     "src": "quest:throne-of-miscellania",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Bow of faerdhinen'"
+    },
+    "dst": "item:bow-of-faerdhinen",
+    "id": 6242075,
+    "src": "item:25862",
+    "type": "same_entity"
   },
   {
     "cond_group": null,
@@ -1342,6 +1472,16 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Ring of wealth'"
+    },
+    "dst": "item:ring-of-wealth",
+    "id": 6289643,
+    "src": "item:11988",
+    "type": "same_entity"
+  },
+  {
     "cond_group": 5657903,
     "data": {},
     "dst": null,
@@ -1432,6 +1572,16 @@
     "id": 6322636,
     "src": "item:13129",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "enchant_imbue"
+    },
+    "dst": "item:salve-amulet-family",
+    "id": 6323036,
+    "src": "item:salve-amulet-ei",
+    "type": "same_entity"
   },
   {
     "cond_group": null,
@@ -1554,6 +1704,16 @@
     "type": "effect"
   },
   {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Corrupted scythe of vitur'"
+    },
+    "dst": "item:corrupted-scythe-of-vitur",
+    "id": 6359909,
+    "src": "item:28543",
+    "type": "same_entity"
+  },
+  {
     "cond_group": 4424488,
     "data": {},
     "dst": null,
@@ -1664,6 +1824,16 @@
   {
     "cond_group": null,
     "data": {
+      "basis": "imbue"
+    },
+    "dst": "item:ring-of-suffering-family",
+    "id": 6369537,
+    "src": "item:ring-of-suffering-i",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "capacity_change",
       "magnitude": null,
@@ -1718,6 +1888,16 @@
   {
     "cond_group": null,
     "data": {
+      "basis": "shares wiki page 'Salve amulet(i)'"
+    },
+    "dst": "item:salve-amulet-i",
+    "id": 6386615,
+    "src": "item:12017",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "rate_multiplier",
       "magnitude": 0.1,
@@ -1750,6 +1930,16 @@
     "id": 6393321,
     "src": "quest:recipe-for-disaster-freeing-the-lumbridge-guide",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Holy scythe of vitur'"
+    },
+    "dst": "item:holy-scythe-of-vitur",
+    "id": 6395512,
+    "src": "item:25736",
+    "type": "same_entity"
   },
   {
     "cond_group": null,
@@ -1802,6 +1992,16 @@
     "id": 6421765,
     "src": "diary:ardougne:elite",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "base"
+    },
+    "dst": "item:salve-amulet-family",
+    "id": 6424009,
+    "src": "item:4081",
+    "type": "same_entity"
   },
   {
     "cond_group": null,
@@ -2314,6 +2514,16 @@
   {
     "cond_group": null,
     "data": {
+      "basis": "shares wiki page 'Slayer ring'"
+    },
+    "dst": "item:slayer-ring",
+    "id": 6496541,
+    "src": "item:11868",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "fee_waiver",
       "magnitude": null,
@@ -2410,6 +2620,26 @@
     "id": 6509091,
     "src": "item:13110",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Salve amulet(ei)'"
+    },
+    "dst": "item:salve-amulet-ei",
+    "id": 6510245,
+    "src": "item:12018",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "ornament_kit"
+    },
+    "dst": "item:infernal-axe-family",
+    "id": 6512246,
+    "src": "item:infernal-axe-or-trailblazer-reloaded",
+    "type": "same_entity"
   },
   {
     "cond_group": null,
@@ -2976,6 +3206,16 @@
   {
     "cond_group": null,
     "data": {
+      "basis": "shares wiki page 'Ring of dueling'"
+    },
+    "dst": "item:ring-of-dueling",
+    "id": 6654144,
+    "src": "item:2556",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "rate_multiplier",
       "magnitude": 0.1,
@@ -3038,6 +3278,16 @@
     "id": 6684434,
     "src": "diary:kandarin:easy",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Infernal axe (or)'"
+    },
+    "dst": "item:infernal-axe-or",
+    "id": 6684733,
+    "src": "item:25066",
+    "type": "same_entity"
   },
   {
     "cond_group": 5553315,
@@ -3109,6 +3359,26 @@
     "id": 6695152,
     "src": "quest:the-generals-shadow",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Infernal axe'"
+    },
+    "dst": "item:infernal-axe",
+    "id": 6695282,
+    "src": "item:13242",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Ring of suffering (i)'"
+    },
+    "dst": "item:ring-of-suffering-i",
+    "id": 6696114,
+    "src": "item:26761",
+    "type": "same_entity"
   },
   {
     "cond_group": null,
@@ -3211,6 +3481,26 @@
   {
     "cond_group": null,
     "data": {
+      "basis": "shares wiki page 'Scythe of vitur'"
+    },
+    "dst": "item:scythe-of-vitur",
+    "id": 6716764,
+    "src": "item:22325",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Amulet of glory'"
+    },
+    "dst": "item:amulet-of-glory",
+    "id": 6717810,
+    "src": "item:11978",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "rate_multiplier",
       "magnitude": null,
@@ -3223,12 +3513,32 @@
     "type": "effect"
   },
   {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Amulet of glory'"
+    },
+    "dst": "item:amulet-of-glory",
+    "id": 6718434,
+    "src": "item:1708",
+    "type": "same_entity"
+  },
+  {
     "cond_group": 4780525,
     "data": {},
     "dst": null,
     "id": 6718514,
     "src": "diary:kandarin:medium",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Ring of dueling'"
+    },
+    "dst": "item:ring-of-dueling",
+    "id": 6720861,
+    "src": "item:2558",
+    "type": "same_entity"
   },
   {
     "cond_group": 4798666,
@@ -3329,6 +3639,16 @@
     "id": 6740372,
     "src": "quest:mage-arena-ii",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Amulet of glory'"
+    },
+    "dst": "item:amulet-of-glory",
+    "id": 6743728,
+    "src": "item:1712",
+    "type": "same_entity"
   },
   {
     "cond_group": 5284709,
@@ -3618,6 +3938,16 @@
   {
     "cond_group": null,
     "data": {
+      "basis": "shares wiki page 'Ring of dueling'"
+    },
+    "dst": "item:ring-of-dueling",
+    "id": 6821436,
+    "src": "item:2562",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "recurring_resource",
       "magnitude": null,
@@ -3832,6 +4162,16 @@
   {
     "cond_group": null,
     "data": {
+      "basis": "shares wiki page 'Slayer ring'"
+    },
+    "dst": "item:slayer-ring",
+    "id": 6860221,
+    "src": "item:11871",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "fee_waiver",
       "magnitude": null,
@@ -3874,6 +4214,16 @@
     "id": 6872045,
     "src": "quest:sea-slug",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Holy scythe of vitur'"
+    },
+    "dst": "item:holy-scythe-of-vitur",
+    "id": 6876074,
+    "src": "item:25738",
+    "type": "same_entity"
   },
   {
     "cond_group": 4661326,
@@ -3988,6 +4338,16 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Slayer ring'"
+    },
+    "dst": "item:slayer-ring",
+    "id": 6906624,
+    "src": "item:11867",
+    "type": "same_entity"
+  },
+  {
     "cond_group": 5731262,
     "data": {},
     "dst": null,
@@ -4040,6 +4400,16 @@
     "id": 6921575,
     "src": "item:13128",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Dragon dagger'"
+    },
+    "dst": "item:dragon-dagger",
+    "id": 6925206,
+    "src": "item:5680",
+    "type": "same_entity"
   },
   {
     "cond_group": null,
@@ -4146,6 +4516,16 @@
     "type": "effect"
   },
   {
+    "cond_group": null,
+    "data": {
+      "basis": "recharge_state"
+    },
+    "dst": "item:crystal-pickaxe-family",
+    "id": 6955885,
+    "src": "item:23863",
+    "type": "same_entity"
+  },
+  {
     "cond_group": 4457247,
     "data": {},
     "dst": null,
@@ -4220,6 +4600,16 @@
     "id": 6986081,
     "src": "quest:the-hand-in-the-sand",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Slayer ring'"
+    },
+    "dst": "item:slayer-ring",
+    "id": 6987071,
+    "src": "item:11866",
+    "type": "same_entity"
   },
   {
     "cond_group": null,
@@ -4356,6 +4746,16 @@
   {
     "cond_group": null,
     "data": {
+      "basis": "base"
+    },
+    "dst": "item:bow-of-faerdhinen-family",
+    "id": 7021900,
+    "src": "item:bow-of-faerdhinen",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 2
     },
     "dst": "goal:quest-point-cape",
@@ -4374,6 +4774,16 @@
     "id": 7024272,
     "src": "quest:imp-catcher",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Ring of wealth'"
+    },
+    "dst": "item:ring-of-wealth",
+    "id": 7024601,
+    "src": "item:11986",
+    "type": "same_entity"
   },
   {
     "cond_group": 5703340,
@@ -4409,6 +4819,26 @@
     "id": 7031440,
     "src": "quest:animal-magnetism",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Ring of suffering'"
+    },
+    "dst": "item:ring-of-suffering",
+    "id": 7034222,
+    "src": "item:20655",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Amulet of glory'"
+    },
+    "dst": "item:amulet-of-glory",
+    "id": 7034939,
+    "src": "item:1704",
+    "type": "same_entity"
   },
   {
     "cond_group": 4502612,
@@ -4476,6 +4906,16 @@
     "id": 7054074,
     "src": "diary:morytania:easy",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "ornament_kit"
+    },
+    "dst": "item:scythe-of-vitur-family",
+    "id": 7057259,
+    "src": "item:corrupted-scythe-of-vitur",
+    "type": "same_entity"
   },
   {
     "cond_group": 4635195,
@@ -4579,6 +5019,16 @@
   {
     "cond_group": null,
     "data": {
+      "basis": "shares wiki page 'Ring of dueling'"
+    },
+    "dst": "item:ring-of-dueling",
+    "id": 7074484,
+    "src": "item:2560",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "fee_waiver",
       "magnitude": 0.25,
@@ -4597,6 +5047,16 @@
     "id": 7083109,
     "src": "item:13140",
     "type": "supersedes"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Ring of wealth'"
+    },
+    "dst": "item:ring-of-wealth",
+    "id": 7088468,
+    "src": "item:11980",
+    "type": "same_entity"
   },
   {
     "cond_group": null,
@@ -4794,6 +5254,16 @@
   {
     "cond_group": null,
     "data": {
+      "basis": "ornament_kit"
+    },
+    "dst": "item:scythe-of-vitur-family",
+    "id": 7111318,
+    "src": "item:sanguine-scythe-of-vitur",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "access": "Achievement diary cape (t)",
       "category": "equipment",
       "name": "Achievement diary cape (t)",
@@ -4947,6 +5417,26 @@
     "type": "effect"
   },
   {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Scythe of vitur'"
+    },
+    "dst": "item:scythe-of-vitur",
+    "id": 7136308,
+    "src": "item:22486",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Infernal axe (or) (Trailblazer Reloaded)'"
+    },
+    "dst": "item:infernal-axe-or-trailblazer-reloaded",
+    "id": 7140836,
+    "src": "item:30348",
+    "type": "same_entity"
+  },
+  {
     "cond_group": 4075593,
     "data": {},
     "dst": null,
@@ -4983,6 +5473,16 @@
     "id": 7150413,
     "src": "item:13135",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Salve amulet(i)'"
+    },
+    "dst": "item:salve-amulet-i",
+    "id": 7151393,
+    "src": "item:26763",
+    "type": "same_entity"
   },
   {
     "cond_group": 4944333,
@@ -5031,6 +5531,16 @@
     "id": 7159473,
     "src": "quest:fairytale-ii-cure-a-queen",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Dragon dagger'"
+    },
+    "dst": "item:dragon-dagger",
+    "id": 7160666,
+    "src": "item:5698",
+    "type": "same_entity"
   },
   {
     "cond_group": 5850990,
@@ -5099,6 +5609,16 @@
     "id": 7187764,
     "src": "item:13124",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Ring of wealth'"
+    },
+    "dst": "item:ring-of-wealth",
+    "id": 7192492,
+    "src": "item:11982",
+    "type": "same_entity"
   },
   {
     "cond_group": null,
@@ -5194,6 +5714,16 @@
     "id": 7213362,
     "src": "item:13107",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Ring of wealth'"
+    },
+    "dst": "item:ring-of-wealth",
+    "id": 7217697,
+    "src": "item:11984",
+    "type": "same_entity"
   },
   {
     "cond_group": null,
@@ -5412,6 +5942,16 @@
   {
     "cond_group": null,
     "data": {
+      "basis": "shares wiki page 'Ring of dueling'"
+    },
+    "dst": "item:ring-of-dueling",
+    "id": 7270209,
+    "src": "item:2564",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "access": "Rune platebody equip",
       "category": "equipment",
       "name": "Equip green d'hide body, rune platebody, and dragon platebody",
@@ -5446,6 +5986,16 @@
     "id": 7279258,
     "src": "quest:prince-ali-rescue",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Ring of suffering (i)'"
+    },
+    "dst": "item:ring-of-suffering-i",
+    "id": 7280497,
+    "src": "item:26762",
+    "type": "same_entity"
   },
   {
     "cond_group": null,
@@ -5644,6 +6194,16 @@
   {
     "cond_group": null,
     "data": {
+      "basis": "shares wiki page 'Infernal axe (or)'"
+    },
+    "dst": "item:infernal-axe-or",
+    "id": 7339001,
+    "src": "item:25371",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "condition": "while-equipped",
       "effect_kind": "rate_multiplier",
       "magnitude": 0.02,
@@ -5710,6 +6270,26 @@
     "id": 7355675,
     "src": "item:13123",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Infernal axe (or) (Trailblazer Reloaded)'"
+    },
+    "dst": "item:infernal-axe-or-trailblazer-reloaded",
+    "id": 7356921,
+    "src": "item:30347",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "ornament_kit"
+    },
+    "dst": "item:scythe-of-vitur-family",
+    "id": 7361772,
+    "src": "item:holy-scythe-of-vitur",
+    "type": "same_entity"
   },
   {
     "cond_group": 4852444,
@@ -5950,6 +6530,16 @@
     "type": "supersedes"
   },
   {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Infernal axe'"
+    },
+    "dst": "item:infernal-axe",
+    "id": 7430564,
+    "src": "item:13241",
+    "type": "same_entity"
+  },
+  {
     "cond_group": 5081705,
     "data": {},
     "dst": null,
@@ -6042,6 +6632,16 @@
     "id": 7447010,
     "src": "quest:a-night-at-the-theatre",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Ring of dueling'"
+    },
+    "dst": "item:ring-of-dueling",
+    "id": 7447083,
+    "src": "item:2552",
+    "type": "same_entity"
   },
   {
     "cond_group": null,
@@ -6142,6 +6742,16 @@
   {
     "cond_group": null,
     "data": {
+      "basis": "shares wiki page 'Crystal pickaxe'"
+    },
+    "dst": "item:crystal-pickaxe",
+    "id": 7458364,
+    "src": "item:23682",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 1
     },
     "dst": "goal:achievement-diary-cape",
@@ -6200,6 +6810,16 @@
     "id": 7477051,
     "src": "quest:legends-quest",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Ring of dueling'"
+    },
+    "dst": "item:ring-of-dueling",
+    "id": 7477748,
+    "src": "item:2554",
+    "type": "same_entity"
   },
   {
     "cond_group": null,
@@ -6264,6 +6884,16 @@
     "id": 7490065,
     "src": "diary:falador:elite",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Dragon dagger'"
+    },
+    "dst": "item:dragon-dagger",
+    "id": 7493925,
+    "src": "item:1231",
+    "type": "same_entity"
   },
   {
     "cond_group": null,
@@ -6338,6 +6968,26 @@
     "id": 7505855,
     "src": "item:22945",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Ring of suffering (i)'"
+    },
+    "dst": "item:ring-of-suffering-i",
+    "id": 7507891,
+    "src": "item:25246",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Amulet of glory'"
+    },
+    "dst": "item:amulet-of-glory",
+    "id": 7508975,
+    "src": "item:11976",
+    "type": "same_entity"
   },
   {
     "cond_group": null,
@@ -6428,6 +7078,16 @@
     "id": 7527379,
     "src": "quest:the-eyes-of-glouphrie",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "base"
+    },
+    "dst": "item:infernal-axe-family",
+    "id": 7527627,
+    "src": "item:infernal-axe",
+    "type": "same_entity"
   },
   {
     "cond_group": null,
@@ -6596,6 +7256,16 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Ring of suffering (i)'"
+    },
+    "dst": "item:ring-of-suffering-i",
+    "id": 7567436,
+    "src": "item:20657",
+    "type": "same_entity"
+  },
+  {
     "cond_group": 4816881,
     "data": {},
     "dst": null,
@@ -6644,6 +7314,16 @@
     "id": 7582548,
     "src": "item:13143",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Ring of suffering (i)'"
+    },
+    "dst": "item:ring-of-suffering-i",
+    "id": 7583587,
+    "src": "item:19710",
+    "type": "same_entity"
   },
   {
     "cond_group": 5654168,
@@ -6772,6 +7452,16 @@
   {
     "cond_group": null,
     "data": {
+      "basis": "enchant"
+    },
+    "dst": "item:salve-amulet-family",
+    "id": 7609098,
+    "src": "item:10588",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "behavior_toggle",
       "magnitude": null,
@@ -6890,6 +7580,16 @@
     "id": 7641749,
     "src": "quest:sins-of-the-father",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Dragon dagger'"
+    },
+    "dst": "item:dragon-dagger",
+    "id": 7642756,
+    "src": "item:1215",
+    "type": "same_entity"
   },
   {
     "cond_group": null,
@@ -7078,6 +7778,16 @@
   {
     "cond_group": null,
     "data": {
+      "basis": "shares wiki page 'Corrupted scythe of vitur'"
+    },
+    "dst": "item:corrupted-scythe-of-vitur",
+    "id": 7681518,
+    "src": "item:28545",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "capacity_change",
       "magnitude": null,
@@ -7088,6 +7798,16 @@
     "id": 7685656,
     "src": "item:13139",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Sanguine scythe of vitur'"
+    },
+    "dst": "item:sanguine-scythe-of-vitur",
+    "id": 7686461,
+    "src": "item:25741",
+    "type": "same_entity"
   },
   {
     "cond_group": 5672118,
@@ -7304,6 +8024,16 @@
     "id": 7753591,
     "src": "quest:ratcatchers",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "base"
+    },
+    "dst": "item:scythe-of-vitur-family",
+    "id": 7764706,
+    "src": "item:scythe-of-vitur",
+    "type": "same_entity"
   },
   {
     "cond_group": null,
@@ -7602,6 +8332,16 @@
   {
     "cond_group": null,
     "data": {
+      "basis": "shares wiki page 'Bow of faerdhinen'"
+    },
+    "dst": "item:bow-of-faerdhinen",
+    "id": 7820010,
+    "src": "item:25865",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "qty": 1,
       "reward": "items",
       "tradeable": true
@@ -7726,6 +8466,16 @@
   {
     "cond_group": null,
     "data": {
+      "basis": "shares wiki page 'Amulet of glory'"
+    },
+    "dst": "item:amulet-of-glory",
+    "id": 7846142,
+    "src": "item:1706",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "amount": 2500,
       "count": 1,
       "eligible_skills": "any",
@@ -7792,6 +8542,16 @@
     "id": 7854573,
     "src": "diary:ardougne:easy",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "imbue"
+    },
+    "dst": "item:salve-amulet-family",
+    "id": 7858493,
+    "src": "item:salve-amulet-i",
+    "type": "same_entity"
   },
   {
     "cond_group": null,
@@ -7926,6 +8686,16 @@
   {
     "cond_group": null,
     "data": {
+      "basis": "shares wiki page 'Ring of wealth'"
+    },
+    "dst": "item:ring-of-wealth",
+    "id": 7885447,
+    "src": "item:2572",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "access": "Herblore skill",
       "category": "skill",
       "name": "Herblore skill access",
@@ -8040,6 +8810,16 @@
   {
     "cond_group": null,
     "data": {
+      "basis": "shares wiki page 'Sanguine scythe of vitur'"
+    },
+    "dst": "item:sanguine-scythe-of-vitur",
+    "id": 7905596,
+    "src": "item:25739",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "access": "Rune essence mine",
       "category": "skilling-method",
       "name": "Mine rune essence",
@@ -8060,12 +8840,32 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Amulet of glory'"
+    },
+    "dst": "item:amulet-of-glory",
+    "id": 7908687,
+    "src": "item:1710",
+    "type": "same_entity"
+  },
+  {
     "cond_group": 4808346,
     "data": {},
     "dst": null,
     "id": 7912749,
     "src": "quest:black-knights-fortress",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Slayer ring'"
+    },
+    "dst": "item:slayer-ring",
+    "id": 7915392,
+    "src": "item:11872",
+    "type": "same_entity"
   },
   {
     "cond_group": 5857536,
@@ -8226,6 +9026,16 @@
   {
     "cond_group": null,
     "data": {
+      "basis": "shares wiki page 'Ring of suffering (i)'"
+    },
+    "dst": "item:ring-of-suffering-i",
+    "id": 7944930,
+    "src": "item:25248",
+    "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "recurring_resource",
       "magnitude": null,
@@ -8246,6 +9056,16 @@
     "id": 7948398,
     "src": "diary:fremennik:hard",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "shares wiki page 'Slayer ring'"
+    },
+    "dst": "item:slayer-ring",
+    "id": 7949888,
+    "src": "item:11873",
+    "type": "same_entity"
   },
   {
     "cond_group": null,
@@ -8336,6 +9156,16 @@
     "id": 7970155,
     "src": "quest:cooks-assistant",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "basis": "ornament_kit"
+    },
+    "dst": "item:infernal-axe-family",
+    "id": 7972727,
+    "src": "item:infernal-axe-or",
+    "type": "same_entity"
   },
   {
     "cond_group": null,

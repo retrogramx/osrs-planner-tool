@@ -30,6 +30,7 @@ from kg_ingest.builders.content_nodes import build_content_nodes
 from kg_ingest.builders.diaries import build_diaries
 from kg_ingest.builders.diary_goals import build_diary_goals
 from kg_ingest.builders.goals import build_goals
+from kg_ingest.builders.items import build_items
 from kg_ingest.builders.quest_rewards import build_quest_rewards
 from kg_ingest.builders.quests import build_quests
 from kg_ingest.builders.supporting import build_supporting
@@ -185,6 +186,27 @@ def _load_reward_records() -> list[dict]:
     return json.loads(QUEST_REWARDS_PATH.read_text())["records"]
 
 
+ITEM_DICTIONARY_PATH = Path(__file__).resolve().parents[1] / "data" / "item_dictionary.json"
+ITEM_EXEMPLARS_PATH = Path(__file__).resolve().parents[1] / "data" / "item_node_exemplars.json"
+ITEM_FAMILIES_PATH = Path(__file__).resolve().parents[1] / "data" / "item_node_families.json"
+
+
+def _load_item_dict_records() -> list[dict]:
+    return json.loads(ITEM_DICTIONARY_PATH.read_text())["records"]
+
+
+def _load_item_exemplars() -> set[str]:
+    if not ITEM_EXEMPLARS_PATH.exists():
+        return set()
+    return set(json.loads(ITEM_EXEMPLARS_PATH.read_text())["records"])
+
+
+def _load_item_families() -> list[dict]:
+    if not ITEM_FAMILIES_PATH.exists():
+        return []
+    return json.loads(ITEM_FAMILIES_PATH.read_text())["records"]
+
+
 COMPLETION_GOALS_PATH = Path(__file__).resolve().parents[1] / "data" / "completion_goals.json"
 ACHIEVEMENT_DIARIES_PATH = Path(__file__).resolve().parents[1] / "data" / "achievement_diaries.json"
 DIARY_GOALS_PATH = Path(__file__).resolve().parents[1] / "data" / "diary_goals.json"
@@ -284,8 +306,19 @@ def assemble() -> None:
         | {n.id for n in dg_nodes}
         | {n.id for n in content_nodes}
     )
+    referenced_all = _collect_referenced_ids(edges, groups)
+    # Item nodes: build_items owns referenced items (in the dictionary) NOT already owned,
+    # plus the curated exemplar/family rosters. It is re-keyed in its own call.
+    referenced_item_ids = {r for r in referenced_all if r.startswith("item:")} - owned_ids
+    i_nodes, i_edges, _ = build_items(
+        _load_item_dict_records(), _load_item_exemplars(), _load_item_families(),
+        referenced_item_ids, owned_ids=frozenset(owned_ids),
+    )
+    i_nodes, i_edges, _ = rekey(i_nodes, i_edges, {})
+    edges = edges + i_edges
+    owned_ids = owned_ids | {n.id for n in i_nodes}
     referenced = {
-        r for r in _collect_referenced_ids(edges, groups)
+        r for r in referenced_all
         if r.split(":")[0] in _LEAF_DOMAINS
     } - owned_ids
     s_nodes = build_supporting(referenced)
@@ -295,7 +328,7 @@ def assemble() -> None:
     #    (with tasks list) is first-seen and wins if any stale supporting diary node
     #    were somehow included (it shouldn't be, since diary is excluded from _LEAF_DOMAINS).
     nodes = dedup_nodes(
-        q_nodes + g_nodes + cg_nodes + d_nodes + dg_nodes + content_nodes + s_nodes
+        q_nodes + g_nodes + cg_nodes + d_nodes + dg_nodes + content_nodes + i_nodes + s_nodes
     )
 
     # 5) serialize, sorted deterministically.
