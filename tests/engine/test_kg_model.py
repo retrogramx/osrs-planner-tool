@@ -16,6 +16,7 @@ def test_node_kind_members_match_schema_taxonomy():
         "skill", "item", "monster", "quest", "access", "region",
         "account_type", "gear_loadout", "activity", "diary",
         "combat_achievement", "minigame", "clog_slot", "goal",
+        "recipe",
     }
 
 
@@ -28,6 +29,7 @@ def test_edge_type_members_match_schema():
     assert {e.value for e in EdgeType} == {
         "requires", "grants", "drops", "located_in", "gated_by",
         "effect", "progress_towards", "supersedes", "same_entity",
+        "consumes", "produces",
     }
 
 
@@ -216,3 +218,20 @@ def test_schema_declares_same_entity_live():
         schema = json.load(f)
     assert schema["edge_kinds"]["same_entity"]["status"] == "live"
     assert "is_page" in schema["node_kinds"]["item"]["data_keys"]
+
+
+def test_recipe_kind_and_consumes_produces_edges_exist():
+    from osrs_planner.engine.kg.model import NodeKind, EdgeType
+    assert NodeKind.RECIPE.value == "recipe"
+    assert EdgeType.CONSUMES.value == "consumes"
+    assert EdgeType.PRODUCES.value == "produces"
+
+
+def test_schema_declares_recipe_consumes_produces_live():
+    import json, pathlib
+    schema = json.loads((pathlib.Path(__file__).resolve().parents[2] / "kg" / "schema.json").read_text())
+    assert schema["node_kinds"]["recipe"]["status"] == "live"
+    assert schema["edge_kinds"]["consumes"]["status"] == "live"
+    assert schema["edge_kinds"]["produces"]["status"] == "live"
+    assert "charge_yield" in schema["node_kinds"]["recipe"]["data_keys"]
+    assert schema["vocab"]["consumes_role"] == ["material", "subject"]

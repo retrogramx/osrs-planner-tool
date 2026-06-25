@@ -62,7 +62,7 @@
     "facility": {"status": "reserved", "key_prefix": "facility:<slug>", "id_basis": "slug", "notes": "anvil/furnace/altar/range (requires_facility).", "data_keys": []},
     "counter": {"status": "reserved", "key_prefix": "counter:<slug>", "id_basis": "slug", "notes": "An accumulating counter (counts_toward feed).", "data_keys": []},
     "drop_table": {"status": "reserved", "key_prefix": "drop_table:<slug>", "id_basis": "slug", "notes": "Reified table/rolls/membership (decision 3 / §4).", "data_keys": ["rolls"]},
-    "recipe": {"status": "reserved", "key_prefix": "recipe:<slug>", "id_basis": "slug", "notes": "{materials+tools+facility+skill+xp->output} (decision 3 / §4).", "data_keys": ["xp", "ticks"]},
+    "recipe": {"status": "live", "key_prefix": "recipe:<slug>", "id_basis": "slug", "notes": "{materials+tools+facility+skill+xp->output} (decision 3 / §4).", "data_keys": ["xp", "ticks", "charge_yield", "charge_capacity", "notes"]},
     "equipment_bonuses": {"status": "reserved", "key_prefix": "equipment_bonuses:<item_id>", "id_basis": "cache_id", "notes": "The gear/BIS substrate facet (has_bonuses). Supersedes part of the v1 'gear_loadout' kind.", "data_keys": ["attack", "defence", "other"]},
     "item_set": {"status": "reserved", "key_prefix": "item_set:<slug>", "id_basis": "slug", "notes": "Named item set (member_of). Supersedes part of the v1 'gear_loadout' kind.", "data_keys": []},
     "set_effect": {"status": "reserved", "key_prefix": "set_effect:<slug>", "id_basis": "slug", "notes": "The bonus an item_set confers when complete.", "data_keys": []},
@@ -121,8 +121,8 @@
     "drops": {"status": "reserved", "domain": ["monster", "activity", "scenery"], "range": ["drop_table", "item"], "dst": "required", "cond_group": "optional", "reified": true, "notes": "Reified {rate, rolls, drop_type, version}. NEVER fabricate the loot MECHANISM (RDT/GDT) — record flat observable rates (Option-A)."},
     "has_table": {"status": "reserved", "domain": ["monster", "activity", "scenery"], "range": ["drop_table"], "dst": "required", "cond_group": "optional", "reified": true, "notes": "Source -> drop_table."},
     "contains": {"status": "reserved", "domain": ["drop_table"], "range": ["item", "drop_table"], "dst": "required", "cond_group": "optional", "reified": true, "notes": "drop_table -> item-variant or sub-table."},
-    "consumes": {"status": "reserved", "domain": ["recipe"], "range": ["item"], "dst": "required", "cond_group": "forbidden", "reified": true, "notes": "Destroyed, quantity (resource gate, decision 7)."},
-    "produces": {"status": "reserved", "domain": ["recipe"], "range": ["item"], "dst": "required", "cond_group": "optional", "reified": true, "notes": "Guarded output."},
+    "consumes": {"status": "live", "domain": ["recipe"], "range": ["item"], "dst": "required", "cond_group": "forbidden", "reified": true, "notes": "Destroyed, quantity (resource gate, decision 7)."},
+    "produces": {"status": "live", "domain": ["recipe"], "range": ["item"], "dst": "required", "cond_group": "optional", "reified": true, "notes": "Guarded output."},
     "recommended_for": {"status": "reserved", "domain": "*", "range": "*", "dst": "optional", "cond_group": "required", "reified": false, "notes": "SOFT advisory; never blocks (decision 4). Carries strength in {required_for_survival, strongly_recommended, optional}. Uses the FULL atom vocabulary (recommended combat stats/levels for bosses/raids)."},
     "gives_access": {"status": "reserved", "domain": ["transport_system", "scenery"], "range": ["place"], "dst": "required", "cond_group": "optional", "reified": false, "notes": "Transport; system-gate AND edge-gate composed (§7)."},
     "served_by": {"status": "reserved", "domain": ["transport_system", "scenery"], "range": ["place"], "dst": "required", "cond_group": "optional", "reified": false, "notes": "Transport service binding (§7)."},
@@ -186,6 +186,7 @@
   "vocab": {
     "recommended_strength": ["required_for_survival", "strongly_recommended", "optional"],
     "drop_type_note": "Observable rate only (Option-A). The loot MECHANISM (RDT/GDT vs direct vs on-task) is NOT fabricated.",
-    "effect_kind": ["stat_multiplier", "rate_multiplier", "capacity_change", "fee_waiver", "behavior_toggle", "recurring_resource", "access"]
+    "effect_kind": ["stat_multiplier", "rate_multiplier", "capacity_change", "fee_waiver", "behavior_toggle", "recurring_resource", "access"],
+    "consumes_role": ["material", "subject"]
   }
 }

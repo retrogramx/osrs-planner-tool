@@ -28,6 +28,7 @@ class NodeKind(str, Enum):
     MINIGAME = "minigame"
     CLOG_SLOT = "clog_slot"
     GOAL = "goal"  # completion-goal aggregate node (Quest cape, music cape, ...): data={counter_type, thresholds}
+    RECIPE = "recipe"                  # reified production/charging process (decision 3 / spec §3-4)
 
 
 class EdgeType(str, Enum):
@@ -43,6 +44,8 @@ class EdgeType(str, Enum):
     PROGRESS_TOWARDS = "progress_towards"  # counting contribution toward a goal node; data={weight} (spec §5)
     SUPERSEDES = "supersedes"          # item upgrade ladder (cloak 1≺2≺3≺4); inert to gating
     SAME_ENTITY = "same_entity"        # identity bridge (variant->page, page->family); decision 5/6
+    CONSUMES = "consumes"              # recipe -> item input (destroyed/transformed); reified {qty, role}
+    PRODUCES = "produces"              # recipe -> item output; reified {qty}
 
 
 class Op(str, Enum):
