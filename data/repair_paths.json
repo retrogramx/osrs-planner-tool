@@ -1,0 +1,15 @@
+{
+  "_provenance": {
+    "note": "curated item repair transitions (broken->repaired); editorial — owner-reviewed",
+    "license": "CC BY-NC-SA 3.0",
+    "accessed": "2026-06-25"
+  },
+  "records": [
+    { "slug": "repair-dharoks-helm", "page": "Dharok's helm", "broken": 4884, "repaired": 4716,
+      "source_url": "https://oldschool.runescape.wiki/w/Dharok's_helm",
+      "source_token": "Players can talk to any of the NPCs listed below and they will repair the items for a price" },
+    { "slug": "repair-barrelchest-anchor", "page": "Barrelchest anchor", "broken": 10888, "repaired": 10887,
+      "source_url": "https://oldschool.runescape.wiki/w/Barrelchest_anchor",
+      "source_token": "Players receive this item in a broken state and must pay Smith on the docks of Mos Le'Harmless a fee of 230,000 coins to repair the anchor." }
+  ]
+}
