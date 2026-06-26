@@ -337,7 +337,7 @@ def assemble() -> None:
     # Build them now (builder-local ids) so their item dsts (incl. Dharok's degrade variants)
     # are collected for import, but do NOT rekey them separately — rekey TOGETHER with
     # build_items below so a shared owner gets distinct per-owner indices (no cross-call collision).
-    _dg_nodes, dg_edges, _ = build_degrade_paths(_load_degrade_path_records())  # _dg_nodes == []
+    _degrade_nodes, dg_edges, _ = build_degrade_paths(_load_degrade_path_records())  # _degrade_nodes == []
 
     referenced_all = _collect_referenced_ids(edges + dg_edges, groups)
     referenced_item_ids = {r for r in referenced_all if r.startswith("item:")} - owned_ids

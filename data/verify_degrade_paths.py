@@ -52,11 +52,14 @@ def main() -> int:
             if "terminal_item" in rec:
                 errors.append(f"[terminal] {slug!r} destroyed must NOT carry a terminal_item")
         elif terminal in ("reverts_to", "broken"):
-            ti = rec.get("terminal_item")
-            if ti not in id_to_page:
-                errors.append(f"[item] {slug!r} terminal_item {ti!r} not in item_dictionary")
-            elif id_to_page[ti] != page:
-                errors.append(f"[page] {slug!r} terminal_item page {id_to_page[ti]!r} != {page!r}")
+            if "terminal_item" not in rec:
+                errors.append(f"[terminal] {slug!r} {terminal} must carry a terminal_item")
+            else:
+                ti = rec.get("terminal_item")
+                if ti not in id_to_page:
+                    errors.append(f"[item] {slug!r} terminal_item {ti!r} not in item_dictionary")
+                elif id_to_page[ti] != page:
+                    errors.append(f"[page] {slug!r} terminal_item page {id_to_page[ti]!r} != {page!r}")
     if errors:
         print(f"DEGRADE-PATHS VERIFICATION FAILED — {len(errors)} violation(s):")
         for e in errors:

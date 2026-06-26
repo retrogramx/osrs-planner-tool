@@ -8,7 +8,7 @@ these TOGETHER with build_items' same_entity edges (shared per-owner index).
 """
 from __future__ import annotations
 
-from osrs_planner.engine.kg.model import Edge, EdgeType, Node
+from osrs_planner.engine.kg.model import Edge, EdgeType
 from kg_ingest.ids import _stable_hash, item_id
 
 _EDGE_BAND = 0xA0000000  # degrade-paths builder-local edge ids (rekeyed in assemble)
@@ -20,7 +20,7 @@ def _edge_id(src_id: str) -> int:
 
 
 def build_degrade_paths(records):
-    nodes: list[Node] = []
+    nodes: list = []
     edges: list[Edge] = []
     for rec in records:
         seq = rec["sequence"]
