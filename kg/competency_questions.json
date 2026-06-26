@@ -10,5 +10,8 @@
     ,{ "id": "cq-charge-cost-scythe-of-vitur",
       "question": "What materials does it cost to charge a Scythe of vitur?",
       "method": "recipe_materials", "target": "recipe:charge-scythe-of-vitur", "expect_min": 2 }
+    ,{ "id": "cq-ring-of-dueling-destroyed",
+      "question": "Is a Ring of dueling destroyed when its last charge is used?",
+      "method": "is_destroyed", "target": "item:ring-of-dueling", "expect_min": 1 }
   ]
 }

@@ -19,6 +19,12 @@ def _recipe_materials(store, target):
     return {e.dst for e in store.edges
             if e.type is EdgeType.CONSUMES and e.src == target and (e.data or {}).get("role") == "material"}
 
+def _is_destroyed(store, target):
+    # variants of the page (same_entity in-edges) that have an outgoing degrades_to with dst=None
+    variants = {e.src for e in store.edges if e.type is EdgeType.SAME_ENTITY and e.dst == target}
+    return {e.src for e in store.edges
+            if e.type is EdgeType.DEGRADES_TO and e.dst is None and e.src in variants}
+
 def test_all_competency_questions_pass():
     store = JsonKGStore.from_dir(KG)
     with open(ROOT / "kg" / "competency_questions.json") as f:
@@ -31,6 +37,8 @@ def test_all_competency_questions_pass():
             answer = _family(store, cq["target"])
         elif cq["method"] == "recipe_materials":
             answer = _recipe_materials(store, cq["target"])
+        elif cq["method"] == "is_destroyed":
+            answer = _is_destroyed(store, cq["target"])
         else:
             raise AssertionError(f"unknown method {cq['method']!r}")
         assert len(answer) >= cq["expect_min"], f"{cq['id']}: got {len(answer)} < {cq['expect_min']}"
