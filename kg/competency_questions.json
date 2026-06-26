@@ -16,5 +16,8 @@
     ,{ "id": "cq-dharoks-helm-repairable",
       "question": "Can a broken Dharok's helm be repaired?",
       "method": "is_repairable", "target": "item:4884", "expect_min": 1 }
+    ,{ "id": "cq-scythe-of-vitur-slash-bonus",
+      "question": "What is the Scythe of vitur's slash attack bonus?",
+      "method": "equipment_bonus", "target": "item:22325", "stat": "slash_attack_bonus", "expect": 125 }
   ]
 }

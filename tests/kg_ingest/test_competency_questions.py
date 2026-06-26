@@ -31,6 +31,13 @@ def _is_repairable(store, target):
     return {e.dst for e in store.edges if e.type is EdgeType.REPAIRS and e.src == target}
 
 
+def _equipment_bonus(store, target, stat):
+    for e in store.edges:
+        if e.type is EdgeType.HAS_BONUSES and e.src == target:
+            return store.node(e.dst).data["stats"].get(stat)
+    return None
+
+
 def test_all_competency_questions_pass():
     store = JsonKGStore.from_dir(KG)
     with open(ROOT / "kg" / "competency_questions.json") as f:
@@ -47,6 +54,10 @@ def test_all_competency_questions_pass():
             answer = _is_destroyed(store, cq["target"])
         elif cq["method"] == "is_repairable":
             answer = _is_repairable(store, cq["target"])
+        elif cq["method"] == "equipment_bonus":
+            answer = _equipment_bonus(store, cq["target"], cq["stat"])
+            assert answer == cq["expect"], f"{cq['id']}: {cq['stat']}={answer!r} != {cq['expect']!r}"
+            continue
         else:
             raise AssertionError(f"unknown method {cq['method']!r}")
         assert len(answer) >= cq["expect_min"], f"{cq['id']}: got {len(answer)} < {cq['expect_min']}"
