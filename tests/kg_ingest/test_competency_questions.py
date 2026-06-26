@@ -38,6 +38,11 @@ def _equipment_bonus(store, target, stat):
     return None
 
 
+def _sold_by(store, target):
+    # the set of shops with a sells edge to the target item
+    return {e.src for e in store.edges if e.type is EdgeType.SELLS and e.dst == target}
+
+
 def test_all_competency_questions_pass():
     store = JsonKGStore.from_dir(KG)
     with open(ROOT / "kg" / "competency_questions.json") as f:
@@ -58,6 +63,8 @@ def test_all_competency_questions_pass():
             answer = _equipment_bonus(store, cq["target"], cq["stat"])
             assert answer == cq["expect"], f"{cq['id']}: {cq['stat']}={answer!r} != {cq['expect']!r}"
             continue
+        elif cq["method"] == "sold_by":
+            answer = _sold_by(store, cq["target"])
         else:
             raise AssertionError(f"unknown method {cq['method']!r}")
         assert len(answer) >= cq["expect_min"], f"{cq['id']}: got {len(answer)} < {cq['expect_min']}"

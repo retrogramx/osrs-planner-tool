@@ -19,5 +19,8 @@
     ,{ "id": "cq-scythe-of-vitur-slash-bonus",
       "question": "What is the Scythe of vitur's slash attack bonus?",
       "method": "equipment_bonus", "target": "item:22325", "stat": "slash_attack_bonus", "expect": 125 }
+    ,{ "id": "cq-battlestaff-sold-by",
+      "question": "Where can I buy a battlestaff?",
+      "method": "sold_by", "target": "item:1391", "expect_min": 1 }
   ]
 }
