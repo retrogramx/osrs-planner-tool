@@ -2867,6 +2867,2372 @@
     "slug": "wilderness-medium"
   },
   {
+    "data": {
+      "item_id": 10498,
+      "slot": "cape",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 2,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 2,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:10498",
+    "kind": "equipment_bonuses",
+    "name": "Ava's attractor (equipment bonuses)",
+    "slug": "equipment-bonuses-10498"
+  },
+  {
+    "data": {
+      "item_id": 10499,
+      "slot": "cape",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 4,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 4,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 1,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:10499",
+    "kind": "equipment_bonuses",
+    "name": "Ava's accumulator (equipment bonuses)",
+    "slug": "equipment-bonuses-10499"
+  },
+  {
+    "data": {
+      "item_id": 10588,
+      "slot": "neck",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 3,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 3,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 3,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 3,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:10588",
+    "kind": "equipment_bonuses",
+    "name": "Salve amulet (e) (equipment bonuses)",
+    "slug": "equipment-bonuses-10588"
+  },
+  {
+    "data": {
+      "item_id": 10887,
+      "slot": "2h",
+      "stats": {
+        "crush_attack_bonus": 92,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 10,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": -2,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 100
+      },
+      "weapon": {
+        "combat_style": "Spiked",
+        "weapon_attack_range": "1",
+        "weapon_attack_speed": 6
+      }
+    },
+    "id": "equipment_bonuses:10887",
+    "kind": "equipment_bonuses",
+    "name": "Barrelchest anchor (equipment bonuses)",
+    "slug": "equipment-bonuses-10887"
+  },
+  {
+    "data": {
+      "item_id": 11136,
+      "slot": "hands",
+      "stats": {
+        "crush_attack_bonus": 1,
+        "crush_defence_bonus": 1,
+        "magic_attack_bonus": 1,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 1,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 1,
+        "range_defence_bonus": 1,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 1,
+        "slash_defence_bonus": 1,
+        "stab_attack_bonus": 1,
+        "stab_defence_bonus": 1,
+        "strength_bonus": 1
+      }
+    },
+    "id": "equipment_bonuses:11136",
+    "kind": "equipment_bonuses",
+    "name": "Karamja gloves 1 (equipment bonuses)",
+    "slug": "equipment-bonuses-11136"
+  },
+  {
+    "data": {
+      "item_id": 11138,
+      "slot": "hands",
+      "stats": {
+        "crush_attack_bonus": 1,
+        "crush_defence_bonus": 1,
+        "magic_attack_bonus": 1,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 1,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 1,
+        "range_defence_bonus": 1,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 1,
+        "slash_defence_bonus": 1,
+        "stab_attack_bonus": 1,
+        "stab_defence_bonus": 1,
+        "strength_bonus": 1
+      }
+    },
+    "id": "equipment_bonuses:11138",
+    "kind": "equipment_bonuses",
+    "name": "Karamja gloves 2 (equipment bonuses)",
+    "slug": "equipment-bonuses-11138"
+  },
+  {
+    "data": {
+      "item_id": 11140,
+      "slot": "hands",
+      "stats": {
+        "crush_attack_bonus": 1,
+        "crush_defence_bonus": 1,
+        "magic_attack_bonus": 1,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 1,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 1,
+        "range_defence_bonus": 1,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 1,
+        "slash_defence_bonus": 1,
+        "stab_attack_bonus": 1,
+        "stab_defence_bonus": 1,
+        "strength_bonus": 1
+      }
+    },
+    "id": "equipment_bonuses:11140",
+    "kind": "equipment_bonuses",
+    "name": "Karamja gloves 3 (equipment bonuses)",
+    "slug": "equipment-bonuses-11140"
+  },
+  {
+    "data": {
+      "item_id": 11866,
+      "slot": "ring",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:11866",
+    "kind": "equipment_bonuses",
+    "name": "Slayer ring (8) (equipment bonuses)",
+    "slug": "equipment-bonuses-11866"
+  },
+  {
+    "data": {
+      "item_id": 11980,
+      "slot": "ring",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:11980",
+    "kind": "equipment_bonuses",
+    "name": "Ring of wealth (5) (equipment bonuses)",
+    "slug": "equipment-bonuses-11980"
+  },
+  {
+    "data": {
+      "item_id": 12017,
+      "slot": "neck",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 3,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 3,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 3,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 3,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:12017",
+    "kind": "equipment_bonuses",
+    "name": "Salve amulet(i) (equipment bonuses)",
+    "slug": "equipment-bonuses-12017"
+  },
+  {
+    "data": {
+      "item_id": 12018,
+      "slot": "neck",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 3,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 3,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 3,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 3,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:12018",
+    "kind": "equipment_bonuses",
+    "name": "Salve amulet(ei) (equipment bonuses)",
+    "slug": "equipment-bonuses-12018"
+  },
+  {
+    "data": {
+      "item_id": 1215,
+      "slot": "weapon",
+      "stats": {
+        "crush_attack_bonus": -4,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 1,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 1,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 25,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 40,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 40
+      },
+      "weapon": {
+        "combat_style": "Stab Sword",
+        "weapon_attack_range": "1",
+        "weapon_attack_speed": 4
+      }
+    },
+    "id": "equipment_bonuses:1215",
+    "kind": "equipment_bonuses",
+    "name": "Dragon dagger (equipment bonuses)",
+    "slug": "equipment-bonuses-1215"
+  },
+  {
+    "data": {
+      "item_id": 13103,
+      "slot": "hands",
+      "stats": {
+        "crush_attack_bonus": 1,
+        "crush_defence_bonus": 1,
+        "magic_attack_bonus": 1,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 1,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 1,
+        "range_defence_bonus": 1,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 1,
+        "slash_defence_bonus": 1,
+        "stab_attack_bonus": 1,
+        "stab_defence_bonus": 1,
+        "strength_bonus": 1
+      }
+    },
+    "id": "equipment_bonuses:13103",
+    "kind": "equipment_bonuses",
+    "name": "Karamja gloves 4 (equipment bonuses)",
+    "slug": "equipment-bonuses-13103"
+  },
+  {
+    "data": {
+      "item_id": 13104,
+      "slot": "body",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 24,
+        "magic_attack_bonus": -30,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": -6,
+        "prayer_bonus": 0,
+        "range_attack_bonus": -10,
+        "range_defence_bonus": 31,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 31,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 32,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:13104",
+    "kind": "equipment_bonuses",
+    "name": "Varrock armour 1 (equipment bonuses)",
+    "slug": "equipment-bonuses-13104"
+  },
+  {
+    "data": {
+      "item_id": 13105,
+      "slot": "body",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 30,
+        "magic_attack_bonus": -30,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": -6,
+        "prayer_bonus": 0,
+        "range_attack_bonus": -10,
+        "range_defence_bonus": 40,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 40,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 41,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:13105",
+    "kind": "equipment_bonuses",
+    "name": "Varrock armour 2 (equipment bonuses)",
+    "slug": "equipment-bonuses-13105"
+  },
+  {
+    "data": {
+      "item_id": 13106,
+      "slot": "body",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 38,
+        "magic_attack_bonus": -30,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": -6,
+        "prayer_bonus": 0,
+        "range_attack_bonus": -10,
+        "range_defence_bonus": 44,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 44,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 46,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:13106",
+    "kind": "equipment_bonuses",
+    "name": "Varrock armour 3 (equipment bonuses)",
+    "slug": "equipment-bonuses-13106"
+  },
+  {
+    "data": {
+      "item_id": 13107,
+      "slot": "body",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 55,
+        "magic_attack_bonus": -30,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": -6,
+        "prayer_bonus": 0,
+        "range_attack_bonus": -10,
+        "range_defence_bonus": 63,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 63,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 65,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:13107",
+    "kind": "equipment_bonuses",
+    "name": "Varrock armour 4 (equipment bonuses)",
+    "slug": "equipment-bonuses-13107"
+  },
+  {
+    "data": {
+      "item_id": 13108,
+      "slot": "weapon",
+      "stats": {
+        "crush_attack_bonus": -2,
+        "crush_defence_bonus": 1,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 4,
+        "slash_defence_bonus": 2,
+        "stab_attack_bonus": 6,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 7
+      },
+      "weapon": {
+        "combat_style": "Stab Sword",
+        "weapon_attack_range": "1",
+        "weapon_attack_speed": 4
+      }
+    },
+    "id": "equipment_bonuses:13108",
+    "kind": "equipment_bonuses",
+    "name": "Wilderness sword 1 (equipment bonuses)",
+    "slug": "equipment-bonuses-13108"
+  },
+  {
+    "data": {
+      "item_id": 13109,
+      "slot": "weapon",
+      "stats": {
+        "crush_attack_bonus": -2,
+        "crush_defence_bonus": 1,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 8,
+        "slash_defence_bonus": 2,
+        "stab_attack_bonus": 11,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 12
+      },
+      "weapon": {
+        "combat_style": "Stab Sword",
+        "weapon_attack_range": "1",
+        "weapon_attack_speed": 4
+      }
+    },
+    "id": "equipment_bonuses:13109",
+    "kind": "equipment_bonuses",
+    "name": "Wilderness sword 2 (equipment bonuses)",
+    "slug": "equipment-bonuses-13109"
+  },
+  {
+    "data": {
+      "item_id": 13110,
+      "slot": "weapon",
+      "stats": {
+        "crush_attack_bonus": -2,
+        "crush_defence_bonus": 1,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 11,
+        "slash_defence_bonus": 2,
+        "stab_attack_bonus": 16,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 17
+      },
+      "weapon": {
+        "combat_style": "Stab Sword",
+        "weapon_attack_range": "1",
+        "weapon_attack_speed": 4
+      }
+    },
+    "id": "equipment_bonuses:13110",
+    "kind": "equipment_bonuses",
+    "name": "Wilderness sword 3 (equipment bonuses)",
+    "slug": "equipment-bonuses-13110"
+  },
+  {
+    "data": {
+      "item_id": 13111,
+      "slot": "weapon",
+      "stats": {
+        "crush_attack_bonus": -2,
+        "crush_defence_bonus": 1,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 18,
+        "slash_defence_bonus": 2,
+        "stab_attack_bonus": 23,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 24
+      },
+      "weapon": {
+        "combat_style": "Stab Sword",
+        "weapon_attack_range": "1",
+        "weapon_attack_speed": 4
+      }
+    },
+    "id": "equipment_bonuses:13111",
+    "kind": "equipment_bonuses",
+    "name": "Wilderness sword 4 (equipment bonuses)",
+    "slug": "equipment-bonuses-13111"
+  },
+  {
+    "data": {
+      "item_id": 13112,
+      "slot": "legs",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 10,
+        "magic_attack_bonus": -21,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": -4,
+        "prayer_bonus": 0,
+        "range_attack_bonus": -7,
+        "range_defence_bonus": 10,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 10,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 11,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:13112",
+    "kind": "equipment_bonuses",
+    "name": "Morytania legs 1 (equipment bonuses)",
+    "slug": "equipment-bonuses-13112"
+  },
+  {
+    "data": {
+      "item_id": 13113,
+      "slot": "legs",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 15,
+        "magic_attack_bonus": -21,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": -4,
+        "prayer_bonus": 0,
+        "range_attack_bonus": -7,
+        "range_defence_bonus": 16,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 16,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 17,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:13113",
+    "kind": "equipment_bonuses",
+    "name": "Morytania legs 2 (equipment bonuses)",
+    "slug": "equipment-bonuses-13113"
+  },
+  {
+    "data": {
+      "item_id": 13114,
+      "slot": "legs",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 20,
+        "magic_attack_bonus": -21,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": -4,
+        "prayer_bonus": 0,
+        "range_attack_bonus": -7,
+        "range_defence_bonus": 22,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 22,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 24,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:13114",
+    "kind": "equipment_bonuses",
+    "name": "Morytania legs 3 (equipment bonuses)",
+    "slug": "equipment-bonuses-13114"
+  },
+  {
+    "data": {
+      "item_id": 13115,
+      "slot": "legs",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 29,
+        "magic_attack_bonus": -21,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": -4,
+        "prayer_bonus": 0,
+        "range_attack_bonus": -7,
+        "range_defence_bonus": 31,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 31,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 33,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:13115",
+    "kind": "equipment_bonuses",
+    "name": "Morytania legs 4 (equipment bonuses)",
+    "slug": "equipment-bonuses-13115"
+  },
+  {
+    "data": {
+      "item_id": 13117,
+      "slot": "shield",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 9,
+        "magic_attack_bonus": -8,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": -1,
+        "prayer_bonus": 1,
+        "range_attack_bonus": -2,
+        "range_defence_bonus": 9,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 10,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 8,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:13117",
+    "kind": "equipment_bonuses",
+    "name": "Falador shield 1 (equipment bonuses)",
+    "slug": "equipment-bonuses-13117"
+  },
+  {
+    "data": {
+      "item_id": 13118,
+      "slot": "shield",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 14,
+        "magic_attack_bonus": -8,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": -1,
+        "prayer_bonus": 3,
+        "range_attack_bonus": -2,
+        "range_defence_bonus": 14,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 15,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 13,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:13118",
+    "kind": "equipment_bonuses",
+    "name": "Falador shield 2 (equipment bonuses)",
+    "slug": "equipment-bonuses-13118"
+  },
+  {
+    "data": {
+      "item_id": 13119,
+      "slot": "shield",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 20,
+        "magic_attack_bonus": -8,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": -1,
+        "prayer_bonus": 4,
+        "range_attack_bonus": -2,
+        "range_defence_bonus": 20,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 22,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 18,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:13119",
+    "kind": "equipment_bonuses",
+    "name": "Falador shield 3 (equipment bonuses)",
+    "slug": "equipment-bonuses-13119"
+  },
+  {
+    "data": {
+      "item_id": 13120,
+      "slot": "shield",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 29,
+        "magic_attack_bonus": -8,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": -1,
+        "prayer_bonus": 5,
+        "range_attack_bonus": -2,
+        "range_defence_bonus": 29,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 31,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 27,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:13120",
+    "kind": "equipment_bonuses",
+    "name": "Falador shield 4 (equipment bonuses)",
+    "slug": "equipment-bonuses-13120"
+  },
+  {
+    "data": {
+      "item_id": 13121,
+      "slot": "cape",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 2,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 2,
+        "prayer_bonus": 2,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 2,
+        "stab_defence_bonus": 2,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:13121",
+    "kind": "equipment_bonuses",
+    "name": "Ardougne cloak 1 (equipment bonuses)",
+    "slug": "equipment-bonuses-13121"
+  },
+  {
+    "data": {
+      "item_id": 13122,
+      "slot": "cape",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 4,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 4,
+        "prayer_bonus": 4,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 4,
+        "stab_defence_bonus": 4,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:13122",
+    "kind": "equipment_bonuses",
+    "name": "Ardougne cloak 2 (equipment bonuses)",
+    "slug": "equipment-bonuses-13122"
+  },
+  {
+    "data": {
+      "item_id": 13123,
+      "slot": "cape",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 5,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 5,
+        "prayer_bonus": 5,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 5,
+        "stab_defence_bonus": 5,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:13123",
+    "kind": "equipment_bonuses",
+    "name": "Ardougne cloak 3 (equipment bonuses)",
+    "slug": "equipment-bonuses-13123"
+  },
+  {
+    "data": {
+      "item_id": 13124,
+      "slot": "cape",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 6,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 6,
+        "prayer_bonus": 6,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 6,
+        "stab_defence_bonus": 6,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:13124",
+    "kind": "equipment_bonuses",
+    "name": "Ardougne cloak 4 (equipment bonuses)",
+    "slug": "equipment-bonuses-13124"
+  },
+  {
+    "data": {
+      "item_id": 13125,
+      "slot": "ring",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 1,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:13125",
+    "kind": "equipment_bonuses",
+    "name": "Explorer's ring 1 (equipment bonuses)",
+    "slug": "equipment-bonuses-13125"
+  },
+  {
+    "data": {
+      "item_id": 13126,
+      "slot": "ring",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 1,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:13126",
+    "kind": "equipment_bonuses",
+    "name": "Explorer's ring 2 (equipment bonuses)",
+    "slug": "equipment-bonuses-13126"
+  },
+  {
+    "data": {
+      "item_id": 13127,
+      "slot": "ring",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 1,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:13127",
+    "kind": "equipment_bonuses",
+    "name": "Explorer's ring 3 (equipment bonuses)",
+    "slug": "equipment-bonuses-13127"
+  },
+  {
+    "data": {
+      "item_id": 13128,
+      "slot": "ring",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 1,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:13128",
+    "kind": "equipment_bonuses",
+    "name": "Explorer's ring 4 (equipment bonuses)",
+    "slug": "equipment-bonuses-13128"
+  },
+  {
+    "data": {
+      "item_id": 13129,
+      "slot": "feet",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 4,
+        "magic_attack_bonus": -3,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": -1,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 3,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 2,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:13129",
+    "kind": "equipment_bonuses",
+    "name": "Fremennik sea boots 1 (equipment bonuses)",
+    "slug": "equipment-bonuses-13129"
+  },
+  {
+    "data": {
+      "item_id": 13130,
+      "slot": "feet",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 7,
+        "magic_attack_bonus": -3,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": -1,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 6,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 5,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:13130",
+    "kind": "equipment_bonuses",
+    "name": "Fremennik sea boots 2 (equipment bonuses)",
+    "slug": "equipment-bonuses-13130"
+  },
+  {
+    "data": {
+      "item_id": 13131,
+      "slot": "feet",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 9,
+        "magic_attack_bonus": -3,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": -1,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 8,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 7,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:13131",
+    "kind": "equipment_bonuses",
+    "name": "Fremennik sea boots 3 (equipment bonuses)",
+    "slug": "equipment-bonuses-13131"
+  },
+  {
+    "data": {
+      "item_id": 13132,
+      "slot": "feet",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 12,
+        "magic_attack_bonus": 1,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 1,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 11,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 10,
+        "strength_bonus": 1
+      }
+    },
+    "id": "equipment_bonuses:13132",
+    "kind": "equipment_bonuses",
+    "name": "Fremennik sea boots 4 (equipment bonuses)",
+    "slug": "equipment-bonuses-13132"
+  },
+  {
+    "data": {
+      "item_id": 13133,
+      "slot": "neck",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:13133",
+    "kind": "equipment_bonuses",
+    "name": "Desert amulet 1 (equipment bonuses)",
+    "slug": "equipment-bonuses-13133"
+  },
+  {
+    "data": {
+      "item_id": 13134,
+      "slot": "neck",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:13134",
+    "kind": "equipment_bonuses",
+    "name": "Desert amulet 2 (equipment bonuses)",
+    "slug": "equipment-bonuses-13134"
+  },
+  {
+    "data": {
+      "item_id": 13135,
+      "slot": "neck",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:13135",
+    "kind": "equipment_bonuses",
+    "name": "Desert amulet 3 (equipment bonuses)",
+    "slug": "equipment-bonuses-13135"
+  },
+  {
+    "data": {
+      "item_id": 13136,
+      "slot": "neck",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:13136",
+    "kind": "equipment_bonuses",
+    "name": "Desert amulet 4 (equipment bonuses)",
+    "slug": "equipment-bonuses-13136"
+  },
+  {
+    "data": {
+      "item_id": 13137,
+      "slot": "head",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 3,
+        "magic_attack_bonus": -3,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": -1,
+        "prayer_bonus": 0,
+        "range_attack_bonus": -1,
+        "range_defence_bonus": 4,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 5,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 4,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:13137",
+    "kind": "equipment_bonuses",
+    "name": "Kandarin headgear 1 (equipment bonuses)",
+    "slug": "equipment-bonuses-13137"
+  },
+  {
+    "data": {
+      "item_id": 13138,
+      "slot": "head",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 6,
+        "magic_attack_bonus": -3,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": -1,
+        "prayer_bonus": 0,
+        "range_attack_bonus": -1,
+        "range_defence_bonus": 7,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 8,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 7,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:13138",
+    "kind": "equipment_bonuses",
+    "name": "Kandarin headgear 2 (equipment bonuses)",
+    "slug": "equipment-bonuses-13138"
+  },
+  {
+    "data": {
+      "item_id": 13139,
+      "slot": "head",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 8,
+        "magic_attack_bonus": -3,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": -1,
+        "prayer_bonus": 0,
+        "range_attack_bonus": -1,
+        "range_defence_bonus": 9,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 10,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 9,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:13139",
+    "kind": "equipment_bonuses",
+    "name": "Kandarin headgear 3 (equipment bonuses)",
+    "slug": "equipment-bonuses-13139"
+  },
+  {
+    "data": {
+      "item_id": 13140,
+      "slot": "head",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 9,
+        "magic_attack_bonus": -3,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": -1,
+        "prayer_bonus": 0,
+        "range_attack_bonus": -1,
+        "range_defence_bonus": 10,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 11,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 10,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:13140",
+    "kind": "equipment_bonuses",
+    "name": "Kandarin headgear 4 (equipment bonuses)",
+    "slug": "equipment-bonuses-13140"
+  },
+  {
+    "data": {
+      "item_id": 13141,
+      "slot": "weapon",
+      "stats": {
+        "crush_attack_bonus": 12,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 12,
+        "slash_defence_bonus": 1,
+        "stab_attack_bonus": 12,
+        "stab_defence_bonus": 1,
+        "strength_bonus": 12
+      },
+      "weapon": {
+        "combat_style": "Polestaff",
+        "weapon_attack_range": "1",
+        "weapon_attack_speed": 5
+      }
+    },
+    "id": "equipment_bonuses:13141",
+    "kind": "equipment_bonuses",
+    "name": "Western banner 1 (equipment bonuses)",
+    "slug": "equipment-bonuses-13141"
+  },
+  {
+    "data": {
+      "item_id": 13142,
+      "slot": "weapon",
+      "stats": {
+        "crush_attack_bonus": 15,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 15,
+        "slash_defence_bonus": 1,
+        "stab_attack_bonus": 15,
+        "stab_defence_bonus": 1,
+        "strength_bonus": 16
+      },
+      "weapon": {
+        "combat_style": "Polestaff",
+        "weapon_attack_range": "1",
+        "weapon_attack_speed": 5
+      }
+    },
+    "id": "equipment_bonuses:13142",
+    "kind": "equipment_bonuses",
+    "name": "Western banner 2 (equipment bonuses)",
+    "slug": "equipment-bonuses-13142"
+  },
+  {
+    "data": {
+      "item_id": 13143,
+      "slot": "weapon",
+      "stats": {
+        "crush_attack_bonus": 17,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 17,
+        "slash_defence_bonus": 1,
+        "stab_attack_bonus": 17,
+        "stab_defence_bonus": 1,
+        "strength_bonus": 18
+      },
+      "weapon": {
+        "combat_style": "Polestaff",
+        "weapon_attack_range": "1",
+        "weapon_attack_speed": 5
+      }
+    },
+    "id": "equipment_bonuses:13143",
+    "kind": "equipment_bonuses",
+    "name": "Western banner 3 (equipment bonuses)",
+    "slug": "equipment-bonuses-13143"
+  },
+  {
+    "data": {
+      "item_id": 13144,
+      "slot": "weapon",
+      "stats": {
+        "crush_attack_bonus": 24,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 24,
+        "slash_defence_bonus": 1,
+        "stab_attack_bonus": 24,
+        "stab_defence_bonus": 1,
+        "strength_bonus": 28
+      },
+      "weapon": {
+        "combat_style": "Polestaff",
+        "weapon_attack_range": "1",
+        "weapon_attack_speed": 5
+      }
+    },
+    "id": "equipment_bonuses:13144",
+    "kind": "equipment_bonuses",
+    "name": "Western banner 4 (equipment bonuses)",
+    "slug": "equipment-bonuses-13144"
+  },
+  {
+    "data": {
+      "item_id": 13241,
+      "slot": "weapon",
+      "stats": {
+        "crush_attack_bonus": 32,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 38,
+        "slash_defence_bonus": 1,
+        "stab_attack_bonus": -2,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 42
+      },
+      "weapon": {
+        "combat_style": "Axe",
+        "weapon_attack_range": "1",
+        "weapon_attack_speed": 5
+      }
+    },
+    "id": "equipment_bonuses:13241",
+    "kind": "equipment_bonuses",
+    "name": "Infernal axe (equipment bonuses)",
+    "slug": "equipment-bonuses-13241"
+  },
+  {
+    "data": {
+      "item_id": 1478,
+      "slot": "neck",
+      "stats": {
+        "crush_attack_bonus": 4,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 4,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 4,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 4,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 4,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:1478",
+    "kind": "equipment_bonuses",
+    "name": "Amulet of accuracy (equipment bonuses)",
+    "slug": "equipment-bonuses-1478"
+  },
+  {
+    "data": {
+      "item_id": 1712,
+      "slot": "neck",
+      "stats": {
+        "crush_attack_bonus": 10,
+        "crush_defence_bonus": 3,
+        "magic_attack_bonus": 10,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 3,
+        "prayer_bonus": 3,
+        "range_attack_bonus": 10,
+        "range_defence_bonus": 3,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 10,
+        "slash_defence_bonus": 3,
+        "stab_attack_bonus": 10,
+        "stab_defence_bonus": 3,
+        "strength_bonus": 6
+      }
+    },
+    "id": "equipment_bonuses:1712",
+    "kind": "equipment_bonuses",
+    "name": "Amulet of glory(4) (equipment bonuses)",
+    "slug": "equipment-bonuses-1712"
+  },
+  {
+    "data": {
+      "item_id": 19550,
+      "slot": "ring",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 10,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 10,
+        "prayer_bonus": 2,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 10,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 10,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 10,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:19550",
+    "kind": "equipment_bonuses",
+    "name": "Ring of suffering (equipment bonuses)",
+    "slug": "equipment-bonuses-19550"
+  },
+  {
+    "data": {
+      "item_id": 22325,
+      "slot": "2h",
+      "stats": {
+        "crush_attack_bonus": 30,
+        "crush_defence_bonus": 10,
+        "magic_attack_bonus": -6,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 125,
+        "slash_defence_bonus": 8,
+        "stab_attack_bonus": 70,
+        "stab_defence_bonus": -2,
+        "strength_bonus": 75
+      },
+      "weapon": {
+        "combat_style": "Scythe",
+        "weapon_attack_range": "1",
+        "weapon_attack_speed": 5
+      }
+    },
+    "id": "equipment_bonuses:22325",
+    "kind": "equipment_bonuses",
+    "name": "Scythe of vitur (equipment bonuses)",
+    "slug": "equipment-bonuses-22325"
+  },
+  {
+    "data": {
+      "item_id": 22941,
+      "slot": "ammo",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:22941",
+    "kind": "equipment_bonuses",
+    "name": "Rada's blessing 1 (equipment bonuses)",
+    "slug": "equipment-bonuses-22941"
+  },
+  {
+    "data": {
+      "item_id": 22943,
+      "slot": "ammo",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 1,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:22943",
+    "kind": "equipment_bonuses",
+    "name": "Rada's blessing 2 (equipment bonuses)",
+    "slug": "equipment-bonuses-22943"
+  },
+  {
+    "data": {
+      "item_id": 22945,
+      "slot": "ammo",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 1,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:22945",
+    "kind": "equipment_bonuses",
+    "name": "Rada's blessing 3 (equipment bonuses)",
+    "slug": "equipment-bonuses-22945"
+  },
+  {
+    "data": {
+      "item_id": 22947,
+      "slot": "ammo",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 2,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:22947",
+    "kind": "equipment_bonuses",
+    "name": "Rada's blessing 4 (equipment bonuses)",
+    "slug": "equipment-bonuses-22947"
+  },
+  {
+    "data": {
+      "item_id": 23680,
+      "slot": "weapon",
+      "stats": {
+        "crush_attack_bonus": 32,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": -2,
+        "slash_defence_bonus": 1,
+        "stab_attack_bonus": 38,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 42
+      },
+      "weapon": {
+        "combat_style": "Pickaxe",
+        "weapon_attack_range": "1",
+        "weapon_attack_speed": 5
+      }
+    },
+    "id": "equipment_bonuses:23680",
+    "kind": "equipment_bonuses",
+    "name": "Crystal pickaxe (equipment bonuses)",
+    "slug": "equipment-bonuses-23680"
+  },
+  {
+    "data": {
+      "item_id": 23863,
+      "slot": "weapon",
+      "stats": {
+        "crush_attack_bonus": 4,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 4,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 4,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 5
+      },
+      "weapon": {
+        "combat_style": "Pickaxe",
+        "weapon_attack_range": "1",
+        "weapon_attack_speed": 5
+      }
+    },
+    "id": "equipment_bonuses:23863",
+    "kind": "equipment_bonuses",
+    "name": "Crystal pickaxe (equipment bonuses)",
+    "slug": "equipment-bonuses-23863"
+  },
+  {
+    "data": {
+      "item_id": 2402,
+      "slot": "weapon",
+      "stats": {
+        "crush_attack_bonus": -2,
+        "crush_defence_bonus": 2,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 1,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 14,
+        "slash_defence_bonus": 3,
+        "stab_attack_bonus": 9,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 12
+      },
+      "weapon": {
+        "combat_style": "Slash Sword",
+        "weapon_attack_range": "1",
+        "weapon_attack_speed": 5
+      }
+    },
+    "id": "equipment_bonuses:2402",
+    "kind": "equipment_bonuses",
+    "name": "Silverlight (equipment bonuses)",
+    "slug": "equipment-bonuses-2402"
+  },
+  {
+    "data": {
+      "item_id": 25066,
+      "slot": "weapon",
+      "stats": {
+        "crush_attack_bonus": 32,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 38,
+        "slash_defence_bonus": 1,
+        "stab_attack_bonus": -2,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 42
+      },
+      "weapon": {
+        "combat_style": "Axe",
+        "weapon_attack_range": "1",
+        "weapon_attack_speed": 5
+      }
+    },
+    "id": "equipment_bonuses:25066",
+    "kind": "equipment_bonuses",
+    "name": "Infernal axe (or) (equipment bonuses)",
+    "slug": "equipment-bonuses-25066"
+  },
+  {
+    "data": {
+      "item_id": 2550,
+      "slot": "ring",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:2550",
+    "kind": "equipment_bonuses",
+    "name": "Ring of recoil (equipment bonuses)",
+    "slug": "equipment-bonuses-2550"
+  },
+  {
+    "data": {
+      "item_id": 2552,
+      "slot": "ring",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:2552",
+    "kind": "equipment_bonuses",
+    "name": "Ring of dueling(8) (equipment bonuses)",
+    "slug": "equipment-bonuses-2552"
+  },
+  {
+    "data": {
+      "item_id": 25736,
+      "slot": "2h",
+      "stats": {
+        "crush_attack_bonus": 30,
+        "crush_defence_bonus": 10,
+        "magic_attack_bonus": -6,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 125,
+        "slash_defence_bonus": 8,
+        "stab_attack_bonus": 70,
+        "stab_defence_bonus": -2,
+        "strength_bonus": 75
+      },
+      "weapon": {
+        "combat_style": "Scythe",
+        "weapon_attack_range": "1",
+        "weapon_attack_speed": 5
+      }
+    },
+    "id": "equipment_bonuses:25736",
+    "kind": "equipment_bonuses",
+    "name": "Holy scythe of vitur (equipment bonuses)",
+    "slug": "equipment-bonuses-25736"
+  },
+  {
+    "data": {
+      "item_id": 25739,
+      "slot": "2h",
+      "stats": {
+        "crush_attack_bonus": 30,
+        "crush_defence_bonus": 10,
+        "magic_attack_bonus": -6,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 125,
+        "slash_defence_bonus": 8,
+        "stab_attack_bonus": 70,
+        "stab_defence_bonus": -2,
+        "strength_bonus": 75
+      },
+      "weapon": {
+        "combat_style": "Scythe",
+        "weapon_attack_range": "1",
+        "weapon_attack_speed": 5
+      }
+    },
+    "id": "equipment_bonuses:25739",
+    "kind": "equipment_bonuses",
+    "name": "Sanguine scythe of vitur (equipment bonuses)",
+    "slug": "equipment-bonuses-25739"
+  },
+  {
+    "data": {
+      "item_id": 25865,
+      "slot": "2h",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 128,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 106,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 0
+      },
+      "weapon": {
+        "combat_style": "Bow",
+        "weapon_attack_range": "10",
+        "weapon_attack_speed": 5
+      }
+    },
+    "id": "equipment_bonuses:25865",
+    "kind": "equipment_bonuses",
+    "name": "Bow of faerdhinen (equipment bonuses)",
+    "slug": "equipment-bonuses-25865"
+  },
+  {
+    "data": {
+      "item_id": 25867,
+      "slot": "2h",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 128,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 106,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 0
+      },
+      "weapon": {
+        "combat_style": "Bow",
+        "weapon_attack_range": "10",
+        "weapon_attack_speed": 5
+      }
+    },
+    "id": "equipment_bonuses:25867",
+    "kind": "equipment_bonuses",
+    "name": "Bow of faerdhinen (c) (equipment bonuses)",
+    "slug": "equipment-bonuses-25867"
+  },
+  {
+    "data": {
+      "item_id": 27690,
+      "slot": "weapon",
+      "stats": {
+        "crush_attack_bonus": -2,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 5,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 2,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 80,
+        "slash_defence_bonus": 1,
+        "stab_attack_bonus": 70,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 80
+      },
+      "weapon": {
+        "combat_style": "Slash Sword",
+        "weapon_attack_range": "1",
+        "weapon_attack_speed": 4
+      }
+    },
+    "id": "equipment_bonuses:27690",
+    "kind": "equipment_bonuses",
+    "name": "Voidwaker (equipment bonuses)",
+    "slug": "equipment-bonuses-27690"
+  },
+  {
+    "data": {
+      "item_id": 28543,
+      "slot": "2h",
+      "stats": {
+        "crush_attack_bonus": 24,
+        "crush_defence_bonus": 8,
+        "magic_attack_bonus": -6,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 88,
+        "slash_defence_bonus": 7,
+        "stab_attack_bonus": 56,
+        "stab_defence_bonus": -2,
+        "strength_bonus": 60
+      },
+      "weapon": {
+        "combat_style": "Scythe",
+        "weapon_attack_range": "1",
+        "weapon_attack_speed": 5
+      }
+    },
+    "id": "equipment_bonuses:28543",
+    "kind": "equipment_bonuses",
+    "name": "Corrupted scythe of vitur (equipment bonuses)",
+    "slug": "equipment-bonuses-28543"
+  },
+  {
+    "data": {
+      "item_id": 30347,
+      "slot": "weapon",
+      "stats": {
+        "crush_attack_bonus": 32,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 38,
+        "slash_defence_bonus": 1,
+        "stab_attack_bonus": -2,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 42
+      },
+      "weapon": {
+        "combat_style": "Axe",
+        "weapon_attack_range": "1",
+        "weapon_attack_speed": 5
+      }
+    },
+    "id": "equipment_bonuses:30347",
+    "kind": "equipment_bonuses",
+    "name": "Infernal axe (or) (equipment bonuses)",
+    "slug": "equipment-bonuses-30347"
+  },
+  {
+    "data": {
+      "item_id": 4081,
+      "slot": "neck",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 3,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 3,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 3,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 3,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:4081",
+    "kind": "equipment_bonuses",
+    "name": "Salve amulet (equipment bonuses)",
+    "slug": "equipment-bonuses-4081"
+  },
+  {
+    "data": {
+      "item_id": 4587,
+      "slot": "weapon",
+      "stats": {
+        "crush_attack_bonus": -2,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 0,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 67,
+        "slash_defence_bonus": 1,
+        "stab_attack_bonus": 8,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 66
+      },
+      "weapon": {
+        "combat_style": "Slash Sword",
+        "weapon_attack_range": "1",
+        "weapon_attack_speed": 4
+      }
+    },
+    "id": "equipment_bonuses:4587",
+    "kind": "equipment_bonuses",
+    "name": "Dragon scimitar (equipment bonuses)",
+    "slug": "equipment-bonuses-4587"
+  },
+  {
+    "data": {
+      "item_id": 4716,
+      "slot": "head",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 44,
+        "magic_attack_bonus": -3,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": -1,
+        "prayer_bonus": 0,
+        "range_attack_bonus": -1,
+        "range_defence_bonus": 51,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 48,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 45,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:4716",
+    "kind": "equipment_bonuses",
+    "name": "Dharok's helm (equipment bonuses)",
+    "slug": "equipment-bonuses-4716"
+  },
+  {
+    "data": {
+      "item_id": 6528,
+      "slot": "2h",
+      "stats": {
+        "crush_attack_bonus": 80,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": -4,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 0,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 85
+      },
+      "weapon": {
+        "combat_style": "Blunt",
+        "weapon_attack_range": "1",
+        "weapon_attack_speed": 7
+      }
+    },
+    "id": "equipment_bonuses:6528",
+    "kind": "equipment_bonuses",
+    "name": "Tzhaar-ket-om (equipment bonuses)",
+    "slug": "equipment-bonuses-6528"
+  },
+  {
+    "data": {
+      "item_id": 6916,
+      "slot": "body",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 22,
+        "magic_damage_bonus": 1,
+        "magic_defence_bonus": 22,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:6916",
+    "kind": "equipment_bonuses",
+    "name": "Infinity top (equipment bonuses)",
+    "slug": "equipment-bonuses-6916"
+  },
+  {
+    "data": {
+      "item_id": 6918,
+      "slot": "head",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 6,
+        "magic_damage_bonus": 1,
+        "magic_defence_bonus": 6,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:6918",
+    "kind": "equipment_bonuses",
+    "name": "Infinity hat (equipment bonuses)",
+    "slug": "equipment-bonuses-6918"
+  },
+  {
+    "data": {
+      "item_id": 6920,
+      "slot": "feet",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 5,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 5,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:6920",
+    "kind": "equipment_bonuses",
+    "name": "Infinity boots (equipment bonuses)",
+    "slug": "equipment-bonuses-6920"
+  },
+  {
+    "data": {
+      "item_id": 6922,
+      "slot": "hands",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 5,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 5,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:6922",
+    "kind": "equipment_bonuses",
+    "name": "Infinity gloves (equipment bonuses)",
+    "slug": "equipment-bonuses-6922"
+  },
+  {
+    "data": {
+      "item_id": 6924,
+      "slot": "legs",
+      "stats": {
+        "crush_attack_bonus": 0,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 17,
+        "magic_damage_bonus": 1,
+        "magic_defence_bonus": 17,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 0,
+        "slash_defence_bonus": 0,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 0
+      }
+    },
+    "id": "equipment_bonuses:6924",
+    "kind": "equipment_bonuses",
+    "name": "Infinity bottoms (equipment bonuses)",
+    "slug": "equipment-bonuses-6924"
+  },
+  {
+    "data": {
+      "item_id": 7409,
+      "slot": "weapon",
+      "stats": {
+        "crush_attack_bonus": -5,
+        "crush_defence_bonus": 0,
+        "magic_attack_bonus": 1,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 1,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 9,
+        "slash_defence_bonus": 1,
+        "stab_attack_bonus": 7,
+        "stab_defence_bonus": 0,
+        "strength_bonus": 1
+      },
+      "weapon": {
+        "combat_style": "Stab Sword",
+        "weapon_attack_range": "1",
+        "weapon_attack_speed": 5
+      }
+    },
+    "id": "equipment_bonuses:7409",
+    "kind": "equipment_bonuses",
+    "name": "Magic secateurs (equipment bonuses)",
+    "slug": "equipment-bonuses-7409"
+  },
+  {
+    "data": {
+      "item_id": 7462,
+      "slot": "hands",
+      "stats": {
+        "crush_attack_bonus": 12,
+        "crush_defence_bonus": 12,
+        "magic_attack_bonus": 6,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 6,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 12,
+        "range_defence_bonus": 12,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": 12,
+        "slash_defence_bonus": 12,
+        "stab_attack_bonus": 12,
+        "stab_defence_bonus": 12,
+        "strength_bonus": 12
+      }
+    },
+    "id": "equipment_bonuses:7462",
+    "kind": "equipment_bonuses",
+    "name": "Barrows gloves (equipment bonuses)",
+    "slug": "equipment-bonuses-7462"
+  },
+  {
     "data": {},
     "id": "gear_loadout:infinity",
     "kind": "gear_loadout",

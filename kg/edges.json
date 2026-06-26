@@ -152,6 +152,14 @@
     "type": "effect"
   },
   {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13106",
+    "id": 6024456,
+    "src": "item:13106",
+    "type": "has_bonuses"
+  },
+  {
     "cond_group": 5087226,
     "data": {},
     "dst": null,
@@ -242,6 +250,14 @@
     "id": 6048584,
     "src": "quest:druidic-ritual",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:25066",
+    "id": 6049321,
+    "src": "item:25066",
+    "type": "has_bonuses"
   },
   {
     "cond_group": 5708040,
@@ -536,6 +552,22 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13118",
+    "id": 6108141,
+    "src": "item:13118",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13121",
+    "id": 6110738,
+    "src": "item:13121",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "basis": "base"
     },
@@ -565,6 +597,14 @@
     "id": 6113686,
     "src": "quest:rag-and-bone-man-ii",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:11136",
+    "id": 6114282,
+    "src": "item:11136",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -619,6 +659,14 @@
     "id": 6122874,
     "src": "item:13131",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13144",
+    "id": 6131477,
+    "src": "item:13144",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -767,6 +815,14 @@
     "type": "grants"
   },
   {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13107",
+    "id": 6155795,
+    "src": "item:13107",
+    "type": "has_bonuses"
+  },
+  {
     "cond_group": 5314079,
     "data": {},
     "dst": null,
@@ -904,6 +960,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13104",
+    "id": 6175198,
+    "src": "item:13104",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "recurring_resource",
@@ -998,6 +1062,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13136",
+    "id": 6209084,
+    "src": "item:13136",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "weight": 1
     },
@@ -1078,6 +1150,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:6916",
+    "id": 6225457,
+    "src": "item:6916",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "condition": "while-carried",
       "effect_kind": "behavior_toggle",
@@ -1103,6 +1183,14 @@
     "id": 6225849,
     "src": "item:13108",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:25739",
+    "id": 6227577,
+    "src": "item:25739",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -1392,6 +1480,14 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:7462",
+    "id": 6265559,
+    "src": "item:7462",
+    "type": "has_bonuses"
+  },
+  {
     "cond_group": 4919084,
     "data": {},
     "dst": null,
@@ -1490,6 +1586,14 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:6528",
+    "id": 6295640,
+    "src": "item:6528",
+    "type": "has_bonuses"
+  },
+  {
     "cond_group": 4034667,
     "data": {},
     "dst": null,
@@ -1575,6 +1679,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13241",
+    "id": 6322792,
+    "src": "item:13241",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "basis": "enchant_imbue"
     },
@@ -1582,6 +1694,14 @@
     "id": 6323036,
     "src": "item:salve-amulet-ei",
     "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:2550",
+    "id": 6325327,
+    "src": "item:2550",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -1644,6 +1764,14 @@
     "id": 6344122,
     "src": "diary:wilderness:elite",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13131",
+    "id": 6344926,
+    "src": "item:13131",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -1844,6 +1972,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:22941",
+    "id": 6370556,
+    "src": "item:22941",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "capacity_change",
@@ -1905,6 +2041,14 @@
     "id": 6386615,
     "src": "item:12017",
     "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:12018",
+    "id": 6390511,
+    "src": "item:12018",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -1990,6 +2134,14 @@
     "id": 6408694,
     "src": "item:13140",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:25865",
+    "id": 6409189,
+    "src": "item:25865",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -2082,6 +2234,14 @@
     "id": 6431672,
     "src": "quest:tai-bwo-wannai-trio",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:12017",
+    "id": 6432271,
+    "src": "item:12017",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -2600,6 +2760,14 @@
     "type": "effect"
   },
   {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13126",
+    "id": 6502342,
+    "src": "item:13126",
+    "type": "has_bonuses"
+  },
+  {
     "cond_group": 5330998,
     "data": {},
     "dst": null,
@@ -2682,6 +2850,14 @@
     "id": 6512246,
     "src": "item:infernal-axe-or-trailblazer-reloaded",
     "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13132",
+    "id": 6515911,
+    "src": "item:13132",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -2825,6 +3001,14 @@
     "id": 6556239,
     "src": "item:13119",
     "type": "supersedes"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:22325",
+    "id": 6556773,
+    "src": "item:22325",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -2999,6 +3183,14 @@
     "type": "effect"
   },
   {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13124",
+    "id": 6597852,
+    "src": "item:13124",
+    "type": "has_bonuses"
+  },
+  {
     "cond_group": 4141945,
     "data": {},
     "dst": null,
@@ -3090,6 +3282,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:28543",
+    "id": 6610905,
+    "src": "item:28543",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "amount": 15000,
       "count": 1,
@@ -3138,6 +3338,22 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13111",
+    "id": 6620001,
+    "src": "item:13111",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:11866",
+    "id": 6621281,
+    "src": "item:11866",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "behavior_toggle",
@@ -3182,6 +3398,30 @@
     "id": 6628640,
     "src": "diary:fremennik:easy",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13141",
+    "id": 6628917,
+    "src": "item:13141",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:30347",
+    "id": 6630500,
+    "src": "item:30347",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:6918",
+    "id": 6631299,
+    "src": "item:6918",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -3327,6 +3567,14 @@
     "id": 6676810,
     "src": "access:fairy-rings",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:11980",
+    "id": 6679485,
+    "src": "item:11980",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -3746,6 +3994,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:11140",
+    "id": 6741775,
+    "src": "item:11140",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "basis": "shares wiki page 'Amulet of glory'"
     },
@@ -3761,6 +4017,14 @@
     "id": 6744188,
     "src": "quest:alfred-grimhands-barcrawl",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13110",
+    "id": 6746702,
+    "src": "item:13110",
+    "type": "has_bonuses"
   },
   {
     "cond_group": 5023875,
@@ -3873,6 +4137,14 @@
     "id": 6776246,
     "src": "diary:lumbridge:easy",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13119",
+    "id": 6776340,
+    "src": "item:13119",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -4081,6 +4353,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13112",
+    "id": 6823833,
+    "src": "item:13112",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "amount": 1000,
       "count": 1,
@@ -4110,6 +4390,14 @@
     "id": 6829733,
     "src": "diary:varrock:medium",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:22945",
+    "id": 6830037,
+    "src": "item:22945",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -4158,6 +4446,14 @@
     "id": 6836274,
     "src": "quest:recruitment-drive",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:10498",
+    "id": 6838067,
+    "src": "item:10498",
+    "type": "has_bonuses"
   },
   {
     "cond_group": 4671236,
@@ -4431,6 +4727,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:4716",
+    "id": 6898598,
+    "src": "item:4716",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "access",
@@ -4489,6 +4793,14 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13105",
+    "id": 6909888,
+    "src": "item:13105",
+    "type": "has_bonuses"
+  },
+  {
     "cond_group": 4462806,
     "data": {},
     "dst": null,
@@ -4521,6 +4833,14 @@
     "id": 6917087,
     "src": "quest:monks-friend",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13139",
+    "id": 6920336,
+    "src": "item:13139",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -4574,6 +4894,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13140",
+    "id": 6936686,
+    "src": "item:13140",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "weight": 1
     },
@@ -4624,6 +4952,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:7409",
+    "id": 6947438,
+    "src": "item:7409",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "access",
@@ -4635,6 +4971,14 @@
     "id": 6950915,
     "src": "item:13129",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13108",
+    "id": 6953265,
+    "src": "item:13108",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -4662,6 +5006,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13137",
+    "id": 6957399,
+    "src": "item:13137",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "terminal": "destroyed",
       "trigger": "per_use"
@@ -4678,6 +5030,14 @@
     "id": 6960837,
     "src": "quest:tutorial-island",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1215",
+    "id": 6961005,
+    "src": "item:1215",
+    "type": "has_bonuses"
   },
   {
     "cond_group": 4035500,
@@ -4785,6 +5145,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13127",
+    "id": 6993008,
+    "src": "item:13127",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "access",
@@ -4838,6 +5206,22 @@
     "id": 7006197,
     "src": "quest:shades-of-mortton",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:4587",
+    "id": 7008138,
+    "src": "item:4587",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:10887",
+    "id": 7010727,
+    "src": "item:10887",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -4948,6 +5332,14 @@
     "id": 7028425,
     "src": "quest:the-great-brain-robbery",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13117",
+    "id": 7029800,
+    "src": "item:13117",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -5135,6 +5527,14 @@
     "type": "effect"
   },
   {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13130",
+    "id": 7064582,
+    "src": "item:13130",
+    "type": "has_bonuses"
+  },
+  {
     "cond_group": 4323563,
     "data": {},
     "dst": null,
@@ -5274,6 +5674,14 @@
     "id": 7090695,
     "src": "quest:barbarian-fishing",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:23863",
+    "id": 7091050,
+    "src": "item:23863",
+    "type": "has_bonuses"
   },
   {
     "cond_group": 5559691,
@@ -5506,6 +5914,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:27690",
+    "id": 7127688,
+    "src": "item:27690",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "amount": 18650,
       "form": "fixed",
@@ -5722,6 +6138,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:6920",
+    "id": 7172821,
+    "src": "item:6920",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "weight": 1
     },
@@ -5737,6 +6161,14 @@
     "id": 7176223,
     "src": "diary:desert:hard",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:22943",
+    "id": 7182771,
+    "src": "item:22943",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -5950,6 +6382,14 @@
     "type": "effect"
   },
   {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:11138",
+    "id": 7232836,
+    "src": "item:11138",
+    "type": "has_bonuses"
+  },
+  {
     "cond_group": 5739518,
     "data": {},
     "dst": null,
@@ -6056,12 +6496,28 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13133",
+    "id": 7255657,
+    "src": "item:13133",
+    "type": "has_bonuses"
+  },
+  {
     "cond_group": 5266718,
     "data": {},
     "dst": null,
     "id": 7257422,
     "src": "quest:grim-tales",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13134",
+    "id": 7262052,
+    "src": "item:13134",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -6166,10 +6622,26 @@
   {
     "cond_group": null,
     "data": {},
+    "dst": "equipment_bonuses:13125",
+    "id": 7281798,
+    "src": "item:13125",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
+    "data": {},
     "dst": "item:13133",
     "id": 7286520,
     "src": "item:13134",
     "type": "supersedes"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13114",
+    "id": 7287603,
+    "src": "item:13114",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -6195,6 +6667,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:25736",
+    "id": 7290357,
+    "src": "item:25736",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "qty": 1
     },
@@ -6202,6 +6682,14 @@
     "id": 7292663,
     "src": "recipe:charge-scythe-of-vitur",
     "type": "produces"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13128",
+    "id": 7296770,
+    "src": "item:13128",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -6217,6 +6705,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:25867",
+    "id": 7297614,
+    "src": "item:25867",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "access",
@@ -6228,6 +6724,14 @@
     "id": 7297851,
     "src": "item:13110",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:23680",
+    "id": 7298696,
+    "src": "item:23680",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -6366,6 +6870,14 @@
     "id": 7335705,
     "src": "item:13143",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13138",
+    "id": 7336890,
+    "src": "item:13138",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -6574,6 +7086,14 @@
   {
     "cond_group": null,
     "data": {},
+    "dst": "equipment_bonuses:13123",
+    "id": 7391080,
+    "src": "item:13123",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
+    "data": {},
     "dst": "item:13125",
     "id": 7391759,
     "src": "item:13126",
@@ -6628,6 +7148,14 @@
     "id": 7415233,
     "src": "item:4884",
     "type": "repairs"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:10499",
+    "id": 7415328,
+    "src": "item:10499",
+    "type": "has_bonuses"
   },
   {
     "cond_group": 5492395,
@@ -7000,6 +7528,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13142",
+    "id": 7475677,
+    "src": "item:13142",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "trigger": "per_hit"
     },
@@ -7065,6 +7601,14 @@
     "id": 7485322,
     "src": "item:22947",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13122",
+    "id": 7488611,
+    "src": "item:13122",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -7401,6 +7945,14 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:4081",
+    "id": 7543491,
+    "src": "item:4081",
+    "type": "has_bonuses"
+  },
+  {
     "cond_group": 5065688,
     "data": {},
     "dst": null,
@@ -7471,6 +8023,14 @@
     "id": 7558319,
     "src": "quest:recipe-for-disaster",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:6922",
+    "id": 7560138,
+    "src": "item:6922",
+    "type": "has_bonuses"
   },
   {
     "cond_group": 4184444,
@@ -7708,6 +8268,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:6924",
+    "id": 7611444,
+    "src": "item:6924",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "amount": 15000,
       "count": 1,
@@ -7778,6 +8346,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1712",
+    "id": 7631477,
+    "src": "item:1712",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "qty": 1,
       "reward": "items",
@@ -7797,6 +8373,14 @@
     "id": 7637534,
     "src": "diary:kourend:easy",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13135",
+    "id": 7640280,
+    "src": "item:13135",
+    "type": "has_bonuses"
   },
   {
     "cond_group": 4643948,
@@ -8002,6 +8586,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13129",
+    "id": 7681070,
+    "src": "item:13129",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "basis": "shares wiki page 'Corrupted scythe of vitur'"
     },
@@ -8134,6 +8726,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:19550",
+    "id": 7714943,
+    "src": "item:19550",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "qty": 1,
       "reward": "items",
@@ -8252,6 +8852,22 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13109",
+    "id": 7758546,
+    "src": "item:13109",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13115",
+    "id": 7764618,
+    "src": "item:13115",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "basis": "base"
     },
@@ -8345,6 +8961,14 @@
     "id": 7779693,
     "src": "diary:varrock:hard",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:2402",
+    "id": 7780124,
+    "src": "item:2402",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -8459,6 +9083,14 @@
     "id": 7801593,
     "src": "quest:making-history",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13113",
+    "id": 7801594,
+    "src": "item:13113",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -8631,6 +9263,14 @@
     "type": "progress_towards"
   },
   {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13103",
+    "id": 7828344,
+    "src": "item:13103",
+    "type": "has_bonuses"
+  },
+  {
     "cond_group": 5501921,
     "data": {},
     "dst": null,
@@ -8727,6 +9367,14 @@
     "id": 7843052,
     "src": "quest:a-kingdom-divided",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13120",
+    "id": 7845770,
+    "src": "item:13120",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -9074,6 +9722,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1478",
+    "id": 7904960,
+    "src": "item:1478",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "basis": "shares wiki page 'Sanguine scythe of vitur'"
     },
@@ -9142,6 +9798,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:2552",
+    "id": 7921524,
+    "src": "item:2552",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "behavior_toggle",
@@ -9161,6 +9825,14 @@
     "id": 7928237,
     "src": "item:13109",
     "type": "supersedes"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:22947",
+    "id": 7932354,
+    "src": "item:22947",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -9412,6 +10084,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:10588",
+    "id": 7965256,
+    "src": "item:10588",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "amount": 50000,
       "count": 1,
@@ -9477,6 +10157,14 @@
     "id": 7979791,
     "src": "item:13125",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:13143",
+    "id": 7982303,
+    "src": "item:13143",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,

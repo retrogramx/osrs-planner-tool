@@ -30,6 +30,7 @@ from kg_ingest.builders.content_nodes import build_content_nodes
 from kg_ingest.builders.degrade_paths import build_degrade_paths
 from kg_ingest.builders.diaries import build_diaries
 from kg_ingest.builders.diary_goals import build_diary_goals
+from kg_ingest.builders.equipment_bonuses import build_equipment_bonuses
 from kg_ingest.builders.goals import build_goals
 from kg_ingest.builders.items import build_items
 from kg_ingest.builders.quest_rewards import build_quest_rewards
@@ -76,7 +77,9 @@ def _walk_group_ids(root_local_id: int, groups: dict[int, ConditionGroup]) -> li
 
 
 def rekey(nodes: list[Node], edges: list[Edge],
-          groups: dict[int, ConditionGroup]) -> tuple[list[Node], list[Edge], dict[int, ConditionGroup]]:
+          groups: dict[int, ConditionGroup],
+          edge_index_seed: dict[str, int] | None = None,
+          ) -> tuple[list[Node], list[Edge], dict[int, ConditionGroup]]:
     """Re-key every edge and group to a GLOBAL deterministic id derived from the
     owning node id (the edge's src). Nodes pass through unchanged.
 
@@ -86,8 +89,14 @@ def rekey(nodes: list[Node], edges: list[Edge],
     local ids never reach the committed kg/*.json. Re-keyed ids are hash-derived,
     so a collision is theoretically possible — we fail fast on it (a dropped
     group/edge is unrecoverable), mirroring dedup_nodes' raise-on-conflict.
+
+    edge_index_seed: per-owner edge counter start values, used when an owner
+    already has edges assigned in a PRIOR rekey call (e.g. an item node that
+    appears as src in both the diary domain and the shared item-src rekey).
+    Without seeding, both calls would start at index 0 and produce the same
+    hash. Pass {owner: count} so this call starts at 'count' for that owner.
     """
-    edge_local_index: dict[str, int] = {}
+    edge_local_index: dict[str, int] = dict(edge_index_seed) if edge_index_seed else {}
     local_to_new_group: dict[int, int] = {}
 
     new_edges: list[Edge] = []
@@ -274,6 +283,19 @@ def _load_repair_path_records() -> list[dict]:
     return json.loads(REPAIR_PATHS_PATH.read_text())["records"]
 
 
+ITEMS_EQUIPMENT_PATH = Path(__file__).resolve().parents[1] / "data" / "items_equipment.json"
+
+
+def _load_equipment_records() -> list[dict]:
+    if not ITEMS_EQUIPMENT_PATH.exists():
+        return []
+    return json.loads(ITEMS_EQUIPMENT_PATH.read_text())["records"]
+
+
+def _load_canonical_item_pages() -> dict[int, str]:
+    return {r["item_id"]: r["page_name"] for r in _load_item_dict_records()}
+
+
 def _write_json(path: Path, payload: list) -> None:
     text = json.dumps(payload, indent=2, sort_keys=True, ensure_ascii=False)
     path.write_text(text + "\n")
@@ -356,9 +378,24 @@ def assemble() -> None:
         _load_item_dict_records(), _load_item_exemplars(), _load_item_families(),
         referenced_item_ids, owned_ids=frozenset(owned_ids),
     )
-    # SHARED REKEY: same_entity (i_edges) + degrades_to (dg_edges) + repairs (rp_edges), all item-src,
-    # in one call, so an item that is the src of multiple types gets distinct per-owner indices.
-    i_nodes, item_edges, _ = rekey(i_nodes, i_edges + dg_edges + rp_edges, {})
+    # Equipment-bonuses facet: has_bonuses edges are the 4th ITEM-src family. Build AFTER
+    # build_items (needs the owned item-variant ids; bounded to existing nodes, NO auto-import)
+    # but BEFORE the shared rekey so hb_edges join it. eqb_nodes are new facet nodes (no rekey).
+    _owned_item_ids = {x for x in (owned_ids | {n.id for n in i_nodes})
+                       if x.startswith("item:") and x.split(":", 1)[1].isdigit()}
+    eqb_nodes, hb_edges, _ = build_equipment_bonuses(
+        _load_equipment_records(), _owned_item_ids, _load_canonical_item_pages())
+    # SHARED REKEY: same_entity + degrades_to + repairs + has_bonuses, all item-src, in one call,
+    # so an item that is the src of multiple types gets distinct per-owner indices.
+    # Seed per-owner counters with any item:* edge counts already committed by prior rekeys
+    # (diary SUPERSEDES/EFFECT and quest REQUIRES can have item:N sources). Without seeding,
+    # the same item:N#e0 hash would be produced in both the prior rekey and this one.
+    _prior_item_edge_counts: dict[str, int] = {}
+    for _pe in edges:
+        if _pe.src.startswith("item:"):
+            _prior_item_edge_counts[_pe.src] = _prior_item_edge_counts.get(_pe.src, 0) + 1
+    i_nodes, item_edges, _ = rekey(i_nodes, i_edges + dg_edges + rp_edges + hb_edges, {},
+                                    edge_index_seed=_prior_item_edge_counts)
     edges = edges + item_edges
     # Global edge-id uniqueness (fail-fast backstop for the shared rekey + any future item-src slice).
     _eids = [e.id for e in edges]
@@ -377,7 +414,7 @@ def assemble() -> None:
     #    (with tasks list) is first-seen and wins if any stale supporting diary node
     #    were somehow included (it shouldn't be, since diary is excluded from _LEAF_DOMAINS).
     nodes = dedup_nodes(
-        q_nodes + g_nodes + cg_nodes + d_nodes + dg_nodes + content_nodes + r_nodes + i_nodes + s_nodes
+        q_nodes + g_nodes + cg_nodes + d_nodes + dg_nodes + content_nodes + r_nodes + i_nodes + eqb_nodes + s_nodes
     )
 
     # 5) serialize, sorted deterministically.
