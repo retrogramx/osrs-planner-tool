@@ -31,9 +31,8 @@ def _gid(owner_id: str, slot: str) -> int:
 def make_item_resolver(dict_records):
     by_name: dict[str, list[dict]] = defaultdict(list)
     for r in dict_records:
-        for key in (r.get("name"), r.get("page_name")):
-            if key:
-                by_name[key].append(r)
+        for key in {r.get("name"), r.get("page_name")} - {None}:
+            by_name[key].append(r)
 
     def resolve(name: str):
         def _lookup(n):

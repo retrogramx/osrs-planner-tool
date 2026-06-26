@@ -58,7 +58,7 @@ def main() -> int:
                 unresolved.append(f"{sh['id']}: {name!r}")
             cond = offer.get("condition")
             if cond:
-                if not cond.get("source_token") and not offer.get("source_token"):
+                if not offer.get("source_token"):
                     errors.append(f"[source] gated sell {name!r} in {sh['id']!r} missing source_token")
                 atom = _condition_atom(cond)
                 if atom is None:

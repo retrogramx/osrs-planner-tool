@@ -36,9 +36,11 @@ class NodeKind(str, Enum):
 
 
 class EdgeType(str, Enum):
-    """The 7 edge types (5 fact-spine: REQUIRES/GRANTS/DROPS/LOCATED_IN/GATED_BY +
-    EFFECT for item perks + PROGRESS_TOWARDS for goal counting). Opinion edges
-    (recommended_for / recommended_method) are out of the engine's fact spine."""
+    """The edge types (fact-spine: REQUIRES/GRANTS/DROPS/LOCATED_IN/GATED_BY +
+    EFFECT for item perks + PROGRESS_TOWARDS for goal counting; entity-graph:
+    SUPERSEDES/SAME_ENTITY/CONSUMES/PRODUCES/DEGRADES_TO/REPAIRS/HAS_BONUSES/
+    OPERATES/SELLS). Opinion edges (recommended_for / recommended_method) are out
+    of the engine's fact spine."""
     REQUIRES = "requires"
     GRANTS = "grants"
     DROPS = "drops"

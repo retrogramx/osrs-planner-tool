@@ -33,10 +33,10 @@ from kg_ingest.builders.diary_goals import build_diary_goals
 from kg_ingest.builders.equipment_bonuses import build_equipment_bonuses
 from kg_ingest.builders.goals import build_goals
 from kg_ingest.builders.items import build_items
+from kg_ingest.builders.map_varrock import build_map, make_item_resolver
 from kg_ingest.builders.quest_rewards import build_quest_rewards
 from kg_ingest.builders.quests import build_quests
 from kg_ingest.builders.recipes import build_recipes
-from kg_ingest.builders.map_varrock import build_map, make_item_resolver
 from kg_ingest.builders.repairs import build_repairs
 from kg_ingest.builders.supporting import build_supporting
 
