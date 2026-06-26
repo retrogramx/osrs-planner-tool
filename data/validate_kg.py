@@ -9,9 +9,11 @@ Usage:  ./venv/bin/python data/validate_kg.py
 """
 from __future__ import annotations
 
+import enum
 import json
 import os
 import sys
+from collections import namedtuple
 
 # Ensure the repo root (which contains kg_ingest/ and src/) is importable when
 # this script is run directly (e.g. ./venv/bin/python data/validate_kg.py).
@@ -27,10 +29,157 @@ from osrs_planner.engine.kg.store import KGStore
 from kg_ingest.ids import slugify
 KG_DIR = os.path.join(ROOT, "kg")
 QUESTS_PATH = os.path.join(ROOT, "data", "quests.json")
+SCHEMA_PATH = os.path.join(KG_DIR, "schema.json")
 
 _VALID_ATOM_TYPES = {a.value for a in AtomType}
 _VALID_NODE_KINDS = {k.value for k in NodeKind}
 _VALID_OPS = {o.value for o in Op}
+
+
+# ---------------------------------------------------------------------------
+# Schema-driven domain/range invariant + severity tiers (v2 ontology, spec §8)
+#
+# kg/schema.json is the LOCKED v2 ontology-as-data (Going Meta principle 1): a
+# single source of truth that drives the builders, the LLM-extraction prompt, and
+# the generic check below. The check enforces a CLOSED vocabulary (every node
+# kind / edge type / atom type / op used in the graph must be declared) and the
+# domain/range of every edge, grading each finding by severity so that partial /
+# in-migration data warns or informs rather than blocking (decision 9 / §8).
+# ---------------------------------------------------------------------------
+
+class Severity(str, enum.Enum):
+    """Schema-finding severity tiers (spec §8). Only VIOLATION affects exit code."""
+    VIOLATION = "VIOLATION"  # hard failure: undeclared kind/edge/atom/op or domain/range breach
+    WARNING = "WARNING"      # tracked, non-fatal (e.g. disclosed known-gap / mis-filed record)
+    INFO = "INFO"            # informational, non-fatal (migration/coverage signal: legacy usage)
+
+
+# One severity-graded result of the schema-driven check: `severity` is a Severity,
+# `code` a short machine tag (vocab|domain|range|dst|legacy), `message` human text.
+# A functional namedtuple (not a dataclass) so the module exec's cleanly under the
+# importlib-from-file loading the tests use (it is not registered in sys.modules).
+Finding = namedtuple("Finding", ["severity", "code", "message"])
+
+
+def load_schema(path: str = SCHEMA_PATH) -> dict:
+    """Load kg/schema.json (the locked v2 ontology-as-data)."""
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _kind_str(node) -> str | None:
+    """node.kind as a plain string (enum .value or raw str), or None for a missing node."""
+    if node is None:
+        return None
+    return node.kind.value if hasattr(node.kind, "value") else node.kind
+
+
+def check_schema(store: KGStore, schema: dict) -> list[Finding]:
+    """Generic, schema-driven domain/range + closed-vocabulary invariant (spec §8).
+
+    Returns severity-graded Findings ([] of VIOLATION == schema-valid):
+      - VIOLATION: a node kind / edge type / atom type / op not declared in the
+        schema, or an edge whose src.kind ∉ domain, dst.kind ∉ range, or a
+        required dst missing.
+      - INFO: usage of a *legacy* (v1) node kind or atom type that is tolerated
+        for byte-stable, link-don't-merge migration (aggregated, one line each).
+
+    Pure and store/schema-injectable so it is unit-testable in isolation.
+    """
+    findings: list[Finding] = []
+
+    node_kinds = schema["node_kinds"]
+    legacy_node_kinds = schema["legacy_node_kinds"]
+    edge_kinds = schema["edge_kinds"]
+    legacy_edge_kinds = schema.get("legacy_edge_kinds", {})
+    atom_types = schema["atom_types"]
+    legacy_atom_types = schema["legacy_atom_types"]
+    valid_ops = set(schema["ops"])
+    declared_node_kinds = set(node_kinds) | set(legacy_node_kinds)
+    declared_atom_types = set(atom_types) | set(legacy_atom_types)
+
+    def kind_of(nid: str | None) -> str | None:
+        return _kind_str(store.nodes.get(nid) if nid is not None else None)
+
+    # --- node-kind vocabulary (closed) + legacy usage as aggregated INFO ---
+    legacy_kind_counts: dict[str, int] = {}
+    for nid, node in store.nodes.items():
+        k = _kind_str(node)
+        if k not in declared_node_kinds:
+            findings.append(Finding(Severity.VIOLATION, "vocab",
+                f"node {nid!r} has kind {k!r} not declared in schema "
+                f"(node_kinds / legacy_node_kinds)"))
+        elif k in legacy_node_kinds:
+            legacy_kind_counts[k] = legacy_kind_counts.get(k, 0) + 1
+    for k in sorted(legacy_kind_counts):
+        succ = legacy_node_kinds[k].get("successor", "?")
+        findings.append(Finding(Severity.INFO, "legacy",
+            f"{legacy_kind_counts[k]} node(s) on legacy kind {k!r} "
+            f"(v2 successor: {succ}) — pending migration"))
+
+    # --- edge-type vocabulary (closed) + domain/range/dst invariant ---
+    legacy_edge_counts: dict[str, int] = {}
+    for e in store.edges:
+        t = e.type.value if hasattr(e.type, "value") else e.type
+        spec = edge_kinds.get(t)
+        if spec is None:
+            if t in legacy_edge_kinds:
+                legacy_edge_counts[t] = legacy_edge_counts.get(t, 0) + 1
+            else:
+                findings.append(Finding(Severity.VIOLATION, "vocab",
+                    f"edge {e.id} has type {t!r} not declared in schema "
+                    f"(edge_kinds / legacy_edge_kinds)"))
+            continue
+        src_kind = kind_of(e.src)
+        domain = spec["domain"]
+        # A missing src node (kind None) is referential integrity's job (check_kg
+        # reports it as [ref]); don't ALSO mislabel it a domain breach here.
+        if src_kind is not None and domain != "*" and src_kind not in domain:
+            findings.append(Finding(Severity.VIOLATION, "domain",
+                f"edge {e.id} ({t}) src {e.src!r} kind {src_kind!r} not in domain {domain}"))
+        dst_policy = spec.get("dst")
+        if e.dst is None:
+            if dst_policy == "required":
+                findings.append(Finding(Severity.VIOLATION, "dst",
+                    f"edge {e.id} ({t}) has dst=None but schema requires a dst"))
+        elif dst_policy == "forbidden":
+            findings.append(Finding(Severity.VIOLATION, "dst",
+                f"edge {e.id} ({t}) carries dst {e.dst!r} but schema forbids a dst"))
+        else:
+            dst_kind = kind_of(e.dst)
+            rng = spec["range"]
+            if dst_kind is not None and rng != "*" and dst_kind not in rng:
+                findings.append(Finding(Severity.VIOLATION, "range",
+                    f"edge {e.id} ({t}) dst {e.dst!r} kind {dst_kind!r} not in range {rng}"))
+    for t in sorted(legacy_edge_counts):
+        succ = legacy_edge_kinds[t].get("successor", "?")
+        findings.append(Finding(Severity.INFO, "legacy",
+            f"{legacy_edge_counts[t]} edge(s) of legacy type {t!r} "
+            f"(v2 successor: {succ}) — pending migration"))
+
+    # --- op + atom-type vocabulary (closed) + legacy atom usage as INFO ---
+    legacy_atom_counts: dict[str, int] = {}
+    for gid, group in store.groups.items():
+        op = group.op.value if hasattr(group.op, "value") else group.op
+        if op not in valid_ops:
+            findings.append(Finding(Severity.VIOLATION, "vocab",
+                f"group {gid} has op {op!r} not declared in schema.ops"))
+        for child in group.children:
+            if isinstance(child, ConditionAtom):
+                a = child.atom_type.value if hasattr(child.atom_type, "value") else child.atom_type
+                if a not in declared_atom_types:
+                    findings.append(Finding(Severity.VIOLATION, "vocab",
+                        f"group {gid} atom has atom_type {a!r} not declared in schema "
+                        f"(atom_types / legacy_atom_types)"))
+                elif a in legacy_atom_types:
+                    legacy_atom_counts[a] = legacy_atom_counts.get(a, 0) + 1
+    for a in sorted(legacy_atom_counts):
+        succ = legacy_atom_types[a].get("successor", "?")
+        findings.append(Finding(Severity.INFO, "legacy",
+            f"{legacy_atom_counts[a]} atom(s) of legacy type {a!r} "
+            f"(v2 successor: {succ}) — pending migration"))
+
+    return findings
 
 
 def check_kg_warnings(store: KGStore, quests_data: dict) -> list[str]:
@@ -203,6 +352,46 @@ def check_kg(store: KGStore, quests_data: dict,
         if not data.get("thresholds"):
             errors.append(f"[goal] node {nid} missing/empty data.thresholds")
 
+    # --- Diary-domain invariants (achievement-diaries brick) ---
+    def _kind_of(nid: str | None) -> str | None:
+        n = store.nodes.get(nid) if nid is not None else None
+        if n is None:
+            return None
+        return n.kind.value if hasattr(n.kind, "value") else n.kind
+
+    _CONTENT_KINDS = {NodeKind.SKILL.value, NodeKind.ACTIVITY.value, NodeKind.MONSTER.value,
+                      NodeKind.REGION.value, NodeKind.ITEM.value}
+    _EFFECT_KINDS = {"stat_multiplier", "rate_multiplier", "capacity_change", "fee_waiver",
+                     "behavior_toggle", "recurring_resource", "access"}
+    for e in store.edges:
+        if e.type is EdgeType.SUPERSEDES:
+            # the upgrade/cross-cape ladder: item ≻ item, or goal ≻ goal.
+            for end, label in ((e.src, "src"), (e.dst, "dst")):
+                k = _kind_of(end)
+                if k not in (NodeKind.ITEM.value, NodeKind.GOAL.value):
+                    errors.append(f"[diary] supersedes edge {e.id} {label} {end!r} is kind "
+                                  f"{k!r} (must be item or goal)")
+        elif e.type is EdgeType.EFFECT and e.dst is not None:
+            # The diary effect→content contract: a dst-bearing effect targets a
+            # content node and carries an enum effect_kind. (quest-brick effects
+            # leave dst=None and are exempt.)
+            k = _kind_of(e.dst)
+            if k not in _CONTENT_KINDS:
+                errors.append(f"[diary] effect edge {e.id} dst {e.dst!r} is kind {k!r} "
+                              f"(must be a content node: {sorted(_CONTENT_KINDS)})")
+            ek = (e.data or {}).get("effect_kind")
+            if ek not in _EFFECT_KINDS:
+                errors.append(f"[diary] effect edge {e.id} has invalid/missing "
+                              f"data.effect_kind {ek!r}")
+
+    # Every diary tier node carries its region + tier.
+    for nid, node in store.nodes.items():
+        kind = node.kind.value if hasattr(node.kind, "value") else node.kind
+        if kind == NodeKind.DIARY.value:
+            data = node.data or {}
+            if not data.get("region") or not data.get("tier"):
+                errors.append(f"[diary] tier node {nid} missing data.region/data.tier")
+
     # --- 2 + 3: walk groups (atom ref_node, sub-group children, ops) ---
     for gid, group in store.groups.items():
         op = group.op.value if hasattr(group.op, "value") else group.op
@@ -257,6 +446,31 @@ def check_kg(store: KGStore, quests_data: dict,
     return errors
 
 
+def collect_findings(store: KGStore, quests_data: dict, schema: dict | None,
+                     raw_node_dicts: list[dict] | None = None,
+                     raw_edge_dicts: list[dict] | None = None,
+                     raw_group_dicts: list[dict] | None = None) -> list[Finding]:
+    """Unify every check into one severity-graded Finding list (spec §8).
+
+    The legacy structural/completeness checks (check_kg) are VIOLATIONs; the
+    disclosed-gap notices (check_kg_warnings) are WARNINGs; the schema-driven
+    domain/range + closed-vocabulary check contributes its own severities. A
+    missing/invalid schema is itself a VIOLATION (the schema is required from
+    build step 1 on)."""
+    findings: list[Finding] = []
+    for msg in check_kg(store, quests_data, raw_node_dicts=raw_node_dicts,
+                        raw_edge_dicts=raw_edge_dicts, raw_group_dicts=raw_group_dicts):
+        findings.append(Finding(Severity.VIOLATION, "invariant", msg))
+    for msg in check_kg_warnings(store, quests_data):
+        findings.append(Finding(Severity.WARNING, "known-gap", msg))
+    if schema is None:
+        findings.append(Finding(Severity.VIOLATION, "schema",
+            f"kg/schema.json could not be loaded (required from build step 1)"))
+    else:
+        findings.extend(check_schema(store, schema))
+    return findings
+
+
 def main() -> int:
     # --- 5. Loadability ---
     try:
@@ -274,26 +488,45 @@ def main() -> int:
         raw_edge_dicts = json.load(f)
     with open(os.path.join(KG_DIR, "condition_groups.json"), encoding="utf-8") as f:
         raw_group_dicts = json.load(f)
-    errors = check_kg(store, quests_data, raw_node_dicts=raw_node_dicts,
-                      raw_edge_dicts=raw_edge_dicts, raw_group_dicts=raw_group_dicts)
-    warnings = check_kg_warnings(store, quests_data)
+    try:
+        schema = load_schema()
+    except (OSError, ValueError) as exc:
+        print(f"KG VALIDATION — schema load failed: {exc}")
+        schema = None
+
+    findings = collect_findings(store, quests_data, schema, raw_node_dicts=raw_node_dicts,
+                                raw_edge_dicts=raw_edge_dicts, raw_group_dicts=raw_group_dicts)
+    violations = [f for f in findings if f.severity is Severity.VIOLATION]
+    warnings = [f for f in findings if f.severity is Severity.WARNING]
+    infos = [f for f in findings if f.severity is Severity.INFO]
     accessed = quests_data.get("_provenance", {}).get("accessed", "?")
-    if warnings:
-        print(f"KG VALIDATION WARNINGS — {len(warnings)} non-fatal notice(s):")
-        for w in warnings:
-            print("  !", w)
-    if errors:
-        print(f"KG VALIDATION FAILED — {len(errors)} violation(s):")
-        for e in errors[:50]:
-            print("  -", e)
-        if len(errors) > 50:
-            print(f"  ... and {len(errors) - 50} more")
+
+    # Some findings (the legacy check_kg/check_kg_warnings strings) are already
+    # self-tagged with a leading "[...]"; only prefix [code] when they are not.
+    def _fmt(f: Finding) -> str:
+        return f.message if f.message.startswith("[") else f"[{f.code}] {f.message}"
+
+    for tier, items in (("INFO", infos), ("WARNING", warnings)):
+        if items:
+            print(f"KG VALIDATION {tier} — {len(items)} {tier.lower()} notice(s):")
+            for f in items:
+                print("  ", _fmt(f))
+    if violations:
+        print(f"KG VALIDATION FAILED — {len(violations)} violation(s):")
+        for f in violations[:50]:
+            print("  -", _fmt(f))
+        if len(violations) > 50:
+            print(f"  ... and {len(violations) - 50} more")
         return 1
     n_quests = sum(1 for n in store.nodes.values()
                    if (n.kind.value if hasattr(n.kind, "value") else n.kind) == "quest")
-    print("KG VALIDATION PASSED — all graph invariants + completeness hold.")
+    print("KG VALIDATION PASSED — all graph invariants + schema + completeness hold.")
     print(f"  nodes: {len(store.nodes)}  edges: {len(store.edges)}  groups: {len(store.groups)}")
     print(f"  quest nodes: {n_quests}")
+    print(f"  schema: v{schema['schema_version'] if schema else '?'} "
+          f"({len(schema['node_kinds']) if schema else 0} node kinds, "
+          f"{len(schema['edge_kinds']) if schema else 0} edge kinds)")
+    print(f"  notices: {len(warnings)} warning(s), {len(infos)} info (migration/coverage)")
     print(f"  quests source accessed: {accessed}")
     return 0
 

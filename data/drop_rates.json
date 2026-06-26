@@ -7,6 +7,9 @@
     ],
     "license": "OSRS Wiki content CC BY-NC-SA 3.0",
     "accessed_at": "2026-06-19",
+    "raw_files": [
+      "data/raw/dropsline_full.json"
+    ],
     "record_count": 4370,
     "sourced_count": 3131,
     "note": "Per-(item_id, source) rarity for collection-log items via Bucket dropsline. Clue caskets + activity/minigame mostly null-by-reason (v1). ToA invocation-canonical."

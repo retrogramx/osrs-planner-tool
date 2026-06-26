@@ -1,0 +1,23 @@
+{
+  "_provenance": {"note": "competency-questions CI gate (decision 9, from day one)", "accessed": "2026-06-25"},
+  "records": [
+    { "id": "cq-item-variants-amulet-of-glory",
+      "question": "What are all variants of the Amulet of glory?",
+      "method": "same_entity_members", "target": "item:amulet-of-glory", "expect_min": 5 },
+    { "id": "cq-item-family-scythe-of-vitur",
+      "question": "What are all Scythes of vitur (every kit)?",
+      "method": "same_entity_family", "target": "item:scythe-of-vitur-family", "expect_min": 5 }
+    ,{ "id": "cq-charge-cost-scythe-of-vitur",
+      "question": "What materials does it cost to charge a Scythe of vitur?",
+      "method": "recipe_materials", "target": "recipe:charge-scythe-of-vitur", "expect_min": 2 }
+    ,{ "id": "cq-ring-of-dueling-destroyed",
+      "question": "Is a Ring of dueling destroyed when its last charge is used?",
+      "method": "is_destroyed", "target": "item:ring-of-dueling", "expect_min": 1 }
+    ,{ "id": "cq-dharoks-helm-repairable",
+      "question": "Can a broken Dharok's helm be repaired?",
+      "method": "is_repairable", "target": "item:4884", "expect_min": 1 }
+    ,{ "id": "cq-scythe-of-vitur-slash-bonus",
+      "question": "What is the Scythe of vitur's slash attack bonus?",
+      "method": "equipment_bonus", "target": "item:22325", "stat": "slash_attack_bonus", "expect": 125 }
+  ]
+}

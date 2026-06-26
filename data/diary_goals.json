@@ -1,0 +1,15 @@
+{
+  "_provenance": {"domain": "diary_goals", "source_urls": ["https://oldschool.runescape.wiki/w/Achievement_diary_cape"],
+    "accessed": "2026-06-23", "license": "CC BY-NC-SA 3.0", "extraction_method": "manual-transcription-from-wiki", "record_count": 2,
+    "note": "The trimmed cape (t) is the first cross-domain goal link (diaries <-> quests): it requires all 48 diaries (the base diary cape) AND the Quest point cape. The reciprocal goal:quest-point-cape-t (all quests + all 48 diaries) is the quest domain's to own and is disclosed here, not modeled."},
+  "records": [
+    {"id": "goal:achievement-diary-cape", "name": "Achievement diary cape",
+     "counter_type": "member_count", "thresholds": [48],
+     "grants": {"reward": "unlock", "category": "equipment", "name": "Achievement diary cape", "access": "Achievement diary cape"}},
+    {"id": "goal:achievement-diary-cape-t", "name": "Achievement diary cape (t)",
+     "counter_type": "member_count", "thresholds": [48],
+     "requires_goals": ["goal:achievement-diary-cape", "goal:quest-point-cape"],
+     "supersedes": "goal:achievement-diary-cape",
+     "grants": {"reward": "unlock", "category": "equipment", "name": "Achievement diary cape (t)", "access": "Achievement diary cape (t)"}}
+  ]
+}

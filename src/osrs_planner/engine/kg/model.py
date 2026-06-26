@@ -28,6 +28,8 @@ class NodeKind(str, Enum):
     MINIGAME = "minigame"
     CLOG_SLOT = "clog_slot"
     GOAL = "goal"  # completion-goal aggregate node (Quest cape, music cape, ...): data={counter_type, thresholds}
+    RECIPE = "recipe"                  # reified production/charging process (decision 3 / spec §3-4)
+    EQUIPMENT_BONUSES = "equipment_bonuses"   # reified combat-stat facet of an equippable item-variant
 
 
 class EdgeType(str, Enum):
@@ -41,6 +43,13 @@ class EdgeType(str, Enum):
     GATED_BY = "gated_by"
     EFFECT = "effect"                  # a passive/permanent perk riding on a granted item/unlock (spec §4)
     PROGRESS_TOWARDS = "progress_towards"  # counting contribution toward a goal node; data={weight} (spec §5)
+    SUPERSEDES = "supersedes"          # item upgrade ladder (cloak 1≺2≺3≺4); inert to gating
+    SAME_ENTITY = "same_entity"        # identity bridge (variant->page, page->family); decision 5/6
+    CONSUMES = "consumes"              # recipe -> item input (destroyed/transformed); reified {qty, role}
+    PRODUCES = "produces"              # recipe -> item output; reified {qty}
+    DEGRADES_TO = "degrades_to"        # downgrade ladder through use (inverse of supersedes); dst=None = destroyed
+    REPAIRS = "repairs"                # restore-from-broken (inverse of degrades_to's broken terminal); item->item
+    HAS_BONUSES = "has_bonuses"               # item-variant -> its equipment_bonuses facet (item-src)
 
 
 class Op(str, Enum):
@@ -68,6 +77,7 @@ class AtomType(str, Enum):
     ACCOUNT_TYPE = "account_type"
     CLUE_SCROLLS = "clue_scrolls"
     COMBAT_ACHIEVEMENT_POINTS = "combat_achievement_points"
+    COUNT_SATISFIED = "count_satisfied"  # cardinality of completed members of data.set_ref (goal:*-cape)
 
 
 @dataclass(frozen=True)

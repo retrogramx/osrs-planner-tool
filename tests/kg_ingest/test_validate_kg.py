@@ -376,6 +376,72 @@ def test_grants_edge_without_reward_is_flagged():
     assert any("grants edge" in e and "8003" in e and "missing data.reward" in e for e in v), v
 
 
+# --- Diary-domain invariants (achievement-diaries Task 9) ---
+
+def _diary_nodes_edges(extra_nodes=None, extra_edges=None):
+    nodes = [
+        Node(id="diary:morytania:hard", kind=NodeKind.DIARY, name="Morytania Hard",
+             slug="morytania-hard", data={"region": "morytania", "tier": "hard"}),
+        Node(id="item:13114", kind=NodeKind.ITEM, name="Morytania legs 3", slug="13114", data={}),
+        Node(id="item:13113", kind=NodeKind.ITEM, name="Morytania legs 2", slug="13113", data={}),
+        Node(id="activity:barrows", kind=NodeKind.ACTIVITY, name="Barrows", slug="barrows", data={}),
+    ] + (extra_nodes or [])
+    edges = [
+        Edge(id=9001, type=EdgeType.SUPERSEDES, src="item:13114", dst="item:13113",
+             cond_group=None, data={}),
+        Edge(id=9002, type=EdgeType.EFFECT, src="item:13114", dst="activity:barrows",
+             cond_group=None, data={"effect_kind": "rate_multiplier", "magnitude": 0.5}),
+    ] + (extra_edges or [])
+    return nodes, edges
+
+
+def test_diary_store_clean():
+    nodes, edges = _diary_nodes_edges()
+    assert validate_kg.check_kg(_store_with(nodes, edges, {}), _quests_data([])) == []
+
+
+def test_supersedes_non_item_non_goal_flagged():
+    nodes, edges = _diary_nodes_edges(
+        extra_nodes=[Node(id="skill:slayer", kind=NodeKind.SKILL, name="Slayer", slug="slayer", data={})],
+        extra_edges=[Edge(id=9003, type=EdgeType.SUPERSEDES, src="item:13114",
+                          dst="skill:slayer", cond_group=None, data={})])
+    v = validate_kg.check_kg(_store_with(nodes, edges, {}), _quests_data([]))
+    assert any("supersedes edge" in e and "9003" in e for e in v), v
+
+
+def test_effect_dst_must_be_content_node():
+    nodes, edges = _diary_nodes_edges(
+        extra_nodes=[Node(id="quest:x", kind=NodeKind.QUEST, name="X", slug="x", data={})],
+        extra_edges=[Edge(id=9004, type=EdgeType.EFFECT, src="item:13114", dst="quest:x",
+                          cond_group=None, data={"effect_kind": "access"})])
+    v = validate_kg.check_kg(_store_with(nodes, edges, {}), _quests_data([]))
+    assert any("effect edge" in e and "9004" in e and "content node" in e for e in v), v
+
+
+def test_effect_kind_must_be_in_enum():
+    nodes, edges = _diary_nodes_edges(
+        extra_edges=[Edge(id=9005, type=EdgeType.EFFECT, src="item:13114", dst="activity:barrows",
+                          cond_group=None, data={"effect_kind": "teleport_magic"})])
+    v = validate_kg.check_kg(_store_with(nodes, edges, {}), _quests_data([]))
+    assert any("effect edge" in e and "9005" in e and "effect_kind" in e for e in v), v
+
+
+def test_dst_none_effect_is_exempt():
+    # quest-brick style effect (dst=None) is NOT subject to the content/effect_kind check.
+    nodes, edges = _diary_nodes_edges(
+        extra_edges=[Edge(id=9006, type=EdgeType.EFFECT, src="item:13114", dst=None,
+                          cond_group=None, data={})])
+    assert validate_kg.check_kg(_store_with(nodes, edges, {}), _quests_data([])) == []
+
+
+def test_diary_tier_node_missing_region_tier_flagged():
+    nodes, edges = _diary_nodes_edges(
+        extra_nodes=[Node(id="diary:varrock:easy", kind=NodeKind.DIARY, name="Varrock Easy",
+                          slug="varrock-easy", data={})])
+    v = validate_kg.check_kg(_store_with(nodes, edges, {}), _quests_data([]))
+    assert any("tier node" in e and "diary:varrock:easy" in e for e in v), v
+
+
 # --- Step 4: on-real-data acceptance test ---
 
 def test_main_passes_on_committed_kg():

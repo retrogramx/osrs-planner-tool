@@ -151,6 +151,29 @@ def atom_satisfied(atom: ConditionAtom, state: AccountState, kg: KGStore) -> Tri
             return Tri.FALSE                     # can't reach threshold even if all unknowns flip
         return Tri.UNKNOWN                        # might or might not reach it
 
+    if at is AtomType.COUNT_SATISFIED:
+        # Count members of data.set_ref whose diary tier is completed (the cape goal).
+        # Same Kleene cardinality shape as clue_scrolls: known-true vs observed-false vs unknown.
+        members = atom.data.get("set_ref", [])
+        threshold = atom.threshold or 0
+        fam = atom.data.get("member_family", "achievement_diary")
+        per_member: list[Tri] = []
+        for m in members:
+            have = state.diary_state.get(m)
+            if have is not None and QUEST_STATE_ORDER.get(have, 0) >= QUEST_STATE_ORDER["completed"]:
+                per_member.append(Tri.TRUE)
+            elif family_is_observed(fam, state, manually_asserted=False):
+                per_member.append(Tri.FALSE)
+            else:
+                per_member.append(Tri.UNKNOWN)
+        n_true = sum(1 for t in per_member if t is Tri.TRUE)
+        n_unknown = sum(1 for t in per_member if t is Tri.UNKNOWN)
+        if n_true >= threshold:
+            return Tri.TRUE
+        if n_true + n_unknown < threshold:
+            return Tri.FALSE
+        return Tri.UNKNOWN
+
     raise NotImplementedError(f"atom_satisfied: {at!r} not implemented")
 
 

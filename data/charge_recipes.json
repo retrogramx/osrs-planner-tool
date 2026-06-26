@@ -1,0 +1,24 @@
+{
+  "_provenance": {
+    "note": "curated item-charging recipes (consume-materials); editorial — owner-reviewed",
+    "license": "CC BY-NC-SA 3.0",
+    "accessed": "2026-06-25"
+  },
+  "records": [
+    { "slug": "charge-scythe-of-vitur", "name": "Charge Scythe of vitur",
+      "produces": {"item_id": 22325, "qty": 1},
+      "subject":  {"item_id": 22486, "qty": 1},
+      "materials": [ {"item_id": 565, "qty": 200, "name": "Blood rune"},
+                     {"item_id": 22446, "qty": 1, "name": "Vial of blood"} ],
+      "charge_yield": 100, "charge_capacity": 20000,
+      "source_url": "https://oldschool.runescape.wiki/w/Scythe_of_vitur",
+      "source_token": "Each vial and 200 blood runes adds 100 charges to the scythe, with it being able to hold up to 20,000 charges" },
+    { "slug": "charge-ring-of-suffering", "name": "Charge Ring of suffering",
+      "produces": {"item_id": 20655, "qty": 1},
+      "subject":  {"item_id": 19550, "qty": 1},
+      "materials": [ {"item_id": 2550, "qty": 1, "name": "Ring of recoil"} ],
+      "charge_yield": 40, "charge_capacity": 100000,
+      "source_url": "https://oldschool.runescape.wiki/w/Ring_of_suffering",
+      "source_token": "The ring can also be charged with noted and unnoted rings of recoil to give it the recoil effect, renaming the item as the Ring of suffering (r)." }
+  ]
+}

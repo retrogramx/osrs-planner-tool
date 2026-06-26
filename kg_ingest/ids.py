@@ -46,6 +46,26 @@ def gear_loadout_id(name: str) -> str:
     return f"gear_loadout:{slugify(name)}"
 
 
+def diary_tier_id(region_slug: str, tier: str) -> str:
+    return f"diary:{region_slug}:{tier}"
+
+
+def activity_id(name: str) -> str:
+    return f"activity:{slugify(name)}"
+
+
+def region_id(name: str) -> str:
+    return f"region:{slugify(name)}"
+
+
+def monster_id(name: str) -> str:
+    return f"monster:{slugify(name)}"
+
+
+def goal_id(slug: str) -> str:
+    return f"goal:{slugify(slug)}"
+
+
 def _stable_hash(text: str) -> int:
     return int(hashlib.md5(text.encode("utf-8")).hexdigest(), 16) & _MASK
 

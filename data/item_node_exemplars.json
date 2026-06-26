@@ -1,0 +1,8 @@
+{
+  "_provenance": {
+    "note": "intra-page multi-variant exemplars (L1) proving decision-5 variant model",
+    "source": "data/item_dictionary.json (page_name grouping)",
+    "accessed": "2026-06-25"
+  },
+  "records": ["Amulet of glory", "Ring of dueling", "Ring of wealth", "Slayer ring", "Dragon dagger"]
+}

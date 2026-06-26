@@ -20,7 +20,9 @@ Invariants:
      missing output_qty would be a future ZeroDivisionError).
   5. Gate coherence: no `ge` channel is iron-eligible
      (ge record => requires_ge True AND account_allow == {"main"}).
-  6. KG stays cost-free: no price/cost/currency token in kg/*.json.
+  6. KG stays cost-free: no price/cost/currency token in kg graph-instance files
+     (schema.json is excluded -- it is the ontology vocabulary that legitimately
+     names the 'currency' node kind).
   7. Shop currency values join to currencies.json.
   8. Envelope consistency: each cost dataset's _provenance.record_count ==
      len(records) and _excluded is a list.
@@ -178,10 +180,16 @@ def main() -> int:
 
     # --- KG stays cost-free ---
     # Conservative substring guard: any "price"/"cost"/"currency" JSON key in a
-    # kg/*.json file fails. A future legitimate KG field literally named one of
-    # these would be a false positive and require updating this regex.
+    # kg graph-INSTANCE file fails (cost/price is account-overlay data, never baked
+    # into the committed graph). schema.json is EXCLUDED: it is the locked v2
+    # ontology VOCABULARY, which legitimately NAMES a 'currency' node kind (decision:
+    # coins is just one currency) and references it in edge domain/range -- those are
+    # type names, not per-account cost instance data.
+    SCHEMA_META_FILES = {"schema.json"}
     COST_TOKENS = re.compile(r'"(price|cost|currency)"', re.I)
     for kgf in sorted(glob.glob(os.path.join(kg, "*.json"))):
+        if os.path.basename(kgf) in SCHEMA_META_FILES:
+            continue
         with open(kgf, encoding="utf-8") as f:
             raw = f.read()
         m = COST_TOKENS.search(raw)

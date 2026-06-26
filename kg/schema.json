@@ -1,0 +1,196 @@
+{
+  "schema_version": "2.0.0",
+  "ontology": "entity-graph-ontology-v2",
+  "status": "locked",
+  "locked_on": "2026-06-25",
+  "spec": "docs/superpowers/specs/2026-06-25-entity-graph-ontology-v2.md",
+  "description": "Machine-readable form of the LOCKED Entity-Graph Ontology v2. Single source of truth (Going Meta principle 1): drives the builders, the LLM-extraction prompt, and the generic domain/range invariant in data/validate_kg.py. Closed vocabulary: any node kind / edge type / atom type / op used in kg/*.json MUST be declared here (live, reserved, or legacy) or it is a VIOLATION. Changes are ADDITIVE (new kind/edge/atom) via link-don't-merge, never a re-ingest.",
+
+  "conventions": {
+    "wildcard": "A domain or range value of \"*\" means any declared node kind (the v2 'any' relation).",
+    "status_values": {
+      "live": "Has data in the committed graph today or in the imminent build; domain/range is enforced.",
+      "reserved": "Declared by the v2 spec but not yet populated (decision 8 / NICE). Reserves the slot; enforced once populated.",
+      "legacy": "A v1 kind/atom physically present in the committed graph but NOT part of the v2 ontology. Tolerated for byte-stable, link-don't-merge migration; each names its v2 successor. Usage is reported at INFO severity (tracked, non-blocking), never VIOLATION. Empties as nodes/edges migrate."
+    },
+    "dst_policy": {
+      "required": "Edge must carry a non-null dst.",
+      "optional": "Edge may carry a dst or be a pure-condition / dst=None edge (the constraint IS the cond_group, or the payload rides in data).",
+      "forbidden": "Edge must not carry a dst."
+    },
+    "cond_group_policy": "Documentation of whether an edge typically carries a requires/recommended_for cond_group. Recorded for the builders and the LLM-extraction prompt; NOT enforced as a VIOLATION in this build step (domain/range + closed-vocabulary are the enforced invariants)."
+  },
+
+  "severity_tiers": {
+    "VIOLATION": "Hard failure. validate_kg exits non-zero. True schema breach: undeclared kind/edge/atom/op, or a domain/range mismatch on a known edge.",
+    "WARNING": "Tracked, non-fatal. Lands as a notice (e.g. disclosed known-gap / mis-filed record). Does not affect exit code.",
+    "INFO": "Informational, non-fatal. Migration/coverage signal (e.g. legacy-kind usage, reserved-kind population). Does not affect exit code."
+  },
+
+  "ops": ["and", "or", "not"],
+
+  "decisions": {
+    "1": "'Where' is THREE relations: located_in (containment tree) + rule_applies_in (overlapping typed overlay) + a coordinate field (OSRS chunks).",
+    "2": "Interactable kinds = npc | monster | scenery, each carrying a role attribute.",
+    "3": "Relationship edges are REIFIED (data-carrying) for drops/sells/recipe/grants; shops two-way + currency-typed.",
+    "4": "Requirement kinds = hard requires + soft recommended_for (advisory, strength enum, never blocks).",
+    "5": "Identity = cache-ids canonical + item page-identity with variant children.",
+    "6": "Aliases = typed aliases[] on nodes (wiki-redirect-sourced) + a search-resolution layer for ambiguous terms.",
+    "7": "gate_type on hard requires: open verb set access|damage|kill (combat) + make|craft|... via the recipe's requires/consumes.",
+    "8": "Context axes game_mode, real-time clock, difficulty_config defined NOW (reserve slots), populated later.",
+    "9": "Competency-questions CI gate ON from day one."
+  },
+
+  "node_kinds": {
+    "place": {"status": "live", "key_prefix": "place:<slug>", "id_basis": "slug", "notes": "Recursive containment node (decision 1). Geometry = a chunk-set. Supersedes the v1 'region' kind.", "place_type_enum": ["world", "continent", "ocean", "island", "kingdom", "city", "town", "settlement", "district", "dungeon", "floor", "region"], "data_keys": ["place_type", "aliases", "chunks", "facility_flags", "coordinate_fields"]},
+    "npc": {"status": "reserved", "key_prefix": "npc:<id>", "id_basis": "cache_id", "notes": "Non-combat interactable (decision 2). Carries a role.", "role_enum": ["slayer_master", "tutor", "protect_target", "banker", "shopkeeper", "ruler", "quest_giver", "rumour_npc"], "data_keys": ["role", "shop", "aliases"]},
+    "monster": {"status": "live", "key_prefix": "monster:<id>", "id_basis": "cache_id", "notes": "Attackable interactable (decision 2). Carries a role; combat stats, weakness, immunities, slayer category.", "data_keys": ["role", "combat_stats", "weakness", "immunities", "slayer_category", "aliases"]},
+    "scenery": {"status": "reserved", "key_prefix": "scenery:<object_id>", "id_basis": "cache_object_id", "notes": "Interactable object (rocks/altars/anvils/doors/trees/transport-stations). Micro-item 11: 'scenery' label + object_id.", "data_keys": ["object_id", "action", "aliases"]},
+    "shop": {"status": "reserved", "key_prefix": "shop:<slug>", "id_basis": "slug", "notes": "Two-way, currency-typed (decision 3). Reciprocal with npc.operates.", "data_keys": ["operator", "currency", "aliases"]},
+    "item": {"status": "live", "key_prefix": "item:<cache_id|page-slug|family-slug>", "id_basis": "cache_id", "notes": "Page-identity + variant children (decision 5): each variant is a cache item_id bridged to the page by same_entity; reified edges target the variant. Page-identity nodes are slug-keyed (item:<page-slug>) and family nodes item:<family-slug>; variant nodes are cache-id-keyed.", "data_keys": ["is_page", "is_family", "members", "is_canonical", "version_anchor", "variant_of", "tradeable", "value", "alch", "weight", "buy_limit", "aliases"]},
+    "currency": {"status": "reserved", "key_prefix": "currency:<slug>", "id_basis": "slug", "notes": "coins is just one (tokkul, commendation/slayer points, marks, tickets). Prices reference a currency_ref.", "data_keys": ["aliases"]},
+    "skill": {"status": "live", "key_prefix": "skill:<slug>", "id_basis": "slug", "notes": "The 23 skills.", "data_keys": ["members"]},
+    "quest": {"status": "live", "key_prefix": "quest:<slug>", "id_basis": "slug", "notes": "requires DAG from Module:Questreq/data (3-state + step, ironman/boostable flags) + has_part subquests.", "data_keys": []},
+    "diary": {"status": "live", "key_prefix": "diary:<region>:<tier>", "id_basis": "region+tier", "notes": "Achievement-diary tier node. Carries region + tier; covers->places.", "data_keys": ["region", "tier", "tasks", "skipped_quest_reqs"]},
+    "combat_achievement": {"status": "reserved", "key_prefix": "combat_achievement:<slug>", "id_basis": "slug", "notes": "From Module:Combat_Achievements (+ tier points, tested_on->monster).", "data_keys": ["tier", "points", "tested_on"]},
+    "minigame": {"status": "reserved", "key_prefix": "minigame:<slug>", "id_basis": "slug", "notes": "Minigame container.", "data_keys": []},
+    "goal": {"status": "live", "key_prefix": "goal:<slug>", "id_basis": "slug", "notes": "Completion-goal aggregate (Quest cape, music cape, ...). data={counter_type, thresholds}.", "data_keys": ["counter_type", "thresholds"]},
+    "transport_system": {"status": "reserved", "key_prefix": "transport_system:<slug>", "id_basis": "slug", "notes": "Shared-mechanic system node owning the base requires once (decision 7 / §7). Tier = transport_tier sub-entity.", "data_keys": []},
+    "activity": {"status": "live", "key_prefix": "activity:<slug>", "id_basis": "slug", "notes": "An activity/content node (effect targets, drop sources).", "data_keys": []},
+    "faction": {"status": "reserved", "key_prefix": "faction:<slug>", "id_basis": "slug", "notes": "killcount + soothing alignment target (aligned_with).", "data_keys": []},
+    "task_category": {"status": "reserved", "key_prefix": "task_category:<slug>", "id_basis": "slug", "notes": "Slayer/rumour task category (assigns, weighted).", "data_keys": []},
+    "facility": {"status": "reserved", "key_prefix": "facility:<slug>", "id_basis": "slug", "notes": "anvil/furnace/altar/range (requires_facility).", "data_keys": []},
+    "counter": {"status": "reserved", "key_prefix": "counter:<slug>", "id_basis": "slug", "notes": "An accumulating counter (counts_toward feed).", "data_keys": []},
+    "drop_table": {"status": "reserved", "key_prefix": "drop_table:<slug>", "id_basis": "slug", "notes": "Reified table/rolls/membership (decision 3 / §4).", "data_keys": ["rolls"]},
+    "recipe": {"status": "live", "key_prefix": "recipe:<slug>", "id_basis": "slug", "notes": "{materials+tools+facility+skill+xp->output} (decision 3 / §4).", "data_keys": ["xp", "ticks", "charge_yield", "charge_capacity", "notes"]},
+    "equipment_bonuses": {"status": "live", "key_prefix": "equipment_bonuses:<item_id>", "id_basis": "cache_id", "notes": "The gear/BIS substrate facet (has_bonuses). Supersedes part of the v1 'gear_loadout' kind.", "data_keys": ["item_id", "slot", "stats", "weapon"]},
+    "item_set": {"status": "reserved", "key_prefix": "item_set:<slug>", "id_basis": "slug", "notes": "Named item set (member_of). Supersedes part of the v1 'gear_loadout' kind.", "data_keys": []},
+    "set_effect": {"status": "reserved", "key_prefix": "set_effect:<slug>", "id_basis": "slug", "notes": "The bonus an item_set confers when complete.", "data_keys": []},
+    "farming_patch": {"status": "reserved", "key_prefix": "farming_patch:<slug>", "id_basis": "slug", "notes": "place x type instance (instance_of).", "data_keys": []},
+    "subquest": {"status": "reserved", "key_prefix": "subquest:<slug>", "id_basis": "slug", "notes": "Composite-quest part (has_part). NOTE: today's composite quests (e.g. RFD) are modeled as quest: nodes; this kind reserves the explicit successor slot.", "data_keys": []},
+    "rule_zone": {"status": "reserved", "key_prefix": "rule_zone:<slug>", "id_basis": "slug", "notes": "Typed, overlapping, world-spanning overlay (rule_applies_in / decision 1 / §5): multicombat | pvp | no_teleport | safe. Each instance = a chunk-set.", "rule_type_enum": ["multicombat", "pvp", "no_teleport", "safe"], "data_keys": ["rule_type", "chunks"]},
+
+    "game_mode": {"status": "reserved", "key_prefix": "game_mode:<slug>", "id_basis": "slug", "notes": "Context axis (decision 8). Atoms can gate on game_mode == X.", "data_keys": []},
+    "leaderboard": {"status": "reserved", "key_prefix": "leaderboard:<slug>", "id_basis": "slug", "notes": "Reserved (NICE).", "data_keys": []},
+    "random_event": {"status": "reserved", "key_prefix": "random_event:<slug>", "id_basis": "slug", "notes": "Reserved (NICE). time_window scope.", "data_keys": []},
+    "difficulty_config": {"status": "reserved", "key_prefix": "difficulty_config:<slug>", "id_basis": "slug", "notes": "Typed difficulty_input (decision 8 / pass-3): binary_flag | scalar_toggle_sum | accumulating_draft | floor_index | party_size; elected?. scales_with the encounter.", "difficulty_input_enum": ["binary_flag", "scalar_toggle_sum", "accumulating_draft", "floor_index", "party_size"], "data_keys": ["difficulty_input", "elected"]},
+    "invocation_toggle": {"status": "reserved", "key_prefix": "invocation_toggle:<slug>", "id_basis": "slug", "notes": "ToA-style scalar_toggle_sum member (paired with difficulty_config).", "data_keys": []},
+    "transport_tier": {"status": "reserved", "key_prefix": "transport_tier:<slug>", "id_basis": "slug", "notes": "Tier-as-capability sub-entity (canoe reach, spirit-tree count). §7.", "data_keys": []},
+    "mechanic": {"status": "reserved", "key_prefix": "mechanic:<slug>", "id_basis": "slug", "notes": "Reserved (NICE).", "data_keys": []},
+    "boss_phase": {"status": "reserved", "key_prefix": "boss_phase:<slug>", "id_basis": "slug", "notes": "Reserved (NICE).", "data_keys": []},
+    "spell": {"status": "reserved", "key_prefix": "spell:<slug>", "id_basis": "slug", "notes": "Reserved (NICE).", "data_keys": []},
+    "prayer": {"status": "reserved", "key_prefix": "prayer:<slug>", "id_basis": "slug", "notes": "Reserved (NICE).", "data_keys": []},
+    "music_track": {"status": "reserved", "key_prefix": "music_track:<slug>", "id_basis": "slug", "notes": "Reserved (NICE).", "data_keys": []},
+    "hotspot": {"status": "reserved", "key_prefix": "hotspot:<slug>", "id_basis": "slug", "notes": "Construction POH hotspot (NICE).", "data_keys": []},
+    "buildable_object": {"status": "reserved", "key_prefix": "buildable_object:<slug>", "id_basis": "slug", "notes": "Construction buildable (NICE).", "data_keys": []},
+    "room": {"status": "reserved", "key_prefix": "room:<slug>", "id_basis": "slug", "notes": "Construction room (NICE).", "data_keys": []},
+    "equipment_group": {"status": "reserved", "key_prefix": "equipment_group:<slug>", "id_basis": "slug", "notes": "Equipment grouping (member_of). Successor to part of the v1 'gear_loadout'.", "data_keys": []},
+    "money_making_method": {"status": "reserved", "key_prefix": "money_making_method:<slug>", "id_basis": "slug", "notes": "Reserved (NICE) — the account-stage-aware method layer.", "data_keys": []},
+    "varbit": {"status": "reserved", "key_prefix": "varbit:<index>", "id_basis": "varbit_index", "notes": "Account-mirror reconciliation hook (micro-item 11 / NICE).", "data_keys": ["varbit_index"]},
+    "deity": {"status": "reserved", "key_prefix": "deity:<slug>", "id_basis": "slug", "notes": "Reserved (NICE).", "data_keys": []},
+    "relic": {"status": "reserved", "key_prefix": "relic:<slug>", "id_basis": "slug", "notes": "Reserved (NICE) — Leagues relic.", "data_keys": []},
+    "emote": {"status": "reserved", "key_prefix": "emote:<slug>", "id_basis": "slug", "notes": "Reserved (NICE).", "data_keys": []},
+    "book": {"status": "reserved", "key_prefix": "book:<slug>", "id_basis": "slug", "notes": "Reserved (NICE).", "data_keys": []}
+  },
+
+  "legacy_node_kinds": {
+    "region": {"status": "legacy", "successor": "place", "notes": "v1 geographic container. Migrate to 'place' (place_type=region/city/...) with chunk geometry. Present in committed graph; targeted by effect edges (the 'effect rides on a regional item' substrate)."},
+    "access": {"status": "legacy", "successor": "place (reached via gives_access / served_by / connects_to edges)", "notes": "v1 abstract unlock node (e.g. access:fairy-rings). v2 models reachability as transport/scenery edges into a place, gated by a cond_group; no standalone 'access' kind."},
+    "gear_loadout": {"status": "legacy", "successor": "item_set / equipment_group (+ equipment_bonuses via has_bonuses)", "notes": "v1 named gear composition (one dst=None requires edge = its members). v2 splits into item_set/equipment_group membership + the equipment_bonuses facet."},
+    "account_type": {"status": "legacy", "successor": "account_type atom + game_mode context", "notes": "v1 NodeKind enum value with no instances in the committed graph. v2 expresses account family as the account_type CONDITION ATOM (and game_mode context, decision 8), not a standalone node. Declared legacy so a vestigial builder emitting one lands INFO, not a spurious VIOLATION."},
+    "clog_slot": {"status": "legacy", "successor": "item (collection-log membership)", "notes": "v1 NodeKind enum value with no instances in the committed graph. v2 expresses collection-log entries as item membership + clog/aggregate atoms. Declared legacy for model-enum coverage."}
+  },
+
+  "legacy_edge_kinds": {
+    "gated_by": {"status": "legacy", "successor": "requires (the gate IS the requires edge's cond_group)", "notes": "v1 EdgeType enum value with no instances in the committed graph and no v2 edge-table row. v2 folds gating into the requires edge's cond_group (D5). Declared legacy so it lands INFO, not a VIOLATION, and so the schema is a complete superset of the model EdgeType enum."}
+  },
+
+  "edge_kinds": {
+    "requires": {"status": "live", "domain": "*", "range": ["goal"], "dst": "optional", "cond_group": "required", "reified": false, "carries_gate_type": true, "notes": "Hard gate; drives met/blocked (decision 4). Carries gate_type (decision 7). dst is normally None (the constraint IS the cond_group); a few requires edges point directly at a node (e.g. goal->goal composition)."},
+    "grants": {"status": "live", "domain": ["quest", "diary", "goal", "activity"], "range": ["item", "currency", "skill", "access"], "dst": "optional", "cond_group": "optional", "reified": true, "notes": "Reified reward payload (decision 3). dst=None for a bundle described purely in data.reward; skill/access ranges are v1-era XP-lamp / unlock grants pending the currency/place model."},
+    "effect": {"status": "live", "domain": ["item", "diary"], "range": ["skill", "activity", "place", "monster", "region"], "dst": "optional", "cond_group": "forbidden", "reified": true, "notes": "Context-scoped effect (§3 effect | applies_when). Today every effect rides on an item (src=item) targeting a content node; the per-edge condition lives in data (data.condition / applies_when), not a cond_group. 'region' in range is the legacy target of 'place'. dst=None = a quest-era perk with no content target."},
+    "progress_towards": {"status": "live", "domain": "*", "range": ["goal"], "dst": "required", "cond_group": "forbidden", "reified": false, "notes": "Counter contribution toward a goal node. data.weight (positive int)."},
+    "supersedes": {"status": "live", "domain": ["item", "goal"], "range": ["item", "goal"], "dst": "required", "cond_group": "forbidden", "reified": false, "notes": "Upgrade/cross-cape ladder; inert to gating."},
+    "degrades_to": {"status": "live", "domain": ["item"], "range": ["item"], "dst": "optional", "cond_group": "forbidden", "reified": true, "notes": "Downgrade ladder through use (additive extension; inverse of supersedes' upgrade). Per-step item->item; terminal edge dst=None = destroyed, dst=uncharged = reverts_to, dst=broken = broken. data.trigger + data.terminal."},
+    "repairs": {"status": "live", "domain": ["item"], "range": ["item"], "dst": "required", "cond_group": "forbidden", "reified": false, "notes": "Restore-from-broken (additive extension; inverse of degrades_to's broken terminal). broken-variant -> repaired-variant. Pure structural transition; the repair fee is account-aware (cost layer) and the NPC/facility is the reserved service edge."},
+
+    "located_in": {"status": "reserved", "domain": ["place", "npc", "monster", "scenery", "shop"], "range": ["place"], "dst": "required", "cond_group": "forbidden", "reified": false, "notes": "Containment TREE (decision 1): world > kingdom > city > district > scenery."},
+    "rule_applies_in": {"status": "reserved", "domain": ["rule_zone"], "range": ["place"], "dst": "required", "cond_group": "forbidden", "reified": false, "notes": "Overlapping typed overlay (decision 1 / §5), world-spanning; each instance = a chunk-set."},
+    "operates": {"status": "reserved", "domain": ["npc"], "range": ["shop"], "dst": "required", "cond_group": "forbidden", "reified": false, "notes": "Reciprocal with shop.operator."},
+    "sells": {"status": "reserved", "domain": ["shop"], "range": ["item"], "dst": "required", "cond_group": "optional", "reified": true, "notes": "Reified: {price, currency, stock, restock} + optional gate (decision 3)."},
+    "accepts": {"status": "reserved", "domain": ["shop"], "range": ["item"], "dst": "required", "cond_group": "optional", "reified": true, "notes": "Buy-side of two-way shops (decision 3)."},
+    "buys_back": {"status": "reserved", "domain": ["shop"], "range": ["item"], "dst": "required", "cond_group": "optional", "reified": true, "notes": "Buy-back side of two-way shops (decision 3)."},
+    "drops": {"status": "reserved", "domain": ["monster", "activity", "scenery"], "range": ["drop_table", "item"], "dst": "required", "cond_group": "optional", "reified": true, "notes": "Reified {rate, rolls, drop_type, version}. NEVER fabricate the loot MECHANISM (RDT/GDT) — record flat observable rates (Option-A)."},
+    "has_table": {"status": "reserved", "domain": ["monster", "activity", "scenery"], "range": ["drop_table"], "dst": "required", "cond_group": "optional", "reified": true, "notes": "Source -> drop_table."},
+    "contains": {"status": "reserved", "domain": ["drop_table"], "range": ["item", "drop_table"], "dst": "required", "cond_group": "optional", "reified": true, "notes": "drop_table -> item-variant or sub-table."},
+    "consumes": {"status": "live", "domain": ["recipe"], "range": ["item"], "dst": "required", "cond_group": "forbidden", "reified": true, "notes": "Destroyed, quantity (resource gate, decision 7)."},
+    "produces": {"status": "live", "domain": ["recipe"], "range": ["item"], "dst": "required", "cond_group": "optional", "reified": true, "notes": "Guarded output."},
+    "recommended_for": {"status": "reserved", "domain": "*", "range": "*", "dst": "optional", "cond_group": "required", "reified": false, "notes": "SOFT advisory; never blocks (decision 4). Carries strength in {required_for_survival, strongly_recommended, optional}. Uses the FULL atom vocabulary (recommended combat stats/levels for bosses/raids)."},
+    "gives_access": {"status": "reserved", "domain": ["transport_system", "scenery"], "range": ["place"], "dst": "required", "cond_group": "optional", "reified": false, "notes": "Transport; system-gate AND edge-gate composed (§7)."},
+    "served_by": {"status": "reserved", "domain": ["transport_system", "scenery"], "range": ["place"], "dst": "required", "cond_group": "optional", "reified": false, "notes": "Transport service binding (§7)."},
+    "connects_to": {"status": "reserved", "domain": ["transport_system", "scenery"], "range": ["place"], "dst": "required", "cond_group": "optional", "reified": false, "notes": "Transport link with its own cond_group (§7)."},
+    "scales_with": {"status": "reserved", "domain": ["difficulty_config"], "range": ["monster", "drop_table"], "dst": "required", "cond_group": "forbidden", "reified": true, "notes": "Typed difficulty input -> encounter stat-block + difficulty-conditional drop_table (decision 8 / pass-3)."},
+    "same_entity": {"status": "live", "domain": "*", "range": "*", "dst": "required", "cond_group": "forbidden", "reified": false, "notes": "Identity bridge (link-don't-merge). data.basis."},
+    "has_bonuses": {"status": "live", "domain": ["item"], "range": ["equipment_bonuses"], "dst": "required", "cond_group": "forbidden", "reified": false, "notes": "Gear/BIS substrate (item-variant -> equipment_bonuses)."},
+    "member_of": {"status": "reserved", "domain": ["item"], "range": ["item_set", "equipment_group"], "dst": "required", "cond_group": "forbidden", "reified": false, "notes": "Set/group membership."},
+    "has_part": {"status": "reserved", "domain": ["quest"], "range": ["subquest"], "dst": "required", "cond_group": "forbidden", "reified": false, "notes": "Composite quests."},
+    "aligned_with": {"status": "reserved", "domain": ["monster", "item"], "range": ["faction"], "dst": "required", "cond_group": "forbidden", "reified": false, "notes": "killcount + soothing."},
+    "counts_toward": {"status": "reserved", "domain": "*", "range": ["counter"], "dst": "required", "cond_group": "forbidden", "reified": false, "notes": "kill/action -> counter feed."},
+    "immune_to": {"status": "reserved", "domain": ["monster"], "range": "*", "dst": "required", "cond_group": "forbidden", "reified": false, "notes": "Negative relation: monster <-> damage-type/gear (damage-type not yet a node kind)."},
+    "counters": {"status": "reserved", "domain": ["item", "monster"], "range": ["monster"], "dst": "required", "cond_group": "forbidden", "reified": false, "notes": "Negative relation (spec: monster <-> damage-type/gear). 'monster' in domain is an intentional symmetric extension (monster-counters-monster)."},
+    "does_not_stack_with": {"status": "reserved", "domain": "*", "range": "*", "dst": "required", "cond_group": "forbidden", "reified": false, "symmetric": true, "notes": "Symmetric negative relation: effect <-> effect."},
+    "realizable_via": {"status": "reserved", "domain": ["currency"], "range": ["item"], "dst": "required", "cond_group": "forbidden", "reified": false, "notes": "Iron-realizable exit tracing: currency -> bridge item."},
+    "assigns": {"status": "reserved", "domain": ["npc"], "range": ["task_category"], "dst": "required", "cond_group": "optional", "reified": true, "notes": "Slayer-master / rumour-npc task system; weighted (data.weight)."},
+    "teaches": {"status": "reserved", "domain": ["npc"], "range": ["skill"], "dst": "required", "cond_group": "forbidden", "reified": false, "notes": "Tutors."},
+    "spawns_at": {"status": "reserved", "domain": ["item"], "range": ["place"], "dst": "required", "cond_group": "forbidden", "reified": false, "notes": "Free ground spawns (3rd item channel)."},
+    "service": {"status": "reserved", "domain": ["npc", "facility"], "range": "*", "dst": "required", "cond_group": "optional", "reified": true, "notes": "repair/toll/lost-item; cost+cond. Range is an effect target (effect not yet a node kind)."},
+    "requires_facility": {"status": "reserved", "domain": ["activity", "recipe"], "range": ["facility"], "dst": "required", "cond_group": "forbidden", "reified": false, "notes": "anvil/furnace/altar/range."},
+    "instance_of": {"status": "reserved", "domain": ["farming_patch", "item"], "range": ["place", "item", "facility"], "dst": "required", "cond_group": "forbidden", "reified": false, "notes": "place x type instances; item-variant -> type. The spec's abstract range 'type' is concretized here as place/item/facility."}
+  },
+
+  "atom_types": {
+    "skill_level": {"status": "live", "ref_kind": "skill", "boostable": true, "data_keys": ["boostable"], "notes": "name=subject (skill), threshold=level. >= implied."},
+    "skill_xp": {"status": "live", "ref_kind": "skill", "data_keys": [], "notes": "Banked XP threshold."},
+    "combat_level": {"status": "live", "ref_kind": null, "data_keys": [], "notes": "Aggregate combat level threshold."},
+    "quest": {"status": "live", "ref_kind": "quest", "three_state": true, "data_keys": ["state", "step"], "notes": "3-state ORDERED enum (not_started < in_progress < completed) + optional step (decision 7)."},
+    "achievement_diary": {"status": "live", "ref_kind": "diary", "three_state": true, "data_keys": ["state"], "notes": "Diary-tier completion (3-state)."},
+    "combat_achievement": {"status": "live", "ref_kind": "combat_achievement", "data_keys": ["state"], "notes": "Per-task binary completion."},
+    "combat_achievement_points": {"status": "live", "ref_kind": null, "data_keys": [], "notes": "Accumulator tier total (points-based tier). Deliberately split from per-task combat_achievement."},
+    "item": {"status": "live", "ref_kind": "item", "data_keys": [], "notes": "Owned count (qty). ref_node = item-variant."},
+    "equipped": {"status": "reserved", "ref_kind": "item", "data_keys": [], "notes": "Worn (!= owned) — first-class (decision 4)."},
+    "kill_count": {"status": "reserved", "ref_kind": "monster", "data_keys": [], "notes": "Killcount threshold. Typically session/permanent-tracked."},
+    "quest_points": {"status": "live", "ref_kind": null, "data_keys": [], "notes": "Total QP threshold."},
+    "aggregate_count": {"status": "reserved", "ref_kind": null, "data_keys": ["set_ref"], "notes": "Cardinality of completed members of a set (successor to count_satisfied)."},
+    "account_type": {"status": "live", "ref_kind": null, "data_keys": ["value"], "notes": "Gates on account family (main/ironman/HCIM/GIM/HCGIM/UIM). data.value."},
+    "clue_scrolls": {"status": "live", "ref_kind": null, "data_keys": ["set_ref"], "notes": "Clue completion count."},
+    "slayer_assignment": {"status": "reserved", "ref_kind": null, "data_keys": [], "notes": "On-task gate (location/session_transient scope)."},
+    "wilderness_level": {"status": "reserved", "ref_kind": null, "data_keys": [], "notes": "Coordinate threshold derived from chunk position (§5)."},
+    "teleblocked": {"status": "reserved", "ref_kind": null, "data_keys": [], "notes": "Transient status (session_transient scope) (§5)."},
+    "all_of": {"status": "reserved", "ref_kind": null, "data_keys": ["set_ref"], "notes": "Quantified over a set (every member satisfied)."},
+    "difficulty_state": {"status": "reserved", "ref_kind": "difficulty_config", "data_keys": [], "notes": "Elected/derived difficulty input state (decision 8)."},
+    "raid_level": {"status": "reserved", "ref_kind": null, "data_keys": [], "notes": "ToA-style accumulating raid level threshold."},
+    "is_unlocked": {"status": "legacy", "ref_kind": null, "successor": "composed requires (D5)", "data_keys": [], "notes": "v1 derived/structural atom; v2 composes the requires closure instead. Not stored in any committed condition_group."}
+  },
+
+  "legacy_atom_types": {
+    "count_satisfied": {"status": "legacy", "successor": "aggregate_count", "ref_kind": null, "data_keys": ["set_ref"], "notes": "v1 cardinality-of-completed-set atom (goal:*-cape). Same shape as aggregate_count."},
+    "gear_loadout": {"status": "legacy", "successor": "all_of(equipped/item over a set) / member_of", "ref_kind": "gear_loadout", "data_keys": [], "notes": "v1 'loadout composition satisfied' atom. v2 expresses the same via a quantified all_of over the set's item/equipped atoms."}
+  },
+
+  "atom_modifiers": {
+    "scope_lifetime": {"values": ["permanent", "session_transient", "location_scoped", "time_window"], "notes": "Single highest-leverage tag (§4): prevents false 'you can do X permanently' claims (on-task, killcount, teleblock, random-event clocks). Default = permanent."},
+    "subject": {"values": ["self", "team_sum", "team_each", "party_size"], "notes": "Group content (§4)."},
+    "boostable": {"values": ["not_boostable", "boost_at_acquire", "boost_at_use"], "notes": "Stat-boost applicability (§4)."},
+    "gate_type": {"values": {"combat": ["access", "damage", "kill"], "production": ["make", "craft", "smith", "cook", "build"]}, "open_verb_set": true, "notes": "On hard requires (decision 7). Production verbs are structured by recipe requires(=capability) vs consumes(=resource). Open set."},
+    "game_mode": {"notes": "Scope flag (decision 8): atoms can gate on game_mode == X like account_type."}
+  },
+
+  "vocab": {
+    "recommended_strength": ["required_for_survival", "strongly_recommended", "optional"],
+    "drop_type_note": "Observable rate only (Option-A). The loot MECHANISM (RDT/GDT vs direct vs on-task) is NOT fabricated.",
+    "effect_kind": ["stat_multiplier", "rate_multiplier", "capacity_change", "fee_waiver", "behavior_toggle", "recurring_resource", "access"],
+    "consumes_role": ["material", "subject"],
+    "degrade_terminal": ["destroyed", "reverts_to", "broken"],
+    "degrade_trigger": ["per_use", "per_hit"]
+  }
+}

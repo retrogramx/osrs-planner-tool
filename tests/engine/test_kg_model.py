@@ -1,4 +1,6 @@
 import dataclasses
+import json
+import pathlib
 
 import pytest
 
@@ -6,6 +8,7 @@ from osrs_planner.engine.kg.model import (
     NodeKind, EdgeType, Op, AtomType,
     Node, ConditionAtom, ConditionGroup, Edge,
 )
+from osrs_planner.engine.kg.json_store import edge_to_dict, edge_from_dict
 
 
 def test_node_kind_members_match_schema_taxonomy():
@@ -13,6 +16,7 @@ def test_node_kind_members_match_schema_taxonomy():
         "skill", "item", "monster", "quest", "access", "region",
         "account_type", "gear_loadout", "activity", "diary",
         "combat_achievement", "minigame", "clog_slot", "goal",
+        "recipe", "equipment_bonuses",
     }
 
 
@@ -24,7 +28,9 @@ def test_node_kind_is_str_enum():
 def test_edge_type_members_match_schema():
     assert {e.value for e in EdgeType} == {
         "requires", "grants", "drops", "located_in", "gated_by",
-        "effect", "progress_towards",
+        "effect", "progress_towards", "supersedes", "same_entity",
+        "consumes", "produces", "degrades_to", "repairs",
+        "has_bonuses",
     }
 
 
@@ -39,6 +45,7 @@ def test_atom_type_locked_set_includes_gear_loadout_and_ca_split():
         "achievement_diary", "combat_achievement", "item",
         "is_unlocked", "gear_loadout", "kill_count", "quest_points",
         "account_type", "clue_scrolls", "combat_achievement_points",
+        "count_satisfied",
     }
     # the de-overload (schema §"combat_achievement scope"): the binary
     # per-task atom and the accumulator tier-points atom are DISTINCT members.
@@ -198,3 +205,69 @@ def test_edge_is_frozen():
     e = Edge(id=9004, type=EdgeType.REQUIRES, src="npc:7221", dst="access:scurrius-lair")
     with pytest.raises(dataclasses.FrozenInstanceError):
         e.dst = "region:varrock"  # type: ignore[misc]
+
+
+def test_same_entity_edge_type_exists_and_roundtrips():
+    assert EdgeType.SAME_ENTITY.value == "same_entity"
+    e = Edge(id=1, type=EdgeType.SAME_ENTITY, src="item:1712", dst="item:amulet-of-glory",
+             cond_group=None, data={"basis": "x"})
+    assert edge_from_dict(edge_to_dict(e)) == e
+
+
+def test_schema_declares_same_entity_live():
+    with open(pathlib.Path(__file__).resolve().parents[2] / "kg" / "schema.json") as f:
+        schema = json.load(f)
+    assert schema["edge_kinds"]["same_entity"]["status"] == "live"
+    assert "is_page" in schema["node_kinds"]["item"]["data_keys"]
+
+
+def test_recipe_kind_and_consumes_produces_edges_exist():
+    from osrs_planner.engine.kg.model import NodeKind, EdgeType
+    assert NodeKind.RECIPE.value == "recipe"
+    assert EdgeType.CONSUMES.value == "consumes"
+    assert EdgeType.PRODUCES.value == "produces"
+
+
+def test_schema_declares_recipe_consumes_produces_live():
+    schema = json.loads((pathlib.Path(__file__).resolve().parents[2] / "kg" / "schema.json").read_text())
+    assert schema["node_kinds"]["recipe"]["status"] == "live"
+    assert schema["edge_kinds"]["consumes"]["status"] == "live"
+    assert schema["edge_kinds"]["produces"]["status"] == "live"
+    assert "charge_yield" in schema["node_kinds"]["recipe"]["data_keys"]
+    assert schema["vocab"]["consumes_role"] == ["material", "subject"]
+
+
+def test_degrades_to_edge_exists_and_declared_live():
+    from osrs_planner.engine.kg.model import EdgeType
+    assert EdgeType.DEGRADES_TO.value == "degrades_to"
+    import json, pathlib
+    schema = json.loads((pathlib.Path(__file__).resolve().parents[2] / "kg" / "schema.json").read_text())
+    d = schema["edge_kinds"]["degrades_to"]
+    assert d["status"] == "live" and d["domain"] == ["item"] and d["range"] == ["item"] and d["dst"] == "optional"
+    assert d["cond_group"] == "forbidden"
+    assert d["reified"] is True
+    assert schema["vocab"]["degrade_terminal"] == ["destroyed", "reverts_to", "broken"]
+    assert schema["vocab"]["degrade_trigger"] == ["per_use", "per_hit"]
+
+
+def test_repairs_edge_exists_and_declared_live():
+    from osrs_planner.engine.kg.model import EdgeType
+    assert EdgeType.REPAIRS.value == "repairs"
+    import json, pathlib
+    schema = json.loads((pathlib.Path(__file__).resolve().parents[2] / "kg" / "schema.json").read_text())
+    d = schema["edge_kinds"]["repairs"]
+    assert d["status"] == "live" and d["domain"] == ["item"] and d["range"] == ["item"]
+    assert d["dst"] == "required" and d["cond_group"] == "forbidden" and d["reified"] is False
+
+
+def test_equipment_bonuses_and_has_bonuses_are_live():
+    from osrs_planner.engine.kg.model import NodeKind, EdgeType
+    assert NodeKind.EQUIPMENT_BONUSES.value == "equipment_bonuses"
+    assert EdgeType.HAS_BONUSES.value == "has_bonuses"
+    import json, pathlib
+    schema = json.loads((pathlib.Path(__file__).resolve().parents[2] / "kg" / "schema.json").read_text())
+    assert schema["node_kinds"]["equipment_bonuses"]["status"] == "live"
+    hb = schema["edge_kinds"]["has_bonuses"]
+    assert hb["status"] == "live" and hb["domain"] == ["item"] and hb["range"] == ["equipment_bonuses"]
+    assert hb["dst"] == "required" and hb["reified"] is False
+    assert hb["cond_group"] == "forbidden"

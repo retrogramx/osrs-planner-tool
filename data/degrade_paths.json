@@ -1,0 +1,25 @@
+{
+  "_provenance": {
+    "note": "curated item degradation paths (downgrade ladders); editorial — owner-reviewed",
+    "license": "CC BY-NC-SA 3.0",
+    "accessed": "2026-06-25"
+  },
+  "records": [
+    { "slug": "ring-of-dueling-degrade", "page": "Ring of dueling", "trigger": "per_use",
+      "sequence": [2552, 2554, 2556, 2558, 2560, 2562, 2564, 2566], "terminal": "destroyed",
+      "source_url": "https://oldschool.runescape.wiki/w/Ring_of_dueling",
+      "source_token": "Your ring of dueling crumbles to dust." },
+    { "slug": "amulet-of-glory-degrade", "page": "Amulet of glory", "trigger": "per_use",
+      "sequence": [11978, 11976, 1712, 1710, 1708, 1706], "terminal": "reverts_to", "terminal_item": 1704,
+      "source_url": "https://oldschool.runescape.wiki/w/Amulet_of_glory",
+      "source_token": "After at least one charge has been used, an amulet of glory can be recharged by using it on either the Fountain of Uhld or the Fountain of Heroes." },
+    { "slug": "scythe-of-vitur-degrade", "page": "Scythe of vitur", "trigger": "per_hit",
+      "sequence": [22325], "terminal": "reverts_to", "terminal_item": 22486,
+      "source_url": "https://oldschool.runescape.wiki/w/Scythe_of_vitur",
+      "source_token": "The fully charged scythe will last for 16.66 hours of continuous combat before reverting to its uncharged form." },
+    { "slug": "dharoks-helm-degrade", "page": "Dharok's helm", "trigger": "per_hit",
+      "sequence": [4716, 4880, 4881, 4882, 4883], "terminal": "broken", "terminal_item": 4884,
+      "source_url": "https://oldschool.runescape.wiki/w/Dharok's_helm",
+      "source_token": "Eventually it will degrade to Dharok's helm 75, then 50, then 25 and finally 0 at which point the equipment will be unusable until repaired." }
+  ]
+}

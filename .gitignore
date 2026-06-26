@@ -16,4 +16,7 @@ data/raw/**
 !data/raw/dropsline_*.json
 # Quest reward source-grounding cache IS committed provenance (offline verifier)
 !data/raw/quest_reward_blocks.json
+# Diary reward source-grounding cache IS committed provenance (offline verifier;
+# rebuilt from achievement_diaries.json's committed wiki reward prose)
+!data/raw/diary_reward_blocks.json
 .superpowers/
