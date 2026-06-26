@@ -859,7 +859,13 @@
       "operator": "npc:aubury",
       "currency": "coins",
       "source_url": "https://oldschool.runescape.wiki/w/Varrock",
-      "sells": []
+      "sells": [
+        {
+          "item_name": "Runes (most types)",
+          "item_id": null,
+          "source_token": "Sells most types of runes"
+        }
+      ]
     },
     {
       "id": "shop:baraeks-fur-stall",
@@ -885,7 +891,21 @@
       "operator": "npc:fancy-clothes-store-owner",
       "currency": "coins",
       "source_url": "https://oldschool.runescape.wiki/w/Varrock",
-      "sells": []
+      "sells": [
+        {
+          "item_name": "Camouflage and hunter armour (from furs)",
+          "item_id": null,
+          "source_token": "converts furs into camouflage and hunter armour"
+        },
+        {
+          "item_name": "Hunter armor",
+          "item_id": null
+        },
+        {
+          "item_name": "Camouflage gear",
+          "item_id": null
+        }
+      ]
     },
     {
       "id": "shop:horviks-armour-shop",
@@ -895,7 +915,28 @@
       "operator": "npc:horvik",
       "currency": "coins",
       "source_url": "https://oldschool.runescape.wiki/w/Varrock",
-      "sells": []
+      "sells": [
+        {
+          "item_name": "Platebodies",
+          "item_id": null,
+          "source_token": "platebodies and chainbodies as well as platelegs and some leather armour"
+        },
+        {
+          "item_name": "Chainbodies",
+          "item_id": null,
+          "source_token": "platebodies and chainbodies as well as platelegs and some leather armour"
+        },
+        {
+          "item_name": "Platelegs",
+          "item_id": null,
+          "source_token": "platebodies and chainbodies as well as platelegs and some leather armour"
+        },
+        {
+          "item_name": "Leather armour",
+          "item_id": null,
+          "source_token": "platebodies and chainbodies as well as platelegs and some leather armour"
+        }
+      ]
     },
     {
       "id": "shop:lowes-archery-emporium",
@@ -905,7 +946,23 @@
       "operator": "npc:lowe",
       "currency": "coins",
       "source_url": "https://oldschool.runescape.wiki/w/Varrock",
-      "sells": []
+      "sells": [
+        {
+          "item_name": "Bows",
+          "item_id": null,
+          "source_token": "bows, crossbows, and their corresponding ammunition"
+        },
+        {
+          "item_name": "Crossbows",
+          "item_id": null,
+          "source_token": "bows, crossbows, and their corresponding ammunition"
+        },
+        {
+          "item_name": "Ammunition",
+          "item_id": null,
+          "source_token": "bows, crossbows, and their corresponding ammunition"
+        }
+      ]
     },
     {
       "id": "shop:thessalias-fine-clothes",
@@ -915,7 +972,28 @@
       "operator": "npc:thessalia",
       "currency": "coins",
       "source_url": "https://oldschool.runescape.wiki/w/Varrock",
-      "sells": []
+      "sells": [
+        {
+          "item_name": "Robes",
+          "item_id": null,
+          "source_token": "robes, capes, gloves, and boots"
+        },
+        {
+          "item_name": "Capes",
+          "item_id": null,
+          "source_token": "robes, capes, gloves, and boots"
+        },
+        {
+          "item_name": "Gloves",
+          "item_id": null,
+          "source_token": "robes, capes, gloves, and boots"
+        },
+        {
+          "item_name": "Boots",
+          "item_id": null,
+          "source_token": "robes, capes, gloves, and boots"
+        }
+      ]
     },
     {
       "id": "shop:varrock-apothecary",
@@ -935,6 +1013,14 @@
           "item_name": "Energy potion",
           "item_id": null,
           "source_token": "creates strength potions and energy potions for free-to-play players with proper ingredients"
+        },
+        {
+          "item_name": "Strength potions",
+          "item_id": null
+        },
+        {
+          "item_name": "Energy potions",
+          "item_id": null
         }
       ]
     },
@@ -948,9 +1034,22 @@
       "source_url": "https://oldschool.runescape.wiki/w/Varrock",
       "sells": [
         {
+          "item_name": "General store goods",
+          "item_id": null,
+          "source_token": "popular general merchant"
+        },
+        {
           "item_name": "Newcomer map",
           "item_id": null,
           "source_token": "new players can purchase newcomer maps here"
+        },
+        {
+          "item_name": "Low-level items",
+          "item_id": null
+        },
+        {
+          "item_name": "Newcomer maps",
+          "item_id": null
         }
       ]
     },
@@ -962,7 +1061,35 @@
       "operator": "npc:shop-keeper-swordshop",
       "currency": "coins",
       "source_url": "https://oldschool.runescape.wiki/w/Varrock",
-      "sells": []
+      "sells": [
+        {
+          "item_name": "Daggers (bronze through adamant)",
+          "item_id": null,
+          "source_token": "Bronze through adamant daggers, swords, and longswords"
+        },
+        {
+          "item_name": "Swords (bronze through adamant)",
+          "item_id": null,
+          "source_token": "Bronze through adamant daggers, swords, and longswords"
+        },
+        {
+          "item_name": "Longswords (bronze through adamant)",
+          "item_id": null,
+          "source_token": "Bronze through adamant daggers, swords, and longswords"
+        },
+        {
+          "item_name": "Bronze, iron, steel, black, mithril, adamant daggers",
+          "item_id": null
+        },
+        {
+          "item_name": "Swords",
+          "item_id": null
+        },
+        {
+          "item_name": "Longswords",
+          "item_id": null
+        }
+      ]
     },
     {
       "id": "shop:zaffs-superior-staffs",
@@ -1075,6 +1202,10 @@
           "source_token": "Elite | 120 | 7,000 coins"
         },
         {
+          "item_name": "Staves",
+          "item_id": null
+        },
+        {
           "item_name": "Battlestaff",
           "item_id": null,
           "condition": {
@@ -1103,7 +1234,13 @@
       "located_in": "place:varrock",
       "operator": "npc:bartender-blue-moon-inn",
       "source_url": "https://oldschool.runescape.wiki/w/Varrock",
-      "sells": []
+      "sells": [
+        {
+          "item_name": "Beer",
+          "item_id": null,
+          "source_token": "Sells beer"
+        }
+      ]
     },
     {
       "id": "shop:dancing-donkey-inn",
@@ -1112,7 +1249,13 @@
       "located_in": "place:varrock",
       "operator": "npc:bartender-dancing-donkey-inn",
       "source_url": "https://oldschool.runescape.wiki/w/Varrock",
-      "sells": []
+      "sells": [
+        {
+          "item_name": "Beer",
+          "item_id": null,
+          "source_token": "Sells beer"
+        }
+      ]
     },
     {
       "id": "shop:jolly-boar-inn",
@@ -1121,7 +1264,13 @@
       "located_in": "place:varrock",
       "operator": "npc:bartender-jolly-boar-inn",
       "source_url": "https://oldschool.runescape.wiki/w/Varrock",
-      "sells": []
+      "sells": [
+        {
+          "item_name": "Beer",
+          "item_id": null,
+          "source_token": "Sells beer"
+        }
+      ]
     },
     {
       "id": "shop:ratpit-bar",
@@ -1131,6 +1280,11 @@
       "operator": "npc:barman-ratpit-bar",
       "source_url": "https://oldschool.runescape.wiki/w/Varrock",
       "sells": [
+        {
+          "item_name": "Beer",
+          "item_id": null,
+          "source_token": "Sells beer and stew"
+        },
         {
           "item_name": "Stew",
           "item_id": null,
@@ -1145,7 +1299,14 @@
       "located_in": "place:varrock",
       "operator": "npc:tea-seller",
       "source_url": "https://oldschool.runescape.wiki/w/Varrock",
-      "sells": []
+      "sells": [
+        {
+          "item_name": "Cup of tea",
+          "item_id": null,
+          "price_each": 10,
+          "source_token": "tea (10 coins)"
+        }
+      ]
     }
   ],
   "monsters": [

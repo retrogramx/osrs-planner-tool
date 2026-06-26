@@ -42,7 +42,14 @@ def make_item_resolver(dict_records):
                 return None
             canon = [r for r in cands if r.get("is_canonical")] or cands
             ids = {r["item_id"] for r in canon}
-            return next(iter(ids)) if len(ids) == 1 else None  # ambiguous -> None (flagged)
+            if len(ids) == 1:
+                return next(iter(ids))
+            # multiple canonical ids: prefer the record whose page_name is the bare name
+            # (no parenthetical qualifier) -> Beer page "Beer" not "Beer (Player-owned house)"
+            exact = {r["item_id"] for r in canon if r.get("page_name") == n}
+            if len(exact) == 1:
+                return next(iter(exact))
+            return None  # still ambiguous -> None (reported as a residual)
         hit = _lookup(name)
         if hit is None and name.endswith(" (noted)"):
             hit = _lookup(name[: -len(" (noted)")])  # noted items share the base item_id

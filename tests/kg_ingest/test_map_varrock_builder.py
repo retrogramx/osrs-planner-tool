@@ -35,6 +35,21 @@ def test_resolver_canonical_match_and_miss():
     assert r("Battlestaff (noted)") == 1391
     assert r("Nonexistent Doohickey") is None
 
+def test_resolver_page_name_disambiguation():
+    # Two canonical "Beer" records differing only by page_name: the bare-name page wins.
+    beer_dict = [
+        {"item_id": 1917, "name": "Beer", "page_name": "Beer", "is_canonical": True, "is_variant": False, "members": False},
+        {"item_id": 7740, "name": "Beer", "page_name": "Beer (Player-owned house)", "is_canonical": True, "is_variant": False, "members": True},
+    ]
+    r = make_item_resolver(beer_dict)
+    assert r("Beer") == 1917                          # bare-page "Beer" disambiguates over the POH variant
+    # If NO record has a bare-name page, it stays ambiguous -> None (reported residual).
+    ambiguous = [
+        {"item_id": 10, "name": "Widget", "page_name": "Widget (A)", "is_canonical": True, "is_variant": False, "members": False},
+        {"item_id": 11, "name": "Widget", "page_name": "Widget (B)", "is_canonical": True, "is_variant": False, "members": False},
+    ]
+    assert make_item_resolver(ambiguous)("Widget") is None
+
 def test_places_npcs_shops_and_located_in():
     nodes, edges, _ = build_map(MAP, make_item_resolver(DICT), {"region:varrock"})
     kinds = {n.id: n.kind for n in nodes}
