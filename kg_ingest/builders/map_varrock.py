@@ -36,12 +36,17 @@ def make_item_resolver(dict_records):
                 by_name[key].append(r)
 
     def resolve(name: str):
-        cands = by_name.get(name) or []
-        if not cands:
-            return None
-        canon = [r for r in cands if r.get("is_canonical")] or cands
-        ids = {r["item_id"] for r in canon}
-        return next(iter(ids)) if len(ids) == 1 else None  # ambiguous -> None (flagged)
+        def _lookup(n):
+            cands = by_name.get(n) or []
+            if not cands:
+                return None
+            canon = [r for r in cands if r.get("is_canonical")] or cands
+            ids = {r["item_id"] for r in canon}
+            return next(iter(ids)) if len(ids) == 1 else None  # ambiguous -> None (flagged)
+        hit = _lookup(name)
+        if hit is None and name.endswith(" (noted)"):
+            hit = _lookup(name[: -len(" (noted)")])  # noted items share the base item_id
+        return hit
 
     return resolve
 
@@ -102,14 +107,8 @@ def build_map(map_data, resolve, region_ids):
         if sh.get("located_in"):
             edges.append(Edge(id=_edge_id(sh["id"], "located_in"), type=EdgeType.LOCATED_IN,
                               src=sh["id"], dst=sh["located_in"], cond_group=None, data={}))
-        # emit noted sells first so that non-noted overwrites in any keyed lookup
-        sorted_sells = sorted(enumerate(sh.get("sells", [])), key=lambda x: (not x[1].get("noted"), x[0]))
-        for i, offer in sorted_sells:
-            item_name = offer["item_name"]
-            iid = resolve(item_name)
-            if iid is None and item_name.endswith(" (noted)"):
-                # noted items share the same item_id as the base item
-                iid = resolve(item_name[: -len(" (noted)")])
+        for i, offer in enumerate(sh.get("sells", [])):
+            iid = resolve(offer["item_name"])
             if iid is None:
                 continue  # unresolved -> skipped; verify_map.py reports it
             cg = None

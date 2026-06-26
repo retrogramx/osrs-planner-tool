@@ -32,6 +32,7 @@ MAP = {
 def test_resolver_canonical_match_and_miss():
     r = make_item_resolver(DICT)
     assert r("Battlestaff") == 1391
+    assert r("Battlestaff (noted)") == 1391
     assert r("Nonexistent Doohickey") is None
 
 def test_places_npcs_shops_and_located_in():
@@ -48,16 +49,13 @@ def test_places_npcs_shops_and_located_in():
 
 def test_sells_resolution_skip_and_conditional_gate():
     nodes, edges, groups = build_map(MAP, make_item_resolver(DICT), set())
-    sells = {e.dst: e for e in edges if e.type is EdgeType.SELLS}
-    assert "item:1391" in sells and "item:1381" in sells     # resolved
-    assert all(e.src == "shop:zaffs-superior-staffs" for e in edges if e.type is EdgeType.SELLS)
-    assert len([e for e in edges if e.type is EdgeType.SELLS]) == 3   # the unresolvable one is SKIPPED
-    # the gated Battlestaff sell carries a cond_group -> a group with a QUEST atom
-    gated = sells["item:1391"]
-    assert gated.cond_group is not None
-    g = groups[gated.cond_group]
-    assert g.op is Op.AND and g.children[0].atom_type is AtomType.QUEST
-    assert g.children[0].ref_node == "quest:what-lies-below" and g.children[0].data["state"] == "in_progress"
-    # the diary-gated noted sell -> ACHIEVEMENT_DIARY atom, ref diary:varrock:hard
-    diary = groups[[e for e in edges if e.type is EdgeType.SELLS and e.data.get("noted")][0].cond_group]
-    assert diary.children[0].atom_type is AtomType.ACHIEVEMENT_DIARY and diary.children[0].ref_node == "diary:varrock:hard"
+    sells = [e for e in edges if e.type is EdgeType.SELLS]
+    assert {e.dst for e in sells} == {"item:1391", "item:1381"}      # "Battlestaff (noted)" strips to 1391
+    assert all(e.src == "shop:zaffs-superior-staffs" for e in sells)
+    assert len(sells) == 3                                            # Nonexistent Doohickey SKIPPED
+    quest = next(e for e in sells if e.cond_group and groups[e.cond_group].children[0].atom_type is AtomType.QUEST)
+    qg = groups[quest.cond_group]
+    assert qg.op is Op.AND and qg.children[0].ref_node == "quest:what-lies-below" and qg.children[0].data["state"] == "in_progress"
+    diary = next(e for e in sells if e.data.get("noted"))
+    dg = groups[diary.cond_group]
+    assert dg.children[0].atom_type is AtomType.ACHIEVEMENT_DIARY and dg.children[0].ref_node == "diary:varrock:hard"
