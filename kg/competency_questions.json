@@ -13,5 +13,8 @@
     ,{ "id": "cq-ring-of-dueling-destroyed",
       "question": "Is a Ring of dueling destroyed when its last charge is used?",
       "method": "is_destroyed", "target": "item:ring-of-dueling", "expect_min": 1 }
+    ,{ "id": "cq-dharoks-helm-repairable",
+      "question": "Can a broken Dharok's helm be repaired?",
+      "method": "is_repairable", "target": "item:4884", "expect_min": 1 }
   ]
 }

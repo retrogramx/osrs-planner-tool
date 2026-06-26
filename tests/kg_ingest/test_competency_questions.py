@@ -25,6 +25,10 @@ def _is_destroyed(store, target):
     return {e.src for e in store.edges
             if e.type is EdgeType.DEGRADES_TO and e.dst is None and e.src in variants}
 
+def _is_repairable(store, target):
+    # the repaired-item set reachable from the broken target via a repairs edge
+    return {e.dst for e in store.edges if e.type is EdgeType.REPAIRS and e.src == target}
+
 def test_all_competency_questions_pass():
     store = JsonKGStore.from_dir(KG)
     with open(ROOT / "kg" / "competency_questions.json") as f:
@@ -39,6 +43,8 @@ def test_all_competency_questions_pass():
             answer = _recipe_materials(store, cq["target"])
         elif cq["method"] == "is_destroyed":
             answer = _is_destroyed(store, cq["target"])
+        elif cq["method"] == "is_repairable":
+            answer = _is_repairable(store, cq["target"])
         else:
             raise AssertionError(f"unknown method {cq['method']!r}")
         assert len(answer) >= cq["expect_min"], f"{cq['id']}: got {len(answer)} < {cq['expect_min']}"
