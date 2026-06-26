@@ -29,7 +29,7 @@ def test_edge_type_members_match_schema():
     assert {e.value for e in EdgeType} == {
         "requires", "grants", "drops", "located_in", "gated_by",
         "effect", "progress_towards", "supersedes", "same_entity",
-        "consumes", "produces", "degrades_to",
+        "consumes", "produces", "degrades_to", "repairs",
     }
 
 
@@ -247,3 +247,13 @@ def test_degrades_to_edge_exists_and_declared_live():
     assert d["reified"] is True
     assert schema["vocab"]["degrade_terminal"] == ["destroyed", "reverts_to", "broken"]
     assert schema["vocab"]["degrade_trigger"] == ["per_use", "per_hit"]
+
+
+def test_repairs_edge_exists_and_declared_live():
+    from osrs_planner.engine.kg.model import EdgeType
+    assert EdgeType.REPAIRS.value == "repairs"
+    import json, pathlib
+    schema = json.loads((pathlib.Path(__file__).resolve().parents[2] / "kg" / "schema.json").read_text())
+    d = schema["edge_kinds"]["repairs"]
+    assert d["status"] == "live" and d["domain"] == ["item"] and d["range"] == ["item"]
+    assert d["dst"] == "required" and d["cond_group"] == "forbidden" and d["reified"] is False

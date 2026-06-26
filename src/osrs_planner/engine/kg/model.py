@@ -47,6 +47,7 @@ class EdgeType(str, Enum):
     CONSUMES = "consumes"              # recipe -> item input (destroyed/transformed); reified {qty, role}
     PRODUCES = "produces"              # recipe -> item output; reified {qty}
     DEGRADES_TO = "degrades_to"        # downgrade ladder through use (inverse of supersedes); dst=None = destroyed
+    REPAIRS = "repairs"                # restore-from-broken (inverse of degrades_to's broken terminal); item->item
 
 
 class Op(str, Enum):
