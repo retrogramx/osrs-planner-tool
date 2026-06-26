@@ -1,0 +1,129 @@
+"""build_map — the connective Varrock vertical (slice 6).
+
+Reads data/map/varrock.json (owner-authored) and emits the containment/economic
+spine: place/npc(operators)/shop nodes + located_in/operates/sells/same_entity
+edges. Resolves item_name->item_id against item_dictionary (canonical match;
+skips + the verifier reports unresolved). The 7 gated sells become a cond_group
+on the sells edge, reusing the existing QUEST/ACHIEVEMENT_DIARY atoms. These edges
+are place/npc/shop-src (NOT item-src) -> assemble re-keys them in their own call.
+"""
+from __future__ import annotations
+
+from collections import defaultdict
+
+from osrs_planner.engine.kg.model import (
+    AtomType, ConditionAtom, ConditionGroup, Edge, EdgeType, Node, NodeKind, Op,
+)
+from kg_ingest.ids import _stable_hash, item_id, slugify
+
+_EDGE_BAND = 0xE0000000
+_GROUP_BAND = 0xD0000000
+
+
+def _edge_id(src_id: str, slot: str) -> int:
+    return _EDGE_BAND | _stable_hash(f"{src_id}#edge#{slot}")
+
+
+def _gid(owner_id: str, slot: str) -> int:
+    return _GROUP_BAND | _stable_hash(f"{owner_id}#group#{slot}")
+
+
+def make_item_resolver(dict_records):
+    by_name: dict[str, list[dict]] = defaultdict(list)
+    for r in dict_records:
+        for key in (r.get("name"), r.get("page_name")):
+            if key:
+                by_name[key].append(r)
+
+    def resolve(name: str):
+        cands = by_name.get(name) or []
+        if not cands:
+            return None
+        canon = [r for r in cands if r.get("is_canonical")] or cands
+        ids = {r["item_id"] for r in canon}
+        return next(iter(ids)) if len(ids) == 1 else None  # ambiguous -> None (flagged)
+
+    return resolve
+
+
+def _diary_ref_to_id(ref: str) -> str:
+    region_part, tier = ref.rsplit(" - ", 1) if " - " in ref else (ref, "Easy")
+    region = slugify(region_part.replace(" Diary", "").strip())
+    return f"diary:{region}:{tier.strip().lower()}"
+
+
+def _condition_atom(cond: dict):
+    t, ref, state = cond.get("type"), cond.get("ref"), cond.get("state")
+    if t == "quest":
+        return ConditionAtom(atom_type=AtomType.QUEST, ref_node=f"quest:{slugify(ref)}", data={"state": state})
+    if t == "achievement_diary":
+        return ConditionAtom(atom_type=AtomType.ACHIEVEMENT_DIARY, ref_node=_diary_ref_to_id(ref), data={"state": state})
+    return None  # unknown type -> caller skips + verifier flags
+
+
+def _slug(node_id: str) -> str:
+    return node_id.split(":", 1)[1]
+
+
+def build_map(map_data, resolve, region_ids):
+    nodes: list[Node] = []
+    edges: list[Edge] = []
+    groups: dict[int, ConditionGroup] = {}
+
+    # places (the containment hierarchy) + same_entity bridge to a legacy region node
+    for p in map_data["places"]:
+        data = {k: p[k] for k in ("place_type", "ruled_by", "faction") if p.get(k) is not None}
+        nodes.append(Node(id=p["id"], kind=NodeKind.PLACE, name=p["name"], slug=_slug(p["id"]), data=data))
+        if p.get("located_in"):
+            edges.append(Edge(id=_edge_id(p["id"], "located_in"), type=EdgeType.LOCATED_IN,
+                              src=p["id"], dst=p["located_in"], cond_group=None, data={}))
+        region = f"region:{_slug(p['id'])}"
+        if region in region_ids:
+            edges.append(Edge(id=_edge_id(p["id"], "same_entity"), type=EdgeType.SAME_ENTITY,
+                              src=p["id"], dst=region, cond_group=None, data={}))
+
+    # npcs: only the shop operators
+    npc_by_id = {n["id"]: n for n in map_data["npcs"]}
+    for nid in sorted({sh["operator"] for sh in map_data["shops"] if sh.get("operator")}):
+        n = npc_by_id[nid]
+        nodes.append(Node(id=nid, kind=NodeKind.NPC, name=n["name"], slug=_slug(nid),
+                          data={"role": n.get("role")}))
+        if n.get("located_in"):
+            edges.append(Edge(id=_edge_id(nid, "located_in"), type=EdgeType.LOCATED_IN,
+                              src=nid, dst=n["located_in"], cond_group=None, data={}))
+        for shid in n.get("operates", []):
+            edges.append(Edge(id=_edge_id(nid, f"operates#{shid}"), type=EdgeType.OPERATES,
+                              src=nid, dst=shid, cond_group=None, data={}))
+
+    # shops + sells (item resolution + conditional gates)
+    for sh in map_data["shops"]:
+        nodes.append(Node(id=sh["id"], kind=NodeKind.SHOP, name=sh["name"], slug=_slug(sh["id"]),
+                          data={"operator": sh.get("operator"), "shop_type": sh.get("shop_type")}))
+        if sh.get("located_in"):
+            edges.append(Edge(id=_edge_id(sh["id"], "located_in"), type=EdgeType.LOCATED_IN,
+                              src=sh["id"], dst=sh["located_in"], cond_group=None, data={}))
+        # emit noted sells first so that non-noted overwrites in any keyed lookup
+        sorted_sells = sorted(enumerate(sh.get("sells", [])), key=lambda x: (not x[1].get("noted"), x[0]))
+        for i, offer in sorted_sells:
+            item_name = offer["item_name"]
+            iid = resolve(item_name)
+            if iid is None and item_name.endswith(" (noted)"):
+                # noted items share the same item_id as the base item
+                iid = resolve(item_name[: -len(" (noted)")])
+            if iid is None:
+                continue  # unresolved -> skipped; verify_map.py reports it
+            cg = None
+            if offer.get("condition"):
+                atom = _condition_atom(offer["condition"])
+                if atom is None:
+                    continue  # unknown condition type -> skipped; verifier flags
+                gid = _gid(sh["id"], f"sell{i}")
+                groups[gid] = ConditionGroup(id=gid, op=Op.AND, parent=None, children=[atom])
+                cg = gid
+            data = {"source_token": offer.get("source_token")}
+            if offer.get("noted"):
+                data["noted"] = True
+            edges.append(Edge(id=_edge_id(sh["id"], f"sell#{i}"), type=EdgeType.SELLS,
+                              src=sh["id"], dst=item_id(iid), cond_group=cg, data=data))
+
+    return nodes, edges, groups
