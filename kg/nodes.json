@@ -4327,6 +4327,223 @@
   },
   {
     "data": {
+      "item_id": 1379,
+      "slot": "weapon",
+      "stats": {
+        "crush_attack_bonus": 7,
+        "crush_defence_bonus": 1,
+        "magic_attack_bonus": 4,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 4,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": -1,
+        "slash_defence_bonus": 3,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 2,
+        "strength_bonus": 3
+      },
+      "weapon": {
+        "combat_style": "Staff",
+        "weapon_attack_range": "1",
+        "weapon_attack_speed": 5
+      }
+    },
+    "id": "equipment_bonuses:1379",
+    "kind": "equipment_bonuses",
+    "name": "Staff (equipment bonuses)",
+    "slug": "equipment-bonuses-1379"
+  },
+  {
+    "data": {
+      "item_id": 1381,
+      "slot": "weapon",
+      "stats": {
+        "crush_attack_bonus": 7,
+        "crush_defence_bonus": 1,
+        "magic_attack_bonus": 10,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 10,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": -1,
+        "slash_defence_bonus": 3,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 2,
+        "strength_bonus": 3
+      },
+      "weapon": {
+        "combat_style": "Staff",
+        "weapon_attack_range": "1",
+        "weapon_attack_speed": 5
+      }
+    },
+    "id": "equipment_bonuses:1381",
+    "kind": "equipment_bonuses",
+    "name": "Staff of air (equipment bonuses)",
+    "slug": "equipment-bonuses-1381"
+  },
+  {
+    "data": {
+      "item_id": 1383,
+      "slot": "weapon",
+      "stats": {
+        "crush_attack_bonus": 7,
+        "crush_defence_bonus": 1,
+        "magic_attack_bonus": 10,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 10,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": -1,
+        "slash_defence_bonus": 3,
+        "stab_attack_bonus": 0,
+        "stab_defence_bonus": 2,
+        "strength_bonus": 3
+      },
+      "weapon": {
+        "combat_style": "Staff",
+        "weapon_attack_range": "1",
+        "weapon_attack_speed": 5
+      }
+    },
+    "id": "equipment_bonuses:1383",
+    "kind": "equipment_bonuses",
+    "name": "Staff of water (equipment bonuses)",
+    "slug": "equipment-bonuses-1383"
+  },
+  {
+    "data": {
+      "item_id": 1385,
+      "slot": "weapon",
+      "stats": {
+        "crush_attack_bonus": 9,
+        "crush_defence_bonus": 1,
+        "magic_attack_bonus": 10,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 10,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": -1,
+        "slash_defence_bonus": 3,
+        "stab_attack_bonus": 1,
+        "stab_defence_bonus": 2,
+        "strength_bonus": 5
+      },
+      "weapon": {
+        "combat_style": "Staff",
+        "weapon_attack_range": "1",
+        "weapon_attack_speed": 5
+      }
+    },
+    "id": "equipment_bonuses:1385",
+    "kind": "equipment_bonuses",
+    "name": "Staff of earth (equipment bonuses)",
+    "slug": "equipment-bonuses-1385"
+  },
+  {
+    "data": {
+      "item_id": 1387,
+      "slot": "weapon",
+      "stats": {
+        "crush_attack_bonus": 9,
+        "crush_defence_bonus": 1,
+        "magic_attack_bonus": 10,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 10,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": -1,
+        "slash_defence_bonus": 3,
+        "stab_attack_bonus": 3,
+        "stab_defence_bonus": 2,
+        "strength_bonus": 6
+      },
+      "weapon": {
+        "combat_style": "Staff",
+        "weapon_attack_range": "1",
+        "weapon_attack_speed": 5
+      }
+    },
+    "id": "equipment_bonuses:1387",
+    "kind": "equipment_bonuses",
+    "name": "Staff of fire (equipment bonuses)",
+    "slug": "equipment-bonuses-1387"
+  },
+  {
+    "data": {
+      "item_id": 1389,
+      "slot": "weapon",
+      "stats": {
+        "crush_attack_bonus": 10,
+        "crush_defence_bonus": 1,
+        "magic_attack_bonus": 10,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 10,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": -1,
+        "slash_defence_bonus": 3,
+        "stab_attack_bonus": 2,
+        "stab_defence_bonus": 2,
+        "strength_bonus": 7
+      },
+      "weapon": {
+        "combat_style": "Staff",
+        "weapon_attack_range": "1",
+        "weapon_attack_speed": 5
+      }
+    },
+    "id": "equipment_bonuses:1389",
+    "kind": "equipment_bonuses",
+    "name": "Magic staff (equipment bonuses)",
+    "slug": "equipment-bonuses-1389"
+  },
+  {
+    "data": {
+      "item_id": 1391,
+      "slot": "weapon",
+      "stats": {
+        "crush_attack_bonus": 25,
+        "crush_defence_bonus": 1,
+        "magic_attack_bonus": 12,
+        "magic_damage_bonus": 0,
+        "magic_defence_bonus": 12,
+        "prayer_bonus": 0,
+        "range_attack_bonus": 0,
+        "range_defence_bonus": 0,
+        "ranged_strength_bonus": 0,
+        "slash_attack_bonus": -1,
+        "slash_defence_bonus": 3,
+        "stab_attack_bonus": 7,
+        "stab_defence_bonus": 2,
+        "strength_bonus": 32
+      },
+      "weapon": {
+        "combat_style": "Staff",
+        "weapon_attack_range": "1",
+        "weapon_attack_speed": 5
+      }
+    },
+    "id": "equipment_bonuses:1391",
+    "kind": "equipment_bonuses",
+    "name": "Battlestaff (equipment bonuses)",
+    "slug": "equipment-bonuses-1391"
+  },
+  {
+    "data": {
       "item_id": 1478,
       "slot": "neck",
       "stats": {
@@ -5369,6 +5586,17 @@
   {
     "data": {
       "is_canonical": true,
+      "members": false,
+      "version_anchor": "4 dose"
+    },
+    "id": "item:113",
+    "kind": "item",
+    "name": "Strength potion(4)",
+    "slug": "113"
+  },
+  {
+    "data": {
+      "is_canonical": true,
       "members": true,
       "version_anchor": "(8)"
     },
@@ -6012,6 +6240,76 @@
       "is_canonical": true,
       "members": false
     },
+    "id": "item:1379",
+    "kind": "item",
+    "name": "Staff",
+    "slug": "1379"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": false
+    },
+    "id": "item:1381",
+    "kind": "item",
+    "name": "Staff of air",
+    "slug": "1381"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": false
+    },
+    "id": "item:1383",
+    "kind": "item",
+    "name": "Staff of water",
+    "slug": "1383"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": false
+    },
+    "id": "item:1385",
+    "kind": "item",
+    "name": "Staff of earth",
+    "slug": "1385"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": false
+    },
+    "id": "item:1387",
+    "kind": "item",
+    "name": "Staff of fire",
+    "slug": "1387"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": false
+    },
+    "id": "item:1389",
+    "kind": "item",
+    "name": "Magic staff",
+    "slug": "1389"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
+    "id": "item:1391",
+    "kind": "item",
+    "name": "Battlestaff",
+    "slug": "1391"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": false
+    },
     "id": "item:1478",
     "kind": "item",
     "name": "Amulet of accuracy",
@@ -6075,6 +6373,16 @@
   {
     "data": {
       "is_canonical": true,
+      "members": false
+    },
+    "id": "item:1917",
+    "kind": "item",
+    "name": "Beer",
+    "slug": "1917"
+  },
+  {
+    "data": {
+      "is_canonical": true,
       "members": true,
       "version_anchor": "Uncharged"
     },
@@ -6093,6 +6401,26 @@
     "kind": "item",
     "name": "Ring of suffering (i)",
     "slug": "19710"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": true
+    },
+    "id": "item:1978",
+    "kind": "item",
+    "name": "Cup of tea",
+    "slug": "1978"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": false
+    },
+    "id": "item:2003",
+    "kind": "item",
+    "name": "Stew",
+    "slug": "2003"
   },
   {
     "data": {
@@ -6591,6 +6919,17 @@
   {
     "data": {
       "is_canonical": true,
+      "members": false,
+      "version_anchor": "4 dose"
+    },
+    "id": "item:3008",
+    "kind": "item",
+    "name": "Energy potion(4)",
+    "slug": "3008"
+  },
+  {
+    "data": {
+      "is_canonical": true,
       "members": true,
       "version_anchor": "Charged"
     },
@@ -6696,6 +7035,16 @@
   {
     "data": {
       "is_canonical": true,
+      "members": false
+    },
+    "id": "item:550",
+    "kind": "item",
+    "name": "Newcomer map",
+    "slug": "550"
+  },
+  {
+    "data": {
+      "is_canonical": true,
       "members": true
     },
     "id": "item:565",
@@ -6731,6 +7080,16 @@
     "kind": "item",
     "name": "Tzhaar-ket-om",
     "slug": "tzhaar-ket-om"
+  },
+  {
+    "data": {
+      "is_canonical": true,
+      "members": false
+    },
+    "id": "item:6814",
+    "kind": "item",
+    "name": "Fur",
+    "slug": "6814"
   },
   {
     "data": {
@@ -7121,6 +7480,289 @@
     "kind": "monster",
     "name": "Zulrah",
     "slug": "zulrah"
+  },
+  {
+    "data": {
+      "role": "shopkeeper"
+    },
+    "id": "npc:apothecary",
+    "kind": "npc",
+    "name": "Apothecary",
+    "slug": "apothecary"
+  },
+  {
+    "data": {
+      "role": "shopkeeper"
+    },
+    "id": "npc:aubury",
+    "kind": "npc",
+    "name": "Aubury",
+    "slug": "aubury"
+  },
+  {
+    "data": {
+      "role": "fur trader"
+    },
+    "id": "npc:baraek",
+    "kind": "npc",
+    "name": "Baraek",
+    "slug": "baraek"
+  },
+  {
+    "data": {
+      "role": "barman"
+    },
+    "id": "npc:barman-ratpit-bar",
+    "kind": "npc",
+    "name": "Barman (Ratpit bar)",
+    "slug": "barman-ratpit-bar"
+  },
+  {
+    "data": {
+      "role": "bartender"
+    },
+    "id": "npc:bartender-blue-moon-inn",
+    "kind": "npc",
+    "name": "Bartender (Blue Moon Inn)",
+    "slug": "bartender-blue-moon-inn"
+  },
+  {
+    "data": {
+      "role": "bartender"
+    },
+    "id": "npc:bartender-dancing-donkey-inn",
+    "kind": "npc",
+    "name": "Bartender (Dancing Donkey Inn)",
+    "slug": "bartender-dancing-donkey-inn"
+  },
+  {
+    "data": {
+      "role": "bartender"
+    },
+    "id": "npc:bartender-jolly-boar-inn",
+    "kind": "npc",
+    "name": "Bartender (Jolly Boar Inn)",
+    "slug": "bartender-jolly-boar-inn"
+  },
+  {
+    "data": {
+      "role": "shopkeeper"
+    },
+    "id": "npc:fancy-clothes-store-owner",
+    "kind": "npc",
+    "name": "Fancy Clothes Store owner",
+    "slug": "fancy-clothes-store-owner"
+  },
+  {
+    "data": {
+      "role": "armourer"
+    },
+    "id": "npc:horvik",
+    "kind": "npc",
+    "name": "Horvik",
+    "slug": "horvik"
+  },
+  {
+    "data": {
+      "role": "shopkeeper"
+    },
+    "id": "npc:lowe",
+    "kind": "npc",
+    "name": "Lowe",
+    "slug": "lowe"
+  },
+  {
+    "data": {
+      "role": "shopkeeper"
+    },
+    "id": "npc:shop-keeper-general",
+    "kind": "npc",
+    "name": "Shop keeper",
+    "slug": "shop-keeper-general"
+  },
+  {
+    "data": {
+      "role": "shopkeeper"
+    },
+    "id": "npc:shop-keeper-swordshop",
+    "kind": "npc",
+    "name": "Shop keeper",
+    "slug": "shop-keeper-swordshop"
+  },
+  {
+    "data": {
+      "role": "shopkeeper"
+    },
+    "id": "npc:tea-seller",
+    "kind": "npc",
+    "name": "Tea Seller",
+    "slug": "tea-seller"
+  },
+  {
+    "data": {
+      "role": "shopkeeper"
+    },
+    "id": "npc:thessalia",
+    "kind": "npc",
+    "name": "Thessalia",
+    "slug": "thessalia"
+  },
+  {
+    "data": {
+      "role": "shopkeeper"
+    },
+    "id": "npc:zaff",
+    "kind": "npc",
+    "name": "Zaff",
+    "slug": "zaff"
+  },
+  {
+    "data": {
+      "place_type": "pub"
+    },
+    "id": "place:blue-moon-inn",
+    "kind": "place",
+    "name": "Blue Moon Inn",
+    "slug": "blue-moon-inn"
+  },
+  {
+    "data": {
+      "place_type": "pub"
+    },
+    "id": "place:dancing-donkey-inn",
+    "kind": "place",
+    "name": "Dancing Donkey Inn",
+    "slug": "dancing-donkey-inn"
+  },
+  {
+    "data": {
+      "place_type": "world"
+    },
+    "id": "place:gielinor",
+    "kind": "place",
+    "name": "Gielinor",
+    "slug": "gielinor"
+  },
+  {
+    "data": {
+      "place_type": "grand_exchange"
+    },
+    "id": "place:grand-exchange",
+    "kind": "place",
+    "name": "Grand Exchange",
+    "slug": "grand-exchange"
+  },
+  {
+    "data": {
+      "place_type": "pub"
+    },
+    "id": "place:jolly-boar-inn",
+    "kind": "place",
+    "name": "Jolly Boar Inn",
+    "slug": "jolly-boar-inn"
+  },
+  {
+    "data": {
+      "place_type": "district"
+    },
+    "id": "place:leptoc-mansion",
+    "kind": "place",
+    "name": "Leptoc Mansion",
+    "slug": "leptoc-mansion"
+  },
+  {
+    "data": {
+      "faction": "humans",
+      "place_type": "kingdom",
+      "ruled_by": "npc:king-roald"
+    },
+    "id": "place:misthalin",
+    "kind": "place",
+    "name": "Misthalin",
+    "slug": "misthalin"
+  },
+  {
+    "data": {
+      "place_type": "district"
+    },
+    "id": "place:rat-pits",
+    "kind": "place",
+    "name": "Rat Pits",
+    "slug": "rat-pits"
+  },
+  {
+    "data": {
+      "faction": "Misthalin",
+      "place_type": "city",
+      "ruled_by": "npc:king-roald"
+    },
+    "id": "place:varrock",
+    "kind": "place",
+    "name": "Varrock",
+    "slug": "varrock"
+  },
+  {
+    "data": {
+      "place_type": "district"
+    },
+    "id": "place:varrock-chapel",
+    "kind": "place",
+    "name": "Varrock chapel",
+    "slug": "varrock-chapel"
+  },
+  {
+    "data": {
+      "place_type": "church"
+    },
+    "id": "place:varrock-church",
+    "kind": "place",
+    "name": "Varrock Church",
+    "slug": "varrock-church"
+  },
+  {
+    "data": {
+      "place_type": "museum"
+    },
+    "id": "place:varrock-museum",
+    "kind": "place",
+    "name": "Varrock Museum",
+    "slug": "varrock-museum"
+  },
+  {
+    "data": {
+      "place_type": "district"
+    },
+    "id": "place:varrock-palace",
+    "kind": "place",
+    "name": "Varrock Palace",
+    "slug": "varrock-palace"
+  },
+  {
+    "data": {
+      "place_type": "dungeon"
+    },
+    "id": "place:varrock-sewers",
+    "kind": "place",
+    "name": "Varrock Sewers",
+    "slug": "varrock-sewers"
+  },
+  {
+    "data": {
+      "place_type": "district"
+    },
+    "id": "place:varrock-square",
+    "kind": "place",
+    "name": "Varrock Square",
+    "slug": "varrock-square"
+  },
+  {
+    "data": {
+      "place_type": "district"
+    },
+    "id": "place:zamorakian-chapel-varrock",
+    "kind": "place",
+    "name": "Zamorakian chapel",
+    "slug": "zamorakian-chapel-varrock"
   },
   {
     "data": {},
@@ -9059,6 +9701,156 @@
     "kind": "region",
     "name": "Yanille",
     "slug": "yanille"
+  },
+  {
+    "data": {
+      "operator": "npc:aubury",
+      "shop_type": "magic"
+    },
+    "id": "shop:auburys-rune-shop",
+    "kind": "shop",
+    "name": "Aubury's Rune Shop",
+    "slug": "auburys-rune-shop"
+  },
+  {
+    "data": {
+      "operator": "npc:baraek",
+      "shop_type": "general"
+    },
+    "id": "shop:baraeks-fur-stall",
+    "kind": "shop",
+    "name": "Baraek's Fur Stall",
+    "slug": "baraeks-fur-stall"
+  },
+  {
+    "data": {
+      "operator": "npc:bartender-blue-moon-inn",
+      "shop_type": "pub"
+    },
+    "id": "shop:blue-moon-inn",
+    "kind": "shop",
+    "name": "Blue Moon Inn",
+    "slug": "blue-moon-inn"
+  },
+  {
+    "data": {
+      "operator": "npc:bartender-dancing-donkey-inn",
+      "shop_type": "pub"
+    },
+    "id": "shop:dancing-donkey-inn",
+    "kind": "shop",
+    "name": "Dancing Donkey Inn",
+    "slug": "dancing-donkey-inn"
+  },
+  {
+    "data": {
+      "operator": "npc:fancy-clothes-store-owner",
+      "shop_type": "clothes"
+    },
+    "id": "shop:fancy-clothes-store",
+    "kind": "shop",
+    "name": "Fancy Clothes Store",
+    "slug": "fancy-clothes-store"
+  },
+  {
+    "data": {
+      "operator": "npc:horvik",
+      "shop_type": "melee"
+    },
+    "id": "shop:horviks-armour-shop",
+    "kind": "shop",
+    "name": "Horvik's Armour Shop",
+    "slug": "horviks-armour-shop"
+  },
+  {
+    "data": {
+      "operator": "npc:bartender-jolly-boar-inn",
+      "shop_type": "pub"
+    },
+    "id": "shop:jolly-boar-inn",
+    "kind": "shop",
+    "name": "Jolly Boar Inn",
+    "slug": "jolly-boar-inn"
+  },
+  {
+    "data": {
+      "operator": "npc:lowe",
+      "shop_type": "archery"
+    },
+    "id": "shop:lowes-archery-emporium",
+    "kind": "shop",
+    "name": "Lowe's Archery Emporium",
+    "slug": "lowes-archery-emporium"
+  },
+  {
+    "data": {
+      "operator": "npc:barman-ratpit-bar",
+      "shop_type": "pub"
+    },
+    "id": "shop:ratpit-bar",
+    "kind": "shop",
+    "name": "Ratpit Bar",
+    "slug": "ratpit-bar"
+  },
+  {
+    "data": {
+      "operator": "npc:thessalia",
+      "shop_type": "clothes"
+    },
+    "id": "shop:thessalias-fine-clothes",
+    "kind": "shop",
+    "name": "Thessalia's Fine Clothes",
+    "slug": "thessalias-fine-clothes"
+  },
+  {
+    "data": {
+      "operator": "npc:apothecary",
+      "shop_type": "apothecary"
+    },
+    "id": "shop:varrock-apothecary",
+    "kind": "shop",
+    "name": "Varrock Apothecary",
+    "slug": "varrock-apothecary"
+  },
+  {
+    "data": {
+      "operator": "npc:shop-keeper-general",
+      "shop_type": "general"
+    },
+    "id": "shop:varrock-general-store",
+    "kind": "shop",
+    "name": "Varrock General Store",
+    "slug": "varrock-general-store"
+  },
+  {
+    "data": {
+      "operator": "npc:shop-keeper-swordshop",
+      "shop_type": "melee"
+    },
+    "id": "shop:varrock-swordshop",
+    "kind": "shop",
+    "name": "Varrock Swordshop",
+    "slug": "varrock-swordshop"
+  },
+  {
+    "data": {
+      "operator": "npc:tea-seller",
+      "shop_type": "general"
+    },
+    "id": "shop:ye-olde-tea-shoppe",
+    "kind": "shop",
+    "name": "Ye olde Tea Shoppe",
+    "slug": "ye-olde-tea-shoppe"
+  },
+  {
+    "data": {
+      "operator": "npc:zaff",
+      "shop_type": "magic"
+    },
+    "id": "shop:zaffs-superior-staffs",
+    "kind": "shop",
+    "name": "Zaff's Superior Staffs",
+    "slug": "zaffs-superior-staffs"
   },
   {
     "data": {},

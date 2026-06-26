@@ -36,6 +36,7 @@ from kg_ingest.builders.items import build_items
 from kg_ingest.builders.quest_rewards import build_quest_rewards
 from kg_ingest.builders.quests import build_quests
 from kg_ingest.builders.recipes import build_recipes
+from kg_ingest.builders.map_varrock import build_map, make_item_resolver
 from kg_ingest.builders.repairs import build_repairs
 from kg_ingest.builders.supporting import build_supporting
 
@@ -283,6 +284,15 @@ def _load_repair_path_records() -> list[dict]:
     return json.loads(REPAIR_PATHS_PATH.read_text())["records"]
 
 
+VARROCK_MAP_PATH = Path(__file__).resolve().parents[1] / "data" / "map" / "varrock.json"
+
+
+def _load_varrock_map() -> dict | None:
+    if not VARROCK_MAP_PATH.exists():
+        return None
+    return json.loads(VARROCK_MAP_PATH.read_text())
+
+
 ITEMS_EQUIPMENT_PATH = Path(__file__).resolve().parents[1] / "data" / "items_equipment.json"
 
 
@@ -372,6 +382,23 @@ def assemble() -> None:
     _degrade_nodes, dg_edges, _ = build_degrade_paths(_load_degrade_path_records())  # _degrade_nodes == []
     _repair_nodes, rp_edges, _ = build_repairs(_load_repair_path_records())  # _repair_nodes == []
 
+    # Connective layer (Varrock): place/npc/shop + located_in/operates/sells/same_entity.
+    # These edges are place/npc/shop-src (NOT item-src), so they re-key in their OWN call
+    # (the same_entity it emits is place-src, so it cannot collide with build_items' item-src
+    # same_entity). Build BEFORE the reference collection so resolved sells dsts auto-import.
+    # region nodes are minted by build_content_nodes (content_nodes, already built above), so
+    # the bridge only targets places that have a real legacy region node.
+    map_nodes: list[Node] = []
+    _map = _load_varrock_map()
+    if _map is not None:
+        map_region_ids = {n.id for n in content_nodes if n.id.startswith("region:")}
+        map_nodes, map_edges, map_groups = build_map(
+            _map, make_item_resolver(_load_item_dict_records()), map_region_ids)
+        map_nodes, map_edges, map_groups = rekey(map_nodes, map_edges, map_groups)
+        edges = edges + map_edges
+        groups.update(map_groups)
+        owned_ids = owned_ids | {n.id for n in map_nodes}
+
     referenced_all = _collect_referenced_ids(edges + dg_edges + rp_edges, groups)
     referenced_item_ids = {r for r in referenced_all if r.startswith("item:")} - owned_ids
     i_nodes, i_edges, _ = build_items(
@@ -414,7 +441,7 @@ def assemble() -> None:
     #    (with tasks list) is first-seen and wins if any stale supporting diary node
     #    were somehow included (it shouldn't be, since diary is excluded from _LEAF_DOMAINS).
     nodes = dedup_nodes(
-        q_nodes + g_nodes + cg_nodes + d_nodes + dg_nodes + content_nodes + r_nodes + i_nodes + eqb_nodes + s_nodes
+        q_nodes + g_nodes + cg_nodes + d_nodes + dg_nodes + content_nodes + r_nodes + i_nodes + eqb_nodes + map_nodes + s_nodes
     )
 
     # 5) serialize, sorted deterministically.
