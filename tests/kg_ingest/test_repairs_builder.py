@@ -15,6 +15,7 @@ def test_one_repairs_edge_per_record_item_src_empty_data():
     assert all(e.data == {} and e.cond_group is None for e in edges)   # pure transition
     assert all(e.src.startswith("item:") for e in edges)               # item-src
 
+
 def test_repairs_edges_are_deterministic():
     e1 = build_repairs(REC)[1]
     e2 = build_repairs(REC)[1]

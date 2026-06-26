@@ -25,9 +25,11 @@ def _is_destroyed(store, target):
     return {e.src for e in store.edges
             if e.type is EdgeType.DEGRADES_TO and e.dst is None and e.src in variants}
 
+
 def _is_repairable(store, target):
     # the repaired-item set reachable from the broken target via a repairs edge
     return {e.dst for e in store.edges if e.type is EdgeType.REPAIRS and e.src == target}
+
 
 def test_all_competency_questions_pass():
     store = JsonKGStore.from_dir(KG)

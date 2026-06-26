@@ -28,7 +28,6 @@ from osrs_planner.engine.kg.json_store import (
 from kg_ingest.builders.completion_goals import build_completion_goals
 from kg_ingest.builders.content_nodes import build_content_nodes
 from kg_ingest.builders.degrade_paths import build_degrade_paths
-from kg_ingest.builders.repairs import build_repairs
 from kg_ingest.builders.diaries import build_diaries
 from kg_ingest.builders.diary_goals import build_diary_goals
 from kg_ingest.builders.goals import build_goals
@@ -36,6 +35,7 @@ from kg_ingest.builders.items import build_items
 from kg_ingest.builders.quest_rewards import build_quest_rewards
 from kg_ingest.builders.quests import build_quests
 from kg_ingest.builders.recipes import build_recipes
+from kg_ingest.builders.repairs import build_repairs
 from kg_ingest.builders.supporting import build_supporting
 
 GROUP_OFFSET = 4_000_000
