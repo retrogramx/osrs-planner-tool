@@ -270,3 +270,4 @@ def test_equipment_bonuses_and_has_bonuses_are_live():
     hb = schema["edge_kinds"]["has_bonuses"]
     assert hb["status"] == "live" and hb["domain"] == ["item"] and hb["range"] == ["equipment_bonuses"]
     assert hb["dst"] == "required" and hb["reified"] is False
+    assert hb["cond_group"] == "forbidden"

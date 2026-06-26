@@ -7,7 +7,7 @@ the selection rule and gate the corruption classes the 2026-06-25 audit found:
   - selected page is canonical (== item_dictionary page) and NOT a (beta) page;
   - exactly one record selected per item;
   - no all-zero stat block on a COMBAT slot (the empty-variant failure mode);
-  - structural: 14 stat fields present + numeric; known slot; weapon block iff weapon slot.
+  - structural: 14 stat fields present + numeric; known slot; weapon slot MUST have a weapon block.
 Exits non-zero on any violation.
 """
 from __future__ import annotations
