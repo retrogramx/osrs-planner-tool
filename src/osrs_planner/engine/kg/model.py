@@ -30,6 +30,9 @@ class NodeKind(str, Enum):
     GOAL = "goal"  # completion-goal aggregate node (Quest cape, music cape, ...): data={counter_type, thresholds}
     RECIPE = "recipe"                  # reified production/charging process (decision 3 / spec §3-4)
     EQUIPMENT_BONUSES = "equipment_bonuses"   # reified combat-stat facet of an equippable item-variant
+    PLACE = "place"                    # recursive containment node (geometry = chunk-set; supersedes legacy region)
+    NPC = "npc"                        # non-combat character (shopkeeper, ruler, quest-giver)
+    SHOP = "shop"                      # store with stock
 
 
 class EdgeType(str, Enum):
@@ -50,6 +53,8 @@ class EdgeType(str, Enum):
     DEGRADES_TO = "degrades_to"        # downgrade ladder through use (inverse of supersedes); dst=None = destroyed
     REPAIRS = "repairs"                # restore-from-broken (inverse of degrades_to's broken terminal); item->item
     HAS_BONUSES = "has_bonuses"               # item-variant -> its equipment_bonuses facet (item-src)
+    OPERATES = "operates"              # npc -> shop
+    SELLS = "sells"                    # shop -> item (cond_group = a diary/quest gate)
 
 
 class Op(str, Enum):
