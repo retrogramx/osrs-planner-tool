@@ -16,7 +16,7 @@ def test_node_kind_members_match_schema_taxonomy():
         "skill", "item", "monster", "quest", "access", "region",
         "account_type", "gear_loadout", "activity", "diary",
         "combat_achievement", "minigame", "clog_slot", "goal",
-        "recipe",
+        "recipe", "equipment_bonuses",
     }
 
 
@@ -30,6 +30,7 @@ def test_edge_type_members_match_schema():
         "requires", "grants", "drops", "located_in", "gated_by",
         "effect", "progress_towards", "supersedes", "same_entity",
         "consumes", "produces", "degrades_to", "repairs",
+        "has_bonuses",
     }
 
 
@@ -257,3 +258,15 @@ def test_repairs_edge_exists_and_declared_live():
     d = schema["edge_kinds"]["repairs"]
     assert d["status"] == "live" and d["domain"] == ["item"] and d["range"] == ["item"]
     assert d["dst"] == "required" and d["cond_group"] == "forbidden" and d["reified"] is False
+
+
+def test_equipment_bonuses_and_has_bonuses_are_live():
+    from osrs_planner.engine.kg.model import NodeKind, EdgeType
+    assert NodeKind.EQUIPMENT_BONUSES.value == "equipment_bonuses"
+    assert EdgeType.HAS_BONUSES.value == "has_bonuses"
+    import json, pathlib
+    schema = json.loads((pathlib.Path(__file__).resolve().parents[2] / "kg" / "schema.json").read_text())
+    assert schema["node_kinds"]["equipment_bonuses"]["status"] == "live"
+    hb = schema["edge_kinds"]["has_bonuses"]
+    assert hb["status"] == "live" and hb["domain"] == ["item"] and hb["range"] == ["equipment_bonuses"]
+    assert hb["dst"] == "required" and hb["reified"] is False

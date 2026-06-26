@@ -29,6 +29,7 @@ class NodeKind(str, Enum):
     CLOG_SLOT = "clog_slot"
     GOAL = "goal"  # completion-goal aggregate node (Quest cape, music cape, ...): data={counter_type, thresholds}
     RECIPE = "recipe"                  # reified production/charging process (decision 3 / spec §3-4)
+    EQUIPMENT_BONUSES = "equipment_bonuses"   # reified combat-stat facet of an equippable item-variant
 
 
 class EdgeType(str, Enum):
@@ -48,6 +49,7 @@ class EdgeType(str, Enum):
     PRODUCES = "produces"              # recipe -> item output; reified {qty}
     DEGRADES_TO = "degrades_to"        # downgrade ladder through use (inverse of supersedes); dst=None = destroyed
     REPAIRS = "repairs"                # restore-from-broken (inverse of degrades_to's broken terminal); item->item
+    HAS_BONUSES = "has_bonuses"               # item-variant -> its equipment_bonuses facet (item-src)
 
 
 class Op(str, Enum):
