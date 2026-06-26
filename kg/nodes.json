@@ -4242,6 +4242,72 @@
   {
     "data": {
       "is_canonical": true,
+      "members": true,
+      "version_anchor": "Undamaged"
+    },
+    "id": "item:4716",
+    "kind": "item",
+    "name": "Dharok's helm",
+    "slug": "4716"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "100"
+    },
+    "id": "item:4880",
+    "kind": "item",
+    "name": "Dharok's helm 100",
+    "slug": "4880"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "75"
+    },
+    "id": "item:4881",
+    "kind": "item",
+    "name": "Dharok's helm 75",
+    "slug": "4881"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "50"
+    },
+    "id": "item:4882",
+    "kind": "item",
+    "name": "Dharok's helm 50",
+    "slug": "4882"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "25"
+    },
+    "id": "item:4883",
+    "kind": "item",
+    "name": "Dharok's helm 25",
+    "slug": "4883"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "0"
+    },
+    "id": "item:4884",
+    "kind": "item",
+    "name": "Dharok's helm 0",
+    "slug": "4884"
+  },
+  {
+    "data": {
+      "is_canonical": true,
       "members": true
     },
     "id": "item:565",

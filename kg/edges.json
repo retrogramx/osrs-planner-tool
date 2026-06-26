@@ -1992,6 +1992,16 @@
     "type": "effect"
   },
   {
+    "cond_group": null,
+    "data": {
+      "trigger": "per_use"
+    },
+    "dst": "item:1706",
+    "id": 6411645,
+    "src": "item:1708",
+    "type": "degrades_to"
+  },
+  {
     "cond_group": 5976863,
     "data": {},
     "dst": null,
@@ -2508,6 +2518,16 @@
   {
     "cond_group": null,
     "data": {
+      "trigger": "per_use"
+    },
+    "dst": "item:2558",
+    "id": 6489387,
+    "src": "item:2556",
+    "type": "degrades_to"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "access",
       "magnitude": null,
@@ -2742,6 +2762,17 @@
     "type": "grants"
   },
   {
+    "cond_group": null,
+    "data": {
+      "terminal": "reverts_to",
+      "trigger": "per_use"
+    },
+    "dst": "item:1704",
+    "id": 6540627,
+    "src": "item:1706",
+    "type": "degrades_to"
+  },
+  {
     "cond_group": 5459373,
     "data": {},
     "dst": null,
@@ -2830,6 +2861,16 @@
     "id": 6566310,
     "src": "quest:the-slug-menace",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "trigger": "per_use"
+    },
+    "dst": "item:2560",
+    "id": 6572318,
+    "src": "item:2558",
+    "type": "degrades_to"
   },
   {
     "cond_group": 5746001,
@@ -3687,6 +3728,17 @@
   {
     "cond_group": null,
     "data": {
+      "terminal": "broken",
+      "trigger": "per_hit"
+    },
+    "dst": "item:4884",
+    "id": 6740904,
+    "src": "item:4883",
+    "type": "degrades_to"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "basis": "shares wiki page 'Amulet of glory'"
     },
     "dst": "item:amulet-of-glory",
@@ -4352,6 +4404,16 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "trigger": "per_use"
+    },
+    "dst": "item:2556",
+    "id": 6891234,
+    "src": "item:2554",
+    "type": "degrades_to"
+  },
+  {
     "cond_group": 5238281,
     "data": {},
     "dst": null,
@@ -4380,6 +4442,17 @@
     "id": 6903087,
     "src": "quest:misthalin-mystery",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "terminal": "reverts_to",
+      "trigger": "per_hit"
+    },
+    "dst": "item:22486",
+    "id": 6906193,
+    "src": "item:22325",
+    "type": "degrades_to"
   },
   {
     "cond_group": null,
@@ -4422,6 +4495,16 @@
     "id": 6910469,
     "src": "diary:kandarin:easy",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "trigger": "per_use"
+    },
+    "dst": "item:2564",
+    "id": 6910625,
+    "src": "item:2562",
+    "type": "degrades_to"
   },
   {
     "cond_group": 4721964,
@@ -4570,6 +4653,17 @@
     "type": "same_entity"
   },
   {
+    "cond_group": null,
+    "data": {
+      "terminal": "destroyed",
+      "trigger": "per_use"
+    },
+    "dst": null,
+    "id": 6958729,
+    "src": "item:2566",
+    "type": "degrades_to"
+  },
+  {
     "cond_group": 4457247,
     "data": {},
     "dst": null,
@@ -4670,6 +4764,16 @@
     "id": 6989850,
     "src": "diary:fremennik:medium",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "trigger": "per_use"
+    },
+    "dst": "item:1710",
+    "id": 6992234,
+    "src": "item:1712",
+    "type": "degrades_to"
   },
   {
     "cond_group": null,
@@ -5900,6 +6004,16 @@
   {
     "cond_group": null,
     "data": {
+      "trigger": "per_use"
+    },
+    "dst": "item:1712",
+    "id": 7249791,
+    "src": "item:11976",
+    "type": "degrades_to"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 1
     },
     "dst": "goal:achievement-diary-cape",
@@ -6869,6 +6983,16 @@
     "type": "effect"
   },
   {
+    "cond_group": null,
+    "data": {
+      "trigger": "per_hit"
+    },
+    "dst": "item:4880",
+    "id": 7475760,
+    "src": "item:4716",
+    "type": "degrades_to"
+  },
+  {
     "cond_group": 5057280,
     "data": {},
     "dst": null,
@@ -6941,6 +7065,16 @@
     "id": 7488673,
     "src": "diary:falador:medium",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "trigger": "per_use"
+    },
+    "dst": "item:2566",
+    "id": 7489090,
+    "src": "item:2564",
+    "type": "degrades_to"
   },
   {
     "cond_group": 5877831,
@@ -8113,6 +8247,16 @@
   {
     "cond_group": null,
     "data": {
+      "trigger": "per_hit"
+    },
+    "dst": "item:4882",
+    "id": 7765270,
+    "src": "item:4881",
+    "type": "degrades_to"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "capacity_change",
       "magnitude": null,
@@ -8443,6 +8587,16 @@
     "type": "grants"
   },
   {
+    "cond_group": null,
+    "data": {
+      "trigger": "per_hit"
+    },
+    "dst": "item:4881",
+    "id": 7820913,
+    "src": "item:4880",
+    "type": "degrades_to"
+  },
+  {
     "cond_group": 4554591,
     "data": {},
     "dst": null,
@@ -8475,6 +8629,16 @@
     "id": 7828664,
     "src": "quest:family-crest",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "trigger": "per_use"
+    },
+    "dst": "item:1708",
+    "id": 7829045,
+    "src": "item:1710",
+    "type": "degrades_to"
   },
   {
     "cond_group": null,
@@ -8513,6 +8677,16 @@
     "id": 7834862,
     "src": "item:13132",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "trigger": "per_use"
+    },
+    "dst": "item:11976",
+    "id": 7835931,
+    "src": "item:11978",
+    "type": "degrades_to"
   },
   {
     "cond_group": 4717147,
@@ -9025,6 +9199,16 @@
   {
     "cond_group": null,
     "data": {
+      "trigger": "per_use"
+    },
+    "dst": "item:2562",
+    "id": 7937664,
+    "src": "item:2560",
+    "type": "degrades_to"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "qty": 1,
       "reward": "items",
       "tradeable": true
@@ -9151,6 +9335,16 @@
     "id": 7950567,
     "src": "diary:lumbridge:easy",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "trigger": "per_hit"
+    },
+    "dst": "item:4883",
+    "id": 7953980,
+    "src": "item:4882",
+    "type": "degrades_to"
   },
   {
     "cond_group": null,
@@ -9316,6 +9510,16 @@
     "id": 7990056,
     "src": "item:13114",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "trigger": "per_use"
+    },
+    "dst": "item:2554",
+    "id": 7990105,
+    "src": "item:2552",
+    "type": "degrades_to"
   },
   {
     "cond_group": null,

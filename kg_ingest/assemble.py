@@ -27,6 +27,7 @@ from osrs_planner.engine.kg.json_store import (
 )
 from kg_ingest.builders.completion_goals import build_completion_goals
 from kg_ingest.builders.content_nodes import build_content_nodes
+from kg_ingest.builders.degrade_paths import build_degrade_paths
 from kg_ingest.builders.diaries import build_diaries
 from kg_ingest.builders.diary_goals import build_diary_goals
 from kg_ingest.builders.goals import build_goals
@@ -254,6 +255,15 @@ def _load_charge_recipe_records() -> list[dict]:
     return json.loads(CHARGE_RECIPES_PATH.read_text())["records"]
 
 
+DEGRADE_PATHS_PATH = Path(__file__).resolve().parents[1] / "data" / "degrade_paths.json"
+
+
+def _load_degrade_path_records() -> list[dict]:
+    if not DEGRADE_PATHS_PATH.exists():
+        return []
+    return json.loads(DEGRADE_PATHS_PATH.read_text())["records"]
+
+
 def _write_json(path: Path, payload: list) -> None:
     text = json.dumps(payload, indent=2, sort_keys=True, ensure_ascii=False)
     path.write_text(text + "\n")
@@ -323,18 +333,23 @@ def assemble() -> None:
     edges = edges + r_edges
     owned_ids = owned_ids | {n.id for n in r_nodes}
 
-    referenced_all = _collect_referenced_ids(edges, groups)
+    # Degradation layer: degrades_to edges are ITEM-src (like build_items' same_entity edges).
+    # Build them now (builder-local ids) so their item dsts (incl. Dharok's degrade variants)
+    # are collected for import, but do NOT rekey them separately — rekey TOGETHER with
+    # build_items below so a shared owner gets distinct per-owner indices (no cross-call collision).
+    _dg_nodes, dg_edges, _ = build_degrade_paths(_load_degrade_path_records())  # _dg_nodes == []
+
+    referenced_all = _collect_referenced_ids(edges + dg_edges, groups)
     referenced_item_ids = {r for r in referenced_all if r.startswith("item:")} - owned_ids
     i_nodes, i_edges, _ = build_items(
         _load_item_dict_records(), _load_item_exemplars(), _load_item_families(),
         referenced_item_ids, owned_ids=frozenset(owned_ids),
     )
-    i_nodes, i_edges, _ = rekey(i_nodes, i_edges, {})
-    edges = edges + i_edges
-    # Global edge-id uniqueness (fail-fast): rekey only de-dups WITHIN one call; this guards any
-    # duplicate global edge id across the combined builder edges (r_edges + i_edges + others),
-    # including cross-call collisions (e.g. an item:* src re-keyed in two builders) before they ship.
-    # validate_kg's amendment-C duplicate-edge-id check is the committed backstop.
+    # SHARED REKEY: same_entity (i_edges) + degrades_to (dg_edges), both item-src, in one call,
+    # so an item that is the src of BOTH gets distinct per-owner indices (0 and 1).
+    i_nodes, item_edges, _ = rekey(i_nodes, i_edges + dg_edges, {})
+    edges = edges + item_edges
+    # Global edge-id uniqueness (fail-fast backstop for the shared rekey + any future item-src slice).
     _eids = [e.id for e in edges]
     if len(_eids) != len(set(_eids)):
         _dupes = sorted({i for i in _eids if _eids.count(i) > 1})
