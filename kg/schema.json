@@ -111,6 +111,7 @@
     "effect": {"status": "live", "domain": ["item", "diary"], "range": ["skill", "activity", "place", "monster", "region"], "dst": "optional", "cond_group": "forbidden", "reified": true, "notes": "Context-scoped effect (§3 effect | applies_when). Today every effect rides on an item (src=item) targeting a content node; the per-edge condition lives in data (data.condition / applies_when), not a cond_group. 'region' in range is the legacy target of 'place'. dst=None = a quest-era perk with no content target."},
     "progress_towards": {"status": "live", "domain": "*", "range": ["goal"], "dst": "required", "cond_group": "forbidden", "reified": false, "notes": "Counter contribution toward a goal node. data.weight (positive int)."},
     "supersedes": {"status": "live", "domain": ["item", "goal"], "range": ["item", "goal"], "dst": "required", "cond_group": "forbidden", "reified": false, "notes": "Upgrade/cross-cape ladder; inert to gating."},
+    "degrades_to": {"status": "live", "domain": ["item"], "range": ["item"], "dst": "optional", "cond_group": "forbidden", "reified": true, "notes": "Downgrade ladder through use (additive extension; inverse of supersedes' upgrade). Per-step item->item; terminal edge dst=None = destroyed, dst=uncharged = reverts_to, dst=broken = broken. data.trigger + data.terminal."},
 
     "located_in": {"status": "reserved", "domain": ["place", "npc", "monster", "scenery", "shop"], "range": ["place"], "dst": "required", "cond_group": "forbidden", "reified": false, "notes": "Containment TREE (decision 1): world > kingdom > city > district > scenery."},
     "rule_applies_in": {"status": "reserved", "domain": ["rule_zone"], "range": ["place"], "dst": "required", "cond_group": "forbidden", "reified": false, "notes": "Overlapping typed overlay (decision 1 / §5), world-spanning; each instance = a chunk-set."},
@@ -187,6 +188,8 @@
     "recommended_strength": ["required_for_survival", "strongly_recommended", "optional"],
     "drop_type_note": "Observable rate only (Option-A). The loot MECHANISM (RDT/GDT vs direct vs on-task) is NOT fabricated.",
     "effect_kind": ["stat_multiplier", "rate_multiplier", "capacity_change", "fee_waiver", "behavior_toggle", "recurring_resource", "access"],
-    "consumes_role": ["material", "subject"]
+    "consumes_role": ["material", "subject"],
+    "degrade_terminal": ["destroyed", "reverts_to", "broken"],
+    "degrade_trigger": ["per_use", "per_hit"]
   }
 }

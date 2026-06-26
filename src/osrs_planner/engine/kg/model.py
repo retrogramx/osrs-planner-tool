@@ -46,6 +46,7 @@ class EdgeType(str, Enum):
     SAME_ENTITY = "same_entity"        # identity bridge (variant->page, page->family); decision 5/6
     CONSUMES = "consumes"              # recipe -> item input (destroyed/transformed); reified {qty, role}
     PRODUCES = "produces"              # recipe -> item output; reified {qty}
+    DEGRADES_TO = "degrades_to"        # downgrade ladder through use (inverse of supersedes); dst=None = destroyed
 
 
 class Op(str, Enum):
