@@ -28,6 +28,7 @@ from osrs_planner.engine.kg.json_store import (
 from kg_ingest.builders.completion_goals import build_completion_goals
 from kg_ingest.builders.content_nodes import build_content_nodes
 from kg_ingest.builders.degrade_paths import build_degrade_paths
+from kg_ingest.builders.repairs import build_repairs
 from kg_ingest.builders.diaries import build_diaries
 from kg_ingest.builders.diary_goals import build_diary_goals
 from kg_ingest.builders.goals import build_goals
@@ -264,6 +265,15 @@ def _load_degrade_path_records() -> list[dict]:
     return json.loads(DEGRADE_PATHS_PATH.read_text())["records"]
 
 
+REPAIR_PATHS_PATH = Path(__file__).resolve().parents[1] / "data" / "repair_paths.json"
+
+
+def _load_repair_path_records() -> list[dict]:
+    if not REPAIR_PATHS_PATH.exists():
+        return []
+    return json.loads(REPAIR_PATHS_PATH.read_text())["records"]
+
+
 def _write_json(path: Path, payload: list) -> None:
     text = json.dumps(payload, indent=2, sort_keys=True, ensure_ascii=False)
     path.write_text(text + "\n")
@@ -338,16 +348,17 @@ def assemble() -> None:
     # are collected for import, but do NOT rekey them separately — rekey TOGETHER with
     # build_items below so a shared owner gets distinct per-owner indices (no cross-call collision).
     _degrade_nodes, dg_edges, _ = build_degrade_paths(_load_degrade_path_records())  # _degrade_nodes == []
+    _repair_nodes, rp_edges, _ = build_repairs(_load_repair_path_records())  # _repair_nodes == []
 
-    referenced_all = _collect_referenced_ids(edges + dg_edges, groups)
+    referenced_all = _collect_referenced_ids(edges + dg_edges + rp_edges, groups)
     referenced_item_ids = {r for r in referenced_all if r.startswith("item:")} - owned_ids
     i_nodes, i_edges, _ = build_items(
         _load_item_dict_records(), _load_item_exemplars(), _load_item_families(),
         referenced_item_ids, owned_ids=frozenset(owned_ids),
     )
-    # SHARED REKEY: same_entity (i_edges) + degrades_to (dg_edges), both item-src, in one call,
-    # so an item that is the src of BOTH gets distinct per-owner indices (0 and 1).
-    i_nodes, item_edges, _ = rekey(i_nodes, i_edges + dg_edges, {})
+    # SHARED REKEY: same_entity (i_edges) + degrades_to (dg_edges) + repairs (rp_edges), all item-src,
+    # in one call, so an item that is the src of multiple types gets distinct per-owner indices.
+    i_nodes, item_edges, _ = rekey(i_nodes, i_edges + dg_edges + rp_edges, {})
     edges = edges + item_edges
     # Global edge-id uniqueness (fail-fast backstop for the shared rekey + any future item-src slice).
     _eids = [e.id for e in edges]

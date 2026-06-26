@@ -2951,6 +2951,28 @@
   {
     "data": {
       "is_canonical": true,
+      "members": true,
+      "version_anchor": "Fixed"
+    },
+    "id": "item:10887",
+    "kind": "item",
+    "name": "Barrelchest anchor",
+    "slug": "10887"
+  },
+  {
+    "data": {
+      "is_canonical": false,
+      "members": true,
+      "version_anchor": "Broken"
+    },
+    "id": "item:10888",
+    "kind": "item",
+    "name": "Barrelchest anchor",
+    "slug": "10888"
+  },
+  {
+    "data": {
+      "is_canonical": true,
       "members": true
     },
     "id": "item:11136",

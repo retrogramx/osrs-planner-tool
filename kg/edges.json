@@ -3565,6 +3565,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "item:10887",
+    "id": 6715716,
+    "src": "item:10888",
+    "type": "repairs"
+  },
+  {
+    "cond_group": null,
     "data": {
       "basis": "shares wiki page 'Scythe of vitur'"
     },
@@ -6612,6 +6620,14 @@
     "id": 7410864,
     "src": "diary:morytania:easy",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "item:4716",
+    "id": 7415233,
+    "src": "item:4884",
+    "type": "repairs"
   },
   {
     "cond_group": 5492395,
