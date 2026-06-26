@@ -243,5 +243,7 @@ def test_degrades_to_edge_exists_and_declared_live():
     schema = json.loads((pathlib.Path(__file__).resolve().parents[2] / "kg" / "schema.json").read_text())
     d = schema["edge_kinds"]["degrades_to"]
     assert d["status"] == "live" and d["domain"] == ["item"] and d["range"] == ["item"] and d["dst"] == "optional"
+    assert d["cond_group"] == "forbidden"
+    assert d["reified"] is True
     assert schema["vocab"]["degrade_terminal"] == ["destroyed", "reverts_to", "broken"]
     assert schema["vocab"]["degrade_trigger"] == ["per_use", "per_hit"]
