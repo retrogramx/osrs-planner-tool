@@ -2119,22 +2119,6 @@
   {
     "children": [
       {
-        "atom_type": "achievement_diary",
-        "data": {
-          "state": "completed"
-        },
-        "qty": null,
-        "ref_node": "diary:varrock:easy",
-        "threshold": null
-      }
-    ],
-    "id": 4299402,
-    "op": "and",
-    "parent": null
-  },
-  {
-    "children": [
-      {
         "atom_type": "account_type",
         "data": {
           "value": "main"
@@ -10299,22 +10283,6 @@
       }
     ],
     "id": 5605450,
-    "op": "and",
-    "parent": null
-  },
-  {
-    "children": [
-      {
-        "atom_type": "quest",
-        "data": {
-          "state": "completed"
-        },
-        "qty": null,
-        "ref_node": "quest:what-lies-below",
-        "threshold": null
-      }
-    ],
-    "id": 5607291,
     "op": "and",
     "parent": null
   },

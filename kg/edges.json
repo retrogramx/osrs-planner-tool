@@ -45,6 +45,25 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1007",
+    "id": 6004496,
+    "src": "item:1007",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1115",
+    "id": 6008771,
+    "src": "shop:horviks-armour-shop",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "fee_waiver",
@@ -158,6 +177,17 @@
     "id": 6022218,
     "src": "item:13137",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1287",
+    "id": 6024137,
+    "src": "shop:varrock-swordshop",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -284,6 +314,25 @@
     "id": 6050418,
     "src": "quest:below-ice-mountain",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1297",
+    "id": 6051867,
+    "src": "shop:varrock-swordshop",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1013",
+    "id": 6057279,
+    "src": "item:1013",
+    "type": "has_bonuses"
   },
   {
     "cond_group": 4023955,
@@ -431,12 +480,34 @@
   {
     "cond_group": null,
     "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:12732",
+    "id": 6071667,
+    "src": "shop:auburys-rune-shop",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "basis": "shares wiki page 'Ring of dueling'"
     },
     "dst": "item:ring-of-dueling",
     "id": 6073054,
     "src": "item:2566",
     "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:884",
+    "id": 6073589,
+    "src": "shop:lowes-archery-emporium",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -451,6 +522,17 @@
     "id": 6074573,
     "src": "item:22945",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1207",
+    "id": 6078141,
+    "src": "shop:varrock-swordshop",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -479,6 +561,17 @@
     "id": 6078934,
     "src": "item:13107",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1133",
+    "id": 6079640,
+    "src": "shop:horviks-armour-shop",
+    "type": "sells"
   },
   {
     "cond_group": 4596297,
@@ -535,6 +628,17 @@
     "type": "effect"
   },
   {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1121",
+    "id": 6098001,
+    "src": "shop:horviks-armour-shop",
+    "type": "sells"
+  },
+  {
     "cond_group": 4793239,
     "data": {},
     "dst": null,
@@ -545,7 +649,8 @@
   {
     "cond_group": null,
     "data": {
-      "source_token": "Sells beer"
+      "members": false,
+      "source_token": "Bucket:Storeline"
     },
     "dst": "item:1917",
     "id": 6100854,
@@ -559,6 +664,14 @@
     "id": 6102029,
     "src": "quest:bear-your-soul",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1205",
+    "id": 6104134,
+    "src": "item:1205",
+    "type": "has_bonuses"
   },
   {
     "cond_group": 4543916,
@@ -893,6 +1006,28 @@
   {
     "cond_group": null,
     "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1007",
+    "id": 6160810,
+    "src": "shop:thessalias-fine-clothes",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1205",
+    "id": 6160813,
+    "src": "shop:varrock-swordshop",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "capacity_change",
       "magnitude": null,
@@ -1094,6 +1229,22 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1101",
+    "id": 6192375,
+    "src": "item:1101",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:841",
+    "id": 6197038,
+    "src": "item:841",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "basis": "base"
     },
@@ -1125,6 +1276,14 @@
     "id": 6205873,
     "src": "diary:desert:medium",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1025",
+    "id": 6206725,
+    "src": "item:1025",
+    "type": "has_bonuses"
   },
   {
     "cond_group": 5875109,
@@ -1219,6 +1378,14 @@
     "id": 6219515,
     "src": "item:13135",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1097",
+    "id": 6220098,
+    "src": "item:1097",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -1410,6 +1577,17 @@
   {
     "cond_group": null,
     "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1757",
+    "id": 6247350,
+    "src": "shop:thessalias-fine-clothes",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "stat_multiplier",
       "magnitude": 0.05,
@@ -1549,6 +1727,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1207",
+    "id": 6261605,
+    "src": "item:1207",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "rate_multiplier",
@@ -1604,6 +1790,17 @@
   {
     "cond_group": null,
     "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1295",
+    "id": 6268106,
+    "src": "shop:varrock-swordshop",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "qty": 1,
       "reward": "items",
       "tradeable": true
@@ -1650,16 +1847,6 @@
     "type": "requires"
   },
   {
-    "cond_group": 4299402,
-    "data": {
-      "source_token": "additional battlestaves upon completion of the Varrock Diaries"
-    },
-    "dst": "item:1391",
-    "id": 6278419,
-    "src": "shop:zaffs-superior-staffs",
-    "type": "sells"
-  },
-  {
     "cond_group": 5590073,
     "data": {},
     "dst": null,
@@ -1692,6 +1879,14 @@
     "id": 6290692,
     "src": "quest:goblin-diplomacy",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:849",
+    "id": 6292288,
+    "src": "item:849",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -1748,6 +1943,17 @@
     "id": 6317209,
     "src": "quest:song-of-the-elves",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1015",
+    "id": 6317501,
+    "src": "shop:thessalias-fine-clothes",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -1814,6 +2020,17 @@
   {
     "cond_group": null,
     "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:12736",
+    "id": 6330191,
+    "src": "shop:auburys-rune-shop",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "recurring_resource",
       "magnitude": null,
@@ -1834,6 +2051,17 @@
     "id": 6334704,
     "src": "diary:falador:medium",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:2347",
+    "id": 6336397,
+    "src": "shop:varrock-general-store",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -1872,6 +2100,17 @@
     "id": 6344122,
     "src": "diary:wilderness:elite",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1931",
+    "id": 6344131,
+    "src": "shop:varrock-general-store",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -1946,6 +2185,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1283",
+    "id": 6357257,
+    "src": "item:1283",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "recurring_resource",
@@ -1997,6 +2244,17 @@
     "id": 6363101,
     "src": "item:13115",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:556",
+    "id": 6363311,
+    "src": "shop:auburys-rune-shop",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -2111,6 +2369,17 @@
   {
     "cond_group": null,
     "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1755",
+    "id": 6373680,
+    "src": "shop:varrock-general-store",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "name": "Bonecrusher",
       "reward": "items",
       "untracked": true
@@ -2119,6 +2388,14 @@
     "id": 6374230,
     "src": "diary:morytania:hard",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1115",
+    "id": 6377332,
+    "src": "item:1115",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -2147,6 +2424,17 @@
     "id": 6380288,
     "src": "item:13114",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:890",
+    "id": 6384080,
+    "src": "shop:lowes-archery-emporium",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -2215,6 +2503,17 @@
   {
     "cond_group": null,
     "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:948",
+    "id": 6400348,
+    "src": "shop:fancy-clothes-store",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "qty": 200,
       "role": "material"
     },
@@ -2270,12 +2569,34 @@
     "type": "degrades_to"
   },
   {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:22660",
+    "id": 6413759,
+    "src": "shop:varrock-general-store",
+    "type": "sells"
+  },
+  {
     "cond_group": 5976863,
     "data": {},
     "dst": null,
     "id": 6415719,
     "src": "quest:scorpion-catcher",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:12728",
+    "id": 6420238,
+    "src": "shop:auburys-rune-shop",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -2374,6 +2695,17 @@
     "type": "effect"
   },
   {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1005",
+    "id": 6436675,
+    "src": "shop:thessalias-fine-clothes",
+    "type": "sells"
+  },
+  {
     "cond_group": 4445405,
     "data": {},
     "dst": null,
@@ -2417,6 +2749,17 @@
   },
   {
     "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1015",
+    "id": 6442074,
+    "src": "shop:fancy-clothes-store",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
     "data": {},
     "dst": "shop:auburys-rune-shop",
     "id": 6444565,
@@ -2450,12 +2793,31 @@
   {
     "cond_group": null,
     "data": {
+      "members": true,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:10087",
+    "id": 6450633,
+    "src": "shop:fancy-clothes-store",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 1
     },
     "dst": "goal:achievement-diary-cape",
     "id": 6452960,
     "src": "diary:wilderness:elite",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1211",
+    "id": 6455140,
+    "src": "item:1211",
+    "type": "has_bonuses"
   },
   {
     "cond_group": 4020131,
@@ -2576,6 +2938,17 @@
     "id": 6467806,
     "src": "item:13110",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1285",
+    "id": 6468388,
+    "src": "shop:varrock-swordshop",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -2738,6 +3111,17 @@
     "type": "effect"
   },
   {
+    "cond_group": null,
+    "data": {
+      "members": true,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:10090",
+    "id": 6476887,
+    "src": "shop:fancy-clothes-store",
+    "type": "sells"
+  },
+  {
     "cond_group": 4103909,
     "data": {},
     "dst": null,
@@ -2784,6 +3168,25 @@
     "type": "grants"
   },
   {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1203",
+    "id": 6481596,
+    "src": "item:1203",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:853",
+    "id": 6483849,
+    "src": "shop:lowes-archery-emporium",
+    "type": "sells"
+  },
+  {
     "cond_group": 5985948,
     "data": {},
     "dst": null,
@@ -2798,6 +3201,14 @@
     "id": 6485398,
     "src": "diary:wilderness:elite",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1117",
+    "id": 6486277,
+    "src": "item:1117",
+    "type": "has_bonuses"
   },
   {
     "cond_group": 5996296,
@@ -3058,24 +3469,43 @@
     "type": "progress_towards"
   },
   {
-    "cond_group": null,
+    "cond_group": 4024956,
     "data": {
-      "source_token": "sells basic staves (Staff, Magic staff)"
+      "members": true,
+      "noted": true,
+      "source_token": "Easy | 15 | 7,000 coins"
     },
-    "dst": "item:1389",
+    "dst": "item:1391",
     "id": 6525800,
     "src": "shop:zaffs-superior-staffs",
     "type": "sells"
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1277",
+    "id": 6529219,
+    "src": "item:1277",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
-      "source_token": "Sells beer and stew"
+      "members": false,
+      "source_token": "Bucket:Storeline"
     },
     "dst": "item:1917",
     "id": 6531080,
     "src": "shop:ratpit-bar",
     "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1301",
+    "id": 6531090,
+    "src": "item:1301",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -3141,12 +3571,31 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1283",
+    "id": 6548245,
+    "src": "shop:varrock-swordshop",
+    "type": "sells"
+  },
+  {
     "cond_group": 4340138,
     "data": {},
     "dst": null,
     "id": 6550231,
     "src": "item:4587",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1103",
+    "id": 6550836,
+    "src": "item:1103",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -3161,6 +3610,14 @@
     "id": 6551063,
     "src": "item:13132",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1293",
+    "id": 6552054,
+    "src": "item:1293",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -3216,6 +3673,25 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1059",
+    "id": 6571307,
+    "src": "item:1059",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:428",
+    "id": 6572045,
+    "src": "shop:fancy-clothes-store",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
     "data": {
       "trigger": "per_use"
     },
@@ -3245,6 +3721,17 @@
     "id": 6577701,
     "src": "item:22943",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:426",
+    "id": 6577786,
+    "src": "shop:thessalias-fine-clothes",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -3388,6 +3875,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:847",
+    "id": 6601945,
+    "src": "item:847",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "fee_waiver",
@@ -3515,6 +4010,14 @@
   {
     "cond_group": null,
     "data": {},
+    "dst": "equipment_bonuses:890",
+    "id": 6618993,
+    "src": "item:890",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
+    "data": {},
     "dst": "equipment_bonuses:13111",
     "id": 6620001,
     "src": "item:13111",
@@ -3555,6 +4058,14 @@
     "id": 6623475,
     "src": "item:13123",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1291",
+    "id": 6627388,
+    "src": "item:1291",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -3652,6 +4163,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1299",
+    "id": 6638443,
+    "src": "item:1299",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "access",
@@ -3689,12 +4208,12 @@
     "type": "effect"
   },
   {
-    "cond_group": 5959938,
+    "cond_group": null,
     "data": {
-      "noted": true,
-      "source_token": "Medium | 30 | 7,000 coins"
+      "members": false,
+      "source_token": "Bucket:Storeline"
     },
-    "dst": "item:1391",
+    "dst": "item:1385",
     "id": 6645970,
     "src": "shop:zaffs-superior-staffs",
     "type": "sells"
@@ -3726,12 +4245,31 @@
   {
     "cond_group": null,
     "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1125",
+    "id": 6652810,
+    "src": "shop:horviks-armour-shop",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "basis": "shares wiki page 'Ring of dueling'"
     },
     "dst": "item:ring-of-dueling",
     "id": 6654144,
     "src": "item:2556",
     "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1129",
+    "id": 6656251,
+    "src": "item:1129",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -3765,6 +4303,17 @@
   },
   {
     "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:882",
+    "id": 6673085,
+    "src": "shop:lowes-archery-emporium",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
     "data": {},
     "dst": "item:13142",
     "id": 6674789,
@@ -3790,9 +4339,10 @@
   {
     "cond_group": null,
     "data": {
-      "source_token": "elemental staves (air, water, earth, fire)"
+      "members": false,
+      "source_token": "Bucket:Storeline"
     },
-    "dst": "item:1387",
+    "dst": "item:1389",
     "id": 6680887,
     "src": "shop:zaffs-superior-staffs",
     "type": "sells"
@@ -3959,6 +4509,17 @@
   {
     "cond_group": null,
     "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1061",
+    "id": 6700542,
+    "src": "shop:thessalias-fine-clothes",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "amount": 50000,
       "count": 1,
       "eligible_skills": "any",
@@ -4111,6 +4672,17 @@
     "type": "same_entity"
   },
   {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1013",
+    "id": 6721523,
+    "src": "shop:fancy-clothes-store",
+    "type": "sells"
+  },
+  {
     "cond_group": 4798666,
     "data": {},
     "dst": null,
@@ -4228,6 +4800,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:884",
+    "id": 6740769,
+    "src": "item:884",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "terminal": "broken",
       "trigger": "per_hit"
@@ -4256,6 +4836,18 @@
   {
     "cond_group": null,
     "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:837",
+    "id": 6742905,
+    "src": "shop:lowes-archery-emporium",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
       "source_token": "creates strength potions and energy potions for free-to-play players with proper ingredients"
     },
     "dst": "item:3008",
@@ -4412,6 +5004,28 @@
   {
     "cond_group": null,
     "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1935",
+    "id": 6776815,
+    "src": "shop:varrock-general-store",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:886",
+    "id": 6777792,
+    "src": "shop:lowes-archery-emporium",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "rate_multiplier",
       "magnitude": 0.15,
@@ -4430,6 +5044,28 @@
     "id": 6787247,
     "src": "quest:sacred-bone-burner-restoration",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1757",
+    "id": 6788808,
+    "src": "shop:fancy-clothes-store",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:558",
+    "id": 6789213,
+    "src": "shop:auburys-rune-shop",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -4511,6 +5147,17 @@
   {
     "cond_group": null,
     "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:590",
+    "id": 6807520,
+    "src": "shop:varrock-general-store",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "fee_waiver",
       "magnitude": null,
@@ -4546,6 +5193,28 @@
   },
   {
     "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1217",
+    "id": 6812050,
+    "src": "shop:varrock-swordshop",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1011",
+    "id": 6815184,
+    "src": "shop:thessalias-fine-clothes",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
     "data": {},
     "dst": "item:13114",
     "id": 6816281,
@@ -4563,6 +5232,17 @@
   {
     "cond_group": null,
     "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1733",
+    "id": 6817281,
+    "src": "shop:fancy-clothes-store",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "qty": 1,
       "reward": "items",
       "tradeable": true
@@ -4571,6 +5251,17 @@
     "id": 6817664,
     "src": "diary:karamja:medium",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1109",
+    "id": 6818609,
+    "src": "shop:horviks-armour-shop",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -4720,6 +5411,17 @@
   },
   {
     "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1117",
+    "id": 6837729,
+    "src": "shop:horviks-armour-shop",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
     "data": {},
     "dst": "equipment_bonuses:10498",
     "id": 6838067,
@@ -4855,14 +5557,31 @@
     "type": "effect"
   },
   {
-    "cond_group": 5404288,
+    "cond_group": null,
     "data": {
-      "source_token": "Battlestaves are available only \"after completing most of What Lies Below.\""
+      "members": false,
+      "source_token": "Bucket:Storeline"
     },
-    "dst": "item:1391",
+    "dst": "item:1379",
     "id": 6861630,
     "src": "shop:zaffs-superior-staffs",
     "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:851",
+    "id": 6862675,
+    "src": "item:851",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:837",
+    "id": 6863838,
+    "src": "item:837",
+    "type": "has_bonuses"
   },
   {
     "cond_group": 5035358,
@@ -4963,6 +5682,14 @@
   {
     "cond_group": null,
     "data": {},
+    "dst": "equipment_bonuses:877",
+    "id": 6886597,
+    "src": "item:877",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
+    "data": {},
     "dst": "item:11140",
     "id": 6887669,
     "src": "item:13103",
@@ -5055,6 +5782,17 @@
   {
     "cond_group": null,
     "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1887",
+    "id": 6905379,
+    "src": "shop:varrock-general-store",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "terminal": "reverts_to",
       "trigger": "per_hit"
     },
@@ -5082,6 +5820,14 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1015",
+    "id": 6906937,
+    "src": "item:1015",
+    "type": "has_bonuses"
+  },
+  {
     "cond_group": 4075652,
     "data": {},
     "dst": null,
@@ -5091,10 +5837,29 @@
   },
   {
     "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:550",
+    "id": 6908704,
+    "src": "shop:varrock-general-store",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
     "data": {},
     "dst": "equipment_bonuses:13105",
     "id": 6909888,
     "src": "item:13105",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1949",
+    "id": 6910148,
+    "src": "item:1949",
     "type": "has_bonuses"
   },
   {
@@ -5130,6 +5895,14 @@
     "id": 6917087,
     "src": "quest:monks-friend",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:9765",
+    "id": 6919100,
+    "src": "item:9765",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -5188,6 +5961,14 @@
     "id": 6928516,
     "src": "item:13106",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1757",
+    "id": 6931607,
+    "src": "item:1757",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -5254,6 +6035,17 @@
     "id": 6947438,
     "src": "item:7409",
     "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1735",
+    "id": 6947744,
+    "src": "shop:varrock-general-store",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -5379,6 +6171,17 @@
   {
     "cond_group": null,
     "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1281",
+    "id": 6966218,
+    "src": "shop:varrock-swordshop",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "stat_multiplier",
       "magnitude": 0.1,
@@ -5397,6 +6200,17 @@
     "id": 6976689,
     "src": "place:rat-pits",
     "type": "located_in"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1293",
+    "id": 6980150,
+    "src": "shop:varrock-swordshop",
+    "type": "sells"
   },
   {
     "cond_group": 5376814,
@@ -5531,6 +6345,7 @@
   {
     "cond_group": null,
     "data": {
+      "members": false,
       "source_token": "creates strength potions and energy potions for free-to-play players with proper ingredients"
     },
     "dst": "item:113",
@@ -5564,6 +6379,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1287",
+    "id": 7011870,
+    "src": "item:1287",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "access",
@@ -5575,6 +6398,14 @@
     "id": 7014745,
     "src": "item:13109",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1209",
+    "id": 7015723,
+    "src": "item:1209",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -5786,6 +6617,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:886",
+    "id": 7050606,
+    "src": "item:886",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "rate_multiplier",
@@ -5885,6 +6724,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:843",
+    "id": 7062969,
+    "src": "item:843",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "recurring_resource",
@@ -5896,6 +6743,14 @@
     "id": 7063559,
     "src": "item:13128",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1297",
+    "id": 7063670,
+    "src": "item:1297",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -5955,6 +6810,17 @@
   },
   {
     "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:12730",
+    "id": 7075075,
+    "src": "shop:auburys-rune-shop",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
     "data": {},
     "dst": "equipment_bonuses:1389",
     "id": 7076057,
@@ -5968,6 +6834,17 @@
     "id": 7076428,
     "src": "npc:baraek",
     "type": "located_in"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:562",
+    "id": 7080749,
+    "src": "shop:auburys-rune-shop",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -6149,13 +7026,37 @@
     "type": "requires"
   },
   {
-    "cond_group": null,
+    "cond_group": 4324744,
     "data": {
-      "source_token": "elemental staves (air, water, earth, fire)"
+      "members": true,
+      "noted": true,
+      "source_token": "Hard | 60 | 7,000 coins"
     },
-    "dst": "item:1383",
+    "dst": "item:1391",
     "id": 7096552,
     "src": "shop:zaffs-superior-staffs",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:555",
+    "id": 7097625,
+    "src": "shop:auburys-rune-shop",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:851",
+    "id": 7103559,
+    "src": "shop:lowes-archery-emporium",
     "type": "sells"
   },
   {
@@ -6276,7 +7177,8 @@
   {
     "cond_group": null,
     "data": {
-      "source_token": "Sells beer"
+      "members": false,
+      "source_token": "Bucket:Storeline"
     },
     "dst": "item:1917",
     "id": 7117285,
@@ -6364,6 +7266,14 @@
   {
     "cond_group": null,
     "data": {},
+    "dst": "equipment_bonuses:1119",
+    "id": 7129408,
+    "src": "item:1119",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
+    "data": {},
     "dst": "item:13134",
     "id": 7130590,
     "src": "item:13135",
@@ -6380,6 +7290,17 @@
     "id": 7133123,
     "src": "diary:fremennik:medium",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1129",
+    "id": 7133246,
+    "src": "shop:thessalias-fine-clothes",
+    "type": "sells"
   },
   {
     "cond_group": 4238316,
@@ -6457,6 +7378,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1279",
+    "id": 7150321,
+    "src": "item:1279",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "access",
@@ -6486,6 +7415,17 @@
     "id": 7151817,
     "src": "quest:the-forsaken-tower",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1023",
+    "id": 7154102,
+    "src": "shop:fancy-clothes-store",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -6530,9 +7470,10 @@
   {
     "cond_group": null,
     "data": {
-      "source_token": "new players can purchase newcomer maps here"
+      "members": false,
+      "source_token": "Bucket:Storeline"
     },
-    "dst": "item:550",
+    "dst": "item:1923",
     "id": 7160536,
     "src": "shop:varrock-general-store",
     "type": "sells"
@@ -6558,6 +7499,17 @@
   {
     "cond_group": null,
     "data": {
+      "members": true,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:10091",
+    "id": 7161743,
+    "src": "shop:fancy-clothes-store",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "access",
       "magnitude": null,
@@ -6572,7 +7524,8 @@
   {
     "cond_group": null,
     "data": {
-      "source_token": "Sells beer"
+      "members": false,
+      "source_token": "Bucket:Storeline"
     },
     "dst": "item:1917",
     "id": 7171531,
@@ -6615,6 +7568,17 @@
   },
   {
     "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:560",
+    "id": 7184002,
+    "src": "shop:auburys-rune-shop",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
     "data": {},
     "dst": "shop:fancy-clothes-store",
     "id": 7185742,
@@ -6652,6 +7616,17 @@
   {
     "cond_group": null,
     "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1119",
+    "id": 7190084,
+    "src": "shop:horviks-armour-shop",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "basis": "shares wiki page 'Ring of wealth'"
     },
     "dst": "item:ring-of-wealth",
@@ -6672,6 +7647,14 @@
     "id": 7196246,
     "src": "item:22945",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:888",
+    "id": 7197232,
+    "src": "item:888",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -6707,6 +7690,17 @@
     "id": 7203261,
     "src": "item:13110",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:849",
+    "id": 7209545,
+    "src": "shop:lowes-archery-emporium",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -6787,14 +7781,25 @@
     "type": "effect"
   },
   {
-    "cond_group": 4324744,
+    "cond_group": null,
     "data": {
-      "noted": true,
-      "source_token": "Hard | 60 | 7,000 coins"
+      "members": false,
+      "source_token": "Bucket:Storeline"
     },
-    "dst": "item:1391",
+    "dst": "item:1387",
     "id": 7219441,
     "src": "shop:zaffs-superior-staffs",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:559",
+    "id": 7222903,
+    "src": "shop:auburys-rune-shop",
     "type": "sells"
   },
   {
@@ -6812,12 +7817,12 @@
     "type": "effect"
   },
   {
-    "cond_group": 4024956,
+    "cond_group": null,
     "data": {
-      "noted": true,
-      "source_token": "Easy | 15 | 7,000 coins"
+      "members": false,
+      "source_token": "Bucket:Storeline"
     },
-    "dst": "item:1391",
+    "dst": "item:1381",
     "id": 7224220,
     "src": "shop:zaffs-superior-staffs",
     "type": "sells"
@@ -6871,6 +7876,17 @@
     "type": "has_bonuses"
   },
   {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1734",
+    "id": 7235556,
+    "src": "shop:fancy-clothes-store",
+    "type": "sells"
+  },
+  {
     "cond_group": 5739518,
     "data": {},
     "dst": null,
@@ -6887,6 +7903,17 @@
     "id": 7239079,
     "src": "diary:varrock:elite",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": true,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:10089",
+    "id": 7239960,
+    "src": "shop:fancy-clothes-store",
+    "type": "sells"
   },
   {
     "cond_group": 5830733,
@@ -6994,6 +8021,28 @@
   },
   {
     "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:12734",
+    "id": 7258979,
+    "src": "shop:auburys-rune-shop",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1277",
+    "id": 7259046,
+    "src": "shop:varrock-swordshop",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
     "data": {},
     "dst": "equipment_bonuses:13134",
     "id": 7262052,
@@ -7075,6 +8124,17 @@
     "type": "located_in"
   },
   {
+    "cond_group": null,
+    "data": {
+      "members": true,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:10088",
+    "id": 7275320,
+    "src": "shop:fancy-clothes-store",
+    "type": "sells"
+  },
+  {
     "cond_group": 5303493,
     "data": {},
     "dst": null,
@@ -7097,6 +8157,17 @@
     "id": 7279258,
     "src": "quest:prince-ali-rescue",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1299",
+    "id": 7279906,
+    "src": "shop:varrock-swordshop",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -7172,6 +8243,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1121",
+    "id": 7291303,
+    "src": "item:1121",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "qty": 1
     },
@@ -7233,6 +8312,17 @@
   {
     "cond_group": null,
     "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1007",
+    "id": 7299732,
+    "src": "shop:fancy-clothes-store",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "capacity_change",
       "magnitude": null,
@@ -7251,6 +8341,17 @@
     "id": 7300626,
     "src": "quest:animal-magnetism",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": true,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:9766",
+    "id": 7302487,
+    "src": "shop:auburys-rune-shop",
+    "type": "sells"
   },
   {
     "cond_group": 5892857,
@@ -7283,6 +8384,17 @@
     "id": 7309259,
     "src": "diary:morytania:hard",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:950",
+    "id": 7315789,
+    "src": "shop:thessalias-fine-clothes",
+    "type": "sells"
   },
   {
     "cond_group": 5983686,
@@ -7356,6 +8468,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1285",
+    "id": 7335119,
+    "src": "item:1285",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "access",
@@ -7367,6 +8487,14 @@
     "id": 7335705,
     "src": "item:13143",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1023",
+    "id": 7336022,
+    "src": "item:1023",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -7487,6 +8615,7 @@
   {
     "cond_group": null,
     "data": {
+      "members": false,
       "source_token": "fur trader in Varrock Square"
     },
     "dst": "item:6814",
@@ -7563,6 +8692,17 @@
   {
     "cond_group": null,
     "data": {
+      "members": true,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1025",
+    "id": 7379834,
+    "src": "shop:fancy-clothes-store",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "qty": 1,
       "reward": "items",
       "tradeable": false
@@ -7607,13 +8747,26 @@
     "type": "supersedes"
   },
   {
-    "cond_group": null,
+    "cond_group": 4553627,
     "data": {
-      "source_token": "elemental staves (air, water, earth, fire)"
+      "members": true,
+      "noted": true,
+      "source_token": "Elite | 120 | 7,000 coins"
     },
-    "dst": "item:1385",
+    "dst": "item:1391",
     "id": 7392814,
     "src": "shop:zaffs-superior-staffs",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1301",
+    "id": 7394681,
+    "src": "shop:varrock-swordshop",
     "type": "sells"
   },
   {
@@ -7631,12 +8784,39 @@
     "type": "effect"
   },
   {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1105",
+    "id": 7399333,
+    "src": "shop:horviks-armour-shop",
+    "type": "sells"
+  },
+  {
     "cond_group": 4609368,
     "data": {},
     "dst": null,
     "id": 7403276,
     "src": "quest:hopespears-will",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:882",
+    "id": 7405151,
+    "src": "item:882",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1217",
+    "id": 7406469,
+    "src": "item:1217",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -7647,6 +8827,17 @@
     "id": 7407339,
     "src": "diary:kourend:elite",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1209",
+    "id": 7408641,
+    "src": "shop:varrock-swordshop",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -7691,11 +8882,12 @@
     "type": "requires"
   },
   {
-    "cond_group": null,
+    "cond_group": 5404288,
     "data": {
-      "source_token": "sells basic staves (Staff, Magic staff)"
+      "members": true,
+      "source_token": "Battlestaves are available only \"after completing most of What Lies Below.\""
     },
-    "dst": "item:1379",
+    "dst": "item:1391",
     "id": 7419407,
     "src": "shop:zaffs-superior-staffs",
     "type": "sells"
@@ -7729,11 +8921,13 @@
     "type": "effect"
   },
   {
-    "cond_group": null,
+    "cond_group": 5959938,
     "data": {
-      "source_token": "elemental staves (air, water, earth, fire)"
+      "members": true,
+      "noted": true,
+      "source_token": "Medium | 30 | 7,000 coins"
     },
-    "dst": "item:1381",
+    "dst": "item:1391",
     "id": 7423813,
     "src": "shop:zaffs-superior-staffs",
     "type": "sells"
@@ -7767,6 +8961,17 @@
   {
     "cond_group": null,
     "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:9003",
+    "id": 7428909,
+    "src": "shop:varrock-general-store",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "fee_waiver",
       "magnitude": null,
@@ -7785,6 +8990,17 @@
     "id": 7430324,
     "src": "item:13120",
     "type": "supersedes"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:557",
+    "id": 7430394,
+    "src": "shop:auburys-rune-shop",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -7811,6 +9027,14 @@
     "id": 7433178,
     "src": "place:varrock",
     "type": "located_in"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1109",
+    "id": 7434689,
+    "src": "item:1109",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -7981,6 +9205,17 @@
   {
     "cond_group": null,
     "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:579",
+    "id": 7456731,
+    "src": "shop:fancy-clothes-store",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "amount": 875,
       "form": "fixed",
       "reward": "xp"
@@ -8016,6 +9251,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1061",
+    "id": 7458374,
+    "src": "item:1061",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "qty": 1,
       "role": "subject"
@@ -8024,6 +9267,17 @@
     "id": 7460736,
     "src": "recipe:charge-scythe-of-vitur",
     "type": "consumes"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1103",
+    "id": 7462341,
+    "src": "shop:horviks-armour-shop",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -8078,6 +9332,14 @@
     "id": 7474419,
     "src": "item:13110",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:579",
+    "id": 7475452,
+    "src": "item:579",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -8231,6 +9493,17 @@
   },
   {
     "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:839",
+    "id": 7496462,
+    "src": "shop:lowes-archery-emporium",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
     "data": {},
     "dst": "place:varrock",
     "id": 7498734,
@@ -8246,6 +9519,17 @@
     "id": 7499247,
     "src": "recipe:charge-ring-of-suffering",
     "type": "produces"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:888",
+    "id": 7499759,
+    "src": "shop:lowes-archery-emporium",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -8308,16 +9592,6 @@
     "type": "effect"
   },
   {
-    "cond_group": 5607291,
-    "data": {
-      "source_token": "battlestaves ... to players who have completed What Lies Below"
-    },
-    "dst": "item:1391",
-    "id": 7507520,
-    "src": "shop:zaffs-superior-staffs",
-    "type": "sells"
-  },
-  {
     "cond_group": null,
     "data": {
       "basis": "shares wiki page 'Ring of suffering (i)'"
@@ -8326,6 +9600,17 @@
     "id": 7507891,
     "src": "item:25246",
     "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1097",
+    "id": 7508648,
+    "src": "shop:horviks-armour-shop",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -8370,6 +9655,17 @@
     "id": 7512580,
     "src": "diary:kandarin:elite",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": true,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:958",
+    "id": 7513861,
+    "src": "shop:fancy-clothes-store",
+    "type": "sells"
   },
   {
     "cond_group": 5381566,
@@ -8487,6 +9783,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1105",
+    "id": 7535999,
+    "src": "item:1105",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "recurring_resource",
@@ -8580,6 +9884,17 @@
   {
     "cond_group": null,
     "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1203",
+    "id": 7553764,
+    "src": "shop:varrock-swordshop",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "weight": 1
     },
     "dst": "goal:achievement-diary-cape",
@@ -8639,6 +9954,17 @@
   },
   {
     "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1291",
+    "id": 7569580,
+    "src": "shop:varrock-swordshop",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
     "data": {},
     "dst": "place:varrock",
     "id": 7571579,
@@ -8684,6 +10010,14 @@
   {
     "cond_group": null,
     "data": {},
+    "dst": "equipment_bonuses:1295",
+    "id": 7578761,
+    "src": "item:1295",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
+    "data": {},
     "dst": "place:varrock",
     "id": 7579480,
     "src": "place:varrock-sewers",
@@ -8720,6 +10054,17 @@
     "id": 7584845,
     "src": "diary:varrock:easy",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:847",
+    "id": 7585179,
+    "src": "shop:lowes-archery-emporium",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -8782,6 +10127,17 @@
     "id": 7602596,
     "src": "place:blue-moon-inn",
     "type": "located_in"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:20742",
+    "id": 7604116,
+    "src": "shop:varrock-general-store",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -8856,7 +10212,8 @@
   {
     "cond_group": null,
     "data": {
-      "source_token": "tea (10 coins)"
+      "members": true,
+      "source_token": "Bucket:Storeline"
     },
     "dst": "item:1978",
     "id": 7608389,
@@ -8966,6 +10323,17 @@
     "type": "requires"
   },
   {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1059",
+    "id": 7627156,
+    "src": "shop:thessalias-fine-clothes",
+    "type": "sells"
+  },
+  {
     "cond_group": 4996635,
     "data": {},
     "dst": null,
@@ -8988,6 +10356,17 @@
     "id": 7631477,
     "src": "item:1712",
     "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:877",
+    "id": 7631667,
+    "src": "shop:lowes-archery-emporium",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -9186,6 +10565,14 @@
   {
     "cond_group": null,
     "data": {},
+    "dst": "equipment_bonuses:1067",
+    "id": 7657461,
+    "src": "item:1067",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
+    "data": {},
     "dst": "equipment_bonuses:1391",
     "id": 7658177,
     "src": "item:1391",
@@ -9348,6 +10735,25 @@
   {
     "cond_group": null,
     "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1059",
+    "id": 7697874,
+    "src": "shop:fancy-clothes-store",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:853",
+    "id": 7698131,
+    "src": "item:853",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "qty": 1,
       "reward": "items",
       "tradeable": true
@@ -9356,6 +10762,17 @@
     "id": 7699744,
     "src": "diary:karamja:elite",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1013",
+    "id": 7701317,
+    "src": "shop:thessalias-fine-clothes",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -9370,6 +10787,14 @@
     "id": 7704197,
     "src": "item:13121",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1011",
+    "id": 7706021,
+    "src": "item:1011",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -9404,6 +10829,17 @@
   {
     "cond_group": null,
     "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1211",
+    "id": 7717656,
+    "src": "shop:varrock-swordshop",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "qty": 1,
       "reward": "items",
       "tradeable": true
@@ -9420,6 +10856,25 @@
     "id": 7722097,
     "src": "shop:ratpit-bar",
     "type": "located_in"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:843",
+    "id": 7724075,
+    "src": "shop:lowes-archery-emporium",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1005",
+    "id": 7730608,
+    "src": "item:1005",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -9553,6 +11008,17 @@
   },
   {
     "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1279",
+    "id": 7763466,
+    "src": "shop:varrock-swordshop",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
     "data": {},
     "dst": "equipment_bonuses:13115",
     "id": 7764618,
@@ -9617,6 +11083,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:426",
+    "id": 7776300,
+    "src": "item:426",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "stat_multiplier",
@@ -9676,6 +11150,17 @@
   {
     "cond_group": null,
     "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1011",
+    "id": 7781984,
+    "src": "shop:fancy-clothes-store",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "capacity_change",
       "magnitude": null,
@@ -9686,6 +11171,14 @@
     "id": 7783223,
     "src": "item:13106",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1125",
+    "id": 7784013,
+    "src": "item:1125",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -9810,6 +11303,14 @@
   {
     "cond_group": null,
     "data": {},
+    "dst": "equipment_bonuses:845",
+    "id": 7806188,
+    "src": "item:845",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
+    "data": {},
     "dst": "item:13143",
     "id": 7809286,
     "src": "item:13144",
@@ -9864,6 +11365,14 @@
     "id": 7816695,
     "src": "item:13139",
     "type": "effect"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:839",
+    "id": 7816892,
+    "src": "item:839",
+    "type": "has_bonuses"
   },
   {
     "cond_group": 5890566,
@@ -9962,6 +11471,14 @@
     "id": 7826618,
     "src": "diary:desert:elite",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1133",
+    "id": 7826880,
+    "src": "item:1133",
+    "type": "has_bonuses"
   },
   {
     "cond_group": null,
@@ -10200,10 +11717,29 @@
   {
     "cond_group": null,
     "data": {},
+    "dst": "equipment_bonuses:428",
+    "id": 7859328,
+    "src": "item:428",
+    "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
+    "data": {},
     "dst": "item:11138",
     "id": 7859797,
     "src": "item:11140",
     "type": "supersedes"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:554",
+    "id": 7860138,
+    "src": "shop:auburys-rune-shop",
+    "type": "sells"
   },
   {
     "cond_group": 4671677,
@@ -10212,6 +11748,14 @@
     "id": 7860467,
     "src": "quest:fairytale-ii-cure-a-queen",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "equipment_bonuses:1281",
+    "id": 7860695,
+    "src": "item:1281",
+    "type": "has_bonuses"
   },
   {
     "cond_group": 5901716,
@@ -10228,6 +11772,17 @@
     "id": 7872098,
     "src": "diary:varrock:elite",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:845",
+    "id": 7873396,
+    "src": "shop:lowes-archery-emporium",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -10262,6 +11817,17 @@
     "id": 7874547,
     "src": "diary:varrock:easy",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:428",
+    "id": 7875351,
+    "src": "shop:thessalias-fine-clothes",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -10384,6 +11950,17 @@
   {
     "cond_group": null,
     "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1925",
+    "id": 7894871,
+    "src": "shop:varrock-general-store",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
       "amount": 1000,
       "form": "fixed",
       "reward": "xp"
@@ -10400,6 +11977,17 @@
     "id": 7895333,
     "src": "place:zamorakian-chapel-varrock",
     "type": "located_in"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:426",
+    "id": 7896979,
+    "src": "shop:fancy-clothes-store",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -10462,6 +12050,17 @@
     "id": 7905596,
     "src": "item:25739",
     "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:841",
+    "id": 7906470,
+    "src": "shop:lowes-archery-emporium",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -10692,7 +12291,8 @@
   {
     "cond_group": null,
     "data": {
-      "source_token": "the Rat Pit Bar also sells stew"
+      "members": false,
+      "source_token": "Bucket:Storeline"
     },
     "dst": "item:2003",
     "id": 7940398,
@@ -10790,14 +12390,25 @@
     "type": "grants"
   },
   {
-    "cond_group": 4553627,
+    "cond_group": null,
     "data": {
-      "noted": true,
-      "source_token": "Elite | 120 | 7,000 coins"
+      "members": false,
+      "source_token": "Bucket:Storeline"
     },
-    "dst": "item:1391",
+    "dst": "item:1383",
     "id": 7956321,
     "src": "shop:zaffs-superior-staffs",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1061",
+    "id": 7957128,
+    "src": "shop:fancy-clothes-store",
     "type": "sells"
   },
   {
@@ -10823,12 +12434,34 @@
     "type": "located_in"
   },
   {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1949",
+    "id": 7962895,
+    "src": "shop:fancy-clothes-store",
+    "type": "sells"
+  },
+  {
     "cond_group": 5574282,
     "data": {},
     "dst": null,
     "id": 7964367,
     "src": "quest:the-lost-tribe",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1101",
+    "id": 7964833,
+    "src": "shop:horviks-armour-shop",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -10843,6 +12476,17 @@
     "id": 7964864,
     "src": "quest:fairytale-ii-cure-a-queen",
     "type": "grants"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:12738",
+    "id": 7965005,
+    "src": "shop:auburys-rune-shop",
+    "type": "sells"
   },
   {
     "cond_group": null,
@@ -10960,6 +12604,17 @@
   },
   {
     "cond_group": null,
+    "data": {
+      "members": false,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:1067",
+    "id": 7987816,
+    "src": "shop:horviks-armour-shop",
+    "type": "sells"
+  },
+  {
+    "cond_group": null,
     "data": {},
     "dst": "equipment_bonuses:1383",
     "id": 7989134,
@@ -11020,6 +12675,17 @@
     "id": 7992633,
     "src": "quest:dragon-slayer-i",
     "type": "progress_towards"
+  },
+  {
+    "cond_group": null,
+    "data": {
+      "members": true,
+      "source_token": "Bucket:Storeline"
+    },
+    "dst": "item:9765",
+    "id": 7992634,
+    "src": "shop:auburys-rune-shop",
+    "type": "sells"
   },
   {
     "cond_group": 4246175,

@@ -34,6 +34,7 @@ from kg_ingest.builders.equipment_bonuses import build_equipment_bonuses
 from kg_ingest.builders.goals import build_goals
 from kg_ingest.builders.items import build_items
 from kg_ingest.builders.map_varrock import build_map, make_item_resolver
+from kg_ingest.builders.storeline import build_storeline
 from kg_ingest.builders.quest_rewards import build_quest_rewards
 from kg_ingest.builders.quests import build_quests
 from kg_ingest.builders.recipes import build_recipes
@@ -285,12 +286,19 @@ def _load_repair_path_records() -> list[dict]:
 
 
 VARROCK_MAP_PATH = Path(__file__).resolve().parents[1] / "data" / "map" / "varrock.json"
+STORELINE_RAW_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "storeline_bucket.json"
 
 
 def _load_varrock_map() -> dict | None:
     if not VARROCK_MAP_PATH.exists():
         return None
     return json.loads(VARROCK_MAP_PATH.read_text())
+
+
+def _load_storeline_records() -> list[dict]:
+    if not STORELINE_RAW_PATH.exists():
+        return []
+    return json.loads(STORELINE_RAW_PATH.read_text())["bucket"]
 
 
 ITEMS_EQUIPMENT_PATH = Path(__file__).resolve().parents[1] / "data" / "items_equipment.json"
@@ -398,6 +406,22 @@ def assemble() -> None:
         edges = edges + map_edges
         groups.update(map_groups)
         owned_ids = owned_ids | {n.id for n in map_nodes}
+
+    # Source-grounded shop stock (slice 7): Storeline is the stock spine. build_map no
+    # longer emits sells; build_storeline emits ALL sells (Storeline + owner-gate overlay
+    # + dialogue-shop fallback). Its edges are shop-src (sells), the SAME owner class as
+    # build_map's located_in, so its OWN rekey MUST be seeded with the per-owner edge
+    # counts already in `edges` (else a shop's first sells collides with its located_in).
+    if _map is not None:
+        st_nodes, st_edges, st_groups = build_storeline(
+            _load_storeline_records(), _map, _load_item_dict_records())
+        _prior_src_counts: dict[str, int] = {}
+        for _e in edges:
+            _prior_src_counts[_e.src] = _prior_src_counts.get(_e.src, 0) + 1
+        st_nodes, st_edges, st_groups = rekey(st_nodes, st_edges, st_groups,
+                                              edge_index_seed=_prior_src_counts)
+        edges = edges + st_edges
+        groups.update(st_groups)
 
     referenced_all = _collect_referenced_ids(edges + dg_edges + rp_edges, groups)
     referenced_item_ids = {r for r in referenced_all if r.startswith("item:")} - owned_ids
