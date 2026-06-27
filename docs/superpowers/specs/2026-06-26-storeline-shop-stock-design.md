@@ -20,7 +20,7 @@ exact wiki stock, while the owner's editorial **prose gates** (the Zaff diary/qu
 | # | Decision | Choice |
 |---|---|---|
 | 1 | Source | **`Bucket:Storeline`** (per-shop stock), via the wiki **Bucket API**. NOT Category-page expansion. |
-| 2 | Stock model | **Storeline = the stock spine.** It supersedes ALL of the owner's flat `sells` (including the 23 that resolved in slice 6). The owner's authored data retains only structure (slice 6) + the **prose gates** as an overlay. |
+| 2 | Stock model | **Storeline = the stock spine** *for shops it covers*. It supersedes the owner's flat `sells` (including the 23 that resolved in slice 6) for the **13/15 Varrock shops with Storeline rows**. A shop with **no Storeline rows** (dialogue-shops — Baraek's Fur Stall, Varrock Apothecary) **falls back to the owner's authored sells**. The owner's authored data otherwise retains only structure (slice 6) + the **prose gates** overlay. |
 | 3 | Gate sourcing | **Structured gates from Storeline** (currency; **members recorded as edge DATA, not a cond_group** — Varrock is F2P-dominant + no members atom exists yet; the account gate is deferred). **Prose gates stay owner-authored** (the Zaff diary-discount + What-Lies-Below offers) — the wiki has these only as prose/bespoke tables; editorial authoring is the correct source. The owner's overlapping authored offers are **canonicalized/collapsed** into a clean gate set (§3), subject to **owner editorial review**. Skillcape/wield-level gates → deferred (item requirement, not shop data). |
 | 4 | Scope | **Full bucket snapshot committed** (the ~6,237-row reproducible raw snapshot); **sells edges generated only for the 15 Varrock shops** already in the graph. Future towns need no re-ingest. |
 | 5 | Pricing | **Deferred.** The snapshot retains `store_buy_price`/`store_sell_price`/`store_stock` for the future cost layer; the `sells` edges carry `currency` + `members` only. No price tokens enter the graph (`validate_cost` stays clean — the slice-6 deferral). |
@@ -40,15 +40,19 @@ https://oldschool.runescape.wiki/api.php?action=bucket&format=json&query=
             'store_delta','restock_time','sold_item_json')
     .limit(10000).run()
 ```
-`.limit()` must exceed the row count (≈6,237) — the default cap silently truncates (the slice-CA `.limit(5000)`
-lesson). Filtering by shop is done client-side (`where('sold_by', …)` works but the build filters the full snapshot).
+**The bucket hard-caps at 5,000 rows per call** (verified 2026-06-26: `.limit(10000)` returned exactly 5,000). The fetch
+**MUST paginate** — `.offset(n).limit(5000)` until a short page; the full bucket is **6,236 rows / 581 distinct shops**.
+Filtering to the Varrock shops is done client-side over the full snapshot.
 
-**Verified samples (the join + resolution work by exact name):**
+**Verified samples (2026-06-26, full paginated bucket):**
 - `sold_by="Varrock General Store"` → 13 items (Pot, Jug, Shears, Bucket, Tinderbox, Chisel, Hammer, Newcomer map,
   Security book, …), all `Coins`. (Resolves the owner's 3 category strings.)
 - `sold_by="Blue Moon Inn"` → `sold_item="Beer"`, `Coins`. (`Beer` → the slice-6 page-name heuristic → `item:1917`.)
-- Lowe's Archery Emporium → the 6 bows + 5 arrow tiers + bronze bolts + crossbow (exact, replacing "Bows"/"Crossbows"/
-  "Ammunition").
+- `sold_by="Lowe's Archery Emporium"` → 15 rows (the 6 bows + arrow tiers + bronze bolts + crossbow), replacing
+  "Bows"/"Crossbows"/"Ammunition".
+- **`sold_by` is NOT always the clean display name:** it carries trailing punctuation (`"Zaff's Superior Staffs!"`,
+  `"Aubury's Rune Shop."`, `"Horvik's Armour Shop."`, `"Thessalia's Fine Clothes."`, `"Ye olde Tea Shoppe."`) and town
+  disambiguators (`"Ratpit bar (Varrock)"`). The shop matcher (§4) normalizes the former and **respects** the latter.
 
 ## 3. The model — supersede flat sells, keep gates as overlay
 
@@ -79,8 +83,12 @@ them (resolved to `(shop_id, item_id, cond_group)`) to `build_storeline` as the 
 - **Ownership rule:** if the owner authored any gate for an `(shop, item)`, the overlay owns that item's edges; Storeline
   does NOT add a duplicate unconditional edge for it. Storeline supplies every item the owner did not gate. The verifier
   checks no Storeline edge duplicates a gated item.
-- The owner's category-shorthand `sells` entries are **dropped** (superseded by Storeline); their loss is intentional,
-  not a residual.
+- **No-Storeline fallback (dialogue-shops):** a shop with **zero** Storeline rows (Baraek's Fur Stall, Varrock
+  Apothecary) keeps the owner's authored `sells` (resolved as in slice 6 — Baraek's "Fur" resolves; the Apothecary's
+  "Strength potions"/"Energy potions" stay the existing unresolved residual). Storeline supersedes flat sells **only for
+  shops it covers**; it never empties a shop it doesn't.
+- For **covered** shops, the owner's category-shorthand `sells` are **dropped** (superseded by Storeline); their loss is
+  intentional, not a residual.
 
 **Edges are shop-`src`** (like slice-6 sells) → they re-key in their **own** `rekey` call, NOT the item-`src` shared
 rekey. Builder-local edge band disjoint from slice 6's `0xE0` (e.g. `0xF0`; the `_MASK` 28-bit guard holds). The global
@@ -91,15 +99,24 @@ edge-id-uniqueness assert is the backstop.
 - **Item:** the existing `make_item_resolver(item_dictionary)` (canonical match + page-name disambiguation +
   noted-strip). Storeline `sold_item` values are real item names, so they resolve cleanly; true ambiguity → `None` →
   skipped + reported.
-- **Shop:** `sold_by` (the wiki shop display name) → the graph shop node by **exact name match** (then a slug fallback).
-  A graph shop with no matching `sold_by` rows, or a `sold_by` that matches no graph shop, is a **reported residual**
-  (not a failure). The build skips unmatched shops; the verifier lists them.
+- **Shop:** match `sold_by` → the graph shop node with a **normalize-but-town-aware** strategy (verified to resolve
+  13/15, 2026-06-26):
+  1. **Exact** name match (7 shops: Fancy Clothes Store, Lowe's, Varrock General Store, Varrock Swordshop, the 3 inns).
+  2. **Trailing-punctuation normalization** — strip trailing `.`/`!`/whitespace, casefold (5 shops: `Aubury's Rune
+     Shop.`, `Horvik's Armour Shop.`, `Thessalia's Fine Clothes.`, `Zaff's Superior Staffs!`, `Ye olde Tea Shoppe.`).
+  3. **Town-disambiguator match** — when the base name collides across towns, REQUIRE the `(Varrock)` parenthetical;
+     never strip it (else `Ratpit bar` wrongly matches `Ratpit bar (Keldagrim)`). `Ratpit Bar` → `Ratpit bar (Varrock)`.
+  4. (Operator-NPC fallback available but unneeded for Varrock's 15.)
+  - **Genuine no-Storeline shops** (Baraek's Fur Stall, Varrock Apothecary — dialogue sales, not a shop interface) are
+    a **reported residual**; they fall back to the owner's authored sells (decision 2). A `sold_by` matching no graph
+    shop is simply out of Varrock scope (skipped). The verifier lists the no-Storeline shops.
 
 ## 5. Reproducibility + verifier
 
-- **`data/fetch_storeline.py`** — runs the Bucket API query, writes the raw snapshot `data/raw/storeline_bucket.json`
-  (the full bucket). Mirrors `data/fetch_items_equipment.py`. Dataset `_provenance` (source_url, accessed, license
-  CC BY-NC-SA, query) recorded.
+- **`data/fetch_storeline.py`** — runs the Bucket API query **paginated** (`.offset(n).limit(5000)` until a short page;
+  the 5,000-row cap is hard), writes the raw snapshot `data/raw/storeline_bucket.json` (the full ~6,236-row bucket).
+  Mirrors `data/fetch_items_equipment.py`. Dataset `_provenance` (source_url, accessed, license CC BY-NC-SA, query,
+  row count) recorded; a stable sort makes the snapshot byte-deterministic.
 - **Deterministic parse** — the builder (or a `parse_storeline` helper) reads the committed raw snapshot; the committed
   graph is re-derivable from it offline. A `--refresh` mode re-queries live and diffs (the `audit_quest_requirements.py`
   reproduce-offline / freshness-online pattern).
@@ -124,9 +141,10 @@ global edge-id assert covers them.
 - `assemble` **byte-stable** (re-run → identical bytes); global edge-id assert passes.
 - `validate_kg` **exit 0** (`sells` VIOLATION-clean: `shop → item`, dsts resolve; cond_groups well-formed).
 - `validate_cost` **exit 0** (NO price/currency *cost tokens*; `currency` is a descriptive string, not a cost).
-- `verify_storeline.py` **exit 0** with a clean resolution + shop-match report; **the 27 categories are gone** — Varrock
-  shops now carry their exact Storeline stock (Lowe's → bows+arrows+crossbow; Aubury → the exact runes; General Store →
-  the 13 items).
+- `verify_storeline.py` **exit 0** with a clean resolution + shop-match report; **25 of the 27 categories become exact
+  stock** — the 13 covered shops carry their Storeline items (Lowe's → bows+arrows+crossbow; Aubury → the exact runes;
+  General Store → the 13 items). The **2 remaining** (Varrock Apothecary's "Strength potions"/"Energy potions") stay a
+  reported residual — that shop is dialogue-only (no Storeline) and falls back to the owner's authored sells.
 - **Zaff's `Battlestaff` keeps its What-Lies-Below `cond_group`**; the Varrock-diary extra-stock offer survives as the
   authored gated edge.
 - `verify_map.py` still exit 0 (it no longer reports the sells residual, since `build_map` no longer emits sells; or it
@@ -154,9 +172,10 @@ global edge-id assert covers them.
 
 ## 9. Open micro-items (settle in implementation)
 
-- **Shop-name match edge cases** — confirm all 15 `sold_by` values against the graph shop names; a mismatch (e.g.
-  Aubury's exact wiki shop name) is a reported residual, not a build break. Verify which Varrock pubs have Storeline
-  rows (Blue Moon Inn does; confirm the others).
+- **Shop-name match — RESOLVED (verified 2026-06-26):** 13/15 resolve via the §4 strategy (7 exact + 5 trailing-
+  punctuation + Ratpit via town-disambiguator); all 3 inns have a `Beer` row; **2 dialogue-shops (Baraek's Fur Stall,
+  Varrock Apothecary) have no Storeline → owner-sells fallback** (decision 2 / §3). The matcher + its residual are
+  tested.
 - **`build_map` ↔ `build_storeline` overlay handoff** — whether the gate overlay is passed as a return value from
   `build_map` or read independently by `build_storeline` from `varrock.json`. Prefer an explicit handoff (one reader of
   the owner file).
