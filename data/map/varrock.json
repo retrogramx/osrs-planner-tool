@@ -877,7 +877,7 @@
       "source_url": "https://oldschool.runescape.wiki/w/Varrock",
       "sells": [
         {
-          "item_name": "Furs",
+          "item_name": "Fur",
           "item_id": null,
           "source_token": "fur trader in Varrock Square"
         }
@@ -1101,36 +1101,6 @@
       "source_url": "https://oldschool.runescape.wiki/w/Zaff%27s_Superior_Staffs",
       "sells": [
         {
-          "item_name": "Staff",
-          "item_id": null,
-          "source_token": "sells basic staves (Staff, Magic staff)"
-        },
-        {
-          "item_name": "Magic staff",
-          "item_id": null,
-          "source_token": "sells basic staves (Staff, Magic staff)"
-        },
-        {
-          "item_name": "Staff of air",
-          "item_id": null,
-          "source_token": "elemental staves (air, water, earth, fire)"
-        },
-        {
-          "item_name": "Staff of water",
-          "item_id": null,
-          "source_token": "elemental staves (air, water, earth, fire)"
-        },
-        {
-          "item_name": "Staff of earth",
-          "item_id": null,
-          "source_token": "elemental staves (air, water, earth, fire)"
-        },
-        {
-          "item_name": "Staff of fire",
-          "item_id": null,
-          "source_token": "elemental staves (air, water, earth, fire)"
-        },
-        {
           "item_name": "Battlestaff",
           "item_id": null,
           "condition": {
@@ -1200,30 +1170,6 @@
             "text": "completed Varrock Diary Elite tier"
           },
           "source_token": "Elite | 120 | 7,000 coins"
-        },
-        {
-          "item_name": "Staves",
-          "item_id": null
-        },
-        {
-          "item_name": "Battlestaves",
-          "item_id": null,
-          "condition": {
-            "type": "quest",
-            "ref": "What Lies Below",
-            "state": "completed"
-          },
-          "source_token": "battlestaves ... to players who have completed What Lies Below"
-        },
-        {
-          "item_name": "Additional battlestaves",
-          "item_id": null,
-          "condition": {
-            "type": "achievement_diary",
-            "ref": "Varrock Diary",
-            "state": "completed"
-          },
-          "source_token": "additional battlestaves upon completion of the Varrock Diaries"
         }
       ]
     },

@@ -162,6 +162,22 @@
   {
     "children": [
       {
+        "atom_type": "achievement_diary",
+        "data": {
+          "state": "completed"
+        },
+        "qty": null,
+        "ref_node": "diary:varrock:easy",
+        "threshold": null
+      }
+    ],
+    "id": 4024956,
+    "op": "and",
+    "parent": null
+  },
+  {
+    "children": [
+      {
         "atom_type": "quest",
         "data": {
           "state": "completed"
@@ -2286,6 +2302,22 @@
   {
     "children": [
       {
+        "atom_type": "achievement_diary",
+        "data": {
+          "state": "completed"
+        },
+        "qty": null,
+        "ref_node": "diary:varrock:hard",
+        "threshold": null
+      }
+    ],
+    "id": 4324744,
+    "op": "and",
+    "parent": null
+  },
+  {
+    "children": [
+      {
         "atom_type": "skill_level",
         "data": {
           "boostable": true
@@ -3645,6 +3677,22 @@
       }
     ],
     "id": 4543916,
+    "op": "and",
+    "parent": null
+  },
+  {
+    "children": [
+      {
+        "atom_type": "achievement_diary",
+        "data": {
+          "state": "completed"
+        },
+        "qty": null,
+        "ref_node": "diary:varrock:elite",
+        "threshold": null
+      }
+    ],
+    "id": 4553627,
     "op": "and",
     "parent": null
   },
@@ -8981,6 +9029,22 @@
   {
     "children": [
       {
+        "atom_type": "quest",
+        "data": {
+          "state": "in_progress"
+        },
+        "qty": null,
+        "ref_node": "quest:what-lies-below",
+        "threshold": null
+      }
+    ],
+    "id": 5404288,
+    "op": "and",
+    "parent": null
+  },
+  {
+    "children": [
+      {
         "atom_type": "account_type",
         "data": {
           "value": "main"
@@ -12525,6 +12589,22 @@
       }
     ],
     "id": 5954273,
+    "op": "and",
+    "parent": null
+  },
+  {
+    "children": [
+      {
+        "atom_type": "achievement_diary",
+        "data": {
+          "state": "completed"
+        },
+        "qty": null,
+        "ref_node": "diary:varrock:medium",
+        "threshold": null
+      }
+    ],
+    "id": 5959938,
     "op": "and",
     "parent": null
   },

@@ -19,4 +19,6 @@ data/raw/**
 # Diary reward source-grounding cache IS committed provenance (offline verifier;
 # rebuilt from achievement_diaries.json's committed wiki reward prose)
 !data/raw/diary_reward_blocks.json
+# Storeline bucket IS committed provenance (offline verifier; source-grounded shop stock)
+!data/raw/storeline_bucket.json
 .superpowers/

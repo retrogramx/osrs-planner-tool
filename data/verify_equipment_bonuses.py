@@ -62,8 +62,16 @@ def main() -> int:
             errors.append(f"[stats] {tag} missing stat fields {sorted(missing)}")
         elif any(not isinstance(stats[k], (int, float)) for k in STAT_FIELDS):
             errors.append(f"[stats] {tag} has non-numeric stat value")
-        elif rec.get("slot") in COMBAT_SLOTS and all(stats[k] == 0 for k in STAT_FIELDS):
-            errors.append(f"[zero] {tag} all-zero stat block on combat slot {rec.get('slot')!r}")
+        elif (rec.get("slot") in COMBAT_SLOTS
+              and all(stats[k] == 0 for k in STAT_FIELDS)
+              and any(any((r.get("stats") or {}).get(k, 0) != 0 for k in STAT_FIELDS)
+                      for r in by_id[iid])):
+            # Only flag zero-stat if a non-zero record EXISTS for this item — that means
+            # the selection rule picked the wrong variant (the empty-variant failure mode).
+            # Items where ALL records are zero are genuinely cosmetic (aprons, skirts, etc.)
+            # and are correctly represented with all-zero stats.
+            errors.append(f"[zero] {tag} all-zero stat block on combat slot {rec.get('slot')!r} "
+                          f"(non-zero variant exists — selection bug)")
         slot = rec.get("slot")
         if slot not in KNOWN_SLOTS:
             errors.append(f"[slot] {tag} unknown slot {slot!r}")

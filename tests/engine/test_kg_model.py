@@ -17,6 +17,7 @@ def test_node_kind_members_match_schema_taxonomy():
         "account_type", "gear_loadout", "activity", "diary",
         "combat_achievement", "minigame", "clog_slot", "goal",
         "recipe", "equipment_bonuses",
+        "place", "npc", "shop",
     }
 
 
@@ -30,7 +31,7 @@ def test_edge_type_members_match_schema():
         "requires", "grants", "drops", "located_in", "gated_by",
         "effect", "progress_towards", "supersedes", "same_entity",
         "consumes", "produces", "degrades_to", "repairs",
-        "has_bonuses",
+        "has_bonuses", "operates", "sells",
     }
 
 
@@ -271,3 +272,18 @@ def test_equipment_bonuses_and_has_bonuses_are_live():
     assert hb["status"] == "live" and hb["domain"] == ["item"] and hb["range"] == ["equipment_bonuses"]
     assert hb["dst"] == "required" and hb["reified"] is False
     assert hb["cond_group"] == "forbidden"
+
+
+def test_connective_kinds_live():
+    from osrs_planner.engine.kg.model import NodeKind, EdgeType
+    assert NodeKind.PLACE.value == "place" and NodeKind.NPC.value == "npc" and NodeKind.SHOP.value == "shop"
+    assert EdgeType.OPERATES.value == "operates" and EdgeType.SELLS.value == "sells"
+    assert EdgeType.LOCATED_IN.value == "located_in"
+    import json, pathlib
+    s = json.loads((pathlib.Path(__file__).resolve().parents[2] / "kg" / "schema.json").read_text())
+    for nk in ("npc", "shop", "place"):
+        assert s["node_kinds"][nk]["status"] == "live", nk
+    for ek in ("located_in", "operates", "sells"):
+        assert s["edge_kinds"][ek]["status"] == "live", ek
+    assert s["edge_kinds"]["operates"]["domain"] == ["npc"] and s["edge_kinds"]["operates"]["range"] == ["shop"]
+    assert s["edge_kinds"]["sells"]["domain"] == ["shop"] and s["edge_kinds"]["sells"]["range"] == ["item"]
