@@ -11,20 +11,15 @@ from __future__ import annotations
 from collections import defaultdict
 
 from osrs_planner.engine.kg.model import (
-    AtomType, ConditionAtom, ConditionGroup, Edge, EdgeType, Node, NodeKind, Op,
+    AtomType, ConditionAtom, ConditionGroup, Edge, EdgeType, Node, NodeKind,
 )
-from kg_ingest.ids import _stable_hash, item_id, slugify
+from kg_ingest.ids import _stable_hash, slugify
 
 _EDGE_BAND = 0xE0000000
-_GROUP_BAND = 0xD0000000
 
 
 def _edge_id(src_id: str, slot: str) -> int:
     return _EDGE_BAND | _stable_hash(f"{src_id}#edge#{slot}")
-
-
-def _gid(owner_id: str, slot: str) -> int:
-    return _GROUP_BAND | _stable_hash(f"{owner_id}#group#{slot}")
 
 
 def make_item_resolver(dict_records):

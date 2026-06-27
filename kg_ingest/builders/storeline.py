@@ -11,7 +11,7 @@ from __future__ import annotations
 import re
 from collections import defaultdict
 
-from osrs_planner.engine.kg.model import ConditionGroup, Edge, EdgeType, Node, Op
+from osrs_planner.engine.kg.model import ConditionGroup, Edge, EdgeType, Op
 from kg_ingest.ids import _stable_hash, item_id
 from kg_ingest.builders.map_varrock import make_item_resolver, _condition_atom
 
