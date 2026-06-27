@@ -21,9 +21,9 @@ exact wiki stock, while the owner's editorial **prose gates** (the Zaff diary/qu
 |---|---|---|
 | 1 | Source | **`Bucket:Storeline`** (per-shop stock), via the wiki **Bucket API**. NOT Category-page expansion. |
 | 2 | Stock model | **Storeline = the stock spine** *for shops it covers*. It supersedes the owner's flat `sells` (including the 23 that resolved in slice 6) for the **13/15 Varrock shops with Storeline rows**. A shop with **no Storeline rows** (dialogue-shops — Baraek's Fur Stall, Varrock Apothecary) **falls back to the owner's authored sells**. The owner's authored data otherwise retains only structure (slice 6) + the **prose gates** overlay. |
-| 3 | Gate sourcing | **Structured gates from Storeline** (currency; **members recorded as edge DATA, not a cond_group** — Varrock is F2P-dominant + no members atom exists yet; the account gate is deferred). **Prose gates stay owner-authored** (the Zaff diary-discount + What-Lies-Below offers) — the wiki has these only as prose/bespoke tables; editorial authoring is the correct source. The owner's overlapping authored offers are **canonicalized/collapsed** into a clean gate set (§3), subject to **owner editorial review**. Skillcape/wield-level gates → deferred (item requirement, not shop data). |
+| 3 | Gate sourcing | **Structured gates from Storeline** (**members recorded as edge DATA, not a cond_group** — Varrock is F2P-dominant + no members atom exists yet; the account gate is deferred; **currency is deferred to the snapshot**, see decision 5). **Prose gates stay owner-authored** (the Zaff diary-discount + What-Lies-Below offers) — the wiki has these only as prose/bespoke tables; editorial authoring is the correct source. The owner's overlapping authored offers are **canonicalized/collapsed** into a clean gate set (§3), subject to **owner editorial review**. Skillcape/wield-level gates → deferred (item requirement, not shop data). |
 | 4 | Scope | **Full bucket snapshot committed** (the ~6,237-row reproducible raw snapshot); **sells edges generated only for the 15 Varrock shops** already in the graph. Future towns need no re-ingest. |
-| 5 | Pricing | **Deferred.** The snapshot retains `store_buy_price`/`store_sell_price`/`store_stock` for the future cost layer; the `sells` edges carry `currency` + `members` only. No price tokens enter the graph (`validate_cost` stays clean — the slice-6 deferral). |
+| 5 | Pricing | **Deferred.** The snapshot retains `store_buy_price`/`store_sell_price`/`store_stock`/`store_currency` for the future cost layer; the `sells` edges carry **`members` (+ `source_token`) only** — `validate_cost` Invariant 6 (`data/validate_cost.py:189`) FAILS on any `"price"`/`"cost"`/`"currency"` key in `kg/*.json`, so currency AND price stay out of the graph (the slice-6 deferral). |
 
 ## 2. The data source — `Bucket:Storeline`
 
@@ -65,7 +65,7 @@ them (resolved to `(shop_id, item_id, cond_group)`) to `build_storeline` as the 
 - Input: the Storeline records, the set of in-graph Varrock shop names, an `item_resolver`, and the owner gate overlay.
 - For each Storeline row whose `sold_by` matches an in-graph shop:
   - resolve `sold_item` → `item_id` (`make_item_resolver`; skip + report on no/ambiguous match — never fabricate).
-  - emit `sells`: `shop:<slug> → item:<id>`, `data = {currency: <store_currency>, members: <bool>, source_token}`.
+  - emit `sells`: `shop:<slug> → item:<id>`, `data = {source_token, members?}` (NO currency/price — validate_cost Inv 6).
     (`source_token` = the dataset provenance; bulk Bucket data is grounded by the snapshot + verifier, not per-row
     quotes — the `items_equipment`/`drop_rates` precedent.)
 - **Gate overlay — canonicalize first, then apply (two cases):**
@@ -124,7 +124,7 @@ edge-id-uniqueness assert is the backstop.
   (the editorial-data lesson):
   - **Hard-fail (exit 1) — structural only:** a matched shop's `sells` dst is not a real item node; an owner gate that
     resolves to neither overlay case (case 1 nor 2); a `cond_group` ref that doesn't resolve to a real quest/diary node;
-    a malformed currency; a Storeline edge that **duplicates an owner-gated item** (violates the §3 ownership rule).
+    a Storeline edge that **duplicates an owner-gated item** (violates the §3 ownership rule).
   - **Report (exit 0) — residuals:** shops with no Storeline match; `sold_item` names that don't resolve. Printed with
     counts (the to-do for a future ambiguity/alias pass).
 
@@ -140,7 +140,7 @@ global edge-id assert covers them.
 
 - `assemble` **byte-stable** (re-run → identical bytes); global edge-id assert passes.
 - `validate_kg` **exit 0** (`sells` VIOLATION-clean: `shop → item`, dsts resolve; cond_groups well-formed).
-- `validate_cost` **exit 0** (NO price/currency *cost tokens*; `currency` is a descriptive string, not a cost).
+- `validate_cost` **exit 0** (Inv 6: NO `"price"`/`"cost"`/`"currency"` key in `kg/*.json`; currency + price live in the snapshot, not on the edges).
 - `verify_storeline.py` **exit 0** with a clean resolution + shop-match report; **25 of the 27 categories become exact
   stock** — the 13 covered shops carry their Storeline items (Lowe's → bows+arrows+crossbow; Aubury → the exact runes;
   General Store → the 13 items). The **2 remaining** (Varrock Apothecary's "Strength potions"/"Energy potions") stay a
