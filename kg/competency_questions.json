@@ -22,5 +22,8 @@
     ,{ "id": "cq-battlestaff-sold-by",
       "question": "Where can I buy a battlestaff?",
       "method": "sold_by", "target": "item:1391", "expect_min": 1 }
+    ,{ "id": "cq-lowes-shop-stock",
+      "question": "What does Lowe's Archery Emporium stock?",
+      "method": "shop_stock", "target": "shop:lowes-archery-emporium", "expect_min": 10 }
   ]
 }
