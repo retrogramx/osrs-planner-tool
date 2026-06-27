@@ -1,11 +1,10 @@
 """build_map — the connective Varrock vertical (slice 6).
 
-Reads data/map/varrock.json (owner-authored) and emits the containment/economic
-spine: place/npc(operators)/shop nodes + located_in/operates/sells/same_entity
-edges. Resolves item_name->item_id against item_dictionary (canonical match;
-skips + the verifier reports unresolved). The 7 gated sells become a cond_group
-on the sells edge, reusing the existing QUEST/ACHIEVEMENT_DIARY atoms. These edges
-are place/npc/shop-src (NOT item-src) -> assemble re-keys them in their own call.
+Reads data/map/varrock.json (owner-authored) and emits the containment spine:
+place/npc(operators)/shop nodes + located_in/operates/same_entity edges.
+Sells edges and their conditional gates (reusing QUEST/ACHIEVEMENT_DIARY atoms)
+are now emitted by build_storeline (slice 7). These edges are place/npc/shop-src
+(NOT item-src) -> assemble re-keys them in their own call.
 """
 from __future__ import annotations
 
@@ -106,29 +105,12 @@ def build_map(map_data, resolve, region_ids):
             edges.append(Edge(id=_edge_id(nid, f"operates#{shid}"), type=EdgeType.OPERATES,
                               src=nid, dst=shid, cond_group=None, data={}))
 
-    # shops + sells (item resolution + conditional gates)
+    # shops (containment only; sells now come from build_storeline — slice 7)
     for sh in map_data["shops"]:
         nodes.append(Node(id=sh["id"], kind=NodeKind.SHOP, name=sh["name"], slug=_slug(sh["id"]),
                           data={"operator": sh.get("operator"), "shop_type": sh.get("shop_type")}))
         if sh.get("located_in"):
             edges.append(Edge(id=_edge_id(sh["id"], "located_in"), type=EdgeType.LOCATED_IN,
                               src=sh["id"], dst=sh["located_in"], cond_group=None, data={}))
-        for i, offer in enumerate(sh.get("sells", [])):
-            iid = resolve(offer["item_name"])
-            if iid is None:
-                continue  # unresolved -> skipped; verify_map.py reports it
-            cg = None
-            if offer.get("condition"):
-                atom = _condition_atom(offer["condition"])
-                if atom is None:
-                    continue  # unknown condition type -> skipped; verifier flags
-                gid = _gid(sh["id"], f"sell{i}")
-                groups[gid] = ConditionGroup(id=gid, op=Op.AND, parent=None, children=[atom])
-                cg = gid
-            data = {"source_token": offer.get("source_token")}
-            if offer.get("noted"):
-                data["noted"] = True
-            edges.append(Edge(id=_edge_id(sh["id"], f"sell#{i}"), type=EdgeType.SELLS,
-                              src=sh["id"], dst=item_id(iid), cond_group=cg, data=data))
 
     return nodes, edges, groups

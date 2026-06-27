@@ -1,5 +1,5 @@
 from kg_ingest.builders.map_varrock import make_item_resolver, build_map
-from osrs_planner.engine.kg.model import NodeKind, EdgeType, AtomType, Op
+from osrs_planner.engine.kg.model import NodeKind, EdgeType, AtomType, Op, EdgeType as _ET
 
 DICT = [
     {"item_id": 1391, "name": "Battlestaff", "page_name": "Battlestaff", "is_canonical": True, "is_variant": False, "members": True},
@@ -62,15 +62,17 @@ def test_places_npcs_shops_and_located_in():
     # same_entity bridge for the place that has a legacy region node
     assert ("place:varrock", "region:varrock") in {(e.src, e.dst) for e in edges if e.type is EdgeType.SAME_ENTITY}
 
+def test_build_map_emits_no_sells():
+    import json, pathlib
+    root = pathlib.Path(__file__).resolve().parents[2]
+    m = json.loads((root / "data" / "map" / "varrock.json").read_text())
+    resolve = make_item_resolver(json.loads((root / "data" / "item_dictionary.json").read_text())["records"])
+    nodes, edges, groups = build_map(m, resolve, set())
+    assert not any(e.type is _ET.SELLS for e in edges)   # sells now come from build_storeline
+    assert groups == {}                                  # gate groups moved to build_storeline
+    assert any(e.type is _ET.LOCATED_IN for e in edges)  # containment still emitted
+
 def test_sells_resolution_skip_and_conditional_gate():
-    nodes, edges, groups = build_map(MAP, make_item_resolver(DICT), set())
-    sells = [e for e in edges if e.type is EdgeType.SELLS]
-    assert {e.dst for e in sells} == {"item:1391", "item:1381"}      # "Battlestaff (noted)" strips to 1391
-    assert all(e.src == "shop:zaffs-superior-staffs" for e in sells)
-    assert len(sells) == 3                                            # Nonexistent Doohickey SKIPPED
-    quest = next(e for e in sells if e.cond_group and groups[e.cond_group].children[0].atom_type is AtomType.QUEST)
-    qg = groups[quest.cond_group]
-    assert qg.op is Op.AND and qg.children[0].ref_node == "quest:what-lies-below" and qg.children[0].data["state"] == "in_progress"
-    diary = next(e for e in sells if e.data.get("noted"))
-    dg = groups[diary.cond_group]
-    assert dg.children[0].atom_type is AtomType.ACHIEVEMENT_DIARY and dg.children[0].ref_node == "diary:varrock:hard"
+    # Moved to build_storeline: Task 6 integration test
+    # This test formerly asserted sells edges from build_map; those now come from build_storeline.
+    pass
