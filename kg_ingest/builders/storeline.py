@@ -56,3 +56,70 @@ def match_shop(shop_name, soldby_keys):
     if len(town_hits) == 1:
         return town_hits[0]
     return None
+
+
+def _emit_owner_offer(edges, groups, sid, idx, offer, resolve, dict_by_id, prefix):
+    """Emit one owner-authored sells offer (slice-6 logic). Returns the resolved item_id or None."""
+    iid = resolve(offer["item_name"])
+    if iid is None:
+        return None  # unresolved -> reported by verify_storeline, never fabricated
+    cg = None
+    if offer.get("condition"):
+        atom = _condition_atom(offer["condition"])
+        if atom is None:
+            return None  # unknown condition type -> reported/failed by verifier
+        gid = _gid(sid, f"{prefix}{idx}")
+        groups[gid] = ConditionGroup(id=gid, op=Op.AND, parent=None, children=[atom])
+        cg = gid
+    data = {"source_token": offer.get("source_token")}   # NO currency/price -> validate_cost Inv 6
+    mem = dict_by_id.get(iid, {}).get("members")
+    if mem is not None:
+        data["members"] = mem
+    if offer.get("noted"):
+        data["noted"] = True
+    edges.append(Edge(id=_edge_id(sid, f"{prefix}#{idx}"), type=EdgeType.SELLS,
+                      src=sid, dst=item_id(iid), cond_group=cg, data=data))
+    return iid
+
+
+def build_storeline(storeline_records, map_data, dict_records):
+    resolve = make_item_resolver(dict_records)
+    dict_by_id = {r["item_id"]: r for r in dict_records}
+    by_shop = index_by_shop(storeline_records)
+    soldby_keys = list(by_shop)
+
+    edges: list[Edge] = []
+    groups: dict[int, ConditionGroup] = {}
+
+    for sh in map_data["shops"]:
+        sid = sh["id"]
+        owner_sells = sh.get("sells", [])
+        matched = match_shop(sh["name"], soldby_keys)
+
+        if matched is None:
+            # NO-STORELINE FALLBACK (dialogue-shops): emit the owner's authored sells
+            for i, offer in enumerate(owner_sells):
+                _emit_owner_offer(edges, groups, sid, i, offer, resolve, dict_by_id, "own")
+            continue
+
+        # COVERED SHOP: owner gates are overlay-owned; Storeline supplies the rest.
+        gated = [o for o in owner_sells if o.get("condition")]
+        gated_items = set()
+        for i, offer in enumerate(gated):
+            iid = _emit_owner_offer(edges, groups, sid, i, offer, resolve, dict_by_id, "gate")
+            if iid is not None:
+                gated_items.add(iid)
+        for j, row in enumerate(by_shop[matched]):
+            iid = resolve(row.get("sold_item", ""))
+            if iid is None:
+                continue                      # unresolved -> reported by verify_storeline
+            if iid in gated_items:
+                continue                      # ownership rule: overlay owns gated items
+            data = {"source_token": "Bucket:Storeline"}   # currency stays in the snapshot, NOT the graph
+            mem = dict_by_id.get(iid, {}).get("members")
+            if mem is not None:
+                data["members"] = mem
+            edges.append(Edge(id=_edge_id(sid, f"sl#{j}"), type=EdgeType.SELLS,
+                              src=sid, dst=item_id(iid), cond_group=None, data=data))
+
+    return [], edges, groups
