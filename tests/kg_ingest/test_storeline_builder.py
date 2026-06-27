@@ -75,6 +75,8 @@ def test_storeline_edge_carries_members_no_cost_tokens():
     assert "currency" not in staff.data
     assert "store_currency" not in staff.data
     assert "store_buy_price" not in staff.data
+    assert "price" not in staff.data
+    assert "cost" not in staff.data
 
 def test_unresolved_sold_item_is_skipped_not_fabricated():
     sl = STORELINE + [{"sold_by": "Zaff's Superior Staffs!", "sold_item": "Nonexistent thing", "store_currency": "Coins"}]

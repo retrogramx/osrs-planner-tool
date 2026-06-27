@@ -34,11 +34,11 @@ from kg_ingest.builders.equipment_bonuses import build_equipment_bonuses
 from kg_ingest.builders.goals import build_goals
 from kg_ingest.builders.items import build_items
 from kg_ingest.builders.map_varrock import build_map, make_item_resolver
-from kg_ingest.builders.storeline import build_storeline
 from kg_ingest.builders.quest_rewards import build_quest_rewards
 from kg_ingest.builders.quests import build_quests
 from kg_ingest.builders.recipes import build_recipes
 from kg_ingest.builders.repairs import build_repairs
+from kg_ingest.builders.storeline import build_storeline
 from kg_ingest.builders.supporting import build_supporting
 
 GROUP_OFFSET = 4_000_000
@@ -418,6 +418,7 @@ def assemble() -> None:
         _prior_src_counts: dict[str, int] = {}
         for _e in edges:
             _prior_src_counts[_e.src] = _prior_src_counts.get(_e.src, 0) + 1
+        # st_nodes is [] — build_storeline emits no nodes; sold items auto-import via the reference collection below
         st_nodes, st_edges, st_groups = rekey(st_nodes, st_edges, st_groups,
                                               edge_index_seed=_prior_src_counts)
         edges = edges + st_edges

@@ -72,7 +72,3 @@ def test_build_map_emits_no_sells():
     assert groups == {}                                  # gate groups moved to build_storeline
     assert any(e.type is _ET.LOCATED_IN for e in edges)  # containment still emitted
 
-def test_sells_resolution_skip_and_conditional_gate():
-    # Moved to build_storeline: Task 6 integration test
-    # This test formerly asserted sells edges from build_map; those now come from build_storeline.
-    pass

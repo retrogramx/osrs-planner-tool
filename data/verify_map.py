@@ -10,8 +10,6 @@ from __future__ import annotations
 import json, os, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-sys.path.insert(0, ROOT)                        # for kg_ingest.*
-sys.path.insert(0, os.path.join(ROOT, "src"))   # for osrs_planner.* (imported by the builder)
 MAP = os.path.join(ROOT, "data", "map", "varrock.json")
 
 
