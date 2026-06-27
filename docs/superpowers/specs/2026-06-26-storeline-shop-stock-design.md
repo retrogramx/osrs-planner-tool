@@ -21,7 +21,7 @@ exact wiki stock, while the owner's editorial **prose gates** (the Zaff diary/qu
 |---|---|---|
 | 1 | Source | **`Bucket:Storeline`** (per-shop stock), via the wiki **Bucket API**. NOT Category-page expansion. |
 | 2 | Stock model | **Storeline = the stock spine.** It supersedes ALL of the owner's flat `sells` (including the 23 that resolved in slice 6). The owner's authored data retains only structure (slice 6) + the **prose gates** as an overlay. |
-| 3 | Gate sourcing | **Structured gates from Storeline** (currency; members via `sold_item_json.Members` / `item_dictionary.members`). **Prose gates stay owner-authored** (the Zaff diary-discount + What-Lies-Below offers) — the wiki has these only as prose/bespoke tables; editorial authoring is the correct source. Skillcape/wield-level gates → deferred (item requirement, not shop data). |
+| 3 | Gate sourcing | **Structured gates from Storeline** (currency; **members recorded as edge DATA, not a cond_group** — Varrock is F2P-dominant + no members atom exists yet; the account gate is deferred). **Prose gates stay owner-authored** (the Zaff diary-discount + What-Lies-Below offers) — the wiki has these only as prose/bespoke tables; editorial authoring is the correct source. The owner's overlapping authored offers are **canonicalized/collapsed** into a clean gate set (§3), subject to **owner editorial review**. Skillcape/wield-level gates → deferred (item requirement, not shop data). |
 | 4 | Scope | **Full bucket snapshot committed** (the ~6,237-row reproducible raw snapshot); **sells edges generated only for the 15 Varrock shops** already in the graph. Future towns need no re-ingest. |
 | 5 | Pricing | **Deferred.** The snapshot retains `store_buy_price`/`store_sell_price`/`store_stock` for the future cost layer; the `sells` edges carry `currency` + `members` only. No price tokens enter the graph (`validate_cost` stays clean — the slice-6 deferral). |
 
@@ -64,12 +64,21 @@ them (resolved to `(shop_id, item_id, cond_group)`) to `build_storeline` as the 
   - emit `sells`: `shop:<slug> → item:<id>`, `data = {currency: <store_currency>, members: <bool>, source_token}`.
     (`source_token` = the dataset provenance; bulk Bucket data is grounded by the snapshot + verifier, not per-row
     quotes — the `items_equipment`/`drop_rates` precedent.)
-- **Gate overlay (two cases):**
-  1. **Condition on a stocked item** — an owner gate whose `(shop, item)` matches a Storeline-derived edge → attach its
-     `cond_group` to that edge (e.g. the What-Lies-Below quest-gate on Zaff's `Battlestaff`).
-  2. **A conditional offer with no Storeline row** — an owner gate that is a distinct perk (the Varrock-diary EXTRA
-     battlestaff stock, which Storeline does not itemize separately) → emit it as an **authored gated `sells` edge**
-     (`data` marks it owner-editorial), reusing the slice-6 `cond_group` construction.
+- **Gate overlay — canonicalize first, then apply (two cases):**
+  - **Canonicalization (owner-reviewed):** the owner's authored gate offers are overlapping (Zaff has **6** battlestaff
+    offers: quest `in_progress` *and* `completed`, all four diary tiers, noted vs unnoted). A one-time canonicalizing
+    edit collapses each item's offers into a clean set — typically **base-unlock** (battlestaff gated by What Lies
+    Below) + **one perk** (the diary daily noted allotment, gated by the minimum tier `diary:varrock:easy`; per-tier
+    *quantity* is deferred with pricing/stock). This edit lands in `varrock.json` and is an **owner editorial-review
+    checkpoint** (a validator cannot judge the collapse — the human gate). The builder then consumes the canonical gates.
+  - **Case 1 — condition on a stocked item:** a canonical gate whose `(shop, item)` matches a Storeline-derived edge →
+    attach its `cond_group` to that edge (the What-Lies-Below gate on Zaff's `Battlestaff`).
+  - **Case 2 — a conditional offer with no Storeline row:** a canonical gate that is a distinct perk (the diary noted
+    allotment, which Storeline does not itemize) → emit it as an **authored gated `sells` edge** (`data` marks it
+    owner-editorial), reusing the slice-6 `cond_group` construction.
+- **Ownership rule:** if the owner authored any gate for an `(shop, item)`, the overlay owns that item's edges; Storeline
+  does NOT add a duplicate unconditional edge for it. Storeline supplies every item the owner did not gate. The verifier
+  checks no Storeline edge duplicates a gated item.
 - The owner's category-shorthand `sells` entries are **dropped** (superseded by Storeline); their loss is intentional,
   not a residual.
 
@@ -98,7 +107,7 @@ edge-id-uniqueness assert is the backstop.
   (the editorial-data lesson):
   - **Hard-fail (exit 1) — structural only:** a matched shop's `sells` dst is not a real item node; an owner gate that
     resolves to neither overlay case (case 1 nor 2); a `cond_group` ref that doesn't resolve to a real quest/diary node;
-    a malformed currency.
+    a malformed currency; a Storeline edge that **duplicates an owner-gated item** (violates the §3 ownership rule).
   - **Report (exit 0) — residuals:** shops with no Storeline match; `sold_item` names that don't resolve. Printed with
     counts (the to-do for a future ambiguity/alias pass).
 
@@ -155,5 +164,8 @@ global edge-id assert covers them.
   a free group band; confirm against `_MASK`.
 - **`verify_map` sells section** — move the sells-resolution report out of `verify_map` into `verify_storeline` (sells
   no longer originate in `build_map`).
-- **`members` as a gate vs data** — record `members` on the sells edge data now; whether to also emit a member
-  `cond_group` (account-property gate) is a small call — default to data-only this slice.
+- **`members` — RESOLVED: data-only** this slice (recorded on the sells edge `data`); the account-property `cond_group`
+  is deferred (no members atom yet; Varrock is F2P-dominant).
+- **Gate canonicalization is an owner-review checkpoint** — the collapsed gate set (the `varrock.json` edit, §3) must be
+  presented to the owner for editorial sign-off before merge; a validator cannot judge the collapse. The plan includes
+  this checkpoint as a discrete task.
