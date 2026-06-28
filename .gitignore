@@ -21,4 +21,6 @@ data/raw/**
 !data/raw/diary_reward_blocks.json
 # Storeline bucket IS committed provenance (offline verifier; source-grounded shop stock)
 !data/raw/storeline_bucket.json
+# Wiki location categories IS committed provenance (offline snapshot for world skeleton shape test)
+!data/raw/wiki_location_categories.json
 .superpowers/
