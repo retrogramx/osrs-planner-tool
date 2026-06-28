@@ -1,4 +1,4 @@
-from kg_ingest.builders.world import is_excluded, build_world, parent_for
+from kg_ingest.builders.world import is_excluded, build_world, parent_for, _resolve_reachable
 from osrs_planner.engine.kg.model import EdgeType
 
 
@@ -75,3 +75,17 @@ def test_category_rung_prefers_backbone_over_content():
     # with NO backbone category, content still wins (genuine re-home preserved)
     assert parent_for("Ardougne Sewers mine", {"Mines", "Ardougne"},
                       {"ardougne": "place:ardougne"}, backbone_names=set()) == ("place:ardougne", "category")
+
+
+def test_resolve_reachable_demotes_cycle():
+    # a -> b -> a is a cycle disconnected from the root; both demote to the root
+    parent = {"place:gielinor": None, "place:a": "place:b", "place:b": "place:a"}
+    out = _resolve_reachable(parent)
+    assert out["place:a"] == "place:gielinor"
+    assert out["place:b"] == "place:gielinor"
+
+
+def test_resolve_reachable_keeps_valid_chain():
+    parent = {"place:gielinor": None, "place:x": "place:gielinor", "place:y": "place:x"}
+    out = _resolve_reachable(parent)
+    assert out["place:y"] == "place:x" and out["place:x"] == "place:gielinor"

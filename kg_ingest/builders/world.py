@@ -120,6 +120,26 @@ def _slug(name: str) -> str:
     return "place:" + re.sub(r"[^a-z0-9]+", "-", re.sub(r"\s*\(.*?\)\s*$", "", name.lower())).strip("-")
 
 
+def _resolve_reachable(parent):
+    """Demote any non-root node that cannot reach place:gielinor (cycle/dangling) to the
+    root. Deterministic fixpoint (sorted order). Guarantees single-root + acyclic."""
+    def reaches_root(s):
+        seen, cur = set(), s
+        while cur != "place:gielinor":
+            if cur is None or cur in seen:
+                return False
+            seen.add(cur); cur = parent.get(cur)
+        return True
+    out = dict(parent)
+    changed = True
+    while changed:
+        changed = False
+        for s in sorted(out):
+            if s != "place:gielinor" and out[s] != "place:gielinor" and not reaches_root(s):
+                out[s] = "place:gielinor"; changed = True
+    return out
+
+
 def resolve_parents(backbone, snapshot, extra_seen=None, infoboxes=None, overrides=None):
     """Shared parenting core. Returns (kept, parent_map, signal_map):
       kept       = [(title, place_type, content_kind, pid)]   (filtered, typed, sorted)
@@ -158,6 +178,13 @@ def resolve_parents(backbone, snapshot, extra_seen=None, infoboxes=None, overrid
                                     infobox_links=(infoboxes or {}).get(title), overrides=overrides,
                                     backbone_names=backbone_names)
         parent_map[pid] = parent; signal_map[pid] = signal
+    backbone_parent = {p["id"]: p.get("located_in") or None for p in backbone["places"]}
+    backbone_parent["place:gielinor"] = None
+    resolved = _resolve_reachable({**backbone_parent, **parent_map})
+    for pid in parent_map:
+        if resolved[pid] == "place:gielinor" and parent_map[pid] != "place:gielinor":
+            signal_map[pid] = "FLAG"                      # demoted by reachability -> FLAG
+        parent_map[pid] = resolved[pid]
     return kept, parent_map, signal_map
 
 
