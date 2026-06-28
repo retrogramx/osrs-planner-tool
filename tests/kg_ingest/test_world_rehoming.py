@@ -1,5 +1,5 @@
 from kg_ingest.builders.world import is_excluded, build_world, parent_for, _resolve_reachable
-from osrs_planner.engine.kg.model import EdgeType
+from osrs_planner.engine.kg.model import Edge, EdgeType, Node, NodeKind
 
 
 def test_is_excluded_list_index_and_discontinued():
@@ -89,3 +89,33 @@ def test_resolve_reachable_keeps_valid_chain():
     parent = {"place:gielinor": None, "place:x": "place:gielinor", "place:y": "place:x"}
     out = _resolve_reachable(parent)
     assert out["place:y"] == "place:x" and out["place:x"] == "place:gielinor"
+
+
+def _li(src, dst):
+    return Edge(id=0, type=EdgeType.LOCATED_IN, src=src, dst=dst, cond_group=None, data={})
+
+
+def _place(pid):
+    return Node(id=pid, kind=NodeKind.PLACE, name=pid, slug=pid.split(":", 1)[1], data={})
+
+
+def _load_verify_world():
+    # Load data/verify_world.py by explicit file path: the `data` top-level name is shadowed
+    # by tests/data/__init__.py under the full suite, so `from data.verify_world import` is
+    # collection-order-fragile. Importing by path is deterministic regardless of order.
+    import importlib.util, pathlib
+    p = pathlib.Path(__file__).resolve().parents[2] / "data" / "verify_world.py"
+    spec = importlib.util.spec_from_file_location("_verify_world_under_test", p)
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
+def test_verify_world_unreachable_places():
+    # The verifier's acyclicity-gate teeth: a cycle disconnected from the root is caught,
+    # while the root and a valid child are NOT flagged.
+    _unreachable_places = _load_verify_world()._unreachable_places
+    nodes = [_place("place:gielinor"), _place("place:valid"), _place("place:a"), _place("place:b")]
+    edges = [_li("place:valid", "place:gielinor"),
+             _li("place:a", "place:b"), _li("place:b", "place:a")]   # a<->b cycle, no root path
+    assert set(_unreachable_places(nodes, edges)) == {"place:a", "place:b"}

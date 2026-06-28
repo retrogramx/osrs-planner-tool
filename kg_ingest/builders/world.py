@@ -122,7 +122,10 @@ def _slug(name: str) -> str:
 
 def _resolve_reachable(parent):
     """Demote any non-root node that cannot reach place:gielinor (cycle/dangling) to the
-    root. Deterministic fixpoint (sorted order). Guarantees single-root + acyclic."""
+    root. Deterministic fixpoint (sorted order). Guarantees single-root + acyclic.
+    NOTE: reaches_root reads the ORIGINAL immutable `parent` (not the evolving `out`), so a
+    demotion never lengthens another node's path — this converges in at most two passes (it is
+    NOT a Bellman-Ford relaxation despite the `while changed` shape)."""
     def reaches_root(s):
         seen, cur = set(), s
         while cur != "place:gielinor":

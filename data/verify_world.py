@@ -28,6 +28,21 @@ def _opt_overrides():
     return json.load(open(p, encoding="utf-8"))["overrides"] if os.path.exists(p) else None
 
 
+def _unreachable_places(nodes, edges):
+    """Place ids that cannot reach place:gielinor (cycle/dangling). Empty == acyclic single-root."""
+    par = {e.src: e.dst for e in edges if e.type.value == "located_in"}
+    out = []
+    for n in nodes:
+        if n.id == "place:gielinor":
+            continue
+        seen, cur = set(), n.id
+        while cur != "place:gielinor":
+            if cur is None or cur in seen:
+                out.append(n.id); break
+            seen.add(cur); cur = par.get(cur)
+    return out
+
+
 def main() -> int:
     errors, unparented = [], []
     backbone = json.load(open(os.path.join(ROOT, "data", "map", "world.json"), encoding="utf-8"))
@@ -54,17 +69,8 @@ def main() -> int:
         if e.type.value == "located_in" and e.dst not in ids:
             errors.append(f"[located_in] {e.src} -> {e.dst} dangling")
     # reachability: every place must reach place:gielinor (acyclic, single-root)
-    par = {e.src: e.dst for e in edges if e.type.value == "located_in"}
-    def _reaches(s):
-        seen, cur = set(), s
-        while cur != "place:gielinor":
-            if cur is None or cur in seen:
-                return False
-            seen.add(cur); cur = par.get(cur)
-        return True
-    for n in nodes:
-        if n.id != "place:gielinor" and not _reaches(n.id):
-            errors.append(f"[reachable] {n.id} does not reach place:gielinor (cycle/dangling)")
+    for pid in _unreachable_places(nodes, edges):
+        errors.append(f"[reachable] {pid} does not reach place:gielinor (cycle/dangling)")
     # residual: ingested content parented to the root (flagged-unparented)
     backbone_ids = {p["id"] for p in backbone["places"]}
     for e in edges:
