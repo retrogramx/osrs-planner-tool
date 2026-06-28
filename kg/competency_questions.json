@@ -25,5 +25,11 @@
     ,{ "id": "cq-lowes-shop-stock",
       "question": "What does Lowe's Archery Emporium stock?",
       "method": "shop_stock", "target": "shop:lowes-archery-emporium", "expect_min": 10 }
+    ,{ "id": "cq-kandarin-contents",
+      "question": "What locations are in Kandarin?",
+      "method": "in_region", "target": "place:kandarin", "expect_min": 10 }
+    ,{ "id": "cq-varrock-region-chain",
+      "question": "What kingdom and continent is Varrock in?",
+      "method": "region_chain", "target": "place:varrock", "expect_min": 3 }
   ]
 }
