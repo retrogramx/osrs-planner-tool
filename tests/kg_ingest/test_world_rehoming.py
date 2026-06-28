@@ -85,6 +85,17 @@ def test_category_rung_prefers_backbone_over_content():
                       {"ardougne": "place:ardougne"}, backbone_names=set()) == ("place:ardougne", "category")
 
 
+def test_rung_order_is_precision_first_over_backbone_preference():
+    # An already-parented page whose CONTENT CATEGORY resolves to a specific town AND whose
+    # infobox links a BACKBONE kingdom must parent via the CONTENT CATEGORY (signal "category"),
+    # NOT the backbone infobox. Backbone-preference is WITHIN a rung; rung ORDER stays strict
+    # precision-first (category > name-suffix > infobox) — the owner's decision. (Edgeville
+    # Dungeon regression: category {Edgeville} vs infobox [[Misthalin]].)
+    name_index = {"edgeville": "place:edgeville", "misthalin": "place:misthalin"}
+    assert parent_for("Edgeville Dungeon", {"Edgeville"}, name_index,
+                      infobox_links=["Misthalin"], backbone_names={"misthalin"}) == ("place:edgeville", "category")
+
+
 def test_resolve_reachable_demotes_cycle():
     # a -> b -> a is a cycle disconnected from the root; both demote to the root
     parent = {"place:gielinor": None, "place:a": "place:b", "place:b": "place:a"}

@@ -6379,7 +6379,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:kharidian-desert",
+    "dst": "place:ruins-of-unkah",
     "id": 6692308,
     "src": "place:ruins-of-unkah-mine",
     "type": "located_in"
@@ -6604,7 +6604,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:asgarnia",
+    "dst": "place:dwarven-mine",
     "id": 6714309,
     "src": "place:motherlode-mine",
     "type": "located_in"
@@ -7443,7 +7443,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:zanaris",
+    "dst": "place:evil-chicken-s-lair",
     "id": 6803751,
     "src": "place:evil-chicken-s-lair-mine",
     "type": "located_in"
@@ -8811,7 +8811,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:misthalin",
+    "dst": "place:edgeville",
     "id": 6959340,
     "src": "place:edgeville-dungeon",
     "type": "located_in"
@@ -9950,7 +9950,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:misthalin",
+    "dst": "place:edgeville",
     "id": 7078317,
     "src": "place:basement-of-doom",
     "type": "located_in"
@@ -10316,7 +10316,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:feldip-hills",
+    "dst": "place:myths-guild",
     "id": 7110447,
     "src": "place:corsair-cove-dungeon",
     "type": "located_in"
@@ -10643,7 +10643,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:morytania",
+    "dst": "place:theatre-of-blood",
     "id": 7148571,
     "src": "place:ver-sinhaza",
     "type": "located_in"
@@ -10715,7 +10715,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:asgarnia",
+    "dst": "place:rimmington",
     "id": 7153931,
     "src": "place:rimmington-mine",
     "type": "located_in"
@@ -12056,7 +12056,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:asgarnia",
+    "dst": "place:taverley",
     "id": 7298044,
     "src": "place:taverley-dungeon",
     "type": "located_in"
@@ -13412,7 +13412,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:misthalin",
+    "dst": "place:draynor-village",
     "id": 7456825,
     "src": "place:draynor-sewers",
     "type": "located_in"
@@ -13584,7 +13584,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:karamja",
+    "dst": "place:shilo-village",
     "id": 7474617,
     "src": "place:rashiliyia-s-tomb",
     "type": "located_in"
@@ -14441,7 +14441,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:daimons-crater",
+    "dst": "place:bounty-hunter",
     "id": 7566135,
     "src": "place:daimon-s-crater",
     "type": "located_in"
@@ -18115,7 +18115,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:morytania",
+    "dst": "place:mort-ton",
     "id": 7972160,
     "src": "place:shade-catacombs",
     "type": "located_in"
@@ -18161,7 +18161,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:feldip-hills",
+    "dst": "place:corsair-cove-dungeon",
     "id": 7977568,
     "src": "place:corsair-cove-resource-area",
     "type": "located_in"
