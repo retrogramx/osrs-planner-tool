@@ -1218,14 +1218,6 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
-    "id": 6129665,
-    "src": "place:easter-workshop",
-    "type": "located_in"
-  },
-  {
-    "cond_group": null,
-    "data": {},
     "dst": "place:southern-expanse",
     "id": 6130102,
     "src": "place:isle-of-serpents",
@@ -2865,14 +2857,6 @@
     "type": "located_in"
   },
   {
-    "cond_group": null,
-    "data": {},
-    "dst": "place:gielinor",
-    "id": 6315743,
-    "src": "place:rimmington-church-crypt",
-    "type": "located_in"
-  },
-  {
     "cond_group": 4220496,
     "data": {},
     "dst": null,
@@ -3782,14 +3766,6 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:al-kharid",
-    "id": 6416529,
-    "src": "place:duel-arena",
-    "type": "located_in"
-  },
-  {
-    "cond_group": null,
-    "data": {},
     "dst": "place:northern-ocean",
     "id": 6416534,
     "src": "place:everwinter-sea",
@@ -4552,14 +4528,6 @@
     "dst": "place:gielinor",
     "id": 6484364,
     "src": "place:east-lumbridge-swamp-mine",
-    "type": "located_in"
-  },
-  {
-    "cond_group": null,
-    "data": {},
-    "dst": "place:gielinor",
-    "id": 6484902,
-    "src": "place:guilds",
     "type": "located_in"
   },
   {
@@ -5574,14 +5542,6 @@
     "type": "has_bonuses"
   },
   {
-    "cond_group": null,
-    "data": {},
-    "dst": "place:gielinor",
-    "id": 6598255,
-    "src": "place:raids",
-    "type": "located_in"
-  },
-  {
     "cond_group": 4141945,
     "data": {},
     "dst": null,
@@ -5858,14 +5818,6 @@
     "id": 6623475,
     "src": "item:13123",
     "type": "effect"
-  },
-  {
-    "cond_group": null,
-    "data": {},
-    "dst": "place:gielinor",
-    "id": 6625959,
-    "src": "place:salve-island",
-    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -11646,14 +11598,6 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
-    "id": 7252329,
-    "src": "place:isle-of-garmr",
-    "type": "located_in"
-  },
-  {
-    "cond_group": null,
-    "data": {},
     "dst": "place:great-kourend",
     "id": 7253032,
     "src": "place:forthos-dungeon",
@@ -12259,14 +12203,6 @@
   },
   {
     "cond_group": null,
-    "data": {},
-    "dst": "place:gielinor",
-    "id": 7314380,
-    "src": "place:deadman-isles",
-    "type": "located_in"
-  },
-  {
-    "cond_group": null,
     "data": {
       "members": false,
       "source_token": "Bucket:Storeline"
@@ -12640,14 +12576,6 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
-    "id": 7370446,
-    "src": "place:college-of-bards",
-    "type": "located_in"
-  },
-  {
-    "cond_group": null,
-    "data": {},
     "dst": "place:varlamore",
     "id": 7371600,
     "src": "place:avium-savannah",
@@ -12668,14 +12596,6 @@
     "id": 7375380,
     "src": "quest:barbarian-farming",
     "type": "requires"
-  },
-  {
-    "cond_group": null,
-    "data": {},
-    "dst": "place:gielinor",
-    "id": 7375721,
-    "src": "place:camp-sapphire-lagoon",
-    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -15052,14 +14972,6 @@
   },
   {
     "cond_group": null,
-    "data": {},
-    "dst": "place:gielinor",
-    "id": 7626173,
-    "src": "place:minigames",
-    "type": "located_in"
-  },
-  {
-    "cond_group": null,
     "data": {
       "members": false,
       "source_token": "Bucket:Storeline"
@@ -16632,14 +16544,6 @@
   },
   {
     "cond_group": null,
-    "data": {},
-    "dst": "place:gielinor",
-    "id": 7819910,
-    "src": "place:list-of-mines",
-    "type": "located_in"
-  },
-  {
-    "cond_group": null,
     "data": {
       "amount": 15000,
       "count": 1,
@@ -16683,14 +16587,6 @@
     "id": 7820161,
     "src": "diary:wilderness:elite",
     "type": "grants"
-  },
-  {
-    "cond_group": null,
-    "data": {},
-    "dst": "place:gielinor",
-    "id": 7820288,
-    "src": "place:list-of-dungeons",
-    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -17035,14 +16931,6 @@
     "type": "grants"
   },
   {
-    "cond_group": null,
-    "data": {},
-    "dst": "place:gielinor",
-    "id": 7852927,
-    "src": "place:bunbridge",
-    "type": "located_in"
-  },
-  {
     "cond_group": 4796622,
     "data": {},
     "dst": null,
@@ -17279,14 +17167,6 @@
     "dst": "place:gielinor",
     "id": 7878902,
     "src": "place:evil-chicken-s-lair",
-    "type": "located_in"
-  },
-  {
-    "cond_group": null,
-    "data": {},
-    "dst": "place:gielinor",
-    "id": 7880183,
-    "src": "place:wester-island",
     "type": "located_in"
   },
   {

@@ -32,6 +32,21 @@ IN_TYPE = [("Raids", "dungeon", "raid"), ("Slayer dungeons", "dungeon", "slayer 
            ("Castles", "point_of_interest", "castle"), ("Mines", "point_of_interest", "mine"),
            ("Islands", "island", "island"), ("Settlements", "settlement", "settlement")]
 
+IN_NAMES = {cat for cat, _pt, _ck in IN_TYPE}        # self-referential category-index page titles
+NOISE_CATS = {"Discontinued content", "Locations that do not appear in-game"}
+
+
+def is_excluded(title, page_categories):
+    """The OUT clause of the IN/OUT filter: list/index pages + discontinued/non-existent.
+    Shared by build_world AND verify_world_coverage so coverage stays honest."""
+    if title.lower().startswith("list of "):
+        return True
+    if title in IN_NAMES:
+        return True
+    if set(page_categories) & NOISE_CATS:
+        return True
+    return False
+
 
 def classify(page_categories):
     for cat, pt, ck in IN_TYPE:
@@ -116,6 +131,8 @@ def build_world(backbone, snapshot, region_ids, extra_seen=None):
     for title in sorted({t for lst in snapshot["categories"].values() for t in lst}):
         cls = classify(set(pc.get(title, [])))
         if cls is None:                                  # OUT category -> skip
+            continue
+        if is_excluded(title, pc.get(title, [])):        # OUT: list/index/discontinued
             continue
         pid = _slug(title)
         if pid in seen:                                  # already a backbone place (dedup)
