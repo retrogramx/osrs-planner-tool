@@ -23,6 +23,8 @@ transport, activities) has a **place to attach to**.
 | 5 | Vocabulary | **Two-level typing**: `place_type` (coarse, queryable) + `content_kind` (fine, display). New `place_type`s (additive flips): **`sea`** + **`point_of_interest`**. |
 | 6 | Governance | `ruled_by` / `faction` as **best-effort data, report-not-fail** (lots unknown). `faction` nodes + governance *edges* deferred. |
 | 7 | Discipline | **Never fabricate** — every place grounded to a wiki page (`source_url`); an unresolved ruler or an unparented place is **FLAGGED, not guessed**. |
+| 8 | Account access | A **`members` boolean** on every place, sourced from the wiki `Free-to-play locations` (154) / `Members' locations` (953) categories — exhaustive + structured. Account-type-aware (a F2P account can't reach members areas); **data now, a possible access gate later**. Mirrors the slice-7 shop `members` flag. |
+| 9 | Transport | **DEFERRED to a dedicated transport layer** (nodes + `gives_access` edges built TOGETHER), NOT the skeleton — a transport hub's value is the *connection*, and the destinations it links (ports/towns/islands) are already places here. The transport *nodes* (fairy rings, spirit trees, charter docks) are facilities-at-a-place, like banks. |
 
 ## 2. The data model
 
@@ -46,9 +48,12 @@ place:gielinor (world)
 - **Same_entity bridges:** opportunistic `place:<slug> → region:<slug>` to the 61 legacy `region:` nodes where a slug
   matches (slice-6 pattern), link-don't-merge.
 
-### 2.3 Governance
+### 2.3 Governance + access
 `ruled_by` (an `npc:` ref or verbatim string) + `faction` (governing race/allegiance) on backbone places, best-effort,
-`""` where the wiki names none (never guessed). Report-not-fail on gaps.
+`""` where the wiki names none (never guessed). Report-not-fail on gaps. Plus a **`members`** boolean on every place
+(F2P vs members), sourced from the `Free-to-play locations` / `Members' locations` categories — exhaustive + structured,
+account-type-aware. The full place record: `{id, place_type, name, located_in, ruled_by?, faction?, members, source_url,
+content_kind?}`.
 
 ## 3. Data source — the structured ingest (the reproducible brick)
 
@@ -70,7 +75,8 @@ backbone or another category.")*
 
 ### 3.2 Enumeration (exhaustive + reproducible)
 The MediaWiki category API (`action=query&list=categorymembers`, paginated) → exhaustive membership of each IN
-category → union. **Committed raw snapshot** `data/raw/wiki_location_categories.json` + a **deterministic parser** (the
+category → union. The same fetch also pulls `Free-to-play locations` + `Members' locations` membership → the `members`
+flag per place. **Committed raw snapshot** `data/raw/wiki_location_categories.json` + a **deterministic parser** (the
 foundation-reproducibility discipline). The owner-shape (the ~50 backbone places + governance) is a small **owner-
 authored** `data/map/world.json` (drafted wiki-grounded, owner-reviewed — like `varrock.json`).
 
@@ -119,10 +125,28 @@ The **visual collapsible tree** (the `world_skeleton.html` review tool built dur
   single-root); `verify_world` (a dangling `located_in` fails; an unparented place reports-not-fails); the coverage gate.
 - Graph grows to the comprehensive location set (hundreds of place nodes); deltas recorded at build time.
 
-## 7. Out of scope — named follow-ups
-All-shops Storeline scale-up (needs shop→location) · chunk/coordinate geometry · governance EDGES + `faction`/`deity`
-nodes · monsters/`drops` · transport/`gives_access` · a **service layer** (banks/shops/altars as facilities attached to
-places) · per-town internal detail beyond Varrock.
+## 7. Out of scope — the bottom-up roadmap (what attaches to the skeleton next)
+This slice builds the **place containers** top-down. Everything the in-game map marks *below* that level — confirmed via
+the `Map_icon` legend — is a **bottom-up attaching layer**, each its own future slice, each `located_in` a place in this
+skeleton:
+- **Shops** (the legend lists 60+ types) — partly done (Storeline, slice 7); the all-shops scale-up + shop-type taxonomy.
+- **NPCs** (incl. the ~18 skill tutors, slayer masters, shopkeepers) — `npc` nodes at places.
+- **Objects / resources** (anvils, furnaces, fishing spots, mining sites, farming patches, rare trees, singing bowls…) —
+  the skilling-resource layer.
+- **Transport** (decision 9) — fairy rings, spirit trees, charter ships, docking points, house portals: the transport
+  **nodes + `gives_access` edges built TOGETHER**; destinations already exist here.
+- **Facilities/services** — banks, altars-as-services, the Grand Exchange — attached to places.
+
+Two disciplines carry across every layer:
+- **(a) Each layer is enumerated from its OWN structured wiki source** (Storeline for shops, the relevant Bucket/Category
+  for the rest) with its **own coverage verifier**. The in-game map legend is a **TAXONOMY of POI types, NOT an
+  exhaustive census** of every shop/training-spot (owner-flagged) — so we never rely on it for completeness.
+- **(b) Each layer's `located_in` is a completeness CROSS-CHECK on this skeleton** — a verifier that *every* attached
+  NPC/shop/object location resolves to a place here catches any place we missed, from the opposite direction (bottom-up
+  validating top-down).
+
+Also deferred: chunk/coordinate geometry · governance EDGES + `faction`/`deity` nodes · monsters/`drops` · per-town
+internal detail beyond Varrock.
 
 ## 8. Open micro-items (settle in implementation)
 - Confirm each IN-category's exact wiki name + membership (some guessed names are empty — use `Settlements`, etc.).
