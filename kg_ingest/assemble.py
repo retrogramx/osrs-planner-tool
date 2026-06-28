@@ -34,6 +34,7 @@ from kg_ingest.builders.equipment_bonuses import build_equipment_bonuses
 from kg_ingest.builders.goals import build_goals
 from kg_ingest.builders.items import build_items
 from kg_ingest.builders.map_varrock import build_map, make_item_resolver
+from kg_ingest.builders.world import build_world
 from kg_ingest.builders.quest_rewards import build_quest_rewards
 from kg_ingest.builders.quests import build_quests
 from kg_ingest.builders.recipes import build_recipes
@@ -287,12 +288,22 @@ def _load_repair_path_records() -> list[dict]:
 
 VARROCK_MAP_PATH = Path(__file__).resolve().parents[1] / "data" / "map" / "varrock.json"
 STORELINE_RAW_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "storeline_bucket.json"
+WORLD_BACKBONE_PATH = Path(__file__).resolve().parents[1] / "data" / "map" / "world.json"
+WORLD_SNAPSHOT_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "wiki_location_categories.json"
 
 
 def _load_varrock_map() -> dict | None:
     if not VARROCK_MAP_PATH.exists():
         return None
     return json.loads(VARROCK_MAP_PATH.read_text())
+
+
+def _load_world_backbone() -> dict | None:
+    return json.loads(WORLD_BACKBONE_PATH.read_text()) if WORLD_BACKBONE_PATH.exists() else None
+
+
+def _load_world_snapshot() -> dict:
+    return json.loads(WORLD_SNAPSHOT_PATH.read_text())
 
 
 def _load_storeline_records() -> list[dict]:
@@ -390,19 +401,50 @@ def assemble() -> None:
     _degrade_nodes, dg_edges, _ = build_degrade_paths(_load_degrade_path_records())  # _degrade_nodes == []
     _repair_nodes, rp_edges, _ = build_repairs(_load_repair_path_records())  # _repair_nodes == []
 
+    # Load varrock map data early so we can tell build_world to skip its sub-place ids
+    # (place:varrock-sewers, etc. are in both varrock.json AND the wiki Dungeons category;
+    # build_map owns them with its richer editorial shape; world skips them via extra_seen).
+    _map = _load_varrock_map()
+    _map_place_ids: set[str] = {p["id"] for p in _map["places"]} if _map is not None else set()
+
+    # World skeleton: the geographic backbone + the location-category content ingest.
+    # Place-src edges (located_in/same_entity) -> their OWN rekey, SEEDED from prior per-owner
+    # counts (build_map's located_in is place-src too; seeding keeps ids disjoint). Runs BEFORE
+    # build_map so the Varrock districts' located_in -> place:varrock resolves to a world node.
+    world_nodes: list[Node] = []
+    _wbb = _load_world_backbone()
+    if _wbb is not None:
+        world_region_ids = {n.id for n in content_nodes if n.id.startswith("region:")}
+        world_nodes, world_edges, _ = build_world(
+            _wbb, _load_world_snapshot(), world_region_ids, extra_seen=_map_place_ids)
+        _seed = {}
+        for _e in edges:
+            _seed[_e.src] = _seed.get(_e.src, 0) + 1
+        world_nodes, world_edges, _ = rekey(world_nodes, world_edges, {}, edge_index_seed=_seed)
+        edges = edges + world_edges
+        owned_ids = owned_ids | {n.id for n in world_nodes}
+
     # Connective layer (Varrock): place/npc/shop + located_in/operates/sells/same_entity.
     # These edges are place/npc/shop-src (NOT item-src), so they re-key in their OWN call
     # (the same_entity it emits is place-src, so it cannot collide with build_items' item-src
     # same_entity). Build BEFORE the reference collection so resolved sells dsts auto-import.
     # region nodes are minted by build_content_nodes (content_nodes, already built above), so
     # the bridge only targets places that have a real legacy region node.
+    # NOTE: build_map runs AFTER build_world. After the world-skeleton refactor, build_world
+    # and build_map share ZERO place owners (build_map no longer owns place:varrock). The seed
+    # is still required for the build_map → build_storeline boundary: shops are located_in-src
+    # in build_map and sells-src in build_storeline, so build_storeline's rekey must start
+    # AFTER all of build_map's per-shop indices to avoid collisions.
     map_nodes: list[Node] = []
-    _map = _load_varrock_map()
     if _map is not None:
         map_region_ids = {n.id for n in content_nodes if n.id.startswith("region:")}
         map_nodes, map_edges, map_groups = build_map(
             _map, make_item_resolver(_load_item_dict_records()), map_region_ids)
-        map_nodes, map_edges, map_groups = rekey(map_nodes, map_edges, map_groups)
+        _seed_m = {}
+        for _e in edges:
+            _seed_m[_e.src] = _seed_m.get(_e.src, 0) + 1
+        map_nodes, map_edges, map_groups = rekey(map_nodes, map_edges, map_groups,
+                                                 edge_index_seed=_seed_m)
         edges = edges + map_edges
         groups.update(map_groups)
         owned_ids = owned_ids | {n.id for n in map_nodes}
@@ -466,7 +508,7 @@ def assemble() -> None:
     #    (with tasks list) is first-seen and wins if any stale supporting diary node
     #    were somehow included (it shouldn't be, since diary is excluded from _LEAF_DOMAINS).
     nodes = dedup_nodes(
-        q_nodes + g_nodes + cg_nodes + d_nodes + dg_nodes + content_nodes + r_nodes + i_nodes + eqb_nodes + map_nodes + s_nodes
+        q_nodes + g_nodes + cg_nodes + d_nodes + dg_nodes + content_nodes + r_nodes + i_nodes + eqb_nodes + world_nodes + map_nodes + s_nodes
     )
 
     # 5) serialize, sorted deterministically.

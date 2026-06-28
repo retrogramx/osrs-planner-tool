@@ -48,6 +48,28 @@ def _shop_stock(store, target):
     return {e.dst for e in store.edges if e.type is EdgeType.SELLS and e.src == target}
 
 
+def _in_region(store, target):
+    # transitive: all places whose located_in chain passes through target
+    li = {e.src: e.dst for e in store.edges if e.type is EdgeType.LOCATED_IN}
+    out = set()
+    for src in li:
+        cur = li.get(src)
+        while cur:
+            if cur == target:
+                out.add(src); break
+            cur = li.get(cur)
+    return out
+
+
+def _region_chain(store, target):
+    # the located_in ancestry of target (varrock -> misthalin -> mainland -> gielinor)
+    li = {e.src: e.dst for e in store.edges if e.type is EdgeType.LOCATED_IN}
+    chain, cur = [], li.get(target)
+    while cur:
+        chain.append(cur); cur = li.get(cur)
+    return chain
+
+
 def test_all_competency_questions_pass():
     store = JsonKGStore.from_dir(KG)
     with open(ROOT / "kg" / "competency_questions.json") as f:
@@ -72,6 +94,10 @@ def test_all_competency_questions_pass():
             answer = _sold_by(store, cq["target"])
         elif cq["method"] == "shop_stock":
             answer = _shop_stock(store, cq["target"])
+        elif cq["method"] == "in_region":
+            answer = _in_region(store, cq["target"])
+        elif cq["method"] == "region_chain":
+            answer = set(_region_chain(store, cq["target"]))
         else:
             raise AssertionError(f"unknown method {cq['method']!r}")
         assert len(answer) >= cq["expect_min"], f"{cq['id']}: got {len(answer)} < {cq['expect_min']}"

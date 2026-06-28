@@ -1,0 +1,2003 @@
+{
+ "places": [
+  {
+   "id": "place:gielinor",
+   "place_type": "world",
+   "name": "Gielinor",
+   "located_in": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Gielinor",
+   "members": false
+  },
+  {
+   "id": "place:ardent-ocean",
+   "place_type": "ocean",
+   "name": "Ardent Ocean",
+   "located_in": "place:gielinor",
+   "source_url": "https://oldschool.runescape.wiki/w/Ardent_Ocean",
+   "members": true
+  },
+  {
+   "id": "place:eastern-ocean",
+   "place_type": "ocean",
+   "name": "Eastern Ocean",
+   "located_in": "place:gielinor",
+   "source_url": "https://oldschool.runescape.wiki/w/Eastern_Ocean",
+   "members": true
+  },
+  {
+   "id": "place:forgotten-ocean",
+   "place_type": "ocean",
+   "name": "Forgotten Ocean",
+   "located_in": "place:gielinor",
+   "source_url": "https://oldschool.runescape.wiki/w/Forgotten_Ocean",
+   "members": true
+  },
+  {
+   "id": "place:here-be-penguins",
+   "place_type": "island",
+   "name": "Here be penguins",
+   "located_in": "place:northern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Here_be_penguins",
+   "members": true
+  },
+  {
+   "id": "place:mainland",
+   "place_type": "continent",
+   "name": "Mainland",
+   "located_in": "place:gielinor",
+   "source_url": "https://oldschool.runescape.wiki/w/Gielinor#Land"
+  },
+  {
+   "id": "place:northern-ocean",
+   "place_type": "ocean",
+   "name": "Northern Ocean",
+   "located_in": "place:gielinor",
+   "source_url": "https://oldschool.runescape.wiki/w/Northern_Ocean",
+   "members": true
+  },
+  {
+   "id": "place:shipyard",
+   "place_type": "island",
+   "name": "Shipyard",
+   "located_in": "place:shrouded-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Shipyard",
+   "members": true
+  },
+  {
+   "id": "place:shrouded-ocean",
+   "place_type": "ocean",
+   "name": "Shrouded Ocean",
+   "located_in": "place:gielinor",
+   "source_url": "https://oldschool.runescape.wiki/w/Shrouded_Ocean",
+   "members": true
+  },
+  {
+   "id": "place:sunset-ocean",
+   "place_type": "ocean",
+   "name": "Sunset Ocean",
+   "located_in": "place:gielinor",
+   "source_url": "https://oldschool.runescape.wiki/w/Sunset_Ocean",
+   "members": true
+  },
+  {
+   "id": "place:the-node",
+   "place_type": "island",
+   "name": "The Node",
+   "located_in": "place:ardent-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Node",
+   "members": false
+  },
+  {
+   "id": "place:unnamed-island",
+   "place_type": "island",
+   "name": "Unnamed island (River Salve)",
+   "located_in": "place:morytania",
+   "source_url": "https://oldschool.runescape.wiki/w/Unnamed_island_(River_Salve)",
+   "members": true
+  },
+  {
+   "id": "place:unquiet-ocean",
+   "place_type": "ocean",
+   "name": "Unquiet Ocean",
+   "located_in": "place:gielinor",
+   "source_url": "https://oldschool.runescape.wiki/w/Unquiet_Ocean",
+   "members": true
+  },
+  {
+   "id": "place:untamed-ocean",
+   "place_type": "ocean",
+   "name": "Untamed Ocean",
+   "located_in": "place:gielinor",
+   "source_url": "https://oldschool.runescape.wiki/w/Untamed_Ocean",
+   "members": true
+  },
+  {
+   "id": "place:vatrachos-island",
+   "place_type": "island",
+   "name": "Vatrachos Island",
+   "located_in": "place:shrouded-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Vatrachos_Island",
+   "members": true
+  },
+  {
+   "id": "place:western-ocean",
+   "place_type": "ocean",
+   "name": "Western Ocean",
+   "located_in": "place:gielinor",
+   "source_url": "https://oldschool.runescape.wiki/w/Western_Ocean",
+   "members": true
+  },
+  {
+   "id": "place:yanille-chain",
+   "place_type": "island",
+   "name": "Yanille Chain",
+   "located_in": "place:kandarin",
+   "source_url": "https://oldschool.runescape.wiki/w/Yanille_Chain",
+   "members": true
+  },
+  {
+   "id": "place:zanaris",
+   "place_type": "city",
+   "name": "Zanaris",
+   "located_in": "place:gielinor",
+   "source_url": "https://oldschool.runescape.wiki/w/Zanaris",
+   "ruled_by": "Fairy Queen",
+   "faction": "fairies",
+   "members": true
+  },
+  {
+   "id": "place:zeah",
+   "place_type": "continent",
+   "name": "Zeah",
+   "located_in": "place:gielinor",
+   "source_url": "https://oldschool.runescape.wiki/w/Zeah",
+   "members": true
+  },
+  {
+   "id": "place:aehecatl",
+   "place_type": "sea",
+   "name": "Aehecatl",
+   "located_in": "place:sunset-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Aehecatl",
+   "members": true
+  },
+  {
+   "id": "place:aestuarium-tempestus",
+   "place_type": "sea",
+   "name": "Aestuarium Tempestus",
+   "located_in": "place:sunset-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Aestuarium_Tempestus",
+   "members": true
+  },
+  {
+   "id": "place:ancient-reef",
+   "place_type": "sea",
+   "name": "Ancient Reef",
+   "located_in": "place:untamed-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Ancient_Reef",
+   "members": true
+  },
+  {
+   "id": "place:anglerfish-s-light",
+   "place_type": "sea",
+   "name": "Anglerfish's Light",
+   "located_in": "place:unquiet-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Anglerfish%27s_Light",
+   "members": true
+  },
+  {
+   "id": "place:ape-atoll",
+   "place_type": "island",
+   "name": "Ape Atoll",
+   "located_in": "place:ardent-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Ape_Atoll",
+   "ruled_by": "King Awowogei",
+   "faction": "monkeys",
+   "members": true
+  },
+  {
+   "id": "place:arrow-passage",
+   "place_type": "sea",
+   "name": "Arrow Passage",
+   "located_in": "place:ardent-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Arrow_Passage",
+   "members": true
+  },
+  {
+   "id": "place:asgarnia",
+   "place_type": "kingdom",
+   "name": "Asgarnia",
+   "located_in": "place:mainland",
+   "source_url": "https://oldschool.runescape.wiki/w/Asgarnia",
+   "ruled_by": "King Vallance",
+   "faction": "White Knights"
+  },
+  {
+   "id": "place:aureum-coast",
+   "place_type": "sea",
+   "name": "Aureum Coast",
+   "located_in": "place:shrouded-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Aureum_Coast",
+   "members": true
+  },
+  {
+   "id": "place:backwater",
+   "place_type": "sea",
+   "name": "Backwater",
+   "located_in": "place:shrouded-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Backwater",
+   "members": true
+  },
+  {
+   "id": "place:barracuda-belt",
+   "place_type": "sea",
+   "name": "Barracuda Belt",
+   "located_in": "place:shrouded-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Barracuda_Belt",
+   "members": true
+  },
+  {
+   "id": "place:bay-of-elidinis",
+   "place_type": "sea",
+   "name": "Bay of Elidinis",
+   "located_in": "place:unquiet-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Bay_of_Elidinis",
+   "members": true
+  },
+  {
+   "id": "place:bay-of-sarim",
+   "place_type": "sea",
+   "name": "Bay of Sarim",
+   "located_in": "place:ardent-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Bay_of_Sarim",
+   "members": true
+  },
+  {
+   "id": "place:bleakwater-bay",
+   "place_type": "sea",
+   "name": "Bleakwater Bay",
+   "located_in": "place:untamed-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Bleakwater_Bay",
+   "members": true
+  },
+  {
+   "id": "place:braindeath-island",
+   "place_type": "island",
+   "name": "Braindeath Island",
+   "located_in": "place:eastern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Braindeath_Island",
+   "members": true
+  },
+  {
+   "id": "place:breakbone-strait",
+   "place_type": "sea",
+   "name": "Breakbone Strait",
+   "located_in": "place:shrouded-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Breakbone_Strait",
+   "members": true
+  },
+  {
+   "id": "place:brimhaven-passage",
+   "place_type": "sea",
+   "name": "Brimhaven Passage",
+   "located_in": "place:ardent-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Brimhaven_Passage",
+   "members": true
+  },
+  {
+   "id": "place:brittle-isle",
+   "place_type": "island",
+   "name": "Brittle Isle",
+   "located_in": "place:northern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Brittle_Isle",
+   "members": true
+  },
+  {
+   "id": "place:cairn-isle",
+   "place_type": "island",
+   "name": "Cairn Isle",
+   "located_in": "place:ardent-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Cairn_Isle",
+   "members": true
+  },
+  {
+   "id": "place:calidum-reach",
+   "place_type": "sea",
+   "name": "Calidum Reach",
+   "located_in": "place:sunset-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Calidum_Reach",
+   "members": true
+  },
+  {
+   "id": "place:catherby-bay",
+   "place_type": "sea",
+   "name": "Catherby Bay",
+   "located_in": "place:ardent-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Catherby_Bay",
+   "members": true
+  },
+  {
+   "id": "place:crabclaw-bay",
+   "place_type": "sea",
+   "name": "Crabclaw Bay",
+   "located_in": "place:western-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Crabclaw_Bay",
+   "members": true
+  },
+  {
+   "id": "place:crandor",
+   "place_type": "island",
+   "name": "Crandor",
+   "located_in": "place:ardent-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Crandor",
+   "members": false
+  },
+  {
+   "id": "place:crash-island",
+   "place_type": "island",
+   "name": "Crash Island",
+   "located_in": "place:ardent-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Crash_Island",
+   "members": true
+  },
+  {
+   "id": "place:crystal-sea",
+   "place_type": "sea",
+   "name": "Crystal Sea",
+   "located_in": "place:western-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Crystal_Sea",
+   "members": true
+  },
+  {
+   "id": "place:cursed-archipelago",
+   "place_type": "island",
+   "name": "Cursed Archipelago",
+   "located_in": "place:eastern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Cursed_Archipelago",
+   "members": true
+  },
+  {
+   "id": "place:daggers-edge",
+   "place_type": "sea",
+   "name": "Dagger's Edge",
+   "located_in": "place:forgotten-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Dagger%27s_Edge",
+   "members": true
+  },
+  {
+   "id": "place:daimons-crater",
+   "place_type": "island",
+   "name": "Daimon's Crater",
+   "located_in": "place:untamed-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Daimon%27s_Crater",
+   "members": true
+  },
+  {
+   "id": "place:deepfin-point",
+   "place_type": "island",
+   "name": "Deepfin Point",
+   "located_in": "place:shrouded-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Deepfin_Point",
+   "members": true
+  },
+  {
+   "id": "place:dragons-maw",
+   "place_type": "sea",
+   "name": "Dragon's Maw",
+   "located_in": "place:eastern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Dragon%27s_Maw",
+   "members": true
+  },
+  {
+   "id": "place:dragontooth-island",
+   "place_type": "island",
+   "name": "Dragontooth Island",
+   "located_in": "place:eastern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Dragontooth_Island",
+   "members": true
+  },
+  {
+   "id": "place:dusk-s-maw",
+   "place_type": "sea",
+   "name": "Dusk's Maw",
+   "located_in": "place:sunset-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Dusk%27s_Maw",
+   "members": true
+  },
+  {
+   "id": "place:dwarven-realm",
+   "place_type": "kingdom",
+   "name": "Dwarven Realm",
+   "located_in": "place:mainland",
+   "source_url": "https://oldschool.runescape.wiki/w/Dwarven_Realm",
+   "faction": "dwarves"
+  },
+  {
+   "id": "place:eastern-ridge",
+   "place_type": "sea",
+   "name": "Eastern Ridge",
+   "located_in": "place:eastern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Eastern_Ridge",
+   "members": true
+  },
+  {
+   "id": "place:echoing-rift",
+   "place_type": "sea",
+   "name": "Echoing Rift",
+   "located_in": "place:untamed-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Echoing_Rift",
+   "members": true
+  },
+  {
+   "id": "place:entrana",
+   "place_type": "island",
+   "name": "Entrana",
+   "located_in": "place:ardent-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Entrana",
+   "faction": "Saradominist",
+   "members": true
+  },
+  {
+   "id": "place:etceteria",
+   "place_type": "island",
+   "name": "Etceteria",
+   "located_in": "place:northern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Etceteria",
+   "ruled_by": "Queen Sigrid",
+   "members": true
+  },
+  {
+   "id": "place:everwinter-sea",
+   "place_type": "sea",
+   "name": "Everwinter Sea",
+   "located_in": "place:northern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Everwinter_Sea",
+   "members": true
+  },
+  {
+   "id": "place:feldip-gulf",
+   "place_type": "sea",
+   "name": "Feldip Gulf",
+   "located_in": "place:ardent-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Feldip_Gulf",
+   "members": true
+  },
+  {
+   "id": "place:fiends-passage",
+   "place_type": "sea",
+   "name": "Fiend's Passage",
+   "located_in": "place:untamed-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Fiend%27s_Passage",
+   "members": true
+  },
+  {
+   "id": "place:fishing-platform",
+   "place_type": "region",
+   "name": "Fishing Platform",
+   "located_in": "place:ardent-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Fishing_Platform",
+   "members": true
+  },
+  {
+   "id": "place:forbidden-depths",
+   "place_type": "sea",
+   "name": "Forbidden Depths",
+   "located_in": "place:eastern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Forbidden_Depths",
+   "members": true
+  },
+  {
+   "id": "place:fortis-bay",
+   "place_type": "sea",
+   "name": "Fortis Bay",
+   "located_in": "place:shrouded-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Fortis_Bay",
+   "members": true
+  },
+  {
+   "id": "place:fossil-island",
+   "place_type": "island",
+   "name": "Fossil Island",
+   "located_in": "place:untamed-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Fossil_Island",
+   "members": true
+  },
+  {
+   "id": "place:fremennik-isles",
+   "place_type": "island",
+   "name": "Fremennik Isles",
+   "located_in": "place:northern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Fremennik_Isles",
+   "faction": "Fremennik",
+   "members": true
+  },
+  {
+   "id": "place:fremennik-province",
+   "place_type": "region",
+   "name": "Fremennik Province",
+   "located_in": "place:mainland",
+   "source_url": "https://oldschool.runescape.wiki/w/Fremennik_Province",
+   "faction": "Fremennik",
+   "members": true
+  },
+  {
+   "id": "place:fremennik-strait",
+   "place_type": "sea",
+   "name": "Fremennik Strait",
+   "located_in": "place:northern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Fremennik_Strait",
+   "members": true
+  },
+  {
+   "id": "place:fremensund",
+   "place_type": "sea",
+   "name": "Fremensund",
+   "located_in": "place:northern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Fremensund",
+   "members": true
+  },
+  {
+   "id": "place:frostgrave-depths",
+   "place_type": "sea",
+   "name": "Frostgrave Depths",
+   "located_in": "place:forgotten-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Frostgrave_Depths",
+   "members": true
+  },
+  {
+   "id": "place:grandroot-bay",
+   "place_type": "sea",
+   "name": "Grandroot Bay",
+   "located_in": "place:northern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Grandroot_Bay",
+   "members": true
+  },
+  {
+   "id": "place:gravewater-bay",
+   "place_type": "sea",
+   "name": "Gravewater Bay",
+   "located_in": "place:eastern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Gravewater_Bay",
+   "members": true
+  },
+  {
+   "id": "place:great-kourend",
+   "place_type": "kingdom",
+   "name": "Great Kourend",
+   "located_in": "place:zeah",
+   "source_url": "https://oldschool.runescape.wiki/w/Great_Kourend",
+   "ruled_by": "King Artur Hosidius",
+   "members": true
+  },
+  {
+   "id": "place:great-sound",
+   "place_type": "sea",
+   "name": "Great Sound",
+   "located_in": "place:western-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Great_Sound",
+   "members": true
+  },
+  {
+   "id": "place:grieving-bight",
+   "place_type": "sea",
+   "name": "Grieving Bight",
+   "located_in": "place:forgotten-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Grieving_Bight",
+   "members": true
+  },
+  {
+   "id": "place:gutanoth-bay",
+   "place_type": "sea",
+   "name": "Gu'tanoth Bay",
+   "located_in": "place:ardent-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Gu%27tanoth_Bay",
+   "members": true
+  },
+  {
+   "id": "place:gulf-of-kourend",
+   "place_type": "sea",
+   "name": "Gulf of Kourend",
+   "located_in": "place:western-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Gulf_of_Kourend",
+   "members": true
+  },
+  {
+   "id": "place:hallowed-sea",
+   "place_type": "sea",
+   "name": "Hallowed Sea",
+   "located_in": "place:eastern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Hallowed_Sea",
+   "members": true
+  },
+  {
+   "id": "place:harmony-island",
+   "place_type": "island",
+   "name": "Harmony Island",
+   "located_in": "place:eastern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Harmony_Island",
+   "members": true,
+   "same_entity": "region:harmony-island"
+  },
+  {
+   "id": "place:haunted-coast",
+   "place_type": "sea",
+   "name": "Haunted Coast",
+   "located_in": "place:eastern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Haunted_Coast",
+   "members": true
+  },
+  {
+   "id": "place:horizon-s-end",
+   "place_type": "sea",
+   "name": "Horizon's End",
+   "located_in": "place:sunset-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Horizon%27s_End",
+   "members": true
+  },
+  {
+   "id": "place:hosidian-sea",
+   "place_type": "sea",
+   "name": "Hosidian Sea",
+   "located_in": "place:western-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Hosidian_Sea",
+   "members": true
+  },
+  {
+   "id": "place:iceberg",
+   "place_type": "island",
+   "name": "Iceberg",
+   "located_in": "place:northern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Iceberg",
+   "members": true
+  },
+  {
+   "id": "place:idestia-strait",
+   "place_type": "sea",
+   "name": "Idestia Strait",
+   "located_in": "place:northern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Idestia_Strait",
+   "members": true
+  },
+  {
+   "id": "place:island-of-stone",
+   "place_type": "island",
+   "name": "Island of Stone",
+   "located_in": "place:northern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Island_of_Stone",
+   "members": true
+  },
+  {
+   "id": "place:isle-of-bones",
+   "place_type": "island",
+   "name": "Isle of Bones",
+   "located_in": "place:shrouded-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Isle_of_Bones",
+   "members": true
+  },
+  {
+   "id": "place:isle-of-souls",
+   "place_type": "island",
+   "name": "Isle of Souls",
+   "located_in": "place:shrouded-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Isle_of_Souls",
+   "members": true
+  },
+  {
+   "id": "place:kandarin",
+   "place_type": "kingdom",
+   "name": "Kandarin",
+   "located_in": "place:mainland",
+   "source_url": "https://oldschool.runescape.wiki/w/Kandarin",
+   "ruled_by": "King Lathas",
+   "faction": "humans",
+   "same_entity": "region:kandarin"
+  },
+  {
+   "id": "place:kannski-tides",
+   "place_type": "sea",
+   "name": "Kannski Tides",
+   "located_in": "place:northern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Kannski_Tides",
+   "members": true
+  },
+  {
+   "id": "place:karamja",
+   "place_type": "island",
+   "name": "Karamja",
+   "located_in": "place:ardent-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Karamja",
+   "same_entity": "region:karamja"
+  },
+  {
+   "id": "place:kebos-lowlands",
+   "place_type": "region",
+   "name": "Kebos Lowlands",
+   "located_in": "place:zeah",
+   "source_url": "https://oldschool.runescape.wiki/w/Kebos_Lowlands",
+   "members": true
+  },
+  {
+   "id": "place:kebos-shore",
+   "place_type": "sea",
+   "name": "Kebos Shore",
+   "located_in": "place:forgotten-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Kebos_Shore",
+   "members": true
+  },
+  {
+   "id": "place:kharazi-strait",
+   "place_type": "sea",
+   "name": "Kharazi Strait",
+   "located_in": "place:ardent-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Kharazi_Strait",
+   "members": true
+  },
+  {
+   "id": "place:kharidian-desert",
+   "place_type": "region",
+   "name": "Kharidian Desert",
+   "located_in": "place:mainland",
+   "source_url": "https://oldschool.runescape.wiki/w/Kharidian_Desert",
+   "same_entity": "region:kharidian-desert"
+  },
+  {
+   "id": "place:kharidian-sea",
+   "place_type": "sea",
+   "name": "Kharidian Sea",
+   "located_in": "place:ardent-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Kharidian_Sea",
+   "members": true
+  },
+  {
+   "id": "place:laguna-aurorae",
+   "place_type": "island",
+   "name": "Laguna Aurorae",
+   "located_in": "place:sunset-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Laguna_Aurorae",
+   "members": true
+  },
+  {
+   "id": "place:last-gasp",
+   "place_type": "sea",
+   "name": "Last Gasp",
+   "located_in": "place:forgotten-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Last_Gasp",
+   "members": true
+  },
+  {
+   "id": "place:limbo",
+   "place_type": "island",
+   "name": "Limbo",
+   "located_in": "place:shrouded-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Limbo",
+   "members": true
+  },
+  {
+   "id": "place:lithkren",
+   "place_type": "island",
+   "name": "Lithkren",
+   "located_in": "place:untamed-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Lithkren",
+   "members": true
+  },
+  {
+   "id": "place:litus-lucis",
+   "place_type": "sea",
+   "name": "Litus Lucis",
+   "located_in": "place:western-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Litus_Lucis",
+   "members": true
+  },
+  {
+   "id": "place:lovkengjs-shroud",
+   "place_type": "sea",
+   "name": "Lovkengj's Shroud",
+   "located_in": "place:forgotten-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Lovkengj%27s_Shroud",
+   "members": true
+  },
+  {
+   "id": "place:lum-lagoon",
+   "place_type": "sea",
+   "name": "Lum Lagoon",
+   "located_in": "place:ardent-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Lum_Lagoon",
+   "members": true
+  },
+  {
+   "id": "place:lumbridge-basin",
+   "place_type": "sea",
+   "name": "Lumbridge Basin",
+   "located_in": "place:ardent-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Lumbridge_Basin",
+   "members": true
+  },
+  {
+   "id": "place:lunar-bay",
+   "place_type": "sea",
+   "name": "Lunar Bay",
+   "located_in": "place:northern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Lunar_Bay",
+   "members": true
+  },
+  {
+   "id": "place:lunar-isle",
+   "place_type": "island",
+   "name": "Lunar Isle",
+   "located_in": "place:northern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Lunar_Isle",
+   "faction": "Moon Clan",
+   "members": true,
+   "same_entity": "region:lunar-isle"
+  },
+  {
+   "id": "place:lunar-sea",
+   "place_type": "sea",
+   "name": "Lunar Sea",
+   "located_in": "place:northern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Lunar_Sea",
+   "members": true
+  },
+  {
+   "id": "place:menaphite-sea",
+   "place_type": "sea",
+   "name": "Menaphite Sea",
+   "located_in": "place:ardent-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Menaphite_Sea",
+   "members": true
+  },
+  {
+   "id": "place:minotaurs-rest",
+   "place_type": "island",
+   "name": "Minotaurs' Rest",
+   "located_in": "place:shrouded-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Minotaurs%27_Rest",
+   "members": true
+  },
+  {
+   "id": "place:miscellania",
+   "place_type": "island",
+   "name": "Miscellania",
+   "located_in": "place:northern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Miscellania",
+   "ruled_by": "King Vargas",
+   "members": true
+  },
+  {
+   "id": "place:misthalin",
+   "place_type": "kingdom",
+   "name": "Misthalin",
+   "located_in": "place:mainland",
+   "source_url": "https://oldschool.runescape.wiki/w/Misthalin",
+   "ruled_by": "King Roald III",
+   "members": false
+  },
+  {
+   "id": "place:misty-sea",
+   "place_type": "sea",
+   "name": "Misty Sea",
+   "located_in": "place:sunset-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Misty_Sea",
+   "members": true
+  },
+  {
+   "id": "place:moonshadow",
+   "place_type": "sea",
+   "name": "Moonshadow",
+   "located_in": "place:western-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Moonshadow",
+   "members": true
+  },
+  {
+   "id": "place:morytania",
+   "place_type": "kingdom",
+   "name": "Morytania",
+   "located_in": "place:mainland",
+   "source_url": "https://oldschool.runescape.wiki/w/Morytania",
+   "ruled_by": "Lord Drakan",
+   "faction": "vampyres",
+   "members": true,
+   "same_entity": "region:morytania"
+  },
+  {
+   "id": "place:mos-le-harmless",
+   "place_type": "island",
+   "name": "Mos Le'Harmless",
+   "located_in": "place:eastern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Mos_Le%27Harmless",
+   "members": true
+  },
+  {
+   "id": "place:mos-le-water",
+   "place_type": "sea",
+   "name": "Mos Le'Water",
+   "located_in": "place:eastern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Mos_Le%27Water",
+   "members": true
+  },
+  {
+   "id": "place:mudskipper-sound",
+   "place_type": "sea",
+   "name": "Mudskipper Sound",
+   "located_in": "place:ardent-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Mudskipper_Sound",
+   "members": true
+  },
+  {
+   "id": "place:murkshore-sea",
+   "place_type": "sea",
+   "name": "Murkshore Sea",
+   "located_in": "place:eastern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Murkshore_Sea",
+   "members": true
+  },
+  {
+   "id": "place:mythic-sea",
+   "place_type": "sea",
+   "name": "Mythic Sea",
+   "located_in": "place:shrouded-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Mythic_Sea",
+   "members": true
+  },
+  {
+   "id": "place:ochre-sea",
+   "place_type": "sea",
+   "name": "Ochre Sea",
+   "located_in": "place:sunset-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Ochre_Sea",
+   "members": true
+  },
+  {
+   "id": "place:ooglog-channel",
+   "place_type": "sea",
+   "name": "Oo'glog Channel",
+   "located_in": "place:ardent-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Oo%27glog_Channel",
+   "members": true
+  },
+  {
+   "id": "place:pearl-bank",
+   "place_type": "sea",
+   "name": "Pearl Bank",
+   "located_in": "place:unquiet-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Pearl_Bank",
+   "members": true
+  },
+  {
+   "id": "place:pest-control-island",
+   "place_type": "island",
+   "name": "Pest Control Island",
+   "located_in": "place:ardent-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Pest_Control_Island",
+   "members": true
+  },
+  {
+   "id": "place:pilgrims-passage",
+   "place_type": "sea",
+   "name": "Pilgrims' Passage",
+   "located_in": "place:western-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Pilgrims%27_Passage",
+   "members": true
+  },
+  {
+   "id": "place:pirates'-cove",
+   "place_type": "island",
+   "name": "Pirates' Cove",
+   "located_in": "place:northern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Pirates%27_Cove",
+   "members": true
+  },
+  {
+   "id": "place:pirates-cove",
+   "place_type": "island",
+   "name": "Pirates' Cove",
+   "located_in": "place:northern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Pirates%27_Cove",
+   "members": true
+  },
+  {
+   "id": "place:piscatoris-sea",
+   "place_type": "sea",
+   "name": "Piscatoris Sea",
+   "located_in": "place:western-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Piscatoris_Sea",
+   "members": true
+  },
+  {
+   "id": "place:porth-gwenith",
+   "place_type": "sea",
+   "name": "Porth Gwenith",
+   "located_in": "place:western-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Porth_Gwenith",
+   "members": true
+  },
+  {
+   "id": "place:porth-neigwl",
+   "place_type": "sea",
+   "name": "Porth Neigwl",
+   "located_in": "place:western-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Porth_Neigwl",
+   "members": true
+  },
+  {
+   "id": "place:rainbow-reef",
+   "place_type": "sea",
+   "name": "Rainbow Reef",
+   "located_in": "place:shrouded-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Rainbow_Reef",
+   "members": true
+  },
+  {
+   "id": "place:red-reef",
+   "place_type": "sea",
+   "name": "Red Reef",
+   "located_in": "place:unquiet-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Red_Reef",
+   "members": true
+  },
+  {
+   "id": "place:remote-island",
+   "place_type": "island",
+   "name": "Remote Island",
+   "located_in": "place:unquiet-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Remote_Island",
+   "members": true
+  },
+  {
+   "id": "place:rimmington-strait",
+   "place_type": "sea",
+   "name": "Rimmington Strait",
+   "located_in": "place:ardent-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Rimmington_Strait",
+   "members": true
+  },
+  {
+   "id": "place:rogers-recluse",
+   "place_type": "island",
+   "name": "Roger's Recluse",
+   "located_in": "place:eastern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Roger%27s_Recluse",
+   "members": true
+  },
+  {
+   "id": "place:sanctuarys-end",
+   "place_type": "sea",
+   "name": "Sanctuary's End",
+   "located_in": "place:eastern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Sanctuary%27s_End",
+   "members": true
+  },
+  {
+   "id": "place:sapphire-sea",
+   "place_type": "sea",
+   "name": "Sapphire Sea",
+   "located_in": "place:shrouded-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Sapphire_Sea",
+   "members": true
+  },
+  {
+   "id": "place:scabaras-shallows",
+   "place_type": "sea",
+   "name": "Scabaras' Shallows",
+   "located_in": "place:eastern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Scabaras%27_Shallows",
+   "members": true
+  },
+  {
+   "id": "place:sea-of-shells",
+   "place_type": "sea",
+   "name": "Sea of Shells",
+   "located_in": "place:unquiet-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Sea_of_Shells",
+   "members": true
+  },
+  {
+   "id": "place:sea-of-souls",
+   "place_type": "sea",
+   "name": "Sea of Souls",
+   "located_in": "place:shrouded-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Sea_of_Souls",
+   "members": true
+  },
+  {
+   "id": "place:shiverwake-expanse",
+   "place_type": "sea",
+   "name": "Shiverwake Expanse",
+   "located_in": "place:northern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Shiverwake_Expanse",
+   "members": true
+  },
+  {
+   "id": "place:shrieking-waters",
+   "place_type": "sea",
+   "name": "Shrieking Waters",
+   "located_in": "place:eastern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Shrieking_Waters",
+   "members": true
+  },
+  {
+   "id": "place:slepe-sound",
+   "place_type": "sea",
+   "name": "Slepe Sound",
+   "located_in": "place:eastern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Slepe_Sound",
+   "members": true
+  },
+  {
+   "id": "place:soul-bay",
+   "place_type": "sea",
+   "name": "Soul Bay",
+   "located_in": "place:shrouded-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Soul_Bay",
+   "members": true
+  },
+  {
+   "id": "place:southern-expanse",
+   "place_type": "sea",
+   "name": "Southern Expanse",
+   "located_in": "place:shrouded-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Southern_Expanse",
+   "members": true
+  },
+  {
+   "id": "place:stoneheart-sea",
+   "place_type": "sea",
+   "name": "Stoneheart Sea",
+   "located_in": "place:northern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Stoneheart_Sea",
+   "members": true
+  },
+  {
+   "id": "place:strait-of-discord",
+   "place_type": "sea",
+   "name": "Strait of Discord",
+   "located_in": "place:eastern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Strait_of_Discord",
+   "members": true
+  },
+  {
+   "id": "place:strait-of-khazard",
+   "place_type": "sea",
+   "name": "Strait of Khazard",
+   "located_in": "place:ardent-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Strait_of_Khazard",
+   "members": true
+  },
+  {
+   "id": "place:sulphur-cove",
+   "place_type": "sea",
+   "name": "Sulphur Cove",
+   "located_in": "place:forgotten-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Sulphur_Cove",
+   "members": true
+  },
+  {
+   "id": "place:sunbleak-island",
+   "place_type": "island",
+   "name": "Sunbleak Island",
+   "located_in": "place:shrouded-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Sunbleak_Island",
+   "members": true
+  },
+  {
+   "id": "place:sunset-bay",
+   "place_type": "sea",
+   "name": "Sunset Bay",
+   "located_in": "place:sunset-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Sunset_Bay",
+   "members": true
+  },
+  {
+   "id": "place:tainted-tides",
+   "place_type": "sea",
+   "name": "Tainted Tides",
+   "located_in": "place:eastern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Tainted_Tides",
+   "members": true
+  },
+  {
+   "id": "place:the-accursed-sea",
+   "place_type": "sea",
+   "name": "The Accursed Sea",
+   "located_in": "place:eastern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Accursed_Sea",
+   "members": true
+  },
+  {
+   "id": "place:the-cinderwaters",
+   "place_type": "sea",
+   "name": "The Cinderwaters",
+   "located_in": "place:untamed-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Cinderwaters",
+   "members": true
+  },
+  {
+   "id": "place:the-eastern-doldrums",
+   "place_type": "sea",
+   "name": "The Eastern Doldrums",
+   "located_in": "place:untamed-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Eastern_Doldrums",
+   "members": true
+  },
+  {
+   "id": "place:the-endless-sea",
+   "place_type": "sea",
+   "name": "The Endless Sea",
+   "located_in": "place:forgotten-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Endless_Sea",
+   "members": true
+  },
+  {
+   "id": "place:the-everdeep",
+   "place_type": "sea",
+   "name": "The Everdeep",
+   "located_in": "place:shrouded-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Everdeep",
+   "members": true
+  },
+  {
+   "id": "place:the-iron-sea",
+   "place_type": "sea",
+   "name": "The Iron Sea",
+   "located_in": "place:eastern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Iron_Sea",
+   "members": true
+  },
+  {
+   "id": "place:the-lonely-sea",
+   "place_type": "sea",
+   "name": "The Lonely Sea",
+   "located_in": "place:unquiet-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Lonely_Sea",
+   "members": true
+  },
+  {
+   "id": "place:the-precipice",
+   "place_type": "sea",
+   "name": "The Precipice",
+   "located_in": "place:untamed-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Precipice",
+   "members": true
+  },
+  {
+   "id": "place:the-searing-sea",
+   "place_type": "sea",
+   "name": "The Searing Sea",
+   "located_in": "place:untamed-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Searing_Sea",
+   "members": true
+  },
+  {
+   "id": "place:the-shipyard",
+   "place_type": "island",
+   "name": "The Shipyard",
+   "located_in": "place:shrouded-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Shipyard_(Sailing)"
+  },
+  {
+   "id": "place:the-simian-sea",
+   "place_type": "sea",
+   "name": "The Simian Sea",
+   "located_in": "place:ardent-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Simian_Sea",
+   "members": true
+  },
+  {
+   "id": "place:the-skullhorde",
+   "place_type": "sea",
+   "name": "The Skullhorde",
+   "located_in": "place:shrouded-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Skullhorde",
+   "members": true
+  },
+  {
+   "id": "place:the-storm-tempor",
+   "place_type": "sea",
+   "name": "The Storm Tempor",
+   "located_in": "place:ardent-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Storm_Tempor",
+   "members": true
+  },
+  {
+   "id": "place:tirannwn",
+   "place_type": "region",
+   "name": "Tirannwn",
+   "located_in": "place:mainland",
+   "source_url": "https://oldschool.runescape.wiki/w/Tirannwn",
+   "faction": "elves",
+   "members": true
+  },
+  {
+   "id": "place:tirannwn-bight",
+   "place_type": "sea",
+   "name": "Tirannwn Bight",
+   "located_in": "place:western-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Tirannwn_Bight",
+   "members": true
+  },
+  {
+   "id": "place:tortugan-sea",
+   "place_type": "sea",
+   "name": "Tortugan Sea",
+   "located_in": "place:unquiet-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Tortugan_Sea",
+   "members": true
+  },
+  {
+   "id": "place:troll-country",
+   "place_type": "region",
+   "name": "Troll Country",
+   "located_in": "place:mainland",
+   "source_url": "https://oldschool.runescape.wiki/w/Troll_Country",
+   "faction": "trolls",
+   "members": true
+  },
+  {
+   "id": "place:turtle-belt",
+   "place_type": "sea",
+   "name": "Turtle Belt",
+   "located_in": "place:unquiet-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Turtle_Belt",
+   "members": true
+  },
+  {
+   "id": "place:tutorial-island",
+   "place_type": "island",
+   "name": "Tutorial Island",
+   "located_in": "place:ardent-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Tutorial_Island",
+   "members": false
+  },
+  {
+   "id": "place:uzer-channel",
+   "place_type": "sea",
+   "name": "Uzer Channel",
+   "located_in": "place:eastern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Uzer_Channel",
+   "members": true
+  },
+  {
+   "id": "place:v's-belt",
+   "place_type": "sea",
+   "name": "V's Belt",
+   "located_in": "place:northern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/V%27s_Belt",
+   "members": true
+  },
+  {
+   "id": "place:vagabonds-rest",
+   "place_type": "sea",
+   "name": "Vagabonds Rest",
+   "located_in": "place:western-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Vagabonds_Rest",
+   "members": true
+  },
+  {
+   "id": "place:varlamore",
+   "place_type": "kingdom",
+   "name": "Varlamore",
+   "located_in": "place:zeah",
+   "source_url": "https://oldschool.runescape.wiki/w/Varlamore",
+   "ruled_by": "Sun Queen Zyanyi Arkan",
+   "members": true
+  },
+  {
+   "id": "place:vatrachos",
+   "place_type": "island",
+   "name": "Vatrachos",
+   "located_in": "place:shrouded-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Vatrachos"
+  },
+  {
+   "id": "place:void-knights-outpost",
+   "place_type": "island",
+   "name": "Void Knights' Outpost",
+   "located_in": "place:ardent-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Void_Knights%27_Outpost",
+   "members": true
+  },
+  {
+   "id": "place:waterbirth-island",
+   "place_type": "island",
+   "name": "Waterbirth Island",
+   "located_in": "place:northern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Waterbirth_Island",
+   "faction": "Fremennik",
+   "members": true,
+   "same_entity": "region:waterbirth-island"
+  },
+  {
+   "id": "place:weiss-melt",
+   "place_type": "sea",
+   "name": "Weiss Melt",
+   "located_in": "place:northern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Weiss_Melt",
+   "members": true
+  },
+  {
+   "id": "place:weissmere",
+   "place_type": "sea",
+   "name": "Weissmere",
+   "located_in": "place:northern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Weissmere",
+   "members": true
+  },
+  {
+   "id": "place:western-gate",
+   "place_type": "sea",
+   "name": "Western Gate",
+   "located_in": "place:shrouded-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Western_Gate",
+   "members": true
+  },
+  {
+   "id": "place:wilderness",
+   "place_type": "region",
+   "name": "Wilderness",
+   "located_in": "place:mainland",
+   "source_url": "https://oldschool.runescape.wiki/w/Wilderness",
+   "members": false,
+   "same_entity": "region:wilderness"
+  },
+  {
+   "id": "place:winter's-edge",
+   "place_type": "sea",
+   "name": "Winter's Edge",
+   "located_in": "place:northern-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Winter%27s_Edge",
+   "members": true
+  },
+  {
+   "id": "place:wintumber-island",
+   "place_type": "island",
+   "name": "Wintumber Island",
+   "located_in": "place:shrouded-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Wintumber_Island",
+   "members": true
+  },
+  {
+   "id": "place:wyrms-waters",
+   "place_type": "sea",
+   "name": "Wyrm's Waters",
+   "located_in": "place:shrouded-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Wyrm%27s_Waters",
+   "members": true
+  },
+  {
+   "id": "place:wyverns-wake",
+   "place_type": "sea",
+   "name": "Wyvern's Wake",
+   "located_in": "place:untamed-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Wyvern%27s_Wake",
+   "members": true
+  },
+  {
+   "id": "place:zul-egil",
+   "place_type": "sea",
+   "name": "Zul-Egil",
+   "located_in": "place:shrouded-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Zul-Egil",
+   "members": true
+  },
+  {
+   "id": "place:al-kharid",
+   "place_type": "city",
+   "name": "Al Kharid",
+   "located_in": "place:kharidian-desert",
+   "source_url": "https://oldschool.runescape.wiki/w/Al_Kharid",
+   "ruled_by": "Emir Shah",
+   "members": false
+  },
+  {
+   "id": "place:aldarin",
+   "place_type": "island",
+   "name": "Aldarin",
+   "located_in": "place:varlamore",
+   "source_url": "https://oldschool.runescape.wiki/w/Aldarin",
+   "members": true
+  },
+  {
+   "id": "place:anglers-retreat",
+   "place_type": "island",
+   "name": "Anglers' Retreat",
+   "located_in": "place:mythic-sea",
+   "source_url": "https://oldschool.runescape.wiki/w/Anglers%27_Retreat",
+   "members": true
+  },
+  {
+   "id": "place:arceuus",
+   "place_type": "city",
+   "name": "Arceuus",
+   "located_in": "place:great-kourend",
+   "source_url": "https://oldschool.runescape.wiki/w/Arceuus",
+   "ruled_by": "Lord Trobin Arceuus",
+   "faction": "Arceuus House",
+   "members": true
+  },
+  {
+   "id": "place:buccaneers-haven",
+   "place_type": "island",
+   "name": "Buccaneers' Haven",
+   "located_in": "place:piscatoris-sea",
+   "source_url": "https://oldschool.runescape.wiki/w/Buccaneers%27_Haven",
+   "members": true
+  },
+  {
+   "id": "place:cam-torum",
+   "place_type": "city",
+   "name": "Cam Torum",
+   "located_in": "place:varlamore",
+   "source_url": "https://oldschool.runescape.wiki/w/Cam_Torum",
+   "ruled_by": "Highlord Katlo",
+   "faction": "dwarves",
+   "members": true
+  },
+  {
+   "id": "place:charred-island",
+   "place_type": "island",
+   "name": "Charred Island",
+   "located_in": "place:the-lonely-sea",
+   "source_url": "https://oldschool.runescape.wiki/w/Charred_Island",
+   "members": true
+  },
+  {
+   "id": "place:chinchompa-island",
+   "place_type": "island",
+   "name": "Chinchompa Island",
+   "located_in": "place:hosidian-sea",
+   "source_url": "https://oldschool.runescape.wiki/w/Chinchompa_Island",
+   "members": true
+  },
+  {
+   "id": "place:civitas-illa-fortis",
+   "place_type": "city",
+   "name": "Civitas illa Fortis",
+   "located_in": "place:varlamore",
+   "source_url": "https://oldschool.runescape.wiki/w/Civitas_illa_Fortis",
+   "ruled_by": "Sun Queen Zyanyi Arkan",
+   "members": true
+  },
+  {
+   "id": "place:crabclaw-isle",
+   "place_type": "island",
+   "name": "Crabclaw Isle",
+   "located_in": "place:crabclaw-bay",
+   "source_url": "https://oldschool.runescape.wiki/w/Crabclaw_Isle",
+   "members": true,
+   "same_entity": "region:crabclaw-isle"
+  },
+  {
+   "id": "place:darkmeyer",
+   "place_type": "city",
+   "name": "Darkmeyer",
+   "located_in": "place:morytania",
+   "source_url": "https://oldschool.runescape.wiki/w/Darkmeyer",
+   "ruled_by": "Lord Drakan",
+   "faction": "vampyres",
+   "members": true
+  },
+  {
+   "id": "place:dognose-island",
+   "place_type": "island",
+   "name": "Dognose Island",
+   "located_in": "place:menaphite-sea",
+   "source_url": "https://oldschool.runescape.wiki/w/Dognose_Island",
+   "members": true
+  },
+  {
+   "id": "place:dorgesh-kaan",
+   "place_type": "city",
+   "name": "Dorgesh-Kaan",
+   "located_in": "place:misthalin",
+   "source_url": "https://oldschool.runescape.wiki/w/Dorgesh-Kaan",
+   "ruled_by": "Dorgeshuun Council",
+   "faction": "Dorgeshuun",
+   "members": true
+  },
+  {
+   "id": "place:drumstick-isle",
+   "place_type": "island",
+   "name": "Drumstick Isle",
+   "located_in": "place:porth-gwenith",
+   "source_url": "https://oldschool.runescape.wiki/w/Drumstick_Isle",
+   "members": true
+  },
+  {
+   "id": "place:east-ardougne",
+   "place_type": "city",
+   "name": "East Ardougne",
+   "located_in": "place:kandarin",
+   "source_url": "https://oldschool.runescape.wiki/w/East_Ardougne",
+   "ruled_by": "King Lathas",
+   "faction": "humans",
+   "members": true
+  },
+  {
+   "id": "place:falador",
+   "place_type": "city",
+   "name": "Falador",
+   "located_in": "place:asgarnia",
+   "source_url": "https://oldschool.runescape.wiki/w/Falador",
+   "ruled_by": "Sir Amik Varze",
+   "faction": "White Knights",
+   "members": false
+  },
+  {
+   "id": "place:feldip-hills",
+   "place_type": "region",
+   "name": "Feldip Hills",
+   "located_in": "place:kandarin",
+   "source_url": "https://oldschool.runescape.wiki/w/Feldip_Hills",
+   "faction": "ogres"
+  },
+  {
+   "id": "place:grimstone",
+   "place_type": "island",
+   "name": "Grimstone",
+   "located_in": "place:weiss-melt",
+   "source_url": "https://oldschool.runescape.wiki/w/Grimstone",
+   "members": true
+  },
+  {
+   "id": "place:hosidius",
+   "place_type": "city",
+   "name": "Hosidius",
+   "located_in": "place:great-kourend",
+   "source_url": "https://oldschool.runescape.wiki/w/Hosidius",
+   "ruled_by": "Lord Pandur Hosidius",
+   "faction": "Hosidius House",
+   "members": true,
+   "same_entity": "region:hosidius"
+  },
+  {
+   "id": "place:isle-of-serpents",
+   "place_type": "island",
+   "name": "Isle of Serpents",
+   "located_in": "place:southern-expanse",
+   "source_url": "https://oldschool.runescape.wiki/w/Isle_of_Serpents",
+   "members": true
+  },
+  {
+   "id": "place:jatizso",
+   "place_type": "island",
+   "name": "Jatizso",
+   "located_in": "place:fremennik-isles",
+   "source_url": "https://oldschool.runescape.wiki/w/Jatizso",
+   "ruled_by": "King Gjuki Sorvott IV",
+   "faction": "Fremennik",
+   "members": true
+  },
+  {
+   "id": "place:keldagrim",
+   "place_type": "city",
+   "name": "Keldagrim",
+   "located_in": "place:dwarven-realm",
+   "source_url": "https://oldschool.runescape.wiki/w/Keldagrim",
+   "ruled_by": "The Consortium",
+   "faction": "dwarves",
+   "members": true
+  },
+  {
+   "id": "place:last-light",
+   "place_type": "island",
+   "name": "Last Light",
+   "located_in": "place:anglerfish-s-light",
+   "source_url": "https://oldschool.runescape.wiki/w/Last_Light",
+   "members": true
+  },
+  {
+   "id": "place:lledrith-island",
+   "place_type": "island",
+   "name": "Lledrith Island",
+   "located_in": "place:crystal-sea",
+   "source_url": "https://oldschool.runescape.wiki/w/Lledrith_Island",
+   "members": true
+  },
+  {
+   "id": "place:lovakengj",
+   "place_type": "city",
+   "name": "Lovakengj",
+   "located_in": "place:great-kourend",
+   "source_url": "https://oldschool.runescape.wiki/w/Lovakengj",
+   "ruled_by": "Lady Vulcana Lovakengj",
+   "faction": "dwarves",
+   "members": true
+  },
+  {
+   "id": "place:marim",
+   "place_type": "city",
+   "name": "Marim",
+   "located_in": "place:ape-atoll",
+   "source_url": "https://oldschool.runescape.wiki/w/Marim",
+   "ruled_by": "King Awowogei",
+   "faction": "monkeys",
+   "members": true
+  },
+  {
+   "id": "place:menaphos",
+   "place_type": "city",
+   "name": "Menaphos",
+   "located_in": "place:kharidian-desert",
+   "source_url": "https://oldschool.runescape.wiki/w/Menaphos",
+   "ruled_by": "Pharaoh Kemesis",
+   "members": true
+  },
+  {
+   "id": "place:mor-ul-rek",
+   "place_type": "city",
+   "name": "Mor Ul Rek",
+   "located_in": "place:karamja",
+   "source_url": "https://oldschool.runescape.wiki/w/Mor_Ul_Rek",
+   "faction": "TzHaar",
+   "members": true
+  },
+  {
+   "id": "place:mort-myre-swamp",
+   "place_type": "region",
+   "name": "Mort Myre Swamp",
+   "located_in": "place:morytania",
+   "source_url": "https://oldschool.runescape.wiki/w/Mort_Myre_Swamp",
+   "members": true,
+   "same_entity": "region:mort-myre-swamp"
+  },
+  {
+   "id": "place:mount-quidamortem",
+   "place_type": "region",
+   "name": "Mount Quidamortem",
+   "located_in": "place:kebos-lowlands",
+   "source_url": "https://oldschool.runescape.wiki/w/Mount_Quidamortem",
+   "members": true
+  },
+  {
+   "id": "place:neitiznot",
+   "place_type": "island",
+   "name": "Neitiznot",
+   "located_in": "place:fremennik-isles",
+   "source_url": "https://oldschool.runescape.wiki/w/Neitiznot",
+   "ruled_by": "Mawnis Burowgar",
+   "faction": "Fremennik",
+   "members": true
+  },
+  {
+   "id": "place:port-piscarilius",
+   "place_type": "city",
+   "name": "Port Piscarilius",
+   "located_in": "place:great-kourend",
+   "source_url": "https://oldschool.runescape.wiki/w/Port_Piscarilius",
+   "ruled_by": "Lady Shauna Piscarilius",
+   "faction": "Piscarilius House",
+   "members": true
+  },
+  {
+   "id": "place:prifddinas",
+   "place_type": "city",
+   "name": "Prifddinas",
+   "located_in": "place:tirannwn",
+   "source_url": "https://oldschool.runescape.wiki/w/Prifddinas",
+   "faction": "elves",
+   "members": true
+  },
+  {
+   "id": "place:rainbows-end",
+   "place_type": "island",
+   "name": "Rainbow's End",
+   "located_in": "place:rainbow-reef",
+   "source_url": "https://oldschool.runescape.wiki/w/Rainbow%27s_End",
+   "members": true
+  },
+  {
+   "id": "place:red-rock",
+   "place_type": "island",
+   "name": "Red Rock",
+   "located_in": "place:red-reef",
+   "source_url": "https://oldschool.runescape.wiki/w/Red_Rock",
+   "members": true
+  },
+  {
+   "id": "place:rellekka",
+   "place_type": "city",
+   "name": "Rellekka",
+   "located_in": "place:fremennik-province",
+   "source_url": "https://oldschool.runescape.wiki/w/Rellekka",
+   "ruled_by": "Brundt the Chieftain",
+   "faction": "Fremennik",
+   "members": true,
+   "same_entity": "region:rellekka"
+  },
+  {
+   "id": "place:rock-island-prison",
+   "place_type": "island",
+   "name": "Rock Island Prison",
+   "located_in": "place:kharazi-strait",
+   "source_url": "https://oldschool.runescape.wiki/w/Rock_Island_Prison",
+   "members": true
+  },
+  {
+   "id": "place:shayzien",
+   "place_type": "city",
+   "name": "Shayzien",
+   "located_in": "place:great-kourend",
+   "source_url": "https://oldschool.runescape.wiki/w/Shayzien",
+   "ruled_by": "Lord Shiro Shayzien",
+   "faction": "Shayzien House",
+   "members": true
+  },
+  {
+   "id": "place:shimmering-atoll",
+   "place_type": "island",
+   "name": "Shimmering Atoll",
+   "located_in": "place:wyrms-waters",
+   "source_url": "https://oldschool.runescape.wiki/w/Shimmering_Atoll",
+   "members": true
+  },
+  {
+   "id": "place:sophanem",
+   "place_type": "city",
+   "name": "Sophanem",
+   "located_in": "place:kharidian-desert",
+   "source_url": "https://oldschool.runescape.wiki/w/Sophanem",
+   "members": true
+  },
+  {
+   "id": "place:tear-of-the-soul",
+   "place_type": "island",
+   "name": "Tear of the Soul",
+   "located_in": "place:breakbone-strait",
+   "source_url": "https://oldschool.runescape.wiki/w/Tear_of_the_Soul",
+   "members": true
+  },
+  {
+   "id": "place:tempestus",
+   "place_type": "city",
+   "name": "Tempestus",
+   "located_in": "place:varlamore",
+   "source_url": "https://oldschool.runescape.wiki/w/Tempestus",
+   "members": true
+  },
+  {
+   "id": "place:tempoross-cove",
+   "place_type": "island",
+   "name": "Tempoross Cove",
+   "located_in": "place:the-storm-tempor",
+   "source_url": "https://oldschool.runescape.wiki/w/Tempoross_Cove",
+   "members": true
+  },
+  {
+   "id": "place:the-crown-jewel",
+   "place_type": "island",
+   "name": "The Crown Jewel",
+   "located_in": "place:aureum-coast",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Crown_Jewel",
+   "members": true
+  },
+  {
+   "id": "place:the-great-conch",
+   "place_type": "island",
+   "name": "The Great Conch",
+   "located_in": "place:turtle-belt",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Great_Conch",
+   "members": true
+  },
+  {
+   "id": "place:the-little-pearl",
+   "place_type": "island",
+   "name": "The Little Pearl",
+   "located_in": "place:pearl-bank",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Little_Pearl",
+   "members": true
+  },
+  {
+   "id": "place:the-onyx-crest",
+   "place_type": "island",
+   "name": "The Onyx Crest",
+   "located_in": "place:sea-of-shells",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Onyx_Crest",
+   "members": true
+  },
+  {
+   "id": "place:the-pandemonium",
+   "place_type": "island",
+   "name": "The Pandemonium",
+   "located_in": "place:kharidian-sea",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Pandemonium",
+   "members": true
+  },
+  {
+   "id": "place:gnome-stronghold",
+   "place_type": "city",
+   "name": "Tree Gnome Stronghold",
+   "located_in": "place:kandarin",
+   "source_url": "https://oldschool.runescape.wiki/w/Gnome_Stronghold",
+   "ruled_by": "King Narnode Shareen",
+   "faction": "gnomes",
+   "members": true
+  },
+  {
+   "id": "place:ungael",
+   "place_type": "island",
+   "name": "Ungael",
+   "located_in": "place:lunar-sea",
+   "source_url": "https://oldschool.runescape.wiki/w/Ungael",
+   "members": true
+  },
+  {
+   "id": "place:varrock",
+   "place_type": "city",
+   "name": "Varrock",
+   "located_in": "place:misthalin",
+   "source_url": "https://oldschool.runescape.wiki/w/Varrock",
+   "ruled_by": "King Roald III",
+   "members": false,
+   "same_entity": "region:varrock"
+  },
+  {
+   "id": "place:west-ardougne",
+   "place_type": "city",
+   "name": "West Ardougne",
+   "located_in": "place:kandarin",
+   "source_url": "https://oldschool.runescape.wiki/w/West_Ardougne",
+   "faction": "humans",
+   "members": true
+  },
+  {
+   "id": "place:yanille",
+   "place_type": "city",
+   "name": "Yanille",
+   "located_in": "place:kandarin",
+   "source_url": "https://oldschool.runescape.wiki/w/Yanille",
+   "faction": "humans",
+   "members": true,
+   "same_entity": "region:yanille"
+  },
+  {
+   "id": "place:ynysdail",
+   "place_type": "island",
+   "name": "Ynysdail",
+   "located_in": "place:porth-gwenith",
+   "source_url": "https://oldschool.runescape.wiki/w/Ynysdail",
+   "members": true
+  },
+  {
+   "id": "place:draynor-island",
+   "place_type": "island",
+   "name": "Draynor island",
+   "located_in": "place:misthalin",
+   "source_url": "https://oldschool.runescape.wiki/w/Draynor_island",
+   "members": true
+  },
+  {
+   "id": "place:gutanoth",
+   "place_type": "city",
+   "name": "Gu'Tanoth",
+   "located_in": "place:feldip-hills",
+   "source_url": "https://oldschool.runescape.wiki/w/Gu%27Tanoth",
+   "faction": "ogres",
+   "members": true
+  },
+  {
+   "id": "place:jiggig",
+   "place_type": "region",
+   "name": "Jiggig",
+   "located_in": "place:feldip-hills",
+   "source_url": "https://oldschool.runescape.wiki/w/Jiggig",
+   "faction": "ogres",
+   "members": true
+  },
+  {
+   "id": "place:lone-oak-island",
+   "place_type": "island",
+   "name": "Lone oak island",
+   "located_in": "place:asgarnia",
+   "source_url": "https://oldschool.runescape.wiki/w/Lone_oak_island",
+   "members": true
+  },
+  {
+   "id": "place:moss-giant-island",
+   "place_type": "island",
+   "name": "Moss Giant Island",
+   "located_in": "place:karamja",
+   "source_url": "https://oldschool.runescape.wiki/w/Moss_Giant_Island",
+   "members": true
+  }
+ ]
+}

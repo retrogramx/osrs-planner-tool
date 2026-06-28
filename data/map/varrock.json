@@ -7,31 +7,6 @@
   },
   "places": [
     {
-      "id": "place:gielinor",
-      "place_type": "world",
-      "name": "Gielinor",
-      "located_in": null,
-      "source_url": "https://oldschool.runescape.wiki/w/Gielinor"
-    },
-    {
-      "id": "place:misthalin",
-      "place_type": "kingdom",
-      "name": "Misthalin",
-      "located_in": "place:gielinor",
-      "ruled_by": "npc:king-roald",
-      "faction": "humans",
-      "source_url": "https://oldschool.runescape.wiki/w/Misthalin"
-    },
-    {
-      "id": "place:varrock",
-      "place_type": "city",
-      "name": "Varrock",
-      "located_in": "place:misthalin",
-      "ruled_by": "npc:king-roald",
-      "source_url": "https://oldschool.runescape.wiki/w/Varrock",
-      "faction": "Misthalin"
-    },
-    {
       "id": "place:varrock-sewers",
       "name": "Varrock Sewers",
       "place_type": "dungeon",
