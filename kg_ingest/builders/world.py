@@ -16,6 +16,17 @@ from kg_ingest.ids import _stable_hash
 _EDGE_BAND = 0xB0000000
 
 
+def parse_infobox_links(location_wikitext):
+    """Extract [[Target]] / [[Target|alias]] link targets from an infobox location value,
+    in order, de-duped. Verbatim source -> deterministic targets (no inference)."""
+    out = []
+    for m in re.finditer(r"\[\[([^\]|#]+)(?:[#|][^\]]*)?\]\]", location_wikitext or ""):
+        target = m.group(1).strip()
+        if target and target not in out:
+            out.append(target)
+    return out
+
+
 def _edge_id(src_id: str, slot: str) -> int:
     return _EDGE_BAND | _stable_hash(f"{src_id}#edge#{slot}")
 

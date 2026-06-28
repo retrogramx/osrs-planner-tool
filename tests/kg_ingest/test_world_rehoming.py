@@ -1,5 +1,13 @@
-from kg_ingest.builders.world import is_excluded, build_world, parent_for, _resolve_reachable
+from kg_ingest.builders.world import is_excluded, build_world, parent_for, _resolve_reachable, parse_infobox_links
 from osrs_planner.engine.kg.model import Edge, EdgeType, Node, NodeKind
+
+
+def test_parse_infobox_links():
+    assert parse_infobox_links("Located in southern [[Misthalin]]") == ["Misthalin"]
+    # alias links: keep the target, drop the alias; order preserved; de-duped
+    assert parse_infobox_links("[[Karamja|the island]], near [[Brimhaven]] and [[Karamja]]") == ["Karamja", "Brimhaven"]
+    assert parse_infobox_links("") == []
+    assert parse_infobox_links("no links here") == []
 
 
 def test_is_excluded_list_index_and_discontinued():
