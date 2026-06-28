@@ -61,3 +61,17 @@ def test_content_place_is_eligible_parent():
     li = {(e.src, e.dst) for e in edges if e.type is EdgeType.LOCATED_IN}
     # the mine parents to the INGESTED island 'place:ardougne' (not the root)
     assert ("place:ardougne-sewers-mine", "place:ardougne") in li
+
+
+def test_category_rung_prefers_backbone_over_content():
+    # A page with BOTH a content category (alphabetically first) and a backbone category
+    # must parent to the BACKBONE place — content eligibility must not silently re-parent
+    # a page that already has a backbone home. (Sulphur Mine regression: {Blast Mine, Lovakengj}
+    # where Lovakengj is backbone and Blast Mine is content-inside-Sulphur-Mine.)
+    name_index = {"lovakengj": "place:lovakengj", "blastmine": "place:blast-mine"}
+    backbone_names = {"lovakengj"}
+    assert parent_for("Sulphur Mine", {"Blast Mine", "Lovakengj"}, name_index,
+                      backbone_names=backbone_names) == ("place:lovakengj", "category")
+    # with NO backbone category, content still wins (genuine re-home preserved)
+    assert parent_for("Ardougne Sewers mine", {"Mines", "Ardougne"},
+                      {"ardougne": "place:ardougne"}, backbone_names=set()) == ("place:ardougne", "category")

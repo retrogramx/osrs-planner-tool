@@ -2795,7 +2795,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:blast-mine",
+    "dst": "place:lovakengj",
     "id": 6296799,
     "src": "place:sulphur-mine",
     "type": "located_in"
@@ -4506,7 +4506,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:ferox-enclave",
+    "dst": "place:wilderness",
     "id": 6482785,
     "src": "place:ferox-enclave-dungeon",
     "type": "located_in"
@@ -6292,7 +6292,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:god-wars-dungeon",
+    "dst": "place:wilderness",
     "id": 6685204,
     "src": "place:wilderness-god-wars-dungeon",
     "type": "located_in"
@@ -8631,7 +8631,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:ardougne",
+    "dst": "place:kandarin",
     "id": 6937710,
     "src": "place:clock-tower-dungeon",
     "type": "located_in"
@@ -11857,7 +11857,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:dwarven-mine",
+    "dst": "place:falador",
     "id": 7279461,
     "src": "place:mining-guild",
     "type": "located_in"
@@ -14441,7 +14441,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:bounty-hunter",
+    "dst": "place:daimons-crater",
     "id": 7566135,
     "src": "place:daimon-s-crater",
     "type": "located_in"

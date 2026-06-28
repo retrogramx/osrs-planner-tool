@@ -55,31 +55,55 @@ def classify(page_categories):
     return None
 
 
-def parent_for(title, page_categories, name_index, infobox_links=None, overrides=None):
+def parent_for(title, page_categories, name_index, infobox_links=None, overrides=None,
+               backbone_names=None):
     """Precision-first signal stack -> (parent_id, signal). First hit wins.
     name_index maps a normalized place name -> a place id (backbone + ingested content);
-    a noise-excluded page is never in it, and a page never parents to itself."""
+    a noise-excluded page is never in it, and a page never parents to itself.
+    backbone_names (set of normalized backbone place names) makes the WHOLE signal stack
+    prefer a BACKBONE match over a content one: the stack is run once backbone-only, then
+    (if unresolved) once allowing content. This exactly reproduces the old backbone-only
+    resolution for any page that already had a backbone home — so adding content to
+    name_index re-homes ONLY the genuinely-unparented (those have no backbone match at any
+    rung, category OR name-suffix OR infobox)."""
     slug = _slug(title)
     # (1) owner override (editorial escape hatch)
     if overrides and slug in overrides:
         return (overrides[slug]["parent"], "override")
-    # (2) category-match: a place-node name among the page's categories (sorted -> deterministic)
-    for c in sorted(page_categories):
-        pid = name_index.get(_norm(c))
-        if pid and pid != slug:
-            return (pid, "category")
-    # (3) name minus a type suffix -> a place node
-    base = re.sub(r"\b(dungeon|caves?|mine|lair|tunnels?|cellar|crypt|vault|arena|course|guild|camp)\b.*$", "", title.lower())
-    base = re.sub(r"\s*\(.*?\)\s*$", "", base).strip()
-    if _norm(base):
-        pid = name_index.get(_norm(base))
-        if pid and pid != slug:
-            return (pid, "name-suffix")
-    # (4) infobox location (deterministic wikitext order); inert until Task 4 passes infobox_links
-    for name in (infobox_links or []):
-        pid = name_index.get(_norm(name))
-        if pid and pid != slug:
-            return (pid, "infobox")
+
+    def _lookup(nc, allow_content):
+        pid = name_index.get(nc)
+        if pid and pid != slug and (allow_content or backbone_names is None or nc in backbone_names):
+            return pid
+        return None
+
+    def _stack(allow_content):
+        # (2) category-match: a place-node name among the page's categories (sorted -> deterministic)
+        for c in sorted(page_categories):
+            pid = _lookup(_norm(c), allow_content)
+            if pid:
+                return (pid, "category")
+        # (3) name minus a type suffix -> a place node
+        base = re.sub(r"\b(dungeon|caves?|mine|lair|tunnels?|cellar|crypt|vault|arena|course|guild|camp)\b.*$", "", title.lower())
+        base = re.sub(r"\s*\(.*?\)\s*$", "", base).strip()
+        if _norm(base):
+            pid = _lookup(_norm(base), allow_content)
+            if pid:
+                return (pid, "name-suffix")
+        # (4) infobox location (deterministic wikitext order); inert until Task 4 passes infobox_links
+        for name in (infobox_links or []):
+            pid = _lookup(_norm(name), allow_content)
+            if pid:
+                return (pid, "infobox")
+        return None
+
+    if backbone_names is not None:                     # backbone wins entirely over content
+        hit = _stack(allow_content=False)
+        if hit:
+            return hit
+    hit = _stack(allow_content=True)
+    if hit:
+        return hit
     # (5) unresolved -> FLAG (never guess)
     return ("place:gielinor", "FLAG")
 
@@ -112,6 +136,7 @@ def resolve_parents(backbone, snapshot, extra_seen=None, infoboxes=None, overrid
     name_index = {}
     for p in sorted(backbone["places"], key=_depth):     # deepest-backbone-wins among backbone
         name_index[_norm(p["name"])] = p["id"]
+    backbone_names = {_norm(p["name"]) for p in backbone["places"]}
     seen = {p["id"] for p in backbone["places"]}
     if extra_seen:
         seen |= set(extra_seen)
@@ -130,7 +155,8 @@ def resolve_parents(backbone, snapshot, extra_seen=None, infoboxes=None, overrid
     parent_map, signal_map = {}, {}
     for title, _pt, _ck, pid in kept:
         parent, signal = parent_for(title, set(pc.get(title, [])), name_index,
-                                    infobox_links=(infoboxes or {}).get(title), overrides=overrides)
+                                    infobox_links=(infoboxes or {}).get(title), overrides=overrides,
+                                    backbone_names=backbone_names)
         parent_map[pid] = parent; signal_map[pid] = signal
     return kept, parent_map, signal_map
 
