@@ -68,7 +68,13 @@ def _slug(name: str) -> str:
     return "place:" + re.sub(r"[^a-z0-9]+", "-", re.sub(r"\s*\(.*?\)\s*$", "", name.lower())).strip("-")
 
 
-def build_world(backbone, snapshot, region_ids):
+def build_world(backbone, snapshot, region_ids, extra_seen=None):
+    """Build place nodes + located_in/same_entity edges from the world backbone and snapshot.
+
+    extra_seen: additional place ids to treat as already-known during content ingest (used
+    by the assembler to pass the varrock.json place ids so build_world doesn't re-emit places
+    that build_map owns — avoids a node-data conflict in dedup_nodes).
+    """
     nodes: list[Node] = []
     edges: list[Edge] = []
 
@@ -103,6 +109,8 @@ def build_world(backbone, snapshot, region_ids):
     pc = snapshot["page_categories"]
     fpts, mbrs = set(snapshot["free_to_play"]), set(snapshot["members"])
     seen = set(bb_ids)
+    if extra_seen:
+        seen.update(extra_seen)
     for title in sorted({t for lst in snapshot["categories"].values() for t in lst}):
         cls = classify(set(pc.get(title, [])))
         if cls is None:                                  # OUT category -> skip

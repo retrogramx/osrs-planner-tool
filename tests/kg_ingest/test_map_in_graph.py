@@ -8,9 +8,11 @@ def test_varrock_acquisition_spine():
     s = JsonKGStore.from_dir(KG)
     assert s.node("place:varrock").kind is NodeKind.PLACE
     assert s.node("shop:zaffs-superior-staffs").kind is NodeKind.SHOP
-    # containment: Varrock -> Misthalin -> Gielinor
+    # containment: Varrock -> Misthalin -> Mainland -> Gielinor (backbone now in world.json)
     loc = {(e.src, e.dst) for e in s.edges if e.type is EdgeType.LOCATED_IN}
-    assert ("place:varrock", "place:misthalin") in loc and ("place:misthalin", "place:gielinor") in loc
+    assert ("place:varrock", "place:misthalin") in loc
+    assert ("place:misthalin", "place:mainland") in loc
+    assert ("place:mainland", "place:gielinor") in loc
     # containment + operates: Zaff operates his shop, shop is in Varrock
     assert ("npc:zaff", "shop:zaffs-superior-staffs") in {(e.src, e.dst) for e in s.edges if e.type is EdgeType.OPERATES}
     # battlestaff auto-imported via sells (confirmed in test_storeline_in_graph.py)

@@ -2,15 +2,18 @@
 """Source-grounding gate for data/map/varrock.json (the connective vertical).
 
 Reuses the builder's item resolver (no drift). STRUCTURAL checks (hard-fail): every
-located_in target is a place present in the file; every shop.operator is a present npc
-AND reciprocally in that npc's operates[]; slug uniqueness. Exits non-zero on any
-structural violation. Sells/gate checks are owned by verify_storeline.py.
+located_in target is a place present in the file OR in the world backbone (world.json)
+— backbone places (gielinor/mainland/misthalin/varrock etc.) were moved from varrock.json
+to world.json as part of the Task-8 world-skeleton integration; every shop.operator is a
+present npc AND reciprocally in that npc's operates[]; slug uniqueness. Exits non-zero on
+any structural violation. Sells/gate checks are owned by verify_storeline.py.
 """
 from __future__ import annotations
 import json, os, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MAP = os.path.join(ROOT, "data", "map", "varrock.json")
+WORLD = os.path.join(ROOT, "data", "map", "world.json")
 
 
 def main() -> int:
@@ -19,6 +22,10 @@ def main() -> int:
         m = json.load(f)
 
     place_ids = {p["id"] for p in m["places"]}
+    # World backbone places are valid external located_in targets (backbone migrated to world.json).
+    if os.path.exists(WORLD):
+        world_data = json.load(open(WORLD, encoding="utf-8"))
+        place_ids |= {p["id"] for p in world_data["places"]}
     npc_by_id = {n["id"]: n for n in m["npcs"]}
     shop_ids = {s["id"] for s in m["shops"]}
     seen: set[str] = set()
