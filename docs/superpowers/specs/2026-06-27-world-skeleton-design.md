@@ -1,93 +1,134 @@
-# World Skeleton — Design (IN PROGRESS)
+# World Skeleton — Design
 
-> **Status:** DESIGN — **brainstorm PAUSED 2026-06-27 for a terminal switch.** Decisions locked below; 3 points are
-> interpreted from the owner's "I want to make sure we get everything" steer and need an explicit confirm on resume,
-> then the normal user-review gate → writing-plans. Branch: off `main` (slices 1-7 merged). The next connective slice.
-
-## Resume checklist (for the continuing session)
-1. Re-read this file + the two source artifacts: `data/map/OSRS Ontology.md` (the owner's SHAPE sketch — incomplete, NOT
-   trusted as data) and the current graph's place hierarchy (16 places; `build_map`/`varrock.json` from slice 6).
-2. Confirm the 3 "get everything" interpretations in §3 with the owner (ownership move · continent/ocean level ·
-   exhaustiveness bound for THIS slice).
-3. Finalize this spec, run the spec self-review, get owner review, then invoke `superpowers:writing-plans`.
+> **Status:** DESIGN (finalized 2026-06-28; supersedes the in-progress draft). Branch: `feat/world-skeleton` (off
+> `main`, slices 1-7 merged). The design was reached by extensive brainstorm exploration — 3 wiki-grounded LLM
+> survey/audit workflows + a deterministic MediaWiki category-API reconcile — which produced a **754-place prototype
+> that validated the method and the shape**. The implementation rebuilds the dataset cleanly from the structured source
+> below (the prototype is not committed; it proved the approach).
 
 ## 0. Why this slice
-The graph's geography stops at `gielinor → misthalin → varrock` (slice 6 skipped the continent/ocean level). This slice
-builds the **top-down world backbone** the owner sketched — World ▸ Continents/Oceans ▸ Kingdoms ▸ Capitals — so every
-future town hangs off a shared, source-grounded skeleton (and the eventual all-shops scale-up has places to attach to).
+The graph's geography stops at `gielinor → misthalin → varrock` (slice 6). This builds the **comprehensive location
+graph of Gielinor** — every continent, ocean, sea, island, kingdom, region, city, town, settlement, **plus** the major
+content sites (dungeons, raids, slayer dungeons, guilds, minigames, agility courses, hunter areas, castles, named
+mines) — so the planner can answer "where is X / what's in region Y," and every future layer (shops, monsters/`drops`,
+transport, activities) has a **place to attach to**.
 
-## 1. Locked decisions (owner-approved 2026-06-27)
+## 1. Locked decisions (owner-approved during brainstorm, 2026-06-27/28)
 | # | Decision | Choice |
 |---|---|---|
-| 1 | Scope | **World skeleton ONLY.** All-shops Storeline scale-up is DEFERRED — it's blocked on a shop→location data source (the Storeline bucket has 581 shops + NO location field) and needs district-level places; its own future slice. |
-| 2 | Data source | **I (the assistant) draft `data/map/world.json`** (same place-entry shape as `varrock.json`), grounding each place's facts (ruler→`ruled_by`, faction, `source_url`) against its **authoritative wiki page**. `OSRS Ontology.md` is used ONLY as the SHAPE/intent guide — **never copied as trusted data** (owner: "it's just an idea, a lot missing"). **Owner reviews/corrects** the draft (the editorial gate). |
-| 3 | Principle | The **shape is editorial** (owner's hierarchy); the **per-place facts are wiki-grounded** (never-fabricate). Governance is best-effort (report-not-fail on unknowns). |
+| 1 | Scope | **Comprehensive location graph** (the place hierarchy + content sites). All-shops Storeline scale-up **DEFERRED** (needs shop→location data). Chunk/coordinate geometry **DEFERRED** (reserved schema keys; pairs with the leaf layers). |
+| 2 | Data source | **The wiki's TYPE-CATEGORY UNION**, enumerated via the MediaWiki category API — exhaustive + clean. **NOT** prose-enumeration (incomplete) and **NOT** `Category:Locations` (1,708 pages — too broad: ~1,058 are scenery/NPCs/items/buildings; also *incomplete* — only 15 of 52 minigames are location-tagged). The owner's `OSRS Ontology.md` supplies the top-level **SHAPE** (continent/ocean/kingdom hierarchy + rulers) only — never trusted as data. |
+| 3 | Granularity | An **explicit IN/OUT category filter** (§3) — the one editorial definition of "what is a place." |
+| 4 | Completeness | A committed **coverage verifier** (§4): the build-time gate is **offline** — it asserts the graph faithfully covers every IN-category member in the *committed* snapshot (no silent drops from parenting/dedup), and reports `have N/total` per category. A `--refresh` mode re-queries the **live** API to catch game-update drift (snapshot vs wiki). This is the "complete once and for all" — completeness becomes a *tested invariant*. |
+| 5 | Vocabulary | **Two-level typing**: `place_type` (coarse, queryable) + `content_kind` (fine, display). New `place_type`s (additive flips): **`sea`** + **`point_of_interest`**. |
+| 6 | Governance | `ruled_by` / `faction` as **best-effort data, report-not-fail** (lots unknown). `faction` nodes + governance *edges* deferred. |
+| 7 | Discipline | **Never fabricate** — every place grounded to a wiki page (`source_url`); an unresolved ruler or an unparented place is **FLAGGED, not guessed**. |
 
-## 2. The design
+## 2. The data model
 
-### Hierarchy + integration (the nuanced part)
-Insert the continent/ocean level under Gielinor:
+### 2.1 `place_type` vocabulary
+Existing enum: `world/continent/ocean/island/kingdom/city/town/settlement/district/dungeon/floor/region`. **Add (additive
+reserved→live):** `sea`, `point_of_interest`. `content_kind` (free string, display-only metadata) carries the fine type:
+`guild · altar · minigame · agility course · castle · hunter area · mine · slayer dungeon · raid · boss lair · landmark
+· cave · dungeon · sea · island · town …`. Rule of thumb: the graph **queries** on `place_type`; the UI **shows**
+`content_kind`. (Lesson from the brainstorm: a party room / altar is a `point_of_interest`, *not* a `settlement`; and
+`content_kind` is a *soft* best-effort hint — e.g. "slayer dungeon" vs "dungeon" — not an adversarially-verified fact.)
+
+### 2.2 The hierarchy (and integration with slices 6)
 ```
 place:gielinor (world)
-├── place:mainland (continent)
-│   ├── place:misthalin (kingdom) ─▶ place:varrock (city)   ← misthalin RE-PARENTED gielinor→mainland
-│   ├── place:asgarnia (kingdom)  ─▶ place:falador (city)
-│   ├── place:kandarin (kingdom)  ─▶ place:east-ardougne (city)
-│   └── … Morytania, Kharidian Desert polities, Wilderness, Tirannwn, Fremennik Province …
-├── place:zeah (continent) ─▶ Great Kourend ▸ Kingstown · Varlamore ▸ Civitas illa Fortis …
-└── oceans (Northern, Ardent, …) ─▶ island city-states (Miscellania, Etceteria, Lunar Isle, Karamja settlements …)
+├ Mainland / Zeah (continent)   ├ 9 Oceans (ocean) ─▶ seas ─▶ islands
+│   └ kingdoms / regions ─▶ cities/towns/settlements ─▶ districts + dungeons + points_of_interest
 ```
-**Two integration moves:**
-- **(1) Ownership boundary:** `world.json` becomes the authoritative **backbone — Gielinor down to the city/capital
-  level**. The existing `place:gielinor` / `place:misthalin` / `place:varrock` definitions **move from `varrock.json`
-  into `world.json`**; `varrock.json` keeps only **within-city** detail (districts, pubs, NPCs, shops, which still
-  `located_in place:varrock`). This sets the pattern for every future town: one shared `world.json` + per-town files.
-- **(2) Re-parent:** `place:misthalin` `located_in` changes `gielinor` → `mainland`. Net graph effect: the same Varrock
-  subtree, plus the inserted continent/ocean level + ~40 new places.
+- **Backbone ownership:** `world.json` owns Gielinor → city/region level. The existing `place:gielinor`/`misthalin`/
+  `varrock` **move out of `varrock.json`** into the backbone; `place:misthalin` **re-parents** `gielinor → mainland`;
+  `varrock.json` keeps only **within-city** detail (districts, pubs, NPCs, shops). Sets the per-town pattern.
+- **Same_entity bridges:** opportunistic `place:<slug> → region:<slug>` to the 61 legacy `region:` nodes where a slug
+  matches (slice-6 pattern), link-don't-merge.
 
-### `world.json` shape + governance
-Each place entry: `{id, place_type, name, located_in, ruled_by?, faction?, source_url}` — identical to `varrock.json`'s
-places. `place_type` ∈ the schema enum (`world/continent/ocean/island/kingdom/city/town/settlement/...`). Governance is
-**data, best-effort** (slice-6 precedent): `Leader:` → `ruled_by` (an `npc:` ref or a plain string), "ruled by X" →
-`faction`. `faction` NODES + governance EDGES stay deferred. Opportunistic `same_entity` bridges to the **61 legacy
-`region:` nodes** where a place matches by slug (e.g. `place:falador → region:falador`, like slice-6
-`place:varrock → region:varrock`).
+### 2.3 Governance
+`ruled_by` (an `npc:` ref or verbatim string) + `faction` (governing race/allegiance) on backbone places, best-effort,
+`""` where the wiki names none (never guessed). Report-not-fail on gaps.
 
-### Components
-- `kg_ingest/builders/world.py` — `build_world(world_data, region_ids) → (nodes, edges, groups={})`: place nodes +
-  `located_in` + opportunistic `same_entity`. Edges are place-`src` → its OWN rekey (own band, disjoint from map's
-  0xE0/0xD0 and storeline's 0xF0/0xC0 — e.g. edges `0x?` / groups n/a). No sells/operates here.
-- `data/verify_world.py` — STRUCTURAL hard-fails: every `located_in` target is a place in the file; exactly ONE root
-  (`gielinor`, `located_in: null`); no orphan (every non-root reaches the root); slug uniqueness; place_type ∈ enum.
-  **REPORT (not fail):** places missing `ruled_by`/`faction` (best-effort governance); any `source_url` that 404s
-  (optional live check, like the `--refresh` pattern).
-- `kg_ingest/assemble.py` — wire `build_world` BEFORE the reference collection; `build_world` + `build_map` must
-  coordinate so `place:varrock` (now in `world.json`) isn't defined twice (dedup_nodes handles identical defs, but the
-  refactor moves the def to ONE place). place-`src` own rekey.
-- `data/map/varrock.json` refactor — drop the 3 backbone place defs (gielinor/misthalin/varrock); the districts/pubs
-  keep `located_in: place:varrock`. (Owner-reviewed edit.)
+## 3. Data source — the structured ingest (the reproducible brick)
 
-### Validation & success criteria
-- `assemble` byte-stable; `validate_kg` / `validate_cost` / `verify_world` / `verify_map` / `verify_storeline` exit 0.
-- The graph gains ~40-50 place nodes + their `located_in` chain; Varrock's subtree unchanged except the inserted
-  continent level (varrock → misthalin → mainland → gielinor).
-- Golden + slice-1..7 tests green. New TDD: `build_world` (the hierarchy from a fixture; the re-parent; same_entity
-  bridge; single-root); `verify_world` (a dangling located_in fails; a missing ruler reports not fails).
-- **+1 competency question:** *"What kingdom and continent is Varrock in?"* → `place:varrock` `located_in`-chain reaches
-  `place:misthalin` (kingdom) → `place:mainland` (continent) → `place:gielinor`.
+### 3.1 The IN/OUT granularity filter (the editorial definition of "a place")
+**IN** (each an exhaustive, API-enumerable category — the union is the complete target):
+- **Geographic backbone** (from the owner-shape + the wiki): continents, oceans, **seas**, islands, kingdoms, regions.
+- **Content categories:** `Dungeons`, `Slayer dungeons`, `Caves`, `Raids`, `Minigames`, `Guilds`, `Agility courses`,
+  `Hunter areas`, `Castles`, `Settlements`, and **named-major `Mines`** (owner-curated subset — the category has ~112,
+  most granular).
 
-## 3. OPEN — confirm on resume (interpreted from "get everything")
-1. **Ownership move** (§2.1): `world.json` owns Gielinor→city backbone (gielinor/misthalin/varrock MOVE out of
-   `varrock.json`). Interpreted YES. Alternative: keep them in `varrock.json`, `world.json` only adds the rest (split
-   ownership — messier). **Confirm.**
-2. **Continent/ocean level** (§2.2): insert it + re-parent Misthalin. Interpreted YES (it's the owner's stated
-   top-down vision). Alternative: kingdoms directly under Gielinor (skip continents). **Confirm.**
-3. **Exhaustiveness bound for THIS slice:** "everything" = the COMPLETE top-down hierarchy now (all
-   continents/oceans/kingdoms/capitals + the named settlements the wiki lists, ~40-60 places), with deeper passes for
-   the long tail later — vs literally every minor location in one slice (hundreds, strains draft/review). Interpreted:
-   complete-hierarchy-now + staged long-tail. **Confirm the exact bound** (and whether it's one slice or staged).
+**OUT:**
+- The `Category:Locations` noise: **scenery, NPCs, items, monsters, buildings, granular sub-areas** (~1,058 pages).
+- **All individual `Banks`** (a bank is a *facility/service* → a future service layer, not a place node).
+- **Granular ore-rock mines**, holiday/event pages, category-index pages.
 
-## 4. Out of scope (named)
-All-shops Storeline scale-up (needs shop→location data) · chunk/coordinate geometry · governance EDGES + `faction`/
-`deity` nodes · monsters/`drops` · transport/`gives_access` · per-town internal detail beyond Varrock (future per-town
-files like `falador.json`).
+*(Verified during brainstorm: many guessed category names don't exist — it's `Settlements` not `Cities`/`Towns`; no
+`Ports`/`Altars`/`Temples` categories. The ingest must use the confirmed names and treat absences as "covered by the
+backbone or another category.")*
+
+### 3.2 Enumeration (exhaustive + reproducible)
+The MediaWiki category API (`action=query&list=categorymembers`, paginated) → exhaustive membership of each IN
+category → union. **Committed raw snapshot** `data/raw/wiki_location_categories.json` + a **deterministic parser** (the
+foundation-reproducibility discipline). The owner-shape (the ~50 backbone places + governance) is a small **owner-
+authored** `data/map/world.json` (drafted wiki-grounded, owner-reviewed — like `varrock.json`).
+
+### 3.3 Parenting (`located_in`) — grounded, with flagged residuals
+For each ingested location, in order: **(1)** the *deepest* backbone/draft place whose name is among the page's
+region/area categories; **(2)** fallback — the page name minus a type suffix (`X Dungeon` → `X`) matched to a place;
+**(3)** the infobox `location` field; **(4)** else **FLAG as unparented** for the owner to re-home (report-not-fail —
+never silently parent to the wrong place or to the root).
+
+### 3.4 Typing
+`place_type` + `content_kind` derived from the matched IN category (priority-ordered: raid → slayer dungeon → dungeon →
+cave → minigame → guild → agility → hunter → castle → mine → island → settlement). Dungeon-family → `place_type=dungeon`;
+guild/minigame/agility/castle/hunter/mine → `place_type=point_of_interest`; settlement/island/region as themselves.
+
+## 4. Components
+- **`data/fetch_world_locations.py`** — paginated category-API pull of the IN categories → committed snapshot
+  (`data/raw/wiki_location_categories.json` + each page's region categories, for parentage). Mirrors
+  `fetch_items_equipment.py`; `--refresh` re-pulls for drift.
+- **`data/map/world.json`** — owner-authored backbone (continents/oceans/kingdoms/regions + governance + the
+  `same_entity` bridges), drafted wiki-grounded, owner-reviewed.
+- **`kg_ingest/builders/world.py`** — `build_world(world_backbone, location_snapshot, region_ids) → (nodes, edges,
+  groups={})`: emits place nodes (backbone + filtered ingest) + `located_in` + `same_entity`. Place-`src` → its **own
+  rekey** (band disjoint from map `0xE0` / storeline `0xF0`).
+- **`data/verify_world.py`** — STRUCTURAL hard-fails: every `located_in` resolves; exactly one root (`gielinor`); no
+  orphan; slug uniqueness; `place_type ∈ schema enum`. **REPORT (not fail):** unparented places, missing governance.
+- **`data/verify_world_coverage.py`** — **THE COMPLETENESS GATE (offline).** Asserts the committed graph contains a node
+  for every IN-category member in the committed snapshot (catches silent drops from parenting/dedup) and reports
+  `have N/total` per category (e.g. `dungeons 177/177`), listing any residual. Exit 0 (report-not-fail); the residual is
+  the to-do. **`--refresh`** re-queries the live API → flags snapshot-vs-wiki drift (new game content).
+- **`kg_ingest/assemble.py`** — wire `build_world` BEFORE the reference collection; place-`src` own rekey; the
+  `varrock.json` refactor (drop the 3 backbone places; re-parent). Byte-stable.
+- **+ competency questions** — e.g. *"What's in Kandarin?"* / *"Where is the Catacombs of Kourend?"* / *"What kingdom &
+  continent is Varrock in?"*
+
+## 5. Owner-review gates (editorial — facts/judgment a validator can't make)
+1. **The IN/OUT filter** — approved (§3.1).
+2. **Major-mines curation** — owner picks the major named mines from the candidate list (the category is mostly granular).
+3. **Unparented re-homing + residual noise** — owner pass on the flagged residuals (the verifier surfaces them).
+4. **The top-level shape + governance** — owner editorial on the backbone (`world.json`).
+The **visual collapsible tree** (the `world_skeleton.html` review tool built during brainstorm) is the sign-off medium.
+
+## 6. Validation & success criteria
+- `assemble` **byte-stable**; `validate_kg` / `validate_cost` / `verify_world` / `verify_world_coverage` exit 0.
+- The coverage verifier **proves** comprehensive coverage (`have N/total` per IN category, residual listed).
+- Golden + slice-1..7 tests green. New **TDD**: `build_world` (backbone + ingest parenting; the re-parent; same_entity;
+  single-root); `verify_world` (a dangling `located_in` fails; an unparented place reports-not-fails); the coverage gate.
+- Graph grows to the comprehensive location set (hundreds of place nodes); deltas recorded at build time.
+
+## 7. Out of scope — named follow-ups
+All-shops Storeline scale-up (needs shop→location) · chunk/coordinate geometry · governance EDGES + `faction`/`deity`
+nodes · monsters/`drops` · transport/`gives_access` · a **service layer** (banks/shops/altars as facilities attached to
+places) · per-town internal detail beyond Varrock.
+
+## 8. Open micro-items (settle in implementation)
+- Confirm each IN-category's exact wiki name + membership (some guessed names are empty — use `Settlements`, etc.).
+- Improve parenting for the unparented residual via the infobox `location` field; a `mountain` `place_type` (or map to
+  `region`) for Mount Quidamortem/Karuulm.
+- Finalize the `content_kind` taxonomy; treat it as advisory (the "slayer dungeon" over-tag lesson) — source precise
+  designations from categories where it's load-bearing later.
+- The implementation **rebuilds** the dataset from the committed snapshot (reproducible) — it does NOT import the
+  brainstorm prototype.
