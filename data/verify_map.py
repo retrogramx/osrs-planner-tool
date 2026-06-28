@@ -24,7 +24,8 @@ def main() -> int:
     place_ids = {p["id"] for p in m["places"]}
     # World backbone places are valid external located_in targets (backbone migrated to world.json).
     if os.path.exists(WORLD):
-        world_data = json.load(open(WORLD, encoding="utf-8"))
+        with open(WORLD, encoding="utf-8") as f:
+            world_data = json.load(f)
         place_ids |= {p["id"] for p in world_data["places"]}
     npc_by_id = {n["id"]: n for n in m["npcs"]}
     shop_ids = {s["id"] for s in m["shops"]}

@@ -21,6 +21,9 @@ def main() -> int:
     region_ids = {n["id"] for n in json.load(open(os.path.join(ROOT, "kg", "nodes.json"), encoding="utf-8"))
                   if n["id"].startswith("region:")}
     enum = set(json.load(open(os.path.join(ROOT, "kg", "schema.json"), encoding="utf-8"))["node_kinds"]["place"]["place_type_enum"])
+    # Standalone re-derive (no assemble extra_seen): gates structural invariants only
+    # (single root / located_in resolves / place_type∈enum / no dup). The COMMITTED graph
+    # bytes are gated separately by validate_kg + byte-stable assemble.
     nodes, edges, _ = build_world(backbone, snapshot, region_ids)
 
     ids = {n.id for n in nodes}

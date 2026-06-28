@@ -430,10 +430,11 @@ def assemble() -> None:
     # same_entity). Build BEFORE the reference collection so resolved sells dsts auto-import.
     # region nodes are minted by build_content_nodes (content_nodes, already built above), so
     # the bridge only targets places that have a real legacy region node.
-    # NOTE: build_map runs AFTER build_world, both place-src; seed from accumulated edges so
-    # a shared place owner (e.g. place:varrock from world.json gets located_in#0 there, then
-    # build_map's same_entity for varrock would be #1 if not seeded -> collision). Seeding
-    # ensures disjoint per-owner indices across both rekey calls.
+    # NOTE: build_map runs AFTER build_world. After the world-skeleton refactor, build_world
+    # and build_map share ZERO place owners (build_map no longer owns place:varrock). The seed
+    # is still required for the build_map → build_storeline boundary: shops are located_in-src
+    # in build_map and sells-src in build_storeline, so build_storeline's rekey must start
+    # AFTER all of build_map's per-shop indices to avoid collisions.
     map_nodes: list[Node] = []
     if _map is not None:
         map_region_ids = {n.id for n in content_nodes if n.id.startswith("region:")}

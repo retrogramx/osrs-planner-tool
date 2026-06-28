@@ -18,8 +18,17 @@ def main() -> int:
     print("COVERAGE (graph vs committed snapshot, per IN category):")
     residual = 0
     for cat, members in snap["categories"].items():
-        have = [t for t in members if _slug(t) in place_ids]
-        miss = [t for t in members if _slug(t) not in place_ids]
+        # Count each slug AT MOST ONCE per category: a title is "have" iff its slug is in
+        # place_ids AND that slug hasn't already been claimed by an earlier title in this
+        # category. Colliding titles (e.g. 14× "Unnamed island (…)" → one slug) all land
+        # in miss except the first, so the gate never reports false coverage.
+        have, miss, claimed = [], [], set()
+        for t in members:
+            sg = _slug(t)
+            if sg in place_ids and sg not in claimed:
+                claimed.add(sg); have.append(t)
+            else:
+                miss.append(t)  # no node, OR slug already claimed by another title (collision)
         residual += len(miss)
         print(f"  {cat:18} {len(have):4}/{len(members):4}")
         for m in sorted(miss)[:8]:

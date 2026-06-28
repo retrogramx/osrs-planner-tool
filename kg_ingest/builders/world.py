@@ -42,8 +42,10 @@ def classify(page_categories):
 
 def parent_for(title, page_categories, name_to_id):
     # (1) a backbone place whose name is among the page's region/area categories.
-    # name_to_id is built deepest-wins (Task 5) so a name resolves to its deepest id;
-    # sorted() makes the pick deterministic when a page sits in several region categories.
+    # sorted() makes the pick deterministic (alphabetically-first matching category wins);
+    # name_to_id resolves the same name to its deepest backbone id, but the selection here
+    # is driven by which category comes first alphabetically, not by depth. Owner re-homes
+    # the residual later.
     cands = [name_to_id[_norm(c)] for c in sorted(page_categories) if _norm(c) in name_to_id]
     if cands:
         return (cands[0], False)
@@ -109,7 +111,7 @@ def build_world(backbone, snapshot, region_ids, extra_seen=None):
     pc = snapshot["page_categories"]
     fpts, mbrs = set(snapshot["free_to_play"]), set(snapshot["members"])
     seen = set(bb_ids)
-    if extra_seen:
+    if extra_seen is not None:
         seen.update(extra_seen)
     for title in sorted({t for lst in snapshot["categories"].values() for t in lst}):
         cls = classify(set(pc.get(title, [])))
