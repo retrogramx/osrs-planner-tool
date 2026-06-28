@@ -1,4 +1,4 @@
-from kg_ingest.builders.world import is_excluded, build_world
+from kg_ingest.builders.world import is_excluded, build_world, parent_for
 from osrs_planner.engine.kg.model import EdgeType
 
 
@@ -33,3 +33,31 @@ def test_build_world_skips_noise_pages():
     assert "place:brimhaven-dungeon" in ids          # real place kept
     assert "place:list-of-dungeons" not in ids        # list index page dropped
     assert "place:minigames" not in ids               # self-referential index dropped
+
+
+def test_parent_for_returns_signal_and_rungs():
+    name_index = {"kandarin": "place:kandarin", "brimhaven": "place:brimhaven"}
+    # rung 2: category-match
+    assert parent_for("Catacombs of Kourend", {"Kandarin"}, name_index) == ("place:kandarin", "category")
+    # rung 3: name-suffix
+    assert parent_for("Brimhaven Dungeon", {"Caves"}, name_index) == ("place:brimhaven", "name-suffix")
+    # rung 5: FLAG
+    assert parent_for("Mystery Spot", set(), name_index) == ("place:gielinor", "FLAG")
+
+
+# content place (an ingested island) must be eligible as a parent
+CONTENT_SNAP = {
+    "categories": {"Islands": ["Ardougne"], "Mines": ["Ardougne Sewers mine"]},
+    "free_to_play": [], "members": [],
+    "page_categories": {"Ardougne": ["Islands"], "Ardougne Sewers mine": ["Mines", "Ardougne"]},
+}
+CONTENT_BACKBONE = {"places": [
+    {"id": "place:gielinor", "place_type": "world", "name": "Gielinor", "located_in": ""},
+]}
+
+
+def test_content_place_is_eligible_parent():
+    nodes, edges, _ = build_world(CONTENT_BACKBONE, CONTENT_SNAP, set())
+    li = {(e.src, e.dst) for e in edges if e.type is EdgeType.LOCATED_IN}
+    # the mine parents to the INGESTED island 'place:ardougne' (not the root)
+    assert ("place:ardougne-sewers-mine", "place:ardougne") in li
