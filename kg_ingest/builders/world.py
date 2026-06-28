@@ -62,3 +62,63 @@ def members_of(title, fpts, mbrs):
     if title in fpts:
         return False
     return None
+
+
+def _slug(name: str) -> str:
+    return "place:" + re.sub(r"[^a-z0-9]+", "-", re.sub(r"\s*\(.*?\)\s*$", "", name.lower())).strip("-")
+
+
+def build_world(backbone, snapshot, region_ids):
+    nodes: list[Node] = []
+    edges: list[Edge] = []
+
+    # --- backbone (owner-authored geographic frame) ---
+    bb_ids = set()
+    name_to_id: dict[str, str] = {}
+    # order backbone deepest-last so name_to_id keeps the DEEPEST id per name (Task-4 parent_for takes cands[0])
+    def _depth(p, by):
+        d, cur = 0, p.get("located_in")
+        while cur and cur in by and d < 12:
+            d += 1; cur = by[cur].get("located_in")
+        return d
+    by = {p["id"]: p for p in backbone["places"]}
+    for p in sorted(backbone["places"], key=lambda p: _depth(p, by)):
+        name_to_id[_norm(p["name"])] = p["id"]   # deeper places overwrite -> deepest wins
+    for p in backbone["places"]:
+        bb_ids.add(p["id"])
+        data = {"place_type": p["place_type"]}
+        for k in ("ruled_by", "faction", "members"):
+            if p.get(k) not in (None, ""):
+                data[k] = p[k]
+        nodes.append(Node(id=p["id"], kind=NodeKind.PLACE, name=p["name"], slug=p["id"].split(":", 1)[1], data=data))
+        if p.get("located_in"):
+            edges.append(Edge(id=_edge_id(p["id"], "located_in"), type=EdgeType.LOCATED_IN,
+                              src=p["id"], dst=p["located_in"], cond_group=None, data={}))
+        se = p.get("same_entity")
+        if se and se in region_ids:
+            edges.append(Edge(id=_edge_id(p["id"], "same_entity"), type=EdgeType.SAME_ENTITY,
+                              src=p["id"], dst=se, cond_group=None, data={}))
+
+    # --- content ingest (filtered, typed, parented) ---
+    pc = snapshot["page_categories"]
+    fpts, mbrs = set(snapshot["free_to_play"]), set(snapshot["members"])
+    seen = set(bb_ids)
+    for title in sorted({t for lst in snapshot["categories"].values() for t in lst}):
+        cls = classify(set(pc.get(title, [])))
+        if cls is None:                                  # OUT category -> skip
+            continue
+        pid = _slug(title)
+        if pid in seen:                                  # already a backbone place (dedup)
+            continue
+        seen.add(pid)
+        place_type, content_kind = cls
+        parent, _flagged = parent_for(title, set(pc.get(title, [])), name_to_id)
+        data = {"place_type": place_type, "content_kind": content_kind}
+        m = members_of(title, fpts, mbrs)
+        if m is not None:
+            data["members"] = m
+        nodes.append(Node(id=pid, kind=NodeKind.PLACE, name=title, slug=pid.split(":", 1)[1], data=data))
+        edges.append(Edge(id=_edge_id(pid, "located_in"), type=EdgeType.LOCATED_IN,
+                          src=pid, dst=parent, cond_group=None, data={}))
+
+    return nodes, edges, {}
