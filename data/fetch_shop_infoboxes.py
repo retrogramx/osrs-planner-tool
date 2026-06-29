@@ -13,11 +13,9 @@ API = "https://oldschool.runescape.wiki/api.php"
 WIKI = "https://oldschool.runescape.wiki/w/"
 
 
-def extract_infobox_block(wikitext):
-    """Return the {{Infobox Shop ...}} block (brace-depth counted so nested {{...}}
-    are kept), or '' if absent. Robust to nested templates (naive non-greedy regex
-    would truncate at the first nested }})."""
-    m = re.search(r"\{\{Infobox Shop\b", wikitext or "", re.IGNORECASE)
+def extract_infobox_block(wikitext, infobox_name="Infobox Shop"):
+    """Return the {{<infobox_name> ...}} block (brace-depth counted so nested {{...}} are kept), or ''."""
+    m = re.search(r"\{\{" + re.escape(infobox_name) + r"\b", wikitext or "", re.IGNORECASE)
     if not m:
         return ""
     i, depth = m.start(), 0
@@ -30,7 +28,7 @@ def extract_infobox_block(wikitext):
                 return wikitext[m.start():i]
             continue
         i += 1
-    return wikitext[m.start():]          # unbalanced -> take the tail (verbatim, no inference)
+    return wikitext[m.start():]
 
 
 def split_top_level_params(block):

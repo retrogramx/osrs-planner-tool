@@ -29,4 +29,6 @@ data/raw/**
 !data/raw/wiki_shop_categories.json
 # Wiki shop infoboxes IS committed provenance (offline snapshot for all-shops layer location/members/owner)
 !data/raw/wiki_shop_infoboxes.json
+# Wiki NPC infoboxes IS committed provenance (offline snapshot for operator-NPC layer location/is_npc)
+!data/raw/wiki_npc_infoboxes.json
 .superpowers/
