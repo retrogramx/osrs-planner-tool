@@ -12,7 +12,8 @@ from __future__ import annotations
 import re
 
 from osrs_planner.engine.kg.model import Edge, EdgeType, Node, NodeKind
-from kg_ingest.ids import _stable_hash, slugify
+from kg_ingest.ids import _stable_hash, slugify, item_id
+from kg_ingest.builders.map_varrock import make_item_resolver
 from kg_ingest.builders.storeline import match_shop, index_by_shop
 from kg_ingest.builders.world import parse_infobox_links, _norm
 
@@ -81,6 +82,9 @@ def build_shops(storeline_records, shop_infoboxes, place_nodes, dict_records, va
     infobox_titles = list(shop_infoboxes)
     name_index = build_place_name_index(place_nodes)
 
+    resolve = make_item_resolver(dict_records)
+    dict_by_id = {r["item_id"]: r for r in dict_records}
+
     claimed: dict[str, str] = {}               # slug -> first sold_by (collision guard)
     for name in shop_roster(storeline_records, varrock_shop_names):
         sid = _shop_slug(name)
@@ -111,5 +115,16 @@ def build_shops(storeline_records, shop_infoboxes, place_nodes, dict_records, va
             edges.append(Edge(id=_edge_id(sid, "located_in"), type=EdgeType.LOCATED_IN,
                               src=sid, dst=places[0], cond_group=None, data={}))
         # len(places) == 0 -> unparented FLAG (no edge), reported by verify_shop_coverage
+
+        for j, row in enumerate(by_shop.get(name, [])):
+            iid = resolve(row.get("sold_item", ""))
+            if iid is None:
+                continue                                     # unresolved -> reported by verify_shops
+            edata = {"source_token": "Bucket:Storeline"}     # NO currency/price -> validate_cost Inv 6
+            mem = dict_by_id.get(iid, {}).get("members")
+            if mem is not None:
+                edata["members"] = mem
+            edges.append(Edge(id=_edge_id(sid, f"sl#{j}"), type=EdgeType.SELLS,
+                              src=sid, dst=item_id(iid), cond_group=None, data=edata))
 
     return nodes, edges, {}
