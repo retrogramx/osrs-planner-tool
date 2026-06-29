@@ -442,6 +442,42 @@ def test_diary_tier_node_missing_region_tier_flagged():
     assert any("tier node" in e and "diary:varrock:easy" in e for e in v), v
 
 
+# --- located_in acyclicity gate (place: nodes must reach place:gielinor) ---
+
+def test_located_in_cycle_flagged_as_violation():
+    """place: nodes that can't reach place:gielinor via located_in → VIOLATION."""
+    nodes = [
+        Node(id="place:gielinor", kind=NodeKind.PLACE, name="Gielinor", slug="gielinor", data={}),
+        Node(id="place:a", kind=NodeKind.PLACE, name="A", slug="a", data={}),
+        Node(id="place:cycle-a", kind=NodeKind.PLACE, name="Cycle A", slug="cycle-a", data={}),
+        Node(id="place:cycle-b", kind=NodeKind.PLACE, name="Cycle B", slug="cycle-b", data={}),
+    ]
+    edges = [
+        Edge(id=1001, type=EdgeType.LOCATED_IN, src="place:a", dst="place:gielinor", cond_group=None),
+        Edge(id=1002, type=EdgeType.LOCATED_IN, src="place:cycle-a", dst="place:cycle-b", cond_group=None),
+        Edge(id=1003, type=EdgeType.LOCATED_IN, src="place:cycle-b", dst="place:cycle-a", cond_group=None),
+    ]
+    v = validate_kg.check_kg(_store_with(nodes, edges, {}), _quests_data([]))
+    assert any("[located_in]" in x and "cycle" in x.lower() for x in v), \
+        f"Expected [located_in] violation for unreachable place nodes; got: {v}"
+
+
+def test_reachable_place_not_flagged():
+    """place: nodes that reach place:gielinor via located_in → no [located_in] violation."""
+    nodes = [
+        Node(id="place:gielinor", kind=NodeKind.PLACE, name="Gielinor", slug="gielinor", data={}),
+        Node(id="place:kandarin", kind=NodeKind.PLACE, name="Kandarin", slug="kandarin", data={}),
+        Node(id="place:ardougne", kind=NodeKind.PLACE, name="Ardougne", slug="ardougne", data={}),
+    ]
+    edges = [
+        Edge(id=1001, type=EdgeType.LOCATED_IN, src="place:kandarin", dst="place:gielinor", cond_group=None),
+        Edge(id=1002, type=EdgeType.LOCATED_IN, src="place:ardougne", dst="place:kandarin", cond_group=None),
+    ]
+    v = validate_kg.check_kg(_store_with(nodes, edges, {}), _quests_data([]))
+    assert not any("[located_in]" in x for x in v), \
+        f"Unexpected [located_in] violations for fully-reachable graph: {v}"
+
+
 # --- Step 4: on-real-data acceptance test ---
 
 def test_main_passes_on_committed_kg():

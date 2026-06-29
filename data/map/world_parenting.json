@@ -5,7 +5,8 @@
   "grounding_gaps": [
    "place:dragonkin-castle: re-verified 2026-06-28 against both wiki pages. The Dragonkin Castle page lists infobox location=Unknown and names only A Tail of Two Cats / Burthorpe / Pyramid Plunder — never Lithkren or Fossil Island. The Lithkren page describes a 'fortress' (Zorgoth's Dragon Slayer II base) but never names 'Dragonkin Castle'; they read as distinct structures. No verbatim cross-reference exists; override OMITTED (never-fabricate) — place remains flagged until owner provides a source.",
    "place:daimon-s-crater: override targets place:untamed-ocean to mirror backbone place:daimons-crater (same island, slug-collision). Wiki text names Bounty Hunter/Wilderness context, not Untamed Ocean directly; this is an editorial merge decision by the owner.",
-   "place:giants-foundry: wiki page names 'Giants Plateau' as container, not 'Kharidian Desert' directly. Override is editorial (plateau is east of Al Kharid, within the desert region); token is verbatim from the Foundry page."
+   "place:giants-foundry: wiki page names 'Giants Plateau' as container, not 'Kharidian Desert' directly. Override is editorial (plateau is east of Al Kharid, within the desert region); token is verbatim from the Foundry page.",
+   "place:creature-creation: source_token names 'Tower of Life dungeon', not Kandarin directly. The Tower of Life is located in Kandarin (wiki infobox location = Kandarin) — override parent is a 1-hop inference: dungeon ∈ Tower of Life ∈ Kandarin."
   ]
  },
  "overrides": {
