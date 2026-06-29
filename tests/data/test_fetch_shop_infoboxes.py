@@ -36,3 +36,8 @@ def test_no_infobox_returns_empty():
 def test_nested_pipe_not_split():
     p = fsi.split_top_level_params(fsi.extract_infobox_block(NESTED))
     assert p["location"] == "[[Falador]] {{Map|x}}"   # the {{Map|x}} pipe did NOT split the param
+
+def test_icon_captured_verbatim():
+    p = fsi.split_top_level_params(fsi.extract_infobox_block(
+        "{{Infobox Shop\n|name = X\n|icon = [[File:Archery shop icon.png]]\n|members = Yes\n}}"))
+    assert p["icon"] == "[[File:Archery shop icon.png]]"

@@ -11,5 +11,6 @@ def test_shop_infobox_snapshot_shape():
 
 def test_shop_categories_snapshot_shape():
     d = json.load(open(os.path.join(ROOT, "data", "raw", "wiki_shop_categories.json"), encoding="utf-8"))
+    assert "_provenance" in d
     assert "categories" in d and d["categories"]
     assert all(isinstance(v, list) for v in d["categories"].values())

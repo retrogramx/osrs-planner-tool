@@ -65,7 +65,7 @@ def split_top_level_params(block):
 
 
 def shop_locations(params):
-    """Ordered, non-empty location values: |location=, else |location1..N= (verbatim)."""
+    """Ordered, non-empty location values: union of |location= and |location1..N= (verbatim)."""
     out = []
     if params.get("location"):
         out.append(params["location"])
@@ -113,7 +113,7 @@ def _members(category, cmtype):
 
 def main():
     os.makedirs(RAW, exist_ok=True)
-    # 1) Category:Shops subcategories -> {subcat: [pages]} ; subcat title sans 'Category:' = shop_type source
+    # 1) Category:Shops subcategories -> {subcat: [pages]} = coverage yardstick for verify_shop_coverage
     subcats = _members("Category:Shops", "subcat")
     categories = {}
     for sc in sorted(subcats):
@@ -142,7 +142,7 @@ def main():
                    "categories": dict(sorted(categories.items()))}, f, ensure_ascii=False, indent=1)
     with open(os.path.join(RAW, "wiki_shop_infoboxes.json"), "w", encoding="utf-8") as f:
         json.dump({"_provenance": {"domain": "wiki_shop_infoboxes", "source": "OSRS Wiki revisions API",
-                                   "license": "CC BY-NC-SA 3.0", "param": "Infobox Shop|location/members/owner"},
+                                   "license": "CC BY-NC-SA 3.0", "param": "Infobox Shop|location/members/owner/icon"},
                    "infoboxes": dict(sorted(infoboxes.items()))}, f, ensure_ascii=False, indent=1)
     print(f"DONE: {len(categories)} shop-type categories, {len(all_pages)} pages, "
           f"{sum(1 for v in infoboxes.values() if v['locations'])} with a location")

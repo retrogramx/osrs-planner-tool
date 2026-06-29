@@ -3,7 +3,7 @@
   "domain": "wiki_shop_infoboxes",
   "source": "OSRS Wiki revisions API",
   "license": "CC BY-NC-SA 3.0",
-  "param": "Infobox Shop|location/members/owner"
+  "param": "Infobox Shop|location/members/owner/icon"
  },
  "infoboxes": {
   "'Squawking' Steve Beanie": {
