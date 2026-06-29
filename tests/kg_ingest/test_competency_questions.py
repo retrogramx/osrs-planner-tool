@@ -38,6 +38,11 @@ def _equipment_bonus(store, target, stat):
     return None
 
 
+def _operated_by(store, target):
+    # the set of npc nodes that operate the target shop (operates edges into the shop)
+    return {e.src for e in store.edges if e.type is EdgeType.OPERATES and e.dst == target}
+
+
 def _sold_by(store, target):
     # the set of shops with a sells edge to the target item
     return {e.src for e in store.edges if e.type is EdgeType.SELLS and e.dst == target}
@@ -90,6 +95,8 @@ def test_all_competency_questions_pass():
             answer = _equipment_bonus(store, cq["target"], cq["stat"])
             assert answer == cq["expect"], f"{cq['id']}: {cq['stat']}={answer!r} != {cq['expect']!r}"
             continue
+        elif cq["method"] == "operated_by":
+            answer = _operated_by(store, cq["target"])
         elif cq["method"] == "sold_by":
             answer = _sold_by(store, cq["target"])
         elif cq["method"] == "shop_stock":

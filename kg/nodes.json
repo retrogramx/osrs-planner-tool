@@ -55795,6 +55795,139 @@
     "slug": "zulrah"
   },
   {
+    "data": {},
+    "id": "npc:achtryn",
+    "kind": "npc",
+    "name": "Achtryn",
+    "slug": "achtryn"
+  },
+  {
+    "data": {},
+    "id": "npc:aemad",
+    "kind": "npc",
+    "name": "Aemad",
+    "slug": "aemad"
+  },
+  {
+    "data": {},
+    "id": "npc:agelus",
+    "kind": "npc",
+    "name": "Agelus",
+    "slug": "agelus"
+  },
+  {
+    "data": {},
+    "id": "npc:agmundi",
+    "kind": "npc",
+    "name": "Agmundi",
+    "slug": "agmundi"
+  },
+  {
+    "data": {},
+    "id": "npc:ak-haranu",
+    "kind": "npc",
+    "name": "Ak-Haranu",
+    "slug": "ak-haranu"
+  },
+  {
+    "data": {},
+    "id": "npc:aleck",
+    "kind": "npc",
+    "name": "Aleck",
+    "slug": "aleck"
+  },
+  {
+    "data": {},
+    "id": "npc:alfonse-the-waiter",
+    "kind": "npc",
+    "name": "Alfonse the waiter",
+    "slug": "alfonse-the-waiter"
+  },
+  {
+    "data": {},
+    "id": "npc:ali-morrisane",
+    "kind": "npc",
+    "name": "Ali Morrisane",
+    "slug": "ali-morrisane"
+  },
+  {
+    "data": {},
+    "id": "npc:ali-the-barman",
+    "kind": "npc",
+    "name": "Ali the Barman",
+    "slug": "ali-the-barman"
+  },
+  {
+    "data": {},
+    "id": "npc:alice",
+    "kind": "npc",
+    "name": "Alice",
+    "slug": "alice"
+  },
+  {
+    "data": {},
+    "id": "npc:allanna",
+    "kind": "npc",
+    "name": "Allanna",
+    "slug": "allanna"
+  },
+  {
+    "data": {},
+    "id": "npc:alry-the-angler",
+    "kind": "npc",
+    "name": "Alry the Angler",
+    "slug": "alry-the-angler"
+  },
+  {
+    "data": {},
+    "id": "npc:amelia-farming-guild",
+    "kind": "npc",
+    "name": "Amelia (Farming Guild)",
+    "slug": "amelia-farming-guild"
+  },
+  {
+    "data": {},
+    "id": "npc:ameyalli",
+    "kind": "npc",
+    "name": "Ameyalli",
+    "slug": "ameyalli"
+  },
+  {
+    "data": {},
+    "id": "npc:amos",
+    "kind": "npc",
+    "name": "Amos",
+    "slug": "amos"
+  },
+  {
+    "data": {},
+    "id": "npc:amy",
+    "kind": "npc",
+    "name": "Amy",
+    "slug": "amy"
+  },
+  {
+    "data": {},
+    "id": "npc:aneirin",
+    "kind": "npc",
+    "name": "Aneirin",
+    "slug": "aneirin"
+  },
+  {
+    "data": {},
+    "id": "npc:anton",
+    "kind": "npc",
+    "name": "Anton",
+    "slug": "anton"
+  },
+  {
+    "data": {},
+    "id": "npc:antonius",
+    "kind": "npc",
+    "name": "Antonius",
+    "slug": "antonius"
+  },
+  {
     "data": {
       "role": "shopkeeper"
     },
@@ -55802,6 +55935,57 @@
     "kind": "npc",
     "name": "Apothecary",
     "slug": "apothecary"
+  },
+  {
+    "data": {
+      "multi_location": true
+    },
+    "id": "npc:apprentice-felix",
+    "kind": "npc",
+    "name": "Apprentice Felix",
+    "slug": "apprentice-felix"
+  },
+  {
+    "data": {},
+    "id": "npc:arcuani",
+    "kind": "npc",
+    "name": "Arcuani",
+    "slug": "arcuani"
+  },
+  {
+    "data": {},
+    "id": "npc:arhein",
+    "kind": "npc",
+    "name": "Arhein",
+    "slug": "arhein"
+  },
+  {
+    "data": {},
+    "id": "npc:armour-salesman",
+    "kind": "npc",
+    "name": "Armour salesman",
+    "slug": "armour-salesman"
+  },
+  {
+    "data": {},
+    "id": "npc:arnold-lydspor",
+    "kind": "npc",
+    "name": "Arnold Lydspor",
+    "slug": "arnold-lydspor"
+  },
+  {
+    "data": {},
+    "id": "npc:artima",
+    "kind": "npc",
+    "name": "Artima",
+    "slug": "artima"
+  },
+  {
+    "data": {},
+    "id": "npc:artimeus",
+    "kind": "npc",
+    "name": "Artimeus",
+    "slug": "artimeus"
   },
   {
     "data": {
@@ -55813,6 +55997,55 @@
     "slug": "aubury"
   },
   {
+    "data": {},
+    "id": "npc:aurel",
+    "kind": "npc",
+    "name": "Aurel",
+    "slug": "aurel"
+  },
+  {
+    "data": {},
+    "id": "npc:ava",
+    "kind": "npc",
+    "name": "Ava",
+    "slug": "ava"
+  },
+  {
+    "data": {},
+    "id": "npc:aya",
+    "kind": "npc",
+    "name": "Aya",
+    "slug": "aya"
+  },
+  {
+    "data": {},
+    "id": "npc:baba-yaga",
+    "kind": "npc",
+    "name": "Baba Yaga",
+    "slug": "baba-yaga"
+  },
+  {
+    "data": {},
+    "id": "npc:baker",
+    "kind": "npc",
+    "name": "Baker",
+    "slug": "baker"
+  },
+  {
+    "data": {},
+    "id": "npc:baker-civitas-illa-fortis",
+    "kind": "npc",
+    "name": "Baker (Civitas illa Fortis)",
+    "slug": "baker-civitas-illa-fortis"
+  },
+  {
+    "data": {},
+    "id": "npc:bandit-shopkeeper",
+    "kind": "npc",
+    "name": "Bandit shopkeeper",
+    "slug": "bandit-shopkeeper"
+  },
+  {
     "data": {
       "role": "fur trader"
     },
@@ -55822,6 +56055,27 @@
     "slug": "baraek"
   },
   {
+    "data": {},
+    "id": "npc:barker",
+    "kind": "npc",
+    "name": "Barker",
+    "slug": "barker"
+  },
+  {
+    "data": {},
+    "id": "npc:barman-blurberry-bar",
+    "kind": "npc",
+    "name": "Barman (Blurberry Bar)",
+    "slug": "barman-blurberry-bar"
+  },
+  {
+    "data": {},
+    "id": "npc:barman-kings-axe-inn",
+    "kind": "npc",
+    "name": "Barman (King's Axe Inn)",
+    "slug": "barman-kings-axe-inn"
+  },
+  {
     "data": {
       "role": "barman"
     },
@@ -55829,6 +56083,20 @@
     "kind": "npc",
     "name": "Barman (Ratpit bar)",
     "slug": "barman-ratpit-bar"
+  },
+  {
+    "data": {},
+    "id": "npc:bartender-atlazoras-rest",
+    "kind": "npc",
+    "name": "Bartender (Atlazora's Rest)",
+    "slug": "bartender-atlazoras-rest"
+  },
+  {
+    "data": {},
+    "id": "npc:bartender-auburn-pub",
+    "kind": "npc",
+    "name": "Bartender (Auburn Pub)",
+    "slug": "bartender-auburn-pub"
   },
   {
     "data": {
@@ -55849,6 +56117,34 @@
     "slug": "bartender-dancing-donkey-inn"
   },
   {
+    "data": {},
+    "id": "npc:bartender-dead-mans-chest",
+    "kind": "npc",
+    "name": "Bartender (Dead Man's Chest)",
+    "slug": "bartender-dead-mans-chest"
+  },
+  {
+    "data": {},
+    "id": "npc:bartender-dragon-inn",
+    "kind": "npc",
+    "name": "Bartender (Dragon Inn)",
+    "slug": "bartender-dragon-inn"
+  },
+  {
+    "data": {},
+    "id": "npc:bartender-flying-horse-inn",
+    "kind": "npc",
+    "name": "Bartender (Flying Horse Inn)",
+    "slug": "bartender-flying-horse-inn"
+  },
+  {
+    "data": {},
+    "id": "npc:bartender-foresters-arms",
+    "kind": "npc",
+    "name": "Bartender (Forester's Arms)",
+    "slug": "bartender-foresters-arms"
+  },
+  {
     "data": {
       "role": "bartender"
     },
@@ -55856,6 +56152,551 @@
     "kind": "npc",
     "name": "Bartender (Jolly Boar Inn)",
     "slug": "bartender-jolly-boar-inn"
+  },
+  {
+    "data": {},
+    "id": "npc:bartender-nemus-retreat",
+    "kind": "npc",
+    "name": "Bartender (Nemus Retreat)",
+    "slug": "bartender-nemus-retreat"
+  },
+  {
+    "data": {},
+    "id": "npc:bartender-rusty-anchor-inn",
+    "kind": "npc",
+    "name": "Bartender (Rusty Anchor Inn)",
+    "slug": "bartender-rusty-anchor-inn"
+  },
+  {
+    "data": {},
+    "id": "npc:bartender-stick-your-ore-inn",
+    "kind": "npc",
+    "name": "Bartender (Stick Your Ore Inn)",
+    "slug": "bartender-stick-your-ore-inn"
+  },
+  {
+    "data": {},
+    "id": "npc:bartender-sunlights-sanctum",
+    "kind": "npc",
+    "name": "Bartender (Sunlight's Sanctum)",
+    "slug": "bartender-sunlights-sanctum"
+  },
+  {
+    "data": {
+      "multi_location": true
+    },
+    "id": "npc:bartender-the-big-heist-lodge",
+    "kind": "npc",
+    "name": "Bartender (The Big Heist Lodge)",
+    "slug": "bartender-the-big-heist-lodge"
+  },
+  {
+    "data": {},
+    "id": "npc:bartender-the-flaming-arrow",
+    "kind": "npc",
+    "name": "Bartender (The Flaming Arrow)",
+    "slug": "bartender-the-flaming-arrow"
+  },
+  {
+    "data": {},
+    "id": "npc:bartender-the-lost-pickaxe",
+    "kind": "npc",
+    "name": "Bartender (The Lost Pickaxe)",
+    "slug": "bartender-the-lost-pickaxe"
+  },
+  {
+    "data": {},
+    "id": "npc:bartender-the-windbreaker",
+    "kind": "npc",
+    "name": "Bartender (The Windbreaker)",
+    "slug": "bartender-the-windbreaker"
+  },
+  {
+    "data": {},
+    "id": "npc:bast",
+    "kind": "npc",
+    "name": "Bast",
+    "slug": "bast"
+  },
+  {
+    "data": {},
+    "id": "npc:bedabin-nomad",
+    "kind": "npc",
+    "name": "Bedabin Nomad",
+    "slug": "bedabin-nomad"
+  },
+  {
+    "data": {},
+    "id": "npc:belona",
+    "kind": "npc",
+    "name": "Belona",
+    "slug": "belona"
+  },
+  {
+    "data": {},
+    "id": "npc:betty",
+    "kind": "npc",
+    "name": "Betty",
+    "slug": "betty"
+  },
+  {
+    "data": {},
+    "id": "npc:blacksmith",
+    "kind": "npc",
+    "name": "Blacksmith",
+    "slug": "blacksmith"
+  },
+  {
+    "data": {},
+    "id": "npc:blacksmith-cam-torum",
+    "kind": "npc",
+    "name": "Blacksmith (Cam Torum)",
+    "slug": "blacksmith-cam-torum"
+  },
+  {
+    "data": {},
+    "id": "npc:blair",
+    "kind": "npc",
+    "name": "Blair",
+    "slug": "blair"
+  },
+  {
+    "data": {},
+    "id": "npc:bob",
+    "kind": "npc",
+    "name": "Bob",
+    "slug": "bob"
+  },
+  {
+    "data": {},
+    "id": "npc:bolkoy",
+    "kind": "npc",
+    "name": "Bolkoy",
+    "slug": "bolkoy"
+  },
+  {
+    "data": {},
+    "id": "npc:bow-and-arrow-salesman",
+    "kind": "npc",
+    "name": "Bow and Arrow salesman",
+    "slug": "bow-and-arrow-salesman"
+  },
+  {
+    "data": {},
+    "id": "npc:branwen",
+    "kind": "npc",
+    "name": "Branwen",
+    "slug": "branwen"
+  },
+  {
+    "data": {},
+    "id": "npc:brian",
+    "kind": "npc",
+    "name": "Brian",
+    "slug": "brian"
+  },
+  {
+    "data": {},
+    "id": "npc:brian-rimmington",
+    "kind": "npc",
+    "name": "Brian (Rimmington)",
+    "slug": "brian-rimmington"
+  },
+  {
+    "data": {},
+    "id": "npc:briget",
+    "kind": "npc",
+    "name": "Briget",
+    "slug": "briget"
+  },
+  {
+    "data": {},
+    "id": "npc:brikka",
+    "kind": "npc",
+    "name": "Brikka",
+    "slug": "brikka"
+  },
+  {
+    "data": {},
+    "id": "npc:caerwyn",
+    "kind": "npc",
+    "name": "Caerwyn",
+    "slug": "caerwyn"
+  },
+  {
+    "data": {},
+    "id": "npc:camarst",
+    "kind": "npc",
+    "name": "Camarst",
+    "slug": "camarst"
+  },
+  {
+    "data": {},
+    "id": "npc:candle-maker",
+    "kind": "npc",
+    "name": "Candle maker",
+    "slug": "candle-maker"
+  },
+  {
+    "data": {},
+    "id": "npc:carl",
+    "kind": "npc",
+    "name": "Carl",
+    "slug": "carl"
+  },
+  {
+    "data": {},
+    "id": "npc:cassie",
+    "kind": "npc",
+    "name": "Cassie",
+    "slug": "cassie"
+  },
+  {
+    "data": {},
+    "id": "npc:celyn",
+    "kind": "npc",
+    "name": "Celyn",
+    "slug": "celyn"
+  },
+  {
+    "data": {},
+    "id": "npc:chadwell",
+    "kind": "npc",
+    "name": "Chadwell",
+    "slug": "chadwell"
+  },
+  {
+    "data": {},
+    "id": "npc:chaeldar",
+    "kind": "npc",
+    "name": "Chaeldar",
+    "slug": "chaeldar"
+  },
+  {
+    "data": {},
+    "id": "npc:chamber-guardian",
+    "kind": "npc",
+    "name": "Chamber guardian",
+    "slug": "chamber-guardian"
+  },
+  {
+    "data": {},
+    "id": "npc:charley",
+    "kind": "npc",
+    "name": "Charley",
+    "slug": "charley"
+  },
+  {
+    "data": {},
+    "id": "npc:charlie-the-cook",
+    "kind": "npc",
+    "name": "Charlie the cook",
+    "slug": "charlie-the-cook"
+  },
+  {
+    "data": {},
+    "id": "npc:chris",
+    "kind": "npc",
+    "name": "Chris",
+    "slug": "chris"
+  },
+  {
+    "data": {},
+    "id": "npc:cobado",
+    "kind": "npc",
+    "name": "Cobado",
+    "slug": "cobado"
+  },
+  {
+    "data": {},
+    "id": "npc:conara",
+    "kind": "npc",
+    "name": "Conara",
+    "slug": "conara"
+  },
+  {
+    "data": {},
+    "id": "npc:daga",
+    "kind": "npc",
+    "name": "Daga",
+    "slug": "daga"
+  },
+  {
+    "data": {},
+    "id": "npc:dalldav",
+    "kind": "npc",
+    "name": "Dalldav",
+    "slug": "dalldav"
+  },
+  {
+    "data": {},
+    "id": "npc:darren",
+    "kind": "npc",
+    "name": "Darren",
+    "slug": "darren"
+  },
+  {
+    "data": {},
+    "id": "npc:daryl",
+    "kind": "npc",
+    "name": "Daryl",
+    "slug": "daryl"
+  },
+  {
+    "data": {},
+    "id": "npc:davon",
+    "kind": "npc",
+    "name": "Davon",
+    "slug": "davon"
+  },
+  {
+    "data": {},
+    "id": "npc:delf",
+    "kind": "npc",
+    "name": "Delf",
+    "slug": "delf"
+  },
+  {
+    "data": {},
+    "id": "npc:derwen-elf",
+    "kind": "npc",
+    "name": "Derwen (elf)",
+    "slug": "derwen-elf"
+  },
+  {
+    "data": {},
+    "id": "npc:despoina-callidra",
+    "kind": "npc",
+    "name": "Despoina Callidra",
+    "slug": "despoina-callidra"
+  },
+  {
+    "data": {},
+    "id": "npc:diana",
+    "kind": "npc",
+    "name": "Diana",
+    "slug": "diana"
+  },
+  {
+    "data": {},
+    "id": "npc:diango",
+    "kind": "npc",
+    "name": "Diango",
+    "slug": "diango"
+  },
+  {
+    "data": {
+      "multi_location": true
+    },
+    "id": "npc:dominic-onion",
+    "kind": "npc",
+    "name": "Dominic Onion",
+    "slug": "dominic-onion"
+  },
+  {
+    "data": {},
+    "id": "npc:dommik",
+    "kind": "npc",
+    "name": "Dommik",
+    "slug": "dommik"
+  },
+  {
+    "data": {},
+    "id": "npc:doria",
+    "kind": "npc",
+    "name": "Doria",
+    "slug": "doria"
+  },
+  {
+    "data": {},
+    "id": "npc:drasdan-ranor",
+    "kind": "npc",
+    "name": "Drasdan Ranor",
+    "slug": "drasdan-ranor"
+  },
+  {
+    "data": {},
+    "id": "npc:drogo-dwarf",
+    "kind": "npc",
+    "name": "Drogo dwarf",
+    "slug": "drogo-dwarf"
+  },
+  {
+    "data": {},
+    "id": "npc:duradel",
+    "kind": "npc",
+    "name": "Duradel",
+    "slug": "duradel"
+  },
+  {
+    "data": {},
+    "id": "npc:durrik",
+    "kind": "npc",
+    "name": "Durrik",
+    "slug": "durrik"
+  },
+  {
+    "data": {},
+    "id": "npc:dusuri",
+    "kind": "npc",
+    "name": "Dusuri",
+    "slug": "dusuri"
+  },
+  {
+    "data": {},
+    "id": "npc:dwarf-dwarven-shopping-store",
+    "kind": "npc",
+    "name": "Dwarf (Dwarven shopping store)",
+    "slug": "dwarf-dwarven-shopping-store"
+  },
+  {
+    "data": {},
+    "id": "npc:edmond-merchant",
+    "kind": "npc",
+    "name": "Edmond (merchant)",
+    "slug": "edmond-merchant"
+  },
+  {
+    "data": {},
+    "id": "npc:edward",
+    "kind": "npc",
+    "name": "Edward",
+    "slug": "edward"
+  },
+  {
+    "data": {},
+    "id": "npc:efa",
+    "kind": "npc",
+    "name": "Efa",
+    "slug": "efa"
+  },
+  {
+    "data": {},
+    "id": "npc:eira",
+    "kind": "npc",
+    "name": "Eira",
+    "slug": "eira"
+  },
+  {
+    "data": {},
+    "id": "npc:elder-blunn",
+    "kind": "npc",
+    "name": "Elder Blunn",
+    "slug": "elder-blunn"
+  },
+  {
+    "data": {},
+    "id": "npc:elder-coco",
+    "kind": "npc",
+    "name": "Elder Coco",
+    "slug": "elder-coco"
+  },
+  {
+    "data": {},
+    "id": "npc:elder-krill",
+    "kind": "npc",
+    "name": "Elder Krill",
+    "slug": "elder-krill"
+  },
+  {
+    "data": {},
+    "id": "npc:elder-reggle",
+    "kind": "npc",
+    "name": "Elder Reggle",
+    "slug": "elder-reggle"
+  },
+  {
+    "data": {},
+    "id": "npc:elder-strom",
+    "kind": "npc",
+    "name": "Elder Strom",
+    "slug": "elder-strom"
+  },
+  {
+    "data": {},
+    "id": "npc:eleanor",
+    "kind": "npc",
+    "name": "Eleanor",
+    "slug": "eleanor"
+  },
+  {
+    "data": {},
+    "id": "npc:elgan",
+    "kind": "npc",
+    "name": "Elgan",
+    "slug": "elgan"
+  },
+  {
+    "data": {},
+    "id": "npc:embalmer",
+    "kind": "npc",
+    "name": "Embalmer",
+    "slug": "embalmer"
+  },
+  {
+    "data": {
+      "multi_location": true
+    },
+    "id": "npc:emblem-trader",
+    "kind": "npc",
+    "name": "Emblem Trader",
+    "slug": "emblem-trader"
+  },
+  {
+    "data": {},
+    "id": "npc:emelio",
+    "kind": "npc",
+    "name": "Emelio",
+    "slug": "emelio"
+  },
+  {
+    "data": {},
+    "id": "npc:emily",
+    "kind": "npc",
+    "name": "Emily",
+    "slug": "emily"
+  },
+  {
+    "data": {},
+    "id": "npc:erdan",
+    "kind": "npc",
+    "name": "Erdan",
+    "slug": "erdan"
+  },
+  {
+    "data": {},
+    "id": "npc:eudav",
+    "kind": "npc",
+    "name": "Eudav",
+    "slug": "eudav"
+  },
+  {
+    "data": {},
+    "id": "npc:ezekial-lovecraft",
+    "kind": "npc",
+    "name": "Ezekial Lovecraft",
+    "slug": "ezekial-lovecraft"
+  },
+  {
+    "data": {},
+    "id": "npc:fadli",
+    "kind": "npc",
+    "name": "Fadli",
+    "slug": "fadli"
+  },
+  {
+    "data": {},
+    "id": "npc:fairy-fixit",
+    "kind": "npc",
+    "name": "Fairy Fixit",
+    "slug": "fairy-fixit"
+  },
+  {
+    "data": {},
+    "id": "npc:fairy-shop-keeper",
+    "kind": "npc",
+    "name": "Fairy shop keeper",
+    "slug": "fairy-shop-keeper"
   },
   {
     "data": {
@@ -55867,6 +56708,439 @@
     "slug": "fancy-clothes-store-owner"
   },
   {
+    "data": {},
+    "id": "npc:farmer-gricoller",
+    "kind": "npc",
+    "name": "Farmer Gricoller",
+    "slug": "farmer-gricoller"
+  },
+  {
+    "data": {},
+    "id": "npc:fat-tony",
+    "kind": "npc",
+    "name": "Fat Tony",
+    "slug": "fat-tony"
+  },
+  {
+    "data": {},
+    "id": "npc:faustus",
+    "kind": "npc",
+    "name": "Faustus",
+    "slug": "faustus"
+  },
+  {
+    "data": {},
+    "id": "npc:fernahei",
+    "kind": "npc",
+    "name": "Fernahei",
+    "slug": "fernahei"
+  },
+  {
+    "data": {},
+    "id": "npc:fidelio",
+    "kind": "npc",
+    "name": "Fidelio",
+    "slug": "fidelio"
+  },
+  {
+    "data": {},
+    "id": "npc:filamina",
+    "kind": "npc",
+    "name": "Filamina",
+    "slug": "filamina"
+  },
+  {
+    "data": {},
+    "id": "npc:finn",
+    "kind": "npc",
+    "name": "Finn",
+    "slug": "finn"
+  },
+  {
+    "data": {},
+    "id": "npc:fionella",
+    "kind": "npc",
+    "name": "Fionella",
+    "slug": "fionella"
+  },
+  {
+    "data": {},
+    "id": "npc:fish-monger",
+    "kind": "npc",
+    "name": "Fish monger",
+    "slug": "fish-monger"
+  },
+  {
+    "data": {},
+    "id": "npc:fish-monger-the-warrens",
+    "kind": "npc",
+    "name": "Fish monger (The Warrens)",
+    "slug": "fish-monger-the-warrens"
+  },
+  {
+    "data": {
+      "multi_location": true
+    },
+    "id": "npc:fishmonger",
+    "kind": "npc",
+    "name": "Fishmonger",
+    "slug": "fishmonger"
+  },
+  {
+    "data": {},
+    "id": "npc:floria",
+    "kind": "npc",
+    "name": "Floria",
+    "slug": "floria"
+  },
+  {
+    "data": {},
+    "id": "npc:flosi-dalksson",
+    "kind": "npc",
+    "name": "Flosi Dalksson",
+    "slug": "flosi-dalksson"
+  },
+  {
+    "data": {},
+    "id": "npc:flynn",
+    "kind": "npc",
+    "name": "Flynn",
+    "slug": "flynn"
+  },
+  {
+    "data": {},
+    "id": "npc:fortunato",
+    "kind": "npc",
+    "name": "Fortunato",
+    "slug": "fortunato"
+  },
+  {
+    "data": {},
+    "id": "npc:frankie",
+    "kind": "npc",
+    "name": "Frankie",
+    "slug": "frankie"
+  },
+  {
+    "data": {},
+    "id": "npc:frenita",
+    "kind": "npc",
+    "name": "Frenita",
+    "slug": "frenita"
+  },
+  {
+    "data": {
+      "multi_location": true
+    },
+    "id": "npc:friendly-forester",
+    "kind": "npc",
+    "name": "Friendly Forester",
+    "slug": "friendly-forester"
+  },
+  {
+    "data": {},
+    "id": "npc:frincos",
+    "kind": "npc",
+    "name": "Frincos",
+    "slug": "frincos"
+  },
+  {
+    "data": {},
+    "id": "npc:fuggy",
+    "kind": "npc",
+    "name": "Fuggy",
+    "slug": "fuggy"
+  },
+  {
+    "data": {},
+    "id": "npc:fur-merchant",
+    "kind": "npc",
+    "name": "Fur Merchant",
+    "slug": "fur-merchant"
+  },
+  {
+    "data": {},
+    "id": "npc:fur-trader-east-ardougne",
+    "kind": "npc",
+    "name": "Fur trader (East Ardougne)",
+    "slug": "fur-trader-east-ardougne"
+  },
+  {
+    "data": {},
+    "id": "npc:fur-trader-rellekka",
+    "kind": "npc",
+    "name": "Fur trader (Rellekka)",
+    "slug": "fur-trader-rellekka"
+  },
+  {
+    "data": {},
+    "id": "npc:gabooty",
+    "kind": "npc",
+    "name": "Gabooty",
+    "slug": "gabooty"
+  },
+  {
+    "data": {},
+    "id": "npc:gaius",
+    "kind": "npc",
+    "name": "Gaius",
+    "slug": "gaius"
+  },
+  {
+    "data": {},
+    "id": "npc:garden-supplier",
+    "kind": "npc",
+    "name": "Garden supplier",
+    "slug": "garden-supplier"
+  },
+  {
+    "data": {},
+    "id": "npc:gem-merchant",
+    "kind": "npc",
+    "name": "Gem merchant",
+    "slug": "gem-merchant"
+  },
+  {
+    "data": {},
+    "id": "npc:gem-merchant-civitas-illa-fortis",
+    "kind": "npc",
+    "name": "Gem Merchant (Civitas illa Fortis)",
+    "slug": "gem-merchant-civitas-illa-fortis"
+  },
+  {
+    "data": {},
+    "id": "npc:gem-merchant-kourend-castle",
+    "kind": "npc",
+    "name": "Gem merchant (Kourend Castle)",
+    "slug": "gem-merchant-kourend-castle"
+  },
+  {
+    "data": {},
+    "id": "npc:gem-trader",
+    "kind": "npc",
+    "name": "Gem trader",
+    "slug": "gem-trader"
+  },
+  {
+    "data": {},
+    "id": "npc:gerrant",
+    "kind": "npc",
+    "name": "Gerrant",
+    "slug": "gerrant"
+  },
+  {
+    "data": {},
+    "id": "npc:gethin",
+    "kind": "npc",
+    "name": "Gethin",
+    "slug": "gethin"
+  },
+  {
+    "data": {},
+    "id": "npc:ghost-shopkeeper",
+    "kind": "npc",
+    "name": "Ghost shopkeeper",
+    "slug": "ghost-shopkeeper"
+  },
+  {
+    "data": {},
+    "id": "npc:glenda",
+    "kind": "npc",
+    "name": "Glenda",
+    "slug": "glenda"
+  },
+  {
+    "data": {},
+    "id": "npc:gnome-waiter",
+    "kind": "npc",
+    "name": "Gnome Waiter",
+    "slug": "gnome-waiter"
+  },
+  {
+    "data": {},
+    "id": "npc:golova",
+    "kind": "npc",
+    "name": "Golova",
+    "slug": "golova"
+  },
+  {
+    "data": {},
+    "id": "npc:grace",
+    "kind": "npc",
+    "name": "Grace",
+    "slug": "grace"
+  },
+  {
+    "data": {
+      "multi_location": true
+    },
+    "id": "npc:greengrocer",
+    "kind": "npc",
+    "name": "Greengrocer",
+    "slug": "greengrocer"
+  },
+  {
+    "data": {},
+    "id": "npc:gregory",
+    "kind": "npc",
+    "name": "Gregory",
+    "slug": "gregory"
+  },
+  {
+    "data": {},
+    "id": "npc:grinka-krast",
+    "kind": "npc",
+    "name": "Grinka Krast",
+    "slug": "grinka-krast"
+  },
+  {
+    "data": {},
+    "id": "npc:grum",
+    "kind": "npc",
+    "name": "Grum",
+    "slug": "grum"
+  },
+  {
+    "data": {},
+    "id": "npc:guinevere",
+    "kind": "npc",
+    "name": "Guinevere",
+    "slug": "guinevere"
+  },
+  {
+    "data": {},
+    "id": "npc:gulldamar",
+    "kind": "npc",
+    "name": "Gulldamar",
+    "slug": "gulldamar"
+  },
+  {
+    "data": {},
+    "id": "npc:gulluck",
+    "kind": "npc",
+    "name": "Gulluck",
+    "slug": "gulluck"
+  },
+  {
+    "data": {},
+    "id": "npc:gunslik",
+    "kind": "npc",
+    "name": "Gunslik",
+    "slug": "gunslik"
+  },
+  {
+    "data": {},
+    "id": "npc:gwallter",
+    "kind": "npc",
+    "name": "Gwallter",
+    "slug": "gwallter"
+  },
+  {
+    "data": {},
+    "id": "npc:gwyn",
+    "kind": "npc",
+    "name": "Gwyn",
+    "slug": "gwyn"
+  },
+  {
+    "data": {},
+    "id": "npc:halla",
+    "kind": "npc",
+    "name": "Halla",
+    "slug": "halla"
+  },
+  {
+    "data": {},
+    "id": "npc:hamab",
+    "kind": "npc",
+    "name": "Hamab",
+    "slug": "hamab"
+  },
+  {
+    "data": {},
+    "id": "npc:harry",
+    "kind": "npc",
+    "name": "Harry",
+    "slug": "harry"
+  },
+  {
+    "data": {},
+    "id": "npc:heckel-funch",
+    "kind": "npc",
+    "name": "Heckel Funch",
+    "slug": "heckel-funch"
+  },
+  {
+    "data": {},
+    "id": "npc:helemos",
+    "kind": "npc",
+    "name": "Helemos",
+    "slug": "helemos"
+  },
+  {
+    "data": {},
+    "id": "npc:henderson",
+    "kind": "npc",
+    "name": "Henderson",
+    "slug": "henderson"
+  },
+  {
+    "data": {},
+    "id": "npc:hendor",
+    "kind": "npc",
+    "name": "Hendor",
+    "slug": "hendor"
+  },
+  {
+    "data": {},
+    "id": "npc:herquin",
+    "kind": "npc",
+    "name": "Herquin",
+    "slug": "herquin"
+  },
+  {
+    "data": {},
+    "id": "npc:hervi",
+    "kind": "npc",
+    "name": "Hervi",
+    "slug": "hervi"
+  },
+  {
+    "data": {},
+    "id": "npc:hickton",
+    "kind": "npc",
+    "name": "Hickton",
+    "slug": "hickton"
+  },
+  {
+    "data": {},
+    "id": "npc:hirko",
+    "kind": "npc",
+    "name": "Hirko",
+    "slug": "hirko"
+  },
+  {
+    "data": {},
+    "id": "npc:holoy",
+    "kind": "npc",
+    "name": "Holoy",
+    "slug": "holoy"
+  },
+  {
+    "data": {},
+    "id": "npc:honest-jimmy",
+    "kind": "npc",
+    "name": "Honest Jimmy",
+    "slug": "honest-jimmy"
+  },
+  {
+    "data": {},
+    "id": "npc:horace",
+    "kind": "npc",
+    "name": "Horace",
+    "slug": "horace"
+  },
+  {
     "data": {
       "role": "armourer"
     },
@@ -55874,6 +57148,367 @@
     "kind": "npc",
     "name": "Horvik",
     "slug": "horvik"
+  },
+  {
+    "data": {},
+    "id": "npc:hring-hring",
+    "kind": "npc",
+    "name": "Hring Hring",
+    "slug": "hring-hring"
+  },
+  {
+    "data": {},
+    "id": "npc:hudo",
+    "kind": "npc",
+    "name": "Hudo",
+    "slug": "hudo"
+  },
+  {
+    "data": {},
+    "id": "npc:huito",
+    "kind": "npc",
+    "name": "Huito",
+    "slug": "huito"
+  },
+  {
+    "data": {},
+    "id": "npc:huntmaster-gilman-novice",
+    "kind": "npc",
+    "name": "Huntmaster Gilman (Novice)",
+    "slug": "huntmaster-gilman-novice"
+  },
+  {
+    "data": {},
+    "id": "npc:hura",
+    "kind": "npc",
+    "name": "Hura",
+    "slug": "hura"
+  },
+  {
+    "data": {},
+    "id": "npc:ian",
+    "kind": "npc",
+    "name": "Ian",
+    "slug": "ian"
+  },
+  {
+    "data": {},
+    "id": "npc:ichta",
+    "kind": "npc",
+    "name": "Ichta",
+    "slug": "ichta"
+  },
+  {
+    "data": {},
+    "id": "npc:ifaba",
+    "kind": "npc",
+    "name": "Ifaba",
+    "slug": "ifaba"
+  },
+  {
+    "data": {},
+    "id": "npc:imia",
+    "kind": "npc",
+    "name": "Imia",
+    "slug": "imia"
+  },
+  {
+    "data": {},
+    "id": "npc:irksol",
+    "kind": "npc",
+    "name": "Irksol",
+    "slug": "irksol"
+  },
+  {
+    "data": {},
+    "id": "npc:iron-bill",
+    "kind": "npc",
+    "name": "Iron Bill",
+    "slug": "iron-bill"
+  },
+  {
+    "data": {},
+    "id": "npc:ishmael",
+    "kind": "npc",
+    "name": "Ishmael",
+    "slug": "ishmael"
+  },
+  {
+    "data": {
+      "multi_location": true
+    },
+    "id": "npc:ivan-strom",
+    "kind": "npc",
+    "name": "Ivan Strom",
+    "slug": "ivan-strom"
+  },
+  {
+    "data": {},
+    "id": "npc:iwan",
+    "kind": "npc",
+    "name": "Iwan",
+    "slug": "iwan"
+  },
+  {
+    "data": {},
+    "id": "npc:jack",
+    "kind": "npc",
+    "name": "Jack",
+    "slug": "jack"
+  },
+  {
+    "data": {},
+    "id": "npc:jamila",
+    "kind": "npc",
+    "name": "Jamila",
+    "slug": "jamila"
+  },
+  {
+    "data": {},
+    "id": "npc:jatix",
+    "kind": "npc",
+    "name": "Jatix",
+    "slug": "jatix"
+  },
+  {
+    "data": {},
+    "id": "npc:jennifer-shayzien",
+    "kind": "npc",
+    "name": "Jennifer (Shayzien)",
+    "slug": "jennifer-shayzien"
+  },
+  {
+    "data": {},
+    "id": "npc:jiminua",
+    "kind": "npc",
+    "name": "Jiminua",
+    "slug": "jiminua"
+  },
+  {
+    "data": {},
+    "id": "npc:joe",
+    "kind": "npc",
+    "name": "Joe",
+    "slug": "joe"
+  },
+  {
+    "data": {},
+    "id": "npc:jofridr-mordstatter",
+    "kind": "npc",
+    "name": "Jofridr Mordstatter",
+    "slug": "jofridr-mordstatter"
+  },
+  {
+    "data": {},
+    "id": "npc:jorzik",
+    "kind": "npc",
+    "name": "Jorzik",
+    "slug": "jorzik"
+  },
+  {
+    "data": {},
+    "id": "npc:jossik",
+    "kind": "npc",
+    "name": "Jossik",
+    "slug": "jossik"
+  },
+  {
+    "data": {},
+    "id": "npc:jukat",
+    "kind": "npc",
+    "name": "Jukat",
+    "slug": "jukat"
+  },
+  {
+    "data": {
+      "multi_location": true
+    },
+    "id": "npc:justine",
+    "kind": "npc",
+    "name": "Justine",
+    "slug": "justine"
+  },
+  {
+    "data": {},
+    "id": "npc:kaleb-paramaya",
+    "kind": "npc",
+    "name": "Kaleb Paramaya",
+    "slug": "kaleb-paramaya"
+  },
+  {
+    "data": {},
+    "id": "npc:kaylee",
+    "kind": "npc",
+    "name": "Kaylee",
+    "slug": "kaylee"
+  },
+  {
+    "data": {},
+    "id": "npc:kazemde",
+    "kind": "npc",
+    "name": "Kazemde",
+    "slug": "kazemde"
+  },
+  {
+    "data": {},
+    "id": "npc:keepa-kettilon",
+    "kind": "npc",
+    "name": "Keepa Kettilon",
+    "slug": "keepa-kettilon"
+  },
+  {
+    "data": {},
+    "id": "npc:kenelme",
+    "kind": "npc",
+    "name": "Kenelme",
+    "slug": "kenelme"
+  },
+  {
+    "data": {},
+    "id": "npc:king-narnode-shareen",
+    "kind": "npc",
+    "name": "King Narnode Shareen",
+    "slug": "king-narnode-shareen"
+  },
+  {
+    "data": {},
+    "id": "npc:king-tal-teklan",
+    "kind": "npc",
+    "name": "King (Tal Teklan)",
+    "slug": "king-tal-teklan"
+  },
+  {
+    "data": {},
+    "id": "npc:kjut",
+    "kind": "npc",
+    "name": "Kjut",
+    "slug": "kjut"
+  },
+  {
+    "data": {},
+    "id": "npc:konar-quo-maten",
+    "kind": "npc",
+    "name": "Konar quo Maten",
+    "slug": "konar-quo-maten"
+  },
+  {
+    "data": {},
+    "id": "npc:korgan",
+    "kind": "npc",
+    "name": "Korgan",
+    "slug": "korgan"
+  },
+  {
+    "data": {},
+    "id": "npc:kovac",
+    "kind": "npc",
+    "name": "Kovac",
+    "slug": "kovac"
+  },
+  {
+    "data": {},
+    "id": "npc:krystilia",
+    "kind": "npc",
+    "name": "Krystilia",
+    "slug": "krystilia"
+  },
+  {
+    "data": {},
+    "id": "npc:kuradal",
+    "kind": "npc",
+    "name": "Kuradal",
+    "slug": "kuradal"
+  },
+  {
+    "data": {},
+    "id": "npc:lanthus",
+    "kind": "npc",
+    "name": "Lanthus",
+    "slug": "lanthus"
+  },
+  {
+    "data": {},
+    "id": "npc:larry-merchant",
+    "kind": "npc",
+    "name": "Larry (merchant)",
+    "slug": "larry-merchant"
+  },
+  {
+    "data": {},
+    "id": "npc:leagues-tutor-raging-echoes-league",
+    "kind": "npc",
+    "name": "Leagues Tutor (Raging Echoes League)",
+    "slug": "leagues-tutor-raging-echoes-league"
+  },
+  {
+    "data": {},
+    "id": "npc:leenz",
+    "kind": "npc",
+    "name": "Leenz",
+    "slug": "leenz"
+  },
+  {
+    "data": {},
+    "id": "npc:leke-quo-keran",
+    "kind": "npc",
+    "name": "Leke quo Keran",
+    "slug": "leke-quo-keran"
+  },
+  {
+    "data": {},
+    "id": "npc:lenyig-karna",
+    "kind": "npc",
+    "name": "Lenyig Karna",
+    "slug": "lenyig-karna"
+  },
+  {
+    "data": {},
+    "id": "npc:leon",
+    "kind": "npc",
+    "name": "Leon",
+    "slug": "leon"
+  },
+  {
+    "data": {},
+    "id": "npc:lidio",
+    "kind": "npc",
+    "name": "Lidio",
+    "slug": "lidio"
+  },
+  {
+    "data": {},
+    "id": "npc:lilly",
+    "kind": "npc",
+    "name": "Lilly",
+    "slug": "lilly"
+  },
+  {
+    "data": {},
+    "id": "npc:lliann",
+    "kind": "npc",
+    "name": "Lliann",
+    "slug": "lliann"
+  },
+  {
+    "data": {},
+    "id": "npc:llio",
+    "kind": "npc",
+    "name": "Llio",
+    "slug": "llio"
+  },
+  {
+    "data": {},
+    "id": "npc:logava",
+    "kind": "npc",
+    "name": "Logava",
+    "slug": "logava"
+  },
+  {
+    "data": {},
+    "id": "npc:louie-legs",
+    "kind": "npc",
+    "name": "Louie Legs",
+    "slug": "louie-legs"
   },
   {
     "data": {
@@ -55885,6 +57520,714 @@
     "slug": "lowe"
   },
   {
+    "data": {},
+    "id": "npc:lucy",
+    "kind": "npc",
+    "name": "Lucy",
+    "slug": "lucy"
+  },
+  {
+    "data": {},
+    "id": "npc:lunami",
+    "kind": "npc",
+    "name": "Lunami",
+    "slug": "lunami"
+  },
+  {
+    "data": {},
+    "id": "npc:lundail",
+    "kind": "npc",
+    "name": "Lundail",
+    "slug": "lundail"
+  },
+  {
+    "data": {},
+    "id": "npc:lurgon",
+    "kind": "npc",
+    "name": "Lurgon",
+    "slug": "lurgon"
+  },
+  {
+    "data": {},
+    "id": "npc:mag",
+    "kind": "npc",
+    "name": "Mag",
+    "slug": "mag"
+  },
+  {
+    "data": {},
+    "id": "npc:mairin",
+    "kind": "npc",
+    "name": "Mairin",
+    "slug": "mairin"
+  },
+  {
+    "data": {},
+    "id": "npc:mama",
+    "kind": "npc",
+    "name": "Mama",
+    "slug": "mama"
+  },
+  {
+    "data": {},
+    "id": "npc:market-seller",
+    "kind": "npc",
+    "name": "Market seller",
+    "slug": "market-seller"
+  },
+  {
+    "data": {},
+    "id": "npc:marla-port-roberts",
+    "kind": "npc",
+    "name": "Marla (Port Roberts)",
+    "slug": "marla-port-roberts"
+  },
+  {
+    "data": {},
+    "id": "npc:martin-thwait",
+    "kind": "npc",
+    "name": "Martin Thwait",
+    "slug": "martin-thwait"
+  },
+  {
+    "data": {},
+    "id": "npc:mazchna",
+    "kind": "npc",
+    "name": "Mazchna",
+    "slug": "mazchna"
+  },
+  {
+    "data": {},
+    "id": "npc:megan",
+    "kind": "npc",
+    "name": "Megan",
+    "slug": "megan"
+  },
+  {
+    "data": {},
+    "id": "npc:melana-moonlander",
+    "kind": "npc",
+    "name": "Melana Moonlander",
+    "slug": "melana-moonlander"
+  },
+  {
+    "data": {},
+    "id": "npc:metla",
+    "kind": "npc",
+    "name": "Metla",
+    "slug": "metla"
+  },
+  {
+    "data": {},
+    "id": "npc:mike",
+    "kind": "npc",
+    "name": "Mike",
+    "slug": "mike"
+  },
+  {
+    "data": {},
+    "id": "npc:miltog",
+    "kind": "npc",
+    "name": "Miltog",
+    "slug": "miltog"
+  },
+  {
+    "data": {},
+    "id": "npc:mubariz",
+    "kind": "npc",
+    "name": "Mubariz",
+    "slug": "mubariz"
+  },
+  {
+    "data": {},
+    "id": "npc:munty",
+    "kind": "npc",
+    "name": "Munty",
+    "slug": "munty"
+  },
+  {
+    "data": {},
+    "id": "npc:mysterious-stranger",
+    "kind": "npc",
+    "name": "Mysterious Stranger",
+    "slug": "mysterious-stranger"
+  },
+  {
+    "data": {},
+    "id": "npc:mysterious-stranger-hallowed-sepulchre",
+    "kind": "npc",
+    "name": "Mysterious Stranger (Hallowed Sepulchre)",
+    "slug": "mysterious-stranger-hallowed-sepulchre"
+  },
+  {
+    "data": {},
+    "id": "npc:nahta",
+    "kind": "npc",
+    "name": "Nahta",
+    "slug": "nahta"
+  },
+  {
+    "data": {},
+    "id": "npc:nardok",
+    "kind": "npc",
+    "name": "Nardok",
+    "slug": "nardok"
+  },
+  {
+    "data": {},
+    "id": "npc:nathifa",
+    "kind": "npc",
+    "name": "Nathifa",
+    "slug": "nathifa"
+  },
+  {
+    "data": {},
+    "id": "npc:necto",
+    "kind": "npc",
+    "name": "Necto",
+    "slug": "necto"
+  },
+  {
+    "data": {
+      "multi_location": true
+    },
+    "id": "npc:ned",
+    "kind": "npc",
+    "name": "Ned",
+    "slug": "ned"
+  },
+  {
+    "data": {},
+    "id": "npc:neil",
+    "kind": "npc",
+    "name": "Neil",
+    "slug": "neil"
+  },
+  {
+    "data": {},
+    "id": "npc:nia",
+    "kind": "npc",
+    "name": "Nia",
+    "slug": "nia"
+  },
+  {
+    "data": {},
+    "id": "npc:nieve",
+    "kind": "npc",
+    "name": "Nieve",
+    "slug": "nieve"
+  },
+  {
+    "data": {},
+    "id": "npc:nigel",
+    "kind": "npc",
+    "name": "Nigel",
+    "slug": "nigel"
+  },
+  {
+    "data": {},
+    "id": "npc:nolar",
+    "kind": "npc",
+    "name": "Nolar",
+    "slug": "nolar"
+  },
+  {
+    "data": {},
+    "id": "npc:nomad",
+    "kind": "npc",
+    "name": "Nomad",
+    "slug": "nomad"
+  },
+  {
+    "data": {},
+    "id": "npc:noterazzo",
+    "kind": "npc",
+    "name": "Noterazzo",
+    "slug": "noterazzo"
+  },
+  {
+    "data": {},
+    "id": "npc:nulodion",
+    "kind": "npc",
+    "name": "Nulodion",
+    "slug": "nulodion"
+  },
+  {
+    "data": {},
+    "id": "npc:nurmof",
+    "kind": "npc",
+    "name": "Nurmof",
+    "slug": "nurmof"
+  },
+  {
+    "data": {},
+    "id": "npc:obli",
+    "kind": "npc",
+    "name": "Obli",
+    "slug": "obli"
+  },
+  {
+    "data": {},
+    "id": "npc:ogre-merchant",
+    "kind": "npc",
+    "name": "Ogre merchant",
+    "slug": "ogre-merchant"
+  },
+  {
+    "data": {},
+    "id": "npc:olivia",
+    "kind": "npc",
+    "name": "Olivia",
+    "slug": "olivia"
+  },
+  {
+    "data": {},
+    "id": "npc:oobapohk",
+    "kind": "npc",
+    "name": "Oobapohk",
+    "slug": "oobapohk"
+  },
+  {
+    "data": {},
+    "id": "npc:ordan",
+    "kind": "npc",
+    "name": "Ordan",
+    "slug": "ordan"
+  },
+  {
+    "data": {},
+    "id": "npc:oronwen",
+    "kind": "npc",
+    "name": "Oronwen",
+    "slug": "oronwen"
+  },
+  {
+    "data": {},
+    "id": "npc:osian",
+    "kind": "npc",
+    "name": "Osian",
+    "slug": "osian"
+  },
+  {
+    "data": {},
+    "id": "npc:osvald",
+    "kind": "npc",
+    "name": "Osvald",
+    "slug": "osvald"
+  },
+  {
+    "data": {},
+    "id": "npc:oswald",
+    "kind": "npc",
+    "name": "Oswald",
+    "slug": "oswald"
+  },
+  {
+    "data": {},
+    "id": "npc:oziach",
+    "kind": "npc",
+    "name": "Oziach",
+    "slug": "oziach"
+  },
+  {
+    "data": {},
+    "id": "npc:peksa",
+    "kind": "npc",
+    "name": "Peksa",
+    "slug": "peksa"
+  },
+  {
+    "data": {},
+    "id": "npc:pellem",
+    "kind": "npc",
+    "name": "Pellem",
+    "slug": "pellem"
+  },
+  {
+    "data": {},
+    "id": "npc:perdie",
+    "kind": "npc",
+    "name": "Perdie",
+    "slug": "perdie"
+  },
+  {
+    "data": {
+      "multi_location": true
+    },
+    "id": "npc:perdu",
+    "kind": "npc",
+    "name": "Perdu",
+    "slug": "perdu"
+  },
+  {
+    "data": {},
+    "id": "npc:perry",
+    "kind": "npc",
+    "name": "Perry",
+    "slug": "perry"
+  },
+  {
+    "data": {},
+    "id": "npc:petrified-pete",
+    "kind": "npc",
+    "name": "Petrified Pete",
+    "slug": "petrified-pete"
+  },
+  {
+    "data": {},
+    "id": "npc:picaria",
+    "kind": "npc",
+    "name": "Picaria",
+    "slug": "picaria"
+  },
+  {
+    "data": {},
+    "id": "npc:pirate-jackie-the-fruit",
+    "kind": "npc",
+    "name": "Pirate Jackie the Fruit",
+    "slug": "pirate-jackie-the-fruit"
+  },
+  {
+    "data": {},
+    "id": "npc:primula",
+    "kind": "npc",
+    "name": "Primula",
+    "slug": "primula"
+  },
+  {
+    "data": {},
+    "id": "npc:prospector-percy",
+    "kind": "npc",
+    "name": "Prospector Percy",
+    "slug": "prospector-percy"
+  },
+  {
+    "data": {},
+    "id": "npc:quartermaster",
+    "kind": "npc",
+    "name": "Quartermaster",
+    "slug": "quartermaster"
+  },
+  {
+    "data": {},
+    "id": "npc:rachael",
+    "kind": "npc",
+    "name": "Rachael",
+    "slug": "rachael"
+  },
+  {
+    "data": {},
+    "id": "npc:raetul",
+    "kind": "npc",
+    "name": "Raetul",
+    "slug": "raetul"
+  },
+  {
+    "data": {},
+    "id": "npc:ranael",
+    "kind": "npc",
+    "name": "Ranael",
+    "slug": "ranael"
+  },
+  {
+    "data": {},
+    "id": "npc:randivor",
+    "kind": "npc",
+    "name": "Randivor",
+    "slug": "randivor"
+  },
+  {
+    "data": {},
+    "id": "npc:ranulph",
+    "kind": "npc",
+    "name": "Ranulph",
+    "slug": "ranulph"
+  },
+  {
+    "data": {},
+    "id": "npc:rasolo",
+    "kind": "npc",
+    "name": "Rasolo",
+    "slug": "rasolo"
+  },
+  {
+    "data": {
+      "multi_location": true
+    },
+    "id": "npc:rauborn",
+    "kind": "npc",
+    "name": "Rauborn",
+    "slug": "rauborn"
+  },
+  {
+    "data": {},
+    "id": "npc:raum-urda-stein",
+    "kind": "npc",
+    "name": "Raum Urda-Stein",
+    "slug": "raum-urda-stein"
+  },
+  {
+    "data": {},
+    "id": "npc:razmire-keelgan",
+    "kind": "npc",
+    "name": "Razmire Keelgan",
+    "slug": "razmire-keelgan"
+  },
+  {
+    "data": {},
+    "id": "npc:regath",
+    "kind": "npc",
+    "name": "Regath",
+    "slug": "regath"
+  },
+  {
+    "data": {},
+    "id": "npc:reldak",
+    "kind": "npc",
+    "name": "Reldak",
+    "slug": "reldak"
+  },
+  {
+    "data": {},
+    "id": "npc:richard-ardougne",
+    "kind": "npc",
+    "name": "Richard (Ardougne)",
+    "slug": "richard-ardougne"
+  },
+  {
+    "data": {},
+    "id": "npc:richard-hosidius",
+    "kind": "npc",
+    "name": "Richard (Hosidius)",
+    "slug": "richard-hosidius"
+  },
+  {
+    "data": {},
+    "id": "npc:richard-merchant",
+    "kind": "npc",
+    "name": "Richard (merchant)",
+    "slug": "richard-merchant"
+  },
+  {
+    "data": {},
+    "id": "npc:rimae-sirsalis",
+    "kind": "npc",
+    "name": "Rimae Sirsalis",
+    "slug": "rimae-sirsalis"
+  },
+  {
+    "data": {},
+    "id": "npc:roachey",
+    "kind": "npc",
+    "name": "Roachey",
+    "slug": "roachey"
+  },
+  {
+    "data": {},
+    "id": "npc:roavar",
+    "kind": "npc",
+    "name": "Roavar",
+    "slug": "roavar"
+  },
+  {
+    "data": {},
+    "id": "npc:robyn",
+    "kind": "npc",
+    "name": "Robyn",
+    "slug": "robyn"
+  },
+  {
+    "data": {},
+    "id": "npc:rokuh",
+    "kind": "npc",
+    "name": "Rokuh",
+    "slug": "rokuh"
+  },
+  {
+    "data": {},
+    "id": "npc:rometti",
+    "kind": "npc",
+    "name": "Rometti",
+    "slug": "rometti"
+  },
+  {
+    "data": {},
+    "id": "npc:romily-weaklax",
+    "kind": "npc",
+    "name": "Romily Weaklax",
+    "slug": "romily-weaklax"
+  },
+  {
+    "data": {},
+    "id": "npc:rommik",
+    "kind": "npc",
+    "name": "Rommik",
+    "slug": "rommik"
+  },
+  {
+    "data": {},
+    "id": "npc:roy",
+    "kind": "npc",
+    "name": "Roy",
+    "slug": "roy"
+  },
+  {
+    "data": {},
+    "id": "npc:rufus",
+    "kind": "npc",
+    "name": "Rufus",
+    "slug": "rufus"
+  },
+  {
+    "data": {},
+    "id": "npc:runa",
+    "kind": "npc",
+    "name": "Runa",
+    "slug": "runa"
+  },
+  {
+    "data": {},
+    "id": "npc:salius",
+    "kind": "npc",
+    "name": "Salius",
+    "slug": "salius"
+  },
+  {
+    "data": {},
+    "id": "npc:sam-barmaid",
+    "kind": "npc",
+    "name": "Sam (barmaid)",
+    "slug": "sam-barmaid"
+  },
+  {
+    "data": {
+      "multi_location": true
+    },
+    "id": "npc:sam-merchant",
+    "kind": "npc",
+    "name": "Sam (merchant)",
+    "slug": "sam-merchant"
+  },
+  {
+    "data": {},
+    "id": "npc:samir",
+    "kind": "npc",
+    "name": "Samir",
+    "slug": "samir"
+  },
+  {
+    "data": {},
+    "id": "npc:santiri",
+    "kind": "npc",
+    "name": "Santiri",
+    "slug": "santiri"
+  },
+  {
+    "data": {},
+    "id": "npc:saro",
+    "kind": "npc",
+    "name": "Saro",
+    "slug": "saro"
+  },
+  {
+    "data": {},
+    "id": "npc:sawmill-operator-auburnvale",
+    "kind": "npc",
+    "name": "Sawmill Operator (Auburnvale)",
+    "slug": "sawmill-operator-auburnvale"
+  },
+  {
+    "data": {},
+    "id": "npc:sawmill-operator-prifddinas",
+    "kind": "npc",
+    "name": "Sawmill Operator (Prifddinas)",
+    "slug": "sawmill-operator-prifddinas"
+  },
+  {
+    "data": {},
+    "id": "npc:scavvo",
+    "kind": "npc",
+    "name": "Scavvo",
+    "slug": "scavvo"
+  },
+  {
+    "data": {},
+    "id": "npc:sebamo",
+    "kind": "npc",
+    "name": "Sebamo",
+    "slug": "sebamo"
+  },
+  {
+    "data": {},
+    "id": "npc:seddu",
+    "kind": "npc",
+    "name": "Seddu",
+    "slug": "seddu"
+  },
+  {
+    "data": {},
+    "id": "npc:shantay",
+    "kind": "npc",
+    "name": "Shantay",
+    "slug": "shantay"
+  },
+  {
+    "data": {},
+    "id": "npc:shantay-guard-ruins-of-unkah",
+    "kind": "npc",
+    "name": "Shantay Guard (Ruins of Unkah)",
+    "slug": "shantay-guard-ruins-of-unkah"
+  },
+  {
+    "data": {},
+    "id": "npc:shipwright-seb",
+    "kind": "npc",
+    "name": "Shipwright Seb",
+    "slug": "shipwright-seb"
+  },
+  {
+    "data": {},
+    "id": "npc:shop-assistant-lumbridge",
+    "kind": "npc",
+    "name": "Shop assistant (Lumbridge)",
+    "slug": "shop-assistant-lumbridge"
+  },
+  {
+    "data": {},
+    "id": "npc:shop-keeper-al-kharid",
+    "kind": "npc",
+    "name": "Shop keeper (Al Kharid)",
+    "slug": "shop-keeper-al-kharid"
+  },
+  {
+    "data": {},
+    "id": "npc:shop-keeper-combat-training-camp",
+    "kind": "npc",
+    "name": "Shop keeper (Combat Training Camp)",
+    "slug": "shop-keeper-combat-training-camp"
+  },
+  {
+    "data": {},
+    "id": "npc:shop-keeper-edgeville",
+    "kind": "npc",
+    "name": "Shop keeper (Edgeville)",
+    "slug": "shop-keeper-edgeville"
+  },
+  {
+    "data": {},
+    "id": "npc:shop-keeper-falador",
+    "kind": "npc",
+    "name": "Shop keeper (Falador)",
+    "slug": "shop-keeper-falador"
+  },
+  {
+    "data": {},
+    "id": "npc:shop-keeper-fossil-island",
+    "kind": "npc",
+    "name": "Shop keeper (Fossil Island)",
+    "slug": "shop-keeper-fossil-island"
+  },
+  {
     "data": {
       "role": "shopkeeper"
     },
@@ -55892,6 +58235,34 @@
     "kind": "npc",
     "name": "Shop keeper",
     "slug": "shop-keeper-general"
+  },
+  {
+    "data": {},
+    "id": "npc:shop-keeper-lumbridge",
+    "kind": "npc",
+    "name": "Shop keeper (Lumbridge)",
+    "slug": "shop-keeper-lumbridge"
+  },
+  {
+    "data": {},
+    "id": "npc:shop-keeper-musa-point",
+    "kind": "npc",
+    "name": "Shop keeper (Musa Point)",
+    "slug": "shop-keeper-musa-point"
+  },
+  {
+    "data": {},
+    "id": "npc:shop-keeper-port-khazard",
+    "kind": "npc",
+    "name": "Shop keeper (Port Khazard)",
+    "slug": "shop-keeper-port-khazard"
+  },
+  {
+    "data": {},
+    "id": "npc:shop-keeper-rimmington",
+    "kind": "npc",
+    "name": "Shop keeper (Rimmington)",
+    "slug": "shop-keeper-rimmington"
   },
   {
     "data": {
@@ -55903,6 +58274,271 @@
     "slug": "shop-keeper-swordshop"
   },
   {
+    "data": {},
+    "id": "npc:shop-keeper-the-warrens",
+    "kind": "npc",
+    "name": "Shop keeper (The Warrens)",
+    "slug": "shop-keeper-the-warrens"
+  },
+  {
+    "data": {},
+    "id": "npc:shopkeeper-auburnvale",
+    "kind": "npc",
+    "name": "Shopkeeper (Auburnvale)",
+    "slug": "shopkeeper-auburnvale"
+  },
+  {
+    "data": {},
+    "id": "npc:shopkeeper-cam-torum",
+    "kind": "npc",
+    "name": "Shopkeeper (Cam Torum)",
+    "slug": "shopkeeper-cam-torum"
+  },
+  {
+    "data": {},
+    "id": "npc:shopkeeper-civitas-illa-fortis",
+    "kind": "npc",
+    "name": "Shopkeeper (Civitas illa Fortis)",
+    "slug": "shopkeeper-civitas-illa-fortis"
+  },
+  {
+    "data": {},
+    "id": "npc:shopkeeper-kastori",
+    "kind": "npc",
+    "name": "Shopkeeper (Kastori)",
+    "slug": "shopkeeper-kastori"
+  },
+  {
+    "data": {},
+    "id": "npc:shopkeeper-outer-fortis",
+    "kind": "npc",
+    "name": "Shopkeeper (Outer Fortis)",
+    "slug": "shopkeeper-outer-fortis"
+  },
+  {
+    "data": {},
+    "id": "npc:shopkeeper-port-roberts",
+    "kind": "npc",
+    "name": "Shopkeeper (Port Roberts)",
+    "slug": "shopkeeper-port-roberts"
+  },
+  {
+    "data": {},
+    "id": "npc:shopkeeper-quetzacalli-gorge",
+    "kind": "npc",
+    "name": "Shopkeeper (Quetzacalli Gorge)",
+    "slug": "shopkeeper-quetzacalli-gorge"
+  },
+  {
+    "data": {},
+    "id": "npc:shopkeeper-salvager-overlook",
+    "kind": "npc",
+    "name": "Shopkeeper (Salvager Overlook)",
+    "slug": "shopkeeper-salvager-overlook"
+  },
+  {
+    "data": {},
+    "id": "npc:shopkeeper-sunset-coast",
+    "kind": "npc",
+    "name": "Shopkeeper (Sunset Coast)",
+    "slug": "shopkeeper-sunset-coast"
+  },
+  {
+    "data": {},
+    "id": "npc:shopkeeper-tal-teklan",
+    "kind": "npc",
+    "name": "Shopkeeper (Tal Teklan)",
+    "slug": "shopkeeper-tal-teklan"
+  },
+  {
+    "data": {},
+    "id": "npc:sian",
+    "kind": "npc",
+    "name": "Sian",
+    "slug": "sian"
+  },
+  {
+    "data": {},
+    "id": "npc:siegfried-erkle",
+    "kind": "npc",
+    "name": "Siegfried Erkle",
+    "slug": "siegfried-erkle"
+  },
+  {
+    "data": {},
+    "id": "npc:silk-merchant-civitas-illa-fortis",
+    "kind": "npc",
+    "name": "Silk Merchant (Civitas illa Fortis)",
+    "slug": "silk-merchant-civitas-illa-fortis"
+  },
+  {
+    "data": {},
+    "id": "npc:silver-merchant",
+    "kind": "npc",
+    "name": "Silver merchant",
+    "slug": "silver-merchant"
+  },
+  {
+    "data": {},
+    "id": "npc:simon",
+    "kind": "npc",
+    "name": "Simon",
+    "slug": "simon"
+  },
+  {
+    "data": {
+      "multi_location": true
+    },
+    "id": "npc:sir-tiffy-cashien",
+    "kind": "npc",
+    "name": "Sir Tiffy Cashien",
+    "slug": "sir-tiffy-cashien"
+  },
+  {
+    "data": {
+      "multi_location": true
+    },
+    "id": "npc:sir-vyvin",
+    "kind": "npc",
+    "name": "Sir Vyvin",
+    "slug": "sir-vyvin"
+  },
+  {
+    "data": {},
+    "id": "npc:skulgrimen",
+    "kind": "npc",
+    "name": "Skulgrimen",
+    "slug": "skulgrimen"
+  },
+  {
+    "data": {},
+    "id": "npc:skuli-myrka",
+    "kind": "npc",
+    "name": "Skuli Myrka",
+    "slug": "skuli-myrka"
+  },
+  {
+    "data": {},
+    "id": "npc:smith",
+    "kind": "npc",
+    "name": "Smith",
+    "slug": "smith"
+  },
+  {
+    "data": {},
+    "id": "npc:solihib",
+    "kind": "npc",
+    "name": "Solihib",
+    "slug": "solihib"
+  },
+  {
+    "data": {},
+    "id": "npc:spice-merchant",
+    "kind": "npc",
+    "name": "Spice Merchant",
+    "slug": "spice-merchant"
+  },
+  {
+    "data": {},
+    "id": "npc:spice-seller",
+    "kind": "npc",
+    "name": "Spice seller",
+    "slug": "spice-seller"
+  },
+  {
+    "data": {},
+    "id": "npc:spike",
+    "kind": "npc",
+    "name": "Spike",
+    "slug": "spike"
+  },
+  {
+    "data": {},
+    "id": "npc:spria",
+    "kind": "npc",
+    "name": "Spria",
+    "slug": "spria"
+  },
+  {
+    "data": {},
+    "id": "npc:squawking-steve-beanie",
+    "kind": "npc",
+    "name": "'Squawking' Steve Beanie",
+    "slug": "squawking-steve-beanie"
+  },
+  {
+    "data": {},
+    "id": "npc:squire-void-knights-general-store",
+    "kind": "npc",
+    "name": "Squire (Void Knights general store)",
+    "slug": "squire-void-knights-general-store"
+  },
+  {
+    "data": {},
+    "id": "npc:squire-void-knights-magic-shop",
+    "kind": "npc",
+    "name": "Squire (Void Knights magic shop)",
+    "slug": "squire-void-knights-magic-shop"
+  },
+  {
+    "data": {},
+    "id": "npc:squire-void-knights-ranged-shop",
+    "kind": "npc",
+    "name": "Squire (Void Knights ranged shop)",
+    "slug": "squire-void-knights-ranged-shop"
+  },
+  {
+    "data": {
+      "multi_location": true
+    },
+    "id": "npc:steve",
+    "kind": "npc",
+    "name": "Steve",
+    "slug": "steve"
+  },
+  {
+    "data": {},
+    "id": "npc:stonemason",
+    "kind": "npc",
+    "name": "Stonemason",
+    "slug": "stonemason"
+  },
+  {
+    "data": {},
+    "id": "npc:sulisal",
+    "kind": "npc",
+    "name": "Sulisal",
+    "slug": "sulisal"
+  },
+  {
+    "data": {},
+    "id": "npc:sune",
+    "kind": "npc",
+    "name": "Sune",
+    "slug": "sune"
+  },
+  {
+    "data": {},
+    "id": "npc:supervisor-lalo",
+    "kind": "npc",
+    "name": "Supervisor Lalo",
+    "slug": "supervisor-lalo"
+  },
+  {
+    "data": {},
+    "id": "npc:tamayu",
+    "kind": "npc",
+    "name": "Tamayu",
+    "slug": "tamayu"
+  },
+  {
+    "data": {},
+    "id": "npc:tati",
+    "kind": "npc",
+    "name": "Tati",
+    "slug": "tati"
+  },
+  {
     "data": {
       "role": "shopkeeper"
     },
@@ -55910,6 +58546,13 @@
     "kind": "npc",
     "name": "Tea Seller",
     "slug": "tea-seller"
+  },
+  {
+    "data": {},
+    "id": "npc:teicuh",
+    "kind": "npc",
+    "name": "Teicuh",
+    "slug": "teicuh"
   },
   {
     "data": {
@@ -55921,6 +58564,341 @@
     "slug": "thessalia"
   },
   {
+    "data": {},
+    "id": "npc:thirus",
+    "kind": "npc",
+    "name": "Thirus",
+    "slug": "thirus"
+  },
+  {
+    "data": {},
+    "id": "npc:thora-the-barkeep",
+    "kind": "npc",
+    "name": "Thora the Barkeep",
+    "slug": "thora-the-barkeep"
+  },
+  {
+    "data": {},
+    "id": "npc:thurid",
+    "kind": "npc",
+    "name": "Thurid",
+    "slug": "thurid"
+  },
+  {
+    "data": {},
+    "id": "npc:thyria",
+    "kind": "npc",
+    "name": "Thyria",
+    "slug": "thyria"
+  },
+  {
+    "data": {
+      "multi_location": true
+    },
+    "id": "npc:tiadeche",
+    "kind": "npc",
+    "name": "Tiadeche",
+    "slug": "tiadeche"
+  },
+  {
+    "data": {},
+    "id": "npc:ticket-merchant",
+    "kind": "npc",
+    "name": "Ticket Merchant",
+    "slug": "ticket-merchant"
+  },
+  {
+    "data": {},
+    "id": "npc:tina",
+    "kind": "npc",
+    "name": "Tina",
+    "slug": "tina"
+  },
+  {
+    "data": {},
+    "id": "npc:tizoro",
+    "kind": "npc",
+    "name": "Tizoro",
+    "slug": "tizoro"
+  },
+  {
+    "data": {},
+    "id": "npc:toci",
+    "kind": "npc",
+    "name": "Toci",
+    "slug": "toci"
+  },
+  {
+    "data": {},
+    "id": "npc:tool-leprechaun-larry",
+    "kind": "npc",
+    "name": "Tool Leprechaun (Larry)",
+    "slug": "tool-leprechaun-larry"
+  },
+  {
+    "data": {},
+    "id": "npc:toothy",
+    "kind": "npc",
+    "name": "Toothy",
+    "slug": "toothy"
+  },
+  {
+    "data": {},
+    "id": "npc:tostig",
+    "kind": "npc",
+    "name": "Tostig",
+    "slug": "tostig"
+  },
+  {
+    "data": {},
+    "id": "npc:trader-crewmember",
+    "kind": "npc",
+    "name": "Trader Crewmember",
+    "slug": "trader-crewmember"
+  },
+  {
+    "data": {},
+    "id": "npc:trader-stan",
+    "kind": "npc",
+    "name": "Trader Stan",
+    "slug": "trader-stan"
+  },
+  {
+    "data": {},
+    "id": "npc:trader-sven",
+    "kind": "npc",
+    "name": "Trader Sven",
+    "slug": "trader-sven"
+  },
+  {
+    "data": {
+      "multi_location": true
+    },
+    "id": "npc:tramp-pillory",
+    "kind": "npc",
+    "name": "Tramp (pillory)",
+    "slug": "tramp-pillory"
+  },
+  {
+    "data": {},
+    "id": "npc:tribal-weapon-salesman",
+    "kind": "npc",
+    "name": "Tribal Weapon Salesman",
+    "slug": "tribal-weapon-salesman"
+  },
+  {
+    "data": {},
+    "id": "npc:turael",
+    "kind": "npc",
+    "name": "Turael",
+    "slug": "turael"
+  },
+  {
+    "data": {},
+    "id": "npc:tutab",
+    "kind": "npc",
+    "name": "Tutab",
+    "slug": "tutab"
+  },
+  {
+    "data": {},
+    "id": "npc:tynan",
+    "kind": "npc",
+    "name": "Tynan",
+    "slug": "tynan"
+  },
+  {
+    "data": {},
+    "id": "npc:tzhaar-hur-lek",
+    "kind": "npc",
+    "name": "TzHaar-Hur-Lek",
+    "slug": "tzhaar-hur-lek"
+  },
+  {
+    "data": {},
+    "id": "npc:tzhaar-hur-rin",
+    "kind": "npc",
+    "name": "TzHaar-Hur-Rin",
+    "slug": "tzhaar-hur-rin"
+  },
+  {
+    "data": {},
+    "id": "npc:tzhaar-hur-tel",
+    "kind": "npc",
+    "name": "TzHaar-Hur-Tel",
+    "slug": "tzhaar-hur-tel"
+  },
+  {
+    "data": {},
+    "id": "npc:tzhaar-hur-zal",
+    "kind": "npc",
+    "name": "TzHaar-Hur-Zal",
+    "slug": "tzhaar-hur-zal"
+  },
+  {
+    "data": {},
+    "id": "npc:tzhaar-mej-roh",
+    "kind": "npc",
+    "name": "TzHaar-Mej-Roh",
+    "slug": "tzhaar-mej-roh"
+  },
+  {
+    "data": {},
+    "id": "npc:uglug-nar",
+    "kind": "npc",
+    "name": "Uglug Nar",
+    "slug": "uglug-nar"
+  },
+  {
+    "data": {},
+    "id": "npc:urbi",
+    "kind": "npc",
+    "name": "Urbi",
+    "slug": "urbi"
+  },
+  {
+    "data": {},
+    "id": "npc:valaine",
+    "kind": "npc",
+    "name": "Valaine",
+    "slug": "valaine"
+  },
+  {
+    "data": {},
+    "id": "npc:vanessa",
+    "kind": "npc",
+    "name": "Vanessa",
+    "slug": "vanessa"
+  },
+  {
+    "data": {},
+    "id": "npc:vanligga-gastfrihet",
+    "kind": "npc",
+    "name": "Vanligga Gastfrihet",
+    "slug": "vanligga-gastfrihet"
+  },
+  {
+    "data": {},
+    "id": "npc:vannah",
+    "kind": "npc",
+    "name": "Vannah",
+    "slug": "vannah"
+  },
+  {
+    "data": {
+      "multi_location": true
+    },
+    "id": "npc:vannaka",
+    "kind": "npc",
+    "name": "Vannaka",
+    "slug": "vannaka"
+  },
+  {
+    "data": {},
+    "id": "npc:varrian-sobak",
+    "kind": "npc",
+    "name": "Varrian Sobak",
+    "slug": "varrian-sobak"
+  },
+  {
+    "data": {},
+    "id": "npc:vermundi",
+    "kind": "npc",
+    "name": "Vermundi",
+    "slug": "vermundi"
+  },
+  {
+    "data": {},
+    "id": "npc:vigr",
+    "kind": "npc",
+    "name": "Vigr",
+    "slug": "vigr"
+  },
+  {
+    "data": {},
+    "id": "npc:void-knight",
+    "kind": "npc",
+    "name": "Void Knight",
+    "slug": "void-knight"
+  },
+  {
+    "data": {},
+    "id": "npc:wayne",
+    "kind": "npc",
+    "name": "Wayne",
+    "slug": "wayne"
+  },
+  {
+    "data": {},
+    "id": "npc:william",
+    "kind": "npc",
+    "name": "William",
+    "slug": "william"
+  },
+  {
+    "data": {},
+    "id": "npc:wistan",
+    "kind": "npc",
+    "name": "Wistan",
+    "slug": "wistan"
+  },
+  {
+    "data": {},
+    "id": "npc:wizard-akutha",
+    "kind": "npc",
+    "name": "Wizard Akutha",
+    "slug": "wizard-akutha"
+  },
+  {
+    "data": {},
+    "id": "npc:wizard-sinina",
+    "kind": "npc",
+    "name": "Wizard Sinina",
+    "slug": "wizard-sinina"
+  },
+  {
+    "data": {},
+    "id": "npc:worm-tongue",
+    "kind": "npc",
+    "name": "Worm Tongue",
+    "slug": "worm-tongue"
+  },
+  {
+    "data": {},
+    "id": "npc:wydin",
+    "kind": "npc",
+    "name": "Wydin",
+    "slug": "wydin"
+  },
+  {
+    "data": {},
+    "id": "npc:xochitl",
+    "kind": "npc",
+    "name": "Xochitl",
+    "slug": "xochitl"
+  },
+  {
+    "data": {},
+    "id": "npc:yarnio",
+    "kind": "npc",
+    "name": "Yarnio",
+    "slug": "yarnio"
+  },
+  {
+    "data": {},
+    "id": "npc:yarsul",
+    "kind": "npc",
+    "name": "Yarsul",
+    "slug": "yarsul"
+  },
+  {
+    "data": {},
+    "id": "npc:yrsa",
+    "kind": "npc",
+    "name": "Yrsa",
+    "slug": "yrsa"
+  },
+  {
     "data": {
       "role": "shopkeeper"
     },
@@ -55928,6 +58906,27 @@
     "kind": "npc",
     "name": "Zaff",
     "slug": "zaff"
+  },
+  {
+    "data": {},
+    "id": "npc:zeke",
+    "kind": "npc",
+    "name": "Zeke",
+    "slug": "zeke"
+  },
+  {
+    "data": {},
+    "id": "npc:zembo",
+    "kind": "npc",
+    "name": "Zembo",
+    "slug": "zembo"
+  },
+  {
+    "data": {},
+    "id": "npc:zenesha",
+    "kind": "npc",
+    "name": "Zenesha",
+    "slug": "zenesha"
   },
   {
     "data": {

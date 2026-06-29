@@ -1,0 +1,3078 @@
+{
+ "_provenance": {
+  "domain": "wiki_npc_infoboxes",
+  "source": "OSRS Wiki revisions API",
+  "license": "CC BY-NC-SA 3.0",
+  "param": "Infobox NPC|location"
+ },
+ "infoboxes": {
+  "'Squawking' Steve Beanie": {
+   "locations": [
+    "[[The Pandemonium]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/'Squawking'_Steve_Beanie"
+  },
+  "Achtryn": {
+   "locations": [
+    "[[Canifis]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Achtryn"
+  },
+  "Aemad": {
+   "locations": [
+    "[[East Ardougne]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Aemad"
+  },
+  "Agelus": {
+   "locations": [
+    "[[Ortus Farm]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Agelus"
+  },
+  "Agmundi": {
+   "locations": [
+    "[[Keldagrim]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Agmundi"
+  },
+  "Ak-Haranu": {
+   "locations": [
+    "[[Port Phasmatys]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Ak-Haranu"
+  },
+  "Aleck": {
+   "locations": [
+    "[[Yanille]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Aleck"
+  },
+  "Alfonse the waiter": {
+   "locations": [
+    "[[Brimhaven]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Alfonse_the_waiter"
+  },
+  "Ali Morrisane": {
+   "locations": [
+    "[[Al Kharid]]",
+    "[[Ratcatchers Mansion]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Ali_Morrisane"
+  },
+  "Ali the Barman": {
+   "locations": [
+    "[[Pollnivneach]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Ali_the_Barman"
+  },
+  "Alice": {
+   "locations": [
+    "[[Alice's Farm|Farm]] west of [[Port Phasmatys]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Alice"
+  },
+  "Allanna": {
+   "locations": [
+    "[[Farming Guild]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Allanna"
+  },
+  "Alry the Angler": {
+   "locations": [
+    "[[Lake Molch]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Alry_the_Angler"
+  },
+  "Amelia (Farming Guild)": {
+   "locations": [
+    "[[Farming Guild]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Amelia_(Farming_Guild)"
+  },
+  "Ameyalli": {
+   "locations": [
+    "[[Kastori]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Ameyalli"
+  },
+  "Amos": {
+   "locations": [
+    "[[Port Roberts]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Amos"
+  },
+  "Amy": {
+   "locations": [
+    "[[Falador]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Amy"
+  },
+  "Aneirin": {
+   "locations": [
+    "[[Prifddinas]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Aneirin"
+  },
+  "Anton": {
+   "locations": [
+    "[[Warriors' Guild]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Anton"
+  },
+  "Antonius": {
+   "locations": [
+    "[[Moonrise Brewery and Winery]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Antonius"
+  },
+  "Apprentice Felix": {
+   "locations": [
+    "[[Wizards' Tower]]",
+    "[[Temple of the Eye (location)|Temple of the Eye]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Apprentice_Felix"
+  },
+  "Arcuani": {
+   "locations": [
+    "[[Tal Teklan]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Arcuani"
+  },
+  "Arhein": {
+   "locations": [
+    "[[Catherby]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Arhein"
+  },
+  "Armour salesman": {
+   "locations": [
+    "[[Ranging Guild]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Armour_salesman"
+  },
+  "Arnold Lydspor": {
+   "locations": [
+    "[[Piscatoris Fishing Colony]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Arnold_Lydspor"
+  },
+  "Artima": {
+   "locations": [
+    "[[Civitas illa Fortis]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Artima"
+  },
+  "Artimeus": {
+   "locations": [
+    "[[Nardah]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Artimeus"
+  },
+  "Aurel": {
+   "locations": [
+    "[[Burgh de Rott]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Aurel"
+  },
+  "Ava": {
+   "locations": [
+    "[[Draynor Manor]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Ava"
+  },
+  "Aya": {
+   "locations": [
+    "[[Burthorpe]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Aya"
+  },
+  "Baba Yaga": {
+   "locations": [
+    "[[Lunar Isle]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Baba_Yaga"
+  },
+  "Baker": {
+   "locations": [
+    "[[Ardougne Market]]",
+    "[[Ardougne Market]]",
+    "[[Great Kourend]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Baker"
+  },
+  "Baker (Civitas illa Fortis)": {
+   "locations": [
+    "[[Bazaar]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Baker_(Civitas_illa_Fortis)"
+  },
+  "Bandit shopkeeper": {
+   "locations": [
+    "[[Bandit Camp (Kharidian Desert)|Khadarian Bandit Camp]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Bandit_shopkeeper"
+  },
+  "Barker": {
+   "locations": [
+    "[[Canifis]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Barker"
+  },
+  "Barman (Blurberry Bar)": {
+   "locations": [
+    "{{*}} The {{FloorNumber|uk=1}} of the [[Grand Tree]]. <br/> {{*}} East of the [[Gnomeball Field]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Barman_(Blurberry_Bar)"
+  },
+  "Barman (King's Axe Inn)": {
+   "locations": [
+    "West [[Keldagrim]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Barman_(King's_Axe_Inn)"
+  },
+  "Barman (Ratpit bar)": {
+   "locations": [
+    "[[Rat Pits]] in <br/> {{*}} [[Port Sarim]] <br/> {{*}} [[Varrock]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Barman_(Ratpit_bar)"
+  },
+  "Bartender (Atlazora's Rest)": {
+   "locations": [
+    "[[Outer Fortis]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Bartender_(Atlazora's_Rest)"
+  },
+  "Bartender (Auburn Pub)": {
+   "locations": [
+    "[[Auburn Pub]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Bartender_(Auburn_Pub)"
+  },
+  "Bartender (Dead Man's Chest)": {
+   "locations": [
+    "[[Brimhaven]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Bartender_(Dead_Man's_Chest)"
+  },
+  "Bartender (Dragon Inn)": {
+   "locations": [
+    "[[Yanille]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Bartender_(Dragon_Inn)"
+  },
+  "Bartender (Flying Horse Inn)": {
+   "locations": [
+    "[[East Ardougne]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Bartender_(Flying_Horse_Inn)"
+  },
+  "Bartender (Forester's Arms)": {
+   "locations": [
+    "[[Seers' Village]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Bartender_(Forester's_Arms)"
+  },
+  "Bartender (Nemus Retreat)": {
+   "locations": [
+    "[[Nemus Retreat]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Bartender_(Nemus_Retreat)"
+  },
+  "Bartender (Rusty Anchor Inn)": {
+   "locations": [
+    "[[Port Sarim]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Bartender_(Rusty_Anchor_Inn)"
+  },
+  "Bartender (Stick Your Ore Inn)": {
+   "locations": [
+    "[[Mistrock]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Bartender_(Stick_Your_Ore_Inn)"
+  },
+  "Bartender (Sunlight's Sanctum)": {
+   "locations": [
+    "[[Aldarin]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Bartender_(Sunlight's_Sanctum)"
+  },
+  "Bartender (The Big Heist Lodge)": {
+   "locations": [
+    "[[Bandit Camp (Kharidian Desert)|Bandit Village]] in the [[Kharidian Desert]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Bartender_(The_Big_Heist_Lodge)"
+  },
+  "Bartender (The Flaming Arrow)": {
+   "locations": [
+    "[[Civitas illa Fortis]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Bartender_(The_Flaming_Arrow)"
+  },
+  "Bartender (The Lost Pickaxe)": {
+   "locations": [
+    "[[Cam Torum]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Bartender_(The_Lost_Pickaxe)"
+  },
+  "Bartender (The Rolling Tide)": {
+   "locations": [
+    "[[Port Roberts]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Bartender_(The_Rolling_Tide)"
+  },
+  "Bartender (The Sheared Ram)": {
+   "locations": [
+    "[[Lumbridge]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Bartender_(The_Sheared_Ram)"
+  },
+  "Bartender (The Windbreaker)": {
+   "locations": [
+    "[[Quetzacalli Gorge]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Bartender_(The_Windbreaker)"
+  },
+  "Bast": {
+   "locations": [
+    "[[Great Kourend]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Bast"
+  },
+  "Bedabin Nomad": {
+   "locations": [
+    "[[Bedabin Camp]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Bedabin_Nomad"
+  },
+  "Belona": {
+   "locations": [
+    "[[Mining Guild]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Belona"
+  },
+  "Betty": {
+   "locations": [
+    "[[Port Sarim]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Betty"
+  },
+  "Blacksmith": {
+   "locations": [
+    "[[Civitas illa Fortis]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Blacksmith"
+  },
+  "Blacksmith (Cam Torum)": {
+   "locations": [
+    "[[Cam Torum]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Blacksmith_(Cam_Torum)"
+  },
+  "Blair": {
+   "locations": [
+    "[[Shayzien]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Blair"
+  },
+  "Bob": {
+   "locations": [
+    "[[Lumbridge]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Bob"
+  },
+  "Bolkoy": {
+   "locations": [
+    "[[Tree Gnome Village (location)|Tree Gnome Village]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Bolkoy"
+  },
+  "Bow and Arrow salesman": {
+   "locations": [
+    "[[Ranging Guild]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Bow_and_Arrow_salesman"
+  },
+  "Branwen": {
+   "locations": [
+    "[[Prifddinas]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Branwen"
+  },
+  "Brian": {
+   "locations": [
+    "[[Port Sarim]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Brian"
+  },
+  "Brian (Rimmington)": {
+   "locations": [
+    "[[Rimmington]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Brian_(Rimmington)"
+  },
+  "Briget": {
+   "locations": [
+    "[[Shayzien]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Briget"
+  },
+  "Brikka": {
+   "locations": [
+    "[[Deepfin Point]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Brikka"
+  },
+  "Caerwyn": {
+   "locations": [
+    "[[Prifddinas]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Caerwyn"
+  },
+  "Camarst": {
+   "locations": [
+    "[[Ferox Enclave]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Camarst"
+  },
+  "Candle maker": {
+   "locations": [
+    "[[Catherby]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Candle_maker"
+  },
+  "Carl": {
+   "locations": [
+    "[[Slepe]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Carl"
+  },
+  "Cassie": {
+   "locations": [
+    "Northern [[Falador]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Cassie"
+  },
+  "Celyn": {
+   "locations": [
+    "[[Prifddinas]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Celyn"
+  },
+  "Chadwell": {
+   "locations": [
+    "[[West Ardougne]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Chadwell"
+  },
+  "Chaeldar": {
+   "locations": [
+    "[[Zanaris]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Chaeldar"
+  },
+  "Chamber guardian": {
+   "locations": [
+    "[[Mage Arena]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Chamber_guardian"
+  },
+  "Charley": {
+   "locations": [
+    "[[Mos Le'Harmless]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Charley"
+  },
+  "Charlie the cook": {
+   "locations": [
+    "[[Brimhaven]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Charlie_the_cook"
+  },
+  "Chris": {
+   "locations": [
+    "[[Emir's Arena]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Chris"
+  },
+  "Cobado": {
+   "locations": [
+    "[[Civitas illa Fortis]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Cobado"
+  },
+  "Conara": {
+   "locations": [
+    "[[Cam Torum]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Conara"
+  },
+  "Daga": {
+   "locations": [
+    "[[Marim]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Daga"
+  },
+  "Dalldav": {
+   "locations": [
+    "[[Lletya]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Dalldav"
+  },
+  "Darren": {
+   "locations": [
+    "East of the [[Wilderness Agility Course]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Darren"
+  },
+  "Daryl": {
+   "locations": [
+    "[[Shayzien]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Daryl"
+  },
+  "Davon": {
+   "locations": [
+    "[[Brimhaven]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Davon"
+  },
+  "Delf": {
+   "locations": [
+    "[[Port Roberts]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Delf"
+  },
+  "Derwen (elf)": {
+   "locations": [
+    "[[Prifddinas]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Derwen_(elf)"
+  },
+  "Despoina Callidra": {
+   "locations": [
+    "North-west [[Darkmeyer]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Despoina_Callidra"
+  },
+  "Diana": {
+   "locations": [
+    "[[Myths' Guild]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Diana"
+  },
+  "Diango": {
+   "locations": [
+    "[[Draynor Village]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Diango"
+  },
+  "Dominic Onion": {
+   "locations": [
+    "[[Nightmare Zone]], north of [[Yanille]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Dominic_Onion"
+  },
+  "Dommik": {
+   "locations": [
+    "[[Al Kharid]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Dommik"
+  },
+  "Doria": {
+   "locations": [
+    "[[Port Roberts]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Doria"
+  },
+  "Drasdan Ranor": {
+   "locations": [
+    "South [[Darkmeyer]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Drasdan_Ranor"
+  },
+  "Drogo dwarf": {
+   "locations": [
+    "[[Dwarven Mine]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Drogo_dwarf"
+  },
+  "Duradel": {
+   "locations": [
+    "[[Shilo Village (location)|Shilo Village]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Duradel"
+  },
+  "Durrik": {
+   "locations": [
+    "[[Deepfin Mine]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Durrik"
+  },
+  "Dusuri": {
+   "locations": [
+    "[[Mining Guild]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Dusuri"
+  },
+  "Dwarf (Dwarven shopping store)": {
+   "locations": [
+    "[[Dwarven Mine]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Dwarf_(Dwarven_shopping_store)"
+  },
+  "Edmond (merchant)": {
+   "locations": [
+    "[[Bandit camp mine]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Edmond_(merchant)"
+  },
+  "Edward": {
+   "locations": [
+    "Around the [[Rogues' Castle]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Edward"
+  },
+  "Efa": {
+   "locations": [
+    "[[Prifddinas]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Efa"
+  },
+  "Eira": {
+   "locations": [
+    "[[Prifddinas]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Eira"
+  },
+  "Elder Blunn": {
+   "locations": [
+    "[[The Summer Shore]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Elder_Blunn"
+  },
+  "Elder Coco": {
+   "locations": [
+    "[[The Summer Shore]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Elder_Coco"
+  },
+  "Elder Krill": {
+   "locations": [
+    "[[The Summer Shore]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Elder_Krill"
+  },
+  "Elder Reggle": {
+   "locations": [
+    "[[Coral Nurseries]] entrance"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Elder_Reggle"
+  },
+  "Elder Strom": {
+   "locations": [
+    "[[The Summer Shore]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Elder_Strom"
+  },
+  "Eleanor": {
+   "locations": [
+    "[[Port Roberts]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Eleanor"
+  },
+  "Elgan": {
+   "locations": [
+    "[[Prifddinas]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Elgan"
+  },
+  "Eliza": {
+   "locations": [
+    "[[Varrock Square]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Eliza"
+  },
+  "Embalmer": {
+   "locations": [
+    "[[Sophanem]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Embalmer"
+  },
+  "Emblem Trader": {
+   "locations": [
+    "[[Daimon's Crater]]",
+    "[[Grand Exchange]]",
+    "[[Edgeville]]",
+    "[[Revenant Caves]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Emblem_Trader"
+  },
+  "Emelio": {
+   "locations": [
+    "[[Outer Fortis]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Emelio"
+  },
+  "Emily": {
+   "locations": [
+    "[[Falador]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Emily"
+  },
+  "Erdan": {
+   "locations": [
+    "[[Myths' Guild]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Erdan"
+  },
+  "Eudav": {
+   "locations": [
+    "[[Lletya]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Eudav"
+  },
+  "Ezekial Lovecraft": {
+   "locations": [
+    "[[Witchaven]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Ezekial_Lovecraft"
+  },
+  "Fadli": {
+   "locations": [
+    "[[Emir's Arena]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Fadli"
+  },
+  "Fairy Fixit": {
+   "locations": [
+    "[[Zanaris]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Fairy_Fixit"
+  },
+  "Fairy shop keeper": {
+   "locations": [
+    "[[Zanaris]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Fairy_shop_keeper"
+  },
+  "Farmer Gricoller": {
+   "locations": [
+    "[[Tithe Farm]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Farmer_Gricoller"
+  },
+  "Fat Tony": {
+   "locations": [
+    "[[Bandit Camp (Wilderness)]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Fat_Tony"
+  },
+  "Faustus": {
+   "locations": [
+    "[[Aldarin]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Faustus"
+  },
+  "Fernahei": {
+   "locations": [
+    "[[Shilo Village (location)|Shilo Village]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Fernahei"
+  },
+  "Fidelio": {
+   "locations": [
+    "[[Canifis]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Fidelio"
+  },
+  "Filamina": {
+   "locations": [
+    "[[Arceuus]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Filamina"
+  },
+  "Finn": {
+   "locations": [
+    "[[Miscellania and Etceteria Dungeon]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Finn"
+  },
+  "Fionella": {
+   "locations": [
+    "[[Legends' Guild]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Fionella"
+  },
+  "Fish monger": {
+   "locations": [
+    "[[Rellekka]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Fish_monger"
+  },
+  "Fish monger (The Warrens)": {
+   "locations": [
+    "[[The Warrens]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Fish_monger_(The_Warrens)"
+  },
+  "Fishmonger": {
+   "locations": [
+    "[[Miscellania]]",
+    "[[Etceteria]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Fishmonger"
+  },
+  "Floria": {
+   "locations": [
+    "[[Civitas illa Fortis]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Floria"
+  },
+  "Flosi Dalksson": {
+   "locations": [
+    "[[Jatizso]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Flosi_Dalksson"
+  },
+  "Flynn": {
+   "locations": [
+    "[[Falador]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Flynn"
+  },
+  "Fortunato": {
+   "locations": [
+    "[[Draynor Village]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Fortunato"
+  },
+  "Frankie": {
+   "locations": [
+    "[[Port Piscarilius]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Frankie"
+  },
+  "Frenita": {
+   "locations": [
+    "[[Yanille]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Frenita"
+  },
+  "Friendly Forester": {
+   "locations": [
+    "[[Draynor Village]], [[Seers' Village]], [[Prifddinas]], [[Nemus Retreat]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Friendly_Forester"
+  },
+  "Frincos": {
+   "locations": [
+    "[[Entrana]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Frincos"
+  },
+  "Fuggy": {
+   "locations": [
+    "[[Lovakengj]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Fuggy"
+  },
+  "Fur Merchant": {
+   "locations": [
+    "[[Civitas illa Fortis]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Fur_Merchant"
+  },
+  "Fur trader (East Ardougne)": {
+   "locations": [
+    "[[East Ardougne]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Fur_trader_(East_Ardougne)"
+  },
+  "Fur trader (Rellekka)": {
+   "locations": [
+    "[[Rellekka]] marketplace"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Fur_trader_(Rellekka)"
+  },
+  "Gabooty": {
+   "locations": [
+    "[[Tai Bwo Wannai]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Gabooty"
+  },
+  "Gaius": {
+   "locations": [
+    "[[Taverley]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Gaius"
+  },
+  "Garden supplier": {
+   "locations": [
+    "[[Falador Park]]",
+    "[[Farming Guild]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Garden_supplier"
+  },
+  "Gem Merchant (Civitas illa Fortis)": {
+   "locations": [
+    "[[Civitas illa Fortis]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Gem_Merchant_(Civitas_illa_Fortis)"
+  },
+  "Gem merchant": {
+   "locations": [
+    "[[East Ardougne]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Gem_merchant"
+  },
+  "Gem merchant (Kourend Castle)": {
+   "locations": [
+    "[[Kourend Castle]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Gem_merchant_(Kourend_Castle)"
+  },
+  "Gem trader": {
+   "locations": [
+    "[[Al Kharid]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Gem_trader"
+  },
+  "Gerrant": {
+   "locations": [
+    "[[Port Sarim]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Gerrant"
+  },
+  "Gethin": {
+   "locations": [
+    "[[Lletya]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Gethin"
+  },
+  "Ghost shopkeeper": {
+   "locations": [
+    "[[Port Phasmatys]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Ghost_shopkeeper"
+  },
+  "Glenda": {
+   "locations": [
+    "[[Prifddinas]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Glenda"
+  },
+  "Gnome Waiter": {
+   "locations": [
+    "[[Grand Tree]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Gnome_Waiter"
+  },
+  "Golova": {
+   "locations": [
+    "[[Hosidius]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Golova"
+  },
+  "Grace": {
+   "locations": [
+    "[[Rogues' Den]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Grace"
+  },
+  "Greengrocer": {
+   "locations": [
+    "[[Miscellania]] Market",
+    "[[Etceteria]] Market"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Greengrocer"
+  },
+  "Gregory": {
+   "locations": [
+    "[[Port Roberts]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Gregory"
+  },
+  "Grinka Krast": {
+   "locations": [
+    "East [[Darkmeyer]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Grinka_Krast"
+  },
+  "Grum": {
+   "locations": [
+    "[[Port Sarim]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Grum"
+  },
+  "Guinevere": {
+   "locations": [
+    "[[Prifddinas]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Guinevere"
+  },
+  "Gulldamar": {
+   "locations": [
+    "[[Keldagrim]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Gulldamar"
+  },
+  "Gulluck": {
+   "locations": [
+    "[[Grand Tree]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Gulluck"
+  },
+  "Gunslik": {
+   "locations": [
+    "Western [[Keldagrim]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Gunslik"
+  },
+  "Gwallter": {
+   "locations": [
+    "[[Prifddinas]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Gwallter"
+  },
+  "Gwyn": {
+   "locations": [
+    "[[Prifddinas]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Gwyn"
+  },
+  "Halla": {
+   "locations": [
+    "[[Miscellania and Etceteria Dungeon]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Halla"
+  },
+  "Hamab": {
+   "locations": [
+    "[[Marim]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Hamab"
+  },
+  "Harry": {
+   "locations": [
+    "[[Catherby]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Harry"
+  },
+  "Heckel Funch": {
+   "locations": [
+    "[[Grand Tree]], {{FloorNumber|uk=1}}"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Heckel_Funch"
+  },
+  "Helemos": {
+   "locations": [
+    "[[Heroes' Guild]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Helemos"
+  },
+  "Henderson": {
+   "locations": [
+    "[[The Pandemonium]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Henderson"
+  },
+  "Hendor": {
+   "locations": [
+    "[[Mining Guild]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Hendor"
+  },
+  "Herquin": {
+   "locations": [
+    "[[Falador]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Herquin"
+  },
+  "Hervi": {
+   "locations": [
+    "[[Keldagrim]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Hervi"
+  },
+  "Hickton": {
+   "locations": [
+    "[[Catherby]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Hickton"
+  },
+  "Hirko": {
+   "locations": [
+    "[[Keldagrim]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Hirko"
+  },
+  "Holoy": {
+   "locations": [
+    "Under [[White Wolf Mountain]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Holoy"
+  },
+  "Honest Jimmy": {
+   "locations": [
+    "[[Trouble Brewing]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Honest_Jimmy"
+  },
+  "Horace": {
+   "locations": [
+    "[[Hosidius]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Horace"
+  },
+  "Hring Hring": {
+   "locations": [
+    "[[Jatizso]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Hring_Hring"
+  },
+  "Hudo": {
+   "locations": [
+    "The Grand Tree, near Aluft Gianne and the bank."
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Hudo"
+  },
+  "Huito": {
+   "locations": [
+    "[[Cam Torum]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Huito"
+  },
+  "Huntmaster Gilman (Novice)": {
+   "locations": [
+    "[[Hunter Guild]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Huntmaster_Gilman_(Novice)"
+  },
+  "Hura": {
+   "locations": [
+    "[[Dwarven Mine]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Hura"
+  },
+  "Ian": {
+   "locations": [
+    "Near the [[Forgotten Cemetery]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Ian"
+  },
+  "Ichta": {
+   "locations": [
+    "[[Mistrock]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Ichta"
+  },
+  "Ifaba": {
+   "locations": [
+    "[[Ape Atoll]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Ifaba"
+  },
+  "Imia": {
+   "locations": [
+    "[[Hunter Guild]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Imia"
+  },
+  "Irksol": {
+   "locations": [
+    "[[Zanaris Marketplace]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Irksol"
+  },
+  "Iron Bill": {
+   "locations": [
+    "[[Port Roberts]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Iron_Bill"
+  },
+  "Ishmael": {
+   "locations": [
+    "[[Ruins of Unkah]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Ishmael"
+  },
+  "Ivan Strom": {
+   "locations": [
+    "[[Myreque Hideout]], first in [[Canifis]], later in [[Meiyerditch]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Ivan_Strom"
+  },
+  "Iwan": {
+   "locations": [
+    "[[Prifddinas]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Iwan"
+  },
+  "Jack": {
+   "locations": [
+    "[[Myths' Guild]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Jack"
+  },
+  "Jamila": {
+   "locations": [
+    "[[Sophanem]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Jamila"
+  },
+  "Jatix": {
+   "locations": [
+    "[[Taverley]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Jatix"
+  },
+  "Jennifer (Shayzien)": {
+   "locations": [
+    "[[Shayzien]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Jennifer_(Shayzien)"
+  },
+  "Jiminua": {
+   "locations": [
+    "[[Tai Bwo Wannai]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Jiminua"
+  },
+  "Joe": {
+   "locations": [
+    "[[Mos Le'Harmless]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Joe"
+  },
+  "Jofridr Mordstatter": {
+   "locations": [
+    "[[Neitiznot]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Jofridr_Mordstatter"
+  },
+  "Jorzik": {
+   "locations": [
+    "[[Keldagrim]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Jorzik"
+  },
+  "Jossik": {
+   "locations": [
+    "[[Lighthouse]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Jossik"
+  },
+  "Jukat": {
+   "locations": [
+    "[[Zanaris]] marketplace"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Jukat"
+  },
+  "Justine": {
+   "locations": [
+    "[[Ferox Enclave]]: [[Last Man Standing]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Justine"
+  },
+  "Kaleb Paramaya": {
+   "locations": [
+    "[[Shilo Village (location)|Shilo Village]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Kaleb_Paramaya"
+  },
+  "Kaylee": {
+   "locations": [
+    "[[Falador]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Kaylee"
+  },
+  "Kazemde": {
+   "locations": [
+    "[[Nardah]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Kazemde"
+  },
+  "Keepa Kettilon": {
+   "locations": [
+    "[[Jatizso]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Keepa_Kettilon"
+  },
+  "Kenelme": {
+   "locations": [
+    "[[Port Piscarilius]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Kenelme"
+  },
+  "Khazard Barman": {
+   "locations": [
+    "South-western corner of the [[Fight Arena (location)|Fight Arena]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Khazard_Barman"
+  },
+  "King (Tal Teklan)": {
+   "locations": [
+    "[[Tal Teklan]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/King_(Tal_Teklan)"
+  },
+  "King Narnode Shareen": {
+   "locations": [
+    "[[Grand Tree]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/King_Narnode_Shareen"
+  },
+  "Kjut": {
+   "locations": [
+    "[[Keldagrim]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Kjut"
+  },
+  "Konar quo Maten": {
+   "locations": [
+    "[[Mount Karuulm]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Konar_quo_Maten"
+  },
+  "Korgan": {
+   "locations": [
+    "[[Deepfin Point]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Korgan"
+  },
+  "Kovac": {
+   "locations": [
+    "[[Giants' Plateau]]",
+    "[[Giants' Foundry]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Kovac"
+  },
+  "Krystilia": {
+   "locations": [
+    "[[Edgeville]] guardhouse"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Krystilia"
+  },
+  "Kuradal": {
+   "locations": [
+    "[[Shilo Village (location)|Shilo Village]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Kuradal"
+  },
+  "Lanthus": {
+   "locations": [
+    "[[Castle Wars]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Lanthus"
+  },
+  "Larry (merchant)": {
+   "locations": [
+    "[[Wilderness]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Larry_(merchant)"
+  },
+  "Leagues Tutor (Raging Echoes League)": {
+   "locations": [
+    "[[Lumbridge]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Leagues_Tutor_(Raging_Echoes_League)"
+  },
+  "Leenz": {
+   "locations": [
+    "[[Port Piscarilius]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Leenz"
+  },
+  "Leke quo Keran": {
+   "locations": [
+    "[[Great Kourend]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Leke_quo_Keran"
+  },
+  "Lenyig Karna": {
+   "locations": [
+    "North [[Darkmeyer]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Lenyig_Karna"
+  },
+  "Leon": {
+   "locations": [
+    "[[Aleck's Hunter Emporium.]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Leon"
+  },
+  "Lidio": {
+   "locations": [
+    "On the {{FloorNumber|uk=0}} of the [[Warriors' Guild]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Lidio"
+  },
+  "Lilly": {
+   "locations": [
+    "Ground floor of the [[Warriors' Guild]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Lilly"
+  },
+  "Lliann": {
+   "locations": [
+    "[[Prifddinas]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Lliann"
+  },
+  "Llio": {
+   "locations": [
+    "[[Prifddinas]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Llio"
+  },
+  "Logava": {
+   "locations": [
+    "[[Hosidius]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Logava"
+  },
+  "Louie Legs": {
+   "locations": [
+    "[[Al Kharid]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Louie_Legs"
+  },
+  "Lucy": {
+   "locations": [
+    "North-east [[Falador]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Lucy"
+  },
+  "Lunami": {
+   "locations": [
+    "[[Auburnvale]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Lunami"
+  },
+  "Lundail": {
+   "locations": [
+    "[[Mage Arena bank]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Lundail"
+  },
+  "Lurgon": {
+   "locations": [
+    "[[Dorgesh-Kaan]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Lurgon"
+  },
+  "Mag": {
+   "locations": [
+    "[[The Summer Shore]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Mag"
+  },
+  "Mage of Zamorak": {
+   "locations": [
+    "[[South Wilderness mine]]",
+    "[[Varrock]] Chaos Altar"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Mage_of_Zamorak"
+  },
+  "Mairin": {
+   "locations": [
+    "[[Underwater]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Mairin"
+  },
+  "Mama": {
+   "locations": [
+    "[[Mos Le'Harmless]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Mama"
+  },
+  "Market seller": {
+   "locations": [
+    "[[Pollnivneach]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Market_seller"
+  },
+  "Marla (Port Roberts)": {
+   "locations": [
+    "[[Port Roberts]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Marla_(Port_Roberts)"
+  },
+  "Martin Thwait": {
+   "locations": [
+    "[[Rogues' Den]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Martin_Thwait"
+  },
+  "Mazchna": {
+   "locations": [
+    "[[Canifis]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Mazchna"
+  },
+  "Megan": {
+   "locations": [
+    "North-east [[Falador]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Megan"
+  },
+  "Melana Moonlander": {
+   "locations": [
+    "[[Lunar Isle]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Melana_Moonlander"
+  },
+  "Metla": {
+   "locations": [
+    "[[Stonecutter Outpost]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Metla"
+  },
+  "Mike": {
+   "locations": [
+    "[[Mos Le'Harmless]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Mike"
+  },
+  "Miltog": {
+   "locations": [
+    "[[Dorgesh-Kaan]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Miltog"
+  },
+  "Mubariz": {
+   "locations": [
+    "[[Emir's Arena]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Mubariz"
+  },
+  "Munty": {
+   "locations": [
+    "[[Lovakengj]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Munty"
+  },
+  "Mysterious Stranger": {
+   "locations": [
+    "[[Ver Sinhaza]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Mysterious_Stranger"
+  },
+  "Mysterious Stranger (Hallowed Sepulchre)": {
+   "locations": [
+    "[[Hallowed Sepulchre]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Mysterious_Stranger_(Hallowed_Sepulchre)"
+  },
+  "Nahta": {
+   "locations": [
+    "[[Cam Torum]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Nahta"
+  },
+  "Nardok": {
+   "locations": [
+    "[[Dorgeshuun Mines]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Nardok"
+  },
+  "Nathifa": {
+   "locations": [
+    "[[Sophanem]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Nathifa"
+  },
+  "Necto": {
+   "locations": [
+    "[[Mistrock]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Necto"
+  },
+  "Ned": {
+   "locations": [
+    "[[Draynor Village]]",
+    "[[Port Sarim]], [[Crandor]]",
+    "[[Lady Lumbridge]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Ned"
+  },
+  "Neil": {
+   "locations": [
+    "[[Bandit Camp (Wilderness)|Bandit Camp]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Neil"
+  },
+  "Nevet": {
+   "locations": [
+    "[[Varrock Square]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Nevet"
+  },
+  "Nia": {
+   "locations": [
+    "[[Prifddinas]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Nia"
+  },
+  "Nieve": {
+   "locations": [
+    "[[Tree Gnome Stronghold]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Nieve"
+  },
+  "Nigel": {
+   "locations": [
+    "[[Lumbridge]] graveyard"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Nigel"
+  },
+  "Nolar": {
+   "locations": [
+    "[[Keldagrim]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Nolar"
+  },
+  "Nomad": {
+   "locations": [
+    "[[Isle of Souls]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Nomad"
+  },
+  "Noterazzo": {
+   "locations": [
+    "[[Wilderness Bandit Camp]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Noterazzo"
+  },
+  "Nulodion": {
+   "locations": [
+    "Entrance to the [[Dwarven Mine]] on [[Ice Mountain]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Nulodion"
+  },
+  "Nurmof": {
+   "locations": [
+    "[[Dwarven Mines]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Nurmof"
+  },
+  "Obli": {
+   "locations": [
+    "[[Shilo Village (location)|Shilo Village]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Obli"
+  },
+  "Ogre merchant": {
+   "locations": [
+    "[[Gu'Tanoth]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Ogre_merchant"
+  },
+  "Ogre trader (Dal)": {
+   "locations": [
+    "[[Gu'Tanoth]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Ogre_trader_(Dal)"
+  },
+  "Olivia": {
+   "locations": [
+    "[[Draynor Village]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Olivia"
+  },
+  "Oobapohk": {
+   "locations": [
+    "[[Marim]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Oobapohk"
+  },
+  "Ordan": {
+   "locations": [
+    "[[Keldagrim]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Ordan"
+  },
+  "Oronwen": {
+   "locations": [
+    "[[Lletya]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Oronwen"
+  },
+  "Osian": {
+   "locations": [
+    "[[Prifddinas]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Osian"
+  },
+  "Osvald": {
+   "locations": [
+    "[[Miscellania and Etceteria Dungeon]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Osvald"
+  },
+  "Oswald": {
+   "locations": [
+    "[[Shayzien]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Oswald"
+  },
+  "Oziach": {
+   "locations": [
+    "North-west [[Edgeville]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Oziach"
+  },
+  "Peksa": {
+   "locations": [
+    "[[Barbarian Village]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Peksa"
+  },
+  "Pellem": {
+   "locations": [
+    "[[Hunter Guild]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Pellem"
+  },
+  "Perdie": {
+   "locations": [
+    "[[Port Roberts]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Perdie"
+  },
+  "Perdu": {
+   "locations": [
+    "[[Lumbridge]], [[Catherby]], [[Grand Exchange]], [[Falador]], [[Ferox Enclave]], [[Daimon's Crater]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Perdu"
+  },
+  "Perry": {
+   "locations": [
+    "[[Woodcutting Guild]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Perry"
+  },
+  "Petrified Pete": {
+   "locations": [
+    "[[Fossil Island]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Petrified_Pete"
+  },
+  "Picaria": {
+   "locations": [
+    "South-east of [[Sunset Coast]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Picaria"
+  },
+  "Pirate Jackie the Fruit": {
+   "locations": [
+    "[[Brimhaven Agility Arena]] entrance"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Pirate_Jackie_the_Fruit"
+  },
+  "Primula": {
+   "locations": [
+    "[[Myths' Guild]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Primula"
+  },
+  "Prospector Percy": {
+   "locations": [
+    "[[Motherlode Mine]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Prospector_Percy"
+  },
+  "Quartermaster": {
+   "locations": [
+    "[[Tyras Camp]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Quartermaster"
+  },
+  "Rachael": {
+   "locations": [
+    "[[Burthorpe Games Room]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Rachael"
+  },
+  "Raetul": {
+   "locations": [
+    "[[Sophanem]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Raetul"
+  },
+  "Ranael": {
+   "locations": [
+    "[[Al Kharid]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Ranael"
+  },
+  "Randivor": {
+   "locations": [
+    "[[Keldagrim]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Randivor"
+  },
+  "Ranulph": {
+   "locations": [
+    "[[Auburnvale]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Ranulph"
+  },
+  "Rasolo": {
+   "locations": [
+    "South of [[Baxtorian Falls]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Rasolo"
+  },
+  "Rauborn": {
+   "locations": [
+    "[[Keldagrim]] [[Rat Pits]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Rauborn"
+  },
+  "Raum Urda-Stein": {
+   "locations": [
+    "[[Jatizso]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Raum_Urda-Stein"
+  },
+  "Razmire Keelgan": {
+   "locations": [
+    "[[Mort'ton]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Razmire_Keelgan"
+  },
+  "Regath": {
+   "locations": [
+    "[[Arceuus]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Regath"
+  },
+  "Reldak": {
+   "locations": [
+    "[[Dorgesh-Kaan]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Reldak"
+  },
+  "Richard (Ardougne)": {
+   "locations": [
+    "[[Ardougne]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Richard_(Ardougne)"
+  },
+  "Richard (Hosidius)": {
+   "locations": [
+    "[[Hosidius]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Richard_(Hosidius)"
+  },
+  "Richard (merchant)": {
+   "locations": [
+    "[[Edgeville]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Richard_(merchant)"
+  },
+  "Rimae Sirsalis": {
+   "locations": [
+    "[[Lunar Isle]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Rimae_Sirsalis"
+  },
+  "Roachey": {
+   "locations": [
+    "[[Fishing Guild]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Roachey"
+  },
+  "Roavar": {
+   "locations": [
+    "[[Canifis]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Roavar"
+  },
+  "Robyn": {
+   "locations": [
+    "[[Shayzien]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Robyn"
+  },
+  "Rokuh": {
+   "locations": [
+    "[[Nardah]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Rokuh"
+  },
+  "Rometti": {
+   "locations": [
+    "[[Grand Tree]], [[Tree Gnome Stronghold]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Rometti"
+  },
+  "Romily Weaklax": {
+   "locations": [
+    "[[Cooks' Guild]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Romily_Weaklax"
+  },
+  "Rommik": {
+   "locations": [
+    "[[Rimmington]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Rommik"
+  },
+  "Roy": {
+   "locations": [
+    "[[Slepe]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Roy"
+  },
+  "Rufus": {
+   "locations": [
+    "[[Canifis]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Rufus"
+  },
+  "Runa": {
+   "locations": [
+    "[[Miscellania and Etceteria Dungeon]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Runa"
+  },
+  "Salius": {
+   "locations": [
+    "[[Salvager Overlook]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Salius"
+  },
+  "Sam (barmaid)": {
+   "locations": [
+    "[[Burthorpe Games Room]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Sam_(barmaid)"
+  },
+  "Sam (merchant)": {
+   "locations": [
+    "[[Wilderness]], east of [[Dark Warriors' Fortress]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Sam_(merchant)"
+  },
+  "Samir": {
+   "locations": [
+    "[[Port Roberts]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Samir"
+  },
+  "Santiri": {
+   "locations": [
+    "[[Keldagrim]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Santiri"
+  },
+  "Sarah": {
+   "locations": [
+    "[[South Falador Farm]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Sarah"
+  },
+  "Saro": {
+   "locations": [
+    "[[Keldagrim]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Saro"
+  },
+  "Sawmill Operator (Auburnvale)": {
+   "locations": [
+    "[[Auburnvale]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Sawmill_Operator_(Auburnvale)"
+  },
+  "Sawmill Operator (Prifddinas)": {
+   "locations": [
+    "[[Prifddinas]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Sawmill_Operator_(Prifddinas)"
+  },
+  "Sawmill operator": {
+   "locations": [
+    "[[Lumber Yard]]",
+    "[[Woodcutting Guild]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Sawmill_operator"
+  },
+  "Scavvo": {
+   "locations": [
+    "[[Champions' Guild]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Scavvo"
+  },
+  "Sebamo": {
+   "locations": [
+    "[[Auburnvale]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Sebamo"
+  },
+  "Seddu": {
+   "locations": [
+    "[[Nardah]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Seddu"
+  },
+  "Shantay": {
+   "locations": [
+    "[[Shantay Pass]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Shantay"
+  },
+  "Shantay Guard (Ruins of Unkah)": {
+   "locations": [
+    "[[Ruins of Unkah]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Shantay_Guard_(Ruins_of_Unkah)"
+  },
+  "Shipwright Seb": {
+   "locations": [
+    "[[Shipyard]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Shipwright_Seb"
+  },
+  "Shop assistant (Lumbridge)": {
+   "locations": [
+    "[[Lumbridge]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Shop_assistant_(Lumbridge)"
+  },
+  "Shop keeper (Al Kharid)": {
+   "locations": [
+    "[[Al Kharid]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Shop_keeper_(Al_Kharid)"
+  },
+  "Shop keeper (Combat Training Camp)": {
+   "locations": [
+    "[[Combat Training Camp]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Shop_keeper_(Combat_Training_Camp)"
+  },
+  "Shop keeper (Edgeville)": {
+   "locations": [
+    "[[Edgeville]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Shop_keeper_(Edgeville)"
+  },
+  "Shop keeper (Falador)": {
+   "locations": [
+    "[[Falador]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Shop_keeper_(Falador)"
+  },
+  "Shop keeper (Fossil Island)": {
+   "locations": [
+    "[[Museum Camp]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Shop_keeper_(Fossil_Island)"
+  },
+  "Shop keeper (Lumbridge)": {
+   "locations": [
+    "[[Lumbridge]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Shop_keeper_(Lumbridge)"
+  },
+  "Shop keeper (Musa Point)": {
+   "locations": [
+    "[[Musa Point]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Shop_keeper_(Musa_Point)"
+  },
+  "Shop keeper (Port Khazard)": {
+   "locations": [
+    "[[Port Khazard]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Shop_keeper_(Port_Khazard)"
+  },
+  "Shop keeper (Rimmington)": {
+   "locations": [
+    "[[Rimmington]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Shop_keeper_(Rimmington)"
+  },
+  "Shop keeper (The Warrens)": {
+   "locations": [
+    "[[The Warrens]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Shop_keeper_(The_Warrens)"
+  },
+  "Shopkeeper (Auburnvale)": {
+   "locations": [
+    "[[Auburnvale]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Shopkeeper_(Auburnvale)"
+  },
+  "Shopkeeper (Cam Torum)": {
+   "locations": [
+    "[[Cam Torum]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Shopkeeper_(Cam_Torum)"
+  },
+  "Shopkeeper (Civitas illa Fortis)": {
+   "locations": [
+    "[[Civitas illa Fortis]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Shopkeeper_(Civitas_illa_Fortis)"
+  },
+  "Shopkeeper (Kastori)": {
+   "locations": [
+    "[[Kastori]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Shopkeeper_(Kastori)"
+  },
+  "Shopkeeper (Outer Fortis)": {
+   "locations": [
+    "[[Civitas illa Fortis]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Shopkeeper_(Outer_Fortis)"
+  },
+  "Shopkeeper (Port Roberts)": {
+   "locations": [
+    "[[Port Roberts]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Shopkeeper_(Port_Roberts)"
+  },
+  "Shopkeeper (Quetzacalli Gorge)": {
+   "locations": [
+    "[[Quetzacalli Gorge]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Shopkeeper_(Quetzacalli_Gorge)"
+  },
+  "Shopkeeper (Salvager Overlook)": {
+   "locations": [
+    "[[Salvager Overlook]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Shopkeeper_(Salvager_Overlook)"
+  },
+  "Shopkeeper (Sunset Coast)": {
+   "locations": [
+    "[[Sunset Coast]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Shopkeeper_(Sunset_Coast)"
+  },
+  "Shopkeeper (Tal Teklan)": {
+   "locations": [
+    "[[Tal Teklan]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Shopkeeper_(Tal_Teklan)"
+  },
+  "Sian": {
+   "locations": [
+    "[[Prifddinas]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Sian"
+  },
+  "Siegfried Erkle": {
+   "locations": [
+    "{{FloorNumber|uk=2}} of<br/>[[Legends' Guild]]<br/>(west side)"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Siegfried_Erkle"
+  },
+  "Sigmund The Merchant": {
+   "locations": [
+    "[[Rellekka]] market"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Sigmund_The_Merchant"
+  },
+  "Silk Merchant (Civitas illa Fortis)": {
+   "locations": [
+    "[[Civitas illa Fortis]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Silk_Merchant_(Civitas_illa_Fortis)"
+  },
+  "Silver merchant": {
+   "locations": [
+    "[[East Ardougne]]",
+    "[[Ratcatchers Mansion]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Silver_merchant"
+  },
+  "Simon": {
+   "locations": [
+    "[[Chaos Temple (Wilderness)]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Simon"
+  },
+  "Sins of the Father": {
+   "locations": [],
+   "is_npc": false,
+   "source_url": "https://oldschool.runescape.wiki/w/Sins_of_the_Father"
+  },
+  "Sir Tiffy Cashien": {
+   "locations": [
+    "[[Falador Park]]",
+    "[[Varrock Palace]], [[Kourend Castle]]",
+    "Fleet"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Sir_Tiffy_Cashien"
+  },
+  "Sir Vyvin": {
+   "locations": [
+    "The [[White Knights' Castle]] in [[Falador]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Sir_Vyvin"
+  },
+  "Skulgrimen": {
+   "locations": [
+    "[[Rellekka]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Skulgrimen"
+  },
+  "Skuli Myrka": {
+   "locations": [
+    "[[Jatizso]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Skuli_Myrka"
+  },
+  "Smith": {
+   "locations": [
+    "[[Mos Le'Harmless]] docks"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Smith"
+  },
+  "Solihib": {
+   "locations": [
+    "[[Marim]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Solihib"
+  },
+  "Spice Merchant": {
+   "locations": [
+    "[[Civitas illa Fortis]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Spice_Merchant"
+  },
+  "Spice seller": {
+   "locations": [
+    "[[East Ardougne]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Spice_seller"
+  },
+  "Spike": {
+   "locations": [
+    "[[Outer Fortis]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Spike"
+  },
+  "Spria": {
+   "locations": [
+    "[[Draynor Village]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Spria"
+  },
+  "Squire (Void Knights general store)": {
+   "locations": [
+    "[[Void Knight Outpost]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Squire_(Void_Knights_general_store)"
+  },
+  "Squire (Void Knights magic shop)": {
+   "locations": [
+    "[[Void Knights' Outpost]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Squire_(Void_Knights_magic_shop)"
+  },
+  "Squire (Void Knights ranged shop)": {
+   "locations": [
+    "[[Void Knight Outpost]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Squire_(Void_Knights_ranged_shop)"
+  },
+  "Steve": {
+   "locations": [
+    "[[Stronghold Slayer Cave]] entrance",
+    "[[Asgarnian Ice Dungeon]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Steve"
+  },
+  "Stonemason": {
+   "locations": [
+    "[[Keldagrim]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Stonemason"
+  },
+  "Sulisal": {
+   "locations": [
+    "[[Kastori]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Sulisal"
+  },
+  "Sune": {
+   "locations": [
+    "[[Keldagrim]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Sune"
+  },
+  "Supervisor Lalo": {
+   "locations": [
+    "[[Alchemical Society]] lab"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Supervisor_Lalo"
+  },
+  "Tamayu": {
+   "locations": [
+    "[[Tai Bwo Wannai]] village",
+    "East of [[Tai Bwo Wannai]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Tamayu"
+  },
+  "Tati": {
+   "locations": [
+    "[[Keldagrim]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Tati"
+  },
+  "Teicuh": {
+   "locations": [
+    "[[Tal Teklan]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Teicuh"
+  },
+  "Thirus": {
+   "locations": [
+    "[[Lovakengj]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Thirus"
+  },
+  "Thora the Barkeep": {
+   "locations": [
+    "[[Rellekka Longhall Bar]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Thora_the_Barkeep"
+  },
+  "Thurid": {
+   "locations": [
+    "[[Sunset Coast]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Thurid"
+  },
+  "Thyria": {
+   "locations": [
+    "[[Arceuus]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Thyria"
+  },
+  "Tiadeche": {
+   "locations": [
+    "[[Tai Bwo Wannai]] village",
+    "South across the water from [[Musa Point]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Tiadeche"
+  },
+  "Ticket Merchant": {
+   "locations": [
+    "[[Ranging Guild]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Ticket_Merchant"
+  },
+  "Tina": {
+   "locations": [
+    "[[Falador]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Tina"
+  },
+  "Tizoro": {
+   "locations": [
+    "[[Cam Torum]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Tizoro"
+  },
+  "Toci": {
+   "locations": [
+    "[[Aldarin]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Toci"
+  },
+  "Tool Leprechaun (Larry)": {
+   "locations": [
+    "Roof of the [[Troll Stronghold (location)|Troll Stronghold]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Tool_Leprechaun_(Larry)"
+  },
+  "Toothy": {
+   "locations": [
+    "[[Lovakengj]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Toothy"
+  },
+  "Tostig": {
+   "locations": [
+    "[[Burthorpe]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Tostig"
+  },
+  "Trader Crewmember": {
+   "locations": [
+    "[[Charter Ship]] locations"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Trader_Crewmember"
+  },
+  "Trader Stan": {
+   "locations": [
+    "The dock of [[Port Sarim]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Trader_Stan"
+  },
+  "Trader Sven": {
+   "locations": [
+    "[[Meiyerditch]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Trader_Sven"
+  },
+  "Tramp (pillory)": {
+   "locations": [
+    "[[Varrock]]",
+    "[[Seers' Village]]",
+    "[[Yanille]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Tramp_(pillory)"
+  },
+  "Tribal Weapon Salesman": {
+   "locations": [
+    "[[Ranging Guild]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Tribal_Weapon_Salesman"
+  },
+  "Turael": {
+   "locations": [
+    "[[Burthorpe]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Turael"
+  },
+  "Tutab": {
+   "locations": [
+    "[[Ape Atoll]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Tutab"
+  },
+  "Tynan": {
+   "locations": [
+    "[[Port Piscarilius]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Tynan"
+  },
+  "TzHaar-Hur-Lek": {
+   "locations": [
+    "[[Mor Ul Rek]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/TzHaar-Hur-Lek"
+  },
+  "TzHaar-Hur-Rin": {
+   "locations": [
+    "[[Mor Ul Rek]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/TzHaar-Hur-Rin"
+  },
+  "TzHaar-Hur-Tel": {
+   "locations": [
+    "[[Mor Ul Rek]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/TzHaar-Hur-Tel"
+  },
+  "TzHaar-Hur-Zal": {
+   "locations": [
+    "[[Mor Ul Rek]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/TzHaar-Hur-Zal"
+  },
+  "TzHaar-Mej-Roh": {
+   "locations": [
+    "[[Mor Ul Rek]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/TzHaar-Mej-Roh"
+  },
+  "Uglug Nar": {
+   "locations": [
+    "[[Jiggig]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Uglug_Nar"
+  },
+  "Urbi": {
+   "locations": [
+    "[[Sophanem]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Urbi"
+  },
+  "Valaine": {
+   "locations": [
+    "[[Champions' Guild]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Valaine"
+  },
+  "Vanessa": {
+   "locations": [
+    "North of [[Catherby]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Vanessa"
+  },
+  "Vanligga Gastfrihet": {
+   "locations": [
+    "[[Jatizso]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Vanligga_Gastfrihet"
+  },
+  "Vannah": {
+   "locations": [
+    "[[Hosidius]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Vannah"
+  },
+  "Vannaka": {
+   "locations": [
+    "[[Edgeville Dungeon]]",
+    "[[Tutorial Island]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Vannaka"
+  },
+  "Varrian Sobak": {
+   "locations": [
+    "North-west [[Darkmeyer]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Varrian_Sobak"
+  },
+  "Vermundi": {
+   "locations": [
+    "[[Keldagrim]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Vermundi"
+  },
+  "Vigr": {
+   "locations": [
+    "[[Keldagrim]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Vigr"
+  },
+  "Void Knight": {
+   "locations": [
+    "[[Void Knights' Outpost]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Void_Knight"
+  },
+  "Wayne": {
+   "locations": [
+    "Southern [[Falador]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Wayne"
+  },
+  "William": {
+   "locations": [
+    "[[Red Dragon Isle]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/William"
+  },
+  "Wistan": {
+   "locations": [
+    "[[Burthorpe]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Wistan"
+  },
+  "Wizard Akutha": {
+   "locations": [
+    "[[Wizards' Guild]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Wizard_Akutha"
+  },
+  "Wizard Sinina": {
+   "locations": [
+    "[[Wizards' Guild]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Wizard_Sinina"
+  },
+  "Worm Tongue": {
+   "locations": [
+    "[[Colossal Wyrm Remains]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Worm_Tongue"
+  },
+  "Wydin": {
+   "locations": [
+    "[[Port Sarim]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Wydin"
+  },
+  "Xochitl": {
+   "locations": [
+    "[[Tal Teklan]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Xochitl"
+  },
+  "Yarnio": {
+   "locations": [
+    "[[Cam Torum]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Yarnio"
+  },
+  "Yarsul": {
+   "locations": [
+    "[[Mining Guild]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Yarsul"
+  },
+  "Yrsa": {
+   "locations": [
+    "[[Rellekka]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Yrsa"
+  },
+  "Zeke": {
+   "locations": [
+    "[[Al Kharid]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Zeke"
+  },
+  "Zembo": {
+   "locations": [
+    "Musa Point, Karamja"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Zembo"
+  },
+  "Zenesha": {
+   "locations": [
+    "[[East Ardougne]]",
+    "[[Ratcatchers Mansion]]"
+   ],
+   "is_npc": true,
+   "source_url": "https://oldschool.runescape.wiki/w/Zenesha"
+  }
+ }
+}
