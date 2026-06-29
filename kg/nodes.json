@@ -10345,6 +10345,16 @@
   {
     "data": {
       "members": true,
+      "place_type": "region"
+    },
+    "id": "place:abyssal-space",
+    "kind": "place",
+    "name": "Abyssal Space",
+    "slug": "abyssal-space"
+  },
+  {
+    "data": {
+      "members": true,
       "place_type": "sea"
     },
     "id": "place:aehecatl",
@@ -10656,6 +10666,16 @@
   },
   {
     "data": {
+      "members": true,
+      "place_type": "region"
+    },
+    "id": "place:auburn-valley",
+    "kind": "place",
+    "name": "Auburn Valley",
+    "slug": "auburn-valley"
+  },
+  {
+    "data": {
       "content_kind": "settlement",
       "members": true,
       "place_type": "settlement"
@@ -10771,6 +10791,16 @@
     "kind": "place",
     "name": "Barbarian Outpost Agility Course",
     "slug": "barbarian-outpost-agility-course"
+  },
+  {
+    "data": {
+      "members": false,
+      "place_type": "settlement"
+    },
+    "id": "place:barbarian-village",
+    "kind": "place",
+    "name": "Barbarian Village",
+    "slug": "barbarian-village"
   },
   {
     "data": {
@@ -10946,6 +10976,16 @@
     "kind": "place",
     "name": "Breakbone Strait",
     "slug": "breakbone-strait"
+  },
+  {
+    "data": {
+      "members": true,
+      "place_type": "town"
+    },
+    "id": "place:brimhaven",
+    "kind": "place",
+    "name": "Brimhaven",
+    "slug": "brimhaven"
   },
   {
     "data": {
@@ -11439,6 +11479,16 @@
     "kind": "place",
     "name": "Corporeal Beast's Lair",
     "slug": "corporeal-beast-s-lair"
+  },
+  {
+    "data": {
+      "members": false,
+      "place_type": "settlement"
+    },
+    "id": "place:corsair-cove",
+    "kind": "place",
+    "name": "Corsair Cove",
+    "slug": "corsair-cove"
   },
   {
     "data": {
@@ -12836,6 +12886,16 @@
   },
   {
     "data": {
+      "members": false,
+      "place_type": "point_of_interest"
+    },
+    "id": "place:groats-farm",
+    "kind": "place",
+    "name": "Groats' farm",
+    "slug": "groats-farm"
+  },
+  {
+    "data": {
       "content_kind": "dungeon",
       "members": true,
       "place_type": "dungeon"
@@ -13193,6 +13253,16 @@
     "kind": "place",
     "name": "Iorwerth Dungeon",
     "slug": "iorwerth-dungeon"
+  },
+  {
+    "data": {
+      "members": true,
+      "place_type": "region"
+    },
+    "id": "place:isafdar",
+    "kind": "place",
+    "name": "Isafdar",
+    "slug": "isafdar"
   },
   {
     "data": {
@@ -14005,6 +14075,16 @@
   },
   {
     "data": {
+      "members": false,
+      "place_type": "region"
+    },
+    "id": "place:lumbridge-swamp",
+    "kind": "place",
+    "name": "Lumbridge Swamp",
+    "slug": "lumbridge-swamp"
+  },
+  {
+    "data": {
       "content_kind": "dungeon",
       "members": true,
       "place_type": "dungeon"
@@ -14116,6 +14196,16 @@
     "kind": "place",
     "name": "Mastering Mixology",
     "slug": "mastering-mixology"
+  },
+  {
+    "data": {
+      "members": true,
+      "place_type": "town"
+    },
+    "id": "place:meiyerditch",
+    "kind": "place",
+    "name": "Meiyerditch",
+    "slug": "meiyerditch"
   },
   {
     "data": {
@@ -14464,6 +14554,16 @@
   },
   {
     "data": {
+      "members": true,
+      "place_type": "region"
+    },
+    "id": "place:mount-karuulm",
+    "kind": "place",
+    "name": "Mount Karuulm",
+    "slug": "mount-karuulm"
+  },
+  {
+    "data": {
       "content_kind": "mine",
       "members": true,
       "place_type": "point_of_interest"
@@ -14560,6 +14660,16 @@
   },
   {
     "data": {
+      "members": false,
+      "place_type": "settlement"
+    },
+    "id": "place:musa-point",
+    "kind": "place",
+    "name": "Musa Point",
+    "slug": "musa-point"
+  },
+  {
+    "data": {
       "content_kind": "settlement",
       "members": true,
       "place_type": "settlement"
@@ -14568,6 +14678,16 @@
     "kind": "place",
     "name": "Museum Camp",
     "slug": "museum-camp"
+  },
+  {
+    "data": {
+      "members": true,
+      "place_type": "settlement"
+    },
+    "id": "place:mynydd",
+    "kind": "place",
+    "name": "Mynydd",
+    "slug": "mynydd"
   },
   {
     "data": {
@@ -14633,6 +14753,16 @@
     "kind": "place",
     "name": "Nardah",
     "slug": "nardah"
+  },
+  {
+    "data": {
+      "members": true,
+      "place_type": "region"
+    },
+    "id": "place:necropolis",
+    "kind": "place",
+    "name": "Necropolis",
+    "slug": "necropolis"
   },
   {
     "data": {
@@ -14842,6 +14972,16 @@
   },
   {
     "data": {
+      "members": true,
+      "place_type": "point_of_interest"
+    },
+    "id": "place:paterdomus",
+    "kind": "place",
+    "name": "Paterdomus",
+    "slug": "paterdomus"
+  },
+  {
+    "data": {
       "content_kind": "dungeon",
       "members": true,
       "place_type": "dungeon"
@@ -14943,6 +15083,16 @@
     "kind": "place",
     "name": "Piscarilius mine",
     "slug": "piscarilius-mine"
+  },
+  {
+    "data": {
+      "members": true,
+      "place_type": "region"
+    },
+    "id": "place:piscatoris",
+    "kind": "place",
+    "name": "Piscatoris",
+    "slug": "piscatoris"
   },
   {
     "data": {
@@ -15460,6 +15610,16 @@
   },
   {
     "data": {
+      "members": true,
+      "place_type": "region"
+    },
+    "id": "place:ruins-of-ullek",
+    "kind": "place",
+    "name": "Ruins of Ullek",
+    "slug": "ruins-of-ullek"
+  },
+  {
+    "data": {
       "content_kind": "mine",
       "members": true,
       "place_type": "point_of_interest"
@@ -15490,6 +15650,16 @@
     "kind": "place",
     "name": "Ruins of Unkah mine",
     "slug": "ruins-of-unkah-mine"
+  },
+  {
+    "data": {
+      "members": true,
+      "place_type": "region"
+    },
+    "id": "place:ruins-of-uzer",
+    "kind": "place",
+    "name": "Ruins of Uzer",
+    "slug": "ruins-of-uzer"
   },
   {
     "data": {
@@ -15854,6 +16024,16 @@
     "kind": "place",
     "name": "Silk Chasm",
     "slug": "silk-chasm"
+  },
+  {
+    "data": {
+      "members": true,
+      "place_type": "region"
+    },
+    "id": "place:silvarea",
+    "kind": "place",
+    "name": "Silvarea",
+    "slug": "silvarea"
   },
   {
     "data": {
@@ -16656,6 +16836,16 @@
   {
     "data": {
       "members": true,
+      "place_type": "region"
+    },
+    "id": "place:the-scar",
+    "kind": "place",
+    "name": "The Scar",
+    "slug": "the-scar"
+  },
+  {
+    "data": {
+      "members": true,
       "place_type": "sea"
     },
     "id": "place:the-searing-sea",
@@ -16701,6 +16891,16 @@
     "kind": "place",
     "name": "The Storm Tempor",
     "slug": "the-storm-tempor"
+  },
+  {
+    "data": {
+      "members": true,
+      "place_type": "region"
+    },
+    "id": "place:the-stranglewood",
+    "kind": "place",
+    "name": "The Stranglewood",
+    "slug": "the-stranglewood"
   },
   {
     "data": {
@@ -16778,6 +16978,16 @@
   },
   {
     "data": {
+      "members": true,
+      "place_type": "region"
+    },
+    "id": "place:tlati-rainforest",
+    "kind": "place",
+    "name": "Tlati Rainforest",
+    "slug": "tlati-rainforest"
+  },
+  {
+    "data": {
       "content_kind": "dungeon",
       "members": true,
       "place_type": "dungeon"
@@ -16850,6 +17060,16 @@
     "kind": "place",
     "name": "Tree Gnome Stronghold",
     "slug": "tree-gnome-stronghold"
+  },
+  {
+    "data": {
+      "members": true,
+      "place_type": "settlement"
+    },
+    "id": "place:tree-gnome-village",
+    "kind": "place",
+    "name": "Tree Gnome Village",
+    "slug": "tree-gnome-village"
   },
   {
     "data": {
@@ -17417,6 +17637,16 @@
   {
     "data": {
       "members": true,
+      "place_type": "settlement"
+    },
+    "id": "place:weiss",
+    "kind": "place",
+    "name": "Weiss",
+    "slug": "weiss"
+  },
+  {
+    "data": {
+      "members": true,
       "place_type": "sea"
     },
     "id": "place:weiss-melt",
@@ -17530,6 +17760,16 @@
     "kind": "place",
     "name": "White Knights' Castle",
     "slug": "white-knights-castle"
+  },
+  {
+    "data": {
+      "members": true,
+      "place_type": "region"
+    },
+    "id": "place:white-wolf-mountain",
+    "kind": "place",
+    "name": "White Wolf Mountain",
+    "slug": "white-wolf-mountain"
   },
   {
     "data": {

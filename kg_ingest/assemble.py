@@ -291,6 +291,7 @@ STORELINE_RAW_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "sto
 WORLD_BACKBONE_PATH = Path(__file__).resolve().parents[1] / "data" / "map" / "world.json"
 WORLD_SNAPSHOT_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "wiki_location_categories.json"
 WORLD_INFOBOX_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "wiki_location_infoboxes.json"
+WORLD_PARENTING_PATH = Path(__file__).resolve().parents[1] / "data" / "map" / "world_parenting.json"
 
 
 def _load_world_infoboxes() -> dict | None:
@@ -299,6 +300,14 @@ def _load_world_infoboxes() -> dict | None:
     raw = json.loads(WORLD_INFOBOX_PATH.read_text())["infoboxes"]
     from kg_ingest.builders.world import parse_infobox_links
     return {title: parse_infobox_links(rec.get("location", "")) for title, rec in raw.items()}
+
+
+def _load_world_parenting() -> dict | None:
+    """Load owner-authored editorial overrides for place parenting (world_parenting.json).
+    Returns the 'overrides' dict (slug -> {parent, source_url, source_token}), or None."""
+    if not WORLD_PARENTING_PATH.exists():
+        return None
+    return json.loads(WORLD_PARENTING_PATH.read_text()).get("overrides")
 
 
 def _load_varrock_map() -> dict | None:
@@ -426,7 +435,8 @@ def assemble() -> None:
         world_region_ids = {n.id for n in content_nodes if n.id.startswith("region:")}
         world_nodes, world_edges, _ = build_world(
             _wbb, _load_world_snapshot(), world_region_ids,
-            extra_seen=_map_place_ids, infoboxes=_load_world_infoboxes())
+            extra_seen=_map_place_ids, infoboxes=_load_world_infoboxes(),
+            overrides=_load_world_parenting())
         _seed = {}
         for _e in edges:
             _seed[_e.src] = _seed.get(_e.src, 0) + 1
