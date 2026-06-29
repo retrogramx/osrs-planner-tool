@@ -6,7 +6,7 @@ def test_shop_infobox_snapshot_shape():
     assert "_provenance" in d and "infoboxes" in d
     assert d["infoboxes"] == dict(sorted(d["infoboxes"].items()))   # committed sorted (byte-deterministic)
     sample = next(iter(d["infoboxes"].values()))
-    assert set(sample) >= {"locations", "members", "owner", "source_url"}
+    assert set(sample) >= {"locations", "members", "owner", "icon", "source_url"}
     assert isinstance(sample["locations"], list)
 
 def test_shop_categories_snapshot_shape():

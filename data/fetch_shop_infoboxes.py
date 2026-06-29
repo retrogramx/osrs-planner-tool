@@ -133,7 +133,8 @@ def main():
             wt = revs[0]["slots"]["main"]["*"] if revs else ""
             params = split_top_level_params(extract_infobox_block(wt))
             infoboxes[title] = {"locations": shop_locations(params), "members": shop_members(params),
-                                "owner": shop_owners(params), "source_url": WIKI + title.replace(" ", "_")}
+                                "owner": shop_owners(params), "icon": params.get("icon"),
+                                "source_url": WIKI + title.replace(" ", "_")}
         time.sleep(0.1)
     with open(os.path.join(RAW, "wiki_shop_categories.json"), "w", encoding="utf-8") as f:
         json.dump({"_provenance": {"domain": "wiki_shop_categories", "source": "OSRS Wiki category API",
