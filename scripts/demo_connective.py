@@ -62,14 +62,19 @@ def q1_acquisition_and_evaluator() -> None:
                 break
             chain.append(name(nxt))
             cur = nxt
-        offers = sorted([e for e in sellers if e.src == shid], key=offer_key)
+        shop_offers = [e for e in sellers if e.src == shid]
+        gated = sorted([e for e in shop_offers if e.cond_group is not None], key=offer_key)
+        item_only = [e for e in shop_offers if e.cond_group is None]
         print(f"  {name(shid)}")
-        print(f"     run by:   {name(op)}")
-        print(f"     found at: {'  ▸  '.join(chain)}")
-        print(f"     offers {len(offers)} ways to get a battlestaff:")
-        for e in offers:
-            a = kg.children_of(e.cond_group)[0]
-            print(f"        • gated on: {a.atom_type.value} {name(a.ref_node)} = {a.data.get('state')}")
+        print(f"     run by:   {name(op) if op else '(operator not recorded)'}")
+        print(f"     found at: {'  ▸  '.join(chain) if chain else '(unplaced in skeleton)'}")
+        if item_only:
+            print(f"     stocks it item-only — buy freely (currency layer deferred)")
+        if gated:
+            print(f"     plus {len(gated)} gated offer(s) the evaluator can reason about:")
+            for e in gated:
+                a = kg.children_of(e.cond_group)[0]
+                print(f"        • gated on: {a.atom_type.value} {name(a.ref_node)} = {a.data.get('state')}")
 
     accounts = {
         "Fresh main (Hiscores synced, nothing done)":
