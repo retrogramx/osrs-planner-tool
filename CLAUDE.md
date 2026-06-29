@@ -11,12 +11,16 @@ ingestion) toward a **richly-typed entity graph of all of Gielinor**.
   `recipe`s, `degrades_to`, `repairs`, equipment `has_bonuses`); (PR #17) the **connective Varrock spine** (`place`/`npc`/
   `shop` + `located_in`/`operates`/`sells`) + source-grounded Storeline shop stock; (PR #19) the **world skeleton** — a
   comprehensive LOCATION GRAPH (16→726 place nodes built from the wiki TYPE-CATEGORY union via `build_world`, + a committed
-  coverage verifier). Graph = **1594 nodes / 1934 edges**. Foundation audited GREEN (8/8 bricks reproduce from `data/raw/`).
+  coverage verifier); (PR #20) the **re-homing pass** — every place attached to its parent (190 unparented → **11** disclosed
+  floor) via a precision-first 5-rung `parent_for` signal stack (`override→category→name-suffix→infobox→FLAG`,
+  content-places-as-parents) + an `is_excluded` noise filter + a new infobox-`location` brick + 24 owner-reviewed
+  `world.json` backbone places + `world_parenting.json` overrides + a committed-graph acyclicity gate (`_resolve_reachable`,
+  enforced in `verify_world` AND `validate_kg`). Graph = **1603 nodes / 1943 edges**. Foundation audited GREEN (8/8 bricks reproduce from `data/raw/`).
 - **← NOW: the bottom-up layers (what attaches to the location skeleton).** The in-game `Map_icon` legend is the
   authoritative roadmap: shops (all-shops Storeline scale-up) · NPCs/tutors · objects/resources (training spots) ·
   transport (nodes + `gives_access`, built together) · facilities (banks/altars/GE). Each from its OWN structured wiki
-  source + its own coverage verifier; each layer's `located_in` is a completeness CROSS-CHECK on the skeleton. Also pending:
-  re-home the world-skeleton's **190 unparented** residual (an infobox-`location` parenting pass). Roadmap:
+  source + its own coverage verifier; each layer's `located_in` is a completeness CROSS-CHECK on the skeleton — and reuses
+  the skeleton's `parent_for` parenting machinery (`world_parenting.json` is the owner-override escape hatch). Roadmap:
   `docs/superpowers/specs/2026-06-27-world-skeleton-design.md` §7.
 - Evidence base (don't re-derive — read): `research/osrs-ontology-nuance-catalog{,-pass2,-pass3}.md`,
   `research/goingmeta-kg-learnings.md`. Deferred whole-repo cleanup: `docs/superpowers/plans/2026-06-24-repo-realignment-note.md`.
@@ -71,8 +75,9 @@ ingestion) toward a **richly-typed entity graph of all of Gielinor**.
    location graph from the wiki TYPE-CATEGORY union (`build_world` + owner-reviewed `data/map/world.json` backbone + a
    coverage verifier). New place_types `sea` + `point_of_interest`; `members` flag; two-level typing (`place_type` coarse,
    `content_kind` advisory). Account-wide unlocks ride as conditional edge-modifiers gated by diary/quest completion.
+   Then **re-homing** (PR #20): `parent_for` signal stack + `world_parenting.json` + acyclicity gate, residual → 11.
 4. ← **NOW: the bottom-up layers** — shops (all-shops scale-up) · NPCs · objects/resources · transport (`gives_access`) ·
-   facilities, each `located_in` the skeleton + its own structured source + coverage verifier; re-home the 190 unparented.
+   facilities, each `located_in` the skeleton + its own structured source + coverage verifier.
 5. **Then (deferred):** full item-roster scale-up · wield-requirements (`requires` cond_group) · intrinsic attrs
    (value/alch/weight/tradeable) · facility-recharge + the `service` edge (repair fee) · chunk geometry · governance
    edges + `faction` nodes · cache-id node-import · aliases.
@@ -92,7 +97,12 @@ ingestion) toward a **richly-typed entity graph of all of Gielinor**.
   page dupes); always select canonical page + `stat_variant_index 0` (see `select_bonus_record`). The slice-5 "errors"
   were a selection bug, not bad data.
 - Use subagent-driven-development for multi-task implementation; adversarially verify findings before merging.
-- **Status: item-facet + connective Varrock + world skeleton MERGED to `main` (PRs #16/#17/#19); graph 1594 nodes /
-  1934 edges.** New work branches off `main`.
+- **Re-homing/parenting gotcha:** adding a parenting SIGNAL (or new parent place) can silently re-parent ALREADY-homed
+  nodes, not just the unparented — **diff the `located_in` edges before/after, not just the residual count** (caught two
+  precedence bugs this way in PR #20). `parent_for` = precision-first rungs with backbone-preference PER RUNG (a content
+  category beats a backbone infobox). The committed place graph must stay acyclic & single-rooted at `place:gielinor`
+  (now a `validate_kg` hard-fail, not just `verify_world`).
+- **Status: item-facet + connective Varrock + world skeleton + re-homing MERGED to `main` (PRs #16/#17/#19/#20); graph
+  1603 nodes / 1943 edges; world-skeleton parenting residual = 11 (disclosed floor, report-not-fail).** New work branches off `main`.
 - Licensing seam (non-commercial project): wiki text = CC BY-NC-SA; cache content = Jagex IP; decoder tooling = BSD/ISC.
 ```
