@@ -4,7 +4,7 @@ A public, account-type-aware Old School RuneScape **profile + goal/route planner
 **knowledge graph**. Evolved from earlier domain "bricks" (quests, diaries, drops, cost/income, account
 ingestion) toward a **richly-typed entity graph of all of Gielinor**.
 
-## ⭐ Current direction — v2 ontology + item-facet + the connective/location spine all MERGED; next = the bottom-up layers.
+## ⭐ Current direction — v2 ontology + item-facet + location spine + the FIRST bottom-up layer (shops) all MERGED; next = the remaining bottom-up layers.
 - **`kg/schema.json`** is the ontology AS DATA (single source of truth; closed vocab + `legacy_*` sections) — the
   contract `validate_kg.py` enforces. Prose spec: `docs/superpowers/specs/2026-06-25-entity-graph-ontology-v2.md`.
 - **Done & on `main`:** (PR #16) schema-as-data + the **item-facet layer** (item nodes/variants `same_entity`, charge
@@ -15,13 +15,18 @@ ingestion) toward a **richly-typed entity graph of all of Gielinor**.
   floor) via a precision-first 5-rung `parent_for` signal stack (`override→category→name-suffix→infobox→FLAG`,
   content-places-as-parents) + an `is_excluded` noise filter + a new infobox-`location` brick + 24 owner-reviewed
   `world.json` backbone places + `world_parenting.json` overrides + a committed-graph acyclicity gate (`_resolve_reachable`,
-  enforced in `verify_world` AND `validate_kg`). Graph = **1603 nodes / 1943 edges**. Foundation audited GREEN (8/8 bricks reproduce from `data/raw/`).
-- **← NOW: the bottom-up layers (what attaches to the location skeleton).** The in-game `Map_icon` legend is the
-  authoritative roadmap: shops (all-shops Storeline scale-up) · NPCs/tutors · objects/resources (training spots) ·
-  transport (nodes + `gives_access`, built together) · facilities (banks/altars/GE). Each from its OWN structured wiki
-  source + its own coverage verifier; each layer's `located_in` is a completeness CROSS-CHECK on the skeleton — and reuses
-  the skeleton's `parent_for` parenting machinery (`world_parenting.json` is the owner-override escape hatch). Roadmap:
-  `docs/superpowers/specs/2026-06-27-world-skeleton-design.md` §7.
+  enforced in `verify_world` AND `validate_kg`); (PR #21) the **all-shops layer** — every `Bucket:Storeline` shop (568
+  derived + 15 Varrock) as a `shop:` node parented `located_in` the skeleton via a new shop-infobox brick
+  (`fetch_shop_infoboxes.py`; `shop_type` from the infobox **`icon`**, NOT categories — the fine "X shops" categories
+  don't exist on the wiki), item-only `sells` (currency deferred — §Conventions), `verify_shops` + `verify_shop_coverage`.
+  Graph = **4995 nodes / 9337 edges** (wiring shops auto-imported ~1000 equippable items). Foundation audited GREEN (8/8 bricks reproduce from `data/raw/`).
+- **← NOW: the remaining bottom-up layers (shops ✅ PR #21).** The in-game `Map_icon` legend is the authoritative
+  roadmap: **NPCs/tutors next** (operators + the slayer-master role — resolves the deferred multi-location shops) ·
+  objects/resources (training spots) · transport (nodes + `gives_access`, built together) · facilities (banks/altars/GE).
+  Each from its OWN structured wiki source + its own coverage verifier; each layer's `located_in` is a completeness
+  CROSS-CHECK on the skeleton — and reuses the skeleton's `parent_for` machinery (`world_parenting.json` is the
+  owner-override escape hatch). Roadmap: `docs/superpowers/specs/2026-06-27-world-skeleton-design.md` §7.
+  **⚠️ DO FIRST, before the next layer: widen `assemble.SPAN` (2M→`1<<32`) + retire the shop sequential-id band — see §Conventions.**
 - Evidence base (don't re-derive — read): `research/osrs-ontology-nuance-catalog{,-pass2,-pass3}.md`,
   `research/goingmeta-kg-learnings.md`. Deferred whole-repo cleanup: `docs/superpowers/plans/2026-06-24-repo-realignment-note.md`.
 
@@ -76,8 +81,8 @@ ingestion) toward a **richly-typed entity graph of all of Gielinor**.
    coverage verifier). New place_types `sea` + `point_of_interest`; `members` flag; two-level typing (`place_type` coarse,
    `content_kind` advisory). Account-wide unlocks ride as conditional edge-modifiers gated by diary/quest completion.
    Then **re-homing** (PR #20): `parent_for` signal stack + `world_parenting.json` + acyclicity gate, residual → 11.
-4. ← **NOW: the bottom-up layers** — shops (all-shops scale-up) · NPCs · objects/resources · transport (`gives_access`) ·
-   facilities, each `located_in` the skeleton + its own structured source + coverage verifier.
+4. ← **NOW: the bottom-up layers** — shops ✅ (PR #21, `build_shops` + `fetch_shop_infoboxes.py` brick) · NPCs (next) ·
+   objects/resources · transport (`gives_access`) · facilities, each `located_in` the skeleton + its own structured source + coverage verifier.
 5. **Then (deferred):** full item-roster scale-up · wield-requirements (`requires` cond_group) · intrinsic attrs
    (value/alch/weight/tradeable) · facility-recharge + the `service` edge (repair fee) · chunk geometry · governance
    edges + `faction` nodes · cache-id node-import · aliases.
@@ -93,16 +98,25 @@ ingestion) toward a **richly-typed entity graph of all of Gielinor**.
   edge-id-uniqueness assert is the backstop. When an owner SPANS builders (build_world → build_map → build_storeline),
   each later rekey SEEDS from prior counts. Builder-local edge-id bands are disjoint (item 0x10..0xD0; place-`src`:
   build_world 0xB0 / build_map 0xE0 / build_storeline 0xF0).
+- **⚠️ `stable_edge_id`'s `SPAN=2_000_000` is an edge-id CEILING:** `rekey` birthday-collides (and crashes) past ~9k
+  total edges. The all-shops layer (PR #21, ~6k new edges) hit it, so `build_shops` edges use a SEQUENTIAL `[100M,..)`
+  band in `assemble.py` (NOT `rekey`). **MUST-DO before the next bottom-up layer: widen `SPAN` (2M→`1<<32`) + retire the
+  sequential band** — sequential ids are byte-stable for identical input but CHURN `kg/edges.json` on any data refresh
+  (lose per-edge id-stability). It's a clean one-time renumber. Until then: shop-edge ids live in `[100M,..)`, all others in `[6M,8M)`.
 - **`items_equipment.json` selection trap:** that dataset has MULTIPLE records per item_id (stat-variants + `(beta)`
-  page dupes); always select canonical page + `stat_variant_index 0` (see `select_bonus_record`). The slice-5 "errors"
-  were a selection bug, not bad data.
+  page dupes); select canonical page + `stat_variant_index 0`, EXCEPT demote an all-zero index-0 record so a non-zero
+  ACTIVE variant wins (`_all_zero_stats` in `select_bonus_record`; the Crystal-shield inactive-form case, refined in PR
+  #21). The slice-5 "errors" were a selection bug, not bad data. **Gotcha: wiring a layer that references many items
+  AUTO-IMPORTS them, which can surface latent bugs in OTHER bricks** (shops → equipment_bonuses; fix the root brick).
 - Use subagent-driven-development for multi-task implementation; adversarially verify findings before merging.
 - **Re-homing/parenting gotcha:** adding a parenting SIGNAL (or new parent place) can silently re-parent ALREADY-homed
   nodes, not just the unparented — **diff the `located_in` edges before/after, not just the residual count** (caught two
   precedence bugs this way in PR #20). `parent_for` = precision-first rungs with backbone-preference PER RUNG (a content
   category beats a backbone infobox). The committed place graph must stay acyclic & single-rooted at `place:gielinor`
   (now a `validate_kg` hard-fail, not just `verify_world`).
-- **Status: item-facet + connective Varrock + world skeleton + re-homing MERGED to `main` (PRs #16/#17/#19/#20); graph
-  1603 nodes / 1943 edges; world-skeleton parenting residual = 11 (disclosed floor, report-not-fail).** New work branches off `main`.
+- **Status: item-facet + connective Varrock + world skeleton + re-homing + the all-shops layer MERGED to `main` (PRs
+  #16/#17/#19/#20/#21); graph 4995 nodes / 9337 edges. Residuals (disclosed, report-not-fail): world-skeleton parenting
+  = 11; shops = 357 parented / 14 multi-location-deferred / 197 FLAG (50 NPC-sellers + 103 infobox-no-location + 44
+  infobox-location-unresolved — the 44 are a place-layer to-do: name-norm + missing skeleton places).** New work branches off `main`.
 - Licensing seam (non-commercial project): wiki text = CC BY-NC-SA; cache content = Jagex IP; decoder tooling = BSD/ISC.
 ```
