@@ -40,6 +40,8 @@ def select_bonus_record(records: list[dict], canonical_page: str | None) -> dict
         if vi == 0:
             return (0, 0) if not is_zero else (3, 0)
         if vi is None:
+            # Intentional: a no-index record is NOT demoted even if all-zero — no real item
+            # currently triggers this edge case; revisit if one ever does.
             return (1, 0)
         return (2, vi) if not is_zero else (4, vi)
 
