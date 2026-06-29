@@ -62,6 +62,7 @@ def build_npcs(storeline_records, shop_infoboxes, npc_infoboxes, place_nodes,
     nodes: list[Node] = []
     edges: list[Edge] = []                     # located_in (Task 3) + operates (Task 4) land here
     roster = operator_roster(storeline_records, shop_infoboxes, varrock_shop_names)
+    name_index = build_place_name_index(place_nodes)
 
     claimed: dict[str, str] = {}               # slug -> first name (collision guard)
     for name in roster:
@@ -78,6 +79,12 @@ def build_npcs(storeline_records, shop_infoboxes, npc_infoboxes, place_nodes,
             print(f"[npcs] slug collision: {name!r} and {claimed[nid]!r} -> {nid}; using {nid}-{k}")
             nid = f"{nid}-{k}"
         claimed[nid] = name
-        nodes.append(Node(id=nid, kind=NodeKind.NPC, name=name, slug=nid.split(":", 1)[1], data={}))
+        places = resolve_shop_places((ib or {}).get("locations", []), name_index)
+        data = {"multi_location": True} if len(places) > 1 else {}
+        nodes.append(Node(id=nid, kind=NodeKind.NPC, name=name, slug=nid.split(":", 1)[1], data=data))
+        if len(places) == 1:
+            edges.append(Edge(id=_edge_id(nid, "located_in"), type=EdgeType.LOCATED_IN,
+                              src=nid, dst=places[0], cond_group=None, data={}))
+        # len(places) == 0 -> unparented FLAG (no edge), reported by verify_npc_coverage
 
     return nodes, edges, {}
