@@ -78,12 +78,14 @@ Mirrors `data/fetch_world_infoboxes.py`. Steps:
 `location` values are parsed with the world skeleton's `parse_infobox_links` (ordered, de-duped wikilink
 targets). Scope extraction to the `{{Infobox Shop}}` block to avoid `{{Relativelocation}}`-style traps.
 
-### 4c. `shop_type` — from the type-subcategory
-The type-subcategory a page belongs to (priority-ordered, **first match wins**, **advisory** — the
-`content_kind` "over-tag" lesson). Stored as `shop.data.shop_type`. The category→page map is the same data
-that feeds 4b's page enumeration: `fetch_shop_infoboxes.py` writes it as a sibling
-`data/raw/wiki_shop_categories.json` (step 1) alongside `wiki_shop_infoboxes.json` (steps 2–3), so both the
-roster yardstick and `shop_type` come from one committed, re-derivable fetch.
+### 4c. `shop_type` — from the infobox `icon`
+**Implementation finding (2026-06-28):** the fine "X shops" taxonomy does **not** exist as wiki categories
+(only coarse/junk subcats — `Members' shops`, `Merchants`, `Lliann's Wares`, `Shop images`). The structured
+type signal is the `{{Infobox Shop}}` **`icon`** field — the in-game map-icon legend — e.g.
+`[[File:Archery shop icon.png]]` → `Archery shop`. `build_shops` parses the verbatim icon (captured in the
+infobox brick) into `shop.data.shop_type` (advisory — the `content_kind` "over-tag" lesson; `None` if absent).
+The `Category:Shops` subcategory snapshot (`wiki_shop_categories.json`) is still fetched, but serves only as the
+**coverage yardstick** for `verify_shop_coverage`, not as the `shop_type` source.
 
 ### 4d. Matching Storeline ↔ infobox
 A Storeline `sold_by` is joined to its infobox record by normalize-but-town-aware matching (**reuse

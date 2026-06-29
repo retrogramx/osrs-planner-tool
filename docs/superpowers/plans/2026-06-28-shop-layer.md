@@ -7,11 +7,12 @@
 `shop:` node parented `located_in` a world-skeleton place via a new shop-infobox brick, with item-only `sells`
 edges, gated by a coverage verifier and a source-grounding verifier.
 
-**Architecture:** A new builder `kg_ingest/builders/shops.py` (`build_shops`) consumes three committed sources —
-`storeline_bucket.json` (roster + stock), a NEW `wiki_shop_infoboxes.json` (location + members), and a NEW
-`wiki_shop_categories.json` (shop_type + the coverage yardstick). It emits `shop` nodes + `located_in` +
-item-only `sells`. It is wired into `assemble.py` after `build_storeline`, rekeyed in its own seeded call
-(shop-`src` family). Mirrors the world-skeleton's backbone+snapshot+infobox triad.
+**Architecture:** A new builder `kg_ingest/builders/shops.py` (`build_shops`) consumes two committed sources —
+`storeline_bucket.json` (roster + stock) and a NEW `wiki_shop_infoboxes.json` (location + members + the
+shop-type `icon`). A NEW `wiki_shop_categories.json` is the coverage yardstick used only by
+`verify_shop_coverage`. It emits `shop` nodes + `located_in` + item-only `sells`, wired into `assemble.py` after
+`build_storeline`, rekeyed in its own seeded call (shop-`src` family). Mirrors the world-skeleton's
+backbone+snapshot+infobox triad.
 
 **Tech Stack:** Python 3.14 via `./venv/bin/python`; committed JSON data; pytest. Reuses
 `kg_ingest.builders.world` (`parse_infobox_links`, `_norm`), `kg_ingest.builders.storeline` (`match_shop`,
@@ -39,8 +40,9 @@ item-only `sells`. It is wired into `assemble.py` after `build_storeline`, rekey
 - `data/fetch_shop_infoboxes.py` (NEW) — fetch script: enumerate `Category:Shops` subcategories → pages, fetch
   each `{{Infobox Shop}}`, extract location(s)/members/owner verbatim. Pure parsers are importable + unit-tested;
   `main()` does network + writes the two snapshots. Mirrors `data/fetch_world_infoboxes.py`.
-- `data/raw/wiki_shop_categories.json` (NEW, committed) — `{category: [page titles]}` for each shop-type subcat.
-- `data/raw/wiki_shop_infoboxes.json` (NEW, committed) — `{page: {locations, members, owner, source_url}}`.
+- `data/raw/wiki_shop_categories.json` (NEW, committed) — `{category: [page titles]}` per `Category:Shops`
+  subcat; the coverage yardstick used only by `verify_shop_coverage` (NOT by `build_shops`).
+- `data/raw/wiki_shop_infoboxes.json` (NEW, committed) — `{page: {locations, members, owner, icon, source_url}}`.
 - `kg_ingest/builders/shops.py` (NEW) — `build_shops` + helpers (`_shop_slug`, `build_place_name_index`,
   `shop_type_for`, `resolve_shop_places`). Emits nodes + `located_in` + item-only `sells`.
 - `kg_ingest/assemble.py` (MODIFY) — load the two bricks; call `build_shops` after `build_storeline`; seeded rekey.
@@ -66,7 +68,10 @@ item-only `sells`. It is wired into `assemble.py` after `build_storeline`, rekey
   `shop_members(params: dict) -> str | None`, `shop_owners(params: dict) -> list[str]`.
 - Produces (snapshots): `wiki_shop_categories.json` = `{"_provenance": {...}, "categories": {cat: [titles]}}`;
   `wiki_shop_infoboxes.json` = `{"_provenance": {...}, "infoboxes": {title: {"locations": [str],
-  "members": str|None, "owner": [str], "source_url": str}}}`.
+  "members": str|None, "owner": [str], "icon": str|None, "source_url": str}}}`. `icon` is the verbatim
+  infobox `icon` value (e.g. `[[File:Archery shop icon.png]]`) — the structured shop-type signal (the in-game
+  map-icon legend); `build_shops` (Task 2) parses it into `shop_type`. The fine "X shops" categories do NOT
+  exist as wiki categories, so the icon — not the category — is the type source.
 
 > **Network note:** `main()` requires network. If the implementer has no network access, implement + unit-test
 > the pure parsers, then STOP and report `NEEDS_CONTEXT: run the fetch to materialize the committed snapshots`;
@@ -260,7 +265,8 @@ def main():
             wt = revs[0]["slots"]["main"]["*"] if revs else ""
             params = split_top_level_params(extract_infobox_block(wt))
             infoboxes[title] = {"locations": shop_locations(params), "members": shop_members(params),
-                                "owner": shop_owners(params), "source_url": WIKI + title.replace(" ", "_")}
+                                "owner": shop_owners(params), "icon": params.get("icon"),
+                                "source_url": WIKI + title.replace(" ", "_")}
         time.sleep(0.1)
     with open(os.path.join(RAW, "wiki_shop_categories.json"), "w", encoding="utf-8") as f:
         json.dump({"_provenance": {"domain": "wiki_shop_categories", "source": "OSRS Wiki category API",
@@ -301,7 +307,7 @@ def test_shop_infobox_snapshot_shape():
     assert "_provenance" in d and "infoboxes" in d
     assert d["infoboxes"] == dict(sorted(d["infoboxes"].items()))   # committed sorted (byte-deterministic)
     sample = next(iter(d["infoboxes"].values()))
-    assert set(sample) >= {"locations", "members", "owner", "source_url"}
+    assert set(sample) >= {"locations", "members", "owner", "icon", "source_url"}
     assert isinstance(sample["locations"], list)
 
 def test_shop_categories_snapshot_shape():
@@ -330,13 +336,15 @@ git commit -m "feat(shop-layer): shop-infobox brick (location/members/owner) + t
 
 **Interfaces:**
 - Consumes: Storeline records (list of `{sold_by, sold_item, ...}`); `shop_infoboxes`
-  (`{title: {locations, members, owner, source_url}}`); `shop_categories` (`{cat: [titles]}`);
-  Varrock shop names (`set[str]`); `storeline.match_shop`, `ids.slugify`.
-- Produces: `build_shops(storeline_records, shop_infoboxes, shop_categories, place_nodes, dict_records,
+  (`{title: {locations, members, owner, icon, source_url}}`); Varrock shop names (`set[str]`);
+  `storeline.match_shop`, `ids.slugify`.
+- Produces: `build_shops(storeline_records, shop_infoboxes, place_nodes, dict_records,
   varrock_shop_names) -> (nodes: list[Node], edges: list[Edge], groups: dict)`. This task emits **nodes only**
   (`located_in` in Task 3, `sells` in Task 4 return `[]` for now). Helpers: `_shop_slug(name) -> str`,
-  `shop_roster(storeline_records, varrock_shop_names) -> list[str]`,
-  `shop_type_for(title, page_to_cats) -> str | None`.
+  `shop_roster(storeline_records, varrock_shop_names) -> list[str]`, `shop_type_for(icon: str | None) -> str | None`
+  (parses the infobox icon, e.g. `[[File:Archery shop icon.png]]` → `Archery shop`).
+  **`shop_categories` is NOT a `build_shops` input** — `shop_type` comes from the icon; the category snapshot is
+  used only by `verify_shop_coverage` (Task 5).
 
 - [ ] **Step 1: Write failing tests**
 
@@ -356,27 +364,27 @@ def test_roster_excludes_varrock_owned():
     roster = shop_roster(recs, {"Zaff's Superior Staffs", "Aubury's Rune Shop"})
     assert roster == ["Al Kharid General Store"]
 
-def test_shop_type_first_match_priority():
-    page_to_cats = {"Lowe's Archery Emporium": ["Archery shops", "Weapon shops"]}
-    # priority order puts Archery before Weapon -> Archery wins
-    assert shop_type_for("Lowe's Archery Emporium", page_to_cats) == "Archery shops"
+def test_shop_type_from_icon():
+    assert shop_type_for("[[File:Archery shop icon.png]]") == "Archery shop"
+    assert shop_type_for("[[File:General store icon.png]]") == "General store"
+    assert shop_type_for(None) is None
+    assert shop_type_for("[[File:weird.png]]") is None        # no ' icon.png' -> None, not fabricated
 
 def test_build_shops_emits_node_with_type_and_members():
     recs = [{"sold_by": "Al Kharid General Store", "sold_item": "Pot"}]
-    ib = {"Al Kharid General Store": {"locations": ["[[Al Kharid]]"], "members": "No", "owner": []}}
-    cats = {"General stores": ["Al Kharid General Store"]}
-    nodes, edges, groups = build_shops(recs, ib, cats, [], [], set())
+    ib = {"Al Kharid General Store": {"locations": ["[[Al Kharid]]"], "members": "No",
+                                      "owner": [], "icon": "[[File:General store icon.png]]"}}
+    nodes, edges, groups = build_shops(recs, ib, [], [], set())
     n = next(n for n in nodes if n.id == "shop:al-kharid-general-store")
     assert n.kind is NodeKind.SHOP
-    assert n.data["shop_type"] == "General stores"
+    assert n.data["shop_type"] == "General store"
     assert n.data["members"] is False
     assert "operator" not in n.data            # operators deferred to the NPC layer
 
 def test_collision_guard_disambiguates_loudly(capsys):
     # two DISTINCT names that slugify identically must NOT silently merge
     recs = [{"sold_by": "Cool Shop"}, {"sold_by": "Cool  Shop"}]   # double-space -> same slug
-    ib, cats = {}, {}
-    nodes, _, _ = build_shops(recs, ib, cats, [], [], set())
+    nodes, _, _ = build_shops(recs, {}, [], [], set())
     ids = sorted(n.id for n in nodes)
     assert len(ids) == 2 and len(set(ids)) == 2   # two distinct nodes, no merge
     assert "collision" in capsys.readouterr().out.lower()
@@ -401,23 +409,13 @@ Never fabricates: unmatched/unparented -> reported, never invented.
 """
 from __future__ import annotations
 
+import re
+
 from osrs_planner.engine.kg.model import Edge, EdgeType, Node, NodeKind
 from kg_ingest.ids import _stable_hash, slugify
 from kg_ingest.builders.storeline import match_shop, index_by_shop
 
 _EDGE_BAND = 0xF0000000        # shop-src family (shared with build_storeline); cosmetic — rekey replaces it
-
-# shop_type priority: first match wins (advisory). Finalized from the real Category:Shops subcats in Task 6;
-# this order is the default — a more specific weapon/armour type beats a generic "Stores"/"General stores".
-SHOP_TYPE_PRIORITY = [
-    "Archery shops", "Crossbow shops", "Weapon shops", "Sword shops", "Mace shops", "Axe shops",
-    "Armour shops", "Chainbody shops", "Plate shops", "Shield shops", "Helmet shops",
-    "Magic shops", "Rune shops", "Staff shops", "Battlestaff shops",
-    "Crafting shops", "Clothes shops", "Jewellery shops", "Silver shops", "Gem shops",
-    "Cooking shops", "Food shops", "Fishing shops", "Farming shops", "Seed shops", "Herblore shops",
-    "Mining shops", "Smithing shops", "Woodcutting shops", "Hunter shops", "Pet shops", "Slayer shops",
-    "Candle shops", "Dye shop", "Pottery shops", "Stationery shops", "General stores",
-]
 
 
 def _edge_id(src_id: str, slot: str) -> int:
@@ -437,20 +435,12 @@ def shop_roster(storeline_records, varrock_shop_names):
     return [s for s in soldby if s not in owned]
 
 
-def _page_to_cats(shop_categories):
-    out: dict[str, list[str]] = {}
-    for cat, pages in shop_categories.items():
-        for p in pages:
-            out.setdefault(p, []).append(cat)
-    return out
-
-
-def shop_type_for(title, page_to_cats):
-    cats = set(page_to_cats.get(title, []))
-    for c in SHOP_TYPE_PRIORITY:
-        if c in cats:
-            return c
-    return next(iter(sorted(cats)), None)      # any category (deterministic) if none in the priority list
+def shop_type_for(icon):
+    """Derive the shop type from the infobox icon (the in-game map-icon legend IS the type taxonomy):
+    '[[File:Archery shop icon.png]]' -> 'Archery shop'. The fine 'X shops' categories don't exist as wiki
+    categories, so the icon is the structured source. None if absent/unparseable (never fabricated)."""
+    m = re.search(r"File:\s*(.+?)\s+icon\.png", icon or "", re.IGNORECASE)
+    return m.group(1).strip() if m else None
 
 
 def _members(infobox):
@@ -460,11 +450,9 @@ def _members(infobox):
     return {"yes": True, "no": False}.get(v.strip().lower())
 
 
-def build_shops(storeline_records, shop_infoboxes, shop_categories, place_nodes,
-                dict_records, varrock_shop_names):
+def build_shops(storeline_records, shop_infoboxes, place_nodes, dict_records, varrock_shop_names):
     nodes: list[Node] = []
     edges: list[Edge] = []                     # located_in (Task 3) + sells (Task 4) land here
-    page_to_cats = _page_to_cats(shop_categories)
     by_shop = index_by_shop(storeline_records)
     infobox_titles = list(shop_infoboxes)
 
@@ -482,7 +470,7 @@ def build_shops(storeline_records, shop_infoboxes, shop_categories, place_nodes,
         ib_title = match_shop(name, infobox_titles)
         ib = shop_infoboxes.get(ib_title) if ib_title else None
         data: dict = {}
-        st = shop_type_for(ib_title, page_to_cats) if ib_title else None
+        st = shop_type_for((ib or {}).get("icon"))
         if st:
             data["shop_type"] = st
         m = _members(ib)
@@ -545,8 +533,8 @@ def _locedges(edges):
 
 def _shop(recs_name, locations):
     recs = [{"sold_by": recs_name, "sold_item": "Pot"}]
-    ib = {recs_name: {"locations": locations, "members": "No", "owner": []}}
-    return build_shops(recs, ib, {}, PLACES, [], set())
+    ib = {recs_name: {"locations": locations, "members": "No", "owner": [], "icon": None}}
+    return build_shops(recs, ib, PLACES, [], set())
 
 def test_single_location_emits_located_in():
     nodes, edges, _ = _shop("Al Kharid General Store", ["[[Al Kharid]]"])
@@ -659,18 +647,18 @@ def _sells(edges):
     return {(e.src, e.dst) for e in edges if e.type is EdgeType.SELLS}
 
 def test_sells_emitted_for_resolved_items():
-    nodes, edges, _ = build_shops(RECS, IB, {}, [], DICT, set())
+    nodes, edges, _ = build_shops(RECS, IB, [], DICT, set())
     s = _sells(edges)
     assert ("shop:al-kharid-general-store", "item:1931") in s
     assert ("shop:al-kharid-general-store", "item:1935") in s
 
 def test_unresolved_item_skipped_not_fabricated():
-    nodes, edges, _ = build_shops(RECS, IB, {}, [], DICT, set())
+    nodes, edges, _ = build_shops(RECS, IB, [], DICT, set())
     assert not any(e.dst == "item:None" for e in edges)
     assert all(e.dst is not None for e in edges)
 
 def test_sells_edge_has_no_currency_or_price_keys():
-    nodes, edges, _ = build_shops(RECS, IB, {}, [], DICT, set())
+    nodes, edges, _ = build_shops(RECS, IB, [], DICT, set())
     sells = next(e for e in edges if e.type is EdgeType.SELLS)
     for forbidden in ("currency", "store_currency", "price", "cost"):
         assert forbidden not in sells.data           # validate_cost Inv 6
@@ -908,8 +896,8 @@ git commit -m "feat(shop-layer): coverage + source-grounding verifiers (report-n
   `tests/kg_ingest/test_verify_shops.py`
 
 **Interfaces:**
-- Consumes everything above. Wires `build_shops` into the pipeline; finalizes `SHOP_TYPE_PRIORITY` against the
-  real category set; registers `multi_location`; adds shop competency questions.
+- Consumes everything above. Wires `build_shops` into the pipeline; sanity-checks the icon-derived `shop_type`;
+  registers `multi_location`; adds shop competency questions.
 
 - [ ] **Step 1: Add `multi_location` to the schema (additive)**
 
@@ -921,20 +909,14 @@ In `kg/schema.json`, change the `shop` node-kind `data_keys` from
 Add path constants near the other `*_PATH` definitions (after `WORLD_PARENTING_PATH`):
 ```python
 SHOP_INFOBOX_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "wiki_shop_infoboxes.json"
-SHOP_CATEGORY_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "wiki_shop_categories.json"
 ```
-Add loaders near `_load_storeline_records`:
+Add a loader near `_load_storeline_records` (the category snapshot is loaded only by `verify_shop_coverage`, not
+assemble — `shop_type` comes from the infobox icon, so `build_shops` needs no categories):
 ```python
 def _load_shop_infoboxes() -> dict | None:
     if not SHOP_INFOBOX_PATH.exists():
         return None
     return json.loads(SHOP_INFOBOX_PATH.read_text())["infoboxes"]
-
-
-def _load_shop_categories() -> dict | None:
-    if not SHOP_CATEGORY_PATH.exists():
-        return None
-    return json.loads(SHOP_CATEGORY_PATH.read_text())["categories"]
 ```
 Add the import near `from kg_ingest.builders.storeline import build_storeline`:
 ```python
@@ -946,12 +928,12 @@ Immediately AFTER the `build_storeline` block (after `groups.update(st_groups)`)
     # All-shops layer: every Storeline shop (minus the 15 Varrock-owned) -> a shop: node parented into the
     # skeleton. shop-src edges (located_in + item-only sells) -> their OWN seeded rekey (same owner class as
     # build_map's located_in + build_storeline's sells, so seed from the per-owner counts already in `edges`).
-    _shop_ib, _shop_cats = _load_shop_infoboxes(), _load_shop_categories()
-    if _map is not None and _shop_ib is not None and _shop_cats is not None:
+    _shop_ib = _load_shop_infoboxes()
+    if _map is not None and _shop_ib is not None:
         _place_nodes = [n for n in (world_nodes + map_nodes) if n.kind == NodeKind.PLACE]
         _varrock_names = {s["name"] for s in _map["shops"]}
         sh_nodes, sh_edges, _ = build_shops(
-            _load_storeline_records(), _shop_ib, _shop_cats, _place_nodes,
+            _load_storeline_records(), _shop_ib, _place_nodes,
             _load_item_dict_records(), _varrock_names)
         _seed_sh: dict[str, int] = {}
         for _e in edges:
@@ -975,15 +957,14 @@ git diff --stat kg/                        # second run shows NO change
 ```
 Expected: `validate_kg` and `validate_cost` both PASS; re-running assemble leaves `kg/*.json` byte-identical.
 
-- [ ] **Step 4: Finalize `SHOP_TYPE_PRIORITY` against the real categories**
+- [ ] **Step 4: Sanity-check the icon-derived `shop_type` distribution**
 
-Inspect the real subcategory names and ensure each maps to a sensible priority:
 ```bash
-./venv/bin/python -c "import json; print(sorted(json.load(open('data/raw/wiki_shop_categories.json'))['categories']))"
+./venv/bin/python -c "import json,collections; n=json.load(open('kg/nodes.json')); print(collections.Counter(x['data'].get('shop_type') for x in n if x['id'].startswith('shop:')).most_common(25))"
 ```
-Adjust `SHOP_TYPE_PRIORITY` in `kg_ingest/builders/shops.py` so the actual category names are covered (any not
-in the list still resolve via the deterministic `sorted(cats)` fallback — advisory, so this is tuning, not
-correctness). Re-assemble + re-run the byte-stable check if changed.
+Expected: clean type names (`General store`, `Magic shop`, `Archery shop`, `Gem shop`, …) — the in-game
+map-icon taxonomy. A tail of `None` (shops whose page has no parseable icon) is acceptable — `shop_type` is
+advisory/report-not-fail. No code change unless a malformed type name appears (then fix `shop_type_for`'s regex).
 
 - [ ] **Step 5: Run the verifiers (now against the wired graph)**
 
