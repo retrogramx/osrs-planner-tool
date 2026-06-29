@@ -4,7 +4,7 @@ A public, account-type-aware Old School RuneScape **profile + goal/route planner
 **knowledge graph**. Evolved from earlier domain "bricks" (quests, diaries, drops, cost/income, account
 ingestion) toward a **richly-typed entity graph of all of Gielinor**.
 
-## ⭐ Current direction — v2 ontology + item-facet + location spine + the FIRST bottom-up layer (shops) all MERGED; next = the remaining bottom-up layers.
+## ⭐ Current direction — v2 ontology + item-facet + location spine + the first two bottom-up layers (shops + NPC operators) all MERGED; next = the remaining bottom-up layers.
 - **`kg/schema.json`** is the ontology AS DATA (single source of truth; closed vocab + `legacy_*` sections) — the
   contract `validate_kg.py` enforces. Prose spec: `docs/superpowers/specs/2026-06-25-entity-graph-ontology-v2.md`.
 - **Done & on `main`:** (PR #16) schema-as-data + the **item-facet layer** (item nodes/variants `same_entity`, charge
@@ -18,11 +18,17 @@ ingestion) toward a **richly-typed entity graph of all of Gielinor**.
   enforced in `verify_world` AND `validate_kg`); (PR #21) the **all-shops layer** — every `Bucket:Storeline` shop (568
   derived + 15 Varrock) as a `shop:` node parented `located_in` the skeleton via a new shop-infobox brick
   (`fetch_shop_infoboxes.py`; `shop_type` from the infobox **`icon`**, NOT categories — the fine "X shops" categories
-  don't exist on the wiki), item-only `sells` (currency deferred — §Conventions), `verify_shops` + `verify_shop_coverage`.
-  Graph = **4995 nodes / 9337 edges** (wiring shops auto-imported ~1000 equippable items). Foundation audited GREEN (8/8 bricks reproduce from `data/raw/`).
-- **← NOW: the remaining bottom-up layers (shops ✅ PR #21).** The in-game `Map_icon` legend is the authoritative
-  roadmap: **NPCs/tutors next** (operators + the slayer-master role — resolves the deferred multi-location shops) ·
-  objects/resources (training spots) · transport (nodes + `gives_access`, built together) · facilities (banks/altars/GE).
+  don't exist on the wiki), item-only `sells` (currency deferred — §Conventions), `verify_shops` + `verify_shop_coverage`;
+  (PR #23) the **NPC operator layer** — every shop operator (~423, from the shop brick's `owner` field) as an `npc:` node
+  parented via a new npc-infobox brick (`fetch_npc_infoboxes.py`; the brick is the NPC filter — no `{{Infobox NPC}}` →
+  not a node), with `operates` edges (closing the shop layer's deferred operators) — and the 14 multi-location shops
+  RESOLVED via operators (the 13 Slayer-Rewards masters each `located_in` its place; `role` unset, `operates`-edge-only,
+  NO role node), `verify_npcs` + `verify_npc_coverage`. Graph = **5418 nodes / 10137 edges**. Foundation audited GREEN (8/8 bricks reproduce from `data/raw/`).
+- **← NOW: the remaining bottom-up layers (shops ✅ PR #21 · NPC operators ✅ PR #23).** The in-game `Map_icon` legend is
+  the authoritative roadmap: **objects/resources next** (training spots: anvils/furnaces/fishing/mining/farming) ·
+  transport (nodes + `gives_access`, built together) · facilities (banks/altars/GE). (Broader NON-operator NPCs — skill
+  tutors, slayer-masters-as-a-role, bankers, quest-givers — are DEFERRED: not category-sourceable on the wiki, need their
+  own source-hunt.)
   Each from its OWN structured wiki source + its own coverage verifier; each layer's `located_in` is a completeness
   CROSS-CHECK on the skeleton — and reuses the skeleton's `parent_for` machinery (`world_parenting.json` is the
   owner-override escape hatch). Roadmap: `docs/superpowers/specs/2026-06-27-world-skeleton-design.md` §7.
@@ -80,8 +86,9 @@ ingestion) toward a **richly-typed entity graph of all of Gielinor**.
    coverage verifier). New place_types `sea` + `point_of_interest`; `members` flag; two-level typing (`place_type` coarse,
    `content_kind` advisory). Account-wide unlocks ride as conditional edge-modifiers gated by diary/quest completion.
    Then **re-homing** (PR #20): `parent_for` signal stack + `world_parenting.json` + acyclicity gate, residual → 11.
-4. ← **NOW: the bottom-up layers** — shops ✅ (PR #21, `build_shops` + `fetch_shop_infoboxes.py` brick) · NPCs (next) ·
-   objects/resources · transport (`gives_access`) · facilities, each `located_in` the skeleton + its own structured source + coverage verifier.
+4. ← **NOW: the bottom-up layers** — shops ✅ (PR #21, `build_shops`) · NPC operators ✅ (PR #23, `build_npcs` +
+   `fetch_npc_infoboxes.py`; operates + multi-location resolution) · objects/resources (next) · transport (`gives_access`) ·
+   facilities, each `located_in` the skeleton + its own structured source + coverage verifier.
 5. **Then (deferred):** full item-roster scale-up · wield-requirements (`requires` cond_group) · intrinsic attrs
    (value/alch/weight/tradeable) · facility-recharge + the `service` edge (repair fee) · chunk geometry · governance
    edges + `faction` nodes · cache-id node-import · aliases.
@@ -113,9 +120,10 @@ ingestion) toward a **richly-typed entity graph of all of Gielinor**.
   precedence bugs this way in PR #20). `parent_for` = precision-first rungs with backbone-preference PER RUNG (a content
   category beats a backbone infobox). The committed place graph must stay acyclic & single-rooted at `place:gielinor`
   (now a `validate_kg` hard-fail, not just `verify_world`).
-- **Status: item-facet + connective Varrock + world skeleton + re-homing + the all-shops layer MERGED to `main` (PRs
-  #16/#17/#19/#20/#21); graph 4995 nodes / 9337 edges. Residuals (disclosed, report-not-fail): world-skeleton parenting
-  = 11; shops = 357 parented / 14 multi-location-deferred / 197 FLAG (50 NPC-sellers + 103 infobox-no-location + 44
-  infobox-location-unresolved — the 44 are a place-layer to-do: name-norm + missing skeleton places).** New work branches off `main`.
+- **Status: item-facet + connective Varrock + world skeleton + re-homing + all-shops + NPC-operators layers + the edge-id
+  SPAN widen MERGED to `main` (PRs #16/#17/#19/#20/#21/#22/#23); graph 5418 nodes / 10137 edges. Residuals (disclosed,
+  report-not-fail): world-skeleton parenting = 11; shops = 357 parented / 14 multi-loc / 197 FLAG (50+103+44); NPC
+  operators = 357 located_in / 19 multi-loc / 47 location-unresolved + 6 Varrock-overlap (build_map owns them). The 44
+  shop + 47 npc location-unresolved OVERLAP = the place-layer backfill to-do (missing skeleton places + name-norm).** New work branches off `main`.
 - Licensing seam (non-commercial project): wiki text = CC BY-NC-SA; cache content = Jagex IP; decoder tooling = BSD/ISC.
 ```
