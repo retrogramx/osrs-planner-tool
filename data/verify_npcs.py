@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Source-grounding gate for the operator layer. HARD-FAILS (exit 1) on structural breaches: an `operates` edge
 whose (npc, shop) has no backing shop-brick `owner` entry, or a derived npc `located_in` whose dst is not a
-committed place node. REPORTS (exit 0 otherwise) resolution residuals (owner links with no {{Infobox NPC}}).
+committed place node. Otherwise PASSES (exit 0). Resolution residuals (owner links with no {{Infobox NPC}},
+unresolved locations) are reported by verify_npc_coverage.py, not here.
 """
 from __future__ import annotations
 import json, os, sys
