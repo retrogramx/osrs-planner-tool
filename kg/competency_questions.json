@@ -31,5 +31,8 @@
     ,{ "id": "cq-varrock-region-chain",
       "question": "What kingdom and continent is Varrock in?",
       "method": "region_chain", "target": "place:varrock", "expect_min": 3 }
+    ,{ "id": "cq-meiyerditch-mine-region-chain",
+      "question": "What contains the Meiyerditch mine?",
+      "method": "region_chain", "target": "place:meiyerditch-mine", "expect_min": 3 }
   ]
 }
