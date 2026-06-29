@@ -9275,7 +9275,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:miscellania-and-etceteria-dungeon",
     "id": 7000992,
     "src": "place:miscellania-and-etceteria-dungeon-mine",
     "type": "located_in"

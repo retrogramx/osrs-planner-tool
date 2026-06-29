@@ -3,7 +3,7 @@
   "description": "Owner-authored editorial overrides for place parenting. Each entry fixes a wrong-pick (auto-resolution chose the wrong parent) or homes an activity whose infobox is empty. Applied by build_world as rung-1 overrides (before category/name-suffix/infobox signals). source_token is a verbatim quote from source_url establishing the parent relationship.",
   "locked_on": "2026-06-28",
   "grounding_gaps": [
-   "place:dragonkin-castle: the Dragonkin Castle wiki page says only 'The Dragonkin Castle is one of the castles of the ancient Dragonkin' and has infobox location=Unknown. The Lithkren page does not name 'Dragonkin Castle'. No verbatim cross-reference exists; override omitted — place remains flagged until owner provides a source.",
+   "place:dragonkin-castle: re-verified 2026-06-28 against both wiki pages. The Dragonkin Castle page lists infobox location=Unknown and names only A Tail of Two Cats / Burthorpe / Pyramid Plunder — never Lithkren or Fossil Island. The Lithkren page describes a 'fortress' (Zorgoth's Dragon Slayer II base) but never names 'Dragonkin Castle'; they read as distinct structures. No verbatim cross-reference exists; override OMITTED (never-fabricate) — place remains flagged until owner provides a source.",
    "place:daimon-s-crater: override targets place:untamed-ocean to mirror backbone place:daimons-crater (same island, slug-collision). Wiki text names Bounty Hunter/Wilderness context, not Untamed Ocean directly; this is an editorial merge decision by the owner.",
    "place:giants-foundry: wiki page names 'Giants Plateau' as container, not 'Kharidian Desert' directly. Override is editorial (plateau is east of Al Kharid, within the desert region); token is verbatim from the Foundry page."
   ]
@@ -58,6 +58,11 @@
    "parent": "place:ynysdail",
    "source_url": "https://oldschool.runescape.wiki/w/Ynysdail_Cavern",
    "source_token": "Ynysdail Cavern is a dungeon beneath Ynysdail."
+  },
+  "place:miscellania-and-etceteria-dungeon-mine": {
+   "parent": "place:miscellania-and-etceteria-dungeon",
+   "source_url": "https://oldschool.runescape.wiki/w/Miscellania_and_Etceteria_Dungeon_mine",
+   "source_token": "Miscellania and Etceteria Dungeon mine is a small mining site found near the entrance to Miscellania and Etceteria dungeon"
   }
  }
 }
