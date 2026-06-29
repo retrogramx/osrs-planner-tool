@@ -53,3 +53,31 @@ def operator_roster(storeline_records, shop_infoboxes, varrock_shop_names):
     """Sorted distinct operator NPC page-names across the derived roster (the npc-fetch page list)."""
     m = operator_map(storeline_records, shop_infoboxes, varrock_shop_names)
     return sorted({npc for npcs in m.values() for npc in npcs})
+
+
+def build_npcs(storeline_records, shop_infoboxes, npc_infoboxes, place_nodes,
+               varrock_shop_names, varrock_npc_names):
+    """Operator npcs. varrock_shop_names excludes Varrock shops from the roster (via operator_map);
+    varrock_npc_names excludes the 15 hand-authored Varrock npcs (build_map owns them)."""
+    nodes: list[Node] = []
+    edges: list[Edge] = []                     # located_in (Task 3) + operates (Task 4) land here
+    roster = operator_roster(storeline_records, shop_infoboxes, varrock_shop_names)
+
+    claimed: dict[str, str] = {}               # slug -> first name (collision guard)
+    for name in roster:
+        ib = npc_infoboxes.get(name)
+        if not ib or not ib.get("is_npc"):
+            continue                           # owner link with no {{Infobox NPC}} (quest/item) -> not an npc
+        if name in varrock_npc_names:
+            continue                           # build_map owns the Varrock npcs
+        nid = _npc_slug(name)
+        if nid in claimed:                     # distinct names, same slug -> NEVER silently merge
+            k = 2
+            while f"{nid}-{k}" in claimed:
+                k += 1
+            print(f"[npcs] slug collision: {name!r} and {claimed[nid]!r} -> {nid}; using {nid}-{k}")
+            nid = f"{nid}-{k}"
+        claimed[nid] = name
+        nodes.append(Node(id=nid, kind=NodeKind.NPC, name=name, slug=nid.split(":", 1)[1], data={}))
+
+    return nodes, edges, {}
