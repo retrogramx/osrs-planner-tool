@@ -8,3 +8,4 @@ def test_npc_infobox_snapshot_shape():
     sample = next(iter(d["infoboxes"].values()))
     assert set(sample) >= {"locations", "is_npc", "source_url"}
     assert any(v["is_npc"] for v in d["infoboxes"].values())   # some operators are real NPCs
+    assert any(not v["is_npc"] for v in d["infoboxes"].values())   # the NPC filter: non-NPC owner links recorded, not invented
