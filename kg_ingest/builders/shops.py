@@ -4,7 +4,9 @@ Roster = Storeline sold_by minus the Varrock-owned shops (build_map owns those).
 Each shop -> a shop: node (shop_type from the type-category, members from the
 infobox), parented located_in a skeleton place via its infobox location (Task 3),
 with item-only sells from Storeline (Task 4). Operators are DEFERRED to the NPC
-layer. Edges are shop-src -> assemble re-keys them in their OWN seeded call.
+layer. assemble assigns SEQUENTIAL global ids to shop edges (the builder-local ids
+below are deterministic placeholders, overwritten in assemble); rekey() is NOT used
+for shop edges because stable_edge_id's SPAN=2M birthday-collides at ~6k edges.
 Never fabricates: unmatched/unparented -> reported, never invented.
 """
 from __future__ import annotations
@@ -17,7 +19,7 @@ from kg_ingest.builders.map_varrock import make_item_resolver
 from kg_ingest.builders.storeline import match_shop, index_by_shop
 from kg_ingest.builders.world import parse_infobox_links, _norm
 
-_EDGE_BAND = 0xF0000000        # shop-src family (shared with build_storeline); cosmetic — rekey replaces it
+_EDGE_BAND = 0xF0000000        # shop-src family (shared with build_storeline); cosmetic — assemble's sequential overwrite replaces it
 
 
 def _edge_id(src_id: str, slot: str) -> int:
