@@ -64,6 +64,12 @@ def build_npcs(storeline_records, shop_infoboxes, npc_infoboxes, place_nodes,
     roster = operator_roster(storeline_records, shop_infoboxes, varrock_shop_names)
     name_index = build_place_name_index(place_nodes)
 
+    op_map = operator_map(storeline_records, shop_infoboxes, varrock_shop_names)
+    npc_to_shops: dict[str, list[str]] = {}
+    for shop_name, npcs in op_map.items():
+        for npc in npcs:
+            npc_to_shops.setdefault(npc, []).append(shop_name)
+
     claimed: dict[str, str] = {}               # slug -> first name (collision guard)
     for name in roster:
         ib = npc_infoboxes.get(name)
@@ -86,5 +92,8 @@ def build_npcs(storeline_records, shop_infoboxes, npc_infoboxes, place_nodes,
             edges.append(Edge(id=_edge_id(nid, "located_in"), type=EdgeType.LOCATED_IN,
                               src=nid, dst=places[0], cond_group=None, data={}))
         # len(places) == 0 -> unparented FLAG (no edge), reported by verify_npc_coverage
+        for j, shop_name in enumerate(npc_to_shops.get(name, [])):
+            edges.append(Edge(id=_edge_id(nid, f"op#{j}"), type=EdgeType.OPERATES,
+                              src=nid, dst=_shop_slug(shop_name), cond_group=None, data={}))
 
     return nodes, edges, {}

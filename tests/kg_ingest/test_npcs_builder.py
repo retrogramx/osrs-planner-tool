@@ -18,7 +18,7 @@ def test_build_npcs_emits_node_for_real_npc_only():
     n = next(n for n in nodes if n.id == "npc:shop-keeper-al-kharid")
     assert n.kind is NodeKind.NPC
     assert "role" not in n.data                        # role left unset (D2)
-    assert edges == [] and groups == {}
+    assert groups == {}           # operates edges now present (Task 4), but no cond_groups
 
 def test_varrock_npcs_excluded():
     npc_ib = {"Aubury": {"locations": ["[[Varrock]]"], "is_npc": True}}
