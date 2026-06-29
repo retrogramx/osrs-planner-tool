@@ -14,6 +14,7 @@ import re
 from osrs_planner.engine.kg.model import Edge, EdgeType, Node, NodeKind
 from kg_ingest.ids import _stable_hash, slugify
 from kg_ingest.builders.storeline import match_shop, index_by_shop
+from kg_ingest.builders.world import parse_infobox_links, _norm
 
 _EDGE_BAND = 0xF0000000        # shop-src family (shared with build_storeline); cosmetic — rekey replaces it
 
@@ -24,6 +25,28 @@ def _edge_id(src_id: str, slot: str) -> int:
 
 def _shop_slug(name: str) -> str:
     return "shop:" + slugify(name)
+
+
+def build_place_name_index(place_nodes):
+    """Map _norm(place name) -> place id over the committed place graph. setdefault +
+    sorted-by-id -> deterministic first-wins on a name collision."""
+    idx: dict[str, str] = {}
+    for n in sorted(place_nodes, key=lambda n: n.id):
+        if n.id.startswith("place:"):
+            idx.setdefault(_norm(n.name), n.id)
+    return idx
+
+
+def resolve_shop_places(locations, name_index):
+    """Parse each infobox location value -> wikilink targets -> place ids, distinct + ordered.
+    A link that doesn't resolve to a place is dropped (reported as unparented, never guessed)."""
+    out: list[str] = []
+    for raw in locations:
+        for target in parse_infobox_links(raw):
+            pid = name_index.get(_norm(target))
+            if pid and pid not in out:
+                out.append(pid)
+    return out
 
 
 def shop_roster(storeline_records, varrock_shop_names):
@@ -56,6 +79,7 @@ def build_shops(storeline_records, shop_infoboxes, place_nodes, dict_records, va
     # by_shop + Edge/EdgeType: consumed by Task 3 (located_in) and Task 4 (sells) — not dead code
     by_shop = index_by_shop(storeline_records)
     infobox_titles = list(shop_infoboxes)
+    name_index = build_place_name_index(place_nodes)
 
     claimed: dict[str, str] = {}               # slug -> first sold_by (collision guard)
     for name in shop_roster(storeline_records, varrock_shop_names):
@@ -79,6 +103,13 @@ def build_shops(storeline_records, shop_infoboxes, place_nodes, dict_records, va
         m = _members(ib)
         if m is not None:
             data["members"] = m
+        places = resolve_shop_places((ib or {}).get("locations", []), name_index)
+        if len(places) > 1:
+            data["multi_location"] = True                    # deferred to the NPC layer (no arbitrary primary)
         nodes.append(Node(id=sid, kind=NodeKind.SHOP, name=name, slug=sid.split(":", 1)[1], data=data))
+        if len(places) == 1:
+            edges.append(Edge(id=_edge_id(sid, "located_in"), type=EdgeType.LOCATED_IN,
+                              src=sid, dst=places[0], cond_group=None, data={}))
+        # len(places) == 0 -> unparented FLAG (no edge), reported by verify_shop_coverage
 
     return nodes, edges, {}
