@@ -15,7 +15,7 @@ def test_stable_group_id_is_deterministic_and_domain_offset():
     from kg_ingest.assemble import stable_group_id
     a = stable_group_id("quest:dragon-slayer-i", 0)
     assert a == stable_group_id("quest:dragon-slayer-i", 0)
-    assert 4_000_000 <= a < 6_000_000
+    assert (1 << 49) <= a < (1 << 49) + (1 << 48)
     assert stable_group_id("quest:dragon-slayer-i", 1) != a
     assert stable_group_id("quest:monkey-madness-i", 0) != a
 
@@ -24,7 +24,7 @@ def test_stable_edge_id_is_deterministic_and_distinct_domain():
     from kg_ingest.assemble import stable_edge_id, stable_group_id
     e = stable_edge_id("quest:dragon-slayer-i", 0)
     assert e == stable_edge_id("quest:dragon-slayer-i", 0)
-    assert 6_000_000 <= e < 8_000_000
+    assert (1 << 50) <= e < (1 << 50) + (1 << 48)
     assert stable_edge_id("quest:x", 0) != stable_group_id("quest:x", 0)
 
 
@@ -69,9 +69,9 @@ def test_rekey_raises_on_group_id_collision(monkeypatch):
     stable_group_id return a CONSTANT for every input — the toy builder's root +
     sub groups then collide."""
     import kg_ingest.assemble as A
-    monkeypatch.setattr(A, "stable_group_id", lambda owner, idx: 4_000_000)
+    monkeypatch.setattr(A, "stable_group_id", lambda owner, idx: 1 << 49)
     nodes, edges, groups = _toy_builder_output()
-    with pytest.raises(ValueError, match="group id collision at 4000000"):
+    with pytest.raises(ValueError, match=f"group id collision at {1 << 49}"):
         A.rekey(nodes, edges, groups)
 
 
@@ -82,8 +82,8 @@ def test_rekey_raises_on_edge_id_collision(monkeypatch):
     node = Node(id="quest:toy", kind=NodeKind.QUEST, name="Toy", slug="toy", data={})
     e1 = Edge(id=10, type=EdgeType.REQUIRES, src="quest:toy", dst="skill:attack", cond_group=None)
     e2 = Edge(id=11, type=EdgeType.REQUIRES, src="quest:toy", dst="skill:strength", cond_group=None)
-    monkeypatch.setattr(A, "stable_edge_id", lambda owner, idx: 6_000_000)
-    with pytest.raises(ValueError, match="edge id collision at 6000000"):
+    monkeypatch.setattr(A, "stable_edge_id", lambda owner, idx: 1 << 50)
+    with pytest.raises(ValueError, match=f"edge id collision at {1 << 50}"):
         A.rekey([node], [e1, e2], {})
 
 

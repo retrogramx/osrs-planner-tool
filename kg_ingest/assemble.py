@@ -10,7 +10,8 @@ assembler RE-KEYS every group/edge to a global id derived ONLY from the owning
 node id + a stable per-owner local index, so kg/*.json is reproducible (no churn).
     group id = GROUP_OFFSET + (sha1(f"{owner}#g{idx}") mod SPAN)
     edge  id = EDGE_OFFSET  + (sha1(f"{owner}#e{idx}") mod SPAN)
-GROUP_OFFSET (4M) and EDGE_OFFSET (6M) are disjoint 2M-wide domains.
+GROUP_OFFSET (1<<49) and EDGE_OFFSET (1<<50) are disjoint SPAN(=1<<48)-wide domains, both < 2^53 (JS-safe).
+SPAN=1<<48 keeps sha1-mod-SPAN collisions negligible at any realistic graph size (rekey still fail-fasts on one).
 """
 from __future__ import annotations
 
@@ -43,9 +44,9 @@ from kg_ingest.builders.shops import build_shops
 from kg_ingest.builders.storeline import build_storeline
 from kg_ingest.builders.supporting import build_supporting
 
-GROUP_OFFSET = 4_000_000
-EDGE_OFFSET = 6_000_000
-SPAN = 2_000_000
+GROUP_OFFSET = 1 << 49          # group ids in [2^49, 2^49+SPAN)
+EDGE_OFFSET = 1 << 50           # edge  ids in [2^50, 2^50+SPAN) — disjoint from the group domain
+SPAN = 1 << 48                  # hash window; collisions negligible at any graph size, ids stay < 2^53 (JS-safe)
 
 
 def _stable_int(key: str, offset: int) -> int:
@@ -495,12 +496,8 @@ def assemble() -> None:
         groups.update(st_groups)
 
     # All-shops layer: every Storeline shop (minus the 15 Varrock-owned) -> a shop: node parented into the
-    # skeleton. shop-src edges (located_in + item-only sells) use sequential IDs in a dedicated band
-    # disjoint from the hash-band [6M, 8M). Hash-band rekey is not viable here: 6000+ sells edges across
-    # 568 shops cause ~100% birthday-paradox collision probability in SPAN=2M. Sequential IDs are equally
-    # deterministic given build_shops' sorted roster iteration; the global edge-id-uniqueness assert below
-    # is the backstop confirming no overlap with existing edges.
-    _SHOP_EDGE_BASE = 100_000_000  # sequential band starts well beyond hash-band [6M, 8M)
+    # skeleton. shop-src edges (located_in + item-only sells) -> their OWN seeded rekey (same owner class as
+    # build_map's located_in + build_storeline's sells; seed from the per-owner edge counts already in `edges`).
     sh_nodes: list[Node] = []
     _shop_ib = _load_shop_infoboxes()
     if _map is not None and _shop_ib is not None:
@@ -509,9 +506,10 @@ def assemble() -> None:
         sh_nodes, sh_edges, _ = build_shops(
             _load_storeline_records(), _shop_ib, _place_nodes,
             _load_item_dict_records(), _varrock_names)
-        sh_edges = [Edge(id=_SHOP_EDGE_BASE + i, type=e.type, src=e.src, dst=e.dst,
-                         cond_group=e.cond_group, data=e.data)
-                    for i, e in enumerate(sh_edges)]
+        _seed_sh: dict[str, int] = {}
+        for _e in edges:
+            _seed_sh[_e.src] = _seed_sh.get(_e.src, 0) + 1
+        sh_nodes, sh_edges, _ = rekey(sh_nodes, sh_edges, {}, edge_index_seed=_seed_sh)
         edges = edges + sh_edges
         owned_ids = owned_ids | {n.id for n in sh_nodes}
 
