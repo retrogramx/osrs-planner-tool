@@ -21,17 +21,29 @@ def _is_beta(page: str | None) -> bool:
     return "(beta)" in (page or "").lower()
 
 
+def _all_zero_stats(stats: dict | None) -> bool:
+    return all(v == 0 for v in (stats or {}).values())
+
+
 def select_bonus_record(records: list[dict], canonical_page: str | None) -> dict:
     canon = [r for r in records if r.get("page_name") == canonical_page]
     pool = canon or [r for r in records if not _is_beta(r.get("page_name"))] or records
 
     def rank(r):
         vi = r.get("stat_variant_index")
+        is_zero = _all_zero_stats(r.get("stats"))
+        # Prefer: index=0 non-zero (0,0) > no-index (1,0) > index>0 non-zero (2,vi) >
+        #         index=0 all-zero (3,0) > index>0 all-zero (4,vi).
+        # The (3,0) demotion prevents the empty-variant selection bug: when index=0 is the
+        # inactive/uncharged form with all-zero stats but a non-zero active form exists at a
+        # higher index, we prefer the active form (which the verifier flags as a selection bug).
         if vi == 0:
-            return (0, 0)
+            return (0, 0) if not is_zero else (3, 0)
         if vi is None:
+            # Intentional: a no-index record is NOT demoted even if all-zero — no real item
+            # currently triggers this edge case; revisit if one ever does.
             return (1, 0)
-        return (2, vi)
+        return (2, vi) if not is_zero else (4, vi)
 
     return sorted(pool, key=rank)[0]
 

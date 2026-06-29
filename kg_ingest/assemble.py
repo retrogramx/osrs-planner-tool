@@ -18,7 +18,7 @@ import hashlib
 import json
 from pathlib import Path
 
-from osrs_planner.engine.kg.model import ConditionAtom, ConditionGroup, Edge, Node
+from osrs_planner.engine.kg.model import ConditionAtom, ConditionGroup, Edge, Node, NodeKind
 from osrs_planner.engine.kg.json_store import (
     atom_to_dict as serialize_atom,
     node_to_dict as serialize_node,
@@ -39,6 +39,7 @@ from kg_ingest.builders.quest_rewards import build_quest_rewards
 from kg_ingest.builders.quests import build_quests
 from kg_ingest.builders.recipes import build_recipes
 from kg_ingest.builders.repairs import build_repairs
+from kg_ingest.builders.shops import build_shops
 from kg_ingest.builders.storeline import build_storeline
 from kg_ingest.builders.supporting import build_supporting
 
@@ -292,6 +293,7 @@ WORLD_BACKBONE_PATH = Path(__file__).resolve().parents[1] / "data" / "map" / "wo
 WORLD_SNAPSHOT_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "wiki_location_categories.json"
 WORLD_INFOBOX_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "wiki_location_infoboxes.json"
 WORLD_PARENTING_PATH = Path(__file__).resolve().parents[1] / "data" / "map" / "world_parenting.json"
+SHOP_INFOBOX_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "wiki_shop_infoboxes.json"
 
 
 def _load_world_infoboxes() -> dict | None:
@@ -328,6 +330,12 @@ def _load_storeline_records() -> list[dict]:
     if not STORELINE_RAW_PATH.exists():
         return []
     return json.loads(STORELINE_RAW_PATH.read_text())["bucket"]
+
+
+def _load_shop_infoboxes() -> dict | None:
+    if not SHOP_INFOBOX_PATH.exists():
+        return None
+    return json.loads(SHOP_INFOBOX_PATH.read_text())["infoboxes"]
 
 
 ITEMS_EQUIPMENT_PATH = Path(__file__).resolve().parents[1] / "data" / "items_equipment.json"
@@ -486,6 +494,27 @@ def assemble() -> None:
         edges = edges + st_edges
         groups.update(st_groups)
 
+    # All-shops layer: every Storeline shop (minus the 15 Varrock-owned) -> a shop: node parented into the
+    # skeleton. shop-src edges (located_in + item-only sells) use sequential IDs in a dedicated band
+    # disjoint from the hash-band [6M, 8M). Hash-band rekey is not viable here: 6000+ sells edges across
+    # 568 shops cause ~100% birthday-paradox collision probability in SPAN=2M. Sequential IDs are equally
+    # deterministic given build_shops' sorted roster iteration; the global edge-id-uniqueness assert below
+    # is the backstop confirming no overlap with existing edges.
+    _SHOP_EDGE_BASE = 100_000_000  # sequential band starts well beyond hash-band [6M, 8M)
+    sh_nodes: list[Node] = []
+    _shop_ib = _load_shop_infoboxes()
+    if _map is not None and _shop_ib is not None:
+        _place_nodes = [n for n in (world_nodes + map_nodes) if n.kind == NodeKind.PLACE]
+        _varrock_names = {s["name"] for s in _map["shops"]}
+        sh_nodes, sh_edges, _ = build_shops(
+            _load_storeline_records(), _shop_ib, _place_nodes,
+            _load_item_dict_records(), _varrock_names)
+        sh_edges = [Edge(id=_SHOP_EDGE_BASE + i, type=e.type, src=e.src, dst=e.dst,
+                         cond_group=e.cond_group, data=e.data)
+                    for i, e in enumerate(sh_edges)]
+        edges = edges + sh_edges
+        owned_ids = owned_ids | {n.id for n in sh_nodes}
+
     referenced_all = _collect_referenced_ids(edges + dg_edges + rp_edges, groups)
     referenced_item_ids = {r for r in referenced_all if r.startswith("item:")} - owned_ids
     i_nodes, i_edges, _ = build_items(
@@ -528,7 +557,7 @@ def assemble() -> None:
     #    (with tasks list) is first-seen and wins if any stale supporting diary node
     #    were somehow included (it shouldn't be, since diary is excluded from _LEAF_DOMAINS).
     nodes = dedup_nodes(
-        q_nodes + g_nodes + cg_nodes + d_nodes + dg_nodes + content_nodes + r_nodes + i_nodes + eqb_nodes + world_nodes + map_nodes + s_nodes
+        q_nodes + g_nodes + cg_nodes + d_nodes + dg_nodes + content_nodes + r_nodes + i_nodes + eqb_nodes + world_nodes + map_nodes + sh_nodes + s_nodes
     )
 
     # 5) serialize, sorted deterministically.

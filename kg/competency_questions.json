@@ -34,5 +34,11 @@
     ,{ "id": "cq-meiyerditch-mine-region-chain",
       "question": "What contains the Meiyerditch mine?",
       "method": "region_chain", "target": "place:meiyerditch-mine", "expect_min": 3 }
+    ,{ "id": "cq-shop-stock-al-kharid-general",
+      "question": "What does the Al Kharid General Store sell?",
+      "method": "shop_stock", "target": "shop:al-kharid-general-store", "expect_min": 3 }
+    ,{ "id": "cq-shop-region-chain-al-kharid-general",
+      "question": "Where is the Al Kharid General Store?",
+      "method": "region_chain", "target": "shop:al-kharid-general-store", "expect_min": 2 }
   ]
 }

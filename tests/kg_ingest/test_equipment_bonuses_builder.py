@@ -44,3 +44,35 @@ def test_build_emits_node_and_edge_per_owned_item():
 def test_build_omits_weapon_block_for_armour():
     nodes, _, _ = build_equipment_bonuses(DHAROK, {"item:4716"}, {4716:"Dharok's helm"})
     assert "weapon" not in nodes[0].data
+
+
+# --- select_bonus_record all-zero demotion regression tests ---
+
+# index=0 is all-zero (uncharged/inactive form); index=1 is non-zero (active form).
+_DEMOTION_ITEM = [
+    {"item_id":99999,"item":"Test item","page_name":"Test item","slot":"weapon",
+     "stat_variant_index":0,"stats":_stats()},
+    {"item_id":99999,"item":"Test item","page_name":"Test item","slot":"weapon",
+     "stat_variant_index":1,"stats":_stats(slash_attack_bonus=50)},
+]
+
+# All variants are all-zero (genuinely statless item).
+_ALL_ZERO_ITEM = [
+    {"item_id":88888,"item":"Statless item","page_name":"Statless item","slot":"weapon",
+     "stat_variant_index":0,"stats":_stats()},
+    {"item_id":88888,"item":"Statless item","page_name":"Statless item","slot":"weapon",
+     "stat_variant_index":1,"stats":_stats()},
+]
+
+
+def test_select_prefers_nonzero_active_variant_over_zero_index_all_zero():
+    """When index=0 is all-zero and index=1 is non-zero, the non-zero active form wins."""
+    rec = select_bonus_record(_DEMOTION_ITEM, "Test item")
+    assert rec["stat_variant_index"] == 1
+    assert rec["stats"]["slash_attack_bonus"] == 50
+
+
+def test_select_returns_index_zero_when_all_variants_are_all_zero():
+    """When every variant is all-zero, the genuinely-statless index=0 record is kept."""
+    rec = select_bonus_record(_ALL_ZERO_ITEM, "Statless item")
+    assert rec["stat_variant_index"] == 0
