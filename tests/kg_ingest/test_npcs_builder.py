@@ -26,3 +26,15 @@ def test_varrock_npcs_excluded():
     shop_ib = {"Aubury's Rune Shop": {"owner": ["[[Aubury]]"]}}
     nodes, _, _ = build_npcs(recs, shop_ib, npc_ib, [], set(), {"Aubury"})
     assert nodes == []                                 # Aubury is a Varrock npc (build_map owns it)
+
+def test_slug_collision_disambiguates_loudly(capsys):
+    # two DISTINCT operator names that slugify identically must NOT silently merge
+    recs = [{"sold_by": "Shop A"}, {"sold_by": "Shop B"}]
+    shop_ib = {"Shop A": {"owner": ["[[Foo Bar]]"]},
+               "Shop B": {"owner": ["[[Foo  Bar]]"]}}   # double-space -> same slug
+    npc_ib = {"Foo Bar": {"is_npc": True}, "Foo  Bar": {"is_npc": True}}
+    nodes, _, _ = build_npcs(recs, shop_ib, npc_ib, [], set(), set())
+    ids = sorted(n.id for n in nodes)
+    assert len(ids) == 2 and len(set(ids)) == 2          # two distinct nodes, no merge
+    assert any(i.endswith("-2") for i in ids)
+    assert "slug collision" in capsys.readouterr().out.lower()
