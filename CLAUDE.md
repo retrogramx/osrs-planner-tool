@@ -26,7 +26,6 @@ ingestion) toward a **richly-typed entity graph of all of Gielinor**.
   Each from its OWN structured wiki source + its own coverage verifier; each layer's `located_in` is a completeness
   CROSS-CHECK on the skeleton — and reuses the skeleton's `parent_for` machinery (`world_parenting.json` is the
   owner-override escape hatch). Roadmap: `docs/superpowers/specs/2026-06-27-world-skeleton-design.md` §7.
-  **⚠️ DO FIRST, before the next layer: widen `assemble.SPAN` (2M→`1<<32`) + retire the shop sequential-id band — see §Conventions.**
 - Evidence base (don't re-derive — read): `research/osrs-ontology-nuance-catalog{,-pass2,-pass3}.md`,
   `research/goingmeta-kg-learnings.md`. Deferred whole-repo cleanup: `docs/superpowers/plans/2026-06-24-repo-realignment-note.md`.
 
@@ -98,11 +97,11 @@ ingestion) toward a **richly-typed entity graph of all of Gielinor**.
   edge-id-uniqueness assert is the backstop. When an owner SPANS builders (build_world → build_map → build_storeline),
   each later rekey SEEDS from prior counts. Builder-local edge-id bands are disjoint (item 0x10..0xD0; place-`src`:
   build_world 0xB0 / build_map 0xE0 / build_storeline 0xF0).
-- **⚠️ `stable_edge_id`'s `SPAN=2_000_000` is an edge-id CEILING:** `rekey` birthday-collides (and crashes) past ~9k
-  total edges. The all-shops layer (PR #21, ~6k new edges) hit it, so `build_shops` edges use a SEQUENTIAL `[100M,..)`
-  band in `assemble.py` (NOT `rekey`). **MUST-DO before the next bottom-up layer: widen `SPAN` (2M→`1<<32`) + retire the
-  sequential band** — sequential ids are byte-stable for identical input but CHURN `kg/edges.json` on any data refresh
-  (lose per-edge id-stability). It's a clean one-time renumber. Until then: shop-edge ids live in `[100M,..)`, all others in `[6M,8M)`.
+- **Edge-id id-space (`stable_edge_id`/`stable_group_id`):** `SPAN = 1<<48`, `GROUP_OFFSET = 1<<49`, `EDGE_OFFSET = 1<<50`
+  — disjoint group/edge domains, both < 2^53 (JS-safe). sha1-mod-`SPAN` collisions are negligible at any realistic graph
+  size; `rekey` still fail-fasts on one (the committed-graph edge-id-uniqueness assert proves the live graph is clean).
+  ALL edges (incl. shops) go through the one seeded `rekey` — the old `SPAN=2M` ceiling + the PR #21 shop sequential band
+  were retired by widening `SPAN` (a one-time renumber; spec `docs/superpowers/specs/2026-06-29-edge-id-span-widen-design.md`).
 - **`items_equipment.json` selection trap:** that dataset has MULTIPLE records per item_id (stat-variants + `(beta)`
   page dupes); select canonical page + `stat_variant_index 0`, EXCEPT demote an all-zero index-0 record so a non-zero
   ACTIVE variant wins (`_all_zero_stats` in `select_bonus_record`; the Crystal-shield inactive-form case, refined in PR
