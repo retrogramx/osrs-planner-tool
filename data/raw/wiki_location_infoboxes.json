@@ -1,0 +1,2318 @@
+{
+ "_provenance": {
+  "domain": "wiki_location_infoboxes",
+  "source": "OSRS Wiki revisions API",
+  "license": "CC BY-NC-SA 3.0",
+  "param": "Infobox Location|location="
+ },
+ "infoboxes": {
+  "Abandoned Mine": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Abandoned_Mine"
+  },
+  "Agility Pyramid": {
+   "location": "[[Kharidian Desert]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Agility_Pyramid"
+  },
+  "Agility Pyramid mine": {
+   "location": "North-west of [[Agility Pyramid]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Agility_Pyramid_mine"
+  },
+  "Ah Za Rhoon": {
+   "location": "[[Karamja]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Ah_Za_Rhoon"
+  },
+  "Airship Platform": {
+   "location": "Off the coast of [[Ape Atoll]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Airship_Platform"
+  },
+  "Al Kharid": {
+   "location": "[[Kharidian Desert]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Al_Kharid"
+  },
+  "Al Kharid Palace": {
+   "location": "[[Al Kharid]] ([[Kharidian Desert]])",
+   "source_url": "https://oldschool.runescape.wiki/w/Al_Kharid_Palace"
+  },
+  "Al Kharid Rooftop Course": {
+   "location": "[[Al Kharid]] ([[Kharidian Desert]])",
+   "source_url": "https://oldschool.runescape.wiki/w/Al_Kharid_Rooftop_Course"
+  },
+  "Al Kharid mine": {
+   "location": "North of [[Al Kharid]] ([[Kharidian Desert]])",
+   "source_url": "https://oldschool.runescape.wiki/w/Al_Kharid_mine"
+  },
+  "Aldarin": {
+   "location": "[[Varlamore]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Aldarin"
+  },
+  "Ancient Cavern": {
+   "location": "[[Baxtorian Falls]] ([[Kandarin]])",
+   "source_url": "https://oldschool.runescape.wiki/w/Ancient_Cavern"
+  },
+  "Anglers' Retreat": {
+   "location": "South of the [[Myths' Guild]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Anglers'_Retreat"
+  },
+  "Ape Atoll": {
+   "location": "[[Ardent Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Ape_Atoll"
+  },
+  "Ape Atoll Agility Course": {
+   "location": "[[Ape Atoll]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Ape_Atoll_Agility_Course"
+  },
+  "Ape Atoll Dungeon": {
+   "location": "[[Ape Atoll]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Ape_Atoll_Dungeon"
+  },
+  "Arandar mine": {
+   "location": "[[Arandar]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Arandar_mine"
+  },
+  "Arceuus": {
+   "location": "[[Great Kourend]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Arceuus"
+  },
+  "Ardougne": {
+   "location": "[[Kandarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Ardougne"
+  },
+  "Ardougne Castle": {
+   "location": "[[East Ardougne]] ([[Ardougne]])",
+   "source_url": "https://oldschool.runescape.wiki/w/Ardougne_Castle"
+  },
+  "Ardougne Rooftop Course": {
+   "location": "[[East Ardougne]] ([[Ardougne]])",
+   "source_url": "https://oldschool.runescape.wiki/w/Ardougne_Rooftop_Course"
+  },
+  "Ardougne Sewers": {
+   "location": "[[Ardougne]] ([[Kandarin]])",
+   "source_url": "https://oldschool.runescape.wiki/w/Ardougne_Sewers"
+  },
+  "Ardougne Sewers mine": {
+   "location": "The middle of [[Ardougne Sewers]] ([[Ardougne Sewers#Eastern Ardougne Sewers|Eastern Sewers]])",
+   "source_url": "https://oldschool.runescape.wiki/w/Ardougne_Sewers_mine"
+  },
+  "Asgarnian Ice Dungeon": {
+   "location": "[[Asgarnia]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Asgarnian_Ice_Dungeon"
+  },
+  "Auburnvale": {
+   "location": "[[Varlamore]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Auburnvale"
+  },
+  "Avium Savannah": {
+   "location": "[[Varlamore]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Avium_Savannah"
+  },
+  "Banana plantation (Ape Atoll)": {
+   "location": "[[Ape Atoll]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Banana_plantation_(Ape_Atoll)"
+  },
+  "Bandit Camp (Wilderness)": {
+   "location": "[[Wilderness]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Bandit_Camp_(Wilderness)"
+  },
+  "Bandit Camp Quarry": {
+   "location": "South of the [[Kharidian Bandit Camp]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Bandit_Camp_Quarry"
+  },
+  "Bandit Camp mine": {
+   "location": "North-east of [[Bandit Camp (Wilderness)|Bandit Camp]], east of [[Wilderness God Wars Dungeon]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Bandit_Camp_mine"
+  },
+  "Barbarian Assault": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Barbarian_Assault"
+  },
+  "Barbarian Camp": {
+   "location": "[[Kourend Woodland]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Barbarian_Camp"
+  },
+  "Barbarian Outpost Agility Course": {
+   "location": "[[Barbarian Outpost]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Barbarian_Outpost_Agility_Course"
+  },
+  "Barbarian Village mine": {
+   "location": "[[Barbarian Village]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Barbarian_Village_mine"
+  },
+  "Barrows": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Barrows"
+  },
+  "Basement of Doom": {
+   "location": "[[Misthalin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Basement_of_Doom"
+  },
+  "Battlefield mine": {
+   "location": "South of [[West Ardougne]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Battlefield_mine"
+  },
+  "Bedabin Camp": {
+   "location": "[[Kharidian Desert]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Bedabin_Camp"
+  },
+  "Black Knights' Fortress (location)": {
+   "location": "[[Asgarnia]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Black_Knights'_Fortress_(location)"
+  },
+  "Blast Furnace": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Blast_Furnace"
+  },
+  "Blast mine": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Blast_mine"
+  },
+  "Boneyard Hunter area": {
+   "location": "[[Wilderness]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Boneyard_Hunter_area"
+  },
+  "Bounty Hunter": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Bounty_Hunter"
+  },
+  "Braindeath Island": {
+   "location": "[[Eastern Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Braindeath_Island"
+  },
+  "Brimhaven Agility Arena": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Brimhaven_Agility_Arena"
+  },
+  "Brimhaven Dungeon": {
+   "location": "[[Karamja]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Brimhaven_Dungeon"
+  },
+  "Brimstail's cave": {
+   "location": "[[Tree Gnome Stronghold]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Brimstail's_cave"
+  },
+  "Brine Rat Cavern": {
+   "location": "[[Fremennik Province]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Brine_Rat_Cavern"
+  },
+  "Brittle Isle": {
+   "location": "[[Northern Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Brittle_Isle"
+  },
+  "Buccaneers' Haven": {
+   "location": "East of [[Port Piscarilius]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Buccaneers'_Haven"
+  },
+  "Buccaneers' Laboratory": {
+   "location": "[[Buccaneers' Haven]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Buccaneers'_Laboratory"
+  },
+  "Bunbridge": {
+   "location": "[[Rabbit Realm]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Bunbridge"
+  },
+  "Burthorpe": {
+   "location": "[[Asgarnia]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Burthorpe"
+  },
+  "Burthorpe Castle": {
+   "location": "[[Burthorpe]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Burthorpe_Castle"
+  },
+  "Burthorpe Games Room": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Burthorpe_Games_Room"
+  },
+  "Cairn Isle": {
+   "location": "[[Karamja]], [[Ardent Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Cairn_Isle"
+  },
+  "Callisto's Den": {
+   "location": "[[Wilderness]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Callisto's_Den"
+  },
+  "Cam Torum": {
+   "location": "[[Varlamore]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Cam_Torum"
+  },
+  "Cam Torum mine": {
+   "location": "South-east of [[Cam Torum]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Cam_Torum_mine"
+  },
+  "Camdozaal Mines": {
+   "location": "[[Ruins of Camdozaal]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Camdozaal_Mines"
+  },
+  "Camelot": {
+   "location": "[[Kandarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Camelot"
+  },
+  "Camp Sapphire Lagoon": {
+   "location": "[[Misthalin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Camp_Sapphire_Lagoon"
+  },
+  "Canifis": {
+   "location": "[[Morytania]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Canifis"
+  },
+  "Canifis Hunter area": {
+   "location": "[[Morytania]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Canifis_Hunter_area"
+  },
+  "Canifis Rooftop Course": {
+   "location": "[[Canifis]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Canifis_Rooftop_Course"
+  },
+  "Cape Conch mine": {
+   "location": "[[Cape Conch]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Cape_Conch_mine"
+  },
+  "Capital": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Capital"
+  },
+  "Castle Drakan": {
+   "location": "[[Darkmeyer]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Castle_Drakan"
+  },
+  "Castle Wars": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Castle_Wars"
+  },
+  "Catacombs of Kourend": {
+   "location": "[[Great Kourend]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Catacombs_of_Kourend"
+  },
+  "Catherby": {
+   "location": "[[Kandarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Catherby"
+  },
+  "Central Fremennik Isles mine": {
+   "location": "Small island north of [[Neitiznot]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Central_Fremennik_Isles_mine"
+  },
+  "Cerberus' Lair": {
+   "location": "[[Asgarnia]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Cerberus'_Lair"
+  },
+  "Chambers of Xeric": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Chambers_of_Xeric"
+  },
+  "Champions' Guild": {
+   "location": "South-west of [[Varrock]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Champions'_Guild"
+  },
+  "Chaos Druid Tower": {
+   "location": "[[Kandarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Chaos_Druid_Tower"
+  },
+  "Charred Dungeon": {
+   "location": "[[Charred Island]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Charred_Dungeon"
+  },
+  "Charred Island": {
+   "location": "[[Unquiet Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Charred_Island"
+  },
+  "Chasm of Fire": {
+   "location": "[[Great Kourend]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Chasm_of_Fire"
+  },
+  "Chinchompa Island": {
+   "location": "South-east of [[Hosidius]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Chinchompa_Island"
+  },
+  "Citharede Abbey mine": {
+   "location": "East of [[Al Kharid]], near the [[Citharede Abbey|abbey]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Citharede_Abbey_mine"
+  },
+  "Civitas illa Fortis": {
+   "location": "[[Varlamore]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Civitas_illa_Fortis"
+  },
+  "Clan Wars": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Clan_Wars"
+  },
+  "Clock Tower dungeon": {
+   "location": "[[Kandarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Clock_Tower_dungeon"
+  },
+  "Coal Trucks": {
+   "location": "North of the [[Fishing Guild]], west of [[McGrubor's Wood]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Coal_Trucks"
+  },
+  "College of Bards": {
+   "location": "[[Varlamore]]",
+   "source_url": "https://oldschool.runescape.wiki/w/College_of_Bards"
+  },
+  "Colossal Wyrm Agility Course": {
+   "location": "[[Varlamore]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Colossal_Wyrm_Agility_Course"
+  },
+  "Cooks' Guild": {
+   "location": "North-west [[Varrock]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Cooks'_Guild"
+  },
+  "Coral Nurseries": {
+   "location": "[[The Great Conch]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Coral_Nurseries"
+  },
+  "Corporeal Beast's Lair": {
+   "location": "[[Wilderness]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Corporeal_Beast's_Lair"
+  },
+  "Corsair Cove Dungeon": {
+   "location": "[[Feldip Hills]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Corsair_Cove_Dungeon"
+  },
+  "Corsair Cove Resource Area": {
+   "location": "[[Feldip Hills]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Corsair_Cove_Resource_Area"
+  },
+  "Crabclaw Caves": {
+   "location": "[[Great Kourend]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Crabclaw_Caves"
+  },
+  "Crabclaw Isle": {
+   "location": "[[Western Ocean]], [[Great Kourend]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Crabclaw_Isle"
+  },
+  "Crafting Guild": {
+   "location": "South-west of [[Falador]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Crafting_Guild"
+  },
+  "Crafting Guild mine": {
+   "location": "[[Crafting Guild]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Crafting_Guild_mine"
+  },
+  "Crandor": {
+   "location": "[[Ardent Ocean]], [[Karamja]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Crandor"
+  },
+  "Crandor and Karamja Dungeon": {
+   "location": "[[Karamja]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Crandor_and_Karamja_Dungeon"
+  },
+  "Crash Island": {
+   "location": "[[Ardent Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Crash_Island"
+  },
+  "Crash Island Dungeon": {
+   "location": "[[Crash Island]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Crash_Island_Dungeon"
+  },
+  "Crash Site Cavern": {
+   "location": "[[Gnome Empire]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Crash_Site_Cavern"
+  },
+  "Creature Creation": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Creature_Creation"
+  },
+  "Crypt (White Knights' Castle)": {
+   "location": "[[White Knights' Castle]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Crypt_(White_Knights'_Castle)"
+  },
+  "Crypt of Tonali": {
+   "location": "[[Tlati Rainforest]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Crypt_of_Tonali"
+  },
+  "Cursed Archipelago": {
+   "location": "[[Eastern Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Cursed_Archipelago"
+  },
+  "Custodia Mountains mine": {
+   "location": "[[The Stranglewood]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Custodia_Mountains_mine"
+  },
+  "Custodia Pass": {
+   "location": "[[Varlamore]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Custodia_Pass"
+  },
+  "Daeyalt essence mine": {
+   "location": "[[Darkmeyer]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Daeyalt_essence_mine"
+  },
+  "Daimon's Crater": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Daimon's_Crater"
+  },
+  "Dark Warriors' Fortress": {
+   "location": "[[Wilderness]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Dark_Warriors'_Fortress"
+  },
+  "Darkmeyer": {
+   "location": "[[Morytania]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Darkmeyer"
+  },
+  "Darkmoon Ravine": {
+   "location": "[[Aldarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Darkmoon_Ravine"
+  },
+  "Deadman Isles": {
+   "location": "East of [[Braindeath Island]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Deadman_Isles"
+  },
+  "Deep Wilderness Dungeon": {
+   "location": "[[Wilderness]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Deep_Wilderness_Dungeon"
+  },
+  "Deepfin Mine": {
+   "location": "[[Deepfin Point]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Deepfin_Mine"
+  },
+  "Deepfin Point": {
+   "location": "[[Shrouded Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Deepfin_Point"
+  },
+  "Dense essence mine": {
+   "location": "[[Arceuus]] ([[Great Kourend]])",
+   "source_url": "https://oldschool.runescape.wiki/w/Dense_essence_mine"
+  },
+  "Desert Mining Camp": {
+   "location": "South of [[Al Kharid]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Desert_Mining_Camp"
+  },
+  "Digsite Dungeon": {
+   "location": "[[Misthalin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Digsite_Dungeon"
+  },
+  "Dognose Island": {
+   "location": "[[Unquiet Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Dognose_Island"
+  },
+  "Dondakan's mine": {
+   "location": "South-west of [[Keldagrim]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Dondakan's_mine"
+  },
+  "Dorgesh-Kaan": {
+   "location": "Dorgesh-Kaan",
+   "source_url": "https://oldschool.runescape.wiki/w/Dorgesh-Kaan"
+  },
+  "Dorgesh-Kaan Agility Course": {
+   "location": "[[Dorgesh-Kaan]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Dorgesh-Kaan_Agility_Course"
+  },
+  "Dorgesh-Kaan South Dungeon": {
+   "location": "[[Dorgesh-Kaan]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Dorgesh-Kaan_South_Dungeon"
+  },
+  "Dorgesh-Kaan market trading": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Dorgesh-Kaan_market_trading"
+  },
+  "Dorgesh-Kaan mine": {
+   "location": "By the entrance to [[Dorgesh-Kaan]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Dorgesh-Kaan_mine"
+  },
+  "Dragon Nest": {
+   "location": "[[Tlati Rainforest]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Dragon_Nest"
+  },
+  "Dragonkin Castle": {
+   "location": "Unknown",
+   "source_url": "https://oldschool.runescape.wiki/w/Dragonkin_Castle"
+  },
+  "Dragontooth Island": {
+   "location": "[[Eastern Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Dragontooth_Island"
+  },
+  "Draynor Sewers": {
+   "location": "[[Misthalin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Draynor_Sewers"
+  },
+  "Draynor Village": {
+   "location": "[[Misthalin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Draynor_Village"
+  },
+  "Draynor Village Rooftop Course": {
+   "location": "[[Draynor]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Draynor_Village_Rooftop_Course"
+  },
+  "Draynor island": {
+   "location": "[[Draynor Village]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Draynor_island"
+  },
+  "Drumstick Isle": {
+   "location": "[[Porth Gwenith]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Drumstick_Isle"
+  },
+  "Duel Arena": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Duel_Arena"
+  },
+  "Dwarven Mine": {
+   "location": "Entrances at north-east [[Falador]], [[Mining Guild]], and north-west of [[Barbarian Village]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Dwarven_Mine"
+  },
+  "Eagles' Peak Dungeon": {
+   "location": "[[Eagles' Peak (mountain)|Eagles' Peak]], [[Kandarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Eagles'_Peak_Dungeon"
+  },
+  "East Ardougne": {
+   "location": "[[Ardougne]] ([[Kandarin]])",
+   "source_url": "https://oldschool.runescape.wiki/w/East_Ardougne"
+  },
+  "East Fremennik Isles mine": {
+   "location": "Island north of [[Jatizso]]",
+   "source_url": "https://oldschool.runescape.wiki/w/East_Fremennik_Isles_mine"
+  },
+  "East Lumbridge Swamp mine": {
+   "location": "The south-east corner of [[Lumbridge Swamp]]",
+   "source_url": "https://oldschool.runescape.wiki/w/East_Lumbridge_Swamp_mine"
+  },
+  "East Salvager Overlook mine": {
+   "location": "East of the [[Salvager Overlook]]",
+   "source_url": "https://oldschool.runescape.wiki/w/East_Salvager_Overlook_mine"
+  },
+  "East Tlati Rainforest mine": {
+   "location": "[[Tlati Rainforest]]",
+   "source_url": "https://oldschool.runescape.wiki/w/East_Tlati_Rainforest_mine"
+  },
+  "Easter Workshop": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Easter_Workshop"
+  },
+  "Edgeville": {
+   "location": "[[Misthalin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Edgeville"
+  },
+  "Edgeville Dungeon": {
+   "location": "[[Misthalin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Edgeville_Dungeon"
+  },
+  "Edgeville Dungeon mine": {
+   "location": "[[Edgeville Dungeon]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Edgeville_Dungeon_mine"
+  },
+  "Elemental Workshop (location)": {
+   "location": "[[Seers' Village]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Elemental_Workshop_(location)"
+  },
+  "Elven rabbit cave": {
+   "location": "[[Gwenith Hunter area]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Elven_rabbit_cave"
+  },
+  "Emir's Arena": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Emir's_Arena"
+  },
+  "Enakhra's Temple": {
+   "location": "[[Kharidian Desert]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Enakhra's_Temple"
+  },
+  "Entrana": {
+   "location": "[[Ardent Ocean]], [[Asgarnia]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Entrana"
+  },
+  "Entrana Dungeon": {
+   "location": "[[Entrana]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Entrana_Dungeon"
+  },
+  "Escape Caves": {
+   "location": "[[Wilderness]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Escape_Caves"
+  },
+  "Evil Chicken's Lair": {
+   "location": "[[Zanaris]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Evil_Chicken's_Lair"
+  },
+  "Evil Chicken's Lair mine": {
+   "location": "Eastern [[Evil Chicken's Lair]], in [[Zanaris]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Evil_Chicken's_Lair_mine"
+  },
+  "Experiment cave": {
+   "location": "[[Morytania]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Experiment_cave"
+  },
+  "Falador": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Falador"
+  },
+  "Falador Rooftop Course": {
+   "location": "[[Falador]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Falador_Rooftop_Course"
+  },
+  "Farming Guild": {
+   "location": "[[Kebos Lowlands]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Farming_Guild"
+  },
+  "Farming contracts": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Farming_contracts"
+  },
+  "Feldip Hunter area": {
+   "location": "[[Feldip Hills]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Feldip_Hunter_area"
+  },
+  "Fenkenstrain's Castle": {
+   "location": "[[Morytania]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Fenkenstrain's_Castle"
+  },
+  "Ferox Enclave": {
+   "location": "[[Wilderness]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Ferox_Enclave"
+  },
+  "Ferox Enclave Dungeon": {
+   "location": "[[Ferox Enclave]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Ferox_Enclave_Dungeon"
+  },
+  "Fight Arena mine": {
+   "location": "South-west of [[Port Khazard]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Fight_Arena_mine"
+  },
+  "Fishing Guild": {
+   "location": "West of [[Hemenster]], [[Kandarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Fishing_Guild"
+  },
+  "Fishing Hamlet": {
+   "location": "[[Northern Tundras]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Fishing_Hamlet"
+  },
+  "Fishing Trawler": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Fishing_Trawler"
+  },
+  "Forthos Dungeon": {
+   "location": "[[Great Kourend]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Forthos_Dungeon"
+  },
+  "Fortis Colosseum": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Fortis_Colosseum"
+  },
+  "Fossil Island": {
+   "location": "[[Untamed Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Fossil_Island"
+  },
+  "Fossil Island mine": {
+   "location": "[[Fossil Island]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Fossil_Island_mine"
+  },
+  "Fremennik Slayer Dungeon": {
+   "location": "[[Fremennik Province]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Fremennik_Slayer_Dungeon"
+  },
+  "Frozen Waste Plateau": {
+   "location": "[[Wilderness]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Frozen_Waste_Plateau"
+  },
+  "Ghorrock": {
+   "location": "[[Troll Country]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Ghorrock"
+  },
+  "Ghorrock Dungeon": {
+   "location": "Under [[Ghorrock]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Ghorrock_Dungeon"
+  },
+  "Ghorrock Dungeon mine": {
+   "location": "South of [[Ghorrock Dungeon]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Ghorrock_Dungeon_mine"
+  },
+  "Giants' Den": {
+   "location": "West of [[Shayzien]], [[Great Kourend]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Giants'_Den"
+  },
+  "Giants' Foundry": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Giants'_Foundry"
+  },
+  "Glarial's Tomb": {
+   "location": "[[Kandarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Glarial's_Tomb"
+  },
+  "Gnome Ball": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Gnome_Ball"
+  },
+  "Gnome Restaurant": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Gnome_Restaurant"
+  },
+  "Gnome Stronghold Agility Course": {
+   "location": "[[Tree Gnome Stronghold]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Gnome_Stronghold_Agility_Course"
+  },
+  "Goblin Cave": {
+   "location": "[[Kandarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Goblin_Cave"
+  },
+  "Goblin Temple": {
+   "location": "[[Goblin Cave]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Goblin_Temple"
+  },
+  "Goblin settlement": {
+   "location": "[[Kandarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Goblin_settlement"
+  },
+  "God Wars Dungeon": {
+   "location": "[[Troll Country]]",
+   "source_url": "https://oldschool.runescape.wiki/w/God_Wars_Dungeon"
+  },
+  "Grand Tree Tunnels": {
+   "location": "[[Grand Tree]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Grand_Tree_Tunnels"
+  },
+  "Grand Tree mine": {
+   "location": "[[Grand Tree Tunnels]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Grand_Tree_mine"
+  },
+  "Grimstone": {
+   "location": "North of [[Weiss]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Grimstone"
+  },
+  "Grimstone Dungeon": {
+   "location": "[[Grimstone]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Grimstone_Dungeon"
+  },
+  "Gryphons (dungeon)": {
+   "location": "[[The Great Conch]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Gryphons_(dungeon)"
+  },
+  "Guardians of the Rift": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Guardians_of_the_Rift"
+  },
+  "Guilds": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Guilds"
+  },
+  "Gwenith": {
+   "location": "[[Tirannwn]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Gwenith"
+  },
+  "Gwenith Hunter area": {
+   "location": "[[Gwenith]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Gwenith_Hunter_area"
+  },
+  "H.A.M. Hideout": {
+   "location": "[[Misthalin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/H.A.M._Hideout"
+  },
+  "Hallowed Sepulchre": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Hallowed_Sepulchre"
+  },
+  "Harmony Island": {
+   "location": "[[Eastern Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Harmony_Island"
+  },
+  "Headless Beast's Lair": {
+   "location": "[[Kebos Lowlands]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Headless_Beast's_Lair"
+  },
+  "Hemenster": {
+   "location": "[[Kandarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Hemenster"
+  },
+  "Here be minotaurs": {
+   "location": "[[Minotaurs' Rest]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Here_be_minotaurs"
+  },
+  "Here be penguins": {
+   "location": "[[Northern Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Here_be_penguins"
+  },
+  "Heroes' Guild": {
+   "location": "[[Burthorpe]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Heroes'_Guild"
+  },
+  "Heroes' Guild mine": {
+   "location": "[[Heroes' Guild]] basement",
+   "source_url": "https://oldschool.runescape.wiki/w/Heroes'_Guild_mine"
+  },
+  "Hosidius": {
+   "location": "[[Great Kourend]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Hosidius"
+  },
+  "Hosidius mine": {
+   "location": "West of [[Tithe farm]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Hosidius_mine"
+  },
+  "Hunter Guild": {
+   "location": "[[Avium Savannah]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Hunter_Guild"
+  },
+  "Hunter's End": {
+   "location": "[[Wilderness]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Hunter's_End"
+  },
+  "Ice Queen's Lair": {
+   "location": "[[Asgarnia]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Ice_Queen's_Lair"
+  },
+  "Ice Troll Caves": {
+   "location": "[[Fremennik Isles]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Ice_Troll_Caves"
+  },
+  "Iceberg": {
+   "location": "[[Fremennik Province]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Iceberg"
+  },
+  "Impetuous Impulses": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Impetuous_Impulses"
+  },
+  "Inferno": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Inferno"
+  },
+  "Intelligence Gathering": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Intelligence_Gathering"
+  },
+  "Iorwerth Camp": {
+   "location": "[[Tirannwn]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Iorwerth_Camp"
+  },
+  "Iorwerth Camp cave": {
+   "location": "[[Tirannwn]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Iorwerth_Camp_cave"
+  },
+  "Iorwerth Dungeon": {
+   "location": "[[Tirannwn]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Iorwerth_Dungeon"
+  },
+  "Isafdar mine": {
+   "location": "[[Isafdar]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Isafdar_mine"
+  },
+  "Island of Stone": {
+   "location": "[[Northern Ocean]], [[Fremennik Province]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Island_of_Stone"
+  },
+  "Isle of Bones": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Isle_of_Bones"
+  },
+  "Isle of Garmr": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Isle_of_Garmr"
+  },
+  "Isle of Serpents": {
+   "location": "[[Southern Expanse]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Isle_of_Serpents"
+  },
+  "Isle of Souls": {
+   "location": "[[Shrouded Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Isle_of_Souls"
+  },
+  "Isle of Souls Dungeon": {
+   "location": "[[Isle of Souls]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Isle_of_Souls_Dungeon"
+  },
+  "Isle of Souls mine": {
+   "location": "South of the [[Soul Wars Lobby]], [[Isle of Souls]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Isle_of_Souls_mine"
+  },
+  "Jatizso": {
+   "location": "[[Fremennik Isles]] ([[Northern Ocean]], [[Fremennik Province]])",
+   "source_url": "https://oldschool.runescape.wiki/w/Jatizso"
+  },
+  "Jatizso mine": {
+   "location": "Entrance by the north wall of [[Jatizso]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Jatizso_mine"
+  },
+  "Jiggig": {
+   "location": "[[Feldip Hills]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Jiggig"
+  },
+  "Jiggig Dungeon": {
+   "location": "[[Feldip Hills]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Jiggig_Dungeon"
+  },
+  "Jormungand's Prison": {
+   "location": "[[Fremennik Province]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Jormungand's_Prison"
+  },
+  "Kalphite Cave": {
+   "location": "[[Kharidian Desert]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Kalphite_Cave"
+  },
+  "Kalphite Lair": {
+   "location": "[[Kharidian Desert]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Kalphite_Lair"
+  },
+  "Karamja": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Karamja"
+  },
+  "Karamja Hunter area": {
+   "location": "[[Karamja]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Karamja_Hunter_area"
+  },
+  "Karamja Jungle mine": {
+   "location": "North of [[Shilo Village (location)|Shilo Village]] by [[Nature Altar]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Karamja_Jungle_mine"
+  },
+  "Karamja Volcano mine": {
+   "location": "West of [[Musa Point]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Karamja_Volcano_mine"
+  },
+  "Karamjan Temple": {
+   "location": "[[Karamja]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Karamjan_Temple"
+  },
+  "Karuulm Slayer Dungeon": {
+   "location": "[[Kebos Lowlands]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Karuulm_Slayer_Dungeon"
+  },
+  "Kastori": {
+   "location": "[[Varlamore]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Kastori"
+  },
+  "Kebos Lowlands mine": {
+   "location": "North-west of [[Kebos Swamp]], south of the [[Farming Guild]].",
+   "source_url": "https://oldschool.runescape.wiki/w/Kebos_Lowlands_mine"
+  },
+  "Keldagrim": {
+   "location": "[[Dwarven Realm]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Keldagrim"
+  },
+  "Keldagrim Palace": {
+   "location": "[[Keldagrim]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Keldagrim_Palace"
+  },
+  "Keldagrim entrance mine": {
+   "location": "South of [[Keldagrim]] Entrance",
+   "source_url": "https://oldschool.runescape.wiki/w/Keldagrim_entrance_mine"
+  },
+  "Keldagrim north-east mine": {
+   "location": "North-east of [[Keldagrim]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Keldagrim_north-east_mine"
+  },
+  "Keldagrim south-west mine": {
+   "location": "South of [[Keldagrim]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Keldagrim_south-west_mine"
+  },
+  "Keldagrim tasks": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Keldagrim_tasks"
+  },
+  "Kendal's Lair": {
+   "location": "North of the [[Mountain Camp]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Kendal's_Lair"
+  },
+  "King Black Dragon Lair": {
+   "location": "[[Wilderness]]",
+   "source_url": "https://oldschool.runescape.wiki/w/King_Black_Dragon_Lair"
+  },
+  "Kingstown": {
+   "location": "[[Great Kourend]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Kingstown"
+  },
+  "Kourend Castle": {
+   "location": "[[Great Kourend]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Kourend_Castle"
+  },
+  "Kraken Cove": {
+   "location": "[[Piscatoris]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Kraken_Cove"
+  },
+  "Kruk's Dungeon": {
+   "location": "[[Ape Atoll]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Kruk's_Dungeon"
+  },
+  "Kualti Headquarters": {
+   "location": "[[Civitas illa Fortis]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Kualti_Headquarters"
+  },
+  "Kurask Lair": {
+   "location": "[[Laguna Aurorae]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Kurask_Lair"
+  },
+  "Laguna Aurorae": {
+   "location": "South-west of [[Aldarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Laguna_Aurorae"
+  },
+  "Land's End": {
+   "location": "[[Great Kourend]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Land's_End"
+  },
+  "Lassar Undercity": {
+   "location": "Beneath [[Ruins of Camdozaal]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Lassar_Undercity"
+  },
+  "Last Light": {
+   "location": "[[Unquiet Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Last_Light"
+  },
+  "Last Man Standing": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Last_Man_Standing"
+  },
+  "Lava Maze Dungeon": {
+   "location": "[[Wilderness]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Lava_Maze_Dungeon"
+  },
+  "Lava Maze Dungeon mine": {
+   "location": "Western [[Lava Maze Dungeon]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Lava_Maze_Dungeon_mine"
+  },
+  "Lava Maze runite mine": {
+   "location": "North-west of the [[Lava Maze]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Lava_Maze_runite_mine"
+  },
+  "Legends' Guild": {
+   "location": "South of [[Seers' Village]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Legends'_Guild"
+  },
+  "Legends' Guild mine": {
+   "location": "North-east of [[Ardougne]], south-west of [[Legends' Guild]].",
+   "source_url": "https://oldschool.runescape.wiki/w/Legends'_Guild_mine"
+  },
+  "Lighthouse": {
+   "location": "[[Fremennik Province]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Lighthouse"
+  },
+  "Limbo": {
+   "location": "[[Shrouded Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Limbo"
+  },
+  "Limestone Mine": {
+   "location": "By the [[Rag and Bone Man I]], west of the [[Paterdomus]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Limestone_Mine"
+  },
+  "List of dungeons": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/List_of_dungeons"
+  },
+  "List of mines": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/List_of_mines"
+  },
+  "Lithkren": {
+   "location": "[[Untamed Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Lithkren"
+  },
+  "Lithkren Vault": {
+   "location": "[[Lithkren]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Lithkren_Vault"
+  },
+  "Lizardman Caves": {
+   "location": "[[Great Kourend]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Lizardman_Caves"
+  },
+  "Lizardman Settlement": {
+   "location": "[[Kebos Lowlands]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Lizardman_Settlement"
+  },
+  "Lizardman Temple": {
+   "location": "[[Kebos Lowlands]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Lizardman_Temple"
+  },
+  "Lledrith Island": {
+   "location": "West of [[Isafdar]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Lledrith_Island"
+  },
+  "Lletya": {
+   "location": "[[Tirannwn]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Lletya"
+  },
+  "Lone oak island": {
+   "location": "[[Rimmington]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Lone_oak_island"
+  },
+  "Lovakengj": {
+   "location": "[[Great Kourend]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Lovakengj"
+  },
+  "Lovakengj mine": {
+   "location": "[[Lovakengj]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Lovakengj_mine"
+  },
+  "Lovakite mine": {
+   "location": "[[Lovakengj]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Lovakite_mine"
+  },
+  "Lumbridge": {
+   "location": "[[Misthalin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Lumbridge"
+  },
+  "Lumbridge Castle": {
+   "location": "[[Lumbridge]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Lumbridge_Castle"
+  },
+  "Lumbridge Swamp Caves": {
+   "location": "[[Dorgesh-Kaan]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Lumbridge_Swamp_Caves"
+  },
+  "Lunar Isle mine": {
+   "location": "North-east [[Lunar Isle]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Lunar_Isle_mine"
+  },
+  "Mage Arena": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Mage_Arena"
+  },
+  "Mage Training Arena": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Mage_Training_Arena"
+  },
+  "Mahogany Homes": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Mahogany_Homes"
+  },
+  "Marim": {
+   "location": "[[Ape Atoll]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Marim"
+  },
+  "Mastering Mixology": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Mastering_Mixology"
+  },
+  "Meiyerditch Laboratories": {
+   "location": "[[Morytania]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Meiyerditch_Laboratories"
+  },
+  "Meiyerditch mine": {
+   "location": "North-east [[Meiyerditch]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Meiyerditch_mine"
+  },
+  "Melzar's Maze": {
+   "location": "[[Asgarnia]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Melzar's_Maze"
+  },
+  "Menaphos": {
+   "location": "[[Kharidian Desert]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Menaphos"
+  },
+  "Mess": {
+   "location": "[[Hosidius]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Mess"
+  },
+  "Minigames": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Minigames"
+  },
+  "Mining Guild": {
+   "location": "South-east [[Falador]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Mining_Guild"
+  },
+  "Minotaurs' Rest": {
+   "location": "[[Shrouded Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Minotaurs'_Rest"
+  },
+  "Miscellania": {
+   "location": "[[Fremennik Province]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Miscellania"
+  },
+  "Miscellania Castle": {
+   "location": "[[Miscellania]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Miscellania_Castle"
+  },
+  "Miscellania Expansion": {
+   "location": "[[Fremennik Province]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Miscellania_Expansion"
+  },
+  "Miscellania and Etceteria Dungeon mine": {
+   "location": "[[Miscellania & Etceteria Dungeon]], north of settlement",
+   "source_url": "https://oldschool.runescape.wiki/w/Miscellania_and_Etceteria_Dungeon_mine"
+  },
+  "Miscellania and Etceteria dungeon": {
+   "location": "[[Miscellania]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Miscellania_and_Etceteria_dungeon"
+  },
+  "Miscellania mine": {
+   "location": "Northern [[Miscellania]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Miscellania_mine"
+  },
+  "Misthalin Manor": {
+   "location": "[[Misthalin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Misthalin_Manor"
+  },
+  "Mistrock": {
+   "location": "[[Varlamore]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Mistrock"
+  },
+  "Mistrock mine": {
+   "location": "[[Mistrock]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Mistrock_mine"
+  },
+  "Mogre Camp": {
+   "location": "[[Port Khazard]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Mogre_Camp"
+  },
+  "Mole Hole": {
+   "location": "[[Falador]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Mole_Hole"
+  },
+  "Mort'ton": {
+   "location": "[[Morytania]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Mort'ton"
+  },
+  "Morytania Spider Cave": {
+   "location": "[[Morytania]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Morytania_Spider_Cave"
+  },
+  "Mos Le'Harmless": {
+   "location": "[[Eastern Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Mos_Le'Harmless"
+  },
+  "Mos Le'Harmless Cave": {
+   "location": "[[Mos Le'Harmless]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Mos_Le'Harmless_Cave"
+  },
+  "Moss Giant Island": {
+   "location": "[[Karamja]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Moss_Giant_Island"
+  },
+  "Motherlode Mine": {
+   "location": "[[Dwarven Mine]] ([[Asgarnia]])",
+   "source_url": "https://oldschool.runescape.wiki/w/Motherlode_Mine"
+  },
+  "Mount Karuulm mine": {
+   "location": "[[Mount Karuulm]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Mount_Karuulm_mine"
+  },
+  "Mountain Camp": {
+   "location": "[[Fremennik Province]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Mountain_Camp"
+  },
+  "Mourner Headquarters": {
+   "location": "[[West Ardougne]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Mourner_Headquarters"
+  },
+  "Mourner Tunnels": {
+   "location": "[[West Ardougne]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Mourner_Tunnels"
+  },
+  "Mourner Tunnels mine": {
+   "location": "Under [[West Ardougne]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Mourner_Tunnels_mine"
+  },
+  "Mouse hole": {
+   "location": "[[Witch's house (location)|Witch's house]], [[Taverley]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Mouse_hole"
+  },
+  "Museum Camp": {
+   "location": "[[Fossil Island]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Museum_Camp"
+  },
+  "Mynydd mine": {
+   "location": "[[Mynydd]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Mynydd_mine"
+  },
+  "Myreque Hideout": {
+   "location": "[[Morytania]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Myreque_Hideout"
+  },
+  "Myths' Guild": {
+   "location": "[[Feldip Hills]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Myths'_Guild"
+  },
+  "Myths' Guild mine": {
+   "location": "[[Corsair Cove Dungeon]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Myths'_Guild_mine"
+  },
+  "Nardah": {
+   "location": "[[Kharidian Desert]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Nardah"
+  },
+  "Necropolis Hunter area": {
+   "location": "[[Kharidian Desert]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Necropolis_Hunter_area"
+  },
+  "Necropolis mine": {
+   "location": "South-west of the [[Necropolis]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Necropolis_mine"
+  },
+  "Neitiznot": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Neitiznot"
+  },
+  "Nemus Retreat": {
+   "location": "[[Auburn Valley]], [[Varlamore]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Nemus_Retreat"
+  },
+  "Neypotzli": {
+   "location": "[[Cam Torum]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Neypotzli"
+  },
+  "Nightmare Zone": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Nightmare_Zone"
+  },
+  "North Brimhaven mine": {
+   "location": "North-west of [[Brimhaven]]",
+   "source_url": "https://oldschool.runescape.wiki/w/North_Brimhaven_mine"
+  },
+  "North Crandor mine": {
+   "location": "Spread across northern [[Crandor]]",
+   "source_url": "https://oldschool.runescape.wiki/w/North_Crandor_mine"
+  },
+  "North Mor Ul Rek mine": {
+   "location": "South-west of TzHaar entrance, south-east of TzHaar bank.",
+   "source_url": "https://oldschool.runescape.wiki/w/North_Mor_Ul_Rek_mine"
+  },
+  "North Tlati Rainforest mine": {
+   "location": "[[Tlati Rainforest]]",
+   "source_url": "https://oldschool.runescape.wiki/w/North_Tlati_Rainforest_mine"
+  },
+  "Northern Conch mine": {
+   "location": "[[The Great Conch]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Northern_Conch_mine"
+  },
+  "Observatory Dungeon": {
+   "location": "[[Kandarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Observatory_Dungeon"
+  },
+  "Ogre Enclave": {
+   "location": "[[Feldip Hills]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Ogre_Enclave"
+  },
+  "Ourania Cave": {
+   "location": "[[Kandarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Ourania_Cave"
+  },
+  "Ourania Hunter area": {
+   "location": "[[Kandarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Ourania_Hunter_area"
+  },
+  "Pandemonium Cave": {
+   "location": "[[The Pandemonium]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Pandemonium_Cave"
+  },
+  "Paterdomus Temple": {
+   "location": "[[Silvarea]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Paterdomus_Temple"
+  },
+  "Penguin Agility Course": {
+   "location": "[[Iceberg]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Penguin_Agility_Course"
+  },
+  "Pest Control": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Pest_Control"
+  },
+  "Pirates' Cove": {
+   "location": "[[Northern Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Pirates'_Cove"
+  },
+  "Pirates' Hideout mine": {
+   "location": "East of [[Pirates' Hideout]] in level 52 [[Wilderness]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Pirates'_Hideout_mine"
+  },
+  "Piscarilius mine": {
+   "location": "[[Port Piscarilius]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Piscarilius_mine"
+  },
+  "Piscatoris Hunter area": {
+   "location": "[[Piscatoris]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Piscatoris_Hunter_area"
+  },
+  "Piscatoris falconry area": {
+   "location": "[[Piscatoris]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Piscatoris_falconry_area"
+  },
+  "Piscatoris mine": {
+   "location": "[[Piscatoris]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Piscatoris_mine"
+  },
+  "Poison Waste Dungeon": {
+   "location": "[[Arposandra]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Poison_Waste_Dungeon"
+  },
+  "Pollnivneach": {
+   "location": "[[Kharidian Desert]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Pollnivneach"
+  },
+  "Pollnivneach Rooftop Course": {
+   "location": "[[Pollnivneach]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Pollnivneach_Rooftop_Course"
+  },
+  "Port Khazard": {
+   "location": "[[Kandarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Port_Khazard"
+  },
+  "Port Khazard mine": {
+   "location": "Northern and southern [[Port Khazard]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Port_Khazard_mine"
+  },
+  "Port Phasmatys": {
+   "location": "[[Morytania]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Port_Phasmatys"
+  },
+  "Port Piscarilius": {
+   "location": "[[Great Kourend]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Port_Piscarilius"
+  },
+  "Port Sarim": {
+   "location": "[[Asgarnia]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Port_Sarim"
+  },
+  "Pothole Dungeon": {
+   "location": "[[Karamja]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Pothole_Dungeon"
+  },
+  "Prifddinas": {
+   "location": "[[Tirannwn]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Prifddinas"
+  },
+  "Prifddinas Agility Course": {
+   "location": "[[Prifddinas]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Prifddinas_Agility_Course"
+  },
+  "Pyramid Plunder": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Pyramid_Plunder"
+  },
+  "Quetzacalli Gorge": {
+   "location": "[[Hailstorm Mountains]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Quetzacalli_Gorge"
+  },
+  "Quidamortem Cave": {
+   "location": "[[Kebos Lowlands]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Quidamortem_Cave"
+  },
+  "Raids": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Raids"
+  },
+  "Rainbow's End": {
+   "location": "[[Rainbow Reef]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Rainbow's_End"
+  },
+  "Ralos' Rise mine": {
+   "location": "South-east of [[Ralos' Rise]], [[Varlamore]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Ralos'_Rise_mine"
+  },
+  "Ranging Guild": {
+   "location": "East of [[Hemenster]], between [[Ardougne]] and [[Seers' Village]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Ranging_Guild"
+  },
+  "Rashiliyia's Tomb": {
+   "location": "[[Karamja]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Rashiliyia's_Tomb"
+  },
+  "Rat Pits": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Rat_Pits"
+  },
+  "Red Rock": {
+   "location": "[[Unquiet Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Red_Rock"
+  },
+  "Red chinchompa hunting ground": {
+   "location": "[[Feldip Hills]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Red_chinchompa_hunting_ground"
+  },
+  "Rellekka": {
+   "location": "[[Fremennik Province]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Rellekka"
+  },
+  "Rellekka Hunter area": {
+   "location": "[[Fremennik Province]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Rellekka_Hunter_area"
+  },
+  "Rellekka Rooftop Course": {
+   "location": "[[Rellekka]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Rellekka_Rooftop_Course"
+  },
+  "Rellekka mine": {
+   "location": "North-east corner of [[Rellekka]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Rellekka_mine"
+  },
+  "Remote Island": {
+   "location": "[[Unquiet Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Remote_Island"
+  },
+  "Revenant Caves": {
+   "location": "[[Wilderness]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Revenant_Caves"
+  },
+  "Rimmington": {
+   "location": "[[Asgarnia]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Rimmington"
+  },
+  "Rimmington church crypt": {
+   "location": "Beneath the [[Rimmington church]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Rimmington_church_crypt"
+  },
+  "Rimmington mine": {
+   "location": "North of [[Rimmington]], [[Asgarnia]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Rimmington_mine"
+  },
+  "Rock Island Prison": {
+   "location": "[[Ardent Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Rock_Island_Prison"
+  },
+  "Roger's Recluse": {
+   "location": "[[Eastern Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Roger's_Recluse"
+  },
+  "Rogues' Castle": {
+   "location": "[[Wilderness]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Rogues'_Castle"
+  },
+  "Rogues' Den": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Rogues'_Den"
+  },
+  "Rooftop Agility Courses": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Rooftop_Agility_Courses"
+  },
+  "Ruins of Camdozaal": {
+   "location": "Below [[Ice Mountain]], [[Asgarnia]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Ruins_of_Camdozaal"
+  },
+  "Ruins of Mokhaiotl": {
+   "location": "[[Tonali Cavern]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Ruins_of_Mokhaiotl"
+  },
+  "Ruins of Tapoyauik": {
+   "location": "[[Varlamore]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Ruins_of_Tapoyauik"
+  },
+  "Ruins of Ullek mine": {
+   "location": "South-west of the [[Ruins of Ullek]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Ruins_of_Ullek_mine"
+  },
+  "Ruins of Unkah": {
+   "location": "[[Kharidian Desert]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Ruins_of_Unkah"
+  },
+  "Ruins of Unkah mine": {
+   "location": "[[Ruins of Unkah]] ([[Kharidian Desert]])",
+   "source_url": "https://oldschool.runescape.wiki/w/Ruins_of_Unkah_mine"
+  },
+  "Rune essence mine": {
+   "location": "See article",
+   "source_url": "https://oldschool.runescape.wiki/w/Rune_essence_mine"
+  },
+  "Salt Mine": {
+   "location": "Underneath [[Weiss]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Salt_Mine"
+  },
+  "Salvager Overlook": {
+   "location": "[[Varlamore]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Salvager_Overlook"
+  },
+  "Salve Island": {
+   "location": "[[River Salve]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Salve_Island"
+  },
+  "Scabaras Dungeon": {
+   "location": "[[Ullek]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Scabaras_Dungeon"
+  },
+  "Scar essence mine": {
+   "location": "[[The Scar]] ([[Abyssal Space]])",
+   "source_url": "https://oldschool.runescape.wiki/w/Scar_essence_mine"
+  },
+  "Scrubfoot's cave": {
+   "location": "[[Goblin Village]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Scrubfoot's_cave"
+  },
+  "Seers' Village": {
+   "location": "[[Kandarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Seers'_Village"
+  },
+  "Seers' Village Rooftop Course": {
+   "location": "[[Seers' Village]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Seers'_Village_Rooftop_Course"
+  },
+  "Servants' Guild": {
+   "location": "[[Ardougne]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Servants'_Guild"
+  },
+  "Settlement Ruins": {
+   "location": "[[Northern Tundras]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Settlement_Ruins"
+  },
+  "Shade Catacombs": {
+   "location": "[[Morytania]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Shade_Catacombs"
+  },
+  "Shades of Mort'ton (minigame)": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Shades_of_Mort'ton_(minigame)"
+  },
+  "Shadow Dungeon": {
+   "location": "[[Kandarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Shadow_Dungeon"
+  },
+  "Shaman Caves": {
+   "location": "[[Karamja]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Shaman_Caves"
+  },
+  "Shayzia Ruin": {
+   "location": "[[Shayzien]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Shayzia_Ruin"
+  },
+  "Shayzien": {
+   "location": "[[Great Kourend]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Shayzien"
+  },
+  "Shayzien Agility Course": {
+   "location": "[[Shayzien Encampment]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Shayzien_Agility_Course"
+  },
+  "Shayzien Crypts": {
+   "location": "[[Great Kourend]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Shayzien_Crypts"
+  },
+  "Shayzien Encampment": {
+   "location": "[[Great Kourend]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Shayzien_Encampment"
+  },
+  "Shayzien mine": {
+   "location": "[[Shayzien]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Shayzien_mine"
+  },
+  "Shellbane Gryphon Cave": {
+   "location": "[[The Great Conch]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Shellbane_Gryphon_Cave"
+  },
+  "Shilo Village (location)": {
+   "location": "[[Karamja]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Shilo_Village_(location)"
+  },
+  "Shilo Village mine": {
+   "location": "North-west [[Shilo Village (location)|Shilo Village]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Shilo_Village_mine"
+  },
+  "Shimmering Atoll": {
+   "location": "South of [[Sunset Coast]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Shimmering_Atoll"
+  },
+  "Shipyard": {
+   "location": "[[Shrouded Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Shipyard"
+  },
+  "Silk Chasm": {
+   "location": "[[Wilderness]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Silk_Chasm"
+  },
+  "Sisterhood Sanctuary": {
+   "location": "[[Slepe]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Sisterhood_Sanctuary"
+  },
+  "Sisterhood Sanctuary mine": {
+   "location": "[[Sisterhood Sanctuary]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Sisterhood_Sanctuary_mine"
+  },
+  "Skeletal Tomb": {
+   "location": "[[Wilderness]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Skeletal_Tomb"
+  },
+  "Slepe": {
+   "location": "[[Morytania]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Slepe"
+  },
+  "Slepe church": {
+   "location": "[[Morytania]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Slepe_church"
+  },
+  "Smoke Devil Dungeon": {
+   "location": "[[Kandarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Smoke_Devil_Dungeon"
+  },
+  "Smoke Dungeon": {
+   "location": "[[Kharidian Desert]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Smoke_Dungeon"
+  },
+  "Sophanem": {
+   "location": "[[Kharidian Desert]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Sophanem"
+  },
+  "Sophanem Dungeon": {
+   "location": "[[Kharidian Desert]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Sophanem_Dungeon"
+  },
+  "Sorceress's Garden": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Sorceress's_Garden"
+  },
+  "Soul Wars": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Soul_Wars"
+  },
+  "Sourhog Cave": {
+   "location": "East of [[Draynor Manor]], [[Misthalin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Sourhog_Cave"
+  },
+  "South Brimhaven mine": {
+   "location": "South-west of Brimhaven, by the entrance to [[Brimhaven Dungeon]]",
+   "source_url": "https://oldschool.runescape.wiki/w/South_Brimhaven_mine"
+  },
+  "South Crandor mine": {
+   "location": "Southern [[Crandor]]",
+   "source_url": "https://oldschool.runescape.wiki/w/South_Crandor_mine"
+  },
+  "South Mor Ul Rek mine": {
+   "location": "Southernmost part of Mor Ul Rek",
+   "source_url": "https://oldschool.runescape.wiki/w/South_Mor_Ul_Rek_mine"
+  },
+  "South Salvager Overlook mine": {
+   "location": "South of the [[Salvager Overlook]]",
+   "source_url": "https://oldschool.runescape.wiki/w/South_Salvager_Overlook_mine"
+  },
+  "South Wilderness mine": {
+   "location": "At the point where the [[River Lum]] enters a tunnel",
+   "source_url": "https://oldschool.runescape.wiki/w/South_Wilderness_mine"
+  },
+  "South-east Ardougne mine": {
+   "location": "South of [[Ardougne]], near the [[Ardougne Monastery|Monastery]]",
+   "source_url": "https://oldschool.runescape.wiki/w/South-east_Ardougne_mine"
+  },
+  "South-east Varrock mine": {
+   "location": "Directly east of [[Varrock]]'s south entrance.",
+   "source_url": "https://oldschool.runescape.wiki/w/South-east_Varrock_mine"
+  },
+  "South-west Tlati Rainforest mine": {
+   "location": "[[Tlati Rainforest]]",
+   "source_url": "https://oldschool.runescape.wiki/w/South-west_Tlati_Rainforest_mine"
+  },
+  "South-west Varrock mine": {
+   "location": "West of [[Varrock]]'s south entrance, near the [[Champions' Guild]].",
+   "source_url": "https://oldschool.runescape.wiki/w/South-west_Varrock_mine"
+  },
+  "South-west Wilderness mine": {
+   "location": "North-west of [[Edgeville]] in level 12 [[Wilderness]]",
+   "source_url": "https://oldschool.runescape.wiki/w/South-west_Wilderness_mine"
+  },
+  "Stalker Den": {
+   "location": "[[Varlamore]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Stalker_Den"
+  },
+  "Stealing artefacts": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Stealing_artefacts"
+  },
+  "Stealing valuables": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Stealing_valuables"
+  },
+  "Stonecutter Outpost": {
+   "location": "[[Avium Savannah]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Stonecutter_Outpost"
+  },
+  "Stronghold Slayer Cave": {
+   "location": "[[Tree Gnome Stronghold]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Stronghold_Slayer_Cave"
+  },
+  "Stronghold of Security": {
+   "location": "[[Misthalin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Stronghold_of_Security"
+  },
+  "Sulphur mine": {
+   "location": "[[Lovakengj]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Sulphur_mine"
+  },
+  "Sunbleak Cave": {
+   "location": "[[Sunbleak Island]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Sunbleak_Cave"
+  },
+  "Sunbleak Island": {
+   "location": "[[Shrouded Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Sunbleak_Island"
+  },
+  "Sunrise Palace": {
+   "location": "[[Civitas illa Fortis]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Sunrise_Palace"
+  },
+  "Sunset Coast": {
+   "location": "[[Avium Savannah]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Sunset_Coast"
+  },
+  "Tai Bwo Wannai": {
+   "location": "[[Karamja]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Tai_Bwo_Wannai"
+  },
+  "Tai Bwo Wannai Cleanup": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Tai_Bwo_Wannai_Cleanup"
+  },
+  "Tal Teklan": {
+   "location": "[[Varlamore]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Tal_Teklan"
+  },
+  "Tarn's Lair": {
+   "location": "[[Morytania]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Tarn's_Lair"
+  },
+  "Taverley": {
+   "location": "[[Asgarnia]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Taverley"
+  },
+  "Taverley Dungeon": {
+   "location": "[[Asgarnia]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Taverley_Dungeon"
+  },
+  "Tear of the Soul": {
+   "location": "South-east of [[Isle of Souls]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Tear_of_the_Soul"
+  },
+  "Tears of Guthix (minigame)": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Tears_of_Guthix_(minigame)"
+  },
+  "Tempestus": {
+   "location": "[[Varlamore]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Tempestus"
+  },
+  "Temple Trekking": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Temple_Trekking"
+  },
+  "Temple of Ikov (dungeon)": {
+   "location": "[[Kandarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Temple_of_Ikov_(dungeon)"
+  },
+  "Temple of Marimbo Dungeon": {
+   "location": "[[Ape Atoll]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Temple_of_Marimbo_Dungeon"
+  },
+  "Temple of the Eye (location)": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Temple_of_the_Eye_(location)"
+  },
+  "Tempoross Cove": {
+   "location": "[[Ardent Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Tempoross_Cove"
+  },
+  "Thammaron's throne room": {
+   "location": "[[Infernus]] (speculated)",
+   "source_url": "https://oldschool.runescape.wiki/w/Thammaron's_throne_room"
+  },
+  "The Crown Jewel": {
+   "location": "South of the [[Avium Savannah]]",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Crown_Jewel"
+  },
+  "The Fractured Archive": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Fractured_Archive"
+  },
+  "The Gauntlet": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Gauntlet"
+  },
+  "The Graveyard (location)": {
+   "location": "West of [[Weiss]]",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Graveyard_(location)"
+  },
+  "The Great Conch": {
+   "location": "[[Unquiet Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Great_Conch"
+  },
+  "The Little Pearl": {
+   "location": "[[Unquiet Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Little_Pearl"
+  },
+  "The Node": {
+   "location": "[[Misthalin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Node"
+  },
+  "The Node mine": {
+   "location": "Southern island of [[The Node]]",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Node_mine"
+  },
+  "The Onyx Crest": {
+   "location": "[[Unquiet Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Onyx_Crest"
+  },
+  "The Pandemonium": {
+   "location": "[[Ardent Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Pandemonium"
+  },
+  "The Stranglewood mine": {
+   "location": "[[The Stranglewood]]",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Stranglewood_mine"
+  },
+  "The Summer Shore": {
+   "location": "[[The Great Conch]]",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Summer_Shore"
+  },
+  "The Warrens": {
+   "location": "[[Great Kourend]]",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Warrens"
+  },
+  "Theatre of Blood": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Theatre_of_Blood"
+  },
+  "Tithe Farm": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Tithe_Farm"
+  },
+  "Tolna's rift": {
+   "location": "[[Misthalin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Tolna's_rift"
+  },
+  "Tomb of Bervirius": {
+   "location": "[[Karamja]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Tomb_of_Bervirius"
+  },
+  "Tombs of Amascut": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Tombs_of_Amascut"
+  },
+  "Tonali Cavern": {
+   "location": "[[Crypt of Tonali]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Tonali_Cavern"
+  },
+  "Trahaearn mine": {
+   "location": "Entrances at south-east [[Prifddinas]].",
+   "source_url": "https://oldschool.runescape.wiki/w/Trahaearn_mine"
+  },
+  "Tree Gnome Stronghold": {
+   "location": "[[Kandarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Tree_Gnome_Stronghold"
+  },
+  "Tree Gnome Village Dungeon": {
+   "location": "[[Tree Gnome Village (location)|Tree Gnome Village]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Tree_Gnome_Village_Dungeon"
+  },
+  "Troll Stronghold (location)": {
+   "location": "[[Troll Country]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Troll_Stronghold_(location)"
+  },
+  "Troll kitchen": {
+   "location": "[[Troll Country]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Troll_kitchen"
+  },
+  "Trollweiss Dungeon": {
+   "location": "[[Troll Country]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Trollweiss_Dungeon"
+  },
+  "Trouble Brewing": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Trouble_Brewing"
+  },
+  "Tunnel of Chaos": {
+   "location": "[[Misthalin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Tunnel_of_Chaos"
+  },
+  "Tutorial Island": {
+   "location": "[[Misthalin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Tutorial_Island"
+  },
+  "Tutorial Island mine": {
+   "location": "[[Tutorial Island]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Tutorial_Island_mine"
+  },
+  "Twilight Temple": {
+   "location": "Varlamore",
+   "source_url": "https://oldschool.runescape.wiki/w/Twilight_Temple"
+  },
+  "Tyras Camp": {
+   "location": "[[Tirannwn]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Tyras_Camp"
+  },
+  "TzHaar Fight Cave": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/TzHaar_Fight_Cave"
+  },
+  "TzHaar Fight Pit": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/TzHaar_Fight_Pit"
+  },
+  "TzHaar-Ket-Rak's Challenges": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/TzHaar-Ket-Rak's_Challenges"
+  },
+  "Underground Pass (dungeon)": {
+   "location": "[[Kandarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Underground_Pass_(dungeon)"
+  },
+  "Underwater Tunnel": {
+   "location": "[[Harmony Island]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Underwater_Tunnel"
+  },
+  "Ungael": {
+   "location": "[[Northern Ocean]], [[Fremennik Province]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Ungael"
+  },
+  "Ungael laboratory": {
+   "location": "[[Ungael]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Ungael_laboratory"
+  },
+  "Unnamed island (River Salve)": {
+   "location": "[[Mort Myre Swamp]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Unnamed_island_(River_Salve)"
+  },
+  "Unnamed island (east of Fossil Island)": {
+   "location": "East of [[Fossil Island]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Unnamed_island_(east_of_Fossil_Island)"
+  },
+  "Unnamed island (east of Icyene Graveyard)": {
+   "location": "East of [[Icyene Graveyard]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Unnamed_island_(east_of_Icyene_Graveyard)"
+  },
+  "Unnamed island (east of the Ruins of Uzer)": {
+   "location": "[[The Iron Sea]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Unnamed_island_(east_of_the_Ruins_of_Uzer)"
+  },
+  "Unnamed island (north of Gu'Tanoth)": {
+   "location": "[[Kandarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Unnamed_island_(north_of_Gu'Tanoth)"
+  },
+  "Unnamed island (north of the Mausoleum)": {
+   "location": "[[Untamed Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Unnamed_island_(north_of_the_Mausoleum)"
+  },
+  "Unnamed island (north-east of Fossil Island)": {
+   "location": "[[Untamed Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Unnamed_island_(north-east_of_Fossil_Island)"
+  },
+  "Unnamed island (north-east of Lithkren)": {
+   "location": "[[Untamed Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Unnamed_island_(north-east_of_Lithkren)"
+  },
+  "Unnamed island (penguins)": {
+   "location": "[[Fremennik Province]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Unnamed_island_(penguins)"
+  },
+  "Unnamed island (south of Menaphos)": {
+   "location": "[[Menaphite Sea]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Unnamed_island_(south_of_Menaphos)"
+  },
+  "Unnamed island (south of Miscellania)": {
+   "location": "[[Fremennik Province]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Unnamed_island_(south_of_Miscellania)"
+  },
+  "Unnamed island (south of the Ruins of Ullek)": {
+   "location": "[[The Iron Sea]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Unnamed_island_(south_of_the_Ruins_of_Ullek)"
+  },
+  "Unnamed island (south-east of Ardougne)": {
+   "location": "[[Kandarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Unnamed_island_(south-east_of_Ardougne)"
+  },
+  "Unnamed island (south-east of Fossil Island)": {
+   "location": "[[Untamed Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Unnamed_island_(south-east_of_Fossil_Island)"
+  },
+  "Uzer Hunter area": {
+   "location": "[[Kharidian Desert]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Uzer_Hunter_area"
+  },
+  "Uzer Oasis": {
+   "location": "[[Kharidian Desert]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Uzer_Oasis"
+  },
+  "Uzer mine": {
+   "location": "North of [[Ruins of Uzer|Uzer]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Uzer_mine"
+  },
+  "Vale Totems": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Vale_Totems"
+  },
+  "Varrock": {
+   "location": "[[Misthalin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Varrock"
+  },
+  "Varrock Palace": {
+   "location": "[[Varrock]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Varrock_Palace"
+  },
+  "Varrock Rooftop Course": {
+   "location": "[[Varrock]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Varrock_Rooftop_Course"
+  },
+  "Varrock Sewers": {
+   "location": "[[Misthalin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Varrock_Sewers"
+  },
+  "Varrock crypt": {
+   "location": "Somewhere beneath [[Varrock]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Varrock_crypt"
+  },
+  "Vatrachos Island": {
+   "location": "East of [[Varlamore]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Vatrachos_Island"
+  },
+  "Ver Sinhaza": {
+   "location": "[[Morytania]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Ver_Sinhaza"
+  },
+  "Verdant Valley": {
+   "location": "South of the [[Museum Camp]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Verdant_Valley"
+  },
+  "Vet'ion's Rest": {
+   "location": "[[Wilderness]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Vet'ion's_Rest"
+  },
+  "Viyeldi caves": {
+   "location": "[[Karamja]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Viyeldi_caves"
+  },
+  "Void Knights' Outpost": {
+   "location": "[[Ardent Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Void_Knights'_Outpost"
+  },
+  "Volcanic Mine": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Volcanic_Mine"
+  },
+  "Warriors' Guild": {
+   "location": "[[Burthorpe]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Warriors'_Guild"
+  },
+  "Water Ravine Dungeon": {
+   "location": "[[Kharidian Desert]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Water_Ravine_Dungeon"
+  },
+  "Water mill cellar": {
+   "location": "Beneath [[Groats' farm]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Water_mill_cellar"
+  },
+  "Waterbirth Island": {
+   "location": "[[Fremennik Province]], [[Northern Ocean]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Waterbirth_Island"
+  },
+  "Waterbirth Island Dungeon": {
+   "location": "[[Fremennik Province]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Waterbirth_Island_Dungeon"
+  },
+  "Waterfall Dungeon": {
+   "location": "[[Kandarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Waterfall_Dungeon"
+  },
+  "Web Chasm": {
+   "location": "[[Wilderness]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Web_Chasm"
+  },
+  "Werewolf Agility Course": {
+   "location": "[[Canifis]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Werewolf_Agility_Course"
+  },
+  "Werewolf Skullball": {
+   "location": "[[Canifis]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Werewolf_Skullball"
+  },
+  "West Ardougne": {
+   "location": "[[Ardougne]] ([[Kandarin]])",
+   "source_url": "https://oldschool.runescape.wiki/w/West_Ardougne"
+  },
+  "West Falador mine": {
+   "location": "West of [[Falador]]",
+   "source_url": "https://oldschool.runescape.wiki/w/West_Falador_mine"
+  },
+  "West Fremennik Isles mine": {
+   "location": "[[Neitiznot]]",
+   "source_url": "https://oldschool.runescape.wiki/w/West_Fremennik_Isles_mine"
+  },
+  "West Lumbridge Swamp mine": {
+   "location": "The south-west corner of [[Lumbridge swamp]]",
+   "source_url": "https://oldschool.runescape.wiki/w/West_Lumbridge_Swamp_mine"
+  },
+  "Wester Island": {
+   "location": "N/A",
+   "source_url": "https://oldschool.runescape.wiki/w/Wester_Island"
+  },
+  "White Knights' Castle": {
+   "location": "[[Falador]]",
+   "source_url": "https://oldschool.runescape.wiki/w/White_Knights'_Castle"
+  },
+  "White Wolf Tunnel": {
+   "location": "Beneath [[White Wolf Mountain]]",
+   "source_url": "https://oldschool.runescape.wiki/w/White_Wolf_Tunnel"
+  },
+  "Wilderness Agility Course": {
+   "location": "[[Wilderness]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Wilderness_Agility_Course"
+  },
+  "Wilderness Agility Course Dungeon": {
+   "location": "[[Wilderness]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Wilderness_Agility_Course_Dungeon"
+  },
+  "Wilderness God Wars Dungeon": {
+   "location": "[[Wilderness]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Wilderness_God_Wars_Dungeon"
+  },
+  "Wilderness Slayer Cave": {
+   "location": "[[Wilderness]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Wilderness_Slayer_Cave"
+  },
+  "Wintumber Island": {
+   "location": "South of the [[Isle of Souls]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Wintumber_Island"
+  },
+  "Witchaven": {
+   "location": "[[Kandarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Witchaven"
+  },
+  "Witchaven Dungeon": {
+   "location": "[[Kandarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Witchaven_Dungeon"
+  },
+  "Witchaven church": {
+   "location": "[[Kandarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Witchaven_church"
+  },
+  "Witchaven mine": {
+   "location": "East of [[Ardougne]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Witchaven_mine"
+  },
+  "Wizards' Guild": {
+   "location": "[[Yanille]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Wizards'_Guild"
+  },
+  "Wizards' Tower": {
+   "location": "[[Misthalin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Wizards'_Tower"
+  },
+  "Wolf Den": {
+   "location": "[[Varlamore]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Wolf_Den"
+  },
+  "Woodcutting Guild": {
+   "location": "[[Hosidius]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Woodcutting_Guild"
+  },
+  "Wyvern Cave": {
+   "location": "[[Fossil Island]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Wyvern_Cave"
+  },
+  "Yama's Domain": {
+   "location": "[[Chasm of Fire]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Yama's_Domain"
+  },
+  "Yama's Lair": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Yama's_Lair"
+  },
+  "Yanille": {
+   "location": "[[Kandarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Yanille"
+  },
+  "Yanille Agility Dungeon": {
+   "location": "[[Kandarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Yanille_Agility_Dungeon"
+  },
+  "Yanille Chain": {
+   "location": "[[Kandarin]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Yanille_Chain"
+  },
+  "Ynysdail": {
+   "location": "North of [[Gwenith]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Ynysdail"
+  },
+  "Ynysdail Cavern": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Ynysdail_Cavern"
+  },
+  "Zanaris": {
+   "location": "",
+   "source_url": "https://oldschool.runescape.wiki/w/Zanaris"
+  },
+  "Zemouregal's Base": {
+   "location": "[[Silvarea]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Zemouregal's_Base"
+  },
+  "Zemouregal's Fort": {
+   "location": "[[Troll Country]]",
+   "source_url": "https://oldschool.runescape.wiki/w/Zemouregal's_Fort"
+  },
+  "Zul-Andra": {
+   "location": "[[Poison Waste]] ([[Tirannwn]])",
+   "source_url": "https://oldschool.runescape.wiki/w/Zul-Andra"
+  }
+ }
+}

@@ -23,4 +23,6 @@ data/raw/**
 !data/raw/storeline_bucket.json
 # Wiki location categories IS committed provenance (offline snapshot for world skeleton shape test)
 !data/raw/wiki_location_categories.json
+# Wiki location infoboxes IS committed provenance (infobox-location parenting brick for world rehoming)
+!data/raw/wiki_location_infoboxes.json
 .superpowers/

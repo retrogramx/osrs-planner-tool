@@ -1,0 +1,69 @@
+{
+ "_provenance": {
+  "description": "Owner-authored editorial overrides for place parenting. Each entry fixes a wrong-pick (auto-resolution chose the wrong parent) or homes an activity whose infobox is empty. Applied by build_world as rung-1 overrides (before category/name-suffix/infobox signals). source_token is a verbatim quote from source_url establishing the parent relationship.",
+  "locked_on": "2026-06-28",
+  "grounding_gaps": [
+   "place:dragonkin-castle: re-verified 2026-06-28 against both wiki pages. The Dragonkin Castle page lists infobox location=Unknown and names only A Tail of Two Cats / Burthorpe / Pyramid Plunder — never Lithkren or Fossil Island. The Lithkren page describes a 'fortress' (Zorgoth's Dragon Slayer II base) but never names 'Dragonkin Castle'; they read as distinct structures. No verbatim cross-reference exists; override OMITTED (never-fabricate) — place remains flagged until owner provides a source.",
+   "place:daimon-s-crater: override targets place:untamed-ocean to mirror backbone place:daimons-crater (same island, slug-collision). Wiki text names Bounty Hunter/Wilderness context, not Untamed Ocean directly; this is an editorial merge decision by the owner.",
+   "place:giants-foundry: wiki page names 'Giants Plateau' as container, not 'Kharidian Desert' directly. Override is editorial (plateau is east of Al Kharid, within the desert region); token is verbatim from the Foundry page.",
+   "place:creature-creation: source_token names 'Tower of Life dungeon', not Kandarin directly. The Tower of Life is located in Kandarin (wiki infobox location = Kandarin) — override parent is a 1-hop inference: dungeon ∈ Tower of Life ∈ Kandarin."
+  ]
+ },
+ "overrides": {
+  "place:ver-sinhaza": {
+   "parent": "place:morytania",
+   "source_url": "https://oldschool.runescape.wiki/w/Ver_Sinhaza",
+   "source_token": "[[Morytania]]"
+  },
+  "place:theatre-of-blood": {
+   "parent": "place:ver-sinhaza",
+   "source_url": "https://oldschool.runescape.wiki/w/Theatre_of_Blood",
+   "source_token": "The Theatre of Blood is a raid located beneath the castle of Ver Sinhaza."
+  },
+  "place:daimon-s-crater": {
+   "parent": "place:untamed-ocean",
+   "source_url": "https://oldschool.runescape.wiki/w/Daimon%27s_Crater",
+   "source_token": "Daimon's Crater is the location of the Bounty Hunter minigame and is only accessible on worlds 318 (UK), 319 (US West), or 569 (AUS)."
+  },
+  "place:bounty-hunter": {
+   "parent": "place:wilderness",
+   "source_url": "https://oldschool.runescape.wiki/w/Bounty_Hunter",
+   "source_token": "Bounty Hunter, commonly abbreviated as BH, is a player killing minigame located in the Wilderness at Daimon's Crater."
+  },
+  "place:giants-foundry": {
+   "parent": "place:kharidian-desert",
+   "source_url": "https://oldschool.runescape.wiki/w/Giants%27_Foundry",
+   "source_token": "The Giants' Foundry is located in a cave beneath the Giants' Plateau."
+  },
+  "place:pest-control": {
+   "parent": "place:void-knights-outpost",
+   "source_url": "https://oldschool.runescape.wiki/w/Pest_Control",
+   "source_token": "To play, players should board one of three landers corresponding to the desired difficulty on the Void Knights' Outpost."
+  },
+  "place:temple-trekking": {
+   "parent": "place:morytania",
+   "source_url": "https://oldschool.runescape.wiki/w/Temple_Trekking",
+   "source_token": "Temple Trekking is a members-only minigame in which the player must escort victims of vampyre rule from Burgh de Rott through Morytania to the Paterdomus, the temple on River Salve."
+  },
+  "place:creature-creation": {
+   "parent": "place:kandarin",
+   "source_url": "https://oldschool.runescape.wiki/w/Creature_Creation",
+   "source_token": "It can be found in the Tower of Life dungeon after completing the Tower of Life quest."
+  },
+  "place:vale-totems": {
+   "parent": "place:auburn-valley",
+   "source_url": "https://oldschool.runescape.wiki/w/Vale_Totems",
+   "source_token": "Vale Totems is a Fletching minigame found in Auburn Valley in the north western part of Varlamore."
+  },
+  "place:ynysdail-cavern": {
+   "parent": "place:ynysdail",
+   "source_url": "https://oldschool.runescape.wiki/w/Ynysdail_Cavern",
+   "source_token": "Ynysdail Cavern is a dungeon beneath Ynysdail."
+  },
+  "place:miscellania-and-etceteria-dungeon-mine": {
+   "parent": "place:miscellania-and-etceteria-dungeon",
+   "source_url": "https://oldschool.runescape.wiki/w/Miscellania_and_Etceteria_Dungeon_mine",
+   "source_token": "Miscellania and Etceteria Dungeon mine is a small mining site found near the entrance to Miscellania and Etceteria dungeon"
+  }
+ }
+}

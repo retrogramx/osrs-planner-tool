@@ -1998,6 +1998,198 @@
    "located_in": "place:karamja",
    "source_url": "https://oldschool.runescape.wiki/w/Moss_Giant_Island",
    "members": true
+  },
+  {
+   "id": "place:abyssal-space",
+   "place_type": "region",
+   "name": "Abyssal Space",
+   "located_in": "place:gielinor",
+   "source_url": "https://oldschool.runescape.wiki/w/Abyssal_Space",
+   "members": true
+  },
+  {
+   "id": "place:auburn-valley",
+   "place_type": "region",
+   "name": "Auburn Valley",
+   "located_in": "place:varlamore",
+   "source_url": "https://oldschool.runescape.wiki/w/Auburn_Valley",
+   "members": true
+  },
+  {
+   "id": "place:barbarian-village",
+   "place_type": "settlement",
+   "name": "Barbarian Village",
+   "located_in": "place:misthalin",
+   "source_url": "https://oldschool.runescape.wiki/w/Barbarian_Village",
+   "members": false
+  },
+  {
+   "id": "place:brimhaven",
+   "place_type": "town",
+   "name": "Brimhaven",
+   "located_in": "place:karamja",
+   "source_url": "https://oldschool.runescape.wiki/w/Brimhaven",
+   "members": true
+  },
+  {
+   "id": "place:corsair-cove",
+   "place_type": "settlement",
+   "name": "Corsair Cove",
+   "located_in": "place:feldip-hills",
+   "source_url": "https://oldschool.runescape.wiki/w/Corsair_Cove",
+   "members": false
+  },
+  {
+   "id": "place:groats-farm",
+   "place_type": "point_of_interest",
+   "name": "Groats' farm",
+   "located_in": "place:misthalin",
+   "source_url": "https://oldschool.runescape.wiki/w/Groats%27_farm",
+   "members": false
+  },
+  {
+   "id": "place:isafdar",
+   "place_type": "region",
+   "name": "Isafdar",
+   "located_in": "place:tirannwn",
+   "source_url": "https://oldschool.runescape.wiki/w/Isafdar",
+   "members": true
+  },
+  {
+   "id": "place:lumbridge-swamp",
+   "place_type": "region",
+   "name": "Lumbridge Swamp",
+   "located_in": "place:misthalin",
+   "source_url": "https://oldschool.runescape.wiki/w/Lumbridge_Swamp",
+   "members": false
+  },
+  {
+   "id": "place:meiyerditch",
+   "place_type": "town",
+   "name": "Meiyerditch",
+   "located_in": "place:morytania",
+   "source_url": "https://oldschool.runescape.wiki/w/Meiyerditch",
+   "members": true
+  },
+  {
+   "id": "place:mount-karuulm",
+   "place_type": "region",
+   "name": "Mount Karuulm",
+   "located_in": "place:kebos-lowlands",
+   "source_url": "https://oldschool.runescape.wiki/w/Mount_Karuulm",
+   "members": true
+  },
+  {
+   "id": "place:musa-point",
+   "place_type": "settlement",
+   "name": "Musa Point",
+   "located_in": "place:karamja",
+   "source_url": "https://oldschool.runescape.wiki/w/Musa_Point",
+   "members": false
+  },
+  {
+   "id": "place:mynydd",
+   "place_type": "settlement",
+   "name": "Mynydd",
+   "located_in": "place:tirannwn",
+   "source_url": "https://oldschool.runescape.wiki/w/Mynydd",
+   "members": true
+  },
+  {
+   "id": "place:necropolis",
+   "place_type": "region",
+   "name": "Necropolis",
+   "located_in": "place:kharidian-desert",
+   "source_url": "https://oldschool.runescape.wiki/w/Necropolis",
+   "members": true
+  },
+  {
+   "id": "place:paterdomus",
+   "place_type": "point_of_interest",
+   "name": "Paterdomus",
+   "located_in": "place:misthalin",
+   "source_url": "https://oldschool.runescape.wiki/w/Paterdomus",
+   "members": true
+  },
+  {
+   "id": "place:piscatoris",
+   "place_type": "region",
+   "name": "Piscatoris",
+   "located_in": "place:kandarin",
+   "source_url": "https://oldschool.runescape.wiki/w/Piscatoris",
+   "members": true
+  },
+  {
+   "id": "place:ruins-of-ullek",
+   "place_type": "region",
+   "name": "Ruins of Ullek",
+   "located_in": "place:kharidian-desert",
+   "source_url": "https://oldschool.runescape.wiki/w/Ruins_of_Ullek",
+   "members": true
+  },
+  {
+   "id": "place:ruins-of-uzer",
+   "place_type": "region",
+   "name": "Ruins of Uzer",
+   "located_in": "place:kharidian-desert",
+   "source_url": "https://oldschool.runescape.wiki/w/Ruins_of_Uzer",
+   "members": true
+  },
+  {
+   "id": "place:silvarea",
+   "place_type": "region",
+   "name": "Silvarea",
+   "located_in": "place:misthalin",
+   "source_url": "https://oldschool.runescape.wiki/w/Silvarea",
+   "members": true
+  },
+  {
+   "id": "place:the-scar",
+   "place_type": "region",
+   "name": "The Scar",
+   "located_in": "place:abyssal-space",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Scar",
+   "members": true
+  },
+  {
+   "id": "place:the-stranglewood",
+   "place_type": "region",
+   "name": "The Stranglewood",
+   "located_in": "place:varlamore",
+   "source_url": "https://oldschool.runescape.wiki/w/The_Stranglewood",
+   "members": true
+  },
+  {
+   "id": "place:tlati-rainforest",
+   "place_type": "region",
+   "name": "Tlati Rainforest",
+   "located_in": "place:varlamore",
+   "source_url": "https://oldschool.runescape.wiki/w/Tlati_Rainforest",
+   "members": true
+  },
+  {
+   "id": "place:tree-gnome-village",
+   "place_type": "settlement",
+   "name": "Tree Gnome Village",
+   "located_in": "place:kandarin",
+   "source_url": "https://oldschool.runescape.wiki/w/Tree_Gnome_Village",
+   "members": true
+  },
+  {
+   "id": "place:weiss",
+   "place_type": "settlement",
+   "name": "Weiss",
+   "located_in": "place:troll-country",
+   "source_url": "https://oldschool.runescape.wiki/w/Weiss",
+   "members": true
+  },
+  {
+   "id": "place:white-wolf-mountain",
+   "place_type": "region",
+   "name": "White Wolf Mountain",
+   "located_in": "place:asgarnia",
+   "source_url": "https://oldschool.runescape.wiki/w/White_Wolf_Mountain",
+   "members": true
   }
  ]
 }

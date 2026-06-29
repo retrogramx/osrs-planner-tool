@@ -182,6 +182,36 @@ def check_schema(store: KGStore, schema: dict) -> list[Finding]:
     return findings
 
 
+def _unreachable_place_ids(store: KGStore) -> list[str]:
+    """Return place: node ids that cannot reach place:gielinor via located_in (cycle/dangling).
+
+    Mirrors verify_world._unreachable_places but operates on the committed store so the
+    gate covers ALL place builders (build_world, build_map, future builders), not just the
+    standalone build_world re-derive. Called from check_kg as a structural VIOLATION.
+    """
+    place_ids = [nid for nid in store.nodes if nid.startswith("place:")]
+    if not place_ids:
+        return []
+    par: dict[str, str | None] = {}
+    for e in store.edges:
+        t = e.type.value if hasattr(e.type, "value") else e.type
+        if t == "located_in":
+            par[e.src] = e.dst
+    out = []
+    for pid in place_ids:
+        if pid == "place:gielinor":
+            continue
+        seen: set[str] = set()
+        cur: str | None = pid
+        while cur != "place:gielinor":
+            if cur is None or cur in seen:
+                out.append(pid)
+                break
+            seen.add(cur)
+            cur = par.get(cur)
+    return out
+
+
 def check_kg_warnings(store: KGStore, quests_data: dict) -> list[str]:
     """Return non-fatal warning strings (printed but do not affect exit code).
 
@@ -259,6 +289,13 @@ def check_kg(store: KGStore, quests_data: dict,
     except (KeyError, ValueError) as exc:
         errors.append(f"[acyclic] find_cycles() raised {type(exc).__name__}: {exc} "
                       f"(likely a dangling group/node ref — see [ref] errors below)")
+
+    # --- 1b. located_in acyclicity gate: every place: node must reach place:gielinor ---
+    # Covers ALL committed place builders (build_world + build_map + future).
+    # verify_world.py gates the standalone build_world re-derive; this gates the committed graph.
+    for pid in _unreachable_place_ids(store):
+        errors.append(f"[located_in] place node {pid!r} cannot reach place:gielinor "
+                      f"(cycle or dangling located_in chain)")
 
     # --- 3. Vocabulary: node kinds ---
     for nid, node in store.nodes.items():

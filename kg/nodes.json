@@ -10345,6 +10345,16 @@
   {
     "data": {
       "members": true,
+      "place_type": "region"
+    },
+    "id": "place:abyssal-space",
+    "kind": "place",
+    "name": "Abyssal Space",
+    "slug": "abyssal-space"
+  },
+  {
+    "data": {
+      "members": true,
       "place_type": "sea"
     },
     "id": "place:aehecatl",
@@ -10656,6 +10666,16 @@
   },
   {
     "data": {
+      "members": true,
+      "place_type": "region"
+    },
+    "id": "place:auburn-valley",
+    "kind": "place",
+    "name": "Auburn Valley",
+    "slug": "auburn-valley"
+  },
+  {
+    "data": {
       "content_kind": "settlement",
       "members": true,
       "place_type": "settlement"
@@ -10771,6 +10791,16 @@
     "kind": "place",
     "name": "Barbarian Outpost Agility Course",
     "slug": "barbarian-outpost-agility-course"
+  },
+  {
+    "data": {
+      "members": false,
+      "place_type": "settlement"
+    },
+    "id": "place:barbarian-village",
+    "kind": "place",
+    "name": "Barbarian Village",
+    "slug": "barbarian-village"
   },
   {
     "data": {
@@ -10949,6 +10979,16 @@
   },
   {
     "data": {
+      "members": true,
+      "place_type": "town"
+    },
+    "id": "place:brimhaven",
+    "kind": "place",
+    "name": "Brimhaven",
+    "slug": "brimhaven"
+  },
+  {
+    "data": {
       "content_kind": "minigame",
       "place_type": "point_of_interest"
     },
@@ -11030,17 +11070,6 @@
     "kind": "place",
     "name": "Buccaneers' Laboratory",
     "slug": "buccaneers-laboratory"
-  },
-  {
-    "data": {
-      "content_kind": "settlement",
-      "members": false,
-      "place_type": "settlement"
-    },
-    "id": "place:bunbridge",
-    "kind": "place",
-    "name": "Bunbridge",
-    "slug": "bunbridge"
   },
   {
     "data": {
@@ -11149,17 +11178,6 @@
     "kind": "place",
     "name": "Camelot",
     "slug": "camelot"
-  },
-  {
-    "data": {
-      "content_kind": "island",
-      "members": false,
-      "place_type": "island"
-    },
-    "id": "place:camp-sapphire-lagoon",
-    "kind": "place",
-    "name": "Camp Sapphire Lagoon",
-    "slug": "camp-sapphire-lagoon"
   },
   {
     "data": {
@@ -11420,17 +11438,6 @@
   },
   {
     "data": {
-      "content_kind": "island",
-      "members": true,
-      "place_type": "island"
-    },
-    "id": "place:college-of-bards",
-    "kind": "place",
-    "name": "College of Bards",
-    "slug": "college-of-bards"
-  },
-  {
-    "data": {
       "content_kind": "agility course",
       "members": true,
       "place_type": "point_of_interest"
@@ -11472,6 +11479,16 @@
     "kind": "place",
     "name": "Corporeal Beast's Lair",
     "slug": "corporeal-beast-s-lair"
+  },
+  {
+    "data": {
+      "members": false,
+      "place_type": "settlement"
+    },
+    "id": "place:corsair-cove",
+    "kind": "place",
+    "name": "Corsair Cove",
+    "slug": "corsair-cove"
   },
   {
     "data": {
@@ -11762,17 +11779,6 @@
   },
   {
     "data": {
-      "content_kind": "island",
-      "members": true,
-      "place_type": "island"
-    },
-    "id": "place:deadman-isles",
-    "kind": "place",
-    "name": "Deadman Isles",
-    "slug": "deadman-isles"
-  },
-  {
-    "data": {
       "content_kind": "dungeon",
       "members": true,
       "place_type": "dungeon"
@@ -12009,16 +12015,6 @@
   },
   {
     "data": {
-      "content_kind": "minigame",
-      "place_type": "point_of_interest"
-    },
-    "id": "place:duel-arena",
-    "kind": "place",
-    "name": "Duel Arena",
-    "slug": "duel-arena"
-  },
-  {
-    "data": {
       "members": true,
       "place_type": "sea"
     },
@@ -12114,17 +12110,6 @@
     "kind": "place",
     "name": "East Tlati Rainforest mine",
     "slug": "east-tlati-rainforest-mine"
-  },
-  {
-    "data": {
-      "content_kind": "dungeon",
-      "members": false,
-      "place_type": "dungeon"
-    },
-    "id": "place:easter-workshop",
-    "kind": "place",
-    "name": "Easter Workshop",
-    "slug": "easter-workshop"
   },
   {
     "data": {
@@ -12901,6 +12886,16 @@
   },
   {
     "data": {
+      "members": false,
+      "place_type": "point_of_interest"
+    },
+    "id": "place:groats-farm",
+    "kind": "place",
+    "name": "Groats' farm",
+    "slug": "groats-farm"
+  },
+  {
+    "data": {
       "content_kind": "dungeon",
       "members": true,
       "place_type": "dungeon"
@@ -12919,16 +12914,6 @@
     "kind": "place",
     "name": "Guardians of the Rift",
     "slug": "guardians-of-the-rift"
-  },
-  {
-    "data": {
-      "content_kind": "guild",
-      "place_type": "point_of_interest"
-    },
-    "id": "place:guilds",
-    "kind": "place",
-    "name": "Guilds",
-    "slug": "guilds"
   },
   {
     "data": {
@@ -13271,6 +13256,16 @@
   },
   {
     "data": {
+      "members": true,
+      "place_type": "region"
+    },
+    "id": "place:isafdar",
+    "kind": "place",
+    "name": "Isafdar",
+    "slug": "isafdar"
+  },
+  {
+    "data": {
       "content_kind": "mine",
       "members": true,
       "place_type": "point_of_interest"
@@ -13299,16 +13294,6 @@
     "kind": "place",
     "name": "Isle of Bones",
     "slug": "isle-of-bones"
-  },
-  {
-    "data": {
-      "content_kind": "island",
-      "place_type": "island"
-    },
-    "id": "place:isle-of-garmr",
-    "kind": "place",
-    "name": "Isle of Garmr",
-    "slug": "isle-of-garmr"
   },
   {
     "data": {
@@ -13909,26 +13894,6 @@
   },
   {
     "data": {
-      "content_kind": "dungeon",
-      "place_type": "dungeon"
-    },
-    "id": "place:list-of-dungeons",
-    "kind": "place",
-    "name": "List of dungeons",
-    "slug": "list-of-dungeons"
-  },
-  {
-    "data": {
-      "content_kind": "mine",
-      "place_type": "point_of_interest"
-    },
-    "id": "place:list-of-mines",
-    "kind": "place",
-    "name": "List of mines",
-    "slug": "list-of-mines"
-  },
-  {
-    "data": {
       "members": true,
       "place_type": "island"
     },
@@ -14110,6 +14075,16 @@
   },
   {
     "data": {
+      "members": false,
+      "place_type": "region"
+    },
+    "id": "place:lumbridge-swamp",
+    "kind": "place",
+    "name": "Lumbridge Swamp",
+    "slug": "lumbridge-swamp"
+  },
+  {
+    "data": {
       "content_kind": "dungeon",
       "members": true,
       "place_type": "dungeon"
@@ -14224,6 +14199,16 @@
   },
   {
     "data": {
+      "members": true,
+      "place_type": "town"
+    },
+    "id": "place:meiyerditch",
+    "kind": "place",
+    "name": "Meiyerditch",
+    "slug": "meiyerditch"
+  },
+  {
+    "data": {
       "content_kind": "dungeon",
       "members": true,
       "place_type": "dungeon"
@@ -14286,16 +14271,6 @@
     "kind": "place",
     "name": "Mess",
     "slug": "mess"
-  },
-  {
-    "data": {
-      "content_kind": "minigame",
-      "place_type": "point_of_interest"
-    },
-    "id": "place:minigames",
-    "kind": "place",
-    "name": "Minigames",
-    "slug": "minigames"
   },
   {
     "data": {
@@ -14579,6 +14554,16 @@
   },
   {
     "data": {
+      "members": true,
+      "place_type": "region"
+    },
+    "id": "place:mount-karuulm",
+    "kind": "place",
+    "name": "Mount Karuulm",
+    "slug": "mount-karuulm"
+  },
+  {
+    "data": {
       "content_kind": "mine",
       "members": true,
       "place_type": "point_of_interest"
@@ -14675,6 +14660,16 @@
   },
   {
     "data": {
+      "members": false,
+      "place_type": "settlement"
+    },
+    "id": "place:musa-point",
+    "kind": "place",
+    "name": "Musa Point",
+    "slug": "musa-point"
+  },
+  {
+    "data": {
       "content_kind": "settlement",
       "members": true,
       "place_type": "settlement"
@@ -14683,6 +14678,16 @@
     "kind": "place",
     "name": "Museum Camp",
     "slug": "museum-camp"
+  },
+  {
+    "data": {
+      "members": true,
+      "place_type": "settlement"
+    },
+    "id": "place:mynydd",
+    "kind": "place",
+    "name": "Mynydd",
+    "slug": "mynydd"
   },
   {
     "data": {
@@ -14748,6 +14753,16 @@
     "kind": "place",
     "name": "Nardah",
     "slug": "nardah"
+  },
+  {
+    "data": {
+      "members": true,
+      "place_type": "region"
+    },
+    "id": "place:necropolis",
+    "kind": "place",
+    "name": "Necropolis",
+    "slug": "necropolis"
   },
   {
     "data": {
@@ -14957,6 +14972,16 @@
   },
   {
     "data": {
+      "members": true,
+      "place_type": "point_of_interest"
+    },
+    "id": "place:paterdomus",
+    "kind": "place",
+    "name": "Paterdomus",
+    "slug": "paterdomus"
+  },
+  {
+    "data": {
       "content_kind": "dungeon",
       "members": true,
       "place_type": "dungeon"
@@ -15058,6 +15083,16 @@
     "kind": "place",
     "name": "Piscarilius mine",
     "slug": "piscarilius-mine"
+  },
+  {
+    "data": {
+      "members": true,
+      "place_type": "region"
+    },
+    "id": "place:piscatoris",
+    "kind": "place",
+    "name": "Piscatoris",
+    "slug": "piscatoris"
   },
   {
     "data": {
@@ -15278,16 +15313,6 @@
   },
   {
     "data": {
-      "content_kind": "raid",
-      "place_type": "dungeon"
-    },
-    "id": "place:raids",
-    "kind": "place",
-    "name": "Raids",
-    "slug": "raids"
-  },
-  {
-    "data": {
       "members": true,
       "place_type": "sea"
     },
@@ -15469,17 +15494,6 @@
   },
   {
     "data": {
-      "content_kind": "dungeon",
-      "members": false,
-      "place_type": "dungeon"
-    },
-    "id": "place:rimmington-church-crypt",
-    "kind": "place",
-    "name": "Rimmington church crypt",
-    "slug": "rimmington-church-crypt"
-  },
-  {
-    "data": {
       "content_kind": "mine",
       "members": false,
       "place_type": "point_of_interest"
@@ -15596,6 +15610,16 @@
   },
   {
     "data": {
+      "members": true,
+      "place_type": "region"
+    },
+    "id": "place:ruins-of-ullek",
+    "kind": "place",
+    "name": "Ruins of Ullek",
+    "slug": "ruins-of-ullek"
+  },
+  {
+    "data": {
       "content_kind": "mine",
       "members": true,
       "place_type": "point_of_interest"
@@ -15629,6 +15653,16 @@
   },
   {
     "data": {
+      "members": true,
+      "place_type": "region"
+    },
+    "id": "place:ruins-of-uzer",
+    "kind": "place",
+    "name": "Ruins of Uzer",
+    "slug": "ruins-of-uzer"
+  },
+  {
+    "data": {
       "content_kind": "mine",
       "members": false,
       "place_type": "point_of_interest"
@@ -15659,17 +15693,6 @@
     "kind": "place",
     "name": "Salvager Overlook",
     "slug": "salvager-overlook"
-  },
-  {
-    "data": {
-      "content_kind": "island",
-      "members": true,
-      "place_type": "island"
-    },
-    "id": "place:salve-island",
-    "kind": "place",
-    "name": "Salve Island",
-    "slug": "salve-island"
   },
   {
     "data": {
@@ -16001,6 +16024,16 @@
     "kind": "place",
     "name": "Silk Chasm",
     "slug": "silk-chasm"
+  },
+  {
+    "data": {
+      "members": true,
+      "place_type": "region"
+    },
+    "id": "place:silvarea",
+    "kind": "place",
+    "name": "Silvarea",
+    "slug": "silvarea"
   },
   {
     "data": {
@@ -16803,6 +16836,16 @@
   {
     "data": {
       "members": true,
+      "place_type": "region"
+    },
+    "id": "place:the-scar",
+    "kind": "place",
+    "name": "The Scar",
+    "slug": "the-scar"
+  },
+  {
+    "data": {
+      "members": true,
       "place_type": "sea"
     },
     "id": "place:the-searing-sea",
@@ -16848,6 +16891,16 @@
     "kind": "place",
     "name": "The Storm Tempor",
     "slug": "the-storm-tempor"
+  },
+  {
+    "data": {
+      "members": true,
+      "place_type": "region"
+    },
+    "id": "place:the-stranglewood",
+    "kind": "place",
+    "name": "The Stranglewood",
+    "slug": "the-stranglewood"
   },
   {
     "data": {
@@ -16925,6 +16978,16 @@
   },
   {
     "data": {
+      "members": true,
+      "place_type": "region"
+    },
+    "id": "place:tlati-rainforest",
+    "kind": "place",
+    "name": "Tlati Rainforest",
+    "slug": "tlati-rainforest"
+  },
+  {
+    "data": {
       "content_kind": "dungeon",
       "members": true,
       "place_type": "dungeon"
@@ -16997,6 +17060,16 @@
     "kind": "place",
     "name": "Tree Gnome Stronghold",
     "slug": "tree-gnome-stronghold"
+  },
+  {
+    "data": {
+      "members": true,
+      "place_type": "settlement"
+    },
+    "id": "place:tree-gnome-village",
+    "kind": "place",
+    "name": "Tree Gnome Village",
+    "slug": "tree-gnome-village"
   },
   {
     "data": {
@@ -17564,6 +17637,16 @@
   {
     "data": {
       "members": true,
+      "place_type": "settlement"
+    },
+    "id": "place:weiss",
+    "kind": "place",
+    "name": "Weiss",
+    "slug": "weiss"
+  },
+  {
+    "data": {
+      "members": true,
       "place_type": "sea"
     },
     "id": "place:weiss-melt",
@@ -17649,17 +17732,6 @@
   },
   {
     "data": {
-      "content_kind": "island",
-      "members": false,
-      "place_type": "island"
-    },
-    "id": "place:wester-island",
-    "kind": "place",
-    "name": "Wester Island",
-    "slug": "wester-island"
-  },
-  {
-    "data": {
       "members": true,
       "place_type": "sea"
     },
@@ -17688,6 +17760,16 @@
     "kind": "place",
     "name": "White Knights' Castle",
     "slug": "white-knights-castle"
+  },
+  {
+    "data": {
+      "members": true,
+      "place_type": "region"
+    },
+    "id": "place:white-wolf-mountain",
+    "kind": "place",
+    "name": "White Wolf Mountain",
+    "slug": "white-wolf-mountain"
   },
   {
     "data": {

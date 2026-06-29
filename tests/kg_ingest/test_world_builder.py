@@ -11,15 +11,9 @@ def test_classify_priority():
 
 def test_parent_region_category_then_name_heuristic():
     name2id = {"kandarin": "place:kandarin", "brimhaven": "place:brimhaven"}
-    # region-category match (deepest)
-    pid, flag = parent_for("Catacombs of Kourend", {"Kandarin"}, name2id)
-    assert pid == "place:kandarin" and not flag
-    # name-suffix fallback: "Brimhaven Dungeon" -> Brimhaven
-    pid, flag = parent_for("Brimhaven Dungeon", {"Caves"}, name2id)
-    assert pid == "place:brimhaven" and not flag
-    # nothing matches -> flagged, parent gielinor
-    pid, flag = parent_for("Mystery Spot", set(), name2id)
-    assert pid == "place:gielinor" and flag
+    assert parent_for("Catacombs of Kourend", {"Kandarin"}, name2id) == ("place:kandarin", "category")
+    assert parent_for("Brimhaven Dungeon", {"Caves"}, name2id) == ("place:brimhaven", "name-suffix")
+    assert parent_for("Mystery Spot", set(), name2id) == ("place:gielinor", "FLAG")
 
 def test_members_flag():
     assert members_of("Lletya", {"Catherby"}, {"Lletya"}) is True

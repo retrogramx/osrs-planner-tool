@@ -62,6 +62,14 @@
   {
     "cond_group": null,
     "data": {},
+    "dst": "place:kandarin",
+    "id": 6005843,
+    "src": "place:tree-gnome-village",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
+    "data": {},
     "dst": "place:wilderness",
     "id": 6006408,
     "src": "place:wilderness-agility-course",
@@ -272,7 +280,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:karamja",
     "id": 6029057,
     "src": "place:viyeldi-caves",
     "type": "located_in"
@@ -400,7 +408,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:iceberg",
     "id": 6047167,
     "src": "place:penguin-agility-course",
     "type": "located_in"
@@ -408,7 +416,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:barbarian-village",
     "id": 6048375,
     "src": "place:stronghold-of-security",
     "type": "located_in"
@@ -664,7 +672,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:shayzien-encampment",
     "id": 6067804,
     "src": "place:shayzien-agility-course",
     "type": "located_in"
@@ -736,7 +744,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:the-stranglewood",
     "id": 6074002,
     "src": "place:the-stranglewood-mine",
     "type": "located_in"
@@ -766,7 +774,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:burthorpe",
     "id": 6077506,
     "src": "place:burthorpe-games-room",
     "type": "located_in"
@@ -789,6 +797,14 @@
     "id": 6078141,
     "src": "shop:varrock-swordshop",
     "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:varlamore",
+    "id": 6078571,
+    "src": "place:auburn-valley",
+    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -821,7 +837,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:laguna-aurorae",
     "id": 6079098,
     "src": "place:kurask-lair",
     "type": "located_in"
@@ -874,7 +890,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:misthalin",
     "id": 6087598,
     "src": "place:draynor-village",
     "type": "located_in"
@@ -949,6 +965,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:abyssal-space",
+    "id": 6096760,
+    "src": "place:the-scar",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "members": false,
       "source_token": "Bucket:Storeline"
@@ -988,7 +1012,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:shayzien-encampment",
     "id": 6103791,
     "src": "place:intelligence-gathering",
     "type": "located_in"
@@ -1036,7 +1060,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:varrock",
     "id": 6110243,
     "src": "place:south-east-varrock-mine",
     "type": "located_in"
@@ -1218,14 +1242,6 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
-    "id": 6129665,
-    "src": "place:easter-workshop",
-    "type": "located_in"
-  },
-  {
-    "cond_group": null,
-    "data": {},
     "dst": "place:southern-expanse",
     "id": 6130102,
     "src": "place:isle-of-serpents",
@@ -1304,7 +1320,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:miscellania",
     "id": 6139429,
     "src": "place:miscellania-and-etceteria-dungeon",
     "type": "located_in"
@@ -1440,7 +1456,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:lumbridge-swamp-caves",
     "id": 6153147,
     "src": "place:tears-of-guthix",
     "type": "located_in"
@@ -1448,7 +1464,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:misthalin",
     "id": 6153243,
     "src": "place:wizards-tower",
     "type": "located_in"
@@ -1456,7 +1472,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:tlati-rainforest",
     "id": 6153429,
     "src": "place:south-west-tlati-rainforest-mine",
     "type": "located_in"
@@ -1736,7 +1752,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:ghorrock",
     "id": 6181701,
     "src": "place:ghorrock-dungeon-mine",
     "type": "located_in"
@@ -1774,7 +1790,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:kandarin",
     "id": 6189432,
     "src": "place:goblin-settlement",
     "type": "located_in"
@@ -2150,7 +2166,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:piscatoris",
     "id": 6230913,
     "src": "place:piscatoris-falconry-area",
     "type": "located_in"
@@ -2276,6 +2292,14 @@
     "id": 6241444,
     "src": "quest:throne-of-miscellania",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:kebos-lowlands",
+    "id": 6241489,
+    "src": "place:mount-karuulm",
+    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -2504,7 +2528,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:agility-pyramid",
     "id": 6260495,
     "src": "place:agility-pyramid-mine",
     "type": "located_in"
@@ -2542,7 +2566,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:karamja",
     "id": 6263043,
     "src": "place:karamjan-temple",
     "type": "located_in"
@@ -2771,7 +2795,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:ferox-enclave",
     "id": 6294529,
     "src": "place:last-man-standing",
     "type": "located_in"
@@ -2844,6 +2868,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:karamja",
+    "id": 6306231,
+    "src": "place:musa-point",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "rate_multiplier",
@@ -2859,17 +2891,9 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:troll-country",
     "id": 6314747,
     "src": "place:troll-kitchen",
-    "type": "located_in"
-  },
-  {
-    "cond_group": null,
-    "data": {},
-    "dst": "place:gielinor",
-    "id": 6315743,
-    "src": "place:rimmington-church-crypt",
     "type": "located_in"
   },
   {
@@ -2932,7 +2956,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:fremennik-province",
     "id": 6321737,
     "src": "place:miscellania-expansion",
     "type": "located_in"
@@ -3004,7 +3028,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:musa-point",
     "id": 6326706,
     "src": "place:karamja-volcano-mine",
     "type": "located_in"
@@ -3212,7 +3236,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:west-ardougne",
     "id": 6351775,
     "src": "place:mourner-tunnels-mine",
     "type": "located_in"
@@ -3424,6 +3448,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:feldip-hills",
+    "id": 6369281,
+    "src": "place:corsair-cove",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "basis": "imbue"
     },
@@ -3446,6 +3478,14 @@
     "dst": "place:unquiet-ocean",
     "id": 6372636,
     "src": "place:remote-island",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:misthalin",
+    "id": 6372950,
+    "src": "place:barbarian-village",
     "type": "located_in"
   },
   {
@@ -3745,7 +3785,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:taverley",
     "id": 6409500,
     "src": "place:mouse-hole",
     "type": "located_in"
@@ -3782,14 +3822,6 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:al-kharid",
-    "id": 6416529,
-    "src": "place:duel-arena",
-    "type": "located_in"
-  },
-  {
-    "cond_group": null,
-    "data": {},
     "dst": "place:northern-ocean",
     "id": 6416534,
     "src": "place:everwinter-sea",
@@ -3798,7 +3830,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:ferox-enclave",
     "id": 6417612,
     "src": "place:clan-wars",
     "type": "located_in"
@@ -3806,7 +3838,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:kandarin",
     "id": 6417719,
     "src": "place:witchaven-church",
     "type": "located_in"
@@ -3814,7 +3846,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:burthorpe",
     "id": 6418676,
     "src": "place:rogues-den",
     "type": "located_in"
@@ -3994,7 +4026,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:falador",
     "id": 6440754,
     "src": "place:dwarven-mine",
     "type": "located_in"
@@ -4265,7 +4297,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:mort-ton",
     "id": 6469720,
     "src": "place:shades-of-mort-ton",
     "type": "located_in"
@@ -4433,7 +4465,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:ardougne",
     "id": 6476668,
     "src": "place:legends-guild-mine",
     "type": "located_in"
@@ -4494,7 +4526,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:tonali-cavern",
     "id": 6480200,
     "src": "place:ruins-of-mokhaiotl",
     "type": "located_in"
@@ -4549,17 +4581,9 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:lumbridge-swamp",
     "id": 6484364,
     "src": "place:east-lumbridge-swamp-mine",
-    "type": "located_in"
-  },
-  {
-    "cond_group": null,
-    "data": {},
-    "dst": "place:gielinor",
-    "id": 6484902,
-    "src": "place:guilds",
     "type": "located_in"
   },
   {
@@ -4581,7 +4605,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:cam-torum",
     "id": 6485628,
     "src": "place:neypotzli",
     "type": "located_in"
@@ -4638,6 +4662,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:varlamore",
+    "id": 6491213,
+    "src": "place:tlati-rainforest",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "access",
@@ -4653,7 +4685,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:weiss",
     "id": 6491391,
     "src": "place:the-graveyard",
     "type": "located_in"
@@ -4683,7 +4715,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:goblin-cave",
     "id": 6492140,
     "src": "place:goblin-temple",
     "type": "located_in"
@@ -4701,7 +4733,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:kandarin",
     "id": 6497847,
     "src": "place:smoke-devil-dungeon",
     "type": "located_in"
@@ -4761,7 +4793,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:tlati-rainforest",
     "id": 6503089,
     "src": "place:north-tlati-rainforest-mine",
     "type": "located_in"
@@ -4773,6 +4805,14 @@
     "id": 6503300,
     "src": "diary:western:easy",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:gielinor",
+    "id": 6504445,
+    "src": "place:abyssal-space",
+    "type": "located_in"
   },
   {
     "cond_group": 5476149,
@@ -4927,7 +4967,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:corsair-cove-dungeon",
     "id": 6522029,
     "src": "place:myths-guild-mine",
     "type": "located_in"
@@ -5160,7 +5200,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:farming-guild",
     "id": 6548750,
     "src": "place:farming-contracts",
     "type": "located_in"
@@ -5298,7 +5338,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:port-khazard",
     "id": 6568805,
     "src": "place:port-khazard-mine",
     "type": "located_in"
@@ -5341,7 +5381,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:groats-farm",
     "id": 6572266,
     "src": "place:water-mill-cellar",
     "type": "located_in"
@@ -5367,7 +5407,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:edgeville-dungeon",
     "id": 6575758,
     "src": "place:edgeville-dungeon-mine",
     "type": "located_in"
@@ -5478,7 +5518,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:crafting-guild",
     "id": 6590410,
     "src": "place:crafting-guild-mine",
     "type": "located_in"
@@ -5486,7 +5526,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:burthorpe",
     "id": 6590517,
     "src": "place:burthorpe-castle",
     "type": "located_in"
@@ -5508,7 +5548,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:minotaurs-rest",
     "id": 6591754,
     "src": "place:here-be-minotaurs",
     "type": "located_in"
@@ -5572,14 +5612,6 @@
     "id": 6597852,
     "src": "item:13124",
     "type": "has_bonuses"
-  },
-  {
-    "cond_group": null,
-    "data": {},
-    "dst": "place:gielinor",
-    "id": 6598255,
-    "src": "place:raids",
-    "type": "located_in"
   },
   {
     "cond_group": 4141945,
@@ -5706,7 +5738,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:tirannwn",
     "id": 6610530,
     "src": "place:zul-andra",
     "type": "located_in"
@@ -5722,7 +5754,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:lumbridge-swamp",
     "id": 6611505,
     "src": "place:west-lumbridge-swamp-mine",
     "type": "located_in"
@@ -5786,7 +5818,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:ruins-of-camdozaal",
     "id": 6617713,
     "src": "place:lassar-undercity",
     "type": "located_in"
@@ -5862,14 +5894,6 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
-    "id": 6625959,
-    "src": "place:salve-island",
-    "type": "located_in"
-  },
-  {
-    "cond_group": null,
-    "data": {},
     "dst": "place:kandarin",
     "id": 6627277,
     "src": "place:castle-wars",
@@ -5913,7 +5937,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:kebos-lowlands",
     "id": 6629233,
     "src": "place:headless-beast-s-lair",
     "type": "located_in"
@@ -5994,7 +6018,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:port-khazard",
     "id": 6633614,
     "src": "place:fight-arena-mine",
     "type": "located_in"
@@ -6251,7 +6275,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:meiyerditch",
     "id": 6680510,
     "src": "place:meiyerditch-mine",
     "type": "located_in"
@@ -6427,7 +6451,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:ruins-of-unkah",
     "id": 6692308,
     "src": "place:ruins-of-unkah-mine",
     "type": "located_in"
@@ -6509,7 +6533,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:morytania",
     "id": 6699902,
     "src": "place:temple-trekking",
     "type": "located_in"
@@ -6652,7 +6676,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:dwarven-mine",
     "id": 6714309,
     "src": "place:motherlode-mine",
     "type": "located_in"
@@ -6757,7 +6781,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:piscatoris",
     "id": 6722763,
     "src": "place:kraken-cove",
     "type": "located_in"
@@ -6777,6 +6801,14 @@
     "id": 6722849,
     "src": "item:13106",
     "type": "supersedes"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:kharidian-desert",
+    "id": 6723913,
+    "src": "place:ruins-of-ullek",
+    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -6975,7 +7007,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:white-wolf-mountain",
     "id": 6743029,
     "src": "place:white-wolf-tunnel",
     "type": "located_in"
@@ -7044,7 +7076,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:seers-village",
     "id": 6749098,
     "src": "place:elemental-workshop",
     "type": "located_in"
@@ -7090,7 +7122,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:necropolis",
     "id": 6754148,
     "src": "place:necropolis-mine",
     "type": "located_in"
@@ -7098,7 +7130,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:sisterhood-sanctuary",
     "id": 6754252,
     "src": "place:sisterhood-sanctuary-mine",
     "type": "located_in"
@@ -7296,7 +7328,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:harmony-island",
     "id": 6778971,
     "src": "place:underwater-tunnel",
     "type": "located_in"
@@ -7304,7 +7336,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:al-kharid",
     "id": 6780510,
     "src": "place:citharede-abbey-mine",
     "type": "located_in"
@@ -7312,7 +7344,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:fremennik-province",
     "id": 6780527,
     "src": "place:lighthouse",
     "type": "located_in"
@@ -7472,6 +7504,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:karamja",
+    "id": 6798370,
+    "src": "place:brimhaven",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "weight": 1
     },
@@ -7491,7 +7531,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:evil-chicken-s-lair",
     "id": 6803751,
     "src": "place:evil-chicken-s-lair-mine",
     "type": "located_in"
@@ -7576,7 +7616,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:crandor",
     "id": 6815620,
     "src": "place:north-crandor-mine",
     "type": "located_in"
@@ -7678,7 +7718,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:kharidian-desert",
     "id": 6821638,
     "src": "place:necropolis-hunter-area",
     "type": "located_in"
@@ -8023,7 +8063,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:tree-gnome-village",
     "id": 6856824,
     "src": "place:tree-gnome-village-dungeon",
     "type": "located_in"
@@ -8066,7 +8106,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:miscellania",
     "id": 6862671,
     "src": "place:miscellania-castle",
     "type": "located_in"
@@ -8196,7 +8236,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:asgarnia",
     "id": 6877180,
     "src": "place:cerberus-lair",
     "type": "located_in"
@@ -8208,6 +8248,14 @@
     "id": 6877808,
     "src": "place:rellekka",
     "type": "same_entity"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:kandarin",
+    "id": 6878001,
+    "src": "place:piscatoris",
+    "type": "located_in"
   },
   {
     "cond_group": 4661326,
@@ -8320,7 +8368,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:ardougne",
     "id": 6893315,
     "src": "place:south-east-ardougne-mine",
     "type": "located_in"
@@ -8336,7 +8384,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:kandarin",
     "id": 6894177,
     "src": "place:ourania-hunter-area",
     "type": "located_in"
@@ -8344,7 +8392,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:ynysdail",
     "id": 6894458,
     "src": "place:ynysdail-cavern",
     "type": "located_in"
@@ -8352,7 +8400,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:canifis",
     "id": 6897051,
     "src": "place:canifis-rooftop-course",
     "type": "located_in"
@@ -8414,7 +8462,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:fremennik-province",
     "id": 6905113,
     "src": "place:jormungand-s-prison",
     "type": "located_in"
@@ -8517,6 +8565,14 @@
     "id": 6910285,
     "src": "quest:eagles-peak",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:morytania",
+    "id": 6910395,
+    "src": "place:meiyerditch",
+    "type": "located_in"
   },
   {
     "cond_group": 5605450,
@@ -8653,6 +8709,14 @@
   {
     "cond_group": null,
     "data": {},
+    "dst": "place:tirannwn",
+    "id": 6934030,
+    "src": "place:isafdar",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
+    "data": {},
     "dst": "equipment_bonuses:13140",
     "id": 6936686,
     "src": "item:13140",
@@ -8770,7 +8834,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:asgarnia",
     "id": 6948108,
     "src": "place:black-knights-fortress",
     "type": "located_in"
@@ -8859,7 +8923,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:edgeville",
     "id": 6959340,
     "src": "place:edgeville-dungeon",
     "type": "located_in"
@@ -8926,7 +8990,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:karamja",
     "id": 6970405,
     "src": "place:shaman-caves",
     "type": "located_in"
@@ -8934,7 +8998,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:ruins-of-ullek",
     "id": 6973534,
     "src": "place:ruins-of-ullek-mine",
     "type": "located_in"
@@ -8972,7 +9036,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:varlamore",
+    "dst": "place:auburn-valley",
     "id": 6977309,
     "src": "place:auburnvale",
     "type": "located_in"
@@ -9015,7 +9079,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:ape-atoll",
     "id": 6980882,
     "src": "place:airship-platform",
     "type": "located_in"
@@ -9031,7 +9095,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:mistrock",
     "id": 6982193,
     "src": "place:mistrock-mine",
     "type": "located_in"
@@ -9143,7 +9207,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:void-knights-outpost",
     "id": 6994655,
     "src": "place:pest-control",
     "type": "located_in"
@@ -9211,7 +9275,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:miscellania-and-etceteria-dungeon",
     "id": 7000992,
     "src": "place:miscellania-and-etceteria-dungeon-mine",
     "type": "located_in"
@@ -9276,7 +9340,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:silvarea",
     "id": 7006935,
     "src": "place:zemouregal-s-base",
     "type": "located_in"
@@ -9394,6 +9458,14 @@
   {
     "cond_group": null,
     "data": {},
+    "dst": "place:kharidian-desert",
+    "id": 7016255,
+    "src": "place:necropolis",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
+    "data": {},
     "dst": "place:varrock",
     "id": 7016397,
     "src": "shop:ye-olde-tea-shoppe",
@@ -9484,7 +9556,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:weiss",
     "id": 7023618,
     "src": "place:salt-mine",
     "type": "located_in"
@@ -9514,7 +9586,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:lumbridge-swamp",
     "id": 7025444,
     "src": "place:lumbridge-swamp-caves",
     "type": "located_in"
@@ -9568,7 +9640,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:troll-country",
     "id": 7031310,
     "src": "place:trollweiss-dungeon",
     "type": "located_in"
@@ -9607,7 +9679,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:brimhaven",
     "id": 7034496,
     "src": "place:brimhaven-dungeon",
     "type": "located_in"
@@ -9625,7 +9697,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:misthalin",
     "id": 7035232,
     "src": "place:tunnel-of-chaos",
     "type": "located_in"
@@ -9641,7 +9713,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:asgarnia",
     "id": 7043136,
     "src": "place:melzar-s-maze",
     "type": "located_in"
@@ -9730,7 +9802,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:burthorpe",
     "id": 7050763,
     "src": "place:warriors-guild",
     "type": "located_in"
@@ -9851,7 +9923,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:karamja",
     "id": 7061068,
     "src": "place:karamja-hunter-area",
     "type": "located_in"
@@ -9998,7 +10070,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:edgeville",
     "id": 7078317,
     "src": "place:basement-of-doom",
     "type": "located_in"
@@ -10294,7 +10366,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:the-stranglewood",
     "id": 7104815,
     "src": "place:custodia-mountains-mine",
     "type": "located_in"
@@ -10364,7 +10436,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:corsair-cove",
     "id": 7110447,
     "src": "place:corsair-cove-dungeon",
     "type": "located_in"
@@ -10406,7 +10478,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:barbarian-village",
     "id": 7111845,
     "src": "place:barbarian-village-mine",
     "type": "located_in"
@@ -10656,6 +10728,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:misthalin",
+    "id": 7137195,
+    "src": "place:lumbridge-swamp",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "basis": "shares wiki page 'Infernal axe (or) (Trailblazer Reloaded)'"
     },
@@ -10691,7 +10771,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:morytania",
     "id": 7148571,
     "src": "place:ver-sinhaza",
     "type": "located_in"
@@ -10755,7 +10835,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:ver-sinhaza",
     "id": 7152183,
     "src": "place:theatre-of-blood",
     "type": "located_in"
@@ -10763,7 +10843,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:rimmington",
     "id": 7153931,
     "src": "place:rimmington-mine",
     "type": "located_in"
@@ -10812,7 +10892,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:misthalin",
     "id": 7157921,
     "src": "place:misthalin-manor",
     "type": "located_in"
@@ -11009,7 +11089,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:misthalin",
     "id": 7178484,
     "src": "place:digsite-dungeon",
     "type": "located_in"
@@ -11058,7 +11138,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:feldip-hills",
     "id": 7187510,
     "src": "place:feldip-hunter-area",
     "type": "located_in"
@@ -11192,7 +11272,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:mynydd",
     "id": 7202487,
     "src": "place:mynydd-mine",
     "type": "located_in"
@@ -11338,7 +11418,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:varrock",
     "id": 7222195,
     "src": "place:south-west-varrock-mine",
     "type": "located_in"
@@ -11346,7 +11426,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:brimhaven",
     "id": 7222240,
     "src": "place:south-brimhaven-mine",
     "type": "located_in"
@@ -11412,7 +11492,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:salvager-overlook",
     "id": 7226249,
     "src": "place:south-salvager-overlook-mine",
     "type": "located_in"
@@ -11542,7 +11622,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:kandarin",
     "id": 7241465,
     "src": "place:eagles-peak-dungeon",
     "type": "located_in"
@@ -11586,7 +11666,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:witchaven",
     "id": 7248680,
     "src": "place:witchaven-mine",
     "type": "located_in"
@@ -11641,14 +11721,6 @@
     "dst": "place:western-ocean",
     "id": 7251948,
     "src": "place:vagabonds-rest",
-    "type": "located_in"
-  },
-  {
-    "cond_group": null,
-    "data": {},
-    "dst": "place:gielinor",
-    "id": 7252329,
-    "src": "place:isle-of-garmr",
     "type": "located_in"
   },
   {
@@ -11756,7 +11828,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:brimhaven",
     "id": 7262924,
     "src": "place:north-brimhaven-mine",
     "type": "located_in"
@@ -11800,7 +11872,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:museum-camp",
     "id": 7268466,
     "src": "place:verdant-valley",
     "type": "located_in"
@@ -11869,6 +11941,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:misthalin",
+    "id": 7274404,
+    "src": "place:paterdomus",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "members": true,
       "source_token": "Bucket:Storeline"
@@ -11905,7 +11985,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:sunbleak-island",
     "id": 7279396,
     "src": "place:sunbleak-cave",
     "type": "located_in"
@@ -11974,7 +12054,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:chasm-of-fire",
     "id": 7285467,
     "src": "place:yama-s-domain",
     "type": "located_in"
@@ -11990,7 +12070,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:auburn-valley",
     "id": 7286630,
     "src": "place:vale-totems",
     "type": "located_in"
@@ -12112,7 +12192,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:taverley",
     "id": 7298044,
     "src": "place:taverley-dungeon",
     "type": "located_in"
@@ -12161,7 +12241,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:tlati-rainforest",
     "id": 7300582,
     "src": "place:east-tlati-rainforest-mine",
     "type": "located_in"
@@ -12252,7 +12332,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:piscatoris",
     "id": 7313628,
     "src": "place:piscatoris-mine",
     "type": "located_in"
@@ -12260,9 +12340,9 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
-    "id": 7314380,
-    "src": "place:deadman-isles",
+    "dst": "place:misthalin",
+    "id": 7315034,
+    "src": "place:silvarea",
     "type": "located_in"
   },
   {
@@ -12453,7 +12533,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:ruins-of-uzer",
     "id": 7343995,
     "src": "place:uzer-mine",
     "type": "located_in"
@@ -12640,14 +12720,6 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
-    "id": 7370446,
-    "src": "place:college-of-bards",
-    "type": "located_in"
-  },
-  {
-    "cond_group": null,
-    "data": {},
     "dst": "place:varlamore",
     "id": 7371600,
     "src": "place:avium-savannah",
@@ -12668,14 +12740,6 @@
     "id": 7375380,
     "src": "quest:barbarian-farming",
     "type": "requires"
-  },
-  {
-    "cond_group": null,
-    "data": {},
-    "dst": "place:gielinor",
-    "id": 7375721,
-    "src": "place:camp-sapphire-lagoon",
-    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -12708,7 +12772,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:misthalin",
     "id": 7379079,
     "src": "place:tolna-s-rift",
     "type": "located_in"
@@ -12747,7 +12811,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:white-wolf-mountain",
     "id": 7387466,
     "src": "place:ice-queen-s-lair",
     "type": "located_in"
@@ -13128,6 +13192,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:troll-country",
+    "id": 7428548,
+    "src": "place:weiss",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "members": false,
       "source_token": "Bucket:Storeline"
@@ -13162,7 +13234,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:crandor",
     "id": 7430147,
     "src": "place:south-crandor-mine",
     "type": "located_in"
@@ -13295,7 +13367,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:misthalin",
     "id": 7440309,
     "src": "place:h-a-m-hideout",
     "type": "located_in"
@@ -13319,7 +13391,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:wilderness",
     "id": 7443967,
     "src": "place:bounty-hunter",
     "type": "located_in"
@@ -13445,6 +13517,14 @@
   {
     "cond_group": null,
     "data": {},
+    "dst": "place:varlamore",
+    "id": 7453838,
+    "src": "place:the-stranglewood",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
+    "data": {},
     "dst": "place:kharidian-desert",
     "id": 7455957,
     "src": "place:bedabin-camp",
@@ -13453,7 +13533,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:karamja",
     "id": 7456198,
     "src": "place:pothole-dungeon",
     "type": "located_in"
@@ -13472,7 +13552,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:meiyerditch",
     "id": 7456799,
     "src": "place:meiyerditch-laboratories",
     "type": "located_in"
@@ -13492,7 +13572,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:draynor-village",
     "id": 7456825,
     "src": "place:draynor-sewers",
     "type": "located_in"
@@ -13556,7 +13636,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:fremennik-isles",
     "id": 7460064,
     "src": "place:ice-troll-caves",
     "type": "located_in"
@@ -13642,7 +13722,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:paterdomus",
     "id": 7474182,
     "src": "place:limestone-mine",
     "type": "located_in"
@@ -13664,7 +13744,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:shilo-village",
     "id": 7474617,
     "src": "place:rashiliyia-s-tomb",
     "type": "located_in"
@@ -13857,7 +13937,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:feldip-hills",
     "id": 7496599,
     "src": "place:red-chinchompa-hunting-ground",
     "type": "located_in"
@@ -14001,7 +14081,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:mount-karuulm",
     "id": 7509402,
     "src": "place:karuulm-slayer-dungeon",
     "type": "located_in"
@@ -14054,6 +14134,14 @@
     "dst": "place:asgarnia",
     "id": 7512673,
     "src": "place:burthorpe",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:kharidian-desert",
+    "id": 7513116,
+    "src": "place:ruins-of-uzer",
     "type": "located_in"
   },
   {
@@ -14166,7 +14254,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:guardians-of-the-rift",
     "id": 7526535,
     "src": "place:temple-of-the-eye",
     "type": "located_in"
@@ -14174,7 +14262,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:lumbridge",
     "id": 7527177,
     "src": "place:lumbridge-castle",
     "type": "located_in"
@@ -14280,7 +14368,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:deepfin-point",
     "id": 7534030,
     "src": "place:deepfin-mine",
     "type": "located_in"
@@ -14318,7 +14406,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:kharidian-desert",
     "id": 7539385,
     "src": "place:giants-foundry",
     "type": "located_in"
@@ -14497,7 +14585,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:the-pandemonium",
     "id": 7563606,
     "src": "place:pandemonium-cave",
     "type": "located_in"
@@ -14521,7 +14609,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:daimons-crater",
+    "dst": "place:untamed-ocean",
     "id": 7566135,
     "src": "place:daimon-s-crater",
     "type": "located_in"
@@ -14658,7 +14746,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:isafdar",
     "id": 7581649,
     "src": "place:isafdar-mine",
     "type": "located_in"
@@ -14706,7 +14794,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:pollnivneach",
     "id": 7584292,
     "src": "place:pollnivneach-rooftop-course",
     "type": "located_in"
@@ -14792,6 +14880,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:tirannwn",
+    "id": 7593568,
+    "src": "place:mynydd",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "weight": 1
     },
@@ -14852,7 +14948,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:tirannwn",
     "id": 7605638,
     "src": "place:iorwerth-camp",
     "type": "located_in"
@@ -15049,14 +15145,6 @@
     "id": 7625641,
     "src": "quest:plague-city",
     "type": "requires"
-  },
-  {
-    "cond_group": null,
-    "data": {},
-    "dst": "place:gielinor",
-    "id": 7626173,
-    "src": "place:minigames",
-    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -15445,7 +15533,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:draynor-village",
     "id": 7661251,
     "src": "place:draynor-village-rooftop-course",
     "type": "located_in"
@@ -15461,7 +15549,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:canifis",
     "id": 7668990,
     "src": "place:werewolf-skullball",
     "type": "located_in"
@@ -15491,7 +15579,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:shilo-village",
     "id": 7674282,
     "src": "place:shilo-village-mine",
     "type": "located_in"
@@ -15573,7 +15661,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:port-khazard",
     "id": 7688353,
     "src": "place:fishing-trawler",
     "type": "located_in"
@@ -15750,6 +15838,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:asgarnia",
+    "id": 7707058,
+    "src": "place:white-wolf-mountain",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "condition": "while-equipped",
       "effect_kind": "access",
@@ -15901,7 +15997,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:brimhaven",
     "id": 7733774,
     "src": "place:brimhaven-agility-arena",
     "type": "located_in"
@@ -16065,7 +16161,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:slepe",
     "id": 7762297,
     "src": "place:sisterhood-sanctuary",
     "type": "located_in"
@@ -16092,7 +16188,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:morytania",
     "id": 7764694,
     "src": "place:slepe-church",
     "type": "located_in"
@@ -16164,7 +16260,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:kandarin",
     "id": 7770879,
     "src": "place:creature-creation",
     "type": "located_in"
@@ -16188,7 +16284,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:mountain-camp",
     "id": 7774779,
     "src": "place:kendal-s-lair",
     "type": "located_in"
@@ -16379,7 +16475,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:salvager-overlook",
     "id": 7790121,
     "src": "place:east-salvager-overlook-mine",
     "type": "located_in"
@@ -16413,7 +16509,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:ardougne",
     "id": 7793644,
     "src": "place:ardougne-sewers-mine",
     "type": "located_in"
@@ -16535,7 +16631,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:abyssal-space",
     "id": 7810039,
     "src": "place:scar-essence-mine",
     "type": "located_in"
@@ -16587,7 +16683,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:ghorrock",
     "id": 7815513,
     "src": "place:ghorrock-dungeon",
     "type": "located_in"
@@ -16628,14 +16724,6 @@
     "dst": "place:varrock",
     "id": 7819564,
     "src": "shop:blue-moon-inn",
-    "type": "located_in"
-  },
-  {
-    "cond_group": null,
-    "data": {},
-    "dst": "place:gielinor",
-    "id": 7819910,
-    "src": "place:list-of-mines",
     "type": "located_in"
   },
   {
@@ -16686,14 +16774,6 @@
   },
   {
     "cond_group": null,
-    "data": {},
-    "dst": "place:gielinor",
-    "id": 7820288,
-    "src": "place:list-of-dungeons",
-    "type": "located_in"
-  },
-  {
-    "cond_group": null,
     "data": {
       "amount": 50000,
       "count": 1,
@@ -16737,7 +16817,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:misthalin",
     "id": 7825289,
     "src": "place:sourhog-cave",
     "type": "located_in"
@@ -16845,7 +16925,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:morytania",
     "id": 7831855,
     "src": "place:morytania-spider-cave",
     "type": "located_in"
@@ -16909,7 +16989,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:mount-karuulm",
     "id": 7837463,
     "src": "place:mount-karuulm-mine",
     "type": "located_in"
@@ -17035,14 +17115,6 @@
     "type": "grants"
   },
   {
-    "cond_group": null,
-    "data": {},
-    "dst": "place:gielinor",
-    "id": 7852927,
-    "src": "place:bunbridge",
-    "type": "located_in"
-  },
-  {
     "cond_group": 4796622,
     "data": {},
     "dst": null,
@@ -17069,7 +17141,15 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:misthalin",
+    "id": 7854859,
+    "src": "place:groats-farm",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:charred-island",
     "id": 7855580,
     "src": "place:charred-dungeon",
     "type": "located_in"
@@ -17109,7 +17189,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:varlamore",
+    "dst": "place:auburn-valley",
     "id": 7859483,
     "src": "place:nemus-retreat",
     "type": "located_in"
@@ -17152,7 +17232,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:ruins-of-camdozaal",
     "id": 7867578,
     "src": "place:camdozaal-mines",
     "type": "located_in"
@@ -17276,17 +17356,9 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:zanaris",
     "id": 7878902,
     "src": "place:evil-chicken-s-lair",
-    "type": "located_in"
-  },
-  {
-    "cond_group": null,
-    "data": {},
-    "dst": "place:gielinor",
-    "id": 7880183,
-    "src": "place:wester-island",
     "type": "located_in"
   },
   {
@@ -17617,7 +17689,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:tai-bwo-wannai",
     "id": 7910677,
     "src": "place:tai-bwo-wannai-cleanup",
     "type": "located_in"
@@ -17699,7 +17771,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:port-khazard",
     "id": 7921685,
     "src": "place:mogre-camp",
     "type": "located_in"
@@ -18010,7 +18082,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:heroes-guild",
     "id": 7951766,
     "src": "place:heroes-guild-mine",
     "type": "located_in"
@@ -18102,7 +18174,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:corsair-cove",
     "id": 7961807,
     "src": "place:myths-guild",
     "type": "located_in"
@@ -18235,7 +18307,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:mort-ton",
     "id": 7972160,
     "src": "place:shade-catacombs",
     "type": "located_in"
@@ -18261,7 +18333,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:seers-village",
     "id": 7975609,
     "src": "place:seers-village-rooftop-course",
     "type": "located_in"
@@ -18281,7 +18353,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:corsair-cove",
     "id": 7977568,
     "src": "place:corsair-cove-resource-area",
     "type": "located_in"
@@ -18319,7 +18391,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:buccaneers-haven",
     "id": 7982521,
     "src": "place:buccaneers-laboratory",
     "type": "located_in"
@@ -18518,7 +18590,7 @@
   {
     "cond_group": null,
     "data": {},
-    "dst": "place:gielinor",
+    "dst": "place:canifis",
     "id": 7997993,
     "src": "place:werewolf-agility-course",
     "type": "located_in"
