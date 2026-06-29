@@ -16,6 +16,7 @@ def test_shop_type_from_icon():
     assert shop_type_for("[[File:Archery shop icon.png]]") == "Archery shop"
     assert shop_type_for("[[File:General store icon.png]]") == "General store"
     assert shop_type_for(None) is None
+    assert shop_type_for("") is None                          # empty string -> None, not fabricated
     assert shop_type_for("[[File:weird.png]]") is None        # no ' icon.png' -> None, not fabricated
 
 def test_build_shops_emits_node_with_type_and_members():
@@ -28,6 +29,12 @@ def test_build_shops_emits_node_with_type_and_members():
     assert n.data["shop_type"] == "General store"
     assert n.data["members"] is False
     assert "operator" not in n.data            # operators deferred to the NPC layer
+
+def test_unmatched_shop_has_empty_data_no_fabrication():
+    nodes, edges, groups = build_shops([{"sold_by": "Unknown Shop"}], {}, [], [], set())
+    n = next(n for n in nodes if n.id == "shop:unknown-shop")
+    assert n.data == {}                 # no infobox -> no shop_type/members invented
+    assert edges == [] and groups == {}
 
 def test_collision_guard_disambiguates_loudly(capsys):
     # two DISTINCT names that slugify identically must NOT silently merge

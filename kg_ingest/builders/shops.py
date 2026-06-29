@@ -53,12 +53,15 @@ def _members(infobox):
 def build_shops(storeline_records, shop_infoboxes, place_nodes, dict_records, varrock_shop_names):
     nodes: list[Node] = []
     edges: list[Edge] = []                     # located_in (Task 3) + sells (Task 4) land here
+    # by_shop + Edge/EdgeType: consumed by Task 3 (located_in) and Task 4 (sells) — not dead code
     by_shop = index_by_shop(storeline_records)
     infobox_titles = list(shop_infoboxes)
 
     claimed: dict[str, str] = {}               # slug -> first sold_by (collision guard)
     for name in shop_roster(storeline_records, varrock_shop_names):
         sid = _shop_slug(name)
+        # sid here is the ORIGINAL base slug; on collision the while-loop finds the next free
+        # f"{sid}-{n}" id (deterministic; terminates because the roster is finite).
         if sid in claimed:                     # distinct names, same slug -> NEVER silently merge
             n = 2
             while f"{sid}-{n}" in claimed:
