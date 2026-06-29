@@ -40,6 +40,7 @@ from kg_ingest.builders.quest_rewards import build_quest_rewards
 from kg_ingest.builders.quests import build_quests
 from kg_ingest.builders.recipes import build_recipes
 from kg_ingest.builders.repairs import build_repairs
+from kg_ingest.builders.npcs import build_npcs
 from kg_ingest.builders.shops import build_shops
 from kg_ingest.builders.storeline import build_storeline
 from kg_ingest.builders.supporting import build_supporting
@@ -295,6 +296,7 @@ WORLD_SNAPSHOT_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "wi
 WORLD_INFOBOX_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "wiki_location_infoboxes.json"
 WORLD_PARENTING_PATH = Path(__file__).resolve().parents[1] / "data" / "map" / "world_parenting.json"
 SHOP_INFOBOX_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "wiki_shop_infoboxes.json"
+NPC_INFOBOX_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "wiki_npc_infoboxes.json"
 
 
 def _load_world_infoboxes() -> dict | None:
@@ -337,6 +339,12 @@ def _load_shop_infoboxes() -> dict | None:
     if not SHOP_INFOBOX_PATH.exists():
         return None
     return json.loads(SHOP_INFOBOX_PATH.read_text())["infoboxes"]
+
+
+def _load_npc_infoboxes() -> dict | None:
+    if not NPC_INFOBOX_PATH.exists():
+        return None
+    return json.loads(NPC_INFOBOX_PATH.read_text())["infoboxes"]
 
 
 ITEMS_EQUIPMENT_PATH = Path(__file__).resolve().parents[1] / "data" / "items_equipment.json"
@@ -513,6 +521,24 @@ def assemble() -> None:
         edges = edges + sh_edges
         owned_ids = owned_ids | {n.id for n in sh_nodes}
 
+    # NPC operator layer: each shop owner (from the shop brick) -> an npc node, located_in via its {{Infobox NPC}},
+    # operates -> its shops. Closes the deferred operators + the multi-location shops. npc-src seeded rekey.
+    npc_nodes: list[Node] = []
+    _npc_ib = _load_npc_infoboxes()
+    if _map is not None and _shop_ib is not None and _npc_ib is not None:
+        _place_nodes = [n for n in (world_nodes + map_nodes) if n.kind == NodeKind.PLACE]
+        _varrock_shop_names = {s["name"] for s in _map["shops"]}
+        _varrock_npc_names = {n["name"] for n in _map["npcs"]}
+        npc_nodes, npc_edges, _ = build_npcs(
+            _load_storeline_records(), _shop_ib, _npc_ib, _place_nodes,
+            _varrock_shop_names, _varrock_npc_names)
+        _seed_npc: dict[str, int] = {}
+        for _e in edges:
+            _seed_npc[_e.src] = _seed_npc.get(_e.src, 0) + 1
+        npc_nodes, npc_edges, _ = rekey(npc_nodes, npc_edges, {}, edge_index_seed=_seed_npc)
+        edges = edges + npc_edges
+        owned_ids = owned_ids | {n.id for n in npc_nodes}
+
     referenced_all = _collect_referenced_ids(edges + dg_edges + rp_edges, groups)
     referenced_item_ids = {r for r in referenced_all if r.startswith("item:")} - owned_ids
     i_nodes, i_edges, _ = build_items(
@@ -555,7 +581,7 @@ def assemble() -> None:
     #    (with tasks list) is first-seen and wins if any stale supporting diary node
     #    were somehow included (it shouldn't be, since diary is excluded from _LEAF_DOMAINS).
     nodes = dedup_nodes(
-        q_nodes + g_nodes + cg_nodes + d_nodes + dg_nodes + content_nodes + r_nodes + i_nodes + eqb_nodes + world_nodes + map_nodes + sh_nodes + s_nodes
+        q_nodes + g_nodes + cg_nodes + d_nodes + dg_nodes + content_nodes + r_nodes + i_nodes + eqb_nodes + world_nodes + map_nodes + sh_nodes + npc_nodes + s_nodes
     )
 
     # 5) serialize, sorted deterministically.

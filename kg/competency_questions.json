@@ -40,5 +40,11 @@
     ,{ "id": "cq-shop-region-chain-al-kharid-general",
       "question": "Where is the Al Kharid General Store?",
       "method": "region_chain", "target": "shop:al-kharid-general-store", "expect_min": 2 }
+    ,{ "id": "cq-slayer-rewards-operators",
+      "question": "Who runs the Slayer Rewards shop?",
+      "method": "operated_by", "target": "shop:slayer-rewards", "expect_min": 13 }
+    ,{ "id": "cq-operator-region-chain",
+      "question": "Where is the slayer master Achtryn located?",
+      "method": "region_chain", "target": "npc:achtryn", "expect_min": 4 }
   ]
 }
