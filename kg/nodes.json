@@ -34849,6 +34849,20 @@
     "data": {
       "recipe_count": 1,
       "skills": [
+        "Firemaking"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Burners",
+      "source_url": "https://oldschool.runescape.wiki/w/Chapel"
+    },
+    "id": "facility:burners",
+    "kind": "facility",
+    "name": "Burners",
+    "slug": "burners"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
         "Woodcutting"
       ],
       "source_token": "Bucket:recipe.uses_facility=Camphor tree",
@@ -37332,6 +37346,17 @@
     "kind": "facility",
     "name": "Sweetgrub Mound",
     "slug": "sweetgrub-mound"
+  },
+  {
+    "data": {
+      "recipe_count": 8,
+      "source_token": "Bucket:recipe.uses_facility=Tannery",
+      "source_url": "https://oldschool.runescape.wiki/w/Tanner"
+    },
+    "id": "facility:tannery",
+    "kind": "facility",
+    "name": "Tannery",
+    "slug": "tannery"
   },
   {
     "data": {

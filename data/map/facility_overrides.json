@@ -11,7 +11,9 @@
     {"value": "Catalytic runic altar", "reason": "Runecraft tiara-making altar (uses_skill=Runecraft; Catalytic tiara); redirects to Runic altar (no standard infobox)", "source_url": "https://oldschool.runescape.wiki/w/Runic_altar"},
     {"value": "Elemental runic altar", "reason": "Runecraft tiara-making altar (uses_skill=Runecraft; Elemental tiara); redirects to Runic altar (no standard infobox)", "source_url": "https://oldschool.runescape.wiki/w/Runic_altar"},
     {"value": "Windmill", "reason": "Flour-making facility (Pot of flour, Pot of cornflour); skill-less service; page has no standard infobox", "source_url": "https://oldschool.runescape.wiki/w/Windmill"},
-    {"value": "Mycelium pool", "reason": "Fossil Island bone-enriching pool (25 recipes; e.g. Large enriched bone); skill-less; page is Infobox Location", "source_url": "https://oldschool.runescape.wiki/w/Mycelium_pool"}
+    {"value": "Mycelium pool", "reason": "Fossil Island bone-enriching pool (25 recipes; e.g. Large enriched bone); skill-less; page is Infobox Location", "source_url": "https://oldschool.runescape.wiki/w/Mycelium_pool"},
+    {"value": "Tannery", "reason": "Hide-tanning facility (8 recipes; e.g. dragon leathers); skill-less; owner-confirmed facility (page redirects to the Tanner NPC, but the tannery is a real processing station)", "source_url": "https://oldschool.runescape.wiki/w/Tanner"},
+    {"value": "Burners", "reason": "POH chapel incense burners (1 recipe, Firemaking; Marrentill); owner-confirmed facility; page is Infobox Room (Chapel)", "source_url": "https://oldschool.runescape.wiki/w/Chapel"}
   ],
   "force_exclude": [
     {"value": "Demonic Offering", "reason": "Arceuus spell (ashes->XP), not a physical facility; uses_skill=Magic,Prayer because it is cast", "source_url": "https://oldschool.runescape.wiki/w/Demonic_Offering"},
