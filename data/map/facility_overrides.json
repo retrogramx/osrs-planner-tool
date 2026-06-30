@@ -1,0 +1,24 @@
+{
+  "_provenance": {
+    "note": "Owner-authored facility roster overrides resolving the infobox-filter AMBIGUOUS queue. force_facility promotes real processing facilities whose wiki page happens to use Infobox Activity/Location/none (a typing artifact, not doubt about facility-ness) — each confirmed by its Bucket:recipe.uses_skill + recipe pages. force_exclude documents ambiguous values that are NOT facilities. The 5 genuinely-uncertain values (Bank, Burners, Fishing Trawler, Tannery, Water) are LEFT in the coverage review queue for owner triage.",
+    "accessed": "2026-06-29"
+  },
+  "force_facility": [
+    {"value": "Blast Furnace", "reason": "Smithing bar-smelting facility (10 recipes, uses_skill=Smithing; e.g. Adamantite bar); page is Infobox Activity (minigame), not Scenery", "source_url": "https://oldschool.runescape.wiki/w/Blast_Furnace"},
+    {"value": "Brewery", "reason": "Cooking ale-brewing facility (40 recipes, uses_skill=Cooking; e.g. Asgarnian ale); page redirects to Brewing (Infobox Activity)", "source_url": "https://oldschool.runescape.wiki/w/Brewing"},
+    {"value": "Chaos altar (Wilderness)", "reason": "Prayer bone-offering altar / 3x XP (39 recipes, uses_skill=Prayer; e.g. Babydragon bones); page is Infobox Location", "source_url": "https://oldschool.runescape.wiki/w/Chaos_Temple_(hut)"},
+    {"value": "Funeral Pyre (Mort'ton)", "reason": "Firemaking/Prayer shade-cremation pyre (98 recipes, uses_skill=Firemaking,Prayer; e.g. Arctic pyre logs); page is Infobox Activity (minigame)", "source_url": "https://oldschool.runescape.wiki/w/Shades_of_Mort'ton_(minigame)"},
+    {"value": "Catalytic runic altar", "reason": "Runecraft tiara-making altar (uses_skill=Runecraft; Catalytic tiara); redirects to Runic altar (no standard infobox)", "source_url": "https://oldschool.runescape.wiki/w/Runic_altar"},
+    {"value": "Elemental runic altar", "reason": "Runecraft tiara-making altar (uses_skill=Runecraft; Elemental tiara); redirects to Runic altar (no standard infobox)", "source_url": "https://oldschool.runescape.wiki/w/Runic_altar"},
+    {"value": "Windmill", "reason": "Flour-making facility (Pot of flour, Pot of cornflour); skill-less service; page has no standard infobox", "source_url": "https://oldschool.runescape.wiki/w/Windmill"},
+    {"value": "Mycelium pool", "reason": "Fossil Island bone-enriching pool (25 recipes; e.g. Large enriched bone); skill-less; page is Infobox Location", "source_url": "https://oldschool.runescape.wiki/w/Mycelium_pool"}
+  ],
+  "force_exclude": [
+    {"value": "Demonic Offering", "reason": "Arceuus spell (ashes->XP), not a physical facility; uses_skill=Magic,Prayer because it is cast", "source_url": "https://oldschool.runescape.wiki/w/Demonic_Offering"},
+    {"value": "Sinister Offering", "reason": "Arceuus spell (bones->XP), not a physical facility; uses_skill=Magic,Prayer because it is cast", "source_url": "https://oldschool.runescape.wiki/w/Sinister_Offering"},
+    {"value": "Farming patch", "reason": "farming_patch is its own later objects/resources slice (kind reserved separately), not a facility", "source_url": "https://oldschool.runescape.wiki/w/Farming/Patch_locations"},
+    {"value": "Rack (Mourner Headquarters)#Gnome|Gnome on a rack", "reason": "Malformed wiki pipe-link/anchor in the source value (a quest-specific object reference), not a clean facility page", "source_url": "https://oldschool.runescape.wiki/w/Rack_(Mourner_Headquarters)"},
+    {"value": "Specimen table (Another Slice of H.A.M.)|Specimen table", "reason": "Malformed wiki pipe-link in the source value (a quest-specific object reference), not a clean facility page", "source_url": "https://oldschool.runescape.wiki/w/Specimen_table_(Another_Slice_of_H.A.M.)"},
+    {"value": "Strange Machine (wyvern shield)|Strange Machine", "reason": "Malformed wiki pipe-link in the source value (an item-charging quest object reference), not a clean facility page", "source_url": "https://oldschool.runescape.wiki/w/Strange_Machine_(wyvern_shield)"}
+  ]
+}
