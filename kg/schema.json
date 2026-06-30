@@ -59,7 +59,13 @@
     "activity": {"status": "live", "key_prefix": "activity:<slug>", "id_basis": "slug", "notes": "An activity/content node (effect targets, drop sources).", "data_keys": []},
     "faction": {"status": "reserved", "key_prefix": "faction:<slug>", "id_basis": "slug", "notes": "killcount + soothing alignment target (aligned_with).", "data_keys": []},
     "task_category": {"status": "reserved", "key_prefix": "task_category:<slug>", "id_basis": "slug", "notes": "Slayer/rumour task category (assigns, weighted).", "data_keys": []},
-    "facility": {"status": "reserved", "key_prefix": "facility:<slug>", "id_basis": "slug", "notes": "anvil/furnace/altar/range (requires_facility).", "data_keys": []},
+    "facility": {
+      "status": "live",
+      "key_prefix": "facility:<slug>",
+      "id_basis": "slug",
+      "notes": "anvil/furnace/altar/range processing station; requires_facility target.",
+      "data_keys": ["skills", "recipe_count", "source_url", "source_token", "aliases"]
+    },
     "counter": {"status": "reserved", "key_prefix": "counter:<slug>", "id_basis": "slug", "notes": "An accumulating counter (counts_toward feed).", "data_keys": []},
     "drop_table": {"status": "reserved", "key_prefix": "drop_table:<slug>", "id_basis": "slug", "notes": "Reified table/rolls/membership (decision 3 / §4).", "data_keys": ["rolls"]},
     "recipe": {"status": "live", "key_prefix": "recipe:<slug>", "id_basis": "slug", "notes": "{materials+tools+facility+skill+xp->output} (decision 3 / §4).", "data_keys": ["xp", "ticks", "charge_yield", "charge_capacity", "notes"]},

@@ -18,6 +18,7 @@ def test_node_kind_members_match_schema_taxonomy():
         "combat_achievement", "minigame", "clog_slot", "goal",
         "recipe", "equipment_bonuses",
         "place", "npc", "shop",
+        "facility",
     }
 
 

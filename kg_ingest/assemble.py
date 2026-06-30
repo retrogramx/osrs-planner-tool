@@ -40,6 +40,7 @@ from kg_ingest.builders.quest_rewards import build_quest_rewards
 from kg_ingest.builders.quests import build_quests
 from kg_ingest.builders.recipes import build_recipes
 from kg_ingest.builders.repairs import build_repairs
+from kg_ingest.builders.facilities import build_facilities
 from kg_ingest.builders.npcs import build_npcs
 from kg_ingest.builders.shops import build_shops
 from kg_ingest.builders.storeline import build_storeline
@@ -297,6 +298,9 @@ WORLD_INFOBOX_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "wik
 WORLD_PARENTING_PATH = Path(__file__).resolve().parents[1] / "data" / "map" / "world_parenting.json"
 SHOP_INFOBOX_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "wiki_shop_infoboxes.json"
 NPC_INFOBOX_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "wiki_npc_infoboxes.json"
+RECIPE_FACILITY_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "recipe_facility_bucket.json"
+FACILITY_INFOBOX_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "wiki_facility_infoboxes.json"
+FACILITY_OVERRIDES_PATH = Path(__file__).resolve().parents[1] / "data" / "map" / "facility_overrides.json"
 
 
 def _load_world_infoboxes() -> dict | None:
@@ -345,6 +349,25 @@ def _load_npc_infoboxes() -> dict | None:
     if not NPC_INFOBOX_PATH.exists():
         return None
     return json.loads(NPC_INFOBOX_PATH.read_text())["infoboxes"]
+
+
+def _load_recipe_facility_rows() -> list[dict]:
+    if not RECIPE_FACILITY_PATH.exists():
+        return []
+    return json.loads(RECIPE_FACILITY_PATH.read_text())["bucket"]
+
+
+def _load_facility_infoboxes() -> dict | None:
+    if not FACILITY_INFOBOX_PATH.exists():
+        return None
+    return json.loads(FACILITY_INFOBOX_PATH.read_text())["infoboxes"]
+
+
+def _load_facility_overrides() -> dict:
+    if not FACILITY_OVERRIDES_PATH.exists():
+        return {"force_facility": [], "force_exclude": []}
+    d = json.loads(FACILITY_OVERRIDES_PATH.read_text())
+    return {"force_facility": d.get("force_facility", []), "force_exclude": d.get("force_exclude", [])}
 
 
 ITEMS_EQUIPMENT_PATH = Path(__file__).resolve().parents[1] / "data" / "items_equipment.json"
@@ -539,6 +562,17 @@ def assemble() -> None:
         edges = edges + npc_edges
         owned_ids = owned_ids | {n.id for n in npc_nodes}
 
+    # Facility taxonomy layer (objects/resources slice 1): distinct Bucket:recipe.uses_facility
+    # values, filtered by infobox-presence, skill-tagged from uses_skill. Pure-roster: ZERO edges,
+    # so no rekey. Capabilities don't place (no located_in); requires_facility waits for recipes.
+    fac_nodes: list[Node] = []
+    _fac_ib = _load_facility_infoboxes()
+    if _fac_ib is not None:
+        fac_nodes, _fac_edges, _ = build_facilities(
+            _load_recipe_facility_rows(), _fac_ib, _load_facility_overrides())
+        assert not _fac_edges, "facility layer must emit zero edges"
+        owned_ids = owned_ids | {n.id for n in fac_nodes}
+
     referenced_all = _collect_referenced_ids(edges + dg_edges + rp_edges, groups)
     referenced_item_ids = {r for r in referenced_all if r.startswith("item:")} - owned_ids
     i_nodes, i_edges, _ = build_items(
@@ -581,7 +615,7 @@ def assemble() -> None:
     #    (with tasks list) is first-seen and wins if any stale supporting diary node
     #    were somehow included (it shouldn't be, since diary is excluded from _LEAF_DOMAINS).
     nodes = dedup_nodes(
-        q_nodes + g_nodes + cg_nodes + d_nodes + dg_nodes + content_nodes + r_nodes + i_nodes + eqb_nodes + world_nodes + map_nodes + sh_nodes + npc_nodes + s_nodes
+        q_nodes + g_nodes + cg_nodes + d_nodes + dg_nodes + content_nodes + r_nodes + i_nodes + eqb_nodes + world_nodes + map_nodes + sh_nodes + npc_nodes + fac_nodes + s_nodes
     )
 
     # 5) serialize, sorted deterministically.
