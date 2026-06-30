@@ -23,7 +23,7 @@ def run_query(query):
 
 def project_rows(raw_rows):
     """Keep only the projected fields; drop rows whose uses_facility has no non-empty value.
-    Sorted by (page_name, repr(uses_facility)) for byte-determinism."""
+    Sorted by (page_name, json.dumps(uses_facility)) for byte-determinism."""
     out = []
     for r in raw_rows:
         facs = r.get("uses_facility")

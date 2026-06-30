@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Source-grounding gate for the facility taxonomy layer. HARD-FAILS (exit 1) on structural
-violations: a facility node whose name is not a real distinct uses_facility value; a `skills`
-entry with no backing recipe row (that facility x that skill); a facility whose value does NOT
-classify as 'facility' AND is not force_facility. Resolution residuals (deferred/ambiguous) are
-the coverage verifier's job. Reuses the builder helpers.
+violations: every member (name + aliases) must be a real uses_facility roster value; a `skills`
+entry must be backed by at least one member's recipe rows; the display name must classify as
+'facility' OR be force_facility (aliases are non-force redirects, so they classify facility too).
+Resolution residuals (deferred/ambiguous) are the coverage verifier's job. Reuses the builder helpers.
 """
 from __future__ import annotations
 import json, os, sys
@@ -23,7 +23,7 @@ def main() -> int:
 
     valid_values = set(facility_roster(rows))
     force_fac = {o["value"] for o in ov.get("force_facility", [])}
-    # facility -> set of backing skills, from the recipe rows
+    # per-value set of backing skills, from the recipe rows
     skills_by = {}
     for r in rows:
         sks = {(s or "").strip() for s in _as_list(r.get("uses_skill"))} - {""}
@@ -34,16 +34,27 @@ def main() -> int:
 
     facs = [n for n in nodes if n["id"].startswith("facility:")]
     for n in facs:
-        value = n["name"]
-        if value not in valid_values:
-            errors.append(f"[roster] {n['id']} name {value!r} is not a real uses_facility value")
-            continue
-        cls = classify_infobox((ibs.get(value) or {}).get("infoboxes", []))
-        if cls != "facility" and value not in force_fac:
-            errors.append(f"[filter] {n['id']} value {value!r} classifies {cls!r} and is not force_facility")
+        display = n["name"]
+        aliases = n["data"].get("aliases", [])
+        members = [display] + aliases
+
+        # every member (display name + aliases) must be a real roster value
+        for m in members:
+            if m not in valid_values:
+                errors.append(f"[roster] {n['id']} member {m!r} is not a real uses_facility value")
+
+        # display name must classify as facility OR be force_facility
+        cls = classify_infobox((ibs.get(display) or {}).get("infoboxes", []))
+        if cls != "facility" and display not in force_fac:
+            errors.append(f"[filter] {n['id']} value {display!r} classifies {cls!r} and is not force_facility")
+
+        # each skills entry must be backed by at least one member
+        member_skills: set[str] = set()
+        for m in members:
+            member_skills |= skills_by.get(m, set())
         for sk in n["data"].get("skills", []):
-            if sk not in skills_by.get(value, set()):
-                errors.append(f"[skill] {n['id']} skill {sk!r} has no backing recipe row")
+            if sk not in member_skills:
+                errors.append(f"[skill] {n['id']} skill {sk!r} has no backing recipe row across any member")
 
     if errors:
         print(f"FACILITY VERIFICATION FAILED — {len(errors)} violation(s):")

@@ -53,15 +53,24 @@ def facility_roster(recipe_rows) -> list[str]:
     return sorted(vals)
 
 
+def _canonical_page(value, facility_infoboxes):
+    """The canonical wiki page a uses_facility value resolves to: its redirect target
+    if any, else itself, with MediaWiki underscore<->space title-equivalence normalized."""
+    ib = facility_infoboxes.get(value) or {}
+    base = ib.get("redirect_target") or value
+    return base.replace("_", " ").strip()
+
+
 def build_facilities(recipe_rows, facility_infoboxes, overrides):
-    """Facility taxonomy nodes (pure, deterministic, ZERO edges). See module docstring."""
+    """Facility taxonomy nodes (pure, deterministic, ZERO edges). Non-force values that resolve
+    to the same canonical wiki page collapse into ONE node (recipe_count summed, skills unioned,
+    collapsed-in raw values recorded as `aliases`); force_facility values are NEVER collapsed."""
     overrides = overrides or {}
     force_fac = {o["value"] for o in overrides.get("force_facility", [])}
     force_exc = {o["value"] for o in overrides.get("force_exclude", [])}
     ov_src = {o["value"]: o.get("source_url", "") for o in overrides.get("force_facility", [])}
 
-    skills_by: dict[str, set[str]] = {}
-    count_by: dict[str, int] = {}
+    skills_by, count_by = {}, {}
     for r in recipe_rows:
         sks = [(s or "").strip() for s in _as_list(r.get("uses_skill"))]
         for f in _as_list(r.get("uses_facility")):
@@ -71,30 +80,48 @@ def build_facilities(recipe_rows, facility_infoboxes, overrides):
             count_by[f] = count_by.get(f, 0) + 1
             skills_by.setdefault(f, set()).update(s for s in sks if s)
 
-    nodes: list[Node] = []
-    claimed: dict[str, str] = {}
+    groups = {}  # group_key -> list[raw value]
     for value in facility_roster(recipe_rows):
         if value in force_exc:
             continue
-        if value not in force_fac:
+        if value in force_fac:
+            gk = ("force", value)                      # never collapse a forced value
+        else:
             ib = facility_infoboxes.get(value) or {}
             if classify_infobox(ib.get("infoboxes", [])) != "facility":
-                continue                       # npc/shop/ambiguous -> deferred (coverage reports)
-        nid = _facility_slug(value)
-        if nid in claimed:                     # distinct names, same slug -> NEVER silently merge
+                continue                               # npc/shop/ambiguous -> deferred
+            gk = ("canon", _canonical_page(value, facility_infoboxes))
+        groups.setdefault(gk, []).append(value)
+
+    def _display(members):
+        # prefer the member that is its OWN page (no redirect_target); deterministic by sort
+        for m in sorted(members):
+            if not (facility_infoboxes.get(m) or {}).get("redirect_target"):
+                return m
+        return sorted(members)[0]
+
+    rendered = [(_display(ms), ms) for ms in groups.values()]
+    nodes, claimed = [], {}
+    for display, members in sorted(rendered, key=lambda t: t[0]):
+        rc = sum(count_by.get(m, 0) for m in members)
+        sk = sorted(set().union(*[skills_by.get(m, set()) for m in members]))
+        nid = _facility_slug(display)
+        if nid in claimed:
             k = 2
             while f"{nid}-{k}" in claimed:
                 k += 1
-            print(f"[facilities] slug collision: {value!r} and {claimed[nid]!r} -> {nid}; using {nid}-{k}")
+            print(f"[facilities] slug collision: {display!r} and {claimed[nid]!r} -> {nid}; using {nid}-{k}")
             nid = f"{nid}-{k}"
-        claimed[nid] = value
-        ib = facility_infoboxes.get(value) or {}
-        data = {"recipe_count": count_by.get(value, 0),
-                "source_url": ib.get("source_url") or ov_src.get(value) or "",
-                "source_token": f"Bucket:recipe.uses_facility={value}"}
-        sk = sorted(skills_by.get(value, set()))
+        claimed[nid] = display
+        ib = facility_infoboxes.get(display) or {}
+        data = {"recipe_count": rc,
+                "source_url": ib.get("source_url") or ov_src.get(display) or "",
+                "source_token": f"Bucket:recipe.uses_facility={display}"}
         if sk:
             data["skills"] = sk
-        nodes.append(Node(id=nid, kind=NodeKind.FACILITY, name=value,
+        aliases = sorted(m for m in members if m != display)
+        if aliases:
+            data["aliases"] = aliases
+        nodes.append(Node(id=nid, kind=NodeKind.FACILITY, name=display,
                           slug=nid.split(":", 1)[1], data=data))
     return nodes, [], {}

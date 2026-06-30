@@ -6,7 +6,7 @@ def _nodes():
 
 def test_facility_nodes_present_and_well_formed():
     facs = [n for n in _nodes() if n["id"].startswith("facility:")]
-    assert len(facs) >= 100, f"expected many facilities, got {len(facs)}"
+    assert len(facs) >= 250, f"expected many facilities, got {len(facs)}"
     anvil = next((n for n in facs if n["id"] == "facility:anvil"), None)
     assert anvil is not None and anvil["kind"] == "facility"
     assert "Smithing" in anvil["data"].get("skills", [])

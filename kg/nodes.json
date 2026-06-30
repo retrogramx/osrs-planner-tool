@@ -35031,21 +35031,6 @@
   },
   {
     "data": {
-      "recipe_count": 205,
-      "skills": [
-        "Cooking",
-        "Firemaking"
-      ],
-      "source_token": "Bucket:recipe.uses_facility=Cooking range",
-      "source_url": "https://oldschool.runescape.wiki/w/Range"
-    },
-    "id": "facility:cooking-range",
-    "kind": "facility",
-    "name": "Cooking range",
-    "slug": "cooking-range"
-  },
-  {
-    "data": {
       "recipe_count": 3,
       "source_token": "Bucket:recipe.uses_facility=Cooking range (2018 Easter event)",
       "source_url": "https://oldschool.runescape.wiki/w/Cooking_range_(2018_Easter_event)"
@@ -35619,7 +35604,10 @@
   },
   {
     "data": {
-      "recipe_count": 13,
+      "aliases": [
+        "Funeral_pyre_(Barbarian)"
+      ],
+      "recipe_count": 14,
       "skills": [
         "Crafting",
         "Firemaking"
@@ -35631,21 +35619,6 @@
     "kind": "facility",
     "name": "Funeral pyre (Barbarian)",
     "slug": "funeral-pyre-barbarian"
-  },
-  {
-    "data": {
-      "recipe_count": 1,
-      "skills": [
-        "Crafting",
-        "Firemaking"
-      ],
-      "source_token": "Bucket:recipe.uses_facility=Funeral_pyre_(Barbarian)",
-      "source_url": "https://oldschool.runescape.wiki/w/Funeral_pyre_(Barbarian)"
-    },
-    "id": "facility:funeral-pyre-barbarian-2",
-    "kind": "facility",
-    "name": "Funeral_pyre_(Barbarian)",
-    "slug": "funeral-pyre-barbarian-2"
   },
   {
     "data": {
@@ -36810,7 +36783,14 @@
   },
   {
     "data": {
-      "recipe_count": 1,
+      "aliases": [
+        "Cooking range"
+      ],
+      "recipe_count": 206,
+      "skills": [
+        "Cooking",
+        "Firemaking"
+      ],
       "source_token": "Bucket:recipe.uses_facility=Range",
       "source_url": "https://oldschool.runescape.wiki/w/Range"
     },
@@ -37120,31 +37100,20 @@
   },
   {
     "data": {
-      "recipe_count": 1,
-      "skills": [
-        "Construction"
+      "aliases": [
+        "Shipwright's Workbench"
       ],
-      "source_token": "Bucket:recipe.uses_facility=Shipwright's Workbench",
-      "source_url": "https://oldschool.runescape.wiki/w/Shipwrights'_Workbench"
-    },
-    "id": "facility:shipwrights-workbench",
-    "kind": "facility",
-    "name": "Shipwright's Workbench",
-    "slug": "shipwrights-workbench"
-  },
-  {
-    "data": {
-      "recipe_count": 19,
+      "recipe_count": 20,
       "skills": [
         "Construction"
       ],
       "source_token": "Bucket:recipe.uses_facility=Shipwrights' Workbench",
       "source_url": "https://oldschool.runescape.wiki/w/Shipwrights'_Workbench"
     },
-    "id": "facility:shipwrights-workbench-2",
+    "id": "facility:shipwrights-workbench",
     "kind": "facility",
     "name": "Shipwrights' Workbench",
-    "slug": "shipwrights-workbench-2"
+    "slug": "shipwrights-workbench"
   },
   {
     "data": {

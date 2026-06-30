@@ -64,7 +64,7 @@
       "key_prefix": "facility:<slug>",
       "id_basis": "slug",
       "notes": "anvil/furnace/altar/range processing station; requires_facility target.",
-      "data_keys": ["skills", "recipe_count", "source_url", "source_token"]
+      "data_keys": ["skills", "recipe_count", "source_url", "source_token", "aliases"]
     },
     "counter": {"status": "reserved", "key_prefix": "counter:<slug>", "id_basis": "slug", "notes": "An accumulating counter (counts_toward feed).", "data_keys": []},
     "drop_table": {"status": "reserved", "key_prefix": "drop_table:<slug>", "id_basis": "slug", "notes": "Reified table/rolls/membership (decision 3 / §4).", "data_keys": ["rolls"]},

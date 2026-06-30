@@ -570,6 +570,7 @@ def assemble() -> None:
     if _fac_ib is not None:
         fac_nodes, _fac_edges, _ = build_facilities(
             _load_recipe_facility_rows(), _fac_ib, _load_facility_overrides())
+        assert not _fac_edges, "facility layer must emit zero edges"
         owned_ids = owned_ids | {n.id for n in fac_nodes}
 
     referenced_all = _collect_referenced_ids(edges + dg_edges + rp_edges, groups)
