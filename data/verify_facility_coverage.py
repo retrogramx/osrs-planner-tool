@@ -9,7 +9,7 @@ import json, os, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT); sys.path.insert(0, os.path.join(ROOT, "src"))
 from kg_ingest.builders.facilities import (  # noqa: E402
-    classify_infobox, facility_roster, build_facilities, _canonical_page,
+    classify_infobox, facility_roster, build_facilities,
 )
 
 
