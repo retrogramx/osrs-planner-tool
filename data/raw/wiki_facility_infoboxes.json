@@ -1,0 +1,2547 @@
+{
+ "_provenance": {
+  "domain": "wiki_facility_infoboxes",
+  "source": "OSRS Wiki revisions API (redirects resolved)",
+  "license": "CC BY-NC-SA 3.0",
+  "param": "{{Infobox X}} presence"
+ },
+ "infoboxes": {
+  "Abbot Langley": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Abbot_Langley"
+  },
+  "Achey Tree": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Achey_Tree"
+  },
+  "Adamantite rocks": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Adamantite_rocks"
+  },
+  "Aggie": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Aggie"
+  },
+  "Air Altar": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Air_Altar"
+  },
+  "Ali the dyer": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Ali_the_dyer"
+  },
+  "Alrena": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Alrena"
+  },
+  "Altar (Camdozaal)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Altar_(Camdozaal)"
+  },
+  "Altar (Catacombs of Kourend)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Altar_(Catacombs_of_Kourend)"
+  },
+  "Altar (Zalcano)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Altar_(Zalcano)"
+  },
+  "Altar of nature": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Altar_of_nature"
+  },
+  "An experimental anvil": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/An_experimental_anvil"
+  },
+  "Ancient Forge": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Ancient_Forge"
+  },
+  "Andros Mai": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Andros_Mai"
+  },
+  "Anvil": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Anvil"
+  },
+  "Anvil (Chasm of Fire)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Anvil_(Chasm_of_Fire)"
+  },
+  "Anvil space": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": "Anvil (amenity)",
+   "source_url": "https://oldschool.runescape.wiki/w/Anvil_(amenity)"
+  },
+  "Apothecary": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Apothecary"
+  },
+  "Apple Press": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Apple_Press"
+  },
+  "Aquarium": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Aquarium"
+  },
+  "Arctic pine tree": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Arctic_pine_tree"
+  },
+  "Arder mushrooms": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Arder_mushrooms"
+  },
+  "Armour stand": {
+   "infoboxes": [
+    "Infobox Construction"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Armour_stand"
+  },
+  "Ash pile": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Ash_pile"
+  },
+  "Astral Altar": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Astral_Altar"
+  },
+  "Bank": {
+   "infoboxes": [],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Bank"
+  },
+  "Bank chest space": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": "Bank chest (amenity)",
+   "source_url": "https://oldschool.runescape.wiki/w/Bank_chest_(amenity)"
+  },
+  "Banner easel": {
+   "infoboxes": [
+    "Infobox Construction"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Banner_easel"
+  },
+  "Barbarian anvil": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Barbarian_anvil"
+  },
+  "Barronite Crusher": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Barronite_Crusher"
+  },
+  "Belona": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Belona"
+  },
+  "Big Compost Bin": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Big_Compost_Bin"
+  },
+  "Bitternut Tree": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Bitternut_Tree"
+  },
+  "Blast Furnace": {
+   "infoboxes": [
+    "Infobox Activity"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Blast_Furnace"
+  },
+  "Blast Furnace Foreman": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Blast_Furnace_Foreman"
+  },
+  "Blisterwood tree": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Blisterwood_tree"
+  },
+  "Blood Altar": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Blood_Altar"
+  },
+  "Blood Altar (Kourend)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Blood_Altar_(Kourend)"
+  },
+  "Bluefin shoal": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Bluefin_shoal"
+  },
+  "Blurite rocks": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Blurite_rocks"
+  },
+  "Boat schematics": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Boat_schematics"
+  },
+  "Body Altar": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Body_Altar"
+  },
+  "Bone grinder": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Bone_grinder"
+  },
+  "Book of Earthen Might": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Book_of_Earthen_Might"
+  },
+  "Book of Eternal Flame": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Book_of_Eternal_Flame"
+  },
+  "Book of Storms": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Book_of_Storms"
+  },
+  "Bounty supply crate": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Bounty_supply_crate"
+  },
+  "Brazier#Burning": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": "Brazier",
+   "source_url": "https://oldschool.runescape.wiki/w/Brazier"
+  },
+  "Brew'ma": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Brew'ma"
+  },
+  "Brewery": {
+   "infoboxes": [
+    "Infobox Activity"
+   ],
+   "redirect_target": "Brewing",
+   "source_url": "https://oldschool.runescape.wiki/w/Brewing"
+  },
+  "Brother Jered": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Brother_Jered"
+  },
+  "Bubbles": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Bubbles"
+  },
+  "Bunsen burner": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Bunsen_burner"
+  },
+  "Burners": {
+   "infoboxes": [
+    "Infobox Room"
+   ],
+   "redirect_target": "Chapel",
+   "source_url": "https://oldschool.runescape.wiki/w/Chapel"
+  },
+  "Camphor tree": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Camphor_tree"
+  },
+  "Candle maker": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Candle_maker"
+  },
+  "Catalytic runic altar": {
+   "infoboxes": [],
+   "redirect_target": "Runic altar",
+   "source_url": "https://oldschool.runescape.wiki/w/Runic_altar"
+  },
+  "Cauldron (Goblin Kitchen)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Cauldron_(Goblin_Kitchen)"
+  },
+  "Cauldron of Thunder": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Cauldron_of_Thunder"
+  },
+  "Chaos Altar": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Chaos_Altar"
+  },
+  "Chaos altar (Wilderness)": {
+   "infoboxes": [
+    "Infobox Location"
+   ],
+   "redirect_target": "Chaos Temple (hut)",
+   "source_url": "https://oldschool.runescape.wiki/w/Chaos_Temple_(hut)"
+  },
+  "Charcoal furnace": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Charcoal_furnace"
+  },
+  "Clay oven": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Clay_oven"
+  },
+  "Clay rocks": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Clay_rocks"
+  },
+  "Coal Tar": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Coal_Tar"
+  },
+  "Coal rocks": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Coal_rocks"
+  },
+  "Compost Bin": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Compost_Bin"
+  },
+  "Conveyor belt (Mastering Mixology)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Conveyor_belt_(Mastering_Mixology)"
+  },
+  "Cooking pot space": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": "Cooking pot (amenity)",
+   "source_url": "https://oldschool.runescape.wiki/w/Cooking_pot_(amenity)"
+  },
+  "Cooking range": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": "Range",
+   "source_url": "https://oldschool.runescape.wiki/w/Range"
+  },
+  "Cooking range (2018 Easter event)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Cooking_range_(2018_Easter_event)"
+  },
+  "Cooking range (The Fremennik Trials)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Cooking_range_(The_Fremennik_Trials)"
+  },
+  "Copper rocks": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Copper_rocks"
+  },
+  "Corrupt Deposit": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Corrupt_Deposit"
+  },
+  "Corrupt Phren Roots": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Corrupt_Phren_Roots"
+  },
+  "Cosmic Altar": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Cosmic_Altar"
+  },
+  "Crafting table 1": {
+   "infoboxes": [
+    "Infobox Construction"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Crafting_table_1"
+  },
+  "Crafting table 2": {
+   "infoboxes": [
+    "Infobox Construction"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Crafting_table_2"
+  },
+  "Crafting table 3": {
+   "infoboxes": [
+    "Infobox Construction"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Crafting_table_3"
+  },
+  "Crafting table 4": {
+   "infoboxes": [
+    "Infobox Construction"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Crafting_table_4"
+  },
+  "Crystal Deposit": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Crystal_Deposit"
+  },
+  "Crystal ball space": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Crystal_ball_space"
+  },
+  "Daeyalt Essence (rock)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Daeyalt_Essence_(rock)"
+  },
+  "Daeyalt rocks": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Daeyalt_rocks"
+  },
+  "Dairy churn": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Dairy_churn"
+  },
+  "Dairy cow": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Dairy_cow"
+  },
+  "Dampe": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Dampe"
+  },
+  "Dark Altar": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Dark_Altar"
+  },
+  "Dark Mage": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Dark_Mage"
+  },
+  "Death Altar": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Death_Altar"
+  },
+  "Demon lectern": {
+   "infoboxes": [
+    "Infobox Construction"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Demon_lectern"
+  },
+  "Demonic Offering": {
+   "infoboxes": [
+    "Infobox Spell"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Demonic_Offering"
+  },
+  "Dense Jungle": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Dense_Jungle"
+  },
+  "Derse Venator": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Derse_Venator"
+  },
+  "Dom Onion's Reward Shop": {
+   "infoboxes": [
+    "Infobox Shop"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Dom_Onion's_Reward_Shop"
+  },
+  "Doric's Whetstone": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Doric's_Whetstone"
+  },
+  "Dragon forge": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Dragon_forge"
+  },
+  "Drezel": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Drezel"
+  },
+  "Dunstan": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Dunstan"
+  },
+  "Eagle lectern": {
+   "infoboxes": [
+    "Infobox Construction"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Eagle_lectern"
+  },
+  "Earth Altar": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Earth_Altar"
+  },
+  "Easter egg rock": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Easter_egg_rock"
+  },
+  "Eblis": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Eblis"
+  },
+  "Ectofuntus": {
+   "infoboxes": [
+    "Infobox Location",
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Ectofuntus"
+  },
+  "Elemental runic altar": {
+   "infoboxes": [],
+   "redirect_target": "Runic altar",
+   "source_url": "https://oldschool.runescape.wiki/w/Runic_altar"
+  },
+  "Elite Void Knight": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Elite_Void_Knight"
+  },
+  "Elnock Inquisitor": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Elnock_Inquisitor"
+  },
+  "Eluned": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Eluned"
+  },
+  "Essence orifice": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Essence_orifice"
+  },
+  "Exposed altar": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Exposed_altar"
+  },
+  "Extract orifice": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Extract_orifice"
+  },
+  "Fallen guardian": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fallen_guardian"
+  },
+  "Fancy Clothes Store": {
+   "infoboxes": [
+    "Infobox Shop"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fancy_Clothes_Store"
+  },
+  "Farming patch": {
+   "infoboxes": [],
+   "redirect_target": "Farming/Patch locations",
+   "source_url": "https://oldschool.runescape.wiki/w/Farming/Patch_locations"
+  },
+  "Fermentation Vat": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fermentation_Vat"
+  },
+  "Fire": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fire"
+  },
+  "Fire Altar": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fire_Altar"
+  },
+  "Fire altar (Flamtaer)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fire_altar_(Flamtaer)"
+  },
+  "Fishing Spot (The Gauntlet)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fishing_Spot_(The_Gauntlet)"
+  },
+  "Fishing Trawler": {
+   "infoboxes": [
+    "Infobox Activity"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fishing_Trawler"
+  },
+  "Fishing spot (Camdozaal)": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fishing_spot_(Camdozaal)"
+  },
+  "Fishing spot (Hemenster)": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fishing_spot_(Hemenster)"
+  },
+  "Fishing spot (Piscatoris Fishing Colony)": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fishing_spot_(Piscatoris_Fishing_Colony)"
+  },
+  "Fishing spot (ScapeRune)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fishing_spot_(ScapeRune)"
+  },
+  "Fishing spot (Streambound Cavern)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fishing_spot_(Streambound_Cavern)"
+  },
+  "Fishing spot (Swan Song)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fishing_spot_(Swan_Song)"
+  },
+  "Fishing spot (Tempoross Cove)": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fishing_spot_(Tempoross_Cove)"
+  },
+  "Fishing spot (Tutorial Island)": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fishing_spot_(Tutorial_Island)"
+  },
+  "Fishing spot (aerial fishing)": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fishing_spot_(aerial_fishing)"
+  },
+  "Fishing spot (barbarian)": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fishing_spot_(barbarian)"
+  },
+  "Fishing spot (big net, harpoon)": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fishing_spot_(big_net,_harpoon)"
+  },
+  "Fishing spot (cage, harpoon)": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fishing_spot_(cage,_harpoon)"
+  },
+  "Fishing spot (dark crab)": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fishing_spot_(dark_crab)"
+  },
+  "Fishing spot (frogspawn)": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fishing_spot_(frogspawn)"
+  },
+  "Fishing spot (karambwan)": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fishing_spot_(karambwan)"
+  },
+  "Fishing spot (karambwanji)": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fishing_spot_(karambwanji)"
+  },
+  "Fishing spot (lantern)": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fishing_spot_(lantern)"
+  },
+  "Fishing spot (lava eel)": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fishing_spot_(lava_eel)"
+  },
+  "Fishing spot (minnow)": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fishing_spot_(minnow)"
+  },
+  "Fishing spot (sacred eel)": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fishing_spot_(sacred_eel)"
+  },
+  "Fishing spot (small net, bait)": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fishing_spot_(small_net,_bait)"
+  },
+  "Fishing spot (swamp)": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fishing_spot_(swamp)"
+  },
+  "Forester's Campfire": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Forester's_Campfire"
+  },
+  "Forestry Shop": {
+   "infoboxes": [
+    "Infobox Shop"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Forestry_Shop"
+  },
+  "Fossegrimen": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fossegrimen"
+  },
+  "Fountain (wine)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fountain_(wine)"
+  },
+  "Fractionalising still": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Fractionalising_still"
+  },
+  "Funeral Pyre (Mort'ton)": {
+   "infoboxes": [
+    "Infobox Activity"
+   ],
+   "redirect_target": "Shades of Mort'ton (minigame)",
+   "source_url": "https://oldschool.runescape.wiki/w/Shades_of_Mort'ton_(minigame)"
+  },
+  "Funeral pyre (Barbarian)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Funeral_pyre_(Barbarian)"
+  },
+  "Funeral_pyre_(Barbarian)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": "Funeral pyre (Barbarian)",
+   "source_url": "https://oldschool.runescape.wiki/w/Funeral_pyre_(Barbarian)"
+  },
+  "Furnace": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Furnace"
+  },
+  "Furnace (Chasm of Fire)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Furnace_(Chasm_of_Fire)"
+  },
+  "Furnace (Elemental Workshop)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Furnace_(Elemental_Workshop)"
+  },
+  "Furnace (Zalcano)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Furnace_(Zalcano)"
+  },
+  "Furnace space": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": "Furnace (amenity)",
+   "source_url": "https://oldschool.runescape.wiki/w/Furnace_(amenity)"
+  },
+  "Ghommal": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Ghommal"
+  },
+  "Giant krill shoal": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Giant_krill_shoal"
+  },
+  "Gilded altar": {
+   "infoboxes": [
+    "Infobox Construction"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Gilded_altar"
+  },
+  "Gingerbread Gnome Machine": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Gingerbread_Gnome_Machine"
+  },
+  "Gita Prymes": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Gita_Prymes"
+  },
+  "Glistening shoal": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Glistening_shoal"
+  },
+  "Gold rocks": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Gold_rocks"
+  },
+  "Granite rocks": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Granite_rocks"
+  },
+  "Guardian parts": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Guardian_parts"
+  },
+  "Guardian remains": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Guardian_remains"
+  },
+  "Gujuo": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Gujuo"
+  },
+  "Haddock shoal": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Haddock_shoal"
+  },
+  "Halibut shoal": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Halibut_shoal"
+  },
+  "Hay bale": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Hay_bale"
+  },
+  "Haystack": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Haystack"
+  },
+  "Historian Aldo": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Historian_Aldo"
+  },
+  "Hole (Crab trapping)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Hole_(Crab_trapping)"
+  },
+  "Hollow tree": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Hollow_tree"
+  },
+  "Hopper (Trouble Brewing)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Hopper_(Trouble_Brewing)"
+  },
+  "Huge guardian remains": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Huge_guardian_remains"
+  },
+  "Ilfeen": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Ilfeen"
+  },
+  "Iron rocks": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Iron_rocks"
+  },
+  "Ironwood tree": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Ironwood_tree"
+  },
+  "Islwyn": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Islwyn"
+  },
+  "Jatoba tree": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Jatoba_tree"
+  },
+  "Juice press": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Juice_press"
+  },
+  "Juna": {
+   "infoboxes": [
+    "Infobox NPC",
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Juna"
+  },
+  "Key Master": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Key_Master"
+  },
+  "Lady Keli": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Lady_Keli"
+  },
+  "Laidee Gnonock": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Laidee_Gnonock"
+  },
+  "Lamp (Dorgesh-Kaan)#Broken": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": "Lamp (Dorgesh-Kaan)",
+   "source_url": "https://oldschool.runescape.wiki/w/Lamp_(Dorgesh-Kaan)"
+  },
+  "Lamp oil still": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Lamp_oil_still"
+  },
+  "Larch tree": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Larch_tree"
+  },
+  "Large guardian remains": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Large_guardian_remains"
+  },
+  "Lava crater": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Lava_crater"
+  },
+  "Lava trough": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Lava_trough"
+  },
+  "Law Altar": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Law_Altar"
+  },
+  "Lead rocks": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Lead_rocks"
+  },
+  "Lectern (Ancient)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Lectern_(Ancient)"
+  },
+  "Lectern (Arceuus)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Lectern_(Arceuus)"
+  },
+  "Lectern (Lunar)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Lectern_(Lunar)"
+  },
+  "Leela": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Leela"
+  },
+  "Libation bowl": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Libation_bowl"
+  },
+  "Lieve McCracken": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Lieve_McCracken"
+  },
+  "Light Jungle": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Light_Jungle"
+  },
+  "Limestone rock": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Limestone_rock"
+  },
+  "Loom": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Loom"
+  },
+  "Loom space": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": "Loom (amenity)",
+   "source_url": "https://oldschool.runescape.wiki/w/Loom_(amenity)"
+  },
+  "Lovakite furnace": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Lovakite_furnace"
+  },
+  "Lovakite rocks": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Lovakite_rocks"
+  },
+  "Machinery": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Machinery"
+  },
+  "Madam Sikaro": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Madam_Sikaro"
+  },
+  "Magic tree": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Magic_tree"
+  },
+  "Magical rocks": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Magical_rocks"
+  },
+  "Mahogany": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": "Mahogany tree",
+   "source_url": "https://oldschool.runescape.wiki/w/Mahogany_tree"
+  },
+  "Mahogany demon lectern": {
+   "infoboxes": [
+    "Infobox Construction"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Mahogany_demon_lectern"
+  },
+  "Mahogany eagle lectern": {
+   "infoboxes": [
+    "Infobox Construction"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Mahogany_eagle_lectern"
+  },
+  "Maple tree": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Maple_tree"
+  },
+  "Marlin shoal": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Marlin_shoal"
+  },
+  "Mature juniper tree": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Mature_juniper_tree"
+  },
+  "Medium jungle": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": "Medium Jungle",
+   "source_url": "https://oldschool.runescape.wiki/w/Medium_Jungle"
+  },
+  "Metal Press": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Metal_Press"
+  },
+  "Mind Altar": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Mind_Altar"
+  },
+  "Mithril rocks": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Mithril_rocks"
+  },
+  "Mixing vessel": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Mixing_vessel"
+  },
+  "Monument": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Monument"
+  },
+  "Murky Matt (runes)": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Murky_Matt_(runes)"
+  },
+  "Musca mushrooms": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Musca_mushrooms"
+  },
+  "Mycelium pool": {
+   "infoboxes": [
+    "Infobox Location"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Mycelium_pool"
+  },
+  "Nature Altar": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Nature_Altar"
+  },
+  "Ned": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Ned"
+  },
+  "Nest (nice)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Nest_(nice)"
+  },
+  "Nickel rocks": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Nickel_rocks"
+  },
+  "Nigel": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Nigel"
+  },
+  "Nurmof": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Nurmof"
+  },
+  "Oak lectern": {
+   "infoboxes": [
+    "Infobox Construction"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Oak_lectern"
+  },
+  "Oak tree": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Oak_tree"
+  },
+  "Obelisk of Air": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Obelisk_of_Air"
+  },
+  "Obelisk of Earth": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Obelisk_of_Earth"
+  },
+  "Obelisk of Fire": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Obelisk_of_Fire"
+  },
+  "Obelisk of Water": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Obelisk_of_Water"
+  },
+  "Ogre spit-roast": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Ogre_spit-roast"
+  },
+  "Old fire pit": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Old_fire_pit"
+  },
+  "Oldak": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Oldak"
+  },
+  "Ore vein": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Ore_vein"
+  },
+  "Oronwen": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Oronwen"
+  },
+  "Otto Godblessed": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Otto_Godblessed"
+  },
+  "Oziach": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Oziach"
+  },
+  "Panning point": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Panning_point"
+  },
+  "Patchy": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Patchy"
+  },
+  "Peer the Seer": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Peer_the_Seer"
+  },
+  "Pellem": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Pellem"
+  },
+  "Pellem's Fur Store": {
+   "infoboxes": [
+    "Infobox Shop"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Pellem's_Fur_Store"
+  },
+  "Pennant": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Pennant"
+  },
+  "Phabelle Bile": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Phabelle_Bile"
+  },
+  "Phren Roots": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Phren_Roots"
+  },
+  "Pluming stand": {
+   "infoboxes": [
+    "Infobox Construction"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Pluming_stand"
+  },
+  "Poison crater": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Poison_crater"
+  },
+  "Polishing wheel": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Polishing_wheel"
+  },
+  "Pool of Slime": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Pool_of_Slime"
+  },
+  "Pool of ichor": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Pool_of_ichor"
+  },
+  "Potter's Wheel": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Potter's_Wheel"
+  },
+  "Potter's wheel space": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": "Potter's wheel (amenity)",
+   "source_url": "https://oldschool.runescape.wiki/w/Potter's_wheel_(amenity)"
+  },
+  "Pottery Oven": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Pottery_Oven"
+  },
+  "Pottery oven space": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": "Pottery oven (amenity)",
+   "source_url": "https://oldschool.runescape.wiki/w/Pottery_oven_(amenity)"
+  },
+  "Preparation Table": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Preparation_Table"
+  },
+  "Prifddinas' Seamstress": {
+   "infoboxes": [
+    "Infobox Shop"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Prifddinas'_Seamstress"
+  },
+  "Rack (Mourner Headquarters)#Gnome|Gnome on a rack": {
+   "infoboxes": [],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Rack_(Mourner_Headquarters)#Gnome|Gnome_on_a_rack"
+  },
+  "Ramarno": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Ramarno"
+  },
+  "Range": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Range"
+  },
+  "Range (The Gauntlet)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Range_(The_Gauntlet)"
+  },
+  "Redwood tree": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Redwood_tree"
+  },
+  "Refiner": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Refiner"
+  },
+  "Repair bench": {
+   "infoboxes": [
+    "Infobox Construction"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Repair_bench"
+  },
+  "Rewards Guardian": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Rewards_Guardian"
+  },
+  "Rimae Sirsalis": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Rimae_Sirsalis"
+  },
+  "Rock (snake cooker)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Rock_(snake_cooker)"
+  },
+  "Rock Formation (glowing)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": "Rock Formation",
+   "source_url": "https://oldschool.runescape.wiki/w/Rock_Formation"
+  },
+  "Rocks (Barronite)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": "Barronite rocks",
+   "source_url": "https://oldschool.runescape.wiki/w/Barronite_rocks"
+  },
+  "Rod Fishing spot (anglerfish)": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Rod_Fishing_spot_(anglerfish)"
+  },
+  "Rod Fishing spot (infernal eel)": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Rod_Fishing_spot_(infernal_eel)"
+  },
+  "Rod Fishing spot (lure, bait)": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Rod_Fishing_spot_(lure,_bait)"
+  },
+  "Rosewood tree": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Rosewood_tree"
+  },
+  "Rowboat space": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": "Rowboat (amenity)",
+   "source_url": "https://oldschool.runescape.wiki/w/Rowboat_(amenity)"
+  },
+  "Rune Essence (rock)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Rune_Essence_(rock)"
+  },
+  "Runite rocks": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Runite_rocks"
+  },
+  "Sack of Flour": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Sack_of_Flour"
+  },
+  "Safta Doc": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Safta_Doc"
+  },
+  "Salvaging station": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Salvaging_station"
+  },
+  "Sand pit": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Sand_pit"
+  },
+  "Sandstorm": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Sandstorm"
+  },
+  "Sandworm castings": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Sandworm_castings"
+  },
+  "Sapling (Chambers of Xeric)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Sapling_(Chambers_of_Xeric)"
+  },
+  "Saradomin Brazier": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Saradomin_Brazier"
+  },
+  "Sawmill": {
+   "infoboxes": [
+    "Infobox Shop"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Sawmill"
+  },
+  "Sbott": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Sbott"
+  },
+  "Scrapey tree": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Scrapey_tree"
+  },
+  "Shield easel": {
+   "infoboxes": [
+    "Infobox Construction"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Shield_easel"
+  },
+  "Shimmering shoal": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Shimmering_shoal"
+  },
+  "Shipwright's Workbench": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": "Shipwrights' Workbench",
+   "source_url": "https://oldschool.runescape.wiki/w/Shipwrights'_Workbench"
+  },
+  "Shipwrights' Workbench": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Shipwrights'_Workbench"
+  },
+  "Shrine": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Shrine"
+  },
+  "Shrine (Tempoross Cove)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Shrine_(Tempoross_Cove)"
+  },
+  "Shrine of Ralos": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Shrine_of_Ralos"
+  },
+  "Sigli the Huntsman": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Sigli_the_Huntsman"
+  },
+  "Silver rocks": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Silver_rocks"
+  },
+  "Singing Bowl (The Corrupted Gauntlet)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Singing_Bowl_(The_Corrupted_Gauntlet)"
+  },
+  "Singing Bowl (The Gauntlet)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Singing_Bowl_(The_Gauntlet)"
+  },
+  "Singing bowl": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Singing_bowl"
+  },
+  "Sinister Offering": {
+   "infoboxes": [
+    "Infobox Spell"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Sinister_Offering"
+  },
+  "Skulgrimen": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Skulgrimen"
+  },
+  "Smith": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Smith"
+  },
+  "Soar Leader Pitri": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Soar_Leader_Pitri"
+  },
+  "Solztun": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Solztun"
+  },
+  "Soul Altar": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Soul_Altar"
+  },
+  "Soul Wars Reward Shop": {
+   "infoboxes": [
+    "Infobox Shop"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Soul_Wars_Reward_Shop"
+  },
+  "Specimen table (Another Slice of H.A.M.)|Specimen table": {
+   "infoboxes": [],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Specimen_table_(Another_Slice_of_H.A.M.)|Specimen_table"
+  },
+  "Spinning wheel": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Spinning_wheel"
+  },
+  "Spinning wheel space": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": "Spinning wheel (amenity)",
+   "source_url": "https://oldschool.runescape.wiki/w/Spinning_wheel_(amenity)"
+  },
+  "Spirit of Scorpius": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Spirit_of_Scorpius"
+  },
+  "Stalagmites (Lunar Isle)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Stalagmites_(Lunar_Isle)"
+  },
+  "Strange Machine (wyvern shield)|Strange Machine": {
+   "infoboxes": [],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Strange_Machine_(wyvern_shield)|Strange_Machine"
+  },
+  "Strange Machine#Enriched bones": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": "Strange Machine",
+   "source_url": "https://oldschool.runescape.wiki/w/Strange_Machine"
+  },
+  "Sulphur Vent (Mount Karuulm)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Sulphur_Vent_(Mount_Karuulm)"
+  },
+  "Suntrap": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Suntrap"
+  },
+  "Swampy sink": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Swampy_sink"
+  },
+  "Sweetgrub Mound": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Sweetgrub_Mound"
+  },
+  "Tannery": {
+   "infoboxes": [],
+   "redirect_target": "Tanner",
+   "source_url": "https://oldschool.runescape.wiki/w/Tanner"
+  },
+  "Taxidermist": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Taxidermist"
+  },
+  "Teak": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": "Teak tree",
+   "source_url": "https://oldschool.runescape.wiki/w/Teak_tree"
+  },
+  "Teak demon lectern": {
+   "infoboxes": [
+    "Infobox Construction"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Teak_demon_lectern"
+  },
+  "Teak eagle lectern": {
+   "infoboxes": [
+    "Infobox Construction"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Teak_eagle_lectern"
+  },
+  "Thakkrad Sigmundson": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Thakkrad_Sigmundson"
+  },
+  "The Overseer": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/The_Overseer"
+  },
+  "Thormac": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Thormac"
+  },
+  "Thurgo": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Thurgo"
+  },
+  "Tin rocks": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Tin_rocks"
+  },
+  "Totem site": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Totem_site"
+  },
+  "Trader Stan": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Trader_Stan"
+  },
+  "Tree": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Tree"
+  },
+  "Turael": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Turael"
+  },
+  "Unbuilt Landing Site": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": "Landing Site",
+   "source_url": "https://oldschool.runescape.wiki/w/Landing_Site"
+  },
+  "Uncooking pot": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Uncooking_pot"
+  },
+  "Vibrant shoal": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Vibrant_shoal"
+  },
+  "Volcanic Forge": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Volcanic_Forge"
+  },
+  "Volcanic sulphur (rock)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Volcanic_sulphur_(rock)"
+  },
+  "Wall of flame": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Wall_of_flame"
+  },
+  "Watchtower Wizard": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Watchtower_Wizard"
+  },
+  "Water": {
+   "infoboxes": [],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Water"
+  },
+  "Water Altar": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Water_Altar"
+  },
+  "Water Pump (The Corrupted Gauntlet)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Water_Pump_(The_Corrupted_Gauntlet)"
+  },
+  "Water Pump (The Gauntlet)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Water_Pump_(The_Gauntlet)"
+  },
+  "Water pump space": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": "Water pump (amenity)",
+   "source_url": "https://oldschool.runescape.wiki/w/Water_pump_(amenity)"
+  },
+  "Well (Paterdomus)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Well_(Paterdomus)"
+  },
+  "Whetstone": {
+   "infoboxes": [
+    "Infobox Construction"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Whetstone"
+  },
+  "Willow tree": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Willow_tree"
+  },
+  "Windmill": {
+   "infoboxes": [],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Windmill"
+  },
+  "Windswept tree": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Windswept_tree"
+  },
+  "Wizard Jalarast": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Wizard_Jalarast"
+  },
+  "Wizard Mizgog": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Wizard_Mizgog"
+  },
+  "Woodcutting stump": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Woodcutting_stump"
+  },
+  "Workbench (Elemental Workshop)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Workbench_(Elemental_Workshop)"
+  },
+  "Workbench (Guardians of the Rift)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Workbench_(Guardians_of_the_Rift)"
+  },
+  "Workbench (Trouble Brewing)": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Workbench_(Trouble_Brewing)"
+  },
+  "Wrath Altar": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Wrath_Altar"
+  },
+  "Wyson the gardener": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Wyson_the_gardener"
+  },
+  "Yellowfin shoal": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Yellowfin_shoal"
+  },
+  "Yew tree": {
+   "infoboxes": [
+    "Infobox Scenery"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Yew_tree"
+  },
+  "Zaff": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Zaff"
+  },
+  "Zooknock": {
+   "infoboxes": [
+    "Infobox NPC"
+   ],
+   "redirect_target": null,
+   "source_url": "https://oldschool.runescape.wiki/w/Zooknock"
+  }
+ }
+}

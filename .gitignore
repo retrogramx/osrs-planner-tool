@@ -33,4 +33,6 @@ data/raw/**
 !data/raw/wiki_npc_infoboxes.json
 # Bucket:recipe projection IS committed provenance (offline snapshot for facility taxonomy layer)
 !data/raw/recipe_facility_bucket.json
+# Wiki facility infoboxes IS committed provenance (offline snapshot for facility taxonomy layer classifier)
+!data/raw/wiki_facility_infoboxes.json
 .superpowers/
