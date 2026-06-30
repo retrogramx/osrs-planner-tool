@@ -34268,6 +34268,3490 @@
     "slug": "equipment-bonuses-9948"
   },
   {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Woodcutting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Achey Tree",
+      "source_url": "https://oldschool.runescape.wiki/w/Achey_Tree"
+    },
+    "id": "facility:achey-tree",
+    "kind": "facility",
+    "name": "Achey Tree",
+    "slug": "achey-tree"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Adamantite rocks",
+      "source_url": "https://oldschool.runescape.wiki/w/Adamantite_rocks"
+    },
+    "id": "facility:adamantite-rocks",
+    "kind": "facility",
+    "name": "Adamantite rocks",
+    "slug": "adamantite-rocks"
+  },
+  {
+    "data": {
+      "recipe_count": 24,
+      "skills": [
+        "Crafting",
+        "Runecraft"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Air Altar",
+      "source_url": "https://oldschool.runescape.wiki/w/Air_Altar"
+    },
+    "id": "facility:air-altar",
+    "kind": "facility",
+    "name": "Air Altar",
+    "slug": "air-altar"
+  },
+  {
+    "data": {
+      "recipe_count": 4,
+      "skills": [
+        "Prayer"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Altar (Camdozaal)",
+      "source_url": "https://oldschool.runescape.wiki/w/Altar_(Camdozaal)"
+    },
+    "id": "facility:altar-camdozaal",
+    "kind": "facility",
+    "name": "Altar (Camdozaal)",
+    "slug": "altar-camdozaal"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "source_token": "Bucket:recipe.uses_facility=Altar (Catacombs of Kourend)",
+      "source_url": "https://oldschool.runescape.wiki/w/Altar_(Catacombs_of_Kourend)"
+    },
+    "id": "facility:altar-catacombs-of-kourend",
+    "kind": "facility",
+    "name": "Altar (Catacombs of Kourend)",
+    "slug": "altar-catacombs-of-kourend"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "source_token": "Bucket:recipe.uses_facility=Altar of nature",
+      "source_url": "https://oldschool.runescape.wiki/w/Altar_of_nature"
+    },
+    "id": "facility:altar-of-nature",
+    "kind": "facility",
+    "name": "Altar of nature",
+    "slug": "altar-of-nature"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Runecraft"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Altar (Zalcano)",
+      "source_url": "https://oldschool.runescape.wiki/w/Altar_(Zalcano)"
+    },
+    "id": "facility:altar-zalcano",
+    "kind": "facility",
+    "name": "Altar (Zalcano)",
+    "slug": "altar-zalcano"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Smithing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=An experimental anvil",
+      "source_url": "https://oldschool.runescape.wiki/w/An_experimental_anvil"
+    },
+    "id": "facility:an-experimental-anvil",
+    "kind": "facility",
+    "name": "An experimental anvil",
+    "slug": "an-experimental-anvil"
+  },
+  {
+    "data": {
+      "recipe_count": 5,
+      "source_token": "Bucket:recipe.uses_facility=Ancient Forge",
+      "source_url": "https://oldschool.runescape.wiki/w/Ancient_Forge"
+    },
+    "id": "facility:ancient-forge",
+    "kind": "facility",
+    "name": "Ancient Forge",
+    "slug": "ancient-forge"
+  },
+  {
+    "data": {
+      "recipe_count": 246,
+      "skills": [
+        "Crafting",
+        "Prayer",
+        "Smithing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Anvil",
+      "source_url": "https://oldschool.runescape.wiki/w/Anvil"
+    },
+    "id": "facility:anvil",
+    "kind": "facility",
+    "name": "Anvil",
+    "slug": "anvil"
+  },
+  {
+    "data": {
+      "recipe_count": 4,
+      "skills": [
+        "Smithing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Anvil (Chasm of Fire)",
+      "source_url": "https://oldschool.runescape.wiki/w/Anvil_(Chasm_of_Fire)"
+    },
+    "id": "facility:anvil-chasm-of-fire",
+    "kind": "facility",
+    "name": "Anvil (Chasm of Fire)",
+    "slug": "anvil-chasm-of-fire"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Construction"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Anvil space",
+      "source_url": "https://oldschool.runescape.wiki/w/Anvil_(amenity)"
+    },
+    "id": "facility:anvil-space",
+    "kind": "facility",
+    "name": "Anvil space",
+    "slug": "anvil-space"
+  },
+  {
+    "data": {
+      "recipe_count": 2,
+      "skills": [
+        "Cooking"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Apple Press",
+      "source_url": "https://oldschool.runescape.wiki/w/Apple_Press"
+    },
+    "id": "facility:apple-press",
+    "kind": "facility",
+    "name": "Apple Press",
+    "slug": "apple-press"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Fishing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Aquarium",
+      "source_url": "https://oldschool.runescape.wiki/w/Aquarium"
+    },
+    "id": "facility:aquarium",
+    "kind": "facility",
+    "name": "Aquarium",
+    "slug": "aquarium"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Woodcutting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Arctic pine tree",
+      "source_url": "https://oldschool.runescape.wiki/w/Arctic_pine_tree"
+    },
+    "id": "facility:arctic-pine-tree",
+    "kind": "facility",
+    "name": "Arctic pine tree",
+    "slug": "arctic-pine-tree"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Farming"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Arder mushrooms",
+      "source_url": "https://oldschool.runescape.wiki/w/Arder_mushrooms"
+    },
+    "id": "facility:arder-mushrooms",
+    "kind": "facility",
+    "name": "Arder mushrooms",
+    "slug": "arder-mushrooms"
+  },
+  {
+    "data": {
+      "recipe_count": 29,
+      "skills": [
+        "Crafting",
+        "Fletching",
+        "Smithing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Armour stand",
+      "source_url": "https://oldschool.runescape.wiki/w/Armour_stand"
+    },
+    "id": "facility:armour-stand",
+    "kind": "facility",
+    "name": "Armour stand",
+    "slug": "armour-stand"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Ash pile",
+      "source_url": "https://oldschool.runescape.wiki/w/Ash_pile"
+    },
+    "id": "facility:ash-pile",
+    "kind": "facility",
+    "name": "Ash pile",
+    "slug": "ash-pile"
+  },
+  {
+    "data": {
+      "recipe_count": 3,
+      "skills": [
+        "Runecraft"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Astral Altar",
+      "source_url": "https://oldschool.runescape.wiki/w/Astral_Altar"
+    },
+    "id": "facility:astral-altar",
+    "kind": "facility",
+    "name": "Astral Altar",
+    "slug": "astral-altar"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Construction"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Bank chest space",
+      "source_url": "https://oldschool.runescape.wiki/w/Bank_chest_(amenity)"
+    },
+    "id": "facility:bank-chest-space",
+    "kind": "facility",
+    "name": "Bank chest space",
+    "slug": "bank-chest-space"
+  },
+  {
+    "data": {
+      "recipe_count": 16,
+      "skills": [
+        "Construction",
+        "Crafting",
+        "Prayer"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Banner easel",
+      "source_url": "https://oldschool.runescape.wiki/w/Banner_easel"
+    },
+    "id": "facility:banner-easel",
+    "kind": "facility",
+    "name": "Banner easel",
+    "slug": "banner-easel"
+  },
+  {
+    "data": {
+      "recipe_count": 12,
+      "skills": [
+        "Smithing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Barbarian anvil",
+      "source_url": "https://oldschool.runescape.wiki/w/Barbarian_anvil"
+    },
+    "id": "facility:barbarian-anvil",
+    "kind": "facility",
+    "name": "Barbarian anvil",
+    "slug": "barbarian-anvil"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Smithing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Barronite Crusher",
+      "source_url": "https://oldschool.runescape.wiki/w/Barronite_Crusher"
+    },
+    "id": "facility:barronite-crusher",
+    "kind": "facility",
+    "name": "Barronite Crusher",
+    "slug": "barronite-crusher"
+  },
+  {
+    "data": {
+      "recipe_count": 6,
+      "skills": [
+        "Farming"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Big Compost Bin",
+      "source_url": "https://oldschool.runescape.wiki/w/Big_Compost_Bin"
+    },
+    "id": "facility:big-compost-bin",
+    "kind": "facility",
+    "name": "Big Compost Bin",
+    "slug": "big-compost-bin"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Hunter"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Bitternut Tree",
+      "source_url": "https://oldschool.runescape.wiki/w/Bitternut_Tree"
+    },
+    "id": "facility:bitternut-tree",
+    "kind": "facility",
+    "name": "Bitternut Tree",
+    "slug": "bitternut-tree"
+  },
+  {
+    "data": {
+      "recipe_count": 10,
+      "skills": [
+        "Smithing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Blast Furnace",
+      "source_url": "https://oldschool.runescape.wiki/w/Blast_Furnace"
+    },
+    "id": "facility:blast-furnace",
+    "kind": "facility",
+    "name": "Blast Furnace",
+    "slug": "blast-furnace"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Woodcutting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Blisterwood tree",
+      "source_url": "https://oldschool.runescape.wiki/w/Blisterwood_tree"
+    },
+    "id": "facility:blisterwood-tree",
+    "kind": "facility",
+    "name": "Blisterwood tree",
+    "slug": "blisterwood-tree"
+  },
+  {
+    "data": {
+      "recipe_count": 11,
+      "skills": [
+        "Runecraft"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Blood Altar",
+      "source_url": "https://oldschool.runescape.wiki/w/Blood_Altar"
+    },
+    "id": "facility:blood-altar",
+    "kind": "facility",
+    "name": "Blood Altar",
+    "slug": "blood-altar"
+  },
+  {
+    "data": {
+      "recipe_count": 7,
+      "skills": [
+        "Runecraft"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Blood Altar (Kourend)",
+      "source_url": "https://oldschool.runescape.wiki/w/Blood_Altar_(Kourend)"
+    },
+    "id": "facility:blood-altar-kourend",
+    "kind": "facility",
+    "name": "Blood Altar (Kourend)",
+    "slug": "blood-altar-kourend"
+  },
+  {
+    "data": {
+      "recipe_count": 2,
+      "skills": [
+        "Fishing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Bluefin shoal",
+      "source_url": "https://oldschool.runescape.wiki/w/Bluefin_shoal"
+    },
+    "id": "facility:bluefin-shoal",
+    "kind": "facility",
+    "name": "Bluefin shoal",
+    "slug": "bluefin-shoal"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Blurite rocks",
+      "source_url": "https://oldschool.runescape.wiki/w/Blurite_rocks"
+    },
+    "id": "facility:blurite-rocks",
+    "kind": "facility",
+    "name": "Blurite rocks",
+    "slug": "blurite-rocks"
+  },
+  {
+    "data": {
+      "recipe_count": 110,
+      "skills": [
+        "Construction",
+        "Sailing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Boat schematics",
+      "source_url": "https://oldschool.runescape.wiki/w/Boat_schematics"
+    },
+    "id": "facility:boat-schematics",
+    "kind": "facility",
+    "name": "Boat schematics",
+    "slug": "boat-schematics"
+  },
+  {
+    "data": {
+      "recipe_count": 8,
+      "skills": [
+        "Runecraft"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Body Altar",
+      "source_url": "https://oldschool.runescape.wiki/w/Body_Altar"
+    },
+    "id": "facility:body-altar",
+    "kind": "facility",
+    "name": "Body Altar",
+    "slug": "body-altar"
+  },
+  {
+    "data": {
+      "recipe_count": 35,
+      "source_token": "Bucket:recipe.uses_facility=Bone grinder",
+      "source_url": "https://oldschool.runescape.wiki/w/Bone_grinder"
+    },
+    "id": "facility:bone-grinder",
+    "kind": "facility",
+    "name": "Bone grinder",
+    "slug": "bone-grinder"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Runecraft"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Book of Earthen Might",
+      "source_url": "https://oldschool.runescape.wiki/w/Book_of_Earthen_Might"
+    },
+    "id": "facility:book-of-earthen-might",
+    "kind": "facility",
+    "name": "Book of Earthen Might",
+    "slug": "book-of-earthen-might"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Runecraft"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Book of Eternal Flame",
+      "source_url": "https://oldschool.runescape.wiki/w/Book_of_Eternal_Flame"
+    },
+    "id": "facility:book-of-eternal-flame",
+    "kind": "facility",
+    "name": "Book of Eternal Flame",
+    "slug": "book-of-eternal-flame"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Runecraft"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Book of Storms",
+      "source_url": "https://oldschool.runescape.wiki/w/Book_of_Storms"
+    },
+    "id": "facility:book-of-storms",
+    "kind": "facility",
+    "name": "Book of Storms",
+    "slug": "book-of-storms"
+  },
+  {
+    "data": {
+      "recipe_count": 2,
+      "source_token": "Bucket:recipe.uses_facility=Bounty supply crate",
+      "source_url": "https://oldschool.runescape.wiki/w/Bounty_supply_crate"
+    },
+    "id": "facility:bounty-supply-crate",
+    "kind": "facility",
+    "name": "Bounty supply crate",
+    "slug": "bounty-supply-crate"
+  },
+  {
+    "data": {
+      "recipe_count": 2,
+      "skills": [
+        "Firemaking"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Brazier#Burning",
+      "source_url": "https://oldschool.runescape.wiki/w/Brazier"
+    },
+    "id": "facility:brazier-burning",
+    "kind": "facility",
+    "name": "Brazier#Burning",
+    "slug": "brazier-burning"
+  },
+  {
+    "data": {
+      "recipe_count": 40,
+      "skills": [
+        "Cooking"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Brewery",
+      "source_url": "https://oldschool.runescape.wiki/w/Brewing"
+    },
+    "id": "facility:brewery",
+    "kind": "facility",
+    "name": "Brewery",
+    "slug": "brewery"
+  },
+  {
+    "data": {
+      "recipe_count": 7,
+      "skills": [
+        "Fishing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Bubbles",
+      "source_url": "https://oldschool.runescape.wiki/w/Bubbles"
+    },
+    "id": "facility:bubbles",
+    "kind": "facility",
+    "name": "Bubbles",
+    "slug": "bubbles"
+  },
+  {
+    "data": {
+      "recipe_count": 2,
+      "source_token": "Bucket:recipe.uses_facility=Bunsen burner",
+      "source_url": "https://oldschool.runescape.wiki/w/Bunsen_burner"
+    },
+    "id": "facility:bunsen-burner",
+    "kind": "facility",
+    "name": "Bunsen burner",
+    "slug": "bunsen-burner"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Woodcutting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Camphor tree",
+      "source_url": "https://oldschool.runescape.wiki/w/Camphor_tree"
+    },
+    "id": "facility:camphor-tree",
+    "kind": "facility",
+    "name": "Camphor tree",
+    "slug": "camphor-tree"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Runecraft"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Catalytic runic altar",
+      "source_url": "https://oldschool.runescape.wiki/w/Runic_altar"
+    },
+    "id": "facility:catalytic-runic-altar",
+    "kind": "facility",
+    "name": "Catalytic runic altar",
+    "slug": "catalytic-runic-altar"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "source_token": "Bucket:recipe.uses_facility=Cauldron (Goblin Kitchen)",
+      "source_url": "https://oldschool.runescape.wiki/w/Cauldron_(Goblin_Kitchen)"
+    },
+    "id": "facility:cauldron-goblin-kitchen",
+    "kind": "facility",
+    "name": "Cauldron (Goblin Kitchen)",
+    "slug": "cauldron-goblin-kitchen"
+  },
+  {
+    "data": {
+      "recipe_count": 4,
+      "source_token": "Bucket:recipe.uses_facility=Cauldron of Thunder",
+      "source_url": "https://oldschool.runescape.wiki/w/Cauldron_of_Thunder"
+    },
+    "id": "facility:cauldron-of-thunder",
+    "kind": "facility",
+    "name": "Cauldron of Thunder",
+    "slug": "cauldron-of-thunder"
+  },
+  {
+    "data": {
+      "recipe_count": 7,
+      "skills": [
+        "Runecraft"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Chaos Altar",
+      "source_url": "https://oldschool.runescape.wiki/w/Chaos_Altar"
+    },
+    "id": "facility:chaos-altar",
+    "kind": "facility",
+    "name": "Chaos Altar",
+    "slug": "chaos-altar"
+  },
+  {
+    "data": {
+      "recipe_count": 39,
+      "skills": [
+        "Prayer"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Chaos altar (Wilderness)",
+      "source_url": "https://oldschool.runescape.wiki/w/Chaos_Temple_(hut)"
+    },
+    "id": "facility:chaos-altar-wilderness",
+    "kind": "facility",
+    "name": "Chaos altar (Wilderness)",
+    "slug": "chaos-altar-wilderness"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "source_token": "Bucket:recipe.uses_facility=Charcoal furnace",
+      "source_url": "https://oldschool.runescape.wiki/w/Charcoal_furnace"
+    },
+    "id": "facility:charcoal-furnace",
+    "kind": "facility",
+    "name": "Charcoal furnace",
+    "slug": "charcoal-furnace"
+  },
+  {
+    "data": {
+      "recipe_count": 5,
+      "skills": [
+        "Cooking"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Clay oven",
+      "source_url": "https://oldschool.runescape.wiki/w/Clay_oven"
+    },
+    "id": "facility:clay-oven",
+    "kind": "facility",
+    "name": "Clay oven",
+    "slug": "clay-oven"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Clay rocks",
+      "source_url": "https://oldschool.runescape.wiki/w/Clay_rocks"
+    },
+    "id": "facility:clay-rocks",
+    "kind": "facility",
+    "name": "Clay rocks",
+    "slug": "clay-rocks"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Coal rocks",
+      "source_url": "https://oldschool.runescape.wiki/w/Coal_rocks"
+    },
+    "id": "facility:coal-rocks",
+    "kind": "facility",
+    "name": "Coal rocks",
+    "slug": "coal-rocks"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "source_token": "Bucket:recipe.uses_facility=Coal Tar",
+      "source_url": "https://oldschool.runescape.wiki/w/Coal_Tar"
+    },
+    "id": "facility:coal-tar",
+    "kind": "facility",
+    "name": "Coal Tar",
+    "slug": "coal-tar"
+  },
+  {
+    "data": {
+      "recipe_count": 6,
+      "skills": [
+        "Farming"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Compost Bin",
+      "source_url": "https://oldschool.runescape.wiki/w/Compost_Bin"
+    },
+    "id": "facility:compost-bin",
+    "kind": "facility",
+    "name": "Compost Bin",
+    "slug": "compost-bin"
+  },
+  {
+    "data": {
+      "recipe_count": 18,
+      "skills": [
+        "Herblore"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Conveyor belt (Mastering Mixology)",
+      "source_url": "https://oldschool.runescape.wiki/w/Conveyor_belt_(Mastering_Mixology)"
+    },
+    "id": "facility:conveyor-belt-mastering-mixology",
+    "kind": "facility",
+    "name": "Conveyor belt (Mastering Mixology)",
+    "slug": "conveyor-belt-mastering-mixology"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Construction"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Cooking pot space",
+      "source_url": "https://oldschool.runescape.wiki/w/Cooking_pot_(amenity)"
+    },
+    "id": "facility:cooking-pot-space",
+    "kind": "facility",
+    "name": "Cooking pot space",
+    "slug": "cooking-pot-space"
+  },
+  {
+    "data": {
+      "recipe_count": 205,
+      "skills": [
+        "Cooking",
+        "Firemaking"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Cooking range",
+      "source_url": "https://oldschool.runescape.wiki/w/Range"
+    },
+    "id": "facility:cooking-range",
+    "kind": "facility",
+    "name": "Cooking range",
+    "slug": "cooking-range"
+  },
+  {
+    "data": {
+      "recipe_count": 3,
+      "source_token": "Bucket:recipe.uses_facility=Cooking range (2018 Easter event)",
+      "source_url": "https://oldschool.runescape.wiki/w/Cooking_range_(2018_Easter_event)"
+    },
+    "id": "facility:cooking-range-2018-easter-event",
+    "kind": "facility",
+    "name": "Cooking range (2018 Easter event)",
+    "slug": "cooking-range-2018-easter-event"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "source_token": "Bucket:recipe.uses_facility=Cooking range (The Fremennik Trials)",
+      "source_url": "https://oldschool.runescape.wiki/w/Cooking_range_(The_Fremennik_Trials)"
+    },
+    "id": "facility:cooking-range-the-fremennik-trials",
+    "kind": "facility",
+    "name": "Cooking range (The Fremennik Trials)",
+    "slug": "cooking-range-the-fremennik-trials"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Copper rocks",
+      "source_url": "https://oldschool.runescape.wiki/w/Copper_rocks"
+    },
+    "id": "facility:copper-rocks",
+    "kind": "facility",
+    "name": "Copper rocks",
+    "slug": "copper-rocks"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Corrupt Deposit",
+      "source_url": "https://oldschool.runescape.wiki/w/Corrupt_Deposit"
+    },
+    "id": "facility:corrupt-deposit",
+    "kind": "facility",
+    "name": "Corrupt Deposit",
+    "slug": "corrupt-deposit"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Woodcutting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Corrupt Phren Roots",
+      "source_url": "https://oldschool.runescape.wiki/w/Corrupt_Phren_Roots"
+    },
+    "id": "facility:corrupt-phren-roots",
+    "kind": "facility",
+    "name": "Corrupt Phren Roots",
+    "slug": "corrupt-phren-roots"
+  },
+  {
+    "data": {
+      "recipe_count": 10,
+      "skills": [
+        "Runecraft"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Cosmic Altar",
+      "source_url": "https://oldschool.runescape.wiki/w/Cosmic_Altar"
+    },
+    "id": "facility:cosmic-altar",
+    "kind": "facility",
+    "name": "Cosmic Altar",
+    "slug": "cosmic-altar"
+  },
+  {
+    "data": {
+      "recipe_count": 7,
+      "skills": [
+        "Crafting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Crafting table 1",
+      "source_url": "https://oldschool.runescape.wiki/w/Crafting_table_1"
+    },
+    "id": "facility:crafting-table-1",
+    "kind": "facility",
+    "name": "Crafting table 1",
+    "slug": "crafting-table-1"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Crafting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Crafting table 2",
+      "source_url": "https://oldschool.runescape.wiki/w/Crafting_table_2"
+    },
+    "id": "facility:crafting-table-2",
+    "kind": "facility",
+    "name": "Crafting table 2",
+    "slug": "crafting-table-2"
+  },
+  {
+    "data": {
+      "recipe_count": 3,
+      "skills": [
+        "Crafting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Crafting table 3",
+      "source_url": "https://oldschool.runescape.wiki/w/Crafting_table_3"
+    },
+    "id": "facility:crafting-table-3",
+    "kind": "facility",
+    "name": "Crafting table 3",
+    "slug": "crafting-table-3"
+  },
+  {
+    "data": {
+      "recipe_count": 4,
+      "skills": [
+        "Crafting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Crafting table 4",
+      "source_url": "https://oldschool.runescape.wiki/w/Crafting_table_4"
+    },
+    "id": "facility:crafting-table-4",
+    "kind": "facility",
+    "name": "Crafting table 4",
+    "slug": "crafting-table-4"
+  },
+  {
+    "data": {
+      "recipe_count": 36,
+      "source_token": "Bucket:recipe.uses_facility=Crystal ball space",
+      "source_url": "https://oldschool.runescape.wiki/w/Crystal_ball_space"
+    },
+    "id": "facility:crystal-ball-space",
+    "kind": "facility",
+    "name": "Crystal ball space",
+    "slug": "crystal-ball-space"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Crystal Deposit",
+      "source_url": "https://oldschool.runescape.wiki/w/Crystal_Deposit"
+    },
+    "id": "facility:crystal-deposit",
+    "kind": "facility",
+    "name": "Crystal Deposit",
+    "slug": "crystal-deposit"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Daeyalt Essence (rock)",
+      "source_url": "https://oldschool.runescape.wiki/w/Daeyalt_Essence_(rock)"
+    },
+    "id": "facility:daeyalt-essence-rock",
+    "kind": "facility",
+    "name": "Daeyalt Essence (rock)",
+    "slug": "daeyalt-essence-rock"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Daeyalt rocks",
+      "source_url": "https://oldschool.runescape.wiki/w/Daeyalt_rocks"
+    },
+    "id": "facility:daeyalt-rocks",
+    "kind": "facility",
+    "name": "Daeyalt rocks",
+    "slug": "daeyalt-rocks"
+  },
+  {
+    "data": {
+      "recipe_count": 7,
+      "skills": [
+        "Cooking"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Dairy churn",
+      "source_url": "https://oldschool.runescape.wiki/w/Dairy_churn"
+    },
+    "id": "facility:dairy-churn",
+    "kind": "facility",
+    "name": "Dairy churn",
+    "slug": "dairy-churn"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "source_token": "Bucket:recipe.uses_facility=Dairy cow",
+      "source_url": "https://oldschool.runescape.wiki/w/Dairy_cow"
+    },
+    "id": "facility:dairy-cow",
+    "kind": "facility",
+    "name": "Dairy cow",
+    "slug": "dairy-cow"
+  },
+  {
+    "data": {
+      "recipe_count": 23,
+      "skills": [
+        "Prayer",
+        "Runecraft"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Dark Altar",
+      "source_url": "https://oldschool.runescape.wiki/w/Dark_Altar"
+    },
+    "id": "facility:dark-altar",
+    "kind": "facility",
+    "name": "Dark Altar",
+    "slug": "dark-altar"
+  },
+  {
+    "data": {
+      "recipe_count": 6,
+      "skills": [
+        "Runecraft"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Death Altar",
+      "source_url": "https://oldschool.runescape.wiki/w/Death_Altar"
+    },
+    "id": "facility:death-altar",
+    "kind": "facility",
+    "name": "Death Altar",
+    "slug": "death-altar"
+  },
+  {
+    "data": {
+      "recipe_count": 2,
+      "skills": [
+        "Magic"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Demon lectern",
+      "source_url": "https://oldschool.runescape.wiki/w/Demon_lectern"
+    },
+    "id": "facility:demon-lectern",
+    "kind": "facility",
+    "name": "Demon lectern",
+    "slug": "demon-lectern"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Woodcutting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Dense Jungle",
+      "source_url": "https://oldschool.runescape.wiki/w/Dense_Jungle"
+    },
+    "id": "facility:dense-jungle",
+    "kind": "facility",
+    "name": "Dense Jungle",
+    "slug": "dense-jungle"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Smithing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Doric's Whetstone",
+      "source_url": "https://oldschool.runescape.wiki/w/Doric's_Whetstone"
+    },
+    "id": "facility:dorics-whetstone",
+    "kind": "facility",
+    "name": "Doric's Whetstone",
+    "slug": "dorics-whetstone"
+  },
+  {
+    "data": {
+      "recipe_count": 6,
+      "skills": [
+        "Smithing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Dragon forge",
+      "source_url": "https://oldschool.runescape.wiki/w/Dragon_forge"
+    },
+    "id": "facility:dragon-forge",
+    "kind": "facility",
+    "name": "Dragon forge",
+    "slug": "dragon-forge"
+  },
+  {
+    "data": {
+      "recipe_count": 2,
+      "skills": [
+        "Magic"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Eagle lectern",
+      "source_url": "https://oldschool.runescape.wiki/w/Eagle_lectern"
+    },
+    "id": "facility:eagle-lectern",
+    "kind": "facility",
+    "name": "Eagle lectern",
+    "slug": "eagle-lectern"
+  },
+  {
+    "data": {
+      "recipe_count": 22,
+      "skills": [
+        "Crafting",
+        "Runecraft"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Earth Altar",
+      "source_url": "https://oldschool.runescape.wiki/w/Earth_Altar"
+    },
+    "id": "facility:earth-altar",
+    "kind": "facility",
+    "name": "Earth Altar",
+    "slug": "earth-altar"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Easter egg rock",
+      "source_url": "https://oldschool.runescape.wiki/w/Easter_egg_rock"
+    },
+    "id": "facility:easter-egg-rock",
+    "kind": "facility",
+    "name": "Easter egg rock",
+    "slug": "easter-egg-rock"
+  },
+  {
+    "data": {
+      "recipe_count": 70,
+      "skills": [
+        "Prayer"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Ectofuntus",
+      "source_url": "https://oldschool.runescape.wiki/w/Ectofuntus"
+    },
+    "id": "facility:ectofuntus",
+    "kind": "facility",
+    "name": "Ectofuntus",
+    "slug": "ectofuntus"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Runecraft"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Elemental runic altar",
+      "source_url": "https://oldschool.runescape.wiki/w/Runic_altar"
+    },
+    "id": "facility:elemental-runic-altar",
+    "kind": "facility",
+    "name": "Elemental runic altar",
+    "slug": "elemental-runic-altar"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Essence orifice",
+      "source_url": "https://oldschool.runescape.wiki/w/Essence_orifice"
+    },
+    "id": "facility:essence-orifice",
+    "kind": "facility",
+    "name": "Essence orifice",
+    "slug": "essence-orifice"
+  },
+  {
+    "data": {
+      "recipe_count": 22,
+      "skills": [
+        "Prayer"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Exposed altar",
+      "source_url": "https://oldschool.runescape.wiki/w/Exposed_altar"
+    },
+    "id": "facility:exposed-altar",
+    "kind": "facility",
+    "name": "Exposed altar",
+    "slug": "exposed-altar"
+  },
+  {
+    "data": {
+      "recipe_count": 4,
+      "source_token": "Bucket:recipe.uses_facility=Extract orifice",
+      "source_url": "https://oldschool.runescape.wiki/w/Extract_orifice"
+    },
+    "id": "facility:extract-orifice",
+    "kind": "facility",
+    "name": "Extract orifice",
+    "slug": "extract-orifice"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Fallen guardian",
+      "source_url": "https://oldschool.runescape.wiki/w/Fallen_guardian"
+    },
+    "id": "facility:fallen-guardian",
+    "kind": "facility",
+    "name": "Fallen guardian",
+    "slug": "fallen-guardian"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Herblore"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Fermentation Vat",
+      "source_url": "https://oldschool.runescape.wiki/w/Fermentation_Vat"
+    },
+    "id": "facility:fermentation-vat",
+    "kind": "facility",
+    "name": "Fermentation Vat",
+    "slug": "fermentation-vat"
+  },
+  {
+    "data": {
+      "recipe_count": 31,
+      "skills": [
+        "Cooking",
+        "Crafting",
+        "Firemaking"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Fire",
+      "source_url": "https://oldschool.runescape.wiki/w/Fire"
+    },
+    "id": "facility:fire",
+    "kind": "facility",
+    "name": "Fire",
+    "slug": "fire"
+  },
+  {
+    "data": {
+      "recipe_count": 24,
+      "skills": [
+        "Crafting",
+        "Runecraft"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Fire Altar",
+      "source_url": "https://oldschool.runescape.wiki/w/Fire_Altar"
+    },
+    "id": "facility:fire-altar",
+    "kind": "facility",
+    "name": "Fire Altar",
+    "slug": "fire-altar"
+  },
+  {
+    "data": {
+      "recipe_count": 8,
+      "skills": [
+        "Herblore"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Fire altar (Flamtaer)",
+      "source_url": "https://oldschool.runescape.wiki/w/Fire_altar_(Flamtaer)"
+    },
+    "id": "facility:fire-altar-flamtaer",
+    "kind": "facility",
+    "name": "Fire altar (Flamtaer)",
+    "slug": "fire-altar-flamtaer"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Fishing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Fishing spot (ScapeRune)",
+      "source_url": "https://oldschool.runescape.wiki/w/Fishing_spot_(ScapeRune)"
+    },
+    "id": "facility:fishing-spot-scaperune",
+    "kind": "facility",
+    "name": "Fishing spot (ScapeRune)",
+    "slug": "fishing-spot-scaperune"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Fishing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Fishing spot (Streambound Cavern)",
+      "source_url": "https://oldschool.runescape.wiki/w/Fishing_spot_(Streambound_Cavern)"
+    },
+    "id": "facility:fishing-spot-streambound-cavern",
+    "kind": "facility",
+    "name": "Fishing spot (Streambound Cavern)",
+    "slug": "fishing-spot-streambound-cavern"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Fishing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Fishing spot (Swan Song)",
+      "source_url": "https://oldschool.runescape.wiki/w/Fishing_spot_(Swan_Song)"
+    },
+    "id": "facility:fishing-spot-swan-song",
+    "kind": "facility",
+    "name": "Fishing spot (Swan Song)",
+    "slug": "fishing-spot-swan-song"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Fishing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Fishing Spot (The Gauntlet)",
+      "source_url": "https://oldschool.runescape.wiki/w/Fishing_Spot_(The_Gauntlet)"
+    },
+    "id": "facility:fishing-spot-the-gauntlet",
+    "kind": "facility",
+    "name": "Fishing Spot (The Gauntlet)",
+    "slug": "fishing-spot-the-gauntlet"
+  },
+  {
+    "data": {
+      "recipe_count": 16,
+      "skills": [
+        "Crafting",
+        "Firemaking"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Forester's Campfire",
+      "source_url": "https://oldschool.runescape.wiki/w/Forester's_Campfire"
+    },
+    "id": "facility:foresters-campfire",
+    "kind": "facility",
+    "name": "Forester's Campfire",
+    "slug": "foresters-campfire"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "source_token": "Bucket:recipe.uses_facility=Fountain (wine)",
+      "source_url": "https://oldschool.runescape.wiki/w/Fountain_(wine)"
+    },
+    "id": "facility:fountain-wine",
+    "kind": "facility",
+    "name": "Fountain (wine)",
+    "slug": "fountain-wine"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "source_token": "Bucket:recipe.uses_facility=Fractionalising still",
+      "source_url": "https://oldschool.runescape.wiki/w/Fractionalising_still"
+    },
+    "id": "facility:fractionalising-still",
+    "kind": "facility",
+    "name": "Fractionalising still",
+    "slug": "fractionalising-still"
+  },
+  {
+    "data": {
+      "recipe_count": 13,
+      "skills": [
+        "Crafting",
+        "Firemaking"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Funeral pyre (Barbarian)",
+      "source_url": "https://oldschool.runescape.wiki/w/Funeral_pyre_(Barbarian)"
+    },
+    "id": "facility:funeral-pyre-barbarian",
+    "kind": "facility",
+    "name": "Funeral pyre (Barbarian)",
+    "slug": "funeral-pyre-barbarian"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Crafting",
+        "Firemaking"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Funeral_pyre_(Barbarian)",
+      "source_url": "https://oldschool.runescape.wiki/w/Funeral_pyre_(Barbarian)"
+    },
+    "id": "facility:funeral-pyre-barbarian-2",
+    "kind": "facility",
+    "name": "Funeral_pyre_(Barbarian)",
+    "slug": "funeral-pyre-barbarian-2"
+  },
+  {
+    "data": {
+      "recipe_count": 98,
+      "skills": [
+        "Firemaking",
+        "Prayer"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Funeral Pyre (Mort'ton)",
+      "source_url": "https://oldschool.runescape.wiki/w/Shades_of_Mort'ton_(minigame)"
+    },
+    "id": "facility:funeral-pyre-mortton",
+    "kind": "facility",
+    "name": "Funeral Pyre (Mort'ton)",
+    "slug": "funeral-pyre-mortton"
+  },
+  {
+    "data": {
+      "recipe_count": 93,
+      "skills": [
+        "Cooking",
+        "Crafting",
+        "Magic",
+        "Smithing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Furnace",
+      "source_url": "https://oldschool.runescape.wiki/w/Furnace"
+    },
+    "id": "facility:furnace",
+    "kind": "facility",
+    "name": "Furnace",
+    "slug": "furnace"
+  },
+  {
+    "data": {
+      "recipe_count": 3,
+      "skills": [
+        "Smithing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Furnace (Chasm of Fire)",
+      "source_url": "https://oldschool.runescape.wiki/w/Furnace_(Chasm_of_Fire)"
+    },
+    "id": "facility:furnace-chasm-of-fire",
+    "kind": "facility",
+    "name": "Furnace (Chasm of Fire)",
+    "slug": "furnace-chasm-of-fire"
+  },
+  {
+    "data": {
+      "recipe_count": 2,
+      "skills": [
+        "Smithing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Furnace (Elemental Workshop)",
+      "source_url": "https://oldschool.runescape.wiki/w/Furnace_(Elemental_Workshop)"
+    },
+    "id": "facility:furnace-elemental-workshop",
+    "kind": "facility",
+    "name": "Furnace (Elemental Workshop)",
+    "slug": "furnace-elemental-workshop"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Construction"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Furnace space",
+      "source_url": "https://oldschool.runescape.wiki/w/Furnace_(amenity)"
+    },
+    "id": "facility:furnace-space",
+    "kind": "facility",
+    "name": "Furnace space",
+    "slug": "furnace-space"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Smithing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Furnace (Zalcano)",
+      "source_url": "https://oldschool.runescape.wiki/w/Furnace_(Zalcano)"
+    },
+    "id": "facility:furnace-zalcano",
+    "kind": "facility",
+    "name": "Furnace (Zalcano)",
+    "slug": "furnace-zalcano"
+  },
+  {
+    "data": {
+      "recipe_count": 2,
+      "skills": [
+        "Fishing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Giant krill shoal",
+      "source_url": "https://oldschool.runescape.wiki/w/Giant_krill_shoal"
+    },
+    "id": "facility:giant-krill-shoal",
+    "kind": "facility",
+    "name": "Giant krill shoal",
+    "slug": "giant-krill-shoal"
+  },
+  {
+    "data": {
+      "recipe_count": 39,
+      "skills": [
+        "Prayer"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Gilded altar",
+      "source_url": "https://oldschool.runescape.wiki/w/Gilded_altar"
+    },
+    "id": "facility:gilded-altar",
+    "kind": "facility",
+    "name": "Gilded altar",
+    "slug": "gilded-altar"
+  },
+  {
+    "data": {
+      "recipe_count": 2,
+      "source_token": "Bucket:recipe.uses_facility=Gingerbread Gnome Machine",
+      "source_url": "https://oldschool.runescape.wiki/w/Gingerbread_Gnome_Machine"
+    },
+    "id": "facility:gingerbread-gnome-machine",
+    "kind": "facility",
+    "name": "Gingerbread Gnome Machine",
+    "slug": "gingerbread-gnome-machine"
+  },
+  {
+    "data": {
+      "recipe_count": 8,
+      "skills": [
+        "Fishing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Glistening shoal",
+      "source_url": "https://oldschool.runescape.wiki/w/Glistening_shoal"
+    },
+    "id": "facility:glistening-shoal",
+    "kind": "facility",
+    "name": "Glistening shoal",
+    "slug": "glistening-shoal"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Gold rocks",
+      "source_url": "https://oldschool.runescape.wiki/w/Gold_rocks"
+    },
+    "id": "facility:gold-rocks",
+    "kind": "facility",
+    "name": "Gold rocks",
+    "slug": "gold-rocks"
+  },
+  {
+    "data": {
+      "recipe_count": 3,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Granite rocks",
+      "source_url": "https://oldschool.runescape.wiki/w/Granite_rocks"
+    },
+    "id": "facility:granite-rocks",
+    "kind": "facility",
+    "name": "Granite rocks",
+    "slug": "granite-rocks"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Guardian parts",
+      "source_url": "https://oldschool.runescape.wiki/w/Guardian_parts"
+    },
+    "id": "facility:guardian-parts",
+    "kind": "facility",
+    "name": "Guardian parts",
+    "slug": "guardian-parts"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Guardian remains",
+      "source_url": "https://oldschool.runescape.wiki/w/Guardian_remains"
+    },
+    "id": "facility:guardian-remains",
+    "kind": "facility",
+    "name": "Guardian remains",
+    "slug": "guardian-remains"
+  },
+  {
+    "data": {
+      "recipe_count": 2,
+      "skills": [
+        "Fishing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Haddock shoal",
+      "source_url": "https://oldschool.runescape.wiki/w/Haddock_shoal"
+    },
+    "id": "facility:haddock-shoal",
+    "kind": "facility",
+    "name": "Haddock shoal",
+    "slug": "haddock-shoal"
+  },
+  {
+    "data": {
+      "recipe_count": 2,
+      "skills": [
+        "Fishing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Halibut shoal",
+      "source_url": "https://oldschool.runescape.wiki/w/Halibut_shoal"
+    },
+    "id": "facility:halibut-shoal",
+    "kind": "facility",
+    "name": "Halibut shoal",
+    "slug": "halibut-shoal"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "source_token": "Bucket:recipe.uses_facility=Hay bale",
+      "source_url": "https://oldschool.runescape.wiki/w/Hay_bale"
+    },
+    "id": "facility:hay-bale",
+    "kind": "facility",
+    "name": "Hay bale",
+    "slug": "hay-bale"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "source_token": "Bucket:recipe.uses_facility=Haystack",
+      "source_url": "https://oldschool.runescape.wiki/w/Haystack"
+    },
+    "id": "facility:haystack",
+    "kind": "facility",
+    "name": "Haystack",
+    "slug": "haystack"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Construction"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Hole (Crab trapping)",
+      "source_url": "https://oldschool.runescape.wiki/w/Hole_(Crab_trapping)"
+    },
+    "id": "facility:hole-crab-trapping",
+    "kind": "facility",
+    "name": "Hole (Crab trapping)",
+    "slug": "hole-crab-trapping"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Woodcutting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Hollow tree",
+      "source_url": "https://oldschool.runescape.wiki/w/Hollow_tree"
+    },
+    "id": "facility:hollow-tree",
+    "kind": "facility",
+    "name": "Hollow tree",
+    "slug": "hollow-tree"
+  },
+  {
+    "data": {
+      "recipe_count": 6,
+      "skills": [
+        "Cooking",
+        "Crafting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Hopper (Trouble Brewing)",
+      "source_url": "https://oldschool.runescape.wiki/w/Hopper_(Trouble_Brewing)"
+    },
+    "id": "facility:hopper-trouble-brewing",
+    "kind": "facility",
+    "name": "Hopper (Trouble Brewing)",
+    "slug": "hopper-trouble-brewing"
+  },
+  {
+    "data": {
+      "recipe_count": 2,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Huge guardian remains",
+      "source_url": "https://oldschool.runescape.wiki/w/Huge_guardian_remains"
+    },
+    "id": "facility:huge-guardian-remains",
+    "kind": "facility",
+    "name": "Huge guardian remains",
+    "slug": "huge-guardian-remains"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Iron rocks",
+      "source_url": "https://oldschool.runescape.wiki/w/Iron_rocks"
+    },
+    "id": "facility:iron-rocks",
+    "kind": "facility",
+    "name": "Iron rocks",
+    "slug": "iron-rocks"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Woodcutting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Ironwood tree",
+      "source_url": "https://oldschool.runescape.wiki/w/Ironwood_tree"
+    },
+    "id": "facility:ironwood-tree",
+    "kind": "facility",
+    "name": "Ironwood tree",
+    "slug": "ironwood-tree"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Woodcutting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Jatoba tree",
+      "source_url": "https://oldschool.runescape.wiki/w/Jatoba_tree"
+    },
+    "id": "facility:jatoba-tree",
+    "kind": "facility",
+    "name": "Jatoba tree",
+    "slug": "jatoba-tree"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "source_token": "Bucket:recipe.uses_facility=Juice press",
+      "source_url": "https://oldschool.runescape.wiki/w/Juice_press"
+    },
+    "id": "facility:juice-press",
+    "kind": "facility",
+    "name": "Juice press",
+    "slug": "juice-press"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Crafting",
+        "Firemaking"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Lamp (Dorgesh-Kaan)#Broken",
+      "source_url": "https://oldschool.runescape.wiki/w/Lamp_(Dorgesh-Kaan)"
+    },
+    "id": "facility:lamp-dorgesh-kaan-broken",
+    "kind": "facility",
+    "name": "Lamp (Dorgesh-Kaan)#Broken",
+    "slug": "lamp-dorgesh-kaan-broken"
+  },
+  {
+    "data": {
+      "recipe_count": 2,
+      "source_token": "Bucket:recipe.uses_facility=Lamp oil still",
+      "source_url": "https://oldschool.runescape.wiki/w/Lamp_oil_still"
+    },
+    "id": "facility:lamp-oil-still",
+    "kind": "facility",
+    "name": "Lamp oil still",
+    "slug": "lamp-oil-still"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Woodcutting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Larch tree",
+      "source_url": "https://oldschool.runescape.wiki/w/Larch_tree"
+    },
+    "id": "facility:larch-tree",
+    "kind": "facility",
+    "name": "Larch tree",
+    "slug": "larch-tree"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Large guardian remains",
+      "source_url": "https://oldschool.runescape.wiki/w/Large_guardian_remains"
+    },
+    "id": "facility:large-guardian-remains",
+    "kind": "facility",
+    "name": "Large guardian remains",
+    "slug": "large-guardian-remains"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "source_token": "Bucket:recipe.uses_facility=Lava crater",
+      "source_url": "https://oldschool.runescape.wiki/w/Lava_crater"
+    },
+    "id": "facility:lava-crater",
+    "kind": "facility",
+    "name": "Lava crater",
+    "slug": "lava-crater"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "source_token": "Bucket:recipe.uses_facility=Lava trough",
+      "source_url": "https://oldschool.runescape.wiki/w/Lava_trough"
+    },
+    "id": "facility:lava-trough",
+    "kind": "facility",
+    "name": "Lava trough",
+    "slug": "lava-trough"
+  },
+  {
+    "data": {
+      "recipe_count": 6,
+      "skills": [
+        "Runecraft"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Law Altar",
+      "source_url": "https://oldschool.runescape.wiki/w/Law_Altar"
+    },
+    "id": "facility:law-altar",
+    "kind": "facility",
+    "name": "Law Altar",
+    "slug": "law-altar"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Lead rocks",
+      "source_url": "https://oldschool.runescape.wiki/w/Lead_rocks"
+    },
+    "id": "facility:lead-rocks",
+    "kind": "facility",
+    "name": "Lead rocks",
+    "slug": "lead-rocks"
+  },
+  {
+    "data": {
+      "recipe_count": 8,
+      "skills": [
+        "Magic"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Lectern (Ancient)",
+      "source_url": "https://oldschool.runescape.wiki/w/Lectern_(Ancient)"
+    },
+    "id": "facility:lectern-ancient",
+    "kind": "facility",
+    "name": "Lectern (Ancient)",
+    "slug": "lectern-ancient"
+  },
+  {
+    "data": {
+      "recipe_count": 11,
+      "skills": [
+        "Magic"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Lectern (Arceuus)",
+      "source_url": "https://oldschool.runescape.wiki/w/Lectern_(Arceuus)"
+    },
+    "id": "facility:lectern-arceuus",
+    "kind": "facility",
+    "name": "Lectern (Arceuus)",
+    "slug": "lectern-arceuus"
+  },
+  {
+    "data": {
+      "recipe_count": 8,
+      "skills": [
+        "Magic"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Lectern (Lunar)",
+      "source_url": "https://oldschool.runescape.wiki/w/Lectern_(Lunar)"
+    },
+    "id": "facility:lectern-lunar",
+    "kind": "facility",
+    "name": "Lectern (Lunar)",
+    "slug": "lectern-lunar"
+  },
+  {
+    "data": {
+      "recipe_count": 23,
+      "skills": [
+        "Prayer"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Libation bowl",
+      "source_url": "https://oldschool.runescape.wiki/w/Libation_bowl"
+    },
+    "id": "facility:libation-bowl",
+    "kind": "facility",
+    "name": "Libation bowl",
+    "slug": "libation-bowl"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Woodcutting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Light Jungle",
+      "source_url": "https://oldschool.runescape.wiki/w/Light_Jungle"
+    },
+    "id": "facility:light-jungle",
+    "kind": "facility",
+    "name": "Light Jungle",
+    "slug": "light-jungle"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Limestone rock",
+      "source_url": "https://oldschool.runescape.wiki/w/Limestone_rock"
+    },
+    "id": "facility:limestone-rock",
+    "kind": "facility",
+    "name": "Limestone rock",
+    "slug": "limestone-rock"
+  },
+  {
+    "data": {
+      "recipe_count": 7,
+      "skills": [
+        "Crafting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Loom",
+      "source_url": "https://oldschool.runescape.wiki/w/Loom"
+    },
+    "id": "facility:loom",
+    "kind": "facility",
+    "name": "Loom",
+    "slug": "loom"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Construction"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Loom space",
+      "source_url": "https://oldschool.runescape.wiki/w/Loom_(amenity)"
+    },
+    "id": "facility:loom-space",
+    "kind": "facility",
+    "name": "Loom space",
+    "slug": "loom-space"
+  },
+  {
+    "data": {
+      "recipe_count": 2,
+      "skills": [
+        "Smithing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Lovakite furnace",
+      "source_url": "https://oldschool.runescape.wiki/w/Lovakite_furnace"
+    },
+    "id": "facility:lovakite-furnace",
+    "kind": "facility",
+    "name": "Lovakite furnace",
+    "slug": "lovakite-furnace"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Lovakite rocks",
+      "source_url": "https://oldschool.runescape.wiki/w/Lovakite_rocks"
+    },
+    "id": "facility:lovakite-rocks",
+    "kind": "facility",
+    "name": "Lovakite rocks",
+    "slug": "lovakite-rocks"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "source_token": "Bucket:recipe.uses_facility=Machinery",
+      "source_url": "https://oldschool.runescape.wiki/w/Machinery"
+    },
+    "id": "facility:machinery",
+    "kind": "facility",
+    "name": "Machinery",
+    "slug": "machinery"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Woodcutting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Magic tree",
+      "source_url": "https://oldschool.runescape.wiki/w/Magic_tree"
+    },
+    "id": "facility:magic-tree",
+    "kind": "facility",
+    "name": "Magic tree",
+    "slug": "magic-tree"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Magical rocks",
+      "source_url": "https://oldschool.runescape.wiki/w/Magical_rocks"
+    },
+    "id": "facility:magical-rocks",
+    "kind": "facility",
+    "name": "Magical rocks",
+    "slug": "magical-rocks"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Woodcutting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Mahogany",
+      "source_url": "https://oldschool.runescape.wiki/w/Mahogany_tree"
+    },
+    "id": "facility:mahogany",
+    "kind": "facility",
+    "name": "Mahogany",
+    "slug": "mahogany"
+  },
+  {
+    "data": {
+      "recipe_count": 3,
+      "skills": [
+        "Magic"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Mahogany demon lectern",
+      "source_url": "https://oldschool.runescape.wiki/w/Mahogany_demon_lectern"
+    },
+    "id": "facility:mahogany-demon-lectern",
+    "kind": "facility",
+    "name": "Mahogany demon lectern",
+    "slug": "mahogany-demon-lectern"
+  },
+  {
+    "data": {
+      "recipe_count": 5,
+      "skills": [
+        "Magic"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Mahogany eagle lectern",
+      "source_url": "https://oldschool.runescape.wiki/w/Mahogany_eagle_lectern"
+    },
+    "id": "facility:mahogany-eagle-lectern",
+    "kind": "facility",
+    "name": "Mahogany eagle lectern",
+    "slug": "mahogany-eagle-lectern"
+  },
+  {
+    "data": {
+      "recipe_count": 2,
+      "skills": [
+        "Woodcutting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Maple tree",
+      "source_url": "https://oldschool.runescape.wiki/w/Maple_tree"
+    },
+    "id": "facility:maple-tree",
+    "kind": "facility",
+    "name": "Maple tree",
+    "slug": "maple-tree"
+  },
+  {
+    "data": {
+      "recipe_count": 2,
+      "skills": [
+        "Fishing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Marlin shoal",
+      "source_url": "https://oldschool.runescape.wiki/w/Marlin_shoal"
+    },
+    "id": "facility:marlin-shoal",
+    "kind": "facility",
+    "name": "Marlin shoal",
+    "slug": "marlin-shoal"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Woodcutting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Mature juniper tree",
+      "source_url": "https://oldschool.runescape.wiki/w/Mature_juniper_tree"
+    },
+    "id": "facility:mature-juniper-tree",
+    "kind": "facility",
+    "name": "Mature juniper tree",
+    "slug": "mature-juniper-tree"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Woodcutting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Medium jungle",
+      "source_url": "https://oldschool.runescape.wiki/w/Medium_Jungle"
+    },
+    "id": "facility:medium-jungle",
+    "kind": "facility",
+    "name": "Medium jungle",
+    "slug": "medium-jungle"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Smithing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Metal Press",
+      "source_url": "https://oldschool.runescape.wiki/w/Metal_Press"
+    },
+    "id": "facility:metal-press",
+    "kind": "facility",
+    "name": "Metal Press",
+    "slug": "metal-press"
+  },
+  {
+    "data": {
+      "recipe_count": 9,
+      "skills": [
+        "Runecraft"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Mind Altar",
+      "source_url": "https://oldschool.runescape.wiki/w/Mind_Altar"
+    },
+    "id": "facility:mind-altar",
+    "kind": "facility",
+    "name": "Mind Altar",
+    "slug": "mind-altar"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Mithril rocks",
+      "source_url": "https://oldschool.runescape.wiki/w/Mithril_rocks"
+    },
+    "id": "facility:mithril-rocks",
+    "kind": "facility",
+    "name": "Mithril rocks",
+    "slug": "mithril-rocks"
+  },
+  {
+    "data": {
+      "recipe_count": 10,
+      "skills": [
+        "Herblore"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Mixing vessel",
+      "source_url": "https://oldschool.runescape.wiki/w/Mixing_vessel"
+    },
+    "id": "facility:mixing-vessel",
+    "kind": "facility",
+    "name": "Mixing vessel",
+    "slug": "mixing-vessel"
+  },
+  {
+    "data": {
+      "recipe_count": 7,
+      "source_token": "Bucket:recipe.uses_facility=Monument",
+      "source_url": "https://oldschool.runescape.wiki/w/Monument"
+    },
+    "id": "facility:monument",
+    "kind": "facility",
+    "name": "Monument",
+    "slug": "monument"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Farming"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Musca mushrooms",
+      "source_url": "https://oldschool.runescape.wiki/w/Musca_mushrooms"
+    },
+    "id": "facility:musca-mushrooms",
+    "kind": "facility",
+    "name": "Musca mushrooms",
+    "slug": "musca-mushrooms"
+  },
+  {
+    "data": {
+      "recipe_count": 25,
+      "source_token": "Bucket:recipe.uses_facility=Mycelium pool",
+      "source_url": "https://oldschool.runescape.wiki/w/Mycelium_pool"
+    },
+    "id": "facility:mycelium-pool",
+    "kind": "facility",
+    "name": "Mycelium pool",
+    "slug": "mycelium-pool"
+  },
+  {
+    "data": {
+      "recipe_count": 11,
+      "skills": [
+        "Runecraft"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Nature Altar",
+      "source_url": "https://oldschool.runescape.wiki/w/Nature_Altar"
+    },
+    "id": "facility:nature-altar",
+    "kind": "facility",
+    "name": "Nature Altar",
+    "slug": "nature-altar"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "source_token": "Bucket:recipe.uses_facility=Nest (nice)",
+      "source_url": "https://oldschool.runescape.wiki/w/Nest_(nice)"
+    },
+    "id": "facility:nest-nice",
+    "kind": "facility",
+    "name": "Nest (nice)",
+    "slug": "nest-nice"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Nickel rocks",
+      "source_url": "https://oldschool.runescape.wiki/w/Nickel_rocks"
+    },
+    "id": "facility:nickel-rocks",
+    "kind": "facility",
+    "name": "Nickel rocks",
+    "slug": "nickel-rocks"
+  },
+  {
+    "data": {
+      "recipe_count": 2,
+      "skills": [
+        "Magic"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Oak lectern",
+      "source_url": "https://oldschool.runescape.wiki/w/Oak_lectern"
+    },
+    "id": "facility:oak-lectern",
+    "kind": "facility",
+    "name": "Oak lectern",
+    "slug": "oak-lectern"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Woodcutting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Oak tree",
+      "source_url": "https://oldschool.runescape.wiki/w/Oak_tree"
+    },
+    "id": "facility:oak-tree",
+    "kind": "facility",
+    "name": "Oak tree",
+    "slug": "oak-tree"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Magic"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Obelisk of Air",
+      "source_url": "https://oldschool.runescape.wiki/w/Obelisk_of_Air"
+    },
+    "id": "facility:obelisk-of-air",
+    "kind": "facility",
+    "name": "Obelisk of Air",
+    "slug": "obelisk-of-air"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Magic"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Obelisk of Earth",
+      "source_url": "https://oldschool.runescape.wiki/w/Obelisk_of_Earth"
+    },
+    "id": "facility:obelisk-of-earth",
+    "kind": "facility",
+    "name": "Obelisk of Earth",
+    "slug": "obelisk-of-earth"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Magic"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Obelisk of Fire",
+      "source_url": "https://oldschool.runescape.wiki/w/Obelisk_of_Fire"
+    },
+    "id": "facility:obelisk-of-fire",
+    "kind": "facility",
+    "name": "Obelisk of Fire",
+    "slug": "obelisk-of-fire"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Magic"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Obelisk of Water",
+      "source_url": "https://oldschool.runescape.wiki/w/Obelisk_of_Water"
+    },
+    "id": "facility:obelisk-of-water",
+    "kind": "facility",
+    "name": "Obelisk of Water",
+    "slug": "obelisk-of-water"
+  },
+  {
+    "data": {
+      "recipe_count": 5,
+      "skills": [
+        "Cooking"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Ogre spit-roast",
+      "source_url": "https://oldschool.runescape.wiki/w/Ogre_spit-roast"
+    },
+    "id": "facility:ogre-spit-roast",
+    "kind": "facility",
+    "name": "Ogre spit-roast",
+    "slug": "ogre-spit-roast"
+  },
+  {
+    "data": {
+      "recipe_count": 4,
+      "skills": [
+        "Construction",
+        "Firemaking"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Old fire pit",
+      "source_url": "https://oldschool.runescape.wiki/w/Old_fire_pit"
+    },
+    "id": "facility:old-fire-pit",
+    "kind": "facility",
+    "name": "Old fire pit",
+    "slug": "old-fire-pit"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Ore vein",
+      "source_url": "https://oldschool.runescape.wiki/w/Ore_vein"
+    },
+    "id": "facility:ore-vein",
+    "kind": "facility",
+    "name": "Ore vein",
+    "slug": "ore-vein"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Fishing",
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Panning point",
+      "source_url": "https://oldschool.runescape.wiki/w/Panning_point"
+    },
+    "id": "facility:panning-point",
+    "kind": "facility",
+    "name": "Panning point",
+    "slug": "panning-point"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Woodcutting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Phren Roots",
+      "source_url": "https://oldschool.runescape.wiki/w/Phren_Roots"
+    },
+    "id": "facility:phren-roots",
+    "kind": "facility",
+    "name": "Phren Roots",
+    "slug": "phren-roots"
+  },
+  {
+    "data": {
+      "recipe_count": 48,
+      "skills": [
+        "Construction",
+        "Crafting",
+        "Prayer"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Pluming stand",
+      "source_url": "https://oldschool.runescape.wiki/w/Pluming_stand"
+    },
+    "id": "facility:pluming-stand",
+    "kind": "facility",
+    "name": "Pluming stand",
+    "slug": "pluming-stand"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "source_token": "Bucket:recipe.uses_facility=Poison crater",
+      "source_url": "https://oldschool.runescape.wiki/w/Poison_crater"
+    },
+    "id": "facility:poison-crater",
+    "kind": "facility",
+    "name": "Poison crater",
+    "slug": "poison-crater"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Smithing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Polishing wheel",
+      "source_url": "https://oldschool.runescape.wiki/w/Polishing_wheel"
+    },
+    "id": "facility:polishing-wheel",
+    "kind": "facility",
+    "name": "Polishing wheel",
+    "slug": "polishing-wheel"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Smithing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Pool of ichor",
+      "source_url": "https://oldschool.runescape.wiki/w/Pool_of_ichor"
+    },
+    "id": "facility:pool-of-ichor",
+    "kind": "facility",
+    "name": "Pool of ichor",
+    "slug": "pool-of-ichor"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "source_token": "Bucket:recipe.uses_facility=Pool of Slime",
+      "source_url": "https://oldschool.runescape.wiki/w/Pool_of_Slime"
+    },
+    "id": "facility:pool-of-slime",
+    "kind": "facility",
+    "name": "Pool of Slime",
+    "slug": "pool-of-slime"
+  },
+  {
+    "data": {
+      "recipe_count": 6,
+      "skills": [
+        "Crafting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Potter's Wheel",
+      "source_url": "https://oldschool.runescape.wiki/w/Potter's_Wheel"
+    },
+    "id": "facility:potters-wheel",
+    "kind": "facility",
+    "name": "Potter's Wheel",
+    "slug": "potters-wheel"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Construction"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Potter's wheel space",
+      "source_url": "https://oldschool.runescape.wiki/w/Potter's_wheel_(amenity)"
+    },
+    "id": "facility:potters-wheel-space",
+    "kind": "facility",
+    "name": "Potter's wheel space",
+    "slug": "potters-wheel-space"
+  },
+  {
+    "data": {
+      "recipe_count": 6,
+      "skills": [
+        "Crafting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Pottery Oven",
+      "source_url": "https://oldschool.runescape.wiki/w/Pottery_Oven"
+    },
+    "id": "facility:pottery-oven",
+    "kind": "facility",
+    "name": "Pottery Oven",
+    "slug": "pottery-oven"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Construction"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Pottery oven space",
+      "source_url": "https://oldschool.runescape.wiki/w/Pottery_oven_(amenity)"
+    },
+    "id": "facility:pottery-oven-space",
+    "kind": "facility",
+    "name": "Pottery oven space",
+    "slug": "pottery-oven-space"
+  },
+  {
+    "data": {
+      "recipe_count": 8,
+      "skills": [
+        "Cooking"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Preparation Table",
+      "source_url": "https://oldschool.runescape.wiki/w/Preparation_Table"
+    },
+    "id": "facility:preparation-table",
+    "kind": "facility",
+    "name": "Preparation Table",
+    "slug": "preparation-table"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "source_token": "Bucket:recipe.uses_facility=Range",
+      "source_url": "https://oldschool.runescape.wiki/w/Range"
+    },
+    "id": "facility:range",
+    "kind": "facility",
+    "name": "Range",
+    "slug": "range"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Cooking"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Range (The Gauntlet)",
+      "source_url": "https://oldschool.runescape.wiki/w/Range_(The_Gauntlet)"
+    },
+    "id": "facility:range-the-gauntlet",
+    "kind": "facility",
+    "name": "Range (The Gauntlet)",
+    "slug": "range-the-gauntlet"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Woodcutting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Redwood tree",
+      "source_url": "https://oldschool.runescape.wiki/w/Redwood_tree"
+    },
+    "id": "facility:redwood-tree",
+    "kind": "facility",
+    "name": "Redwood tree",
+    "slug": "redwood-tree"
+  },
+  {
+    "data": {
+      "recipe_count": 31,
+      "skills": [
+        "Herblore"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Refiner",
+      "source_url": "https://oldschool.runescape.wiki/w/Refiner"
+    },
+    "id": "facility:refiner",
+    "kind": "facility",
+    "name": "Refiner",
+    "slug": "refiner"
+  },
+  {
+    "data": {
+      "recipe_count": 2,
+      "skills": [
+        "Crafting",
+        "Fletching"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Repair bench",
+      "source_url": "https://oldschool.runescape.wiki/w/Repair_bench"
+    },
+    "id": "facility:repair-bench",
+    "kind": "facility",
+    "name": "Repair bench",
+    "slug": "repair-bench"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "source_token": "Bucket:recipe.uses_facility=Rewards Guardian",
+      "source_url": "https://oldschool.runescape.wiki/w/Rewards_Guardian"
+    },
+    "id": "facility:rewards-guardian",
+    "kind": "facility",
+    "name": "Rewards Guardian",
+    "slug": "rewards-guardian"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Rock Formation (glowing)",
+      "source_url": "https://oldschool.runescape.wiki/w/Rock_Formation"
+    },
+    "id": "facility:rock-formation-glowing",
+    "kind": "facility",
+    "name": "Rock Formation (glowing)",
+    "slug": "rock-formation-glowing"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Cooking"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Rock (snake cooker)",
+      "source_url": "https://oldschool.runescape.wiki/w/Rock_(snake_cooker)"
+    },
+    "id": "facility:rock-snake-cooker",
+    "kind": "facility",
+    "name": "Rock (snake cooker)",
+    "slug": "rock-snake-cooker"
+  },
+  {
+    "data": {
+      "recipe_count": 2,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Rocks (Barronite)",
+      "source_url": "https://oldschool.runescape.wiki/w/Barronite_rocks"
+    },
+    "id": "facility:rocks-barronite",
+    "kind": "facility",
+    "name": "Rocks (Barronite)",
+    "slug": "rocks-barronite"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Woodcutting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Rosewood tree",
+      "source_url": "https://oldschool.runescape.wiki/w/Rosewood_tree"
+    },
+    "id": "facility:rosewood-tree",
+    "kind": "facility",
+    "name": "Rosewood tree",
+    "slug": "rosewood-tree"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Construction"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Rowboat space",
+      "source_url": "https://oldschool.runescape.wiki/w/Rowboat_(amenity)"
+    },
+    "id": "facility:rowboat-space",
+    "kind": "facility",
+    "name": "Rowboat space",
+    "slug": "rowboat-space"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Rune Essence (rock)",
+      "source_url": "https://oldschool.runescape.wiki/w/Rune_Essence_(rock)"
+    },
+    "id": "facility:rune-essence-rock",
+    "kind": "facility",
+    "name": "Rune Essence (rock)",
+    "slug": "rune-essence-rock"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Runite rocks",
+      "source_url": "https://oldschool.runescape.wiki/w/Runite_rocks"
+    },
+    "id": "facility:runite-rocks",
+    "kind": "facility",
+    "name": "Runite rocks",
+    "slug": "runite-rocks"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "source_token": "Bucket:recipe.uses_facility=Sack of Flour",
+      "source_url": "https://oldschool.runescape.wiki/w/Sack_of_Flour"
+    },
+    "id": "facility:sack-of-flour",
+    "kind": "facility",
+    "name": "Sack of Flour",
+    "slug": "sack-of-flour"
+  },
+  {
+    "data": {
+      "recipe_count": 8,
+      "skills": [
+        "Sailing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Salvaging station",
+      "source_url": "https://oldschool.runescape.wiki/w/Salvaging_station"
+    },
+    "id": "facility:salvaging-station",
+    "kind": "facility",
+    "name": "Salvaging station",
+    "slug": "salvaging-station"
+  },
+  {
+    "data": {
+      "recipe_count": 2,
+      "source_token": "Bucket:recipe.uses_facility=Sand pit",
+      "source_url": "https://oldschool.runescape.wiki/w/Sand_pit"
+    },
+    "id": "facility:sand-pit",
+    "kind": "facility",
+    "name": "Sand pit",
+    "slug": "sand-pit"
+  },
+  {
+    "data": {
+      "recipe_count": 4,
+      "source_token": "Bucket:recipe.uses_facility=Sandstorm",
+      "source_url": "https://oldschool.runescape.wiki/w/Sandstorm"
+    },
+    "id": "facility:sandstorm",
+    "kind": "facility",
+    "name": "Sandstorm",
+    "slug": "sandstorm"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Hunter"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Sandworm castings",
+      "source_url": "https://oldschool.runescape.wiki/w/Sandworm_castings"
+    },
+    "id": "facility:sandworm-castings",
+    "kind": "facility",
+    "name": "Sandworm castings",
+    "slug": "sandworm-castings"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Woodcutting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Sapling (Chambers of Xeric)",
+      "source_url": "https://oldschool.runescape.wiki/w/Sapling_(Chambers_of_Xeric)"
+    },
+    "id": "facility:sapling-chambers-of-xeric",
+    "kind": "facility",
+    "name": "Sapling (Chambers of Xeric)",
+    "slug": "sapling-chambers-of-xeric"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Prayer"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Saradomin Brazier",
+      "source_url": "https://oldschool.runescape.wiki/w/Saradomin_Brazier"
+    },
+    "id": "facility:saradomin-brazier",
+    "kind": "facility",
+    "name": "Saradomin Brazier",
+    "slug": "saradomin-brazier"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Woodcutting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Scrapey tree",
+      "source_url": "https://oldschool.runescape.wiki/w/Scrapey_tree"
+    },
+    "id": "facility:scrapey-tree",
+    "kind": "facility",
+    "name": "Scrapey tree",
+    "slug": "scrapey-tree"
+  },
+  {
+    "data": {
+      "recipe_count": 48,
+      "skills": [
+        "Construction",
+        "Crafting",
+        "Prayer"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Shield easel",
+      "source_url": "https://oldschool.runescape.wiki/w/Shield_easel"
+    },
+    "id": "facility:shield-easel",
+    "kind": "facility",
+    "name": "Shield easel",
+    "slug": "shield-easel"
+  },
+  {
+    "data": {
+      "recipe_count": 6,
+      "skills": [
+        "Fishing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Shimmering shoal",
+      "source_url": "https://oldschool.runescape.wiki/w/Shimmering_shoal"
+    },
+    "id": "facility:shimmering-shoal",
+    "kind": "facility",
+    "name": "Shimmering shoal",
+    "slug": "shimmering-shoal"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Construction"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Shipwright's Workbench",
+      "source_url": "https://oldschool.runescape.wiki/w/Shipwrights'_Workbench"
+    },
+    "id": "facility:shipwrights-workbench",
+    "kind": "facility",
+    "name": "Shipwright's Workbench",
+    "slug": "shipwrights-workbench"
+  },
+  {
+    "data": {
+      "recipe_count": 19,
+      "skills": [
+        "Construction"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Shipwrights' Workbench",
+      "source_url": "https://oldschool.runescape.wiki/w/Shipwrights'_Workbench"
+    },
+    "id": "facility:shipwrights-workbench-2",
+    "kind": "facility",
+    "name": "Shipwrights' Workbench",
+    "slug": "shipwrights-workbench-2"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Prayer"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Shrine",
+      "source_url": "https://oldschool.runescape.wiki/w/Shrine"
+    },
+    "id": "facility:shrine",
+    "kind": "facility",
+    "name": "Shrine",
+    "slug": "shrine"
+  },
+  {
+    "data": {
+      "recipe_count": 4,
+      "skills": [
+        "Runecraft"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Shrine of Ralos",
+      "source_url": "https://oldschool.runescape.wiki/w/Shrine_of_Ralos"
+    },
+    "id": "facility:shrine-of-ralos",
+    "kind": "facility",
+    "name": "Shrine of Ralos",
+    "slug": "shrine-of-ralos"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Cooking"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Shrine (Tempoross Cove)",
+      "source_url": "https://oldschool.runescape.wiki/w/Shrine_(Tempoross_Cove)"
+    },
+    "id": "facility:shrine-tempoross-cove",
+    "kind": "facility",
+    "name": "Shrine (Tempoross Cove)",
+    "slug": "shrine-tempoross-cove"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Silver rocks",
+      "source_url": "https://oldschool.runescape.wiki/w/Silver_rocks"
+    },
+    "id": "facility:silver-rocks",
+    "kind": "facility",
+    "name": "Silver rocks",
+    "slug": "silver-rocks"
+  },
+  {
+    "data": {
+      "recipe_count": 22,
+      "skills": [
+        "Crafting",
+        "Smithing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Singing bowl",
+      "source_url": "https://oldschool.runescape.wiki/w/Singing_bowl"
+    },
+    "id": "facility:singing-bowl",
+    "kind": "facility",
+    "name": "Singing bowl",
+    "slug": "singing-bowl"
+  },
+  {
+    "data": {
+      "recipe_count": 22,
+      "skills": [
+        "Crafting",
+        "Smithing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Singing Bowl (The Corrupted Gauntlet)",
+      "source_url": "https://oldschool.runescape.wiki/w/Singing_Bowl_(The_Corrupted_Gauntlet)"
+    },
+    "id": "facility:singing-bowl-the-corrupted-gauntlet",
+    "kind": "facility",
+    "name": "Singing Bowl (The Corrupted Gauntlet)",
+    "slug": "singing-bowl-the-corrupted-gauntlet"
+  },
+  {
+    "data": {
+      "recipe_count": 22,
+      "skills": [
+        "Crafting",
+        "Smithing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Singing Bowl (The Gauntlet)",
+      "source_url": "https://oldschool.runescape.wiki/w/Singing_Bowl_(The_Gauntlet)"
+    },
+    "id": "facility:singing-bowl-the-gauntlet",
+    "kind": "facility",
+    "name": "Singing Bowl (The Gauntlet)",
+    "slug": "singing-bowl-the-gauntlet"
+  },
+  {
+    "data": {
+      "recipe_count": 2,
+      "skills": [
+        "Runecraft"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Soul Altar",
+      "source_url": "https://oldschool.runescape.wiki/w/Soul_Altar"
+    },
+    "id": "facility:soul-altar",
+    "kind": "facility",
+    "name": "Soul Altar",
+    "slug": "soul-altar"
+  },
+  {
+    "data": {
+      "recipe_count": 14,
+      "skills": [
+        "Crafting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Spinning wheel",
+      "source_url": "https://oldschool.runescape.wiki/w/Spinning_wheel"
+    },
+    "id": "facility:spinning-wheel",
+    "kind": "facility",
+    "name": "Spinning wheel",
+    "slug": "spinning-wheel"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Construction"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Spinning wheel space",
+      "source_url": "https://oldschool.runescape.wiki/w/Spinning_wheel_(amenity)"
+    },
+    "id": "facility:spinning-wheel-space",
+    "kind": "facility",
+    "name": "Spinning wheel space",
+    "slug": "spinning-wheel-space"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Stalagmites (Lunar Isle)",
+      "source_url": "https://oldschool.runescape.wiki/w/Stalagmites_(Lunar_Isle)"
+    },
+    "id": "facility:stalagmites-lunar-isle",
+    "kind": "facility",
+    "name": "Stalagmites (Lunar Isle)",
+    "slug": "stalagmites-lunar-isle"
+  },
+  {
+    "data": {
+      "recipe_count": 4,
+      "skills": [
+        "Prayer"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Strange Machine#Enriched bones",
+      "source_url": "https://oldschool.runescape.wiki/w/Strange_Machine"
+    },
+    "id": "facility:strange-machine-enriched-bones",
+    "kind": "facility",
+    "name": "Strange Machine#Enriched bones",
+    "slug": "strange-machine-enriched-bones"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "source_token": "Bucket:recipe.uses_facility=Sulphur Vent (Mount Karuulm)",
+      "source_url": "https://oldschool.runescape.wiki/w/Sulphur_Vent_(Mount_Karuulm)"
+    },
+    "id": "facility:sulphur-vent-mount-karuulm",
+    "kind": "facility",
+    "name": "Sulphur Vent (Mount Karuulm)",
+    "slug": "sulphur-vent-mount-karuulm"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "source_token": "Bucket:recipe.uses_facility=Suntrap",
+      "source_url": "https://oldschool.runescape.wiki/w/Suntrap"
+    },
+    "id": "facility:suntrap",
+    "kind": "facility",
+    "name": "Suntrap",
+    "slug": "suntrap"
+  },
+  {
+    "data": {
+      "recipe_count": 5,
+      "source_token": "Bucket:recipe.uses_facility=Swampy sink",
+      "source_url": "https://oldschool.runescape.wiki/w/Swampy_sink"
+    },
+    "id": "facility:swampy-sink",
+    "kind": "facility",
+    "name": "Swampy sink",
+    "slug": "swampy-sink"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Hunter"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Sweetgrub Mound",
+      "source_url": "https://oldschool.runescape.wiki/w/Sweetgrub_Mound"
+    },
+    "id": "facility:sweetgrub-mound",
+    "kind": "facility",
+    "name": "Sweetgrub Mound",
+    "slug": "sweetgrub-mound"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Woodcutting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Teak",
+      "source_url": "https://oldschool.runescape.wiki/w/Teak_tree"
+    },
+    "id": "facility:teak",
+    "kind": "facility",
+    "name": "Teak",
+    "slug": "teak"
+  },
+  {
+    "data": {
+      "recipe_count": 2,
+      "skills": [
+        "Magic"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Teak demon lectern",
+      "source_url": "https://oldschool.runescape.wiki/w/Teak_demon_lectern"
+    },
+    "id": "facility:teak-demon-lectern",
+    "kind": "facility",
+    "name": "Teak demon lectern",
+    "slug": "teak-demon-lectern"
+  },
+  {
+    "data": {
+      "recipe_count": 3,
+      "skills": [
+        "Magic"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Teak eagle lectern",
+      "source_url": "https://oldschool.runescape.wiki/w/Teak_eagle_lectern"
+    },
+    "id": "facility:teak-eagle-lectern",
+    "kind": "facility",
+    "name": "Teak eagle lectern",
+    "slug": "teak-eagle-lectern"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "source_token": "Bucket:recipe.uses_facility=The Overseer",
+      "source_url": "https://oldschool.runescape.wiki/w/The_Overseer"
+    },
+    "id": "facility:the-overseer",
+    "kind": "facility",
+    "name": "The Overseer",
+    "slug": "the-overseer"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Tin rocks",
+      "source_url": "https://oldschool.runescape.wiki/w/Tin_rocks"
+    },
+    "id": "facility:tin-rocks",
+    "kind": "facility",
+    "name": "Tin rocks",
+    "slug": "tin-rocks"
+  },
+  {
+    "data": {
+      "recipe_count": 32,
+      "skills": [
+        "Construction",
+        "Fletching"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Totem site",
+      "source_url": "https://oldschool.runescape.wiki/w/Totem_site"
+    },
+    "id": "facility:totem-site",
+    "kind": "facility",
+    "name": "Totem site",
+    "slug": "totem-site"
+  },
+  {
+    "data": {
+      "recipe_count": 2,
+      "skills": [
+        "Woodcutting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Tree",
+      "source_url": "https://oldschool.runescape.wiki/w/Tree"
+    },
+    "id": "facility:tree",
+    "kind": "facility",
+    "name": "Tree",
+    "slug": "tree"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "source_token": "Bucket:recipe.uses_facility=Unbuilt Landing Site",
+      "source_url": "https://oldschool.runescape.wiki/w/Landing_Site"
+    },
+    "id": "facility:unbuilt-landing-site",
+    "kind": "facility",
+    "name": "Unbuilt Landing Site",
+    "slug": "unbuilt-landing-site"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "source_token": "Bucket:recipe.uses_facility=Uncooking pot",
+      "source_url": "https://oldschool.runescape.wiki/w/Uncooking_pot"
+    },
+    "id": "facility:uncooking-pot",
+    "kind": "facility",
+    "name": "Uncooking pot",
+    "slug": "uncooking-pot"
+  },
+  {
+    "data": {
+      "recipe_count": 4,
+      "skills": [
+        "Fishing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Vibrant shoal",
+      "source_url": "https://oldschool.runescape.wiki/w/Vibrant_shoal"
+    },
+    "id": "facility:vibrant-shoal",
+    "kind": "facility",
+    "name": "Vibrant shoal",
+    "slug": "vibrant-shoal"
+  },
+  {
+    "data": {
+      "recipe_count": 2,
+      "source_token": "Bucket:recipe.uses_facility=Volcanic Forge",
+      "source_url": "https://oldschool.runescape.wiki/w/Volcanic_Forge"
+    },
+    "id": "facility:volcanic-forge",
+    "kind": "facility",
+    "name": "Volcanic Forge",
+    "slug": "volcanic-forge"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Mining"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Volcanic sulphur (rock)",
+      "source_url": "https://oldschool.runescape.wiki/w/Volcanic_sulphur_(rock)"
+    },
+    "id": "facility:volcanic-sulphur-rock",
+    "kind": "facility",
+    "name": "Volcanic sulphur (rock)",
+    "slug": "volcanic-sulphur-rock"
+  },
+  {
+    "data": {
+      "recipe_count": 2,
+      "skills": [
+        "Crafting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Wall of flame",
+      "source_url": "https://oldschool.runescape.wiki/w/Wall_of_flame"
+    },
+    "id": "facility:wall-of-flame",
+    "kind": "facility",
+    "name": "Wall of flame",
+    "slug": "wall-of-flame"
+  },
+  {
+    "data": {
+      "recipe_count": 23,
+      "skills": [
+        "Crafting",
+        "Runecraft"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Water Altar",
+      "source_url": "https://oldschool.runescape.wiki/w/Water_Altar"
+    },
+    "id": "facility:water-altar",
+    "kind": "facility",
+    "name": "Water Altar",
+    "slug": "water-altar"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Construction"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Water pump space",
+      "source_url": "https://oldschool.runescape.wiki/w/Water_pump_(amenity)"
+    },
+    "id": "facility:water-pump-space",
+    "kind": "facility",
+    "name": "Water pump space",
+    "slug": "water-pump-space"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "source_token": "Bucket:recipe.uses_facility=Water Pump (The Corrupted Gauntlet)",
+      "source_url": "https://oldschool.runescape.wiki/w/Water_Pump_(The_Corrupted_Gauntlet)"
+    },
+    "id": "facility:water-pump-the-corrupted-gauntlet",
+    "kind": "facility",
+    "name": "Water Pump (The Corrupted Gauntlet)",
+    "slug": "water-pump-the-corrupted-gauntlet"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "source_token": "Bucket:recipe.uses_facility=Water Pump (The Gauntlet)",
+      "source_url": "https://oldschool.runescape.wiki/w/Water_Pump_(The_Gauntlet)"
+    },
+    "id": "facility:water-pump-the-gauntlet",
+    "kind": "facility",
+    "name": "Water Pump (The Gauntlet)",
+    "slug": "water-pump-the-gauntlet"
+  },
+  {
+    "data": {
+      "recipe_count": 2,
+      "source_token": "Bucket:recipe.uses_facility=Well (Paterdomus)",
+      "source_url": "https://oldschool.runescape.wiki/w/Well_(Paterdomus)"
+    },
+    "id": "facility:well-paterdomus",
+    "kind": "facility",
+    "name": "Well (Paterdomus)",
+    "slug": "well-paterdomus"
+  },
+  {
+    "data": {
+      "recipe_count": 3,
+      "skills": [
+        "Crafting",
+        "Fletching",
+        "Smithing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Whetstone",
+      "source_url": "https://oldschool.runescape.wiki/w/Whetstone"
+    },
+    "id": "facility:whetstone",
+    "kind": "facility",
+    "name": "Whetstone",
+    "slug": "whetstone"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Woodcutting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Willow tree",
+      "source_url": "https://oldschool.runescape.wiki/w/Willow_tree"
+    },
+    "id": "facility:willow-tree",
+    "kind": "facility",
+    "name": "Willow tree",
+    "slug": "willow-tree"
+  },
+  {
+    "data": {
+      "recipe_count": 2,
+      "source_token": "Bucket:recipe.uses_facility=Windmill",
+      "source_url": "https://oldschool.runescape.wiki/w/Windmill"
+    },
+    "id": "facility:windmill",
+    "kind": "facility",
+    "name": "Windmill",
+    "slug": "windmill"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Woodcutting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Windswept tree",
+      "source_url": "https://oldschool.runescape.wiki/w/Windswept_tree"
+    },
+    "id": "facility:windswept-tree",
+    "kind": "facility",
+    "name": "Windswept tree",
+    "slug": "windswept-tree"
+  },
+  {
+    "data": {
+      "recipe_count": 2,
+      "skills": [
+        "Crafting",
+        "Woodcutting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Woodcutting stump",
+      "source_url": "https://oldschool.runescape.wiki/w/Woodcutting_stump"
+    },
+    "id": "facility:woodcutting-stump",
+    "kind": "facility",
+    "name": "Woodcutting stump",
+    "slug": "woodcutting-stump"
+  },
+  {
+    "data": {
+      "recipe_count": 6,
+      "skills": [
+        "Smithing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Workbench (Elemental Workshop)",
+      "source_url": "https://oldschool.runescape.wiki/w/Workbench_(Elemental_Workshop)"
+    },
+    "id": "facility:workbench-elemental-workshop",
+    "kind": "facility",
+    "name": "Workbench (Elemental Workshop)",
+    "slug": "workbench-elemental-workshop"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Crafting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Workbench (Guardians of the Rift)",
+      "source_url": "https://oldschool.runescape.wiki/w/Workbench_(Guardians_of_the_Rift)"
+    },
+    "id": "facility:workbench-guardians-of-the-rift",
+    "kind": "facility",
+    "name": "Workbench (Guardians of the Rift)",
+    "slug": "workbench-guardians-of-the-rift"
+  },
+  {
+    "data": {
+      "recipe_count": 3,
+      "skills": [
+        "Crafting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Workbench (Trouble Brewing)",
+      "source_url": "https://oldschool.runescape.wiki/w/Workbench_(Trouble_Brewing)"
+    },
+    "id": "facility:workbench-trouble-brewing",
+    "kind": "facility",
+    "name": "Workbench (Trouble Brewing)",
+    "slug": "workbench-trouble-brewing"
+  },
+  {
+    "data": {
+      "recipe_count": 4,
+      "skills": [
+        "Runecraft"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Wrath Altar",
+      "source_url": "https://oldschool.runescape.wiki/w/Wrath_Altar"
+    },
+    "id": "facility:wrath-altar",
+    "kind": "facility",
+    "name": "Wrath Altar",
+    "slug": "wrath-altar"
+  },
+  {
+    "data": {
+      "recipe_count": 2,
+      "skills": [
+        "Fishing"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Yellowfin shoal",
+      "source_url": "https://oldschool.runescape.wiki/w/Yellowfin_shoal"
+    },
+    "id": "facility:yellowfin-shoal",
+    "kind": "facility",
+    "name": "Yellowfin shoal",
+    "slug": "yellowfin-shoal"
+  },
+  {
+    "data": {
+      "recipe_count": 1,
+      "skills": [
+        "Woodcutting"
+      ],
+      "source_token": "Bucket:recipe.uses_facility=Yew tree",
+      "source_url": "https://oldschool.runescape.wiki/w/Yew_tree"
+    },
+    "id": "facility:yew-tree",
+    "kind": "facility",
+    "name": "Yew tree",
+    "slug": "yew-tree"
+  },
+  {
     "data": {},
     "id": "gear_loadout:infinity",
     "kind": "gear_loadout",
