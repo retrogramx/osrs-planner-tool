@@ -46,5 +46,11 @@
     ,{ "id": "cq-operator-region-chain",
       "question": "Where is the shop operator Achtryn located?",
       "method": "region_chain", "target": "npc:achtryn", "expect_min": 4 }
+    ,{ "id": "cq-facilities-serve-smithing",
+      "question": "Which facilities serve the Smithing skill?",
+      "method": "facilities_for_skill", "target": "Smithing", "expect_min": 2 }
+    ,{ "id": "cq-thormac-not-a-facility",
+      "question": "Is Thormac a facility (or a deferred service NPC)?",
+      "method": "node_absent", "target": "facility:thormac", "expect": 0 }
   ]
 }

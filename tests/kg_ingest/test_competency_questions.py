@@ -75,6 +75,17 @@ def _region_chain(store, target):
     return chain
 
 
+def _facilities_for_skill(store, target):
+    # set of facility node ids whose data.skills contains target
+    return {n.id for n in store.nodes.values()
+            if n.id.startswith("facility:") and target in n.data.get("skills", [])}
+
+
+def _node_absent(store, target):
+    # 0 if no node with id == target exists, else 1
+    return 0 if target not in store.nodes else 1
+
+
 def test_all_competency_questions_pass():
     store = JsonKGStore.from_dir(KG)
     with open(ROOT / "kg" / "competency_questions.json") as f:
@@ -105,6 +116,12 @@ def test_all_competency_questions_pass():
             answer = _in_region(store, cq["target"])
         elif cq["method"] == "region_chain":
             answer = set(_region_chain(store, cq["target"]))
+        elif cq["method"] == "facilities_for_skill":
+            answer = _facilities_for_skill(store, cq["target"])
+        elif cq["method"] == "node_absent":
+            answer = _node_absent(store, cq["target"])
+            assert answer == cq["expect"], f"{cq['id']}: got {answer!r} != {cq['expect']!r}"
+            continue
         else:
             raise AssertionError(f"unknown method {cq['method']!r}")
         assert len(answer) >= cq["expect_min"], f"{cq['id']}: got {len(answer)} < {cq['expect_min']}"
