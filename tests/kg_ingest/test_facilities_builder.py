@@ -1,5 +1,6 @@
 import json, pathlib
 from osrs_planner.engine.kg.model import NodeKind
+from kg_ingest.builders.facilities import classify_infobox, build_facilities, facility_roster
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 
@@ -15,8 +16,6 @@ def test_schema_facility_live_with_data_keys():
         assert k in fac["data_keys"], f"{k} missing from facility data_keys"
 
 
-from kg_ingest.builders.facilities import classify_infobox
-
 def test_classify_infobox_routing():
     assert classify_infobox(["Infobox Scenery"]) == "facility"
     assert classify_infobox(["Infobox Construction"]) == "facility"
@@ -28,3 +27,87 @@ def test_classify_infobox_routing():
     # NPC/Shop take precedence over a co-present facility infobox (defer the character/store)
     assert classify_infobox(["Infobox Scenery", "Infobox NPC"]) == "npc"
     assert classify_infobox(["Infobox Shop", "Infobox Scenery"]) == "shop"
+
+
+def _ib(infoboxes, url="https://x/w/V"):
+    return {"infoboxes": infoboxes, "source_url": url}
+
+def _rows():
+    return [
+        {"page_name": "Bronze bar", "uses_facility": ["Furnace"], "uses_skill": ["Smithing"]},
+        {"page_name": "Steel bar", "uses_facility": ["Furnace"], "uses_skill": ["Smithing"]},
+        {"page_name": "Gold bracelet", "uses_facility": ["Furnace"], "uses_skill": ["Crafting"]},
+        {"page_name": "Dagger", "uses_facility": ["Anvil"], "uses_skill": ["Smithing"]},
+        {"page_name": "Plank", "uses_facility": ["Sawmill"], "uses_skill": [""]},   # skill-less
+        {"page_name": "Battlestaff(o)", "uses_facility": ["Thormac"], "uses_skill": [""]},
+        {"page_name": "Nothing", "uses_facility": None, "uses_skill": ["Magic"]},   # no facility -> ignored
+    ]
+
+def _ibs():
+    return {
+        "Furnace": _ib(["Infobox Scenery"], "https://x/w/Furnace"),
+        "Anvil": _ib(["Infobox Scenery"], "https://x/w/Anvil"),
+        "Sawmill": _ib(["Infobox Shop"]),       # defer
+        "Thormac": _ib(["Infobox NPC"]),         # defer
+    }
+
+def _nmap(nodes):
+    return {n.id: n for n in nodes}
+
+def test_roster_distinct_nonempty():
+    assert facility_roster(_rows()) == ["Anvil", "Furnace", "Sawmill", "Thormac"]
+
+def test_builder_admits_facilities_defers_npc_and_shop():
+    nodes, edges, groups = build_facilities(_rows(), _ibs(), {"force_facility": [], "force_exclude": []})
+    ids = _nmap(nodes)
+    assert edges == [] and groups == {}
+    assert "facility:furnace" in ids and "facility:anvil" in ids
+    assert "facility:sawmill" not in ids        # Infobox Shop -> deferred
+    assert "facility:thormac" not in ids        # Infobox NPC -> deferred
+
+def test_builder_skill_aggregation_and_count():
+    nodes = _nmap(build_facilities(_rows(), _ibs(), {})[0])
+    furn = nodes["facility:furnace"]
+    assert furn.kind is NodeKind.FACILITY and furn.name == "Furnace"
+    assert furn.data["skills"] == ["Crafting", "Smithing"]   # sorted distinct, "" dropped
+    assert furn.data["recipe_count"] == 3
+    assert furn.data["source_token"] == "Bucket:recipe.uses_facility=Furnace"
+    assert furn.data["source_url"] == "https://x/w/Furnace"
+
+def test_skill_less_facility_kept_without_skills_key():
+    # Sawmill is deferred (shop), so use an override to admit a skill-less facility instead
+    rows = [{"page_name": "Repair", "uses_facility": ["Armour stand"], "uses_skill": [""]}]
+    ibs = {"Armour stand": _ib(["Infobox Scenery"], "https://x/w/Armour_stand")}
+    nodes = _nmap(build_facilities(rows, ibs, {})[0])
+    n = nodes["facility:armour-stand"]
+    assert "skills" not in n.data            # no skill fabricated
+    assert n.data["recipe_count"] == 1
+
+def test_overrides_force_facility_and_exclude():
+    rows = [
+        {"page_name": "Smith X", "uses_facility": ["Blast Furnace"], "uses_skill": ["Smithing"]},
+        {"page_name": "Y", "uses_facility": ["Anvil"], "uses_skill": ["Smithing"]},
+    ]
+    ibs = {"Blast Furnace": _ib(["Infobox Activity"], "https://x/w/Blast_Furnace"),  # ambiguous
+           "Anvil": _ib(["Infobox Scenery"], "https://x/w/Anvil")}
+    ov = {"force_facility": [{"value": "Blast Furnace", "source_url": "https://x/w/Blast_Furnace"}],
+          "force_exclude": [{"value": "Anvil"}]}
+    nodes = _nmap(build_facilities(rows, ibs, ov)[0])
+    assert "facility:blast-furnace" in nodes     # ambiguous promoted by override
+    assert "facility:anvil" not in nodes         # force_exclude wins
+
+def test_per_page_name_distinctness_no_case_merge():
+    rows = [
+        {"page_name": "Bones", "uses_facility": ["Chaos altar"], "uses_skill": ["Prayer"]},
+        {"page_name": "Runes", "uses_facility": ["Chaos Altar"], "uses_skill": ["Runecraft"]},
+    ]
+    ibs = {"Chaos altar": _ib(["Infobox Scenery"]), "Chaos Altar": _ib(["Infobox Scenery"])}
+    nodes = _nmap(build_facilities(rows, ibs, {})[0])
+    # distinct page names -> distinct facilities; slug collision guard appends -2
+    assert "facility:chaos-altar" in nodes
+    assert "facility:chaos-altar-2" in nodes
+
+def test_deterministic():
+    a = build_facilities(_rows(), _ibs(), {})[0]
+    b = build_facilities(_rows(), _ibs(), {})[0]
+    assert [n.id for n in a] == [n.id for n in b]
