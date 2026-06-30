@@ -33,6 +33,7 @@ class NodeKind(str, Enum):
     PLACE = "place"                    # recursive containment node (geometry = chunk-set; supersedes legacy region)
     NPC = "npc"                        # non-combat character (shopkeeper, ruler, quest-giver)
     SHOP = "shop"                      # store with stock
+    FACILITY = "facility"              # processing station (anvil/furnace/altar/range); requires_facility target
 
 
 class EdgeType(str, Enum):
