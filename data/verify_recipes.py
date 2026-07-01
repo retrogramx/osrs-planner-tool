@@ -45,7 +45,7 @@ def main() -> int:
         elif t == "requires":
             g = gid.get(e.get("cond_group"))
             for ch in (g or {}).get("children", []):
-                if isinstance(ch, dict) and ch.get("atom_type") == "skill_level" and ch.get("ref_node") not in nid:
+                if isinstance(ch, dict) and ch.get("atom_type") == "skill_level" and (ch.get("ref_node") not in nid or not (ch.get("ref_node") or "").startswith("skill:")):
                     errors.append(f"[skill] {e['src']} skill_level ref {ch.get('ref_node')} not a node")
 
     if errors:

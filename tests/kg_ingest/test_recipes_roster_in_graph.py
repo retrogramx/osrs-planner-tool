@@ -22,7 +22,5 @@ def test_assemble_is_byte_stable():
     assert p.read_bytes() == before, "assemble is not byte-stable"
 
 def test_verify_recipes_passes():
-    import subprocess, sys, pathlib
-    root = pathlib.Path(__file__).resolve().parents[2]
-    r = subprocess.run([sys.executable, "data/verify_recipes.py"], cwd=root, capture_output=True, text=True)
+    r = subprocess.run([sys.executable, "data/verify_recipes.py"], cwd=ROOT, capture_output=True, text=True)
     assert r.returncode == 0, r.stdout + r.stderr
