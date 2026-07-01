@@ -60,6 +60,8 @@ def main() -> int:
     for n in sorted(set(unres_out))[:20]:
         print("     -", n)
     print(f"  unresolved MATERIAL/TOOL names (edge skipped): {len(unres_mat)}")
+    for m in sorted(unres_mat)[:20]:
+        print("     -", m)
     print(f"  unresolved FACILITIES (no requires_facility): {len(unres_fac)}")
     for f in sorted(unres_fac)[:20]:
         print("     -", f)

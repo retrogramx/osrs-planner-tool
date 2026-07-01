@@ -49,10 +49,10 @@ def main() -> int:
                        if n["id"].startswith("item:") and n["id"].split(":", 1)[1].isdigit()
                        and int(n["id"].split(":", 1)[1]) in eq_ids})
 
-    beta_only: list[int] = []
+    beta_only: set[int] = set()
     for iid in in_scope:
         if all("(beta)" in (r.get("page_name") or "").lower() for r in by_id[iid]):
-            beta_only.append(iid)
+            beta_only.add(iid)
     if beta_only:
         print(f"  skipping {len(beta_only)} item(s) with only (beta) records (data gap, not a selection bug): {beta_only}")
     in_scope_checked = [iid for iid in in_scope if iid not in beta_only]
