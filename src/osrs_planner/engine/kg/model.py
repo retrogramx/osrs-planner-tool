@@ -53,6 +53,7 @@ class EdgeType(str, Enum):
     SAME_ENTITY = "same_entity"        # identity bridge (variant->page, page->family); decision 5/6
     CONSUMES = "consumes"              # recipe -> item input (destroyed/transformed); reified {qty, role}
     PRODUCES = "produces"              # recipe -> item output; reified {qty}
+    REQUIRES_FACILITY = "requires_facility"   # recipe/activity -> facility (used-not-consumed infrastructure)
     DEGRADES_TO = "degrades_to"        # downgrade ladder through use (inverse of supersedes); dst=None = destroyed
     REPAIRS = "repairs"                # restore-from-broken (inverse of degrades_to's broken terminal); item->item
     HAS_BONUSES = "has_bonuses"               # item-variant -> its equipment_bonuses facet (item-src)

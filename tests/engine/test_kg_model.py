@@ -33,6 +33,7 @@ def test_edge_type_members_match_schema():
         "effect", "progress_towards", "supersedes", "same_entity",
         "consumes", "produces", "degrades_to", "repairs",
         "has_bonuses", "operates", "sells",
+        "requires_facility",
     }
 
 
@@ -236,7 +237,7 @@ def test_schema_declares_recipe_consumes_produces_live():
     assert schema["edge_kinds"]["consumes"]["status"] == "live"
     assert schema["edge_kinds"]["produces"]["status"] == "live"
     assert "charge_yield" in schema["node_kinds"]["recipe"]["data_keys"]
-    assert schema["vocab"]["consumes_role"] == ["material", "subject"]
+    assert schema["vocab"]["consumes_role"] == ["material", "subject", "tool"]
 
 
 def test_degrades_to_edge_exists_and_declared_live():

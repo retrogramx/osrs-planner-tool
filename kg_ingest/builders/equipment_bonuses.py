@@ -65,6 +65,8 @@ def build_equipment_bonuses(eq_records, owned_item_ids, canonical_pages):
         if src not in owned_item_ids:
             continue
         rec = select_bonus_record(by_id[iid], canonical_pages.get(iid))
+        if _is_beta(rec.get("page_name")):
+            continue  # only (beta) records available -> no canonical stats; skip (disclosed by verifier)
         data = {"item_id": iid, "slot": rec.get("slot"), "stats": rec["stats"]}
         if rec.get("slot") in _WEAPON_SLOTS and rec.get("weapon"):
             data["weapon"] = rec["weapon"]

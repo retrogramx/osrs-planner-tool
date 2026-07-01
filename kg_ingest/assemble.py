@@ -38,7 +38,7 @@ from kg_ingest.builders.map_varrock import build_map, make_item_resolver
 from kg_ingest.builders.world import build_world
 from kg_ingest.builders.quest_rewards import build_quest_rewards
 from kg_ingest.builders.quests import build_quests
-from kg_ingest.builders.recipes import build_recipes
+from kg_ingest.builders.recipes import build_recipes, build_recipe_roster
 from kg_ingest.builders.repairs import build_repairs
 from kg_ingest.builders.facilities import build_facilities
 from kg_ingest.builders.npcs import build_npcs
@@ -301,6 +301,7 @@ NPC_INFOBOX_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "wiki_
 RECIPE_FACILITY_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "recipe_facility_bucket.json"
 FACILITY_INFOBOX_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "wiki_facility_infoboxes.json"
 FACILITY_OVERRIDES_PATH = Path(__file__).resolve().parents[1] / "data" / "map" / "facility_overrides.json"
+RECIPE_BUCKET_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "recipe_bucket.json"
 
 
 def _load_world_infoboxes() -> dict | None:
@@ -368,6 +369,12 @@ def _load_facility_overrides() -> dict:
         return {"force_facility": [], "force_exclude": []}
     d = json.loads(FACILITY_OVERRIDES_PATH.read_text())
     return {"force_facility": d.get("force_facility", []), "force_exclude": d.get("force_exclude", [])}
+
+
+def _load_recipe_records() -> list[dict]:
+    if not RECIPE_BUCKET_PATH.exists():
+        return []
+    return json.loads(RECIPE_BUCKET_PATH.read_text())["bucket"]
 
 
 ITEMS_EQUIPMENT_PATH = Path(__file__).resolve().parents[1] / "data" / "items_equipment.json"
@@ -573,6 +580,18 @@ def assemble() -> None:
         assert not _fac_edges, "facility layer must emit zero edges"
         owned_ids = owned_ids | {n.id for n in fac_nodes}
 
+    # Recipe ROSTER (slice 1: core production skills). Built AFTER facilities (so requires_facility
+    # targets committed facility: nodes) and BEFORE _collect_referenced_ids (so consumed/produced
+    # items auto-import via build_items). recipe-src edges + skill-gate cond_groups -> their own rekey.
+    rr_nodes: list[Node] = []
+    if fac_nodes:
+        rr_nodes, rr_edges, rr_groups = build_recipe_roster(
+            _load_recipe_records(), _load_item_dict_records(), fac_nodes, {n.slug for n in r_nodes})
+        rr_nodes, rr_edges, rr_groups = rekey(rr_nodes, rr_edges, rr_groups)
+        edges = edges + rr_edges
+        groups.update(rr_groups)
+        owned_ids = owned_ids | {n.id for n in rr_nodes}
+
     referenced_all = _collect_referenced_ids(edges + dg_edges + rp_edges, groups)
     referenced_item_ids = {r for r in referenced_all if r.startswith("item:")} - owned_ids
     i_nodes, i_edges, _ = build_items(
@@ -615,7 +634,7 @@ def assemble() -> None:
     #    (with tasks list) is first-seen and wins if any stale supporting diary node
     #    were somehow included (it shouldn't be, since diary is excluded from _LEAF_DOMAINS).
     nodes = dedup_nodes(
-        q_nodes + g_nodes + cg_nodes + d_nodes + dg_nodes + content_nodes + r_nodes + i_nodes + eqb_nodes + world_nodes + map_nodes + sh_nodes + npc_nodes + fac_nodes + s_nodes
+        q_nodes + g_nodes + cg_nodes + d_nodes + dg_nodes + content_nodes + r_nodes + i_nodes + eqb_nodes + world_nodes + map_nodes + sh_nodes + npc_nodes + fac_nodes + rr_nodes + s_nodes
     )
 
     # 5) serialize, sorted deterministically.

@@ -68,7 +68,7 @@
     },
     "counter": {"status": "reserved", "key_prefix": "counter:<slug>", "id_basis": "slug", "notes": "An accumulating counter (counts_toward feed).", "data_keys": []},
     "drop_table": {"status": "reserved", "key_prefix": "drop_table:<slug>", "id_basis": "slug", "notes": "Reified table/rolls/membership (decision 3 / §4).", "data_keys": ["rolls"]},
-    "recipe": {"status": "live", "key_prefix": "recipe:<slug>", "id_basis": "slug", "notes": "{materials+tools+facility+skill+xp->output} (decision 3 / §4).", "data_keys": ["xp", "ticks", "charge_yield", "charge_capacity", "notes"]},
+    "recipe": {"status": "live", "key_prefix": "recipe:<slug>", "id_basis": "slug", "notes": "{materials+tools+facility+skill+xp->output} (decision 3 / §4).", "data_keys": ["xp", "ticks", "charge_yield", "charge_capacity", "notes", "members"]},
     "equipment_bonuses": {"status": "live", "key_prefix": "equipment_bonuses:<item_id>", "id_basis": "cache_id", "notes": "The gear/BIS substrate facet (has_bonuses). Supersedes part of the v1 'gear_loadout' kind.", "data_keys": ["item_id", "slot", "stats", "weapon"]},
     "item_set": {"status": "reserved", "key_prefix": "item_set:<slug>", "id_basis": "slug", "notes": "Named item set (member_of). Supersedes part of the v1 'gear_loadout' kind.", "data_keys": []},
     "set_effect": {"status": "reserved", "key_prefix": "set_effect:<slug>", "id_basis": "slug", "notes": "The bonus an item_set confers when complete.", "data_keys": []},
@@ -150,7 +150,7 @@
     "teaches": {"status": "reserved", "domain": ["npc"], "range": ["skill"], "dst": "required", "cond_group": "forbidden", "reified": false, "notes": "Tutors."},
     "spawns_at": {"status": "reserved", "domain": ["item"], "range": ["place"], "dst": "required", "cond_group": "forbidden", "reified": false, "notes": "Free ground spawns (3rd item channel)."},
     "service": {"status": "reserved", "domain": ["npc", "facility"], "range": "*", "dst": "required", "cond_group": "optional", "reified": true, "notes": "repair/toll/lost-item; cost+cond. Range is an effect target (effect not yet a node kind)."},
-    "requires_facility": {"status": "reserved", "domain": ["activity", "recipe"], "range": ["facility"], "dst": "required", "cond_group": "forbidden", "reified": false, "notes": "anvil/furnace/altar/range."},
+    "requires_facility": {"status": "live", "domain": ["activity", "recipe"], "range": ["facility"], "dst": "required", "cond_group": "forbidden", "reified": false, "notes": "anvil/furnace/altar/range."},
     "instance_of": {"status": "reserved", "domain": ["farming_patch", "item"], "range": ["place", "item", "facility"], "dst": "required", "cond_group": "forbidden", "reified": false, "notes": "place x type instances; item-variant -> type. The spec's abstract range 'type' is concretized here as place/item/facility."}
   },
 
@@ -195,7 +195,7 @@
     "recommended_strength": ["required_for_survival", "strongly_recommended", "optional"],
     "drop_type_note": "Observable rate only (Option-A). The loot MECHANISM (RDT/GDT vs direct vs on-task) is NOT fabricated.",
     "effect_kind": ["stat_multiplier", "rate_multiplier", "capacity_change", "fee_waiver", "behavior_toggle", "recurring_resource", "access"],
-    "consumes_role": ["material", "subject"],
+    "consumes_role": ["material", "subject", "tool"],
     "degrade_terminal": ["destroyed", "reverts_to", "broken"],
     "degrade_trigger": ["per_use", "per_hit"]
   }
