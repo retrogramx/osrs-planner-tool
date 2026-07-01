@@ -237,8 +237,7 @@ def test_schema_declares_recipe_consumes_produces_live():
     assert schema["edge_kinds"]["consumes"]["status"] == "live"
     assert schema["edge_kinds"]["produces"]["status"] == "live"
     assert "charge_yield" in schema["node_kinds"]["recipe"]["data_keys"]
-    assert "material" in schema["vocab"]["consumes_role"]
-    assert "subject" in schema["vocab"]["consumes_role"]
+    assert schema["vocab"]["consumes_role"] == ["material", "subject", "tool"]
 
 
 def test_degrades_to_edge_exists_and_declared_live():
