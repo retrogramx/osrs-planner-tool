@@ -25,10 +25,11 @@ def build_recipes(records):
     edges: list[Edge] = []
     for rec in records:
         rid = f"recipe:{rec['slug']}"
-        data = {"charge_yield": rec["charge_yield"], "charge_capacity": rec["charge_capacity"],
-                "source_token": rec["source_token"]}
+        data = {"charge_yield": rec["charge_yield"], "charge_capacity": rec["charge_capacity"]}
         if rec.get("notes"):
             data["notes"] = rec["notes"]
+        if rec.get("source_token"):
+            data["source_token"] = rec["source_token"]
         nodes.append(Node(id=rid, kind=NodeKind.RECIPE, name=rec["name"], slug=rec["slug"], data=data))
         slot = 0
         # materials (consumes, role=material) in a deterministic order (by item_id)
