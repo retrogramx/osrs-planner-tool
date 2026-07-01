@@ -4,7 +4,7 @@ A public, account-type-aware Old School RuneScape **profile + goal/route planner
 **knowledge graph**. Evolved from earlier domain "bricks" (quests, diaries, drops, cost/income, account
 ingestion) toward a **richly-typed entity graph of all of Gielinor**.
 
-## ⭐ Current direction — v2 ontology + item-facet + location spine + the first two bottom-up layers (shops + NPC operators) all MERGED; next = the remaining bottom-up layers.
+## ⭐ Current direction — v2 ontology + item-facet + location spine + FOUR bottom-up layers (shops · NPC operators · facilities · recipes incl. all-makeable) all MERGED; next = recipe-id STABILITY, then the remaining objects/resources halves.
 - **`kg/schema.json`** is the ontology AS DATA (single source of truth; closed vocab + `legacy_*` sections) — the
   contract `validate_kg.py` enforces. Prose spec: `docs/superpowers/specs/2026-06-25-entity-graph-ontology-v2.md`.
 - **Done & on `main`:** (PR #16) schema-as-data + the **item-facet layer** (item nodes/variants `same_entity`, charge
@@ -23,10 +23,22 @@ ingestion) toward a **richly-typed entity graph of all of Gielinor**.
   parented via a new npc-infobox brick (`fetch_npc_infoboxes.py`; the brick is the NPC filter — no `{{Infobox NPC}}` →
   not a node), with `operates` edges (closing the shop layer's deferred operators) — and the 14 multi-location shops
   RESOLVED via operators (the 13 Slayer-Rewards masters each `located_in` its place; `role` unset, `operates`-edge-only,
-  NO role node), `verify_npcs` + `verify_npc_coverage`. Graph = **5418 nodes / 10137 edges**. Foundation audited GREEN (8/8 bricks reproduce from `data/raw/`).
-- **← NOW: the remaining bottom-up layers (shops ✅ PR #21 · NPC operators ✅ PR #23).** The in-game `Map_icon` legend is
-  the authoritative roadmap: **objects/resources next** (training spots: anvils/furnaces/fishing/mining/farming) ·
-  transport (nodes + `gives_access`, built together) · facilities (banks/altars/GE). (Broader NON-operator NPCs — skill
+  NO role node), `verify_npcs` + `verify_npc_coverage`;
+  (PR #24) the **facility taxonomy layer** (objects/resources slice 1) — 255 `facility:` nodes from `Bucket:recipe.uses_facility`,
+  skill-tagged from `uses_skill`, ZERO edges (pure roster; capabilities don't place), via an infobox-presence filter
+  (Scenery/Construction→facility; NPC/Shop→defer) + redirect-aware canonical dedup + owner `facility_overrides.json`;
+  (PR #25 + all-makeable ff `e60818e`) the **recipe layer** — **4548 reified `recipe:` nodes** from `Bucket:recipe`:
+  `consumes`(material/tool)/`produces`/**`requires_facility`**(→ the facilities)/`requires`(skill_level), xp per-skill dict,
+  per-method-row. Slice 1 = 6 core production skills; **slice 2 (all-makeable) = output-based** (every resolvable-output row,
+  incl. **1832 no-skill combinations** — no `requires`/no `xp`), `verify_recipes` + `verify_recipe_coverage`.
+  Graph = **15114 nodes / 30136 edges** (item roster ~5900 via auto-import). Foundation audited GREEN (8/8 bricks reproduce from `data/raw/`).
+- **← NOW: recipe-id STABILITY** (its own slice — spec/plan TBD). Recipe ids aren't stable addresses: the slug scheme
+  disambiguates only when-needed, so adding rows silently re-keys built recipes (19 re-slugged at the all-makeable merge),
+  and **~816/4548 (17.9%) recipe ids are order-dependent `-k` collision guards** (Bucket row-order dependent; byte-stable
+  only given the committed snapshot). Fix = an intrinsic content-addressed slug + a `validate_kg` stability invariant across
+  both layers (brainstorm the mechanism: content-hash vs frozen readable-map). **Then the remaining objects/resources halves:**
+  gather sites (blocked on a yield source-hunt — `Bucket:Mine` empty — + chunk geometry) · farming patches (own slice) ·
+  transport (nodes + `gives_access`) · placed facilities (banks/altars/GE `located_in`). (Broader NON-operator NPCs — skill
   tutors, slayer-masters-as-a-role, bankers, quest-givers — are DEFERRED: not category-sourceable on the wiki, need their
   own source-hunt.)
   Each from its OWN structured wiki source + its own coverage verifier; each layer's `located_in` is a completeness
@@ -86,9 +98,13 @@ ingestion) toward a **richly-typed entity graph of all of Gielinor**.
    coverage verifier). New place_types `sea` + `point_of_interest`; `members` flag; two-level typing (`place_type` coarse,
    `content_kind` advisory). Account-wide unlocks ride as conditional edge-modifiers gated by diary/quest completion.
    Then **re-homing** (PR #20): `parent_for` signal stack + `world_parenting.json` + acyclicity gate, residual → 11.
-4. ← **NOW: the bottom-up layers** — shops ✅ (PR #21, `build_shops`) · NPC operators ✅ (PR #23, `build_npcs` +
-   `fetch_npc_infoboxes.py`; operates + multi-location resolution) · objects/resources (next) · transport (`gives_access`) ·
-   facilities, each `located_in` the skeleton + its own structured source + coverage verifier.
+4. **The bottom-up layers** — shops ✅ (PR #21, `build_shops`) · NPC operators ✅ (PR #23, `build_npcs` +
+   `fetch_npc_infoboxes.py`; operates + multi-location resolution) · facility taxonomy ✅ (PR #24, `build_facilities`,
+   pure roster) · recipes ✅ (PR #25 core skills + all-makeable ff `e60818e`, `build_recipe_roster`, 4548 nodes wiring
+   `requires_facility` → the facilities). ← **NOW: recipe-id STABILITY** (intrinsic content-addressed slug + a
+   `validate_kg` invariant; ~816 recipe ids are order-dependent — its own slice). **Then still open:** gather sites
+   (blocked — yield source-hunt + chunk geometry) · farming patches · transport (`gives_access`) · placed facilities
+   (banks/altars/GE `located_in`), each `located_in` the skeleton + its own structured source + coverage verifier.
 5. **Then (deferred):** full item-roster scale-up · wield-requirements (`requires` cond_group) · intrinsic attrs
    (value/alch/weight/tradeable) · facility-recharge + the `service` edge (repair fee) · chunk geometry · governance
    edges + `faction` nodes · cache-id node-import · aliases.
@@ -120,10 +136,14 @@ ingestion) toward a **richly-typed entity graph of all of Gielinor**.
   precedence bugs this way in PR #20). `parent_for` = precision-first rungs with backbone-preference PER RUNG (a content
   category beats a backbone infobox). The committed place graph must stay acyclic & single-rooted at `place:gielinor`
   (now a `validate_kg` hard-fail, not just `verify_world`).
-- **Status: item-facet + connective Varrock + world skeleton + re-homing + all-shops + NPC-operators layers + the edge-id
-  SPAN widen MERGED to `main` (PRs #16/#17/#19/#20/#21/#22/#23); graph 5418 nodes / 10137 edges. Residuals (disclosed,
-  report-not-fail): world-skeleton parenting = 11; shops = 357 parented / 14 multi-loc / 197 FLAG (50+103+44); NPC
-  operators = 357 located_in / 19 multi-loc / 47 location-unresolved + 6 Varrock-overlap (build_map owns them). The 44
-  shop + 47 npc location-unresolved OVERLAP = the place-layer backfill to-do (missing skeleton places + name-norm).** New work branches off `main`.
+- **Status: item-facet + connective Varrock + world skeleton + re-homing + all-shops + NPC-operators + facility-taxonomy +
+  recipes (core + all-makeable) layers + the edge-id SPAN widen MERGED to `main` (PRs #16/#17/#19/#20/#21/#22/#23/#24/#25 +
+  all-makeable ff `e60818e`); graph 15114 nodes / 30136 edges. Residuals (disclosed, report-not-fail): world-skeleton
+  parenting = 11; shops = 357 parented / 14 multi-loc / 197 FLAG (50+103+44); NPC operators = 357 located_in / 19 multi-loc /
+  47 location-unresolved + 6 Varrock-overlap (build_map owns them); recipes = coverage 660 distinct unresolvable outputs /
+  834 rows skipped (Construction/Sailing scenery → future scenery layer), 77 unresolved materials, 82 unresolved facilities
+  (mostly operator NPCs, not facilities). Known deviation: 19 slice-1 recipe ids re-slugged at the all-makeable merge
+  (payloads preserved) — recipe-id STABILITY is the NOW slice (~816 order-dependent ids). The 44 shop + 47 npc
+  location-unresolved OVERLAP = the place-layer backfill to-do (missing skeleton places + name-norm).** New work branches off `main`.
 - Licensing seam (non-commercial project): wiki text = CC BY-NC-SA; cache content = Jagex IP; decoder tooling = BSD/ISC.
 ```
