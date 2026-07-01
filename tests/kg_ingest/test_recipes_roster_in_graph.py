@@ -6,10 +6,10 @@ def _load(name): return json.loads((ROOT / "kg" / name).read_text())
 def test_recipe_roster_present_and_wired():
     nodes = _load("nodes.json"); edges = _load("edges.json")
     recipes = [n for n in nodes if n["id"].startswith("recipe:")]
-    assert len(recipes) >= 1500, f"expected a large recipe roster, got {len(recipes)}"
+    assert len(recipes) >= 4000, f"expected a large recipe roster, got {len(recipes)}"
     nid = {n["id"] for n in nodes}
     rf = [e for e in edges if e["type"] == "requires_facility"]
-    assert len(rf) >= 500, f"expected many requires_facility edges, got {len(rf)}"
+    assert len(rf) >= 1000, f"expected many requires_facility edges, got {len(rf)}"
     for e in rf:
         assert e["dst"] in nid and e["dst"].startswith("facility:")   # targets a committed facility node
     # a known recipe wires materials + facility + skill gate

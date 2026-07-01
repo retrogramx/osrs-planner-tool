@@ -95,10 +95,8 @@ def build_recipe_roster(recipe_rows, item_dict_records, facility_nodes, existing
 
     fac_lut = _facility_lookup(facility_nodes)
 
-    core = []
+    makeable = []
     for r in recipe_rows:
-        if not ({s for s in _as_list(r.get("uses_skill")) if s} & CORE_SKILLS):
-            continue
         try:
             pj = json.loads(r.get("production_json") or "{}")
         except Exception:
@@ -106,14 +104,14 @@ def build_recipe_roster(recipe_rows, item_dict_records, facility_nodes, existing
         out = pj.get("output")
         if not (isinstance(out, dict) and out.get("name")):
             continue  # output-less XP activity -> deferred (slice 1)
-        core.append((r, pj, out))
-    page_rows = Counter(r.get("page_name") for r, _, _ in core)
+        makeable.append((r, pj, out))
+    page_rows = Counter(r.get("page_name") for r, _, _ in makeable)
 
     nodes: list[Node] = []
     edges: list[Edge] = []
     groups: dict[int, ConditionGroup] = {}
     claimed = {s: s for s in existing_recipe_slugs}  # reserve charge-recipe slugs
-    for r, pj, out in core:
+    for r, pj, out in makeable:
         out_dst = resolve_item(out["name"])
         if out_dst is None:
             continue  # unresolvable OUTPUT -> skip whole recipe (disclosed by coverage)

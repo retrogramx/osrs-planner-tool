@@ -127,3 +127,17 @@ def test_unresolvable_material_skips_edge_not_recipe():
     mat_edges = [e for e in edges if e.type is EdgeType.CONSUMES and e.data.get("role") == "material"]
     assert len(mat_edges) == 1                                  # only the resolvable material -> 1 edge (not 2)
     assert mat_edges[0].dst == "item:2349"                      # the resolvable one (Bronze bar)
+
+
+def test_no_skill_recipe_builds_without_requires_or_xp():
+    # a resolvable-output recipe with NO uses_skill -> should build as consumes/produces, no requires/xp
+    rows = [_row("Combined thing", None, None, None,
+                {"materials": [{"quantity": "1", "name": "Bronze bar"}],
+                 "output": {"quantity": "1", "name": "Bronze dagger"}})]   # note: NO "skills" key
+    nodes, edges, groups = build_recipe_roster(rows, _itemdict(), _facilities(), set())
+    n = _map(nodes)["recipe:bronze-dagger"]
+    assert "xp" not in n.data                                              # no skill -> no xp key
+    assert groups == {}                                                    # no skill gate -> no cond_group
+    assert not any(e.type is EdgeType.REQUIRES for e in edges)             # no requires edge
+    assert any(e.type is EdgeType.CONSUMES for e in edges)                 # consumes still emitted
+    assert any(e.type is EdgeType.PRODUCES for e in edges)                 # produces still emitted
