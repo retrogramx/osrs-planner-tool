@@ -53,10 +53,8 @@ def build_recipes(records):
 
 
 # ---------------------------------------------------------------------------
-# build_recipe_roster — Bucket:recipe production roster (core skills)
+# build_recipe_roster — Bucket:recipe production roster (all rows with a resolvable output)
 # ---------------------------------------------------------------------------
-
-CORE_SKILLS = {"Smithing", "Cooking", "Crafting", "Fletching", "Runecraft", "Herblore"}
 
 
 def _as_list(v):
@@ -83,8 +81,8 @@ def _facility_lookup(facility_nodes):
 
 
 def build_recipe_roster(recipe_rows, item_dict_records, facility_nodes, existing_recipe_slugs):
-    """Bucket:recipe roster for the core production skills. Reified recipe: nodes +
-    consumes(material/tool)/produces/requires_facility/requires(skill_level) edges.
+    """Bucket:recipe roster — all rows with a resolvable output item. Reified recipe:
+    nodes + consumes(material/tool)/produces/requires_facility/requires(skill_level) edges.
     Item names resolve to ids (html-unescaped); unresolvable -> skipped + disclosed.
     Pure, deterministic; coexists additively with the charge recipes."""
     resolve = make_item_resolver(item_dict_records)

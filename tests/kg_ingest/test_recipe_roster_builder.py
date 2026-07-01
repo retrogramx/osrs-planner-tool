@@ -16,7 +16,7 @@ def test_schema_additive_changes():
 # Task 3: build_recipe_roster fixture tests
 # ---------------------------------------------------------------------------
 from osrs_planner.engine.kg.model import Node, NodeKind, AtomType
-from kg_ingest.builders.recipes import build_recipe_roster, CORE_SKILLS
+from kg_ingest.builders.recipes import build_recipe_roster
 
 
 def _facilities():
