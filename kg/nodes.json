@@ -113578,7 +113578,8 @@
   {
     "data": {
       "charge_capacity": 100000,
-      "charge_yield": 40
+      "charge_yield": 40,
+      "source_token": "The ring can also be charged with noted and unnoted rings of recoil to give it the recoil effect, renaming the item as the Ring of suffering (r)."
     },
     "id": "recipe:charge-ring-of-suffering",
     "kind": "recipe",
@@ -113588,7 +113589,8 @@
   {
     "data": {
       "charge_capacity": 20000,
-      "charge_yield": 100
+      "charge_yield": 100,
+      "source_token": "Each vial and 200 blood runes adds 100 charges to the scythe, with it being able to hold up to 20,000 charges"
     },
     "id": "recipe:charge-scythe-of-vitur",
     "kind": "recipe",

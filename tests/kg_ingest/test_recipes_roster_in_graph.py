@@ -20,3 +20,9 @@ def test_assemble_is_byte_stable():
     p = ROOT / "kg" / "nodes.json"; before = p.read_bytes()
     subprocess.run([sys.executable, "-m", "kg_ingest.assemble"], cwd=ROOT, check=True)
     assert p.read_bytes() == before, "assemble is not byte-stable"
+
+def test_verify_recipes_passes():
+    import subprocess, sys, pathlib
+    root = pathlib.Path(__file__).resolve().parents[2]
+    r = subprocess.run([sys.executable, "data/verify_recipes.py"], cwd=root, capture_output=True, text=True)
+    assert r.returncode == 0, r.stdout + r.stderr

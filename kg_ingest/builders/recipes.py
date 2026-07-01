@@ -25,7 +25,8 @@ def build_recipes(records):
     edges: list[Edge] = []
     for rec in records:
         rid = f"recipe:{rec['slug']}"
-        data = {"charge_yield": rec["charge_yield"], "charge_capacity": rec["charge_capacity"]}
+        data = {"charge_yield": rec["charge_yield"], "charge_capacity": rec["charge_capacity"],
+                "source_token": rec["source_token"]}
         if rec.get("notes"):
             data["notes"] = rec["notes"]
         nodes.append(Node(id=rid, kind=NodeKind.RECIPE, name=rec["name"], slug=rec["slug"], data=data))
