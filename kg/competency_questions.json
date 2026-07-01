@@ -52,5 +52,11 @@
     ,{ "id": "cq-thormac-not-a-facility",
       "question": "Is Thormac a facility (or a deferred service NPC)?",
       "method": "node_absent", "target": "facility:thormac", "expect": 0 }
+    ,{ "id": "cq-recipe-bronze-platebody-materials",
+      "question": "What materials does it take to smith a Bronze platebody?",
+      "method": "recipe_materials", "target": "recipe:bronze-platebody", "expect_min": 1 }
+    ,{ "id": "cq-recipes-at-anvil",
+      "question": "What can I make at an Anvil?",
+      "method": "made_at_facility", "target": "facility:anvil", "expect_min": 10 }
   ]
 }

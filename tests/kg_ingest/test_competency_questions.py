@@ -86,6 +86,11 @@ def _node_absent(store, target):
     return 0 if target not in store.nodes else 1
 
 
+def _made_at_facility(store, target):
+    # set of recipe nodes that declare a requires_facility edge to the target facility
+    return {e.src for e in store.edges if e.type is EdgeType.REQUIRES_FACILITY and e.dst == target}
+
+
 def test_all_competency_questions_pass():
     store = JsonKGStore.from_dir(KG)
     with open(ROOT / "kg" / "competency_questions.json") as f:
@@ -122,6 +127,8 @@ def test_all_competency_questions_pass():
             answer = _node_absent(store, cq["target"])
             assert answer == cq["expect"], f"{cq['id']}: got {answer!r} != {cq['expect']!r}"
             continue
+        elif cq["method"] == "made_at_facility":
+            answer = _made_at_facility(store, cq["target"])
         else:
             raise AssertionError(f"unknown method {cq['method']!r}")
         assert len(answer) >= cq["expect_min"], f"{cq['id']}: got {len(answer)} < {cq['expect_min']}"
