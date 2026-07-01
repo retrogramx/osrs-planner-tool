@@ -58,7 +58,10 @@ def main() -> int:
     print("RECIPE COVERAGE (report-not-fail):")
     print(f"  rows with a structured output: {out_rows}")
     print(f"  recipes built (resolvable output): {built}")
-    print(f"  skipped (unresolvable output): {len(set(unres_out))} distinct; by skill: {dict(skip_by_skill.most_common(8))}")
+    print(f"  skipped (unresolvable output): {len(set(unres_out))} distinct outputs / {out_rows - built} rows")
+    # per-skill tally: a multi-skill row is counted under EACH of its skills, so these
+    # bucket counts sum to >= the skipped-row total. Full breakdown (not truncated).
+    print(f"    by skill (per-skill; multi-skill rows counted under each): {dict(skip_by_skill.most_common())}")
     for n in sorted(set(unres_out))[:20]:
         print("     -", n)
     print(f"  unresolved MATERIAL/TOOL names (edge skipped): {len(unres_mat)}")

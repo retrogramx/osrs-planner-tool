@@ -28,8 +28,9 @@ recipe has no skill.
 - Tests: update the builder/coverage tests that assumed a skill filter — a **no-skill recipe now BUILDS**
   (recipe node + `consumes`/`produces`, no `requires`, no `xp`), where slice 1 skipped it.
 - Everything else — item/facility resolution, the four edge types, per-skill xp dict, slug scheme,
-  `verify_recipes`, assemble wiring — is **unchanged**. Byte-stable re-assemble; strict superset of
-  slice 1 (core recipe nodes are identical), purely additive.
+  `verify_recipes`, assemble wiring — is **unchanged**. Byte-stable re-assemble; **near-superset** of
+  slice 1 (all slice-1 recipe *data* preserved; **19 core recipe ids are re-slugged** by method-
+  disambiguation — see §8), purely additive.
 
 ## 3. Live-measured scope (committed snapshot)
 
@@ -74,3 +75,22 @@ the optional facets**: no `requires` edge (no `skill_level` atoms → `if atoms:
   **Sailing** (unsourced) → the future **scenery/objects layer** (`produces → scenery`).
 - The ~1,898 output-less XP activities (Agility / Prayer-offerings / Thieving / gather-training) →
   a future **training-method** node kind (no output to produce).
+
+## 8. Known deviation — 19 slice-1 recipe ids re-slugged (owner-blessed)
+
+The slug scheme disambiguates only *when needed*: a recipe gets a bare slug (`recipe:crystal-bow`)
+when its wiki page has one makeable row, and a method suffix (`recipe:crystal-bow-crafting`) once the
+page has 2+. Admitting each page's previously-filtered sibling methods (mostly no-skill **NPC
+recharge/combine** recipes — Ilfeen, Oziach, Abbot Langley, …) flips `multi` true on 19 single-method
+pages, so those recipes inherit their `-<method>` suffix. **All 19 payloads (materials/tools/facility/
+skill-gate/xp) are preserved verbatim — only the node id moved** (verified by payload-signature diff of
+merge-base vs head). Nothing outside `kg/*.json` references the 19 ids (both competency-question recipe
+ids survive), so the graph stays internally consistent.
+
+This is NOT a strict byte-identical superset. It is the visible symptom of a slug scheme that was
+never order-stable: **424/2292 (18.5%) of the recipe ids already on `main` are order-dependent
+collision guards** (`recipe:aether-rune-3`, …) whose numeric suffix is assigned in Bucket-snapshot
+row order. The graph is byte-stable given the committed snapshot, but ~1-in-5 recipe ids would
+reshuffle on a future re-fetch that reorders rows. **Recipe-id stability is deferred to its own next
+slice** — an intrinsic (content-addressed) slug + a `validate_kg` stability invariant, covering the
+full order-dependent surface across both layers.

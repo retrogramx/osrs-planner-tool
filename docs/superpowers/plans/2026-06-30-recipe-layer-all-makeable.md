@@ -14,7 +14,7 @@
 - **Byte-stable assemble:** re-running `./venv/bin/python -m kg_ingest.assemble` produces identical `kg/*.json`.
 - **Never fabricate:** unresolvable output → recipe skipped; unresolvable material/tool/facility → edge skipped; all disclosed by the coverage verifier. Every recipe node keeps its verbatim `source_token`.
 - `data/validate_kg.py` exits 0; `verify_recipes.py` exits 0 (structural hard-fail); full `pytest -q --continue-on-collection-errors` green (the 4 `tests/drop_rates/` collection errors are pre-existing & unrelated).
-- **Strict superset:** removing the filter only ADDS rows; slice-1 core recipe nodes are byte-identical.
+- **Near-superset:** removing the filter only ADDS rows and preserves all slice-1 recipe *data*, BUT re-slugs **19** slice-1 recipe ids (a page gaining a sibling method flips the `multi` disambiguation → the original recipe inherits its `-<method>` suffix; payloads preserved verbatim, only the id moves — owner-blessed deviation, spec §8). NOT byte-identical. Recipe-id stability (the pre-existing ~424 order-dependent ids on `main`) is deferred to its own next slice.
 - Pre-flight (validated): output-based build = **4,546 recipe nodes** (2,290 core + 1,832 no-skill + 424 non-core); edges consumes 10,168 / produces 4,546 / requires_facility 1,467 / requires 2,714; **1,847 new item auto-imports** (item roster ~4,050 → ~5,900).
 - Work on branch `feat/recipe-noncore` (the spec is committed there). Commit after each task.
 
@@ -239,3 +239,4 @@ Expected: byte-stable; validate_kg 0; verify_recipes PASSED (~4,546 grounded); c
 - Spec §5 (confirmed shapes; blast-radius risk) → Task 1 Step 5 blast-radius handling (root-brick fix if needed). ✅
 - Spec §6 (verification) → Task 1 gates + Task 2 coverage + Final. ✅
 - Spec §7 (deferrals auto-skipped) → enforced by the output-resolution skip (no code path builds an unresolvable-output recipe). ✅
+- Spec §8 (19 slice-1 recipe ids re-slugged; payloads preserved; recipe-id stability deferred) → surfaced by the whole-branch review, verified by payload-signature diff, owner-blessed. NOT byte-identical to slice 1. ✅
