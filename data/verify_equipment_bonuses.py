@@ -8,6 +8,8 @@ the selection rule and gate the corruption classes the 2026-06-25 audit found:
   - exactly one record selected per item;
   - no all-zero stat block on a COMBAT slot (the empty-variant failure mode);
   - structural: 14 stat fields present + numeric; known slot; weapon slot MUST have a weapon block.
+Items where ALL records are (beta) pages are skipped (build_equipment_bonuses also skips them;
+disclosed gap — no canonical stats available on the wiki for these ids).
 Exits non-zero on any violation.
 """
 from __future__ import annotations
@@ -47,7 +49,15 @@ def main() -> int:
                        if n["id"].startswith("item:") and n["id"].split(":", 1)[1].isdigit()
                        and int(n["id"].split(":", 1)[1]) in eq_ids})
 
+    beta_only: list[int] = []
     for iid in in_scope:
+        if all("(beta)" in (r.get("page_name") or "").lower() for r in by_id[iid]):
+            beta_only.append(iid)
+    if beta_only:
+        print(f"  skipping {len(beta_only)} item(s) with only (beta) records (data gap, not a selection bug): {beta_only}")
+    in_scope_checked = [iid for iid in in_scope if iid not in beta_only]
+
+    for iid in in_scope_checked:
         rec = select_bonus_record(by_id[iid], id2page.get(iid))
         tag = f"item:{iid}"
         if iid not in id2page:
@@ -87,7 +97,7 @@ def main() -> int:
             print("  -", e)
         return 1
     print("EQUIPMENT-BONUSES VERIFICATION PASSED — all in-scope bonuses source-grounded.")
-    print(f"  in-scope equippable items: {len(in_scope)}")
+    print(f"  in-scope equippable items checked: {len(in_scope_checked)} (skipped {len(beta_only)} beta-only)")
     return 0
 
 
