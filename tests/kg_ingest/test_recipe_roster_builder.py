@@ -114,3 +114,16 @@ def test_deterministic():
     a = build_recipe_roster(rows, _itemdict(), _facilities(), set())[0]
     b = build_recipe_roster(rows, _itemdict(), _facilities(), set())[0]
     assert [n.id for n in a] == [n.id for n in b]
+
+
+def test_unresolvable_material_skips_edge_not_recipe():
+    rows = [_row("Bronze dagger", ["Smithing"], None, None,
+                {"materials": [{"quantity": "1", "name": "Bronze bar"},
+                               {"quantity": "1", "name": "Nonexistent ingredient xyz"}],
+                 "skills": [{"name": "Smithing", "level": "1", "experience": "12.5"}],
+                 "output": {"quantity": "1", "name": "Bronze dagger"}})]
+    nodes, edges, _ = build_recipe_roster(rows, _itemdict(), _facilities(), set())
+    assert any(n.id == "recipe:bronze-dagger" for n in nodes)  # recipe kept despite an unresolvable material
+    mat_edges = [e for e in edges if e.type is EdgeType.CONSUMES and e.data.get("role") == "material"]
+    assert len(mat_edges) == 1                                  # only the resolvable material -> 1 edge (not 2)
+    assert mat_edges[0].dst == "item:2349"                      # the resolvable one (Bronze bar)
