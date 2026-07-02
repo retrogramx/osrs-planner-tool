@@ -4,7 +4,7 @@ A public, account-type-aware Old School RuneScape **profile + goal/route planner
 **knowledge graph**. Evolved from earlier domain "bricks" (quests, diaries, drops, cost/income, account
 ingestion) toward a **richly-typed entity graph of all of Gielinor**.
 
-## ⭐ Current direction — v2 ontology + item-facet + location spine + FOUR bottom-up layers (shops · NPC operators · facilities · recipes incl. all-makeable) all MERGED; next = recipe-id STABILITY, then the remaining objects/resources halves.
+## ⭐ Current direction — v2 ontology + item-facet + location spine + FOUR bottom-up layers (shops · NPC operators · facilities · recipes incl. all-makeable) + recipe-id STABILITY all MERGED; next = the remaining objects/resources halves.
 - **`kg/schema.json`** is the ontology AS DATA (single source of truth; closed vocab + `legacy_*` sections) — the
   contract `validate_kg.py` enforces. Prose spec: `docs/superpowers/specs/2026-06-25-entity-graph-ontology-v2.md`.
 - **Done & on `main`:** (PR #16) schema-as-data + the **item-facet layer** (item nodes/variants `same_entity`, charge
@@ -31,12 +31,12 @@ ingestion) toward a **richly-typed entity graph of all of Gielinor**.
   `consumes`(material/tool)/`produces`/**`requires_facility`**(→ the facilities)/`requires`(skill_level), xp per-skill dict,
   per-method-row. Slice 1 = 6 core production skills; **slice 2 (all-makeable) = output-based** (every resolvable-output row,
   incl. **1832 no-skill combinations** — no `requires`/no `xp`), `verify_recipes` + `verify_recipe_coverage`.
-  Graph = **15114 nodes / 30136 edges** (item roster ~5900 via auto-import). Foundation audited GREEN (8/8 bricks reproduce from `data/raw/`).
-- **← NOW: recipe-id STABILITY** (its own slice — spec/plan TBD). Recipe ids aren't stable addresses: the slug scheme
-  disambiguates only when-needed, so adding rows silently re-keys built recipes (19 re-slugged at the all-makeable merge),
-  and **~816/4548 (17.9%) recipe ids are order-dependent `-k` collision guards** (Bucket row-order dependent; byte-stable
-  only given the committed snapshot). Fix = an intrinsic content-addressed slug + a `validate_kg` stability invariant across
-  both layers (brainstorm the mechanism: content-hash vs frozen readable-map). **Then the remaining objects/resources halves:**
+  Graph = **15114 nodes / 30136 edges** (item roster ~5900 via auto-import). Foundation audited GREEN (8/8 bricks reproduce from `data/raw/`);
+  (PR #26) **recipe-id STABILITY** — roster `recipe:` ids are now a pure function of intrinsic content via a committed
+  `data/recipe_slug_registry.json` (4542 identities / 4546 slugs; identity = payload+subtxt sha256 → frozen slug, SEEDED from
+  the graph → **ZERO churn**, graph unchanged); `build_recipe_roster` is a fail-fast registry consumer (never invents an id),
+  `validate_kg` enforces coverage + bijection, `verify_recipe_ids` discloses (the 816 order-dependent `-k` ids are frozen, not renamed).
+- **← NOW: the remaining objects/resources halves:**
   gather sites (blocked on a yield source-hunt — `Bucket:Mine` empty — + chunk geometry) · farming patches (own slice) ·
   transport (nodes + `gives_access`) · placed facilities (banks/altars/GE `located_in`). (Broader NON-operator NPCs — skill
   tutors, slayer-masters-as-a-role, bankers, quest-givers — are DEFERRED: not category-sourceable on the wiki, need their
@@ -101,8 +101,9 @@ ingestion) toward a **richly-typed entity graph of all of Gielinor**.
 4. **The bottom-up layers** — shops ✅ (PR #21, `build_shops`) · NPC operators ✅ (PR #23, `build_npcs` +
    `fetch_npc_infoboxes.py`; operates + multi-location resolution) · facility taxonomy ✅ (PR #24, `build_facilities`,
    pure roster) · recipes ✅ (PR #25 core skills + all-makeable ff `e60818e`, `build_recipe_roster`, 4548 nodes wiring
-   `requires_facility` → the facilities). ← **NOW: recipe-id STABILITY** (intrinsic content-addressed slug + a
-   `validate_kg` invariant; ~816 recipe ids are order-dependent — its own slice). **Then still open:** gather sites
+   `requires_facility` → the facilities) · recipe-id STABILITY ✅ (PR #26, `data/recipe_slug_registry.json` +
+   `kg_ingest/recipe_identity.py`; identity→frozen-slug registry, fail-fast builder, `validate_kg` coverage/bijection
+   invariant, `verify_recipe_ids` — zero churn). ← **NOW: the remaining objects/resources halves:** gather sites
    (blocked — yield source-hunt + chunk geometry) · farming patches · transport (`gives_access`) · placed facilities
    (banks/altars/GE `located_in`), each `located_in` the skeleton + its own structured source + coverage verifier.
 5. **Then (deferred):** full item-roster scale-up · wield-requirements (`requires` cond_group) · intrinsic attrs
@@ -142,13 +143,15 @@ ingestion) toward a **richly-typed entity graph of all of Gielinor**.
   category beats a backbone infobox). The committed place graph must stay acyclic & single-rooted at `place:gielinor`
   (now a `validate_kg` hard-fail, not just `verify_world`).
 - **Status: item-facet + connective Varrock + world skeleton + re-homing + all-shops + NPC-operators + facility-taxonomy +
-  recipes (core + all-makeable) layers + the edge-id SPAN widen MERGED to `main` (PRs #16/#17/#19/#20/#21/#22/#23/#24/#25 +
-  all-makeable ff `e60818e`); graph 15114 nodes / 30136 edges. Residuals (disclosed, report-not-fail): world-skeleton
+  recipes (core + all-makeable) + recipe-id-stability layers + the edge-id SPAN widen MERGED to `main` (PRs #16/#17/#19/#20/
+  #21/#22/#23/#24/#25/#26 + all-makeable ff `e60818e`); graph 15114 nodes / 30136 edges (unchanged by #26 — zero churn). Residuals (disclosed, report-not-fail): world-skeleton
   parenting = 11; shops = 357 parented / 14 multi-loc / 197 FLAG (50+103+44); NPC operators = 357 located_in / 19 multi-loc /
   47 location-unresolved + 6 Varrock-overlap (build_map owns them); recipes = coverage 660 distinct unresolvable outputs /
   834 rows skipped (Construction/Sailing scenery → future scenery layer), 77 unresolved materials, 82 unresolved facilities
-  (mostly operator NPCs, not facilities). Known deviation: 19 slice-1 recipe ids re-slugged at the all-makeable merge
-  (payloads preserved) — recipe-id STABILITY is the NOW slice (~816 order-dependent ids). The 44 shop + 47 npc
-  location-unresolved OVERLAP = the place-layer backfill to-do (missing skeleton places + name-norm).** New work branches off `main`.
+  (mostly operator NPCs, not facilities). recipe-id STABILITY (PR #26): roster recipe ids are now content-derived + frozen
+  in `data/recipe_slug_registry.json` (the ~816 order-dependent `-k` ids + the 19 all-makeable re-slugs are now stabilized —
+  frozen, not renamed); disclosed residual = 4 accursed-sceptre recipes' `source_url` is emission-ordered (cosmetic,
+  gate-caught). The 44 shop + 47 npc location-unresolved OVERLAP = the place-layer backfill to-do (missing skeleton places +
+  name-norm).** New work branches off `main`.
 - Licensing seam (non-commercial project): wiki text = CC BY-NC-SA; cache content = Jagex IP; decoder tooling = BSD/ISC.
 ```
