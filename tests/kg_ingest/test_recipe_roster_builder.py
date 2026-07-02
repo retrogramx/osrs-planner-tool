@@ -92,7 +92,7 @@ def test_full_shape_uses_registry_slug():
 
 
 def test_method_suffixed_source_token():
-    # two rows, same output+different subtxt -> registry gives method-suffixed slugs -> source_token carries method=
+    # one row with a subtxt whose registry slug is method-suffixed -> source_token carries method=
     rows = [_row("Bronze bar", ["Smithing"], None, ["Anvil"],
                 {"materials": [], "skills": [{"name": "Smithing", "level": "1", "experience": "6"}],
                  "output": {"quantity": "1", "name": "Bronze bar", "subtxt": "Blast Furnace"}})]
@@ -101,7 +101,7 @@ def test_method_suffixed_source_token():
     assert n.data["source_token"] == "Bucket:recipe page=Bronze bar output=Bronze bar method=Blast Furnace"
 
 
-def test_row_order_independent_ids():
+def test_distinct_identity_ids_independent_of_row_order():
     rows = [_row("Bronze bar", [], None, None, {"materials": [], "output": {"quantity": "1", "name": "Bronze bar", "subtxt": "A"}}),
             _row("Bronze bar", [], None, None, {"materials": [], "output": {"quantity": "1", "name": "Bronze bar", "subtxt": "B"}})]
     reg = _registry_for(rows, _itemdict(), _facilities())
@@ -135,3 +135,15 @@ def test_unregistered_recipe_fails_fast():
     rows = [_row("Bronze dagger", [], None, None, {"materials": [], "output": {"quantity": "1", "name": "Bronze dagger"}})]
     with pytest.raises(ValueError, match="unregistered"):
         build_recipe_roster(rows, _itemdict(), _facilities(), {"recipes": {}})  # empty registry
+
+
+def test_same_identity_dupe_slugs_assigned():
+    # Two identical rows -> same identity hash -> one registry entry with 2 slugs ->
+    # both slugs emitted as recipe nodes (exercises the emission-order dupe-binding path).
+    rows = [
+        _row("Bronze bar", [], None, None, {"materials": [], "output": {"quantity": "1", "name": "Bronze bar"}}),
+        _row("Bronze bar", [], None, None, {"materials": [], "output": {"quantity": "1", "name": "Bronze bar"}}),
+    ]
+    nodes, _, _ = _build(rows)
+    ids = {n.id for n in nodes}
+    assert "recipe:bronze-bar" in ids and "recipe:bronze-bar-2" in ids

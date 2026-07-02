@@ -487,7 +487,12 @@ def check_recipe_id_registry(store: KGStore) -> list[str]:
     """Recipe-id stability invariant (spec 2026-07-01 §6): every committed roster
     recipe id is sourced from data/recipe_slug_registry.json, the registry is a
     bijection on slugs, and no committed recipe slug is duplicated. Charge recipes
-    (data.charge_capacity) are excluded — they have hand-authored stable slugs."""
+    (data.charge_capacity) are excluded — they have hand-authored stable slugs.
+
+    Scope: this check enforces registry coverage + bijection on the committed graph
+    (a backstop); the content-derivation guarantee (each id derived from its recipe's
+    intrinsic identity) is enforced at BUILD time by build_recipe_roster's fail-fast,
+    not here."""
     errors: list[str] = []
     reg_path = os.path.join(ROOT, "data", "recipe_slug_registry.json")
     if not os.path.exists(reg_path):
@@ -499,8 +504,11 @@ def check_recipe_id_registry(store: KGStore) -> list[str]:
     for h, entry in reg.items():
         for s in entry.get("slugs", []):
             if s in slug_of:
-                errors.append(f"[recipe-id] slug {s!r} registered under two identities "
-                              f"{slug_of[s]} and {h}")
+                if slug_of[s] == h:
+                    errors.append(f"[recipe-id] slug {s!r} appears twice under identity {h}")
+                else:
+                    errors.append(f"[recipe-id] slug {s!r} registered under two identities "
+                                  f"{slug_of[s]} and {h}")
             slug_of[s] = h
 
     committed: set[str] = set()

@@ -1,5 +1,4 @@
 # tests/kg_ingest/test_recipe_identity.py
-import pytest
 from osrs_planner.engine.kg.model import Node, NodeKind
 from kg_ingest.recipe_identity import (
     resolve_recipe_payload, recipe_identity_hash, mint_slug, is_method_suffixed,
