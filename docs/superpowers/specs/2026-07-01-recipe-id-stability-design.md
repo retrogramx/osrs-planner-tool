@@ -39,15 +39,24 @@ layer — so the graph carries only resolved edges; the identity key matches by 
 node `data` fields (`xp`, `ticks`, `members`) are **excluded** — they are properties, not identity, and
 including them would couple the id to volatile data.
 
-**Live-measured over the current 4548 recipes:** payload alone → 4526 distinct; payload + subtxt →
-**4544 distinct keys**. Adding subtxt cleanly separates "same cost, different source" recipes (imbued
+**Live-measured over the current 4548 recipe nodes** (payload alone → 4526 distinct; payload + subtxt →
+**4544 distinct keys**). Adding subtxt cleanly separates "same cost, different source" recipes (imbued
 rings via Nightmare Zone vs Soul Wars; potions via Brew'ma vs Herblore; first-time vs subsequent forge
-recipes). The residual **7 recipes in 3 groups** are true wiki-duplicates (`small-chocolate-egg` ×3,
-`accursed-sceptre-u` each method ×2) — payload *and* subtxt identical, hence interchangeable.
+recipes). The committed **roster registry excludes the 2 charge recipes**, so it holds **4542 identities
+/ 4546 slugs** (= the 4546 roster recipes). The residual **7 recipes in 3 groups** collapse to one
+identity each: **`small-chocolate-egg` ×3** is a genuine SAME-PAGE duplicate (fully interchangeable); the
+two **`accursed-sceptre-u`** groups (4 recipes) are the SAME recipe documented on both `/w/Accursed_sceptre`
+and its `/w/Accursed_sceptre_(a)` variant page — identical payload, **different source page**.
 
 **Consequence for stability:** a recipe keeps its id across rebuilds as long as its
-materials/facility/skill/method are unchanged. A genuine wiki *data* change to one of those re-addresses
-that one recipe (rare, disclosed by the verifier). Row order and sibling count never affect the id.
+materials/facility/skill/method are unchanged. Row order and sibling count never affect a recipe's id or
+edges. **Narrow residual (disclosed):** for a same-payload duplicate documented on multiple pages (the 4
+`accursed-sceptre-u` recipes), the node ids and edges are stable, but *which* of the two interchangeable
+nodes carries *which* (both-valid) `source_url`/`source_token` is assigned by emission order — a cosmetic
+provenance detail, not an id/edge change, and any future swap is caught by the byte-stability gate (never
+silent). Including `page` in the identity would wrongly model one real recipe as two, so it is deliberately
+excluded. A genuine wiki *data* change to a recipe's materials/facility/skill re-addresses that one recipe
+(rare, disclosed by the verifier).
 
 ## 3. The registry — `data/recipe_slug_registry.json`
 
@@ -64,7 +73,8 @@ current id (**zero churn**). Shape:
 ```
 
 - **Key** = the identity hash (§2). **Value.slugs** = the frozen slug(s) for that identity, a list to
-  carry true-duplicate groups (length 1 for 4541 keys; length 2–3 for the 3 dupe keys). **Value.output**
+  carry true-duplicate groups (length 1 for 4539 keys; length 2–3 for the 3 dupe keys → 4542 identities /
+  4546 roster slugs total). **Value.output**
   = the human-readable output name, for owner review of the committed diff (advisory; not load-bearing).
 - **Append-only:** existing entries are never rewritten. New recipes mint a fresh readable slug (output
   + method subtxt, guarded against every slug already in the registry) appended as a new entry. Once
@@ -83,11 +93,13 @@ to a **registry lookup**:
 2. Compute the identity hash; group makeable rows by identity hash in **emission order** (the committed
    `makeable` order — deterministic given the snapshot).
 3. For each group, look up `registry[hash].slugs` and assign them to the group's rows **in emission
-   order** (true-dupes are byte-identical except id, so the assignment is deterministic and does not
-   change graph content).
+   order**. Genuine same-page dupes are byte-identical (fully interchangeable); for a same-payload
+   duplicate documented on multiple pages (the `accursed-sceptre-u` case, §2), ids and edges are stable
+   but the emission-order assignment decides which node carries which (both-valid) `source_url` — a
+   cosmetic provenance detail, gate-caught.
 4. **Fail fast** if a recipe's identity hash is absent, or a group has more rows than registered slugs
    (a genuinely new/changed recipe): raise with a clear message —
-   `"N unregistered recipes — run scripts/update_recipe_registry.py"`.
+   `"N unregistered recipes — run data/update_recipe_registry.py"`.
 
 Assemble **never writes** the registry — it is a pure read, so `kg/*.json` stays byte-deterministic. The
 `multi` flag and the emission-time `-k` guard are removed from the builder (the registry is now the sole

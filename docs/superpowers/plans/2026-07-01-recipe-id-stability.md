@@ -14,7 +14,7 @@
 - **Byte-stable assemble:** re-running `./venv/bin/python -m kg_ingest.assemble` produces identical `kg/*.json`. The seed → re-assemble → **`kg/*.json` byte-identical to `main` (`e60818e`)** is the zero-churn acceptance test.
 - **Never fabricate:** ids derive only from committed data; an unregistered recipe FAILS the build (never invents an id). The registry is append-only — existing entries are never rewritten.
 - `data/validate_kg.py` exits 0; `data/verify_recipes.py` exits 0 (grounding unchanged, still 4548); full `pytest -q --continue-on-collection-errors` green (the 4 `tests/drop_rates/` collection errors are pre-existing & unrelated).
-- **Identity is order- and sibling-independent:** hash over sorted resolved consumes/produces/facilities/skill-gates + `slugify(subtxt)`; excludes `xp`/`ticks`/`members`. Pre-flight verified: **4544/4548 distinct keys**; **7 true wiki-dupes in 3 groups** (`small-chocolate-egg` ×3, `accursed-sceptre-u` each method ×2) handled by a frozen emission-order slug list.
+- **Identity is order- and sibling-independent:** hash over sorted resolved consumes/produces/facilities/skill-gates + `slugify(subtxt)`; excludes `xp`/`ticks`/`members`. Pre-flight verified: **4544 payload+subtxt keys over 4548 recipe nodes** → committed roster registry **4542 identities / 4546 slugs** (2 charge recipes excluded); **7 true wiki-dupes in 3 groups** (`small-chocolate-egg` ×3 SAME-page; `accursed-sceptre-u` ×2×2 same-payload/different-source) handled by a frozen emission-order slug list.
 - Charge recipes (`build_recipes`, slugs starting the roster's reserved set — identified by `data.charge_capacity`) stay OUT of the registry.
 - Work on branch `feat/recipe-id-stability` (spec committed there at `ca7e126`). Commit after each task.
 - Spec: `docs/superpowers/specs/2026-07-01-recipe-id-stability-design.md`. **Note:** the spec names the maintenance script `scripts/update_recipe_registry.py`; this plan places it at **`data/update_recipe_registry.py`** to match the existing data-tool location (`data/fetch_*.py`, `data/verify_*.py`). Same script, corrected path.
@@ -558,7 +558,7 @@ if __name__ == "__main__":
 - [ ] **Step 4: Generate the committed registry (seed from the current graph's rows)**
 
 Run: `./venv/bin/python data/update_recipe_registry.py --seed`
-Expected: `SEEDED .../data/recipe_slug_registry.json: 4544 identities / 4548 slugs`.
+Expected: `SEEDED .../data/recipe_slug_registry.json: 4542 identities / 4546 slugs`.
 
 - [ ] **Step 5: Run the tests to verify they pass**
 
@@ -569,7 +569,7 @@ Expected: PASS (5 passed) — including `test_committed_registry_reproduces_curr
 
 ```bash
 git add data/update_recipe_registry.py data/recipe_slug_registry.json tests/kg_ingest/test_recipe_registry_updater.py
-git commit -m "feat(recipe-id): registry seeder/updater + committed registry (4544 identities / 4548 slugs)"
+git commit -m "feat(recipe-id): registry seeder/updater + committed registry (4542 identities / 4546 slugs)"
 ```
 
 ---
@@ -1108,11 +1108,11 @@ git commit -m "feat(recipe-id): verify_recipe_ids report + CLAUDE.md conventions
 ./venv/bin/python data/verify_recipe_ids.py                          # 0 unregistered / 3 dupe groups
 ./venv/bin/python -m pytest -q --continue-on-collection-errors       # green (4 pre-existing drop_rates errors)
 ```
-Surface to the owner: registry size (4544 identities / 4548 slugs), zero-churn confirmation, and that the 816 previously order-dependent ids are now frozen (not renamed).
+Surface to the owner: registry size (4542 identities / 4546 slugs), zero-churn confirmation, and that the 816 previously order-dependent ids are now frozen (not renamed).
 
 ## Self-Review notes (spec coverage)
 
-- Spec §2 (identity key = payload + subtxt; injective 4544/4548; excludes xp/ticks/members) → Task 1 (`recipe_identity_hash`) + its tests. ✅
+- Spec §2 (identity key = payload + subtxt; injective 4544 keys/4548 nodes → roster registry 4542/4546; excludes xp/ticks/members) → Task 1 (`recipe_identity_hash`) + its tests. ✅
 - Spec §3 (registry file shape, seeded from current graph, append-only, charge excluded) → Task 2 (`seed_registry`/`update_registry` + committed file). ✅
 - Spec §4 (builder reads registry, fail-fast, assemble pure/byte-stable, drop multi/-k) → Task 3 (builder rewrite + assemble wiring + zero-churn re-assemble). ✅
 - Spec §4 source_token byte-stability (`is_method_suffixed`) → Task 1 helper + Task 3 usage + `test_method_suffixed_source_token`. ✅
