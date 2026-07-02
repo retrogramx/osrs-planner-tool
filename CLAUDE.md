@@ -114,6 +114,11 @@ ingestion) toward a **richly-typed entity graph of all of Gielinor**.
 - Python via `./venv/bin/python` (3.14). Data = committed JSON. Node ids are prefixed: `item:<id>` (wiki-Bucket
   item_id, variant-aware), `equipment_bonuses:<item_id>`, `recipe:<slug>`, `quest:<slug>`, `diary:<region>:<tier>`,
   `place:<slug>`, `npc:<id>`, `shop:<slug>`.
+- **Roster `recipe:` ids are registry-stable:** the slug comes from the committed
+  `data/recipe_slug_registry.json` (identity hash → frozen slug, seeded from the graph → zero churn),
+  NOT recomputed per build. `build_recipe_roster` fails fast on an unregistered recipe; run
+  `data/update_recipe_registry.py` to mint + append (append-only). `validate_kg` enforces
+  registry-coverage + bijection; `verify_recipe_ids.py` discloses. Charge recipes stay hand-authored.
 - **Per-`src`-class edges share ONE seeded rekey:** each edge owner-class (item-`src`: `same_entity`/`degrades_to`/
   `repairs`/`has_bonuses`; place/npc/shop-`src`: `located_in`/`operates`/`sells`/`same_entity`) is re-keyed in
   `assemble.py` via `rekey(…, edge_index_seed=<prior per-owner counts>)` — disjoint per-owner ranges; a global
