@@ -39,3 +39,12 @@ def test_registry_slug_collision_fails(monkeypatch):
     store = _Store([_n("recipe:dup", "dup")])
     errs = check_recipe_id_registry(store)
     assert any("registered under two identities" in e for e in errs)
+
+
+def test_duplicate_committed_slug_fails(monkeypatch):
+    reg = {"h1": {"slugs": ["bronze-bar"], "output": "Bronze bar"}}
+    _patch_registry(monkeypatch, reg)
+    store = _Store([_n("recipe:bronze-bar", "bronze-bar"),
+                    _n("recipe:bronze-bar-2", "bronze-bar")])  # same slug, different id
+    errs = check_recipe_id_registry(store)
+    assert any("duplicate committed recipe slug" in e for e in errs)
