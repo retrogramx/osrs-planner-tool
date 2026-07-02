@@ -302,6 +302,7 @@ RECIPE_FACILITY_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "r
 FACILITY_INFOBOX_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "wiki_facility_infoboxes.json"
 FACILITY_OVERRIDES_PATH = Path(__file__).resolve().parents[1] / "data" / "map" / "facility_overrides.json"
 RECIPE_BUCKET_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "recipe_bucket.json"
+RECIPE_REGISTRY_PATH = Path(__file__).resolve().parents[1] / "data" / "recipe_slug_registry.json"
 
 
 def _load_world_infoboxes() -> dict | None:
@@ -375,6 +376,12 @@ def _load_recipe_records() -> list[dict]:
     if not RECIPE_BUCKET_PATH.exists():
         return []
     return json.loads(RECIPE_BUCKET_PATH.read_text())["bucket"]
+
+
+def _load_recipe_registry() -> dict:
+    if not RECIPE_REGISTRY_PATH.exists():
+        return {"recipes": {}}
+    return json.loads(RECIPE_REGISTRY_PATH.read_text())
 
 
 ITEMS_EQUIPMENT_PATH = Path(__file__).resolve().parents[1] / "data" / "items_equipment.json"
@@ -586,7 +593,7 @@ def assemble() -> None:
     rr_nodes: list[Node] = []
     if fac_nodes:
         rr_nodes, rr_edges, rr_groups = build_recipe_roster(
-            _load_recipe_records(), _load_item_dict_records(), fac_nodes, {n.slug for n in r_nodes})
+            _load_recipe_records(), _load_item_dict_records(), fac_nodes, _load_recipe_registry())
         rr_nodes, rr_edges, rr_groups = rekey(rr_nodes, rr_edges, rr_groups)
         edges = edges + rr_edges
         groups.update(rr_groups)
