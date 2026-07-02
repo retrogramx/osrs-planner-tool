@@ -483,6 +483,43 @@ def check_kg(store: KGStore, quests_data: dict,
     return errors
 
 
+def check_recipe_id_registry(store: KGStore) -> list[str]:
+    """Recipe-id stability invariant (spec 2026-07-01 §6): every committed roster
+    recipe id is sourced from data/recipe_slug_registry.json, the registry is a
+    bijection on slugs, and no committed recipe slug is duplicated. Charge recipes
+    (data.charge_capacity) are excluded — they have hand-authored stable slugs."""
+    errors: list[str] = []
+    reg_path = os.path.join(ROOT, "data", "recipe_slug_registry.json")
+    if not os.path.exists(reg_path):
+        return ["[recipe-id] data/recipe_slug_registry.json is missing"]
+    with open(reg_path, encoding="utf-8") as f:
+        reg = json.load(f).get("recipes", {})
+
+    slug_of: dict[str, str] = {}                      # slug -> identity hash (bijection check)
+    for h, entry in reg.items():
+        for s in entry.get("slugs", []):
+            if s in slug_of:
+                errors.append(f"[recipe-id] slug {s!r} registered under two identities "
+                              f"{slug_of[s]} and {h}")
+            slug_of[s] = h
+
+    committed: set[str] = set()
+    for n in store.nodes.values():
+        nid = n.id if hasattr(n, "id") else None
+        if not (isinstance(nid, str) and nid.startswith("recipe:")):
+            continue
+        slug = n.slug
+        if slug in committed:
+            errors.append(f"[recipe-id] duplicate committed recipe slug {slug!r}")
+        committed.add(slug)
+        if "charge_capacity" in (n.data or {}):
+            continue                                  # charge recipe -> not registry-backed
+        if slug not in slug_of:
+            errors.append(f"[recipe-id] committed recipe slug {slug!r} is not in the registry "
+                          f"(id not content-derived — run data/update_recipe_registry.py)")
+    return errors
+
+
 def collect_findings(store: KGStore, quests_data: dict, schema: dict | None,
                      raw_node_dicts: list[dict] | None = None,
                      raw_edge_dicts: list[dict] | None = None,
@@ -500,6 +537,8 @@ def collect_findings(store: KGStore, quests_data: dict, schema: dict | None,
         findings.append(Finding(Severity.VIOLATION, "invariant", msg))
     for msg in check_kg_warnings(store, quests_data):
         findings.append(Finding(Severity.WARNING, "known-gap", msg))
+    for msg in check_recipe_id_registry(store):
+        findings.append(Finding(Severity.VIOLATION, "recipe-id", msg))
     if schema is None:
         findings.append(Finding(Severity.VIOLATION, "schema",
             f"kg/schema.json could not be loaded (required from build step 1)"))
