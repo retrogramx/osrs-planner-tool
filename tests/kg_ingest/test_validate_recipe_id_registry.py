@@ -1,6 +1,15 @@
 # tests/kg_ingest/test_validate_recipe_id_registry.py
+import importlib.util
+import os
 import types
-from data.validate_kg import check_recipe_id_registry
+
+_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+_spec = importlib.util.spec_from_file_location(
+    "validate_kg", os.path.join(_ROOT, "data", "validate_kg.py")
+)
+_vk = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(_vk)
+check_recipe_id_registry = _vk.check_recipe_id_registry
 
 
 class _Store:
@@ -12,9 +21,8 @@ def _n(nid, slug, data=None):
 
 
 def _patch_registry(monkeypatch, reg):
-    import data.validate_kg as v, json
-    monkeypatch.setattr(v.os.path, "exists", lambda p: True)
-    monkeypatch.setattr(v.json, "load", lambda f: {"recipes": reg})
+    monkeypatch.setattr(_vk.os.path, "exists", lambda p: True)
+    monkeypatch.setattr(_vk.json, "load", lambda f: {"recipes": reg})
     monkeypatch.setattr("builtins.open", lambda *a, **k: __import__("io").StringIO("{}"))
 
 

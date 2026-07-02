@@ -1,7 +1,18 @@
+import importlib.util
 import json as _j
+import os
+
 from osrs_planner.engine.kg.model import Node, NodeKind
 from kg_ingest.recipe_identity import _facility_lookup
-from data.update_recipe_registry import seed_registry, update_registry
+
+_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+_spec = importlib.util.spec_from_file_location(
+    "update_recipe_registry", os.path.join(_ROOT, "data", "update_recipe_registry.py")
+)
+_urr = importlib.util.module_from_spec(_spec)
+_spec.loader.exec_module(_urr)
+seed_registry = _urr.seed_registry
+update_registry = _urr.update_registry
 
 
 def _resolver(dictrecs):
