@@ -8,7 +8,10 @@ located_in edge (dedup_nodes raises on same-id-different-content, so we must). T
 winner PREFERS a row with a non-empty gardener (a gardener'd source out-ranks a
 gardener-less one for the same instance — e.g. the coral page vs the Special-patches
 umbrella table), then falls back to the deterministic (location_raw, source_url,
-row_index) sort so the pick is still order-independent. id is injective by a fail-fast;
+row_index) sort so the pick is still order-independent. The group's place_id is a
+property of the GROUP, not the display winner: it is ANY resolved place_id among the
+group's rows, carried forward independent of which row wins the sort (never silently
+dropped because the winner happens to be unresolved). id is injective by a fail-fast;
 NO order-dependent -k fallback (spec D7). Never fabricates.
 """
 from __future__ import annotations
@@ -78,10 +81,15 @@ def build_farming_patches(patch_rows, place_nodes, overrides):
                      r.get("row_index", 0)),
         }
         prev = groups.get(key)
+        # resolved place_id is a property of the GROUP, not the display winner: carry forward
+        # whichever of {cand, prev} is resolved BEFORE picking the winner by sort, so a losing
+        # row's resolved place_id is never silently dropped just because it didn't win the sort.
+        resolved_pid = cand["place_id"] or (prev["place_id"] if prev is not None else None)
         if prev is None or cand["sort"] < prev["sort"]:
-            if prev is not None:
-                cand["place_id"] = cand["place_id"] or prev["place_id"]
+            cand["place_id"] = resolved_pid
             groups[key] = cand
+        else:
+            prev["place_id"] = resolved_pid
 
     nodes: list[Node] = []
     edges: list[Edge] = []

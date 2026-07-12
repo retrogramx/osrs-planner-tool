@@ -8,7 +8,7 @@
     {"value": "Coral Nurseries", "reason": "the underwater LOCATION page (Infobox Location), not a patch; the patch is 'Coral nursery (patch)'", "source_url": "https://oldschool.runescape.wiki/w/Coral_Nurseries"}
   ],
   "place_overrides": [
-    {"location": "Varrock Castle", "place_id": "place:varrock", "reason": "flower patch; Castle is inside Varrock", "source_url": "https://oldschool.runescape.wiki/w/Varrock_Castle"},
+    {"location": "Varrock Castle", "place_id": "place:varrock", "reason": "tree patch; Castle is inside Varrock", "source_url": "https://oldschool.runescape.wiki/w/Varrock_Castle"},
     {"location": "Falador Park", "place_id": "place:falador", "reason": "tree patch; Park is inside Falador", "source_url": "https://oldschool.runescape.wiki/w/Falador_Park"},
     {"location": "Gnome Stronghold", "place_id": "place:gnome-stronghold", "reason": "redirect target the _norm resolver does not follow", "source_url": "https://oldschool.runescape.wiki/w/Tree_Gnome_Stronghold"},
     {"location": "Tree Gnome maze", "place_id": "place:tree-gnome-village", "reason": "fruit tree patch in the maze", "source_url": "https://oldschool.runescape.wiki/w/Tree_Gnome_Village"},

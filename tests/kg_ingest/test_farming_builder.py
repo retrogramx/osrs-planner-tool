@@ -97,6 +97,27 @@ def test_deterministic_order_independent():
     assert [n.id for n in a] == [n.id for n in b]
 
 
+def test_group_place_id_from_any_resolved_member_not_just_the_winner():
+    # Row A ("Catherby", unresolved -- no matching place/override) sorts FIRST (wins the
+    # display pick: no gardener on either row ties the first sort field, then location_raw
+    # "[[AAA]]" < "[[ZZZZ]]" breaks the tie). Row B ("Catherby Alt", resolved via override to
+    # place:catherby) sorts SECOND (loses the pick) but slugifies to the SAME place_comp
+    # ("catherby") as row A's unresolved link, so both land in one group.
+    # Under the old winner-only backfill (`cand["place_id"] = cand["place_id"] or
+    # prev["place_id"]`, applied only when cand WINS), B's resolved place_id never reaches the
+    # stored group entry because B never wins the sort -> the node keeps place_id=None -> the
+    # located_in edge is silently dropped (a FLAG), even though a group member resolved.
+    ov = {"place_overrides": [{"location": "Catherby Alt", "place_id": "place:catherby"}]}
+    rows = [
+        _row("herb", "Catherby", loc="[[AAA]]", idx=0),        # unresolved, wins the sort
+        _row("herb", "Catherby Alt", loc="[[ZZZZ]]", idx=1),   # resolved, loses the sort
+    ]
+    nodes, edges, _ = build_farming_patches(rows, _places("Unrelated"), ov)
+    n = next(x for x in nodes if x.id == "farming_patch:herb-catherby")
+    e = next((x for x in edges if x.src == n.id), None)
+    assert e is not None and e.type == EdgeType.LOCATED_IN and e.dst == "place:catherby"
+
+
 def test_resolve_place_uses_norm_index():
     from kg_ingest.builders.farming import _name_index
     idx = _name_index(_places("Port Phasmatys"))
