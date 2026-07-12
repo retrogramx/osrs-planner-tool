@@ -34,6 +34,7 @@ class NodeKind(str, Enum):
     NPC = "npc"                        # non-combat character (shopkeeper, ruler, quest-giver)
     SHOP = "shop"                      # store with stock
     FACILITY = "facility"              # processing station (anvil/furnace/altar/range); requires_facility target
+    FARMING_PATCH = "farming_patch"    # place x patch-type instance (P8); located_in a place
 
 
 class EdgeType(str, Enum):
