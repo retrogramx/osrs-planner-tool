@@ -30,3 +30,14 @@ def test_assemble_is_byte_stable():
     before = p.read_bytes()
     subprocess.run([sys.executable, "-m", "kg_ingest.assemble"], cwd=ROOT, check=True)
     assert p.read_bytes() == before, "assemble is not byte-stable"
+
+def test_verify_farming_patches_passes():
+    r = subprocess.run([sys.executable, "data/verify_farming_patches.py"],
+                       cwd=ROOT, capture_output=True, text=True)
+    assert r.returncode == 0, r.stdout + r.stderr
+
+def test_verify_farming_coverage_runs_clean():
+    r = subprocess.run([sys.executable, "data/verify_farming_coverage.py"],
+                       cwd=ROOT, capture_output=True, text=True)
+    assert r.returncode == 0, r.stdout + r.stderr
+    assert "core types present: 9/9" in r.stdout, r.stdout
