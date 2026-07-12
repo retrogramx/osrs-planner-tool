@@ -67974,6 +67974,911 @@
     "slug": "yew-tree"
   },
   {
+    "data": {
+      "gardener": "Kragen",
+      "patch_type": "allotment",
+      "source_token": "[[Hemenster|North]] of [[Ardougne]]<br/>''Gardener: [[Kragen]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Allotment_patch/Patches"
+    },
+    "id": "farming_patch:allotment-ardougne",
+    "kind": "farming_patch",
+    "name": "Allotment patch (Ardougne)",
+    "slug": "allotment-ardougne"
+  },
+  {
+    "data": {
+      "gardener": "Dantaera",
+      "patch_type": "allotment",
+      "source_token": "North of [[Catherby]]<br/>''Gardener: [[Dantaera]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Allotment_patch/Patches"
+    },
+    "id": "farming_patch:allotment-catherby",
+    "kind": "farming_patch",
+    "name": "Allotment patch (Catherby)",
+    "slug": "allotment-catherby"
+  },
+  {
+    "data": {
+      "gardener": "Harminia",
+      "patch_type": "allotment",
+      "source_token": "[[Ortus Farm]]<br/>''Gardener: [[Harminia]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Allotment_patch/Patches"
+    },
+    "id": "farming_patch:allotment-civitas-illa-fortis",
+    "kind": "farming_patch",
+    "name": "Allotment patch (Civitas Illa Fortis)",
+    "slug": "allotment-civitas-illa-fortis"
+  },
+  {
+    "data": {
+      "gardener": "Elstan",
+      "patch_type": "allotment",
+      "source_token": "South of [[Falador]]<br/>''Gardener: [[Elstan]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Allotment_patch/Patches"
+    },
+    "id": "farming_patch:allotment-falador",
+    "kind": "farming_patch",
+    "name": "Allotment patch (Falador)",
+    "slug": "allotment-falador"
+  },
+  {
+    "data": {
+      "gardener": "Alan (Farming Guild)",
+      "patch_type": "allotment",
+      "source_token": "[[Farming Guild]]<br/>''Gardener: [[Alan (Farming Guild)|Alan]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Allotment_patch/Patches"
+    },
+    "id": "farming_patch:allotment-farming-guild",
+    "kind": "farming_patch",
+    "name": "Allotment patch (Farming Guild)",
+    "slug": "allotment-farming-guild"
+  },
+  {
+    "data": {
+      "patch_type": "allotment",
+      "source_token": "[[Harmony Island]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Allotment_patch/Patches"
+    },
+    "id": "farming_patch:allotment-harmony-island",
+    "kind": "farming_patch",
+    "name": "Allotment patch (Harmony Island)",
+    "slug": "allotment-harmony-island"
+  },
+  {
+    "data": {
+      "gardener": "Marisi",
+      "patch_type": "allotment",
+      "source_token": "South-west corner of [[Hosidius]]<br/>''Gardener: [[Marisi]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Allotment_patch/Patches"
+    },
+    "id": "farming_patch:allotment-hosidius",
+    "kind": "farming_patch",
+    "name": "Allotment patch (Hosidius)",
+    "slug": "allotment-hosidius"
+  },
+  {
+    "data": {
+      "gardener": "Lyra",
+      "patch_type": "allotment",
+      "source_token": "Morytania, West of [[Port Phasmatys]]<br/>''Gardener: [[Lyra]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Allotment_patch/Patches"
+    },
+    "id": "farming_patch:allotment-port-phasmatys",
+    "kind": "farming_patch",
+    "name": "Allotment patch (Port Phasmatys)",
+    "slug": "allotment-port-phasmatys"
+  },
+  {
+    "data": {
+      "gardener": "Oswallt",
+      "patch_type": "allotment",
+      "source_token": "[[Prifddinas]]<br/>''Gardener: [[Oswallt]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Allotment_patch/Patches"
+    },
+    "id": "farming_patch:allotment-prifddinas",
+    "kind": "farming_patch",
+    "name": "Allotment patch (Prifddinas)",
+    "slug": "allotment-prifddinas"
+  },
+  {
+    "data": {
+      "gardener": "Felfiz Yaryus",
+      "patch_type": "anima",
+      "source_token": "[[Farming Guild]]<br/>''Gardener: [[Felfiz Yaryus]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Special_patches/Patches"
+    },
+    "id": "farming_patch:anima-farming-guild",
+    "kind": "farming_patch",
+    "name": "Anima patch (Farming Guild)",
+    "slug": "anima-farming-guild"
+  },
+  {
+    "data": {
+      "patch_type": "belladonna",
+      "source_token": "[[Auburnvale]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Special_patches/Patches"
+    },
+    "id": "farming_patch:belladonna-auburnvale",
+    "kind": "farming_patch",
+    "name": "Belladonna patch (Auburnvale)",
+    "slug": "belladonna-auburnvale"
+  },
+  {
+    "data": {
+      "patch_type": "belladonna",
+      "source_token": "[[Draynor Manor]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Special_patches/Patches"
+    },
+    "id": "farming_patch:belladonna-draynor-village",
+    "kind": "farming_patch",
+    "name": "Belladonna patch (Draynor Village)",
+    "slug": "belladonna-draynor-village"
+  },
+  {
+    "data": {
+      "gardener": "Torrell",
+      "patch_type": "bush",
+      "source_token": "South of [[Ardougne]]<br/>''Gardener: [[Torrell]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Bush_patch/Patches"
+    },
+    "id": "farming_patch:bush-ardougne",
+    "kind": "farming_patch",
+    "name": "Bush patch (Ardougne)",
+    "slug": "bush-ardougne"
+  },
+  {
+    "data": {
+      "gardener": "Dreven",
+      "patch_type": "bush",
+      "source_token": "West of [[Champions' Guild]]<br/>''Gardener: [[Dreven]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Bush_patch/Patches"
+    },
+    "id": "farming_patch:bush-champions-guild",
+    "kind": "farming_patch",
+    "name": "Bush patch (Champions Guild)",
+    "slug": "bush-champions-guild"
+  },
+  {
+    "data": {
+      "gardener": "Rhazien",
+      "patch_type": "bush",
+      "source_token": "South-west [[Etceteria]]<br/>''Gardener: [[Rhazien]]''",
+      "source_url": "https://oldschool.runescape.wiki/w/Bush_patch/Patches"
+    },
+    "id": "farming_patch:bush-etceteria",
+    "kind": "farming_patch",
+    "name": "Bush patch (Etceteria)",
+    "slug": "bush-etceteria"
+  },
+  {
+    "data": {
+      "gardener": "Alan (Farming Guild)",
+      "patch_type": "bush",
+      "source_token": "[[Farming Guild]]<br/>''Gardener: [[Alan (Farming Guild)|Alan]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Bush_patch/Patches"
+    },
+    "id": "farming_patch:bush-farming-guild",
+    "kind": "farming_patch",
+    "name": "Bush patch (Farming Guild)",
+    "slug": "bush-farming-guild"
+  },
+  {
+    "data": {
+      "gardener": "Taria",
+      "patch_type": "bush",
+      "source_token": "[[Rimmington]]<br/>''Gardener: [[Taria]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Bush_patch/Patches"
+    },
+    "id": "farming_patch:bush-rimmington",
+    "kind": "farming_patch",
+    "name": "Bush patch (Rimmington)",
+    "slug": "bush-rimmington"
+  },
+  {
+    "data": {
+      "gardener": "Ayesha",
+      "patch_type": "cactus",
+      "source_token": "[[Al Kharid]]<br/>''Gardener: [[Ayesha]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Special_patches/Patches"
+    },
+    "id": "farming_patch:cactus-al-kharid",
+    "kind": "farming_patch",
+    "name": "Cactus patch (Al Kharid)",
+    "slug": "cactus-al-kharid"
+  },
+  {
+    "data": {
+      "gardener": "Alan (Farming Guild)",
+      "patch_type": "cactus",
+      "source_token": "[[Farming Guild]]<br/>''Gardener: [[Alan (Farming Guild)|Alan]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Special_patches/Patches"
+    },
+    "id": "farming_patch:cactus-farming-guild",
+    "kind": "farming_patch",
+    "name": "Cactus patch (Farming Guild)",
+    "slug": "cactus-farming-guild"
+  },
+  {
+    "data": {
+      "gardener": "Tziuhtla",
+      "patch_type": "calquat",
+      "source_token": "[[Kastori]]<br/>''Gardener: [[Tziuhtla]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Special_patches/Patches"
+    },
+    "id": "farming_patch:calquat-kastori",
+    "kind": "farming_patch",
+    "name": "Calquat patch (Kastori)",
+    "slug": "calquat-kastori"
+  },
+  {
+    "data": {
+      "gardener": "Imiago",
+      "patch_type": "calquat",
+      "source_token": "North of [[Tai Bwo Wannai]]<br/>''Gardener: [[Imiago]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Special_patches/Patches"
+    },
+    "id": "farming_patch:calquat-tai-bwo-wannai",
+    "kind": "farming_patch",
+    "name": "Calquat patch (Tai Bwo Wannai)",
+    "slug": "calquat-tai-bwo-wannai"
+  },
+  {
+    "data": {
+      "gardener": "Guppa",
+      "patch_type": "calquat",
+      "source_token": "[[The Summer Shore]]<br/>''Gardener: [[Guppa]]''\n(requires partial completion of [[Troubled Tortugans]])",
+      "source_url": "https://oldschool.runescape.wiki/w/Special_patches/Patches"
+    },
+    "id": "farming_patch:calquat-the-summer-shore",
+    "kind": "farming_patch",
+    "name": "Calquat patch (The Summer Shore)",
+    "slug": "calquat-the-summer-shore"
+  },
+  {
+    "data": {
+      "gardener": "Taylor",
+      "patch_type": "celastrus",
+      "source_token": "[[Farming Guild]]<br/>''Gardener: [[Taylor]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Special_patches/Patches"
+    },
+    "id": "farming_patch:celastrus-farming-guild",
+    "kind": "farming_patch",
+    "name": "Celastrus patch (Farming Guild)",
+    "slug": "celastrus-farming-guild"
+  },
+  {
+    "data": {
+      "gardener": "Chet",
+      "patch_type": "coral",
+      "source_token": "[[Coral Nurseries]]<br/>''Gardener: [[Chet]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Coral_nursery_%28patch%29"
+    },
+    "id": "farming_patch:coral-coral-nurseries",
+    "kind": "farming_patch",
+    "name": "Coral patch (Coral Nurseries)",
+    "slug": "coral-coral-nurseries"
+  },
+  {
+    "data": {
+      "gardener": "Pennant",
+      "patch_type": "crystal",
+      "source_token": "[[Prifddinas]]<br/>''Gardener: [[Pennant]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Special_patches/Patches"
+    },
+    "id": "farming_patch:crystal-prifddinas",
+    "kind": "farming_patch",
+    "name": "Crystal patch (Prifddinas)",
+    "slug": "crystal-prifddinas"
+  },
+  {
+    "data": {
+      "gardener": "Kragen",
+      "patch_type": "flower",
+      "source_token": "[[Hemenster|North]] of [[Ardougne]]<br/>''Gardener: [[Kragen]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Allotment_patch/Patches"
+    },
+    "id": "farming_patch:flower-ardougne",
+    "kind": "farming_patch",
+    "name": "Flower patch (Ardougne)",
+    "slug": "flower-ardougne"
+  },
+  {
+    "data": {
+      "gardener": "Dantaera",
+      "patch_type": "flower",
+      "source_token": "North of [[Catherby]]<br/>''Gardener: [[Dantaera]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Allotment_patch/Patches"
+    },
+    "id": "farming_patch:flower-catherby",
+    "kind": "farming_patch",
+    "name": "Flower patch (Catherby)",
+    "slug": "flower-catherby"
+  },
+  {
+    "data": {
+      "gardener": "Harminia",
+      "patch_type": "flower",
+      "source_token": "[[Ortus Farm]]<br/>''Gardener: [[Harminia]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Allotment_patch/Patches"
+    },
+    "id": "farming_patch:flower-civitas-illa-fortis",
+    "kind": "farming_patch",
+    "name": "Flower patch (Civitas Illa Fortis)",
+    "slug": "flower-civitas-illa-fortis"
+  },
+  {
+    "data": {
+      "gardener": "Elstan",
+      "patch_type": "flower",
+      "source_token": "South of [[Falador]]<br/>''Gardener: [[Elstan]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Allotment_patch/Patches"
+    },
+    "id": "farming_patch:flower-falador",
+    "kind": "farming_patch",
+    "name": "Flower patch (Falador)",
+    "slug": "flower-falador"
+  },
+  {
+    "data": {
+      "gardener": "Alan (Farming Guild)",
+      "patch_type": "flower",
+      "source_token": "[[Farming Guild]]<br/>''Gardener: [[Alan (Farming Guild)|Alan]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Allotment_patch/Patches"
+    },
+    "id": "farming_patch:flower-farming-guild",
+    "kind": "farming_patch",
+    "name": "Flower patch (Farming Guild)",
+    "slug": "flower-farming-guild"
+  },
+  {
+    "data": {
+      "gardener": "Marisi",
+      "patch_type": "flower",
+      "source_token": "South-west corner of [[Hosidius]]<br/>''Gardener: [[Marisi]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Allotment_patch/Patches"
+    },
+    "id": "farming_patch:flower-hosidius",
+    "kind": "farming_patch",
+    "name": "Flower patch (Hosidius)",
+    "slug": "flower-hosidius"
+  },
+  {
+    "data": {
+      "patch_type": "flower",
+      "source_token": "[[Kastori]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Allotment_patch/Patches"
+    },
+    "id": "farming_patch:flower-kastori",
+    "kind": "farming_patch",
+    "name": "Flower patch (Kastori)",
+    "slug": "flower-kastori"
+  },
+  {
+    "data": {
+      "gardener": "Lyra",
+      "patch_type": "flower",
+      "source_token": "Morytania, West of [[Port Phasmatys]]<br/>''Gardener: [[Lyra]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Allotment_patch/Patches"
+    },
+    "id": "farming_patch:flower-port-phasmatys",
+    "kind": "farming_patch",
+    "name": "Flower patch (Port Phasmatys)",
+    "slug": "flower-port-phasmatys"
+  },
+  {
+    "data": {
+      "gardener": "Oswallt",
+      "patch_type": "flower",
+      "source_token": "[[Prifddinas]]<br/>''Gardener: [[Oswallt]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Allotment_patch/Patches"
+    },
+    "id": "farming_patch:flower-prifddinas",
+    "kind": "farming_patch",
+    "name": "Flower patch (Prifddinas)",
+    "slug": "flower-prifddinas"
+  },
+  {
+    "data": {
+      "gardener": "Garth",
+      "patch_type": "fruit_tree",
+      "source_token": "North of [[Brimhaven]]<br/>''Gardener: [[Garth]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Fruit_tree_patch/Patches"
+    },
+    "id": "farming_patch:fruit-tree-brimhaven",
+    "kind": "farming_patch",
+    "name": "Fruit tree patch (Brimhaven)",
+    "slug": "fruit-tree-brimhaven"
+  },
+  {
+    "data": {
+      "gardener": "Ellena",
+      "patch_type": "fruit_tree",
+      "source_token": "East of [[Catherby]]<br/>''Gardener: [[Ellena]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Fruit_tree_patch/Patches"
+    },
+    "id": "farming_patch:fruit-tree-catherby",
+    "kind": "farming_patch",
+    "name": "Fruit tree patch (Catherby)",
+    "slug": "fruit-tree-catherby"
+  },
+  {
+    "data": {
+      "gardener": "Nikkie",
+      "patch_type": "fruit_tree",
+      "source_token": "[[Farming Guild]]\n({{SCP|Farming|85}} Farming required)<br />''Gardener: [[Nikkie]]''",
+      "source_url": "https://oldschool.runescape.wiki/w/Fruit_tree_patch/Patches"
+    },
+    "id": "farming_patch:fruit-tree-farming-guild",
+    "kind": "farming_patch",
+    "name": "Fruit tree patch (Farming Guild)",
+    "slug": "fruit-tree-farming-guild"
+  },
+  {
+    "data": {
+      "gardener": "Bolongo",
+      "patch_type": "fruit_tree",
+      "source_token": "[[Tree Gnome Stronghold]]<br/>''Gardener: [[Bolongo]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Fruit_tree_patch/Patches"
+    },
+    "id": "farming_patch:fruit-tree-gnome-stronghold",
+    "kind": "farming_patch",
+    "name": "Fruit tree patch (Gnome Stronghold)",
+    "slug": "fruit-tree-gnome-stronghold"
+  },
+  {
+    "data": {
+      "gardener": "Ehecatl",
+      "patch_type": "fruit_tree",
+      "source_token": "[[Kastori]]<br/>''Gardener: [[Ehecatl]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Fruit_tree_patch/Patches"
+    },
+    "id": "farming_patch:fruit-tree-kastori",
+    "kind": "farming_patch",
+    "name": "Fruit tree patch (Kastori)",
+    "slug": "fruit-tree-kastori"
+  },
+  {
+    "data": {
+      "gardener": "Liliwen",
+      "patch_type": "fruit_tree",
+      "source_token": "[[Lletya]]<br/>''Gardener: [[Liliwen]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Fruit_tree_patch/Patches"
+    },
+    "id": "farming_patch:fruit-tree-lletya",
+    "kind": "farming_patch",
+    "name": "Fruit tree patch (Lletya)",
+    "slug": "fruit-tree-lletya"
+  },
+  {
+    "data": {
+      "gardener": "Gileth",
+      "patch_type": "fruit_tree",
+      "source_token": "West of [[Tree Gnome maze]]<br/>''Gardener: [[Gileth]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Fruit_tree_patch/Patches"
+    },
+    "id": "farming_patch:fruit-tree-tree-gnome-village",
+    "kind": "farming_patch",
+    "name": "Fruit tree patch (Tree Gnome Village)",
+    "slug": "fruit-tree-tree-gnome-village"
+  },
+  {
+    "data": {
+      "gardener": "Gallow",
+      "patch_type": "grape",
+      "source_token": "[[Hosidius]] [[Vinery]]<br/>''Gardener: [[Gallow]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Special_patches/Patches"
+    },
+    "id": "farming_patch:grape-hosidius",
+    "kind": "farming_patch",
+    "name": "Grape patch (Hosidius)",
+    "slug": "grape-hosidius"
+  },
+  {
+    "data": {
+      "gardener": "Argo",
+      "patch_type": "hardwood",
+      "source_token": "[[Anglers' Retreat]]<br/>''Gardener: [[Argo]]''\n(requires {{SCP|Sailing|51}} [[Sailing]])",
+      "source_url": "https://oldschool.runescape.wiki/w/Special_patches/Patches"
+    },
+    "id": "farming_patch:hardwood-anglers-retreat",
+    "kind": "farming_patch",
+    "name": "Hardwood patch (Anglers Retreat)",
+    "slug": "hardwood-anglers-retreat"
+  },
+  {
+    "data": {
+      "gardener": "Squirrel (Fossil Island)",
+      "patch_type": "hardwood",
+      "source_token": "[[Fossil Island]] [[Mushroom Forest]]<br/>''Gardeners: [[Squirrel (Fossil Island)|Squirrel]]s",
+      "source_url": "https://oldschool.runescape.wiki/w/Special_patches/Patches"
+    },
+    "id": "farming_patch:hardwood-fossil-island",
+    "kind": "farming_patch",
+    "name": "Hardwood patch (Fossil Island)",
+    "slug": "hardwood-fossil-island"
+  },
+  {
+    "data": {
+      "gardener": "Marcellus",
+      "patch_type": "hardwood",
+      "source_token": "[[Locus Oasis]]<br/>''Gardener: [[Marcellus]]\n(requires completion of [[The Ribbiting Tale of a Lily Pad Labour Dispute]])",
+      "source_url": "https://oldschool.runescape.wiki/w/Special_patches/Patches"
+    },
+    "id": "farming_patch:hardwood-locus-oasis",
+    "kind": "farming_patch",
+    "name": "Hardwood patch (Locus Oasis)",
+    "slug": "hardwood-locus-oasis"
+  },
+  {
+    "data": {
+      "gardener": "Kragen",
+      "patch_type": "herb",
+      "source_token": "[[Hemenster|North]] of [[Ardougne]]<br/>''Gardener: [[Kragen]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Allotment_patch/Patches"
+    },
+    "id": "farming_patch:herb-ardougne",
+    "kind": "farming_patch",
+    "name": "Herb patch (Ardougne)",
+    "slug": "herb-ardougne"
+  },
+  {
+    "data": {
+      "gardener": "Dantaera",
+      "patch_type": "herb",
+      "source_token": "North of [[Catherby]]<br/>''Gardener: [[Dantaera]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Allotment_patch/Patches"
+    },
+    "id": "farming_patch:herb-catherby",
+    "kind": "farming_patch",
+    "name": "Herb patch (Catherby)",
+    "slug": "herb-catherby"
+  },
+  {
+    "data": {
+      "gardener": "Harminia",
+      "patch_type": "herb",
+      "source_token": "[[Ortus Farm]]<br/>''Gardener: [[Harminia]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Allotment_patch/Patches"
+    },
+    "id": "farming_patch:herb-civitas-illa-fortis",
+    "kind": "farming_patch",
+    "name": "Herb patch (Civitas Illa Fortis)",
+    "slug": "herb-civitas-illa-fortis"
+  },
+  {
+    "data": {
+      "gardener": "Elstan",
+      "patch_type": "herb",
+      "source_token": "South of [[Falador]]<br/>''Gardener: [[Elstan]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Allotment_patch/Patches"
+    },
+    "id": "farming_patch:herb-falador",
+    "kind": "farming_patch",
+    "name": "Herb patch (Falador)",
+    "slug": "herb-falador"
+  },
+  {
+    "data": {
+      "patch_type": "herb",
+      "source_token": "[[Farming Guild]]\n({{SCP|Farming|65|link=yes}} required)",
+      "source_url": "https://oldschool.runescape.wiki/w/Allotment_patch/Patches"
+    },
+    "id": "farming_patch:herb-farming-guild",
+    "kind": "farming_patch",
+    "name": "Herb patch (Farming Guild)",
+    "slug": "herb-farming-guild"
+  },
+  {
+    "data": {
+      "patch_type": "herb",
+      "source_token": "[[Harmony Island]]\n([[Elite Morytania Diary]] required)",
+      "source_url": "https://oldschool.runescape.wiki/w/Allotment_patch/Patches"
+    },
+    "id": "farming_patch:herb-harmony-island",
+    "kind": "farming_patch",
+    "name": "Herb patch (Harmony Island)",
+    "slug": "herb-harmony-island"
+  },
+  {
+    "data": {
+      "gardener": "Marisi",
+      "patch_type": "herb",
+      "source_token": "South-west corner of [[Hosidius]]<br/>''Gardener: [[Marisi]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Allotment_patch/Patches"
+    },
+    "id": "farming_patch:herb-hosidius",
+    "kind": "farming_patch",
+    "name": "Herb patch (Hosidius)",
+    "slug": "herb-hosidius"
+  },
+  {
+    "data": {
+      "gardener": "Lyra",
+      "patch_type": "herb",
+      "source_token": "Morytania, West of [[Port Phasmatys]]<br/>''Gardener: [[Lyra]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Allotment_patch/Patches"
+    },
+    "id": "farming_patch:herb-port-phasmatys",
+    "kind": "farming_patch",
+    "name": "Herb patch (Port Phasmatys)",
+    "slug": "herb-port-phasmatys"
+  },
+  {
+    "data": {
+      "gardener": "My Arm or Drunken Dwarf's Leg",
+      "patch_type": "herb",
+      "source_token": "Roof of the [[Troll Stronghold (location)|Troll Stronghold]]<br/>''Gardener: [[My Arm]] or [[Drunken Dwarf's Leg]]''\n(requires completion of [[My Arm's Big Adventure]])",
+      "source_url": "https://oldschool.runescape.wiki/w/Allotment_patch/Patches"
+    },
+    "id": "farming_patch:herb-troll-stronghold",
+    "kind": "farming_patch",
+    "name": "Herb patch (Troll Stronghold)",
+    "slug": "herb-troll-stronghold"
+  },
+  {
+    "data": {
+      "gardener": "Boulder",
+      "patch_type": "herb",
+      "source_token": "[[Weiss]]<br/>''Gardener: [[Boulder]]''\n(The [[Fire of Nourishment]] must be built)",
+      "source_url": "https://oldschool.runescape.wiki/w/Allotment_patch/Patches"
+    },
+    "id": "farming_patch:herb-weiss",
+    "kind": "farming_patch",
+    "name": "Herb patch (Weiss)",
+    "slug": "herb-weiss"
+  },
+  {
+    "data": {
+      "gardener": "Arno",
+      "patch_type": "hespori",
+      "source_token": "[[Farming Guild]]<br/>''Gardener: [[Arno]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Special_patches/Patches"
+    },
+    "id": "farming_patch:hespori-farming-guild",
+    "kind": "farming_patch",
+    "name": "Hespori patch (Farming Guild)",
+    "slug": "hespori-farming-guild"
+  },
+  {
+    "data": {
+      "gardener": "Ercos",
+      "patch_type": "hops",
+      "source_token": "[[Aldarin]]<br/>''Gardener: [[Ercos]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Hops_patch/Patches"
+    },
+    "id": "farming_patch:hops-aldarin",
+    "kind": "farming_patch",
+    "name": "Hops patch (Aldarin)",
+    "slug": "hops-aldarin"
+  },
+  {
+    "data": {
+      "gardener": "Francis",
+      "patch_type": "hops",
+      "source_token": "[[Entrana]]<br/>''Gardener: [[Francis]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Hops_patch/Patches"
+    },
+    "id": "farming_patch:hops-entrana",
+    "kind": "farming_patch",
+    "name": "Hops patch (Entrana)",
+    "slug": "hops-entrana"
+  },
+  {
+    "data": {
+      "gardener": "Vasquen",
+      "patch_type": "hops",
+      "source_token": "North of [[Lumbridge]] farm<br/>''Gardener: [[Vasquen]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Hops_patch/Patches"
+    },
+    "id": "farming_patch:hops-lumbridge",
+    "kind": "farming_patch",
+    "name": "Hops patch (Lumbridge)",
+    "slug": "hops-lumbridge"
+  },
+  {
+    "data": {
+      "gardener": "Rhonen",
+      "patch_type": "hops",
+      "source_token": "North of [[McGrubor's Wood]]<br/>''Gardener: [[Rhonen]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Hops_patch/Patches"
+    },
+    "id": "farming_patch:hops-mcgrubors-wood",
+    "kind": "farming_patch",
+    "name": "Hops patch (Mcgrubors Wood)",
+    "slug": "hops-mcgrubors-wood"
+  },
+  {
+    "data": {
+      "gardener": "Selena",
+      "patch_type": "hops",
+      "source_token": "[[Yanille]]<br/>''Gardener: [[Selena]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Hops_patch/Patches"
+    },
+    "id": "farming_patch:hops-yanille",
+    "kind": "farming_patch",
+    "name": "Hops patch (Yanille)",
+    "slug": "hops-yanille"
+  },
+  {
+    "data": {
+      "patch_type": "mushroom",
+      "source_token": "West of [[Canifis]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Special_patches/Patches"
+    },
+    "id": "farming_patch:mushroom-canifis",
+    "kind": "farming_patch",
+    "name": "Mushroom patch (Canifis)",
+    "slug": "mushroom-canifis"
+  },
+  {
+    "data": {
+      "gardener": "Alexandra",
+      "patch_type": "redwood",
+      "source_token": "[[Farming Guild]]<br/>''Gardener: [[Alexandra]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Special_patches/Patches"
+    },
+    "id": "farming_patch:redwood-farming-guild",
+    "kind": "farming_patch",
+    "name": "Redwood patch (Farming Guild)",
+    "slug": "redwood-farming-guild"
+  },
+  {
+    "data": {
+      "gardener": "Mernia",
+      "patch_type": "seaweed",
+      "source_token": "[[Underwater]]<br/>''Gardener: [[Mernia]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Special_patches/Patches"
+    },
+    "id": "farming_patch:seaweed-fossil-island",
+    "kind": "farming_patch",
+    "name": "Seaweed patch (Fossil Island)",
+    "slug": "seaweed-fossil-island"
+  },
+  {
+    "data": {
+      "gardener": "Praistan Ebola",
+      "patch_type": "spirit_tree",
+      "source_token": "North of [[Brimhaven]]<br/>''Gardener: [[Praistan Ebola]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Spirit_Tree_%28Farming%29/Patches"
+    },
+    "id": "farming_patch:spirit-tree-brimhaven",
+    "kind": "farming_patch",
+    "name": "Spirit tree patch (Brimhaven)",
+    "slug": "spirit-tree-brimhaven"
+  },
+  {
+    "data": {
+      "gardener": "Yulf Squecks",
+      "patch_type": "spirit_tree",
+      "source_token": "South-east [[Etceteria]]<br/>''Gardener: [[Yulf Squecks]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Spirit_Tree_%28Farming%29/Patches"
+    },
+    "id": "farming_patch:spirit-tree-etceteria",
+    "kind": "farming_patch",
+    "name": "Spirit tree patch (Etceteria)",
+    "slug": "spirit-tree-etceteria"
+  },
+  {
+    "data": {
+      "gardener": "Latlink Fastbell",
+      "patch_type": "spirit_tree",
+      "source_token": "Northern section of the [[Farming Guild]]<br/>(85 Farming is required to enter, even if planted via boost)<br/>''Gardener: [[Latlink Fastbell]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Spirit_Tree_%28Farming%29/Patches"
+    },
+    "id": "farming_patch:spirit-tree-farming-guild",
+    "kind": "farming_patch",
+    "name": "Spirit tree patch (Farming Guild)",
+    "slug": "spirit-tree-farming-guild"
+  },
+  {
+    "data": {
+      "gardener": "Lammy Langle",
+      "patch_type": "spirit_tree",
+      "source_token": "South-west of [[Hosidius]]<br/>''Gardener: [[Lammy Langle]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Spirit_Tree_%28Farming%29/Patches"
+    },
+    "id": "farming_patch:spirit-tree-hosidius",
+    "kind": "farming_patch",
+    "name": "Spirit tree patch (Hosidius)",
+    "slug": "spirit-tree-hosidius"
+  },
+  {
+    "data": {
+      "gardener": "Frizzy Skernip",
+      "patch_type": "spirit_tree",
+      "source_token": "East of [[Port Sarim]]<br/>''Gardener: [[Frizzy Skernip]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Spirit_Tree_%28Farming%29/Patches"
+    },
+    "id": "farming_patch:spirit-tree-port-sarim",
+    "kind": "farming_patch",
+    "name": "Spirit tree patch (Port Sarim)",
+    "slug": "spirit-tree-port-sarim"
+  },
+  {
+    "data": {
+      "gardener": "Heskel",
+      "patch_type": "tree",
+      "source_token": "[[Falador Park]]<ref group=\"t\">Patch will become disease-free upon completion of the Elite tier of the [[Falador Diary#Elite|Falador Diary]].</ref><br/>''Gardener: [[Heskel]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Tree_patch/Patches"
+    },
+    "id": "farming_patch:tree-falador",
+    "kind": "farming_patch",
+    "name": "Tree patch (Falador)",
+    "slug": "tree-falador"
+  },
+  {
+    "data": {
+      "gardener": "Rosie",
+      "patch_type": "tree",
+      "source_token": "[[Farming Guild]]\n({{SCP|Farming|65}} Farming required)<br />''Gardener: [[Rosie]]''",
+      "source_url": "https://oldschool.runescape.wiki/w/Tree_patch/Patches"
+    },
+    "id": "farming_patch:tree-farming-guild",
+    "kind": "farming_patch",
+    "name": "Tree patch (Farming Guild)",
+    "slug": "tree-farming-guild"
+  },
+  {
+    "data": {
+      "gardener": "Prissy Scilla",
+      "patch_type": "tree",
+      "source_token": "[[Gnome Stronghold]]<br/>''Gardener: [[Prissy Scilla]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Tree_patch/Patches"
+    },
+    "id": "farming_patch:tree-gnome-stronghold",
+    "kind": "farming_patch",
+    "name": "Tree patch (Gnome Stronghold)",
+    "slug": "tree-gnome-stronghold"
+  },
+  {
+    "data": {
+      "gardener": "Fayeth",
+      "patch_type": "tree",
+      "source_token": "West of [[Lumbridge Castle]]<br/>''Gardener: [[Fayeth]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Tree_patch/Patches"
+    },
+    "id": "farming_patch:tree-lumbridge-castle",
+    "kind": "farming_patch",
+    "name": "Tree patch (Lumbridge Castle)",
+    "slug": "tree-lumbridge-castle"
+  },
+  {
+    "data": {
+      "gardener": "Aub",
+      "patch_type": "tree",
+      "source_token": "[[Nemus Retreat]]<br/>''Gardener: [[Aub]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Tree_patch/Patches"
+    },
+    "id": "farming_patch:tree-nemus-retreat",
+    "kind": "farming_patch",
+    "name": "Tree patch (Nemus Retreat)",
+    "slug": "tree-nemus-retreat"
+  },
+  {
+    "data": {
+      "gardener": "Alain",
+      "patch_type": "tree",
+      "source_token": "[[Taverley]]<br/>''Gardener: [[Alain]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Tree_patch/Patches"
+    },
+    "id": "farming_patch:tree-taverley",
+    "kind": "farming_patch",
+    "name": "Tree patch (Taverley)",
+    "slug": "tree-taverley"
+  },
+  {
+    "data": {
+      "gardener": "Treznor",
+      "patch_type": "tree",
+      "source_token": "[[Varrock Castle]] courtyard<br/>''Gardener: [[Treznor]]",
+      "source_url": "https://oldschool.runescape.wiki/w/Tree_patch/Patches"
+    },
+    "id": "farming_patch:tree-varrock",
+    "kind": "farming_patch",
+    "name": "Tree patch (Varrock)",
+    "slug": "tree-varrock"
+  },
+  {
     "data": {},
     "id": "gear_loadout:infinity",
     "kind": "gear_loadout",
