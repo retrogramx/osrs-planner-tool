@@ -307,6 +307,14 @@ git commit -m "feat(farming): fetch brick + committed category + table wikitext 
 
 The deterministic heart: turn raw table wikitext into typed patch rows. This is where the anti-fabrication rules live (per-row type emission; trailing-anchor place link; 0..n gardeners). Pure, offline, heavily tested on fixtures taken from the Task 2 snapshot.
 
+> **⚠️ REVISED DURING EXECUTION (proven against the real committed snapshot — THIS GOVERNS; the parser code in Step 3 below is SUPERSEDED).**
+> Task 2's fetch revealed the real wikitext is more complex than assumed (the `Allotment patch/Patches` table is a `{{!}}`-escaped parameterized template with `{{#if}}`/`{{#ifeq}}` guards; `Special patches/Patches` bundles 4 sub-tables; the coral page has 2 tables; only 3 of 12 category members carry an on-page infobox). A redesign was prototyped and **run against the real snapshot: 77 rows → 76 distinct (patch_type, place) nodes, id-injective, 0 unparsed, all 9 core types + 12 special crops, 72 parented / 4 FLAG.**
+> **Do this instead of Step 3 below:** create `kg_ingest/builders/farming_tables.py` by copying the proven reference **verbatim** — `/Users/adrian/Documents/workspace/github.com/retrogramx/osrs-planner-tool/.superpowers/sdd/reference-farming_tables.py` (245 lines). Do NOT re-derive the parser. It preserves the public names the plan's tests use (`parse_patch_tables`, `split_cells`, `types_in_cell`, `trailing_place_link`, `gardeners_in`, `PAGE_DEFAULT_TYPE`) and adds `find_tables`, `section_of`, `header_columns`, `keep_table`, `normalize`, `special_type`.
+> **Design (proven):** table-first — `find_tables` → `keep_table(cols)` keeps a table iff it has BOTH a `Location` and a `Map`/`Image` column (auto-skips the Activity sub-table [D4] + the coral-frags stats table); `normalize` expands `{{!}}-`→`\n|-` THEN `{{!}}`→`\n|` (order matters); per-row type from the Types cell links (the `{{#ifeq}}` guards need no evaluation — the Types cell already lists exactly the types present); `trailing_place_link` truncates the location cell at the first `<br`/`<ref`/`(requires`/`gardener` then takes the LAST `[[link]]`; `special_type` reads a special crop's Type-cell label; `gardeners_in` 0..n.
+> **Step 1 tests:** the plan's original unit tests below still PASS verbatim with the proven code (they exercise the preserved public helpers) — keep them, and ADD unit tests for `keep_table` (Location+Map → True; Location-only → False), `normalize` (`{{!}}`→`|`), and `special_type` (`[[Grape seeds\|Grape]]`→`grape`, leading `Hardwood`→`hardwood`).
+> **Step 5 census (the real proof) — assert against the committed snapshot:** `len(parse_patch_tables(tables)) == 77`; distinct `(patch_type, place_link)` count `== 76`; the `patch_type` set ⊇ the 9 core (`herb, allotment, flower, bush, hops, tree, fruit_tree, spirit_tree, coral`) AND the 12 special crops (`cactus, redwood, calquat, celastrus, crystal, hardwood, belladonna, hespori, anima, grape, mushroom, seaweed`); no blank/placeholder `patch_type`; every kept row has a `place_link`.
+> **Owner decision (confirmed):** quest-gated patches are INCLUDED and disclosed — do NOT filter on "requires completion" (they are real, source-grounded rows; the parser correctly keeps them). Only the cleanly-separable Activity/minigame table is deferred (the keep-table gate skips it automatically).
+
 **Files:**
 - Create: `kg_ingest/builders/farming_tables.py`
 - Test: `tests/kg_ingest/test_farming_tables.py`
@@ -560,6 +568,8 @@ git commit -m "feat(farming): deterministic wikitable parser (per-row type, trai
 
 Resolve each parsed row's place link to a committed `place:` node, group by (patch_type, place) into one node per instance, and emit `located_in` edges. This is where the id-injectivity fail-fast and the in-builder collapse (no `dedup_nodes` crash) live.
 
+> **⚠️ REVISION (governs over the Step 3 code below):** the coral node must RETAIN its gardener (`Chet`). Coral appears in two rows — the coral page (with `Gardener: [[Chet]]`) and the `Special patches` table (no gardener) — that collapse to one node. The plan's tie-break `(location_raw, source_url, row_index)` happens to pick the gardener-less Special row. **Fix:** make the group winner prefer a row WITH a non-empty gardener — change the winner key to `(0 if <this row's gardeners> else 1, location_raw, source_url, row_index)` so a gardener'd row wins. Add a builder test: two rows for `("coral", "Coral Nurseries")`, one `gardeners=["Chet"]` and one `gardeners=[]`, collapse to ONE node whose `data["gardener"] == "Chet"`. (The parser row's `place_link` for both coral rows is `Coral Nurseries` → resolves to the existing `place:coral-nurseries`; the two rows also confirm the multi-source-same-id collapse path.)
+
 **Files:**
 - Create: `kg_ingest/builders/farming.py`
 - Test: `tests/kg_ingest/test_farming_builder.py`
@@ -780,6 +790,8 @@ git commit -m "feat(farming): builder — (type x place) roster, in-builder coll
 
 Wire the builder into `assemble.py` after `build_map` (so the place index spans `world+map` nodes), with a seeded `rekey`. Add the owner-authored `farming_overrides.json` seeded with the review's known place_overrides + exclusions. Assemble must stay byte-stable.
 
+> **⚠️ REVISION (governs):** (1) The proven census is **76 nodes**, not ~90 — the Step 2 test `assert len(fp) >= 80` is WRONG; it is corrected to `>= 70` below. (2) Add **two more** `place_overrides` to `farming_overrides.json` (both target places verified to exist): `Vinery → place:hosidius` (the Grape/Vinery cell names `[[Hosidius]]` as its parent; the trailing anchor `Vinery` isn't a skeleton place) and `Mushroom Forest → place:fossil-island` (the hardwood cell names `[[Fossil Island]]`; `Mushroom Forest` isn't a skeleton place). Leave `Locus Oasis` and `McGrubor's Wood` as **disclosed FLAGs** (genuine skeleton gaps — the coverage verifier reports them; do NOT invent placements). Expected result: **74 parented / 2 FLAG.**
+
 **Files:**
 - Modify: `kg_ingest/assemble.py` (path constants ~305; loaders ~373; wiring block after the facility block ~588; `dedup_nodes` concat ~644)
 - Create: `data/map/farming_overrides.json`
@@ -830,7 +842,7 @@ def _edges():
 
 def test_farming_nodes_present_and_well_formed():
     fp = [n for n in _nodes() if n["id"].startswith("farming_patch:")]
-    assert len(fp) >= 80, f"expected ~90 farming patches, got {len(fp)}"
+    assert len(fp) >= 70, f"expected ~76 farming patches, got {len(fp)}"
     herb = next((n for n in fp if n["id"] == "farming_patch:herb-catherby"), None)
     assert herb is not None and herb["kind"] == "farming_patch"
     assert herb["data"]["patch_type"] == "herb"
@@ -934,6 +946,20 @@ git commit -m "feat(farming): assemble wiring (after build_map, seeded rekey) + 
 ### Task 6: Verifiers (structural hard-fail + coverage report)
 
 The source-grounding gates: one hard-fails if any node's datum doesn't trace to a real table row; one reports coverage against the 12-member category (every type yielded ≥1 node) and itemizes the FLAG residual + the disclosed deferrals.
+
+> **⚠️ REVISION (governs over the coverage-verifier code below):** only **3** of the 12 category members carry an on-page infobox, so `classify_member` returns `patch_type` for just 3 (Coral nursery (patch)/Flower patch/Spirit tree) and `other` for the 6 infobox-less patch pages + Special patches. The coverage verifier therefore must **NOT** enumerate the roster types via `classification == "patch_type"`. Replace that logic with a committed name→role map:
+> ```python
+> # The 12 Category:Farming patches members -> roster role (NOT infobox-derived; only 3 carry
+> # an on-page infobox). This is the completeness anchor.
+> MEMBER_TYPE = {
+>     "Allotment patch": "allotment", "Flower patch": "flower", "Herb patch": "herb",
+>     "Bush patch": "bush", "Hops patch": "hops", "Tree patch": "tree",
+>     "Fruit tree patch": "fruit_tree", "Spirit tree": "spirit_tree", "Coral nursery (patch)": "coral",
+> }
+> MEMBER_UMBRELLA = {"Special patches"}            # yields the special crops
+> MEMBER_EXCLUDE  = {"Coral Nurseries", "Chet"}    # place / npc -> force_exclude, no node
+> ```
+> Cross-check: (a) every `MEMBER_TYPE` value appears in ≥1 node's `patch_type` — keep the `core types present: 9/9` assertion (it's correct); (b) the umbrella yielded ≥1 special-crop node; (c) the 2 excludes are in `farming_overrides.json` `force_exclude` and produced no node. Report the member line as `12 members = 9 patch-type + 1 umbrella + 1 place + 1 npc` (a fixed string, NOT computed from `classification`). `classify_member` stays as-is for Task 2's own shape test; the coverage verifier just must not depend on it for the roster. Also report the FLAG list (expect 2: Locus Oasis, McGrubor's Wood) and the disclosed deferrals (Activity/minigame table; coords; per-site patch_count; quest-gating-as-a-field; instance_of/patch_type nodes).
 
 **Files:**
 - Create: `data/verify_farming_patches.py`
