@@ -1144,9 +1144,23 @@ def load_family_ids(data_dir: str = DATA) -> dict:
               emit.emit_trophies(clog),
               emit.emit_gear(load_gear_records(data_dir)),
               emit.emit_families(load_family_ids(data_dir)),
+              emit.emit_categories(),      # KEEP: hand-authored name-glob families (potion sub-liquids,
+                                           # teleport, charged_jewellery, essence, planks) — no data signal
               emit.emit_untradeables(), emit.emit_coins(), emit.emit_fallback(),
               emit.emit_meta(title, description)]
     return "\n".join(parts) + "\n"
+```
+
+> **Controller note (pre-flight fix A):** `emit_categories` stays in the parts list — it carries the
+> hand-authored families with no clean data signal (spec §4 "hand-authored keeps"). `emit_families`
+> (Task 10) covers the derived id-list families; the two are complementary. Module order becomes
+> `settings → custom → notable → trophies → gear → families → categories → coins → fallback → meta`.
+> Update the Task 12 validator order and the Task 11 order-test to include `categories` after `families`.
+
+```python
+# (the module-order test in Task 11 Step 1 becomes:)
+    order = [F.index(f"define:module:{m}") for m in
+             ("settings", "custom", "notable", "trophies", "gear", "families", "categories", "fallback")]
 ```
 
 - [ ] **Step 4: Run the generate tests**
@@ -1178,7 +1192,7 @@ git commit -m "feat(loot-filter): wire custom/notable/gear/families into the mod
 
 ```python
 # validate_loot_filter.py — replace the module-order block (:36-38)
-    order = ["settings", "custom", "notable", "trophies", "gear", "families", "fallback"]
+    order = ["settings", "custom", "notable", "trophies", "gear", "families", "categories", "fallback"]
     idxs = [text.find(f"define:module:{m}") for m in order]
     for m, i in zip(order, idxs):
         check(i != -1, f"module {m} missing")
