@@ -37,4 +37,6 @@ data/raw/**
 !data/raw/recipe_bucket.json
 # Wiki facility infoboxes IS committed provenance (offline snapshot for facility taxonomy layer classifier)
 !data/raw/wiki_facility_infoboxes.json
+# Bucket:recommended_equipment IS committed provenance (offline snapshot for loot-filter itemization layer)
+!data/raw/recommended_equipment_bucket.json
 .superpowers/
