@@ -38,17 +38,17 @@ def style_for(hue: str, grade: str, border: str | None = None) -> dict[str, str]
     Categories floor at C (always a vivid panel). Emphasis: +sound (A) -> +loot beam (S/SS).
     `border` overrides the auto-contrast border (used to mark divine potions with an icy edge)."""
     emph = next(e for g, _m, e in VALUE_GRADES if g == grade)
-    if grade in ("D", "E"):                       # low value: just text, no panel -> subtle shadow for readability
+    if grade in ("D", "E"):
         tc = ("#9e" if grade == "E" else "#ff") + hue[3:]
         s = {"textColor": tc, "textAccent": "1", "fontType": "1"}
         if grade == "E":
             s["menuSort"] = "-10000"
         return s
     s = {"backgroundColor": hue, "borderColor": border or _border_on(hue), "textColor": _text_on(hue),
-         "fontType": str(emph["fontType"]), "textAccent": "3", "icon": "CurrentItem()"}  # 3 = none: crisp on the solid panel
-    if grade in ("SS", "S", "A"):                  # high: + drop sound
+         "fontType": str(emph["fontType"]), "textAccent": "3", "icon": "CurrentItem()"}
+    if emph.get("sound"):
         s["sound"] = "3925"
-    if grade in ("SS", "S"):                       # top: + loot beam
+    if emph.get("beam"):
         s["showLootbeam"] = "true"; s["lootbeamColor"] = hue
     return s
 

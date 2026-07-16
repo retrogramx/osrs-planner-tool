@@ -28,3 +28,18 @@ def test_material_colors():
 def test_trophy_always_beams():
     g = {x[0]: x[2] for x in TROPHY_GRADES}
     assert all(g[k]["beam"] and g[k]["sound"] for k in ("SS","S","A","B","C"))
+
+def test_style_for_beam_comes_from_table_not_hardcode():
+    # Flip the S-grade table row's beam off; style_for must reflect the TABLE.
+    orig = dict(next(e for g,_m,e in VALUE_GRADES if g == "S"))
+    row = next(e for g,_m,e in VALUE_GRADES if g == "S")
+    row["beam"] = False
+    try:
+        s = style_for("#ff40e0d0", "S")
+        assert "showLootbeam" not in s, "beam must be driven by the table's `beam` flag"
+    finally:
+        row.clear(); row.update(orig)
+
+def test_style_for_beam_on_by_table():
+    s = style_for("#ff40e0d0", "SS")
+    assert s.get("showLootbeam") == "true" and s["lootbeamColor"] == "#ff40e0d0"
