@@ -33,7 +33,7 @@ def main() -> int:
     check(not (referenced - defined), f"macro(s) referenced but not defined: {sorted(referenced - defined)[:10]}")
     check(not re.search(r"(?:rule|apply) \(\)", text), "a rule/apply has an empty condition")
     check(not re.search(r"\)\s*\{\s*\}", text), "a rule/apply has an empty body")
-    order = ["settings", "custom", "notable", "trophies", "gear", "families", "categories", "fallback"]
+    order = ["settings", "custom", "notable", "trophies", "gear", "categories", "families", "fallback"]
     idxs = [text.find(f"define:module:{m}") for m in order]
     for m, i in zip(order, idxs):
         check(i != -1, f"module {m} missing")

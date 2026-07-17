@@ -31,7 +31,7 @@ def test_clog_rarity_tiers():
 def test_new_module_order():
     F = generate_filter()
     order = [F.index(f"define:module:{m}") for m in
-             ("settings", "custom", "notable", "trophies", "gear", "families", "categories", "fallback")]
+             ("settings", "custom", "notable", "trophies", "gear", "categories", "families", "fallback")]
     assert order == sorted(order), "modules must be emitted in the §8 order (+categories, pre-flight fix A)"
 
 def test_meta_is_last_and_starts_with_module():
