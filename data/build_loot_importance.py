@@ -144,6 +144,10 @@ def seed_tier(n):
     return None
 _RESOLVER["seed"] = seed_tier
 
+CAT_ID_TO_FAMILY = {"ores": "ore", "bars": "bar", "runes": "rune", "ammo": "ammo", "gems": "gem",
+    "essence": "essence", "herbs": "herb", "logs": "log", "planks": "plank", "food": "food",
+    "seeds": "seed", "bones": "bones"}   # categorize() bulk-resource ids that quantities owns
+
 def resolve(item_id, family):
     n = ID2NAME.get(item_id, "")
     r = _RESOLVER[family](n) if _RESOLVER.get(family) else None
@@ -153,26 +157,19 @@ def resolve(item_id, family):
 
 def main():
     records, seen = [], set()
-    # 1) loot_families families with id-lists ready
     RANKED = {"herb", "rune", "ore", "bar", "log", "seed", "bones", "ammo", "food"}
+    # 1) every categorize()-matched bulk resource in the dictionary — EXACTLY the set the
+    #    category_rules() trim removed, so quantities must own all of it (Bones, ashes, ensouled,
+    #    arrowtips/tips/cannonball, gems incl. uncut, ores incl. Coal, ...). Resolvers already handle them.
+    for r in DICT:
+        iid, nm = r["item_id"], r["name"]
+        c = C.categorize(nm)
+        if c and c["id"] in CAT_ID_TO_FAMILY and iid not in seen:
+            records.append(resolve(iid, CAT_ID_TO_FAMILY[c["id"]])); seen.add(iid)
+    # 2) loot_families ranked families — adds resources categorize() misses (obscure foods, etc.).
     for r in FAMS:
         if r["family"] in RANKED and r["item_id"] not in seen and r["item_id"] in ID2NAME:
             records.append(resolve(r["item_id"], r["family"])); seen.add(r["item_id"])
-    # 2) categories-sourced families (name sets -> ids)
-    def add_names(names, fam):
-        for nm in names:
-            iid = NAME2ID.get(nm)
-            if iid is not None and iid not in seen:
-                records.append(resolve(iid, fam)); seen.add(iid)
-    add_names(sorted(C.ESSENCE_NAMES), "essence")
-    add_names(sorted(C.PLANK_NAMES), "plank")
-    gem_names = sorted(C.CUT_GEMS) + sorted("Uncut " + g.lower() for g in C.CUT_GEMS)
-    add_names(gem_names, "gem")
-    # loot_families.json is missing "Coal" from the ore family (real-data gap: every other
-    # ORE_NAMES/BAR_NAMES member is already tagged there). categories.py's name-keyed ore/bar
-    # dicts are the completeness backstop, same pattern as essence/plank/gem above.
-    add_names(sorted(C.ORE_NAMES), "ore")
-    add_names(sorted(C.BAR_NAMES), "bar")
     records.sort(key=lambda r: (r["family"], r["item_id"]))
     out = {"_provenance": {"domain": "loot_importance", "kind": "editorial",
         "note": "Hand-ranked ironman base importance per resource item. Judgment, not a wiki fact; owner-reviewed. "

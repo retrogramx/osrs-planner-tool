@@ -4,9 +4,13 @@ from __future__ import annotations
 import argparse, json, os, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.join(os.path.dirname(HERE), "src"))
+from osrs_planner.lootfilter.categories import categorize
+CAT_ID_TO_FAMILY = {"ores": "ore", "bars": "bar", "runes": "rune", "ammo": "ammo", "gems": "gem",
+    "essence": "essence", "herbs": "herb", "logs": "log", "planks": "plank", "food": "food",
+    "seeds": "seed", "bones": "bones"}
 GRADES = {"SS", "S", "A", "B", "C", "D", "E"}
 RANKED = {"herb", "rune", "ore", "bar", "log", "seed", "bones", "ammo", "food", "essence", "gem", "plank"}
-CATS = {"essence", "gem", "plank"}    # membership is categories-sourced, not in loot_families.json
 
 def main() -> int:
     ap = argparse.ArgumentParser()
@@ -33,8 +37,15 @@ def main() -> int:
             errors.append(f"{iid}: family {r.get('family')!r} not a ranked family")
         if not r.get("rationale"):
             errors.append(f"{iid}: missing rationale")
-        if r.get("family") not in CATS and iid in fam_of and fam_of[iid] != r.get("family"):
-            errors.append(f"{iid}: family {r.get('family')!r} != loot_families {fam_of[iid]!r}")
+        justified = set()
+        if iid in fam_of:
+            justified.add(fam_of[iid])
+        c = categorize(r.get("name", ""))
+        if c and c["id"] in CAT_ID_TO_FAMILY:
+            justified.add(CAT_ID_TO_FAMILY[c["id"]])
+        if justified and r.get("family") not in justified:
+            errors.append(f"{iid}: family {r.get('family')!r} justified by neither loot_families "
+                          f"{fam_of.get(iid)!r} nor categorize {(c['id'] if c else None)!r}")
     if errors:
         print(f"LOOT-IMPORTANCE VALIDATION FAILED — {len(errors)} violation(s):")
         for e in errors[:50]:

@@ -6,8 +6,85 @@
   },
   "records": [
     {
+      "item_id": 2,
+      "name": "Steel cannonball",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "steel ammo"
+    },
+    {
+      "item_id": 39,
+      "name": "Bronze arrowtips",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "bronze ammo tips"
+    },
+    {
+      "item_id": 40,
+      "name": "Iron arrowtips",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "iron ammo tips"
+    },
+    {
+      "item_id": 41,
+      "name": "Steel arrowtips",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "steel ammo tips"
+    },
+    {
+      "item_id": 42,
+      "name": "Mithril arrowtips",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "mithril ammo tips"
+    },
+    {
+      "item_id": 43,
+      "name": "Adamant arrowtips",
+      "family": "ammo",
+      "base_tier": "D",
+      "rationale": "adamant ammo tips"
+    },
+    {
+      "item_id": 44,
+      "name": "Rune arrowtips",
+      "family": "ammo",
+      "base_tier": "C",
+      "rationale": "rune ammo tips"
+    },
+    {
+      "item_id": 45,
+      "name": "Opal bolt tips",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 46,
+      "name": "Pearl bolt tips",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 47,
+      "name": "Barb bolttips",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
       "item_id": 53,
       "name": "Headless arrow",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 78,
+      "name": "Ice arrows",
       "family": "ammo",
       "base_tier": "E",
       "rationale": "low-tier ammo"
@@ -25,6 +102,48 @@
       "family": "ammo",
       "base_tier": "E",
       "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 800,
+      "name": "Bronze thrownaxe",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "bronze ammo"
+    },
+    {
+      "item_id": 801,
+      "name": "Iron thrownaxe",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "iron ammo"
+    },
+    {
+      "item_id": 802,
+      "name": "Steel thrownaxe",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "steel ammo"
+    },
+    {
+      "item_id": 803,
+      "name": "Mithril thrownaxe",
+      "family": "ammo",
+      "base_tier": "D",
+      "rationale": "mithril ammo"
+    },
+    {
+      "item_id": 804,
+      "name": "Adamant thrownaxe",
+      "family": "ammo",
+      "base_tier": "C",
+      "rationale": "adamant ammo"
+    },
+    {
+      "item_id": 805,
+      "name": "Rune thrownaxe",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "rune ammo"
     },
     {
       "item_id": 806,
@@ -69,6 +188,97 @@
       "rationale": "rune ammo"
     },
     {
+      "item_id": 812,
+      "name": "Bronze dart(p)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "bronze ammo"
+    },
+    {
+      "item_id": 813,
+      "name": "Iron dart (p)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "iron ammo"
+    },
+    {
+      "item_id": 814,
+      "name": "Steel dart(p)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "steel ammo"
+    },
+    {
+      "item_id": 815,
+      "name": "Mithril dart(p)",
+      "family": "ammo",
+      "base_tier": "D",
+      "rationale": "mithril ammo"
+    },
+    {
+      "item_id": 816,
+      "name": "Adamant dart(p)",
+      "family": "ammo",
+      "base_tier": "C",
+      "rationale": "adamant ammo"
+    },
+    {
+      "item_id": 817,
+      "name": "Rune dart(p)",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "rune ammo"
+    },
+    {
+      "item_id": 818,
+      "name": "Poisoned dart(p)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 819,
+      "name": "Bronze dart tip",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "bronze ammo tips"
+    },
+    {
+      "item_id": 820,
+      "name": "Iron dart tip",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "iron ammo tips"
+    },
+    {
+      "item_id": 821,
+      "name": "Steel dart tip",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "steel ammo tips"
+    },
+    {
+      "item_id": 822,
+      "name": "Mithril dart tip",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "mithril ammo tips"
+    },
+    {
+      "item_id": 823,
+      "name": "Adamant dart tip",
+      "family": "ammo",
+      "base_tier": "D",
+      "rationale": "adamant ammo tips"
+    },
+    {
+      "item_id": 824,
+      "name": "Rune dart tip",
+      "family": "ammo",
+      "base_tier": "C",
+      "rationale": "rune ammo tips"
+    },
+    {
       "item_id": 825,
       "name": "Bronze javelin",
       "family": "ammo",
@@ -111,8 +321,155 @@
       "rationale": "rune ammo"
     },
     {
+      "item_id": 831,
+      "name": "Bronze javelin(p)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "bronze ammo"
+    },
+    {
+      "item_id": 832,
+      "name": "Iron javelin(p)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "iron ammo"
+    },
+    {
+      "item_id": 833,
+      "name": "Steel javelin(p)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "steel ammo"
+    },
+    {
+      "item_id": 834,
+      "name": "Mithril javelin(p)",
+      "family": "ammo",
+      "base_tier": "D",
+      "rationale": "mithril ammo"
+    },
+    {
+      "item_id": 835,
+      "name": "Adamant javelin(p)",
+      "family": "ammo",
+      "base_tier": "C",
+      "rationale": "adamant ammo"
+    },
+    {
+      "item_id": 836,
+      "name": "Rune javelin(p)",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "rune ammo"
+    },
+    {
+      "item_id": 863,
+      "name": "Iron knife",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "iron ammo"
+    },
+    {
+      "item_id": 864,
+      "name": "Bronze knife",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "bronze ammo"
+    },
+    {
+      "item_id": 865,
+      "name": "Steel knife",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "steel ammo"
+    },
+    {
+      "item_id": 866,
+      "name": "Mithril knife",
+      "family": "ammo",
+      "base_tier": "D",
+      "rationale": "mithril ammo"
+    },
+    {
+      "item_id": 867,
+      "name": "Adamant knife",
+      "family": "ammo",
+      "base_tier": "C",
+      "rationale": "adamant ammo"
+    },
+    {
+      "item_id": 868,
+      "name": "Rune knife",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "rune ammo"
+    },
+    {
+      "item_id": 869,
+      "name": "Black knife",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "black ammo"
+    },
+    {
+      "item_id": 870,
+      "name": "Bronze knife(p)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "bronze ammo"
+    },
+    {
+      "item_id": 871,
+      "name": "Iron knife(p)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "iron ammo"
+    },
+    {
+      "item_id": 872,
+      "name": "Steel knife(p)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "steel ammo"
+    },
+    {
+      "item_id": 873,
+      "name": "Mithril knife(p)",
+      "family": "ammo",
+      "base_tier": "D",
+      "rationale": "mithril ammo"
+    },
+    {
+      "item_id": 874,
+      "name": "Black knife(p)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "black ammo"
+    },
+    {
+      "item_id": 875,
+      "name": "Adamant knife(p)",
+      "family": "ammo",
+      "base_tier": "C",
+      "rationale": "adamant ammo"
+    },
+    {
+      "item_id": 876,
+      "name": "Rune knife(p)",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "rune ammo"
+    },
+    {
       "item_id": 877,
       "name": "Bronze bolts",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "bronze ammo"
+    },
+    {
+      "item_id": 878,
+      "name": "Bronze bolts (p)",
       "family": "ammo",
       "base_tier": "E",
       "rationale": "bronze ammo"
@@ -146,8 +503,22 @@
       "rationale": "bronze ammo"
     },
     {
+      "item_id": 883,
+      "name": "Bronze arrow(p)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "bronze ammo"
+    },
+    {
       "item_id": 884,
       "name": "Iron arrow",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "iron ammo"
+    },
+    {
+      "item_id": 885,
+      "name": "Iron arrow(p)",
       "family": "ammo",
       "base_tier": "E",
       "rationale": "iron ammo"
@@ -160,8 +531,22 @@
       "rationale": "steel ammo"
     },
     {
+      "item_id": 887,
+      "name": "Steel arrow(p)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "steel ammo"
+    },
+    {
       "item_id": 888,
       "name": "Mithril arrow",
+      "family": "ammo",
+      "base_tier": "D",
+      "rationale": "mithril ammo"
+    },
+    {
+      "item_id": 889,
+      "name": "Mithril arrow(p)",
       "family": "ammo",
       "base_tier": "D",
       "rationale": "mithril ammo"
@@ -174,6 +559,13 @@
       "rationale": "adamant ammo"
     },
     {
+      "item_id": 891,
+      "name": "Adamant arrow(p)",
+      "family": "ammo",
+      "base_tier": "C",
+      "rationale": "adamant ammo"
+    },
+    {
       "item_id": 892,
       "name": "Rune arrow",
       "family": "ammo",
@@ -181,8 +573,29 @@
       "rationale": "rune ammo"
     },
     {
+      "item_id": 893,
+      "name": "Rune arrow(p)",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "rune ammo"
+    },
+    {
+      "item_id": 942,
+      "name": "Bronze fire arrow (lit)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "bronze ammo"
+    },
+    {
       "item_id": 1849,
       "name": "Prototype dart",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 1853,
+      "name": "Prototype dart tip",
       "family": "ammo",
       "base_tier": "E",
       "rationale": "low-tier ammo"
@@ -195,8 +608,22 @@
       "rationale": "iron ammo"
     },
     {
+      "item_id": 2533,
+      "name": "Iron fire arrow (lit)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "iron ammo"
+    },
+    {
       "item_id": 2534,
       "name": "Steel fire arrow",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "steel ammo"
+    },
+    {
+      "item_id": 2535,
+      "name": "Steel fire arrow (lit)",
       "family": "ammo",
       "base_tier": "E",
       "rationale": "steel ammo"
@@ -209,8 +636,22 @@
       "rationale": "mithril ammo"
     },
     {
+      "item_id": 2537,
+      "name": "Mithril fire arrow (lit)",
+      "family": "ammo",
+      "base_tier": "D",
+      "rationale": "mithril ammo"
+    },
+    {
       "item_id": 2538,
       "name": "Adamant fire arrow",
+      "family": "ammo",
+      "base_tier": "C",
+      "rationale": "adamant ammo"
+    },
+    {
+      "item_id": 2539,
+      "name": "Adamant fire arrow (lit)",
       "family": "ammo",
       "base_tier": "C",
       "rationale": "adamant ammo"
@@ -221,6 +662,20 @@
       "family": "ammo",
       "base_tier": "B",
       "rationale": "rune ammo"
+    },
+    {
+      "item_id": 2541,
+      "name": "Rune fire arrow (lit)",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "rune ammo"
+    },
+    {
+      "item_id": 2861,
+      "name": "Wolfbone arrowtips",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
     },
     {
       "item_id": 2865,
@@ -242,6 +697,419 @@
       "family": "ammo",
       "base_tier": "E",
       "rationale": "black ammo"
+    },
+    {
+      "item_id": 3094,
+      "name": "Black dart(p)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "black ammo"
+    },
+    {
+      "item_id": 4160,
+      "name": "Broad arrows",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 4579,
+      "name": "Cannon ball",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 5616,
+      "name": "Bronze arrow(p+)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "bronze ammo"
+    },
+    {
+      "item_id": 5617,
+      "name": "Iron arrow(p+)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "iron ammo"
+    },
+    {
+      "item_id": 5618,
+      "name": "Steel arrow(p+)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "steel ammo"
+    },
+    {
+      "item_id": 5619,
+      "name": "Mithril arrow(p+)",
+      "family": "ammo",
+      "base_tier": "D",
+      "rationale": "mithril ammo"
+    },
+    {
+      "item_id": 5620,
+      "name": "Adamant arrow(p+)",
+      "family": "ammo",
+      "base_tier": "C",
+      "rationale": "adamant ammo"
+    },
+    {
+      "item_id": 5621,
+      "name": "Rune arrow(p+)",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "rune ammo"
+    },
+    {
+      "item_id": 5622,
+      "name": "Bronze arrow(p++)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "bronze ammo"
+    },
+    {
+      "item_id": 5623,
+      "name": "Iron arrow(p++)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "iron ammo"
+    },
+    {
+      "item_id": 5624,
+      "name": "Steel arrow(p++)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "steel ammo"
+    },
+    {
+      "item_id": 5625,
+      "name": "Mithril arrow(p++)",
+      "family": "ammo",
+      "base_tier": "D",
+      "rationale": "mithril ammo"
+    },
+    {
+      "item_id": 5626,
+      "name": "Adamant arrow(p++)",
+      "family": "ammo",
+      "base_tier": "C",
+      "rationale": "adamant ammo"
+    },
+    {
+      "item_id": 5627,
+      "name": "Rune arrow(p++)",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "rune ammo"
+    },
+    {
+      "item_id": 5628,
+      "name": "Bronze dart(p+)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "bronze ammo"
+    },
+    {
+      "item_id": 5629,
+      "name": "Iron dart(p+)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "iron ammo"
+    },
+    {
+      "item_id": 5630,
+      "name": "Steel dart(p+)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "steel ammo"
+    },
+    {
+      "item_id": 5631,
+      "name": "Black dart(p+)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "black ammo"
+    },
+    {
+      "item_id": 5632,
+      "name": "Mithril dart(p+)",
+      "family": "ammo",
+      "base_tier": "D",
+      "rationale": "mithril ammo"
+    },
+    {
+      "item_id": 5633,
+      "name": "Adamant dart(p+)",
+      "family": "ammo",
+      "base_tier": "C",
+      "rationale": "adamant ammo"
+    },
+    {
+      "item_id": 5634,
+      "name": "Rune dart(p+)",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "rune ammo"
+    },
+    {
+      "item_id": 5635,
+      "name": "Bronze dart(p++)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "bronze ammo"
+    },
+    {
+      "item_id": 5636,
+      "name": "Iron dart(p++)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "iron ammo"
+    },
+    {
+      "item_id": 5637,
+      "name": "Steel dart(p++)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "steel ammo"
+    },
+    {
+      "item_id": 5638,
+      "name": "Black dart(p++)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "black ammo"
+    },
+    {
+      "item_id": 5639,
+      "name": "Mithril dart(p++)",
+      "family": "ammo",
+      "base_tier": "D",
+      "rationale": "mithril ammo"
+    },
+    {
+      "item_id": 5640,
+      "name": "Adamant dart(p++)",
+      "family": "ammo",
+      "base_tier": "C",
+      "rationale": "adamant ammo"
+    },
+    {
+      "item_id": 5641,
+      "name": "Rune dart(p++)",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "rune ammo"
+    },
+    {
+      "item_id": 5642,
+      "name": "Bronze javelin(p+)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "bronze ammo"
+    },
+    {
+      "item_id": 5643,
+      "name": "Iron javelin(p+)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "iron ammo"
+    },
+    {
+      "item_id": 5644,
+      "name": "Steel javelin(p+)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "steel ammo"
+    },
+    {
+      "item_id": 5645,
+      "name": "Mithril javelin(p+)",
+      "family": "ammo",
+      "base_tier": "D",
+      "rationale": "mithril ammo"
+    },
+    {
+      "item_id": 5646,
+      "name": "Adamant javelin(p+)",
+      "family": "ammo",
+      "base_tier": "C",
+      "rationale": "adamant ammo"
+    },
+    {
+      "item_id": 5647,
+      "name": "Rune javelin(p+)",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "rune ammo"
+    },
+    {
+      "item_id": 5648,
+      "name": "Bronze javelin(p++)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "bronze ammo"
+    },
+    {
+      "item_id": 5649,
+      "name": "Iron javelin(p++)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "iron ammo"
+    },
+    {
+      "item_id": 5650,
+      "name": "Steel javelin(p++)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "steel ammo"
+    },
+    {
+      "item_id": 5651,
+      "name": "Mithril javelin(p++)",
+      "family": "ammo",
+      "base_tier": "D",
+      "rationale": "mithril ammo"
+    },
+    {
+      "item_id": 5652,
+      "name": "Adamant javelin(p++)",
+      "family": "ammo",
+      "base_tier": "C",
+      "rationale": "adamant ammo"
+    },
+    {
+      "item_id": 5653,
+      "name": "Rune javelin(p++)",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "rune ammo"
+    },
+    {
+      "item_id": 5654,
+      "name": "Bronze knife(p+)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "bronze ammo"
+    },
+    {
+      "item_id": 5655,
+      "name": "Iron knife(p+)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "iron ammo"
+    },
+    {
+      "item_id": 5656,
+      "name": "Steel knife(p+)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "steel ammo"
+    },
+    {
+      "item_id": 5657,
+      "name": "Mithril knife(p+)",
+      "family": "ammo",
+      "base_tier": "D",
+      "rationale": "mithril ammo"
+    },
+    {
+      "item_id": 5658,
+      "name": "Black knife(p+)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "black ammo"
+    },
+    {
+      "item_id": 5659,
+      "name": "Adamant knife(p+)",
+      "family": "ammo",
+      "base_tier": "C",
+      "rationale": "adamant ammo"
+    },
+    {
+      "item_id": 5660,
+      "name": "Rune knife(p+)",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "rune ammo"
+    },
+    {
+      "item_id": 5661,
+      "name": "Bronze knife(p++)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "bronze ammo"
+    },
+    {
+      "item_id": 5662,
+      "name": "Iron knife(p++)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "iron ammo"
+    },
+    {
+      "item_id": 5663,
+      "name": "Steel knife(p++)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "steel ammo"
+    },
+    {
+      "item_id": 5664,
+      "name": "Mithril knife(p++)",
+      "family": "ammo",
+      "base_tier": "D",
+      "rationale": "mithril ammo"
+    },
+    {
+      "item_id": 5665,
+      "name": "Black knife(p++)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "black ammo"
+    },
+    {
+      "item_id": 5666,
+      "name": "Adamant knife(p++)",
+      "family": "ammo",
+      "base_tier": "C",
+      "rationale": "adamant ammo"
+    },
+    {
+      "item_id": 5667,
+      "name": "Rune knife(p++)",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "rune ammo"
+    },
+    {
+      "item_id": 6061,
+      "name": "Bronze bolts (p+)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "bronze ammo"
+    },
+    {
+      "item_id": 6062,
+      "name": "Bronze bolts (p++)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "bronze ammo"
+    },
+    {
+      "item_id": 7119,
+      "name": "Cannon ball",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 7147,
+      "name": "Cannon balls",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
     },
     {
       "item_id": 7686,
@@ -307,6 +1175,279 @@
       "rationale": "low-tier ammo"
     },
     {
+      "item_id": 9187,
+      "name": "Jade bolt tips",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 9188,
+      "name": "Topaz bolt tips",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 9189,
+      "name": "Sapphire bolt tips",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 9190,
+      "name": "Emerald bolt tips",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 9191,
+      "name": "Ruby bolt tips",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 9192,
+      "name": "Diamond bolt tips",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 9193,
+      "name": "Dragonstone bolt tips",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "dragon ammo tips"
+    },
+    {
+      "item_id": 9194,
+      "name": "Onyx bolt tips",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 9236,
+      "name": "Opal bolts (e)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 9237,
+      "name": "Jade bolts (e)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 9238,
+      "name": "Pearl bolts (e)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 9239,
+      "name": "Topaz bolts (e)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 9240,
+      "name": "Sapphire bolts (e)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 9241,
+      "name": "Emerald bolts (e)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 9242,
+      "name": "Ruby bolts (e)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 9243,
+      "name": "Diamond bolts (e)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 9244,
+      "name": "Dragonstone bolts (e)",
+      "family": "ammo",
+      "base_tier": "A",
+      "rationale": "dragon ammo"
+    },
+    {
+      "item_id": 9245,
+      "name": "Onyx bolts (e)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 9286,
+      "name": "Blurite bolts (p)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 9287,
+      "name": "Iron bolts (p)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "iron ammo"
+    },
+    {
+      "item_id": 9288,
+      "name": "Steel bolts (p)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "steel ammo"
+    },
+    {
+      "item_id": 9289,
+      "name": "Mithril bolts (p)",
+      "family": "ammo",
+      "base_tier": "D",
+      "rationale": "mithril ammo"
+    },
+    {
+      "item_id": 9290,
+      "name": "Adamant bolts (p)",
+      "family": "ammo",
+      "base_tier": "C",
+      "rationale": "adamant ammo"
+    },
+    {
+      "item_id": 9291,
+      "name": "Runite bolts (p)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 9292,
+      "name": "Silver bolts (p)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 9293,
+      "name": "Blurite bolts (p+)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 9294,
+      "name": "Iron bolts (p+)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "iron ammo"
+    },
+    {
+      "item_id": 9295,
+      "name": "Steel bolts (p+)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "steel ammo"
+    },
+    {
+      "item_id": 9296,
+      "name": "Mithril bolts (p+)",
+      "family": "ammo",
+      "base_tier": "D",
+      "rationale": "mithril ammo"
+    },
+    {
+      "item_id": 9297,
+      "name": "Adamant bolts (p+)",
+      "family": "ammo",
+      "base_tier": "C",
+      "rationale": "adamant ammo"
+    },
+    {
+      "item_id": 9298,
+      "name": "Runite bolts (p+)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 9299,
+      "name": "Silver bolts (p+)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 9300,
+      "name": "Blurite bolts (p++)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 9301,
+      "name": "Iron bolts (p++)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "iron ammo"
+    },
+    {
+      "item_id": 9302,
+      "name": "Steel bolts (p++)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "steel ammo"
+    },
+    {
+      "item_id": 9303,
+      "name": "Mithril bolts (p++)",
+      "family": "ammo",
+      "base_tier": "D",
+      "rationale": "mithril ammo"
+    },
+    {
+      "item_id": 9304,
+      "name": "Adamant bolts (p++)",
+      "family": "ammo",
+      "base_tier": "C",
+      "rationale": "adamant ammo"
+    },
+    {
+      "item_id": 9305,
+      "name": "Runite bolts (p++)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 9306,
+      "name": "Silver bolts (p++)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
       "item_id": 9335,
       "name": "Jade bolts",
       "family": "ammo",
@@ -363,6 +1504,69 @@
       "rationale": "low-tier ammo"
     },
     {
+      "item_id": 9375,
+      "name": "Bronze bolts (unf)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "bronze ammo"
+    },
+    {
+      "item_id": 9376,
+      "name": "Blurite bolts (unf)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 9377,
+      "name": "Iron bolts (unf)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "iron ammo"
+    },
+    {
+      "item_id": 9378,
+      "name": "Steel bolts (unf)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "steel ammo"
+    },
+    {
+      "item_id": 9379,
+      "name": "Mithril bolts (unf)",
+      "family": "ammo",
+      "base_tier": "D",
+      "rationale": "mithril ammo"
+    },
+    {
+      "item_id": 9380,
+      "name": "Adamant bolts(unf)",
+      "family": "ammo",
+      "base_tier": "C",
+      "rationale": "adamant ammo"
+    },
+    {
+      "item_id": 9381,
+      "name": "Runite bolts (unf)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 9382,
+      "name": "Silver bolts (unf)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 9706,
+      "name": "Training arrows",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
       "item_id": 10158,
       "name": "Kebbit bolts",
       "family": "ammo",
@@ -372,6 +1576,13 @@
     {
       "item_id": 10159,
       "name": "Long kebbit bolts",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 11176,
+      "name": "Arrowheads",
       "family": "ammo",
       "base_tier": "E",
       "rationale": "low-tier ammo"
@@ -391,11 +1602,74 @@
       "rationale": "dragon ammo"
     },
     {
+      "item_id": 11222,
+      "name": "Dragon fire arrow (lit)",
+      "family": "ammo",
+      "base_tier": "A",
+      "rationale": "dragon ammo"
+    },
+    {
+      "item_id": 11227,
+      "name": "Dragon arrow(p)",
+      "family": "ammo",
+      "base_tier": "A",
+      "rationale": "dragon ammo"
+    },
+    {
+      "item_id": 11228,
+      "name": "Dragon arrow(p+)",
+      "family": "ammo",
+      "base_tier": "A",
+      "rationale": "dragon ammo"
+    },
+    {
+      "item_id": 11229,
+      "name": "Dragon arrow(p++)",
+      "family": "ammo",
+      "base_tier": "A",
+      "rationale": "dragon ammo"
+    },
+    {
       "item_id": 11230,
       "name": "Dragon dart",
       "family": "ammo",
       "base_tier": "A",
       "rationale": "dragon ammo"
+    },
+    {
+      "item_id": 11231,
+      "name": "Dragon dart(p)",
+      "family": "ammo",
+      "base_tier": "A",
+      "rationale": "dragon ammo"
+    },
+    {
+      "item_id": 11232,
+      "name": "Dragon dart tip",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "dragon ammo tips"
+    },
+    {
+      "item_id": 11233,
+      "name": "Dragon dart(p+)",
+      "family": "ammo",
+      "base_tier": "A",
+      "rationale": "dragon ammo"
+    },
+    {
+      "item_id": 11234,
+      "name": "Dragon dart(p++)",
+      "family": "ammo",
+      "base_tier": "A",
+      "rationale": "dragon ammo"
+    },
+    {
+      "item_id": 11237,
+      "name": "Dragon arrowtips",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "dragon ammo tips"
     },
     {
       "item_id": 11700,
@@ -426,6 +1700,13 @@
       "rationale": "mithril ammo"
     },
     {
+      "item_id": 11874,
+      "name": "Broad arrowheads",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
       "item_id": 11875,
       "name": "Broad bolts",
       "family": "ammo",
@@ -440,6 +1721,27 @@
       "rationale": "low-tier ammo"
     },
     {
+      "item_id": 11885,
+      "name": "Broad arrowhead pack",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 11887,
+      "name": "Unfinished broad bolt pack",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 13193,
+      "name": "Bone bolt pack",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
       "item_id": 19484,
       "name": "Dragon javelin",
       "family": "ammo",
@@ -447,8 +1749,99 @@
       "rationale": "dragon ammo"
     },
     {
+      "item_id": 19486,
+      "name": "Dragon javelin(p)",
+      "family": "ammo",
+      "base_tier": "A",
+      "rationale": "dragon ammo"
+    },
+    {
+      "item_id": 19488,
+      "name": "Dragon javelin(p+)",
+      "family": "ammo",
+      "base_tier": "A",
+      "rationale": "dragon ammo"
+    },
+    {
+      "item_id": 19490,
+      "name": "Dragon javelin(p++)",
+      "family": "ammo",
+      "base_tier": "A",
+      "rationale": "dragon ammo"
+    },
+    {
+      "item_id": 19570,
+      "name": "Bronze javelin tips",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "bronze ammo tips"
+    },
+    {
+      "item_id": 19572,
+      "name": "Iron javelin tips",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "iron ammo tips"
+    },
+    {
+      "item_id": 19574,
+      "name": "Steel javelin tips",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "steel ammo tips"
+    },
+    {
+      "item_id": 19576,
+      "name": "Mithril javelin tips",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "mithril ammo tips"
+    },
+    {
+      "item_id": 19578,
+      "name": "Adamant javelin tips",
+      "family": "ammo",
+      "base_tier": "D",
+      "rationale": "adamant ammo tips"
+    },
+    {
+      "item_id": 19580,
+      "name": "Rune javelin tips",
+      "family": "ammo",
+      "base_tier": "C",
+      "rationale": "rune ammo tips"
+    },
+    {
+      "item_id": 19582,
+      "name": "Dragon javelin tips",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "dragon ammo tips"
+    },
+    {
       "item_id": 20389,
       "name": "Dragon arrow",
+      "family": "ammo",
+      "base_tier": "A",
+      "rationale": "dragon ammo"
+    },
+    {
+      "item_id": 20525,
+      "name": "Adamant arrow pack",
+      "family": "ammo",
+      "base_tier": "C",
+      "rationale": "adamant ammo"
+    },
+    {
+      "item_id": 20607,
+      "name": "Rune arrow pack",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "rune ammo"
+    },
+    {
+      "item_id": 20849,
+      "name": "Dragon thrownaxe",
       "family": "ammo",
       "base_tier": "A",
       "rationale": "dragon ammo"
@@ -468,6 +1861,27 @@
       "rationale": "amethyst ammo"
     },
     {
+      "item_id": 21320,
+      "name": "Amethyst javelin(p)",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "amethyst ammo"
+    },
+    {
+      "item_id": 21322,
+      "name": "Amethyst javelin(p+)",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "amethyst ammo"
+    },
+    {
+      "item_id": 21324,
+      "name": "Amethyst javelin(p++)",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "amethyst ammo"
+    },
+    {
       "item_id": 21326,
       "name": "Amethyst arrow",
       "family": "ammo",
@@ -482,11 +1896,165 @@
       "rationale": "amethyst ammo"
     },
     {
+      "item_id": 21330,
+      "name": "Amethyst fire arrow (lit)",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "amethyst ammo"
+    },
+    {
+      "item_id": 21332,
+      "name": "Amethyst arrow(p)",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "amethyst ammo"
+    },
+    {
+      "item_id": 21334,
+      "name": "Amethyst arrow(p+)",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "amethyst ammo"
+    },
+    {
+      "item_id": 21336,
+      "name": "Amethyst arrow(p++)",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "amethyst ammo"
+    },
+    {
+      "item_id": 21338,
+      "name": "Amethyst bolt tips",
+      "family": "ammo",
+      "base_tier": "C",
+      "rationale": "amethyst ammo tips"
+    },
+    {
+      "item_id": 21350,
+      "name": "Amethyst arrowtips",
+      "family": "ammo",
+      "base_tier": "C",
+      "rationale": "amethyst ammo tips"
+    },
+    {
+      "item_id": 21352,
+      "name": "Amethyst javelin tips",
+      "family": "ammo",
+      "base_tier": "C",
+      "rationale": "amethyst ammo tips"
+    },
+    {
+      "item_id": 21728,
+      "name": "Granite cannonball",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "cannon fodder, iron staple"
+    },
+    {
       "item_id": 21905,
       "name": "Dragon bolts",
       "family": "ammo",
       "base_tier": "A",
       "rationale": "dragon ammo"
+    },
+    {
+      "item_id": 21924,
+      "name": "Dragon bolts (p)",
+      "family": "ammo",
+      "base_tier": "A",
+      "rationale": "dragon ammo"
+    },
+    {
+      "item_id": 21926,
+      "name": "Dragon bolts (p+)",
+      "family": "ammo",
+      "base_tier": "A",
+      "rationale": "dragon ammo"
+    },
+    {
+      "item_id": 21928,
+      "name": "Dragon bolts (p++)",
+      "family": "ammo",
+      "base_tier": "A",
+      "rationale": "dragon ammo"
+    },
+    {
+      "item_id": 21930,
+      "name": "Dragon bolts (unf)",
+      "family": "ammo",
+      "base_tier": "A",
+      "rationale": "dragon ammo"
+    },
+    {
+      "item_id": 21932,
+      "name": "Opal dragon bolts (e)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 21934,
+      "name": "Jade dragon bolts (e)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 21936,
+      "name": "Pearl dragon bolts (e)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 21938,
+      "name": "Topaz dragon bolts (e)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 21940,
+      "name": "Sapphire dragon bolts (e)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 21942,
+      "name": "Emerald dragon bolts (e)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 21944,
+      "name": "Ruby dragon bolts (e)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 21946,
+      "name": "Diamond dragon bolts (e)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 21948,
+      "name": "Dragonstone dragon bolts (e)",
+      "family": "ammo",
+      "base_tier": "A",
+      "rationale": "dragon ammo"
+    },
+    {
+      "item_id": 21950,
+      "name": "Onyx dragon bolts (e)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
     },
     {
       "item_id": 21955,
@@ -594,6 +2162,48 @@
       "rationale": "low-tier ammo"
     },
     {
+      "item_id": 22804,
+      "name": "Dragon knife",
+      "family": "ammo",
+      "base_tier": "A",
+      "rationale": "dragon ammo"
+    },
+    {
+      "item_id": 22806,
+      "name": "Dragon knife(p)",
+      "family": "ammo",
+      "base_tier": "A",
+      "rationale": "dragon ammo"
+    },
+    {
+      "item_id": 22808,
+      "name": "Dragon knife(p+)",
+      "family": "ammo",
+      "base_tier": "A",
+      "rationale": "dragon ammo"
+    },
+    {
+      "item_id": 22810,
+      "name": "Dragon knife(p++)",
+      "family": "ammo",
+      "base_tier": "A",
+      "rationale": "dragon ammo"
+    },
+    {
+      "item_id": 22812,
+      "name": "Dragon knife",
+      "family": "ammo",
+      "base_tier": "A",
+      "rationale": "dragon ammo"
+    },
+    {
+      "item_id": 22814,
+      "name": "Dragon knife",
+      "family": "ammo",
+      "base_tier": "A",
+      "rationale": "dragon ammo"
+    },
+    {
       "item_id": 23619,
       "name": "Morrigan's javelin",
       "family": "ammo",
@@ -608,11 +2218,60 @@
       "rationale": "dragon ammo"
     },
     {
+      "item_id": 23649,
+      "name": "Diamond bolts (e)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
       "item_id": 25849,
       "name": "Amethyst dart",
       "family": "ammo",
       "base_tier": "B",
       "rationale": "amethyst ammo"
+    },
+    {
+      "item_id": 25851,
+      "name": "Amethyst dart(p)",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "amethyst ammo"
+    },
+    {
+      "item_id": 25853,
+      "name": "Amethyst dart tip",
+      "family": "ammo",
+      "base_tier": "C",
+      "rationale": "amethyst ammo tips"
+    },
+    {
+      "item_id": 25855,
+      "name": "Amethyst dart(p+)",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "amethyst ammo"
+    },
+    {
+      "item_id": 25857,
+      "name": "Amethyst dart(p++)",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "amethyst ammo"
+    },
+    {
+      "item_id": 27157,
+      "name": "Dragon knife",
+      "family": "ammo",
+      "base_tier": "A",
+      "rationale": "dragon ammo"
+    },
+    {
+      "item_id": 27192,
+      "name": "Opal dragon bolts (e)",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
     },
     {
       "item_id": 28872,
@@ -657,8 +2316,225 @@
       "rationale": "low-tier ammo"
     },
     {
+      "item_id": 30998,
+      "name": "Atlatl dart tips",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
       "item_id": 31010,
       "name": "Headless atlatl dart",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 31047,
+      "name": "Dirty arrowtips",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 31906,
+      "name": "Bronze cannonball",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "bronze ammo"
+    },
+    {
+      "item_id": 31908,
+      "name": "Iron cannonball",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "iron ammo"
+    },
+    {
+      "item_id": 31910,
+      "name": "Mithril cannonball",
+      "family": "ammo",
+      "base_tier": "D",
+      "rationale": "mithril ammo"
+    },
+    {
+      "item_id": 31912,
+      "name": "Adamant cannonball",
+      "family": "ammo",
+      "base_tier": "C",
+      "rationale": "adamant ammo"
+    },
+    {
+      "item_id": 31914,
+      "name": "Rune cannonball",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "rune ammo"
+    },
+    {
+      "item_id": 31916,
+      "name": "Dragon cannonball",
+      "family": "ammo",
+      "base_tier": "A",
+      "rationale": "dragon ammo"
+    },
+    {
+      "item_id": 31918,
+      "name": "Bronze chainshot cannonball",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "bronze ammo"
+    },
+    {
+      "item_id": 31920,
+      "name": "Iron chainshot cannonball",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "iron ammo"
+    },
+    {
+      "item_id": 31922,
+      "name": "Steel chainshot cannonball",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "steel ammo"
+    },
+    {
+      "item_id": 31924,
+      "name": "Mithril chainshot cannonball",
+      "family": "ammo",
+      "base_tier": "D",
+      "rationale": "mithril ammo"
+    },
+    {
+      "item_id": 31926,
+      "name": "Adamant chainshot cannonball",
+      "family": "ammo",
+      "base_tier": "C",
+      "rationale": "adamant ammo"
+    },
+    {
+      "item_id": 31928,
+      "name": "Rune chainshot cannonball",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "rune ammo"
+    },
+    {
+      "item_id": 31930,
+      "name": "Dragon chainshot cannonball",
+      "family": "ammo",
+      "base_tier": "A",
+      "rationale": "dragon ammo"
+    },
+    {
+      "item_id": 31932,
+      "name": "Bronze incendiary cannonball",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "bronze ammo"
+    },
+    {
+      "item_id": 31934,
+      "name": "Iron incendiary cannonball",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "iron ammo"
+    },
+    {
+      "item_id": 31936,
+      "name": "Steel incendiary cannonball",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "steel ammo"
+    },
+    {
+      "item_id": 31938,
+      "name": "Mithril incendiary cannonball",
+      "family": "ammo",
+      "base_tier": "D",
+      "rationale": "mithril ammo"
+    },
+    {
+      "item_id": 31940,
+      "name": "Adamant incendiary cannonball",
+      "family": "ammo",
+      "base_tier": "C",
+      "rationale": "adamant ammo"
+    },
+    {
+      "item_id": 31942,
+      "name": "Rune incendiary cannonball",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "rune ammo"
+    },
+    {
+      "item_id": 31944,
+      "name": "Dragon incendiary cannonball",
+      "family": "ammo",
+      "base_tier": "A",
+      "rationale": "dragon ammo"
+    },
+    {
+      "item_id": 32448,
+      "name": "Crate of arrowtips",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 32482,
+      "name": "Crate of arrowtips",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 32519,
+      "name": "Crate of arrowtips",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 32613,
+      "name": "Crate of arrowtips",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 32635,
+      "name": "Crate of cannonballs",
+      "family": "ammo",
+      "base_tier": "B",
+      "rationale": "cannon fodder, iron staple"
+    },
+    {
+      "item_id": 32693,
+      "name": "Crate of arrowtips",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 32764,
+      "name": "Crate of arrowtips",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 32924,
+      "name": "Crate of arrowtips",
+      "family": "ammo",
+      "base_tier": "E",
+      "rationale": "low-tier ammo"
+    },
+    {
+      "item_id": 32947,
+      "name": "Crate of arrowtips",
       "family": "ammo",
       "base_tier": "E",
       "rationale": "low-tier ammo"
@@ -804,6 +2680,13 @@
       "rationale": "low bar"
     },
     {
+      "item_id": 526,
+      "name": "Bones",
+      "family": "bones",
+      "base_tier": "D",
+      "rationale": "basic prayer xp"
+    },
+    {
       "item_id": 528,
       "name": "Burnt bones",
       "family": "bones",
@@ -839,6 +2722,13 @@
       "rationale": "dragon bones — prayer xp per bone"
     },
     {
+      "item_id": 592,
+      "name": "Ashes",
+      "family": "bones",
+      "base_tier": "D",
+      "rationale": "common bones"
+    },
+    {
       "item_id": 1502,
       "name": "Iban's ashes",
       "family": "bones",
@@ -851,6 +2741,13 @@
       "family": "bones",
       "base_tier": "D",
       "rationale": "common bones"
+    },
+    {
+      "item_id": 2530,
+      "name": "Bones",
+      "family": "bones",
+      "base_tier": "D",
+      "rationale": "basic prayer xp"
     },
     {
       "item_id": 2859,
@@ -972,6 +2869,13 @@
       "rationale": "common bones"
     },
     {
+      "item_id": 3187,
+      "name": "Bones",
+      "family": "bones",
+      "base_tier": "D",
+      "rationale": "basic prayer xp"
+    },
+    {
       "item_id": 4812,
       "name": "Zogre bones",
       "family": "bones",
@@ -1077,6 +2981,314 @@
       "rationale": "common bones"
     },
     {
+      "item_id": 13447,
+      "name": "Ensouled goblin head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13448,
+      "name": "Ensouled goblin head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13450,
+      "name": "Ensouled monkey head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13451,
+      "name": "Ensouled monkey head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13453,
+      "name": "Ensouled imp head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13454,
+      "name": "Ensouled imp head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13456,
+      "name": "Ensouled minotaur head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13457,
+      "name": "Ensouled minotaur head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13459,
+      "name": "Ensouled scorpion head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13460,
+      "name": "Ensouled scorpion head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13462,
+      "name": "Ensouled bear head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13463,
+      "name": "Ensouled bear head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13465,
+      "name": "Ensouled unicorn head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13466,
+      "name": "Ensouled unicorn head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13468,
+      "name": "Ensouled dog head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13469,
+      "name": "Ensouled dog head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13471,
+      "name": "Ensouled chaos druid head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13472,
+      "name": "Ensouled chaos druid head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13474,
+      "name": "Ensouled giant head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13475,
+      "name": "Ensouled giant head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13477,
+      "name": "Ensouled ogre head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13478,
+      "name": "Ensouled ogre head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13480,
+      "name": "Ensouled elf head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13481,
+      "name": "Ensouled elf head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13483,
+      "name": "Ensouled troll head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13484,
+      "name": "Ensouled troll head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13486,
+      "name": "Ensouled horror head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13487,
+      "name": "Ensouled horror head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13489,
+      "name": "Ensouled kalphite head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13490,
+      "name": "Ensouled kalphite head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13492,
+      "name": "Ensouled dagannoth head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13493,
+      "name": "Ensouled dagannoth head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13495,
+      "name": "Ensouled bloodveld head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13496,
+      "name": "Ensouled bloodveld head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13498,
+      "name": "Ensouled tzhaar head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13499,
+      "name": "Ensouled tzhaar head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13501,
+      "name": "Ensouled demon head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13502,
+      "name": "Ensouled demon head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13504,
+      "name": "Ensouled aviansie head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13505,
+      "name": "Ensouled aviansie head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13507,
+      "name": "Ensouled abyssal head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13508,
+      "name": "Ensouled abyssal head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13510,
+      "name": "Ensouled dragon head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 13511,
+      "name": "Ensouled dragon head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
       "item_id": 21975,
       "name": "Crushed superior dragon bones",
       "family": "bones",
@@ -1110,6 +3322,20 @@
       "family": "bones",
       "base_tier": "A",
       "rationale": "hydra bones — prayer xp per bone"
+    },
+    {
+      "item_id": 24655,
+      "name": "Bones",
+      "family": "bones",
+      "base_tier": "D",
+      "rationale": "basic prayer xp"
+    },
+    {
+      "item_id": 25199,
+      "name": "Bones",
+      "family": "bones",
+      "base_tier": "D",
+      "rationale": "basic prayer xp"
     },
     {
       "item_id": 25422,
@@ -1152,6 +3378,20 @@
       "family": "bones",
       "base_tier": "A",
       "rationale": "ashes — prayer xp"
+    },
+    {
+      "item_id": 26996,
+      "name": "Ensouled hellhound head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
+    },
+    {
+      "item_id": 26997,
+      "name": "Ensouled hellhound head",
+      "family": "bones",
+      "base_tier": "C",
+      "rationale": "arceuus reanimation xp"
     },
     {
       "item_id": 27223,
@@ -1385,6 +3625,13 @@
       "rationale": "trivial food"
     },
     {
+      "item_id": 247,
+      "name": "Jangerberries",
+      "family": "food",
+      "base_tier": "E",
+      "rationale": "trivial food"
+    },
+    {
       "item_id": 315,
       "name": "Shrimps",
       "family": "food",
@@ -1574,6 +3821,13 @@
       "rationale": "trivial food"
     },
     {
+      "item_id": 403,
+      "name": "Edible seaweed",
+      "family": "food",
+      "base_tier": "E",
+      "rationale": "trivial food"
+    },
+    {
       "item_id": 712,
       "name": "Cup of tea",
       "family": "food",
@@ -1644,6 +3898,13 @@
       "rationale": "trivial food"
     },
     {
+      "item_id": 1895,
+      "name": "Slice of cake",
+      "family": "food",
+      "base_tier": "E",
+      "rationale": "trivial food"
+    },
+    {
       "item_id": 1897,
       "name": "Chocolate cake",
       "family": "food",
@@ -1695,6 +3956,13 @@
     {
       "item_id": 1941,
       "name": "Swamp paste",
+      "family": "food",
+      "base_tier": "E",
+      "rationale": "trivial food"
+    },
+    {
+      "item_id": 1971,
+      "name": "Kebab",
       "family": "food",
       "base_tier": "E",
       "rationale": "trivial food"
@@ -1835,6 +4103,13 @@
     {
       "item_id": 2092,
       "name": "Drunk dragon",
+      "family": "food",
+      "base_tier": "E",
+      "rationale": "trivial food"
+    },
+    {
+      "item_id": 2114,
+      "name": "Pineapple",
       "family": "food",
       "base_tier": "E",
       "rationale": "trivial food"
@@ -2477,6 +4752,13 @@
       "rationale": "trivial food"
     },
     {
+      "item_id": 4561,
+      "name": "Purple sweets",
+      "family": "food",
+      "base_tier": "E",
+      "rationale": "trivial food"
+    },
+    {
       "item_id": 4838,
       "name": "Cup of tea",
       "family": "food",
@@ -2493,6 +4775,13 @@
     {
       "item_id": 5003,
       "name": "Cave eel",
+      "family": "food",
+      "base_tier": "E",
+      "rationale": "trivial food"
+    },
+    {
+      "item_id": 5504,
+      "name": "Strawberry",
       "family": "food",
       "base_tier": "E",
       "rationale": "trivial food"
@@ -2736,6 +5025,13 @@
       "rationale": "trivial food"
     },
     {
+      "item_id": 5984,
+      "name": "Watermelon slice",
+      "family": "food",
+      "base_tier": "E",
+      "rationale": "trivial food"
+    },
+    {
       "item_id": 5988,
       "name": "Cooked sweetcorn",
       "family": "food",
@@ -2850,6 +5146,13 @@
     {
       "item_id": 6705,
       "name": "Potato with cheese",
+      "family": "food",
+      "base_tier": "E",
+      "rationale": "trivial food"
+    },
+    {
+      "item_id": 6883,
+      "name": "Peach",
       "family": "food",
       "base_tier": "E",
       "rationale": "trivial food"
@@ -3765,6 +6068,13 @@
       "rationale": "trivial food"
     },
     {
+      "item_id": 10476,
+      "name": "Purple sweets",
+      "family": "food",
+      "base_tier": "E",
+      "rationale": "trivial food"
+    },
+    {
       "item_id": 10848,
       "name": "Spring sq'irkjuice",
       "family": "food",
@@ -4577,6 +6887,13 @@
       "rationale": "ruby gem — crafting/bolt tips"
     },
     {
+      "item_id": 1605,
+      "name": "Emerald",
+      "family": "gem",
+      "base_tier": "D",
+      "rationale": "emerald gem — crafting/bolt tips"
+    },
+    {
       "item_id": 1607,
       "name": "Sapphire",
       "family": "gem",
@@ -4603,6 +6920,13 @@
       "family": "gem",
       "base_tier": "E",
       "rationale": "red topaz gem — crafting/bolt tips"
+    },
+    {
+      "item_id": 1615,
+      "name": "Dragonstone",
+      "family": "gem",
+      "base_tier": "A",
+      "rationale": "dragonstone gem — crafting/bolt tips"
     },
     {
       "item_id": 1617,
@@ -5011,6 +7335,13 @@
       "rationale": "low-tier herb"
     },
     {
+      "item_id": 29558,
+      "name": "Grimy note",
+      "family": "herb",
+      "base_tier": "E",
+      "rationale": "low-tier herb"
+    },
+    {
       "item_id": 30094,
       "name": "Grimy huasca",
       "family": "herb",
@@ -5023,6 +7354,13 @@
       "family": "herb",
       "base_tier": "B",
       "rationale": "herblore secondary base"
+    },
+    {
+      "item_id": 1511,
+      "name": "Logs",
+      "family": "log",
+      "base_tier": "E",
+      "rationale": "low log"
     },
     {
       "item_id": 1513,
@@ -5060,8 +7398,22 @@
       "rationale": "low log"
     },
     {
+      "item_id": 2511,
+      "name": "Logs",
+      "family": "log",
+      "base_tier": "E",
+      "rationale": "low log"
+    },
+    {
       "item_id": 2862,
       "name": "Achey tree logs",
+      "family": "log",
+      "base_tier": "E",
+      "rationale": "low log"
+    },
+    {
+      "item_id": 3239,
+      "name": "Bark",
       "family": "log",
       "base_tier": "E",
       "rationale": "low log"
@@ -5237,6 +7589,13 @@
     {
       "item_id": 19672,
       "name": "Redwood pyre logs",
+      "family": "log",
+      "base_tier": "E",
+      "rationale": "low log"
+    },
+    {
+      "item_id": 24650,
+      "name": "Logs",
       "family": "log",
       "base_tier": "E",
       "rationale": "low log"

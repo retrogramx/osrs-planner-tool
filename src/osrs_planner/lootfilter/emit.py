@@ -9,7 +9,7 @@ from osrs_planner.lootfilter.palette import VALUE_GRADES, style_for, FALLBACK_HU
 from osrs_planner.lootfilter.palette import TROPHY_GRADES  # add to imports
 from osrs_planner.lootfilter.palette import FAMILY_HUES, gear_score, GEAR_TIERS
 from osrs_planner.lootfilter.palette import GRADE_ORDER, quantity_display_grade
-from osrs_planner.lootfilter.categories import category_rules, ORE_NAMES, BAR_NAMES, categorize
+from osrs_planner.lootfilter.categories import category_rules, categorize
 
 IRONMAN = "IRONMAN"
 _BARE = {"true", "false"}
@@ -205,12 +205,7 @@ def emit_categories() -> str:
         cid, display, patterns, hue, excludes = row[:5]
         border = row[5] if len(row) > 5 else None   # optional 6th elem: border override (divine potions)
         group = _GROUP_LABEL.get(cid, cid.title())
-        if hue is None:  # ores/bars -> one editable picker PER NAME (each carries its own hue)
-            table = ORE_NAMES if cid == "ores" else BAR_NAMES
-            for nm in patterns:
-                add(cid, nm, group, [nm], table[nm], [], None)
-        else:
-            add(cid, display, group, patterns, hue, excludes, border)
+        add(cid, display, group, patterns, hue, excludes, border)
     return emit_module("categories", "Categories", "\n".join(lines), "By material / type")
 
 def emit_families(family_ids, skip=frozenset()) -> str:
