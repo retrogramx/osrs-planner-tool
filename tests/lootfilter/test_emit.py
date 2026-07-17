@@ -19,7 +19,7 @@ def test_core_macros_in_first_module_not_orphaned():
 def test_modules_carry_filterscape_fields():
     from osrs_planner.lootfilter.emit import emit_module
     m = emit_module("demo", "Demo", "rule (x) {}")     # web customizer requires name+subtitle+description
-    assert "name: Demo" in m and "subtitle:" in m and "description: |" in m
+    assert 'name: "Demo"' in m and "subtitle:" in m and "description: |" in m
 
 def test_fallback_iron_gated_with_hide_floor():
     fb = emit_fallback()
@@ -40,4 +40,4 @@ def test_categories_are_editable_style_inputs():
     out = emit_categories()
     # every group is a FilterScape colour picker: type:style input + #define + rule-applies-macro
     assert "type: style" in out and "#define CAT_" in out and "{ CAT_" in out
-    assert "group: Potions" in out and "group: Gear" in out    # organised into collapsible groups
+    assert 'group: "Potions"' in out and 'group: "Gear"' in out    # organised into collapsible groups

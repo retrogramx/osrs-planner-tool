@@ -30,11 +30,19 @@ def _macro_body(style: dict) -> str:
     """A style dict as a `#define` macro body: 'k = v;' pairs WITHOUT the wrapping braces."""
     return style_str(style)[2:-2].strip()   # reuse style_str, drop the '{ ' ... ' }'
 
+def _yaml_scalar(value: str) -> str:
+    """Double-quote a value destined for a YAML plain-scalar field (name/subtitle/label/group).
+    FilterScape parses each `define:module`/`define:input`/`define:group` body as YAML, and a plain
+    scalar containing a colon-space, '#', or a leading indicator char throws -- which nulls the
+    ENTIRE imported filter ('No filter selected'), not just its module. Quoting is the class-level
+    guard so any editorial string is import-safe."""
+    return '"' + value.replace("\\", "\\\\").replace('"', '\\"') + '"'
+
 def emit_style_input(module_id: str, label: str, group: str, macro: str, conds: str,
                      style: dict, terminal: bool = True) -> str:
     """A FilterScape-EDITABLE style: a `type: style` input (colour picker) + a `#define` holding its
     default + a rule that applies the macro. Editing the picker rewrites the #define on export."""
-    decl = f"/*@ define:input:{module_id}\ntype: style\nlabel: {label}\ngroup: {group}\n*/"
+    decl = f"/*@ define:input:{module_id}\ntype: style\nlabel: {_yaml_scalar(label)}\ngroup: {_yaml_scalar(group)}\n*/"
     define = f"#define {macro} {_macro_body(style)}"
     rule = f"{'rule' if terminal else 'apply'} ({conds}) {{ {macro} }}"
     return f"{decl}\n{define}\n{rule}"
@@ -45,8 +53,8 @@ def emit_meta(name: str, desc: str) -> str:
 def emit_module(module_id: str, name: str, body: str, subtitle: str = "", description: str = "") -> str:
     # FilterScape/loot-filters-ui require name + subtitle + description on EVERY module (the plugin
     # is lenient, the web customizer isn't -- a missing field makes its importer build a bad module).
-    return (f"/*@ define:module:{module_id}\nname: {name}\n"
-            f"subtitle: {subtitle or name}\n"
+    return (f"/*@ define:module:{module_id}\nname: {_yaml_scalar(name)}\n"
+            f"subtitle: {_yaml_scalar(subtitle or name)}\n"
             f"description: |\n    {description or name}\n*/\n{body}\n")
 
 def emit_preamble() -> str:
@@ -313,7 +321,7 @@ def emit_untradeables() -> str:
 
 def emit_list_input(module_id: str, label: str, group: str, macro: str, default: str = "") -> str:
     """A `type: stringlist` input + its #define (default empty). Users type item names into it."""
-    decl = f"/*@ define:input:{module_id}\ntype: stringlist\nlabel: {label}\ngroup: {group}\n*/"
+    decl = f"/*@ define:input:{module_id}\ntype: stringlist\nlabel: {_yaml_scalar(label)}\ngroup: {_yaml_scalar(group)}\n*/"
     return f"{decl}\n#define {macro} [{default}]"
 
 def emit_custom_highlights(free: int = 6, tiers=("SS", "S", "A", "B", "C")) -> str:
