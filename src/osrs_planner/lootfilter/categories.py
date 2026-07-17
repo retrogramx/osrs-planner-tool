@@ -196,33 +196,17 @@ def categorize(name: str):
     return None
 
 def category_rules():
-    """(id, display, include_patterns, hue, exclude_patterns); hue=None -> per-name hue (ores/bars)."""
+    """(id, display, include_patterns, hue, exclude_patterns); the resource rows (ores/bars/runes/
+    gems/essence/ammo/logs/herbs/seeds/bones/planks/food) now live in emit_quantities — this keeps
+    only the non-bulk remainder. categorize() (the hue authority) is unchanged."""
     out = []
     for metal, hue in MATERIAL_COLORS.items():
         out.append(("gear", f"{metal.title()} gear", [f"{metal.title()} {p}" for p in GEAR_PIECES], hue, []))
-    out.append(("ores", "Ores", list(ORE_NAMES), None, []))
-    out.append(("bars", "Bars", list(BAR_NAMES), None, []))
-    for elem, hue in RUNE_COLORS.items():
-        out.append(("runes", f"{elem.title()} rune", [f"{elem.title()} rune"], hue, []))
-    for gem, hue in GEM_COLORS.items():
-        out.append(("gems", f"Uncut {gem}", [f"Uncut {gem}"], hue, []))     # uncut
-        out.append(("gems", gem.capitalize(), [gem.capitalize()], hue, []))  # cut
-    out.append(("essence", "Essence", sorted(ESSENCE_NAMES), _ESSENCE_HUE, []))
-    out.append(("ammo", "Ammo", AMMO_PATTERNS, _AMMO_HUE, []))
-    for tree, hue in LOG_COLORS.items():
-        out.append(("logs", f"{tree.title()} logs", [f"{tree.title()} logs"], hue, []))
-    for nm, hue in EXTRA_LOGS.items():
-        out.append(("logs", nm, [nm], hue, []))
-    out.append(("planks", "Planks", sorted(PLANK_NAMES), _PLANK_HUE, []))
-    out.append(("herbs", "Herbs", ["Grimy *"], "#ff2e8b57", []))
-    out.append(("seeds", "Seeds", ["* seed", "* seedling"], "#ff00e024", sorted(CRYSTAL_SEEDS)))
-    out.append(("bones", "Prayer supplies (bones, ashes, ensouled)", ["* bones", "* ashes", "Bones", "Ashes", "Ensouled * head"], _PRAYER_HUE, []))
-    out.append(("food", "Food", sorted(FOOD_NAMES), _FOOD_HUE, []))
     out.append(("teleports", "Teleports", TELEPORT_PATTERNS, _TELEPORT_HUE, []))
     out.append(("charged_jewellery", "Charged jewellery", JEWELLERY_PATTERNS, _JEWELLERY_HUE, []))
-    for disp, pats, base in DIVINE_POTIONS:           # divine = base liquid + icy border (6-tuple)
+    for disp, pats, base in DIVINE_POTIONS:
         out.append(("potions", disp, pats, base, [], _DIVINE_BORDER))
-    for disp, pats, hue in POTION_FAMILIES:           # per-liquid families...
+    for disp, pats, hue in POTION_FAMILIES:
         out.append(("potions", disp, pats, hue, []))
-    out.append(("potions", "Potions", ["*(1)", "*(2)", "*(3)", "*(4)"], _POTION_HUE, _POTION_EXCLUDES))  # ...then teal fallback
+    out.append(("potions", "Potions", ["*(1)", "*(2)", "*(3)", "*(4)"], _POTION_HUE, _POTION_EXCLUDES))
     return out
