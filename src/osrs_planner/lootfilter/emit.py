@@ -101,6 +101,31 @@ def emit_trophies(clog_item_ids) -> str:
             f"{IRONMAN} && {idl} && value:>={minv}", _trophy_style(emph)))
     return emit_module("trophies", "Collection-log trophies", "\n".join(lines), "Generic clog highlight")
 
+_NOTABLE_HUE = "#ffd08a20"   # amber "known target" border for recommended items
+_RARE_HUE = "#ffff45d6"      # magenta rare-drop beam
+_VALUE_HUE = "#ffff2b2b"     # red high-value beam (matches FALLBACK_HUES SS)
+
+def emit_notable(recommended_ids, rare_ids) -> str:
+    """Beam policy (design §5): recommended-for-activity items get a border-lift EDITABLE style
+    with NO beam (else every recommended item -- hundreds -- would beam); rare drops + the
+    value:>=500000 safety net are the scarcity signal and DO beam."""
+    used, lines = set(), []
+    if recommended_ids:
+        style = {"backgroundColor": _NOTABLE_HUE, "borderColor": "#ffffffff",
+                 "textColor": _text_on(_NOTABLE_HUE), "fontType": "2", "textAccent": "3"}
+        lines.append(emit_style_input("notable", "Recommended-for-activity", "Notable",
+            _macro_name("NOTABLE", "recommended", used), f"{IRONMAN} && {_id_list(recommended_ids)}", style))
+    if rare_ids:
+        style = {"backgroundColor": _RARE_HUE, "borderColor": "#ffffffff", "textColor": _text_on(_RARE_HUE),
+                 "fontType": "3", "textAccent": "3", "showLootbeam": "true", "lootbeamColor": _RARE_HUE, "sound": "3925"}
+        lines.append(emit_style_input("notable", "Rare drop", "Notable",
+            _macro_name("NOTABLE", "rare", used), f"{IRONMAN} && {_id_list(rare_ids)}", style))
+    vstyle = {"backgroundColor": _VALUE_HUE, "borderColor": "#ffffffff", "textColor": _text_on(_VALUE_HUE),
+              "fontType": "3", "textAccent": "3", "showLootbeam": "true", "lootbeamColor": _VALUE_HUE, "sound": "3925"}
+    lines.append(emit_style_input("notable", "High value (>=500k)", "Notable",
+        _macro_name("NOTABLE", "value", used), f"{IRONMAN} && value:>=500000", vstyle))
+    return emit_module("notable", "Notable", "\n".join(lines), "Recommended / rare / high-value")
+
 def emit_gear(gear_records) -> str:
     """Equipment ranked WITHIN each slot by gear_score, bucketed into GEAR_TIERS (fraction of that
     slot's max score). One editable id-list style-input per (slot, tier), brightest tier first."""
