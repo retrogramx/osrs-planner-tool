@@ -96,10 +96,20 @@ def equipment_families():
 
 def build():
     dict_recs = json.load(open(os.path.join(HERE, "item_dictionary.json"), encoding="utf-8"))["records"]
-    name_to_id = {}
+    # multimap: display names are NOT unique across item_ids (variant/minigame pages share a
+    # name with the canonical item, e.g. id 11686 "Fire rune (Barbarian Assault)" has name
+    # "Fire rune" same as canonical id 554) — collect ALL ids per name so every id whose name
+    # matches a suffix/recipe family gets classified, not just the first-seen id (same
+    # fix-class as the recommended_equipment parser's name multimap).
+    name_to_ids = defaultdict(list)
     for r in dict_recs:
-        name_to_id.setdefault(r["name"], r["item_id"])
+        name_to_ids[r["name"]].append(r["item_id"])
+    for ids in name_to_ids.values():
+        ids.sort()
     id_to_name = {r["item_id"]: r["name"] for r in dict_recs}
+    # source_url must use the wiki PAGE title, not the generic display name (711/4729 records
+    # have name != page_name, e.g. id 468 "Broken pickaxe" -> page "Broken pickaxe (bronze)").
+    id_to_page = {r["item_id"]: (r.get("page_name") or r["name"]) for r in dict_recs}
     overrides = json.load(open(os.path.join(HERE, "loot_family_overrides.json"), encoding="utf-8"))["records"]
     rec_fams = recipe_families()
     eq_fams = equipment_families()
@@ -112,17 +122,19 @@ def build():
     # precedence: overrides > name-suffix > recipe > equipment
     for o in overrides:
         claim(o["item_id"], o["family"], "override", o.get("source_token", id_to_name.get(o["item_id"], "")))
-    for name, iid in name_to_id.items():
+    for name, ids in name_to_ids.items():
         fam, sig = suffix_family(name)
         if fam:
-            claim(iid, fam, sig, name)
+            for iid in ids:
+                claim(iid, fam, sig, name)
     for name, (fam, sig) in rec_fams.items():
-        claim(name_to_id.get(name), fam, sig, name)
+        for iid in name_to_ids.get(name, []):
+            claim(iid, fam, sig, name)
     for iid, (fam, sig) in eq_fams.items():
         claim(iid, fam, sig, id_to_name.get(iid, ""))
 
     records = [{"item_id": iid, "family": fam, "source_signal": sig,
-                "source_token": token, "source_url": SRC + (id_to_name.get(iid, "").replace(" ", "_"))}
+                "source_token": token, "source_url": SRC + (id_to_page.get(iid, "").replace(" ", "_"))}
                for iid, (fam, sig, token) in fam_by_id.items()]
     records.sort(key=lambda r: r["item_id"])
     return records
