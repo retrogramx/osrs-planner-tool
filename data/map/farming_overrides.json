@@ -1,0 +1,21 @@
+{
+  "_provenance": {
+    "description": "Owner-authored escape hatch for the farming-patch layer (spec §4c). place_overrides map an unresolved location link -> a committed place id; force_exclude documents category members that are not patches (coverage verifier).",
+    "accessed": "2026-07-11"
+  },
+  "force_exclude": [
+    {"value": "Chet", "reason": "NPC (coral gardener) swept into Category:Farming patches; kept only as a gardener field", "source_url": "https://oldschool.runescape.wiki/w/Chet"},
+    {"value": "Coral Nurseries", "reason": "the underwater LOCATION page (Infobox Location), not a patch; the patch is 'Coral nursery (patch)'", "source_url": "https://oldschool.runescape.wiki/w/Coral_Nurseries"}
+  ],
+  "place_overrides": [
+    {"location": "Varrock Castle", "place_id": "place:varrock", "reason": "tree patch; Castle is inside Varrock", "source_url": "https://oldschool.runescape.wiki/w/Varrock_Castle"},
+    {"location": "Falador Park", "place_id": "place:falador", "reason": "tree patch; Park is inside Falador", "source_url": "https://oldschool.runescape.wiki/w/Falador_Park"},
+    {"location": "Gnome Stronghold", "place_id": "place:gnome-stronghold", "reason": "redirect target the _norm resolver does not follow", "source_url": "https://oldschool.runescape.wiki/w/Tree_Gnome_Stronghold"},
+    {"location": "Tree Gnome maze", "place_id": "place:tree-gnome-village", "reason": "fruit tree patch in the maze", "source_url": "https://oldschool.runescape.wiki/w/Tree_Gnome_Village"},
+    {"location": "Underwater", "place_id": "place:fossil-island", "reason": "Fossil Island underwater area", "source_url": "https://oldschool.runescape.wiki/w/Fossil_Island"},
+    {"location": "Draynor Manor", "place_id": "place:draynor-village", "reason": "belladonna patch by Draynor Manor", "source_url": "https://oldschool.runescape.wiki/w/Draynor_Manor"},
+    {"location": "Ortus Farm", "place_id": "place:civitas-illa-fortis", "reason": "Varlamore allotment/flower/herb hub", "source_url": "https://oldschool.runescape.wiki/w/Ortus_Farm"},
+    {"location": "Vinery", "place_id": "place:hosidius", "reason": "the Grape/Vinery cell names [[Hosidius]] as its parent; the trailing anchor Vinery isn't a skeleton place", "source_url": "https://oldschool.runescape.wiki/w/Vinery"},
+    {"location": "Mushroom Forest", "place_id": "place:fossil-island", "reason": "the hardwood cell names [[Fossil Island]]; Mushroom Forest isn't a skeleton place", "source_url": "https://oldschool.runescape.wiki/w/Mushroom_Forest"}
+  ]
+}

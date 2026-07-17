@@ -12822,6 +12822,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:farming-guild",
+    "id": 1137755178143897,
+    "src": "farming_patch:cactus-farming-guild",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "qty": 1,
       "role": "material"
@@ -14325,6 +14333,14 @@
     "id": 1139154968382561,
     "src": "recipe:tuna",
     "type": "consumes"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:nemus-retreat",
+    "id": 1139162160032629,
+    "src": "farming_patch:tree-nemus-retreat",
+    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -18604,6 +18620,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:hosidius",
+    "id": 1142907362118675,
+    "src": "farming_patch:flower-hosidius",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "members": false,
       "source_token": "Bucket:Storeline"
@@ -22327,6 +22351,14 @@
   {
     "cond_group": null,
     "data": {},
+    "dst": "place:catherby",
+    "id": 1146421774276329,
+    "src": "farming_patch:fruit-tree-catherby",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
+    "data": {},
     "dst": "place:gnome-stronghold",
     "id": 1146429139928570,
     "src": "place:brimstail-s-cave",
@@ -23724,6 +23756,14 @@
     "id": 1147643628918650,
     "src": "recipe:mahogany-cape-rack-total",
     "type": "consumes"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:al-kharid",
+    "id": 1147648526052116,
+    "src": "farming_patch:cactus-al-kharid",
+    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -39559,6 +39599,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:weiss",
+    "id": 1162420029396671,
+    "src": "farming_patch:herb-weiss",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "qty": 1
     },
@@ -48571,6 +48619,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:troll-stronghold",
+    "id": 1170880764095115,
+    "src": "farming_patch:herb-troll-stronghold",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "qty": 2,
       "role": "material"
@@ -54118,6 +54174,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:falador",
+    "id": 1176163037616766,
+    "src": "farming_patch:flower-falador",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "qty": 5
     },
@@ -58206,6 +58270,14 @@
     "id": 1180117702471177,
     "src": "recipe:corrupted-legs-attuned",
     "type": "produces"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:farming-guild",
+    "id": 1180127898228883,
+    "src": "farming_patch:bush-farming-guild",
+    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -66638,6 +66710,14 @@
   {
     "cond_group": null,
     "data": {},
+    "dst": "place:hosidius",
+    "id": 1187936961490402,
+    "src": "farming_patch:herb-hosidius",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
+    "data": {},
     "dst": "equipment_bonuses:24191",
     "id": 1187938320949493,
     "src": "item:24191",
@@ -67478,6 +67558,14 @@
     "id": 1188729783053485,
     "src": "shop:void-knight-archery-store",
     "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:civitas-illa-fortis",
+    "id": 1188747786051257,
+    "src": "farming_patch:allotment-civitas-illa-fortis",
+    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -72023,6 +72111,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:champions-guild",
+    "id": 1193073534647084,
+    "src": "farming_patch:bush-champions-guild",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "qty": 1
     },
@@ -73488,6 +73584,14 @@
   {
     "cond_group": null,
     "data": {},
+    "dst": "place:catherby",
+    "id": 1194518298218296,
+    "src": "farming_patch:flower-catherby",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
+    "data": {},
     "dst": "facility:range",
     "id": 1194521104832457,
     "src": "recipe:burnt-egg",
@@ -73771,6 +73875,14 @@
     "id": 1194785948325655,
     "src": "shop:torrell",
     "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:port-sarim",
+    "id": 1194788007509407,
+    "src": "farming_patch:spirit-tree-port-sarim",
+    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -76181,6 +76293,14 @@
     "id": 1197058618192754,
     "src": "recipe:tchiki-nut-paste",
     "type": "consumes"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:varrock",
+    "id": 1197066707050642,
+    "src": "farming_patch:tree-varrock",
+    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -78736,6 +78856,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:port-phasmatys",
+    "id": 1199366309559694,
+    "src": "farming_patch:flower-port-phasmatys",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "qty": 1,
       "role": "material"
@@ -79979,6 +80107,14 @@
     "id": 1200553521615215,
     "src": "item:11128",
     "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:civitas-illa-fortis",
+    "id": 1200561394962804,
+    "src": "farming_patch:herb-civitas-illa-fortis",
+    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -82557,6 +82693,14 @@
     "id": 1203101891366523,
     "src": "recipe:ultracompost-compost-bin",
     "type": "requires_facility"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:farming-guild",
+    "id": 1203109296849700,
+    "src": "farming_patch:herb-farming-guild",
+    "type": "located_in"
   },
   {
     "cond_group": 711749326078484,
@@ -92329,6 +92473,14 @@
     "type": "sells"
   },
   {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:yanille",
+    "id": 1212114951176246,
+    "src": "farming_patch:hops-yanille",
+    "type": "located_in"
+  },
+  {
     "cond_group": 685233648478895,
     "data": {},
     "dst": null,
@@ -93767,6 +93919,14 @@
     "id": 1213270792360907,
     "src": "shop:oblis-general-store",
     "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:port-phasmatys",
+    "id": 1213271798374146,
+    "src": "farming_patch:herb-port-phasmatys",
+    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -101138,6 +101298,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:harmony-island",
+    "id": 1220338762682378,
+    "src": "farming_patch:herb-harmony-island",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "qty": 1,
       "role": "material"
@@ -104217,6 +104385,14 @@
     "id": 1223272796619967,
     "src": "recipe:teak-armchair",
     "type": "consumes"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:kastori",
+    "id": 1223284227583759,
+    "src": "farming_patch:calquat-kastori",
+    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -111496,6 +111672,14 @@
   {
     "cond_group": null,
     "data": {},
+    "dst": "place:prifddinas",
+    "id": 1230275367284064,
+    "src": "farming_patch:crystal-prifddinas",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
+    "data": {},
     "dst": "place:marim",
     "id": 1230301959122248,
     "src": "shop:oobapohks-javelin-store",
@@ -111654,6 +111838,14 @@
     "id": 1230414742044075,
     "src": "recipe:gorilla-bonemeal",
     "type": "produces"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:farming-guild",
+    "id": 1230418996779995,
+    "src": "farming_patch:celastrus-farming-guild",
+    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -120567,6 +120759,14 @@
   {
     "cond_group": null,
     "data": {},
+    "dst": "place:catherby",
+    "id": 1238935073450031,
+    "src": "farming_patch:allotment-catherby",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
+    "data": {},
     "dst": "facility:lamp-oil-still",
     "id": 1238938684759490,
     "src": "recipe:impling-jar-3",
@@ -121053,6 +121253,14 @@
     "id": 1239307498677737,
     "src": "recipe:breadcrumbs",
     "type": "consumes"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:fossil-island",
+    "id": 1239308807604634,
+    "src": "farming_patch:hardwood-fossil-island",
+    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -127358,6 +127566,14 @@
     "id": 1244928375704020,
     "src": "recipe:snakeskin-sbott",
     "type": "produces"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:farming-guild",
+    "id": 1244932314030317,
+    "src": "farming_patch:tree-farming-guild",
+    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -139760,6 +139976,14 @@
     "type": "produces"
   },
   {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:gnome-stronghold",
+    "id": 1256383520413962,
+    "src": "farming_patch:tree-gnome-stronghold",
+    "type": "located_in"
+  },
+  {
     "cond_group": 744886212002414,
     "data": {},
     "dst": null,
@@ -145775,6 +145999,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:hosidius",
+    "id": 1262086083382679,
+    "src": "farming_patch:spirit-tree-hosidius",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "qty": 1000,
       "role": "material"
@@ -148969,6 +149201,14 @@
     "id": 1264979961805989,
     "src": "recipe:kebbit-teeth-dust",
     "type": "consumes"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:harmony-island",
+    "id": 1265006848523747,
+    "src": "farming_patch:allotment-harmony-island",
+    "type": "located_in"
   },
   {
     "cond_group": 756180625974431,
@@ -153118,6 +153358,14 @@
     "type": "requires_facility"
   },
   {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:ardougne",
+    "id": 1268629651412510,
+    "src": "farming_patch:flower-ardougne",
+    "type": "located_in"
+  },
+  {
     "cond_group": 661942245508628,
     "data": {},
     "dst": null,
@@ -154922,6 +155170,14 @@
     "id": 1270241395560614,
     "src": "recipe:steel-javelin",
     "type": "produces"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:entrana",
+    "id": 1270285583215239,
+    "src": "farming_patch:hops-entrana",
+    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -156816,6 +157072,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:lumbridge-castle",
+    "id": 1271834877431671,
+    "src": "farming_patch:tree-lumbridge-castle",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "qty": 5,
       "role": "material"
@@ -158121,6 +158385,14 @@
     "id": 1273210111145187,
     "src": "item:3779",
     "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:farming-guild",
+    "id": 1273216773277503,
+    "src": "farming_patch:anima-farming-guild",
+    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -160564,6 +160836,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:tree-gnome-village",
+    "id": 1275672519799601,
+    "src": "farming_patch:fruit-tree-tree-gnome-village",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "qty": 1
     },
@@ -161608,6 +161888,14 @@
     "id": 1276604522047298,
     "src": "recipe:crystal-helm-trahaearn-recolour-crwys",
     "type": "produces"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:the-summer-shore",
+    "id": 1276611106807566,
+    "src": "farming_patch:calquat-the-summer-shore",
+    "type": "located_in"
   },
   {
     "cond_group": 793014739622713,
@@ -164133,6 +164421,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:etceteria",
+    "id": 1278949751079812,
+    "src": "farming_patch:bush-etceteria",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "qty": 1,
       "role": "material"
@@ -164990,6 +165286,14 @@
     "id": 1279743043083614,
     "src": "shop:oneiromancer",
     "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:farming-guild",
+    "id": 1279745530116251,
+    "src": "farming_patch:flower-farming-guild",
+    "type": "located_in"
   },
   {
     "cond_group": 829279238395548,
@@ -177378,6 +177682,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:prifddinas",
+    "id": 1291426104998012,
+    "src": "farming_patch:flower-prifddinas",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "qty": 1,
       "role": "tool"
@@ -177796,6 +178108,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:rimmington",
+    "id": 1291802725648688,
+    "src": "farming_patch:bush-rimmington",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "qty": 1,
       "role": "material"
@@ -177855,6 +178175,14 @@
     "id": 1291900238799894,
     "src": "recipe:shayzien-helm-1",
     "type": "requires_facility"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:civitas-illa-fortis",
+    "id": 1291900902671487,
+    "src": "farming_patch:flower-civitas-illa-fortis",
+    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -182127,6 +182455,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:farming-guild",
+    "id": 1296013623053718,
+    "src": "farming_patch:hespori-farming-guild",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "members": true,
       "source_token": "Bucket:Storeline"
@@ -185939,6 +186275,14 @@
     "type": "consumes"
   },
   {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:farming-guild",
+    "id": 1299615026324760,
+    "src": "farming_patch:fruit-tree-farming-guild",
+    "type": "located_in"
+  },
+  {
     "cond_group": 842507861632033,
     "data": {},
     "dst": null,
@@ -186711,6 +187055,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:kastori",
+    "id": 1300455799943818,
+    "src": "farming_patch:fruit-tree-kastori",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "qty": 1,
       "role": "tool"
@@ -186781,6 +187133,14 @@
     "id": 1300554352632196,
     "src": "item:25876",
     "type": "has_bonuses"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:falador",
+    "id": 1300555159540672,
+    "src": "farming_patch:tree-falador",
+    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -196962,6 +197322,14 @@
     "type": "requires_facility"
   },
   {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:ardougne",
+    "id": 1310102317065427,
+    "src": "farming_patch:bush-ardougne",
+    "type": "located_in"
+  },
+  {
     "cond_group": 821693232620118,
     "data": {},
     "dst": null,
@@ -199360,6 +199728,14 @@
     "id": 1312487884198534,
     "src": "shop:cobados-groceries",
     "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:farming-guild",
+    "id": 1312526252998679,
+    "src": "farming_patch:allotment-farming-guild",
+    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -203379,6 +203755,14 @@
   {
     "cond_group": null,
     "data": {},
+    "dst": "place:port-phasmatys",
+    "id": 1316356142762874,
+    "src": "farming_patch:allotment-port-phasmatys",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
+    "data": {},
     "dst": "facility:spinning-wheel",
     "id": 1316356659071709,
     "src": "recipe:magic-string",
@@ -207003,6 +207387,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:lumbridge",
+    "id": 1319765645261873,
+    "src": "farming_patch:hops-lumbridge",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "members": false,
       "source_token": "Bucket:Storeline"
@@ -208935,6 +209327,14 @@
     "id": 1321629077037234,
     "src": "recipe:vale-offerings-8",
     "type": "consumes"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:auburnvale",
+    "id": 1321633601902330,
+    "src": "farming_patch:belladonna-auburnvale",
+    "type": "located_in"
   },
   {
     "cond_group": 612351109307442,
@@ -211958,6 +212358,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:hosidius",
+    "id": 1324616617514462,
+    "src": "farming_patch:allotment-hosidius",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "qty": 15,
       "role": "material"
@@ -212584,6 +212992,14 @@
     "id": 1325144666134197,
     "src": "recipe:steam-rune-fire-altar-3",
     "type": "consumes"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:ardougne",
+    "id": 1325153602656472,
+    "src": "farming_patch:allotment-ardougne",
+    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -220434,6 +220850,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:etceteria",
+    "id": 1332087435223803,
+    "src": "farming_patch:spirit-tree-etceteria",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "members": true,
       "source_token": "Bucket:Storeline"
@@ -224307,6 +224731,14 @@
     "type": "consumes"
   },
   {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:catherby",
+    "id": 1335830485071734,
+    "src": "farming_patch:herb-catherby",
+    "type": "located_in"
+  },
+  {
     "cond_group": 834763131752258,
     "data": {},
     "dst": null,
@@ -225433,6 +225865,14 @@
     "id": 1336991571608342,
     "src": "recipe:burnt-curry",
     "type": "requires"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:hosidius",
+    "id": 1336999840380435,
+    "src": "farming_patch:grape-hosidius",
+    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -232924,6 +233364,14 @@
     "id": 1343898087994460,
     "src": "recipe:blank-air-rune-2",
     "type": "consumes"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:fossil-island",
+    "id": 1343919544861636,
+    "src": "farming_patch:seaweed-fossil-island",
+    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -241949,6 +242397,14 @@
     "type": "consumes"
   },
   {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:farming-guild",
+    "id": 1352415724995802,
+    "src": "farming_patch:redwood-farming-guild",
+    "type": "located_in"
+  },
+  {
     "cond_group": 609558716714411,
     "data": {},
     "dst": null,
@@ -243396,6 +243852,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:coral-nurseries",
+    "id": 1353739370515297,
+    "src": "farming_patch:coral-coral-nurseries",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "qty": 1,
       "role": "material"
@@ -244827,6 +245291,14 @@
     "id": 1354994833723768,
     "src": "shop:white-knight-armoury",
     "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:anglers-retreat",
+    "id": 1355008922351921,
+    "src": "farming_patch:hardwood-anglers-retreat",
+    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -248043,6 +248515,14 @@
   {
     "cond_group": null,
     "data": {},
+    "dst": "place:ardougne",
+    "id": 1357747140396888,
+    "src": "farming_patch:herb-ardougne",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
+    "data": {},
     "dst": "facility:furnace",
     "id": 1357764642113501,
     "src": "recipe:gold-ring",
@@ -248865,6 +249345,14 @@
     "id": 1358484542766269,
     "src": "recipe:bucket-of-sap",
     "type": "produces"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:gnome-stronghold",
+    "id": 1358488699889168,
+    "src": "farming_patch:fruit-tree-gnome-stronghold",
+    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -255616,6 +256104,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:taverley",
+    "id": 1364340818011146,
+    "src": "farming_patch:tree-taverley",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "qty": 1
     },
@@ -257160,6 +257656,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:farming-guild",
+    "id": 1365615782536373,
+    "src": "farming_patch:spirit-tree-farming-guild",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "qty": 1
     },
@@ -258213,6 +258717,14 @@
     "id": 1366678172512473,
     "src": "shop:mysterious-hallowed-goods",
     "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:lletya",
+    "id": 1366680669162966,
+    "src": "farming_patch:fruit-tree-lletya",
+    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -262077,6 +262589,14 @@
     "id": 1370353557721751,
     "src": "recipe:crane-claw",
     "type": "produces"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:canifis",
+    "id": 1370361096270145,
+    "src": "farming_patch:mushroom-canifis",
+    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -266173,6 +266693,14 @@
   {
     "cond_group": null,
     "data": {},
+    "dst": "place:falador",
+    "id": 1373854267932174,
+    "src": "farming_patch:allotment-falador",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
+    "data": {},
     "dst": "equipment_bonuses:3775",
     "id": 1373861932169794,
     "src": "item:3775",
@@ -269871,6 +270399,14 @@
     "id": 1377445322434843,
     "src": "shop:fortis-fur-stall",
     "type": "sells"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:kastori",
+    "id": 1377462761007186,
+    "src": "farming_patch:flower-kastori",
+    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -278090,6 +278626,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:brimhaven",
+    "id": 1385038407589583,
+    "src": "farming_patch:fruit-tree-brimhaven",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "qty": 1,
       "role": "tool"
@@ -281353,6 +281897,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:draynor-village",
+    "id": 1388156016067693,
+    "src": "farming_patch:belladonna-draynor-village",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "members": true,
       "source_token": "Bucket:Storeline"
@@ -283774,6 +284326,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:prifddinas",
+    "id": 1390371929868406,
+    "src": "farming_patch:allotment-prifddinas",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "members": true,
       "source_token": "Bucket:Storeline"
@@ -285066,6 +285626,14 @@
     "id": 1391607462903007,
     "src": "recipe:irit-leaf",
     "type": "consumes"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:tai-bwo-wannai",
+    "id": 1391624245107906,
+    "src": "farming_patch:calquat-tai-bwo-wannai",
+    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -291166,6 +291734,14 @@
   },
   {
     "cond_group": null,
+    "data": {},
+    "dst": "place:brimhaven",
+    "id": 1397329972294303,
+    "src": "farming_patch:spirit-tree-brimhaven",
+    "type": "located_in"
+  },
+  {
+    "cond_group": null,
     "data": {
       "condition": "unconditional-once-earned",
       "effect_kind": "recurring_resource",
@@ -295040,6 +295616,14 @@
     "id": 1400830505246893,
     "src": "recipe:strength-potion-3",
     "type": "consumes"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:aldarin",
+    "id": 1400865742081716,
+    "src": "farming_patch:hops-aldarin",
+    "type": "located_in"
   },
   {
     "cond_group": null,
@@ -298936,6 +299520,14 @@
     "id": 1404610486505712,
     "src": "recipe:amulet-of-chemistry",
     "type": "consumes"
+  },
+  {
+    "cond_group": null,
+    "data": {},
+    "dst": "place:falador",
+    "id": 1404614563702530,
+    "src": "farming_patch:herb-falador",
+    "type": "located_in"
   },
   {
     "cond_group": null,
