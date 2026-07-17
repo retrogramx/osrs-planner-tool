@@ -260,3 +260,30 @@ def emit_untradeables() -> str:
     lines.append(emit_style_input("untradeables", "Other untradeables (earned)", "Untradeables", "UNTR_DEFAULT",
         f"{IRONMAN} && tradeable:false", _untradeable_panel(_UNTRADEABLE_DEFAULT)))
     return emit_module("untradeables", "Untradeables", "\n".join(lines), "Clue tiers, types, then earned-violet")
+
+def emit_list_input(module_id: str, label: str, group: str, macro: str, default: str = "") -> str:
+    """A `type: stringlist` input + its #define (default empty). Users type item names into it."""
+    decl = f"/*@ define:input:{module_id}\ntype: stringlist\nlabel: {label}\ngroup: {group}\n*/"
+    return f"{decl}\n#define {macro} [{default}]"
+
+def emit_custom_highlights(free: int = 6, tiers=("SS", "S", "A", "B", "C")) -> str:
+    """Manual-override layer (spec §2): FilterScape has no native per-item override, so we ship
+    generic custom highlight groups instead -- paired stringlist (typed item names) + style
+    (colour/beam) inputs, plus tier-inject slots and a hide bank. All empty/off by default."""
+    used, lines = set(), []
+    for i in range(1, free + 1):
+        listmac = _macro_name("CUSTOMLIST", str(i), used)
+        lines.append(emit_list_input("custom", f"Custom highlight {i} — items", "Custom highlights", listmac))
+        lines.append(emit_style_input("custom", f"Custom highlight {i} — style", "Custom highlights",
+            _macro_name("CUSTOMSTYLE", str(i), used), f"{IRONMAN} && name:{listmac}",
+            {"textColor": "#ffffffff", "fontType": "2", "textAccent": "3"}))
+    for grade in tiers:
+        listmac = _macro_name("CUSTOMTIER", grade, used)
+        lines.append(emit_list_input("custom", f"Custom {grade}-tier items", "Custom tiers", listmac))
+        lines.append(emit_rule(f"{IRONMAN} && name:{listmac}", style_for(FALLBACK_HUES[grade], grade)))
+    # hide bank
+    hidemac = _macro_name("CUSTOMHIDE", "list", used)
+    lines.append(emit_list_input("custom", "Hide these items", "Hide", hidemac))
+    lines.append(emit_rule(f"{IRONMAN} && name:{hidemac}", {"hidden": "true"}))
+    return emit_module("custom", "Custom highlights", "\n".join(lines),
+                       "Type item names to recolour / hide them yourself")
