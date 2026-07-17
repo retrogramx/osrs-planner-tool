@@ -28,6 +28,34 @@ def test_clog_rarity_tiers():
     assert rar.get(4151) == "COMMON"   # Abyssal whip 1/512 -> COMMON, no beam spam
     assert set(rar.values()) == {"ULTRA", "COMMON"}   # only non-default tiers stored; RARE is implicit
 
+def test_new_module_order():
+    F = generate_filter()
+    order = [F.index(f"define:module:{m}") for m in
+             ("settings", "custom", "notable", "trophies", "gear", "categories", "families", "fallback")]
+    assert order == sorted(order), "modules must be emitted in the §8 order (+categories, pre-flight fix A)"
+
+def test_meta_is_last_and_starts_with_module():
+    F = generate_filter()
+    assert F.startswith("/*@ define:module:")
+    assert F.rstrip().endswith("}") and F.index("meta {") > F.index("define:module:fallback")
+
+def test_gear_ids_are_disjoint_across_tiers():
+    # Amendment 2: items_equipment.json has multiple records per item_id (stat-variant/(beta) trap);
+    # load_gear_records must dedupe via select_bonus_record so no gear id lands in >1 emit_gear tier.
+    import re
+    from osrs_planner.lootfilter.generate import load_gear_records
+    D = os.path.join(REPO, "data")
+    recs = load_gear_records(D)
+    ids = [r["item_id"] for r in recs]
+    assert len(ids) == len(set(ids)), "a gear item_id appears more than once in load_gear_records"
+    F = generate_filter()
+    gear_module = F[F.index("define:module:gear"):F.index("define:module:families")]
+    seen = []
+    for m in re.findall(r"id:\[([0-9, ]+)\]", gear_module):
+        seen.extend(int(t) for t in m.split(","))
+    assert len(seen) == len(set(seen)), "a gear item_id appears in more than one gear tier in the emitted filter"
+    assert seen.count(11832) == 1   # Bandos chestplate: exactly one tier
+
 def test_tailored_hide_owned_spares_high_value():
     # the high-value guard must be LIVE in the real generate path (not just the unit test)
     import re

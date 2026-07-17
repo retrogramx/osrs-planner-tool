@@ -7,6 +7,7 @@ import re
 
 from osrs_planner.lootfilter.palette import VALUE_GRADES, style_for, FALLBACK_HUES, _text_on, _border_on, COIN_TIERS
 from osrs_planner.lootfilter.palette import TROPHY_GRADES  # add to imports
+from osrs_planner.lootfilter.palette import FAMILY_HUES, gear_score, GEAR_TIERS
 from osrs_planner.lootfilter.categories import category_rules, ORE_NAMES, BAR_NAMES  # add
 
 IRONMAN = "IRONMAN"
@@ -100,6 +101,65 @@ def emit_trophies(clog_item_ids) -> str:
             f"{IRONMAN} && {idl} && value:>={minv}", _trophy_style(emph)))
     return emit_module("trophies", "Collection-log trophies", "\n".join(lines), "Generic clog highlight")
 
+_NOTABLE_HUE = "#ffd08a20"   # amber "known target" border for recommended items
+_RARE_HUE = "#ffff45d6"      # magenta rare-drop beam
+_VALUE_HUE = "#ffff2b2b"     # red high-value beam (matches FALLBACK_HUES SS)
+
+def emit_notable(recommended_ids, rare_ids) -> str:
+    """Beam policy (design §5): rare drops + the value:>=500000 safety net are the scarcity signal
+    and DO beam; recommended-for-activity items get a border-lift EDITABLE style with NO beam
+    (else every recommended item -- hundreds -- would beam). The BEAM rules are emitted FIRST
+    (whole-branch-review fix B): rules are terminal/first-match-wins, so a recommended item that
+    is ALSO rare or >=500k must hit the beam rule, not the no-beam recommended rule -- else
+    recommended∩rare/value items (e.g. Abyssal whip, Bandos chestplate) would never beam."""
+    used, lines = set(), []
+    if rare_ids:
+        style = {"backgroundColor": _RARE_HUE, "borderColor": "#ffffffff", "textColor": _text_on(_RARE_HUE),
+                 "fontType": "3", "textAccent": "3", "showLootbeam": "true", "lootbeamColor": _RARE_HUE, "sound": "3925"}
+        lines.append(emit_style_input("notable", "Rare drop", "Notable",
+            _macro_name("NOTABLE", "rare", used), f"{IRONMAN} && {_id_list(rare_ids)}", style))
+    vstyle = {"backgroundColor": _VALUE_HUE, "borderColor": "#ffffffff", "textColor": _text_on(_VALUE_HUE),
+              "fontType": "3", "textAccent": "3", "showLootbeam": "true", "lootbeamColor": _VALUE_HUE, "sound": "3925"}
+    lines.append(emit_style_input("notable", "High value (>=500k)", "Notable",
+        _macro_name("NOTABLE", "value", used), f"{IRONMAN} && value:>=500000", vstyle))
+    if recommended_ids:
+        style = {"backgroundColor": _NOTABLE_HUE, "borderColor": "#ffffffff",
+                 "textColor": _text_on(_NOTABLE_HUE), "fontType": "2", "textAccent": "3"}
+        lines.append(emit_style_input("notable", "Recommended-for-activity", "Notable",
+            _macro_name("NOTABLE", "recommended", used), f"{IRONMAN} && {_id_list(recommended_ids)}", style))
+    return emit_module("notable", "Notable", "\n".join(lines), "Recommended / rare / high-value")
+
+def emit_gear(gear_records) -> str:
+    """Equipment ranked WITHIN each slot by gear_score, bucketed into GEAR_TIERS (fraction of that
+    slot's max score). One editable id-list style-input per (slot, tier), brightest tier first."""
+    from collections import defaultdict
+    by_slot = defaultdict(list)
+    for r in gear_records:
+        by_slot[r["slot"]].append((r["item_id"], gear_score(r["stats"])))
+    hue = FAMILY_HUES["gear"]
+    used, lines = set(), []
+    for slot in sorted(by_slot):
+        items = by_slot[slot]
+        top = max((s for _i, s in items), default=0) or 1
+        tiers = defaultdict(list)
+        for iid, score in items:
+            # Clamp: gear_score sums defence bonuses, so a slot can contain a NEGATIVE-scoring
+            # item even when `top` (the slot max) is positive. GEAR_TIERS bottoms out at 0.0, so
+            # an unclamped negative frac would match no tier -> uncaught StopIteration. Clamping
+            # to 0.0 puts a negative-score item in the lowest grade (C), which is the correct
+            # placement -- it's worse than everything else in the slot.
+            frac = max(score / top, 0.0)
+            grade = next(g for g, thr in GEAR_TIERS if frac >= thr)
+            tiers[grade].append(iid)
+        for grade, _thr in GEAR_TIERS:            # emit S..C (brightest first)
+            ids = tiers.get(grade)
+            if not ids:
+                continue
+            lines.append(emit_style_input("gear", f"Gear {slot} {grade}", f"Gear — {slot}",
+                _macro_name("GEAR", f"{slot}{grade}", used),
+                f"{IRONMAN} && {_id_list(ids)}", style_for(hue, grade)))
+    return emit_module("gear", "Gear by slot", "\n".join(lines), "Equipment tiered by slot")
+
 def _name_list(patterns) -> str:
     return "name:[" + ", ".join(f'"{p}"' for p in patterns) + "]"
 
@@ -143,6 +203,22 @@ def emit_categories() -> str:
         else:
             add(cid, display, group, patterns, hue, excludes, border)
     return emit_module("categories", "Categories", "\n".join(lines), "By material / type")
+
+def emit_families(family_ids) -> str:
+    """One editable style-input per derived family, over its id-list (design objects/resources).
+    family_ids: {family: [item_id, ...]}. Skips 'gear' (handled by emit_gear, stat-tiered) and any
+    family with no ids or no entry in FAMILY_HUES."""
+    used, lines = set(), []
+    for fam in sorted(family_ids):
+        ids = family_ids[fam]
+        if not ids or fam not in FAMILY_HUES:
+            continue
+        if fam == "gear":       # gear handled by emit_gear (stat-tiered) — skip here
+            continue
+        lines.append(emit_style_input("families", fam.replace("_", " ").title(), "Families",
+            _macro_name("FAM", fam, used), f"{IRONMAN} && {_id_list(ids)}",
+            _flat_panel(FAMILY_HUES[fam])))
+    return emit_module("families", "Resource families", "\n".join(lines), "By derived family")
 
 def emit_settings() -> str:
     body = "\n".join([
@@ -203,3 +279,30 @@ def emit_untradeables() -> str:
     lines.append(emit_style_input("untradeables", "Other untradeables (earned)", "Untradeables", "UNTR_DEFAULT",
         f"{IRONMAN} && tradeable:false", _untradeable_panel(_UNTRADEABLE_DEFAULT)))
     return emit_module("untradeables", "Untradeables", "\n".join(lines), "Clue tiers, types, then earned-violet")
+
+def emit_list_input(module_id: str, label: str, group: str, macro: str, default: str = "") -> str:
+    """A `type: stringlist` input + its #define (default empty). Users type item names into it."""
+    decl = f"/*@ define:input:{module_id}\ntype: stringlist\nlabel: {label}\ngroup: {group}\n*/"
+    return f"{decl}\n#define {macro} [{default}]"
+
+def emit_custom_highlights(free: int = 6, tiers=("SS", "S", "A", "B", "C")) -> str:
+    """Manual-override layer (spec §2): FilterScape has no native per-item override, so we ship
+    generic custom highlight groups instead -- paired stringlist (typed item names) + style
+    (colour/beam) inputs, plus tier-inject slots and a hide bank. All empty/off by default."""
+    used, lines = set(), []
+    for i in range(1, free + 1):
+        listmac = _macro_name("CUSTOMLIST", str(i), used)
+        lines.append(emit_list_input("custom", f"Custom highlight {i} — items", "Custom highlights", listmac))
+        lines.append(emit_style_input("custom", f"Custom highlight {i} — style", "Custom highlights",
+            _macro_name("CUSTOMSTYLE", str(i), used), f"{IRONMAN} && name:{listmac}",
+            {"textColor": "#ffffffff", "fontType": "2", "textAccent": "3"}))
+    for grade in tiers:
+        listmac = _macro_name("CUSTOMTIER", grade, used)
+        lines.append(emit_list_input("custom", f"Custom {grade}-tier items", "Custom tiers", listmac))
+        lines.append(emit_rule(f"{IRONMAN} && name:{listmac}", style_for(FALLBACK_HUES[grade], grade)))
+    # hide bank
+    hidemac = _macro_name("CUSTOMHIDE", "list", used)
+    lines.append(emit_list_input("custom", "Hide these items", "Hide", hidemac))
+    lines.append(emit_rule(f"{IRONMAN} && name:{hidemac}", {"hidden": "true"}))
+    return emit_module("custom", "Custom highlights", "\n".join(lines),
+                       "Type item names to recolour / hide them yourself")

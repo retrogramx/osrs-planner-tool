@@ -10,3 +10,8 @@ def test_trophy_and_ladder_and_floor():
 def test_iron_gated_generic_has_no_tailoring():
     # starts with a module decl (FilterScape needs this); meta{} present but last; no tailoring
     assert "accountType:1" in F and F.startswith("/*@ define:module:") and "meta {" in F and "module:tailoring" not in F
+def test_new_layers_present():
+    # Verify the itemization layers (custom, notable, gear, families) and value safety-net beam are present
+    for mod in ("custom", "notable", "gear", "families"):
+        assert f"define:module:{mod}" in F, f"Module {mod} not found in filter"
+    assert "value:>=500000" in F, "Value safety-net beam (>=500000) not found in filter"

@@ -3,11 +3,12 @@
 tailoring module and is the committed/byte-stable artifact; tailored is account-specific."""
 from __future__ import annotations
 
-import json, os
+import json, os, sys
 from osrs_planner.lootfilter import emit
 from osrs_planner.lootfilter import tailor
 
 DATA = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))), "data")
+ROOT = os.path.dirname(DATA)   # repo root -- for the lazy kg_ingest import in load_gear_records
 
 def load_clog_ids(data_dir: str = DATA) -> list[int]:
     recs = json.load(open(os.path.join(data_dir, "collection_log.json"), encoding="utf-8"))["records"]
@@ -54,6 +55,56 @@ def load_clog_rarity(data_dir: str = DATA) -> dict:
         # else -> RARE (the tailor default; includes unsourced ids absent from this map)
     return out
 
+def load_recommended_ids(data_dir: str = DATA) -> list[int]:
+    recs = json.load(open(os.path.join(data_dir, "recommended_equipment.json"), encoding="utf-8"))["records"]
+    return sorted({r["item_id"] for r in recs})
+
+def load_rare_ids(data_dir: str = DATA, floor: float = 1 / 512) -> list[int]:
+    recs = json.load(open(os.path.join(data_dir, "drop_rates.json"), encoding="utf-8"))["records"]
+    rare = set()
+    for r in recs:
+        rate = r.get("drop_rate")
+        if rate is not None and rate <= floor:
+            rare.add(r["item_id"])
+    return sorted(rare)
+
+def load_gear_records(data_dir: str = DATA) -> list[dict]:
+    """One deduped {item_id, slot, stats} record per gear-family item_id (controller amendment 2).
+
+    items_equipment.json carries MULTIPLE records per item_id (stat-variant / (beta)-page trap --
+    the same selection trap documented for build_loot_families.py's equipment_families()). A naive
+    "include every eq record whose item_id is a gear-family member" would put the SAME item_id into
+    MULTIPLE emit_gear slot/tier buckets (once per variant record). Select ONE canonical record via
+    select_bonus_record -- the same selector build_equipment_bonuses/equipment_families use --
+    instead of re-deriving that logic."""
+    from collections import defaultdict
+    if ROOT not in sys.path:
+        sys.path.insert(0, ROOT)   # kg_ingest isn't packaged with osrs_planner (src-only wheel)
+    from kg_ingest.builders.equipment_bonuses import select_bonus_record
+    from osrs_planner.lootfilter import categories
+    fams = categories.families_by_id(data_dir)
+    eq = json.load(open(os.path.join(data_dir, "items_equipment.json"), encoding="utf-8"))["records"]
+    dict_recs = json.load(open(os.path.join(data_dir, "item_dictionary.json"), encoding="utf-8"))["records"]
+    canonical_pages = {r["item_id"]: r["page_name"] for r in dict_recs}
+    by_id = defaultdict(list)
+    for r in eq:
+        iid = r.get("item_id")
+        if iid is not None and fams.get(iid) == "gear":
+            by_id[iid].append(r)
+    out = []
+    for iid in sorted(by_id):
+        rec = select_bonus_record(by_id[iid], canonical_pages.get(iid))
+        out.append({"item_id": iid, "slot": rec["slot"], "stats": rec["stats"]})
+    return out
+
+def load_family_ids(data_dir: str = DATA) -> dict:
+    from collections import defaultdict
+    from osrs_planner.lootfilter import categories
+    out = defaultdict(list)
+    for iid, fam in categories.families_by_id(data_dir).items():
+        out[fam].append(iid)
+    return dict(out)
+
 def generate_filter(account_state=None, data_dir: str = DATA, title=None, description=None) -> str:
     # default to the generic identity; a tailored build should pass a distinct title so the
     # plugin lists it as its OWN filter (it keys on meta.name -> avoids colliding with generic).
@@ -62,12 +113,25 @@ def generate_filter(account_state=None, data_dir: str = DATA, title=None, descri
     clog = load_clog_ids(data_dir)
     # FilterScape/loot-filters-ui requires the FIRST token to be a module declaration, so settings
     # leads and the meta{} block goes LAST (the parser regex-scans meta from anywhere in the file).
-    parts = [emit.emit_settings()]
+    # module order (§8, whole-branch-review fix A -- categories moved ABOVE families: rules are
+    # terminal/first-match-wins, so specific hand-authored per-name hues in categories must win
+    # over the broad derived-family flat hues, not be shadowed by them): settings -> custom ->
+    # [tailoring if account_state] -> notable -> trophies -> gear -> categories -> families ->
+    # untradeables -> coins -> fallback -> meta.
+    parts = [emit.emit_settings(), emit.emit_custom_highlights()]
     if account_state is not None:  # tailored: thread value (hide-owned guard) + rarity (beam intensity)
         parts.append(tailor.emit_tailoring(account_state, set(clog), value_index=load_value_index(data_dir),
                                            rarity_index=load_clog_rarity(data_dir)))
-    parts += [emit.emit_trophies(clog), emit.emit_untradeables(), emit.emit_categories(),
-              emit.emit_coins(), emit.emit_fallback(), emit.emit_meta(title, description)]
+    parts += [emit.emit_notable(load_recommended_ids(data_dir), load_rare_ids(data_dir)),
+              emit.emit_trophies(clog),
+              emit.emit_gear(load_gear_records(data_dir)),
+              emit.emit_categories(),      # ABOVE families: hand-authored per-name hues (ores, per-
+                                           # element runes, non-oak logs, seeds, bones, potion sub-
+                                           # liquids, teleport, charged_jewellery, essence, planks)
+                                           # must win over the broad derived-family fallback below.
+              emit.emit_families(load_family_ids(data_dir)),
+              emit.emit_untradeables(), emit.emit_coins(), emit.emit_fallback(),
+              emit.emit_meta(title, description)]
     return "\n".join(parts) + "\n"
 
 def write_filter(path: str, account_state=None, data_dir: str = DATA, title=None, description=None) -> None:

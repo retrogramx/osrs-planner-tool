@@ -38,17 +38,17 @@ def style_for(hue: str, grade: str, border: str | None = None) -> dict[str, str]
     Categories floor at C (always a vivid panel). Emphasis: +sound (A) -> +loot beam (S/SS).
     `border` overrides the auto-contrast border (used to mark divine potions with an icy edge)."""
     emph = next(e for g, _m, e in VALUE_GRADES if g == grade)
-    if grade in ("D", "E"):                       # low value: just text, no panel -> subtle shadow for readability
+    if grade in ("D", "E"):
         tc = ("#9e" if grade == "E" else "#ff") + hue[3:]
         s = {"textColor": tc, "textAccent": "1", "fontType": "1"}
         if grade == "E":
             s["menuSort"] = "-10000"
         return s
     s = {"backgroundColor": hue, "borderColor": border or _border_on(hue), "textColor": _text_on(hue),
-         "fontType": str(emph["fontType"]), "textAccent": "3", "icon": "CurrentItem()"}  # 3 = none: crisp on the solid panel
-    if grade in ("SS", "S", "A"):                  # high: + drop sound
+         "fontType": str(emph["fontType"]), "textAccent": "3", "icon": "CurrentItem()"}
+    if emph.get("sound"):
         s["sound"] = "3925"
-    if grade in ("SS", "S"):                       # top: + loot beam
+    if emph.get("beam"):
         s["showLootbeam"] = "true"; s["lootbeamColor"] = hue
     return s
 
@@ -100,3 +100,34 @@ LOG_COLORS = {
     "oak": "#ffb8895a", "willow": "#ff8a9a5a", "maple": "#ffc07840", "yew": "#ff6a6a3a",
     "magic": "#ff5090d0", "redwood": "#ffb03020", "teak": "#ff9c6b3f", "mahogany": "#ff7a3b25",
 }
+
+# Family identity hues (design §3). EDITORIAL — owner-reviewed; refined in live in-game iteration.
+FAMILY_HUES = {
+    "gear":      "#ff8fa4b8",  # neutral steel — gear tiers escalate via emphasis, not hue
+    "utility":   "#ff4dd0e1",  # cyan-teal (teleports/tools/charged jewellery neighbourhood)
+    "herb":      "#ff2f7d3a",  # herb green
+    "potion":    "#ff9b30c0",  # potion violet (per-liquid sub-hues stay in categories.py)
+    "food":      "#ffe0533a",  # warm coral (matches existing _FOOD_HUE)
+    "raw_fish":  "#ff7fb0c0",  # pale sea-blue
+    "seed":      "#ff6b8f3a",  # seed olive
+    "ore":       "#ffa05a3a",  # ore earth (ores keep per-name hues in categories.py)
+    "bar":       "#ffb5892a",  # bar bronze-amber
+    "log":       "#ffb8895a",  # log tan (matches existing LOG_COLORS oak)
+    "rune":      "#ff7060d0",  # rune indigo (per-element hues stay in categories.py)
+    "ammo":      "#ff8c2f5b",  # deep wine (matches existing _AMMO_HUE)
+    "gem":       "#ff30c0a0",  # gem teal-green
+    "bones":     "#ffc7b9a0",  # bone (matches existing _PRAYER_HUE)
+    "secondary": "#ffb0a060",  # secondary khaki
+}
+
+def gear_score(stats: dict) -> int:
+    """Combat quality of an equipment stat block (design §7). Editorial weights."""
+    g = lambda k: stats.get(k) if isinstance(stats.get(k), (int, float)) else 0
+    atk = max(g("stab_attack_bonus"), g("slash_attack_bonus"), g("crush_attack_bonus"),
+              g("range_attack_bonus"), g("magic_attack_bonus"))
+    dfn = (g("stab_defence_bonus")+g("slash_defence_bonus")+g("crush_defence_bonus")
+           + g("range_defence_bonus")+g("magic_defence_bonus"))
+    return atk + dfn + g("strength_bonus") + g("ranged_strength_bonus") + g("magic_damage_bonus") + g("prayer_bonus")
+
+# Within-slot gear tiers: fraction of the slot's max score -> emphasis grade (design §7).
+GEAR_TIERS = [("S", 0.80), ("A", 0.55), ("B", 0.30), ("C", 0.0)]
