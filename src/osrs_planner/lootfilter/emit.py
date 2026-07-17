@@ -7,6 +7,7 @@ import re
 
 from osrs_planner.lootfilter.palette import VALUE_GRADES, style_for, FALLBACK_HUES, _text_on, _border_on, COIN_TIERS
 from osrs_planner.lootfilter.palette import TROPHY_GRADES  # add to imports
+from osrs_planner.lootfilter.palette import FAMILY_HUES, gear_score, GEAR_TIERS
 from osrs_planner.lootfilter.categories import category_rules, ORE_NAMES, BAR_NAMES  # add
 
 IRONMAN = "IRONMAN"
@@ -99,6 +100,32 @@ def emit_trophies(clog_item_ids) -> str:
         lines.append(emit_style_input("trophies", label, "Collection log", _macro_name("TROPHY", grade, used),
             f"{IRONMAN} && {idl} && value:>={minv}", _trophy_style(emph)))
     return emit_module("trophies", "Collection-log trophies", "\n".join(lines), "Generic clog highlight")
+
+def emit_gear(gear_records) -> str:
+    """Equipment ranked WITHIN each slot by gear_score, bucketed into GEAR_TIERS (fraction of that
+    slot's max score). One editable id-list style-input per (slot, tier), brightest tier first."""
+    from collections import defaultdict
+    by_slot = defaultdict(list)
+    for r in gear_records:
+        by_slot[r["slot"]].append((r["item_id"], gear_score(r["stats"])))
+    hue = FAMILY_HUES["gear"]
+    used, lines = set(), []
+    for slot in sorted(by_slot):
+        items = by_slot[slot]
+        top = max((s for _i, s in items), default=0) or 1
+        tiers = defaultdict(list)
+        for iid, score in items:
+            frac = score / top
+            grade = next(g for g, thr in GEAR_TIERS if frac >= thr)
+            tiers[grade].append(iid)
+        for grade, _thr in GEAR_TIERS:            # emit S..C (brightest first)
+            ids = tiers.get(grade)
+            if not ids:
+                continue
+            lines.append(emit_style_input("gear", f"Gear {slot} {grade}", f"Gear — {slot}",
+                _macro_name("GEAR", f"{slot}{grade}", used),
+                f"{IRONMAN} && {_id_list(ids)}", style_for(hue, grade)))
+    return emit_module("gear", "Gear by slot", "\n".join(lines), "Equipment tiered by slot")
 
 def _name_list(patterns) -> str:
     return "name:[" + ", ".join(f'"{p}"' for p in patterns) + "]"
