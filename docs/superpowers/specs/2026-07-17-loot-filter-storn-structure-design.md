@@ -46,6 +46,13 @@ solves both asks natively within FilterScape's constraints:
   don't have yet → omit.
 - **Perfect-kill / on-task detection** (Storn's `PERFECT_KILL_LISTS`) → omit.
 - **KG untouched.** This is filter-side only, like PR #28/#29. Data derivations live in `data/`.
+- **Plain labels — no AI-sounding copy (owner directive, 2026-07-17).** Every module name,
+  subtitle, group name, and input label the owner sees in FilterScape must be **simple, plain
+  English**. **No em-dashes (`—`), no colons in labels, no clever/convoluted phrasing, no jargon.**
+  Use short words a player reads at a glance: "Seeds", "Minimum quantity", "Colour", "Hide these",
+  "SS tier". This retires the current em-dash/colon labels ("Quantities — Ammo", "Custom highlight
+  1 — items", "Resource piles: base importance escalated by stack size"). Keep subtitles a plain
+  short phrase ("Farming seeds", not "Resource piles: importance escalated by stack size").
 
 ## 3. Module taxonomy (~35 modules)
 
@@ -74,29 +81,32 @@ For family `F` (e.g. Seeds), for each base tier `T` in {SS, S, A, B, C, D, E} th
 
 ```
 /*@ define:input:seeds
-label: "Seeds — <T> tier"
+label: "Items"
 type: enumlist
 enum: ["Ranarr seed", "Snapdragon seed", ... every seed name ...]
-group: "<T> tier"
+group: "SS tier"
 */
-#define SEEDS_<T>_NAMES ["<items we assign to T by loot_importance>"]
+#define SEEDS_SS_NAMES ["<items we assign to SS by loot_importance>"]
 
 /*@ define:input:seeds
 label: "Minimum quantity"
 type: number
-group: "<T> tier"
+group: "SS tier"
 */
-#define SEEDS_<T>_MIN 1
+#define SEEDS_SS_MIN 1
 
 /*@ define:input:seeds
-label: "Seeds — <T> tier"
+label: "Colour"
 type: style
-group: "<T> tier"
+group: "SS tier"
 */
-#define SEEDS_<T>_STYLE textColor = "<identity hue @ T emphasis>"; showLootbeam = <T>=S+; ...
+#define SEEDS_SS_STYLE textColor = "<identity hue @ SS emphasis>"; showLootbeam = true; ...
 
-... rules referencing SEEDS_<T>_NAMES (§5) ...
+... rules referencing SEEDS_SS_NAMES (§5) ...
 ```
+
+Labels stay plain (§2): the **group** is the tier ("SS tier", "A tier", …); inside it the inputs
+are just "Items", "Minimum quantity", "Colour". No em-dashes, no colons, no jargon.
 
 - **`enum`** = the full family roster (all seed names). Fixed option set the dropdown offers.
 - **`#define …_NAMES [default]`** = which items start in tier `T`, **pre-filled from
