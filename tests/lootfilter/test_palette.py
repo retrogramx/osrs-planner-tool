@@ -43,3 +43,16 @@ def test_style_for_beam_comes_from_table_not_hardcode():
 def test_style_for_beam_on_by_table():
     s = style_for("#ff40e0d0", "SS")
     assert s.get("showLootbeam") == "true" and s["lootbeamColor"] == "#ff40e0d0"
+
+def test_every_family_has_a_valid_hue():
+    from osrs_planner.lootfilter.palette import FAMILY_HUES
+    for fam in ("gear","utility","herb","potion","food","raw_fish","seed","ore","bar","log",
+                "rune","ammo","gem","bones","secondary"):
+        h = FAMILY_HUES[fam]
+        assert len(h) == 9 and h.startswith("#")
+
+def test_gear_score_ranks_combat_over_cosmetic():
+    from osrs_planner.lootfilter.palette import gear_score
+    combat = {"stab_defence_bonus": 100, "slash_defence_bonus": 100}
+    cosmetic = {k: 0 for k in ("stab_defence_bonus",)}
+    assert gear_score(combat) > gear_score(cosmetic) == 0
