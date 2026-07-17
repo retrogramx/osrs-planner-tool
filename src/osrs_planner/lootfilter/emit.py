@@ -115,7 +115,12 @@ def emit_gear(gear_records) -> str:
         top = max((s for _i, s in items), default=0) or 1
         tiers = defaultdict(list)
         for iid, score in items:
-            frac = score / top
+            # Clamp: gear_score sums defence bonuses, so a slot can contain a NEGATIVE-scoring
+            # item even when `top` (the slot max) is positive. GEAR_TIERS bottoms out at 0.0, so
+            # an unclamped negative frac would match no tier -> uncaught StopIteration. Clamping
+            # to 0.0 puts a negative-score item in the lowest grade (C), which is the correct
+            # placement -- it's worse than everything else in the slot.
+            frac = max(score / top, 0.0)
             grade = next(g for g, thr in GEAR_TIERS if frac >= thr)
             tiers[grade].append(iid)
         for grade, _thr in GEAR_TIERS:            # emit S..C (brightest first)
