@@ -14,3 +14,9 @@ def test_emit_families_skips_gear_and_emits_module():
     assert "id:[100, 101]" in out and "Herb" in out
     assert "id:[200]" in out and "Ore" in out
     assert "999" not in out
+
+def test_emit_families_honours_skip_set():
+    family_ids = {"herb": [100], "utility": [200]}
+    out = emit_families(family_ids, skip={"herb"})
+    assert "id:[100]" not in out and "FAM_HERB" not in out   # herb skipped (owned by quantities)
+    assert "id:[200]" in out                                 # utility still emitted

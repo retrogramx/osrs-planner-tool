@@ -213,16 +213,13 @@ def emit_categories() -> str:
             add(cid, display, group, patterns, hue, excludes, border)
     return emit_module("categories", "Categories", "\n".join(lines), "By material / type")
 
-def emit_families(family_ids) -> str:
-    """One editable style-input per derived family, over its id-list (design objects/resources).
-    family_ids: {family: [item_id, ...]}. Skips 'gear' (handled by emit_gear, stat-tiered) and any
-    family with no ids or no entry in FAMILY_HUES."""
+def emit_families(family_ids, skip=frozenset()) -> str:
+    """One editable style-input per derived family. Skips 'gear' (stat-tiered by emit_gear), any
+    family with no ids / no FAMILY_HUES entry, and any family in `skip` (owned by emit_quantities)."""
     used, lines = set(), []
     for fam in sorted(family_ids):
         ids = family_ids[fam]
-        if not ids or fam not in FAMILY_HUES:
-            continue
-        if fam == "gear":       # gear handled by emit_gear (stat-tiered) — skip here
+        if not ids or fam not in FAMILY_HUES or fam == "gear" or fam in skip:
             continue
         lines.append(emit_style_input("families", fam.replace("_", " ").title(), "Families",
             _macro_name("FAM", fam, used), f"{IRONMAN} && {_id_list(ids)}",
