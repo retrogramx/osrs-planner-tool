@@ -33,9 +33,11 @@ def main() -> int:
     check(not (referenced - defined), f"macro(s) referenced but not defined: {sorted(referenced - defined)[:10]}")
     check(not re.search(r"(?:rule|apply) \(\)", text), "a rule/apply has an empty condition")
     check(not re.search(r"\)\s*\{\s*\}", text), "a rule/apply has an empty body")
-    order = ["module:settings", "module:trophies", "module:categories", "module:fallback"]
-    idxs = [text.find(m) for m in order]
-    check(all(i >= 0 for i in idxs) and idxs == sorted(idxs), f"modules missing/out of order: {idxs}")
+    order = ["settings", "custom", "notable", "trophies", "gear", "families", "categories", "fallback"]
+    idxs = [text.find(f"define:module:{m}") for m in order]
+    for m, i in zip(order, idxs):
+        check(i != -1, f"module {m} missing")
+    check(idxs == sorted(idxs), "modules out of order")
     idict = {r["item_id"] for r in json.load(open(os.path.join(ns.data, "item_dictionary.json"), encoding="utf-8"))["records"]}
     clog = {r["item_id"] for r in json.load(open(os.path.join(ns.data, "collection_log.json"), encoding="utf-8"))["records"]}
     for m in re.findall(r"id:\[([0-9, ]+)\]", text):
