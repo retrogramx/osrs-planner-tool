@@ -39,4 +39,7 @@ data/raw/**
 !data/raw/wiki_facility_infoboxes.json
 # Bucket:recommended_equipment IS committed provenance (offline snapshot for loot-filter itemization layer)
 !data/raw/recommended_equipment_bucket.json
+# Wiki farming-patch category + table wikitext IS committed provenance (offline snapshot for farming-patch layer)
+!data/raw/wiki_farming_patch_category.json
+!data/raw/wiki_farming_patch_tables.json
 .superpowers/

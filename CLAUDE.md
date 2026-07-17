@@ -4,7 +4,7 @@ A public, account-type-aware Old School RuneScape **profile + goal/route planner
 **knowledge graph**. Evolved from earlier domain "bricks" (quests, diaries, drops, cost/income, account
 ingestion) toward a **richly-typed entity graph of all of Gielinor**.
 
-## ⭐ Current direction — v2 ontology + item-facet + location spine + FOUR bottom-up layers (shops · NPC operators · facilities · recipes incl. all-makeable) + recipe-id STABILITY all MERGED; next = the remaining objects/resources halves.
+## ⭐ Current direction — v2 ontology + item-facet + location spine + FOUR bottom-up layers (shops · NPC operators · facilities · recipes incl. all-makeable) + recipe-id STABILITY all MERGED + farming patches (objects/resources slice 2) done on `feat/farming-patches-layer`; next = gather sites · transport · placed facilities.
 - **`kg/schema.json`** is the ontology AS DATA (single source of truth; closed vocab + `legacy_*` sections) — the
   contract `validate_kg.py` enforces. Prose spec: `docs/superpowers/specs/2026-06-25-entity-graph-ontology-v2.md`.
 - **Done & on `main`:** (PR #16) schema-as-data + the **item-facet layer** (item nodes/variants `same_entity`, charge
@@ -36,8 +36,15 @@ ingestion) toward a **richly-typed entity graph of all of Gielinor**.
   `data/recipe_slug_registry.json` (4542 identities / 4546 slugs; identity = payload+subtxt sha256 → frozen slug, SEEDED from
   the graph → **ZERO churn**, graph unchanged); `build_recipe_roster` is a fail-fast registry consumer (never invents an id),
   `validate_kg` enforces coverage + bijection, `verify_recipe_ids` discloses (the 816 order-dependent `-k` ids are frozen, not renamed).
+- **Done (branch `feat/farming-patches-layer`, not yet merged):** the **farming-patches layer** (objects/resources
+  slice 2) — 76 `farming_patch:` nodes (one per patch_type × place; 9 core types + 12 special-crop types) from
+  `Category:Farming patches` (12 members) + the transcluded `/Patches` wikitables — **a scrape, NOT Bucket/Module**,
+  category-anchored for completeness — via `build_farming_patches` + `farming_tables.py` + `fetch_farming_patches.py`;
+  74 parented `located_in` / **2 FLAG** (genuine skeleton gaps: `farming_patch:hardwood-locus-oasis`,
+  `farming_patch:hops-mcgrubors-wood`), `verify_farming_patches` (structural hard-fail) + `verify_farming_coverage`
+  (report-not-fail; core types 9/9). Graph = **15190 nodes / 30210 edges**.
 - **← NOW: the remaining objects/resources halves:**
-  gather sites (blocked on a yield source-hunt — `Bucket:Mine` empty — + chunk geometry) · farming patches (own slice) ·
+  gather sites (blocked on a yield source-hunt — `Bucket:Mine` empty — + chunk geometry) ·
   transport (nodes + `gives_access`) · placed facilities (banks/altars/GE `located_in`). (Broader NON-operator NPCs — skill
   tutors, slayer-masters-as-a-role, bankers, quest-givers — are DEFERRED: not category-sourceable on the wiki, need their
   own source-hunt.)
@@ -103,8 +110,10 @@ ingestion) toward a **richly-typed entity graph of all of Gielinor**.
    pure roster) · recipes ✅ (PR #25 core skills + all-makeable ff `e60818e`, `build_recipe_roster`, 4548 nodes wiring
    `requires_facility` → the facilities) · recipe-id STABILITY ✅ (PR #26, `data/recipe_slug_registry.json` +
    `kg_ingest/recipe_identity.py`; identity→frozen-slug registry, fail-fast builder, `validate_kg` coverage/bijection
-   invariant, `verify_recipe_ids` — zero churn). ← **NOW: the remaining objects/resources halves:** gather sites
-   (blocked — yield source-hunt + chunk geometry) · farming patches · transport (`gives_access`) · placed facilities
+   invariant, `verify_recipe_ids` — zero churn) · farming patches ✅ (objects/resources slice 2, branch
+   `feat/farming-patches-layer`, `build_farming_patches`; 76 nodes from `Category:Farming patches` + the `/Patches`
+   wikitables, 74 parented / 2 FLAG). ← **NOW: the remaining objects/resources halves:** gather sites
+   (blocked — yield source-hunt + chunk geometry) · transport (`gives_access`) · placed facilities
    (banks/altars/GE `located_in`), each `located_in` the skeleton + its own structured source + coverage verifier.
 5. **Then (deferred):** full item-roster scale-up · wield-requirements (`requires` cond_group) · intrinsic attrs
    (value/alch/weight/tradeable) · facility-recharge + the `service` edge (repair fee) · chunk geometry · governance
@@ -152,6 +161,12 @@ ingestion) toward a **richly-typed entity graph of all of Gielinor**.
   in `data/recipe_slug_registry.json` (the ~816 order-dependent `-k` ids + the 19 all-makeable re-slugs are now stabilized —
   frozen, not renamed); disclosed residual = 4 accursed-sceptre recipes' `source_url` is emission-ordered (cosmetic,
   gate-caught). The 44 shop + 47 npc location-unresolved OVERLAP = the place-layer backfill to-do (missing skeleton places +
-  name-norm).** New work branches off `main`.
+  name-norm). **Farming-patches layer** (objects/resources slice 2, branch `feat/farming-patches-layer`, NOT yet
+  merged): +76 `farming_patch:` nodes / +74 `located_in` edges → graph **15190 nodes / 30210 edges**; 74 parented /
+  2 FLAG (`farming_patch:hardwood-locus-oasis`, `farming_patch:hops-mcgrubors-wood` — genuine skeleton gaps);
+  category-anchored scrape (`Category:Farming patches` + `/Patches` wikitables, NOT Bucket/Module); disclosed
+  residuals = coordinates (chunk-geometry layer), the coordinate-less Activity/minigame table (Tithe Farm/CoX/
+  Managing Miscellania), quest-gating-as-a-field, per-site `patch_count` (e.g. Grape/Vinery 12→1), `instance_of` +
+  a `patch_type` node kind (P8 split).** New work branches off `main`.
 - Licensing seam (non-commercial project): wiki text = CC BY-NC-SA; cache content = Jagex IP; decoder tooling = BSD/ISC.
 ```

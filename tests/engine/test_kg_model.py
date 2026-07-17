@@ -19,6 +19,7 @@ def test_node_kind_members_match_schema_taxonomy():
         "recipe", "equipment_bonuses",
         "place", "npc", "shop",
         "facility",
+        "farming_patch",
     }
 
 

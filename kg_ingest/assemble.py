@@ -41,6 +41,7 @@ from kg_ingest.builders.quests import build_quests
 from kg_ingest.builders.recipes import build_recipes, build_recipe_roster
 from kg_ingest.builders.repairs import build_repairs
 from kg_ingest.builders.facilities import build_facilities
+from kg_ingest.builders.farming import build_farming_patches
 from kg_ingest.builders.npcs import build_npcs
 from kg_ingest.builders.shops import build_shops
 from kg_ingest.builders.storeline import build_storeline
@@ -301,6 +302,8 @@ NPC_INFOBOX_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "wiki_
 RECIPE_FACILITY_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "recipe_facility_bucket.json"
 FACILITY_INFOBOX_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "wiki_facility_infoboxes.json"
 FACILITY_OVERRIDES_PATH = Path(__file__).resolve().parents[1] / "data" / "map" / "facility_overrides.json"
+FARMING_TABLES_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "wiki_farming_patch_tables.json"
+FARMING_OVERRIDES_PATH = Path(__file__).resolve().parents[1] / "data" / "map" / "farming_overrides.json"
 RECIPE_BUCKET_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "recipe_bucket.json"
 RECIPE_REGISTRY_PATH = Path(__file__).resolve().parents[1] / "data" / "recipe_slug_registry.json"
 
@@ -370,6 +373,19 @@ def _load_facility_overrides() -> dict:
         return {"force_facility": [], "force_exclude": []}
     d = json.loads(FACILITY_OVERRIDES_PATH.read_text())
     return {"force_facility": d.get("force_facility", []), "force_exclude": d.get("force_exclude", [])}
+
+
+def _load_farming_tables() -> dict | None:
+    if not FARMING_TABLES_PATH.exists():
+        return None
+    return json.loads(FARMING_TABLES_PATH.read_text())["tables"]
+
+
+def _load_farming_overrides() -> dict:
+    if not FARMING_OVERRIDES_PATH.exists():
+        return {"force_exclude": [], "place_overrides": []}
+    d = json.loads(FARMING_OVERRIDES_PATH.read_text())
+    return {"force_exclude": d.get("force_exclude", []), "place_overrides": d.get("place_overrides", [])}
 
 
 def _load_recipe_records() -> list[dict]:
@@ -587,6 +603,23 @@ def assemble() -> None:
         assert not _fac_edges, "facility layer must emit zero edges"
         owned_ids = owned_ids | {n.id for n in fac_nodes}
 
+    # Farming-patch layer (objects/resources slice 2): (patch_type x place) instances located_in
+    # the skeleton. Place index spans world+map (build_map-owned places too). farming-src located_in
+    # -> its OWN seeded rekey (fresh owner namespace, but seeded for uniformity). Never fabricates.
+    fp_nodes: list[Node] = []
+    _fp_tables = _load_farming_tables()
+    if _fp_tables is not None:
+        from kg_ingest.builders.farming_tables import parse_patch_tables
+        _fp_place_nodes = [n for n in (world_nodes + map_nodes) if n.kind == NodeKind.PLACE]
+        fp_nodes, fp_edges, _ = build_farming_patches(
+            parse_patch_tables(_fp_tables), _fp_place_nodes, _load_farming_overrides())
+        _seed_fp: dict[str, int] = {}
+        for _e in edges:
+            _seed_fp[_e.src] = _seed_fp.get(_e.src, 0) + 1
+        fp_nodes, fp_edges, _ = rekey(fp_nodes, fp_edges, {}, edge_index_seed=_seed_fp)
+        edges = edges + fp_edges
+        owned_ids = owned_ids | {n.id for n in fp_nodes}
+
     # Recipe ROSTER (slice 1: core production skills). Built AFTER facilities (so requires_facility
     # targets committed facility: nodes) and BEFORE _collect_referenced_ids (so consumed/produced
     # items auto-import via build_items). recipe-src edges + skill-gate cond_groups -> their own rekey.
@@ -641,7 +674,7 @@ def assemble() -> None:
     #    (with tasks list) is first-seen and wins if any stale supporting diary node
     #    were somehow included (it shouldn't be, since diary is excluded from _LEAF_DOMAINS).
     nodes = dedup_nodes(
-        q_nodes + g_nodes + cg_nodes + d_nodes + dg_nodes + content_nodes + r_nodes + i_nodes + eqb_nodes + world_nodes + map_nodes + sh_nodes + npc_nodes + fac_nodes + rr_nodes + s_nodes
+        q_nodes + g_nodes + cg_nodes + d_nodes + dg_nodes + content_nodes + r_nodes + i_nodes + eqb_nodes + world_nodes + map_nodes + sh_nodes + npc_nodes + fac_nodes + fp_nodes + rr_nodes + s_nodes
     )
 
     # 5) serialize, sorted deterministically.

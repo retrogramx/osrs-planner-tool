@@ -1,0 +1,80 @@
+{
+  "_provenance": {
+    "domain": "oldschool.runescape.wiki",
+    "license": "CC BY-NC-SA 3.0",
+    "member_count": 12,
+    "source": "Category:Farming patches (action=query list=categorymembers)"
+  },
+  "members": {
+    "Allotment patch": {
+      "classification": "other",
+      "infoboxes": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Allotment_patch"
+    },
+    "Bush patch": {
+      "classification": "other",
+      "infoboxes": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Bush_patch"
+    },
+    "Chet": {
+      "classification": "npc",
+      "infoboxes": [
+        "Infobox NPC"
+      ],
+      "source_url": "https://oldschool.runescape.wiki/w/Chet"
+    },
+    "Coral Nurseries": {
+      "classification": "place",
+      "infoboxes": [
+        "Infobox Location"
+      ],
+      "source_url": "https://oldschool.runescape.wiki/w/Coral_Nurseries"
+    },
+    "Coral nursery (patch)": {
+      "classification": "patch_type",
+      "infoboxes": [
+        "Infobox Scenery"
+      ],
+      "source_url": "https://oldschool.runescape.wiki/w/Coral_nursery_%28patch%29"
+    },
+    "Flower patch": {
+      "classification": "patch_type",
+      "infoboxes": [
+        "Infobox Scenery"
+      ],
+      "source_url": "https://oldschool.runescape.wiki/w/Flower_patch"
+    },
+    "Fruit tree patch": {
+      "classification": "other",
+      "infoboxes": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Fruit_tree_patch"
+    },
+    "Herb patch": {
+      "classification": "other",
+      "infoboxes": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Herb_patch"
+    },
+    "Hops patch": {
+      "classification": "other",
+      "infoboxes": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Hops_patch"
+    },
+    "Special patches": {
+      "classification": "other",
+      "infoboxes": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Special_patches"
+    },
+    "Spirit tree": {
+      "classification": "patch_type",
+      "infoboxes": [
+        "Infobox Scenery"
+      ],
+      "source_url": "https://oldschool.runescape.wiki/w/Spirit_tree"
+    },
+    "Tree patch": {
+      "classification": "other",
+      "infoboxes": [],
+      "source_url": "https://oldschool.runescape.wiki/w/Tree_patch"
+    }
+  }
+}
