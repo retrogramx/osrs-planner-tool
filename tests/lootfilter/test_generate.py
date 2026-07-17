@@ -87,4 +87,5 @@ def test_quantities_supersedes_resource_categories():
     f = generate_filter()
     # coal still styled (dark hue present via quantities) but the standalone "Coal" CATEGORY macro is gone
     assert "#ff2b2b2b" in f and "CAT_COAL" not in f
+    assert "#ffd8b01a" in f      # Gold ore/bar keep their gold identity hue (not gear-metal red) via quantities
     assert categorize("Coal")["id"] == "ores"      # categorize() itself is UNCHANGED (still resolves)
