@@ -8,7 +8,7 @@ import re
 from osrs_planner.lootfilter.palette import VALUE_GRADES, style_for, FALLBACK_HUES, _text_on, _border_on, COIN_TIERS
 from osrs_planner.lootfilter.palette import TROPHY_GRADES  # add to imports
 from osrs_planner.lootfilter.palette import FAMILY_HUES, gear_score, GEAR_TIERS
-from osrs_planner.lootfilter.categories import category_rules, ORE_NAMES, BAR_NAMES  # add
+from osrs_planner.lootfilter.categories import category_rules, ORE_NAMES, BAR_NAMES, categorize
 
 IRONMAN = "IRONMAN"
 _BARE = {"true", "false"}
@@ -83,6 +83,14 @@ def emit_fallback() -> str:
 
 def _id_list(ids) -> str:
     return "id:[" + ", ".join(str(i) for i in sorted(set(ids))) + "]"
+
+def hue_for(name: str, family: str) -> str:
+    """Identity hue for a resource item: per-name via categorize() (coal dark, per-element runes,
+    per-tree logs, gems, ore/bar), else the family hue, else neutral grey (never raises)."""
+    c = categorize(name)
+    if c and c.get("hue"):
+        return c["hue"]
+    return FAMILY_HUES.get(family, "#ff9e9e9e")
 
 def _trophy_style(emph: dict) -> dict:
     return {"textColor": "#ffffffff", "backgroundColor": "#ff" + emph["hue"][3:], "borderColor": emph["hue"],
