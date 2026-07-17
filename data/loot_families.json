@@ -7,13 +7,13 @@
     "family_distribution": {
       "gear": 2387,
       "ammo": 94,
-      "utility": 1519,
+      "utility": 1529,
       "herb": 46,
       "food": 455,
       "ore": 36,
       "bones": 78,
       "rune": 50,
-      "log": 78,
+      "log": 68,
       "bar": 20,
       "seed": 134
     }
@@ -22694,8 +22694,8 @@
     },
     {
       "item_id": 22711,
-      "family": "log",
-      "source_signal": "name_suffix:log",
+      "family": "utility",
+      "source_signal": "equipment_utility",
       "source_token": "Collection log",
       "source_url": "https://oldschool.runescape.wiki/w/Collection_log"
     },
@@ -31493,64 +31493,64 @@
     },
     {
       "item_id": 30579,
-      "family": "log",
-      "source_signal": "name_suffix:log",
+      "family": "utility",
+      "source_signal": "equipment_utility",
       "source_token": "Collection log",
       "source_url": "https://oldschool.runescape.wiki/w/Collection_log_(bronze)"
     },
     {
       "item_id": 30581,
-      "family": "log",
-      "source_signal": "name_suffix:log",
+      "family": "utility",
+      "source_signal": "equipment_utility",
       "source_token": "Collection log",
       "source_url": "https://oldschool.runescape.wiki/w/Collection_log_(iron)"
     },
     {
       "item_id": 30583,
-      "family": "log",
-      "source_signal": "name_suffix:log",
+      "family": "utility",
+      "source_signal": "equipment_utility",
       "source_token": "Collection log",
       "source_url": "https://oldschool.runescape.wiki/w/Collection_log_(steel)"
     },
     {
       "item_id": 30585,
-      "family": "log",
-      "source_signal": "name_suffix:log",
+      "family": "utility",
+      "source_signal": "equipment_utility",
       "source_token": "Collection log",
       "source_url": "https://oldschool.runescape.wiki/w/Collection_log_(black)"
     },
     {
       "item_id": 30587,
-      "family": "log",
-      "source_signal": "name_suffix:log",
+      "family": "utility",
+      "source_signal": "equipment_utility",
       "source_token": "Collection log",
       "source_url": "https://oldschool.runescape.wiki/w/Collection_log_(mithril)"
     },
     {
       "item_id": 30589,
-      "family": "log",
-      "source_signal": "name_suffix:log",
+      "family": "utility",
+      "source_signal": "equipment_utility",
       "source_token": "Collection log",
       "source_url": "https://oldschool.runescape.wiki/w/Collection_log_(adamant)"
     },
     {
       "item_id": 30591,
-      "family": "log",
-      "source_signal": "name_suffix:log",
+      "family": "utility",
+      "source_signal": "equipment_utility",
       "source_token": "Collection log",
       "source_url": "https://oldschool.runescape.wiki/w/Collection_log_(rune)"
     },
     {
       "item_id": 30593,
-      "family": "log",
-      "source_signal": "name_suffix:log",
+      "family": "utility",
+      "source_signal": "equipment_utility",
       "source_token": "Collection log",
       "source_url": "https://oldschool.runescape.wiki/w/Collection_log_(dragon)"
     },
     {
       "item_id": 30595,
-      "family": "log",
-      "source_signal": "name_suffix:log",
+      "family": "utility",
+      "source_signal": "equipment_utility",
       "source_token": "Collection log",
       "source_url": "https://oldschool.runescape.wiki/w/Collection_log_(gilded)"
     },

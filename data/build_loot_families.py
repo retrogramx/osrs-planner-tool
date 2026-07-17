@@ -25,6 +25,13 @@ def suffix_family(name):
     low = name.lower()
     for suf, fam in SUFFIX_FAMILIES:
         if low.endswith(suf):
+            if fam == "log" and "collection log" in low:
+                # "Collection log" (the trophy item + its 9 tiered recolor variants) false-
+                # -matches the " log" woodcutting suffix — it's an equippable completion
+                # trophy, not a woodcutting resource. Let it fall through to the equipment
+                # pass instead (-> utility, zero combat stats). Real logs ("Oak logs" etc.)
+                # never contain the substring "collection log", so this guard is narrow.
+                continue
             return fam, f"name_suffix:{suf.strip()}"
     return None, None
 

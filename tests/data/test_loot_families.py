@@ -61,21 +61,23 @@ def test_build_source_url_uses_page_name_not_display_name():
     assert rec["source_token"] == "Broken pickaxe"
 
 def test_name_to_ids_multimap_classifies_all_ids_sharing_a_name():
-    # Hermetic unit test of the multimap fix itself (independent of live item_dictionary.json
-    # content): two distinct item_ids sharing a suffix-matching name must BOTH get claimed.
-    from collections import defaultdict
-    fixture = [{"item_id": 1, "name": "Cosmic rune"}, {"item_id": 2, "name": "Cosmic rune"}]
-    name_to_ids = defaultdict(list)
-    for r in fixture:
-        name_to_ids[r["name"]].append(r["item_id"])
-    fam_by_id = {}
-    def claim(iid, fam, sig, token):
-        if iid is not None and iid not in fam_by_id:
-            fam_by_id[iid] = (fam, sig, token)
-    for name, ids in name_to_ids.items():
-        fam, sig = b.suffix_family(name)
-        if fam:
-            for iid in ids:
-                claim(iid, fam, sig, name)
-    assert fam_by_id[1][0] == "rune"
-    assert fam_by_id[2][0] == "rune"
+    # Real gotcha (same fix-class as test_build_classifies_duplicate_name_items): distinct
+    # item_ids sharing a suffix-matching display name must ALL get claimed by build(), not
+    # just the first-seen id. Cosmic rune (id 564) shares its name with the (Barbarian
+    # Assault) variant id 11696 in the live item_dictionary.json.
+    records = {r["item_id"]: r for r in b.build()}
+    assert records[564]["family"] == "rune"
+    assert records[11696]["family"] == "rune"
+
+def test_collection_log_trophy_not_misclassified_as_woodcutting_log():
+    # Regression guard: "Collection log" (the completion-log trophy item + its 9 tiered
+    # recolor variants) false-matches the " log" woodcutting suffix in a naive substring
+    # check. All 10 ids must NOT be classified "log" — they're equippable trophies (should
+    # fall through to the equipment pass -> "utility", zero combat stats).
+    records = {r["item_id"]: r for r in b.build()}
+    trophy_ids = [22711, 30579, 30581, 30583, 30585, 30587, 30589, 30591, 30593, 30595]
+    for iid in trophy_ids:
+        assert records[iid]["family"] != "log", f"item_id {iid} misclassified as log"
+    # a real log must still classify correctly (the guard must not be overbroad)
+    assert b.suffix_family("Magic logs")[0] == "log"
+    assert b.suffix_family("Oak logs")[0] == "log"
