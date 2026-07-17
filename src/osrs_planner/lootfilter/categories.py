@@ -10,8 +10,17 @@ every earlier category claim it first)."""
 from __future__ import annotations
 
 import fnmatch
+import json
+import os
 
 from osrs_planner.lootfilter.palette import MATERIAL_COLORS, RUNE_COLORS, GEM_COLORS, LOG_COLORS
+
+_DATA = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))), "data")
+
+def families_by_id(data_dir: str = _DATA) -> dict:
+    """item_id -> derived family (design §objects/resources), from loot_families.json."""
+    recs = json.load(open(os.path.join(data_dir, "loot_families.json"), encoding="utf-8"))["records"]
+    return {r["item_id"]: r["family"] for r in recs}
 
 GEAR_PIECES = ("platebody","platelegs","plateskirt","full helm","med helm","chainbody",
     "sq shield","kiteshield","sword","longsword","dagger","scimitar","mace","warhammer",

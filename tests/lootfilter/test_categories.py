@@ -1,3 +1,4 @@
+from osrs_planner.lootfilter import categories
 from osrs_planner.lootfilter.categories import categorize
 from osrs_planner.lootfilter.palette import MATERIAL_COLORS, RUNE_COLORS
 
@@ -44,3 +45,8 @@ def test_divine_takes_base_liquid():
 
 def test_niche_potion_falls_to_teal():
     assert categorize("Guthix balance(4)")["hue"] == "#ff20bfa0"        # no family -> apothecary teal
+
+def test_families_by_id_loads():
+    fams = categories.families_by_id()
+    assert isinstance(fams, dict) and len(fams) > 3000
+    assert set(fams.values()) & {"gear", "herb", "ore", "ammo"}
