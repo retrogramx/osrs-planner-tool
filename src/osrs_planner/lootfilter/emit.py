@@ -283,6 +283,48 @@ def emit_quantities(importance, hue_for=hue_for) -> str:
     return emit_module("quantities", "Quantities", "\n".join(lines),
                        "Resource piles: base importance escalated by stack size")
 
+def emit_family_module(module_id: str, module_name: str, subtitle: str, rows, hue_for=hue_for) -> str:
+    """One resource-family module in Storn's shape (spec §4/§5): editable tier groups (SS..lowest)
+    with an 'Items' membership dropdown, a 'Minimum quantity', and a 'Colour'. ×10 escalation
+    promotes a stacked pile to a higher tier's colour, keyed off the editable membership macro."""
+    from collections import defaultdict
+    if not rows:
+        return emit_module(module_id, module_name, "", subtitle)
+    fam = rows[0]["family"]
+    hue = FAMILY_HUES.get(fam, "#ff9e9e9e")
+    enum_names = sorted({r["name"] for r in rows})
+    name_tier: dict[str, str] = {}
+    for r in rows:                              # dedup name -> highest tier (lowest index)
+        t = r["base_tier"]
+        if r["name"] not in name_tier or GRADE_ORDER.index(t) < GRADE_ORDER.index(name_tier[r["name"]]):
+            name_tier[r["name"]] = t
+    by_tier: dict[str, list] = defaultdict(list)
+    for name, t in name_tier.items():
+        by_tier[t].append(name)
+    present = [g for g in GRADE_ORDER if g in by_tier]
+    tiers = GRADE_ORDER[: GRADE_ORDER.index(present[-1]) + 1]   # SS .. lowest present
+    U = module_id.upper()
+    def NM(t): return f"{U}_{t}_NAMES"
+    def MN(t): return f"{U}_{t}_MIN"
+    def ST(t): return f"{U}_{t}_STYLE"
+    inputs, rules = [], []
+    for t in tiers:                                            # inputs: every tier group
+        g = f"{t} tier"
+        inputs.append(emit_enumlist_input(module_id, "Items", g, enum_names, NM(t), sorted(by_tier.get(t, []))))
+        inputs.append(emit_number_input(module_id, "Minimum quantity", g, MN(t), 1))
+        inputs.append(emit_style_def(module_id, "Colour", g, ST(t), style_for(hue, t)))
+    for t in tiers:                                            # rules: SS..E so higher tier wins overlap
+        if t not in by_tier:
+            continue
+        bi = GRADE_ORDER.index(t)
+        for k in range(bi, 0, -1):                             # escalation: highest threshold first
+            grade = quantity_display_grade(t, 10 ** k)
+            if grade != t:
+                rules.append(f"rule ({IRONMAN} && name:{NM(t)} && quantity:>={10 ** k}) {{ {ST(grade)} }}")
+        rules.append(f"rule ({IRONMAN} && name:{NM(t)} && quantity:<{MN(t)}) {{ hidden = true; }}")
+        rules.append(f"rule ({IRONMAN} && name:{NM(t)}) {{ {ST(t)} }}")
+    return emit_module(module_id, module_name, "\n".join(inputs + rules), subtitle)
+
 def emit_settings() -> str:
     body = "\n".join([
         "#define IRONMAN accountType:1",   # core gate -- lives here so the filter STARTS with a module
