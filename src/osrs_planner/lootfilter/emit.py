@@ -240,10 +240,12 @@ def emit_categories() -> str:
         add(cid, display, group, patterns, hue, excludes, border)
     return emit_module("categories", "Categories", "\n".join(lines), "By material / type")
 
-def emit_family_module(module_id: str, module_name: str, subtitle: str, rows, hue_for=hue_for) -> str:
+def emit_family_module(module_id: str, module_name: str, subtitle: str, rows) -> str:
     """One resource-family module in Storn's shape (spec §4/§5): editable tier groups (SS..lowest)
     with an 'Items' membership dropdown, a 'Minimum quantity', and a 'Colour'. ×10 escalation
-    promotes a stacked pile to a higher tier's colour, keyed off the editable membership macro."""
+    promotes a stacked pile to a higher tier's colour, keyed off the editable membership macro.
+    One colour per tier = the family identity hue (FAMILY_HUES); per-element/per-metal identity
+    within a family (rune/ore/log/gem hues) is a deferred refinement (spec §13)."""
     from collections import defaultdict
     if not rows:
         return emit_module(module_id, module_name, "", subtitle)

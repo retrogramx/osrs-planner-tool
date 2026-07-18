@@ -124,11 +124,11 @@ def generate_filter(account_state=None, data_dir: str = DATA, title=None, descri
     clog = load_clog_ids(data_dir)
     # FilterScape/loot-filters-ui requires the FIRST token to be a module declaration, so settings
     # leads and the meta{} block goes LAST (the parser regex-scans meta from anywhere in the file).
-    # module order (§8, whole-branch-review fix A -- categories moved ABOVE families: rules are
-    # terminal/first-match-wins, so specific hand-authored per-name hues in categories must win
-    # over the broad derived-family flat hues, not be shadowed by them): settings -> custom ->
-    # [tailoring if account_state] -> notable -> trophies -> gear -> per-family modules ->
-    # categories -> untradeables -> coins -> fallback -> meta.
+    # module order (spec §7): settings -> custom -> [tailoring if account_state] -> notable ->
+    # trophies -> gear -> per-family modules -> categories -> untradeables -> coins -> fallback ->
+    # meta. Families and categories are DISJOINT (the resource rows moved out of category_rules into
+    # per-family modules), so their relative order is not a shadowing concern; notable/trophies emit
+    # before families so a resource that is also rare/clog keeps its notability styling.
     parts = [emit.emit_settings(), emit.emit_custom_highlights()]
     if account_state is not None:  # tailored: thread value (hide-owned guard) + rarity (beam intensity)
         parts.append(tailor.emit_tailoring(account_state, set(clog), value_index=load_value_index(data_dir),
