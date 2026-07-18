@@ -8,8 +8,9 @@ def test_no_bare_metal_glob():
 
 def test_ore_bar_rune_rows_moved_to_quantities():
     # ores/bars/runes/gems/essence/ammo/logs/herbs/seeds/bones/food are TRIMMED out of category_rules
-    # (design §4): they now live in emit_quantities, ranked by loot_importance.json. category_rules()
-    # keeps only the non-bulk remainder (gear-metal, teleports, charged jewellery, potions).
+    # (design §4): they now live in the per-family modules (emit_family_module), ranked by
+    # loot_importance.json. category_rules() keeps only the non-bulk remainder (gear-metal,
+    # teleports, charged jewellery, potions).
     ids = {row[0] for row in category_rules()}
     assert ids == {"gear", "teleports", "charged_jewellery", "potions"}
     pats = [p for row in category_rules() for p in row[2]]

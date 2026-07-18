@@ -112,14 +112,6 @@ def load_gear_records(data_dir: str = DATA) -> list[dict]:
         out.append({"item_id": iid, "slot": rec["slot"], "stats": rec["stats"]})
     return out
 
-def load_family_ids(data_dir: str = DATA) -> dict:
-    from collections import defaultdict
-    from osrs_planner.lootfilter import categories
-    out = defaultdict(list)
-    for iid, fam in categories.families_by_id(data_dir).items():
-        out[fam].append(iid)
-    return dict(out)
-
 def load_importance(data_dir: str = DATA) -> list[dict]:
     """Editorial base-importance records, grouped by family into per-family modules (design §4)."""
     return json.load(open(os.path.join(data_dir, "loot_importance.json"), encoding="utf-8"))["records"]

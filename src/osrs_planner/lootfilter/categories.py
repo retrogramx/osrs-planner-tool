@@ -197,8 +197,8 @@ def categorize(name: str):
 
 def category_rules():
     """(id, display, include_patterns, hue, exclude_patterns); the resource rows (ores/bars/runes/
-    gems/essence/ammo/logs/herbs/seeds/bones/planks/food) now live in emit_quantities — this keeps
-    only the non-bulk remainder. categorize() (the hue authority) is unchanged."""
+    gems/essence/ammo/logs/herbs/seeds/bones/planks/food) now live in the per-family modules
+    (emit_family_module) -- this keeps only the non-bulk remainder. categorize() (the hue authority) is unchanged."""
     out = []
     for metal, hue in MATERIAL_COLORS.items():
         out.append(("gear", f"{metal.title()} gear", [f"{metal.title()} {p}" for p in GEAR_PIECES], hue, []))
