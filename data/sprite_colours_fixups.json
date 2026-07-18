@@ -1,0 +1,142 @@
+{
+  "Animals' bones": {
+    "hex": "#ff999879",
+    "note": "resolved 'Animals' bones 1.png' (bone-pile variant); wiki base name is disambig-only"
+  },
+  "Beer barrel": {
+    "hex": "#ff938b63",
+    "note": "resolved item page is 'Beer barrel (flatpack)'; the plain title is the built-scenery page"
+  },
+  "Burnt fish": {
+    "hex": "#ff595353",
+    "note": "resolved 'Burnt fish (anchovies)'; plain title is a disambig hub for all burnt-fish variants"
+  },
+  "Cannon ball": {
+    "hex": "#ffe4ba1b",
+    "note": "resolved id 4579 = 'Cannon ball (Between a Rock...)', a gold-coloured quest cannonball, not the generic redirect target"
+  },
+  "Cannon balls": {
+    "hex": "#ff393434",
+    "note": "resolved id 7147 = 'Cannon balls (unobtainable item)' (Cabin Fever prop), not the generic redirect target"
+  },
+  "Cider barrel": {
+    "hex": "#ff938b63",
+    "note": "resolved item page is 'Cider barrel (flatpack)'; the plain title is the built-scenery page"
+  },
+  "Crate of adamantite ore": {
+    "hex": "#ff584466",
+    "note": "resolved '(Aldarin)' location variant; genuinely a purple-panelled crate skin, verified visually"
+  },
+  "Crate of arrowtips": {
+    "hex": "#ff56493a",
+    "note": "resolved '(Ardougne)' location variant, plain wood crate"
+  },
+  "Crate of camphor logs": {
+    "hex": "#ff524a41",
+    "note": "resolved '(Brimhaven)' location variant, dark wood crate"
+  },
+  "Crate of gold ore": {
+    "hex": "#ff56493a",
+    "note": "resolved '(Ardougne)' location variant, plain wood crate"
+  },
+  "Crate of lead ore": {
+    "hex": "#ff584466",
+    "note": "resolved '(Aldarin)' location variant; genuinely a purple-panelled crate skin, verified visually"
+  },
+  "Crate of logs": {
+    "hex": "#ff675845",
+    "note": "resolved '(Deepfin Point)' location variant, plain wood crate"
+  },
+  "Crate of mahogany logs": {
+    "hex": "#ff675845",
+    "note": "resolved '(Deepfin Point)' location variant, plain wood crate"
+  },
+  "Crate of nickel ore": {
+    "hex": "#ff584466",
+    "note": "resolved '(Aldarin)' location variant; genuinely a purple-panelled crate skin, verified visually"
+  },
+  "Crate of silver ore": {
+    "hex": "#ff524a41",
+    "note": "resolved '(Brimhaven)' location variant, dark wood crate"
+  },
+  "Crate of teak logs": {
+    "hex": "#ff4c4532",
+    "note": "resolved '(Port Roberts)' location variant, dark wood crate"
+  },
+  "Crystal seed": {
+    "hex": "#ff504949",
+    "note": "the wiki's live inventory-icon upload is a broken 9x5px placeholder; hand-extracted from the 422x264 'detail' render instead (grey crystal, matches the 'grey and dead' examine text)"
+  },
+  "Half made batta": {
+    "hex": "#ff886c30",
+    "note": "resolved id 9478 = 'Half made batta (fruit)' variant (name is flat in-game; wiki splits by flavour)"
+  },
+  "Half made bowl": {
+    "hex": "#ff9a7311",
+    "note": "resolved id 9558 = 'Half made bowl (tangled toad's legs)' variant"
+  },
+  "Half made crunchy": {
+    "hex": "#ff756d6c",
+    "note": "resolved id 9577 = 'Half made crunchy (chocchip)' variant"
+  },
+  "Karambwanji paste": {
+    "hex": "#ff496846",
+    "note": "resolved id 3155 = raw-form variant (Infobox version1); green ground-fish paste"
+  },
+  "Marinated j' bones": {
+    "hex": "#ff559856",
+    "note": "resolved id 3130 = burnt-form variant; genuinely bright green (karambwanji-paste coating), matches Karambwanji paste's own hue"
+  },
+  "Mixed dragon": {
+    "hex": "#ffa69b9a",
+    "note": "resolved id 9574 = 'Mixed dragon (shaker)' stage"
+  },
+  "Mixed saturday": {
+    "hex": "#ffa69b9a",
+    "note": "resolved id 9571 = 'Mixed saturday (shaker)' stage"
+  },
+  "Part admiral pie": {
+    "hex": "#ff8f7560",
+    "note": "resolved id 7192 = 'Part admiral pie (salmon)' variant, via the 'Admiral pie' redirect target"
+  },
+  "Part fish pie": {
+    "hex": "#ff8e7461",
+    "note": "resolved id 7182 = 'Part fish pie (trout)' variant, via the 'Fish pie' redirect target"
+  },
+  "Part garden pie": {
+    "hex": "#ff8f7560",
+    "note": "resolved id 7172 = 'Part garden pie (tomato)' variant; plain title has no page at all"
+  },
+  "Part mud pie": {
+    "hex": "#ff8a725d",
+    "note": "resolved id 7164 = 'Part mud pie (compost)' variant; plain title has no page at all"
+  },
+  "Part summer pie": {
+    "hex": "#ff6c5331",
+    "note": "resolved id 7212 = 'Part summer pie (strawberry)' variant"
+  },
+  "Part wild pie": {
+    "hex": "#ff8f7560",
+    "note": "resolved id 7202 = 'Part wild pie (raw bear meat)' variant, via the 'Wild pie' redirect target"
+  },
+  "Pasty jogre bones": {
+    "hex": "#ff60885c",
+    "note": "resolved id 3128 = burnt-raw variant; auto-bucket picked the black outline (green body pixels fragmented across too many 16-step buckets) - hand-recomputed as the average of greenish body pixels (68% of the sprite), matching the karambwanji-paste-coated look of Marinated j' bones"
+  },
+  "Unfinished batta": {
+    "hex": "#ff82620d",
+    "note": "resolved id 2251 = 'Unfinished batta (Worm, historical)' variant (removed in the Gnome Cuisine update)"
+  },
+  "Unfinished bowl": {
+    "hex": "#ff623b22",
+    "note": "resolved id 2179 = 'Unfinished bowl (Chocolate bomb, 1)' plain-version variant (removed in the Gnome Cuisine update)"
+  },
+  "Unfinished crunchy": {
+    "hex": "#ff76580d",
+    "note": "resolved id 2207 = 'Unfinished crunchy (Chocchip, historical)' variant (removed in the Gnome Cuisine update)"
+  },
+  "Pot of tea (4)": {
+    "hex": "#ffb49966",
+    "note": "resolved id 7692 = the 4-cup version of 'Pot of tea (clay)', which shares one image across all cup-count variants"
+  }
+}

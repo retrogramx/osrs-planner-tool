@@ -1,0 +1,7912 @@
+{
+"'perfect' gold bar": {
+"hex": "#ff987c11",
+"source": "sprite",
+"family": "bar",
+"item_id": 2365,
+"sprite_status": "ok"
+},
+"'perfect' gold ore": {
+"hex": "#ff69553b",
+"source": "sprite",
+"family": "ore",
+"item_id": 446,
+"sprite_status": "ok"
+},
+"Abyssal ashes": {
+"hex": "#ff774643",
+"source": "sprite",
+"family": "bones",
+"item_id": 25775,
+"sprite_status": "ok"
+},
+"Achey tree logs": {
+"hex": "#ff7d5a32",
+"source": "curated",
+"family": "log",
+"item_id": 2862,
+"sprite_status": "ok"
+},
+"Adamant arrow": {
+"hex": "#ff543208",
+"source": "sprite",
+"family": "ammo",
+"item_id": 890,
+"sprite_status": "ok"
+},
+"Adamant arrow pack": {
+"hex": "#ffdabc97",
+"source": "sprite",
+"family": "ammo",
+"item_id": 20525,
+"sprite_status": "ok"
+},
+"Adamant arrow(p)": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 891,
+"sprite_status": "ok"
+},
+"Adamant arrow(p+)": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5620,
+"sprite_status": "ok"
+},
+"Adamant arrow(p++)": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5626,
+"sprite_status": "ok"
+},
+"Adamant arrowtips": {
+"hex": "#ff384839",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 43,
+"sprite_status": "ambiguous"
+},
+"Adamant bolts": {
+"hex": "#ff455846",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9143,
+"sprite_status": "ambiguous"
+},
+"Adamant bolts (p)": {
+"hex": "#ff9f9f93",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9290,
+"sprite_status": "ambiguous"
+},
+"Adamant bolts (p+)": {
+"hex": "#ff9f9f93",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9297,
+"sprite_status": "ambiguous"
+},
+"Adamant bolts (p++)": {
+"hex": "#ff9f9f93",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9304,
+"sprite_status": "ambiguous"
+},
+"Adamant bolts(unf)": {
+"hex": "#ff465846",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9380,
+"sprite_status": "ambiguous"
+},
+"Adamant cannonball": {
+"hex": "#ff546a54",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 31912,
+"sprite_status": "ambiguous"
+},
+"Adamant chainshot cannonball": {
+"hex": "#ff546a54",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 31926,
+"sprite_status": "ambiguous"
+},
+"Adamant dart": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 810,
+"sprite_status": "ok"
+},
+"Adamant dart tip": {
+"hex": "#ff384738",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 823,
+"sprite_status": "ambiguous"
+},
+"Adamant dart(p)": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 816,
+"sprite_status": "ok"
+},
+"Adamant dart(p+)": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5633,
+"sprite_status": "ok"
+},
+"Adamant dart(p++)": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5640,
+"sprite_status": "ok"
+},
+"Adamant fire arrow": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 2538,
+"sprite_status": "ok"
+},
+"Adamant fire arrow (lit)": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 2539,
+"sprite_status": "ok"
+},
+"Adamant incendiary cannonball": {
+"hex": "#ff866c6a",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 31940,
+"sprite_status": "ambiguous"
+},
+"Adamant javelin": {
+"hex": "#ff614a2c",
+"source": "sprite",
+"family": "ammo",
+"item_id": 829,
+"sprite_status": "ok"
+},
+"Adamant javelin tips": {
+"hex": "#ff455745",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 19578,
+"sprite_status": "ambiguous"
+},
+"Adamant javelin(p)": {
+"hex": "#ff614a2c",
+"source": "sprite",
+"family": "ammo",
+"item_id": 835,
+"sprite_status": "ok"
+},
+"Adamant javelin(p+)": {
+"hex": "#ff614a2c",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5646,
+"sprite_status": "ok"
+},
+"Adamant javelin(p++)": {
+"hex": "#ff614a2c",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5652,
+"sprite_status": "ok"
+},
+"Adamant knife": {
+"hex": "#ff736b6b",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 867,
+"sprite_status": "ambiguous"
+},
+"Adamant knife(p)": {
+"hex": "#ff736b6b",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 875,
+"sprite_status": "ambiguous"
+},
+"Adamant knife(p+)": {
+"hex": "#ff736b6b",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 5659,
+"sprite_status": "ambiguous"
+},
+"Adamant knife(p++)": {
+"hex": "#ff736b6b",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 5666,
+"sprite_status": "ambiguous"
+},
+"Adamant thrownaxe": {
+"hex": "#ff3a493a",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 804,
+"sprite_status": "ambiguous"
+},
+"Adamantite bar": {
+"hex": "#ff3cb371",
+"source": "curated",
+"family": "bar",
+"item_id": 2361,
+"sprite_status": "ambiguous"
+},
+"Adamantite ore": {
+"hex": "#ff3cb371",
+"source": "curated",
+"family": "ore",
+"item_id": 449,
+"sprite_status": "ambiguous"
+},
+"Admiral pie": {
+"hex": "#ff766637",
+"source": "sprite",
+"family": "food",
+"item_id": 7198,
+"sprite_status": "ok"
+},
+"Aether rune": {
+"hex": "#ffa4d2bb",
+"source": "sprite",
+"family": "rune",
+"item_id": 30843,
+"sprite_status": "ok"
+},
+"Air rune": {
+"hex": "#ffe6e6e6",
+"source": "curated",
+"family": "rune",
+"item_id": 556,
+"sprite_status": "ambiguous"
+},
+"Alan's blessed bones": {
+"hex": "#ffb4a9a8",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 31075,
+"sprite_status": "ambiguous"
+},
+"Alan's bones": {
+"hex": "#ff948a89",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 30973,
+"sprite_status": "ambiguous"
+},
+"Amethyst arrow": {
+"hex": "#ff563409",
+"source": "sprite",
+"family": "ammo",
+"item_id": 21326,
+"sprite_status": "ok"
+},
+"Amethyst arrow(p)": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 21332,
+"sprite_status": "ok"
+},
+"Amethyst arrow(p+)": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 21334,
+"sprite_status": "ok"
+},
+"Amethyst arrow(p++)": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 21336,
+"sprite_status": "ok"
+},
+"Amethyst arrowtips": {
+"hex": "#ff835873",
+"source": "sprite",
+"family": "ammo",
+"item_id": 21350,
+"sprite_status": "ok"
+},
+"Amethyst bolt tips": {
+"hex": "#ff855a75",
+"source": "sprite",
+"family": "ammo",
+"item_id": 21338,
+"sprite_status": "ok"
+},
+"Amethyst broad bolts": {
+"hex": "#ff3c3737",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 21316,
+"sprite_status": "ambiguous"
+},
+"Amethyst dart": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 25849,
+"sprite_status": "ok"
+},
+"Amethyst dart tip": {
+"hex": "#ff865a76",
+"source": "sprite",
+"family": "ammo",
+"item_id": 25853,
+"sprite_status": "ok"
+},
+"Amethyst dart(p)": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 25851,
+"sprite_status": "ok"
+},
+"Amethyst dart(p+)": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 25855,
+"sprite_status": "ok"
+},
+"Amethyst dart(p++)": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 25857,
+"sprite_status": "ok"
+},
+"Amethyst fire arrow": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 21328,
+"sprite_status": "ok"
+},
+"Amethyst fire arrow (lit)": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 21330,
+"sprite_status": "ok"
+},
+"Amethyst javelin": {
+"hex": "#ff614a2c",
+"source": "sprite",
+"family": "ammo",
+"item_id": 21318,
+"sprite_status": "ok"
+},
+"Amethyst javelin tips": {
+"hex": "#ff865a76",
+"source": "sprite",
+"family": "ammo",
+"item_id": 21352,
+"sprite_status": "ok"
+},
+"Amethyst javelin(p)": {
+"hex": "#ff614a2c",
+"source": "sprite",
+"family": "ammo",
+"item_id": 21320,
+"sprite_status": "ok"
+},
+"Amethyst javelin(p+)": {
+"hex": "#ff614a2c",
+"source": "sprite",
+"family": "ammo",
+"item_id": 21322,
+"sprite_status": "ok"
+},
+"Amethyst javelin(p++)": {
+"hex": "#ff614a2c",
+"source": "sprite",
+"family": "ammo",
+"item_id": 21324,
+"sprite_status": "ok"
+},
+"Anchovies": {
+"hex": "#ff444a78",
+"source": "sprite",
+"family": "food",
+"item_id": 319,
+"sprite_status": "ok"
+},
+"Anchovy pizza": {
+"hex": "#ff8b1d11",
+"source": "sprite",
+"family": "food",
+"item_id": 2297,
+"sprite_status": "ok"
+},
+"Anglerfish": {
+"hex": "#ff544529",
+"source": "sprite",
+"family": "food",
+"item_id": 13441,
+"sprite_status": "ok"
+},
+"Animals' bones": {
+"hex": "#ff999879",
+"source": "sprite-fixup",
+"family": "bones",
+"item_id": 6904,
+"sprite_status": "fetch-fail"
+},
+"Apple barrel": {
+"hex": "#ff886c30",
+"source": "sprite",
+"family": "food",
+"item_id": 6094,
+"sprite_status": "ok"
+},
+"Apple mush": {
+"hex": "#ff967b45",
+"source": "sprite",
+"family": "food",
+"item_id": 5992,
+"sprite_status": "ok"
+},
+"Apple pie": {
+"hex": "#ff937143",
+"source": "sprite",
+"family": "food",
+"item_id": 2323,
+"sprite_status": "ok"
+},
+"Apple seedling": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5480,
+"sprite_status": "ok"
+},
+"Apple tree seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5283,
+"sprite_status": "ok"
+},
+"Arctic pine logs": {
+"hex": "#ff7d5a32",
+"source": "curated",
+"family": "log",
+"item_id": 10810,
+"sprite_status": "ok"
+},
+"Arctic pyre logs": {
+"hex": "#ff997936",
+"source": "sprite",
+"family": "log",
+"item_id": 10808,
+"sprite_status": "ok"
+},
+"Ardrigal": {
+"hex": "#ff564609",
+"source": "sprite",
+"family": "herb",
+"item_id": 1528,
+"sprite_status": "ok"
+},
+"Arrowheads": {
+"hex": "#ff493821",
+"source": "sprite",
+"family": "ammo",
+"item_id": 11176,
+"sprite_status": "ok"
+},
+"Asgarnian ale": {
+"hex": "#ffab7415",
+"source": "sprite",
+"family": "food",
+"item_id": 1905,
+"sprite_status": "ok"
+},
+"Asgarnian ale(4)": {
+"hex": "#ff636b55",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 5785,
+"sprite_status": "ambiguous"
+},
+"Asgarnian ale(m)": {
+"hex": "#ffaa7315",
+"source": "sprite",
+"family": "food",
+"item_id": 5739,
+"sprite_status": "ok"
+},
+"Asgarnian ale(m4)": {
+"hex": "#ff636b55",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 5865,
+"sprite_status": "ambiguous"
+},
+"Asgarnian seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5308,
+"sprite_status": "ok"
+},
+"Ashes": {
+"hex": "#ffb5aaa9",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 592,
+"sprite_status": "ambiguous"
+},
+"Astral rune": {
+"hex": "#ff60a0d0",
+"source": "curated",
+"family": "rune",
+"item_id": 9075,
+"sprite_status": "ambiguous"
+},
+"Atlatl dart": {
+"hex": "#ff9c7826",
+"source": "sprite",
+"family": "ammo",
+"item_id": 28991,
+"sprite_status": "ok"
+},
+"Atlatl dart tips": {
+"hex": "#ff292727",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 30998,
+"sprite_status": "ambiguous"
+},
+"Attas seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 22881,
+"sprite_status": "ambiguous"
+},
+"Autumn sq'irkjuice": {
+"hex": "#ff4a2221",
+"source": "sprite",
+"family": "food",
+"item_id": 10850,
+"sprite_status": "ok"
+},
+"Avantoe": {
+"hex": "#ff114922",
+"source": "sprite",
+"family": "herb",
+"item_id": 261,
+"sprite_status": "ok"
+},
+"Avantoe seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5298,
+"sprite_status": "ok"
+},
+"Axeman's folly": {
+"hex": "#ff84450d",
+"source": "sprite",
+"family": "food",
+"item_id": 5751,
+"sprite_status": "ok"
+},
+"Axeman's folly(4)": {
+"hex": "#ff636b55",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 5825,
+"sprite_status": "ambiguous"
+},
+"Axeman's folly(m)": {
+"hex": "#ff84450d",
+"source": "sprite",
+"family": "food",
+"item_id": 5753,
+"sprite_status": "ok"
+},
+"Axeman's folly(m4)": {
+"hex": "#ff636b55",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 5905,
+"sprite_status": "ambiguous"
+},
+"Babydragon bones": {
+"hex": "#ffb6abaa",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 534,
+"sprite_status": "ambiguous"
+},
+"Baked potato": {
+"hex": "#ff68540a",
+"source": "sprite",
+"family": "food",
+"item_id": 6701,
+"sprite_status": "ok"
+},
+"Banana seedling": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5481,
+"sprite_status": "ok"
+},
+"Banana tree seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5284,
+"sprite_status": "ok"
+},
+"Barb bolttips": {
+"hex": "#ff151111",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 47,
+"sprite_status": "ambiguous"
+},
+"Barbed arrow": {
+"hex": "#ff583509",
+"source": "sprite",
+"family": "ammo",
+"item_id": 22230,
+"sprite_status": "ok"
+},
+"Barbed bolts": {
+"hex": "#ff693f09",
+"source": "sprite",
+"family": "ammo",
+"item_id": 881,
+"sprite_status": "ok"
+},
+"Bark": {
+"hex": "#ff5a4a30",
+"source": "curated",
+"family": "log",
+"item_id": 3239,
+"sprite_status": "ok"
+},
+"Barley malt": {
+"hex": "#ffa5774c",
+"source": "sprite",
+"family": "food",
+"item_id": 6008,
+"sprite_status": "ok"
+},
+"Barley seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5305,
+"sprite_status": "ok"
+},
+"Bass": {
+"hex": "#ffa83814",
+"source": "sprite",
+"family": "food",
+"item_id": 365,
+"sprite_status": "ok"
+},
+"Bat bones": {
+"hex": "#ff948a89",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 530,
+"sprite_status": "ambiguous"
+},
+"Bearded gorilla bones": {
+"hex": "#ffb6abaa",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 3182,
+"sprite_status": "ambiguous"
+},
+"Beautiful yellow pansy seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 27039,
+"sprite_status": "ok"
+},
+"Beer barrel": {
+"hex": "#ff938b63",
+"source": "sprite-fixup",
+"family": "food",
+"item_id": 8516,
+"sprite_status": "fetch-fail"
+},
+"Belladonna seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5281,
+"sprite_status": "ambiguous"
+},
+"Big bones": {
+"hex": "#ffb6abaa",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 532,
+"sprite_status": "ambiguous"
+},
+"Black dart": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 3093,
+"sprite_status": "ok"
+},
+"Black dart(p)": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 3094,
+"sprite_status": "ok"
+},
+"Black dart(p+)": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5631,
+"sprite_status": "ok"
+},
+"Black dart(p++)": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5638,
+"sprite_status": "ok"
+},
+"Black knife": {
+"hex": "#ff151212",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 869,
+"sprite_status": "ambiguous"
+},
+"Black knife(p)": {
+"hex": "#ff252323",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 874,
+"sprite_status": "ambiguous"
+},
+"Black knife(p+)": {
+"hex": "#ff252323",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 5658,
+"sprite_status": "ambiguous"
+},
+"Black knife(p++)": {
+"hex": "#ff252323",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 5665,
+"sprite_status": "ambiguous"
+},
+"Blank air rune": {
+"hex": "#ff6a6262",
+"source": "sprite-muted",
+"family": "rune",
+"item_id": 9692,
+"sprite_status": "ambiguous"
+},
+"Blank earth rune": {
+"hex": "#ff595353",
+"source": "sprite-muted",
+"family": "rune",
+"item_id": 9694,
+"sprite_status": "ambiguous"
+},
+"Blank fire rune": {
+"hex": "#ff595353",
+"source": "sprite-muted",
+"family": "rune",
+"item_id": 9698,
+"sprite_status": "ambiguous"
+},
+"Blank mind rune": {
+"hex": "#ff6a6262",
+"source": "sprite-muted",
+"family": "rune",
+"item_id": 9696,
+"sprite_status": "ambiguous"
+},
+"Blank water rune": {
+"hex": "#ff7c7373",
+"source": "sprite-muted",
+"family": "rune",
+"item_id": 9690,
+"sprite_status": "ambiguous"
+},
+"Blasted ore": {
+"hex": "#ff393636",
+"source": "sprite-muted",
+"family": "ore",
+"item_id": 13575,
+"sprite_status": "ambiguous"
+},
+"Bleached bones": {
+"hex": "#ffa7a685",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 25422,
+"sprite_status": "ambiguous"
+},
+"Blessed babydragon bones": {
+"hex": "#ffb4a9a9",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 29352,
+"sprite_status": "ambiguous"
+},
+"Blessed babywyrm bones": {
+"hex": "#ff898c94",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 29354,
+"sprite_status": "ambiguous"
+},
+"Blessed bat bones": {
+"hex": "#ffb4a9a8",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 29346,
+"sprite_status": "ambiguous"
+},
+"Blessed big bones": {
+"hex": "#ffb4a9a9",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 29348,
+"sprite_status": "ambiguous"
+},
+"Blessed bones": {
+"hex": "#ffb4a9a8",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 29344,
+"sprite_status": "ambiguous"
+},
+"Blessed dragon bones": {
+"hex": "#ffb5aaaa",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 29356,
+"sprite_status": "ambiguous"
+},
+"Blessed drake bones": {
+"hex": "#ff979678",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 29366,
+"sprite_status": "ambiguous"
+},
+"Blessed fayrg bones": {
+"hex": "#ffb29115",
+"source": "sprite",
+"family": "bones",
+"item_id": 29370,
+"sprite_status": "ok"
+},
+"Blessed frost dragon bones": {
+"hex": "#ff99a3a6",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 31266,
+"sprite_status": "ambiguous"
+},
+"Blessed hydra bones": {
+"hex": "#ff6a6a54",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 29368,
+"sprite_status": "ambiguous"
+},
+"Blessed lava dragon bones": {
+"hex": "#ffd1cbcb",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 29358,
+"sprite_status": "ambiguous"
+},
+"Blessed ourg bones": {
+"hex": "#ff843a0d",
+"source": "sprite",
+"family": "bones",
+"item_id": 29374,
+"sprite_status": "ok"
+},
+"Blessed raurg bones": {
+"hex": "#ffaea650",
+"source": "sprite",
+"family": "bones",
+"item_id": 29372,
+"sprite_status": "ok"
+},
+"Blessed strykewyrm bones": {
+"hex": "#ff96938b",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 31264,
+"sprite_status": "ambiguous"
+},
+"Blessed superior dragon bones": {
+"hex": "#ff7cd3c8",
+"source": "sprite",
+"family": "bones",
+"item_id": 29362,
+"sprite_status": "ok"
+},
+"Blessed wyrm bones": {
+"hex": "#ffb3b7ab",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 29364,
+"sprite_status": "ambiguous"
+},
+"Blessed wyvern bones": {
+"hex": "#ffb2b6bc",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 29360,
+"sprite_status": "ambiguous"
+},
+"Blessed zogre bones": {
+"hex": "#ffc4bbbb",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 29350,
+"sprite_status": "ambiguous"
+},
+"Blindweed seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 6710,
+"sprite_status": "ambiguous"
+},
+"Blisterwood logs": {
+"hex": "#ffdbd6d6",
+"source": "sprite-muted",
+"family": "log",
+"item_id": 24691,
+"sprite_status": "ambiguous"
+},
+"Blood rune": {
+"hex": "#ffb01030",
+"source": "curated",
+"family": "rune",
+"item_id": 565,
+"sprite_status": "ok"
+},
+"Blue crab meat": {
+"hex": "#ff444579",
+"source": "sprite",
+"family": "food",
+"item_id": 31695,
+"sprite_status": "ok"
+},
+"Blue logs": {
+"hex": "#ff6b7386",
+"source": "sprite-muted",
+"family": "log",
+"item_id": 7406,
+"sprite_status": "ambiguous"
+},
+"Bluefin": {
+"hex": "#ff98a5a3",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 32344,
+"sprite_status": "ambiguous"
+},
+"Blunt arrow": {
+"hex": "#ff472a06",
+"source": "sprite",
+"family": "ammo",
+"item_id": 22229,
+"sprite_status": "ok"
+},
+"Blurberry special": {
+"hex": "#ff898994",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 2064,
+"sprite_status": "ambiguous"
+},
+"Blurite bar": {
+"hex": "#ff696ab9",
+"source": "sprite",
+"family": "bar",
+"item_id": 9467,
+"sprite_status": "ok"
+},
+"Blurite bolts": {
+"hex": "#ffa0a096",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9139,
+"sprite_status": "ambiguous"
+},
+"Blurite bolts (p)": {
+"hex": "#ff9f9f93",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9286,
+"sprite_status": "ambiguous"
+},
+"Blurite bolts (p+)": {
+"hex": "#ff9f9f93",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9293,
+"sprite_status": "ambiguous"
+},
+"Blurite bolts (p++)": {
+"hex": "#ff9f9f93",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9300,
+"sprite_status": "ambiguous"
+},
+"Blurite bolts (unf)": {
+"hex": "#ff6869b7",
+"source": "sprite",
+"family": "ammo",
+"item_id": 9376,
+"sprite_status": "ok"
+},
+"Blurite ore": {
+"hex": "#ff7a6245",
+"source": "sprite",
+"family": "ore",
+"item_id": 668,
+"sprite_status": "ok"
+},
+"Body rune": {
+"hex": "#ff8090a0",
+"source": "curated",
+"family": "rune",
+"item_id": 559,
+"sprite_status": "ambiguous"
+},
+"Bologano seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 13424,
+"sprite_status": "ambiguous"
+},
+"Bone bolt pack": {
+"hex": "#ffdabc97",
+"source": "sprite",
+"family": "ammo",
+"item_id": 13193,
+"sprite_status": "ok"
+},
+"Bone bolts": {
+"hex": "#ffb9b894",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 8882,
+"sprite_status": "ambiguous"
+},
+"Bones": {
+"hex": "#ff948a89",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 526,
+"sprite_status": "ambiguous"
+},
+"Botanical pie": {
+"hex": "#ff6b673c",
+"source": "sprite",
+"family": "food",
+"item_id": 19662,
+"sprite_status": "ok"
+},
+"Bow and arrow": {
+"hex": "#ff472a06",
+"source": "sprite",
+"family": "ammo",
+"item_id": 7686,
+"sprite_status": "ok"
+},
+"Brawk fish (3)": {
+"hex": "#ff45211a",
+"source": "sprite",
+"family": "food",
+"item_id": 20862,
+"sprite_status": "ok"
+},
+"Bread": {
+"hex": "#ff967a11",
+"source": "sprite",
+"family": "food",
+"item_id": 2309,
+"sprite_status": "ok"
+},
+"Broad arrowhead pack": {
+"hex": "#ffb18864",
+"source": "sprite",
+"family": "ammo",
+"item_id": 11885,
+"sprite_status": "ok"
+},
+"Broad arrowheads": {
+"hex": "#ff8e8484",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 11874,
+"sprite_status": "ambiguous"
+},
+"Broad arrows": {
+"hex": "#ff524637",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 4160,
+"sprite_status": "ambiguous"
+},
+"Broad bolts": {
+"hex": "#ff3c3737",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 11875,
+"sprite_status": "ambiguous"
+},
+"Broken arrow": {
+"hex": "#ff563409",
+"source": "sprite",
+"family": "ammo",
+"item_id": 687,
+"sprite_status": "ok"
+},
+"Bronze arrow": {
+"hex": "#ff543208",
+"source": "sprite",
+"family": "ammo",
+"item_id": 882,
+"sprite_status": "ok"
+},
+"Bronze arrow(p)": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 883,
+"sprite_status": "ok"
+},
+"Bronze arrow(p+)": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5616,
+"sprite_status": "ok"
+},
+"Bronze arrow(p++)": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5622,
+"sprite_status": "ok"
+},
+"Bronze arrowtips": {
+"hex": "#ff43341d",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 39,
+"sprite_status": "ambiguous"
+},
+"Bronze bar": {
+"hex": "#ffcd7f32",
+"source": "curated",
+"family": "bar",
+"item_id": 2349,
+"sprite_status": "ok"
+},
+"Bronze bolts": {
+"hex": "#ffa0a096",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 877,
+"sprite_status": "ambiguous"
+},
+"Bronze bolts (p)": {
+"hex": "#ff9f9f93",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 878,
+"sprite_status": "ambiguous"
+},
+"Bronze bolts (p+)": {
+"hex": "#ff9f9f93",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 6061,
+"sprite_status": "ambiguous"
+},
+"Bronze bolts (p++)": {
+"hex": "#ff9f9f93",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 6062,
+"sprite_status": "ambiguous"
+},
+"Bronze bolts (unf)": {
+"hex": "#ff4a3412",
+"source": "sprite",
+"family": "ammo",
+"item_id": 9375,
+"sprite_status": "ok"
+},
+"Bronze cannonball": {
+"hex": "#ff634b2c",
+"source": "sprite",
+"family": "ammo",
+"item_id": 31906,
+"sprite_status": "ok"
+},
+"Bronze chainshot cannonball": {
+"hex": "#ff745936",
+"source": "sprite",
+"family": "ammo",
+"item_id": 31918,
+"sprite_status": "ok"
+},
+"Bronze dart": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 806,
+"sprite_status": "ok"
+},
+"Bronze dart tip": {
+"hex": "#ff493820",
+"source": "sprite",
+"family": "ammo",
+"item_id": 819,
+"sprite_status": "ok"
+},
+"Bronze dart(p)": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 812,
+"sprite_status": "ok"
+},
+"Bronze dart(p+)": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5628,
+"sprite_status": "ok"
+},
+"Bronze dart(p++)": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5635,
+"sprite_status": "ok"
+},
+"Bronze fire arrow": {
+"hex": "#ff573409",
+"source": "sprite",
+"family": "ammo",
+"item_id": 598,
+"sprite_status": "ok"
+},
+"Bronze fire arrow (lit)": {
+"hex": "#ff573409",
+"source": "sprite",
+"family": "ammo",
+"item_id": 942,
+"sprite_status": "ok"
+},
+"Bronze incendiary cannonball": {
+"hex": "#ff866c6a",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 31932,
+"sprite_status": "ambiguous"
+},
+"Bronze javelin": {
+"hex": "#ff614a2c",
+"source": "sprite",
+"family": "ammo",
+"item_id": 825,
+"sprite_status": "ok"
+},
+"Bronze javelin tips": {
+"hex": "#ff45351e",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 19570,
+"sprite_status": "ambiguous"
+},
+"Bronze javelin(p)": {
+"hex": "#ff614a2c",
+"source": "sprite",
+"family": "ammo",
+"item_id": 831,
+"sprite_status": "ok"
+},
+"Bronze javelin(p+)": {
+"hex": "#ff614a2c",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5642,
+"sprite_status": "ok"
+},
+"Bronze javelin(p++)": {
+"hex": "#ff614a2c",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5648,
+"sprite_status": "ok"
+},
+"Bronze knife": {
+"hex": "#ff584328",
+"source": "sprite",
+"family": "ammo",
+"item_id": 864,
+"sprite_status": "ok"
+},
+"Bronze knife(p)": {
+"hex": "#ff736b6b",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 870,
+"sprite_status": "ambiguous"
+},
+"Bronze knife(p+)": {
+"hex": "#ff736b6b",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 5654,
+"sprite_status": "ambiguous"
+},
+"Bronze knife(p++)": {
+"hex": "#ff736b6b",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 5661,
+"sprite_status": "ambiguous"
+},
+"Bronze thrownaxe": {
+"hex": "#ff43341d",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 800,
+"sprite_status": "ambiguous"
+},
+"Buchu leaf": {
+"hex": "#ff322a38",
+"source": "sprite-muted",
+"family": "herb",
+"item_id": 20908,
+"sprite_status": "ambiguous"
+},
+"Buchu seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 20909,
+"sprite_status": "ok"
+},
+"Bull bones": {
+"hex": "#ffdad5d5",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 33115,
+"sprite_status": "ambiguous"
+},
+"Bullet arrow": {
+"hex": "#ff462905",
+"source": "sprite",
+"family": "ammo",
+"item_id": 22227,
+"sprite_status": "ok"
+},
+"Burnt anglerfish": {
+"hex": "#ff363535",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 13443,
+"sprite_status": "ambiguous"
+},
+"Burnt antelope": {
+"hex": "#ff201d1d",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 29159,
+"sprite_status": "ambiguous"
+},
+"Burnt bat": {
+"hex": "#ff151111",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 20869,
+"sprite_status": "ambiguous"
+},
+"Burnt batta": {
+"hex": "#ff3b3636",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 2247,
+"sprite_status": "ambiguous"
+},
+"Burnt beast meat": {
+"hex": "#ff161313",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 9990,
+"sprite_status": "ambiguous"
+},
+"Burnt bird meat": {
+"hex": "#ff4a4444",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 9982,
+"sprite_status": "ambiguous"
+},
+"Burnt bluefin": {
+"hex": "#ff3a3535",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 32347,
+"sprite_status": "ambiguous"
+},
+"Burnt bones": {
+"hex": "#ff494444",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 528,
+"sprite_status": "ambiguous"
+},
+"Burnt bread": {
+"hex": "#ff282626",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 2311,
+"sprite_status": "ambiguous"
+},
+"Burnt cake": {
+"hex": "#ff595353",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 1903,
+"sprite_status": "ambiguous"
+},
+"Burnt cave eel": {
+"hex": "#ff433a36",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 5002,
+"sprite_status": "ambiguous"
+},
+"Burnt chicken": {
+"hex": "#ff4a4444",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 2144,
+"sprite_status": "ambiguous"
+},
+"Burnt crab meat": {
+"hex": "#ff4a4444",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 31698,
+"sprite_status": "ambiguous"
+},
+"Burnt crunchies": {
+"hex": "#ff756d6c",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 2199,
+"sprite_status": "ambiguous"
+},
+"Burnt curry": {
+"hex": "#ff282626",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 2013,
+"sprite_status": "ambiguous"
+},
+"Burnt dark crab": {
+"hex": "#ff5a5454",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 11938,
+"sprite_status": "ambiguous"
+},
+"Burnt eel": {
+"hex": "#ff443903",
+"source": "sprite",
+"family": "food",
+"item_id": 3383,
+"sprite_status": "ok"
+},
+"Burnt egg": {
+"hex": "#ff997311",
+"source": "sprite",
+"family": "food",
+"item_id": 7090,
+"sprite_status": "ok"
+},
+"Burnt fish": {
+"hex": "#ff595353",
+"source": "sprite-fixup",
+"family": "food",
+"item_id": 323,
+"sprite_status": "fetch-fail"
+},
+"Burnt fishcake": {
+"hex": "#ff68450a",
+"source": "sprite",
+"family": "food",
+"item_id": 7531,
+"sprite_status": "ok"
+},
+"Burnt fox meat": {
+"hex": "#ff201d1d",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 29161,
+"sprite_status": "ambiguous"
+},
+"Burnt giant crab meat": {
+"hex": "#ff5a5348",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 7520,
+"sprite_status": "ambiguous"
+},
+"Burnt giant krill": {
+"hex": "#ff181616",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 32315,
+"sprite_status": "ambiguous"
+},
+"Burnt gnomebowl": {
+"hex": "#ff4a4444",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 2175,
+"sprite_status": "ambiguous"
+},
+"Burnt haddock": {
+"hex": "#ff3b3636",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 32323,
+"sprite_status": "ambiguous"
+},
+"Burnt halibut": {
+"hex": "#ff4a4444",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 32339,
+"sprite_status": "ambiguous"
+},
+"Burnt jogre bones": {
+"hex": "#ff494343",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 3127,
+"sprite_status": "ambiguous"
+},
+"Burnt jubbly": {
+"hex": "#ff463718",
+"source": "sprite",
+"family": "food",
+"item_id": 7570,
+"sprite_status": "ok"
+},
+"Burnt jumbo squid": {
+"hex": "#ff393434",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 31567,
+"sprite_status": "ambiguous"
+},
+"Burnt karambwan": {
+"hex": "#ff6a6262",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 3148,
+"sprite_status": "ambiguous"
+},
+"Burnt kebbit": {
+"hex": "#ff201d1d",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 29155,
+"sprite_status": "ambiguous"
+},
+"Burnt large beast": {
+"hex": "#ff201d1d",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 29157,
+"sprite_status": "ambiguous"
+},
+"Burnt lobster": {
+"hex": "#ff4a4544",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 381,
+"sprite_status": "ambiguous"
+},
+"Burnt manta ray": {
+"hex": "#ff625b5b",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 393,
+"sprite_status": "ambiguous"
+},
+"Burnt marlin": {
+"hex": "#ff181515",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 32355,
+"sprite_status": "ambiguous"
+},
+"Burnt meat": {
+"hex": "#ff201d1d",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 2146,
+"sprite_status": "ambiguous"
+},
+"Burnt mushroom": {
+"hex": "#ffa57b13",
+"source": "sprite",
+"family": "food",
+"item_id": 7094,
+"sprite_status": "ok"
+},
+"Burnt onion": {
+"hex": "#ff9a7311",
+"source": "sprite",
+"family": "food",
+"item_id": 7092,
+"sprite_status": "ok"
+},
+"Burnt oomlie": {
+"hex": "#ff4a4444",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 2426,
+"sprite_status": "ambiguous"
+},
+"Burnt oomlie wrap": {
+"hex": "#ff595353",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 2345,
+"sprite_status": "ambiguous"
+},
+"Burnt pie": {
+"hex": "#ff423d3d",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 2329,
+"sprite_status": "ambiguous"
+},
+"Burnt pizza": {
+"hex": "#ff4c0d09",
+"source": "sprite",
+"family": "food",
+"item_id": 2305,
+"sprite_status": "ok"
+},
+"Burnt potato": {
+"hex": "#ff494444",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 6699,
+"sprite_status": "ambiguous"
+},
+"Burnt rabbit": {
+"hex": "#ff484343",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 7222,
+"sprite_status": "ambiguous"
+},
+"Burnt rainbow crab meat": {
+"hex": "#ff3b3636",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 31706,
+"sprite_status": "ambiguous"
+},
+"Burnt rainbow fish": {
+"hex": "#ff091853",
+"source": "sprite",
+"family": "food",
+"item_id": 10140,
+"sprite_status": "ok"
+},
+"Burnt sea turtle": {
+"hex": "#ff393434",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 399,
+"sprite_status": "ambiguous"
+},
+"Burnt shark": {
+"hex": "#ff4a4544",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 387,
+"sprite_status": "ambiguous"
+},
+"Burnt shrimp": {
+"hex": "#ff595353",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 7954,
+"sprite_status": "ambiguous"
+},
+"Burnt snail": {
+"hex": "#ff443903",
+"source": "sprite",
+"family": "food",
+"item_id": 3375,
+"sprite_status": "ok"
+},
+"Burnt spider": {
+"hex": "#ff393825",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 6301,
+"sprite_status": "ambiguous"
+},
+"Burnt stew": {
+"hex": "#ff282626",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 2005,
+"sprite_status": "ambiguous"
+},
+"Burnt sweetcorn": {
+"hex": "#ff685a53",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 5990,
+"sprite_status": "ambiguous"
+},
+"Burnt swordfish": {
+"hex": "#ff4a4545",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 375,
+"sprite_status": "ambiguous"
+},
+"Burnt swordtip squid": {
+"hex": "#ff494443",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 31559,
+"sprite_status": "ambiguous"
+},
+"Burnt t-bone steak": {
+"hex": "#ff332828",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 33112,
+"sprite_status": "ambiguous"
+},
+"Burnt yellowfin": {
+"hex": "#ff181515",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 32331,
+"sprite_status": "ambiguous"
+},
+"Cabbage rune": {
+"hex": "#ff698f24",
+"source": "sprite",
+"family": "rune",
+"item_id": 13680,
+"sprite_status": "ok"
+},
+"Cabbage seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5324,
+"sprite_status": "ok"
+},
+"Cactus seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5280,
+"sprite_status": "ok"
+},
+"Cadantine": {
+"hex": "#ff3a4318",
+"source": "sprite",
+"family": "herb",
+"item_id": 265,
+"sprite_status": "ok"
+},
+"Cadantine seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5301,
+"sprite_status": "ok"
+},
+"Cadavaberry seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5102,
+"sprite_status": "ambiguous"
+},
+"Cake": {
+"hex": "#ff977b11",
+"source": "sprite",
+"family": "food",
+"item_id": 1891,
+"sprite_status": "ok"
+},
+"Cake of guidance": {
+"hex": "#ff87724b",
+"source": "sprite",
+"family": "food",
+"item_id": 7542,
+"sprite_status": "ok"
+},
+"Calquat seedling": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5487,
+"sprite_status": "ok"
+},
+"Calquat tree seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5290,
+"sprite_status": "ok"
+},
+"Camphor logs": {
+"hex": "#ff967765",
+"source": "sprite",
+"family": "log",
+"item_id": 32904,
+"sprite_status": "ok"
+},
+"Camphor pyre logs": {
+"hex": "#ff6b6555",
+"source": "sprite-muted",
+"family": "log",
+"item_id": 31383,
+"sprite_status": "ambiguous"
+},
+"Camphor seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 31547,
+"sprite_status": "ambiguous"
+},
+"Camphor seedling": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 31490,
+"sprite_status": "ok"
+},
+"Cannon ball": {
+"hex": "#ffe4ba1b",
+"source": "sprite-fixup",
+"family": "ammo",
+"item_id": 4579,
+"sprite_status": "fetch-fail"
+},
+"Cannon balls": {
+"hex": "#ff393434",
+"source": "sprite-fixup",
+"family": "ammo",
+"item_id": 7147,
+"sprite_status": "fetch-fail"
+},
+"Captain's log": {
+"hex": "#ff473728",
+"source": "sprite-muted",
+"family": "log",
+"item_id": 31985,
+"sprite_status": "ambiguous"
+},
+"Castle wars arrow": {
+"hex": "#ff591915",
+"source": "sprite",
+"family": "ammo",
+"item_id": 30694,
+"sprite_status": "ok"
+},
+"Castle wars bolts": {
+"hex": "#ff9f9f94",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 30696,
+"sprite_status": "ambiguous"
+},
+"Catfish": {
+"hex": "#ff3a3a34",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 25672,
+"sprite_status": "ambiguous"
+},
+"Cave eel": {
+"hex": "#ff493207",
+"source": "sprite",
+"family": "food",
+"item_id": 5003,
+"sprite_status": "ok"
+},
+"Cavefish": {
+"hex": "#ffa98886",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 25660,
+"sprite_status": "ambiguous"
+},
+"Caviar": {
+"hex": "#ff1c1500",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 11326,
+"sprite_status": "ambiguous"
+},
+"Celastrus seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 22869,
+"sprite_status": "ok"
+},
+"Celastrus seedling": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 22848,
+"sprite_status": "ok"
+},
+"Chaos rune": {
+"hex": "#ffa04020",
+"source": "curated",
+"family": "rune",
+"item_id": 562,
+"sprite_status": "ok"
+},
+"Cheese": {
+"hex": "#ffbaa316",
+"source": "sprite",
+"family": "food",
+"item_id": 1985,
+"sprite_status": "ok"
+},
+"Cheese+tom batta": {
+"hex": "#ff74570d",
+"source": "sprite",
+"family": "food",
+"item_id": 2259,
+"sprite_status": "ok"
+},
+"Chef's delight": {
+"hex": "#ffc0aa30",
+"source": "sprite",
+"family": "food",
+"item_id": 5755,
+"sprite_status": "ok"
+},
+"Chef's delight(4)": {
+"hex": "#ff636b55",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 5833,
+"sprite_status": "ambiguous"
+},
+"Chef's delight(m)": {
+"hex": "#ffc0aa30",
+"source": "sprite",
+"family": "food",
+"item_id": 5757,
+"sprite_status": "ok"
+},
+"Chef's delight(m4)": {
+"hex": "#ff636b55",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 5913,
+"sprite_status": "ambiguous"
+},
+"Chewed bones": {
+"hex": "#ff7b7b72",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 11338,
+"sprite_status": "ambiguous"
+},
+"Chilli con carne": {
+"hex": "#ffa57b13",
+"source": "sprite",
+"family": "food",
+"item_id": 7062,
+"sprite_status": "ok"
+},
+"Chilli potato": {
+"hex": "#ff725c0d",
+"source": "sprite",
+"family": "food",
+"item_id": 7054,
+"sprite_status": "ok"
+},
+"Choc saturday": {
+"hex": "#ff898994",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 2074,
+"sprite_status": "ambiguous"
+},
+"Chocchip crunchies": {
+"hex": "#ff76590d",
+"source": "sprite",
+"family": "food",
+"item_id": 2209,
+"sprite_status": "ok"
+},
+"Chocolate bar": {
+"hex": "#ff633c23",
+"source": "sprite",
+"family": "bar",
+"item_id": 1973,
+"sprite_status": "ok"
+},
+"Chocolate bomb": {
+"hex": "#ff996811",
+"source": "sprite",
+"family": "food",
+"item_id": 2185,
+"sprite_status": "ok"
+},
+"Chocolate cake": {
+"hex": "#ff644a09",
+"source": "sprite",
+"family": "food",
+"item_id": 1897,
+"sprite_status": "ok"
+},
+"Cider": {
+"hex": "#ffa6a412",
+"source": "sprite",
+"family": "food",
+"item_id": 5763,
+"sprite_status": "ok"
+},
+"Cider barrel": {
+"hex": "#ff938b63",
+"source": "sprite-fixup",
+"family": "food",
+"item_id": 8518,
+"sprite_status": "fetch-fail"
+},
+"Cider(4)": {
+"hex": "#ff636b55",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 5849,
+"sprite_status": "ambiguous"
+},
+"Cider(m4)": {
+"hex": "#ff636b55",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 5929,
+"sprite_status": "ambiguous"
+},
+"Coal": {
+"hex": "#ff2b2b2b",
+"source": "curated",
+"family": "ore",
+"item_id": 453,
+"sprite_status": "ambiguous"
+},
+"Cod": {
+"hex": "#ff363a58",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 339,
+"sprite_status": "ambiguous"
+},
+"Consecration seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 4205,
+"sprite_status": "ambiguous"
+},
+"Cooked barb-tailed kebbit": {
+"hex": "#ff665639",
+"source": "sprite",
+"family": "food",
+"item_id": 29131,
+"sprite_status": "ok"
+},
+"Cooked bream": {
+"hex": "#ff563a09",
+"source": "sprite",
+"family": "food",
+"item_id": 29217,
+"sprite_status": "ok"
+},
+"Cooked chicken": {
+"hex": "#ff76480d",
+"source": "sprite",
+"family": "food",
+"item_id": 2140,
+"sprite_status": "ok"
+},
+"Cooked chompy": {
+"hex": "#ff978625",
+"source": "sprite",
+"family": "food",
+"item_id": 2878,
+"sprite_status": "ok"
+},
+"Cooked dashing kebbit": {
+"hex": "#ff563b3a",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 29134,
+"sprite_status": "ambiguous"
+},
+"Cooked fishcake": {
+"hex": "#ff986711",
+"source": "sprite",
+"family": "food",
+"item_id": 7530,
+"sprite_status": "ok"
+},
+"Cooked giant crab meat": {
+"hex": "#ff795737",
+"source": "sprite",
+"family": "food",
+"item_id": 7521,
+"sprite_status": "ok"
+},
+"Cooked graahk": {
+"hex": "#ffa7683c",
+"source": "sprite",
+"family": "food",
+"item_id": 29149,
+"sprite_status": "ok"
+},
+"Cooked jubbly": {
+"hex": "#ff8c6323",
+"source": "sprite",
+"family": "food",
+"item_id": 7568,
+"sprite_status": "ok"
+},
+"Cooked karambwan": {
+"hex": "#ffb5b3a9",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 3144,
+"sprite_status": "ambiguous"
+},
+"Cooked kyatt": {
+"hex": "#ff997556",
+"source": "sprite",
+"family": "food",
+"item_id": 29152,
+"sprite_status": "ok"
+},
+"Cooked larupia": {
+"hex": "#ff935243",
+"source": "sprite",
+"family": "food",
+"item_id": 29146,
+"sprite_status": "ok"
+},
+"Cooked meat": {
+"hex": "#ff7c4c0d",
+"source": "sprite",
+"family": "food",
+"item_id": 2142,
+"sprite_status": "ok"
+},
+"Cooked moonlight antelope": {
+"hex": "#ff895430",
+"source": "sprite",
+"family": "food",
+"item_id": 29143,
+"sprite_status": "ok"
+},
+"Cooked moss lizard": {
+"hex": "#ff662919",
+"source": "sprite",
+"family": "food",
+"item_id": 29077,
+"sprite_status": "ok"
+},
+"Cooked mystery meat": {
+"hex": "#ff604809",
+"source": "sprite",
+"family": "food",
+"item_id": 24785,
+"sprite_status": "ok"
+},
+"Cooked oomlie wrap": {
+"hex": "#ff284920",
+"source": "sprite",
+"family": "food",
+"item_id": 2343,
+"sprite_status": "ok"
+},
+"Cooked pyre fox": {
+"hex": "#ff625142",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 29137,
+"sprite_status": "ambiguous"
+},
+"Cooked rabbit": {
+"hex": "#ffa5654c",
+"source": "sprite",
+"family": "food",
+"item_id": 3228,
+"sprite_status": "ok"
+},
+"Cooked slimy eel": {
+"hex": "#ff774237",
+"source": "sprite",
+"family": "food",
+"item_id": 3381,
+"sprite_status": "ok"
+},
+"Cooked sunlight antelope": {
+"hex": "#ff9b8957",
+"source": "sprite",
+"family": "food",
+"item_id": 29140,
+"sprite_status": "ok"
+},
+"Cooked sweetcorn": {
+"hex": "#ff988836",
+"source": "sprite",
+"family": "food",
+"item_id": 5988,
+"sprite_status": "ok"
+},
+"Cooked t-bone steak": {
+"hex": "#ff633c23",
+"source": "sprite",
+"family": "food",
+"item_id": 33109,
+"sprite_status": "ok"
+},
+"Cooked wild kebbit": {
+"hex": "#ff664539",
+"source": "sprite",
+"family": "food",
+"item_id": 29128,
+"sprite_status": "ok"
+},
+"Copper ore": {
+"hex": "#ffcd7f32",
+"source": "curated",
+"family": "ore",
+"item_id": 436,
+"sprite_status": "ok"
+},
+"Corrupted ore": {
+"hex": "#ff362929",
+"source": "sprite-muted",
+"family": "ore",
+"item_id": 23837,
+"sprite_status": "ambiguous"
+},
+"Cosmic rune": {
+"hex": "#ffe0de1a",
+"source": "sprite",
+"family": "rune",
+"item_id": 564,
+"sprite_status": "ok"
+},
+"Cotton seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 31545,
+"sprite_status": "ok"
+},
+"Crate of adamantite ore": {
+"hex": "#ff584466",
+"source": "sprite-fixup",
+"family": "ore",
+"item_id": 32435,
+"sprite_status": "fetch-fail"
+},
+"Crate of arrowtips": {
+"hex": "#ff56493a",
+"source": "sprite-fixup",
+"family": "ammo",
+"item_id": 32448,
+"sprite_status": "fetch-fail"
+},
+"Crate of camphor logs": {
+"hex": "#ff524a41",
+"source": "sprite-fixup",
+"family": "log",
+"item_id": 32467,
+"sprite_status": "fetch-fail"
+},
+"Crate of cannonballs": {
+"hex": "#ff434455",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 32635,
+"sprite_status": "ambiguous"
+},
+"Crate of gold ore": {
+"hex": "#ff56493a",
+"source": "sprite-fixup",
+"family": "ore",
+"item_id": 32453,
+"sprite_status": "fetch-fail"
+},
+"Crate of iron ore": {
+"hex": "#ff4a3b31",
+"source": "sprite-muted",
+"family": "ore",
+"item_id": 32553,
+"sprite_status": "ambiguous"
+},
+"Crate of lead ore": {
+"hex": "#ff584466",
+"source": "sprite-fixup",
+"family": "ore",
+"item_id": 32442,
+"sprite_status": "fetch-fail"
+},
+"Crate of logs": {
+"hex": "#ff675845",
+"source": "sprite-fixup",
+"family": "log",
+"item_id": 32539,
+"sprite_status": "fetch-fail"
+},
+"Crate of mahogany logs": {
+"hex": "#ff675845",
+"source": "sprite-fixup",
+"family": "log",
+"item_id": 32541,
+"sprite_status": "fetch-fail"
+},
+"Crate of mithril ore": {
+"hex": "#ff69513b",
+"source": "sprite",
+"family": "ore",
+"item_id": 32701,
+"sprite_status": "ok"
+},
+"Crate of nickel ore": {
+"hex": "#ff584466",
+"source": "sprite-fixup",
+"family": "ore",
+"item_id": 32444,
+"sprite_status": "fetch-fail"
+},
+"Crate of redwood logs": {
+"hex": "#ff49423a",
+"source": "sprite-muted",
+"family": "log",
+"item_id": 32744,
+"sprite_status": "ambiguous"
+},
+"Crate of silver ore": {
+"hex": "#ff524a41",
+"source": "sprite-fixup",
+"family": "ore",
+"item_id": 32476,
+"sprite_status": "fetch-fail"
+},
+"Crate of teak logs": {
+"hex": "#ff4c4532",
+"source": "sprite-fixup",
+"family": "log",
+"item_id": 32671,
+"sprite_status": "fetch-fail"
+},
+"Crushed superior dragon bones": {
+"hex": "#ff66b4aa",
+"source": "sprite",
+"family": "bones",
+"item_id": 21975,
+"sprite_status": "ok"
+},
+"Crystal armour seed": {
+"hex": "#ff5c6874",
+"source": "sprite-muted",
+"family": "seed",
+"item_id": 23956,
+"sprite_status": "ambiguous"
+},
+"Crystal chime seed": {
+"hex": "#ff3a3636",
+"source": "sprite-muted",
+"family": "seed",
+"item_id": 28575,
+"sprite_status": "ambiguous"
+},
+"Crystal ore": {
+"hex": "#ff393434",
+"source": "sprite-muted",
+"family": "ore",
+"item_id": 23877,
+"sprite_status": "ambiguous"
+},
+"Crystal saw seed": {
+"hex": "#ff4b4545",
+"source": "sprite-muted",
+"family": "seed",
+"item_id": 9626,
+"sprite_status": "ambiguous"
+},
+"Crystal seed": {
+"hex": "#ff504949",
+"source": "sprite-fixup",
+"family": "seed",
+"item_id": 23808,
+"sprite_status": "fetch-fail"
+},
+"Crystal seedling": {
+"hex": "#ff985625",
+"source": "sprite",
+"family": "seed",
+"item_id": 23655,
+"sprite_status": "ok"
+},
+"Crystal teleport seed": {
+"hex": "#ff63636a",
+"source": "sprite-muted",
+"family": "seed",
+"item_id": 6103,
+"sprite_status": "ambiguous"
+},
+"Crystal tool seed": {
+"hex": "#ff6c7986",
+"source": "sprite-muted",
+"family": "seed",
+"item_id": 23953,
+"sprite_status": "ambiguous"
+},
+"Crystal weapon seed": {
+"hex": "#ff798794",
+"source": "sprite-muted",
+"family": "seed",
+"item_id": 4207,
+"sprite_status": "ambiguous"
+},
+"Cup of tea": {
+"hex": "#ffb5aaa9",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 712,
+"sprite_status": "ambiguous"
+},
+"Cupronickel bar": {
+"hex": "#ff85613d",
+"source": "sprite",
+"family": "bar",
+"item_id": 32892,
+"sprite_status": "ok"
+},
+"Curry": {
+"hex": "#ffa57a13",
+"source": "sprite",
+"family": "food",
+"item_id": 2011,
+"sprite_status": "ok"
+},
+"Curry seedling": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5483,
+"sprite_status": "ok"
+},
+"Curry tree seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5286,
+"sprite_status": "ok"
+},
+"Daeyalt essence": {
+"hex": "#ff7d7da0",
+"source": "curated",
+"family": "essence",
+"item_id": 24704,
+"sprite_status": "ok"
+},
+"Daeyalt ore": {
+"hex": "#ff444a44",
+"source": "sprite-muted",
+"family": "ore",
+"item_id": 9632,
+"sprite_status": "ambiguous"
+},
+"Dagannoth bones": {
+"hex": "#ff73736b",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 6729,
+"sprite_status": "ambiguous"
+},
+"Damiana tea": {
+"hex": "#ffb58715",
+"source": "sprite",
+"family": "food",
+"item_id": 30981,
+"sprite_status": "ok"
+},
+"Damiana water": {
+"hex": "#ffb58715",
+"source": "sprite",
+"family": "food",
+"item_id": 30979,
+"sprite_status": "ok"
+},
+"Dark crab": {
+"hex": "#ff46573b",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 11936,
+"sprite_status": "ambiguous"
+},
+"Death rune": {
+"hex": "#ffd0d0d0",
+"source": "curated",
+"family": "rune",
+"item_id": 560,
+"sprite_status": "ambiguous"
+},
+"Delphinium seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 6457,
+"sprite_status": "ok"
+},
+"Diamond": {
+"hex": "#ffe0f0ff",
+"source": "curated",
+"family": "gem",
+"item_id": 1601,
+"sprite_status": "ambiguous"
+},
+"Diamond bolt tips": {
+"hex": "#ffa89999",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9192,
+"sprite_status": "ambiguous"
+},
+"Diamond bolts": {
+"hex": "#ff465846",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9340,
+"sprite_status": "ambiguous"
+},
+"Diamond bolts (e)": {
+"hex": "#ffa7a79b",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9243,
+"sprite_status": "ambiguous"
+},
+"Diamond dragon bolts": {
+"hex": "#ff9e9e93",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 21969,
+"sprite_status": "ambiguous"
+},
+"Diamond dragon bolts (e)": {
+"hex": "#ff9e9e93",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 21946,
+"sprite_status": "ambiguous"
+},
+"Dirty arrowtips": {
+"hex": "#ff6a4725",
+"source": "sprite",
+"family": "ammo",
+"item_id": 31047,
+"sprite_status": "ok"
+},
+"Dirty blast": {
+"hex": "#ff898994",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 7497,
+"sprite_status": "ambiguous"
+},
+"Dragon arrow": {
+"hex": "#ff581914",
+"source": "sprite",
+"family": "ammo",
+"item_id": 11212,
+"sprite_status": "ok"
+},
+"Dragon arrow(p)": {
+"hex": "#ff671311",
+"source": "sprite",
+"family": "ammo",
+"item_id": 11227,
+"sprite_status": "ok"
+},
+"Dragon arrow(p+)": {
+"hex": "#ff671311",
+"source": "sprite",
+"family": "ammo",
+"item_id": 11228,
+"sprite_status": "ok"
+},
+"Dragon arrow(p++)": {
+"hex": "#ff671311",
+"source": "sprite",
+"family": "ammo",
+"item_id": 11229,
+"sprite_status": "ok"
+},
+"Dragon arrowtips": {
+"hex": "#ff979778",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 11237,
+"sprite_status": "ambiguous"
+},
+"Dragon bitter": {
+"hex": "#ffa72214",
+"source": "sprite",
+"family": "food",
+"item_id": 1911,
+"sprite_status": "ok"
+},
+"Dragon bitter(4)": {
+"hex": "#ff636b55",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 5809,
+"sprite_status": "ambiguous"
+},
+"Dragon bitter(m)": {
+"hex": "#ffa72214",
+"source": "sprite",
+"family": "food",
+"item_id": 5745,
+"sprite_status": "ok"
+},
+"Dragon bitter(m4)": {
+"hex": "#ff636b55",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 5889,
+"sprite_status": "ambiguous"
+},
+"Dragon bolts": {
+"hex": "#ff9f9f94",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 21905,
+"sprite_status": "ambiguous"
+},
+"Dragon bolts (p)": {
+"hex": "#ff9f9f93",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 21924,
+"sprite_status": "ambiguous"
+},
+"Dragon bolts (p+)": {
+"hex": "#ff9f9f93",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 21926,
+"sprite_status": "ambiguous"
+},
+"Dragon bolts (p++)": {
+"hex": "#ff9f9f93",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 21928,
+"sprite_status": "ambiguous"
+},
+"Dragon bolts (unf)": {
+"hex": "#ff683225",
+"source": "sprite",
+"family": "ammo",
+"item_id": 21930,
+"sprite_status": "ok"
+},
+"Dragon bones": {
+"hex": "#ffb5aaa9",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 536,
+"sprite_status": "ambiguous"
+},
+"Dragon cannonball": {
+"hex": "#ff72180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 31916,
+"sprite_status": "ok"
+},
+"Dragon chainshot cannonball": {
+"hex": "#ff76180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 31930,
+"sprite_status": "ok"
+},
+"Dragon dart": {
+"hex": "#ff68140a",
+"source": "sprite",
+"family": "ammo",
+"item_id": 11230,
+"sprite_status": "ok"
+},
+"Dragon dart tip": {
+"hex": "#ff575544",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 11232,
+"sprite_status": "ambiguous"
+},
+"Dragon dart(p)": {
+"hex": "#ff68140a",
+"source": "sprite",
+"family": "ammo",
+"item_id": 11231,
+"sprite_status": "ok"
+},
+"Dragon dart(p+)": {
+"hex": "#ff68140a",
+"source": "sprite",
+"family": "ammo",
+"item_id": 11233,
+"sprite_status": "ok"
+},
+"Dragon dart(p++)": {
+"hex": "#ff68140a",
+"source": "sprite",
+"family": "ammo",
+"item_id": 11234,
+"sprite_status": "ok"
+},
+"Dragon fire arrow": {
+"hex": "#ff531815",
+"source": "sprite",
+"family": "ammo",
+"item_id": 11217,
+"sprite_status": "ok"
+},
+"Dragon fire arrow (lit)": {
+"hex": "#ff531815",
+"source": "sprite",
+"family": "ammo",
+"item_id": 11222,
+"sprite_status": "ok"
+},
+"Dragon incendiary cannonball": {
+"hex": "#ff866c6a",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 31944,
+"sprite_status": "ambiguous"
+},
+"Dragon javelin": {
+"hex": "#ff4c1711",
+"source": "sprite",
+"family": "ammo",
+"item_id": 19484,
+"sprite_status": "ok"
+},
+"Dragon javelin tips": {
+"hex": "#ff989778",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 19582,
+"sprite_status": "ambiguous"
+},
+"Dragon javelin(p)": {
+"hex": "#ff4c1711",
+"source": "sprite",
+"family": "ammo",
+"item_id": 19486,
+"sprite_status": "ok"
+},
+"Dragon javelin(p+)": {
+"hex": "#ff4c1711",
+"source": "sprite",
+"family": "ammo",
+"item_id": 19488,
+"sprite_status": "ok"
+},
+"Dragon javelin(p++)": {
+"hex": "#ff4c1711",
+"source": "sprite",
+"family": "ammo",
+"item_id": 19490,
+"sprite_status": "ok"
+},
+"Dragon knife": {
+"hex": "#ff651309",
+"source": "sprite",
+"family": "ammo",
+"item_id": 22804,
+"sprite_status": "ok"
+},
+"Dragon knife(p)": {
+"hex": "#ff651309",
+"source": "sprite",
+"family": "ammo",
+"item_id": 22806,
+"sprite_status": "ok"
+},
+"Dragon knife(p+)": {
+"hex": "#ff651309",
+"source": "sprite",
+"family": "ammo",
+"item_id": 22808,
+"sprite_status": "ok"
+},
+"Dragon knife(p++)": {
+"hex": "#ff651309",
+"source": "sprite",
+"family": "ammo",
+"item_id": 22810,
+"sprite_status": "ok"
+},
+"Dragon thrownaxe": {
+"hex": "#ff661309",
+"source": "sprite",
+"family": "ammo",
+"item_id": 20849,
+"sprite_status": "ok"
+},
+"Dragonfruit pie": {
+"hex": "#ffcc5333",
+"source": "sprite",
+"family": "food",
+"item_id": 22795,
+"sprite_status": "ok"
+},
+"Dragonfruit seedling": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 22862,
+"sprite_status": "ok"
+},
+"Dragonfruit tree seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 22877,
+"sprite_status": "ok"
+},
+"Dragonstone": {
+"hex": "#ffc030a0",
+"source": "curated",
+"family": "gem",
+"item_id": 1615,
+"sprite_status": "ok"
+},
+"Dragonstone bolt tips": {
+"hex": "#ff853b98",
+"source": "sprite",
+"family": "ammo",
+"item_id": 9193,
+"sprite_status": "ok"
+},
+"Dragonstone bolts": {
+"hex": "#ffa1a195",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9341,
+"sprite_status": "ambiguous"
+},
+"Dragonstone bolts (e)": {
+"hex": "#ffbcbcb2",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9244,
+"sprite_status": "ambiguous"
+},
+"Dragonstone dragon bolts": {
+"hex": "#ff9f9f94",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 21971,
+"sprite_status": "ambiguous"
+},
+"Dragonstone dragon bolts (e)": {
+"hex": "#ff9f9f94",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 21948,
+"sprite_status": "ambiguous"
+},
+"Drake bones": {
+"hex": "#ff979678",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 22783,
+"sprite_status": "ambiguous"
+},
+"Dream log": {
+"hex": "#ff7286c9",
+"source": "sprite",
+"family": "log",
+"item_id": 9067,
+"sprite_status": "ok"
+},
+"Drunk dragon": {
+"hex": "#ff898994",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 2092,
+"sprite_status": "ambiguous"
+},
+"Dust rune": {
+"hex": "#ff9b59b6",
+"source": "curated",
+"family": "rune",
+"item_id": 4696,
+"sprite_status": "ambiguous"
+},
+"Dwarf weed": {
+"hex": "#ff044509",
+"source": "sprite",
+"family": "herb",
+"item_id": 267,
+"sprite_status": "ok"
+},
+"Dwarf weed seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5303,
+"sprite_status": "ok"
+},
+"Dwarven stout": {
+"hex": "#ff464141",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 1913,
+"sprite_status": "ambiguous"
+},
+"Dwarven stout(4)": {
+"hex": "#ff636b55",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 5777,
+"sprite_status": "ambiguous"
+},
+"Dwarven stout(m)": {
+"hex": "#ff464141",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 5747,
+"sprite_status": "ambiguous"
+},
+"Dwarven stout(m4)": {
+"hex": "#ff636b55",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 5857,
+"sprite_status": "ambiguous"
+},
+"Dwellberry seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5103,
+"sprite_status": "ambiguous"
+},
+"Earth rune": {
+"hex": "#ff8b5a2b",
+"source": "curated",
+"family": "rune",
+"item_id": 557,
+"sprite_status": "ok"
+},
+"Edible seaweed": {
+"hex": "#ff096442",
+"source": "sprite",
+"family": "food",
+"item_id": 403,
+"sprite_status": "ok"
+},
+"Egg and tomato": {
+"hex": "#ff9a7311",
+"source": "sprite",
+"family": "food",
+"item_id": 7064,
+"sprite_status": "ok"
+},
+"Egg potato": {
+"hex": "#ff725c0d",
+"source": "sprite",
+"family": "food",
+"item_id": 7056,
+"sprite_status": "ok"
+},
+"Eldritch ashes": {
+"hex": "#ffa9b4b5",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 27223,
+"sprite_status": "ambiguous"
+},
+"Elemental ore": {
+"hex": "#ff7a6245",
+"source": "sprite",
+"family": "ore",
+"item_id": 2892,
+"sprite_status": "ok"
+},
+"Emerald": {
+"hex": "#ff30c030",
+"source": "curated",
+"family": "gem",
+"item_id": 1605,
+"sprite_status": "ok"
+},
+"Emerald bolt tips": {
+"hex": "#ff63a35c",
+"source": "sprite",
+"family": "ammo",
+"item_id": 9190,
+"sprite_status": "ok"
+},
+"Emerald bolts": {
+"hex": "#ffa8a89c",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9338,
+"sprite_status": "ambiguous"
+},
+"Emerald bolts (e)": {
+"hex": "#ffa7a79b",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9241,
+"sprite_status": "ambiguous"
+},
+"Emerald dragon bolts": {
+"hex": "#ff9f9f94",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 21965,
+"sprite_status": "ambiguous"
+},
+"Emerald dragon bolts (e)": {
+"hex": "#ff9f9f94",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 21942,
+"sprite_status": "ambiguous"
+},
+"Enchanted bar": {
+"hex": "#ff626242",
+"source": "sprite-muted",
+"family": "bar",
+"item_id": 4007,
+"sprite_status": "ambiguous"
+},
+"Enhanced crystal teleport seed": {
+"hex": "#ff516661",
+"source": "sprite-muted",
+"family": "seed",
+"item_id": 23959,
+"sprite_status": "ambiguous"
+},
+"Enhanced crystal weapon seed": {
+"hex": "#ff627b7c",
+"source": "sprite-muted",
+"family": "seed",
+"item_id": 25859,
+"sprite_status": "ambiguous"
+},
+"Enriched snapdragon seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 29538,
+"sprite_status": "ok"
+},
+"Ensouled abyssal head": {
+"hex": "#ff282626",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 13507,
+"sprite_status": "ambiguous"
+},
+"Ensouled aviansie head": {
+"hex": "#ff34354d",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 13504,
+"sprite_status": "ambiguous"
+},
+"Ensouled bear head": {
+"hex": "#ff4a4534",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 13462,
+"sprite_status": "ambiguous"
+},
+"Ensouled bloodveld head": {
+"hex": "#ff85736a",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 13495,
+"sprite_status": "ambiguous"
+},
+"Ensouled chaos druid head": {
+"hex": "#ff161212",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 13471,
+"sprite_status": "ambiguous"
+},
+"Ensouled dagannoth head": {
+"hex": "#ff7b857b",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 13492,
+"sprite_status": "ambiguous"
+},
+"Ensouled demon head": {
+"hex": "#ff272719",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 13501,
+"sprite_status": "ambiguous"
+},
+"Ensouled dog head": {
+"hex": "#ff837d67",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 13468,
+"sprite_status": "ambiguous"
+},
+"Ensouled dragon head": {
+"hex": "#ff4a4735",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 13510,
+"sprite_status": "ambiguous"
+},
+"Ensouled elf head": {
+"hex": "#ff585252",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 13480,
+"sprite_status": "ambiguous"
+},
+"Ensouled giant head": {
+"hex": "#ff73661c",
+"source": "sprite",
+"family": "bones",
+"item_id": 13474,
+"sprite_status": "ok"
+},
+"Ensouled goblin head": {
+"hex": "#ff666639",
+"source": "sprite",
+"family": "bones",
+"item_id": 13447,
+"sprite_status": "ok"
+},
+"Ensouled hellhound head": {
+"hex": "#ff531a09",
+"source": "sprite",
+"family": "bones",
+"item_id": 26996,
+"sprite_status": "ok"
+},
+"Ensouled horror head": {
+"hex": "#ff545a48",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 13486,
+"sprite_status": "ambiguous"
+},
+"Ensouled imp head": {
+"hex": "#ff593735",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 13453,
+"sprite_status": "ambiguous"
+},
+"Ensouled kalphite head": {
+"hex": "#ff545852",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 13489,
+"sprite_status": "ambiguous"
+},
+"Ensouled minotaur head": {
+"hex": "#ff474738",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 13456,
+"sprite_status": "ambiguous"
+},
+"Ensouled monkey head": {
+"hex": "#ff6a6554",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 13450,
+"sprite_status": "ambiguous"
+},
+"Ensouled ogre head": {
+"hex": "#ffa6a684",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 13477,
+"sprite_status": "ambiguous"
+},
+"Ensouled scorpion head": {
+"hex": "#ff281600",
+"source": "sprite",
+"family": "bones",
+"item_id": 13459,
+"sprite_status": "ok"
+},
+"Ensouled troll head": {
+"hex": "#ff696853",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 13483,
+"sprite_status": "ambiguous"
+},
+"Ensouled tzhaar head": {
+"hex": "#ff372525",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 13498,
+"sprite_status": "ambiguous"
+},
+"Ensouled unicorn head": {
+"hex": "#ffc3bca2",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 13465,
+"sprite_status": "ambiguous"
+},
+"Ent seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 31018,
+"sprite_status": "fetch-fail"
+},
+"Fat snail meat": {
+"hex": "#ff2e1604",
+"source": "sprite",
+"family": "food",
+"item_id": 3373,
+"sprite_status": "ok"
+},
+"Fayrg bones": {
+"hex": "#ffa58614",
+"source": "sprite",
+"family": "bones",
+"item_id": 4830,
+"sprite_status": "ok"
+},
+"Field arrow": {
+"hex": "#ff462905",
+"source": "sprite",
+"family": "ammo",
+"item_id": 22228,
+"sprite_status": "ok"
+},
+"Fiendish ashes": {
+"hex": "#ff967977",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 25766,
+"sprite_status": "ambiguous"
+},
+"Fine fish offcuts": {
+"hex": "#ff517962",
+"source": "sprite",
+"family": "food",
+"item_id": 32307,
+"sprite_status": "ok"
+},
+"Fire rune": {
+"hex": "#ffff4500",
+"source": "curated",
+"family": "rune",
+"item_id": 554,
+"sprite_status": "ok"
+},
+"Fish offcuts": {
+"hex": "#ff483028",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 11334,
+"sprite_status": "ambiguous"
+},
+"Fish pie": {
+"hex": "#ff766637",
+"source": "sprite",
+"family": "food",
+"item_id": 7188,
+"sprite_status": "ok"
+},
+"Flax seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 31541,
+"sprite_status": "ok"
+},
+"Flighted ogre arrow": {
+"hex": "#ff5c5135",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 2865,
+"sprite_status": "ambiguous"
+},
+"Forester's ration": {
+"hex": "#ff2c6148",
+"source": "sprite",
+"family": "food",
+"item_id": 28157,
+"sprite_status": "ok"
+},
+"Fried mushrooms": {
+"hex": "#ffa57b13",
+"source": "sprite",
+"family": "food",
+"item_id": 7082,
+"sprite_status": "ok"
+},
+"Fried onions": {
+"hex": "#ff9a7311",
+"source": "sprite",
+"family": "food",
+"item_id": 7084,
+"sprite_status": "ok"
+},
+"Frost dragon bones": {
+"hex": "#ff394447",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 31729,
+"sprite_status": "ambiguous"
+},
+"Fruit batta": {
+"hex": "#ff75570d",
+"source": "sprite",
+"family": "food",
+"item_id": 2277,
+"sprite_status": "ok"
+},
+"Fruit blast": {
+"hex": "#ff898994",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 2084,
+"sprite_status": "ambiguous"
+},
+"Funky shaped log": {
+"hex": "#ff59463b",
+"source": "sprite-muted",
+"family": "log",
+"item_id": 28138,
+"sprite_status": "ambiguous"
+},
+"Garden pie": {
+"hex": "#ff6b6125",
+"source": "sprite",
+"family": "food",
+"item_id": 7178,
+"sprite_status": "ok"
+},
+"Giant bones": {
+"hex": "#ffb6abaa",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 30898,
+"sprite_status": "ambiguous"
+},
+"Giant carp": {
+"hex": "#ffab67b6",
+"source": "sprite",
+"family": "food",
+"item_id": 337,
+"sprite_status": "ok"
+},
+"Giant krill": {
+"hex": "#ff985436",
+"source": "sprite",
+"family": "food",
+"item_id": 32312,
+"sprite_status": "ok"
+},
+"Giral bat (2)": {
+"hex": "#ff574a45",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 20875,
+"sprite_status": "ambiguous"
+},
+"Gold bar": {
+"hex": "#ffd8b01a",
+"source": "curated",
+"family": "bar",
+"item_id": 2357,
+"sprite_status": "ok"
+},
+"Gold ore": {
+"hex": "#ffd8b01a",
+"source": "curated",
+"family": "ore",
+"item_id": 444,
+"sprite_status": "ok"
+},
+"Golovanova seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 13423,
+"sprite_status": "ambiguous"
+},
+"Golpar": {
+"hex": "#ff322a38",
+"source": "sprite-muted",
+"family": "herb",
+"item_id": 20905,
+"sprite_status": "ambiguous"
+},
+"Golpar seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 20906,
+"sprite_status": "ok"
+},
+"Gorgeous orange lily seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 27038,
+"sprite_status": "ok"
+},
+"Gorilla bones": {
+"hex": "#ffb6abaa",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 3181,
+"sprite_status": "ambiguous"
+},
+"Granite cannonball": {
+"hex": "#ff988979",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 21728,
+"sprite_status": "ambiguous"
+},
+"Grape seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 13657,
+"sprite_status": "ok"
+},
+"Green logs": {
+"hex": "#ff65642d",
+"source": "sprite",
+"family": "log",
+"item_id": 7405,
+"sprite_status": "ok"
+},
+"Greenman's ale": {
+"hex": "#ffb78d2e",
+"source": "sprite",
+"family": "food",
+"item_id": 1909,
+"sprite_status": "ok"
+},
+"Greenman's ale(m)": {
+"hex": "#ffa27911",
+"source": "sprite",
+"family": "food",
+"item_id": 5743,
+"sprite_status": "ok"
+},
+"Greenmans ale(4)": {
+"hex": "#ff636b55",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 5793,
+"sprite_status": "ambiguous"
+},
+"Greenmans ale(m4)": {
+"hex": "#ff636b55",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 5873,
+"sprite_status": "ambiguous"
+},
+"Grimy ardrigal": {
+"hex": "#ff2e8b57",
+"source": "curated",
+"family": "herb",
+"item_id": 1527,
+"sprite_status": "ok"
+},
+"Grimy avantoe": {
+"hex": "#ff2e8b57",
+"source": "curated",
+"family": "herb",
+"item_id": 211,
+"sprite_status": "ok"
+},
+"Grimy buchu leaf": {
+"hex": "#ff2e8b57",
+"source": "curated",
+"family": "herb",
+"item_id": 20907,
+"sprite_status": "ambiguous"
+},
+"Grimy cadantine": {
+"hex": "#ff2e8b57",
+"source": "curated",
+"family": "herb",
+"item_id": 215,
+"sprite_status": "ok"
+},
+"Grimy dwarf weed": {
+"hex": "#ff2e8b57",
+"source": "curated",
+"family": "herb",
+"item_id": 217,
+"sprite_status": "ok"
+},
+"Grimy golpar": {
+"hex": "#ff2e8b57",
+"source": "curated",
+"family": "herb",
+"item_id": 20904,
+"sprite_status": "ambiguous"
+},
+"Grimy guam leaf": {
+"hex": "#ff2e8b57",
+"source": "curated",
+"family": "herb",
+"item_id": 199,
+"sprite_status": "ok"
+},
+"Grimy harralander": {
+"hex": "#ff2e8b57",
+"source": "curated",
+"family": "herb",
+"item_id": 205,
+"sprite_status": "ok"
+},
+"Grimy huasca": {
+"hex": "#ff2e8b57",
+"source": "curated",
+"family": "herb",
+"item_id": 30094,
+"sprite_status": "ambiguous"
+},
+"Grimy irit leaf": {
+"hex": "#ff2e8b57",
+"source": "curated",
+"family": "herb",
+"item_id": 209,
+"sprite_status": "ok"
+},
+"Grimy kwuarm": {
+"hex": "#ff2e8b57",
+"source": "curated",
+"family": "herb",
+"item_id": 213,
+"sprite_status": "ok"
+},
+"Grimy lantadyme": {
+"hex": "#ff2e8b57",
+"source": "curated",
+"family": "herb",
+"item_id": 2485,
+"sprite_status": "ok"
+},
+"Grimy marrentill": {
+"hex": "#ff2e8b57",
+"source": "curated",
+"family": "herb",
+"item_id": 201,
+"sprite_status": "ok"
+},
+"Grimy note": {
+"hex": "#ff2e8b57",
+"source": "curated",
+"family": "herb",
+"item_id": 29558,
+"sprite_status": "ambiguous"
+},
+"Grimy noxifer": {
+"hex": "#ff2e8b57",
+"source": "curated",
+"family": "herb",
+"item_id": 20901,
+"sprite_status": "ambiguous"
+},
+"Grimy ranarr weed": {
+"hex": "#ff2e8b57",
+"source": "curated",
+"family": "herb",
+"item_id": 207,
+"sprite_status": "ok"
+},
+"Grimy rogue's purse": {
+"hex": "#ff2e8b57",
+"source": "curated",
+"family": "herb",
+"item_id": 1533,
+"sprite_status": "ok"
+},
+"Grimy sito foil": {
+"hex": "#ff2e8b57",
+"source": "curated",
+"family": "herb",
+"item_id": 1529,
+"sprite_status": "ok"
+},
+"Grimy snake weed": {
+"hex": "#ff2e8b57",
+"source": "curated",
+"family": "herb",
+"item_id": 1525,
+"sprite_status": "ok"
+},
+"Grimy snapdragon": {
+"hex": "#ff2e8b57",
+"source": "curated",
+"family": "herb",
+"item_id": 3051,
+"sprite_status": "ok"
+},
+"Grimy tarromin": {
+"hex": "#ff2e8b57",
+"source": "curated",
+"family": "herb",
+"item_id": 203,
+"sprite_status": "ok"
+},
+"Grimy toadflax": {
+"hex": "#ff2e8b57",
+"source": "curated",
+"family": "herb",
+"item_id": 3049,
+"sprite_status": "ok"
+},
+"Grimy torstol": {
+"hex": "#ff2e8b57",
+"source": "curated",
+"family": "herb",
+"item_id": 219,
+"sprite_status": "ok"
+},
+"Grimy volencia moss": {
+"hex": "#ff2e8b57",
+"source": "curated",
+"family": "herb",
+"item_id": 1531,
+"sprite_status": "ok"
+},
+"Ground ashes": {
+"hex": "#ffdad5d5",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 8865,
+"sprite_status": "ambiguous"
+},
+"Ground astral rune": {
+"hex": "#ff988345",
+"source": "sprite",
+"family": "rune",
+"item_id": 11155,
+"sprite_status": "ok"
+},
+"Ground bat bones": {
+"hex": "#ffa69a99",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 2391,
+"sprite_status": "ambiguous"
+},
+"Ground seaweed": {
+"hex": "#ff0a6845",
+"source": "sprite",
+"family": "food",
+"item_id": 6683,
+"sprite_status": "ok"
+},
+"Guam leaf": {
+"hex": "#ff054609",
+"source": "sprite",
+"family": "herb",
+"item_id": 249,
+"sprite_status": "ok"
+},
+"Guam seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5291,
+"sprite_status": "ok"
+},
+"Guanic bat (0)": {
+"hex": "#ff69513a",
+"source": "sprite",
+"family": "food",
+"item_id": 20871,
+"sprite_status": "ok"
+},
+"Guardian essence": {
+"hex": "#ff7d7da0",
+"source": "curated",
+"family": "essence",
+"item_id": 26879,
+"sprite_status": "ambiguous"
+},
+"Guppy": {
+"hex": "#ff5a7986",
+"source": "sprite",
+"family": "food",
+"item_id": 25654,
+"sprite_status": "ok"
+},
+"Haddock": {
+"hex": "#ff557897",
+"source": "sprite",
+"family": "food",
+"item_id": 32320,
+"sprite_status": "ok"
+},
+"Half baked batta": {
+"hex": "#ff886c30",
+"source": "sprite",
+"family": "food",
+"item_id": 2249,
+"sprite_status": "ok"
+},
+"Half baked bowl": {
+"hex": "#ff9a7311",
+"source": "sprite",
+"family": "food",
+"item_id": 2177,
+"sprite_status": "ok"
+},
+"Half baked crunchy": {
+"hex": "#ff756d6c",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 2201,
+"sprite_status": "ambiguous"
+},
+"Half made batta": {
+"hex": "#ff886c30",
+"source": "sprite-fixup",
+"family": "food",
+"item_id": 9478,
+"sprite_status": "fetch-fail"
+},
+"Half made bowl": {
+"hex": "#ff9a7311",
+"source": "sprite-fixup",
+"family": "food",
+"item_id": 9558,
+"sprite_status": "fetch-fail"
+},
+"Half made crunchy": {
+"hex": "#ff756d6c",
+"source": "sprite-fixup",
+"family": "food",
+"item_id": 9577,
+"sprite_status": "fetch-fail"
+},
+"Halibut": {
+"hex": "#ff787444",
+"source": "sprite",
+"family": "food",
+"item_id": 32336,
+"sprite_status": "ok"
+},
+"Hammerstone seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5307,
+"sprite_status": "ok"
+},
+"Harpoonfish": {
+"hex": "#ff747945",
+"source": "sprite",
+"family": "food",
+"item_id": 25565,
+"sprite_status": "ok"
+},
+"Harralander": {
+"hex": "#ff476609",
+"source": "sprite",
+"family": "herb",
+"item_id": 255,
+"sprite_status": "ok"
+},
+"Harralander seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5294,
+"sprite_status": "ok"
+},
+"Headless arrow": {
+"hex": "#ff553308",
+"source": "sprite",
+"family": "ammo",
+"item_id": 53,
+"sprite_status": "ok"
+},
+"Headless atlatl dart": {
+"hex": "#ff9d7827",
+"source": "sprite",
+"family": "ammo",
+"item_id": 31010,
+"sprite_status": "ok"
+},
+"Hemp seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 31543,
+"sprite_status": "ambiguous"
+},
+"Herring": {
+"hex": "#ffa78985",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 347,
+"sprite_status": "ambiguous"
+},
+"Hespori seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 22875,
+"sprite_status": "ambiguous"
+},
+"Huasca": {
+"hex": "#ff55394b",
+"source": "sprite-muted",
+"family": "herb",
+"item_id": 30097,
+"sprite_status": "ambiguous"
+},
+"Huasca seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 30088,
+"sprite_status": "ok"
+},
+"Human bones": {
+"hex": "#ff948a89",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 12839,
+"sprite_status": "ambiguous"
+},
+"Hydra bones": {
+"hex": "#ff585846",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 22786,
+"sprite_status": "ambiguous"
+},
+"Iasor seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 22883,
+"sprite_status": "ok"
+},
+"Iban's ashes": {
+"hex": "#ff494444",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 1502,
+"sprite_status": "ambiguous"
+},
+"Ice arrows": {
+"hex": "#ff4a80a0",
+"source": "sprite",
+"family": "ammo",
+"item_id": 78,
+"sprite_status": "ok"
+},
+"Incomplete pizza": {
+"hex": "#ff8b1d11",
+"source": "sprite",
+"family": "food",
+"item_id": 2285,
+"sprite_status": "ok"
+},
+"Infernal ashes": {
+"hex": "#ff351918",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 25778,
+"sprite_status": "ambiguous"
+},
+"Infernal harpoon": {
+"hex": "#ff561209",
+"source": "sprite",
+"family": "food",
+"item_id": 21031,
+"sprite_status": "ok"
+},
+"Irit leaf": {
+"hex": "#ff395526",
+"source": "sprite",
+"family": "herb",
+"item_id": 259,
+"sprite_status": "ok"
+},
+"Irit seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5297,
+"sprite_status": "ok"
+},
+"Iron arrow": {
+"hex": "#ff543208",
+"source": "sprite",
+"family": "ammo",
+"item_id": 884,
+"sprite_status": "ok"
+},
+"Iron arrow(p)": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 885,
+"sprite_status": "ok"
+},
+"Iron arrow(p+)": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5617,
+"sprite_status": "ok"
+},
+"Iron arrow(p++)": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5623,
+"sprite_status": "ok"
+},
+"Iron arrowtips": {
+"hex": "#ff494443",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 40,
+"sprite_status": "ambiguous"
+},
+"Iron bar": {
+"hex": "#ff6b6b6b",
+"source": "curated",
+"family": "bar",
+"item_id": 2351,
+"sprite_status": "ambiguous"
+},
+"Iron bolts": {
+"hex": "#ffa0a096",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9140,
+"sprite_status": "ambiguous"
+},
+"Iron bolts (p)": {
+"hex": "#ff9f9f93",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9287,
+"sprite_status": "ambiguous"
+},
+"Iron bolts (p+)": {
+"hex": "#ff9f9f93",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9294,
+"sprite_status": "ambiguous"
+},
+"Iron bolts (p++)": {
+"hex": "#ff9f9f93",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9301,
+"sprite_status": "ambiguous"
+},
+"Iron bolts (unf)": {
+"hex": "#ff5a5353",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9377,
+"sprite_status": "ambiguous"
+},
+"Iron cannonball": {
+"hex": "#ff736c6b",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 31908,
+"sprite_status": "ambiguous"
+},
+"Iron chainshot cannonball": {
+"hex": "#ff6b6363",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 31920,
+"sprite_status": "ambiguous"
+},
+"Iron dart": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 807,
+"sprite_status": "ok"
+},
+"Iron dart (p)": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 813,
+"sprite_status": "ok"
+},
+"Iron dart tip": {
+"hex": "#ff494343",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 820,
+"sprite_status": "ambiguous"
+},
+"Iron dart(p+)": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5629,
+"sprite_status": "ok"
+},
+"Iron dart(p++)": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5636,
+"sprite_status": "ok"
+},
+"Iron fire arrow": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 2532,
+"sprite_status": "ok"
+},
+"Iron fire arrow (lit)": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 2533,
+"sprite_status": "ok"
+},
+"Iron incendiary cannonball": {
+"hex": "#ff866c6a",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 31934,
+"sprite_status": "ambiguous"
+},
+"Iron javelin": {
+"hex": "#ff614a2c",
+"source": "sprite",
+"family": "ammo",
+"item_id": 826,
+"sprite_status": "ok"
+},
+"Iron javelin tips": {
+"hex": "#ff494443",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 19572,
+"sprite_status": "ambiguous"
+},
+"Iron javelin(p)": {
+"hex": "#ff614a2c",
+"source": "sprite",
+"family": "ammo",
+"item_id": 832,
+"sprite_status": "ok"
+},
+"Iron javelin(p+)": {
+"hex": "#ff614a2c",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5643,
+"sprite_status": "ok"
+},
+"Iron javelin(p++)": {
+"hex": "#ff614a2c",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5649,
+"sprite_status": "ok"
+},
+"Iron knife": {
+"hex": "#ff4b4645",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 863,
+"sprite_status": "ambiguous"
+},
+"Iron knife(p)": {
+"hex": "#ff736b6b",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 871,
+"sprite_status": "ambiguous"
+},
+"Iron knife(p+)": {
+"hex": "#ff736b6b",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 5655,
+"sprite_status": "ambiguous"
+},
+"Iron knife(p++)": {
+"hex": "#ff736b6b",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 5662,
+"sprite_status": "ambiguous"
+},
+"Iron ore": {
+"hex": "#ff7a6245",
+"source": "sprite",
+"family": "ore",
+"item_id": 440,
+"sprite_status": "ok"
+},
+"Iron thrownaxe": {
+"hex": "#ff3c3737",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 801,
+"sprite_status": "ambiguous"
+},
+"Ironwood logs": {
+"hex": "#ff866c6a",
+"source": "sprite-muted",
+"family": "log",
+"item_id": 32907,
+"sprite_status": "ambiguous"
+},
+"Ironwood pyre logs": {
+"hex": "#ff846c59",
+"source": "sprite",
+"family": "log",
+"item_id": 31386,
+"sprite_status": "ok"
+},
+"Ironwood seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 31549,
+"sprite_status": "ok"
+},
+"Ironwood seedling": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 31492,
+"sprite_status": "ok"
+},
+"Jade": {
+"hex": "#ff8fd6c0",
+"source": "curated",
+"family": "gem",
+"item_id": 1611,
+"sprite_status": "ambiguous"
+},
+"Jade bolt tips": {
+"hex": "#ff77b843",
+"source": "sprite",
+"family": "ammo",
+"item_id": 9187,
+"sprite_status": "ok"
+},
+"Jade bolts": {
+"hex": "#ffa0a095",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9335,
+"sprite_status": "ambiguous"
+},
+"Jade bolts (e)": {
+"hex": "#ffa8a89a",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9237,
+"sprite_status": "ambiguous"
+},
+"Jade dragon bolts": {
+"hex": "#ff9f9f94",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 21957,
+"sprite_status": "ambiguous"
+},
+"Jade dragon bolts (e)": {
+"hex": "#ff9f9f94",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 21934,
+"sprite_status": "ambiguous"
+},
+"Jangerberries": {
+"hex": "#ff004209",
+"source": "sprite",
+"family": "food",
+"item_id": 247,
+"sprite_status": "ok"
+},
+"Jangerberry seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5104,
+"sprite_status": "ok"
+},
+"Jatoba logs": {
+"hex": "#ffaa9687",
+"source": "sprite-muted",
+"family": "log",
+"item_id": 32902,
+"sprite_status": "ambiguous"
+},
+"Jogre bones": {
+"hex": "#ffb6abaa",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 3125,
+"sprite_status": "ambiguous"
+},
+"Jug of bad wine": {
+"hex": "#ffa69a99",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 1991,
+"sprite_status": "ambiguous"
+},
+"Jug of wine": {
+"hex": "#ffa69a99",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 1993,
+"sprite_status": "ambiguous"
+},
+"Jumbo squid": {
+"hex": "#ff6b3431",
+"source": "sprite",
+"family": "food",
+"item_id": 31564,
+"sprite_status": "ok"
+},
+"Juniper logs": {
+"hex": "#ff978566",
+"source": "sprite",
+"family": "log",
+"item_id": 13355,
+"sprite_status": "ok"
+},
+"Jute seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5306,
+"sprite_status": "ok"
+},
+"Karambwanji": {
+"hex": "#ff75746c",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 21394,
+"sprite_status": "ambiguous"
+},
+"Karambwanji paste": {
+"hex": "#ff496846",
+"source": "sprite-fixup",
+"family": "food",
+"item_id": 3155,
+"sprite_status": "fetch-fail"
+},
+"Kebab": {
+"hex": "#ff0d8514",
+"source": "sprite",
+"family": "food",
+"item_id": 1971,
+"sprite_status": "ok"
+},
+"Kebab mix": {
+"hex": "#ff997311",
+"source": "sprite",
+"family": "food",
+"item_id": 1881,
+"sprite_status": "ok"
+},
+"Kebbit bolts": {
+"hex": "#ff544409",
+"source": "sprite",
+"family": "ammo",
+"item_id": 10158,
+"sprite_status": "ok"
+},
+"Kelda seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 6112,
+"sprite_status": "ambiguous"
+},
+"Krandorian seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5310,
+"sprite_status": "ok"
+},
+"Kronos seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 22885,
+"sprite_status": "ok"
+},
+"Kryket bat (4)": {
+"hex": "#ff3a3735",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 20879,
+"sprite_status": "ambiguous"
+},
+"Kwuarm": {
+"hex": "#ff3c4504",
+"source": "sprite",
+"family": "herb",
+"item_id": 263,
+"sprite_status": "ok"
+},
+"Kwuarm seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5299,
+"sprite_status": "ok"
+},
+"Kyren fish (6)": {
+"hex": "#ff482220",
+"source": "sprite",
+"family": "food",
+"item_id": 20868,
+"sprite_status": "ok"
+},
+"Lantadyme": {
+"hex": "#ff054539",
+"source": "sprite",
+"family": "herb",
+"item_id": 2481,
+"sprite_status": "ok"
+},
+"Lantadyme seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5302,
+"sprite_status": "ok"
+},
+"Large zombie monkey bones": {
+"hex": "#ff686060",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 3186,
+"sprite_status": "ambiguous"
+},
+"Lava dragon bones": {
+"hex": "#ffbdb3b3",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 11943,
+"sprite_status": "ambiguous"
+},
+"Lava eel": {
+"hex": "#ff76580d",
+"source": "sprite",
+"family": "food",
+"item_id": 2149,
+"sprite_status": "ok"
+},
+"Lava rune": {
+"hex": "#ff9b59b6",
+"source": "curated",
+"family": "rune",
+"item_id": 4699,
+"sprite_status": "ambiguous"
+},
+"Law rune": {
+"hex": "#ffd0c060",
+"source": "curated",
+"family": "rune",
+"item_id": 563,
+"sprite_status": "ok"
+},
+"Lead bar": {
+"hex": "#ff3d454d",
+"source": "sprite-muted",
+"family": "bar",
+"item_id": 32889,
+"sprite_status": "ambiguous"
+},
+"Lead ore": {
+"hex": "#ff555b64",
+"source": "sprite-muted",
+"family": "ore",
+"item_id": 31716,
+"sprite_status": "ambiguous"
+},
+"Lean snail meat": {
+"hex": "#ff75340d",
+"source": "sprite",
+"family": "food",
+"item_id": 3371,
+"sprite_status": "ok"
+},
+"Leckish fish (2)": {
+"hex": "#ff393232",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 20860,
+"sprite_status": "ambiguous"
+},
+"Legendary red rose seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 27037,
+"sprite_status": "ok"
+},
+"Limpwurt seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5100,
+"sprite_status": "ok"
+},
+"Lobster": {
+"hex": "#ffb96216",
+"source": "sprite",
+"family": "food",
+"item_id": 379,
+"sprite_status": "ok"
+},
+"Logavano seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 13425,
+"sprite_status": "ok"
+},
+"Logs": {
+"hex": "#ff7d5a32",
+"source": "curated",
+"family": "log",
+"item_id": 1511,
+"sprite_status": "ok"
+},
+"Long kebbit bolts": {
+"hex": "#ff544409",
+"source": "sprite",
+"family": "ammo",
+"item_id": 10159,
+"sprite_status": "ok"
+},
+"Lovakite bar": {
+"hex": "#ff511109",
+"source": "sprite",
+"family": "bar",
+"item_id": 13354,
+"sprite_status": "ok"
+},
+"Lovakite ore": {
+"hex": "#ff7a6245",
+"source": "sprite",
+"family": "ore",
+"item_id": 13356,
+"sprite_status": "ok"
+},
+"Lunar bar": {
+"hex": "#ff5d655d",
+"source": "sprite-muted",
+"family": "bar",
+"item_id": 9077,
+"sprite_status": "ambiguous"
+},
+"Lunar ore": {
+"hex": "#ff676664",
+"source": "sprite-muted",
+"family": "ore",
+"item_id": 9076,
+"sprite_status": "ambiguous"
+},
+"Mackerel": {
+"hex": "#ffa9973c",
+"source": "sprite",
+"family": "food",
+"item_id": 355,
+"sprite_status": "ok"
+},
+"Magic logs": {
+"hex": "#ff5090d0",
+"source": "curated",
+"family": "log",
+"item_id": 1513,
+"sprite_status": "ok"
+},
+"Magic pyre logs": {
+"hex": "#ff797151",
+"source": "sprite",
+"family": "log",
+"item_id": 3448,
+"sprite_status": "ok"
+},
+"Magic seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5316,
+"sprite_status": "ambiguous"
+},
+"Magic seedling": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5362,
+"sprite_status": "ok"
+},
+"Mahogany logs": {
+"hex": "#ff7a3b25",
+"source": "curated",
+"family": "log",
+"item_id": 6332,
+"sprite_status": "ok"
+},
+"Mahogany plank": {
+"hex": "#ffe0a878",
+"source": "curated",
+"family": "plank",
+"item_id": 8782,
+"sprite_status": "ambiguous"
+},
+"Mahogany pyre logs": {
+"hex": "#ffa6884c",
+"source": "sprite",
+"family": "log",
+"item_id": 6213,
+"sprite_status": "ok"
+},
+"Mahogany seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 21488,
+"sprite_status": "ambiguous"
+},
+"Mahogany seedling": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 21471,
+"sprite_status": "ok"
+},
+"Malicious ashes": {
+"hex": "#ff7a5452",
+"source": "sprite",
+"family": "bones",
+"item_id": 25772,
+"sprite_status": "ok"
+},
+"Mangled bones": {
+"hex": "#ff7b7b72",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 11337,
+"sprite_status": "ambiguous"
+},
+"Manta ray": {
+"hex": "#ff6b523b",
+"source": "sprite",
+"family": "food",
+"item_id": 391,
+"sprite_status": "ok"
+},
+"Maple logs": {
+"hex": "#ffc07840",
+"source": "curated",
+"family": "log",
+"item_id": 1517,
+"sprite_status": "ok"
+},
+"Maple pyre logs": {
+"hex": "#ff654309",
+"source": "sprite",
+"family": "log",
+"item_id": 3444,
+"sprite_status": "ok"
+},
+"Maple seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5314,
+"sprite_status": "ok"
+},
+"Maple seedling": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5360,
+"sprite_status": "ok"
+},
+"Marigold seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5096,
+"sprite_status": "ok"
+},
+"Marinated j' bones": {
+"hex": "#ff559856",
+"source": "sprite-fixup",
+"family": "bones",
+"item_id": 3130,
+"sprite_status": "fetch-fail"
+},
+"Marlin": {
+"hex": "#ff2e6381",
+"source": "sprite",
+"family": "food",
+"item_id": 32352,
+"sprite_status": "ok"
+},
+"Marrentill": {
+"hex": "#ff09650d",
+"source": "sprite",
+"family": "herb",
+"item_id": 251,
+"sprite_status": "ok"
+},
+"Marrentill seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5292,
+"sprite_status": "ok"
+},
+"Mature cider": {
+"hex": "#ffa6a412",
+"source": "sprite",
+"family": "food",
+"item_id": 5765,
+"sprite_status": "ok"
+},
+"Mature wmb": {
+"hex": "#ff9899bc",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 5741,
+"sprite_status": "ambiguous"
+},
+"Meat pie": {
+"hex": "#ff937143",
+"source": "sprite",
+"family": "food",
+"item_id": 2327,
+"sprite_status": "ok"
+},
+"Meat pizza": {
+"hex": "#ff8b1d11",
+"source": "sprite",
+"family": "food",
+"item_id": 2293,
+"sprite_status": "ok"
+},
+"Medium ninja monkey bones": {
+"hex": "#ff948a89",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 3180,
+"sprite_status": "ambiguous"
+},
+"Metal bar": {
+"hex": "#ff6b6c74",
+"source": "sprite-muted",
+"family": "bar",
+"item_id": 10876,
+"sprite_status": "ambiguous"
+},
+"Mind bomb(4)": {
+"hex": "#ff636b55",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 5801,
+"sprite_status": "ambiguous"
+},
+"Mind bomb(m4)": {
+"hex": "#ff636b55",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 5881,
+"sprite_status": "ambiguous"
+},
+"Mind rune": {
+"hex": "#ffd05050",
+"source": "curated",
+"family": "rune",
+"item_id": 558,
+"sprite_status": "ambiguous"
+},
+"Mist rune": {
+"hex": "#ff9b59b6",
+"source": "curated",
+"family": "rune",
+"item_id": 4695,
+"sprite_status": "ambiguous"
+},
+"Mithril arrow": {
+"hex": "#ff543208",
+"source": "sprite",
+"family": "ammo",
+"item_id": 888,
+"sprite_status": "ok"
+},
+"Mithril arrow(p)": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 889,
+"sprite_status": "ok"
+},
+"Mithril arrow(p+)": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5619,
+"sprite_status": "ok"
+},
+"Mithril arrow(p++)": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5625,
+"sprite_status": "ok"
+},
+"Mithril arrowtips": {
+"hex": "#ff383854",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 42,
+"sprite_status": "ambiguous"
+},
+"Mithril bar": {
+"hex": "#ff4169e1",
+"source": "curated",
+"family": "bar",
+"item_id": 2359,
+"sprite_status": "ambiguous"
+},
+"Mithril bolts": {
+"hex": "#ff464658",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9142,
+"sprite_status": "ambiguous"
+},
+"Mithril bolts (p)": {
+"hex": "#ff9f9f93",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9289,
+"sprite_status": "ambiguous"
+},
+"Mithril bolts (p+)": {
+"hex": "#ff9f9f93",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9296,
+"sprite_status": "ambiguous"
+},
+"Mithril bolts (p++)": {
+"hex": "#ff9f9f93",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9303,
+"sprite_status": "ambiguous"
+},
+"Mithril bolts (unf)": {
+"hex": "#ff48485a",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9379,
+"sprite_status": "ambiguous"
+},
+"Mithril cannonball": {
+"hex": "#ff595a84",
+"source": "sprite",
+"family": "ammo",
+"item_id": 31910,
+"sprite_status": "ok"
+},
+"Mithril chainshot cannonball": {
+"hex": "#ff5a5a85",
+"source": "sprite",
+"family": "ammo",
+"item_id": 31924,
+"sprite_status": "ok"
+},
+"Mithril dart": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 809,
+"sprite_status": "ok"
+},
+"Mithril dart tip": {
+"hex": "#ff3a3a56",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 822,
+"sprite_status": "ambiguous"
+},
+"Mithril dart(p)": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 815,
+"sprite_status": "ok"
+},
+"Mithril dart(p+)": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5632,
+"sprite_status": "ok"
+},
+"Mithril dart(p++)": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5639,
+"sprite_status": "ok"
+},
+"Mithril fire arrow": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 2536,
+"sprite_status": "ok"
+},
+"Mithril fire arrow (lit)": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 2537,
+"sprite_status": "ok"
+},
+"Mithril incendiary cannonball": {
+"hex": "#ff866c6a",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 31938,
+"sprite_status": "ambiguous"
+},
+"Mithril javelin": {
+"hex": "#ff614a2c",
+"source": "sprite",
+"family": "ammo",
+"item_id": 828,
+"sprite_status": "ok"
+},
+"Mithril javelin tips": {
+"hex": "#ff3a3b57",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 19576,
+"sprite_status": "ambiguous"
+},
+"Mithril javelin(p)": {
+"hex": "#ff614a2c",
+"source": "sprite",
+"family": "ammo",
+"item_id": 834,
+"sprite_status": "ok"
+},
+"Mithril javelin(p+)": {
+"hex": "#ff614a2c",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5645,
+"sprite_status": "ok"
+},
+"Mithril javelin(p++)": {
+"hex": "#ff614a2c",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5651,
+"sprite_status": "ok"
+},
+"Mithril knife": {
+"hex": "#ff736b6b",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 866,
+"sprite_status": "ambiguous"
+},
+"Mithril knife(p)": {
+"hex": "#ff736b6b",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 873,
+"sprite_status": "ambiguous"
+},
+"Mithril knife(p+)": {
+"hex": "#ff736b6b",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 5657,
+"sprite_status": "ambiguous"
+},
+"Mithril knife(p++)": {
+"hex": "#ff736b6b",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 5664,
+"sprite_status": "ambiguous"
+},
+"Mithril ore": {
+"hex": "#ff4169e1",
+"source": "curated",
+"family": "ore",
+"item_id": 447,
+"sprite_status": "ok"
+},
+"Mithril thrownaxe": {
+"hex": "#ff3a3a56",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 803,
+"sprite_status": "ambiguous"
+},
+"Mixed blast": {
+"hex": "#ffa69b9a",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 9568,
+"sprite_status": "ambiguous"
+},
+"Mixed blizzard": {
+"hex": "#ffa69b9a",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 9566,
+"sprite_status": "ambiguous"
+},
+"Mixed dragon": {
+"hex": "#ffa69b9a",
+"source": "sprite-fixup",
+"family": "food",
+"item_id": 9574,
+"sprite_status": "fetch-fail"
+},
+"Mixed punch": {
+"hex": "#ffa69b9a",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 9569,
+"sprite_status": "ambiguous"
+},
+"Mixed saturday": {
+"hex": "#ffa69b9a",
+"source": "sprite-fixup",
+"family": "food",
+"item_id": 9571,
+"sprite_status": "fetch-fail"
+},
+"Mixed sgg": {
+"hex": "#ffa69b9a",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 9567,
+"sprite_status": "ambiguous"
+},
+"Mixed special": {
+"hex": "#ffa69b9a",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 9570,
+"sprite_status": "ambiguous"
+},
+"Monkey bar": {
+"hex": "#ff633c23",
+"source": "sprite",
+"family": "bar",
+"item_id": 4014,
+"sprite_status": "ok"
+},
+"Monkey bones": {
+"hex": "#ff948a89",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 3183,
+"sprite_status": "ambiguous"
+},
+"Monkfish": {
+"hex": "#ff675645",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 7946,
+"sprite_status": "ambiguous"
+},
+"Moonlight antler bolts": {
+"hex": "#ff473905",
+"source": "sprite",
+"family": "ammo",
+"item_id": 28878,
+"sprite_status": "ok"
+},
+"Moonlight mead": {
+"hex": "#ffb4b3a8",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 2955,
+"sprite_status": "ambiguous"
+},
+"Moonlight mead(4)": {
+"hex": "#ff636b55",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 5817,
+"sprite_status": "ambiguous"
+},
+"Moonlight mead(m)": {
+"hex": "#ffb4b4a8",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 5749,
+"sprite_status": "ambiguous"
+},
+"Moonlight mead(m4)": {
+"hex": "#ff636b55",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 5897,
+"sprite_status": "ambiguous"
+},
+"Morrigan's javelin": {
+"hex": "#ff4a4a45",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 22636,
+"sprite_status": "ambiguous"
+},
+"Mud pie": {
+"hex": "#ff62542c",
+"source": "sprite",
+"family": "food",
+"item_id": 7170,
+"sprite_status": "ok"
+},
+"Mud rune": {
+"hex": "#ff9b59b6",
+"source": "curated",
+"family": "rune",
+"item_id": 4698,
+"sprite_status": "ambiguous"
+},
+"Murng bat (5)": {
+"hex": "#ff313737",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 20881,
+"sprite_status": "ambiguous"
+},
+"Mushroom & onion": {
+"hex": "#ffac8115",
+"source": "sprite",
+"family": "food",
+"item_id": 7066,
+"sprite_status": "ok"
+},
+"Mushroom pie": {
+"hex": "#ffba8769",
+"source": "sprite",
+"family": "food",
+"item_id": 21690,
+"sprite_status": "ok"
+},
+"Mushroom potato": {
+"hex": "#ff725c0d",
+"source": "sprite",
+"family": "food",
+"item_id": 7058,
+"sprite_status": "ok"
+},
+"Mycil fish (4)": {
+"hex": "#ff003822",
+"source": "sprite",
+"family": "food",
+"item_id": 20864,
+"sprite_status": "ok"
+},
+"Nasturtium seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5098,
+"sprite_status": "ok"
+},
+"Nature rune": {
+"hex": "#ff2e8b57",
+"source": "curated",
+"family": "rune",
+"item_id": 561,
+"sprite_status": "ok"
+},
+"Nettle tea": {
+"hex": "#ff3a563a",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 4239,
+"sprite_status": "ambiguous"
+},
+"Nettle-water": {
+"hex": "#ffb58715",
+"source": "sprite",
+"family": "food",
+"item_id": 4237,
+"sprite_status": "ok"
+},
+"Nickel ore": {
+"hex": "#ff669889",
+"source": "sprite",
+"family": "ore",
+"item_id": 31719,
+"sprite_status": "ok"
+},
+"Noxifer": {
+"hex": "#ff322a38",
+"source": "sprite-muted",
+"family": "herb",
+"item_id": 20902,
+"sprite_status": "ambiguous"
+},
+"Noxifer seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 20903,
+"sprite_status": "ok"
+},
+"Oak logs": {
+"hex": "#ff84653b",
+"source": "sprite",
+"family": "log",
+"item_id": 1521,
+"sprite_status": "ok"
+},
+"Oak plank": {
+"hex": "#ffe0a878",
+"source": "curated",
+"family": "plank",
+"item_id": 8778,
+"sprite_status": "ok"
+},
+"Oak pyre logs": {
+"hex": "#ff664719",
+"source": "sprite",
+"family": "log",
+"item_id": 3440,
+"sprite_status": "ok"
+},
+"Oak seedling": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5358,
+"sprite_status": "ok"
+},
+"Odd bird seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 10178,
+"sprite_status": "ok"
+},
+"Ogre arrow": {
+"hex": "#ff5a4f33",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 2866,
+"sprite_status": "ambiguous"
+},
+"Onion seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5319,
+"sprite_status": "ok"
+},
+"Onyx": {
+"hex": "#ff402030",
+"source": "curated",
+"family": "gem",
+"item_id": 6573,
+"sprite_status": "ambiguous"
+},
+"Onyx bolt tips": {
+"hex": "#ff262424",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9194,
+"sprite_status": "ambiguous"
+},
+"Onyx bolts": {
+"hex": "#ff9f9f94",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9342,
+"sprite_status": "ambiguous"
+},
+"Onyx bolts (e)": {
+"hex": "#ffbcbcb2",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9245,
+"sprite_status": "ambiguous"
+},
+"Onyx dragon bolts": {
+"hex": "#ff9f9f94",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 21973,
+"sprite_status": "ambiguous"
+},
+"Onyx dragon bolts (e)": {
+"hex": "#ff9f9f94",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 21950,
+"sprite_status": "ambiguous"
+},
+"Opal": {
+"hex": "#ff8fd6c0",
+"source": "curated",
+"family": "gem",
+"item_id": 1609,
+"sprite_status": "ambiguous"
+},
+"Opal bolt tips": {
+"hex": "#ff989779",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 45,
+"sprite_status": "ambiguous"
+},
+"Opal bolts": {
+"hex": "#ff4a3411",
+"source": "sprite",
+"family": "ammo",
+"item_id": 879,
+"sprite_status": "ok"
+},
+"Opal bolts (e)": {
+"hex": "#ff665744",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9236,
+"sprite_status": "ambiguous"
+},
+"Opal dragon bolts": {
+"hex": "#ff9f9f94",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 21955,
+"sprite_status": "ambiguous"
+},
+"Opal dragon bolts (e)": {
+"hex": "#ff9f9f94",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 21932,
+"sprite_status": "ambiguous"
+},
+"Orange seedling": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5482,
+"sprite_status": "ok"
+},
+"Orange tree seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5285,
+"sprite_status": "ok"
+},
+"Orchid seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 6458,
+"sprite_status": "fetch-fail"
+},
+"Ourg bones": {
+"hex": "#ff81390d",
+"source": "sprite",
+"family": "bones",
+"item_id": 4834,
+"sprite_status": "ok"
+},
+"Paddlefish": {
+"hex": "#ffa5a599",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 23874,
+"sprite_status": "ambiguous"
+},
+"Palm seedling": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5486,
+"sprite_status": "ok"
+},
+"Palm tree seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5289,
+"sprite_status": "ok"
+},
+"Papaya seedling": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5485,
+"sprite_status": "ok"
+},
+"Papaya tree seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5288,
+"sprite_status": "ambiguous"
+},
+"Part admiral pie": {
+"hex": "#ff8f7560",
+"source": "sprite-fixup",
+"family": "food",
+"item_id": 7192,
+"sprite_status": "fetch-fail"
+},
+"Part fish pie": {
+"hex": "#ff8e7461",
+"source": "sprite-fixup",
+"family": "food",
+"item_id": 7182,
+"sprite_status": "fetch-fail"
+},
+"Part garden pie": {
+"hex": "#ff8f7560",
+"source": "sprite-fixup",
+"family": "food",
+"item_id": 7172,
+"sprite_status": "fetch-fail"
+},
+"Part mud pie": {
+"hex": "#ff8a725d",
+"source": "sprite-fixup",
+"family": "food",
+"item_id": 7164,
+"sprite_status": "fetch-fail"
+},
+"Part summer pie": {
+"hex": "#ff6c5331",
+"source": "sprite-fixup",
+"family": "food",
+"item_id": 7212,
+"sprite_status": "fetch-fail"
+},
+"Part wild pie": {
+"hex": "#ff8f7560",
+"source": "sprite-fixup",
+"family": "food",
+"item_id": 7202,
+"sprite_status": "fetch-fail"
+},
+"Pasty jogre bones": {
+"hex": "#ff60885c",
+"source": "sprite-fixup",
+"family": "bones",
+"item_id": 3128,
+"sprite_status": "fetch-fail"
+},
+"Pat of butter": {
+"hex": "#ff564609",
+"source": "sprite",
+"family": "food",
+"item_id": 6697,
+"sprite_status": "ok"
+},
+"Peach": {
+"hex": "#ffd2a67a",
+"source": "sprite",
+"family": "food",
+"item_id": 6883,
+"sprite_status": "ok"
+},
+"Pearl bolt tips": {
+"hex": "#ff989779",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 46,
+"sprite_status": "ambiguous"
+},
+"Pearl bolts": {
+"hex": "#ffa0a095",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 880,
+"sprite_status": "ambiguous"
+},
+"Pearl bolts (e)": {
+"hex": "#ffa8a89a",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9238,
+"sprite_status": "ambiguous"
+},
+"Pearl dragon bolts": {
+"hex": "#ff9f9f94",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 21959,
+"sprite_status": "ambiguous"
+},
+"Pearl dragon bolts (e)": {
+"hex": "#ff9f9f94",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 21936,
+"sprite_status": "ambiguous"
+},
+"Phluxia bat (3)": {
+"hex": "#ff493942",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 20877,
+"sprite_status": "ambiguous"
+},
+"Pie shell": {
+"hex": "#ff836b58",
+"source": "sprite",
+"family": "food",
+"item_id": 2315,
+"sprite_status": "ok"
+},
+"Pike": {
+"hex": "#ff739968",
+"source": "sprite",
+"family": "food",
+"item_id": 351,
+"sprite_status": "ok"
+},
+"Pineapple": {
+"hex": "#ff0d7011",
+"source": "sprite",
+"family": "food",
+"item_id": 2114,
+"sprite_status": "ok"
+},
+"Pineapple pizza": {
+"hex": "#ff8b1d11",
+"source": "sprite",
+"family": "food",
+"item_id": 2301,
+"sprite_status": "ok"
+},
+"Pineapple punch": {
+"hex": "#ff898994",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 2048,
+"sprite_status": "ambiguous"
+},
+"Pineapple seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5287,
+"sprite_status": "ok"
+},
+"Pineapple seedling": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5484,
+"sprite_status": "ok"
+},
+"Pink rose seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 6455,
+"sprite_status": "ok"
+},
+"Pitta bread": {
+"hex": "#ffc3bba4",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 1865,
+"sprite_status": "ambiguous"
+},
+"Pitta dough": {
+"hex": "#ffa5a599",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 1863,
+"sprite_status": "ambiguous"
+},
+"Pizza base": {
+"hex": "#ffa7a685",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 2283,
+"sprite_status": "ambiguous"
+},
+"Plain pizza": {
+"hex": "#ff8b1d11",
+"source": "sprite",
+"family": "food",
+"item_id": 2289,
+"sprite_status": "ok"
+},
+"Plank": {
+"hex": "#ffe0a878",
+"source": "curated",
+"family": "plank",
+"item_id": 960,
+"sprite_status": "ok"
+},
+"Poison ivy seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5106,
+"sprite_status": "ambiguous"
+},
+"Poison karambwan": {
+"hex": "#ff54956a",
+"source": "sprite",
+"family": "food",
+"item_id": 3146,
+"sprite_status": "ok"
+},
+"Poisoned dart(p)": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 818,
+"sprite_status": "ok"
+},
+"Pot of cream": {
+"hex": "#ff564609",
+"source": "sprite",
+"family": "food",
+"item_id": 2130,
+"sprite_status": "ok"
+},
+"Pot of tea (4)": {
+"hex": "#ffb49966",
+"source": "sprite-fixup",
+"family": "food",
+"item_id": 7692,
+"sprite_status": "fetch-fail"
+},
+"Potato cactus seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 22873,
+"sprite_status": "ok"
+},
+"Potato seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5318,
+"sprite_status": "ok"
+},
+"Potato with butter": {
+"hex": "#ff69540a",
+"source": "sprite",
+"family": "food",
+"item_id": 6703,
+"sprite_status": "ok"
+},
+"Potato with cheese": {
+"hex": "#ff79630d",
+"source": "sprite",
+"family": "food",
+"item_id": 6705,
+"sprite_status": "ok"
+},
+"Prael bat (1)": {
+"hex": "#ff483a39",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 20873,
+"sprite_status": "ambiguous"
+},
+"Primed bar": {
+"hex": "#ffa5a599",
+"source": "sprite-muted",
+"family": "bar",
+"item_id": 9727,
+"sprite_status": "ambiguous"
+},
+"Primed mind bar": {
+"hex": "#ff986711",
+"source": "sprite",
+"family": "bar",
+"item_id": 9728,
+"sprite_status": "ok"
+},
+"Prototype dart": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 1849,
+"sprite_status": "ok"
+},
+"Prototype dart tip": {
+"hex": "#ff847b7a",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 1853,
+"sprite_status": "ambiguous"
+},
+"Psykk bat (6)": {
+"hex": "#ff3c363c",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 20883,
+"sprite_status": "ambiguous"
+},
+"Pure essence": {
+"hex": "#ff7d7da0",
+"source": "curated",
+"family": "essence",
+"item_id": 7936,
+"sprite_status": "ambiguous"
+},
+"Purple logs": {
+"hex": "#ff9b5bc4",
+"source": "sprite",
+"family": "log",
+"item_id": 10329,
+"sprite_status": "ok"
+},
+"Purple sweets": {
+"hex": "#ff662aa5",
+"source": "sprite",
+"family": "food",
+"item_id": 4561,
+"sprite_status": "ok"
+},
+"Pyre logs": {
+"hex": "#ff674819",
+"source": "sprite",
+"family": "log",
+"item_id": 3438,
+"sprite_status": "ok"
+},
+"Pysk fish (0)": {
+"hex": "#ff390024",
+"source": "sprite",
+"family": "food",
+"item_id": 20856,
+"sprite_status": "ok"
+},
+"Quality violet tulip seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 27041,
+"sprite_status": "ok"
+},
+"Rainbow crab meat": {
+"hex": "#ff977845",
+"source": "sprite",
+"family": "food",
+"item_id": 31703,
+"sprite_status": "ok"
+},
+"Rainbow fish": {
+"hex": "#ff1957d6",
+"source": "sprite",
+"family": "food",
+"item_id": 10136,
+"sprite_status": "ok"
+},
+"Ranarr seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5295,
+"sprite_status": "ok"
+},
+"Ranarr weed": {
+"hex": "#ff375509",
+"source": "sprite",
+"family": "herb",
+"item_id": 257,
+"sprite_status": "ok"
+},
+"Raurg bones": {
+"hex": "#ffa49c4c",
+"source": "sprite",
+"family": "bones",
+"item_id": 4832,
+"sprite_status": "ok"
+},
+"Raw admiral pie": {
+"hex": "#ff867548",
+"source": "sprite",
+"family": "food",
+"item_id": 7196,
+"sprite_status": "ok"
+},
+"Raw blue crab meat": {
+"hex": "#ff6a6696",
+"source": "sprite",
+"family": "food",
+"item_id": 31692,
+"sprite_status": "ok"
+},
+"Raw fish pie": {
+"hex": "#ff867548",
+"source": "sprite",
+"family": "food",
+"item_id": 7186,
+"sprite_status": "ok"
+},
+"Raw fishcake": {
+"hex": "#ffb88916",
+"source": "sprite",
+"family": "food",
+"item_id": 7529,
+"sprite_status": "ok"
+},
+"Raw garden pie": {
+"hex": "#ff6a6026",
+"source": "sprite",
+"family": "food",
+"item_id": 7176,
+"sprite_status": "ok"
+},
+"Raw guide cake": {
+"hex": "#ffb9ab93",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 7543,
+"sprite_status": "ambiguous"
+},
+"Raw mud pie": {
+"hex": "#ff766636",
+"source": "sprite",
+"family": "food",
+"item_id": 7168,
+"sprite_status": "ok"
+},
+"Raw rainbow crab meat": {
+"hex": "#ff675845",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 31700,
+"sprite_status": "ambiguous"
+},
+"Raw red crab meat": {
+"hex": "#ff946c64",
+"source": "sprite",
+"family": "food",
+"item_id": 31686,
+"sprite_status": "ok"
+},
+"Raw summer pie": {
+"hex": "#ff796837",
+"source": "sprite",
+"family": "food",
+"item_id": 7216,
+"sprite_status": "ok"
+},
+"Raw wild pie": {
+"hex": "#ff948764",
+"source": "sprite",
+"family": "food",
+"item_id": 7206,
+"sprite_status": "ok"
+},
+"Red crab meat": {
+"hex": "#ff975445",
+"source": "sprite",
+"family": "food",
+"item_id": 31689,
+"sprite_status": "ok"
+},
+"Red logs": {
+"hex": "#ff985725",
+"source": "sprite",
+"family": "log",
+"item_id": 7404,
+"sprite_status": "ok"
+},
+"Red mahogany log": {
+"hex": "#ff68463a",
+"source": "sprite",
+"family": "log",
+"item_id": 4445,
+"sprite_status": "ok"
+},
+"Red rose seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 6454,
+"sprite_status": "ok"
+},
+"Red topaz": {
+"hex": "#ff8fd6c0",
+"source": "curated",
+"family": "gem",
+"item_id": 1613,
+"sprite_status": "ok"
+},
+"Redberry pie": {
+"hex": "#ff937143",
+"source": "sprite",
+"family": "food",
+"item_id": 2325,
+"sprite_status": "ok"
+},
+"Redberry seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5101,
+"sprite_status": "ok"
+},
+"Redwood logs": {
+"hex": "#ffb03020",
+"source": "curated",
+"family": "log",
+"item_id": 19669,
+"sprite_status": "ok"
+},
+"Redwood pyre logs": {
+"hex": "#ff653c09",
+"source": "sprite",
+"family": "log",
+"item_id": 19672,
+"sprite_status": "ok"
+},
+"Redwood seedling": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 22850,
+"sprite_status": "ok"
+},
+"Redwood tree seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 22871,
+"sprite_status": "ok"
+},
+"Roast beast meat": {
+"hex": "#ff18150c",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 9988,
+"sprite_status": "ambiguous"
+},
+"Roast bird meat": {
+"hex": "#ff695439",
+"source": "sprite",
+"family": "food",
+"item_id": 9980,
+"sprite_status": "ok"
+},
+"Roast rabbit": {
+"hex": "#ff5a4933",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 7223,
+"sprite_status": "ambiguous"
+},
+"Roe": {
+"hex": "#ff77480d",
+"source": "sprite",
+"family": "food",
+"item_id": 11324,
+"sprite_status": "ok"
+},
+"Rogue's purse": {
+"hex": "#ff064609",
+"source": "sprite",
+"family": "herb",
+"item_id": 1534,
+"sprite_status": "ok"
+},
+"Roqed fish (5)": {
+"hex": "#ff002a2c",
+"source": "sprite",
+"family": "food",
+"item_id": 20866,
+"sprite_status": "ok"
+},
+"Rosemary seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5097,
+"sprite_status": "ok"
+},
+"Rosewood logs": {
+"hex": "#ff7c6362",
+"source": "sprite-muted",
+"family": "log",
+"item_id": 32910,
+"sprite_status": "ambiguous"
+},
+"Rosewood pyre logs": {
+"hex": "#ff785b51",
+"source": "sprite-muted",
+"family": "log",
+"item_id": 31389,
+"sprite_status": "ambiguous"
+},
+"Rosewood seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 31551,
+"sprite_status": "ambiguous"
+},
+"Rosewood seedling": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 31494,
+"sprite_status": "ok"
+},
+"Ruby": {
+"hex": "#ffd02030",
+"source": "curated",
+"family": "gem",
+"item_id": 1603,
+"sprite_status": "ok"
+},
+"Ruby bolt tips": {
+"hex": "#ff763a36",
+"source": "sprite",
+"family": "ammo",
+"item_id": 9191,
+"sprite_status": "ok"
+},
+"Ruby bolts": {
+"hex": "#ff455745",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9339,
+"sprite_status": "ambiguous"
+},
+"Ruby bolts (e)": {
+"hex": "#ffa9a99c",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9242,
+"sprite_status": "ambiguous"
+},
+"Ruby dragon bolts": {
+"hex": "#ff9f9f94",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 21967,
+"sprite_status": "ambiguous"
+},
+"Ruby dragon bolts (e)": {
+"hex": "#ff9f9f94",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 21944,
+"sprite_status": "ambiguous"
+},
+"Ruined catfish": {
+"hex": "#ff746c6c",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 25674,
+"sprite_status": "ambiguous"
+},
+"Ruined cavefish": {
+"hex": "#ff746c6c",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 25662,
+"sprite_status": "ambiguous"
+},
+"Ruined chompy": {
+"hex": "#ff463718",
+"source": "sprite",
+"family": "food",
+"item_id": 2880,
+"sprite_status": "ok"
+},
+"Ruined guppy": {
+"hex": "#ff7b7372",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 25656,
+"sprite_status": "ambiguous"
+},
+"Ruined tetra": {
+"hex": "#ff746c6b",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 25668,
+"sprite_status": "ambiguous"
+},
+"Rune arrow": {
+"hex": "#ff583509",
+"source": "sprite",
+"family": "ammo",
+"item_id": 892,
+"sprite_status": "ok"
+},
+"Rune arrow pack": {
+"hex": "#ffdabc97",
+"source": "sprite",
+"family": "ammo",
+"item_id": 20607,
+"sprite_status": "ok"
+},
+"Rune arrow(p)": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 893,
+"sprite_status": "ok"
+},
+"Rune arrow(p+)": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5621,
+"sprite_status": "ok"
+},
+"Rune arrow(p++)": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5627,
+"sprite_status": "ok"
+},
+"Rune arrowtips": {
+"hex": "#ff3c5059",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 44,
+"sprite_status": "ambiguous"
+},
+"Rune cannonball": {
+"hex": "#ff5a7986",
+"source": "sprite",
+"family": "ammo",
+"item_id": 31914,
+"sprite_status": "ok"
+},
+"Rune chainshot cannonball": {
+"hex": "#ff658896",
+"source": "sprite",
+"family": "ammo",
+"item_id": 31928,
+"sprite_status": "ok"
+},
+"Rune dart": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 811,
+"sprite_status": "ok"
+},
+"Rune dart tip": {
+"hex": "#ff435a64",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 824,
+"sprite_status": "ambiguous"
+},
+"Rune dart(p)": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 817,
+"sprite_status": "ok"
+},
+"Rune dart(p+)": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5634,
+"sprite_status": "ok"
+},
+"Rune dart(p++)": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5641,
+"sprite_status": "ok"
+},
+"Rune essence": {
+"hex": "#ff7d7da0",
+"source": "curated",
+"family": "essence",
+"item_id": 1436,
+"sprite_status": "ambiguous"
+},
+"Rune fire arrow": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 2540,
+"sprite_status": "ok"
+},
+"Rune fire arrow (lit)": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 2541,
+"sprite_status": "ok"
+},
+"Rune incendiary cannonball": {
+"hex": "#ff866c6a",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 31942,
+"sprite_status": "ambiguous"
+},
+"Rune javelin": {
+"hex": "#ff614a2c",
+"source": "sprite",
+"family": "ammo",
+"item_id": 830,
+"sprite_status": "ok"
+},
+"Rune javelin tips": {
+"hex": "#ff445b66",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 19580,
+"sprite_status": "ambiguous"
+},
+"Rune javelin(p)": {
+"hex": "#ff614a2c",
+"source": "sprite",
+"family": "ammo",
+"item_id": 836,
+"sprite_status": "ok"
+},
+"Rune javelin(p+)": {
+"hex": "#ff614a2c",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5647,
+"sprite_status": "ok"
+},
+"Rune javelin(p++)": {
+"hex": "#ff614a2c",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5653,
+"sprite_status": "ok"
+},
+"Rune knife": {
+"hex": "#ff736b6b",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 868,
+"sprite_status": "ambiguous"
+},
+"Rune knife(p)": {
+"hex": "#ff736b6b",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 876,
+"sprite_status": "ambiguous"
+},
+"Rune knife(p+)": {
+"hex": "#ff736b6b",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 5660,
+"sprite_status": "ambiguous"
+},
+"Rune knife(p++)": {
+"hex": "#ff736b6b",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 5667,
+"sprite_status": "ambiguous"
+},
+"Rune thrownaxe": {
+"hex": "#ff3c515a",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 805,
+"sprite_status": "ambiguous"
+},
+"Runite bar": {
+"hex": "#ff40e0d0",
+"source": "curated",
+"family": "bar",
+"item_id": 2363,
+"sprite_status": "ambiguous"
+},
+"Runite bolts": {
+"hex": "#ff9f9f94",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9144,
+"sprite_status": "ambiguous"
+},
+"Runite bolts (p)": {
+"hex": "#ff9f9f93",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9291,
+"sprite_status": "ambiguous"
+},
+"Runite bolts (p+)": {
+"hex": "#ff9f9f93",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9298,
+"sprite_status": "ambiguous"
+},
+"Runite bolts (p++)": {
+"hex": "#ff9f9f93",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9305,
+"sprite_status": "ambiguous"
+},
+"Runite bolts (unf)": {
+"hex": "#ff445b65",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9381,
+"sprite_status": "ambiguous"
+},
+"Runite ore": {
+"hex": "#ff40e0d0",
+"source": "curated",
+"family": "ore",
+"item_id": 451,
+"sprite_status": "ok"
+},
+"Salmon": {
+"hex": "#ff963211",
+"source": "sprite",
+"family": "food",
+"item_id": 329,
+"sprite_status": "ok"
+},
+"Sapphire": {
+"hex": "#ff1e60ff",
+"source": "curated",
+"family": "gem",
+"item_id": 1607,
+"sprite_status": "ok"
+},
+"Sapphire bolt tips": {
+"hex": "#ff5c65a3",
+"source": "sprite",
+"family": "ammo",
+"item_id": 9189,
+"sprite_status": "ok"
+},
+"Sapphire bolts": {
+"hex": "#ff9d9d92",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9337,
+"sprite_status": "ambiguous"
+},
+"Sapphire bolts (e)": {
+"hex": "#ffa8a89a",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9240,
+"sprite_status": "ambiguous"
+},
+"Sapphire dragon bolts": {
+"hex": "#ff9f9f94",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 21963,
+"sprite_status": "ambiguous"
+},
+"Sapphire dragon bolts (e)": {
+"hex": "#ff9f9f94",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 21940,
+"sprite_status": "ambiguous"
+},
+"Sardine": {
+"hex": "#ffa68984",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 325,
+"sprite_status": "ambiguous"
+},
+"Scrambled egg": {
+"hex": "#ff9a7311",
+"source": "sprite",
+"family": "food",
+"item_id": 7078,
+"sprite_status": "ok"
+},
+"Scrapey tree logs": {
+"hex": "#ff796338",
+"source": "sprite",
+"family": "log",
+"item_id": 8934,
+"sprite_status": "ok"
+},
+"Sea turtle": {
+"hex": "#ff6c6155",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 397,
+"sprite_status": "ambiguous"
+},
+"Servery cooked meat": {
+"hex": "#ff7c4c0d",
+"source": "sprite",
+"family": "food",
+"item_id": 13413,
+"sprite_status": "ok"
+},
+"Servery incomplete pizza": {
+"hex": "#ff8b1d11",
+"source": "sprite",
+"family": "food",
+"item_id": 13406,
+"sprite_status": "ok"
+},
+"Servery meat pie": {
+"hex": "#ff937143",
+"source": "sprite",
+"family": "food",
+"item_id": 13403,
+"sprite_status": "ok"
+},
+"Servery pineapple pizza": {
+"hex": "#ff8b1d11",
+"source": "sprite",
+"family": "food",
+"item_id": 13412,
+"sprite_status": "ok"
+},
+"Servery pizza base": {
+"hex": "#ffa7a685",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 13404,
+"sprite_status": "ambiguous"
+},
+"Servery plain pizza": {
+"hex": "#ff8b1d11",
+"source": "sprite",
+"family": "food",
+"item_id": 13409,
+"sprite_status": "ok"
+},
+"Servery stew": {
+"hex": "#ffb58715",
+"source": "sprite",
+"family": "food",
+"item_id": 13418,
+"sprite_status": "ok"
+},
+"Servery uncooked pie": {
+"hex": "#ffc3965a",
+"source": "sprite",
+"family": "food",
+"item_id": 13402,
+"sprite_status": "ok"
+},
+"Servery uncooked pizza": {
+"hex": "#ff8b1d11",
+"source": "sprite",
+"family": "food",
+"item_id": 13408,
+"sprite_status": "ok"
+},
+"Servery uncooked stew": {
+"hex": "#ffb58715",
+"source": "sprite",
+"family": "food",
+"item_id": 13417,
+"sprite_status": "ok"
+},
+"Shaikahan bones": {
+"hex": "#ffb5aaa9",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 3123,
+"sprite_status": "ambiguous"
+},
+"Shark": {
+"hex": "#ff947a64",
+"source": "sprite",
+"family": "food",
+"item_id": 385,
+"sprite_status": "ok"
+},
+"Short green guy": {
+"hex": "#ff869475",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 2080,
+"sprite_status": "ambiguous"
+},
+"Shrimps": {
+"hex": "#ffa87215",
+"source": "sprite",
+"family": "food",
+"item_id": 315,
+"sprite_status": "ok"
+},
+"Silver bar": {
+"hex": "#ffd0d8e0",
+"source": "curated",
+"family": "bar",
+"item_id": 2355,
+"sprite_status": "ambiguous"
+},
+"Silver bolts": {
+"hex": "#ffa0a096",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9145,
+"sprite_status": "ambiguous"
+},
+"Silver bolts (p)": {
+"hex": "#ff9c9c94",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9292,
+"sprite_status": "ambiguous"
+},
+"Silver bolts (p+)": {
+"hex": "#ff9c9c94",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9299,
+"sprite_status": "ambiguous"
+},
+"Silver bolts (p++)": {
+"hex": "#ff9c9c94",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9306,
+"sprite_status": "ambiguous"
+},
+"Silver bolts (unf)": {
+"hex": "#ff898a94",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9382,
+"sprite_status": "ambiguous"
+},
+"Silver ore": {
+"hex": "#ffd0d8e0",
+"source": "curated",
+"family": "ore",
+"item_id": 442,
+"sprite_status": "ok"
+},
+"Sinew": {
+"hex": "#ff70664c",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 9436,
+"sprite_status": "ambiguous"
+},
+"Sito foil": {
+"hex": "#ff064609",
+"source": "sprite",
+"family": "herb",
+"item_id": 1530,
+"sprite_status": "ok"
+},
+"Skewered beast": {
+"hex": "#ff463837",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 9992,
+"sprite_status": "ambiguous"
+},
+"Skewered bird meat": {
+"hex": "#ff967977",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 9984,
+"sprite_status": "ambiguous"
+},
+"Skewered chompy": {
+"hex": "#ff979645",
+"source": "sprite",
+"family": "food",
+"item_id": 7230,
+"sprite_status": "ok"
+},
+"Skewered rabbit": {
+"hex": "#ff957876",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 7224,
+"sprite_status": "ambiguous"
+},
+"Slayer's respite": {
+"hex": "#ff6da16e",
+"source": "sprite",
+"family": "food",
+"item_id": 5759,
+"sprite_status": "ok"
+},
+"Slayer's respite(4)": {
+"hex": "#ff636b55",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 5841,
+"sprite_status": "ambiguous"
+},
+"Slayer's respite(m)": {
+"hex": "#ff6da16e",
+"source": "sprite",
+"family": "food",
+"item_id": 5761,
+"sprite_status": "ok"
+},
+"Slayer's respite(m4)": {
+"hex": "#ff636b55",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 5921,
+"sprite_status": "ambiguous"
+},
+"Slice of cake": {
+"hex": "#ffc79518",
+"source": "sprite",
+"family": "food",
+"item_id": 1895,
+"sprite_status": "ok"
+},
+"Small ninja monkey bones": {
+"hex": "#ff948a89",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 3179,
+"sprite_status": "ambiguous"
+},
+"Small zombie monkey bones": {
+"hex": "#ff948a89",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 3185,
+"sprite_status": "ambiguous"
+},
+"Smoke rune": {
+"hex": "#ff9b59b6",
+"source": "curated",
+"family": "rune",
+"item_id": 4697,
+"sprite_status": "ambiguous"
+},
+"Snake over-cooked": {
+"hex": "#ff272020",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 7580,
+"sprite_status": "ambiguous"
+},
+"Snake weed": {
+"hex": "#ff90aa2a",
+"source": "sprite",
+"family": "herb",
+"item_id": 1526,
+"sprite_status": "ok"
+},
+"Snapdragon": {
+"hex": "#ff3b4606",
+"source": "sprite",
+"family": "herb",
+"item_id": 3000,
+"sprite_status": "ok"
+},
+"Snapdragon seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5300,
+"sprite_status": "ok"
+},
+"Snape grass seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 22879,
+"sprite_status": "ok"
+},
+"Snowdrop seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 6460,
+"sprite_status": "ambiguous"
+},
+"Soda ash": {
+"hex": "#ffb5aaa9",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 1781,
+"sprite_status": "ambiguous"
+},
+"Soul rune": {
+"hex": "#ffc0c0e0",
+"source": "curated",
+"family": "rune",
+"item_id": 566,
+"sprite_status": "ok"
+},
+"Spicy crunchies": {
+"hex": "#ff76590d",
+"source": "sprite",
+"family": "food",
+"item_id": 2213,
+"sprite_status": "ok"
+},
+"Spicy sauce": {
+"hex": "#ffa57c14",
+"source": "sprite",
+"family": "food",
+"item_id": 7072,
+"sprite_status": "ok"
+},
+"Spicy tomato": {
+"hex": "#ff9a7311",
+"source": "sprite",
+"family": "food",
+"item_id": 9994,
+"sprite_status": "ok"
+},
+"Spider on shaft": {
+"hex": "#ff563409",
+"source": "sprite",
+"family": "food",
+"item_id": 6295,
+"sprite_status": "ok"
+},
+"Spider on stick": {
+"hex": "#ff827a3a",
+"source": "sprite",
+"family": "food",
+"item_id": 6293,
+"sprite_status": "ok"
+},
+"Spirit seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5317,
+"sprite_status": "ambiguous"
+},
+"Spirit seedling": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5363,
+"sprite_status": "ok"
+},
+"Split log": {
+"hex": "#ff826e49",
+"source": "sprite",
+"family": "log",
+"item_id": 10812,
+"sprite_status": "ok"
+},
+"Spring sq'irkjuice": {
+"hex": "#ff67854a",
+"source": "sprite",
+"family": "food",
+"item_id": 10848,
+"sprite_status": "ok"
+},
+"Squid beak": {
+"hex": "#ffb5aa7a",
+"source": "sprite",
+"family": "food",
+"item_id": 31572,
+"sprite_status": "ok"
+},
+"Steak sandwich": {
+"hex": "#ff9a8856",
+"source": "sprite",
+"family": "food",
+"item_id": 25631,
+"sprite_status": "ok"
+},
+"Steam rune": {
+"hex": "#ff9b59b6",
+"source": "curated",
+"family": "rune",
+"item_id": 4694,
+"sprite_status": "ambiguous"
+},
+"Steel arrow": {
+"hex": "#ff543208",
+"source": "sprite",
+"family": "ammo",
+"item_id": 886,
+"sprite_status": "ok"
+},
+"Steel arrow(p)": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 887,
+"sprite_status": "ok"
+},
+"Steel arrow(p+)": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5618,
+"sprite_status": "ok"
+},
+"Steel arrow(p++)": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5624,
+"sprite_status": "ok"
+},
+"Steel arrowtips": {
+"hex": "#ff6b6363",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 41,
+"sprite_status": "ambiguous"
+},
+"Steel bar": {
+"hex": "#ffb5c0c9",
+"source": "curated",
+"family": "bar",
+"item_id": 2353,
+"sprite_status": "ambiguous"
+},
+"Steel bolts": {
+"hex": "#ffa0a096",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9141,
+"sprite_status": "ambiguous"
+},
+"Steel bolts (p)": {
+"hex": "#ff9e9e92",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9288,
+"sprite_status": "ambiguous"
+},
+"Steel bolts (p+)": {
+"hex": "#ff9e9e92",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9295,
+"sprite_status": "ambiguous"
+},
+"Steel bolts (p++)": {
+"hex": "#ff9e9e92",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9302,
+"sprite_status": "ambiguous"
+},
+"Steel bolts (unf)": {
+"hex": "#ff7d7474",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9378,
+"sprite_status": "ambiguous"
+},
+"Steel cannonball": {
+"hex": "#ffa49897",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 2,
+"sprite_status": "ambiguous"
+},
+"Steel chainshot cannonball": {
+"hex": "#ffa69a9a",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 31922,
+"sprite_status": "ambiguous"
+},
+"Steel dart": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 808,
+"sprite_status": "ok"
+},
+"Steel dart tip": {
+"hex": "#ff726b6a",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 821,
+"sprite_status": "ambiguous"
+},
+"Steel dart(p)": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 814,
+"sprite_status": "ok"
+},
+"Steel dart(p+)": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5630,
+"sprite_status": "ok"
+},
+"Steel dart(p++)": {
+"hex": "#ff75180d",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5637,
+"sprite_status": "ok"
+},
+"Steel fire arrow": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 2534,
+"sprite_status": "ok"
+},
+"Steel fire arrow (lit)": {
+"hex": "#ff5c3300",
+"source": "sprite",
+"family": "ammo",
+"item_id": 2535,
+"sprite_status": "ok"
+},
+"Steel incendiary cannonball": {
+"hex": "#ff866c6a",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 31936,
+"sprite_status": "ambiguous"
+},
+"Steel javelin": {
+"hex": "#ff614a2c",
+"source": "sprite",
+"family": "ammo",
+"item_id": 827,
+"sprite_status": "ok"
+},
+"Steel javelin tips": {
+"hex": "#ff736b6b",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 19574,
+"sprite_status": "ambiguous"
+},
+"Steel javelin(p)": {
+"hex": "#ff614a2c",
+"source": "sprite",
+"family": "ammo",
+"item_id": 833,
+"sprite_status": "ok"
+},
+"Steel javelin(p+)": {
+"hex": "#ff614a2c",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5644,
+"sprite_status": "ok"
+},
+"Steel javelin(p++)": {
+"hex": "#ff614a2c",
+"source": "sprite",
+"family": "ammo",
+"item_id": 5650,
+"sprite_status": "ok"
+},
+"Steel knife": {
+"hex": "#ff736b6b",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 865,
+"sprite_status": "ambiguous"
+},
+"Steel knife(p)": {
+"hex": "#ff736b6b",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 872,
+"sprite_status": "ambiguous"
+},
+"Steel knife(p+)": {
+"hex": "#ff736b6b",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 5656,
+"sprite_status": "ambiguous"
+},
+"Steel knife(p++)": {
+"hex": "#ff736b6b",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 5663,
+"sprite_status": "ambiguous"
+},
+"Steel thrownaxe": {
+"hex": "#ff6b6363",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 802,
+"sprite_status": "ambiguous"
+},
+"Stew": {
+"hex": "#ffb58715",
+"source": "sprite",
+"family": "food",
+"item_id": 2003,
+"sprite_status": "ok"
+},
+"Strawberry": {
+"hex": "#ffc63d31",
+"source": "sprite",
+"family": "food",
+"item_id": 5504,
+"sprite_status": "ok"
+},
+"Strawberry seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5323,
+"sprite_status": "ok"
+},
+"Strykewyrm bones": {
+"hex": "#ff96938b",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 31726,
+"sprite_status": "ambiguous"
+},
+"Stuffed snake": {
+"hex": "#ff473614",
+"source": "sprite",
+"family": "food",
+"item_id": 7579,
+"sprite_status": "ok"
+},
+"Summer pie": {
+"hex": "#ff756329",
+"source": "sprite",
+"family": "food",
+"item_id": 7218,
+"sprite_status": "ok"
+},
+"Summer sq'irkjuice": {
+"hex": "#ff872821",
+"source": "sprite",
+"family": "food",
+"item_id": 10849,
+"sprite_status": "ok"
+},
+"Sun-kissed bones": {
+"hex": "#ff585846",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 29378,
+"sprite_status": "ambiguous"
+},
+"Sunfire rune": {
+"hex": "#ffa13228",
+"source": "sprite",
+"family": "rune",
+"item_id": 28929,
+"sprite_status": "ok"
+},
+"Sunlight antler bolts": {
+"hex": "#ff473906",
+"source": "sprite",
+"family": "ammo",
+"item_id": 28872,
+"sprite_status": "ok"
+},
+"Superior dragon bones": {
+"hex": "#ff66b5ab",
+"source": "sprite",
+"family": "bones",
+"item_id": 22124,
+"sprite_status": "ok"
+},
+"Suphi fish (1)": {
+"hex": "#ff220038",
+"source": "sprite",
+"family": "food",
+"item_id": 20858,
+"sprite_status": "ok"
+},
+"Swamp paste": {
+"hex": "#ff282626",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 1941,
+"sprite_status": "ambiguous"
+},
+"Sweetcorn seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5320,
+"sprite_status": "ok"
+},
+"Swordfish": {
+"hex": "#ffa967b5",
+"source": "sprite",
+"family": "food",
+"item_id": 373,
+"sprite_status": "ok"
+},
+"Swordtip squid": {
+"hex": "#ff6a533b",
+"source": "sprite",
+"family": "food",
+"item_id": 31556,
+"sprite_status": "ok"
+},
+"Tangled toad's legs": {
+"hex": "#ff986711",
+"source": "sprite",
+"family": "food",
+"item_id": 2187,
+"sprite_status": "ok"
+},
+"Tarromin": {
+"hex": "#ff096532",
+"source": "sprite",
+"family": "herb",
+"item_id": 253,
+"sprite_status": "ok"
+},
+"Tarromin seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5293,
+"sprite_status": "ok"
+},
+"Teak logs": {
+"hex": "#ff9c6b3f",
+"source": "curated",
+"family": "log",
+"item_id": 6333,
+"sprite_status": "ok"
+},
+"Teak plank": {
+"hex": "#ffe0a878",
+"source": "curated",
+"family": "plank",
+"item_id": 8780,
+"sprite_status": "ok"
+},
+"Teak pyre logs": {
+"hex": "#ff9a8257",
+"source": "sprite",
+"family": "log",
+"item_id": 6211,
+"sprite_status": "ok"
+},
+"Teak seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 21486,
+"sprite_status": "ok"
+},
+"Teak seedling": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 21469,
+"sprite_status": "ok"
+},
+"Tenacious indigo iris seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 27040,
+"sprite_status": "ok"
+},
+"Tetra": {
+"hex": "#ffa65b3b",
+"source": "sprite",
+"family": "food",
+"item_id": 25666,
+"sprite_status": "ok"
+},
+"The desert trout - ship's log": {
+"hex": "#ff675845",
+"source": "sprite-muted",
+"family": "log",
+"item_id": 25567,
+"sprite_status": "ambiguous"
+},
+"Thin snail meat": {
+"hex": "#ff575209",
+"source": "sprite",
+"family": "food",
+"item_id": 3369,
+"sprite_status": "ok"
+},
+"Tin ore": {
+"hex": "#ffb5c0c9",
+"source": "curated",
+"family": "ore",
+"item_id": 438,
+"sprite_status": "ok"
+},
+"Toad batta": {
+"hex": "#ff75580d",
+"source": "sprite",
+"family": "food",
+"item_id": 2255,
+"sprite_status": "ok"
+},
+"Toad crunchies": {
+"hex": "#ff054609",
+"source": "sprite",
+"family": "food",
+"item_id": 2217,
+"sprite_status": "ok"
+},
+"Toadflax": {
+"hex": "#ff003602",
+"source": "sprite",
+"family": "herb",
+"item_id": 2998,
+"sprite_status": "ok"
+},
+"Toadflax seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5296,
+"sprite_status": "ok"
+},
+"Tomato seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5322,
+"sprite_status": "ok"
+},
+"Topaz bolt tips": {
+"hex": "#ffa62a44",
+"source": "sprite",
+"family": "ammo",
+"item_id": 9188,
+"sprite_status": "ok"
+},
+"Topaz bolts": {
+"hex": "#ffa0a095",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9336,
+"sprite_status": "ambiguous"
+},
+"Topaz bolts (e)": {
+"hex": "#ffa9a99d",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9239,
+"sprite_status": "ambiguous"
+},
+"Topaz dragon bolts": {
+"hex": "#ff9f9f94",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 21961,
+"sprite_status": "ambiguous"
+},
+"Topaz dragon bolts (e)": {
+"hex": "#ff9f9f94",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 21938,
+"sprite_status": "ambiguous"
+},
+"Torstol": {
+"hex": "#ff064709",
+"source": "sprite",
+"family": "herb",
+"item_id": 269,
+"sprite_status": "ok"
+},
+"Torstol seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5304,
+"sprite_status": "ok"
+},
+"Training arrows": {
+"hex": "#ff2b334d",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 9706,
+"sprite_status": "ambiguous"
+},
+"Trout": {
+"hex": "#ff574845",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 333,
+"sprite_status": "ambiguous"
+},
+"Tuna": {
+"hex": "#ff6b5755",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 361,
+"sprite_status": "ambiguous"
+},
+"Tuna and corn": {
+"hex": "#ffa57b13",
+"source": "sprite",
+"family": "food",
+"item_id": 7068,
+"sprite_status": "ok"
+},
+"Tuna potato": {
+"hex": "#ff725c0d",
+"source": "sprite",
+"family": "food",
+"item_id": 7060,
+"sprite_status": "ok"
+},
+"Ugthanki kebab": {
+"hex": "#ff0a680d",
+"source": "sprite",
+"family": "food",
+"item_id": 1883,
+"sprite_status": "ok"
+},
+"Ugthanki meat": {
+"hex": "#ff7c4c0d",
+"source": "sprite",
+"family": "food",
+"item_id": 1861,
+"sprite_status": "ok"
+},
+"Uncooked apple pie": {
+"hex": "#ffc3965a",
+"source": "sprite",
+"family": "food",
+"item_id": 2317,
+"sprite_status": "ok"
+},
+"Uncooked berry pie": {
+"hex": "#ffc3965a",
+"source": "sprite",
+"family": "food",
+"item_id": 2321,
+"sprite_status": "ok"
+},
+"Uncooked botanical pie": {
+"hex": "#ff797461",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 19656,
+"sprite_status": "ambiguous"
+},
+"Uncooked cake": {
+"hex": "#ffb9ab93",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 1889,
+"sprite_status": "ambiguous"
+},
+"Uncooked curry": {
+"hex": "#ffa67814",
+"source": "sprite",
+"family": "food",
+"item_id": 2009,
+"sprite_status": "ok"
+},
+"Uncooked dragonfruit pie": {
+"hex": "#ff876d6c",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 22789,
+"sprite_status": "ambiguous"
+},
+"Uncooked egg": {
+"hex": "#ffa57b14",
+"source": "sprite",
+"family": "food",
+"item_id": 7076,
+"sprite_status": "ok"
+},
+"Uncooked meat pie": {
+"hex": "#ffc3965a",
+"source": "sprite",
+"family": "food",
+"item_id": 2319,
+"sprite_status": "ok"
+},
+"Uncooked mushroom pie": {
+"hex": "#ffa99c86",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 21684,
+"sprite_status": "ambiguous"
+},
+"Uncooked pizza": {
+"hex": "#ff8b1d11",
+"source": "sprite",
+"family": "food",
+"item_id": 2287,
+"sprite_status": "ok"
+},
+"Uncooked stew": {
+"hex": "#ffb58715",
+"source": "sprite",
+"family": "food",
+"item_id": 2001,
+"sprite_status": "ok"
+},
+"Uncut diamond": {
+"hex": "#ffe0f0ff",
+"source": "curated",
+"family": "gem",
+"item_id": 1617,
+"sprite_status": "ambiguous"
+},
+"Uncut dragonstone": {
+"hex": "#ffc030a0",
+"source": "curated",
+"family": "gem",
+"item_id": 1631,
+"sprite_status": "ok"
+},
+"Uncut emerald": {
+"hex": "#ff30c030",
+"source": "curated",
+"family": "gem",
+"item_id": 1621,
+"sprite_status": "ok"
+},
+"Uncut jade": {
+"hex": "#ff8fd6c0",
+"source": "curated",
+"family": "gem",
+"item_id": 1627,
+"sprite_status": "ambiguous"
+},
+"Uncut onyx": {
+"hex": "#ff402030",
+"source": "curated",
+"family": "gem",
+"item_id": 6571,
+"sprite_status": "ambiguous"
+},
+"Uncut opal": {
+"hex": "#ff8fd6c0",
+"source": "curated",
+"family": "gem",
+"item_id": 1625,
+"sprite_status": "ambiguous"
+},
+"Uncut red topaz": {
+"hex": "#ff8fd6c0",
+"source": "curated",
+"family": "gem",
+"item_id": 1629,
+"sprite_status": "ok"
+},
+"Uncut ruby": {
+"hex": "#ffd02030",
+"source": "curated",
+"family": "gem",
+"item_id": 1619,
+"sprite_status": "ok"
+},
+"Uncut sapphire": {
+"hex": "#ff1e60ff",
+"source": "curated",
+"family": "gem",
+"item_id": 1623,
+"sprite_status": "ok"
+},
+"Uncut zenyte": {
+"hex": "#ffe06010",
+"source": "curated",
+"family": "gem",
+"item_id": 19496,
+"sprite_status": "ok"
+},
+"Unfermented wine": {
+"hex": "#ffa69a99",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 1995,
+"sprite_status": "ambiguous"
+},
+"Unfinished batta": {
+"hex": "#ff82620d",
+"source": "sprite-fixup",
+"family": "food",
+"item_id": 2251,
+"sprite_status": "fetch-fail"
+},
+"Unfinished bowl": {
+"hex": "#ff623b22",
+"source": "sprite-fixup",
+"family": "food",
+"item_id": 2179,
+"sprite_status": "fetch-fail"
+},
+"Unfinished broad bolt pack": {
+"hex": "#ffb58440",
+"source": "sprite",
+"family": "ammo",
+"item_id": 11887,
+"sprite_status": "ok"
+},
+"Unfinished broad bolts": {
+"hex": "#ff8c8282",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 11876,
+"sprite_status": "ambiguous"
+},
+"Unfinished crunchy": {
+"hex": "#ff76580d",
+"source": "sprite-fixup",
+"family": "food",
+"item_id": 2207,
+"sprite_status": "fetch-fail"
+},
+"Veg ball": {
+"hex": "#ff986811",
+"source": "sprite",
+"family": "food",
+"item_id": 2195,
+"sprite_status": "ok"
+},
+"Vegetable batta": {
+"hex": "#ff75580d",
+"source": "sprite",
+"family": "food",
+"item_id": 2281,
+"sprite_status": "ok"
+},
+"Vile ashes": {
+"hex": "#ff946664",
+"source": "sprite",
+"family": "bones",
+"item_id": 25769,
+"sprite_status": "ok"
+},
+"Vine seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 6456,
+"sprite_status": "ok"
+},
+"Volencia moss": {
+"hex": "#ff064609",
+"source": "sprite",
+"family": "herb",
+"item_id": 1532,
+"sprite_status": "ok"
+},
+"Water rune": {
+"hex": "#ff1e90ff",
+"source": "curated",
+"family": "rune",
+"item_id": 555,
+"sprite_status": "ok"
+},
+"Watermelon seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5321,
+"sprite_status": "ambiguous"
+},
+"Watermelon slice": {
+"hex": "#ffbfc1a0",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 5984,
+"sprite_status": "ambiguous"
+},
+"Waxwood log": {
+"hex": "#ff73665b",
+"source": "sprite-muted",
+"family": "log",
+"item_id": 24938,
+"sprite_status": "ambiguous"
+},
+"White lily seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 22887,
+"sprite_status": "ambiguous"
+},
+"White logs": {
+"hex": "#ffcbc4c3",
+"source": "sprite-muted",
+"family": "log",
+"item_id": 10328,
+"sprite_status": "ambiguous"
+},
+"White pearl seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 4486,
+"sprite_status": "ambiguous"
+},
+"White rose seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 6453,
+"sprite_status": "ok"
+},
+"Whiteberry seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5105,
+"sprite_status": "ambiguous"
+},
+"Wild pie": {
+"hex": "#ff85795a",
+"source": "sprite",
+"family": "food",
+"item_id": 7208,
+"sprite_status": "ok"
+},
+"Wildblood seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5311,
+"sprite_status": "ok"
+},
+"Willow logs": {
+"hex": "#ff8a9a5a",
+"source": "curated",
+"family": "log",
+"item_id": 1519,
+"sprite_status": "ok"
+},
+"Willow pyre logs": {
+"hex": "#ff50461a",
+"source": "sprite",
+"family": "log",
+"item_id": 3442,
+"sprite_status": "ok"
+},
+"Willow seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5313,
+"sprite_status": "ok"
+},
+"Willow seedling": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5359,
+"sprite_status": "ok"
+},
+"Windswept logs": {
+"hex": "#ff584a38",
+"source": "sprite-muted",
+"family": "log",
+"item_id": 11035,
+"sprite_status": "ambiguous"
+},
+"Wine of zamorak": {
+"hex": "#ffa69a99",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 245,
+"sprite_status": "ambiguous"
+},
+"Winter sq'irkjuice": {
+"hex": "#ff56566c",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 10851,
+"sprite_status": "ambiguous"
+},
+"Wizard blizzard": {
+"hex": "#ff898994",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 2054,
+"sprite_status": "ambiguous"
+},
+"Wizard's mind bomb": {
+"hex": "#ff9899bc",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 1907,
+"sprite_status": "ambiguous"
+},
+"Woad seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5099,
+"sprite_status": "ok"
+},
+"Wolf bones": {
+"hex": "#ff96968b",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 2859,
+"sprite_status": "ambiguous"
+},
+"Wolfbone arrowtips": {
+"hex": "#ff151111",
+"source": "sprite-muted",
+"family": "ammo",
+"item_id": 2861,
+"sprite_status": "ambiguous"
+},
+"Worm batta": {
+"hex": "#ff76570d",
+"source": "sprite",
+"family": "food",
+"item_id": 2253,
+"sprite_status": "ok"
+},
+"Worm crunchies": {
+"hex": "#ff76550d",
+"source": "sprite",
+"family": "food",
+"item_id": 2205,
+"sprite_status": "ok"
+},
+"Worm hole": {
+"hex": "#ff976711",
+"source": "sprite",
+"family": "food",
+"item_id": 2191,
+"sprite_status": "ok"
+},
+"Wrapped oomlie": {
+"hex": "#ff49693b",
+"source": "sprite",
+"family": "food",
+"item_id": 2341,
+"sprite_status": "ok"
+},
+"Wrath rune": {
+"hex": "#ffd03020",
+"source": "curated",
+"family": "rune",
+"item_id": 21880,
+"sprite_status": "ambiguous"
+},
+"Wyrm bones": {
+"hex": "#ffa3a79a",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 22780,
+"sprite_status": "ambiguous"
+},
+"Wyrmling bones": {
+"hex": "#ff54596a",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 28899,
+"sprite_status": "ambiguous"
+},
+"Wyvern bones": {
+"hex": "#ff989da5",
+"source": "sprite-muted",
+"family": "bones",
+"item_id": 6812,
+"sprite_status": "ambiguous"
+},
+"Yanillian seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5309,
+"sprite_status": "ok"
+},
+"Yellowfin": {
+"hex": "#ff3c6384",
+"source": "sprite",
+"family": "food",
+"item_id": 32328,
+"sprite_status": "ok"
+},
+"Yew logs": {
+"hex": "#ff6a6a3a",
+"source": "curated",
+"family": "log",
+"item_id": 1515,
+"sprite_status": "ok"
+},
+"Yew pyre logs": {
+"hex": "#ff543809",
+"source": "sprite",
+"family": "log",
+"item_id": 3446,
+"sprite_status": "ok"
+},
+"Yew seed": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5315,
+"sprite_status": "ok"
+},
+"Yew seedling": {
+"hex": "#ff00e024",
+"source": "curated",
+"family": "seed",
+"item_id": 5361,
+"sprite_status": "ok"
+},
+"Zamorak's unfermented wine": {
+"hex": "#ffa69a99",
+"source": "sprite-muted",
+"family": "food",
+"item_id": 20752,
+"sprite_status": "ambiguous"
+},
+"Zenyte": {
+"hex": "#ffe06010",
+"source": "curated",
+"family": "gem",
+"item_id": 19493,
+"sprite_status": "ok"
+},
+"Zogre bones": {
+"hex": "#ff938a63",
+"source": "sprite",
+"family": "bones",
+"item_id": 4812,
+"sprite_status": "ok"
+}
+}
