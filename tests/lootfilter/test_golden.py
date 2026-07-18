@@ -11,9 +11,13 @@ def test_iron_gated_generic_has_no_tailoring():
     # starts with a module decl (FilterScape needs this); meta{} present but last; no tailoring
     assert "accountType:1" in F and F.startswith("/*@ define:module:") and "meta {" in F and "module:tailoring" not in F
 def test_new_layers_present():
-    # Verify the itemization layers (custom, notable, gear, families) and value safety-net beam are present
-    for mod in ("custom", "notable", "gear", "families"):
+    # Verify the itemization layers (custom, notable, gear, and a per-family module) and the
+    # value safety-net beam are present
+    for mod in ("custom", "notable", "gear", "seeds"):
         assert f"define:module:{mod}" in F, f"Module {mod} not found in filter"
     assert "value:>=500000" in F, "Value safety-net beam (>=500000) not found in filter"
-def test_quantities_module_present():
-    assert "define:module:quantities" in F and "#define QUANTITY_FLOOR 0" in F
+def test_family_modules_present():
+    for mid in ["seeds", "herbs", "runes", "ores", "bars", "logs", "planks", "gems", "ammo", "food", "prayer", "essence"]:
+        assert f"define:module:{mid}" in F
+    assert "define:module:quantities" not in F     # retired
+    assert "define:module:families" not in F       # retired

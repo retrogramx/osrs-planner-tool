@@ -31,7 +31,7 @@ def test_clog_rarity_tiers():
 def test_new_module_order():
     F = generate_filter()
     order = [F.index(f"define:module:{m}") for m in
-             ("settings", "custom", "notable", "trophies", "gear", "categories", "families", "fallback")]
+             ("settings", "custom", "notable", "trophies", "gear", "categories", "fallback")]
     assert order == sorted(order), "modules must be emitted in the §8 order (+categories, pre-flight fix A)"
 
 def test_meta_is_last_and_starts_with_module():
@@ -49,9 +49,10 @@ def test_gear_ids_are_disjoint_across_tiers():
     ids = [r["item_id"] for r in recs]
     assert len(ids) == len(set(ids)), "a gear item_id appears more than once in load_gear_records"
     F = generate_filter()
-    # slice ends at quantities (the module immediately after gear) -- NOT families, since quantities
-    # sits between them and legitimately repeats each id across its own decade ladder.
-    gear_module = F[F.index("define:module:gear"):F.index("define:module:quantities")]
+    # slice ends at categories (the per-family modules sit between gear and categories, but they
+    # match on name:...NAMES enumlist macros, not id:[...] -- so they can't introduce a false
+    # cross-tier id collision here).
+    gear_module = F[F.index("define:module:gear"):F.index("define:module:categories")]
     seen = []
     for m in re.findall(r"id:\[([0-9, ]+)\]", gear_module):
         seen.extend(int(t) for t in m.split(","))
@@ -72,20 +73,31 @@ def test_tailored_hide_owned_spares_high_value():
     ids = set(m.group(1)[4:-1].replace(" ", "").split(","))
     assert str(lv) in ids and str(hv) not in ids   # cheap hideable; valuable spared
 
-def test_module_order_has_quantities_between_gear_and_categories():
+def test_module_order_has_family_modules_between_gear_and_categories():
     from osrs_planner.lootfilter.generate import generate_filter
     f = generate_filter()
-    order = ["settings", "custom", "notable", "trophies", "gear", "quantities",
-             "categories", "families", "untradeables", "coins", "fallback"]
+    order = ["settings", "custom", "notable", "trophies", "gear", "seeds", "herbs", "runes", "ores",
+             "bars", "logs", "planks", "gems", "ammo", "food", "prayer", "essence",
+             "categories", "untradeables", "coins", "fallback"]
     idxs = [f.find(f"define:module:{m}") for m in order]
     assert all(i != -1 for i in idxs), [m for m, i in zip(order, idxs) if i == -1]
     assert idxs == sorted(idxs), "modules out of order"
 
-def test_quantities_supersedes_resource_categories():
+def test_family_modules_present_and_ordered():
     from osrs_planner.lootfilter.generate import generate_filter
-    from osrs_planner.lootfilter.categories import categorize
     f = generate_filter()
-    # coal still styled (dark hue present via quantities) but the standalone "Coal" CATEGORY macro is gone
-    assert "#ff2b2b2b" in f and "CAT_COAL" not in f
-    assert "#ffd8b01a" in f      # Gold ore/bar keep their gold identity hue (not gear-metal red) via quantities
-    assert categorize("Coal")["id"] == "ores"      # categorize() itself is UNCHANGED (still resolves)
+    for mid in ["seeds", "herbs", "runes", "ores", "bars", "logs", "planks", "gems", "ammo", "food", "prayer", "essence"]:
+        assert f"define:module:{mid}" in f
+    assert f.index("define:module:seeds") < f.index("define:module:categories")
+    assert "define:module:quantities" not in f     # retired
+
+def test_seeds_module_is_editable_tiers():
+    from osrs_planner.lootfilter.generate import generate_filter
+    f = generate_filter()
+    assert 'group: "A tier"' in f and 'label: "Items"' in f and "#define SEEDS_A_STYLE" in f
+
+def test_categorize_coal_still_resolves():
+    # categorize() (the hue authority for the non-resource categories module) is unchanged even
+    # though coal itself is now styled by the "ores" family module, not a standalone CAT_COAL macro.
+    from osrs_planner.lootfilter.categories import categorize
+    assert categorize("Coal")["id"] == "ores"

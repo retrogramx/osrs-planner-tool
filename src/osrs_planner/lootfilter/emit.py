@@ -240,49 +240,6 @@ def emit_categories() -> str:
         add(cid, display, group, patterns, hue, excludes, border)
     return emit_module("categories", "Categories", "\n".join(lines), "By material / type")
 
-def emit_families(family_ids, skip=frozenset()) -> str:
-    """One editable style-input per derived family. Skips 'gear' (stat-tiered by emit_gear), any
-    family with no ids / no FAMILY_HUES entry, and any family in `skip` (owned by emit_quantities)."""
-    used, lines = set(), []
-    for fam in sorted(family_ids):
-        ids = family_ids[fam]
-        if not ids or fam not in FAMILY_HUES or fam == "gear" or fam in skip:
-            continue
-        lines.append(emit_style_input("families", fam.replace("_", " ").title(), "Families",
-            _macro_name("FAM", fam, used), f"{IRONMAN} && {_id_list(ids)}",
-            _flat_panel(FAMILY_HUES[fam])))
-    return emit_module("families", "Resource families", "\n".join(lines), "By derived family")
-
-def emit_quantities(importance, hue_for=hue_for) -> str:
-    """Resource piles: hand-ranked base tier (from loot_importance) escalated one grade per ×10 in
-    pile count (design §3/§5), rendered in the item's identity hue. Groups by (family, hue, base) so
-    id-lists stay short; per group emits threshold-descending rules (SS first = first-match-wins)."""
-    from collections import defaultdict
-    groups = defaultdict(list)            # (family, hue, base_tier) -> [item_id]
-    all_ids = []
-    for r in importance:
-        hue = hue_for(r["name"], r["family"])
-        groups[(r["family"], hue, r["base_tier"])].append(r["item_id"])
-        all_ids.append(r["item_id"])
-    used, lines = set(), []
-    lines.append("/*@ define:input:quantities\nlabel: Hide piles below count\ntype: number\ngroup: Hide\n*/\n#define QUANTITY_FLOOR 0")
-    lines.append(emit_rule(f"{IRONMAN} && {_id_list(all_ids)} && quantity:<QUANTITY_FLOOR", {"hidden": "true"}, terminal=False))
-    for family, hue, base in sorted(groups, key=lambda k: (k[0], GRADE_ORDER.index(k[2]), k[1])):
-        ids = groups[(family, hue, base)]
-        bi = GRADE_ORDER.index(base)
-        group_label = f"Quantities — {family.replace('_', ' ').title()}"
-        for k in range(bi, -1, -1):                    # decades: k=bi (thr 10^bi -> SS) first .. k=0 (thr 1 -> base)
-            thr = 10 ** k
-            grade = quantity_display_grade(base, thr)  # single-source the ×10 model (Task 1)
-            cond = f"{IRONMAN} && {_id_list(ids)}"
-            if thr > 1:
-                cond += f" && quantity:>={thr}"
-            lines.append(emit_style_input("quantities", f"{family.title()} {grade} (base {base}, >={thr})",
-                group_label, _macro_name("QTY", f"{family}_{base}_{grade}_{hue[3:]}", used), cond,
-                style_for(hue, grade)))
-    return emit_module("quantities", "Quantities", "\n".join(lines),
-                       "Resource piles: base importance escalated by stack size")
-
 def emit_family_module(module_id: str, module_name: str, subtitle: str, rows, hue_for=hue_for) -> str:
     """One resource-family module in Storn's shape (spec §4/§5): editable tier groups (SS..lowest)
     with an 'Items' membership dropdown, a 'Minimum quantity', and a 'Colour'. ×10 escalation

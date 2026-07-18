@@ -10,6 +10,21 @@ from osrs_planner.lootfilter import tailor
 DATA = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))), "data")
 ROOT = os.path.dirname(DATA)   # repo root -- for the lazy kg_ingest import in load_gear_records
 
+FAMILY_MODULES = [   # emit order; one module per family present in loot_importance
+    ("seed", "seeds", "Seeds", "Farming seeds"),
+    ("herb", "herbs", "Herbs", "Grimy and clean herbs"),
+    ("rune", "runes", "Runes", "Runes"),
+    ("ore", "ores", "Ores", "Mined ores"),
+    ("bar", "bars", "Bars", "Smithing bars"),
+    ("log", "logs", "Logs", "Woodcutting logs"),
+    ("plank", "planks", "Planks", "Construction planks"),
+    ("gem", "gems", "Gems", "Cut and uncut gems"),
+    ("ammo", "ammo", "Ammo", "Arrows, bolts and darts"),
+    ("food", "food", "Food", "Cooked and raw food"),
+    ("bones", "prayer", "Prayer", "Bones and ashes"),
+    ("essence", "essence", "Essence", "Runecrafting essence"),
+]
+
 def load_clog_ids(data_dir: str = DATA) -> list[int]:
     recs = json.load(open(os.path.join(data_dir, "collection_log.json"), encoding="utf-8"))["records"]
     return sorted({r["item_id"] for r in recs})
@@ -106,7 +121,7 @@ def load_family_ids(data_dir: str = DATA) -> dict:
     return dict(out)
 
 def load_importance(data_dir: str = DATA) -> list[dict]:
-    """Editorial base-importance records for emit_quantities (design §4)."""
+    """Editorial base-importance records, grouped by family into per-family modules (design §4)."""
     return json.load(open(os.path.join(data_dir, "loot_importance.json"), encoding="utf-8"))["records"]
 
 def generate_filter(account_state=None, data_dir: str = DATA, title=None, description=None) -> str:
@@ -120,20 +135,24 @@ def generate_filter(account_state=None, data_dir: str = DATA, title=None, descri
     # module order (§8, whole-branch-review fix A -- categories moved ABOVE families: rules are
     # terminal/first-match-wins, so specific hand-authored per-name hues in categories must win
     # over the broad derived-family flat hues, not be shadowed by them): settings -> custom ->
-    # [tailoring if account_state] -> notable -> trophies -> gear -> quantities -> categories ->
-    # families -> untradeables -> coins -> fallback -> meta.
+    # [tailoring if account_state] -> notable -> trophies -> gear -> per-family modules ->
+    # categories -> untradeables -> coins -> fallback -> meta.
     parts = [emit.emit_settings(), emit.emit_custom_highlights()]
     if account_state is not None:  # tailored: thread value (hide-owned guard) + rarity (beam intensity)
         parts.append(tailor.emit_tailoring(account_state, set(clog), value_index=load_value_index(data_dir),
                                            rarity_index=load_clog_rarity(data_dir)))
     importance = load_importance(data_dir)
-    ranked_families = {r["family"] for r in importance}
+    from collections import defaultdict
+    by_family = defaultdict(list)
+    for r in importance:
+        by_family[r["family"]].append(r)
+    family_modules = [emit.emit_family_module(mid, name, sub, by_family[fam])
+                      for fam, mid, name, sub in FAMILY_MODULES if by_family.get(fam)]
     parts += [emit.emit_notable(load_recommended_ids(data_dir), load_rare_ids(data_dir)),
               emit.emit_trophies(clog),
               emit.emit_gear(load_gear_records(data_dir)),
-              emit.emit_quantities(importance),           # ABOVE categories: resource piles, base tier + ×10 escalation
-              emit.emit_categories(),                     # trimmed to gear-metal/teleports/jewellery/potions
-              emit.emit_families(load_family_ids(data_dir), skip=ranked_families),
+              *family_modules,
+              emit.emit_categories(),                     # non-resource categories (teleports/jewellery/potions)
               emit.emit_untradeables(), emit.emit_coins(), emit.emit_fallback(),
               emit.emit_meta(title, description)]
     return "\n".join(parts) + "\n"

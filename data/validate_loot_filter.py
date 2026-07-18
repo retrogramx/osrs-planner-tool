@@ -41,11 +41,25 @@ def main() -> int:
             v = val.rstrip("\r")
             check(v.startswith('"') or ": " not in v,
                   f"unquoted YAML {key} contains ': ' (breaks FilterScape import): {v!r}")
-    order = ["settings", "custom", "notable", "trophies", "gear", "quantities", "categories", "families", "fallback"]
+    order = ["settings", "custom", "notable", "trophies", "gear", "seeds", "herbs", "runes", "ores", "bars",
+             "logs", "planks", "gems", "ammo", "food", "prayer", "essence", "categories", "coins", "fallback"]
     idxs = [text.find(f"define:module:{m}") for m in order]
     for m, i in zip(order, idxs):
         check(i != -1, f"module {m} missing")
     check(idxs == sorted(idxs), "modules out of order")
+    # enumlist integrity: non-empty enum; every #define default is a subset of its enum
+    for block in re.findall(r"/\*@ define:input:\w+\nlabel:.*?type: enumlist\n(.*?)\*/\s*#define (\w+) (\[.*?\])", text, re.S):
+        enum_line, macro, default = block
+        m = re.search(r"enum: (\[.*\])", enum_line)
+        check(m is not None, f"enumlist {macro} has no enum")
+        if m:
+            enum_set = set(re.findall(r'"((?:[^"\\]|\\.)*)"', m.group(1)))
+            default_set = set(re.findall(r'"((?:[^"\\]|\\.)*)"', default))
+            check(enum_set, f"enumlist {macro} enum is empty")
+            check(default_set <= enum_set, f"enumlist {macro} default not a subset of enum")
+    # every area:[...] box is 6 ints
+    for box in re.findall(r"area:\[([^\]]*)\]", text):
+        check(len([x for x in box.split(",") if x.strip()]) == 6, f"area box not 6 ints: [{box}]")
     idict = {r["item_id"] for r in json.load(open(os.path.join(ns.data, "item_dictionary.json"), encoding="utf-8"))["records"]}
     clog = {r["item_id"] for r in json.load(open(os.path.join(ns.data, "collection_log.json"), encoding="utf-8"))["records"]}
     for m in re.findall(r"id:\[([0-9, ]+)\]", text):
