@@ -47,6 +47,30 @@ def emit_style_input(module_id: str, label: str, group: str, macro: str, conds: 
     rule = f"{'rule' if terminal else 'apply'} ({conds}) {{ {macro} }}"
     return f"{decl}\n{define}\n{rule}"
 
+def _quoted_list(items) -> str:
+    """A ["a", "b"] list of quoted, escaped strings — valid for both a YAML `enum:` and an rs2f
+    `#define` default list."""
+    return "[" + ", ".join(_yaml_scalar(str(i)) for i in items) + "]"
+
+def emit_enumlist_input(module_id: str, label: str, group: str, enum_names, macro: str, default_names) -> str:
+    """A type:enumlist dropdown (options = enum_names) + its #define default selection. The user
+    moves items between tier dropdowns to re-tier them (spec §4)."""
+    decl = (f"/*@ define:input:{module_id}\nlabel: {_yaml_scalar(label)}\ntype: enumlist\n"
+            f"enum: {_quoted_list(enum_names)}\ngroup: {_yaml_scalar(group)}\n*/")
+    return f"{decl}\n#define {macro} {_quoted_list(default_names)}"
+
+def emit_number_input(module_id: str, label: str, group: str, macro: str, default: int) -> str:
+    decl = (f"/*@ define:input:{module_id}\nlabel: {_yaml_scalar(label)}\ntype: number\n"
+            f"group: {_yaml_scalar(group)}\n*/")
+    return f"{decl}\n#define {macro} {int(default)}"
+
+def emit_style_def(module_id: str, label: str, group: str, macro: str, style: dict) -> str:
+    """A type:style colour picker + its #define default -- WITHOUT an apply rule (the caller emits
+    its own match/escalation rules referencing the macro)."""
+    decl = (f"/*@ define:input:{module_id}\ntype: style\nlabel: {_yaml_scalar(label)}\n"
+            f"group: {_yaml_scalar(group)}\n*/")
+    return f"{decl}\n#define {macro} {_macro_body(style)}"
+
 def emit_meta(name: str, desc: str) -> str:
     return f'meta {{\n    name = "{name}";\n    description = "{desc}";\n}}\n'
 
