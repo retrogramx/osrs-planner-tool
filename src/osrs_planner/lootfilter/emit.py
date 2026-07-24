@@ -273,14 +273,14 @@ def emit_family_module(module_id: str, module_name: str, subtitle: str, rows) ->
         inputs.append(emit_number_input(module_id, "Minimum quantity", g, MN(t), 1))
         inputs.append(emit_style_def(module_id, "Colour", g, ST(t), style_for(hue, t)))
     for t in tiers:                                            # rules: SS..E so higher tier wins overlap
-        if t not in by_tier:
-            continue
+        # every tier gets rules, empty defaults included -- FilterScape re-tiering writes into
+        # the NAMES macro, which no rule would reference otherwise (empty enumlist matches nothing)
         bi = GRADE_ORDER.index(t)
+        rules.append(f"rule ({IRONMAN} && name:{NM(t)} && quantity:<{MN(t)}) {{ hidden = true; }}")   # before escalation, or a >=10 pile below MIN shows
         for k in range(bi, 0, -1):                             # escalation: highest threshold first
             grade = quantity_display_grade(t, 10 ** k)
             if grade != t:
                 rules.append(f"rule ({IRONMAN} && name:{NM(t)} && quantity:>={10 ** k}) {{ {ST(grade)} }}")
-        rules.append(f"rule ({IRONMAN} && name:{NM(t)} && quantity:<{MN(t)}) {{ hidden = true; }}")
         rules.append(f"rule ({IRONMAN} && name:{NM(t)}) {{ {ST(t)} }}")
     return emit_module(module_id, module_name, "\n".join(inputs + rules), subtitle)
 

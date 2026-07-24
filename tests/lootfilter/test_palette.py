@@ -51,6 +51,15 @@ def test_every_family_has_a_valid_hue():
         h = FAMILY_HUES[fam]
         assert len(h) == 9 and h.startswith("#")
 
+def test_every_family_module_family_has_identity_hue():
+    # Every family emitted as a module must have its own FAMILY_HUES entry -- the grey
+    # .get() fallback in emit_family_module silently de-styles a whole module otherwise
+    # (the planks/essence all-grey regression).
+    from osrs_planner.lootfilter.generate import FAMILY_MODULES
+    from osrs_planner.lootfilter.palette import FAMILY_HUES
+    for fam, _mod, _name, _sub in FAMILY_MODULES:
+        assert fam in FAMILY_HUES, f"family {fam!r} emits a module but has no identity hue"
+
 def test_gear_score_ranks_combat_over_cosmetic():
     from osrs_planner.lootfilter.palette import gear_score
     combat = {"stab_defence_bonus": 100, "slash_defence_bonus": 100}

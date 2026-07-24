@@ -39,3 +39,20 @@ def test_every_rule_iron_gated():
     m = emit_family_module("seeds", "Seeds", "Farming seeds", ROWS)
     rule_lines = [l for l in m.splitlines() if l.startswith("rule (") or l.startswith("apply (")]
     assert rule_lines and all("IRONMAN" in l for l in rule_lines)
+
+def test_empty_tier_items_and_min_inputs_have_rules():
+    # Re-tiering an item into an empty tier (SS/S) via the FilterScape dropdown must WORK:
+    # every emitted NAMES/MIN macro needs at least one rule referencing it.
+    import re as _re
+    m = emit_family_module("seeds", "Seeds", "Farming seeds", ROWS)
+    rule_text = "\n".join(l for l in m.splitlines() if l.startswith("rule ("))
+    for macro in _re.findall(r"#define (SEEDS_\w+_(?:NAMES|MIN)) ", m):
+        assert macro in rule_text, f"input macro {macro} is defined but no rule references it"
+
+def test_min_quantity_hide_rule_precedes_escalation():
+    # "Minimum quantity" must mean what it says for MIN > 10: the hide rule has to sit
+    # ABOVE the x10 escalation decades or a 10..MIN-1 pile escalates instead of hiding.
+    m = emit_family_module("seeds", "Seeds", "Farming seeds", ROWS)
+    hide = m.index("name:SEEDS_A_NAMES && quantity:<SEEDS_A_MIN")
+    assert hide < m.index("name:SEEDS_A_NAMES && quantity:>=100")
+    assert hide < m.index("name:SEEDS_A_NAMES && quantity:>=10)")

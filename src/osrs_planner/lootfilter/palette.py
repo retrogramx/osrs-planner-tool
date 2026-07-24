@@ -113,7 +113,9 @@ FAMILY_HUES = {
     "ore":       "#ffa05a3a",  # ore earth (ores keep per-name hues in categories.py)
     "bar":       "#ffb5892a",  # bar bronze-amber
     "log":       "#ffb8895a",  # log tan (matches existing LOG_COLORS oak)
+    "plank":     "#ffe0a878",  # plank tan (matches existing _PLANK_HUE)
     "rune":      "#ff7060d0",  # rune indigo (per-element hues stay in categories.py)
+    "essence":   "#ff7d7da0",  # essence slate-lavender (matches existing _ESSENCE_HUE)
     "ammo":      "#ff8c2f5b",  # deep wine (matches existing _AMMO_HUE)
     "gem":       "#ff30c0a0",  # gem teal-green
     "bones":     "#ffc7b9a0",  # bone (matches existing _PRAYER_HUE)

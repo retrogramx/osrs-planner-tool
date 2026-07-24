@@ -706,35 +706,40 @@ label: "Colour"
 group: "E tier"
 */
 #define SEEDS_E_STYLE textColor = "#9e6b8f3a"; textAccent = 1; fontType = 1; menuSort = -10000;
+rule (IRONMAN && name:SEEDS_SS_NAMES && quantity:<SEEDS_SS_MIN) { hidden = true; }
+rule (IRONMAN && name:SEEDS_SS_NAMES) { SEEDS_SS_STYLE }
+rule (IRONMAN && name:SEEDS_S_NAMES && quantity:<SEEDS_S_MIN) { hidden = true; }
+rule (IRONMAN && name:SEEDS_S_NAMES && quantity:>=10) { SEEDS_SS_STYLE }
+rule (IRONMAN && name:SEEDS_S_NAMES) { SEEDS_S_STYLE }
+rule (IRONMAN && name:SEEDS_A_NAMES && quantity:<SEEDS_A_MIN) { hidden = true; }
 rule (IRONMAN && name:SEEDS_A_NAMES && quantity:>=100) { SEEDS_SS_STYLE }
 rule (IRONMAN && name:SEEDS_A_NAMES && quantity:>=10) { SEEDS_S_STYLE }
-rule (IRONMAN && name:SEEDS_A_NAMES && quantity:<SEEDS_A_MIN) { hidden = true; }
 rule (IRONMAN && name:SEEDS_A_NAMES) { SEEDS_A_STYLE }
+rule (IRONMAN && name:SEEDS_B_NAMES && quantity:<SEEDS_B_MIN) { hidden = true; }
 rule (IRONMAN && name:SEEDS_B_NAMES && quantity:>=1000) { SEEDS_SS_STYLE }
 rule (IRONMAN && name:SEEDS_B_NAMES && quantity:>=100) { SEEDS_S_STYLE }
 rule (IRONMAN && name:SEEDS_B_NAMES && quantity:>=10) { SEEDS_A_STYLE }
-rule (IRONMAN && name:SEEDS_B_NAMES && quantity:<SEEDS_B_MIN) { hidden = true; }
 rule (IRONMAN && name:SEEDS_B_NAMES) { SEEDS_B_STYLE }
+rule (IRONMAN && name:SEEDS_C_NAMES && quantity:<SEEDS_C_MIN) { hidden = true; }
 rule (IRONMAN && name:SEEDS_C_NAMES && quantity:>=10000) { SEEDS_SS_STYLE }
 rule (IRONMAN && name:SEEDS_C_NAMES && quantity:>=1000) { SEEDS_S_STYLE }
 rule (IRONMAN && name:SEEDS_C_NAMES && quantity:>=100) { SEEDS_A_STYLE }
 rule (IRONMAN && name:SEEDS_C_NAMES && quantity:>=10) { SEEDS_B_STYLE }
-rule (IRONMAN && name:SEEDS_C_NAMES && quantity:<SEEDS_C_MIN) { hidden = true; }
 rule (IRONMAN && name:SEEDS_C_NAMES) { SEEDS_C_STYLE }
+rule (IRONMAN && name:SEEDS_D_NAMES && quantity:<SEEDS_D_MIN) { hidden = true; }
 rule (IRONMAN && name:SEEDS_D_NAMES && quantity:>=100000) { SEEDS_SS_STYLE }
 rule (IRONMAN && name:SEEDS_D_NAMES && quantity:>=10000) { SEEDS_S_STYLE }
 rule (IRONMAN && name:SEEDS_D_NAMES && quantity:>=1000) { SEEDS_A_STYLE }
 rule (IRONMAN && name:SEEDS_D_NAMES && quantity:>=100) { SEEDS_B_STYLE }
 rule (IRONMAN && name:SEEDS_D_NAMES && quantity:>=10) { SEEDS_C_STYLE }
-rule (IRONMAN && name:SEEDS_D_NAMES && quantity:<SEEDS_D_MIN) { hidden = true; }
 rule (IRONMAN && name:SEEDS_D_NAMES) { SEEDS_D_STYLE }
+rule (IRONMAN && name:SEEDS_E_NAMES && quantity:<SEEDS_E_MIN) { hidden = true; }
 rule (IRONMAN && name:SEEDS_E_NAMES && quantity:>=1000000) { SEEDS_SS_STYLE }
 rule (IRONMAN && name:SEEDS_E_NAMES && quantity:>=100000) { SEEDS_S_STYLE }
 rule (IRONMAN && name:SEEDS_E_NAMES && quantity:>=10000) { SEEDS_A_STYLE }
 rule (IRONMAN && name:SEEDS_E_NAMES && quantity:>=1000) { SEEDS_B_STYLE }
 rule (IRONMAN && name:SEEDS_E_NAMES && quantity:>=100) { SEEDS_C_STYLE }
 rule (IRONMAN && name:SEEDS_E_NAMES && quantity:>=10) { SEEDS_D_STYLE }
-rule (IRONMAN && name:SEEDS_E_NAMES && quantity:<SEEDS_E_MIN) { hidden = true; }
 rule (IRONMAN && name:SEEDS_E_NAMES) { SEEDS_E_STYLE }
 
 /*@ define:module:herbs
@@ -876,35 +881,40 @@ label: "Colour"
 group: "E tier"
 */
 #define HERBS_E_STYLE textColor = "#9e2f7d3a"; textAccent = 1; fontType = 1; menuSort = -10000;
+rule (IRONMAN && name:HERBS_SS_NAMES && quantity:<HERBS_SS_MIN) { hidden = true; }
+rule (IRONMAN && name:HERBS_SS_NAMES) { HERBS_SS_STYLE }
+rule (IRONMAN && name:HERBS_S_NAMES && quantity:<HERBS_S_MIN) { hidden = true; }
+rule (IRONMAN && name:HERBS_S_NAMES && quantity:>=10) { HERBS_SS_STYLE }
+rule (IRONMAN && name:HERBS_S_NAMES) { HERBS_S_STYLE }
+rule (IRONMAN && name:HERBS_A_NAMES && quantity:<HERBS_A_MIN) { hidden = true; }
 rule (IRONMAN && name:HERBS_A_NAMES && quantity:>=100) { HERBS_SS_STYLE }
 rule (IRONMAN && name:HERBS_A_NAMES && quantity:>=10) { HERBS_S_STYLE }
-rule (IRONMAN && name:HERBS_A_NAMES && quantity:<HERBS_A_MIN) { hidden = true; }
 rule (IRONMAN && name:HERBS_A_NAMES) { HERBS_A_STYLE }
+rule (IRONMAN && name:HERBS_B_NAMES && quantity:<HERBS_B_MIN) { hidden = true; }
 rule (IRONMAN && name:HERBS_B_NAMES && quantity:>=1000) { HERBS_SS_STYLE }
 rule (IRONMAN && name:HERBS_B_NAMES && quantity:>=100) { HERBS_S_STYLE }
 rule (IRONMAN && name:HERBS_B_NAMES && quantity:>=10) { HERBS_A_STYLE }
-rule (IRONMAN && name:HERBS_B_NAMES && quantity:<HERBS_B_MIN) { hidden = true; }
 rule (IRONMAN && name:HERBS_B_NAMES) { HERBS_B_STYLE }
+rule (IRONMAN && name:HERBS_C_NAMES && quantity:<HERBS_C_MIN) { hidden = true; }
 rule (IRONMAN && name:HERBS_C_NAMES && quantity:>=10000) { HERBS_SS_STYLE }
 rule (IRONMAN && name:HERBS_C_NAMES && quantity:>=1000) { HERBS_S_STYLE }
 rule (IRONMAN && name:HERBS_C_NAMES && quantity:>=100) { HERBS_A_STYLE }
 rule (IRONMAN && name:HERBS_C_NAMES && quantity:>=10) { HERBS_B_STYLE }
-rule (IRONMAN && name:HERBS_C_NAMES && quantity:<HERBS_C_MIN) { hidden = true; }
 rule (IRONMAN && name:HERBS_C_NAMES) { HERBS_C_STYLE }
+rule (IRONMAN && name:HERBS_D_NAMES && quantity:<HERBS_D_MIN) { hidden = true; }
 rule (IRONMAN && name:HERBS_D_NAMES && quantity:>=100000) { HERBS_SS_STYLE }
 rule (IRONMAN && name:HERBS_D_NAMES && quantity:>=10000) { HERBS_S_STYLE }
 rule (IRONMAN && name:HERBS_D_NAMES && quantity:>=1000) { HERBS_A_STYLE }
 rule (IRONMAN && name:HERBS_D_NAMES && quantity:>=100) { HERBS_B_STYLE }
 rule (IRONMAN && name:HERBS_D_NAMES && quantity:>=10) { HERBS_C_STYLE }
-rule (IRONMAN && name:HERBS_D_NAMES && quantity:<HERBS_D_MIN) { hidden = true; }
 rule (IRONMAN && name:HERBS_D_NAMES) { HERBS_D_STYLE }
+rule (IRONMAN && name:HERBS_E_NAMES && quantity:<HERBS_E_MIN) { hidden = true; }
 rule (IRONMAN && name:HERBS_E_NAMES && quantity:>=1000000) { HERBS_SS_STYLE }
 rule (IRONMAN && name:HERBS_E_NAMES && quantity:>=100000) { HERBS_S_STYLE }
 rule (IRONMAN && name:HERBS_E_NAMES && quantity:>=10000) { HERBS_A_STYLE }
 rule (IRONMAN && name:HERBS_E_NAMES && quantity:>=1000) { HERBS_B_STYLE }
 rule (IRONMAN && name:HERBS_E_NAMES && quantity:>=100) { HERBS_C_STYLE }
 rule (IRONMAN && name:HERBS_E_NAMES && quantity:>=10) { HERBS_D_STYLE }
-rule (IRONMAN && name:HERBS_E_NAMES && quantity:<HERBS_E_MIN) { hidden = true; }
 rule (IRONMAN && name:HERBS_E_NAMES) { HERBS_E_STYLE }
 
 /*@ define:module:runes
@@ -1027,27 +1037,32 @@ label: "Colour"
 group: "D tier"
 */
 #define RUNES_D_STYLE textColor = "#ff7060d0"; textAccent = 1; fontType = 1;
+rule (IRONMAN && name:RUNES_SS_NAMES && quantity:<RUNES_SS_MIN) { hidden = true; }
+rule (IRONMAN && name:RUNES_SS_NAMES) { RUNES_SS_STYLE }
+rule (IRONMAN && name:RUNES_S_NAMES && quantity:<RUNES_S_MIN) { hidden = true; }
+rule (IRONMAN && name:RUNES_S_NAMES && quantity:>=10) { RUNES_SS_STYLE }
+rule (IRONMAN && name:RUNES_S_NAMES) { RUNES_S_STYLE }
+rule (IRONMAN && name:RUNES_A_NAMES && quantity:<RUNES_A_MIN) { hidden = true; }
 rule (IRONMAN && name:RUNES_A_NAMES && quantity:>=100) { RUNES_SS_STYLE }
 rule (IRONMAN && name:RUNES_A_NAMES && quantity:>=10) { RUNES_S_STYLE }
-rule (IRONMAN && name:RUNES_A_NAMES && quantity:<RUNES_A_MIN) { hidden = true; }
 rule (IRONMAN && name:RUNES_A_NAMES) { RUNES_A_STYLE }
+rule (IRONMAN && name:RUNES_B_NAMES && quantity:<RUNES_B_MIN) { hidden = true; }
 rule (IRONMAN && name:RUNES_B_NAMES && quantity:>=1000) { RUNES_SS_STYLE }
 rule (IRONMAN && name:RUNES_B_NAMES && quantity:>=100) { RUNES_S_STYLE }
 rule (IRONMAN && name:RUNES_B_NAMES && quantity:>=10) { RUNES_A_STYLE }
-rule (IRONMAN && name:RUNES_B_NAMES && quantity:<RUNES_B_MIN) { hidden = true; }
 rule (IRONMAN && name:RUNES_B_NAMES) { RUNES_B_STYLE }
+rule (IRONMAN && name:RUNES_C_NAMES && quantity:<RUNES_C_MIN) { hidden = true; }
 rule (IRONMAN && name:RUNES_C_NAMES && quantity:>=10000) { RUNES_SS_STYLE }
 rule (IRONMAN && name:RUNES_C_NAMES && quantity:>=1000) { RUNES_S_STYLE }
 rule (IRONMAN && name:RUNES_C_NAMES && quantity:>=100) { RUNES_A_STYLE }
 rule (IRONMAN && name:RUNES_C_NAMES && quantity:>=10) { RUNES_B_STYLE }
-rule (IRONMAN && name:RUNES_C_NAMES && quantity:<RUNES_C_MIN) { hidden = true; }
 rule (IRONMAN && name:RUNES_C_NAMES) { RUNES_C_STYLE }
+rule (IRONMAN && name:RUNES_D_NAMES && quantity:<RUNES_D_MIN) { hidden = true; }
 rule (IRONMAN && name:RUNES_D_NAMES && quantity:>=100000) { RUNES_SS_STYLE }
 rule (IRONMAN && name:RUNES_D_NAMES && quantity:>=10000) { RUNES_S_STYLE }
 rule (IRONMAN && name:RUNES_D_NAMES && quantity:>=1000) { RUNES_A_STYLE }
 rule (IRONMAN && name:RUNES_D_NAMES && quantity:>=100) { RUNES_B_STYLE }
 rule (IRONMAN && name:RUNES_D_NAMES && quantity:>=10) { RUNES_C_STYLE }
-rule (IRONMAN && name:RUNES_D_NAMES && quantity:<RUNES_D_MIN) { hidden = true; }
 rule (IRONMAN && name:RUNES_D_NAMES) { RUNES_D_STYLE }
 
 /*@ define:module:ores
@@ -1189,35 +1204,40 @@ label: "Colour"
 group: "E tier"
 */
 #define ORES_E_STYLE textColor = "#9ea05a3a"; textAccent = 1; fontType = 1; menuSort = -10000;
+rule (IRONMAN && name:ORES_SS_NAMES && quantity:<ORES_SS_MIN) { hidden = true; }
+rule (IRONMAN && name:ORES_SS_NAMES) { ORES_SS_STYLE }
+rule (IRONMAN && name:ORES_S_NAMES && quantity:<ORES_S_MIN) { hidden = true; }
+rule (IRONMAN && name:ORES_S_NAMES && quantity:>=10) { ORES_SS_STYLE }
+rule (IRONMAN && name:ORES_S_NAMES) { ORES_S_STYLE }
+rule (IRONMAN && name:ORES_A_NAMES && quantity:<ORES_A_MIN) { hidden = true; }
 rule (IRONMAN && name:ORES_A_NAMES && quantity:>=100) { ORES_SS_STYLE }
 rule (IRONMAN && name:ORES_A_NAMES && quantity:>=10) { ORES_S_STYLE }
-rule (IRONMAN && name:ORES_A_NAMES && quantity:<ORES_A_MIN) { hidden = true; }
 rule (IRONMAN && name:ORES_A_NAMES) { ORES_A_STYLE }
+rule (IRONMAN && name:ORES_B_NAMES && quantity:<ORES_B_MIN) { hidden = true; }
 rule (IRONMAN && name:ORES_B_NAMES && quantity:>=1000) { ORES_SS_STYLE }
 rule (IRONMAN && name:ORES_B_NAMES && quantity:>=100) { ORES_S_STYLE }
 rule (IRONMAN && name:ORES_B_NAMES && quantity:>=10) { ORES_A_STYLE }
-rule (IRONMAN && name:ORES_B_NAMES && quantity:<ORES_B_MIN) { hidden = true; }
 rule (IRONMAN && name:ORES_B_NAMES) { ORES_B_STYLE }
+rule (IRONMAN && name:ORES_C_NAMES && quantity:<ORES_C_MIN) { hidden = true; }
 rule (IRONMAN && name:ORES_C_NAMES && quantity:>=10000) { ORES_SS_STYLE }
 rule (IRONMAN && name:ORES_C_NAMES && quantity:>=1000) { ORES_S_STYLE }
 rule (IRONMAN && name:ORES_C_NAMES && quantity:>=100) { ORES_A_STYLE }
 rule (IRONMAN && name:ORES_C_NAMES && quantity:>=10) { ORES_B_STYLE }
-rule (IRONMAN && name:ORES_C_NAMES && quantity:<ORES_C_MIN) { hidden = true; }
 rule (IRONMAN && name:ORES_C_NAMES) { ORES_C_STYLE }
+rule (IRONMAN && name:ORES_D_NAMES && quantity:<ORES_D_MIN) { hidden = true; }
 rule (IRONMAN && name:ORES_D_NAMES && quantity:>=100000) { ORES_SS_STYLE }
 rule (IRONMAN && name:ORES_D_NAMES && quantity:>=10000) { ORES_S_STYLE }
 rule (IRONMAN && name:ORES_D_NAMES && quantity:>=1000) { ORES_A_STYLE }
 rule (IRONMAN && name:ORES_D_NAMES && quantity:>=100) { ORES_B_STYLE }
 rule (IRONMAN && name:ORES_D_NAMES && quantity:>=10) { ORES_C_STYLE }
-rule (IRONMAN && name:ORES_D_NAMES && quantity:<ORES_D_MIN) { hidden = true; }
 rule (IRONMAN && name:ORES_D_NAMES) { ORES_D_STYLE }
+rule (IRONMAN && name:ORES_E_NAMES && quantity:<ORES_E_MIN) { hidden = true; }
 rule (IRONMAN && name:ORES_E_NAMES && quantity:>=1000000) { ORES_SS_STYLE }
 rule (IRONMAN && name:ORES_E_NAMES && quantity:>=100000) { ORES_S_STYLE }
 rule (IRONMAN && name:ORES_E_NAMES && quantity:>=10000) { ORES_A_STYLE }
 rule (IRONMAN && name:ORES_E_NAMES && quantity:>=1000) { ORES_B_STYLE }
 rule (IRONMAN && name:ORES_E_NAMES && quantity:>=100) { ORES_C_STYLE }
 rule (IRONMAN && name:ORES_E_NAMES && quantity:>=10) { ORES_D_STYLE }
-rule (IRONMAN && name:ORES_E_NAMES && quantity:<ORES_E_MIN) { hidden = true; }
 rule (IRONMAN && name:ORES_E_NAMES) { ORES_E_STYLE }
 
 /*@ define:module:bars
@@ -1359,35 +1379,40 @@ label: "Colour"
 group: "E tier"
 */
 #define BARS_E_STYLE textColor = "#9eb5892a"; textAccent = 1; fontType = 1; menuSort = -10000;
+rule (IRONMAN && name:BARS_SS_NAMES && quantity:<BARS_SS_MIN) { hidden = true; }
+rule (IRONMAN && name:BARS_SS_NAMES) { BARS_SS_STYLE }
+rule (IRONMAN && name:BARS_S_NAMES && quantity:<BARS_S_MIN) { hidden = true; }
+rule (IRONMAN && name:BARS_S_NAMES && quantity:>=10) { BARS_SS_STYLE }
+rule (IRONMAN && name:BARS_S_NAMES) { BARS_S_STYLE }
+rule (IRONMAN && name:BARS_A_NAMES && quantity:<BARS_A_MIN) { hidden = true; }
 rule (IRONMAN && name:BARS_A_NAMES && quantity:>=100) { BARS_SS_STYLE }
 rule (IRONMAN && name:BARS_A_NAMES && quantity:>=10) { BARS_S_STYLE }
-rule (IRONMAN && name:BARS_A_NAMES && quantity:<BARS_A_MIN) { hidden = true; }
 rule (IRONMAN && name:BARS_A_NAMES) { BARS_A_STYLE }
+rule (IRONMAN && name:BARS_B_NAMES && quantity:<BARS_B_MIN) { hidden = true; }
 rule (IRONMAN && name:BARS_B_NAMES && quantity:>=1000) { BARS_SS_STYLE }
 rule (IRONMAN && name:BARS_B_NAMES && quantity:>=100) { BARS_S_STYLE }
 rule (IRONMAN && name:BARS_B_NAMES && quantity:>=10) { BARS_A_STYLE }
-rule (IRONMAN && name:BARS_B_NAMES && quantity:<BARS_B_MIN) { hidden = true; }
 rule (IRONMAN && name:BARS_B_NAMES) { BARS_B_STYLE }
+rule (IRONMAN && name:BARS_C_NAMES && quantity:<BARS_C_MIN) { hidden = true; }
 rule (IRONMAN && name:BARS_C_NAMES && quantity:>=10000) { BARS_SS_STYLE }
 rule (IRONMAN && name:BARS_C_NAMES && quantity:>=1000) { BARS_S_STYLE }
 rule (IRONMAN && name:BARS_C_NAMES && quantity:>=100) { BARS_A_STYLE }
 rule (IRONMAN && name:BARS_C_NAMES && quantity:>=10) { BARS_B_STYLE }
-rule (IRONMAN && name:BARS_C_NAMES && quantity:<BARS_C_MIN) { hidden = true; }
 rule (IRONMAN && name:BARS_C_NAMES) { BARS_C_STYLE }
+rule (IRONMAN && name:BARS_D_NAMES && quantity:<BARS_D_MIN) { hidden = true; }
 rule (IRONMAN && name:BARS_D_NAMES && quantity:>=100000) { BARS_SS_STYLE }
 rule (IRONMAN && name:BARS_D_NAMES && quantity:>=10000) { BARS_S_STYLE }
 rule (IRONMAN && name:BARS_D_NAMES && quantity:>=1000) { BARS_A_STYLE }
 rule (IRONMAN && name:BARS_D_NAMES && quantity:>=100) { BARS_B_STYLE }
 rule (IRONMAN && name:BARS_D_NAMES && quantity:>=10) { BARS_C_STYLE }
-rule (IRONMAN && name:BARS_D_NAMES && quantity:<BARS_D_MIN) { hidden = true; }
 rule (IRONMAN && name:BARS_D_NAMES) { BARS_D_STYLE }
+rule (IRONMAN && name:BARS_E_NAMES && quantity:<BARS_E_MIN) { hidden = true; }
 rule (IRONMAN && name:BARS_E_NAMES && quantity:>=1000000) { BARS_SS_STYLE }
 rule (IRONMAN && name:BARS_E_NAMES && quantity:>=100000) { BARS_S_STYLE }
 rule (IRONMAN && name:BARS_E_NAMES && quantity:>=10000) { BARS_A_STYLE }
 rule (IRONMAN && name:BARS_E_NAMES && quantity:>=1000) { BARS_B_STYLE }
 rule (IRONMAN && name:BARS_E_NAMES && quantity:>=100) { BARS_C_STYLE }
 rule (IRONMAN && name:BARS_E_NAMES && quantity:>=10) { BARS_D_STYLE }
-rule (IRONMAN && name:BARS_E_NAMES && quantity:<BARS_E_MIN) { hidden = true; }
 rule (IRONMAN && name:BARS_E_NAMES) { BARS_E_STYLE }
 
 /*@ define:module:logs
@@ -1529,35 +1554,40 @@ label: "Colour"
 group: "E tier"
 */
 #define LOGS_E_STYLE textColor = "#9eb8895a"; textAccent = 1; fontType = 1; menuSort = -10000;
+rule (IRONMAN && name:LOGS_SS_NAMES && quantity:<LOGS_SS_MIN) { hidden = true; }
+rule (IRONMAN && name:LOGS_SS_NAMES) { LOGS_SS_STYLE }
+rule (IRONMAN && name:LOGS_S_NAMES && quantity:<LOGS_S_MIN) { hidden = true; }
+rule (IRONMAN && name:LOGS_S_NAMES && quantity:>=10) { LOGS_SS_STYLE }
+rule (IRONMAN && name:LOGS_S_NAMES) { LOGS_S_STYLE }
+rule (IRONMAN && name:LOGS_A_NAMES && quantity:<LOGS_A_MIN) { hidden = true; }
 rule (IRONMAN && name:LOGS_A_NAMES && quantity:>=100) { LOGS_SS_STYLE }
 rule (IRONMAN && name:LOGS_A_NAMES && quantity:>=10) { LOGS_S_STYLE }
-rule (IRONMAN && name:LOGS_A_NAMES && quantity:<LOGS_A_MIN) { hidden = true; }
 rule (IRONMAN && name:LOGS_A_NAMES) { LOGS_A_STYLE }
+rule (IRONMAN && name:LOGS_B_NAMES && quantity:<LOGS_B_MIN) { hidden = true; }
 rule (IRONMAN && name:LOGS_B_NAMES && quantity:>=1000) { LOGS_SS_STYLE }
 rule (IRONMAN && name:LOGS_B_NAMES && quantity:>=100) { LOGS_S_STYLE }
 rule (IRONMAN && name:LOGS_B_NAMES && quantity:>=10) { LOGS_A_STYLE }
-rule (IRONMAN && name:LOGS_B_NAMES && quantity:<LOGS_B_MIN) { hidden = true; }
 rule (IRONMAN && name:LOGS_B_NAMES) { LOGS_B_STYLE }
+rule (IRONMAN && name:LOGS_C_NAMES && quantity:<LOGS_C_MIN) { hidden = true; }
 rule (IRONMAN && name:LOGS_C_NAMES && quantity:>=10000) { LOGS_SS_STYLE }
 rule (IRONMAN && name:LOGS_C_NAMES && quantity:>=1000) { LOGS_S_STYLE }
 rule (IRONMAN && name:LOGS_C_NAMES && quantity:>=100) { LOGS_A_STYLE }
 rule (IRONMAN && name:LOGS_C_NAMES && quantity:>=10) { LOGS_B_STYLE }
-rule (IRONMAN && name:LOGS_C_NAMES && quantity:<LOGS_C_MIN) { hidden = true; }
 rule (IRONMAN && name:LOGS_C_NAMES) { LOGS_C_STYLE }
+rule (IRONMAN && name:LOGS_D_NAMES && quantity:<LOGS_D_MIN) { hidden = true; }
 rule (IRONMAN && name:LOGS_D_NAMES && quantity:>=100000) { LOGS_SS_STYLE }
 rule (IRONMAN && name:LOGS_D_NAMES && quantity:>=10000) { LOGS_S_STYLE }
 rule (IRONMAN && name:LOGS_D_NAMES && quantity:>=1000) { LOGS_A_STYLE }
 rule (IRONMAN && name:LOGS_D_NAMES && quantity:>=100) { LOGS_B_STYLE }
 rule (IRONMAN && name:LOGS_D_NAMES && quantity:>=10) { LOGS_C_STYLE }
-rule (IRONMAN && name:LOGS_D_NAMES && quantity:<LOGS_D_MIN) { hidden = true; }
 rule (IRONMAN && name:LOGS_D_NAMES) { LOGS_D_STYLE }
+rule (IRONMAN && name:LOGS_E_NAMES && quantity:<LOGS_E_MIN) { hidden = true; }
 rule (IRONMAN && name:LOGS_E_NAMES && quantity:>=1000000) { LOGS_SS_STYLE }
 rule (IRONMAN && name:LOGS_E_NAMES && quantity:>=100000) { LOGS_S_STYLE }
 rule (IRONMAN && name:LOGS_E_NAMES && quantity:>=10000) { LOGS_A_STYLE }
 rule (IRONMAN && name:LOGS_E_NAMES && quantity:>=1000) { LOGS_B_STYLE }
 rule (IRONMAN && name:LOGS_E_NAMES && quantity:>=100) { LOGS_C_STYLE }
 rule (IRONMAN && name:LOGS_E_NAMES && quantity:>=10) { LOGS_D_STYLE }
-rule (IRONMAN && name:LOGS_E_NAMES && quantity:<LOGS_E_MIN) { hidden = true; }
 rule (IRONMAN && name:LOGS_E_NAMES) { LOGS_E_STYLE }
 
 /*@ define:module:planks
@@ -1584,7 +1614,7 @@ type: style
 label: "Colour"
 group: "SS tier"
 */
-#define PLANKS_SS_STYLE backgroundColor = "#ff9e9e9e"; borderColor = "#ff181818"; textColor = "#ff141414"; fontType = 3; textAccent = 3; icon = CurrentItem(); sound = 3925; showLootbeam = true; lootbeamColor = "#ff9e9e9e";
+#define PLANKS_SS_STYLE backgroundColor = "#ffe0a878"; borderColor = "#ff181818"; textColor = "#ff141414"; fontType = 3; textAccent = 3; icon = CurrentItem(); sound = 3925; showLootbeam = true; lootbeamColor = "#ffe0a878";
 /*@ define:input:planks
 label: "Items"
 type: enumlist
@@ -1603,7 +1633,7 @@ type: style
 label: "Colour"
 group: "S tier"
 */
-#define PLANKS_S_STYLE backgroundColor = "#ff9e9e9e"; borderColor = "#ff181818"; textColor = "#ff141414"; fontType = 3; textAccent = 3; icon = CurrentItem(); sound = 3925; showLootbeam = true; lootbeamColor = "#ff9e9e9e";
+#define PLANKS_S_STYLE backgroundColor = "#ffe0a878"; borderColor = "#ff181818"; textColor = "#ff141414"; fontType = 3; textAccent = 3; icon = CurrentItem(); sound = 3925; showLootbeam = true; lootbeamColor = "#ffe0a878";
 /*@ define:input:planks
 label: "Items"
 type: enumlist
@@ -1622,7 +1652,7 @@ type: style
 label: "Colour"
 group: "A tier"
 */
-#define PLANKS_A_STYLE backgroundColor = "#ff9e9e9e"; borderColor = "#ff181818"; textColor = "#ff141414"; fontType = 2; textAccent = 3; icon = CurrentItem(); sound = 3925;
+#define PLANKS_A_STYLE backgroundColor = "#ffe0a878"; borderColor = "#ff181818"; textColor = "#ff141414"; fontType = 2; textAccent = 3; icon = CurrentItem(); sound = 3925;
 /*@ define:input:planks
 label: "Items"
 type: enumlist
@@ -1641,7 +1671,7 @@ type: style
 label: "Colour"
 group: "B tier"
 */
-#define PLANKS_B_STYLE backgroundColor = "#ff9e9e9e"; borderColor = "#ff181818"; textColor = "#ff141414"; fontType = 1; textAccent = 3; icon = CurrentItem();
+#define PLANKS_B_STYLE backgroundColor = "#ffe0a878"; borderColor = "#ff181818"; textColor = "#ff141414"; fontType = 1; textAccent = 3; icon = CurrentItem();
 /*@ define:input:planks
 label: "Items"
 type: enumlist
@@ -1660,7 +1690,7 @@ type: style
 label: "Colour"
 group: "C tier"
 */
-#define PLANKS_C_STYLE backgroundColor = "#ff9e9e9e"; borderColor = "#ff181818"; textColor = "#ff141414"; fontType = 1; textAccent = 3; icon = CurrentItem();
+#define PLANKS_C_STYLE backgroundColor = "#ffe0a878"; borderColor = "#ff181818"; textColor = "#ff141414"; fontType = 1; textAccent = 3; icon = CurrentItem();
 /*@ define:input:planks
 label: "Items"
 type: enumlist
@@ -1679,7 +1709,7 @@ type: style
 label: "Colour"
 group: "D tier"
 */
-#define PLANKS_D_STYLE textColor = "#ff9e9e9e"; textAccent = 1; fontType = 1;
+#define PLANKS_D_STYLE textColor = "#ffe0a878"; textAccent = 1; fontType = 1;
 /*@ define:input:planks
 label: "Items"
 type: enumlist
@@ -1698,29 +1728,41 @@ type: style
 label: "Colour"
 group: "E tier"
 */
-#define PLANKS_E_STYLE textColor = "#9e9e9e9e"; textAccent = 1; fontType = 1; menuSort = -10000;
+#define PLANKS_E_STYLE textColor = "#9ee0a878"; textAccent = 1; fontType = 1; menuSort = -10000;
+rule (IRONMAN && name:PLANKS_SS_NAMES && quantity:<PLANKS_SS_MIN) { hidden = true; }
+rule (IRONMAN && name:PLANKS_SS_NAMES) { PLANKS_SS_STYLE }
+rule (IRONMAN && name:PLANKS_S_NAMES && quantity:<PLANKS_S_MIN) { hidden = true; }
+rule (IRONMAN && name:PLANKS_S_NAMES && quantity:>=10) { PLANKS_SS_STYLE }
+rule (IRONMAN && name:PLANKS_S_NAMES) { PLANKS_S_STYLE }
+rule (IRONMAN && name:PLANKS_A_NAMES && quantity:<PLANKS_A_MIN) { hidden = true; }
 rule (IRONMAN && name:PLANKS_A_NAMES && quantity:>=100) { PLANKS_SS_STYLE }
 rule (IRONMAN && name:PLANKS_A_NAMES && quantity:>=10) { PLANKS_S_STYLE }
-rule (IRONMAN && name:PLANKS_A_NAMES && quantity:<PLANKS_A_MIN) { hidden = true; }
 rule (IRONMAN && name:PLANKS_A_NAMES) { PLANKS_A_STYLE }
+rule (IRONMAN && name:PLANKS_B_NAMES && quantity:<PLANKS_B_MIN) { hidden = true; }
 rule (IRONMAN && name:PLANKS_B_NAMES && quantity:>=1000) { PLANKS_SS_STYLE }
 rule (IRONMAN && name:PLANKS_B_NAMES && quantity:>=100) { PLANKS_S_STYLE }
 rule (IRONMAN && name:PLANKS_B_NAMES && quantity:>=10) { PLANKS_A_STYLE }
-rule (IRONMAN && name:PLANKS_B_NAMES && quantity:<PLANKS_B_MIN) { hidden = true; }
 rule (IRONMAN && name:PLANKS_B_NAMES) { PLANKS_B_STYLE }
+rule (IRONMAN && name:PLANKS_C_NAMES && quantity:<PLANKS_C_MIN) { hidden = true; }
 rule (IRONMAN && name:PLANKS_C_NAMES && quantity:>=10000) { PLANKS_SS_STYLE }
 rule (IRONMAN && name:PLANKS_C_NAMES && quantity:>=1000) { PLANKS_S_STYLE }
 rule (IRONMAN && name:PLANKS_C_NAMES && quantity:>=100) { PLANKS_A_STYLE }
 rule (IRONMAN && name:PLANKS_C_NAMES && quantity:>=10) { PLANKS_B_STYLE }
-rule (IRONMAN && name:PLANKS_C_NAMES && quantity:<PLANKS_C_MIN) { hidden = true; }
 rule (IRONMAN && name:PLANKS_C_NAMES) { PLANKS_C_STYLE }
+rule (IRONMAN && name:PLANKS_D_NAMES && quantity:<PLANKS_D_MIN) { hidden = true; }
+rule (IRONMAN && name:PLANKS_D_NAMES && quantity:>=100000) { PLANKS_SS_STYLE }
+rule (IRONMAN && name:PLANKS_D_NAMES && quantity:>=10000) { PLANKS_S_STYLE }
+rule (IRONMAN && name:PLANKS_D_NAMES && quantity:>=1000) { PLANKS_A_STYLE }
+rule (IRONMAN && name:PLANKS_D_NAMES && quantity:>=100) { PLANKS_B_STYLE }
+rule (IRONMAN && name:PLANKS_D_NAMES && quantity:>=10) { PLANKS_C_STYLE }
+rule (IRONMAN && name:PLANKS_D_NAMES) { PLANKS_D_STYLE }
+rule (IRONMAN && name:PLANKS_E_NAMES && quantity:<PLANKS_E_MIN) { hidden = true; }
 rule (IRONMAN && name:PLANKS_E_NAMES && quantity:>=1000000) { PLANKS_SS_STYLE }
 rule (IRONMAN && name:PLANKS_E_NAMES && quantity:>=100000) { PLANKS_S_STYLE }
 rule (IRONMAN && name:PLANKS_E_NAMES && quantity:>=10000) { PLANKS_A_STYLE }
 rule (IRONMAN && name:PLANKS_E_NAMES && quantity:>=1000) { PLANKS_B_STYLE }
 rule (IRONMAN && name:PLANKS_E_NAMES && quantity:>=100) { PLANKS_C_STYLE }
 rule (IRONMAN && name:PLANKS_E_NAMES && quantity:>=10) { PLANKS_D_STYLE }
-rule (IRONMAN && name:PLANKS_E_NAMES && quantity:<PLANKS_E_MIN) { hidden = true; }
 rule (IRONMAN && name:PLANKS_E_NAMES) { PLANKS_E_STYLE }
 
 /*@ define:module:gems
@@ -1862,38 +1904,40 @@ label: "Colour"
 group: "E tier"
 */
 #define GEMS_E_STYLE textColor = "#9e30c0a0"; textAccent = 1; fontType = 1; menuSort = -10000;
-rule (IRONMAN && name:GEMS_S_NAMES && quantity:>=10) { GEMS_SS_STYLE }
+rule (IRONMAN && name:GEMS_SS_NAMES && quantity:<GEMS_SS_MIN) { hidden = true; }
+rule (IRONMAN && name:GEMS_SS_NAMES) { GEMS_SS_STYLE }
 rule (IRONMAN && name:GEMS_S_NAMES && quantity:<GEMS_S_MIN) { hidden = true; }
+rule (IRONMAN && name:GEMS_S_NAMES && quantity:>=10) { GEMS_SS_STYLE }
 rule (IRONMAN && name:GEMS_S_NAMES) { GEMS_S_STYLE }
+rule (IRONMAN && name:GEMS_A_NAMES && quantity:<GEMS_A_MIN) { hidden = true; }
 rule (IRONMAN && name:GEMS_A_NAMES && quantity:>=100) { GEMS_SS_STYLE }
 rule (IRONMAN && name:GEMS_A_NAMES && quantity:>=10) { GEMS_S_STYLE }
-rule (IRONMAN && name:GEMS_A_NAMES && quantity:<GEMS_A_MIN) { hidden = true; }
 rule (IRONMAN && name:GEMS_A_NAMES) { GEMS_A_STYLE }
+rule (IRONMAN && name:GEMS_B_NAMES && quantity:<GEMS_B_MIN) { hidden = true; }
 rule (IRONMAN && name:GEMS_B_NAMES && quantity:>=1000) { GEMS_SS_STYLE }
 rule (IRONMAN && name:GEMS_B_NAMES && quantity:>=100) { GEMS_S_STYLE }
 rule (IRONMAN && name:GEMS_B_NAMES && quantity:>=10) { GEMS_A_STYLE }
-rule (IRONMAN && name:GEMS_B_NAMES && quantity:<GEMS_B_MIN) { hidden = true; }
 rule (IRONMAN && name:GEMS_B_NAMES) { GEMS_B_STYLE }
+rule (IRONMAN && name:GEMS_C_NAMES && quantity:<GEMS_C_MIN) { hidden = true; }
 rule (IRONMAN && name:GEMS_C_NAMES && quantity:>=10000) { GEMS_SS_STYLE }
 rule (IRONMAN && name:GEMS_C_NAMES && quantity:>=1000) { GEMS_S_STYLE }
 rule (IRONMAN && name:GEMS_C_NAMES && quantity:>=100) { GEMS_A_STYLE }
 rule (IRONMAN && name:GEMS_C_NAMES && quantity:>=10) { GEMS_B_STYLE }
-rule (IRONMAN && name:GEMS_C_NAMES && quantity:<GEMS_C_MIN) { hidden = true; }
 rule (IRONMAN && name:GEMS_C_NAMES) { GEMS_C_STYLE }
+rule (IRONMAN && name:GEMS_D_NAMES && quantity:<GEMS_D_MIN) { hidden = true; }
 rule (IRONMAN && name:GEMS_D_NAMES && quantity:>=100000) { GEMS_SS_STYLE }
 rule (IRONMAN && name:GEMS_D_NAMES && quantity:>=10000) { GEMS_S_STYLE }
 rule (IRONMAN && name:GEMS_D_NAMES && quantity:>=1000) { GEMS_A_STYLE }
 rule (IRONMAN && name:GEMS_D_NAMES && quantity:>=100) { GEMS_B_STYLE }
 rule (IRONMAN && name:GEMS_D_NAMES && quantity:>=10) { GEMS_C_STYLE }
-rule (IRONMAN && name:GEMS_D_NAMES && quantity:<GEMS_D_MIN) { hidden = true; }
 rule (IRONMAN && name:GEMS_D_NAMES) { GEMS_D_STYLE }
+rule (IRONMAN && name:GEMS_E_NAMES && quantity:<GEMS_E_MIN) { hidden = true; }
 rule (IRONMAN && name:GEMS_E_NAMES && quantity:>=1000000) { GEMS_SS_STYLE }
 rule (IRONMAN && name:GEMS_E_NAMES && quantity:>=100000) { GEMS_S_STYLE }
 rule (IRONMAN && name:GEMS_E_NAMES && quantity:>=10000) { GEMS_A_STYLE }
 rule (IRONMAN && name:GEMS_E_NAMES && quantity:>=1000) { GEMS_B_STYLE }
 rule (IRONMAN && name:GEMS_E_NAMES && quantity:>=100) { GEMS_C_STYLE }
 rule (IRONMAN && name:GEMS_E_NAMES && quantity:>=10) { GEMS_D_STYLE }
-rule (IRONMAN && name:GEMS_E_NAMES && quantity:<GEMS_E_MIN) { hidden = true; }
 rule (IRONMAN && name:GEMS_E_NAMES) { GEMS_E_STYLE }
 
 /*@ define:module:ammo
@@ -2035,35 +2079,40 @@ label: "Colour"
 group: "E tier"
 */
 #define AMMO_E_STYLE textColor = "#9e8c2f5b"; textAccent = 1; fontType = 1; menuSort = -10000;
+rule (IRONMAN && name:AMMO_SS_NAMES && quantity:<AMMO_SS_MIN) { hidden = true; }
+rule (IRONMAN && name:AMMO_SS_NAMES) { AMMO_SS_STYLE }
+rule (IRONMAN && name:AMMO_S_NAMES && quantity:<AMMO_S_MIN) { hidden = true; }
+rule (IRONMAN && name:AMMO_S_NAMES && quantity:>=10) { AMMO_SS_STYLE }
+rule (IRONMAN && name:AMMO_S_NAMES) { AMMO_S_STYLE }
+rule (IRONMAN && name:AMMO_A_NAMES && quantity:<AMMO_A_MIN) { hidden = true; }
 rule (IRONMAN && name:AMMO_A_NAMES && quantity:>=100) { AMMO_SS_STYLE }
 rule (IRONMAN && name:AMMO_A_NAMES && quantity:>=10) { AMMO_S_STYLE }
-rule (IRONMAN && name:AMMO_A_NAMES && quantity:<AMMO_A_MIN) { hidden = true; }
 rule (IRONMAN && name:AMMO_A_NAMES) { AMMO_A_STYLE }
+rule (IRONMAN && name:AMMO_B_NAMES && quantity:<AMMO_B_MIN) { hidden = true; }
 rule (IRONMAN && name:AMMO_B_NAMES && quantity:>=1000) { AMMO_SS_STYLE }
 rule (IRONMAN && name:AMMO_B_NAMES && quantity:>=100) { AMMO_S_STYLE }
 rule (IRONMAN && name:AMMO_B_NAMES && quantity:>=10) { AMMO_A_STYLE }
-rule (IRONMAN && name:AMMO_B_NAMES && quantity:<AMMO_B_MIN) { hidden = true; }
 rule (IRONMAN && name:AMMO_B_NAMES) { AMMO_B_STYLE }
+rule (IRONMAN && name:AMMO_C_NAMES && quantity:<AMMO_C_MIN) { hidden = true; }
 rule (IRONMAN && name:AMMO_C_NAMES && quantity:>=10000) { AMMO_SS_STYLE }
 rule (IRONMAN && name:AMMO_C_NAMES && quantity:>=1000) { AMMO_S_STYLE }
 rule (IRONMAN && name:AMMO_C_NAMES && quantity:>=100) { AMMO_A_STYLE }
 rule (IRONMAN && name:AMMO_C_NAMES && quantity:>=10) { AMMO_B_STYLE }
-rule (IRONMAN && name:AMMO_C_NAMES && quantity:<AMMO_C_MIN) { hidden = true; }
 rule (IRONMAN && name:AMMO_C_NAMES) { AMMO_C_STYLE }
+rule (IRONMAN && name:AMMO_D_NAMES && quantity:<AMMO_D_MIN) { hidden = true; }
 rule (IRONMAN && name:AMMO_D_NAMES && quantity:>=100000) { AMMO_SS_STYLE }
 rule (IRONMAN && name:AMMO_D_NAMES && quantity:>=10000) { AMMO_S_STYLE }
 rule (IRONMAN && name:AMMO_D_NAMES && quantity:>=1000) { AMMO_A_STYLE }
 rule (IRONMAN && name:AMMO_D_NAMES && quantity:>=100) { AMMO_B_STYLE }
 rule (IRONMAN && name:AMMO_D_NAMES && quantity:>=10) { AMMO_C_STYLE }
-rule (IRONMAN && name:AMMO_D_NAMES && quantity:<AMMO_D_MIN) { hidden = true; }
 rule (IRONMAN && name:AMMO_D_NAMES) { AMMO_D_STYLE }
+rule (IRONMAN && name:AMMO_E_NAMES && quantity:<AMMO_E_MIN) { hidden = true; }
 rule (IRONMAN && name:AMMO_E_NAMES && quantity:>=1000000) { AMMO_SS_STYLE }
 rule (IRONMAN && name:AMMO_E_NAMES && quantity:>=100000) { AMMO_S_STYLE }
 rule (IRONMAN && name:AMMO_E_NAMES && quantity:>=10000) { AMMO_A_STYLE }
 rule (IRONMAN && name:AMMO_E_NAMES && quantity:>=1000) { AMMO_B_STYLE }
 rule (IRONMAN && name:AMMO_E_NAMES && quantity:>=100) { AMMO_C_STYLE }
 rule (IRONMAN && name:AMMO_E_NAMES && quantity:>=10) { AMMO_D_STYLE }
-rule (IRONMAN && name:AMMO_E_NAMES && quantity:<AMMO_E_MIN) { hidden = true; }
 rule (IRONMAN && name:AMMO_E_NAMES) { AMMO_E_STYLE }
 
 /*@ define:module:food
@@ -2205,28 +2254,40 @@ label: "Colour"
 group: "E tier"
 */
 #define FOOD_E_STYLE textColor = "#9ee0533a"; textAccent = 1; fontType = 1; menuSort = -10000;
+rule (IRONMAN && name:FOOD_SS_NAMES && quantity:<FOOD_SS_MIN) { hidden = true; }
+rule (IRONMAN && name:FOOD_SS_NAMES) { FOOD_SS_STYLE }
+rule (IRONMAN && name:FOOD_S_NAMES && quantity:<FOOD_S_MIN) { hidden = true; }
+rule (IRONMAN && name:FOOD_S_NAMES && quantity:>=10) { FOOD_SS_STYLE }
+rule (IRONMAN && name:FOOD_S_NAMES) { FOOD_S_STYLE }
+rule (IRONMAN && name:FOOD_A_NAMES && quantity:<FOOD_A_MIN) { hidden = true; }
 rule (IRONMAN && name:FOOD_A_NAMES && quantity:>=100) { FOOD_SS_STYLE }
 rule (IRONMAN && name:FOOD_A_NAMES && quantity:>=10) { FOOD_S_STYLE }
-rule (IRONMAN && name:FOOD_A_NAMES && quantity:<FOOD_A_MIN) { hidden = true; }
 rule (IRONMAN && name:FOOD_A_NAMES) { FOOD_A_STYLE }
+rule (IRONMAN && name:FOOD_B_NAMES && quantity:<FOOD_B_MIN) { hidden = true; }
 rule (IRONMAN && name:FOOD_B_NAMES && quantity:>=1000) { FOOD_SS_STYLE }
 rule (IRONMAN && name:FOOD_B_NAMES && quantity:>=100) { FOOD_S_STYLE }
 rule (IRONMAN && name:FOOD_B_NAMES && quantity:>=10) { FOOD_A_STYLE }
-rule (IRONMAN && name:FOOD_B_NAMES && quantity:<FOOD_B_MIN) { hidden = true; }
 rule (IRONMAN && name:FOOD_B_NAMES) { FOOD_B_STYLE }
+rule (IRONMAN && name:FOOD_C_NAMES && quantity:<FOOD_C_MIN) { hidden = true; }
 rule (IRONMAN && name:FOOD_C_NAMES && quantity:>=10000) { FOOD_SS_STYLE }
 rule (IRONMAN && name:FOOD_C_NAMES && quantity:>=1000) { FOOD_S_STYLE }
 rule (IRONMAN && name:FOOD_C_NAMES && quantity:>=100) { FOOD_A_STYLE }
 rule (IRONMAN && name:FOOD_C_NAMES && quantity:>=10) { FOOD_B_STYLE }
-rule (IRONMAN && name:FOOD_C_NAMES && quantity:<FOOD_C_MIN) { hidden = true; }
 rule (IRONMAN && name:FOOD_C_NAMES) { FOOD_C_STYLE }
+rule (IRONMAN && name:FOOD_D_NAMES && quantity:<FOOD_D_MIN) { hidden = true; }
+rule (IRONMAN && name:FOOD_D_NAMES && quantity:>=100000) { FOOD_SS_STYLE }
+rule (IRONMAN && name:FOOD_D_NAMES && quantity:>=10000) { FOOD_S_STYLE }
+rule (IRONMAN && name:FOOD_D_NAMES && quantity:>=1000) { FOOD_A_STYLE }
+rule (IRONMAN && name:FOOD_D_NAMES && quantity:>=100) { FOOD_B_STYLE }
+rule (IRONMAN && name:FOOD_D_NAMES && quantity:>=10) { FOOD_C_STYLE }
+rule (IRONMAN && name:FOOD_D_NAMES) { FOOD_D_STYLE }
+rule (IRONMAN && name:FOOD_E_NAMES && quantity:<FOOD_E_MIN) { hidden = true; }
 rule (IRONMAN && name:FOOD_E_NAMES && quantity:>=1000000) { FOOD_SS_STYLE }
 rule (IRONMAN && name:FOOD_E_NAMES && quantity:>=100000) { FOOD_S_STYLE }
 rule (IRONMAN && name:FOOD_E_NAMES && quantity:>=10000) { FOOD_A_STYLE }
 rule (IRONMAN && name:FOOD_E_NAMES && quantity:>=1000) { FOOD_B_STYLE }
 rule (IRONMAN && name:FOOD_E_NAMES && quantity:>=100) { FOOD_C_STYLE }
 rule (IRONMAN && name:FOOD_E_NAMES && quantity:>=10) { FOOD_D_STYLE }
-rule (IRONMAN && name:FOOD_E_NAMES && quantity:<FOOD_E_MIN) { hidden = true; }
 rule (IRONMAN && name:FOOD_E_NAMES) { FOOD_E_STYLE }
 
 /*@ define:module:prayer
@@ -2368,35 +2429,40 @@ label: "Colour"
 group: "E tier"
 */
 #define PRAYER_E_STYLE textColor = "#9ec7b9a0"; textAccent = 1; fontType = 1; menuSort = -10000;
+rule (IRONMAN && name:PRAYER_SS_NAMES && quantity:<PRAYER_SS_MIN) { hidden = true; }
+rule (IRONMAN && name:PRAYER_SS_NAMES) { PRAYER_SS_STYLE }
+rule (IRONMAN && name:PRAYER_S_NAMES && quantity:<PRAYER_S_MIN) { hidden = true; }
+rule (IRONMAN && name:PRAYER_S_NAMES && quantity:>=10) { PRAYER_SS_STYLE }
+rule (IRONMAN && name:PRAYER_S_NAMES) { PRAYER_S_STYLE }
+rule (IRONMAN && name:PRAYER_A_NAMES && quantity:<PRAYER_A_MIN) { hidden = true; }
 rule (IRONMAN && name:PRAYER_A_NAMES && quantity:>=100) { PRAYER_SS_STYLE }
 rule (IRONMAN && name:PRAYER_A_NAMES && quantity:>=10) { PRAYER_S_STYLE }
-rule (IRONMAN && name:PRAYER_A_NAMES && quantity:<PRAYER_A_MIN) { hidden = true; }
 rule (IRONMAN && name:PRAYER_A_NAMES) { PRAYER_A_STYLE }
+rule (IRONMAN && name:PRAYER_B_NAMES && quantity:<PRAYER_B_MIN) { hidden = true; }
 rule (IRONMAN && name:PRAYER_B_NAMES && quantity:>=1000) { PRAYER_SS_STYLE }
 rule (IRONMAN && name:PRAYER_B_NAMES && quantity:>=100) { PRAYER_S_STYLE }
 rule (IRONMAN && name:PRAYER_B_NAMES && quantity:>=10) { PRAYER_A_STYLE }
-rule (IRONMAN && name:PRAYER_B_NAMES && quantity:<PRAYER_B_MIN) { hidden = true; }
 rule (IRONMAN && name:PRAYER_B_NAMES) { PRAYER_B_STYLE }
+rule (IRONMAN && name:PRAYER_C_NAMES && quantity:<PRAYER_C_MIN) { hidden = true; }
 rule (IRONMAN && name:PRAYER_C_NAMES && quantity:>=10000) { PRAYER_SS_STYLE }
 rule (IRONMAN && name:PRAYER_C_NAMES && quantity:>=1000) { PRAYER_S_STYLE }
 rule (IRONMAN && name:PRAYER_C_NAMES && quantity:>=100) { PRAYER_A_STYLE }
 rule (IRONMAN && name:PRAYER_C_NAMES && quantity:>=10) { PRAYER_B_STYLE }
-rule (IRONMAN && name:PRAYER_C_NAMES && quantity:<PRAYER_C_MIN) { hidden = true; }
 rule (IRONMAN && name:PRAYER_C_NAMES) { PRAYER_C_STYLE }
+rule (IRONMAN && name:PRAYER_D_NAMES && quantity:<PRAYER_D_MIN) { hidden = true; }
 rule (IRONMAN && name:PRAYER_D_NAMES && quantity:>=100000) { PRAYER_SS_STYLE }
 rule (IRONMAN && name:PRAYER_D_NAMES && quantity:>=10000) { PRAYER_S_STYLE }
 rule (IRONMAN && name:PRAYER_D_NAMES && quantity:>=1000) { PRAYER_A_STYLE }
 rule (IRONMAN && name:PRAYER_D_NAMES && quantity:>=100) { PRAYER_B_STYLE }
 rule (IRONMAN && name:PRAYER_D_NAMES && quantity:>=10) { PRAYER_C_STYLE }
-rule (IRONMAN && name:PRAYER_D_NAMES && quantity:<PRAYER_D_MIN) { hidden = true; }
 rule (IRONMAN && name:PRAYER_D_NAMES) { PRAYER_D_STYLE }
+rule (IRONMAN && name:PRAYER_E_NAMES && quantity:<PRAYER_E_MIN) { hidden = true; }
 rule (IRONMAN && name:PRAYER_E_NAMES && quantity:>=1000000) { PRAYER_SS_STYLE }
 rule (IRONMAN && name:PRAYER_E_NAMES && quantity:>=100000) { PRAYER_S_STYLE }
 rule (IRONMAN && name:PRAYER_E_NAMES && quantity:>=10000) { PRAYER_A_STYLE }
 rule (IRONMAN && name:PRAYER_E_NAMES && quantity:>=1000) { PRAYER_B_STYLE }
 rule (IRONMAN && name:PRAYER_E_NAMES && quantity:>=100) { PRAYER_C_STYLE }
 rule (IRONMAN && name:PRAYER_E_NAMES && quantity:>=10) { PRAYER_D_STYLE }
-rule (IRONMAN && name:PRAYER_E_NAMES && quantity:<PRAYER_E_MIN) { hidden = true; }
 rule (IRONMAN && name:PRAYER_E_NAMES) { PRAYER_E_STYLE }
 
 /*@ define:module:essence
@@ -2423,7 +2489,7 @@ type: style
 label: "Colour"
 group: "SS tier"
 */
-#define ESSENCE_SS_STYLE backgroundColor = "#ff9e9e9e"; borderColor = "#ff181818"; textColor = "#ff141414"; fontType = 3; textAccent = 3; icon = CurrentItem(); sound = 3925; showLootbeam = true; lootbeamColor = "#ff9e9e9e";
+#define ESSENCE_SS_STYLE backgroundColor = "#ff7d7da0"; borderColor = "#ffffffff"; textColor = "#fff5f5f5"; fontType = 3; textAccent = 3; icon = CurrentItem(); sound = 3925; showLootbeam = true; lootbeamColor = "#ff7d7da0";
 /*@ define:input:essence
 label: "Items"
 type: enumlist
@@ -2442,7 +2508,7 @@ type: style
 label: "Colour"
 group: "S tier"
 */
-#define ESSENCE_S_STYLE backgroundColor = "#ff9e9e9e"; borderColor = "#ff181818"; textColor = "#ff141414"; fontType = 3; textAccent = 3; icon = CurrentItem(); sound = 3925; showLootbeam = true; lootbeamColor = "#ff9e9e9e";
+#define ESSENCE_S_STYLE backgroundColor = "#ff7d7da0"; borderColor = "#ffffffff"; textColor = "#fff5f5f5"; fontType = 3; textAccent = 3; icon = CurrentItem(); sound = 3925; showLootbeam = true; lootbeamColor = "#ff7d7da0";
 /*@ define:input:essence
 label: "Items"
 type: enumlist
@@ -2461,7 +2527,7 @@ type: style
 label: "Colour"
 group: "A tier"
 */
-#define ESSENCE_A_STYLE backgroundColor = "#ff9e9e9e"; borderColor = "#ff181818"; textColor = "#ff141414"; fontType = 2; textAccent = 3; icon = CurrentItem(); sound = 3925;
+#define ESSENCE_A_STYLE backgroundColor = "#ff7d7da0"; borderColor = "#ffffffff"; textColor = "#fff5f5f5"; fontType = 2; textAccent = 3; icon = CurrentItem(); sound = 3925;
 /*@ define:input:essence
 label: "Items"
 type: enumlist
@@ -2480,7 +2546,7 @@ type: style
 label: "Colour"
 group: "B tier"
 */
-#define ESSENCE_B_STYLE backgroundColor = "#ff9e9e9e"; borderColor = "#ff181818"; textColor = "#ff141414"; fontType = 1; textAccent = 3; icon = CurrentItem();
+#define ESSENCE_B_STYLE backgroundColor = "#ff7d7da0"; borderColor = "#ffffffff"; textColor = "#fff5f5f5"; fontType = 1; textAccent = 3; icon = CurrentItem();
 /*@ define:input:essence
 label: "Items"
 type: enumlist
@@ -2499,21 +2565,26 @@ type: style
 label: "Colour"
 group: "C tier"
 */
-#define ESSENCE_C_STYLE backgroundColor = "#ff9e9e9e"; borderColor = "#ff181818"; textColor = "#ff141414"; fontType = 1; textAccent = 3; icon = CurrentItem();
+#define ESSENCE_C_STYLE backgroundColor = "#ff7d7da0"; borderColor = "#ffffffff"; textColor = "#fff5f5f5"; fontType = 1; textAccent = 3; icon = CurrentItem();
+rule (IRONMAN && name:ESSENCE_SS_NAMES && quantity:<ESSENCE_SS_MIN) { hidden = true; }
+rule (IRONMAN && name:ESSENCE_SS_NAMES) { ESSENCE_SS_STYLE }
+rule (IRONMAN && name:ESSENCE_S_NAMES && quantity:<ESSENCE_S_MIN) { hidden = true; }
+rule (IRONMAN && name:ESSENCE_S_NAMES && quantity:>=10) { ESSENCE_SS_STYLE }
+rule (IRONMAN && name:ESSENCE_S_NAMES) { ESSENCE_S_STYLE }
+rule (IRONMAN && name:ESSENCE_A_NAMES && quantity:<ESSENCE_A_MIN) { hidden = true; }
 rule (IRONMAN && name:ESSENCE_A_NAMES && quantity:>=100) { ESSENCE_SS_STYLE }
 rule (IRONMAN && name:ESSENCE_A_NAMES && quantity:>=10) { ESSENCE_S_STYLE }
-rule (IRONMAN && name:ESSENCE_A_NAMES && quantity:<ESSENCE_A_MIN) { hidden = true; }
 rule (IRONMAN && name:ESSENCE_A_NAMES) { ESSENCE_A_STYLE }
+rule (IRONMAN && name:ESSENCE_B_NAMES && quantity:<ESSENCE_B_MIN) { hidden = true; }
 rule (IRONMAN && name:ESSENCE_B_NAMES && quantity:>=1000) { ESSENCE_SS_STYLE }
 rule (IRONMAN && name:ESSENCE_B_NAMES && quantity:>=100) { ESSENCE_S_STYLE }
 rule (IRONMAN && name:ESSENCE_B_NAMES && quantity:>=10) { ESSENCE_A_STYLE }
-rule (IRONMAN && name:ESSENCE_B_NAMES && quantity:<ESSENCE_B_MIN) { hidden = true; }
 rule (IRONMAN && name:ESSENCE_B_NAMES) { ESSENCE_B_STYLE }
+rule (IRONMAN && name:ESSENCE_C_NAMES && quantity:<ESSENCE_C_MIN) { hidden = true; }
 rule (IRONMAN && name:ESSENCE_C_NAMES && quantity:>=10000) { ESSENCE_SS_STYLE }
 rule (IRONMAN && name:ESSENCE_C_NAMES && quantity:>=1000) { ESSENCE_S_STYLE }
 rule (IRONMAN && name:ESSENCE_C_NAMES && quantity:>=100) { ESSENCE_A_STYLE }
 rule (IRONMAN && name:ESSENCE_C_NAMES && quantity:>=10) { ESSENCE_B_STYLE }
-rule (IRONMAN && name:ESSENCE_C_NAMES && quantity:<ESSENCE_C_MIN) { hidden = true; }
 rule (IRONMAN && name:ESSENCE_C_NAMES) { ESSENCE_C_STYLE }
 
 /*@ define:module:categories
