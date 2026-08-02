@@ -131,3 +131,19 @@ def gear_score(stats: dict) -> int:
 
 # Within-slot gear tiers: fraction of the slot's max score -> emphasis grade (design §7).
 GEAR_TIERS = [("S", 0.80), ("A", 0.55), ("B", 0.30), ("C", 0.0)]
+
+GRADE_ORDER = ["SS", "S", "A", "B", "C", "D", "E"]   # index 0 = loudest; single source for the quantity model
+
+def _decades(count: int) -> int:
+    """floor(log10(count)) via integer division — avoids the float log10(1000)=2.9999.. misgrade."""
+    d = 0
+    while count >= 10:
+        count //= 10
+        d += 1
+    return d
+
+def quantity_display_grade(base_grade: str, count: int) -> str:
+    """Promote base_grade one step toward SS per ×10 in pile count, capped at SS (design §3)."""
+    bi = GRADE_ORDER.index(base_grade)
+    steps = _decades(count) if count >= 1 else 0
+    return GRADE_ORDER[max(0, bi - steps)]

@@ -8,7 +8,8 @@ import re
 from osrs_planner.lootfilter.palette import VALUE_GRADES, style_for, FALLBACK_HUES, _text_on, _border_on, COIN_TIERS
 from osrs_planner.lootfilter.palette import TROPHY_GRADES  # add to imports
 from osrs_planner.lootfilter.palette import FAMILY_HUES, gear_score, GEAR_TIERS
-from osrs_planner.lootfilter.categories import category_rules, ORE_NAMES, BAR_NAMES  # add
+from osrs_planner.lootfilter.palette import GRADE_ORDER, quantity_display_grade
+from osrs_planner.lootfilter.categories import category_rules, categorize
 
 IRONMAN = "IRONMAN"
 _BARE = {"true", "false"}
@@ -29,11 +30,19 @@ def _macro_body(style: dict) -> str:
     """A style dict as a `#define` macro body: 'k = v;' pairs WITHOUT the wrapping braces."""
     return style_str(style)[2:-2].strip()   # reuse style_str, drop the '{ ' ... ' }'
 
+def _yaml_scalar(value: str) -> str:
+    """Double-quote a value destined for a YAML plain-scalar field (name/subtitle/label/group).
+    FilterScape parses each `define:module`/`define:input`/`define:group` body as YAML, and a plain
+    scalar containing a colon-space, '#', or a leading indicator char throws -- which nulls the
+    ENTIRE imported filter ('No filter selected'), not just its module. Quoting is the class-level
+    guard so any editorial string is import-safe."""
+    return '"' + value.replace("\\", "\\\\").replace('"', '\\"') + '"'
+
 def emit_style_input(module_id: str, label: str, group: str, macro: str, conds: str,
                      style: dict, terminal: bool = True) -> str:
     """A FilterScape-EDITABLE style: a `type: style` input (colour picker) + a `#define` holding its
     default + a rule that applies the macro. Editing the picker rewrites the #define on export."""
-    decl = f"/*@ define:input:{module_id}\ntype: style\nlabel: {label}\ngroup: {group}\n*/"
+    decl = f"/*@ define:input:{module_id}\ntype: style\nlabel: {_yaml_scalar(label)}\ngroup: {_yaml_scalar(group)}\n*/"
     define = f"#define {macro} {_macro_body(style)}"
     rule = f"{'rule' if terminal else 'apply'} ({conds}) {{ {macro} }}"
     return f"{decl}\n{define}\n{rule}"
@@ -44,8 +53,8 @@ def emit_meta(name: str, desc: str) -> str:
 def emit_module(module_id: str, name: str, body: str, subtitle: str = "", description: str = "") -> str:
     # FilterScape/loot-filters-ui require name + subtitle + description on EVERY module (the plugin
     # is lenient, the web customizer isn't -- a missing field makes its importer build a bad module).
-    return (f"/*@ define:module:{module_id}\nname: {name}\n"
-            f"subtitle: {subtitle or name}\n"
+    return (f"/*@ define:module:{module_id}\nname: {_yaml_scalar(name)}\n"
+            f"subtitle: {_yaml_scalar(subtitle or name)}\n"
             f"description: |\n    {description or name}\n*/\n{body}\n")
 
 def emit_preamble() -> str:
@@ -83,6 +92,14 @@ def emit_fallback() -> str:
 
 def _id_list(ids) -> str:
     return "id:[" + ", ".join(str(i) for i in sorted(set(ids))) + "]"
+
+def hue_for(name: str, family: str) -> str:
+    """Identity hue for a resource item: per-name via categorize() (coal dark, per-element runes,
+    per-tree logs, gems, ore/bar), else the family hue, else neutral grey (never raises)."""
+    c = categorize(name)
+    if c and c.get("hue"):
+        return c["hue"]
+    return FAMILY_HUES.get(family, "#ff9e9e9e")
 
 def _trophy_style(emph: dict) -> dict:
     return {"textColor": "#ffffffff", "backgroundColor": "#ff" + emph["hue"][3:], "borderColor": emph["hue"],
@@ -196,29 +213,51 @@ def emit_categories() -> str:
         cid, display, patterns, hue, excludes = row[:5]
         border = row[5] if len(row) > 5 else None   # optional 6th elem: border override (divine potions)
         group = _GROUP_LABEL.get(cid, cid.title())
-        if hue is None:  # ores/bars -> one editable picker PER NAME (each carries its own hue)
-            table = ORE_NAMES if cid == "ores" else BAR_NAMES
-            for nm in patterns:
-                add(cid, nm, group, [nm], table[nm], [], None)
-        else:
-            add(cid, display, group, patterns, hue, excludes, border)
+        add(cid, display, group, patterns, hue, excludes, border)
     return emit_module("categories", "Categories", "\n".join(lines), "By material / type")
 
-def emit_families(family_ids) -> str:
-    """One editable style-input per derived family, over its id-list (design objects/resources).
-    family_ids: {family: [item_id, ...]}. Skips 'gear' (handled by emit_gear, stat-tiered) and any
-    family with no ids or no entry in FAMILY_HUES."""
+def emit_families(family_ids, skip=frozenset()) -> str:
+    """One editable style-input per derived family. Skips 'gear' (stat-tiered by emit_gear), any
+    family with no ids / no FAMILY_HUES entry, and any family in `skip` (owned by emit_quantities)."""
     used, lines = set(), []
     for fam in sorted(family_ids):
         ids = family_ids[fam]
-        if not ids or fam not in FAMILY_HUES:
-            continue
-        if fam == "gear":       # gear handled by emit_gear (stat-tiered) — skip here
+        if not ids or fam not in FAMILY_HUES or fam == "gear" or fam in skip:
             continue
         lines.append(emit_style_input("families", fam.replace("_", " ").title(), "Families",
             _macro_name("FAM", fam, used), f"{IRONMAN} && {_id_list(ids)}",
             _flat_panel(FAMILY_HUES[fam])))
     return emit_module("families", "Resource families", "\n".join(lines), "By derived family")
+
+def emit_quantities(importance, hue_for=hue_for) -> str:
+    """Resource piles: hand-ranked base tier (from loot_importance) escalated one grade per ×10 in
+    pile count (design §3/§5), rendered in the item's identity hue. Groups by (family, hue, base) so
+    id-lists stay short; per group emits threshold-descending rules (SS first = first-match-wins)."""
+    from collections import defaultdict
+    groups = defaultdict(list)            # (family, hue, base_tier) -> [item_id]
+    all_ids = []
+    for r in importance:
+        hue = hue_for(r["name"], r["family"])
+        groups[(r["family"], hue, r["base_tier"])].append(r["item_id"])
+        all_ids.append(r["item_id"])
+    used, lines = set(), []
+    lines.append("/*@ define:input:quantities\nlabel: Hide piles below count\ntype: number\ngroup: Hide\n*/\n#define QUANTITY_FLOOR 0")
+    lines.append(emit_rule(f"{IRONMAN} && {_id_list(all_ids)} && quantity:<QUANTITY_FLOOR", {"hidden": "true"}, terminal=False))
+    for family, hue, base in sorted(groups, key=lambda k: (k[0], GRADE_ORDER.index(k[2]), k[1])):
+        ids = groups[(family, hue, base)]
+        bi = GRADE_ORDER.index(base)
+        group_label = f"Quantities — {family.replace('_', ' ').title()}"
+        for k in range(bi, -1, -1):                    # decades: k=bi (thr 10^bi -> SS) first .. k=0 (thr 1 -> base)
+            thr = 10 ** k
+            grade = quantity_display_grade(base, thr)  # single-source the ×10 model (Task 1)
+            cond = f"{IRONMAN} && {_id_list(ids)}"
+            if thr > 1:
+                cond += f" && quantity:>={thr}"
+            lines.append(emit_style_input("quantities", f"{family.title()} {grade} (base {base}, >={thr})",
+                group_label, _macro_name("QTY", f"{family}_{base}_{grade}_{hue[3:]}", used), cond,
+                style_for(hue, grade)))
+    return emit_module("quantities", "Quantities", "\n".join(lines),
+                       "Resource piles: base importance escalated by stack size")
 
 def emit_settings() -> str:
     body = "\n".join([
@@ -282,7 +321,7 @@ def emit_untradeables() -> str:
 
 def emit_list_input(module_id: str, label: str, group: str, macro: str, default: str = "") -> str:
     """A `type: stringlist` input + its #define (default empty). Users type item names into it."""
-    decl = f"/*@ define:input:{module_id}\ntype: stringlist\nlabel: {label}\ngroup: {group}\n*/"
+    decl = f"/*@ define:input:{module_id}\ntype: stringlist\nlabel: {_yaml_scalar(label)}\ngroup: {_yaml_scalar(group)}\n*/"
     return f"{decl}\n#define {macro} [{default}]"
 
 def emit_custom_highlights(free: int = 6, tiers=("SS", "S", "A", "B", "C")) -> str:

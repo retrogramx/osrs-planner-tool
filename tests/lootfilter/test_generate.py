@@ -49,7 +49,9 @@ def test_gear_ids_are_disjoint_across_tiers():
     ids = [r["item_id"] for r in recs]
     assert len(ids) == len(set(ids)), "a gear item_id appears more than once in load_gear_records"
     F = generate_filter()
-    gear_module = F[F.index("define:module:gear"):F.index("define:module:families")]
+    # slice ends at quantities (the module immediately after gear) -- NOT families, since quantities
+    # sits between them and legitimately repeats each id across its own decade ladder.
+    gear_module = F[F.index("define:module:gear"):F.index("define:module:quantities")]
     seen = []
     for m in re.findall(r"id:\[([0-9, ]+)\]", gear_module):
         seen.extend(int(t) for t in m.split(","))
@@ -69,3 +71,21 @@ def test_tailored_hide_owned_spares_high_value():
     assert m, "expected a HIDE_OWNED rule for the cheap item"
     ids = set(m.group(1)[4:-1].replace(" ", "").split(","))
     assert str(lv) in ids and str(hv) not in ids   # cheap hideable; valuable spared
+
+def test_module_order_has_quantities_between_gear_and_categories():
+    from osrs_planner.lootfilter.generate import generate_filter
+    f = generate_filter()
+    order = ["settings", "custom", "notable", "trophies", "gear", "quantities",
+             "categories", "families", "untradeables", "coins", "fallback"]
+    idxs = [f.find(f"define:module:{m}") for m in order]
+    assert all(i != -1 for i in idxs), [m for m, i in zip(order, idxs) if i == -1]
+    assert idxs == sorted(idxs), "modules out of order"
+
+def test_quantities_supersedes_resource_categories():
+    from osrs_planner.lootfilter.generate import generate_filter
+    from osrs_planner.lootfilter.categories import categorize
+    f = generate_filter()
+    # coal still styled (dark hue present via quantities) but the standalone "Coal" CATEGORY macro is gone
+    assert "#ff2b2b2b" in f and "CAT_COAL" not in f
+    assert "#ffd8b01a" in f      # Gold ore/bar keep their gold identity hue (not gear-metal red) via quantities
+    assert categorize("Coal")["id"] == "ores"      # categorize() itself is UNCHANGED (still resolves)

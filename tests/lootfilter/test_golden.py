@@ -15,3 +15,5 @@ def test_new_layers_present():
     for mod in ("custom", "notable", "gear", "families"):
         assert f"define:module:{mod}" in F, f"Module {mod} not found in filter"
     assert "value:>=500000" in F, "Value safety-net beam (>=500000) not found in filter"
+def test_quantities_module_present():
+    assert "define:module:quantities" in F and "#define QUANTITY_FLOOR 0" in F

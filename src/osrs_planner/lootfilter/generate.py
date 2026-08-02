@@ -105,6 +105,10 @@ def load_family_ids(data_dir: str = DATA) -> dict:
         out[fam].append(iid)
     return dict(out)
 
+def load_importance(data_dir: str = DATA) -> list[dict]:
+    """Editorial base-importance records for emit_quantities (design §4)."""
+    return json.load(open(os.path.join(data_dir, "loot_importance.json"), encoding="utf-8"))["records"]
+
 def generate_filter(account_state=None, data_dir: str = DATA, title=None, description=None) -> str:
     # default to the generic identity; a tailored build should pass a distinct title so the
     # plugin lists it as its OWN filter (it keys on meta.name -> avoids colliding with generic).
@@ -116,20 +120,20 @@ def generate_filter(account_state=None, data_dir: str = DATA, title=None, descri
     # module order (§8, whole-branch-review fix A -- categories moved ABOVE families: rules are
     # terminal/first-match-wins, so specific hand-authored per-name hues in categories must win
     # over the broad derived-family flat hues, not be shadowed by them): settings -> custom ->
-    # [tailoring if account_state] -> notable -> trophies -> gear -> categories -> families ->
-    # untradeables -> coins -> fallback -> meta.
+    # [tailoring if account_state] -> notable -> trophies -> gear -> quantities -> categories ->
+    # families -> untradeables -> coins -> fallback -> meta.
     parts = [emit.emit_settings(), emit.emit_custom_highlights()]
     if account_state is not None:  # tailored: thread value (hide-owned guard) + rarity (beam intensity)
         parts.append(tailor.emit_tailoring(account_state, set(clog), value_index=load_value_index(data_dir),
                                            rarity_index=load_clog_rarity(data_dir)))
+    importance = load_importance(data_dir)
+    ranked_families = {r["family"] for r in importance}
     parts += [emit.emit_notable(load_recommended_ids(data_dir), load_rare_ids(data_dir)),
               emit.emit_trophies(clog),
               emit.emit_gear(load_gear_records(data_dir)),
-              emit.emit_categories(),      # ABOVE families: hand-authored per-name hues (ores, per-
-                                           # element runes, non-oak logs, seeds, bones, potion sub-
-                                           # liquids, teleport, charged_jewellery, essence, planks)
-                                           # must win over the broad derived-family fallback below.
-              emit.emit_families(load_family_ids(data_dir)),
+              emit.emit_quantities(importance),           # ABOVE categories: resource piles, base tier + ×10 escalation
+              emit.emit_categories(),                     # trimmed to gear-metal/teleports/jewellery/potions
+              emit.emit_families(load_family_ids(data_dir), skip=ranked_families),
               emit.emit_untradeables(), emit.emit_coins(), emit.emit_fallback(),
               emit.emit_meta(title, description)]
     return "\n".join(parts) + "\n"
