@@ -1,0 +1,132 @@
+{{Iron Guide Links}}
+
+[[File:Hunter.png|left]]
+[[Hunter]] is a skill that is commonly trained mostly as [[Hunter training|normal]], however, an emphasis is placed on gathering ingredients for [[Herblore]] and [[Ranged]], with [[bird house trapping]], [[Herbiboar]] and [[hunter rumours]] all providing useful resources.
+
+At higher levels, ironmen will often hunt [[chinchompa]]s to aid in [[Ironman Guide/Ranged|ranged training]].
+
+====Important unlocks====
+[[Quests]] and [[achievement diaries]] are strongly recommended or required to access several hunter training methods.
+
+* [[Eagles' Peak]] (requires {{SCP|Hunter|27}}) is needed to unlock [[box trap]]s, the only way to hunt [[chinchompa]]s. It also rewards 2500 Hunter XP.
+* [[Bone Voyage]] for access to [[bird house trapping]] and [[Herbiboar]]
+* [[Children of the Sun]] for access to the [[Hunters' Guild]] and [[At First Light]] (requires {{SCP|Hunter|46}}) for access to Master Tier [[Hunter Rumours]]
+* [[Song of the Elves]] or the hard [[Western Provinces Diary]] for the best spots to hunt [[carnivorous chinchompas]]
+
+Additionally, higher [[crafting]] and [[woodcutting]] levels for higher tier [[bird houses]] is strongly recommended, and loot from [[Herbiboar]] and [[hunter loot sacks]] scales with levels in other skills.
+
+Good teleportation options such as [[fairy rings]] and higher agility levels for better [[run restoration]] may also be helpful when training Hunter.
+
+==Recommended training methods==
+===Levels 1-9: Natural History Quiz===
+The [[natural history quiz]] in [[Varrock Museum]] has no requirements, is very short, and rewards 1,000 Hunter experience, enough to get to level 9. Completing the quiz will allow players to begin [[birdhouse trapping]] without any other training.
+
+Unlike most other skills, Hunter has no other quests that give Hunter XP with no Hunter requirement. Players wishing to get to the Hunter's Guild quickly are recommended to do [[The Ascent of Arceuus]] at level 12 for 1500 XP, [[Eagles' Peak]] at level 27 for 2500 XP, and [[Perilous Moons]] at level 20 (and several other requirements including 48 Slayer) for 5000 XP.
+
+===Levels 9+: Bird house trapping===
+[[File:Bird house trapping.png|thumb|right|200px|Filling a [[bird house]] on [[Fossil Island]].]]
+{{Main|Bird house trapping}}
+
+Bird house trapping on [[Fossil Island]] is recommended alongside other training methods at all levels, as it yields the player [[bird nest]]s for Herblore experience, and some tree seeds for [[Ironman Guide/Farming|Farming training]], along with fairly high hunter experience for the amount of time invested. This method becomes available after the completion of [[Bone Voyage]].
+
+Consider farming [[giant seaweed]] whenever you go to Fossil Island for Crafting experience and/or [[Hespori seed]]s.
+
+It is always worth building the highest level bird house possible, as the experience and bird nest yield scales with bird house tier.
+
+[[Amelia (Farming Guild)|Amelia]] in the [[Farming Guild]] is an NPC that never moves and runs [[Amelia's Seed Shop]]. She sells a variety of seeds which can be used in birdhouses. Players can quickly accumulate a large number of seeds using multiple worlds.
+
+===Levels 46/57/72/91+: Hunters' Rumours===
+{{Main|Hunters' Rumours}}At the [[Hunter Guild]] in [[Varlamore]], completing assigned [[Hunters' Rumours]] requires the player to engage in a range of traditional hunter training methods. Completing rumours will reward [[Hunters' loot sack|Hunters' loot sacks]], which can give a variety of supplies such as herbs, logs, meats, birds nests, and bones for [[Prayer]] experience.
+
+===Levels 63/73/80+: Chinchompas===
+{{Main|Black chinchompas}}[[File:Hardcore ironman chat badge.png]] Hardcore ironmen cannot realistically hunt [[Black chinchompa (Hunter)|black chinchompas]] in the Wilderness. It is recommended to get at least level 80 from bird houses before catching [[Carnivorous chinchompa|red chinchompas]], to lay five traps at once.
+
+Hunt [[Black chinchompa|black]] or [[Carnivorous chinchompa|red chinchompas]] for [[Ranged training]]. Once a high Ranged level has been achieved, chinchompas can also be used for killing [[Kree'Arra]] for [[Armadyl armour]] pieces, killing the [[Venenatis spiderling|spiderlings]] at [[Spindel]] or [[Venenatis]], used in the [[Theatre of Blood]] for players in the range role, or for attempting to complete [[combat achievements]] for [[Fight Caves]] or [[Inferno]].
+
+===Level 80+: Herbiboar===
+{{Main|Herbiboar}}
+
+Tracking [[herbiboar]]s is a decent alternative to hunting chinchompas, as it gives the player herbs and is well-suited for alching or making [[broad arrows]] for [[Fletching training]]. Players will need to have [[stamina potion]]s and a [[herb sack]] for this, and having a high Herblore level (80+) is recommended for higher-quality herbs. Using stamina potions and a herb sack, attentive players can gain around 115,000-130,000 Hunter experience per hour tracking the Herbiboar depending on Hunter level.
+
+== Fastest active training methods ==
+To beeline Hunters' Rumors, first get level 9 with the history quiz in Varrock, and then follow the steps below. 
+
+Bring the following items:
+
+* A [[noose wand]], [[Stamina potion|stamina potions]], and [[Ring of pursuit|rings of pursuit]] to [[Tracking|track]] [[Kebbit|kebbits]] at levels 9–25 and 49-73.
+* A [[butterfly net]] and possibly [[Butterfly jar|butterfly jars]] to catch [[sapphire glacialis]] butterflies at levels 25–37. These also function as single-dose super defence potions, or two-dose potions if hunter meat is added.
+* [[Box trap|Box traps]] to catch embertailed jerboas at levels 39–43.
+* {{Coins|500}} for [[Falconry]] fee at levels 43–46
+
+=== Levels 9–13/25: Feldip weasels ===
+[[File:Feldip_weasel_location.png|thumb|width=200x200|Location of the feldip weasels.]]
+From level 9 to 13, catch [[Feldip weasel|feldip weasels]] in the [[Feldip Hunter area]]. To quickly get there, use a [[Feldip hills teleport|Feldip Hills teleport scroll]] and run south near to the dungeon icon. Equip a [[noose wand]] and several [[Ring of pursuit|rings of pursuit]], and inspect one of the burrows to start tracking a kebbit. Follow the end of the trail, attack the bush to catch the kebbit, and inspect a burrow again. Equipping a ring of pursuit will reveal the entire track at once.
+
+Players can gain around 13,000 experience per hour. More information about catching feldip weasels can be found [[Feldip weasel#Strategies|here]].
+
+Although the [[Desert devil|desert devils]] provide faster rates from level 13 onwards, the time saved to reach level 25 by hunting them is only 10 minutes. They should therefore not be prioritised if transportation is at all an issue.
+
+=== Levels 13–25: Desert devils ===
+{{Map|3402,3131|3396,3105|mtype=pin|align=left|width=150|height=150}}
+
+From level 13 to 25, catch [[Desert devil|desert devils]] in the [[Uzer hunter area]]. To quickly get there, rub [[Necklace of passage]], teleport to Eagles' Eyrie, and run south near until you find two salamander traps with a burrow nearby. Bring 6–7 full [[Waterskin|waterskins]] for the desert heat.
+
+Equip a [[noose wand]] and a [[ring of pursuit]], and inspect one of the burrows to start tracking a kebbit. Attack the bush at the end of the tracks to catch the kebbit, and inspect a nearby burrow again.
+
+Players can gain around 18,500 experience per hour.{{clear}}
+
+==== Levels 12-25: Alternative option ====
+At level 12, the player can instead either continue with [[Feldip weasel|Feldip weasels]] or complete [[The Ascent of Arceuus]] for 1500 hunter experience which will get the player past level 15.
+
+Once the player is level 15, it's possible to hunt [[ruby harvests]] while catching birds. (Ruby harvests function as super attack potions when released and so may be worth catching for future use.) Although the birds alone give very little experience, combining them increases the maximum experience gain to up to 20,000 experience per hour with two traps. The [[copper longtails]] give very little experience per hour and therefore should not be prioritised or caught from level 9 to 15, though they are certainly worth catching alongside ruby harvest butterflies.
+
+=== Levels 25–39: Sapphire glacialis ===
+{{Map|2703,3822|2708,3822|2715,3808|2720,3805|2720,3834|2734,3823|mtype=pin|align=right}}
+
+From level 25 to 39, equip a butterfly net and catch [[sapphire glacialis]]. These can be found in a few areas. Firstly, Rellekka hunter area has many spawns as well as spawns for [[snowy knight]] for 35 onwards and [[cerulean twitch]] to trap at the same time as the butterflies. The player can get 28,500 experience per hour at level 25. If catching on [[Mons Gratia]], they may be found to the south-west of the mountains peak. You can find two spawns close by.
+
+To help you catch the butterflies you can use [[Choose option|minimenu reordering]] to avoid clicking the other butterflies and mark the spawn tiles. Catching these butterflies from north or east side will cause the butterflies to flee south-west reducing the amount of running required and improving your overall experience rates.
+
+From level 35 onwards unequip your butterfly net (if not using a [[magic butterfly net]]) for slightly better catch rates.
+{{LocTableHead}}
+{{LocLine|x:2703,y:3822|x:2708,y:3822|x:2715,y:3808|x:2720,y:3805|x:2720,y:3834|x:2734,y:3823|Name=Sapphire glacialis|location=[[Rellekka Hunter area]] {{fairycode|DKS}}|levels=N/A|members=Yes|mapID=0|plane=0|mtype=pin|leagueRegion=Fremennik}}
+{{LocLine|x:1237,y:3746|x:1258,y:3746|Name=Sapphire glacialis|location=[[Farming Guild]]|levels=N/A|members=Yes|mapID=0|plane=0|mtype=pin|leagueRegion=Kourend}}
+{{LocLine|x:1437,y:3235|x:1432,y:3240|x:1432,y:3259|x:1436,y:3249|x:1444,y:3254|x:1452,y:3251|x:1449,y:3240|Name=Sapphire glacialis|location=[[Mons Gratia]]|levels=N/A|members=Yes|mapID=0|plane=0|mtype=pin|leagueRegion=Varlamore}}
+{{LocTableBottom}}
+At level 35, the player can also catch the [[Snowy knight]] butterfly, which are often in the same areas.
+
+For slightly higher experience rates, players may choose to trap [[Cerulean twitch]] at the same time as netting butterflies. Simply set up two bird traps and catch butterflies while waiting.
+
+=== Levels 39–43: Embertailed jerboas ===
+From level 39 to 43, catch [[Embertailed jerboa|embertailed jerboas]] at [[Locus Oasis]]. Fairy ring {{Fairycode|AJP}} is right next to the hunter area. With 3 traps you can reach 50,000 experience per hour.
+
+=== Levels 43–46: Falconry ===
+[[File:Spotted_kebbit_spawn.png|alt=Ideal spotted kebbit training area with three spawn points in the south-eastern corner.|thumb|Ideal spotted kebbit training area with three spawn points in the south-eastern corner.]]
+From level 43 to 49, catch [[Spotted kebbit|spotted kebbits]] (and [[Dark kebbit|dark kebbits]] at level 57) using the [[falconry]] technique. To do this, enter the [[Piscatoris falconry area]] east of the fairy ring {{Fairycode|AKQ}} and rent a [[gyr falcon]] for 500 coins. The weapon, shield, and hands slots must be empty for this. Head to the south-eastern area and click on the kebbits to send the falcon towards the kebbit. When the falcon catches the kebbit, retrieve the falcon and the loot, and drop the loot afterwards. To minimise downtime, stand close to the kebbit or the spawn tile before using the falcon.
+
+Wear weight-reducing clothing to reduce run energy drain, and bring a stamina potion to restore run energy. The [[bonecrusher]] will automatically bury the bones from the kebbits, which reduces dropping.
+
+The following rates can be expected while training here:
+
+* [[Spotted kebbit|Spotted kebbits]] (43-57) give 60,000 up to 70,000. You can reduce the amount of run energy used to catch spotted kebbits by focusing on their three spawn points located at the south-eastern corner of the falconry area. Spotted kebbits will respawn 4 seconds after being retrieved by the player.
+* [[Dark kebbit|Dark kebbits]] (57-60+) give 75,000 up to 80,000. Spawn points for dark kebbits are spread throughout the edges of the falconry area. The two spawn points closest to each other are on the west edge of the area. Dark kebbits will respawn 4 seconds after being retrieved by the player.
+* [[Dashing kebbit|Dashing kebbits]] (69+) give 85,000 up to 95,000. Since dashing kebbits do not become available until level 69, training with them is not popular since salamanders offer better experience rates from level 60 onwards.
+
+==Other methods==
+While the following methods can all be completed while on a [[Hunter Rumour]], they might be worth considering beyond this.
+
+===Level 60+: Orange salamanders===
+[[Orange salamander (Hunter)|Orange salamanders]] are caught using traps on [[Young tree|Young trees]]. With partial completion of [[Beneath Cursed Sands]] one can access the [[Necropolis Hunter area]], using 4 traps at once, you can expect more than 40,000xp an hour with minimal attention. To prolong trips, it is recommended to bring multiple [[Waterskin|Waterskins]] or the [[Circlet of water]] and wear [[Desert clothing]]. There are also three nearby waterskin spawns to the east. Each trap requires a [[Small fishing net]] and a [[Rope]]. Both can be stored in the [[Huntsman's kit]].
+
+===Level 69+: Dashing kebbits===
+[[Dashing kebbits]] are caught using Falconry. [[Dashing kebbit meat]] is the third highest healing food (surpassed only by [[cooked moonlight antelope]] and [[marlin]]) and restores 10 run energy; gathering the meat with a [[meat pouch]] is reasonably quick.
+
+===Level 72/91+: Sunlight/Moonlight antelopes===
+Both [[sunlight antelope|sunlight]] and [[moonlight antelopes]] can be caught via pitfall trapping, offering up to 135,000xp per hour, ammunition for the [[hunters' sunlight crossbow]] and [[hunter meat|antelope meat]] which can be cooked after 50 [[Hunter Rumours]] have been completed. As antelope meat provides incredibly high healing per inventory slot and [[antler bolts]] cannot be obtained anywhere else, hunting these outside of Rumours might be desirable.
+
+===Level 75+: Moonlight moths===
+[[Moonlight moths]] can be caught with a [[butterfly jar]], and can subsequently be combined with any raw [[hunter meat]] to provide a 2 dose [[moonlight moth mix]] which restores 22 prayer points per dose, as an alternative to [[prayer potions]] when inventory space is not a limitation.
+
+{{Training guides}}
+[[Category:Ironman Mode]]
+[[Category:Hunter]]

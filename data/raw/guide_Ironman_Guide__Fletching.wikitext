@@ -1,0 +1,239 @@
+{{Iron Guide Links}}
+[[File:Fletching.png|left]]
+The [[Fletching]] skill is most often trained by [[ironmen]] while working on other skills, as the ability to purchase all ingredients, as well as their stackability, makes them easy to bring to different training locations. Common skills Fletching is trained alongside are [[Runecraft]], [[Agility]], and [[Farming]]. Players also train Fletching while completing [[quests]].
+
+Fletching is also used for making high-level [[dart]]s and [[arrows]] for use in [[Ranged]] combat. It can also be useful as a source of mid-tier Ranged armour or weaponry, depending on the player's Fletching level. Players looking to train [[Slayer]] will need large amounts of arrows if they plan to use Ranged in combat.
+
+==Levels 1–52: Early training methods==
+===Levels 1–52: Headless arrows===
+[[File:Headless arrow detail.png|left|frameless|width=50x50]]
+Starting at level 1, [[feather]]s can be attached to [[arrow shaft]]s to make [[headless arrow]]s. Headless arrows give 1 Fletching experience per arrow. This is a relatively slow training method, but is useful if the player plans on training Fletching by making [[broad arrows]] at a higher level, or if the player is training Woodcutting.
+
+Feathers can be easily bought in bulk through [[feather pack]]s, costing 2 [[coins]] per feather. Arrow shafts can be bought for 6 coins each at the [[Dargaud's Bow and Arrows.|Bow and Arrow shop]] within the [[Ranging Guild]], which requires level 40 [[Ranged]] to access. Alternatively, players can cut the arrow shafts from logs, giving ⅓ Fletching experience per arrow regardless of the type of log. At 30 Fletching, [[willow logs]] are recommended as they are one of the fastest sources of arrow shafts at lower levels.
+
+Because feathers, arrow shafts, and headless arrows are all stackable, this method can be used to train almost anywhere with very little stress in terms of inventory space, such as training [[Agility]], or while running about the world for [[Farming]] training or doing [[quests]].
+
+Assuming all materials are collected, about 45,000 headless arrows can be made per hour (3,000 actions).
+{| class="wikitable"
+|+Summary
+!Method
+!Inputs
+!Cost
+!Outputs
+!Experience per hour
+|-
+|Buying all items from shops
+|{{Plink|Feather}} x 123,660, {{Plink|arrow shaft}} x 123,660
+|{{Coins|(123660 * 2) + (123660 * 1)}}
+|{{Plink|Headless arrow}} x 123,660
+|45,000
+|-
+|Fletching the arrow shafts
+|{{Plink|Feather}} x 92,745, {{Plink|logs}} x 6,183
+|{{Coins|(92745 * 2)}}
+|{{Plink|Headless arrow}} x 92,745
+|Various
+|}
+
+===Levels 1–52: Arrows===
+[[File:Bronze arrow detail.png|left|frameless|width=53x53]]
+Fletching arrows is a faster but more expensive alternative to solely fletching headless arrows. Refer to each arrowtips' page below to find shop locations. Assuming all materials are collected, about 45,000 arrows can be made per hour (3,000 actions). 
+{| class="wikitable"
+|+Summary
+!Levels
+!Inputs
+!Output
+!Cost from shops
+!Experience
+!Experience per hour
+!Cost per hour
+|-
+|1-15
+|{{Plink|Headless arrow}} x 15, {{Plink|Bronze arrowtips}} x 15
+|{{Plink|Bronze arrow}} x 15
+|{{Coins|1*15}}
+|19.5 for 15
+|58,500
+|{{Coins|(1*15)*3000}}
+|-
+|15-30
+|{{Plink|Headless arrow}} x 15, {{Plink|Iron arrowtips}} x 15
+|{{Plink|Iron arrow}} x 15
+|{{Coins|2*15}} or {{Coins|3*15}}
+|37.5 for 15
+|112,500
+|{{Coins|(2*15)*3000}}
+|-
+|30-45
+|{{Plink|Headless arrow}} x 15, {{Plink|Steel arrowtips}} x 15
+|{{Plink|Steel arrow}} x 15
+|{{Coins|6*15}} or {{Coins|9*15}}
+|75 for 15
+|225,000
+|{{Coins|(6*15)*3000}}
+|-
+|45-52
+|{{Plink|Headless arrow}} x 15, {{Plink|Mithril arrowtips}} x 15
+|{{Plink|Mithril arrow}} x 15
+|{{Coins|16*15}} or {{Coins|24*15}}
+|112.5 for 15
+|337,500
+|{{Coins|(16*15)*3000}}
+|}
+Note that this section assumes headless arrows are already obtained, and that arrowtips are bought from stores for their minimum price. Since prices increase depending on a [[Shop#Stock|shop's stock]], buying all arrowtips at once will increase the overall price.
+
+===Alternative for levels 22–52: Iron darts===
+[[File:Iron dart detail.png|left|frameless|width=71x71]]
+Another low-level training method is to smith [[iron bar]]s into [[iron dart tip]]s, and fletch the tips into [[iron dart]]s. This can be a good way to train low-level [[Mining]], [[Smithing]], and Fletching at the same time, before faster methods for each skill are available. Darts have a hard limit of 10 sets made per tick, meaning that players can theoretically make up to 60,000 darts per hour; realistically, players can expect to make 3 sets of ten during a single game tick, resulting in 18,000 darts made per hour, or 1,800 sets of 10.
+{| class="wikitable"
+|+Summary
+!Inputs
+!Output
+!Experience
+!Experience per hour
+|-
+|{{Plink|Iron dart tip}} x 10, {{Plink|Feather}} x 10
+|{{Plink|Iron dart}} x 10
+|38 for 10
+|68,000+
+|}
+
+==Levels 52+==
+=== Levels 52–99: Broad arrows ===
+[[File:Broad arrowhead pack detail.png|200px|right|thumb|A broad arrowhead pack.]]
+[[File:Broad arrows 1 detail.png|left|frameless|width=87x87]]
+Fletching [[broad arrows]] becomes the most efficient training method at level 52. Each broad arrow made gives 11 experience, including the experience gained from making headless arrows (or 11.33 if also fletching the arrow shafts from logs).  
+
+While the arrows themselves are not very useful for anything, players are able to quickly buy the supplies in bulk, which makes this method a lot more effective than any other methods. However, it's very expensive, costing around {{Coins|5.7}} per experience point. 
+
+To be able to fletch broad arrows, players must purchase the ''[[Broader fletching|Broader Fletching]]'' perk for 300 [[Slayer reward point|Slayer reward points]]. [[Broad arrowhead pack]]s can be bought from any Slayer master, and [[feather pack]]s from the [[Port Sarim]] or [[Fishing Guild]] fishing shops. It is best to buy the arrow shafts from the Ranging Guild, but players can alternatively fletch the [[arrow shafts]] from logs. 
+
+For the best efficiency, broad arrows and the headless arrows required to make them should be made ''while doing other activities,'' specifically those which do not require a full inventory and which provide downtime that allows making the arrows. Such activities include training [[Agility]] at [[Hallowed Sepulchre]], tracking [[herbiboar]]s, crafting [[Blood rune|blood]] or [[Soul rune|soul runes]] in [[Arceuus]], and having two crewmates do [[shipwreck salvaging]] while periodically harvesting the [[crystal extractor]].
+
+{| class="wikitable"
+|+Summary
+!Inputs
+!Output
+!Cost from shops
+!Experience
+!Experience per hour
+!Cost per hour
+|-
+|{{Plink|Arrow shaft}} x 15, {{Plink|Feather}} x 15
+|{{Plink|Headless arrow}} x 15
+|{{Coins|3*15}}
+|15 for 15
+|45,000
+|{{Coins|154000}}
+|-
+|{{Plink|Headless arrow}} x 15, {{Plink|Broad arrowheads}} x 15
+|{{Plink|Broad arrows}} x 15
+|{{Coins|55*15}}
+|150 for 15
+|450,000
+|{{Coins|(55*15)*3000}}
+|-
+|{{Plink|Arrow shaft}} x 15, {{Plink|Feather}} x 15, {{Plink|Broad arrowheads}} x 15
+|{{Plink|Broad arrows}} x 15
+|{{Coins|58*15}}
+|165 for 15
+|247,500
+|{{Coins|(57*15)*1500}}
+|}
+
+=== Levels 55–99: Maple longbows ===
+[[File:Maple longbow detail.png|left|frameless|width=57x57]]
+[[Maple logs]] can be obtained for {{Coins|56.1}} each from [[Managing_Miscellania#Cost_of_materials|Miscellania]] and can then be fletched into [[Maple longbow (u)|Maple longbows (u)]] for about 100,000 experience per hour (about 150,000 experience per hour with [[Fletching knife]]). They can then be turned into [[maple longbow]]s for additional Fletching experience, although for ironmen this is not recommended. [[Bow string|Bow strings]] can be obtained quickly from tasks such as [[Temple Trekking]] or [[Money_making_guide/Killing_Zulrah|Killing Zulrah]] for [[flax]], at which point they can be spun with the [[Spin Flax]] spell with {{SCP|Magic|76|link=yes}} and access to the [[Lunar spellbook]]. These longbows can then be [[High Level Alchemy|high alched]] for {{Coins|384}} coins each.
+
+===Levels 92+: Redwood shields===
+[[File:Redwood shield detail.png|left|frameless|width=50x50]]
+If the player has excess [[redwood logs]] from training [[Woodcutting]], they may choose to fletch them into [[Redwood shield|redwood shields]] at {{SCP|Fletching|92}}. Requiring two redwood logs, these provide 216 experience per shield made, or 108 experience per log. The experience rates are over 150,000 experience per hour, and require minimal attention.
+
+==Other methods==
+===Wintertodt===
+''For more information, see [[Ironman Guide/Firemaking]].''[[File:Burning brazier (Wintertodt).png|left|frameless|width=54x54]]
+Training [[Firemaking]] at [[Wintertodt]] can give some passive Fletching experience. Fletching a [[bruma root]] into [[bruma kindling]] give 0.6 times the player's Fletching level in experience, so the experience rates are heavily dependent on the player's current Fletching level. 
+
+Each root will give between 0.6-59.4 experience, and players can fletch between 350-370 kindling per hour while actively playing. Players are not recommended to use this method as a primary training method at lower levels, and will benefit from reaching at least level 20 before joining.
+{| class="wikitable"
+|+Summary
+!{{SCP|Fletching}} level
+!Experience per hour
+|-
+|1
+|210
+|-
+|10
+|2,100
+|-
+|20
+|4,250
+|-
+|30
+|6,500
+|-
+|40
+|8,500
+|-
+|50
+|11,000
+|-
+|60
+|13,000
+|-
+|70
+|15,000
+|-
+|80
+|17,000
+|-
+|90
+|19,000
+|-
+|99
+|21,000
+|}
+
+=== Trouble Brewing ===
+{{Obsolete|15 January update}}
+[[File:Scrapey tree logs detail.png|left|frameless|width=50x50]]
+With 40 [[Cooking]] and the completion of [[Cabin Fever]], players can enter [[Trouble Brewing]]. Games of Trouble Brewing can be played consistently on [[World]] 304, or on any world with another player. Within the minigame, there is a variety of activities that can be completed with very low initial stats. Players wishing to train Fletching can bring a Woodcutting axe and take a knife from the [[Workbench (Trouble Brewing, tools)|Workbench]] to cut [[Scrapey tree|Scrapey trees]]. These give [[Scrapey tree logs]] that can be fletched into [[Scrapey bark]] for 50 Fletching experience each. These can additionally be deposited upstairs in the [[Hopper (Trouble Brewing)|Hopper]] for 100 Cooking experience each.
+
+With a [[Rune axe]] and 41+ Woodcutting, experience rates of over 30k Fletching experience, 16k Woodcutting experience, and 60k Cooking experience per hour can be achieved with no upfront costs or supplies.
+
+Certain strategies may also increase potential experience rates. Dropping scrapey bark instead of depositing it can enable higher experience rates in Fletching and Woodcutting, albeit sacrificing the potential Cooking experience. Cutting from the west side pairs of scrapey trees can minimize downtime if done with no competition, which is consistently possible on a world with only one player on each team.
+
+===Darts===
+[[File:Toxic blowpipe detail.png|left|frameless|width=50x50]]
+High-level to mid-level players who have the [[toxic blowpipe]] will need to make [[dart]]s to use it. [[Adamant dart]]s are easy to obtain and provide decent experience. [[Amethyst dart]]s are the highest level darts that can be gathered and provide significant bonuses over adamant darts.
+
+As this section is highly dependent on Smithing, players may also want to consider either fletching or stringing bows, or making more arrows and crossbow bolts, as they will need plenty of ammunition for ranging. Bows can be sold for a small amount at [[Lowe's Archery Emporium]].
+
+===Vale Totems===
+[[File:Beautiful tree stump.png|left|50px]]
+With the completion of [[Vale totems]] miniquest, players can construct and decorate totem sites around [[Auburnvale]]. This [[minigame]] is an active Fletching method with experience rates dependent on the wood used for constructing the totem and for fletching the decorations used on the totem. Rewards for this activity also include [[Vale Research Points]], bird nests, tree roots, [[dirty arrowtips]], [[Bale of flax|bales of flax]], and [[Ent branch|ent branches]]. 
+
+At maximum efficiency, Vale Totems offers the highest Fletching experience rates per hour that a player can achieve without monetary investment. The most efficient experience rates are achieved with: a stockpile of logs in the bank, carrying a log basket, running the route to construct and decorate 8 totem sites around [[Auburnvale]], all while Fletching and stringing bows between totem sites. At that rate,players can expect to earn approximately 8000 [[Vale offerings]] per hour, which is equivalent to 80 [[Vale Research Points]]. 
+
+Less effective methods are available for those who wish to train [[Woodcutting]] at the same time, or who do not have a stockpile of logs available, where a player sticks to a single totem while cutting nearby trees until the totem site decays. 
+
+{| class="wikitable"
+|+Experience per Hour @ Max Efficiency <!--these rates are averaged out based on information from the Vale Totems page and may need to be updated for more accuracy-->
+! Logs !! Standard !! Log Basket !! Log Basket + Bow String
+|-
+| Oak || 22,500 || 29,000 || 36,000
+|-
+| Willow || 55,000 || 71,000 || 89,000
+|-
+| Maple || 87,500 || 120,000 || 150,000
+|-
+| Yew || 140,000 || 225,000 || 265,000
+|-
+| Magic || 265,000 || 340,000 || 420,000
+|-
+| Redwood || 325,000 || 420,000 || -
+|}
+
+{{Training guides}}
+[[Category:Fletching]]
+[[Category:Members]]

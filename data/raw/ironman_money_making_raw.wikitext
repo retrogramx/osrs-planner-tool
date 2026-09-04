@@ -1,0 +1,535 @@
+{{Iron Guide Links}}
+Making money as an [[Ironman Mode|Ironman]] can be difficult. Unlike regular accounts, Ironmen cannot generate [[coins]] passively by obtaining valuable items from skilling, bossing, or other sources, and simply selling them on the [[Grand Exchange]]. Instead, they must generate coins themselves, usually in less efficient ways. 
+
+This is important because many Ironman account goals are expensive. Large amounts of Coins are needed to purchase runes and skilling supplies, for instance. An Ironman's ability to make money can be a rate-limiting step which determines how quickly they are able to accomplish their other goals.
+
+The time-efficient way to make money as an Ironman is to generate coins while accomplishing other goals, such as skilling or working towards rare drops. However, coins are important. If necessary, they can be generated actively using some of the methods below.
+
+== Early Money Making ==
+Generally speaking, it is worthwhile to progress your account in other ways before focusing on making money. Few early game objectives require large amounts of coins, and most efficient moneymakers have not yet been unlocked. However, a small cash stack is still important for early necessities such as an elemental staff, runes, and charter ship fees. Below are a list of common ways to build a small cash stack while you begin to progress your account.
+* The earliest starting cash available to all account types is the [[Stronghold of Security]], which awards {{Coins|10000}}. Bring enough food to survive attacks from several high-level monsters, and run past them to loot the chests as you descend into the dungeon.
+* Thieving can be trained immediately by pickpocketing men and women in Lumbridge. This is the quickest way to accrue small amounts of gold, and levelling Thieving unlocks many more efficient moneymakers later on, such as [[Thieving training#Levels 45–49, 65–84/91/99: Blackjacking|blackjacking]], or [[stealing valuables]].
+* The [[Wintertodt]] is an early game boss which generates skilling supplies and cash without requiring food or potions. Players must first train Firemaking to level 50.
+* After completion of [[Gertrude's Cat]], you can purchase kittens to grow and sell to [[Civilian|civilians]] in [[West Ardougne]] for 100 death runes. This becomes 200 death runes after completion of the [[Easy Ardougne Diary]], which are worth {{Coins|21,600}} every few hours if sold to Aubury in Varrock. If using the death runes, the value saved from not needing to buy them would be {{Coins|36000}}.
+* Items that spawn on the ground can be picked up and sold to [[specialty shop]]s or [[general store]]s like the [[Pollnivneach general store]] which buys items for near [[high alch]] value. [[World hop]] until you have a full inventory, then bank or sell to shops.
+**[[Eclipse red]] in Varlamore can be sold at [[Moonrise Wines]].
+**[[Steel platebody|Steel platebodies]] in the Wilderness can be sold to [[Horvik]].
+**[[Ruby ring]]s (after [[Crack the Clue III]]) in [[Varrock west bank]] can be sold to [[Grum]].
+* Players unlock the [[Agility Pyramid]] at 30 Agility, which awards {{Coins|10,000}} for each successful lap after turning in the [[pyramid top|pyramid tops]] received to [[Simon Templeton]]. However, due to its low success rate at low levels, it is recommended to wait until 50 Agility to start this method. Bring food and purchase waterskins at the [[Shantay Pass]] or [[Pollnivneach]]  to avoid the desert heat.
+* With 50 [[Agility]] and [[Thieving]], players can sell items to [[Martin Thwait]] in the [[Rogues' Den|Rogue's Den]] for their High Alchemy price. This can be helpful for selling unwanted bulk items that may be tedious or unprofitable to alch. If selling more items at once, the [[Void Knight General Store]] and [[Jennifer's General Supplies]] offer the best prices given the low change value.
+
+== Mid-Late Game Money Making ==
+=== High Alchemy ===
+After reaching 55 Magic, [[High Level Alchemy]] becomes the most reliable way to convert items into coins. Skills and activities that generate large amounts of items to alch will typically be a mid-late game Ironman's primary source of income.
+
+Generally, items become profitable to alch if their high alch value is greater than {{Coins|200}} (the rune shop cost of 5 [[Fire rune|fire runes]] and 1 [[nature rune]]). Items with a high alch value less than this are generally not worth alching unless you are training Magic using the spell.
+
+Notable alchable items include:
+
+* Adamant, rune, and dragon equipment
+* Elemental battlestaves
+* Dragonhide equipment
+* Rune and dragon javelin tips
+* [[Onyx bolt tips]], which can be fletched and enchanted into [[onyx bolts (e)]], then alched for even more profit
+* Rune arrows
+* Jewellery
+* High-level Fletching products such as Yew Longbows
+It is most time-efficient (though more click-intensive) to alch during other activities. Many players alch noted stacks of items while training [[Agility]], for instance, or when traversing the map on foot or with [[Sailing]].
+
+=== Skilling ===
+
+* [[Crafting]] generates items of significant alch value. [[Gems]] can be cut and turned into [[jewellery]], [[Battlestaff|Battlestaves]] can be crafted into [[elemental battlestaves]], and [[Dragonhide|dragonhides]] from monster drops can be crafted into valuable armour.
+
+* Ores and bars can be alched in bulk or smithed into more valuable items such as weapons or platebodies, then alched.
+* The [[Hallowed Sepulchre]] and [[Wilderness Agility Course]] reward the player with large quantities of alchables and gold not offered by other courses.
+* Training [[Runecraft]] at [[Runic altar|runic altars]], the [[Ourania Altar|Ourania altar]], or via the [[Guardians of the Rift]] [[Minigames|minigame]], generates runes which can be sold to shops.
+* Training [[Fletching]] can produce items which can be alched for cash, such as bows and shields. Ironmen will often have leftover logs from [[Miscellania]] or from training Woodcutting. Flax, to make bowstrings, can be obtained in bulk from Miscellania and [[Bale of flax|bales of flax]] can be obtained from the [[Vale Totems]] [[Minigames|minigame]].
+* Training [[Ironman Guide/Sailing|Sailing]] via [[Shipwreck salvaging|Shipwreck Salvaging]] can produce several valuable skilling items for early game and after 53 Sailing provides very good profit from alching.
+
+===PVM===
+* Many monsters assigned as a [[Slayer task]], (especially at higher levels), have drop tables with high-value alchables. 
+* Many [[Boss|bosses]] and [[raids]] have lucrative drop tables. Many Ironmen generate a significant amount of coins while farming kills for rare drops.
+
+===Selling Items to Shops===
+* Extra runes, such as from Zeah runecrafting or [[Barrows]], can be sold to the [[TzHaar-Mej-Roh's Rune Store|Tzhaar shop]] for [[Tokkul]] or to [[Ali's Discount Wares.|Ali's Discount Wares]] for coins. [[Ali Morrisane]] buys runes at fixed prices that do not decrease with overstock.
+* As mentioned above, tedious bulk items, such as [[Lantern lens|lenses]], unstrung bows, or other skilling products, can be sold to [[Martin Thwait]] in the [[Rogues' Den|Rogue's Den]] for their High Alchemy price.
+
+== Alternative Money Making ==
+=== Treasure Trails ===
+While clue caskets are not usually a great source of money, many Ironmen will complete clues for [[Ranger boots]], [[Blessed dragonhide armour]], or to complete [[collection log]]s, and along the way can receive alchables, useful runes, and unique items. Clues can be passively obtained while training other skills such as [[Slayer]], [[Thieving]], [[Clue bottle|Fishing]], or [[Clue nest|Woodcutting]], but there are a number of methods to quickly acquire a specific type. Clues become more efficient as the player fills [[STASH]] units and accesses more teleports and skills to complete clue steps quickly. Completing [[Combat Achievements|Combat Achievement]] tiers increases most drop rates for clue scrolls. Completing [[X Marks the Spot]] allows for the acquisition of [[scroll box]]es, a stackable form of clues.
+
+The following are the approximate values of each clue casket (excluding the value of master clues obtained from lower tier caskets). Unwanted rare or cosmetic items can be used to fill [[Death's Coffer]], as their Grand Exchange price is often much higher than their [[High Alchemy]] value.
+{| class="wikitable"
+|+
+!Casket Tier
+!High-alchemy Value
+!Grand Exchange Value
+|-
+|[[Reward casket (beginner)]]
+|{{Coins|2*{{Average drop value|Reward casket (beginner)|raw=yes|alch=yes}}}}
+|{{Coins|2 * {{BeginnerClueValue}}}}
+|-
+|[[Reward casket (easy)]]
+|{{Coins|3*{{Average drop value|Reward casket (easy)#Standard|raw=yes|alch=yes}}}}
+|{{Coins|3 * {{EasyClueValue}}}}
+|-
+|[[Reward casket (medium)]]
+|{{Coins|4*{{Average drop value|Reward casket (medium)#Standard|raw=yes|alch=yes}}}}
+|{{Coins|4 * {{MediumClueValue}}}}
+|-
+|[[Reward casket (hard)]]
+|{{Coins|5*{{Average drop value|Reward casket (hard)|raw=yes|alch=yes}}}}
+|{{Coins|5 * {{HardClueValue}}}}
+|-
+|[[Reward casket (elite)]]
+|{{Coins|5*{{Average drop value|Reward casket (elite)|raw=yes|alch=yes}}}}
+|{{Coins|5 * {{EliteClueValue}}}}
+|-
+|[[Reward casket (master)]]
+|{{Coins|6*{{Average drop value|Reward casket (master)|raw=yes|alch=yes}}}}
+|{{Coins|6 * {{MasterClueValue}}}}
+|}
+The following table lists some common sources of easy, medium, hard, and elite clue scrolls along with associated drop rates.
+{| class="wikitable"
+|+
+! colspan="11" |Common Sources of Clue Scrolls 
+|-
+![[Clue scroll (easy)#Item sources|Easy Clue Scroll]]
+!Rate
+! rowspan="5" |*
+![[Clue scroll (medium)#Item sources|Medium Clue Scroll]]
+!Rate
+! rowspan="5" |*
+![[Clue scroll (hard)#Item sources|Hard Clue Scroll]]
+!Rate
+! rowspan="5" |*
+![[Clue scroll (elite)#Item sources|Elite Clue Scroll]]
+!Rate
+|-
+|[[Puro-Puro]] ([[Gourmet impling|Gourmet]], [[Young impling|Young]])
+|1/25, 1/50
+|[[Puro-Puro]] ([[Eclectic impling|Eclectic]], [[Essence impling|Essence]])
+|1/25, 1/50
+|[[Puro-Puro]] ([[Ninja impling|Ninja]], [[Magpie impling|Magpie]])
+|1/25, 1/50
+|Implings ([[Dragon impling|Dragon]], [[Crystal impling|Crystal]])
+|1/50
+|-
+|[[H.A.M. Member|H.A.M. Members]]
+|1/50
+|[[Scurrius]]
+|1/25
+|[[Jelly]]
+|1/128
+|[[Ancient chest|Chambers of Xeric]]
+|1/12
+|-
+|[[Chest (Dorgesh-Kaan Average)|Dorgesh-Kaan Average Chests]]
+|1/23
+|[[Chest (Aldarin Villas)|Aldarin Chests]]
+|1/90
+|[[Chest (Rogues' Castle)]]
+|1/99
+|[[The Gauntlet#Corrupted Gauntlet|Corrupted Gauntlet]]
+|1/20
+|-
+|Crabs ([[Sand Crab|Sand]], [[Ammonite Crab|Ammonite]], etc.)
+|1/128
+|[[Guard|Guards]] (Falador, Ardougne)
+|1/106, 1/128
+|[[Sarachnis]]
+|1/40
+|[[Sarachnis]]
+|1/60
+|-
+|
+|
+!
+|[[Barracuda salvage]]
+|~1/300
+!
+|
+|
+!
+|
+|
+|}
+
+==Money Making Tables==
+These money making guides are presented in three sections. First, a list of the current recommended money makers that are believed to be most efficient by the Ironman community, in roughly the order that a new account will be able to access them. Second, a selection of other less efficient alternative money makers that are accessible to accounts early on in their ''Old School RuneScape'' journey, and finally a similar selection of alternative money makers with higher-level requirements.
+{| class="wikitable sortable mw-collapsible mw-collapsed"
+|+Recommended Methods
+!Method
+!Hourly Profit
+!Hourly XP
+!Hourly Resources
+!Requirements
+!Notes
+|-
+|[[Ruby ring|Picking up ruby rings]]
+|400,000
+|22,000 [[Magic]]
+|None
+|{{SCP|Magic|55}}, [[Crack the Clue III]]
+|The hourly profit greatly depends on competition, since the ruby ring has a respawn timer of about 240 seconds (4 minutes and 15 seconds). The hourly profit includes time used to cast [[High Level Alchemy]] on the rings.
+|-
+|[[Wintertodt]]
+|30,000
+|300,000 [[Firemaking]], 20,000 [[Woodcutting]]
+|Various logs, gems, ores, herbs, seeds, and fish
+|{{SCP|Woodcutting|50}}, {{SCP|Firemaking|50}}
+|The absolute hourly profit from this method is low, so it is not efficient to continue past your target Firemaking level.
+|-
+|[[Blackjacking]] (50 Thieving)
+|127,000
+|103,000 Thieving
+| rowspan="2" |None
+| rowspan="2" |{{SCP|Thieving|45}}, [[The Feud]], [[Rogue equipment]]
+| rowspan="2" |This method is not macroefficient for training Thieving and is quite intense, so efficient routes do not continue blackjacking past the amount of gold required to complete Desert Treasure and unlock efficient battlestaves.
+|-
+|[[Blackjacking]] (99 Thieving)
+|220,000 
+|265,000 Thieving
+|-
+|[[Magic Guild Store (Runes and Staves)|Battlestaves]]<br/>(shop-bought)
+|928,000
+| rowspan="2" |96,000 [[Crafting]]
+| rowspan="2" |None 
+| rowspan="2" |[[Desert Treasure I]], [[Lunar Diplomacy]]
+| rowspan="2" |The quoted rate depends on quite a lot of assumptions, specifically:
+* Air orbs (earth orbs are almost equivalent but provide slightly lower experience rates) are used to complete the staves.
+* Five staves are purchased from the [[Magic Guild Store (Runes and Staves)]] per world.
+* Time for seaweed, sand, casting [[Superglass Make]], and blowing glass are discounted as these are required to train Crafting regardless.
+* Blowing  [[molten glass]] into [[unpowered orb|unpowered orbs]] rather than [[Lantern lens|lantern lenses]] is a relatively small initial experience loss that gives much higher profit if they are crafted into staves.
+|-
+|[[Battlestaff#Item sources|Battlestaves]]<br/>(monster drops)
+|2,057,000
+|-
+|[[Green dragon|Green dragons]]<br/>(lance)
+|496,000
+|96,000 Melee
+175,000 Prayer
+|320 dragon bones
+9 Ensouled Dragon heads
+| rowspan="2" |Basic melee setup ([[Dragon defender]], [[Berserker ring (i)]], [[A Kingdom Divided]] for thralls)
+| rowspan="2" |There are only two scenarios in which this moneymaker is worthwhile. The first is before [[Piety]] is unlocked, as this Prayer is such a very large DPS increase. The second is after all relevant upgrades have been acquired, so it can be done at maximum efficiency. In between these milestones, Prayer levels do not have enough marginal value to justify performing this method.
+|-
+|[[Green dragon|Green dragons]]<br/>(minimum gear)
+|265,000
+|54,000 Melee
+98,000 Prayer
+|180 dragon bones
+5 Ensouled Dragon heads
+|-
+||[[Money_making_guide/Hallowed_Sepulchre_(Floor_3)|Hallowed{{nbsp}}Sepulchre]]  (72-82)
+|94,000
+|63,700 Agility, 
+2,100 Thieving
+|~3.5 Prayer potions
+Runes
+40 Hallowed marks
+|{{SCP|Agility|72}}, [[Sins of the Father]]
+|Level 3 chests can be looted for drops or to unlock Hallowed equipment in preparation for Floors 4 and 5. It is generally recommended to skip all but the fastest floor 3 chests for better experience rates and to unlock floor 4/5 faster.
+|-
+||[[Money_making_guide/Hallowed_Sepulchre_(Floor_4)|Hallowed{{nbsp}}Sepulchre]]  (82-92)
+|181,000
+|72,900 Agility, 
+2,500 Thieving
+|~10 Prayer potions
+Runes
+200 [[Hallowed mark|Hallowed marks]]
+|{{SCP|Agility|82}}, [[Sins of the Father]]
+| rowspan="2" |Gains additional construction, magic, and prayer experience, but requires [[planks]], [[nails]], and [[vampyre dust]] for certain chests. Plenty of time between obstacles for zero-time activities such as fletching, alching, crafting, etc.
+|-
+||[[Money_making_guide/Hallowed_Sepulchre_(Floor_5)|Hallowed{{nbsp}}Sepulchre]]  (92-99)
+|990,000
+|88,200 Agility, 
+7,200 Thieving
+|~40 Prayer potions
+High level runes
+230 Hallowed marks
+|{{SCP|Agility|92}}, [[Sins of the Father]]
+|-
+|[[Corrupted gauntlet|Corrupted Gauntlet]]
+|900,000
+|24,000 Combat experience
+|Uncut gems, runes, crystal shards, dragon arrows
+|[[Song of the Elves]]
+|This method is chiefly efficient because the [[bow of Faerdhinen]] is a very powerful item that most players plan to collect regardless. It is not efficient to continue once a bow and six armour seeds have been acquired.
+|-
+|[[Ourania Altar|ZMI]] (banked{{nbsp}}pure{{nbsp}}essence)
+|1,470,000
+||80,000 [[Runecraft]]
+| rowspan="3" |None (accounted as profit)
+| rowspan="3" |[[Raiments of the Eye]], [[Colossal pouch]], [[Lunar Diplomacy]], {{SCP|Magic|71}}, [[Sins of the Father]] or banked [[Pure essence]] from PvM
+| rowspan="3" |It is not efficient to perform inefficient PvM (e.g. Zulrah without endgame gear) to bank pure essence for ZMI Runecrafting. Daeyalt rates include the time taken to mine the Daeyalt - if you choose to discount this time because of its low intensity, you can treat the use of Daeyalt as banked pure essence.
+|-
+|[[Ourania Altar|ZMI]] (1.5{{nbsp}}Daeyalt)
+|780,000
+|120,000 Runecraft
+|-
+|[[Ourania Altar|ZMI]] (AFK{{nbsp}}Daeyalt)
+|510,000 
+|90,000 Runecraft
+|-
+|[[Money_making_guide/Mining_gemstones|Three Tick Gem Mining]]
+|165,000
+|110,000 [[Mining]]
+|23,000 banked Crafting XP
+|[[Shilo Village]], charged [[Amulet of glory#4|Amulet of glory]], [[Karamja Diary#Medium|Medium Karamja Diary]]
+|Profits can be increased considerably by processing diamonds into amulets (u) to alch, but this is technically only efficient before 87 Crafting.
+|-
+|[[Vorkath]]
+|1,500,000
+|26,000 [[Slayer]]
+110,000 banked [[Cooking]] experience<br />
+72,000 banked [[Prayer]] experience<br />
+23,000 banked Crafting experience<br />
+15,000 banked Fletching experience<br />
+5,000 banked Smithing experience
+|
+<br/>Dragon bolts, darts and arrows
+
+~150 [[Blue dragon scale|Blue dragon scales]]
+
+~18 [[Manta ray|Manta rays]]
+
+~54 [[Shark lure|Shark lures]]
+|[[Dragon Slayer II]], [[Osmumten's fang]]
+|Most efficient on task for slayer experience.
+|-
+|[[Zombie pirate|Zombie pirates]]
+|650,000
+|25,000 [[Melee]]
+|~100 [[Blood rune|Blood]], [[Death rune|death]], [[Chaos rune|chaos]] and [[Mind rune|mind]] runes<br/>
+~210 [[Blighted food]], ~14 [[Blighted super restores]], ~140 [[Blighted ancient ice sack|Blighted ancient ice sacks]]<br/>
+~35 [[Adamant seeds]], ~400 [[steel cannonballs]], ~70 [[Gold ore]]
+|{{SCP|Prayer|37}}, [[Wilderness Diary#Medium|Medium Wilderness Diary]]
+|Can be done without the Wilderness Medium Diary, but drops are decreased by 70%. Assume ~200 kills per hour without using a [[Dwarf multicannon|cannon]]; this can vary with gear and stats. See the [[Money_making_guide/Killing_zombie_pirates (Budget)|money making guide]] for expected outputs at higher or lower kill rates.
+
+Bringing a setup with cheaply reclaimable or untradeable items, for example [[Dragon scimitar]], [[Monk's robes]], [[Salve amulet (e)]], [[Climbing boots]], [[Damaged book]], [[Ring of dueling]], [[Rada's blessing 2]], [[Klank's gauntlets]], and [[Ardougne cloak 1]], can minimise risk while still gaining considerable Prayer and Combat bonuses.
+|-
+|Processing [[adamantite ore]]
+|3,150,000
+|80,000 Smithing
+|
+|{{SCP|Smithing|70}}, {{SCP|Magic|55}}
+|Hourly profit assumes you already have 1,200 [[adamantite ore]] (can cast high alch ~1,200 times per hour). Profits are  ~225k per hour if you can mine 120 [[adamantite ore]] per hour.
+Process: [[adamantite ore]] -> [[adamantite bar]] -> [[adamant sword]] -> [[High Level Alchemy|high alchemy]]
+|-
+|Processing [[runite ore]]
+|15,774,000
+|104,000 Smithing
+|
+|{{SCP|Smithing|85}}, {{SCP|Magic|55}}
+|Hourly profit assumes you already have 1,200 [[runite ore]] (can cast high alch ~1,200 times per hour). Profits are ~875k per hour if you can mine 70 [[runite ore]] per hour.
+Converting all banked runite ore into coins might endanger upkeep of [[Rune dart|Rune Darts]] for the [[Toxic blowpipe]] later.
+
+Process: [[runite ore]] -> [[runite bar]] -> [[rune sword]] -> [[High Level Alchemy|high alchemy]]
+|}
+{| class="wikitable sortable mw-collapsible mw-collapsed"
+|+Low requirements
+!Method 
+!Hourly Profit
+![[File:Ultimate ironman chat badge.png]]
+! Requirements 
+!Category
+! Description
+|-
+|Collecting [[steel platebody|steel platebodies]]
+|128,000
+|Maybe
+|None
+|Collecting
+|The [[Lava Maze]] is located in level 40–45 [[Wilderness]] and contains a [[steel platebody]] and [[staff of earth]] spawn. This method is widely known by most ironmen and is often camped out by them along with [[player killer]]s. Steel platebodies can then be sold to [[general store]]s for 800 coins, to [[Horvik's Armour Shop]] in Varrock for 1,200 coins, or high alched for 1,200 coins.
+An easier and safer alternative of this method would be to collect [[steel platelegs]] in the [[Eastern Ruins]] (level 25–28 Wilderness). Players can bring a [[looting bag]] and hop worlds until getting a full inventory and looting bag of steel platelegs. Steel platelegs can be sold to general stores for 400 coins, to [[Louie's Armoured Legs Bazaar.|Louie's Armoured Legs Bazaar]] for 650 coins, or high alched for 600 coins.
+
+This method is not recommended for [[File:Hardcore ironman chat badge.png]] hardcore ironmen, since players are at risk of being killed by player killers in the Wilderness.
+
+[[File:Ultimate ironman chat badge.png]] This is generally not viable for ultimate ironmen except in the start of a playthrough when you have few items to risk.
+
+Lower risk but lower profit methods, such as picking up [[Bronze chainbody|Bronze chainbodies]] from the [[Dwarven Mine|Dwarven Mines]] or [[Iron sword|Iron swords]] from [[Briget's Weapons]] exist but will make less than 20,000 gp per hour.
+|-
+|Cutting gems at a [[gem shop]]
+|90,000
+|Yes
+|{{SCP|Crafting|20}}, {{SCP|Crafting|27}} recommended to cut [[emerald]]s
+|Skilling/shops 
+|Players may buy uncut gems from a gem shop, cut the gems, and then sell the cut gems back to the shop for a fair amount of profit. This moneymaker does not require going into the Wilderness, it has low requirements, it is a medium level of click-intensiveness, and players may travel to other gem shops if the one they have been using seems to have a low stock of gems in most worlds. Due to the slow restock time of certain gems, this method is not sustainable long periods of time.
+|-
+|[[Fletching]] [[willow shortbow]]s
+|13,000
+| Yes
+|{{SCP|Fletching|35+}}, {{SCP|Woodcutting|30+}}, {{SCP|Crafting|10}}
+|Skilling
+|[[Fletching]] and [[Woodcutting]] level fairly fast, are very low intensity, are quite useful, and are required several times through [[quests]]. A way to produce some decent money is by [[fletching]] the highest available bow fully completing them. Afterwards, any bows created can be high alched or sold to [[general store]]s.
+|-
+|Stealing from [[H.A.M. Store room]]s
+|67,000
+|Yes with alch
+|{{SCP|Thieving|20}}, food, completed at least half of [[Death to the Dorgeshuun]]
+|Skilling
+|After completing half of [[Death to the Dorgeshuun]], players have access to the [[H.A.M. Store room]]s. There, one is able to [[pickpocket]] guards that commonly give keys to chests which provide [[H.A.M. Store room#Rewards|fairly good jewellery]]. Bank or high alch the loot obtained and make sure to save some of the [[emerald ring]]s and [[sapphire necklace]]s for personal use. This is considered the best low level method for ironmen to acquire early jewellery and additional starting cash. Rate assumes 200 chests opened per hour.
+(wearing full [[H.A.M. robes]] helps reduce the chance of being kicked out when in the [[H.A.M. Hideout]], but players will never be kicked out in the storeroom area so [[rogue equipment]] is recommended to potentially double the rate of keys). 
+|-
+|Stealing [[silk]]
+|24,000
+|No
+|{{SCP|Thieving|20}}
+|Skilling
+|[[Silk]] can be stolen from the [[Silk stall|stalls]] in the [[Ardougne]] [[Ardougne market|market]]. After waiting 20 minutes the stolen silk can be sold to the [[silk merchant]] (located in the market) for 60 coins each. Assumes 400 stolen and sold per hour.
+|-
+|Selling [[cats]] for [[death runes]]
+|13,300
+|Yes
+|[[Gertrude's Cat]] quest, [[Ardougne Diary#Easy|easy Ardougne diary]], 9 fish.
+|Collecting
+|Cats can be traded in for 200 death runes each in West Ardougne (100 death runes before completition of the easy tasks of Ardougne Diary). Raising a [[kitten]] to adulthood requires three hours and 9 fish. Every 20 minutes, interact with the kitten, stroke it twice, and use a fish on it. Once it is fully grown, you can trade it to a [[civilian]] in West Ardougne for 200 death runes. Assuming you would buy the runes for 200 coins each, this saves you 40,000 coins, or about 13,300 coins an hour.
+
+This method is especially useful while using AFK training methods such as [[fletching]] or [[sand crab]]s, as it gives you an income boost with less than five minutes of time invested. 
+|-
+|[[Agility Pyramid]]
+|100,000+
+|Yes
+|{{SCP|Agility|30}} ({{SCP|Agility|70+}} recommended)
+|Minigame
+|The [[Agility Pyramid]] can be unlocked at 30 Agility, however, 70 is recommended as obstacle fail rates are drastically reduced. Players can make up to around 200,000 coins per hour.
+
+Because most of the activity involves running around, you may want to bring supplies to train other skills, such as high alching noted items or fletching [[dart]]s.
+
+[[File:Ultimate ironman chat badge.png]] This method requires no banking and does not suffer greatly from not having an empty inventory. It is one of the most reliable methods for early game.
+|-
+|Pickpocketing [[Wealthy citizen]]s distracted by [[Street urchin]]s
+|100,000+
+(200,000+ with [[Rogue equipment]])
+|Yes
+|{{SCP|Thieving|50}}
+|Skilling
+|[[Wealthy citizen]]s can be found throughout [[Civitas illa Fortis]], [[Varlamore]].
+
+It's advisable to do this while wearing [[Rogue equipment]] to double pickpocketed loot.
+
+This method is low intensity and semi AFK-able.
+|-
+|Selling runes from [[Guardians of the Rift]] to [[Ali Morrisane]]
+|60,000
+|Yes 
+|{{SCP|Runecraft|27}}, completion of [[Temple of the Eye]] and [[Rogue Trader]]
+|Skilling
+|Guardians of the Rift is an efficient Runecraft method which yields a large number of valuable catalytic runes. Starting at level 27 you can make runes and gain rewards from the Guardians of the Rift minigame, these can then be sold to Ali Morrisane's rune shop for coins. These runes are also useful for early game magic training and teleports. Nature, chaos, law and blood runes can be gained as a reward from the minigame and sell for good profit. You can expect around 30,000 Runecraft experience per hour, and around 60,000 coins per hour. This will increase further as you unlock the ability to craft high tier catalytic runes.
+
+Note that the Runecraft level requirements can be gained from the [[Enter the Abyss]] and Temple of the Eye quest.
+|-
+|[[Giants' Foundry]]
+|92,000
+| Yes
+|[[Sleeping Giants]], {{SCP|Smithing|15}} up to iron, {{SCP|Smithing|30}} up to steel
+|Skilling/shops
+|Depending on the alloys used, the [[Giants' Foundry]] minigame can make a profit or a loss of coins and give a good amount of [[Smithing]] experience when buying equipment from shops for it but players can also use leftover [[bar]]s and unneeded equipment. The cheapest equipment to buy for their bar input are [[claw]]s, so [[mithril claw]]s from [[Jatizso]]'s [[Weapons galore]] would reduce the cost of bars used for combinations involving [[mithril]]. But to profit from Giants' Foundry using purchased equipment alone, it's recommended to buy [[Bronze equipment|bronze]] + [[iron equipment]] ({{SCP|Smithing|15|link=no}}) or iron + [[steel equipment]] ({{SCP|Smithing|30|link=no}}), and buying [[Giants' Foundry/Mould List|better mould]]s for your Smithing level will increase profit.
+
+[[File:Ultimate ironman chat badge.png]] Ultimate ironmen or any early-game ironmen can run to Al Kharid (or teleport via [[Ring of dueling|rings of dueling]]) to buy 7 [[Bronze platelegs|bronze]] + 7 [[iron platelegs]]/[[iron plateskirt|plateskirts]] or 7 iron + 7 [[steel platelegs]]/[[steel plateskirt|plateskirts]], or more if inventory space allows it.  
+*'''Tip:''' Bringing 11 iron + 11 steel (4 extras of each) in one trip and 10 iron + 10 steel (3 extras of each) in the next trip will allow one more additional round every 2 trips; just make sure not to overfill the [[crucible]]. After pouring the crucible into the mould, re-fill the rest of the crucible with your remaining equipment to reduce weight and to get a headstart for that additional round.
+**'''Note:''' [[Scimitar]]s in Al Kharid may have a cheaper value per bar input than platelegs/plateskirts but it's quicker to get a stack of platelegs/plateskirts of each alloy than it is to get a stack of 14 scimitars, and scimitars would waste more space that would be unideal for ultimate ironmen to carry in their limited inventory space. Any combination of platelegs/plateskirt past iron + steel from these shops will end up in a loss of coins.
+*'''Alternative:''' With a [[chronicle]] in hand and a decent stack of coins, an ultimate ironman can teleport to [[Varrock]], buy a full inventory of [[iron platebodies]] and [[steel platebodies]] (3:4 ratio) and [[Minigame Teleport]] back to the Giants' Foundry (or [[ring of dueling]] teleport to [[PvP Arena]] if on cooldown), while other ironmen can bank them. This will allow more rounds per trip. For more information, see [[Ultimate Ironman Guide/Smithing#Levels 30–99: Giants' Foundry|Ultimate Ironman Guide/Smithing § Levels 30–99: Giants' Foundry]].
+*Price assumed pre-bought iron and steel warhammers at store price based on [[Money making guide/Forging Giant swords]]  
+|-
+|High alching [[rune arrow]]s from [[Last Man Standing]]
+|144,000
+| Yes
+|{{SCP|Magic|55}}, {{SCP|Runecraft|44}} recommended, [[staff of fire]].
+|Minigame
+|Last Man Standing is a PvP minigame with no requirements and no risk of death. [[Justine's stuff for the Last Shopper Standing|Justine's shop]] sells a stack of 300 rune arrows for 3 points, which can be high alched for 240 coins each. Teleport to the [[Ferox Enclave]] using a [[ring of dueling]] and join the competitive lobby. Kill one player inside the game, then hide from other players by staying in a corner of the map or going upstairs inside a building (not the wooden towers). Wait until there are three players remaining, then run towards the safe zone. The remaining two players will be too busy fighting to kill you, and once one of the final two players die, you can either run into the lethal fog or let the final player kill you. By using this strategy, you will come in second or third place and earn 4 or 3 points a game.
+
+Players who do not wish to gain combat experience, like [[Skillers]], may opt to purchase 350 adamant arrows per LMS point instead, and sell the arrows to [[Brian (Rimmington)|Brian]] in [[Rimmington]]. This process can be somewhat tedious, as players can only sell 50 arrows per world, in order to find a balance between speed and profit. For example, if a player had 13,000 arrows or so to sell, they would need to hop worlds around 270 times in order to sell all of them. Selling 350 adamant arrows (costing 1 LMS point) to Brian (by hopping to 7 different worlds) yields 7,112 coins.
+
+Once you've purchased a stack of 300 arrows, you can immediately buy 300 [[nature runes]] at an average of 200 coins each and alch the stack for a profit of 12,000 coins. As this profit is unimpressive, the better method is to runecraft the nature runes at the [[Nature Altar]], then use the free runes to alch the stack for a profit of 72,000 coins. Assuming 6 Last Man Standing points and 600 nature runes an hour, this equates to 144,000 coins an hour.
+
+As the stack can be alched while performing other activities such as the [[Agility Pyramid]], this method offers a convenient way to increase your coin stack while also gaining decent magic experience. 
+|-
+|[[Zombie pirate|Zombie pirates]]
+|100,000
+|Maybe
+|{{SCP|Prayer|37}}
+|Combat
+|Without the [[Wilderness Diary#Medium|Wilderness Medium Diary]], drops are decreased by 70%. Assumes ~100 kills per hour, this can vary with gear and stats. 
+
+A [[Dragon scimitar]] and {{SCP|Strength|60}} should be sufficient to achieve at least 100 kills per hour.
+|-
+|Gathering [[eclipse red]]
+|280,000
+|Yes
+|[[Children of the Sun]]
+|Collecting
+|Collecting eclipse red wine from a spawn at the top floor of [[Guildmaster Apatura]]'s quarters and subsequently selling them to the [[Moonrise Wines]] at [[Moonrise Brewery and Winery]] for 700gp per bottle. Assumes 400 wines gathered per hour via hopping worlds; the wine shop does not change sell prices depending on stock and as such all of the wines may be offloaded at once without the need to hop worlds.
+
+Note that while Apatura's quarters are in the [[Hunter Guild]], there is no Hunter requirement to access the item spawn. Although talking to the banker has a 46 Hunter requirement,  the [[Bank chest#Hunter Guild|bank chest]] next to the banker has no requirement. 
+|}
+{| class="wikitable sortable mw-collapsible mw-collapsed"
+|+High requirements
+!Method
+!Hourly Profit
+![[File:Ultimate ironman chat badge.png]]
+! Requirements
+!Category 
+!Description
+|-
+|Pickpocketing [[Knight of Ardougne|Knights of Ardougne]]
+|270,000
+|Yes
+|{{SCP|Thieving|55}} (95+ strongly recommended)
+
+Completion of the medium tasks of the Ardougne Diary
+
+Full [[rogue equipment]]
+| Skilling
+|Pickpocketing [[Knight of Ardougne|Knights of Ardougne]] is an easier and slightly more profitable alternative to blackjacking, but it also has higher requirements. From level 95 onwards, players can make up to around 270,000–280,000 coins per hour.
+
+More information about pickpocketing Knights of Ardougne can be found [[Thieving training#Levels 55–99: Knights of Ardougne|here]].
+|-
+|Crafting [[Blood rune|blood runes]]
+|330,000
+|Yes
+|{{SCP|Runecraft|77}} and {{SCP|Agility|73}}
+|Skilling
+|Using any pickaxe and a chisel, mine dense essence, venerate them, run to the Blood Altar, and repeat. One run returns 212 blood runes, which the player can sell to [[Ali Morrisane]] for 200 coins each. The player can make up to 460,000 coins and gain up to 38,000 Runecraft experience per hour with optimised runs.
+|-
+|[[Blast Mine|Blast mining]] and smithing [[Runite ore|runite]]
+|650,000
+|Maybe
+|{{SCP|Mining|75}}, {{SCP|Smithing|89}}<br>
+[[Dynamite]]<br>
+[[Coal]] for smelting the bars
+|Skilling
+|[[Blast Mine|Blast mining]] offers decent Mining experience and good profit. At level 75, players can obtain runite from the blasted ores, which makes the bulk of the profit gained.
+
+For this method, players will need a lot of [[dynamite]]s (330 per hour per [[Money making guide/Blast mining]]) They can be obtained in large amounts from the [[Chambers of Xeric]]. Players who have completed the elite tasks in the [[Kourend & Kebos Diary]] can claim 80 dynamites from [[Thirus]] every day. Buying the dynamites is not recommended, as this slows experience rates and cuts down the profit a lot.
+
+Smelt the ores obtained from Blast mining at the [[Blast Furnace]]. Additional coal can be bought at the Blast Furnace or acquired from [[Miscellania]]. Smith all runite bars into rune items, such as [[rune sword]]s, and alch them for profit.
+|-
+| Crafting [[amethyst javelin tips]]
+|364,000
+|Yes
+|{{SCP|Mining|92}}, {{SCP|Crafting|87}}
+|Skilling 
+|Mining Amethyst to craft and cast High Alchemy on [[Amethyst javelin tips]] offers both a low intensity and afk method of obtaining a constant source of gold, and a click intensive method that offers greater rewards. At high Mining levels and with efficient gear, players can expect to mine anywhere from 80 to 100 amethyst per hour with standard mining, and up to 160-200 using tick manipulation (In this case 3t actions, e.g. knife on teak/mahogany log), resulting in between 400–500 Amethyst javelin tips, resulting in between 364,800–456,000 (700,000-900,000 with tick manipulation) coins worth of javelin tips that can then be high alched. This method can be useful for ultimate ironman players as the amount of inventory space needed is minimal, needing only the ability to cast [[High alchemy|High Alchemy]], a [[chisel]], and enough inventory to hold at least one [[amethyst]].
+For increased efficiency, completion of the [[Varrock Elite Diary]] gives the player access to [[Varrock armour 4]], which gives an additional chance to mine an [[Amethyst]]. [[Expert mining gloves]] can be purchased within the [[Mining Guild]], and gives a 25% chance that the node will not be depleted, and the player will continue mining the rock until it depletes. The [[Celestial ring]] offers an invisible +4 boost to Mining while worn, but does not offer an additional chance at mining ore.
+
+|-
+|Killing [[rune dragon]]s
+|1,000,000
+|Yes
+| High {{SCP|Combat}}, [[Dragon Slayer II]] completed
+|Combat
+|Killing rune dragons requires relatively low effort and can be very lucrative in getting cash, through the runite bars and valuable alchables. Dragon hunter lance is highly recommended. At the cost of supplies, you should expect over 1m/hour in alchables.
+
+More information on killing rune dragons can be found [[Rune dragon/Strategies|here]].
+|-
+|[[Money_making_guide/Crafting_double_nature_runes_(Achievement_Diary_Cape_teleport)|Crafting nature runes with the Achievement Diary Cape]]
+|2,376,000
+|Maybe
+|[[Achievement diary cape]], {{SCP|Runecraft|91+}}, [[Colossal pouch]], Full [[Raiments of the eye]] set
+|Skilling
+|Rate does not account for time selling nature runes to [[Ali's Discount Wares]]
+|}
+[[Category:Ironman Mode]]
+[[Category:Guides]]

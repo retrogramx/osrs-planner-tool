@@ -1,0 +1,200 @@
+{{Iron Guide Links}}[[Crafting]] is a skill that Ironmen typically train through [[glassblowing]], due to its low cost and availability. Many pieces of important jewellery require Crafting, such as [[teleportation jewellery]] and [[amulet of glory|amulets of glory]].
+
+==Early training and Quests: 1-35==
+{{Main|Quest experience rewards#Crafting}}
+
+Do various quests that give Crafting experience for the early levels. Completing all of these quests will net a total of 23,856 Crafting experience, enough for at least level 35 Crafting. 
+
+* Free-to-play starting quests include:
+** [[Sheep Shearer]] rewards 150 Crafting experience
+** [[Goblin Diplomacy]] rewards 200 Crafting experience
+** [[Misthalin Mystery]] rewards 600 Crafting experience
+* [[Dwarf Cannon]] rewards 750 Crafting experience
+* [[Recipe for Disaster/Freeing the Goblin generals]] rewards 1,000 Crafting experience (a continuation of Goblin Diplomacy)
+* [[Murder Mystery]] rewards 1,406 Crafting experience, which has no requirements and leads to spinning flax.
+* [[Observatory Quest]] rewards 2,250 Crafting experience
+* [[Death on the Isle]] requires {{SCP|Thieving|34}} and {{SCP|Agility|32}}, rewards 5,000 Crafting experience
+* [[Elemental Workshop I]] and [[Elemental Workshop II|II]] will net a total of 12,500 Crafting (and Smithing) experience, with relatively low skill requirements.
+** [[Elemental Workshop I]] requires {{SCP|Crafting|20}}, {{SCP|Mining|20}}, {{SCP|Smithing|20}}, rewards 5,000 Crafting experience
+** [[Elemental Workshop II]] requires [[Elemental Workshop I]], {{SCP|Magic|20}}, {{SCP|Smithing|30}}, rewards 7,500 Crafting experience
+
+Early alternative training methods and token experience include:
+
+* [[Molten glass]] on [[Entrana]] using the local [[seaweed]] and [[Sandpit|sand]] can provide a source of free Crafting experience for both new and experienced players alike.
+* Collecting [[flax]] south of [[Seers' Village]] and [[Spinning Wheel|spinning]] them into [[bow string]]s (requires {{SCP|Crafting|10|link=yes}}) is a good way to gain a few early Crafting levels. Completing [[Murder Mystery]] at {{SCP|Crafting|1|link=yes}}, which is a quest just north of Seers' Village in [[Sinclair Mansion]], will bring the player to {{SCP|Crafting|11|link=yes}}, enough to start spinning flax. Bow strings can be used for [[Fletching]] training and moneymaking from bows.
+* Doing [[Bird house trapping|birdhouse]] runs provides small amounts of Crafting experience that add up over time if done regularly.
+* [[Guardians of the Rift]] provides 5,000–6,000 Crafting experience per hour at no cost.
+* Crafting and alching jewellery from [[Gold bar|gold bars]] gives relatively slow but profitable experience.
+
+==Glassblowing: 35-99==
+One of the most common and reliable ways of training Crafting is to blow [[molten glass]]. There are multiple ways to acquire the resources needed to do so based on your account's progression.
+
+=== 35-61: Buying buckets of sand and soda ash ===
+Early on, the easiest way to acquire [[Bucket of sand|buckets of sand]] and [[soda ash]] is to buy the supplies from [[Trader Crewmember|trader crewmembers]]. Smelt the soda ash and buckets of sand together in a furnace to create [[molten glass]]. Blow this glass into the highest tier item you can until 61 Crafting. After level 46, glass can be blown into [[Unpowered orb|unpowered orbs]] and later [[Charge Orb|charged]] and crafted into [[battlestaves]] for more experience and profit.
+
+=== 61-99 Superglass Make ===
+
+==== Farming giant seaweed and mining sand ====
+After 61 Crafting, 77 Magic, and completion of [[Lunar Diplomacy]], it is much faster to use [[Superglass Make]] to process bulk quantities of sand and [[giant seaweed]] you acquire from the [[Bandit Camp Quarry]] and [[Underwater|Underwater farming]], respectively.
+
+Compared to buying soda ash and regular seaweed, the benefits include:
+* [[Seaweed spores]] spawn frequently on the ground near the seaweed patches, requiring very little investment into getting them.
+* With [[ultra compost]], around 50 giant seaweed per run can be collected.  Contrary to popular belief, [[magic secateurs]] do not affect the yield.<ref>[[Magic secateurs#:~:text%3DNote%2C%20magic%20secateurs%20do%20not%2Cit%20is%20a%20Limpwurt%20plant.|Note, magic secateurs do '''not''' work when farming ]][[Giant seaweed]] in [[Seaweed patch|Seaweed patches]] nor harvesting from a [[Flower patch]] unless it is a [[Limpwurt plant]].</ref> [[Seaweed (Farming)|Seaweed plants]] also benefit substantially from [[Attas plant|Attas plants]], although they require 76 [[Farming]].
+* Superglass make can be cast directly on the giant seaweed, cooking it into soda ash is not required.
+* Superglass make gives roughly 60% bonus molten glass with giant seaweed, and processes the entire inventory in one cast.
+
+[[File:Bandit Camp Quarry.png|thumb|The [[Bandit Camp Quarry]], home of [[Sandstone]]]]
+The fastest way of getting [[Bucket of sand|buckets of sand]] is to mine sandstone in the [[Bandit Camp Quarry|Quarry]] and grind it using [[Sandstorm]] just west of the mine. Noted empty [[bucket]]s can be given to [[Drew]] at the grinder. Players can then claim noted [[buckets of sand]] from Drew after grinding sandstone, with each piece of sandstone ground providing a different amount of sand depending on the size of the piece. Drew charges 50 coins per bucket.
+
+Players may also collect buckets of sand by casting teleport home to [[Yanille]] and filling buckets at the [[sand pit]] north of the Home Portal. Alternatively, upon completion of the quest Song of the Elves, players gain access to a sand pit in Prifddinas which is a few steps away from the north bank. These methods require less effort than mining sandstone, but are significantly slower.
+
+Completing [[The Hand in the Sand]] quest allows the player to claim 84 free buckets of sand daily from [[Bert]].
+
+Players can farm [[giant seaweed]] by planting [[seaweed spores]] in [[seaweed patch]]es in the underwater area of [[Fossil Island]]. Harvesting these seaweed patches grant a large amount of giant seaweed, one of which is equivalent to six normal seaweeds. For more info, see:[[Ironman Guide/Farming#Giant seaweed]].
+
+Once supplies have been collected, players can withdraw 18 buckets of sand and three giant seaweeds before casting Superglass Make to create molten glass. Blow the molten glass into the highest-tier glass item available for Crafting experience. Alternatively, blow glass into unpowered orbs for additional Crafting experience and GP from battlestaves or [[Empty light orb|empty light orbs]] for additional Crafting and [[Firemaking]] xp at [[Dorgesh-Kaan]].
+
+[[File:Trader Stan's Trading Post (Port Sarim).png|thumb|right|[[Trader Stan's Trading Post]]]]
+
+==== Charter ship method ====
+The charter ship method still offers high Crafting experience per hour and does not require any banked supplies. The downside is that there usually is some competition for stock.
+
+Buy buckets of sand and seaweed (or soda ash) from any [[Trader Crewmember]], cast [[Superglass Make]] and make the highest-tier glass item available on the spot. Sell the glass items or drop them, hop worlds and repeat. This method will grant approximately 65,000–70,000 experience per hour with [[lantern lens]]es and 85,000–90,000 experience per hour with [[empty light orb]]s, depending on stock. 
+
+For best results, use this method in ports that are less popular. Areas like [[Port Tyras]] (requires [[Regicide]]), [[Brimhaven]] dock, and [[Mos Le'Harmless]] have a better chance of being stocked. Popular ports such as [[Port Khazard]] or [[Catherby]] are more frequently sold out, resulting in far less experience per hour.
+
+=== Level 87-99 Fixing goblin lamps in Dorgesh-Kaan ===
+{{Map|2699,5256|2695,5260|2868,5392|2698,5269|2735,5278|2739,5253|2869,5411|2749,5261|2801,5337|2865,5426|2738,5283|2749,5292|2764,5370|2804,5351|2744,5299|2690,5302|2802,5359|2869,5422|2698,5302|2707,5274|2869,5415|2806,5348|2796,5337|2801,5343|2774,5335|2772,5343|2872,5410|2760,5359|2823,5422|2827,5417|2827,5433|2823,5429|2758,5396|2762,5409|2770,5419|2781,5429|2801,5428|2804,5427|2798,5415|2807,5400|2803,5389|2874,5483|2867,5490|2864,5491|2857,5496|2770,5413|2758,5398|2691,5328|2701,5345|2706,5354|2701,5362|2706,5369|2745,5360|2739,5360|2736,5350|2747,5348|2741,5344|2746,5323|2749,5329|2742,5327|2737,5324|2744,5348|2807,5406|2766,5431|mtype=dot|mapID=5|align=right|caption=Map of lamps in Dorgesh-Kaan}}Fixing [[Lamp (Dorgesh-Kaan)|lamps]] in [[Dorgesh-Kaan]] is the way to get the most experience out of each [[molten glass]]. It requires 87 [[Crafting]], 44 Thieving, 52 Firemaking, and completion of [[The Lost Tribe]]. 
+
+Molten glass is used to craft [[Light orb|light orbs]], which then repair lamps in Dorgesh-Kaan that give on average 724 Crafting experience, 550 [[Firemaking]] experience, and small amounts of Thieving experience.  
+
+Players should take a [[glassblowing pipe]] along with an inventory of molten glass out of the nearby bank and run to the [[wire machine]]. On the way, glassblow [[Empty light orb|empty light orbs]]. Once there, thieve [[cave goblin wire]] from the wire machine and attach it to the empty light orbs. Upon crafting the completed light orbs, work your way around the city fixing the lamps.  
+
+==== Fixing the lamps ====
+Around ten lamps will be broken at any one time, and are unique to each player; each player will see different lamps around Dorgesh-Kaan as broken. Upon fixing a lamp, should the player still be carrying additional light orbs afterwards, they will be notified whether there is another lamp in need of fixing nearby. This will be accompanied by a flashing arrow on their minimap if so. The player should bring low-weight equipment such as the [[Graceful outfit]]. They may wish to bring [[Stamina potion|stamina potions]] and the [[ring of endurance]] to help with energy management. 
+
+Tip: [[Dorgesh-kaan sphere]] can be used to teleport randomly around Dorgesh-Kaan if a player is not near any broken lamps. These can be thieved from the chests, noted below, or bought from [[Oldak]] for 2 [[Law rune|law runes]] and 1 molten glass. 
+
+==== Experience rates ====
+Creating an empty light orb gives the player 70 experience. Adding goblin wire to complete the light orb grants another 104 experience.
+
+For fixing a lamp, the player receives 500 Firemaking and 500 Crafting experience.
+
+Every fifty lamps the player fixes, an additional 2,500 experience will be granted to both Crafting and Firemaking. 
+
+Skilled players can reach 130,000 Crafting experience, 90,000 Firemaking experience, and 4000 Thieving experience per hour.
+
+While still learning, players should expect as low as 90,000 Crafting and 65,000 Firemaking and 3000 Thieving experience per hour.
+
+If while fixing the lamps, the player also thieves the nearby chests at 78+ Thieving, a skilled player can expect more than 95,000 Crafting experience per hour, 70,000 Firemaking experience per hour, and 75,000 Thieving experience per hour. It takes some practice to get a good rhythmn and balance between the three but if a good route is used the player can expect decent experience in all three skills.
+
+==== Extra note: Chests in Dorgesh-Kaan ====
+Players with 78 Thieving can thieve from the [[Chest (Dorgesh-Kaan Average)|average chest]] and [[Chest (Dorgesh-Kaan Rich)|rich chest]], which are both found in high numbers near lamps. These can grant additional light orbs, however the odds of receiving them are relatively low. The chests grant 200 Thieving experience and 650 Thieving experience per successful attempt, respectively. This will mean the player gains less Crafting experience, but more Thieving experience.
+
+Both chests can provide extra [[cave goblin wire]], and the rich chests provide [[Empty light orb|empty light orbs]] and [[Light orb|light orbs]]. This means that the player can restock some supplies as they go. 
+
+The player should bring [[Lockpick|lockpicks]] if Thieving the chests.
+
+== Other methods ==
+
+===Crafting battlestaves===
+Charging [[Unpowered orb|orbs]] and crafting [[Battlestaff|battlestaves]] offers relatively decent Crafting experience and very good profit.
+
+Players who have completed task sets of the [[Varrock Diary]] can buy noted [[Battlestaff|battlestaves]] daily from a barrel near [[Zaff]] for 7,000 coins each. They all have to be bought at once, so a sizeable stack of coins is necessary. Starting at 15 with the easy tasks, each task set doubles the number of battlestaves that can be purchased per day. Players can also purchase a limited number of battlestaves from Zaff and various other vendors across Gielinor.
+
+Players can also get battlestaves from various bosses and monsters, such as [[Zulrah]], [[Vorkath]], [[The Gauntlet]], [[Alchemical Hydra]] and [[Skeletal Wyvern]]s. [[Water orb|Water orbs]] can be obtained as a common drop from [[Moons of Peril]]. Each bought and crafted battlestaff is worth {{Coins|{{HA|Air battlestaff}}-7000}} profit when high alched.
+
+Alternatively, players can buy battlestaves in bulk quantities (via world hopping) from magic shops such as [[Baba Yaga's Magic Shop.|Baba Yaga's Magic Shop]] at Lunar Isle (requiring completion of [[Lunar Diplomacy]]) or at the [[Magic Guild Store (Runes and Staves)|Magic Guild Store]] (requiring [[The Hand in the Sand]] and 66 Magic to access).
+
+{|class="wikitable"
+!style="width:10%"|Orb
+!style="width:40%"|Items needed
+!class="unsortable"|Procedure
+|-
+|[[Air orb]] {{SCP|Crafting|66}} / [[Earth orb]] {{SCP|Crafting|58}}('''Warning:''' [[File:Hardcore_ironman_chat_badge.png]] Wilderness)
+|
+* [[Staff of air]] / [[Staff of earth]]
+* [[Cosmic rune]]s
+* [[Unpowered orb]]s
+* [[Amulets of glory]]/[[Ring of returning|rings of returning]]/[[ring of dueling]]
+* [[Stamina potion|Stamina]]/[[energy potion]]s or other stamina recovery items
+|Grab 81 [[cosmic rune]]s and 27 [[unpowered orb]]s, run to the [[Air Obelisk|Air]] or [[Obelisk of Earth|Earth Obelisk]], charge the orbs and teleport to Edgeville with an amulet of glory. If [[Edgeville]] [[Spawning|respawn]] is unlocked, use [[Ring of returning|rings of returning]] in a PvP World instead. You can also go through the [[Ferox Enclave Dungeon]] followed by using the [[Soul Wars Portal]] to get to Edgeville using the [[ring of dueling]]'s [[Ferox Enclave]] teleport.
+|-
+|[[Fire orb]] {{SCP|Crafting|62}} / [[Water orb]]{{SCP|Crafting|54}}
+|
+* [[Staff of fire]] / [[Staff of water]]
+* [[Anti-dragon shield]]
+* [[Cosmic rune]]s
+* [[Rune pouch]] (strongly recommended if bringing teleport runes alongside cosmic runes)
+** [[Law rune|Law]] and [[dust rune]]s
+* [[Unpowered orb]]s
+* [[Stamina potion|Stamina]]/[[energy potion]]s, [[revitalisation pool]] or better in POH, or other stamina recovery items
+* [[Antipoison]]s
+* [[Dusty Key]] (if you have less than 70 Agility)
+|There are a few possible methods to get there: 
+*Move the player's POH to [[Taverley]]. [[House Teleport|Teleport to House]], run south to the Taverley Dungeon and to the [[Obelisk of Fire|Fire]] or [[Obelisk of Water|Water Obelisk]], charge the orbs and [[Camelot Teleport|Teleport]] to [[Camelot]] to bank. 
+*Start at Castle Wars bank, use the [[Hot Air Balloon]] to travel to Taverley, head West to the Taverley Dungeon to craft your orbs, then return to Castle Wars with a ring of dueling.
+*Starting from west Falador bank, head to the Taverley Dungeon through the agility obstacle in the wall of the city. There are various ways to teleport back to Falador after charging your orbs:
+**[[Falador Teleport|Falador]] [[Falador teleport (tablet)|teleport]]
+**[[Ring of returning|Rings of returning]] with Falador castle as the selected respawn point.
+**[[Ring of wealth|Ring(s) of wealth]] or an [[ornate jewellery box]] ({{SCP|Construction|91|link=yes}} and a POH teleport method) to teleport to [[Falador Park]].
+|}
+It is possible to charge the orbs faster by manually casting [[Charge Orb]] on the obelisk, one by one.
+
+[[File:TzHaar-Hur-Rin's Ore and Gem Store.png|thumb|right|[[TzHaar-Hur-Rin's Ore and Gem Store]] in [[Mor Ul Rek]]]]
+===Cutting Gems===
+There are a multitude of ways to acquire gems from skilling, shops, or passively through PVM. Cutting gems gives relatively fast XP when processed.
+
+==== Buying Gems in Mor Ul Rek ====
+This method becomes viable once the player has obtained a [[fire cape]] and accrued approximately {{Coins|3,200,000}}. Players can acquire Tokkul by selling chaos runes to [[TzHaar-Mej-Roh's Rune Store]], then use the Tokkul to purchase gems from [[TzHaar-Hur-Rin's Ore and Gem Store]].
+* With a [[fire cape]] and enough capital, you can buy gems with chaos runes from [[TzHaar-Hur-Rin's Ore and Gem Store]]. Around 3,200,000 coins of capital is needed for the [[gold bars]], [[chaos rune]]s and [[nature rune]]s all at once, you can easily get away with just 1,000,000 coins if you do it in 3 sets. You will only end up losing around 18,000 chaos runes for 62 Crafting.
+
+* If using chaos runes and [[Karamja gloves]] to earn [[Tokkul]] it is a 4:1 ratio for chaos runes to sapphires. This method can reliably earn around 40,000–50,000 Crafting experience per hour.
+
+==== Gem rocks ====
+[[Gem rocks|Mining gem rocks]], especially after completion of medium Karamja diary, gives competitive Mining XP rates while also banking a large quantity of gems to cut and turn into jewellery. It is also the most notable source of [[uncut opal]], [[Uncut jade|jade]], and [[Uncut red topaz|red topaz]]. Wearing a charged [[amulet of glory]] will increase mining speed significantly.
+
+==== Shooting Stars ====
+[[Stardust]] is obtained by mining the [[Crashed Star|Crashed star]]. Stardust is used as currency at [[Dusuri's Star Shop]] that can be used to purchase the [[Bag full of gems]] for 300 [[Stardust]]. This is a non intensive/afk training method that provides decent [[Mining]] experience alongside collecting gems.
+
+Experience rates vary greatly based on level, the tier of pickaxe used, and time spent locating stars. If mining consistently, players can expect between 22,000 and 32,000 experience per hour, and 600–1000 stardust per hour. This equates to be around 80–120 gems per hour.
+
+==== Rusty Chest ====
+The [[Rusty chest|Rusty Chest]] on [[Dognose Island]] has a common chance of dropping [[gems]], allowing for a free method to train both [[Crafting]], and [[Thieving]]. The method requires 33 [[Thieving]] to open the chest, and 40 [[Sailing]] to reach the island. Should one wish to save the gems, bringing a [[gem bag]] will allow you to transport more gems per trip.
+
+==== Port Roberts ====
+Stalls in [[Port Roberts]] allow the player to obtain both uncut gems and silver ore/bars which can both be used for Crafting experience. This requires 75 [[Thieving]], and 50 [[Sailing]] to access Port Roberts for the first time.
+
+==== Corrupted Gauntlet ====
+Uncut gems are frequently rewarded from the [[The Gauntlet|Corrupted Gauntlet]], players will likely accrue a significant number of gems while hunting for their crystal equipment drops. The Gauntlet is located in [[Prifddinas]] which requires completion of [[Song of the Elves]] to access.
+
+=== Jewellery ===
+Making [[jewellery]] not only gives good Crafting experience, but it also provides valuable items to [[High Level Alchemy|alch]] for profit or sell to stores such as [[Grum's Gold Exchange]] or [[Davon's Amulet Store]]. They also provide useful teleport locations and item effects when [[Enchantment spells|enchanted]]. To make jewellery you must first obtain either [[Gold bar|gold bars]] or [[Silver bar|silver bars]]. It is recommended to also use [[gems]] in jewellery for more coins and Crafting experience. Gold bars can be used to make [[sapphire]], [[emerald]], [[ruby]], [[diamond]], [[dragonstone]], [[onyx]], and [[zenyte]] jewellery. Generally, [[Bracelet|bracelets]] provide the best alch profit while [[Amulet|amulets]] provide 5 experience more as well as 4 experience for stringing them at the cost of less alch profit.
+
+[[Gold bar|Gold bars]] can also be used alone to make jewellery. It is recommended to either craft them into [[Gold bracelet|gold bracelets]] for alching or [[Gold tiara|gold tiaras]] for better experience. Players can use around 1,400 to 1,700 gold bars per hour from running to and from the [[Edgeville furnace]] or the closer [[Prifddinas#Trahaearn district|Prifddinas furnace]], resulting in 35,000 to 42,500 experience per hour if crafting bracelets or 49,000 to 59,500 experience per hour if crafting tiaras.
+
+[[Silver bar|Silver bars]] can be used to make [[opal]], [[jade]], and [[red topaz]] jewellery. Getting lots of these gems nearly exclusively comes from mining [[gem rocks]]. See the money making guide [[Money making guide/Mining gemstones|mining gemstones]] for how to do this efficiently. When using silver bars alone, it is recommended to make either [[Tiara|tiaras]] for future [[Runecrafting]] experience or [[silver bolts (unf)]] for future [[Fletching]] experience.
+
+===Obtaining Gold and Silver===
+
+* [[Gold ore]] and [[silver ore]] can be bought from [[Ore seller]] in the [[Blast Furnace]], then smelted into bars.
+* [[Zalcano]] is known for dropping smithing supplies which includes gold and silver ore as well as diamonds and dragonstones.
+* [[Slayer monsters]] such as [[Gargoyle|gargoyles]] and [[Greater Nechryael|greater nechryaels]] can drop gold bars.
+* [[Eclectic impling|Eclectic implings]] drop noted gold bars and their spawn locations can be camped in [[Puro-Puro]].
+* Many [[Boss|Bosses]] drop noted gold ore such as [[Venenatis]], The [[Kalphite Queen]], [[Calvar'ion]], The [[Thermonuclear smoke devil]], [[Phantom Muspah]], [[Spindel]], [[The Nightmare]], [[Phosani's Nightmare]], [[Vet'ion]], [[King Black Dragon]], [[Grotesque Guardians]], and The [[Deranged archaeologist]].
+* Silver bars can be obtained directly from [[Reward token|Temple Trekking rewards]].
+* The [[Phantom Muspah]] and [[Crazy archaeologist]] both drop silver ore.
+* The rewards [[Ancient chest|chest]] from [[Chambers of Xeric]] drops both gold and silver while [[Monumental chest|Theatre of Blood]] and [[Chest (Tombs of Amascut)|Tombs of Amascut]] only drop gold.
+* [[Casket (Reward pool)]] from defeating [[Tempoross]] are also a decent source of gold and silver bars as well as gems.
+
+=== Dragonhide equipment ===
+A sizeable amount of dragonhides are obtained from killing [[green dragon]]s for [[Prayer]] experience and from killing [[Vorkath]]. Tan the hides in the [[Crafting Guild]] or by casting [[Tan Leather]], craft the leathers into dragonhide bodies and [[high alch]] them for money.
+
+=== Drift Nets ===
+[[Jute fibre]] can be farmed in hops patches and woven into [[Drift net|drift nets]] for 55 Crafting experience for every two jute fibres. This is a comparable amount of experience per item crafted to glassblowing. The drift nets can then be used to train Hunter and Fishing in [[drift net fishing]], in the same area as the Giant seaweed patches. The amount of Crafting experience banked per jute run varies depending on Farming level, whether you have the [[magic secateurs]], whether an [[Attas seed|attas]] seed is planted, what kind of [[Compost Bin|compost]] (or protection) is used, and luck, but at higher farming levels, somewhere between 1000 and 2000 Crafting experience worth of jute fibre per run is likely. A good place to weave drift nets is at the Fossil Island camp, where, once built, a bank chest and a loom are very close together (and [[planks]] can also be collected from the spawns while running between the two tents, if desired, for later construction training). This is a simpler, slower, cheaper, and more passive way to accumulate Crafting experience over a long time as compared with glassblowing, and can be easily combined with giant seaweed farming or other methods of training Crafting for more efficient training.
+
+==References==
+{{Reflist}}
+
+{{Training guides}}
+[[Category:Ironman Mode]]

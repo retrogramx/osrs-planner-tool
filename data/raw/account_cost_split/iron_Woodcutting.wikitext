@@ -1,0 +1,72 @@
+{{Iron Guide Links}}
+
+[[File:Woodcutting.png|left]]
+[[Woodcutting]] is a skill trained simultaneously with [[Ironman Guide/Firemaking|Firemaking]] in the lower levels. At higher levels, bank the logs necessary for Construction training. Otherwise the skill is trained [[Pay-to-play Woodcutting training|as normal]].
+
+Ironman training is not substantially different from [[Woodcutting training p2p|normal]], however a large amount of mid-level experience comes from [[Wintertodt]].
+
+==Early training: Quests==
+{{Main|Quest experience rewards#Woodcutting}}
+
+Early levels can be skipped by completing [[Monk's Friend]], which has no requirements, is extremely short, and rewards 2,000 Woodcutting experience, enough to go from level 1 to 13. There are a few other notable quests that grant experience, but not available early enough to be necessary before [[Wintertodt]].
+
+* [[Monk's Friend]] rewards 2,000 Woodcutting experience.
+* [[Icthlarin's Little Helper]] requires [[Gertrude's Cat]], rewards 4,000 Woodcutting experience
+* [[Enlightened Journey]] requires {{SCP|Quest|20}}, {{SCP|Firemaking|20}}, {{SCP|Farming|30}}, {{SCP|Cooking|36}}, rewards 1,500 Woodcutting experience
+* [[The Eyes of Glouphrie]] requires [[The Grand Tree]], {{SCP|Construction|5}}, {{SCP|Magic|46}}, rewards 2,500 Woodcutting experience
+
+==Equipment==
+
+===Axes===
+Axes up to adamant can be purchased at [[Lunami's Axe Shop]] in [[Auburnvale]]. This can be accessed either through fairy ring {{Fairycode|ais}} or via the [[Quetzal Transport System]] if [[Twilight's Promise]] has been completed.
+
+The [[rune axe]] is purchasable at level 60 Woodcutting from the [[Woodcutting Guild]], but can be obtained earlier as a drop from [[tree spirit]]s if the player has access to [[fairy rings]] using code {{Fairycode|bkq}}.
+
+A [[dragon axe]] can only be obtained as a rare drop from one of the [[Dagannoth Kings]], or as a very rare reward from the [[Wintertodt]] [[Reward Cart|reward cart]] or [[extra supply crate]].
+
+===Lumberjack Outfit===
+The [[Lumberjack outfit]] provides a passive 2.5% woodcutting xp bonus and is considered worthwhile to obtain if planning on achieving 99 Woodcutting. It can be obtained relatively quickly from [[Temple Trekking]], but is also purchasable from the [[Forestry Shop]].
+
+===Log Basket===
+The [[Log basket]] obtained from the Forestry shop can hold up to 28 logs. With a [[Sturdy harness]] and [[Forestry kit]], it can be combined into a [[Forestry basket]]. This functions similarly to the [[Fish barrel]], allowing you to store more logs before needing to bank. The log basket is useful for storing logs needed for [[deadfall]] and [[pitfall]] traps.
+
+== Forestry ==
+[[Forestry#Forestry events|Forestry events]] can spawn passively while training on most types of trees, excluding certain tree types such as [[Tree|regular]]/[[Burnt tree|burnt]] trees, [[Hollow tree|hollow trees]], [[Patch locations#Tree patches|player-grown trees]], the [[blisterwood tree]], and trees within the [[Woodcutting Guild]]. These Forestry events give a wide variety of rewards such as [[Farming]], [[Construction]], [[Fletching]], [[Hunter]], [[Thieving]] XP, [[Seeds]] and [[Bird nest (egg)|Egg nests]] alongside additional Woodcutting XP and [[Anima-infused bark]]. Anima bark used at the Forestry shop can be used for [[Sawmill voucher|Sawmill vouchers]] or [[Twitcher's gloves]] to grant additional planks and bird nests, respectively.
+
+==Recommended methods==
+===Levels 1–~50: Training Woodcutting===
+From level 1, players will only be able to chop [[Tree|regular trees]]. It's strongly recommended to complete [[Monk's Friend]] to skip most of these levels, and use log spawns to train Firemaking.
+
+At level 15, players can chop and burn [[oak tree]]s until level 35. Burning teak logs only requires {{SCP|Firemaking|35}}, but it's best to stick with oaks until chopping teaks becomes available. A good location to cut and light fires is by [[Effigy]] at the [[Tower of Life (building)|Tower of Life]]; standing in between the adjacent oak trees.
+
+At level 35, [[teak tree]]s can be chopped and burned until players are eligible for [[Wintertodt]] at {{SCP|Firemaking|50|link=yes}}. An easy to find teak tree can be found south-west of [[Castle Wars]], which is fast to get to with the [[minigame teleport]]. A patch of several teak trees can be found south of [[Civitas illa Fortis]], requiring only [[Children of the Sun]] to access.
+
+===Levels 50–60: Wintertodt===
+{{See also|Ironman Guide/Firemaking}}
+
+Getting at least level 60 Woodcutting from Wintertodt is recommended, as players can simply buy a better axe from the [[Woodcutting Guild]] and do not have to spend time killing monsters.
+
+===Levels 35–99: Teak trees===
+With [[tick manipulation]], chopping [[Teak tree|teak trees]] is the best Woodcutting experience in the game. Without manipulation,  [[Sulliusceps]] becomes better experience at 65. Since large quantities of [[teak plank]]s are useful for [[Ironman Guide/Construction|construction training]], it's recommended to make the logs into planks immediately.
+
+The most efficient route for this is to teleport to a [[player-owned house]] and use a [[servant]] to make the planks. After sending him off, a [[mounted digsite pendant]] can be used to quickly get back to the teak trees on [[Fossil Island]].
+
+[[Ape Atoll]] is another option for teak trees since it's a shorter run. [[Monkey Madness II]] makes the monsters unaggressive there, otherwise a [[greegree]] is necessary. The [[Ape Atoll Teleport]] on the [[Arceuus spellbook]] can be used to get there quickly, or a house portal.
+
+===Levels 65–99: Sulliusceps===
+[[File:Sulliuscep.png|right|thumb|150px|A Sulliuscep]]
+{{Main|Sulliuscep}}
+
+Sulliusceps on [[Fossil Island]] are a good source of non-tick manipulated experience, around 100,000–110,000 Woodcutting experience per hour. They're also a source of [[unidentified fossil]]s, which are useful for the displays on the bottom floor of the [[Varrock Museum]].
+
+Being in the [[Tar Swamp]], players training here will have to contend with [[Tar Monster]]s. Equipment with Ranged defence is recommended, since prayers will be negligibly effective against these monsters. Players with high hitpoints and/or ample food may opt to wear other gear such as [[Graceful outfit|Graceful]] or [[Lumberjack outfit|the Lumberjack outfit]] as these offer relevant benefits as well. It's recommended to bring 9 [[mushroom]]s to fill the mud pit at the start, which allows safe passage to the beginning of the swamp. Without, the mud pit can deal upwards of 50 damage.
+
+===Levels 90–99: Redwood trees===
+Chopping [[redwood trees]] is the best passive method of training. Players can expect more than 60,000 Woodcutting experience per hour, with very large periods of [[AFK]] downtime. Natural spawns can be found in the [[Woodcutting Guild]]. [[Redwood sapling]]s can also be grown in the [[Farming Guild]], but this is not recommended for training Woodcutting, as this prevents the growth of new redwood trees for [[Farming]] experience and the [[Woodcutting Guild]] provides an invisible +7 boost to Woodcutting.
+
+It is also possible to use tick manipulation for redwoods in the Farming Guild, which is the most efficient method overall if the redwood logs are then later burnt for [[Firemaking]] while multiskilling, for example while [[Stealing artefacts|Stealing Artefacts]].
+
+The most efficient teleports to redwoods are [[Xeric's talisman]] to the lookout, [[Rada's blessing]] to the [[Kourend Woodland]], or a [[skills necklace]].
+
+[[Category:Ironman Mode]]
+{{Training guides}}

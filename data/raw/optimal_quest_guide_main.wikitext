@@ -1,0 +1,1721 @@
+{{External|rs=Quests/Strategy}}{{See also|Optimal quest guide/Ironman|Optimal quest guide/Free-to-play}} 
+The '''optimal quest guide''' lists ''[[Old School RuneScape]]'' [[quests]] in an order that allows new [[Members]] to progress in a way that minimises the amount of [[skill]] training to completion of all the quests. This guide does '''not''' show the most efficient quest order. It does not take into consideration [[unlockable content]], such as [[fairy rings]] or [[dragon equipment]], that provide numerous benefits to the player's game progression. For that, it is recommended that players complete the quests in the [[Optimal quest guide#Notable_quest_unlocks|notable quest unlocks]] section as soon as possible.
+
+==Guide==
+[[Experience lamp]]s or [[book of knowledge|books of knowledge]] received through [[random events]] or [[Achievement Diary|Achievement Diaries]] may be used on any skill of the player's choosing or to save time by shortening the next bit of training in this guide.
+
+Players with 50 [[Construction]] should take advantage of their [[player-owned house]] for access to a [[portal chamber]], [[teak altar]], and [[amulet of glory (mounted)|mounted glory]]. [[Teleport to House|Teleport to house]] ([[Teleport to house (tablet)|tablet]]) may also be used for emergency teleport. New players on a budget should use a [[ring of dueling]] to access the bank and restore stats at [[Ferox Enclave]]'s [[pool of refreshment]].
+
+Completing [[Achievement Diary|Achievement Diaries]] will be beneficial throughout the game; some of the [[Achievement Diary Rewards|rewards]] include access to [[Ardougne cloak 1|unlimited teleports]], noted item drops, [[antique lamp]]s, [[shortcuts]], and additional [[Lunar_spellbook|lunar spells]]. Similarly, some [[miniquests]] may provide useful rewards, such as experience lamps, and may be required to complete other quests.
+
+{{Optimal quest guide/Recommended Quests}}
+
+===Quests===
+A note on usage ('''particularly relevant for new players'''): the "New levels after quest" column shows the levels the player will have if they follow this guide exactly. However, players may find it beneficial to train up [[Agility]] (for faster run regeneration and eventually the [[graceful outfit]]) and one's combat stats (especially [[Prayer]] for [[protection prayers]]) separately to make completing some quests easier. This is not strictly necessary, though, as [[stamina potion]]s and [[energy potion]]s can also be used to restore run energy, and many quest bosses can be [[Flinching|flinched]] or [[safespot]]ted, thereby circumventing the need for strong stats and gear. 
+
+Hover over a skill reward in the "New levels after quest" column to see the exact total experience in the listed skill after completing the quest.
+{{Sync}}
+<!-- XP and QP calculation for guide-->
+{{#vardefine:colspan|7}}{{#vardefine:questpoints|0}}{{#vardefine:attackxp|0}}{{#vardefine:agilityxp|0}}{{#vardefine:constructionxp|0}}{{#vardefine:cookingxp|0}}{{#vardefine:craftingxp|0}}{{#vardefine:defencexp|0}}{{#vardefine:farmingxp|0}}{{#vardefine:firemakingxp|0}}{{#vardefine:fishingxp|0}}{{#vardefine:fletchingxp|0}}{{#vardefine:herblorexp|0}}{{#vardefine:hitpointsxp|0}} {{#vardefine:hunterxp|0}}{{#vardefine:magicxp|0}}{{#vardefine:miningxp|0}}{{#vardefine:prayerxp|0}}{{#vardefine:rangedxp|0}}{{#vardefine:runecraftxp|0}}{{#vardefine:slayerxp|0}}{{#vardefine:smithingxp|0}}{{#vardefine:strengthxp|0}}{{#vardefine:thievingxp|0}}{{#vardefine:woodcuttingxp|0}}{{#vardefine:sailingxp|0}}
+{| class="wikitable lighttable sticky-header align-centre-2 qc-active oqg-table" data-tableid="OQG"
+|+Old School RuneScape Quest Guide
+|- style="height:4em;" <!-- ensure the vertical-rl text fits inside the cell -->
+! Quest/Activity
+! Quick <br>Guide
+! New levels after quest
+! Quest <br>points
+! Total <br>QP
+! Additional info
+! Location
+|- data-rowid="Tutorial Island"
+|[[Learning the Ropes]]
+|''N/A''
+|{{Optimal quest|hitpoints=1154}}
+|{{Optimal quest/qp|1}}
+| 
+|[[Tutorial Island]]
+|- data-rowid="Cook's Assistant"
+|[[Cook's Assistant]]
+|[[Cook's Assistant/Quick guide|QG]]
+|{{Optimal quest|cooking=300}}
+|{{Optimal quest/qp|1}}
+|Consider getting an extra [[pot of flour]] for [[Prince Ali Rescue]]. 
+
+It is also recommended to start [[Rune Mysteries]], [[The Restless Ghost]] and [[Prince Ali Rescue]] while in the area, to speed up completion of these quests later.
+
+For a more in-depth guide on which quests to combine to complete all [[Free-to-play]] quests as efficiently as possible, see the [[Optimal quest guide/Free-to-play|free-to-play version of this guide]]. From now on, this guide will not recommend multi-questing strategies.
+|[[Lumbridge]]
+|- data-rowid="Sheep Shearer"
+|[[Sheep Shearer]]
+|[[Sheep Shearer/Quick guide|QG]]
+|{{Optimal quest|crafting=150}}
+|{{Optimal quest/qp|1}}
+|Consider getting an extra 3 balls of wool for the Prince Ali rescue quest.
+|[[Lumbridge]]
+|- data-rowid="Misthalin Mystery"
+|[[Misthalin Mystery]]
+|[[Misthalin Mystery/Quick guide|QG]]
+|{{Optimal quest|crafting=600}}
+|{{Optimal quest/qp|1}}
+|
+|[[Lumbridge]]
+|- data-rowid="Prince Ali Rescue"
+|[[Prince Ali Rescue]]
+|[[Prince Ali Rescue/Quick guide|QG]]
+|
+|{{Optimal quest/qp|3}}
+|Consider buying a [[sickle mould]] while in [[Al Kharid]].
+|[[Al Kharid]]
+|- data-rowid="The Restless Ghost"
+|data-sort-value="Restless Ghost, The"|[[The Restless Ghost]]
+|[[The Restless Ghost/Quick guide|QG]]
+|{{Optimal quest|prayer=1125}}
+|{{Optimal quest/qp|1}}
+|
+|[[Lumbridge]]
+|- data-rowid="Rune Mysteries"
+|[[Rune Mysteries]]
+|[[Rune Mysteries/Quick guide|QG]]
+|
+|{{Optimal quest/qp|1}}
+| Unlocks the ability to use [[lamp]]s and [[book of knowledge|books of knowledge]] on the [[Runecraft]] skill.
+|[[Lumbridge]]
+|- data-rowid="Stronghold of Security"
+|Unlock: [[Stronghold of Security]]
+| ''N/A''
+|
+|{{Optimal quest/qp|0}}
+| Requires [[RuneScape Authenticator]] to be set. Bring enough food and run through dangerous rooms as fast as possible, with auto-retaliate off. This rewards players with {{Coins|10000}} from just the first three floors.
+|[[Barbarian Village]]
+|- data-rowid="Imp Catcher"
+|[[Imp Catcher]]
+|[[Imp Catcher/Quick guide|QG]]
+|{{Optimal quest|magic=875}}
+|{{Optimal quest/qp|1}}
+|
+|[[Wizards' Tower]]
+|- data-rowid="Witch's Potion"
+|[[Witch's Potion]]
+|[[Witch's Potion/Quick guide|QG]]
+|{{Optimal quest|magic=325}}
+|{{Optimal quest/qp|1}}
+|
+|[[Rimmington]]
+|- data-rowid="Gertrude's Cat"
+|[[Gertrude's Cat]]
+|[[Gertrude's Cat/Quick guide|QG]]
+|{{Optimal quest|cooking=1525}}
+|{{Optimal quest/qp|1}}
+|Allows raising of [[cats]].
+It is recommended to start raising a kitten to speed up [[Recipe for Disaster/Freeing Evil Dave]] and [[Ratcatchers]].
+|[[Varrock]]
+|- data-rowid="Children of the Sun"
+|[[Children of the Sun]]
+|[[Children of the Sun/Quick guide|QG]]
+|
+|{{Optimal quest/qp|1}}
+|Allows access to [[Varlamore]]. Consider completing this quest whilst in Varrock Square during Gertrude's Cat to minimise time spent moving back and forth.
+Additionally, visit Varlamore once via [[Regulus Cento]] in order to unlock all other transportation methods to the region.
+| [[Varrock]]
+|- data-rowid="Natural history quiz"
+|[[Natural history quiz]] (miniquest)
+|''N/A''
+|{{Optimal quest|hunter=1000|slayer=1000}}
+|{{Optimal quest/qp|0}}
+|
+|[[Varrock]]
+|- data-rowid="Daddy's Home"
+|[[Daddy's Home]] (miniquest)
+|[[Daddy's Home/Quick guide|QG]]
+|{{Optimal quest|construction=944}}
+|{{Optimal quest/qp|0}}
+| Gives a [[player-owned house]] (POH) in [[Rimmington]], as well as a valuable [[Marlo's crate]].
+|[[Varrock]]
+|- data-rowid="Dwarf Cannon"
+|[[Dwarf Cannon]]
+|[[Dwarf Cannon/Quick guide|QG]]
+|{{Optimal quest|crafting=750}}
+|{{Optimal quest/qp|1}}
+|It is recommended to complete (or choose the option to skip) the [[Barbarian Assault]] tutorial, to unlock the [[minigame teleport]]. This makes it easier to reach the quest finish location more quickly. Or just use the teleport from a [[games necklace]].
+Be sure to start the [[Alfred Grimhand's Barcrawl]] miniquest when you are there, and visit nearby bars while questing.
+Grants access to the [[dwarf multicannon]] and allows smithing of [[cannonball]]s.
+It may be advantageous to progress [[Doric's Quest]] and [[The Knight's Sword]] when visiting [[Nulodion]] near Falador for this quest.
+|[[Baxtorian Falls]]
+|- data-rowid="Waterfall Quest"
+|[[Waterfall Quest]]
+|[[Waterfall Quest/Quick guide|QG]]
+|{{Optimal quest|attack=13750|strength=13750}}
+|{{Optimal quest/qp|1}}
+|Speak to [[King Bolren]] part-way through the quest to start [[Tree Gnome Village]] and unlock [[Elkoy]]'s follow option.
+|[[Baxtorian Falls]]
+|- data-rowid="Tree Gnome Village"
+|[[Tree Gnome Village]]
+|[[Tree Gnome Village/Quick guide|QG]]
+|{{Optimal quest|attack=11450}}
+|{{Optimal quest/qp|2}}
+| Grants the ability to use [[spirit tree]]s.
+|[[Tree Gnome Village (location)|Tree Gnome Village‎ ]] <!--The special character prevents tick/cross appearing on the location-->
+|- data-rowid="Doric's Quest"
+|[[Doric's Quest]]
+|[[Doric's Quest/Quick guide|QG]]
+|{{Optimal quest|mining=1300}}
+|{{Optimal quest/qp|1}}
+|Start the quest Below Ice Mountain
+|[[Falador]]
+|- data-rowid="Witch's House"
+|[[Witch's House]]
+|[[Witch's House/Quick guide|QG]]
+|{{Optimal quest|hitpoints=6325}}
+|{{Optimal quest/qp|4}}
+|Level 42 and 55 enemies can be [[Safespot|safespotted]].
+|[[Taverley]]
+|- data-rowid="The Knight's Sword"
+|data-sort-value="Knight's Sword, The"|[[The Knight's Sword]]
+|[[The Knight's Sword/Quick guide|QG]]
+|{{Optimal quest|smithing=12725}}
+|{{Optimal quest/qp|1}}
+|
+|[[Falador]]
+{{Optimal quest/train|fletching|10}}
+|- data-rowid="The Tourist Trap"
+|data-sort-value="Tourist Trap, The"|[[The Tourist Trap]]
+|[[The Tourist Trap/Quick guide|QG]]
+|{{Optimal quest|agility=9300}}
+|{{Optimal quest/qp|2}}
+|Choose {{SCP|Agility|link=yes}} for both experience rewards.
+This quest is done as soon as possible in order to improve run energy restoration and the speed of getting around. While the combat experience from [[Waterfall Quest]] and [[Tree Gnome Village]] may be helpful in completing it, this and the previous two quests could be done sooner if safespotting the [[Mercenary Captain]].
+|[[Kharidian Desert]]
+|- data-rowid="Black Knights' Fortress"
+|[[Black Knights' Fortress]]
+|[[Black Knights' Fortress/Quick guide|QG]]
+|
+|{{Optimal quest/qp|3}}
+|Useful for its {{Coins|2500}} reward.
+|[[Falador]]
+|- data-rowid="Druidic Ritual"
+|[[Druidic Ritual]]
+|[[Druidic Ritual/Quick guide|QG]]
+|{{Optimal quest|herblore=250}}
+|{{Optimal quest/qp|4}}
+|Grants access to the [[Herblore]] skill.<br>Players can start (but unadvised to attempt to finish) [[Dragon Slayer I]] after this quest to be allowed to equip the [[anti-dragon shield]] to make some quests easier. However this will enable dragon tasks for {{SCP|Slayer|link=yes}} which give low experience per hour.
+|[[Taverley]]
+|- data-rowid="Recruitment Drive"
+|[[Recruitment Drive]]
+|[[Recruitment Drive/Quick guide|QG]]
+|{{Optimal quest|agility=1000|herblore=1000|prayer=1000}}
+|{{Optimal quest/qp|1}}
+|
+|[[Falador]]
+|- data-rowid="Goblin Diplomacy"
+|[[Goblin Diplomacy]]
+|[[Goblin Diplomacy/Quick guide|QG]]
+|{{Optimal quest|crafting=200}}
+|{{Optimal quest/qp|5}}
+|While not yet necessary, it is easy to complete this quest while in Falador.
+|[[Goblin Village]]
+|- data-rowid="Sleeping Giants"
+|[[Sleeping Giants]]
+|[[Sleeping Giants/Quick guide|QG]]
+|{{Optimal quest|smithing=6000}}
+|{{Optimal quest/qp|1}}
+|Gives access to [[Giants' Foundry]] minigame. If you complete nine iron/steel sword commissions now, it will take care of Smithing training you will need later.
+|[[Al Kharid]] Desert
+|- data-rowid="Fight Arena"
+|[[Fight Arena]]
+|[[Fight Arena/Quick guide|QG]]
+|{{Optimal quest|attack=12175|thieving=2175}}
+|{{Optimal quest/qp|2}}
+|
+|[[Fight Arena (location)|Fight Arena‎ ]] <!--The special character prevents tick/cross appearing on the location-->
+|- data-rowid="Plague City"
+|[[Plague City]]
+|[[Plague City/Quick guide|QG]]
+|{{Optimal quest|mining=2425}}
+|{{Optimal quest/qp|1}}
+|Grants the use of [[Ardougne teleport]] and [[Ardougne teleport (tablet)]].
+|[[Ardougne]]
+|- data-rowid="Monk's Friend"
+|[[Monk's Friend]]
+|[[Monk's Friend/Quick guide|QG]]
+|{{Optimal quest|woodcutting=2000}}
+|{{Optimal quest/qp|1}}
+|
+|[[Ardougne]]
+|- data-rowid="Hazeel Cult"
+|[[Hazeel Cult]]
+|[[Hazeel Cult/Quick guide|QG]]
+|{{Optimal quest|thieving=1500}}
+|{{Optimal quest/qp|1}}
+|Useful for its {{Coins|2000}} reward.
+|[[Ardougne]]
+|- data-rowid="Sheep Herder"
+|[[Sheep Herder]]
+|[[Sheep Herder/Quick guide|QG]]
+|
+|{{Optimal quest/qp|4}}
+|Useful for its {{Coins|3100}} reward.
+|[[Ardougne]]
+|- data-rowid="Biohazard"
+|[[Biohazard]]
+|[[Biohazard/Quick guide|QG]]
+|{{Optimal quest|thieving=1250}}
+|{{Optimal quest/qp|3}}
+|
+|[[Ardougne]]
+{{Optimal quest/train|construction|10}}
+|- data-rowid="Tower of Life"
+|[[Tower of Life]]
+|[[Tower of Life/Quick guide|QG]]
+|{{Optimal quest|construction=1000|crafting=500|thieving=500}}
+|{{Optimal quest/qp|2}}
+|Gives access to [[Creature Creation]] minigame.
+|[[Ardougne]]
+|- data-rowid="Tribal Totem"
+|[[Tribal Totem]]
+|[[Tribal Totem/Quick guide|QG]]
+|{{Optimal quest|thieving=1775}}
+|{{Optimal quest/qp|1}}
+|
+|[[Ardougne]]
+|- data-rowid="Death Plateau"
+|[[Death Plateau]]
+|[[Death Plateau/Quick guide|QG]]
+|{{Optimal quest|attack=3000}}
+|{{Optimal quest/qp|1}}
+|
+|[[Burthorpe]]
+|- data-rowid="Merlin's Crystal"
+|[[Merlin's Crystal]]
+|[[Merlin's Crystal/Quick guide|QG]]
+|
+|{{Optimal quest/qp|6}}
+| Do not talk to [[Historian Minas]] after this quest. Instead, save up the lamp obtainable from him for later, when more skills are above level 20. This guide will indicate when to claim it later.
+|[[Camelot]]
+|- data-rowid="Holy Grail"
+|[[Holy Grail]]
+|[[Holy Grail/Quick guide|QG]]
+|{{Optimal quest|defence=15300|prayer=11000}}
+|{{Optimal quest/qp|2}}
+|
+|[[Camelot]]
+|- data-rowid="Murder Mystery"
+|[[Murder Mystery]]
+|[[Murder Mystery/Quick guide|QG]]
+|{{Optimal quest|crafting=1406}}
+|{{Optimal quest/qp|3}}
+|
+|[[Seers' Village]]
+|- data-rowid="The Grand Tree"
+|data-sort-value="Grand Tree, The"|[[The Grand Tree]]
+|[[The Grand Tree/Quick guide|QG]]
+|{{Optimal quest|attack=18400|agility=7900|magic=2150}}
+|{{Optimal quest/qp|5}}
+|Allows use of [[gnome glider]] transportation system.<br/>Along with the earlier completion of [[Fight Arena]], [[Holy Grail]], [[Tree Gnome Village]], and [[Witch's House]], this unlocks the [[Nightmare Zone]] [[minigame teleport]] due to having five quest bosses unlocked.
+|[[Tree Gnome Stronghold]]
+|- data-rowid="Ardougne Diary#Easy"
+| Easy [[Ardougne Diary]]
+| ''N/A''
+|{{Optimal quest|agility=2500}}
+|{{Optimal quest/qp|0}}
+|Use the {{plink|Antique lamp (easy)|txt=antique lamp}} on {{SCP|Agility|link=yes}}.<br/>This unlocks an infinite teleport to the [[Ardougne Monastery]].
+|[[Ardougne]]
+|- data-rowid="Rag and Bone Man I"
+|[[Rag and Bone Man I]]
+|[[Rag and Bone Man I/Quick guide|QG]]
+|{{Optimal quest|prayer=500|cooking=500}}
+|{{Optimal quest/qp|1}}
+|It is recommended to start [[Rag and Bone Man II]] right after completing this quest, in order to obtain bones randomly throughout the world without actively hunting them. The skill requirements are not needed to start this sequel quest.
+|[[Paterdomus]]
+|- data-rowid="Priest in Peril"
+|[[Priest in Peril]]
+|[[Priest in Peril/Quick guide|QG]]
+|{{Optimal quest|prayer=1406}}
+|{{Optimal quest/qp|1}}
+|Allows access to [[Morytania]]. Consider gathering all resources for both this quest and [[Nature Spirit]] to reduce travel back and forth.
+|[[Paterdomus]]
+|- data-rowid="Nature Spirit"
+|[[Nature Spirit]]
+|[[Nature Spirit/Quick guide|QG]]
+|{{Optimal quest|crafting=3000|defence=2000|hitpoints=2000}}
+|{{Optimal quest/qp|2}}
+|
+|[[Paterdomus]]
+{{Optimal quest/train|cooking|20}}
+|- data-rowid="Ghosts Ahoy"
+|[[Ghosts Ahoy]]
+|[[Ghosts Ahoy/Quick guide|QG]]
+|{{Optimal quest|prayer=2400}}
+|{{Optimal quest/qp|2}}
+| The quest unlocks [[Ectophial]] and gives free access to [[Port Phasmatys]].
+|[[Port Phasmatys]]
+|- data-rowid="Making History"
+|[[Making History]]
+|[[Making History/Quick guide|QG]]
+|{{Optimal quest|crafting=1000|prayer=1000}}
+|{{Optimal quest/qp|3}}
+|Like before, do not claim the lamp from [[Historian Minas]] just yet.<br/>
+|[[Outpost]]
+|- data-rowid="The Ides of Milk"
+|[[The Ides of Milk]]
+|[[The Ides of Milk/Quick guide|QG]]
+|{{Optimal quest|prayer=1000}}
+|{{Optimal quest/qp|1}}
+|Use the [[Magic lamp (The Ides of Milk)|magic lamp]] on [[Prayer]].
+|[[Lumbridge]]
+|- data-rowid="The Lost Tribe"
+|data-sort-value="Lost Tribe, The"|[[The Lost Tribe]]
+|[[The Lost Tribe/Quick guide|QG]]
+|{{Optimal quest|mining=3000}}
+|{{Optimal quest/qp|1}}
+|Allows access to [[Nardok's Bone Weapons]] where players can purchase the [[Dorgeshuun crossbow]] and [[bone bolts]] for early [[Ranged]] training.
+|[[Lumbridge]]
+|- data-rowid="Death to the Dorgeshuun"
+|[[Death to the Dorgeshuun]]
+|[[Death to the Dorgeshuun/Quick guide|QG]]
+|{{Optimal quest|ranged=2000|thieving=2000}}
+|{{Optimal quest/qp|1}}
+|
+|[[Lumbridge Swamp Caves]]
+|- data-rowid="Elemental Workshop I"
+|[[Elemental Workshop I]]
+|[[Elemental Workshop I/Quick guide|QG]]
+|{{Optimal quest|crafting=5000|smithing=5000}}
+|{{Optimal quest/qp|1}}
+|
+|[[Seers' Village]]
+{{Optimal quest/train|agility|35}}
+{{Optimal quest/train|prayer|37}} for [[Protect from Magic]]
+|- data-rowid="Icthlarin's Little Helper"
+|[[Icthlarin's Little Helper]]
+|[[Icthlarin's Little Helper/Quick guide|QG]]
+|{{Optimal quest|agility=4000|thieving=4500|woodcutting=4000}}
+|{{Optimal quest/qp|2}}
+|35 Agility is a recommendation. The in-game quest guide lists a level 40 Agility recommendation, but this is not a hard requirement.
+|[[Kharidian Desert]]
+|- data-rowid="The Golem"
+|data-sort-value="Golem, The"|[[The Golem]]
+|[[The Golem/Quick guide|QG]]
+|{{Optimal quest|crafting=1000|thieving=1000}}
+|{{Optimal quest/qp|1}}
+|
+|[[Kharidian Desert]]
+|- data-rowid="The Ribbiting Tale of a Lily Pad Labour Dispute"
+|[[The Ribbiting Tale of a Lily Pad Labour Dispute]]
+|[[The Ribbiting Tale of a Lily Pad Labour Dispute/Quick guide|QG]]
+|{{optimal quest|woodcutting=2000}}
+|{{Optimal quest/qp|1}}
+|After finishing [[Children of the Sun]], travelling to [[Varlamore]] may be done by talking to [[Regulus Cento]], located just outside the eastern gate of [[Varrock]].
+|[[Varlamore]]
+{{Optimal quest/train|woodcutting|36}}
+{{Optimal quest/train|crafting|31}}
+|- data-rowid="Lost City"
+|[[Lost City]]
+|[[Lost City/Quick guide|QG]]
+|
+|{{Optimal quest/qp|3}}
+|Grants the ability to make [[cosmic rune]]s and to use the [[dragon dagger]] and the [[dragon longsword]].
+It is recommended to cut and save two [[dramen branch]]es for use in later quests.
+|[[Lumbridge Swamp|Lumbridge Swamp]]
+|- data-rowid="Fairytale I - Growing Pains"
+|[[Fairytale I - Growing Pains]]
+|[[Fairytale I - Growing Pains/Quick guide|QG]]
+|{{Optimal quest|attack=2000|farming=3500|magic=1000}}
+|{{Optimal quest/qp|2}}
+|Immediately start [[Fairytale II - Cure a Queen]] and progress until you unlock the [[fairy ring]] network (see that quest's guide), and leave the rest of the quest for later. Unlocking this greatly improves mobility around the world, and gives access to several [[Achievement Diary]] tasks.
+|[[Draynor Village]]
+|- data-rowid="Recipe for Disaster/Another Cook's Quest"
+|[[Recipe for Disaster/Another Cook's Quest]]
+|[[Recipe for Disaster/Another Cook's Quest/Quick guide|QG]]
+| 
+|{{Optimal quest/qp|1}}
+|
+|[[Lumbridge]]
+|- data-rowid="Recipe for Disaster/Freeing the Goblin generals"
+|[[Recipe for Disaster/Freeing the Goblin generals]]
+|[[Recipe for Disaster/Freeing the Goblin generals/Quick guide|QG]]
+|{{Optimal quest|cooking=1000|crafting=1000|farming=1000}}
+|{{Optimal quest/qp|1}}
+|
+|[[Goblin Village]]
+{{Optimal quest/train|firemaking|30}}
+|- data-rowid="Sea Slug"
+|[[Sea Slug]]
+|[[Sea Slug/Quick guide|QG]]
+|{{Optimal quest|fishing=7175}}
+|{{Optimal quest/qp|1}}
+|
+|[[Witchaven]]
+|- data-rowid="Pandemonium"
+|[[Pandemonium]]
+|[[Pandemonium/Quick guide|QG]]
+|{{Optimal quest|sailing=400}}
+|{{Optimal quest/qp|1}}
+|
+|[[Port Sarim]]
+{{Optimal quest/train|sailing|12}}
+|- data-rowid="Prying Times"
+|[[Prying Times]]
+|[[Prying Times/Quick guide|QG]]
+|{{Optimal quest|sailing=800|smithing=1000}}
+|{{Optimal quest/qp|1}}
+|
+|[[The Pandemonium]]
+{{Optimal quest/train|sailing|22}}
+|- data-rowid="Current Affairs"
+|[[Current Affairs]]
+|[[Current Affairs/Quick guide|QG]]
+|{{Optimal quest|sailing=1400|fishing=1000}}
+|{{Optimal quest/qp|1}}
+|
+|[[Catherby]]
+|- data-rowid="Fishing Contest"
+|[[Fishing Contest]]
+|[[Fishing Contest/Quick guide|QG]]
+|{{Optimal quest|fishing=2437}}
+|{{Optimal quest/qp|1}}
+|
+|[[Hemenster]]
+|- data-rowid="Recipe for Disaster/Freeing the Mountain Dwarf"
+|[[Recipe for Disaster/Freeing the Mountain Dwarf]]
+|[[Recipe for Disaster/Freeing the Mountain Dwarf/Quick guide|QG]]
+|{{Optimal quest|cooking=1000|slayer=1000}}
+|{{Optimal quest/qp|1}}
+|
+|[[Falador]]
+|- data-rowid="Mountain Daughter"
+|[[Mountain Daughter]]
+|[[Mountain Daughter/Quick guide|QG]]
+|{{Optimal quest|attack=1000|prayer=2000}}
+|{{Optimal quest/qp|2}}
+|Start [[The Giant Dwarf]] while in the area, for [[Ratcatchers]].
+|[[Fremennik Province]]
+|- data-rowid="Ratcatchers"
+|[[Ratcatchers]]
+|[[Rat Catchers/Quick guide|QG]]
+|{{Optimal quest|thieving=4500}}
+|{{Optimal quest/qp|2}}
+|Requires starting [[The Giant Dwarf]] to access [[Keldagrim]], but completion is not required.<br/>Unlocks [[Lazy cat|lazy]] and [[wily cat]]s, useful for catching [[hell-rat]]s later on.<br/> To save time, one can easily grab [[Rat poison]] and complete [[Clock Tower]] when in Ardougne for [[Jimmy Dazzler]].<br/>Additionally, complete [[The Feud]] while in Pollnivneach for the [[snake charmer]].
+| [[Varrock]]
+|- data-rowid="The Feud"
+|data-sort-value="Feud, The"|[[The Feud]]
+|[[The Feud/Quick guide|QG]]
+|{{Optimal quest|thieving=15000}}
+|{{Optimal quest/qp|1}}
+|Complete the quest while in Pollnivneach for [[Ratcatchers]].
+|[[Kharidian Desert]]
+|- data-rowid="Death on the Isle"
+|[[Death on the Isle]]
+|[[Death on the Isle/Quick guide|QG]]
+|{{optimal quest|thieving=10000|agility=7500|crafting=5000}}
+|{{Optimal quest/qp|2}}
+|
+|[[Varlamore]]
+|- data-rowid="Alfred Grimhand's Barcrawl"
+|[[Alfred Grimhand's Barcrawl]] (miniquest)
+|[[Alfred Grimhand's Barcrawl/Quick guide|QG]]
+|
+|{{Optimal quest/qp|0}}
+|
+|[[Baxtorian Falls]]
+|- data-rowid="Scorpion Catcher"
+|[[Scorpion Catcher]]
+|[[Scorpion Catcher/Quick guide|QG]]
+|{{Optimal quest|strength=6625}}
+|{{Optimal quest/qp|1}}
+|An [[Anti-dragon shield]] is highly recommended but not required.
+|[[Seers' Village]]
+|- data-rowid="The Dig Site"
+|data-sort-value="Dig Site, The"|[[The Dig Site]]
+|[[The Digsite/Quick guide|QG]]
+|{{Optimal quest|herblore=2000|mining=15300}}
+|{{Optimal quest/qp|2}}
+|Search the bookcase while in the exam centre to start [[Elemental Workshop II]].
+|[[Digsite]]
+|- data-rowid="Elemental Workshop II"
+|[[Elemental Workshop II]]
+|[[Elemental Workshop II/Quick guide|QG]]
+|{{Optimal quest|crafting=7500|smithing=7500}}
+|{{Optimal quest/qp|1}}
+|Use a [[wizard's mind bomb]] to boost to level 20 [[Magic]], if necessary.
+|[[Seers' Village]]
+|- data-rowid="A Soul's Bane"
+|data-sort-value="Soul's Bane, A"|[[A Soul's Bane]]
+|[[A Soul's Bane/Quick guide|QG]]
+|{{Optimal quest|defence=500|hitpoints=500}}
+|{{Optimal quest/qp|1}}
+|
+|[[Digsite]]
+|- data-rowid="Enter the Abyss"
+|[[Enter the Abyss]] (miniquest)
+|[[Enter the Abyss/Quick guide|QG]]
+|{{Optimal quest|runecraft=1000}}
+|{{Optimal quest/qp|0}}
+| 
+|[[Varrock]]
+|- data-rowid="X Marks the Spot"
+|[[X Marks the Spot]]
+|[[X Marks the Spot/Quick guide|QG]]
+|{{Optimal quest|slayer=300}}
+|{{Optimal quest/qp|1}}
+|Use the {{plink|Antique lamp (X Marks the Spot)|txt=antique lamp}} on {{SCP|Slayer|link=yes}}.
+|[[Lumbridge]]
+|- data-rowid="Pirate's Treasure"
+|[[Pirate's Treasure]]
+|[[Pirate's Treasure/Quick guide|QG]]
+|
+|{{Optimal quest/qp|2}}
+| Optionally start out this quest, and only finish it when in [[Varrock]] for other quests. This may save a significant amount of time.
+|[[Port Sarim]]
+|- data-rowid="Client of Kourend"
+|[[Client of Kourend]]
+|[[Client of Kourend/Quick guide|QG]]
+|{{Optimal quest|slayer=1000}}
+|{{Optimal quest/qp|1}}
+| Use both {{plink|Antique lamp (Client of Kourend)|txt=antique lamp}} rewards on {{SCP|Slayer|link=yes}}.
+|[[Great Kourend]]
+|- data-rowid="The Queen of Thieves"
+|data-sort-value="Queen of Thieves, The"|[[The Queen of Thieves]]
+|[[The Queen of Thieves/Quick guide|QG]]
+|{{Optimal quest|thieving=2000}}
+|{{Optimal quest/qp|1}}
+|
+|[[Port Piscarilius]]
+|- data-rowid="The Depths of Despair"
+|data-sort-value="Depths of Despair, The"|[[The Depths of Despair]]
+|[[The Depths of Despair/Quick guide|QG]]
+|{{Optimal quest|agility=1500}}
+|{{Optimal quest/qp|1}}
+|
+|[[Hosidius]]
+|- data-rowid="A Porcine of Interest"
+|[[A Porcine of Interest]]
+|[[A Porcine of Interest/Quick guide|QG]]
+|{{Optimal quest|slayer=1000}}
+|{{Optimal quest/qp|1}}
+|
+|[[Draynor Village]]
+|- data-rowid="Wanted!"
+|[[Wanted!]]
+|[[Wanted!/Quick guide|QG]]
+|{{Optimal quest|slayer=5000}}
+|{{Optimal quest/qp|1}}
+|
+|[[Falador]]
+|- data-rowid="Shield of Arrav"
+|[[Shield of Arrav]]
+|[[Shield of Arrav/Quick guide|QG]]
+|
+|{{Optimal quest/qp|1}}
+|You need a partner for this quest. This quest also gives access to another lamp when talking to [[Historian Minas]].
+|[[Varrock]]
+|- data-rowid="Varrock Museum"
+|Unlock: [[Varrock Museum]] [[Kudos]]
+| ''N/A''
+|{{Optimal quest|slayer=3000|mining=3500|crafting=2500}}
+|{{Optimal quest/qp|0}}
+|Talk to [[Historian Minas]] just up the stairs and tell him the information about the displays to get the [[kudo]]s and three {{plink|antique lamp|txt=antique lamps}} from the quests you've done. Use them on {{SCP|Slayer|link=yes}}.
+
+Complete the [[Kudos#Cleaning finds|cleaning finds]] part of Varrock Museum, to earn another 50 [[kudos]]. Combining these 50 kudos, the 28 kudos from the [[Natural History Quiz]], and the 35 kudos from Historian Minas, this should put you on 113 kudos in total.
+
+Finally, talk to the [[information clerk]] to claim {{SCP|Mining|3,500|link=yes}} and {{SCP|Crafting|2,500|link=yes}} experience.
+|[[Varrock]]
+|- data-rowid="Bone Voyage"
+|[[Bone Voyage]]
+|[[Bone Voyage/Quick guide|QG]]
+|
+|{{Optimal quest/qp|1}}
+|Unlocks [[Fossil Island]], which gives access to [[ammonite crab]]s for combat training and possible [[Fossil Island fossil|fossil]] drops, and [[bird house trapping]] for fast {{SCP|Hunter|link=yes}} experience. It is recommended to train Hunter on bird houses from now on.
+|[[Varrock]]
+{{Optimal quest/train|mining|39}}
+|- data-rowid="Watchtower"
+|[[Watchtower]]
+|[[Watchtower/Quick guide|QG]]
+|{{Optimal quest|magic=15250}}
+|{{Optimal quest/qp|4}}
+|Boost [[Mining]] with a [[dwarven stout]].
+|[[Yanille]]
+|- data-rowid="The Giant Dwarf"
+|data-sort-value="Giant Dwarf, The"|[[The Giant Dwarf]]
+|[[The Giant Dwarf/Quick guide|QG]]
+|{{Optimal quest|crafting=2500|firemaking=1500|mining=2500|smithing=2500|thieving=1500|magic=1500}}
+|{{Optimal quest/qp|2}}
+|
+|[[Keldagrim]]
+|- data-rowid="Forgettable Tale..."
+|[[Forgettable Tale...]]
+|[[Forgettable Tale.../Quick guide|QG]]
+|{{Optimal quest|cooking=5000|farming=5000}}
+|{{Optimal quest/qp|2}}
+|
+|[[Keldagrim]]
+|- data-rowid="Another Slice of H.A.M."
+|[[Another Slice of H.A.M.]]
+|[[Another Slice of H.A.M./Quick guide|QG]]
+|{{Optimal quest|mining=3000|prayer=3000}}
+|{{Optimal quest/qp|1}}
+|Unlocks the [[Dorgesh-Kaan–Keldagrim train system]].
+|[[Dorgesh-Kaan]]
+|- data-rowid="Vampyre Slayer"
+|[[Vampyre Slayer]]
+|[[Vampyre Slayer/Quick guide|QG]]
+|{{Optimal quest|attack=4825}}
+|{{Optimal quest/qp|3}}
+|
+|[[Draynor Village]]
+|- data-rowid="Ernest the Chicken"
+|[[Ernest the Chicken]]
+|[[Ernest the Chicken/Quick guide|QG]]
+|
+|{{Optimal quest/qp|4}}
+|
+|[[Draynor Manor]]
+|- data-rowid="Demon Slayer"
+|[[Demon Slayer]]
+|[[Demon Slayer/Quick guide|QG]]
+|
+|{{Optimal quest/qp|3}}
+|
+|[[Varrock]]
+|- data-rowid="Shadow of the Storm"
+|[[Shadow of the Storm]]
+|[[Shadow of the Storm/Quick guide|QG]]
+|{{Optimal quest|ranged=10000}}
+|{{Optimal quest/qp|1}}
+|Use the experience reward on {{SCP|Ranged|link=yes}}.
+|[[Al Kharid]]
+{{Optimal quest/train|prayer|40}} for [[Protect from Missiles]]
+|- data-rowid="Horror from the Deep"
+|[[Horror from the Deep]]
+|[[Horror from the Deep/Quick guide|QG]]
+|{{Optimal quest|magic=4662.5|ranged=4662.5|strength=4662.5}}
+|{{Optimal quest/qp|2}}
+|
+|[[Lighthouse]]
+|- data-rowid="Animal Magnetism"
+|[[Animal Magnetism]]
+|[[Animal Magnetism/Quick guide|QG]]
+|{{Optimal quest|crafting=1000|fletching=1000|slayer=1000|woodcutting=2500}}
+|{{Optimal quest/qp|1}}
+|Unlocks access to [[Ava's device]]s.
+|[[Draynor Manor]]
+|- data-rowid="Creature of Fenkenstrain"
+|[[Creature of Fenkenstrain]]
+|[[Creature of Fenkenstrain/Quick guide|QG]]
+|{{Optimal quest|thieving=1000}}
+|{{Optimal quest/qp|2}}
+|
+|[[Canifis]]
+|- data-rowid="Big Chompy Bird Hunting"
+|[[Big Chompy Bird Hunting]]
+|[[Big Chompy Bird Hunting/Quick guide|QG]]
+|{{Optimal quest|cooking=1470|fletching=262|ranged=735}}
+|{{Optimal quest/qp|2}}
+| Requires boosting {{SCP|Cooking|Cooking}} by 3 levels by drinking a [[chef's delight(m)|mature chef's delight]], purchasable from the [[Grand Exchange]] for {{Coins|{{GEP|chef's delight(m)}}|c}}.
+Alternatively, consider training {{SCP|Cooking|Cooking}} to level 30.
+|[[Feldip Hills]]
+|- data-rowid="Jungle Potion"
+|[[Jungle Potion]]
+|[[Jungle Potion/Quick guide|QG]]
+|{{Optimal quest|herblore=775}}
+|{{Optimal quest/qp|1}}
+|
+|[[Karamja]]
+|- data-rowid="Shilo Village"
+|[[Shilo Village]]
+|[[Shilo Village/Quick guide|QG]]
+|{{Optimal quest|crafting=3875}}
+|{{Optimal quest/qp|2}}
+|
+|[[Karamja]]
+|- data-rowid="Karamja Diary#Easy"
+| Easy [[Karamja Diary]]
+| ''N/A''
+|{{Optimal quest|slayer=1000}}
+|{{Optimal quest/qp|0}}
+|Use the {{plink|Antique lamp (Karamja Diary)|txt=antique lamp}} on {{SCP|Slayer|link=yes}}.
+|[[Karamja]]
+|- data-rowid="Zogre Flesh Eaters"
+|[[Zogre Flesh Eaters]]
+|[[Zogre Flesh Eaters/Quick guide|QG]]
+|{{Optimal quest|fletching=2000|herblore=2000|ranged=2000}}
+|{{Optimal quest/qp|1}}
+|
+|[[Feldip Hills]]
+|- data-rowid="Observatory Quest"
+|[[Observatory Quest]]
+|[[Observatory Quest/Quick guide|QG]]
+|{{Optimal quest|crafting=2000}}
+|{{Optimal quest/qp|2}}
+|This quest has 12 variations of random rewards, which may include 875 experience in either {{SCP|Attack|link=yes}}, {{SCP|Strength|link=yes}}, {{SCP|Defence|link=yes}}, or {{SCP|Hitpoints|link=yes}}.
+|[[Castle Wars]]
+{{Optimal quest/train|ranged|37}}
+|- data-rowid="Spirits of the Elid"
+|[[Spirits of the Elid]]
+|[[Spirits of the Elid/Quick guide|QG]]
+|{{Optimal quest|magic=1000|prayer=8000|thieving=1000}}
+|{{Optimal quest/qp|2}}
+|
+|[[Kharidian Desert]]
+|- data-rowid="Garden of Tranquillity"
+|[[Garden of Tranquillity]]
+|[[Garden of Tranquillity/Quick guide|QG]]
+|{{Optimal quest|farming=5000}}
+|{{Optimal quest/qp|2}}
+|After completion of the quest, consider waiting at the white tree to pick a fruit once it grows on it and complete a medium Varrock achievement diary task.
+|[[Varrock]]
+|- data-rowid="Enlightened Journey"
+|[[Enlightened Journey]]
+|[[Enlightened Journey/Quick guide|QG]]
+|{{Optimal quest|crafting=2000|farming=3000|firemaking=4000|woodcutting=1500}}
+|{{Optimal quest/qp|1}}
+|Unlocks access to the [[balloon transport system]].
+|[[Entrana]]
+|- data-rowid="Crafting Guild Balloon"
+| Unlock: [[Balloon transport system]] to [[Crafting Guild]]
+| ''N/A''
+|{{Optimal quest|firemaking=2000}}
+|{{Optimal quest/qp|0}}
+|
+|[[Entrana]]
+{{Optimal quest/train|firemaking|40}}
+|- data-rowid="Varrock Balloon"
+| Unlock: [[Balloon transport system]] to [[Varrock]]
+| ''N/A''
+|{{Optimal quest|firemaking=2000}}
+|{{Optimal quest/qp|0}}
+|
+|[[Entrana]]
+{{Optimal quest/train|firemaking|49}}
+|- data-rowid="Romeo & Juliet"
+|[[Romeo & Juliet]]
+|[[Romeo & Juliet/Quick guide|QG]]
+|
+|{{Optimal quest/qp|5}}
+|Useful for its reward of 5 [[Quest points]], which grants players more time inside the [[Tears of Guthix (minigame)|Tears of Guthix]] minigame.
+|[[Varrock]]
+|- data-rowid="Tears of Guthix"
+|[[Tears of Guthix]]
+|[[Tears of Guthix/Quick guide|QG]]
+|{{Optimal quest|crafting=1000}}
+|{{Optimal quest/qp|1}}
+|Gives access to the [[Tears of Guthix (minigame)|Tears of Guthix]] minigame, which provides experience in your lowest skill.
+|[[Lumbridge Swamp Caves]]
+{{Optimal quest/train|prayer|43}} for [[Protect from Melee]]
+|- data-rowid="In Search of the Myreque"
+|[[In Search of the Myreque]]
+|[[In Search of the Myreque/Quick guide|QG]]
+|{{Optimal quest|attack=600|crafting=600|defence=600|hitpoints=600|strength=600}}
+|{{Optimal quest/qp|2}}
+|
+|[[Canifis]]
+|- data-rowid="Shades of Mort'ton"
+|[[Shades of Mort'ton]]
+|[[Shades of Mort'ton/Quick guide|QG]]
+|{{Optimal quest|crafting=2000|herblore=2000}}
+|{{Optimal quest/qp|3}}
+| Bank the [[Diary (Shades of Mort'ton)|diary of Herbi Flax]] and proceed to the next quest. You will claim its experience reward later.
+Buy 2 extra [[Swamp paste]] from [[Razmire Builders Merchants.]] For the next quest in the guide ([[In Aid of the Myreque]]) - You can also buy it from different places, but this way it's easy for convenience if you don't have it from before.
+|[[Mort'ton]]
+|- data-rowid="In Aid of the Myreque"
+|[[In Aid of the Myreque]]
+|[[In Aid of the Myreque/Quick guide|QG]]
+|{{Optimal quest|attack=2000|crafting=2000|defence=2000|strength=2000}}
+|{{Optimal quest/qp|2}}
+|
+|[[Canifis]]
+{{Optimal quest/action|Hand in the [[Diary (Shades of Mort'ton)|diary of Herbi Flax]] to the [[Apothecary]]|skill=herblore|xp=335}}
+|- data-rowid="Skippy and the Mogres"
+|[[Skippy and the Mogres]] (miniquest)
+|[[Skippy and the Mogres/Quick guide|QG]]
+|
+|{{Optimal quest/qp|0}}
+|Required for killing [[mogres]] in [[Rag and Bone Man II]] 
+|[[Port Sarim]]
+|- data-rowid="Troll Stronghold"
+|[[Troll Stronghold]]
+|[[Troll Stronghold/Quick guide|QG]]
+|
+|{{Optimal quest/qp|1}}
+|Grants the ability to make [[law rune]]s.
+|[[Troll Stronghold (location)|Troll Stronghold‎ ]] <!--The special character prevents tick/cross appearing on the location-->
+|- data-rowid="Troll Romance"
+|[[Troll Romance]]
+|[[Troll Romance/Quick guide|QG]]
+|{{Optimal quest|agility=8000|strength=4000}}
+|{{Optimal quest/qp|2}}
+|
+|[[Troll Stronghold (location)|Troll Stronghold‎ ]] <!--The special character prevents tick/cross appearing on the location-->
+{{Optimal quest/train|strength|40}}
+|- data-rowid="Darkness of Hallowvale"
+|[[Darkness of Hallowvale]]
+|[[Darkness of Hallowvale/Quick guide|QG]]
+|{{Optimal quest|agility=7000|construction=2000|thieving=6000|slayer=6000}}
+|{{Optimal quest/qp|2}}
+|Use all experience rewards on {{SCP|Slayer|link=yes}}.
+|[[Meiyerditch]]
+{{Optimal quest/train|agility|56}} highly recommended: Obtain full [[Graceful]] on the [[Canifis Rooftop Course]] (maximising [[mark of grace|marks of grace]] there with lower [[Agility]] levels. One is expected to reach ~58 Agility when doing so).
+|- data-rowid="Underground Pass"
+|[[Underground Pass]]
+|[[Underground Pass/Quick guide|QG]]
+|{{Optimal quest|agility=3000|attack=3000}}
+|{{Optimal quest/qp|5}}
+| Training even higher Agility before doing this quest is recommended.
+|[[Ardougne]]
+|- data-rowid="Regicide"
+|[[Regicide]]
+|[[Regicide/Quick guide|QG]]
+|{{Optimal quest|agility=13750}}
+|{{Optimal quest/qp|3}}
+|
+|[[Tirannwn]]
+|- data-rowid="Dragon Slayer I"
+|[[Dragon Slayer I]]
+|[[Dragon Slayer I/Quick guide|QG]]
+|{{Optimal quest|defence=18650|strength=18650}}
+|{{Optimal quest/qp|2}}
+|Starting this quest unlocks [[dragons]] Slayer tasks, and access to [[anti-dragon shield]]s and [[antifire potion]]s. These tasks give low experience per hour, so it can be beneficial not to start this quest any earlier.
+|[[Varrock]]
+|- data-rowid="The Fremennik Trials"
+|data-sort-value="Fremennik Trials, The"|[[The Fremennik Trials]]
+|[[The Fremennik Trials/Quick guide|QG]]
+|{{Optimal quest|agility=2812|attack=2812|crafting=2812|defence=2812|fishing=2812|fletching=2812|hitpoints=2812|strength=2812|thieving=2812|woodcutting=2812}}
+|{{Optimal quest/qp|3}}
+|The Crafting/Woodcutting/Fletching requirements listed in the in-game interface can be bypassed by killing [[Lanzig]], [[Borrokar]], [[Lensa]], or [[Freidir]] for the [[lyre]] instead of needing to make it yourself.
+|[[Fremennik Province]]
+{{Optimal quest/train|construction|20}}
+|- data-rowid="The Fremennik Isles"
+|data-sort-value="Fremennik Isles, The"|[[The Fremennik Isles]]
+|[[The Fremennik Isles/Quick guide|QG]]
+|{{Optimal quest|construction=5000|crafting=5000|woodcutting=10000|defence=20000}}
+|{{Optimal quest/qp|1}}
+|Choose {{SCP|Defence|link=yes}} for both experience rewards.
+|[[Fremennik Province]]
+|- data-rowid="Recipe for Disaster/Freeing Evil Dave"
+|[[Recipe for Disaster/Freeing Evil Dave]]
+|[[Recipe for Disaster/Freeing Evil Dave/Quick guide|QG]]
+|{{Optimal quest|cooking=7000}}
+|{{Optimal quest/qp|1}}
+|Gives access to [[spicy stew]]s, which can be useful for boosting stats.
+|[[Edgeville]]
+|- data-rowid="Recipe for Disaster/Freeing Pirate Pete"
+|[[Recipe for Disaster/Freeing Pirate Pete]]
+|[[Recipe for Disaster/Freeing Pirate Pete/Quick guide|QG]]
+|{{Optimal quest|cooking=1000|crafting=1000|fishing=1000|smithing=1000}}
+|{{Optimal quest/qp|1}}
+|
+|[[Lumbridge]]
+|- data-rowid="Tai Bwo Wannai Trio"
+|[[Tai Bwo Wannai Trio]]
+|[[Tai Bwo Wannai Trio/Quick guide|QG]]
+|{{Optimal quest|cooking=5000|fishing=5000|attack=2500|strength=2500}}
+|{{Optimal quest/qp|2}}
+|Return to the brothers after completing the quest to claim all experience rewards.
+|[[Karamja]]
+|- data-rowid="Kandarin Diary#Easy"
+|Easy [[Kandarin Diary]]
+|''N/A''
+|{{Optimal quest|smithing=2500}}
+|{{Optimal quest/qp|0}}
+|Use {{plink|Antique lamp (easy)|txt=antique lamp}} on {{SCP|Smithing|link=yes}}. Keep Kandarin Headgear in inventory for the next quest, Contact!
+|[[Kandarin]]
+|- data-rowid="Contact!"
+|[[Contact!]]
+|[[Contact!/Quick guide|QG]]
+|{{Optimal quest|magic=14000|thieving=7000}}
+|{{Optimal quest/qp|1}}
+|Safespot the [[Giant Scarab]] with Magic and [[Protect from Missiles]] active.<br/>Use the {{plink|combat lamp}} on {{SCP|Magic|link=yes}} twice.
+|[[Al Kharid]]
+{{Optimal quest/train|ranged|40}}
+|- data-rowid="Temple of Ikov"
+|[[Temple of Ikov]]
+|[[Temple of Ikov/Quick guide|QG]]
+|{{Optimal quest|fletching=8000|ranged=10500}}
+|{{Optimal quest/qp|1}}
+|
+|[[Ardougne]]
+{{Optimal quest/train|magic|46}}
+|- data-rowid="The Eyes of Glouphrie"
+|data-sort-value="Eyes of Glouphrie, The"|[[The Eyes of Glouphrie]]
+|[[The Eyes of Glouphrie/Quick guide|QG]]
+|{{Optimal quest|construction=250|magic=12000|runecraft=6000|woodcutting=2500}}
+|{{Optimal quest/qp|2}}
+|Unlocks access to the [[crystal saw]], which gives an invisible +3 boost to [[Construction]].
+|[[Tree Gnome Stronghold]]
+|- data-rowid="Temple of the Eye"
+|[[Temple of the Eye]]
+|[[Temple of the Eye/Quick guide|QG]]
+|{{Optimal quest|runecraft=9210}}
+|{{Optimal quest/qp|1}}
+|
+|[[Al Kharid]]
+|- data-rowid="One Small Favour"
+|[[One Small Favour]]
+|[[One Small Favour/Quick guide|QG]]
+|{{Optimal quest|slayer=20000}}
+|{{Optimal quest/qp|2}}
+|Use the {{plink|Antique lamp (One Small Favour)|txt=antique lamps}} on {{SCP|Slayer|link=yes}}.
+|[[Karamja]]
+{{Optimal quest/train|hunter|12}}
+|- data-rowid="The Ascent of Arceuus"
+|data-sort-value="Ascent of Arceuus, The"|[[The Ascent of Arceuus]]
+|[[The Ascent of Arceuus/Quick guide|QG]]
+|{{Optimal quest|runecraft=500|hunter=1500}}
+|{{Optimal quest/qp|1}}
+|
+|[[Great Kourend]]
+|- data-rowid="Tale of the Righteous"
+|[[Tale of the Righteous]]
+|[[Tale of the Righteous/Quick guide|QG]]
+|
+|{{Optimal quest/qp|1}}
+|
+|[[Great Kourend]]
+|- data-rowid="The Forsaken Tower"
+|data-sort-value="Forsaken Tower, The"|[[The Forsaken Tower]]
+|[[The Forsaken Tower/Quick guide|QG]]
+|{{Optimal quest|smithing=500|mining=500}}
+|{{Optimal quest/qp|1}}
+|
+|[[Great Kourend]]
+|- data-rowid="Desert Diary#Easy"
+| [[Desert Diary#Easy|Easy Desert Diary]]
+| rowspan="9" |''N/A''
+| rowspan="9" | {{Optimal quest|smithing=22500}}
+| rowspan="9" | {{Optimal quest/qp|0|rowspan=9}}
+| rowspan="9" | Use all {{plink|Antique lamp (easy)|txt=antique lamps}} on {{SCP|Smithing|link=yes}}.
+| rowspan="9" |
+|- data-rowid="Fremennik Diary#Easy"
+| [[Fremennik Diary#Easy|Easy Fremennik Diary]]
+|- data-rowid="Falador Diary#Easy"
+| [[Falador Diary#Easy|Easy Falador Diary]]
+|- data-rowid="Kourend & Kebos Diary#Easy"
+| [[Kourend & Kebos Diary#Easy|Easy Kourend & Kebos Diary]]
+|- data-rowid="Lumbridge & Draynor Diary#Easy"
+| [[Lumbridge & Draynor Diary#Easy|Easy Lumbridge & Draynor Diary]]
+|- data-rowid="Morytania Diary#Easy"
+| [[Morytania Diary#Easy|Easy Morytania Diary]]
+|- data-rowid="Varrock Diary#Easy"
+| [[Varrock Diary#Easy|Easy Varrock Diary]]
+|- data-rowid="Western Provinces Diary#Easy"
+| [[Western Provinces Diary#Easy|Easy Western Provinces Diary]]
+|- data-rowid="Wilderness Diary#Easy"
+| [[Wilderness Diary#Easy|Easy Wilderness Diary]]
+{{Optimal quest/train|smithing|50}}
+|- data-rowid="Between a Rock..."
+|[[Between a Rock...]]
+|[[Between a Rock.../Quick guide|QG]]
+|{{Optimal quest|defence=5000|mining=5000|smithing=5000}}
+|{{Optimal quest/qp|2}}
+|
+|[[Keldagrim]]
+|- data-rowid="The Slug Menace"
+|data-sort-value="Slug Menace, A"|[[The Slug Menace]]
+|[[The Slug Menace/Quick guide|QG]]
+|{{Optimal quest|crafting=3500|runecraft=3500|thieving=3500}}
+|{{Optimal quest/qp|1}}
+|
+|[[Witchaven]]
+|- data-rowid="Getting Ahead"
+|[[Getting Ahead]]
+|[[Getting Ahead/Quick guide|QG]]
+|{{Optimal quest|construction=3200|crafting=4000}}
+|{{Optimal quest/qp|1}}
+|
+|[[Kebos Lowlands]]
+|- data-rowid="Museum Camp"
+| Unlock: [[Museum Camp]]
+| ''N/A''
+|{{Optimal quest|construction=3650|herblore=2000}}
+|{{Optimal quest/qp|0}}
+| View the bulletin board and complete every camp improvement then claim your reward from [[Peter]]. Clean the fossils and add them to the [[paleontology floor]] (in the basement) of the [[Varrock Museum]]. Click a small display to add them to it. Use the {{plink|antique lamp}} on {{SCP|Herblore|link=yes}}. 
+|[[Fossil Island]]
+{{Optimal quest/train|construction|37}}
+|- data-rowid="Cold War"
+|[[Cold War]]
+|[[Cold War/Quick guide|QG]]
+|{{Optimal quest|agility=5000|construction=1500|crafting=2000}}
+|{{Optimal quest/qp|1}}
+| Use the [[workshop]] and [[crafting table 3]] you built previously in your [[player-owned house|POH]] to save time for this quest.
+|[[Fremennik Province]]
+{{Optimal quest/train|crafting|49}}
+|- data-rowid="The Hand in the Sand"
+|data-sort-value="Hand in the Sand, The"|[[The Hand in the Sand]]
+|[[The Hand in the Sand/Quick guide|QG]]
+|{{Optimal quest|thieving=1000|crafting=9000}}
+|{{Optimal quest/qp|1}}
+|
+|[[Yanille]]
+{{Optimal quest/train|crafting|50}}
+|- data-rowid="Enakhra's Lament"
+|[[Enakhra's Lament]]
+|[[Enakhra's Lament/Quick guide|QG]]
+|{{Optimal quest|crafting=7000|firemaking=7000|mining=7000|magic=7000}}
+|{{Optimal quest/qp|2}}
+|
+|[[Kharidian Desert]]
+|- data-rowid="Eadgar's Ruse"
+|[[Eadgar's Ruse]]
+|[[Eadgar's Ruse/Quick guide|QG]]
+|{{Optimal quest|herblore=11000}}
+|{{Optimal quest/qp|1}}
+|Boost to {{SCP|Herblore|31|link=yes}} using a [[botanical pie]], or train up to level 31 herblore before starting the quest.<br/>
+Collect and keep two extra [[goutweed]] herbs from the storage for use in later quests.
+|[[Troll Stronghold (location)|Troll Stronghold‎ ]] <!--The special character prevents tick/cross appearing on the location-->
+|- data-rowid="My Arm's Big Adventure"
+|[[My Arm's Big Adventure]]
+|[[My Arm's Big Adventure/Quick guide|QG]]
+|{{Optimal quest|farming=5000|herblore=10000}}
+|{{Optimal quest/qp|1}}
+|Requires 60% Tai Bwo favour to start. It is recommended to get 100% for the medium [[Karamja Diary]] task before losing 60% favour during this quest.
+|[[Troll Stronghold (location)|Troll Stronghold‎ ]] <!--The special character prevents tick/cross appearing on the location-->
+|- data-rowid="The Garden of Death"
+|[[The Garden of Death]]
+|[[The Garden of Death/Quick guide|QG]]
+|{{Optimal quest|farming=10000}}
+|{{Optimal quest/qp|1}}
+|
+|[[Kebos Lowlands]]
+|- data-rowid="Rag and Bone Man II"
+|[[Rag and Bone Man II]]
+|[[Rag and Bone Man II/Quick guide|QG]]
+|{{Optimal quest|prayer=5000}}
+|{{Optimal quest/qp|1}}
+|
+|[[Paterdomus]]
+{{Optimal quest/train|prayer|45}}
+{{Optimal quest/train|fishing|50}}
+{{Optimal quest/train|farming|40}}
+{{Optimal quest/train|slayer|42}}
+|- data-rowid="Rum Deal"
+|[[Rum Deal]]
+|[[Rum Deal/Quick guide|QG]]
+|{{Optimal quest|farming=7000|fishing=7000|prayer=7000}}
+|{{Optimal quest/qp|2}}
+| Before the quest, pray at the [[Edgeville Monastery]] to have 47 Prayer points needed for this quest.
+|[[Port Phasmatys]]
+|- data-rowid="Cabin Fever"
+|[[Cabin Fever]]
+|[[Cabin Fever/Quick guide|QG]]
+|{{Optimal quest|agility=7000|crafting=7000|smithing=7000}}
+|{{Optimal quest/qp|2}}
+|
+|[[Port Phasmatys]]
+|- data-rowid="Meat and Greet"
+|[[Meat and Greet]]
+|[[Meat and Greet/Quick guide|QG]]
+|{{Optimal quest|cooking=8000}}
+|{{Optimal quest/qp|1}}
+|
+|[[Varlamore]]
+{{Optimal quest/train|cooking|40}}
+|- data-rowid="Recipe for Disaster/Freeing the Lumbridge Guide"
+|[[Recipe for Disaster/Freeing the Lumbridge Guide]]
+|[[Recipe for Disaster/Freeing the Lumbridge Guide/Quick guide|QG]]
+|{{Optimal quest|magic=2500}}
+|{{Optimal quest/qp|1}}
+|
+|[[Lumbridge]]
+{{Optimal quest/train|cooking|42}}
+|- data-rowid="Recipe for Disaster/Freeing Skrach Uglogwee"
+|[[Recipe for Disaster/Freeing Skrach Uglogwee]]
+|[[Recipe for Disaster/Freeing Skrach Uglogwee/Quick guide|QG]]
+|{{Optimal quest|crafting=1500|ranged=1500|woodcutting=1500}}
+|{{Optimal quest/qp|1}}
+|
+|[[Lumbridge]]
+{{Optimal quest/train|cooking|50}}
+{{Optimal quest/train|mining|50}}
+|- data-rowid="Heroes' Quest"
+|[[Heroes' Quest]]
+|[[Heroes' Quest/Quick guide|QG]]
+|{{Optimal quest|attack=3075|cooking=2825|defence=3075|firemaking=1575|fishing=2725|herblore=1325|hitpoints=3075|mining=2575|ranged=2075|smithing=2257|strength=3075|woodcutting=1575}}
+|{{Optimal quest/qp|1}}
+|Use an [[Admiral pie]] to boost to 53 [[Fishing]], and a [[Chef's delight]] to boost 53 [[Cooking]].
+|[[Burthorpe]]
+|- data-rowid="Throne of Miscellania"
+|[[Throne of Miscellania]]
+|[[Throne of Miscellania/Quick guide|QG]]
+|
+|{{Optimal quest/qp|1}}
+|Gives access to [[Managing Miscellania]].
+|[[Miscellania]]
+|- data-rowid="Royal Trouble"
+|[[Royal Trouble]]
+|[[Royal Trouble/Quick guide|QG]]
+|{{Optimal quest|agility=5000|hitpoints=5000|slayer=5000}}
+|{{Optimal quest/qp|1}}
+|
+|[[Miscellania]]
+|- data-rowid="Haunted Mine"
+|[[Haunted Mine]]
+|[[Haunted Mine/Quick guide|QG]]
+|{{Optimal quest|strength=22000}}
+|{{Optimal quest/qp|2}}
+|
+|[[Abandoned Mine]]
+|- data-rowid="Lair of Tarn Razorlor"
+|[[Lair of Tarn Razorlor]] (miniquest)
+|''N/A''
+|{{Optimal quest|slayer=5000}}
+|{{Optimal quest/qp|0}}
+|If you have a [[Slayer ring]] you can teleport directly to the boss. If you don't have one you'll need to traverse a maze while constantly being attacked, it's advised to bring a lot of food, at least 1 [[stamina potion]] and 2 [[prayer potion]]s, making sure to keep at least 1 for the final boss fight. 
+After killing the boss also kill one of the two [[terror dog]]s to fulfil a medium [[Morytania Diary#Medium|Morytania Diary]] task.
+|[[Abandoned Mine]]
+|- data-rowid="Monkey Madness I"
+|[[Monkey Madness I]]
+|[[Monkey Madness I/Quick guide|QG]]
+|{{Optimal quest|attack=35000|defence=35000|hitpoints=20000|strength=20000}}
+|{{Optimal quest/qp|3}}
+|Talk to [[Daero]] for 35,000 experience in {{SCP|Attack|link=yes}} and {{SCP|Defence|link=yes}} and 20,000 experience in {{SCP|Strength|link=yes}} and {{SCP|Hitpoints|link=yes}}.
+|[[Ape Atoll]]
+|- data-rowid="Ethically Acquired Antiquities"
+|[[Ethically Acquired Antiquities]]
+|[[Ethically Acquired Antiquities/Quick guide|QG]]
+|{{Optimal quest|thieving=6000}}
+|{{Optimal quest/qp|1}}
+|
+|[[Varlamore]]
+|- data-rowid="Twilight's Promise"
+|[[Twilight's Promise]]
+|[[Twilight's Promise/Quick guide|QG]]
+|{{optimal quest|thieving=3000}}
+|{{Optimal quest/qp|1}}
+|Ability to use the Civitas illa Fortis Teleport spell and the Quetzal Transport System in Varlamore
+|[[Varlamore]]
+{{Optimal quest/train|ranged|60}}
+{{Optimal quest/train|thieving|50}}
+|- data-rowid="Roving Elves"
+|[[Roving Elves]]
+|[[Roving Elves/Quick guide|QG]]
+|{{Optimal quest|strength=10000}}
+|{{Optimal quest/qp|1}}
+|
+|[[Tirannwn]]
+|- data-rowid="Mourning's End Part I"
+|[[Mourning's End Part I]]
+|[[Mourning's End Part I/Quick guide|QG]]
+|{{Optimal quest|hitpoints=25000|thieving=40000}}
+|{{Optimal quest/qp|2}}
+|
+|[[Tirannwn]]
+|- data-rowid="Mourning's End Part II"
+|[[Mourning's End Part II]]
+|[[Mourning's End Part II/Quick guide|QG]]
+|{{Optimal quest|agility=60000}}
+|{{Optimal quest/qp|2}}
+|Consider training Agility to ~65 and/or bringing [[summer pie]]s before doing this quest to improve success rates at passing the Agility obstacle in the puzzle.
+|[[Tirannwn]]
+{{Optimal quest/train|magic|50}}
+{{Optimal quest/train|firemaking|50}}
+|- data-rowid="Desert Treasure I"
+|[[Desert Treasure I]]
+|[[Desert Treasure I/Quick guide|QG]]
+|{{Optimal quest|magic=20000}}
+|{{Optimal quest/qp|3}}
+|Unlocks the ability to use [[Ancient Magicks]].
+|[[Kharidian Desert]]
+{{Optimal quest/train|magic|55}}
+|- data-rowid="Family Crest"
+|[[Family Crest]]
+|[[Family Crest/Quick guide|QG]]
+|
+|{{Optimal quest/qp|1}}
+|Boost magic using a [[magic potion]], or alternatively train 2 more levels and boost using a [[wizard's mind bomb]].<br/>Unlocks [[steel gauntlets]] which can be useful when training [[Smithing]], [[Cooking]] or [[Magic]].
+|[[Varrock]]
+{{Optimal quest/train|runecraft|35}}
+|- data-rowid="What Lies Below"
+|[[What Lies Below]]
+|[[What Lies Below/Quick guide|QG]]
+|{{Optimal quest|defence=2000|runecraft=8000}}
+|{{Optimal quest/qp|1}}
+|Unlocks access to battlestaves in [[Zaff's Superior Staffs!]]
+|[[Varrock]]
+{{Optimal quest/train|hunter|27}}
+|- data-rowid="Eagles' Peak"
+|[[Eagles' Peak]]
+|[[Eagles' Peak/Quick guide|QG]]
+|{{Optimal quest|hunter=2500}}
+|{{Optimal quest/qp|2}}
+|Unlocks [[box trap]] hunting.
+|[[Piscatoris Hunter Area]]
+|- data-rowid="A Tail of Two Cats"
+|data-sort-value="Tail of Two Cats, A"|[[A Tail of Two Cats]]
+|[[A Tail of Two Cats/Quick guide|QG]]
+|{{Optimal quest|herblore=5000}}
+|{{Optimal quest/qp|2}}
+|Use both {{plink|Antique lamp}}s on {{SCP|Herblore|link=yes}}.
+|[[Kharidian Desert]]
+{{Optimal quest/train|mining|52}}
+{{Optimal quest/train|woodcutting|50}}
+{{Optimal quest/train|herblore|41}}
+|- data-rowid="Legends' Quest"
+|[[Legends' Quest]]
+|[[Legends' Quest/Quick guide|QG]]
+|{{Optimal quest|herblore=120000}}
+|{{Optimal quest/qp|4}}
+|Use a [[botanical pie]] to boost to level 45 [[Herblore]].<br/>Use all the experience rewards on {{SCP|Herblore|link=yes}}.
+|[[Karamja]]
+|- data-rowid="Land of the Goblins"
+|[[Land of the Goblins]]
+|[[Land of the Goblins/Quick guide|QG]]
+|{{Optimal quest|agility=8000|fishing=8000|thieving=8000|herblore=8000}}
+|{{Optimal quest/qp|2}}
+|You may bank between the fights if you have to, but you'll need to make an extra [[goblin potion]] if you want to do that. 
+|[[Dorgesh-Kaan]]
+|- data-rowid="Recipe for Disaster/Freeing Sir Amik Varze"
+|[[Recipe for Disaster/Freeing Sir Amik Varze]]
+|[[Recipe for Disaster/Sir Amik Varze/Quick guide|QG]]
+|{{Optimal quest|cooking=4000|hitpoints=4000}}
+|{{Optimal quest/qp|1}}
+|
+|[[Lumbridge]]
+|- data-rowid="Olaf's Quest"
+|[[Olaf's Quest]]
+|[[Olaf's Quest/Quick guide|QG]]
+|{{Optimal quest|defence=12000}}
+|{{Optimal quest/qp|1}}
+|
+|[[Fremennik Province]]
+{{Optimal quest/train|woodcutting|52}}
+|- data-rowid="A Kingdom Divided"
+|[[A Kingdom Divided]]
+|[[A Kingdom Divided/Quick guide|QG]]
+|{{Optimal quest|slayer=20000}}
+|{{Optimal quest/qp|2}}
+|Unlocks more spells in the [[Arceuus spellbook]].<br/>Use both {{plink|Antique lamp (A Kingdom Divided)|txt=antique lamps}} on {{SCP|Slayer|link=yes}}.
+|[[Kourend]]
+|- data-rowid="A Taste of Hope"
+|data-sort-value="Taste of Hope, A"|[[A Taste of Hope]]
+|[[A Taste of Hope/Quick guide|QG]]
+|{{optimal quest|slayer=7500}}
+|{{Optimal quest/qp|1}}
+| To start the quest you can use [[Ectophial]] to teleport you near [[Andras]] who will take you north of the starting location for 10,000gp.
+Use {{plink|Tome of experience (A Taste of Hope)|txt=tome of experience}} on {{SCP|Slayer|link=yes}}.
+|[[Meiyerditch]]
+{{Optimal quest/train|hunter|46}}
+|- data-rowid="At First Light"
+|[[At First Light]]
+|[[At First Light/Quick guide|QG]]
+|{{Optimal quest|hunter=4500|construction=800}}
+|{{Optimal quest/qp|1}}
+|Access to Master Tier Hunters' Rumours. This shouldn't require much training if birdhouses were done during prior quests.
+|[[Varlamore]]
+{{Optimal quest/train|farming|46}} - You can work on the 2 other skills while letting crops grow.
+{{Optimal quest/train|hunter|50}}
+{{Optimal quest/train|fletching|50}}
+|- data-rowid="Castle Wars Balloon"
+| Unlock: [[Balloon transport system]] to [[Castle Wars]]
+| ''N/A''
+|{{Optimal quest|firemaking=2000}}
+|{{Optimal quest/qp|0}}
+|
+|[[Entrana]]
+|- data-rowid="Ardougne Diary#Medium"
+| [[Ardougne Diary#Medium|Medium Ardougne Diary]]
+| rowspan="10" |''N/A''
+| rowspan="10" |{{Optimal quest|slayer=(7500*10)}}
+|rowspan="10"|{{Optimal quest/qp|0|rowspan=10}}
+| rowspan="10" |Use a [[crystal saw]], [[hunter potion]], [[botanical pie]] for necessary boosts.<br />Use all {{plink|Antique lamp (medium)|txt=antique lamps}} on {{SCP|Slayer|link=yes}}. <br> 70 [[Combat Level]] is required for the Lumbridge Diary.
+| rowspan="10" |
+|- data-rowid="Desert Diary#Medium"
+| [[Desert Diary#Medium|Medium Desert Diary]]
+|- data-rowid="Falador Diary#Medium"
+| [[Falador Diary#Medium|Medium Falador Diary]]
+|- data-rowid="Fremennik Diary#Medium"
+| [[Fremennik Diary#Medium|Medium Fremennik Diary]]
+|- data-rowid="Kandarin Diary#Medium"
+| [[Kandarin Diary#Medium|Medium Kandarin Diary]]
+|- data-rowid="Kourend & Kebos Diary#Medium"
+| [[Kourend & Kebos Diary#Medium|Medium Kourend & Kebos Diary]]
+|- data-rowid="Lumbridge & Draynor Diary#Medium"
+| [[Lumbridge & Draynor Diary#Medium|Medium Lumbridge & Draynor Diary]]
+|- data-rowid="Morytania Diary#Medium"
+| [[Morytania Diary#Medium|Medium Morytania Diary]]
+|- data-rowid="Varrock Diary#Medium"
+| [[Varrock Diary#Medium|Medium Varrock Diary]]
+|- data-rowid="Western Provinces Diary#Medium"
+| [[Western Provinces Diary#Medium|Medium Western Provinces Diary]]
+|- data-rowid="Curse of the Empty Lord"
+|[[Curse of the Empty Lord]] (miniquest)
+|''N/A''
+|{{optimal quest}}
+|{{Optimal quest/qp|0}}
+|Requires starting [[Desert Treasure I]] and obtaining the [[ring of visibility]].<br/>
+|[[Kandarin]]
+|- data-rowid="The General's Shadow"
+|data-sort-value="General's Shadow, The"|[[The General's Shadow]] (miniquest)
+|[[The General's Shadow/Quick guide|QG]]
+|{{Optimal quest|slayer=2000}}
+|{{Optimal quest/qp|0}}
+|Requires the [[ring of visibility]].
+|[[Rellekka]]
+|- data-rowid="Varrock Museum 2"
+|Unlock: More [[Varrock Museum]] [[Kudos]]
+| ''N/A''
+|{{Optimal quest|crafting=4000|hunter=4000|prayer=4000|slayer=14000|smithing=4000}}
+|{{Optimal quest/qp|0}}
+| Talk to [[Historian Minas]] to claim a 10,000 experience {{plink|antique lamp}} to use on {{SCP|Slayer|link=yes}}. Note that in order to receive kudos for [[What Lies Below]], you will need to bring [[Dagon'hai history]] with you.<br/>
+You now have 151 kudos. Talk to the [[information clerk]] to be awarded 4,000 experience in {{SCP|Crafting|link=yes}}, {{SCP|Hunter|link=yes}}, {{SCP|Prayer|link=yes}}, {{SCP|Slayer|link=yes}} and {{SCP|Smithing|link=yes}}.
+|[[Varrock]]
+|- data-rowid="His Faithful Servants"
+|[[His Faithful Servants]] (miniquest)
+|[[His Faithful Servants/Quick guide|QG]]
+|{{Optimal quest|prayer=20000}}
+|{{Optimal quest/qp|0}}
+|Provides a large amount of Prayer experience. The melee Barrows brothers can be kited in their sarcophagus room.
+|[[Morytania]]
+{{Optimal quest/train|prayer|50}}
+|- data-rowid="The Great Brain Robbery"
+|data-sort-value="Great Brain Robbery, The"|[[The Great Brain Robbery]]
+|[[The Great Brain Robbery/Quick guide|QG]]
+|{{Optimal quest|construction=2000|crafting=3000|prayer=6000|slayer=5000}} 
+|{{Optimal quest/qp|2}}
+|Use the {{plink|blessed lamp}} on {{SCP|Slayer|link=yes}}.
+|[[Mos Le'Harmless]]
+|- data-rowid="Scrambled!"
+|[[Scrambled!]]
+|[[Scrambled!/Quick guide|QG]]
+|{{Optimal quest|smithing=5000|cooking=5000|construction=5000}}
+|{{Optimal quest/qp|1}}
+|
+|[[Varlamore]]
+|- data-rowid="Fairytale II - Cure a Queen"
+|[[Fairytale II - Cure a Queen]]
+|[[Fairytale II - Cure a Queen/Quick guide|QG]]
+|{{Optimal quest|herblore=3500|thieving=2500|slayer=2500}}
+|{{Optimal quest/qp|2}}
+|Use a [[botanical pie]] and [[garden pie]] to boost [[Herblore]] and [[Farming]]. Use the {{plink|antique lamp}} on {{SCP|Slayer|link=yes}}.
+|[[Zanaris]]
+{{Optimal quest/train|cooking|66}}
+|- data-rowid="Recipe for Disaster/Freeing King Awowogei"
+|[[Recipe for Disaster/Freeing King Awowogei]]
+|[[Recipe for Disaster/Freeing King Awowogei/Quick guide|QG]]
+|{{Optimal quest|agility=10000|cooking=10000}}
+|{{Optimal quest/qp|1}}
+|Use a [[chef's delight]] to boost [[Cooking]] to 70.
+|[[Ape Atoll]]
+|- data-rowid="Recipe for Disaster/Defeating the Culinaromancer"
+|[[Recipe for Disaster/Defeating the Culinaromancer]]
+|[[Recipe for Disaster/Quick guide|QG]]
+|{{optimal quest|slayer=20000}}
+|{{Optimal quest/qp|1}}
+|Use the {{plink|antique lamp}} on {{SCP|Slayer|link=yes}}.
+|[[Lumbridge]]
+{{Optimal quest/train|defence|60}}
+{{Optimal quest/train|strength|60}}
+|- data-rowid="Perilous Moons"
+|[[Perilous Moons]]
+|[[Perilous Moons/Quick guide|QG]]
+|{{optimal quest|slayer=40000|runecraft=5000|hunter=5000|fishing=5000}}
+|{{Optimal quest/qp|2}}
+|If you have focused on questing and not done much combat, these quest bosses will be significantly harder than anything faced before. Even at the recommended 75 combat level, players may struggle if their defence is lower than 60. Prioritise bringing defensive equipment.
+|[[Cam Torum]]
+{{Optimal quest/action|Start miniquest: [[In Search of Knowledge]]|}}
+{{Optimal quest/train|thieving|56}}
+|- data-rowid="The Path of Glouphrie"
+|[[The Path of Glouphrie]]
+|[[The Path of Glouphrie/Quick guide|QG]]
+|{{optimal quest|slayer=20000|thieving=5000|strength=30000|magic=5000}}
+|{{Optimal quest/qp|2}}
+|
+|[[Tree Gnome Village (location)|Tree Gnome Village‎ ]] <!--The special character prevents tick/cross appearing on the location-->
+{{Optimal quest/train|mining|55}}
+|- data-rowid="The Heart of Darkness"
+|[[The Heart of Darkness]]
+|[[The Heart of Darkness/Quick guide|QG]]
+|{{optimal quest|mining=8000|thieving=8000|slayer=8000|agility=8000}}
+|{{Optimal quest/qp|2}}
+|
+|[[Varlamore]]
+{{Optimal quest/train|magic|65}}
+{{Optimal quest/train|crafting|61}}
+{{Optimal quest/train|mining|60}}
+{{Optimal quest/train|woodcutting|55}}
+|- data-rowid="Lunar Diplomacy"
+|[[Lunar Diplomacy]]
+|[[Lunar Diplomacy/Quick guide|QG]]
+|{{Optimal quest|magic=5000|runecraft=5000}}
+|{{Optimal quest/qp|2}}
+|Unlocks the [[Lunar spellbook]]'s core spells.
+|[[Lunar Isle]]
+{{Optimal quest/train|defence|65}}
+|- data-rowid="King's Ransom"
+|[[King's Ransom]]
+|[[King's Ransom/Quick guide|QG]]
+|{{Optimal quest|defence=33000|magic=5000|slayer=5000}}
+|{{Optimal quest/qp|1}}
+|Use the {{plink|antique lamp}} on {{SCP|Slayer|link=yes}}.
+|[[Camelot]]
+|- data-rowid="Knight Waves Training Grounds"
+|[[Knight Waves Training Grounds]] (miniquest)
+|''N/A''
+|{{Optimal quest|attack=20000|defence=20000|hitpoints=20000|strength=20000}}
+|{{Optimal quest/qp|0}}
+|
+|[[Camelot]]
+{{Optimal quest/train|magic|66}}
+{{Optimal quest/train|fishing|57}}
+|- data-rowid="Swan Song"
+|[[Swan Song]]
+|[[Swan Song/Quick guide|QG]]
+|{{Optimal quest|fishing=50000|magic=15000|prayer=10000}}
+|{{Optimal quest/qp|2}}
+|Use an [[admiral pie]] to boost to 62 [[Fishing]]. Bring multiple in case you don't manage to catch enough fish in time the pie runs out.
+|[[Piscatoris Fishing Colony]]
+{{Optimal quest/train|smithing|55}}
+{{Optimal quest/train|hunter|52}}
+|- data-rowid="Below Ice Mountain"
+|[[Below Ice Mountain]]
+|[[Below Ice Mountain/Quick guide|QG]]
+|
+|{{Optimal quest/qp|1}}
+|
+|[[Asgarnia]]
+|- data-rowid="Defender of Varrock"
+|[[Defender of Varrock]]
+|[[Defender of Varrock/Quick guide|QG]]
+|{{Optimal quest|smithing=15000|hunter=15000|slayer=5000}}
+|{{optimal quest/qp|2}}
+|After the quest, talk to Historian Minas for an antique lamp. Use the {{plink|antique lamp}} on {{SCP|Slayer|link=yes}}.
+|[[Varrock]]
+{{Optimal quest/train|smithing|65}}
+{{Optimal quest/train|runecraft|50}}
+|- data-rowid="Devious Minds"
+|[[Devious Minds]]
+|[[Devious Minds/Quick guide|QG]]
+|{{Optimal quest|fletching=5000|runecraft=5000|smithing=6500}}
+|{{Optimal quest/qp|1}}
+|
+| [[Paterdomus]]
+{{Optimal quest/train|woodcutting|68}}
+{{Optimal quest/train|thieving|58}}
+|- data-rowid="Grim Tales"
+|[[Grim Tales]]
+|[[Grim Tales/Quick guide|QG]]
+|{{Optimal quest|agility=25000|herblore=15000|hitpoints=5000|farming=10000|thieving=25000|woodcutting=60000}}
+|{{Optimal quest/qp|1}}
+|Use a [[dragon axe]] special attack or stews to boost [[Woodcutting]] to 71.
+|[[Taverley]]
+|-
+!colspan="7"|Train {{SCP|Combat|link=yes}} to 85 (Recommended: also train [[Slayer]])
+|- data-rowid="Dream Mentor"
+|[[Dream Mentor]]
+|[[Dream Mentor/Quick guide|QG]]
+|{{Optimal quest|magic=25000|hitpoints=15000}}
+|{{Optimal quest/qp|2}}
+|Unlocks additional spells in the [[Lunar spellbook]].<br/>Use the {{plink|Dreamy lamp}} on {{SCP|Magic|link=yes}}.
+|[[Lunar Isle]]
+{{Optimal quest/train|fishing|60}}
+|- data-rowid="Karamja Diary#Medium"
+|[[Karamja Diary#Medium|Medium Karamja Diary]]
+| ''N/A''
+|{{Optimal quest|slayer=5000}}
+|{{Optimal quest/qp|0}}
+|Use an [[admiral pie]] to boost to 65.<br/>Use {{plink|Antique lamp (medium)|txt=antique lamp}} on {{SCP|Slayer|link=yes}}.
+|[[Karamja]]
+|- data-rowid="Wilderness Diary#Medium"
+|[[Wilderness Diary#Medium|Medium Wilderness Diary]]
+| ''N/A''
+|{{optimal quest|slayer=7500}}
+|{{Optimal quest/qp|0}}
+|Use {{plink|Antique lamp (medium)|txt=antique lamp}} on {{SCP|Slayer|link=yes}}.
+|[[Wilderness]]
+{{Optimal quest/train|crafting|65}}
+{{Optimal quest/train|runecraft|55}}
+|- data-rowid="The Fremennik Exiles"
+|data-sort-value="Fremennik Exiles, The"|[[The Fremennik Exiles]]
+|[[The Fremennik Exiles/Quick guide|QG]]
+|{{Optimal quest|slayer=50000|crafting=50000|runecraft=30000}}
+|{{Optimal quest/qp|2}}
+|
+|[[Fremennik Province]]
+{{Optimal quest/train|fletching|60}}
+|- data-rowid="Sins of the Father"
+|[[Sins of the Father]]
+|[[Sins of the Father/Quick guide|QG]]
+|{{Optimal quest|slayer=90000}}
+|{{Optimal quest/qp|2}}
+|Use the {{plink|Tome of experience (Sins of the Father)|txt=tome of experience}} on {{SCP|Slayer|link=yes}}.
+|[[Meiyerditch]]
+{{Optimal quest/train|firemaking|60}}
+|- data-rowid="Grand Tree Balloon"
+| Unlock: [[Balloon transport system]] to [[Grand Tree]]
+| ''N/A''
+|{{Optimal quest|firemaking=2000}}
+|{{Optimal quest/qp|0}}
+|
+|[[Entrana]]
+|- data-rowid="In Search of Knowledge"
+|[[In Search of Knowledge]] (miniquest)
+| ''N/A''
+|{{Optimal quest|slayer=10000}}
+|{{Optimal quest/qp|0}}
+|Use the {{plink|lamp of knowledge}} on {{SCP|Slayer|link=yes}}.
+This miniquest will take a very long time to complete on its own. It is recommended to kill monsters in the [[Forthos Dungeon]] while on a [[Slayer task/Spiders|spiders]], [[Slayer task/Zombies|zombies]], or [[Slayer task/Red dragons|red dragons]] Slayer task, to passively obtain the required pages.
+|[[Great Kourend]]
+|- data-rowid="Hopespear's Will"
+|[[Hopespear's Will]] (miniquest)
+| ''N/A''
+|{{Optimal quest|prayer=38750}}
+|{{Optimal quest/qp|0}}
+|Provides a large amount of Prayer experience. Can be partially completed for part of the experience reward, in case some of the enemies are too difficult to defeat.
+|[[Hemenster]]
+{{Optimal quest/train|agility|62}}
+|- data-rowid="Beneath Cursed Sands"
+|[[Beneath Cursed Sands]]
+|[[Beneath Cursed Sands/Quick guide|QG]]
+|{{Optimal quest|agility=50000}}
+|{{Optimal quest/qp|2}}
+|
+|[[Kharidian Desert]]
+{{Optimal quest/train|construction|41}}
+|- data-rowid="Shadows of Custodia"
+|[[Shadows of Custodia]]
+|[[Shadows of Custodia/Quick guide|QG]]
+|{{Optimal quest|slayer=10000|hunter=4000|fishing=3000|construction=3000}}
+|{{Optimal quest/qp|2}}
+|
+|[[Varlamore]]
+{{Optimal quest/train|sailing|45}}
+{{Optimal quest/train|construction|50}}
+|- data-rowid="Troubled Tortugans"
+|[[Troubled Tortugans]]
+|[[Troubled Tortugans|QG]]
+|{{Optimal quest|slayer=8000|sailing=10000}}
+|{{Optimal quest/qp|1}}
+|
+|[[Great Conch]]
+{{Optimal quest/train|sailing|52}}
+|- data-rowid="The Red Reef"
+| data-sort-value="Red Reef, The" |[[The Red Reef]]
+|[[The Red Reef/Quick guide|QG]]
+|{{Optimal quest|smithing=5000|sailing=15000}}
+|{{Optimal quest/qp|2}}
+|
+|[[Red Rock]]
+{{Optimal quest/train|hunter|60}}
+{{Optimal quest/train|agility|68}}
+{{Optimal quest/train|slayer|69}}
+{{Optimal quest/train|crafting|70}}
+|- data-rowid="Monkey Madness II"
+|[[Monkey Madness II]]
+|[[Monkey Madness II/Quick guide|QG]]
+|{{Optimal quest|agility=60000|hunter=50000|slayer=80000|thieving=50000|magic=100000}}
+|{{Optimal quest/qp|4}}
+|Choose {{SCP|Magic|link=yes}} when asked during [[Duke (monkey)|Duke]]'s training.
+|[[Tree Gnome Stronghold]]
+|- data-rowid="Into the Tombs"
+|[[Into the Tombs]] (miniquest)
+|''N/A''
+|{{Optimal quest|magic=50000}}
+|{{Optimal quest/qp|0}}
+|Use the {{plink|Antique lamp (Into the Tombs)|txt=antique lamp}} on {{SCP|Magic|link=yes}}.
+|[[Kharidian Desert]]
+|- data-rowid="A Night at the Theatre"
+|[[A Night at the Theatre]]
+|[[A Night at the Theatre/Quick guide|QG]]
+|{{Optimal quest|magic=80000}}
+|{{Optimal quest/qp|2}}
+|Use all four {{plink|Antique lamp (A Night at the Theatre)|txt=antique lamps}} on {{SCP|Magic|link=yes}}.
+|[[Meiyerditch]]
+{{Optimal quest/train|magic|75}}
+{{Optimal quest/train|mining|68}}
+{{Optimal quest/train|smithing|70}}
+|- data-rowid="Dragon Slayer II"
+|[[Dragon Slayer II]]
+|[[Dragon Slayer II/Quick guide|QG]]
+|{{Optimal quest|smithing=80000|mining=60000|agility=50000|thieving=50000|attack=100000}}
+|{{Optimal quest/qp|5}}
+|An additional 4 batches of 25,000 experience in any combat skill except Prayer can be obtained from [[Ellen]].<br/>Select either [[Attack]] or [[Strength]]; Attack is chosen here for all 4 batches.
+|[[Feldip Hills]]
+|- data-rowid="The Curse of Arrav"
+|[[The Curse of Arrav]]
+|[[The Curse of Arrav/Quick guide|QG]]
+|{{Optimal quest|mining=40000|thieving=40000|agility=40000}}
+|{{Optimal quest/qp|2}}
+|
+|[[Uzer Oasis]]
+{{Optimal quest/train|firemaking|66}}
+|- data-rowid="Making Friends with My Arm"
+|[[Making Friends with My Arm]]
+|[[Making Friends with My Arm/Quick guide|QG]]
+|{{Optimal quest|construction=10000|firemaking=40000|mining=50000|agility=50000}}
+|{{Optimal quest/qp|2}}
+|Use a [[dragon pickaxe]] or [[spicy stew]] to boost [[Mining]].
+|[[Troll Stronghold (location)|Troll Stronghold‎ ]] <!--The special character prevents tick/cross appearing on the location-->
+{{Optimal quest/train|thieving|64}}
+|- data-rowid="Secrets of the North"
+|[[Secrets of the North]]
+|[[Secrets of the North/Quick guide|QG]]
+|{{Optimal quest|agility=60000|thieving=50000|hunter=40000}}
+|{{Optimal quest/qp|2}}
+|
+|[[East Ardougne]]
+{{Optimal quest/train|thieving|66}}
+|- data-rowid="The Final Dawn"
+|[[The Final Dawn]]
+|[[The Final Dawn/Quick guide|QG]]
+|{{Optimal quest|runecraft=25000|thieving=55000|fletching=25000}}
+|{{Optimal quest/qp|3}}
+|Although the {{plink|Antique lamp (The Final Dawn)|txt=antique lamp}} could be used on {{SCP|Attack|link=yes}} or {{SCP|Strength|link=yes}} to speed up quest progression, it might also make more sense to use it on {{SCP|Prayer|link=yes}} or {{SCP|Magic|link=yes}} for purposes of account progression.
+|[[Varlamore]]
+{{Optimal quest/train|thieving|72}}
+{{Optimal quest/train|farming|65}}
+{{Optimal quest/train|herblore|65}}
+{{Optimal quest/train|attack|65}}
+{{Optimal quest/train|strength|65}}
+|- data-rowid="While Guthix Sleeps"
+|[[While Guthix Sleeps]]
+|[[While Guthix Sleeps/Quick guide|QG]]
+|{{Optimal quest|thieving=80000|farming=75000|herblore=75000|hunter=50000}}
+|{{Optimal quest/qp|5}}
+|
+|[[Taverley]]
+{{Optimal quest/train|firemaking|75}}
+{{Optimal quest/train|runecraft|60}}
+{{Optimal quest/train|construction|60}}
+|- data-rowid="Desert Treasure II - The Fallen Empire"
+|[[Desert Treasure II - The Fallen Empire]]
+|[[Desert Treasure II - The Fallen Empire/Quick guide|QG]]
+|{{Optimal quest|prayer=300000}}
+|{{Optimal quest/qp|5}}
+|Use the three {{plink|ancient lamp}}s on any combat skill of your choosing. Prayer is selected here.
+|[[Kharidian Desert]]
+{{Optimal quest/train|construction|70}}
+{{Optimal quest/train|farming|70}}
+{{Optimal quest/train|herblore|70}}
+{{Optimal quest/train|hunter|70}}
+{{Optimal quest/train|woodcutting|70}}
+|- data-rowid="Song of the Elves"
+|[[Song of the Elves]]
+|[[Song of the Elves/Quick guide|QG]]
+|{{Optimal quest|agility=40000|construction=40000|farming=40000|herblore=40000|hunter=40000|mining=40000|smithing=40000|woodcutting=40000}}
+|{{Optimal quest/qp|4}}
+|
+|[[Tirannwn]]
+|-
+! colspan="7" |All {{SCP}} [[Quests/Experience rewards|quest XP rewards]] from this point do not impact any other quests, and therefore require no specific order of completion.
+|- data-rowid="Clock Tower"
+|[[Clock Tower]]
+|[[Clock Tower/Quick guide|QG]]
+|
+|{{Optimal quest/qp|1}}
+|
+|[[Ardougne]]
+|- data-rowid="The Corsair Curse"
+| data-sort-value="Corsair Curse, The" |[[The Corsair Curse]]
+|[[The Corsair Curse/Quick guide|QG]]
+|
+|{{Optimal quest/qp|2}}
+| Unlocks access to the Feldip Hills via boat.
+|[[Port Sarim]]
+|-
+! colspan="7" |<div style="text-align: centre;">'''<u>'''[[Quest point cape]]!</u></div>
+|}
+
+==See also ==
+*[[Optimal quest guide/Ironman]], the [[Ironman Mode|Ironman]] variant of this guide
+*[[Optimal quest guide/Free-to-play]], the [[free-to-play]] variant of this guide
+
+[[Category:Guides]]
+[[Category:Quests]]

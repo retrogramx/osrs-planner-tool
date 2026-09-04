@@ -1,0 +1,1019 @@
+{{External|rs|rsc=Melee training}}
+{{Redirect|Melee training|the free players' guide|Free-to-play Melee training}}
+{{cleanup|the page is really long, and it has obsolete methods and outdated information}}
+This article provides information about effective ways to train [[Attack]], [[Strength]], [[Defence]], and [[Hitpoints]] through [[melee]] [[combat]].
+
+This guide is organised into sections based on skill levels. For example, if the section header is ''Levels 20 to 30'', you should begin training at the area with an Attack and Strength level of at least 20. Defence is also preferred to be at that level but is not always required. The solution to lower Defence is to bring more [[food]] or use food that heals more.
+
+==General training notes==
+*The [[Waterfall Quest]] will get you to both 30 Attack and Strength if completed at level 3 combat.
+*Since experience rates are largely influenced by [[Strength]] level and [[strength bonus]], it is optimal to maintain balanced [[Melee|melee stats]] until reaching the minimum requirements for the best-in-slot [[Pay-to-play Melee training#Weapon choice|weapon]] and [[Pay-to-play Melee training#Equipment choice|equipment]]. After this, prioritizing Strength until [[Strength cape|99]], followed by [[Attack cape|Attack]] and finally [[Defence cape|Defence]], will result in the fastest route to max melee stats. For example, when training in the [[Nightmare Zone/Strategies|Nightmare Zone]] with [[Obsidian armour|Obsidian Armour]], a [[Berserker necklace|Berserker Necklace]], and the [[Toktz-xil-ak|Toktz-Xil-Ak]], Attack and Defence should remain at 60 until reaching 99 Strength for optimal experience gains.
+*Strength can be trained without training Hitpoints with [[barbarian fishing]] and at the [[Blast Furnace]] pump, which requires 30 Strength.
+*Defence can be trained by using [[Ancient Magicks]] on [[combat options#Defensive 2|defensive]] or [[chinchompas]] on Long fuse against [[Maniacal monkey]]s for more experience per hour than using melee.
+*Players can complete [[Slayer]] tasks to train Slayer while simultaneously training [[combat]] stats. This is an effective combat training method as well as providing profit in most cases.
+*When fighting dangerous monsters it is suggested to bring a [[teleportation]] [[tablet]] '''or''' if your [[Magic]] level is high enough, teleportation [[runes]] in order to quickly escape. Note that a tablet can be more easily clicked from your inventory and takes up less space than runes for a teleport spell.
+
+To start off, it is strongly recommended to complete [[Quest experience rewards|quests that give a lot of melee experience]]. This allows players to wear much better equipment and have much higher damage output when they start training.
+
+A lot of the quests are quick to complete and only have a few requirements. Most of them include boss fights, which can be made trivial with [[protection prayers]], and many of the bosses can be safespotted with Magic or Ranged. It is strongly recommended to complete [[Witch's House]] to get Hitpoints higher.
+
+The recommended quests for early melee experience are listed in the table below. Completing all of them would give the player a total of 65,275 Attack, 27,537.5 Strength, and 15,300 Defence experience. This would get the player up to level 45 Attack, level 37 Strength, and level 31 Defence without doing any melee training.
+
+{|class="wikitable lighttable qc-active"
+!Quest
+!XP rewards
+!Requirements
+!Enemies to defeat
+!Notes
+|-
+|[[Witch's House]]
+|{{SCP|Hitpoints|6,325}}
+|None
+|[[Witch's experiment]] (level 19, 30, 42, and 53)
+|The last two forms of the [[Witch's experiment]] can be safespotted. Using Magic is recommended throughout the fight.
+|-
+|[[Waterfall Quest]]
+|{{SCP|Attack|13,750}} and {{SCP|Strength|13,750}}
+|None
+|None
+|Players need to withstand and evade attacks from level 86 Fire Giants and level 84 Moss Guardian. Having at least level 17 {{SCP|Hitpoints}} is recommended so that the player cannot die in one hit from full Hitpoints.
+|-
+|[[Death Plateau]]
+|{{SCP|Attack|3,000}}
+|None
+|None
+|Unlocks [[spiritual creatures]] as a Slayer task.
+|-
+|[[Fight Arena]]
+|{{SCP|Attack|12,175}}
+|None
+|[[Khazard scorpion]] (level 44), [[Khazard ogre]] (level 63), [[Bouncer]] (level 137)
+|The bosses can be safespotted, and using Magic is recommended to defeat them.
+|-
+|[[Tree Gnome Village]]
+|{{SCP|Attack|11,450}}
+|None
+|[[Khazard Warlord]] (level 112)
+|The Khazard Warlord can be safespotted, or flinched by walking in and out of his attack radius. Using Magic is recommended.
+|-
+|[[Vampyre Slayer]]
+|{{SCP|Attack|4,825}}
+|None
+|[[Count Draynor]] (level 34)
+|Count Draynor is fairly easy to defeat with some combat stats.
+|-
+|[[The Grand Tree]]
+|{{SCP|Attack|18,400}}
+|{{SCP|Agility|25}}
+|[[Black Demon]] (level 172)
+|Completion of Tree Gnome Village is recommended for access to spirit trees. The Black Demon can be safespotted, and using Magic is recommended to defeat the monster.
+|-
+|[[Holy Grail]]
+|{{SCP|Defence|15,300}}
+|{{SCP|Attack|20}}, completion of [[Merlin's Crystal]]
+|[[Black Knight Titan]] (level 120)
+|The Black Knight Titan can be flinched by simply stepping out of his melee range.
+|-
+|[[Scorpion Catcher]]
+|{{SCP|Strength|6,625}}
+|{{SCP|Prayer|31}}, completion of [[Alfred Grimhand's Barcrawl]]
+|None
+|Requires being able to run past level 172 black demons and level 64 poison spiders.
+|-
+|[[Mountain Daughter]]
+|{{SCP|Attack|1,000}}
+|{{SCP|Agility|20}}
+|[[The Kendal]] (level 70)
+|The Kendal can be safespotted.
+|-
+|[[Horror from the Deep]]
+|{{SCP|Strength|4,662.5}}
+|{{SCP|Agility|35}}, completion of [[Alfred Grimhand's Barcrawl]]
+|Dagannoth (level 100) and [[Dagannoth Mother]] (level 100)
+|Unlocks dagannoth as a Slayer task. Having {{SCP|Prayer|40}} is strongly recommended for [[Protect from Missiles]] against the Dagannoth Mother's Ranged attacks. This quest is a prerequisite for the [[Recipe for Disaster/Defeating the Culinaromancer|final fights]] of [[Recipe for Disaster]].
+|-
+|[[Tai Bwo Wannai Trio]]
+|{{SCP|Attack|2,500}} and {{SCP|Strength|2,500}}
+|{{SCP|Agility|15}}, {{SCP|Cooking|30}}, {{SCP|Fishing|5}}, completion of [[Jungle Potion]]
+|[[Monkey]] (level 3)
+|Having access to [[fairy rings]] makes this quest faster.
+|-
+!colspan=2|XP rewards total
+!colspan=3|{{SCP|Attack|65,275}}, {{SCP|Strength|27,537.5}} and {{SCP|Defence|15,300}}
+|}
+
+===Additional quests===
+Other quests give [[Quest experience rewards#Attack|Attack]], [[Quest experience rewards#Strength|Strength]], and [[Quest experience rewards#Defence|Defence]] experience, but they have higher requirements. Some of them are listed in the table below.
+
+Once completed, the [[Recipe for Disaster]] quest gives access to the [[Culinaromancer's gloves]]. They provide significant offensive bonuses.
+
+{|class="wikitable lighttable qc-active"
+!Quest
+!XP rewards
+!Requirements
+!Enemies to defeat
+!Notes
+|-
+|[[Dragon Slayer I]]
+|{{SCP|Strength|18,650}} and {{SCP|Defence|18,650}}
+|{{SCP|Quest|32}}
+|[[Elvarg]] (level 83) and various other monsters
+|Unlocks all dragon tasks for Slayer. This quest is a prerequisite for [[Heroes' Quest]].
+|-
+|[[Heroes' Quest]]
+|{{SCP|Attack|3,075}}, {{SCP|Strength|3,075}}, {{SCP|Defence|3,075}}
+|{{SCP|Quest|55}}, {{SCP|Cooking|53}}, {{SCP|Fishing|53}}, {{SCP|Herblore|25}}, {{SCP|Mining|50}}; completion of [[Shield of Arrav]], [[Lost City]], [[Merlin's Crystal]], and [[Dragon Slayer I]]
+|[[Ice Queen]] (level 111) and various other monsters
+|This quest is a prerequisite for [[Legends' Quest]], which needs to be started for the [[Recipe for Disaster/Freeing Sir Amik Varze|Sir Amik Varze subquest]] of [[Recipe for Disaster]].
+|-
+|[[The Fremennik Trials]]
+|{{SCP|Attack|2,812}}, {{SCP|Strength|2,812}}, {{SCP|Defence|2,812}}
+|{{SCP|Fletching|25}}, {{SCP|Woodcutting|40}}, {{SCP|Crafting|40}} if crafting your own lyre
+|[[Draugen]] (level 69) and [[Koschei the deathless]]
+|Prerequisite for wearing [[Fremennik helmets]].
+|-
+|[[The Fremennik Isles]]
+|Two lots of {{SCP|Combat|10,000}} [[Combat]] experience (choose between {{SCP|Strength}} [[Strength]], {{SCP|Attack}} [[Attack]], {{SCP|Defence}} [[Defence]] or {{SCP|Hitpoints}} [[Hitpoints]]).
+|{{SCP|Agility|40}}, {{SCP|Construction|20}}, completion of [[The Fremennik Trials]]
+|[[Ice Troll King]] (level 122)
+|Awards the [[helm of neitiznot]] and the ability to wield it.
+|-
+|[[Olaf's Quest]]
+|{{SCP|Defence|12,000}}
+|{{SCP|Firemaking|40}}, {{SCP|Woodcutting|50}}, completion of [[The Fremennik Trials]]
+|[[Ulfric]] (level 100)
+|Unlocks [[brine rat]]s as a Slayer task.
+|-
+|[[Underground Pass]]
+|{{SCP|Attack|3,000}}
+|{{SCP|Ranged|25}}
+|Multiple (between level 13 and 91)
+|Prerequisite for [[Legends' Quest]].
+|-
+|[[Nature Spirit]]
+|{{SCP|Defence|2,000}}
+|Completion of [[Priest in Peril]] and [[The Restless Ghost]]
+|3 [[Ghast]]s (level 30)
+|Prerequisite for the [[Recipe for Disaster/Freeing the Lumbridge Guide|Lumbridge Guide subquest]] of [[Recipe for Disaster]], and unlocking [[fairy rings]].
+|-
+|[[Fairytale I - Growing Pains]]
+|{{SCP|Attack|2,000}}
+|Completion of [[Lost City]] and [[Nature Spirit]]
+|[[Tanglefoot]] (level 111)
+|Prerequisite for unlocking [[fairy rings]].
+|-
+|[[Haunted Mine]]
+|{{SCP|Strength|22,000}}
+|{{SCP|Crafting|35}}, completion of [[Priest in Peril]]
+|[[Treus Dayth]] (level 95)
+|Prerequisite for obtaining the [[Salve amulet]], which provides combat bonuses against undead creatures.
+|}
+
+==Fastest Experience==
+
+=== Levels 1-30: Questing ===
+Completing the [[Waterfall Quest]] at level 1 Attack and Strength will instantly bring the player to level 30 in strength and attack.  This quest has no requirements, making it the fastest way to train a brand-new account to these levels, skipping much of the slow low-level training. However, there are several aggressive and hard-hitting monsters during the quest, so players may alternatively want to train some [[Defence]] and [[Hitpoints]] levels to make the quest safer. Completing the Recommended quests will get the player up to level 45 Attack, level 37 Strength, and level 31 Defence.
+
+===Levels 30 to 50: Crabs===
+{{Melee training monster
+|name = [[Gemstone Crab]]
+|locations = [[Tlati Rainforest]]
+|combat = 160
+|hitpoints = Infinite
+|requirements = [[Children of the Sun]]
+|recommendations = Gear required for looting:
+*[[Pickaxe]] to mine for gems.
+*[[Chisel]] to cut and fletch semi-precious gems.
+*[[Gem bag]] for storing gem drops if one of the top 16 damage dealers.
+|advantages = 
+*The best monster for training at medium and high combat levels.
+*Has infinite health with low [[Defence]] and [[Attack]] ability, meaning you won't need much food if any
+*Can be mined for gems by the 16 players who dealt the most damage.
+|disadvantages =
+*Switches locations after 10 minutes; must be pursued by entering a nearby cave.
+*Gives slightly less experience per hit compared to normal monsters (87.5% of the normal amount), though this is made up for by the fact there is no downtime between killing monsters as there is with the other crabs.
+}}
+
+{{Melee training monster
+|name = [[Ammonite Crab]]
+|locations = [[Fossil Island]]
+|combat = 25
+|hitpoints = 100
+|requirements = [[Bone Voyage]]
+|recommendations = Armour and food for low defence levels. [[Digsite pendant]]. Build the bank chest on Fossil Island to get access to a nearby bank
+|advantages = 
+*Very high health targets with low [[Defence]] and [[Attack]] ability, meaning you won't need much food if any
+*High in number, easy to group and kill in groups
+*Automatic aggro, meaning there are many AFK spots
+|disadvantages = * Often crowded
+*Stops aggro after 10 minutes. Must be reset by walking away and coming back. The distance required to reset their aggro status fluctuates but usually stays between 1 and 15 tiles. There are instances where it is further away
+}}
+
+{{Melee training monster
+|name = [[Sand Crab]]
+|locations = Beach south of [[Hosidius]], [[Crabclaw Isle]], [[Crabclaw Caves]], beach on the [[Avium Savannah]]
+|combat = 15
+|hitpoints = 60
+|requirements = 10,000 coins to enter [[Crabclaw Isle]], or have started [[The Depths of Despair]] to enter the [[Crabclaw Caves]]. There are also spots with no requirements
+|recommendations = Armour and food for low levels. If you are farming on the beach south of Hosidius, there is a bank chest nearby so inventory space is not a concern. Using a full inventory of [[super attack]] and [[super strength]] potions increases your DPS considerably, which ultimately increases the experience rates per hour. The spots on the Avium Savannah are also significantly less congested, so may be preferable.
+|advantages = * Very high health targets with low [[Defence]] and [[Attack]] ability
+*High in number, easy to group and kill in groups
+*Automatic aggro, meaning there are many AFK spots
+|disadvantages = * Often very crowded in Hosidius, but not the Avium Savannah
+*Stops aggro after about 10 minutes, must be reset by walking about one screen away
+}}
+
+===Levels 50-70: Nightmare Zone - Normal Rumble===
+{{Melee training monster
+|name = [[Nightmare Zone]]
+|combat = Varies
+|hitpoints = Varies
+|requirements = At least 5 quests that Nightmare Zone requires
+|recommendations = Refer to the [[Nightmare Zone]] page for more information
+|advantages =
+*Offers the most AFK training method in the game (using normal customisable rumble setup with absorption potions)
+*Use of overload and absorption potions, gained from NMZ points which reduces the need for super combat and prayer potions
+*Points can be used for imbues that upgrade equipment, or to purchase [[herb boxes]] for some profit
+*No competition from other players; Nightmare Zone is instanced and deaths are safe (Unless playing as a Hardcore Group Ironman) - you will not lose any items upon death/leaving apart from dropped items in the arena
+*Possible to earn decent Defence experience with a Venator's Bow and long-range attack style.
+|disadvantages=
+*Requires a coin fee to start, and some quests to utilise
+*Players may need super combat and prayer potions for the first few games as they have no points
+*No drops other than spending points
+|locations = North of [[Yanille]], north-west of the bank
+}}
+
+===Levels 70-99:  Nightmare Zone===
+Since [[Dharok the Wretched's equipment|Dharok's]] [[Dharok the Wretched's equipment#Set effect|potential]] is dependent on having high max {{SCP|Hitpoints||link=yes}}, it becomes optimal at {{SCP|Hitpoints|92+|link=yes}}. Otherwise, the full Blood Moon Armour + Dual Macuahuitl, or the combination of [[Obsidian armour|Obsidian Armour]], a [[Berserker necklace|Berserker Necklace]], and the [[Toktz-xil-ak|Toktz-Xil-Ak]] is optimal. {{Melee training monster
+|name = [[Nightmare Zone]]
+|combat = Varies
+|hitpoints = Varies
+|requirements = At least 5 quests that Nightmare Zone requires
+|recommendations = Refer to the [[Nightmare Zone]] page for more information
+|advantages =
+*Fastest solo experience per hour for Attack and Strength
+*Alternatively, offers the most AFK training method in the game (using normal customisable rumble setup with absorption potions)
+*Use of overload and absorption potions, gained from NMZ points which reduces the need for super combat and prayer potions
+*Points can be used for imbues that upgrade equipment, or to purchase [[herb boxes]] for some profit
+*No competition from other players; Nightmare Zone is instanced and deaths are safe (Unless playing as a Hardcore Group Ironman)
+*This is a safe minigame and you will not lose any items upon death/leaving apart from dropped items in the arena
+*Possible to earn decent Defence experience with a Venator Bow using the long-range attack style.
+|disadvantages=
+*Requires a coin fee to start, and some quests to utilise
+*Players may need super combat and prayer potions for the first few games as they have no points
+*No drops other than spending points
+|locations = North of [[Yanille]], north-west of the bank
+}}
+
+==Other methods==
+You may use these if the above methods are too crowded or otherwise not available. However, they are not as good as the other methods.
+
+It is not recommended to train melee for profit at low levels. It is usually better to train with [[Ammonite Crab|crabs]], [[Slayer]], or the [[Nightmare Zone]] and do something else to make money for overall more efficient play. For example, killing [[Hobgoblins]] for two hours will give both less money and less experience than spinning flax for one hour and training on crabs for one hour. Low-level players looking to make money for early gear should check out the [[Money-making guide]].
+
+Here are some easy options for training melee if you do want to kill monsters for profit and still get decent experience rates.
+===Levels 1 to 10: Chickens===
+{{Melee training monster
+|name = [[Chicken]]
+|locations = North-east of [[Lumbridge]] just east of [[River Lum]], south of [[River Lum]] in [[Farmer Fred]]'s chicken coop
+|combat = 1
+|hitpoints = 3
+|requirements = None
+|recommendations = 
+|advantages = * No food required
+*Feathers are dropped in groups of 5-15 are stackable and can be sold for some profit
+*Bones will drop frequently, allowing the player to train their prayer as well
+|disadvantages = * Only 3 Hitpoints (12 experience) per kill
+*Non-aggressive
+}}
+
+===Levels 10 to 60: Rock Crabs===
+{{Melee training monster
+|name = [[Rock Crab]]
+|locations = North of [[Rellekka]], [[Waterbirth Island]]
+|combat = 13
+|hitpoints = 50
+|requirements = To access [[Waterbirth Island]], you must have started [[The Fremennik Trials]] quest. If you haven't finished the quest, it will cost 1,000 coins to travel there. There are also spots with no requirements
+|recommendations = Armour and food for low levels. [[Camelot teleport]] tabs or runes will bring you somewhat close
+|advantages = * Very, very high health targets with low Defence and Attack ability
+*High in number, easy to group and kill in groups
+|disadvantages = * Can be crowded, though not as much as their ammonite and sand variants are
+*Stops aggro after 10-15 minutes}}
+
+===Levels 30 to 60: Chaos druids===
+{{Melee training monster
+|name = [[Chaos druid]]
+|locations = [[Edgeville Dungeon]], [[Chaos Druid Tower]]
+|combat = 13
+|hitpoints = 20
+|requirements = Decent combat, level 46 Thieving if fighting in [[Chaos Druid Tower]]
+|recommendations = Food. Your best weapon and armour if fighting outside of the [[Wilderness]]. Only three valuable items and a [[looting bag]] if fighting in [[Edgeville dungeon]]
+|advantages = *Great profit for a low level monster, drops valuable herbs, runes, and [[mithril bolts]]
+*Not far from a bank and teleport if using an [[amulet of glory]] or [[Ardougne teleport]]
+*Aggressive
+|disadvantages = *Easiest spot to reach is in low-level Wilderness, where players may be attacked by other players or may accidentally attack another player, [[skulling]] themselves, unless PK Skull Prevention is turned on in the settings.
+*Non-Wilderness locations are far from a bank or require decent thieving
+*They deal decent damage to low level players
+*Sometimes crowded
+}}
+
+=== Levels 30 to 81: Ogres ===
+{{Melee training monster
+|name = [[Ogre]]
+|locations = East of [[Castle Wars]], West of [[Yanille]]
+|combat = 53
+|hitpoints = 60
+|requirements = None
+|recommendations = Armour and food for low defence levels.
+|advantages = *Drops valuable seeds
+*Very high health targets with low [[Defence]] and [[Attack]] ability
+*High in number, easy to group and kill in groups
+*Automatic aggro, meaning there are many AFK spots
+|disadvantages = * Often crowded
+* Popular spot for farming with a Cannon
+*Stops aggro after 10 minutes. Must be reset by walking away and coming back. The distance required to reset their aggro status fluctuates but usually stays between 1 and 15 tiles. There are instances where it is further away
+}}
+
+===Levels 40 to 60: Moss giants===
+{{Melee training monster
+|name = [[Moss giant]]
+|locations = [[Catacombs of Kourend]], [[Varrock Sewers]], West of the [[Fishing Guild]]
+|combat = 42
+|hitpoints = 60
+|requirements = Mid-level combat
+|recommendations = Food, armour, [[High alchemy]] runes, [[Teleport to house]] tablets for using another player's house to teleport to [[Kourend]] to reach the Catacombs, [[ring of dueling]] for banking
+|advantages = *Fairly high Hitpoints for level
+*Decent herb, seed, and alchable drops
+*Chance of dropping a [[Mossy key]], which allows the player to fight [[Bryophyta]], who also has good drops and a chance of dropping the valuable [[Bryophyta's essence]]
+*Chance of dropping pieces of the [[dark totem]], which allows the player to fight [[Skotizo]] once they are a higher level
+*Always drops [[big bones]] which can be sold for guaranteed profit or used for Prayer experience while training
+|disadvantages = *It can be hard to reach the [[Catacombs of Kourend]] for low-level players. Regular players should use the Kourend portal in the [[Player-owned house]] of another player on World 330.
+*Hits hard if you have low defence or armour
+*Without [[Mossy key]] or valuable seed drops, they are usually not worth the time and food it takes to kill
+}}
+
+===Levels 60 to 70: Wilderness Slayer===
+{{Melee training monster
+|name = [[Wilderness Slayer]]
+|combat = Varies
+|hitpoints = Varies
+|requirements = None
+|recommendations = Slayer helm, Dragon defender, many [[Slayer points]] to block bad tasks, food, [[burning amulet]], [[amulet of glory]], high ranged for [[dragonhide armour]]
+|advantages =
+*The damage and accuracy bonuses of the [[Slayer helm]] often make killing your Slayer task great melee experience
+*Trains the Slayer skill at the same time, letting you work towards the profitable slayer monsters and bosses
+*Many Slayer monsters have good drops
+*Accumulates [[Slayer points]] much quicker than normal Slayer. You can save up a lot of these very quickly before starting normal Slayer later on
+*Far fewer requirements than normal Slayer. Not many quests help navigate the Wilderness
+*All monsters killed on Wilderness Slayer assignments have a chance of dropping a valuable [[Larran's key]]. Players with average luck can expect to get about one per task
+|disadvantages=
+*Some Slayer tasks do not give good experience per hour. If the player has not accumulated enough points to block those tasks yet they may be stuck training slowly for a while
+*The player is constantly in danger of being killed by another player, especially in greater than level 30 Wilderness. It is highly recommended to set player attack options to "Hidden" so they don't accidentally [[Skull (status)|Skull]]
+*The player cannot bring their most expensive gear. Only ever bring three valuable items in the Wilderness: a weapon, a [[dragon defender]], and the [[Slayer helm]]. The player can bring an additional item without losing it upon death if the prayer [[Protect Item]] is used at the time of death, bringing the total items protected up to four
+*The player should use cheap items like [[climbing boots]], [[dragonhide armour]], and the [[amulet of glory]]
+*Some common Slayer tasks cannot be killed with melee, such as [[lava dragon]]s
+|locations = [[Wilderness]]
+}}
+
+{{Melee training monster
+|name = [[Green dragon]]
+|locations = [[Wilderness]] in various locations
+|combat = 79
+|hitpoints = 75
+|requirements = [[Dragonfire]] protection, good weapons, food, and armour
+|recommendations = Food. Only three valuable items and a [[Looting bag]]. [[Ring of dueling]] to teleport to a bank. A [[games necklace]] to teleport to [[Corporeal Beast]]
+|advantages = *Every kill is guaranteed to drop a [[green dragonhide]] and [[dragon bones]] which make up most of the profit
+*Also drops [[ensouled dragon head]] and [[nature rune]]s
+*Aggressive
+|disadvantages = *Green dragons are only easily reached in medium-level Wilderness, where players may be attacked by other players or may accidentally attack another player, [[Skulling]] themselves, unless PK Skull Prevention is turned on in the settings
+*Dragonfire protection, such as from an [[anti-dragon shield]], is required to fight them
+*No good rare drops
+*They can deal heavy damage, so a lot of food is required
+*Often crowded with both other green dragon farmers and [[player-killers]]
+}}
+
+===Levels 70 to 99: Slayer===
+{{Melee training monster
+|name = [[Slayer]]
+|combat = Varies
+|hitpoints = Varies
+|requirements = None
+|recommendations = 85 combat to use [[Nieve]], Slayer helm, various teleports and quests
+|advantages =
+*The damage and accuracy bonuses of the Slayer helm often make killing your Slayer task a great melee experience
+*Trains the Slayer skill at the same time, letting you work towards the profitable Slayer monsters and bosses
+*Many slayer monsters have good drops
+*Accumulates [[Slayer points]] which allows you to unlock items and block tasks you don't like
+|disadvantages=
+*Overall, efficient Slayer training gives relatively low amount of experience in Attack and Strength, as most of the Slayer experience is gained by barraging
+*Some Slayer tasks do not give good experience per hour. If the player has not accumulated enough points to block those tasks yet they may be stuck training slowly for a while
+*Efficiently training Slayer has many requirements, including completing most of the game's quests to unlock teleports and blocking bad tasks
+*Some Slayer tasks cannot be completed with melee
+*Many Slayer spots can often be crowded
+*Profitable Melee tasks do not give good experience rates in Slayer
+*Only doing cannonable Melee tasks will result in a loss.
+*Worse Melee experience per hour than using Dharok the Wretched's equipment in Nightmare Zone
+|locations = Varies
+}}
+
+==== Gargoyles ====
+{{Melee training monster
+|name = [[Gargoyle]]
+|locations = [[Slayer tower]]
+|combat = 111
+|hitpoints = 105
+|requirements = 75 [[Slayer]], [[Rock hammer]], [[Priest in Peril]]
+|recommendations = [[Guthan the Infested's equipment]], a [[Kharyrll teleport]] portal, access to [[fairy rings]] or a [[Slayer ring]]. Your best armour and weapons. [[High level alchemy]] runes. Gargoyle smasher Slayer perk
+|advantages = *Consistently drops valuable items like [[rune armour]] and noted [[metal|bars]]
+*Below-average offensive capabilities for their level. Players with high defence can easily sustain their health with Guthan's equipment, a [[Saradomin godsword]], or food
+*Most of its drops are noted or are alchable, meaning the player can stay indefinitely without needing to bank
+*Aggressive
+*Easy to kill without paying attention with the Gargoyle smasher Slayer perk
+|disadvantages = *Above-average defence for their level, will give less experience per hour than other options
+*75 Slayer requirement
+*No rare valuable drops, just consistently good drops
+*Far from a bank
+*They can deal heavy damage to low-level players
+*Often crowded
+}}
+
+===Levels 60/70 to 99: Scurrius===
+{{Melee training monster
+|name = [[Scurrius]]
+|combat = 200 (Solo) <br/> 250 (Group)
+|hitpoints = 500 (Solo) <br/> 1,500 (Group)
+|requirements = None
+|recommendations = Combat level 60-90, armour, food, prayer potions, and (super) combat potions
+|advantages =
+* Faster experience than Nightmare Zone at lower levels (base 70 combat stats offer 100k+ exp/hr when soloing the Group variant)
+* Teaches mechanics useful in higher-level PvM encounters, such as prayer switching and dodging attacks
+* Can be fought alone in an [[instance]] or with a group
+|disadvantages=
+* Drops will not yield a profit but will cover the costs of supplies
+* Best experience rates at lower levels requires the [[bone mace]], created from [[Scurrius' spine]] dropped at a rate of 1/33
+|locations = [[Varrock Sewers]]
+}}
+
+=== Levels 60/70 to 99: Sulphur Naguas ===
+{{Melee training monster|name=[[Sulphur Nagua]]|locations=[[Neypotzli]]|combat=98|hitpoints=100|requirements=48 Slayer 
+20 Hunter
+20 Fishing 
+20 Runecraft 
+10 Construction (Requirements for Perilous Moons, partial completion for access to Sulphur Nagua)
+55 Attack for [[Glacial temotli]]. [[Sulphur blades]] are a cheaper alternative.
+43 Prayer for Protect from Melee|recommendations=70 Attack and 75 Strength for Dual Macuahuitl 
+High Herblore
+70 Prayer for Piety
+Full Blood Moon set|advantages=*[[Moonlight potion]] restores prayer and boosts combat stats, and is made in Neypotzli requiring no materials
+* >100k xp/hr due to the Sulphur Nagua's negative flat armour and double hit weapons. If praying Piety with dual macuahuitl and full blood moon set, expect up to 170k xp/hr.
+*Passive low amounts of runecraft from turning in Sulphur Essence that are dropped, and prayer experience if carrying an [[ectoplasmator]]. 
+*Decent profit made up of noted ores and runes|disadvantages=*[[Dual macuahuitl]] are required for the best rates, a concern for Ironmen. However, glacial temotli and sulphur blades only perform marginally worse, roughly 10% less xp per hour.}}
+
+=== Levels 60/70 to 99: Pest Control ===
+{{Melee training monster
+|name=[[Pest Control]]
+|locations=[[Void Knight Outpost]]
+|requirements=70 Combat (for Intermediate Lander), 100 Combat (for Veteran Lander)
+|recommendations=At least the medium tier of [[Combat Achievements|combat achievements]] completed
+|combat=Varies
+|hitpoints=Varies
+|advantages=
+*Fastest melee XP in the game at higher levels with the hard combat achievements completed, as XP is gained both from combat and commendation points simultaneously
+*No competition from other players - in fact this method benefits from having more people participating
+*Stats get restored at the end of each game, allowing for frequent use of special attacks and negating the need for prayer potions
+*Earns a small amount of coins
+|disadvantages=
+*Depends on having enough people playing for optimal XP rates
+*Requires a high amount of attention as the games move quickly
+}}
+
+==Equipment choice==
+Items will be listed in order of how much they increase general melee damage per second. In nearly all cases, optimising for offensive stats is more effective than optimising for defensive or balanced stats, especially when fighting the low-offence, high-hp monsters on this list. In addition, optimising for Strength is usually better than optimising for accuracy except against high-Defence monsters.
+===Items in order of effectiveness by slot===
+<tabber>
+Head=
+{{Infotable Bonuses header}}
+{{Infotable Bonuses row|name=Torva full helm|astab=0|aslash=0|acrush=0|amagic=-5|arange=-5|dstab=+59|dslash=+60|dcrush=+62|dmagic=-2|drange=+57|str=+8|rstr=0|mdmg=0|prayer=+1}}
+{{Infotable Bonuses row|name=Oathplate helm|astab=0|aslash=+10|acrush=0|amagic=-2|arange=-7|dstab=+50|dslash=+72|dcrush=+45|dmagic=0|drange=+50|str=+6|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Neitiznot faceguard|astab=0|aslash=0|acrush=0|amagic=0|arange=0|dstab=+36|dslash=+34|dcrush=+38|dmagic=+3|drange=+34|str=+6|rstr=0|mdmg=0|prayer=+3}}
+{{Infotable Bonuses row|name=Serpentine helm|astab=0|aslash=0|acrush=0|amagic=-5|arange=-5|dstab=+52|dslash=+55|dcrush=+58|dmagic=0|drange=+50|str=+5|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Blood moon helm|astab=0|aslash=0|acrush=0|amagic=-6|arange=-2|dstab=+20|dslash=+31|dcrush=+34|dmagic=+7|drange=+29|str=+4|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Inquisitor's great helm|astab=-2|aslash=-2|acrush=+8|amagic=-5|arange=-5|dstab=+19|dslash=+10|dcrush=+21|dmagic=0|drange=+12|str=+4|rstr=0|mdmg=0|prayer=+1}}
+{{Infotable Bonuses row|name=Helm of neitiznot|astab=0|aslash=0|acrush=0|amagic=0|arange=0|dstab=+31|dslash=+29|dcrush=+34|dmagic=+3|drange=+30|str=+3|rstr=0|mdmg=0|prayer=+3}}
+{{Infotable Bonuses row|name=Berserker helm|astab=0|aslash=0|acrush=0|amagic=-5|arange=-5|dstab=+31|dslash=+29|dcrush=+33|dmagic=0|drange=+30|str=+3|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Obsidian helmet|astab=0|aslash=0|acrush=0|amagic=0|arange=0|dstab=+25|dslash=+23|dcrush=+26|dmagic=0|drange=+24|str=+3|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Zombie helmet|astab=0|aslash=0|acrush=+8|amagic=-4|arange=-2|dstab=+30|dslash=+32|dcrush=+38|dmagic=0|drange=+30|str=+2|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses footer}}
+
+* Torva or Oathplate may be more effective depending on the NPC's defensive stats and attack style used.
+* Three of these items provide the same Strength bonus of +3, so choose between them based on their other stats such as their Defence or availability. Note that these Strength-boosting helmets are almost always better than helmets that only provide accuracy, such as the [[warrior helm]], for general training.
+* When training [[Slayer]], a [[Slayer helm]] (or [[black mask]]) will always provide the greatest damage increase over any of these.
+
+|-|
+Cape=
+
+
+{{Infotable Bonuses header}}
+{{Infotable Bonuses row|name=Infernal cape|astab=+4|aslash=+4|acrush=+4|amagic=+1|arange=+1|dstab=+12|dslash=+12|dcrush=+12|dmagic=+12|drange=+12|str=+8|rstr=0|mdmg=0|prayer=+2}}
+{{Infotable Bonuses row|name=Fire cape|astab=+1|aslash=+1|acrush=+1|amagic=+1|arange=+1|dstab=+11|dslash=+11|dcrush=+11|dmagic=+11|drange=+11|str=+4|rstr=0|mdmg=0|prayer=+2}}
+{{Infotable Bonuses row|name=Mythical cape|astab=0|aslash=0|acrush=+6|amagic=0|arange=0|dstab=+8|dslash=+8|dcrush=+8|dmagic=+8|drange=+8|str=+1|rstr=0|mdmg=0|prayer=+1}}
+{{Infotable Bonuses row|name=Mixed hide cape|astab=0|aslash=0|acrush=0|amagic=-15|arange=+5|dstab=+2|dslash=+2|dcrush=+2|dmagic=+5|drange=+1|str=+1|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses footer}}
+
+If the player does not have access to any of these, an [[obsidian cape]] or a [[Cape of Accomplishment]] can be used instead due to their moderate Defence bonuses, however, they will not increase damage. The [[Ardougne cloak]] also provides a stab accuracy bonus and a moderate Prayer bonus.
+
+|-|
+Neck=
+
+{{Infotable Bonuses header}}
+{{Infotable Bonuses row|name=Amulet of rancour|astab=+25|aslash=+25|acrush=+25|amagic=-6|arange=-8|dstab=0|dslash=0|dcrush=0|dmagic=0|drange=0|str=+12|rstr=0|mdmg=0|prayer=+2}}
+{{Infotable Bonuses row|name=Amulet of torture|astab=+15|aslash=+15|acrush=+15|amagic=0|arange=0|dstab=0|dslash=0|dcrush=0|dmagic=0|drange=0|str=+10|rstr=0|mdmg=0|prayer=+2}}
+{{Infotable Bonuses row|name=Amulet of fury|astab=+10|aslash=+10|acrush=+10|amagic=+10|arange=+10|dstab=+15|dslash=+15|dcrush=+15|dmagic=+15|drange=+15|str=+8|rstr=0|mdmg=0|prayer=+5}}
+{{Infotable Bonuses row|name=Amulet of glory|astab=+10|aslash=+10|acrush=+10|amagic=+10|arange=+10|dstab=+3|dslash=+3|dcrush=+3|dmagic=+3|drange=+3|str=+6|rstr=0|mdmg=0|prayer=+3}}
+{{Infotable Bonuses row|name=Amulet of power|astab=+6|aslash=+6|acrush=+6|amagic=+6|arange=+6|dstab=+6|dslash=+6|dcrush=+6|dmagic=+6|drange=+6|str=+6|rstr=0|mdmg=0|prayer=+1}}
+{{Infotable Bonuses row|name=Amulet of strength|astab=0|aslash=0|acrush=0|amagic=0|arange=0|dstab=0|dslash=0|dcrush=0|dmagic=0|drange=0|str=+10|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses footer}}
+
+*Depending on your stats, for monsters with low Defence, an [[amulet of Strength]] can be better than an [[amulet of power]], [[amulet of glory]], or even an [[amulet of fury]].
+*When fighting [[undead]] monsters and not using a [[Slayer helmet]], the [[salve amulet]] and its upgraded version the [[salve amulet (e)]] are the best neck-slot items.
+
+|-|
+Body=
+
+{{Infotable Bonuses header}}
+{{Infotable Bonuses row|name=Torva platebody|astab=0|aslash=0|acrush=0|amagic=-18|arange=-14|dstab=+117|dslash=+111|dcrush=+117|dmagic=-11|drange=+142|str=+6|rstr=0|mdmg=0|prayer=+1}}
+{{Infotable Bonuses row|name=Oathplate chest|astab=0|aslash=+16|acrush=0|amagic=-16|arange=-18|dstab=+105|dslash=+128|dcrush=+100|dmagic=-5|drange=+112|str=+4|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Bandos chestplate|astab=0|aslash=0|acrush=0|amagic=-15|arange=-10|dstab=+98|dslash=+93|dcrush=+105|dmagic=-6|drange=+133|str=+4|rstr=0|mdmg=0|prayer=+1}}
+{{Infotable Bonuses row|name=Blood moon chestplate|astab=0|aslash=0|acrush=0|amagic=-15|arange=-10|dstab=+60|dslash=+80|dcrush=+80|dmagic=+40|drange=+79|str=+4|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Inquisitor's hauberk|astab=-3|aslash=-3|acrush=+12|amagic=-11|arange=-10|dstab=+67|dslash=+55|dcrush=+71|dmagic=0|drange=+35|str=+4|rstr=0|mdmg=0|prayer=+2}}
+{{Infotable Bonuses row|name=Fighter torso|astab=0|aslash=0|acrush=0|amagic=-40|arange=0|dstab=+62|dslash=+85|dcrush=+62|dmagic=-10|drange=+67|str=+4|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Obsidian platebody|astab=0|aslash=0|acrush=0|amagic=0|arange=0|dstab=+55|dslash=+78|dcrush=+56|dmagic=-15|drange=+60|str=+3|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Mixed hide top|astab=+4|aslash=-2|acrush=-3|amagic=-15|arange=+27|dstab=+33|dslash=+39|dcrush=+43|dmagic=+30|drange=+32|str=+2|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses footer}}
+
+*Torva or Oathplate may be more effective depending on the NPC's defensive stats and attack style used.
+*Five of these items provide the same Strength bonus, but the [[Oathplate chest]] and [[Bandos chestplate]] have much better defence.
+
+|-|
+Shield=
+
+{{Infotable Bonuses header}}
+{{Infotable Bonuses row|name=Avernic defender|astab=+30|aslash=+29|acrush=+28|amagic=-5|arange=-4|dstab=+30|dslash=+29|dcrush=+28|dmagic=-5|drange=-4|str=+8|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Dragon defender|astab=+25|aslash=+24|acrush=+23|amagic=-3|arange=-2|dstab=+25|dslash=+24|dcrush=+23|dmagic=-3|drange=-2|str=+6|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Rune defender|astab=+20|aslash=+19|acrush=+18|amagic=-3|arange=-2|dstab=+20|dslash=+19|dcrush=+18|dmagic=-3|drange=-2|str=+5|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Antler guard|astab=+15|aslash=+15|acrush=+15|amagic=+9|arange=+9|dstab=-15|dslash=-15|dcrush=-15|dmagic=-15|drange=-15|str=+5|rstr=+2|mdmg=0|prayer=+5}}
+{{Infotable Bonuses row|name=Adamant defender|astab=+13|aslash=+12|acrush=+11|amagic=-3|arange=-2|dstab=+13|dslash=+12|dcrush=+11|dmagic=-3|drange=-2|str=+4|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Dragonfire shield|astab=0|aslash=0|acrush=0|amagic=-10|arange=-5|dstab=+70|dslash=+75|dcrush=+72|dmagic=+10|drange=+72|str=+7|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Toktz-ket-xil|astab=0|aslash=0|acrush=0|amagic=-12|arange=-8|dstab=+40|dslash=+42|dcrush=+38|dmagic=0|drange=+65|str=+5|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Mooleta|astab=5|aslash=7|acrush=7|amagic=-1|arange=-1|dstab=4|dslash=8|dcrush=8|dmagic=-2|drange=-1|str=+1|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Book of war|astab=0|aslash=0|acrush=0|amagic=0|arange=0|dstab=0|dslash=0|dcrush=0|dmagic=0|drange=0|str=+2|rstr=0|mdmg=0|prayer=+5}}
+{{Infotable Bonuses footer}}
+
+*When fighting dragons, a Dragonfire shield is the best melee offhand item due to its ability to block dragonfire while having high Strength and Defence bonuses. IMPORTANT: The "Uncharged" Dragonfire shield has about 1/3 the defensive characteristics of the charged shield. If the dragonfire protection and high Defence are not needed, defenders are better due to their accuracy bonuses.
+
+*As defenders require access to the [[Warriors' Guild]] and thus a combined Attack and Strength level of 130 (for example, level 65 in both), the [[Toktz-ket-xil]] or [[dragonfire shield]] should be used until that requirement is met. If the required Defence levels for those items (60 and 75 respectively) aren't met, a [[book of war]] can be used.
+
+|-|
+Legs=
+
+{{Infotable Bonuses header}}
+{{Infotable Bonuses row|name=Torva platelegs|astab=0|aslash=0|acrush=0|amagic=-24|arange=-11|dstab=+87|dslash=+78|dcrush=+79|dmagic=-9|drange=+102|str=+4|rstr=0|mdmg=0|prayer=+1}}
+{{Infotable Bonuses row|name=Oathplate legs|astab=0|aslash=+12|acrush=0|amagic=-12|arange=-14|dstab=+75|dslash=+100|dcrush=+73|dmagic=-3|drange=+81|str=+2|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Bandos tassets|astab=0|aslash=0|acrush=0|amagic=-21|arange=-7|dstab=+71|dslash=+63|dcrush=+66|dmagic=-4|drange=+93|str=+2|rstr=0|mdmg=0|prayer=+1}}
+{{Infotable Bonuses row|name=Blood moon tassets|astab=0|aslash=0|acrush=0|amagic=-21|arange=-7|dstab=+30|dslash=+50|dcrush=+49|dmagic=+32|drange=+46|str=+2|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Inquisitor's plateskirt|astab=-3|aslash=-3|acrush=+12|amagic=-9|arange=-5|dstab=+42|dslash=+30|dcrush=+49|dmagic=0|drange=+22|str=+2|rstr=0|mdmg=0|prayer=+2}}
+{{Infotable Bonuses row|name=Obsidian platelegs|astab=0|aslash=0|acrush=0|amagic=0|arange=0|dstab=+46|dslash=+43|dcrush=+41|dmagic=-10|drange=+40|str=+1|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Fremennik kilt|astab=0|aslash=0|acrush=0|amagic=-21|arange=-7|dstab=+11|dslash=+10|dcrush=+10|dmagic=-4|drange=+10|str=+1|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Torag's platelegs|astab=0|aslash=0|acrush=0|amagic=-21|arange=-7|dstab=+85|dslash=+82|dcrush=+83|dmagic=-4|drange=+92|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Verac's plateskirt|astab=0|aslash=0|acrush=0|amagic=-21|arange=-7|dstab=+85|dslash=+82|dcrush=+83|dmagic=0|drange=+84|str=0|rstr=0|mdmg=0|prayer=+4}}
+{{Infotable Bonuses row|name=Dragon platelegs|altname=Dragon platelegs/skirt|astab=0|aslash=0|acrush=0|amagic=-21|arange=-7|dstab=+68|dslash=+66|dcrush=+63|dmagic=-4|drange=+65|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Rock-shell legs|astab=0|aslash=0|acrush=0|amagic=-21|arange=-7|dstab=+51|dslash=+49|dcrush=+47|dmagic=-4|drange=+49|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Rune platelegs|astab=0|aslash=0|acrush=0|amagic=-21|arange=-11|dstab=+51|dslash=+49|dcrush=+47|dmagic=-4|drange=+49|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Mixed hide legs|astab=+3|aslash=-1|acrush=-2|amagic=-10|arange=+14|dstab=+20|dslash=+23|dcrush=+22|dmagic=+16|drange=+20|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses footer}}
+
+*Torva or Oathplate may be more effective depending on the NPC's defensive stats and attack style used.
+*Items shown without strength bonus are included to show defensive stats and give less expensive options.
+
+|-|
+Hands=
+
+{{Infotable Bonuses header}}
+{{Infotable Bonuses row|name=Ferocious gloves|astab=+16|aslash=+16|acrush=+16|amagic=-16|arange=-16|dstab=0|dslash=0|dcrush=0|dmagic=0|drange=0|str=+14|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Barrows gloves|astab=+12|aslash=+12|acrush=+12|amagic=+6|arange=+12|dstab=+12|dslash=+12|dcrush=+12|dmagic=+6|drange=+12|str=+12|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Dragon gloves|astab=+9|aslash=+9|acrush=+9|amagic=+5|arange=+9|dstab=+9|dslash=+9|dcrush=+9|dmagic=+5|drange=+9|str=+9|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Rune gloves|astab=+8|aslash=+8|acrush=+8|amagic=+4|arange=+8|dstab=+8|dslash=+8|dcrush=+8|dmagic=+4|drange=+8|str=+8|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Regen bracelet|astab=+8|aslash=+8|acrush=+8|amagic=+3|arange=+7|dstab=+6|dslash=+6|dcrush=+6|dmagic=+3|drange=+6|str=+7|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Adamant gloves|astab=+7|aslash=+7|acrush=+7|amagic=+4|arange=+7|dstab=+7|dslash=+7|dcrush=+7|dmagic=+4|drange=+7|str=+7|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Granite gloves|astab=+5|aslash=+5|acrush=+9|amagic=-3|arange=-1|dstab=+8|dslash=+8|dcrush=+8|dmagic=-3|drange=+5|str=+7|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Combat bracelet|astab=+7|aslash=+7|acrush=+7|amagic=+3|arange=+7|dstab=+5|dslash=+5|dcrush=+5|dmagic=+3|drange=+5|str=+6|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Mithril gloves|astab=+6|aslash=+6|acrush=+6|amagic=+3|arange=+6|dstab=+6|dslash=+6|dcrush=+6|dmagic=+3|drange=+6|str=+6|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses footer}}
+
+|-|
+Feet=
+
+{{Infotable Bonuses header}}
+{{Infotable Bonuses row|name=Avernic treads (max)|astab=+5|aslash=+5|acrush=+5|amagic=+11|arange=+15|dstab=+21|dslash=+25|dcrush=+25|dmagic=+10|drange=+10|str=+6|rstr=+3|mdmg=+2|prayer=0}}
+{{Infotable Bonuses row|name=Primordial boots|astab=+2|aslash=+2|acrush=+2|amagic=-4|arange=-1|dstab=+22|dslash=+22|dcrush=+22|dmagic=0|drange=0|str=+5|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Dragon boots|astab=0|aslash=0|acrush=0|amagic=-3|arange=-1|dstab=+16|dslash=+17|dcrush=+18|dmagic=0|drange=0|str=+4|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Aranea boots|astab=0|aslash=0|acrush=0|amagic=+5|arange=+6|dstab=0|dslash=0|dcrush=0|dmagic=0|drange=0|str=+4|rstr=0|mdmg=0|prayer=+1}}
+{{Infotable Bonuses row|name=Spiked manacles|astab=0|aslash=0|acrush=0|amagic=-3|arange=-1|dstab=0|dslash=0|dcrush=0|dmagic=-4|drange=0|str=+4|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Guardian boots|astab=0|aslash=0|acrush=0|amagic=-3|arange=-1|dstab=+32|dslash=+32|dcrush=+32|dmagic=-3|drange=+24|str=+3|rstr=0|mdmg=0|prayer=+2}}
+{{Infotable Bonuses row|name=Granite boots|astab=0|aslash=0|acrush=0|amagic=-3|arange=-1|dstab=+15|dslash=+16|dcrush=+17|dmagic=-0|drange=+8|str=+3|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Rune boots|astab=0|aslash=0|acrush=0|amagic=-3|arange=-1|dstab=+12|dslash=+13|dcrush=+14|dmagic=0|drange=0|str=+2|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Mixed hide boots|astab=0|aslash=0|acrush=0|amagic=-10|arange=+5|dstab=+4|dslash=+5|dcrush=+6|dmagic=+3|drange=+3|str=+2|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Climbing boots|astab=0|aslash=0|acrush=0|amagic=0|arange=0|dstab=0|dslash=+2|dcrush=+2|dmagic=0|drange=0|str=+2|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Adamant boots|astab=0|aslash=0|acrush=0|amagic=-3|arange=-1|dstab=+10|dslash=+11|dcrush=+12|dmagic=0|drange=0|str=+1|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses footer}}
+
+|-|
+Ring=
+
+{{Infotable Bonuses header}}
+{{Infotable Bonuses row|name=Ultor ring|astab=0|aslash=0|acrush=0|amagic=0|arange=0|dstab=0|dslash=0|dcrush=0|dmagic=0|drange=0|str=+12|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Berserker ring (i)|astab=0|aslash=0|acrush=0|amagic=0|arange=0|dstab=0|dslash=0|dcrush=+8|dmagic=0|drange=0|str=+8|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Bellator ring|astab=0|aslash=+20|acrush=0|amagic=0|arange=0|dstab=0|dslash=0|dcrush=0|dmagic=0|drange=0|str=+6|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Brimstone ring|astab=+4|aslash=+4|acrush=+4|amagic=+6|arange=+4|dstab=+4|dslash=+4|dcrush=+4|dmagic=+6|drange=+4|str=+4|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Berserker ring|astab=0|aslash=0|acrush=0|amagic=0|arange=0|dstab=0|dslash=0|dcrush=+4|dmagic=0|drange=0|str=+4|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Ring of shadows|astab=+4|aslash=+4|acrush=+4|amagic=+5|arange=+4|dstab=0|dslash=0|dcrush=0|dmagic=+5|drange=0|str=+2|rstr=0|mdmg=0|prayer=+2}}
+{{Infotable Bonuses row|name=Warrior ring (i)|astab=0|aslash=+8|acrush=0|amagic=0|arange=0|dstab=0|dslash=+8|dcrush=0|dmagic=0|drange=0|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Tyrannical ring (i)|astab=0|aslash=0|acrush=+8|amagic=0|arange=0|dstab=0|dslash=0|dcrush=+8|dmagic=0|drange=0|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Treasonous ring (i)|astab=+8|aslash=0|acrush=0|amagic=0|arange=0|dstab=+8|dslash=0|dcrush=0|dmagic=0|drange=0|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses footer}}
+
+*Rings should be [[Imbuing|imbued]] '''as soon as possible'''. Also note that the Warrior, Tyrannical, and Treasonous rings only benefit one attacking style each, while the Brimstone ring benefits all melee combat. If the player cannot afford any of these rings, a [[ring of wealth]] is a decent alternative to help improve [[rare drop table]] rolls and pick up [[coins]], but it does not increase damage. Low level players can benefit from a [[ring of recoil]], as 10% + 1 of the damage received by the player (rounded down) is dealt to the attacker, and always recoils at least 1 damage when the player is hit.
+
+</tabber>
+
+==Weapon choice==
+===Choosing a weapon===
+
+*In most cases, choosing a weapon with an attack speed of 2.4 seconds (4 ticks) will be the best choice for dealing the highest damage per second. Slower weapons almost always give less experience overall against low-defence monsters, even if they do more damage per hit, but may deal more against high-defence monsters.
+*Monster vulnerability may cause certain weapons to perform better than their stats suggest. For example, most [[dragons]] are weak to Stab, making the otherwise weaker [[zamorakian hasta]] a better choice than the [[abyssal whip]] when fighting them. Check a monster's wiki page to see its defensive bonuses and consider picking a weapon it is weak to.
+*One-handed weapons can often be paired with [[Defender|defenders]] and other offhand equipment to enhance offensive performance. See the "Shield" section of the [[Pay-to-play melee training#Items in order of effectiveness by slot|equipment choice]] table above for more detailed information.
+
+===Training weapons in order of effectiveness===
+*Notes:
+**One-handed weapons are displayed as if they were paired with a [[defender]] appropriate for its [[Attack]] level requirement—[[Dragon defender|dragon]] for level 60+, [[Avernic defender|avernic]] for level 70+—to make a fair comparison to two-handed weapons.
+**Weapons requiring Attack level 60 or lower will not include the bonuses of a defender.
+**Some [[Crush bonus|Crush]] weapons in this table are also displayed as paired with the [[inquisitor's armour]] set to showcase the enhancements the set effect offers to weapons that deliver [[Crush bonus|Crush]] attacks.
+**If not using a shield—for example, if you do not want to risk an additional item in the [[Wilderness]], or you do not have the requirements for defenders or other offhand items—fast two-handed weapons like the [[Saradomin sword]] become much more competitive with one-handed weapons.
+<tabber>
+70+ Attack=
+{| class="wikitable"
+|+
+|-
+!Weapon Name
+!Requirements
+!Primary Attack Style
+!Primarily Used to Train
+!Attack & Strength Bonus (With [[Avernic defender]], if applicable)
+!Price
+!Notes
+|-
+|{{Plink|Soulreaper axe}}
+|80 [[Attack]]<br>80 [[Strength]]
+|[[Slash bonus|Slash]]
+|All Stats
+| +134 [[Slash bonus|Slash]]<br>+121 [[Strength]]
+|{{Coins|{{GEP|Soulreaper axe}}}}
+|Utilizing the weapon's "Soul stack" effect is required to achieve maximum experience rates. Each Soul Stack gives the player a +6% boost to their Strength level. Maintaining 5 soul stacks at all times, and not using the "Behead" [[Special attacks|special attack]] is optimal while training. It does not degrade and it primarily uses the [[Slash weapons|Slash]] attack style.
+|-
+|{{plink|Osmumten's fang}}
+|82 [[Attack]]
+|[[Stab]]
+|All Stats
+| +135 [[Stab]]<br>+111 [[Strength]]
+|{{Coins|{{GEP|Osmumten's fang}}}}
+|This weapon will be better than the ghrazi rapier on monsters that have very high Defence bonuses due to its passive effects.
+|-
+|{{plink|Noxious halberd}}
+|80 [[Attack]]
+|[[Slash]]
+|[[Strength]], [[Defence]]<br>All Stats on [[Controlled]]
+| +80 [[Stab]]<br>+132 [[Slash]]<br>+142 [[Strength]]
+|{{Coins|{{GEP|Noxious halberd}}}}
+|Two-handed weapon with a slightly slower attack speed of 3 seconds instead of 2.4 like most other weapons listed. Despite this, it is better than the other 80 Attack weapons when used with lower Strength bonus gear.
+|-
+|{{plink|Ghrazi rapier}}
+|80 [[Attack]]
+|[[Stab]]
+|All Stats
+| +124 [[Stab]]<br>+97 [[Strength]]
+|{{Coins|{{GEP|Ghrazi rapier}}}}
+|This is one of the best melee training weapons. Its [[Strength bonus]] is tied with the [[inquisitor's mace]] and the [[blade of Saeldor]]. It does not degrade and it primarily uses the [[Stab]] attack style. It is worth mentioning the player can attack with the Ghrazi Rapier every 2.4 seconds as opposed to the slightly slower attack rate of Osmumten's fang (every 3.0 seconds).
+|-
+| rowspan="3" |{{Plink|Inquisitor's mace}}
+| rowspan="3" |80 [[Attack]]
+| rowspan="3" |[[Crush bonus|Crush]]
+| rowspan="3" |All Stats
+| +123 [[Crush bonus|Crush]]<br>+97 [[Strength]]
+| rowspan="3" |{{Coins|{{GEP|Inquisitor's mace}}}}
+| rowspan="3" |This is one of the best melee training weapons. Its [[Strength bonus]] is tied with the [[ghrazi rapier]] and the blade of Saeldor. It does not degrade and it primarily uses the [[Crush]] attack style.
+When combined with the [[inquisitor's armour]], the weapon's enhanced Strength bonus and significantly improved accuracy become devastating against enemies with high Defence. The four-tick [[weapon speed]] and the capability to train all melee stats render it one of the best melee weapons available.
+|-
+!Wearing [[Inquisitor's armour|Inquisitor's Armour]]
+|-
+| +155 [[Crush weapons|Crush]]<br>+107 [[Strength]]
+|-
+|{{Plink|Blade of saeldor}}
+|80 [[Attack]]
+|[[Slash bonus|Slash]]
+|All Stats
+| +123 [[Slash bonus|Slash]]<br>+97 [[Strength]]
+|{{Coins|{{GEP|Blade of saeldor (inactive)}}}}
+|This is one of the best melee training weapons. Its Strength bonus is tied with the ghrazi rapier and the [[inquisitor's mace]]. However, it must be charged with [[crystal shard]]s, which can be obtained from either doing various activities around [[Prifddinas]] or from exchanging certain crystal seeds with [[Amrod]]. This effectively makes the sword require [[Song of the Elves]] to use. Each shard grants 100 charges; the weapon can store up to 20,000 charges and loses one charge with each hit (regardless of whether the hit is successful or not). One can bring it and 1,000 crystal shards to a [[singing bowl]] to make [[blade of Saeldor (c)]], which is non-degradable and non-tradeable (requires level 82 [[Crafting]] and [[Smithing]]).
+|-
+|{{plink|Voidwaker}}
+|75 [[Attack]]
+|[[Slash]]
+|All stats
+| +109 [[Slash]]<br>+88 [[Strength bonus|Strength]]
+|{{Coins|{{GEP|Voidwaker}}}}
+|This is the best non-degradable weapon for training Strength at level 75.
+
+The special attack of the [[Voidwaker]] is a magic attack and grants [[Magic]] and [[Hitpoints]] skill experience.
+|-
+|{{plink|Abyssal tentacle}}
+|75 [[Attack]]
+|[[Slash]]
+|[[Attack]], [[Defence]]<br>All Stats on [[Controlled]]
+| +119 [[Slash]]<br>+94 [[Strength bonus|Strength]]
+|{{Coins|{{GEP|Abyssal whip}}+{{GEP|Kraken tentacle}}}}
+|While it is the fourth strongest one handed four tick weapon in the game, the tentacle's cost per attack, of {{Coins|{{GEP|Abyssal whip|0.0001}}}}, makes training far more expensive, but provides a boost of +8 [[Slash]] and +4 [[Strength]]. The costs adds up to {{Coins|{{GEP|Abyssal whip|0.15}}}} coins per hour, completely degrading after 10,000 hits.
+
+Not specifically for sale in the Grand Exchange. Created by combining an [[abyssal whip]] with a [[kraken tentacle]].
+|-
+|{{plink|Abyssal whip}}
+|70 [[Attack]]
+|[[Slash]]
+|[[Attack]], [[Defence]]<br>All Stats on [[Controlled]]
+| +111 [[Slash]]<br>+90 [[Strength bonus|Strength]]
+|{{Coins|{{GEP|Abyssal whip}}}}
+|This is the most common training weapon, especially considering that it is affordable and does not degrade. The whip is the second-strongest non-degradable Attack and Defence training weapon in the game. Using this weapon on [[Controlled]] is an easy, but slower way to reach 99 [[Attack]], [[Strength]], and [[Defence]] since all the experience is spread across these three skills. One disadvantage of the abyssal whip is that it cannot train Strength without training Attack and Defence at the same time, so [[Combat pure|pures]] should avoid using it to train.
+|-
+|{{plink|Saradomin's blessed sword}}
+|75 [[Attack]]
+|[[Slash]]
+|[[Strength]]
+| +100 [[Slash]]<br>+88 [[Strength bonus|Strength]]
+|{{Coins|{{GEP|Saradomin sword}}+{{GEP|Saradomin's tear}}}}
+|Similar to the [[abyssal tentacle]], this weapon degrades. Each hit costs {{Coins|{{GEP|Saradomin sword}} * 0.0001}}, costing {{Coins|{{GEP|Saradomin sword}} * 0.15}} per hour of constant use. This is the third-best Strength training weapon in the game. After 10,000 hits, the sword crumbles to dust, and you get the Tear back.
+
+Not specifically for sale in the Grand Exchange. Created by combining a [[Saradomin sword]] with a [[Saradomin's tear]].
+|-
+|{{plink|Dual macuahuitl}}
+|70 [[Attack]]<br/>75 [[Strength]]
+|[[Crush]]
+|All stats
+| +121 [[Crush]]<br>+81 [[Strength bonus|Strength]]
+|{{Coins|{{GEP|Dual macuahuitl}}}}
+|This is one of the best training weapons against low-defence monsters due to the set effect of the [[blood moon armour]] set, which has a 33% chance upon a [[successful hit]] to attack one [[tick]] earlier than usual (or a 56% chance if both hits are successful). 
+
+While the dual macuahuitl is non-degradable, the blood moon armour set does degrade. It is recommended to combine the weapon with the armour set if possible due to how powerful its set effect is.
+|-
+| rowspan="3" |{{plink|Abyssal bludgeon}}
+| rowspan="3" |70 [[Attack]]<br/>70 [[Strength]]
+| rowspan="3" |[[Crush]]
+| rowspan="3" |[[Strength]]
+| +102 [[Crush]]<br>+85 [[Strength]]
+| rowspan="3" |{{Coins|{{GEP|Abyssal bludgeon}}}}
+| rowspan="3" |This is the second-best non-degradable Strength training weapon. It is very useful when fighting a monster with a vulnerability to Crush weapons, such as [[Revenants]] and [[Vet'ion]]. However, the fairly high cost and being only a slight upgrade over more affordable weapons make it a less popular choice for strength training.
+If you can afford to combine this weapon with the [[inquisitor's armour]] set, the significantly improved accuracy and slightly improved damage make this weapon even more powerful.
+|-
+!Wearing [[Inquisitor's armour|Inquisitor's Armour]]
+|-
+| +135 [[Crush weapons|Crush]]<br>+95 [[Strength bonus|Strength]]
+|-
+|{{plink|Zamorakian hasta}}
+|70 [[Attack]]<br>[[Barbarian Training]]
+|[[Stab]]
+|[[Defence]]<br>All stats on [[Controlled]]
+| +115 [[Stab]]<br>+83 [[Strength]]
+|{{Coins|{{GEP|Zamorakian hasta}}}}
+|This weapon is not generally chosen for everyday training due to only being able to train on controlled or defensive. It is both weaker and more expensive than the abyssal whip. It is primarily used against monsters with a weakness to Stab, such as all types of [[dragons]]. It also has a decent Crush bonus, so it can be used as an alternative to the Abyssal bludgeon for fighting Crush-weak enemies like [[Kalphites]] and Vet'ion.
+|-
+|{{plink|Abyssal dagger}}
+|70 [[Attack]]
+|[[Stab]]
+|[[Strength]]
+| +105 [[Stab]]<br>+83 [[Strength]]
+|{{Coins|{{GEP|Abyssal dagger}}}}
+|The fourth-best one-handed Strength training weapon. It should not be used for Attack training unless a Stab weapon is needed.
+|-
+|{{plink|Staff of the dead}}
+|75 [[Attack]]<br>75 [[Magic]]
+|[[Slash]]
+|[[Strength]]
+| +99 [[Slash]]<br>+80 [[Strength]]
+|{{Coins|{{GEP|Staff of the dead}}}}
+|The fifth-best one-handed Strength training weapon. It is more accurate with a defender than the next-best Strength training weapon, the Saradomin sword, but has lower Strength. This makes the staff better against high-defence monsters, but it is much less affordable. Also, it is strictly worse than the [[abyssal dagger]], which should usually be used instead unless a slash weapon is needed.
+|-
+|{{plink|Saradomin sword}}
+|70 [[Attack]]
+|[[Slash]]
+|[[Strength]]
+| +82 [[Slash]]<br>+82 [[Strength]]
+|{{Coins|{{GEP|Saradomin sword}}}}
+|The Saradomin sword is a much more affordable Strength training weapon than anything above it on this list. Against lower-defence monsters such as [[Yaks]], the Saradomin sword will on average do higher damage per second than the [[staff of the dead]] due to its higher Strength. However, this sword's lack of a shield and the staff's magic capabilities and melee accuracy make the staff usually more desirable if you can afford it.
+|-|
+
+60+ Attack=
+{| class="wikitable"
+|+
+|-
+!Weapon Name
+!Requirements
+!Primary Attack Style
+!Primarily Used to Train
+!Attack & Strength Bonus (With [[Dragon defender]], if applicable)
+!Price
+!Notes
+|-
+| rowspan="3" |{{plink|Zombie axe}}
+| rowspan="3" |65 [[Attack]]
+| rowspan="3" |[[Slash weapons|Slash]]
+| rowspan="3" |All Stats
+| +129 [[Slash]]<br>+113 [[Strength]]
+| rowspan="3" |{{Coins|{{GEP|Zombie axe}}}}
+| rowspan="3" |The zombie axe has a [[Attack speed|5-tick weapon speed]] and does slightly less [[dps|DPS]] than the abyssal whip against enemies with low Defence; however, it has a higher potential DPS against enemies with high Defence or that are weak to Crush. 
+The inquisitor's armour set makes the [[Crush weapons|Crush style]] attack of the [[zombie axe]] slightly more powerful and '''extremely''' accurate.
+|-
+!Wearing [[Inquisitor's armour|Inquisitor's Armour]]
+|-
+| +145 [[Crush bonus|Crush]]<br>+123 [[Strength]]
+|-
+| rowspan="3" |{{plink|Sarachnis cudgel}}
+| rowspan="3" |65 [[Attack]]
+| rowspan="3" |[[Crush]]
+| rowspan="3" |[[Strength]]
+| +93 [[Crush]]<br>+76 [[Strength]]
+| rowspan="3" |{{Coins|{{GEP|Sarachnis cudgel}}}}
+| rowspan="3" |The [[Sarachnis cudgel]] is generally not favoured for training due to its marginal advantages over the [[dragon scimitar]] and its requirement of 5 additional Attack levels to wield. Compared to higher-tier weapons requiring 70+ Attack, like the Saradomin sword and staff of the dead, it falls short in melee [[Strength bonus|Strength]]. Nonetheless, the cudgel may have the upper hand in rare situations where the target is susceptible to Crush attacks.
+The [[inquisitor's armour]] set enhances the [[Crush bonus|Crush Style]] attacks of the [[Sarachnis cudgel]], increasing both power and accuracy.
+|-
+!Wearing [[Inquisitor's armour|Inquisitor's Armour]]
+|-
+| +125 [[Crush bonus|Crush]]<br>+86 [[Strength]]
+|-
+| rowspan="3" |{{plink|Viggora's chainmace}}
+| rowspan="3" |60 [[Attack]]
+| rowspan="3" |[[Crush]]
+| rowspan="3" |[[Strength]]
+| +91 [[Crush]]<br>+72 [[Strength]]
+| rowspan="3" |{{Coins|{{GEP|Viggora's chainmace (u)}}}}
+| rowspan="3" |This weapon is on par with the dragon scimitar as the best training weapon for all attack styles at level 60 Attack, requiring no charging or quest completion. When charged with [[revenant ether]], it grants a 50% boost in melee accuracy and damage against [[Non-player character|NPCs]] in the [[Wilderness]], often surpassing other weapons in training speed if used there. However, it is notably more expensive than the dragon scimitar and carries the risk of losing money through charges if the user is [[Death|killed]] in the Wilderness. Moreover, when used with any of the [[Defender|defenders]], the mace's accuracy is slightly inferior to that of the dragon scimitar, as defenders tend to offer greater offensive bonuses for [[Stab bonus|Stab]]/[[Slash bonus|Slash]] than for [[Crush bonus|Crush]].
+The inquisitor's armour set '''significantly''' enhances the accuracy and damage of [[Viggora's chainmace]] by providing a buff to its base Crush and Strength bonus. This amplifies the chainmace's passive 50% boost in accuracy and damage against Wilderness [[Non-player character|NPCs]], particularly when combined with either the [[Salve amulet(ei)|salve amulet]] or the [[Slayer helmet (i)|Slayer helmet]]. This is not advised though as this would be a significant risk.
+|-
+!Wearing [[Inquisitor's armour|Inquisitor's Armour]]
+|-
+| +122 [[Crush bonus|Crush]]<br>+82 [[Strength]]
+|-
+|{{plink|Dragon scimitar}}
+|60 [[Attack]]<br>[[Monkey Madness I]]
+|[[Slash]]
+|All Stats
+| +91 [[Slash]]<br>+72 [[Strength]]
+|{{Coins|{{GEP|Dragon scimitar}}}}
+|This is tied for the best training weapon for all attack styles at level 60 with the Viggora's chainmace. In addition, the dragon scimitar is a '''''much''''' cheaper alternative to all of the weapons listed above, making it very popular even among some high level players. For Attack and Defence training, it should be replaced with the abyssal whip as soon as one can afford and equip it.
+|-
+|{{plink|Dragon sword}}
+|60 [[Attack]]
+|[[Stab weapons|Stab]]
+|All Stats
+| +90 [[Stab]]<br>+69 [[Strength]]
+|{{Coins|{{GEP|Dragon sword}}}}
+|This is comparable to the dragon scimitar in stats, but without the quest requirement of [[Monkey Madness I]].
+|-
+| rowspan="3" |{{plink|Leaf-bladed battleaxe}}
+| rowspan="3" |65 [[Attack]]<br>55 [[Slayer]]
+| rowspan="3" |[[Crush]]
+| rowspan="3" |[[Strength]]
+| +96 [[Slash]]<br>+95 [[Crush]]<br>+98 [[Strength]]
+| rowspan="3" |{{Coins|{{GEP|Leaf-bladed battleaxe}}}}
+| rowspan="3" |This [[Weapon speed|5-tick]] weapon holds the third-highest Strength bonus for single-handed weapons. It is particularly effective against creatures susceptible to [[Crush bonus|Crush]] damage and is only outperformed by the zombie axe within its level category.
+The inquisitor's armour set enhances the [[Crush bonus|Crush style]] attack of the [[leaf-bladed battleaxe]], increasing its power and accuracy '''significantly'''.
+|-
+! Wearing [[Inquisitor's armour|Inquisitor's Armour]]
+|-
+| +127 [[Crush bonus|Crush]]<br>+108 [[Strength]]
+|-
+|{{plink|Dragon longsword}}
+|60 [[Attack]]<br>[[Lost City]]
+|[[Slash]]
+|All Stats
+| +93 [[Slash]]<br>+77 [[Strength]]
+|{{Coins|{{GEP|Dragon longsword}}}}
+|A viable alternate training weapon before being able to use the dragon scimitar since Monkey Madness I is a much longer and harder quest than [[Lost City]]. It should be noted that the [[dragon longsword]] attacks 1 game tick slower than the dragon scimitar, making it less damage per second than the dragon scimitar for training.
+|-}
+
+|-|
+< 60 Attack =
+
+{| class="wikitable"
+|+
+|-
+!Weapon Name
+!Requirements
+!Primary Attack Style
+!Primarily Used to Train
+!Attack & Strength Bonus (No Defender)
+!Price
+!Notes
+|-
+|{{plink|Sulphur blades}}
+|55 [[Attack]]
+|[[Slash]]
+|All Stats
+| +72 [[Slash]]<br>+64 [[Strength]]
+|{{Coins|{{GEP|Sulphur blades}}}}
+|This is the best melee training weapon at 55 Attack, providing the highest Strength bonus before 60 Attack while being fairly cheap.
+|-
+|{{plink|Glacial temotli}}
+|55 [[Attack]]
+|[[Crush]]
+|All Stats
+| +72 [[Crush]]<br>+64 [[Strength]]
+|{{Coins|{{GEP|Glacial temotli}}}}
+|Crush version of the sulphur blades. Has a +2 Prayer bonus, which the blades lack, but is otherwise identical in performance.
+|-
+|{{plink|Earthbound tecpatl}}
+|55 [[Attack]]
+|[[Stab]]
+|All Stats
+| +72 [[Stab]]<br>+64 [[Strength]]
+|{{Coins|{{GEP|Earthbound tecpatl}}}}
+|Stab version of the sulphur blades. Has a +2 Prayer bonus, which the blades lack, but is otherwise identical in performance.
+|-
+|{{plink|Leaf-bladed sword}}
+|50 [[Attack]]<br>55 [[Slayer]]
+|[[Stab]]
+|All Stats
+| +67 [[Stab]]<br>+50 [[Strength]]
+|{{Coins|{{GEP|Leaf-bladed sword}}}}
+|This weapon is the second best option at 50 Attack, behind the [[granite hammer]].
+|-
+|{{plink|Granite hammer}}
+|50 [[Attack]]<br>50 [[Strength]]
+|[[Crush]]
+|All Stats
+| +57 [[Crush]]<br>+56 [[Strength]]
+|{{Coins|{{GEP|Granite hammer}}}}
+|This is the best melee training weapon at 50 Attack and Strength.
+|-
+|{{plink|Brine sabre}}
+|40 [[Attack]]
+|[[Slash]]
+|All Stats
+| +47 [[Slash]]<br>+46 [[Strength]]
+|{{Coins|{{GEP|Brine sabre}}}}
+|A more expensive alternative to the [[rune scimitar]], the [[brine sabre]] boasts 2 additional slash and Strength bonuses, while also possessing a special attack. This makes it a popular training weapon for those who have the money.
+|-
+|{{plink|Rune scimitar}}
+|40 [[Attack]]
+|[[Slash]]
+|All Stats
+| +45 [[Slash]]<br>+44 [[Strength]]
+|{{Coins|{{GEP|Rune scimitar}}}}
+|The prototypical ''RuneScape'' weapon. This is your best bet for a cheap and effective training weapon at this level.
+|-
+|{{plink|Granite longsword}}
+|50 [[Attack]]<br>50 [[Strength]]
+|[[Slash]]
+|All Stats
+| +65 [[Slash]]<br>+62 [[Strength]] 
+|{{Coins|{{GEP|Granite longsword}}}}
+|This weapon attacks slower than the granite hammer, leaf-bladed sword, and rune scimitar, making it usually worse overall.
+|-
+|{{plink|Bryophyta's staff}}
+|30 [[Attack]]
+30 [[Magic]]
+|[[Crush weapons|Crush]]
+|All Stats
+| +40 [[Crush weapons|Crush]]
++50 [[Strength]]
+|{{Coins|{{GEP|Bryophyta's staff (uncharged)}}}}
+|Equivalent to a [[rune longsword]], it is the best choice at 30 Attack.
+|-
+|Other [[Scimitars]]
+|< 40 [[Attack]]
+|[[Slash]]
+|All Stats
+|Varies
+|Varies
+|It is recommended to train with the highest level [[scimitar]] available at your Attack level, before reaching 40 Attack, unless you can wield Bryophyta's staff.
+|}
+</tabber>
+
+==Other equipment options==
+===Obsidian equipment + Berserker necklace===
+Wearing the [[obsidian platebody]], [[obsidian platelegs]], and the [[obsidian helmet]] gives a 10% damage and accuracy bonus to melee [[obsidian weapons]]. Wearing the [[berserker necklace]] also gives another 20% damage bonus to Obsidian weapons. Combining all four of these items with the [[Toktz-xil-ak]] (Obsidian sword) can give faster experience rates than anything in the table above against low-defence monsters, such as those in the [[Nightmare Zone]]. However, the set has below-average Defence and does not allow the use of a [[Slayer helmet]]. If the player cannot use all five items, they should not be using the [[Toktz-xil-ak]].
+===Void knight equipment===
+Wearing the [[Void melee helm]] with the full [[Void Knight equipment]] set gives a 10% melee damage and accuracy bonus. This bonus accuracy makes it good against certain high-defence monsters like the [[Corporeal Beast]]. It is a good alternative for players with 42 combat stats who do not have access to high-Strength gear. However, this set gives less Strength than other melee equipment and has significantly lower melee and ranged Defence, making it usually worse for training than high-strength gear.
+===Dharok the Wretched's equipment===
+Wearing a full set of [[Dharok the Wretched's equipment]] gives the set effect of increasing the player's damage the lower their remaining Hitpoints are. Using a [[dwarven rock cake]] or [[locator orb]] the player can intentionally keep their health at 1 hp while using [[protection prayers]] to block all forms of damage. If the player has a source of Prayer or damage block, such as by using [[Prayer potions]], [[absorption]]s (Nightmare Zone only), or an altar, the player can safely use the set's effect to deal very high amounts of damage and gain fast experience. However, the set degrades after 15 hours of use and must be repaired to keep its stats.
+===Guthan the Infested's equipment===
+Wearing a full set of [[Guthan the Infested's equipment]] gives the set effect of a 25% chance to heal the player by the damage dealt. This set deals less damage than some of the best options on the list, but it allows players to train for long periods without banking to heal. Players can bring the four pieces in their inventory, train on their normal high-strength equipment, and switch to the Guthan's equipment only when their health gets low. Popular monsters for this tactic are [[gargoyle]]s, [[nechryael]], and [[Bandit (Bandit Camp)|bandits]]. However, the set degrades after 15 hours of use and must be repaired to keep its stats.
+
+{{Training guides}}
+[[Category:Members]]

@@ -1,0 +1,107 @@
+{{External|rs=Rune Mysteries (historical)|dw}}
+{{Has quick guide}}
+{{Infobox Quest
+|name = Rune Mysteries
+|number = 51
+|image = [[File:Rune Mysteries.png|300px]]
+|release = [[29 March]] [[2004]]
+|update = RS2 Launched!
+|members = No
+|series = [[Quests/Series#Order of Wizards|Order of Wizards]], #1
+|developer = {{RSL|Mod James|James B}}
+}}
+'''Rune Mysteries''' is a novice level [[Free-to-play]] [[quest]], and a requirement for mining [[rune essence]] within the [[Rune essence mine]] or using [[lamps]] and [[book of knowledge|books]] on [[runecraft]].
+
+==Details==
+{{Quest details
+|description = After the first [[Wizards' Tower]] burned down a hundred years ago, the incantation allowing teleportation to the [[rune essence mine]] was lost. However, after much research from the [[Order of Wizards]], the incantation is on the verge of rediscovery...
+|start = Speak to [[Duke Horacio]] on the {{FloorNumber|uk=1}} of [[Lumbridge Castle]].
+|startmap = 3210,3222,plane:1
+|difficulty = Novice
+|length = Short
+|requirements = 
+|items = None
+|recommended = *Fast travel to several locations
+**[[Lumbridge]] to start the quest - [[Lumbridge Teleport]] or [[Lumbridge Home Teleport]]
+**[[Varrock]] (1 trip) - [[Varrock teleport]] or [[Chronicle]] or [[Skills necklace]] to [[Cooks' Guild]] ''([[Members only]])'' or [[Ring of wealth]] to [[Grand Exchange]] ''(Members only)''
+**[[Wizard's Tower]] (2 trips) - [[Necklace of passage]] or [[Amulet of the eye]] or [[Amulet of glory]] to [[Draynor Village]] ''(All Members only)''
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Varlamore}} {{okay}} will auto-complete the quest
+</poem>
+}}
+
+==Walkthrough==
+[[File:Duke Horacio chathead.png|left]]
+Talk to [[Duke Horacio]] on the {{FloorNumber|uk=1}} of [[Lumbridge Castle]], and ask if he has any quests to give out. He will explain that although he himself has no tasks for the player, he did find a strange talisman. Curious about its origin, he will give you an [[air talisman]] and ask you to bring it to the arch mage of the [[Wizards' Tower]].
+
+:'''Tip''': Multiple [[Air talisman|air talismans]] can be obtained by using the [[drop trick]] at [[Duke Horacio]]. This may be useful for early runecraft training methods. For details, see [[Money making guide/Collecting air talismans|this guide]].''
+
+Go to the Wizards' Tower found south of [[Draynor Village]], and descend the ladder into the basement to talk to [[Archmage Sedridor]]. He will take your air talisman and give you a [[research package]] to deliver to [[Aubury]] in [[Varrock]].
+
+Aubury is located south of [[Varrock east bank|Varrock's east bank]], inside of [[Aubury's Rune Shop|his rune shop]]. Talk to Aubury, and he will give you some [[Notes (Rune Mysteries)|notes]] to deliver back to Wizard Sedridor. He will also offer the player a cup of tea, which will completely restore [[energy|run energy]] if accepted.
+
+Make your way back to the [[Wizards' Tower]], and talk to [[Archmage Sedridor]] once more. He will give you back your air talisman and explain the basics of [[Runecraft]].
+
+'''Congratulations, quest complete!'''
+
+==Rewards==
+{{Quest rewards
+|name = Rune Mysteries
+|image = [[File:Rune Mysteries reward scroll.png|centre]]
+|qp = 1
+|rewards =
+*The ability to mine [[rune essence]]
+*An [[air talisman]]
+*The ability to use [[lamp]]s and [[Book of Knowledge|books of knowledge]] from [[random events]] on [[Runecraft]]
+*Completing this quest awards the player with 5 [[Kudos]] which can be claimed by talking to [[Historian Minas]] in the [[Varrock Museum]].
+}}
+
+==Required for completing==
+Completion of Rune Mysteries is required for the following:
+*[[Enter the Abyss]]
+*[[Lunar Diplomacy]]
+*[[One Small Favour]]
+*[[The Lost Tribe]]
+*[[What Lies Below]]
+*[[Easy Ardougne Diary]] - ''Have Wizard Cromperty teleport you to the Rune essence mine.''
+*[[Easy Lumbridge & Draynor Diary]] - ''Have Archmage Sedridor teleport you to the Rune essence mine.''
+*[[Easy Varrock Diary]] - ''Have Aubury teleport you to the Essence mine.''
+
+==Transcript==
+{{Hastranscript|quest}} 
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 14 January 2026
+|update = New Player Improvements Round 2
+|change = The quest's journal entry was updated to make it more intuitive.
+}}
+{{Subject changes
+|date = 23 March 2022
+|update = Guardians of the Rift Launch
+|change = Dialogue pertaining to the quest was rewritten to flow better and be consistent with established lore. The quest now focuses on rediscovering the essence mine rather than runecrafting as a whole.
+}}
+{{Subject changes
+|date = 11 November 2020
+|update = The Nightmare and Chambers of Xeric QoL
+|change = The wording in the quest reward scroll was changed from "Runecrafting skill" to "Rune Essence Mine Access" to more accurately reflect the existing quest rewards.
+}}
+{{Subject changes
+|date = 16 January 2007
+|update = Interfaces and spooky wallpapers
+|change = The quest was renamed from "Rune Mysteries Quest" to "Rune Mysteries".
+}}
+{{Subject changes
+|date = 29 March 2004
+|update = RS2 Launched!
+|change = The quest became permanently available with the launch of ''RuneScape 2''.
+}}
+{{Subject changes
+|date = 1 December 2003
+|update = RuneScape 2 Beta is Here!
+|change = The quest was added to the ''RuneScape 2'' Beta.
+}}
+{{Subject changes footer}}
+
+{{Rune Mysteries}}

@@ -1,0 +1,1215 @@
+{{External|rs|rsc|dw}}
+{{Otheruses|the [[strongest]] class of monsters}}
+
+[[File:Boss.png|right|150px]]
+A '''boss''' is a powerful, usually unique [[monster]] that is fought to accomplish an objective, be it the advancement or completion of a [[quest]] or [[minigame]], or as part of a team [[player-versus-monster]] event. Many quests feature boss fights at their climaxes; such bosses are often the main antagonists of the quests or quest series, or are somehow related to the main antagonist(s). Some monsters that are commonly referred to as bosses are very powerful monsters that reside in [[multi-combat area]]s; these monsters are commonly fought by teams of players in search of highly valuable [[drops]]. Many bosses have extremely high [[combat level]]s, and most of the [[strongest monsters]] in the game are bosses. With the exception of [[Bryophyta]], [[Obor]], and [[Brutus]], bosses are exclusive to [[members]].
+
+[[Dwarf multicannons]] often cannot be set up in the areas of many bosses, and many are immune or resistant to other effects, such as [[freeze]] and [[poison]]. Others may have different restrictions; for example, [[Prayer]] cannot be used during the fights with the final bosses of [[Recipe for Disaster]]. Most bosses (e.g. bosses like the [[Corporeal Beast]]) also reside in a multi-way area; very few reside in [[single-way]] areas or instances.
+
+Excluding minigame and quest bosses, each boss has its own [[HiScores|hiscore table]], tracking the players with the most kills, or raid completions in the case of raid bosses. Each of these bosses (or raids) also has its own set of [[combat achievements]] and, with the exception of the [[Gemstone Crab]], each one also has unique drops in the [[collection log]]. Most bosses will generate a message upon kill telling the player what drop(s) they have obtained. For example, if players are at [[General Graardor]] and kill him (and drops [[Bandos tassets]]), a message will appear in the game box saying "Player name received item: Bandos tassets".
+
+In raids, when a unique drop is rolled, the corresponding chest will glow purple as an indicator that a unique drop was given.
+
+More recent bosses in the game, such as the post-quest versions of [[The Forgotten Four]], [[Araxxor]], and [[Yama]] will play a special [[sound effect]] when a unique drop is awarded. This uses the same sound, apart from Yama's tradeable uniques, which utilises a deeper-sounding version of the former. Additionally, newer bosses have been more resistant to stat-draining effects; some bosses can absorb stat drains, while others will have a cap in which only a specific amount of levels can be drained.
+
+==List of bosses==
+===World bosses===
+World bosses spawn across [[Gielinor]] either out in the open or in their lairs. World bosses are defined as bosses which spawn naturally, on their own, and can be killed at any time, as opposed to instanced bosses which spawn only in private lairs based on the actions of the player to whom the instance belongs. Some world bosses may, however, be killed in private instances for a price. Some world bosses, namely the [[Barrows brothers]] and [[God Wars Dungeon]] generals, also have additional requirements and mechanics related to finding and killing them. In the case of the Barrows brothers, they do not drop [[loot]] directly, but their defeat instead contributes to a single [[Chest (Barrows)|reward]].
+
+{| class="wikitable sortable mw-collapsible"
+!colspan=2 |Boss
+!Level
+!Hitpoints
+!Attack style(s)
+!Location
+!Solo only
+!Requirements
+!Collection log
+|-
+|[[Ahrim the Blighted]]
+|[[File:Ahrim the Blighted.png|center|150x150px]]
+|98
+|100
+|{{SCP|Magic|link=yes}}
+|[[Barrows]]
+|Yes
+|{{SCP|Quest}} [[Priest in Peril]]
+|{{plink|Ahrim's hood}}<br/>{{plink|Ahrim's robetop}}<br/>{{plink|Ahrim's robeskirt}}<br/>{{plink|Ahrim's staff}}<br/>{{plink|Bolt rack}}
+|-
+|[[Karil the Tainted]]
+|[[File:Karil the Tainted.png|center|150x150px]]
+|98
+|100
+|{{SCP|Ranged|link=yes}}
+|[[Barrows]]
+|Yes
+|{{SCP|Quest}} [[Priest in Peril]]
+|{{plink|Karil's coif}}<br/>{{plink|Karil's leathertop}}<br/>{{plink|Karil's leatherskirt}}<br/>{{plink|Karil's crossbow}}<br/>{{plink|Bolt rack}}
+|-
+|[[Dharok the Wretched]]
+|[[File:Dharok the Wretched.png|center|150x150px]]
+|115
+|100
+|{{SCP|Attack}} [[Melee]] (slash)
+|[[Barrows]]
+|Yes
+|{{SCP|Quest}} [[Priest in Peril]]
+|{{plink|Dharok's helm}}<br/>{{plink|Dharok's platebody}}<br/>{{plink|Dharok's platelegs}}<br/>{{plink|Dharok's greataxe}}<br/>{{plink|Bolt rack}}
+|-
+|[[Guthan the Infested]]
+|[[File:Guthan the Infested.png|center|150x150px]]
+|115
+|100
+|{{SCP|Attack}} [[Melee]] (crush)
+|[[Barrows]]
+|Yes
+|{{SCP|Quest}} [[Priest in Peril]]
+|{{plink|Guthan's helm}}<br/>{{plink|Guthan's platebody}}<br/>{{plink|Guthan's chainskirt}}<br/>{{plink|Guthan's warspear}}<br/>{{plink|Bolt rack}}
+|-
+|[[Torag the Corrupted]]
+|[[File:Torag the Corrupted.png|center|150x150px]]
+|115
+|100
+|{{SCP|Attack}} [[Melee]] (crush)
+|[[Barrows]]
+|Yes
+|{{SCP|Quest}} [[Priest in Peril]]
+|{{plink|Torag's helm}}<br/>{{plink|Torag's platebody}}<br/>{{plink|Torag's platelegs}}<br/>{{plink|Torag's hammers}}<br/>{{plink|Bolt rack}}
+|-
+|[[Verac the Defiled]]
+|[[File:Verac the Defiled.png|center|150x150px]]
+|115
+|100
+|{{SCP|Attack}} [[Melee]] (stab)
+|[[Barrows]]
+|Yes
+|{{SCP|Quest}} [[Priest in Peril]]
+|{{plink|Verac's helm}}<br/>{{plink|Verac's brassard}}<br/>{{plink|Verac's plateskirt}}<br/>{{plink|Verac's flail}}<br/>{{plink|Bolt rack}}
+|-
+|[[Gemstone Crab]]
+|[[File:Gemstone_Crab.png|center|150x150px]]
+|160
+|∞
+|{{SCP|Attack}} [[Melee]] (crush)
+|[[Tlati Rainforest]]
+|No
+|{{SCP|Quest}} [[Children of the Sun]]
+|{{NA}}
+|-
+|[[Scurrius]]
+|[[File:Scurrius.png|center|150x150px]]
+|200 (Solo)<br/>250 (Group)
+|500 (Solo)<br/>1,500 (Group)
+|{{SCP|Attack}} [[Melee]]<br/>{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|[[Varrock Sewers]]<br/>(Optionally instanced)
+|No
+|{{NA}}
+|{{plink|Scurrius' spine}}<br />{{plink|Scurry}}
+|-
+|[[Giant Mole]]
+|[[File:Giant Mole.png|center|150x150px]]
+|230
+|200
+|{{SCP|Attack}} [[Melee]] (crush)
+|[[Falador Park]]<br/>(Optionally instanced)
+|No
+|{{plink|Light source|pic=Bullseye lantern (lit)}}<br />{{plink|Spade}}
+|{{plink|Baby mole}}<br />{{Plink|Immaculate mole skin}}<br />{{plink|Mole skin}}<br />{{plink|Mole claw}}
+|-
+|[[Deranged Archaeologist]]
+|[[File:Deranged archaeologist.png|center|150x150px]]
+|276
+|200
+|{{SCP|Attack}} [[Melee]]<br/>{{SCP|Ranged|link=yes}}
+|[[Tar Swamp]]
+|Yes
+|{{SCP|Quest}} [[Bone Voyage]]
+|{{plink|Steel ring}}
+|-
+|[[Dagannoth Supreme]]
+|[[File:Dagannoth Supreme.png|center|150x150px]]
+|303
+|255
+|{{SCP|Ranged|link=yes}}
+|[[Waterbirth Island Dungeon]]
+|No
+|Another player, or<br/>{{plink|Pet rock}} and<br/>{{plink|Rune thrownaxe}}, or<br/>{{SCP|Agility|85|link=yes}}
+|{{plink|Pet dagannoth supreme}}<br />{{plink|Archers ring}}<br />{{plink|Dragon axe}}<br />{{plink|Seercull}}
+|-
+|[[Dagannoth Rex]]
+|[[File:Dagannoth Rex.png|center|150x150px]]
+|303
+|255
+|{{SCP|Attack}} [[Melee]] (slash)
+|[[Waterbirth Island Dungeon]]
+|No
+|Another player, or<br/>{{plink|Pet rock}} and<br/>{{plink|Rune thrownaxe}}, or<br/>{{SCP|Agility|85|link=yes}}
+|{{plink|Pet dagannoth rex}}<br />{{plink|Berserker ring}}<br />{{plink|Warrior ring}}<br />{{plink|Dragon axe}}
+|-
+|[[Dagannoth Prime]]
+|[[File:Dagannoth Prime.png|center|150x150px]]
+|303
+|255
+|{{SCP|Magic|link=yes}}
+|[[Waterbirth Island Dungeon]]
+|No
+|Another player, or<br/>{{plink|Pet rock}} and<br/>{{plink|Rune thrownaxe}}, or<br/>{{SCP|Agility|85|link=yes}}
+|{{plink|Pet dagannoth prime}}<br />{{plink|Seers ring}}<br />{{plink|Dragon axe}}<br />{{plink|Mud battlestaff}}
+|-
+|[[Sarachnis]]
+|[[File:Sarachnis.png|center|150x150px]]
+|318
+|400
+|{{SCP|Attack}} [[Melee]]<br/>{{SCP|Ranged|link=yes}}
+|[[Forthos Dungeon]]<br/>(Optionally instanced)
+|No
+|{{plink|Slash weapon|pic=Wilderness sword 4}} or<br/>{{plink|Knife}} or<br/>{{plink|Aranea boots}}
+|{{plink|Sraracha}}<br />{{plink|Jar of eyes}}<br />{{plink|Giant egg sac|pic=Giant egg sac(full)}}<br/>{{plink|Sarachnis cudgel}}<br/>{{plink|Pristine spider silk}}
+|-
+|[[Blood Moon]]
+|[[File:Blood Moon.png|center|150x150px]]
+|329
+|500
+|{{SCP|Attack}} [[Melee]] ([[Typeless]] slash)
+|[[Neypotzli]]<br/>(Publicly instanced)
+|Yes{{efn|name=Solo Moons|The Moons of Peril are defeated based on an individual's performance and is not impacted by other players, even when a group of players are attacking the boss together.}}
+|{{SCP|Quest}} [[Perilous Moons]]
+|{{plink|Blood moon helm}}<br />{{plink|Blood moon chestplate}}<br />{{plink|Blood moon tassets}}<br />{{plink|Dual macuahuitl}}<br />{{plink|Atlatl dart}}
+|-
+|[[Blue Moon]]
+|[[File:Blue Moon.png|center|150x150px]]
+|329
+|500
+|{{SCP|Attack}} [[Melee]] ([[Typeless]] slash)
+|[[Neypotzli]]<br/>(Publicly instanced)
+|Yes{{efn|name=Solo Moons}}
+|{{SCP|Quest}} [[Perilous Moons]]
+|{{plink|Blue moon helm}}<br />{{plink|Blue moon chestplate}}<br />{{plink|Blue moon tassets}}<br />{{plink|Blue moon spear}}<br />{{plink|Atlatl dart}}
+|-
+|[[Eclipse Moon]]
+|[[File:Eclipse Moon.png|center|150x150px]]
+|329
+|500
+|{{SCP|Attack}} [[Melee]] ([[Typeless]] slash)
+|[[Neypotzli]]<br/>(Publicly instanced)
+|Yes{{efn|name=Solo Moons}}
+|{{SCP|Quest}} [[Perilous Moons]]
+|{{plink|Eclipse moon helm}}<br />{{plink|Eclipse moon chestplate}}<br />{{plink|Eclipse moon tassets}}<br />{{plink|Eclipse atlatl}}<br />{{plink|Atlatl dart}}
+|-
+|[[Kalphite Queen]]
+|[[File:Kalphite Queen.png|center|150x150px]]
+|333
+|255 (x2)
+|{{SCP|Attack}} [[Melee]] (stab)<br/>{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|[[Kalphite Lair]]
+|No
+|{{plink|Rope}} (x2) or<br/>{{SCP|diary}} [[Desert Diary|Hard Desert Diary]]
+|{{plink|Kalphite princess}}<br/>{{plink|Kq head}}<br />{{plink|Jar of sand}}<br />{{plink|Dragon 2h sword}}<br />{{plink|Dragon chainbody}}<br />{{plink|Dragon pickaxe}}
+|-
+|[[Kree'arra]]
+|[[File:Kree'arra.png|center|150x150px]]
+|580
+|255
+|{{SCP|Attack}} [[Melee]]<br/>{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|[[God Wars Dungeon]]<br/>(Optionally instanced)
+|No
+|{{SCP|Ranged|70|link=yes}}<br/>{{plink|Mith grapple}}
+|{{plink|Pet kree'arra}}<br/>{{plink|Armadyl helmet}}<br />{{plink|Armadyl chestplate}}<br />{{plink|Armadyl chainskirt}}<br />{{plink|Armadyl hilt}}<br />{{plink|Godsword shard|pic=Godsword shard 1}}s
+|-
+|[[Commander Zilyana]]
+|[[File:Commander Zilyana.png|center|150x150px]]
+|596
+|255
+|{{SCP|Attack}} [[Melee]] (crush)<br/>{{SCP|Magic|link=yes}}
+|[[God Wars Dungeon]]<br/>(Optionally instanced)
+|No
+|style="white-space:nowrap"|{{SCP|Agility|70|link=yes}}<br/>{{plink|Rope}} (x2) (first time only)
+|{{plink|Pet zilyana}}<br/>{{plink|Armadyl crossbow}}<br />{{plink|Saradomin hilt}}<br />{{plink|Saradomin sword}}<br />{{plink|Saradomin's light}}<br />{{plink|Godsword shard|pic=Godsword shard 1}}s
+|-
+|[[General Graardor]]
+|[[File:General Graardor.png|center|150x150px]]
+|624
+|255
+|{{SCP|Attack}} [[Melee]] (crush)<br/>{{SCP|Ranged|link=yes}}
+|[[God Wars Dungeon]]<br/>(Optionally instanced)
+|No
+|{{SCP|Strength|70|link=yes}}<br/>{{plink|Hammer}} or<br/>{{plink|Dragon warhammer}} or <br/>{{plink|Elder maul}}
+|{{plink|Pet general graardor}}<br/>{{plink|Bandos chestplate}}<br />{{plink|Bandos tassets}}<br />{{plink|Bandos boots}}<br />{{plink|Bandos hilt}}<br />{{plink|Godsword shard|pic=Godsword shard 1}}s
+|-
+|[[K'ril Tsutsaroth]]
+|[[File:K'ril Tsutsaroth.png|center|150x150px]]
+|650
+|255
+|{{SCP|Attack}} [[Melee]] (crush)<br/>{{SCP|Magic|link=yes}}
+|[[God Wars Dungeon]]<br/>(Optionally instanced)
+|No
+|{{SCP|Hitpoints|70|link=yes}}
+|{{plink|Pet k'ril tsutsaroth}}<br/>{{plink|Staff of the dead}}<br />{{plink|Zamorakian spear}}<br />{{plink|Steam battlestaff}}<br />{{plink|Zamorak hilt}}<br />{{plink|Godsword shard|pic=Godsword shard 1}}s
+|-
+|[[The Hueycoatl]]
+|[[File:The_Hueycoatl.png|center|150x150px]]
+|642
+|2500
+|{{SCP|Attack}} [[Melee]]<br/>{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|[[Darkfrost]]<br/>(Optionally instanced)
+|No
+|{{SCP|Quest}} [[Children of the Sun]]
+|{{Plink|Huberte}}<br />{{plink|Dragon hunter wand}}<br />{{plink|Hueycoatl hide}}<br />{{plink|Tome of earth (empty)}}<br />{{plink|Soiled page}}<br />{{plink|Huasca seed}}
+|-
+|[[Corporeal Beast]]
+|[[File:Corporeal_Beast.png|center|150x150px]]
+|785
+|2000
+|{{SCP|Attack}} [[Melee]] (crush)<br/>{{SCP|Magic|link=yes}}
+|[[Corporeal Beast Lair]]<br/>(Optionally instanced)
+|No
+|{{NA}}
+|{{plink|Pet dark core}}<br />{{plink|Elysian sigil}}<br />{{plink|Spectral sigil}}<br />{{plink|Arcane sigil}}<br />{{plink|Holy elixir}}<br />{{plink|Spirit shield}}<br />{{Plink|Jar of spirits}}
+|-
+|[[Nex]]
+|[[File:Nex.png|center|150x150px]]
+|1001
+|3400
+|{{SCP|Attack}} [[Melee]] (crush)<br/>{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|[[God Wars Dungeon]]<br/>(Publicly instanced)
+|No
+|{{SCP|Quest}} [[The Frozen Door]]
+|style="white-space:nowrap"|{{plink|Nexling}}<br/>{{plink|Ancient hilt}}<br />{{plink|Nihil horn}}<br />{{plink|Zaryte vambraces}}<br />{{plink|Torva full helm (damaged)}}<br />{{plink|Torva platebody (damaged)}}<br />{{plink|Torva platelegs (damaged)}}<br/>{{plink|Nihil shard}}
+|}
+
+====Wilderness bosses====
+The following world bosses are specifically located within the [[Wilderness]], where players may attack each other. The one exception is the King Black Dragon: his lair, where the fight takes place, is not located in the Wilderness, but it can only be accessed through the Wilderness, and is thus still considered risky.
+
+{| class="wikitable sortable mw-collapsible"
+!colspan=2 |Boss
+!Level
+!Hitpoints
+!Attack style(s)
+!Location
+!Collection log
+|-
+|[[Chaos Fanatic]]
+|[[File:Chaos Fanatic.png|centre|150x150px]]
+|202
+|225
+|{{SCP|Magic|link=yes}}
+|West of the [[Lava Maze]]
+|{{plink|Pet chaos elemental}}<br />{{plink|Odium shard 1}}<br/>{{plink|Malediction shard 1}}
+|-
+|[[Crazy archaeologist]]
+|[[File:Crazy archaeologist.png|centre|150x150px]]
+|204
+|225
+|{{SCP|Attack}} [[Melee]] (crush)<br/>{{SCP|Ranged|link=yes}}
+|[[Ruins (west)|Dareeyak ruins]]
+|{{plink|Odium shard 2}}<br />{{plink|Malediction shard 2}}<br />{{plink|Fedora}}
+|-
+|[[Scorpia]]
+|[[File:Scorpia.png|centre|150x150px]]
+|225
+|200
+|{{SCP|Attack}} [[Melee]] (crush)
+|[[Scorpion Pit]]
+|{{plink|Scorpia's offspring}}<br />{{plink|Odium shard 3}}<br/>{{plink|Malediction shard 3}}<br />{{plink|Dragon 2h sword}}
+|-
+|[[King Black Dragon]]
+|[[File:King Black Dragon.png|centre|150x150px]]
+|276
+|255
+|{{SCP|Attack}} [[Melee]] (stab)<br/>[[File:Fire Surge.png]] [[Dragonfire]] (long-ranged)
+|[[King Black Dragon Lair]]<br/>(Optionally instanced)
+|{{plink|Prince black dragon}}<br />{{plink|Kbd heads}}<br />{{plink|Dragon pickaxe}}<br />{{plink|Draconic visage}}
+|-
+|[[Chaos Elemental]]
+|[[File:Chaos Elemental.png|centre|150x150px]]
+|305
+|250
+|{{SCP|Attack}} [[Melee]] (crush)<br/>{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|West of the [[Rogues' Castle]]
+|{{plink|Pet chaos elemental}}<br />{{plink|Dragon pickaxe}}<br />{{plink|Dragon 2h sword}}
+|-
+|[[Revenant maledictus]]
+|[[File:Revenant maledictus.png|centre|150x150px]]
+|397
+|1250
+|{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|[[Revenant Caves]]
+|{{plink|Amulet of avarice}}<br/>{{plink|Craw's bow (u)}}<br/>{{plink|Thammaron's sceptre (u)}}<br/>{{plink|Viggora's chainmace (u)}}<br/>{{plink|Ancient crystal}}<br/>{{plink|Ancient relic|txt=Ancient statuettes}}
+|-
+|[[Calvar'ion]] &<br/>[[Vet'ion]]
+|[[File:Calvar'ion.png|centre|150x150px]]
+|264 (Calvar'ion)<br/>454 (Vet'ion)
+|150 (Calvar'ion)<br/>255 (Vet'ion)
+|{{SCP|Attack}} [[Melee]] (slash)<br/>{{SCP|Magic|link=yes}} 
+|[[Skeletal Tomb]] (Calvar'ion, with {{SCP|diary}} [[Wilderness Hard Diary]])<br/>[[Vet'ion's Rest]] (Vet'ion, with {{SCP|diary}} [[Wilderness Medium Diary]])
+|{{plink|Vet'ion jr.}}<br/>{{plink|Ring of the gods}}<br/>{{plink|Dragon pickaxe}}<br/>{{plink|Dragon 2h sword}}<br/>{{plink|Skull of vet'ion}}<br/>{{plink|Voidwaker blade}}
+|-
+|[[Spindel]] &<br/>[[Venenatis]]
+|[[File:Spindel.png|centre|150x150px]]
+|302 (Spindel)<br/>464 (Venenatis)
+|515 (Spindel)<br/>850 (Venenatis)
+|{{SCP|Attack}} [[Melee]] (stab)<br/>{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|[[Web Chasm]] (Spindel, with {{SCP|diary}} [[Wilderness Hard Diary]])<br/>[[Silk Chasm]] (Venenatis, with {{SCP|diary}} [[Wilderness Medium Diary]])
+|{{plink|Venenatis spiderling}}<br/>{{plink|Treasonous ring}}<br/>{{plink|Dragon pickaxe}}<br/>{{plink|Dragon 2h sword}}<br/>{{plink|Fangs of venenatis}}<br/>{{plink|Voidwaker gem}}
+|-
+|[[Artio]] &<br/>[[Callisto]]
+|[[File:Artio.png|centre|150x150px]]
+|320 (Artio)<br/>470 (Callisto)
+|450 (Artio)<br/>1000 (Callisto)
+|{{SCP|Attack}} [[Melee]] (crush)<br/>{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|[[Hunter's End]] (Artio, with {{SCP|diary}} [[Wilderness Hard Diary]])<br/>[[Callisto's Den]] (Callisto, with {{SCP|diary}} [[Wilderness Medium Diary]])
+|{{plink|Callisto cub}}<br/>{{plink|Tyrannical ring}}<br/>{{plink|Dragon pickaxe}}<br/>{{plink|Dragon 2h sword}}<br/>{{plink|Claws of callisto}}<br/>{{plink|Voidwaker hilt}}
+|}
+
+===Instanced bosses===
+As opposed to world bosses, instanced bosses are fought in their own arena. They are generally fought alone, with the exceptions of [[The Nightmare]], which is a group instanced boss, and the [[Royal Titans]] and [[Yama]], which are duo instanced bosses. Spawning instanced bosses either requires an action ([[Zulrah]], [[Vorkath]], and [[Yama]]), while others simply spawn upon entering the instance ([[Brutus]], [[Obor]], [[Bryophyta]], [[Amoxliatl]], [[Royal Titans]], [[Phantom Muspah]], [[Doom of Mokhaiotl]], and both forms of the Nightmare).
+
+{| class="wikitable sortable mw-collapsible"
+!colspan=2 |Boss
+!Level
+!Hitpoints
+!Attack style(s)
+!Location
+!Requirements
+!Collection log
+|-
+|[[Brutus]] &<br/>[[Demonic Brutus]]
+|[[File:Brutus.png|centre|150x150px]]
+|30<br/>1224 (demonic)
+|58<br/>750 (demonic)
+|{{SCP|Attack}} [[Melee]] (crush)
+|[[Lumbridge cow field]]
+|{{SCP|Quest}} [[The Ides of Milk]]<br/>{{SCP|Quest}} [[Desert Treasure II]] (demonic)
+|{{plink|Beef}}<br />{{plink|Mooleta}}<br />{{plink|Bottomless milk bucket (empty)}}<br/>{{Plink|Cow slippers}}
+|-
+|[[Obor]]
+|[[File:Obor.png|centre|150x150px]]
+|106
+|120
+|{{SCP|Attack}} [[Melee]] (crush)<br/>{{SCP|Ranged|link=yes}}
+|[[Edgeville Dungeon]]
+|{{plink|Giant key}} (first time only)
+|{{plink|Hill giant club}}
+|-
+|[[Bryophyta]]
+|[[File:Bryophyta.png|centre|150x150px]]
+|128
+|115
+|{{SCP|Attack}} [[Melee]] (crush)<br/>{{SCP|Magic|link=yes}}
+|[[Varrock Sewers]]
+|{{plink|Mossy key}} (first time only)
+|{{plink|Bryophyta's essence}}
+|-
+|[[Amoxliatl]]
+|[[File:Amoxliatl.png|center|150x150px]]
+|263
+|520
+|{{SCP|Magic|link=yes}}
+|[[Ruins of Tapoyauik]]
+|{{SCP|Quest}} [[The Heart of Darkness]]
+|{{plink|Moxi}}<br />{{plink|Glacial temotli}}<br />{{plink|Pendant of ates (inert)}}<br/>{{Plink|Frozen tear}}
+|-
+|[[Royal Titans]]
+|[[File:Branda the Fire Queen.png|center|150x150px]]<br/>[[File:Eldric the Ice King.png|center|150x150px]]
+|350
+|600 (each)
+|{{SCP|Attack}} [[Melee]] (crush)
+|[[Asgarnian Ice Dungeon]]
+|{{NA}}
+|{{plink|Bran}}<br/>{{plink|Deadeye prayer scroll}}<br/>{{plink|Mystic vigour prayer scroll}}<br/>{{plink|Fire element staff crown}}<br/>{{plink|Ice element staff crown}}<br/>{{plink|Giantsoul amulet}}<br/>{{plink|Desiccated page}}
+|-
+|[[Doom of Mokhaiotl]]
+|[[File:Doom_of_Mokhaiotl.png|center|150x150px]]
+|558 (Delve 1) 
+|525 (Delve 1) 
+|{{SCP|Attack}} [[Melee]]<br/>{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|[[Ruins of Mokhaiotl]]
+|{{SCP|Quest}} [[The Final Dawn]]
+|{{plink|Dom}}<br/>{{plink|Avernic treads}}<br/>{{plink|Eye of ayak (uncharged)}}<br/>{{plink|Mokhaiotl cloth}}<br/>{{plink|Mokhaiotl waystone}}<br/>{{plink|Demon tear}}
+|-
+|[[Zulrah]]
+|[[File:Zulrah (serpentine).png|center|155x155px]]
+|725
+|500
+|{{SCP|Attack}} [[Melee]] ([[Typeless]])<br/>{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|[[Zul-Andra]]
+|{{SCP|Quest}} [[Regicide]]
+|{{plink|Pet snakeling}}<br />{{plink|Tanzanite mutagen}}<br />{{plink|Magma mutagen}}<br/>{{Plink|Jar of swamp}}<br />{{plink|Magic fang}}<br />{{plink|Serpentine visage}}<br />{{plink|Tanzanite fang}}<br />{{plink|Zul-andra teleport}}<br />{{plink|Uncut onyx}}<br />{{plink|Zulrah's scales}}
+|-
+|[[Vorkath]]
+|[[File:Vorkath.png|center|190x190px]]
+|732
+|750
+|{{SCP|Attack}} [[Melee]] (slash)<br/>{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}<br/>[[File:Fire Surge.png]] [[Dragonfire]] (long-ranged)
+|[[Ungael]]
+|{{SCP|Quest}} [[Dragon Slayer II]]
+|{{plink|Vorki}}<br />{{plink|Vorkath's head}}<br/>{{plink|Draconic visage}}<br />{{plink|Skeletal visage}}<br />{{Plink|Jar of decay}}<br />{{plink|Dragonbone necklace}}
+|-
+|[[Phantom Muspah]]
+|[[File:Phantom Muspah (ranged).png|center|150x150px]]
+|741
+|850
+|{{SCP|Attack}} [[Melee]] (stab)<br/>{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|[[Ghorrock Dungeon]]
+|{{SCP|Quest}} [[Secrets of the North]]
+|{{plink|Muphin|pic=Muphin (ranged)}}<br/>{{plink|Venator shard}}<br/>{{plink|Ancient icon}}<br/>{{plink|Charged ice}}<br/>{{plink|Frozen cache}}<br/>{{plink|Ancient essence}}
+|-
+|[[The Nightmare]] &<br/>[[Phosani's Nightmare]]
+|[[File:The Nightmare.png|center|150x150px]]
+|814<br/>1024 (Phosani's)
+|2400<br/>3200 (Phosani's)
+|{{SCP|Attack}} [[Melee]] (slash)<br/>{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|[[Sisterhood Sanctuary]]
+|{{SCP|Quest}} [[Priest in Peril]]
+|style="white-space:nowrap"|{{plink|Little nightmare}}<br />{{plink|Inquisitor's mace}}<br/>{{plink|Inquisitor's great helm}}<br />{{plink|Inquisitor's hauberk}}<br />{{plink|Inquisitor's plateskirt}}<br />{{plink|Nightmare staff}}<br />{{plink|Volatile orb}}<br />{{plink|Harmonised orb}}<br />{{plink|Eldritch orb}}<br />{{plink|Jar of dreams}}<br />{{plink|Slepey tablet}} (Phosani's only)<br />{{plink|Parasitic egg}} (Phosani's only)
+|-
+|[[Yama]]
+|[[File:Yama.png|center|155x155px]]
+|1238 (base)<br/>1423 (contract)
+|2500 <br/> 2875 ([[Contract of glyphic attenuation]]) <br/> 3000 ([[Contract of bloodied blows]])
+|{{SCP|Attack}} [[Melee]] (slash)<br/>{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|[[Chasm of Fire]]
+|{{SCP|Quest}} [[A Kingdom Divided]]
+|style="white-space:nowrap"|{{plink|Yami}}<br />{{plink|Soulflame horn}}<br/>{{plink|Oathplate helm}}<br />{{plink|Oathplate chest}}<br />{{plink|Oathplate legs}}<br />{{plink|Oathplate shards}}<br />{{plink|Barrel of demonic tallow}}<br />{{plink|Forgotten lockbox}}<br />{{plink|Dossier}}<br />{{plink|Diabolic worms}}<br />{{plink|Chasm teleport scroll}}
+|-
+|}
+====The Forgotten Four====
+The following bosses can be fought during and after completing [[Desert Treasure II]]. The versions fought after completing the quest have increased stats, dealing more damage with their auto-attacks and mechanics, but are otherwise the same as the quest variants. An even stronger variant, known as awakened, can be fought with the use of an [[awakener's orb]]. These awakened variants have an even larger stat increase, their base mechanics are enhanced and with the exception of the Whisperer, gain new mechanics.
+
+In normal mode, if the player has less than five kills on the boss and die, they will only pay 20% of the total fee.
+{| class="wikitable sortable mw-collapsible"
+!colspan=2 |Boss
+!Level
+!Hitpoints
+!Attack style(s)
+!Location
+!Requirements
+!Collection log
+|-
+|[[Duke Sucellus]]
+|[[File:Duke Sucellus.png|center|150x150px]]
+|768 (normal)<br/>1099 (awakened)
+|200 (charge, normal)<Br/>440 (actual, normal)<Br/>370 (charge, awakened)<br/>1540 (awakened)
+|{{SCP|Attack}} [[Melee]] (crush)<br/>{{SCP|Magic|link=yes}}
+|[[Ghorrock Dungeon]]
+|{{SCP|Quest}} [[Desert Treasure II - The Fallen Empire]]
+|{{plink|Virtus mask}}<br/>{{plink|Virtus robe top}}</br>{{plink|Virtus robe bottom}}<br/>{{plink|Chromium ingot}}<br/>{{plink|Awakener's orb}}<br/>{{plink|Magus vestige}}<br/>{{plink|Eye of the duke}}<br/>{{plink|Ice quartz}}<br/>{{plink|Frozen tablet}}<br/>{{plink|Baron}}
+|-
+|[[The Leviathan]]
+|[[File:The Leviathan.png|center|150x150px]]
+|798 (normal)<br/>1157 (awakened)
+|900 (normal)
+2700 (awakened)
+|{{SCP|Attack}} [[Melee]]<br/>{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|[[The Scar]]
+|{{SCP|Quest}} [[Desert Treasure II - The Fallen Empire]]
+|{{plink|Virtus mask}}<br/>{{plink|Virtus robe top}}</br>{{plink|Virtus robe bottom}}<br/>{{plink|Chromium ingot}}<br/>{{plink|Awakener's orb}}<br/>{{plink|Venator vestige}}<br/>{{plink|Leviathan's lure}}<br/>{{plink|Smoke quartz}}<br/>{{plink|Scarred tablet}}<br/>{{plink|Lil'viathan}}
+|-
+|[[The Whisperer]]
+|[[File:The Whisperer.png|center|150x150px]]
+|791 (normal)<br/>1146 (awakened)
+|900 (normal)
+2700 (awakened)
+|{{SCP|Attack}} [[Melee]]<br/>{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|[[Lassar Undercity]]
+|{{SCP|Quest}} [[Desert Treasure II - The Fallen Empire]]
+|{{plink|Virtus mask}}<br/>{{plink|Virtus robe top}}</br>{{plink|Virtus robe bottom}}<br/>{{plink|Chromium ingot}}<br/>{{plink|Awakener's orb}}<br/>{{plink|Bellator vestige}}<br/>{{plink|Siren's staff}}<br/>{{plink|Shadow quartz}}<br/>{{plink|Sirenic tablet}}<br/>{{plink|Wisp}}
+|-
+|[[Vardorvis]]
+|[[File:Vardorvis.png|center|150x150px]]
+|784 (normal)<br/>1136 (awakened)
+|700 (normal)
+1400 (awakened)
+|{{SCP|Attack}} [[Melee]] (slash)
+|[[The Stranglewood]]
+|{{SCP|Quest}} [[Desert Treasure II - The Fallen Empire]]
+|{{plink|Virtus mask}}<br/>{{plink|Virtus robe top}}</br>{{plink|Virtus robe bottom}}<br/>{{plink|Chromium ingot}}<br/>{{plink|Awakener's orb}}<br/>{{plink|Ultor vestige}}<br/>{{plink|Executioner's axe head}}<br/>{{plink|Blood quartz}}<br/>{{plink|Strangled tablet}}<br/>{{plink|Butch}}
+|-
+|}
+
+====Sporadic bosses====
+Sporadic bosses are those that cannot be fought whenever the player wishes. Instead, they require a special item of some sort to gain access to them, which is obtained by partaking in other more common activities. Naturally, these bosses are in instanced locations.
+
+{| class="wikitable sortable mw-collapsible"
+!colspan=2 |Boss
+!Level
+!Hitpoints
+!Attack style(s)
+!Location
+!Requirements
+!Collection log
+|-
+|[[The Mimic]]
+|[[File:The Mimic.png|centre|150x150px]]
+|186
+|230
+|{{SCP|Attack}} [[Melee]] (crush)<br/>{{SCP|Magic|link=yes}}
+|[[Watson|Watson's house]] in [[Hosidius]]
+|{{plink|Mimic}}
+|{{plink|Ring of 3rd age}}{{efn|The [[ring of 3rd age]] is listed in the [[collection log]] under 'Elite' and 'Master Treasure Trails' but is nonetheless obtained exclusively from [[The Mimic]].}}
+|-
+|[[Hespori]]
+|[[File:Hespori.png|centre|150x150px]]
+|284
+|300
+|{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|The [[Farming Guild]]
+|{{plink|Hespori seed}}{{efn|In order to fight Hespori, one must wait 24-32 hours for the seed to grow}}<br/>{{SCP|Farming|65|link=yes}}
+|{{plink|Bottomless compost bucket}}<br />{{plink|Iasor seed}}<br />{{plink|Kronos seed}}<br />{{plink|Attas seed}}
+|-
+|[[Skotizo]]
+|[[File:Skotizo.png|centre|150x150px]]
+|321
+|450
+|{{SCP|Attack}} [[Melee]] (slash)<br/>{{SCP|Magic|link=yes}}
+|The [[Catacombs of Kourend]]
+|{{plink|Dark totem}}
+|{{plink|Skotos}}<br />{{plink|Jar of darkness}}<br />{{plink|Dark claw}}<br />{{plink|Dark totem}}<br />{{plink|Uncut onyx}}<br />{{plink|Ancient shard}}
+|}
+{{notelist}}
+
+===Slayer bosses===
+Slayer bosses are a specific set of bosses that are only unlocked by training [[Slayer]]. Each one corresponds to another monster commonly assigned for Slayer tasks, which, with the exception of [[hellhound]]s, are also unlocked by training Slayer. In addition to a Slayer level requirement, each boss requires a task for either the boss itself or the equivalent monster in order to be fought.
+
+{| class="wikitable sortable mw-collapsible"
+!colspan=2 |Boss
+!Level
+!Hitpoints
+!Attack style(s)
+!Location
+!Requirements
+!Collection log
+|-
+|[[Shellbane gryphon]]
+|[[File:Shellbane gryphon.png|centre|170x170px]]
+|235
+|400
+|{{SCP|Attack}} [[Melee]]<br/>{{SCP|Ranged|link=yes}}
+|[[The Great Conch]]
+|{{SCP|Slayer|51|link=yes}}<br/>{{SCP|Combat|60|link=yes}}{{efn|name=ignore-combat|Combat level requirements can be ignored by Slayer masters when assigning tasks if requested.}}<br/>{{SCP|Quest}} [[Troubled Tortugans]]<br/>[[Gryphon]] Slayer task
+|{{plink|Gull (pet)|txt=Gull}}<br/>{{plink|Jar of feathers}}<br/>{{plink|Belle's folly (tarnished)}}<br/>{{plink|Gryphon feather}}
+|-
+|[[Grotesque Guardians]]
+|[[File:Dusk.png|centre|170x170px]]<br />[[File:Dawn.png|centre|170x170px]]
+|248 ([[Dusk]]) <br />228 ([[Dawn]])
+|450 (each)
+|{{SCP|Attack}} [[Melee]] (stab)<br/>{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|[[Slayer Tower]]<br/>(Instanced)
+|{{SCP|Slayer|75|link=yes}}<br/>{{SCP|Combat|70|link=yes}}{{efn|name=ignore-combat}}<br/>{{SCP|Quest}} [[Priest in Peril]]<br/>{{plink|Brittle key}} (first time only)<br/>[[Gargoyle]] or [[Grotesque Guardians]] Slayer task
+|{{plink|Noon}}<br/>{{plink|Black tourmaline core}}<br/>{{plink|Granite gloves}}<br/>{{plink|Granite ring}}<br/>{{plink|Granite hammer}}<br/>{{plink|Jar of stone}}<br/>{{plink|Granite dust}}
+|-
+|[[Abyssal Sire]]
+|[[File:Abyssal Sire.png|centre|150x150px]]
+|350
+|425
+|{{SCP|Attack}} [[Melee]]
+|[[Abyssal Nexus]]
+|{{SCP|Slayer|85|link=yes}}<br/>{{SCP|Combat|85|link=yes}}{{efn|name=ignore-combat}}<br/>{{SCP|Quest}} [[Enter the Abyss]] or {{SCP|Quest}} [[Fairytale II - Cure a Queen]] (partially){{efn|Fairytale II need only be completed to the point where the player unlocks [[Fairy Rings]].}}<br/>[[Abyssal demon]] or [[Abyssal Sire]] Slayer task
+|{{plink|Abyssal orphan}}<br/>{{Plink|Unsired}}<br/>{{Plink|Abyssal head}}<br/>{{Plink|Bludgeon spine}}<br/>{{Plink|Bludgeon claw}}<br/>{{Plink|Bludgeon axon}}<br/>{{Plink|Jar of miasma}}<br/>{{Plink|Abyssal dagger}}<br/>{{Plink|Abyssal whip}}
+|-
+|[[Kraken]]
+|[[File:Cave kraken.png|centre|150x150px]]
+|291
+|255
+|{{SCP|Magic|link=yes}} ([[Typeless]])
+|[[Kraken Cove]]<br/>(Optionally instanced)
+|{{SCP|Slayer|87|link=yes}}<br/>{{SCP|Magic|50|link=yes}}<br/>{{SCP|Combat|80|link=yes}}{{efn|name=ignore-combat}}<br/>[[Cave kraken]] or [[Kraken]] Slayer task
+|{{plink|Pet kraken}}<br/>{{Plink|Kraken tentacle}}<br/>{{plink|Trident of the seas|txt=Trident of the seas (full)}}<br/>{{Plink|Jar of dirt}}
+|-
+|[[Cerberus]]
+|[[File:Cerberus.png|centre|150x150px]]
+|318
+|600
+|{{SCP|Attack}} [[Melee]] (stab)<br/>{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|[[Cerberus' Lair]]
+|{{SCP|Slayer|91|link=yes}}<br/>{{SCP|Combat|75|link=yes}}{{efn|name=ignore-combat}}<br/>[[Hellhound]] or [[Cerberus]] Slayer task
+|{{plink|Hellpuppy}}<br/>{{plink|Eternal crystal}}<br/>{{plink|Pegasian crystal}}<br/>{{Plink|Primordial crystal}}<br/>{{Plink|Jar of souls}}<br/>{{Plink|Smouldering stone}}<br/>{{Plink|Key master teleport}}
+|-
+|[[Araxxor]]
+|[[File:Araxxor.png|centre|170x170px]]
+|890
+|1020
+|{{SCP|Attack}} [[Melee]]<br/>{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|[[Morytania Spider Cave]]<br/>
+|{{SCP|Slayer|92|link=yes}}<br/>{{SCP|Quest}} [[Priest in Peril]]<br/>[[Araxyte]] or [[spider]] Slayer task
+|{{plink|Nid}}<br/>{{plink|Araxyte venom sack}}<br/>{{plink|Spider cave teleport}}<br/>{{plink|Araxyte fang}}<br/>{{plink|Noxious point}}<br/>{{plink|Noxious blade}}<br/>{{plink|Noxious pommel}}<br/>{{plink|Araxyte head}}<br/>{{plink|Jar of venom}}<br/>{{plink|Coagulated venom}}
+|-
+|[[Thermonuclear smoke devil]]
+|[[File:Thermonuclear smoke devil.png|centre|150x150px]]
+|301
+|240
+|{{SCP|Ranged|}} [[Magical ranged]] ([[Typeless]])
+|[[Smoke Devil Dungeon]]
+|{{SCP|Slayer|93|link=yes}}<br/>{{SCP|Combat|85|link=yes}}{{efn|name=ignore-combat}}<br/>[[Smoke devil]] or [[Thermonuclear smoke devil]] Slayer task
+|{{plink|Pet smoke devil}}<br/>{{Plink|Occult necklace}}<br/>{{Plink|Smoke battlestaff}}<br/>{{Plink|Dragon chainbody}}<br/>{{Plink|Jar of smoke}}
+|-
+|[[Alchemical Hydra]]
+|[[File:Alchemical Hydra (serpentine).png|centre|150x150px]]
+|426
+|1100
+|{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|[[Karuulm Slayer Dungeon]]<br/>(Instanced)
+|{{SCP|Slayer|95|link=yes}}<br/>{{SCP|Combat|75|link=yes}}{{efn|[[Konar quo Maten]] is the only Slayer master that can assign Hydras as a task.}}<br/>[[Hydra]] or [[Alchemical Hydra]] Slayer task
+|{{plink|Ikkle hydra|pic=Ikkle hydra (serpentine)}}<br/>{{plink|Hydra's claw}}<br/>{{Plink|Hydra tail}}<br/>{{plink|Hydra leather}}<br/>{{Plink|Hydra's fang}}<br/>{{plink|Hydra's eye}}<br/>{{plink|Hydra's heart}}<br/>{{plink|Dragon knife}}<br/>{{plink|Dragon thrownaxe}}<br/>{{plink|Jar of chemicals}}<br/>{{plink|Alchemical hydra heads}}
+|}
+{{notelist}}
+
+===Minigame bosses===
+These bosses are fought as parts of instanced [[minigames]]. The combat achievements for these minigames usually (but not always) relate to or at least require the defeat of the bosses, and, like other boss [[pet]]s, pets rewarded by these minigames are typically smaller versions of the bosses.
+
+{| class="wikitable sortable mw-collapsible"
+!colspan=2 |Boss
+!Level
+!Hitpoints
+!Attack style(s)
+!Minigame
+!Requirements
+!Collection log
+|-
+|[[Crystalline Hunllef]]
+|[[File:Crystalline Hunllef.png|center|150x150px]]
+|674
+|600
+|{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|{{SCP|minigame}} [[The Gauntlet]]
+|{{SCP|quest}} [[Song of the Elves]]
+|{{plink|Youngllef}}<br/>{{plink|Crystal armour seed}}<br/>{{plink|Crystal weapon seed}}<br/>{{plink|Enhanced crystal weapon seed}}
+|-
+|[[Corrupted Hunllef]]
+|[[File:Corrupted_Hunllef.png|center|150x150px]]
+|894
+|1000
+|{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|{{SCP|minigame}} [[The Corrupted Gauntlet]]
+|{{SCP|quest}} [[Song of the Elves]]
+|{{plink|Youngllef}}<br/>{{plink|Crystal armour seed}}<br/>{{plink|Crystal weapon seed}}<br/>{{plink|Enhanced crystal weapon seed}}<br/>{{plink|Gauntlet cape}}
+|-
+|[[TzTok-Jad]]
+|[[File:TzTok-Jad.png|center|150x150px]]
+|702
+|250
+|{{SCP|Attack}} [[Melee]] (stab)<br/>{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|{{SCP|minigame}} [[TzHaar Fight Cave]]s
+|{{NA}}
+|{{plink|Tzrek-jad}}<br/>{{plink|Fire cape}}
+|-
+|[[TzKal-Zuk]]
+|[[File:TzKal-Zuk.png|center|150x150px]]
+|1400
+|1200
+|{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|{{SCP|minigame}} [[Inferno]]
+|{{plink|Fire cape}} (first time only)
+|{{plink|Jal-nib-rek}}<br/>{{plink|Infernal cape}}
+|-
+|[[Sol Heredit]]
+|[[File:Sol Heredit.png|center|150x150px]]
+|1563
+|1500
+|{{SCP|Attack}} [[Melee]] (crush)
+|{{SCP|minigame}} [[Fortis Colosseum]]
+|{{SCP|quest}} [[Children of the Sun]]
+|{{plink|Smol heredit}}<br/>{{plink|Dizana's quiver (uncharged)}}<br/>{{plink|Sunfire fanatic cuirass}}<br/>{{plink|Sunfire fanatic chausses}}<br/>{{plink|Sunfire fanatic helm}}<br/>{{plink|Echo crystal}}<br/>{{plink|Tonalztics of ralos (uncharged)}}<br/>{{plink|Sunfire splinters}}
+|}
+
+===Skilling bosses===
+Skilling bosses are world bosses that are not fought conventionally, but rather by utilising non-combat skills to defeat them, either directly or indirectly. For this reason, they can be very different experiences to more conventional bosses, and require entirely different gear and equipment. The [[Hespori]] also is strongly linked to a skill (requiring [[Farming]] to spawn and giving Farming XP), but the fight against it only uses normal combat.
+
+{| class="wikitable sortable mw-collapsible"
+!colspan=2 |Boss
+!Skills used
+!Combat mechanics
+!Location
+!Requirements
+!Collection log
+|-
+|[[Tempoross]]
+|[[File:Tempoross.png|center|150x150px]]
+|{{SCP|Fishing|link=yes}}<br/>{{SCP|Cooking|link=yes}}<br/>{{SCP|Construction|link=yes}}
+|[[File:Damage hitsplat.png]] Damaged directly
+|[[Ruins of Unkah]]
+|{{SCP|Fishing|35|link=yes}}
+|{{plink|Tiny tempor}}<br />{{plink|Big harpoonfish}}<br />{{plink|Spirit angler outfit|pic=Spirit angler top}}<br />{{plink|Tome of water (empty)}}<br />{{plink|Soaked page}}<br />{{plink|Tackle box}}<br />{{plink|Fish barrel}}<br />{{plink|Dragon harpoon}}<br/>{{plink|Spirit flakes}}
+|-
+|[[Wintertodt]]
+|[[File:Howling Snow Storm.gif|center|150x150px]]
+|{{SCP|Firemaking|link=yes}}<br/>{{SCP|Woodcutting|link=yes}}<br/>{{SCP|Fletching|link=yes}}<br/>{{SCP|Construction|link=yes}}<br/>{{SCP|Herblore|link=yes}}
+|[[File:Items kept on death.png|24px]] Dangerous activity
+|[[Wintertodt Camp]]
+|{{SCP|Firemaking|50|link=yes}}
+|{{plink|Phoenix}}<br />{{plink|Tome of fire (empty)}}<br />{{plink|Burnt page}}<br />{{plink|Pyromancer outfit|pic=Pyromancer garb}}<br />{{plink|Warm gloves}}<br />{{plink|Bruma torch}}<br />{{plink|Dragon axe}}
+|-
+|[[Zalcano]]
+|[[File:Zalcano.png|center|150x150px]]
+|{{SCP|Mining|link=yes}}<br/>{{SCP|Smithing|link=yes}}<br/>{{SCP|Runecraft|link=yes}}<br/>
+|[[File:Damage hitsplat.png]] Damaged directly<br/>[[File:Items kept on death.png|24px]] Dangerous activity
+|[[Prifddinas]]
+|{{SCP|Quest}} [[Song of the Elves]]
+|{{plink|Smolcano}}<br />{{plink|Crystal tool seed}}<br />{{plink|Zalcano shard}}<br />{{plink|Uncut onyx}}
+|}
+
+===Raids===
+[[Raids]] are high-level activities with a set of bosses that players can fight either alone or with a team.
+
+====Chambers of Xeric====
+Bosses within the [[Chambers of Xeric]] are sporadic, as the layout of each raid is randomised. The bosses that players will encounter as well as their order may vary, with the exception of the [[Great Olm]], which appears at the end of every raid. This is not the case if the [[Chambers of Xeric/Challenge Mode|Challenge Mode]] is enabled, where each boss is encountered and there is no randomisation. Each boss' stats also scale to the amount of players in the raid and their combat level. All bosses except the ice demon and the Great Olm drop potions, seeds, or ingredients to use in the raid. Once the Great Olm is defeated, the exit is opened and players can collect their loot, the quality of which scales to their performance in the raid.
+
+{| class="wikitable sortable mw-collapsible"
+!colspan=2 |Boss
+!Attack style(s)
+!Special attacks or mechanics
+|-
+|[[Tekton]]
+|[[File:Tekton.png|center|150x150px]]
+|{{SCP|Attack}} [[Melee]]
+|Regenerates health periodically and targets players with damaging sparks
+|-
+|[[Vanguard]]
+|[[File:Vanguard (magic).png|center|150x150px]]
+|{{SCP|Attack}} [[Melee]]<br/>{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|All three vanguards reset health if they are not within less than 33% of each other's health (or 40% if the raid has less than five people)
+|-
+|[[Vespula]]
+|[[File:Vespula.png|center|150x150px]]
+|{{SCP|Attack}} [[Melee]]<br/>{{SCP|Ranged|link=yes}}
+|Spawns [[vespine soldiers]]; cannot be killed directly (the [[abyssal portal]] must instead be destroyed)
+|-
+|[[Vasa Nistirio]]
+|[[File:Vasa Nistirio.png|center|150x150px]]
+|{{SCP|Ranged|link=yes}}
+|Regenerates health periodically through [[glowing crystal]]s; stuns players before casting a high damage attack
+|-
+|[[Muttadile]]
+|[[File:Muttadile.png|center|150x150px]]
+|{{SCP|Attack}} [[Melee]]<br/>{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|Regenerates health from the [[meat tree]] unless it is cut down, large muttadile can use a shock wave attack that deals massive damage
+|-
+|[[Great Olm]]
+|[[File:Great Olm.png|center|150x150px]]
+|{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|Has a [[Great Olm#Attacks|multitude of special attacks]]
+|}
+
+====Theatre of Blood====
+Unlike the [[Chambers of Xeric]], bosses within the [[Theatre of Blood]] take place in a predetermined order. Their hitpoints are scaled depending on the number of players from three to five; if there are only one or two players, the scaling for three players is used, and five is the maximum number of players per team. Bosses do not drop anything, although there are resource chests where players can obtain potions and food for upcoming encounters; after defeating [[Verzik Vitur]], the entrance to her vault is opened where players can obtain their loot, the quality of which scales to their performance in the raid.
+
+{| class="wikitable sortable mw-collapsible"
+!colspan=2 |Boss
+!Attack style(s)
+!Special attacks or mechanics
+|-
+|[[The Maiden of Sugadinti]]
+|[[File:The Maiden of Sugadinti.png|center|150x150px]]
+|{{SCP|Magic|link=yes}}
+|Spawns [[Nylocas Matomenos]] and [[blood spawn]]s; creates blood splats that damage players and heal her
+|-
+|[[Pestilent Bloat]]
+|[[File:Pestilent Bloat.png|center|150x150px]]
+|{{SCP|Ranged|link=yes}}
+|Spawns flies that deal rapid damage within line of sight; stomp attack that deals high damage within line of sight
+|-
+|[[Nylocas Vasilias]]
+|[[File:Nylocas Ischyros.png|center|170x150px]]
+|{{SCP|Attack}} [[Melee]] (stab)<br/>{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|Multiple waves of smaller [[nylocas]] must be defeated before the boss encounter; heals with and reflects damage done with the incorrect style
+|-
+|[[Sotetseg]]
+|[[File:Sotetseg.png|center|150x150px]]
+|{{SCP|Attack}} [[Melee]] (crush)<br/>{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|Launches a ball of energy where its high damage must be dispersed between players; teleports a player into the [[Shadow Realm]] with a maze for other players to follow
+|-
+|[[Xarpus]]
+|[[File:Xarpus.png|center|150x150px]]
+|{{SCP|Ranged|link=yes}} ([[Typeless]])
+|Heals from exhumes not blocked by players; spits acid on players' locations; can reflect damage
+|-
+|[[Verzik Vitur]]
+|[[File:Verzik Vitur.png|center|170x150px]]
+|{{SCP|Attack}} [[Melee]] (crush)<br/>{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|Has a [[Verzik Vitur#Mechanics|multitude of special attacks]] across three phases
+|}
+
+==== Tombs of Amascut ====
+In the [[Tombs of Amascut]], players are able to face each of the first four bosses, namely, Akkha, Ba-Ba, Kephri, and Zebak in any order they choose. After the player has defeated all 4, they may challenge the wardens as the final boss. Tombs of Amascut is unique in that it has [[invocations]], which is a system that allows the individual to increase the difficulty of the bosses in a modular fashion. As such, the numbers provided for level and hitpoints are based on a raid with '''''No Invocations.''''' The strength of the bosses will scale with each additional invocation added to each boss.
+
+{| class="wikitable sortable mw-collapsible"
+!colspan=2 |Boss
+!Level
+!Hitpoints
+!Attack Style(s)
+!Notes
+|-
+|[[Akkha]]
+|[[File:Akkha.png|150x150px|center]]
+|337
+|537
+|{{SCP|Attack}} [[Melee]]<br/>{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|Has a [[Akkha|multitude of special attacks.]]
+|-
+|[[Ba-Ba]]
+|[[File:Ba-Ba.png|150x150px|center]]
+|359
+|380
+|{{SCP|Attack}} [[Melee]]<br/>{{SCP|Ranged|link=yes}}
+|Throws boulders that can be mitigated by standing next to fallen rocks or sarcophagi. Summons [[Baboon|Baboons]]. Launches players and sends boulders rolling towards the entrance.
+|-
+|[[Kephri]]
+|[[File:Kephri.png|150x150px|center]]
+|341
+|150 (with multiple shield phases)
+|{{SCP|Magic|link=yes}}
+|Attacks with a delayed, overhead fireball. Dung Strike launches players back and blocks off movement. Mass Incubation spawns [[Agile Scarab|Agile Scarabs]].
+|-
+|[[Zebak]]
+|[[File:Zebak.png|center|150x150px]]
+|371
+|540
+|{{SCP|Attack}} [[Melee]]<br/>{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|Spits acid around the arena. Summons waves that damage and push the player. Roar attack is blocked by thrown boulders.
+|-
+|[[Tumeken's Warden]]
+|[[File:Tumeken's Warden (level-489).png|150x150px|center]]
+|489 (Phase 1 & 2)<br/>544 (Phase 3)
+|140<br/>800
+|{{SCP|Attack}} [[Melee]]<br/>{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+| rowspan="2" |Tumeken's Warden and Elidinis' Warden are fought in succession depending on which is destroyed in phase 1. They have identical stats, but different attack mechanics for phase 2 and 3. 
+|-
+|[[Elidinis' Warden]]
+|[[File:Elidinis' Warden (level-489).png|150x150px|center]]
+|489 (Phase 1 & 2)<br/>544 (Phase 3)
+|140<br/>800
+|{{SCP|Attack}} [[Melee]]<br/>{{SCP|Ranged|link=yes}}<br/>{{SCP|Magic|link=yes}}
+|}
+
+==Quest bosses==
+[[File:Culinaromancer.png|thumb|right|The [[Culinaromancer]]|150px]]
+A large number of [[quests]] involve and/or conclude with a battle against a powerful [[monster]], which often is or is related to the quest's main antagonist. Except where otherwise noted, these bosses can only be fought in the [[Nightmare Zone]] once their respective quest has been completed.
+
+A sub-boss is a powerful or semi-powerful monster fought as a prelude to the actual boss fight.
+
+*The [[Abomination]] is fought during [[A Taste of Hope]].
+*[[Agrith-Naar]], a [[demon]] summoned to [[Gielinor]] by a group of dark wizards, is fought at the end of [[Shadow of the Storm]].
+*[[Ancient Guardian]] is a golem encountered at the end of [[Below Ice Mountain]]. It is one of the few [[free-to-play]] bosses.
+*The [[Arzinian Avatar]] is the boss of [[Between a Rock...]].
+*[[Arrg]] is the strongest [[mountain troll]] in the game, and is the boss monster of [[Troll Romance]].
+*[[Barrelchest]], a hulking artificial construct controlled by [[Mi-Gor]], is the boss of [[The Great Brain Robbery]].
+*A [[Black_demon (The Grand Tree)|Black demon]] controlled by [[Glough]] is the final challenge in [[The Grand Tree]].
+*The [[Black Knight Titan]] is the scourge of the [[Fisher Realm]] and is fought during [[Holy Grail]].
+*[[Bouncer]] is a powerful [[hellhound]], the pet of [[General Khazard]], and is fought during [[Fight Arena]].
+**Its [[Bouncer (ghost)|ghost]] is fought during the [[Shadow Sword (miniquest)|Shadow Sword miniquest]].
+*[[Chronozon]] is a demon who is the boss of [[Family Crest]].
+*A [[Corrupt Lizardman]] is a [[lizardman]] fought during the [[Tale of the Righteous]].
+*[[Count Draynor]] is a notorious [[vampyre]] who is the boss of [[Vampyre Slayer]]. He is one of the few [[free-to-play]] bosses.
+*The [[Culinaromancer]] is a powerful sorcerer who draws his power from [[food]]. He is the main antagonist of the [[Recipe for Disaster]] quest series, and is the final boss of its conclusion, [[Defeating the Culinaromancer]].
+*[[Cuthbert|Cuthbert, Lord of Dread]] is a joke boss fought toward the end of [[The Ribbiting Tale of a Lily Pad Labour Dispute]].
+*[[Dad]] is a [[mountain troll]] who is fought during [[Troll Stronghold]].
+*The [[Dagannoth Mother]] is the boss of [[Horror from the Deep]].
+*[[Delrith]] is an ancient demon who was summoned to destroy [[Varrock]]; he is the boss of [[Demon Slayer]]. He is one of the few [[free-to-play]] bosses.
+*The [[Dramen Tree Spirit]] guards the [[dramen tree]] within [[Entrana Dungeon]], and is the boss of [[Lost City]]. Because of the restrictions on [[Entrana]], no [[weapons]] or [[armour]] may be used to fight the tree spirit.
+*[[Draugen]] is a spirit fought as part of [[The Fremennik Trials]].
+*[[Elvarg]] is a [[green dragon]] who has decimated the island of [[Crandor]], where she roosts. She is the final boss of [[Dragon Slayer I]], and is one of the few [[free-to-play]] bosses.
+*The [[Evil Chicken (Recipe for Disaster)|Evil Chicken]] is a boss fought during the [[Freeing Sir Amik Varze]] subquest of [[Recipe for Disaster]].
+*An [[Evil Spirit]] is the boss monster of [[Rum Deal]].
+*The [[Fragment of Seren]] is the darkness within [[Seren]] made manifest, who serves as the final boss of [[Song of the Elves]].
+*[[Gadderanks]] is a human supporter of the vampyric regime in [[Morytania]]. He is fought during [[In Aid of the Myreque]].
+*[[Galvek]] is an extremely powerful [[Dragon (race)|dragon]] who serves as the final boss of [[Dragon Slayer II]].
+*[[General Khazard]] can be optionally fought during [[Fight Arena]].
+*The [[Giant Roc]] is a large avian fought atop [[Trollheim]] during [[My Arm's Big Adventure]]. He has the uncommon ability to knock players around the area with his massive wings.
+*A [[giant scarab]] is fought at the end of [[Contact!]].
+*The [[Giant Sea Snake]] is the boss of [[Royal Trouble]].
+*[[Glod]] is an enormous [[giant]] who resides in the cloud world above the magic beanstalk that players plant during [[Grim Tales]]; he is the quest's boss. He can disable [[prayers]] and force players towards or away from him.
+*[[Glough]] is a [[gnome]] who causes trouble in the quest, [[Monkey Madness II]]. He turns into a giant with three phases and must be defeated by the player.
+*The [[Ice Troll King]], leader of the [[ice trolls]], is the boss of [[The Fremennik Isles]].
+*[[Ithoi the Navigator]] is a human that is the boss fought in [[The Corsair Curse]]. He is of the few bosses that can be fought in free-to-play.
+*The [[Jungle demon]] is a powerful demon who serves as the final boss of [[Monkey Madness I]].
+*A [[Khazard Ogre]] is one of the bosses of [[Fight Arena]].
+*[[Koschei the Deathless]] is a [[Fremennik]] warrior who cannot be truly killed. He must be defeated in battle three times in a row as part of [[The Fremennik Trials]].
+*[[Me]], who takes the form of players who fight them, is fought at the end of [[Lunar Diplomacy]].
+*[[Melzar the Mad]] is the keeper of [[Melzar's Maze]]. He is a sub-boss of [[Dragon Slayer I]]. He is one of the few free-to-play bosses.
+*A powerful [[Moss Guardian]] must be fought, without [[weapons]], [[armour]], or [[Prayer]], to obtain the [[consecration seed]] in [[Roving Elves]].
+*[[Nezikchened]] is a [[black demon]] who is fought three times during [[Legends' Quest]], including at the quest's climax.
+*[[Ranis Drakan]] is fought during [[A Taste of Hope]].
+*The [[Sand Snake]], is the boss of [[The Depths of Despair]].
+*The [[Sea Troll Queen]], ruler of the [[Sea trolls]], is the final boss of [[Swan Song]].
+*[[Sigmund]] is a supporter of [[Humans Against Monsters]] who is fought in two quests: [[Death to the Dorgeshuun]] and [[Another Slice of H.A.M.]].
+*[[Sir Leye]] is a [[Temple Knight]] fought during [[Recruitment Drive]]. He cannot be defeated by any blade; as such, he must be fought either unarmed or with a blunt weapon.
+*[[Sir Mordred]] is the leader of the [[Renegade Knight]]s and is fought during [[Merlin's Crystal]].
+*[[Slagilith]] is an animated golem of rock who is fought during [[One Small Favour]]. It can be fought after the quest is complete.
+*[[Slash Bash]] is a strong [[zogre]] who is the boss of [[Zogre Flesh Eaters]].
+*[[Tarn Razorlor]] is a necromancer and is the boss of the [[miniquest]], [[The Lair of Tarn Razorlor]].
+*[[Tolna]] is a young boy who succumbed to the evils of what later became known as [[Tolna's rift]]. He is the boss of [[A Soul's Bane]], taking the form of a three-headed monster.
+*[[Treus Dayth]], now a [[ghost]], was a follower of [[Drakan]] who was sealed within the [[Abandoned Mine]]. He is the boss of [[Haunted Mine]].
+*[[Ulfric]] is an undead [[Fremennik]] who is the boss of [[Olaf's Quest]].
+
+===Quests with multiple bosses===
+Some [[quests]] have several boss [[monsters]] that must be defeated, usually one after the other.
+
+*[[Dragon Slayer I]] has two bosses: [[Melzar the Mad]] and [[Elvarg]].
+*[[Spirits of the Elid]] has three bosses: The [[black golem]], [[grey golem]], and [[white golem]].
+*[[Desert Treasure I]] has four [[Zamorakian]] warriors as bosses: [[Dessous]], [[Kamil]], [[Fareed]], and [[Damis]].
+*The [[Recipe for Disaster]] quest series culminates in the final subquest, [[Recipe for Disaster#Culinaromancer|Defeating the Culinaromancer]]. Six bosses must be defeated: [[Agrith Na-Na]], [[Flambeed]], [[Karamel]], [[Dessourt]], [[Gelatinnoth Mother]] and the [[Culinaromancer]] himself. Each of these bosses except for the Culinaromancer is a play on another boss of one of the quests required to finish Recipe for Disaster.
+*During [[Dream Mentor]], four boss monsters are fought, in order: [[The Inadequacy]], [[The Everlasting]], [[The Untouchable]], and [[The Illusive]].
+*[[Monkey Madness II]] has four bosses: [[Kruk]], [[Kob]], [[Keef]], and [[Glough]].
+*[[Dragon Slayer II]] has three bosses: [[Robert the Strong]], [[Vorkath]], and [[Galvek]].
+*[[Song of the Elves]] has three bosses: [[Elven traitor]], [[Essyllt]], and [[Fragment of Seren|the Dark Lord]].
+*[[A Night at the Theatre]] has seven bosses: the [[Maiden of Sugadinti]], the [[Pestilent Bloat]], [[Nylocas Vasilias]], [[Sotetseg]], [[Xarpus]], [[Verzik Vitur]], and a [[Hespori (A Night at the Theatre)|Hespori]]
+*[[Desert Treasure II - The Fallen Empire]] has four bosses: [[Vardorvis]], [[The Leviathan]], [[The Whisperer]], and [[Duke Sucellus]].
+*[[While Guthix Sleeps]] has two bosses: [[Surok_Magis#While_Guthix_Sleeps|Surok Magis]] and the [[Balance Elemental]].
+*[[The Heart of Darkness]] has two bosses: [[Prince Itzla Arkan]] and [[Amoxliatl]].
+*[[The Curse of Arrav]] has two bosses: the [[golem guard]] and [[Arrav]].
+*[[The Final Dawn]] has five bosses: the [[Emissary Enforcer]], [[Lucius]] and [[Chimalli]], [[Ennius Tullus]] and [[Augur Metzli]].
+
+==Event bosses==
+Some bosses could be fought during [[holiday event|holiday and community events]] and can no longer be fought.
+
+{| class="wikitable sortable mw-collapsible"
+!colspan=2 |Boss
+!Event
+|-
+|[[King Snagwort]]
+|[[File:King_Snagwort.png|centre|170x170px]]
+|[[2013 Goblin Invasion]]
+|-
+|[[Anti-Santa]]
+|[[File:Anti-Santa_v1.png|centre|170x170px]]
+|[[2013 Christmas Event]]
+|-
+|[[General Danknuck]]
+|[[File:General_Danknuck.png|centre|170x170px]]
+|[[2014 Goblin Invasion]]
+|-
+|[[Chocolate demon]]
+|[[File:Chocolate_demon.png|centre|170x170px]]
+|[[2015 Easter Event]]
+|-
+|[[Durial321]]
+|[[File:Durial321.png|centre|170x170px]]
+|[[World 666 Event]]
+|-
+|[[Colossal Chocco Chicken]]
+|[[File:Colossal_Chocco_Chicken.png|centre|170x170px]]
+|[[2018 Easter event]]<br>[[2019 Easter event]]
+|}
+
+==Boss slayer==
+Players who have [[Slayer Rewards#Unlock|unlocked]] the ''Like a boss'' ability via spending 200 [[Slayer reward points]] can be assigned bosses by [[Konar quo Maten|Konar]], [[Nieve]]/[[Steve]], [[Duradel]]/[[Kuradal]], or [[Krystilia]]. The [[Slayer master]] will randomly assign a boss for which the player meets the below requirements. This allows players to benefit from a black mask or slayer helmet (including imbued), making boss slayer more lucrative. However, players will not be eligible for most speed-based [[Combat Achievements]] (even if they aren't using either one) and they have no effect on the awakened versions of the post-quest Desert Treasure II bosses.
+
+Boss slayer will not account for any blocked or toggled off tasks, as it is a separate task compared to general monsters. For example, players can still be assigned [[Kree'arra]] even if they do not have [[aviansie]]s toggled on, as long as they have access to God Wars Dungeon. Substitutes are accepted for a few boss tasks, if they have one; if assigned a [[Vet'ion]] task, players may alternatively kill [[Calvar'ion]] in his place. 
+
+Konar is a unique exception to boss assignments; while the [[deranged archaeologist]] is an acceptable substitute for the [[crazy archaeologist]], this does not apply to her tasks. She can also assign Wilderness bosses even though her general tasks will never send players there. She can also assign [[Araxxor]] despite not offering [[araxyte]]s and is the only one who can assign the [[Alchemical Hydra]] boss task.
+
+[[Krystilia]] will only roll boss tasks in the Wilderness, barring the [[King Black Dragon]] as his lair is not considered part of it.
+
+After determining the boss, the Slayer Master will ask the player to select the amount that they want to kill for their assignment. The player can select anywhere from 3–35 kills (36 if [[Barrows]] is assigned). The maximum assignment can be increased by completing [[Combat Achievement]] tiers, with each tier adding +5 to the cap, up to 65 at Grandmaster tier.
+
+If the player is assigned a boss task but cancels out of the dialogue, the Slayer master will remind the player of it before asking how much they would like to kill. 
+
+Upon finishing a boss task, the player will get an additional 5,000 Slayer experience regardless of task length. If the effect of a [[slayer cape]] activates for a boss task, it is possible for the player to be assigned a different boss.
+
+If players do not wish to kill the boss they have been assigned, they can pay 30 [[Slayer reward point|Slayer reward points]] to skip the task as with regular tasks. However, this is not generally recommended, as many consider the 30 Slayer point cost to be high, and higher level players can usually complete the task quickly by assigning 3 kills. The only way to "block" a boss is by toggling the ability off, though this '''does not''' refund points, and the 200 point cost must be paid again to toggle it back on.
+
+[[Duradel]]/[[Kuradal]] has a [[Slayer task#Task weighing|task weighting]] of 12 for boss Slayer tasks, whereas [[Konar quo Maten|Konar]], [[Nieve]]/[[Steve]], and [[Krystilia]] each have a task weighting of 8.
+
+Slayer masters '''cannot''' assign the following as bosses:
+
+*[[Corporeal Beast]]
+*[[Hespori]]
+*[[Skotizo]] (although killable as a [[Black Demon]] or [[Greater Demon]] task)
+*[[Obor]] (killable as a [[Slayer task/Hill giants|hill giant]] task)
+*[[Bryophyta]] (although killable as a [[Slayer task/Moss giants|moss giant]] task)
+*[[The Mimic]]
+*[[The Nightmare]] (and [[Phosani's Nightmare|Phosani variant]])
+*[[Nex]]
+*[[Scurrius]] (although killable as part of a [[Slayer task/Rats|rats]] task)
+*[[Perilous Moons]]
+*[[The Hueycoatl]]
+*[[Amoxliatl]] (although killable as part of a [[Slayer task/Lesser Nagua|lesser nagua]] task)
+*[[Royal Titans]] (although killable as part of a [[Slayer task/Ice giants|ice giant]] or [[Slayer task/Fire giants|fire giant]] task for [[Eldric the Ice King]] and [[Branda the Fire Queen]] respectively)
+*[[Yama]]
+*[[Doom of Mokhaiotl]]
+*All raid bosses (aside from [[Lizardman shaman (Chambers of Xeric)|lizardman shamans]] on a [[Lizardman]] task or [[Skeletal Mystic|skeletal mystics]] on a [[skeleton]] task in the [[Chambers of Xeric]])
+
+The following bosses can be assigned:
+{| class="wikitable sortable lighttable"
+!Boss
+!Location
+!Slayer
+!Other Requirements/Notes
+|-
+|[[Abyssal Sire]]
+|[[Abyssal Nexus]]
+|{{SCP|Slayer|85}}
+|[[Enter the Abyss]] miniquest '''or''' partial completion of [[Fairytale II - Cure a Queen]]
+|-
+|[[Alchemical Hydra]]
+|[[Mount Karuulm Dungeon]]
+|{{SCP|Slayer|95}}
+|Only assigned by Konar
+|-
+|[[Araxxor]]
+|[[Morytania Spider Cave]]
+|{{SCP|Slayer|92}}
+|Completion of {{SCP|Quest}} [[Priest in Peril]]
+|-
+|[[Barrows brothers]] (not [[Barrows chest|chests]])
+|[[Morytania]]
+|{{SCP|Slayer|1}}
+|Completion of {{SCP|Quest}} [[Priest in Peril]]
+|-
+|[[Callisto]] 
+|[[Callisto's Den]] 
+|{{SCP|Slayer|1}}
+|[[Artio]] can be killed instead
+|-
+|[[Cerberus]]
+|[[Cerberus' Lair]]
+|{{SCP|Slayer|91}}
+|
+|-
+|[[Chaos Elemental]]
+|[[Wilderness]]
+|{{SCP|Slayer|1}}
+|
+|-
+|[[Chaos Fanatic]]
+|[[Wilderness]]
+|{{SCP|Slayer|1}}
+|
+|-
+|[[Commander Zilyana]]
+|[[God Wars Dungeon]]
+|{{SCP|Slayer|1}}
+|{{SCP|Agility|70}}, completion of {{SCP|Quest}} [[Death Plateau]]
+|-
+|[[Crazy archaeologist]] 
+|[[Wilderness]] 
+|{{SCP|Slayer|1}}
+|[[Deranged archaeologist]] can be killed instead
+|-
+|[[Dagannoth Kings]]
+|[[Waterbirth island]]
+|{{SCP|Slayer|1}}
+|
+|-
+|[[Duke Sucellus]]
+|[[Ghorrock Prison]]
+|{{SCP|Slayer|1}}
+|Completion of {{SCP|Quest}} [[Desert Treasure II - The Fallen Empire]]
+|-
+|[[General Graardor]]
+|[[God Wars Dungeon]]
+|{{SCP|Slayer|1}}
+|{{SCP|Strength|70}}, completion of {{SCP|Quest}} [[Death Plateau]]
+|-
+|[[Giant Mole]]
+|[[Mole Lair]]
+|{{SCP|Slayer|1}}
+|
+|-
+|[[Grotesque Guardians]]
+|[[Morytania Slayer Tower]]
+|{{SCP|Slayer|75}}
+|Unlock roof via [[Brittle key]], completion of {{SCP|Quest}} [[Priest in Peril]]
+|-
+|[[K'ril Tsutsaroth]]
+|[[God Wars Dungeon]]
+|{{SCP|Slayer|1}}
+|{{SCP|Hitpoints|70}}, completion of {{SCP|Quest}} [[Death Plateau]]
+|-
+|[[Kalphite Queen]]
+|[[Kalphite Lair]]
+|{{SCP|Slayer|1}}
+|
+|-
+|[[King Black Dragon]]
+|[[King Black Dragon's Lair]]
+|{{SCP|Slayer|1}}
+|Completion of {{SCP|Quest}} [[Dragon Slayer I]]
+|-
+|[[Kraken]]
+|[[Kraken Cove]]
+|{{SCP|Slayer|87}}
+|
+|-
+|[[Kree'arra]]
+|[[God Wars Dungeon]]
+|{{SCP|Slayer|1}}
+|{{SCP|Ranged|70}}, completion of {{SCP|Quest}} [[Death Plateau]]
+|-
+|[[The Leviathan]]
+|[[The Scar]]
+|{{SCP|Slayer|1}}
+|Completion of {{SCP|Quest}} [[Desert Treasure II - The Fallen Empire]]
+|-
+|[[Phantom Muspah]]
+|[[Ghorrock Dungeon]]
+|{{SCP|Slayer|1}}
+|Completion of {{SCP|Quest}} [[Secrets of the North]]
+|-
+|[[Sarachnis]]
+|[[Forthos Dungeon]]
+|{{SCP|Slayer|1}}
+|Accessed [[Great Kourend]] at least once by boat
+|-
+|[[Scorpia]]
+|[[Wilderness]] ([[Scorpion Pit]])
+|{{SCP|Slayer|1}}
+|
+|-
+|[[Shellbane gryphon]]
+|[[Shellbane Gryphon Cave]]
+|{{SCP|Slayer|51}}
+|Completed [[Troubled Tortugans]]
+|-
+|[[Thermonuclear smoke devil]]
+|[[Smoke Devil Dungeon]]
+|{{SCP|Slayer|93}}
+|
+|-
+|[[Vardorvis]]
+|[[The Stranglewood]]
+|{{SCP|Slayer|1}}
+|Completion of {{SCP|Quest}} [[Desert Treasure II - The Fallen Empire]]
+|-
+|[[Venenatis]] 
+|[[Silk Chasm]] 
+|{{SCP|Slayer|1}}
+|[[Spindel]] may be killed instead
+|-
+|[[Vet'ion]] 
+|[[Vet'ion's Rest]] 
+|{{SCP|Slayer|1}}
+|[[Calvar'ion]] may be killed instead
+|-
+|[[Vorkath]]
+|[[Ungael]]
+|{{SCP|Slayer|18}}
+|Completion of {{SCP|Quest}} [[Dragon Slayer II]]
+|-
+|[[The Whisperer]]
+|[[Lassar Undercity]]
+|{{SCP|Slayer|1}}
+|Completion of {{SCP|Quest}} [[Desert Treasure II - The Fallen Empire]]
+|-
+|[[Zulrah]]
+|[[Poison Waste]]
+|{{SCP|Slayer|1}}
+|Completion of {{SCP|Quest}} [[Regicide]]
+|}
+
+==Nightmare Zone==
+The [[Nightmare Zone]] is a [[minigame]] that allows players to fight bosses from [[quests]] they have completed. Players can fight [[Nightmare Zone#Bosses|up to 42 unique boss monsters]] from previous quests.
+
+==See also==
+*[[Strongest monster]]
+*[[Monster]]
+*[[PvM]]
+*[[Deadman: Annihilation/Breach monsters|Deadman Annihilation breach monsters]]
+*[[Rabbit (Prifddinas)]]
+*[[Cow (Nightmare Zone)]]
+*[[Demonic gorilla]]/[[Tormented Demon]]
+*[[Money making guide/Combat]]
+*[[Bestiary/Bosses]]
+
+{{Bosses}}
+[[Category:Bosses| ]]

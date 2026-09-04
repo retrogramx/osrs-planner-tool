@@ -1,0 +1,322 @@
+{{cleanup|needs more explanations on fastest methods}}
+{{Iron Guide Links}}
+[[Construction]] training on an Ironman is not very different from training the skill [[Construction training|normally]]; however, sourcing the required [[logs]] and/or [[plank]]s does require additional planning.  
+
+==Early Training: Quests==
+{{Main|Quest experience rewards#Construction}}
+
+Early levels can be skipped by completing a few quests. Some easily available early-game quests are:
+* [[Daddy's Home]] rewards 544 Construction experience, a [[player-owned house]], a crate full of beginner construction supplies. 
+** This quest does  require 5 [[Bolt of cloth|bolts of cloth]], which can only be purchased for {{NoCoins|3,250}} coins; however, the rewards provided are worth more than the initial investment amount.
+* [[Tower of Life]] requires {{SCP|Construction|10}}, rewards 1,000 Construction experience
+* Refer to the [[Optimal quest guide/Ironman]] guide for the optimal order to complete quests while minimising manual training.
+
+==Fastest Experience==
+[[Planks]] used for training construction award the same amount of experience per plank regardless of the item built<sup>[1]</sup>.  In general, the fastest experience per hour relies on using  the highest level [[Planks|plank]] possible while also building the items that requires most planks per build. For example, building a [[repair bench]] requires 2 [[Oak plank|oak planks]]  and awards 120 [[Construction]] experience. A  [[crafting table 1]] requires 4 [[Oak plank|oak planks]] and awards 240 [[Construction]] experience. Because both actions take the same amount of time, it is two times the experience per hour to build the [[crafting table 1]].
+
+Another important factor is the cost the player is willing to invest in training [[Construction]].  Because the experience amounts are static<sup>[1]</sup>,  the fastest training method may not be the most sustainable.  Players should balance their experience rates with the additional cost incurred for higher experience [[Planks]] or other materials.  
+{| class="wikitable"
+!Item
+!Cost
+!Experience
+!GP/Exp
+|-
+|{{Plink|Plank}}
+|{{Coins|100}}
+|29
+|3.45
+|-
+|{{Plink|Plank|txt=Plank (Mahogany Homes)}}
+|{{Coins|100}}
+|93.7
+|1.07
+|-
+|{{Plink|Oak plank}}
+|{{Coins|250}}
+|60
+|4.12
+|-
+|{{Plink|Oak plank|txt=Oak plank (Mahogany Homes)}}
+|{{Coins|250}}
+|200
+|1.25
+|-
+|{{Plink|Teak plank}}
+|{{Coins|500}}
+|90
+|5.56
+|-
+|{{Plink|Teak plank|txt=Teak Plank (Mythical Cape)}}
+|{{Coins|500}}
+|123.3
+|4.06
+|-
+|{{Plink|Teak plank|txt=Teak plank  (Mahogany Homes)}}
+|{{Coins|500}}
+|287.9
+|1.74
+|-
+|{{Plink|Mahogany plank}}
+|{{Coins|1500}}
+|140
+|12.50
+|-
+|{{Plink|Mahogany plank|txt=Mahogany plank (Mahogany Homes)}}
+|{{Coins|1500}}
+|346.1
+|4.33
+|}
+
+===Levels 16+: Oak planks===
+
+* {{SCP|Construction|16}} - Make [[Crafting table 1|crafting table 1s]] in your [[Workshop]].
+* {{SCP|Construction|33}} - Make [[Oak larder|oak larders]] in your [[kitchen]].
+
+=== Levels 38+: Teak planks ===
+
+* {{SCP|Construction|38}} - Make [[Teak table|teak tables]] in your [[dining room]].
+* {{SCP|Construction|66}} - Make [[Teak garden bench|teak garden bench]] in  your [[Superior garden]].
+
+=== Levels 40+: Mahogany planks ===
+
+* {{SCP|Construction|40}} - Make [[Mahogany bookcase|mahogany bookcases]] in your [[parlour]], [[quest hall]], or [[study]].
+* {{SCP|Construction|52}} - Make [[Mahogany table|mahogany tables]] in your [[Dining room]].
+
+==Other methods==
+===Passive training: Wintertodt===
+Early levels can be bypassed by defeating [[Wintertodt]] while training [[Firemaking]]. Having a [[player-owned house]] is required to receive Construction experience from repairing braziers (4{{X}} player's Construction level). To maximize experience, train [[Construction]] to level 20 before doing Wintertodt. [[Wintertodt/Strategies#Solo_Method|Soloing Wintertodt]] will yield substantially more construction experience and loot rolls per hour at the cost of some Firemaking experience per hour.
+
+=== Passive training: Tempoross ===
+While slower than [[Wintertodt]], fixing the [[Totem pole|damaged totem poles]] during the [[Tempoross]] fight will award 4x the player's Construction level. To maximize experience, train [[Construction]] to level 20 before doing Tempoross.
+
+===Levels 1–99: Mahogany Homes===
+{{Main|Mahogany Homes}}
+{{Inventory
+|align = right
+|caption = Recommended setup|Varrock teleport (tablet)\999|Ardougne teleport (tablet)\999|Falador teleport (tablet)\999|Teleport to house (tablet)\999|Plank sack|Rune pouch|Saw|Hammer|Steel bar|Steel bar|Teak plank|Teak plank|Teak plank|Teak plank|Teak plank|Teak plank|Teak plank|Teak plank|Teak plank|Teak plank|Teak plank|Teak plank|Teak plank|Teak plank|Teak plank|Teak plank|Teak plank|Teak plank
+}}
+{{Rune pouch
+| align = right
+| 1 = Astral rune\1000
+| 2 = Cosmic rune\1000
+| 3 = Air rune\2000
+}}
+Completing Mahogany Homes contracts is an alternative training method that is more interactive and offers more experience per plank but much slower than traditional training methods. Mounted mythical capes with [[teak plank]]s offer up to three times higher experience per hour than adept Mahogany Homes contracts; this time save makes up for requiring more logs and coins if you can make approximately {{NoCoins|600,000}} coins per hour or if money is not the limiting factor.
+<!--Adept (teak) contracts for Mahogany Homes are 140,000 experience per hour ish, but cost about 500ish teak planks per hour, while myth capes are 3 times that but cost 3300 planks per hour. So if you spend 3 hours doing contracts, that is the same experience for only 1500 planks. Teak planks are most optimistically worth 660 coins each, 500 to make planks and 160 coins from Managing Miscellania set to collect teaks (50,000 for 301 logs with 10 workers). Cutting them yourself is less efficient, so this is the best case. The 2 hours you save cost you close to 1,200,000 coins, plus some extra time making logs. Obviously if you do a lot of Slayer tasks, you eventually have enough cash, but for low and mid game accounts who want all the nice PoH features money still matters. In those cases, doing adapt contracts is generally better because they are so much more money efficient. -->
+
+{| class="wikitable"
+!Tier
+!{{SCP|Construction}} Level
+!Materials
+|-
+|Beginner
+|1
+|{{plink|Plank}}s<br />{{plink|Steel bar}}s
+|-
+|Novice
+|20
+|{{plink|Oak plank}}s<br />{{plink|Steel bar}}s
+|-
+|Adept
+|50
+|{{plink|Teak plank}}s<br />{{plink|Steel bar}}s
+|-
+|Expert
+|70
+|{{plink|Mahogany plank}}s<br />{{plink|Steel bar}}s
+|}
+
+This method requires you to teleport around Gielinor and rebuild the furniture of the citizens inhabiting various cities. There are 12 houses spread over [[Varrock]], [[Falador]], [[East Ardougne]] and [[Hosidius]]. All cities contain 3 possible houses to refurnish, and a house requires on average 13 planks to complete. Some furniture requires a steel bar. If you have a [[diary cape]], it is slightly faster to teleport with the diary cape to Sarah (Toby) and Ross (Two-pints). It is recommended to put your player-owned house in Hosidius since Barbara is close to the house portal. Charged [[ring of wealth|rings of wealth]] are recommended, as the teleport to Falador Park is a bit faster than the spellbook teleport. If you have a limited amount of ring of wealth charges, it is instead recommended to use [[Falador Teleport]]. Fill your rune pouch with teleports to Varrock, Home, and Ardougne, and have a charged [[Xeric's talisman|Xeric's Talisman]] equipped for Hosidius [[Mahogany Homes#Construction contracts|contracts]]. Ideally, you should only use the [[Falador east bank]] when you have a contract in Falador, and the bank in Hosidius when you have a contract at one of the two north houses (you use teleport to house for the south house). If you run out of supplies before reaching one of these banks, bank at [[Seers' Village|Seers Village]]. You should buy the [[plank sack]] as soon as possible, and then get the outfit pieces.
+
+This method is significantly faster on the [[Lunar Spellbook|Lunar spellbook]], as players can obtain a new construction contract through the NPC Contact spell. For this method, fill your [[rune pouch]] with [[astral rune|astral]], [[cosmic rune|cosmic]], and [[air rune]]s (or equip a [[staff of air]]) and equip a charged Xeric's talisman and a ring of wealth. Players will also need to have teleport tablets for Varrock and Ardougne (and Falador, if not using a ring of wealth).
+
+For players without a diary cape, it is marginally faster to equip a charged [[chronicle]] and teleport to the [[Champion's Guild]] when assigned a contract in Sarah's house along Varrock's southern wall.
+===Levels 47-99: Mounted mythical capes===
+At 47 Construction, [[Mythical cape (mounted)|mounted mythical capes]] become available with the completion of [[Dragon Slayer II]], which significantly reduces the amount of [[teak plank]]s needed for training. Constructing mounted mythical capes increases the experience per plank to 123 rather than 90 because of a bonus 100 experience for using the [[mythical cape]].
+
+Items cannot be dropped in building mode and it is possible to receive a full inventory of planks from the butler before removing the mounted mythical cape. It cannot be removed without inventory space for the cape, so a [[plank sack]] or equipable item in your inventory can be used to make space temporarily.
+
+==Obtaining Supplies==
+Early construction supplies can be gathered manually; however, there are a few helpful methods when starting out:  
+
+* Picking up [[Plank|regular planks]] that spawn near the [[Barbarian Outpost]] and in [[Port Khazard]] are recommended as both locations are near to a [[bank]]. 
+* Defeating [[Tempoross]] and collecting its [[Reward pool|rewards]] can provide [[Plank|regular]] and [[Oak plank|oak planks]] along with a lot of other Ironman-friendly supplies. 
+* Early [[shipwreck salvaging]] provides [[Plank|regular]] and [[Oak plank|oak planks]]; however, the salvaging locations may be far from a bank.  
+** Salvaging  also provides [[Sawmill coupon|sawmill coupons]] which  can be exchanged for free planks at a [[Sawmill]]. 
+* Mobsters from [[Intelligence Gathering]]  often drop planks when killed.
+
+Additional supplies can also be gathered by completing  the following: 
+
+* [[Teak logs|Teak]] or [[mahogany logs]] can also be passively obtained via [[Managing Miscellania]] every day. 
+** If collecting [[maple logs]] for [[Fletching]], put 5 workers on teak or mahogany Woodcutting. Mahogany is faster but more expensive and teak is only recommended if attempting to save some money on Construction training.
+* Wintertodt [[Reward Cart|rewards]] can provide a decent supply of various logs as well depending on the player's Woodcutting level.
+* High-level players can also get Construction supplies from combat activities such as the [[Chambers of Xeric]], [[Zulrah]], and [[Callisto]].
+* The most consistent way of obtaining planks of any type is by cutting the logs and then having a player-owned house [[butler]] convert them into planks and bank them for you. 
+** For the fastest possible gathering and experience rates is by using [[Tick_manipulation#1.5-tick_Woodcutting|1.5-tick woodcutting]] when gathering player-grown teak or mahogany logs on [[Fossil Island]]. 
+** If training Woodcutting simultaneously, make sure you get the most [[anima-infused bark]] to buy [[sawmill voucher]]s as you can redeem one sawmill voucher to get one extra plank for free, depending on the type of log in the inventory.
+* With the introduction of [[Auburnvale]], it is now the closest sawmill to a bank, beating out the  [[Woodcutting  Guild]] for those that would prefer the standard method.
+
+===Plank Making Methods===
+{|class="wikitable lighttable"
+!style="width:12%"|Method
+!style="width:15%"|Requirements
+!style="width:22%"|Items needed
+!class="unsortable"|Procedure
+|-
+|'''Sawmill (Auburnvale)'''
+All planks
+|Completion of [[Children of the Sun]]
+|
+* Coins
+|Run to the sawmill north-west of the bank in Auburnvale and back. 
+With the plank sack and the log basket this method can result in 8000 planks an hour, surpassing the PVP butler. 
+|-
+|'''Butler (PvP world)'''
+
+All planks
+|{{SCP|Magic|45}} [[Magic]]
+[[Butler]]
+|
+* [[Oak logs|Oak]], [[Teak logs|teak]], or [[mahogany logs]]
+* Coins
+* [[Runes]] for [[Teleport to House]] and [[Camelot Teleport]]
+|In a PvP world, teleport to [[Camelot]] to the bank chest in the safezone. Get the logs then [[Teleport to House]]. Give the butler logs to take to the sawmill then teleport back to Camelot to repeat the process. The butler automatically banks the planks.
+
+This method yields ~7,000 planks per hour, but with additional cost of the butler services.
+
+'''Warning:''' If your house is not locked or private chat setting is not '''Off''', players can enter your house and attack you. If they do, leaving or re-teleporting to your house will remove them.
+|-
+|'''Butler (Farming Guild)'''
+
+All planks
+|{{SCP|Farming|85}}
+{{SCP|Construction|75}}<br/>[[Butler]]
+|
+* [[Oak logs|Oak]], [[Teak logs|teak]], or [[mahogany logs]]
+* Coins
+* 2 [[spirit sapling|spirit saplings]] (for one spirit tree grown in the farming guild and one planted in your [[POH]])
+|Using the [[Farming Guild]] bank, withdraw 26 logs, then travel to your player-owned house using a spirit tree. Give the butler logs to take to the sawmill then take the spirit tree back to the farming guild to repeat the process. The butler automatically banks the planks.
+
+This is slower than the PvP world teleporting method but saves on law runes and avoids the risk of misclicking and leaving the safe zone around the Camelot bank chest, which may be valuable to [[Ironman Mode|hardcore Ironmen]].
+|-
+|'''Butler (Rimmington)'''
+
+Oak planks
+|{{SCP|Woodcutting|15}} ({{SCP|Woodcutting|41+}} recommended)
+{{SCP|Construction|50}}
+|
+* [[Axe]]
+* Coins
+|With a player-owned house in [[Rimmington]], cut oak trees north-east of the house portal, enter your house, call the demon butler, and send him to the sawmill. Exit the house and the butler will automatically send the planks to the bank.
+
+The process can be made slightly faster by using tick manipulation, however this is slightly more expensive due to the butler costs (as fewer logs are deposited per trip) and requires significantly more effort.
+|-
+|'''Butler (Ape Atoll)'''
+
+Teak planks
+|{{SCP|Woodcutting|35}} ({{SCP|Woodcutting|61+}} recommended)
+{{SCP|Construction|67}}<br />{{SCP|Magic|90}} [[Magic]]<br />Completion of [[Monkey Madness I]]
+|
+* [[Axe]] and Coins
+* [[Runes]] for [[Ape Atoll Teleport (Arceuus)|Ape Atoll Teleport]] spell
+* [[Teleport to house]] [[Magic Tablet|tablets]]
+* A monkey [[greegree]] if [[Monkey Madness II]] hasn't been completed
+|Teleport to [[Ape Atoll Dungeon]], climb up to the surface, and cut the teak trees to the east. Teleport to house with a tablet, call the demon butler and send him to the sawmill. Teleport back to Ape Atoll, and the butler will automatically send the planks to the bank. If [[Monkey Madness II]] is not completed, equip a greegree when cutting the logs and unequip it before teleporting to the player-owned house.
+
+The process can be made slightly faster by using tick manipulation, however this is slightly more expensive due to the butler costs (as fewer logs are deposited per trip) and requires significantly more effort.
+|-
+|'''Butler (Fossil Island)'''
+
+Mahogany planks
+|{{SCP|Woodcutting|50}} ({{SCP|Woodcutting|61+}} recommended)
+{{SCP|Farming|55}}<br />{{SCP|Agility|70}} for the [[Hole (Fossil Island)|hole]] shortcut<br />{{SCP|Construction|70}} for the revitalisation pool<br />Completion of [[Bone Voyage]]<br />Completion of hard tasks in the [[Kandarin Diary]] (recommended)<br />
+|
+* [[Axe]] and Coins
+* [[Knife]] and a [[Teak logs|teak log]] for [[tick manipulation]]
+* Runes for [[Teleport to House]] and [[Camelot Teleport]]
+* [[Digsite pendant]]s
+|Teleport to the [[Digsite]] with the [[Digsite pendant]], run east, quick-travel to [[Fossil Island]] and use the [[Hole (Fossil Island)|Agility shortcut]] to the hardwood patches. Cut mahogany trees using the 1.5-tick method of tick manipulation. Teleport to House, call a demon butler, and send him to the sawmill. Use the pool for run energy restoration if needed and teleport back to the Digsite. When the Digsite pendant has only one charge left, teleport to a bank after sending the butler to a sawmill, grab a fully charged one, and teleport to the Digsite.
+
+This is the fastest method for banking Construction; at 99 Woodcutting and with good performance it is possible to get up to 110,000 Woodcutting and 120,000 banked Construction experience per hour. The method also works for teak, but mahogany is faster overall since more Construction experience is banked per trip, and using mahogany planks for Construction training is faster than teaks.
+
+Alternatively, one can simply bank the logs at the museum camp, but one will have to plankmake the logs later and use stamina potions.
+|-
+|'''Sawmill (Woodcutting Guild)'''
+
+Oak planks
+|{{SCP|Woodcutting|60}}
+|
+* [[Axe]]
+* Coins
+|Cut [[oak tree]]s in the eastern side of the [[Woodcutting Guild]], convert the [[oak logs]] into oak planks in the sawmill and deposit them in the bank deposit box.
+|-
+|'''Sawmill (Woodcutting Guild)'''
+
+Oak, teak and mahogany planks
+|{{SCP|Woodcutting|60}}
+|
+* [[Axe]] and Coins
+* [[Plank sack]]
+|This requires having logs from [[Managing Miscellania]] already, making this a fairly efficient and inexpensive method. The plank sack helps with efficiency.
+
+With an empty plank sack, a large amount of coins, and the rest with teak or mahogany logs.  Run from the Woodcutting Guild bank to the sawmill, convert the logs into planks, and put them in the plank sack. Cut an inventory of oak logs at the adjacent oak trees, convert into oak planks, and bank. 
+
+This method yields an equal number of oak planks and teak/mahogany planks more quickly than doing them individually.
+|-
+|'''Sawmill (Varrock)'''
+
+Oak planks
+|{{SCP|Woodcutting|30}} ({{SCP|Woodcutting|41+}} recommended)
+{{SCP|Firemaking|40}}<br />Completion of [[Enlightened Journey]]
+|
+* [[Axe]] and Coins
+* [[Willow log]]s
+* [[Rings of dueling]]
+* [[Looting bag]]
+|Store 100 [[willow logs]] in the crate near the [[balloon transport system]]. Start at [[Castle Wars]] and take the balloon to Varrock [[Lumber Yard]]. Cut the trees to turn into planks until a full inventory is obtained. Pay the [[Sawmill operator]] to cut the logs into planks. Head north into the [[Wilderness]] to fill the [[looting bag]] with planks. Exit the Wilderness to repeat the process until the loot bag and inventory are full, then dueling ring back to Castle Wars. Alternatively, with {{SCP|Firemaking|60}} and {{SCP|Woodcutting|60}}, cut the [[yew tree]]s south of the Lumber Yard and take the balloon back to Castle Wars.
+You may instead choose to simply teleport to Castle Wars, cut oak trees near the balloon, take the balloon to Varrock, make the planks, and teleport back to Castle Wars to repeat, as this may be faster at the cost of more [[Ring of dueling|rings of dueling]]. This method does not require the [[looting bag]].
+|-
+|'''Sawmill (Prifddinas)'''
+
+Teak or mahogany planks
+|Completion of [[Song of the Elves]]
+|
+* [[Axe]] and coins
+* [[Plank sack]] for more planks per trip
+* [[Farming cape]] or [[Rune pouch]] with runes for Varrock Grand Exchange teleport
+* [[Knife]] for [[tick manipulation]]
+* [[Sawmill voucher]] for extra planks
+|Even with a plank sack, cutting logs at Fossil Island '''may''' be marginally faster, but this method also grants you [[crystal shards]] and the opportunity to grab nearby [[Crystal impling|crystal implings]]. Doing this method on designated [[Forestry]] worlds also lets you participate in frequent [[Forestry#Forestry events|Forestry events]]. After obtaining [[anima-infused bark]] from these events, it is beneficial to buy sawmill vouchers to save money and time chopping logs and converting them to planks.
+Teleport to [[Prifddinas]] using a spirit tree and run directly east. You can cut either Teak or Mahogany logs here, use the nearby sawmill to make planks (which also saves you a fee from your butler), and then add them to your plank sack to get two inventories per trip. Bank your planks and repeat by using a Farming cape, Grand Exchange teleport, or simply run to the nearby bank in Prifddinas.
+|-
+|'''Tempoross'''
+
+Normal and oak planks
+|{{SCP|Fishing|35}}
+|
+* [[Harpoon]]
+* [[Rope]]
+|Defeat [[Tempoross]] and fish at the [[reward pool]] to receive normal and oak planks amongst other resources.
+|-
+|'''Tackle organised crime'''
+
+All planks 
+|Decent combat stats
+|
+* Good food
+* [[Prayer potion|Prayer potions]]
+* Transportation methods around [[Great Kourend]]
+|Talk to [[Captain Ginea]] in the [[Shayzien Encampment]], south-east of the bank chest to obtain information on when and where gangs will appear. 
+
+Hop worlds to gather info on them all to efficiently use a single location. Go there. When the gangs appear, kill all of the members, hop worlds, and repeat. Gangsters drop every type of plank noted.
+|}
+
+====Tips for converting logs into planks via your player-owned house butler====
+Stop your [[butler]] from getting stuck on your house portal: When summoning your butler to give them logs, they may occasionally get stuck on the western corner of the house portal instead of walking directly to you. To fix this, your house portal must be located in the standard [[garden]] tile (as opposed to a formal garden). Then all you have to do is plant [[reeds]] in this tile, and then rotate your garden so that the reeds are West of your house portal.
+
+Banking too quickly for your butler: Sometimes the butler will be waiting for you at your house, having not taken the planks to your bank. This has to do with your house instance not closing; the amount this happens can be reduced by using a higher population world, this is because the instance will close quicker. If you find yourself in this situation you can manually use a log from your inventory on him, this will make him send the planks he's holding to your bank while taking your logs to the sawmill.
+
+{{Training guides}}
+[[Category:Ironman Mode]]
+[[Category:Construction]]
+[[Category:Members]]

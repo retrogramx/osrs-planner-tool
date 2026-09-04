@@ -1,0 +1,94 @@
+{{Iron Guide Links}}
+{{cleanup}}
+[[Ranged]] is trained by Ironmen similar to [[Pay-to-play Ranged training|the normal training methods]], however an emphasis is placed on affordable and easily obtainable ammunition, particularly in the early-game. Notably, this does not recommend using a [[dwarf multicannon]].
+
+==Early training: Quests==
+{{Main|Quest experience rewards#Ranged}}
+There are few [[quest]]s that reward [[Ranged]] [[experience]], so the 10,000 combat experience reward from [[Shadow of the Storm]] can be used to skip early Ranged levels to get to 27. In addition, completing the [[Death to the Dorgeshuun]] and [[Horror from the Deep]] quests grant a total of 6,663 Ranged experience, enough to level up to 32 Ranged from 0 experience. A few of the more attainable quests are:
+
+* [[Death to the Dorgeshuun]] requires [[The Lost Tribe]], {{SCP|Thieving|23}}, and {{SCP|Agility|23}}, rewards 2,000 Ranged experience
+* [[Horror from the Deep]] requires {{SCP|Agility|35}}, rewards 4,663 Ranged experience
+* [[Heroes' Quest]] requires many quests, {{SCP|Quest|55}}, {{SCP|Cooking|53}}, {{SCP|Fishing|53}}, {{SCP|Herblore|25}}, and {{SCP|Mining|50}}, rewards 2,075 Ranged experience
+
+After the initial levels, there are a few more viable quests that reward range experience:
+
+* [[Temple of Ikov]] requires {{SCP|Ranged|40}} (skippable), {{SCP|Thieving|42}}, rewards 10,500 Ranged experience
+* [[Zogre Flesh Eaters]] requires [[Big Chompy Bird Hunting]], [[Jungle Potion]], {{SCP|Ranged|30}}, {{SCP|Smithing|4}}, and {{SCP|Herblore|8}}, rewards 2,000 Ranged experience
+
+At 30 Ranged, is highly recommended to complete [[Animal Magnetism]] for access to [[Ava's device]]s, an item used to train Ranged more efficiently.
+
+==Fastest experience==
+===Levels 28-55: Dorgeshuun crossbow===
+[[File:Dorgeshuun crossbow detail.png|right|150px|thumb|The Dorgeshuun bone crossbow]]
+The [[Dorgeshuun crossbow]] is a good early-game Ranged weapon due to its low requirements and the affordability of bone bolts. Both can be purchased from [[Nardok's Bone Weapons]] in the [[Dorgesh-Kaan mine]] after the completion of [[The Lost Tribe]]. It excels against low defence targets, such as low level [[Slayer monsters]] and various [[Crab (disambiguation)#Monsters|crabs]]. Fighting the Gemstone crab awards between 14,500 and 27,000 ranged experience per hour, and the player can go from level 28 to 55 in around 7 hours.
+
+===Level 55+: Chinchompas===
+[[File:Monkey Madness II - Kruk's dungeon entrance.png|thumb|left|The entrance to Kruk's dungeon.]]
+
+At level 55 Ranged, the best way of gaining Ranged experience is to hunt [[carnivorous chinchompa]]s and use them at [[maniacal monkey]]s in [[Kruk's Dungeon]] on [[Ape Atoll]] after stacking them. They can be caught in the [[Feldip Hunter area]], but it can potentially be crowded, though the experience per hour using them is enough to still use this method. After 60 Ranged, it is strongly recommended to unlock the [[Gwenith Hunter area]], requiring completion of [[Song of the Elves]], or at 70 Ranged, the [[red chinchompa hunting ground]], requiring completion of the [[hard Western Provinces Diary]].
+
+Alternatively, hunt [[Black chinchompa (Hunter)|black chinchompas]] to use for better experience rates, but without high stats and good defensive equipment, [[player killers]] are much more of a threat. Otherwise keep training on ammonite crabs, however it is a lot slower.
+
+===Level 75+: Bosses and monsters===
+{{See also|Ironman Guide/Slayer}}
+With a high Ranged level, the remaining experience can be earned while killing bosses, demi-bosses, or monsters with valuable drops such as [[lizardman shaman]]s, [[demonic gorilla]]s, [[Zulrah]], and [[Alchemical Hydra]].
+
+====Slayer bosses====
+Ranging Slayer tasks is generally not recommended at higher levels, except when they are particularly low Ranged defence and their other defensive stats are higher. The [[toxic blowpipe]] is the only viable option for general Slayer training in terms of damage output; it is overall faster to use melee than a toxic blowpipe, including when killing [[Zulrah]] for the [[Zulrah's scales]].
+
+==Other methods==
+===Level 1+: Crabs===
+Generally [[Crab (disambiguation)#Monsters|Crabs]] have low offensive and [[Damage per second/Ranged#Step six: Calculate the Defence roll|defensive stats]] and relatively high [[Hitpoints|hit points]], making them good for training with [[Attack speed#Ranged weapons|fast weapons]] and a low attack bonus. As most crabs are aggressive to players, regardless of combat level, killing them only require attention to resetting their [[Tolerance#Mechanics|tolerance]]. Two notable variations are the [[Gemstone Crab]] which requires minimal attention at the cost of a reduced experience rate, and the [[Morytania]] [[Swamp crab]]s which has negative defences against all [[Ranged weapons|ranged types]] making them more accurate. 
+
+=== Levels 40-70: Dwarf multicannon ===
+After the completion of the [[Dwarf Cannon]] [[quest]], [[steel cannonballs]] can be made and used in a [[dwarf multicannon]] to train Ranged.
+
+It is good experience, especially at low levels, but is also expensive. Its damage output is high compared to a low Ranged level. It takes about 35,000 steel cannonballs to level up from level 40 to 70 Ranged while attacking with melee or Magic.
+
+===Level 55+: Nightmare Zone===
+{{Main|Nightmare Zone}}
+[[Nightmare Zone]] can be used after 55 Ranged to AFK train on low defence bosses while collecting some points for imbues on equipment later on.
+
+===Level 75+: Eclipse Atlatl===
+The [[Eclipse atlatl]] has a unique mechanic where its max hit is based on '''visible''' strength bonus and '''invisible''' ranged bonus (i.e. ranged prayers). Accuracy is still based on ranged bonuses. On the [[Combat style|rapid combat style]] and with mid-game strength gear, the atlatl is a [[Attack speed|three-tick weapon]] that can hit 30+. Irons with 75 Ranged and a high Strength level may elect to grind out this weapon and its [[Atlatl dart|ammunition]] from [[Moons of Peril|Moons of Peril.]] The atlatl darts deal standard ranged damage, not light ranged, and Ava's devices '''do''' collect them. 
+
+The atlatl's max hit mechanic means it pairs unusually with other equipment as the player progresses. Endgame ranged gear is not best-in-slot with this weapon. Instead, the atlatl deals more damage against low-defence enemies with high-strength equipment, even early-game strength equipment (e.g. amulet of strength, climbing boots). The best tribrid equipment such as [[Barrows gloves]], [[Amulet of fury]], and [[Aranea boots]] will usually increase DPS against high-defence enemies. The corresponding [[eclipse moon armour]] grants both ranged and strength bonuses, allows the use of its special attack, and inflicts [[Burn]] via its set effect. The [[Berserker ring (i)]] and later the [[Ultor ring]] usually outperform the [[Ring of shadows]] and [[Brimstone ring]]. 
+
+There are several caveats to the atlatl:
+
+* Unlike most enemies, the Moon bosses severely punish low defence, incentivizing grinding out [[Barrows]] tank armour first. A [[Crystal shield]] or [[Dragon sq shield|Dragon square shield]] will also make runs more consistent.
+* Although the Lunar Chest has a duplicate-protection mechanic where it will not award a duplicate until a player has completed a set, note that there are three sets of four pieces each.
+* The Eclipse set effect increases DPS and allows using the atlatl special attack, but the set effect cannot be used with a [[Slayer helmet (i)]]. For the purposes of training, note that the extra damage from Burn does not award experience.
+* As of yet (i.e. as of Varlamore Pt.2), Moons of Peril and the new fletching method are the only ways to obtain darts. The other two sets are desirable as well: the [[Blood moon armour]] set has the same offensive bonuses as [[Bandos armour]] and is best-in-slot against [[The Hueycoatl]]'s tail; the [[Blue moon armour]] set has the same offensive bonuses as [[Ahrim the Blighted's equipment|Ahrim's equipment]] plus strength bonuses for hybriding (e.g. for [[Dagannoth Kings]], [[Demonic gorilla|Demonic gorillas]], [[Tormented Demon|Tormented Demons]], and [[Raids]]).
+The atlatl can be used with a Slayer helmet (i) for general slayer. Additionally, it can be used with the full eclipse moon armour and a [[Salve amulet(ei)]] against undead monsters such as [[Undead Druid|Undead Druids]], [[Armoured zombie|Armoured zombies]], and [[Ankou|Ankous]]. The set's versatile hybrid bonuses are also effective for Raids.
+
+==Obtaining Ranged equipment==
+===[[Weapons]]===
+* Low-level thrown weapons, such as [[Iron knife|iron knives]] or [[iron dart]]s, are a good source of early Ranged experience when used on low-defence monsters. These weapons can be made from bars obtained while training [[Smithing]].
+* The [[Dorgeshuun crossbow]], or bone crossbow, offers good accuracy and damage considering its low requirements to obtain and use while [[bone bolts]] are very affordable.
+* The [[magic shortbow]] is available from [[spiritual ranger]]s ({{SCP|Slayer|63}}) and from [[Clue scroll (hard)|hard clue scrolls]]. For ammunition, [[rune arrow]]s can be obtained through [[Last Man Standing]], purchased from the [[Ranging Guild]] or obtained over time from various monster drops. [[Broad arrow]]s are also a good alternative after unlocking the ability to fletch broad ammunition from a [[Slayer master]]. Furthermore, the bow can be upgraded to a [[magic shortbow (i)]] with a [[magic shortbow scroll]] obtained from [[Last Man Standing]] or obtained as a drop from monsters in the Wilderness Slayer Cave.
+* The [[rune crossbow]] paired with [[broad bolt]]s is a staple weapon for Ironmen, due to its high accuracy, high damage, availability of ammunition, and its ability to be used with a shield. The crossbow can also fire [[ruby bolts (e)]] and [[diamond bolts (e)]], making it suitable for killing certain high-level boss monsters. Crafting the crossbow from scratch requires 91 Smithing, so two methods are commonly used to obtain the crossbow early:
+** The complete crossbow is dropped by the [[Crazy Archaeologist]], however because he is in the [[Wilderness]], Hardcore Ironmen are advised to be extremely cautious.
+** [[Runite limbs]] are dropped by several monsters, notably [[iron dragon]]s, [[steel dragon]]s, and the [[Deranged archaeologist|Deranged Archaeologist]]. The [[Runite crossbow (u)|unstrung crossbow]] is also dropped by [[Skeletal Wyvern]]s ({{SCP|Slayer|72}}). With either of these drops, only 69 [[Fletching]] (which can be [[boost]]ed) is required to finish the crossbow with a [[yew stock]] and/or [[crossbow string]].
+* [[Karil's crossbow]] offers higher damage per second than a rune crossbow with broad bolts. However, it must be obtained as a rare drop from [[Barrows]]. Additionally, it can only fire [[bolt rack]]s, which are obtained from a [[Barrows]] reward potential higher than 87.0% or they can be purchased from [[Ak-Haranu]]. These can be expensive to use as they cost 55 gp each when bought and do not benefit from the ammo-saving effects of [[Ava's device|Ava's devices]]. Alternatively, they can be bought from the [[Last Man Standing]] shop.
+* [[Hunters' sunlight crossbow|Hunter's sunlight crossbow]] has very similar stats to Karil's crossbow if using [[Sunlight antler bolts]], or better if using [[Moonlight antler bolts]] with 91 [[Hunter]]. Creating the crossbow requires 74 Fletching in addition to 72 Hunter to catch [[Sunlight antelope|Sunlight antelopes]]. As even creating the Moonlight antler bolts requires only 72 Fletching (62 for Sunlight antler bolts), players may opt to boost to the crossbow's one-off requirement.
+* The [[eclipse atlatl]] offers a unique training opportunity for players with high strength, as its max hit is determined by visible strength bonus (and ranged prayer), as described above.
+* Endgame ranged weapons include the [[toxic blowpipe]] from [[Zulrah]], the [[dragon hunter crossbow]] and [[twisted bow]] from [[Chambers of Xeric]], the [[Armadyl crossbow]] from [[Commander Zilyana]], the [[bow of Faerdhinen]] made from an [[enhanced crystal weapon seed]] from [[The Gauntlet]], and the [[Zaryte crossbow]] from [[Nex]].
+
+===Armour===
+* Complete [[Animal Magnetism]] to unlock [[Ava's attractor]], which significantly extends the lifespan of most ammunition and can be upgraded later to [[Ava's accumulator]] and [[Ava's assembler]].
+* [[Void Knight equipment]] is excellent against low-defence monsters due to its damage-boosting set effect. Depending on the situation, a [[black mask (i)]]  or [[slayer helm (i)|Slayer helmet (i)]] may offer better damage. After completing the [[hard Western Provinces Diary]], upgrade it to [[Elite Void Knight equipment]].
+* [[Green dragonhide armour]] can be purchased from various shops, though [[Dragon Slayer I]] must be completed to equip a [[Green d'hide body]].
+* [[Blue dragonhide armour|Blue]] and [[red dragonhide armour]] sets offer incremental upgrades from green. The most reliable way to obtain them is to kill their respective dragons and craft it from the dragonhide drops.  Alternatively, players can kill the [[Crazy archaeologist|Crazy Archaeologist]] for the [[red d'hide body]].
+* [[Black dragonhide armour]] offers the same Ranged attack bonus as [[Karil the Tainted's equipment|Karil's armour]], albeit with a lower Magic defence bonus. Though 84 [[Crafting]], which can be [[boost]]ed, is required to craft the [[black d'hide body]]. Alternatively, players that have completed the [[Bone Voyage|Bone Voyage quest]], can kill the [[Deranged archaeologist]] for the [[Black d'hide body]].  The body and chaps can also be obtained somewhat reliably from [[clue scroll (hard)|hard clue scrolls]]. [[Blessed dragonhide armour]] is also available from hard clue scrolls and it offers better defensive stats than black dragonhide, as well as Prayer bonus. 
+* The [[Eclipse moon armour]] offers marginally better offensive bonuses than blessed dragonhide, instead of a prayer bonus. 
+* The [[Hueycoatl hide armour]] is a direct upgrade from blessed d'hide, offering better prayer bonuses and mage defence. However, note that the Hueycoatl is quite tedious to grind without the Blood Moon set and the hides requires 78 Crafting to craft into the full set.
+*[[Barrows gloves]] offer superior bonuses compared to all vambraces except [[Zaryte vambraces]] from [[Nex]].
+* Complete [[clue scroll (medium)|medium clue scrolls]] to get [[ranger boots]]. Later, kill [[Cerberus]] for a [[pegasian crystal]] to upgrade them to [[pegasian boots]].
+* [[Dagannoth Supreme]] drops the [[archers ring]], which can then be [[Archers ring (i)|imbued]] through [[Nightmare Zone]]. Later, kill [[The Leviathan]] to upgrade it into a [[Venator ring]].
+* For amulets, the [[amulet of power]] is available early from the [[H.A.M. storeroom]]. After training Crafting, the [[amulet of glory]] and [[amulet of fury]] offer superior ranged bonuses. The best ranged neck-slot item is the [[necklace of anguish]], made from a [[zenyte shard]] obtained from [[demonic gorilla]]s.
+* Endgame ranged armour includes [[Armadyl armour]] from [[Kree'arra]] and [[masori armour]] from the [[Tombs of Amascut]].
+
+[[Category:Ironman Mode]]
+[[Category:Ranged]]
+{{Training guides}}

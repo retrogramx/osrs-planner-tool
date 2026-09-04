@@ -1,0 +1,576 @@
+{{External|rs|rsc=Cooking training}}
+{{Redirect|Cooking training|the free players' guide|Free-to-play Cooking training}}
+This guide aims to assist players in training [[Cooking]] by using the most effective methods available. The [[Grand Exchange]] prices of items will fluctuate, so check the prices before buying and selling supplies in large quantities.
+
+==Fastest experience==
+===Levels 1–30: Poison karambwan===
+From level 1 to 30, [[tick manipulation|1-tick]] cook [[raw karambwan]] into [[poison karambwan]]. Karambwan can be cooked without tick delay by holding down 1 and rapidly using raw karambwan on a fire or range. This method costs money, but the overall loss will be relatively small as reaching level 30 would take less than ten minutes.
+
+Note that cooking '''poison''' karambwan does not have any requirements, unlike [[cooked karambwan]].
+
+168 successfully cooked poison karambwan are required to reach level 30. Players are advised to buy at least 500 raw karambwan, as the burn rate is high at lower levels. Assuming all 500 raw karambwan are used to reach level 30, this would result in a loss of {{Coins|-{{GEP|Raw karambwan|500}}}}. If the player is not going to use tick manipulation, it is recommended to cook other fish (see below) as this is cheaper and it would offer similar experience rates.
+
+===Levels 1–30: Cooking fish===
+Alternatively, cook various fish for early experience. This is slower than cooking poison karambwan, but cheaper and less click-intensive.
+
+The fish needed for each level range are shown in the table below. Buy roughly 2.5 times more raw fish than the amount of successfully cooked fish needed, as the burn rate is fairly high at lower levels.
+{| class="wikitable align-center-1 align-center-2 align-center-3"
+!Levels
+!colspan="2" | Fish
+!XP each
+!XP total
+!Successfully cooked fish
+!Raw fish (approx.)
+!Price uncooked
+!Price cooked
+!Profit/Successfully cooked fish
+!Profit/XP (approx.)
+|-
+|1-5
+|{{plinkt|Sardine}}
+|40
+|388
+|10
+|25 {{plink|Raw sardine}}
+|{{Coins|{{GEP|Raw sardine}}}}
+|{{Coins|{{GEP|Sardine}}}}
+|{{Coins|{{GEP|Sardine}}-{{GEP|Raw sardine}}}}
+|{{Coins|({{GEP|Sardine}}-{{GEP|Raw sardine}}*2.5)/40}}
+|-
+|5-10
+|{{plinkt|Herring}}
+|50
+|766
+|16
+|40 {{plink|Raw herring}}
+|{{Coins|{{GEP|Raw herring}}}}
+|{{Coins|{{GEP|Herring}}}}
+|{{Coins|{{GEP|Herring}}-{{GEP|Raw herring}}}}
+|{{Coins|({{GEP|Herring}}-{{GEP|Raw herring}}*2.5)/50}}
+|-
+|10-15
+|{{plinkt|Mackerel}}
+|60
+|1,257
+|21
+|53 {{plink|Raw mackerel}}
+|{{Coins|{{GEP|Raw mackerel}}}}
+|{{Coins|{{GEP|Mackerel}}}}
+|{{Coins|{{GEP|Mackerel}}-{{GEP|Raw mackerel}}}}
+|{{Coins|({{GEP|Mackerel}}-{{GEP|Raw mackerel}}*2.5)/60}}
+|-
+|15-20
+|{{plinkt|Trout}}
+|70
+|2,059
+|30
+|75 {{plink|Raw trout}}
+|{{Coins|{{GEP|Raw trout}}}}
+|{{Coins|{{GEP|Trout}}}}
+|{{Coins|{{GEP|Trout}}-{{GEP|Raw trout}}}}
+|{{Coins|({{GEP|Trout}}-{{GEP|Raw trout}}*2.5)/70}}
+|-
+|20-25
+|{{plinkt|Pike}}
+|80
+|3,372
+|43
+|108 {{plink|Raw pike}}
+|{{Coins|{{GEP|Raw pike}}}}
+|{{Coins|{{GEP|Pike}}}}
+|{{Coins|{{GEP|Pike}}-{{GEP|Raw pike}}}}
+|{{Coins|({{GEP|Pike}}-{{GEP|Raw pike}}*2.5)/80}}
+|-
+|25-30
+|{{plinkt|Salmon}}
+|90
+|5,521
+|62
+|155 {{plink|Raw salmon}}
+|{{Coins|{{GEP|Raw salmon}}}}
+|{{Coins|{{GEP|Salmon}}}}
+|{{Coins|{{GEP|Salmon}}-{{GEP|Raw salmon}}}}
+|{{Coins|({{GEP|Salmon}}-{{GEP|Raw salmon}}*2.5)/90}}
+|}
+
+===Levels 30–99: Cooked karambwan===
+''Completion of the quest [[Tai Bwo Wannai Trio]] is required to successfully cook karambwan.''
+
+[[File:Tick manipulation - Cooking.gif|thumb|1-tick cooking karambwan.]]
+1-tick cooking [[Raw karambwan|karambwan]] provides the fastest Cooking experience. Karambwan can be cooked without tick delay by holding down 1 or space and rapidly using raw karambwan on a fire or range. This requires a lot of click accuracy and can be difficult to do consistently for long periods of time. Without tick manipulation this method offers much lower experience rates and is only recommended as a cheap low-effort alternative.
+
+Using one of the cooking locations right next to a bank offers the fastest experience rates for 1-ticking karambwan. These are located in [[Rogues' Den]], [[Myths' Guild]], and in the inner part of [[Mor Ul Rek]]. The [[Hosidius kitchen]] is not recommended for 1-ticking due to the increased distance to the bank, which will result in around 10–20% lower experience rates and make mistakes much more likely. Cooking gauntlets do not affect the burn rate for karambwan.
+
+Without tick manipulation the Hosidius kitchen is the best option up to level 96. The lower burn rate outweighs the faster cooking rate of Rogues' Den when not using tick manipulation, since the longer banking time will have less effect on experience rates at a lower cooking speed compared to 1-ticking. Completing the [[elite Kourend & Kebos Diary]] at level 79 is recommended for further decreased burn rates. At level 96, use one of the cooking locations right next to a bank for faster experience rates.
+
+The experience rates for 1-ticking assume using the Rogues' Den fire and cooking 5,000 karambwan per hour. At maximum efficiency, it is possible to cook up to 5,470 karambwan per hour. The AFK rates assume cooking 1,385 karambwan per hour at the Hosidius kitchen up to level 96 and 1,435 karambwan per hour in the Rogues' Den afterwards.
+
+{|class="wikitable align-center-1" style="text-align:right;"
+!{{SCP|Cooking}} level
+!XP/h (1t)
+!XP/h (AFK)
+|-
+|30
+|464,000
+|141,000
+|-
+|40
+|534,000
+|160,000
+|-
+|50
+|605,000
+|180,000
+|-
+|60
+|672,000
+|198,000
+|-
+|70
+|742,000
+|218,000
+|-
+|80
+|813,000
+|251,000
+|-
+|90
+|883,000
+|263,000
+|-
+|99
+|950,000
+|273,000
+|}
+
+The below table shows the profit from level 30 to 99. The numbers for 1-ticking assume using the Rogues' Den fire, and the numbers for AFK assume using the Hosidius kitchen up to level 96 and the Rogues' Den fire afterwards.
+
+{|class="wikitable align-left-1 align-center-2" style="text-align:right;"
+!Method
+!{{plinkp|Raw karambwan}} needed
+!Profit total
+!GP/XP
+|-
+|1-tick
+|75,185
+|{{Coins|({{GEP|Cooked karambwan}}*68532-{{GEP|Raw karambwan}}*75185)}}
+|{{Coins|({{GEP|Cooked karambwan}}*68532-{{GEP|Raw karambwan}}*75185)/13021068}}
+|-
+|AFK
+|71,289
+|{{Coins|({{GEP|Cooked karambwan}}*68532-{{GEP|Raw karambwan}}*71289)}}
+|{{Coins|({{GEP|Cooked karambwan}}*68532-{{GEP|Raw karambwan}}*71289)/13021068}}
+|}
+
+==Other methods==
+===Levels 10–99: Bake Pie===
+''Completion of the quest [[Lunar Diplomacy]] is required to cast [[Bake Pie]].''
+
+Baking pies using the [[Bake Pie]] spell offers relatively fast experience at a low amount of effort. It also offers passive [[Magic]] experience, which can be useful for some players. This method can be expensive due to the low supply of uncooked pies, however. Some options may also not be viable due to low trading volumes.
+
+Bake Pie is cast at a rate of once per 3 [[ticks]] instead of the 4 ticks on a range, yielding 33.33% faster cooking speeds. Additionally, the pies never burn. An inventory of 27 pies takes 81 ticks (48.6 seconds) to cook. 
+
+The experience rates in the table below assume players bake 1,885 pies per hour, which would also give 113,100 passive Magic experience per hour. The costs assume the player is wearing items that provide unlimited water and fire runes, such as a [[steam battlestaff]].
+
+{|class="wikitable sortable"
+!{{SCP|Cooking}} level
+!colspan="2"|Item
+!{{SCP|Cooking}} XP each
+!XP/h
+!Supply cost each
+!Profit each
+!Profit/XP
+|-
+|10
+|{{plinkt|Redberry pie}}
+|78
+|147,000
+|{{Coins|{{GEP|Astral rune}}+{{GEP|Uncooked berry pie}}}}
+|{{Coins|{{GEPT|Redberry pie}}-{{GEP|Astral rune}}-{{GEP|Uncooked berry pie}}}}
+|{{Coins|({{GEPT|Redberry pie}}-{{GEP|Astral rune}}-{{GEP|Uncooked berry pie}})/78}}
+|-
+|20
+|{{plinkt|Meat pie}}
+|110
+|207,000
+|{{Coins|{{GEP|Astral rune}}+{{GEP|Uncooked meat pie}}}}
+|{{Coins|{{GEPT|Meat pie}}-{{GEP|Astral rune}}-{{GEP|Uncooked meat pie}}}}
+|{{Coins|({{GEPT|Meat pie}}-{{GEP|Astral rune}}-{{GEP|Uncooked meat pie}})/110}}
+|-
+|29
+|{{plinkt|Mud pie}}
+|128
+|241,000
+|{{Coins|{{GEP|Astral rune}}+{{GEP|Raw mud pie}}}}
+|{{Coins|{{GEPT|Mud pie}}-{{GEP|Astral rune}}-{{GEP|Raw mud pie}}}}
+|{{Coins|({{GEPT|Mud pie}}-{{GEP|Astral rune}}-{{GEP|Raw mud pie}})/128}}
+|-
+|30
+|{{plinkt|Apple pie}}
+|130
+|245,000
+|{{Coins|{{GEP|Astral rune}}+{{GEP|Uncooked apple pie}}}}
+|{{Coins|{{GEPT|Apple pie}}-{{GEP|Astral rune}}-{{GEP|Uncooked apple pie}}}}
+|{{Coins|({{GEPT|Apple pie}}-{{GEP|Astral rune}}-{{GEP|Uncooked apple pie}})/130}}
+|-
+|34
+|{{plinkt|Garden pie}}
+|138
+|260,000
+|{{Coins|{{GEP|Astral rune}}+{{GEP|Raw garden pie}}}}
+|{{Coins|{{GEPT|Garden pie}}-{{GEP|Astral rune}}-{{GEP|Raw garden pie}}}}
+|{{Coins|({{GEPT|Garden pie}}-{{GEP|Astral rune}}-{{GEP|Raw garden pie}})/138}}
+|-
+|47
+|{{plinkt|Fish pie}}
+|164
+|309,000
+|{{Coins|{{GEP|Astral rune}}+{{GEP|Raw fish pie}}}}
+|{{Coins|{{GEPT|Fish pie}}-{{GEP|Astral rune}}-{{GEP|Raw fish pie}}}}
+|{{Coins|({{GEPT|Fish pie}}-{{GEP|Astral rune}}-{{GEP|Raw fish pie}})/164}}
+|-
+|52
+|{{plinkt|Botanical pie}}
+|180
+|339,000
+|{{Coins|{{GEP|Astral rune}}+{{GEP|Uncooked botanical pie}}}}
+|{{Coins|{{GEPT|Botanical pie}}-{{GEP|Astral rune}}-{{GEP|Uncooked botanical pie}}}}
+|{{Coins|({{GEPT|Botanical pie}}-{{GEP|Astral rune}}-{{GEP|Uncooked botanical pie}})/180}}
+|-
+|60
+|{{plinkt|Mushroom pie}}
+|200
+|377,000
+|{{Coins|{{GEP|Astral rune}}+{{GEP|Uncooked mushroom pie}}}}
+|{{Coins|{{GEPT|Mushroom pie}}-{{GEP|Astral rune}}-{{GEP|Uncooked mushroom pie}}}}
+|{{Coins|({{GEPT|Mushroom pie}}-{{GEP|Astral rune}}-{{GEP|Uncooked mushroom pie}})/200}}
+|-
+|70
+|{{plinkt|Admiral pie}}
+|210
+|396,000
+|{{Coins|{{GEP|Astral rune}}+{{GEP|Raw admiral pie}}}}
+|{{Coins|{{GEPT|Admiral pie}}-{{GEP|Astral rune}}-{{GEP|Raw admiral pie}}}}
+|{{Coins|({{GEPT|Admiral pie}}-{{GEP|Astral rune}}-{{GEP|Raw admiral pie}})/210}}
+|-
+|73
+|{{plinkt|Dragonfruit pie}}
+|220
+|415,000
+|{{Coins|{{GEP|Astral rune}}+{{GEP|Uncooked dragonfruit pie}}}}
+|{{Coins|{{GEPT|Dragonfruit pie}}-{{GEP|Astral rune}}-{{GEP|Uncooked dragonfruit pie}}}}
+|{{Coins|({{GEPT|Dragonfruit pie}}-{{GEP|Astral rune}}-{{GEP|Uncooked dragonfruit pie}})/220}}
+|-
+|85
+|{{plinkt|Wild pie}}
+|240
+|452,000
+|{{Coins|{{GEP|Astral rune}}+{{GEP|Raw wild pie}}}}
+|{{Coins|{{GEPT|Wild pie}}-{{GEP|Astral rune}}-{{GEP|Raw wild pie}}}}
+|{{Coins|({{GEPT|Wild pie}}-{{GEP|Astral rune}}-{{GEP|Raw wild pie}})/240}}
+|-
+|95
+|{{plinkt|Summer pie}}
+|260
+|490,000
+|{{Coins|{{GEP|Astral rune}}+{{GEP|Raw summer pie}}}}
+|{{Coins|{{GEPT|Summer pie}}-{{GEP|Astral rune}}-{{GEP|Raw summer pie}}}}
+|{{Coins|({{GEPT|Summer pie}}-{{GEP|Astral rune}}-{{GEP|Raw summer pie}})/260}}
+|}
+
+===Levels 35/68–99: Jug of wine===
+Making [[jug of wine|jugs of wine]] offers fast experience, though requires more attention than cooking fish or casting Bake Pie.
+
+Jugs of wine are made by combining [[grapes]] with [[jug of water|jugs of water]] to make [[unfermented wine]]s. After finishing an inventory, deposit the unfermented wines into the bank and continue by making another inventory. After 12 seconds pass without creating an unfermented wine, all unfermented wines in the player's bank and inventory will ferment into jugs of wine, giving 200 experience each. Players do not have to wait for the wines to ferment while making them.
+
+Grapes are added to jugs of water once per 2 ticks. However, with only 14 wines produced per inventory and with twice the creation speed, jugs of wine require more attention and banking than fish; one inventory of wines is created in 16.8 seconds, whereas an inventory of fish takes 67.2 seconds to cook.
+
+Below level 68, a [[jug of bad wine]] can be produced for 0 experience, with the failure chance scaling with level. If below level 68, only make enough wines to get to their next cooking level (and a few extra to account for failures), then pause for 12 seconds to let the wines ferment and gain the level.
+
+Players can gain up to 490,000 experience per hour from level 68 onwards. 
+
+Jugs of wine required: 62,147
+
+* Experience required: 12,429,399
+* {{Coins|{{GEP|Jug of water}}}} per [[jug of water]]
+* {{Coins|{{GEP|Grapes}}}} per [[grapes]]
+* {{Coins|{{GEPT|Jug of wine}}}} value per [[Jug of wine]]
+* {{Coins|{{#vardefineecho:winecost|{{#expr:{{GEPT|Jug of wine}}-{{GEP|Jug of water}}-{{GEP|Grapes}}}}}}}} cost per [[wine]]
+* {{Coins|{{#var:winecost}}/200 round 3}} cost per XP
+* {{Coins|{{#var:winecost}}*62147}} cost from level 68-99
+* {{Coins|{{#var:winecost}}*2450}} cost per hour (at 490,000 experience rate)
+* Experience per hour: from 470,000 to 490,000
+* Time spent: 25 hours, 30 minutes
+
+===Levels 30–99: Cooking fish===
+Cooking various fish is a cheap or profitable low-effort alternative to the faster methods. Cooking an inventory of fish takes around 1 minute and 14 seconds in the Hosidius Kitchen, including banking.
+
+The [[cooking gauntlets]] from the [[Family Crest]] quest reduce the burn rate for [[lobster]]s, [[swordfish]], [[monkfish]], [[shark]]s, and [[anglerfish]] when worn. Having the gauntlets is required for optimal rates when cooking these fish. Expect much lower rates without the gauntlets.
+
+Completing the [[Kourend & Kebos Diary#Easy|easy Kourend & Kebos Diary]] grants access to the cooking ranges in the [[Hosidius Kitchen]]. They provide a 5% increased chance of successfully cooking food over standard cooking ranges. This is increased to 10% after completing the [[Kourend & Kebos Diary#Elite|elite Kourend & Kebos Diary]], which requires level 84 Cooking (boostable). Cooking fish in the Hosidius Kitchen offers comparable or slightly higher experience rates than at the ranges in [[Myths' Guild]] or [[Mor Ul Rek]] because of the increased cooked rate, despite the ranges being slightly further away from a bank. The Hosidius ranges remain comparable or better until level 93, after which it becomes faster to cook anglerfish on a normal range.
+
+The fish and experience needed for each level range are shown in the table below. The experience rates assume 1,365 fish cooked per hour in the Hosidius Kitchen, or 1,435 fish cooked per hour in Myths' Guild or Mor Ul Rek. The rates assume wearing the cooking gauntlets (where applicable) and using the Hosidius kitchen unless noted otherwise. Cooking in the Hosidius kitchens assumes completion of the elite [[Kourend & Kebos Diary]] from level 79 Cooking onwards (with a +5 boost to level 84). Experience and profit rates take the burn rates into account. The actual amounts of raw fish needed can vary depending on luck, so slightly more or less fish may be needed. Swordfish and monkfish offer very similar rates for levels 68–80, so choose whichever is more profitable.
+
+{| class="wikitable align-center-1 align-center-2 align-center-3 align-center-4" style="text-align:right;"
+!Levels
+!colspan="2" | Fish
+!XP each
+!Approx. XP/h (w/o burns)
+!XP total
+!Raw fish needed
+!Cooked fish needed
+!Price raw
+!Price cooked
+!Profit total
+!Profit/XP
+|-
+|30–40
+|{{plinkt|Tuna}}
+|100
+|85,000–100,000
+(143,500)
+|23,861
+|340
+|239
+|{{Coins|{{GEP|Raw tuna}}}}
+|{{Coins|{{GEPT|Tuna}}}}
+|{{Coins|({{GEPT|Tuna}}*239-{{GEP|Raw tuna}}*340)}}
+|{{Coins|({{GEPT|Tuna}}*239-{{GEP|Raw tuna}}*340)/(100*239)}}
+|-
+|40–68
+|{{plinkt|Lobster}}<ref group="n">The rates assume using the Hosidius kitchen for levels 40–61, and Rogues' Den for levels 61–68.</ref>
+|120
+|120,000–165,000
+(172,000)
+|567,808
+|4,970
+|4,732
+|{{Coins|{{GEP|Raw lobster}}}}
+|{{Coins|{{GEPT|Lobster}}}}
+|{{Coins|({{GEPT|Lobster}}*4732-{{GEP|Raw lobster}}*4970)}}
+|{{Coins|({{GEPT|Lobster}}*4732-{{GEP|Raw lobster}}*4970)/(120*4732)}}
+|-
+|68–80
+|{{plinkt|Swordfish}}<ref group="n">The rates assume using the Hosidius kitchen for levels 68–77, and Rogues' Den for levels 77–80. In addition, cooking gauntlets do not affect the burn rate at the Hosidius kitchen for cooking swordfish.</ref><!-- Cooking gauntlets have no effect at the Hosidius kitchen according to the Swordfish page skilling success rate chart. -->
+|140
+|165,000–200,000
+(200,900)
+|1,381,036
+|10,186 
+|9,865
+|{{Coins|{{GEP|Raw swordfish}}}}
+|{{Coins|{{GEPT|Swordfish}}}}
+|{{Coins|({{GEPT|Swordfish}}*9865-{{GEP|Raw swordfish}}*10186)}}
+|{{Coins|({{GEPT|Swordfish}}*9865-{{GEP|Raw swordfish}}*10186)/(140*9865)}}
+|-
+|68–80
+|{{plinkt|Monkfish}}
+|150
+|165,000–200,000
+(215,200)
+|1,381,036
+|9,962
+|9,207
+|{{Coins|{{GEP|Raw monkfish}}}}
+|{{Coins|{{GEPT|Monkfish}}}}
+|{{Coins|({{GEPT|Monkfish}}*9207-{{GEP|Raw monkfish}}*9962)}}
+|{{Coins|({{GEPT|Monkfish}}*9207-{{GEP|Raw monkfish}}*9962)/(150*9207)}}
+|-
+|80–84
+|{{plinkt|Shark}}
+|210
+|275,000–285,000
+(301,300)
+|965,305
+|4,720
+|4,597
+|{{Coins|{{GEP|Raw shark}}}}
+|{{Coins|{{GEPT|Shark}}}}
+|{{Coins|({{GEPT|Shark}}*4597-{{GEP|Raw shark}}*4720)}}
+|{{Coins|({{GEPT|Shark}}*4597-{{GEP|Raw shark}}*4720)/(210*4597)}}
+|-
+|84–99
+|{{plinkt|Anglerfish}}<ref group="n">The rates assume using the Hosidius kitchen for levels 84–93, and Rogues' Den for levels 93–99.</ref>
+|230
+|305,000–330,000
+(330,000)
+|10,083,058
+|44,400
+|43,840
+|{{Coins|{{GEP|Raw anglerfish}}}}
+|{{Coins|{{GEPT|Anglerfish}}}}
+|{{Coins|({{GEPT|Anglerfish}}*43840-{{GEP|Raw anglerfish}}*44400)}}
+|{{Coins|({{GEPT|Anglerfish}}*43840-{{GEP|Raw anglerfish}}*44400)/(230*43840)}}
+|-
+|91–99
+|{{plinkt|Manta ray}}<ref group="n">The rates assume using the Hosidius kitchen for levels 91–99.</ref>
+|216.3
+|285,000–300,000
+(310,000)
+|7,131,600
+|37,900
+|32,980
+|{{Coins|{{GEP|Raw manta ray}}}}
+|{{Coins|{{GEPT|Manta ray}}}}
+|{{Coins|({{GEPT|Manta ray}}*32980-{{GEP|Raw manta ray}}*37900)}}
+|{{Coins|({{GEPT|Manta ray}}*32980-{{GEP|Raw manta ray}}*37900)/(216.3*43840)}}
+|}
+
+<references group="n" />
+
+==Choosing Cooking locations==
+Cooking most foods takes four [[tick|game ticks]], and 28 can be cooked per inventory. Therefore, a full inventory takes 112 ticks or 67.2 seconds, making Cooking one of the least attentive skills in the game.
+
+Assuming no banking and no food burned, a player could theoretically cook up to 1,500 raw foods per hour; however, factoring in bank-time, players can expect to cook between 1,300 and 1,400. The following table compares the different cooking locations by their bank proximity and corresponding items cooked per hour. The table assumes the bank distance is ran, no food is burnt, and that banking takes 3 seconds (5 ticks).
+{| class="wikitable sortable" style="text-align:center;"
+! class="unsortable" |Location
+!Spaces from bank*
+!Time to cook full inventory and bank
+!Food cooked per hour (assuming 0 burned)
+! class="unsortable" |Benefits
+! class="unsortable" |Location
+|-
+|Theoretical maximum
+|0
+|67.2 seconds (112 ticks)
+|1500
+|N/A
+|N/A
+|-
+|[[Myths' Guild]]
+|0
+|70.2 seconds (117 ticks)
+|1435
+|Has a stove and a [[bank]] diagonally next to the stove, making it better than the [[Rogues' Den]] due to it being a stove and not a fire. Requires completion of [[Dragon Slayer II]].
+|Right next to the bank. The [[mythical cape]] will teleport you there directly.
+|-
+|[[Rogues' Den]]
+|0
+|70.2 seconds (117 ticks)
+|1435
+|The banker ([[Emerald Benedict]]) is just a step away from the fire and never moves, allowing players to cut down on time spent walking. The fire is everlasting, so there is no need to worry about relighting it, saving inventory space. On the downside, Rogues' Den only has a fire as the means to cook, so it is only usable for cooking fish or meat, and it does not offer the benefit of reduced burning on a range.
+|Start of the Rogues' Den, just below the [[Burthorpe]] pub. A [[games necklace]] will bring you very close to the pub.
+|-
+|[[Bank boat]]
+|0
+|70.2 seconds (117 ticks)
+|1435
+|Only has a requirement of 16 [[Sailing]] and 6 [[Construction]] to build a [[Skiff]] and a [[Range (facility)]]. Better location compared to [[Rogues' Den]] because this is a stove and not a fire. 
+|Sail to the North east of [[Sunbleak Island]] near the [[Bank boat]], place your boat right next to the bank and cook on your own [[Range (facility)]].
+|-
+|[[Mor Ul Rek]]
+|0
+|70.2 seconds (117 ticks)
+|1435
+|A sulphur vent is located right next to a bank chest. The TzHaar will only allow those who show a [[fire cape]] to the TzHaar-Ket guarding the entrance to enter this area. The sulphur vent functions as a fire, so it is only usable for cooking fish or meat, and it does not offer the benefit of reduced burning on a range.
+|In the inner area of the city.
+|-
+|[[Cooks' Guild]]
+|2
+|71.4 seconds (119 ticks)
+|1411
+|Few players, so peaceful cooking environment. Requires a [[chef's hat]] and 32 Cooking to enter. Completion of the [[Hard Varrock Diary]] or 99 Cooking is required to use the bank.
+|Just south of the Grand Exchange. Can be teleported to directly with a [[skills necklace]].
+|-
+|[[Sunbleak Island]]
+|2
+|71.4 seconds (119 ticks)
+|1411
+|Quiet area, very few players unless on a forestry world. Requires 72 [[Sailing]] to get here, 70 [[Construction]] to build the [[Cooking pot (amenity)|Cooking Pot]] and [[Bank chest (amenity)|Bank Chest.]]
+|West of [[Ironwood tree|Ironwood Trees]]
+|-
+|[[Hosidius]] [[clay oven]]
+|6
+|73.8 seconds (123 ticks)
+|1365
+|Decreases the chances of burning your food by 5%, and up to 10% with completion of the elite [[Kourend & Kebos Diary]]. Requires completion of the easy Kourend & Kebos diary to use.
+|South-east of the [[Mess Hall]].
+|-
+|[[Ruins of Unkah]]
+|6
+|73.8 seconds (123 ticks)
+|1365
+|An everlasting fire that acts as a range. Fish can be picked up from other players dropping their Tempoross [[reward pool]] rewards several spaces away.
+|West side of the [[Ruins of Unkah]] by the [[Sea Spirit Dock]].
+|-
+|[[Port Khazard]]
+|8
+|75 seconds (125 ticks)
+|1344
+|Quiet spot that is routinely empty with nice scenery. The fire is everlasting, and easy to reach via [[Charter ship]]. Using an [[Ectophial]] to teleport to [[Port Phasmatys]] and using the charter from there makes for a fairly quick commute.
+|North of [[Yanille]], along the ocean.
+|-
+|[[Wintertodt Camp]]
+|8
+|75 seconds (125 ticks)
+|1344
+|Because it counts as a campfire, there is a higher chance of burning than a range. It is, however, very easy to access and everlasting.
+|South-west of the Wintertodt bank chest.
+|-
+|[[Museum Camp]]
+|12
+|77.4 seconds (129 ticks)
+|1302
+|While slightly further away than the previous two, this source counts as a range, and puts you close to where you'd do [[birdhouse runs]] while training.
+|Just north-east of the [[Fossil Island]] bank.
+|-
+|[[Catherby]]
+|17
+|80.4 seconds (134 ticks)
+|1253
+|Fish can be picked up from those training fishing nearby, resulting in slower experience but at no cost.
+|Just east of bank. Close to [[Camelot teleport]].
+|-
+|[[Cooking range (Lumbridge Castle)|Lumbridge Castle]]
+|22
+|83.4 seconds (139 ticks)
+|1208
+|Reduces the level at which certain foods are burned. Requires completion of [[Cook's Assistant]] Quest. This location is not recommended at higher levels when food is no longer burned, but may save time at earlier levels, as trips take longer but more food is successfully cooked. It's slightly faster to stand east of the ladder before going up so you don't run around the ladder. See [[Cooking range (Lumbridge Castle)]] for which foods.
+|Ground floor of the [[Lumbridge Castle]]. Close to the [[Lumbridge Teleport]] spell location.
+|}
+<nowiki>*</nowiki>Running takes 0.5 ticks per square. A bank 4 tiles away will require you to traverse 8 tiles (there and back), so crossing 8 tiles at 2 tiles per tick will take 4 ticks.
+
+=== Calculating exact times ===
+To find the exact number of ticks to cook one inventory at any given location, players can first use the formula <chem>117+(tiles)</chem>, where <chem>117</chem> refers to the minimum ticks taken to cook and bank, and <chem>(tiles)</chem> refers to the number of tiles the cooking source is from the bank. If run is enabled, divide (tiles) by 2 and round up. Players can translate this into seconds by multiplying it by <math>0.6</math>, the number of seconds per tick.
+
+Players can then find out how many items they can cook in an hour by taking the number of ticks and putting it into the formula <chem>(3600/(x))*28</chem>. Here, <chem>3600</chem> refers to the number of seconds in an hour, <chem>x</chem> refers to the number of '''seconds''' it takes to do one inventory, and <chem>28</chem> refers to the number of inventory spaces the player has. Players should round down to the nearest whole number.
+
+==Quests for Cooking experience==
+{{Main|Quest experience rewards}}
+{| class="wikitable sortable lighttable qc-active" style="text-align:center;"
+!Quest
+!Experience<br/>reward
+!data-sort-type="number"|Cooking<br/>requirement
+!class="unsortable"|Other requirements
+|-
+|[[Cook's Assistant]]||300||-||-
+|-
+|[[Rag and Bone Man I]]||500||-||-
+|-
+|[[Big Chompy Bird Hunting]]||1,470||data-sort-value="30"|{{SCP|Cooking|30}}||{{SCP|Fletching|5}}, {{SCP|Ranged|30}}
+|-
+|[[Gertrude's Cat]]||1,525||-||-
+|-
+|[[Heroes' Quest]]||2,825||data-sort-value="53"|{{SCP|Cooking|53}}||{{SCP|Quest|55}}, {{SCP|Fishing|53}}, {{SCP|Herblore|25}}, {{SCP|Mining|50}}
+|-
+|[[Forgettable Tale...]]||5,000||data-sort-value="22"|{{SCP|Cooking|22}}||{{SCP|Farming|17}}
+|-
+|[[Scrambled!]]||5,000||data-sort-value="36"|{{SCP|Cooking|36}}||{{SCP|Construction|38}}, {{SCP|Smithing|35}}
+|-
+|[[Tai Bwo Wannai Trio]]||5,000||data-sort-value="30"|{{SCP|Cooking|30}}||{{SCP|Agility|15}}, {{SCP|Fishing|5}}/65 for iron accounts
+|-
+|[[Meat and Greet]]
+|8,000
+| -
+| -
+|-
+|[[Recipe for Disaster]]||28,000||data-sort-value="70"|{{SCP|Cooking|70}}||{{SCP|Quest|175}}, {{SCP|Agility|48}}, {{SCP|Mining|50}}, {{SCP|Fishing|53}}, {{SCP|Thieving|53}}, {{SCP|Herblore|25}}, {{SCP|Magic|59}}, {{SCP|Smithing|40}}, {{SCP|Firemaking|50}}, {{SCP|Ranged|40}}, {{SCP|Crafting|40}}, {{SCP|Fletching|10}}, {{SCP|Slayer|10}}, {{SCP|Woodcutting|36}}
+|-
+!Total
+!57,620
+! colspan="2" |
+|}
+
+{{Training guides}}
+[[Category:Guides]]
+[[Category:Members]]

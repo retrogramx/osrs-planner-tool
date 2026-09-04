@@ -1,0 +1,236 @@
+{{Iron Guide Links}}
+[[File:Magic.png|left|frameless]]
+[[Magic]] training for [[Ironmen]] is often similar to [[Pay-to-play Magic training|the normal training methods]]. However, due to the increased difficulty in obtaining runes, there is a heavier emphasis on [[Slayer]] in early training, as well as the conservation of runes and the value of [[drops]].
+
+==Levels 1-34: quests==
+{{Main|Quest experience reward#Magic}}
+Early levels can be skipped by completing [[quest]]s rewarding Magic [[experience]]. The following quests, when completed in order, have minimal requirements and reward enough experience to get to level 34 Magic. Additionally, all quest fights below are [[Safespot|safe-spottable]] and all skill requirements are [[Temporary skill boost|boostable]].
+{| class="wikitable lighttable"
+!Quest
+!Magic experience reward
+!Combat
+!Additional requirements
+|-
+|[[Witch's Potion]]
+|325
+|Level 1 [[rat]]
+|None
+|-
+|[[Imp Catcher]] 
+|875
+|Level 2 [[imp]]s
+|None
+|-
+|[[The Grand Tree]]
+|2,150
+|Level 172 [[Black demon (The Grand Tree)|black demon]] 
+|{{SCP|Agility|25}}{{Boostable|yes}}
+|-
+|[[Watchtower]]
+|15,250
+|Level 68 [[Gorad]], level 27 [[giant bat]]
+|{{SCP|Magic|14}}{{Boostable|yes}}, {{SCP|Thieving|15}}{{Boostable|yes}}, {{SCP|Agility|25}}{{Boostable|yes}}, {{SCP|Herblore|14}} {{Boostable|yes}}, {{SCP|Mining|40}}{{Boostable|yes}}
+|-
+|[[The Giant Dwarf]]
+|1,500
+|None
+|{{SCP|Crafting|12}}{{Boostable|yes}}, {{SCP|Firemaking|16}}{{Boostable|yes}}, {{SCP|Magic|33}}{{Boostable|yes}}, {{SCP|Thieving|14}}{{Boostable|yes}}
+|-
+|Total
+|20,100
+|Various
+|{{SCP|Mining|40}}, {{SCP|Agility|25}}, {{SCP|Firemaking|16}}, {{SCP|Herblore|14}}, {{SCP|Crafting|12}}, {{SCP|Thieving|15}}
+|}
+
+==Levels 1/33-43: Combat==
+
+=== Level 1: Strike spells through splashing and Slayer ===
+Casting combat spells at early levels can be a good way to train [[Magic]], [[Hitpoints]], and optionally, [[Defence]]. Players who are able to give full attention are '''highly recommended''' to use these early levels to train [[Slayer]]. Use an [[elemental staff]], purchasable from [[Zaff's Staffs]]. Early money for runes can be obtained by collecting the 10,000 [[coins]] from the [[Stronghold of Security]], subduing [[Wintertodt]], training [[Ironman Guide/Thieving|Thieving]], collecting and selling [[Eclipse red|Eclipse Red]], or doing the [[Agility Pyramid]]. 
+
+====Monsters to train on====
+{| class="wikitable lighttable"
+!Monster
+!Location
+!Requirements
+!Benefits and cons
+|-
+|[[Zamorak warrior|Zamorak warriors]]
+|[[Ourania Cave]]
+|None
+|[[Rune scimitar]] drop
+|-
+|[[Blue dragon]]s
+|[[Taverley Dungeon]]
+|[[Anti-dragon shield]]
+|[[dragon bones|Dragon bone]] drops for [[Ironman Guide/Prayer|Prayer training]], but slower experience
+|-
+|[[Lava dragon]]s
+|Deep [[Wilderness]]
+|Willing to risk PK attacks
+|Drops [[lava dragon bones]] and [[rune]] items
+|-
+|[[Twisted banshee]]s
+|[[Catacombs of Kourend]]
+|{{SCP|Slayer|15}}
+|Drops [[alchables]], [[herbs]], [[herb seeds]], and [[pure essence]]
+|-
+|[[Ogress Warrior|Ogress Warriors]]
+|[[Corsair Cove Dungeon]]
+|[[The Corsair Curse]]
+|Drops alchables and [[gems]]. Can be fought in [[free-to-play]]
+|}
+
+====Splashing====
+While expensive, [[splashing]] does not require a lot of attention and early on provides a decent AFK experience. For this method, it's recommended to use the best [[strike spells]] available, as the [[runes]] used are cheap, obtainable from shops, and early-on provide the most efficient damage per money spent. The following locations can be used to splash with minimal attention: 
+{| class="wikitable"
+!Monster
+!Location
+!Benefits and cons
+|-
+|[[Sand crab]]s
+|[[Hosidius]]
+|No requirements.
+|-
+|[[Ammonite crab]]s
+|[[Fossil Island]]
+|Requires [[Bone Voyage]]. May drop [[Fossil_Island_fossil|Fossils]].
+|-
+|[[Frost crab]]s
+|[[Ruins of Tapoyauik]]
+|Requires [[The Heart of Darkness]]. Have a 100% fire weakness.
+|-
+
+|}
+
+====Gemstone Crab====
+The [[Gemstone Crab]] is located in [[Varlamore]] and available for a great AFK experience. The quest [[Children of the Sun]] is required to be completed in order to access Varlamore. 
+
+With [[Autocast]], a player will be able to AFK for up to 10 minutes at a time. The Gemstone Crab occasionally may attack players if they are within melee range. Players will earn slightly less experience (1 damage = 3.5 experience rather than 4), but will typically earn higher experience rates due to lack of downtime and overkill. 
+
+==Levels 43–65: Utility spells and quests==
+[[File:Lunar spells.png|thumb|The [[Lunar Spells]], a set of helpful spells partially unlocked after completing Lunar Diplomacy.]]
+This section will focus on incorporating the use of [[utility spells]], which players use to process items obtained from other areas of the game. Players should also work towards obtaining the other requirements for [[Lunar Diplomacy]] and [[Dream Mentor]] quests, as they reward many useful spells that help players gain additional Magic experience through processing and utility spells.
+
+Several more quests give experience rewards: [[Spirits of the Elid]], [[Recipe for Disaster/Freeing the Lumbridge Guide|Freeing the Lumbridge Guide]], [[Horror from the Deep]], [[King's Ransom]], [[The Path of Glouphrie]], [[Enakhra's Lament]], [[The Eyes of Glouphrie]], and [[Desert Treasure I]]. Note that these quests come with additional skill and item requirements.
+
+=== Spells ===
+
+==== Level 43-55: Superheat Item ====
+From level 43 to 55, players can cast [[Superheat Item]] to make [[gold ore]] into [[gold bar]]s, or [[iron ore]] into [[iron bar]]s for both Magic and Smithing experience. This requires a significant number of [[Nature rune|nature runes]] and is very expensive.
+
+====Level 55+: High Level Alchemy====
+At 55 Magic, cast [[High Level Alchemy]] on various profitable items, such as [[Maple longbow (u)|unstrung maple longbows]], [[gold bracelets]], [[gold bars]], [[battlestaves]] and other monster drops. This will become a significant source of income during [[Slayer]].
+
+===Mage Training Arena===
+{{Main|Mage Training Arena}}
+Through the process of getting [[Bones to Peaches]] from [[Mage Training Arena]], up to 127,000 Magic experience can be earned. Start this minigame at 33 Magic with [[Telekinetic Grab]] until level 55 Magic, for [[High Level Alchemy]] at the [[Mage Training Arena/Alchemist's Playground|Alchemist's Playground]]. For the other rooms available in the minigame, players can use different [[Enchantment spells|enchanting spells]], [[Bones to Bananas]], and [[Bones to Peaches]] to train and gain points in the respective rooms.
+
+Optionally, continue to obtain [[infinity boots]], a [[master wand]], or [[mage's book]] too. At least 57 Magic is recommended for the Enchanting Chamber, for the [[Lvl-4 Enchant]] spell, though level 68 Magic for the [[Lvl-5 Enchant]] is better. This requires a sizeable amount of [[Law rune|law]], [[Nature rune|nature]] and [[cosmic rune]]s. It should be noted that after level 68, you can effectively train magic for free with a [[mud battlestaff]] as [[Lvl-5 Enchant]] grants a base of 5 enchantment [[pizazz points]] when enchanting any shape within the [[Enchanting Chamber|Enchanter's playground]]. These can be redeemed for 1 cosmic rune, making the cost to the player a net zero runes. This can be done at level 87 with [[Lvl-6 Enchant]] with a [[lava battlestaff]] for better experience rates.
+
+==Levels 65–99: Bursting, bossing, and slaying==
+
+===Passive training===
+At higher levels, Magic experience is gained passively from using [[burst spells|burst]] and [[barrage spells|barrage]] spells on various [[Slayer]] tasks, [[teleport spells]], using [[reanimation spells]], casting [[High Level Alchemy]] on profitable or valuable items, and killing bosses like [[Kraken]] and [[Zulrah]].
+
+====Level 86+: Plank Make====
+''Main article: [[Plank Make]]''
+
+==Other methods==
+===Arceuus Library===
+{{Main|Arceuus Library}}
+Finding books for the customers in the [[Arceuus Library]] can be one of the fastest methods of gaining free Magic experience, especially at lower levels. Each book turned in grants 15 times your current Magic level in experience. This requires marking and tracking the locations of books. Collect as many books as possible and turn them in by speaking with the customers. Keep talking to the customers until they request a book not currently in your possession and recollect books along the way. 
+
+Approximately 120 [[Book of arcane knowledge|Books of arcane knowledge]] can be obtained per hour without energy-replenishing items. With energy replenishment, rates of approximately 150 can be obtained. </br>Estimated experience rates (without accounting for levels gained while training) are shown in the table below:
+
+{| class="wikitable align-center-1" style="text-align:right"
+!rowspan="2" |{{SCP|Magic}} level
+!colspan="2" |XP/h
+|-
+!120 books/h
+!150 books/h
+|-
+|1
+|{{formatnum:{{#expr:(1*120*15)}}}}
+|{{formatnum:{{#expr:(1*150*15)}}}}
+|-
+|10
+|{{formatnum:{{#expr:(10*120*15)}}}}
+|{{formatnum:{{#expr:(10*150*15)}}}}
+|-
+|20
+|{{formatnum:{{#expr:(20*120*15)}}}}
+|{{formatnum:{{#expr:(20*150*15)}}}}
+|-
+|30
+|{{formatnum:{{#expr:(30*120*15)}}}}
+|{{formatnum:{{#expr:(30*150*15)}}}}
+|-
+|40
+|{{formatnum:{{#expr:(40*120*15)}}}}
+|{{formatnum:{{#expr:(40*150*15)}}}}
+|-
+|50
+|{{formatnum:{{#expr:(50*120*15)}}}}
+|{{formatnum:{{#expr:(50*150*15)}}}}
+|-
+|60
+|{{formatnum:{{#expr:(60*120*15)}}}}
+|{{formatnum:{{#expr:(60*150*15)}}}}
+|-
+|70
+|{{formatnum:{{#expr:(70*120*15)}}}}
+|{{formatnum:{{#expr:(70*150*15)}}}}
+|-
+|80
+|{{formatnum:{{#expr:(80*120*15)}}}}
+|{{formatnum:{{#expr:(80*150*15)}}}}
+|-
+|90
+|{{formatnum:{{#expr:(90*120*15)}}}}
+|{{formatnum:{{#expr:(90*150*15)}}}}
+|-
+|99
+|{{formatnum:{{#expr:(99*120*15)}}}}
+|{{formatnum:{{#expr:(99*150*15)}}}}
+|}
+
+==Commonly used magic shops==
+*For [[elemental rune|elemental]], [[chaos rune|chaos]] and [[death rune]]s: [[Betty's Magic Emporium]] in [[Port Sarim]], [[Aubury's Rune Shop]] in [[Varrock]], and [[Void Knight Magic Store]] in [[Void Knights' Outpost]].
+*[[Lundail's Arena-side Rune Shop]] in the [[Mage Arena]], accessible without any requirements, is one of the few rune shops that also sells [[Law rune|law]], [[Nature rune|nature]] and [[cosmic rune]]s. However, it is risky for hardcore and ultimate ironmen due to travelling through the [[Wilderness]].
+*[[Ali Morrisane]] in [[Al Kharid]] also sells [[Law rune|law]], [[Nature rune|nature]] and [[cosmic rune]]s, though at a lower stock and a higher price than [[Lundail]]. However, it is safe for hardcore and ultimate ironmen. Unlocking the rune shop requires completion of [[The Feud]] quest and doing the runes section of [[Rogue Trader]]. The shop also buys runes at a set price, unlike in other shops.
+*[[Wizards' Guild]] in [[Yanille]] sells all runes except [[cosmic rune]]s, [[astral rune]]s, [[combination rune]]s, and [[wrath rune]]s. Level 66 Magic and completion of [[The Hand in the Sand]] is required to access it.
+*[[Baba Yaga's Magic Shop]] on [[Lunar Isle]] is the only shop that sells [[astral rune]]s. Accessible after the [[Lunar Diplomacy]] quest.
+*[[Amlodd's Magical Supplies]] in [[Prifddinas]] sells [[cosmic rune]]s in large quantities. Completion of the [[Song of the Elves]] quest is required to access this shop. 
+*[[Tal Teklan Rune Shop]] in [[Tal Teklan]] sells [[Nature rune|nature]] and [[Cosmic rune|cosmic runes]] in small quantities. It is notable for its easy accessibility early, access to [[Varlamore]] being the only requirement. 
+
+== Obtaining Magic Equipment ==
+The [[Rune pouch]] can be obtained very early on in an Ironman's progression through [[Last Man Standing]] and [[Mage Training Arena]] or later through [[Slayer]], and is incredibly helpful for saving inventory space across all of the games' activities.
+
+=== Weapons ===
+
+* Each type of [[Elemental staves|elemental staff]] can be bought at [[Zaff's Superior Staffs!]] with a bit of starting cash.
+** [[Wind spells|Wind spells']] scaling damage can be cast with only [[Catalytic rune|catalytic runes]], making them a cost effective way to use Magic at a low level.
+* [[Iban's staff]] is awarded upon completion of [[Underground Pass]] and can be used to cast [[Iban Blast]] at level 50 Attack and Magic. This is the strongest early Magic weapon for non-elemental weakness targets, possessing a max hit of 25. It is strongly recommended to pay {{Coins|200000}} to the [[Dark Mage]] to upgrade the charge capacity on the staff from 120 to 2,500.
+* The [[Ancient staff]] can be acquired for {{Coins|80000}} from [[Eblis]] after [[Desert Treasure I]]. It is helpful for auto-casting spells on the [[Ancient Magicks]] spellbook.
+* The [[Warped sceptre]] can be obtained from [[Slayer task/Warped creature|Warped creatures]] after [[The Path of Glouphrie]] with 56 [[Slayer]]
+* [[Ahrim's staff]], [[Blue moon spear]], and the [[Ancient sceptre]] all provide 5% magic damage and can be acquired from [[Barrows]], [[Moons of Peril]], and [[Phantom Muspah]] respectively. The sceptre gives additional benefits and autocast to Ancient Magicks as well.
+* The [[Twinflame staff]] can be crafted from drops from the [[Royal Titans]] and provides the best damage output on the [[standard spellbook]] before access to [[Wrath rune|wrath runes]].
+* The [[Trident of the seas]] can be acquired from [[cave kraken]] with 87 Slayer on a kraken task.
+** This can be further upgraded with a [[Magic fang]] from [[Zulrah]] into a [[Trident of the swamp]]
+* Endgame magic weapons include the [[Staff of the dead]], (and its [[Toxic staff of the dead|upgraded Toxic variant]]), from [[K'ril Tsutsaroth]], the [[Eye of ayak|Eye of Ayak]] from [[Doom of Mokhaiotl]], the [[Sanguinesti staff]] from [[Theatre of Blood]], [[Tumeken's shadow]] from [[Tombs of Amascut]], and the [[nightmare staff]] and its variants from [[The Nightmare]].
+
+=== Armour ===
+
+* Magic accuracy from equipment is not very impactful early on, as most monsters you use magic on have little to no magic defence. However, the [[wizard hat]], [[Blue wizard robe|wizard robe top]], and [[Zamorak monk bottom]] can provide some magic accuracy in a pinch.
+* [[Mystic robes]] can be received as a drop from [[Slayer monsters]] or purchased from the [[Wizards' Guild]] after 66 Magic.
+* The [[Tome of fire]] and [[Tome of water]] can be obtained as rare drops from their respective skilling bosses, [[Wintertodt]] and [[Tempoross]]. They provide a small buff to their respective elemental spells, but are primarily beneficial as a source of infinite Fire and Water runes in the offhand for non-combat spells. 
+** The [[Tome of earth]] can be obtained much later as a rare drop from [[The Hueycoatl]].
+* [[Mage Arena I]] and [[Mage Arena II|II]] can be completed at 60 and 75 Magic, respectively, and award powerful magic capes. The best-in-slot [[Imbued magic cape|Imbued god capes]] provide some of the earliest sources of Magic damage.
+* [[Void Knight equipment]] and especially [[Elite Void Knight equipment]] after the [[Hard Western Provinces Diary]] provide powerful magic accuracy and damage boosts.
+* [[Ahrim the Blighted's equipment|Ahrim's]], [[Blue moon armour|Blue moon]], [[Bloodbark armour|Bloodbark]], [[Infinity robes|Infinity]], and [[Dagon'hai robes]] all provide similar magic accuracy and damage but can be obtained in vastly different ways. Ahrim's and Blue moon equipment are often acquired alongside other armour sets, but Bloodbark and Infinity can be acquired through their own mini-games offering different rewards.
+* [[Mage's book]] can be acquired from the [[Mage Training Arena]], while the [[Elidinis' ward]] can be acquired as a drop in [[Tombs of Amascut]].
+* The [[Tormented bracelet]] can be made with a [[Zenyte shard]] from [[Demonic gorilla|Demonic gorillas]] with 95 [[Crafting]].
+* The [[Occult necklace]] can be obtained from [[Smoke devil|Smoke devils]] or the [[Thermonuclear smoke devil]] at 93 Slayer
+* Endgame magic armour includes [[Eternal boots]] from [[Cerberus]], [[Virtus robes]] from the [[The Forgotten Four]], [[Ancestral robes]] from [[Chambers of Xeric]], [[Magus ring]] from [[Duke Sucellus]], [[Imbued heart]] and [[Saturated heart]] from [[Superior slayer monster|superior slayer monsters]], and the [[Arcane sigil]] to upgrade Elidinis' ward from [[Corporeal Beast]].
+{{Training guides}}
+[[Category:Ironman Mode]]

@@ -1,0 +1,7 @@
+Provenance for questreq_data.lua
+Source URL: https://oldschool.runescape.wiki/w/Module:Questreq/data?action=raw
+Fetched via: curl (action=raw) for the Gilded Tome OSRS project
+License: CC BY-NC-SA 3.0 (Old School RuneScape Wiki content)
+Note: questreq_data.lua is the verbatim as-fetched Lua source and is left
+unmodified to preserve raw fidelity. Parsed deterministically by parse_quests.py
+into ../quests.json. Attribution and license also carried in quests.json _provenance.

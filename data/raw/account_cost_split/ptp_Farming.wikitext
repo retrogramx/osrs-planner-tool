@@ -1,0 +1,766 @@
+{{External|rs}}
+[[Farming]] training focuses heavily on doing [[tree run]]s, which is a recurring training method. Much like [[Repeatable events|daily events]] and [[Money making guide#Recurring methods|recurring money making methods]], tree runs give Farming experience passively over time since it is possible to only do 1 or 2 runs per day. Instead of actively training the skill for hours, players only spend a few minutes to do a run, gaining a lot of Farming experience during that short amount of time, and then do other activities while waiting for the patches to grow. While trees take a very long while to grow in real time, players spend very little time actively doing tree runs.
+
+Doing tree runs costs money, and certain [[sapling]]s and protection payments can be quite expensive. It is recommended to have a decent amount of money to be able to buy a lot of Farming supplies at once, and have a good money making method to sustain the cost of doing tree runs. [[Herb run]]s are often highly profitable and they also offer a fair amount of Farming experience, but usually it is better to look into money making alternatives that offer better profit.
+
+==Starting off==
+===Levels 1–38: Questing===
+Early levels can be skipped by completing [[Quest experience rewards#Farming|quests that give Farming experience]]. Completing the [[Recipe for Disaster/Freeing the Goblin generals|Goblin generals subquest]] of [[Recipe for Disaster]], [[Fairytale I - Growing Pains]], [[Forgettable Tale...]] (requires 17 Farming), [[The Garden of Death]] (requires 20 Farming), [[Garden of Tranquillity]] (requires 25 Farming), [[Enlightened Journey]] (requires 30 Farming), and [[My Arm's Big Adventure]] (requires 29 Farming) grants a total of 32,500 experience, which will get the player up to level 38. This skips much of the tedious low-level Farming and allows the player to do effective farm runs immediately.
+
+===Levels 1–15: Bagged plants===
+The fastest way to train the early levels is to plant [[bagged plant]]s in the [[player-owned house]]. However, it is significantly more expensive than planting seeds.
+
+If the [[garden supplier]] does not have enough stock, players can [[World switching|hop worlds]] to buy more bagged plants.
+
+The quickest way to plant them, assuming that your house is in [[Rimmington]], is to bring three watering cans, a stack of coins, and as many [[noted]] bagged plants as you can afford. You can hand your notes to [[Phials]] to un-note them (for a small fee) and refill your watering cans in the building just east of the well. 
+
+Right-click the plant space and click on Build. To make the process even faster, spam the 1 button while planting and removing the bagged plants. This will select the bagged plant and confirm the removal, allowing you to plant and remove plants very quickly.
+
+Bagged plants are one of the only ways to actively train farming without waiting for anything to grow.
+
+Training Farming to 15 from level 1 requires 17 [[bagged plant 1]]s, 17 [[bagged plant 2]]s, and 7 [[bagged plant 3]]s for a total of 172000 [[coins]], or 78 bagged plant 1s for 78000 [[coins]] when plants are bought from the npc shop.
+{| class="wikitable sortable align-center-1"
+|+Bagged plants table
+! |{{SCP|Construction}} Level
+! colspan=2 |Plant
+! |{{SCP|Farming}}Experience{{SCP|Construction}}
+! |GE Price
+! |GP/XP
+|-
+|1
+|{{plinkt|Bagged plant 1}}
+|31
+|{{Coins|-{{GEP|Bagged plant 1}}}}
+|{{Coins|-({{GEP|Bagged plant 1}})/31}}
+|-
+|6
+|{{plinkt|Bagged plant 2}}
+|70
+|{{Coins|-{{GEP|Bagged plant 2}}}}
+|{{Coins|-({{GEP|Bagged plant 2}})/70}}
+|-
+|12
+|{{plinkt|Bagged plant 3}}
+|100
+|{{Coins|-{{GEP|Bagged plant 3}}}}
+|{{Coins|-({{GEP|Bagged plant 3}})/100}}
+|-
+|5
+|{{plinkt|Bagged dead tree}}
+|31
+|{{Coins|-{{GEP|Bagged dead tree}}}}
+|{{Coins|-({{GEP|Bagged dead tree}})/31}}
+|-
+|10
+|{{plinkt|Bagged nice tree}}
+|44
+|{{Coins|-{{GEP|Bagged nice tree}}}}
+|{{Coins|-({{GEP|Bagged nice tree}})/44}}
+|-
+|15
+|{{plinkt|Bagged oak tree}}
+|70
+|{{Coins|-{{GEP|Bagged oak tree}}}}
+|{{Coins|-({{GEP|Bagged oak tree}})/70}}
+|-
+|30
+|{{plinkt|Bagged willow tree}}
+|100
+|{{Coins|-{{GEP|Bagged willow tree}}}}
+|{{Coins|-({{GEP|Bagged willow tree}})/100}}
+|-
+|45
+|{{plinkt|Bagged maple tree}}
+|122
+|{{Coins|-{{GEP|Bagged maple tree}}}}
+|{{Coins|-({{GEP|Bagged maple tree}})/122}}
+|-
+|60
+|{{plinkt|Bagged yew tree}}
+|141
+|{{Coins|-{{GEP|Bagged yew tree}}}}
+|{{Coins|-({{GEP|Bagged yew tree}})/141}}
+|-
+|75
+|{{plinkt|Bagged magic tree}}
+|223
+|{{Coins|-{{GEP|Bagged magic tree}}}}
+|{{Coins|-({{GEP|Bagged magic tree}})/223}}
+|-
+|56
+|{{plinkt|Thorny hedge (bagged)}}
+|72
+|{{Coins|-{{GEP|Thorny hedge (bagged)}}}}
+|{{Coins|-({{GEP|Thorny hedge (bagged)}})/72}}
+|-
+|60
+|{{plinkt|Nice hedge (bagged)}}
+|100
+|{{Coins|-{{GEP|Nice hedge (bagged)}}}}
+|{{Coins|-({{GEP|Nice hedge (bagged)}})/100}}
+|-
+|64
+|{{plinkt|Small box hedge (bagged)}}
+|122
+|{{Coins|-{{GEP|Small box hedge (bagged)}}}}
+|{{Coins|-({{GEP|Small box hedge (bagged)}})/122}}
+|-
+|65
+|{{plinkt|Topiary hedge (bagged)}}
+|141
+|{{Coins|-{{GEP|Topiary hedge (bagged)}}}}
+|{{Coins|-({{GEP|Topiary hedge (bagged)}})/141}}
+|-
+|72
+|{{plinkt|Fancy hedge (bagged)}}
+|158
+|{{Coins|-{{GEP|Fancy hedge (bagged)}}}}
+|{{Coins|-({{GEP|Fancy hedge (bagged)}})/158}}
+|-
+|76
+|{{plinkt|Tall fancy hedge (bagged)}}
+|223
+|{{Coins|-{{GEP|Tall fancy hedge (bagged)}}}}
+|{{Coins|-({{GEP|Tall fancy hedge (bagged)}})/223}}
+|-
+|80
+|{{plinkt|Tall box hedge (bagged)}}
+|316
+|{{Coins|-{{GEP|Tall box hedge (bagged)}}}}
+|{{Coins|-({{GEP|Tall box hedge (bagged)}})/316}}
+|-
+|66
+|{{plinkt|Bagged flower}}
+|70
+|{{Coins|-{{GEP|Bagged flower}}}}
+|{{Coins|-({{GEP|Bagged flower}})/70}}
+|-
+|66
+|{{plinkt|Bagged sunflower}}
+|70
+|{{Coins|-{{GEP|Bagged sunflower}}}}
+|{{Coins|-({{GEP|Bagged sunflower}})/70}}
+|-
+|71
+|{{plinkt|Bagged daffodils}}
+|100
+|{{Coins|-{{GEP|Bagged daffodils}}}}
+|{{Coins|-({{GEP|Bagged daffodils}})/100}}
+|-
+|71
+|{{plinkt|Bagged marigolds}}
+|100
+|{{Coins|-{{GEP|Bagged marigolds}}}}
+|{{Coins|-({{GEP|Bagged marigolds}})/100}}
+|-
+|76
+|{{plinkt|Bagged bluebells}}
+|122
+|{{Coins|-{{GEP|Bagged bluebells}}}}
+|{{Coins|-({{GEP|Bagged bluebells}})/122}}
+|-
+|76
+|{{plinkt|Bagged roses}}
+|122
+|{{Coins|-{{GEP|Bagged roses}}}}
+|{{Coins|-({{GEP|Bagged roses}})/122}}
+|-
+|}
+
+===Levels 1–15: Making supercompost/ultracompost===
+Another option to train the early levels is to make [[supercompost]] or [[ultracompost]] in a [[compost bin]]. Each bucket of supercompost grants 8.5 farming experience, or 10 experience with the addition of [[volcanic ash]] to produce [[ultracompost]].
+
+[[Watermelon]]s and [[pineapple]]s are the easiest candidates for the produce used, with the latter easily purchased in convenient quantities from [[Trader Stan's Trading Post]].
+
+===Levels 1–15: Farming allotments===
+*[[Seed Table]]
+*[[Farming/Patch locations]]
+*[[Farming runs]]
+
+===Levels 1–15: Sorceress's garden===
+In the [[Sorceress's Garden]] [[minigame]], players can pick [[sq'irk]] fruits or [[herb]]s from the gardens. No [[Thieving]] level is required, but a higher Thieving level increases Thieving [[experience]] rates. Picking a sq'irk from the tree yields 30, 40, 50, or 60 [[Farming]] experience depending on the room's season. Completing the [[winter garden]] to 15 requires 81 laps. Picking from the herb patch yields 50 Farming experience and two random herbs from any garden which requires 49 laps.
+
+This method, once the gardens are set up correct for 1-click methods, is one of the least click-intensive ways to train. Training using only this method from 65 to 99 Thieving yields 503,520 Farming experience.
+
+==Levels 15–99: Tree runs==
+[[File:Magic tree.png|right|321x321px]]
+{{Main|Farming runs#Tree run}}
+
+[[Farming runs|Tree runs]] are the most effective way to gain [[Farming]] [[experience]]. To do this, plant the highest-tier [[Tree patch|tree]], [[Fruit tree patch|fruit tree]], and [[hardwood tree]] [[Sapling|saplings]] available, along with the [[Special patches|special tree]] saplings ([[Calquat tree|calquat]], [[Celastrus tree|celastrus]], [[Crystal tree|crystal]], and [[Redwood tree (Farming)|redwood]]). After the trees have grown, check the health of a fully grown tree for Farming experience, pay the [[Group of Advanced Gardeners|gardener]] to chop down the tree, then replant the tree. Repeat until all patches have been checked and replanted.
+
+While tree runs are a passive training method, they offer by far the fastest effective experience. For example, if it took the player 5 minutes to do a tree run and the player gained 100,000 Farming experience from the run, the experience rate would effectively be 1,200,000 experience per hour (12 runs per one actively spent hour). Players would only spend 5 minutes on doing a run, then do something else while the trees grow.
+
+A tree run consisting of 6 [[Magic tree (Farming)|magic trees]], 6 [[Dragonfruit tree|dragonfruit trees]], 1 [[calquat tree]], and 1 [[celastrus tree]] takes around 5 minutes and 20 seconds. The run gives a total of 215,761.3 Farming experience when using payments, which would offer around 2,400,000 experience per actively spent hour. When including 4 [[Mahogany tree (Farming)|mahogany trees]] once every 4 days and a [[Redwood tree (Farming)|redwood tree]] once every 5 days, the effective rate is around 2,500,000 experience per actively spent hour.
+
+Even though it is only possible to do 1 or 2 tree runs per day, doing tree runs over time ends up being much faster than doing methods that offer faster experience in real time, such as farming allotments. Tree runs should be the first priority for Farming training, and active training methods should only be done if Farming is the player's last skill to level 99. Getting level 99 Farming should take around 3–4 months at most if the player does tree runs fairly consistently.
+
+===Recommended quests and stats===
+*{{SCP|Quest}} [[Tree Gnome Village]] and {{SCP|Quest}} [[The Grand Tree]] for access to [[spirit tree]]s for transportation.
+*{{SCP|Quest}} [[Bone Voyage]] for access to three hardwood patches on [[Fossil Island]].
+*{{SCP|Quest}} [[The Ribbiting Tale of a Lily Pad Labour Dispute]] for access to an additional hardwood patch in [[Varlamore]].
+*{{SCP|Quest}} [[Plague City]] for [[Ardougne Teleport]] (or [[Teleport to House]] to [[Rimmington]]) to access [[Brimhaven]] faster via [[Captain Barnaby]] (if the player does not have access to redirection scrolls or does not have the player-owned house in Brimhaven).
+*{{SCP|Quest}} [[Tai Bwo Wannai Trio]] to be able to use [[Tai bwo wannai teleport]] scrolls to the calquat patch.
+**Alternatively, started {{SCP|Quest}} [[Fairytale II - Cure a Queen]] for access to [[fairy rings]].
+*Started {{SCP|Quest}} [[Mourning's End Part I]] for access to the fruit tree patch in [[Lletya]] and [[teleport crystal]]s.
+* {{SCP|Quest}} [[Children of the Sun]] to access the patches in [[Varlamore]].
+* {{SCP|Quest}} [[Twilight's Promise]] to access the Quetzal Transport System. [[Kastori]] and [[Colossal Wyrm Remains|Colossal Wyrm]] landing sites will need to be built.
+*{{SCP|Quest}} [[Song of the Elves]] for access to the crystal tree patch.
+*{{SCP|Construction|40}} to be able to move the [[player-owned house]] to [[Brimhaven]]
+*{{SCP|Magic|40}} for casting [[teleportation spells]], although teleport tablets can be used instead.
+*{{SCP|Sailing|51}} required and {{SCP|Construction|50}} highly recommended for the [[Anglers' Retreat]] hardwood patch.
+
+===General information and tips===
+Pay the farmer to chop down the tree for replanting. This only costs a small amount of money and is significantly faster than chopping the tree. However, the celastrus tree has valuable harvest, so it can be worthwhile to spend extra time to gather the [[celastrus bark]]s.
+
+It is best to pay the farmer to look after the tree, so it cannot die and players are guaranteed to get the Farming experience from checking the health of the tree. The tree patch in Falador Park will never get diseased after completing the [[Falador Diary#Elite|elite Falador Diary]]. To save money, it can be worthwhile to treat certain patches with ultracompost instead of paying the farmer to look after the tree. This is slower overall however, because the tree will occasionally die and the player would have spent time for no experience gained. Reviving a dead tree with [[Resurrect Crops]] helps to reduce the number of trees lost this way.
+
+Buy the [[sapling]]s from the [[Grand Exchange]]. If seeking to save money, buy the tree seeds instead and grow them into saplings. Saplings are made by using a [[Tree_patch#Tree_seeds|tree seed]] on a [[filled plant pot]] while having a [[gardening trowel]] in the inventory, using a [[watering can]] on the [[seedling]]s to water them and then waiting for them to grow into saplings. Saplings grow while stored in bank, so players do not have to have them in their inventory. Players who have level 68 Magic and have completed [[Dream Mentor]] can use [[Humidify]] spell to water the seedlings faster.
+
+Regular trees are usually more expensive compared to the other trees. Players who are not in a rush to level up Farming are advised to only farm fruit trees, hardwood trees and special trees for cheaper experience. Depending on the prices, it can also be worthwhile to farm palm trees instead of dragonfruit trees at higher levels, as growing dragonfruit trees costs {{Coins|({{GEP|Dragonfruit tree seed}}+{{GEP|Coconut|15}}+200)/17825}} per experience and palm trees would only cost {{Coins|({{GEP|Palm sapling}} + {{GEP|Papaya fruit|15}})/10509.6}} per experience, including the protection payments.
+
+Saplings cannot be unnoted at a Tool Leprechaun. If there is not enough room to hold all the saplings needed, resupply at a bank during the run.
+
+[[Farming boosts]] can be used to access different tiers of the [[Farming Guild]] before obtaining the level required. The level is only checked when attempting to enter the area.
+
+===Setup===
+{{Inventory
+|align = right|Coins 10000\2000000|Rune pouch|Spade|Eternal teleport crystal|Magic sapling|Magic sapling|Magic sapling|Magic sapling|Magic sapling|Magic sapling|Taverley teleport|Ring of wealth|Dragonfruit sapling\6;n|Brimhaven teleport|Catherby teleport (tablet)|Skills necklace|Crystal sapling|Bottomless compost bucket (full)|Calquat sapling|Tai bwo wannai teleport|Celastrus sapling|Redwood sapling|Coconut\1000;n|Poison ivy berries\24;n|Potato cactus\8;n|Dragonfruit\6;n|Mahogany sapling\3;n|Yanillian hops\75;n
+}}
+{{Rune pouch|align=right
+|1=Law rune
+|2=Lava rune
+|3=Mist rune
+}}
+{{Equipment
+|align = right
+|head = 
+|cape = 
+|neck = Digsite pendant
+|ammo = 
+|weapon = Dragon axe
+|torso = 
+|legs = 
+|shield = 
+|gloves = 
+|boots = 
+|ring = Slayer ring (eternal)
+}}
+*Saplings
+**7 tree (starting at {{SCP|Farming}}15 Farming)
+***One patch in the [[Farming Guild]] requires {{SCP|Farming}}65 Farming to access
+**7 fruit tree (starting at {{SCP|Farming}}27 Farming)
+***One patch in the Farming Guild requires {{SCP|Farming}}85 Farming to access
+**5 hardwood (starting at {{SCP|Farming}}35 Farming)
+***Three patches requires completion of [[Bone Voyage]] to access
+***One patch requires completion of [[The Ribbiting Tale of a Lily Pad Labour Dispute]] to access
+***Level {{SCP|Sailing|51}} required to access the [[Anglers' Retreat]] patch. Level {{SCP|Construction|50}} to build the rowboat to/from Corsair Cove (highly recommended)
+**3 calquat (starting at {{SCP|Farming}}72 Farming)
+**1 crystal (starting at {{SCP|Farming}}74 Farming)
+**1 celastrus (starting at {{SCP|Farming}}85 Farming)
+**1 redwood (starting at {{SCP|Farming}}90 Farming)
+*[[Spade]]
+*Payments in bank notes (recommended)
+**If not paying the farmer, a [[bottomless compost bucket]] containing [[ultracompost]], or [[runes]] for [[Fertile Soil]] spell and [[volcanic ash]]es (after reading the [[ash covered tome]])
+*Coins
+*[[Teleport tabs]] or runes for Taverley house or Falador teleport, Brimhaven house or Ardougne teleport, Catherby or Camelot teleport, Lumbridge teleport and Varrock teleport.
+*[[Skills necklace]] (for the tree and fruit tree patches in the [[Farming Guild]])
+*[[Ring of wealth]] (for access to the spirit tree at the Grand Exchange and slightly faster access to the Falador tree patch)
+**Alternatively, Falador Teleport and Varrock Teleport to the Grand Exchange (after medium Varrock Diary) can be used instead
+*[[Teleport crystal]] or its [[Eternal teleport crystal|eternal version]] (for access to Prifddinas and Lletya)
+*[[Digsite pendant]] (for the hardwood tree patches in Fossil Island)
+*[[Slayer ring]] (optional for Gnome Stronghold tree patch)
+*[[Tai bwo wannai teleport]] scroll (costs {{Coins|{{GEP|Tai bwo wannai teleport}}}}, recommended for the calquat patch)
+*[[Stamina potion]]
+*[[Farmer's outfit]] or [[graceful outfit]] (optional)
+
+For hardwood trees, if protection payment is skipped and [[ultracompost]] ({{Coins|{{GEP|Ultracompost}}}}) is used instead, growing [[teak]]s ({{SCP|Farming}}35 Farming) costs {{Coins|({{GEP|Teak sapling}} + {{GEP|Ultracompost}}) / (0.8 *7315)}} coins per experience, while [[mahogany]] trees ({{SCP|Farming}}55 Farming) costs {{Coins|({{GEP|Mahogany sapling}} + {{GEP|Ultracompost}}) / (0.8 *15,783)}} coins per experience.
+
+For specialty trees, growing [[calquat tree]] ({{SCP|Farming}}72 Farming) costs {{Coins|({{GEP|Calquat sapling}} + {{GEP|Poison ivy berries|8}}) / 12516.5}} coins per experience, requiring payment of 8 poison ivy berries.
+
+{| class="wikitable align-center-1"
+|+Tree table
+! rowspan=2 |{{SCP|Farming}} Level
+! rowspan=2 colspan=2 |Seed
+! rowspan=2 colspan=2 |Payment
+! rowspan=2 |Growth time
+! colspan=3 |Experience
+! rowspan=2 |Total cost<ref group="T">Seed Cost, Protection cost and 200 coins for removal.</ref>
+! rowspan=2 |GP/XP
+|-
+!Planting
+!Checking
+!Total
+|-
+|15
+|{{plinkt|Acorn}}
+|{{plinkp|Tomatoes(5)}}||1 [[Tomatoes|basket of tomatoes]]
+|3hr20m (5x40 min)
+|14
+|467.3
+|481.3
+|{{Coins|-({{GEP|Acorn}}+{{GEP|Tomatoes(5)}}+200)}}
+|{{Coins|-({{GEP|Acorn}}+{{GEP|Tomatoes(5)}}+200)/481.3}}
+|-
+|30
+|{{plinkt|Willow seed|txt=Willow}}
+|{{plinkp|Apples(5)}}||1 [[Apples|basket of apples]]
+|4hr00m (6x40 min)
+|25
+|1,456.5
+|1,481.5
+|{{Coins|-({{GEP|Willow seed}}+{{GEP|Apples(5)}}+200)}}
+|{{Coins|-({{GEP|Willow seed}}+{{GEP|Apples(5)}}+200)/1481.5}}
+|-
+|45
+|{{plinkt|Maple seed|txt=Maple}}
+|{{plinkp|Oranges(5)}}||1 [[Oranges|basket of oranges]]
+|5hr20m (8x40 min)
+|45
+|3,403.4
+|3,448.4
+|{{Coins|-({{GEP|Maple seed}}+{{GEP|Oranges(5)}}+200)}}
+|{{Coins|-({{GEP|Maple seed}}+{{GEP|Oranges(5)}}+200)/3448.4}}
+|-
+|60
+|{{plinkt|Yew seed|txt=Yew}}
+|{{plinkp|Cactus spine}}||10 [[cactus spine]]s
+|6hr40m (10x40 min)
+|81
+|7,069.9
+|7,150.9
+|{{Coins|-({{GEP|Yew seed}}+{{GEP|Cactus spine|10}}+200)}}
+|{{Coins|-({{GEP|Yew seed}}+{{GEP|Cactus spine|10}}+200)/7150.9}}
+|-
+|75
+|{{plinkt|Magic seed|txt=Magic}}
+|{{plinkp|Coconut}}||25 [[coconut]]s
+|8hr00m (12x40 min)
+|145.5
+|13,768.3
+|13,913.8
+|{{Coins|-({{GEP|Magic seed}}+{{GEP|Coconut|25}}+200)}}
+|{{Coins|-({{GEP|Magic seed}}+{{GEP|Coconut|25}}+200)/13913.8}}
+|}
+{{reflist|group=T}}
+
+{| class="wikitable align-center-1"
+|+Fruit tree table
+! rowspan=2 |{{SCP|Farming}} Level
+! rowspan=2 colspan=2 |Seed
+! rowspan=2 colspan=2 |Payment
+! rowspan=2 |Growth time
+! colspan=4 |Experience
+! colspan="2" |Total cost<ref group="F">Seed Cost, Protection cost and 200 coins for removal, minus worth what is harvested.</ref>
+! colspan="2" |GP/XP 
+|-
+!Plant
+!Check
+!Harvesting
+!Total
+!No harvest
+!Harvest
+!No harvest
+!Harvest
+|-
+|27
+|{{plinkt|Apple tree seed|txt=Apple}}
+|{{plinkp|Sweetcorn}}||9 [[sweetcorn]]s
+|16hr (6x160 min)
+|22
+|1,199.5
+|51
+|1,272.5
+|{{Coins|-({{GEP|Apple tree seed}}+{{GEP|Sweetcorn|9}}+200)}}
+|{{Coins|-({{GEP|Apple tree seed}}+{{GEP|Sweetcorn|9}}+200-{{GEP|Cooking apple|6}})}}
+|{{Coins|-({{GEP|Apple tree seed}}+{{GEP|Sweetcorn|9}}+200)/1221.5}}
+|{{Coins|-({{GEP|Apple tree seed}}+{{GEP|Sweetcorn|9}}+200-{{GEP|Cooking apple|6}})/1272.5}}
+|-
+|33
+|{{plinkt|Banana tree seed|txt=Banana}}
+|{{plinkp|Apples(5)}}||4 [[Apples|baskets of apples]]
+|16hr (6x160 min)
+|28
+|1,750.5
+|63
+|1,841.5
+|{{Coins|-({{GEP|Banana tree seed}}+{{GEP|Apples(5)|4}}+200)}}
+|{{Coins|-({{GEP|Banana tree seed}}+{{GEP|Apples(5)|4}}+200-{{GEP|Banana|6}})}}
+|{{Coins|-({{GEP|Banana tree seed}}+{{GEP|Apples(5)|4}}+200)/1778.5}}
+|{{Coins|-({{GEP|Banana tree seed}}+{{GEP|Apples(5)|4}}+200-{{GEP|Banana|6}})/1841.5}}
+|-
+|39
+|{{plinkt|Orange tree seed|txt=Orange}}
+|{{plinkp|Strawberries(5)}}||3 [[Strawberries|baskets of strawberries]]
+|16hr (6x160 min)
+|35.5
+|2,470.2
+|81
+|2,586.7
+|{{Coins|-({{GEP|Orange tree seed}}+{{GEP|Strawberries(5)|3}}+200)}}
+|{{Coins|-({{GEP|Orange tree seed}}+{{GEP|Strawberries(5)|3}}+200-{{GEP|Orange|6}})}}
+|{{Coins|-({{GEP|Orange tree seed}}+{{GEP|Strawberries(5)|3}}+200)/2505.7}}
+|{{Coins|-({{GEP|Orange tree seed}}+{{GEP|Strawberries(5)|3}}+200-{{GEP|Orange|6}})/2586.7}}
+|-
+|42
+|{{plinkt|Curry tree seed|txt=Curry}}
+|{{plinkp|Bananas(5)}}||5 [[Bananas|baskets of bananas]]
+|16hr (6x160 min)
+|40
+|2,906.9
+|90
+|3,036.9
+|{{Coins|-({{GEP|Curry tree seed}}+{{GEP|Bananas(5)|5}}+200)}}
+|{{Coins|-({{GEP|Curry tree seed}}+{{GEP|Bananas(5)|5}}+200-{{GEP|Curry leaf|6}})}}
+|{{Coins|-({{GEP|Curry tree seed}}+{{GEP|Bananas(5)|5}}+200)/2946.9}}
+|{{Coins|-({{GEP|Curry tree seed}}+{{GEP|Bananas(5)|5}}+200-{{GEP|Curry leaf|6}})/3036.9}}
+|-
+|51
+|{{plinkt|Pineapple seed|txt=Pineapple}}
+|{{plinkp|Watermelon}}||10 [[watermelon]]s
+|16hr (6x160 min)
+|57
+|4,605.7
+|129
+|4,791.7
+|{{Coins|-({{GEP|Pineapple seed}}+{{GEP|Watermelon|10}}+200)}}
+|{{Coins|-({{GEP|Pineapple seed}}+{{GEP|Watermelon|10}}+200-{{GEP|Pineapple|6}})}}
+|{{Coins|-({{GEP|Pineapple seed}}+{{GEP|Watermelon|10}}+200)/4662.7}}
+|{{Coins|-({{GEP|Pineapple seed}}+{{GEP|Watermelon|10}}+200-{{GEP|Pineapple|6}})/4791.7}}
+|-
+|57
+|{{plinkt|Papaya tree seed|txt=Papaya}}
+|{{plinkp|Pineapple}}||10 [[pineapple]]s
+|16hr (6x160 min)
+|72
+|6,146.4
+|162
+|6,380.4
+|{{Coins|-({{GEP|Papaya tree seed}}+{{GEP|Pineapple|10}}+200)}}
+|{{Coins|-({{GEP|Papaya tree seed}}+{{GEP|Pineapple|10}}+200-{{GEP|Papaya fruit|6}})}}
+|{{Coins|-({{GEP|Papaya tree seed}}+{{GEP|Pineapple|10}}+200)/6218.4}}
+|{{Coins|-({{GEP|Papaya tree seed}}+{{GEP|Pineapple|10}}+200-{{GEP|Papaya fruit|6}})/6380.4}}
+|-
+|68
+|{{plinkt|Palm tree seed|txt=Palm tree}}
+|{{plinkp|Papaya fruit}}||15 [[papaya fruit]]
+|16hr (6x160 min)
+|110.5
+|10,150.1
+|249
+|10,509.6
+|{{Coins|-({{GEP|Palm tree seed}}+{{GEP|Papaya fruit|15}}+200)}}
+|{{Coins|-({{GEP|Palm tree seed}}+{{GEP|Papaya fruit|15}}+200-{{GEP|Coconut|6}})}}
+|{{Coins|-({{GEP|Palm tree seed}}+{{GEP|Papaya fruit|15}}+200)/10260.6}}
+|{{Coins|-({{GEP|Palm tree seed}}+{{GEP|Papaya fruit|15}}+200-{{GEP|Coconut|6}})/10509.6}}
+|-
+|81
+|{{plinkt|Dragonfruit tree seed|txt=Dragonfruit}}
+|{{plinkp|Coconut}}||15 [[coconut]]
+|16hr (6x160 min)
+|140
+|17,335
+|420
+|17,825
+|{{Coins|-({{GEP|Dragonfruit tree seed}}+{{GEP|Coconut|15}}+200)}}
+|{{Coins|-({{GEP|Dragonfruit tree seed}}+{{GEP|Coconut|15}}+200-{{GEP|Dragonfruit|6}})}}
+|{{Coins|-({{GEP|Dragonfruit tree seed}}+{{GEP|Coconut|15}}+200)/17475}}
+|{{Coins|-({{GEP|Dragonfruit tree seed}}+{{GEP|Coconut|15}}+200-{{GEP|Dragonfruit|6}})/17825}}
+|}
+{{reflist|group=F}}
+''See also:'' [[Seeds#Trees]] and [[Seeds#Fruit trees]] for trees and protection.
+
+{| class="wikitable align-center-1"
+|+Hardwood tree table
+! rowspan=2 |{{SCP|Farming}} Level
+! rowspan=2 colspan=2 |Seed
+! rowspan=2 colspan=2 |Payment
+! rowspan=2 |Growth time
+! colspan=3 |Experience
+! rowspan=2 |Total cost<ref group="H">Seed Cost, Protection cost and 200 coins for removal.</ref>
+! rowspan=2 |GP/XP
+|-
+!Planting
+!Checking
+!Total
+|-
+|35
+|{{plinkt|Teak seed|txt=Teak}}
+|{{plinkp|Limpwurt root}}||15 [[limpwurt roots]]
+|74hr40m (7x640 min)
+|35
+|7,290
+|7,325
+|{{Coins|-({{GEP|Teak seed}}+{{GEP|Limpwurt root|15}}+200)}}
+|{{Coins|-({{GEP|Teak seed}}+{{GEP|Limpwurt root|15}}+200)/7325}}
+|-
+|55
+|{{plinkt|Mahogany seed|txt=Mahogany}}
+|{{plinkp|Yanillian hops}}||25 [[yanillian hops]]
+|85hr20m (8x640 min)
+|63
+|15,720
+|15,783
+|{{Coins|-({{GEP|Mahogany seed}}+{{GEP|Yanillian hops|25}}+200)}}
+|{{Coins|-({{GEP|Mahogany seed}}+{{GEP|Yanillian hops|25}}+200)/15783}}
+|-
+|66
+|{{plinkt|Camphor seed|txt=Camphor}}
+|{{plinkp|White berries}}||10 [[White berries]]
+|85hr20m (8x640 min)
+|88
+|17,840
+|17,928
+|{{Coins|-({{GEP|Camphor seed}}+{{GEP|White berries|10}}+200)}}
+|{{Coins|-({{GEP|Camphor seed}}+{{GEP|White berries|10}}+200)/17,928}}
+|-
+|80
+|{{plinkt|Ironwood seed|txt=Ironwood}}
+|{{plinkp|Curry leaf}}||10 [[Curry Leaf]]
+|85hr20m (8x640 min)
+|145
+|20,380
+|20,525
+|{{Coins|-({{GEP|Ironwood seed}}+{{GEP|Curry leaf|10}}+200)}}
+|{{Coins|-({{GEP|Ironwood seed}}+{{GEP|Curry leaf|10}}+200)/20,525}}
+|-
+|92
+|{{plinkt|Rosewood seed|txt=Rosewood}}
+|{{plinkp|Dragonfruit}}||8 [[Dragonfruit]]
+|106hr40m (10x640 min)
+|252
+|23,100
+|23,352
+|{{Coins|-({{GEP|Rosewood seed}}+{{GEP|Dragonfruit|8}}+200)}}
+|{{Coins|-({{GEP|Rosewood seed}}+{{GEP|Dragonfruit|8}}+200)/23,352}}
+|-
+|}
+{{reflist|group=H}}
+
+{| class="wikitable align-center-1"
+|+Special tree table
+! rowspan=2 |{{SCP|Farming}} Level
+! rowspan=2 colspan=2 |Seed
+! rowspan=2 colspan=2 |Payment
+! rowspan=2 |Growth time
+! colspan=4 |Experience
+! rowspan=2 |Total cost<ref group="S">Seed Cost, Protection cost and 200 coins for removal, minus the worth of what is harvested where applicable.</ref>
+! rowspan=2 |GP/XP
+|-
+!Planting
+!Checking
+!Harvesting
+!Total
+|-
+|72
+|{{plinkt|Calquat tree seed|txt=Calquat}}
+|{{plinkp|Poison ivy berries}}||8 [[poison ivy berries]]
+|21hr20m (8x160 min)
+|129.5
+|12,096
+|291
+|12,516.5
+|{{Coins|-({{GEP|Calquat tree seed}}+{{GEP|Poison ivy berries|8}}+200)}}
+|{{Coins|-({{GEP|Calquat tree seed}}+{{GEP|Poison ivy berries|8}}+200)/12516.5}}
+|-
+|74
+|{{plinkt|Crystal acorn}}
+|{{NA|colspan=2}}
+|8hr00m (6x80 min)
+|126
+|13,240
+|{{NA}}
+|13,366
+|<ref group="S">Crystal tree yields roughly 30 [[Crystal shard|crystal shards]] when treated with [[ultracompost]], which average roughly {{Coins|{{GEP|Divine super combat potion(4)}}*2.5-({{GEP|Super combat potion(4)}}*2.5)}} per shard when used to make [[Divine super combat potion|divine super combat potions]] with 97 [[Herblore]]. Profit assumes you traded in a crystal weapon seed to [[Pennant]] for a crystal acorn.</ref>
+|
+|-
+|85
+|{{plinkt|Celastrus seed|txt=Celastrus}}
+|{{plinkp|Potato cactus}}||8 [[potato cactus]]
+|13hr20m (5x160 min)
+|204
+|14,130
+|70.5<ref group="S">Yield increases depending on the type of [[compost]] used. A celastrus tree gives 9 barks on average when using ultracompost. ([[Farming#Average yield per crop type|see average yield calculation]])</ref>
+|14,404.5
+|{{Coins|-(({{GEP|Celastrus seed}}+{{GEP|Potato cactus|8}})+200)+{{GEP|Celastrus bark|9}}}}
+|{{Coins|(-(({{GEP|Celastrus seed}}+{{GEP|Potato cactus|8}})+200)+{{GEP|Celastrus bark|9}})/14450}}
+|-
+|90
+|{{plinkt|Redwood tree seed|txt=Redwood}}
+|{{plinkp|Dragonfruit}}||6 [[dragonfruit]]
+|106hr40m (10x640 min)
+|230
+|22,450
+|{{NA}}
+|22,680
+|{{Coins|-({{GEP|Redwood tree seed}}+{{GEP|Dragonfruit|6}}+2000)}}<ref group="S">Redwood trees cost 2000 coins to remove.</ref>
+|{{Coins|-({{GEP|Redwood tree seed}}+{{GEP|Dragonfruit|6}}+2000)/22680}} 
+|}
+{{reflist|group=S}}
+
+==Example tree runs==
+Start out at the [[Grand Exchange]] and buy all of the saplings, payments and teleports needed.
+
+In the first run, the player will have to rake all of the patches. In subsequent runs, this is only necessary if a [[Farming#Growth cycles|growth cycle]] happens in between removing the tree and planting a new one. It is recommended to leave a rake at a [[Tool Leprechaun]] in case this happens.
+
+===Example low-level tree run===
+{{Inventory
+|align = right|Coins 10000\2000000|Spade|Willow sapling|Willow sapling|Willow sapling|Willow sapling|Willow sapling|Willow sapling|Ring of wealth|Taverley teleport|Lumbridge teleport (tablet)|Varrock teleport (tablet)|Banana sapling|Banana sapling|Banana sapling|Banana sapling|Banana sapling|Stamina potion|Catherby teleport (tablet)|Digsite pendant|Pendant of ates|Rune pouch|Apples(5)\100;n|Limpwurt root\100;n|Teak sapling|Teak sapling|Teak sapling|Teak sapling|
+}}
+This is an example setup for doing a tree run consisting of 6 trees, 5 fruit trees and 5 hardwood trees at level 35. This run does not include the [[Lletya]] fruit tree due to the quests required however the last step is shown as an example, nor the tree and fruit tree patches in the Farming Guild due to the Farming level requirements.
+
+The route assumes the player pays the farmers to chop down the trees and to look after them.
+
+====Items needed====
+*Coins
+*Spade
+*Stamina potion
+*6 tree, 5 fruit tree, and 5 hardwood tree saplings.
+**7 tree saplings if the farming guild patch is unlocked ({{SCP|Farming}}65 Farming).
+**6 fruit tree saplings if Lletya patch is unlocked (started {{SCP|Quest}} [[Mourning's End Part I]]).
+**7 fruit tree saplings if both the Lletya and the farming guild ({{SCP|Farming}}85 Farming) patches are unlocked.
+*Payments in banknotes
+*[[Ring of wealth]] with at least 2 charges
+**Alternatively, Falador teleport then run to Falador Park
+*Teleports to Lumbridge, Varrock, and Catherby
+*Slayer ring
+**Alternatively, use the spirit tree to Tree Gnome Stronghold and run south-west
+**Alternatively, use the [[Royal seed pod|Royal Seed Pod]] to teleport to the Tree Gnome Stronghold and run south-west. (Requires completion of [[Monkey Madness II]])
+*Teleport to house tablets and redirection scrolls for access to Taverley and Brimhaven house portals
+**Alternatively, a teleport to Falador for the Taverley patch
+**Alternatively, take the charter ship from Catherby to Brimhaven.
+**Alternatively, a teleport near a charter ship for the Brimhaven patch.
+*[[Digsite pendant]] or a Digsite teleport for hardwood trees
+*[[Pendant of ates]] (Optional for faster transportation to the Kastori and Nemus Retreat patches)
+*[[Rune pouch]] (Optional. Frees up inventory space that was used by Teleport Tabs to Falador, Lumbridge, Varrock, and Ardougne)
+**Recommended rune setup: Dust-Steam-Law,  Lava-Mist-Law, or Air-Water-Law with a [[Lava battlestaff]] equipped.
+*Rake stored at a Tool Leprechaun
+*An Axe (Optional, if not paying for the farmers to remove the tree)
+
+====Doing the run====
+For each step, check the health of the tree and replant it.
+
+#Teleport to Falador Park with the ring of wealth to the tree patch. Alternatively, use Falador Teleport and run east.
+#Teleport to Taverley and run east to the tree patch. Alternatively, run north from Falador.
+#Teleport to Lumbridge, run west through Lumbridge Castle and exit through the castle walls to find a tree patch. 
+#Teleport to Varrock, run a bit north and then north-east to the tree patch.
+#Use your [[Slayer ring|Slayer ring]] to teleport to the Stronghold Cave tree patch. Alternatively, use a spirit tree or [[Royal seed pod|Royal Seed Pod]] to teleport to Tree Gnome Stronghold and run south-west to the tree patch.
+#Run north-east and turn east at the spirit tree to reach the fruit tree patch
+#Use the spirit tree to teleport to Tree Gnome Village. Run to the south-west corner of the fence and squeeze through the entrance. Click on [[Elkoy]] to follow him through the maze, and run a bit south-west to the fruit tree patch.
+#Use a skills necklace to teleport to the farming guild for a tree patch ({{SCP|Farming}}65 Farming) and a fruit tree patch ({{SCP|Farming}}85 Farming).
+#Teleport to [[Nemus Retreat]] in Varlamore via the [[Pendant of ates]] and run north to the tree patch. Alternatively, travel to [[Quetzacalli Gorge]] via [[Quetzal Transport System|Quetzal transport]] and run north-west to the [[Mountain Guide (Auburn Valley)|Mountain Guide]]. Follow them to Nemus Retreat.
+#Use the [[Pendant of ates]] to teleport to Kastori and run south-west to the fruit tree patch. Alternatively, use travel to Kastori via Quetzal Transport and run north-east to the calquat patch ({{SCP|Farming}}72 Farming) and then north-west to fruit tree patch.
+#Travel to [[Colossal Wyrm Remains|Colossal Wyrm]] Remains via Quetzal transport and run north to the Hardwood patch at [[Locus Oasis]] . Alternatively, fairy ring to  {{Fairycode|AJP}}  and travel south-east.
+#Travel to [[The Summer Shore]] for a calquat patch (requires completion of {{SCP|Quest}} [[Troubled Tortugans]]).
+#*Take the fairy ring north-west of Locus Oasis to {{Fairycode|CJQ}}.  Run south ({{SCP|Agility}}50 Agility) and then west to find the calquat patch.
+#*Alternatively, use a [[sailors' amulet]] to teleport to [[Deepfin Point]] ({{SCP|Sailing}}67 Sailing), and take the charter ship to [[The Summer Shore]]. <ref group="Q">Any charter ship can be used, but teleporting to [[Deepfin Point]] is the fastest. [[Catherby teleport (tablet)|Catherby teleport]] and [[Khazard Teleport|Khazard teleport]] are some alternatives.</ref> Run north then west to find the calquat patch.
+#Teleport to Catherby and run east to the fruit tree patch near the fishing spots. Since a bank is nearby, now would be a good time to deposit hardwood saplings and ultracompost.
+#Head to the Brimhaven fruit tree patch by using a house teleport to Brimhaven and running north. Alternatively, take the charter ship from the Catherby Docks to Brimhaven.
+#Take the charter ship from Brimhaven to [[Corsair Cove]] and run west to take the [[Rowboat (amenity)|rowboat]] ({{SCP|Sailing}}51 Sailing) to  [[Anglers' Retreat|Angler's Retreat]]. Alternatively, take the Brimhaven spirit tree ({{SCP|Farming}}83 Farming) to [[Feldip Hills|Feldip hills]] and run east to use the rowboat ({{SCP|Sailing}}51 Sailing). The hardwood patch is south of where you arrive.
+#Use a Tai Bwo Wannai teleport scroll and run north to the calquat patch ({{SCP|Farming}}72 Farming). Alternatively, fairy ring to  {{Fairycode|CKR}}  and travel north.
+#Teleport to the Digsite by using a [[Digsite pendant]] or Digsite teleport. Run to the barge, quick-travel to Fossil Island, and run to the three hardwood tree patches to the north-west.
+#Teleport to Lletya with a [[teleport crystal]] and run south-east to the fruit tree patch.
+<references group="Q" />
+
+==Other methods==
+===Herb runs===
+[[File:Torstol detail.png|right|170x170px]]
+{{Main|Farming runs#Herb run}}
+
+Herb runs offer good profit, and decent Farming experience when growing high-level herbs such as [[torstol]]s. Some players choose to do this to compensate the cost of doing tree runs, or to make money in general. Herbs take 80 minutes to grow. To gain extra Farming experience, players can farm [[allotments]] (such as [[snape grass]]) along with herb runs.
+
+Always treat herb patches with ultracompost. This minimises the chance of disease, increases the expected yield, and ensures the minimum amount of 6 herbs per seed when used along with magic secateurs.
+
+By default, three herb patches are available for the player, with the remaining seven requiring the following:
+
+*[[Morytania]]: Completion of [[Priest in Peril]]
+*[[Harmony Island]]: Completion of the elite Morytania Diary
+*[[Hosidius]]: Visit Kourend at least once
+*[[Farming Guild]]: 65 Farming
+*[[Troll Stronghold]]: Completed [[My Arm's Big Adventure]]
+*[[Weiss]]: Completed [[Making Friends with My Arm]] and additionally built a [[Fire of Nourishment]] by the patches
+*[[Civitas illa Fortis]]: Completed [[Children of the Sun]]
+
+====Setup====
+*Spade
+*Seed dibber (optional if [[Barbarian Training#Bare-handed planting|the seed planting portion]] of Barbarian Training is complete)
+*Rake (can be stored with the [[Tool Leprechaun]] most of the time when harvesting and replanting)
+*[[Farmer's outfit]] and [[Stamina potion]] or [[weight-reducing gear]]
+*Teleports for the various patches (best listed first)
+**Ardougne 
+***[[Ardougne cloak 4]] 
+***[[Ardougne cloak 3]] provides five daily teleports 
+***[[Ardougne cloak 2]] provides three daily teleports
+***[[Skills necklace]] (fishing guild) and run east
+**Catherby  
+***[[Catherby Teleport]] from the [[Lunar spellbook]] or its [[Catherby teleport (tablet)|tablet]]
+***[[Camelot Teleport]] and run due east
+**Falador 
+***[[Explorer's ring 3]] or [[Explorer's ring 4|4]] 
+***[[Explorer's ring 2]] provides three daily teleports
+***[[Ring of the elements|Ring of the Elements]] (air altar)
+**Farming Guild
+***[[Skills necklace]]
+***[[Fairy rings|Fairy ring]] {{Fairycode|CIR}} and run south-west
+***[[Spirit tree (Farming)|spirit tree]]
+**Harmony Island (unlocked after completion of the Elite [[Morytania Diary]])
+***[[Harmony Island Teleport]] or tablet
+***Any method to reach [[Port Phasmatys]] and talk to [[Bill Teach]]
+**Hosidius 
+***[[Xeric's talisman]] option Xeric's Glade
+***[[House portal]]
+***[[Spirit tree (Farming)|spirit tree]] and run east ({{SCP|Agility|45}})
+***[[Tithe Farm]] activity teleport
+***[[Fairy rings|Fairy ring]] {{Fairycode|AKR}} and run west
+**Morytania 
+***[[Ectophial]] and run west
+***[[Fenkenstrain's Castle Teleport]] from the [[Arceuus spellbook]] and run east
+***[[Fairy rings|Fairy ring]] {{Fairycode|ALQ}}
+**Troll Stronghold (unlocked after [[My Arm's Big Adventure]])
+***[[Stony basalt]] after [[Making Friends with My Arm]]
+***[[Troll stronghold teleport]] and descend west
+**Varlamore (unlocked after [[Children of the Sun]]) 
+***[[Perfected quetzal whistle]] or its variations and run north
+***[[Civitas illa Fortis Teleport]] or tablet and run west out of the city
+***[[Quetzal]] and run west
+***[[Fairy rings|Fairy ring]] {{Fairycode|AJP}} and run north-west
+**Weiss (unlocked after [[Making Friends with My Arm]] and lighting the [[Fire of Nourishment]] 
+***[[Icy basalt]]
+*[[Herb seed]]s
+*[[Herb Sack]] - can be used to store herbs instead of noting them at a [[Tool Leprechaun]], which can be helpful if growing several kinds of herbs
+*[[Magic secateurs]]
+*[[Bottomless compost bucket]] filled with [[ultracompost]]
+**Alternatively, [[ultracompost]]s can be brought, or runes for the [[Fertile Soil]] spell and [[volcanic ash]]es (after reading the [[ash covered tome]])
+
+====Allotment runs====
+At level 47 Farming, players can add allotment runs alongside their herb runs. Allotments usually consist of two sets of farmable patches, with the exception of the one on [[Harmony Island]], which only has one. This level allows players to start growing [[watermelon]]s. Each harvested watermelon provides 54.5 experience, and a fair amount of watermelons can be harvested with ultracompost and magic secateurs.
+
+Barring the patch on Harmony Island, all allotment patches are either watched by a gardener or have a flower patch. Players are highly encouraged to grow [[Nasturtium]]s on the flower patch, as this protects watermelons from disease and ensures they will never die, making yield the only priority. 
+
+At level 61 Farming, players should replace the allotments with [[snape grass]]; each harvested spike of grass provides 82 experience. The nasturtiums should also be replaced with [[White lily (plant)|white lilies]], as this protects all allotments from disease.
+
+By default, three locations are available to the player, with the other six requiring quests and/or additional requirements:
+
+*[[Falador]]: No requirements
+*[[Catherby]]: No requirements
+*[[Ardougne]]: No requirements
+*[[Morytania]]: Completed [[Priest in Peril]]
+*[[Hosidius]]: Visit Kourend at least once
+*[[Farming Guild]]: 45 Farming
+*[[Harmony Island]]: Started [[The Great Brain Robbery]]
+*[[Prifddinas]]: Completion of [[Song of the Elves]]
+*[[Civitas illa Fortis]]: Completion of [[Children of the Sun]]
+
+====GP/XP calculations====
+{{Main|Calculator:Farming/Herbs}}
+
+===Tithe Farm===
+At level 34, experience may be gained at the [[Tithe Farm]] minigame. In this way, players can gain significant Farming experience between the time it takes patches to grow, or train exclusively at the minigame to save money on seeds. From level 74 onwards, players can get around 90,000–100,000 experience per hour.
+
+Exclusive rewards obtained through tithe farm can prove useful in training farming, such as the [[farmer's outfit]], the [[seed box]], and the [[gricoller's can]].
+
+==See also==
+
+*[[Quest experience rewards#Farming|Quest experience rewards - Farming]]
+
+{{Training guides}}
+[[Category:Members]]

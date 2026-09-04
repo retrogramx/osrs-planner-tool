@@ -1,0 +1,1709 @@
+{{External|rs|rsc}}
+{{See also|Free-to-play transportation}}
+[[File:Transportation logo.png|right|150px]]
+'''Transportation''' includes all of the varied means of getting around the world of ''[[Old School RuneScape]]''.
+
+==Efficient transportation==
+To get around in an efficient manner, you should consider the following things:
+*Train your [[Agility]] for faster restoration of [[run energy]].
+*Use [[weight-reducing gear]] to run for longer periods.
+*Train your [[Magic]] level to unlock [[teleport spells]], or purchase [[teleport tablets]] instead.
+*Complete quests to gain access to transportation methods such as [[spirit tree]]s, [[fairy ring]]s, [[gnome glider]]s and certain spells.
+*By training up your [[Construction]] you can add various transportation methods to your [[Player owned house|house]] such as [[Jewellery_box_space|jewellery boxes]], portals with teleports from all spellbooks, and mounted amulets. Your house can eventually serve as a hub for transportation around the map which you can access using only [[house teleports]].
+**If you do not have all of the useful transportation options in your house, consider joining world 330 if your [[POH|house]] is in [[Rimmington]], to use the facilities of houses of high level hosts if available. Join their house using the [[House Advertisement]] facility, and use their installed teleportation methods. If the hosts have maxed out houses, they often also have [[rejuvenation pool]]s, restoring your run energy. Especially for low-level players, this method opens up an extreme range of teleportation options for the price of just one house teleport.
+*To reach useful locations like banks, skilling resources and facilities or other transport network nodes, familiarize yourself with the [[Closest...|closest]] transportation destinations to various useful features.
+
+==Foot travel==
+{{See also|Energy|Run trick}}
+Walking or running is the basic method of travel. The amount of weight carried determines how long a player can run, while  their [[Agility]] level impacts their run energy restoration rate. The more weight you carry, the shorter distance you can run. Additionally, pressing the Control key and clicking on a part of the map temporarily turns on run.
+
+* '''Agility shortcuts and obstacles:'''  By taking shortcuts, a player is able to reach a destination faster. The higher the [[Agility]] level, the more shortcuts are available. There are also obstacles, which are similar to shortcuts, but have one major difference: using these agility obstacles is the only way to get to that certain area.
+
+==Teleportation==
+[[File:Teleport.gif|thumb|right|A player teleporting]]
+Teleportation is the instant travel from any location to a specific location elsewhere. This can take a number of different forms.
+
+===Spells===
+====Standard spellbook====
+''For more information, see [[Standard spells]].''
+[[File:Home Teleport.gif|right|thumb|upright|A player using the Home Teleport spell.]]
+====Basic teleports====
+{| class="wikitable sortable"
+! class="unsortable" |Icon!!Spell!!{{plinkp|Magic|pic=magic icon}} Level!! class="unsortable" |[[Runes]] required!![[Experience|XP]]!! class="unsortable" |Destination
+!Members
+|-
+|[[File:Lumbridge Home Teleport.png]]||[[Lumbridge Home Teleport]]||0||{{NA}}||0||[[Lumbridge]]. It takes around 10 seconds to cast and is interruptible by [[combat]]. Additionally, it may only be cast every 30 minutes.
+|{{Members|No}}
+|-
+|[[File:Minigame Teleport.png]]||[[Minigame Teleport]]||0||{{NA}}||0||Various [[Minigame]]s, most of which have requirements to unlock the teleport. It takes around 10 seconds to cast and is interruptible by [[combat]]. Additionally, it may only be cast every 20 minutes.
+|{{Members|No}}
+|-
+|[[File:Varrock Teleport.png]]||[[Varrock Teleport]]||25||{{RuneReq|Law=1|Air=3|Fire=1}}||35||Centre of [[Varrock]], or [[Grand Exchange]] upon completion of the [[Medium Varrock Diary]].
+|{{Members|No}}
+|-
+|[[File:Lumbridge Teleport.png]]||[[Lumbridge Teleport]]||31||{{RuneReq|Law=1|Air=3|Earth=1}}||41||[[Lumbridge Castle]] courtyard.
+|{{Members|No}}
+|-
+|[[File:Falador Teleport.png]]||[[Falador Teleport]]||37||{{RuneReq|Law=1|Air=3|Water=1}}||48||Centre of [[Falador]].
+|{{Members|No}}
+|-
+|[[File:Teleport to House.png]]||[[Teleport to House]]||40||{{RuneReq|Law=1|Air=1|Earth=1}}||30||[[Player-owned house]], or at the [[Portal (Player-owned house)|portal]] of the house.
+|{{Members|Yes}}
+|-
+|[[File:Camelot Teleport.png]]||[[Camelot Teleport]]||45||{{RuneReq|Law=1|Air=5}}||55.5||South of the [[Camelot]] castle, or [[Seers' Village bank]] upon completion of the [[Hard Kandarin Diary]].
+|{{Members|Yes}}
+|-
+|[[File:Kourend Castle Teleport.png]]||[[Kourend Castle Teleport]]||48||{{RuneReq|Law=2|Water=1|Fire=1}}||58||[[Kourend Castle]] courtyard, by the [[Statue (King Rada I)|statue]]. Requires completion of [[Client of Kourend]].
+|{{Members|Yes}}
+|-
+|[[File:Ardougne Teleport.png]]||[[Ardougne Teleport]]||51||{{RuneReq|Law=2|Water=2}}||61||Centre of [[Ardougne]]. Requires completion of [[Plague City]].
+|{{Members|Yes}}
+|-
+|[[File:Civitas illa Fortis Teleport.png]]||[[Civitas illa Fortis Teleport]]||54||{{RuneReq|Law=2|Earth=1|Fire=1}}||64||The fountain in [[Civitas illa Fortis]]. Requires completion of [[Twilight's Promise]].
+|{{Members|Yes}}
+|-
+|[[File:Watchtower Teleport.png]]||[[Watchtower Teleport]]||58||{{RuneReq|Law=2|Earth=2}}||68||Top floor of the [[Watchtower (building)|Watchtower]], or centre of [[Yanille]] upon completion of the [[Hard Ardougne Diary]]. Requires completion of [[Watchtower]].
+|{{Members|Yes}}
+|-
+|[[File:Trollheim Teleport.png]]||[[Trollheim Teleport]]||61||{{RuneReq|Law=2|Fire=2}}||68||Top of [[Trollheim]], near Eadgar's cave. Requires completion of [[Eadgar's Ruse]].
+|{{Members|Yes}}
+|-
+|[[File:Ape Atoll Teleport (standard).png]]||[[Ape Atoll Teleport (standard)|Ape Atoll Teleport]]||64||{{RuneReq|Law=2|Fire=2|Water=2|Banana=1}}||74||[[Ape Atoll]]. Requires completion of the [[Recipe for Disaster/Freeing King Awowogei|Freeing King Awowogei]] subquest of [[Recipe for Disaster]].
+|{{Members|Yes}}
+|-
+|[[File:Teleport to Boat.png]]||[[Teleport to Boat]]||67||{{RuneReq|Law=2|Earth=2|Water=2}}||77||Teleports the caster to their Player Owned [[Boat]]. Requires completion of [[Pandemonium]]. Requires construction of a [[Greater teleport focus (facility)|Greater Teleport focus]].||{{Members|Yes}}
+|-
+|[[File:Teleport to Target.png]]||[[Teleport to Target]]||85||{{RuneReq|Law=1|Chaos=1|Death=1}}||45||Near your [[Bounty Hunter]] target. Requires unlocking with a [[Target teleport scroll]].
+|{{Members|Yes}}
+|}
+
+====Teleother====
+''Players wishing to be teleported by the caster must have '''[[Accept Aid]]''' turned on and agree to be teleported. These are single target teleother spells. All tele-other spells are members only.''
+{| class="wikitable sortable"
+!class="unsortable"|Icon
+!Spell
+!{{plinkp|Magic|pic=magic icon}} Level
+!class="unsortable"|[[Runes]] required
+![[Experience|XP]]
+|-
+|[[File:Teleother Lumbridge.png]]
+|[[Teleother Lumbridge|Tele-other Lumbridge]]
+|74
+|{{RuneReq|Soul=1|Law=1|Earth=1}}
+|84
+|-
+|[[File:Teleother Falador.png]]
+|[[Teleother Falador|Tele-other Falador]]
+|82
+|{{RuneReq|Soul=1|Law=1|Water=1}}
+|92
+|-
+|[[File:Teleother Camelot.png]]
+|[[Teleother Camelot|Tele-other Camelot]]
+|90
+|{{RuneReq|Soul=2|Law=1}}
+|100
+|}
+
+====Ancient Magicks====
+''Players must have completed [[Desert Treasure I]] to use [[Ancient Magicks]].''
+[[File:Ancient teleport.gif|right|thumb|upright|A player using [[Ancient spells]] to teleport.]]
+{| class="wikitable sortable"
+!class="unsortable"|Icon
+!Spell
+!{{plinkp|Magic|pic=magic icon}} Level
+!class="unsortable"|[[Runes]] required
+![[Experience|XP]]
+!class="unsortable"|Destination
+|-
+|[[File:Edgeville Home Teleport.png]]
+|[[Edgeville Home Teleport]]
+|0
+|{{NA}}
+|0
+|[[Edgeville]]. It takes around 10 seconds to cast and is interruptible by combat. Additionally, it may only be cast every 30 minutes.
+|-
+|[[File:Minigame Teleport.png]]
+|[[Minigame Teleport]]
+|0
+|{{NA}}
+|0
+|Various [[Minigame]]s, most of which have requirements to unlock the teleport. It takes around 10 seconds to cast and is interruptible by [[combat]]. Additionally, it may only be cast every 20 minutes.
+|-
+|[[File:Paddewwa Teleport.png]]
+|[[Paddewwa Teleport]]
+|54
+|{{RuneReq|Law=2|Air=1|Fire=1}}
+|64
+|[[Edgeville Dungeon]].
+|-
+|[[File:Senntisten Teleport.png]]
+|[[Senntisten Teleport]]
+|60
+|{{RuneReq|Law=2|Soul=1}}
+|70
+|[[Digsite]] [[Exam Centre]].
+|-
+|[[File:Kharyrll Teleport.png]]
+|[[Kharyrll Teleport]]
+|66
+|{{RuneReq|Law=2|Blood=1}}
+|76
+|[[Canifis]].
+|-
+|[[File:Lassar Teleport.png]]
+|[[Lassar Teleport]]
+|72
+|{{RuneReq|Law=2|Water=4}}
+|82
+|Top of [[Ice Mountain]].
+|-
+|[[File:Dareeyak Teleport.png]]
+|[[Dareeyak Teleport]]
+|78
+|{{RuneReq|Law=2|Air=2|Fire=3}}
+|88
+|[[Ruins (west)|Ruins]] west of the [[Bandit Camp (Wilderness)|Bandit Camp]] in the [[Wilderness]] (level 23).
+|-
+|[[File:Carrallanger Teleport.png]]
+|[[Carrallanger Teleport]]
+|84
+|{{RuneReq|Law=2|Soul=2}}
+|94
+|[[Graveyard of Shadows]] in the [[Wilderness]] (level 19).
+|-
+|[[File:Annakarl Teleport.png]]
+|[[Annakarl Teleport]]
+|90
+|{{RuneReq|Law=2|Blood=2}}
+|100
+|[[Demonic Ruins]] in the [[Wilderness]] (level 47).
+|-
+|[[File:Ghorrock Teleport.png]]
+|[[Ghorrock Teleport]]
+|96
+|{{RuneReq|Law=2|Water=8}}
+|106
+|[[Ice Plateau]] in the [[Wilderness]] (level 45).
+|}
+
+====Lunar Spells====
+''Players must have completed [[Lunar Diplomacy]] to use [[Lunar spells]].''
+
+====Basic teleports====
+[[File:Lunar teleport.gif|right|thumb|upright|A player using [[Lunar spells]] to teleport.]]
+{| class="wikitable sortable"
+! class="unsortable" |Icon!!Spell!!{{plinkp|Magic|pic=magic icon}} Level!! class="unsortable" |[[Runes]] required!! |[[Experience|XP]]!! class="unsortable" |Destination
+|-
+|[[File:Lunar Home Teleport.png]]||[[Lunar Home Teleport]]||0||{{NA}}||0||Next to the bank on [[Lunar Isle]]. It takes around 10 seconds to cast and is interruptible by combat. Additionally, it may only be cast every 30 minutes.
+|-
+|[[File:Minigame Teleport.png]]||[[Minigame Teleport]]||0||{{NA}}||0||Various [[Minigame]]s, most of which have requirements to unlock the teleport. It takes around 10 seconds to cast and is interruptible by [[combat]]. Additionally, it may only be cast every 20 minutes.
+|-
+|[[File:Moonclan Teleport.png]]||[[Moonclan Teleport]]||69||{{RuneReq|Astral=2|Law=1|Earth=2}}||66||Next to the bank on [[Lunar Isle]].
+|-
+|[[File:Ourania Teleport.png]]
+|[[Ourania Teleport]]
+|71
+| nowrap="nowrap" |{{RuneReq|Astral=2|Law=1|Earth=6}}
+|69
+|Outside of the [[Ourania Cave]] near the [[red salamander (Hunter)|red salamanders]]. Players must speak to [[Baba Yaga]] to unlock the ability to cast this spell.
+|-
+|[[File:Waterbirth Teleport.png]]||[[Waterbirth Teleport]]||72||{{RuneReq|Astral=2|Law=1|Water=1}}||71||[[Waterbirth Island]], beside [[Jarvald]]'s ship.
+|-
+|[[File:Barbarian Teleport.png]]||[[Barbarian Teleport]]||75||{{RuneReq|Astral=2|Law=2|Fire=3}}||76||Next to the [[Barbarian Outpost]].
+|-
+|[[File:Khazard Teleport.png]]||[[Khazard Teleport]]||78||{{RuneReq|Astral=2|Law=2|Water=4}}||80||[[Port Khazard]].
+|-
+|[[File:Fishing Guild Teleport.png]]||[[Fishing Guild Teleport]]||85||{{RuneReq|Astral=3|Law=3|Water=10}}||89||Outside of the [[Fishing Guild]].
+|-
+|[[File:Catherby Teleport.png]]||[[Catherby Teleport]]||87||{{RuneReq|Astral=3|Law=3|Water=10}}||92||Near the bank in [[Catherby]].
+|-
+|[[File:Ice Plateau Teleport.png]]||[[Ice Plateau Teleport]]||89||{{RuneReq|Astral=3|Law=3|Water=8}}||96||[[Ice Plateau]] in level 53 [[Wilderness]].
+|}
+
+====Tele Group====
+''Players wishing to be teleported by the caster must be within a 3x3 square, have '''[[Accept Aid]]''' turned on, and agree to be teleported.''
+{| class="wikitable sortable"
+!class="unsortable"|Icon
+!Spell
+!{{plinkp|Magic|pic=magic icon}} Level
+!class="unsortable"|[[Runes]] required
+![[Experience|XP]]
+|-
+|[[File:Tele Group Moonclan.png]]
+|[[Tele Group Moonclan]]
+|70
+|{{RuneReq|Law=1|Astral=2|Earth=4}}
+|67
+|-
+|[[File:Tele Group Waterbirth.png]]
+|[[Tele Group Waterbirth]]
+|73
+|{{RuneReq|Law=1|Astral=2|Water=5}}
+|72
+|-
+|[[File:Tele Group Barbarian.png]]
+|[[Tele Group Barbarian]]
+|76
+|{{RuneReq|Law=2|Astral=2|Fire=6}}
+|77
+|-
+|[[File:Tele Group Khazard.png]]
+|[[Tele Group Khazard]]
+|79
+|{{RuneReq|Law=2|Astral=2|Water=8}}
+|81
+|-
+|[[File:Tele Group Fishing Guild.png]]
+|[[Tele Group Fishing Guild]]
+|86
+|{{RuneReq|Law=3|Astral=3|Water=14}}
+|90
+|-
+|[[File:Tele Group Catherby.png]]
+|[[Tele Group Catherby]]
+|88
+|{{RuneReq|Law=3|Astral=3|Water=15}}
+|93
+|-
+|[[File:Tele Group Ice Plateau.png]]
+|[[Tele Group Ice Plateau]]
+|90
+|{{RuneReq|Law=3|Astral=3|Water=16}}
+|99
+|}
+
+====Arceuus Spellbook====
+{| class="wikitable sortable"
+! class="unsortable" |Icon
+!Spell
+!{{plinkp|Magic|pic=magic icon}} Level
+!class="unsortable"|[[Runes]] required
+![[Experience|XP]]
+!class="unsortable"|Destination
+|-
+|[[File:Arceuus Home Teleport.png]]
+|[[Arceuus Home Teleport]]
+|1
+|{{NA}}
+|0
+|[[Dark Altar]] north of [[Arceuus]]. It takes around 10 seconds to cast and is interruptible by combat. Additionally, it may only be cast every 30 minutes.
+|-
+|[[File:Minigame Teleport.png]]
+|[[Minigame Teleport]]
+|0
+|{{NA}}
+|0
+|Various [[Minigame]]s, most of which have requirements to unlock the teleport. It takes around 10 seconds to cast and is interruptible by [[combat]]. Additionally, it may only be cast every 20 minutes.
+|-
+|[[File:Arceuus Library Teleport.png]]
+|[[Arceuus Library Teleport]]
+|6
+| nowrap="nowrap" |{{RuneReq|Law=1|Earth=2}}
+|10
+|North of [[Arceuus Library]].
+|-
+|[[File:Draynor Manor Teleport.png]]
+|[[Draynor Manor Teleport]]
+|17
+| nowrap="nowrap" |{{RuneReq|Law=1|Earth=1|Water=1}}
+|16
+|[[Draynor Manor]].
+|-
+|[[File:Battlefront Teleport.png]]
+|[[Battlefront Teleport]]
+|23
+| nowrap="nowrap" |{{RuneReq|Law=1|Earth=1|Fire=1}}
+|19
+|Outside the [[Battlefront]] in the [[Kebos Lowlands]].
+|-
+|[[File:Mind Altar Teleport.png]]
+|[[Mind Altar Teleport]]
+|28
+| nowrap="nowrap" |{{RuneReq|Law=1|Mind=2}}
+|22
+|[[Mind Altar]].
+|-
+|[[File:Respawn Teleport.png]]
+|[[Respawn Teleport]]
+|34
+| nowrap="nowrap" |{{RuneReq|Law=1|Soul=1}}
+|27
+|[[Respawn point]].
+|-
+|[[File:Salve Graveyard Teleport.png]]
+|[[Salve Graveyard Teleport]]
+|40
+| nowrap="nowrap" |{{RuneReq|Law=1|Soul=2}}
+|30
+|[[Ghoul]] area by the entrance to [[Mort Myre Swamp]].
+|-
+|[[File:Fenkenstrain's Castle Teleport.png]]
+|[[Fenkenstrain's Castle Teleport]]
+|48
+| nowrap="nowrap" |{{RuneReq|Law=1|Soul=1|Earth=1}}
+|50
+|[[Fenkenstrain's Castle]].
+|-
+|[[File:West Ardougne Teleport.png]]
+|[[West Ardougne Teleport]]
+|61
+| nowrap="nowrap" |{{RuneReq|Law=2|Soul=2}}
+|68
+|[[West Ardougne]]. Requires completion of [[Biohazard]].
+|-
+|[[File:Harmony Island Teleport.png]]
+|[[Harmony Island Teleport]]
+|65
+| nowrap="nowrap" |{{RuneReq|Law=1|Soul=1|Nature=1}}
+|74
+|[[Harmony Island]]. Requires completion of [[The Great Brain Robbery]].
+|-
+|[[File:Cemetery Teleport.png]]
+|[[Cemetery Teleport]]
+|71
+| nowrap="nowrap" |{{RuneReq|Law=1|Soul=1|Blood=1}}
+|82
+|[[The Forgotten Cemetery]] in the [[Wilderness]] (level 31).
+|-
+|[[File:Barrows Teleport.png]]
+|[[Barrows Teleport]]
+|83
+| nowrap="nowrap" |{{RuneReq|Law=2|Soul=2|Blood=1}}
+|90
+|[[Barrows]]
+|-
+|[[File:Ape Atoll Teleport (Arceuus).png]]
+|[[Ape Atoll Teleport (Arceuus)|Ape Atoll Teleport]]
+|90
+| nowrap="nowrap" |{{RuneReq|Law=2|Soul=2|Blood=2}}
+|100
+|[[Ape Atoll Dungeon]]
+|}
+
+===Enchanted jewellery===
+All enchanted jewellery is available to [[members]] only.
+{| class="wikitable"
+|-
+!Item
+!Destination
+!Charges
+!Rechargeable?
+|-
+|{{plink|Games necklace}}
+|
+*[[Barbarian Assault]]
+*[[Burthorpe Games Room]]
+*[[Tears of Guthix (minigame)|Tears of Guthix]] (requires completion of [[Tears of Guthix]] quest)
+*[[Corporeal Beast]]
+*[[Wintertodt Camp]] (requires visiting Zeah once)
+|8
+|No
+|-
+|{{plink|Ring of dueling}}
+|
+*[[Emir's Arena]]
+*[[Ferox Enclave]]
+*[[Castle Wars]]
+*[[Fortis Colosseum]]<ref name="fortis" group="g">Unlocked upon reaching [[Fortis_Colosseum#Glory|Hero status]] in the Colosseum.</ref>
+|8
+|No
+|-
+|{{plink|Ring of life}}
+| [[Respawn]] point, if [[Hitpoints]] is less than 10%, except for 0
+|1
+|No
+|-
+|{{plink|Combat bracelet}}
+|
+*[[Warriors' Guild]]
+*[[Champions' Guild]]
+*[[Edgeville Monastery]]
+*[[Ranging Guild]]
+|4 or 6
+|Yes<ref name="Legends' Guild" group="g">Can only be charged at the [[Fountain of Uhld]] ([[Myths' Guild]]), [[Totem Pole (Legends' Guild)|Totem Pole]] ([[Legends' Guild]]), or the [[Fountain of Rune]].</ref>
+|-
+|{{plink|Skills necklace}}
+|
+*[[Fishing Guild]]
+*[[Mining Guild]]
+*[[Crafting Guild]]
+*[[Cooks' Guild]]
+*[[Woodcutting Guild]]
+*[[Farming Guild]]
+|4 or 6
+|Yes<ref name="Legends' Guild" group="g"/>
+|-
+|{{plink|Amulet of glory|pic=Amulet of glory(4)}}
+|
+*[[Edgeville]]
+*[[Karamja]] (Musa Point)
+*[[Draynor Village]]
+*[[Al Kharid]]
+|4 or 6
+|Yes<ref name="Heroes' Guild" group="g">Can only be charged at the [[Fountain of Uhld]] ([[Myths' Guild]]), [[Fountain of Heroes]] ([[Heroes' Guild]]), or the [[Fountain of Rune]].</ref>
+|-
+|{{plink|Amulet of eternal glory}}
+|
+*[[Edgeville]]
+*[[Karamja]] (Musa Point)
+*[[Draynor Village]]
+*[[Al Kharid]]
+|Unlimited
+|N/A
+|-
+|{{plink|Ring of wealth}}
+|
+*[[Miscellania]]
+*[[Grand Exchange]]
+*[[Falador Park]]
+*[[Dondakan]]
+|5
+|Yes<ref name="Fountain of Rune" group="g">Can only be charged at the [[Fountain of Rune]].</ref>
+|-
+|{{plink|Slayer ring}}
+|
+*[[Slayer Tower]]
+*[[Fremennik Slayer Dungeon]]
+*[[Tarn's Lair]]
+*[[Stronghold Slayer Cave]]
+*[[Dark Beast]]s
+|8
+|No
+|-
+|{{plink|Slayer ring (eternal)}}
+|
+*[[Slayer Tower]]
+*[[Fremennik Slayer Dungeon]]
+*[[Tarn's Lair]]
+*[[Stronghold Slayer Cave]]
+*[[Dark Beast]]s
+|Unlimited
+|N/A
+|-
+|{{plink|Digsite pendant}}
+|
+*[[Digsite]]
+*[[Fossil Island]] ([[House on the Hill]])
+*[[Lithkren]]
+|5
+|No
+|-
+|{{plink|Ring of returning}}
+| [[Respawn]] point
+|5
+|No
+|-
+|{{plink|Necklace of passage}}
+|
+*[[Wizards' Tower]]
+*[[Jorral]]'s [[Outpost]]
+*[[Desert eagle]] station of the [[eagle transport system]]
+|5
+|No
+|-
+|{{plink|Burning amulet}}
+|
+*[[Chaos Temple (Wilderness)|Chaos Temple]] (level 15 Wilderness)
+*[[Bandit Camp (Wilderness)|Bandit Camp]] (level 17 Wilderness)
+*[[Lava Maze]] (level 41 Wilderness)
+|5
+|No
+|}
+{{Reflist|group="g"}}
+
+===Portal nexus===
+[[File:Portal_nexus_built.png|right|thumb|upright|A maximum-level portal nexus in a player-owned house.]]
+A [[portal nexus]] can be built in a [[player-owned house]] using the [[Construction]] skill. It is thus members only. The portal nexus can add up to 41 possible locations, the limit depending on the tier of the portal nexus built. However, players require 1,000 times the materials required for the typical teleport. Not all teleports can be added to the portal nexus.
+
+{| class="wikitable sortable lighttable" style="width:850px; text-align:center;"
+!colspan=2 rowspan=2|Location
+!colspan=2|Requirements
+!rowspan=2 class="unsortable"|Runes
+! rowspan="2" |Store Price
+!rowspan=2|[[GE]] Price
+|-
+!Magic
+!Quest
+|-
+||{{plinkp|Arceuus Library Teleport}}
+|[[Arceuus Library Teleport|Arceuus Library]]
+|data-sort-value="Magic 06"|{{SCP|Magic|6}}
+|None
+|{{RuneReq|Law=1k|Earth=2k}}{{+=|Law|1}}{{+=|Earth|2}}
+|{{Coins|248000}}
+|{{Coins|{{GEP|Law rune|1000}} + {{GEP|Earth rune|2000}}}}
+|-
+||{{plinkp|Draynor Manor Teleport}}
+|[[Draynor Manor]]
+|{{SCP|Magic|17}}
+|None
+|{{RuneReq|Law=1k|Earth=1k|Water=1k}}{{+=|Law|1}}{{+=|Earth|1}}{{+=|Water|1}}
+|{{Coins|248000}}
+|{{Coins|{{GEP|Law rune|1000}} + {{GEP|Earth rune|1000}} + {{GEP|Water rune|1000}}}}
+|-
+||{{plinkp|Battlefront Teleport}}
+|[[Battlefront]]
+|{{SCP|Magic|23}}
+|None
+|{{RuneReq|Law=1k|Fire=1k|Earth=1k}}{{+=|Law|1}}{{+=|Fire|1}}{{+=|Earth|1}}
+|{{Coins|248000}}
+|{{Coins|{{GEP|Law rune|1000}} + {{GEP|Earth rune|1000}} + {{GEP|Fire rune|1000}}}}
+|-
+||{{plinkp|Varrock Teleport}}
+|[[Varrock]]/[[Grand Exchange]]{{efn|Players who have completed the [[Medium Varrock Diary]] can choose [[Grand Exchange]] as a destination on the teleport menu or as the default.}}
+|{{SCP|Magic|25}}
+|None
+|{{RuneReq|Law=1k|Fire=1k|Air=3k}}{{+=|Law|1}}{{+=|Fire|1}}{{+=|Air|3}}
+|{{Coins|256000}}
+|{{Coins|{{GEP|Law rune|1000}} + {{GEP|Fire rune|1000}} + {{GEP|Air rune|3000}}}}
+|-
+||{{plinkp|Mind Altar Teleport}}
+|[[Mind Altar]]
+|{{SCP|Magic|28}}
+|None
+|{{RuneReq|Law=1k|Mind=2k}}{{+=|Law|1}}{{+=|Mind|2}}
+|{{Coins|246000}}
+|{{Coins|{{GEP|Law rune|1000}} + {{GEP|Mind rune|2000}}}}
+|-
+||{{plinkp|Lumbridge Teleport}}
+|[[Lumbridge]]
+|{{SCP|Magic|31}}
+|None
+|{{RuneReq|Law=1k|Earth=1k|Air=3k}}{{+=|Law|1}}{{+=|Earth|1}}{{+=|Air|3}}
+|{{Coins|256000}}
+|{{Coins|{{GEP|Law rune|1000}} + {{GEP|Earth rune|1000}} + {{GEP|Air rune|3000}}}}
+|-
+||{{plinkp|Respawn Teleport}}
+|[[Respawn point]]
+|{{SCP|Magic|34}}
+|None
+|{{RuneReq|Law=1k|Soul=1k}}{{+=|Law|1}}{{+=|Soul|1}}
+|{{Coins|540000}}
+|{{Coins|{{GEP|Law rune|1000}} + {{GEP|Soul rune|1000}}}}
+|-
+||{{plinkp|Falador Teleport}}
+|[[Falador]]
+|{{SCP|Magic|37}}
+|None
+|{{RuneReq|Law=1k|Water=1k|Air=3k}}{{+=|Law|1}}{{+=|Water|1}}{{+=|Air|3}}
+|{{Coins|256000}}
+|{{Coins|{{GEP|Law rune|1000}} + {{GEP|Water rune|1000}} + {{GEP|Air rune|3000}}}}
+|-
+||{{plinkp|Salve Graveyard Teleport}}
+|[[Salve Graveyard Teleport|Salve Graveyard]]
+|{{SCP|Magic|40}}
+|[[Priest in Peril]]
+|{{RuneReq|Law=1k|Soul=2k}}{{+=|Law|1}}{{+=|Soul|2}}
+|{{Coins|840000}}
+|{{Coins|{{GEP|Law rune|1000}} + {{GEP|Soul rune|2000}}}}
+|-
+||{{plinkp|Camelot Teleport}}
+|[[Camelot]]/[[Seers' Village]]{{efn|Players who have completed the [[Hard Kandarin Diary]] can choose [[Seers' Village]] as a destination on the teleport menu or as the default.}}
+|{{SCP|Magic|45}}
+|None
+|{{RuneReq|Law=1k|Air=5k}}{{+=|Law|1}}{{+=|Air|5}}
+|{{Coins|260000}}
+|{{Coins|{{GEP|Law rune|1000}} + {{GEP|Air rune|5000}}}}
+|-
+||{{plinkp|Kourend Castle Teleport}}
+|[[Kourend Castle]]
+|{{SCP|Magic|48}}
+|[[Client of Kourend]]
+|{{RuneReq|Law=2k|Water=1k|Fire=1k}}{{+=|Law|2}}{{+=|Water|1}}{{+=|Fire|1}}
+|{{Coins|488000}}
+|{{Coins|{{GEP|Law rune|2000}} + {{GEP|Water rune|1000}} + {{GEP|Fire rune|1000}}}}
+|-
+||{{plinkp|Fenkenstrain's Castle Teleport}}
+|[[Fenkenstrain's Castle]]
+|{{SCP|Magic|48}}
+|[[Priest in Peril]]
+|{{RuneReq|Law=1k|Soul=1k|Earth=1k}}{{+=|Law|1}}{{+=|Soul|1}}{{+=|Earth|1}}
+|{{Coins|544000}}
+|{{Coins|{{GEP|Law rune|1000}} + {{GEP|Earth rune|1000}} + {{GEP|Soul rune|1000}}}}
+|-
+||{{plinkp|Ardougne Teleport}}
+|[[East Ardougne]]
+|{{SCP|Magic|51}}
+|[[Plague City]]
+|{{RuneReq|Law=2k|Water=2k}}{{+=|Law|2}}{{+=|Water|2}}
+|{{Coins|488000}}
+|{{Coins|{{GEP|Law rune|2000}} + {{GEP|Water rune|2000}}}}
+|-
+|{{plinkp|Civitas illa Fortis Teleport}}
+|[[Civitas illa Fortis]]
+|{{SCP|Magic|54}}
+|[[Twilight's Promise]]
+|{{RuneReq|Law=2k|Fire=1k|Earth=1k}}{{+=|Law|2}}{{+=|Earth|1}}{{+=|Fire|1}}
+|{{Coins|488000}}
+|{{Coins|{{GEP|Law rune|2000}} + {{GEP|Earth rune|1000}} + {{GEP|Fire rune|1000}}}}
+|-
+||{{plinkp|Paddewwa Teleport}}
+|[[Paddewwa]] ([[Edgeville Dungeon]])
+|{{SCP|Magic|54}}
+|[[Desert Treasure I]]
+|{{RuneReq|Law=2k|Air=1k|Fire=1k}}{{+=|Law|2}}{{+=|Air|1}}{{+=|Fire|1}}
+|{{Coins|488000}}
+|{{Coins|{{GEP|Law rune|2000}} + {{GEP|Air rune|1000}} + {{GEP|Fire rune|1000}}}}
+|-
+||{{plinkp|Watchtower Teleport}}
+|[[Watchtower (building)|Watchtower]]/[[Yanille]]{{efn|Players who have completed the [[Hard Ardougne Diary]] can choose [[Yanille]] as a destination on the teleport menu or as the default.}}
+|{{SCP|Magic|58}}
+|[[Watchtower]]
+|{{RuneReq|Law=2k|Earth=2k}}{{+=|Law|2}}{{+=|Earth|2}}
+|{{Coins|488000}}
+|{{Coins|{{GEP|Law rune|2000}} + {{GEP|Earth rune|2000}}}}
+|-
+||{{plinkp|Senntisten Teleport}}
+|[[Senntisten]] ([[Digsite]])
+|{{SCP|Magic|60}}
+|[[Desert Treasure I]]
+|{{RuneReq|Law=2k|Soul=1k}}{{+=|Law|2}}{{+=|Soul|1}}
+|{{Coins|780000}}
+|{{Coins|{{GEP|Law rune|2000}} + {{GEP|Soul rune|1000}}}}
+|-
+||{{plinkp|West Ardougne Teleport}}
+|[[West Ardougne]]
+|{{SCP|Magic|61}}
+|[[Biohazard]]
+|{{RuneReq|Law=2k|Soul=2k}}{{+=|Law|2}}{{+=|Soul|2}}
+|{{Coins|1080000}}
+|{{Coins|{{GEP|Law rune|2000}} + {{GEP|Soul rune|2000}}}}
+|-
+||{{plinkp|Trollheim Teleport}}
+|[[Trollheim]]
+|{{SCP|Magic|61}}
+|[[Eadgar's Ruse]]
+|{{RuneReq|Law=2k|Fire=2k}}{{+=|Law|2}}{{+=|Fire|2}}
+|{{Coins|488000}}
+|{{Coins|{{GEP|Law rune|2000}} + {{GEP|Fire rune|2000}}}}
+|-
+||{{plinkp|Ape Atoll Teleport (standard)}}
+|[[Marim]] ([[Ape Atoll]])
+|{{SCP|Magic|64}}
+|[[Recipe for Disaster]]{{efn|Only requires completion of the [[Freeing King Awowogei]] subquest.}}
+|{{RuneReq|Law=2k|Fire=2k|Water=2k|Banana=1k}}{{+=|Law|2}}{{+=|Fire|2}}{{+=|Water|2}}{{+=|Banana|1}}{{efn|[[Bank note]]s for non-stackable items are accepted.|name="noted"}}
+|{{Coins|498000}}
+|{{Coins|{{GEP|Law rune|2000}} + {{GEP|Fire rune|2000}} + {{GEP|Water rune|2000}} + {{GEP|Banana|1000}}}}
+|-
+||{{plinkp|Harmony Island Teleport}}
+|[[Harmony Island]]
+|{{SCP|Magic|65}}
+|[[The Great Brain Robbery]]
+|{{RuneReq|Law=1k|Soul=1k|Nature=1k}}{{+=|Law|1}}{{+=|Soul|1}}{{+=|Nature|1}}
+|{{Coins|720000}}
+|{{Coins|{{GEP|Law rune|1000}} + {{GEP|Soul rune|1000}} + {{GEP|Nature rune|1000}}}}
+|-
+||{{plinkp|Kharyrll Teleport}}
+|[[Kharyrll]] ([[Canifis]])
+|{{SCP|Magic|66}}
+|[[Desert Treasure I]]
+|{{RuneReq|Law=2k|Blood=1k}}{{+=|Law|2}}{{+=|Blood|1}}
+|{{Coins|880000}}
+|{{Coins|{{GEP|Law rune|2000}} + {{GEP|Blood rune|1000}}}}
+|-
+||{{plinkp|Teleport to Boat}}
+|[[Mooring point]]
+|{{SCP|Magic|67}}
+|[[Pandemonium]]
+|{{RuneReq|Law=2k|Water=2k|Earth=2k}}{{+=|Law|2}}{{+=|Water|2}}{{+=|Earth|2}}
+|{{Coins|496000}}
+|{{Coins|{{GEP|Law rune|2000}} + {{GEP|Water rune|2000}} + {{GEP|Earth rune|2000}}}}
+|-
+||{{plinkp|Moonclan Teleport}}
+|[[Lunar Isle]]
+|{{SCP|Magic|69}}
+|[[Lunar Diplomacy]]{{efn|name="lunar"|Only requires completion up until accessing Lunar Isle for the first time.}}
+|{{RuneReq|Astral=2k|Law=1k|Earth=2k}}{{+=|Astral|2}}{{+=|Law|1}}{{+=|Earth|2}}
+|{{Coins|348000}}
+|{{Coins|{{GEP|Law rune|1000}} + {{GEP|Astral rune|2000}} + {{GEP|Earth rune|2000}}}}
+|-
+||{{plinkp|Cemetery Teleport}}
+|[[The Forgotten Cemetery]]
+|{{SCP|Magic|71}}
+|None
+|{{RuneReq|Law=1k|Soul=1k|Blood=1k}}{{+=|Law|1}}{{+=|Soul|1}}{{+=|Blood|1}}
+|{{Coins|940000}}
+|{{Coins|{{GEP|Law rune|1000}} + {{GEP|Soul rune|1000}} + {{GEP|Blood rune|1000}}}}
+|-
+||{{plinkp|Ourania Teleport}}
+|[[Ourania Cave]]
+|{{SCP|Magic|71}}
+|[[Lunar Diplomacy]]{{efn|Requires talking to [[Baba Yaga]] after [[Lunar Diplomacy]]}}
+|{{RuneReq|Astral=2k|Law=1k|Earth=6k}}{{+=|Astral|2}}{{+=|Law|1}}{{+=|Earth|6}}
+|{{Coins|364000}}
+|{{Coins|{{GEP|Law rune|1000}} + {{GEP|Astral rune|2000}} + {{GEP|Earth rune|6000}}}}
+|-
+||{{plinkp|Waterbirth Teleport}}
+|[[Waterbirth Island]]
+|{{SCP|Magic|72}}
+|[[Lunar Diplomacy]]{{efn|name="lunar"}}
+|{{RuneReq|Astral=2k|Law=1k|Water=1k}}{{+=|Astral|2}}{{+=|Law|1}}{{+=|Water|1}}
+|{{Coins|344000}}
+|{{Coins|{{GEP|Law rune|1000}} + {{GEP|Astral rune|2000}} + {{GEP|Water rune|1000}}}}
+|-
+||{{plinkp|Lassar Teleport}}
+|[[Lassar]] ([[Ice Mountain]])
+|{{SCP|Magic|72}}
+|[[Desert Treasure I]]
+|{{RuneReq|Law=2k|Water=4k}}{{+=|Law|2}}{{+=|Water|4}}
+|{{Coins|488000}}
+|{{Coins|{{GEP|Law rune|2000}} + {{GEP|Water rune|4000}}}}
+|-
+||{{plinkp|Barbarian Teleport}}
+|[[Barbarian Outpost]]
+|{{SCP|Magic|75}}
+|[[Lunar Diplomacy]]{{efn|name="lunar"}}
+|{{RuneReq|Astral=2k|Law=2k|Fire=3k}}{{+=|Astral|2}}{{+=|Law|2}}{{+=|Fire|3}}
+|{{Coins|592000}}
+|{{Coins|{{GEP|Law rune|2000}} + {{GEP|Astral rune|2000}} + {{GEP|Fire rune|3000}}}}
+|-
+||{{plinkp|Khazard Teleport}}
+|[[Port Khazard]]
+|{{SCP|Magic|78}}
+|[[Lunar Diplomacy]]{{efn|name="lunar"}}
+|{{RuneReq|Astral=2k|Law=2k|Water=4k}}{{+=|Astral|2}}{{+=|Law|2}}{{+=|Water|4}}
+|{{Coins|596000}}
+|{{Coins|{{GEP|Law rune|2000}} + {{GEP|Astral rune|2000}} + {{GEP|Water rune|4000}}}}
+|-
+||{{plinkp|Dareeyak Teleport}}
+|[[Dareeyak]] ([[Ruins (west)]])
+|{{SCP|Magic|78}}
+|[[Desert Treasure I]]
+|{{RuneReq|Law=2k|Air=2k|Fire=3k}}{{+=|Law|2}}{{+=|Air|2}}{{+=|Fire|3}}
+|{{Coins|500000}}
+|{{Coins|{{GEP|Law rune|2000}} + {{GEP|Air rune|2000}} + {{GEP|Fire rune|3000}}}}
+|-
+||{{plinkp|Barrows Teleport}}
+|[[Barrows]]
+|{{SCP|Magic|83}}
+|[[Priest in Peril]]
+|{{RuneReq|Law=2k|Soul=2k|Blood=1k}}{{+=|Law|2}}{{+=|Soul|2}}{{+=|Blood|1}}
+|{{Coins|1480000}}
+|{{Coins|{{GEP|Law rune|2000}} + {{GEP|Soul rune|2000}} + {{GEP|Blood rune|1000}}}}
+|-
+||{{plinkp|Carrallanger Teleport}}
+|[[Carrallanger]] ([[Graveyard of Shadows]])
+|{{SCP|Magic|84}}
+|[[Desert Treasure I]]
+|{{RuneReq|Law=2k|Soul=2k}}{{+=|Law|2}}{{+=|Soul|2}}
+|{{Coins|1080000}}
+|{{Coins|{{GEP|Law rune|2000}} + {{GEP|Soul rune|2000}}}}
+|-
+||{{plinkp|Fishing Guild Teleport}}
+|[[Fishing Guild]]
+|{{SCP|Magic|85}}
+|[[Lunar Diplomacy]]{{efn|name="lunar"}}
+|{{RuneReq|Law=3k|Water=10k|Astral=3k}}{{+=|Law|3}}{{+=|Water|10}}{{+=|Astral|3}}
+|{{Coins|910000}}
+|{{Coins|{{GEP|Law rune|3000}} + {{GEP|Astral rune|3000}} + {{GEP|Water rune|10000}}}}
+|-
+||{{plinkp|Catherby Teleport}}
+|[[Catherby]]
+|{{SCP|Magic|87}}
+|[[Lunar Diplomacy]]{{efn|name="lunar"}}
+|{{RuneReq|Law=3k|Water=10k|Astral=3k}}{{+=|Law|3}}{{+=|Water|10}}{{+=|Astral|3}}
+|{{Coins|910000}}
+|{{Coins|{{GEP|Law rune|3000}} + {{GEP|Astral rune|3000}} + {{GEP|Water rune|10000}}}}
+|-
+||{{plinkp|Ice Plateau Teleport}}
+|[[Ice Plateau]]
+|{{SCP|Magic|89}}
+|[[Lunar Diplomacy]]{{efn|name="lunar"}}
+|{{RuneReq|Law=3k|Water=8k|Astral=3k}}{{+=|Law|3}}{{+=|Water|8}}{{+=|Astral|3}}
+|{{Coins|902000}}
+|{{Coins|{{GEP|Law rune|3000}} + {{GEP|Astral rune|3000}} + {{GEP|Water rune|8000}}}}
+|-
+||{{plinkp|Annakarl Teleport}}
+|[[Annakarl]] ([[Demonic Ruins]])
+|{{SCP|Magic|90}}
+|[[Desert Treasure I]]
+|{{RuneReq|Law=2k|Blood=2k}}{{+=|Law|2}}{{+=|Blood|2}}
+|{{Coins|1280000}}
+|{{Coins|{{GEP|Law rune|2000}} + {{GEP|Blood rune|2000}}}}
+|-
+||{{plinkp|Ape Atoll Teleport (Arceuus)}}
+|[[Ape Atoll Dungeon]]
+|{{SCP|Magic|90}}
+|[[Monkey Madness I]]
+|{{RuneReq|Law=2k|Soul=2k|Blood=2k}}{{+=|Law|2}}{{+=|Soul|2}}{{+=|Blood|2}}
+|{{Coins|1880000}}
+|{{Coins|{{GEP|Law rune|2000}} + {{GEP|Soul rune|2000}} + {{GEP|Blood rune|2000}}}}
+|-
+||{{plinkp|Ghorrock Teleport}}
+|[[Ghorrock]] ([[Frozen Waste Plateau]])
+|{{SCP|Magic|96}}
+|[[Desert Treasure I]]
+|{{RuneReq|Law=2k|Water=8k}}{{+=|Law|2}}{{+=|Water|8}}
+|{{Coins|512000}}
+|{{Coins|{{GEP|Law rune|2000}} + {{GEP|Water rune|8000}}}}
+|-
+||{{plinkp|Stony basalt|pic=Stony basalt icon}}
+|[[Troll Stronghold (location)|Troll Stronghold]]
+|{{SCP|Magic|66}}{{efn|66 Magic is required to complete Swan Song, which is a requirement for Making Friends with My Arm, meaning that 66 Magic is indirectly required for this teleport.|name="swansong"}}
+|[[Making Friends with My Arm]]
+|{{RuneReq|Urt salt=3k|Te salt=1k|Basalt=1k}}{{efn|name="noted"}}{{+=|Urt|3}}{{+=|Te|1}}{{+=|Basalt|1}}
+|{{NA}}
+|{{Coins|{{GEP|Urt salt|3000}} + {{GEP|Te salt|1000}} + {{GEP|Basalt|1000}}}}
+|-
+||{{plinkp|Icy basalt|pic=Icy basalt icon}}
+|[[Weiss]]
+|{{SCP|Magic|66}}{{efn|name="swansong"}}
+|[[Making Friends with My Arm]]
+|{{RuneReq|Efh salt=3k|Te salt=1k|Basalt=1k}}{{efn|name="noted"}}{{+=|Efh|3}}{{+=|Te|1}}{{+=|Basalt|1}}
+|{{NA}}
+|{{Coins|{{GEP|Efh salt|3000}} + {{GEP|Te salt|1000}} + {{GEP|Basalt|1000}}}}
+|- class="sortbottom"
+!colspan=2|Total
+|colspan=3|{{RuneReq|Air={{#var:Air}}k|Earth={{#var:Earth}}k|Fire={{#var:Fire}}k|Water={{#var:Water}}k|Mind={{#var:Mind}}k}}<br/><!--
+-->{{RuneReq|Astral={{#var:Astral}}k|Blood={{#var:Blood}}k|Law={{#var:Law}}k|Nature={{#var:Nature}}k|Soul={{#var:Soul}}k}}<br/><!--
+-->{{RuneReq|Banana={{#var:Banana}}k|Efh salt={{#var:Efh}}k|Urt salt={{#var:Urt}}k|Te salt={{#var:Te}}k|Basalt={{#var:Basalt}}k}}{{efn|name="noted"}}
+| {{Coins|24450000}}{{efn|Price of salts is not included.}}
+|{{Coins|1000*({{GEP|Law rune|{{#var:Law}}}} + {{GEP|Air rune|{{#var:Air}}}} + {{GEP|Water rune|{{#var:Water}}}} + {{GEP|Earth rune|{{#var:Earth}}}} + {{GEP|Fire rune|{{#var:Fire}}}} + {{GEP|Mind rune|{{#var:Mind}}}} + {{GEP|Astral rune|{{#var:Astral}}}} + {{GEP|Blood rune|{{#var:Blood}}}} + {{GEP|Soul rune|{{#var:Soul}}}} + {{GEP|Banana|{{#var:Banana}}}} + {{GEP|Urt salt|{{#var:Urt}}}} + {{GEP|Te salt|{{#var:Te}}}} + {{GEP|Basalt|{{#var:Basalt}}}} + {{GEP|Nature rune|{{#var:Nature}}}} + {{GEP|Efh salt|{{#var:Efh}}}})}}
+|}
+{{Notelist}}
+===Magic tablets===
+{{main|Magic tablet}}
+Magic tablets are stackable items that the player can break to cast certain spells without the use of [[rune]]s. The majority of these are teleportation spells, which are listed below.
+====Standard tablets====
+[[File:Teleport Tablet.gif|right|thumb|upright|A player breaking a magic tablet.]]
+Standard tablets can be made at any lectern, for clay and different runes, depending on the tablet. All tablets are members only.
+{| class="wikitable"
+|-
+!Item
+!Destination
+|-
+|{{plink|Varrock teleport (tablet)|txt=Varrock tablet}}
+|[[Varrock]]
+|-
+|{{plink|Falador teleport (tablet)|txt=Falador tablet}}
+|[[Falador]]
+|-
+|{{plink|Lumbridge teleport (tablet)|txt=Lumbridge tablet}}
+|[[Lumbridge]]
+|-
+|{{plink|Camelot teleport (tablet)|txt=Camelot tablet}}
+|[[Camelot]]
+|-
+|{{plink|Ardougne teleport (tablet)|txt=Ardougne tablet}}
+|[[Ardougne]]
+|-
+|{{plink|Civitas illa fortis teleport (tablet)|txt=Civitas illa fortis tablet}}
+|[[Civitas illa Fortis]]
+|-
+|{{plink|Watchtower teleport (tablet)|txt=Watchtower tablet}}
+|[[Watchtower]]
+|-
+|{{Plink|Teleport to boat (tablet)|txt=Boat tablet}}
+|[[Boat]]
+|-
+|{{plink|Teleport to house (tablet)|txt=House tablet}}
+|[[Player-owned house|House]]
+|-
+|{{plink|Kourend castle teleport (tablet)|txt=Kourend castle tablet}}
+|[[Kourend Castle]]
+|-
+|{{plink|Rimmington teleport|txt=Rimmington tablet}}
+|[[Rimmington]]
+|-
+|{{plink|Taverley teleport|txt=Taverley tablet}}
+|[[Taverley]]
+|-
+|{{plink|Pollnivneach teleport|txt=Pollnivneach tablet}}
+|[[Pollnivneach]]
+|-
+|{{plink|Rellekka teleport|txt=Rellekka tablet}}
+|[[Rellekka]]
+|-
+|{{plink|Brimhaven teleport|txt=Brimhaven tablet}}
+|[[Brimhaven]]
+|-
+|{{plink|Yanille teleport|txt=Yanille tablet}}
+|[[Yanille]]
+|-
+|{{plink|Trollheim teleport (tablet)|txt=Trollheim tablet}}
+|[[Trollheim]]
+|-
+|{{plink|Hosidius teleport|txt=Hosidius tablet}}
+|[[Hosidius]]
+|-
+|{{plink|Prifddinas teleport|txt=Prifddinas tablet}}
+|[[Prifddinas]]
+|}
+
+====Ancient tablets====
+Ancient tablets can be purchased from the [[Bounty Hunter Shop]], made after the [[Desert Treasure I]] quest, or received as drops from many monsters in the [[Wilderness]]. Completion of Desert Treasure I is required to use ancient tablets.
+
+{| class="wikitable"
+|-
+!Item
+!Destination
+|-
+|{{plink|Paddewwa teleport (tablet)|txt=Paddewwa teleport tablet}}
+|[[Edgeville Dungeon]]
+|-
+|{{plink|Senntisten teleport (tablet)|txt=Senntisten teleport tablet}}
+|[[Digsite]]
+|-
+|{{plink|Kharyrll teleport (tablet)|txt=Kharyrll teleport tablet}}
+|[[Canifis]]
+|-
+|{{plink|Lassar teleport (tablet)|txt=Lassar teleport tablet}}
+|[[Ice Mountain]]
+|-
+|{{plink|Dareeyak teleport (tablet)|txt=Dareeyak teleport tablet}}
+|[[Ruins]], level 23 [[Wilderness]]
+|-
+|{{plink|Carrallanger teleport (tablet)|txt=Carrallanger teleport tablet}}
+|[[Graveyard of Shadows]], level 18 [[Wilderness]]
+|-
+|{{plink|Annakarl teleport (tablet)|txt=Annakarl teleport tablet}}
+|[[Demonic Ruins]], level 47 [[Wilderness]]
+|-
+|{{plink|Ghorrock teleport (tablet)|txt=Ghorrock teleport tablet}}
+|[[Frozen Waste Plateau|Ice Plateau]], level 50 [[Wilderness]]
+|}
+
+====Lunar teleport tablets====
+These tablets can be made at the lectern in the ceremonial building on [[Lunar Isle]], where the ceremonial brazier can be found. Completion of [[Lunar Diplomacy]] is required in order to use some of them. This includes Moonclan teleport and Ourania teleport.
+{| class="wikitable"
+!Item
+!Destination
+|-
+|{{plink|Moonclan teleport (tablet)|txt=Moonclan teleport tablet}}
+|Next to the bank on [[Lunar Isle]]
+|-
+|{{plink|Ourania teleport (tablet)|txt=Ourania teleport tablet}}
+|Outside of the [[Ourania Cave]] near the [[red salamander (Hunter)|red salamanders]]
+|-
+|{{plink|Waterbirth teleport (tablet)|txt=Waterbirth teleport tablet}}
+|[[Waterbirth Island]], beside [[Jarvald]]'s ship
+|-
+|{{plink|Barbarian teleport (tablet)|txt=Barbarian teleport tablet}}
+|Next to the [[Barbarian Outpost]]
+|-
+|{{plink|Khazard teleport (tablet)|txt=Khazard teleport tablet}}
+|[[Port Khazard]]
+|-
+|{{plink|Fishing guild teleport (tablet)|txt=Fishing guild teleport tablet}}
+|Outside of the [[Fishing Guild]]
+|-
+|{{plink|Catherby teleport (tablet)|txt=Catherby teleport tablet}}
+|Near the bank in [[Catherby]]
+|-
+|{{plink|Ice plateau teleport (tablet)|txt=Ice plateau teleport tablet}}
+|[[Frozen Waste Plateau|Ice Plateau]] in level 53 [[Wilderness]]
+|}
+
+====Arceuus tablets====
+These teleport tablets are made at a lectern located in the [[Ouditor]]'s house in [[Arceuus]]. The [[Arceuus spellbook]] must be used while making these tablets. Also required are [[dark essence block]]s and the respective runes and Magic levels.
+{| class="wikitable"
+|-
+!Item
+!Destination
+|-
+|{{plink|Arceuus library teleport (tablet)|txt=Arceuus Library tablet}}
+|[[Arceuus Library]]
+|-
+|{{plink|Draynor manor teleport (tablet)|txt=Draynor Manor tablet}}
+|[[Draynor Manor]]
+|-
+|{{plink|Battlefront teleport (tablet)|txt=Battlefront tablet}}
+|[[Battlefront]]
+|-
+|{{plink|Mind altar teleport (tablet)|txt=Mind altar tablet}}
+|[[Mind Altar]]
+|-
+|{{plink|Salve graveyard teleport (tablet)|txt=Salve Graveyard tablet}}
+|[[River Salve]] graveyard
+|-
+|{{plink|Fenkenstrain's castle teleport (tablet)|txt=Fenkenstrain's Castle tablet}}
+|[[Fenkenstrain's Castle]]
+|-
+|{{plink|West ardougne teleport (tablet)|txt=West Ardougne tablet}}
+|[[West Ardougne]]
+|-
+|{{plink|Harmony island teleport (tablet)|txt=Harmony Island tablet}}
+|[[Harmony Island]]
+|-
+|{{plink|Cemetery teleport (tablet)|txt=Cemetery tablet}}
+|[[The Forgotten Cemetery]]
+|-
+|{{plink|Barrows teleport (tablet)|txt=Barrows tablet}}
+|[[Barrows]]
+|-
+|{{plink|Ape atoll teleport (tablet)|txt=Ape Atoll tablet}}
+|[[Ape Atoll]]
+|}
+
+====Other teleport tablets====
+{| class="wikitable align-center-1"
+|-
+! colspan=2 | Item
+!Destination
+|-
+|{{plinkt|Target teleport}}
+|Assigned [[Bounty Hunter|Bounty Target]]
+|-
+|{{plinkt|Volcanic mine teleport}}
+|[[Volcanic Mine]] Entrance
+|-
+|{{plinkt|Wilderness crabs teleport}}
+|[[Dark crab]] fishing spots in level 33 eastern [[Wilderness]]
+|}
+
+=== Other 1-use teleport items ===
+{| class="wikitable align-center-1"
+|-
+! colspan=2 | Item
+!Destination
+|-
+|{{plinkt|Dorgesh-kaan sphere}}
+|[[Dorgesh-Kaan]]
+|-
+|{{plinkt|Goblin village sphere}}
+|[[Goblin Village]]
+|-
+|{{Plinkt|Plain of mud sphere}}
+|[[Goblin Cave]]
+|-
+|{{plinkt|Grand seed pod}}
+|[[Grand Tree]], either ground or top floor
+|-
+|{{plinkt|Rum (blue)|txt=Blue rum}}
+|[[Trouble Brewing]] minigame
+|-
+|{{plinkt|Rum (red)|txt=Red rum}}
+|[[Trouble Brewing]] minigame
+|}
+
+===Teleport scrolls===
+{{main|Teleport scrolls}}
+All teleport scrolls can be stored in the [[master scroll book]]. A large number of them are obtainable only from [[Treasure Trails]], and most others are obtainable exclusively from certain monsters, usually [[boss]]es, for fast teleports to them.
+{| class="wikitable"
+|-
+!Item
+!Destination
+|-
+|{{plink|Nardah teleport}}
+|[[Nardah]], near the [[Magic carpet]]
+|-
+|{{plink|Digsite teleport}}
+|West side of the [[Digsite]]
+|-
+|{{plink|Feldip hills teleport}}
+|[[Feldip Hills]], near the [[Hunting expert]]
+|-
+|{{plink|Lunar isle teleport}}
+|[[Lunar Isle]]
+|-
+|{{plink|Mort'ton teleport}}
+|[[Mort'ton]], near the [[Swamp Boaty]]
+|-
+|{{plink|Pest control teleport}}
+|[[Pest Control]], near the bank
+|-
+|{{plink|Piscatoris teleport}}
+|Outside the entrance to the [[Piscatoris Fishing Colony]]
+|-
+|{{plink|Tai bwo wannai teleport}}
+|[[Tai Bwo Wannai]]
+|-
+|{{plink|Iorwerth camp teleport}}
+|[[Iorwerth Camp]]
+|-
+|{{plink|Mos le'harmless teleport}}
+|[[Mos Le'Harmless]], north-east side of the town
+|-
+|{{plink|Lumberyard teleport}}
+|[[Lumber Yard]], next to the [[Sawmill operator]]
+|-
+|{{plink|Zul-andra teleport}}
+|[[Zul-Andra]]
+|-
+|{{plink|Key master teleport}}
+|[[Cerberus' Lair]]
+|-
+|{{plink|Revenant cave teleport}}
+|Outside any of the three [[Revenant Caves]] entrances
+|-
+|{{plink|Watson teleport}}
+|[[Watson's house]], Hosidius
+|-
+|{{plink|Guthixian temple teleport}}
+|Outside the entrance to the [[Ancient Guthixian Temple]]
+|-
+|{{plink|Spider cave teleport}}
+|Outside the entrance to the [[Morytania Spider Cave]]
+|-
+|{{plink|Colossal wyrm teleport scroll}}
+|[[Colossal Wyrm Remains]]
+|-
+|{{plink|Chasm teleport scroll}}
+|[[Chasm of Fire]]
+|}
+
+===Achievement diary items===
+{| class="wikitable"
+!
+!Item
+!Teleports Description
+|-
+|[[File:Karamja gloves 3.png]] [[File:Karamja gloves 4.png]]
+|[[Karamja gloves 3]]/[[Karamja gloves 4|4]]
+|Unlimited teleports to the gem mine underneath [[Shilo Village (location)|Shilo Village]]. Completion of the Elite Karamja Diary also unlocks unlimited teleports to the Shilo Village [[Slayer master]], [[Duradel]].
+|-
+|[[File:Ardougne cloak 1.png]] [[File:Ardougne cloak 2.png]] [[File:Ardougne cloak 3.png]] [[File:Ardougne cloak 4.png]]
+|[[Ardougne cloak 1]]/[[Ardougne cloak 2|2]]/[[Ardougne cloak 3|3]]/[[Ardougne cloak 4|4]]
+|Unlimited teleports to the [[Ardougne Monastery|monastery]] south of [[Ardougne]]. Ardougne cloaks [[Ardougne cloak 2|2]], [[Ardougne cloak 3|3]] and [[Ardougne cloak 4|4]] can teleport you to the farm north of Ardougne 3, 5 or infinite times a day respectively.
+|-
+|[[File:Desert amulet 2.png]] [[File:Desert amulet 3.png]] [[File:Desert amulet 4.png]]
+|[[Desert amulet 2]]/[[Desert amulet 3|3]]/[[Desert amulet 4|4]]
+|Desert amulets [[Desert amulet 2]] and [[Desert amulet 3|3]] provide ''one'' daily teleport to [[Nardah]]. [[Desert amulet 4]] provides unlimited teleports to [[Nardah]] and the [[Kalphite Cave]].
+|-
+|[[File:Morytania legs 1.png]] [[File:Morytania legs 2.png]] [[File:Morytania legs 3.png]] [[File:Morytania legs 4.png]]
+|[[Morytania legs 1]]/[[Morytania legs 2|2]]/[[Morytania legs 3|3]]/[[Morytania legs 4|4]]
+|[[Morytania legs 1]] and [[Morytania legs 2|2]] provides 2 and 5 teleports per day to the Slime pit below the [[Ectofuntus]] respectively, whilst the [[Morytania legs 3]] and [[Morytania legs 4|4]] provide unlimited teleports to [[Burgh de Rott]], and 4 allows for infinite teleports to both the slime pit and Burgh de Rott.
+|-
+|[[File:Fremennik sea boots 1.png]] [[File:Fremennik sea boots 2.png]] [[File:Fremennik sea boots 3.png]] [[File:Fremennik sea boots 4.png]]
+|[[Fremennik sea boots 1]]/[[Fremennik sea boots 2|2]]/[[Fremennik sea boots 3|3]]/[[Fremennik sea boots 4|4]]
+|[[Fremennik sea boots 1]], [[Fremennik sea boots 2|2]], and [[Fremennik sea boots 3|3]] provide ''one'' daily teleport to Rellekka. [[Fremennik sea boots 4]] provide unlimited teleports to [[Rellekka]].
+|-
+|[[File:Kandarin headgear 3.png]] [[File:Kandarin headgear 4.png]]
+|[[Kandarin headgear 3]]/[[Kandarin headgear 4|4]]
+|''One'' teleport per day to [[Sherlock]], or unlimited with the [[Kandarin headgear 4]].
+|-
+|[[File:Wilderness sword 3.png]] [[File:Wilderness sword 4.png]]
+|[[Wilderness sword 3]]/[[Wilderness sword 4|4]]
+|''One'' teleport per day to [[Fountain of Rune]], or unlimited with the [[Wilderness sword 4]].
+|-
+|[[File:Western banner 3.png]] [[File:Western banner 4.png]]
+|[[Western banner 3]]/[[Western banner 4|4]]
+|''One'' teleport per day to [[Piscatoris Fishing Colony]], or unlimited with the [[Western banner 4]].
+|-
+|[[File:Explorer's ring 2.png]] [[File:Explorer's ring 3.png]] [[File:Explorer's ring 4.png]]
+|[[Explorer's ring 2]]/[[Explorer's ring 3|3]]/[[Explorer's ring 4|4]]
+|''Three'' teleports per day to cabbage patch near [[Falador farm]] or unlimited with the [[Explorer's ring 3]] and [[Explorer's ring 4|4]].
+|-
+|[[File:Rada's blessing 1.png]][[File:Rada's blessing 2.png]]
+[[File:Rada's blessing 3.png]][[File:Rada's blessing 4.png]]
+|[[Rada's blessing 1]]/[[Rada's blessing 2|2]]/[[Rada's blessing 3|3]]/[[Rada's blessing 4|4]]
+|Teleport to the [[Kourend Woodland]] 3,5 or infinite times per day with the easy, medium, and hard/ elite diary respectively. You can also teleport to [[Mount Karuulm]] 3 times per day with [[Rada's blessing 3]], and unlimited with [[Rada's blessing 4]].
+|}
+
+===Combat achievement items===
+{| class="wikitable"
+!
+!Item
+!Teleports Description
+|-
+|[[File: Ghommal's_hilt_1.png]] [[File: Ghommal's_hilt_2.png]] [[File: Ghommal's_hilt_3.png]]
+|[[Ghommal's hilt 1]]/[[Ghommal's hilt 2|2]]/[[Ghommal's hilt 3|3]]
+|3, 5 or unlimited daily teleports, respectively, to the [[God Wars Dungeon]] entrance.
+|-
+|[[File: Ghommal's_hilt_4.png]] [[File: Ghommal's_hilt_5.png]] [[File: Ghommal's_hilt_6.png]]
+|[[Ghommal's hilt 4]]/[[Ghommal's hilt 5|5]]/[[Ghommal's hilt 6|6]]
+|Unlimited daily teleports to the [[God Wars Dungeon]] entrance. Additionally: 3, 5, or unlimited, respectively, daily teleports to [[Mor Ul Rek]].
+|-
+|[[File: Ghommal's_avernic_defender_5.png]] [[File: Ghommal's_avernic_defender_6.png]]
+|[[Ghommal's avernic defender 5]]/[[Ghommal's avernic defender 6|6]]
+|Unlimited daily teleports to the [[God Wars Dungeon]] entrance. Additionally: 5 or unlimited, respectively, daily teleports to [[Mor Ul Rek]].
+|}
+
+===Skill capes===
+{| class="wikitable"
+!Item
+!Destination
+!Charges
+|-
+|{{plink|Crafting cape}}
+|[[Crafting Guild]]
+|Unlimited
+|-
+|{{plink|Construct. cape}}
+|[[Player-owned house]] and outside any player-owned house portal
+|Unlimited
+|-
+|{{plink|Fishing cape}}
+|[[Fishing Guild]] and [[Otto's Grotto]]
+|Unlimited
+|-
+|{{plink|Farming cape}}
+|Entrance to the [[Farming Guild]]
+|Unlimited
+|-
+| rowspan="2" | {{plink|Hunter cape}}
+| [[Black chinchompa (Hunter)|Black]]/[[Carnivorous chinchompa|red]] chinchompa hunter areas
+| 5 per day
+|-
+| [[Hunter Guild]]
+| Unlimited
+|-
+|{{plink|Strength cape}}
+|[[Warriors' Guild]]
+|Unlimited
+|-
+|{{plink|Max cape}}
+|All Skill cape teleports
+|See above
+|-
+|{{plink|Quest point cape}}
+|[[Legends' Guild]]
+|Unlimited
+|-
+|{{plink|Music cape}}
+|[[Falo the Bard]]
+|Unlimited
+|-
+|{{plink|Achievement diary cape}}
+|All Diary Masters, including [[Twiggy O'Korn]]
+|Unlimited
+|}
+
+===Quest-related items===
+{| class="wikitable"
+|-
+!Item
+!Destination
+!Charges
+!Recharge or enhancement method
+|-
+|{{plink|Ectophial}}
+|[[Ectofuntus]]
+|Unlimited
+|Automatically refilled upon arriving at the [[Ectofuntus]]
+|-
+|{{plink|Teleport crystal}}
+|[[Lletya]] and [[Prifddinas]]
+|3 (5 after completion of the [[Western Provinces Diary#Hard|Hard Western Provinces Diary]])
+|[[Eluned]]
+|-
+|{{plink|Eternal teleport crystal}}
+|[[Lletya]] and [[Prifddinas]]
+|Unlimited
+|{{NA}}
+|-
+|{{plink|Royal seed pod}}
+|Grand Tree
+|Unlimited
+|{{NA}}
+|-
+|{{plink|Enchanted lyre}}
+|[[Rellekka]], [[Waterbirth Island]], [[Neitiznot]], [[Jatizso]]
+|2-4
+|[[Fossegrimen]]'s altar (unlimited for a one-off payment)
+|-
+|{{plink|Enchanted lyre(i)}}
+|[[Rellekka]], [[Waterbirth Island]], [[Neitiznot]], [[Jatizso]]
+|Unlimited
+|{{NA}}
+|-
+|{{plink|Camulet}}
+|[[Enakhra's Temple]], [[Enakhra's Temple]] entrance
+|4/Unlimited
+|[[Ugthanki dung]] (unlimited for a one-off payment of 1,000,000 coins to [[Lazim]])
+|-
+|{{plink|Kharedst's memoirs}}
+|[[Great Kourend]] (different locations)
+|0, increases by 20 for each added [[Kharedst's memoirs#Teleportation|page]] up to 100
+|Inspecting the [[Old Memorial]] with a [[law rune|law]], [[body rune|body]], [[mind rune|mind]], and [[soul rune]] in inventory (one charge per set of runes)
+|-
+|{{plink|Book of the dead}}
+|[[Great Kourend]] (same locations as the Kharedst's memoirs)
+|250
+|Inspecting the [[Old Memorial]] with a [[law rune|law]], [[body rune|body]], [[mind rune|mind]], and [[soul rune]] in inventory (one charge per set of runes)
+|-
+|{{plink|Drakan's medallion}}
+|[[Ver Sinhaza]] and [[Darkmeyer]] (and [[Sisterhood Sanctuary]])
+|Unlimited
+|Using a [[Slepey tablet]] on the medallion unlocks an unlimited teleport to the [[Sisterhood Sanctuary]].
+|-
+|{{plink|Mythical cape}}
+|[[Myths' Guild]]
+|Unlimited
+|{{NA}}
+|-
+|{{plink|Stony basalt}}
+|[[Troll Stronghold (location)|Troll Stronghold]] entrance
+|1 use
+|{{NA}}
+|-
+|{{plink|Icy basalt}}
+|[[Weiss]]
+|1 use
+|{{NA}}
+|-
+|{{plink|Calcified moth}}
+|[[Cam Torum]]
+|1 use
+|{{NA}}
+|-
+|{{plink|Mokhaiotl waystone}}
+|[[Ruins of Mokhaiotl]]
+|1 use
+|{{NA}}
+|}
+
+===Other items===
+{| class="wikitable sortable"
+|-
+!Item
+!Destination
+!Charges
+!Recharging
+!Members
+|-
+|{{plink|Pharaoh's sceptre}}
+|
+*Jalsavrah - the [[Pyramid Plunder]] minigame.
+*Jaleustrophos - the [[Agility Pyramid]], next to [[Simon Templeton]].
+*Jaldraocht - [[Ancient Pyramid]]
+*Jaltevas - [[Jaltevas Pyramid]], the [[Tombs of Amascut]] [[raid]] (unlocked after communing with the [[Obelisk (Necropolis)|obelisk]] at the [[Necropolis]])
+|3 (10, 25, 50, and 100 with completion of each tier of the [[Desert Diary]])
+|Pay the [[Mummy]] in the Pyramid Plunder minigame with artefacts
+|{{Members|Yes}}
+|-
+|{{plink|Skull sceptre}}
+|[[Barbarian Village]]
+|10 (14, 18, 22, and 26 with completion of each tier of the [[Varrock Diary]])
+|{{NA}}
+|{{Members|No}}
+|-
+|{{plink|Skull sceptre (i)}}
+|[[Barbarian Village]]
+|10 (14, 18, 22, and 26 with completion of each tier of the [[Varrock Diary]])
+|Recharged with sceptre pieces: each piece will grant 3 (4, 5, 6, and 7 with completion of each tier of the [[Varrock Diary]]) teleport charges, except the [[left skull half]] which grants 2 extra charges
+|{{Members|No}}
+|-
+|{{plink|Xeric's talisman}}
+|
+*[[Xeric's Lookout]] - at the lookout tower south-east of [[Shayzien]]
+*Xeric's Glade - by the magic trees in [[Hosidius]]
+*Xeric's Inferno - by the lovakite furnace in [[Lovakengj]]
+*Xeric's Heart - [[Kourend Castle]]
+*Xeric's Honour - [[Mount Quidamortem]] (unlocked after using an [[ancient tablet]] on the talisman)
+|Up to 1000
+|Requires 1 [[lizardman fang]] per charge
+|{{Members|Yes}}
+|-
+|{{plink|Chronicle}}
+|[[Champions' Guild]]
+|Up to 1000
+|Requires 1 [[teleport card]] per charge
+|{{Members|No}}
+|-
+|{{plink|Amulet of the eye}}
+|[[Temple of the Eye (location)|Temple of the Eye]]
+|Unlimited
+|{{NA}}
+|{{Members|Yes}}
+|-
+|{{plink|Ring of the elements}}
+|
+*North of the [[Fire Altar]]
+*West of the [[Water Altar]]
+*South of the [[Air Altar]]
+*West of the [[Earth Altar]]
+|Up to 10,000
+|Requires {{RuneReq|Law=1|Air=1|Water=1|Earth=1|Fire=1}}{{+=|Law|1}}{{+=|Air|1}}{{+=|Water|1}}{{+=|Earth|1}}{{+=|Fire|1}} per charge
+|{{Members|Yes}}
+|-
+|{{plink|Ancient shard}}
+|Four corners of the [[Catacombs of Kourend]]:
+*Demon's Run
+*Dragon's Den
+*Reeking Cove
+*The Shallows
+|One use per shard
+|{{NA}}
+|{{Members|Yes}}
+|-
+|{{plink|Hallowed crystal shard}}
+|[[Hallowed Sepulchre]]
+|One use per shard
+|{{NA}}
+|{{Members|Yes}}
+|-
+|{{plink|Escape crystal}}
+|Outside of the dangerous activity the crystal is used in.
+|One use per crystal
+|{{NA}}
+|{{Members|Yes}}
+|-
+|{{plink|Basic quetzal whistle}}
+|Multiple locations of the [[Quetzal Transport System]]
+|Up to 5
+|Any raw hunter meat
+|{{Members|Yes}}
+|-
+|{{plink|Enhanced quetzal whistle}}
+|Multiple locations of the [[Quetzal Transport System]]
+|Up to 20
+|Any raw hunter meat
+|{{Members|Yes}}
+|-
+|{{plink|Perfected quetzal whistle}}
+|Multiple locations of the [[Quetzal Transport System]]
+|Up to 50
+|Any raw hunter meat
+|{{Members|Yes}}
+|-
+|{{plink|Perfected quetzal whistle(i)}}
+|Multiple locations of the [[Quetzal Transport System]]
+|Unlimited
+|{{NA}}
+|{{Members|Yes}}
+|-
+|{{plink|Pendant of ates}}
+|
+*[[The Darkfrost]]
+*[[Twilight Temple]]
+*[[Ralos' Rise]]
+*North [[Aldarin]] (after completing [[Death on the Isle]] and using [[Icon (Aldarin)|icon]] from [[fancy chest]] on the statue)
+*North of [[Kastori]]
+*South of [[Nemus Retreat]]
+|Up to 1000
+|Requires 1 [[frozen tear]] per charge
+|{{Members|Yes}}
+|-
+|{{plink|Ring of shadows}}
+|
+*The [[Ancient Vault]]
+*[[Ghorrock Dungeon]]
+*[[The Scar]]
+*[[Lassar Undercity]]
+*[[The Stranglewood]]
+|Up to 1000
+|Requires {{RuneReq|Law=1|Blood=1|Soul=1|Death=1}}{{+=|Law|1}}{{+=|Blood|1}}{{+=|Soul|1}}{{+=|Death|1}} per charge
+|{{Members|Yes}}
+|-
+|{{plink|Giantsoul amulet}}
+|
+*[[Bryophyta]]'s Lair in [[Varrock Sewers]]
+*[[Obor]]'s Lair in [[Edgeville Dungeon]]
+*[[Royal Titans]] in the [[Asgarnian Ice Dungeon]]
+|Up to 16,000
+|Requires {{RuneReq|Law=1}} and one [[Big bone]] per charge
+|{{Members|Yes}}
+|-
+|{{plink|Sailors' amulet}}
+|
+*[[The Pandemonium]]
+*[[Port Roberts]] ({{SCP|Sailing|50}})
+*[[Deepfin Point]] ({{SCP|Sailing|67}})
+|Up to 10,000
+|Requires {{RuneReq|Law=1|Water=10}}{{+=|Law|1}}{{+=|Water|10}} per 10 charges
+|{{Members|Yes}}
+|-
+|{{plink|Cowbell amulet}}
+|[[Lumbridge cow field]]
+|Up to 1,000
+|Requires {{RuneReq|Air=1}} per charge
+|{{Members|No}}
+|}
+
+===Player-owned house teleports=== 
+
+Besides the [[portal nexus]] and [[portal chamber]]s, which are covered elsewhere, other teleports can also be built in player-owned houses. With 47 [[Construction]], [[amulet of glory (mounted)|mounted amulets of glory]] can be built in the [[guild trophy space]] of the [[quest hall]]. At 72 Construction, a [[mounted xeric's talisman]] can be built in the [[amulet space]] of the [[portal nexus]] room. At 47 construction, both the [[Mythical cape (mounted)|mythical cape]] and the [[Cape of legends (mounted)|cape of legends]], each retaining its teleportation functions, can be built in the guild trophy space of the quest hall in a player-owned house. At 82 [[Construction]], a [[curator's medallion]] can be mounted in a [[player-owned house]] [[portal nexus]] room, creating a [[mounted digsite pendant]]. At 80 Construction, players can build a [[cape hanger]] in the [[display space]] of the [[achievement gallery]] in a player-owned house; [[mythical cape]]s and [[capes of accomplishment]], including max variants, can have their teleportation functions used by the owner of the house but not by visitors. 
+
+[[Teleport trap]]s can be built in the [[Dungeon (Construction)|dungeon]] of a player-owned house with 88 Construction. Players who fail to dodge the teleport trap will be teleported to the [[oubliette]]; if the dungeon does not contain an oubliette, players will be teleported to a random tile within the dungeon. If the dungeon contains multiple oubliettes, then players who fail to dodge the trap will be sent to the most expensive oubliette in the dungeon (or the one which was built last if multiple oubliettes are of equal value). Players who succeed in dodging the teleport trap will gain 20 [[Agility]] experience points, and jump to either side of the trap.
+
+Three different levels of [[Achievement_gallery#Jewellery_box|jewellery boxes]] can be built in the jewellery box space of the achievement gallery. The jewellery box can store various teleportation [[jewellery]]. Each box will provide unlimited teleports to locations provided by the enchanted jewellery. Jewellery boxes are constructed in upgrades: before a higher level box can be built, the player must first build the one before it. Bank notes are NOT accepted, each item must be brought. 
+
+{|class="wikitable lighttable align-left-3" style="text-align:center;"
+!{{SCP|Construction}} Level
+!colspan=2|Jewellery box
+!Materials
+!Experience
+!Upgrade cost
+!Total cost
+!Jewellery stored
+|-
+|81
+|{{plinkt|Basic jewellery box|pic=Basic jewellery box icon}}
+|{{plink|Bolt of cloth}}<br/>{{plink|Steel bar}}<br/>{{plink|Games necklace(8)}} x3<br/>{{plink|Ring of dueling(8)}} x3
+|605
+|{{NA}}
+|{{Coins|{{GEP|Bolt of cloth}} + {{GEP|Steel bar}} + {{GEP|Games necklace(8)|3}} + {{GEP|Ring of dueling(8)|3}}}}
+|{{plinkp|Ring of dueling}} and {{plinkp|games necklace}}
+|-
+|86
+|{{plinkt|Fancy jewellery box|pic=Fancy jewellery box icon}}
+|{{plink|Basic jewellery box|pic=Basic jewellery box icon}}<br/>{{plink|Gold leaf}}<br/>{{plink|Skills necklace(4)}} x5<br/>{{plink|Combat bracelet(4)}} x5
+|1,350
+|{{Coins|{{GEP|Gold leaf}} + {{GEP|Skills necklace(4)|5}}+ {{GEP|Combat bracelet(4)|5}}}}
+|{{Coins|{{GEP|Bolt of cloth}} + {{GEP|Steel bar}} + {{GEP|Games necklace(8)|3}} + {{GEP|Ring of dueling(8)|3}} + {{GEP|Gold leaf}} + {{GEP|Skills necklace(4)|5}}+ {{GEP|Combat bracelet(4)|5}}}}
+|Previous + {{plinkp|combat bracelet}} and {{plinkp|skills necklace}}
+|-
+|91
+|{{plinkt|Ornate jewellery box|pic=Ornate jewellery box icon}}
+|{{plink|Fancy jewellery box|pic=Fancy jewellery box icon}}<br/>{{plink|Gold leaf}} x2<br/>{{plink|Amulet of glory(4)}} x8<br/>{{plink|Ring of wealth (5)}} x8
+|2,680
+|{{Coins|{{GEP|Gold leaf|2}} + {{GEP|Amulet of glory(4)|8}} + {{GEP|Ring of wealth (5)|8}}}}
+|{{Coins|{{GEP|Bolt of cloth}} + {{GEP|Steel bar}} + {{GEP|Games necklace(8)|3}} + {{GEP|Ring of dueling(8)|3}} + {{GEP|Gold leaf|3}} + {{GEP|Skills necklace(4)|5}}+ {{GEP|Combat bracelet(4)|5}} + {{GEP|Amulet of glory(4)|8}} + {{GEP|Ring of wealth (5)|8}}}}
+|Previous + {{plinkp|amulet of glory}} and {{plinkp|ring of wealth}}
+|}
+
+==Transportation systems==
+{{Map:Transportation}}
+Transportation systems let you move between each of their locations freely, as long as you reach one of their locations. There are some exceptions ([[Canoe]] to the Wilderness pond for example) and they are all noted down below.
+===Fairy rings===
+[[File:Fairy ring.png|200px|right|A fairy ring.]]
+After getting permission from the [[Fairy Godfather]] during [[Fairytale II - Cure a Queen]], you will find a new network of transportation available to you: [[fairy rings]].
+
+It consists of over 52 fairy rings spread across the land and provides a relatively fast means for accessing often remote locations. Players can enter the fairy ring system from any node while wielding either a [[dramen staff]] or a [[lunar staff]], ending up at the master fairy ring in [[Zanaris]]. From there, using three letter codes, they can teleport to most rings within the system. Several rings, however, require players to complete quests before they can be accessed. If the selected code has no corresponding fairy ring, players will be teleported a few squares from the main ring.
+
+The main fairy ring is located in Zanaris, just east of the bank. When you click on it to activate it, you will notice the three mushroom controllers pop up. Each controller has four letters assigned to it. Clicking on the right or left side of a mushroom controller will make it turn clockwise or counter-clockwise, respectively. You can make many combinations from these mushrooms, and click the teleport button to go the location.
+
+Players who have completed the Elite [[Lumbridge & Draynor Diary]] will no longer need a [[Dramen staff|dramen]] or [[lunar staff]] to use a fairy ring.  
+
+Players can grow a [[Fairy ring (Construction)|fairy ring]] in their player-owned house at 85 [[Construction]], which can be boosted, using a [[watering can]] with at least one dose of water, a [[fairy enchantment]], and 10 [[mushroom|unnoted mushrooms]].  At 95 Construction and 83 [[Farming]], each of which can also be boosted, players can grow the [[Spirit tree & fairy ring]] in their player-owned house, which combines both fairy rings and [[spirit tree|spirit trees]].
+
+===Obelisks===
+[[File:Wilderness Obelisk.png|thumb|A Wilderness Obelisk]]
+[[Wilderness Obelisk]]s are teleportation devices in the [[Wilderness]]. There are six Wilderness obelisks available, and a player can also set up an [[obelisk (Construction)|obelisk]] inside their own Player-owned House, however they can not teleport out of the Wilderness to it. Each obelisk, when activated, will teleport anyone standing on the pad after a few seconds to another pad, which is chosen at random unless they have the [[Wilderness Diary#Hard|hard Wilderness Diary]] completed, which allows them to choose their arrival point.
+
+The six destinations are:
+* West of the [[Chaos Temple (Wilderness)|Chaos Temple]]
+* East of the [[Graveyard of Shadows]]
+* South of the [[Wilderness God Wars Dungeon]] entrance
+* South of the [[Lava Maze]]
+* West of the [[Lava Maze]]
+* Near the [[Rogues' Castle]] and the [[Chaos Elemental]]
+
+===Spirit trees===
+[[File:Spirit tree.png|thumb|The [[spirit tree]] at the Tree Gnome Village]]
+After completion of the [[Tree Gnome Village]] quest, you can use [[spirit tree]]s to teleport. There are seven different spirit tree locations already present throughout the world, some of which may require the completion of additional quests to access, plus six locations at which a player with a sufficient [[Farming]] level may plant additional spirit trees.
+
+They are:
+
+*North-east of [[Grand Exchange]].
+*[[Battlefield]], north-west of the [[Clock Tower (building)|Clock Tower]].
+*Centre of [[Tree Gnome Village (location)|Tree Gnome Village]].
+*[[Tree Gnome Stronghold]], west of the entrance to the [[Agility course]]. Requires [[The Grand Tree]] to leave from.
+*[[Prifddinas]], in the Meilyr district. Requires [[Song of the Elves]] to arrive at.
+*East of the [[Poison Waste]]. Requires [[The Path of Glouphrie]] to arrive at.
+*Next to the [[Myths' Guild]] in the south-west corner of the [[Feldip Hills]].
+*(Player grown: [[Etceteria]])
+*(Player grown: [[Brimhaven]])
+*(Player grown: [[Port Sarim]])
+*(Player grown: [[Hosidius]])
+*(Player grown: Inside the advanced tier of the [[Farming Guild]].)
+*(Player grown: In the [[Superior garden]] of a [[player-owned house]])
+
+With a [[Farming]] level of 83 and a [[spirit sapling]], players are able to grow their own spirit tree in any of five [[spirit tree patch]]es.  These have the same restrictions as the other normal ones. At level 83, players may only have one player-grown spirit tree; this limit is increased to two spirit trees at level 88, three spirit trees at level 93, four spirit trees at level 96, and no limit at level 99. This limit does not apply to the player-owned house spirit tree, which has an additional requirement of 75 [[Construction]] to create and grows instantly unlike other spirit trees. At 95 Construction, players may also build a [[spirit tree & fairy ring]], which allows access to both transportation networks at once.
+
+===Lovakengj Minecart Network===
+The [[Lovakengj Minecart Network]] is a rapid transit system serving twelve destinations across Kourend and Kebos.
+
+The travel services offered by the minecarts cost 20 coins per ride. Upon completion of [[The Forsaken Tower]], the fee is waived and players can ride the carts for free permanently.
+
+The destinations are:
+*Arceuus
+*Farming Guild
+*Hosidius South
+*Hosidius West
+*Kingstown
+*Kourend Woodland
+*Lovakengj
+*Mount Quidamortem
+*Northern Tundras
+*Port Piscarilius
+*Shayzien East
+*Shayzien West
+
+===Quetzal Transport System===
+The [[Quetzal Transport System]] is a transportation method within Varlamore. During Twilight's Promise, players are gifted their own quetzal, Renu, to access the transport system.
+
+There are eight landing sites available after [[Twilight's Promise]] and six more that can be built.
+They are:
+*Aldarin
+*Auburnvale
+*Civitas illa Fortis
+*Hunter Guild
+*Kastori
+*Quetzacalli Gorge
+*Sunset Coast
+*The Teomat
+*Tal Teklan
+*Fortis Colosseum
+*Outer Fortis
+*Colossal Wyrm Remains
+*Cam Torum entrance
+*Salvager Overlook
+
+===Gnome glider===
+[[Gnome glider]]s are a transportation system available after completing [[The Grand Tree]].
+*Ta Quir Priw at the [[Grand Tree]]
+*Gandius south of the [[Karmja]] shipyard
+*Kar-Hewo in [[Al Kharid]]
+*Sindarpos on [[White Wolf Mountain]]
+*Lemanto Andra west of the [[Digsite]]
+*Lemantolly Undri in Western [[Feldip Hills]] (requires [[One Small Favour]])
+*Ookookolly Undri on the north-western end of [[Ape Atoll]] (requires [[Monkey Madness II]]) 
+
+===Mycelium Transportation System===
+The [[Mycelium Transportation System]] is a system of Magic Mushtrees that allow transportation around Fossil Island. There are four Magic Mushtrees found throughout Fossil Island:
+*House on the Hill
+*Verdant Valley
+*Sticky Swamp
+*Mushroom Meadow
+
+===Other Transportation Systems===
+*[[Eagle transport system]]
+*Hot air [[Balloon transport system]]
+*[[Keldagrim minecart system]]
+*[[Magic carpet]]s in the [[Kharidian Desert]]
+*Levers between [[Ardougne teleport lever|Ardougne]], [[Lever (Edgeville)|Edgeville]], and the [[Deserted Keep]]. The non-Wilderness levers do not link directly, but can be used to reach each other via the Deserted Keep if the [[Wilderness Diary|Easy Wilderness diary]] has been completed
+*[[Teleporter]]s within the [[Lassar Undercity]]
+*[[Skavid caves]] without having a [[skavid map]] in their inventory
+
+===Ship and boat networks===
+*[[Charter ship]]s
+*[[Canoe]]s, including the Wilderness pond (destination only)
+*[[Captain Barnaby]]'s ship between [[Ardougne]], [[Brimhaven]] and [[Rimmington]]
+*Ships in [[Port Sarim]] to [[Void Knight Outpost]],  [[Musa Point]], [[Entrana]], [[Port Piscarilius]], [[Land's End]] and each back to Port Sarim
+*Ships in [[Rellekka]] to [[Waterbirth Island]], [[Pirates' Cove|Pirate's cove]], [[Jatizso]], [[Neitiznot]], [[Iceberg]], [[Miscellania]], [[Etceteria]], and each back to Rellekka
+* The [[rowboat (Fossil Island)|rowboats]] on [[Fossil Island]]
+* The [[Boaty]] located at various docks around [[Lake Molch]]
+* The boat east of [[Rellekka]] operated by [[Larry]], used to travel to the [[Iceberg]] and [[Weiss]]
+* The [[Boat (Darkness of Hallowvale)|boat]] used in [[Darkness of Hallowvale]], which is later replaced with a rowboat that travels between [[Burgh de Rott]], [[Meiyerditch]] and the [[Icyene Graveyard]]
+*The player swims to shore upon failing a game of [[Fishing Trawler#Losing|Fishing Trawler]]
+*The boats in [[Varlamore]] operated by [[Achilka]], which travel between [[Tal Teklan]], [[Gloomthorn Trail]], and [[Kastori]]
+*The [[Rowboat (The Great Conch)|rowboats]] found on [[The Great Conch]]
+
+===Two-way shuttles===
+*The ship that fares between [[Corsair Cove]] and [[Rimmington]]
+*[[Dorgesh-Kaan–Keldagrim train system]]
+*[[Shilo Village cart system]]
+*[[Swamp Boaty]]
+*The ship that fares between the [[Ruins of Unkah]] and [[Tempoross Cove]]
+*[[Ogre boat ride]], between [[Karamja]] and [[Feldip Hills]]
+*Rowboat between [[Crash Island]] and [[Ape Atoll]]
+*Rowman [[Holgart]] ([[Jeb]] after [[The Slug Menace]]) between [[Witchaven]] and [[Fishing Platform]]
+*The [[Canal barge]], sailing between the [[Digsite]] and [[Fossil Island]]
+*[[Lady Zay]], sailing between [[Pirates' Cove]] and [[Lunar Isle]]
+* [[Lokar Searunner]]'s boat that fares between [[Rellekka]] and [[Pirates' Cove]]
+* [[Kathy Corkat]]'s boat, faring between just south of the [[Piscatoris Fishing Colony]] and the western side of the [[Tree Gnome Stronghold]]
+* [[Andras]]' boat faring between just north-east of the [[Ectofuntus]] and a small dock south of [[Slepe]] for a price of 10,000 coins
+* [[Pirate Pete]]'s boat faring between just north-east of the [[Ectofuntus]] and [[Braindeath Island]]
+* The [[Ghost captain|Ghost Captain]]'s boat faring between [[Port Phasmatys]] and [[Dragontooth Island]]
+* The [[ferry]] between [[Al Kharid]] and the [[Ruins of Unkah]]
+* [[Kylie Minnow]]'s boat that fares between the [[Fishing Guild]] and the minnow platform
+
+==One-way transportation==
+These methods of transportation need you to be in one specific location, and will take you to another location, with no way back. See [[Teleportation#NPCs|Teleportation]] for similar methods of transportation, including quest-specific methods.
+*The [[Abyss]]. [[Mage of Zamorak]] to enter, runic rifts to leave
+*[[Death|Dying]]
+*[[Lady of the Waves]]
+*Any [[Lunar Isle]] inhabitant to [[Rellekka]] by talking to them and being kicked off the island, due to not having a [[seal of passage]]
+**Alternatively, using the [[Return Orb]] to teleport away from the island, after completion of the Elite [[Fremennik Diary]]
+*[[Mercenary]] guards will teleport players somewhere north-west of the mining camp if they try to bribe them while holding no money in their inventory, or if caught leaving the camp while holding a weapon{{fact|The exact way to reproduce this is unclear; entering with a weapon equipped and quickly leaving afterwards seems to work.}}.
+*[[Myths' Guild]] portals
+*[[Portal Chamber]] in a [[player-owned house]]
+*[[Shantay]] will teleport a player to [[Port Sarim jail]] from the [[Shantay Pass]] if a player claims to be an outlaw and twice refuses to pay the fine
+*[[Wizards' Guild]] portals
+*[[Zandar Horfyre]] will teleport a player to the [[Lumbridge Swamp]] from the [[Dark Wizards' Tower]] if a player talks to him and continuously refuses to leave
+
+{{Teleportation items}}
+[[Category:Transportation|*]]

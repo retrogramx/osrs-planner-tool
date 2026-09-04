@@ -1,0 +1,443 @@
+{{External|rs|rsc=Smithing training}}
+{{Otheruses|def=no|a list of furnaces|Furnace|a list of anvils|Anvil}}
+This [[Skill training guides|guide]] outlines the best methods for training the [[Smithing]] [[skill]] in [[free-to-play]]. There are a few ways to profit with Smithing in free-to-play, such as smelting [[bar]]s or making [[rune equipment]], however it is more beneficial to simply perform the fastest experience methods and use the saved time to make money from alternative methods.
+
+==Fastest experience==
+===General Advice===
+{{Inventory|align=right
+|Adamantite bar|Adamantite bar|Adamantite bar|Adamantite bar
+|Adamantite bar|Adamantite bar|Adamantite bar|Adamantite bar
+|Adamantite bar|Adamantite bar|Adamantite bar|Adamantite bar
+|Adamantite bar|Adamantite bar|Adamantite bar|Adamantite bar
+|Adamantite bar|Adamantite bar|Adamantite bar|Adamantite bar
+|Adamantite bar|Adamantite bar|Adamantite bar|Adamantite bar
+|Adamantite bar|Energy potion(4)|Hammer|Nature rune\5000
+}}
+
+When making equipment with [[bars]], experience gained is based off the number of bars used, therefore using larger amounts of bars at once yields the highest experience rates. This means smithing [[platebodies]] when available is always the fastest experience per tier of bar. The best place to smith bars is the [[anvil]] south of [[Varrock west bank]], as it is the closest anvil to a bank in free-to-play. [[Energy potion(4)|Energy potions]] ({{Coins|{{GEP|Energy potion(4)}}}}) can optionally be brought in the two empty inventory spaces when making platebodies to continuously sprint with level 1 [[Agility]], at an added cost of roughly {{Coins|{{GEP|Energy potion(4)}} / 130}} per bar (1 energy potion dose per 32.5 bars). Depending on starting [[gp]] and profit from making certain platebodies, one can gain much more gold per hour as well as experience per hour using energy potions instead of letting run energy recharge naturally by walking.
+
+An option available to players with 55 [[Magic]] is to cast [[High Level Alchemy]] on their created platebodies to either reduce costs, increase profits, or gain [[Magic]] experience. If choosing to alch their platebodies, then it is possible to alch 1-2 platebodies [[efficiency|efficiently]] as a [[zero time]] [[Magic]] training method on the run from the anvil back to the bank. For this, one should equip a [[staff of fire]] and bring [[nature rune]]s in place of one of their energy potions while smithing. Otherwise, the platebodies can be alched later, on their own or during other activities such as [[combat]].
+
+===Level 1-29: The Knight's Sword===
+It is highly recommended to complete [[The Knight's Sword]] [[quest]] immediately for the reward of 12,725 [[Smithing]] experience, enough to level Smithing from 1 to 29.
+
+===Level 18/29-33: Bronze platebodies===
+{{plinkp|Bronze platebody}} Smith [[bronze platebodies]] from level 18 (or 29 if [[The Knight's Sword]] has been completed) to 33 for 5 bars and 62.5 experience each. Smithing [[bronze platebodies]] at the anvil south of [[Varrock west bank]] gives experience rates of 50,000 Smithing XP per hour constantly running. Since bronze platebodies are smithed from 5 bars each, [[Energy potion(4)|energy potions]] can be used in the two empty inventory spaces to continuously sprint while training.
+
+Starting at 18:
+* Starting experience: 3,525
+* Experience required: 14,722
+* Ending experience: 18,247
+* [[Bronze bar]]s required: 1,180
+* Input cost: {{Coins|{{GEP|Bronze bar|1180}}}}
+* Output: {{Coins|{{GEP|Bronze platebody|236}}}}
+* Profit: {{Coins|{{GEP|Bronze platebody|236}} - {{GEP|Bronze bar|1180}}}} ({{Coins|({{GEP|Bronze platebody}} - {{GEP|Bronze bar|5}})}} each)
+* High alchemy ({{SCP|Magic|55}}) profit: {{Coins|({{HA|Bronze platebody}}*236) - {{GEP|Bronze bar|1180}} - {{GEP|Nature rune|236}}}} ({{Coins|({{HA|Bronze platebody}} - {{GEP|Bronze bar|5}} - {{GEP|Nature rune}})}} each)
+
+Starting at 29:
+* Starting experience: 12,725
+* Experience required: 5,522
+* Ending experience: 18,200
+* [[Bronze bar]]s required: 445 (299 bars if you are smelting the bars yourself)
+* Input cost: {{Coins|{{GEP|Bronze bar|445}}}}
+* Output: {{Coins|{{GEP|Bronze platebody|89}}}}
+* Profit: {{Coins|{{GEP|Bronze platebody|89}} - {{GEP|Bronze bar|445}}}} ({{Coins|({{GEP|Bronze platebody}} - {{GEP|Bronze bar|5}})}} each)
+* High alchemy ({{SCP|Magic|55}}) profit: {{Coins|({{HA|Bronze platebody}}*89) - {{GEP|Bronze bar|445}} - {{GEP|Nature rune|89}}}} coins ({{Coins|({{HA|Bronze platebody}} - {{GEP|Bronze bar|5}} - {{GEP|Nature rune}})}} each)
+
+===Level 33-48: Iron platebodies===
+{{plinkp|Iron platebody}} Smith [[iron platebodies]] from levels 33 to 48 for 125 experience each. Smithing [[iron platebodies]] at the anvil south of [[Varrock west bank]] gives experience rates of 100,000 Smithing XP per hour constantly running. Since iron platebodies are smithed from 5 bars each, [[Energy potion(4)|energy potions]] can be used in the two empty inventory spaces to continuously sprint while training.
+
+* Starting experience: 18,287.5
+* Experience required: 64,726.5
+* Ending experience: 83,014
+* [[Iron bar]]s required: 2,590 (1,735 bars if you are smelting<ref name="forging">This is based on using the [[Ring of forging]] for smelting, guaranteeing successful smelting of iron.</ref> the bars yourself)
+* Input cost: {{Coins|{{GEP|Iron bar|2590}}}}
+* Output: {{Coins|{{GEP|Iron platebody|518}}}}
+* Profit: {{Coins|{{GEP|Iron platebody|518}} - {{GEP|Iron bar|2590}}}} ({{Coins|({{GEP|Iron platebody}} - {{GEP|Iron bar|5}})}} each)
+* High alchemy ({{SCP|Magic|55}}) profit: {{Coins|({{HA|Iron platebody}}*518) - {{GEP|Iron bar|2590}} - {{GEP|Nature rune|518}}}} coins ({{Coins|({{HA|Iron platebody}} - {{GEP|Iron bar|5}} - {{GEP|Nature rune}})}} each)
+
+===Level 48-68: Steel platebodies===
+{{plinkp|Steel platebody}} Smith [[steel platebodies]] from level 48 to 68 for 187.5 experience each. Smithing [[steel platebodies]] at the anvil south of [[Varrock west bank]] gives experience rates of 150,000 Smithing XP per hour constantly running. Since steel platebodies are smithed from 5 bars each, [[Energy potion(4)|energy potions]] can be used in the two empty inventory spaces to continuously sprint while training.
+
+* Starting experience: 83,037.5
+* Experience required: 521,994.5
+* Ending experience 605,030
+* [[Steel bar]]s required: 13,920 (9,491 bars if you are smelting the bars yourself - (1899 platebodies))
+* Input cost: {{Coins|{{GEP|Steel bar|13920}}}}
+* Output: {{Coins|{{GEP|Steel platebody|2784}}}}
+* Profit: {{Coins|{{GEP|Steel platebody|2784}} - {{GEP|Steel bar|13920}}}} ({{Coins|({{GEP|Steel platebody}} - {{GEP|Steel bar|5}})}} each)
+* High alchemy ({{SCP|Magic|55}}) profit: {{Coins|({{HA|Steel platebody}}*2784) - {{GEP|Steel bar|13920}} - {{GEP|Nature rune|2784}}}} ({{Coins|({{HA|Steel platebody}} - {{GEP|Steel bar|5}} - {{GEP|Nature rune}})}} each)
+
+===Level 68-88: Mithril platebodies===
+{{plinkp|Mithril platebody}} Smith [[mithril platebodies]] from levels 68 to 88 for 250 experience each. Smithing [[mithril platebodies]] at the anvil south of [[Varrock west bank]] gives experience rates of 200,000 Smithing XP per hour constantly running. Since mithril platebodies are smithed from 5 bars each, [[Energy potion(4)|energy potions]] can be used in the two empty inventory spaces to continuously sprint while training.
+
+Levelling smithing from level 68 to 88 takes smithing 15,123 mithril platebodies. 
+
+* Starting experience: 605,037.5
+* Experience required: 3,780,750
+* Ending experience: 4,385,787.5
+* [[Mithril bar]]s required: 75,615 (47,260 bars if you are smelting the bars yourself - (9452 platebodies))
+* Input cost: {{Coins|{{GEP|Mithril bar|75615}}}}
+* Output: {{Coins|{{GEP|Mithril platebody|15123}}}}
+* Profit: {{Coins|{{GEP|Mithril platebody|15123}} - {{GEP|Mithril bar|75615}}}} ({{Coins|({{GEP|Mithril platebody}} - {{GEP|Mithril bar|5}})}} each)
+* High alchemy ({{SCP|Magic|55}}) profit: {{Coins|({{HA|Mithril platebody}}*15123) - {{GEP|Mithril bar|75615}} - {{GEP|Nature rune|15123}}}} coins ({{Coins|({{HA|Mithril platebody}} - {{GEP|Mithril bar|5}} - {{GEP|Nature rune}})}} each)
+
+===Level 87/88-98: Adamant platebodies===
+{{plinkp|Adamant platebody}} Smith [[adamant platebodies]] from levels 88 to 98 for 312.5 experience each. Alternatively, from level 87 Smithing players can also boost to 88 for adamant platebodies with [[dwarven stout]]. Adamant platebodies give up to 250,000 experience per hour with the use of [[Energy potion(4)|energy potions]]. Smithing [[adamant platebodies]] from levels 87/88 to 98/99 may take upwards of 35-45 hours depending on efficiency and use of [[Energy potion(4)|energy potions]].
+
+Note: The next section for [[rune platebodies]] is helpful and slightly faster experience per hour. However, most players will opt to continue smithing [[adamant platebodies]] all the way to level 99 even though [[rune platebodies]] are more experience per item, as adamant platebodies may be cheaper experience per gold spent for comparable XP rates.
+
+Starting at level 88:
+* Starting experience: 4,385,787.5
+* Experience required: 7,419,818.5
+* Ending experience: 11,805,787
+* [[Adamant bar]]s required: 118,720 (74,200 bars if you are smelting the bars yourself - (14,840 platebodies))
+* Input cost: {{Coins|{{GEP|Adamantite bar|118720}}}}
+* Output: {{Coins|{{GEP|Adamant platebody|23744}}}}
+* Profit: {{Coins|{{GEP|Adamant platebody|23744}} - {{GEP|Adamantite bar|118720}}}} ({{Coins|({{GEP|Adamant platebody}} - {{GEP|Adamantite bar|5}})}} each)
+* High alchemy ({{SCP|Magic|55}}) profit: {{Coins|({{HA|Adamant platebody}}*23744) - {{GEP|Adamantite bar|118720}} - {{GEP|Nature rune|23744}}}} coins ({{Coins|({{HA|Adamant platebody}} - {{GEP|Adamantite bar|5}} - {{GEP|Nature rune}})}} each)
+
+===Level 98-99: Rune platebodies===
+{{plinkp|Rune platebody}} Starting at level 98, smith [[rune platebodies]] for the fastest experience at level 98 for 375 experience each by drinking a [[dwarven stout]] for a +1 Smithing boost for one minute. Maintain [[energy]] with [[energy potion]]s. This will give experience rates of up to 300,000 Smithing experience per hour. However, [[rune platebodies]] can be extremely expensive despite offering the highest experience gained per hour for free-to-play Smithing training.
+
+Starting at level 98:
+* Starting experience: 11,805,787.5
+* Experience required: 1,228,643.5
+* [[Runite bar]]s required: 16,385 (9,835 bars if you are smelting the bars yourself - (1966 platebodies))
+* Input cost: {{Coins|{{GEP|Runite bar|16385}}}}
+* Output: {{Coins|{{GEP|Rune platebody|3277}}}}
+* Profit: {{Coins|{{GEP|Rune platebody|3277}} - {{GEP|Runite bar|16385}}}} ({{Coins|({{GEP|Rune platebody}} - {{GEP|Runite bar|5}})}} each)
+* High alchemy ({{SCP|Magic|55}}) profit: {{Coins|({{HA|Rune platebody}}*3277) - {{GEP|Runite bar|16385}} - {{GEP|Nature rune|3277}}}} coins ({{Coins|({{HA|Rune platebody}} - {{GEP|Runite bar|5}} - {{GEP|Nature rune}})}} each)
+
+==Alternative methods==
+===Level 1-5: Bronze axes===
+{{plinkp|Bronze axe}} Smith [[bronze axe]]s by using [[bronze bar]]s and a [[hammer]] at an [[anvil]] until level 5, giving 12.5 experience each. Smithing [[bronze axe]]s at the anvil south of [[Varrock west bank]] gives experience rates of 13,500 Smithing XP per hour.
+
+* Starting [[experience]]: 0
+* Experience required: 388 
+* Ending experience: 400
+* [[Bronze bar]]s required: 32
+* Input cost: {{Coins|{{GEP|Bronze bar|32}}}}
+* Output: {{Coins|{{GEP|Bronze axe|32}}}}
+* Profit: {{Coins|{{GEP|Bronze axe|32}} - {{GEP|Bronze bar|32}}}} ({{Coins|({{GEP|Bronze axe}} - {{GEP|Bronze bar}})}} each)
+* High alchemy ({{SCP|Magic|55}}) profit: {{Coins|({{HA|Bronze axe}}*32) - {{GEP|Bronze bar|32}} - {{GEP|Nature rune|32}}}} ({{Coins|({{HA|Bronze axe}} - {{GEP|Bronze bar}} - {{GEP|Nature rune}})}} each)
+
+===Level 5-9: Bronze scimitars===
+{{plinkp|Bronze scimitar}} At level 5, switch to smithing [[bronze scimitar]]s from levels 5 to 9 for 2 bars and 25 experience each. Smithing [[bronze scimitar]]s at the anvil south of [[Varrock west bank]] gives experience rates of 25,500 Smithing XP per hour.
+
+* Starting experience: 400
+* Experience required: 569
+* Ending experience: 975
+* [[Bronze bar]]s required: 46
+* Input cost: {{Coins|{{GEP|Bronze bar|46}}}}
+* Output: {{Coins|{{GEP|Bronze scimitar|23}}}}
+* Profit: {{Coins|{{GEP|Bronze scimitar|23}} - {{GEP|Bronze bar|46}}}} ({{Coins|({{GEP|Bronze scimitar}} - {{GEP|Bronze bar|2}})}} each)
+* High alchemy ({{SCP|Magic|55}}) profit: {{Coins|({{HA|Bronze scimitar}}*23) - {{GEP|Bronze bar|46}} - {{GEP|Nature rune|23}}}} coins ({{Coins|({{HA|Bronze scimitar}} - {{GEP|Bronze bar|2}}) - {{GEP|Nature rune}}}} each)
+
+===Level 9-18: Bronze warhammers===
+{{plinkp|Bronze warhammer}} Smith [[bronze warhammer]]s from levels 9 to 18 for 3 bars and 37.5 experience each. Smithing [[bronze warhammer]]s at the anvil south of [[Varrock west bank]] gives experience rates of 36,000 Smithing XP per hour.
+
+* Starting experience: 975
+* Experience required: 2,548
+* Ending experience: 3,523
+* [[Bronze bar]]s required: 204
+* Input cost: {{Coins|{{GEP|Bronze bar|204}}}}
+* Output: {{Coins|{{GEP|Bronze warhammer|68}}}}
+* Profit: {{Coins|{{GEP|Bronze warhammer|68}} - {{GEP|Bronze bar|204}}}} ({{Coins|({{GEP|Bronze warhammer}} - {{GEP|Bronze bar|3}})}} each)
+* High alchemy ({{SCP|Magic|55}}) profit: {{Coins|({{HA|Bronze warhammer}}*68) - {{GEP|Bronze bar|204}} - {{GEP|Nature rune|68}}}} coins ({{Coins|({{HA|Bronze warhammer}} - {{GEP|Bronze bar|3}} - {{GEP|Nature rune}})}} each)
+
+===Level 20-88: Smelting and Crafting===
+Crafting [[Crafting#Gold_jewellery|gold jewellry]] (and [[Crafting#Silver|silver jewellry]]) is a [[Money_making_guide/Crafting_diamond_jewellery|potentially profitable]] way to train [[Crafting]]. If you're already making jewellry, you can use [[gold ore]] (or [[silver ore]]) to first make a [[gold bar]] (or [[silver bar]]). While this is a significantly slower overall method of training smithing, the marginal time cost of smelting is simply the smelting itself (because you already have to make trips between the bank and furnace anyway). Your effective marginal smelting rate is 1200 bars an hour (one bar every 5 [[RuneScape clock|ticks]]); or potentially even more, as the increased time per bank trip allows [[energy|run energy]] to recover sustainably.
+
+{| class="wikitable sortable"
+|+ Smelting While Crafting Viability Table
+|-
+!  Item 
+! Levels Required 
+! Materials 
+! Smithing Exp 
+! Marginal Smithing Exp/Hr 
+! Material Cost 
+! Product Value 
+! Profit/Loss 
+|-
+| {{plink|Unstrung symbol}} || {{SCP|Smithing|20}}<br/>{{SCP|Crafting|16}} || 1x{{plink|Silver ore}} <br/> {{plink|Holy mould}} (not consumed) || 13.7 || 16,440 || {{Coins|{{GEP|Silver_ore}}}} || {{Coins|{{GEP|Unstrung_symbol}}}} || {{Coins|{{GEP|Unstrung_symbol}} - ({{GEP|Silver_ore}})}}
+|-
+| {{plink|Tiara}} || {{SCP|Smithing|20}}<br/>{{SCP|Crafting|23}} || 1x{{plink|Silver ore}} <br/> {{plink|Tiara mould}} (not consumed) || 13.7 || 16,440 || {{Coins|{{GEP|Silver_ore}}}} || {{Coins|{{GEP|Tiara}}}} || {{Coins|{{GEP|Tiara}} - ({{GEP|Silver_ore}})}}
+|-
+| {{plink|Gold ring}} || {{SCP|Smithing|40}}<br/>{{SCP|Crafting|5}} || 1x{{plink|Gold ore}}<br/>{{plink|Ring mould}} (not consumed) || 22.5|| 27,000 || {{Coins|{{GEP|Gold_ore}}}} ||  {{Coins|{{GEP|Gold_ring}}}} || {{Coins|{{GEP|Gold_ring}} - ({{GEP|Gold_ore}})}}
+|-
+| {{plink|Gold necklace}} || {{SCP|Smithing|40}}<br/>{{SCP|Crafting|6}} || 1x{{plink|Gold ore}}<br/>{{plink|Necklace mould}} (not consumed) || 22.5|| 27,000 || {{Coins|{{GEP|Gold_ore}}}} ||  {{Coins|{{GEP|Gold_necklace}}}} || {{Coins|{{GEP|Gold_necklace}} - ({{GEP|Gold_ore}})}}
+|-
+| {{plink|Gold amulet (u)}} || {{SCP|Smithing|40}}<br/>{{SCP|Crafting|8}}|| 1x{{plink|Gold ore}}<br/>{{plink|Amulet mould}} (not consumed) || 22.5|| 27,000 || {{Coins|{{GEP|Gold_ore}}}} ||  {{Coins|{{GEP|Gold_amulet (u)}}}} || {{Coins|{{GEP|Gold_amulet (u)}} - ({{GEP|Gold_ore}})}}
+|-
+| {{plink|Sapphire ring}} || {{SCP|Smithing|40}}<br/>{{SCP|Crafting|20}} || 1x{{plink|Gold ore}} , 1x{{plink|Sapphire}}<br/>{{plink|Ring mould}} (not consumed) || 22.5|| 27,000 || {{Coins|{{GEP|Gold_ore}}+{{GEP|Sapphire}}}} ||  {{Coins|{{GEP|Sapphire_ring}}}} || {{Coins|{{GEP|Sapphire_ring}} - ({{GEP|Gold_ore}}+{{GEP|Sapphire}})}}
+|-
+| {{plink|Sapphire necklace}} || {{SCP|Smithing|40}}<br/>{{SCP|Crafting|22}} || 1x{{plink|Gold ore}} , 1x{{plink|Sapphire}}<br/>{{plink|Necklace mould}} (not consumed) || 22.5|| 27,000 || {{Coins|{{GEP|Gold_ore}}+{{GEP|Sapphire}}}} ||  {{Coins|{{GEP|Sapphire_necklace}}}} || {{Coins|{{GEP|Sapphire_necklace}} - ({{GEP|Gold_ore}}+{{GEP|Sapphire}})}}
+|-
+| {{plink|Sapphire amulet (u)}} || {{SCP|Smithing|40}}<br/>{{SCP|Crafting|24}} || 1x{{plink|Gold ore}} , 1x{{plink|Sapphire}}<br/>{{plink|Amulet mould}} (not consumed) || 22.5|| 27,000 || {{Coins|{{GEP|Gold_ore}}+{{GEP|Sapphire}}}} ||  {{Coins|{{GEP|Sapphire_amulet (u)}}}} || {{Coins|{{GEP|Sapphire_amulet (u)}} - ({{GEP|Gold_ore}}+{{GEP|Sapphire}})}}
+|-
+| {{plink|Emerald ring}} || {{SCP|Smithing|40}}<br/>{{SCP|Crafting|27}} || 1x{{plink|Gold ore}} , 1x{{plink|Emerald}}<br/>{{plink|Ring mould}} (not consumed) || 22.5|| 27,000 || {{Coins|{{GEP|Gold_ore}}+{{GEP|Emerald}}}} ||  {{Coins|{{GEP|Emerald_ring}}}} || {{Coins|{{GEP|Emerald_ring}} - ({{GEP|Gold_ore}}+{{GEP|Emerald}})}}
+|-
+| {{plink|Emerald necklace}} || {{SCP|Smithing|40}}<br/>{{SCP|Crafting|29}} || 1x{{plink|Gold ore}} , 1x{{plink|Emerald}}<br/>{{plink|Necklace mould}} (not consumed) || 22.5|| 27,000 || {{Coins|{{GEP|Gold_ore}}+{{GEP|Emerald}}}} ||  {{Coins|{{GEP|Emerald_necklace}}}} || {{Coins|{{GEP|Emerald_necklace}} - ({{GEP|Gold_ore}}+{{GEP|Emerald}})}}
+|-
+| {{plink|Emerald amulet (u)}} || {{SCP|Smithing|40}}<br/>{{SCP|Crafting|31}} || 1x{{plink|Gold ore}} , 1x{{plink|Emerald}}<br/>{{plink|Amulet mould}} (not consumed) || 22.5|| 27,000 || {{Coins|{{GEP|Gold_ore}}+{{GEP|Emerald}}}} ||  {{Coins|{{GEP|Emerald_amulet (u)}}}} || {{Coins|{{GEP|Emerald_amulet (u)}} - ({{GEP|Gold_ore}}+{{GEP|Emerald}})}}
+|-
+| {{plink|Ruby ring}} || {{SCP|Smithing|40}}<br/>{{SCP|Crafting|34}} || 1x{{plink|Gold ore}} , 1x{{plink|Ruby}}<br/>{{plink|Ring mould}} (not consumed) || 22.5|| 27,000 || {{Coins|{{GEP|Gold_ore}}+{{GEP|Ruby}}}} ||  {{Coins|{{GEP|Ruby_ring}}}} || {{Coins|{{GEP|Ruby_ring}} - ({{GEP|Gold_ore}}+{{GEP|Ruby}})}}
+|-
+| {{plink|Ruby necklace}} || {{SCP|Smithing|40}}<br/>{{SCP|Crafting|40}} || 1x{{plink|Gold ore}} , 1x{{plink|Ruby}}<br/>{{plink|Necklace mould}} (not consumed) || 22.5|| 27,000 || {{Coins|{{GEP|Gold_ore}}+{{GEP|Ruby}}}} ||  {{Coins|{{GEP|Ruby_necklace}}}} || {{Coins|{{GEP|Ruby_necklace}} - ({{GEP|Gold_ore}}+{{GEP|Ruby}})}}
+|-
+| {{plink|Ruby amulet (u)}} || {{SCP|Smithing|40}}<br/>{{SCP|Crafting|50}} || 1x{{plink|Gold ore}} , 1x{{plink|Ruby}}<br/>{{plink|Amulet mould}} (not consumed) || 22.5|| 27,000 || {{Coins|{{GEP|Gold_ore}}+{{GEP|Ruby}}}} ||  {{Coins|{{GEP|Ruby_amulet (u)}}}} || {{Coins|{{GEP|Ruby_amulet (u)}} - ({{GEP|Gold_ore}}+{{GEP|Ruby}})}}
+|-
+| {{plink|Diamond ring}} || {{SCP|Smithing|40}}<br/>{{SCP|Crafting|43}} || 1x{{plink|Gold ore}} , 1x{{plink|Diamond}}<br/>{{plink|Ring mould}} (not consumed) || 22.5|| 27,000 || {{Coins|{{GEP|Gold_ore}}+{{GEP|Diamond}}}} ||  {{Coins|{{GEP|Diamond_ring}}}} || {{Coins|{{GEP|Diamond_ring}} - ({{GEP|Gold_ore}}+{{GEP|Diamond}})}}
+|-
+| {{plink|Diamond necklace}} || {{SCP|Smithing|40}}<br/>{{SCP|Crafting|56}} || 1x{{plink|Gold ore}} , 1x{{plink|Diamond}}<br/>{{plink|Necklace mould}} (not consumed) || 22.5|| 27,000 || {{Coins|{{GEP|Gold_ore}}+{{GEP|Diamond}}}} ||  {{Coins|{{GEP|Diamond_necklace}}}} || {{Coins|{{GEP|Diamond_necklace}} - ({{GEP|Gold_ore}}+{{GEP|Diamond}})}}
+|-
+| {{plink|Diamond amulet (u)}} || {{SCP|Smithing|40}}<br/>{{SCP|Crafting|70}} || 1x{{plink|Gold ore}} , 1x{{plink|Diamond}}<br/>{{plink|Amulet mould}} (not consumed) || 22.5|| 27,000 || {{Coins|{{GEP|Gold_ore}}+{{GEP|Diamond}}}} ||  {{Coins|{{GEP|Diamond_amulet (u)}}}} || {{Coins|{{GEP|Diamond_amulet (u)}} - ({{GEP|Gold_ore}}+{{GEP|Diamond}})}}
+|}
+
+Based on this marginal 1200 bars per hour, we have the following experience and cost table:
+
+{| class="wikitable sortable"
+|+ Marginal Smelting Efficiency Table
+|-
+! Input Ore 
+! Level Required 
+! Output Bar
+! Experience
+! Bars/Hour
+! {{SCP|Smithing}} Exp/Hour
+! GP/Hour
+! GP/Exp 
+|-
+|-
+| {{plink|Silver ore}} || {{SCP|Smithing|20}} || {{plink|Silver bar}} || 13.7 || 1200 || 16,440 || {{Coins|1200*({{GEP|Silver_bar}}-{{GEP|Silver_ore}})}} || {{Coins|({{GEP|Silver_bar}}-{{GEP|Silver_ore}})/16.7}}
+|-
+| {{plink|Gold ore}} || {{SCP|Smithing|40}} || {{plink|Gold bar}} || 22.5|| 1200 || 27,000 || {{Coins|1200*({{GEP|Gold_bar}}-{{GEP|Gold_ore}})}} || {{Coins|({{GEP|Gold_bar}}-{{GEP|Gold_ore}})/22.5}}
+|}
+
+===Level 70-99: Superheat Item===
+Players with level {{SCP|Magic|43}} can cast [[superheat item]], which can smelt a bar from anywhere at its normal ore cost, plus 1 [[nature rune]] and 4 [[fire rune]]s (no fire runes are necessary with a [[staff of fire]] equipped). This saves time travelling between the furnace and bank. Also, it only has a [[RuneScape_clock|3 tick]] cast time (1.8 seconds) rather than the standard 5 ticks (3 seconds) it takes to smelt a bar in a furnace. As such, it can process more bars per hour, earning Magic experience in addition to the normal Smithing xp. As a bonus, it successfully smelts [[iron bar]]s 100% of the time, without needing a [[ring of forging]].
+
+One disadvantage of superheat item is that it does not auto-cast if you have the supplies to make multiple bars; it must be cast on each ore in the inventory, making this method more click intensive.
+
+While this method is still considerably slower at gaining experience than the [[#Fastest experience|fastest experience]] mentioned above, it can be more cost effective.
+
+{|class="wikitable align-center-5 sortable"
+!colspan="2"|Bar!! Levels<br/>Required!!Experience<br/>Per Bar!!Materials<br/>required!!Input<br/>cost!!GE Price!!Profit<br/>Per Bar|| Bars<br/>Per Bank || Banks<br/>Per Hour || Bars<br/>Per Hour ||Experience<br/>Per Hour ||Profit<br/>Per Hour ||{{plink|Coins}} Profit<br/>Per {{SCP|Smithing}} Exp
+|-
+|{{plinkt|Bronze bar}}
+|{{SCP|Smithing|1}}<br/>{{SCP|Magic|43}}
+|{{SCP|Smithing|6.2}}<br/>{{SCP|Magic|53}}
+|{{plinkp|Tin ore}}{{X}}1<br/>{{plinkp|Copper ore}}{{X}}1<br/>{{plinkp|Nature rune}}{{X}}1
+|{{Coins|{{GEP|Copper ore}}+{{GEP|Tin ore}}+{{GEP|Nature rune}}}}
+|{{Coins|{{GEP|Bronze bar}}}}
+|{{Coins|{{GEP|Bronze bar}}-{{GEP|Copper ore}}-{{GEP|Tin ore}}-{{GEP|Nature rune}}}}
+|13
+|131
+|1,703
+|{{SCP|Smithing|10,559}}<br/>{{SCP|Magic|90,259}}
+|{{Coins|1703*({{GEP|Bronze bar}}-{{GEP|Copper ore}}-{{GEP|Tin ore}}-{{GEP|Nature rune}})}}
+|{{Coins|({{GEP|Bronze bar}}-{{GEP|Copper ore}}-{{GEP|Tin ore}}-{{GEP|Nature rune}})/6.2}}
+|-
+|{{plinkt|Iron bar}}
+|{{SCP|Smithing|15}}<br/>{{SCP|Magic|43}}
+|{{SCP|Smithing|12.5}}<br/>{{SCP|Magic|53}}
+|{{plinkp|Iron ore}}{{X}}1<br/>{{plinkp|Nature rune}}{{X}}1
+|{{Coins|{{GEP|Iron ore}}+{{GEP|Nature rune}}}}
+|{{Coins|{{GEP|Iron bar}}}}
+|{{Coins|{{GEP|Iron bar}}-{{GEP|Iron ore}}-{{GEP|Nature rune}}}}
+|27
+|68
+|1,836
+|{{SCP|Smithing|22,950}}<br/>{{SCP|Magic|97,308}}
+|{{Coins|1836*({{GEP|Iron bar}}-{{GEP|Iron ore}}-{{GEP|Nature rune}})}}
+|{{Coins|({{GEP|Iron bar}}-{{GEP|Iron ore}}-{{GEP|Nature rune}})/12.5}}
+|-
+|{{plinkt|Silver bar}}
+|{{SCP|Smithing|20}}<br/>{{SCP|Magic|43}}
+|{{SCP|Smithing|13.67}}<br/>{{SCP|Magic|53}}
+|{{plinkp|Silver ore}}{{X}}1<br/>{{plinkp|Nature rune}}{{X}}1
+|{{Coins|{{GEP|Silver ore}}+{{GEP|Nature rune}}}}
+|{{Coins|{{GEP|Silver bar}}}}
+|{{Coins|{{GEP|Silver bar}}-{{GEP|Silver ore}}-{{GEP|Nature rune}}}}
+|27
+|68
+|1,836
+|{{SCP|Smithing|25,098}}<br/>{{SCP|Magic|97,308}}
+|{{Coins|1836*({{GEP|Silver bar}}-{{GEP|Silver ore}}-{{GEP|Nature rune}})}}
+|{{Coins|({{GEP|Silver bar}}-{{GEP|Silver ore}}-{{GEP|Nature rune}})/13.67}}
+|-
+|{{plinkt|Steel bar}}
+|{{SCP|Smithing|30}}<br/>{{SCP|Magic|43}}
+|{{SCP|Smithing|17.5}}<br/>{{SCP|Magic|53}}
+|{{plinkp|Iron ore}}{{X}}1<br/>{{plinkp|Coal}}{{X}}2<br/>{{plinkp|Nature rune}}{{X}}1
+|{{Coins|{{GEP|Iron ore}}+{{GEP|Coal}}*2+{{GEP|Nature rune}}}}
+|{{Coins|{{GEP|Steel bar}}}}
+|{{Coins|{{GEP|Steel bar}}-{{GEP|Iron ore}}-{{GEP|Coal}}*2-{{GEP|Nature rune}}}}
+|9
+|178
+|1,602
+|{{SCP|Smithing|28,035}}<br/>{{SCP|Magic|84,906}}
+|{{Coins|1602*({{GEP|Steel bar}}-{{GEP|Iron ore}}-{{GEP|Coal}}*2-{{GEP|Nature rune}})}}
+|{{Coins|({{GEP|Steel bar}}-{{GEP|Iron ore}}-{{GEP|Coal}}*2-{{GEP|Nature rune}})/17.5}}
+|-
+|{{plinkt|Gold bar}}
+|{{SCP|Smithing|40}}<br/>{{SCP|Magic|43}}
+|{{SCP|Smithing|22.5}}<br/>{{SCP|Magic|53}}
+|{{plinkp|Gold ore}}{{X}}1<br/>{{plinkp|Nature rune}}{{X}}1
+|{{Coins|{{GEP|Gold ore}}+{{GEP|Nature rune}}}}
+|{{Coins|{{GEP|Gold bar}}}}
+|{{Coins|{{GEP|Gold bar}}-{{GEP|Gold ore}}-{{GEP|Nature rune}}}}
+|27
+|68
+|1,836
+|{{SCP|Smithing|41,310}}<br/>{{SCP|Magic|97,308}}
+|{{Coins|1836*({{GEP|Gold bar}}-{{GEP|Gold ore}}-{{GEP|Nature rune}})}}
+|{{Coins|({{GEP|Gold bar}}-{{GEP|Gold ore}}-{{GEP|Nature rune}})/22.5}}
+|-
+|{{plinkt|Mithril bar}}
+|{{SCP|Smithing|50}}<br/>{{SCP|Magic|43}}
+|{{SCP|Smithing|30}}<br/>{{SCP|Magic|53}}
+|{{plinkp|Mithril ore}}{{X}}1<br/>{{plinkp|Coal}}{{X}}4<br/>{{plinkp|Nature rune}}{{X}}1
+|{{Coins|{{GEP|Mithril ore}}+{{GEP|Coal}}*4+{{GEP|Nature rune}}}}
+|{{Coins|{{GEP|Mithril bar}}}}
+|{{Coins|{{GEP|Mithril bar}}-{{GEP|Mithril ore}}-{{GEP|Coal}}*4-{{GEP|Nature rune}}}}
+|5
+|277
+|1,385
+|{{SCP|Smithing|41,550}}<br/>{{SCP|Magic|73,405}}
+|{{Coins|1385*({{GEP|Mithril bar}}-{{GEP|Mithril ore}}-{{GEP|Coal}}*4-{{GEP|Nature rune}})}}
+|{{Coins|({{GEP|Mithril bar}}-{{GEP|Mithril ore}}-{{GEP|Coal}}*4-{{GEP|Nature rune}})/30}}
+|-
+|{{plinkt|Adamantite bar}}
+|{{SCP|Smithing|70}}<br/>{{SCP|Magic|43}}
+|{{SCP|Smithing|37.5}}<br/>{{SCP|Magic|53}}
+|{{plinkp|Adamantite ore}}{{X}}1<br/>{{plinkp|Coal}}{{X}}6<br/>{{plinkp|Nature rune}}{{X}}1
+|{{Coins|{{GEP|Adamantite ore}}+{{GEP|Coal}}*6+{{GEP|Nature rune}}}}
+|{{Coins|{{GEP|Adamantite bar}}}}
+|{{Coins|{{GEP|Adamantite bar}}-{{GEP|Adamantite ore}}-{{GEP|Coal}}*6-{{GEP|Nature rune}}}}
+|3
+|383
+|1,149
+|{{SCP|Smithing|43,088}}<br/>{{SCP|Magic|60,897}}
+|{{Coins|1149*({{GEP|Adamantite bar}}-{{GEP|Adamantite ore}}-{{GEP|Coal}}*6-{{GEP|Nature rune}})}}
+|{{Coins|({{GEP|Adamantite bar}}-{{GEP|Adamantite ore}}-{{GEP|Coal}}*6-{{GEP|Nature rune}})/37.5}}
+|-
+|{{plinkt|Runite bar}}
+|{{SCP|Smithing|85}}<br/>{{SCP|Magic|43}}
+|{{SCP|Smithing|50}}<br/>{{SCP|Magic|53}}
+|{{plinkp|Runite ore}}{{X}}1<br/>{{plinkp|Coal}}{{X}}8<br/>{{plinkp|Nature rune}}{{X}}1
+|{{Coins|{{GEP|Runite ore}}+{{GEP|Coal}}*8+{{GEP|Nature rune}}}}
+|{{Coins|{{GEP|Runite bar}}}}
+|{{Coins|{{GEP|Runite bar}}-{{GEP|Runite ore}}-{{GEP|Coal}}*8-{{GEP|Nature rune}}}}
+|3
+|383
+|1,149
+|{{SCP|Smithing|57,450}}<br/>{{SCP|Magic|60,897}}
+|{{Coins|1149*({{GEP|Runite bar}}-{{GEP|Runite ore}}-{{GEP|Coal}}*8-{{GEP|Nature rune}})}}
+|{{Coins|({{GEP|Runite bar}}-{{GEP|Runite ore}}-{{GEP|Coal}}*8-{{GEP|Nature rune}})/50}}
+|}
+
+This table assumes a [[staff of fire]] is equipped and each cycle takes ~4 seconds for banking.
+
+===Level 98-99: Smithing Rune Equipment===
+{{plinkp|{{MaxPrice|var=item|Rune 2h sword|Rune platelegs|Rune plateskirt|format=item|link=n}}}} Using a [[dwarven stout]], players can boost from 98 to 99 Smithing and smith [[rune platelegs]], [[rune plateskirt]]s, and [[rune 2h sword]]s as a [[Money_making_guide/Smithing_rune_items|potentially profitable]] alternative to adamant/rune platebodies. One [[dwarven stout]] must be drank every minute to maintain 99 Smithing from 98; this adds a cost of approximately one [[dwarven stout]] per 45 [[runite bars]], or roughly {{Coins|{{GEP|Dwarven stout}} / 45}} per bar.
+
+Currently, the most profitable 3 bar rune item to smith when selling on the [[Grand Exchange]] is [[{{#var:item_item}}]]. If casting High Level Alchemy after smithing, it does not matter whether [[rune platelegs]], [[rune plateskirt]]s, or [[rune 2h sword]]s are made in terms of returns, as they have the same High Level Alchemy value; however, [[rune 2h sword]]s are the lightest and thus are slightly more efficient on run energy.
+
+Experience rates of approximately 215,000 Smithing experience per hour can be obtained from equipment made with 3 [[runite bar]]s.
+
+* Starting experience: 11,805,787.5
+* Experience required: 1,228,643.5
+* [[Runite bar]]s required: 16,383
+* Most profitable: [[{{#var:item_item}}]]
+* Input cost (bars and stouts): {{Coins|{{GEP|Runite bar|16383}} + ({{GEP|Dwarven stout}} * (16383/45))}}
+* Output: {{Coins|{{GEP|{{#var:item_item}}|5461}}}}
+* Profit: {{Coins|{{GEP|{{#var:item_item}}|5461}} - {{GEP|Runite bar|16383}} - ({{GEP|Dwarven stout}} * (16383/45))}} ({{Coins|{{GEP|{{#var:item_item}}}} - {{GEP|Runite bar|3}} - ({{GEP|Dwarven stout}} * (3/45))}} each)
+* High alchemy ({{SCP|Magic|55}}) profit: {{Coins|({{HA|{{#var:item_item}}}}*5461) - {{GEP|Runite bar|16383}} - {{GEP|Nature rune|5461}} - ({{GEP|Dwarven stout}} * (16383/45))}} ({{Coins|{{HA|{{#var:item_item}}}} - {{GEP|Runite bar|3}} - {{GEP|Nature rune}} - ({{GEP|Dwarven stout}} * (3/45))}} each)
+
+== AFK Methods ==
+
+=== Level 1-99: Smelting Bars ===
+As stated at the start of this guide, if you are just looking to make money or train smithing as fast as possible, it is usually better to train smithing using the faster methods above and use the time saved on faster money makers. However, smelting bars can be a good method for players looking for an AFK method that also generates a profit. Be sure to check the GE before making any bars to make sure you will be making a profit instead of a loss. To use this method, it is recommended that you bank a large number of ores ahead of time: either by purchasing them from the GE, or mining them yourself if you don't have any gold or want the mining experience. Then head to the [[Edgeville furnace|Edgeville Furnace]] as it is the closest furnace to a bank in free-to-play.
+
+Consult the following table to see profits from smelting bars:
+
+{|class="wikitable align-center-5"
+!colspan="2"|Bar!!{{SCP|Smithing}} Level!!Experience!!Ore<br/>required!!Input cost!!GE Price!!Profit
+|-
+|{{plinkt|Bronze bar}}
+|1
+|6.2
+|{{plinkp|Tin ore}}{{X}}1<br/>{{plinkp|Copper ore}}{{X}}1
+|{{Coins|{{GEP|Copper ore}}+{{GEP|Tin ore}}}}
+|{{Coins|{{GEP|Bronze bar}}}}
+|{{Coins|{{GEP|Bronze bar}}-{{GEP|Copper ore}}-{{GEP|Tin ore}}}}
+|-
+|{{plinkt|Iron bar}}
+|15
+|12.5
+|{{plinkp|Iron ore}}{{X}}1
+|{{Coins|{{GEP|Iron ore}}}}<br/>{{Coins|{{GEP|Iron ore}}+{{GEP|Ring of forging}}/140}}<ref name="forging">This is based on using the [[Ring of forging]] for smelting, guaranteeing successful smelting of iron.</ref>
+|{{Coins|{{GEP|Iron bar}}}}
+|{{Coins|{{GEP|Iron bar}}/2-{{GEP|Iron ore}}}}<br/>{{Coins|{{GEP|Iron bar}}-{{GEP|Iron ore}}-{{GEP|Ring of forging}}/140}}<ref name="forging" />
+|-
+|{{plinkt|Silver bar}}
+|20
+|13.67
+|{{plinkp|Silver ore}}{{X}}1
+|{{Coins|{{GEP|Silver ore}}}}
+|{{Coins|{{GEP|Silver bar}}}}
+|{{Coins|{{GEP|Silver bar}}-{{GEP|Silver ore}}}}
+|-
+|{{plinkt|Steel bar}}
+|30
+|17.5
+|{{plinkp|Iron ore}}{{X}}1<br/>{{plinkp|Coal}}{{X}}2
+|{{Coins|{{GEP|Iron ore}}+{{GEP|Coal}}*2}}
+|{{Coins|{{GEP|Steel bar}}}}
+|{{Coins|{{GEP|Steel bar}}-{{GEP|Iron ore}}-{{GEP|Coal}}*2}}
+|-
+|{{plinkt|Gold bar}}
+|40
+|22.5
+|{{plinkp|Gold ore}}{{X}}1
+|{{Coins|{{GEP|Gold ore}}}}
+|{{Coins|{{GEP|Gold bar}}}}
+|{{Coins|{{GEP|Gold bar}}-{{GEP|Gold ore}}}}
+|-
+|{{plinkt|Mithril bar}}
+|50
+|30
+|{{plinkp|Mithril ore}}{{X}}1<br/>{{plinkp|Coal}}{{X}}4
+|{{Coins|{{GEP|Mithril ore}}+{{GEP|Coal}}*4}}
+|{{Coins|{{GEP|Mithril bar}}}}
+|{{Coins|{{GEP|Mithril bar}}-{{GEP|Mithril ore}}-{{GEP|Coal}}*4}}
+|-
+|{{plinkt|Adamantite bar}}
+|70
+|37.5
+|{{plinkp|Adamantite ore}}{{X}}1<br/>{{plinkp|Coal}}{{X}}6
+|{{Coins|{{GEP|Adamantite ore}}+{{GEP|Coal}}*6}}
+|{{Coins|{{GEP|Adamantite bar}}}}
+|{{Coins|{{GEP|Adamantite bar}}-{{GEP|Adamantite ore}}-{{GEP|Coal}}*6}}
+|-
+|{{plinkt|Runite bar}}
+|85
+|50
+|{{plinkp|Runite ore}}{{X}}1<br/>{{plinkp|Coal}}{{X}}8
+|{{Coins|{{GEP|Runite ore}}+{{GEP|Coal}}*8}}
+|{{Coins|{{GEP|Runite bar}}}}
+|{{Coins|{{GEP|Runite bar}}-{{GEP|Runite ore}}-{{GEP|Coal}}*8}}
+|}
+{{Reflist|name=forging}}
+
+=== Level 14+: Barronite Deposits ===
+{{plinkp|Barronite deposit}} With 14 [[Mining]] and 14 [[Smithing]], [[barronite deposit]]s can be mined from [[barronite rocks]] in the [[Camdozaal Mines]] after completing the [[quest]] [[Below Ice Mountain]]. Using them on the special [[barronite crusher]] anvil near [[Ramarno]] with a [[hammer]] yields various rewards, including [[barronite shards]] and 30 Smithing experience. This method generates very slow smithing experience since the deposits are untradeable and must be mined before crushing. If you are also trying to AFK train Mining in Camdozaal, crushing deposits can be a good way to generate some additional Smithing experience, otherwise it is better to use any of the other methods in this guide. Since Smithing experience is directly tied to how quickly barronite deposits can be mined, a higher Mining level will lead to higher Smithing experience rates.
+
+If using this method, the best technique is to keep a hammer and the highest tier pickaxe you can in your inventory and mine the barronite rocks until your inventory is full. If you have a high enough [[Attack]] level, wielding your pickaxe will give you an extra inventory slot for a deposit, however it is better to carry a higher tier pickaxe in your inventory than wielding a lower tier one. Once your inventory is full of deposits, head to the barronite crusher and crush all of the deposits for Smithing experience. You can drop any items you get from the deposits, or bank them at the [[bank chest]] east of Ramarno; however, since barronite shards stack, it is easiest just to leave them in your inventory for the entire session and use them to purchase [[Ramarno's Shard Exchange|buffs]] from Ramarno. The [[Charm of Mining|mining]] and [[Charm of Boost|boost]] buffs will increase your experience rates, and the [[Charm of Luck|luck]] buff will increase the odds of finding rare ancient artefacts when crushing deposits.
+
+{{Training guides}}
+{{Free-to-play guides}}
+[[Category:Free-to-play]]

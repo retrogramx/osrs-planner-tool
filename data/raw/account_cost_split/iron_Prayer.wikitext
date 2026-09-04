@@ -1,0 +1,275 @@
+{{Iron Guide Links}}
+
+[[Prayer]] is a slower skill to train for ironmen due to having to obtain bones themselves. Ideally, it is best to use every bone on an [[experience]] boosting altar, such as the [[Chaos Temple (hut)|Chaos Altar]], [[Ectofuntus]], [[Libation bowl]], or with high [[Construction]], a [[gilded altar]] in the [[chapel]] of your [[player-owned house]]. A [[bone crusher]] or [[ash sanctifier]] can be used for passive experience while training when the bones dropped are not worth picking up.
+
+Early Prayer goals include level 43 for {{plink|Protect from Magic}}, {{plink|Protect from Missiles}} and {{plink|Protect from Melee}}, and level 45 for all stat-boosting Prayers up to {{plink|Mystic Might}}.
+
+Later goals include level 70 for {{plink|Piety}}, and level 85 for the [[Elite Desert Diary]].
+
+==Early training: Quests==
+{{Main|Quest experience rewards#Prayer}}
+Early levels can be skipped by completing [[quest]]s that reward Prayer [[experience]]. Completing all of the following quests will reward enough experience for 42 Prayer:
+
+* [[The Restless Ghost]] rewards 1,125 Prayer experience.
+* [[Priest in Peril]] rewards 1,406 Prayer experience.
+* [[Holy Grail]] requires {{SCP|Attack|20}} and [[Merlin's Crystal]] and rewards 11,000 Prayer experience for very low requirements.
+* [[Recruitment Drive]] requires [[Druidic Ritual]] and [[Black Knights' Fortress]], rewards 1,000.5 Prayer experience.
+* [[Rag and Bone Man I]] rewards 500 Prayer experience.
+* [[Ghosts Ahoy]] requires {{SCP|Agility|25}}, {{SCP|Cooking|20}}, Priest in Peril, and The Restless Ghost, rewards 2,400 Prayer experience.
+* [[Making History]] requires Priest in Peril and partial completion of The Restless Ghost, rewards 1,000 Prayer experience.
+* [[Spirits of the Elid]] requires {{SCP|Magic|33}}, {{SCP|Ranged|37}}, {{SCP|Mining|37}}, {{SCP|Thieving|37}}, rewards 8,000 Prayer experience.
+* [[Another Slice of H.A.M.|Another Slice of H.A.M]] requires {{SCP|Attack|15}}, {{SCP|Prayer|25}}, rewards 3,000 Prayer experience.
+* [[His Faithful Servants]] rewards 20,000 Prayer experience. While it has no hard requirements other than [[Priest in Peril]], protection prayers are highly recommended.
+
+==Fastest Experience==
+{| class="wikitable
+!Method
+!Experience
+!Notes
+|-
+|[[Chaos Temple (hut)|Chaos altar]]
+|700%{{Refn|Offers 350% experience, plus a 50% chance not to consume the bone. See [[Chaos Temple (hut)#Chaos Altar|the Chaos Altar section]] for more information.|group=i}}
+|Available immediately, but risky, since the altar is in the Wilderness.
+|-
+|[[Gilded altar]]
+|250-350%
+|Requires 75 [[Construction]]. 3.5{{X}} is achievable with both [[incense burner]]s lit.
+|-
+|[[Ectofuntus]]
+|400%
+|Available early, after [[Priest in Peril]], but is quite slow.
+|-
+|[[Libation bowl]]
+|399-500%{{Refn|Experience increase depends on what bone is broken down into [[blessed bone shards]].|group=i}}
+|Available early, after [[Children of the Sun]] and {{SCP|Prayer|30}}, but is slow and requires [[jugs of wine]]. 479-600% is achievable using [[sunfire splinters]]
+|-
+|[[Offering spells]]
+|300%
+|Requires access to a steady source of [[wrath runes]]. Provides a multiplier of only 3{{X}}, but can be used without requiring trips to and from the bank.
+|}
+{{Reflist|group=i}}
+
+===Levels 1–99: Chaos altar===
+{{Dangerous|pvp=yes}}
+[[File:Chaos Temple (hut).png|thumb|The chaos altar inside the Chaos Temple.]]
+
+Offering bones at the chaos altar in the [[Chaos Temple (hut)|Chaos Temple]], located in level 38 [[Wilderness]], is the most efficient way to train Prayer, and should be used whenever possible.
+
+The altar grants 350% experience per bone with an additional 50% chance that the bone offered at the altar will not be consumed. If you keep offering bones until they're consumed you should expect 700% experience per bone on average. This method is riskier but notably faster overall than offering bones at the gilded altar considering the time it takes to gather the bones.
+
+The altar can be reached by a [[Ghorrock Teleport]] ideally, or alternatively a [[Cemetery Teleport]] or [[burning amulet]].
+
+It is recommended to [[3-item|3 or 4-item]] with cheap gear that has high defensive stats. Bring some high-healing food in case [[Player killing|player killers]] attack. A stack of noted bones can be brought and unnoted at the nearby [[Elder Chaos druid (NPC)|elder chaos druid]] NPC, which is a riskier, but faster method. Resupply by running south below level 20 Wilderness, teleport to a bank, such as [[Edgeville]]. [[Lumbridge]] and [[Camelot]] teleports are near banks on [[PvP world]]s.
+
+Alternatively, bring one inventory of bones at a time and suicide on the nearby [[Wine of zamorak|wine of Zamorak]] spawn or the [[Chaos Fanatic]] to the north. Expedite this by [[self-damage]] items, such as an [[enchanted symbol]], [[locator orb]], or a [[dwarven rock cake]].
+
+Around 500,000 Prayer experience per hour should be possible even during peak times, but the number of player killers encountered varies. Change [[Spawning#Respawn point|respawn point]]s for more efficient runs.
+
+===Levels 1–99: Gilded altar===
+Offer bones at your [[player-owned house]] [[gilded altar]], requiring 75 [[Construction]], for 2.5{{X}} experience with no [[incense burner]]s lit, 3{{x}} experience with one, or 3.5{{X}} experience with both lit. If not unnoting bones at [[Phials]] in [[Rimmington]], a [[PvP world]] can be used with [[Camelot Teleport]] to use the bank chest near [[Camelot]] castle for fast banking.
+
+===Levels 70-99: Offering spells===
+[[Demonic Offering]], a spell from the [[Arceuus spellbook]], can be used to gain a 3{{X}} multiplier on ashes during a slayer trip without spending time banking the ashes - this is the only way to multiply experience from ashes. In addition, [[Sinister Offering]] has the same trip-saving benefits as Demonic offering, and can be used to gain a 3{{X}} multiplier on bones. However, these spells require [[Wrath rune|wrath runes]], which require 95 Runecrafting - as such, this is not a method to be used early game.
+
+Without wrath runes, Demonic offering can still be cast at the [[Fountain of Rune]], which can be efficiently accessed using the [[Wilderness sword 3]] once daily or the [[Wilderness sword 4]] as often as the player needs. However, it's generally not worth going out of the way to bank ashes at tasks where extremely long trips are possible or inventory space is a concern - ashes might be banked at [[Tormented Demon|tormented demons]], for example, but probably not at [[Hellhound|hellhounds]] or [[K'ril Tsutsaroth]].
+
+==Other methods==
+===Levels 1–99: Ectofuntus===
+{{Main|Ectofuntus}}
+The [[Ectofuntus]] outside of [[Port Phasmatys]] rewards 4{{X}} Prayer experience per bone. Each bone must be ground through the [[bone grinder]] and put into a pot, then offered alongside a [[bucket of slime]] for experience and [[ecto-token]]s, which can be claimed from [[ghost disciple]]s. It is a safe alternative to the chaos altar before having a [[gilded altar]]. [[File:Hardcore ironman chat badge.png]] Hardcore ironmen are recommended to use this instead of the chaos altar.
+
+At level 58 [[Agility]], use the [[weathered wall]] when filling buckets of slime, then use the [[ectophial]] teleport back up, which shortens trips dramatically. Buckets of slime can also be purchased from the [[Trader Crewmember]]s inside Port Phasmatys for 2 coins each, eliminating the need to gather slime.
+
+After the completion of the [[medium Morytania Diary]] and higher, [[Robin]] will exchange bones for pots of [[bonemeal]] and buckets of slime daily.
+
+===Levels 1–99: Ensouled heads===
+{{Main|Ensouled head}}
+With [[reanimation spells]] in the [[Arceuus spellbook]], [[Ensouled head|ensouled heads]] dropped by monsters can be reanimated and killed for Prayer experience. This method is slow and unpredictable, but by saving up heads to reanimate all at once, it can be good experience.
+
+===Levels 25-99: Pest control===
+{{Main|Pest control}}
+Prayer experience is one of the available rewards from [[Pest Control]]. If using this method, it is recommended that you have a combat level of 100+ (which allows you to complete veteran games, therefore getting 5 points per game) and have completed the hard tier of the [[Combat achievements]], which gives you 3 extra points per game. In total, you'll gain 8 points per game.
+
+The experience per hour will depend on your Prayer level. Assuming your Prayer level is around 80, it is possible to reach around 40k experience per hour.
+
+===Levels 30-99: Libation bowl===
+{{Main|Libation bowl}}
+Bones can be transformed into [[blessed bone shards]] at the [[exposed altar]], then used with [[Jug of blessed wine|jugs of blessed wine]] (made by using [[Jug of wine|jugs of wine]] on the exposed altar) on the libation bowl for up to 5x base Prayer experience per bone. This is increased up to 6x when using [[Jug of blessed sunfire wine|jugs of blessed sunfire wine]] instead, but this requires using [[Sunfire splinters|sunfire shards]].
+
+==Obtaining bones==
+
+===Wilderness green dragons===
+[[File:Green dragon.png|right|215x215px]]
+Kill [[green dragon]]s in the [[Wilderness]], but beware of player killers. Use a [[looting bag]] for extra looting space and longer trips. North of the [[Graveyard of Shadows]] and east of [[Boneyard Hunter area]] are easily accessible via a [[games necklace]] teleport to [[Corporeal Beast's Lair]], or a [[ring of dueling]] teleport to [[Ferox Enclave]], which also has a bank and the [[Pool of Refreshment|pool of refreshment]] and [[Clan Wars]] free-for-all portal to restore health and Prayer. West of the [[Dark Warriors' Fortress]] is safer but can be crowded. 
+
+It is recommended to collect enough dragon bones for 70 Prayer quickly after getting high enough stats. Once the [[elite Wilderness Diary]] is completed, dragons drop noted bones in the Wilderness, greatly increasing trip length for up to 300–330 dragons per hour when using the [[dragon hunter lance]]. However, even early game with a [[dragon scimitar]], [[dragon defender]], [[antifire potion|antifire potions]], [[Protect from Magic]], and a looting bag, green dragons in the Wilderness are the fastest source of banked Prayer experience available.
+
+===Myths' Guild green dragons===
+The fastest method of banking Prayer experience for hardcore ironmen is killing green dragons in the [[Myths' Guild#Basement|Myths' Guild basement]] after completion of [[Dragon Slayer II]]. Kill the 2 green dragons then kill blue dragons while waiting for the green dragons to respawn. The hides can also be looted, though it does make for more trips.
+
+===Blue dragons===
+[[File:Blue dragon.png|left|215x215px]]
+Another way to get [[dragon bones]], that avoids the Wilderness, is to kill [[blue dragon]]s. While slower to kill, they can be killed with potentially less effort and lower requirements due to the availability of [[safespot]]s to kill them.
+
+The [[Dragon nest]] east of [[Tal Teklan]] only requires [[Children of the Sun]] to enter (though [[Twilight's Promise]] is recommended for access to the [[Quetzal Transport System]]), a close bank in Tal Teklan, and many safespots for blue or red dragons. Players with 40 agility can access a log balance shortcut for even faster banking.
+
+Other locations to safespot blue dragons include the [[Isle of Souls Dungeon|Isle of Souls dungeon]] ([[fairy rings]] recommended for travel, [[ring of dueling]] suggested for banking), the [[Taverley Dungeon]] (70 [[Agility]] recommended, [[Falador Teleport]] suggested for travel and banking), the [[Heroes' Guild mine|Heroes' guild]] basement ([[Heroes' Quest]] required, running to the [[Rogues' Den]] suggested for banking), and the [[Ogre Enclave]] ([[Watchtower]] quest required, fairy rings recommended for travel, ring of dueling suggested for banking). 
+
+[[Water spells]] or [[Iban Blast]] can be used to kill blue dragons with relatively low requirements.
+
+With water spells, [[Water Bolt]] with [[chaos gauntlets]] can offer good damage relative to the cost of the runes. Other options include [[Water Strike]], which can be used if upfront rune costs are a restrictive factor; and [[Water Blast]], which hits harder than Water Bolt (24 vs 18 without chaos gauntlets, 24 vs 22 with) but costs more to use if runes are bought from shops.
+
+For Iban Blast, [[Underground Pass]] can be completed quite easily prior to reaching level 43 Prayer for [[Protect from Melee]]. However, the [[Dark Mage]] must be paid 200,000 coins to increase the amount of charges [[Iban's staff]] can hold to 2,500. The staff can be recharged for free by returning to the [[Well (Paladin badges)|paladin's well]], however this requires re-navigating the Underground Pass (with a bow and arrow, rope, and spade) unless [[Regicide]] is completed for access to [[charter ship|chartering]] to [[Port Tyras]].
+
+With level 66 [[Crafting]], the [[Blue dragonhide|blue dragonhides]] can be [[Tanner|tanned]], crafted into [[blue d'hide vambraces]], and converted to coins by using [[High Level Alchemy]]. This generally recoups most or all of the costs of the runes if Iban Blast or Water Blast are used, and can be profitable if Water Bolt is used.
+
+Later, blue dragons can also be killed effectively with melee and ranged, starting off with weapons such as a [[leaf-bladed sword]] or [[hunters' sunlight crossbow]]. Without needing to safespot, other locations such as the [[Ruins of Tapoyauik]] and the [[Myths'_Guild#Basement|Myths' Guild basement]] may offer better rates with quicker banking/returning available due to closer teleports (with the [[pendant of ates]] and [[mythical cape]] respectively) being available.
+
+===Red dragons===
+[[File:Red dragon.png|right|215x215px]]
+An alternative way to get dragon bones is to kill [[red dragons]] in the [[Forthos Dungeon]]. Although they have higher hitpoints and are more resistant to melee and ranged attacks, these red dragons are very close to the [[Sacred Bone Burner]], meaning the player can continue to camp for longer periods of time without banking and can skip bringing their bones into the Wilderness. Note that the Sacred Bone Burner will not grant experience for the first 100 dragon bones offered unless the player has first placated [[Olbertus]] by giving him five [[Dragonstone|dragonstones]], which can be difficult to acquire early on as an Ironman.
+
+===Frost dragons===
+[[File:Frost dragon.png |left|215x215px]]
+Another alternative method of obtaining bones is to kill [[frost dragons]] in the [[Grimstone Dungeon]]. This allows the player to obtain end-game sailing supplies such as [[dragon metal sheets]] and [[dragon nails]] while also gathering the bones needed to train prayer. This method requires 87 [[Sailing]] and an [[Eternal brazier]] built in order to access the island where the frost dragons reside. Frost dragons drop [[Frost dragon bones]] and are the only source of [[superior dragon bones]] outside of Vorkath.
+
+
+
+
+
+
+===Slayer===
+Prayer experience can be gained through [[Slayer]] as well. [[Ensouled head]]s dropped by monsters can be reanimated and killed for Prayer experience. The [[dragon hunter lance]] makes [[blue dragon]] tasks worthwhile and makes unlocking [[red dragon]]s an additional unlock that may be considered. Killing [[Vorkath]] on task becomes very efficient with the dragon hunter lance and high stats, as it is very profitable and Vorkath also drops a lot of useful supplies. [[Dagannoth Kings]] may also be killed on task for noted [[dagannoth bones]] after completion of the [[elite Fremennik Diary]].
+
+Prior to completing [[Dragon Slayer II]], Slayer can be used to get 70 Prayer banked with bones and ensouled heads which will be around 80 Slayer. Blue dragons are not worthwhile to rush for blue dragon tasks as they are significantly slower to kill than [[green dragon]]s.
+
+===Bossing===
+Certain bosses drop considerable amounts of bones, which can add up passively when killing them for other reasons. Some examples include [[Zulrah]], [[Cerberus]] and [[Vorkath]] having a chance of dropping many noted [[dragon bones]], [[Alchemical Hydra]] and Vorkath dropping two guaranteed bones ([[hydra bones]] and [[superior dragon bones]] respectively) per kill, or the [[Moons of Peril]] providing [[wyrmling bones]] and [[blessed bone shards]] from their [[Lunar Chest]].
+
+The following table lists expected experience banked per kill for some bosses:
+
+{| class="wikitable sortable"
+!Boss
+!Average Loot/Kill
+!Average XP/Kill
+!Notes
+|-
+|[[Dagannoth Kings]]
+([[Dagannoth Rex|Rex]], [[Dagannoth Prime|Prime]], [[Dagannoth Supreme|Supreme]])
+|{{plink|Dagannoth bones}} x 1
+|437.5 XP ([[Gilded altar]] with burners)
+
+600 XP ([[Libation bowl]] with [[Jug of blessed sunfire wine|sunfire wines]])
+
+875 XP ([[Chaos Temple (hut)|Chaos altar]])
+|Bones are dropped as notes after completion of the [[Elite Fremennik Diary]].
+|-
+|[[Calvar'ion]]
+|{{plink|Dragon bones}} x 1.41
+|355.3 XP ([[Gilded altar]] with burners)
+
+490.7 XP ([[Libation bowl]] with [[Jug of blessed sunfire wine|sunfire wines]])
+
+710.7 XP ([[Chaos Temple (hut)|Chaos altar]])
+|Assumes Calvar'ion's guaranteed big bones drop is ignored.
+|-
+|[[Moons of Peril]] (Full Run)
+|{{plink|Sun-kissed bones}} x 5.4
+
+{{plink|Blessed bone shards}} x 67.8
+
+{{plink|Wyrmling bones}} x 9.6
+|2570.4 XP ([[Gilded altar]] with burners)
+
+3074.4 XP ([[Libation bowl]] with [[Jug of blessed sunfire wine|sunfire wines]])
+
+3276 XP ([[Chaos Temple (hut)|Chaos altar]])
+|Gilded altar and Chaos altar XP values assume the sun-kissed bones and blessed bone shards are used with sunfire wines at the libation bowl.
+
+"Kill" refers to a loot of the Lunar Chest, not an individual kill of each Moon boss.
+
+Loot is 1/6th if only one Moon is killed, 1/2 if two Moons are killed.
+|-
+|[[Zulrah]]
+|{{plink|Dragon bones}} x 0.77
+|194 XP ([[Gilded altar]] with burners)
+
+268 XP ([[Libation bowl]] with [[Jug of blessed sunfire wine|sunfire wines]])
+
+388 XP ([[Chaos Temple (hut)|Chaos altar]])
+|
+|-
+|[[Vorkath]]
+|{{plink|Superior dragon bones}} x 2
+
+{{plink|Dragon bones}} x 0.933
+
+{{plink|Vorkath's head}} x 0.02
+|1316.3 XP ([[Gilded altar]] with burners)
+
+1807.9 XP ([[Libation bowl]] with [[Jug of blessed sunfire wine|sunfire wines]])
+
+2601.4 XP ([[Chaos Temple (hut)|Chaos altar]])
+|Assumes Vorkath's head is used to cast [[Master Reanimation]].
+|-
+|[[Cerberus]]
+|{{plink|Infernal ashes}} x 1
+{{plink|Dragon bones}} x 0.78
+|526.9 XP ([[Gilded altar]] with burners)
+
+601.9 XP ([[Libation bowl]] with [[Jug of blessed sunfire wine|sunfire wines]])
+
+723.8 XP ([[Chaos Temple (hut)|Chaos altar]])
+|Requires a [[Slayer task]] of [[hellhounds]] or [[Boss#Boss_slayer|itself]] to be killed.
+
+Assumes infernal ashes are offered with [[Demonic Offering]].
+|-
+|[[Alchemical Hydra]]
+|{{plink|Hydra bones}} x 2
+{{plink|Dragon bones}} x 3.57
+|1668.4 XP ([[Gilded altar]] with burners)
+
+2356.6 XP ([[Libation bowl]] with [[Jug of blessed sunfire wine|sunfire wines]])
+
+3336.8 XP ([[Chaos Temple (hut)|Chaos altar]])
+|Requires a [[Slayer task]] of [[hydra]]s or [[Boss#Boss_slayer|itself]] from [[Konar quo Maten]] to be killed.
+|-
+|[[Doom of Mokhaiotl]] 
+(per floor)
+|[[Sun-kissed bones]] x 2.4
+|649 XP ([[Libation bowl]] with [[Jug of blessed sunfire wine|sunfire wines]])
+|
+|}
+
+==Token experience==
+Some methods, while not being particularly effective sources of Prayer experience in themselves, are useful for other purposes and can provide small amounts of Prayer experience as a byproduct.
+
+===Ruins of Camdozaal===
+After completing [[Below Ice Mountain]], the [[Ruins of Camdozaal]] are unlocked, which includes a low-intensity, non-combat (only requires Fishing and Cooking) method of training Prayer.
+Using the [[small fishing net]] (in the area, there are spawn points of a small fishing net and a [[knife]], both tools that one will need for this method) and offering all fish types with decent efficiency (tetra stop ruining at Level 61 Cooking), players can obtain experience rates per hour of 5,600 Fishing, 7,400 Cooking, and 2,400 Prayer.
+Using the [[big fishing net]] (simplest way to obtain one would be purchasing one for 20 gp from [[Harry's Fishing Shop.]] in [[Catherby]]; players can obtain a knife from the spawn point in the Camdozaal fishing area) and offering all fish types with decent efficiency (catfish stop ruining at Level 78 Cooking), one can obtain experience rates per hour of 7,000 Fishing, 9,100 Cooking, and 3,200 Prayer.
+
+===Cutting sulliusceps===
+[[Sulliuscep|Sulliusceps]], an effective method of woodcutting training that does not require tick manipulation, often drop [[unidentified fossils]] upon being cut. These fossils can be redeemed for Prayer experience after calcification at the [[Mycelium pool]] with [[calcite]] and [[pyrophosphite]], providing Prayer experience at approximately a rate of one Prayer experience for every 6 woodcutting experience. Calcite and pyrophosphite can be acquired at the [[Volcanic Mine]], amongst other fossil island activities.
+
+===Hunter's Rumours===
+[[Hunter's Rumours]], which unlock [[Quetzal feed]] to finish the [[Quetzal Transport System]], the [[perfected quetzal whistle]], the [[guild hunter outfit]], and [[Quetzin]], provide [[sun-kissed bones]] and [[blessed bone shards]], which can be redeemed at the [[libation bowl]] for Prayer experience. 
+
+===Shades of Mort'ton===
+[[Shades of Mort'ton (minigame)|Shades of Mort'ton]], which unlocks among other things [[bloodbark armour]] and [[zealot's robes]], rewards small amounts of Prayer experience when each [[Shade]] is cremated using [[pyre logs]].
+
+=== Vampyre dust and Hallowed Sepulchre ===
+After [[Sins of the Father]] is completed, collected [[vampyre dust]] from [[Feral Vampyre|Feral Vampyres]], [[Vampyre Juvenile|Vampyre Juveniles]], or [[Vyrewatch Sentinel|Vyrewatch Sentinels]] can be used in the [[Hallowed Sepulchre]] for a token amount of Prayer experience. Each dust gives 100 Prayer experience when used to open a [[Saradomin Brazier]]. With the [[Hallowed symbol]], you gain 200 Prayer experience per dust.
+
+===Stealing Valuables===
+[[Stealing valuables]] for thieving experience has a rare chance of rewarding a [[blessed bone statuette]], which can be broken down into blessed bone shards and sacrificed at the libation bowl for Prayer experience.
+
+===Calcified Rocks===
+At {{SCP|Mining|41}} and having started [[Perilous Moons]], [[Calcified rocks]] can be mined for modest AFK [[Mining]] experience and [[blessed bone shards]]. 
+
+===Rogue's Castle chests===
+At {{SCP|Thieving|84}} and having completed the [[Hard Wilderness Diary]], the [[Chest_(Rogues' Castle)|chests in the Rogue's Castle]] in the [[Wilderness]] can be stolen from, providing amongst other loot and some of the best [[Thieving]] experience in the game a 1/22 chance of getting 18 [[Vile ashes]]. If offered using [[Demonic offering]], this amounts to a ratio of roughly 1 Prayer experience for every 7.2 thieving experience gained. However, there is a high risk of dying and losing ashes to player killers, so heavy caution is advised. 
+
+{{Training guides}}
+[[Category:Ironman Mode]]
+[[Category:Prayer]]

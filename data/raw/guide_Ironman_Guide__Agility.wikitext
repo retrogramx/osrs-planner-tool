@@ -1,0 +1,105 @@
+{{Iron Guide Links}}
+[[File:Agility.png|left]][[Agility]] training on an ironman is not very different from [[Agility training|training it on a regular account]]. A variety of [[agility course]]s can be used, with the majority of them requiring little to no inventory or equipment considerations. As a skill, Agility is very useful to train for its passive [[energy]] restoration effect, which speeds up many training methods, [[quest]] completion, and travel around the world in general. Agility also provides access to the [[graceful outfit]], one of the best all-around equipment sets for almost any non-combat situation. Because Agility has very few inventory requirements to train, it is a good skill to train in tandem with other skills that use the inventory space, such as [[Magic]] or [[Fletching]].
+
+[[Ultimate Ironmen]] may find it difficult to fully take advantage of the [[Hallowed Sepulchre]], though given how important the [[Ring of endurance (uncharged)|Ring of endurance]] is to run energy management it is recommended to always loot the [[Grand Hallowed Coffin]].
+
+==Early training: Quests==
+{{Main|Quest experience rewards#Agility}}Because early Agility training courses are particularly slow, it is recommended to use [[Quest experience rewards]] to skip many of the early levels. Completing the following four quests gives enough experience to get level 32 Agility, at which point training can be started at the [[Varrock Rooftop Course]].
+{| class="wikitable sortable lighttable"
+|+
+!Quest
+!Experience reward
+!Agility requirement
+!Other requirements
+!Enemy to defeat
+!Safespottable
+|-
+|[[Recruitment Drive]]
+|1000
+| -
+|{{SCP|Quest|12}}
+|[[Sir Leye]] (level 20)
+|No, but can be [[flinching|flinched]]
+|-
+|[[The Tourist Trap]]
+|4650, Twice 
+| -
+|{{SCP|Fletching|10}}, {{SCP|Smithing|20}}
+|[[Mercenary Captain]] (level 47) 
+|Yes - By using another npc
+|-
+|[[Death on the Isle]]
+|7500
+|{{SCP|Agility|32}}
+|{{SCP|Thieving|34}}
+|
+|
+|-
+|[[The Grand Tree]] 
+|7900
+|{{SCP|Agility|25}}
+| -
+|[[Black demon (The Grand Tree)|Black Demon]] (level 172)
+|Yes
+|}
+It should be noted that [[The Tourist Trap]] gives a choice of either {{SCP|Agility}} [[Agility]], {{SCP|Fletching}} [[Fletching]], {{SCP|Smithing}} [[Smithing]], or {{SCP|Thieving}} [[Thieving]], but choosing agility is highly recommended as it is the slowest to level at this stage by far.
+
+==Levels 1–20/99: Rooftop Agility Courses==
+[[File:Seers' Village Rooftop Course (5).png|right|thumb|250px|A player training on the Seers' Village Rooftop Course.]]{{Main|Rooftop Agility Courses}}
+The primary method of training Agility is through [[Rooftop Agility Courses]], which can be started as low as level 1 Agility. These courses require no inventory space or resources to use, can be done in almost any gear, and provide [[Mark of grace|marks of grace]] for the [[graceful outfit]] and [[amylase crystal]]s.
+
+The [[Seers' Village Rooftop Course]], [[Pollnivneach Rooftop Course]], and [[Rellekka Rooftop Course|Rellekka Rooftop Courses]] all receive a boost in experience and Marks of grace from their respective hard tier of [[Achievement Diary|Achievement Diaries]]. 
+
+Because of the lack of inventory requirements, Agility is an excellent skill to train in conjunction with other skills that require significant inventory space. [[Magic]] training with [[High Alchemy]] can be done with just a few inventory spaces, and alching between course obstacles does not negatively impact the Agility experience rates. The same can be done with [[Fletching]] by adding [[feather]]s to [[dart tips]] in between obstacles.
+
+==Levels 20-60: Brimhaven Agility Arena==
+{{Main|Brimhaven Agility Arena}}
+From level 20-60, the Brimhaven Agility Arena is the best source of Agility XP at about 50,000–60,000 XP/hr. Entry to the arena requires 200 coins and can be done in almost any gear.
+
+Every minute a new dispenser will be marked. Tagging this dispenser will return some Agility XP, 1 [[Agility arena ticket]], and 1 [[Brimhaven voucher]] each time. Players are assumed to be using the Agility arena tickets to purchase Agility XP for this method.
+
+Additionally, by purchasing [[Amylase pack|Amylase Packs]] from [[Pirate Jackie the Fruit]] with 60 [[Brimhaven voucher|Brimhaven vouchers]] and selling them at [[Grace's Graceful Clothing]], players can supplement the fact that marks of grace do not spawn during the Agility Arena. The rate of [[Mark of grace|marks of grace]] will still be less than that of any rooftop course at 8/hr, but the vastly increased XP rates will balance this out.
+
+Players who have completed the elite tasks in the [[Karamja Diary]] will have a 10% chance to receive two tickets and vouchers upon tagging a ticket dispenser. Players wearing [[Karamja gloves 2]], [[Karamja gloves 3|3]] or [[Karamja gloves 4|4]] will receive an additional 10% experience, giving 379.5 Agility experience per ticket
+
+==Levels 72–99: Hallowed Sepulchre==
+{{main|Hallowed Sepulchre}}
+The [[Hallowed Sepulchre]] offers the fastest experience from level 72 onwards. This method is more difficult compared to other training methods, and it requires good concentration and timing. Even though the activity becomes available at level 52, players are advised to use other methods up to level 72, as they are much easier and players are likely to get faster experience using those methods.
+
+Players must have completed [[Sins of the Father]] to access this course.
+
+With good performance, players can gain up to around 71,700 experience per hour at level 72, increasing to around 81,000 experience per hour at level 82 and 85,000 experience per hour at level 92. Below level 72, players can gain up to 39,000 experience per hour at level 52 and 52,000 experience per hour at level 62.
+
+====Sourcing materials to loot [[Hallowed coffin]]s====
+[[Vampyre dust]] to sacrifice on the [[Saradomin Brazier]]s can be collected quickly by killing [[Feral Vampyre]]s, either west of [[Burgh de Rott]] (quickly accessible via [[Morytania legs 3]] [[Morytania legs 4|or 4]]), or in the [[Haunted Woods]] (quickly accessible via [[Ectophial]] or fairy ring code {{Fairycode|ALQ}}). [[Vyrewatch sentinel]]s in [[Darkmeyer]] (quickly accesible via [[Drakan's medallion]]) can also be killed for slower rates of dust, but potentially better loot.
+
+[[Plank]]s and [[steel nails]] for repairing [[Bridge_(Hallowed_Sepulchre)|broken bridges]] can be obtained from any [[sawmill]], with faster rates of [[logs|normal log]] acquisition possible with any [[Kandarin headgear 1|Kandarin headgear]].
+
+[[Cosmic rune]]s for enchanting [[portal frame]]s can be purchased from [[Ali's Discount Wares.|Ali's Discount Wares]], [[Amlodd's Magical Supplies]], or [[Lundail's Arena-side Rune Shop.|Lundail's Arena-side Rune Shop]].
+
+==Other==
+
+=== Levels 30+: Agility Pyramid ===
+[[File:Agility Pyramid (7).png|thumb|width=200x200|A player training on the Agility Pyramid.]]
+At a relatively low level, players can access the [[Agility Pyramid]] as a reliable source of early income. Before reaching higher levels the failure rate may slow progress, but each completion of the pyramid awards a [[Pyramid top]] worth {{NoCoins|10000}} [[coins]] when traded to [[Simon Templeton]]. Roughly 13 completions can be made per hour at early levels (30-50), for {{NoCoins|130000}} coins/hour and 25,000 experience per hour. Upwards of 26 completions per hour can be made at higher levels (70-99), for {{NoCoins|260000}} coins/hour and 44,000 experience per hour.
+
+=== Levels 50-75: Colossal Wyrm Agility Course ===
+[[File:Colossal Wyrm Agility Course (2).png|thumb|width=200x200|A player navigating the Colossal Wyrm Agility Course.]]
+The [[Colossal Wyrm Agility Course]] offers a far less click-intensive way to train Agility at level 50. The course notably contains longer obstacles that cannot be failed and gives passive prayer experience in the form of [[blessed bone shards]]. The basic course unlocked at level 50 can give upwards of 31,181 experience per hour, while the advanced course unlocked at level 62 can give upwards of 42,834 experience per hour. 
+
+Upwards of 340 blessed bone shards can be earned per hour which translate to an additional 1,700-2,040 Prayer experience per hour when offered to the [[libation bowl]] at [[the Teomat]].
+
+===Levels 75–99: Prifddinas Agility Course ===
+[[File:Prifddinas Agility Course (2).png|right|thumb|250px|A player training on the Prifddinas Agility Course.]]
+The [[Prifddinas Agility Course]] offers a less click-intensive training option from level 75 onwards. Players must have completed [[Song of the Elves]] to access this course. Instead of marks of grace, players can find [[crystal shard]]s by using portals that randomly appear around the course, which act as shortcuts. These portal shortcuts are unique to each player, and grant the player a crystal shard.
+
+Players can gain up to around 59,000 experience per hour at level 75, increasing to around 66,000 experience per hour from level 90 onwards. Players can also expect to find roughly 45 crystal shards per hour. This course can also be combined with lunar spells like plank make or spin flax.
+
+===Passive training: Barbarian Fishing===
+{{Main|Barbarian Training#Barbarian Fishing}}
+Training [[Fishing]] with [[Barbarian Training#Barbarian Fishing|Barbarian Fishing]] gives small amounts of passive Agility and [[Strength]] experience. For every 100,000 Fishing experience gained through Barbarian Fishing, the player should expect about 9,000 Agility experience as well. This means that if the player trains Fishing to level 99 exclusively through Barbarian Fishing, they would get to at least 74 Agility.
+
+''For more information, see [[Ironman Guide/Fishing]].''
+{{Training guides}}
+{{Agility}}
+[[Category:Ironman Mode]]

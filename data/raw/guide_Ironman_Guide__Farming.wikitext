@@ -1,0 +1,310 @@
+{{Iron Guide Links}}
+{{Cleanup}}
+
+[[Farming]] is a skill trained primarily through [[Farming runs]]. The major difference for ironmen compared to normal [[Farming training]] is the difficulty in getting seeds, particularly for those early on in their journey.
+
+==Early training: Quests==
+{{Main|Quest experience rewards#Farming}}
+
+Early levels can be skipped by completing quests that give Farming experience. Completing the following grants a total of 27,500 Farming experience, which will get the player up to level 37. This skips the tedious low-level Farming and seed collecting.
+
+* [[Recipe for Disaster/Freeing the Goblin generals|Goblin generals subquest]] of [[Recipe for Disaster]] requires {{SCP|Cooking|10}}, rewards 1,000 Farming experience
+* [[Fairytale I - Growing Pains]] requires [[Lost City]], [[Nature Spirit]], rewards 3,500 Farming experience
+* [[Forgettable Tale...]] requires [[The Giant Dwarf]], [[Fishing Contest]], {{SCP|Cooking|22}}, {{SCP|Farming|17}}, rewards 5,000 Farming experience
+* [[The Garden of Death]] requires {{SCP|Farming|20}}, rewards 10,000 Farming experience
+* [[Garden of Tranquillity]] requires [[Creature of Fenkenstrain]], {{SCP|Farming|25}}, rewards 5,000 Farming experience
+* [[Enlightened Journey]] requires {{SCP|Quest|20}}, {{SCP|Firemaking|20}}, {{SCP|Farming|30}}, {{SCP|Crafting|36}}, rewards 3,000 Farming experience
+
+
+Completing Fairytale I and the Goblin generals subquest gives enough experience to reach level 20 Farming, and Garden of Death gives enough experience to get from level 20 to level 30 Farming. This allows the player to start doing [[Willow tree farming|Willow Tree]] runs very early.
+
+==Fastest experience==
+===Efficient tree runs===
+{{Main|Farming_runs#Tree run}}
+
+If not paying farmers to look after each tree, always use [[ultracompost]] on the patch in order to minimise the risk of disease. It is usually not efficient spending time to gather payments for Farming, since the chance of a tree dying is very low through the use of the [[Resurrect Crops]] spell (along with using ultracompost) on the [[Arceuus spellbook]].
+
+{| class="wikitable"
+|+Quickest teleports to normal tree patches
+!Location
+! colspan="5" |Teleport (best → worst)
+|-
+|'''[[Lumbridge]]'''
+|[[Lumbridge Teleport]]/[[Lumbridge Home Teleport]]/[[Respawn Teleport]]/[[Ring of returning]]
+|[[Achievement diary cape]] to [[Hatius Cosaintus]]
+|[[Draynor Village]] via [[Amulet of glory]]
+|[[Gnome glider]] to [[Kar-Hewo]]
+|{{NA}}
+|-
+|'''[[Varrock]]'''
+|[[Varrock Teleport]] (Town Square)/[[Achievement diary cape]] to [[Toby]]
+|[[Minigame teleport]] ([[Rat Pits]])
+|[[Champions' Guild]] via [[combat bracelet]]/[[Chronicle]]
+|[[Grand Exchange]] via [[spirit tree]]/[[gnome glider]] to [[Lemanto Andra]]/[[Digsite pendant]] to [[Digsite]]
+|[[Fairy rings|Fairy ring]] {{Fairycode|DKR}}
+|-
+|'''[[Falador]]'''
+|[[Ring of wealth|Falador Park Teleport via Ring of wealth]]
+|[[Falador Teleport]]
+|[[Respawn Teleport]]/[[ring of returning]]/[[Achievement diary cape]] to [[Sir Rebral]]
+|[[Crafting Guild]] via [[skills necklace]]/[[Crafting Cape]]
+|[[Explorer's Ring 2]]+
+|-
+|'''[[Taverley]]'''
+|[[Portal_(Player-owned_house)#Taverley|Taverley House Portal]]
+|[[Falador Teleport]]
+|[[Ring of wealth|Falador Park Teleport via Ring of wealth]]/[[Respawn Teleport]]/[[ring of returning]]/[[Achievement diary cape]] to [[Sir Rebral]]
+|[[Burthorpe]] via [[games necklace]]/[[Minigame Teleport]] ([[Burthorpe Games Room]])
+|[[Mind Altar Teleport]]/[[Lassar Teleport]]
+|-
+|'''[[Gnome Stronghold]]'''
+|[[Slayer ring]] to [[Stronghold Slayer Cave]]
+|[[spirit tree]]
+|[[Royal Seed Pod]]
+|[[Necklace of passage]] to [[The Outpost]]
+|{{NA}}
+|-
+|'''[[Farming Guild]]'''
+|[[Farming cape]]
+|[[Skills necklace#Teleportation options|Skills necklace]]
+|[[spirit tree#Farming|Farming Guild via Spirit tree]]
+|[[Fairy rings|Fairy ring]] {{Fairycode|CIR}}
+|[[Battlefront Teleport|Battlefront teleport]]
+|-
+|'''[[Auburnvale]]'''
+|[[Pendant of ates|Pendant of Ates]]
+|[[Quetzal Transport System|Auburnvale via Quetzal Transport]]
+|[[Fairy rings|Fairy ring]] {{Fairycode|AIS}}
+|[[Quetzal Transport System|Quetzacalli Gorge via Quetzal Transport]]
+|{{NA}}
+|}
+
+===Efficient herb runs===
+{{Main|Farming_runs#Herb run}}
+In addition to farming trees, a significant amount of Farming experience is obtained from doing herb runs over time. Additionally, farmed herbs are critical for [[Ironman Guide/Herblore|Herblore training]].
+
+For herb runs, get to every patch as quickly as possible, clean herbs and note them on the [[Tool Leprechaun]]. Try to have an anima seed planted in the [[Farming Guild]] for increased herb yield, you'll sustain them by killing [[Hespori]]. You can do limpwurt/snape grass alongside herb runs if you need them. Use [[magic secateurs]] for increased yield. Plant more valuable seeds in the disease-free patches. Only use the Farming Guild patch if your herbs will be done before your next contract.
+
+Teleports from the [[player-owned house]] to herb patches are recommended, especially to [[Weiss]] and [[Troll Stronghold (location)|Troll Stronghold]], to save time and resources having to make the teleports.
+
+With access to [[anima seed]]s, it is recommended to prioritise using [[iasor seed]]s first to decrease crops chance to die, following by [[attas seed]]s to maximise yield, and without either of those, optionally use [[kronos seed]]s to skip growth cycles.
+
+{| class="wikitable"
+|+Quickest teleports to herb patches
+!Location
+! colspan="5" |Teleport (best → worst)
+|-
+|'''Ardougne'''
+|[[Ardougne cloak|Ardougne cloak (2 or higher)]]
+|Fishing guild ([[Fishing Guild Teleport|Teleport]]/[[Skills necklace#Teleportation options|skills necklace]]/[[Fishing cape|Fishing Cape]])
+|[[Ardougne Teleport|Ardougne teleport]]
+|[[Fairy rings|Fairy ring]] {{Fairycode|BLR}}
+|[[Quest point cape]]
+|-
+|'''Catherby'''
+|[[Catherby Teleport|Catherby teleport]]
+|[[Camelot Teleport|Camelot teleport]]
+|[[Taverley]] [[Portal (Player-owned house)|house portal]] via [[White Wolf Tunnel]]
+|{{NA}}
+|{{NA}}
+|-
+|'''Falador'''
+|[[Explorer's ring|Explorer's ring (2 or higher)]]
+|[[Spirit tree#Farming|Port Sarim via spirit tree]]
+|[[Falador Teleport|Falador Teleport]]
+|[[Ring of wealth|Falador Park Teleport via ring of wealth]]
+|[[amulet of glory#Teleportation options|amulet of glory - Draynor Village]]
+|-
+|'''Harmony'''
+|[[Harmony Island Teleport|Harmony Island teleport]] with [[Spellbook Swap]]
+|[[Harmony Island]] [[Harmony Island Portal|portal in the POH]]
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|-
+|'''Kourend/Hosidius'''
+|[[Xeric's talisman#Teleportation options|Xeric's Talisman - Xeric's Glade]]
+|[[Great Kourend|Kourend]]/[[Hosidius]] [[Portal (Player-owned house)|house portal]]
+|[[Tithe Farm]] [[minigame teleport]]
+|[[Kharedst's memoirs#Teleportation|Kharedst's memoirs - Lunch by the Lancalliums]]
+|[[Fairy rings|Fairy ring]] {{Fairycode|AKR}}
+|-
+|'''Morytania'''
+|[[Fairy rings|Fairy ring]] {{Fairycode|ALQ}}
+|[[Ectophial]]
+|[[Fenkenstrain's Castle Teleport|Fenkenstrain's Castle teleport]]
+|[[Kharyrll Teleport]]
+|{{NA}}
+|-
+|'''Weiss'''
+|[[Weiss]] [[Portal Chamber|house portal]]
+|[[Icy basalt]]
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|-
+|'''Farming Guild'''
+|[[Farming cape]]
+|[[Skills necklace#Teleportation options|Skills necklace]]
+|[[spirit tree#Farming|Farming Guild via Spirit tree]]
+|[[Fairy rings|Fairy ring]] {{Fairycode|CIR}}
+|[[Battlefront Teleport|Battlefront teleport]]
+|-
+|'''Troll Stronghold'''
+|[[Troll Stronghold (location)|Troll Stronghold]] [[Portal Chamber|house portal]]
+|[[Trollheim Teleport|Trollheim teleport]]
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|-
+|'''Civitas illa Fortis'''
+|[[Quetzal Transport System|Hunter Guild via Quetzal Whistle]]
+|[[Civitas illa Fortis Teleport|Civitas illa Fortis Teleport]]
+|[[Fairy rings|Fairy ring]] {{Fairycode|AJP}}
+|{{NA}}
+|{{NA}}
+|}
+
+[[Tool leprechaun]]s will note all farmed products by using the unnoted items on them. This includes farmable products that were acquired from other sources.
+
+==Other methods==
+===Tithe Farm===
+{{Main|Tithe Farm}}
+It is recommended to do [[Tithe Farm]] at level 34 to get the auto-weed perk, [[seed box]], and [[herb sack]]. The [[farmer's outfit]] can also be unlocked here, which can be useful during the process of getting level 99, however it should not be prioritised. Doing the minigame is a fast way to reach 65 farming to unlock medium contracts in the [[Farming Guild]], as the high chance of crop death and lack of seeds can make farming training difficult at a lower level. The rewards are also useful for various skilling methods, such as pickpocketing [[master farmer]]s and training [[Slayer]].
+
+===Giant seaweed===
+Farming [[giant seaweed]] requires {{SCP|Farming|23|link=yes}} and [[seaweed spore]]s. They are planted at the seaweed patch in the [[underwater]] area of [[Fossil Island]] and provide [[giant seaweed]] when harvested.
+
+Magic secateurs or Farming cape do not affect yield, however compost will. It is highly recommended to use [[numulite]] as payment to protect seaweed patches and use [[ultracompost]] on them. This is the best way to get seaweed to use with your buckets of sand for training Crafting.
+[[File:Lobstrosity.png|left|thumb|Lobstrosities drop large quantities of seaweed spores.]]
+Large quantities of seaweed spores can be obtained by killing [[lobstrosities]] in the underwater area of Fossil Island for about 120 seaweed spores per hour. They can only be damaged by a [[brine sabre]], a [[trident of the seas]], [[magic secateurs]], or by using [[Magic]]. They can be easily safespotted from inside an air bubble.
+
+Once you have a small stock of spores, collect seaweed spores on the seafloor that spawn next to the farming patches to sustain your supply almost indefinitely. This can provide anywhere from 10–50 spores per hour.
+
+If players plan on doing [[drift net fishing]], another method for collecting spores is to do [[Underwater Agility and Thieving]] for a [[Merfolk trident]], gathering seaweed spores as they spawn. Collecting seaweed spores while grinding for the Merfolk trident should give the player enough spores to last for the duration of their account.
+
+Completing [[Fossil Island Wyvern]] tasks for their seaweed spores is also recommended. 
+
+==Obtaining seeds==
+===All seeds: Farming contracts===
+{{Main|Farming contracts}}Farming contracts from Guildmaster Jane are the most efficient way to get herb and tree seeds (from level 65, boostable) alongside Slayer. To maximize your seed packs and Farming experience, aim to complete as many contracts per day as possible using the following strategies:
+
+* '''Preplant smartly:''' Plant commonly assigned crops across multiple tiers (like Maple trees) in the Farming Guild, but '''do not''' check their health or harvest them until assigned. This allows you to instantly chain multiple contract completions.
+* '''Optimize tiers & downgrades:''' Always start with the highest contract tier available. Downgrade the contract if it isn't preplanted and takes longer than a bush patch (2 hours, 40 minutes) to grow, unless you will be offline anyway during the growth time.
+* '''Don't skip fast tasks:''' A common mistake at level 85+ is skipping unplanted fast contracts (like bushes or herbs) while fishing for a preplanted task. Doing this can force you into lower-tier rewards or unskippable 16-hour fruit tree contracts.
+* '''Maintain seed stock:''' Keep at least 3–4 seeds of each commonly assigned crop in your bank so you never have to skip an easy contract due to a lack of materials.
+
+{| class="wikitable"
+|+For hard contracts, preplant:
+!Type
+! colspan="3" |Plant name
+|-
+|'''Herb'''
+|Cadantine
+|Lantadyme
+|Snapdragon
+|-
+|'''Tree'''
+|Maple tree
+|Yew tree
+|
+|-
+|'''Fruit tree'''
+|Palm tree
+|
+|
+|-
+|'''Bush'''
+|Poison ivy
+|Whiteberries
+|
+|-
+|'''Cactus'''
+|Potato cactus
+|
+|
+|-
+|'''Flower'''
+|White lily
+|
+|
+|-
+|'''Allotment #1'''
+|Watermelon
+|
+|
+|-
+|'''Allotment #2'''
+|Snape grass
+|
+|
+|}
+{| class="wikitable"
+|+For medium contracts, preplant:
+!Type
+! colspan="2" |Plant name
+|-
+|'''Herb'''
+|Irit
+|
+|-
+|'''Tree'''
+|Maple tree
+|
+|-
+|'''Fruit tree'''
+|
+|
+|-
+|'''Bush'''
+|Whiteberries
+|Jangerberries
+|-
+|'''Cactus'''
+|Cactus
+|
+|-
+|'''Flower'''
+|White lily
+|
+|-
+|'''Allotment #1'''
+|Watermelon
+|
+|-
+|'''Allotment #2'''
+|Strawberries
+|
+|}
+
+===Birds nests===
+{{Main|Birdhouse trapping}}
+
+Birdhouse trapping on [[Fossil Island]] is a good source of [[tree seeds]] and [[fruit tree seeds]]. Birdhouses have a chance to drop a [[bird nest]], dependent on tier, which may contain seeds. Since they can be harvested every 50 minutes, the number of nests and seeds players harvest ends up being significant.
+
+It's worth building the highest tier birdhouse possible, since the tier determines the number of nests harvested. The chance of receiving a seed nest however is not affected by birdhouse tier, only hunter level. <sup>[[Bird house trapping#Seed nest|[1]]]</sup>
+
+===Slayer and bossing===
+At lower levels, player can obtain seeds from different monsters while they are training [[Slayer]] or if in need, also off task. At middle and higher levels, players can obtain seeds consistently while they are on [[nechryael]] or [[dagannoth]] tasks. Nechryael in the [[Slayer Tower]] are an especially good task for herb seeds, as well as Prayer experience and coins.
+
+Players can also get tree seeds from various bosses and demi-bosses, such as [[Zulrah]], [[lizardman shaman]]s, [[demonic gorilla]]s, [[Kalphite Queen]], [[Callisto]], and [[Venenatis]].
+
+===Pickpocketing Master Farmers===
+Players can start pickpocketing [[Master Farmer]]s at 38 Thieving to receive a variety of seeds.
+
+[[Ironmen]] looking for herb seeds can expect up to 60 high level seeds ([[ranarr seeds]] or higher) per hour at maximum efficiency: 94 Thieving and the hard [[Ardougne Diary]] completed, where players stop failing pickpocketing [[Master Farmer]]s, or level 99 Thieving with the skillcape equipped.
+
+===Wintertodt===
+Ironmen can obtain a variety of seeds from the [[Wintertodt]] [[Reward Cart]]. The player’s related skill levels determine the rewards. A high Farming level increases the chance of getting higher level seeds, however they are still possible to obtain at 1 Farming.
+
+==Obtaining compost==
+[[Ultracompost]] can be made by buying [[pineapples]] from [[charter ship]]s or harvesting [[watermelon]]s, putting them into a [[compost bin]] and using 25 [[volcanic ash]]es (or 50 on the [[Big Compost Bin|big compost bin]] in the [[Farming Guild]]) on a full compost bin containing [[supercompost]]. Alternatively, with 22 [[Herblore]] one can make [[compost potion]] which will turn a regular compost bin into supercompost, and then use [[volcanic ash]]es for Ultracompost.
+
+The [[Moons of Peril]] reward chest is an excellent source of supercompost which can also be converted using [[volcanic ash]]es for Ultracompost.
+
+If using the [[Fertile Soil]] spell it is recommended that you unlock the enhanced version by obtaining the [[ash covered tome]] from the [[Volcanic Mine|volcanic mine]] [[Petrified Pete's Ore Shop|reward store]], as this negates the need to spend time making ultracompost.
+
+{{Training guides}}
+[[Category:Ironman Mode]]
+[[Category:Farming]]
+[[Category:Members]]

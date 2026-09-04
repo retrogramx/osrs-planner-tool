@@ -1,0 +1,8 @@
+{{Iron Guide Links}}
+[[File:Defence.png|left]]
+[[Defence]] is most often trained through combat. For more information about combat training on an Ironman, see:
+*[[Ironman Guide/Melee]]
+*[[Ironman Guide/Ranged]]
+*[[Ironman Guide/Magic]]
+
+{{Training guides}}

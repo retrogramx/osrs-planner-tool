@@ -1,0 +1,4210 @@
+This page contains a list of all [[Achievement Diary|Achievements]] found in ''[[Old School RuneScape]]''. For more details on a specific achievement, click the achievement's difficulty to be taken directly to its location in its respective diary.
+
+If any achievements or requirements are missing, please add them in or report them on the [[Talk:Achievement Diary/All achievements|Talk page]].
+
+==Minimum skill requirements==
+{{Sync}}
+Highest level requirements in each skill:
+{|class="mw-collapsible mw-collapsed" data-ve-attributes="{" style="text-align:left;" " :text-align:left; }
+!
+|-
+|
+{{User stats|
+|Altcaption=Levels required<br/>for all achievements
+|margin=no
+|extra-css=width:inherit;
+|Attack=50
+|Hitpoints=70
+|Mining=85
+|Strength=76
+|Agility=90
+|Smithing=91
+|Defence=70
+|Herblore=90
+|Fishing=96
+|Ranged=70
+|Thieving=91
+|Cooking=95
+|Prayer=85
+|Crafting=85
+|Firemaking=85
+|Magic=96
+|Fletching=95
+|Woodcutting=90
+|Runecraft=91
+|Slayer=95
+|Farming=91
+|Construction=78
+|Hunter=70
+|Quest={{Globals|quest points}} <!-- The Quest Point Cape is required for the Lumbridge & Draynor Elite diary. -->
+|Combat=100<ref group="a" name="combat">Note that the above combat stats will not reach a combat level of 100.</ref>}}
+|}
+
+Minimum level required to [[temporary boost|temporarily boost]] for all achievements:
+
+{|class="mw-collapsible mw-collapsed" data-ve-attributes="{" style="text-align:left;" " :text-align:left; }
+!
+|-
+|
+{{User stats|
+|Altcaption=Minimum levels to boost<br/>for all achievements
+|margin=no
+|extra-css=width:inherit;
+|Attack=50
+|Hitpoints=70
+|Mining=80
+|Strength=70
+|Agility=85
+|Smithing=86
+|Defence=70
+|Herblore=85
+|Fishing=90
+|Ranged=70
+|Thieving=91
+|Cooking=89
+|Prayer=85
+|Crafting=80
+|Firemaking=80
+|Magic=84
+|Fletching=90
+|Woodcutting=85
+|Runecraft=86
+|Slayer=93
+|Farming=86
+|Construction=70
+|Hunter=70
+|Quest={{Globals|quest points}}
+|Combat=100<ref group="a" name="combat"></ref>}}
+|}
+<references group="a"/>
+
+==Achievements by skill requirement==
+{{Sync}}
+===Agility===
+{|class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!style="width:56px" data-sort-type="number"|Level
+!style="width:96px"|Other skills
+!style="width:144px"|Quests needed
+!Diary
+!Difficulty
+!Task
+|-
+|{{SCP|Agility|5|sort=yes}}
+|
+|None
+|[[Falador Diary|Falador]]
+|data-sort-value=1|[[Falador Diary#Easy|Easy]]
+|Climb over the western [[Falador]] wall
+|-
+|{{SCP|Agility|8-53|sort=yes}}
+|{{SCP|Strength|19-38}}
+{{SCP|Ranged|19-42}}
+|
+|Various
+|Various
+|''Multiple'' ([[#Crossbow shortcuts|crossbow shortcut achievements]])
+|-
+|{{SCP|Agility|10|sort=yes}}
+|
+|
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=1|[[Lumbridge & Draynor Diary#Easy|Easy]]
+|Complete a lap of the [[Draynor Village Rooftop Course]]
+|-
+|{{SCP|Agility|10|sort=yes}}
+|
+|
+|[[Karamja Diary|Karamja]]
+|data-sort-value=1|[[Karamja Diary#Easy|Easy]]
+|Use the rope swing to travel to the [[Moss Giant Island]] north-west of [[Karamja]]
+|-
+|{{SCP|Agility|12|sort=yes}}
+|
+|
+|[[Karamja Diary|Karamja]]
+|data-sort-value=2|[[Karamja Diary#Medium|Medium]]
+|Cross the lava using the stepping stones within [[Brimhaven Dungeon]]
+|-
+|{{SCP|Agility|13|sort=yes}}
+|
+|
+|[[Varrock Diary|Varrock]]
+|data-sort-value=1|[[Varrock Diary#Easy|Easy]]
+|Jump over the fence south of [[Varrock]]
+|-
+|{{SCP|Agility|15|sort=yes}}
+|
+|
+|[[Karamja Diary|Karamja]]
+|data-sort-value=1|[[Karamja Diary#Easy|Easy]]
+|Explore [[Cairn Island]] to the west of [[Karamja]]
+|-
+|{{SCP|Agility|15|sort=yes}}
+|
+|
+|[[Wilderness Diary|Wilderness]]
+|data-sort-value=1|[[Wilderness Diary#Easy|Easy]]
+|Kill an [[Earth warrior]] in the [[Edgeville Dungeon|Wilderness beneath Edgeville]]
+|-
+|{{SCP|Agility|20|sort=yes}}
+|
+|
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=1|[[Kandarin Diary#Easy|Easy]]
+|Cross the [[Coal Trucks]] log balance
+|-
+|{{SCP|Agility|20|sort=yes}}
+|
+|
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=2|[[Lumbridge & Draynor Diary#Medium|Medium]]
+|Complete a lap of the [[Al Kharid Rooftop Course]]
+|-
+|{{SCP|Agility|30|sort=yes}}
+|
+|
+|[[Desert Diary|Desert]]
+|data-sort-value=2|[[Desert Diary#Medium|Medium]]
+|Climb to the summit of the [[Agility Pyramid]]
+|-
+|{{SCP|Agility|30|sort=yes}}
+|
+|
+|[[Varrock Diary|Varrock]]
+|data-sort-value=2|[[Varrock Diary#Medium|Medium]]
+|Complete a lap of the [[Varrock Rooftop Course]]
+|-
+|{{SCP|Agility|35|sort=yes}}
+|
+|[[Alfred Grimhand's Barcrawl]]
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=2|[[Kandarin Diary#Medium|Medium]]
+|Complete a lap of the [[Barbarian Outpost|Barbarian Agility Course]]
+|-
+|{{SCP|Agility|37|sort=yes}}
+|
+|
+|[[Western Provinces Diary|Western Provinces]]
+|data-sort-value=2|[[Western Provinces Diary#Medium|Medium]]
+|Take the [[Agility shortcut]] from the [[Grand Tree]] to [[Otto's Grotto]]
+|-
+|{{SCP|Agility|40|sort=yes}}
+|
+|
+|[[Morytania Diary|Morytania]]
+|data-sort-value=2|[[Morytania Diary#Medium|Medium]]
+|Complete a lap of the [[Canifis Rooftop Course|Canifis Rooftop Agility Course]]
+|-
+|{{SCP|Agility|42|sort=yes}}
+|
+|
+|[[Falador Diary|Falador]]
+|data-sort-value=2|[[Falador Diary#Medium|Medium]]
+|Squeeze through the crevice in the [[Dwarven Mines]]
+|-
+|{{SCP|Agility|45|sort=yes}}
+|{{SCP|Fishing|70}} {{SCP|Strength|45}}
+|[[Barbarian Fishing|Barbarian Training - Fishing]]
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=3|[[Kandarin Diary#Hard|Hard]]
+|Catch a [[Leaping sturgeon]]
+|-
+|{{SCP|Agility|46|sort=yes}}
+|
+|[[Lost City]]
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=3|[[Lumbridge & Draynor Diary#Hard|Hard]]
+|Squeeze past the jutting wall on your way to the [[Cosmic Altar]]
+|-
+|{{SCP|Agility|48|sort=yes}}
+|
+|[[Monkey Madness I]]
+|[[Western Provinces Diary|Western Provinces]]
+|data-sort-value=3|[[Western Provinces Diary#Hard|Hard]]
+|Complete a lap of the [[Ape Atoll Agility Course]]
+|-
+|{{SCP|Agility|49|sort=yes}}
+|
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|data-sort-value=2|[[Kourend & Kebos Diary#Medium|Medium]]
+|Use the boulder leap [[shortcut]] in the [[dense essence mine]].
+|-
+|{{SCP|Agility|50|sort=yes}}
+|
+|
+|[[Falador Diary|Falador]]
+|data-sort-value=3|[[Falador Diary#Hard|Hard]]
+|Complete a lap of the [[Falador Rooftop Course|Falador Rooftop Agility Course]]
+|-
+|{{SCP|Agility|50|sort=yes}}
+|{{SCP|Woodcutting|15}} {{SCP|Thieving|50}} {{SCP|Strength|50}} {{SCP|Mining|52}}
+|(Started) [[Legends' Quest]]
+|[[Karamja Diary|Karamja]]
+|data-sort-value=3|[[Karamja Diary#Hard|Hard]]
+|Kill a [[Deathwing]] in the [[Shaman Caves|dungeon]] under the [[Kharazi Jungle]]
+|-
+|{{SCP|Agility|50|sort=yes}}
+|{{SCP|Ranged|70}}
+|[[Roving Elves]]
+|[[Western Provinces Diary|Western Provinces]]
+|data-sort-value=3|[[Western Provinces Diary#Hard|Hard]]
+|Kill an [[Elf]] with a [[Crystal bow]]
+|-
+|{{SCP|Agility|51|sort=yes}}
+|
+|
+|[[Varrock Diary|Varrock]]
+|data-sort-value=3|[[Varrock Diary#Hard|Hard]]
+|Squeeze through the obstacle pipe in [[Edgeville Dungeon]]
+|-
+|{{SCP|Agility|52|sort=yes}}
+|
+|
+|[[Wilderness Diary|Wilderness]]
+|data-sort-value=2|[[Wilderness Diary#Medium|Medium]]
+|Complete a lap of the [[Wilderness Agility Course]]
+|-
+|{{SCP|Agility|60|sort=yes}}
+|
+|
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=3|[[Kandarin Diary#Hard|Hard]]
+|Complete a lap of the [[Seers' Village Rooftop Course]]
+|-
+|{{SCP|Agility|60|sort=yes}}
+|{{SCP|Herblore|86}}
+|[[Barbarian Herblore|Barbarian Training - Herblore]]
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=4|[[Kandarin Diary#Elite|Elite]]
+|Mix a [[Stamina mix]] on top of the [[Seers' Village]] bank
+|-
+|{{SCP|Agility|60|sort=yes}}
+|(OR {{SCP|Strength|60}})
+|
+|[[Wilderness Diary|Wilderness]]
+|data-sort-value=2|[[Wilderness Diary#Medium|Medium]]
+|Enter the [[Wilderness God Wars Dungeon]]
+|-
+|{{SCP|Agility|60|sort=yes}}
+|(OR {{SCP|Strength|60}})
+{{SCP|Slayer|83}}
+|
+|[[Wilderness Diary|Wilderness]]
+|data-sort-value=4|[[Wilderness Diary#Elite|Elite]]
+|Slay a [[Spiritual mage]] within the [[Wilderness God Wars Dungeon]]
+|-
+|{{SCP|Agility|64|sort=yes}}
+|
+|
+|[[Wilderness Diary|Wilderness]]
+|data-sort-value=3|[[Wilderness Diary#Hard|Hard]]
+|Take the [[Agility shortcut]] from [[Trollheim]] into the [[Wilderness]]
+|-
+|{{SCP|Agility|65|sort=yes}}
+|
+|
+|[[Morytania Diary|Morytania]]
+|data-sort-value=3|[[Morytania Diary#Hard|Hard]]
+|Use the [[shortcut]] to get to the bridge over the [[River Salve|Salve]]
+|-
+|{{SCP|Agility|70|sort=yes}}
+|{{SCP|Strength|70}} {{SCP|Ranged|70}}
+|[[Death to the Dorgeshuun]]
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=4|[[Lumbridge & Draynor Diary#Elite|Elite]]
+|Grapple across a pylon on the [[Dorgesh-Kaan Agility Course]]
+|-
+|{{SCP|Agility|70|sort=yes}}
+|{{SCP|Hitpoints|70}} {{SCP|Strength|70}} {{SCP|Ranged|70}}
+|[[Troll Stronghold]]
+|[[Fremennik Diary|Fremennik]]
+|data-sort-value=4|[[Fremennik Diary#Elite|Elite]]
+|Kill the generals of [[Armadyl]], [[Bandos]], [[Saradomin]], and [[Zamorak]] in the [[God Wars Dungeon]].
+|-
+|{{SCP|Agility|70|sort=yes}}
+|
+|
+|[[Desert Diary|Desert]]
+|data-sort-value=3|[[Desert Diary#Hard|Hard]]
+|Complete a lap of the [[Pollnivneach Rooftop Course]]
+|-
+|{{SCP|Agility|71|sort=yes}}
+|
+|
+|[[Morytania Diary|Morytania]]
+|data-sort-value=3|[[Morytania Diary#Hard|Hard]]
+|Climb the advanced spike chain within the [[Slayer Tower]]
+|-
+|{{SCP|Agility|80|sort=yes}}
+|
+|[[The Fremennik Trials]]
+|[[Fremennik Diary|Fremennik]]
+|data-sort-value=4|[[Fremennik Diary#Elite|Elite]]
+|Complete a lap of the [[Rellekka Rooftop Course]]
+|-
+|{{SCP|Agility|80|sort=yes}}
+|
+|
+|[[Falador Diary|Falador]]
+|data-sort-value=4|[[Falador Diary#Elite|Elite]]
+|Jump over the strange floor in [[Taverley Dungeon]]
+|-
+|{{SCP|Agility|85|sort=yes}}
+|
+|[[Underground Pass]]
+|[[Western Provinces Diary|Western Provinces]]
+|data-sort-value=4|[[Western Provinces Diary#Elite|Elite]]
+|Use the [[Arandar|Elven Overpass]] advanced cliffside [[Rocks (Tirannwn)#Advanced|shortcut]]
+|-
+|{{SCP|Agility|90|sort=yes}}
+|
+|
+|[[Ardougne Diary|Ardougne]]
+|data-sort-value=4|[[Ardougne Diary#Elite|Elite]]
+|Complete a lap of [[Ardougne Rooftop Course|Ardougne's Rooftop Agility Course]]
+|}
+
+{{Top}}
+----
+
+===Attack===
+{|class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!style="width:56px" data-sort-type="number"|Level
+!style="width:96px"|Other skills
+!style="width:144px"|Quests needed
+!Diary
+!Difficulty
+!Task
+|-
+|{{SCP|Attack|32+|sort=yes}}
+|{{SCP|Attack|+}} {{SCP|Strength|=}} 130
+{{SCP|Attack}} or {{SCP|Strength|=}} 99
+|
+|[[Falador Diary|Falador]]
+|data-sort-value=3|[[Falador Diary#Hard|Hard]]
+|Enter the [[Warriors' Guild]]
+|-
+|{{SCP|Attack|50|sort=yes}}
+|
+|[[Contact!]]
+|[[Desert Diary|Desert]]
+|data-sort-value=3|[[Desert Diary#Hard|Hard]]
+|Defeat a [[Locust Rider]] with [[Keris]].
+|-
+|{{SCP|Attack|50|sort=yes}}
+|{{SCP|Magic|50}}
+|[[Underground Pass]]
+|[[Ardougne Diary|Ardougne]]
+|data-sort-value=2|[[Ardougne Diary#Medium|Medium]]
+|Equip Iban's upgraded staff or upgrade an [[Iban staff]].
+|-
+|{{SCP|Attack|70|sort=yes}} or {{SCP|Ranged|70}}
+|{{SCP|Defence|70}}
+|
+|[[Morytania Diary|Morytania]]
+|data-sort-value=4|[[Morytania Diary#Elite|Elite]]
+|Loot the [[Barrows]] chest while wearing any complete [[Barrows set]]
+|}
+
+{{Top}}
+----
+
+===Construction===
+{|class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!style="width:56px" data-sort-type="number"|Level
+!style="width:96px"|Other skills
+!style="width:144px"|Quests needed
+!Diary
+!Difficulty
+!Task
+|-
+|{{SCP|Construction|16|sort=yes}}
+|
+|
+|[[Falador Diary|Falador]]
+|data-sort-value=1|[[Falador Diary#Easy|Easy]]
+|Find out what your family crest is from [[Sir Renitee]]
+|-
+|{{SCP|Construction|16|sort=yes}}
+|{{SCP|Prayer|70}}
+|
+|[[Falador Diary|Falador]]
+|data-sort-value=3|[[Falador Diary#Hard|Hard]]
+|Change your [[Sir Renitee|family crest]] to the [[Saradomin]] symbol
+|-
+|{{SCP|Construction|20|sort=yes}}
+|
+|
+|[[Desert Diary|Desert]]
+|data-sort-value=2|[[Desert Diary#Medium|Medium]]
+|Teleport to [[Pollnivneach]] with a [[Scroll of redirection|redirected Teleport to House tablet]]
+([[File:Ironman chat badge.png]] Ironman must instead: Enter your [[POH]] from Pollnivneach)
+|-
+|{{SCP|Construction|25|sort=yes}}
+|
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|data-sort-value=1|[[Kourend & Kebos Diary#Easy|Easy]]
+|Enter your [[player-owned house]] from [[Hosidius]].
+|-
+|{{SCP|Construction|37|sort=yes}}
+|
+|[[The Fremennik Trials]]
+|[[Fremennik Diary|Fremennik]]
+|data-sort-value=2|[[Fremennik Diary#Medium|Medium]]
+|Pick up your [[Pet rock]] from your POH [[Menagerie]]
+|-
+|{{SCP|Construction|50|sort=yes}}
+|
+|
+|[[Ardougne Diary|Ardougne]]
+|data-sort-value=3|[[Ardougne Diary#Hard|Hard]]
+|Enter your [[POH]] from [[Yanille]]
+|-
+|{{SCP|Construction|50|sort=yes}}
+|
+|
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=3|[[Kandarin Diary#Hard|Hard]]
+|Have the Seers' [[Estate agent]] decorate your house with Fancy Stone
+|-
+|{{SCP|Construction|50|sort=yes}}
+|{{SCP|Magic|66}}
+|[[Desert Treasure I]]
+|[[Morytania Diary|Morytania]]
+|data-sort-value=3|[[Morytania Diary#Hard|Hard]]
+|Enter the [[Portal Chamber|Kharyrll portal]] in your [[POH]]
+|-
+|{{SCP|Construction|50|sort=yes}}
+|
+|
+|[[Varrock Diary|Varrock]]
+|data-sort-value=3|[[Varrock Diary#Hard|Hard]]
+|Have the Varrock [[Estate agent]] decorate your house with Fancy Stone
+|-
+|{{SCP|Construction|65|sort=yes}}
+|
+|[[Roving Elves]]
+|[[Western Provinces Diary|Western Provinces]]
+|data-sort-value=3|[[Western Provinces Diary#Hard|Hard]]
+|Build an [[Isafdar painting]] in your POH [[Quest Hall]]
+|-
+|{{SCP|Construction|78|sort=yes}}
+|
+|
+|[[Desert Diary|Desert]]
+|data-sort-value=4|[[Desert Diary#Elite|Elite]]
+|Speak to the [[Kq head]] in your [[POH]]
+|}
+{{Top}}
+----
+
+===Cooking===
+{| class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!style="width:56px" data-sort-type="number"|Level
+!style="width:96px"|Other skills
+!style="width:144px"|Quests needed
+!Diary
+!Difficulty
+!Task
+|-
+|{{SCP|Cooking|12|sort=yes}}
+|
+|(Started) [[Ghosts Ahoy]]
+|[[Morytania Diary|Morytania]]
+|data-sort-value=1|[[Morytania Diary#Easy|Easy]]
+|Cook a [[Thin snail]] on the [[Port Phasmatys]] range
+|-
+|{{SCP|Cooking|16|sort=yes}}
+|
+|
+|[[Karamja Diary|Karamja]]
+|data-sort-value=2|[[Karamja Diary#Medium|Medium]]
+|Cook a [[Spider on a stick]]
+|-
+|{{SCP|Cooking|30|sort=yes}}
+|
+|[[Tai Bwo Wannai Trio]]
+|[[Karamja Diary|Karamja]]
+|data-sort-value=3|[[Karamja Diary#Hard|Hard]]
+|Cook a [[Karambwan]] thoroughly
+|-
+|{{SCP|Cooking|40|sort=yes}}
+|
+|[[Cabin Fever]]
+|[[Morytania Diary|Morytania]]
+|data-sort-value=2|[[Morytania Diary#Medium|Medium]]
+|Complete a game of [[Trouble Brewing]]
+|-
+|{{SCP|Cooking|42|sort=yes}}
+|
+|
+|[[Western Provinces Diary|Western Provinces]]
+|data-sort-value=2|[[Western Provinces Diary#Medium|Medium]]
+|Make a [[Chocolate bomb]] at the [[Grand Tree]]
+|-
+|{{SCP|Cooking|43|sort=yes}}
+|{{SCP|Fishing|46}}
+|
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=2|[[Kandarin Diary#Medium|Medium]]
+|Catch and cook a [[Bass]] in [[Catherby]]
+|-
+|{{SCP|Cooking|62|sort=yes}}
+|{{SCP|Fishing|62}}
+|[[Swan Song]]
+|[[Western Provinces Diary|Western Provinces]]
+|data-sort-value=3|[[Western Provinces Diary#Hard|Hard]]
+|Catch and cook a [[Monkfish]] in [[Piscatoris]]
+|-
+|{{SCP|Cooking|80|sort=yes}}
+|{{SCP|Fishing|76}}
+|[[Family Crest]]
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=4|[[Kandarin Diary#Elite|Elite]]
+|Fish and cook 5 [[Shark]]s in [[Catherby]] using the [[Cooking gauntlets]]
+|-
+|{{SCP|Cooking|84|sort=yes}}
+|{{SCP|Fishing|82}}
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|data-sort-value=4|[[Kourend & Kebos Diary#Elite|Elite]]
+|Catch an [[anglerfish]] and cook it whilst in [[Great Kourend]].
+|-
+|{{SCP|Cooking|85|sort=yes}}
+|
+|
+|[[Desert Diary|Desert]]
+|data-sort-value=4|[[Desert Diary#Elite|Elite]]
+|Bake a [[Wild pie]] at the [[Nardah]] clay oven
+|-
+|{{SCP|Cooking|90|sort=yes}}
+|{{SCP|Fishing|85}}
+|
+|[[Wilderness Diary|Wilderness]]
+|data-sort-value=4|[[Wilderness Diary#Elite|Elite]]
+|Fish and cook a [[Dark crab]] in the [[Resource Area]]
+|-
+|{{SCP|Cooking|91|sort=yes}}
+|{{SCP|Fishing|81}}
+|
+|[[Ardougne Diary|Ardougne]]
+|data-sort-value=4|[[Ardougne Diary#Elite|Elite]]
+|Catch a [[Manta ray]] in the [[Fishing Trawler]] and cook it in [[Port Khazard]]
+|-
+|{{SCP|Cooking|95|sort=yes}}
+|
+|
+|[[Varrock Diary|Varrock]]
+|data-sort-value=4|[[Varrock Diary#Elite|Elite]]
+|Bake a [[Summer pie]] in the [[Cooks' Guild|Cooking Guild]]
+|}
+{{Top}}
+----
+
+===Crafting===
+{|class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!style="width:56px" data-sort-type="number"|Level
+!style="width:96px"|Other skills
+!style="width:144px"|Quests needed
+!Diary
+!Difficulty
+!Task
+|-
+|{{SCP|Crafting|8|sort=yes}}
+|
+|
+|[[Varrock Diary|Varrock]]
+|data-sort-value=1|[[Varrock Diary#Easy|Easy]]
+|Spin a [[Bowl]] on the pottery wheel and fire in the oven in [[Barbarian Village]]
+|-
+|{{SCP|Crafting|10|sort=yes}}
+|{{SCP|Fletching|70}} {{SCP|Woodcutting|60}}
+|
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=3|[[Kandarin Diary#Hard|Hard]]
+|Create a [[Yew longbow]] from scratch around [[Seers' Village]]
+|-
+|{{SCP|Crafting|10|sort=yes}}
+|{{SCP|Smithing|91}} {{SCP|Fletching|69}}
+|
+|[[Ardougne Diary|Ardougne]]
+|data-sort-value=4|[[Ardougne Diary#Elite|Elite]]
+|Make a [[Rune crossbow]] yourself from scratch within [[Witchaven]] or [[Yanille]]
+|-
+|{{SCP|Crafting|15|sort=yes}}
+|
+|
+|[[Morytania Diary|Morytania]]
+|data-sort-value=1|[[Morytania Diary#Easy|Easy]]
+|Craft any [[Snelm]] from scratch in [[Morytania]]
+|-
+|{{SCP|Crafting|23|sort=yes}}
+|{{SCP|Mining|20}} {{SCP|Smithing|20}}
+|[[The Fremennik Trials]]
+|[[Fremennik Diary|Fremennik]]
+|data-sort-value=1|[[Fremennik Diary#Easy|Easy]]
+|
+Craft a [[Tiara]] from scratch in [[Rellekka]]
+|-
+|{{SCP|Crafting|30|sort=yes}}
+|
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|data-sort-value=2|[[Kourend & Kebos Diary#Medium|Medium]]
+|Repair a crane within [[Port Piscarilius]].
+|-
+|{{SCP|Crafting|36|sort=yes}}
+|
+|
+|[[Falador Diary|Falador]]
+|data-sort-value=2|[[Falador Diary#Medium|Medium]]
+|Craft a [[Basket|Fruit basket]] on the [[Falador farm]] loom
+|-
+|{{SCP|Crafting|38|sort=yes}}
+|
+|
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=2|[[Lumbridge & Draynor Diary#Medium|Medium]]
+|Craft a [[Coif]] in the [[Lumbridge]] cow pen (eastern cows)
+|-
+|{{SCP|Crafting|38|sort=yes}}
+|{{SCP|Mining|38}} {{SCP|Runecraft}}77
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|data-sort-value=4|[[Kourend & Kebos Diary#Elite|Elite]]
+|Craft one or more [[blood rune]]s from Dark essence fragments
+|-
+|{{SCP|Crafting|40|sort=yes}}
+|{{SCP|Mining|40}}
+|
+|[[Falador Diary|Falador]]
+|data-sort-value=2|[[Falador Diary#Medium|Medium]]
+|Mine some [[Gold ore]] at the [[Crafting Guild]]
+|-
+|{{SCP|Crafting|49|sort=yes}}
+|
+|[[The Hand in the Sand]]
+|[[Ardougne Diary|Ardougne]]
+|data-sort-value=2|[[Ardougne Diary#Medium|Medium]]
+|Claim [[buckets of sand]] from [[Bert]] in [[Yanille]].
+|-
+|{{SCP|Crafting|70|sort=yes}}
+|{{SCP|Magic|57}}
+|
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=3|[[Lumbridge & Draynor Diary#Hard|Hard]]
+|Craft, string, and enchant an [[Amulet of power]] in [[Lumbridge]]
+|-
+|{{SCP|Crafting|80|sort=yes}}
+|
+|(Started) [[The Fremennik Isles]]
+|[[Fremennik Diary|Fremennik]]
+|data-sort-value=4|[[Fremennik Diary#Elite|Elite]]
+|Craft a [[Dragonstone amulet]] in the [[Neitiznot]] furnace
+|-
+|{{SCP|Crafting|84|sort=yes}}
+|
+|
+|[[Morytania Diary|Morytania]]
+|data-sort-value=4|[[Morytania Diary#Elite|Elite]]
+|Craft a [[Black dragonhide body]] in [[Canifis]] bank
+|-
+|{{SCP|Crafting|85|sort=yes}}
+|{{SCP|Firemaking|85}}
+|[[Barbarian Firemaking|Barbarian Training - Firemaking]]
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=4|[[Kandarin Diary#Elite|Elite]]
+|Construct a pyre ship from [[Magic logs]]
+|}
+{{Top}}
+----
+
+===Defence===
+{|class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!style="width:56px"|Level
+!style="width:96px"|Other skills
+!style="width:144px"|Quests needed
+!Diary
+!Difficulty
+!Task
+|-
+|{{SCP|Defence|10|sort=yes}}
+|{{SCP|Slayer}}65{{SCP|Crafting|55}}
+|(Started) [[Desert Treasure I]]
+|[[Desert Diary|Desert]]
+|data-sort-value=3|[[Desert Diary#Hard|Hard]]
+|Slay a [[Dust devil]] in the [[Smoke Dungeon|desert cave]] with a [[Slayer helmet]] equipped.
+|-
+|{{SCP|Defence|20|sort=yes}}
+|{{SCP|Prayer|10}}
+|[[Recruitment Drive]]
+|[[Falador Diary|Falador]]
+|data-sort-value=2|[[Falador Diary#Medium|Medium]]
+|Pray at the Altar of Guthix in [[Taverley]] whilst wearing full [[Initiate armour]]
+|-
+|{{SCP|Defence|30|sort=yes}}
+|{{SCP|Prayer|20}}
+|[[Slug Menace]]
+|[[Falador Diary|Falador]]
+|data-sort-value=3|[[Falador Diary#Hard|Hard]]
+|Recharge your prayer in [[Port Sarim]] church while wearing full [[Proselyte armour|Proselyte]]
+|-
+|{{SCP|Defence|50|sort=yes}}
+|
+|[[Grim Tales]]
+|[[Falador Diary|Falador]]
+|data-sort-value=3|[[Falador Diary#Hard|Hard]]
+|Equip a [[Dwarven helmet]] within the [[Dwarven mines]]
+|-
+|{{SCP|Defence|50|sort=yes}}
+|{{SCP|Strength|50}}
+|
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=3|[[Kandarin Diary#Hard|Hard]]
+|Purchase and equip a [[Granite body]] from [[Barbarian Assault]]
+|-
+|{{SCP|Defence|70|sort=yes}}
+|{{SCP|Prayer|70}}
+|[[King's Ransom]], [[Camelot training room|Knights' Waves Training Ground]]
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=3|[[Kandarin Diary#Hard|Hard]]
+|Enter the [[Seers' Village]] courthouse with [[Piety]] turned on
+|-
+|{{SCP|Defence|70|sort=yes}}
+|{{SCP|Prayer|70}}
+|[[Nature Spirit]], [[King's Ransom]], [[Camelot training room|Knights' Waves Training Ground]]
+|[[Morytania Diary|Morytania]]
+|data-sort-value=3|[[Morytania Diary#Hard|Hard]]
+|Pray at the [[Nature Grotto|Altar of Nature]] with [[Piety]] activated
+|-
+|{{SCP|Defence|70|sort=yes}}
+|{{SCP|Attack|70}} or {{SCP|Ranged}}70
+|
+|[[Morytania Diary|Morytania]]
+|data-sort-value=4|[[Morytania Diary#Elite|Elite]]
+|Loot the [[Barrows]] chest while wearing any complete [[Barrows set]]
+|}
+{{Top}}
+----
+
+===Farming===
+{| class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!style="width:56px"|Level
+!style="width:96px"|Other skills
+!style="width:144px"|Quests needed
+!Diary
+!Difficulty
+!Task
+|-
+|{{SCP|Farming|13|sort=yes}}
+|
+|
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=1|[[Kandarin Diary#Easy|Easy]]
+|Plant [[Jute seed]]s in the [[Hops patch|farming patch]] north of [[McGrubor's Wood]]
+|-
+|{{SCP|Farming|23|sort=yes}}
+|
+|
+|[[Falador Diary|Falador]]
+|data-sort-value=2|[[Falador Diary#Medium|Medium]]
+|Place a [[Scarecrow]] in the [[Falador]] [[Allotment patch|farm patch]]
+|-
+|{{SCP|Farming|23|sort=yes}}
+|
+|
+|[[Morytania Diary|Morytania]]
+|data-sort-value=1|[[Morytania Diary#Easy|Easy]]
+|Place a [[Scarecrow]] in the [[Morytania]] [[flower patch]]
+|-
+|{{SCP|Farming|26|sort=yes}}
+|
+|
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=2|[[Kandarin Diary#Medium|Medium]]
+|Pick some [[Limpwurt root]] from the [[Allotment patch|farming patch]] in [[Catherby]]
+|-
+|{{SCP|Farming|27|sort=yes}}
+|
+|
+|[[Karamja Diary|Karamja]]
+|data-sort-value=2|[[Karamja Diary#Medium|Medium]]
+|Grow a healthy [[Fruit tree]] in the [[Fruit tree patch|patch]] near [[Brimhaven]]
+|-
+|{{SCP|Farming|31|sort=yes}}
+|
+|
+|[[Ardougne Diary|Ardougne]]
+|data-sort-value=2|[[Ardougne Diary#Medium|Medium]]
+|Harvest some [[Strawberries]] from the [[Ardougne]] [[Allotment patch|farming patch]]
+|-
+|{{SCP|Farming|45|sort=yes}}
+|
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|data-sort-value=2|[[Kourend & Kebos Diary#Medium|Medium]]
+|Enter the [[Farming Guild]].
+|-
+|{{SCP|Farming|47|sort=yes}}
+|
+|(Started) [[The Great Brain Robbery]]
+|[[Morytania Diary|Morytania]]
+|data-sort-value=3|[[Morytania Diary#Hard|Hard]]
+|Harvest some [[Watermelon]] from the [[allotment patch]] on [[Harmony Island]]
+|-
+|{{SCP|Farming|53|sort=yes}}
+|
+|
+|[[Morytania Diary|Morytania]]
+|data-sort-value=3|[[Morytania Diary#Hard|Hard]]
+|Harvest some [[Bittercap mushrooms]] from the [[Mushroom patch|patch]] in [[Canifis]]
+|-
+|{{SCP|Farming|63|sort=yes}}
+|
+|
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=3|[[Lumbridge & Draynor Diary#Hard|Hard]]
+|Pick some [[Belladonna seed|Belladonna]] from the [[Belladonna patch|farming patch]] at [[Draynor Manor]]
+|-
+|{{SCP|Farming|68|sort=yes}}
+|{{SCP|Woodcutting|60}}
+|
+|[[Varrock Diary|Varrock]]
+|data-sort-value=3|[[Varrock Diary#Hard|Hard]]
+|Collect at least 2 [[Yew roots]] from the [[tree patch]] in [[Varrock Palace]]
+|-
+|{{SCP|Farming|68|sort=yes}}
+|
+|
+|[[Ardougne Diary|Ardougne]]
+|data-sort-value=3|[[Ardougne Diary#Hard|Hard]]
+|Check the health of a [[Palm tree]] near [[Tree Gnome Village (location)|Tree Gnome Village]]
+|-
+|{{SCP|Farming|68|sort=yes}}
+|
+|
+|[[Karamja Diary|Karamja]]
+|data-sort-value=4|[[Karamja Diary#Elite|Elite]]
+|Check the health of a [[Palm tree]] in [[Brimhaven]]
+|-
+|{{SCP|Farming|68|sort=yes}}
+|
+|(Started) [[Mourning's End Part I]]
+|[[Western Provinces Diary|Western Provinces]]
+|data-sort-value=3|[[Western Provinces Diary#Hard|Hard]]
+|Check the health of your [[Palm tree]] in [[Lletya]]
+|-
+|{{SCP|Farming|70|sort=yes}}
+|
+|
+|[[Ardougne Diary|Ardougne]]
+|data-sort-value=3|[[Ardougne Diary#Hard|Hard]]
+|Pick some [[Poison ivy berries]] from the [[Bush patch|patch]] south of [[East Ardougne]]
+|-
+|{{SCP|Farming|72|sort=yes}}
+|
+|
+|[[Karamja Diary|Karamja]]
+|data-sort-value=4|[[Karamja Diary#Elite|Elite]]
+|Check the health of your [[Calquat patch|Calquat tree patch]]
+|-
+|{{SCP|Farming|74|sort=yes}}
+|
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|data-sort-value=3|[[Kourend & Kebos Diary#Hard|Hard]]
+|Plant some [[Logavano seed]]s at the [[Tithe Farm]].
+|-
+|{{SCP|Farming|75|sort=yes}}
+|
+|
+|[[Western Provinces Diary|Western Provinces]]
+|data-sort-value=4|[[Western Provinces Diary#Elite|Elite]]
+|Have [[Prissy Scilla]] protect your [[Magic seed|Magic tree]]
+|-
+|{{SCP|Farming|79|sort=yes}}
+|
+|
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=4|[[Kandarin Diary#Elite|Elite]]
+|Pick some [[Dwarf weed]] from the [[herb patch]] at [[Catherby]]
+|-
+|{{SCP|Farming|85|sort=yes}}
+|
+|
+|[[Ardougne Diary|Ardougne]]
+|data-sort-value=4|[[Ardougne Diary#Elite|Elite]]
+|Pick some [[Torstol]] from the [[Herb patch|patch]] north of [[East Ardougne]]
+|-
+|{{SCP|Farming|85|sort=yes}}
+|{{SCP|Fletching|40}}
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|data-sort-value=4|[[Kourend & Kebos Diary#Elite|Elite]]
+|Create your own [[battlestaff]] from scratch within the [[Farming Guild]].
+|-
+|{{SCP|Farming|91|sort=yes}}
+|{{SCP|Woodcutting|75}}
+|
+|[[Falador Diary|Falador]]
+|data-sort-value=4|[[Falador Diary#Elite|Elite]]
+|Find at least 3 [[Magic roots]] at once when digging up your [[Magic seed|Magic tree]] in [[Falador]]
+|}
+{{Top}}
+----
+
+===Firemaking===
+{|class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!style="width:56px"|Level
+!style="width:96px"|Other skills
+!style="width:144px"|Quests needed
+!Diary
+!Difficulty
+!Task
+|-
+|{{SCP|Firemaking|15|sort=yes}}
+|{{SCP|Woodcutting|15}}
+|
+|[[Fremennik Diary|Fremennik]]
+|data-sort-value=1|[[Fremennik Diary#Easy|Easy]]
+|Chop and burn some [[Oak logs]] in the [[Fremennik Province]]
+|-
+|{{SCP|Firemaking|15|sort=yes}}
+|{{SCP|Woodcutting|15}}
+|
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=1|[[Lumbridge & Draynor Diary#Easy|Easy]]
+|Chop and burn some [[Oak logs]] in [[Lumbridge]]
+|-
+|{{SCP|Firemaking|30|sort=yes}}
+|{{SCP|Woodcutting|30}}
+|
+|[[Falador Diary|Falador]]
+|data-sort-value=2|[[Falador Diary#Medium|Medium]]
+|Chop and burn some [[Willow logs]] in [[Taverley]]
+|-
+|{{SCP|Firemaking|35|sort=yes}}
+|{{SCP|Woodcutting|35}}
+|(Started) [[Monkey Madness I]]
+|[[Western Provinces Diary|Western Provinces]]
+|data-sort-value=2|[[Western Provinces Diary#Medium|Medium]]
+|Chop and burn some [[Teak logs]] on [[Ape Atoll]]
+|-
+|{{SCP|Firemaking|40|sort=yes}}
+|
+|[[Enlightened Journey]]
+|[[Varrock Diary|Varrock]]
+|data-sort-value=2|[[Varrock Diary#Medium|Medium]]
+|Use the [[Balloon Transport System|balloon]] to travel from [[Varrock]]
+|-
+|{{SCP|Firemaking|49|sort=yes}}
+|
+|
+|[[Falador Diary|Falador]]
+|data-sort-value=2|[[Falador Diary#Medium|Medium]]
+|Light a [[Bullseye lantern]] at the [[Chemist's House|Chemist's]] in [[Rimmington]]
+|-
+|{{SCP|Firemaking|50|sort=yes}}
+|
+|[[Enlightened Journey]]
+|[[Ardougne Diary|Ardougne]]
+|data-sort-value=2|[[Ardougne Diary#Medium|Medium]]
+|Travel to [[Castle Wars]] by [[Balloon Transport System|hot air balloon]]
+|-
+|{{SCP|Firemaking|50|sort=yes}}
+|
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|data-sort-value=2|[[Kourend & Kebos Diary#Medium|Medium]]
+|Subdue the [[Wintertodt]].
+|-
+|{{SCP|Firemaking|50|sort=yes}}
+|{{SCP|Woodcutting|50}}
+|[[Cabin Fever]]
+|[[Morytania Diary|Morytania]]
+|data-sort-value=3|[[Morytania Diary#Hard|Hard]]
+|Chop and burn some [[Mahogany logs]] on [[Mos Le'Harmless]]
+|-
+|{{SCP|Firemaking|50|sort=yes}}
+|{{SCP|Woodcutting|50}}
+|(Started) [[Monkey Madness I]]
+|[[Western Provinces Diary|Western Provinces]]
+|data-sort-value=3|[[Western Provinces Diary#Hard|Hard]]
+|Chop and burn some [[Mahogany logs]] on [[Ape Atoll]]
+|-
+|{{SCP|Firemaking|60|sort=yes}}
+|
+|
+|[[Desert Diary|Desert]]
+|data-sort-value=3|[[Desert Diary#Hard|Hard]]
+|Burn some [[Yew logs]] on the [[Nardah]] Mayor's balcony
+|-
+|{{SCP|Firemaking|60|sort=yes}}
+|{{SCP|Woodcutting|60}}
+|
+|[[Varrock Diary|Varrock]]
+|data-sort-value=3|[[Varrock Diary#Hard|Hard]]
+|Chop some [[Yew logs]] in [[Varrock]] and burn them at the top of the Varrock church
+|-
+|{{SCP|Firemaking|65|sort=yes}}
+|
+|[[Barbarian Firemaking|Barbarian Training - Firemaking]]
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=3|[[Kandarin Diary#Hard|Hard]]
+|Burn some [[Maple logs]] with a bow in [[Seers' Village]]
+|-
+|{{SCP|Firemaking|65|sort=yes}}
+|
+|[[The Lost Tribe]]
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=3|[[Lumbridge & Draynor Diary#Hard|Hard]]
+|Light your [[Mining helmet]] in the [[Lumbridge Castle]] basement
+|-
+|{{SCP|Firemaking|75|sort=yes}}
+|{{SCP|Woodcutting|75}}
+|
+|[[Wilderness Diary|Wilderness]]
+|data-sort-value=4|[[Wilderness Diary#Elite|Elite]]
+|Cut and burn some [[Magic logs]] in the [[Resource Area]]
+|-
+|{{SCP|Firemaking|80|sort=yes}}
+|
+|[[Shades of Mort'ton]]
+|[[Morytania Diary|Morytania]]
+|data-sort-value=4|[[Morytania Diary#Elite|Elite]]
+|Cremate any [[Shade remains]] on a [[Magic pyre logs|Magic pyre]]
+|-
+|{{SCP|Firemaking|85|sort=yes}}
+|{{SCP|Crafting|85}}
+|[[Barbarian Firemaking|Barbarian Training - Firemaking]]
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=4|[[Kandarin Diary#Elite|Elite]]
+|Construct a pyre ship from [[Magic logs]]
+|}
+{{Top}}
+----
+
+===Fishing===
+{|class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!style="width:56px"|Level
+!style="width:96px"|Other skills
+!style="width:144px"|Quests needed
+!Diary
+!Difficulty
+!Task
+|-
+|{{SCP|Fishing|15|sort=yes}}
+|
+|
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=1|[[Lumbridge & Draynor Diary#Easy|Easy]]
+|Catch some [[Anchovies]] in [[Al-Kharid]]
+|-
+|{{SCP|Fishing|15|sort=yes}}
+|
+|
+|[[Ardougne Diary|Ardougne]]
+|data-sort-value=1|[[Ardougne Diary#Easy|Easy]]
+|Go out fishing on the [[Fishing Trawler]]
+|-
+|{{SCP|Fishing|16|sort=yes}}
+|
+|
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=1|[[Kandarin Diary#Easy|Easy]]
+|Catch a [[Mackerel]] at [[Catherby]]
+|-
+|{{SCP|Fishing|20|sort=yes}}
+|
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|data-sort-value=1|[[Kourend & Kebos Diary#Easy|Easy]]
+|Fish a [[Trout]] from the [[River Molch]].
+|-
+|{{SCP|Fishing|20|sort=yes}}
+|
+|
+|[[Varrock Diary|Varrock]]
+|data-sort-value=1|[[Varrock Diary#Easy|Easy]]
+|Catch some [[Trout]] in the [[River Lum]] at [[Barbarian Village]]
+|-
+|{{SCP|Fishing|30|sort=yes}}
+|
+|
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=2|[[Lumbridge & Draynor Diary#Medium|Medium]]
+|Catch some [[Salmon]] in [[Lumbridge]]
+|-
+|{{SCP|Fishing|43|sort=yes}}
+|{{SCP|Hunter}}35
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|data-sort-value=2|[[Kourend & Kebos Diary#Medium|Medium]]
+|Catch a [[Bluegill]] on [[Lake Molch]].
+|-
+|{{SCP|Fishing|46|sort=yes}}
+|{{SCP|Cooking|43}}
+|
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=2|[[Kandarin Diary#Medium|Medium]]
+|Catch and cook a [[Bass]] in [[Catherby]]
+|-
+|{{SCP|Fishing|46|sort=yes}}
+|
+|(Started) [[Monkey Madness I]]
+|[[Western Provinces Diary|Western Provinces]]
+|data-sort-value=2|[[Western Provinces Diary#Medium|Medium]]
+|Fish some [[Bass]] on [[Ape Atoll]]
+|-
+|{{SCP|Fishing|53|sort=yes}}
+|
+|(Started) [[Heroes' Quest]]
+|[[Wilderness Diary|Wilderness]]
+|data-sort-value=3|[[Wilderness Diary#Hard|Hard]]
+|Fish some [[Raw lava eel]] in the [[Wilderness]]
+|-
+|{{SCP|Fishing|62|sort=yes}}
+|{{SCP|Cooking|62}}
+|[[Swan Song]]
+|[[Western Provinces Diary|Western Provinces]]
+|data-sort-value=3|[[Western Provinces Diary#Hard|Hard]]
+|Catch and cook a [[Monkfish]] in [[Piscatoris]]
+|-
+|{{SCP|Fishing|65|sort=yes}}
+|
+|(Started) [[Tai Bwo Wannai Trio]]
+|[[Karamja Diary|Karamja]]
+|data-sort-value=2|[[Karamja Diary#Medium|Medium]]
+|Catch a [[Karambwan]]
+|-
+|{{SCP|Fishing|70|sort=yes}}
+|{{SCP|Agility|45}} {{SCP|Strength|45}}
+|[[Barbarian Fishing|Barbarian Training - Fishing]]
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=3|[[Kandarin Diary#Hard|Hard]]
+|Catch a [[Leaping sturgeon]]
+|-
+|{{SCP|Fishing|76|sort=yes}}
+|{{SCP|Cooking|80}}
+|[[Family Crest]]
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=4|[[Kandarin Diary#Elite|Elite]]
+|Fish and cook 5 [[Shark]]s in [[Catherby]] using the [[Cooking gauntlets]]
+|-
+|{{SCP|Fishing|81|sort=yes}}
+|{{SCP|Cooking|91}}
+|
+|[[Ardougne Diary|Ardougne]]
+|data-sort-value=4|[[Ardougne Diary#Elite|Elite]]
+|Catch a [[raw manta ray|manta ray]] in the [[Fishing Trawler]] and cook it in [[Port Khazard]]
+|-
+|{{SCP|Fishing|82|sort=yes}}
+|{{SCP|Cooking|84}}
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|data-sort-value=4|[[Kourend & Kebos Diary#Elite|Elite]]
+|Catch an [[anglerfish]] and cook it whilst in [[Great Kourend]].
+|-
+|{{SCP|Fishing|85|sort=yes}}
+|{{SCP|Cooking|90}}
+|
+|[[Wilderness Diary|Wilderness]]
+|data-sort-value=4|[[Wilderness Diary#Elite|Elite]]
+|Fish and cook a [[Dark crab]] in the [[Resource Area]]
+|-
+|{{SCP|Fishing|96|sort=yes}}
+|{{SCP|Strength|76}}
+|[[In Aid of the Myreque]], [[Barbarian Fishing|Barbarian Training - Fishing]]
+|[[Morytania Diary|Morytania]]
+|data-sort-value=4|[[Morytania Diary#Elite|Elite]]
+|Catch a [[Shark]] in [[Burgh de Rott]] with your bare hands
+|}
+{{Top}}
+----
+
+===Fletching===
+{|class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!style="width:56px"|Level
+!style="width:96px"|Other skills
+!style="width:144px"|Quests needed
+!Diary
+!Difficulty
+!Task
+|-
+|{{SCP|Fletching|5|sort=yes}}
+|30 {{SCP|Ranged}}
+|[[Big Chompy Bird Hunting]]
+|[[Western Provinces Diary|Western Provinces]]
+|Various
+|''Multiple''
+([[#Chompy bird hunting|Chompy bird hunting achievements]])
+|-
+|{{SCP|Fletching|20|sort=yes}}
+|
+|
+|[[Western Provinces Diary|Western Provinces]]
+|data-sort-value=1|[[Western Provinces Diary#Easy|Easy]]
+|Fletch an [[Oak shortbow]] in the [[Gnome Stronghold]]
+|-
+|{{SCP|Fletching|40|sort=yes}}
+|{{SCP|Farming|85}}
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|data-sort-value=4|[[Kourend & Kebos Diary#Elite|Elite]]
+|Create your own [[battlestaff]] from scratch within the [[Farming Guild]].
+|-
+|{{SCP|Fletching|50|sort=yes}}
+|
+|
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=2|[[Kandarin Diary#Medium|Medium]]
+|String a [[Maple shortbow]] in [[Seers' Village]] bank
+|-
+|{{SCP|Fletching|69|sort=yes}}
+|{{SCP|Crafting|10}} {{SCP|Smithing|91}}
+|
+|[[Ardougne Diary|Ardougne]]
+|data-sort-value=4|[[Ardougne Diary#Elite|Elite]]
+|Make a [[Rune crossbow]] yourself from scratch within [[Witchaven]] or [[Yanille]]
+|-
+|{{SCP|Fletching|70|sort=yes}}
+|{{SCP|Woodcutting|60}} {{SCP|Crafting|10}}
+|
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=3|[[Kandarin Diary#Hard|Hard]]
+|Create a [[Yew longbow]] from scratch around [[Seers' Village]]
+|-
+|{{SCP|Fletching|81|sort=yes}}
+|{{SCP|Smithing|89}}
+|[[The Tourist Trap]]
+|[[Varrock Diary|Varrock]]
+|data-sort-value=4|[[Varrock Diary#Elite|Elite]]
+|Smith and fletch 10 [[Rune dart]]s within [[Varrock]]
+|-
+|{{SCP|Fletching|85|sort=yes}}
+|
+|[[Regicide]]
+|[[Western Provinces Diary|Western Provinces]]
+|data-sort-value=4|[[Western Provinces Diary#Elite|Elite]]
+|Fletch a [[Magic longbow]] in the [[Tirannwn|Elven lands]]
+|-
+|{{SCP|Fletching|95|sort=yes}}
+|
+|[[The Tourist Trap]]
+|[[Desert Diary|Desert]]
+|data-sort-value=4|[[Desert Diary#Elite|Elite]]
+|Fletch some [[Dragon dart]]s at the [[Bedabin Camp]]
+|}
+{{Top}}
+----
+
+===Herblore===
+{|class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!style="width:56px"|Level
+!style="width:96px"|Other skills
+!style="width:144px"|Quests needed
+!Diary
+!Difficulty
+!Task
+|-
+|{{SCP|Herblore|12|sort=yes}}
+|
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|data-sort-value=1|[[Kourend & Kebos Diary#Easy|Easy]]
+|Create a [[strength potion]] in the [[The Deeper Lode]] pub.
+|-
+|{{SCP|Herblore|22|sort=yes}}
+|
+|(Started) [[In Aid of the Myreque]]
+|[[Morytania Diary|Morytania]]
+|data-sort-value=2|[[Morytania Diary#Medium|Medium]]
+|Mix a [[Guthix balance potion]] while in [[Morytania]] (NOT upstairs at Ectofuntus)
+|-
+|{{SCP|Herblore|36|sort=yes}}
+|
+|
+|[[Desert Diary|Desert]]
+|data-sort-value=2|[[Desert Diary#Medium|Medium]]
+|Create a [[Combat potion]] in the [[Desert]]
+|-
+|{{SCP|Herblore|48|sort=yes}}
+|
+|
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=2|[[Kandarin Diary#Medium|Medium]]
+|Create a [[Superantipoison|Superantipoison potion]] from scratch in the [[Seers' Village|Seers']]/[[Catherby]] area
+|-
+|{{SCP|Herblore|66|sort=yes}}
+|
+|
+|[[Fremennik Diary|Fremennik]]
+|data-sort-value=3|[[Fremennik Diary#Hard|Hard]]
+|Mix a [[Super defence potion]] in the [[Fremennik Province]]
+|-
+|{{SCP|Herblore|81|sort=yes}}
+|
+|
+|[[Falador Diary|Falador]]
+|data-sort-value=4|[[Falador Diary#Elite|Elite]]
+|Mix a [[Saradomin brew]] in [[Falador]] east bank
+|-
+|{{SCP|Herblore|86|sort=yes}}
+|{{SCP|Agility|60}}
+|[[Barbarian Training#Barbarian Herblore|Barbarian Training - Herblore]]
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=4|[[Kandarin Diary#Elite|Elite]]
+|Mix a [[Stamina mix]] on top of the [[Seers' Village]] bank
+|-
+|{{SCP|Herblore|87|sort=yes}}
+|
+|
+|[[Karamja Diary|Karamja]]
+|data-sort-value=4|[[Karamja Diary#Elite|Elite]]
+|Create an [[Anti-venom]] potion whilst standing in the [[North Brimhaven Mine|Horseshoe mine]]
+|-
+|{{SCP|Herblore|90|sort=yes}}
+|
+|
+|[[Varrock Diary|Varrock]]
+|data-sort-value=4|[[Varrock Diary#Elite|Elite]]
+|Create a [[Super combat potion]] in [[Varrock]] west bank
+|}
+{{Top}}
+----
+
+===Hitpoints===
+{| class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!style="width:56px"|Level
+!style="width:96px"|Other skills
+!style="width:144px"|Quests needed
+!Diary
+!Difficulty
+!Task
+|-
+|{{SCP|Hitpoints|70|sort=yes}}
+|{{SCP|Agility|70}} {{SCP|Strength|70}} {{SCP|Ranged|70}}
+|[[Troll Stronghold]]
+|[[Fremennik Diary|Fremennik]]
+|data-sort-value=4|[[Fremennik Diary#Elite|Elite]]
+|Kill the generals of [[Armadyl]], [[Bandos]], [[Saradomin]], and [[Zamorak]] in the [[God Wars Dungeon]].
+|}
+{{Top}}
+----
+
+===Hunter===
+{|class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!style="width:56px"|Level
+!style="width:96px"|Other skills
+!style="width:144px"|Quests needed
+!Diary
+!Difficulty
+!Task
+|-
+|{{SCP|Hunter|5|sort=yes}}
+|
+|
+|[[Desert Diary|Desert]]
+|data-sort-value=1|[[Desert Diary#Easy|Easy]]
+|Catch a [[Golden warbler]]
+|-
+|{{SCP|Hunter|9|sort=yes}}
+|
+|
+|[[Western Provinces Diary|Western Provinces]]
+|data-sort-value=1|[[Western Provinces Diary#Easy|Easy]]
+|Catch a [[Copper longtail]]
+|-
+|{{SCP|Hunter|11|sort=yes}}
+|
+|
+|[[Fremennik Diary|Fremennik]]
+|data-sort-value=1|[[Fremennik Diary#Easy|Easy]]
+|Catch a [[Cerulean twitch]]
+|-
+|{{SCP|Hunter|29|sort=yes}}
+|
+|
+|[[Morytania Diary|Morytania]]
+|data-sort-value=2|[[Morytania Diary#Medium|Medium]]
+|Catch a [[Swamp lizard]]
+|-
+|{{SCP|Hunter|31|sort=yes}}
+|
+|
+|[[Western Provinces Diary|Western Provinces]]
+|data-sort-value=2|[[Western Provinces Diary#Medium|Medium]]
+|Trap a [[Spined Larupia]]
+|-
+|{{SCP|Hunter|35|sort=yes}}
+|
+|
+|[[Fremennik Diary|Fremennik]]
+|data-sort-value=2|[[Fremennik Diary#Medium|Medium]]
+|Catch a [[Snowy knight]]
+|-
+|{{SCP|Hunter|35|sort=yes}}
+|{{SCP|Fishing|43}}
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|data-sort-value=2|[[Kourend & Kebos Diary#Medium|Medium]]
+|Catch a [[Bluegill]] on [[Lake Molch]].
+|-
+|{{SCP|Hunter|41|sort=yes}}
+|
+|
+|[[Karamja Diary|Karamja]]
+|data-sort-value=2|[[Karamja Diary#Medium|Medium]]
+|Trap a [[Horned Graahk]]
+|-
+|{{SCP|Hunter|42|sort=yes}}
+|
+|
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=2|[[Lumbridge & Draynor Diary#Medium|Medium]]
+|Catch an [[Essence impling|Essence]] or [[Eclectic impling]] in [[Puro-Puro]]
+|-
+|{{SCP|Hunter|47|sort=yes}}
+|
+|
+|[[Desert Diary|Desert]]
+|data-sort-value=2|[[Desert Diary#Medium|Medium]]
+|Catch an [[Orange salamander]]
+|-
+|{{SCP|Hunter|53|sort=yes}}
+|
+|[[Eagles' Peak]]
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|data-sort-value=2|[[Kourend & Kebos Diary#Medium|Medium]]
+|Catch a [[Chinchompa (Hunter)|chinchompa]] in the [[Kourend Woodland]].
+|-
+|{{SCP|Hunter|55|sort=yes}}
+|
+|
+|[[Fremennik Diary|Fremennik]]
+|data-sort-value=3|[[Fremennik Diary#Hard|Hard]]
+|Catch a [[sabre-toothed kyatt]]
+|-
+|{{SCP|Hunter|59|sort=yes}}
+|
+|
+|[[Ardougne Diary|Ardougne]]
+|data-sort-value=3|[[Ardougne Diary#Hard|Hard]]
+|Catch a [[Red salamander]]
+|-
+|{{SCP|Hunter|66|sort=yes}}
+|
+|
+|[[Varrock Diary|Varrock]]
+|data-sort-value=3|[[Varrock Diary#Hard|Hard]]
+|Trade [[Dashing kebbit fur|furs]] with the [[Fancy dress shop owner|Fancy Dress Seller]] for a [[Spottier cape]] and equip it
+|-
+|{{SCP|Hunter|67|sort=yes}}
+|
+|
+|[[Wilderness Diary|Wilderness]]
+|data-sort-value=3|[[Wilderness Diary#Hard|Hard]]
+|Catch a [[Black salamander]]
+|-
+|{{SCP|Hunter|69|sort=yes}}
+|
+|
+|[[Western Provinces Diary|Western Provinces]]
+|data-sort-value=3|[[Western Provinces Diary#Hard|Hard]]
+|Catch a [[Dashing kebbit]]
+|}
+{{Top}}
+----
+
+===Magic===
+{|class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!style="width:56px"|Level
+!style="width:96px"|Other skills
+!style="width:144px"|Quests needed
+!Diary
+!Difficulty
+!Task
+|-
+|{{SCP|Magic|21|sort=yes}}
+|
+|
+|[[Wilderness Diary|Wilderness]]
+|data-sort-value=1|[[Wilderness Diary#Easy|Easy]]
+|Cast [[Low Level Alchemy|Low Alchemy]] at the [[Fountain of Rune]]
+|-
+|{{SCP|Magic|25|sort=yes}}
+|
+|
+|[[Varrock Diary|Varrock]]
+|data-sort-value=2|[[Varrock Diary#Medium|Medium]]
+|Cast the [[Varrock Teleport|Teleport to Varrock]] spell
+|-
+|{{SCP|Magic|31|sort=yes}}
+|
+|
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=2|[[Lumbridge & Draynor Diary#Medium|Medium]]
+|Cast the [[Lumbridge Teleport]] spell
+|-
+|{{SCP|Magic|33|sort=yes}}
+|
+|
+|[[Falador Diary|Falador]]
+|data-sort-value=2|[[Falador Diary#Medium|Medium]]
+|[[Telekinetic grab|Telegrab]] some [[Wine of Zamorak]] at the Chaos Temple by the [[Wilderness]]
+|-
+|{{SCP|Magic|37|sort=yes}}
+|
+|
+|[[Falador Diary|Falador]]
+|data-sort-value=2|[[Falador Diary#Medium|Medium]]
+|[[Falador Teleport|Teleport to Falador]]
+|-
+|{{SCP|Magic|45|sort=yes}}
+|
+|
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=2|[[Kandarin Diary#Medium|Medium]]
+|[[Camelot Teleport|Teleport to Camelot]]
+|-
+|{{SCP|Magic|49|sort=yes}}
+|
+|[[The Dig Site]]
+|[[Varrock Diary|Varrock]]
+|data-sort-value=2|[[Varrock Diary#Medium|Medium]]
+|Teleport to the [[Digsite]] using a [[Digsite pendant]]
+|-
+|{{SCP|Magic|50|sort=yes}}
+|{{SCP|Attack}}50
+|[[Underground Pass]]
+|[[Ardougne Diary|Ardougne]]
+|data-sort-value=2|[[Ardougne Diary#Medium|Medium]]
+|Equip [[Iban's upgraded staff]] or upgrade an [[Iban's staff|Iban staff]].
+|-
+|{{SCP|Magic|51|sort=yes}}
+|
+|[[Plague City]]
+|[[Ardougne Diary|Ardougne]]
+|data-sort-value=2|[[Ardougne Diary#Medium|Medium]]
+|Cast the [[Ardougne Teleport]] spell
+|-
+|{{SCP|Magic|54|sort=yes}}
+|
+|[[Desert Treasure I]]
+|[[Varrock Diary|Varrock]]
+|data-sort-value=3|[[Varrock Diary#Hard|Hard]]
+|[[Paddewwa Teleport|Teleport to Paddewwa]]
+|-
+|{{SCP|Magic|56|sort=yes}}
+|
+|
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=3|[[Kandarin Diary#Hard|Hard]]
+|[[Charge Water Orb|Charge a water orb]]
+|-
+|{{SCP|Magic|57|sort=yes}}
+|{{SCP|Crafting|70}}
+|
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=3|[[Lumbridge & Draynor Diary#Hard|Hard]]
+|[[Diamond amulet (u)|Craft]], [[Diamond amulet|string]], and [[Lvl-4 Enchant|enchant]] an [[Amulet of power]] in [[Lumbridge]]
+|-
+|{{SCP|Magic|58|sort=yes}}
+|
+|[[Watchtower]]
+|[[Ardougne Diary|Ardougne]]
+|data-sort-value=3|[[Ardougne Diary#Hard|Hard]]
+|[[Watchtower Teleport|Teleport to the Watchtower]]
+|-
+|{{SCP|Magic|60|sort=yes}}
+|
+|[[Mage Training Arena]]
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=3|[[Lumbridge & Draynor Diary#Hard|Hard]]
+|Cast [[Bones to Peaches]] in [[Al-Kharid]] Palace
+|-
+|{{SCP|Magic|60|sort=yes}}
+|
+|
+|[[Wilderness Diary|Wilderness]]
+|data-sort-value=2|[[Wilderness Diary#Medium|Medium]]
+|[[Charge Earth Orb|Charge an earth orb]]
+|-
+|{{SCP|Magic|60|sort=yes}}
+|
+|[[Mage Arena|Mage Arena Minigame]]
+|[[Wilderness Diary|Wilderness]]
+|data-sort-value=3|[[Wilderness Diary#Hard|Hard]]
+|Cast one of the 3 [[God spells]] against another player in the [[Wilderness]]
+|-
+|{{SCP|Magic|61|sort=yes}}
+|
+|[[Eadgar's Ruse]]
+|[[Fremennik Diary|Fremennik]]
+|data-sort-value=3|[[Fremennik Diary#Hard|Hard]]
+|[[Trollheim Teleport|Teleport to Trollheim]]
+|-
+|{{SCP|Magic|64|sort=yes}}
+|
+|[[Recipe for Disaster#Awowogei|Recipe for Disaster (Awowogei sub-quest)]]
+|[[Western Provinces Diary|Western Provinces]]
+|data-sort-value=3|[[Western Provinces Diary#Hard|Hard]]
+|[[Ape Atoll Teleport (standard)|Teleport to Ape Atoll]]
+|-
+|{{SCP|Magic|66|sort=yes}}
+|
+|
+|[[Ardougne Diary|Ardougne]]
+|data-sort-value=3|[[Ardougne Diary#Hard|Hard]]
+|Enter the [[Wizards' Guild|Magic Guild]]
+|-
+|{{SCP|Magic|66|sort=yes}}
+|
+|[[Dream Mentor]]
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|data-sort-value=3|[[Kourend & Kebos Diary#Hard|Hard]]
+|Cast [[Monster Examine]] on a [[mountain troll]] south of [[Mount Quidamortem]].
+|-
+|{{SCP|Magic|66|sort=yes}}
+|{{SCP|Construction|50}}
+|[[Desert Treasure I]]
+|[[Morytania Diary|Morytania]]
+|data-sort-value=3|[[Morytania Diary#Hard|Hard]]
+|Enter the [[Portal Chamber|Kharyrll portal]] in your [[POH]]
+|-
+|{{SCP|Magic|66|sort=yes}}
+|
+|
+|[[Wilderness Diary|Wilderness]]
+|data-sort-value=3|[[Wilderness Diary#Hard|Hard]]
+|[[Charge Air Orb|Charge an air orb]]
+|-
+|{{SCP|Magic|68|sort=yes}}
+|
+|[[Dream Mentor]]
+|[[Desert Diary|Desert]]
+|data-sort-value=3|[[Desert Diary#Hard|Hard]]
+|Refill your [[Waterskin]]s in the [[Desert]] using [[Lunar spells]] ([[Humidify]])
+|-
+|{{SCP|Magic|72|sort=yes}}
+|
+|[[Lunar Diplomacy]]
+|[[Fremennik Diary|Fremennik]]
+|data-sort-value=3|[[Fremennik Diary#Hard|Hard]]
+|[[Waterbirth Teleport|Teleport to Waterbirth Island]]
+|-
+|{{SCP|Magic|83|sort=yes}}
+|
+|[[Lunar Diplomacy]]
+|[[Morytania Diary|Morytania]]
+|data-sort-value=4|[[Morytania Diary#Elite|Elite]]
+|Fertilise the [[Morytania]] [[herb patch]] using [[Lunar spells]] ([[Fertile Soil]])
+|-
+|{{SCP|Magic|86|sort=yes}}
+|
+|[[Dream Mentor]]
+|[[Varrock Diary|Varrock]]
+|data-sort-value=4|[[Varrock Diary#Elite|Elite]]
+|Use [[Lunar spells|Lunar magic]] to make 20 [[Mahogany plank]]s at the [[Lumber Yard]] ([[Plank Make]])
+|-
+|{{SCP|Magic|87|sort=yes}}
+|
+|[[Lunar Diplomacy]]
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=4|[[Kandarin Diary#Elite|Elite]]
+|[[Catherby Teleport|Teleport to Catherby]]
+|-
+|{{SCP|Magic|90|sort=yes}}
+|
+|[[Monkey Madness I]]
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|data-sort-value=4|[[Kourend & Kebos Diary#Elite|Elite]]
+|Create an [[Ape_atoll_teleport_(tablet)|Ape Atoll teleport tablet]].
+|-
+|{{SCP|Magic|94|sort=yes}}
+|
+|[[Desert Treasure I]]
+|[[Ardougne Diary|Ardougne]]
+|data-sort-value=4|[[Ardougne Diary#Elite|Elite]]
+|Cast [[Ice Barrage]] on another player in [[Castle Wars]]
+|-
+|{{SCP|Magic|94|sort=yes}}
+|
+|[[Desert Treasure I]]
+|[[Desert Diary|Desert]]
+|data-sort-value=4|[[Desert Diary#Elite|Elite]]
+|Cast [[Ice Barrage]] against a foe in the [[Desert]]
+|-
+|{{SCP|Magic|96|sort=yes}}
+|
+|[[Desert Treasure I]]
+|[[Wilderness Diary|Wilderness]]
+|data-sort-value=4|[[Wilderness Diary#Elite|Elite]]
+|[[Ghorrock Teleport|Teleport to Ghorrock]]
+|}
+{{Top}}
+----
+
+===Mining===
+{|class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!style="width:56px"|Level
+!style="width:96px"|Other skills
+!style="width:144px"|Quests needed
+!Diary
+!Difficulty
+!Task
+|-
+|{{SCP|Mining|10|sort=yes}}
+|{{SCP|Smithing|13}}
+|[[The Knight's Sword]], [[Doric's Quest]]
+|[[Falador Diary|Falador]]
+|data-sort-value=1|[[Falador Diary#Easy|Easy]]
+|Smith some [[Blurite limbs]] on [[Doric's hut|Doric's anvil]]
+|-
+|{{SCP|Mining|15|sort=yes}}
+|
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|data-sort-value=1|[[Kourend & Kebos Diary#Easy|Easy]]
+|Mine some [[iron ore]] at the [[Mount Karuulm mine]].
+|-
+|{{SCP|Mining|15|sort=yes}}
+|
+|
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=1|[[Lumbridge & Draynor Diary#Easy|Easy]]
+|Mine some [[Iron ore]] at the [[Al-Kharid mine]]
+|-
+|{{SCP|Mining|15|sort=yes}}
+|
+|
+|[[Varrock Diary|Varrock]]
+|data-sort-value=1|[[Varrock Diary#Easy|Easy]]
+|Mine some [[Iron ore|Iron]] in the south-east mining patch near [[Varrock]]
+|-
+|{{SCP|Mining|15|sort=yes}}
+|
+|
+|[[Wilderness Diary|Wilderness]]
+|data-sort-value=1|[[Wilderness Diary#Easy|Easy]]
+|Mine some [[Iron ore]] in the [[Wilderness]]
+|-
+|{{SCP|Mining|15|sort=yes}}
+|
+|
+|[[Western Provinces Diary|Western Provinces]]
+|data-sort-value=1|[[Western Provinces Diary#Easy|Easy]]
+|Mine some [[Iron ore]] near [[Piscatoris]]
+|-
+|{{SCP|Mining|23|sort=yes}}
+|{{SCP|Crafting|23}}
+|[[The Fremennik Trials]]
+|[[Fremennik Diary|Fremennik]]
+|data-sort-value=1|[[Fremennik Diary#Easy|Easy]]
+|Craft a [[Tiara]] from scratch in [[Rellekka]]
+|-
+|{{SCP|Mining|30|sort=yes}}
+|
+|[[The Fremennik Trials]]
+|[[Fremennik Diary|Fremennik]]
+|data-sort-value=2|[[Fremennik Diary#Medium|Medium]]
+|Mine some [[Coal]] in [[Rellekka]]
+|-
+|{{SCP|Mining|30|sort=yes}}
+|
+|
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=2|[[Kandarin Diary#Medium|Medium]]
+|Mine some [[Coal]] near the [[Coal trucks]]
+|-
+|{{SCP|Mining|38|sort=yes}}
+|{{SCP|Crafting}}38 {{SCP|Runecraft}}77
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|data-sort-value=4|[[Kourend & Kebos Diary#Elite|Elite]]
+|Craft one or more [[blood rune]]s.
+|-
+|{{SCP|Mining|40|sort=yes}}
+|{{SCP|Crafting|40}}
+|
+|[[Falador Diary|Falador]]
+|data-sort-value=2|[[Falador Diary#Medium|Medium]]
+|Mine some [[Gold ore]] at the [[Crafting Guild]]
+|-
+|{{SCP|Mining|40|sort=yes}}
+|
+|(Started) [[Between a Rock...]]
+|[[Fremennik Diary|Fremennik]]
+|data-sort-value=2|[[Fremennik Diary#Medium|Medium]]
+|Mine some [[Gold ore|Gold]] at the [[Arzinian Mine]]
+|-
+|{{SCP|Mining|40|sort=yes}}
+|
+|
+|[[Karamja Diary|Karamja]]
+|data-sort-value=1|[[Karamja Diary#Easy|Easy]]
+|Mine some [[Gold ore|Gold]] from the rocks on the [[North-west Brimhaven mine|north-west peninsula of Karamja]]
+|-
+|{{SCP|Mining|40|sort=yes}}
+|
+|[[Shilo Village]] OR [[Jungle Potion]]
+|[[Karamja Diary|Karamja]]
+|data-sort-value=2|[[Karamja Diary#Medium|Medium]]
+|Mine a [[Red topaz]] from a [[Gem rock]]
+|-
+|{{SCP|Mining|40|sort=yes}}
+|
+|[[The Grand Tree]]
+|[[Western Provinces Diary|Western Provinces]]
+|data-sort-value=2|[[Western Provinces Diary#Medium|Medium]]
+|Mine some [[Gold ore]] underneath the [[Grand Tree]]
+|-
+|{{SCP|Mining|42|sort=yes}}
+|
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|data-sort-value=2|[[Kourend & Kebos Diary#Medium|Medium]]
+|Mine some [[volcanic sulphur]].
+|-
+|{{SCP|Mining|45|sort=yes}}
+|
+|
+|[[Desert Diary|Desert]]
+|data-sort-value=3|[[Desert Diary#Hard|Hard]]
+|Mine some [[Granite]]
+|-
+|{{SCP|Mining|52|sort=yes}}
+|{{SCP|Woodcutting|15}} {{SCP|Thieving|50}} {{SCP|Strength|50}} {{SCP|Agility|50}}
+|(Started) [[Legends' Quest]]
+|[[Karamja Diary|Karamja]]
+|data-sort-value=3|[[Karamja Diary#Hard|Hard]]
+|Kill a [[Deathwing]] in the [[Shaman Caves|dungeon]] under the [[Kharazi Jungle]]
+|-
+|{{SCP|Mining|55|sort=yes}}
+|
+|
+|[[Wilderness Diary|Wilderness]]
+|data-sort-value=2|[[Wilderness Diary#Medium|Medium]]
+|Mine some [[Mithril ore]] in the [[Wilderness]]
+|-
+|{{SCP|Mining|55|sort=yes}}
+|
+|[[Haunted Mine]]
+|[[Morytania Diary|Morytania]]
+|data-sort-value=3|[[Morytania Diary#Hard|Hard]]
+|Mine some [[Mithril ore]] in the [[Abandoned Mine]]
+|-
+|{{SCP|Mining|60|sort=yes}}
+|
+|
+|[[Falador Diary|Falador]]
+|data-sort-value=3|[[Falador Diary#Hard|Hard]]
+|Enter the [[Mining Guild]] while wearing a [[prospector helmet]].
+|-
+|{{SCP|Mining|65|sort=yes}}
+|
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|data-sort-value=3|[[Kourend & Kebos Diary#Hard|Hard]]
+|Mine some [[Lovakite ore]].
+|-
+|{{SCP|Mining|70|sort=yes}}
+|
+|[[The Fremennik Isles]]
+|[[Fremennik Diary|Fremennik]]
+|data-sort-value=3|[[Fremennik Diary#Hard|Hard]]
+|Mine 5 [[Adamantite ore]]s on [[Jatizso]]
+|-
+|{{SCP|Mining|70|sort=yes}}
+|
+|[[Regicide]]
+|[[Western Provinces Diary|Western Provinces]]
+|data-sort-value=3|[[Western Provinces Diary#Hard|Hard]]
+|Mine some [[Adamantite ore]] in [[Tirannwn]]
+|-
+|{{SCP|Mining|85|sort=yes}}
+|{{SCP|Smithing|90}}
+|
+|[[Wilderness Diary|Wilderness]]
+|data-sort-value=4|[[Wilderness Diary#Elite|Elite]]
+|Smith a [[Rune scimitar]] from scratch in the [[Resource Area]]
+|}
+{{Top}}
+----
+
+===Prayer===
+{|class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!style="width:56px"|Level
+!style="width:96px"|Other skills
+!style="width:144px"|Quests needed
+!Diary
+!Difficulty
+!Task
+|-
+|{{SCP|Prayer|10|sort=yes}}
+|{{SCP|Defence|20}}
+|[[Recruitment Drive]]
+|[[Falador Diary|Falador]]
+|data-sort-value=2|[[Falador Diary#Medium|Medium]]
+|Pray at the Altar of Guthix in [[Taverley]] whilst wearing full [[Initiate armour]]
+|-
+|{{SCP|Prayer|20|sort=yes}}
+|{{SCP|Defence|30}}
+|[[The Slug Menace]]
+|[[Falador Diary|Falador]]
+|data-sort-value=3|[[Falador Diary#Hard|Hard]]
+|Recharge your prayer in Port Sarim church while wearing full [[Proselyte armour]]
+|-
+|{{SCP|Prayer|52|sort=yes}}
+|
+|
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=3|[[Lumbridge & Draynor Diary#Hard|Hard]]
+|Recharge your prayer at the [[Emir's Arena]] with [[Smite]] activated
+|-
+|{{SCP|Prayer|52|sort=yes}}
+|
+|
+|[[Varrock Diary|Varrock]]
+|data-sort-value=3|[[Varrock Diary#Hard|Hard]]
+|Pray at the altar in [[Varrock Palace]] with [[Smite]] active
+|-
+|{{SCP|Prayer|70|sort=yes}}
+|{{SCP|Construction|16}}
+|
+|[[Falador Diary|Falador]]
+|data-sort-value=3|[[Falador Diary#Hard|Hard]]
+|Change your [[Sir Renitee|family crest]] to the Saradomin symbol
+|-
+|{{SCP|Prayer|70|sort=yes}}
+|{{SCP|Defence|70}}
+|[[King's Ransom]], [[Camelot training room|Knights' Waves Training Ground]]
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=3|[[Kandarin Diary#Hard|Hard]]
+|Enter the [[Seers' Village]] courthouse with [[Piety]] turned on
+|-
+|{{SCP|Prayer|70|sort=yes}}
+|{{SCP|Defence|70}}
+|[[Nature Spirit]], [[King's Ransom]], [[Camelot training room|Knights' Waves Training Ground]]
+|[[Morytania Diary|Morytania]]
+|data-sort-value=3|[[Morytania Diary#Hard|Hard]]
+|Pray at the [[Nature Grotto|Altar of Nature]] with [[Piety]] activated
+|-
+|{{SCP|Prayer|85|sort=yes}}
+|
+|(Started) [[Icthlarin's Little Helper]]
+|[[Desert Diary|Desert]]
+|data-sort-value=4|[[Desert Diary#Elite|Elite]]
+|Restore at least 85 [[Prayer points]] when praying at the altar in [[Sophanem]]
+|}
+{{Top}}
+----
+
+===Ranged===
+{|class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!style="width:56px"|Level
+!style="width:96px"|Other skills
+!style="width:144px"|Quests needed
+!Diary
+!Difficulty
+!Task
+|-
+|{{SCP|Ranged|19|sort=yes-42}}
+|{{SCP|Agility|8-53}}
+{{SCP|Strength|19-38}}
+|
+|Various
+|Various
+|''Multiple'' ([[#Crossbow shortcuts|crossbow shortcut achievements]])
+|-
+|{{SCP|Ranged|30|sort=yes}}
+|{{SCP|Fletching|5}}
+|[[Big Chompy Bird Hunting]]
+|[[Western Provinces Diary|Western Provinces]]
+|Various
+|''Multiple'' ([[#Chompy bird hunting|Chompy bird hunting achievements]])
+|-
+|{{SCP|Ranged|40|sort=yes}}
+|
+|
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=2|[[Kandarin Diary#Medium|Medium]]
+|Enter the [[Ranging Guild]]
+|-
+|{{SCP|Ranged|50|sort=yes}}
+|
+|[[Animal Magnetism]]
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=2|[[Lumbridge & Draynor Diary#Medium|Medium]]
+|Purchase an [[Ava's accumulator|upgraded device]] from [[Ava]]
+|-
+|{{SCP|Ranged|70|sort=yes}}
+|{{SCP|Agility|70}} {{SCP|Hitpoints|70}} {{SCP|Strength|70}}
+|[[Troll Stronghold]]
+|[[Fremennik Diary|Fremennik]]
+|data-sort-value=4|[[Fremennik Diary#Elite|Elite]]
+|Kill the generals of [[Armadyl]], [[Bandos]], [[Saradomin]], and [[Zamorak]] in the [[God Wars Dungeon]].
+|-
+|{{SCP|Ranged|70|sort=yes}}
+|{{SCP|Agility|70}} {{SCP|Strength|70}}
+|[[Death to the Dorgeshuun]]
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=4|[[Lumbridge & Draynor Diary#Elite|Elite]]
+|Grapple across a pylon on the [[Dorgesh-Kaan Agility Course]]
+|-
+|{{SCP|Ranged|70|sort=yes}}
+|{{SCP|Agility|50}}
+|[[Roving Elves]]
+|[[Western Provinces Diary|Western Provinces]]
+|data-sort-value=3|[[Western Provinces Diary#Hard|Hard]]
+|Kill an [[Elf]] with a [[Crystal bow]]
+|-
+|{{SCP|Ranged}}70 or {{SCP|Attack|70}}
+|{{SCP|Defence|70}}
+|
+|[[Morytania Diary|Morytania]]
+|data-sort-value=4|[[Morytania Diary#Elite|Elite]]
+|Loot the [[Barrows]] chest while wearing any complete [[Barrows set]]
+|}
+{{Top}}
+----
+
+===Runecraft===
+{|class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!style="width:56px"|Level
+!style="width:96px"|Other skills
+!style="width:144px"|Quests needed
+!Diary
+!Difficulty
+!Task
+|-
+|{{SCP|Runecraft|5|sort=yes}}
+|
+|
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=1|[[Lumbridge & Draynor Diary#Easy|Easy]]
+|Craft some [[Water rune]]s
+|-
+|{{SCP|Runecraft|9|sort=yes}}
+|
+|
+|[[Varrock Diary|Varrock]]
+|data-sort-value=1|[[Varrock Diary#Easy|Easy]]
+|Craft some [[Earth rune]]s
+|-
+|{{SCP|Runecraft|23|sort=yes}}
+|
+|
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=2|[[Lumbridge & Draynor Diary#Medium|Medium]]
+|Craft some [[Lava rune]]s at the [[Fire Altar]] in Al-Kharid
+|-
+|{{SCP|Runecraft|44|sort=yes}}
+|
+|
+|[[Karamja Diary|Karamja]]
+|data-sort-value=3|[[Karamja Diary#Hard|Hard]]
+|Craft some [[Nature rune]]s
+|-
+|{{SCP|Runecraft|56|sort=yes}}
+|
+|
+|[[Falador Diary|Falador]]
+|data-sort-value=3|[[Falador Diary#Hard|Hard]]
+|Craft 140 [[Mind runes]] simultaneously
+|-
+|{{SCP|Runecraft|59|sort=yes}}
+|
+|[[Lost City]]
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=3|[[Lumbridge & Draynor Diary#Hard|Hard]]
+|Craft 56 [[Cosmic runes]] simultaneously
+|-
+|{{SCP|Runecraft|65|sort=yes}}
+|
+|[[Mourning's End Part II]]
+|[[Ardougne Diary|Ardougne]]
+|data-sort-value=3|[[Ardougne Diary#Hard|Hard]]
+|Craft some [[Death runes]]
+|-
+|{{SCP|Runecraft|76|sort=yes}}
+|
+|
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=4|[[Lumbridge & Draynor Diary#Elite|Elite]]
+|Craft 140 or more [[Water rune]]s at once
+|-
+|{{SCP|Runecraft|77|sort=yes}}
+|{{SCP|Crafting}}38 {{SCP|Mining|38}}
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|data-sort-value=4|[[Kourend & Kebos Diary#Elite|Elite]]
+|Craft one or more [[blood rune]]s.
+|-
+|{{SCP|Runecraft|78|sort=yes}}
+|
+|
+|[[Varrock Diary|Varrock]]
+|data-sort-value=4|[[Varrock Diary#Elite|Elite]]
+|Craft 100 or more [[Earth rune]]s simultaneously
+|-
+|{{SCP|Runecraft|82|sort=yes}}
+|
+|[[Lunar Diplomacy]]
+|[[Fremennik Diary|Fremennik]]
+|data-sort-value=4|[[Fremennik Diary#Elite|Elite]]
+|Craft 56 [[Astral rune]]s at once
+|-
+|{{SCP|Runecraft|88|sort=yes}}
+|
+|
+|[[Falador Diary|Falador]]
+|data-sort-value=4|[[Falador Diary#Elite|Elite]]
+|Craft 252 [[Air rune]]s at once
+|-
+|{{SCP|Runecraft|91|sort=yes}}
+|
+|
+|[[Karamja Diary|Karamja]]
+|data-sort-value=4|[[Karamja Diary#Elite|Elite]]
+|Craft 56 [[Nature rune]]s at once
+|}
+{{Top}}
+----
+
+===Slayer===
+{|class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!style="width:56px"|Level
+!style="width:96px"|Other skills
+!style="width:144px"|Quests needed
+!Diary
+!Difficulty
+!Task
+|-
+|{{SCP|Slayer|7|sort=yes}}
+|
+|
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=1|[[Lumbridge & Draynor Diary#Easy|Easy]]
+|Slay a [[Cave bug]] in the [[Lumbridge Swamp Caves]]
+|-
+|{{SCP|Slayer|15|sort=yes}}
+|
+|
+|[[Morytania Diary|Morytania]]
+|data-sort-value=1|[[Morytania Diary#Easy|Easy]]
+|Kill a [[Banshee]] in the [[Slayer Tower]]
+|-
+|{{SCP|Slayer|22|sort=yes}}
+|
+|
+|[[Desert Diary|Desert]]
+|data-sort-value=2|[[Desert Diary#Medium|Medium]]
+|Slay a [[Desert lizard]]
+|-
+|{{SCP|Slayer|32|sort=yes}}
+|
+|[[Skippy and the Mogres]]
+|[[Falador Diary|Falador]]
+|data-sort-value=2|[[Falador Diary#Medium|Medium]]
+|Kill a [[Mogre]] at [[Mudskipper Point]]
+|-
+|{{SCP|Slayer|40|sort=yes}}
+|
+|[[Haunted Mine]]
+|[[Morytania Diary|Morytania]]
+|data-sort-value=2|[[Morytania Diary#Medium|Medium]]
+|Kill a [[Terror dog]]
+|-
+|{{SCP|Slayer|42|sort=yes}}
+|
+|[[Rum Deal]]
+|[[Morytania Diary|Morytania]]
+|data-sort-value=2|[[Morytania Diary#Medium|Medium]]
+|Kill a [[Fever spider]] on [[Braindeath Island]]
+|-
+|{{SCP|Slayer|47|sort=yes}}
+|
+|(Started) [[Olaf's Quest]]
+|[[Fremennik Diary|Fremennik]]
+|data-sort-value=2|[[Fremennik Diary#Medium|Medium]]
+|Slay a [[Brine rat]]
+|-
+|{{SCP|Slayer|50|sort=yes}}
+|{{SCP|Combat|100}}
+|[[Shilo Village]]
+|[[Karamja Diary|Karamja]]
+|data-sort-value=3|[[Karamja Diary#Hard|Hard]]
+|Be assigned a Slayer task by the [[Duradel|Slayer Master]] in [[Shilo Village (location)|Shilo Village]]
+|-
+|{{SCP|Slayer|50|sort=yes}}
+|{{SCP|Agility|60}}
+OR {{SCP|Strength|60}}
+|
+|[[Wilderness Diary|Wilderness]]
+|data-sort-value=2|[[Wilderness Diary#Medium|Medium]]
+|Kill a [[Bloodveld]] in the [[Wilderness God Wars Dungeon]]
+|-
+|{{SCP|Slayer|58|sort=yes}}
+|
+|[[Cabin Fever]]
+|[[Morytania Diary|Morytania]]
+|data-sort-value=3|[[Morytania Diary#Hard|Hard]]
+|Kill a [[Cave horror]]
+|-
+|{{SCP|Slayer|62|sort=yes}}
+|
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|data-sort-value=3|[[Kourend & Kebos Diary#Hard|Hard]]
+|Kill a [[wyrm]] in the [[Karuulm Slayer Dungeon]].
+|-
+|{{SCP|Slayer|65|sort=yes}}
+|{{SCP|Crafting|55}}
+|(Started) [[Desert Treasure I]]
+|[[Desert Diary|Desert]]
+|data-sort-value=3|[[Desert Diary#Hard|Hard]]
+|Slay a [[Dust devil]] with a [[Slayer helmet]] equipped
+|-
+|{{SCP|Slayer|68|sort=yes}}
+|
+|
+|[[Wilderness Diary|Wilderness]]
+|data-sort-value=3|[[Wilderness Diary#Hard|Hard]]
+|Kill a [[Spiritual warrior]] in the [[Wilderness God Wars Dungeon]]
+|-
+|{{SCP|Slayer|72|sort=yes}}
+|
+|
+|[[Falador Diary|Falador]]
+|data-sort-value=3|[[Falador Diary#Hard|Hard]]
+|Kill a [[Skeletal wyvern]] in the [[Asgarnia Ice Dungeon]]
+|-
+|{{SCP|Slayer|83|sort=yes}}
+|{{SCP|Agility|60}}
+OR {{SCP|Strength|60}}
+|[[Troll Stronghold]]
+|[[Fremennik Diary|Fremennik]]
+|data-sort-value=4|[[Fremennik Diary#Elite|Elite]]
+|Slay a [[Spiritual mage]] within the [[God Wars Dungeon]]
+|-
+|{{SCP|Slayer|83|sort=yes}}
+|{{SCP|Agility|60}}
+OR {{SCP|Strength|60}}
+|
+|[[Wilderness Diary|Wilderness]]
+|data-sort-value=4|[[Wilderness Diary#Elite|Elite]]
+|Slay a [[Spiritual mage]] within the [[Wilderness God Wars Dungeon]]
+|-
+|{{SCP|Slayer|85|sort=yes}}
+|
+|
+|[[Morytania Diary|Morytania]]
+|data-sort-value=4|[[Morytania Diary#Elite|Elite]]
+|Kill an [[Abyssal demon]] in the [[Slayer Tower]]
+|-
+|{{SCP|Slayer|93|sort=yes}}
+|
+|
+|[[Western Provinces Diary|Western Provinces]]
+|data-sort-value=4|[[Western Provinces Diary#Elite|Elite]]
+|Kill the [[thermonuclear smoke devil]]
+|-
+|{{SCP|Slayer|95|sort=yes}}
+|
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|data-sort-value=4|[[Kourend & Kebos Diary#Elite|Elite]]
+|Kill a [[hydra]] in the [[Karuulm Slayer Dungeon]].
+|}
+{{Top}}
+----
+
+===Smithing===
+{|class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!style="width:56px"|Level
+!style="width:96px"|Other skills
+!style="width:144px"|Quests needed
+!Diary
+!Difficulty
+!Task
+|-
+|{{SCP|Smithing|13|sort=yes}}
+|{{SCP|Mining|10}}
+|[[The Knight's Sword]], [[Doric's Quest]]
+|[[Falador Diary|Falador]]
+|data-sort-value=1|[[Falador Diary#Easy|Easy]]
+|Smith some [[Blurite limbs]] on [[Doric's Hut|Doric's anvil]]
+|-
+|{{SCP|Smithing|35|sort=yes}}
+|
+|(Started) [[Ghosts Ahoy]], [[Dwarf Cannon]]
+|[[Morytania Diary|Morytania]]
+|data-sort-value=2|[[Morytania Diary#Medium|Medium]]
+|Make a batch of [[steel cannonball]]s at the [[Port Phasmatys]] furnace
+|-
+|{{SCP|Smithing|50|sort=yes}}
+|
+|(Started) [[Between a Rock...]]
+|[[Wilderness Diary|Wilderness]]
+|data-sort-value=2|[[Wilderness Diary#Medium|Medium]]
+|Smith a [[Gold helmet]] in the [[Resource Area]]
+|-
+|{{SCP|Smithing|60|sort=yes}}
+|
+|[[Legends' Quest]]
+|[[Ardougne Diary|Ardougne]]
+|data-sort-value=3|[[Ardougne Diary#Hard|Hard]]
+|Smith a [[Dragon sq shield]] in [[West Ardougne]]
+|-
+|{{SCP|Smithing|60|sort=yes}}
+|
+|[[The Giant Dwarf]]
+|[[Fremennik Diary|Fremennik]]
+|data-sort-value=3|[[Fremennik Diary#Hard|Hard]]
+|Obtain the [[Blast Furnace Foreman]]'s permission to use the [[Blast Furnace]] for free
+|-
+|{{SCP|Smithing|68|sort=yes}}
+|
+|
+|[[Ardougne Diary|Ardougne]]
+|data-sort-value=3|[[Ardougne Diary#Hard|Hard]]
+|Smith a [[Mithril platebody]] near [[Ardougne]]
+|-
+|{{SCP|Smithing|68|sort=yes}}
+|
+|
+|[[Desert Diary|Desert]]
+|data-sort-value=3|[[Desert Diary#Hard|Hard]]
+|Create a [[Mithril platebody]] in [[Nardah]]
+|-
+|{{SCP|Smithing|70|sort=yes}}
+|
+|[[The Forsaken Tower]]
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|data-sort-value=3|[[Kourend & Kebos Diary#Hard|Hard]]
+|Smelt an [[adamantite bar]] in [[The Forsaken Tower (location)|The Forsaken Tower]].
+|-
+|{{SCP|Smithing|75|sort=yes}}
+|
+|[[Barbarian Smithing|Barbarian Training - Smithing]]
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=3|[[Kandarin Diary#Hard|Hard]]
+|Smith an [[Adamant spear]] at [[Otto's Grotto]]
+|-
+|{{SCP|Smithing|75|sort=yes}}
+|
+|
+|[[Wilderness Diary|Wilderness]]
+|data-sort-value=3|[[Wilderness Diary#Hard|Hard]]
+|Smith an [[Adamant scimitar]] in the [[Resource Area]]
+|-
+|{{SCP|Smithing|88|sort=yes}}
+|
+|
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=4|[[Lumbridge & Draynor Diary#Elite|Elite]]
+|Smith an [[Adamant platebody]] down [[Draynor sewer]]
+|-
+|{{SCP|Smithing|89|sort=yes}}
+|{{SCP|Fletching|81}}
+|[[The Tourist Trap]]
+|[[Varrock Diary|Varrock]]
+|data-sort-value=4|[[Varrock Diary#Elite|Elite]]
+|Smith and fletch 10 [[Rune dart]]s within [[Varrock]]
+|-
+|{{SCP|Smithing|90|sort=yes}}
+|
+|[[Barbarian Smithing|Barbarian Training - Smithing]]
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=4|[[Kandarin Diary#Elite|Elite]]
+|Smith a [[Rune hasta]] at [[Otto's Grotto]]
+|-
+|{{SCP|Smithing|90|sort=yes}}
+|{{SCP|Mining|85}}
+|
+|[[Wilderness Diary|Wilderness]]
+|data-sort-value=4|[[Wilderness Diary#Elite|Elite]]
+|Smith a [[Rune scimitar]] from scratch in the [[Resource Area]]
+|-
+|{{SCP|Smithing|91|sort=yes}}
+|{{SCP|Crafting|10}} {{SCP|Fletching|69}}
+|
+|[[Ardougne Diary|Ardougne]]
+|data-sort-value=4|[[Ardougne Diary#Elite|Elite]]
+|Make a [[Rune crossbow]] yourself from scratch within [[Witchaven]] or [[Yanille]]
+|}
+{{Top}}
+----
+
+===Strength===
+{|class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!style="width:56px"|Level
+!style="width:96px"|Other skills
+!style="width:144px"|Quests needed
+!Diary
+!Difficulty
+!Task
+|-
+|{{SCP|Strength|32+|sort=yes}}
+|{{SCP|Attack|+}} {{SCP|Strength|=}} 130 or
+{{SCP|Attack}} or {{SCP|Strength|=}} 99
+|
+|[[Falador Diary|Falador]]
+|data-sort-value=3|[[Falador Diary#Hard|Hard]]
+|Enter the [[Warriors' Guild]]
+|-
+|{{SCP|Strength|19|sort=yes-38}}
+|{{SCP|Agility|8-53}}
+{{SCP|Ranged|19-42}}
+|
+|Various
+|Various
+|''Multiple'' ([[#Crossbow shortcuts|crossbow shortcut achievements]])
+|-
+|{{SCP|Strength|45|sort=yes}}
+|
+|[[Eagles' Peak]]
+|[[Desert Diary|Desert]]
+|data-sort-value=2|[[Desert Diary#Medium|Medium]]
+|Travel to the [[Desert]] via the [[Eagle transport system]]
+|-
+|{{SCP|Strength|45|sort=yes}}
+|{{SCP|Fishing|70}} {{SCP|Agility|45}}
+|[[Barbarian Fishing|Barbarian Training - Fishing]]
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=3|[[Kandarin Diary#Hard|Hard]]
+|Catch a [[Leaping sturgeon]]
+|-
+|{{SCP|Strength|50|sort=yes}}
+|{{SCP|Defence|50}}
+|
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=3|[[Kandarin Diary#Hard|Hard]]
+|Purchase and equip a [[Granite body]] from [[Barbarian Assault]]
+|-
+|{{SCP|Strength|50|sort=yes}}
+|{{SCP|Woodcutting|15}} {{SCP|Agility|50}} {{SCP|Thieving|50}} {{SCP|Mining|52}}
+|(Started) [[Legends' Quest]]
+|[[Karamja Diary|Karamja]]
+|data-sort-value=3|[[Karamja Diary#Hard|Hard]]
+|Kill a [[Deathwing]] in the [[Shaman Caves|dungeon]] under the [[Kharazi Jungle]]
+|-
+|{{SCP|Strength|60|sort=yes}}
+|OR {{SCP|Agility|60}}
+|
+|[[Wilderness Diary|Wilderness]]
+|data-sort-value=2|[[Wilderness Diary#Medium|Medium]]
+|Enter the [[Wilderness God Wars Dungeon]]
+|-
+|{{SCP|Strength|60|sort=yes}}
+|(OR {{SCP|Agility|60}})
+{{SCP|Slayer|83}}
+|
+|[[Wilderness Diary|Wilderness]]
+|data-sort-value=4|[[Wilderness Diary#Elite|Elite]]
+|Slay a [[Spiritual mage]] within the [[Wilderness God Wars Dungeon]]
+|-
+|{{SCP|Strength|70|sort=yes}}
+|{{SCP|Agility|70}} {{SCP|Hitpoints|70}} {{SCP|Ranged|70}}
+|[[Troll Stronghold]]
+|[[Fremennik Diary|Fremennik]]
+|data-sort-value=4|[[Fremennik Diary#Elite|Elite]]
+|Kill the generals of [[Armadyl]], [[Bandos]], [[Saradomin]], and [[Zamorak]] in the [[God Wars Dungeon]].
+|-
+|{{SCP|Strength|70|sort=yes}}
+|{{SCP|Agility|70}} {{SCP|Ranged|70}}{{SCP|Thieving|42}}
+|[[Death to the Dorgeshuun]]
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=4|[[Lumbridge & Draynor Diary#Elite|Elite]]
+|Grapple across a pylon on the [[Dorgesh-Kaan Agility Course]]
+|-
+|{{SCP|Strength|76|sort=yes}}
+|{{SCP|Fishing|96}}
+|[[In Aid of the Myreque]], [[Barbarian Fishing|Barbarian Training - Fishing]]
+|[[Morytania Diary|Morytania]]
+|data-sort-value=4|[[Morytania Diary#Elite|Elite]]
+|Catch a [[Shark]] in [[Burgh de Rott]] with your bare hands
+|}
+{{Top}}
+----
+
+===Thieving===
+{|class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!style="width:56px"|Level
+!style="width:96px"|Other skills
+!style="width:144px"|Quests needed
+!Diary
+!Difficulty
+!Task
+|-
+|{{SCP|Thieving|5|sort=yes}}
+|
+|
+|[[Ardougne Diary|Ardougne]]
+|data-sort-value=1|[[Ardougne Diary#Easy|Easy]]
+|Steal a [[Cake]] from the [[East Ardougne]] market stalls
+|-
+|{{SCP|Thieving|5|sort=yes}}
+|
+|(Started) [[The Giant Dwarf]]
+|[[Fremennik Diary|Fremennik]]
+|data-sort-value=1|[[Fremennik Diary#Easy|Easy]]
+|Steal from the [[Keldagrim]] [[Carefree Crafting Stall|crafting]] or [[Keldagrim's Best Bread|baker's stall]]
+|-
+|{{SCP|Thieving|5|sort=yes}}
+|
+|
+|[[Varrock Diary|Varrock]]
+|data-sort-value=1|[[Varrock Diary#Easy|Easy]]
+|Steal from the [[Tea stall]] in [[Varrock]]
+|-
+|{{SCP|Thieving|21|sort=yes}}
+|
+|(Started) [[Icthlarin's Little Helper]]
+|[[Desert Diary|Desert]]
+|data-sort-value=1|[[Desert Diary#Easy|Easy]]
+|Open the sarcophagus in the first room of [[Pyramid Plunder]]
+|-
+|{{SCP|Thieving|25|sort=yes}}
+|
+|[[The Golem]]
+|[[Desert Diary|Desert]]
+|data-sort-value=2|[[Desert Diary#Medium|Medium]]
+|Steal a [[Phoenix feather]] from the [[Desert phoenix]]
+|-
+|{{SCP|Thieving|25|sort=yes}}
+|
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|data-sort-value=1|[[Kourend & Kebos Diary#Easy|Easy]]
+|Steal from a [[Fruit Stall|Hosidius Food Stall]].
+|-
+|{{SCP|Thieving|38|sort=yes}}
+|
+|
+|[[Ardougne Diary|Ardougne]]
+|data-sort-value=2|[[Ardougne Diary#Medium|Medium]]
+|Pickpocket the [[Master Farmer]] north of [[East Ardougne]]
+|-
+|{{SCP|Thieving|38|sort=yes}}
+|
+|
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=2|[[Lumbridge & Draynor Diary#Medium|Medium]]
+|Pickpocket [[Martin the Master Gardener]]
+|-
+|{{SCP|Thieving|40|sort=yes}}
+|
+|
+|[[Falador Diary|Falador]]
+|data-sort-value=2|[[Falador Diary#Medium|Medium]]
+|Pickpocket a [[Falador]] [[guard]]
+|-
+|{{SCP|Thieving|42|sort=yes}}
+|
+|[[The Fremennik Trials]]
+|[[Fremennik Diary|Fremennik]]
+|data-sort-value=2|[[Fremennik Diary#Medium|Medium]]
+|Steal from the [[Rellekka]] [[Fish stall]]s
+|-
+|{{SCP|Thieving|47|sort=yes}}
+|
+|
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=2|[[Kandarin Diary#Medium|Medium]]
+|Steal from the chest in [[Hemenster]]
+|-
+|{{SCP|Thieving|49|sort=yes}}
+|
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|data-sort-value=3|[[Kourend & Kebos Diary#Hard|Hard]]
+|Deliver an artefact to [[Captain Khaled]].
+|-
+|{{SCP|Thieving|50|sort=yes}}
+|
+|
+|[[Falador Diary|Falador]]
+|data-sort-value=3|[[Falador Diary#Hard|Hard]]
+|Crack a [[Wall safe (lobby)|wall safe]] within the [[Rogues' Den]]
+|-
+|{{SCP|Thieving|50|sort=yes}}
+|{{SCP|Woodcutting|15}} {{SCP|Agility|50}} {{SCP|Strength|50}} {{SCP|Mining|52}}
+|(Started) [[Legends' Quest]]
+|[[Karamja Diary|Karamja]]
+|data-sort-value=3|[[Karamja Diary#Hard|Hard]]
+|Kill a [[Deathwing]] in the [[Shaman Caves|dungeon]] under the [[Kharazi Jungle]]
+|-
+|{{SCP|Thieving|65|sort=yes}}
+|
+|[[The Feud]]
+|[[Desert Diary|Desert]]
+|data-sort-value=3|[[Desert Diary#Hard|Hard]]
+|Knock out a [[Menaphite Thug|Menaphite thug]]
+|-
+|{{SCP|Thieving|72|sort=yes}}
+|
+|
+|[[Ardougne Diary|Ardougne]]
+|data-sort-value=3|[[Ardougne Diary#Hard|Hard]]
+|Attempt to steal from a [[Chest (Ardougne Castle)|chest]] in [[Ardougne Castle]].
+|-
+|{{SCP|Thieving|75|sort=yes}}
+|
+|(Started) [[The Giant Dwarf]]
+|[[Fremennik Diary|Fremennik]]
+|data-sort-value=3|[[Fremennik Diary#Hard|Hard]]
+|Steal from the [[Keldagrim]] [[Green Gemstone Gems|gem stall]]
+|-
+|{{SCP|Thieving|75|sort=yes}}
+|
+|
+|[[Western Provinces Diary|Western Provinces]]
+|data-sort-value=3|[[Western Provinces Diary#Hard|Hard]]
+|Pickpocket a [[Gnome]]
+|-
+|{{SCP|Thieving|78|sort=yes}}
+|
+|[[Death to the Dorgeshuun]]
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=4|[[Lumbridge & Draynor Diary#Elite|Elite]]
+|Steal from a [[Dorgesh-Kaan]] rich chest
+|-
+|{{SCP|Thieving|80|sort=yes}}
+|
+|
+|[[Ardougne Diary|Ardougne]]
+|data-sort-value=4|[[Ardougne Diary#Elite|Elite]]
+|Pickpocket a [[Hero]]
+|-
+|{{SCP|Thieving|82|sort=yes}}
+|
+|
+|[[Ardougne Diary|Ardougne]]
+|data-sort-value=4|[[Ardougne Diary#Elite|Elite]]
+|Attempt to picklock the door to the basement of the [[Yanille Agility dungeon]]
+|-
+|{{SCP|Thieving|84|sort=yes}}
+|
+|
+|[[Wilderness Diary|Wilderness]]
+|data-sort-value=4|[[Wilderness Diary#Elite|Elite]]
+|Steal from the [[Chest (Rogues' Castle)]]
+|-
+|{{SCP|Thieving|85|sort=yes}}
+|
+|[[Mourning's End Part I]]
+|[[Western Provinces Diary|Western Provinces]]
+|data-sort-value=4|[[Western Provinces Diary#Elite|Elite]]
+|Pickpocket an [[Elf]]
+|-
+|{{SCP|Thieving|91|sort=yes}}{{Boostable|no}}
+|
+|(Started) [[Icthlarin's Little Helper]]
+|[[Desert Diary|Desert]]
+|data-sort-value=4|[[Desert Diary#Elite|Elite]]
+|Steal from the Grand Gold Chest in the final room of [[Pyramid Plunder]]
+|}
+{{Top}}
+----
+
+===Woodcutting===
+{|class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!style="width:56px"|Level
+!style="width:96px"|Other skills
+!style="width:144px"|Quests needed
+!Diary
+!Difficulty
+!Task
+|-
+|{{SCP|Woodcutting|10|sort=yes}}
+|
+|[[Jungle Potion]]
+|[[Karamja Diary|Karamja]]
+|data-sort-value=2|[[Karamja Diary#Medium|Medium]]
+|Earn 100% favour in the [[Tai Bwo Wannai Cleanup]] minigame
+|-
+|{{SCP|Woodcutting|10|sort=yes}}
+|
+|
+|[[Karamja Diary|Karamja]]
+|data-sort-value=2|[[Karamja Diary#Medium|Medium]]
+|Chop the vines to gain deeper access to [[Brimhaven Dungeon]]
+|-
+|{{SCP|Woodcutting|10|sort=yes}}
+|
+|
+|[[Karamja Diary|Karamja]]
+|data-sort-value=2|[[Karamja Diary#Medium|Medium]]
+|Climb the stairs within [[Brimhaven Dungeon]]
+|-
+|{{SCP|Woodcutting|15|sort=yes}}
+|{{SCP|Firemaking|15}}
+|
+|[[Fremennik Diary|Fremennik]]
+|data-sort-value=1|[[Fremennik Diary#Easy|Easy]]
+|Chop and burn some [[Oak logs]] in the [[Fremennik Province]]
+|-
+|{{SCP|Woodcutting|15|sort=yes}}
+|{{SCP|Firemaking|15}}
+|
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=1|[[Lumbridge & Draynor Diary#Easy|Easy]]
+|Chop and burn some [[Oak logs]] in [[Lumbridge]]
+|-
+|{{SCP|Woodcutting|15|sort=yes}}
+|
+|(Started) [[Legends' Quest]]
+|[[Karamja Diary|Karamja]]
+|data-sort-value=3|[[Karamja Diary#Hard|Hard]]
+|Collect 5 [[Palm leaf|Palm leaves]]
+|-
+|{{SCP|Woodcutting|15|sort=yes}}
+|{{SCP|Strength|50}} {{SCP|Agility|50}} {{SCP|Thieving|50}} {{SCP|Mining|52}}
+|(Started) [[Legends' Quest]]
+|[[Karamja Diary|Karamja]]
+|data-sort-value=3|[[Karamja Diary#Hard|Hard]]
+|Kill a [[Deathwing]] in the [[Shaman Caves|dungeon]] under the [[Kharazi Jungle]]
+|-
+|{{SCP|Woodcutting|30|sort=yes}}
+|{{SCP|Firemaking|30}}
+|
+|[[Falador Diary|Falador]]
+|data-sort-value=2|[[Falador Diary#Medium|Medium]]
+|Chop and burn some [[Willow logs]] in [[Taverley]]
+|-
+|{{SCP|Woodcutting|30|sort=yes}}
+|
+|
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=2|[[Lumbridge & Draynor Diary#Medium|Medium]]
+|Chop some [[Willow logs]] in [[Draynor Village]]
+|-
+|{{SCP|Woodcutting|35|sort=yes}}
+|
+|
+|[[Desert Diary|Desert]]
+|data-sort-value=2|[[Desert Diary#Medium|Medium]]
+|Chop some [[Teak logs]] near [[Ruins of Uzer|Uzer]]
+|-
+|{{SCP|Woodcutting|35|sort=yes}}
+|
+|[[Jungle Potion]] OR [[Legends' Quest]]
+|[[Karamja Diary|Karamja]]
+|data-sort-value=2|[[Karamja Diary#Medium|Medium]]
+|Cut a log from a [[Teak]]
+|-
+|{{SCP|Woodcutting|35|sort=yes}}
+|{{SCP|Firemaking|35}}
+|(Started) [[Monkey Madness I]]
+|[[Western Provinces Diary|Western Provinces]]
+|data-sort-value=2|[[Western Provinces Diary#Medium|Medium]]
+|Chop and burn some [[Teak logs]] on [[Ape Atoll]]
+|-
+|{{SCP|Woodcutting|45|sort=yes}}
+|
+|
+|[[Morytania Diary|Morytania]]
+|data-sort-value=2|[[Morytania Diary#Medium|Medium]]
+|Obtain some [[Bark]] from a [[Hollow tree]]
+|-
+|{{SCP|Woodcutting|50|sort=yes}}
+|{{SCP|Firemaking|50}}
+|[[Cabin Fever]]
+|[[Morytania Diary|Morytania]]
+|data-sort-value=3|[[Morytania Diary#Hard|Hard]]
+|Chop and burn some [[Mahogany logs]] on [[Mos Le'Harmless]]
+|-
+|{{SCP|Woodcutting|50|sort=yes}}
+|
+|
+|[[Karamja Diary|Karamja]]
+|data-sort-value=2|[[Karamja Diary#Medium|Medium]]
+|Cut a log from a [[Mahogany]]
+|-
+|{{SCP|Woodcutting|50|sort=yes}}
+|
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|data-sort-value=2|[[Kourend & Kebos Diary#Medium|Medium]]
+|Chop some [[mahogany logs]] north of the [[Farming Guild]].
+|-
+|{{SCP|Woodcutting|50|sort=yes}}
+|{{SCP|Firemaking|50}}
+|(Started) [[Monkey Madness I]]
+|[[Western Provinces Diary|Western Provinces]]
+|data-sort-value=3|[[Western Provinces Diary#Hard|Hard]]
+|Chop and burn some [[Mahogany logs]] on [[Ape Atoll]]
+|-
+|{{SCP|Woodcutting|56|sort=yes}}
+|
+|[[The Fremennik Isles]]
+|[[Fremennik Diary|Fremennik]]
+|data-sort-value=3|[[Fremennik Diary#Hard|Hard]]
+|Craft a [[Neitiznot shield|Fremennik shield]] on [[Neitiznot]]
+|-
+|{{SCP|Woodcutting|57|sort=yes}}
+|
+|
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=3|[[Lumbridge & Draynor Diary#Hard|Hard]]
+|Travel from [[Lumbridge]] to [[Edgeville]] on a [[Canoe|Waka canoe]]
+|-
+|{{SCP|Woodcutting|57|sort=yes}}
+|
+|
+|[[Varrock Diary|Varrock]]
+|data-sort-value=3|[[Varrock Diary#Hard|Hard]]
+|Make a [[Canoe|Waka canoe]] near [[Edgeville]]
+|-
+|{{SCP|Woodcutting|60|sort=yes}}
+|{{SCP|Fletching|70}} {{SCP|Crafting|10}}
+|
+|[[Kandarin Diary|Kandarin]]
+|data-sort-value=3|[[Kandarin Diary#Hard|Hard]]
+|Create a [[Yew longbow]] from scratch around [[Seers' Village]]
+|-
+|{{SCP|Woodcutting|60|sort=yes}}
+|
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|data-sort-value=3|[[Kourend & Kebos Diary#Hard|Hard]]
+|Enter the [[Woodcutting Guild]].
+|-
+|{{SCP|Woodcutting|60|sort=yes}}
+|{{SCP|Firemaking|60}}
+|
+|[[Varrock Diary|Varrock]]
+|data-sort-value=3|[[Varrock Diary#Hard|Hard]]
+|Chop some [[Yew logs]] in [[Varrock]] and burn them at the top of the Varrock church
+|-
+|{{SCP|Woodcutting|60|sort=yes}}
+|{{SCP|Farming|68}}
+|
+|[[Varrock Diary|Varrock]]
+|data-sort-value=3|[[Varrock Diary#Hard|Hard]]
+|Collect at least 2 [[Yew roots]] from the [[Tree patch]] in [[Varrock Palace]]
+|-
+|{{SCP|Woodcutting|61|sort=yes}}
+|
+|
+|[[Wilderness Diary|Wilderness]]
+|data-sort-value=2|[[Wilderness Diary#Medium|Medium]]
+|Chop some [[Yew logs]] from an [[Ent]]
+|-
+|{{SCP|Woodcutting|75|sort=yes}}
+|
+|
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|data-sort-value=4|[[Lumbridge & Draynor Diary#Elite|Elite]]
+|Chop some [[Magic logs]] at the [[Mage Training Arena]]
+|-
+|{{SCP|Woodcutting|75|sort=yes}}
+|{{SCP|Firemaking|75}}
+|
+|[[Wilderness Diary|Wilderness]]
+|data-sort-value=4|[[Wilderness Diary#Elite|Elite]]
+|Cut and burn some [[Magic logs]] in the [[Resource Area]]
+|-
+|{{SCP|Woodcutting|75|sort=yes}}
+|{{SCP|Farming|91}}
+|
+|[[Falador Diary|Falador]]
+|data-sort-value=4|[[Falador Diary#Elite|Elite]]
+|Find at least 3 [[Magic roots]] at once when digging up your [[Magic seed|Magic tree]] in [[Falador]]
+|-
+|{{SCP|Woodcutting|90|sort=yes}}
+|
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|data-sort-value=4|[[Kourend & Kebos Diary#Elite|Elite]]
+|Chop some [[redwood logs]].
+|}
+{{Top}}
+----
+
+==Achievements with only quest requirements==
+Achievements listed here require a specific quest or series of quests in order to complete, but beyond completing the quest (or starting the quest, in some cases), no additional skill levels are required. Unlike other tables, this list will specifically note when [[Rune Mysteries]] or [[Priest in Peril]] are required.
+
+{| class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!Quest requirement
+!Diary
+!Difficulty
+!Task
+|-
+|[[Abyss Miniquest]]
+|[[Wilderness Diary|Wilderness]]
+|[[Wilderness Diary#Easy|Easy]]
+|Have the [[Mage of Zamorak]] teleport you to the [[Abyss]]
+|-
+|[[Another Slice of H.A.M.]]
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|[[Lumbridge & Draynor Diary#Hard|Hard]]
+|Take the [[Dorgesh-Kaan–Keldagrim train system|train]] from [[Dorgesh-Kaan]] to [[Keldagrim]]
+|-
+|[[Architectural Alliance]]
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|[[Kourend & Kebos Diary#Hard|Hard]]
+|Teleport to [[Kourend Castle|Xeric's Heart]] using [[Xeric's talisman]].
+|-
+|[[The Ascent of Arceuus]]
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|[[Kourend & Kebos Diary#Medium|Medium]]
+|Use [[Kharedst's memoirs]] to teleport to all five cities in [[Great Kourend]].
+|-
+|[[Barbarian Firemaking|Barbarian Training - Firemaking]]
+|[[Kandarin Diary|Kandarin]]
+|[[Kandarin Diary#Hard|Hard]]
+|Kill a [[Mithril dragon]]
+|-
+|[[Biohazard]]
+|[[Ardougne Diary|Ardougne]]
+|[[Ardougne Diary#Easy|Easy]]
+|Enter the [[Combat Training Camp]] north of [[West Ardougne]]
+|-
+|[[Contact!]]
+|[[Desert Diary|Desert]]
+|[[Desert Diary#Hard|Hard]]
+|Defeat a [[locust rider]] with [[Keris]]
+|-
+|[[Cook's Assistant]]
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|[[Lumbridge & Draynor Diary#Easy|Easy]]
+|Bake some [[Bread]] on the [[Cooking range (Lumbridge Castle)|Lumbridge kitchen range]]
+|-
+|[[The Depths of Despair]]
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|[[Kourend & Kebos Diary#Medium|Medium]]
+|Use [[Kharedst's memoirs]] to teleport to all five cities in [[Great Kourend]].
+|-
+|[[Desert Treasure I]]
+|[[Desert Diary|Desert]]
+|[[Desert Diary#Hard|Hard]]
+|Activate [[Ancient Magicks]]
+|-
+|(Started) [[Desert Treasure I]]
+|[[Kandarin Diary|Kandarin]]
+|[[Kandarin Diary#Hard|Hard]]
+|Kill a [[Shadow hound]] in the [[Shadow Dungeon]]
+|-
+|(Started) [[Dragon Slayer I]]
+|[[Karamja Diary|Karamja]]
+|[[Karamja Diary#Medium|Medium]]
+|Discover the hidden wall in the [[Karamja Volcano Dungeon|dungeon below the volcano]]
+|-
+|(Started) [[Dragon Slayer I]]
+|[[Karamja Diary|Karamja]]
+|[[Karamja Diary#Medium|Medium]]
+|Visit the [[Crandor Island|Isle of Crandor]] via the [[Karamja Volcano Dungeon|dungeon below the volcano]]
+|-
+|[[Eagles' Peak]]
+|[[Fremennik Diary|Fremennik]]
+|[[Fremennik Diary#Medium|Medium]]
+|Travel to the Snowy Hunter Area via [[Eagle transport system|Eagle]]
+|-
+|[[Eagles' Peak]]
+|[[Western Provinces Diary|Western Provinces]]
+|[[Western Provinces Diary#Medium|Medium]]
+|Travel from [[Eagles' Peak (location)|Eagles' Peak]] to the [[Feldip Hills]] by [[Eagle transport system|Eagle]]
+|-
+|[[Enakhra's Lament]]
+|[[Desert Diary|Desert]]
+|[[Desert Diary#Medium|Medium]]
+|Teleport to [[Enakhra's Temple]] with the [[Camulet]]
+|-
+|(Started) [[Elemental Workshop I]]
+|[[Kandarin Diary|Kandarin]]
+|[[Kandarin Diary#Easy|Easy]]
+|Defeat one of each elemental in the [[Elemental Workshop (location)|Elemental Workshop]]
+|-
+|[[Elemental Workshop II]]
+|[[Kandarin Diary|Kandarin]]
+|[[Kandarin Diary#Medium|Medium]]
+|Create a [[Mind helmet]]
+|-
+|[[The Eyes of Glouphrie]]
+|[[Western Provinces Diary|Western Provinces]]
+|[[Western Provinces Diary#Medium|Medium]]
+|Turn your [[crystal saw seed]] into a [[Crystal saw]]
+|-
+|(Started) [[Fairytale II - Cure a Queen]]
+|''Various''
+|Medium
+|''Multiple'' ([[#Fairy rings|fairy ring achievements]])
+|-
+|[[The Forsaken Tower]]
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|[[Kourend & Kebos Diary#Medium|Medium]]
+|Use [[Kharedst's memoirs]] to teleport to all five cities in [[Great Kourend]].
+|-
+|[[The Fremennik Trials]]
+|[[Fremennik Diary|Fremennik]]
+|[[Fremennik Diary#Easy|Easy]]
+|Change your boots at [[Yrsa's Shoe Store]]
+|-
+|[[Garden of Tranquillity]]
+
+[[Gertrude's Cat]]
+|[[Varrock Diary|Varrock]]
+|[[Varrock Diary#Medium|Medium]]
+|Select a colour for your [[kitten]]
+|-
+|[[Garden of Tranquillity]]
+|[[Varrock Diary|Varrock]]
+|[[Varrock Diary#Medium|Medium]]
+|Pick a [[White tree fruit]]
+|-
+|[[Ghosts Ahoy]]
+|[[Morytania Diary|Morytania]]
+|[[Morytania Diary#Medium|Medium]]
+|Use an [[Ectophial]] to return to [[Port Phasmatys]]
+|-
+|(Started) [[The Giant Dwarf]]
+|[[Fremennik Diary|Fremennik]]
+|[[Fremennik Diary#Easy|Easy]]
+|Browse the [[Keldagrim Stonemason|Stonemason's Shop]]
+|-
+|(Started) [[The Giant Dwarf]]
+|[[Fremennik Diary|Fremennik]]
+|[[Fremennik Diary#Easy|Easy]]
+|Steal from the [[Keldagrim]] [[Carefree Crafting Stall|crafting]] or [[Keldagrim's Best Bread|baker's stall]]
+|-
+|[[The Golem]]
+|[[Desert Diary|Desert]]
+|[[Desert Diary#Medium|Medium]]
+|Travel to [[Ruins of Uzer|Uzer]] via [[Magic carpet]]
+|-
+|[[The Grand Tree]]
+|[[Karamja Diary|Karamja]]
+|[[Karamja Diary#Medium|Medium]]
+|Use the [[Gnome glider]] to travel to [[Karamja]]
+|-
+|[[The Grand Tree]]
+|[[Karamja Diary|Karamja]]
+|[[Karamja Diary#Medium|Medium]]
+|Charter a ship from the [[shipyard]] in the far east of [[Karamja]]
+|-
+|[[The Hand in the Sand]]
+|[[Ardougne Diary|Ardougne]]
+|[[Ardougne Diary#Medium|Medium]]
+|
+Claim buckets of sand from [[Bert]] in Yanille
+
+([[File:Ultimate ironman chat badge.png]] [[#Ironman mode achievements|Ultimate Ironman alternative]]:Fill a bucket with sand using [[Bert]]'s sandpit)
+|-
+|[[Heroes' Quest]]
+|[[Falador Diary|Falador]]
+|[[Falador Diary#Hard|Hard]]
+|Kill the [[Blue dragon]] under the [[Heroes' Guild]]
+|-
+|(Started) [[Horror from the Deep]]
+|[[Fremennik Diary|Fremennik]]
+|[[Fremennik Diary#Medium|Medium]]
+|Visit the [[Lighthouse]] from [[Waterbirth Island]]
+|-
+|[[In Aid of the Myreque]]
+|[[Morytania Diary|Morytania]]
+|[[Morytania Diary#Hard|Hard]]
+|Complete a hard [[temple trek]]
+|-
+|[[In Search of the Myreque]]
+|[[Morytania Diary|Morytania]]
+|[[Morytania Diary#Medium|Medium]]
+|Board the [[Swamp Boaty]] at the [[Hollows]]
+|-
+|[[Jungle Potion]]
+|[[Karamja Diary|Karamja]]
+|[[Karamja Diary#Medium|Medium]]
+|Exchange [[gems]] with [[Safta Doc]] for a [[Machete]]
+|-
+|[[Legends' Quest]]
+|[[Ardougne Diary|Ardougne]]
+|[[Ardougne Diary#Hard|Hard]]
+|Recharge some jewellery at the [[Legends' Guild#Guild|totem]] in the [[Legends' Guild]]
+|-
+|(Started) [[Legends' Quest]]
+|[[Karamja Diary|Karamja]]
+|[[Karamja Diary#Hard|Hard]]
+|Eat an [[Oomlie wrap]]
+|-
+|[[Monkey Madness I]]
+|[[Ardougne Diary|Ardougne]]
+|[[Ardougne Diary#Hard|Hard]]
+|Have a [[Monkey Minder]] put you in [[Ardougne Zoo]]'s monkey cage
+|-
+|[[Nature Spirit]]
+|[[Morytania Diary|Morytania]]
+|[[Morytania Diary#Easy|Easy]]
+|Restore your [[Prayer points]] at the [[Nature Grotto]]
+|-
+|[[One Small Favour]]
+
+[[The Grand Tree]]
+|[[Western Provinces Diary|Western Provinces]]
+|[[Western Provinces Diary#Medium|Medium]]
+|Travel to the [[Feldip Hills]] by [[Gnome glider]]
+|-
+|[[Priest in Peril]]
+|[[Morytania Diary|Morytania]]
+|[[Morytania Diary#Easy|Easy]]
+|Have [[Sbott]] tan something for you
+|-
+|[[Priest in Peril]]
+|[[Morytania Diary|Morytania]]
+|[[Morytania Diary#Easy|Easy]]
+|Enter [[Mort Myre Swamp]]
+|-
+|[[Priest in Peril]]
+|[[Morytania Diary|Morytania]]
+|[[Morytania Diary#Easy|Easy]]
+|Kill a [[Ghoul]]
+|-
+|[[Priest in Peril]]
+|[[Morytania Diary|Morytania]]
+|[[Morytania Diary#Easy|Easy]]
+|Offer some [[Bonemeal]] at the [[Ectofuntus]]
+|-
+|[[Priest in Peril]]
+|[[Morytania Diary|Morytania]]
+|[[Morytania Diary#Easy|Easy]]
+|Kill a [[Werewolf]] in its human form using the [[Wolfbane dagger]]
+|-
+|[[Priest in Peril]]
+|[[Morytania Diary|Morytania]]
+|[[Morytania Diary#Medium|Medium]]
+|Travel to [[Dragontooth Island]]
+|-
+|[[The Queen of Thieves]]
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|[[Kourend & Kebos Diary#Easy|Easy]]
+|Browse the [[Warrens General Store]].
+|-
+|[[The Queen of Thieves]]
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|[[Kourend & Kebos Diary#Medium|Medium]]
+|Use [[Kharedst's memoirs]] to teleport to all five cities in [[Great Kourend]].
+|-
+|[[Ratcatchers]]
+|[[Falador Diary|Falador]]
+|[[Falador Diary#Medium|Medium]]
+|Visit the [[Port Sarim]] [[Rat Pits]]
+|-
+|[[Recipe for Disaster]] (All)
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|[[Lumbridge & Draynor Diary#Hard|Hard]]
+|Purchase some [[Barrows gloves]] from the [[Culinaromancer's Chest]]
+|-
+|(Started) [[Regicide]]
+|[[Western Provinces Diary|Western Provinces]]
+|[[Western Provinces Diary#Hard|Hard]]
+|Kill [[Zulrah]]
+|-
+|[[Rune Mysteries]]
+|[[Ardougne Diary|Ardougne]]
+|[[Ardougne Diary#Easy|Easy]]
+|Have [[Wizard Cromperty]] teleport you to the [[Rune essence mine]]
+|-
+|[[Rune Mysteries]]
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|[[Lumbridge & Draynor Diary#Easy|Easy]]
+|Have [[Archmage Sedridor]] teleport you to the [[Rune essence mine]]
+|-
+|[[Rune Mysteries]]
+|[[Varrock Diary|Varrock]]
+|[[Varrock Diary#Easy|Easy]]
+|Have [[Aubury]] teleport you to the [[Rune essence mine]]
+|-
+|[[Rune Mysteries]]
+|[[Western Provinces Diary|Western Provinces]]
+|[[Western Provinces Diary#Easy|Easy]]
+|Have [[Brimstail]] teleport you to the [[Rune essence mine]]
+|-
+|[[Sea Slug]]
+|[[Ardougne Diary|Ardougne]]
+|[[Ardougne Diary#Medium|Medium]]
+|Catch any fish on the [[Fishing Platform]]
+|-
+|[[Shilo Village]]
+|[[Karamja Diary|Karamja]]
+|[[Karamja Diary#Medium|Medium]]
+|Use [[Vigroy]] and [[Hajedy]]'s cart service
+|-
+|[[Shilo Village]]
+|[[Karamja Diary|Karamja]]
+|[[Karamja Diary#Medium|Medium]]
+|Charter the [[Lady of the Waves]] from [[Cairn Isle]] to [[Port Khazard]]
+|-
+|[[A Soul's Bane]]
+|[[Varrock Diary|Varrock]]
+|[[Varrock Diary#Medium|Medium]]
+|Enter the [[Tolna's rift|Tolna dungeon]] after completing [[A Soul's Bane]]
+|-
+|[[Spirits of the Elid]]
+|[[Desert Diary|Desert]]
+|[[Desert Diary#Medium|Medium]]
+|Visit the [[Genie (Spirits of the Elid)|genie]]
+|-
+|[[Tale of the Righteous]]
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|[[Kourend & Kebos Diary#Medium|Medium]]
+|Use [[Kharedst's memoirs]] to teleport to all five cities in [[Great Kourend]].
+|-
+|[[Tears of Guthix]]
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|[[Lumbridge & Draynor Diary#Hard|Hard]]
+|Collect at least 100 [[Tears of Guthix (minigame)|Tears of Guthix]] in one visit
+|-
+|[[Throne of Miscellania]]
+|[[Fremennik Diary|Fremennik]]
+|[[Fremennik Diary#Hard|Hard]]
+|Obtain 100% support from your [[Managing Miscellania|kingdom]] subjects
+|-
+|[[Tower of Life]]
+|[[Ardougne Diary|Ardougne]]
+|[[Ardougne Diary#Medium|Medium]]
+|Kill a [[Swordchick]] in the [[Tower of Life (building)|Tower of Life]]
+|-
+|[[Tree Gnome Village]]
+|[[Varrock Diary|Varrock]]
+|[[Varrock Diary#Medium|Medium]]
+|Use the [[Spirit tree]] north of [[Varrock]]
+|-
+|[[Tree Gnome Village]]
+|[[Western Provinces Diary|Western Provinces]]
+|[[Western Provinces Diary#Medium|Medium]]
+|Travel to the [[Tree Gnome Stronghold]] by [[Spirit tree]]
+|-
+|[[Troll Stronghold]]
+|[[Fremennik Diary|Fremennik]]
+|[[Fremennik Diary#Easy|Easy]]
+|Enter the [[Troll Stronghold (location)|Troll Stronghold]]
+|-
+|[[Wanted!]]
+|[[Falador Diary|Falador]]
+|[[Falador Diary#Elite|Elite]]
+|Purchase a [[White 2h sword]] from [[Sir Vyvin]]
+|-
+|(Started) [[Watchtower]]
+|[[Ardougne Diary|Ardougne]]
+|[[Ardougne Diary#Medium|Medium]]
+|Collect some [[Cave nightshade]] from the [[Skavid caves]]
+|-
+|[[Waterfall Quest]]
+|[[Kandarin Diary|Kandarin]]
+|[[Kandarin Diary#Medium|Medium]]
+|Kill a [[Fire giant]] in the [[Waterfall Dungeon]]
+|}
+
+===Non-specific quest requirements===
+{| class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!Requirement
+!Diary
+!Difficulty
+!Task
+|-
+|Various quests
+|[[Ardougne Diary|Ardougne]]
+|[[Ardougne Diary#Elite|Elite]]
+|Imbue a [[salve amulet]] at [[Nightmare Zone]], or equip a [[salve amulet(i)]] that was imbued there.
+|-
+|All quests ([[Quest point cape|Quest cape]]) ''or'' any other [[Cape of Accomplishment|skillcape]]
+|[[Falador Diary|Falador]]
+|[[Falador Diary#Elite|Elite]]
+|Perform a [[Cape of Accomplishment]] or [[Quest point cape]] emote at the top of the [[White Knights' Castle]]
+|-
+|All quests
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|[[Lumbridge & Draynor Diary#Elite|Elite]]
+|Perform the [[Quest point cape]] emote in the [[Wise Old Man]]'s house
+|-
+|Various quests (or just [[The Dig Site]])
+|[[Varrock Diary|Varrock]]
+|[[Varrock Diary#Easy|Easy]]
+|Speak to [[Curator Haig Halen|Haig Halen]] after obtaining at least 50 [[Kudos]]
+|-
+|32 [[Quest Points]]
+|[[Varrock Diary|Varrock]]
+|[[Varrock Diary#Medium|Medium]]
+|Enter the [[Champions' Guild]]
+|-
+|Various quests
+|[[Varrock Diary|Varrock]]
+|[[Varrock Diary#Hard|Hard]]
+|Speak to [[Orlando Smith]] when you have achieved 153 [[Kudos]]
+|}
+
+{{Top}}
+----
+
+==Achievements that require combat==
+All achievements listed here require defeating a specific enemy or a specific set of enemies. When a set of enemies is listed (or multiple of the same enemy), they must all be killed '''within the same login session'''. If you log out or disconnect, you will need to start over. Some sets of enemies must be killed in the order specified in the achievement - these cases are marked explicitly.
+
+[[Slayer]] monsters are not listed here. For them, see [[#Slayer|Slayer achievements]].
+
+{| class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!width="224px"|Enemies
+!Other requirements
+!Diary
+!Difficulty
+!Task
+|-
+|[[Duck]] (level-1 to 2)
+|
+|[[Falador Diary|Falador]]
+|[[Falador Diary#Easy|Easy]]
+|Kill a [[Duck]] in [[Falador Park]]
+|-
+|[[Rock crab]] (level-13)
+|
+|[[Fremennik Diary|Fremennik]]
+|[[Fremennik Diary#Easy|Easy]]
+|Kill 5 [[Rock Crab]]s
+|-
+|[[Zombie]] (level-13)
+
+(''must be level-13 to count'')
+|
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|[[Lumbridge & Draynor Diary#Easy|Easy]]
+|Kill a zombie in the [[Draynor Sewers]] (level 13 only)
+|-
+|[[Sand Crab]] (level-15)
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|[[Kourend & Kebos Diary#Easy|Easy]]
+|Kill a [[Sand Crab]].
+|-
+|Human Form [[Werewolf]] (level-24)
+|[[Priest in Peril]]
+|[[Morytania Diary|Morytania]]
+|[[Morytania Diary#Easy|Easy]]
+|Kill a [[Werewolf]] in its human form using the [[Wolfbane dagger]]
+|-
+|[[Terrorbird]] (level-28)
+|
+|[[Western Provinces Diary|Western Provinces]]
+|[[Western Provinces Diary#Easy|Easy]]
+|Kill a [[Terrorbird]] in the [[Gnome Stronghold|Terrorbird enclosure]]
+|-
+|[[Vulture]] (level-31)
+|
+|[[Desert Diary|Desert]]
+|[[Desert Diary#Easy|Easy]]
+|Kill a [[Vulture]]
+|-
+|[[Ghoul]] (level-42)
+|[[Priest in Peril]]
+|[[Morytania Diary|Morytania]]
+|[[Morytania Diary#Easy|Easy]]
+|Kill a [[Ghoul]]
+|-
+|[[Gangster]] (level-45 to 50) or [[Gang boss]] (level-76)
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|[[Kourend & Kebos Diary#Medium|Medium]]
+|Deliver some [[intelligence]] to [[Captain Ginea]].
+|-
+|[[Swordchick]] (level-46)
+|[[Tower of Life]]
+|[[Ardougne Diary|Ardougne]]
+|[[Ardougne Diary#Medium|Medium]]
+|Kill a [[Swordchick]] in the [[Tower of Life (building)|Tower of Life]]
+|-
+|[[Earth warrior]] (level-51)
+|{{SCP|Agility|15}}
+|[[Wilderness Diary|Wilderness]]
+|[[Wilderness Diary#Easy|Easy]]
+|Kill an [[Earth warrior]] in the [[Edgeville Dungeon|Wilderness beneath Edgeville]]
+|-
+|[[Jogre]] (level-53)
+|
+|[[Karamja Diary|Karamja]]
+|[[Karamja Diary#Easy|Easy]]
+|Kill a [[Jogre]] in the [[Pothole Dungeon]]
+|-
+|[[Lizardman]] (level-53 to 150)
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|[[Kourend & Kebos Diary#Medium|Medium]]
+|Kill a [[lizardman]]. (Any lizardman, including [[Lizardman shaman|shamans]] will count.)
+|-
+|[[Green dragon]] (level-79)
+|
+|[[Wilderness Diary|Wilderness]]
+|[[Wilderness Diary#Medium|Medium]]
+|Kill a [[Green dragon]]
+|-
+|[[Mammoth]] (level-80)
+|
+|[[Wilderness Diary|Wilderness]]
+|[[Wilderness Diary#Easy|Easy]]
+|Kill a [[Mammoth]]
+|-
+|[[Deathwing]] (level-83)
+|{{SCP|Woodcutting|15}} {{SCP|Thieving|50}}
+
+{{SCP|Strength|50}} {{SCP|Mining|52}}
+
+{{SCP|Agility|50}}
+
+(Started) [[Legends' Quest]]
+|[[Karamja Diary|Karamja]]
+|[[Karamja Diary#Hard|Hard]]
+|Kill a [[Deathwing]] in the [[Shaman Caves|dungeon]] under the [[Kharazi Jungle]]
+|-
+|
+*[[Minotaur]] (level-12 to 27)
+*[[Flesh Crawler]] (level-28 to 41)
+*[[Catablepon]] (level-49 to 68)
+*[[Ankou]] (level-75 to 86)
+|
+|[[Varrock Diary|Varrock]]
+|[[Varrock Diary#Hard|Hard]]
+|Teleport to [[Barbarian Village]] with a [[Skull sceptre]]
+|-
+|[[Ankou]] (level-75 to 86)
+|
+|[[Wilderness Diary|Wilderness]]
+|[[Wilderness Diary#Medium|Medium]]
+|Kill an [[Ankou]] in the [[Wilderness]]
+|-
+|[[Fire giant]] (level-86)
+|[[Waterfall Quest]]
+|[[Kandarin Diary|Kandarin]]
+|[[Kandarin Diary#Medium|Medium]]
+|Kill a [[Fire giant]] in the [[Waterfall Dungeon]]
+|-
+|[[Elf warrior]] (level-108)
+|{{SCP|Agility|50}} {{SCP|Ranged|70}}
+[[Roving Elves]]
+|[[Western Provinces Diary|Western Provinces]]
+|[[Western Provinces Diary#Hard|Hard]]
+|Kill an [[Elf]] with a [[Crystal bow]]
+|-
+|[[Blue dragon]] (level-111)
+|[[Heroes' Quest]]
+|[[Falador Diary|Falador]]
+|[[Falador Diary#Hard|Hard]]
+|Kill the [[Blue dragon]] underneath the [[Heroes' Guild]]
+|-
+|
+*[[Bronze dragon]] (level-131) OR
+*[[Iron dragon]] (level-189) OR
+*[[Steel dragon]] (level-246)
+|{{SCP|Agility|12}} {{SCP|Woodcutting|34}}
+|[[Karamja Diary|Karamja]]
+|[[Karamja Diary#Hard|Hard]]
+|Kill a [[Metal dragon]] in the [[Brimhaven Dungeon]]
+|-
+|[[Zombie]] (level-134)
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|[[Kourend & Kebos Diary#Hard|Hard]]
+|Kill a [[zombie]] in the [[Shayzien Crypts]].
+|-
+|[[Lizardman shaman]] (level-150)
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|[[Kourend & Kebos Diary#Hard|Hard]]
+|Kill a [[lizardman shaman]] in [[Molch]].
+|-
+|[[Crazy archaeologist]] (level-204)
+
+[[Chaos Fanatic]] (level-202)
+
+[[Scorpia]] (level-225)
+|
+|[[Wilderness Diary|Wilderness]]
+|[[Wilderness Diary#Hard|Hard]]
+|Kill the [[Crazy archaeologist]], [[Chaos Fanatic]] and [[Scorpia]]
+|-
+|[[Giant Mole]] (level-230)
+|
+|[[Falador Diary|Falador]]
+|[[Falador Diary#Hard|Hard]]
+|Kill the [[Giant Mole]] beneath [[Falador Park]]
+|-
+|[[Lava dragon]] (level-252)
+|
+|[[Wilderness Diary|Wilderness]]
+|[[Wilderness Diary#Hard|Hard]]
+|Kill a [[Lava dragon]] on the [[Lava Dragon Isle]]
+|-
+|
+*[[Dagannoth Rex]] (level-303)
+*[[Dagannoth Prime]] (level-303)
+*[[Dagannoth Supreme]] (level-303)
+|
+|[[Fremennik Diary|Fremennik]]
+|[[Fremennik Diary#Elite|Elite]]
+|Kill each of the [[Dagannoth Kings]]
+|-
+|[[Mithril dragon]] (level-304)
+|[[Barbarian Firemaking|Barbarian Training - Firemaking]]
+|[[Kandarin Diary|Kandarin]]
+|[[Kandarin Diary#Hard|Hard]]
+|Kill a [[Mithril dragon]]
+|-
+|[[Chaos Elemental]] (level-305)
+|
+|[[Wilderness Diary|Wilderness]]
+|[[Wilderness Diary#Hard|Hard]]
+|Kill the [[Chaos Elemental]]
+|-
+|[[Skotizo]] (level-321)
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|[[Kourend & Kebos Diary#Elite|Elite]]
+|Defeat [[Skotizo]] in the [[Catacombs of Kourend]].
+|-
+|[[Kalphite Queen]] (level-333)
+|
+|[[Desert Diary|Desert]]
+|[[Desert Diary#Hard|Hard]]
+|Kill the [[Kalphite Queen]]
+|-
+|[[Ket-Zek]] (level-360)
+|
+|[[Karamja Diary|Karamja]]
+|[[Karamja Diary#Hard|Hard]]
+|Kill a [[Ket-Zek]] in the [[Fight Caves]]
+|-
+|
+*[[Callisto]] (level-470)
+*[[Venenatis]] (level-464)
+*[[Vet'ion]] (level-454)
+|
+|[[Wilderness Diary|Wilderness]]
+|[[Wilderness Diary#Elite|Elite]]
+|Kill [[Callisto]], [[Venenatis]] & [[Vet'ion]]
+|-
+|
+*[[Kree'arra]] (level-580)
+*[[Commander Zilyana]] (level-596)
+*[[General Graardor]] (level-624)
+*[[K'ril Tsutsaroth]] (level-650)
+|
+{{SCP|Agility|70}} {{SCP|Hitpoints|70}}
+
+{{SCP|Strength|70}} {{SCP|Ranged|70}}
+
+[[Troll Stronghold]]
+|[[Fremennik Diary|Fremennik]]
+|[[Fremennik Diary#Elite|Elite]]
+|Kill the generals of [[Armadyl]], [[Bandos]], [[Saradomin]], and [[Zamorak]] in the [[God Wars Dungeon]].
+|-
+|[[TzTok-Jad]] (level-702)
+|
+|[[Karamja Diary|Karamja]]
+|[[Karamja Diary#Elite|Elite]]
+|Equip a [[fire cape]] in [[Mor Ul Rek]]
+|-
+|[[Zulrah]] (level-725)
+|
+|[[Western Provinces Diary|Western Provinces]]
+|[[Western Provinces Diary#Hard|Hard]]
+|Kill [[Zulrah]]
+|-
+|[[Great Olm]] (level-1043)
+|
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|[[Kourend & Kebos Diary#Elite|Elite]]
+|Complete a raid in the [[Chambers of Xeric]].
+|}
+
+{{Top}}
+----
+
+==Achievements with no skill, quest, or combat requirements==
+{| class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!Diary
+!Difficulty
+!Task
+|-
+|[[Ardougne Diary|Ardougne]]
+|[[Ardougne Diary#Easy|Easy]]
+|Sell [[Silk]] to the [[Silk merchant|Silk trader]] in [[East Ardougne]] for 60 coins each
+|-
+|[[Ardougne Diary|Ardougne]]
+|[[Ardougne Diary#Easy|Easy]]
+|Use the altar in [[East Ardougne]]'s church
+|-
+|[[Ardougne Diary|Ardougne]]
+|[[Ardougne Diary#Easy|Easy]]
+|Have [[Tindel Marchant]] identify a [[Rusty sword]] for you.
+|-
+|[[Ardougne Diary|Ardougne]]
+|[[Ardougne Diary#Easy|Easy]]
+|Use the [[Ardougne]] lever to teleport to the [[Wilderness]]
+|-
+|[[Ardougne Diary|Ardougne]]
+|[[Ardougne Diary#Easy|Easy]]
+|View [[Aleck's Hunter Emporium.]] shop in [[Yanille]]
+|-
+|[[Ardougne Diary|Ardougne]]
+|[[Ardougne Diary#Easy|Easy]]
+|Check what pets you have insured with [[Probita]] in [[East Ardougne]]
+|-
+|[[Desert Diary|Desert]]
+|[[Desert Diary#Easy|Easy]]
+|Enter the [[Kalphite Lair]]
+|-
+|[[Desert Diary|Desert]]
+|[[Desert Diary#Easy|Easy]]
+|Mine five [[Clay]] in the north-eastern [[Desert]]
+|-
+|[[Desert Diary|Desert]]
+|[[Desert Diary#Easy|Easy]]
+|Enter the [[Desert]] with a set of [[Desert robes]] equipped
+|-
+|[[Desert Diary|Desert]]
+|[[Desert Diary#Easy|Easy]]
+|Have the [[Zahur|Nardah herbalist]] clean a herb for you
+|-
+|[[Desert Diary|Desert]]
+|[[Desert Diary#Easy|Easy]]
+|Collect 5 [[Potato cactus|Potato cacti]] from the [[Kalphite Lair]]
+|-
+|[[Desert Diary|Desert]]
+|[[Desert Diary#Easy|Easy]]
+|Sell some artefacts to [[Simon Templeton]]
+|-
+|[[Desert Diary|Desert]]
+|[[Desert Diary#Easy|Easy]]
+|Cut a desert cactus open to fill a [[Waterskin]]
+|-
+|[[Desert Diary|Desert]]
+|[[Desert Diary#Easy|Easy]]
+|Travel from the [[Shantay Pass]] to [[Pollnivneach]] by [[Magic carpet]]
+|-
+|[[Falador Diary|Falador]]
+|[[Falador Diary#Easy|Easy]]
+|Browse [[Sarah's Farming Shop]]
+|-
+|[[Falador Diary|Falador]]
+|[[Falador Diary#Easy|Easy]]
+|Get a Haircut or a Shave from the Falador Hairdresser
+|-
+|[[Falador Diary|Falador]]
+|[[Falador Diary#Easy|Easy]]
+|Fill a bucket from the pump north of [[Falador]] west Bank
+|-
+|[[Falador Diary|Falador]]
+|[[Falador Diary#Easy|Easy]]
+|Take the boat to [[Entrana]]
+|-
+|[[Falador Diary|Falador]]
+|[[Falador Diary#Easy|Easy]]
+|Make a [[mind tiara]]
+|-
+|[[Falador Diary|Falador]]
+|[[Falador Diary#Easy|Easy]]
+|Repair a broken strut in the [[Motherlode Mine]]
+|-
+|[[Falador Diary|Falador]]
+|[[Falador Diary#Easy|Easy]]
+|Claim a [[Security book]] from the [[Security Guard]] at [[Port Sarim jail]]
+|-
+|[[Falador Diary|Falador]]
+|[[Falador Diary#Medium|Medium]]
+|Unlock the [[Crystal chest]] in [[Taverley]]
+|-
+|[[Fremennik Diary|Fremennik]]
+|[[Fremennik Diary#Easy|Easy]]
+|Collect 5 [[Snape grass]] on [[Waterbirth Island]]
+|-
+|[[Fremennik Diary|Fremennik]]
+|[[Fremennik Diary#Easy|Easy]]
+|Fill a bucket with water at the [[Rellekka]] well
+|-
+|[[Kandarin Diary|Kandarin]]
+|[[Kandarin Diary#Easy|Easy]]
+|Buy a [[Candle]] from the [[Candle maker]] in [[Catherby]]
+|-
+|[[Kandarin Diary|Kandarin]]
+|[[Kandarin Diary#Easy|Easy]]
+|Collect 5 [[Flax]] from the [[Seers' Village]] flax field
+|-
+|[[Kandarin Diary|Kandarin]]
+|[[Kandarin Diary#Easy|Easy]]
+|Play the [[Organ]] in the [[Seers' Village]] church
+|-
+|[[Kandarin Diary|Kandarin]]
+|[[Kandarin Diary#Easy|Easy]]
+|Have [[Galahad]] make you a [[Cup of tea]]
+|-
+|[[Kandarin Diary|Kandarin]]
+|[[Kandarin Diary#Easy|Easy]]
+|Get a [[Pet fish]] from [[Harry's Fishing Shop|Harry]] in [[Catherby]]
+|-
+|[[Kandarin Diary|Kandarin]]
+|[[Kandarin Diary#Easy|Easy]]
+|Buy a [[Stew]] from the [[Seers' Village]] pub
+|-
+|[[Kandarin Diary|Kandarin]]
+|[[Kandarin Diary#Easy|Easy]]
+|Speak to [[Sherlock]]
+|-
+|[[Karamja Diary|Karamja]]
+|[[Karamja Diary#Easy|Easy]]
+|Pick 5 [[Bananas]] from the plantation located east of the [[Karamja Volcano|volcano]]
+|-
+|[[Karamja Diary|Karamja]]
+|[[Karamja Diary#Easy|Easy]]
+|Travel to [[Port Sarim]] via the dock east of [[Musa Point]]
+|-
+|[[Karamja Diary|Karamja]]
+|[[Karamja Diary#Easy|Easy]]
+|Travel to [[Ardougne]] via the port near [[Brimhaven]]
+|-
+|[[Karamja Diary|Karamja]]
+|[[Karamja Diary#Easy|Easy]]
+|Use the [[Fishing spots]] north of the banana plantation
+|-
+|[[Karamja Diary|Karamja]]
+|[[Karamja Diary#Easy|Easy]]
+|Collect 5 [[Seaweed]] from anywhere on [[Karamja]]
+|-
+|[[Karamja Diary|Karamja]]
+|[[Karamja Diary#Easy|Easy]]
+|Attempt the [[TzHaar Fight Pit]] or [[Fight Cave]]
+|-
+|[[Karamja Diary|Karamja]]
+|[[Karamja Diary#Medium|Medium]]
+|Claim a ticket from the [[Brimhaven Agility Arena|Agility Arena]] in [[Brimhaven]]
+|-
+|[[Karamja Diary|Karamja]]
+|[[Karamja Diary#Hard|Hard]]
+|Become the champion of the [[TzHaar Fight Pit|Fight Pit]]
+|-
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|[[Kourend & Kebos Diary#Easy|Easy]]
+|Hand in a book at the [[Arceuus Library]].
+|-
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|[[Kourend & Kebos Diary#Medium|Medium]]
+|Switch to the [[Arceuus spellbook]] via [[Tyss]].
+|-
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|[[Kourend & Kebos Diary#Easy|Easy]]
+|Take a boat to [[Land's End]].
+|-
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|[[Kourend & Kebos Diary#Easy|Easy]]
+|Pray at the altar on the top floor of the [[Kourend Castle]].
+|-
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|[[Kourend & Kebos Diary#Easy|Easy]]
+|Dig up some [[saltpetre]].
+|-
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|[[Kourend & Kebos Diary#Easy|Easy]]
+|Heal a wounded [[Shayzien]] soldier.
+|-
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|[[Lumbridge & Draynor Diary#Easy|Easy]]
+|Learn your age from [[Hans]] in [[Lumbridge]]
+|-
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|[[Lumbridge & Draynor Diary#Easy|Easy]]
+|Pickpocket a [[Man]] or [[Woman]] in [[Lumbridge]]
+|-
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|[[Lumbridge & Draynor Diary#Easy|Easy]]
+|Enter the [[H.A.M. Hideout]]
+|-
+|[[Varrock Diary|Varrock]]
+|[[Varrock Diary#Easy|Easy]]
+|Browse [[Thessalia's Fine Clothes|Thessalia's Store]]
+|-
+|[[Varrock Diary|Varrock]]
+|[[Varrock Diary#Easy|Easy]]
+|Make a [[Plank]] at the [[Sawmill]]
+|-
+|[[Varrock Diary|Varrock]]
+|[[Varrock Diary#Easy|Easy]]
+|Enter the second level of the [[Stronghold of Security]]
+|-
+|[[Varrock Diary|Varrock]]
+|[[Varrock Diary#Easy|Easy]]
+|Chop down a dying tree in the [[Lumber Yard]]
+|-
+|[[Varrock Diary|Varrock]]
+|[[Varrock Diary#Easy|Easy]]
+|Buy a [[newspaper]]
+|-
+|[[Varrock Diary|Varrock]]
+|[[Varrock Diary#Easy|Easy]]
+|Give a [[Stray dog|dog]] a bone!
+|-
+|[[Varrock Diary|Varrock]]
+|[[Varrock Diary#Medium|Medium]]
+|Have the [[Apothecary]] in [[Varrock]] make you a [[Strength potion]]
+|-
+|[[Varrock Diary|Varrock]]
+|[[Varrock Diary#Medium|Medium]]
+|Perform the 4 [[emotes]] from the [[Stronghold of Security]]
+|-
+|[[Varrock Diary|Varrock]]
+|[[Varrock Diary#Medium|Medium]]
+|Make 20 [[Mahogany plank]]s in one go
+|-
+|[[Wilderness Diary|Wilderness]]
+|[[Wilderness Diary#Easy|Easy]]
+|Enter the [[Wilderness]] from the [[Ardougne]] or [[Edgeville]] lever
+|-
+|[[Wilderness Diary|Wilderness]]
+|[[Wilderness Diary#Easy|Easy]]
+|Pray at the Chaos Altar in level 38 western [[Wilderness]]
+|-
+|[[Wilderness Diary|Wilderness]]
+|[[Wilderness Diary#Easy|Easy]]
+|Enter the [[Chaos Altar|Chaos Runecraft temple]]
+|-
+|[[Wilderness Diary|Wilderness]]
+|[[Wilderness Diary#Easy|Easy]]
+|Restore some [[Prayer points]] at the [[Demonic Ruins]]
+|-
+|[[Wilderness Diary|Wilderness]]
+|[[Wilderness Diary#Easy|Easy]]
+|Enter the [[King Black Dragon]] Lair
+|-
+|[[Wilderness Diary|Wilderness]]
+|[[Wilderness Diary#Easy|Easy]]
+|Collect 5 [[Red spider's eggs]] from the [[Wilderness]]
+|-
+|[[Wilderness Diary|Wilderness]]
+|[[Wilderness Diary#Easy|Easy]]
+|Equip any [[Team cape]] in the [[Wilderness]]
+|-
+|[[Wilderness Diary|Wilderness]]
+|[[Wilderness Diary#Medium|Medium]]
+|Talk to the [[Emblem Trader]] in [[Edgeville]] about emblems
+|-
+|[[Wilderness Diary|Wilderness]]
+|[[Wilderness Diary#Medium|Medium]]
+|Open the [[Muddy chest]] in the [[Lava Maze]]
+|-
+|[[Western Provinces Diary|Western Provinces]]
+|[[Western Provinces Diary#Easy|Easy]]
+|Complete a lap of the [[Gnome Agility Course]]
+|-
+|[[Western Provinces Diary|Western Provinces]]
+|[[Western Provinces Diary#Easy|Easy]]
+|Score a goal in a [[Gnome Ball]] match
+|-
+|[[Western Provinces Diary|Western Provinces]]
+|[[Western Provinces Diary#Easy|Easy]]
+|Collect a [[Swamp toad (item)|swamp toad]] at the [[Tree Gnome Stronghold]]
+|}
+
+{{Top}}
+----
+
+==Special categories==
+===Crossbow shortcuts===
+Several achievements require the use of one of the [[crossbow shortcuts]] placed throughout the world. Each shortcut has an [[Agility]], a [[Ranged]], and a [[Strength]] requirement in order to use it. In addition, players will need to wield any [[crossbow (weapon)|crossbow]] and a [[Mith grapple]] in order to cross the shortcut.
+
+Note that there is a small chance that the grapple will break after using it to cross a shortcut; however, you will still receive credit for the achievement if your grapple breaks after use.
+
+{| class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!Agility Level
+!Ranged Level
+!Strength Level
+!Diary
+!Difficulty
+!Task
+|-
+|{{SCP|Agility|8}}
+|{{SCP|Ranged|37}}
+|{{SCP|Strength|19}}
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|[[Lumbridge & Draynor Diary#Medium|Medium]]
+|Grapple across the [[River Lum]]
+|-
+|{{SCP|Agility|11}}
+|{{SCP|Ranged|19}}
+|{{SCP|Strength|37}}
+|[[Falador Diary|Falador]]
+|[[Falador Diary#Medium|Medium]]
+|Grapple up and then jump off the north [[Falador]] wall
+|-
+|{{SCP|Agility|36}}
+|{{SCP|Ranged|39}}
+|{{SCP|Strength|22}}
+|[[Kandarin Diary|Kandarin]]
+|[[Kandarin Diary#Medium|Medium]]
+|Use the grapple shortcut to get from the [[water obelisk]] to [[Catherby]] shore (one-way only)
+|-
+|{{SCP|Agility|39}}
+|{{SCP|Ranged|21}}
+|{{SCP|Strength|38}}
+|[[Ardougne Diary|Ardougne]]
+|[[Ardougne Diary#Medium|Medium]]
+|Grapple over [[Yanille]]'s south wall
+|-
+|{{SCP|Agility|53}}
+|{{SCP|Ranged|42}}
+|{{SCP|Strength|21}}
+|[[Karamja Diary|Karamja]]
+|[[Karamja Diary#Hard|Hard]]
+|Use the crossbow shortcut south of the [[Karamja Volcano|volcano]]
+|-
+|{{SCP|Agility|70}}
+|{{SCP|Ranged|70}}
+|{{SCP|Strength|70}}
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|[[Lumbridge & Draynor Diary#Elite|Elite]]
+|Grapple across a pylon on the [[Dorgesh-Kaan Agility Course]]. A light source is also required.
+|}
+
+{{Top}}
+----
+
+===Chompy bird hunting===
+Each tier of the [[Western Provinces Diary]] requires players to hunt [[Chompy bird]]s up to a certain kill count. In order to begin hunting these birds, players must complete the [[Big Chompy Bird Hunting]] quest, which requires {{SCP|Fletching|5|link=yes}} and {{SCP|Ranged|30|link=yes}} to complete. Higher Ranged levels will increase your accuracy and make hunting faster. Additionally, having {{SCP|Fletching|30|link=yes}} and starting [[Zogre Flesh Eaters]] is recommended, as this unlocks the faster-firing [[Comp ogre bow]].
+
+It is highly recommended to talk to the [[Elder Gnome child]] to claim your diary rewards as soon as you complete each difficulty, as each tier will '''significantly increase the chance of 2 [[Chompy bird]]s appearing while hunting'''.
+
+See the [[Chompy bird hat]] page for in-depth strategy on efficient Chompy bird hunting.
+
+{| class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!Diary
+!Difficulty
+!Task
+|-
+|[[Western Provinces Diary|Western Provinces]]
+|[[Western Provinces Diary#Easy|Easy]]
+|Claim any [[Chompy bird hat]] from [[Rantz]] (30 kills min.)
+|-
+|[[Western Provinces Diary|Western Provinces]]
+|[[Western Provinces Diary#Medium|Medium]]
+|Claim a [[Chompy bird hat]] from [[Rantz]] after registering at least 125 kills
+|-
+|[[Western Provinces Diary|Western Provinces]]
+|[[Western Provinces Diary#Hard|Hard]]
+|Claim a [[Chompy bird hat]] from [[Rantz]] after registering at least 300 kills
+|-
+|[[Western Provinces Diary|Western Provinces]]
+|[[Western Provinces Diary#Elite|Elite]]
+|Claim a [[Chompy bird hat]] from [[Rantz]] after registering at least 1000 kills
+|}
+
+{{Top}}
+----
+
+===Ultimate Ironman mode achievements===
+[[File:Ultimate ironman chat badge.png]] Ultimate Ironman players are restricted from using a bank, trading or otherwise receiving aid from other players. Some of the restrictions in place on these accounts would prevent them from being able to complete certain achievements. In these instances, alternate achievements of similar difficulty are available for players using these game modes.
+
+{|class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!Diary
+!Difficulty
+!Normal req(s)
+!Normal Task
+!Ironman req(s)
+!Ironman Task
+|-
+|[[Ardougne Diary|Ardougne]]
+|[[Ardougne Diary#Medium|Medium]]
+|[[The Hand in the Sand]]
+|Claim buckets of sand from [[Bert]] in [[Yanille]]
+|[[The Hand in the Sand]]
+|[[File:Ultimate ironman chat badge.png]] (Ultimate only) Fill a bucket with sand using [[Bert]]'s sandpit
+|}
+
+{{Top}}
+----
+
+===Pest Control===
+Several [[Western Provinces Diary]] achievements are associated with [[Pest Control]]. Most of these achievements are simply a [[Combat level]] check which allows them to be categorised by difficulty. Acquiring a set of [[Void Knight equipment]] for the Elite achievement, however, will require spending a significant amount of time in the minigame. Equipping this set also requires the following stats:
+*{{SCP|Attack|42|link=yes}}
+*{{SCP|Strength|42|link=yes}}
+*{{SCP|Defence|42|link=yes}}
+*{{SCP|Hitpoints|42|link=yes}}
+*{{SCP|Magic|42|link=yes}}
+*{{SCP|Ranged|42|link=yes}}
+*{{SCP|Prayer|22|link=yes}}
+
+The official world for [[Pest Control]] is 344, where games usually take 2–3 minutes to complete. Note that in order to receive credit for "Completing a game", you do not need to win. You will need to win a game in order to receive points toward acquiring [[Void Knight equipment]].
+
+For more information about winning games consistently, see [[Pest Control/Strategies]].
+
+{| class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!Combat level requirement
+!Diary
+!Difficulty
+!Task
+|-
+|{{SCP|Combat|40}}
+|[[Western Provinces Diary|Western Provinces]]
+|[[Western Provinces Diary#Easy|Easy]]
+|Teleport to [[Pest Control]] using the [[Minigame teleport]]s
+|-
+|{{SCP|Combat|40}}
+|[[Western Provinces Diary|Western Provinces]]
+|[[Western Provinces Diary#Easy|Easy]]
+|Complete a novice game of [[Pest Control]]
+|-
+|{{SCP|Combat|70}}
+|[[Western Provinces Diary|Western Provinces]]
+|[[Western Provinces Diary#Medium|Medium]]
+|Complete an intermediate game of [[Pest Control]]
+|-
+|{{SCP|Combat|100}}
+|[[Western Provinces Diary|Western Provinces]]
+|[[Western Provinces Diary#Hard|Hard]]
+|Complete a veteran game of [[Pest Control]]
+|-
+|{{SCP|Combat|40}}
+|[[Western Provinces Diary|Western Provinces]]
+|[[Western Provinces Diary#Elite|Elite]]
+|Equip any complete [[Void Knight equipment|void set]]
+|}
+
+{{Top}}
+----
+
+===Barbarian Assault===
+The [[Kandarin Diary]] has a few achievements related to playing [[Barbarian Assault]]. This minigame can quickly be reached by teleporting to the [[Barbarian Outpost]] with a [[Games necklace]], or by using the [[minigame teleport]].
+
+New players to Barbarian Assault may be intimidated by the minigame's tutorial, which players are required to watch before participating in their first game. To get started, make sure you watch the display in the top-right corner of your screen and look for the mouth icon. Whenever this message changes, right-click your Penance horn and call out whatever it says. Then, look at the ear icon to see what you should be doing. For a summary of each role's jobs, see [[Barbarian_Assault#Roles|Barbarian Assault roles]].
+
+For more information on winning games effectively in every role, see [[Barbarian Assault/Strategies]].
+
+{| class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!Diary
+!Difficulty
+!Task
+!Details
+|-
+|[[Kandarin Diary|Kandarin]]
+|[[Kandarin Diary#Medium|Medium]]
+|Complete a wave of [[Barbarian Assault]]
+|Achievement triggers as soon as you enter a game.
+|-
+|[[Kandarin Diary|Kandarin]]
+|[[Kandarin Diary#Hard|Hard]]
+|Purchase and equip a [[Granite body]] from [[Barbarian Assault]]
+|Requires defeating the [[Penance Queen]] at least once.
+
+{{Coins|95000}} to buy the [[Granite body]] (no points spent)
+
+{{SCP|Strength|50}} and {{SCP|Defence|50}} to equip the [[Granite body]]
+|-
+|[[Kandarin Diary|Kandarin]]
+|[[Kandarin Diary#Elite|Elite]]
+|Read the blackboard at [[Barbarian Assault]] after reaching Level 5 in every role
+|
+|}
+
+{{Top}}
+----
+
+===Slayer task assignments===
+Several achievements require receiving a task from one of the [[Slayer master]]s throughout ''RuneScape''. Each Slayer master requires that the player have a certain [[Combat level]] before they can receive a task from them. Each achievement will trigger once the player accepts the assignment, so you do not need to complete the assignment that they give you - it can be blocked with [[Slayer points]] or dropped by talking to [[Turael]]/[[Aya]] in [[Burthorpe]] (though this will end your current Slayer task streak).
+
+{| class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!Combat level requirement
+!Quests required
+!Diary
+!Difficulty
+!Task
+|-
+|{{SCP|Combat|20}}
+|[[Priest in Peril]]
+|[[Morytania Diary|Morytania]]
+|[[Morytania Diary#Easy|Easy]]
+|Get a [[slayer task]] from the [[Mazchna|Slayer Master]] in [[Canifis]]
+|-
+|{{SCP|Combat|40}}
+|
+|[[Varrock Diary|Varrock]]
+|[[Varrock Diary#Medium|Medium]]
+|Get a [[Slayer task]] from [[Vannaka]]
+|-
+|{{SCP|Combat|70}}
+|[[Lost City]]
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|[[Lumbridge & Draynor Diary#Medium|Medium]]
+|Get a [[slayer task]] from [[Chaeldar]]
+|-
+|{{SCP|Combat|100}}
+
+{{SCP|Slayer|50}}
+|[[Shilo Village]]
+|[[Karamja Diary|Karamja]]
+|[[Karamja Diary#Hard|Hard]]
+|Be assigned a [[Slayer task]] by the [[Duradel|Slayer Master]] in [[Shilo Village (location)|Shilo Village]]
+|}
+
+{{Top}}
+----
+
+===Fairy rings===
+Visiting an area by [[fairy ring]] is a commonly-seen achievement. In order to use fairy rings, you must start the quest [[Fairytale II - Cure a Queen]]. However, you '''do not need any of the skill requirements''' to complete the quest in order to access the fairy rings - you only need to complete [[Fairytale I - Growing Pains]] and reach the point in Part II where you first use a fairy ring. You will also need to have a [[Dramen staff]] or [[Lunar staff]] equipped anytime you wish to use the fairy rings.
+
+Once you have unlocked fairy rings, all of these achievements can be completed very quickly.
+
+{|class="wikitable sortable lighttable" style="text-align:center; width:100%"
+!Fairy ring code
+!Diary
+!Difficulty
+!Task
+|-
+|{{Fairycode|BIS}}
+|[[Ardougne Diary|Ardougne]]
+|[[Ardougne Diary#Medium|Medium]]
+|Enter the Unicorn pen in [[Ardougne Zoo]] using fairy rings
+|-
+|{{Fairycode|AIR}}
+|[[Ardougne Diary|Ardougne]]
+|[[Ardougne Diary#Medium|Medium]]
+|Visit the island east of the [[Necromancer Tower]]
+|-
+|{{Fairycode|CIP}}
+|[[Fremennik Diary|Fremennik]]
+|[[Fremennik Diary#Medium|Medium]]
+|Travel to [[Miscellania]] by fairy ring
+|-
+|{{Fairycode|ALS}}
+|[[Kandarin Diary|Kandarin]]
+|[[Kandarin Diary#Medium|Medium]]
+|Travel to [[McGrubor's Wood]] by fairy ring
+|-
+|{{Fairycode|CIR}}
+|[[Kourend & Kebos Diary|Kourend & Kebos]]
+|[[Kourend & Kebos Diary#Medium|Medium]]
+|Travel to the [[fairy ring]] south of [[Mount Karuulm]]
+|-
+|{{Fairycode|DIS}}
+|[[Lumbridge & Draynor Diary|Lumbridge & Draynor]]
+|[[Lumbridge & Draynor Diary#Medium|Medium]]
+|Travel to the [[Wizards' Tower]] by fairy ring
+|}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 5 January 2022
+|update = Nex: The Fifth General
+|change = "Kill each of the God Wars Dungeon Generals" was changed to "Kill the generals of Armadyl, Bandos, Saradomin and Zamorak in the God Wars Dungeon."
+}}
+{{Subject changes
+|date = 26 March 2015
+|update = System Update (26 March 2015)
+|change = Changed the sand delivery [[Ardougne Medium]] task for [[Ultimate Ironmen]] to "Fill a [[bucket of sand|bucket with sand]] using [[Bert]]'s [[sand pit]]. "
+}}
+{{Subject changes
+|date = 6 March 2015
+|update = System Update (6 March 2015)
+|change = 
+*The [[Ardougne Medium]] task of "Upgrade an [[Iban staff]]" has been changed to "Equip an [[Iban staff (u)|upgraded Iban staff]]".
+*The [[Ardougne Elite]] task of "Imbue a salve amulet at [[Nightmare Zone]]" has been changed to "Equip a [[salve amulet (ei)]]".
+}}
+{{Subject changes footer}}
+
+{{Top}}
+[[Category:Achievement diaries]]

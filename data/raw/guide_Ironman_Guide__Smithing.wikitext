@@ -1,0 +1,466 @@
+{{Iron Guide Links}}
+
+[[Smithing]] is a skill most efficiently trained by buying ores from [[Ordan]], and smelting them at the [[Blast Furnace]]. A decent amount of experience also comes from smelting [[ore]]s and forging [[bar]]s obtained from [[drops|monster drops]]. Alternatively, the [[Giants' Foundry]] minigame is a slower but cheaper and more accessible alternative training, and can be profitable.
+
+==Early training: Quests==
+{{Main|Quest experience rewards#Smithing}}
+
+Completing [[The Knight's Sword]], [[Elemental Workshop I]] and [[Elemental Workshop II|II]], [[The Giant Dwarf]], [[Heroes' Quest]] and [[Recipe for Disaster/Freeing Pirate Pete|Pirate Pete subquest]] of [[Recipe for Disaster]] will grant a total of 30,982 Smithing experience, elevating a level 1 Smithing to level 37. 2 [[iron bar]]s are necessary for The Knight's Sword; an iron bar spawn can be found west of the [[Graveyard of Shadows]] next to the [[bear]]s in some trees in level 18 [[Wilderness]]. For Hardcore Ironmen who don't want to enter the Wilderness, another iron bar spawns at [[Sunset Coast]] in [[Varlamore]]. Alternatively, players can safespot [[paladin]]s in [[East Ardougne]] or kill [[Dwarf|dwarves]] for an iron bar drop. With the addition of [[Sailing]] an iron bar can be obtained from [[Small salvage]].
+
+* [[The Knight's Sword]] requires {{SCP|Mining|10}}, rewards 12,725 Smithing experience
+* [[Sleeping Giants]] requires {{SCP|Smithing|15}}, rewards 6,000 Smithing experience
+* [[Elemental Workshop I]] requires {{SCP|Mining|20}}, {{SCP|Smithing|20}}, {{SCP|Crafting|20}}, rewards 5,000 Smithing experience
+* [[Elemental Workshop II]] requires {{SCP|Magic|20}}, {{SCP|Smithing|30}}, rewards 7,500 Smithing experience
+* [[The Giant Dwarf]] requires {{SCP|Crafting|12}}, {{SCP|Firemaking|16}}, {{SCP|Magic|33}}, {{SCP|Thieving|14}}, rewards 2,500 Smithing experience
+* [[Heroes' Quest]] requires {{SCP|Quest|55}}, {{SCP|Cooking|53}}, {{SCP|Fishing|53}}, {{SCP|Herblore|25}}, {{SCP|Mining|50}} and a number of quests, rewards 2,257 Smithing experience
+* [[Recipe for Disaster/Freeing Pirate Pete|Freeing Pirate Pete]] ([[Recipe for Disaster]]) requires [[Recipe for Disaster/Another Cook's Quest|Another Cook's Quest]], {{SCP|Cooking|31}}, rewards 1,000 Smithing experience
+
+Though [[Family Crest]] does not reward smithing experience directly, it allows access to the [[goldsmith gauntlets]], which yield approximately 2.5x experience when smithing [[gold bar]]s.
+
+==Fastest experience==
+===Levels 15–30/40: Iron dart tips===
+At lower levels, mine iron ore in the [[South-east Ardougne mine]], [[Superheat Item|superheat]] them into [[iron bar]]s while walking to the south-eastern bank in East Ardougne, teleport back with the [[Ardougne cloak 1]] (or higher) and repeat (you can also walk to Port Khazard anvils and smith them there).  Alternatively, buy the ores from [[Ordan]] and smelt them into bars in the Blast Furnace. Do this until enough supplies are made to get around level 50–55 [[Fletching]]. Smith the bars later into [[iron dart tip]]s for early Fletching training. The darts can be used for early Ranged training or saved for luring monsters when training [[Slayer]].
+
+===Levels 40–99: Gold Ore Blast Furnace===
+[[File:Blast Furnace.png|thumb|right|The Blast Furnace in [[Keldagrim]].]]
+{{Main|Blast Furnace}}
+
+The fastest way to train Smithing from level 40 onwards is to  buy [[gold ore]] from [[Ordan]] and smelt them into [[gold bars]] in the Blast Furnace whilst wearing [[goldsmith gauntlets]]. This can net more than 230,000 Smithing experience per hour. This is very expensive and should be done only once the player can afford it. Every 1 xp will cost 4 gp not including payments to the workers, or payment to use the blast furnace before level 60.
+
+As [[gold bar]]s have limited uses, some players opt to make [[dart]]s for [[Ironman Guide/Ranged|ranged training]] or [[Platebody|platebodies]] for gold.
+
+Make sure there are 27 bars in the dispenser before starting, otherwise the animation for withdrawing bars will be cancelled and slow you down. Run to the south side of the dispenser to allow the bars to smelt so that you can take out 28. If the conveyor belt breaks, take out 1 bar on the way to depositing more ores. If there are 28 bars left in the dispenser you won't be able to deposit anymore. Wield [[ice gloves]] to withdraw bars and equip [[goldsmith gauntlets]] as soon as you withdraw bars. Buy from worlds until there's less than 28 ore left. You can bank more than 11,000 gold ore per hour if the Worlds are full, but 8,000–9,000 is more realistic, doing 3 inventories per World. 
+
+Alternatively, players can attain more than 300,000 Smithing experience per hour, but the experience rate varies heavily depending on stock/click speed. The difference between this method and the other is that you're dropping the bars you collect instead of banking them, and buying then using gold straight from the ore seller. Hop to a non Blast Furnace World, buy 2–3 inventories of ore, use them on the belt, hop to a Blast Furnace World again, collect and drop bars, and repeat.
+
+====Purchasing ores====
+If short on money, making platebodies and casting [[High Level Alchemy]] on them can significantly reduce the cost per experience, at a significantly slower rate of experience per hour. Another alternative, making iron or steel darts, gives even less experience per hour but fletching the darts can be done while training agility or doing other activities involving walking, making it still relatively efficient. If money is no problem and fletching experience is obtained in different ways, smelting gold bars is the most efficient.
+
+{| class="wikitable"
+|-
+! colspan="2" rowspan="2"| Metal !! colspan="3" | Smithing level !! rowspan="2"|xp per bar !! rowspan="2"| Price per bar
+! rowspan="2" |Price per xp
+|-
+! Smelting !! Darts !! Platebody
+|-
+| {{plinkt|Iron bar|txt=Iron}} || 15 || 19 || 33 || 37.5 || {{coins|25}}
+|{{coins|0.666
+}}
+|-
+| {{plinkt|Steel bar|txt=Steel}} || 30 || 34 || 48 || 55 || {{coins|25+67}}
+|{{coins|1.67}}
+|-
+| {{plinkt|Gold bar|txt=Gold}} || 40 || {{NA}} || {{NA}} || 56.2 || {{coins|225}}
+|{{coins|4}}
+|-
+| {{plinkt|Mithril bar|txt=Mithril}} || 50 || 54 || 68 || 80 || {{coins|243+2*67}}
+|{{coins|4.71}}
+|}
+
+<tabber>
+|-|
+Making platebodies/gold bracelets=
+This strategy involves using the bars for platebodies (gold bracelets for gold) and casting high level alchemy on them to reduce the costs of purchasing ore from [[Ordan]].
+{| class="wikitable"
+|-
+! colspan="2" rowspan="2"| Metal !! colspan="2"|{{plinkp|High Level Alchemy}} platebody !! rowspan="2"| gp/{{SCP|Smithing}} xp (consuming nature runes)
+|-
+! Free {{plinkp|Nature rune}} !! {{coins|180}} per {{plinkp|Nature rune}}
+|-
+| {{plinkt|Iron platebody|txt=Iron}} || {{coins|336}} || {{coins|336-180}} || {{coins|-(25-156/5)/37.5}}
+|-
+| {{plinkt|Steel platebody|txt=Steel}} || {{coins|1200}} || {{coins|1200-180}} || {{coins|-(92-1020/5)/55}}
+|-
+| {{plinkt|Gold bracelet|txt=Gold}} || {{Coins|330}} || {{Coins|330-180}} || {{coins|-(225-150)/56.2}}
+|-
+| {{plinkt|Mithril platebody|txt=Mithril}} || {{coins|3120}} || {{coins|3120-180}} || {{coins|-(377-2940/5)/80}}
+|}
+|-|
+Making darts/gold bars=
+This strategy involves getting the best experience out of every bar by not processing the gold and using the other metals for fletching.
+{| class="wikitable"
+|-
+! colspan="2" rowspan="2"| Metal !! colspan="2"|{{SCP|fletching}} !! colspan="3"| gp/xp
+|-
+! Lvl !! XP !! {{SCP|Smithing}} !! {{SCP|Fletching}} !! {{SCP|overall}}
+|-
+| {{plinkt|Iron dart|txt=Iron}} || 22 || 38 || {{coins|-25/37.5}} || {{coins|-25/38}} || {{coins|-25/(37.5+38)}}
+|-
+| {{plinkt|Steel dart|txt=Steel}} || 37 || 75 || {{coins|-92/55}} || {{coins|-92/75}} || {{coins|-92/(55+75)}}
+|-
+| {{plinkt|Gold bar|txt=Gold}} || {{NA}} || {{NA}} || {{coins|-225/56.2}} || {{NA}} || {{coins|-225/56.2}}
+|-
+| {{plinkt|Mithril dart|txt=Mithril}} || 52 || 112 || {{coins|-377/80}} || {{coins|-377/112}} || {{coins|-377/(80+112)}}
+|}
+|-|
+</tabber>
+
+==Other methods==
+
+===Levels 15/30–99: Giants' Foundry===
+{{Main|Giants' Foundry|Giants' Foundry/Strategies}}
+[[File:Giants' Foundry.png|thumb|The [[Giants' Foundry]].]]
+The [[Giants' Foundry]] minigame is a slower, but cheaper and more accessible alternative to Blast Furnace. You can use your own metal [[bar]]s or use unwanted metal equipment for this minigame. Using [[Giants' Foundry/Mould List|better moulds]] applicable to the player's Smithing level and buying the [[Smiths' Uniform]] would result in a higher profit/lower loss, higher experience rate, and more reputation points.
+
+==== Purchasing weapons for bars ====
+[[Warhammer|Warhammers]] are one of the cheapest sources of bars at all metal tiers when bought at shops, providing 2 bars each (behind only platebodies). The [[Cam Torum Blacksmith]] has the highest stock and is close to a bank, but requires [[Perilous Moons]] to be started. Alternative shops are [[Vigr's Warhammers]] (bank nearby) and [[Skulgrimen's Battle Gear]] (deposit with [[Peer the Seer]] after [[Fremennik Easy Diary]]), though their prices are slightly higher.
+
+At Levels 15–30, players buy and melt [[Bronze equipment|bronze]] and [[iron equipment]] purchased from stores, notably [[Platebody|platebodies]], [[platelegs]] and [[Plateskirt|plateskirts]] located in the stores in Al Kharid [[Ranael's Super Skirt Store.]] and [[Louie's Armoured Legs Bazaar.]] This results in a small profit. Note that these are more expensive than warhammers, but have greater stock available as the stores are next to each other.  
+
+By Level 30 onward, players can profit from buying and smelting [[Iron equipment|iron]] and [[steel equipment]] purchased from these stores. 
+
+By Level 50, [[mithril]] can be smelted but the player may not be able to profit from smelting purchased steel and mithril equipment. However, [[claws]] are cheap and purchasing [[mithril claws]] from [[Jatizso]]'s [[Weapons galore]] is recommended to reduce money loss and profit with non-purchased steel or [[adamant]] ({{SCP|Smithing|70}}) items. It's also around this level when better moulds can be purchased for better overall rates.
+
+From Levels 70–99, with the completion of [[Song of the Elves]], buying and using mithril and adamant armour from [[Aneirin's Armour]] shop in [[Prifddinas]] is the best method for experience, but it will not profit. Alternatively from Levels 85–99, players can kill [[Zalcano]] for adamantite and [[runite]] drops and profit from those.
+
+'''Purchasing ores at Blast Furnace for bars'''
+
+It is significantly cheaper (about half the price) and faster to purchase ores up to mithril at [[Ore seller.|Blast Furnace Ore's Seller]] and then use the Blast Furnace to process them into bars instead of purchasing weapons. Therefore it is not advised to buy weapons or armour for iron, steel or mithril if you have access to the Blast Furnace.
+{| class="wikitable"
+|+
+!Price per bar
+!Buying warhammers
+!Buying ores
+!Buying ores including Blast Furnace cost
+|-
+|Iron
+|86,5
+|25
+|40
+|-
+|Steel
+|320
+|92
+|122 (110 with coal bag)
+|-
+|Mithril
+|830
+|377
+|422 (405 with coal bag)
+|}
+
+==== Processing bars ====
+Bars that are acquired through your own methods, such as Blast Furnace and PVM, can be used at the Giants' Foundry. Giants' Foundry is an alternative to traditional bar smithing if you prefer to spend more time processing and less time collecting bars or GP for Blast Furnace. Depending on the method of acquiring bars, bar type, alloy, and moulds available, you will make roughly 10x XP/bar and, aside from [[Runite bar|Runite]], will make comparable or more GP/Bar as opposed to smithing platebodies and [[High alch|high alching]] them. However, it will take much longer to process these bars compared to making platebodies, so should primarily be done if your current methods of making money aren't very strong or if the rewards from Giants' Foundry are desirable. 
+
+'''It is NOT worth processing bars into items to then recycle at Giants' Foundry, as you will get less XP/Bar for similar or worse XP rates overall'''. This is due to the fact that processed items do not contribute the same number of bars to the Giants' Foundry crucible that it took to create the item. For example, creating Steel Claws takes 2 steel bars, but they only contribute 1 bar towards the crucible. Even if you use the most efficient items, platebodies, the extra experience gained per bar is usually less than 20% of the experience gained by using the bars for the Giants' Foundry crucible directly. 
+
+However, it can be worthwhile to purchase premade equipment from a vendor if you have the GP for it. Buying Mithril Claws and Steel Warhammers from a vendor allows a player to fill the crucible with a Steel/Mithril alloy and the sword created will always generate a profit over the cost of the items purchased from a store. This can be an effective training method with minimal initial investment, for those that are saving their bars for other activities.
+
+The table below is a reference for approximate GP and XP per item. 14:14 alloys are used, however, most alloys can substitute more lower tier bars for a minimal loss in metal score. 18:10 is generally the best ratio to not lose too much metal score while using bars that are quicker to make or acquire. Where possible, it is always best to use an alloy over using a single metal. 
+
+<tabber>
+Bronze/Iron=
+{| class="wikitable"
+|-
+! colspan="2" |Method
+!Bars / Item
+!Bars / Hour
+! colspan="2" |GP / Bar
+{{plinkp|High Level Alchemy}}Platebody ({{coins|180}} per {{plinkp|Nature rune}})
+
+or Foundry Commission
+! colspan="2" |GP/HR
+! colspan="2" |XP / Bar
+! colspan="2" |XP/HR
+|-
+| rowspan="2" |Giants Foundry
+|Default Moulds|| rowspan="2" | 14 {{Plinkp|Bronze bar}}<br> 14{{Plinkp|Iron bar}}
+| rowspan="2" |196{{Plinkp|Bronze bar}}<br> 196{{Plinkp|Iron bar}}
+| colspan="2" |{{Coins|8040/28}}
+| colspan="2" |{{Coins|112560}}
+| colspan="2" |143.6
+| colspan="2" |56,290
+|-
+|Best Moulds
+| colspan="2" |{{Coins|12240/28}}
+| colspan="2" |{{Coins|171360}}
+| colspan="2" |218.6
+| colspan="2" |85,690
+|-
+| colspan="2" rowspan="2" |Smithing Platebodies|| 5{{Plinkp|Bronze bar}}
+|4000{{Plinkp|Bronze bar}}
+|{{Coins|({{HA|Bronze platebody}}-180)/5}}
+| rowspan="2" |Both:
+{{Coins|({{HA|Bronze platebody}}+{{HA|Iron platebody}}-360)/10}}
+|{{Coins|({{HA|Bronze platebody}}-180)*800}}
+| rowspan="2" |Both:
+{{Coins|(({{HA|Bronze platebody}}-180)*800+({{HA|Iron platebody}}-180)*800)/2}}
+|12.5
+| rowspan="2" |Both:
+18.75
+|50,000
+| rowspan="2" |Both:
+75,000
+|-
+|5 {{Plinkp|Iron bar}}
+|4000 {{Plinkp|Iron bar}}
+|{{Coins|({{HA|Iron platebody}}-180)/5}}
+|{{Coins|({{HA|Iron platebody}}-180)*800}}
+|25
+|100,000
+|}
+|-|
+
+Iron/Steel=
+{| class="wikitable"
+|-
+! colspan="2" |Method
+!Bar / Item
+!Bars / Hour
+! colspan="2" |GP / Bar
+{{plinkp|High Level Alchemy}}Platebody ({{coins|180}} per {{plinkp|Nature rune}})
+
+or Foundry Commission
+! colspan="2" |GP/HR
+! colspan="2" |XP / Bar
+! colspan="2" |XP/HR
+|-
+| rowspan="2" |Giants Foundry
+|Default Moulds|| rowspan="2" | 14 {{Plinkp|Iron bar}}<br> 14{{Plinkp|Steel bar}}
+| rowspan="2" |196{{Plinkp|Iron bar}}<br> 196{{Plinkp|Steel bar}}
+| colspan="2" |{{Coins|12060/28}}
+| colspan="2" |{{Coins|168840}}
+| colspan="2" |215.4
+| colspan="2" |84,430
+|-
+|Best Moulds
+| colspan="2" |{{Coins|16980/28}}
+| colspan="2" |{{Coins|237720}}
+| colspan="2" |303.2
+| colspan="2" |118,850
+|-
+| colspan="2" rowspan="2" |Smithing Platebodies|| 5{{Plinkp|Iron bar}}
+|4000{{Plinkp|Iron bar}}
+|{{Coins|({{HA|Iron platebody}}-180)/5}}
+| rowspan="2" |Both:
+{{Coins|({{HA|Iron platebody}}+{{HA|Steel platebody}}-360)/10}}
+|{{Coins|({{HA|Iron platebody}}-180)*800}}
+| rowspan="2" |Both:
+{{Coins|(({{HA|Iron platebody}}-180)*800+({{HA|Steel platebody}}-180)*800)/2}}
+|25
+| rowspan="2" |Both:
+31.25
+|100,000
+| rowspan="2" |Both:
+125,000
+|-
+|5 {{Plinkp|Steel bar}}
+|4000 {{Plinkp|Steel bar}}
+|{{Coins|({{HA|Steel platebody}}-180)/5}}
+|{{Coins|({{HA|Steel platebody}}-180)*800}}
+|37.5
+|150,000
+|}
+|-|
+
+Steel/Mithril=
+{| class="wikitable"
+|-
+! colspan="2" |Method
+!Bar / Item
+!Bars / Hour
+! colspan="2" |GP / Bar
+{{plinkp|High Level Alchemy}}Platebody ({{coins|180}} per {{plinkp|Nature rune}})
+
+or Foundry Commission
+! colspan="2" |GP/HR
+! colspan="2" |XP / Bar
+! colspan="2" |XP/HR
+|-
+| rowspan="2" |Giants Foundry
+|Default Moulds|| rowspan="2" | 14 {{Plinkp|Steel bar}}<br> 14{{Plinkp|Mithril bar}}
+| rowspan="2" |182{{Plinkp|Steel bar}}<br> 182{{Plinkp|Mithril bar}}
+| colspan="2" |{{Coins|18000/28}}
+| colspan="2" |{{Coins|243,000}}
+| colspan="2" |321.4
+| colspan="2" |116,980
+|-
+|Best Moulds
+| colspan="2" |{{Coins|23820/28}}
+| colspan="2" |{{Coins|309660}}
+| colspan="2" |425.4
+| colspan="2" |154,840
+|-
+| colspan="2" rowspan="2" |Smithing Platebodies|| 5{{Plinkp|Steel bar}}
+|4000{{Plinkp|Steel bar}}
+|{{Coins|({{HA|Steel platebody}}-180)/5}}
+| rowspan="2" |Both:
+{{Coins|({{HA|Steel platebody}}+{{HA|Mithril platebody}}-360)/10}}
+|{{Coins|({{HA|Steel platebody}}-180)*800}}
+| rowspan="2" |Both:
+{{Coins|(({{HA|Steel platebody}}-180)*800+({{HA|Mithril platebody}}-180)*800)/2}}
+|37.5
+| rowspan="2" |Both:
+43.75
+|150,000
+| rowspan="2" |Both:
+175,000
+|-
+|5 {{Plinkp|Mithril bar}}
+|4000 {{Plinkp|Mithril bar}}
+|{{Coins|({{HA|Mithril platebody}}-180)/5}}
+|{{Coins|({{HA|Mithril platebody}}-180)*800}}
+|50
+|200,000
+|}
+|-|
+
+Mithril/Adamant=
+{| class="wikitable"
+|-
+! colspan="2" |Method
+!Bar / Item
+!Bars / Hour
+! colspan="2" |GP / Bar
+{{plinkp|High Level Alchemy}}Platebody ({{coins|180}} per {{plinkp|Nature rune}})
+
+or Foundry Commission
+! colspan="2" |GP/HR
+! colspan="2" |XP / Bar
+! colspan="2" |XP/HR
+|-
+| rowspan="2" |Giants Foundry
+|Default Moulds|| rowspan="2" | 14 {{Plinkp|Mithril bar}}<br> 14{{Plinkp|Adamantite bar}}
+| rowspan="2" |154{{Plinkp|Mithril bar}}<br> 154{{Plinkp|Adamantite bar}}
+| colspan="2" |{{Coins|26520/28}}
+| colspan="2" |{{Coins|291720}}
+| colspan="2" |473.6
+| colspan="2" |145,860
+|-
+|Best Moulds
+| colspan="2" |{{Coins|33360/28}}
+| colspan="2" |{{Coins|366960}}
+| colspan="2" |595.7
+| colspan="2" |183,470
+|-
+| colspan="2" rowspan="2" |Smithing Platebodies|| 5{{Plinkp|Mithril bar}}
+|4000{{Plinkp|Mithril bar}}
+|{{Coins|({{HA|Mithril platebody}}-180)/5}}
+| rowspan="2" |Both:
+{{Coins|({{HA|Mithril platebody}}+{{HA|Adamant platebody}}-360)/10}}
+|{{Coins|({{HA|Mithril platebody}}-180)*800}}
+| rowspan="2" |Both:
+{{Coins|(({{HA|Mithril platebody}}-180)*800+({{HA|Adamant platebody}}-180)*800)/2}}
+|50
+| rowspan="2" |Both:
+56.25
+|200,000
+| rowspan="2" |Both:
+225,000
+|-
+|5 {{Plinkp|Adamantite bar}}
+|4000 {{Plinkp|Adamantite bar}}
+|{{Coins|({{HA|Adamant platebody}}-180)/5}}
+|{{Coins|({{HA|Adamant platebody}}-180)*800}}
+|62.5
+|250,000
+|}
+|-|
+
+Adamant/Rune=
+{| class="wikitable"
+|-
+! colspan="2" |Method
+!Bar / Item
+!Bars / Hour
+! colspan="2" |GP / Bar
+{{plinkp|High Level Alchemy}}Platebody ({{coins|180}} per {{plinkp|Nature rune}})
+
+or Foundry Commission
+! colspan="2" |GP/HR
+! colspan="2" |XP / Bar
+! colspan="2" |XP/HR
+|-
+| rowspan="2" |Giants Foundry
+|Default Moulds|| rowspan="2" | 14 {{Plinkp|Adamantite bar}}<br> 14{{Plinkp|Runite bar}}
+| rowspan="2" |126{{Plinkp|Adamantite bar}}<br> 126{{Plinkp|Runite bar}}
+| colspan="2" |{{Coins|38340/28}}
+| colspan="2" |{{Coins|345060}}
+| colspan="2" |684.6
+| colspan="2" |172,520
+|-
+|Best Moulds
+| colspan="2" |{{Coins|46380/28}}
+| colspan="2" |{{Coins|417,420}}
+| colspan="2" |828.2
+| colspan="2" |208,700
+|-
+| colspan="2" rowspan="2" |Smithing Platebodies|| 5{{Plinkp|Adamantite bar}}
+|4000{{Plinkp|Adamantite bar}}
+|{{Coins|({{HA|Adamant platebody}}-180)/5}}
+| rowspan="2" |Both:
+{{Coins|({{HA|Adamant platebody}}+{{HA|Rune platebody}}-360)/10}}
+|{{Coins|({{HA|Adamant platebody}}-180)*800}}
+| rowspan="2" |Both:
+{{Coins|(({{HA|Adamant platebody}}-180)*800+({{HA|Rune platebody}}-180)*800)/2}}
+|62.5
+| rowspan="2" |Both:
+68.75
+|250,000
+| rowspan="2" |Both:
+275,000
+|-
+|5 {{Plinkp|Runite bar}}
+|4000 {{Plinkp|Runite bar}}
+|{{Coins|({{HA|Rune platebody}}-180)/5}}
+|{{Coins|({{HA|Rune platebody}}-180)*800}}
+|75
+|300,000
+|}
+|-|
+</tabber>
+
+For hourly rates with optimal moulds requiring up to {{SCP|Smithing|81|link=no}}, see [[Giants' Foundry/Strategies#Hourly rates|Giants' Foundry/Strategies § Hourly rates]]. These rates also suggest that the player is not using the [[Smiths' Uniform]] (uniform will increase rates) and the time taken to acquire alloys will not be taken into account.
+
+
+===Levels 35+: Cannonballs===
+[[Steel cannonball]]s can be made after the completion of the [[Dwarf Cannon]] quest and they can be useful for certain [[Ironman Guide/Slayer|Slayer]] scenarios. However, due to their slow forging speed of 4 cannonballs every 4.8 seconds with the regular [[ammo mould]], it is recommended to purchase the [[double ammo mould]] from [[Giants' Foundry]] to double the production rate to 8 cannonballs every 4.8 seconds. Additionally, players can make use of the [[Ancient Furnace]] to double the production rate to 4 cannonballs every 2.4 seconds with the regular [[ammo mould]] or 8 cannonballs every 2.4 seconds with the [[Double ammo mould]].
+
+Regular [[ammo mould]] at the [[Edgeville Furnace]]:
+*2,160 cannonballs per hour
+*13,824 Smithing experience per hour
+
+[[Double ammo mould]] at the [[Edgeville Furnace]]:
+*4,320 cannonballs per hour
+*27,648 Smithing experience per hour
+[[Coal]] and [[iron ore]] can be quickly bought from [[Ordan]] at the Blast Furnace and smelt into [[steel bars]] for cannonballs. To get from 40 to 70 Ranged while primarily using a [[Dwarf multicannon|cannon]] for [[Pay-to-play Ranged training|Ranged training]], you'll need about 35,000 cannonballs, requiring 8,750 steel bars. 
+
+If you need a large quantity of iron and coal ores for smithing [[steel bars]] into cannonballs, it's more efficient to spend time earning money to buy ores from [[Ordan]] instead of directly mining them. If you can earn 200,000 coins per hour from [[Thieving]] or the [[Agility Pyramid]], you can purchase around 4,000 iron ore or 1,400 coal from Ordan and bank at the nearby chest. Assuming you would normally mine and bank 1,000 ores an hour, this represents a significant increase in the number of ores you would be able to obtain.
+
+===Levels 75/90-99: Making Hastae (Requires 99 fishing)===
+
+===== Background =====
+{{Inventory|align=right
+|Achievement diary cape|Yew logs|Yew logs|Yew logs
+|Fishing cape|Yew logs|Yew logs|Yew logs
+|Yew logs|Yew logs|Yew logs|Yew logs
+|Yew logs|Yew logs|Yew logs|Adamantite bar
+|Adamantite bar|Adamantite bar|Adamantite bar|Adamantite bar
+|Adamantite bar|Adamantite bar|Adamantite bar|Adamantite bar
+|Adamantite bar|Adamantite bar|Adamantite bar|Adamantite bar}}
+This method requires the [[Fishing cape]] for the teleport to Otto's Grotto, as well as a quick teleport to a bank, such as the Achievement Diary Cape or the [[Enchanted lyre(i)|Enchanted Lyre(i)]]. 
+
+Hastae are unique in that they essentially provide double the experience per bar used, at the expense of using a log in the process. For example, smithing a rune sword requires 1 runite bar, and provides 75 experience, however smithing a rune hasta requires 1 runite bar and 1 magic log, providing 150 experience.
+
+This is useful for players with lots of spare yew logs (for [[adamant hastae]]), magic logs (for [[Rune hasta|rune hastae]]), and who wish to increase their smithing experience/bar without having to go to Giant's Foundry.
+
+===== Process =====
+''If using the Achievement diary cape for banking at [[Jarr]], the camera may be oriented to the East for this entire process, making it even lower intensity.''
+
+# Start at a bank, withdraw 13 adamantite/runite bars, and 13 yew/magic logs
+# Using the fishing cape, teleport to Otto's grotto; the [[barbarian anvil]] is only one tile away from the teleport
+# Smith 13 hastae, return to the bank and repeat.
+
+===Levels 70+: Zalcano===
+{{Main|Zalcano}}
+
+Once the player has access to [[Prifddinas]], killing [[Zalcano]] is an excellent way of banking Smithing experience in the form of [[gold ore]], or [[mithril ore]]/[[Mithril bar|bars]] and [[adamantite ore]]/[[Adamantite bar|bars]] in addition of earning ~3,000 Smithing experience per hour while fighting her. The experience rates of the dropped ores/bars will be slower than simply buying gold ore; but the activity is effectively free money-wise, and is much more engaging.
+
+Some recommended activities for the bars obtained from Zalcano:
+
+* [[Giants' Foundry]] for more experience and profit from the bars from the commission rewards.
+* Smithed into armour pieces such as [[platebodies]] and casting [[High Level Alchemy|high-level alchemy]] on them for money.
+* Turned into [[dart tips]] for the [[toxic blowpipe]].
+
+{{Training guides}}
+[[Category:Ironman Mode]]

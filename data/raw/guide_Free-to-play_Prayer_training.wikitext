@@ -1,0 +1,209 @@
+{{External|rs|rsc=Prayer training}}
+{{Otheruses|the free-to-play guide|the members' guide|Pay-to-play Prayer training}}
+[[Prayer]] is regarded to be the most difficult skill to train in [[free-to-play]] due to the expense involved in purchasing large numbers of [[remains]] from the [[Grand Exchange]], low [[experience]] rates, and the high amount of clicking required to train the skill.
+
+==Starting off==
+[[The Restless Ghost]] provides you with 1,125 Prayer experience which allows a player to raise Prayer from level 1 to 9 upon completion. There are no requirements to begin this quest (melee defensive [[armour]] is optional but useful) and is strongly recommended for beginning players as it provides a fairly decent amount of experience for relatively little effort.
+
+===Prayer melee===
+If your desire is to maximise [[prayer bonus]] to be able to use prayers for a longer period of time in melee combat, this is the best-in-slot for prayer bonuses. This also suggests that the player has protection prayers unlocked to negate damage ({{SCP|Prayer|37|link=yes}} for [[Protect from Magic]], {{SCP|Prayer|40|link=yes}} for [[Protect from Missiles]], and {{SCP|Prayer|43|link=yes}} for [[Protect from Melee]]); otherwise, use the best-in-slot melee table to fill in the rest of the slots for defence bonuses.
+
+{{Recommended equipment
+| style = [[Prayer]] melee gear
+| head1 = [[File:Saradomin full helm.png]] [[Rune god armour|Rune god full helm]]<ref group='d' name='rg'>[[Rune god armour]] is unobtainable in free-to-play and can only be obtain by completing [[clue scroll (hard)|hard]] [[Treasure Trails]] in [[Members]] but they can be used in free-to-play. While sharing the same defensive stats as their [[rune armour|regular rune counterpart]], they provide +1 Prayer bonus.</ref> <small>([[Clue scroll (hard)|hard]] [[Treasure Trails]] in [[Members]])</small>
+| neck1 = {{plink|Holy symbol}}<ref group='d' name='hs'>[[Holy symbol]] provide no offensive bonuses but it provides a +8 [[Prayer bonus]] that is useful for using [[prayer]]s for a longer period of time.</ref> <small>(20 [[Mining]], 20 [[Smithing]], 31 [[Prayer]] and 16 [[Crafting]])</small>
+| neck2 = {{plink|Amulet of power}}<ref group='d' name='ap'>[[Amulet of power]] provides +1 [[Prayer bonus]] but it also have offensive and defensive bonuses.</ref> <small>(40 [[Mining]], 40 [[Smithing]], 70 [[Crafting]] and 57 [[Magic]])</small>
+| neck3 = {{plink|Amulet of strength}}<ref group='d' name='np'>These pieces of equipment provide no Prayer bonus but do provide offensive melee bonuses.</ref> <small>(40 [[Mining]], 40 [[Smithing]], 50 [[Crafting]] and 49 [[Magic]])</small>
+| neck4 = {{plink|Amulet of accuracy}}<ref group='d' name='np'/> <small>([[Imp Catcher]])</small>
+| neck5 = {{plink|Amulet of defence}}<ref group='d' name='nb'>These pieces of equipment are optional as they only provide defensive bonuses and no offensive melee bonuses.</ref> <small>(40 [[Mining]], 40 [[Smithing]], 31 [[Crafting]] and 27 [[Magic]])</small><br/>{{plink|Amulet of defence (t)}}<ref group='d' name='nb'/> <small>([[Clue scroll (beginner)|beginner]] [[Treasure Trails]])</small>
+| body1 = {{plink|Monk's robe top}} <small>([[Edgeville Monastery]] ({{FloorNumber|uk=1}}) with 31 [[Prayer]])</small><br/>{{plink|Monk's robe top (t)}} <small>([[Clue scroll (beginner)|beginner]] [[Treasure Trails]])</small>
+| body2 = {{plink|Priest gown (top)}} <small>([[Thessalia's Fine Clothes.]])</small><br/>{{plink|Zamorak monk top}} <small>([[Monk of Zamorak]])</small>
+| body3 = [[File:Saradomin platebody.png]] [[Rune god armour|Rune god platebody]]<ref group='d' name='rg'/> <small>([[Clue scroll (hard)|hard]] [[Treasure Trails]] in [[Members]])</small>
+| legs1 = {{plink|Monk's robe}} <small>([[Edgeville Monastery]] ({{FloorNumber|uk=1}}) with 31 [[Prayer]])</small><br/>{{plink|Monk's robe (t)}} <small>([[Clue scroll (beginner)|beginner]] [[Treasure Trails]])</small>
+| legs2 = {{plink|Priest gown (bottom)}} <small>([[Thessalia's Fine Clothes.]])</small><br/>{{plink|Zamorak monk bottom}} <small>([[Monk of Zamorak]])</small>
+| legs3 = [[File:Saradomin platelegs.png]] [[Rune god armour|Rune god platelegs]] / [[File:Saradomin plateskirt.png]] [[Rune god armour|Rune god plateskirt]]<ref group='d' name='rg'/> <small>([[Clue scroll (hard)|hard]] [[Treasure Trails]] in [[Members]])</small>
+| weapon1 = {{plink|Rune mace}} <small>([[Scavvo's Rune Store.]])</small>
+| weapon2 = {{plink|Adamant mace}} <small>([[Flynn's Mace Market.]])</small>
+| weapon3 = {{plink|Mithril mace}} <small>([[Flynn's Mace Market.]])</small>
+| weapon4 = {{plink|Barronite mace}}<ref group='d' name='bm'>[[Barronite mace]] has a Prayer bonus of +2 (same Prayer bonus as [[steel mace]] and [[black mace]]) but it is the strongest and most accurate mace in free-to-play.</ref> <small>([[Ruins of Camdozaal]])</small>
+| weapon5 = {{plink|Black mace}} <small>([[Clue scroll (beginner)|beginner]] [[Treasure Trails]], [[elaborate lockbox]], or [[ornate lockbox]])</small>
+| shield1 = [[File:Saradomin kiteshield.png]] [[Rune god armour|Rune god kiteshield]]<ref group='d' name='rg'/> <small>([[Clue scroll (hard)|hard]] [[Treasure Trails]] in [[Members]])</small>
+| feet1 = {{plink|Decorative boots (gold)}}<ref group='d' name='np'/> <small>(400 [[Castle wars ticket]]s) and 30 [[Defence]])</small>
+}}
+{{Reflist|group=d}}
+
+When fighting against [[greater demons]] in the [[Demonic Ruins]] with melee while sustaining prayer with the Demonic Ruins' passive ability of restoring prayer, it is recommended to only bring a [[holy symbol]], [[monk's robe top]], [[monk's robe]], and [[rune mace]], and optionally two other items (three other items if using [[Protect Item]]). Keep in mind that [[rune full helm]] [[drop]]s obtain from killing greater demons may take up slots for protected items on death. [[Monk's robes]] are always easily replaceable should the player die by [[Player killing|another player]]. A holy symbol can be remade from scratch should the player lose it, but to reduce time required to obtain another one, multiple holy symbols should be crafted and blessed by [[Brother Jered]] in one inventory. The rune mace will usually be protected on death if not an [[File:Ultimate ironman chat badge.png]] Ultimate Ironman or [[skulled]].
+
+==Camdozaal==
+Offering fish at the [[Altar (Camdozaal)|altar]] in the [[Ruins of Camdozaal]] is a less click-intensive method of training prayer, requiring at least 7 [[Fishing]] and [[Cooking]] and completion of the [[Below Ice Mountain]] quest. Having 33 Fishing and Cooking is recommended to fish for [[tetra]], which provide the most prayer experience among the free-to-play fish. Tetra stop ruining at Cooking level 61. However, players can stop ruining tetra around level 54 Cooking if they purchase the [[Preparation buff]] from [[Ramarno's Shard Exchange]] for 2500 [[Barronite shards]]. Purchasing the [[Charm of Fishing|Fishing]] and [[Charm of Preparation|Preparation]] buffs from [[Ramarno]]'s [[Ramarno's Shard Exchange|shard exchange]] slightly increases the experience rates for lower Fishing and Cooking levels respectively.
+#Use a [[small fishing net]] to catch fish in the [[Fishing spot (Camdozaal)|fishing spot]] nearby. A small fishing net spawn is located near the waterfall, and not marked on the minimap. Only the fishing spots with 'Small Net' and 'Big Net' options will work for this (the singular [[Fishing spot (frogspawn)|other type]] of fishing spot is [[Members]] only).
+#Prepare these fish at the [[Preparation Table|preparation table]] using a [[knife]]. You'll gain Cooking experience. A knife lies on the floor nearby the table.
+#*You can increase the speed of fish preparation by repeatedly clicking and  preparing fish on a 3 [[RuneScape clock|tick]] cycle, instead of clicking once and letting it take the normal 4 ticks. This is a form of [[tick manipulation]].
+#Offer the prepared fish at the altar for Prayer experience.
+
+{| class="wikitable align-center-1 align-left-2 align-center-3" style="text-align:right;"
+! colspan="2" rowspan="2" |Fish
+! colspan="2" |{{SCP|Fishing|link=y}}
+! colspan="2" |{{SCP|Cooking|link=y}}
+! colspan="2" |{{SCP|Prayer|link=y}}
+|-
+!Level!!Exp!!Level!!Exp!!Level!!Exp
+|-
+|{{plinkt|Guppy}}
+|7||8
+|7||12
+|1||4
+|-
+|{{plinkt|Cavefish}}
+|20||16
+|20||23
+|1||7
+|-
+|{{plinkt|Tetra}}
+|33||24
+|33||31
+|1||10
+|}
+Experience rates are 5,600 Fishing, 7,400 Cooking, and 2,400 Prayer experience per hour or less when offering all fish types (only possible at Level 61+ cooking, when tetra stop ruining) with decent efficiency and no tick manipulation.
+
+==Wilderness==
+===Bone Yard===
+{{Map|name=Bone Yard|x=3236|y=3746|zoom=2|align=right|caption=The location of the Bone Yard.}}
+The [[Bone Yard]] in the [[Wilderness]] has many [[bones]] spawns and several [[big bones]] spawns, circumventing the need to kill monsters.
+The Bone Yard is located directly north of [[Varrock]] past [[Wilderness#Teleport_restrictions|level 20 Wilderness]]. With {{SCP|Woodcutting|57}}, a [[Canoe#Waka_canoe|Waka]] can be taken to the Wilderness pond which is northwest of the Bone Yard.
+
+'''Recommendations'''
+*[[Food]] (optional) - There are multiple aggressive level 20–25 skeletons in this area. Bring enough food to tank hits, unless using method three below.
+*[[Armour]] (optional) - If tanking hits from skeletons, bringing armour is advisable. However, players should remember not to bring more than [[Items_Kept_on_Death#Wilderness|three]] valuable items into the Wilderness.
+*A [[weapon]] (optional) - Fighting skeletons can provide some combat experience as well as additional bones.
+
+====Strategy====
+There are multiple possible strategies for this method. Any way works, choose which one is best is for you.
+
+Method one:
+#Run in and collect bones.
+#Run out to safety and bury all bones.
+#Repeat.
+
+Method two:
+#Fight skeletons to obtain additional bones. A higher combat level makes this easier.
+#Once the area is safe, collect all bones.
+#Bury all bones.
+#Repeat.
+
+Method three:
+#After 10 minutes in the same area, monsters in the immediate vicinity will lose [[Aggressiveness|aggression]] towards the player and become [[Tolerance|tolerant]]. While this method has an initial delay, it allows the player to collect and bury bones undisturbed by monsters.
+##It is advisable to make one loop of collecting bones before waiting to ensure the currently loaded tolerance regions encompass the route the player intends to take while collecting bones.
+##Make sure not to venture too far from the current area, otherwise the skeletons will become aggressive again for another 10 minutes.
+##World hopping does not reset the aggression timer.
+#Food and armour are not needed, and without bringing any [[weight|heavy]] items (thus, having 0kg of weight), the player can run around burying bones for a much longer period of time before running out of [[energy|run energy]].
+#After the initial 10 minute aggression period, players can expect to gain ~6,000 Prayer experience per hour.
+
+You can always find what works for yourself as well.
+
+===Chaos Temple===
+Burying bones at the south-east [[Chaos Temple (Wilderness)|Chaos Temple]] ruins in the Wilderness is more click-intensive but it is located in a lower-leveled Wilderness area (Levels 11–12) making it a slightly safer alternative to the Bone Yard, plus there are no monsters located in this area in free-to-play worlds. The idea would be to bury the bones inside the temple ruins on the western and southern side and hop between two worlds. Ignore the lone bones on the north-eastern side inside the temple ruin (to maintain [[run energy]]) and the bones outside the temple ruins.
+
+==Combat==
+===Low-level areas===
+Many low level areas consist of people killing monsters. People often do not pick up the bones that lie on the ground, therefore there is often an endless supply of free bones.
+
+Areas and enemies include:
+*[[Lumbridge Swamp]]
+*[[Chicken]] pens
+*[[Cow]] fields
+*[[Goblin]]s (e.g. near the gate to [[Al Kharid]])
+*[[Imp]]s (commonly found south of [[Falador]]) drop [[fiendish ashes]] that give 10 Prayer experience when scattered.
+
+There are of course more spots, but these are amongst the most common spots for people to be leaving loot on the ground.
+
+===High-level areas===
+Big bones are dropped by the following monsters in free-to-play in these areas.
+*[[Giant frog]]s ([[Lumbridge Swamp]])
+*[[Hill giant]]s ([[Edgeville Dungeon]] or [[Giants' Plateau]])
+*[[Moss giant]]s ([[Varrock Sewers]] or [[Crandor]])
+*[[Ice giant]]s ([[Asgarnian Ice Dungeon]])
+*[[Ogresses]] ([[Corsair Cove Dungeon]])
+
+[[Vile ashes]] are dropped by the following monsters in free-to-play in these areas.
+*[[Lesser demon]]s ([[Crandor and Karamja Dungeon]], [[Lava Maze]], or [[Demonic Ruins]])
+*[[Greater demon]]s ([[Demonic Ruins]])
+
+Among the higher-level monsters that drop big bones or ashes, killing giant frogs is the fastest due to their low hitpoints and defence. Killing lesser demons at higher levels would give more profit, but has a lower prayer experience rate.
+
+===Brutus===
+After completing [[The Ides of Milk]], the player can fight [[Brutus]] in [[Lumbridge]]'s eastern cow pen, who is a fairly easy [[boss]] for free-to-play characters to kill with [[Armour/Highest_bonuses#F2P|best-in-slot free-to-play equipment]]. Brutus drops [[bull bones]] worth 40 Prayer XP per kill.
+
+==Power-burying and scattering==
+The best prayer experience rates for prayer in free-to-play are achieved by burying large numbers of bones and demonic ashes bought from the [[Grand Exchange]]. This is a click intensive and expensive method for training the skill. The high cost can be offset by a focus on efficiently [[money making guide|making money]].
+
+The fastest method of training Prayer would be burying [[big bones]] and scattering [[vile ashes]] at the same time as bones and ashes can be buried and scattered simultaneously, granting the player 40 Prayer experience in a single tick within two quick clicks, up to a little less than 116,000 experience per hour within a combination of 2,900 buries and scatters per hour. However, players realistically won't achieve that high with the amount of clicking and banking, realistically reaching around ~100,000 experience per hour. From Levels 1 to 99, this method would require 325,861 big bones ({{Coins|{{GEP|Big bones|325861}}}}) and 325,861 vile ashes ({{Coins|{{GEP|Vile ashes|325861}}}}).
+{| class="wikitable sortable"
+!Ash/bone type
+!Experience
+!XP/hr
+!Hours to 99
+!# for 99
+!Cost
+!Cost for 99
+!GP/XP
+|-
+|{{plink|Bones}}
+|4.5
+|13,050
+|~1000
+|2,896,541
+|{{Coins|{{GEP|Bones}}}}
+|{{Coins|{{GEP|Bones|2896541}}}}
+|{{Coins|-{{GEP|Bones}}/4.5}}
+|-
+|{{plink|Burnt bones}}
+|4.5
+|13,050
+|~1000
+|2,896,541
+|{{Coins|{{GEP|Burnt bones}}}}
+|{{Coins|{{GEP|Burnt bones|2896541}}}}
+|{{Coins|-{{GEP|Burnt bones}}/4.5}}
+|-
+|{{plink|Monkey bones}}
+|5
+|14,500
+|~900
+|2,606,887
+|{{Coins|{{GEP|Monkey bones}}}}
+|{{Coins|{{GEP|Monkey bones|2606887}}}}
+|{{Coins|-{{GEP|Monkey bones}}/5}}
+|-
+|{{plink|Fiendish ashes}}
+|10
+|29,000
+|~450
+|1,303,444
+|{{Coins|{{GEP|Fiendish ashes}}}}
+|{{Coins|{{GEP|Fiendish ashes|1303444}}}}
+|{{Coins|-{{GEP|Fiendish ashes}}/10}}
+|-
+|{{plink|Big bones}}
+|15
+|43,500
+|~300
+|868,962
+|{{Coins|{{GEP|Big bones}}}}
+|{{Coins|{{GEP|Big bones|868962}}}}
+|{{Coins|-{{GEP|Big bones}}/15}}
+|-
+|{{plink|Vile ashes}}
+|25
+|72,500
+|~180
+|521,378
+|{{Coins|{{GEP|Vile ashes}}}}
+|{{Coins|{{GEP|Vile ashes|521378}}}}
+|{{Coins|-{{GEP|Vile ashes}}/25}}
+|}
+
+== Buying a bond ==
+It should be noted that training Prayer as a [[member]] is significantly more cost-effective, so you may want to postpone training until after you become member. One could consider buying a [[Old school bond|bond]] and using a members method of training prayer. With the current price of a bond at {{Coins|{{GEP|Old school bond}}}} and [[dragon bones]] at {{Coins|{{GEP|Dragon bones}}}}, getting to level 99 would require one bond and 51,724 dragon bones when using a [[gilded altar]]. The total price would be {{Coins|{{GEP|Dragon bones|51724}} + {{GEP|Old school bond}}}}, which is {{Coins|{{GEP|Big bones|868962}} - ({{GEP|Dragon bones|51724}} + {{GEP|Old school bond}})}} cheaper than using big bones. When compared to burying and scattering this would save the player about 92 hours (20 hours compared to 112 hours).{{Training guides}}
+{{Free-to-play guides}}
+[[Category:Free-to-play]]

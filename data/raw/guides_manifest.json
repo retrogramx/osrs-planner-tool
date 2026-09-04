@@ -1,0 +1,401 @@
+{
+  "Pay-to-play Cooking training": {
+    "family": "main",
+    "skill": "Cooking",
+    "actual_title": "Pay-to-play Cooking training",
+    "file": "data/raw/guide_Pay-to-play_Cooking_training.wikitext",
+    "len": 25652
+  },
+  "Pay-to-play Crafting training": {
+    "family": "main",
+    "skill": "Crafting",
+    "actual_title": "Pay-to-play Crafting training",
+    "file": "data/raw/guide_Pay-to-play_Crafting_training.wikitext",
+    "len": 57818
+  },
+  "Pay-to-play Firemaking training": {
+    "family": "main",
+    "skill": "Firemaking",
+    "actual_title": "Pay-to-play Firemaking training",
+    "file": "data/raw/guide_Pay-to-play_Firemaking_training.wikitext",
+    "len": 14664
+  },
+  "Pay-to-play Fishing training": {
+    "family": "main",
+    "skill": "Fishing",
+    "actual_title": "Pay-to-play Fishing training",
+    "file": "data/raw/guide_Pay-to-play_Fishing_training.wikitext",
+    "len": 35811
+  },
+  "Pay-to-play Hitpoints training": {
+    "family": "main",
+    "skill": "Hitpoints",
+    "actual_title": "Pay-to-play Hitpoints training",
+    "file": "data/raw/guide_Pay-to-play_Hitpoints_training.wikitext",
+    "len": 2397
+  },
+  "Pay-to-play Magic training": {
+    "family": "main",
+    "skill": "Magic",
+    "actual_title": "Pay-to-play Magic training",
+    "file": "data/raw/guide_Pay-to-play_Magic_training.wikitext",
+    "len": 62517
+  },
+  "Pay-to-play Melee training": {
+    "family": "main",
+    "skill": "Melee",
+    "actual_title": "Pay-to-play Melee training",
+    "file": "data/raw/guide_Pay-to-play_Melee_training.wikitext",
+    "len": 70502
+  },
+  "Pay-to-play Mining training": {
+    "family": "main",
+    "skill": "Mining",
+    "actual_title": "Pay-to-play Mining training",
+    "file": "data/raw/guide_Pay-to-play_Mining_training.wikitext",
+    "len": 40399
+  },
+  "Pay-to-play Prayer training": {
+    "family": "main",
+    "skill": "Prayer",
+    "actual_title": "Pay-to-play Prayer training",
+    "file": "data/raw/guide_Pay-to-play_Prayer_training.wikitext",
+    "len": 70177
+  },
+  "Pay-to-play Ranged training": {
+    "family": "main",
+    "skill": "Ranged",
+    "actual_title": "Pay-to-play Ranged training",
+    "file": "data/raw/guide_Pay-to-play_Ranged_training.wikitext",
+    "len": 42582
+  },
+  "Pay-to-play Runecraft training": {
+    "family": "main",
+    "skill": "Runecraft",
+    "actual_title": "Pay-to-play Runecraft training",
+    "file": "data/raw/guide_Pay-to-play_Runecraft_training.wikitext",
+    "len": 136984
+  },
+  "Pay-to-play Smithing training": {
+    "family": "main",
+    "skill": "Smithing",
+    "actual_title": "Pay-to-play Smithing training",
+    "file": "data/raw/guide_Pay-to-play_Smithing_training.wikitext",
+    "len": 35410
+  },
+  "Pay-to-play Woodcutting training": {
+    "family": "main",
+    "skill": "Woodcutting",
+    "actual_title": "Pay-to-play Woodcutting training",
+    "file": "data/raw/guide_Pay-to-play_Woodcutting_training.wikitext",
+    "len": 36858
+  },
+  "Agility training": {
+    "family": "main",
+    "skill": "Agility",
+    "actual_title": "Agility training",
+    "file": "data/raw/guide_Agility_training.wikitext",
+    "len": 22077
+  },
+  "Construction training": {
+    "family": "main",
+    "skill": "Construction",
+    "actual_title": "Construction training",
+    "file": "data/raw/guide_Construction_training.wikitext",
+    "len": 37267
+  },
+  "Defence training": {
+    "family": "main",
+    "skill": "Defence",
+    "actual_title": "Defence training",
+    "file": "data/raw/guide_Defence_training.wikitext",
+    "len": 511
+  },
+  "Farming training": {
+    "family": "main",
+    "skill": "Farming",
+    "actual_title": "Farming training",
+    "file": "data/raw/guide_Farming_training.wikitext",
+    "len": 40028
+  },
+  "Fletching training": {
+    "family": "main",
+    "skill": "Fletching",
+    "actual_title": "Fletching training",
+    "file": "data/raw/guide_Fletching_training.wikitext",
+    "len": 39108
+  },
+  "Herblore training": {
+    "family": "main",
+    "skill": "Herblore",
+    "actual_title": "Herblore training",
+    "file": "data/raw/guide_Herblore_training.wikitext",
+    "len": 92898
+  },
+  "Hunter training": {
+    "family": "main",
+    "skill": "Hunter",
+    "actual_title": "Hunter training",
+    "file": "data/raw/guide_Hunter_training.wikitext",
+    "len": 55205
+  },
+  "Slayer training": {
+    "family": "main",
+    "skill": "Slayer",
+    "actual_title": "Slayer training",
+    "file": "data/raw/guide_Slayer_training.wikitext",
+    "len": 81724
+  },
+  "Thieving training": {
+    "family": "main",
+    "skill": "Thieving",
+    "actual_title": "Thieving training",
+    "file": "data/raw/guide_Thieving_training.wikitext",
+    "len": 70047
+  },
+  "Free-to-play Cooking training": {
+    "family": "f2p",
+    "skill": "Cooking",
+    "actual_title": "Free-to-play Cooking training",
+    "file": "data/raw/guide_Free-to-play_Cooking_training.wikitext",
+    "len": 25888
+  },
+  "Free-to-play Crafting training": {
+    "family": "f2p",
+    "skill": "Crafting",
+    "actual_title": "Free-to-play Crafting training",
+    "file": "data/raw/guide_Free-to-play_Crafting_training.wikitext",
+    "len": 23853
+  },
+  "Free-to-play Firemaking training": {
+    "family": "f2p",
+    "skill": "Firemaking",
+    "actual_title": "Free-to-play Firemaking training",
+    "file": "data/raw/guide_Free-to-play_Firemaking_training.wikitext",
+    "len": 7333
+  },
+  "Free-to-play Fishing training": {
+    "family": "f2p",
+    "skill": "Fishing",
+    "actual_title": "Free-to-play Fishing training",
+    "file": "data/raw/guide_Free-to-play_Fishing_training.wikitext",
+    "len": 13998
+  },
+  "Free-to-play Hitpoints training": {
+    "family": "f2p",
+    "skill": "Hitpoints",
+    "actual_title": "Free-to-play Hitpoints training",
+    "file": "data/raw/guide_Free-to-play_Hitpoints_training.wikitext",
+    "len": 758
+  },
+  "Free-to-play Magic training": {
+    "family": "f2p",
+    "skill": "Magic",
+    "actual_title": "Free-to-play Magic training",
+    "file": "data/raw/guide_Free-to-play_Magic_training.wikitext",
+    "len": 28896
+  },
+  "Free-to-play Melee training": {
+    "family": "f2p",
+    "skill": "Melee",
+    "actual_title": "Free-to-play Melee training",
+    "file": "data/raw/guide_Free-to-play_Melee_training.wikitext",
+    "len": 55623
+  },
+  "Free-to-play Mining training": {
+    "family": "f2p",
+    "skill": "Mining",
+    "actual_title": "Free-to-play Mining training",
+    "file": "data/raw/guide_Free-to-play_Mining_training.wikitext",
+    "len": 12358
+  },
+  "Free-to-play Prayer training": {
+    "family": "f2p",
+    "skill": "Prayer",
+    "actual_title": "Free-to-play Prayer training",
+    "file": "data/raw/guide_Free-to-play_Prayer_training.wikitext",
+    "len": 16387
+  },
+  "Free-to-play Ranged training": {
+    "family": "f2p",
+    "skill": "Ranged",
+    "actual_title": "Free-to-play Ranged training",
+    "file": "data/raw/guide_Free-to-play_Ranged_training.wikitext",
+    "len": 28461
+  },
+  "Free-to-play Runecraft training": {
+    "family": "f2p",
+    "skill": "Runecraft",
+    "actual_title": "Free-to-play Runecraft training",
+    "file": "data/raw/guide_Free-to-play_Runecraft_training.wikitext",
+    "len": 17341
+  },
+  "Free-to-play Smithing training": {
+    "family": "f2p",
+    "skill": "Smithing",
+    "actual_title": "Free-to-play Smithing training",
+    "file": "data/raw/guide_Free-to-play_Smithing_training.wikitext",
+    "len": 34012
+  },
+  "Free-to-play Woodcutting training": {
+    "family": "f2p",
+    "skill": "Woodcutting",
+    "actual_title": "Free-to-play Woodcutting training",
+    "file": "data/raw/guide_Free-to-play_Woodcutting_training.wikitext",
+    "len": 16242
+  },
+  "Ironman Guide/Agility": {
+    "family": "ironman",
+    "skill": "Agility",
+    "actual_title": "Ironman Guide/Agility",
+    "file": "data/raw/guide_Ironman_Guide__Agility.wikitext",
+    "len": 9761
+  },
+  "Ironman Guide/Construction": {
+    "family": "ironman",
+    "skill": "Construction",
+    "actual_title": "Ironman Guide/Construction",
+    "file": "data/raw/guide_Ironman_Guide__Construction.wikitext",
+    "len": 22278
+  },
+  "Ironman Guide/Cooking": {
+    "family": "ironman",
+    "skill": "Cooking",
+    "actual_title": "Ironman Guide/Cooking",
+    "file": "data/raw/guide_Ironman_Guide__Cooking.wikitext",
+    "len": 7743
+  },
+  "Ironman Guide/Crafting": {
+    "family": "ironman",
+    "skill": "Crafting",
+    "actual_title": "Ironman Guide/Crafting",
+    "file": "data/raw/guide_Ironman_Guide__Crafting.wikitext",
+    "len": 23968
+  },
+  "Ironman Guide/Defence": {
+    "family": "ironman",
+    "skill": "Defence",
+    "actual_title": "Ironman Guide/Defence",
+    "file": "data/raw/guide_Ironman_Guide__Defence.wikitext",
+    "len": 256
+  },
+  "Ironman Guide/Farming": {
+    "family": "ironman",
+    "skill": "Farming",
+    "actual_title": "Ironman Guide/Farming",
+    "file": "data/raw/guide_Ironman_Guide__Farming.wikitext",
+    "len": 15181
+  },
+  "Ironman Guide/Firemaking": {
+    "family": "ironman",
+    "skill": "Firemaking",
+    "actual_title": "Ironman Guide/Firemaking",
+    "file": "data/raw/guide_Ironman_Guide__Firemaking.wikitext",
+    "len": 6288
+  },
+  "Ironman Guide/Fishing": {
+    "family": "ironman",
+    "skill": "Fishing",
+    "actual_title": "Ironman Guide/Fishing",
+    "file": "data/raw/guide_Ironman_Guide__Fishing.wikitext",
+    "len": 13355
+  },
+  "Ironman Guide/Fletching": {
+    "family": "ironman",
+    "skill": "Fletching",
+    "actual_title": "Ironman Guide/Fletching",
+    "file": "data/raw/guide_Ironman_Guide__Fletching.wikitext",
+    "len": 13421
+  },
+  "Ironman Guide/Herblore": {
+    "family": "ironman",
+    "skill": "Herblore",
+    "actual_title": "Ironman Guide/Herblore",
+    "file": "data/raw/guide_Ironman_Guide__Herblore.wikitext",
+    "len": 15444
+  },
+  "Ironman Guide/Hitpoints": {
+    "family": "ironman",
+    "skill": "Hitpoints",
+    "actual_title": "Ironman Guide/Hitpoints",
+    "file": "data/raw/guide_Ironman_Guide__Hitpoints.wikitext",
+    "len": 448
+  },
+  "Ironman Guide/Hunter": {
+    "family": "ironman",
+    "skill": "Hunter",
+    "actual_title": "Ironman Guide/Hunter",
+    "file": "data/raw/guide_Ironman_Guide__Hunter.wikitext",
+    "len": 14454
+  },
+  "Ironman Guide/Magic": {
+    "family": "ironman",
+    "skill": "Magic",
+    "actual_title": "Ironman Guide/Magic",
+    "file": "data/raw/guide_Ironman_Guide__Magic.wikitext",
+    "len": 16330
+  },
+  "Ironman Guide/Melee": {
+    "family": "ironman",
+    "skill": "Melee",
+    "actual_title": "Ironman Guide/Melee",
+    "file": "data/raw/guide_Ironman_Guide__Melee.wikitext",
+    "len": 16749
+  },
+  "Ironman Guide/Mining": {
+    "family": "ironman",
+    "skill": "Mining",
+    "actual_title": "Ironman Guide/Mining",
+    "file": "data/raw/guide_Ironman_Guide__Mining.wikitext",
+    "len": 6361
+  },
+  "Ironman Guide/Prayer": {
+    "family": "ironman",
+    "skill": "Prayer",
+    "actual_title": "Ironman Guide/Prayer",
+    "file": "data/raw/guide_Ironman_Guide__Prayer.wikitext",
+    "len": 23130
+  },
+  "Ironman Guide/Ranged": {
+    "family": "ironman",
+    "skill": "Ranged",
+    "actual_title": "Ironman Guide/Ranged",
+    "file": "data/raw/guide_Ironman_Guide__Ranged.wikitext",
+    "len": 15349
+  },
+  "Ironman Guide/Runecraft": {
+    "family": "ironman",
+    "skill": "Runecraft",
+    "actual_title": "Ironman Guide/Runecraft",
+    "file": "data/raw/guide_Ironman_Guide__Runecraft.wikitext",
+    "len": 23025
+  },
+  "Ironman Guide/Slayer": {
+    "family": "ironman",
+    "skill": "Slayer",
+    "actual_title": "Ironman Guide/Slayer",
+    "file": "data/raw/guide_Ironman_Guide__Slayer.wikitext",
+    "len": 40261
+  },
+  "Ironman Guide/Smithing": {
+    "family": "ironman",
+    "skill": "Smithing",
+    "actual_title": "Ironman Guide/Smithing",
+    "file": "data/raw/guide_Ironman_Guide__Smithing.wikitext",
+    "len": 24693
+  },
+  "Ironman Guide/Thieving": {
+    "family": "ironman",
+    "skill": "Thieving",
+    "actual_title": "Ironman Guide/Thieving",
+    "file": "data/raw/guide_Ironman_Guide__Thieving.wikitext",
+    "len": 11004
+  },
+  "Ironman Guide/Woodcutting": {
+    "family": "ironman",
+    "skill": "Woodcutting",
+    "actual_title": "Ironman Guide/Woodcutting",
+    "file": "data/raw/guide_Ironman_Guide__Woodcutting.wikitext",
+    "len": 7601
+  }
+}

@@ -1,0 +1,83 @@
+{{Iron Guide Links}}
+{{Cleanup}}
+
+[[Cooking]] is most often trained by ironmen alongside [[Fishing]], both to maximise efficiency of resources and for [[food]].
+
+==Early training: Quests==
+{{Main|Quest experience rewards#Cooking}}
+Early levels can be skipped by completing quests that grant Cooking experience. Completing [[Gertrude's Cat]] and [[Cook's Assistant]] as well as the [[Recipe for Disaster/Freeing the Mountain Dwarf|Mountain Dwarf]] and [[Recipe for Disaster/Freeing the Goblin generals|Goblin generals]] subquests of [[Recipe for Disaster]] will grant a total of 3,825 Cooking experience, which will get the player up to level 18.
+
+==General information and tips==
+===Burn-rate===
+[[File:Cooking range (Lumbridge Castle).png|150px|right]]
+{{Main|Cooking/Burn level}}
+
+Cooking food can sometimes result in [[burnt food]], depending on the recipe, facility, and Cooking level, rewarding no experience.  Therefore, players should seek to lower the burn rate, where possible.  This is especially important for ironmen, since burning also results in lost food.
+
+* Cooking with [[cooking range|cooking ranges]] reduces the chance of burning certain foods, compared to a [[fire]], and should be used whenever possible.
+* After the completion of [[Cook's Assistant]], players gain access to the [[Cooking range (Lumbridge Castle)|cooking range in Lumbridge Castle]], which differs from normal cooking ranges, reducing the burn chance for many other foods and recipes.
+* After completing the easy [[Kourend & Kebos Diary]], players can cook in the [[Hosidius Kitchen]], which provides a 5% decreased chance to burn food.
+* One of the rewards of completing [[Family Crest]] is a pair of gauntlets, which decreases the odds of burning [[Cooking gauntlets|some fish and meat recipes]] when equipped.
+
+Cooking at specific ranges (such as Lumbridge or Hosidius) necessitates banking, rather than cooking and dropping items, which can reduce experience rates. Players should consider their current burn chance and food requirements when training.
+
+==Fastest experience==
+
+=== Levels 1–15: Sardines ===
+To start off, the player can buy [[raw sardine]]s from a fishing shop in [[Gerrant's Fishy Business.]] in [[Port Sarim]],  [[Lovecraft's Tackle]] in [[Witchaven]], or [[Ishmael's Fish He Sells]] in the [[Ruins of Unkah]] and cook them on a fire.
+
+=== Levels 15–28: Trout and salmon ===
+Continue by catching and cooking [[raw trout]] and [[Raw salmon|salmon]] until at least level 58 Fishing for later [[Ironman_Guide/Fishing#Levels_58–99:_Barbarian_Fishing|Fishing training]]. The best place to fish is in [[Shilo Village (location)|Shilo Village]], which has bank nearby and the fish can be later cooked in the [[Rogues' Den]] or in the [[Hosidius kitchen]]. Another option is to fish in [[Barbarian Village]], which has an everlasting fire near the fishing spots, however players will need to cook the fish on the spot and drop them.
+
+=== Levels 28–65: Sweetcorn ===
+Starting at level 28, players can harvest raw [[sweetcorn]] from [[Sweetcorn (scenery)|sweetcorn plants]] in [[Kastori]] and cook them on one of the two nearby [[Oven (Civitas illa Fortis)|ovens]]. Alternatively, the nearby [[Tool Leprechaun]] can note raw sweetcorn for future training. This method provides up to 70,000 experience per hour at level 54.
+
+Alternatively and more efficiently, sweetcorn can be grown in [[allotment patches]] using the [[Farming]] skill and collected during [[herb runs]].
+
+=== Levels 40–65 Cakes ===
+[[File:Oak larder built.png|left|100px]]
+Starting at level 40, players with {{SCP|Construction|33|link=yes}} (boostable) can build an [[oak larder]], which provides an infinite amount of cooking materials to bake [[cake]]s. It is very click intensive, however 500 cakes can be cooked per hour. They can be cooked using a [[Cooking range|range]] in the player-owned house, or one right outside the [[Portal (Player-owned house)|portal]] such as in [[Rimmington]] or [[Hosidius]]. This provides 50,000 experience per hour at level 40 and 70,000 experience per hour at level 60. While using the larder, the number keys can be held down while clicking once per tick to retrieve the supplies quickly.
+
+===Level 65: Karambwans===
+To stock up on food, from level {{SCP|fishing|65|link=yes}} onwards [[raw karambwan]]s can be caught and cooked after completion of [[Tai Bwo Wannai Trio]] yielding [[karambwan]]s, a food that heals 18 hitpoints per item and can be used for combo-eating.
+
+Raw karambwans can also be bought from [[Tiadeche's Karambwan Stall]] and either cooked on a player-made fire and dropped, or banked using either [[Rionasta|Rionasta's parcel service]] ([[Trading sticks]] acquired by selling [[opal]], [[jade]], and [[topaz]] mined from [[Gem rock|Gem rocks]]) or a [[Fish barrel]] and a nearby teleport such as the Brimhaven player-owned house teleport. Buying karambwan from this shop requires full completion of [[Tai Bwo Wannai Trio]] quest.
+
+===Level 65+: Servery pineapple pizzas===
+{{Main|Mess}}
+
+At level 65, players can make [[servery pineapple pizza]]s in the [[Mess]]. This method does not require any supplies and can yield around 150,000–200,000 experience per hour depending on efficiency, however this is very click-intensive. Hop worlds after serving each load to maximise experience gain.
+
+===Level 68+: Jugs of wine===
+[[Jug of wine|Jugs of wine]] can become the best experience at level 68. Grapes are best obtained from [[Zulrah]] or [[Vorkath]], however they can be purchased from the [[Culinaromancer's Chest]], or grown with [[Grape seed]]s at the [[Vinery]] in [[Hosidius]].
+
+[[Jugs of water]] can be obtained by buying [[empty jug pack]]s from the Culinaromancer's Chest and using [[Humidify]] to fill them with water. Players stop creating jugs of bad wine when they reach 68 Cooking.
+
+==Other methods==
+
+===Frankie's Fishing Emporium ===
+{{Main|Frankie's Fishing Emporium}}
+
+Fish can be bought from Frankie's Fishing Emporium and run to the range west of the shop. Cooking [[raw bass]] and [[raw swordfish]] provides ~100,000 experience per hour.  Banking the cooked food lowers this rate significantly. Players can sell the fish at the general store in between [[Frankie's Fishing Emporium]] and the range to the west of it, to lower the amount of money spent.
+
+===Tempoross===
+{{Main|Tempoross}}
+
+Players wanting to level [[Fishing]] can challenge Tempoross for passive Cooking experience, in addition to a wide array of [[fish]] from the [[reward pool]].
+
+===Barbarian fishing===
+{{Main|Barbarian Training}}
+
+3-tick Barbarian Fishing with a knife (eating [[roe]]/[[caviar]]) will provide passive Cooking experience, however none will be obtained if dropping the fish. If fishing for food instead (such as karambwans or minnow), cooking fish obtained will easily grant the player more than enough Cooking experience.
+
+===Buying from the Jatizso Food Shop===
+{{Main|Flosi's Fishmongers}}
+
+Players can purchase and cook raw fish from [[Flosi Dalksson]]'s raw fish shop in Jatizso.  This method requires completion of [[The Fremennik Trials]]. The method also requires the player to have at least 18 Cooking, some cash and some logs the player can firemake.  Here players can buy raw cod, raw salmon, raw tuna and raw lobsters. Players can start cooking raw cod from level 18 Cooking and work their way up to better fish. The advantage of this shop is that it is very close to a bank so the player can simply bank the fish. 
+
+===Sacred Eels===
+{{Main|Sacred Eel}}
+
+Fishing and dissecting [[Sacred Eel|sacred eel]]s will provide approximately 20,000 Cooking experience per hour. This often is used as it is somewhat AFK and can provide [[Zulrah's Scales]].
+{{Training guides}}
+[[Category:Ironman Mode]]

@@ -1,0 +1,230 @@
+{{Iron  Guide Links}}
+[[File:Fishing.png|left]]
+[[Fishing]] is most often trained through "powerfishing", where the caught fish are dropped rather than banked. While the skill is classically a good source of [[food]] for combat training, the required time investment to catch and cook fish makes it less useful for Ironman players when compared to buyable food (such as [[cooked karambwan]]s, [[Jug of wine|jugs of wine]], and [[Potato with cheese|potatoes with cheese]]) or [[Saradomin brew]]s. At high Fishing levels, it is possible to get large amounts of [[raw shark]]s from fishing [[minnow]]s, which can be a solid food choice once cooked.
+
+==Early training: Quests==
+{{Main|Quest experience rewards#Fishing}}
+A number of early [[quests]] reward significant amounts of Fishing experience, making it possible to skip slow, low-level training methods and get straight to fly fishing. The most notable of these quests is [[Sea Slug]], which has minimal requirements and gives enough experience to get to level 24 Fishing alone. Completing all of the following three quests gives enough experience to get level 27 Fishing.
+*[[Recipe for Disaster]] ([[Recipe for Disaster/Freeing Pirate Pete|Pirate Pete subquest]]) requires [[Cook's Assistant]], {{SCP|Cooking|31}}, rewards 1,000 Fishing experience
+*[[Fishing Contest]] requires {{SCP|Fishing|10}}, rewards 2,437 Fishing experience
+*[[Sea Slug]] requires {{SCP|Firemaking|30}}, rewards 7,175 Fishing experience
+
+==Fastest experience==
+===Levels 20–58: Fly fishing===
+From level 20 to level 58 Fishing, [[Fishing#Fly fishing rods and feathers|fly fishing]] is the fastest way to train the skill. This requires a [[fly fishing rod]] and [[feather]]s, which can be bought in bulk from various [[fishing shops]]. Starting from level 20, the player will catch [[Raw trout|trout]]. Experience rates have a notable increase at level 30 Fishing, after which the player will start to catch [[raw salmon]]. Experience rates increase as the player's fishing level does, ranging from 20,000 to 35,000 Fishing experience per hour.
+
+The [[fishing spot]]s just east of the [[Barbarian Village]] have a perpetual [[fire]] near them, where the [[raw trout]] and salmon can be cooked before dropping them. This is a good way to combine early Fishing training with early [[Cooking]] training as well.
+
+''For more information, see [[Ironman Guide/Cooking]].''
+
+===Levels 58–99: Barbarian Fishing===
+[[File:Tick manipulation - cut-eat Fishing.gif|thumb|3-tick Barbarian Fishing using the cut-eat method.]]
+[[Barbarian Fishing]] is one of the fastest training methods in the game, and offers the fastest Fishing experience for most Ironman players. Even though Barbarian Fishing becomes available at level 48, fly fishing offers faster experience up to level 58. Using [[tick manipulation]] is strongly recommended, as this greatly increases experience rates.
+
+Players must complete a portion of the [[Barbarian Training]] [[miniquest]] to be able to catch [[leaping fish]]. Having level 30 [[Agility]] and [[Strength]] is required for catching leaping salmon, and level 45 in both for leaping sturgeon. Players will also need suitable bait such as [[feather]]s and a [[barbarian rod]] obtained from [[Otto's Grotto]]. For tick manipulation players will also need certain items to create a 3-tick action, such as herb and tar or knife and teak/mahogany logs, and a knife should the player cut the fish.
+
+Banking [[leaping sturgeon]] and [[caviar]] is beneficial for Herblore training, as it can be added to [[Barbarian Training#Barbarian Herblore| most completed potions]] for extra Herblore experience, cutting down on the amount of herb farming and secondary collecting needed for 99 Herblore.
+
+If you do not plan to use caviar for Herblore, the best spot for Barbarian Fishing is at the pond next to the [[Otto's Grotto]]. Players can quickly get there by using a [[games necklace]] or [[Minigame Teleport]] to [[Barbarian Assault]] and running south-west. When banking caviar, the lake at [[Mount Quidamortem]] can be used, as the fishing spots are very close to a bank.
+
+The most basic method for 3-tick fishing is to drop the fish between catches. This can be done by starting the 3-tick cycle, dropping the fish using shift drop and clicking on the fishing spot. This requires accurate clicking and some practice to perform consistently, but it is more efficient than dropping a full inventory.
+
+"Cut-eat" or "eat-cut" fishing (depending on the order) is a more advanced and slightly more click-intensive method. This is done by starting a 3-tick cycle with herb and tar, cutting the fish with a knife and eating the roe/caviar to tick manipulate. When you run out of roe/caviar to be eaten and fish to be cut, use herb and tar to continue the 3-tick cycle. The benefits of this method is that it provides some passive [[Cooking]] experience, it does not require players to drop fish (therefore Shift is unused), and it is slightly cheaper due to [[fish offcuts]] also being produced which are used as bait over feathers. However, it is less predictable due to randomness being involved, which may take time getting used to. It is also stricter with timing; if the cutting and eating is done too late, the cycle becomes offset. Having at least level 80 Cooking is recommended for 100% chance of successfully cutting leaping salmon and sturgeon if using this method.
+
+Experience rates scale depending on the player's Fishing level and performance. When using tick manipulation, players can gain up to 65,000 Fishing experience per hour at level 58, 87,000 experience per hour at level 70, 95,000 experience per hour at level 80 and 102,000 experience per hour at level 90. At level 99, players can gain up to 110,000 experience per hour when wearing the [[angler's outfit]].
+
+Without tick manipulation the experience rates are a lot lower, but this method still offers the fastest AFK Fishing experience. Players can expect to gain around 25,000 experience per hour at level 48, increasing 35,000–42,000 experience per hour at levels 58–70, and 50,000–60,000 experience per hour from level 70 onwards, reaching up to 66,000 experience per hour at level 99.
+
+For every 100,000 experience gained in Fishing, the player should expect about 9,000 experience gained in Agility and Strength.
+
+{| class="wikitable"
+!rowspan="2"|{{SCP|Fishing}} Level
+!colspan="2"|Normal
+!colspan="2"|3-tick
+|-
+!{{SCP|Fishing}} XP/h
+!{{SCP|Strength}} {{SCP|Agility}} XP/h
+!{{SCP|Fishing}} XP/h
+!{{SCP|Strength}} {{SCP|Agility}} XP/h
+|-
+|48
+|20,000–25,000
+|2,000–2,500
+|32,000–40,000
+|3,200–4,000
+|-
+|58
+|35,000–42,000
+|3,500–4,200
+|56,000–67,200
+|5,600–6,720
+|-
+|70
+|45,000–55,000
+|4,500–5,500
+|72,000–88,000
+|7,200–8,800
+|-
+|80
+|50,000–60,000
+|5,000–6,000
+|80,000–96,000
+|8,000–9,600
+|-
+|90
+|50,000–63,750
+|5,000–6,375
+|80,000–102,000
+|8,000–10,200
+|-
+|99
+|65,000–71,750
+|6,500–7,000
+|104,000–114,800
+|10,400–11,480
+|}
+
+==Other methods==
+===Level 35+: Tempoross===
+{{Main|Tempoross}}
+At level 35, players can challenge the Fishing boss, [[Tempoross]]. This method offers decent Fishing experience, [[Cooking]] experience, [[Construction]] experience, potential [[Strength]] experience, and rewards. When not cooking, Tempoross offers Fishing experience rates competitive with non-tick-manipulated [[Barbarian Fishing]].
+
+Tempoross' [[reward pool]] can also be beneficial to low levelled players, possibly rewarding [[raw fish]], [[planks]], the [[fish barrel]] and [[tackle box]]. 
+
+==== Solo Tempoross: 50,000 experience an hour ====
+This method revolves around dealing 0 damage to Tempoross during his first attack phase and keeping his energy at 10% or below. 
+
+The mechanics are predictable so each kill follows a repeating cycle:
+
+* Fish 25-26
+* Tether
+* Dump all fish into the Ammunition crate
+* Grab 5 buckets and fill them
+* Clear fire (make sure to clear the fire on the boat before leaving)
+* Drop buckets
+* Fish 27
+* Dump remaining fish
+* Fish 27
+* Dump 3 fish
+* Attack Tempoross
+* Dump remaining fish
+* Colossal waves (Don't tether unless you still have fish while depositing)
+* Fish 22-27 (This will vary depending on Tempoross's Essence but 24% should be low enough to deposit 27 fish)
+* Dump remaining fish
+* Kill Tempoross
+* Grab bucket
+
+Notes:
+
+Prioritise leaping fishing spots.
+
+The colossal wave special attack takes at least 6 seconds from the initial chat box message so don't be afraid to do actions in between before tethering. 
+
+A charged Infernal Harpoon will '''not''' work with this method.
+
+=== Level 65+: Karambwans ===
+This gives up to 41,000 Fishing experience per hour and 150,000 banked Cooking experience per hour.
+
+Requirements: Access to the [[fairy rings]] system. Completion of [[Tai Bwo Wannai Trio]] quest (note that the quest cannot be finished until you have 65 fishing if you burn the Karambwan given to you during the quest, as you'll need to catch and poison a replacement raw Karambwan for Ironmen). 
+
+Recommended: [[Fish barrel]] for more AFK time. 
+
+Travel to {{Fairycode|DKP}} with a fairy ring, fish an inventory full of karambwans, then bank them and return as quickly as you can. If you have a fairy ring in your [[player-owned house]], the fastest method is to deposit using your servant. If you're not accessing fairy rings using your POH (e.g. via a [[quest point cape]]) the closest deposit box is the gem mine, which requires [[Karamja gloves 3]]. Some players choose to bank via the fairy ring, but this method is slower than those listed above. The nearest fairy ring to bank is located by the [[Chasm of Fire]] ({{Fairycode|DJR}}). 
+
+This method is very good when you need to AFK, but you're able to do something more click intensive than cutting [[Redwood tree|redwood trees]] or participating in the [[Nightmare Zone]].
+
+Experience rates are shown below. These are somewhat pessimistic, as they do not assume [[Quest point cape]] for banking, nor the [[Fish barrel]] to cut down on banking times, nor the [[Angler's outfit]] for an extra 2.5% XP boost. With all additional items, it is possible to obtain as many as 875 karambwans per hour. 
+{| class="wikitable"
+|+
+! rowspan="2" |{{SCP|Fishing}} Level
+! rowspan="2" |XP/h
+! colspan="2" |Karambwans/hr
+|-
+!No blessing
+!{{plinkp|Rada's blessing 4}}
+|-
+|65
+|22,500
+|450
+|486
+|-
+|70
+|24,200
+|484
+|523
+|-
+|80
+|27,550
+|551
+|595
+|-
+|90
+|30,900
+|618
+|667
+|-
+|99
+|33,850
+|677
+|731
+|}
+
+===Levels 71–99: 2-tick harpooning swordfish/tuna===
+[[File:Tick manipulation - 2t Fishing.gif|thumb|2-tick harpooning on the shores of Piscarilius.]]
+2-tick harpooning swordfish and tuna offers the fastest Fishing experience in the game. Tick manipulation must be used for this method, as without it the experience will be a lot slower and this method would not be worth doing over other methods. When using the [[crystal harpoon]], it becomes slightly more efficient than 3-tick Barbarian Fishing. However, obtaining the crystal harpoon and training through 2-tick harpooning ends up being slower overall than training through Barbarian Fishing, which has much lower requirements.
+
+For harpooning tuna and swordfish, a convenient method of doing this is fishing in [[Piscarilius]] with two [[rat]]s attacking two ticks apart. After setting up the rats, the only clicking that must be done is clicking the fishing spot on the ticks that a hitsplat appears on the player character.
+
+Players can gain up to 140,000 experience per hour at level 99 when using the crystal harpoon, or 125,000 experience per hour when using the dragon harpoon.
+
+2-tick harpooning is also the fastest method on average of obtaining the [[heron]] pet.
+
+===Levels 82–99: Minnows===
+{{Main|Minnow}}
+[[File:Fishing Guild minnow platform.png|right|250px]]
+This can be done at [[Kylie Minnow]]'s fishing platform in the [[Fishing Guild]], which requires level 82 Fishing, completion of the quest [[Fishing Contest]], and having full [[angler's outfit]] to access. Minnows can be exchanged for noted [[raw shark]]s. The stackable nature of minnows, as well as the noted [[raw shark]]s that Kylie gives in exchange, makes this a good way of training fishing as well as a good source of food.
+
+Minnow fishing spots move clockwise every 15 seconds. In addition, a fishing spot will occasionally spawn flying fish instead of providing minnows; flying fish will eat 20 minnow directly from the player's inventory as long as they keep fishing there, forcing them to move to another spot. A flying fish will only appear after a fishing spot has changed and will continue to eat the player's minnows until the fishing spot changes position once again. 
+
+Experience rates are shown in the table below. Wearing a Rada's blessing is recommended, as it increases minnows per hour by 2% per tier of diary completed.
+
+{|class="wikitable align-center-1" style="text-align:right;"
+! rowspan="2" | {{SCP|Fishing}} Level
+! rowspan="2" | XP/h
+! colspan="2" | Minnows/h
+! colspan="2" | Sharks/h
+|-
+! No blessing
+! {{plinkp|Rada's blessing 4}}
+! No blessing
+! {{plinkp|Rada's blessing 4}}
+|-
+| 82
+| 40,000
+| 15,000 || 16,200
+| 375 || 405
+|-
+| 85
+| 43,000
+| 17,000 || 18,360
+| 425 || 459
+|-
+| 90
+| 45,000
+| 19,500 || 21,040
+| 487 || 526
+|-
+| 95
+| 48,000
+| 22,000 || 23,760
+| 550 || 594
+|-
+| 99
+| 56,000
+| 25,000 || 27,000
+| 625 || 675
+|}
+
+[[Category:Ironman Mode]]
+[[Category:Fishing]]
+{{Training guides}}

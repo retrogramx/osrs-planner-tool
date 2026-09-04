@@ -1,0 +1,614 @@
+{{External|rs|rsc=Crafting training}}
+{{See also|Pay-to-play Crafting training}}
+This [[Skill training guides|guide]] outlines the best methods and alternative options for training the [[Crafting]] [[skill]] in [[free-to-play]].
+
+
+==Quests that reward Crafting experience==
+*[[Sheep Shearer]]: 150 Crafting experience
+*[[Goblin Diplomacy]]: 200 Crafting experience
+*[[Misthalin Mystery]]: 600 Crafting experience
+
+Completing all of these quests will provide enough experience to level up Crafting from level 1 to level 8.
+
+==Potter's wheel, spinning wheel and furnace locations==
+[[Barbarian Village]] has a [[potter's wheel]] medium distance to closest bank (West [[Varrock]] bank). No clay rocks or water source nearby. 
+
+* Varrock south-west mine to Varrock west bank is a good place to mine clay.
+* [[Waterpump (Falador)]] to Falador west bank is the closest water source to a bank. Water fountain in centre of Varrock square to Varrock west bank is also a good water source close to a bank.
+
+Lumbridge bank to the [[spinning wheel]] downstairs is a good combination for a bank plus spinning wheel.
+
+[[Edgeville]] has the [[furnace]] closest to a bank for crafting silver or gold. Al Kharid bank to a furnace is a decent location for a relatively short distance between bank and furnace, for crafting silver and gold.
+
+Upon reaching Crafting Level 40, the [[Crafting Guild]] has no bank nearby, but contains clay rocks, a water source , a potter's wheel, and a pottery kiln. The crafting guild also has  two [[spinning wheel]]s. A flock of wool-producing sheep can be found just a short walk north of the guild.
+===Ultimate Ironman===
+At level 23 Crafting and with 20 Mining and Smithing, [[ultimate ironmen]] can mine [[silver ore]] at the [[Al Kharid mine|Al Karid Mine]], teleport to the [[Lumbridge cow field]] using the [[Cowbell amulet|Cowbell Amulet]] and then craft [[Tiara|tiaras]] at the [[Lumbridge]] furnace. Players can then sell tiaras to the Lumbridge General store for a modest profit, and walk back to the mine. This method can yield 1409 exp per run with 27 open inventory slots.   
+
+Until level 40, [[ultimate ironmen]] can mine clay in [[West Varrock mine]], then walk to the water fountain and fill up buckets of water to turn clay into soft clay. Then return to Barbarian Village wheel and kiln, then boat back down to [[Champions' Guild]]/West Varrock mine. Yields 650–720 experience per run, depending on the amount of open inventory spaces.
+
+After level 40, use the Crafting Guild. Mining and smelting gold, crafting them into jewellery to sell at [[Grum's Gold Exchange.]] is a good way to make money while training [[Mining]], Crafting and [[Smithing]] as an Ultimate Ironman.<!-- At what furnace? This advice is wrong -->
+
+==Common training methods==
+===In-Place Training Methods===
+These methods do not require any moving, and thus can be performed at the [[Grand Exchange]] or in a [[Bank]] (assuming you have already gathered the necessary resources).  
+
+{| class="wikitable sortable"
+!Level required
+!Method
+!Experience
+!Materials
+!Material cost
+!Product value
+!Profit / loss
+!GP/XP
+|-
+|18
+|Crafting leather chaps
+|27
+|[[Soft leather]] x 1
+|{{Coins|{{GEP|Leather}}}}
+|{{Coins|{{GEP|Leather chaps}}}}
+|{{Coins|{{GEP|Leather chaps}}-{{GEP|Leather}}}}
+|{{Coins|({{GEP|Leather chaps}}-{{GEP|Leather}})/27}}
+|-
+|28
+|Crafting hardleather bodies
+|35
+|[[Hard leather]] x 1
+|{{Coins|{{GEP|Hard leather}}}}
+|{{Coins|{{GEP|Hardleather body}}}}
+|{{Coins|{{GEP|Hardleather body}}-{{GEP|Hard leather}}}}
+|{{Coins|({{GEP|Hardleather body}}-{{GEP|Hard leather}})/35}}
+|-
+|20
+|Cutting sapphires
+|50
+|[[Uncut sapphire]] x 1
+|{{Coins|{{GEP|Uncut sapphire}}}}
+|{{Coins|{{GEP|Sapphire}}}}
+|{{Coins|{{GEP|Sapphire}}-{{GEP|Uncut sapphire}}}}
+|{{Coins|({{GEP|Sapphire}}-{{GEP|Uncut sapphire}})/50}}
+|-
+|27
+|Cutting emeralds
+|67.5
+|[[Uncut emerald]] x 1
+|{{Coins|{{GEP|Uncut emerald}}}}
+|{{Coins|{{GEP|Emerald}}}}
+|{{Coins|{{GEP|Emerald}}-{{GEP|Uncut emerald}}}}
+|{{Coins|({{GEP|Emerald}}-{{GEP|Uncut emerald}})/67.5}}
+|-
+|34
+|Cutting rubies
+|85
+|[[Uncut ruby]] x 1
+|{{Coins|{{GEP|Uncut ruby}}}}
+|{{Coins|{{GEP|Ruby}}}}
+|{{Coins|{{GEP|Ruby}}-{{GEP|Uncut ruby}}}}
+|{{Coins|({{GEP|Ruby}}-{{GEP|Uncut ruby}})/85}}
+|-
+|43
+|Cutting diamonds
+|107.5
+|[[Uncut diamond]] x 1
+|{{Coins|{{GEP|Uncut diamond}}}}
+|{{Coins|{{GEP|Diamond}}}}
+|{{Coins|{{GEP|Diamond}}-{{GEP|Uncut diamond}}}}
+|{{Coins|({{GEP|Diamond}}-{{GEP|Uncut diamond}})/107.5}}
+|}
+
+===Commuter Training Methods===
+These methods require the player to move from place to place.  The most common of which is moving back and forth between bank and a [[Furnace|furnace]]. For the purposes of crafting jewellery, Edgeville furnace is the closest furnace to a bank.
+
+{| class="wikitable sortable"
+!Level required
+!Method
+!Experience
+!Materials
+!Material cost
+!Product value
+!Profit / loss
+!GP/XP
+|-
+|8
+|Making bowls
+|33
+|[[Soft clay]] x 1
+|{{Coins|{{GEP|Soft clay}}}}
+|{{Coins|{{GEP|Bowl}}}}
+|{{Coins|{{GEP|Bowl}}-{{GEP|Soft clay}}}}
+|{{Coins|({{GEP|Bowl}}-{{GEP|Soft clay}})/33}}
+|-
+|8
+|Smelting unstrung gold amulets
+|30
+|[[Gold bar]] x 1
+|{{Coins|{{GEP|Gold bar}}}}
+|{{Coins|{{GEP|Gold amulet (u)}}}}
+|{{Coins|{{GEP|Gold amulet (u)}}-{{GEP|Gold bar}}}}
+|{{Coins|({{GEP|Gold amulet (u)}}-{{GEP|Gold bar}})/30}}
+|-
+|23
+|Smelting tiaras
+|52.5
+|[[Silver bar]] x 1
+|{{Coins|{{GEP|Silver bar}}}}
+|{{Coins|{{GEP|Tiara}}}}
+|{{Coins|{{GEP|Tiara}}-{{GEP|Silver bar}}}}
+|{{Coins|({{GEP|Tiara}}-{{GEP|Silver bar}})/52.5}}
+|-
+|50
+|[[Money_making_guide/Crafting_ruby_jewellery|Crafting Ruby Amulets]]
+|85
+|[[Gold bar]] x 1<br/>[[Ruby]] x 1
+|{{Coins|({{GEP|Gold bar}}+{{GEP|Ruby}})}}
+|{{Coins|{{GEP|Ruby_amulet_(u)}}}}
+|{{Coins|{{GEP|Ruby_amulet_(u)}}-({{GEP|Gold bar}}+{{GEP|Ruby}})}}
+|{{Coins|({{GEP|Ruby_amulet_(u)}}-({{GEP|Gold bar}}+{{GEP|Ruby}}))/85}}
+|-
+|56
+|[[Money_making_guide/Crafting_diamond_jewellery|Crafting Diamond Necklaces]]
+|90
+|[[Gold bar]] x 1<br/>[[Diamond]] x 1
+|{{Coins|({{GEP|Gold bar}}+{{GEP|Diamond}})}}
+|{{Coins|{{GEP|Diamond_necklace}}}}
+|{{Coins|{{GEP|Diamond_necklace}}-({{GEP|Gold bar}}+{{GEP|Diamond}})}}
+|{{Coins|({{GEP|Diamond_necklace}}-({{GEP|Gold bar}}+{{GEP|Diamond}}))/90}}
+
+|}
+
+==Levels 1–99==
+Players are encouraged to change between training methods as necessary as the cost of certain methods fluctuates over time.
+===Armour===
+{| class="wikitable"
+|-
+!{{SCP|Crafting}} Level
+! colspan="2" |Product
+!XP per item
+!XP/Hour
+!Experience needed
+!Materials needed
+!Material costs
+!Product value
+!Profit / Loss
+|-
+|1–7
+|{{plinkt|Leather gloves}}
+|13.8
+|18,900
+|650
+|48 × {{plink|Leather}}
+|{{Coins|{{GEP|Leather|48}}}}
+|{{Coins|{{GEP|Leather gloves|48}}}}
+|{{Coins|{{GEP|Leather gloves|48}}-{{GEP|Leather|48}}}}
+|-
+|7–9
+|{{plinkt|Leather boots}}
+|16.2
+|22,750
+|319
+|20 × {{plink|Leather}}
+|{{Coins|{{GEP|Leather|20}}}}
+|{{Coins|{{GEP|Leather boots|20}}}}
+|{{Coins|{{GEP|Leather boots|20}}-{{GEP|Leather|20}}}}
+|-
+|9–11
+|{{plinkt|Leather cowl}}
+|18.5
+|25,900
+|389
+|21 × {{plink|Leather}}
+|{{Coins|{{GEP|Leather|21}}}}
+|{{Coins|{{GEP|Leather cowl|21}}}}
+|{{Coins|{{GEP|Leather cowl|21}}-{{GEP|Leather|21}}}}
+|-
+|11–14
+|{{plinkt|Leather vambraces}}
+|22
+|30,800
+|749
+|34 × {{plink|Leather}}
+|{{Coins|{{GEP|Leather|34}}}}
+|{{Coins|{{GEP|Leather vambraces|34}}}}
+|{{Coins|{{GEP|Leather vambraces|34}}-{{GEP|Leather|34}}}}
+|-
+|14–18
+|{{plinkt|Leather body}}
+|25
+|35,000
+|1,416
+|57 × {{plink|Leather}}
+|{{Coins|{{GEP|Leather|57}}}}
+|{{Coins|{{GEP|Leather body|57}}}}
+|{{Coins|{{GEP|Leather body|57}}-{{GEP|Leather|57}}}}
+|-
+|18–28
+|{{plinkt|Leather chaps}}
+|27
+|37,800
+|7,301
+|271 × {{plink|Leather}}
+|{{Coins|{{GEP|Leather|271}}}}
+|{{Coins|{{GEP|Leather chaps|271}}}}
+|{{Coins|{{GEP|Leather chaps|271}}-{{GEP|Leather|271}}}}
+|-
+|28–99
+|{{plinkt|Hardleather body}}
+|35
+|91,000
+|13,023,607
+|372,103 × {{plink|Hard leather}}
+|{{Coins|{{GEP|Hard leather|372103}}}}
+|{{Coins|{{GEP|Hardleather body|372103}}}}
+|{{Coins|{{GEP|Hardleather body|372103}}-{{GEP|Hard leather|372103}}}}
+|-
+! colspan="5" |Total
+|13,034,431||451 × {{plink|Leather}};<br/> 372,103 × {{plink|Hard leather}}||{{Coins|{{GEP|Leather|450}}+{{GEP|Hard leather|372103}}}}||{{Coins|{{GEP|Leather gloves|48}}+{{GEP|Leather boots|20}}+{{GEP|Leather cowl|21}}+{{GEP|Leather vambraces|34}}+{{GEP|Leather body|57}}+{{GEP|Leather chaps|270}}+{{GEP|Hardleather body|372103}}}}||{{Coins|({{GEP|Leather gloves|48}}+{{GEP|Leather boots|20}}+{{GEP|Leather cowl|21}}+{{GEP|Leather vambraces|34}}+{{GEP|Leather body|57}}+{{GEP|Leather chaps|270}}+{{GEP|Hardleather body|372103}})-({{GEP|Leather|450}}+{{GEP|Hard leather|372103}})}}
+|}
+
+===Pottery===
+This guide assumes all products are formed and fired.
+{| class="wikitable"
+|-
+!{{SCP|Crafting}} Level
+! colspan="2" | Product
+!XP per item
+!Experience needed
+!Materials needed
+!Material costs
+!Product value
+!Profit / loss
+|-
+|1–7
+|{{plinkt|Pot}}
+|12.6
+|650
+|52 × {{plink|Soft clay}}
+|{{Coins|{{GEP|Soft clay|52}}}}
+|{{Coins|{{GEP|Pot|52}}}}
+|{{Coins|{{GEP|Pot|52}}-{{GEP|Soft clay|52}}}}
+|-
+|7–8
+|{{plinkt|Pie dish}}
+|25
+|151
+|6 × {{plink|Soft clay}}
+|{{Coins|{{GEP|Soft clay|6}}}}
+|{{Coins|{{GEP|Pie dish|6}}}}
+|{{Coins|{{GEP|Pie dish|6}}-{{GEP|Soft clay|6}}}}
+|-
+|8–99
+|{{plinkt|Bowl}}
+|33
+|13,033,630
+|394,959 × {{plink|Soft clay}}
+|{{Coins|{{GEP|Soft clay|394959}}}}
+|{{Coins|{{GEP|Bowl|394959}}}}
+|{{Coins|{{GEP|Bowl|394959}}-{{GEP|Soft clay|394959}}}}
+|-
+! colspan="4" | Total
+|13,034,431
+|395,017 × {{plink|Soft clay}}
+|{{Coins|{{GEP|Soft clay|395017}}}}
+|{{Coins|{{GEP|Pot|52}}+{{GEP|Pie dish|6}}+{{GEP|Bowl|394959}}}}
+|{{Coins|({{GEP|Pot|52}}+{{GEP|Pie dish|6}}+{{GEP|Bowl|394959}})-{{GEP|Soft clay|395017}}}}
+|}
+
+===Gold jewellery===
+{| class="wikitable sortable"
+|-
+!{{SCP|Crafting}} Level
+! colspan="2" | Product
+!XP per item
+!XP/Hour
+!Experience needed
+!Materials needed
+!Material costs
+!Product value
+!Profit
+!Profit / item
+!GP/XP
+|-
+|5–6
+|{{plinkt|Gold ring}}
+|15
+|20,250<ref name="gold">At 1,350 items per hour</ref>
+|124
+|8 × {{plink|Gold bar}}
+|{{Coins|{{GEP|Gold bar|8}}}}
+|{{Coins|{{GEP|Gold ring|8}}}}
+|{{Coins|{{GEP|Gold ring|8}}-{{GEP|Gold bar|8}}}}
+|{{Coins|({{GEP|Gold ring|8}}-{{GEP|Gold bar|8}})/8}}
+|{{Coins|(({{GEP|Gold ring|8}}-{{GEP|Gold bar|8}})/8)/15}}
+|-
+|6–8
+|{{plinkt|Gold necklace}}
+|20
+|27,000<ref name="gold"></ref>
+|289
+|15 × {{plink|Gold bar}}
+|{{Coins|{{GEP|Gold bar|15}}}}
+|{{Coins|{{GEP|Gold necklace|15}}}}
+|{{Coins|{{GEP|Gold necklace|15}}-{{GEP|Gold bar|15}}}}
+|{{Coins|({{GEP|Gold necklace|15}}-{{GEP|Gold bar|15}})/15}}
+|{{Coins|(({{GEP|Gold necklace|15}}-{{GEP|Gold bar|15}})/15)/20}}
+|-
+|8–20
+|{{plinkt|Gold amulet (u)}}
+|30
+|40,500<ref name="gold"></ref>
+|3,669
+|122 × {{plink|Gold bar}}
+|{{Coins|{{GEP|Gold bar|123}}}}
+|{{Coins|{{GEP|Gold amulet (u)|123}}}}
+|{{Coins|{{GEP|Gold amulet (u)|123}}-{{GEP|Gold bar|123}}}}
+|{{Coins|({{GEP|Gold amulet (u)|123}}-{{GEP|Gold bar|123}})/123}}
+|{{Coins|(({{GEP|Gold amulet (u)|123}}-{{GEP|Gold bar|123}})/123)/30}}
+|-
+|20–22
+|{{plinkt|Sapphire ring}}
+|40
+|42,000<ref name="gold1">At 1,050 items per hour</ref>
+|1,154
+|29 × {{plink|Gold bar}}; 29 × {{plink|Sapphire}}
+|{{Coins|{{GEP|Gold bar|29}} + {{GEP|Sapphire|29}}}}
+|{{Coins|{{GEP|Sapphire ring|29}}}}
+|{{Coins|{{GEP|Sapphire ring|29}}-({{GEP|Gold bar|29}} + {{GEP|Sapphire|29}})}}
+|{{Coins|({{GEP|Sapphire ring|29}}-({{GEP|Gold bar|29}} + {{GEP|Sapphire|29}}))/29}}
+|{{Coins|(({{GEP|Sapphire ring|29}}-({{GEP|Gold bar|29}} + {{GEP|Sapphire|29}}))/29)/40}}
+|-
+|22–24
+|{{plinkt|Sapphire necklace}}
+|55
+|57,750<ref name="gold1"></ref>
+|1,404
+|26 × {{plink|Gold bar}}; 26 × {{plink|Sapphire}}
+|{{Coins|{{GEP|Gold bar|26}} + {{GEP|Sapphire|26}}}}
+|{{Coins|{{GEP|Sapphire necklace|26}}}}
+|{{Coins|{{GEP|Sapphire necklace|26}}-({{GEP|Gold bar|26}} + {{GEP|Sapphire|26}})}}
+|{{Coins|({{GEP|Sapphire necklace|26}}-({{GEP|Gold bar|26}} + {{GEP|Sapphire|26}}))/26}}
+|{{Coins|(({{GEP|Sapphire necklace|26}}-({{GEP|Gold bar|26}} + {{GEP|Sapphire|26}}))/26)/55}}
+|-
+|24–31
+|{{plinkt|Sapphire amulet (u)}}
+|65
+|68,250<ref name="gold1"></ref>
+|7,805
+|120 × {{plink|Gold bar}}; 120 × {{plink|Sapphire}}
+|{{Coins|{{GEP|Gold bar|120}} + {{GEP|Sapphire|120}}}}
+|{{Coins|{{GEP|Sapphire amulet (u)|120}}}}
+|{{Coins|{{GEP|Sapphire amulet (u)|120}}-({{GEP|Gold bar|120}} + {{GEP|Sapphire|120}})}}
+|{{Coins|({{GEP|Sapphire amulet (u)|120}}-({{GEP|Gold bar|120}} + {{GEP|Sapphire|120}}))/120}}
+|{{Coins|(({{GEP|Sapphire amulet (u)|120}}-({{GEP|Gold bar|120}} + {{GEP|Sapphire|120}}))/120)/65}}
+|-
+|31–40
+|{{plinkt|Emerald amulet (u)}}
+|70
+|73,500<ref name="gold1"></ref>
+|22,391
+|320 × {{plink|Gold bar}}; 320 × {{plink|Emerald}}
+|{{Coins|{{GEP|Gold bar|320}} + {{GEP|Emerald|320}}}}
+|{{Coins|{{GEP|Emerald amulet (u)|320}}}}
+|{{Coins|{{GEP|Emerald amulet (u)|320}}-({{GEP|Gold bar|320}} + {{GEP|Emerald|320}})}}
+|{{Coins|({{GEP|Emerald amulet (u)|320}}-({{GEP|Gold bar|320}} + {{GEP|Emerald|320}}))/320}}
+|{{Coins|(({{GEP|Emerald amulet (u)|320}}-({{GEP|Gold bar|320}} + {{GEP|Emerald|320}}))/320)/70}}
+|-
+|40–43
+|{{plinkt|Ruby necklace}}
+|75
+|78,750<ref name="gold1"></ref>
+|13,115
+|175 × {{plink|Gold bar}}; 175 × {{plink|Ruby}}
+|{{Coins|{{GEP|Gold bar|175}} + {{GEP|Ruby|175}}}}
+|{{Coins|{{GEP|Ruby necklace|175}}}}
+|{{Coins|{{GEP|Ruby necklace|175}}-({{GEP|Gold bar|175}} + {{GEP|Ruby|175}})}}
+|{{Coins|({{GEP|Ruby necklace|175}}-({{GEP|Gold bar|175}} + {{GEP|Ruby|175}}))/175}}
+|{{Coins|(({{GEP|Ruby necklace|175}}-({{GEP|Gold bar|175}} + {{GEP|Ruby|175}}))/175)/75}}
+|-
+|43–56
+|{{plinkt|Diamond ring}}
+|85
+|89,250<ref name="gold1"></ref>
+|184,040
+|1,573 × {{plink|Gold bar}}; 1,573 × {{plink|Diamond}}
+|{{Coins|{{GEP|Gold bar|1573}} + {{GEP|Diamond|1573}}}}
+|{{Coins|{{GEP|Diamond ring|1573}}}}
+|{{Coins|{{GEP|Diamond ring|1573}}-({{GEP|Gold bar|1573}} + {{GEP|Diamond|1573}})}}
+|{{Coins|({{GEP|Diamond ring|1573}}-({{GEP|Gold bar|1573}} + {{GEP|Diamond|1573}}))/1573}}
+|{{Coins|(({{GEP|Diamond ring|1573}}-({{GEP|Gold bar|1573}} + {{GEP|Diamond|1573}}))/1573)/85}}
+|-
+|56–70
+|{{plinkt|Diamond necklace}}
+|90
+|94,500<ref name="gold1"></ref>
+|553,587
+|6,151 × {{plink|Gold bar}}; 6,151 × {{plink|Diamond}}
+|{{Coins|{{GEP|Gold bar|6151}} + {{GEP|Diamond|6151}}}}
+|{{Coins|{{GEP|Diamond necklace|6151}}}}
+|{{Coins|{{GEP|Diamond necklace|6151}}-({{GEP|Gold bar|6151}} + {{GEP|Diamond|6151}})}}
+|{{Coins|({{GEP|Diamond necklace|6151}}-({{GEP|Gold bar|6151}} + {{GEP|Diamond|6151}}))/6151}}
+|{{Coins|(({{GEP|Diamond necklace|6151}}-({{GEP|Gold bar|6151}} + {{GEP|Diamond|6151}}))/6151)/90}}
+|-
+|70–99
+|{{plinkt|Diamond amulet (u)}}
+|100
+|105,000<ref name="gold1"></ref>
+|12,296,804
+|122,968 × {{plink|Gold bar}}; 122,968 × {{plink|Diamond}}
+|{{Coins|{{GEP|Gold bar|122968}} + {{GEP|Diamond|122968}}}}
+|{{Coins|{{GEP|Diamond amulet (u)|122968}}}}
+|{{Coins|{{GEP|Diamond amulet (u)|122968}}-({{GEP|Gold bar|122968}} + {{GEP|Diamond|122968}})}}
+|{{Coins|({{GEP|Diamond amulet (u)|122968}}-({{GEP|Gold bar|122968}} + {{GEP|Diamond|122968}}))/122968}}
+|{{Coins|(({{GEP|Diamond amulet (u)|122968}}-({{GEP|Gold bar|122968}} + {{GEP|Diamond|122968}}))/122968)/100}}
+|-
+! colspan="5" | Total
+|13,034,431
+|131,506 × {{plink|Gold bar}}, <br/> 175 × {{plink|Sapphire}}, 320 × {{plink|Emerald}}, <br/> 175 × {{plink|Ruby}}, 129,719 × {{plink|Diamond}}
+|{{Coins|({{GEP|Gold bar|131506}} + {{GEP|Sapphire|175}} + {{GEP|Emerald|320}}+{{GEP|Ruby|175}}+{{GEP|Diamond|129719}})}}
+|{{Coins|
+{{GEP|Gold ring|8}} + {{GEP|Gold necklace|14}} + {{GEP|Gold amulet (u)|122}}+{{GEP|Sapphire ring|29}}+{{GEP|Sapphire necklace|26}}+{{GEP|Sapphire amulet (u)|120}}+
+{{GEP|Emerald amulet (u)|320}}+{{GEP|Ruby necklace|175}}+{{GEP|Diamond ring|600}}+{{GEP|Diamond necklace|6151}}+{{GEP|Diamond amulet (u)|122968}}}}
+|{{Coins|({{GEP|Gold ring|8}} + {{GEP|Gold necklace|14}} + {{GEP|Gold amulet (u)|122}}+{{GEP|Sapphire ring|29}}+{{GEP|Sapphire necklace|26}}+{{GEP|Sapphire amulet (u)|120}}+
+{{GEP|Emerald amulet (u)|320}}+{{GEP|Ruby necklace|175}}+{{GEP|Diamond ring|600}}+{{GEP|Diamond necklace|6151}}+{{GEP|Diamond amulet (u)|122968}}) - ({{GEP|Gold bar|131506}} + {{GEP|Sapphire|175}} + {{GEP|Emerald|320}}+{{GEP|Ruby|175}}+{{GEP|Diamond|129719}})}}
+|{{Coins|(({{GEP|Gold ring|8}} + {{GEP|Gold necklace|14}} + {{GEP|Gold amulet (u)|122}}+{{GEP|Sapphire ring|29}}+{{GEP|Sapphire necklace|26}}+{{GEP|Sapphire amulet (u)|120}}+
+{{GEP|Emerald amulet (u)|320}}+{{GEP|Ruby necklace|175}}+{{GEP|Diamond ring|600}}+{{GEP|Diamond necklace|6151}}+{{GEP|Diamond amulet (u)|122968}}) - ({{GEP|Gold bar|131506}} + {{GEP|Sapphire|175}} + {{GEP|Emerald|320}}+{{GEP|Ruby|175}}+{{GEP|Diamond|129719}}))/131506}}
+|{{Coins|(({{GEP|Gold ring|8}} + {{GEP|Gold necklace|14}} + {{GEP|Gold amulet (u)|122}}+{{GEP|Sapphire ring|29}}+{{GEP|Sapphire necklace|26}}+{{GEP|Sapphire amulet (u)|120}}+
+{{GEP|Emerald amulet (u)|320}}+{{GEP|Ruby necklace|175}}+{{GEP|Diamond ring|600}}+{{GEP|Diamond necklace|6151}}+{{GEP|Diamond amulet (u)|122968}}) - ({{GEP|Gold bar|131506}} + {{GEP|Sapphire|175}} + {{GEP|Emerald|320}}+{{GEP|Ruby|175}}+{{GEP|Diamond|129719}}))/13,034,431}}
+|}
+
+<references />
+
+===Silver jewellery===
+{| class="wikitable"
+|-
+!{{SCP|Crafting}} Level
+! colspan="2" | Product
+!XP per item
+!Experience needed
+!Materials needed
+!Material costs
+!Product value
+!Profit / loss
+!Profit / item
+|-
+|16–23
+|{{plinkt|Unstrung symbol}}
+|50
+|3,545
+|71 × {{plink|Silver bar}}
+|{{Coins|{{GEP|Silver bar|71}}}}
+|{{Coins|{{GEP|Unstrung symbol|71}}}}
+|{{Coins|{{GEP|Unstrung symbol|71}}-{{GEP|Silver bar|71}}}}
+|{{Coins|({{GEP|Unstrung symbol|71}}-{{GEP|Silver bar|71}})/71}}
+
+|-
+|23–99
+|{{plinkt|Tiara}}
+|52.5
+|13,028,140
+|248,155 × {{plink|Silver bar}}
+|{{Coins|{{GEP|Silver bar|248155}}}}
+|{{Coins|{{GEP|Tiara|248155}}}}
+|{{Coins|{{GEP|Tiara|248155}}-{{GEP|Silver bar|248155}}}}
+|{{Coins|({{GEP|Tiara|248155}}-{{GEP|Silver bar|248155}})/248155}}
+
+|-
+! colspan="4" |Total
+|13,034,431
+|248,226 × {{plink|Silver bar}}
+|{{Coins|{{GEP|Silver bar|248226}}}}
+|{{Coins|{{GEP|Unstrung symbol|71}}+{{GEP|Tiara|248155}}}}
+|{{Coins|{{GEP|Unstrung symbol|71}}+{{GEP|Tiara|248155}}-{{GEP|Silver bar|248226}}}}
+|{{Coins|({{GEP|Unstrung symbol|71}}+{{GEP|Tiara|248155}}-{{GEP|Silver bar|248226}})/248226}}
+
+|}
+
+===Gems===
+
+{| class="wikitable"
+|-
+!{{SCP|Crafting}} Level
+! colspan="2" | Product
+!XP per item
+!XP/Hour
+!Experience needed
+!Materials needed
+!Material costs
+!Product value
+!Profit / loss
+!Profit / loss / item
+!GP/XP
+|-
+|20–27
+|{{plinkt|Sapphire}}
+|50
+|145,000
+|5,260
+|105 × {{plink|Uncut sapphire}}
+|{{Coins|{{GEP|Uncut sapphire|105}}}}
+|{{Coins|{{GEP|Sapphire|105}}}}
+|{{Coins|{{GEP|Sapphire|105}}-{{GEP|Uncut sapphire|105}}}}
+|{{Coins|({{GEP|Sapphire}}-{{GEP|Uncut sapphire}})}}
+|{{Coins|({{GEP|Sapphire}}-{{GEP|Uncut sapphire}})/50}}
+|-
+|27–34
+|{{plinkt|Emerald}}
+|67.5
+|175,000
+|10,494
+|155 × {{plink|Uncut emerald}}
+|{{Coins|{{GEP|Uncut emerald|155}}}}
+|{{Coins|{{GEP|Emerald|155}}}}
+|{{Coins|{{GEP|Emerald|155}}-{{GEP|Uncut emerald|155}}}}
+|{{Coins|{{GEP|Emerald}}-{{GEP|Uncut emerald}}}}
+|{{Coins|({{GEP|Emerald}}-{{GEP|Uncut emerald}})/67.5}}
+|-
+|34–43
+|{{plinkt|Ruby}}
+|85
+|230,000
+|30,115
+|354 × {{plink|Uncut ruby}}
+|{{Coins|{{GEP|Uncut ruby|354}}}}
+|{{Coins|{{GEP|Ruby|354}}}}
+|{{Coins|{{GEP|Ruby|354}}-{{GEP|Uncut ruby|354}}}}
+|{{Coins|{{GEP|Ruby}}-{{GEP|Uncut ruby}}}}
+|{{Coins|({{GEP|Ruby}}-{{GEP|Uncut ruby}})/85}}
+|-
+|43–99
+|{{plinkt|Diamond}}
+|107.5
+|290,000
+|12,984,092
+|120,783 × {{plink|Uncut diamond}}
+|{{Coins|{{GEP|Uncut diamond|120783}}}}
+|{{Coins|{{GEP|Diamond|120783}}}}
+|{{Coins|{{GEP|Diamond|120783}}-{{GEP|Uncut diamond|120783}}}}
+|{{Coins|{{GEP|Diamond}}-{{GEP|Uncut diamond}}}}
+|{{Coins|({{GEP|Diamond}}-{{GEP|Uncut diamond}})/107.5}}
+|-
+! colspan="5" |Total
+|13,034,431
+|See above
+|{{Coins|({{GEP|Uncut sapphire|105}} + {{GEP|Uncut emerald|155}} + {{GEP|Uncut ruby|354}} + {{GEP|Uncut diamond|120783}})}}
+|{{Coins|{{GEP|Sapphire|105}} + {{GEP|Emerald|155}} + {{GEP|Ruby|354}} + {{GEP|Diamond|120783}}}}
+|{{Coins|0 - ({{GEP|Uncut sapphire|105}} + {{GEP|Uncut emerald|155}} + {{GEP|Uncut ruby|354}} + {{GEP|Uncut diamond|120783}}) + ({{GEP|Sapphire|105}} + {{GEP|Emerald|155}} + {{GEP|Ruby|354}} + {{GEP|Diamond|120783}})}}
+! colspan="2" |
+|}
+
+Players have been observed cutting gems with the help of banknotes to make training more efficient. It requires the player to convert non-stackable uncut gems into notes from a bank. Then use the noted uncut gems on the bank/teller to receive gems for cutting; cut the resulting un-noted uncut gems with a [[chisel]]. Deposit cut gems into a deposit box; un-note more uncut gems from the noted uncut gems stack in inventory via bank/teller; repeating this process until the desired level is reached. [[Corsair Cove]] is a great place for this method because the bank and deposit box are 2 ticks away from each other, reducing time spent walking and manually depositing/withdrawing items to and from the bank. This method actually helps to offset the loss of potential experience per hour by cutting less expensive gems due to all the entities required for cutting being in such close proximity.
+
+==Miscellaneous==
+
+For the purposes of crafting jewellery, Edgeville furnace is the closest furnace to a bank.
+
+===Stringing Amulets===
+Combining a [[ball of wool]] with one of many types of unstrung amulets.  This action can be performed anywhere, requires no skills or equipment, and is very fast (only takes two [[RuneScape_clock#Crafting|ticks]]).  Each amulet strung awards 4 crafting experience, regardless of what is being strung.  When near a bank, it is possible to string 2500 amulets per hour, awarding 10,000 XP.  Also, the [[Grand Exchange]] can make this a profitable endeavor:
+
+{| class="wikitable sortable"
+|+ Stringing Amulets Profitability
+|-
+! Inputs
+! Output
+! Input Cost 
+! Output Cost
+! Profit Per
+! GP/Hour
+|-
+| {{plink|Unstrung symbol}}<br/>{{plink|Ball of wool}} || {{plink|Unblessed symbol}} || {{Coins|{{GEP|Unstrung_symbol}}+{{GEP|Ball_of_wool}}}} || {{Coins|{{GEP|Unblessed_symbol}}}} || {{Coins|{{GEP|Unblessed_symbol}}-({{GEP|Unstrung_symbol}}+{{GEP|Ball_of_wool}})}} || {{Coins|2500*({{GEP|Unblessed_symbol}}-({{GEP|Unstrung_symbol}}+{{GEP|Ball_of_wool}}))}}
+|-
+| {{plink|Gold amulet (u)}}<br/>{{plink|Ball of wool}} || {{plink|Gold amulet}} || {{Coins|{{GEP|Gold_amulet_(u)}}+{{GEP|Ball_of_wool}}}} || {{Coins|{{GEP|Gold_amulet}}}} || {{Coins|{{GEP|Gold_amulet}}-({{GEP|Gold_amulet_(u)}}+{{GEP|Ball_of_wool}})}} || {{Coins|2500*({{GEP|Gold_amulet}}-({{GEP|Gold_amulet_(u)}}+{{GEP|Ball_of_wool}}))}}
+|-
+| {{plink|Sapphire amulet (u)}}<br/>{{plink|Ball of wool}} || {{plink|Sapphire amulet}} || {{Coins|{{GEP|Sapphire_amulet_(u)}}+{{GEP|Ball_of_wool}}}} || {{Coins|{{GEP|Sapphire_amulet}}}} || {{Coins|{{GEP|Sapphire_amulet}}-({{GEP|Sapphire_amulet_(u)}}+{{GEP|Ball_of_wool}})}} || {{Coins|2500*({{GEP|Sapphire_amulet}}-({{GEP|Sapphire_amulet_(u)}}+{{GEP|Ball_of_wool}}))}}
+|-
+| {{plink|Emerald amulet (u)}}<br/>{{plink|Ball of wool}} || {{plink|Emerald amulet}} || {{Coins|{{GEP|Emerald_amulet_(u)}}+{{GEP|Ball_of_wool}}}} || {{Coins|{{GEP|Emerald_amulet}}}} || {{Coins|{{GEP|Emerald_amulet}}-({{GEP|Emerald_amulet_(u)}}+{{GEP|Ball_of_wool}})}} || {{Coins|2500*({{GEP|Emerald_amulet}}-({{GEP|Emerald_amulet_(u)}}+{{GEP|Ball_of_wool}}))}}
+|-
+| {{plink|Ruby amulet (u)}}<br/>{{plink|Ball of wool}} || {{plink|Ruby amulet}} || {{Coins|{{GEP|Ruby_amulet_(u)}}+{{GEP|Ball_of_wool}}}} || {{Coins|{{GEP|Ruby_amulet}}}} || {{Coins|{{GEP|Ruby_amulet}}-({{GEP|Ruby_amulet_(u)}}+{{GEP|Ball_of_wool}})}} || {{Coins|2500*({{GEP|Ruby_amulet}}-({{GEP|Ruby_amulet_(u)}}+{{GEP|Ball_of_wool}}))}}
+|-
+| {{plink|Diamond amulet (u)}}<br/>{{plink|Ball of wool}} || {{plink|Diamond amulet}} || {{Coins|{{GEP|Diamond_amulet_(u)}}+{{GEP|Ball_of_wool}}}} || {{Coins|{{GEP|Diamond_amulet}}}} || {{Coins|{{GEP|Diamond_amulet}}-({{GEP|Diamond_amulet_(u)}}+{{GEP|Ball_of_wool}})}} || {{Coins|2500*({{GEP|Diamond_amulet}}-({{GEP|Diamond_amulet_(u)}}+{{GEP|Ball_of_wool}}))}}
+|}
+
+
+{{Training guides}}
+{{Free-to-play guides}}
+[[Category:Free-to-play]]

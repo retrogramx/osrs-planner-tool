@@ -1,0 +1,416 @@
+{{External|rs|rsc=Magic training}}
+{{otheruses|the free to play guide|the pay-to-play guide|Pay-to-play Magic training}}
+[[Magic]] is a useful skill in ''[[Old School RuneScape]]'', and especially in free to play, because there is no access to [[magic tablets]], so many [[Teleportation|teleports]] are only available by levelling Magic.
+
+==Equipment choice==
+{{Recommended equipment
+| style = [[Magic]] gear
+| head1 = {{plink|Wizard hat}} / {{plink|Blue wizard hat}}
+| head2 = {{plink|Leather cowl}}
+| head3 = {{plink|Castlewars hood (Saradomin)}} / {{plink|Castlewars hood (Zamorak)}}
+| neck1 = {{plink|Amulet of magic}}
+| neck2 = {{plink|Amulet of power}}
+| neck3 = {{plink|Amulet of accuracy}}
+| neck4 = Defence<br/>{{plink|Amulet of defence}}<br/>Prayer<br/>{{plink|Holy symbol}}
+| cape1 = Any cape with stats ({{plink|Black cape}}, {{plink|Cabbage cape}}, {{plink|Team-1 cape}}, etc.)
+| body1 = {{plink|Black robe}} / {{plink|Blue wizard robe}}
+| body2 = {{plink|Zamorak monk top}}
+| body3 = {{plink|Monk's robe top}}
+| body4 = {{plink|Shade robe top}}
+| body5 = {{plink|Priest gown (top)}}
+| legs1 = {{plink|Zamorak monk bottom}}
+| legs2 = Defence<br/>{{plink|Leather chaps}}<br/>Prayer<br/>{{plink|Monk's robe}}
+| legs3 = {{plink|Shade robe}}
+| legs4 = {{plink|Priest gown (bottom)}}
+| weapon1 = {{plink|Bryophyta's staff}} <small>(30 [[Attack]] and [[Magic]])</small>
+| weapon2 = {{plink|Staff of fire}} / {{plink|Staff of earth}} / {{plink|Staff of water}} / {{plink|Staff of air}}<ref group='m'>The [[staff of air]] for [[wind spells]] is recommended to save runes as damage scales with the highest level spell in that [[combat spell]] tier. Use other staves for enemies with a specific [[elemental weakness]] to gain more Magic XP from the maximum damage boost. But for best Magic experience for monsters without an elemental weakness or is weak to fire, [[staff of fire]] for [[fire spells]] would give the most base Magic XP at the cost of air runes.</ref>
+| weapon3 = [[Autocast]] [[Combat spells|elemental spells]]<br/>{{plink|Magic staff}}<br/>Autocast [[Crumble Undead]]<br/>{{plink|Skull sceptre (i)}}<ref group='m' name=skullsceptre'>The regular [[skull sceptre]] cannot autocast spells in free-to-play. However, the [[skull sceptre (i)|imbued version]] can autocast [[Crumble Undead]] but not other spells.</ref>
+| weapon4 = [[Autocast]]<br/>{{plink|Staff}}<br/>[[Magic#Magic accuracy|Magic accuracy]]<br/>{{plink|Skull sceptre}}<ref group='m' name=skullsceptre'/>
+| shield1 = {{plink|Anti-dragon shield}} <small> (started [[Dragon Slayer I]]) </small>
+| shield2 = {{plink|Wooden shield}} / {{plink|Training shield}}
+| hands1 = Stab or slash defence<br/>{{plink|Leather vambraces}}<br/>Crush defence<br/>{{plink|Leather gloves}}
+| feet1 = {{plink|Leather boots}}
+}} {{Reflist|group=m}}
+
+==Before you begin training ==
+Before you can begin training Magic, you'll need what every great mage requires: [[runes]]! Every spell requires at least one type of rune, and many spells require three and sometimes even four different types of runes to cast.
+
+At level 1 Magic, you'll only be able to cast [[Wind Strike]], which requires one [[air rune]] and one [[mind rune]]. With a [[staff of air]] equipped, you have access to unlimited air runes, so that you don't need air runes. There are staves for every basic type of rune; these staves are referred to as [[elemental staves]], and will help assist in training Magic and give you unlimited runes for that element.
+
+===Quests===
+Some quests give Magic experience on completion:
+
+* [[Imp Catcher]] rewards 875 Magic experience
+* [[Witch's Potion]] rewards 325 Magic experience
+
+Together, these quests are enough experience to raise from level 1 [[Magic]] to level 10 [[Magic]] before casting any spells. This means your [[Wind Strike]]'s maximum hit will start at 6.
+
+===Obtaining runes===
+There are a few ways in which you can get your hands on runes. Each method has its perks, though some methods will make gathering them faster.
+
+====Buying from a shop or the Grand Exchange====
+Certain free-to-play runes can be bought from shops such as [[Aubury's Rune Shop]] (individually or as [[item pack]]s), and all free-to-play runes can be purchased from other players on the [[Grand Exchange]]. The advantage in this method is that you can generally obtain a large stock of runes much faster than you could by crafting them, though buying runes generally results in spending more gold, and needing more gold to begin training.
+
+The following table can be consulted for store and Grand Exchange prices of free-to-play runes:
+
+{|class="wikitable sortable"
+!Type
+!GE Price
+!Store Price
+
+|-
+|{{plink|Air rune}}
+|{{Coins|{{GEP|Air rune}}}}
+|{{Coins|4}} (or {{Coins|4.3}} from [[air rune pack]]s)
+
+|-
+|{{plink|Water rune}}
+|{{Coins|{{GEP|Water rune}}}}
+|{{Coins|4}} (or {{Coins|4.3}} from [[water rune pack]]s)
+
+|-
+|{{plink|Earth rune}}
+|{{Coins|{{GEP|Earth rune}}}}
+|{{Coins|4}} (or {{Coins|4.3}} from [[earth rune pack]]s)
+
+|-
+|{{plink|Fire rune}}
+|{{Coins|{{GEP|Fire rune}}}}
+|{{Coins|4}} (or {{Coins|4.3}} from [[fire rune pack]]s)
+
+|-
+|{{plink|Mind rune}}
+|{{Coins|{{GEP|Mind rune}}}}
+|{{Coins|3}} (or {{Coins|3.3}} from [[mind rune pack]]s)
+
+|-
+|{{plink|Chaos rune}}
+|{{Coins|{{GEP|Chaos rune}}}}
+|{{Coins|90}} (or {{Coins|99.5}} from [[chaos rune pack]]s)
+
+|-
+|{{plink|Death rune}}
+|{{Coins|{{GEP|Death rune}}}}
+|{{Coins|180}}
+
+|-
+|{{plink|Body rune}}
+|{{Coins|{{GEP|Body rune}}}}
+|{{Coins|3}}
+
+|-
+|{{plink|Cosmic rune}}
+|{{Coins|{{GEP|Cosmic rune}}}}
+|N/A
+
+|-
+|{{plink|Nature rune}}
+|{{Coins|{{GEP|Nature rune}}}}
+|N/A
+
+|-
+|{{plink|Law rune}}
+|{{Coins|{{GEP|Law rune}}}}
+|N/A
+
+|}
+
+====Crafting runes====
+You may choose to craft your own runes through [[Runecraft]] at any of the various [[runic altars]], which is possibly the fastest way aside from buying from another player or from one of the [[magic shops]]. The downside is that free-to-play players cannot craft [[Cosmic rune|cosmic]], [[Nature rune|nature]], [[Law rune|law]], [[Chaos rune|chaos]], or [[death runes]]. 
+
+Crafting runes requires [[rune essence]] or [[pure essence]], and either a [[talisman]] or [[tiara]] that is compatible with the specific altar (for example, you may not use a [[fire talisman]] or [[fire tiara]] on the [[Air Altar]] to gain entry into the Air Altar and create air runes, instead you would need an [[air talisman]] or [[air tiara]]). For more details on methods of effectively crafting runes, see the [[Free-to-play Runecraft training]] article.
+
+====Killing monsters====
+Level 7 [[dark wizard]]s found at the [[Varrock]] [[Varrock stone circle|stone circle]] have some of the best drop rates for [[runes]] of any monster in free-to-play, only falling short of much higher level monsters such as [[ogress warrior]]s and [[Ogress Shaman|shamans]]. They drop all free-to-play [[Runes|rune types]] with the exception of [[death rune]]s, and given their low [[Hitpoints]] and max hit combined with their vulnerability to all [[Combat Options|attack styles]], one can obtain quite a large stockpile of [[runes]] fairly quickly. It is however recommended to have at least [[combat level]] 41 to avoid [[Aggressiveness|aggression]] from the much more dangerous Level 20 [[dark wizard]]s nearby. 
+
+For those with a lower combat level, Level 9 [[wizard]]s found at the [[Wizards' Tower]] offer similar [[rune]] drop rates, but with lower quantities and lacking [[cosmic runes]]. They also have a higher max hit and slightly more [[Hitpoints]]. 
+
+Some higher level monsters such as [[hobgoblin]]s, [[hill giant]]s, [[moss giant]]s, and [[ice giant]]s also drop a variety of [[runes]], but at much lower drop rates and/or quantities. Their higher levels also mean that drops won't be obtained anywhere near as quickly as with [[dark wizard]]s or [[wizard]]s.
+
+==How to train Magic efficiently==
+===General tips===
+It's highly recommended to use a [[staff]] if possible, as this allows you to [[autocast]] spells instead of manually clicking the spell each time. This is done by going into the combat options, clicking on the spell button, and choosing the spell you wish to autocast. Other gear recommendations can be found in the [[Free-to-play Magic training#Equipment choice|equipment choice]] section.
+
+Different elemental spells of the same "tier" will scale to match each other in damage, despite their different level requirements. The choice of spell also does not affect accuracy at all. This means that it is often better to use the spell matching the monster's [[elemental weakness]], as this provides an increase to accuracy and damage. Note that because higher level spells provide more base XP from casting, there is still an advantage to using them for training. For players on a budget, Strike spells still scale up to 8 damage before elemental weaknesses, which provides a respectable damage output, though the experience gains are limited by their lower base XP.
+
+The high early game damage of magic spells, combined with the fact that magic accuracy against monsters does not take into account their Defence level (only their Magic level and Magic defence bonus), means that many high level monsters can be killed efficiently at a low level if you are able to [[safespot]] them. A prominent example is the [[lesser demon]] in [[Wizard's Tower]], which has a Magic level of 1, -10 Magic defence, and a 40% elemental weakness to water. Training on monsters with more hitpoints reduces the amount of wasted damage due to overkills.
+
+===Level 1–17===
+Casting [[Wind Strike]] on the [[cow]]s around [[Lumbridge]] is a good way to get a few levels quickly, and also profit from the [[cowhide]]s that they drop. You can either sell the hides, or tan them at [[Ellis]], the tanner in [[Al Kharid]], and then sell for even more profit, or even use the leather that you obtain from tanning for use in the [[Crafting]] skill. A few [[shrimps]] or [[jugs of wine]] is all you need for healing while you kill cows and collect cowhides. As you level, you will gain access to more spells like [[Water Strike]] at level 5, [[Earth Strike]] at level 9, and [[Fire Strike]] at level 13, which you can use instead of Wind Strike to maximise experience gains.
+
+Alternatively, you can choose to kill something else with a similar combat level, such as [[goblin]]s, [[chicken]]s, [[rat]]s, [[spider]]s, or [[duck]]s.
+
+It's also possible to cast non-offensive spells that do not give [[Hitpoints]] experience, like [[confuse]] or [[curse]], depending on what sort of account you wish to build.
+
+===Level 9+ (active)===
+Completing [[The Ides of Milk]] quest unlocks the boss [[Brutus]], who is one of the best monsters to train on due to his 2x combat experience multiplier. Brutus has a 25% weakness to earth spells and can be safely killed by [[Brutus/Strategies#Safespot cycle|rotating between safespot positions]]. He always drops [[bull bones]] (40 [[Prayer]] XP) and a [[raw t-bone steak]] (can be cooked on a fire for healing), and occasionally drops air and mind runes (rarely chaos runes) that can help replenish supplies. Players may decrease his respawn time by ringing the [[cowbell amulet]] after killing him.
+
+===Level 17+===
+At level 17, you can begin using [[Wind Bolt]], increasing the amount of damage you can do, and may use stronger [[bolt spells]] at their respective levels.
+
+Options for further training include:
+*[[Hill Giant]]s in [[Edgeville Dungeon]] which drop [[big bones]] and [[limpwurt root]]s, and can be attacked from [[safespots]].
+*The [[lesser demon]] in [[Wizards' Tower]] which drops runes and other valuables. Note: [[Telekinetic Grab]] is required to collect the drops.
+*[[Al Kharid warrior]]s in [[Al Kharid]] (usually crowded).
+*[[Hobgoblin]]s in [[Edgeville Dungeon]] are also an option which drop [[limpwurt roots]] and has a few [[safespots]].
+*There are three level 21 [[skeleton]]s in [[Varrock Sewers]]; the player can attack them from a safe location on one side of the water.
+
+===Level 33+===
+At level 33, you can begin using [[Telekinetic Grab]], allowing you to profit whilst training Magic and opens lots of options for Magic combat and passive training.
+*[[Hobgoblin]]s can be safespotted from the cow field behind the [[crafting guild]]. 
+**Telegrab the [[limpwurt root]]s and nature runes. 
+**Do take note that most of the time your character will try to go around, though.
+*[[Wine of zamorak|Wine of Zamorak]] from the [[Chaos Temple (Asgarnia)|Chaos Temple]] in [[Asgarnia]] (recommended) or the [[Chaos Temple (hut)]] in the [[Wilderness]].
+**Recommended Method: 
+***If telegrabbing the wine from the {{FloorNumber|uk=0}} , bring [[wizard's mind bomb|wizard's mind bombs]] to restore your stats as taking the wine will inflict damage and stat-draining effects on you. If your Magic level is drained below 33, you will not be able to cast Telekinetic Grab.
+***If telegrabbing the wine from the {{FloorNumber|uk=0}} the monks will become aggressive to the caster. However, should you leave the temple, they will not be able to step outside the temple to pursue you.
+****You can use this to your advantage to train your Magic further by bringing either [[Mind rune|Mind runes]] or [[Chaos rune|Chaos runes]] to cast [[Wind Strike]] / [[Wind Bolt]]; as the monks have a chance to drop [[Zamorak monk bottom|Zamorak monk bottoms]], this can increase your profit further.
+***Alternately, if you have a total level of 500 and are wearing [[Zamorak monk robes]], you can climb the ladder to the {{FloorNumber|uk=1}}, where there is a second Wine of Zamorak on the table which does '''not''' inflict damage or stat drains if telegrabbed.
+
+* [[Nature rune]]s in the [[Wilderness]], south-east of the [[Demonic Ruins]]. (Do not take anything that you cannot replace / are not willing to lose.) 
+** Recommended Method: 
+*** Take 200 law runes, 200 earth runes, 200 water runes, 200 Chaos runes, 2 nature runes, and fill the rest of inventory with jugs of wine, wield air staff and set Wind Bolt as your auto-attack spell
+*** Wear a [[Blue wizard hat]], a [[Blue wizard robe]], a Zamorak monk bottom, an [[Amulet of magic]] and either a [[Wooden shield]], [[Training shield]] or [[anti-dragon shield]]. 
+*** Telegrab both piles of nature runes from the small peninsula, then switch worlds. 
+*** If you are attacked by a player, cast Bind, then Earth Bolt, (have wind bolt as your auto attack), then fight or run away and drink wines as needed.
+
+*The [[Greater demon]]s in the Wilderness located near the Demonic Ruins can be safe-spotted from near the nature rune spawn. (Do not take anything that you cannot replace / are not willing to lose.) 
+**Greater Demons drop several Rune and Adamant items, which can prove to be extremely profitable. 
+**Recommended Method: similar to the one above for nature runes, but bring an additional 2000+ mind runes and set wind strike as your auto attack spell.)
+*The caged [[Lesser demon]] in the [[Wizards' Tower]].
+**In addition to [[Vile ashes]] which can be sold or used for Prayer training, lesser demons drop a variety of high value items, including uncut gems.
+*[[Coins]] / [[Gold bar|Gold bars]] / [[Gold ore|Gold ores]] / [[Gold necklace|Gold necklaces]] beneath the [[Varrock west bank]]. 
+**For players buying runes on the Grand Exchange, this is the easiest method for generating a profit from magic training until Level 55, as the Gold necklaces can be sold for more than the cost of the runes used for casting.
+**Players can either grab all the items for the fastest exp, or only grab the Gold Ore for the most profit. 
+***[[World switching|Switching Worlds]] is recommended to avoid waiting out the long respawn time of the items in the vault.
+
+===Level 59+===
+At level 59, you can begin using [[Fire Blast]], while being the strongest available spell in free-to-play, you can also benefit of the [[elemental weakness]] of [[ice giant]]s and [[ice warrior]]s in the [[Asgarnian Ice Dungeon]] for a max hit of 32, averaging approximately 70k magic experience per hour at maximum efficiency. They also can be safespotted, so no food is needed and can be trained without interruption. [[High alchemy]] can also be cast in between Fire Blast for an extra 78k Magic XP per hour, making it a maximum of 148k Magic XP per hour.
+
+If you need to save elemental runes, you can alternately use [[Wind Blast]] with a [[staff of air]], which grants less base XP than Fire Blast but its [[magic damage]] scales to the damage of Fire Blast at level 59. [[Ghost]]s and [[skeleton]]s have different elemental weaknesses to [[wind spells]] and [[earth spells]], with ghosts taking 50% extra damage to wind and skeletons taking 35% extra damage to earth. High-level ghosts and skeletons can be found in level 4 (Sepulchre of Death) of the [[Stronghold of Security]].
+
+===Other monsters to kill for experience===
+The following are alternative monsters to train [[Magic]] on for experience and drops.
+*[[Moss giant]]s can be effective for gaining [[Magic]] experience, as they have a 50% weakness to fire. They also drop [[big bones]] for passive [[Prayer]] experience, as well as the unique [[mossy key]]s used to access [[Bryophyta]]. They can be safespot in [[Varrock Sewers]] (bring a slash weapon or [[knife]]), or on [[Crandor]] for those who have completed [[Dragon Slayer I]]. Until [[combat level]] 85 moss giants are aggressive and have a max hit of 6; however, they can still be killed safely from safespots without much risk. Like most monsters, they will become [[tolerant]] when training in the same area longer than 10 minutes, which makes collecting drops between kills completely safe.
+*[[Ankou]] in [[Stronghold of Security]] are another popular option for training magic, and they can be safespotted behind skeleton remains in the south-west room of the Sepulchre of Death floor. [[Skull sceptre (i)]] is recommended to autocast [[Crumble Undead]] but runes will not be saved. Fortunately, Crumble Undead's cost is cheap compared to [[Earth Blast]] that does the same maximum damage of 15, making it a cheap magic training method in combat.
+*[[Ogress warrior]]s are also good for good money and experience, although they have high magic and range defence so 60+ Magic is recommended. [[Blast spells]] are recommended for faster kills as the runes and using [[High Level Alchemy]] on the rune equipment that ogresses drop can make some of the cost back.
+* There are [[lesser demon]]s on Karamja [[Crandor and Karamja Dungeon|under the volcano]] with safespots. They have a 40% weakness to water and drop [[vile ashes]] which makes them a viable option to train both Prayer and Magic.
+* [[Body Golem]]s in the [[Ruins of Camdozaal]] have a 35% earth weakness and weak magic defences, along with magic attacks being able to bypass their flat armour of 2. They can be safespotted easily by using the Rubble of an unawakened golem. All golems have a rare chance of dropping the [[barronite guard]], which is used to make the [[barronite mace]]. 
+* Other options include [[flesh crawler]]s, [[spider]]s, [[giant spider]]s, and [[guard]]s.
+
+==Alternative training methods==
+=== Cheap methods===
+====Splashing Wind Strike====
+Splashing Wind Strike with -55 Magic attack bonus (full metal armour and a staff of air) costs 2 coins for 6 xp at 7200 xp per hour, although it will eventually kill most targets until -64 or lower Magic attack bonus is obtained. See AFK training methods.
+
+====Splashing Curse====
+Starting at level 19, one could repeatedly [[Splashing|splash]] [[Curse]] to gain [[Magic]] experience. Casting curse yields 29 experience; approximately 34,000 experience per hour, and a gp/xp of {{Coins|(-({{GEP|Water rune|2}}+{{GEP|Body rune}}))/29}} when using a staff of earth.
+
+'''Note:''' if Curse lands on an enemy, it cannot be cast again on that enemy until the effects wear off. [[Splashing]] bypasses this timer, as the spell never landed on the enemy in the first place.
+
+Recommended equipment:
+
+*[[Staff of earth]] with [[armour]] that provides negative magic bonuses.
+*[[Iron armour]] or [[Green dragonhide armour]]
+*[[Fighting boots|Fighting]]/[[Fancy boots]] are good choices.
+*A magic bonus of -65 attack or lower is strongly recommended.
+
+Some monster options for this type of training include:
+
+*[[Skeleton]]s
+*[[Ducks]]
+*The [[monk of Zamorak]] in [[Varrock Palace]] (Which will allow you to cast curse again after a few seconds, even if you don't splash)
+*The bear north of Varrock Castle, near the yew trees
+*The [[lesser demon]] on the top floor of the [[Wizards' Tower]].
+
+The locations above are often in use, so it could be worthwhile finding somewhere else that works best for you.
+
+==== Low level Alchemy method ====
+At level 21 [[Magic]] you can cast [[Low Level Alchemy]] on [[Iron platebody|Iron platebodies]] for 31 magic experience per cast. At grand exchange prices, each cast nets {{Coins|224-{{GEP|Nature_rune}}-{{GEP|Iron_platebody}}}}. You will need 5214 casts to go from level 21 to level 55, which will take 7 days to buy off the grand exchange with the [[Grand Exchange#Buy limits]] for platebodies.
+
+'''Superheating iron ore method'''
+
+At level 43 Magic and 15 smithing you can cast Superheat Item on Iron Ore for 53 magic experience per cast. This can be potentially profitable if you sell the iron bars. At 3 ticks per cast you can theoretically smelt 2,000 iron ore per hour for a total of 106,000 experience per hour, though actual experience will be lower from using the bank.
+
+====High level Alchemy method====
+At level 55 [[Magic]] you can cast [[High Level Alchemy]] on various items for 65 magic experience per cast, achieving at most 78,000 experience per hour with nonstop alching. Items that are consistently profitable include [[green d'hide bodies]], [[mithril platebodies]], [[adamant equipment]], [[rune equipment]], and more. Players can always make a profit when high alching by checking a spreadsheet or [[Grand Exchange Market Watch/Alchemy]] to see which items currently offer a profit. Keep in mind that some items have a more restrictive limit as to how many you can buy per 4 hours when purchasing them from the [[Grand Exchange]]. If you are not an ironman, world 308 is the unofficial high alchemy trading world, where players frequently buy and sell high quantities of profitable high alchemy items directly to one another in the Varrock west bank.
+
+====Enchanting amulets====
+From level 7 onwards, amulets can be enchanted using [[enchantment spells]], a click intensive training method which gives great experience per hour rates and can also generate profit. By manually clicking the spell and each amulet in the player's inventory, an amulet can be enchanted every 3 ticks, whereas a player using the spell on an amulet once and waiting will automatically enchant all amulets in their inventory much slower, at a rate of one every 7 ticks. When manually clicking, around 1885 or more amulets can be enchanted every hour. [[Elemental staves]] can be used to decrease cost when enchanting.
+
+{| class="wikitable align-center-1"
+|+Amulet Enchanting
+!{{SCP|Magic}} level
+! colspan="2" |Item
+!Materials Required
+!Material Cost
+!Amulet value
+!Profit / Loss
+!Experience
+!Clicky Xp/Hour
+!Auto Xp/Hour
+!Gp/Xp
+|-
+|7
+|{{Plinkp|Sapphire amulet}}
+|[[Sapphire amulet]] > [[Amulet of magic]]
+|{{RuneReq|Cosmic = 1}} {{Plinkp|Sapphire amulet}} + [[staff of water]]
+|{{coins|{{GEP|Cosmic rune|1}}+{{GEP|Sapphire amulet|1}}}}
+|{{coins|{{GEP|Amulet of magic|1}}}}
+|{{coins|{{GEP|Amulet of magic|1}}-({{GEP|Cosmic rune|1}}+{{GEP|Sapphire amulet|1}})}}
+|17.5
+|33,000
+|14,000
+|{{coins|({{GEP|Amulet of magic|1}}-({{GEP|Cosmic rune|1}}+{{GEP|Sapphire amulet|1}}))/17.5}}
+|-
+|27
+|{{Plinkp|Emerald amulet}}
+|[[Emerald amulet]] > [[Amulet of defence]]
+|{{RuneReq|Cosmic = 1}} {{Plinkp|Emerald amulet}} + [[staff of air]]
+|{{coins|{{GEP|Cosmic rune|1}}+{{GEP|Emerald amulet|1}}}}
+|{{coins|{{GEP|Amulet of defence|1}}}}
+|{{coins|{{GEP|Amulet of defence|1}}-({{GEP|Cosmic rune|1}}+{{GEP|Emerald amulet|1}})}}
+|37
+|70,000
+|30,000
+|{{coins|({{GEP|Amulet of defence|1}}-({{GEP|Cosmic rune|1}}+{{GEP|Emerald amulet|1}}))/37}}
+|-
+|49
+|{{Plinkp|Ruby amulet}}
+|[[Ruby amulet]] > [[Amulet of strength]]
+|{{RuneReq|Cosmic = 1}} {{Plinkp|Ruby amulet}} + [[staff of fire]]
+|{{coins|{{GEP|Cosmic rune|1}}+{{GEP|Ruby amulet|1}}}}
+|{{coins|{{GEP|Amulet of strength|1}}}}
+|{{coins|{{GEP|Amulet of strength|1}}-({{GEP|Cosmic rune|1}}+{{GEP|Ruby amulet|1}})}}
+|59
+|111,000
+|47,500
+|{{coins|({{GEP|Amulet of strength|1}}-({{GEP|Cosmic rune|1}}+{{GEP|Ruby amulet|1}}))/59}}
+|-
+|57
+|{{Plinkp|Diamond amulet}}
+|[[Diamond amulet]] > [[Amulet of power]]
+|{{RuneReq|Cosmic = 1}} {{Plinkp|Diamond amulet}} + [[staff of earth]]
+|{{coins|{{GEP|Cosmic rune|1}}+{{GEP|Diamond amulet|1}}}}
+|{{coins|{{GEP|Amulet of power|1}}}}
+|{{coins|{{GEP|Amulet of power|1}}-({{GEP|Cosmic rune|1}}+{{GEP|Diamond amulet|1}})}}
+|67
+|126,000
+|54,000
+|{{coins|({{GEP|Amulet of power|1}}-({{GEP|Cosmic rune|1}}+{{GEP|Diamond amulet|1}}))/67}}
+|}
+
+Alternatively, you can also purchase unstrung (u) amulets and [[Ball of wool|balls of wool]] and [[Free-to-play_Crafting_training#Stringing_Amulets|string the amulets]] yourself.  This is quite fast, has no level or material requirements, provides a little bit of {{SCP|Crafting}} EXP, is often profitable, and can help if the [[Grand Exchange|GE]] market for (strung) amulets is unfavourable.
+
+===Expensive methods===
+
+====Teleporting ====
+Casting teleport spells can be a good way to gain some experience, though it can quickly become expensive. If you do choose this method, start with [[Varrock Teleport]] at level 25, move on to [[Lumbridge Teleport]] at level 31, and then cast [[Falador Teleport]] at level 37. A [[staff of air]] is recommended as these teleports all require 3 air runes each cast.
+
+{| class="wikitable"
+|+Teleport Levelling
+!{{SCP|Magic}} level
+!Icon
+!Spell
+! Runes + Staff Suggested
+!Material Cost
+!Experience
+!Xp/Hour
+!Gp/Hour
+!Gp/Xp
+|-
+|25
+|[[File:Varrock_Teleport.png]]
+|[[Varrock Teleport]]
+|{{RuneReq|Fire=1|Law=1}} + [[staff of air]]
+|{{Coins|{{GEP|Law rune|1}}+{{GEP|Fire rune|1}}}}
+|35
+|52,500
+|{{Coins|(-({{GEP|Law rune|1}}+{{GEP|Fire rune|1}}))*1500}}
+|{{Coins|(-({{GEP|Law rune|1}}+{{GEP|Fire rune|1}}))/35}}
+|-
+|31
+|[[File:Lumbridge_Teleport.png]]
+|[[Lumbridge Teleport]]
+|{{RuneReq|Earth=1|Law=1}} + [[staff of air]]
+|{{Coins|{{GEP|Law rune|1}}+{{GEP|Earth rune|1}}}}
+|41
+|61,500
+|{{Coins|(-({{GEP|Law rune|1}}+{{GEP|Earth rune|1}}))*1500}}
+|{{Coins|(-({{GEP|Law rune|1}}+{{GEP|Earth rune|1}}))/41}}
+|-
+|37
+|[[File:Falador Teleport.png]]
+|[[Falador Teleport]]
+|{{RuneReq|Water=1|Law=1}} + [[staff of air]]
+|{{Coins|{{GEP|Law rune|1}}+{{GEP|Water rune|1}}}}
+|48
+|72,000
+|{{Coins|(-({{GEP|Law rune|1}}+{{GEP|Water rune|1}}))*1500}}
+|{{Coins|(-({{GEP|Law rune|1}}+{{GEP|Water rune|1}}))/48}}
+|}
+
+====Teleport alchemy ====
+Another method involves alchemy and teleportation. To do this method, you will need to cast high alchemy on an item, teleport immediately afterwards, click the high alchemy spell while you are waiting to arrive in the teleport location, and then click the item again as soon as you arrive. This makes sure that you do not lose any potential experience. The recommended teleport location is [[Falador]].  Falador teleport gives the most experience of any free to play teleport spells.
+
+==AFK methods==
+
+===Splashing===
+-64 or lower Magic attack bonus will allow for you to [[Splashing|splash]] these spells for approximately 20 minutes while being AFK. This method is 100% safe for HCIM at certain locations such as the top floor of the wizards tower. 
+{| class="wikitable"
+|+AFK Splashing 
+!{{SCP|Magic}} level
+!Icon
+!Spell
+!Runes + Staff Suggested
+!Material Cost
+!Experience
+!Xp/Hour
+!Gp/Hour
+!Gp/Xp
+|-
+|1
+|[[File:Wind Strike.png]]
+|[[Wind Strike]]
+|{{RuneReq|Mind=1}} + [[staff of air]]
+|{{Coins|{{GEP|Mind rune|1}}}}
+|5.5
+|7200
+|{{Coins|(-({{GEP|Mind rune|1}}))*1191.3}}
+|{{Coins|(-({{GEP|Mind rune|1}}))/6}}
+|-
+|13
+|[[File:Fire Strike.png]]
+|[[Fire Strike]]
+|{{RuneReq|Air=2|Mind=1}} + [[staff of fire]]
+|{{Coins|{{GEP|Mind rune|1}}+{{GEP|Air rune|2}}}}
+|11.5
+|13,800
+|{{Coins|(-({{GEP|Mind rune|1}}+{{GEP|Air rune|2}}))*1191.3}}
+|{{Coins|(-({{GEP|Mind rune|1}}+{{GEP|Air rune|2}}))/11.5}}
+|-
+|35
+|[[File:Fire Bolt.png]]
+|[[Fire Bolt]]
+|{{RuneReq|Air=3|Chaos=1}} + [[staff of fire]]
+|{{Coins|{{GEP|Chaos rune|1}}+{{GEP|Air rune|3}}}}
+|22.5
+|26,800
+|{{Coins|(-({{GEP|Chaos rune|1}}+{{GEP|Air rune|3}}))*1191.3}}
+|{{Coins|((-({{GEP|Chaos rune|1}}+{{GEP|Air rune|3}}))/22.5)}}
+|-
+|59
+|[[File:Fire Blast.png]]
+|[[Fire Blast]]
+|{{RuneReq|Death=1|Air=4}} + [[staff of fire]]
+|{{Coins|{{GEP|Death rune|1}}+{{GEP|Air rune|4}}}}
+|34.5
+|41,100
+|{{Coins|(-({{GEP|Death rune|1}}+{{GEP|Air rune|4}}))*1191.3}}
+|{{Coins|((-({{GEP|Death rune|1}}+{{GEP|Air rune|4}}))/34.5)}}
+|}
+
+{{Training guides}}
+{{Free-to-play guides}}
+[[Category:Magic]]
+[[Category:Free-to-play]]

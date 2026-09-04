@@ -1,0 +1,20 @@
+SOURCE: OSRS Wiki (oldschool.runescape.wiki) — achievement diary pages, ?action=raw
+LICENSE: CC BY-NC-SA 3.0
+ASSIGNED SOURCE: https://oldschool.runescape.wiki/w/Achievement_Diary/All_achievements
+AUTHORITATIVE SOURCES (per-diary, numbered task tables):
+  https://oldschool.runescape.wiki/w/Ardougne_Diary
+  https://oldschool.runescape.wiki/w/Desert_Diary
+  https://oldschool.runescape.wiki/w/Falador_Diary
+  https://oldschool.runescape.wiki/w/Fremennik_Diary
+  https://oldschool.runescape.wiki/w/Kandarin_Diary
+  https://oldschool.runescape.wiki/w/Karamja_Diary
+  https://oldschool.runescape.wiki/w/Kourend_&_Kebos_Diary
+  https://oldschool.runescape.wiki/w/Lumbridge_&_Draynor_Diary
+  https://oldschool.runescape.wiki/w/Morytania_Diary
+  https://oldschool.runescape.wiki/w/Varrock_Diary
+  https://oldschool.runescape.wiki/w/Western_Provinces_Diary
+  https://oldschool.runescape.wiki/w/Wilderness_Diary
+WHY PER-DIARY: All_achievements groups tasks by requirement type and has
+  cross-section phrasing drift + "Multiple/Various" placeholder rows, corrupting
+  a text-keyed dedup. The individual diary pages number tasks per tier, giving
+  the exact universe (492). All_achievements kept as raw cross-check artifact.

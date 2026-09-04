@@ -1,0 +1,150 @@
+{{Iron Guide Links}}
+{{Cleanup}}
+
+[[Thieving]] training on an ironman is not very different from training it [[Thieving training|normally]]. Certain methods, such as [[pickpocketing]] [[Master Farmers]], are favoured due to their valuable drops.
+
+==Early training: Quests==
+{{Main|Quest experience rewards#Thieving}}
+Early levels can be skipped by completing quests rewarding Thieving experience. Notably, [[Hazeel Cult]] has no requirements, one path involves no combat, and grants 1,500 Thieving experience. [[Fight Arena]] also has no requirements, the monsters can be [[safespot]]ted, and it rewards 2,175 Thieving experience. Completing both will reach level 18 Thieving from level 1.
+{| class="wikitable"
+|+
+!Quest
+!Experience Reward
+!Combat
+!Additional requirements
+|-
+|[[Hazeel Cult]]
+|1,500
+|Level 13 [[Alomone]]
+|None
+|-
+|[[Fight Arena]]
+|2,175
+|Level 44 [[Khazard Scorpion]],
+level 63 [[Khazard Ogre]],
+level 137 [[Bouncer]], level 142 [[General Khazard]]
+|None
+|-
+|[[Tower of Life]]
+|500
+|None
+|{{SCP|Construction|10}}
+|-
+|[[Biohazard]]
+|1,250
+|Level 13 [[Mourner]]
+|Completion of [[Plague City]]
+|-
+|[[Twilight's Promise]]
+|3,000
+|Level 81 [[Knight of Varlamore]], 8x level 34 [[Cultist]]
+|Completion of [[Children of the Sun]]
+|-
+|[[Ethically Acquired Antiquities]]
+|6,000
+|None
+|{{SCP|Thieving|25}}, completion of [[Children of the Sun]] and [[Shield of Arrav]]
+|-
+|[[Death on the Isle]]
+|10,000
+|Level 49 [[Adala]], [[Naiatli]]
+|{{SCP|Thieving|34}}, {{SCP|Agility|32}}
+|-
+|[[The Feud]]
+|15,000
+|Level 70 [[Bandit champion]], level 75 [[Tough Guy]]
+|{{SCP|Thieving|30}}
+|}
+
+==General information and tips==
+===Rogue equipment===
+{{Main|Rogues' Den}}
+
+Obtain the [[rogue equipment]] as soon as possible. The Rogues' Den minigame requires {{SCP|Thieving|50|link=yes}} and {{SCP|Agility|50|link=yes}}, and obtaining the full set should take around 90 minutes. It is recommended to have something else to do at the bank whilst waiting for run energy to restore (such as cooking fish, blowing molten glass), or opt for using energy potions (or [[strange fruit]], as this can be obtained from fruit stalls) for more efficient runs. An alternative cheap way to restore energy between runs is [[Ring of dueling]] to [[Ferox Enclave]] for its [[Pool of Refreshment]], then [[Games necklace]] back.
+
+===H.A.M. Store rooms===
+{{Main|H.A.M. Store room}}
+
+After completing [[Death to the Dorgeshuun]], players can pickpocket [[Guard (H.A.M. Storerooms)|H.A.M. Guards]] for [[H.A.M. key]]s and open the chests in the [[H.A.M. Store room]]s, which contain coins, gems and jewellery. This is a way to obtain an [[amulet of strength]] or an [[amulet of power]] without the Crafting requirement and is a decent moneymaking option at lower levels. Wearing a full set of H.A.M. robes will not reduce the chance of failure when pickpocketing the guards as they only reduce the chance of being kicked out of the hideout, which cannot happen while in the store room. The player will loot double keys if wearing full rogue equipment.
+
+===Early money making===
+[[Blackjacking]] bandits in [[Pollnivneach]] has few requirements and it is one of the best ways to make starting cash for [[Managing Miscellania]]. Pickpocketing [[Knight of Ardougne|Knights of Ardougne]] is a slower but easier alternative at higher levels and it makes slightly more money than blackjacking, but this requires completion of the medium tasks in the [[Ardougne Diary]], which in turn requires having a [[mith grapple]].
+
+==Fastest experience==
+===Levels 1–25: Men, women, cakes, and silk===
+[[File:Baker's stall safespot.png|thumb|right|Safespot for the cake stall in East Ardougne.]]
+
+At level 1, [[man|men]] and [[woman|women]] in Lumbridge are the only option. Consider completing a few quests instead.
+
+At level 5, players can thieve [[cake]]s from the [[bakery stall]]s in [[East Ardougne]]. They can be stolen while standing in a [[safespot]], eliminating risk for lower levelled players or hardcore ironmen. Bank the [[cake]]s obtained, as they are useful for low-level questing. Banking a few loaves of [[bread]] is also a good idea, as they are needed for a few quests ([[Death Plateau]] requires 10).
+
+At level 20, players can make a bit of starting cash by stealing [[silk]] at the [[silk stall]] and later selling them to the [[silk merchant]] for 60 coins each. He will remember theft for 30 minutes to one hour, but afterwards, entire inventories of silk can be sold.
+
+===Levels 25–45: Fruit stalls===
+At level 25, players can thieve from the [[fruit stall]]s in [[Hosidius]].
+
+Bank the [[strange fruit]] for run energy and [[Golovanova fruit top|golovanova fruit tops]] for [[Botanical pie|botanical pies]].
+
+===Levels 45–99: Blackjacking===
+{{Main|Blackjacking}}
+Very click intensive.
+One of the best ways to make starting cash for [[Managing Miscellania]] or beginner ironmen in general.
+
+[[File:Hardcore ironman chat badge.png]] Hardcore ironmen are advised to wear an [[escape crystal]] when [[blackjack]]ing in case they disconnect after failing a knock-out.
+
+[[Rogue equipment]] is highly recommended.
+
+===Levels 49–99: Stealing artefacts===
+{{Main|Stealing artefacts}}
+
+Requires [[stamina potion]]s for optimal experience. Allows you to combine Thieving with other skilling methods you can complete while running (alching, fletching, glassblowing, etc.). Be aware that you will need a [[Lockpick]], which requires level 50 in Thieving and 50 in Agility to buy it from [[Martin Thwait]].
+
+=== Levels 50–99: Stealing valuables ===
+{{Main|Stealing valuables}}
+Requires access to [[Varlamore]] through the [[Children of the Sun]] quest. 
+
+Very low intensity relative to most other methods while giving moderate experience and cash, along with some minor passive prayer experience in the form of [[Blessed bone statuette|blessed bone statuettes]]. 
+
+[[Rogue equipment]] is recommended for twice as many house keys when pickpocketing [[Wealthy citizen|wealthy citizens]].
+
+===Levels 55–99: Knights of Ardougne===
+[[Knight of Ardougne|Knights of Ardougne]] are a less click intensive but slower alternative to Blackjacking.
+For ironmen, this is one of the best ways to make starting cash for [[Managing Miscellania]].
+
+[[Rogue equipment]] and completion of the [[medium Ardougne Diary]] are highly recommended.
+
+===Level 64: Molch Stone Chests===
+At level 64, the [[Stone chest|stone chests]] in the [[Lizardman Temple]] under [[Molch]] can be lockpicked, granting 280 Thieving experience upon success, and respawn almost instantly. It is recommended that players bring a [[lockpick]] for increased success rate, and that players have level 45 [[Farming]] in order to access the [[Farming Guild]] bank, just to the north-west. Upon failing to loot a chest, there is a 1/8 chance that the player will be teleported to the surface, where they can be attacked and possibly [[Poison|poisoned]] by [[lizardmen]]. Therefore players should also bring some form of [[antipoison]]. There are no risks of being attacked while inside the temple, as the [[Lizardman shaman|lizardmen shamans]] are behind barriers. If the player is unlucky and gets teleported to the surface repeatedly, they might need to manage their [[run energy]]. Therefore [[Graceful outfit|graceful set]] and two [[Super energy|super energy(4)]] potions are recommended. Super energy is recommended as a cheaper alternative to the usual [[stamina potion]], as the run back is short and the run depletion-reduction effect of a stamina potion is likely to be wasted. Lastly, if the player has access to a [[gem bag]], that will grant them additional inventory space before needing to bank. For even faster banking at the farming guild, players can choose to use a [[skills necklace]] or [[Farming cape]] if available.
+
+Players can expect between 90,000–110,000 Thieving experience per hour using the above items at around level 78 Thieving, depending on focus and luck. Stone chests are notable for dropping the untradeable [[Xeric's talisman|Xeric's Talisman]], lots of [[Xerician fabric]], [[ruby]] and [[Sapphire|sapphires]], [[seeds]], [[bolt tips]] (including [[onyx bolt tips]]), and medium clues.
+
+=== Levels 75: Bazaar Gem Stalls ===
+Requires access to [[Varlamore]] through the [[Children of the Sun]] quest.
+
+At level 75 the two [[Gem stall|gem stalls]] located in [[Civitas illa Fortis]] can be thieved from for 408 Thieving experience each. Running to the outer edge of the stall (farthest from the urchin) will help you remain undetected from nearby guards when stealing. With the use of [[World switching|world hopping]] and [[Graceful outfit|graceful set]] it is possible to get 150,000-170,000 Thieving experience per hour when banking the gems at the nearby bank. Utilizing a [[gem bag]] and [[Super energy|super energy(4)]] or [[Stamina potion|stamina potion(4)]] can increase stealing uptime by reducing the time need running to the bank.
+
+=== Levels 81/91–99: Pyramid Plunder ===
+{{Main|Pyramid Plunder}}
+
+Requires access to [[Sophanem]]. It may be in your best interest to do enough Pyramid Plunder for 1-2 [[pharaoh's sceptre]]s. A pharaoh's sceptre can be used as transportation to the [[Tombs of Amascut]], as a requirement for [[Clue scroll (master) - Yawn in the 7th room of Pyramid Plunder|a specific master clue step]], or as a material for building an [[occult altar|occult]] or [[ancient altar]].
+
+===Levels 94–99: Master Farmers===
+[[Master Farmer|Master Farmers]] are a great method for obtaining herb seeds for [[Herblore]] and seeds for [[birdhouse]]s.
+[[Rogue equipment]] is highly recommended.
+
+The [[hard Ardougne Diary]] and 94+ Thieving are highly recommended as the player will no longer fail. 
+
+85+ [[Farming]] is also beneficial, as Farming levels up to 85 increase the drop rate of [[Ranarr seed|ranarr]], [[Snapdragon seed|snapdragon]], and [[Torstol seed|torstol]] seeds from Master Farmers.
+
+===Post-99: TzHaar-Hur===
+Pickpocketing gems from the [[TzHaar-Hur]] in [[Mor Ul Rek]] is one of the best methods should one plan to train Thieving past level 99. Doing so yields up to 250,000 experience an hour, whilst also banking up to 60,000 banked Crafting experience an hour. Completion of the [[hard Ardougne Diary]] and wearing the [[Thieving cape]] are required for this method.
+
+== Other noteworthy grinds==
+
+===Level 82: Vyre Thieving===
+Starting at 82 and with [[Sins of the Father]], [[A Kingdom Divided]], and [[Ardougne Diary#Hard|hard Ardougne Diary]] completed, it is reasonable to set up thieving [[Vyre]] in [[Darkmeyer]] for a [[blood shard]] using [[dodgy necklace]]s and [[Shadow Veil]]. This consumes a lot of food or prayer if using [[Redemption]] to restore health, and yields 140k experience an hour at 82 and rising to about 190k experience per hour before 99. On average you will earn about 1.5 million thieving experience for each blood shard drop. If wearing full rogue equipment, the drop will be doubled.
+
+{{Training guides}}
+[[Category:Ironman Mode]]
+[[Category:Thieving]]
+[[Category:Members]]

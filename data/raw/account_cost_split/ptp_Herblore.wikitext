@@ -1,0 +1,1547 @@
+{{External|rs|rsc=Herblaw training}}
+[[Herblore]] training usually involves making [[potions]] which can only begin after completing the [[Druidic Ritual]] quest granting the player level 3 Herblore. To make a potion, the player will have to gather the required ingredients, usually a [[herb]] of some sort along with a secondary ingredient, and use them on a vial of [[vial of water|water]], [[vial of blood|blood]], or [[coconut milk]].
+
+The fastest way to train Herblore is to add secondary ingredients to unfinished potions. If the player banks fairly quickly after each inventory of potions, they can expect to make around 2,500 potions per hour.
+
+A profitable, although slow method to train Herblore is to clean grimy herbs.
+
+==Quest experience rewards==
+{|class="wikitable sortable lighttable qc-active" style="text-align:center;"
+!Quest
+!Experience<br/>reward
+!Herblore req.
+!Other requirements
+|-
+|[[Druidic Ritual]]||250|| - || -
+|-
+|[[Jungle Potion]]||775||{{SCP|Herblore|3}}|| -
+|-
+|[[Recruitment Drive]]||1,000|| - || {{SCP|Quest|12}}
+|-
+|[[Heroes' Quest]]||1,325||{{SCP|Herblore|25}}|| {{SCP|Quest|55}}, {{SCP|Cooking|53}}, {{SCP|Fishing|53}}, {{SCP|Mining|50}}
+|-
+|[[The Dig Site]]||2,000||{{SCP|Herblore|10}}|| {{SCP|Agility|10}}, {{SCP|Thieving|25}}
+|-
+|[[Shades of Mort'ton]]||2,000||{{SCP|Herblore|15}}|| {{SCP|Crafting|20}}, {{SCP|Firemaking|5}}
+|-
+|[[Zogre Flesh Eaters]]||2,000||{{SCP|Herblore|8}}|| {{SCP|Smithing|4}}, {{SCP|Ranged|30}}, {{SCP|Fletching|30}}
+|-
+|[[Fairytale II - Cure a Queen]]||3,500||{{SCP|Herblore|57}}|| {{SCP|Thieving|40}}, {{SCP|Farming|49}}
+|-
+|[[Land of the Goblins]]||8,000||{{SCP|Herblore|48}}|| {{SCP|Agility|38}}, {{SCP|Thieving|45}}, {{SCP|Fishing|40}}
+|-
+|[[My Arm's Big Adventure]]||10,000||{{SCP|Herblore|31}}|| {{SCP|Woodcutting|10}}, {{SCP|Farming|29}}
+|-
+|[[Eadgar's Ruse]]||11,000||{{SCP|Herblore|31}}|| -
+|-
+|[[Grim Tales]]||15,000||{{SCP|Herblore|52}}|| {{SCP|Farming|45}}, {{SCP|Thieving|58}}, {{SCP|Agility|59}}, {{SCP|Woodcutting|71}}
+|-
+|[[Song of the Elves]]
+|40,000
+|{{SCP|Herblore|70}}
+|{{SCP|Agility|70}}, {{SCP|Construction|70}}, {{SCP|Farming|70}}, {{SCP|Hunter|70}}, {{SCP|Mining|70}}, {{SCP|Smithing|70}}, {{SCP|Woodcutting|70}}
+|-
+|[[While Guthix Sleeps]]
+|75,000
+|{{SCP|Herblore|65}}
+|{{SCP|Quest|180}}, {{SCP|Thieving|72}}, {{SCP|Magic|67}}, {{SCP|Agility|66}}, {{SCP|Farming|65}}, {{SCP|Defence|40}}, {{SCP|Hunter|62}}
+|-
+!Total
+!171,850
+! colspan="2" |
+|}
+
+==Starting off==
+Completing [[Jungle Potion]], [[Recruitment Drive]] and [[The Dig Site]] quests will get the player from level 3 to 19.
+
+Here are some quests that grant Herblore experience which have little or no additional requirements:
+{|class="wikitable sortable lighttable qc-active" style="text-align:center;"
+!Quest
+!Experience<br/>reward
+!Herblore req.
+!Other requirements
+|-
+|[[Druidic Ritual]]||250|| - || -
+|-
+|[[Jungle Potion]]||775||{{SCP|Herblore|3}}|| -
+|-
+|[[Recruitment Drive]]||1,000|| - || {{SCP|Quest|12}}
+|-
+|[[The Dig Site]]||2,000||{{SCP|Herblore|10}}|| {{SCP|Agility|10}}, {{SCP|Thieving|25}}
+|-
+|[[Shades of Mort'ton]]||2,000||{{SCP|Herblore|15}}|| {{SCP|Crafting|20}}, {{SCP|Firemaking|5}}
+|-
+|[[Zogre Flesh Eaters]]||2,000||{{SCP|Herblore|8}}|| {{SCP|Smithing|4}}, {{SCP|Ranged|30}}
+|-
+!Total
+!8,025
+!colspan="2"|
+|}
+
+==Making potions==
+{{StaticCalculator}}
+For more in depth calculations and variations about the cost per experience, see [[Calculator:Herblore/Potions]]. 
+
+The most efficient way to gain Herblore experience is to make potions by combining base and secondary ingredients. The fastest Herblore experience is gained by simply making potions that offer the highest experience per hour; however, some slower options can be notably cheaper or even profitable, and should be considered if the player prefers to save money. Some options may also require a lot more capital than others.
+
+An [[alchemist's amulet]] or [[amulet of chemistry]] can be used while training Herblore to save significant amounts of money or even make profit in some cases. One charge costs {{Coins|{{GEP|Amulet of chemistry|1/10}}}} or {{Coins|{{GEP|Amulet of chemistry|1/5}}}}, respectively. This results in cost savings when a single dose is worth more than one charge. However, the amulet of chemistry requires more effort to use as it needs to be replaced when crumbled.
+
+[[Prescription goggles]] are also very useful, as they provide a 10% chance to not consume secondary ingredients for most (but not all) potions. This can be especially important if making potions with expensive secondary ingredients, such as [[Aldarium]].
+
+The table below assumes that the resulting potions are decanted, if possible, into 4 doses before being sold, and takes the GE tax into account. It assumes 2,500 standard 14x14 potions made per hour, 2,750 for 27x1 (such as stamina potions), 2,330 for serum 207s, 2,166 for super combat potions, and 1,833 for forgotten brews and extended anti-venom+. For variable dose potions, ingredient costs assume decanting from the 4 dose precursor potion. Note that knowledge of [[Merchanting|GE-pricing]] can have a major effect on profits.
+
+[[Tick manipulation]] can be utilised for certain potions to effectively double their experience rates at the cost of high intensity, allowing players to average 4,583 potions made per hour. This is done by repeatedly using a stackable secondary ingredient on the respective unfinished base potion while holding down the spacebar with the "All" option selected in the interface. The potions this method can be applied to are [[stamina potion]]s, [[extended antifire]]s, [[anti-venom]]s, and [[extended super antifire potion]]s. Despite not having a stackable secondary, [[Serum 207]]s can also be made through tick manipulation as the first one made is uniquely a 0 tick action. This allows for repeatedly using each [[ashes|ash]] on the unfinished base to average using 1 tick per serum made, however as ashes are not stackable this is limited to making 14 potions per inventory rather than 27. <!--Need confirmation if forgotten brews can be tick manipulated since ancient essence is also stackable.-->
+
+{| class="wikitable sortable align-center-1 align-center-2 align-center-4 align-center-6 sticky-header"
+!{{SCP|Herblore}} Level
+! colspan=2 |Potion
+! colspan=2 |Base
+! colspan="2" |Secondary
+!XP
+!XP/Hour
+!Ingredient cost
+!Profit/Potion{{Refn|name=decant2|Profit assumes potions made from unfinished potions are decanted into 4 doses.}}
+!Profit/XP{{NamedRef|decant2}}
+!Profit/XP with<br/>[[Amulet of chemistry]]{{NamedRef|decant2}}
+!Profit/XP with<br/>[[Alchemist's amulet]]{{NamedRef|decant2}}
+!Profit/XP with<br/>[[Prescription goggles]]{{NamedRef|decant2}}
+!Profit/XP with<br/>[[Alchemist's amulet]] and <br/>[[Prescription goggles]]{{NamedRef|decant2}}
+!Profit/Potion (farming all herbs){{NamedRef|decant2}}
+|-
+|3
+|{{plinkt|Attack potion|pic=Attack potion(3)}}
+|{{plinkt|Guam potion (unf)}}
+|{{plinkt|Eye of newt}}
+|25
+|62,500
+|{{Coins|{{GEP|Guam potion (unf)}} + {{GEP|Eye of newt}}}}
+|{{Coins|{{GEPT|Attack potion(4)|0.75}} - {{GEP|Guam potion (unf)}} - {{GEP|Eye of newt}}}}
+|{{Coins|({{GEPT|Attack potion(4)|0.75}} - {{GEP|Guam potion (unf)}} - {{GEP|Eye of newt}})/25}}
+|{{Coins|({{GEPT|Attack potion(4)|0.75}}*61/60 - {{GEP|Guam potion (unf)}} - {{GEP|Eye of newt}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/25}}
+|{{Coins|({{GEPT|Attack potion(4)|0.75}}*21/20 - {{GEP|Guam potion (unf)}} - {{GEP|Eye of newt}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/25}}
+|{{Coins|({{GEPT|Attack potion(4)|0.75}}- {{GEP|Guam potion (unf)}} - 0.9*{{GEP|Eye of newt}})/25}}
+|{{Coins|({{GEPT|Attack potion(4)|0.75}}*21/20 - {{GEP|Guam potion (unf)}} - 0.9*{{GEP|Eye of newt}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/25}}
+|{{Coins|{{GEPT|Attack potion(4)|0.75}} - {{GEP|Vial of water}} - {{GEP|Eye of newt}}}}
+|-
+|5
+|{{plinkt|Antipoison|pic=Antipoison(3)}}
+|{{plinkt|Marrentill potion (unf)}}
+|{{plinkt|Unicorn horn dust}}
+|37.5
+|93,750
+|{{Coins|{{GEP|Marrentill potion (unf)}} + {{GEP|Unicorn horn dust}}}}
+|{{Coins|{{GEPT|Antipoison(4)|0.75}} - {{GEP|Marrentill potion (unf)}} - {{GEP|Unicorn horn dust}}}}
+|{{Coins|({{GEPT|Antipoison(4)|0.75}} - {{GEP|Marrentill potion (unf)}} - {{GEP|Unicorn horn dust}})/37.5}}
+|{{Coins|({{GEPT|Antipoison(4)|0.75}}*61/60 - {{GEP|Marrentill potion (unf)}} - {{GEP|Unicorn horn dust}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/37.5}}
+|{{Coins|({{GEPT|Antipoison(4)|0.75}}*21/20 - {{GEP|Marrentill potion (unf)}} - {{GEP|Unicorn horn dust}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/37.5}}
+|{{Coins|({{GEPT|Antipoison(4)|0.75}} - {{GEP|Marrentill potion (unf)}} - 0.9*{{GEP|Unicorn horn dust}})/37.5}}
+|{{Coins|({{GEPT|Antipoison(4)|0.75}}*21/20 - {{GEP|Marrentill potion (unf)}} - 0.9*{{GEP|Unicorn horn dust}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/37.5}}
+|{{Coins|{{GEPT|Antipoison(4)|0.75}} - {{GEP|Vial of water}} - {{GEP|Unicorn horn dust}}}}
+|-
+|12
+|{{plinkt|Strength potion|pic=Strength potion(3)}}
+|{{plinkt|Tarromin potion (unf)}}
+|{{plinkt|Limpwurt root}}
+|50
+|125,000
+|{{Coins|{{GEP|Tarromin potion (unf)}} + {{GEP|Limpwurt root}}}}
+|{{Coins|{{GEPT|Strength potion(4)|0.75}} - {{GEP|Tarromin potion (unf)}} - {{GEP|Limpwurt root}}}}
+|{{Coins|({{GEPT|Strength potion(4)|0.75}} - {{GEP|Tarromin potion (unf)}} - {{GEP|Limpwurt root}})/50}}
+|{{Coins|({{GEPT|Strength potion(4)|0.75}}*61/60 - {{GEP|Tarromin potion (unf)}} - {{GEP|Limpwurt root}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/50}}
+|{{Coins|({{GEPT|Strength potion(4)|0.75}}*21/20 - {{GEP|Tarromin potion (unf)}} - {{GEP|Limpwurt root}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/50}}
+|{{Coins|({{GEPT|Strength potion(4)|0.75}} - {{GEP|Tarromin potion (unf)}} - 0.9*{{GEP|Limpwurt root}})/50}}
+|{{Coins|({{GEPT|Strength potion(4)|0.75}}*21/20 - {{GEP|Tarromin potion (unf)}} - 0.9*{{GEP|Limpwurt root}}- 0.15*{{GEP|Amulet of chemistry|0.10}})/50}}
+|{{Coins|{{GEPT|Strength potion(4)|0.75}} - {{GEP|Vial of water}} - {{GEP|Limpwurt root}}}}
+|-
+|15
+|{{plinkt|Serum 207|pic=Serum 207 (3)}}
+|{{plinkt|Tarromin potion (unf)}}
+|{{plinkt|Ashes}}
+|50
+|116,500
+|{{Coins|{{GEP|Tarromin potion (unf)}} + {{GEP|Ashes}}}}
+|{{Coins|{{GEPT|Serum 207 (4)|0.75}} - {{GEP|Tarromin potion (unf)}} - {{GEP|Ashes}}}}
+|{{Coins|({{GEPT|Serum 207 (4)|0.75}} - {{GEP|Tarromin potion (unf)}} - {{GEP|Ashes}})/50}}
+|{{Coins|({{GEPT|Serum 207 (4)|0.75}}*61/60 - {{GEP|Tarromin potion (unf)}} - {{GEP|Ashes}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/50}}
+|{{Coins|({{GEPT|Serum 207 (4)|0.75}}*21/20 - {{GEP|Tarromin potion (unf)}} - {{GEP|Ashes}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/50}}
+|{{NA}}
+|{{NA}}
+|{{Coins|{{GEPT|Serum 207 (4)|0.75}} - {{GEP|Vial of water}} - {{GEP|Ashes}}}}
+|-
+|22
+|{{plinkt|Compost potion|pic=Compost potion(3)}}
+|{{plinkt|Harralander potion (unf)}}
+|{{plinkt|Volcanic ash}}
+|60
+|150,000
+|{{Coins|{{GEP|Harralander potion (unf)}} + {{GEP|Volcanic ash}}}}
+|{{Coins|{{GEPT|Compost potion(4)|0.75}} - {{GEP|Harralander potion (unf)}} - {{GEP|Volcanic ash}}}}
+|{{Coins|({{GEPT|Compost potion(4)|0.75}} - {{GEP|Harralander potion (unf)}} - {{GEP|Volcanic ash}})/60}}
+|{{Coins|({{GEPT|Compost potion(4)|0.75}}*61/60 - {{GEP|Harralander potion (unf)}} - {{GEP|Volcanic ash}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/60}}
+|{{Coins|({{GEPT|Compost potion(4)|0.75}}*21/20 - {{GEP|Harralander potion (unf)}} - {{GEP|Volcanic ash}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/60}}
+|{{Coins|({{GEPT|Compost potion(4)|0.75}} - {{GEP|Harralander potion (unf)}} - 0.9*{{GEP|Volcanic ash}})/60}}
+|{{Coins|({{GEPT|Compost potion(4)|0.75}}*21/20 - {{GEP|Harralander potion (unf)}} - 0.9*{{GEP|Volcanic ash}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/60}}
+|{{Coins|{{GEPT|Compost potion(4)|0.75}} - {{GEP|Vial of water}} - {{GEP|Volcanic ash}}}}
+|-
+|22
+|{{plinkt|Restore potion|pic=Restore potion(3)}}
+|{{plinkt|Harralander potion (unf)}}
+|{{plinkt|Red spiders' eggs}}
+|62.5
+|156,250
+|{{Coins|{{GEP|Harralander potion (unf)}} + {{GEP|Red spiders' eggs}}}}
+|{{Coins|{{GEPT|Restore potion(4)|0.75}} - {{GEP|Harralander potion (unf)}} - {{GEP|Red spiders' eggs}}}}
+|{{Coins|({{GEPT|Restore potion(4)|0.75}} - {{GEP|Harralander potion (unf)}} - {{GEP|Red spiders' eggs}})/62.5}}
+|{{Coins|({{GEPT|Restore potion(4)|0.75}}*61/60 - {{GEP|Harralander potion (unf)}} - {{GEP|Red spiders' eggs}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/62.5}}
+|{{Coins|({{GEPT|Restore potion(4)|0.75}}*21/20 - {{GEP|Harralander potion (unf)}} - {{GEP|Red spiders' eggs}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/62.5}}
+|{{Coins|({{GEPT|Restore potion(4)|0.75}} - {{GEP|Harralander potion (unf)}} - 0.9*{{GEP|Red spiders' eggs}})/62.5}}
+|{{Coins|({{GEPT|Restore potion(4)|0.75}}*21/20 - {{GEP|Harralander potion (unf)}} - 0.9*{{GEP|Red spiders' eggs}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/62.5}}
+|{{Coins|{{GEPT|Restore potion(4)|0.75}} - {{GEP|Vial of water}} - {{GEP|Red spiders' eggs}}}}
+|-
+|26
+|{{plinkt|Energy potion|pic=Energy potion(3)}}
+|{{plinkt|Harralander potion (unf)}}
+|{{plinkt|Chocolate dust}}
+|67.5
+|168,750
+|{{Coins|{{GEP|Harralander potion (unf)}} + {{GEP|Chocolate dust}}}}
+|{{Coins|{{GEPT|Energy potion(4)|0.75}} - {{GEP|Harralander potion (unf)}} - {{GEP|Chocolate dust}}}}
+|{{Coins|({{GEPT|Energy potion(4)|0.75}} - {{GEP|Harralander potion (unf)}} - {{GEP|Chocolate dust}})/67.5}}
+|{{Coins|({{GEPT|Energy potion(4)|0.75}}*61/60 - {{GEP|Harralander potion (unf)}} - {{GEP|Chocolate dust}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/67.5}}
+|{{Coins|({{GEPT|Energy potion(4)|0.75}}*21/20 - {{GEP|Harralander potion (unf)}} - {{GEP|Chocolate dust}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/67.5}}
+|{{Coins|({{GEPT|Energy potion(4)|0.75}} - {{GEP|Harralander potion (unf)}} - 0.9*{{GEP|Chocolate dust}})/67.5}}
+|{{Coins|({{GEPT|Energy potion(4)|0.75}}*21/20 - {{GEP|Harralander potion (unf)}} - 0.9*{{GEP|Chocolate dust}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/67.5}}
+|{{Coins|{{GEPT|Energy potion(4)|0.75}} - {{GEP|Vial of water}} - {{GEP|Chocolate dust}}}}
+|-
+|34
+|{{plinkt|Agility potion|pic=Agility potion(3)}}
+|{{plinkt|Toadflax potion (unf)}}
+|{{plinkt|Toad's legs}}
+|80
+|200,000
+|{{Coins|{{GEP|Toadflax potion (unf)}} + {{GEP|Toad's legs}}}}
+|{{Coins|{{GEPT|Agility potion(4)|0.75}} - {{GEP|Toadflax potion (unf)}} - {{GEP|Toad's legs}}}}
+|{{Coins|({{GEPT|Agility potion(4)|0.75}} - {{GEP|Toadflax potion (unf)}} - {{GEP|Toad's legs}})/80}}
+|{{Coins|({{GEPT|Agility potion(4)|0.75}}*61/60 - {{GEP|Toadflax potion (unf)}} - {{GEP|Toad's legs}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/80}}
+|{{Coins|({{GEPT|Agility potion(4)|0.75}}*21/20 - {{GEP|Toadflax potion (unf)}} - {{GEP|Toad's legs}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/80}}
+|{{Coins|({{GEPT|Agility potion(4)|0.75}} - {{GEP|Toadflax potion (unf)}} - 0.9*{{GEP|Toad's legs}})/80}}
+|{{Coins|({{GEPT|Agility potion(4)|0.75}}*21/20 - {{GEP|Toadflax potion (unf)}} - 0.9*{{GEP|Toad's legs}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/80}}
+|{{Coins|{{GEPT|Agility potion(4)|0.75}} - {{GEP|Vial of water}} - {{GEP|Toad's legs}}}}
+|-
+|36
+|{{plinkt|Combat potion|pic=Combat potion(3)}}
+|{{plinkt|Harralander potion (unf)}}
+|{{plinkt|Goat horn dust}}
+|84
+|210,000
+|{{Coins|{{GEP|Harralander potion (unf)}} + {{GEP|Goat horn dust}}}}
+|{{Coins|{{GEPT|Combat potion(4)|0.75}} - {{GEP|Harralander potion (unf)}} - {{GEP|Goat horn dust}}}}
+|{{Coins|({{GEPT|Combat potion(4)|0.75}} - {{GEP|Harralander potion (unf)}} - {{GEP|Goat horn dust}})/84}}
+|{{Coins|({{GEPT|Combat potion(4)|0.75}}*61/60 - {{GEP|Harralander potion (unf)}} - {{GEP|Goat horn dust}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/84}}
+|{{Coins|({{GEPT|Combat potion(4)|0.75}}*21/20 - {{GEP|Harralander potion (unf)}} - {{GEP|Goat horn dust}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/84}}
+|{{Coins|({{GEPT|Combat potion(4)|0.75}} - {{GEP|Harralander potion (unf)}} - 0.9*{{GEP|Goat horn dust}})/84}}
+|{{Coins|({{GEPT|Combat potion(4)|0.75}}*21/20 - {{GEP|Harralander potion (unf)}} - 0.9*{{GEP|Goat horn dust}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/84}}
+|{{Coins|{{GEPT|Combat potion(4)|0.75}} - {{GEP|Vial of water}} - {{GEP|Goat horn dust}}}}
+|-
+|38
+|{{plinkt|Prayer potion|pic=Prayer potion(3)}}
+|{{plinkt|Ranarr potion (unf)}}
+|{{plinkt|Snape grass}}
+|87.5
+|218,750
+|{{Coins|{{GEP|Ranarr potion (unf)}} + {{GEP|Snape grass}}}}
+|{{Coins|{{GEPT|Prayer potion(4)|0.75}} - {{GEP|Ranarr potion (unf)}} - {{GEP|Snape grass}}}}
+|{{Coins|({{GEPT|Prayer potion(4)|0.75}} - {{GEP|Ranarr potion (unf)}} - {{GEP|Snape grass}})/87.5}}
+|{{Coins|({{GEPT|Prayer potion(4)|0.75}}*61/60 - {{GEP|Ranarr potion (unf)}} - {{GEP|Snape grass}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/87.5}}
+|{{Coins|({{GEPT|Prayer potion(4)|0.75}}*21/20 - {{GEP|Ranarr potion (unf)}} - {{GEP|Snape grass}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/87.5}}
+|{{Coins|({{GEPT|Prayer potion(4)|0.75}} - {{GEP|Ranarr potion (unf)}} - 0.9*{{GEP|Snape grass}})/87.5}}
+|{{Coins|({{GEPT|Prayer potion(4)|0.75}}*21/20 - {{GEP|Ranarr potion (unf)}} - 0.9*{{GEP|Snape grass}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/87.5}}
+|{{Coins|{{GEPT|Prayer potion(4)|0.75}} - {{GEP|Vial of water}} - {{GEP|Snape grass}}}}
+|-
+|45
+|{{plinkt|Super attack|pic=Super attack(3)}}
+|{{plinkt|Irit potion (unf)}}
+|{{plinkt|Eye of newt}}
+|100
+|250,000
+|{{Coins|{{GEP|Irit potion (unf)}} + {{GEP|Eye of newt}}}}
+|{{Coins|{{GEPT|Super attack(4)|0.75}} - {{GEP|Irit potion (unf)}} - {{GEP|Eye of newt}}}}
+|{{Coins|({{GEPT|Super attack(4)|0.75}} - {{GEP|Irit potion (unf)}} - {{GEP|Eye of newt}})/100}}
+|{{Coins|({{GEPT|Super attack(4)|0.75}}*61/60 - {{GEP|Irit potion (unf)}} - {{GEP|Eye of newt}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/100}}
+|{{Coins|({{GEPT|Super attack(4)|0.75}}*21/20 - {{GEP|Irit potion (unf)}} - {{GEP|Eye of newt}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/100}}
+|{{Coins|({{GEPT|Super attack(4)|0.75}} - {{GEP|Irit potion (unf)}} - 0.9*{{GEP|Eye of newt}})/100}}
+|{{Coins|({{GEPT|Super attack(4)|0.75}}*21/20 - {{GEP|Irit potion (unf)}} - 0.9{{GEP|Eye of newt}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/100}}
+|{{Coins|{{GEPT|Super attack(4)|0.75}} - {{GEP|Vial of water}} - {{GEP|Eye of newt}}}}
+|-
+|48
+|{{plinkt|Superantipoison|pic=Superantipoison(3)}}
+|{{plinkt|Irit potion (unf)}}
+|{{plinkt|Unicorn horn dust}}
+|106.3
+|265,750
+|{{Coins|{{GEP|Irit potion (unf)}} + {{GEP|Unicorn horn dust}}}}
+|{{Coins|{{GEPT|Superantipoison(4)|0.75}} - {{GEP|Irit potion (unf)}} - {{GEP|Unicorn horn dust}}}}
+|{{Coins|({{GEPT|Superantipoison(4)|0.75}} - {{GEP|Irit potion (unf)}} - {{GEP|Unicorn horn dust}})/106.3}}
+|{{Coins|({{GEPT|Superantipoison(4)|0.75}}*61/60 - {{GEP|Irit potion (unf)}} - {{GEP|Unicorn horn dust}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/106.3}}
+|{{Coins|({{GEPT|Superantipoison(4)|0.75}}*21/20 - {{GEP|Irit potion (unf)}} - {{GEP|Unicorn horn dust}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/106.3}}
+|{{Coins|({{GEPT|Superantipoison(4)|0.75}} - {{GEP|Irit potion (unf)}} - 0.9*{{GEP|Unicorn horn dust}})/106.3}}
+|{{Coins|({{GEPT|Superantipoison(4)|0.75}}*21/20 - {{GEP|Irit potion (unf)}} - 0.9*{{GEP|Unicorn horn dust}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/106.3}}
+|{{Coins|{{GEPT|Superantipoison(4)|0.75}} - {{GEP|Vial of water}} - {{GEP|Unicorn horn dust}}}}
+|-
+|50
+|{{plinkt|Fishing potion|pic=Fishing potion(3)}}
+|{{plinkt|Avantoe potion (unf)}}
+|{{plinkt|Snape grass}}
+|112.5
+|281,250
+|{{Coins|{{GEP|Avantoe potion (unf)}} + {{GEP|Snape grass}}}}
+|{{Coins|{{GEPT|Fishing potion(4)|0.75}} - {{GEP|Avantoe potion (unf)}} - {{GEP|Snape grass}}}}
+|{{Coins|({{GEPT|Fishing potion(4)|0.75}} - {{GEP|Avantoe potion (unf)}} - {{GEP|Snape grass}})/112.5}}
+|{{Coins|({{GEPT|Fishing potion(4)|0.75}}*61/60 - {{GEP|Avantoe potion (unf)}} - {{GEP|Snape grass}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/112.5}}
+|{{Coins|({{GEPT|Fishing potion(4)|0.75}}*21/20 - {{GEP|Avantoe potion (unf)}} - {{GEP|Snape grass}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/112.5}}
+|{{Coins|({{GEPT|Fishing potion(4)|0.75}} - {{GEP|Avantoe potion (unf)}} - 0.9*{{GEP|Snape grass}})/112.5}}
+|{{Coins|({{GEPT|Fishing potion(4)|0.75}}*21/20 - {{GEP|Avantoe potion (unf)}} - 0.9*{{GEP|Snape grass}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/112.5}}
+|{{Coins|{{GEPT|Fishing potion(4)|0.75}} - {{GEP|Vial of water}} - {{GEP|Snape grass}}}}
+|-
+|52
+|{{plinkt|Super energy|pic=Super energy(3)}}
+|{{plinkt|Avantoe potion (unf)}}
+|{{plinkt|Mort myre fungus}}
+|117.5
+|293,750
+|{{Coins|{{GEP|Avantoe potion (unf)}} + {{GEP|Mort myre fungus}}}}
+|{{Coins|{{GEPT|Super energy(4)|0.75}} - {{GEP|Avantoe potion (unf)}} - {{GEP|Mort myre fungus}}}}
+|{{Coins|({{GEPT|Super energy(4)|0.75}} - {{GEP|Avantoe potion (unf)}} - {{GEP|Mort myre fungus}})/117.5}}
+|{{Coins|({{GEPT|Super energy(4)|0.75}}*61/60 - {{GEP|Avantoe potion (unf)}} - {{GEP|Mort myre fungus}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/117.5}}
+|{{Coins|({{GEPT|Super energy(4)|0.75}}*21/20 - {{GEP|Avantoe potion (unf)}} - {{GEP|Mort myre fungus}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/117.5}}
+|{{Coins|({{GEPT|Super energy(4)|0.75}} - {{GEP|Avantoe potion (unf)}} - 0.9*{{GEP|Mort myre fungus}})/117.5}}
+|{{Coins|({{GEPT|Super energy(4)|0.75}}*21/20 - {{GEP|Avantoe potion (unf)}} - 0.9*{{GEP|Mort myre fungus}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/117.5}}
+|{{Coins|{{GEPT|Super energy(4)|0.75}} - {{GEP|Vial of water}} - {{GEP|Mort myre fungus}}}}
+|-
+|53
+|{{plinkt|Hunter potion|pic=Hunter potion(3)}}
+|{{plinkt|Avantoe potion (unf)}}
+|{{plinkt|Kebbit teeth dust}}
+|120
+|300,000
+|{{Coins|{{GEP|Avantoe potion (unf)}} + {{GEP|Kebbit teeth dust}}}}
+|{{Coins|{{GEPT|Hunter potion(4)|0.75}} - {{GEP|Avantoe potion (unf)}} - {{GEP|Kebbit teeth dust}}}}
+|{{Coins|({{GEPT|Hunter potion(4)|0.75}} - {{GEP|Avantoe potion (unf)}} - {{GEP|Kebbit teeth dust}})/120}}
+|{{Coins|({{GEPT|Hunter potion(4)|0.75}}*61/60 - {{GEP|Avantoe potion (unf)}} - {{GEP|Kebbit teeth dust}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/120}}
+|{{Coins|({{GEPT|Hunter potion(4)|0.75}}*21/20 - {{GEP|Avantoe potion (unf)}} - {{GEP|Kebbit teeth dust}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/120}}
+|{{Coins|({{GEPT|Hunter potion(4)|0.75}}- {{GEP|Avantoe potion (unf)}} - 0.9*{{GEP|Kebbit teeth dust}})/120}}
+|{{Coins|({{GEPT|Hunter potion(4)|0.75}}*21/20 - {{GEP|Avantoe potion (unf)}} - 0.9*{{GEP|Kebbit teeth dust}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/120}}
+|{{Coins|{{GEPT|Hunter potion(4)|0.75}} - {{GEP|Vial of water}} - {{GEP|Kebbit teeth dust}}}}
+|-
+|54
+|{{plinkt|Goading potion|pic=Goading potion(3)}}
+|{{plinkt|Harralander potion (unf)}}
+|{{plinkt|Aldarium}}
+|132
+|330,000
+|{{Coins|{{GEP|Harralander potion (unf)}} + {{GEP|Aldarium}}}}
+|{{Coins|{{GEPT|Goading potion(4)|0.75}} - {{GEP|Harralander potion (unf)}} - {{GEP|Aldarium}}}}
+|{{Coins|({{GEPT|Goading potion(4)|0.75}} - {{GEP|Harralander potion (unf)}} - {{GEP|Aldarium}})/132}}
+|{{Coins|({{GEPT|Goading potion(4)|0.75}}*61/60 - {{GEP|Harralander potion (unf)}} - {{GEP|Aldarium}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/132}}
+|{{Coins|({{GEPT|Goading potion(4)|0.75}}*21/20 - {{GEP|Harralander potion (unf)}} - {{GEP|Aldarium}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/132}}
+|{{Coins|({{GEPT|Goading potion(4)|0.75}} - {{GEP|Harralander potion (unf)}} - 0.9*{{GEP|Aldarium}})/132}}
+|{{Coins|({{GEPT|Goading potion(4)|0.75}}*21/20 - {{GEP|Harralander potion (unf)}} - 0.9*{{GEP|Aldarium}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/132}}
+|{{Coins|{{GEPT|Goading potion(4)|0.75}} - {{GEP|Vial of water}} - {{GEP|Aldarium}}}}
+|-
+|55
+|{{plinkt|Super strength|pic=Super strength(3)}}
+|{{plinkt|Kwuarm potion (unf)}}
+|{{plinkt|Limpwurt root}}
+|125
+|312,500
+|{{Coins|{{GEP|Kwuarm potion (unf)}} + {{GEP|Limpwurt root}}}}
+|{{Coins|{{GEPT|Super strength(4)|0.75}} - {{GEP|Kwuarm potion (unf)}} - {{GEP|Limpwurt root}}}}
+|{{Coins|({{GEPT|Super strength(4)|0.75}} - {{GEP|Kwuarm potion (unf)}} - {{GEP|Limpwurt root}})/125}}
+|{{Coins|({{GEPT|Super strength(4)|0.75}}*61/60 - {{GEP|Kwuarm potion (unf)}} - {{GEP|Limpwurt root}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/125}}
+|{{Coins|({{GEPT|Super strength(4)|0.75}}*21/20 - {{GEP|Kwuarm potion (unf)}} - {{GEP|Limpwurt root}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/125}}
+|{{Coins|({{GEPT|Super strength(4)|0.75}} - {{GEP|Kwuarm potion (unf)}} - 0.9*{{GEP|Limpwurt root}})/125}}
+|{{Coins|({{GEPT|Super strength(4)|0.75}}*21/20 - {{GEP|Kwuarm potion (unf)}} - 0.9*{{GEP|Limpwurt root}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/125}}
+|{{Coins|{{GEPT|Super strength(4)|0.75}} - {{GEP|Vial of water}} - {{GEP|Limpwurt root}}}}
+|-
+|56
+|{{plinkt|Haemostatic poultice|pic=Haemostatic poultice}}
+|{{plinkt|Elkhorn potion (unf)}}
+|{{plinkt|Squid paste}}
+|27
+|67,500
+|{{Coins|{{GEP|Elkhorn potion (unf)}} + {{GEP|Squid paste}}}}
+|{{Coins|{{GEPT|Haemostatic poultice}} - {{GEP|Elkhorn potion (unf)}} - {{GEP|Squid paste}}}}
+|{{Coins|({{GEPT|Haemostatic poultice}} - {{GEP|Elkhorn potion (unf)}} - {{GEP|Squid paste}})/27}}
+|{{NA}}
+|{{NA}}
+|{{Coins|({{GEPT|Haemostatic poultice}} - {{GEP|Elkhorn potion (unf)}} - 0.9*{{GEP|Squid paste}})/27}}
+|{{NA}}
+|{{Coins|{{GEPT|Haemostatic poultice}} - {{GEP|Vial of water}} - {{GEP|Squid paste}}}}
+|-
+|56
+|{{plinkt|Haemostatic dressing|pic=Haemostatic dressing (3)}}
+|{{plinkt|Haemostatic poultice}}
+|{{plinkt|Cotton yarn}}
+|100
+|250,000
+|{{Coins|{{GEP|Haemostatic poultice}} + {{GEP|Cotton yarn}}}}
+|{{Coins|{{GEPT|Haemostatic dressing (4)|0.75}} - {{GEP|Haemostatic poultice}} - {{GEP|Cotton yarn}}}}
+|{{Coins|({{GEPT|Haemostatic dressing (4)|0.75}} - {{GEP|Haemostatic poultice}} - {{GEP|Cotton yarn}})/100}}
+|{{Coins|({{GEPT|Haemostatic dressing (4)|0.75}}*61/60 - {{GEP|Haemostatic poultice}} - {{GEP|Cotton yarn}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/100}}
+|{{Coins|({{GEPT|Haemostatic dressing (4)|0.75}}*21/20 - {{GEP|Haemostatic poultice}} - {{GEP|Cotton yarn}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/100}}
+|{{Coins|({{GEPT|Haemostatic dressing (4)|0.75}} - {{GEP|Haemostatic poultice}} - 0.9*{{GEP|Cotton yarn}})/100}}
+|{{Coins|({{GEPT|Haemostatic dressing (4)|0.75}}*21/20 - {{GEP|Haemostatic poultice}} - 0.9*{{GEP|Cotton yarn}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/100}}
+|{{Coins|{{GEPT|Haemostatic dressing (4)|0.75}} - {{GEP|Haemostatic poultice}} - {{GEP|Cotton yarn}}}} {{Refn|Base potion used for calculation, not factoring in herb usage.|name=noherb}}
+|-
+|58
+|{{plinkt|Prayer regeneration potion|pic=Prayer regeneration potion(3)}}
+|{{plinkt|Huasca potion (unf)}}
+|{{plinkt|Aldarium}}
+|132
+|330,000
+|{{Coins|{{GEP|Huasca potion (unf)}} + {{GEP|Aldarium}}}}
+|{{Coins|{{GEPT|Prayer regeneration potion(4)|0.75}} - {{GEP|Huasca potion (unf)}} - {{GEP|Aldarium}}}}
+|{{Coins|({{GEPT|Prayer regeneration potion(4)|0.75}} - {{GEP|Huasca potion (unf)}} - {{GEP|Aldarium}})/132}}
+|{{Coins|({{GEPT|Prayer regeneration potion(4)|0.75}}*61/60 - {{GEP|Huasca potion (unf)}} - {{GEP|Aldarium}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/132}}
+|{{Coins|({{GEPT|Prayer regeneration potion(4)|0.75}}*21/20 - {{GEP|Huasca potion (unf)}} - {{GEP|Aldarium}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/132}}
+|{{Coins|({{GEPT|Prayer regeneration potion(4)|0.75}} - {{GEP|Huasca potion (unf)}} - 0.9*{{GEP|Aldarium}})/132}}
+|{{Coins|({{GEPT|Prayer regeneration potion(4)|0.75}}*21/20 - {{GEP|Huasca potion (unf)}} - 0.9*{{GEP|Aldarium}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/132}}
+|{{Coins|{{GEPT|Prayer regeneration potion(4)|0.75}} - {{GEP|Vial of water}} - {{GEP|Aldarium}}}}
+|-
+|62
+|{{plinkt|Super fishing potion|pic=Super fishing potion(3)}}
+|{{plinkt|Pillar potion (unf)}}
+|{{plinkt|Haddock eye}}
+|132
+|330,000
+|{{Coins|{{GEP|Pillar potion (unf)}} + {{GEP|Haddock eye}}}}
+|{{Coins|{{GEPT|Super fishing potion(4)|0.75}} - {{GEP|Pillar potion (unf)}} - {{GEP|Haddock eye}}}}
+|{{Coins|({{GEPT|Super fishing potion(4)|0.75}} - {{GEP|Pillar potion (unf)}} - {{GEP|Haddock eye}})/132}}
+|{{Coins|({{GEPT|Super fishing potion(4)|0.75}}*61/60 - {{GEP|Pillar potion (unf)}} - {{GEP|Haddock eye}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/132}}
+|{{Coins|({{GEPT|Super fishing potion(4)|0.75}}*21/20 - {{GEP|Pillar potion (unf)}} - {{GEP|Haddock eye}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/132}}
+|{{Coins|({{GEPT|Super fishing potion(4)|0.75}} - {{GEP|Pillar potion (unf)}} - 0.9*{{GEP|Haddock eye}})/132}}
+|{{Coins|({{GEPT|Super fishing potion(4)|0.75}}*21/20 - {{GEP|Pillar potion (unf)}} - 0.9*{{GEP|Haddock eye}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/132}}
+|{{Coins|{{GEPT|Super fishing potion(4)|0.75}} - {{GEP|Vial of water}} - {{GEP|Haddock eye}}}}
+|-
+|63
+|{{plinkt|Super restore|pic=Super restore(3)}}
+|{{plinkt|Snapdragon potion (unf)}}
+|{{plinkt|Red spiders' eggs}}
+|142.5
+|356,000
+|{{Coins|{{GEP|Snapdragon potion (unf)}} + {{GEP|Red spiders' eggs}}}}
+|{{Coins|{{GEPT|Super restore(4)|0.75}} - {{GEP|Snapdragon potion (unf)}} - {{GEP|Red spiders' eggs}}}}
+|{{Coins|({{GEPT|Super restore(4)|0.75}} - {{GEP|Snapdragon potion (unf)}} - {{GEP|Red spiders' eggs}})/142.5}}
+|{{Coins|({{GEPT|Super restore(4)|0.75}}*61/60 - {{GEP|Snapdragon potion (unf)}} - {{GEP|Red spiders' eggs}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/142.5}}
+|{{Coins|({{GEPT|Super restore(4)|0.75}}*21/20 - {{GEP|Snapdragon potion (unf)}} - {{GEP|Red spiders' eggs}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/142.5}}
+|{{Coins|({{GEPT|Super restore(4)|0.75}}- {{GEP|Snapdragon potion (unf)}} - 0.9*{{GEP|Red spiders' eggs}})/142.5}}
+|{{Coins|({{GEPT|Super restore(4)|0.75}}*21/20 - {{GEP|Snapdragon potion (unf)}} - 0.9*{{GEP|Red spiders' eggs}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/142.5}}
+|{{Coins|{{GEPT|Super restore(4)|0.75}} - {{GEP|Vial of water}} - {{GEP|Red spiders' eggs}}}}
+|-
+| rowspan="4" | 66
+| rowspan="4" | [[File:Extreme energy potion(3).png|link=Extreme energy potion]] 
+| rowspan="4" | [[Extreme energy potion]]
+| {{plinkt|Super energy(4)|pic=Super energy(4)}}
+| {{plinkt|Yellow fin|pic=Yellow fin}} (x4)
+| 84
+| 210,000
+| {{Coins|{{GEP|Super energy(4)}} + {{GEP|Yellow fin|4}}}}
+| {{Coins|{{GEPT|Extreme energy potion(4)}} - {{GEP|Super energy(4)}} - {{GEP|Yellow fin|4}}}}
+| {{Coins|({{GEPT|Extreme energy potion(4)}} - {{GEP|Super energy(4)}} - {{GEP|Yellow fin|4}})/102}}
+| {{NA}}
+| {{NA}}
+| {{Coins|({{GEPT|Extreme energy potion(4)}} - {{GEP|Super energy(4)}} - 0.9*{{GEP|Yellow fin|4}})/102}}
+| {{NA}}
+| {{Coins|{{GEPT|Extreme energy potion(4)}} - {{GEP|Super energy(4)}} - {{GEP|Yellow fin|4}}}} {{NamedRef|noherb}}
+|-
+| {{plinkt|Super energy(3)|pic=Super energy(3)}}
+| {{plinkt|Yellow fin|pic=Yellow fin}} (x3)
+| 63
+| 157,500
+| {{Coins|{{GEP|Super energy(4)|0.75}} + {{GEP|Yellow fin|3}}}}
+| {{Coins|{{GEPT|Extreme energy potion(4)|0.75}} - {{GEP|Super energy(4)|0.75}} - {{GEP|Yellow fin|3}}}}
+| {{Coins|({{GEPT|Extreme energy potion(4)|0.75}} - {{GEP|Super energy(4)|0.75}} - {{GEP|Yellow fin|3}})/76.5}}
+| {{Coins|({{GEPT|Extreme energy potion(4)|0.75}}*61/60 - {{GEP|Super energy(4)|0.75}} - {{GEP|Yellow fin|3}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/76.5}}
+| {{Coins|({{GEPT|Extreme energy potion(4)|0.75}}*21/20 - {{GEP|Super energy(4)|0.75}} - {{GEP|Yellow fin|3}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/76.5}}
+| {{Coins|({{GEPT|Extreme energy potion(4)|0.75}} - {{GEP|Super energy(4)|0.75}} - 0.9*{{GEP|Yellow fin|3}})/76.5}}
+| {{Coins|({{GEPT|Extreme energy potion(4)|0.75}}*21/20 - {{GEP|Super energy(4)|0.75}} - 0.9*{{GEP|Yellow fin|3}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/76.5}}
+| {{Coins|{{GEPT|Extreme energy potion(4)|0.75}} - {{GEP|Super energy(4)|0.75}} - {{GEP|Yellow fin|3}}}} {{NamedRef|noherb}}
+|-
+| {{plinkt|Super energy(2)|pic=Super energy(2)}}
+| {{plinkt|Yellow fin|pic=Yellow fin}} (x2)
+| 42
+| 105,000
+| {{Coins|{{GEP|Super energy(4)|0.50}} + {{GEP|Yellow fin|2}}}}
+| {{Coins|{{GEPT|Extreme energy potion(4)|0.50}} - {{GEP|Super energy(4)|0.50}} - {{GEP|Yellow fin|2}}}}
+| {{Coins|({{GEPT|Extreme energy potion(4)|0.50}} - {{GEP|Super energy(4)|0.50}} - {{GEP|Yellow fin|2}})/51}}
+| {{Coins|({{GEPT|Extreme energy potion(4)|0.50}}*41/40 - {{GEP|Super energy(4)|0.50}} - {{GEP|Yellow fin|2}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/51}}
+| {{Coins|({{GEPT|Extreme energy potion(4)|0.50}}*43/40 - {{GEP|Super energy(4)|0.50}} - {{GEP|Yellow fin|2}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/51}}
+| {{Coins|({{GEPT|Extreme energy potion(4)|0.50}} - {{GEP|Super energy(4)|0.50}} - 0.9*{{GEP|Yellow fin|2}})/51}}
+| {{Coins|({{GEPT|Extreme energy potion(4)|0.50}}*43/40 - {{GEP|Super energy(4)|0.50}} - 0.9*{{GEP|Yellow fin|2}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/51}}
+| {{Coins|{{GEPT|Extreme energy potion(4)|0.50}} - {{GEP|Super energy(4)|0.50}} - {{GEP|Yellow fin|2}}}} {{NamedRef|noherb}}
+|-
+| {{plinkt|Super energy(1)}}
+| {{plinkt|Yellow fin|pic=Yellow fin}}(x1)
+| 21
+| 52,500
+| {{Coins|{{GEP|Super energy(4)|0.25}} + {{GEP|Yellow fin|1}}}}
+| {{Coins|{{GEPT|Extreme energy potion(4)|0.25}} - {{GEP|Super energy(4)|0.25}} - {{GEP|Yellow fin|1}}}}
+| {{Coins|({{GEPT|Extreme energy potion(4)|0.25}} - {{GEP|Super energy(4)|0.25}} - {{GEP|Yellow fin|1}})/25.5}}
+| {{Coins|({{GEPT|Extreme energy potion(4)|0.25}}*21/20 - {{GEP|Super energy(4)|0.25}} - {{GEP|Yellow fin|1}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/25.5}}
+| {{Coins|({{GEPT|Extreme energy potion(4)|0.25}}*23/20 - {{GEP|Super energy(4)|0.25}} - {{GEP|Yellow fin|1}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/25.5}}
+| {{Coins|({{GEPT|Extreme energy potion(4)|0.25}} - {{GEP|Super energy(4)|0.25}} - 0.9*{{GEP|Yellow fin|1}})/25.5}}
+| {{Coins|({{GEPT|Extreme energy potion(4)|0.25}}*23/20 - {{GEP|Super energy(4)|0.25}} - 0.9*{{GEP|Yellow fin|1}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/25.5}}
+| {{Coins|{{GEPT|Extreme energy potion(4)|0.25}} - {{GEP|Super energy(4)|0.25}} - {{GEP|Yellow fin|1}}}} {{NamedRef|noherb}}
+|-
+|66
+|{{plinkt|Super defence|pic=Super defence(3)}}
+|{{plinkt|Cadantine potion (unf)}}
+|{{plinkt|White berries}}
+|150
+|375,000
+|{{Coins|{{GEP|Cadantine potion (unf)}} + {{GEP|White berries}}}}
+|{{Coins|{{GEPT|Super defence(4)|0.75}} - {{GEP|Cadantine potion (unf)}} - {{GEP|White berries}}}}
+|{{Coins|({{GEPT|Super defence(4)|0.75}} - {{GEP|Cadantine potion (unf)}} - {{GEP|White berries}})/150}}
+|{{Coins|({{GEPT|Super defence(4)|0.75}}*61/60 - {{GEP|Cadantine potion (unf)}} - {{GEP|White berries}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/150}}
+|{{Coins|({{GEPT|Super defence(4)|0.75}}*21/20 - {{GEP|Cadantine potion (unf)}} - {{GEP|White berries}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/150}}
+|{{Coins|({{GEPT|Super defence(4)|0.75}}- {{GEP|Cadantine potion (unf)}} - 0.9*{{GEP|White berries}})/150}}
+|{{Coins|({{GEPT|Super defence(4)|0.75}}*21/20 - {{GEP|Cadantine potion (unf)}} - 0.9*{{GEP|White berries}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/150}}
+|{{Coins|{{GEPT|Super defence(4)|0.75}} - {{GEP|Vial of water}} - {{GEP|White berries}}}}
+|-
+|67
+|{{plinkt|Super hunter potion|pic=Super hunter potion(3)}}
+|{{plinkt|Pillar potion (unf)}}
+|{{plinkt|Crab paste}}
+|154
+|385,000
+|{{Coins|{{GEP|Pillar potion (unf)}} + {{GEP|Crab paste}}}}
+|{{Coins|{{GEPT|Super hunter potion(4)|0.75}} - {{GEP|Pillar potion (unf)}} - {{GEP|Crab paste}}}}
+|{{Coins|({{GEPT|Super hunter potion(4)|0.75}} - {{GEP|Pillar potion (unf)}} - {{GEP|Crab paste}})/132}}
+|{{Coins|({{GEPT|Super hunter potion(4)|0.75}}*61/60 - {{GEP|Pillar potion (unf)}} - {{GEP|Crab paste}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/132}}
+|{{Coins|({{GEPT|Super hunter potion(4)|0.75}}*21/20 - {{GEP|Pillar potion (unf)}} - {{GEP|Crab paste}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/132}}
+|{{Coins|({{GEPT|Super hunter potion(4)|0.75}} - {{GEP|Pillar potion (unf)}} - 0.9*{{GEP|Crab paste}})/132}}
+|{{Coins|({{GEPT|Super hunter potion(4)|0.75}}*21/20 - {{GEP|Pillar potion (unf)}} - 0.9*{{GEP|Crab paste}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/132}}
+|{{Coins|{{GEPT|Super hunter potion(4)|0.75}} - {{GEP|Vial of water}} - {{GEP|Crab paste}}}}
+|-
+|69
+|{{plinkt|Antifire potion|pic=Antifire potion(3)}}
+|{{plinkt|Lantadyme potion (unf)}}
+|{{plinkt|Dragon scale dust}}
+|157.5
+|393,750
+|{{Coins|{{GEP|Lantadyme potion (unf)}} + {{GEP|Dragon scale dust}}}}
+|{{Coins|{{GEPT|Antifire potion(4)|0.75}} - {{GEP|Lantadyme potion (unf)}} - {{GEP|Dragon scale dust}}}}
+|{{Coins|({{GEPT|Antifire potion(4)|0.75}} - {{GEP|Lantadyme potion (unf)}} - {{GEP|Dragon scale dust}})/157.5}}
+|{{Coins|({{GEPT|Antifire potion(4)|0.75}}*61/60 - {{GEP|Lantadyme potion (unf)}} - {{GEP|Dragon scale dust}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/157.5}}
+|{{Coins|({{GEPT|Antifire potion(4)|0.75}}*21/20 - {{GEP|Lantadyme potion (unf)}} - {{GEP|Dragon scale dust}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/157.5}}
+|{{Coins|({{GEPT|Antifire potion(4)|0.75}}- {{GEP|Lantadyme potion (unf)}} - 0.9*{{GEP|Dragon scale dust}})/157.5}}
+|{{Coins|({{GEPT|Antifire potion(4)|0.75}}*21/20 - {{GEP|Lantadyme potion (unf)}} - 0.9*{{GEP|Dragon scale dust}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/157.5}}
+|{{Coins|{{GEPT|Antifire potion(4)|0.75}} - {{GEP|Vial of water}} - {{GEP|Dragon scale dust}}}}
+|-
+|72
+|{{plinkt|Ranging potion|pic=Ranging potion(3)}}
+|{{plinkt|Dwarf weed potion (unf)}}
+|{{plinkt|Wine of zamorak}}
+|162.5
+|406,250
+|{{Coins|{{GEP|Dwarf weed potion (unf)}} + {{GEP|Wine of zamorak}}}}
+|{{Coins|{{GEPT|Ranging potion(4)|0.75}} - {{GEP|Dwarf weed potion (unf)}} - {{GEP|Wine of zamorak}}}}
+|{{Coins|({{GEPT|Ranging potion(4)|0.75}} - {{GEP|Dwarf weed potion (unf)}} - {{GEP|Wine of zamorak}})/162.5}}
+|{{Coins|({{GEPT|Ranging potion(4)|0.75}}*61/60 - {{GEP|Dwarf weed potion (unf)}} - {{GEP|Wine of zamorak}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/162.5}}
+|{{Coins|({{GEPT|Ranging potion(4)|0.75}}*21/20 - {{GEP|Dwarf weed potion (unf)}} - {{GEP|Wine of zamorak}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/162.5}}
+|{{Coins|({{GEPT|Ranging potion(4)|0.75}}- {{GEP|Dwarf weed potion (unf)}} - 0.9*{{GEP|Wine of zamorak}})/162.5}}
+|{{Coins|({{GEPT|Ranging potion(4)|0.75}}*21/20 - {{GEP|Dwarf weed potion (unf)}} - 0.9*{{GEP|Wine of zamorak}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/162.5}}
+|{{Coins|{{GEPT|Ranging potion(4)|0.75}} - {{GEP|Vial of water}} - {{GEP|Wine of zamorak}}}}
+|-
+|76
+|{{plinkt|Magic potion|pic=Magic potion(3)}}
+|{{plinkt|Lantadyme potion (unf)}}
+|{{plinkt|Potato cactus}}
+|172.5
+|431,250
+|{{Coins|{{GEP|Lantadyme potion (unf)}} + {{GEP|Potato cactus}}}}
+|{{Coins|{{GEPT|Magic potion(4)|0.75}} - {{GEP|Lantadyme potion (unf)}} - {{GEP|Potato cactus}}}}
+|{{Coins|({{GEPT|Magic potion(4)|0.75}} - {{GEP|Lantadyme potion (unf)}} - {{GEP|Potato cactus}})/172.5}}
+|{{Coins|({{GEPT|Magic potion(4)|0.75}}*61/60 - {{GEP|Lantadyme potion (unf)}} - {{GEP|Potato cactus}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/172.5}}
+|{{Coins|({{GEPT|Magic potion(4)|0.75}}*21/20 - {{GEP|Lantadyme potion (unf)}} - {{GEP|Potato cactus}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/172.5}}
+|{{Coins|({{GEPT|Magic potion(4)|0.75}}- {{GEP|Lantadyme potion (unf)}} - 0.9*{{GEP|Potato cactus}})/172.5}}
+|{{Coins|({{GEPT|Magic potion(4)|0.75}}*21/20 - {{GEP|Lantadyme potion (unf)}} - 0.9*{{GEP|Potato cactus}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/172.5}}
+|{{Coins|{{GEPT|Magic potion(4)|0.75}} - {{GEP|Vial of water}} - {{GEP|Potato cactus}}}}
+|-
+| rowspan="4" | 77
+| rowspan="4" | [[File:Stamina potion(4).png|link=Stamina potion]] 
+| rowspan="4" | [[Stamina potion]]
+| {{plinkt|Super energy(4)|pic=Super energy(4)}}
+| {{plinkt|Amylase crystal|pic=Amylase crystal 4}} (x4)
+| 102
+| 280,500 (535,500){{Refn|Increased experience rate if 1-ticking.|name=oneTick}}
+| {{Coins|{{GEP|Super energy(4)}} + {{GEP|Amylase crystal|4}}}}
+| {{Coins|{{GEPT|Stamina potion(4)}} - {{GEP|Super energy(4)}} - {{GEP|Amylase crystal|4}}}}
+| {{Coins|({{GEPT|Stamina potion(4)}} - {{GEP|Super energy(4)}} - {{GEP|Amylase crystal|4}})/102}}
+| {{NA}}
+| {{NA}}
+| {{Coins|({{GEPT|Stamina potion(4)}} - {{GEP|Super energy(4)}} - 0.9*{{GEP|Amylase crystal|4}})/102}}
+| {{NA}}
+| {{Coins|{{GEPT|Stamina potion(4)}} - {{GEP|Super energy(4)}} - {{GEP|Amylase crystal|4}}}} {{NamedRef|noherb}}
+|-
+| {{plinkt|Super energy(3)|pic=Super energy(3)}}
+| {{plinkt|Amylase crystal|pic=Amylase crystal 3}} (x3)
+| 76.5
+| 210,375  (401,625){{Refn|Increased experience rate if 1-ticking.|name=oneTick}}
+| {{Coins|{{GEP|Super energy(4)|0.75}} + {{GEP|Amylase crystal|3}}}}
+| {{Coins|{{GEPT|Stamina potion(4)|0.75}} - {{GEP|Super energy(4)|0.75}} - {{GEP|Amylase crystal|3}}}}
+| {{Coins|({{GEPT|Stamina potion(4)|0.75}} - {{GEP|Super energy(4)|0.75}} - {{GEP|Amylase crystal|3}})/76.5}}
+| {{Coins|({{GEPT|Stamina potion(4)|0.75}}*61/60 - {{GEP|Super energy(4)|0.75}} - {{GEP|Amylase crystal|3}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/76.5}}
+| {{Coins|({{GEPT|Stamina potion(4)|0.75}}*21/20 - {{GEP|Super energy(4)|0.75}} - {{GEP|Amylase crystal|3}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/76.5}}
+| {{Coins|({{GEPT|Stamina potion(4)|0.75}} - {{GEP|Super energy(4)|0.75}} - 0.9*{{GEP|Amylase crystal|3}})/76.5}}
+| {{Coins|({{GEPT|Stamina potion(4)|0.75}}*21/20 - {{GEP|Super energy(4)|0.75}} - 0.9*{{GEP|Amylase crystal|3}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/76.5}}
+| {{Coins|{{GEPT|Stamina potion(4)|0.75}} - {{GEP|Super energy(4)|0.75}} - {{GEP|Amylase crystal|3}}}} {{NamedRef|noherb}}
+|-
+| {{plinkt|Super energy(2)|pic=Super energy(2)}}
+| {{plinkt|Amylase crystal|pic=Amylase crystal 2}} (x2)
+| 51
+| 140,250 (267,750){{Refn|Increased experience rate if 1-ticking.|name=oneTick}}
+| {{Coins|{{GEP|Super energy(4)|0.50}} + {{GEP|Amylase crystal|2}}}}
+| {{Coins|{{GEPT|Stamina potion(4)|0.50}} - {{GEP|Super energy(4)|0.50}} - {{GEP|Amylase crystal|2}}}}
+| {{Coins|({{GEPT|Stamina potion(4)|0.50}} - {{GEP|Super energy(4)|0.50}} - {{GEP|Amylase crystal|2}})/51}}
+| {{Coins|({{GEPT|Stamina potion(4)|0.50}}*41/40 - {{GEP|Super energy(4)|0.50}} - {{GEP|Amylase crystal|2}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/51}}
+| {{Coins|({{GEPT|Stamina potion(4)|0.50}}*43/40 - {{GEP|Super energy(4)|0.50}} - {{GEP|Amylase crystal|2}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/51}}
+| {{Coins|({{GEPT|Stamina potion(4)|0.50}} - {{GEP|Super energy(4)|0.50}} - 0.9*{{GEP|Amylase crystal|2}})/51}}
+| {{Coins|({{GEPT|Stamina potion(4)|0.50}}*43/40 - {{GEP|Super energy(4)|0.50}} - 0.9*{{GEP|Amylase crystal|2}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/51}}
+| {{Coins|{{GEPT|Stamina potion(4)|0.50}} - {{GEP|Super energy(4)|0.50}} - {{GEP|Amylase crystal|2}}}} {{NamedRef|noherb}}
+|-
+| {{plinkt|Super energy(1)}}
+| {{plinkt|Amylase crystal|pic=Amylase crystal 1}}(x1)
+| 25.5
+| 70,125 (133,875){{Refn|Increased experience rate if 1-ticking.|name=oneTick}}
+| {{Coins|{{GEP|Super energy(4)|0.25}} + {{GEP|Amylase crystal|1}}}}
+| {{Coins|{{GEPT|Stamina potion(4)|0.25}} - {{GEP|Super energy(4)|0.25}} - {{GEP|Amylase crystal|1}}}}
+| {{Coins|({{GEPT|Stamina potion(4)|0.25}} - {{GEP|Super energy(4)|0.25}} - {{GEP|Amylase crystal|1}})/25.5}}
+| {{Coins|({{GEPT|Stamina potion(4)|0.25}}*21/20 - {{GEP|Super energy(4)|0.25}} - {{GEP|Amylase crystal|1}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/25.5}}
+| {{Coins|({{GEPT|Stamina potion(4)|0.25}}*23/20 - {{GEP|Super energy(4)|0.25}} - {{GEP|Amylase crystal|1}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/25.5}}
+| {{Coins|({{GEPT|Stamina potion(4)|0.25}} - {{GEP|Super energy(4)|0.25}} - 0.9*{{GEP|Amylase crystal|1}})/25.5}}
+| {{Coins|({{GEPT|Stamina potion(4)|0.25}}*23/20 - {{GEP|Super energy(4)|0.25}} - 0.9*{{GEP|Amylase crystal|1}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/25.5}}
+| {{Coins|{{GEPT|Stamina potion(4)|0.25}} - {{GEP|Super energy(4)|0.25}} - {{GEP|Amylase crystal|1}}}} {{NamedRef|noherb}}
+|-
+|78
+|{{plinkt|Zamorak brew|pic=Zamorak brew(3)}}
+|{{plinkt|Torstol potion (unf)}}
+|{{plinkt|Jangerberries}}
+|175
+|437,500
+|{{Coins|{{GEP|Torstol potion (unf)}} + {{GEP|Jangerberries}}}}
+|{{Coins|{{GEPT|Zamorak brew(4)|0.75}} - {{GEP|Torstol potion (unf)}} - {{GEP|Jangerberries}}}}
+|{{Coins|({{GEPT|Zamorak brew(4)|0.75}} - {{GEP|Torstol potion (unf)}} - {{GEP|Jangerberries}})/175}}
+|{{Coins|({{GEPT|Zamorak brew(4)|0.75}}*61/60 - {{GEP|Torstol potion (unf)}} - {{GEP|Jangerberries}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/175}}
+|{{Coins|({{GEPT|Zamorak brew(4)|0.75}}*21/20 - {{GEP|Torstol potion (unf)}} - {{GEP|Jangerberries}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/175}}
+|{{Coins|({{GEPT|Zamorak brew(4)|0.75}}- {{GEP|Torstol potion (unf)}} - 0.9*{{GEP|Jangerberries}})/175}}
+|{{Coins|({{GEPT|Zamorak brew(4)|0.75}}*21/20 - {{GEP|Torstol potion (unf)}} - 0.9*{{GEP|Jangerberries}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/175}}
+|{{Coins|{{GEPT|Zamorak brew(4)|0.75}} - {{GEP|Vial of water}} - {{GEP|Jangerberries}}}}
+|-
+|80
+|{{plinkt|Bastion potion|pic=Bastion potion(3)}}
+|{{plinkt|Cadantine blood potion (unf)}}
+|{{plinkt|Wine of zamorak}}
+|155
+|387,500
+|{{Coins|{{GEP|Cadantine blood potion (unf)}} + {{GEP|Wine of zamorak}}}}
+|{{Coins|{{GEPT|Bastion potion(4)|0.75}} - {{GEP|Cadantine blood potion (unf)}} - {{GEP|Wine of zamorak}}}}
+|{{Coins|({{GEPT|Bastion potion(4)|0.75}} - {{GEP|Cadantine blood potion (unf)}} - {{GEP|Wine of zamorak}})/155}}
+|{{Coins|({{GEPT|Bastion potion(4)|0.75}}*61/60 - {{GEP|Cadantine blood potion (unf)}} - {{GEP|Wine of zamorak}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/155}}
+|{{Coins|({{GEPT|Bastion potion(4)|0.75}}*21/20 - {{GEP|Cadantine blood potion (unf)}} - {{GEP|Wine of zamorak}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/155}}
+|{{Coins|({{GEPT|Bastion potion(4)|0.75}}- {{GEP|Cadantine blood potion (unf)}} - 0.9*{{GEP|Wine of zamorak}})/175}}
+|{{Coins|({{GEPT|Bastion potion(4)|0.75}}*21/20 - {{GEP|Cadantine blood potion (unf)}} - 0.9*{{GEP|Wine of zamorak}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/155}}
+|{{Coins|{{GEPT|Bastion potion(4)|0.75}} - {{GEP|Vial of water}} - {{GEP|Vial of blood}} - {{GEP|Wine of zamorak}}}}
+|-
+|80
+|{{plinkt|Battlemage potion|pic=Battlemage potion(3)}}
+|{{plinkt|Cadantine blood potion (unf)}}
+|{{plinkt|Potato cactus}}
+|155
+|387,500
+|{{Coins|{{GEP|Cadantine blood potion (unf)}} + {{GEP|Potato cactus}}}}
+|{{Coins|{{GEPT|Battlemage potion(4)|0.75}} - {{GEP|Cadantine blood potion (unf)}} - {{GEP|Potato cactus}}}}
+|{{Coins|({{GEPT|Battlemage potion(4)|0.75}} - {{GEP|Cadantine blood potion (unf)}} - {{GEP|Potato cactus}})/155}}
+|{{Coins|({{GEPT|Battlemage potion(4)|0.75}}*61/60 - {{GEP|Cadantine blood potion (unf)}} - {{GEP|Potato cactus}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/155}}
+|{{Coins|({{GEPT|Battlemage potion(4)|0.75}}*21/20 - {{GEP|Cadantine blood potion (unf)}} - {{GEP|Potato cactus}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/155}}
+|{{Coins|({{GEPT|Battlemage potion(4)|0.75}}- {{GEP|Cadantine blood potion (unf)}} - 0.9*{{GEP|Potato cactus}})/175}}
+|{{Coins|({{GEPT|Battlemage potion(4)|0.75}}*21/20 - {{GEP|Cadantine blood potion (unf)}} - 0.9*{{GEP|Potato cactus}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/155}}
+|{{Coins|{{GEPT|Battlemage potion(4)|0.75}} - {{GEP|Vial of water}} - {{GEP|Vial of blood}} - {{GEP|Potato cactus}}}}
+|-
+|81
+|{{plinkt|Saradomin brew|pic=Saradomin brew(3)}}
+|{{plinkt|Toadflax potion (unf)}}
+|{{plinkt|Crushed nest}}
+|180
+|450,000
+|{{Coins|{{GEP|Toadflax potion (unf)}} + {{GEP|Crushed nest}}}}
+|{{Coins|{{GEPT|Saradomin brew(4)|0.75}} - {{GEP|Toadflax potion (unf)}} - {{GEP|Crushed nest}}}}
+|{{Coins|({{GEPT|Saradomin brew(4)|0.75}} - {{GEP|Toadflax potion (unf)}} - {{GEP|Crushed nest}})/180}}
+|{{Coins|({{GEPT|Saradomin brew(4)|0.75}}*61/60 - {{GEP|Toadflax potion (unf)}} - {{GEP|Crushed nest}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/180}}
+|{{Coins|({{GEPT|Saradomin brew(4)|0.75}}*21/20 - {{GEP|Toadflax potion (unf)}} - {{GEP|Crushed nest}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/180}}
+|{{Coins|({{GEPT|Saradomin brew(4)|0.75}} - {{GEP|Toadflax potion (unf)}} - 0.9*{{GEP|Crushed nest}})/180}}
+|{{Coins|({{GEPT|Saradomin brew(4)|0.75}}*21/20 - {{GEP|Toadflax potion (unf)}} - 0.9*{{GEP|Crushed nest}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/180}}
+|{{Coins|{{GEPT|Saradomin brew(4)|0.75}} - {{GEP|Vial of water}} - {{GEP|Crushed nest}}}}
+|-
+|81
+|{{plinkt|Surge potion|pic=Surge potion(3)}}
+|{{plinkt|Torstol potion (unf)}}
+|{{plinkt|Demonic tallow}}
+|185
+|462,500
+|{{Coins|{{GEP|Torstol potion (unf)}} + {{GEP|Demonic tallow}}}}
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|{{NA}}
+|{{Coins|(0 - {{GEP|Torstol potion (unf)}} - 0.9*{{GEP|Demonic tallow}})/185}}{{Refn|The finished pot is untradeable, but its components are tradeable.|name=untradeablePot}}
+|{{NA}}
+|{{NA}}
+|-
+|84
+|{{plinkt|Extended antifire|pic=Extended antifire(4)}}
+|{{plinkt|Antifire potion}}(4)
+|{{plinkt|Lava scale shard}} (x4)
+|110
+|302,500 (577,500){{NamedRef|oneTick}}
+|{{Coins|{{GEP|Antifire potion(4)}} + {{GEP|Lava scale shard|4}}}}
+|{{Coins|{{GEPT|Extended antifire(4)}} - {{GEP|Antifire potion(4)}} - {{GEP|Lava scale shard|4}}}}
+|{{Coins|({{GEPT|Extended antifire(4)}} - {{GEP|Antifire potion(4)}} - {{GEP|Lava scale shard|4}})/110}}
+|{{NA}}
+|{{NA}}
+|{{Coins|({{GEPT|Extended antifire(4)}} - {{GEP|Antifire potion(4)}} - 0.9*{{GEP|Lava scale shard|4}})/110}}
+|{{NA}}
+|{{Coins|{{GEPT|Extended antifire(4)}} - {{GEP|Antifire potion(4)}} - {{GEP|Lava scale shard|4}}}} {{NamedRef|noherb}}
+|-
+|85
+|{{plinkt|Ancient brew|pic=Ancient brew(3)}}
+|{{plinkt|Dwarf weed potion (unf)}}
+|{{plinkt|Nihil dust}}
+|190
+|522,500
+|{{Coins|{{GEP|Dwarf weed potion (unf)}} + {{GEP|Nihil dust}}}}
+|{{Coins|{{GEPT|Ancient brew(4)|0.75}} - {{GEP|Dwarf weed potion (unf)}} - {{GEP|Nihil dust}}}}
+|{{Coins|({{GEPT|Ancient brew(4)|0.75}} - {{GEP|Dwarf weed potion (unf)}} - {{GEP|Nihil dust}})/190}}
+|{{Coins|({{GEPT|Ancient brew(4)|0.75}}*61/60 - {{GEP|Dwarf weed potion (unf)}} - {{GEP|Nihil dust}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/190}}
+|{{Coins|({{GEPT|Ancient brew(4)|0.75}}*21/20 - {{GEP|Dwarf weed potion (unf)}} - {{GEP|Nihil dust}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/190}}
+|{{Coins|({{GEPT|Ancient brew(4)|0.75}} - {{GEP|Dwarf weed potion (unf)}} - 0.9*{{GEP|Nihil dust}})/190}}
+|{{Coins|({{GEPT|Ancient brew(4)|0.75}}*21/20 - {{GEP|Dwarf weed potion (unf)}} - 0.9*{{GEP|Nihil dust}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/190}}
+|{{Coins|{{GEPT|Ancient brew(4)|0.75}} - {{GEP|Vial of water}} - {{GEP|Nihil dust}}}}
+|-
+| rowspan="4" | 85
+| rowspan="4" | [[File:Extended stamina potion(3).png|link=Extended stamina potion]] 
+| rowspan="4" | [[Extended stamina potion]]
+| {{plinkt|Stamina potion(4)|pic=Stamina potion(4)}}
+| {{plinkt|Marlin scales|pic=Marlin scales}} (x4)
+| 110
+| 275,000
+| {{Coins|{{GEP|Stamina potion(4)}} + {{GEP|Marlin scales|4}}}}
+| {{Coins|{{GEPT|Extended stamina potion(4)}} - {{GEP|Stamina potion(4)}} - {{GEP|Marlin scales|4}}}}
+| {{Coins|({{GEPT|Extended stamina potion(4)}} - {{GEP|Stamina potion(4)}} - {{GEP|Marlin scales|4}})/102}}
+| {{NA}}
+| {{NA}}
+| {{Coins|({{GEPT|Extended stamina potion(4)}} - {{GEP|Stamina potion(4)}} - 0.9*{{GEP|Marlin scales|4}})/102}}
+| {{NA}}
+| {{Coins|{{GEPT|Extended stamina potion(4)}} - {{GEP|Stamina potion(4)}} - {{GEP|Marlin scales|4}}}} {{NamedRef|noherb}}
+|-
+| {{plinkt|Stamina potion(3)|pic=Stamina potion(3)}}
+| {{plinkt|Marlin scales|pic=Marlin scales}} (x3)
+| 82.5
+| 206,250
+| {{Coins|{{GEP|Stamina potion(4)|0.75}} + {{GEP|Marlin scales|3}}}}
+| {{Coins|{{GEPT|Extended stamina potion(4)|0.75}} - {{GEP|Stamina potion(4)|0.75}} - {{GEP|Marlin scales|3}}}}
+| {{Coins|({{GEPT|Extended stamina potion(4)|0.75}} - {{GEP|Stamina potion(4)|0.75}} - {{GEP|Marlin scales|3}})/76.5}}
+| {{Coins|({{GEPT|Extended stamina potion(4)|0.75}}*61/60 - {{GEP|Stamina potion(4)|0.75}} - {{GEP|Marlin scales|3}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/76.5}}
+| {{Coins|({{GEPT|Extended stamina potion(4)|0.75}}*21/20 - {{GEP|Stamina potion(4)|0.75}} - {{GEP|Marlin scales|3}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/76.5}}
+| {{Coins|({{GEPT|Extended stamina potion(4)|0.75}} - {{GEP|Stamina potion(4)|0.75}} - 0.9*{{GEP|Marlin scales|3}})/76.5}}
+| {{Coins|({{GEPT|Extended stamina potion(4)|0.75}}*21/20 - {{GEP|Stamina potion(4)|0.75}} - 0.9*{{GEP|Marlin scales|3}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/76.5}}
+| {{Coins|{{GEPT|Extended stamina potion(4)|0.75}} - {{GEP|Stamina potion(4)|0.75}} - {{GEP|Marlin scales|3}}}} {{NamedRef|noherb}}
+|-
+| {{plinkt|Stamina potion(2)|pic=Stamina potion(2)}}
+| {{plinkt|Marlin scales|pic=Marlin scales}} (x2)
+| 55
+| 137,500
+| {{Coins|{{GEP|Stamina potion(4)|0.50}} + {{GEP|Marlin scales|2}}}}
+| {{Coins|{{GEPT|Extended stamina potion(4)|0.50}} - {{GEP|Stamina potion(4)|0.50}} - {{GEP|Marlin scales|2}}}}
+| {{Coins|({{GEPT|Extended stamina potion(4)|0.50}} - {{GEP|Stamina potion(4)|0.50}} - {{GEP|Marlin scales|2}})/51}}
+| {{Coins|({{GEPT|Extended stamina potion(4)|0.50}}*41/40 - {{GEP|Stamina potion(4)|0.50}} - {{GEP|Marlin scales|2}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/51}}
+| {{Coins|({{GEPT|Extended stamina potion(4)|0.50}}*43/40 - {{GEP|Stamina potion(4)|0.50}} - {{GEP|Marlin scales|2}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/51}}
+| {{Coins|({{GEPT|Extended stamina potion(4)|0.50}} - {{GEP|Stamina potion(4)|0.50}} - 0.9*{{GEP|Marlin scales|2}})/51}}
+| {{Coins|({{GEPT|Extended stamina potion(4)|0.50}}*43/40 - {{GEP|Stamina potion(4)|0.50}} - 0.9*{{GEP|Marlin scales|2}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/51}}
+| {{Coins|{{GEPT|Extended stamina potion(4)|0.50}} - {{GEP|Stamina potion(4)|0.50}} - {{GEP|Marlin scales|2}}}} {{NamedRef|noherb}}
+|-
+| {{plinkt|Stamina potion(1)}}
+| {{plinkt|Marlin scales|pic=Marlin scales}}(x1)
+| 27.5
+| 68,750
+| {{Coins|{{GEP|Stamina potion(4)|0.25}} + {{GEP|Marlin scales|1}}}}
+| {{Coins|{{GEPT|Extended stamina potion(4)|0.25}} - {{GEP|Stamina potion(4)|0.25}} - {{GEP|Marlin scales|1}}}}
+| {{Coins|({{GEPT|Extended stamina potion(4)|0.25}} - {{GEP|Stamina potion(4)|0.25}} - {{GEP|Marlin scales|1}})/25.5}}
+| {{Coins|({{GEPT|Extended stamina potion(4)|0.25}}*21/20 - {{GEP|Stamina potion(4)|0.25}} - {{GEP|Marlin scales|1}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/25.5}}
+| {{Coins|({{GEPT|Extended stamina potion(4)|0.25}}*23/20 - {{GEP|Stamina potion(4)|0.25}} - {{GEP|Marlin scales|1}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/25.5}}
+| {{Coins|({{GEPT|Extended stamina potion(4)|0.25}} - {{GEP|Stamina potion(4)|0.25}} - 0.9*{{GEP|Marlin scales|1}})/25.5}}
+| {{Coins|({{GEPT|Extended stamina potion(4)|0.25}}*23/20 - {{GEP|Stamina potion(4)|0.25}} - 0.9*{{GEP|Marlin scales|1}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/25.5}}
+| {{Coins|{{GEPT|Extended stamina potion(4)|0.25}} - {{GEP|Stamina potion(4)|0.25}} - {{GEP|Marlin scales|1}}}} {{NamedRef|noherb}}
+|-
+| rowspan="4" | 87
+| rowspan="4" | [[File:Anti-venom(4).png|link=Anti-venom]] 
+| rowspan="4" | [[Anti-venom]]
+| {{plinkt|Antidote++(4)|pic=Antidote++(4)}}
+| {{plinkt|Zulrah's scales|pic=Zulrah's scales}} (x20)
+| 120
+| 330,000 (630,000){{NamedRef|oneTick}}
+| {{Coins|{{GEP|Antidote++(4)}} + {{GEP|Zulrah's scales|20}}}}
+| {{Coins|{{GEPT|Anti-venom(4)}} - {{GEP|Antidote++(4)}} - {{GEP|Zulrah's scales|20}}}}
+| {{Coins|({{GEPT|Anti-venom(4)}} - {{GEP|Antidote++(4)}} - {{GEP|Zulrah's scales|20}})/120}}
+| {{NA}}
+| {{NA}}
+| {{Coins|({{GEPT|Anti-venom(4)}} - {{GEP|Antidote++(4)}} - 0.9*{{GEP|Zulrah's scales|20}})/120}}
+| {{NA}}
+| {{Coins|{{GEPT|Anti-venom(4)}} - {{GEP|Antidote++(4)}} - {{GEP|Zulrah's scales|20}}}} {{NamedRef|noherb}}
+|-
+| {{plinkt|Antidote++(3)|pic=Antidote++(3)}}
+| {{plinkt|Zulrah's scales|pic=Zulrah's scales}} (x15)
+| 90
+| 247,500 (495,000){{NamedRef|oneTick}}
+| {{Coins|{{GEP|Antidote++(4)|0.75}} + {{GEP|Zulrah's scales|15}}}}
+| {{Coins|{{GEPT|Anti-venom(4)|0.75}} - {{GEP|Antidote++(4)|0.75}} - {{GEP|Zulrah's scales|15}}}}
+| {{Coins|({{GEPT|Anti-venom(4)|0.75}} - {{GEP|Antidote++(4)|0.75}} - {{GEP|Zulrah's scales|15}})/90}}
+| {{Coins|({{GEPT|Anti-venom(4)|0.75}}*61/60 - {{GEP|Antidote++(4)|0.75}} - {{GEP|Zulrah's scales|15}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/90}}
+| {{Coins|({{GEPT|Anti-venom(4)|0.75}}*21/20 - {{GEP|Antidote++(4)|0.75}} - {{GEP|Zulrah's scales|15}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/90}}
+| {{Coins|({{GEPT|Anti-venom(4)|0.75}} - {{GEP|Antidote++(4)|0.75}} - 0.9*{{GEP|Zulrah's scales|15}})/90}}
+| {{Coins|({{GEPT|Anti-venom(4)|0.75}}*21/20 - {{GEP|Antidote++(4)|0.75}} - 0.9*{{GEP|Zulrah's scales|15}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/90}}
+| {{Coins|{{GEPT|Anti-venom(4)|0.75}} - {{GEP|Antidote++(4)|0.75}} - {{GEP|Zulrah's scales|15}}}} {{NamedRef|noherb}}
+|-
+| {{plinkt|Antidote++(2)|pic=Antidote++(2)}}
+| {{plinkt|Zulrah's scales|pic=Zulrah's scales}} (x10)
+| 60
+| 165,000 (330,000){{NamedRef|oneTick}}
+| {{Coins|{{GEP|Antidote++(4)|0.50}} + {{GEP|Zulrah's scales|10}}}}
+| {{Coins|{{GEPT|Anti-venom(4)|0.50}} - {{GEP|Antidote++(4)|0.50}} - {{GEP|Zulrah's scales|10}}}}
+| {{Coins|({{GEPT|Anti-venom(4)|0.50}} - {{GEP|Antidote++(4)|0.50}} - {{GEP|Zulrah's scales|10}})/60}}
+| {{Coins|({{GEPT|Anti-venom(4)|0.50}}*41/40 - {{GEP|Antidote++(4)|0.50}} - {{GEP|Zulrah's scales|10}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/60}}
+| {{Coins|({{GEPT|Anti-venom(4)|0.50}}*43/40 - {{GEP|Antidote++(4)|0.50}} - {{GEP|Zulrah's scales|10}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/60}}
+| {{Coins|({{GEPT|Anti-venom(4)|0.50}} - {{GEP|Antidote++(4)|0.50}} - 0.9*{{GEP|Zulrah's scales|10}})/60}}
+| {{Coins|({{GEPT|Anti-venom(4)|0.50}}*43/40 - {{GEP|Antidote++(4)|0.50}} - 0.9*{{GEP|Zulrah's scales|10}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/60}}
+| {{Coins|{{GEPT|Anti-venom(4)|0.50}} - {{GEP|Antidote++(4)|0.50}} - {{GEP|Zulrah's scales|10}}}} {{NamedRef|noherb}}
+|-
+| {{plinkt|Antidote++(1)|pic=Antidote++(1)}}
+| {{plinkt|Zulrah's scales|pic=Zulrah's scales}} (x5)
+| 30
+| 54,990 (109,980){{NamedRef|oneTick}}
+| {{Coins|{{GEP|Antidote++(4)|0.25}} + {{GEP|Zulrah's scales|5}}}}
+| {{Coins|{{GEPT|Anti-venom(4)|0.25}} - {{GEP|Antidote++(4)|0.25}} - {{GEP|Zulrah's scales|5}}}}
+| {{Coins|({{GEPT|Anti-venom(4)|0.25}} - {{GEP|Antidote++(4)|0.25}} - {{GEP|Zulrah's scales|5}})/30}}
+| {{Coins|({{GEPT|Anti-venom(4)|0.25}}*21/20 - {{GEP|Antidote++(4)|0.25}} - {{GEP|Zulrah's scales|5}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/30}}
+| {{Coins|({{GEPT|Anti-venom(4)|0.25}}*23/20 - {{GEP|Antidote++(4)|0.25}} - {{GEP|Zulrah's scales|5}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/30}}
+| {{Coins|({{GEPT|Anti-venom(4)|0.25}} - {{GEP|Antidote++(4)|0.25}} - 0.9*{{GEP|Zulrah's scales|5}})/30}}
+| {{Coins|({{GEPT|Anti-venom(4)|0.25}}*23/20 - {{GEP|Antidote++(4)|0.25}} - 0.9*{{GEP|Zulrah's scales|5}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/30}}
+| {{Coins|{{GEPT|Anti-venom(4)|0.25}} - {{GEP|Antidote++(4)|0.25}} - {{GEP|Zulrah's scales|5}}}} {{NamedRef|noherb}}
+|-
+|88
+|{{plinkt|Menaphite remedy|pic=Menaphite remedy(3)}}
+|{{plinkt|Dwarf weed potion (unf)}}
+|{{plinkt|Lily of the sands}}
+|200
+|500,000
+|{{Coins|{{GEP|Dwarf weed potion (unf)}} + {{GEP|Lily of the sands}}}}
+|{{Coins|{{GEPT|Menaphite remedy(4)|0.75}} - {{GEP|Dwarf weed potion (unf)}} - {{GEP|Lily of the sands}}}}
+|{{Coins|({{GEPT|Menaphite remedy(4)|0.75}} - {{GEP|Dwarf weed potion (unf)}} - {{GEP|Lily of the sands}})/200}}
+|{{Coins|({{GEPT|Menaphite remedy(4)|0.75}}*61/60 - {{GEP|Dwarf weed potion (unf)}} - {{GEP|Lily of the sands}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/200}}
+|{{Coins|({{GEPT|Menaphite remedy(4)|0.75}}*21/20 - {{GEP|Dwarf weed potion (unf)}} - {{GEP|Lily of the sands}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/200}}
+|{{NA}}
+|{{NA}}
+|{{Coins|{{GEPT|Menaphite remedy(4)|0.75}} - {{GEP|Vial of water}} - {{GEP|Lily of the sands}}}}
+|-
+|89
+|{{plinkt|Armadyl brew|pic=Armadyl brew(3)}}
+|{{plinkt|Umbral potion (unf)}}
+|{{plinkt|Rainbow crab paste}}
+|205
+|563,750
+|{{Coins|{{GEP|Umbral potion (unf)}} + {{GEP|Rainbow crab paste}}}}
+|{{Coins|{{GEPT|Armadyl brew(4)|0.75}} - {{GEP|Umbral potion (unf)}} - {{GEP|Rainbow crab paste}}}}
+|{{Coins|({{GEPT|Armadyl brew(4)|0.75}} - {{GEP|Umbral potion (unf)}} - {{GEP|Rainbow crab paste}})/205}}
+|{{Coins|({{GEPT|Armadyl brew(4)|0.75}}*61/60 - {{GEP|Umbral potion (unf)}} - {{GEP|Rainbow crab paste}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/205}}
+|{{Coins|({{GEPT|Armadyl brew(4)|0.75}}*21/20 - {{GEP|Umbral potion (unf)}} - {{GEP|Rainbow crab paste}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/205}}
+|{{NA}}
+|{{NA}}
+|{{Coins|{{GEPT|Armadyl brew(4)|0.75}} - {{GEP|Vial of water}} - {{GEP|Rainbow crab paste}}}}
+|-
+|90
+|{{plinkt|Super combat potion}}
+|{{plinkp|Super attack}}<br />{{plinkp|Super strength}}<br />{{plinkp|Super defence}}||[[Super attack]](4)<br />[[Super strength]](4)<br />[[Super defence]](4)
+|{{plinkt|Torstol}}
+|150
+|324,900
+|{{Coins|{{GEP|Super attack(4)}} + {{GEP|Super strength(4)}} + {{GEP|Super defence(4)}} + {{GEP|Torstol}}}}
+|{{Coins|{{GEPT|Super combat potion(4)}} - {{GEP|Super attack(4)}} - {{GEP|Super strength(4)}} - {{GEP|Super defence(4)}} - {{GEP|Torstol}}}}
+|{{Coins|({{GEPT|Super combat potion(4)}} - {{GEP|Super attack(4)}} - {{GEP|Super strength(4)}} - {{GEP|Super defence(4)}} - {{GEP|Torstol}})/150}}
+|{{NA}}
+|{{NA}}
+|{{Coins|({{GEPT|Super combat potion(4)}} - {{GEP|Super attack(4)}} - {{GEP|Super strength(4)}} - {{GEP|Super defence(4)}} - 0.9*{{GEP|Torstol}})/150}}
+|{{NA}}
+|{{Coins|{{GEPT|Super combat potion(4)}} - {{GEP|Super attack(4)}} - {{GEP|Super strength(4)}} - {{GEP|Super defence(4)}} - {{GEP|Torstol}}}} {{NamedRef|noherb}}
+|-
+| rowspan="4" | 91
+| rowspan="4" | [[File:Forgotten brew(4).png|link=Forgotten brew]] 
+| rowspan="4" | [[Forgotten brew]]
+| {{plinkt|Ancient brew(4)|pic=Ancient brew(4)}}
+| {{plinkt|Ancient essence|pic=Ancient essence}} (x80)
+| 145
+| 265,785
+| {{Coins|{{GEP|Ancient brew(4)}} + {{GEP|Ancient essence|80}}}}
+| {{Coins|{{GEPT|Forgotten brew(4)}} - {{GEP|Ancient brew(4)}} - {{GEP|Ancient essence|80}}}}
+| {{Coins|({{GEPT|Forgotten brew(4)}} - {{GEP|Ancient brew(4)}} - {{GEP|Ancient essence|80}})/145}}
+| {{NA}}
+| {{NA}}
+| {{Coins|({{GEPT|Forgotten brew(4)}} - {{GEP|Ancient brew(4)}} - 0.9*{{GEP|Ancient essence|80}})/145}}
+| {{NA}}
+| {{Coins|{{GEPT|Forgotten brew(4)}} - {{GEP|Ancient brew(4)}} - {{GEP|Ancient essence|80}}}} {{NamedRef|noherb}}
+|-
+| {{plinkt|Ancient brew(3)|pic=Ancient brew(3)}}
+| {{plinkt|Ancient essence|pic=Ancient essence}} (x60)
+| 108
+| 197,964
+| {{Coins|{{GEP|Ancient brew(4)|0.75}} + {{GEP|Ancient essence|60}}}}
+| {{Coins|{{GEPT|Forgotten brew(4)|0.75}} - {{GEP|Ancient brew(4)|0.75}} - {{GEP|Ancient essence|60}}}}
+| {{Coins|({{GEPT|Forgotten brew(4)|0.75}} - {{GEP|Ancient brew(4)|0.75}} - {{GEP|Ancient essence|60}})/108}}
+| {{Coins|({{GEPT|Forgotten brew(4)|0.75}}*61/60 - {{GEP|Ancient brew(4)|0.75}} - {{GEP|Ancient essence|60}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/108}}
+| {{Coins|({{GEPT|Forgotten brew(4)|0.75}}*21/20 - {{GEP|Ancient brew(4)|0.75}} - {{GEP|Ancient essence|60}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/108}}
+| {{Coins|({{GEPT|Forgotten brew(4)|0.75}} - {{GEP|Ancient brew(4)|0.75}} - 0.9*{{GEP|Ancient essence|60}})/108}}
+| {{Coins|({{GEPT|Forgotten brew(4)|0.75}}*21/20 - {{GEP|Ancient brew(4)|0.75}} - 0.9*{{GEP|Ancient essence|60}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/108}}
+| {{Coins|{{GEPT|Forgotten brew(4)|0.75}} - {{GEP|Ancient brew(4)|0.75}} - {{GEP|Ancient essence|60}}}} {{NamedRef|noherb}}
+|-
+| {{plinkt|Ancient brew(2)|pic=Ancient brew(2)}}
+| {{plinkt|Ancient essence|pic=Ancient essence}} (x40)
+| 72
+| 131,976
+| {{Coins|{{GEP|Ancient brew(4)|0.50}} + {{GEP|Ancient essence|40}}}}
+| {{Coins|{{GEPT|Forgotten brew(4)|0.50}} - {{GEP|Ancient brew(4)|0.50}} - {{GEP|Ancient essence|40}}}}
+| {{Coins|({{GEPT|Forgotten brew(4)|0.50}} - {{GEP|Ancient brew(4)|0.50}} - {{GEP|Ancient essence|40}})/72}}
+| {{Coins|({{GEPT|Forgotten brew(4)|0.50}}*41/40 - {{GEP|Ancient brew(4)|0.50}} - {{GEP|Ancient essence|40}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/72}}
+| {{Coins|({{GEPT|Forgotten brew(4)|0.50}}*43/40 - {{GEP|Ancient brew(4)|0.50}} - {{GEP|Ancient essence|40}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/72}}
+| {{Coins|({{GEPT|Forgotten brew(4)|0.50}} - {{GEP|Ancient brew(4)|0.50}} - 0.9*{{GEP|Ancient essence|40}})/72}}
+| {{Coins|({{GEPT|Forgotten brew(4)|0.50}}*43/40 - {{GEP|Ancient brew(4)|0.50}} - 0.9*{{GEP|Ancient essence|40}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/72}}
+| {{Coins|{{GEPT|Forgotten brew(4)|0.50}} - {{GEP|Ancient brew(4)|0.50}} - {{GEP|Ancient essence|40}}}} {{NamedRef|noherb}}
+|-
+| {{plinkt|Ancient brew(1)|pic=Ancient brew(1)}}
+| {{plinkt|Ancient essence|pic=Ancient essence}} (x20)
+| 36
+| 65,988
+| {{Coins|{{GEP|Ancient brew(4)|0.25}} + {{GEP|Ancient essence|20}}}}
+| {{Coins|{{GEPT|Forgotten brew(4)|0.25}} - {{GEP|Ancient brew(4)|0.25}} - {{GEP|Ancient essence|20}}}}
+| {{Coins|({{GEPT|Forgotten brew(4)|0.25}} - {{GEP|Ancient brew(4)|0.25}} - {{GEP|Ancient essence|20}})/36}}
+| {{Coins|({{GEPT|Forgotten brew(4)|0.25}}*21/20 - {{GEP|Ancient brew(4)|0.25}} - {{GEP|Ancient essence|20}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/36}}
+| {{Coins|({{GEPT|Forgotten brew(4)|0.25}}*23/20 - {{GEP|Ancient brew(4)|0.25}} - {{GEP|Ancient essence|20}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/36}}
+| {{Coins|({{GEPT|Forgotten brew(4)|0.25}} - {{GEP|Ancient brew(4)|0.25}} - 0.9*{{GEP|Ancient essence|20}})/36}}
+| {{Coins|({{GEPT|Forgotten brew(4)|0.25}}*23/20 - {{GEP|Ancient brew(4)|0.25}} - 0.9*{{GEP|Ancient essence|20}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/36}}
+| {{Coins|{{GEPT|Forgotten brew(4)|0.25}} - {{GEP|Ancient brew(4)|0.25}} - {{GEP|Ancient essence|20}}}} {{NamedRef|noherb}}
+|-
+|92
+|{{plinkt|Super antifire potion}}
+|{{plinkt|Antifire potion}}(4)
+|{{plinkt|Crushed superior dragon bones|txt=Crushed superior<br/>dragon bones}}
+|130
+|325,000
+|{{Coins|{{GEP|Antifire potion(4)}} + {{GEP|Crushed superior dragon bones}}}}
+|{{Coins|{{GEPT|Super antifire potion(4)}} - {{GEP|Antifire potion(4)}} - {{GEP|Crushed superior dragon bones}}}}
+|{{Coins|({{GEPT|Super antifire potion(4)}} - {{GEP|Antifire potion(4)}} - {{GEP|Crushed superior dragon bones}})/130}}
+|{{NA}}
+|{{NA}}
+|{{Coins|({{GEPT|Super antifire potion(4)}} - {{GEP|Antifire potion(4)}} - 0.9*{{GEP|Crushed superior dragon bones}})/130}}
+|{{NA}}
+|{{Coins|{{GEPT|Super antifire potion(4)}} - {{GEP|Antifire potion(4)}} - {{GEP|Crushed superior dragon bones}}}} {{NamedRef|noherb}}
+|-
+|94
+|{{plinkt|Anti-venom+}}
+|{{plinkt|Anti-venom}}(4)
+|{{plinkt|Torstol}}
+|125
+|312,500
+|{{Coins|{{GEP|Anti-venom(4)}} + {{GEP|Torstol}}}}
+|{{Coins|{{GEPT|Anti-venom+(4)}} - {{GEP|Anti-venom(4)}} - {{GEP|Torstol}}}}
+|{{Coins|({{GEPT|Anti-venom+(4)}} - {{GEP|Anti-venom(4)}} - {{GEP|Torstol}})/125}}
+|{{NA}}
+|{{NA}}
+|{{Coins|({{GEPT|Anti-venom+(4)}} - {{GEP|Anti-venom(4)}} - 0.9*{{GEP|Torstol}})/125}}
+|{{NA}}
+|{{Coins|{{GEPT|Anti-venom+(4)}} - {{GEP|Anti-venom(4)}} - {{GEP|Torstol}}}} {{NamedRef|noherb}}
+|-
+| rowspan="4" | 94
+| rowspan="4" | [[File:Extended anti-venom+(4).png|link=Extended anti-venom+]] 
+| rowspan="4" | [[Extended anti-venom+]]
+| {{plinkt|Anti-venom+(4)|pic=Anti-venom+(4)}}
+| {{plinkt|Araxyte venom sack|pic=Araxyte venom sack}} (x4)
+| 80
+| 146,640
+| {{Coins|{{GEP|Anti-venom+(4)}} + {{GEP|Araxyte venom sack|4}}}}
+| {{Coins|{{GEPT|Extended anti-venom+(4)}} - {{GEP|Anti-venom+(4)}} - {{GEP|Araxyte venom sack|4}}}}
+| {{Coins|({{GEPT|Extended anti-venom+(4)}} - {{GEP|Anti-venom+(4)}} - {{GEP|Araxyte venom sack|4}})/80}}
+| {{NA}}
+| {{NA}}
+| {{Coins|({{GEPT|Extended anti-venom+(4)}} - {{GEP|Anti-venom+(4)}} - 0.9*{{GEP|Araxyte venom sack|4}})/80}}
+| {{NA}}
+| {{Coins|{{GEPT|Extended anti-venom+(4)}} - {{GEP|Anti-venom+(4)}} - {{GEP|Araxyte venom sack|4}}}} {{NamedRef|noherb}}
+|-
+| {{plinkt|Anti-venom+(3)|pic=Anti-venom+(3)}}
+| {{plinkt|Araxyte venom sack|pic=Araxyte venom sack}} (x3)
+| 60
+| 109,980
+| {{Coins|{{GEP|Anti-venom+(4)|0.75}} + {{GEP|Araxyte venom sack|3}}}}
+| {{Coins|{{GEPT|Extended anti-venom+(4)|0.75}} - {{GEP|Anti-venom+(4)|0.75}} - {{GEP|Araxyte venom sack|3}}}}
+| {{Coins|({{GEPT|Extended anti-venom+(4)|0.75}} - {{GEP|Anti-venom+(4)|0.75}} - {{GEP|Araxyte venom sack|3}})/60}}
+| {{Coins|({{GEPT|Extended anti-venom+(4)|0.75}}*61/60 - {{GEP|Anti-venom+(4)|0.75}} - {{GEP|Araxyte venom sack|3}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/60}}
+| {{Coins|({{GEPT|Extended anti-venom+(4)|0.75}}*21/20 - {{GEP|Anti-venom+(4)|0.75}} - {{GEP|Araxyte venom sack|3}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/60}}
+| {{Coins|({{GEPT|Extended anti-venom+(4)|0.75}} - {{GEP|Anti-venom+(4)|0.75}} - 0.9*{{GEP|Araxyte venom sack|3}})/60}}
+| {{Coins|({{GEPT|Extended anti-venom+(4)|0.75}}*21/20 - {{GEP|Anti-venom+(4)|0.75}} - 0.9*{{GEP|Araxyte venom sack|3}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/60}}
+| {{Coins|{{GEPT|Extended anti-venom+(4)|0.75}} - {{GEP|Anti-venom+(4)|0.75}} - {{GEP|Araxyte venom sack|3}}}} {{NamedRef|noherb}}
+|-
+| {{plinkt|Anti-venom+(2)|pic=Anti-venom+(2)}}
+| {{plinkt|Araxyte venom sack|pic=Araxyte venom sack}} (x2)
+| 40
+| 73,320
+| {{Coins|{{GEP|Anti-venom+(4)|0.50}} + {{GEP|Araxyte venom sack|2}}}}
+| {{Coins|{{GEPT|Extended anti-venom+(4)|0.50}} - {{GEP|Anti-venom+(4)|0.50}} - {{GEP|Araxyte venom sack|2}}}}
+| {{Coins|({{GEPT|Extended anti-venom+(4)|0.50}} - {{GEP|Anti-venom+(4)|0.50}} - {{GEP|Araxyte venom sack|2}})/40}}
+| {{Coins|({{GEPT|Extended anti-venom+(4)|0.50}}*41/40 - {{GEP|Anti-venom+(4)|0.50}} - {{GEP|Araxyte venom sack|2}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/40}}
+| {{Coins|({{GEPT|Extended anti-venom+(4)|0.50}}*43/40 - {{GEP|Anti-venom+(4)|0.50}} - {{GEP|Araxyte venom sack|2}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/40}}
+| {{Coins|({{GEPT|Extended anti-venom+(4)|0.50}} - {{GEP|Anti-venom+(4)|0.50}} - 0.9*{{GEP|Araxyte venom sack|2}})/40}}
+| {{Coins|({{GEPT|Extended anti-venom+(4)|0.50}}*43/40 - {{GEP|Anti-venom+(4)|0.50}} - 0.9*{{GEP|Araxyte venom sack|2}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/40}}
+| {{Coins|{{GEPT|Extended anti-venom+(4)|0.50}} - {{GEP|Anti-venom+(4)|0.50}} - {{GEP|Araxyte venom sack|2}}}} {{NamedRef|noherb}}
+|-
+| {{plinkt|Anti-venom+(1)|pic=Anti-venom+(1)}}
+| {{plinkt|Araxyte venom sack|pic=Araxyte venom sack}} (x1)
+| 20
+| 36,660
+| {{Coins|{{GEP|Anti-venom+(4)|0.25}} + {{GEP|Araxyte venom sack|1}}}}
+| {{Coins|{{GEPT|Extended anti-venom+(4)|0.25}} - {{GEP|Anti-venom+(4)|0.25}} - {{GEP|Araxyte venom sack|1}}}}
+| {{Coins|({{GEPT|Extended anti-venom+(4)|0.25}} - {{GEP|Anti-venom+(4)|0.25}} - {{GEP|Araxyte venom sack|1}})/20}}
+| {{Coins|({{GEPT|Extended anti-venom+(4)|0.25}}*21/20 - {{GEP|Anti-venom+(4)|0.25}} - {{GEP|Araxyte venom sack|1}} - 0.05*{{GEP|Amulet of chemistry|0.20}})/20}}
+| {{Coins|({{GEPT|Extended anti-venom+(4)|0.25}}*23/20 - {{GEP|Anti-venom+(4)|0.25}} - {{GEP|Araxyte venom sack|1}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/20}}
+| {{Coins|({{GEPT|Extended anti-venom+(4)|0.25}} - {{GEP|Anti-venom+(4)|0.25}} - 0.9*{{GEP|Araxyte venom sack|1}})/20}}
+| {{Coins|({{GEPT|Extended anti-venom+(4)|0.25}}*23/20 - {{GEP|Anti-venom+(4)|0.25}} - 0.9*{{GEP|Araxyte venom sack|1}} - 0.15*{{GEP|Amulet of chemistry|0.10}})/20}}
+| {{Coins|{{GEPT|Extended anti-venom+(4)|0.25}} - {{GEP|Anti-venom+(4)|0.25}} - {{GEP|Araxyte venom sack|1}}}} {{NamedRef|noherb}})
+|-
+|98
+|{{plinkt|Extended super antifire}}
+|{{plinkt|Super antifire potion}}(4)
+|{{plinkt|Lava scale shard|pic=Lava scale shard 5}} (x4)
+|160
+|440,000 (840,000){{NamedRef|oneTick}}
+|{{Coins|{{GEP|Super antifire potion(4)}} + {{GEP|Lava scale shard|4}}}}
+|{{Coins|{{GEPT|Extended super antifire(4)}} - {{GEP|Super antifire potion(4)}} - {{GEP|Lava scale shard|4}}}}
+|{{Coins|({{GEPT|Extended super antifire(4)}} - {{GEP|Super antifire potion(4)}} - {{GEP|Lava scale shard|4}})/160}}
+|{{NA}}
+|{{NA}}
+|{{Coins|({{GEPT|Extended super antifire(4)}} - {{GEP|Super antifire potion(4)}} - 0.9*{{GEP|Lava scale shard|4}})/160}}
+|{{NA}}
+|{{Coins|{{GEPT|Extended super antifire(4)}} - {{GEP|Super antifire potion(4)}} - {{GEP|Lava scale shard|4}}}} {{NamedRef|noherb}}
+|-
+|98
+|{{plinkt|Extended super antifire}}
+|{{plinkt|Extended antifire}}(4)
+|{{plinkt|Crushed superior dragon bones|txt=Crushed superior<br/>dragon bones}}
+|180
+|450,000
+|{{Coins|{{GEP|Extended antifire(4)}} + {{GEP|Crushed superior dragon bones}}}}
+|{{Coins|{{GEPT|Extended super antifire(4)}} - {{GEP|Extended antifire(4)}} - {{GEP|Crushed superior dragon bones}}}}
+|{{Coins|({{GEPT|Extended super antifire(4)}} - {{GEP|Extended antifire(4)}} - {{GEP|Crushed superior dragon bones}})/180}}
+|{{NA}}
+|{{NA}}
+|{{Coins|({{GEPT|Extended super antifire(4)}} - {{GEP|Extended antifire(4)}} - 0.9*{{GEP|Crushed superior dragon bones}})/180}}
+|{{NA}}
+|{{NA}}
+|}
+{{Reflist}}
+
+==Making barbarian mixes==
+{{StaticCalculator}}
+Barbarian mixes are generally not made as they are rarely traded and may have low value. It is not recommended to make barbarian mixes unless planning to use them. This calculator assumes buying 4 dose potions and decanting them to 2 dose potions as prices of 2 dose potions are less stable.
+{| class="wikitable sortable align-center-1 align-center-2 align-center-4 align-center-6 sticky-header"
+!{{SCP|Herblore}} Level
+! colspan=2 |Potion
+! colspan=2 |Base
+! colspan="2" |Secondary
+!XP
+!Ingredient cost
+!Final potion price
+!Profit/Potion
+!Profit/XP
+|-
+|4
+|{{plinkt|Attack mix(2)|pic=Attack mix(2)}}
+|{{plinkt|Attack potion(2)}}
+|{{plinkt|Roe}}
+|8
+|{{Coins|({{GEP|Attack potion(4)}}/2) + {{GEP|Roe}}}}
+|{{Coins|{{GEPT|Attack mix(2)}}}}
+|{{Coins|{{GEPT|Attack mix(2)}} - ({{GEP|Attack potion(4)}}/2) - {{GEP|Roe}}}}
+|{{Coins|({{GEPT|Attack mix(2)}} - ({{GEP|Attack potion(4)}}/2) - {{GEP|Roe}})/8}}
+|-
+|6
+|{{plinkt|Antipoison mix(2)|pic=Antipoison mix(2)}}
+|{{plinkt|Antipoison(2)}}
+|{{plinkt|Roe}}
+|12
+|{{Coins|({{GEP|Antipoison(4)}}/2) + {{GEP|Roe}}}}
+|{{Coins|{{GEPT|Antipoison mix(2)}}}}
+|{{Coins|{{GEPT|Antipoison mix(2)}} - ({{GEP|Antipoison(4)}}/2) - {{GEP|Roe}}}}
+|{{Coins|({{GEPT|Antipoison mix(2)}} - ({{GEP|Antipoison(4)}}/2) - {{GEP|Roe}})/12}}
+|-
+|9
+|{{plinkt|Relicym's mix(2)|pic=Relicym's mix(2)}}
+|{{plinkt|Relicym's balm(2)}}
+|{{plinkt|Roe}}
+|14
+|{{Coins|({{GEP|Relicym's balm(4)}}/2) + {{GEP|Roe}}}}
+|{{Coins|{{GEPT|Relicym's mix(2)}}}}
+|{{Coins|{{GEPT|Relicym's mix(2)}} - ({{GEP|Relicym's balm(4)}}/2) - {{GEP|Roe}}}}
+|{{Coins|({{GEPT|Relicym's mix(2)}} - ({{GEP|Relicym's balm(4)}}/2) - {{GEP|Roe}})/14}}
+|-
+|14
+|{{plinkt|Strength mix(2)|pic=Strength mix(2)}}
+|{{plinkt|Strength potion(2)}}
+|{{plinkt|Roe}}
+|17
+|{{Coins|({{GEP|Strength potion(4)}}/2) + {{GEP|Roe}}}}
+|{{Coins|{{GEPT|Strength mix(2)}}}}
+|{{Coins|{{GEPT|Strength mix(2)}} - ({{GEP|Strength potion(4)}}/2) - {{GEP|Roe}}}}
+|{{Coins|({{GEPT|Strength mix(2)}} - ({{GEP|Strength potion(4)}}/2) - {{GEP|Roe}})/17}}
+|-
+|24
+|{{plinkt|Restore mix(2)|pic=Restore mix(2)}}
+|{{plinkt|Restore potion(2)}}
+|{{plinkt|Roe}}
+|21
+|{{Coins|({{GEP|Restore potion(4)}}/2) + {{GEP|Roe}}}}
+|{{Coins|{{GEPT|Restore mix(2)}}}}
+|{{Coins|{{GEPT|Restore mix(2)}} - ({{GEP|Restore potion(4)}}/2) - {{GEP|Roe}}}}
+|{{Coins|({{GEPT|Restore mix(2)}} - ({{GEP|Restore potion(4)}}/2) - {{GEP|Roe}})/21}}
+|-
+|29
+|{{plinkt|Energy mix(2)|pic=Energy mix(2)}}
+|{{plinkt|Energy potion(2)}}
+|{{plinkt|Caviar}}
+|23
+|{{Coins|({{GEP|Energy potion(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Energy mix(2)}}}}
+|{{Coins|{{GEPT|Energy mix(2)}} - ({{GEP|Energy potion(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Energy mix(2)}} - ({{GEP|Energy potion(4)}}/2) - {{GEP|Caviar}})/23}}
+|-
+|33
+|{{plinkt|Defence mix(2)|pic=Defence mix(2)}}
+|{{plinkt|Defence potion(2)}}
+|{{plinkt|Caviar}}
+|25
+|{{Coins|({{GEP|Defence potion(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Defence mix(2)}}}}
+|{{Coins|{{GEPT|Defence mix(2)}} - ({{GEP|Defence potion(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Defence mix(2)}} - ({{GEP|Defence potion(4)}}/2) - {{GEP|Caviar}})/25}}
+|-
+|37
+|{{plinkt|Agility mix(2)|pic=Agility mix(2)}}
+|{{plinkt|Agility potion(2)}}
+|{{plinkt|Caviar}}
+|27
+|{{Coins|({{GEP|Agility potion(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Agility mix(2)}}}}
+|{{Coins|{{GEPT|Agility mix(2)}} - ({{GEP|Agility potion(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Agility mix(2)}} - ({{GEP|Agility potion(4)}}/2) - {{GEP|Caviar}})/27}}
+|-
+|40
+|{{plinkt|Combat mix(2)|pic=Combat mix(2)}}
+|{{plinkt|Combat potion(2)}}
+|{{plinkt|Caviar}}
+|28
+|{{Coins|({{GEP|Combat potion(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Combat mix(2)}}}}
+|{{Coins|{{GEPT|Combat mix(2)}} - ({{GEP|Combat potion(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Combat mix(2)}} - ({{GEP|Combat potion(4)}}/2) - {{GEP|Caviar}})/28}}
+|-
+|42
+|{{plinkt|Prayer mix(2)|pic=Prayer mix(2)}}
+|{{plinkt|Prayer potion(2)}}
+|{{plinkt|Caviar}}
+|29
+|{{Coins|({{GEP|Prayer potion(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Prayer mix(2)}}}}
+|{{Coins|{{GEPT|Prayer mix(2)}} - ({{GEP|Prayer potion(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Prayer mix(2)}} - ({{GEP|Prayer potion(4)}}/2) - {{GEP|Caviar}})/29}}
+|-
+|47
+|{{plinkt|Superattack mix(2)|pic=Superattack mix(2)}}
+|{{plinkt|Super attack(2)}}
+|{{plinkt|Caviar}}
+|33
+|{{Coins|({{GEP|Super attack(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Superattack mix(2)}}}}
+|{{Coins|{{GEPT|Superattack mix(2)}} - ({{GEP|Super attack(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Superattack mix(2)}} - ({{GEP|Super attack(4)}}/2) - {{GEP|Caviar}})/33}}
+|-
+|51
+|{{plinkt|Anti-poison supermix(2)|pic=Anti-poison supermix(2)}}
+|{{plinkt|Superantipoison(2)}}
+|{{plinkt|Caviar}}
+|35
+|{{Coins|({{GEP|Superantipoison(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Anti-poison supermix(2)}}}}
+|{{Coins|{{GEPT|Anti-poison supermix(2)}} - ({{GEP|Superantipoison(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Anti-poison supermix(2)}} - ({{GEP|Superantipoison(4)}}/2) - {{GEP|Caviar}})/35}}
+|-
+|53
+|{{plinkt|Fishing mix(2)|pic=Fishing mix(2)}}
+|{{plinkt|Fishing potion(2)}}
+|{{plinkt|Caviar}}
+|38
+|{{Coins|({{GEP|Fishing potion(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Fishing mix(2)}}}}
+|{{Coins|{{GEPT|Fishing mix(2)}} - ({{GEP|Fishing potion(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Fishing mix(2)}} - ({{GEP|Fishing potion(4)}}/2) - {{GEP|Caviar}})/38}}
+|-
+|56
+|{{plinkt|Super energy mix(2)|pic=Super energy mix(2)}}
+|{{plinkt|Super energy(2)}}
+|{{plinkt|Caviar}}
+|39
+|{{Coins|({{GEP|Super energy(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Super energy mix(2)}}}}
+|{{Coins|{{GEPT|Super energy mix(2)}} - ({{GEP|Super energy(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Super energy mix(2)}} - ({{GEP|Super energy(4)}}/2) - {{GEP|Caviar}})/39}}
+|-
+|58
+|{{plinkt|Hunting mix(2)|pic=Hunting mix(2)}}
+|{{plinkt|Hunter potion(2)}}
+|{{plinkt|Caviar}}
+|40
+|{{Coins|({{GEP|Hunter potion(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Hunting mix(2)}}}}
+|{{Coins|{{GEPT|Hunting mix(2)}} - ({{GEP|Hunter potion(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Hunting mix(2)}} - ({{GEP|Hunter potion(4)}}/2) - {{GEP|Caviar}})/40}}
+|-
+|59
+|{{plinkt|Super str. mix(2)|pic=Super str. mix(2)}}
+|{{plinkt|Super strength(2)}}
+|{{plinkt|Caviar}}
+|42
+|{{Coins|({{GEP|Super strength(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Super str. mix(2)}}}}
+|{{Coins|{{GEPT|Super str. mix(2)}} - ({{GEP|Super strength(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Super str. mix(2)}} - ({{GEP|Super strength(4)}}/2) - {{GEP|Caviar}})/42}}
+|-
+|61
+|{{plinkt|Magic essence mix(2)|pic=Magic essence mix(2)}}
+|{{plinkt|Magic essence(2)}}
+|{{plinkt|Caviar}}
+|43
+|{{Coins|{{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Magic essence mix(2)}}}}
+|{{Coins|{{GEPT|Magic essence mix(2)}} - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Magic essence mix(2)}} - {{GEP|Caviar}})/43}}
+|-
+|67
+|{{plinkt|Super restore mix(2)|pic=Super restore mix(2)}}
+|{{plinkt|Super restore(2)}}
+|{{plinkt|Caviar}}
+|48
+|{{Coins|({{GEP|Super restore(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Super restore mix(2)}}}}
+|{{Coins|{{GEPT|Super restore mix(2)}} - ({{GEP|Super restore(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Super restore mix(2)}} - ({{GEP|Super restore(4)}}/2) - {{GEP|Caviar}})/48}}
+|-
+|71
+|{{plinkt|Super def. mix(2)|pic=Super def. mix(2)}}
+|{{plinkt|Super defence(2)}}
+|{{plinkt|Caviar}}
+|50
+|{{Coins|({{GEP|Super defence(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Super def. mix(2)}}}}
+|{{Coins|{{GEPT|Super def. mix(2)}} - ({{GEP|Super defence(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Super def. mix(2)}} - ({{GEP|Super defence(4)}}/2) - {{GEP|Caviar}})/50}}
+|-
+|74
+|{{plinkt|Antidote+ mix(2)|pic=Antidote+ mix(2)}}
+|{{plinkt|Antidote+(2)}}
+|{{plinkt|Caviar}}
+|52
+|{{Coins|({{GEP|Antidote+(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Antidote+ mix(2)}}}}
+|{{Coins|{{GEPT|Antidote+ mix(2)}} - ({{GEP|Antidote+(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Antidote+ mix(2)}} - ({{GEP|Antidote+(4)}}/2) - {{GEP|Caviar}})/52}}
+|-
+|75
+|{{plinkt|Antifire mix(2)|pic=Antifire mix(2)}}
+|{{plinkt|Antifire potion(2)}}
+|{{plinkt|Caviar}}
+|53
+|{{Coins|({{GEP|Antifire potion(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Antifire mix(2)}}}}
+|{{Coins|{{GEPT|Antifire mix(2)}} - ({{GEP|Antifire potion(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Antifire mix(2)}} - ({{GEP|Antifire potion(4)}}/2) - {{GEP|Caviar}})/53}}
+|-
+|80
+|{{plinkt|Ranging mix(2)|pic=Ranging mix(2)}}
+|{{plinkt|Ranging potion(2)}}
+|{{plinkt|Caviar}}
+|54
+|{{Coins|({{GEP|Ranging potion(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Ranging mix(2)}}}}
+|{{Coins|{{GEPT|Ranging mix(2)}} - ({{GEP|Ranging potion(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Ranging mix(2)}} - ({{GEP|Ranging potion(4)}}/2) - {{GEP|Caviar}})/54}}
+|-
+|83
+|{{plinkt|Magic mix(2)|pic=Magic mix(2)}}
+|{{plinkt|Magic potion(2)}}
+|{{plinkt|Caviar}}
+|57
+|{{Coins|({{GEP|Magic potion(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Magic mix(2)}}}}
+|{{Coins|{{GEPT|Magic mix(2)}} - ({{GEP|Magic potion(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Magic mix(2)}} - ({{GEP|Magic potion(4)}}/2) - {{GEP|Caviar}})/57}}
+|-
+|85
+|{{plinkt|Zamorak mix(2)|pic=Zamorak mix(2)}}
+|{{plinkt|Zamorak brew(2)}}
+|{{plinkt|Caviar}}
+|58
+|{{Coins|({{GEP|Zamorak brew(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Zamorak mix(2)}}}}
+|{{Coins|{{GEPT|Zamorak mix(2)}} - ({{GEP|Zamorak brew(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Zamorak mix(2)}} - ({{GEP|Zamorak brew(4)}}/2) - {{GEP|Caviar}})/58}}
+|-
+|86
+|{{plinkt|Stamina mix(2)|pic=Stamina mix(2)}}
+|{{plinkt|Stamina potion(2)}}
+|{{plinkt|Caviar}}
+|60
+|{{Coins|({{GEP|Stamina potion(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Stamina mix(2)}}}}
+|{{Coins|{{GEPT|Stamina mix(2)}} - ({{GEP|Stamina potion(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Stamina mix(2)}} - ({{GEP|Stamina potion(4)}}/2) - {{GEP|Caviar}})/60}}
+|-
+|91
+|{{plinkt|Extended antifire mix(2)|pic=Extended antifire mix(2)}}
+|{{plinkt|Extended antifire(2)}}
+|{{plinkt|Caviar}}
+|61
+|{{Coins|({{GEP|Extended antifire(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Extended antifire mix(2)}}}}
+|{{Coins|{{GEPT|Extended antifire mix(2)}} - ({{GEP|Extended antifire(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Extended antifire mix(2)}} - ({{GEP|Extended antifire(4)}}/2) - {{GEP|Caviar}})/61}}
+|-
+|92
+|{{plinkt|Ancient mix(2)|pic=Ancient mix(2)}}
+|{{plinkt|Ancient brew(2)}}
+|{{plinkt|Caviar}}
+|63
+|{{Coins|({{GEP|Ancient brew(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Ancient mix(2)}}}}
+|{{Coins|{{GEPT|Ancient mix(2)}} - ({{GEP|Ancient brew(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Ancient mix(2)}} - ({{GEP|Ancient brew(4)}}/2) - {{GEP|Caviar}})/63}}
+|-
+|98
+|{{plinkt|Super antifire mix(2)|pic=Super antifire mix(2)}}
+|{{plinkt|Super antifire potion(2)}}
+|{{plinkt|Caviar}}
+|70
+|{{Coins|({{GEP|Super antifire potion(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Super antifire mix(2)}}}}
+|{{Coins|{{GEPT|Super antifire mix(2)}} - ({{GEP|Super antifire potion(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Super antifire mix(2)}} - ({{GEP|Super antifire potion(4)}}/2) - {{GEP|Caviar}})/70}}
+|-
+|99
+|{{plinkt|Extended super antifire mix(2)|pic=Extended super antifire mix(2)}}
+|{{plinkt|Extended super antifire(2)}}
+|{{plinkt|Caviar}}
+|78
+|{{Coins|({{GEP|Extended super antifire(4)}}/2) + {{GEP|Caviar}}}}
+|{{Coins|{{GEPT|Extended super antifire mix(2)}}}}
+|{{Coins|{{GEPT|Extended super antifire mix(2)}} - ({{GEP|Extended super antifire(4)}}/2) - {{GEP|Caviar}}}}
+|{{Coins|({{GEPT|Extended super antifire mix(2)}} - ({{GEP|Extended super antifire(4)}}/2) - {{GEP|Caviar}})/78}}
+|-
+|}
+
+==Making tar==
+An alternative, potentially cheaper method of training Herblore is making tar. This requires fewer clicks than potion making, since twice as many actions are performed before banking and the duration of each action is longer.
+
+XP per hour is calculated at approximately 78 inventories fully processed per hour. Depending on bank efficiency, actual rates may be less.
+
+If planning to train Herblore by making tar, it would be wise to buy or stockpile [[Swamp tar]] in advance. The buy limit of swamp tar is only 13,000 which is only enough tar to last approximately half an hour before running out.
+{| class="wikitable sortable align-center-1 align-center-2 align-center-4 align-center-6"
+!{{SCP|Herblore}} Level
+! colspan="2" |Result
+! colspan="2" |Base
+! colspan="2" |Secondary
+!XP
+!XP/Hour
+!Ingredient cost
+!Cost/XP
+!Profit/Craft
+!Profit/XP
+|-
+|19
+|{{plinkt|Guam tar}} x15
+|{{plinkt|Guam leaf}}
+|{{plinkt|Swamp tar}} x15
+|30
+|61,000
+|{{Coins|{{GEP|Guam leaf}} + ({{GEP|Swamp tar}} * 15)}}
+|{{Coins|({{GEP|Guam leaf}} + ({{GEP|Swamp tar}} * 15)) / 30}}
+|{{Coins|({{GEPT|Guam tar}} * 15) - ({{GEP|Guam leaf}} + ({{GEP|Swamp tar}}*15))}}
+|{{Coins|(({{GEPT|Guam tar}} * 15) - ({{GEP|Guam leaf}} + ({{GEP|Swamp tar}}*15))) / 30}}
+|-
+|31
+|{{plinkt|Marrentill tar}} x15
+|{{plinkt|Marrentill}}
+|{{plinkt|Swamp tar}} x15
+|42.5 
+|86,000
+|{{Coins|{{GEP|Marrentill}} + ({{GEP|Swamp tar}}*15)}}
+|{{Coins|({{GEP|Marrentill}} + ({{GEP|Swamp tar}}*15))/42.5}}
+|{{Coins|({{GEPT|Marrentill tar}} * 15) - ({{GEP|Marrentill}} + ({{GEP|Swamp tar}} * 15))}}
+|{{Coins|(({{GEPT|Marrentill tar}} * 15) - ({{GEP|Marrentill}} + ({{GEP|Swamp tar}} * 15))) / 42.5}}
+|-
+|39
+|{{plinkt|Tarromin tar}} x15
+|{{plinkt|Tarromin}}
+|{{plinkt|Swamp tar}} x15
+|55
+|110,000
+|{{Coins|{{GEP|Tarromin}} + ({{GEP|Swamp tar}}*15)}}
+|{{Coins|({{GEP|Tarromin}} + ({{GEP|Swamp tar}}*15))/55}}
+|{{Coins|({{GEPT|Tarromin tar}} * 15) - ({{GEP|Tarromin}} + ({{GEP|Swamp tar}} * 15))}}
+|{{Coins|(({{GEPT|Tarromin tar}} * 15) - ({{GEP|Tarromin}} + ({{GEP|Swamp tar}} * 15))) / 55}}
+|-
+|44
+|{{plinkt|Harralander tar}} x15
+|{{plinkt|Harralander}}
+|{{plinkt|Swamp tar}} x15
+|72.5 
+|145,000
+|{{Coins|{{GEP|Harralander}} + ({{GEP|Swamp tar}}*15)}}
+|{{Coins|({{GEP|Harralander}} + ({{GEP|Swamp tar}}*15))/72.5}}
+|{{Coins|({{GEPT|Harralander tar}} * 15) - ({{GEP|Harralander}} + ({{GEP|Swamp tar}} * 15))}}
+|{{Coins|(({{GEPT|Harralander tar}} * 15) - ({{GEP|Harralander}} + ({{GEP|Swamp tar}} * 15))) / 72.5}}
+|-
+|55
+|{{plinkt|Irit tar}} x15
+|{{plinkt|Irit leaf}}
+|{{plinkt|Swamp tar}} x15
+|85
+|170,000
+|{{Coins|{{GEP|Irit leaf}} + ({{GEP|Swamp tar}}*15)}}
+|{{Coins|({{GEP|Irit leaf}} + ({{GEP|Swamp tar}}*15))/55}}
+|{{Coins|({{GEPT|Irit tar}} * 15) - ({{GEP|Irit leaf}} + ({{GEP|Swamp tar}} * 15))}}
+|{{Coins|(({{GEPT|Irit tar}} * 15) - ({{GEP|Irit leaf}} + ({{GEP|Swamp tar}} * 15))) / 55}}
+|}
+
+==Herb cleaning==
+{{StaticCalculator}}
+
+[[File:Auto-cleaning herbs.gif|thumb|Auto-cleaning herbs]]
+[[File:Manually cleaning herbs.gif|thumb|Manually cleaning herbs, while more click-intensive, can be much quicker.]]
+Cleaning grimy herbs is a slow but easy and profitable method to training [[Herblore]]. Since [[Update:A Porcine of Interest|an update]] on [[10 September]] [[2020]], cleaning grimy herbs automatically cleans all herbs in the inventory. Players may also choose to use [[Zahur]], an NPC in [[Nardah]], to clean the herbs for them. This will however cost the player GP, resulting in loss instead of profit.  
+
+By using the auto-clean method, you can expect to clean up to 3,000 herbs per hour. Manually clicking on the herbs can easily double the speed of cleaning, and a fast player can expect over 10,000 cleaned herbs per hour, increasing the experience and profit per hour accordingly.
+
+Be wary as set GE prices and player prices differ as the economy changes, profits may be more or less.
+
+'''Tip:''' Consider cleaning herbs on a touchscreen device as it may be faster or more comfortable for longer durations.
+
+The following rates assume you are cleaning an average of 10,000 herbs per hour. '''(Note that using the "auto-clean" feature yields 30% of the below experience rates per hour).'''
+{|class="wikitable sortable align-center-1 align-left-2 align-center-3 align-center-6" style="text-align:right"
+!rowspan="2"|{{SCP|Herblore}} Level
+!rowspan="2"|Herb
+!colspan="3"|Grimy
+!colspan="3"|Clean
+!rowspan="2"|{{SCP|Herblore}} Clean XP
+!rowspan="2"|Profit
+!rowspan="2"|XP/Hour
+!rowspan="2"|Profit/Hour
+|-
+! class=unsortable |Icon
+! Price
+! Volume
+! class=unsortable |Icon
+! Price
+! Volume
+|-
+{{CleanHerbLine|herb=Guam leaf|level=3|xp=2.5|rate=10000}}
+|-
+{{CleanHerbLine|herb=Marrentill|level=5|xp=3.8|rate=10000}}
+|-
+{{CleanHerbLine|herb=Tarromin|level=11|xp=5.0|rate=10000}}
+|-
+{{CleanHerbLine|herb=Harralander|level=20|xp=6.3|rate=10000}}
+|-
+{{CleanHerbLine|herb=Ranarr weed|level=25|xp=7.5|rate=10000}}
+|-
+{{CleanHerbLine|herb=Toadflax|level=30|xp=8.0|rate=10000}}
+|-
+{{CleanHerbLine|herb=Irit leaf|level=40|xp=8.8|rate=10000}}
+|-
+{{CleanHerbLine|herb=Avantoe|level=48|xp=10.0|rate=10000}}
+|-
+{{CleanHerbLine|herb=Kwuarm|level=54|xp=11.3|rate=10000}}
+|-
+{{CleanHerbLine|herb=Huasca|level=58|xp=11.8|rate=10000}}
+|-
+{{CleanHerbLine|herb=Snapdragon|level=59|xp=11.8|rate=10000}}
+|-
+{{CleanHerbLine|herb=Cadantine|level=65|xp=12.5|rate=10000}}
+|-
+{{CleanHerbLine|herb=Lantadyme|level=67|xp=13.1|rate=10000}}
+|-
+{{CleanHerbLine|herb=Dwarf weed|level=70|xp=13.8|rate=10000}}
+|-
+{{CleanHerbLine|herb=Torstol|level=75|xp=15.0|rate=10000}}
+|}
+
+===Degrime===
+An alternative, less click-intensive method, is to use the [[degrime]] [[Arceuus spell]], requiring 70 [[Magic]] and the completion of [[A Kingdom Divided]] to be cast. You can cast approximately 600 casts per hour (47-50k magic xp/h), while potentially making profit.
+
+{{DegrimeTable}}
+
+==Making Guthix rest==
+{{See also|Money making guide/Making Guthix rests}}
+A medium-intensity but profitable way to train Herblore is to make [[Guthix rest]], requiring 18 Herblore and partial completion of the [[One Small Favour]] quest. Brewing Guthix rest differs from other methods of training the skill, as care must be taken to not add extra herbs to the [[herb tea mix]]; doing so grants no experience and ruins the tea. If all ingredients are in the player's inventory, they can make the tea in one step, and subsequent teas are automatically made after making just one of them, granting 59 experience for each tea. Players should note that the [[amulet of chemistry]] has no effect when brewing Guthix rest. 
+
+Making Guthix Rest requires a [[cup of hot water]], 2 [[Guam leaf|guam]], 1 [[marrentill]], and  1 [[harralander]]. Using a cup of hot water with any of the herbs will start the process. [[Ironman Mode|Ironman]] accounts or anyone looking to save money on ingredients can acquire cups of hot water by casting [[Humidify]] on an [[empty cup]] then using the [[cup of water]] on a range.
+
+Due to the number of ingredients per tea, only five can be made per inventory, requiring 5 cups of hot water, 10 guam, 5 marrentill, and 5 harralander. 
+
+With moderate concentration it is possible to make around 1400 cups of 3-dose Guthix rest per hour, costing {{Coins|{{GEP|Cup of hot water|1400}}+{{GEP|Guam leaf|2800}}+{{GEP|Marrentill|1400}}+{{GEP|Harralander|1400}}}}. This results in 82,600 Herblore experience gained and a profit of {{Coins|{{GEPT|Guthix rest(4)|1050}}-({{GEP|Cup of hot water|1400}}+{{GEP|Guam leaf|2800}}+{{GEP|Marrentill|1400}}+{{GEP|Harralander|1400}})}} when using [[Bob Barter (herbs)|Bob Barter]] at the [[Grand Exchange]] to decant the teas into 4-dose variants before selling.
+
+{| class="wikitable sortable align-center-1 align-center-2 align-center-4 align-center-6"
+!{{SCP|Herblore}} Level
+! colspan="2" |Potion
+! colspan="2" |Base
+! colspan="2" |Secondary
+!XP
+!XP/Hour
+!Ingredient cost
+!Cost/XP
+!Profit/Potion
+!Profit/XP
+!Profit/Hour
+|-
+|18
+|{{plinkt|Guthix rest}}
+|{{plinkt|Cup of hot water}}
+|{{plinkp|Guam leaf}}<br />{{plinkp|Marrentill}}<br />{{plinkp|Harralander}}||[[Guam leaf]] (x2)<br />[[Marrentill]]<br />[[Harralander]]
+|59
+|82,600
+|{{Coins|{{GEP|Guam leaf|2)}}+{{GEP|Marrentill}}+{{GEP|Harralander}}}}
+|{{Coins|({{GEP|Cup of hot water}}+{{GEP|Guam leaf|2)}}+{{GEP|Marrentill}}+{{GEP|Harralander}})/59}}
+|{{Coins|{{GEPT|Guthix rest(4)|0.75}}-{{GEP|Cup of hot water}}-{{GEP|Guam leaf|2)}}-{{GEP|Marrentill}}-{{GEP|Harralander}}}}
+|{{Coins|({{GEPT|Guthix rest(4)|0.75}}-({{GEP|Cup of hot water}}+{{GEP|Guam leaf|2}}+{{GEP|Marrentill}}+{{GEP|Harralander}}))/59}}
+|{{Coins|{{GEPT|Guthix rest(4)|1050}}-({{GEP|Cup of hot water|1400}}+{{GEP|Guam leaf|2800}}+{{GEP|Marrentill|1400}}+{{GEP|Harralander|1400}})}}
+|}
+
+==Level 60+/81+: Mastering Mixology==
+{{Main|Mastering Mixology}}
+At level 60 and with completion of [[Children of the Sun]], players can go to [[Aldarin]] and take part in the [[Mastering Mixology]] minigame, however it will become more efficient at higher levels, with the last unlock at level 81 Herblore. Mastering Mixology does not require specific herbs or any secondaries, and grants much more experience per herb compared to other methods. It is also the only source of some powerful utility items and features, such as the [[Prescription goggles]], [[Alchemist's amulet]], [[Chugging barrel]], and [[Potion storage]], so it can be advisable to do even if Herblore experience is not needed. A player with level 81 Herblore can expect to earn up to 105k xp/hour.
+
+{{Training guides}}
+[[Category:Herblore]]
+[[Category:Members]]

@@ -1,0 +1,10 @@
+{{Iron Guide Links}}
+[[File:Hitpoints.png|left]]
+[[Hitpoints]] training is not significantly different on an ironman than a main account and is most often trained through combat. For more information about combat training on an Ironman, see:
+*[[Ironman Guide/Melee]]
+*[[Ironman Guide/Ranged]]
+*[[Ironman Guide/Magic]]
+
+For general Hitpoints training advice, including non-combat methods, see [[pay-to-play Hitpoints training]].
+
+{{Training guides}}

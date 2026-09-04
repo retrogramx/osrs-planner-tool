@@ -1,0 +1,617 @@
+{{External|rs|rsc=Smithing training}}
+{{Redirect|Smithing training|the free players' guide|Free-to-play Smithing training}}
+
+This article gives tips about training [[Smithing]].
+
+==Fastest experience==
+===Levels 1–39: Questing===
+Early levels can be skipped by completing [[Quest experience rewards#Smithing|quests that give Smithing experience]]. Completing [[The Knight's Sword]], [[Sleeping Giants]], [[Elemental Workshop I]] and [[Elemental Workshop II|II]], [[The Giant Dwarf]], [[Heroes' Quest]], and [[Recipe for Disaster/Freeing Pirate Pete|Freeing Pirate Pete]] subquest of [[Recipe for Disaster]] grants a total of 36,982 [[experience]], which will get the player from level 1 to 39. Players would then only need to smith 2 [[Iron platebody|iron platebodies]] to get level 40 Smithing, where they can start smelting gold bars in the Blast Furnace. Even without Heroes' Quest, this method yields 34,725 experience, requiring players to make only 20 iron platebodies to get to level 40. Notably, [[The Knight's Sword]] grants 12,725 experience and can be completed in less than 10 minutes.
+
+===Levels 1–40: Anvil smithing===
+From level 1 to 40, smith various items at the anvil just south of the west [[Varrock]] bank. Make the highest-level item available for the fastest experience rates. Higher-levelled items require more than one bar to make, fewer actions will be required and this will result in more experience per hour. This will result in a loss, but the overall loss is relatively small as reaching level 40 would only take less than an hour.
+
+The items and materials needed to reach level 40 are shown in the table below. While there are some items which are potentially cheaper to make, these low-level items are uncommonly traded on the Grand Exchange and their prices fluctuate a lot. Players who wish to save money are advised to do quests that give Smithing experience to skip most of the early levels.
+
+{| class="wikitable align-center-1 align-center-2 align-center-3"
+!Levels
+!XP needed
+!colspan="2" | Item
+!Bars required (each)
+!XP each
+!XP/h
+!# for goal
+!Bars required (total)
+!Profit
+|-
+|1–5
+|388
+|{{plinkt|Bronze dagger}}
+|1
+|12.5
+|13,900
+|32
+|32 {{plink|Bronze bar}}
+|{{Coins|({{GEP|Bronze dagger|32}} - {{GEP|Bronze bar|32}})}}
+|-
+|5–9
+|581
+|{{plinkt|Bronze scimitar}}
+|2
+|25
+|25,700
+|24
+|48 {{plink|Bronze bar}}
+|{{Coins|({{GEP|Bronze scimitar|24}} - {{GEP|Bronze bar|48}})}}
+|-
+|9–18
+|2,554
+|{{plinkt|Bronze warhammer}}
+|3
+|37.5
+|36,200
+|69
+|207 {{plink|Bronze bar}}
+|{{Coins|({{GEP|Bronze warhammer|69}} - {{GEP|Bronze bar|207}})}}
+|-
+|18–24
+|3,505
+|{{plinkt|Bronze platebody}}
+|5
+|62.5
+|52,100
+|57
+|285 {{plink|Bronze bar}}
+|{{Coins|({{GEP|Bronze platebody|57}} - {{GEP|Bronze bar|285}})}}
+|-
+|24–33
+|11,219
+|{{plinkt|Iron warhammer}}
+|3
+|75
+|72,300
+|150
+|450 {{plink|Iron bar}}
+|{{Coins|({{GEP|Iron warhammer|150}} - {{GEP|Iron bar|450}})}}
+|-
+|33–39
+|15,401
+|{{plinkt|Iron platebody}}
+|5
+|125
+|104,200
+|124
+|620 {{plink|Iron bar}}
+|{{Coins|({{GEP|Iron platebody|124}} - {{GEP|Iron bar|620}})}}
+|-
+|39–40
+|3,756
+|{{plinkt|Steel warhammer}}
+|3
+|112.5
+|108,500
+|34
+|102 {{plink|Steel bar}}
+|{{Coins|({{GEP|Steel warhammer|34}} - {{GEP|Steel bar|102}})}}
+|-
+!1–40
+!37,224
+!{{NA||colspan=6}}
+!572 {{plink|Bronze bar}}, 1,070 {{plink|Iron bar}},<br />
+and 102 {{plink|Steel bar}}
+!{{Coins|({{GEP|Bronze dagger|32}}+{{GEP|Bronze scimitar|24}}+{{GEP|Bronze warhammer|69}}+{{GEP|Bronze platebody|57}}+{{GEP|Iron warhammer|150}}+{{GEP|Iron platebody|124}}+{{GEP|Steel warhammer|34}}) - ({{GEP|Bronze bar|572}}+{{GEP|Iron bar|1070}}+{{GEP|Steel bar|102}})}}
+|}
+
+===Levels 40–99: Blast Furnace gold bars===
+{{Equipment
+| align = right
+| head = Graceful hood
+| cape = Spottier cape
+| neck = 
+| ammo = 
+| weapon = 
+| torso = Graceful top
+| legs = Graceful legs
+| shield = 
+| gloves = Goldsmith gauntlets
+| boots = Boots of lightness
+| ring = Ring of endurance
+}}
+Smelting [[gold bar]]s at the [[Blast Furnace]] becomes the fastest viable training method at level 40. This method costs money, and it can be fairly expensive depending on the Grand Exchange prices.
+
+For optimal rates, players will need [[goldsmith gauntlets]] for more experience per [[gold ore]] (increased from 22.5 to 56.2) and [[ice gloves]] to quickly cool the bar dispenser. The goldsmith gauntlets require completion of [[Family Crest]], and the ice gloves level 50 Mining (boostable) and killing the [[Ice Queen]]. Use [[stamina potion]]s to restore run energy. If available, also wear [[weight-reducing clothing]] and the [[ring of endurance]] with at least 500 charges to reduce run energy consumption.
+
+To gain access to [[Keldagrim]], talk to the [[Dwarven Boatman]] inside the dungeon east of [[Rellekka]] to start [[The Giant Dwarf]]. Once the quest has been started, players can get to the Blast Furnace by using the [[Minigame Teleport]] there or using the minecart from the Grand Exchange to Keldagrim. Use one of the official Blast Furnace worlds where dwarf NPCs will keep the furnace running for 72,000 coins per hour. Below level 60, the [[Blast Furnace Foreman]] will require a payment every 10 minutes to be able to use the furnace.
+
+To start off, deposit an inventory of gold ore into the ore belt while wearing goldsmith gauntlets; this is done to fill the bar dispenser and ensure that, with sufficient speed, you will never have to wait for the bar dispenser to be full. After that, this method goes as follows:
+# Withdraw an inventory of gold ore at the bank chest and deposit it into the conveyor belt.
+# '''AFTER''' the gold bars smelt and you gain experience (ensuring the goldsmith gauntlet experience rate), equip the ice gloves and quickly run to the bar dispenser to grab the bars.
+# Deposit the gold bars at the bank and withdraw more gold ore.  Re-equip goldsmith gauntlets.
+# Withdraw a stamina potion dose and drink it on the way to the conveyor belt to restore run energy when needed.
+
+The experience rates and costs are shown in the table below. The experience rates can vary depending on performance. The costs include the hourly Blast Furnace fee and the profit from selling the gold bars, and assume using 40 stamina potion doses per hour.
+{{#vardefine:BFCost|{{#expr:72000+{{GEP|Stamina potion(4)|10}}}}}}
+{| class="wikitable align-left-1" style="text-align:right;"
+!Method
+!XP/h
+!GP/h
+!GP/XP
+!Ores needed<br>(40–99) 
+!Total profit<br>(40–99)
+|-
+|Goldsmith gauntlets
+|380,000
+|{{Coins|{{#expr:380000/56.2*(-{{GEP|Gold ore}}+{{GEPT|Gold bar}})-{{#var:BFCost}} round 0}}}}
+|{{Coins|(380000/56.2*(-{{GEP|Gold ore}}+{{GEPT|Gold bar}})-{{#var:BFCost}})/380000}}
+|231,267
+|{{Coins|{{#expr:(380000/56.2*(-{{GEP|Gold ore}}+{{GEPT|Gold bar}})-{{#var:BFCost}})/380000*12997207 round 0}}}}
+|-
+|No goldsmith gauntlets
+|164,000
+|{{Coins|{{#expr:164000/22.5*(-{{GEP|Gold ore}}+{{GEPT|Gold bar}})-{{#var:BFCost}} round 0}}}}
+|{{Coins|(164000/22.5*(-{{GEP|Gold ore}}+{{GEPT|Gold bar}})-{{#var:BFCost}})/164000}}
+|577,654
+|{{Coins|{{#expr:(164000/22.5*(-{{GEP|Gold ore}}+{{GEPT|Gold bar}})-{{#var:BFCost}})/164000*12997207 round 0}}}}
+|-
+|[[Smithing cape]]
+|410,000
+|{{Coins|{{#expr:410000/56.2*(-{{GEP|Gold ore}}+{{GEPT|Gold bar}})-{{#var:BFCost}} round 0}}}}
+|{{Coins|(410000/56.2*(-{{GEP|Gold ore}}+{{GEPT|Gold bar}})-{{#var:BFCost}})/410000}}
+|{{NA}}
+|{{NA}}
+|}
+
+To speed up banking, you can either:  
+* lock the inventory slots where your goldsmith gauntlets or ice gloves are.
+OR 
+* clear the placeholders for goldsmith gauntlets and ice gloves, and fill the bank with [[bank filler]]s. This way, the player can quickly deposit the bars without depositing any necessary items.
+
+Additionally to both options, have gold ore and 1-dose stamina potions near the 'Deposit inventory' button.
+
+With fast and accurate clicks, players can minimise downtime with a technique called 0-tick banking. To do this, the player needs to deposit the bars, withdraw gold ore, and start running back to the conveyor belt on the same tick. The easiest way to start running back to the conveyor belt is to click through the chatbox on resizable client layout. Enable 'Transparent chatbox' and 'Click through transparent chatbox' in the settings. Consistent 0-tick banking will increase experience rates to 390,000 experience per hour, or 420,000 experience per hour when wearing the Smithing cape.
+
+Gold bars can be smelted faster at the Blast Furnace by using one or three runners. Instead of banking for the ores, have runners trade more gold ore in exchange for gold bars. Because this method is '''very expensive''', it is only recommended for wealthy players who wish to gain experience as fast as possible and do not mind spending a lot of money. This method also requires good coordination and accurate clicks, as the player will need to quickly accept trades and smelt bars at the furnace.
+
+The experience rates and costs are shown in the table below. The profit rates assume paying 7 million coins per hour per runner and paying for the gold ore.
+
+{| class="wikitable"
+!Method
+!XP/h
+!GP/XP
+|-
+|1 runner
+|530,000
+|{{Coins|(-7000000-72000-530000/56.2*{{GEP|Gold ore}})/530000}}
+|-
+|3 runners
+|680,000
+|{{Coins|(-7000000*3-72000-680000/56.2*{{GEP|Gold ore}})/680000}}
+|}
+'''NOTE:''' It is highly recommended to ensure you don't have any '''uncollected''' '''[[Gold bar|gold bars]]''' in the [[bar dispenser]] when smelting additional [[gold ore]], otherwise only a small portion of the experience is awarded when the ore finishes smelting; the remainder is granted upon collecting the bars, making it a lot more click-intensive to maintain high xp rates with the [[goldsmith gauntlets]]. 
+
+''To maintain maximum efficiency with extra bars in the dispenser, you need to have goldsmith gauntlets equipped for the initial partial XP drop, equip your ice gloves and click the bar dispenser to open the collection dialogue, then go back to hover over the goldsmith gauntlets, and confirm the dialogue (by pressing 1 or Space). Then re-equip the gauntlets '''before the next game tick''', when the remaining experience is applied.''
+
+==Other methods==
+For anvil smithing methods, the closest anvil to a bank is in the [[Prifddinas#Trahaearn district|Trahaearn district of Prifddinas]]. Players who have not completed [[Song of the Elves]] should use the anvil just south of the west [[Varrock]] bank. The anvil just south of the [[Yanille]] bank is slightly farther than the one in Varrock.
+
+The experience rates for anvil smithing depends on the type of metal being smithed and number of bars being used per item. The following table shows the calculated experience per hour of each type of metal bar vs. how many bars are used per item, assuming an optimal 11-tick bank time, as possible at the south-eastern [[Prifddinas]] bank. The cost and level requirements can be checked by using the [[Smithing#Smithing tables|Smithing tables]]. Note that this does not factor in the [[Smiths' Uniform]], with which experience rates increase from about 15% to 25% depending on what is being smithed.
+{| class="wikitable"
+|+XP/hr ranked by # of bars used per item
+!# of bars
+!{{plinkp|Bronze bar}}
+!{{plinkp|Iron bar}}
+!{{plinkp|Steel bar}}
+!{{plinkp|Mithril bar}}
+!{{plinkp|Adamantite bar}}
+!{{plinkp|Runite bar}}
+|-
+|1 bar
+|13,900
+|27,700
+|41,600
+|55,500
+|69,300
+|83,200
+|-
+|2 bars
+|25,700
+|51,300
+|77,000
+|102,600
+|128,300
+|153,900
+|-
+|3 bars
+|36,200
+|72,300
+|108,500
+|144,600
+|180,800
+|217,000
+|-
+|5 bars
+|52,100
+|104,200
+|156,200
+|208,300
+|260,400
+|312,500
+|}
+
+===Levels 15–99: Giants' Foundry===
+{{Main|Giants' Foundry/Strategies}}
+{{Equipment
+| align = right
+| head = 
+| cape = 
+| neck = 
+| ammo = 
+| weapon = 
+| torso = Smiths tunic
+| legs = Smiths trousers
+| shield = 
+| gloves = Smiths gloves (i)
+| boots = Smiths boots
+| ring = 
+}}
+Forging swords at the [[Giants' Foundry]] minigame is a lower-effort alternative to the faster methods. This method requires completion of [[Sleeping Giants]]. To forge a sword, get a commission from [[Kovac]], set the moulds, fill the crucible with bars or metal items, and pour the molten metal to start refining the sword. Use the right tool at the right temperature to increase the sword's completion to 100%. Hand the finished sword to Kovac for Smithing experience, coins, and [[Foundry Reputation|foundry reputation]].
+
+Use a mix of two metals for the best experience rates. Mithril-adamantite swords are generally the best option for experience rates and cost. An 18/10 ratio to achieve 89 metal quality allows for higher experience per hour and less attention required at the cost of slightly more bars used. Adamantite-runite swords are only recommended for players who wish to obtain the [[Giants' Foundry Reward Shop|unique rewards]] as quickly as possible, as they are usually much more expensive and only offer slightly faster experience than mithril-adamantite swords.
+
+Buy the [[Giants' Foundry Reward Shop#Moulds|improved moulds]] first (that you have the Smithing levels to use) and then the [[Smiths' Uniform]]. The improved moulds increase the sword quality substantially, which increases experience rates and effectively lowers the material costs. The optimal mould unlock order can be seen [[Giants'_Foundry/Strategies#Optimal_mould_unlock_order_for_maximum_points|here]]. Wearing the full Smiths' Uniform will increase the experience rates by roughly 5%. [[Run energy]] is restored with each sword completed, so the [[Graceful outfit]] is not beneficial in this activity.
+{{#vardefine:b|({{min|{{GEP|Bronze scimitar}}|{{GEP|Bronze longsword}}|{{GEP|Bronze full helm}}|{{GEP|Bronze sq shield}}|{{GEP|Bronze warhammer}} / 2 round 0 |{{GEP|Bronze battleaxe}} / 2 round 0 |{{GEP|Bronze chainbody}} / 2 round 0 |{{GEP|Bronze kiteshield}} / 2 round 0 |{{GEP|Bronze 2h sword}} / 2 round 0 |{{GEP|Bronze platelegs}} / 2 round 0 |{{GEP|Bronze plateskirt}} / 2 round 0 |{{GEP|Bronze platebody}} / 4 round 0 }})}}{{#vardefine:i|({{min|{{GEP|Iron scimitar}}|{{GEP|Iron longsword}}|{{GEP|Iron full helm}}|{{GEP|Iron sq shield}}|{{GEP|Iron warhammer}} / 2 round 0 |{{GEP|Iron battleaxe}} / 2 round 0 |{{GEP|Iron chainbody}} / 2 round 0 |{{GEP|Iron kiteshield}} / 2 round 0 |{{GEP|Iron 2h sword}} / 2 round 0 |{{GEP|Iron platelegs}} / 2 round 0 |{{GEP|Iron plateskirt}} / 2 round 0 |{{GEP|Iron platebody}} / 4 round 0 }})}}{{#vardefine:s|({{min|{{GEP|Steel scimitar}}|{{GEP|Steel longsword}}|{{GEP|Steel full helm}}|{{GEP|Steel sq shield}}|{{GEP|Steel warhammer}} / 2 round 0 |{{GEP|Steel battleaxe}} / 2 round 0 |{{GEP|Steel chainbody}} / 2 round 0 |{{GEP|Steel kiteshield}} / 2 round 0 |{{GEP|Steel 2h sword}} / 2 round 0 |{{GEP|Steel platelegs}} / 2 round 0 |{{GEP|Steel plateskirt}} / 2 round 0 |{{GEP|Steel platebody}} / 4 round 0 }})}}{{#vardefine:m|({{min|{{GEP|Mithril scimitar}}|{{GEP|Mithril longsword}}|{{GEP|Mithril full helm}}|{{GEP|Mithril sq shield}}|{{GEP|Mithril warhammer}} / 2 round 0 |{{GEP|Mithril battleaxe}} / 2 round 0 |{{GEP|Mithril chainbody}} / 2 round 0 |{{GEP|Mithril kiteshield}} / 2 round 0 |{{GEP|Mithril 2h sword}} / 2 round 0 |{{GEP|Mithril platelegs}} / 2 round 0 |{{GEP|Mithril plateskirt}} / 2 round 0 |{{GEP|Mithril platebody}} / 4 round 0 }})}}{{#vardefine:a|({{min|{{GEP|Adamant scimitar}}|{{GEP|Adamant longsword}}|{{GEP|Adamant full helm}}|{{GEP|Adamant sq shield}}|{{GEP|Adamant warhammer}} / 2 round 0 |{{GEP|Adamant battleaxe}} / 2 round 0 |{{GEP|Adamant chainbody}} / 2 round 0 |{{GEP|Adamant kiteshield}} / 2 round 0 |{{GEP|Adamant 2h sword}} / 2 round 0 |{{GEP|Adamant platelegs}} / 2 round 0 |{{GEP|Adamant plateskirt}} / 2 round 0 |{{GEP|Adamant platebody}} / 4 round 0 }})}}{{#vardefine:r|({{min|{{GEP|Rune scimitar}}|{{GEP|Rune longsword}}|{{GEP|Rune full helm}}|{{GEP|Rune sq shield}}|{{GEP|Rune warhammer}} / 2 round 0 |{{GEP|Rune battleaxe}} / 2 round 0 |{{GEP|Rune chainbody}} / 2 round 0 |{{GEP|Rune kiteshield}} / 2 round 0 |{{GEP|Rune 2h sword}} / 2 round 0 |{{GEP|Rune platelegs}} / 2 round 0 |{{GEP|Rune plateskirt}} / 2 round 0 |{{GEP|Rune platebody}} / 4 round 0 }})}}
+The table below shows the average experience and gold rates for optimal alloys, with the average scoring of commissions, all optimal moulds, optimal player performance, and without the [[Smiths' Uniform]]. The performance and the commissions issued will vary, and so these rates may also slightly vary hour-to-hour, albeit within 10% of deviation. Similarly, changes in [[Grand Exchange]] market prices will also result in changes in expenses and thus profits.
+
+Unless stated otherwise, the alloys are in a 1:1 ratio. Due to optimal moulds requiring up to level 81 Smithing, this Smithing level is assumed for this table. [[Claws]] are not considered as smelting material due to their low trading volumes.
+
+{| class="wikitable sortable align-center-1 align-left-2 align-center-3" style="text-align: right;"
+! rowspan="2" colspan="2" | Alloy
+! rowspan="2" | Level
+! rowspan="2" | Swords/hr
+! colspan="2" | Material cost
+! rowspan="2" | {{Nowrap|{{SCP|Smithing}} XP/hr}}
+! rowspan="2" | [[Foundry Reputation|Rep]]/hr
+! rowspan="2" | Reward GP/hr<ref group="n">Coins received from [[Kovac]] as a reward for each sword completed.</ref>
+! colspan="2" | Using bars
+! colspan="2" | Using items
+|-
+! Bars/hr<ref group="n">Based on price of using unsmithed bars.</ref>
+! Items/hr<ref group="n">Based on best price per bar items of each metal, other than [[claws]].</ref>
+! Profit/hr
+! GP/XP
+! Profit/hr
+! GP/XP
+|-
+| {{Nowrap|{{plinkp|Bronze bar}}{{plinkp|Iron bar}}}}
+| [[Bronze bar|Bronze]]/[[Iron bar|Iron]]<ref group="n">Using a 9/19 alloy. 14/14 is nearly identical in quality.</ref>
+| {{SCP|Smithing|15}}
+| 16
+| {{Coins|{{#vardefineecho:1a|( 16 * (9 * {{GEP|Bronze bar}} + 19 * {{GEP|Iron bar}}))}}}}
+| {{Coins|{{#vardefineecho:1b|( 16 * (9 * {{#var:b}} + 19 * {{#var:i}}))}}}}
+| 97,920
+| 1,264
+| {{Coins|{{#vardefineecho:1c|195840}}}}
+| {{Coins|{{#vardefineecho:1d|({{#var:1c}} - {{#var:1a}})}}}}
+| {{Coins|({{#var:1d}}) / 97920 }}
+| {{Coins|{{#vardefineecho:1e|({{#var:1c}} - {{#var:1b}})}}}}
+| {{Coins|({{#var:1e}}) / 97920 }}
+|-
+| {{Nowrap|{{plinkp|Iron bar}}{{plinkp|Steel bar}}}}
+| [[Iron bar|Iron]]/[[Steel bar|Steel]]
+| {{SCP|Smithing|30}}
+| 16
+| {{Coins|{{#vardefineecho:2a|( 16 * (14 * {{GEP|Iron bar}} + 14 * {{GEP|Steel bar}}))}}}}
+| {{Coins|{{#vardefineecho:2b|( 16 * (14 * {{#var:i}} + 14 * {{#var:s}}))}}}}
+| 133,920
+| 1,568
+| {{Coins|{{#vardefineecho:2c|267840}}}}
+| {{Coins|{{#vardefineecho:2d|({{#var:2c}} - {{#var:2a}})}}}}
+| {{Coins|({{#var:2d}}) / 133920 }}
+| {{Coins|{{#vardefineecho:2e|({{#var:2c}} - {{#var:2b}})}}}}
+| {{Coins|({{#var:2e}}) / 133920 }}
+|-
+| {{Nowrap|{{plinkp|Steel bar}}{{plinkp|Mithril bar}}}}
+| [[Steel bar|Steel]]/[[Mithril bar|Mithril]]
+| {{SCP|Smithing|50}}
+| 14
+| {{Coins|{{#vardefineecho:3a|( 14 * (14 * {{GEP|Steel bar}} + 14 * {{GEP|Mithril bar}}))}}}}
+| {{Coins|{{#vardefineecho:3b|( 14 * (14 * {{#var:s}} + 14 * {{#var:m}}))}}}}
+| 164,640
+| 1,722
+| {{Coins|{{#vardefineecho:3c|329280}}}}
+| {{Coins|{{#vardefineecho:3d|({{#var:3c}} - {{#var:3a}})}}}}
+| {{Coins|({{#var:3d}}) / 164640 }}
+| {{Coins|{{#vardefineecho:3e|({{#var:3c}} - {{#var:3b}})}}}}
+| {{Coins|({{#var:3e}}) / 164640 }}
+|-
+| {{Nowrap|{{plinkp|Mithril bar}}{{plinkp|Adamantite bar}}}}
+| [[Mithril bar|Mithril]]/[[Adamantite bar|Adamantite]]
+| {{SCP|Smithing|70}}
+| 12
+| {{Coins|{{#vardefineecho:4a|( 12 * (14 * {{GEP|Adamantite bar}} + 14 * {{GEP|Mithril bar}}))}}}}
+| {{Coins|{{#vardefineecho:4b|( 12 * (14 * {{#var:a}} + 14 * {{#var:m}}))}}}}
+| 198,000
+| 1,836
+| {{Coins|{{#vardefineecho:4c|396000}}}}
+| {{Coins|{{#vardefineecho:4d|({{#var:4c}} - {{#var:4a}})}}}}
+| {{Coins|({{#var:4d}}) / 198000 }}
+| {{Coins|{{#vardefineecho:4e|({{#var:4c}} - {{#var:4b}})}}}}
+| {{Coins|({{#var:4e}}) / 198000 }}
+|-
+| {{Nowrap|{{plinkp|Adamantite bar}}{{plinkp|Runite bar}}}}
+| [[Adamantite bar|Adamantite]]/[[Runite bar|Runite]]
+| {{SCP|Smithing|85}}
+| 11
+| {{Coins|{{#vardefineecho:5a|( 11 * (14 * {{GEP|Adamantite bar}} + 14 * {{GEP|Runite bar}}))}}}}
+| {{Coins|{{#vardefineecho:5b|( 11 * (14 * {{#var:a}} + 14 * {{#var:r}}))}}}}
+| 253,110
+| 2,068
+| {{Coins|{{#vardefineecho:5c|506220}}}}
+| {{Coins|{{#vardefineecho:5d|({{#var:5c}} - {{#var:5a}})}}}}
+| {{Coins|({{#var:5d}}) / 253110 }}
+| {{Coins|{{#vardefineecho:5e|({{#var:5c}} - {{#var:5b}})}}}}
+| {{Coins|({{#var:5e}}) / 253110 }}
+|}
+<references group="n" />
+
+===Levels 15–99: Blast Furnace===
+Smelting bars (other than gold or silver) at the [[Blast Furnace]] offers slow experience, but it usually provides decent profit. Having the [[ice gloves]] and [[coal bag]] is strongly recommended to significantly increase the number of bars created per hour. Players will also need weight-reducing clothing and stamina potions to always have run energy. Optimal bar patterns can be found on the [[Blast Furnace#Bar Patterns|Blast Furnace]] page. The capital required to run the furnace for a full hour may be considerable for some players.
+
+Experience and profit rates are listed in the table below. The numbers assume using one of the official worlds, having the coal bag, wearing ice gloves, and using 36 stamina potion doses per hour.
+{{Blast Furnace MMG Table}}
+
+===Levels 20–99: Smithing dart tips and nails===
+Smithing dart tips and nails offers slow experience, but it requires little attention. This method usually breaks even or makes a small profit due to their high demand. The player must have completed [[The Tourist Trap]] quest to be able to smith dart tips. 10 dart tips and 15 nails are created per bar. A full inventory takes 81 seconds to process using Make-X.
+
+Experience and profit rates are listed in the table below. The numbers assume 1300 bars are smithed per hour when wearing the [[Smiths' Uniform]] and 1060 without.
+{{#vardefine:bars_uniform|1300}} <!-- Bars per hour when making dart tips --> {{#vardefine:bars|1060}} <!-- Bars per hour when making dart tips -->
+{| class="wikitable sortable align-center-1 align-center-2 align-left-3" style="text-align:right;"
+! rowspan="2" |{{SCP|Smithing}} level
+! rowspan="2" class="unsortable" |Bar
+! rowspan="2" class="unsortable" |Method
+! colspan="2" |Uniform
+! colspan="2" |No uniform
+! rowspan="2" |Profit/XP
+|-
+! XP/h
+! Profit/h
+! XP/h
+! Profit/h
+|-
+|4
+|{{plinkp|Bronze bar}}
+|[[Money making guide/Smithing bronze dart tips|Bronze dart tips]]
+|{{formatnum:{{#expr:12.5*{{#var:bars_uniform}}}}}}
+|{{Coins|{{GEP|Bronze dart tip|13000}}-{{GEP|Bronze bar|1300}}}}
+|{{formatnum:{{#expr:12.5*{{#var:bars}}}}}}
+|{{Coins|{{GEP|Bronze dart tip|10600}}-{{GEP|Bronze bar|1060}}}}
+|{{Coins|({{GEP|Bronze dart tip|10}} - {{GEP|Bronze bar}})/12.5}}
+|-
+|19
+|{{plinkp|Iron bar}}
+|[[Money making guide/Smithing iron dart tips|Iron dart tips]]
+|{{formatnum:{{#expr:25*{{#var:bars_uniform}}}}}}
+|{{Coins|{{GEP|Iron dart tip|13000}}-{{GEP|Iron bar|1300}}}}
+|{{formatnum:{{#expr:25*{{#var:bars}}}}}}
+|{{Coins|{{GEP|Iron dart tip|10600}}-{{GEP|Iron bar|1060}}}}
+|{{Coins|({{GEP|Iron dart tip|10}} - {{GEP|Iron bar}})/25}}
+|-
+|34
+|{{plinkp|Steel bar}}
+|[[Money making guide/Smithing steel dart tips|Steel dart tips]]
+|{{formatnum:{{#expr:37.5*{{#var:bars_uniform}}}}}}
+|{{Coins|{{GEP|Steel dart tip|13000}}-{{GEP|Steel bar|1300}}}}
+|{{formatnum:{{#expr:37.5*{{#var:bars}}}}}}
+|{{Coins|{{GEP|Steel dart tip|10600}}-{{GEP|Steel bar|1060}}}}
+|{{Coins|({{GEP|Steel dart tip|10}} - {{GEP|Steel bar}})/37.5}}
+|-
+<!-- 
+|54
+|{{plinkp|Mithril bar}}
+|[[Money making guide/Smithing mithril dart tips|Mithril dart tips]]
+|{{formatnum:{{#expr:50*{{#var:bars_uniform}}}}}}
+|{{Coins|{{GEP|Mithril dart tip|13000}}-{{GEP|Mithril bar|1300}}}}
+|{{formatnum:{{#expr:50*{{#var:bars}}}}}}
+|{{Coins|{{GEP|Mithril dart tip|10600}}-{{GEP|Mithril bar|1060}}}}
+|{{Coins|({{GEP|Mithril dart tip|10}} - {{GEP|Mithril bar}})/50}}
+|-
+-->
+|54
+|{{plinkp|Mithril bar}}
+|[[Mithril nails]]
+|{{formatnum:{{#expr:50*{{#var:bars_uniform}}}}}}
+|{{Coins|{{GEP|Mithril nails|19500}}-{{GEP|Mithril bar|1300}}}}
+|{{formatnum:{{#expr:50*{{#var:bars}}}}}}
+|{{Coins|{{GEP|Mithril nails|15900}}-{{GEP|Mithril bar|1060}}}}
+|{{Coins|({{GEP|Mithril nails|15}} - {{GEP|Mithril bar}})/50}}
+|-
+|74
+|{{plinkp|Adamantite bar}}
+|[[Money making guide/Smithing adamant dart tips|Adamant dart tips]]
+|{{formatnum:{{#expr:62.5*{{#var:bars_uniform}}}}}}
+|{{Coins|{{GEP|Adamant dart tip|13000}}-{{GEP|Adamantite bar|1300}}}}
+|{{formatnum:{{#expr:62.5*{{#var:bars}}}}}}
+|{{Coins|{{GEP|Adamant dart tip|10600}}-{{GEP|Adamantite bar|1060}}}}
+|{{Coins|({{GEP|Adamant dart tip|10}} - {{GEP|Adamantite bar}})/62.5}}
+|-
+|89
+|{{plinkp|Runite bar}}
+|[[Rune nails]]
+|{{formatnum:{{#expr:75*{{#var:bars_uniform}}}}}}
+|{{Coins|{{GEP|Rune nails|19500}}-{{GEP|Runite bar|1300}}}}
+|{{formatnum:{{#expr:75*{{#var:bars}}}}}}
+|{{Coins|{{GEP|Rune nails|15900}}-{{GEP|Runite bar|1060}}}}
+|{{Coins|({{GEP|Rune nails|15}} - {{GEP|Runite bar}})/75}}
+|-
+|}
+
+===Levels 35–99: Smithing steel cannonballs===
+Smithing [[steel cannonball]]s offers even slower experience than dart tips, but requires even less attention, and usually makes a [[Money making guide/Smithing steel cannonballs|profit]]. 4 cannonballs are created per steel bar; a [[double ammo mould]] smelts two steel bars at once, doubling the experience rates. A full inventory takes 160 seconds to process using Make-X, or roughly half that with a double ammo mould. 
+
+At 87 [[Sailing]] players can smith cannonballs by using the [[ancient furnace]] in the [[Grimstone Dungeon]], which halves the time it takes to create cannonballs from 8 ticks to 4 ticks. Combining this with a double ammo mould, players can smith cannonballs at four times the normal speed with up to 6000 cannonballs per hour if using teleport methods to bank. 
+
+Experience and profit rates are listed in the table below. The numbers assume 2,400 cannonballs are made per hour, or twice that with a double ammo mould.
+{| class="wikitable sortable align-left-3 align-right-4 align-right-6" style="text-align:center;"
+!Level
+!colspan="2" | Mould
+!XP/Hour
+!Profit/Hour
+!Profit/XP
+|-
+|35
+|{{plinkt|Ammo mould}}
+|13,824
+|{{Coins|{{GEP|Steel cannonball|2400}}-{{GEP|Steel bar|600}}}}
+|{{Coins|({{GEP|Steel cannonball|4}}-{{GEP|Steel bar|1}})/25.6}}
+|-
+|35
+|{{plinkt|Double ammo mould}}
+|27,648
+|{{Coins|{{GEP|Steel cannonball|4800}}-{{GEP|Steel bar|1200}}}}
+|{{Coins|({{GEP|Steel cannonball|8}}-{{GEP|Steel bar|2}})/51.2}}
+|-
+|}
+
+===Levels 48–99: Smithing armour===
+Smithing armour at an anvil is only recommended for account builds that cannot get [[goldsmith gauntlets]]. Depending on the Grand Exchange prices, adamant platebodies can be a viable alternative to smelting gold bars at the Blast Furnace as they offer relatively fast experience rates. Smith the highest-tier platebody available, starting from steel platebodies at level 48, moving to mithril at level 68 and then to adamant at level 88. From level 66 to 68, players can smith mithril platelegs or plateskirts as a slightly slower but cheaper alternative to steel platebodies.
+
+Due to low buy limits, some [[High Level Alchemy]] focused clan chats (commonly found in Varrock west bank of world 308) may offer to buy in bulk for a better rate than the Grand Exchange price, benefiting both seller and buyer. This can lower the loss from making low-level armour, and potentially make Smithing a profitable activity doing adamant platebodies to level 99.
+
+{| class="wikitable align-center-1 align-center-2"
+!Levels
+!colspan="2" | Item
+!XP/Hour
+!Profit/Hour
+!Profit/XP
+!Profit (HA)/Hour
+!Profit (HA)/XP
+|-
+|48–68
+|{{plinkt|Steel platebody}}
+|144,000
+|{{Coins|((({{GEPT|Steel platebody}} - {{GEP|Steel bar|5}})/187.5)*156200)}}
+|{{Coins|({{GEPT|Steel platebody}} - {{GEP|Steel bar|5}})/187.5}}
+|{{Coins|((({{HA|Steel platebody}} - {{GEP|Steel bar|5}} - {{GEP|Nature rune|1}})/187.5)*156200)}}
+|{{Coins|({{HA|Steel platebody}} - {{GEP|Steel bar|5}} - {{GEP|Nature rune|1}})/187.5}}
+|-
+|66–68
+|{{plinkt|Mithril platelegs}}
+|140,000
+|{{Coins|((({{GEPT|Mithril platelegs}} - {{GEP|Mithril bar|3}})/150)*144600)}}
+|{{Coins|({{GEPT|Mithril platelegs}} - {{GEP|Mithril bar|3}})/150}}
+|{{Coins|((({{HA|Mithril platelegs}} - {{GEP|Mithril bar|3}} - {{GEP|Nature rune|1}})/150)*144600)}}
+|{{Coins|({{HA|Mithril platelegs}} - {{GEP|Mithril bar|3}} - {{GEP|Nature rune|1}})/150}}
+|-
+|66–68
+|{{plinkt|Mithril plateskirt}}
+|140,000
+|{{Coins|((({{GEPT|Mithril plateskirt}} - {{GEP|Mithril bar|3}})/150)*144600)}}
+|{{Coins|({{GEPT|Mithril plateskirt}} - {{GEP|Mithril bar|3}})/150}}
+|{{Coins|((({{HA|Mithril plateskirt}} - {{GEP|Mithril bar|3}} - {{GEP|Nature rune|1}})/150)*144600)}}
+|{{Coins|({{HA|Mithril plateskirt}} - {{GEP|Mithril bar|3}} - {{GEP|Nature rune|1}})/150}}
+|-
+|68–88
+|{{plinkt|Mithril platebody}}
+|200,000
+|{{Coins|((({{GEPT|Mithril platebody}} - {{GEP|Mithril bar|5}})/250)*208300)}}
+|{{Coins|({{GEPT|Mithril platebody}} - {{GEP|Mithril bar|5}})/250}}
+|{{Coins|((({{HA|Mithril platebody}} - {{GEP|Mithril bar|5}} - {{GEP|Nature rune|1}})/250)*208300)}}
+|{{Coins|({{HA|Mithril platebody}} - {{GEP|Mithril bar|5}} - {{GEP|Nature rune|1}})/250}}
+|-
+|88–99
+|{{plinkt|Adamant platebody}}
+|240,000<br/>300,000<ref group="n">[[Experience]] per hour only obtainable wearing the [[Smiths' Uniform]] at the anvil in [[Prifddinas]]. When maintaining max efficiency: 1 tick banking, using a bar on the anvil and clicking the banker instead of the booth >310,000/h is obtainable.</ref>
+|{{Coins|((({{GEPT|Adamant platebody}} - {{GEP|Adamantite bar|5}})/312.5)*260400)}}<br/>{{Coins|((({{GEPT|Adamant platebody}} - {{GEP|Adamantite bar|5}})/312.5)*310000)}}
+|{{Coins|({{GEPT|Adamant platebody}} - {{GEP|Adamantite bar|5}})/312.5}}
+|{{Coins|((({{HA|Adamant platebody}} - {{GEP|Adamantite bar|5}} - {{GEP|Nature rune|1}})/312.5)*260400)}}<br/>{{Coins|((({{HA|Adamant platebody}} - {{GEP|Adamantite bar|5}} - {{GEP|Nature rune|1}})/312.5)*310000)}}
+|{{Coins|({{HA|Adamant platebody}} - {{GEP|Adamantite bar|5}} - {{GEP|Nature rune|1}})/312.5}}
+|}
+<references group="n" />
+
+===Levels 95/98–99+: Smithing 3-bar rune items===
+Smithing [[rune platelegs]], [[rune plateskirt|plateskirts]], or [[rune 2h sword|2h swords]] at an anvil offers decent experience, and it is also profitable. Players will need to have level 99 to be able to make these items, but [[Kovac's grog]] (starting from level 95) or [[Dwarven stout]] (starting from level 98) can be used to boost for that level. Each of these smithed items yields the same amount of experience, so players should make whatever offers the best profit. Players may also cast [[High Level Alchemy]] to increase profits, however this is only recommended if you have a lot of disposable gold.
+
+Assuming 60 grogs used at level 95, 900 items smithed per hour and alching the items, this would yield {{Coins|900*({{HA|Rune plateskirt}} - {{GEP|Nature rune}} - {{GEP|Runite bar|3}}) - {{GEP|Kovac's grog|60}}}} per hour with an expected GP/XP of {{Coins|({{HA|Rune platelegs}} - {{GEP|Runite bar|3}} - {{GEP|Nature rune}} - ({{GEP|Kovac's grog}}/15))/225}};- When using [[preserve]] this would decrease to 40 grogs or {{Coins|900*({{HA|Rune plateskirt}} - {{GEP|Nature rune}} - {{GEP|Runite bar|3}}) - {{GEP|Kovac's grog|40}}}} per hour with an expected GP/XP of {{Coins|({{HA|Rune platelegs}} - {{GEP|Runite bar|3}} - {{GEP|Nature rune}} - ({{GEP|Kovac's grog}}/22.5))/225}} ({{Coins|({{HA|Rune platelegs}} - {{GEP|Runite bar|3}} - {{GEP|Nature rune}} - ({{GEP|Kovac's grog}}/45))/225}}  and {{Coins|({{HA|Rune platelegs}} - {{GEP|Runite bar|3}} - {{GEP|Nature rune}} - ({{GEP|Kovac's grog}}/67.5))/225}} GP/XP at level 96 and 97 respectively), while normal dwarven stouts at 98 would yield {{Coins|900*({{HA|Rune plateskirt}} - {{GEP|Nature rune}} - {{GEP|Runite bar|3}}) - {{GEP|Dwarven stout|60}}}} for a GP/XP of {{Coins|({{HA|Rune platelegs}} - {{GEP|Runite bar|3}} - {{GEP|Nature rune}} - ({{GEP|Dwarven stout}}/15))/225}}. 
+{| class="wikitable sortable align-center-1"
+! colspan="2" | Item
+!XP/Hour
+!Profit/Hour
+!Profit/XP
+!Profit (HA)/Hour
+!Profit (HA)/XP
+|-
+<!-- 963 = items created in 1 hour. 
+963/9 per inventory = 107 inventories per hour
+6000/107 = 56 ticks per inventory
+Adding smiths outfit would lower this from 5t/item to 4t
+-->
+|{{plinkt|Rune platelegs|txt=Platelegs}}
+|210,000
+|{{Coins|963 * ({{GEPT|Rune platelegs}} - {{GEP|Runite bar|3}})}}
+|{{Coins|({{GEPT|Rune platelegs}} - {{GEP|Runite bar|3}})/225}}
+|{{Coins|963 * ({{HA|Rune platelegs}} - {{GEP|Runite bar|3}} - {{GEP|Nature rune|1}})}}
+|{{Coins|({{HA|Rune platelegs}} - {{GEP|Runite bar|3}} - {{GEP|Nature rune|1}})/225}}
+|-
+|{{plinkt|Rune plateskirt|txt=Plateskirt}}
+|210,000
+|{{Coins|963 * ({{GEPT|Rune plateskirt}} - {{GEP|Runite bar|3}})}}
+|{{Coins|({{GEPT|Rune plateskirt}} - {{GEP|Runite bar|3}})/225}}
+|{{Coins|963 * ({{HA|Rune plateskirt}} - {{GEP|Runite bar|3}} - {{GEP|Nature rune|1}})}}
+|{{Coins|({{HA|Rune plateskirt}} - {{GEP|Runite bar|3}} - {{GEP|Nature rune|1}})/225}}
+|-
+|{{plinkt|Rune 2h sword|txt=2h sword}}
+|210,000
+|{{Coins|963 * ({{GEPT|Rune 2h sword}} - {{GEP|Runite bar|3}})}}
+|{{Coins|({{GEPT|Rune 2h sword}} - {{GEP|Runite bar|3}})/225}}
+|{{Coins|963 * ({{HA|Rune 2h sword}} - {{GEP|Runite bar|3}} - {{GEP|Nature rune|1}})}}
+|{{Coins|({{HA|Rune 2h sword}} - {{GEP|Runite bar|3}} - {{GEP|Nature rune|1}})/225}}
+|}
+
+==Quests for Smithing experience==
+{{Main|Quest experience rewards}}
+{| class="wikitable sortable lighttable qc-active" style="text-align:center;"
+!Quest
+!Experience<br />reward
+! data-sort-type="number" | Smithing<br />requirement
+!Other requirements
+|-
+|[[The Forsaken Tower]]||{{+=|smithing|500|echo=2}}||-||-
+|-
+|[[Recipe for Disaster]]<br />([[Recipe for Disaster/Freeing Pirate Pete|Pirate Pete subquest]])||{{+=|smithing|1,000|echo=2}}|| -||{{SCP|Cooking|31}}
+|-
+|[[Heroes' Quest]]||{{+=|smithing|2,257|echo=2}}||-||{{SCP|Quest|55}}, {{SCP|Cooking|53}}, {{SCP|Fishing|53}}, {{SCP|Herblore|25}}, {{SCP|Mining|50}}
+|-
+|[[The Giant Dwarf]]||{{+=|smithing|2,500|echo=2}}||-||{{SCP|Thieving|14}}, {{SCP|Crafting|12}}, {{SCP|Firemaking|16}}, {{SCP|Magic|33}}
+|-
+|[[Between a Rock...]]||{{+=|smithing|5,000|echo=2}}||{{SCP|Smithing|50|sort=yes}}||{{SCP|Defence|30}}, {{SCP|Mining|40}}
+|-
+|[[Elemental Workshop I]]||{{+=|smithing|5,000|echo=2}}||{{SCP|Smithing|20|sort=yes}}||{{SCP|Mining|20}}, {{SCP|Crafting|20}}
+|-
+|[[Scrambled!]]
+|5,000
+|35
+|
+|-
+|[[Sleeping Giants]]||{{+=|smithing|6,000|echo=2}}||{{SCP|Smithing|15|sort=yes}}||-
+|-
+|[[Devious Minds]]||{{+=|smithing|6,500|echo=2}}||{{SCP|Smithing|65|sort=yes}}|| {{SCP|Runecraft|50}}, {{SCP|Fletching|50}}
+|-
+|[[Cabin Fever]]||{{+=|smithing|7,000|echo=2}}||{{SCP|Smithing|50|sort=yes}}||{{SCP|Agility|42}}, {{SCP|Crafting|45}}, {{SCP|Ranged|40}} 
+|-
+|[[Elemental Workshop II]]||{{+=|smithing|7,500|echo=2}}||{{SCP|Smithing|30|sort=yes}}||{{SCP|Magic|20}}
+|-
+|[[The Knight's Sword]]||{{+=|smithing|12,725|echo=2}}||-||{{SCP|Mining|10}}
+|-
+|[[Defender of Varrock]]||{{+=|smithing|15,000|echo=2}}||{{SCP|Smithing|55|sort=yes}}||{{SCP|Hunter|52}}
+|-
+|[[Song of the Elves]]||{{+=|smithing|40,000|echo=2}}||{{SCP|Smithing|70|sort=yes}}||{{SCP|Agility|70}}, {{SCP|Construction|70}}, {{SCP|Farming|70}}, {{SCP|Herblore|70}}, {{SCP|Hunter|70}}, {{SCP|Mining|70}}, {{SCP|Woodcutting|70}}
+|-
+|[[Dragon Slayer II]]||{{+=|smithing|80,000|echo=2}}||{{SCP|Smithing|70|sort=yes}}||{{SCP|Quest|200}}, {{SCP|Magic|75}}, {{SCP|Mining|68}}, {{SCP|Crafting|62}}, {{SCP|Agility|60}}, {{SCP|Thieving|60}}, {{SCP|Construction|50}}, {{SCP|Hitpoints|50}}
+|-
+!Total
+!190,982
+!
+! colspan="2" |
+|}
+{{Training guides}}
+[[Category:Smithing]]
+[[Category:Members]]

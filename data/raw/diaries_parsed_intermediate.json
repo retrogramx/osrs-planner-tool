@@ -1,0 +1,8266 @@
+[
+ {
+  "diary_region": "Falador",
+  "tier": "easy",
+  "task": "Climb over the western Falador wall",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 5
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "easy",
+  "task": "Complete a lap of the Draynor Village Rooftop Course",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 10
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "easy",
+  "task": "Use the rope swing to travel to the Moss Giant Island north-west of Karamja",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 10
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "medium",
+  "task": "Cross the lava using the stepping stones within Brimhaven Dungeon",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 12
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "easy",
+  "task": "Jump over the fence south of Varrock",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 13
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "easy",
+  "task": "Explore Cairn Island to the west of Karamja",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 15
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "easy",
+  "task": "Kill an Earth warrior in the Wilderness beneath Edgeville",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 15
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "easy",
+  "task": "Cross the Coal Trucks log balance",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 20
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "medium",
+  "task": "Complete a lap of the Al Kharid Rooftop Course",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 20
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "medium",
+  "task": "Climb to the summit of the Agility Pyramid",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 30
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "medium",
+  "task": "Complete a lap of the Varrock Rooftop Course",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 30
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "medium",
+  "task": "Complete a lap of the Barbarian Agility Course",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 35
+    }
+   ],
+   "quests": [
+    "Alfred Grimhand's Barcrawl"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "medium",
+  "task": "Take the Agility shortcut from the Grand Tree to Otto's Grotto",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 37
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "medium",
+  "task": "Complete a lap of the Canifis Rooftop Agility Course",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 40
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "medium",
+  "task": "Squeeze through the crevice in the Dwarven Mines",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 42
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "hard",
+  "task": "Catch a Leaping sturgeon",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 45
+    },
+    {
+     "skill": "Fishing",
+     "level": 70
+    },
+    {
+     "skill": "Strength",
+     "level": 45
+    }
+   ],
+   "quests": [
+    "Barbarian Fishing"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 3
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "hard",
+  "task": "Squeeze past the jutting wall on your way to the Cosmic Altar",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 46
+    }
+   ],
+   "quests": [
+    "Lost City"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "hard",
+  "task": "Complete a lap of the Ape Atoll Agility Course",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 48
+    }
+   ],
+   "quests": [
+    "Monkey Madness I"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "medium",
+  "task": "Use the boulder leap shortcut in the dense essence mine.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 49
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "hard",
+  "task": "Complete a lap of the Falador Rooftop Agility Course",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 50
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "hard",
+  "task": "Kill a Deathwing in the dungeon under the Kharazi Jungle",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 50
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 15
+    },
+    {
+     "skill": "Thieving",
+     "level": 50
+    },
+    {
+     "skill": "Strength",
+     "level": 50
+    },
+    {
+     "skill": "Mining",
+     "level": 52
+    }
+   ],
+   "quests": [
+    "Legends' Quest"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 6
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "hard",
+  "task": "Kill an Elf with a Crystal bow",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 50
+    },
+    {
+     "skill": "Ranged",
+     "level": 70
+    }
+   ],
+   "quests": [
+    "Roving Elves"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 3
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "hard",
+  "task": "Squeeze through the obstacle pipe in Edgeville Dungeon",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 51
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "medium",
+  "task": "Complete a lap of the Wilderness Agility Course",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 52
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "hard",
+  "task": "Complete a lap of the Seers' Village Rooftop Course",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 60
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "elite",
+  "task": "Mix a Stamina mix on top of the Seers' Village bank",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 60
+    },
+    {
+     "skill": "Herblore",
+     "level": 86
+    }
+   ],
+   "quests": [
+    "Barbarian Herblore",
+    "Barbarian Training"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "medium",
+  "task": "Enter the Wilderness God Wars Dungeon",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 60
+    },
+    {
+     "skill": "Strength",
+     "level": 60
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "elite",
+  "task": "Slay a Spiritual mage within the Wilderness God Wars Dungeon",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 60
+    },
+    {
+     "skill": "Strength",
+     "level": 60
+    },
+    {
+     "skill": "Slayer",
+     "level": 83
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 3
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "hard",
+  "task": "Take the Agility shortcut from Trollheim into the Wilderness",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 64
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "hard",
+  "task": "Use the shortcut to get to the bridge over the Salve",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 65
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "elite",
+  "task": "Grapple across a pylon on the Dorgesh-Kaan Agility Course",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 70
+    },
+    {
+     "skill": "Strength",
+     "level": 70
+    },
+    {
+     "skill": "Ranged",
+     "level": 70
+    },
+    {
+     "skill": "Thieving",
+     "level": 42
+    }
+   ],
+   "quests": [
+    "Death to the Dorgeshuun"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 3
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "elite",
+  "task": "Kill the generals of Armadyl, Bandos, Saradomin, and Zamorak in the God Wars Dungeon.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 70
+    },
+    {
+     "skill": "Hitpoints",
+     "level": 70
+    },
+    {
+     "skill": "Strength",
+     "level": 70
+    },
+    {
+     "skill": "Ranged",
+     "level": 70
+    }
+   ],
+   "quests": [
+    "Troll Stronghold"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 5
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "hard",
+  "task": "Complete a lap of the Pollnivneach Rooftop Course",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 70
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "hard",
+  "task": "Climb the advanced spike chain within the Slayer Tower",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 71
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "elite",
+  "task": "Complete a lap of the Rellekka Rooftop Course",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 80
+    }
+   ],
+   "quests": [
+    "The Fremennik Trials"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "elite",
+  "task": "Jump over the strange floor in Taverley Dungeon",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 80
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "elite",
+  "task": "Use the Elven Overpass advanced cliffside shortcut",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 85
+    }
+   ],
+   "quests": [
+    "Underground Pass"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "elite",
+  "task": "Complete a lap of Ardougne's Rooftop Agility Course",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 90
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "hard",
+  "task": "Enter the Warriors' Guild",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Attack",
+     "level": 32
+    },
+    {
+     "skill": "Strength",
+     "level": 32
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "hard",
+  "task": "Defeat a Locust Rider with Keris.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Attack",
+     "level": 50
+    }
+   ],
+   "quests": [
+    "Contact!"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "medium",
+  "task": "Equip Iban's upgraded staff or upgrade an Iban staff.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Attack",
+     "level": 50
+    },
+    {
+     "skill": "Magic",
+     "level": 50
+    }
+   ],
+   "quests": [
+    "Underground Pass"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "elite",
+  "task": "Loot the Barrows chest while wearing any complete Barrows set",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Attack",
+     "level": 70
+    },
+    {
+     "skill": "Ranged",
+     "level": 70
+    },
+    {
+     "skill": "Defence",
+     "level": 70
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 3
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "easy",
+  "task": "Find out what your family crest is from Sir Renitee",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Construction",
+     "level": 16
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "hard",
+  "task": "Change your family crest to the Saradomin symbol",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Construction",
+     "level": 16
+    },
+    {
+     "skill": "Prayer",
+     "level": 70
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "medium",
+  "task": "Teleport to Pollnivneach with a redirected Teleport to House tablet (File:Ironman chat badge.png Ironman must instead: Enter your POH from Pollnivneach)",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Construction",
+     "level": 20
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "easy",
+  "task": "Enter your player-owned house from Hosidius.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Construction",
+     "level": 25
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "medium",
+  "task": "Pick up your Pet rock from your POH Menagerie",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Construction",
+     "level": 37
+    }
+   ],
+   "quests": [
+    "The Fremennik Trials"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "hard",
+  "task": "Enter your POH from Yanille",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Construction",
+     "level": 50
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "hard",
+  "task": "Have the Seers' Estate agent decorate your house with Fancy Stone",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Construction",
+     "level": 50
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "hard",
+  "task": "Enter the Kharyrll portal in your POH",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Construction",
+     "level": 50
+    },
+    {
+     "skill": "Magic",
+     "level": 66
+    }
+   ],
+   "quests": [
+    "Desert Treasure I"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "hard",
+  "task": "Have the Varrock Estate agent decorate your house with Fancy Stone",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Construction",
+     "level": 50
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "hard",
+  "task": "Build an Isafdar painting in your POH Quest Hall",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Construction",
+     "level": 65
+    }
+   ],
+   "quests": [
+    "Roving Elves"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "elite",
+  "task": "Speak to the Kq head in your POH",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Construction",
+     "level": 78
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "easy",
+  "task": "Cook a Thin snail on the Port Phasmatys range",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Cooking",
+     "level": 12
+    }
+   ],
+   "quests": [
+    "Ghosts Ahoy"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "medium",
+  "task": "Cook a Spider on a stick",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Cooking",
+     "level": 16
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "hard",
+  "task": "Cook a Karambwan thoroughly",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Cooking",
+     "level": 30
+    }
+   ],
+   "quests": [
+    "Tai Bwo Wannai Trio"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "medium",
+  "task": "Complete a game of Trouble Brewing",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Cooking",
+     "level": 40
+    }
+   ],
+   "quests": [
+    "Cabin Fever"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "medium",
+  "task": "Make a Chocolate bomb at the Grand Tree",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Cooking",
+     "level": 42
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "medium",
+  "task": "Catch and cook a Bass in Catherby",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Cooking",
+     "level": 43
+    },
+    {
+     "skill": "Fishing",
+     "level": 46
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "hard",
+  "task": "Catch and cook a Monkfish in Piscatoris",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Cooking",
+     "level": 62
+    },
+    {
+     "skill": "Fishing",
+     "level": 62
+    }
+   ],
+   "quests": [
+    "Swan Song"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "elite",
+  "task": "Fish and cook 5 Sharks in Catherby using the Cooking gauntlets",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Cooking",
+     "level": 80
+    },
+    {
+     "skill": "Fishing",
+     "level": 76
+    }
+   ],
+   "quests": [
+    "Family Crest"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "elite",
+  "task": "Catch an anglerfish and cook it whilst in Great Kourend.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Cooking",
+     "level": 84
+    },
+    {
+     "skill": "Fishing",
+     "level": 82
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "elite",
+  "task": "Bake a Wild pie at the Nardah clay oven",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Cooking",
+     "level": 85
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "elite",
+  "task": "Fish and cook a Dark crab in the Resource Area",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Cooking",
+     "level": 90
+    },
+    {
+     "skill": "Fishing",
+     "level": 85
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "elite",
+  "task": "Catch a Manta ray in the Fishing Trawler and cook it in Port Khazard",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Cooking",
+     "level": 91
+    },
+    {
+     "skill": "Fishing",
+     "level": 81
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "elite",
+  "task": "Bake a Summer pie in the Cooking Guild",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Cooking",
+     "level": 95
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "easy",
+  "task": "Spin a Bowl on the pottery wheel and fire in the oven in Barbarian Village",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Crafting",
+     "level": 8
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "hard",
+  "task": "Create a Yew longbow from scratch around Seers' Village",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Crafting",
+     "level": 10
+    },
+    {
+     "skill": "Fletching",
+     "level": 70
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 60
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 3
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "elite",
+  "task": "Make a Rune crossbow yourself from scratch within Witchaven or Yanille",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Crafting",
+     "level": 10
+    },
+    {
+     "skill": "Smithing",
+     "level": 91
+    },
+    {
+     "skill": "Fletching",
+     "level": 69
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 3
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "easy",
+  "task": "Craft any Snelm from scratch in Morytania",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Crafting",
+     "level": 15
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "easy",
+  "task": "Craft a Tiara from scratch in Rellekka",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Crafting",
+     "level": 23
+    },
+    {
+     "skill": "Mining",
+     "level": 20
+    },
+    {
+     "skill": "Smithing",
+     "level": 20
+    },
+    {
+     "skill": "Mining",
+     "level": 23
+    }
+   ],
+   "quests": [
+    "The Fremennik Trials"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "medium",
+  "task": "Repair a crane within Port Piscarilius.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Crafting",
+     "level": 30
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "medium",
+  "task": "Craft a Fruit basket on the Falador farm loom",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Crafting",
+     "level": 36
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "medium",
+  "task": "Craft a Coif in the Lumbridge cow pen (eastern cows)",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Crafting",
+     "level": 38
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "elite",
+  "task": "Craft one or more blood runes from Dark essence fragments",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Crafting",
+     "level": 38
+    },
+    {
+     "skill": "Mining",
+     "level": 38
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "medium",
+  "task": "Mine some Gold ore at the Crafting Guild",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Crafting",
+     "level": 40
+    },
+    {
+     "skill": "Mining",
+     "level": 40
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "medium",
+  "task": "Claim buckets of sand from Bert in Yanille.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Crafting",
+     "level": 49
+    }
+   ],
+   "quests": [
+    "The Hand in the Sand"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "hard",
+  "task": "Craft, string, and enchant an Amulet of power in Lumbridge",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Crafting",
+     "level": 70
+    },
+    {
+     "skill": "Magic",
+     "level": 57
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "elite",
+  "task": "Craft a Dragonstone amulet in the Neitiznot furnace",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Crafting",
+     "level": 80
+    }
+   ],
+   "quests": [
+    "The Fremennik Isles"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "elite",
+  "task": "Craft a Black dragonhide body in Canifis bank",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Crafting",
+     "level": 84
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "elite",
+  "task": "Construct a pyre ship from Magic logs",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Crafting",
+     "level": 85
+    },
+    {
+     "skill": "Firemaking",
+     "level": 85
+    }
+   ],
+   "quests": [
+    "Barbarian Firemaking"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "hard",
+  "task": "Slay a Dust devil in the desert cave with a Slayer helmet equipped.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Defence",
+     "level": 10
+    },
+    {
+     "skill": "Crafting",
+     "level": 55
+    }
+   ],
+   "quests": [
+    "Desert Treasure I"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "medium",
+  "task": "Pray at the Altar of Guthix in Taverley whilst wearing full Initiate armour",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Defence",
+     "level": 20
+    },
+    {
+     "skill": "Prayer",
+     "level": 10
+    }
+   ],
+   "quests": [
+    "Recruitment Drive"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "hard",
+  "task": "Recharge your prayer in Port Sarim church while wearing full Proselyte",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Defence",
+     "level": 30
+    },
+    {
+     "skill": "Prayer",
+     "level": 20
+    }
+   ],
+   "quests": [
+    "Slug Menace"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "hard",
+  "task": "Equip a Dwarven helmet within the Dwarven mines",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Defence",
+     "level": 50
+    }
+   ],
+   "quests": [
+    "Grim Tales"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "hard",
+  "task": "Purchase and equip a Granite body from Barbarian Assault",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Defence",
+     "level": 50
+    },
+    {
+     "skill": "Strength",
+     "level": 50
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "hard",
+  "task": "Enter the Seers' Village courthouse with Piety turned on",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Defence",
+     "level": 70
+    },
+    {
+     "skill": "Prayer",
+     "level": 70
+    }
+   ],
+   "quests": [
+    "King's Ransom",
+    "Camelot training room"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "hard",
+  "task": "Pray at the Altar of Nature with Piety activated",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Defence",
+     "level": 70
+    },
+    {
+     "skill": "Prayer",
+     "level": 70
+    }
+   ],
+   "quests": [
+    "Nature Spirit",
+    "King's Ransom",
+    "Camelot training room"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "easy",
+  "task": "Plant Jute seeds in the farming patch north of McGrubor's Wood",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Farming",
+     "level": 13
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "medium",
+  "task": "Place a Scarecrow in the Falador farm patch",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Farming",
+     "level": 23
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "easy",
+  "task": "Place a Scarecrow in the Morytania flower patch",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Farming",
+     "level": 23
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "medium",
+  "task": "Pick some Limpwurt root from the farming patch in Catherby",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Farming",
+     "level": 26
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "medium",
+  "task": "Grow a healthy Fruit tree in the patch near Brimhaven",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Farming",
+     "level": 27
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "medium",
+  "task": "Harvest some Strawberries from the Ardougne farming patch",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Farming",
+     "level": 31
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "medium",
+  "task": "Enter the Farming Guild.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Farming",
+     "level": 45
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "hard",
+  "task": "Harvest some Watermelon from the allotment patch on Harmony Island",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Farming",
+     "level": 47
+    }
+   ],
+   "quests": [
+    "The Great Brain Robbery"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "hard",
+  "task": "Harvest some Bittercap mushrooms from the patch in Canifis",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Farming",
+     "level": 53
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "hard",
+  "task": "Pick some Belladonna from the farming patch at Draynor Manor",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Farming",
+     "level": 63
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "hard",
+  "task": "Collect at least 2 Yew roots from the tree patch in Varrock Palace",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Farming",
+     "level": 68
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 60
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "hard",
+  "task": "Check the health of a Palm tree near Tree Gnome Village",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Farming",
+     "level": 68
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "elite",
+  "task": "Check the health of a Palm tree in Brimhaven",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Farming",
+     "level": 68
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "hard",
+  "task": "Check the health of your Palm tree in Lletya",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Farming",
+     "level": 68
+    }
+   ],
+   "quests": [
+    "Mourning's End Part I"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "hard",
+  "task": "Pick some Poison ivy berries from the patch south of East Ardougne",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Farming",
+     "level": 70
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "elite",
+  "task": "Check the health of your Calquat tree patch",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Farming",
+     "level": 72
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "hard",
+  "task": "Plant some Logavano seeds at the Tithe Farm.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Farming",
+     "level": 74
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "elite",
+  "task": "Have Prissy Scilla protect your Magic tree",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Farming",
+     "level": 75
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "elite",
+  "task": "Pick some Dwarf weed from the herb patch at Catherby",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Farming",
+     "level": 79
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "elite",
+  "task": "Pick some Torstol from the patch north of East Ardougne",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Farming",
+     "level": 85
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "elite",
+  "task": "Create your own battlestaff from scratch within the Farming Guild.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Farming",
+     "level": 85
+    },
+    {
+     "skill": "Fletching",
+     "level": 40
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "elite",
+  "task": "Find at least 3 Magic roots at once when digging up your Magic tree in Falador",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Farming",
+     "level": 91
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 75
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "easy",
+  "task": "Chop and burn some Oak logs in the Fremennik Province",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Firemaking",
+     "level": 15
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 15
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "easy",
+  "task": "Chop and burn some Oak logs in Lumbridge",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Firemaking",
+     "level": 15
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 15
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "medium",
+  "task": "Chop and burn some Willow logs in Taverley",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Firemaking",
+     "level": 30
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 30
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "medium",
+  "task": "Chop and burn some Teak logs on Ape Atoll",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Firemaking",
+     "level": 35
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 35
+    }
+   ],
+   "quests": [
+    "Monkey Madness I"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "medium",
+  "task": "Use the balloon to travel from Varrock",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Firemaking",
+     "level": 40
+    }
+   ],
+   "quests": [
+    "Enlightened Journey"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "medium",
+  "task": "Light a Bullseye lantern at the Chemist's in Rimmington",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Firemaking",
+     "level": 49
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "medium",
+  "task": "Travel to Castle Wars by hot air balloon",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Firemaking",
+     "level": 50
+    }
+   ],
+   "quests": [
+    "Enlightened Journey"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "medium",
+  "task": "Subdue the Wintertodt.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Firemaking",
+     "level": 50
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "hard",
+  "task": "Chop and burn some Mahogany logs on Mos Le'Harmless",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Firemaking",
+     "level": 50
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 50
+    }
+   ],
+   "quests": [
+    "Cabin Fever"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "hard",
+  "task": "Chop and burn some Mahogany logs on Ape Atoll",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Firemaking",
+     "level": 50
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 50
+    }
+   ],
+   "quests": [
+    "Monkey Madness I"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "hard",
+  "task": "Burn some Yew logs on the Nardah Mayor's balcony",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Firemaking",
+     "level": 60
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "hard",
+  "task": "Chop some Yew logs in Varrock and burn them at the top of the Varrock church",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Firemaking",
+     "level": 60
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 60
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "hard",
+  "task": "Burn some Maple logs with a bow in Seers' Village",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Firemaking",
+     "level": 65
+    }
+   ],
+   "quests": [
+    "Barbarian Firemaking"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "hard",
+  "task": "Light your Mining helmet in the Lumbridge Castle basement",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Firemaking",
+     "level": 65
+    }
+   ],
+   "quests": [
+    "The Lost Tribe"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "elite",
+  "task": "Cut and burn some Magic logs in the Resource Area",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Firemaking",
+     "level": 75
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 75
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "elite",
+  "task": "Cremate any Shade remains on a Magic pyre",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Firemaking",
+     "level": 80
+    }
+   ],
+   "quests": [
+    "Shades of Mort'ton"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "easy",
+  "task": "Catch some Anchovies in Al-Kharid",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Fishing",
+     "level": 15
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "easy",
+  "task": "Go out fishing on the Fishing Trawler",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Fishing",
+     "level": 15
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "easy",
+  "task": "Catch a Mackerel at Catherby",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Fishing",
+     "level": 16
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "easy",
+  "task": "Fish a Trout from the River Molch.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Fishing",
+     "level": 20
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "easy",
+  "task": "Catch some Trout in the River Lum at Barbarian Village",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Fishing",
+     "level": 20
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "medium",
+  "task": "Catch some Salmon in Lumbridge",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Fishing",
+     "level": 30
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "medium",
+  "task": "Catch a Bluegill on Lake Molch.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Fishing",
+     "level": 43
+    },
+    {
+     "skill": "Hunter",
+     "level": 35
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "medium",
+  "task": "Fish some Bass on Ape Atoll",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Fishing",
+     "level": 46
+    }
+   ],
+   "quests": [
+    "Monkey Madness I"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "hard",
+  "task": "Fish some Raw lava eel in the Wilderness",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Fishing",
+     "level": 53
+    }
+   ],
+   "quests": [
+    "Heroes' Quest"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "medium",
+  "task": "Catch a Karambwan",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Fishing",
+     "level": 65
+    }
+   ],
+   "quests": [
+    "Tai Bwo Wannai Trio"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "elite",
+  "task": "Catch a Shark in Burgh de Rott with your bare hands",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Fishing",
+     "level": 96
+    },
+    {
+     "skill": "Strength",
+     "level": 76
+    }
+   ],
+   "quests": [
+    "In Aid of the Myreque",
+    "Barbarian Fishing"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "easy",
+  "task": "Fletch an Oak shortbow in the Gnome Stronghold",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Fletching",
+     "level": 20
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "medium",
+  "task": "String a Maple shortbow in Seers' Village bank",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Fletching",
+     "level": 50
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "elite",
+  "task": "Smith and fletch 10 Rune darts within Varrock",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Fletching",
+     "level": 81
+    },
+    {
+     "skill": "Smithing",
+     "level": 89
+    }
+   ],
+   "quests": [
+    "The Tourist Trap"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "elite",
+  "task": "Fletch a Magic longbow in the Elven lands",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Fletching",
+     "level": 85
+    }
+   ],
+   "quests": [
+    "Regicide"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "elite",
+  "task": "Fletch some Dragon darts at the Bedabin Camp",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Fletching",
+     "level": 95
+    }
+   ],
+   "quests": [
+    "The Tourist Trap"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "easy",
+  "task": "Create a strength potion in the The Deeper Lode pub.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Herblore",
+     "level": 12
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "medium",
+  "task": "Mix a Guthix balance potion while in Morytania (NOT upstairs at Ectofuntus)",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Herblore",
+     "level": 22
+    }
+   ],
+   "quests": [
+    "In Aid of the Myreque"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "medium",
+  "task": "Create a Combat potion in the Desert",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Herblore",
+     "level": 36
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "medium",
+  "task": "Create a Superantipoison potion from scratch in the Seers'/Catherby area",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Herblore",
+     "level": 48
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "hard",
+  "task": "Mix a Super defence potion in the Fremennik Province",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Herblore",
+     "level": 66
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "elite",
+  "task": "Mix a Saradomin brew in Falador east bank",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Herblore",
+     "level": 81
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "elite",
+  "task": "Create an Anti-venom potion whilst standing in the Horseshoe mine",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Herblore",
+     "level": 87
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "elite",
+  "task": "Create a Super combat potion in Varrock west bank",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Herblore",
+     "level": 90
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "easy",
+  "task": "Catch a Golden warbler",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Hunter",
+     "level": 5
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "easy",
+  "task": "Catch a Copper longtail",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Hunter",
+     "level": 9
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "easy",
+  "task": "Catch a Cerulean twitch",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Hunter",
+     "level": 11
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "medium",
+  "task": "Catch a Swamp lizard",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Hunter",
+     "level": 29
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "medium",
+  "task": "Trap a Spined Larupia",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Hunter",
+     "level": 31
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "medium",
+  "task": "Catch a Snowy knight",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Hunter",
+     "level": 35
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "medium",
+  "task": "Trap a Horned Graahk",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Hunter",
+     "level": 41
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "medium",
+  "task": "Catch an Essence or Eclectic impling in Puro-Puro",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Hunter",
+     "level": 42
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "medium",
+  "task": "Catch an Orange salamander",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Hunter",
+     "level": 47
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "medium",
+  "task": "Catch a chinchompa in the Kourend Woodland.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Hunter",
+     "level": 53
+    }
+   ],
+   "quests": [
+    "Eagles' Peak"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "hard",
+  "task": "Catch a sabre-toothed kyatt",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Hunter",
+     "level": 55
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "hard",
+  "task": "Catch a Red salamander",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Hunter",
+     "level": 59
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "hard",
+  "task": "Trade furs with the Fancy Dress Seller for a Spottier cape and equip it",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Hunter",
+     "level": 66
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "hard",
+  "task": "Catch a Black salamander",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Hunter",
+     "level": 67
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "hard",
+  "task": "Catch a Dashing kebbit",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Hunter",
+     "level": 69
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "easy",
+  "task": "Cast Low Alchemy at the Fountain of Rune",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Magic",
+     "level": 21
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "medium",
+  "task": "Cast the Teleport to Varrock spell",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Magic",
+     "level": 25
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "medium",
+  "task": "Cast the Lumbridge Teleport spell",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Magic",
+     "level": 31
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "medium",
+  "task": "Telegrab some Wine of Zamorak at the Chaos Temple by the Wilderness",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Magic",
+     "level": 33
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "medium",
+  "task": "Teleport to Falador",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Magic",
+     "level": 37
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "medium",
+  "task": "Teleport to Camelot",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Magic",
+     "level": 45
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "medium",
+  "task": "Teleport to the Digsite using a Digsite pendant",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Magic",
+     "level": 49
+    }
+   ],
+   "quests": [
+    "The Dig Site"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "medium",
+  "task": "Cast the Ardougne Teleport spell",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Magic",
+     "level": 51
+    }
+   ],
+   "quests": [
+    "Plague City"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "hard",
+  "task": "Teleport to Paddewwa",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Magic",
+     "level": 54
+    }
+   ],
+   "quests": [
+    "Desert Treasure I"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "hard",
+  "task": "Charge a water orb",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Magic",
+     "level": 56
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "hard",
+  "task": "Teleport to the Watchtower",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Magic",
+     "level": 58
+    }
+   ],
+   "quests": [
+    "Watchtower"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "hard",
+  "task": "Cast Bones to Peaches in Al-Kharid Palace",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Magic",
+     "level": 60
+    }
+   ],
+   "quests": [
+    "Mage Training Arena"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "medium",
+  "task": "Charge an earth orb",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Magic",
+     "level": 60
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "hard",
+  "task": "Cast one of the 3 God spells against another player in the Wilderness",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Magic",
+     "level": 60
+    }
+   ],
+   "quests": [
+    "Mage Arena"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "hard",
+  "task": "Teleport to Trollheim",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Magic",
+     "level": 61
+    }
+   ],
+   "quests": [
+    "Eadgar's Ruse"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "hard",
+  "task": "Teleport to Ape Atoll",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Magic",
+     "level": 64
+    }
+   ],
+   "quests": [
+    "Recipe for Disaster"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "hard",
+  "task": "Enter the Magic Guild",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Magic",
+     "level": 66
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "hard",
+  "task": "Cast Monster Examine on a mountain troll south of Mount Quidamortem.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Magic",
+     "level": 66
+    }
+   ],
+   "quests": [
+    "Dream Mentor"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "hard",
+  "task": "Charge an air orb",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Magic",
+     "level": 66
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "hard",
+  "task": "Refill your Waterskins in the Desert using Lunar spells (Humidify)",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Magic",
+     "level": 68
+    }
+   ],
+   "quests": [
+    "Dream Mentor"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "hard",
+  "task": "Teleport to Waterbirth Island",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Magic",
+     "level": 72
+    }
+   ],
+   "quests": [
+    "Lunar Diplomacy"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "elite",
+  "task": "Fertilise the Morytania herb patch using Lunar spells (Fertile Soil)",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Magic",
+     "level": 83
+    }
+   ],
+   "quests": [
+    "Lunar Diplomacy"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "elite",
+  "task": "Use Lunar magic to make 20 Mahogany planks at the Lumber Yard (Plank Make)",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Magic",
+     "level": 86
+    }
+   ],
+   "quests": [
+    "Dream Mentor"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "elite",
+  "task": "Teleport to Catherby",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Magic",
+     "level": 87
+    }
+   ],
+   "quests": [
+    "Lunar Diplomacy"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "elite",
+  "task": "Create an Ape Atoll teleport tablet.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Magic",
+     "level": 90
+    }
+   ],
+   "quests": [
+    "Monkey Madness I"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "elite",
+  "task": "Cast Ice Barrage on another player in Castle Wars",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Magic",
+     "level": 94
+    }
+   ],
+   "quests": [
+    "Desert Treasure I"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "elite",
+  "task": "Cast Ice Barrage against a foe in the Desert",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Magic",
+     "level": 94
+    }
+   ],
+   "quests": [
+    "Desert Treasure I"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "elite",
+  "task": "Teleport to Ghorrock",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Magic",
+     "level": 96
+    }
+   ],
+   "quests": [
+    "Desert Treasure I"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "easy",
+  "task": "Smith some Blurite limbs on Doric's anvil",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Mining",
+     "level": 10
+    },
+    {
+     "skill": "Smithing",
+     "level": 13
+    }
+   ],
+   "quests": [
+    "The Knight's Sword",
+    "Doric's Quest"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "easy",
+  "task": "Mine some iron ore at the Mount Karuulm mine.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Mining",
+     "level": 15
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "easy",
+  "task": "Mine some Iron ore at the Al-Kharid mine",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Mining",
+     "level": 15
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "easy",
+  "task": "Mine some Iron in the south-east mining patch near Varrock",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Mining",
+     "level": 15
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "easy",
+  "task": "Mine some Iron ore in the Wilderness",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Mining",
+     "level": 15
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "easy",
+  "task": "Mine some Iron ore near Piscatoris",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Mining",
+     "level": 15
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "medium",
+  "task": "Mine some Coal in Rellekka",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Mining",
+     "level": 30
+    }
+   ],
+   "quests": [
+    "The Fremennik Trials"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "medium",
+  "task": "Mine some Coal near the Coal trucks",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Mining",
+     "level": 30
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "elite",
+  "task": "Craft one or more blood runes.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Mining",
+     "level": 38
+    },
+    {
+     "skill": "Runecraft",
+     "level": 77
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "medium",
+  "task": "Mine some Gold at the Arzinian Mine",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Mining",
+     "level": 40
+    }
+   ],
+   "quests": [
+    "Between a Rock..."
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "easy",
+  "task": "Mine some Gold from the rocks on the north-west peninsula of Karamja",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Mining",
+     "level": 40
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "medium",
+  "task": "Mine a Red topaz from a Gem rock",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Mining",
+     "level": 40
+    }
+   ],
+   "quests": [
+    "Shilo Village",
+    "Jungle Potion"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "medium",
+  "task": "Mine some Gold ore underneath the Grand Tree",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Mining",
+     "level": 40
+    }
+   ],
+   "quests": [
+    "The Grand Tree"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "medium",
+  "task": "Mine some volcanic sulphur.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Mining",
+     "level": 42
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "hard",
+  "task": "Mine some Granite",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Mining",
+     "level": 45
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "medium",
+  "task": "Mine some Mithril ore in the Wilderness",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Mining",
+     "level": 55
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "hard",
+  "task": "Mine some Mithril ore in the Abandoned Mine",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Mining",
+     "level": 55
+    }
+   ],
+   "quests": [
+    "Haunted Mine"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "hard",
+  "task": "Enter the Mining Guild while wearing a prospector helmet.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Mining",
+     "level": 60
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "hard",
+  "task": "Mine some Lovakite ore.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Mining",
+     "level": 65
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "hard",
+  "task": "Mine 5 Adamantite ores on Jatizso",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Mining",
+     "level": 70
+    }
+   ],
+   "quests": [
+    "The Fremennik Isles"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "hard",
+  "task": "Mine some Adamantite ore in Tirannwn",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Mining",
+     "level": 70
+    }
+   ],
+   "quests": [
+    "Regicide"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "elite",
+  "task": "Smith a Rune scimitar from scratch in the Resource Area",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Mining",
+     "level": 85
+    },
+    {
+     "skill": "Smithing",
+     "level": 90
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "hard",
+  "task": "Recharge your prayer in Port Sarim church while wearing full Proselyte armour",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Prayer",
+     "level": 20
+    },
+    {
+     "skill": "Defence",
+     "level": 30
+    }
+   ],
+   "quests": [
+    "The Slug Menace"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "hard",
+  "task": "Recharge your prayer at the Emir's Arena with Smite activated",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Prayer",
+     "level": 52
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "hard",
+  "task": "Pray at the altar in Varrock Palace with Smite active",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Prayer",
+     "level": 52
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "elite",
+  "task": "Restore at least 85 Prayer points when praying at the altar in Sophanem",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Prayer",
+     "level": 85
+    }
+   ],
+   "quests": [
+    "Icthlarin's Little Helper"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "medium",
+  "task": "Enter the Ranging Guild",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Ranged",
+     "level": 40
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "medium",
+  "task": "Purchase an upgraded device from Ava",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Ranged",
+     "level": 50
+    }
+   ],
+   "quests": [
+    "Animal Magnetism"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "easy",
+  "task": "Craft some Water runes",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Runecraft",
+     "level": 5
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "easy",
+  "task": "Craft some Earth runes",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Runecraft",
+     "level": 9
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "medium",
+  "task": "Craft some Lava runes at the Fire Altar in Al-Kharid",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Runecraft",
+     "level": 23
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "hard",
+  "task": "Craft some Nature runes",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Runecraft",
+     "level": 44
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "hard",
+  "task": "Craft 140 Mind runes simultaneously",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Runecraft",
+     "level": 56
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "hard",
+  "task": "Craft 56 Cosmic runes simultaneously",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Runecraft",
+     "level": 59
+    }
+   ],
+   "quests": [
+    "Lost City"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "hard",
+  "task": "Craft some Death runes",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Runecraft",
+     "level": 65
+    }
+   ],
+   "quests": [
+    "Mourning's End Part II"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "elite",
+  "task": "Craft 140 or more Water runes at once",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Runecraft",
+     "level": 76
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "elite",
+  "task": "Craft 100 or more Earth runes simultaneously",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Runecraft",
+     "level": 78
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "elite",
+  "task": "Craft 56 Astral runes at once",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Runecraft",
+     "level": 82
+    }
+   ],
+   "quests": [
+    "Lunar Diplomacy"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "elite",
+  "task": "Craft 252 Air runes at once",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Runecraft",
+     "level": 88
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "elite",
+  "task": "Craft 56 Nature runes at once",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Runecraft",
+     "level": 91
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "easy",
+  "task": "Slay a Cave bug in the Lumbridge Swamp Caves",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Slayer",
+     "level": 7
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "easy",
+  "task": "Kill a Banshee in the Slayer Tower",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Slayer",
+     "level": 15
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "medium",
+  "task": "Slay a Desert lizard",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Slayer",
+     "level": 22
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "medium",
+  "task": "Kill a Mogre at Mudskipper Point",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Slayer",
+     "level": 32
+    }
+   ],
+   "quests": [
+    "Skippy and the Mogres"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "medium",
+  "task": "Kill a Terror dog",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Slayer",
+     "level": 40
+    }
+   ],
+   "quests": [
+    "Haunted Mine"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "medium",
+  "task": "Kill a Fever spider on Braindeath Island",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Slayer",
+     "level": 42
+    }
+   ],
+   "quests": [
+    "Rum Deal"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "medium",
+  "task": "Slay a Brine rat",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Slayer",
+     "level": 47
+    }
+   ],
+   "quests": [
+    "Olaf's Quest"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "hard",
+  "task": "Be assigned a Slayer task by the Slayer Master in Shilo Village",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Slayer",
+     "level": 50
+    },
+    {
+     "skill": "Combat",
+     "level": 100
+    }
+   ],
+   "quests": [
+    "Shilo Village"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "medium",
+  "task": "Kill a Bloodveld in the Wilderness God Wars Dungeon",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Slayer",
+     "level": 50
+    },
+    {
+     "skill": "Agility",
+     "level": 60
+    },
+    {
+     "skill": "Strength",
+     "level": 60
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "hard",
+  "task": "Kill a Cave horror",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Slayer",
+     "level": 58
+    }
+   ],
+   "quests": [
+    "Cabin Fever"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "hard",
+  "task": "Kill a wyrm in the Karuulm Slayer Dungeon.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Slayer",
+     "level": 62
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "hard",
+  "task": "Slay a Dust devil with a Slayer helmet equipped",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Slayer",
+     "level": 65
+    },
+    {
+     "skill": "Crafting",
+     "level": 55
+    }
+   ],
+   "quests": [
+    "Desert Treasure I"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "hard",
+  "task": "Kill a Spiritual warrior in the Wilderness God Wars Dungeon",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Slayer",
+     "level": 68
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "hard",
+  "task": "Kill a Skeletal wyvern in the Asgarnia Ice Dungeon",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Slayer",
+     "level": 72
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "elite",
+  "task": "Slay a Spiritual mage within the God Wars Dungeon",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Slayer",
+     "level": 83
+    },
+    {
+     "skill": "Agility",
+     "level": 60
+    },
+    {
+     "skill": "Strength",
+     "level": 60
+    }
+   ],
+   "quests": [
+    "Troll Stronghold"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "elite",
+  "task": "Kill an Abyssal demon in the Slayer Tower",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Slayer",
+     "level": 85
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "elite",
+  "task": "Kill the thermonuclear smoke devil",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Slayer",
+     "level": 93
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "elite",
+  "task": "Kill a hydra in the Karuulm Slayer Dungeon.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Slayer",
+     "level": 95
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "medium",
+  "task": "Make a batch of steel cannonballs at the Port Phasmatys furnace",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Smithing",
+     "level": 35
+    }
+   ],
+   "quests": [
+    "Ghosts Ahoy",
+    "Dwarf Cannon"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "medium",
+  "task": "Smith a Gold helmet in the Resource Area",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Smithing",
+     "level": 50
+    }
+   ],
+   "quests": [
+    "Between a Rock..."
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "hard",
+  "task": "Smith a Dragon sq shield in West Ardougne",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Smithing",
+     "level": 60
+    }
+   ],
+   "quests": [
+    "Legends' Quest"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "hard",
+  "task": "Obtain the Blast Furnace Foreman's permission to use the Blast Furnace for free",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Smithing",
+     "level": 60
+    }
+   ],
+   "quests": [
+    "The Giant Dwarf"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "hard",
+  "task": "Smith a Mithril platebody near Ardougne",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Smithing",
+     "level": 68
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "hard",
+  "task": "Create a Mithril platebody in Nardah",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Smithing",
+     "level": 68
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "hard",
+  "task": "Smelt an adamantite bar in The Forsaken Tower.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Smithing",
+     "level": 70
+    }
+   ],
+   "quests": [
+    "The Forsaken Tower"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "hard",
+  "task": "Smith an Adamant spear at Otto's Grotto",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Smithing",
+     "level": 75
+    }
+   ],
+   "quests": [
+    "Barbarian Smithing"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "hard",
+  "task": "Smith an Adamant scimitar in the Resource Area",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Smithing",
+     "level": 75
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "elite",
+  "task": "Smith an Adamant platebody down Draynor sewer",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Smithing",
+     "level": 88
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "elite",
+  "task": "Smith a Rune hasta at Otto's Grotto",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Smithing",
+     "level": 90
+    }
+   ],
+   "quests": [
+    "Barbarian Smithing"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "medium",
+  "task": "Travel to the Desert via the Eagle transport system",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Strength",
+     "level": 45
+    }
+   ],
+   "quests": [
+    "Eagles' Peak"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "easy",
+  "task": "Steal a Cake from the East Ardougne market stalls",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Thieving",
+     "level": 5
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "easy",
+  "task": "Steal from the Keldagrim crafting or baker's stall",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Thieving",
+     "level": 5
+    }
+   ],
+   "quests": [
+    "The Giant Dwarf"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "easy",
+  "task": "Steal from the Tea stall in Varrock",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Thieving",
+     "level": 5
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "easy",
+  "task": "Open the sarcophagus in the first room of Pyramid Plunder",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Thieving",
+     "level": 21
+    }
+   ],
+   "quests": [
+    "Icthlarin's Little Helper"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "medium",
+  "task": "Steal a Phoenix feather from the Desert phoenix",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Thieving",
+     "level": 25
+    }
+   ],
+   "quests": [
+    "The Golem"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "easy",
+  "task": "Steal from a Hosidius Food Stall.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Thieving",
+     "level": 25
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "medium",
+  "task": "Pickpocket the Master Farmer north of East Ardougne",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Thieving",
+     "level": 38
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "medium",
+  "task": "Pickpocket Martin the Master Gardener",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Thieving",
+     "level": 38
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "medium",
+  "task": "Pickpocket a Falador guard",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Thieving",
+     "level": 40
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "medium",
+  "task": "Steal from the Rellekka Fish stalls",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Thieving",
+     "level": 42
+    }
+   ],
+   "quests": [
+    "The Fremennik Trials"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "medium",
+  "task": "Steal from the chest in Hemenster",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Thieving",
+     "level": 47
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "hard",
+  "task": "Deliver an artefact to Captain Khaled.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Thieving",
+     "level": 49
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "hard",
+  "task": "Crack a wall safe within the Rogues' Den",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Thieving",
+     "level": 50
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "hard",
+  "task": "Knock out a Menaphite thug",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Thieving",
+     "level": 65
+    }
+   ],
+   "quests": [
+    "The Feud"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "hard",
+  "task": "Attempt to steal from a chest in Ardougne Castle.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Thieving",
+     "level": 72
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "hard",
+  "task": "Steal from the Keldagrim gem stall",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Thieving",
+     "level": 75
+    }
+   ],
+   "quests": [
+    "The Giant Dwarf"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "hard",
+  "task": "Pickpocket a Gnome",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Thieving",
+     "level": 75
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "elite",
+  "task": "Steal from a Dorgesh-Kaan rich chest",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Thieving",
+     "level": 78
+    }
+   ],
+   "quests": [
+    "Death to the Dorgeshuun"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "elite",
+  "task": "Pickpocket a Hero",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Thieving",
+     "level": 80
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "elite",
+  "task": "Attempt to picklock the door to the basement of the Yanille Agility dungeon",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Thieving",
+     "level": 82
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "elite",
+  "task": "Steal from the Chest (Rogues' Castle)",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Thieving",
+     "level": 84
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "elite",
+  "task": "Pickpocket an Elf",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Thieving",
+     "level": 85
+    }
+   ],
+   "quests": [
+    "Mourning's End Part I"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "elite",
+  "task": "Steal from the Grand Gold Chest in the final room of Pyramid Plunder",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Thieving",
+     "level": 91
+    }
+   ],
+   "quests": [
+    "Icthlarin's Little Helper"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "medium",
+  "task": "Earn 100% favour in the Tai Bwo Wannai Cleanup minigame",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Woodcutting",
+     "level": 10
+    }
+   ],
+   "quests": [
+    "Jungle Potion"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "medium",
+  "task": "Chop the vines to gain deeper access to Brimhaven Dungeon",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Woodcutting",
+     "level": 10
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "medium",
+  "task": "Climb the stairs within Brimhaven Dungeon",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Woodcutting",
+     "level": 10
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "hard",
+  "task": "Collect 5 Palm leaves",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Woodcutting",
+     "level": 15
+    }
+   ],
+   "quests": [
+    "Legends' Quest"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "medium",
+  "task": "Chop some Willow logs in Draynor Village",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Woodcutting",
+     "level": 30
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "medium",
+  "task": "Chop some Teak logs near Uzer",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Woodcutting",
+     "level": 35
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "medium",
+  "task": "Cut a log from a Teak",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Woodcutting",
+     "level": 35
+    }
+   ],
+   "quests": [
+    "Jungle Potion",
+    "Legends' Quest"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "medium",
+  "task": "Obtain some Bark from a Hollow tree",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Woodcutting",
+     "level": 45
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "medium",
+  "task": "Cut a log from a Mahogany",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Woodcutting",
+     "level": 50
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "medium",
+  "task": "Chop some mahogany logs north of the Farming Guild.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Woodcutting",
+     "level": 50
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "hard",
+  "task": "Craft a Fremennik shield on Neitiznot",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Woodcutting",
+     "level": 56
+    }
+   ],
+   "quests": [
+    "The Fremennik Isles"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "hard",
+  "task": "Travel from Lumbridge to Edgeville on a Waka canoe",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Woodcutting",
+     "level": 57
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "hard",
+  "task": "Make a Waka canoe near Edgeville",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Woodcutting",
+     "level": 57
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "hard",
+  "task": "Enter the Woodcutting Guild.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Woodcutting",
+     "level": 60
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "medium",
+  "task": "Chop some Yew logs from an Ent",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Woodcutting",
+     "level": 61
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "elite",
+  "task": "Chop some Magic logs at the Mage Training Arena",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Woodcutting",
+     "level": 75
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "elite",
+  "task": "Chop some redwood logs.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Woodcutting",
+     "level": 90
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "easy",
+  "task": "Have the Mage of Zamorak teleport you to the Abyss",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Abyss Miniquest"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "hard",
+  "task": "Take the train from Dorgesh-Kaan to Keldagrim",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Another Slice of H.A.M."
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "hard",
+  "task": "Teleport to Xeric's Heart using Xeric's talisman.",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Architectural Alliance"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "medium",
+  "task": "Use Kharedst's memoirs to teleport to all five cities in Great Kourend.",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "The Ascent of Arceuus",
+    "The Depths of Despair",
+    "The Forsaken Tower",
+    "The Queen of Thieves",
+    "Tale of the Righteous"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 5
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "hard",
+  "task": "Kill a Mithril dragon",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Barbarian Firemaking"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "easy",
+  "task": "Enter the Combat Training Camp north of West Ardougne",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Biohazard"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "easy",
+  "task": "Bake some Bread on the Lumbridge kitchen range",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Cook's Assistant"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "hard",
+  "task": "Activate Ancient Magicks",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Desert Treasure I"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "hard",
+  "task": "Kill a Shadow hound in the Shadow Dungeon",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Desert Treasure I"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "medium",
+  "task": "Discover the hidden wall in the dungeon below the volcano",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Dragon Slayer I"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "medium",
+  "task": "Visit the Isle of Crandor via the dungeon below the volcano",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Dragon Slayer I"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "medium",
+  "task": "Travel to the Snowy Hunter Area via Eagle",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Eagles' Peak"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "medium",
+  "task": "Travel from Eagles' Peak to the Feldip Hills by Eagle",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Eagles' Peak"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "medium",
+  "task": "Teleport to Enakhra's Temple with the Camulet",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Enakhra's Lament"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "easy",
+  "task": "Defeat one of each elemental in the Elemental Workshop",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Elemental Workshop I"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "medium",
+  "task": "Create a Mind helmet",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Elemental Workshop II"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "medium",
+  "task": "Turn your crystal saw seed into a Crystal saw",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "The Eyes of Glouphrie"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "easy",
+  "task": "Change your boots at Yrsa's Shoe Store",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "The Fremennik Trials"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "medium",
+  "task": "Select a colour for your kitten",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Garden of Tranquillity",
+    "Gertrude's Cat"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "medium",
+  "task": "Pick a White tree fruit",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Garden of Tranquillity"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "medium",
+  "task": "Use an Ectophial to return to Port Phasmatys",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Ghosts Ahoy"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "easy",
+  "task": "Browse the Stonemason's Shop",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "The Giant Dwarf"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "medium",
+  "task": "Travel to Uzer via Magic carpet",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "The Golem"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "medium",
+  "task": "Use the Gnome glider to travel to Karamja",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "The Grand Tree"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "medium",
+  "task": "Charter a ship from the shipyard in the far east of Karamja",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "The Grand Tree"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "medium",
+  "task": "Claim buckets of sand from Bert in Yanille (File:Ultimate ironman chat badge.png Ultimate Ironman alternative:Fill a bucket with sand using Bert's sandpit)",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "The Hand in the Sand"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "hard",
+  "task": "Kill the Blue dragon under the Heroes' Guild",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Heroes' Quest"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "medium",
+  "task": "Visit the Lighthouse from Waterbirth Island",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Horror from the Deep"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "hard",
+  "task": "Complete a hard temple trek",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "In Aid of the Myreque"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "medium",
+  "task": "Board the Swamp Boaty at the Hollows",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "In Search of the Myreque"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "medium",
+  "task": "Exchange gems with Safta Doc for a Machete",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Jungle Potion"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "hard",
+  "task": "Recharge some jewellery at the totem in the Legends' Guild",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Legends' Quest"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "hard",
+  "task": "Eat an Oomlie wrap",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Legends' Quest"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "hard",
+  "task": "Have a Monkey Minder put you in Ardougne Zoo's monkey cage",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Monkey Madness I"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "easy",
+  "task": "Restore your Prayer points at the Nature Grotto",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Nature Spirit"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "medium",
+  "task": "Travel to the Feldip Hills by Gnome glider",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "One Small Favour",
+    "The Grand Tree"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "easy",
+  "task": "Have Sbott tan something for you",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Priest in Peril"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "easy",
+  "task": "Enter Mort Myre Swamp",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Priest in Peril"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "easy",
+  "task": "Kill a Ghoul",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Priest in Peril"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "easy",
+  "task": "Offer some Bonemeal at the Ectofuntus",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Priest in Peril"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "easy",
+  "task": "Kill a Werewolf in its human form using the Wolfbane dagger",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Priest in Peril"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "medium",
+  "task": "Travel to Dragontooth Island",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Priest in Peril"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "easy",
+  "task": "Browse the Warrens General Store.",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "The Queen of Thieves"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "medium",
+  "task": "Visit the Port Sarim Rat Pits",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Ratcatchers"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "hard",
+  "task": "Purchase some Barrows gloves from the Culinaromancer's Chest",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Recipe for Disaster"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "hard",
+  "task": "Kill Zulrah",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Regicide"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "easy",
+  "task": "Have Wizard Cromperty teleport you to the Rune essence mine",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Rune Mysteries"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "easy",
+  "task": "Have Archmage Sedridor teleport you to the Rune essence mine",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Rune Mysteries"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "easy",
+  "task": "Have Aubury teleport you to the Rune essence mine",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Rune Mysteries"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "easy",
+  "task": "Have Brimstail teleport you to the Rune essence mine",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Rune Mysteries"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "medium",
+  "task": "Catch any fish on the Fishing Platform",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Sea Slug"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "medium",
+  "task": "Use Vigroy and Hajedy's cart service",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Shilo Village"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "medium",
+  "task": "Charter the Lady of the Waves from Cairn Isle to Port Khazard",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Shilo Village"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "medium",
+  "task": "Enter the Tolna dungeon after completing A Soul's Bane",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "A Soul's Bane"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "medium",
+  "task": "Visit the genie",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Spirits of the Elid"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "hard",
+  "task": "Collect at least 100 Tears of Guthix in one visit",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Tears of Guthix"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "hard",
+  "task": "Obtain 100% support from your kingdom subjects",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Throne of Miscellania"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "medium",
+  "task": "Kill a Swordchick in the Tower of Life",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Tower of Life"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "medium",
+  "task": "Use the Spirit tree north of Varrock",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Tree Gnome Village"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "medium",
+  "task": "Travel to the Tree Gnome Stronghold by Spirit tree",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Tree Gnome Village"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "easy",
+  "task": "Enter the Troll Stronghold",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Troll Stronghold"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "elite",
+  "task": "Purchase a White 2h sword from Sir Vyvin",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Wanted!"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "medium",
+  "task": "Collect some Cave nightshade from the Skavid caves",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Watchtower"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "medium",
+  "task": "Kill a Fire giant in the Waterfall Dungeon",
+  "requirements": {
+   "skills": [],
+   "quests": [
+    "Waterfall Quest"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 2
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "elite",
+  "task": "Imbue a salve amulet at Nightmare Zone, or equip a salve amulet(i) that was imbued there.",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "elite",
+  "task": "Perform a Cape of Accomplishment or Quest point cape emote at the top of the White Knights' Castle",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "elite",
+  "task": "Perform the Quest point cape emote in the Wise Old Man's house",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "easy",
+  "task": "Speak to Haig Halen after obtaining at least 50 Kudos",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "medium",
+  "task": "Enter the Champions' Guild",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "hard",
+  "task": "Speak to Orlando Smith when you have achieved 153 Kudos",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "easy",
+  "task": "Kill a Duck in Falador Park",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "easy",
+  "task": "Kill 5 Rock Crabs",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "easy",
+  "task": "Kill a zombie in the Draynor Sewers (level 13 only)",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "easy",
+  "task": "Kill a Sand Crab.",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "easy",
+  "task": "Kill a Terrorbird in the Terrorbird enclosure",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "easy",
+  "task": "Kill a Vulture",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "medium",
+  "task": "Deliver some intelligence to Captain Ginea.",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "easy",
+  "task": "Kill a Jogre in the Pothole Dungeon",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "medium",
+  "task": "Kill a lizardman. (Any lizardman, including shamans will count.)",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "medium",
+  "task": "Kill a Green dragon",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "easy",
+  "task": "Kill a Mammoth",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "hard",
+  "task": "Teleport to Barbarian Village with a Skull sceptre",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "medium",
+  "task": "Kill an Ankou in the Wilderness",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "hard",
+  "task": "Kill the Blue dragon underneath the Heroes' Guild",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "hard",
+  "task": "Kill a Metal dragon in the Brimhaven Dungeon",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 12
+    },
+    {
+     "skill": "Woodcutting",
+     "level": 34
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "hard",
+  "task": "Kill a zombie in the Shayzien Crypts.",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "hard",
+  "task": "Kill a lizardman shaman in Molch.",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "hard",
+  "task": "Kill the Crazy archaeologist, Chaos Fanatic and Scorpia",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "hard",
+  "task": "Kill the Giant Mole beneath Falador Park",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "hard",
+  "task": "Kill a Lava dragon on the Lava Dragon Isle",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "elite",
+  "task": "Kill each of the Dagannoth Kings",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "hard",
+  "task": "Kill the Chaos Elemental",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "elite",
+  "task": "Defeat Skotizo in the Catacombs of Kourend.",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "hard",
+  "task": "Kill the Kalphite Queen",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "hard",
+  "task": "Kill a Ket-Zek in the Fight Caves",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "elite",
+  "task": "Kill Callisto, Venenatis & Vet'ion",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "elite",
+  "task": "Equip a fire cape in Mor Ul Rek",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "elite",
+  "task": "Complete a raid in the Chambers of Xeric.",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "easy",
+  "task": "Sell Silk to the Silk trader in East Ardougne for 60 coins each",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "easy",
+  "task": "Use the altar in East Ardougne's church",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "easy",
+  "task": "Have Tindel Marchant identify a Rusty sword for you.",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "easy",
+  "task": "Use the Ardougne lever to teleport to the Wilderness",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "easy",
+  "task": "View Aleck's Hunter Emporium. shop in Yanille",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "easy",
+  "task": "Check what pets you have insured with Probita in East Ardougne",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "easy",
+  "task": "Enter the Kalphite Lair",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "easy",
+  "task": "Mine five Clay in the north-eastern Desert",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "easy",
+  "task": "Enter the Desert with a set of Desert robes equipped",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "easy",
+  "task": "Have the Nardah herbalist clean a herb for you",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "easy",
+  "task": "Collect 5 Potato cacti from the Kalphite Lair",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "easy",
+  "task": "Sell some artefacts to Simon Templeton",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "easy",
+  "task": "Cut a desert cactus open to fill a Waterskin",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Desert",
+  "tier": "easy",
+  "task": "Travel from the Shantay Pass to Pollnivneach by Magic carpet",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "easy",
+  "task": "Browse Sarah's Farming Shop",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "easy",
+  "task": "Get a Haircut or a Shave from the Falador Hairdresser",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "easy",
+  "task": "Fill a bucket from the pump north of Falador west Bank",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "easy",
+  "task": "Take the boat to Entrana",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "easy",
+  "task": "Make a mind tiara",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "easy",
+  "task": "Repair a broken strut in the Motherlode Mine",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "easy",
+  "task": "Claim a Security book from the Security Guard at Port Sarim jail",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "medium",
+  "task": "Unlock the Crystal chest in Taverley",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "easy",
+  "task": "Collect 5 Snape grass on Waterbirth Island",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "easy",
+  "task": "Fill a bucket with water at the Rellekka well",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "easy",
+  "task": "Buy a Candle from the Candle maker in Catherby",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "easy",
+  "task": "Collect 5 Flax from the Seers' Village flax field",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "easy",
+  "task": "Play the Organ in the Seers' Village church",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "easy",
+  "task": "Have Galahad make you a Cup of tea",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "easy",
+  "task": "Get a Pet fish from Harry in Catherby",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "easy",
+  "task": "Buy a Stew from the Seers' Village pub",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "easy",
+  "task": "Speak to Sherlock",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "easy",
+  "task": "Pick 5 Bananas from the plantation located east of the volcano",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "easy",
+  "task": "Travel to Port Sarim via the dock east of Musa Point",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "easy",
+  "task": "Travel to Ardougne via the port near Brimhaven",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "easy",
+  "task": "Use the Fishing spots north of the banana plantation",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "easy",
+  "task": "Collect 5 Seaweed from anywhere on Karamja",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "easy",
+  "task": "Attempt the TzHaar Fight Pit or Fight Cave",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "medium",
+  "task": "Claim a ticket from the Agility Arena in Brimhaven",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "hard",
+  "task": "Become the champion of the Fight Pit",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "easy",
+  "task": "Hand in a book at the Arceuus Library.",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "medium",
+  "task": "Switch to the Arceuus spellbook via Tyss.",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "easy",
+  "task": "Take a boat to Land's End.",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "easy",
+  "task": "Pray at the altar on the top floor of the Kourend Castle.",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "easy",
+  "task": "Dig up some saltpetre.",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "easy",
+  "task": "Heal a wounded Shayzien soldier.",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "easy",
+  "task": "Learn your age from Hans in Lumbridge",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "easy",
+  "task": "Pickpocket a Man or Woman in Lumbridge",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "easy",
+  "task": "Enter the H.A.M. Hideout",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "easy",
+  "task": "Browse Thessalia's Store",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "easy",
+  "task": "Make a Plank at the Sawmill",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "easy",
+  "task": "Enter the second level of the Stronghold of Security",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "easy",
+  "task": "Chop down a dying tree in the Lumber Yard",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "easy",
+  "task": "Buy a newspaper",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "easy",
+  "task": "Give a dog a bone!",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "medium",
+  "task": "Have the Apothecary in Varrock make you a Strength potion",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "medium",
+  "task": "Perform the 4 emotes from the Stronghold of Security",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "medium",
+  "task": "Make 20 Mahogany planks in one go",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "easy",
+  "task": "Enter the Wilderness from the Ardougne or Edgeville lever",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "easy",
+  "task": "Pray at the Chaos Altar in level 38 western Wilderness",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "easy",
+  "task": "Enter the Chaos Runecraft temple",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "easy",
+  "task": "Restore some Prayer points at the Demonic Ruins",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "easy",
+  "task": "Enter the King Black Dragon Lair",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "easy",
+  "task": "Collect 5 Red spider's eggs from the Wilderness",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "easy",
+  "task": "Equip any Team cape in the Wilderness",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "medium",
+  "task": "Talk to the Emblem Trader in Edgeville about emblems",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Wilderness",
+  "tier": "medium",
+  "task": "Open the Muddy chest in the Lava Maze",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "easy",
+  "task": "Complete a lap of the Gnome Agility Course",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "easy",
+  "task": "Score a goal in a Gnome Ball match",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "easy",
+  "task": "Collect a swamp toad at the Tree Gnome Stronghold",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "medium",
+  "task": "Grapple across the River Lum",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 8
+    },
+    {
+     "skill": "Ranged",
+     "level": 37
+    },
+    {
+     "skill": "Strength",
+     "level": 19
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Falador",
+  "tier": "medium",
+  "task": "Grapple up and then jump off the north Falador wall",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 11
+    },
+    {
+     "skill": "Ranged",
+     "level": 19
+    },
+    {
+     "skill": "Strength",
+     "level": 37
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "medium",
+  "task": "Use the grapple shortcut to get from the water obelisk to Catherby shore (one-way only)",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 36
+    },
+    {
+     "skill": "Ranged",
+     "level": 39
+    },
+    {
+     "skill": "Strength",
+     "level": 22
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "medium",
+  "task": "Grapple over Yanille's south wall",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 39
+    },
+    {
+     "skill": "Ranged",
+     "level": 21
+    },
+    {
+     "skill": "Strength",
+     "level": 38
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Karamja",
+  "tier": "hard",
+  "task": "Use the crossbow shortcut south of the volcano",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 53
+    },
+    {
+     "skill": "Ranged",
+     "level": 42
+    },
+    {
+     "skill": "Strength",
+     "level": 21
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "elite",
+  "task": "Grapple across a pylon on the Dorgesh-Kaan Agility Course. A light source is also required.",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Agility",
+     "level": 70
+    },
+    {
+     "skill": "Ranged",
+     "level": 70
+    },
+    {
+     "skill": "Strength",
+     "level": 70
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "easy",
+  "task": "Claim any Chompy bird hat from Rantz (30 kills min.)",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "medium",
+  "task": "Claim a Chompy bird hat from Rantz after registering at least 125 kills",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "hard",
+  "task": "Claim a Chompy bird hat from Rantz after registering at least 300 kills",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "elite",
+  "task": "Claim a Chompy bird hat from Rantz after registering at least 1000 kills",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "medium",
+  "task": "File:Ultimate ironman chat badge.png (Ultimate only) Fill a bucket with sand using Bert's sandpit",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "easy",
+  "task": "Teleport to Pest Control using the Minigame teleports",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Combat",
+     "level": 40
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "easy",
+  "task": "Complete a novice game of Pest Control",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Combat",
+     "level": 40
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "medium",
+  "task": "Complete an intermediate game of Pest Control",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Combat",
+     "level": 70
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "hard",
+  "task": "Complete a veteran game of Pest Control",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Combat",
+     "level": 100
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Western Provinces",
+  "tier": "elite",
+  "task": "Equip any complete void set",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Combat",
+     "level": 40
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "medium",
+  "task": "Achievement triggers as soon as you enter a game.",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "hard",
+  "task": "Requires defeating the Penance Queen at least once. 95000 coins to buy the Granite body (no points spent) {{SCP|Strength|50}} and {{SCP|Defence|50}} to equip the Granite body",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Strength",
+     "level": 50
+    },
+    {
+     "skill": "Defence",
+     "level": 50
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Morytania",
+  "tier": "easy",
+  "task": "Get a slayer task from the Slayer Master in Canifis",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Combat",
+     "level": 20
+    }
+   ],
+   "quests": [
+    "Priest in Peril"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Varrock",
+  "tier": "medium",
+  "task": "Get a Slayer task from Vannaka",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Combat",
+     "level": 40
+    }
+   ],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "medium",
+  "task": "Get a slayer task from Chaeldar",
+  "requirements": {
+   "skills": [
+    {
+     "skill": "Combat",
+     "level": 70
+    }
+   ],
+   "quests": [
+    "Lost City"
+   ],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "medium",
+  "task": "Enter the Unicorn pen in Ardougne Zoo using fairy rings",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Ardougne",
+  "tier": "medium",
+  "task": "Visit the island east of the Necromancer Tower",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Fremennik",
+  "tier": "medium",
+  "task": "Travel to Miscellania by fairy ring",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kandarin",
+  "tier": "medium",
+  "task": "Travel to McGrubor's Wood by fairy ring",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Kourend & Kebos",
+  "tier": "medium",
+  "task": "Travel to the fairy ring south of Mount Karuulm",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ },
+ {
+  "diary_region": "Lumbridge & Draynor",
+  "tier": "medium",
+  "task": "Travel to the Wizards' Tower by fairy ring",
+  "requirements": {
+   "skills": [],
+   "quests": [],
+   "items": []
+  },
+  "reward": null,
+  "_seen_in_sections": 1
+ }
+]

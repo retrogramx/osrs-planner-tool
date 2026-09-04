@@ -1,0 +1,264 @@
+{{External|rs|rsc=Woodcutting training}}
+{{Otheruses|the free-to-play guide|the members' guide|Pay-to-play Woodcutting training}}
+
+This [[Skill training guides|guide]] outlines the best methods for training the [[Woodcutting]] [[skill]] in [[free-to-play]].
+
+==General tips==
+To optimise your Woodcutting experience gained, it's generally fastest to drop your logs instead of banking to save the time that would be spent travelling to and from the bank. Whether or not to drop logs depends on the player's ability to quickly drop an entire inventory of logs versus the travel time to and from the nearest bank. For instance, some players may find that when cutting [[willow tree]]s very close to the bank in [[Draynor Village]], it may be faster and less stressful to bank the logs instead of dropping them.
+
+For players with a [[Firemaking]] level below 45, it can be efficient to burn logs as they are cut; however, once a Firemaking level of 45 has been reached, it is more time efficient to drop/bank low-level logs from training Woodcutting and use the saved time to [[Money making guide|build up money]] to burn [[maple logs]] or [[yew logs]] instead. Alternatively, players can create a [[forester's campfire]] next to any tree they're cutting as a slower but less intensive way of gaining Firemaking experience while Woodcutting.
+
+==Forestry==
+With the release of [[Forestry]], players receive an [[invisible boost]] to their Woodcutting level when cutting trees alongside other players (+1 per player up to a maximum of +10), and trees despawn on a timer and do not disappear more quickly with more players cutting them. This means that when cutting higher level trees such as [[willow tree]]s it is ideal to use a popular Woodcutting location while logged in on a Forestry world, or any other hotspot world with many players cutting the same tree.
+
+If at least one player is cutting a tree using a [[forestry kit]], it is possible for the tree to spawn a [[Forestry event]]. Free-to-play worlds can spawn the [[Struggling sapling (Forestry event)|Struggling sapling]], [[Rising roots]], and [[Friendly Ent (Forestry event)|Friendly ent]] events, and these reward [[anima-infused bark]] which can be used to purchase the valuable [[felling axe handle]]. These events can give higher Woodcutting experience per hour than cutting normally, thus it is recommended to use a [[forestry kit]] while cutting trees on mass worlds.
+
+The probability of spawning an event increases when chopping a high-level tree, chopping with 10 other players on the same tree, or both. Below are popular areas where players can spawn events in free-to-play worlds:
+{| class="wikitable"
+|+
+!Tree
+!Popular Areas
+|-
+|Oak
+|East of [[Draynor Village]] bank{{Refn|Has a nearby level 26 [[Jail guard]].}}
+|-
+|Willow
+|South of Draynor Village bank{{Refn|Has two nearby level 7 [[Dark Mage]]s.}}
+|-
+|Maple
+|[[Corsair Cove Resource Area]]{{Refn|Must complete [[Dragon Slayer I]] to access Corsair Cove.}}
+|-
+|Yew
+|North of [[Varrock Palace]],<br> South of [[Edgeville]]
+|}
+
+{{Reflist}}
+
+==Axes==
+[[Axe]]s are required to train [[Woodcutting]]; they range in quality from [[bronze axe|bronze]] to [[rune axe|rune]]. Each tier up has a higher chance to successfully cut a tree and thus it is recommended to always use the highest tier axe available. If the [[Attack]] level requirement is met, save an inventory space by equipping the axe.
+{|class="wikitable"
+!colspan=2|Item
+!{{SCP|Woodcutting}}!!{{SCP|Attack}}!!How to obtain!!GE Price!!Weight!!Multiplier
+|-
+|{{plinkt|Bronze axe}}||1||1||[[Bob's Brilliant Axes]]: {{Coins|16}}||{{Coins|{{GEP|Bronze axe}}}}||1.36&nbsp;kg||1
+|-
+|{{plinkt|Iron axe}}||1||1||[[Bob's Brilliant Axes]]: {{Coins|56}}||{{Coins|{{GEP|Iron axe}}}}||1.36&nbsp;kg||1.5
+|-
+|{{plinkt|Steel axe}}||6||5||[[Bob's Brilliant Axes]]: {{Coins|200}}||{{Coins|{{GEP|Steel axe}}}}||1.36&nbsp;kg||2
+|-
+|{{plinkt|Black axe}}||11||10||[[Reward casket (beginner)]]||{{Coins|{{GEP|Black axe}}}}||1.36&nbsp;kg||2.25
+|-
+|{{plinkt|Mithril axe}}||21||20||{{SCP|Smithing|51|link=yes}}||{{Coins|{{GEP|Mithril axe}}}}||1.33&nbsp;kg||2.5
+|-
+|{{plinkt|Adamant axe}}||31||30||{{SCP|Smithing|71|link=yes}}||{{Coins|{{GEP|Adamant axe}}}}||1.587&nbsp;kg||3
+|-
+|{{plinkt|Rune axe}}||41||40||{{SCP|Smithing|86|link=yes}}||{{Coins|{{GEP|Rune axe}}}}||1.36&nbsp;kg||3.5
+|}
+
+==Trees==
+{| class="wikitable align-center-2"
+!Level!!Logs!!Tree!!Exp per log
+|-
+|1||{{plinkp|Logs}}||[[Tree]]s||25
+|-
+|15||{{plinkp|Oak logs}}||[[Oak tree]]s||37.5
+|-
+|30||{{plinkp|Willow logs}}||[[Willow tree]]s||67.5
+|-
+|45||{{plinkp|Maple logs}}||[[Maple tree]]s||100
+|-
+|60||{{plinkp|Yew logs}}||[[Yew tree]]s||175
+|}
+
+==Levels 1–99==
+===Levels 1–15: Trees===
+{{plinkp|Tree|pic=Logs}} Starting Woodcutting requires cutting [[tree]]s from level 1 to 15, which grants 25 experience per log.
+
+Trees are found throughout [[Gielinor]]. There are large patches of trees south of the [[Grand Exchange]], west of [[Lumbridge Castle]], or outside [[Draynor Manor]]. Doing so south of the [[Grand Exchange]] allows for easily selling logs as they are cut.
+
+* Starting [[experience]]: 0
+* Experience required: 2,411
+* [[Logs]] required: 97 (2,425 experience)
+* Profit: {{Coins|{{GEP|Logs}}*97}}
+
+===Levels 15–30/60/99: Oak trees===
+{{plinkp|Oak tree|pic=Oak logs}} At level 15, it is recommended to start cutting [[oak tree]]s, which grant 37.5 experience per log.
+
+Oak trees are found throughout [[Gielinor]]. There are several oak tree spots: there are trees south-west of [[Varrock west bank]], two behind [[Lumbridge General Store]], some south of [[Falador]]'s southern gates and near [[Port Sarim]], and more east of [[Rimmington]]. If banking the logs, it is recommended to use the trees near [[Varrock west bank]]. There is also one oak tree just outside [[Falador]] west bank and another oak tree near [[Draynor Village]]'s bank that are both very convenient for banking logs.
+
+A table displaying the oak logs and XP required to level up, starting at 2,425 XP assuming the player chops exactly enough logs to reach level 15:
+{| class="wikitable"
+|+
+!Start
+!End
+!Logs
+!XP Gained
+!GP Profit
+|-
+|15
+|30
+|292
+|10,950
+|{{Coins|{{GEP|Oak logs}}*292}}
+|-
+|30
+|45
+|1,576
+|59,100
+|{{Coins|{{GEP|Oak logs}}*1576}}
+|-
+|45
+|60
+|5,368
+|201,300
+|{{Coins|{{GEP|Oak logs}}*5368}}
+|-
+|60
+|99
+|340,286
+|12,760,725
+|{{Coins|{{GEP|Oak logs}}*340286}}
+|}
+
+====2-tick oaks====
+{{Map|align=right|mtype=pin|3015,3295|3019,3296|group=pins2}}
+
+Using the same technique as [[Pay-to-play_Woodcutting_training#Levels_35–99:_Teak_trees|2-tick teaks]] for [[members]], [[Auto Retaliate]] can be used for [[tick manipulation]] by artificially resetting the cooldown before a log can be cut.
+
+First, bring a [[shortbow]] with no [[arrows]] and your best Woodcutting axe in your inventory. Also bring [[mind rune]]s, [[air rune]]s, and equip a set of [[Iron equipment|iron]] with a [[Iron kiteshield|kiteshield]] in order to [[Splashing/Guide|splash]]. Around six [[Energy potion(4)|energy potions]] are also highly recommended.
+
+Just outside the southern [[Falador]] gates are two oak trees that are reachable from a single [[Game square|tile]], which are also within range of two [[rat]]s at the nearby farm that can be dragged over to the oaks by splashing [[Wind Strike]], or alternatively by using [[Confuse]]. The rat spawn locations are given in the map. Usually, the rats do not end up anywhere close to the trees automatically, so they have to be led there each time manually. They spawn in the fenced area west of the main farm house on death, and must be led from there through the house and around the south-western fence, hugging the fence on the southern side. This can be very tricky since only the area very close to the trees is [[multicombat]], and the entire trip is at the border of the rats' maximum movement range. It's effective to lure one at a time from the farm house around the fence and as far north as it can go along the road (just north of the oak trees) and then go back for the second one. If the first one wandered too far back from the trees, then drag the second one as far as it will go, then go back to drag the first, and repeat. This process can take over three minutes to drag both rats to the trees.
+
+Once both rats are led to the trees and are both attacking you in multicombat, switch to your shortbow and use [[Rapid]] attack style with [[Auto Retaliate]] on and no arrows equipped. Keep walking back and forth on the three [[Game square|tiles]] between the two oaks, standing on the rats and moving around a few tiles at a time until the two rats stagger their attack animations to attack once every two ticks. Then, on the ticks that the 0 hitsplats are landing on you, click one of the two trees, and on the alternating ticks, either drop a log from your inventory or click underneath you/underneath the tree such that the game registers an action but does not move you. This gives you a chance at a log every 2 ticks instead of 4, and continuing this alternating pattern of clicking the tree and dropping logs allows you to cut oak trees at twice the normal speed without interruption.
+
+<!-- Maximum theoretical XP/h rates: 6000/1 ticks/h * 1/2 actions/tick * 37.5 xp/action = 112,000 xp/h. This is feasible as a realistic rate because there is a 100% chance to succeed at cutting oak trees after 60 Woodcutting with a rune axe, and the two tick cycle technically never has to be broken as there will always be an oak tree spawned to cut. Thus we don't skew this rate down and instead just give the theoretical maximum. --->
+From 60 Woodcutting onwards using a [[rune axe]], it is possible to get up to a theoretical maximum of 112k experience per hour with 2-tick oaks. The same or similar experience rates are also obtainable with an [[adamant axe]] at level 78 Woodcutting onwards, or a [[mithril axe]] at 99 Woodcutting.
+
+===Levels 30/60–99: Willow trees===
+{{plinkp|Willow tree|pic=Willow logs}} At level 30, players can cut [[willow tree]]s, which grant 67.5 experience per log.
+
+If dropping logs, oak trees are higher experience rates until level 60, however because willow logs are closer to the [[bank]] in [[Draynor Village]] compared to the oak trees near [[Varrock west bank]], banking oak and willow logs makes the experience rates equal. 
+
+Experience rates are about 35% higher than those achieved when cutting [[maple tree]]s, however maples are a more AFK method.
+
+The best places to chop willow trees are south-west of the [[bank]] in [[Draynor Village]], but beware of aggressive [[dark wizard]]s. There is also one tree East of [[Edgeville]] that is very close to a bank. If a bank isn't required, or if you are level 3 and don't want the [[dark wizard]] attacking you, there are more trees just east of the [[Rusty Anchor Inn]] in [[Port Sarim]], with a nearby [[bank deposit box]] just south on the docks next to the monks. There are more trees west of [[Farmer Fred]]'s house in [[Lumbridge]], south of the [[Port Sarim jail]], south-east of [[Rimmington]], and east of the [[Champions' Guild]].
+
+A table displaying the willow logs and XP required to level up, starting at 13,375 XP assuming the player chops exactly enough oak logs to reach level 30:
+{| class="wikitable"
+|+
+!Start
+!End
+!Logs
+!XP Gained
+!GP Profit
+|-
+|30
+|45
+|714
+|48,195
+|{{Coins|{{GEP|Willow logs}}*714}}
+|-
+|45
+|60
+|3,144
+|212,220
+|{{Coins|{{GEP|Willow logs}}*3144}}
+|-
+|60
+|99
+|189,047
+|12,760,672
+|{{Coins|{{GEP|Willow logs}}*189047}}
+|}
+
+====3-tick willows with snow====
+Players who have completed a [[Christmas event]] and have unlocked the [[snow globe]] can attempt to use [[snow]] for [[tick manipulation]]; this gives a chance to cut a willow log every 3 ticks instead of the normal delay of 4 ticks between receiving logs, increasing experience rates by 33.3%. Find a secluded area where you can cut from two willow trees without moving from a single spot. Then, choose the ''snow'' option on the snow globe to drop a pile of snow underneath you; there is a delay of 7 ticks before the snow appears. To 3-tick with snow, on tick 1 click the snow, on tick 2 shift-click to drop a set of willow logs from your inventory, and on tick 3 click the willow tree, and repeat this 3-tick pattern. Because snow lasts only 24 ticks and there must be an empty tick with no snow between snowdrops, you have to remember every 25 ticks to click ''snow'' on your snow globe. The ideal tick to operate your snow globe for the next pile of snow is on the 18th tick when the current snow is active. The best way to time operating your snow globe every 25 ticks is to create a custom music track or metronome to listen to that plays a sound every 25th beat at 100 beats per minute.
+
+3-tick willows give one of the highest possible Woodcutting experience rates in free-to-play, capping out at a maximum of 85,000 experience per hour at level 99 Woodcutting.
+
+{| class="wikitable"
+!{{plinkp|Willow tree|pic=Willow logs}} Level!!Woodcutting XP W/out 3-tick!!Woodcutting XP W/ 3-tick
+|-
+|30<td>20,000–28,000<ref>This is with an adamant axe.</ref></td>
+| href="Maple trees" |26,600–37,240
+|-
+|40
+|28,000–35,000<ref>This is with a rune axe.</ref>
+|37,240–46,550
+|-
+|60||34,000–45,000||45,220–59,850
+|-
+| href="Gielinor" |80
+| href="Grand Exchange" |45,000–56,000<ref>These values are based on low to high effort and focus.</ref><ref>These experience rates are also presuming you shift drop the logs rather than banking.</ref>
+| href="Draynor Manor" |59,850–74,480
+|}
+<references />
+
+===Levels 45–99: Maple trees===
+{{plinkp|Maple tree|pic=Maple logs}} At level 45, players can cut [[maple tree]]s, which grant 100 experience per log.
+
+Experience rates are about 35% lower than [[willow tree]]s (when not using tick manipulation), however maples are easier to AFK as they take more time to cut therefore allowing a more relaxed style of grinding. At level 80 Woodcutting, it is possible to obtain 36,000 experience per hour without tick manipulation.
+
+The only place where free-to-play players can cut maple trees is the [[Corsair Cove Resource Area]] which has 4 trees and is very far from a bank. It requires completion of [[Dragon Slayer I]] to enter. Free-to-play players must start [[The Corsair Curse]] to access [[Corsair Cove]] where the resource area is located.
+
+A table displaying the maple logs and XP required to level up, starting at 61,570 XP assuming the player chops exactly enough willow logs to reach level 45:
+{| class="wikitable"
+|+
+!Start
+!End
+!Logs
+!XP Gained
+!GP Profit
+|-
+|45
+|60
+|2,122
+|212,200
+|{{Coins|{{GEP|Maple logs}}*2122}}
+|-
+|60
+|99
+|127,607
+|12,760,700
+|{{Coins|{{GEP|Maple logs}}*127607}}
+|}
+
+==Other methods==
+===Levels 60–99: Yew trees===
+{{plinkp|Yew tree|pic=Yew logs}} At level 60, players can cut [[yew tree]]s, which grant 175 experience per log. While yew logs earn a profit, it is recommended to cut willow or maple trees for experience and use the time saved to earn money doing more profitable methods.
+
+The best place to chop yew trees is south of [[Edgeville]] [[bank]], as there are two trees close to a bank and each other. Banking can also be made even faster by swapping to the [[PvP world]] to bank whenever your inventory fills, as the free-to-play PvP world has a bank extremely close to the yews. Note that the yews are in a PvP zone, but the bank in the building is a safe zone, so as long as the player swaps worlds inside the safe zone, there's no risk of death from another player. The next best location to cut yews is behind the [[Varrock Palace]] east of the [[Grand Exchange]], and there are also 3 trees south of [[Falador east bank]] and another 3 between Lumbridge and Draynor.
+
+For more information, see [[Money making guide/Cutting yew logs (free-to-play)]].
+
+A table displaying the yew logs and XP required to level up, starting at 273,770 XP assuming the player chops exactly enough maple logs to reach level 60:
+{| class="wikitable"
+|+
+!Start
+!End
+!Logs
+!XP Gained
+!GP Profit
+|-
+|60
+|75
+|5,353
+|936,775
+|{{Coins|{{GEP|Yew logs}}*5353}}
+|-
+|75
+|90
+|23,634
+|4,135,950
+|{{Coins|{{GEP|Yew logs}}*23634}}
+|-
+|90
+|99
+|43,932
+|7,688,100
+|{{Coins|{{GEP|Yew logs}}*43932}}
+|}
+
+{{Training guides}}
+{{Free-to-play guides}}
+[[Category:Free-to-play]]

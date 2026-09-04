@@ -1,0 +1,770 @@
+{{Iron  Guide Links}}
+{{cleanup}}
+
+Completing [[Slayer]] tasks is the sole way for [[Ironman Mode|Ironmen]] to acquire or upgrade several best-in-slot items, such as the [[abyssal whip]], [[dragon boots]], [[trident of the seas]], [[occult necklace]], and [[dragon hunter lance]]. High-level Slayer can also be an excellent way to earn money through valuable [[High Level Alchemy|alchables]].
+
+[[Duradel]] is generally the best Slayer master to use. [[Konar quo Maten]] should be used for every milestone task for the extra [[Slayer reward point]]s.
+
+Using a [[dwarf multicannon]] is usually not worthwhile for efficient Slayer training on an Ironman due to the time required to make [[steel cannonball]]s, with the exception of [[smoke devil]]s in some cases. Because of this, certain tasks which are decent on a main account, such as [[suqah]]s and [[kalphite]]s, are not worth doing as an Ironman, as they have no notable drops and offer mediocre experience rates without a cannon. Blocking [[suqah]]s and [[kalphite]]s should be one of your first priorities with Slayer points as an Ironman.
+
+For tasks you want to finish quickly (usually when prioritising Slayer points), it is recommended to wear the [[expeditious bracelet]], since it has a 25% chance to treat each kill as 2 kills towards the Slayer task. If you instead want to extend the task, a [[bracelet of slaughter]] will have a 25% chance for a kill to not count towards the Slayer task.
+
+When using Slayer reward points, prioritise blocking and skipping poor tasks over unlocking perks and extensions. Unlock superior Slayer monsters, the [[Slayer helmet]], and the ability to craft [[Slayer ring]]s first. If you use Ranged often, consider unlocking ''[[Slayer Rewards|Broader Fletching]]'' perk early on for the ability to fletch [[broad bolts]].
+
+Unless only focusing on quicker [[Magic]] levels, use [[Combat Options#Defensive 2|defensive casting]] when bursting tasks (such as [[dust devil]]s), since it gives more experience overall. If you are low on [[herb seed]]s, kill normal [[nechryael]] with melee instead of bursting [[greater nechryael]] in the [[Catacombs of Kourend]].
+
+Before you can kill [[abyssal demon]]s for the [[abyssal whip]], train only Strength after you have 75 [[Attack]] (to use [[Arclight]]) and 70 [[Defence]] (to use [[Barrows equipment]]), unless you want to hit combat level 100 sooner to access Duradel. Once you have obtained the abyssal whip, train on the [[Combat Options#Controlled|Controlled style]] until you have 99 Strength, and after that train Attack and Defence. If you have a [[kraken tentacle]], use any excess abyssal whips for an [[abyssal tentacle]].
+
+==Starting off==
+The [[natural history quiz]] has no requirements and rewards 1,000 Slayer experience, making for an easy way to reach level 9 Slayer.
+
+To train Slayer efficiently, it is recommended that you begin after reaching 80–90 combat, with reasonable gear.
+
+Recommended skills:
+
+*70+ {{SCP|Attack}}, {{SCP|Strength}} and {{SCP|Defence}}
+*{{SCP|Magic|48}} ([[Kourend Castle Teleport]])
+*{{SCP|Prayer|43}} ([[Protect from Melee]])
+*{{SCP|Herblore|45}} ([[Super attack|super attack potions]]) or {{SCP|Herblore|55}} ([[Super strength|super strength potions]])
+*{{SCP|Agility|70}} ([[Taverley Dungeon]] shortcut to [[blue dragon]]s)
+*{{SCP|Crafting|27}} for the ability to make [[emerald ring]]s for [[Ring of dueling|rings of dueling]]
+
+Using Ranged for low-level Slayer tasks in general is not recommended due to the poorer damage output of the available weapons and ammunition compared to dragon scimitar. However, some tasks can prove to be difficult or tedious to do without Prayer flicking or use of [[prayer potion]]s, so [[safespot]]ting with Ranged can be a justified option in some cases.
+
+===Point boosting===
+{{Main|Slayer reward points#Point boosting}}
+Players can utilise [[Turael]] or [[Mazchna]] for point boosting. Mazchna is a viable alternative to Turael, as his tasks reward 6 points per task. Players might consider incorporating Mazchna into every 10th task while Turael skipping, using [[Konar quo Maten]] for every 50th task.  See the main article above for more info.
+
+==== Turael ====
+[[File:Turael chathead.png|left]]
+When starting Slayer training, the first priority is to block the most common bad tasks while reserving some Slayer points for skipping less common but equally bad tasks. It is therefore optimal to start by boosting Slayer points by using [[Turael]] and doing every 10th task at [[Konar quo Maten]] or the highest level Slayer master you are able to use. While Turael tasks do not give good experience, they are very easy and fast to complete unlike some of the tasks given by higher-level Slayer masters.
+
+Turael can be quickly accessed via the [[games necklace]]'s teleport to [[Burthorpe]]. Wearing heavy armour is not recommended, as you will be running a lot and the monsters you are killing do not deal much damage. Whenever you need to bank, teleport to the Ferox Enclave via a ring of dueling or use the minigame teleport and use the free-for-all portal to reset stats and run energy after banking.
+
+Recommended inventory setup for Turael tasks:
+*[[Games necklace]]
+*[[Ring of dueling]] for resetting stats at the Ferox Enclave
+*2 [[super attack]]s (and [[super strength]]s if not using a dragon battleaxe)
+*Runes for teleportation
+*[[Ardougne cloak 1]] (or higher) and a [[Dramen staff|dramen]]/[[lunar staff]] for access to [[fairy rings]]
+*[[Ectophial]]
+*[[Chronicle]]
+*A [[Light sources|light source]]
+*[[Dragon battleaxe]] or [[dragon dagger]] for special attacks
+*Energy potions, antipoison (for cave crawlers and slimes) and some food (optional)
+
+Additional information on Turael's tasks and where they can be done can be found at [[Slayer reward point#Turael boosting]].
+
+Once you have attained enough Slayer points, block these tasks as soon as you can:
+
+*[[Black demon]]
+*[[Hellhound]]
+*[[Suqah]] (Konar quo Maten does not assign these)
+*[[Kalphite (disambiguation)|Kalphite]] (block last, [[Kalphite Worker]]s are reasonably fast to kill)
+Once you have these tasks blocked and some spare points for skipping, move on to the highest-level Slayer master you are able to use.
+
+==== Krystilia (Wilderness Slayer) ====
+[[File:Krystilia chathead.png|left|frameless|width=127x127]]
+Alternatively, doing Wilderness Slayer tasks from [[Krystilia]] is another option for obtaining a good amount of Slayer points due to rewarding significantly more points per completed task than any other master. Krystilia has no requirements, but players should be sufficient enough to survive in the [[Wilderness]] and are strongly recommended to have at least 43 prayer for access to [[Overheads|overhead prayers]]. When doing Wilderness tasks, only risk easily replaceable equipment you are willing to lose, such as monk robes or dragonhide armour. It's important to note that Krystilia can assign tasks of any combat level (Assuming skill and quest requirements are met), making this a potentially less preferable option at lower combat levels due to the chance of being given slow and/or difficult tasks early on. 
+
+Monsters killed for [[Wilderness]] tasks have the chance to drop [[Larran's key]]s, which can be used to open [[Larran's big chest]] for plenty of cash and useful resources like seeds, gems, ores, food and alchables. Slayer monsters within the [[Wilderness Slayer Cave]] have the added bonus of generally increased drop rates compared to their normal counterparts which, when using [[looting bag]]s for an extra 28 inventory slots, make this a high risk but extremely high reward option of training Slayer. Lastly, monsters within the Wilderness can drop [[blighted food]], [[blighted super restore]]s and [[blighted rune sack]]s, all of which can only be used within the Wilderness and are particularly useful for ironmen as they add some level of self-sustainability and reduce the need to obtain these resources yourself.
+
+===Recommended tasks pre-58 Slayer===
+{| class="wikitable"
+|+
+!Monster name
+!Recommended location
+!Notes
+|-
+|[[Ankou]]
+| Stronghold Slayer Cave or Catacombs of Kourend 
+|Ankou are a fairly fast task and they drop some death and blood runes. Use [[salve amulet (e)]] for increased damage output.
+|-
+|[[Banshee]]s (Turael)
+|Catacombs of Kourend
+|Twisted Banshees drop a decent amount of herbs, herb seeds, pure essence and runes. They reside in a multi-combat area however, but they can be easily safespotted with Ranged or Magic. Wearing earmuffs is required. Use [[salve amulet (e)]] for increased damage output if using Melee (or (ei) for all attack styles if the salve amulet has been imbued at Nightmare Zone).
+|-
+|[[Bloodveld]]s
+|Catacombs of Kourend
+| Mutated Bloodvelds are one of the best tasks at lower levels, as they have very high Hitpoints and low Defence, and they also drop decent alchables and generous amount of blood runes. However they hit hard without Protect from Melee. If using Melee, Prayer flicking or using Prayer potions is required, otherwise safespot with Ranged. Alternatively you can bring armour with a [[Prayer items|high prayer bonus]] and teleport back and forth to restore prayer points.
+|-
+|[[Black dragon]]s
+|Taverley Dungeon
+|Killing baby black dragons in the Taverley Dungeon is a very fast task. Bank the babydragon bones they drop.
+|-
+|[[Blue dragon]]s
+|Taverley Dungeon 
+|A very long task at lower levels, but good Prayer experience. An anti-dragon shield is needed. Having 70 Agility is strongly recommended for the shortcut. Banking hides is not recommended, as this effectively doubles the amount of trips for the task.
+|-
+|[[Dagannoth]]s
+|Catacombs of Kourend
+| Dagannoths drop a good amount of herb seeds and offer decent Prayer experience from the ensouled dagannoth heads. They also have relatively low Defence. Using Prayer potions is recommended, alternatively you can go stand next to a wall where only one or two of them can attack you.
+|-
+|[[Fire giant]]s
+|Stronghold Slayer Cave
+|Fire giants have relatively low Defence and decent drops.
+|-
+|[[Greater demon]]s
+| Chasm of Fire
+| Greater demons are not a very good task due to their poor drops, and they should be skipped once the player has a comfortable amount of Slayer points.
+|-
+|[[Jelly|Jellies]] (Konar quo Maten)
+|Catacombs of Kourend 
+|Warped Jellies have high Hitpoints and only moderate Defence, and they also drop decent alchables. However they hit fairly hard without Protect from Melee. If using Melee, Prayer flicking or using Prayer potions is strongly recommended.
+|-
+|[[Kalphite]]s
+|Kalphite Cave
+| Kalphite Workers are a fairly fast task, however they should be blocked as soon as possible.
+|-
+|[[Troll]]s
+|Troll Stronghold or north of Jatiszo
+|Although trolls have somewhat decent drops, they are not a very good task and should be skipped once the player has a comfortable amount of Slayer points.
+|}
+
+These tasks should be skipped:
+* [[Slayer task/Elves|Elves]] (relatively high defence)
+* [[Waterfiend]]s (very slow to kill without a crush weapon)
+
+==Equipment==
+===Melee===
+{{Equipment
+|align = right
+|head = Slayer helmet
+|cape = Fire cape
+|neck = Amulet of glory
+|ammo = Rada's blessing 2
+|weapon = Dragon scimitar
+|torso = Fighter torso
+|legs = Obsidian platelegs
+|shield = Dragon defender
+|gloves = Barrows gloves
+|boots = Climbing boots
+|ring = Ring of wealth
+|caption = Common mid-level gear
+}}
+The aim for melee equipment is to maximise strength bonus.
+
+Typical low/mid-level gear includes:
+*[[Slayer helmet]] [[Slayer helmet (i)|(i)]]: Can be assembled after purchasing the ''[[Slayer Rewards|Malevolent Masquerade]]'' ability from a Slayer master, costing 400 Slayer reward points. [[Black mask]] can be obtained from [[cave horror]]s.
+*Any [[God blessing]]: Can be obtained from [[Treasure Trails]]. Alternatively, [[Rada's blessing 2]] or higher can be used.
+* [[Fighter torso]]: Can be obtained from the [[Barbarian Assault]] minigame.
+* [[Blood moon chestplate]]/[[Blood moon tassets]] provide the same strength bonus as Bandos gear, but with higher magic defence that is good against magic-based tasks like Bloodvelds, Wyrms, and Aberrant Spectres.
+*[[Obsidian platelegs]]: Can be purchased in [[TzHaar-Hur-Zal's Equipment Store]].
+*[[Climbing boots]]: Can be bought from [[Tenzing]]. [[Mixed hide boots]] are an alternative with higher defensive bonuses.
+*[[Barrows gloves]]: Can be purchased from [[Culinaromancer's Chest]] after completion of [[Recipe for Disaster]].
+*[[Amulet of glory]]: [[Dragonstone amulet]] can be made at 80 Crafting and enchanted into an amulet of glory with [[Lvl-5 Enchant]], or obtained from [[dragon impling]]s.
+*[[Fire cape]]: Can be obtained as a reward for defeating [[TzTok-Jad]] in the [[Fight Caves]].
+*[[Ring of wealth]]: [[Dragonstone ring]] can be made at 55 Crafting, which can be turned into a ring of wealth by Lvl-5 Enchant. Hardcore Ironmen should wear a [[ring of life]] on tasks which they can easily die if they disconnect.
+*[[Dragon scimitar]]: Can be purchased from [[Daga]] on [[Ape Atoll]] after completion of [[Monkey Madness I]].
+*[[Dragon defender]]: Can be obtained as a rare drop in the basement of the [[Warriors' Guild]] from the [[cyclopes]] that reside there.
+*[[Zombie axe]]: Can be made with 70 smithing, after obtaining it in broken form as a rare drop from [[armoured zombie]]s after starting [[Defender of Varrock]].
+
+===Additional equipment===
+The [[bonecrusher]] (requiring the [[Morytania Diary#Hard|hard Morytania diary]]), [[ash sanctifier]] (requiring the [[Kourend & Kebos Diary#Hard|hard Kourend & Kebos diary]]), and [[ectoplasmator]] (purchasable from [[Soul Wars]]) can be worthwhile to bring on all tasks where you do not plan to pick up bones or ashes, as they will provide a passive source of [[Prayer]] experience. The bonecrusher specifically will also restore [[Prayer points]] when used within the [[Catacombs of Kourend]], a popular location for many Slayer tasks. [[Bonecrusher]] charges can be easily sustained by the daily bonemeal reward from [[Robin]].
+
+[[Expeditious bracelet]]s and [[Bracelet of slaughter|bracelets of slaughter]] are recommended if desiring to finish an undesirable task quickly or extend a good task, respectively. They do not need to be worn the whole kill, only for the last hit, allowing stat-boosting gloves (such as [[Barrows gloves]] or a [[combat bracelet]]) to be worn for the rest of a kill.
+
+[[Ring of wealth|Rings of wealth]] are a good choice for the ring slot if you have no stat-boosting rings (such as a [[berserker ring]]), as it automatically collects coin drops from monsters.
+
+==Important milestones==
+*Level 51 — [[Shellbane gryphon|Shellbane gryphons]]: To unlock [[Belle's folly]]
+*Level 55 — [[Broad bolts]]: Very effective for the [[TzHaar Fight Cave|Fight Caves]] 
+*Level 56 — [[Poison Waste Dungeon]]: to unlock the [[Warped sceptre]] 
+*Level 58 — [[Cave horror]]: [[Black mask]]
+*Level 60 — [[Aberrant spectre]]s: Herbs and herb seeds
+*Level 65 — [[Dust devil]]s: Alchables, burst/barrage task
+*Level 69 — [[Demonic gorilla]]s: [[Zenyte]]s and alchables, after [[Monkey Madness II]]
+*Level 70 — [[Kurask]]s: [[Leaf-bladed battleaxe]], good noted supplies and alchables
+*Level 72 — [[Skeletal Wyvern]]s: Very good noted supplies and alchables.
+*Level 75 — [[Gargoyle]]s: Good money (can be considered the beginning of high level Slayer)
+*Level 80 — [[Nechryael]]: High amount of herb seeds and money. They may also drop [[rune boots]] for hard clues and an upgrade from [[climbing boots]].
+*Level 83 — [[Spiritual mage]]s: [[Dragon boots]]
+* Level 85 — [[Abyssal demon]]s: [[Abyssal whip]]
+*Level 87 — [[Cave kraken]]: [[Trident of the seas]] and [[kraken tentacle]]
+*Level 91 — [[Cerberus]]: [[Primordial crystal|Primordial]], [[Pegasian crystal|pegasian]], and [[eternal crystal]]s
+*Level 92 — [[Araxxor]]: [[Noxious halberd]] and [[araxyte fang]] to make the [[amulet of rancour]]
+*Level 93 — [[Smoke devil]]s: [[Occult necklace]]
+*Level 95 — [[Alchemical Hydra]]: [[Dragon hunter lance]]
+
+==Turael skipping==
+Higher levelled players may find that they wish to spend Slayer points en masse in an attempt to get one (or a few) specific tasks, such as cave kraken, smoke devil, hydra, greater demons, etc. 
+
+<u>Players should avoid spending all of their points on skips to try and get specific tasks in this manner</u>.
+
+Instead, if players receive an undesired task from their Slayer master, they can return to Turael to sacrifice their Slayer streak and replace their task with a much faster one. Players can then complete Turael's task and return to their preferred Slayer master to try to get the task they want, rinse and repeat. Players that are about to begin Turael skipping should make sure that they are not too close to a major point streak, as they could be missing out on some free points in that case. Even regardless of that, the amount of points that players will save by not spending them on skips will greatly outweigh the loss of their streak. As far as for levelling Slayer, focusing on Turael skipping may not necessarily grant high Slayer experience rates, and may only be useful for getting specific tasks.
+
+The inventory setup is similar to that of Point boosting with Turael, but higher level players can add things to the list such as: a rune pouch with NPC contact (if they have a POH with various portals), full graceful, a Royal seed pod, Salve amulet (e), and maybe even a Cannon and Cannonballs.
+
+==Killing bosses and demi-bosses on task==
+
+===[[Abyssal Sire]] (Abyssal demons)===
+Abyssal Sire drops the [[Unsired]], which can be placed at the Font of Consumption and gives the player a reward in the process. The most notable rewards are the [[abyssal bludgeon]] pieces and the [[abyssal dagger]].
+
+===[[Alchemical Hydra]] (Hydras)===
+The Alchemical Hydra notably drops the [[hydra's claw]], which can be combined with a [[Zamorakian hasta]] to create a [[dragon hunter lance]], one of the best items to have on an Ironman account. Additionally, the Alchemical Hydra also drops hydra leather, which can be made into [[ferocious gloves]], and [[brimstone ring]] pieces. The Alchemical Hydra is also a generous source of money, Prayer experience, and herbs. Hydras can only be assigned by Konar quo Maten.
+
+The [[twisted bow]] is the most effective weapon to kill the Alchemical Hydra, followed by the [[dragon hunter crossbow]] with [[ruby bolts (e)]] until it reaches 40% remaining [[Hitpoints]], after which players should switch to using a [[toxic blowpipe]]. The toxic blowpipe is also viable throughout the whole kill should players not have either a twisted bow or dragon hunter crossbow, although its rapid consumption of [[Zulrah's scales]] should be noted, especially if planning to kill the boss enough to obtain all the unique drops.
+
+===[[Cerberus]] (Hellhounds)===
+Cerberus drops the [[Primordial crystal|primordial]], [[Pegasian crystal|pegasian]] and [[eternal crystal]]s, which are used to create best-in-slot boots in the game. Typically Cerberus is killed with an arclight, but you can still use a Zamorakian hasta/abyssal bludgeon/toxic blowpipe if you run out of charges. Hellhounds are very commonly assigned by Duradel.
+
+Ironmen are strongly advised to use [[Cerberus/Strategies#No Ghosts Strategy|a different strategy]] which lets players often skip the Prayer-draining ghost phases entirely, letting players easily use less than a quarter of the Prayer potions that they would normally. The strategy revolves around keeping [[Cerberus]] above 400 health until 56 seconds passed from when she first attacked (or more precisely, after her second set of combo attacks, wait for 3 more ''regular'' attacks), before switching to your best DPS gear/spec weapons to finish her off. Players must be able to maintain more than ~7.5 DPS after the 56 seconds have passed to skip ghosts entirely. Using a full set of [[Guthan the Infested's equipment|Guthan's equipment]] for the first 56 seconds is very important for extending trips with this strategy.
+
+===[[Dagannoth Kings]] (Dagannoths)===
+Dagannoth Kings are killed for their unique drops (notably the rings and the dragon axe). After completion of the [[Fremennik Diary#Elite|elite Fremennik Diary]], killing the boss trio also offers good Prayer experience from the noted [[dagannoth bones]].
+
+===[[Demonic gorilla]]s (Black demons)===
+Demonic gorillas drop [[zenyte shard]]s, which can be used to make the best-in-slot jewellery. Demonic gorillas also drop good alchables and decent amount of high-level tree seeds.
+
+===[[Lizardman shaman]]s (Lizardmen) ===
+Lizardman shamans drop the [[dragon warhammer]], which has one of the most useful [[Dragon_Warhammer#Special_attack|special attacks]] in the game. On task, the player can kill lizardman shamans in the [[Lizardman Caves]] which is often way less crowded than the [[Lizardman Canyon]].
+
+===[[Kalphite Queen]] (Kalphites) ===
+Kalphite Queen is killed for Herblore and Farming supplies, most notable being the [[Wine of zamorak|wines of Zamorak]] and [[Potato cactus|potato cacti]].
+
+===[[Kree'arra]] (Aviansie)===
+Kree'arra is killed for [[Armadyl armour]] pieces.
+
+===[[K'ril Tsutsaroth]] (Greater demons)===
+K'ril Tsutsaroth is mainly killed for the [[Zamorakian spear]], which can be made into a Zamorakian hasta. Other notable uniques include the [[staff of the dead]] and [[Zamorak hilt]]. Typical setups use Arclight for demonbane damage and armour with high Magic defence. If you do not have Karil's leatherskirt, [[Void knight robe|Void Knight robe]] gives slightly more Magic defence than black d'hide chaps. Players with a [[Bow of faerdhinen|bow of Faerdhinen]] and [[crystal armour]] or a [[twisted bow]] will be able to get much faster kills using these weapons. Greater demons are commonly assigned by Duradel.
+
+=== [[Sarachnis]] (Spiders) ===
+Sarachnis can be killed for [[Sarachnis cudgel]], an early-game crush weapon, as well as a consistent supply of [[red spiders' eggs]] through the [[giant egg sac]] drops.
+
+===[[Tormented Demon]]s (Greater demons)===
+Tormented demons drop the [[tormented synapse]], which is used to make the best-in-slot [[Demonbane weapons|demonbane weaponry]]. This equipment is extremely strong for various demonic bosses like [[K'ril]], [[Yama]], and [[Skotizo]]. They also drop [[burning claws]], which are a very strong [[special attack]] weapon for various bosses.
+
+===[[Vorkath]] (Blue dragons) ===
+Vorkath is killed for money, Prayer and Crafting experience.
+
+==Recommended tasks to do==
+
+===[[Dark beast]]s=== 
+*Weight: 11 (Duradel), 5 (Konar quo Maten)
+*Combat style: Melee
+*Location: Mourner Tunnels
+*Extension: No
+*Bracelet: Expeditious
+*Experience per hour: ~30,000
+
+Teleport to the Mourner Tunnels with a Slayer ring and run north to the dark beast area. Use Protect from Melee.
+
+===[[Greater Nechryael]] (magic)===
+
+* Weight: 9 (Duradel), 7 (Konar quo Maten)
+*Combat style: Magic
+* Location: Catacombs of Kourend
+*Extension: Yes
+*Bracelet: Slaughter
+*Experience per hour: 75,000–95,000
+
+Lure the monsters with darts, run around a corner until they stack up and kill with Ice Barrage. If low on health from the death spawns, cast Blood Barrage to heal up. Switch autocast to Blood Barrage when the superior spawns, or alternatively block the superior with other monsters so it cannot attack you. Bank all of the rune items.
+
+===[[Nechryael]] (melee)===
+
+* Weight: 9 (Duradel), 7 (Konar quo Maten)
+*Combat style: Melee
+*Location: Slayer Tower
+*Extension: Yes
+*Bracelet: None
+*Experience per hour: ~31,000
+
+Kill normal nechryael with melee in the Slayer Tower, use Arclight if you have charges. Bring runes for High Level Alchemy and a seed box if you have one. Saradomin godsword is very helpful for this task for its special attack, and allows the player to do the task in one trip.
+
+When the superior spawns chaotic death spawns, run away until they become unaggressive. If you are doing the task upstairs, you can also climb down and up the chain to reset aggressiveness.
+
+===[[Smoke devil]]s===
+
+* Weight: 9 (Duradel), 7 (Konar quo Maten)
+*Combat style: Magic
+*Location: Smoke Devil Dungeon
+*Extension: N/A
+*Bracelet: Slaughter
+*Experience per hour: 75,000–80,000 (no cannon), 120,000–175,000 (cannon)
+
+Lure Smoke Devils around the western bone pile and manually cast Ice Barrage on the eastern stack every 5 ticks. Run around bone pile to stack the monsters.
+
+Making cannonballs for luring is only worthwhile if you are able to get good experience rates (160,000+ Slayer experience per hour). Otherwise it is faster overall to lure them with a shortbow, you can switch between rapid/longranged to lure more. You can now also use a [[Goading potion]] to maintain aggression.
+
+===[[Black dragon]]s===
+
+* Weight: 9 (Duradel), 6 (Konar quo Maten)
+*Combat style: Melee
+*Location: Taverley Dungeon
+*Extension: No
+*Bracelet: Expeditious
+*Experience per hour: ~30,000
+
+Kill baby black dragons in the Taverley Dungeon. Banking the babydragon bones is recommended.
+
+===[[Dagannoth]]s===
+
+* Weight: 9 (Duradel), 8 (Konar quo Maten)
+* Combat style: Magic or Melee
+* Location: Catacombs of Kourend
+*Extension: N/A
+*Bracelet: Slaughter/expeditious (magic), none (melee)
+*Experience per hour: 55,000–80,000 (magic), 30,000 (melee)
+
+Barraging dagannoths is a very difficult and expensive method, but fast experience per hour after some practice. Cast Ice Barrage to freeze a stack in the middle of the room, and run through them to get more monsters into the stack while manually casting Ice Barrage. Run around to aggro more while the stack is frozen. You will need 1–2 stamina potions per task if using this method.
+
+If using Melee, simply turn on Protect from Melee and AFK.
+
+Bring a seed box and [[soul bearer]].
+
+===[[Metal dragons]]===
+
+* Weight: 14 (Duradel), 15 (Konar quo Maten)
+*Combat style: Melee
+*Location: Various
+*Extension: No
+*Bracelet: Expeditious
+*Experience per hour: 25,000–30,000
+
+All types of metal dragons can be killed for this task. This task should only be done using a dragon hunter lance or dragon hunter crossbow. Generally recommended to block this task.
+
+===[[Red dragon]]s===
+
+* Weight: 8 (Duradel), 5 (Konar quo Maten)
+*Combat style: Melee
+* Location: Myths' Guild Dungeon
+*Extension: N/A
+*Bracelet: None
+*Experience per hour: ~30,000
+
+This task should be unlocked only after getting a dragon hunter lance. Kill red dragons in the Myths' Guild Dungeon. Pick up the bones and the hides.
+
+Players focusing on training Prayer may choose to unlock this task after unlocking the [[Sacred Bone Burner]] in the [[Forthos Dungeon]].
+
+Should Konar quo Maten assign you this task, only do it if it is located in the Myths' Guild Dungeon, or the Brimhaven Dungeon if you have [[Elite Karamja|Karamja elite]] diary completed.
+
+=== [[Ankou]]===
+
+* Weight: 5 (Duradel), 5 (Konar quo Maten)
+
+*Combat style: Magic
+* Location: Catacombs of Kourend
+*Extension: No
+*Bracelet: Expeditious
+*Experience per hour: ~60,000
+
+Wearing a [[Salve amulet(ei)|Salve Amulet(ei)]] offers better DPS than the slayer helmet. Should Konar quo Maten assign you this task, only do it if it is located in the Catacombs of Kourend.
+
+===[[Dust devil]]s===
+
+* Weight: 5 (Duradel), 6 (Konar quo Maten)
+
+*Combat style: Magic
+* Location: Catacombs of Kourend
+*Extension: Yes
+*Bracelet: Slaughter
+*Experience per hour: 65,000–85,000
+
+Should Konar quo Maten assign you this task, only do it if there is an option for multi combat and thus barraging.
+
+===[[Blue dragon]]s===
+
+* Weight: 4 (Duradel), 4 (Konar quo Maten)
+*Combat style: Melee
+* Location: Myths' Guild Dungeon
+*Extension: N/A
+*Bracelet: Slaughter (optional)
+*Experience per hour: ~30,000
+
+Kill blue dragons in the Myths' Guild Dungeon, or Taverley Dungeon if you have not completed Dragon Slayer II. Pick up the bones and hides.
+
+===[[Vorkath]] (Blue dragon)===
+
+*Weight: 4 (Duradel)
+* Combat style: Melee or Ranged
+*Location: Ungael
+*Extension: N/A
+*Bracelet: Slaughter switch (optional)
+*Experience per hour: 22,500
+
+Vorkath should be killed once the player has a dragon hunter lance or a dragon hunter crossbow.
+
+==Task summary ==
+{{Incomplete|Needs pros, cons and xp/hr added to each assignment, missing assignments}}
+This is a list of monsters assigned by [[Duradel]], along with the pros and cons of completing the task. This table aims to empower players in choosing their tasks based on the pros and cons of each task reflecting on drops, transport and access, combat area etc. Alternatively, an analysis of tasks from an experience per hour standpoint is below.
+
+Do tasks which give you a lot of useful resources, even if they don't offer the highest experience rates. [[Aberrant spectre]]s, [[kurask]]s and [[nechryael]]s (the ones in the [[Slayer Tower]]) drop herbs and seeds very frequently, [[gargoyle]]s drop coins and [[High level alchemy|alchable]] items, [[blue dragon]]s drop [[dragon bones]] for [[Prayer]] training. In general, it's best to block undesirable tasks that have a high [[Task weight|weight]], and skip tasks which offer little resources and/or poor experience rates.
+
+The list assumes that [[dwarf multicannon]] is not used.
+
+{| class="wikitable lighttable sortable align-center-6 align-center-7"
+!Monster name
+!Slayer level
+![[Task weight|Weight]]
+!Combat level
+!Pros
+!Cons
+!Do/skip/block
+!Approx XP/hr
+|-
+|[[Aberrant spectre]]s
+|60
+|7
+|96
+|Good Herblore experience.
+|Somewhat spread apart which makes using melee inconvenient. Requires frequent banking if [[herb sack]] isn't available. Not worth doing at higher levels due to farming contracts.
+|Do/Skip
+|35,000
+|-
+|[[Abyssal demon]]s
+|85
+|12
+|124 
+|Drops the [[abyssal whip]], which can be used to create an [[abyssal tentacle]]. Decent Prayer experience from [[ensouled abyssal head]]s and [[demonic offering]] their [[abyssal ashes]].
+|Poor drops. Long task if meleeing, maging is extremely expensive.
+|Do (only if you wish to collect [[Abyssal whip|whips]] for [[abyssal tentacle]]), block otherwise
+|31,000 (melee), 52,000 (Magic)
+|-
+|[[Metal dragon]]
+| 1
+|15
+|Various 
+|Dragon bones and loot from respective dragons.
+|A stab weapon is required to kill them effectively. Poor loot depending on the type of dragon killed. Not worth doing without dragon hunter lance.
+|Block
+|
+|-
+|[[Ankou]]
+|1
+|5
+|75-98
+|Fast task when barraging in the [[Catacombs of Kourend]].
+|Poor drops. Should be skipped if Slayer points are not an issue.
+|Do/Skip
+|50,000–60,000 (Magic)
+|-
+|[[Araxyte]]s
+|92
+|10
+|96, 146
+|Killing the level 146 variant drops the [[aranea boots]] at a rate of 1/800 while on task.
+|Far from a bank, can inflict [[venom]] starting at 6 damage.
+|Do
+|
+|-
+|[[Aviansie]]s
+| 1
+|8
+| 69-148
+|Should only be unlocked if killing [[Kree'arra]] for [[Armadyl armour]].
+|Killing [[Kree'arra]] effectively typically requires use of [[chinchompas]] or gear such as [[crystal armour]] and a [[Bow of faerdhinen|bow of Faerdhinen]] or a [[Tumeken's shadow]] and appropriate mage gear.
+| Unlock only if killing [[Kree'arra]].
+|
+|-
+|[[Basilisk]]s
+|40
+|7
+|61, 204
+|Killing the [[Basilisk Knight|basilisk knight]] variant drops the [[basilisk jaw]] at a rate of 1/1,000 while on task.
+|Slow kills for lower leveled players, poor drops before completion of [[The Fremennik Exiles]]
+|Unlock only if killing [[Basilisk Knight|basilisk knights]].
+|
+|-
+|[[Black demon]]s
+|1
+|8
+|172
+|Decent Prayer experience from [[ensouled demon head]]s. Should only be done if killing [[demonic gorilla]]s or [[Skotizo]].
+|Poor experience rates and very long tasks. Poor drops if not killing [[demonic gorilla]]s.
+|Skip/Block (unless killing [[demonic gorilla]]s)
+|
+|-
+|[[Black dragon]]s
+|1
+|9
+| 227
+|If killing [[baby black dragon]]s, a very fast task when unextended.
+|N/A
+|Do
+|
+|-
+|[[Bloodveld]]s
+|50 
+|8
+|76, 81, 123
+|Decent experience rates, [[Mutated Bloodveld|mutated bloodvelds]] frequently drop a generous amount of [[blood rune]]s. Decent Prayer experience from [[ensouled bloodveld head]]s.
+|Can be crowded. Poor drops if not killing [[Mutated Bloodveld|mutated bloodvelds]]. Not worth doing at higher levels.
+|Do/Skip
+|30,000
+|-
+|[[Blue dragon]]s
+|1
+|4
+|111
+|Good Prayer experience. Blue dragons on task are more efficient overall than green dragons off task. [[Vorkath]] may be killed instead if the player has a [[dragon hunter crossbow]] or a [[dragon hunter lance]]/[[Osmumten's fang]].
+|Requires frequent banking. Very long task if killing [[Vorkath]].
+|Do
+|20,000
+|-
+|[[Boss]]es
+|Varies (1 for all except a few)
+|12
+|Varies 
+|Can be a relatively quick task depending on what boss you get, in addition to 5,000 Slayer experience upon completion of the task.
+|Some bosses can be rather annoying to kill, and it requires 200 Slayer points to unlock boss tasks.
+|Do/Skip/Should not be unlocked
+|
+|-
+|[[Cave horror]]s
+|58 
+|4
+|80 
+|Decent Herblore and Prayer experience, relatively fast task if blowpiping.
+|Slow experience rates if using melee due to the monsters being spread apart. Not worth doing unless Slayer points are an issue.
+|Do/Skip
+|22,000 (using the toxic blowpipe)
+|-
+|[[Cave kraken]]
+|87
+|9
+|127, 291
+|Killing the [[Kraken|boss variant]] yields a decent amount of various supplies.
+| Slow experience rates, long task if killing the boss.
+|Do until you get the [[trident of the seas]] and [[kraken tentacle]], block afterwards
+|15,000
+|-
+| [[Dagannoth]]s
+|1
+|9
+|74, 92
+|Good Herblore experience, decent Prayer experience from [[ensouled dagannoth head]]s. Good experience rates if maging. Dagannoth Kings may be killed instead for Prayer experience.
+| Maging them requires a lot of practice and money for the runes.
+|Do
+|30,000 (melee), 55,000–80,000 (Magic)
+|-
+|[[Dark beast]]s
+|90 
+|11
+|182
+|Fast task when unextended. 
+|Somewhat poor drops for their level.
+|Do
+|30,000
+|-
+|[[Drake]]s
+| 84
+|8
+|192
+|Decent Prayer experience.
+|A very long task, requires frequent banking if banking the bones. Somewhat poor drops for their level. Requires protection from the mountain heat if [[elite Kourend & Kebos]] Diary hasn't been completed.
+|Skip/Block
+|
+|-
+|[[Dust devil]]s
+|65 
+|5
+|93
+|Good experience rates if maging in the [[Catacombs of Kourend]]. Alchables cover most of the money spent into runes.
+|Often crowded in the [[Catacombs of Kourend]].
+|Do
+|68,000 (Magic)
+|-
+|[[Elf|Elves]]
+|1
+|4
+|90, 108 
+|Decent Herblore and Prayer experience.
+| Not worth doing unless Slayer points are an issue.
+|Skip
+|
+|-
+|[[Fire giant]]s
+|1
+|7
+|86, 104, 109
+|None.
+|Rather poor drops. 
+|Skip
+|
+|-
+|[[Fossil Island wyvern]]s
+| 66, 82
+|7
+|139, 147, 152, 210
+|Decent Prayer experience, decent drops including [[Seaweed spore|seaweed spores]]. Relatively fast task with high combat stats.
+|Not worth doing at higher levels. [[Stop the Wyvern]] should be purchased once the player has enough Slayer points.
+|Block ([[Stop the wyvern|Stop the Wyvern]]), do otherwise
+|
+|-
+|[[Gargoyle]]s
+|75
+|8
+|111
+|Good money and supplies. [[Gargoyle|Gargoyles]] have no defence and are fairly inaccurate, making it an easy task when using decent food. [[Grotesque Guardians]] can be substituted. 
+|Can be crowded in the [[Slayer Tower]]. 
+|Do
+|31,000
+|-
+|[[Greater demon]]s
+|1
+|9
+|92
+|Good experience rates when killing [[Tormented Demon|tormented demons]], which additionally drop the [[tormented synapse]] and [[burning claws]]. Decent Prayer experience from [[ensouled demon head]]s.
+|Poor drops (unless killing [[Tormented Demon|tormented demons]] or K'ril Tsutsaroth).
+|Block (unless killing [[K'ril Tsutsaroth]] or [[Tormented Demon|tormented demons]])
+|
+|-
+|[[Hellhound]]s
+|1
+|10
+|122, 127
+|Frequently drops [[Clue scroll (hard)|hard clue scrolls]].
+|No drops unless killing [[Cerberus]]. Killing Cerberus uses a lot of Prayer potions.
+|Block (unless killing [[Cerberus]])
+|
+|-
+|[[Kalphite]]s
+|1
+|9
+|28, 85, 141, 333
+|Relatively fast task if killing the workers. The [[Kalphite Queen]] can be killed for Herblore supplies.
+|No notable drops unless killing the [[Kalphite Queen]].
+|Block (unless killing the [[Kalphite Queen]])
+|
+|-
+|[[Kurask]]s
+|70
+|4
+|106
+|Decent money and Herblore supplies.
+|Slow to kill if [[leaf-bladed battleaxe]] isn't available. Somewhat far from a bank and going to them can take a while without 61 [[Agility]]. Not worth doing at higher levels.
+|Do/Skip
+|
+|-
+|[[Lizardman|Lizardmen]]
+|1
+|10
+|53, 62, 73, 150
+|Should only be unlocked if killing [[Lizardman shaman|lizardman shamans]] for the [[dragon warhammer]].
+|Blowpiping [[Lizardman shaman|lizardman shamans]] requires a lot of [[Zulrah's scales]] and Prayer potions.
+| Should not be unlocked (unless killing [[Lizardman shaman|lizardman shamans]])
+|34,000 (using the [[toxic blowpipe]])
+|-
+|[[Zygomite|Mutated Zygomites]]
+|57
+|2
+|74, 86
+|Fairly fast task with high combat stats and the appropriate gear.
+|No notable drops, requires use of [[fungicide spray]] to finish the kill (similar to [[lizard]]s and [[ice cooler]]s)
+|Do/Skip
+|
+|-
+|[[Nechryael]]
+|80
+|9
+|115
+| Good Slayer experience rates if maging in the [[Catacombs of Kourend]]. [[Greater Nechryael|Greater nechryael]] drop a lot of alchables which covers the cost of runes. Alternatively, killing [[nechryael]] in the Slayer Tower offers good money and Herblore experience.
+|[[Greater Nechryael|Greater nechryael]] are often crowded and killing them requires frequent banking.
+|Do
+| 31,000 (melee),
+80,000–90,000 (Magic)
+|-
+|[[Red dragon]]s
+|1
+|8
+|48, 152, 289
+|Decent Prayer and Crafting experience if the player has a [[dragon hunter lance]]. Fairly fast task.
+|N/A
+|Unlock/Do (after obtaining a [[dragon hunter lance]])
+|
+|-
+|[[Skeletal Wyvern]]s
+|72
+|7
+|198 
+|Decent supplies and Prayer experience.
+| Slow experience rates, especially if ranging. Far from a bank which makes banking the bones inconvenient. Not worth doing unless Slayer points are an issue.
+|Do/Skip
+|10,000
+|-
+|[[Smoke devil]]s
+|93
+|9
+|160
+|High experience rates if maging. Alchables cover some of the money spent into runes.
+|Maging them efficiently requires practice. Slow to lure without a [[dwarf multicannon]].
+|Do
+|70,000–120,000 (Magic)
+|-
+|[[Spiritual creature]]s
+|63, 68, 83
+|7
+|115-134
+|Decent drops if killing the mages.
+| Not worth doing after getting [[Dragon boots]] or Slayer points are an issue.
+|Skip
+|25,000
+|-
+|[[Suqah]]s
+|1
+|8
+|111
+| None.
+| Not worth doing unless Slayer points are an issue.
+|Skip/Block
+|
+|-
+|[[Troll]]s
+|1
+|6
+| Varies heavily
+|Decent drops if killing [[ice troll]]s on [[Jatizso]]. Hard rumble in [[Nightmare Zone]] with the three trolls enabled can also be a reasonable AFK option.
+|Travelling to [[Jatizso]] can take a while. Not worth doing unless Slayer points are an issue.
+|Skip
+|
+|-
+|[[TzHaar]]
+|1
+|10
+|74, 103, 133, 149, 702
+|High experience rates if the player is experienced in the [[Fight Caves]]. 
+|No drops other than the [[Tokkul]] reward from completing the [[TzHaar Fight Cave|Fight Caves]], which makes this task not worth doing even for the high experience rates.
+|Do not unlock
+|Varies
+|-
+|[[Vampyre]]s
+|1
+|8
+|61, 64, 70, 72, 77, 100, 130
+|Chance at a [[blood shard]] (1/1,500) if killing the [[Vyrewatch Sentinel|vyrewatch sentinel]] variant, with spawns close to both a bank and an altar.
+|Requires [[Actual Vampyre Slayer]] to be unlocked, requires [[Sins of the Father]] for the best drops, and [[blood shard]]s can alternatively be obtained through [[Thieving]].
+|Do not unlock
+|
+|-
+|[[Slayer task/Warped creature|Warped creatures]]
+|56
+|8
+|98, 121, 138
+|Good money and supplies. Warped terrorbirds never lose aggression.
+|N/A
+|Unlock/Do
+|30,000
+|-
+|[[Waterfiend]]s
+|1
+|2
+|115 
+|Decent supplies. 
+|A good crush weapon (such as [[abyssal bludgeon]] or [[Zamorakian hasta]]) is required to kill them effectively. Not worth doing unless Slayer points are an issue.
+|Skip
+|35,000
+|-
+|[[Wyrm]]s
+|62
+|8
+|99
+|Decent Prayer experience from the [[wyrm bones]], decent drops. Alternatively, killing [[Lava Strykewyrm|Lava Strykewyrms]] offers good drops and a chance at a [[Dragon metal sheet]]. 
+|Requires protection from the mountain heat if [[elite Kourend & Kebos]] Diary hasn't been completed. Not worth doing unless Slayer points are an issue. They are however one of two sources to get the [[Dragon harpoon]], the other being [[Tempoross]].
+|Skip/Block
+|
+|}
+
+{{Training guides}}
+[[Category:Ironman Mode]]
+[[Category:Slayer]]
+[[Category:Members]]

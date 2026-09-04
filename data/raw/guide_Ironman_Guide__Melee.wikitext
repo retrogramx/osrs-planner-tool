@@ -1,0 +1,212 @@
+{{Iron Guide Links}}
+
+[[Melee]] training involves training [[Attack]], [[Strength]], [[Defence]], and [[Hitpoints]] through combat. Ironman melee training is similar to [[Pay-to-play melee training|the normal training methods]], with a heavy emphasis on [[Slayer]] for resources.
+
+==Early training: Quests==
+{{See also|Quest experience rewards#Attack|Quest experience rewards#Strength|Quest experience rewards#Defence}}
+Early levels can be skipped by completing quests granting Attack, Strength, or Defence [[experience]]. Notably, [[Waterfall Quest]] has no requirements and grants enough experience for 30 Strength and 30 Attack, going straight to 22 [[combat level]].
+
+[[Waterfall Quest]], [[Death Plateau]], [[Fight Arena]], [[Vampyre Slayer]], [[Witch's House]], [[Tree Gnome Village]] and [[The Grand Tree]] involve no combat, or can be [[safespot]]ted and easily defeated with [[Magic]].
+
+[[File:Hardcore ironman chat badge.png]] [[Ironman Mode#Hardcore|Hardcore ironmen]] are recommended to train [[Hitpoints]] before attempting the above quests. With at least [[fire strike]] and decent Hitpoints, complete [[Witch's House]], then continue with the other quests.
+
+{| class="wikitable sortable lighttable"
+!Quest
+!Requirements
+!{{SCP|Attack}} XP
+!{{SCP|Strength}} XP
+!{{SCP|Defence}} XP
+!Enemies
+|-
+|[[Waterfall Quest]]
+|None
+|13,750
+|13,750
+|{{NA}}
+|Evadable
+|-
+|[[Death Plateau]]
+|None
+|3,000
+|{{NA}}
+|{{NA}}
+|None
+|-
+|[[Vampyre Slayer]]
+|None
+|4,825
+|{{NA}}
+|{{NA}}
+|Level 34
+|-
+|[[Tree Gnome Village]]
+|None
+|11,450
+|{{NA}}
+|{{NA}}
+|Level 112, [[safespot]]table
+|-
+|[[Fight Arena]]
+|None
+|12,175
+|{{NA}}
+|{{NA}}
+|Levels 44, 63, 137, [[safespot]]table
+|-
+|[[The Grand Tree]]
+|{{SCP|Agility|25}}
+|18,400
+|{{NA}}
+|{{NA}}
+|Level 172, [[safespot]]table
+|-
+|[[Holy Grail]]
+|[[Merlin's Crystal]], {{SCP|Attack|20}}
+|{{NA}}
+|{{NA}}
+|15,300
+|Level 120, [[flinch]]able
+|-
+|[[Haunted Mine]]
+|[[Priest in Peril]], {{SCP|Crafting|35}}
+|{{NA}}
+|22,000
+|{{NA}}
+|Level 95
+|-
+|[[Dragon Slayer I]]
+|{{SCP|Quest|32}}
+|{{NA}}
+|18,650
+|18,650
+|Levels 3, 19, 22, 24, 43, 82, 83
+|-
+|[[In Aid of the Myreque]]
+|[[In Search of the Myreque]], {{SCP|Crafting|25}}, {{SCP|Mining|15}}, {{SCP|Magic|7}}
+|2,000
+|2,000
+|2,000
+|Levels 35, 54, 50s/75
+|}
+
+==Fastest experience==
+===Gemstone/ammonite/sand crabs===
+[[Gemstone Crab]] in the [[Tlati Rainforest]] is currently the best option for early melee training. They have no defensive stats and effectively infinite [[Hitpoints]], allowing for continuous combat without downtime. While players earn slightly less experience per hit (87.5% of the usual rate), the overall experience rates are higher than other crabs due to uninterrupted attacking and no wasted damage from overkill.
+
+The only requirement to fight gemstone crabs is the completion of [[Children of the Sun]] to access [[Varlamore]]. The crab appears at one of three mines and remains stationary for exactly 10 minutes before relocating. Players can seamlessly follow it by entering any of the nearby caves, all of which lead to its new location. Up to 16 players can benefit from each cycle, making it ideal for group training.
+
+[[Ammonite Crab]] on [[Fossil Island]] are still a strong alternative. They have high [[Hitpoints]], low combat stats, and are aggressive for 10 minutes. They require little to no food and drop [[Numulite]], but experience rates are slightly lower due to downtime and potential overkill.
+
+[[Sand Crab]] in [[Hosidius]] are a no-requirement option, but they have lower [[Hitpoints]] and are often crowded, making them less efficient for training.
+
+===Slayer===
+{{Main|Ironman Guide/Slayer}}
+With decent melee stats and equipment, most melee experience should be gained through [[Ironman Guide/Slayer|Slayer]]. Powerful equipment is locked behind Slayer levels for ironmen, such as the [[abyssal whip]], [[dragon boots]], [[occult necklace]], and [[trident of the seas]].
+
+===Nightmare Zone===
+{{Main|Nightmare Zone}}
+With base 70 melee stats, melee can also be trained in the [[Nightmare Zone]]. Using normal customisable rumble and [[absorption]] potions offers a very straightforward and the most AFK-able way of training melee stats, allowing the player to stay in combat for 20 minutes without any player input. However, [[Nightmare Zone]] dreams require a coin fee to start and there are no valuable drops.
+
+Using the boss list from the [[Nightmare Zone/Strategies#Melee (Absorption, AFK)|Nightmare Zone AFK absorption]] method, up to 85,000 experience per hour is possible, however expect closer to 70,000 experience per hour using mid-game ironman gear ([[zombie axe]], [[dragon defender]], [[Fighter torso|fighter torso, etc.)]]. Using a [[dwarven rock cake]] or [[locator orb]] can help extend trips to 6 hours to maximise absorption point efficiency, while bringing [[Overload|overloads]] can improve xp/hr at the cost of being less afk.
+
+=== Sulphur Naguas ===
+[[Sulphur Nagua|Sulphur Naguas]] can be fought in  [[Neypotzli]] after the [[Perilous Moons]] quest. They provide some of the highest melee experience per hour in the game (140,000 experience per hour when praying [[Piety]], or 110,000 experience per hour if not), in addition to being AFK and requiring no supplies. This is comparable to [[Dharok the Wretched's equipment|Dharoking]] in NMZ, but is much more accessible for Ironmen since it doesn't require special gear. Additionally, they provide around 4,000 experience per hour in Runecrafting from [[sulphurous essence]], ~1-1.3 hard clue scrolls per hour, and [[Chaos rune|chaos]]/[[death rune]] drops. If carrying an [[ectoplasmator]], they also provide ~6500 [[Prayer]] experience per hour.
+
+The best weapon to use is the [[dual macuahuitl]], closely followed by [[Glacial temotli]], then [[sulphur blades]]; these weapons have two hitsplats, taking advantage of sulphur nagua's -4 [[flat armour]]. You can kill [[Frost nagua|frost naguas]] with your best melee gear until receiving the glacial temotli as a drop.
+
+Since you will be praying [[Protect from Melee|protect from melee]] at all times, you can significantly increase AFK times at the cost of some experience per hour by bringing [[Prayer items|prayer-boosting gear]] such as [[Proselyte armour|proselyte]], a [[stole]], [[holy sandals]], and an [[Ardougne cloak]]. Praying Piety will significantly decrease AFK times, but will increase experience per hour. If using the [[dual macuahuitl]], wearing the full [[blood moon armour]] set will further increase experience per hour.
+
+[[Moonlight potion|Moonlight potions]] should be used when killing sulphur naguas, as they both restore prayer and boost melee stats. Thus, you need no supplies for this method. The eastern spot is best, as it has 5 spawns in close proximity to each other, and is less likely to be interrupted by players doing [[Moons of Peril]]. Note that sharing this spot will reduce experience per hour, and it shouldn't be hard to find an empty world.
+
+It's common to receive multiple hard clues from sulphur naguas in one trip. They should be picked up when they spawn and [[Clue juggling|dropped again]], after which they will stay on the ground for one hour. It's beneficial for Ironmen to do these hard clues for the chance of receiving rewards such as [[Blessed dragonhide armour|blessed d'hide armour]], but those wanting to maximize experience per hour can ignore hard clues. You can use a [[calcified moth]] to quickly get back to [[Cam Torum]] to ferry all your hard clues. Note that you should turn in [[sulphurous essence]] before leaving [[Neypotzli]], as they will disappear when you leave.
+
+==Other methods==
+===Barbarian fishing===
+{{Main|Barbarian Training#Barbarian Fishing}}
+[[Barbarian Fishing]] gives small amounts of passive [[Strength]] experience in addition to [[Fishing]] and [[Agility]] experience. It is recommended to get passive Strength experience from [[Fishing]] before doing melee training, as the passive Strength experience has a much bigger benefit at lower than higher levels.
+
+=== Vyrewatch Sentinels ===
+After completion of [[Sins of the Father]], [[Vyrewatch Sentinel]] can be killed in [[Darkmeyer]] with the [[Blisterwood flail]]. They can be unlocked as a slayer task if desired, but offer an AFK method to train melee stats that rewards [[vampyre dust]] for [[Hallowed Sepulchre]], Rune and Adamant equipment to alchemise, spare runes, and the rare chance at a [[blood shard]] which can be useful for difficult PVM activities, such as [[Raids]] and [[Fortis Colosseum]]. You can earn up to 54,000 combat XP per hour, {{Coins|130000}} per hour from alchs, and a small amount of banked [[Prayer]] XP per hour, as each vampyre dust can be used for 100-200 Prayer XP if used in the Hallowed Sepulchre.
+
+==Weapons==
+Prioritise weapons with fast attack speed over stronger weapons with slower speeds.
+* All [[sword]]s up to and including [[rune sword|rune]] are sold by various [[shop]]s.
+* The [[rune scimitar]] is the recommended weapon from level 40 to 60 Attack. It is dropped by [[fire giant]]s and [[Zamorak warrior]]s, both of which can be safespotted with Magic and Ranged.
+* The [[dragon longsword]] is a decent alternative after completing [[Lost City]] but before completing [[Monkey Madness I]].
+* The [[dragon scimitar]] is one of the best melee weapons to use before 85 Slayer. Complete [[Monkey Madness I]] as soon as possible to unlock it.
+* At 65 Attack and Strength, get a [[dragon defender]] from the [[Warriors' Guild]]. Later, it can be upgraded to an [[avernic defender]].
+* The [[leaf-bladed battleaxe]] is the strongest weapon that can harm [[turoth]]s and [[kurask]]s.
+* At 65 Attack and 70 Smithing, the [[zombie axe]] is a potential upgrade to the dragon scimitar against certain monsters, especially those weak to crush
+* At 65 Attack, 70 Smithing and requiring completion of [[Troubled Tortugans]] (51 Slayer), [[Belle's folly]] is a stab alternative to the zombie axe  
+* At 70 Attack and 75 Strength, the [[dual macuahuitl]] is a potentially stronger option prior to a whip or Zamorakian hasta; especially if used with the [[Blood moon armour]].
+* At 85 Slayer, kill [[abyssal demon]]s for an [[abyssal whip]]. It can be upgraded to an [[abyssal tentacle]] at 87 Slayer, though it degrades and eventually destroys the whip, refunding only the tentacle. Because the whip cannot train Strength, the dragon scimitar or dual macuahuitl remain choice weapons for that purpose.
+* The [[Zamorakian hasta]] offers a stab and crush alternative to the abyssal whip, if killing [[K'ril Tsutsaroth]] is possible.
+* The [[noxious halberd]] is the strongest melee weapon to use against the [[Corporeal Beast]].
+* The [[dragon hunter lance]] is the strongest melee weapon against most [[Draconic (attribute)|draconic]] monsters.
+* Endgame melee weapons include the [[blade of Saeldor]] from [[The Gauntlet]], the [[Ghrazi rapier]] and the [[Scythe of Vitur]] from the [[Theatre of Blood]], the [[Inquisitor's mace]] from the [[Nightmare of Ashihama]], [[Osmumten's fang|Osmumten's Fang]] from the [[Tombs of Amascut]], and the [[Soulreaper axe]] from [[The Forgotten Four]].
+
+===Special attack weapons===
+* At 60 Attack, complete [[The Lost City]] to unlock the [[dragon dagger]], which has a useful [[special attack]] for dealing damage.
+* [[Arclight]] is the second strongest weapon against [[Demon (attribute)|demonic]] creatures, and has a special attack that can reduce a monster's stats. Complete [[Shadow of the Storm]] for [[Darklight]], then kill monsters in the [[Catacombs of Kourend]] for [[ancient shard]]s.
+* The [[dragon warhammer]] is highly sought after by ironmen for its special attack, which is used when fighting many boss monsters to drain their Defence. Ideally, complete the [[hard Kourend & Kebos Diary]] and unlock lizardman Slayer assignments before killing [[lizardman shaman]]s.
+* The [[Bandos godsword]]'s damage lowers a monster's stats, starting with Defence.
+* The [[Saradomin godsword]]'s damage heals hitpoints and prayer points.
+* [[Dragon claws]], from the [[Chambers of Xeric]], are a very strong late game special attack weapon.
+* The  [[burning claws]] from [[Tormented Demon|Tormented Demons]] are competitive with the dragon claws, generally being stronger against stab-weak or demonic monsters, but only slightly worse than the dragon claws otherwise.
+* The [[voidwaker]] has the most consistent melee special attack, as it skips the accuracy check and hits hard, making it average out to the best option at many bosses.
+
+==Armour==
+* All armour pieces up to and including [[rune equipment|rune]] can be purchased from various shops.
+* Completion of [[Dragon Slayer I]] is required to use the [[rune platebody]].
+* Maximise [[strength bonus]] for efficient training when fighting monsters with low defence.
+** For monsters with high defence and bossing, you will have to balance accuracy and strength bonus. Searching up a DPS calculator will allow you to determine, for example, whether an amulet of strength or glory is better for fighting a specific monster with your current stats.
+
+===Helmets===
+* The [[helm of Neitiznot]] is a reward from [[The Fremennik Isles]].
+* It upgrades to a [[Neitiznot faceguard]] with a [[basilisk jaw]] after [[The Fremennik Exiles]].
+* For Slayer training, obtain a [[black mask]] from [[cave horrors]] at 58 Slayer.
+* Upgrade it to a [[slayer helm]] when possible, then [[Slayer helm (i)|imbue]] it.
+
+===Torso===
+* The [[fighter torso]] from [[Barbarian Assault]] minigame provides the best, earliest strength bonus.
+* The [[obsidian platebody]] is a slightly weaker alternative, but requires either beating the [[TzHaar Fight Cave]] or killing many [[TzHaar-Ket]].
+* The [[Bandos chestplate]] has the same strength bonus as fighter torso, but considerably higher defensive bonus. The [[Blood moon chestplate]] is a decent alternative, but has less Melee and Ranged defensive bonus and no prayer bonus.
+* A [[torva platebody]] must be fixed with 90 [[Smithing]] and [[bandosian components]] after the damaged version drops from [[Nex]].
+
+===Legs===
+* With few options for Strength bonus, use the best defensive gear possible.
+* [[Obsidian platelegs]] have low defence, but do give Strength bonus. 
+* [[Bandos tassets]] have better defence and more Strength bonus.
+* [[Torva platelegs]] also require Smithing and bandosian components after getting the damaged version from Nex.
+
+===Neck===
+* An [[amulet of strength]] is the most efficient option early on. 
+* Complete the [[Haunted Mine]] quest and the [[Lair of Tarn Razorlor]] [[miniquest]] to unlock the [[salve amulet (e)]].
+* After leveling Crafting, use an [[amulet of glory]] and [[amulet of fury]].
+* The [[amulet of torture]], crafted from [[zenyte shard]]s dropped by [[demonic gorilla]]s have better Strength bonus.
+* The best neck slot item for melee is the [[amulet of rancour]], upgraded variant of the [[amulet of torture]] crafted from [[Araxyte fang]] dropped by [[Araxxor]].
+
+===Ring===
+
+* [[Dagannoth Rex]] drops [[berserker ring]], which can be [[berserker ring (i)|upgraded]] with points from [[Nightmare Zone]], a [[Scroll of imbuing]] from [[Emir's Arena]] or [[Zeal Tokens]] from [[Soul Wars]].
+* The [[Ultor ring|Ultor Ring]] is an upgraded version of the [[berserker ring]], created using components dropped by [[Vardorvis]].
+
+===Gloves===
+* Complete [[Recipe for Disaster]] subquests for [[Culinaromancer's gloves]] and the entire quest for [[Barrows gloves]].
+
+===Boots===
+* [[Climbing boots]] are obtainable early on, after completing [[Death Plateau]]. Later, kill [[spiritual mage]]s ({{SCP|Slayer|83}}) for [[dragon boots]], then kill [[Cerberus]] ({{SCP|Slayer|91}}) for a [[primordial crystal]] to upgrade them into [[primordial boots]].
+
+===Cape===
+* [[Fire cape]] from [[TzHaar Fight Cave]].
+* Eventually an [[infernal cape]] from the [[Inferno]].
+
+===Other===
+* [[Barrows equipment]]:
+** [[Dharok the Wretched's equipment|Dharok]]'s can be used for certain training in [[Nightmare Zone]].
+** [[Torag the Corrupted's equipment|Torag]]'s, [[Verac the Defiled's equipment|Verac]]'s and Dharok's equipment all have very high defensive bonuses, so they can be used to tank damage when fighting monsters that are too dangerous or costly to fight in Strength gear.
+* Complete [[Slug Menace]] to unlock [[proselyte armour]], which provides the highest Prayer bonus for the body and leg slots until you can take on the Fortis Colosseum for [[Sunfire fanatic armour|Sunfire Fanatic armour]].
+* Endgame armour includes [[Bandos armour]] from [[General Graardor]], [[justiciar armour]] from the [[Theatre of Blood]], [[inquisitor's armour]] from the [[Nightmare of Ashihama]], and [[Torva armour]] from [[Nex]].
+
+{{Training guides}}
+[[Category:Ironman Mode]]

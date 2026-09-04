@@ -1,0 +1,167 @@
+{{External|rs|rsc=Tourist trap}}
+{{Has quick guide}}
+{{Infobox Quest
+|name = The Tourist Trap
+|number = 44
+|image = [[File:The Tourist Trap.png|300px]]
+|release = [[14 April]] [[2003]]
+|update = Tourist Trap Quest Online!
+|members = Yes
+|series = None
+|developer = {{RSL|Mod Tytn|Tytn H}}
+}}
+'''The Tourist Trap''' is an intermediate quest set in the [[Kharidian Desert]]. The quest involves an undercover rescue operation into a [[Desert Mining Camp|slave camp]] to save [[Ana|an Al Kharidian woman's daughter]].
+
+==Details==
+{{Quest details
+|start = Speak to [[Irena]] by the [[Shantay Pass]], south of [[Al Kharid]].
+|startmap = 3303,3113
+|difficulty = Intermediate
+|description = South of Al Kharid a new desert pass has opened up, leading to the dangers of the Kharid desert.
+Equip your desert garb and make sure your waterskin is full before heading off into the trackless dunes in search of desert adventure.
+|length = Medium
+|requirements = * {{SCP|Fletching|10|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* {{SCP|Smithing|20|link=yes}} {{Boostable|yes}} {{Questreqstart|no}}
+* The ability to defeat a level 47 enemy
+|items = '''Note that all of the required items can be bought from [[Shantay]] at the [[Shantay Pass]].'''
+* [[Desert shirt]], [[Desert robe|robe]], and [[Desert boots|boots]] (black versions do not work)
+* A [[hammer]]
+* One [[bronze bar]] (recommended to bring at least 2 additional bars, 24-96% chance to succeed based on Smithing level)
+* Ten [[feather]]s (30-50+ recommended at lower [[Fletching]] levels)
+* Means to enter the desert, such as the [[Shantay pass (item)|Shantay pass]],  [[desert amulet 2]], [[teleport tablet]]s or [[Teleport scrolls|scrolls]], [[fairy rings]] or the [[pharaoh's sceptre]]
+|recommended = * {{SCP|Combat|20|link=yes}}
+* Combat equipment to defeat a level 47 [[Mercenary Captain]], and the inventory space to unequip it immediately afterwards
+* 1-2 full [[waterskin]]s and a [[knife]] or [[slash weapon]] to refill them by cutting cacti
+* [[Stamina potion|Stamina]] or [[energy potion]]s
+* [[Pickaxe]] if caught in the mine to mine 15 rocks to get out
+|kills = * [[Mercenary Captain]] ''(level 47)'' - safespottable
+|ironman = [[File:Ultimate ironman chat badge.png]] You need to unequip your armour and weapons, and require two empty slots in addition to that. Failing dialogue will require 15 empty inventory spaces.
+|leagueRegion = <poem>
+Unlocking {{LeagueRegion|Desert}} {{okay}} will auto-complete the quest
+</poem>
+}}
+
+==Walkthrough==
+Before starting, note that while in the desert, you will take around 10 damage from [[desert heat]] if not holding a [[waterskin]]. Every 30-90 seconds, you will use a charge from your waterskin, or take damage if you have no charges left. The interval depends on the [[armour]] worn. As such, it is '''highly recommended''' to equip any [[desert clothing]] before entering the desert, and to also ensure at least 1-2 full [[waterskins]] are kept in your inventory. Waterskins can be refilled by cutting [[Kharidian cactus|cacti]] found around the desert with a [[knife]] or [[slash]] weapon.
+
+===Missing daughter===
+[[File:Irena chathead.png|left|frameless]]
+[[File:The Tourist Trap - Talking to Irena.png|thumb|220x220px|Talking to Irena.]]
+{{Map|3270,3029|zoom=1|width=220|height=220|align=right|mtype=pin|caption=The Mercenary Captain outside the [[Desert Mining Camp]] entrance.}}
+Head through the [[Shantay Pass]] south of [[Al Kharid]] and speak to [[Irena]]. A [[shantay pass]] is required to pass through, which can be bought from [[Shantay]] nearby. Alternatively, [[fairy ring]] {{Fairycode|BIQ}} is just north-east of the [[Bedabin Camp]]. Ask Irena what's bothering her, and she'll share that her daughter [[Ana]] has gone missing in the desert. She'll mention some footprints which appear to lead to the [[Desert Mining Camp]]; follow these footprints south until you reach the mercenaries guarding the [[Desert Mining Camp]] gate (west side of the camp), and talk to the [[Mercenary Captain|mercenary captain]].
+
+:'''Note''': After concluding the dialogue, you will immediately enter combat with the captain. See the section below for fight mechanics.
+
+Say ''wow, a real captain!'', then say ''you'd love to work for him'', ask ''if you can do something for him'', and he will ask you to bring him the head of Al Zaba Bhasim, head of the desert bandits. Refuse, then ''accuse him of being unable to fight his own battles''. {{Chat option|1Wow! A real captain!|2I'd love to work for a tough guy like you!|2Can't I do something for a strong Captain like you?|2Sorry Sir, I don't think I can do that.|1It's a funny captain who can't fight his own battles!}}He will agree to a duel, and the guards will gather round. Complete the dialogue when you are ready to fight. Note that if you attack him too early, you will be teleported away, taking damage and losing your water. 
+
+==== Fighting the captain ====
+The captain can easily be defeated without taking any damage by using [[Protect from Melee]]. Low-leveled players who cannot use this prayer should bring decent food, [[swordfish]] or better.
+
+It is possible to [[safespot]] the captain by waiting to complete the dialogue until a [[mercenary]] is nearby, then talking to the [[mercenary]] to block the captain's way. A dwarf [[multicannon]] may also be set up west of the gate, just in the edge of the captain's roaming area.
+
+The captain may also be killed entirely with [[rings of recoil]], and the key will still drop. Non-ironmen players may also simply stay on the final dialogue ''(The guards gather around to watch the fight'') and wait while a friend kills the captain, then press continue right as the captain dies.
+
+Once the captain attacks you, kill him and take his [[metal key]].
+
+===Getting into the mine===
+[[File:Male slave (brown hair) chathead.png|left|frameless]]
+'''Before entering the camp''', unequip everything except your desert clothing. Ammunition is allowed. If you have weapons/armour equipped during the camp, you will be put in a cell; to escape, you must bend the bars in the window and climb out, climb the rocks, then the cliff, then the rocks again. During this process you may be sent away from the camp and have your waterskins taken away. Once escaped, you may return to the gate to enter again.
+
+:Alternatively, it is possible to change worlds immediately upon opening the gates to avoid getting caught. This may be easier to perform when using quick-hop keys on the [[RuneLite]] client.
+
+[[File:The Tourist Trap - Trading clothes.png|thumb|220px|Trading clothing with a slave keen to escape.]]
+
+Once inside, enter the northern building and search the table with a [[bowl of water]] on it to receive a [[cell door key]]. This key can be used if you are caught in upcoming sections to escape via the [[Prison door (Desert Mining Camp)|prison door]], which will save you some time. Note that the guards may occasionally confiscate the keys from you. While here, you may also use the [[bowl of water]] to refill your waterskins, although the desert heat will no longer  affect you whilst inside.
+
+Head to the east wall by the rocks and talk to the male slave, who says you look like a new recruit. When you ''tell him you've just arrived'', he mentions he is planning on a escape. ''Tell him that it sounds interesting'', and he will mention there is one missing detail from the plan. Ask ''what's that then'' and he says he can't get his bracelets off. Tell him ''you can try to undo them for him'', and he will mention making a trade. Say ''it's funny you should say that'' and the player will request his slave robes in return for your desert clothing. Keep trying until you break the bracelets off the slave and then agree to the trade. {{Chat option|1I've just arrived.|2Oh yes, that sounds interesting.|1What's that then?|1I can try to undo them for you.|1It's funny you should say that...|1Yeah, okay, let's give it a go.|1}}
+
+:'''Note:''' If a guard is close to you while you attempt to break off the bracelets, they will detain you in the cell and you will need to escape using the key (or through the window, per the earlier note).
+
+=== What lies below ===
+{{Map:Desert Mining Camp underground}}
+While in the mine in the following sections, you must have your slave robes equipped at all times. If the guards spot you without the robes,  you will be jailed and forced to mine 15 [[Rock (The Tourist Trap)|rocks]] to be freed (alternatively, you may teleport out). If you are caught, you can logout during the dialogue to avoid being jailed (re-equip the slaves robes on relogging).
+
+Wearing the slave roves, enter the mine and follow the winding path to the winch area. ''Don't talk to the [[rowdy slave]]s, or they attack you.'' At the doors to the winch area, talk to a guard and ask to mine in a new area, and he will request a [[Tenti pineapple|tenti pineapple]]. You will now need to visit the [[Bedabin Camp]] to the west of the [[Desert Mining Camp]]. Either exit the mine the way you came—unequipping your slaves robes ''after'' leaving the mine—or teleport out.
+
+If your gate key was confiscated and you do not have access to a teleport, you can get it back by searching the west table upstairs in the building.
+
+===Pineapples and plans===
+{{Map|name=Al Shabim|caption=Location of Al Shabim in the Bedabin Camp.|x=3171|y=3029|width=200|height=200|align=right|r=4|mtype=square}}
+{{Needed|skills={{SCP|Smithing|20}} {{Boostable|yes}} to create a [[prototype dart tip]], and {{SCP|Fletching|10}} {{Boostable|yes}} to turn it into a [[prototype dart]]}}
+Talk to [[Al Shabim]] in the southern circular tent of the [[Bedabin Camp]]. He will agree to give you the pineapple if you get some [[Technical plans|weapon plans]] for him, and gives you a key.
+
+Return to the Desert Mining Camp (without armour or weapons equipped), go into the northern building, and climb up the ladder to find [[Captain Siad]]. Search the [[bookcase (The Tourist Trap)|south-west bookcase]] to learn he has an interest in sailing, then talk to him again and ''ask to have a chat''. He will insist that you leave; ignore him and tell him he ''seems to have a lot of books'', to which he will agree. Mention that he has an ''interest in sailing'' and he will say it's been a passion of his for some years. Tell him you ''could tell by the cut of his jib'' and he will be flattered and begin rambling, creating a distraction. {{Chat option|1I wanted to have a chat?|5You seem to have a lot of books!|3So, you're interested in sailing?|1I could tell by the cut of your jib.}} While he is distracted, search the chest in his office and steal the blueprints.
+
+Return to [[Al Shabim]] in the [[Bedabin Camp]], who will give you permission to use the [[anvil]] nearby. Bring any skill boosts needed, as well as additional materials, as it is possible to fail both steps. Enter the tent directly north of Al Shabim, near the magic carpets. Use your [[bronze bar]] on the anvil to create a [[prototype dart tip]] ({{SCP|Smithing|20}}), then add the [[feather]]s to make a [[prototype dart]] ({{SCP|Fletching|10}}).  Take the dart and the technical plans back to Al Shabim and he will give you the [[Tenti pineapple|pineapple]] you need.
+{{Clear|left}}
+
+===Finding Ana===
+[[File:Ana in a barrel detail.png|left|frameless|80px]]
+[[File:Tourist Trap - Riding the mine cart.png|thumb|220px|Riding the mine cart. Enjoy the ride!]]
+With your slave outfit equipped, enter the mine and give the [[tenti pineapple]] to the guard who wanted it. He will now allow you to enter the winch area. Inside this section, head east until you reach a mine cart, then search a nearby barrel to take one. Once you have one, search the mine cart to get in, and you will ride it to the other side. It is possible to fail and take 1-4 damage by banging your knee or falling off the edge of the minecart.
+
+[[Ana]] can be found down the north-west path, at the very end. After optionally talking to her, use the barrel on her to put her inside, then return to the mine cart. Do not drop the barrel while she is inside, and do not mention sneaking past the guards or the key if you choose to talk to her, or else you will be thrown in jail.
+
+===Free at last===
+[[File:Mine cart driver chathead.png|left|frameless]]
+[[File:The Tourist Trap - Ana in a barrel in a mine cart.png|thumb|220px|Putting Ana on the cart.]]
+Use [[Ana in a barrel]] on the mine cart to send her down the track. When the cart returns, get in. Once you reach the other side, search an empty barrel, and you will retrieve [[Ana in a barrel]] again. Do '''not''' exit the mine yet.
+
+Use [[Ana in a barrel]] on the [[winch bucket]] to the north-west, and a guard will offer to help. Accept his help, then when he suspects that Ana said something, say you were just calling him ''very gregarious'' to throw him off. If this section glitches and the guards are alerted, simply re-log and try again.
+
+[[File:The Tourist Trap - Operating the crane.png|thumb|220px|Operating the crane with Ana in the barrel.]]
+
+Return to the surface while still wearing your slave robes. Operate the [[winch (The Tourist Trap)|winch]] in the south-west corner of the camp, then search the nearby barrel to retrieve Ana. Put her in the wooden [[wooden cart (The Tourist Trap)|cart]] nearby. 
+
+'''{{Colour|Red|Warning}}''': If you click the wrong dialogue options in the next section you will have to redo the majority of this quest! 
+
+Now, you need to talk to the [[mine cart driver]] and say the following dialogue before he will allow you to hide in the cart. {{Chat option|2Nice cart.|2One wagon wheel says to the other, 'I'll see you around'.|1'One good turn deserves another.'|3Fired... no, shot perhaps!|3In for a penny in for a pound.|3Well, you see, it's like this...|1Prison riot in ten minutes, get your cart out of here!|2You can't leave me here, I'll get killed!}}
+
+*''"Nice cart."''
+*''"One wagon wheel says to the other, 'I'll see you around'."''
+*''"One good turn deserves another."''
+*''"Fired... no, shot perhaps!"''
+*''"In for a penny in for a pound."''
+*''"Well, you see, it's like this..."''
+*''"Prison riot in ten minutes, get your cart out of here!"'' (You could also choose to bribe the driver instead for 100 coins)
+*''"You can't leave me here, I'll get killed!"''
+
+Once he has agreed to help you, search the cart and choose the option to get on it.
+
+Head back to [[Irena]], and she'll reward you for all your hard work.
+
+'''Congratulations, quest complete!'''
+{{Clear}}
+
+==Rewards==
+{{Quest rewards
+|name = The Tourist Trap
+|image = [[File:The Tourist Trap reward scroll.png|centre]]
+|qp = 2
+|rewards = 
+*4,650 [[Experience]] in your choice of two skills (you may pick same skill twice): {{SCP|Agility}} [[Agility]], {{SCP|Fletching}} [[Fletching]], {{SCP|Smithing}} [[Smithing]], or {{SCP|Thieving}} [[Thieving]].
+*The ability to smith [[dart tip]]s.
+*The [[wrought iron key]] - allows access to a special door inside the [[Desert Mining Camp]], which has several higher tier ores inside, including [[mithril ore]] and [[adamantite ore]].
+*Full [[slave robes]]
+*6 [[bronze dart]]s
+*The ability to hire [[Ex-Captain Siad]] as a [[crewmate]] with {{SCP|Sailing|50|link=yes}}.
+}}
+
+==Required for completing==
+Completion of The Tourist Trap is required for the following:
+*[[Desert Treasure I]]
+
+==Transcript==
+{{Hastranscript|quest}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 30 April 2015
+|update = Mutagens, Mo & Much More
+|change = Fixed a typo in some Tourist Trap dialogue.
+}}
+{{Subject changes footer}}
+
+{{The Tourist Trap}}
+{{DEFAULTSORT|Tourist Trap, The}}

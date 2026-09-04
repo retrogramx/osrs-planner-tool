@@ -8,7 +8,7 @@ build/
 .DS_Store
 # Raw wiki/API fetches — large intermediates, re-fetchable from each dataset's _provenance.source_urls.
 # Ignore the raw DATA, but KEEP the extraction/builder scripts that live alongside it (reproducibility).
-data/raw/**
+# TRAVEL: data/raw/**
 !data/raw/**/
 !data/raw/**/*.py
 # Drop-rate brick: the dropsline raw cache IS committed provenance (drop_rates.json

@@ -1,0 +1,101 @@
+{{Iron Guide Links}}
+{{Cleanup}}
+
+Training [[Mining]] on an ironman is not very different from training it [[Pay-to-play Mining training|normally]]. In addition to the normal training methods, players will need to mine [[volcanic ash]] for making [[ultracompost]] and [[gem rocks]] for making [[expeditious bracelet]]s at some point.
+
+Pickaxes up to [[Rune pickaxe|rune]] can be bought from [[Nurmof's Pickaxe Shop]]. A [[dragon pickaxe]] can only be obtained as a rare drop from [[Artio]], [[Chaos Elemental]], [[Callisto]], [[Calvar'ion]], [[Kalphite Queen]], [[Spindel]], [[Venenatis]] and [[Vet'ion]], or as a very rare drop from [[King Black Dragon]]. A [[broken dragon pickaxe]] is a 1% chance to drop from an [[Ore pack (Volcanic Mine)|ore pack]] bought from [[Petrified Pete's Ore Shop]] at the [[Volcanic Mine]] for 4000 points. It must be repaired by taking it to [[Nurmof]] in the [[Dwarven Mine]] for a fee of {{NoCoins|2,500,000}} coins.
+
+==Early training: Quests==
+{{Main|Quest experience rewards#Mining}}
+
+Early levels can be skipped by completing a few quests. Notably, [[Plague City]] has no requirements and grants enough experience for level 15. Completing the following will reach level 37.
+
+{| class="wikitable sortable lighttable"
+|+
+!Quest
+!Experience reward
+!Mining requirement
+!Other requirements
+!Enemy to defeat
+|-
+|[[The Forsaken Tower]]
+| 500
+| -
+|
+|None
+|-
+|[[Doric's Quest]]
+|1,300
+| {{SCP|Mining|15}}
+| -
+|None
+|-
+|[[Plague City]]
+| 2,425
+| -
+| -
+|None
+|-
+|[[The Giant Dwarf]]
+|2,500
+| -
+|{{SCP|Thieving|14}}, {{SCP|Crafting|12}}, {{SCP|Firemaking|16}}, {{SCP|Magic|33}} 
+|None 
+|-
+|[[Another Slice of H.A.M.]]
+|3,000 
+| -
+|{{SCP|Combat|15}}{{SCP|Prayer|25}}
+| Multiple low level NPCs
+|-
+|[[The Lost Tribe]]
+|3,000
+|{{SCP|Mining|17}}
+|{{SCP|Agility|13}}, {{SCP|Thieving|13}}, completion of [[Goblin Diplomacy]] and [[Rune Mysteries]]
+|None
+|-
+|[[The Dig Site]] 
+| 15,300
+| -
+| {{SCP|Agility|10}}, {{SCP|Herblore|10}}, {{SCP|Thieving|25}}
+|None
+|}
+
+==Fastest experience==
+===Levels 15–45: Iron ore===
+Mining [[iron rocks]] north-east of [[East Ardougne]], at the [[Legends' Guild mine]], a player can use the fairy rings to teleport to the Chasm of Fire in Great Kourend ('''D-J-R''') for quick banking. Afterward, they can teleport back to the Legends' Guild mine ('''B-L-R''') and continue mining until granite becomes available. Players having trouble with [[tick manipulation]] can continue to mine iron in Ardougne or the [[Mining Guild]] which becomes available at Level 60. 
+
+Alternatively, the [[iron rocks]] at the mine south-west of [[Port Piscarilius]] offer similar rates, albeit lacking a triangle-arrangement of rocks. If [[The Forsaken Tower]] is not completed, players should bring coins to pay the 20 coin fee to bank in [[Lovakengj]] via the [[Lovakengj Minecart Network]] before again taking the cart back. This method may be of particular use for players with low combat level (no bears), players with a low Agility stat/no Graceful, or players who have not yet finished the Easy tier of the Ardougne diary. 
+
+===Levels 45–99: 3-tick mining granite ===
+[[Tick_manipulation#3-tick_Mining|3-tick mining]] [[granite rocks]] is the fastest mining experience in the game. It might be easier to start at a higher Mining level, as it's harder to learn at the lower levels. While tick manipulating granite is a very hard method, it's well worth learning. 
+
+== Other methods==
+
+===Levels 61–99: Iron ore===
+With a [[dragon pickaxe]], you can earn over 82,000 Mining experience per hour in the Mining Guild by mining iron, since you can react to the rock occasionally depleting in just 2 ticks, making it a decent alternative to granite. Mining [[Iron rocks|iron ore]] in the [[Mining Guild]] is also an effective way of earning the [[expert mining gloves]].
+
+===Levels 35–99: Sandstone===
+Players can get a lot of Mining experience from mining [[sandstone]], which can be exchanged for [[Bucket of sand|buckets of sand]] for Crafting training.
+
+=== Levels 41–99: Calcified rocks ===
+Players that have access to the city of [[Cam Torum]] can mine [[calcified rocks]] for a low-effort training method that contributes to [[Prayer]] training rather than [[Smithing]] and [[Crafting]]. Calcified rocks yield [[blessed bone shards]], which are used to train Prayer by sacrificing them in the [[libation bowl]] at [[the Teomat]].
+
+===Levels 55–99: Motherlode Mine===
+{{Main|Motherlode Mine}}
+The Motherlode Mine becomes available at level 30, and is moderately efficient at level 55. Players may wish to spend some time here to earn [[golden nugget]]s to exchange for the [[prospector kit]], [[coal bag]] and [[gem bag]].
+
+Ore veins are mined for pay-dirt, which is then washed to obtain a mixed variety of [[coal]], [[Golden nugget|golden nuggets]] and ore available to the player at their current Mining level.  This can be a good source of [[coal]], [[gold ore]] and [[mithril ore]] for Ironmen to use at the [[Blast Furnace]].
+
+===Levels 85–99: Volcanic Mine===
+{{Main|Volcanic Mine}}
+At level 85, the Volcanic Mine becomes viable. It's advisable to obtain the [[prospector kit]] beforehand.
+
+=== Levels 10–99: Shooting Stars ===
+{{Main|Shooting Stars}}
+Shooting Stars are an extremely low intensity mining alternative, albeit with somewhat reduced experience rates compared to most other methods. They can be found periodically in various locations across Gielinor, with each server having different locations, timings and tiers. 
+
+Instead of ores, shooting stars provide [[stardust]] which can be traded at [[Dusuri's Star Shop]] for a few different useful rewards. Notably for ironmen are the [[celestial ring]] (2000 stardust), which gives the player a hidden +4 mining boost (even when uncharged), and the [[bag full of gems]] (300 stardust) which rewards the player with 40 uncut gems of varying types. These gems provide a source of passive crafting experience and jewellery resources, including a great low risk way to obtain [[Dragonstone|dragonstones]], even from a low level. It's recommended to obtain the celestial ring first for the additional mining boost before beginning to collect gem bags for crafting.
+
+Shooting stars, like normal ore veins, also offer gems (at an increased rate with a charged [[amulet of glory]]), as well as [[Scroll box|scroll boxes]].{{Training guides}}
+[[Category:Ironman Mode]]

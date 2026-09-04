@@ -1,0 +1,170 @@
+{{Iron Guide Links}}
+
+[[File:Herblore.png|left]]
+[[Herblore]] is arguably the hardest skill to train on an ironman since collecting the [[herbs]] and most of the secondary ingredients can be slow and time-consuming. Therefore, it is advised to put the rewards of every [[experience lamp]] and [[book of knowledge]] into Herblore if possible. By the time all hard [[Achievement diary|diaries]] are completed, if making all potions obtained along the way, the player should have around level 67–69 Herblore, just enough to start boosting to make ranging potions.
+
+==Early training: Quests==
+{{Main|Quest experience rewards#Herblore}}
+
+[[Druidic Ritual]] is required for unlocking Herblore. Afterwards, some early levels can be skipped by completing quests that reward Herblore experience. Completing Druidic Ritual, [[Jungle Potion]], and [[Recruitment Drive]] rewards in total 2,025 Herblore experience, enough to get level 13. Questing alone will grant a total of 9,350 Herblore experience, elevating a level 1 Herblore to 26, granting the ability to make [[energy potion]]s without having made a single potion before.
+
+* [[Druidic Ritual]] rewards 250 Herblore experience.
+* [[Jungle Potion]] requires {{SCP|Herblore|3}}, and rewards 775 Herblore experience.
+** For lower levels, infinite [[Volencia moss]] can be obtained from the rocks in this quest, and cleaned for roughly 1600 xp/hr, hopping worlds every 3 herbs. This might be of particular use to Ultimate ironmen.
+* [[Recruitment Drive]] requires [[Black Knights' Fortress]], [[Druidic Ritual]], rewards 1,000.5 Herblore experience.
+* [[Zogre Flesh Eaters]] requires [[Big Chompy Bird Hunting]], [[Jungle Potion]], {{SCP|Herblore|8}}, {{SCP|Smithing|4}}, {{SCP|Ranged|30}}, rewards 2,000 Herblore experience.
+* [[The Dig Site]] requires {{SCP|Herblore|10}}, {{SCP|Agility|10}}, {{SCP|Thieving|25}}, rewards 2,000 Herblore experience.
+* [[Shades of Mort'ton]] requires [[Priest in Peril]], {{SCP|Herblore|15}}, {{SCP|Crafting|20}}, {{SCP|Firemaking|5}}, rewards 2,000 Herblore experience, plus an additional 335 Herblore experience for giving the [[Diary (Shades of Mort'ton)|Diary of Herbi Flax]] to the [[Apothecary]] in [[Varrock]].
+* [[Heroes' Quest]] requires {{SCP|Herblore|25}}, {{SCP|Quest|55}}, {{SCP|Cooking|53}}, {{SCP|Fishing|53}}, {{SCP|Mining|50}}, and many quests, rewards 1,325 Herblore experience.
+
+==General information and tips==
+Mid-level players may wish to kill [[Spitting Wyvern|spitting wyvern]]s for their high drop rate of 4-dose [[Prayer potion]]s. This method obtains [[ranarr seed]]s, [[ranarr weed]]s, and prayer potions at a fairly quick rate.
+
+A long-term method of achieving [[stamina potion]]s for the [[player-owned house]] [[revitalisation pool]] is to always carry a clean [[torstol]] for the chance of a [[Jekyll and Hyde]] random event. Doing this significantly decreases the time required for higher tier [[Pool space|player-owned house pools]], but does reduce the number of inventory slots available. As such, it is best to do when doing activities that do not benefit from having a full inventory. As the torstol will need to '''cleaned''' before obtaining the stamina potion from the event, players will need to visit [[Zahur]] to have her clean the herbs for you.
+
+==Level 3+: Cleaning herbs, making potions/tars==
+It is advisable to work towards having access to [[Managing Miscellania]] as early as possible, since it is one of the best ways to get herbs passively over time. Training [[Ironman Guide/Thieving|Thieving]] to high levels is a quick way to get coins for funding the Kingdom; in addition to this, with high Thieving players are able to effectively pickpocket [[Master Farmer]]s for early herb seeds. When the kingdom is obtained, have 10 workers on herb farming at all times for the most effective yield.
+
+After completing hard tasks of the [[Desert Diary]], [[Zahur]] in [[Nardah]] will make unfinished potions for 200 coins per potion (works with noted herbs and vials of water). [[Wesley]] will crush items that require the use of a [[pestle and mortar]] for 50 coins per item (also works with banknotes but does not require the diary completion).
+
+{|class="wikitable align-center-1 align-center-2 align-center-4 align-center-6 sticky-table"
+!{{SCP|Herblore}} Level
+! colspan="2"|Primary ingredient
+! colspan="2"|Secondary ingredient
+! colspan="2"|Used for
+!Method of obtaining secondary
+|-
+|3
+|{{plinkt|Guam leaf}}
+|{{plinkt|Eye of newt}}
+|{{plinkt|Attack potion}}
+|Eye of newt packs can be bought from [[Betty]] in [[Port Sarim]].
+|-
+|15
+|{{plinkt|Tarromin}}
+|{{plinkt|Ashes}}
+|{{plinkt|Serum 207}}
+|Can be collected after logs have burnt out, this also works for fires which have been made by other players. The fastest method is to go to the Nightmare Zone and choose Practice mode with Fareed as a quest boss. Attack him with darts with ice gloves equipped and pick up the ashes he drops. Also dropped by [[Cerberus]].
+|-
+|26
+|{{plinkt|Harralander}}
+|{{plinkt|Chocolate dust}}
+|{{plinkt|Energy potion}}
+|Chocolate bars can be bought from the [[Culinaromancer's Chest]] after completing subquests of [[Recipe for Disaster]], from [[Rok's Chocs Box.|Rok's Chocs Box]] in Nardah (25 in stock), or from [[Hudo]] at the [[Grand Tree Groceries]] (20 in stock). Hudo also sells chocolate dust (10 in stock). Chocolate bars also spawn at the Cooks' guild and at Zanaris.
+|-
+|38
+|{{plinkt|Ranarr weed}}
+|{{plinkt|Snape grass}}
+|{{plinkt|Prayer potion}}
+|Can be grown in [[allotment patch]]es at 61 farming. Many spawn on the hobgoblin peninsula east of Hosidius. Spawns on [[Waterbirth Island]]. Teleport to Waterbirth Island (requires 72 Magic), collect a full inventory of snape grass and bank at Castle Wars via a ring of dueling. Alternatively, if the easy Fremennik Diary is completed, one can deposit the snape grass at [[Peer the Seer]]. Also spawns on the peninsula behind the crafting guild.
+|-
+|39
+|{{plinkt|Tarromin}}
+|{{plinkt|Swamp tar}}
+|{{plinkt|Tarromin tar}}
+|Swamp tar can be found in [[Lumbridge Swamp]] and [[Mort Myre Swamp]]. For higher levels, large amounts of Swamp tar can be obtained from [[Zulrah]]. Swamp tar can also be obtained from the [[Lunar Chest]].
+|-
+|45
+|{{plinkt|Irit leaf}}
+|{{plinkt|Eye of newt}}
+|{{plinkt|Super attack}}
+|Eye of newt packs can be bought from [[Betty]] in [[Port Sarim]].
+|-
+|52
+|{{plinkt|Avantoe}}
+|{{plinkt|Mort myre fungus}}
+|{{plinkt|Super energy}}
+|Can be obtained by cutting [[Sulliuscep|sulliuscep mushrooms]], or in Mort Myre Swamp by casting [[Bloom]] with a blessed silver sickle near some dead logs. The fastest method to passively gather is by cutting Sulliuscep mushrooms. The fastest method to actively gather requires having a fairy ring and rejuvenation pool in the POH. Use fairy ring {{Fairycode|bkr}}, ([[Salve Graveyard Teleport]] from the [[Arceuus spellbook]]) run a little bit south where there are 3 logs close to each other, collect a full inventory of fungi, Teleport to House and use a demon butler to bank the fungi. Use the pool to restore Prayer points when needed. Having completed the hard [[Morytania Diary]] doubles the amount of fungi collected when casting bloom. Alternatively, if one has access to [[Drakan's medallion]] and wishes to save on teleportation runes, the [[Ver Sinhaza]] teleport option provides quick access to four logs to the north ([[Ardougne cloak]] provides a quick method to restore prayer points)
+|-
+|55
+|{{plinkt|Kwuarm}}
+|{{plinkt|Limpwurt root}}
+|{{plinkt|Super strength}}
+|Can be grown in [[flower patch]]es at level 26 Farming. [[Limpwurt seed]]s are commonly dropped by [[Kurask]]s, [[Nechryaels]], and [[Deviant spectre]]s. Alternatively, they can be obtained by pickpocketing master farmers, exchanging mole parts to Wyson the gardener and opening the seed nests, or completing farming contracts and opening the seed packs.
+|-
+|63
+|{{plinkt|Snapdragon}}
+|{{plinkt|Red spiders' eggs}}
+|{{plinkt|Super restore}}
+|Spawns in various places (such as [[Edgeville Dungeon]]). Can be obtained in larger amounts by killing [[spidine]]s in the [[Tower of Life (building)|Tower of Life]] or by killing [[temple spider]]s in the [[Forthos Dungeon]]. [[Venenatis]] also uncommonly drops 500 noted eggs.  Also [[Sarachnis]] has a tertiary drop of 100 [[Red spiders' eggs|red spider's eggs]] in the form of a [[Giant egg sac|giant egg sac.]]
+|-
+|66
+|{{plinkt|Cadantine}}
+|{{plinkt|White berries}}
+|{{plinkt|Super defence}}
+|Can be grown in [[bush patch]]es at level 59 Farming. Also uncommonly dropped by [[Kurask]]s. A more risky method involves collecting them from [[Lava Dragon Isle]] where they spawn very quickly. Just make sure to bring a [[looting bag]] and an [[anti-dragon shield]].
+|-
+|69
+|{{plinkt|Lantadyme}}
+|{{plinkt|Dragon scale dust}}
+|{{plinkt|Antifire potion}}
+|[[Blue dragon scale]]s spawn in [[Taverley Dungeon]] near the blue dragons. After completion of [[Dragon Slayer II]], collecting these in the [[Myths' Guild#Basement|Myths' Guild basement]] becomes a better option.
+|-
+|72
+|{{plinkt|Dwarf weed}}
+|{{plinkt|Wine of zamorak}}
+|{{plinkt|Ranging potion}}
+|Can be telegrabbed in the [[Asgarnia Chaos Temple|Asgarnia's Chaos Temple]] or the [[Chaos Temple (Wilderness)|Chaos Temple]] south-west of Chaos Fanatic where it spawns every 28 seconds. A more risky choice is the [[Deep Wilderness Dungeon]] where it respawns every three seconds. A riskless alternative is gathering [[Zamorak's grapes]] through the [[Tithe Farm|Tithe Farm minigame]], and making the wines yourself. Also dropped by the [[Kalphite Queen]].
+|-
+|76
+|{{plinkt|Lantadyme}}
+|{{plinkt|Potato cactus}}
+|{{plinkt|Magic potion}}
+|Can be grown in [[cactus patch]]es after 64 farming. Dropped by the [[Kalphite Queen]] and completing the [[Tombs of Amascut]].
+|-
+|77
+|{{plinkt|Super energy}}
+|{{plinkt|Amylase crystal}}
+|{{plinkt|Stamina potion}}
+|10 {{plink|Mark of grace|txt=Marks of grace}} obtained from [[Rooftop Agility Courses]] or 100 {{plink|Termites}} obtained from [[Colossal Wyrm Agility Course]] can be exchanged for a {{plink|Amylase pack}}, containing 100 {{plink|Amylase crystal}}s.
+|-
+|81
+|{{plinkt|Toadflax}}
+|{{plinkt|Crushed nest}}
+|{{plinkt|Saradomin brew}}
+|[[Bird nest]]s can be obtained from random drops while Woodcutting, [[bird house trapping]] on Fossil Island, [[Managing Miscellania]] and exchanging mole parts to [[Wyson the Gardener]].
+|}
+
+==Other methods==
+
+===Level 60+/81+: Mastering Mixology===
+{{Main|Mastering Mixology}}
+At level 60 and with completion of [[Children of the Sun]], players can go to [[Aldarin]] and take part in the [[Mastering Mixology]] minigame, however it will become more efficient at higher levels, with the last unlock at level 81 Herblore. Mastering Mixology does not require specific herbs or any secondaries, and grants much more experience per herb, making it a very useful option for when gathering large amounts of high-tier herbs and secondaries for traditional Herblore training might not be easily possible. It is also the only source of some powerful utility items and features, such as the [[Prescription goggles]], [[Alchemist's amulet]], [[Chugging barrel]], and [[Potion storage]], so it can be advisable to do even if Herblore experience is not needed.
+
+===Level 80+ Hunter: Herbiboar===
+{{Main|Herbiboar}}
+
+At level {{SCP|Hunter|80|link=yes}} (and 31 Herblore), players can track [[herbiboar]]s on [[Fossil Island]], which yields herbs and a small amount of Herblore experience upon harvest.
+
+===Bossing and Raids===
+High-level players will get a notable amount of herbs and Herblore experience (from [[dark relic]]s and making potions inside the raid) from the [[Chambers of Xeric]]. Those with [[Craw's bow]] and/or [[Viggora's chainmace]] can focus on killing the [[Wilderness]] bosses [[Venenatis]], [[Vet'ion]] and [[Callisto]] as they rarely drop 100 noted herbs ([[snapdragon]], [[ranarr weed]] and [[toadflax]], respectively) as well as a generous amount of [[ranarr seed|ranarr]] and [[snapdragon seed]]s. Notably, [[Venenatis]] also occasionally drops 500 noted [[red spiders' eggs]].
+
+==Sourcing ingredients==
+Herblore ingredients come from three primary sources: farming, monster drops, and minigames (notably [[Managing Miscellania]]).
+
+Seeds can be obtained through [[farming contract]]s (45 [[Farming]]) and pickpocketing [[Master Farmer]]s (38 [[Thieving]]). You should be doing as many farming contracts per day as possible, as they provide a lot of Herblore and Farming experience and will be your main source of herb/tree seeds.
+
+While training [[Ironman Guide/Slayer|Slayer]], you will also obtain many grimy herbs and secondary ingredients.
+
+===Herbs and herb seeds===
+Low-level ironmen can get their starting Herblore supplies from [[Wintertodt]]. Alternatively, kill [[chaos druid]]s or [[flesh crawler]]s for their common low-level herb drops to train the first levels.
+
+Pickpocketing [[Master Farmer]]s is the fastest method of obtaining [[ranarr seed]]s for [[prayer potion]]s, and it also yields various other seeds for Herblore experience. Players will need to have a very high [[Thieving]] level in order to do this effectively. Players stop failing to pickpocket Master Farmers at level 94 with the [[hard Ardougne Diary]] perk, or at level 99 when wearing the [[Thieving cape]]. It is recommended for players to have at least 85 [[Farming]] due to an {{UD|Fishing Skill Boss and Easter Event|update}} on the Master Farmer's herb seed loot table.
+
+Doing [[farming contracts]] in the [[Farming Guild]] is currently the best method to obtain herb seeds at any levels. For more information, see the [[Ironman Guide/Farming|Farming]] section.
+
+In addition to farming contracts, training Slayer is one of the primary methods of obtaining herbs and herb seeds, as many slayer monsters (most notably [[Nechryael]], [[Aberrant spectre]]s and [[Dagannoth]]s) frequently drop assorted types of them. Should one need herb seeds, complete Nechryael tasks in the [[Slayer Tower]] with melee instead of burst/barrage spells in the [[Catacombs of Kourend]] as [[Greater nechryael]] do not drop as many herb seeds in comparison.
+
+===Farming herbs===
+{{Main|Ironman Guide/Farming}}
+
+Players will need to do herb runs frequently and consistently. Clean the herbs whilst running to the next patch to save time.
+
+Always use [[ultracompost]] on herb patches to minimise the chance of disease, and to ensure the minimum amount of 6 herbs per seed when used along with [[magic secateurs]]. Herb patches cannot be protected by NPC gardeners, and seeds will typically be in short supply, so use the best compost possible.
+
+The [[Fertile Soil]] spell, requiring 83 Magic, on the [[Lunar spellbook]] is particularly convenient for herb runs since it negates the need to spend time making ultracompost. However, getting an [[ash covered tome]] for unlocking the ultracompost version of the spell can take a while due to the [[Volcanic Mine]]. When access to Fertile Soil is obtained, do herb runs whilst on the Lunar spellbook and use teleport tablets or [[Spellbook Swap]] for patches which aren't easily accessible without the use of the standard spellbook. Having a lunar or occult altar in a POH is recommended for switching spellbooks quickly, however the use of [[Moonclan Teleport]] or [[Teleport to House]] is also viable to teleport to [[Lunar Isle]].
+
+{{Training guides}}
+[[Category:Ironman Mode]]
+[[Category:Herblore]]
+[[Category:Members]]

@@ -1,0 +1,919 @@
+{{External|rs|rsc}}
+This article gives tips about training the [[Fletching]] skill.
+
+==Starting off==
+Early levels can be skipped by completing [[Quest experience rewards#Fletching|quests that give Fletching experience]]. Completing [[Animal Magnetism]], [[Big Chompy Bird Hunting]] and [[Zogre Flesh Eaters]] will grant a total of 3,262 Fletching experience, which will get the player up to level 18. These quests have few requirements and can be done at a low level. Completing [[Temple of Ikov]] and [[The Fremennik Trials]] will grant an additional 10,812 Fletching experience, which will get the player up to level 30.
+
+{| class="wikitable sortable lighttable qc-active" style="text-align:center;"
+!Quest
+!Experience<br/>reward
+!data-sort-type="number"|Fletching<br/>requirement
+!Other requirements
+|-
+|[[Big Chompy Bird Hunting]]||262||{{SCP|Fletching|5}}||{{SCP|Ranged|30}}, {{SCP|Cooking|30}}
+|-
+|[[Animal Magnetism]]||1,000|| -||{{SCP|Slayer|18}}, {{SCP|Crafting|19}}, {{SCP|Ranged|30}}, {{SCP|Woodcutting|35}}
+|-
+|[[Zogre Flesh Eaters]]||2,000|| {{SCP|Fletching|30}}<br/>(if fletching your own [[comp ogre bow]])||{{SCP|Smithing|4}}, {{SCP|Herblore|8}}, {{SCP|Ranged|30}}
+|-
+|[[The Fremennik Trials]]||2,812||{{SCP|Fletching|25}}<br/>(if crafting your own lyre)
+|{{SCP|Woodcutting|40}}, {{SCP|Crafting|40}}<br/>(if crafting your own lyre)
+|-
+|[[Temple of Ikov]]||8,000|| -||{{SCP|Thieving|42}}, {{SCP|Ranged|40}}
+|-
+!Total
+!14,074
+!colspan="2"|
+|}
+
+==Zero time methods==
+Fletching can be trained entirely while doing other activities, meaning that the skill may be trained passively in "zero time". Activities which involve a lot of running or have downtime, and do not require full inventory space are well-suited for Fletching training, such as questing, training [[Agility]], training [[Hunter]] (excluding black salamanders and [[Black chinchompa|black chinchompas]]), farm runs, training [[Slayer]], subduing [[Wintertodt/Strategies|Wintertodt]] etc.
+
+===Darts===
+Fletching darts is arguably the most feasible option for zero-time training. Fletching them only requires two clicks per a set of darts, offers high experience per action, and does not interrupt movement. Dart tips also have a steady supply on the [[Grand Exchange]]. However, this method can be expensive and may require a large amount of capital to buy all the dart tips and feathers needed. Most common and usually the cheapest options are [[Amethyst dart|amethyst]], [[Mithril dart|mithril]], or [[Adamant dart|adamant]].
+
+Some methods for Fletching darts include:
+*Simply clicking very quickly between the stack of darts and feathers.
+*Click on the darts or feathers to '''Use''' them, then double-click the other item on all subsequent clicks. This will complete the first '''Use''' action and immediately highlight the next item to '''Use''' again.
+*Playing on the mobile version, using two fingers to quickly tap feathers and dart tips one after another. It is possible to fletch 2–4 sets of darts per [[tick]] or more this way. This method is also easier for zero-time as the user's offhand can be used for clicks elsewhere for movement and other actions, whereas a mouse would need to move between the inventory and the rest of the screen.
+*While not useful for zero-time, darts can have a '''Make-X''' menu enabled with the in-game settings menu, which allows them to automatically make up to 10 sets of darts per action, for a less click-intensive method.
+
+[[The Tourist Trap]] quest is '''not''' required to fletch darts, only for smithing [[Dart tip|dart tips]].
+
+Note that some players may have to change an account setting to allow two-click dart fletching, as the default setting is to use the crafting menu since the [[Easter 2023|Easter 2023 update]].
+{{Table/Fletching/Darts}}
+
+===Bolts===
+Fletching bolts (attaching feathers to [[unfinished bolts]]) works similarly to darts, but it offers less experience per action compared to darts, and some options aren't viable due to low supply or low buy limits.
+{{Table/Fletching/Bolts}}
+
+==Semi-zero time methods==
+Some methods of Fletching training can be done running or in between other activities but create products at a constant rate, rather than darts or bolts which give experience every two clicks and can be made quickly. The actions are done every two [[game tick]]s (1.2 seconds) and in sets of 10 or 15, requiring periodic requeueing to make another set. These methods open a dialogue window upon creation which can delay the actions, making them less feasible for actions like [[Agility]] where there is constant interruption, but are still useful.
+
+===Cutting gems into bolt tips===
+Cutting gems into bolt tips can be done during downtime before attaching them to bolts. This is usually less practical than buying finished bolt tips directly, but it can still be worthwhile when the gem-to-tip margin is favourable. The table below is shown on a per-tip basis to match the tipped-bolts table.
+{{Var|perHourBoltTipCuts|1400}}
+{| class="wikitable sortable align-center-1 align-center-2 align-center-3 align-left-4" style="text-align:right;"
+! {{SCP|Fletching}} Level
+! Bolt tips
+! Materials
+! Tips/gem
+! XP/tip
+! XP/h<ref group="n">Assumes {{#var:perHourBoltTipCuts}} gems cut per hour.</ref>
+! Cost/tip
+! GE price
+! Profit/tip
+! GP/XP
+|-
+|48
+|{{plinkp|Topaz bolt tips}}
+|{{plinkp|Red topaz}}
+|12
+|{{#expr:4/12 round 3}}
+|{{formatnum:{{#expr:4*{{#var:perHourBoltTipCuts}} round 0}}}}
+|{{Coins|{{GEP|Red topaz}}/12}}
+|{{Coins|{{GEP|Topaz bolt tips}}}}
+|{{Coins|{{GEP|Topaz bolt tips}}-({{GEP|Red topaz}}/12)}}
+|{{Coins|({{GEP|Topaz bolt tips|12}}-{{GEP|Red topaz}})/4}}
+|-
+|56
+|{{plinkp|Sapphire bolt tips}}
+|{{plinkp|Sapphire}}
+|12
+|{{#expr:4/12 round 3}}
+|{{formatnum:{{#expr:4*{{#var:perHourBoltTipCuts}} round 0}}}}
+|{{Coins|{{GEP|Sapphire}}/12}}
+|{{Coins|{{GEP|Sapphire bolt tips}}}}
+|{{Coins|{{GEP|Sapphire bolt tips}}-({{GEP|Sapphire}}/12)}}
+|{{Coins|({{GEP|Sapphire bolt tips|12}}-{{GEP|Sapphire}})/4}}
+|-
+|58
+|{{plinkp|Emerald bolt tips}}
+|{{plinkp|Emerald}}
+|12
+|{{#expr:5.5/12 round 3}}
+|{{formatnum:{{#expr:5.5*{{#var:perHourBoltTipCuts}} round 0}}}}
+|{{Coins|{{GEP|Emerald}}/12}}
+|{{Coins|{{GEP|Emerald bolt tips}}}}
+|{{Coins|{{GEP|Emerald bolt tips}}-({{GEP|Emerald}}/12)}}
+|{{Coins|({{GEP|Emerald bolt tips|12}}-{{GEP|Emerald}})/5.5}}
+|-
+|63
+|{{plinkp|Ruby bolt tips}}
+|{{plinkp|Ruby}}
+|12
+|{{#expr:6/12 round 3}}
+|{{formatnum:{{#expr:6*{{#var:perHourBoltTipCuts}} round 0}}}}
+|{{Coins|{{GEP|Ruby}}/12}}
+|{{Coins|{{GEP|Ruby bolt tips}}}}
+|{{Coins|{{GEP|Ruby bolt tips}}-({{GEP|Ruby}}/12)}}
+|{{Coins|({{GEP|Ruby bolt tips|12}}-{{GEP|Ruby}})/6}}
+|-
+|65
+|{{plinkp|Diamond bolt tips}}
+|{{plinkp|Diamond}}
+|12
+|{{#expr:7/12 round 3}}
+|{{formatnum:{{#expr:7*{{#var:perHourBoltTipCuts}} round 0}}}}
+|{{Coins|{{GEP|Diamond}}/12}}
+|{{Coins|{{GEP|Diamond bolt tips}}}}
+|{{Coins|{{GEP|Diamond bolt tips}}-({{GEP|Diamond}}/12)}}
+|{{Coins|({{GEP|Diamond bolt tips|12}}-{{GEP|Diamond}})/7}}
+|-
+|71
+|{{plinkp|Dragonstone bolt tips}}
+|{{plinkp|Dragonstone}}
+|12
+|{{#expr:8.2/12 round 3}}
+|{{formatnum:{{#expr:8.2*{{#var:perHourBoltTipCuts}} round 0}}}}
+|{{Coins|{{GEP|Dragonstone}}/12}}
+|{{Coins|{{GEP|Dragonstone bolt tips}}}}
+|{{Coins|{{GEP|Dragonstone bolt tips}}-({{GEP|Dragonstone}}/12)}}
+|{{Coins|({{GEP|Dragonstone bolt tips|12}}-{{GEP|Dragonstone}})/8.2}}
+|-
+|73
+|{{plinkp|Onyx bolt tips}}
+|{{plinkp|Onyx}}
+|24
+|{{#expr:9.4/24 round 3}}
+|{{formatnum:{{#expr:9.4*{{#var:perHourBoltTipCuts}} round 0}}}}
+|{{Coins|{{GEP|Onyx}}/24}}
+|{{Coins|{{GEP|Onyx bolt tips}}}}
+|{{Coins|{{GEP|Onyx bolt tips}}-({{GEP|Onyx}}/24)}}
+|{{Coins|({{GEP|Onyx bolt tips|24}}-{{GEP|Onyx}})/9.4}}
+|}
+<references group="n" />
+
+===Tipping bolts===
+Some options are not viable due to low supply, low trade volume of material or product, or low buy limits, and often require a large amount of capital.
+{{Table/Fletching/Tipped bolts}}
+
+Adding tips to [[Dragon bolts (unf)|dragon bolts]] can be more profitable, but requires a large amount of capital, and some options are not viable due to low supply, low trade volume of material or product, or low buy limits.
+{{Table/Fletching/Tipped dragon bolts}}
+
+===Arrows===
+{{Table/Fletching/Arrows}}
+
+===Javelins===
+{{Table/Fletching/Javelins}}
+
+==Vale Totems==
+[[Vale Totems]] is a Fletching minigame that offers significantly more experience per log than fletching alone. Participating requires completion of the [[Vale Totems (miniquest)|Vale Totems miniquest]].
+
+Eight [[totem site]]s can be found scattered around [[Auburn Valley]]. Each totem must be carved using a log and [[knife]], then decorated with 4 fletching products of the same type of wood. [[Oak logs|Oak]], [[Willow logs|willow]], [[Maple logs|maple]], [[Yew logs|yew]], [[Magic logs|magic]], and [[Redwood logs|redwood]] logs can be used, and the supported decorations are [[Shortbow_(weapon)|shortbows]], [[Longbow (weapon)|longbows]], their [[Unstrung bow|unstrung variants]], [[crossbow stock]]s, [[Wooden shields|shields]], and (in the case of redwood) [[Redwood hiking staff|hiking staves]].
+
+The numbers below assume that a player is starting only with logs on each loop, and fletching/stringing during the run to the first totem. A [[fletching knife]] reduces the time it takes to fletch a bow from 3 ticks to 2. A [[bow string spool]] allows for [[stringing bows]] with the use of only one additional inventory space, though the extra time required for stringing reduces overall XP/hr. 
+
+===Partial loop===
+Players who haven't yet acquired a [[log basket]] only have enough inventory space to build 5 totems per loop. 25 logs are required per loop. 
+
+Note that with [[yew logs]] and above, partial loops will be constrained by the time it takes totems to degrade.
+
+{| class="wikitable sortable align-center-1 align-center-2 align-left-3" style="text-align:right;"
+! rowspan="2" |{{SCP|Fletching}} Level
+! rowspan="2" colspan="2" |Bow
+! rowspan="2" |XP/Loop
+! rowspan="2" |GP/Loop
+! rowspan="2" |GP/XP
+! colspan="2" |Time/Loop
+! colspan="2" |XP/h
+! colspan="2" |GP/h
+|-
+![[File:Knife.png|link=Knife]]
+![[File:Fletching_knife.png|link=Fletching knife]]
+![[File:Knife.png|link=Knife]]
+![[File:Fletching_knife.png|link=Fletching knife]]
+![[File:Knife.png|link=Knife]]
+![[File:Fletching_knife.png|link=Fletching knife]]
+|-
+|20
+|{{plinkt|Oak shortbow (u)}}
+|{{formatnum:{{#expr:(16.5+255)*5 round 0}}}}
+|{{Coins|-({{GEP|Oak logs}} * 25)}}
+|{{Coins|-({{GEP|Oak logs}} * 25) / ((16.5+255)*5)}}
+|03:00
+|02:40
+|{{formatnum:{{#expr:(16.5+255)*5*(3600/180) round 0}}}}
+|{{formatnum:{{#expr:(16.5+255)*5*(3600/160) round 0}}}}
+|{{Coins|-({{GEP|Oak logs}} * 25) * (3600 / 180)}}
+|{{Coins|-({{GEP|Oak logs}} * 25) * (3600 / 160)}}
+|-
+|20
+|{{plinkt|Oak shortbow}}
+|{{formatnum:{{#expr:(16.5+16.5+255)*5 round 0}}}}
+|{{Coins|-(({{GEP|Oak logs}} * 25) + ({{GEP|Bow string}} * 20))}}
+|{{Coins|-(({{GEP|Oak logs}} * 25) + ({{GEP|Bow string}} * 20)) / ((16.5+16.5+255)*5)}}
+|03:20
+|03:00
+|{{formatnum:{{#expr:(16.5+16.5+255)*5*(3600/200) round 0}}}}
+|{{formatnum:{{#expr:(16.5+16.5+255)*5*(3600/180) round 0}}}}
+|{{Coins|-(({{GEP|Oak logs}} * 25) + ({{GEP|Bow string}} * 20)) * (3600 / 200)}}
+|{{Coins|-(({{GEP|Oak logs}} * 25) + ({{GEP|Bow string}} * 20)) * (3600 / 180)}}
+|-
+|25
+|{{plinkt|Oak longbow (u)}}
+|{{formatnum:{{#expr:(25+255)*5 round 0}}}}
+|{{Coins|-({{GEP|Oak logs}} * 25)}}
+|{{Coins|-({{GEP|Oak logs}} * 25) / ((25+255)*5)}}
+|03:00
+|02:40
+|{{formatnum:{{#expr:(25+255)*5*(3600/180) round 0}}}}
+|{{formatnum:{{#expr:(25+255)*5*(3600/160) round 0}}}}
+|{{Coins|-({{GEP|Oak logs}} * 25) * (3600 / 180)}}
+|{{Coins|-({{GEP|Oak logs}} * 25) * (3600 / 160)}}
+|-
+|25
+|{{plinkt|Oak longbow}}
+|{{formatnum:{{#expr:(25+25+255)*5 round 0}}}}
+|{{Coins|-(({{GEP|Oak logs}} * 25) + ({{GEP|Bow string}} * 20))}}
+|{{Coins|-(({{GEP|Oak logs}} * 25) + ({{GEP|Bow string}} * 20)) / ((25+25+255)*5)}}
+|03:20
+|03:00
+|{{formatnum:{{#expr:(25+25+255)*5*(3600/200) round 0}}}}
+|{{formatnum:{{#expr:(25+25+255)*5*(3600/180) round 0}}}}
+|{{Coins|-(({{GEP|Oak logs}} * 25) + ({{GEP|Bow string}} * 20)) * (3600 / 200)}}
+|{{Coins|-(({{GEP|Oak logs}} * 25) + ({{GEP|Bow string}} * 20)) * (3600 / 180)}}
+|-
+|35
+|{{plinkt|Willow shortbow (u)}}
+|{{formatnum:{{#expr:(33.3+628)*5 round 0}}}}
+|{{Coins|-({{GEP|Willow logs}} * 25)}}
+|{{Coins|-({{GEP|Willow logs}} * 25) / ((33.3+628)*5)}}
+|03:00
+|02:40
+|{{formatnum:{{#expr:(33.3+628)*5*(3600/180) round 0}}}}
+|{{formatnum:{{#expr:(33.3+628)*5*(3600/160) round 0}}}}
+|{{Coins|-({{GEP|Willow logs}} * 25) * (3600 / 180)}}
+|{{Coins|-({{GEP|Willow logs}} * 25) * (3600 / 160)}}
+|-
+|35
+|{{plinkt|Willow shortbow}}
+|{{formatnum:{{#expr:(33.3+33.3+628)*5 round 0}}}}
+|{{Coins|-(({{GEP|Willow logs}} * 25) + ({{GEP|Bow string}} * 20))}}
+|{{Coins|-(({{GEP|Willow logs}} * 25) + ({{GEP|Bow string}} * 20)) / ((33.3+33.3+628)*5)}}
+|03:20
+|03:00
+|{{formatnum:{{#expr:(33.3+33.3+628)*5*(3600/200) round 0}}}}
+|{{formatnum:{{#expr:(33.3+33.3+628)*5*(3600/180) round 0}}}}
+|{{Coins|-(({{GEP|Willow logs}} * 25) + ({{GEP|Bow string}} * 20)) * (3600 / 200)}}
+|{{Coins|-(({{GEP|Willow logs}} * 25) + ({{GEP|Bow string}} * 20)) * (3600 / 180)}}
+|-
+|40
+|{{plinkt|Willow longbow (u)}}
+|{{formatnum:{{#expr:(41.5+628)*5 round 0}}}}
+|{{Coins|-({{GEP|Willow logs}} * 25)}}
+|{{Coins|-({{GEP|Willow logs}} * 25) / ((41.5+628)*5)}}
+|03:00
+|02:40
+|{{formatnum:{{#expr:(41.5+628)*5*(3600/180) round 0}}}}
+|{{formatnum:{{#expr:(41.5+628)*5*(3600/160) round 0}}}}
+|{{Coins|-({{GEP|Willow logs}} * 25) * (3600 / 180)}}
+|{{Coins|-({{GEP|Willow logs}} * 25) * (3600 / 160)}}
+|-
+|40
+|{{plinkt|Willow longbow}}
+|{{formatnum:{{#expr:(41.5+41.5+628)*5 round 0}}}}
+|{{Coins|-(({{GEP|Willow logs}} * 25) + ({{GEP|Bow string}} * 20))}}
+|{{Coins|-(({{GEP|Willow logs}} * 25) + ({{GEP|Bow string}} * 20)) / ((41.5+41.5+628)*5)}}
+|03:20
+|03:00
+|{{formatnum:{{#expr:(41.5+41.5+628)*5*(3600/200) round 0}}}}
+|{{formatnum:{{#expr:(41.5+41.5+628)*5*(3600/180) round 0}}}}
+|{{Coins|-(({{GEP|Willow logs}} * 25) + ({{GEP|Bow string}} * 20)) * (3600 / 200)}}
+|{{Coins|-(({{GEP|Willow logs}} * 25) + ({{GEP|Bow string}} * 20)) * (3600 / 180)}}
+|-
+|50
+|{{plinkt|Maple shortbow (u)}}
+|{{formatnum:{{#expr:(50+1008)*5 round 0}}}}
+|{{Coins|-({{GEP|Maple logs}} * 25)}}
+|{{Coins|-({{GEP|Maple logs}} * 25) / ((50+1008)*5)}}
+|03:00
+|02:40
+|{{formatnum:{{#expr:(50+1008)*5*(3600/180) round 0}}}}
+|{{formatnum:{{#expr:(50+1008)*5*(3600/160) round 0}}}}
+|{{Coins|-({{GEP|Maple logs}} * 25) * (3600 / 180)}}
+|{{Coins|-({{GEP|Maple logs}} * 25) * (3600 / 160)}}
+|-
+|50
+|{{plinkt|Maple shortbow}}
+|{{formatnum:{{#expr:(50+50+1008)*5 round 0}}}}
+|{{Coins|-(({{GEP|Maple logs}} * 25) + ({{GEP|Bow string}} * 20))}}
+|{{Coins|-(({{GEP|Maple logs}} * 25) + ({{GEP|Bow string}} * 20)) / ((50+50+1008)*5)}}
+|03:20
+|03:00
+|{{formatnum:{{#expr:(50+50+1008)*5*(3600/200) round 0}}}}
+|{{formatnum:{{#expr:(50+50+1008)*5*(3600/180) round 0}}}}
+|{{Coins|-(({{GEP|Maple logs}} * 25) + ({{GEP|Bow string}} * 20)) * (3600 / 200)}}
+|{{Coins|-(({{GEP|Maple logs}} * 25) + ({{GEP|Bow string}} * 20)) * (3600 / 180)}}
+|-
+|55
+|{{plinkt|Maple longbow (u)}}
+|{{formatnum:{{#expr:(58.3+1008)*5 round 0}}}}
+|{{Coins|-({{GEP|Maple logs}} * 25)}}
+|{{Coins|-({{GEP|Maple logs}} * 25) / ((58.3+1008)*5)}}
+|03:00
+|02:40
+|{{formatnum:{{#expr:(58.3+1008)*5*(3600/180) round 0}}}}
+|{{formatnum:{{#expr:(58.3+1008)*5*(3600/160) round 0}}}}
+|{{Coins|-({{GEP|Maple logs}} * 25) * (3600 / 180)}}
+|{{Coins|-({{GEP|Maple logs}} * 25) * (3600 / 160)}}
+|-
+|55
+|{{plinkt|Maple longbow}}
+|{{formatnum:{{#expr:(58.3+58.3+1008)*5 round 0}}}}
+|{{Coins|-(({{GEP|Maple logs}} * 25) + ({{GEP|Bow string}} * 20))}}
+|{{Coins|-(({{GEP|Maple logs}} * 25) + ({{GEP|Bow string}} * 20)) / ((58.3+58.3+1008)*5)}}
+|03:20
+|03:00
+|{{formatnum:{{#expr:(58.3+58.3+1008)*5*(3600/200) round 0}}}}
+|{{formatnum:{{#expr:(58.3+58.3+1008)*5*(3600/180) round 0}}}}
+|{{Coins|-(({{GEP|Maple logs}} * 25) + ({{GEP|Bow string}} * 20)) * (3600 / 200)}}
+|{{Coins|-(({{GEP|Maple logs}} * 25) + ({{GEP|Bow string}} * 20)) * (3600 / 180)}}
+|}
+
+===Full loop===
+A [[log basket]] allows players to build all eight totems during each loop. 40 logs are required per loop.
+
+{| class="wikitable sortable align-center-1 align-center-2 align-left-3" style="text-align:right;"
+! rowspan="2" |{{SCP|Fletching}} Level
+! rowspan="2" colspan="2" |Bow
+! rowspan="2" |XP/Loop
+! rowspan="2" |GP/Loop
+! rowspan="2" |GP/XP
+! colspan="2" |Time/Loop
+! colspan="2" |XP/h {{efn|Does not account for downtime waiting for totems to reset. Rates with yew+ will be lower.|name=per hour}} 
+! colspan="2" |GP/h {{efn|Does not account for downtime waiting for totems to reset. Rates with yew+ will be lower.|name=per hour}}
+|-
+![[File:Knife.png|link=Knife]]
+![[File:Fletching_knife.png|link=Fletching knife]]
+![[File:Knife.png|link=Knife]]
+![[File:Fletching_knife.png|link=Fletching knife]]
+![[File:Knife.png|link=Knife]]
+![[File:Fletching_knife.png|link=Fletching knife]]
+|-
+|20
+|{{plinkt|Oak shortbow (u)}}
+|{{formatnum:{{#expr:((16.5 * 4)+255)*8 round 0}}}}
+|{{Coins|-({{GEP|Oak logs}} * 40)}}
+|{{Coins|-({{GEP|Oak logs}} * 40) / ((16.5+255)*8)}}
+|04:30
+|04:10
+|{{formatnum:{{#expr:((16.5 * 4)+255)*8*(3600/270) round 0}}}}
+|{{formatnum:{{#expr:((16.5 * 4)+255)*8*(3600/250) round 0}}}}
+|{{Coins|-({{GEP|Oak logs}} * 40) * (3600 / 270)}}
+|{{Coins|-({{GEP|Oak logs}} * 40) * (3600 / 250)}}
+|-
+|20
+|{{plinkt|Oak shortbow}}
+|{{formatnum:{{#expr:(((16.5+16.5)) * 4+255)*8 round 0}}}}
+|{{Coins|-(({{GEP|Oak logs}} * 40) + ({{GEP|Bow string}} * 32))}}
+|{{Coins|-(({{GEP|Oak logs}} * 40) + ({{GEP|Bow string}} * 32)) / ((16.5+16.5+255)*8)}}
+|05:20
+|05:00
+|{{formatnum:{{#expr:(((16.5+16.5) * 4)+255)*8*(3600/320) round 0}}}}
+|{{formatnum:{{#expr:(((16.5+16.5) * 4)+255)*8*(3600/300) round 0}}}}
+|{{Coins|-(({{GEP|Oak logs}} * 40) + ({{GEP|Bow string}} * 32)) * (3600 / 320)}}
+|{{Coins|-(({{GEP|Oak logs}} * 40) + ({{GEP|Bow string}} * 32)) * (3600 / 300)}}
+|-
+|25
+|{{plinkt|Oak longbow (u)}}
+|{{formatnum:{{#expr:((25 * 4)+255)*8 round 0}}}}
+|{{Coins|-({{GEP|Oak logs}} * 40)}}
+|{{Coins|-({{GEP|Oak logs}} * 40) / ((25+255)*8)}}
+|04:30
+|04:10
+|{{formatnum:{{#expr:((25 * 4)+255)*8*(3600/270) round 0}}}}
+|{{formatnum:{{#expr:((25 * 4)+255)*8*(3600/250) round 0}}}}
+|{{Coins|-({{GEP|Oak logs}} * 40) * (3600 / 270)}}
+|{{Coins|-({{GEP|Oak logs}} * 40) * (3600 / 250)}}
+|-
+|25
+|{{plinkt|Oak longbow}}
+|{{formatnum:{{#expr:(((25+25) * 4)+255)*8 round 0}}}}
+|{{Coins|-(({{GEP|Oak logs}} * 40) + ({{GEP|Bow string}} * 32))}}
+|{{Coins|-(({{GEP|Oak logs}} * 40) + ({{GEP|Bow string}} * 32)) / ((25+25+255)*8)}}
+|05:20
+|05:00
+|{{formatnum:{{#expr:(((25+25) * 4)+255)*8*(3600/320) round 0}}}}
+|{{formatnum:{{#expr:(((25+25) * 4)+255)*8*(3600/300) round 0}}}}
+|{{Coins|-(({{GEP|Oak logs}} * 40) + ({{GEP|Bow string}} * 32)) * (3600 / 320)}}
+|{{Coins|-(({{GEP|Oak logs}} * 40) + ({{GEP|Bow string}} * 32)) * (3600 / 300)}}
+|-
+|35
+|{{plinkt|Willow shortbow (u)}}
+|{{formatnum:{{#expr:((33.3 *4)+628)*8 round 0}}}}
+|{{Coins|-({{GEP|Willow logs}} * 40)}}
+|{{Coins|-({{GEP|Willow logs}} * 40) / ((33.3+628)*8)}}
+|04:30
+|04:10
+|{{formatnum:{{#expr:((33.3 *4)+628)*8*(3600/270) round 0}}}}
+|{{formatnum:{{#expr:((33.3 *4)+628)*8*(3600/250) round 0}}}}
+|{{Coins|-({{GEP|Willow logs}} * 40) * (3600 / 270)}}
+|{{Coins|-({{GEP|Willow logs}} * 40) * (3600 / 250)}}
+|-
+|35
+|{{plinkt|Willow shortbow}}
+|{{formatnum:{{#expr:(((33.3+33.3) * 4)+628)*8 round 0}}}}
+|{{Coins|-(({{GEP|Willow logs}} * 40) + ({{GEP|Bow string}} * 32))}}
+|{{Coins|-(({{GEP|Willow logs}} * 40) + ({{GEP|Bow string}} * 32)) / ((33.3+33.3+628)*8)}}
+|05:20
+|05:00
+|{{formatnum:{{#expr:(((33.3+33.3) * 4)+628)*8*(3600/320) round 0}}}}
+|{{formatnum:{{#expr:(((33.3+33.3) * 4)+628)*8*(3600/300) round 0}}}}
+|{{Coins|-(({{GEP|Willow logs}} * 40) + ({{GEP|Bow string}} * 32)) * (3600 / 320)}}
+|{{Coins|-(({{GEP|Willow logs}} * 40) + ({{GEP|Bow string}} * 32)) * (3600 / 300)}}
+|-
+|40
+|{{plinkt|Willow longbow (u)}}
+|{{formatnum:{{#expr:((41.5 * 4)+628)*8 round 0}}}}
+|{{Coins|-({{GEP|Willow logs}} * 40)}}
+|{{Coins|-({{GEP|Willow logs}} * 40) / ((41.5+628)*8)}}
+|04:30
+|04:10
+|{{formatnum:{{#expr:((41.5 * 4)+628)*8*(3600/270) round 0}}}}
+|{{formatnum:{{#expr:((41.5 * 4)+628)*8*(3600/250) round 0}}}}
+|{{Coins|-({{GEP|Willow logs}} * 40) * (3600 / 270)}}
+|{{Coins|-({{GEP|Willow logs}} * 40) * (3600 / 250)}}
+|-
+|40
+|{{plinkt|Willow longbow}}
+|{{formatnum:{{#expr:(((41.5+41.5) * 4)+628)*8 round 0}}}}
+|{{Coins|-(({{GEP|Willow logs}} * 40) + ({{GEP|Bow string}} * 32))}}
+|{{Coins|-(({{GEP|Willow logs}} * 40) + ({{GEP|Bow string}} * 32)) / ((41.5+41.5+628)*8)}}
+|05:20
+|05:00
+|{{formatnum:{{#expr:(((41.5+41.5) * 4)+628)*8*(3600/320) round 0}}}}
+|{{formatnum:{{#expr:(((41.5+41.5) * 4)+628)*8*(3600/300) round 0}}}}
+|{{Coins|-(({{GEP|Willow logs}} * 40) + ({{GEP|Bow string}} * 32)) * (3600 / 320)}}
+|{{Coins|-(({{GEP|Willow logs}} * 40) + ({{GEP|Bow string}} * 32)) * (3600 / 300)}}
+|-
+|50
+|{{plinkt|Maple shortbow (u)}}
+|{{formatnum:{{#expr:((50*4)+1008)*8 round 0}}}}
+|{{Coins|-({{GEP|Maple logs}} * 40)}}
+|{{Coins|-({{GEP|Maple logs}} * 40) / ((50+1008)*8)}}
+|04:30
+|04:10
+|{{formatnum:{{#expr:((50*4)+1008)*8*(3600/270) round 0}}}}
+|{{formatnum:{{#expr:((50*4)+1008)*8*(3600/250) round 0}}}}
+|{{Coins|-({{GEP|Maple logs}} * 40) * (3600 / 270)}}
+|{{Coins|-({{GEP|Maple logs}} * 40) * (3600 / 250)}}
+|-
+|50
+|{{plinkt|Maple shortbow}}
+|{{formatnum:{{#expr:(((50+50) * 4)+1008)*8 round 0}}}}
+|{{Coins|-(({{GEP|Maple logs}} * 40) + ({{GEP|Bow string}} * 32))}}
+|{{Coins|-(({{GEP|Maple logs}} * 40) + ({{GEP|Bow string}} * 32)) / ((50+50+1008)*8)}}
+|05:20
+|05:00
+|{{formatnum:{{#expr:(((50+50) * 4)+1008)*8*(3600/320) round 0}}}}
+|{{formatnum:{{#expr:(((50+50) * 4)+1008)*8*(3600/300) round 0}}}}
+|{{Coins|-(({{GEP|Maple logs}} * 40) + ({{GEP|Bow string}} * 32)) * (3600 / 320)}}
+|{{Coins|-(({{GEP|Maple logs}} * 40) + ({{GEP|Bow string}} * 32)) * (3600 / 300)}}
+|-
+|55
+|{{plinkt|Maple longbow (u)}}
+|{{formatnum:{{#expr:((58.3 * 4)+1008)*8 round 0}}}}
+|{{Coins|-({{GEP|Maple logs}} * 40)}}
+|{{Coins|-({{GEP|Maple logs}} * 40) / ((58.3+1008)*8)}}
+|04:30
+|04:10
+|{{formatnum:{{#expr:((58.3 * 4)+1008)*8*(3600/270) round 0}}}}
+|{{formatnum:{{#expr:((58.3 * 4)+1008)*8*(3600/250) round 0}}}}
+|{{Coins|-({{GEP|Maple logs}} * 40) * (3600 / 270)}}
+|{{Coins|-({{GEP|Maple logs}} * 40) * (3600 / 250)}}
+|-
+|55
+|{{plinkt|Maple longbow}}
+|{{formatnum:{{#expr:(((58.3+58.3) * 4)+1008)*8 round 0}}}}
+|{{Coins|-(({{GEP|Maple logs}} * 40) + ({{GEP|Bow string}} * 32))}}
+|{{Coins|-(({{GEP|Maple logs}} * 40) + ({{GEP|Bow string}} * 32)) / ((58.3+58.3+1008)*8)}}
+|05:20
+|05:00
+|{{formatnum:{{#expr:(((58.3+58.3) * 4)+1008)*8*(3600/320) round 0}}}}
+|{{formatnum:{{#expr:(((58.3+58.3) * 4)+1008)*8*(3600/300) round 0}}}}
+|{{Coins|-(({{GEP|Maple logs}} * 40) + ({{GEP|Bow string}} * 32)) * (3600 / 320)}}
+|{{Coins|-(({{GEP|Maple logs}} * 40) + ({{GEP|Bow string}} * 32)) * (3600 / 300)}}
+|-
+|65
+|{{plinkt|Yew shortbow (u)}}
+|{{formatnum:{{#expr:((67.5 * 4)+1632)*8 round 0}}}}
+|{{Coins|-({{GEP|Yew logs}} * 40)}}
+|{{Coins|-({{GEP|Yew logs}} * 40) / ((67.5+1632)*8)}}
+|04:30
+|04:10
+|{{formatnum:{{#expr:((67.5 * 4)+1632)*8*(3600/270) round 0}}}}
+|{{formatnum:{{#expr:((67.5 * 4)+1632)*8*(3600/250) round 0}}}}
+|{{Coins|-({{GEP|Yew logs}} * 40) * (3600 / 270)}}
+|{{Coins|-({{GEP|Yew logs}} * 40) * (3600 / 250)}}
+|-
+|65
+|{{plinkt|Yew shortbow}}
+|{{formatnum:{{#expr:(((67.5+67.5) * 4)+1632)*8 round 0}}}}
+|{{Coins|-(({{GEP|Yew logs}} * 40) + ({{GEP|Bow string}} * 32))}}
+|{{Coins|-(({{GEP|Yew logs}} * 40) + ({{GEP|Bow string}} * 32)) / ((67.5+67.5+1632)*8)}}
+|05:20
+|05:00
+|{{formatnum:{{#expr:(((67.5+67.5) * 4)+1632)*8*(3600/320) round 0}}}}
+|{{formatnum:{{#expr:(((67.5+67.5) * 4)+1632)*8*(3600/300) round 0}}}}
+|{{Coins|-(({{GEP|Yew logs}} * 40) + ({{GEP|Bow string}} * 32)) * (3600 / 320)}}
+|{{Coins|-(({{GEP|Yew logs}} * 40) + ({{GEP|Bow string}} * 32)) * (3600 / 300)}}
+|-
+|70
+|{{plinkt|Yew longbow (u)}}
+|{{formatnum:{{#expr:((75 * 4)+1632)*8 round 0}}}}
+|{{Coins|-({{GEP|Yew logs}} * 40)}}
+|{{Coins|-({{GEP|Yew logs}} * 40) / ((75+1632)*8)}}
+|04:30
+|04:10
+|{{formatnum:{{#expr:((75 * 4)+1632)*8*(3600/270) round 0}}}}
+|{{formatnum:{{#expr:((75 * 4)+1632)*8*(3600/250) round 0}}}}
+|{{Coins|-({{GEP|Yew logs}} * 40) * (3600 / 270)}}
+|{{Coins|-({{GEP|Yew logs}} * 40) * (3600 / 250)}}
+|-
+|70
+|{{plinkt|Yew longbow}}
+|{{formatnum:{{#expr:(((75+75) * 4)+1632)*8 round 0}}}}
+|{{Coins|-(({{GEP|Yew logs}} * 40) + ({{GEP|Bow string}} * 32))}}
+|{{Coins|-(({{GEP|Yew logs}} * 40) + ({{GEP|Bow string}} * 32)) / ((75+75+1632)*8)}}
+|05:20
+|05:00
+|{{formatnum:{{#expr:(((75+75) * 4)+1632)*8*(3600/320) round 0}}}}
+|{{formatnum:{{#expr:(((75+75) * 4)+1632)*8*(3600/300) round 0}}}}
+|{{Coins|-(({{GEP|Yew logs}} * 40) + ({{GEP|Bow string}} * 32)) * (3600 / 320)}}
+|{{Coins|-(({{GEP|Yew logs}} * 40) + ({{GEP|Bow string}} * 32)) * (3600 / 300)}}
+|-
+|80
+|{{plinkt|Magic shortbow (u)}}
+|{{formatnum:{{#expr:((83.3*4)+3103.6)*8 round 0}}}}
+|{{Coins|-({{GEP|Magic logs}} * 40)}}
+|{{Coins|-({{GEP|Magic logs}} * 40) / ((83.3+3104)*8)}}
+|04:30
+|04:10
+|{{formatnum:{{#expr:((83.3*4)+3103.6)*8*(3600/270) round 0}}}}
+|{{formatnum:{{#expr:((83.3*4)+3103.6)*8*(3600/250) round 0}}}}
+|{{Coins|-({{GEP|Magic logs}} * 40) * (3600 / 270)}}
+|{{Coins|-({{GEP|Magic logs}} * 40) * (3600 / 250)}}
+|-
+|80
+|{{plinkt|Magic shortbow}}
+|{{formatnum:{{#expr:(((83.3+83.3) * 4)+3103.6)*8 round 0}}}}
+|{{Coins|-(({{GEP|Magic logs}} * 40) + ({{GEP|Bow string}} * 32))}}
+|{{Coins|-(({{GEP|Magic logs}} * 40) + ({{GEP|Bow string}} * 32)) / ((83.3+83.3+3104)*8)}}
+|05:20
+|05:00
+|{{formatnum:{{#expr:(((83.3+83.3) * 4)+3103.6)*8*(3600/320) round 0}}}}
+|{{formatnum:{{#expr:(((83.3+83.3) * 4)+3103.6)*8*(3600/300) round 0}}}}
+|{{Coins|-(({{GEP|Magic logs}} * 40) + ({{GEP|Bow string}} * 32)) * (3600 / 320)}}
+|{{Coins|-(({{GEP|Magic logs}} * 40) + ({{GEP|Bow string}} * 32)) * (3600 / 300)}}
+|-
+|85
+|{{plinkt|Magic longbow (u)}}
+|{{formatnum:{{#expr:((91.5 * 4)+3103.6)*8 round 0}}}}
+|{{Coins|-({{GEP|Magic logs}} * 40)}}
+|{{Coins|-({{GEP|Magic logs}} * 40) / ((91.5+3104)*8)}}
+|04:30
+|04:10
+|{{formatnum:{{#expr:(91.5+3104)*8*(3600/270) round 0}}}}
+|{{formatnum:{{#expr:(91.5+3104)*8*(3600/250) round 0}}}}
+|{{Coins|-({{GEP|Magic logs}} * 40) * (3600 / 270)}}
+|{{Coins|-({{GEP|Magic logs}} * 40) * (3600 / 250)}}
+|-
+|85
+|{{plinkt|Magic longbow}}
+|{{formatnum:{{#expr:(((91.5+91.5) * 4)+3103.6)*8 round 0}}}}
+|{{Coins|-(({{GEP|Magic logs}} * 40) + ({{GEP|Bow string}} * 32))}}
+|{{Coins|-(({{GEP|Magic logs}} * 40) + ({{GEP|Bow string}} * 32)) / ((91.5+91.5+3104)*8)}}
+|05:20
+|05:00
+|{{formatnum:{{#expr:(((91.5+91.5) * 4)+3103.6)*8*(3600/320) round 0}}}}
+|{{formatnum:{{#expr:(((91.5+91.5) * 4)+3103.6)*8*(3600/300) round 0}}}}
+|{{Coins|-(({{GEP|Magic logs}} * 40) + ({{GEP|Bow string}} * 32)) * (3600 / 320)}}
+|{{Coins|-(({{GEP|Magic logs}} * 40) + ({{GEP|Bow string}} * 32)) * (3600 / 300)}}
+|-
+|90
+|{{plinkt|Redwood hiking staff}}
+|{{formatnum:{{#expr:((10.5*4)+3787.2)*8 round 0}}}}
+|{{Coins|-({{GEP|Redwood logs}} * 40)}}
+|{{Coins|-({{GEP|Redwood logs}} * 40) / ((10.5+3788)*8)}}
+|04:30
+|04:10
+|{{formatnum:{{#expr:((10.5*4)+3787.2)*8*(3600/270) round 0}}}}
+|{{formatnum:{{#expr:((10.5*4)+3787.2)*8*(3600/250) round 0}}}}
+|{{Coins|-({{GEP|Redwood logs}} * 40) * (3600 / 270)}}
+|{{Coins|-({{GEP|Redwood logs}} * 40) * (3600 / 250)}}
+|}
+
+{{notelist}}
+
+==Other methods==
+
+===Level 1–5: Headless arrows===
+A profitable way of training Fletching is to fletch [[headless arrow]]s using [[arrow shaft]]s and [[feather]]s. This grants 15 experience per action, for 1 experience per headless arrow fletched.
+
+=== Level 1–5/10: Arrow shafts ===
+{{plinkp|Arrow shaft}} The best way to get from level 1 to level 5 is by fletching [[Arrow shaft|arrow shafts]], which give 5 experience per log.
+
+{| class="wikitable sortable align-center-1 align-center-2 align-center-3 align-left-4" style="text-align:right;"
+! {{SCP|Fletching}} Level
+! Item
+! XP
+! XP/h<ref>Assumes ~2,000 actions per hour.</ref>
+! Logs for goal
+! Material cost
+! Product value
+! Total profit
+! GP/XP
+|-
+|1–5
+|{{plinkp|Arrow shaft}}
+|5
+|10,000
+|78
+|{{Coins|{{GEP|Logs|79}}}}
+|{{Coins|{{GEP|Arrow shaft|1185}}}}
+|{{Coins|{{GEP|Arrow shaft|1185}}-{{GEP|Logs|79}}}}
+|{{Coins|({{GEP|Arrow shaft}}-{{GEP|Logs}})/5}}
+|-
+|1–10
+|{{plinkp|Arrow shaft}}
+|5
+|10,000
+|233
+|{{Coins|{{GEP|Logs|233}}}}
+|{{Coins|{{GEP|Arrow shaft|3465}}}}
+|{{Coins|{{GEP|Arrow shaft|3465}}-{{GEP|Logs|233}}}}
+|{{Coins|({{GEP|Arrow shaft}}-{{GEP|Logs}})/5}}
+|}
+<references/>
+
+===Level 5–99: Bows===
+Making bows is a slower, less intensive method of training fletching that is usually cheap or profitable. Fletching [[Unstrung bow|unstrung bows]] is more AFK-able but yields less experience per hour, stringing bows is faster but requires paying more attention. Since fletching unstrung bows takes 3-ticks per bow, fletching an inventory takes 48.6 seconds; stringing bows takes 2-ticks per bow which makes an inventory take 16.8 seconds to string. If using the [[Fletching knife]] to fletch unstrung bows, expect close to the same xp rates as stringing, as the knife fletches in 2-ticks instead of 3. This results in approximately 2,700 bows fletched per hour, compared to 1,800 without the knife.
+
+Using a [[Bow string spool]] when stringing bows allows 27 bows to be strung per inventory instead of 14, reducing banking. This gives a slight increase to experience per hour (about 3%) but does not significantly change the rates shown in the table.
+
+{| class="wikitable sortable align-center-1 align-center-2 align-center-3 align-left-4" style="text-align:right;"
+! rowspan="2" |{{SCP|Fletching}} Level
+! rowspan="2" colspan="3" |Bow
+! rowspan="2" |XP
+! colspan="3" |XP/h
+! rowspan="2" |# for goal
+! colspan="3" |Material cost
+! colspan="2" |Total profit
+! colspan="2" |GP/XP
+|-
+!Fletching<ref>Assumes 1,800 actions per hour.</ref>
+!Fletching knife<ref>Assumes 2,700 actions per hour.</ref>
+!Stringing<ref>Assumes 2,450 actions per hour.</ref>
+!Logs
+!Unstrung bows/String
+!Logs/String
+!Fletching
+!Stringing
+!Fletching
+!Stringing
+|-
+|5–10
+|{{plinkp|Shortbow (u)}}||{{plinkt|Shortbow|txt=Short}}
+|5
+|9,000
+|13,500
+|12,250
+|154
+|{{Coins|{{GEP|Logs|154}}}}
+|{{Coins|{{GEP|Shortbow (u)|154}}+{{GEP|Bow string|153}}}}
+|{{Coins|{{GEP|Logs|154}}+{{GEP|Bow string|154}}}}
+|{{Coins|{{GEP|Shortbow (u)|154}}-{{GEP|Logs|153}}}}
+|{{Coins|{{GEP|Shortbow|154}}-({{GEP|Shortbow (u)|154}}+{{GEP|Bow string|154}})}}
+|{{Coins|({{GEP|Shortbow (u)}}-{{GEP|Logs}})/5}}
+|{{Coins|({{GEP|Shortbow}}-({{GEP|Shortbow (u)}}+{{GEP|Bow string}}))/5}}
+|-
+|10–20
+|{{plinkp|Longbow (u)}}||{{plinkt|Longbow|txt=Long}}
+|10
+|18,000
+|27,000
+|24,500
+|332
+|{{Coins|{{GEP|Logs|332}}}}
+|{{Coins|{{GEP|Longbow (u)|332}}+{{GEP|Bow string|332}}}}
+|{{Coins|{{GEP|Logs|332}}+{{GEP|Bow string|332}}}}
+|{{Coins|{{GEP|Longbow (u)|332}}-{{GEP|Logs|332}}}}
+|{{Coins|{{GEP|Longbow|332}}-({{GEP|Longbow (u)|332}}+{{GEP|Bow string|332}})}}
+|{{Coins|({{GEP|Longbow (u)}}-{{GEP|Logs}})/10}}
+|{{Coins|({{GEP|Longbow}}-({{GEP|Longbow (u)}}+{{GEP|Bow string}}))/10}}
+|-
+|20–25
+|{{plinkp|Oak shortbow (u)}}||{{plinkt|Oak shortbow|txt=Oak short}}
+|16.5
+|29,700
+|44,550
+|40,425
+|205
+|{{Coins|{{GEP|Oak logs|205}}}}
+|{{Coins|{{GEP|Oak shortbow (u)|205}}+{{GEP|Bow string|205}}}}
+|{{Coins|{{GEP|Oak logs|205}}+{{GEP|Bow string|205}}}}
+|{{Coins|{{GEP|Oak shortbow (u)|205}}-{{GEP|Oak logs|205}}}}
+|{{Coins|{{GEP|Oak shortbow|205}}-({{GEP|Oak shortbow (u)|205}}+{{GEP|Bow string|205}})}}
+|{{Coins|({{GEP|Oak shortbow (u)}}-{{GEP|Oak logs}})/16.5}}
+|{{Coins|({{GEP|Oak shortbow}}-({{GEP|Oak shortbow (u)}}+{{GEP|Bow string}}))/16.5}}
+|-
+|25–35
+|{{plinkp|Oak longbow (u)}}||{{plinkt|Oak longbow|txt=Oak long}}
+|25
+|45,000
+|67,500
+|61,250
+|583
+|{{Coins|{{GEP|Oak logs|583}}}}
+|{{Coins|{{GEP|Oak longbow (u)|583}}+{{GEP|Bow string|583}}}}
+|{{Coins|{{GEP|Oak logs|583}}+{{GEP|Bow string|583}}}}
+|{{Coins|{{GEP|Oak longbow (u)|583}}-{{GEP|Oak logs|583}}}}
+|{{Coins|{{GEP|Oak longbow|583}}-({{GEP|Oak longbow (u)|583}}+{{GEP|Bow string|583}})}}
+|{{Coins|({{GEP|Oak longbow (u)}}-{{GEP|Oak logs}})/25}}
+|{{Coins|({{GEP|Oak longbow}}-({{GEP|Oak longbow (u)}}+{{GEP|Bow string}}))/25}}
+|-
+|35–40
+|{{plinkp|Willow shortbow (u)}}||{{plinkt|Willow shortbow|txt=Willow short}}
+|33.3
+|59,940
+|89,910
+|81,585
+|445
+|{{Coins|{{GEP|Willow logs|445}}}}
+|{{Coins|{{GEP|Willow shortbow (u)|445}}+{{GEP|Bow string|445}}}}
+|{{Coins|{{GEP|Willow logs|445}}+{{GEP|Bow string|445}}}}
+|{{Coins|{{GEP|Willow shortbow (u)|445}}-{{GEP|Willow logs|445}}}}
+|{{Coins|{{GEP|Willow shortbow|445}}-({{GEP|Willow shortbow (u)|445}}+{{GEP|Bow string|445}})}}
+|{{Coins|({{GEP|Willow shortbow (u)}}-{{GEP|Willow logs}})/33.3}}
+|{{Coins|({{GEP|Willow shortbow}}-({{GEP|Willow shortbow (u)}}+{{GEP|Bow string}}))/33.3}}
+|-
+|40–50
+|{{plinkp|Willow longbow (u)}}||{{plinkt|Willow longbow|txt=Willow long}}
+|41.5
+|74,700
+|112,050
+|101,675
+|1,545
+|{{Coins|{{GEP|Willow logs|1545}}}}
+|{{Coins|{{GEP|Willow longbow (u)|1545}}+{{GEP|Bow string|1545}}}}
+|{{Coins|{{GEP|Willow logs|1545}}+{{GEP|Bow string|1545}}}}
+|{{Coins|{{GEP|Willow longbow (u)|1545}}-{{GEP|Willow logs|1545}}}}
+|{{Coins|{{GEP|Willow longbow|1545}}-({{GEP|Willow longbow (u)|1545}}+{{GEP|Bow string|1545}})}}
+|{{Coins|({{GEP|Willow longbow (u)}}-{{GEP|Willow logs}})/41.5}}
+|{{Coins|({{GEP|Willow longbow}}-({{GEP|Willow longbow (u)}}+{{GEP|Bow string}}))/41.5}}
+|-
+|50–55
+|{{plinkp|Maple shortbow (u)}}||{{plinkt|Maple shortbow|txt=Maple short}}
+|50
+|90,000
+|135,000
+|122,500
+|1,307
+|{{Coins|{{GEP|Maple logs|1307}}}}
+|{{Coins|{{GEP|Maple shortbow (u)|1307}}+{{GEP|Bow string|1307}}}}
+|{{Coins|{{GEP|Maple logs|1307}}+{{GEP|Bow string|1307}}}}
+|{{Coins|{{GEP|Maple shortbow (u)|1307}}-{{GEP|Maple logs|1307}}}}
+|{{Coins|{{GEP|Maple shortbow|1307}}-({{GEP|Maple shortbow (u)|1307}}+{{GEP|Bow string|1307}})}}
+|{{Coins|({{GEP|Maple shortbow (u)}}-{{GEP|Maple logs}})/50}}
+|{{Coins|({{GEP|Maple shortbow}}-({{GEP|Maple shortbow (u)}}+{{GEP|Bow string}}))/50}}
+|-
+|55–65
+|{{plinkp|Maple longbow (u)}}||{{plinkt|Maple longbow|txt=Maple long}}
+|58.3
+|104,940
+|157,410
+|142,835
+|4,851
+|{{Coins|{{GEP|Maple logs|4851}}}}
+|{{Coins|{{GEP|Maple longbow (u)|4851}}+{{GEP|Bow string|4851}}}}
+|{{Coins|{{GEP|Maple logs|4851}}+{{GEP|Bow string|4851}}}}
+|{{Coins|{{GEP|Maple longbow (u)|4851}}-{{GEP|Maple logs|4851}}}}
+|{{Coins|{{GEP|Maple longbow|4851}}-({{GEP|Maple longbow (u)|4851}}+{{GEP|Bow string|4851}})}}
+|{{Coins|({{GEP|Maple longbow (u)}}-{{GEP|Maple logs}})/58.3}}
+|{{Coins|({{GEP|Maple longbow}}-({{GEP|Maple longbow (u)}}+{{GEP|Bow string}}))/58.3}}
+|-
+|65–70
+|{{plinkp|Yew shortbow (u)}}||{{plinkt|Yew shortbow|txt=Yew short}}
+|67.5
+|121,500
+|182,250
+|165,375
+|4,270
+|{{Coins|{{GEP|Yew logs|4270}}}}
+|{{Coins|{{GEP|Yew shortbow (u)|4270}}+{{GEP|Bow string|4270}}}}
+|{{Coins|{{GEP|Yew logs|4270}}+{{GEP|Bow string|4270}}}}
+|{{Coins|{{GEP|Yew shortbow (u)|4270}}-{{GEP|Yew logs|4270}}}}
+|{{Coins|{{GEP|Yew shortbow|4270}}-({{GEP|Yew shortbow (u)|4270}}+{{GEP|Bow string|4270}})}}
+|{{Coins|({{GEP|Yew shortbow (u)}}-{{GEP|Yew logs}})/67.5}}
+|{{Coins|({{GEP|Yew shortbow}}-({{GEP|Yew shortbow (u)}}+{{GEP|Bow string}}))/67.5}}
+|-
+|70–80
+|{{plinkp|Yew longbow (u)}}||{{plinkt|Yew longbow|txt=Yew long}}
+|75
+|135,000
+|202,500
+|183,750
+|16,646
+|{{Coins|{{GEP|Yew logs|16646}}}}
+|{{Coins|{{GEP|Yew longbow (u)|16646}}+{{GEP|Bow string|16646}}}}
+|{{Coins|{{GEP|Yew logs|16646}}+{{GEP|Bow string|16646}}}}
+|{{Coins|{{GEP|Yew longbow (u)|16646}}-{{GEP|Yew logs|16646}}}}
+|{{Coins|{{GEP|Yew longbow|16646}}-({{GEP|Yew longbow (u)|16646}}+{{GEP|Bow string|16646}})}}
+|{{Coins|({{GEP|Yew longbow (u)}}-{{GEP|Yew logs}})/75}}
+|{{Coins|({{GEP|Yew longbow}}-({{GEP|Yew longbow (u)}}+{{GEP|Bow string}}))/75}}
+|-
+|80–85
+|{{plinkp|Magic shortbow (u)}}||{{plinkt|Magic shortbow|txt=Magic short}}
+|83.3
+|149,940
+|224,910
+|203,350
+|15,277
+|{{Coins|{{GEP|Magic logs|15277}}}}
+|{{Coins|{{GEP|Magic shortbow (u)|15277}}+{{GEP|Bow string|15277}}}}
+|{{Coins|{{GEP|Magic logs|15277}}+{{GEP|Bow string|15277}}}}
+|{{Coins|{{GEP|Magic shortbow (u)|15277}}-{{GEP|Magic logs|15277}}}}
+|{{Coins|{{GEP|Magic shortbow|15277}}-({{GEP|Magic shortbow (u)|15277}}+{{GEP|Bow string|15277}})}}
+|{{Coins|({{GEP|Magic shortbow (u)}}-{{GEP|Magic logs}})/83.3}}
+|{{Coins|({{GEP|Magic shortbow}}-({{GEP|Magic shortbow (u)}}+{{GEP|Bow string}}))/83.3}}
+|-
+|85–99
+|{{plinkp|Magic longbow (u)}}||{{plinkt|Magic longbow|txt=Magic long}}
+|91.5
+|164,700
+|247,050
+|224,175
+|106,840
+|{{Coins|{{GEP|Magic logs|106840}}}}
+|{{Coins|{{GEP|Magic longbow (u)|106840}}+{{GEP|Bow string|106840}}}}
+|{{Coins|{{GEP|Magic logs|106840}}+{{GEP|Bow string|106840}}}}
+|{{Coins|{{GEP|Magic longbow (u)|106840}}-{{GEP|Magic logs|106840}}}}
+|{{Coins|{{GEP|Magic longbow|106840}}-({{GEP|Magic longbow (u)|106840}}+{{GEP|Bow string|106840}})}}
+|{{Coins|({{GEP|Magic longbow (u)}}-{{GEP|Magic logs}})/91.5}}
+|{{Coins|({{GEP|Magic longbow}}-({{GEP|Magic longbow (u)}}+{{GEP|Bow string}}))/91.5}}
+|}
+<references/>
+
+=== Level 40–80: Battlestaves ===
+{{plinkp|Celastrus bark}} Fletching [[Battlestaff|battlestaves]] requires one piece of [[Celastrus bark]], and yields 80 experience per bark. Only level 40 is needed to fletch a [[battlestaff]], which makes it a better training method than fletching bows in this level range, but can be more costly. At level 80, players can fletch [[Magic shortbow|magic shortbows]] which yields more experience per action. With a [[Fletching knife]], the XP rates improve significantly.
+
+{| class="wikitable sortable align-center-1 align-center-2 align-center-3 align-left-4" style="text-align:right;"
+! rowspan="2" |{{SCP|Fletching}} Level
+! rowspan="2" |Item
+! rowspan="2" |XP
+! colspan="2" |XP/h
+! rowspan="2" |# for goal
+! rowspan="2" |Material cost
+! rowspan="2" |Product value
+! rowspan="2" |Total profit
+! rowspan="2" |GP/XP
+|-
+!Fletching<ref>Assumes ~1,375 actions per hour.</ref>
+!Fletching knife<ref>Assumes ~1,787 actions per hour.</ref>
+|-
+|40–80
+|{{plinkp|Battlestaff}}
+|80
+|110,000
+|143,000
+|24,361
+|{{Coins|{{GEP|Celastrus bark|24361}}}}
+|{{Coins|{{GEP|Battlestaff|24361}}}}
+|{{Coins|{{GEP|Battlestaff|24361}}-{{GEP|Celastrus bark|24361}}}}
+|{{Coins|({{GEP|Battlestaff}}-{{GEP|Celastrus bark}})/80}}
+|}
+<references/>
+
+=== Level 92–99: Redwood shields ===
+{{plinkp|Redwood shield}} [[Redwood shield]]s are an alternative method to fletching bows. Fletching one shield requires two redwood logs, and gives 216 experience per shield. With a [[Fletching knife]], the XP rates increase substantially.
+
+{| class="wikitable sortable align-center-1 align-center-2 align-center-3 align-left-4" style="text-align:right;"
+! rowspan="2" |{{SCP|Fletching}} Level
+! rowspan="2" |Item
+! rowspan="2" |XP
+! colspan="2" |XP/h
+! rowspan="2" |# for goal
+! rowspan="2" |Material cost
+! rowspan="2" |Product value
+! rowspan="2" |Total profit
+! rowspan="2" |GP/XP
+|-
+!Fletching<ref>Assumes ~778 actions per hour.</ref>
+!Fletching knife<ref>Assumes ~893 actions per hour.</ref>
+|-
+|92–99
+|{{plinkp|Redwood shield}}
+|216
+|168,000
+|193,000
+|30,173
+|{{Coins|{{GEP|Redwood logs|60346}}}}
+|{{Coins|{{GEP|Redwood shield|30173}}}}
+|{{Coins|{{GEP|Redwood shield|30173}}-{{GEP|Redwood logs|60346}}}}
+|{{Coins|({{GEP|Redwood shield}}-{{GEP|Redwood logs|2}})/216}}
+|}
+<references/>
+
+{{Training guides}}
+[[Category:Fletching]]

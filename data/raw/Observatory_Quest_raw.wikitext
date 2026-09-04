@@ -1,0 +1,170 @@
+{{External|rs|rsc=Observatory quest}}
+{{Has quick guide}}
+{{Infobox Quest
+|name = Observatory Quest
+|number = 43
+|image = [[File:Observatory Quest.png|300px]]
+|release = [[17 March]] [[2003]]
+|update = Observatory Quest online!
+|members = Yes
+|series = None
+|developer = {{RSL|Mod Ian|Ian T}}
+}}
+The '''Observatory Quest''' is a [[quest]] where you must help the [[Observatory professor|professor]] of the [[observatory]] repair the structure and restore it to its former glory.
+
+==Details==
+{{Quest details
+|start = Talk to the [[Observatory professor]] in the [[Observatory]] Reception Room north of [[Castle Wars]].
+|startmap = 2441,3187
+|difficulty = Intermediate
+|description = The Observatory in south-west Ardougne has been ransacked by a family of nearby goblins. Can you help the professor to rebuild it?
+|length = Short
+|requirements = None
+|items = * 3 normal [[plank]]s
+* [[Bronze bar]]
+* [[Molten glass]]
+|recommended = * {{SCP|Combat|20|link=yes}}
+* [[Antipoison]] (a 1-dose [[superantipoison]] spawns in a house next to the entrance to the [[Observatory Dungeon]])
+* [[Armour]] and some [[food]] for lower levels
+* [[Stamina potion|Stamina]] or [[energy potions]]
+*Fast travel to the [[Observatory]] to start the quest - [[ring of dueling]] or [[Minigame Teleport]] to [[Castle Wars]], [[Ourania Teleport]], [[Spirit tree]] to [[Battlefield]], [[Ardougne cloak]] to [[Ardougne Monastery]], [[fairy ring]] {{fairycode|BKP}}
+* {{SCP|Agility|23|link=yes}}, {{SCP|Ranged|24|link=yes}}, {{SCP|Strength|28|link=yes}} (all stats boostable), a [[crossbow]] and [[mith grapple]] to create a permanent shortcut to the Observatory after completion of the quest.
+|kills = * [[Goblin guard]] ''(level 42)'' (Optional – can simply be trapped behind a column)
+|leagueRegion = <poem>
+{{LeagueRegion|Kandarin}} — location requirement
+</poem>
+}}
+[[File:Observatory Quest - Quest map.png|thumb|centre|420px|Map Showing the [[Observatory Quest]] Legend:<br/>
+(1): [[Observatory]], 
+'''(a)''': Furnace (for [[molten glass]] and [[Bronze bar]]), 
+'''(b)''': Planks (2x), 
+'''(c)''': [[Copper rocks|Copper]] and [[Tin rocks|Tin]] mines, 
+'''(d)''': Sandpit, 
+'''(e)''': [[Superantipoison]](1), 
+'''(f)''': Antipoison(1) chest,
+'''(g)''': [[Trader Crewmember]] (sells [[Soda ash]] and [[Bucket of Sand]], both 5 coins each),
+'''(A)''': Quest Area (Area to travel, from begin to end, if item collected beforehand).]]
+
+===Unwelcome neighbours===
+{{Needed|3 [[Plank|regular planks]], a [[bronze bar]], [[molten glass]]}}
+[[File:Observatory professor chathead.png|left|frameless]]
+Speak with the [[Observatory professor]], located in the reception room of the [[Observatory]] near the Observatory tower, north of [[Castle Wars]]. Ask him about the Observatory and he will mention that goblins have recently moved in and tampered with its telescope. To repair it, he needs three [[planks]] for the tripod, a [[bronze bar]] for the tube, and [[molten glass]] for a new lens.
+
+Talk to him again '''three times''', and he will take each item from you. Once you give him the final item, he will mention you also need to retrieve a mould for the new lens that has been stolen by goblins. '''Make sure the professor has taken all of the items before continuing''', otherwise you will need to repeat the next section.
+
+===Retrieving the lens mould===
+{{Needed|recommended=An [[antipoison]] potion, energy potions, combat equipment (for lower levels) and food}}
+[[File:Goblin guard chathead.png|left|frameless]]
+:'''Note:''' If you don't have a form of [[antipoison]], you can pick up a [[superantipoison]] at a spawn in the corner of the south-eastern building near [[Greasycheeks]] and [[Smellytoes]]'s fire.
+
+Go down the stairs to the east of the reception room to find the [[Observatory Dungeon]] (the room with the stairs is directly east of the start point).
+Once down the stairs, you must find the [[goblin kitchen key]]. It is commonly found in the south-eastern most chest although it can vary from person to person. Search any chests you pass on the way to the south-eastern chest just in case. '''Once you search the correct chest, complete the dialogue or you won't receive the key'''.
+
+:'''Note:''' Sometimes there may be a [[poisonous spider]] (level 31) inside the chest.
+
+With the key, follow the north-eastern path west to the kitchen gate. "Prod" the [[Goblin guard|sleeping guard]] (level 42), who will wake and attack you. Kill him or get him stuck behind a wall and you will be able to pass through the gate.
+
+:'''Note:''' Getting him stuck will cause him to attack you again when you leave, and another sleeping goblin will spawn.
+
+Open the kitchen gate, consuming the key, and then inspect the [[goblin stove]]. You determine the goblins are cooking something foul in the [[lens mould]]. Dump out the stew and bring the mould back to the professor.
+
+[[File:Goblin stove (mould).png|right|frameless|200px]]
+
+After speaking to the professor, his assistant will interject and ask you to make the new lens yourself as the professor has a history of explosions when attempting to craft things.
+
+Use the molten glass that the professor just gave you with the lens mould to craft him a new [[observatory lens|lens]]. Give it back to the professor. He will want you to visit him in the Observatory.
+
+===The Observatory===
+[[File:Observatory.png|thumb|220px|The [[Observatory]]]]
+Climb back down the stairs into the [[Observatory Dungeon]]. Now follow the north-west passage (past the kitchen) to find some stairs leading to the [[Observatory]] (the southern set of stairs on the map). There is also a chest north-east of the stairs to the [[Observatory]], which spawns infinite [[Antipoison(1)|Antipoison(1)]] vials, which you can combine to make full vials.
+
+Go up the stairs, and a [[cutscene]] will play. If the cutscene does not play, you may have forgotten to give the finished lens to the professor. After the cutscene ends, go up the stairs and talk to the [[Observatory professor|professor]], and then "view" the telescope to see a constellation.
+[[File:Observatory Quest - Through the Telescope.png|thumb|220px|Looking through the telescope.]]
+After closing the window, the professor should ask you which constellation you saw. The constellations are on [[star chart|wall charts]] in the main level of the Observatory. Identify your constellation, talk to the professor again, and you should get your reward in your inventory.
+
+{| class="wikitable" style="text-align:center;"
+!Name & Reward
+!Picture
+!Name & Reward
+!Picture
+|-
+|'''Aquarius'''<br/>25 [[Water rune]]s, [[uncut sapphire]]
+|[[File:Star Chart Viewer Aquarius.png|180px]]
+|'''Aries'''{{efn|Constellations that reward combat experience will not be assigned to players who are level 1 in the corresponding skill.{{CiteTwitter|author=Mod Ash|date=28 January 2023|url=https://twitter.com/JagexAsh/status/1619371447847366658|archiveurl=https://reldo.runescape.wiki/i/97038|archivedate=1 March 2023}} Beware these constellations can still be assigned to accounts that have started Observatory Quest prior to [[8 November]] [[2018]], the implementation date of a pure protection mechanism.{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1641512471071539200|date=30 March 2023|archiveurl=https://reldo.runescape.wiki/i/97320|archivedate=30 March 2023|quote=(...) While the game would avoid assigning the sign to a level 3, if you already had the sign from before the restriction existed the XP would still be granted.}}|group=pure|name=protection}}<br/>875 [[Attack]] [[experience]], [[uncut sapphire]]
+|[[File:Star Chart Viewer Aries.png|180px]]
+|-
+|'''Cancer'''<br/>[[Amulet of defence]], [[uncut sapphire]]
+|[[File:Star Chart Viewer Cancer.png|180px]]
+|'''Capricorn'''{{efn|group=pure|name=protection}}<br/>875 [[Strength]] [[experience]], [[uncut sapphire]]
+|[[File:Star Chart Viewer Capricorn.png|180px]]
+|-
+|'''Gemini'''<br/>[[Black 2h sword]], [[uncut sapphire]]
+|[[File:Star Chart Viewer Gemini.png|180px]]
+|'''Leo'''{{efn|group=pure|name=protection}}<br/>875 [[Hitpoints]] [[experience]], [[uncut sapphire]]
+|[[File:Star Chart Viewer Leo.png|180px]]
+|-
+|'''Libra'''<br/>3 [[Law rune]]s, [[uncut sapphire]]
+|[[File:Star Chart Viewer Libra.png|180px]]
+|'''Pisces'''<br/>3 [[Tuna]], [[uncut sapphire]]
+|[[File:Star Chart Viewer Pisces.png|180px]]
+|-
+|'''Sagittarius'''<br/>[[Maple longbow]], [[uncut sapphire]]
+|[[File:Star Chart Viewer Sagittarius.png|180px]]
+|'''Scorpio'''<br/>[[Weapon poison]], [[uncut sapphire]]
+|[[File:Star Chart Viewer Scorpio.png|180px]]
+|-
+|'''Taurus'''<br/>[[Super strength|Super strength(1)]], [[uncut sapphire]]
+|[[File:Star Chart Viewer Taurus.png|180px]]
+|'''Virgo'''{{efn||group=pure|name=protection}}<br/>875 [[Defence]] [[experience]], [[uncut sapphire]]
+|[[File:Star Chart Viewer Virgo.png|180px]]
+|}
+{{Notelist|group=P}}
+'''Congratulations, quest complete!'''
+
+==Rewards==
+{{Quest rewards
+|name = Observatory Quest
+|image = [[File:Observatory Quest reward scroll.png|centre]]
+|qp = 2
+|rewards = 
+* {{SCP|Crafting|2,250}} [[Crafting]] [[experience]]
+*Your item reward depends on what astrological sign you see when you look through the telescope. It is different for each person. Each one rewards an [[uncut sapphire]] as well as one of the following:
+**Aquarius: 25 [[water rune]]s
+**Aries: 875 {{SCP|Attack}} [[Attack]] experience
+**Cancer: An [[amulet of defence]]
+**Capricorn: 875 {{SCP|Strength}} [[Strength]] experience
+**Gemini: A [[black 2h sword]]
+**Leo: 875 {{SCP|Hitpoints}} [[Hitpoints]] experience
+**Libra: 3 [[law rune]]s
+**Pisces: 3 [[tuna]]
+**Sagittarius: A [[maple longbow]]
+**Scorpio: [[Weapon poison]]
+**Taurus: A 1-dose [[super strength]] potion
+**Virgo: 875 {{SCP|Defence}} [[Defence]] experience
+*The [[Spirit of Scorpius]] will now give you a [[Unholy mould|mould]] to make [[unholy symbol]]s, and he will bless them for you too. He can be found in the graveyard north of the [[Observatory]].
+*Talk to the [[Observatory assistant]] after the [[quest]] and he will reward you with a [[jug of wine]] as well as tell you his and the professor's real name.
+*Access to the grappling [[shortcut]] rock outside the Observatory.
+*Completing this quest awards the player with 5 [[Kudos]] which can be claimed by talking to [[Historian Minas]] in the [[Varrock Museum]].
+}}
+
+==Transcript==
+{{Hastranscript|quest}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 8 November 2018
+|update = The Portal Nexus
+|change = Constellations that reward combat experience will no longer be assigned to players who are level 1 in the corresponding skill.{{CiteTwitter|author=Mod Ash|url=https://twitter.com/JagexAsh/status/1641724101596176384|date=31 March 2023|archiveurl=https://reldo.runescape.wiki/i/107821|archivedate=31 March 2023|quote=[(...) would you happen to know when this pure protection mechanism was put into place roughly?] Turns out it was 8th November 2018.}}
+}}
+{{Subject changes footer}}
+
+==Trivia==
+*If the player talks to the Observatory assistant after the quest, he will give the player a jug of wine as thanks for the help. He will also tell the player his and the professor's real names, which are Patrick and Mambo-duna-roona, respectively.
+*The professor may give you a [[chart]] during or after the quest. Although it is no longer a requirement now, you may still want to keep it for [[Treasure Trails]].
+*After the quest is completed, the drop rate of [[mithril bolt]]s from [[chaos druid]]s and [[elder chaos druid]]s will be slightly decreased, due to the [[unholy mould]] drop that is added to their tables.
+
+==References==
+{{Reflist}}
+
+{{Observatory Quest}}

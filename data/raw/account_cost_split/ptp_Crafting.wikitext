@@ -1,0 +1,998 @@
+{{External|rs|rsc=Crafting training}}
+{{Redirect|Crafting training|the free players' guide|Free-to-play Crafting training}}
+
+[[Crafting]] training methods usually cost money and require a lot of capital to buy the supplies needed. Prices of materials will fluctuate, so check the Grand Exchange prices before buying and selling them in large quantities.
+
+==Starting off==
+There are plenty of [[Quest experience rewards#Crafting|quests that give Crafting experience]] upon completion, which allows the player to skip a lot of early Crafting training. If the player is going to complete them anyway, it is best to do as early as possible since the experience rewards benefit more at lower levels as the training methods are slower.
+
+==Fastest experience==
+===Levels 1–20: Leather items===
+From level 1 to 20, craft the highest-level leather item available. [[Leather]] currently costs {{Coins|{{GEP|Leather}}}} each and all items only require one leather to craft. In order to craft any leather items, you need a [[needle]] and some [[thread]]. Since each thread is good for around 5 uses, to get to level 20 with this method, you will need around 50 [[thread]].
+
+{|class="wikitable align-center-1 align-center-2 align-left-3" style="text-align:right;"
+!{{SCP|Crafting}} Level
+! colspan="2" |Leather item
+!XP
+!{{plinkp|Leather}} needed
+!Total cost
+|-
+|1–7
+|{{plinkt|Leather gloves|txt=Gloves}}
+|13.8||48
+|{{Coins|{{GEP|Leather|48}}}}
+|-
+|7–9
+|{{plinkt|Leather boots|txt=Boots}}
+|16.2||19
+|{{Coins|{{GEP|Leather|19}}}}
+|-
+|9–11
+|{{plinkt|Leather cowl|txt=Cowl}}
+|18.5||21
+|{{Coins|{{GEP|Leather|21}}}}
+|-
+|11–14
+|{{plinkt|Leather vambraces|txt=Vambraces}}
+|22||34
+|{{Coins|{{GEP|Leather|34}}}}
+|-
+|14–18
+|{{plinkt|Leather body|txt=Body}}
+|25||57
+|{{Coins|{{GEP|Leather|57}}}}
+|-
+|18-20
+|{{plinkt|Leather chaps|txt=Chaps}}
+|27||36
+|{{Coins|{{GEP|Leather|36}}}}
+|-
+! colspan="4" |Total
+! style="text-align:right;" |215
+! style="text-align:right;" |{{Coins|{{GEP|Leather|215}}}}
+|}
+This will require a total of 215 leather, for a total cost of {{Coins|{{GEP|Leather|215}}}}. Every leather item is created in 3 ticks (1.8 seconds), so the total creation time for all 215 leather items is 645 ticks (387 seconds).
+
+===Levels 20–62/77/99: Cutting gems===
+{{Var|perHour|2780}}
+Cutting (uncut) gems offers the fastest experience up to level 77. However, cutting dragonstones is much more expensive compared to the lower-level gems, so it is recommended to keep cutting diamonds until level 62 and continue with fire battlestaves. Depending on the prices, it may be worthwhile to also skip cutting diamonds, and cut rubies until level 58 and continue with earth battlestaves. Using [[High Level Alchemy]] on gems is not recommended due to further profit loss, so the table below does not explore this avenue.
+
+Even though onyxes offer faster experience, they are not viable due to incredibly high cost and limited supply. 
+
+The experience rates and costs are shown in the table below. The rates assume players cut {{#var:perHour}} gems per hour.
+
+{|class="wikitable align-center-1 align-center-2 align-left-3" style="text-align:right;"
+<!--2,780 gems/h assumes 58 ticks per 27 gems incl. banking, with some room for mistakes. The tick-perfect rate is 2,793 gems/h.-->
+! rowspan="2" |{{SCP|Crafting}} Level
+! rowspan="2" colspan="2" |Gem
+! rowspan="2" |XP
+! rowspan="2" |XP/h
+! rowspan="2" |# to next
+! colspan="4" |Prices ([[Grand Exchange|GE]])
+|-
+!Buy
+!Profit <!-- GE -->
+!Total profit <!-- GE -->
+!GP/XP <!-- GE -->
+|-
+|20
+|{{plinkt|Sapphire}}
+|{{Var|xpSapphire|50}} {{#var:xpSapphire}} <!-- This line defines and displays the variable -->
+|{{formatnum:{{#expr:{{#var:xpSapphire}}*{{#var: perHour}}}}}}
+|{{Var|toNextSapphire|106}} {{#var:toNextSapphire}} <!-- This line defines and displays the variable -->
+|{{Coins|{{GEP|Uncut sapphire}}}}
+|{{Coins|{{GEPT|Sapphire}}-{{GEP|Uncut sapphire}}}}
+|{{Coins|({{GEPT|Sapphire}}-{{GEP|Uncut sapphire}})*{{#var:toNextSapphire}}}}
+|{{Coins|({{GEPT|Sapphire}}-{{GEP|Uncut sapphire}})/{{#var:xpSapphire}}}}
+|-
+|27
+|{{plinkt|Emerald}}
+|{{Var|xpEmerald|67.5}} {{#var:xpEmerald}} <!-- This line defines and displays the variable -->
+|{{formatnum:{{#expr:{{#var:xpEmerald}}*{{#var: perHour}}}}}}
+|{{Var|toNextEmerald|156}} {{#var:toNextEmerald}} <!-- This line defines and displays the variable -->
+|{{Coins|{{GEP|Uncut emerald}}}}
+|{{Coins|{{GEPT|Emerald}}-{{GEP|Uncut emerald}}}}
+|{{Coins|({{GEPT|Emerald}}-{{GEP|Uncut emerald}})*{{#var:toNextEmerald}}}}
+|{{Coins|({{GEPT|Emerald}}-{{GEP|Uncut emerald}})/{{#var:xpEmerald}}}}
+|-
+|34
+|{{plinkt|Ruby}}
+|{{Var|xpRuby|85}} {{#var:xpRuby}} <!-- This line defines and displays the variable -->
+|{{formatnum:{{#expr:{{#var:xpRuby}}*{{#var: perHour}}}}}}
+|{{Var|toNextRuby|355}} {{#var:toNextRuby}} <!-- This line defines and displays the variable -->
+|{{Coins|{{GEP|Uncut ruby}}}}
+|{{Coins|{{GEPT|Ruby}}-{{GEP|Uncut ruby}}}}
+|{{Coins|({{GEPT|Ruby}}-{{GEP|Uncut ruby}})*{{#var:toNextRuby}}}}
+|{{Coins|({{GEPT|Ruby}}-{{GEP|Uncut ruby}})/{{#var:xpRuby}}}}
+|-
+|43
+|{{plinkt|Diamond}}
+|{{Var|xpDiamond|107.5}} {{#var:xpDiamond}} <!-- This line defines and displays the variable -->
+|{{formatnum:{{#expr:{{#var:xpDiamond}}*{{#var: perHour}}}}}}
+|{{Var|toNextDiamond|1082}} {{#var:toNextDiamond}} <!-- This line defines and displays the variable -->
+|{{Coins|{{GEP|Uncut diamond}}}}
+|{{Coins|{{GEPT|Diamond}}-{{GEP|Uncut diamond}}}}
+|{{Coins|({{GEPT|Diamond}}-{{GEP|Uncut diamond}})*{{#var:toNextDiamond}}}}
+|{{Coins|({{GEPT|Diamond}}-{{GEP|Uncut diamond}})/{{#var:xpDiamond}}}}
+|-
+| rowspan="2" |55
+| rowspan="2" |{{plinkp|Dragonstone}}
+| rowspan="2" |[[Dragonstone]]
+| rowspan="2" |{{Var|xpDragonstone|137.5}} {{#var:xpDragonstone}} <!-- This line defines and displays the variable -->
+| rowspan="2" |{{formatnum:{{#expr:{{#var:xpDragonstone}}*{{#var: perHour}}}}}}
+|{{Var|to62Dragonstone|1216}} {{#var:to62Dragonstone}}<ref name="to62" group="n">To [[Crafting]] level 62.</ref> <!-- This line defines and displays the variable -->
+| rowspan="2" |{{Coins|{{GEP|Uncut dragonstone}}}}
+| rowspan="2" |{{Coins|{{GEPT|Dragonstone}}-{{GEP|Uncut dragonstone}}}}
+|{{Coins|({{GEPT|Dragonstone}}-{{GEP|Uncut dragonstone}})*{{#var:to62Dragonstone}}}}<ref name="to62" group="n" />
+| rowspan="2" |{{Coins|({{GEPT|Dragonstone}}-{{GEP|Uncut dragonstone}})/{{#var:xpDragonstone}}}}
+|-
+|{{Var|to77Dragonstone|9520}} {{#var:to77Dragonstone}}<ref name="to77" group="n">To [[Crafting]] level 77.</ref> <!-- This line defines and displays the variable -->
+|{{Coins|({{GEPT|Dragonstone}}-{{GEP|Uncut dragonstone}})*{{#var:to77Dragonstone}}}}<ref name="to77" group="n" />
+|}<references group="n" />
+
+===Levels 54–77/99: Battlestaves===
+{{Var|perHour|2450}}
+Crafting battlestaves offers relatively fast experience and is usually cheaper compared to other methods. While this method is usually relatively cheap, buying the supplies requires a lot of capital.
+
+Fire and air battlestaves have comparable experience rates to green and blue d'hide bodies, respectively, so choose based on the Grand Exchange prices. Green and blue d'hide bodies require a lot less capital.
+
+Players who have completed tiers of the [[Varrock Diary]] may also purchase noted battlestaves daily from [[Zaff]] for a reduced price. This will save {{Coins|{{GEP|Battlestaff}}-7000}} per battlestaff compared to purchasing them from the Grand Exchange.
+
+[[#Levels 63/77–99: D'hide bodies|Crafting d'hide bodies]] becomes considerably faster at level 77 and even more so at level 84, but air battlestaves remain as a good cheaper alternative.
+
+The experience rates shown in the table below assume {{#var:perHour}} battlestaves crafted per hour. Expect lower rates if idling. With perfect banking, it is possible to craft up to 2,625 battlestaves per hour. [[High Level Alchemy]] can be cast on the battlestaves later to reduce costs while also gaining passive [[Magic]] experience. If including the time taken to cast High Level Alchemy, only 800 battlestaves can be made and alched per hour.
+
+{| class="wikitable align-center-1 align-center-2 align-left-3" style="text-align:right;"
+! rowspan="2" |{{SCP|Crafting}} Level
+! colspan="2" rowspan="2" |Battlestaff
+! rowspan="2" |XP
+! rowspan="2" |XP/h
+! rowspan="2" |# to next
+! colspan="4" |Prices ([[Grand Exchange|GE]])
+! colspan="3" |Prices ([[High Alchemy|HA]])
+|-
+!Buy
+!Profit <!-- GE -->
+!Total profit <!-- GE -->
+!GP/XP <!-- GE -->
+!Profit <!-- HA -->
+!Total profit <!-- HA -->
+!GP/XP <!-- HA -->
+|-
+|54
+|{{plinkt|Water battlestaff|txt=Water}}
+|{{Var|xpWaterBattlestaff|100}} {{#var:xpWaterBattlestaff}} <!-- This line defines and displays the variable -->
+|{{formatnum:{{#expr:{{#var:xpWaterBattlestaff}}*{{#var: perHour}}}}}}
+|{{Var|toNextWaterBattlestaff|736}} {{formatnum:{{#var:toNextWaterBattlestaff}}}} <!-- This line defines and displays the variable -->
+|{{Coins|{{GEP|Battlestaff}}+{{GEP|Water orb}}}}
+|{{Coins|{{GEPT|Water battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Water orb}}}}
+|{{Coins|({{GEPT|Water battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Water orb}})*{{#var:toNextWaterBattlestaff}}}}
+|{{Coins|({{GEPT|Water battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Water orb}})/{{#var:xpWaterBattlestaff}}}}
+|{{Coins|{{HA|Water battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Water orb}}-{{GEP|Nature rune}}}}
+|{{Coins|({{HA|Water battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Water orb}}-{{GEP|Nature rune}})*{{#var:toNextWaterBattlestaff}}}}
+|{{Coins|({{HA|Water battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Water orb}}-{{GEP|Nature rune}})/{{#var:xpWaterBattlestaff}}}}
+|-
+|58
+|{{plinkt|Earth battlestaff|txt=Earth}}
+|{{Var|xpEarthBattlestaff|112.5}} {{#var:xpEarthBattlestaff}} <!-- This line defines and displays the variable -->
+|{{formatnum:{{#expr:{{#var:xpEarthBattlestaff}}*{{#var: perHour}}}}}}
+|{{Var|toNextEarthBattlestaff|972}} {{formatnum:{{#var:toNextEarthBattlestaff}}}} <!-- This line defines and displays the variable -->
+|{{Coins|{{GEP|Battlestaff}}+{{GEP|Earth orb}}}}
+|{{Coins|{{GEPT|Earth battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Earth orb}}}}
+|{{Coins|({{GEPT|Earth battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Earth orb}})*{{#var:toNextEarthBattlestaff}}}}
+|{{Coins|({{GEPT|Earth battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Earth orb}})/{{#var:xpEarthBattlestaff}}}}
+|{{Coins|{{HA|Earth battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Earth orb}}-{{GEP|Nature rune}}}}
+|{{Coins|({{HA|Earth battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Earth orb}}-{{GEP|Nature rune}})*{{#var:toNextEarthBattlestaff}}}}
+|{{Coins|({{HA|Earth battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Earth orb}}-{{GEP|Nature rune}})/{{#var:xpEarthBattlestaff}}}}
+|-
+|62
+|{{plinkt|Fire battlestaff|txt=Fire}}
+|{{Var|xpFireBattlestaff|125}} {{#var:xpFireBattlestaff}} <!-- This line defines and displays the variable -->
+|{{formatnum:{{#expr:{{#var:xpFireBattlestaff}}*{{#var: perHour}}}}}}
+|{{Var|toNextFireBattlestaff|1300}} {{formatnum:{{#var:toNextFireBattlestaff}}}}
+<!-- This line defines and displays the variable -->
+|{{Coins|{{GEP|Battlestaff}}+{{GEP|Fire orb}}}}
+|{{Coins|{{GEPT|Fire battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Fire orb}}}}
+|{{Coins|({{GEPT|Fire battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Fire orb}})*{{#var:toNextFireBattlestaff}}}}
+|{{Coins|({{GEPT|Fire battlestaff}}-({{GEP|Battlestaff}}+{{GEP|Fire orb}}))/{{#var:xpFireBattlestaff}}}}
+|{{Coins|{{HA|Fire battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Fire orb}}-{{GEP|Nature rune}}}}
+|{{Coins|({{HA|Fire battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Fire orb}}-{{GEP|Nature rune}})*{{#var:toNextFireBattlestaff}}}}
+|{{Coins|({{HA|Fire battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Fire orb}}-{{GEP|Nature rune}})/{{#var:xpFireBattlestaff}}}}
+|-
+| rowspan="2" |66
+| rowspan="2" |{{plinkp|Air battlestaff}}
+| rowspan="2" |[[Air Battlestaff|Air]]
+| rowspan="2" |{{Var|xpAirBattlestaff|137.5}} {{#var:xpAirBattlestaff}} <!-- This line defines and displays the variable -->
+| rowspan="2" |{{formatnum:{{#expr:{{#var:xpAirBattlestaff}}*{{#var: perHour}}}}}}
+|{{Var|to77AirBattlestaff|7123}} {{formatnum:{{#var:to77AirBattlestaff}}}}<ref name="to77" group="n">To [[Crafting]] level 77.</ref> <!-- This line defines and displays the variable -->
+| rowspan="2" |{{Coins|{{GEP|Battlestaff}}+{{GEP|Air orb}}}}
+| rowspan="2" |{{Coins|{{GEPT|Air battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Air orb}}}}
+|{{Coins|({{GEPT|Air battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Air orb}})*{{#var:to77AirBattlestaff}}}}<ref name="to77" group="n" />
+| rowspan="2" |{{Coins|(({{GEPT|Air battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Air orb}}))/{{#var:xpAirBattlestaff}}}}
+| rowspan="2" |{{Coins|{{HA|Air battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Air orb}}-{{GEP|Nature rune}}}}
+|{{Coins|({{HA|Air battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Air orb}}-{{GEP|Nature rune}})*{{#var:to77AirBattlestaff}}}}<ref name="to77" group="n" />
+| rowspan="2" |{{Coins|({{HA|Air battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Air orb}}-{{GEP|Nature rune}})/{{#var:xpAirBattlestaff}}}}
+|-
+|{{Var|to99AirBattlestaff|91187}} {{formatnum:{{#var:to99AirBattlestaff}}}}<ref name="to99" group="n">To [[Crafting]] level 99.</ref> <!-- This line defines and displays the variable -->
+|{{Coins|({{GEPT|Air battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Air orb}})*{{#var:to99AirBattlestaff}}}}<ref name="to99" group="n" />
+|{{Coins|({{HA|Air battlestaff}}-{{GEP|Battlestaff}}-{{GEP|Air orb}}-{{GEP|Nature rune}})*{{#var:to99AirBattlestaff}}}}<ref name="to99" group="n" />
+|}<references group="n" />
+
+===Levels 63/77–99: D'hide bodies===
+{{Var|perHourNeedleThread|1685}}
+{{Var|perHourCostumeNeedle|1705}}
+{{Var|perHourTickManipulation|1783}}
+Crafting d'hide bodies becomes the fastest viable training method from level 77 onwards. Players can begin crafting green d'hide bodies at level 63, or blue d'hide bodies at level 71 as an alternative method to cutting gems or crafting battlestaves.
+
+Use the [[costume needle]] to craft 9 d'hide bodies per inventory. The player can obtain one from the [[Costumer]] in [[Aldarin]] after completing [[Death on the Isle]]. Without the costume needle, the player will need [[thread]] to craft d'hide bodies, which only allows making 8 d'hide bodies per inventory and will lower experience rates slightly.
+
+Turn on deposit lock in the bank menu to bank efficiently. This allows the player to only deposit d'hide bodies with the 'Deposit inventory' button without depositing the costume needle.
+
+The player can use [[tick manipulation]] to start the crafting process one tick faster. To do this, have an alternative account to lure aggressiveness of a gnome at the [[Gnome Stronghold south bank]]. Position the gnome so that they stand on an adjacent tile to the bank booth. Equip a [[shortbow]] (or similar) without ammo and set the attack option to Rapid. When banking, quickly attempt to attack the gnome before using the needle on a leather. This will skip the stall from making the first item when done correctly, which will increase experience rates slightly.
+
+Green and blue d'hide bodies offer comparable experience rates to fire and air battlestaves, respectively. Choose whichever is cheaper. However, green and blue d'hide bodies require a lot less capital. Black d'hide bodies offer the fastest experience but they are typically much more expensive compared to other methods, so look into cheaper alternatives if seeking to save money.
+
+The experience rates in the table below assume good banking and paying attention. Expect lower rates if idling or making mistakes with banking. With tick manipulation, players can craft up to {{#var:perHourTickManipulation}} d'hide bodies per hour. Without tick manipulation, it is possible to craft up to {{#var:perHourCostumeNeedle}} d'hide bodies per hour when using the costume needle. [[High Level Alchemy]] can be cast on the d'hide bodies later to reduce costs while also gaining passive [[Magic]] experience. The High Level Alchemy prices assume a [[staff of fire]] or equivalent is used. The self-tan prices assume buying untanned dragonhide and casting [[Tan Leather]] with a staff of fire or equivalent; each body requires 3 hides, so this adds 3/5 of one cast per body. If including the time taken to cast high alchemy, only about 700 d'hide bodies can be made and alched per hour.
+
+{| class="wikitable align-center-1 align-center-2 align-left-3" style="text-align:right;"
+! rowspan="2" |{{SCP|Crafting}} Level
+! colspan="2" rowspan="2" |D'hide body
+! rowspan="2" |XP
+! colspan="3" |XP/h
+! colspan="4" |Prices ([[Grand Exchange|GE]])
+! colspan="2" |Prices ([[High Alchemy|HA]])
+! colspan="2" |Prices ([[High Alchemy|HA]], self-tan)
+|-
+!{{plinkp|Needle}}&{{Plinkp|thread}}<ref group="n">Assumes {{#var:perHourNeedleThread}} actions per hour when crafting eight d'hide bodies per inventory.</ref>
+!{{plinkp|Costume needle}}<ref group="n">Assumes {{#var:perHourCostumeNeedle}} actions per hour when crafting nine d'hide bodies per inventory.</ref>
+!Tick manip.<ref group="n">Assumes {{#var:perHourTickManipulation}} actions per hour when using tick manipulation and crafting nine d'hide bodies per inventory.</ref>
+!Buy
+!Profit
+!GP/XP
+!GP/XP (self-tan)<ref group="n">Assumes buying untanned dragonhide and casting [[Tan Leather]] with a [[staff of fire]] or equivalent. Each cast tans 5 hides and costs {{GEP|Nature rune}} + {{GEP|Astral rune|2}}, so each body adds 3/5 of that rune cost.</ref>
+!Profit
+!GP/XP
+!Profit
+!GP/XP
+|-
+|63
+|{{plinkt|Green d'hide body|txt=Green}}
+|{{Var|xpGreenDhide|186}} {{#var:xpGreenDhide}}
+|{{formatnum: {{#expr: {{#var:xpGreenDhide}} * {{#var:perHourNeedleThread}} }} }}
+|{{formatnum: {{#expr: {{#var:xpGreenDhide}} * {{#var:perHourCostumeNeedle}} }} }}
+|{{formatnum: {{#expr: {{#var:xpGreenDhide}} * {{#var:perHourTickManipulation}} }} }}
+|{{Coins|{{GEP|Green dragon leather|3}}}}
+|{{Coins|{{GEPT|Green d'hide body|1}}-{{GEP|Green dragon leather|3}}}}
+|{{Coins|({{GEPT|Green d'hide body|1}}-{{GEP|Green dragon leather|3}})/{{#var:xpGreenDhide}}}}
+|{{Coins|({{GEPT|Green d'hide body|1}}-{{GEP|Green dragonhide|3}}-({{GEP|Nature rune}}+{{GEP|Astral rune|2}})*3/5)/{{#var:xpGreenDhide}}}}
+|{{Coins|{{HA|Green d'hide body|1}}-{{GEP|Green dragon leather|3}}-{{GEP|Nature rune}}}}
+|{{Coins|({{HA|Green d'hide body|1}}-{{GEP|Green dragon leather|3}}-{{GEP|Nature rune}})/{{#var:xpGreenDhide}}}}
+|{{Coins|{{HA|Green d'hide body|1}}-{{GEP|Green dragonhide|3}}-({{GEP|Nature rune}}+{{GEP|Astral rune|2}})*3/5-{{GEP|Nature rune}}}}
+|{{Coins|({{HA|Green d'hide body|1}}-{{GEP|Green dragonhide|3}}-({{GEP|Nature rune}}+{{GEP|Astral rune|2}})*3/5-{{GEP|Nature rune}})/{{#var:xpGreenDhide}}}}
+|-
+|71
+|{{plinkt|Blue d'hide body|txt=Blue}}
+|{{Var|xpBlueDhide|210}} {{#var:xpBlueDhide}}
+|{{formatnum: {{#expr: {{#var:xpBlueDhide}} * {{#var:perHourNeedleThread}} }} }}
+|{{formatnum: {{#expr: {{#var:xpBlueDhide}} * {{#var:perHourCostumeNeedle}} }} }}
+|{{formatnum: {{#expr: {{#var:xpBlueDhide}} * {{#var:perHourTickManipulation}} }} }}
+|{{Coins|{{GEP|Blue dragon leather|3}}}}
+|{{Coins|{{GEPT|Blue d'hide body|1}}-{{GEP|Blue dragon leather|3}}}}
+|{{Coins|({{GEPT|Blue d'hide body|1}}-{{GEP|Blue dragon leather|3}})/{{#var:xpBlueDhide}}}}
+|{{Coins|({{GEPT|Blue d'hide body|1}}-{{GEP|Blue dragonhide|3}}-({{GEP|Nature rune}}+{{GEP|Astral rune|2}})*3/5)/{{#var:xpBlueDhide}}}}
+|{{Coins|{{HA|Blue d'hide body|1}}-{{GEP|Blue dragon leather|3}}-{{GEP|Nature rune}}}}
+|{{Coins|({{HA|Blue d'hide body|1}}-{{GEP|Blue dragon leather|3}}-{{GEP|Nature rune}})/{{#var:xpBlueDhide}}}}
+|{{Coins|{{HA|Blue d'hide body|1}}-{{GEP|Blue dragonhide|3}}-({{GEP|Nature rune}}+{{GEP|Astral rune|2}})*3/5-{{GEP|Nature rune}}}}
+|{{Coins|({{HA|Blue d'hide body|1}}-{{GEP|Blue dragonhide|3}}-({{GEP|Nature rune}}+{{GEP|Astral rune|2}})*3/5-{{GEP|Nature rune}})/{{#var:xpBlueDhide}}}}
+|-
+|77
+|{{plinkt|Red d'hide body|txt=Red}}
+|{{Var|xpRedDhide|234}} {{#var:xpRedDhide}}
+|{{formatnum: {{#expr: {{#var:xpRedDhide}} * {{#var:perHourNeedleThread}} }} }}
+|{{formatnum: {{#expr: {{#var:xpRedDhide}} * {{#var:perHourCostumeNeedle}} }} }}
+|{{formatnum: {{#expr: {{#var:xpRedDhide}} * {{#var:perHourTickManipulation}} }} }}
+|{{Coins|{{GEP|Red dragon leather|3}}}}
+|{{Coins|{{GEPT|Red d'hide body|1}}-{{GEP|Red dragon leather|3}}}}
+|{{Coins|({{GEPT|Red d'hide body|1}}-{{GEP|Red dragon leather|3}})/{{#var:xpRedDhide}}}}
+|{{Coins|({{GEPT|Red d'hide body|1}}-{{GEP|Red dragonhide|3}}-({{GEP|Nature rune}}+{{GEP|Astral rune|2}})*3/5)/{{#var:xpRedDhide}}}}
+|{{Coins|{{HA|Red d'hide body|1}}-{{GEP|Red dragon leather|3}}-{{GEP|Nature rune}}}}
+|{{Coins|({{HA|Red d'hide body|1}}-{{GEP|Red dragon leather|3}}-{{GEP|Nature rune}})/{{#var:xpRedDhide}}}}
+|{{Coins|{{HA|Red d'hide body|1}}-{{GEP|Red dragonhide|3}}-({{GEP|Nature rune}}+{{GEP|Astral rune|2}})*3/5-{{GEP|Nature rune}}}}
+|{{Coins|({{HA|Red d'hide body|1}}-{{GEP|Red dragonhide|3}}-({{GEP|Nature rune}}+{{GEP|Astral rune|2}})*3/5-{{GEP|Nature rune}})/{{#var:xpRedDhide}}}}
+|-
+|84
+|{{plinkt|Black d'hide body|txt=Black}}
+|{{Var|xpBlackDhide|258}} {{#var:xpBlackDhide}}
+|{{formatnum: {{#expr: {{#var:xpBlackDhide}} * {{#var:perHourNeedleThread}} }} }}
+|{{formatnum: {{#expr: {{#var:xpBlackDhide}} * {{#var:perHourCostumeNeedle}} }} }}
+|{{formatnum: {{#expr: {{#var:xpBlackDhide}} * {{#var:perHourTickManipulation}} }} }}
+|{{Coins|{{GEP|Black dragon leather|3}}}}
+|{{Coins|{{GEPT|Black d'hide body|1}}-{{GEP|Black dragon leather|3}}}}
+|{{Coins|({{GEPT|Black d'hide body|1}}-{{GEP|Black dragon leather|3}})/{{#var:xpBlackDhide}}}}
+|{{Coins|({{GEPT|Black d'hide body|1}}-{{GEP|Black dragonhide|3}}-({{GEP|Nature rune}}+{{GEP|Astral rune|2}})*3/5)/{{#var:xpBlackDhide}}}}
+|{{Coins|{{HA|Black d'hide body|1}}-{{GEP|Black dragon leather|3}}-{{GEP|Nature rune}}}}
+|{{Coins|({{HA|Black d'hide body|1}}-{{GEP|Black dragon leather|3}}-{{GEP|Nature rune}})/{{#var:xpBlackDhide}}}}
+|{{Coins|{{HA|Black d'hide body|1}}-{{GEP|Black dragonhide|3}}-({{GEP|Nature rune}}+{{GEP|Astral rune|2}})*3/5-{{GEP|Nature rune}}}}
+|{{Coins|({{HA|Black d'hide body|1}}-{{GEP|Black dragonhide|3}}-({{GEP|Nature rune}}+{{GEP|Astral rune|2}})*3/5-{{GEP|Nature rune}})/{{#var:xpBlackDhide}}}}
+|}<references group="n" />
+
+==Other methods==
+===Levels 1–83/99: Molten glass===
+Blowing [[molten glass]] with a [[glassblowing pipe]] offers very slow experience rates, but it requires little attention and a low amount of capital. Most low-level items are not viable due to high cost, but certain higher-level ones, such as unpowered orbs, may be very cheap depending on the prices. Consider making money through other means and training with faster methods, such as cutting low-level gems.
+
+{| class="wikitable sortable align-center-1 align-center-2 align-left-3" style="text-align:right;"
+! rowspan="2" |{{SCP|Crafting}} Level
+! colspan="2" rowspan="2" | Item
+! rowspan="2" |XP
+! rowspan="2" |XP/h<ref group="n">Assumes 1,750 glass items blown per hour.</ref>
+! colspan="3" |GE Price
+! rowspan="2" |GP/XP
+|-
+!Buy
+!Sell
+!Diff
+|-
+|1
+|{{plinkt|Beer glass}}
+|17.5||30,625
+|{{Coins|{{GEP|Molten glass}}}}
+|{{Coins|{{GEPT|Beer glass}}}}
+|{{Coins|{{GEPT|Beer glass}}-{{GEP|Molten glass}}}}
+|{{Coins|({{GEPT|Beer glass}}-{{GEP|Molten glass}})/17}}
+|-
+|4
+|{{plinkt|Empty candle lantern}}
+|19||33,250
+|{{Coins|{{GEP|Molten glass}}}}
+|{{Coins|{{GEPT|Empty candle lantern}}}}
+|{{Coins|{{GEPT|Empty candle lantern}}-{{GEP|Molten glass}}}}
+|{{Coins|({{GEPT|Empty candle lantern}}-{{GEP|Molten glass}})/19}}
+|-
+|12
+|{{plinkt|Empty oil lamp}}
+|25||43,750
+|{{Coins|{{GEP|Molten glass}}}}
+|{{Coins|{{GEPT|Empty oil lamp}}}}
+|{{Coins|{{GEPT|Empty oil lamp}}-{{GEP|Molten glass}}}}
+|{{Coins|({{GEPT|Empty oil lamp}}-{{GEP|Molten glass}})/25}}
+|-
+|33
+|{{plinkt|Vial}}
+|35||61,250
+|{{Coins|{{GEP|Molten glass}}}}
+|{{Coins|{{GEPT|Vial}}}}
+|{{Coins|{{GEPT|Vial}}-{{GEP|Molten glass}}}}
+|{{Coins|({{GEPT|Vial}}-{{GEP|Molten glass}})/35}}
+|-
+|42
+|{{plinkt|Empty fishbowl}}
+|42.5||74,375
+|{{Coins|{{GEP|Molten glass}}}}
+|{{Coins|{{GEPT|Empty fishbowl}}}}
+|{{Coins|{{GEPT|Empty fishbowl}}-{{GEP|Molten glass}}}}
+|{{Coins|({{GEPT|Empty fishbowl}}-{{GEP|Molten glass}})/42.5}}
+|-
+|46
+|{{plinkt|Unpowered orb}}
+|52.5||91,875
+|{{Coins|{{GEP|Molten glass}}}}
+|{{Coins|{{GEPT|Unpowered orb}}}}
+|{{Coins|{{GEPT|Unpowered orb}}-{{GEP|Molten glass}}}}
+|{{Coins|({{GEPT|Unpowered orb}}-{{GEP|Molten glass}})/52.5}}
+|-
+|49
+|{{plinkt|Lantern lens}}
+|55||96,250
+|{{Coins|{{GEP|Molten glass}}}}
+|{{Coins|{{GEPT|Lantern lens}}}}
+|{{Coins|{{GEPT|Lantern lens}}-{{GEP|Molten glass}}}}
+|{{Coins|({{GEPT|Lantern lens}}-{{GEP|Molten glass}})/55}}
+|-
+|87
+|{{plinkt|Empty light orb}}
+|70||122,500
+|{{Coins|{{GEP|Molten glass}}}}
+|Not sold
+|{{Coins|-{{GEP|Molten glass}}}}
+|{{Coins|-{{GEP|Molten glass}}/70}}
+|}<references group="n" />
+
+===Levels 5–99: Crafting jewellery===
+Starting at level 5, players can begin crafting gold jewellery using a gold bar and the appropriate mould at a furnace. The type of jewellery crafted depends on the mould used, with rings, necklaces, amulets, and bracelets being the primary options.
+
+The best location for crafting is Prifddinas, as it features the shortest distance between a bank and a furnace. If you do not have access to [[Prifddinas]], [[Edgeville]] is the next best option. Another alternative is the [[Shilo Village (location)|Shilo Village]] furnace, which is even closer to the bank than Edgeville’s but requires a 20gp fee per use (players can deposit bulk payments in the coffer for convenience).
+
+If available, wearing weight-reducing clothing will help reduce run energy drain, making trips more efficient. At higher crafting levels, certain jewellery items, such as [[dragonstone]] can be profitable, though they tend to be traded in lower quantities.
+
+[[Zenyte]] and [[Onyx]] jewellery were not included because their profit margins are often inaccurate, they would also require an immense cash down to buy in bulk. [[Zenyte]]s are also rarely sold on the Grand Exchange. 
+
+The following rates used for experience per hour are {{#vardefineecho:metalgemhour|1400}} for a gem and metal bar, {{#vardefineecho:metalhour|1600}} for just metal bars, or {{#vardefineecho:stringhour|960}} for a gem and metal bar with stringing.
+
+{| class="wikitable sortable align-center-1 align-left-2 align-left-5" style="text-align: right;"
+! colspan="2" rowspan="2" | Item
+! colspan="2" data-sort-type="number" |{{SCP|Crafting|link=y}}
+! rowspan="2" |XP/hour
+! rowspan="2" |Materials
+! rowspan="2" |Profit/Loss
+! rowspan="2" |GP/hour
+! rowspan="2" |HA Profit/Loss
+|-
+!Level
+!Exp
+|-
+|{{plinkt|Opal ring}}
+|1
+|10
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 10}}}}
+|{{plink|Silver bar}}<br />{{plink|Opal}}
+|{{Coins|{{GEPT|Opal ring}} - ({{GEP|Silver bar}} + {{GEP|Opal}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Opal ring}} - ({{GEP|Silver bar}} + {{GEP|Opal}}))}}
+|{{Coins|{{HA|Opal ring}} - ({{GEP|Silver bar}} + {{GEP|Opal}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Opal necklace}}
+|16
+|35
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 35}}}}
+|{{plink|Silver bar}}<br />{{plink|Opal}}
+|{{Coins|{{GEPT|Opal necklace}} - ({{GEP|Silver bar}} + {{GEP|Opal}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Opal necklace}} - ({{GEP|Silver bar}} + {{GEP|Opal}}))}}
+|{{Coins|{{HA|Opal necklace}} - ({{GEP|Silver bar}} + {{GEP|Opal}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Opal bracelet}}
+|22
+|45
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 45}}}}
+|{{plink|Silver bar}}<br />{{plink|Opal}}
+|{{Coins|{{GEPT|Opal bracelet}} - ({{GEP|Silver bar}} + {{GEP|Opal}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Opal bracelet}} - ({{GEP|Silver bar}} + {{GEP|Opal}}))}}
+|{{Coins|{{HA|Opal bracelet}} - ({{GEP|Silver bar}} + {{GEP|Opal}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Opal amulet (u)}}
+|27
+|55
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 55}}}}
+|{{plink|Silver bar}}<br />{{plink|Opal}}
+|{{Coins|{{GEPT|Opal amulet (u)}} - ({{GEP|Silver bar}} + {{GEP|Opal}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Opal amulet (u)}} - ({{GEP|Silver bar}} + {{GEP|Opal}}))}}
+|{{Coins|{{HA|Opal amulet (u)}} - ({{GEP|Silver bar}} + {{GEP|Opal}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Opal amulet}}
+|27
+|59
+|{{formatnum:{{#expr:{{#var:stringhour}} * 59}}}}
+|{{plink|Silver bar}}<br />{{plink|Opal}}<br />{{plink|Ball of wool}}
+|{{Coins|{{GEPT|Opal amulet}} - ({{GEP|Silver bar}} + {{GEP|Opal}} + {{GEP|Ball of wool}})}}
+|{{Coins|{{#var:stringhour}} * ({{GEPT|Opal amulet}} - ({{GEP|Silver bar}} + {{GEP|Opal}} + {{GEP|Ball of wool}}))}}
+|{{Coins|{{HA|Opal amulet}} - ({{GEP|Silver bar}} + {{GEP|Opal}} + {{GEP|Ball of wool}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Jade ring}}
+|13
+|32
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 32}}}}
+|{{plink|Silver bar}}<br />{{plink|Jade}}
+|{{Coins|{{GEPT|Jade ring}} - ({{GEP|Silver bar}} + {{GEP|Jade}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Jade ring}} - ({{GEP|Silver bar}} + {{GEP|Jade}}))}}
+|{{Coins|{{HA|Jade ring}} - ({{GEP|Silver bar}} + {{GEP|Jade}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Jade necklace}}
+|25
+|54
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 54}}}}
+|{{plink|Silver bar}}<br />{{plink|Jade}}
+|{{Coins|{{GEPT|Jade necklace}} - ({{GEP|Silver bar}} + {{GEP|Jade}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Jade necklace}} - ({{GEP|Silver bar}} + {{GEP|Jade}}))}}
+|{{Coins|{{HA|Jade necklace}} - ({{GEP|Silver bar}} + {{GEP|Jade}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Jade bracelet}}
+|29
+|60
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 60}}}}
+|{{plink|Silver bar}}<br />{{plink|Jade}}
+|{{Coins|{{GEPT|Jade bracelet}} - ({{GEP|Silver bar}} + {{GEP|Jade}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Jade bracelet}} - ({{GEP|Silver bar}} + {{GEP|Jade}}))}}
+|{{Coins|{{HA|Jade bracelet}} - ({{GEP|Silver bar}} + {{GEP|Jade}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Jade amulet (u)}}
+|34
+|70
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 70}}}}
+|{{plink|Silver bar}}<br />{{plink|Jade}}
+|{{Coins|{{GEPT|Jade amulet (u)}} - ({{GEP|Silver bar}} + {{GEP|Jade}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Jade amulet (u)}} - ({{GEP|Silver bar}} + {{GEP|Jade}}))}}
+|{{Coins|{{HA|Jade amulet (u)}} - ({{GEP|Silver bar}} + {{GEP|Jade}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Jade amulet}}
+|34
+|74
+|{{formatnum:{{#expr:{{#var:stringhour}} * 74}}}}
+|{{plink|Silver bar}}<br />{{plink|Jade}}<br />{{plink|Ball of wool}}
+|{{Coins|{{GEPT|Jade amulet}} - ({{GEP|Silver bar}} + {{GEP|Jade}} + {{GEP|Ball of wool}})}}
+|{{Coins|{{#var:stringhour}} * ({{GEPT|Jade amulet}} - ({{GEP|Silver bar}} + {{GEP|Jade}} + {{GEP|Ball of wool}}))}}
+|{{Coins|{{HA|Jade amulet}} - ({{GEP|Silver bar}} + {{GEP|Jade}} + {{GEP|Ball of wool}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Topaz ring}}
+|16
+|35
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 35}}}}
+|{{plink|Silver bar}}<br />{{plink|Red topaz}}
+|{{Coins|{{GEPT|Topaz ring}} - ({{GEP|Silver bar}} + {{GEP|Red topaz}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Topaz ring}} - ({{GEP|Silver bar}} + {{GEP|Red topaz}}))}}
+|{{Coins|{{HA|Topaz ring}} - ({{GEP|Silver bar}} + {{GEP|Red topaz}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Topaz necklace}}
+|32
+|70
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 32}}}}
+|{{plink|Silver bar}}<br />{{plink|Red topaz}}
+|{{Coins|{{GEPT|Topaz necklace}} - ({{GEP|Silver bar}} + {{GEP|Red topaz}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Topaz necklace}} - ({{GEP|Silver bar}} + {{GEP|Red topaz}}))}}
+|{{Coins|{{HA|Topaz necklace}} - ({{GEP|Silver bar}} + {{GEP|Red topaz}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Topaz bracelet}}
+|38
+|75
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 75}}}}
+|{{plink|Silver bar}}<br />{{plink|Red topaz}}
+|{{Coins|{{GEPT|Topaz bracelet}} - ({{GEP|Silver bar}} + {{GEP|Red topaz}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Topaz bracelet}} - ({{GEP|Silver bar}} + {{GEP|Red topaz}}))}}
+|{{Coins|{{HA|Topaz bracelet}} - ({{GEP|Silver bar}} + {{GEP|Red topaz}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Topaz amulet (u)}}
+|45
+|80
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 80}}}}
+|{{plink|Silver bar}}<br />{{plink|Red topaz}}
+|{{Coins|{{GEPT|Topaz amulet (u)}} - ({{GEP|Silver bar}} + {{GEP|Red topaz}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Topaz amulet (u)}} - ({{GEP|Silver bar}} + {{GEP|Red topaz}}))}}
+|{{Coins|{{HA|Topaz amulet (u)}} - ({{GEP|Silver bar}} + {{GEP|Red topaz}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Topaz amulet}}
+|45
+|84
+|{{formatnum:{{#expr:{{#var:stringhour}} * 84}}}}
+|{{plink|Silver bar}}<br />{{plink|Red topaz}}<br />{{plink|Ball of wool}}
+|{{Coins|{{GEPT|Topaz amulet}} - ({{GEP|Silver bar}} + {{GEP|Red topaz}} + {{GEP|Ball of wool}})}}
+|{{Coins|{{#var:stringhour}} * ({{GEPT|Topaz amulet}} - ({{GEP|Silver bar}} + {{GEP|Red topaz}} + {{GEP|Ball of wool}}))}}
+|{{Coins|{{HA|Topaz amulet}} - ({{GEP|Silver bar}} + {{GEP|Red topaz}} + {{GEP|Ball of wool}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Gold ring}}
+|5
+|15
+|{{formatnum:{{#expr:{{#var:metalhour}} * 15}}}}
+|{{plink|Gold bar}}
+|{{Coins|{{GEPT|Gold ring}} - ({{GEP|Gold bar}})}}
+|{{Coins|{{#var:metalhour}} * ({{GEPT|Gold ring}} - {{GEP|Gold bar}})}}
+|{{Coins|{{HA|Gold ring}} - ({{GEP|Gold bar}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Gold necklace}}
+|6
+|20
+|{{formatnum:{{#expr:{{#var:metalhour}} * 20}}}}
+|{{plink|Gold bar}}
+|{{Coins|{{GEPT|Gold necklace}} - ({{GEP|Gold bar}})}}
+|{{Coins|{{#var:metalhour}} * ({{GEPT|Gold necklace}} - ({{GEP|Gold bar}}))}}
+|{{Coins|{{HA|Gold necklace}} - ({{GEP|Gold bar}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Gold bracelet}}
+|7
+|25
+|{{formatnum:{{#expr:{{#var:metalhour}} * 25}}}}
+|{{plink|Gold bar}}
+|{{Coins|{{GEPT|Gold bracelet}} - {{GEP|Gold bar}}}}
+|{{Coins|{{#var:metalhour}} * ({{GEPT|Gold bracelet}} - {{GEP|Gold bar}})}}
+|{{Coins|{{HA|Gold bracelet}} - {{GEP|Gold bar}} + {{GEP|Nature rune}}}}
+|-
+|{{plinkt|Gold amulet (u)}}
+|8
+|30
+|{{formatnum:{{#expr:{{#var:metalhour}} * 30}}}}
+|{{plink|Gold bar}}
+|{{Coins|{{GEPT|Gold amulet (u)}} - ({{GEP|Gold bar}})}}
+|{{Coins|{{#var:metalhour}} * ({{GEPT|Gold amulet (u)}} - ({{GEP|Gold bar}}))}}
+|{{Coins|{{HA|Gold amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Gold amulet}}
+|8
+|34
+|{{formatnum:{{#expr:1010 * 34}}}}
+|{{plink|Gold bar}}<br />{{plink|Ball of wool}}
+|{{Coins|{{GEPT|Gold amulet}} - ({{GEP|Gold bar}} + {{GEP|Ball of wool}})}}
+|{{Coins|1010 * ({{GEPT|Gold amulet}} - ({{GEP|Gold bar}} + {{GEP|Ball of wool}}))}}
+|{{Coins|{{HA|Gold amulet}} - ({{GEP|Gold bar}} + {{GEP|Ball of wool}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Sapphire ring}}
+|20
+|40
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 40}}}}
+|{{plink|Gold bar}}<br />{{plink|Sapphire}}
+|{{Coins|{{GEPT|Sapphire ring}} - ({{GEP|Gold bar}} + {{GEP|Sapphire}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Sapphire ring}} - ({{GEP|Gold bar}} + {{GEP|Sapphire}}))}}
+|{{Coins|{{HA|Sapphire ring}} - ({{GEP|Gold bar}} + {{GEP|Sapphire}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Sapphire necklace}}
+|22
+|55
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 55}}}}
+|{{plink|Gold bar}}<br />{{plink|Sapphire}}
+|{{Coins|{{GEPT|Sapphire necklace}} - ({{GEP|Gold bar}} + {{GEP|Sapphire}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Sapphire necklace}} - ({{GEP|Gold bar}} + {{GEP|Sapphire}}))}}
+|{{Coins|{{HA|Sapphire necklace}} - ({{GEP|Gold bar}} + {{GEP|Sapphire}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Sapphire bracelet}}
+|23
+|60
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 60}}}}
+|{{plink|Gold bar}}<br />{{plink|Sapphire}}
+|{{Coins|{{GEPT|Sapphire bracelet}} - ({{GEP|Gold bar}} + {{GEP|Sapphire}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Sapphire bracelet}} - ({{GEP|Gold bar}} + {{GEP|Sapphire}}))}}
+|{{Coins|{{HA|Sapphire bracelet}} - ({{GEP|Gold bar}} + {{GEP|Sapphire}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Sapphire amulet (u)}}
+|24
+|65
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 65}}}}
+|{{plink|Gold bar}}<br />{{plink|Sapphire}}
+|{{Coins|{{GEPT|Sapphire amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Sapphire}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Sapphire amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Sapphire}}))}}
+|{{Coins|{{HA|Sapphire amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Sapphire}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Sapphire amulet}}
+|24
+|69
+|{{formatnum:{{#expr:{{#var:stringhour}} * 69}}}}
+|{{plink|Gold bar}}<br />{{plink|Sapphire}}<br />{{plink|Ball of wool}}
+|{{Coins|{{GEPT|Sapphire amulet}} - ({{GEP|Gold bar}} + {{GEP|Sapphire}} + {{GEP|Ball of wool}})}}
+|{{Coins|{{#var:stringhour}} * ({{GEPT|Sapphire amulet}} - ({{GEP|Gold bar}} + {{GEP|Sapphire}} + {{GEP|Ball of wool}}))}}
+|{{Coins|{{HA|Sapphire amulet}} - ({{GEP|Gold bar}} + {{GEP|Sapphire}} + {{GEP|Ball of wool}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Emerald ring}}
+|27
+|55
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 55}}}}
+|{{plink|Gold bar}}<br />{{plink|Emerald}}
+|{{Coins|{{GEPT|Emerald ring}} - ({{GEP|Gold bar}} + {{GEP|Emerald}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Emerald ring}} - ({{GEP|Gold bar}} + {{GEP|Emerald}}))}}
+|{{Coins|{{HA|Emerald ring}} - ({{GEP|Gold bar}} + {{GEP|Emerald}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Emerald necklace}}
+|29
+|60
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 60}}}}
+|{{plink|Gold bar}}<br />{{plink|Emerald}}
+|{{Coins|{{GEPT|Emerald necklace}} - ({{GEP|Gold bar}} + {{GEP|Emerald}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Emerald necklace}} - ({{GEP|Gold bar}} + {{GEP|Emerald}}))}}
+|{{Coins|{{HA|Emerald necklace}} - ({{GEP|Gold bar}} + {{GEP|Emerald}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Emerald bracelet}}
+|30
+|65
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 65}}}}
+|{{plink|Gold bar}}<br />{{plink|Emerald}}
+|{{Coins|{{GEPT|Emerald bracelet}} - ({{GEP|Gold bar}} + {{GEP|Emerald}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Emerald bracelet}} - ({{GEP|Gold bar}} + {{GEP|Emerald}}))}}
+|{{Coins|{{HA|Emerald bracelet}} - ({{GEP|Gold bar}} + {{GEP|Emerald}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Emerald amulet (u)}}
+|31
+|70
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 70}}}}
+|{{plink|Gold bar}}<br />{{plink|Emerald}}
+|{{Coins|{{GEPT|Emerald amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Emerald}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Emerald amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Emerald}}))}}
+|{{Coins|{{HA|Emerald amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Emerald}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Emerald amulet}}
+|31
+|74
+|{{formatnum:{{#expr:{{#var:stringhour}} * 74}}}}
+|{{plink|Gold bar}}<br />{{plink|Emerald}}<br />{{plink|Ball of wool}}
+|{{Coins|{{GEPT|Emerald amulet}} - ({{GEP|Gold bar}} + {{GEP|Emerald}} + {{GEP|Ball of wool}})}}
+|{{Coins|{{#var:stringhour}} * ({{GEPT|Emerald amulet}} - ({{GEP|Gold bar}} + {{GEP|Emerald}} + {{GEP|Ball of wool}}))}}
+|{{Coins|{{HA|Emerald amulet}} - ({{GEP|Gold bar}} + {{GEP|Emerald}} + {{GEP|Ball of wool}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Ruby ring}}
+|34
+|70
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 70}}}}
+|{{plink|Gold bar}}<br />{{plink|Ruby}}
+|{{Coins|{{GEPT|Ruby ring}} - ({{GEP|Gold bar}} + {{GEP|Ruby}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Ruby ring}} - ({{GEP|Gold bar}} + {{GEP|Ruby}}))}}
+|{{Coins|{{HA|Ruby ring}} - ({{GEP|Gold bar}} + {{GEP|Ruby}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Ruby necklace}}
+|40
+|75
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 75}}}}
+|{{plink|Gold bar}}<br />{{plink|Ruby}}
+|{{Coins|{{GEPT|Ruby necklace}} - ({{GEP|Gold bar}} + {{GEP|Ruby}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Ruby necklace}} - ({{GEP|Gold bar}} + {{GEP|Ruby}}))}}
+|{{Coins|{{HA|Ruby necklace}} - ({{GEP|Gold bar}} + {{GEP|Ruby}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Ruby bracelet}}
+|42
+|80
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 80}}}}
+|{{plink|Gold bar}}<br />{{plink|Ruby}}
+|{{Coins|{{GEPT|Ruby bracelet}} - ({{GEP|Gold bar}} + {{GEP|Ruby}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Ruby bracelet}} - ({{GEP|Gold bar}} + {{GEP|Ruby}}))}}
+|{{Coins|{{HA|Ruby bracelet}} - ({{GEP|Gold bar}} + {{GEP|Ruby}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Ruby amulet (u)}}
+|50
+|85
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 85}}}}
+|{{plink|Gold bar}}<br />{{plink|Ruby}}
+|{{Coins|{{GEPT|Ruby amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Ruby}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Ruby amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Ruby}}))}}
+|{{Coins|{{HA|Ruby amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Ruby}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Ruby amulet}}
+|50
+|89
+|{{formatnum:{{#expr:{{#var:stringhour}} * 89}}}}
+|{{plink|Gold bar}}<br />{{plink|Ruby}}<br />{{plink|Ball of wool}}
+|{{Coins|{{GEPT|Ruby amulet}} - ({{GEP|Gold bar}} + {{GEP|Ruby}} + {{GEP|Ball of wool}})}}
+|{{Coins|{{#var:stringhour}} * ({{GEPT|Ruby amulet}} - ({{GEP|Gold bar}} + {{GEP|Ruby}} + {{GEP|Ball of wool}}))}}
+|{{Coins|{{HA|Ruby amulet}} - ({{GEP|Gold bar}} + {{GEP|Ruby}} + {{GEP|Ball of wool}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Diamond ring}}
+|43
+|85
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 85}}}}
+|{{plink|Gold bar}}<br />{{plink|Diamond}}
+|{{Coins|{{GEPT|Diamond ring}} - ({{GEP|Gold bar}} + {{GEP|Diamond}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Diamond ring}} - ({{GEP|Gold bar}} + {{GEP|Diamond}}))}}
+|{{Coins|{{HA|Diamond ring}} - ({{GEP|Gold bar}} + {{GEP|Diamond}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Diamond necklace}}
+|56
+|90
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 90}}}}
+|{{plink|Gold bar}}<br />{{plink|Diamond}}
+|{{Coins|{{GEPT|Diamond necklace}} - ({{GEP|Gold bar}} + {{GEP|Diamond}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Diamond necklace}} - ({{GEP|Gold bar}} + {{GEP|Diamond}}))}}
+|{{Coins|{{HA|Diamond necklace}} - ({{GEP|Gold bar}} + {{GEP|Diamond}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Diamond bracelet}}
+|58
+|95
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 95}}}}
+|{{plink|Gold bar}}<br />{{plink|Diamond}}
+|{{Coins|{{GEPT|Diamond bracelet}} - ({{GEP|Gold bar}} + {{GEP|Diamond}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Diamond bracelet}} - ({{GEP|Gold bar}} + {{GEP|Diamond}}))}}
+|{{Coins|{{HA|Diamond bracelet}} - ({{GEP|Gold bar}} + {{GEP|Diamond}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Diamond amulet (u)}}
+|70
+|100
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 100}}}}
+|{{plink|Gold bar}}<br />{{plink|Diamond}}
+|{{Coins|{{GEPT|Diamond amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Diamond}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Diamond amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Diamond}}))}}
+|{{Coins|{{HA|Diamond amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Diamond}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Diamond amulet}}
+|70
+|104
+|{{formatnum:{{#expr:{{#var:stringhour}} * 104}}}}
+|{{plink|Gold bar}}<br />{{plink|Diamond}}<br />{{plink|Ball of wool}}
+|{{Coins|{{GEPT|Diamond amulet}} - ({{GEP|Gold bar}} + {{GEP|Diamond}} + {{GEP|Ball of wool}})}}
+|{{Coins|{{#var:stringhour}} * ({{GEPT|Diamond amulet}} - ({{GEP|Gold bar}} + {{GEP|Diamond}} + {{GEP|Ball of wool}}))}}
+|{{Coins|{{HA|Diamond amulet}} - ({{GEP|Gold bar}} + {{GEP|Diamond}} + {{GEP|Ball of wool}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Dragonstone ring}}
+|55
+|100
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 100}}}}
+|{{plink|Gold bar}}<br />{{plink|Dragonstone}}
+|{{Coins|{{GEPT|Dragonstone ring}} - ({{GEP|Gold bar}} + {{GEP|Dragonstone}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Dragonstone ring}} - ({{GEP|Gold bar}} + {{GEP|Dragonstone}}))}}
+|{{Coins|{{HA|Dragonstone ring}} - ({{GEP|Gold bar}} + {{GEP|Dragonstone}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Dragon necklace}}
+|72
+|105
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 105}}}}
+|{{plink|Gold bar}}<br />{{plink|Dragonstone}}
+|{{Coins|{{GEPT|Dragon necklace}} - ({{GEP|Gold bar}} + {{GEP|Dragonstone}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Dragon necklace}} - ({{GEP|Gold bar}} + {{GEP|Dragonstone}}))}}
+|{{Coins|{{HA|Dragon necklace}} - ({{GEP|Gold bar}} + {{GEP|Dragonstone}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Dragonstone bracelet}}
+|74
+|110
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 110}}}}
+|{{plink|Gold bar}}<br />{{plink|Dragonstone}}
+|{{Coins|{{GEPT|Dragonstone bracelet}} - ({{GEP|Gold bar}} + {{GEP|Dragonstone}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Dragonstone bracelet}} - ({{GEP|Gold bar}} + {{GEP|Dragonstone}}))}}
+|{{Coins|{{HA|Dragonstone bracelet}} - ({{GEP|Gold bar}} + {{GEP|Dragonstone}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Dragonstone amulet (u)}}
+|80
+|150
+|{{formatnum:{{#expr:{{#var:metalgemhour}} * 150}}}}
+|{{plink|Gold bar}}<br />{{plink|Dragonstone}}
+|{{Coins|{{GEPT|Dragonstone amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Dragonstone}})}}
+|{{Coins|{{#var:metalgemhour}} * ({{GEPT|Dragonstone amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Dragonstone}}))}}
+|{{Coins|{{HA|Dragonstone amulet (u)}} - ({{GEP|Gold bar}} + {{GEP|Dragonstone}} + {{GEP|Nature rune}})}}
+|-
+|{{plinkt|Dragonstone amulet}}
+|80
+|154
+|{{formatnum:{{#expr:{{#var:stringhour}} * 154}}}}
+|{{plink|Gold bar}}<br />{{plink|Dragonstone}}<br />{{plink|Ball of wool}}
+|{{Coins|{{GEPT|Dragonstone amulet}} - ({{GEP|Gold bar}} + {{GEP|Dragonstone}} + {{GEP|Ball of wool}})}}
+|{{Coins|{{#var:stringhour}} * ({{GEPT|Dragonstone amulet}} - ({{GEP|Gold bar}} + {{GEP|Dragonstone}} + {{GEP|Ball of wool}}))}}
+|{{Coins|{{HA|Dragonstone amulet}} - ({{GEP|Gold bar}} + {{GEP|Dragonstone}} + {{GEP|Ball of wool}} + {{GEP|Nature rune}})}}
+|}
+
+===Levels 26–46/99: Crafting drift nets===
+[[Drift nets]] can be crafted from 2 [[jute fibre]] each. About 1,000 can be made per hour for 60,000 experience per hour and {{Coins|1000*({{GEPT|Drift net}}-{{GEP|Jute fibre}}-{{GEP|Jute fibre}})}} coins per hour when using the [[loom]] and [[bank chest]] at [[Fossil Island]]'s [[Museum Camp]]. This is better experience per hour compared to glassblowing until 46 Crafting, which unlocks [[unpowered orb]]s. It nets {{Coins|({{GEPT|Drift net}}-{{GEP|Jute fibre}}-{{GEP|Jute fibre}})/55}} coins per experience gained. This is a potential [[Money making guide/Crafting drift nets|money making method]], though check Grand Exchange prices and volume before attempting it.
+
+===Levels 61–99: Casting Superglass Make===
+Players who have 77 [[Magic]] (can be [[Temporary skill boost/Magic|boosted]]) and have completed [[Lunar Diplomacy]], which requires 61 Crafting along with other requirements (cannot [[Temporary skill boost|boost]] from lower levels to complete), can cast [[Superglass Make]] with the [[Lunar spells|lunar spellbook]]. With Superglass Make, players can convert an inventory of [[Bucket of sand|buckets of sand]] with [[soda ash]], [[seaweed]], [[giant seaweed]] (recommended), or [[swamp weed]] into molten glass, granting 78 Magic experience as well as Crafting experience (180 Crafting experience per inventory with 18 buckets of sand and 3 giant seaweed or 130 Crafting experience per inventory with 13 buckets of sand with 13 of any other compatible item) and players can [[Money making guide/Casting Superglass Make|profit]] from selling molten glass or use the created molten glass for additional Crafting experience without much of a loss.
+
+For this training method, astral runes (2 astral runes per cast), 3 giant seaweed, and 18 buckets of sand will be needed per inventory while equipped with either a [[smoke battlestaff]] or an air battlestaff with [[tome of fire]]. On average, it will make 1.3 glass for regular seaweed, soda ash, or swamp weed, or up to 1.6 glass per sand with giant seaweed.
+
+With moderate focus, 600 casts per hour is achievable, with up to 850 being attainable at peak efficiency, achieving 108,000–153,000 Crafting and 46,800–66,300 Magic experience per hour from giant seaweed while making a good amount of profit. Withdraw 18 buckets of sand and 3 giant seaweed, close the bank, cast Superglass Make, and then bank them within a few ticks before the end of the animation. It is one tick faster, though more difficult, if you click to open the bank first before casting the spell. For the best experience and money-making rates, ignore any dropped glass, as this will still yield 0.15 extra molten glass per bucket of sand compared to regular seaweed or other compatible item.
+
+=== Level 52-99 Fixing goblin lamps in Dorgesh-Kaan ===
+{{Map|mtype=dot|2699,5256|2695,5260|2868,5392|2698,5269|2735,5278|2739,5253|2869,5411|2749,5261|2801,5337|2865,5426|2738,5283|2749,5292|2764,5370|2804,5351|2744,5299|2690,5302|2802,5359|2869,5422|2698,5302|2707,5274|2869,5415|2806,5348|2796,5337|2801,5343|2774,5335|2772,5343|2872,5410|2760,5359|2823,5422|2827,5417|2827,5433|2823,5429|2758,5396|2762,5409|2770,5419|2781,5429|2801,5428|2804,5427|2798,5415|2807,5400|2803,5389|2874,5483|2867,5490|2864,5491|2857,5496|2770,5413|2758,5398|2691,5328|2701,5345|2706,5354|2701,5362|2706,5369|2745,5360|2739,5360|2736,5350|2747,5348|2741,5344|2746,5323|2749,5329|2742,5327|2737,5324|2744,5348|2807,5406|2766,5431|mapID=5|align=right|caption=Map of lamps in Dorgesh-Kaan}}
+[[Lamp (Dorgesh-Kaan)|Lamps]] can be fixed in [[Dorgesh-Kaan]] for both [[Crafting]] and [[Firemaking]] experience. This requires completion of [[The Lost Tribe]] and level 52 Crafting and Firemaking. Each lamp requires a [[light orb]] to fix. The light orbs can be purchased on the [[Grand Exchange]] or crafted yourself, however crafting the complete light orbs requires level 87 Crafting.
+
+Around ten lamps will be broken at any one time, and are unique to each player; each player will see different lamps around Dorgesh-Kaan as broken. 
+
+Fixing the lamps yields an average of 550 Crafting and 550 Firemaking experience. The player instead receives an additional of 174 Crafting experience per lamp if Crafting the light orbs — 70 for blowing the glass and 104 for adding the wire, though this takes longer.
+
+The player receives 500 Firemaking and 500 Crafting experience each time a lamp is fixed. For every 50 lamps fixed, the player will receive an additional 2,500 experience in both Crafting and Firemaking. Upon fixing a lamp, should the player still be carrying additional light orbs afterwards, they will be notified whether there is another lamp in need of fixing nearby. This will be accompanied by a flashing arrow on their minimap. Light orbs can also be thieved from the chests in Dorgesh-kaan, but in relatively low numbers.
+
+Skilled players can reach 130,000 Crafting experience and 100,000 Firemaking experience per hour, if making the light orbs. 
+
+While still learning, players should expect as low as 90,000 Crafting experience per hour. 
+
+The [[Chest (Dorgesh-Kaan Average)|average chest]] and [[Chest (Dorgesh-Kaan Rich)|rich chest]] are both found in high numbers on the route and can grant additional light orbs. The chests grant 200 thieving experience and 650 thieving experience per successful attempt, respectively. This will mean the player gains less Crafting experience, but more thieving experience and extra [[cave goblin wire]] from both chest types, and [[Empty light orb|empty light orbs]] and [[Light orb|light orbs]] from the rich chests.  
+
+==== Items required ====
+
+* [[Light orb|Light orbs]] filling most of the inventory, with more in the bank. These can be bought on the grand exchange.
+* [[empty light orb|Empty light orbs]] or [[molten glass]] with a [[glassblowing pipe]] if making your own light orbs. This requires level 87 Crafting. The player will also need [[cave goblin wire]] for each light orb, which can be thieved nearby at the [[wire machine]] with 44 thieving.
+* [[Stamina potion]] and low-weight equipment such as the [[Graceful outfit]]. The [[ring of endurance]] may be beneficial here.
+* [[Lockpick|Lockpicks]] if thieving the chests
+
+==== Making your own light orbs ====
+See the [[light orb]] page for more detailed information. 
+
+Players should take an inventory of empty light orbs to the [[wire machine]]. Either craft the empty light orbs ahead of time or take an inventory of molten glass and craft it while running to the wire machine. Once there, fill all of the light orbs with cave wire. Then, either work clockwise or counterclockwise around the city fixing lamps. After fixing a lamp at the bank, grab more items from the bank and start again. Every time the player fixes a lamp, the game will indicate where a nearby broken lamp is. Because only one lamp location is given, players should also keep an eye out for other nearby lamps that can also be repaired and prioritise lamps in an order that requires the least amount of backtracking. Whenever there are no nearby lamps, using a [[Dorgesh-kaan sphere]] to teleport to a random location in the city can help to reach another broken lamp quickly.
+
+===Levels 83–99: Cutting amethyst===
+Cutting [[amethyst]] into ranging material with a chisel will often yield very small losses (or even profits) while also granting more experience than glassblowing, making it a viable method for those who are willing to sacrifice the speed of other methods for cheaper (or profitable) Crafting experience.
+{|class="wikitable sortable align-center-2"
+! rowspan="2" |{{SCP|Crafting}} Level
+! rowspan="2" colspan="2" |Amethyst item
+! rowspan="2" |XP
+! rowspan="2" |XP/h
+! colspan="3" |GE Price
+! rowspan="2" |GP/XP
+|-
+!Buy
+!Sell
+!Diff
+|-
+|83
+|{{plinkt|Amethyst bolt tips|txt=Bolt tips}}
+|60||165,000
+|{{Coins|{{GEP|Amethyst}}}}
+|{{Coins|({{GEPT|Amethyst bolt tips|15}})}}
+|{{Coins|({{GEPT|Amethyst bolt tips|15}})-{{GEP|Amethyst}}}}
+|{{Coins|({{GEPT|Amethyst bolt tips|15}}-{{GEP|Amethyst}})/60}}
+|-
+|85
+|{{plinkt|Amethyst arrowtips|txt=Arrowtips}}
+|60||165,000
+|{{Coins|{{GEP|Amethyst}}}}
+|{{Coins|({{GEPT|Amethyst arrowtips|15}})}}
+|{{Coins|({{GEPT|Amethyst arrowtips|15}})-{{GEP|Amethyst}}}}
+|{{Coins|(({{GEPT|Amethyst arrowtips|15}})-{{GEP|Amethyst}})/60}}
+|-
+|87
+|{{plinkt|Amethyst javelin tips|txt=Javelin tips}}
+|60||165,000
+|{{Coins|{{GEP|Amethyst}}}}
+|{{Coins|({{GEPT|Amethyst javelin tips|5}})}}
+|{{Coins|({{GEPT|Amethyst javelin tips|5}})-{{GEP|Amethyst}}}}
+|{{Coins|(({{GEPT|Amethyst javelin tips|5}})-{{GEP|Amethyst}})/60}}
+|-
+|89
+|{{plinkt|Amethyst dart tip|txt=Dart tip}}
+|60||165,000
+|{{Coins|{{GEP|Amethyst}}}}
+|{{Coins|({{GEPT|Amethyst dart tip|8}})}}
+|{{Coins|({{GEPT|Amethyst dart tip|8}})-{{GEP|Amethyst}}}}
+|{{Coins|(({{GEPT|Amethyst dart tip|8}})-{{GEP|Amethyst}})/60}}
+|}
+
+==Quests for Crafting experience==
+{{Main|Quest experience rewards}}
+{| class="wikitable sortable lighttable qc-active" style="text-align:center;"
+!Quest
+!Experience<br/>reward
+!data-sort-type="number"|Crafting<br/>requirement
+!class='unsortable'|Other requirements
+|-
+|[[Sheep Shearer]]||150||data-sort-value="0"|-|| -
+|-
+|[[Goblin Diplomacy]]||200||data-sort-value="0"|-|| -
+|-
+|[[Tower of Life]]||500||data-sort-value="0"|-||{{SCP|Construction|10}}
+|-
+|[[In Search of the Myreque]]||600||data-sort-value="0"|-||{{SCP|Agility|25}}
+|-
+|[[Misthalin Mystery]]||600||data-sort-value="0"|-|| -
+|-
+|[[Dwarf Cannon]]||750||data-sort-value="0"|-|| -
+|-
+|[[Animal Magnetism]]||1,000||data-sort-value="19"|{{SCP|Crafting|19}}||{{SCP|Slayer|18}}, {{SCP|Ranged|30}}, {{SCP|Woodcutting|35}}
+|-
+|[[The Golem]]||1,000||data-sort-value="20"|{{SCP|Crafting|20}}||{{SCP|Thieving|25}}
+|-
+|[[Making History]]||1,000||data-sort-value="24"|{{SCP|Crafting|24}}|| -
+|-
+|[[Tears of Guthix]]||1,000||data-sort-value="20"|{{SCP|Crafting|20}}||{{SCP|Firemaking|49}}, {{SCP|Mining|20}}
+|-
+|[[Recipe for Disaster]]<br/>([[Recipe for Disaster/Freeing the Goblin generals|Goblin generals subquest]])||1,000||data-sort-value="0"|-|| -
+|-
+|[[Recipe for Disaster]]<br/>([[Recipe for Disaster/Freeing Pirate Pete|Pirate Pete subquest]])||1,000||data-sort-value="0"|-||{{SCP|Cooking|31}}, {{SCP|Crafting|42}} (if making your own [[Fishbowl]])
+|-
+|[[Murder Mystery]]||1,406||data-sort-value="0"|-|| -
+|-
+|[[Recipe for Disaster]]<br/>([[Recipe for Disaster/Freeing Skrach Uglogwee|Skrach Uglogwee subquest]])||1,500||data-sort-value="0"|-||{{SCP|Cooking|41}}, {{SCP|Firemaking|20}}
+|-
+|[[Cold War]]||2,000||data-sort-value="30"|{{SCP|Crafting|30}}||{{SCP|Hunter|10}}, {{SCP|Agility|30}}, {{SCP|Construction|34}}
+|-
+|[[Enlightened Journey]]||2,000||data-sort-value="36"|{{SCP|Crafting|36}}||{{SCP|Quest|20}}, {{SCP|Firemaking|20}}, {{SCP|Farming|30}}
+|-
+|[[In Aid of the Myreque]]||2,000||data-sort-value="25"|{{SCP|Crafting|25}}||{{SCP|Mining|15}}, {{SCP|Magic|7}}
+|-
+|[[Shades of Mort'ton]]||2,000||data-sort-value="20"|{{SCP|Crafting|20}}||{{SCP|Herblore|15}}, {{SCP|Firemaking|5}}
+|-
+|[[Observatory Quest]]||2,250||data-sort-value="0"|-|| -
+|-
+|[[The Giant Dwarf]]||2,500||data-sort-value="12"|{{SCP|Crafting|12}}||{{SCP|Firemaking|16}}, {{SCP|Magic|33}}, {{SCP|Thieving|14}}
+|-
+|[[The Fremennik Trials]]||2,812.4||data-sort-value="0"|-|| -
+|-
+|[[The Great Brain Robbery]]||3,000||data-sort-value="16"|{{SCP|Crafting|16}}||{{SCP|Construction|30}}, {{SCP|Prayer|50}}
+|-
+|[[Nature Spirit]]||3,000||data-sort-value="18"|{{SCP|Crafting|18}}|| -
+|-
+|[[The Slug Menace]]||3,500||data-sort-value="30"|{{SCP|Crafting|30}}||{{SCP|Runecraft|30}}, {{SCP|Slayer|30}}, {{SCP|Thieving|30}}
+|-
+|[[Shilo Village]]||3,875||data-sort-value="20"|{{SCP|Crafting|20}}||{{SCP|Agility|32}}, {{SCP|Smithing|4}}
+|-
+|[[Getting Ahead]]||4,000||data-sort-value="30"|{{SCP|Crafting|30}}||{{SCP|Construction|26}}
+|-
+|[[Elemental Workshop I]]||5,000||data-sort-value="20"|{{SCP|Crafting|20}}||{{SCP|Smithing|20}}, {{SCP|Mining|20}}
+|-
+|[[The Fremennik Isles]]||5,000||data-sort-value="46"|{{SCP|Crafting|46}}||{{SCP|Construction|20}}, {{SCP|Agility|40}}, {{SCP|Woodcutting|56}}
+|-
+|[[Death on the Isle]]||5,000||data-sort-value="0"|-||{{SCP|Agility|32}}, {{SCP|Thieving|34}}
+|-
+|[[Cabin Fever]]||7,000||data-sort-value="45"|{{SCP|Crafting|45}}||{{SCP|Agility|42}}, {{SCP|Smithing|50}}, {{SCP|Ranged|40}}
+|-
+|[[Enakhra's Lament]]||7,000||data-sort-value="50"|{{SCP|Crafting|50}}||{{SCP|Firemaking|45}}, {{SCP|Prayer|43}}, {{SCP|Magic|39}}, {{SCP|Mining|45}}
+|-
+|[[Elemental Workshop II]]||7,500||data-sort-value="20"|{{SCP|Crafting|20}}||{{SCP|Magic|20}}, {{SCP|Smithing|30}}
+|-
+|[[The Hand in the Sand]]||9,000||data-sort-value="49"|{{SCP|Crafting|49}}||{{SCP|Thieving|17}}
+|-
+|[[The Fremennik Exiles]]||50,000||data-sort-value="65"|{{SCP|Crafting|65}}||{{SCP|Slayer|60}}, {{SCP|Smithing|60}}, {{SCP|Fishing|60}}, {{SCP|Runecraft|55}}
+|-
+!Total
+!135,143
+! colspan="2" |
+|}
+
+{{Training guides}}
+[[Category:Guides]]
+[[Category:Crafting]]
+[[Category:Members]]

@@ -1,0 +1,454 @@
+{{External|rs|rsc=Ranged training}}
+{{Redirect|Ranged training|the free players' guide|Free-to-play Ranged training}}
+This article provides an overview of strategies used to train the [[Ranged]] skill.
+
+==General training notes==
+Using the [[rapid]] attack style will offer the highest damage output and the fastest experience rates. For [[Chinchompa (weapon)|chinchompa]]s, the rapid attack style is called 'Medium fuse'. Longrange should only be used to train [[Defence]] while throwing chinchompas. Use the best [[ranged armour]] available to maximise damage output.
+
+[[Ava's device]]s return a percentage of certain ammunition fired. They are obtained from [[Ava]] after completing [[Animal Magnetism]], which requires level 30 Ranged. Wearing one of the devices will save a lot of money and time when using certain Ranged weapons (such as darts or shortbows), as the player does not need as much ammunition or to pick it up as often. Ammunition recovery will not work if wearing a [[Ava's_device#Metallic_interference|metallic body]].
+
+{| class="wikitable align-center-1 align-left-2" style="text-align:right"
+! colspan="2"|Device
+! {{SCP|Ranged}} req.
+! Recovery rate
+! Effectiveness <ref group="n">The number of times a given piece of ammunition can be used, on average, before being broken or lost.</ref>
+|-
+| {{plinkt|Ava's attractor}}
+| 30
+| 60%
+| 2.5
+|-
+| {{plinkt|Ava's accumulator}}
+| 50
+| 72%
+| 3.57
+|-
+| {{plinkt|Ava's assembler}} <ref group="n">Also requires a [[Vorkath's head]], which is obtainable after [[Dragon Slayer II]].</ref>
+| 70
+| 80%
+| 5
+|}
+<references group="n" />
+
+If picking up ammunition, speak to the [[Ranged combat tutor]] to toggle whether or not the ammunition will automatically be equipped.
+
+[[Void Knight equipment]] with the [[Void ranger helm]] is best against low defence monsters due to its damage-boosting set effect, while [[crystal armour]] or [[Masori armour]] are much better against higher defence monsters. Getting the void full set is not worthwhile timewise unless training to 99 using the fastest methods possible, however it is useful for [[Vorkath]], low-switch [[Zulrah]], [[Theatre of Blood]], and it is required for an [[elite Western Provinces Diary]] task. Completing the [[hard Western Provinces diary]] unlocks the elite upgrade for the void knight top and robe for an extra 400 [[Pest Control]] points.
+
+==Fastest experience==
+===Levels 1–32/36: Questing===
+[[File:Castle Wars - Ogre cannon spot.png|alt=Placement of the multicannon for killing ogres|thumb|width=250x250|Castle Wars Ogre multicannon spot]]
+Early levels can be skipped by completing [[Quest experience rewards#Ranged|quests that give Ranged experience]]. Completing [[Shadow of the Storm]] (putting the experience reward on Ranged), [[Death to the Dorgeshuun]], and [[Horror from the Deep]] grants a total of 16,662.5 experience, which will get the player from level 1 to 32. The level 40 Ranged requirement for [[Temple of Ikov]] can be bypassed by wielding knives or darts whilst wielding ice arrows, allowing for a further 10,500 experience. This will get the player up to level 36.
+
+===Levels 1–45: Using dwarf multicannon===
+{{Map|2398,3870|r=4|mtype=square|caption=Coal rocks safespot location.|align=right|width=250|height=250}}
+Using the [[dwarf multicannon]], once assembled, offers the fastest experience up to level 45. Players must have completed [[Dwarf Cannon]] quest to use and assemble their own dwarf multicannon, but there are no level requirements to assemble and use one. The cannon offers much higher damage output compared to other options at low levels, as it has a max hit of 30 with regular [[steel cannonball]]s regardless of the player's Ranged level. The [[Dwarf multicannon#Accuracy|accuracy of the multicannon]] is affected by the accuracy of the player's selected attack style, either ranged or melee, taking into account the attack bonus for that particular style. 
+
+Cannoning can be fairly expensive, however. At level 45, chinning becomes a lot faster and is usually a cheaper alternative.
+
+====Cannoning with Slayer====
+Training [[Slayer]] grants passive Ranged experience from using the dwarf multicannon. It is always worth using the cannon wherever applicable, as the cost of using the cannon is justified by the saved time compared to not using one. A melee task can take almost twice as long if not using the cannon. For example, in multi-combat areas such as during [[dagannoth]] and [[Kalphite Soldier|kalphite]] tasks the cannon will deal most of the damage, while the player is getting nearly as much Melee experience as they would without using a cannon. Should the player not be able to afford to use the cannon, it is better to make the money for the steel cannonballs than train Slayer without the cannon.
+
+The amount of Ranged experience gained from Slayer depends on the player's task list. Players can expect to gain around 2–4 million Ranged experience from level 99 Slayer.
+
+====Active cannoning methods====
+Alternatively, kill monsters with the dwarf multicannon to actively train Ranged.
+
+* [[Ogre]]s east of [[Castle Wars]] have no additional quest requirements, and cannoning them offers around 40,000 experience per hour from the cannon alone. They can be crowded, however.
+* [[Ogre]]s in the [[Combat Training Camp]] require completing [[Biohazard]], but can be less crowded.
+* Cannoning [[ice troll (disambiguation)|ice trolls]] north of [[Jatizso]] after completing [[The Fremennik Trials]] is a slower alternative at higher levels, but the drops cover the cost of the steel cannonballs. Use the coal rocks west of the eastern mining icon as a safespot. The trolls can deal heavy damage if not safespotted, so consider bringing backup food and runes for [[Telekinetic Grab]] for the loot.
+
+===Levels 45–99: Chinning maniacal monkeys===
+[[File:Maniacal Monkey Chinning High Intensity.gif|thumb|Chinning maniacal monkeys.]]
+''For more information, see [[Maniacal monkey/Strategies]]''.
+
+{{Equipment
+|align = right
+|head = Void ranger helm
+|cape = Blessed dizana's quiver
+|neck = Necklace of anguish
+|ammo = Rada's blessing 4
+|weapon = Black chinchompa
+|torso = Elite void top
+|legs = Elite void robe
+|shield = Twisted buckler
+|gloves = Void knight gloves
+|boots = Avernic treads (max)
+|ring = Venator ring
+}}
+Throwing [[chinchompas]] (commonly known as "chinning") at [[maniacal monkey]]s is the fastest way to train Ranged. Maniacal monkeys are located in [[Kruk's Dungeon]] on [[Ape Atoll]], which requires having started chapter II of [[Monkey Madness II]] to access. While chinning is much faster than any other methods, it also costs money.
+
+For the fastest experience rates, use equipment that maximises [[Ranged Strength]], or [[Void Knight equipment|Void Knight ranged equipment]] for its damage buff. This is because the maniacal monkeys have low defence. [[Void Knight equipment]] is higher DPS<ref>Damage per second.</ref> than dragonhide armour due to its damage-boosting set effect; however [[Masori armour]] with [[Zaryte vambraces]] is better than standard [[Void Knight equipment]] <ref>In most setups Masori beats Void. That being said, DPS and therefore experience depends on ranged level, prayers used, other equipment used, and other factors. It's best to check your DPS yourself to compare.</ref> due to its ranged strength bonus increasing damage per second. [[Elite Void Knight equipment]] is best in slot for most players. This is because it often has marginally higher DPS but also the prayer bonus reduces the time needed to collect and drink prayer potions, further increasing experience rates. Though the difference is minimal, and both Void and Masori are excellent choices. If you don't have access to these, use [[Hueycoatl hide armour]] or [[Blessed dragonhide armour]]. 
+
+Maniacal monkeys drop 1-dose prayer potions which negates the cost of using Protect from Melee and damage-boosting prayers. Players who have completed the hard [[Morytania Diary]] can alternatively use a [[bonecrusher necklace]] to restore Prayer points.
+
+Experience rates in the table below assume wearing the best damage-boosting equipment available, using [[Rigour]], using two dancing accounts to stack the monkeys, using [[divine ranging potion]]s, and throwing 1,970 chinchompas per hour. With [[Eagle Eye]], the rates would be roughly 5–7% lower.
+
+{| class="wikitable align-center-1" style="text-align:right"
+!{{SCP|Ranged}} level
+!{{plinkp|Chinchompa}} XP/h
+!{{plinkp|Red chinchompa}} XP/h
+!{{plinkp|Black chinchompa}} XP/h
+|-
+|45
+|290,000
+|{{NA}}
+|{{NA}}
+|-
+|55
+|360,000
+|430,000
+|{{NA}}
+|-
+|65
+|470,000
+|540,000
+|690,000
+|-
+|75
+|570,000
+|670,000
+|830,000
+|-
+|85
+|640,000
+|740,000
+|930,000
+|-
+|95
+|710,000
+|810,000
+|1,000,000
+|-
+|99
+|740,000
+|840,000
+|1,030,000
+|}
+
+==Other methods==
+===Levels 1–45/70: Crabs===
+Killing crabs is an afkable and relatively cheap way of training Ranged at lower levels. Choose a spot that makes two or three spawns aggressive at the same time. Turn on Auto Retaliate, and kill crabs with the best Ranged setup available. After 10 minutes, reset aggressiveness by running away far enough, usually a minimap's length. 
+
+There are five types of crabs the player can train on. They all have high Hitpoints, very low Defence and deal minimal damage.
+
+* [[Gemstone Crab]] near [[Tal Teklan]] in [[Varlamore]] has unlimited Hitpoints and only moves every 10 minutes, thus making it a very afk alternative. Multiple people can attack this crab, removing the risk of getting crashed or having to find an open spot.
+*[[Ammonite crab]]s on [[Fossil Island]] have 100 Hitpoints. They also drop [[unidentified fossil]]s, which can be turned in for experience lamps in Varrock Museum after cleaning. They can be very crowded.
+*[[Swamp crab]]s have 75 Hitpoints and are weak to Ranged. A safe area is located south-west of [[Port Phasmatys]] near the [[Morytania Graveyard]], where two crabs can become aggressive in a multi-combat zone.
+*[[Sand crab]]s near [[Hosidius]] have 60 Hitpoints and have no quest requirements, but are usually crowded.
+*[[Rock crab]]s near [[Rellekka]] have no quest requirements and are usually less crowded than sand and ammonite crabs, but only have 50 Hitpoints.
+
+Having at least level 30 Defence is recommended before starting Ranged training on these monsters to minimise the damage taken. Use a spot with fewer spawns if taking too much damage from too many crabs. If waiting for respawns, use a spot with more spawns or switch to a higher Hitpoints crab. 
+
+====Recommended weapons and armour====
+{{Equipment
+|align = right
+|head = Snakeskin bandana
+|cape = Ava's attractor
+|neck = Amulet of glory
+|ammo = 
+|weapon = Adamant dart
+|torso = Snakeskin body
+|legs = Snakeskin chaps
+|shield = Odium ward
+|gloves = Combat bracelet
+|boots = Snakeskin boots
+|ring = 
+}}
+Darts are the best weapon to use for both damage output and cost. Use the highest-level darts available up to [[Amethyst dart|amethyst]] ({{NoCoins|{{GEP|Amethyst dart}}|c}}) or [[Adamant dart|adamant]] ({{NoCoins|{{GEP|Adamant dart}}|c}}). Depending on the Grand Exchange prices, the following options can be good alternatives:
+*[[Rune knife|Rune knives]] ({{NoCoins|{{GEP|Rune knife}}|c}}) are slightly weaker than [[rune darts]] ({{NoCoins|{{GEP|Rune dart}}|c}}), but can be cheaper. 
+*[[Magic shortbow (i)]] (or [[yew shortbow]] below level 50) with [[rune arrow]]s ({{NoCoins|{{GEP|Rune arrow}}|c}}) offers comparable damage output to adamant darts. [[Amethyst arrow]]s ({{NoCoins|{{GEP|Amethyst arrow}}|c}}) can be used with a magic shortbow (i) for extra damage, however they are notably more expensive compared to rune.
+*[[Hunters' sunlight crossbow]] (50 Hunter requirement) with [[moonlight antler bolts]] ({{NoCoins|{{GEP|Moonlight_antler_bolts}}|c}}) is a stronger alternative to the magic shortbow (i), offering slightly higher damage output than adamant darts.
+
+Other crossbows are not recommended due to their slower attack speed, which makes them worse in damage output compared to the options above. While using the [[Dorgeshuun crossbow]] with [[bone bolts]] can be very cheap, even mithril darts offer much higher damage output and they are usually comparable in terms of cost.
+
+Players with level 60 Defence are advised to use an [[odium ward]] if using a one-handed weapon (such as darts), as it gives +4 Ranged strength and has no Ranged level requirement. The odium ward currently costs {{NoCoins|{{GEP|Odium ward}}|c}}. Players with level 65 Ranged can use the [[Rosewood blowpipe|Rosewood Blowpipe]] for +6 Ranged strength. Players with level 75 Hitpoints can also use the [[necklace of anguish]], however it is much more expensive (currently costing {{NoCoins|{{GEP|Necklace of anguish}}|c}}).
+
+Because crabs have very low Defence, having the highest possible Ranged accuracy bonuses is not too important. It is still recommended to at least upgrade the body and leg slot equipment whenever a better tier becomes available, since they give the most accuracy and defence bonuses of all the slots.
+
+===Levels 45–99: Chinning skeletal monkeys===
+Throwing chinchompas at [[Skeleton (Ape Atoll)|skeletal monkeys]] is only recommended for those who cannot access [[maniacal monkey]]s. Skeletal monkeys are located in the [[Ape Atoll Dungeon]], which requires partial completion of [[Monkey Madness I]] to access.
+
+Being undead monsters, the [[salve amulet (ei)]] accuracy and damage boosts apply against them. However, the boosts only affect the primary target. Wearing the salve amulet is still recommended to reduce splashing, as chinchompas will miss all targets if they miss the main target.
+
+===Levels 70–99: Pest Control===
+Participating at the [[Pest Control]] [[minigame]] and spending [[Void Knight commendation points]] on Ranged experience is an alternative training method at higher levels. Having a combat level of at least 100 for the veteran boat is recommended. Completion of the [[Easy Combat Achievements|easy]], [[Combat Achievements/Medium|medium]] and [[hard Combat Achievements]] increases the number of points earned per game.
+
+Experience rates in the table below assume 26 games per hour in the veteran boat, gaining 40,000 experience per hour from fighting pests, and spending 100 points at a time for 10% more experience per point.
+{| class="wikitable align-center-1" style="text-align:right"
+|+
+! rowspan="2" |{{SCP|Ranged}} levels
+! rowspan="2" |XP/point<br>(with 10% bonus)
+! colspan="4" |XP/h (points/game)
+|-
+!None (5)
+!Easy (6)
+!Medium (7)
+!Hard (8)
+|-
+|70–73
+|281.6
+|76,600
+|83,900
+|91,300
+|98,600
+|-
+|74–77
+|316.8
+|81,200
+|89,400
+|97,700
+|105,900
+|-
+|78–81
+|352.0
+|85,800
+|94,900
+|104,000
+|113,200
+|-
+|82–84
+|387.2
+|90,300
+|100,400
+|110,500
+|120,500
+|-
+|85–88
+|422.4
+|94,900
+|105,900
+|116,900
+|127,900
+|-
+|89–91
+|457.6
+|99,500
+|111,400
+|123,300
+|135,200
+|-
+|92–94
+|492.8
+|104,100
+|116,900
+|129,700
+|142,500
+|-
+|95–97
+|528.0
+|108,600
+|122,400
+|136,100
+|149,800
+|-
+|98–99
+|563.2
+|113,200
+|127,900
+|142,500
+|157,100
+|}
+
+===Levels 70/80–99: Nightmare Zone===
+''For more information, see [[Nightmare Zone/Strategies]].''
+
+Using the normal customisable rumble setup in [[Nightmare Zone]] allows for 20 minutes of AFK Ranged training. After 20 minutes, the player will stop attacking the monsters and needs to interact with the client to start attacking again. Using the [[venator bow]] with [[super ranging|super ranging potions]] and [[absorption]]s offers up to 140,000–150,000 (180,000-190,000 on hard mode) experience per hour at level 99. Slower but cheaper alternatives include the [[Magic shortbow (i)|imbued magic shortbow]] with [[Rune arrow|rune]] or [[amethyst arrow]]s, or [[adamant dart]]s with the [[twisted buckler]].
+
+===Levels 75/80–99: Training Ranged with Slayer===
+Using the [[toxic blowpipe]] or the [[venator bow]] for Slayer training is not considered efficient to do, however it is an option for players who do not value gaining Melee or Magic experience and want some variety to their training. The benefit of ranging Slayer tasks is that it is relatively decent Ranged experience per hour and it also results in slightly higher Slayer experience rates as the blowpipe offers slightly higher damage output compared to most Melee weapons. Training Ranged whilst on a task also enables the player to use a [[Slayer helmet (i)]] for a 15% boost to ranged accuracy and damage while also taking advantage of the accuracy bonuses of dragonhide or Armadyl armour. However, using the blowpipe is expensive, although this can be somewhat mitigated by monster drops. Using other weapons is not recommended as they have less damage output than using Melee.
+
+===Levels 80–99: Monkeys with Venator bow===
+
+As a cheaper (albeit slower) alternative to '''Chinning''', the [[Venator bow]] can be used with [[Amethyst arrows]] to kill either [[Skeleton_(Ape_Atoll)|Skeleton monkeys]] or [[Maniacal monkey]]s to get experience rates between 140,000 and 230,000 per hour. Skeleton monkeys have the benefit of being undead, allowing the player to use the [[Salve amulet(ei)]] to maximise DPS and therefore increase experience per hour. Maniacal monkeys are often preferred due to their increased numbers as well as their [[Prayer potion]] drops which enable long training sessions. Bring a [[light source]] and [[tinderbox]] to relight it if necessary. This could be the [[Kandarin headgear]] or a [[Bullseye Lantern]] if you wish for it to be brighter.
+
+Maniacal monkeys are located in Kruk's Dungeon on Ape Atoll, which requires having started chapter II of Monkey Madness II to access. The main benefit of this area is the endless monsters, always allowing for maximum hits with the [[Venator bow]].
+
+For the fastest experience rates, use equipment that maximises [[Ranged strength]], or [[Void Knight equipment|Void knight ranged equipment]] for its damage buff. This is because the Skeleton monkeys and Maniacal monkeys have low defence. Full [[Masori]] with the [[Salve amulet(ei)]] has the potential to reach the highest experience per hour against '''Skeleton monkeys''' specifically, however when facing Maniacal monkeys [[Elite void equipment]] is generally better than Masori. 
+
+Hypothetical experience rates with ideal gear can top 270,000 experience per hour, however this requires the player to always be attacking three targets with the Venator bow, and always be in combat. To ensure high rates, the player must also use [[Divine ranging potion]]s and [[Rigour]] or [[Deadeye]] (Or less preferably, [[Eagle eye]]) along with the [[Salve amulet(ei)]]. A more realistic maximum is 240,000 experience per hour when getting close to 99 ranged. 
+
+The [[Dwarf multicannon]] can also be used against Maniacal monkeys, however it is generally not recommended as the player may see a shortage in monkeys and reduction in experience.
+
+Using [[Dragon arrow]]s increases DPS by very little, and increases the cost massively. For this reason, it isn't worth it. [[Adamant arrows]] can provide a much cheaper alternative to [[Amethyst arrows]] while still gaining relatively high experience rates.
+
+The venator bow provides a solid, cheap, alternative to chinning. It requires less player involvement and training at Maniacal monkeys can continue indefinitely due to the [[Prayer potion]] drops - this lets the player camp at monkeys until they reach 99 ranged.
+
+==Equipment choice==
+Items will be listed in order of how much they increase general ranged damage per second. In nearly all cases, optimising for offensive stats is more effective than optimising for defensive or balanced stats, especially when fighting low-offence, high hp monsters. In addition, optimising for ranged strength is usually better than optimising for accuracy except against high-defence monsters.
+
+'''Note:''' This doesn't include [[elite void knight equipment]] or [[void knight equipment]] which in many cases can be best-in-slot for training, providing the player uses the set. It also doesn't include the [[salve amulet(ei)]] or the [[slayer helmet (i)]] which can both be best-in-slot in specific use cases. The Wiki's [https://tools.runescape.wiki/osrs-dps/ DPS calculator] can be used to determine which gear provides the highest DPS for a specific monster. 
+
+===Items in order of effectiveness by slot===
+<tabber>
+Head=
+{{Infotable Bonuses header}}
+{{Infotable Bonuses row|name=Masori mask (f)|astab=0|acrush=0|aslash=0|amagic=-1|dstab=+8|dcrush=+12|arange=+12|dslash=+10|dmagic=+12|mdmg=0|str=0|drange=+9|prayer=+1|rstr=+2}}
+{{Infotable Bonuses row|name=Masori mask|astab=0|aslash=0|acrush=0|amagic=-1|arange=+12|dstab=+3|dslash=+4|dcrush=+3|dmagic=+6|drange=+4|str=0|rstr=+2|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Armadyl helmet|astab=-5|aslash=-5|acrush=-5|amagic=-5|arange=+10|dstab=+6|dslash=+8|dcrush=+10|dmagic=+10|drange=+8|str=0|rstr=0|mdmg=0|prayer=+1}}
+{{Infotable Bonuses row|name=Crystal helm|astab=0|aslash=0|acrush=0|amagic=-10|arange=+9|dstab=+12|dslash=+8|dcrush=+14|dmagic=+10|drange=+18|str=0|rstr=0|mdmg=0|prayer=+2}}
+{{Infotable Bonuses row|name=3rd age range coif|astab=0|aslash=0|acrush=0|amagic=-2|arange=+9|dstab=+4|dslash=+7|dcrush=+10|dmagic=+5|drange=+8|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Eclipse moon helm|astab=0|aslash=0|acrush=0|amagic=-6|arange=+8|dstab=+2|dslash=+3|dcrush=+14|dmagic=+10|drange=+4|str=+3|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Robin hood hat|astab=0|aslash=0|acrush=0|amagic=-10|arange=+8|dstab=+4|dslash=+6|dcrush=+8|dmagic=+4|drange=+4|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Hueycoatl hide coif|pic=Hueycoatl hide coif|astab=0|aslash=0|acrush=0|amagic=-1|arange=+7|dstab=+4|dslash=+7|dcrush=+10|dmagic=+5|drange=+8|str=0|rstr=0|mdmg=0|prayer=+2}}
+{{Infotable Bonuses row|name=Blessed coif|pic=Ancient coif|astab=0|aslash=0|acrush=0|amagic=-1|arange=+7|dstab=+4|dslash=+7|dcrush=+10|dmagic=+4|drange=+8|str=0|rstr=0|mdmg=0|prayer=+1}}
+{{Infotable Bonuses row|name=Karil's coif|astab=0|aslash=0|acrush=0|amagic=-1|arange=+7|dstab=+6|dslash=+9|dcrush=+12|dmagic=+6|drange=+10|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Ranger hat|astab=-5|aslash=-5|acrush=-5|amagic=-5|arange=+6|dstab=+7|dslash=+10|dcrush=+11|dmagic=+5|drange=+8|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Archer helm|astab=-5|aslash=-5|acrush=-5|amagic=-5|arange=+6|dstab=+6|dslash=+8|dcrush=+10|dmagic=+6|drange=+6|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Spined helm|astab=-6|aslash=-6|acrush=-6|amagic=-6|arange=+6|dstab=+6|dslash=+6|dcrush=+6|dmagic=+6|drange=0|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Shayzien helm (5)|astab=0|aslash=0|acrush=0|amagic=-6|arange=+4|dstab=+10|dslash=+14|dcrush=+12|dmagic=-2|drange=+13|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Snakeskin bandana|astab=0|aslash=0|acrush=0|amagic=-5|arange=+4|dstab=+2|dslash=+4|dcrush=+4|dmagic=+2|drange=+2|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Slayer helmet (i)|astab=0|aslash=0|acrush=0|amagic=+3|arange=+3|dstab=+30|dslash=+32|dcrush=+27|dmagic=+10|drange=+30|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Coif|astab=0|aslash=0|acrush=0|amagic=-1|arange=+2|dstab=+4|dslash=+6|dcrush=+8|dmagic=+4|drange=+4|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Leather cowl|astab=0|aslash=0|acrush=0|amagic=0|arange=+1|dstab=+2|dslash=+3|dcrush=+4|dmagic=+2|drange=+3|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses footer}}
+
+|-|
+Cape=
+{{Infotable Bonuses header}}
+{{Infotable Bonuses row|name=Dizana's quiver|astab=0|aslash=0|acrush=0|amagic=0|arange=+18|dstab=+0|dslash=+0|dcrush=+0|dmagic=+0|drange=+0|str=0|rstr=+3|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Ava's assembler|astab=0|aslash=0|acrush=0|amagic=0|arange=+8|dstab=+1|dslash=+1|dcrush=+1|dmagic=+8|drange=+2|str=0|rstr=+2|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Mixed hide cape|astab=0|aslash=0|acrush=0|amagic=-15|arange=+5|dstab=+2|dslash=+2|dcrush=+2|dmagic=+5|drange=+1|str=+1|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Ava's accumulator|astab=0|aslash=0|acrush=0|amagic=0|arange=+4|dstab=0|dslash=+1|dcrush=0|dmagic=+4|drange=0|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Ava's attractor|astab=0|aslash=0|acrush=0|amagic=0|arange=+2|dstab=0|dslash=0|dcrush=0|dmagic=+2|drange=0|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Infernal cape|astab=+4|aslash=+4|acrush=+4|amagic=+1|arange=+1|dstab=+12|dslash=+12|dcrush=+12|dmagic=+12|drange=+12|str=+8|rstr=0|mdmg=0|prayer=+2}}
+{{Infotable Bonuses row|name=Fire cape|astab=+1|aslash=+1|acrush=+1|amagic=+1|arange=+1|dstab=+11|dslash=+11|dcrush=+11|dmagic=+11|drange=+11|str=+4|rstr=0|mdmg=0|prayer=+2}}
+{{Infotable Bonuses footer}}
+
+|-|
+Neck=
+{{Infotable Bonuses header}}
+{{Infotable Bonuses row|name=Necklace of anguish|astab=0|aslash=0|acrush=0|amagic=0|arange=+15|dstab=0|dslash=0|dcrush=0|dmagic=0|drange=0|str=0|rstr=+5|mdmg=0|prayer=+2}}
+{{Infotable Bonuses row|name=Amulet of fury|astab=+10|aslash=+10|acrush=+10|amagic=+10|arange=+10|dstab=+15|dslash=+15|dcrush=+15|dmagic=+15|drange=+15|str=+8|rstr=0|mdmg=0|prayer=+5}}
+{{Infotable Bonuses row|name=Dragonbone necklace|altname=Bonecrusher necklace/Dragonbone necklace|astab=+10|aslash=+10|acrush=+10|amagic=+10|arange=+10|dstab=+2|dslash=+2|dcrush=+2|dmagic=+2|drange=+2|str=+2|rstr=0|mdmg=0|prayer=+12}}
+{{Infotable Bonuses row|name=Amulet of glory|astab=+10|aslash=+10|acrush=+10|amagic=+10|arange=+10|dstab=+3|dslash=+3|dcrush=+3|dmagic=+3|drange=+3|str=+6|rstr=0|mdmg=0|prayer=+3}}
+{{Infotable Bonuses row|name=Amulet of power|astab=+6|aslash=+6|acrush=+6|amagic=+6|arange=+6|dstab=+6|dslash=+6|dcrush=+6|dmagic=+6|drange=+6|str=+6|rstr=0|mdmg=0|prayer=+1}}
+{{Infotable Bonuses row|name=Amulet of accuracy|astab=+4|aslash=+4|acrush=+4|amagic=+4|arange=+4|dstab=0|dslash=0|dcrush=0|dmagic=0|drange=0|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Unholy symbol|astab=+2|aslash=+2|acrush=+2|amagic=+2|arange=+2|dstab=0|dslash=0|dcrush=0|dmagic=0|drange=0|str=0|rstr=0|mdmg=0|prayer=+8}}
+{{Infotable Bonuses footer}}
+
+|-|
+Body=
+{{Infotable Bonuses header}}
+{{Infotable Bonuses row|name=Masori body (f)|astab=0|aslash=0|acrush=0|amagic=-4|arange=+43|dstab=+59|dslash=+52|dcrush=+64|dmagic=+74|drange=+60|str=0|rstr=+4|mdmg=0|prayer=+1}}
+{{Infotable Bonuses row|name=Masori body|astab=0|aslash=0|acrush=0|amagic=-4|arange=+43|dstab=+37|dslash=+35|dcrush=+38|dmagic=+25|drange=+33|str=0|rstr=+4|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Armadyl chestplate|astab=-7|aslash=-7|acrush=-7|amagic=-15|arange=+33|dstab=+56|dslash=+48|dcrush=+61|dmagic=+70|drange=+57|str=0|rstr=0|mdmg=0|prayer=+1}}
+{{Infotable Bonuses row|name=Crystal body|astab=0|aslash=0|acrush=0|dslash=+38|dcrush=+48|rstr=0|dmagic=+44|drange=+68|amagic=-18|dstab=+46|str=0|mdmg=0|arange=+31|prayer=+3}}
+{{Infotable Bonuses row|name=Eclipse moon chestplate|astab=0|aslash=0|acrush=0|amagic=-15|arange=+31|dstab=+15|dslash=+18|dcrush=+57|dmagic=+55|drange=+32|str=+3|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Hueycoatl hide body|pic=Hueycoatl hide body|astab=0|aslash=0|acrush=0|amagic=-15|arange=+30|dstab=+55|dslash=+47|dcrush=+60|dmagic=+56|drange=+55|str=0|rstr=0|mdmg=0|prayer=+3}}
+{{Infotable Bonuses row|name=Blessed body|pic=Ancient d'hide body|astab=0|aslash=0|acrush=0|amagic=-15|arange=+30|dstab=+55|dslash=+47|dcrush=+60|dmagic=+50|drange=+55|str=0|rstr=0|mdmg=0|prayer=+1}}
+{{Infotable Bonuses row|name=3rd age range top|astab=0|aslash=0|acrush=0|amagic=-15|arange=+30|dstab=+55|dslash=+47|dcrush=+60|dmagic=+60|drange=+55|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Karil's leathertop|astab=0|aslash=0|acrush=0|amagic=-15|arange=+30|dstab=+47|dslash=+42|dcrush=+50|dmagic=+65|drange=+57|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Black d'hide body|astab=0|aslash=0|acrush=0|amagic=-15|arange=+30|dstab=+30|dslash=+38|dcrush=+45|dmagic=+45|drange=+50|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Mixed hide top|astab=+4|aslash=-2|acrush=-3|amagic=-15|arange=+27|dstab=+33|dslash=+39|dcrush=+43|dmagic=+30|drange=+32|str=+2|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Red d'hide body|astab=0|aslash=0|acrush=0|amagic=-15|arange=+25|dstab=+26|dslash=+34|dcrush=+36|dmagic=+36|drange=+45|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Blue d'hide body|astab=0|aslash=0|acrush=0|amagic=-15|arange=+20|dstab=+23|dslash=+30|dcrush=+30|dmagic=+28|drange=+40|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Green d'hide body|astab=0|aslash=0|acrush=0|amagic=-15|arange=+15|dstab=+18|dslash=+27|dcrush=+24|dmagic=+20|drange=+35|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Rangers' tunic|astab=0|aslash=0|acrush=0|amagic=-15|arange=+15|dstab=+6|dslash=+9|dcrush=+12|dmagic=+6|drange=+6|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Snakeskin body|astab=0|aslash=0|acrush=0|amagic=-5|arange=+12|dstab=+25|dslash=+28|dcrush=+32|dmagic=+15|drange=+35|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Frog-leather body|astab=0|aslash=0|acrush=0|amagic=-5|arange=+10|dstab=+23|dslash=+26|dcrush=+30|dmagic=+15|drange=+32|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Studded body|astab=0|aslash=0|acrush=0|amagic=-4|arange=+8|dstab=+18|dslash=+25|dcrush=+22|dmagic=+8|drange=+25|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Hardleather body|astab=0|aslash=0|acrush=0|amagic=-4|arange=+8|dstab=+12|dslash=+15|dcrush=+18|dmagic=+6|drange=+15|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Leather body|astab=0|aslash=0|acrush=0|amagic=-2|arange=+2|dstab=+8|dslash=+9|dcrush=+10|dmagic=+4|drange=+9|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses footer}}
+
+|-|
+Shield=
+{{Infotable Bonuses header}}
+{{Infotable Bonuses row|name=Twisted buckler|astab=-7|aslash=-8|acrush=-7|amagic=-10|arange=+18|dstab=+22|dslash=+24|dcrush=+22|dmagic=+26|drange=+58|str=0|rstr=+10|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Dragonfire ward|astab=-10|aslash=-10|acrush=-10|amagic=-10|arange=+15|dstab=+25|dslash=+30|dcrush=+28|dmagic=+28|drange=+68|str=-2|rstr=+8|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Odium ward|astab=-12|aslash=-12|acrush=-12|amagic=-8|arange=+12|dstab=0|dslash=0|dcrush=0|dmagic=+24|drange=+52|str=0|rstr=+4|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Aquanite hopper|astab=-5|aslash=-5|acrush=-3|amagic=-13|arange=+12|dstab=0|dslash=0|dcrush=0|dmagic=0|drange=0|str=0|rstr=+1|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Antler guard|astab=+15|aslash=+15|acrush=+15|amagic=+9|arange=+9|dstab=-15|dslash=-15|dcrush=-15|dmagic=-15|drange=-15|str=+5|rstr=+2|mdmg=0|prayer=+5}}
+{{Infotable Bonuses row|name=Book of law|astab=0|aslash=0|acrush=0|amagic=0|arange=+10|dstab=0|dslash=0|dcrush=0|dmagic=0|drange=0|str=0|rstr=0|mdmg=0|prayer=+5}}
+{{Infotable Bonuses row|name=Unholy book|astab=+8|aslash=+8|acrush=+8|amagic=+8|arange=+8|dstab=0|dslash=0|dcrush=0|dmagic=0|drange=0|str=0|rstr=0|mdmg=0|prayer=+5}}
+{{Infotable Bonuses row|name=Blessed shield|pic=Ancient d'hide shield|astab=-15|aslash=-15|acrush=-11|amagic=-10|arange=+7|dstab=+21|dslash=+18|dcrush=+16|dmagic=+15|drange=+14|str=0|rstr=0|mdmg=0|prayer=+1}}
+{{Infotable Bonuses row|name=Black d'hide shield|astab=-15|aslash=-15|acrush=-11|amagic=-10|arange=+7|dstab=+21|dslash=+18|dcrush=+16|dmagic=+15|drange=+14|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Red d'hide shield|astab=-15|aslash=-15|acrush=-11|amagic=-10|arange=+6|dstab=+18|dslash=+16|dcrush=+14|dmagic=+13|drange=+13|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Blue d'hide shield|astab=-15|aslash=-15|acrush=-11|amagic=-10|arange=+5|dstab=+16|dslash=+14|dcrush=+12|dmagic=+12|drange=+12|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Green d'hide shield|astab=-15|aslash=-15|acrush=-11|amagic=-10|arange=+4|dstab=+14|dslash=+12|dcrush=+11|dmagic=+9|drange=+11|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Book of balance|astab=+4|aslash=+4|acrush=+4|amagic=+4|arange=+4|dstab=+4|dslash=+4|dcrush=+4|dmagic=+4|drange=+4|str=0|rstr=0|mdmg=0|prayer=+5}}
+{{Infotable Bonuses row|name=Snakeskin shield|astab=-15|aslash=-15|acrush=-11|amagic=-10|arange=+3|dstab=+10|dslash=+9|dcrush=+8|dmagic=+7|drange=+10|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Hard leather shield|astab=-15|aslash=-15|acrush=-11|amagic=-10|arange=+2|dstab=+8|dslash=+7|dcrush=+7|dmagic=+5|drange=+9|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses footer}}
+
+|-|
+Legs=
+{{Infotable Bonuses header}}
+{{Infotable Bonuses row|name=Masori chaps (f)|astab=0|aslash=0|acrush=0|amagic=-2|arange=+27|dstab=+35|dslash=+30|dcrush=+39|dmagic=+46|drange=+37|str=0|rstr=+2|mdmg=0|prayer=+1}}
+{{Infotable Bonuses row|name=Masori chaps|astab=0|aslash=0|acrush=0|amagic=-2|arange=+27|dstab=+26|dslash=+24|dcrush=+29|dmagic=+19|drange=+22|str=0|rstr=+2|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Armadyl chainskirt|astab=-6|aslash=-6|acrush=-6|amagic=-10|arange=+20|dstab=+32|dslash=+26|dcrush=+34|dmagic=+40|drange=+33|str=0|rstr=0|mdmg=0|prayer=+1}}
+{{Infotable Bonuses row|name=Crystal legs|astab=0|aslash=0|arange=+18|acrush=0|amagic=-12|dstab=+26|drange=+38|dcrush=+30|dslash=+21|dmagic=+34|str=0|mdmg=0|rstr=0|prayer=+2}}
+{{Infotable Bonuses row|name=Hueycoatl hide chaps|pic=Hueycoatl hide chaps|astab=0|aslash=0|acrush=0|amagic=-10|arange=+17|dstab=+31|dslash=+25|dcrush=+33|dmagic=+30|drange=+31|str=0|rstr=0|mdmg=0|prayer=+2}}
+{{Infotable Bonuses row|name=Blessed chaps|pic=Ancient chaps|astab=0|aslash=0|acrush=0|amagic=-10|arange=+17|dstab=+31|dslash=+25|dcrush=+33|dmagic=+28|drange=+31|str=0|rstr=0|mdmg=0|prayer=+1}}
+{{Infotable Bonuses row|name=3rd age range legs|astab=0|aslash=0|acrush=0|amagic=-10|arange=+17|dstab=+31|dslash=+25|dcrush=+33|dmagic=+30|drange=+31|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Karil's leatherskirt|astab=0|aslash=0|acrush=0|amagic=-10|arange=+17|dstab=+26|dslash=+20|dcrush=+28|dmagic=+35|drange=+33|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Black d'hide chaps|astab=0|aslash=0|acrush=0|amagic=-10|arange=+17|dstab=+18|dslash=+20|dcrush=+26|dmagic=+23|drange=+26|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Eclipse moon tassets|astab=0|aslash=0|acrush=0|amagic=-15|arange=+17|dstab=+9|dslash=+13|dcrush=+37|dmagic=+31|drange=+17|str=+1|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Penance skirt|astab=0|aslash=0|acrush=0|amagic=-10|arange=+15|dstab=+26|dslash=+21|dcrush=+28|dmagic=+19|drange=+26|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Rangers' tights|astab=0|aslash=0|acrush=0|amagic=-10|arange=+15|dstab=0|dslash=0|dcrush=0|dmagic=0|drange=0|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Mixed hide legs|astab=+3|aslash=-1|acrush=-2|amagic=-10|arange=+14|dstab=+20|dslash=+23|dcrush=+22|dmagic=+16|drange=+20|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Red d'hide chaps|astab=0|aslash=0|acrush=0|amagic=-10|arange=+14|dstab=+15|dslash=+18|dcrush=+22|dmagic=+18|drange=+20|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Blue d'hide chaps|astab=0|aslash=0|acrush=0|amagic=-10|arange=+11|dstab=+13|dslash=+16|dcrush=+20|dmagic=+14|drange=+20|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Yak-hide armour (legs)|astab=0|aslash=0|acrush=0|amagic=-5|arange=+10|dstab=+25|dslash=+20|dcrush=+15|dmagic=-2|drange=+10|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Green d'hide chaps|astab=0|aslash=0|acrush=0|amagic=-10|arange=+8|dstab=+12|dslash=+15|dcrush=+18|dmagic=+8|drange=+17|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Studded chaps|astab=0|aslash=0|acrush=0|amagic=-5|arange=+6|dstab=+15|dslash=+16|dcrush=+17|dmagic=+6|drange=+16|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Snakeskin chaps|astab=0|aslash=0|acrush=0|amagic=-5|arange=+6|dstab=+8|dslash=+8|dcrush=+10|dmagic=+4|drange=+10|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Leather chaps|astab=0|aslash=0|acrush=0|amagic=0|arange=+4|dstab=+2|dslash=+2|dcrush=+1|dmagic=0|drange=0|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses footer}}
+
+|-|
+Hands=
+{{Infotable Bonuses header}}
+{{Infotable Bonuses row|name=Zaryte vambraces|astab=-8|aslash=-8|acrush=-8|amagic=0|arange=+18|dstab=+8|dslash=+8|dcrush=+8|dmagic=+5|drange=+8|str=0|rstr=+2|mdmg=0|prayer=+1}}
+{{Infotable Bonuses row|name=Barrows gloves|astab=+12|aslash=+12|acrush=+12|amagic=+6|arange=+12|dstab=+12|dslash=+12|dcrush=+12|dmagic=+6|drange=+12|str=+12|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Hueycoatl hide vambraces|pic=Hueycoatl hide vambraces|astab=0|aslash=0|acrush=0|amagic=-10|arange=+11|dstab=+6|dslash=+5|dcrush=+7|dmagic=+8|drange=0|str=0|rstr=0|mdmg=0|prayer=+1}}
+{{Infotable Bonuses row|name=Blessed vambraces|pic=Ancient bracers|astab=0|aslash=0|acrush=0|amagic=-10|arange=+11|dstab=+6|dslash=+5|dcrush=+7|dmagic=+8|drange=0|str=0|rstr=0|mdmg=0|prayer=+1}}
+{{Infotable Bonuses row|name=3rd age vambraces|astab=0|aslash=0|acrush=0|amagic=-10|arange=+11|dstab=+6|dslash=+5|dcrush=+7|dmagic=+9|drange=0|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Black d'hide vambraces|astab=0|aslash=0|acrush=0|amagic=-10|arange=+11|dstab=+4|dslash=+5|dcrush=+5|dmagic=+8|drange=0|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Ranger gloves|astab=0|aslash=0|acrush=0|amagic=-10|arange=+11|dstab=+1|dslash=+2|dcrush=+1|dmagic=+2|drange=0|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Red d'hide vambraces|astab=0|aslash=0|acrush=0|amagic=-10|arange=+10|dstab=+3|dslash=+4|dcrush=+4|dmagic=+6|drange=0|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Dragon gloves|astab=+9|aslash=+9|acrush=+9|amagic=+5|arange=+9|dstab=+9|dslash=+9|dcrush=+9|dmagic=+5|drange=+9|str=+9|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Blue d'hide vambraces|astab=0|aslash=0|acrush=0|amagic=-10|arange=+9|dstab=+2|dslash=+3|dcrush=+3|dmagic=+4|drange=0|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Rune gloves|astab=+8|aslash=+8|acrush=+8|amagic=+4|arange=+8|dstab=+8|dslash=+8|dcrush=+8|dmagic=+4|drange=+8|str=+8|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Green d'hide vambraces|astab=0|aslash=0|acrush=0|amagic=-10|arange=+8|dstab=+1|dslash=+2|dcrush=+2|dmagic=+2|drange=0|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Adamant gloves|astab=+7|aslash=+7|acrush=+7|amagic=+4|arange=+7|dstab=+7|dslash=+7|dcrush=+7|dmagic=+4|drange=+7|str=+7|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Regen bracelet|astab=+8|aslash=+8|acrush=+8|amagic=+3|arange=+7|dstab=+6|dslash=+6|dcrush=+6|dmagic=+3|drange=+6|str=+7|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Combat bracelet|astab=+7|aslash=+7|acrush=+7|amagic=+3|arange=+7|dstab=+5|dslash=+5|dcrush=+5|dmagic=+3|drange=+5|str=+6|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Mithril gloves|astab=+6|aslash=+6|acrush=+6|amagic=+3|arange=+6|dstab=+6|dslash=+6|dcrush=+6|dmagic=+3|drange=+6|str=+6|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Shayzien gloves (5)|astab=0|aslash=0|acrush=+2|amagic=-1|arange=+6|dstab=0|dslash=+2|dcrush=+3|dmagic=-1|drange=+2|str=+3|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses footer}}
+
+|-|
+Feet=
+{{Infotable Bonuses header}}
+{{Infotable Bonuses row|name=Avernic treads (max)|astab=+5|aslash=+5|acrush=+5|amagic=+11|arange=+15|dstab=+21|dslash=+25|dcrush=+25|dmagic=+10|drange=+10|str=+6|rstr=+3|mdmg=+2|prayer=0}}
+{{Infotable Bonuses row|name=Pegasian boots|astab=0|aslash=0|acrush=0|amagic=-12|arange=+12|dstab=+5|dslash=+5|dcrush=+5|dmagic=+5|drange=+5|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Ranger boots|astab=0|aslash=0|acrush=0|amagic=-10|arange=+8|dstab=+2|dslash=+3|dcrush=+4|dmagic=+2|drange=0|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Blessed boots|pic=Ancient d'hide boots|astab=0|aslash=0|acrush=0|amagic=-10|arange=+7|dstab=+4|dslash=+4|dcrush=+4|dmagic=+4|drange=+4|str=0|rstr=0|mdmg=0|prayer=+1}}
+{{Infotable Bonuses row|name=Aranea boots|astab=0|aslash=0|acrush=0|amagic=+5|arange=+6|dstab=0|dslash=0|dcrush=0|dmagic=0|drange=0|str=+4|rstr=0|mdmg=0|prayer=+1}}
+{{Infotable Bonuses row|name=Boots of brimstone|astab=+3|aslash=0|acrush=0|amagic=+3|arange=+5|dstab=+10|dslash=+10|dcrush=+10|dmagic=+5|drange=+5|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Mixed hide boots|astab=0|aslash=0|acrush=0|amagic=-10|arange=+5|dstab=+4|dslash=+5|dcrush=+6|dmagic=+3|drange=+3|str=+2|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Shayzien boots (5)|astab=0|aslash=0|acrush=0|amagic=-2|arange=+4|dstab=+5|dslash=+7|dcrush=+8|dmagic=0|drange=0|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Snakeskin boots|astab=0|aslash=0|acrush=0|amagic=-10|arange=+3|dstab=+1|dslash=+1|dcrush=+2|dmagic=+1|drange=0|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Frog-leather boots|astab=0|aslash=0|acrush=0|amagic=-8|arange=+2|dstab=+1|dslash=+1|dcrush=+1|dmagic=0|drange=+1|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses footer}}
+
+|-|
+Ring=
+{{Infotable Bonuses header}}
+{{Infotable Bonuses row|name=Venator ring|astab=0|aslash=0|acrush=0|amagic=0|arange=+10|dstab=0|dslash=0|dcrush=0|dmagic=0|drange=0|str=0|rstr=+2|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Archers ring (i)|astab=0|aslash=0|acrush=0|amagic=0|arange=+8|dstab=0|dslash=0|dcrush=0|dmagic=0|drange=+8|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Brimstone ring|astab=+4|aslash=+4|acrush=+4|amagic=+6|arange=+4|dstab=+4|dslash=+4|dcrush=+4|dmagic=+6|drange=+4|str=+4|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses row|name=Ring of shadows|astab=+4|aslash=+4|acrush=+4|amagic=+5|arange=+4|dstab=+0|dslash=+0|dcrush=+0|dmagic=+5|drange=+0|str=+2|rstr=0|mdmg=0|prayer=+2}}
+{{Infotable Bonuses row|name=Archers ring|astab=0|aslash=0|acrush=0|amagic=0|arange=+4|dstab=0|dslash=0|dcrush=0|dmagic=0|drange=+4|str=0|rstr=0|mdmg=0|prayer=0}}
+{{Infotable Bonuses footer}}
+
+Rings should be [[imbued]] '''as soon as possible''' using the Nightmare Zone, [[Soul Wars]], or with a [[scroll of imbuing]] from the [[Emir's Arena]]. If the player cannot afford the archers ring, a [[ring of wealth]] is a decent alternative to help improve [[rare drop table]] rolls and pick up [[coins]], but it does not increase damage.
+</tabber>
+
+==Comparison of ranged weapons==
+{{Ranged weapons comparison}}
+
+{{Training guides}}
+[[Category:Ranged]]
+[[Category:Members]]

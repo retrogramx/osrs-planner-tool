@@ -1,0 +1,187 @@
+{{External|rs|rsc=Spirit Tree}}
+{{otheruses|the transportation method|the monsters in the Enchanted Valley|Tree spirit}}
+{{Infobox Scenery
+|version1 = Ancient
+|version2 = Young
+|version3 = Prifddinas
+|version4 = Incomitatus
+|name1 = Spirit tree
+|name2 = Spirit tree
+|name3 = Spirit tree
+|name4 = Spirit Tree
+|image1 = [[File:Spirit tree.png|x240px]]
+|image2 = [[File:Spirit Tree (grown).png|x240px]]
+|image3 = [[File:Spirit tree (Prifddinas).png|x240px]]
+|image4 = [[File:Spirit Tree (Incomitatus, healthy).png|x240px]]
+|release1 = [[23 July]] [[2002]]
+|release2 = [[23 July]] [[2002]]
+|release3 = [[25 July]] [[2019]]
+|release4 = [[13 September]] [[2023]]
+|update1 = Members' quests
+|update2 = Members' quests
+|update3 = Song of the Elves
+|update4 = The Path of Glouphrie
+|members = Yes
+|quest1 = [[Tree Gnome Village]]
+|quest2 = [[Tree Gnome Village]]
+|quest3 = [[Tree Gnome Village]], [[Song of the Elves]]
+|quest4 = [[Tree Gnome Village]], [[The Path of Glouphrie]]
+|location1 = Varies
+|location2 = Varies
+|location3 = [[Prifddinas]]
+|location4 = [[Poison Waste]]
+|options = Travel, Talk-to, Last-destination
+|examine1 = An ancient sentient tree.
+|examine2 = A young sentient tree.
+|examine3 = A young sentient tree.
+|examine4 = This spirit tree looks very happy.
+|map1 = {{Map|mtype=pin|2460,3445|2543,3168|caption=Overview of all trees. Trees marked with red pins must be planted in order to be used, whilst green are available by default.}}
+|map2 = {{Map|mtype=pin|3184,3509|2486,2850|2555,3260|1202,2786}}
+|map3 = {{Map|mtype=pin|3274,6124|mapID=29}}
+|map4 = {{Map|mtype=pin|2339,3111}}
+|id1 = 26259,26260,26261
+|id2 = 26262,26263
+|id3 = 35949,35950
+|id4 = 49595,49596
+}}
+{{Synced switch
+|version1=[[File:Spirit tree (ancient) chathead.png|left]]
+|version2=[[File:Spirit tree (young) chathead.png|left]]
+|version3=[[File:Spirit tree (young) chathead.png|left]]
+|version4=[[File:Spirit Tree (Incomitatus, healthy) chathead.png|left]]
+}}
+'''Spirit trees''' are a [[Gnome|gnomish]] method of [[transportation]]. Completion of the [[Tree Gnome Village]] [[quest]] is required for access to the network. Additional completion of [[The Grand Tree]] is required to travel '''from''' the spirit tree at the [[Tree Gnome Stronghold]], but is not required to travel to it. All other trees can be used to travel directly from one tree to another tree.
+
+==Spirit tree locations==
+Permanent locations:
+
+*[[Tree Gnome Village (location)|Tree Gnome Village]] in the middle of the [[Gnome Maze]] {{Map|2539,3166|type=maplink|mtype=pin|text=}}
+*[[Tree Gnome Stronghold|Gnome Stronghold]] (requires completion of [[The Grand Tree]] quest to travel from this location. Before the quest, it can still be used as the destination while travelling from other trees). {{Map|2460,3446|type=maplink|mtype=pin|text=}}
+*[[Battlefield|Battlefield of Khazard]] - just south of [[West Ardougne]]. {{Map|2555,3259|type=maplink|mtype=pin|text=}}
+*North-east corner of the [[Grand Exchange]] in [[Varrock]]. {{Map|3185,3510|type=maplink|mtype=pin|text=}}
+*South-west corner of [[Feldip Hills]], next to the [[Myths' Guild]]. {{Map|2486,2850|type=maplink|mtype=pin|text=}}
+*East of the [[Poison Waste]] (requires partial completion of [[The Path of Glouphrie]]) {{Map|2339,3111|type=maplink|mtype=pin|text=}}
+*[[Prifddinas]] (requires completion of [[Song of the Elves]] quest) {{Map|3275,6124|mapID=-1|type=maplink|mtype=pin|text=}}
+*[[Laguna Aurorae]] (requires completion of [[Pandemonium]], 58 [[Sailing]], and having moored at the island at least once) {{Map|1202,2786|mapID=-1|type=maplink|mtype=pin|text=}}
+
+Self-grown spirit tree locations '''([[Farming]] only)''':
+
+*In south-eastern [[Etceteria]]. {{Map|2613,3858|type=maplink|mtype=pin|icon=redPin|text=}}
+*Easternmost part of [[Port Sarim]]. {{Map|3060,3258|type=maplink|mtype=pin|icon=redPin|text=}}
+*North-eastern part of [[Brimhaven]], near the [[Brimhaven Agility Arena|Agility Arena]]. {{Map|2802,3203|type=maplink|mtype=pin|icon=redPin|text=}}
+*[[Hosidius]], next to the [[saltpetre]] deposits and south-east of the [[Forthos Ruin]]. {{Map|1693,3542|type=maplink|mtype=pin|icon=redPin|text=}}
+*Inside the advanced tier of the [[Farming Guild]]. (''Can be accessed before level 85 with the use of stat boosting items, but requires boosting to 85 everytime teleporting there is desired'') {{Map|1253,3750|type=maplink|mtype=pin|icon=redPin|text=}}
+
+Additionally, with 75 [[Construction]]:
+
+*[[Player-owned house]] [[superior garden]] - The [[crystal saw]] boost cannot be used, but other [[Construction#Temporary boosts|boosts]] are possible. This does not count towards limit on spirit trees planted, and provides only 350 experience in both Farming and Construction.
+
+One of the fastest ways to access a spirit tree is to teleport to the [[Stronghold Slayer Cave]] with a [[Slayer ring]] - the player will arrive close to the tree. For low requirements and no cost, using an [[Ardougne cloak]], one can [[Teleportation|teleport]] to the [[Ardougne Monastery]] and use the [[Battlefield|Khazard Battlefield]] tree just to the west. The Port Sarim spirit tree patch (83 Farming) is just south of the [[Explorer's ring 2|explorer's ring]]'s (2 or better) cabbage-port. When the player has a [[Farming cape]] or a [[skills necklace]], they can teleport to the [[Farming Guild]] and use the spirit tree there. One of the fastest ways to a spirit tree is by having planted one in a player-owned house (75 [[Construction]] and 83 Farming) and using a [[Teleport to house]] spell or [[magic tablet]]. The fastest way before 83 Farming, is teleporting to the Grand Exchange (with a charged [[ring of wealth]] or teletab with the medium [[Varrock Diary]] completed) and using the spirit tree there.
+
+The fastest way to a spirit tree is using an [[Achievement Diary Cape]] and teleporting to [[Elder Gnome child]]. Once the player has teleported to the Elder Gnome Child, the player will be 9-11 tiles away from a spirit tree. This is faster than the POH spirit tree despite being farther away (no need to load a POH). 
+
+[[File:Spirit tree interface.png|The interface showing all spirit tree locations.]]
+
+==Farming==
+{{Main|Spirit Tree (Farming)}}
+[[File:Spirit tree icon.png|left]]
+Players can grow their own spirit tree from a [[spirit sapling]] made from a [[spirit seed]] once they reach level 83 [[Farming]]. Since spirit seeds and spirit saplings are untradeable, they can be difficult to obtain. [[Farming/Patch locations#Spirit tree patches|Spirit tree patches]] can be found in:
+*[[Etceteria]]
+*[[Brimhaven]]
+*[[Port Sarim]]
+*[[Hosidius]]
+*[[Farming Guild#Advanced tier|Farming Guild - advanced tier]]
+
+Outside of a POH, players can only have one planted at 83, two at 88, three at 93, and four at 96. Upon reaching 99 Farming, the restriction is removed, and players can plant unlimited spirit trees. These levels can be boosted. 
+
+The growing time for a spirit tree is about 58 hours and 40 minutes. Growing a spirit tree yields 19,501.3 Farming [[experience]], which is the sum of planting (199.5 experience) and checking health (19,301.8 experience).
+
+Spirit trees cannot be cut down, so one simply uses a [[spade]] on the tree to remove it. They do not yield roots when removed.
+
+===Payment===
+Spirit trees may be tended by [[gnome]] [[Group of Advanced Gardeners|gardeners]] for 5 [[monkey nuts]], 1 [[monkey bar]], and 1 [[Ground tooth|ground suqah tooth]]. Given the rarity of the seed, the [[experience]] given, and the length of time it takes to mature, having a gardener tend the growing plant is strongly recommended.
+
+===Construction===
+[[File:Spirit tree (Construction) icon.png|left]]
+Players can plant their own [[spirit tree (Construction)|spirit tree]] from a [[spirit sapling]] in their [[superior garden]] at level 75 [[Construction]]. Doing so also requires level 83 in [[Farming]]. [[Temporary skill boost|Boosts]] can be used. This tree does not count towards the number of spirit trees that may be planted at one time. At level 95 Construction, players can build a [[Spirit tree & fairy ring|Spiritual Fairy Tree]], which grants access to both a spirit tree and a [[Fairy rings|fairy ring]].
+
+==Treasure Trails==
+*{{CrypticNPC|The Spirit tree in [[Tree Gnome Village (location)|Tree Gnome Village]]|hard|I have many arms but legs, I have just one, I have little family but my seed, You can grow on, I am not dead, yet I am but a spirit, and my power on your quests, you will earn the right to free it.}} The answer to the [[challenge scroll]] is 13112221.
+*{{SherlockChallenge|Teleporting to a spirit tree you have planted yourself|master}}
+
+==Dialogue==
+{{hastranscript|NPC}}
+
+==Changes==
+{{Subject changes header}}
+{{Subject changes
+|date = 1 April 2026
+|update = Remaining Getting Around Changes
+|poll = Getting Around Poll
+|change = There is now a "Last-destination" option on spirit trees, with the exception of [[Spirit tree & fairy ring|spiritual fairy trees]].
+}}
+{{Subject changes
+|date = 4 February 2026
+|update = Deadman: Annihilation Tweaks, Shellbane Gryphon CAs & More!
+|poll = Getting Around Poll
+|change = Improved the level progression of player-grown spirit trees by spreading them more evenly across [[Farming]] level. Previously, level 83 allowed 1 spirit tree, level 91 allowed 2 spirit trees, and level 99 allowed unlimited spirit trees.
+* Level 83: 1 spirit tree
+* Level 88: 2 spirit trees
+* Level 93: 3 spirit trees
+* Level 96: 4 spirit trees
+* Level 99: unlimited spirit trees
+}}
+{{Subject changes
+|date = 2 September 2020
+|update = Costume Room Rework
+|change = Spirit Trees will now give better explanations as to why players are unable to teleport to certain locations.
+}}
+{{Subject changes
+|date = 1 May 2014
+|update = Spirit trees, clues & more!
+|poll = Old School feature poll 18
+|change = The Spirit tree network has been improved and you no longer need to travel via the Gnome Stronghold or Tree Gnome Village trees to get around.
+}}
+{{Subject changes
+|date = 22 August 2013
+|update = Patch Notes (22 August 2013)
+|poll = Old School feature poll 8
+|change = Players can now grow more than one spirit tree at a time. Level 91 Farming will be required for two trees, and level 99 for three.
+}}
+{{Subject changes
+|date = 2 August 2013
+|update = Patch Notes (2 August 2013)
+|poll = Old School feature poll 7
+|change = Right-click travel options have been added to spirit trees, as well as Elkoy, Daero, Waydar and Lumdo.
+}}
+{{Subject changes
+|daterange = 6-13 November 2006
+|update =
+|change = The young spirit tree was graphically updated again.
+}}
+{{Subject changes
+|date = 11 July 2005
+|update = Farming
+|change = The young spirit tree was graphically updated with the release of Farming.
+}}
+{{Subject changes footer}}
+
+===Gallery (historical)===
+{|style="text-align: center" cellpadding="15"
+|[[File:Spirit tree (young) (historical v1).png|center|150x150px]]
+|[[File:Spirit tree (young) (historical v2).png|center|150x150px]]
+|[[File:Spirit Tree (grown).png|center|150x150px]]
+|-
+|29 March 2004 –<br>11 July 2005
+|11 July 2005 –<br>6-13 November 2006
+|6-13 November 2006 –<br>present
+|}
+
+==Trivia==
+*Previously, the spirit tree in the [[Tree Gnome Village (location)|Tree Gnome Village]] served as a network hub. All the other trees would only teleport the player to the Tree Gnome Village, and then players could use the central tree to teleport to all the others.
+*Spirit tree [[chathead]]s ([[:File:Spirit tree (ancient) chathead (full).png|ancient]]/[[:File:Spirit tree (young) chathead (full).png|young]]) are considerably larger than they appear in the chatbox.
+
+{{Farming patches}}
+{{Tree Gnome Village}}
+{{Trees}}
+[[Category:Transportation]]

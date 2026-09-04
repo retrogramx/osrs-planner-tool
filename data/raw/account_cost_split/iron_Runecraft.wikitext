@@ -1,0 +1,268 @@
+{{Iron Guide Links}}
+
+[[File:Runecraft.png|left]]
+[[Runecraft]] is mostly trained as [[Pay-to-play Runecraft training|normal]], especially if training Runecraft through non-essence methods. However, [[essence]]-based training methods can be troublesome for ironmen due to lack of buying essence from the [[Grand Exchange]] and instead, ironmen would have to either passively obtain large quantities of [[pure essence]]s in bulk from other activities or actively [[#Acquiring essence|gather essence]]. Fortunately, ironmen can effectively reach {{SCP|Runecraft|99|link=yes}} through non-essence training methods.
+
+==Non-essence training methods==
+These are fast and recommendable methods to train Runecraft that don't require a supply of [[rune essence]], [[pure essence]], or [[daeyalt essence]].
+
+===Early training: Quests===
+{{Main|Quest experience rewards#Runecraft}}
+
+[[Rune Mysteries]] is required for unlocking the Runecraft skill, however it rewards no experience. [[Enter the Abyss]] is available immediately afterwards, and rewards 1,000 experience,  enough for level {{SCP|Runecraft|9}}. This miniquest does require briefly entering low-level [[Wilderness]], so [[File:Hardcore ironman chat badge.png]] [[hardcore ironmen]] should beware. At {{SCP|Runecraft|10|link=yes}}, the [[Temple of the Eye]] quest is available which grants a total of 9,210 experience during and after the quest, which is enough to reach the {{SCP|Runecraft|27|link=yes}} level requirement to do the [[Guardians of the Rift]] minigame.
+* [[Enter the Abyss]] rewards {{SCP|Runecraft}} 1,000 Runecraft experience.
+* [[Temple of the Eye]] requires {{SCP|Runecraft|10}}, gives {{SCP|Runecraft}} 4,210 Runecraft experience during the quest and rewards {{SCP|Runecraft}} 5,000 Runecraft experience after the quest ({{SCP|Runecraft}} 9,210 Runecraft experience total)
+* [[The Ascent of Arceuus]] requires [[Client of Kourend]] and {{SCP|Hunter|12}}, rewards {{SCP|Runecraft}} 500 Runecraft experience
+* [[The Eyes of Glouphrie]] requires [[The Grand Tree]], {{SCP|Construction|5}}, {{SCP|Magic|46}}, rewards {{SCP|Runecraft}} 6,000 Runecraft experience
+
+===Levels 10–99: Guardians of the Rift===
+{{main|Guardians of the Rift/Strategies}}
+{{Inventory|align = right
+|Giant pouch |Large pouch |Chisel |Rune pouch
+|Small pouch |Medium pouch | | 
+| | | | 
+| | | | 
+| | | | 
+| | | | 
+| | | |
+}}
+{{Rune pouch|align=right
+|1=Astral rune\5000
+|2=Cosmic rune\1000
+|3=Air rune\10000
+}}
+The [[Guardians of the Rift]] [[minigame]] is a fairly efficient and much more engaging way of training Runecraft. In addition to Runecraft experience, the minigame also offers passive [[Mining]] and [[Crafting]] experience. The minigame is profitable and offers useful [[Guardians of the Rift#Rewards|rewards]], such as the [[colossal pouch]] for holding more essence and [[raiments of the eye]] set for crafting extra runes.
+
+To participate in the minigame, players must have completed [[Temple of the Eye]] and it's fairly quick to get to {{SCP|Runecraft|10|link=yes}} to start the quest by completing [[Enter the Abyss]] and gaining few extra Runecraft experience from another quest or crafting runes.
+
+There are also a number of quests that are very useful to have completed:
+*[[Lunar Diplomacy]] to be able to cast [[NPC Contact]] to quickly repair essence pouches
+*[[Lost City]] to craft [[cosmic rune]]s
+*[[Troll Stronghold]] to craft [[law rune]]s
+*[[Mourning's End Part II]] to craft [[death rune]]s
+*[[Sins of the Father]] to craft [[blood rune]]s
+
+For the fastest experience, ironmen should use the best [[pickaxe]] and all [[essence pouch]]es available. The [[rune pouch]] is strongly recommended to save inventory space. Players who do not have the [[raiments of the eye]] outfit yet are advised to wear any tier of the [[Varrock armour 1|Varrock armour]] to have a 10% chance to mine double [[guardian fragments]] at once. Ironmen may also make use of the [[celestial ring]] if they have it.
+
+Ironmen who have the [[abyssal lantern]] should light it with [[redwood logs]] when possible ({{SCP|Firemaking|90|link=yes}}), which can either be obtained by chopping [[redwood]]s at {{SCP|Woodcutting|90|link=yes}} (boostable) or opening [[Gold Chest]]s in the [[Shades of Mort'ton (minigame)|Shades of Mort'ton]] minigame (with [[gold key]]s rewarded by burning [[fiyr remains]] or better from high-level shades). This makes it so the player does not need to repair essence pouches via NPC Contact, which saves 1–3 inventory slots, depending on if the player is using a rune pouch. Ironmen who cannot use redwood logs or are wearing the [[Runecraft cape]] are advised to use [[yew logs]] for the contribution point boost it provides or [[willow logs|willow]]/[[magic logs]] for extra runes crafted ([[blisterwood logs]] for [[blood rune]]s).
+
+Through Guardians of the Rift players can obtain the [[raiments of the eye]] set. It provides 10% more runes per piece worn and an additional 20% set bonus, for a total of 60% when wearing a full set, which is very useful for ironmen to obtain. The [[abyssal needle]] is used to combine essence pouches into the [[colossal pouch]]. It can hold up to 40 essence, making it the best essence pouch to use. Valuable runes obtained through the minigame can be kept for later use or sold for profit.
+
+Experience rates are shown in the table below. The rates assume using all pouches available. From {{SCP|Runecraft|85|link=yes}} onwards, the rates assume doing the minigame in small coordinated teams for faster experience.
+
+{| class="wikitable"
+!{{SCP|Runecraft}} level
+!XP/h
+!{{SCP|Crafting}} XP/h
+!{{SCP|Mining}} XP/h
+|-
+|40–50
+|25,000
+|2,300
+|1,200
+|-
+|50–75
+|40,000
+|3,700
+|2,000
+|-
+|75–85
+|50,000
+|4,700
+|2,500
+|-
+|85–99
+|65,000
+|6,200
+|3,200
+|-
+|99
+|70,000
+|6,600
+|3,500
+|}
+
+===Levels 1–77: Arceuus Library===
+[[File:Arceuus Library.png|thumb|right|The Arceuus Library.]]
+{{Main|Arceuus Library}}
+
+Quest minimalists that only want to train Runecraft without completing [[Rune Mysteries]] or other quests can find books for customers in the [[Arceuus Library]]. This method offers relatively fast experience and does not require any pure essence. However, since each book turned in grants 5 times the current Runecraft level in experience, it is recommended to gain at least 20 Runecraft levels through conventional methods before utilising the library unless the player is a quest minimalist. [[Energy]]-restoration food, potions, and [[explorer's ring]] are recommended to increase the experience rate while running around the library.
+
+With good performance and when using [[stamina potion]]s, players can turn in up to around 160 books per hour, translating to {{SCP|Runecraft}}44,800 experience per hour at {{SCP|Runecraft|70|link=yes}}. This method is viable without stamina potions, but the player can only turn in up to around 100–110 books per hour, translating to {{SCP|Runecraft}}28,000 to {{SCP|Runecraft}}30,800 experience per hour.
+
+===Levels 77–99: Crafting blood/soul runes in Arceuus===
+{{Inventory|align=right
+|Dark essence fragments |Dense essence block |Dense essence block |Dense essence block
+|Dense essence block |Dense essence block |Dense essence block |Dense essence block
+|Dense essence block |Dense essence block |Dense essence block |Dense essence block
+|Dense essence block |Dense essence block |Dense essence block |Dense essence block
+|Dense essence block |Dense essence block |Dense essence block |Dense essence block
+|Dense essence block |Dense essence block |Dense essence block |Dense essence block
+|Dense essence block |Dense essence block |Chisel |Dense essence block
+}}
+{{Equipment
+|align = right
+|head = Hat of the eye
+|cape = Construct. cape(t)
+|neck = 
+|ammo = 
+|weapon = Black pickaxe
+|torso = Robe top of the eye
+|legs = Robe bottoms of the eye
+|shield = 
+|gloves = Graceful gloves
+|boots = Boots of the eye
+|ring = Ring of endurance
+}}
+From level 77 onwards the player can train Runecraft in [[Arceuus]] by crafting blood runes at level 77, or soul runes at level 90. It requires significantly less attention compared to other methods, and also provides some passive Mining and Crafting experience. Both methods are also profitable; blood runes offer better profit but slower experience, soul runes offer faster experience but are much less profitable.
+
+Players will need a chisel (can be obtained at the runestone mine) and a pickaxe of any kind for this method. The type of pickaxe does not matter for mining dense essence blocks. It is also strongly recommended to have a high Agility level (78+ recommended) and the graceful outfit for faster run energy restoration. Level 73 Agility is required for the western rock scramble shortcut.
+
+Completion of the [[medium Kourend & Kebos Diary]] will grant the player 5% chance to mine 2 dense essence blocks at once (but no additional crafting/mining experience is gained), which increases overall experience rates slightly. Players that have completed the elite tasks of the Kourend & Kebos diary will receive 10% additional blood runes, however no extra experience is given. A higher Mining level is also slightly helpful, as the essence stone depletes less frequently with a higher Mining level. The [[Dragon pickaxe|dragon]] or [[crystal pickaxe]] special attack can be used to boost the Mining level.
+
+Wearing a [[ring of endurance]] with at least 500 charges is recommended should the player have one. The charged ring will reduce run energy drain, and without one it is possible to run out of run energy even at high Agility levels.
+
+Blood runes are needed for barrage spells and they are very expensive when bought from a magic shop, so it is best to keep the runes for barrage [[Slayer]]. A lot of blood runes are also needed to use [[sanguinesti staff]] and [[scythe of vitur]] for high-level bossing. Soul runes are used for casting [[Blood Barrage]] when killing God Wars Dungeon bosses, and also to charge [[Tumeken's shadow]]. Players without these end game weapons may choose to sell excess runes for profit.
+
+Experience and profit rates are shown in the table below. The rates assume the player has completed medium Kourend & Kebos Diary tasks. The profit rates for selling the runes assume the runes are sold to Ali Morrisane. The profit rates for using the runes assume the money saved if the runes would have been bought from the [[Wizards' Guild]], buying full stock per world.
+
+{| class="wikitable"
+!{{SCP|Runecraft}} level
+!Method
+!{{SCP|Runecraft}} XP/h
+!{{SCP|Crafting}} XP/h
+!{{SCP|Mining}} XP/h
+!Runes/h
+!Profit/h (sell)
+!Profit/h (use)
+!Runes/h w/ outfit
+!Profit/h w/ outfit (sell)
+!Profit/h w/ outfit (use)
+|-
+|77
+|[[Blood runecrafting|Blood runes (no diary)]]
+|37,000
+|6,100
+|4,500
+|1,515
+|{{Coins|303,000}}
+|{{Coins|682,000}}
+|2,424
+|{{Coins|485,000}}
+|{{Coins|1,091,000}}
+|-
+|77
+|[[Blood runecrafting|Blood runes (diary)]]
+|37,000
+|6,100
+|4,500
+|1,666
+|{{Coins|333,000}}
+|{{Coins|750,000}}
+|2,575
+|{{Coins|515,000}}
+|{{Coins|1,159,000}}
+|-
+|90
+|[[Soul runecrafting|Soul runes]]
+|45,000
+|5,900
+|4,400
+|1,484
+|{{Coins|223,000}}
+|{{Coins|501,000}}
+|2,374
+|{{Coins|356,000}}
+|{{Coins|801,000}}
+|}
+
+
+===Runecrafting and general tips===
+{{Map|align=right
+|mtype:text,1705:3866,label:Click here
+|mtype:media,1708:3882,img:You_are_here.gif,size:30px,title:Player location
+|caption=For crafting blood runes, run a few steps west of the Dark Altar, then click on the other side of the fence as shown above. This will get you around 2/3rds of the way to the Blood Altar without clicking again.}}
+
+#Starting at the Arceuus essence mine, mine a full inventory of dense essence blocks, use them on the Dark Altar to create dark essence blocks.
+#Run back to the essence mine and use a chisel on the dark essence blocks to create dark essence fragments while running back to the mine.
+#Mine a second inventory of essence blocks, use them on the Dark Altar.
+#Chisel 1 dark essence block and head to the runic altar.
+#Craft runes at the altar, chisel the second inventory of dark essence blocks into fragments, craft runes once more and return to the essence mine.
+
+Players who have completed the elite tasks of the [[Lumbridge & Draynor Diary]] (players without the tasks done may carry a [[Dramen staff]]), and have a [[revitalisation pool]] and [[Fairy ring (Construction)|fairy ring]] in their [[player-owned house]] can alternatively use Teleport to house to make the procedure slightly faster and remove the need for the graceful outfit, this would allow players to wear [[Raiments of the eye]] and craft an additional 60% more runes. A [[construction cape]] or [[rune pouch]] with law runes, dust runes, and an empty spot for the crafted runes will allow for no lost inventory slots. For blood runecrafting, after making a second inventory of dark essence blocks teleport to your house, restore run energy with the pool, use the fairy ring {{Fairycode|CIS}} and run to the altar. For soul runecrafting, after crafting runes at the altar teleport to your house, restore run energy with the pool, use the fairy ring {{Fairycode|CIS}} and return to the essence mine.
+
+==Essence training methods==
+===Acquiring essence===
+[[Pure essence|Essence]] can be acquired through a variety of methods, with the simplest being the [[rune essence mine]]. However, certain other methods are likely to be superior, offering faster rates of acquisition, or lower effort in obtaining essence.
+====Active methods====
+'''Rune essence mine'''
+
+After completion of [[Rune Mysteries]], the [[rune essence mine]] can be accessed. While the rates offered are worse than other methods, with a maximum of around 2,000 essence obtainable per hour with a [[rune pickaxe]] and [[essence pouch]]es, it can be the simplest and earliest method available.
+
+'''Temple Trekking'''
+
+After completion of [[In Aid of the Myreque]], the [[Temple Trekking]] minigame can be played. Completing treks with an easy companion on Route 1 provides 50 pure essence per trip, with possible rates of 3,000-4,000 per hour. Because all combat instances can be evaded on Route 1, low level players can avoid combat entirely and focus on completing treks as fast as possible. With [[Protection prayers]], players are able to avoid taking almost any damage. Higher level players can also consider using Route 3 with a medium or hard companion, potentially offering higher rates of 5,000–10,000 pure essence per hour. It is highly recommended to complete [[Darkness of Hallowvale]] for access to the reverse route of Temple Trekking, Burgh de Rott Ramble, as this enables consecutive treks without having to return to Burgh de Rott. The [[Lumberjack outfit]] can also be obtained while completing treks. See the [[Temple Trekking]] page for more info on what enemies/encounters to avoid, and how to get the Lumberjack outfit.
+
+'''Soul Wars'''
+
+One option for obtaining pure essence is opening [[Spoils of war]] from [[Soul Wars]]. On average, a player will receive 1,000 [[pure essence]] for every three Spoils of war opened. Each game lasts 15 minutes, and the 30 zeal needed to buy spoils of war depends on the amount of participation. Low level players (below 60 combat) may need 2 games to obtain over 30 zeal, while higher levels can easily obtain 30–40+ zeal per game. While this method is slower than others, it can be much lower effort for players that participate in coordinated Soul Wars games that involve a large amount of time spending idling.
+
+'''Daeyalt essence mine'''
+
+After completion of [[Sins of the Father]], [[daeyalt essence]] can be mined at the [[daeyalt essence mine]] beneath [[Darkmeyer]]. Daeyalt essence can be used in place of [[pure essence]], and grants 50% extra Runecraft experience when used. It can normally be mined at rates of up to 4,000 per hour, but usage of [[tick manipulation]] can enable higher rates of up to 9,000 essence per hour.
+
+'''Scar essence mine'''
+
+After partial completion of [[Desert Treasure II]], the [[Scar essence mine]] can be accessed. Rates of up to 10,000 [[pure essence|essence]] per hour are possible by mining [[tainted essence chunk]]s and converting them with the [[essence orifice]] into pure essence. Using [[Tick_manipulation#3-tick_Mining|Tick manipulation]], players can obtain over 18,000 essence per hour.
+
+====Passive methods====
+'''Slayer and Bossing'''
+
+A high amount of pure essence is likely to be collected passively through [[Slayer]] and [[Boss|bossing]]. Many Slayer monsters, such as [[wyrm]]s, [[gargoyle]]s, [[Skeletal Wyvern]]s and [[Fossil Island wyvern]]s frequently drop pure essence in large quantities, as do certain boss encounters such as [[Zulrah]] and the [[Chambers of Xeric]]. Choosing to delay training Runecraft until after completing an amount of Slayer and bossing may entirely negate the need to ever actively gather essence.
+
+'''Wizard Cromperty'''
+
+With the [[medium Ardougne Diary]] completed, players can get 100 free noted pure essence a day from Wizard Cromperty. Completing the hard diary will give the player 150 free noted pure essence per day and completing the elite diary will give the player 250 free noted pure essence per day.
+
+===Level 1+: Abyssal runecrafting===
+The [[Abyss]] can be accessed after the completion of [[Enter the Abyss]], and will grant access to every altar without a talisman or tiara. It can be reached via the Wilderness.
+
+The abyss typically offers worse experience rates than other methods due to the enemies and obstacles, however it can be valuable for access to remote altars to acquire specific runes the player needs (such as [[nature rune]]s, [[law rune]]s, etc.), or when a talisman is not available.
+
+The abyss offers you the ability to choose which runes you want to craft and should be accessed using the Ferox Enclave Teleport which allows players to freely replenish run energy.
+
+===Levels 23–99: Lava runes===
+At level 23, players can craft [[Lava rune]]s. Without access to the [[Lunar spellbook]] and 82 [[Magic]] for [[Magic Imbue]] (requiring [[Lunar Diplomacy]]) this method can be difficult to use for Ironmen due to lack of access to elemental [[talisman]]s in bulk. Elemental talismans can be acquired from [[Guardians of the Rift]] but it's preferrable to do Ourania Altar runs instead.
+
+''Without spellbook'': Fill an inventory with [[pure essence]], a [[fire tiara]], [[earth rune]]s, and an [[earth talisman]] and use a [[ring of dueling]] to teleport to the [[Emir's Arena]]. A few steps north is the [[Fire Altar]] where the runes can be crafted.  The ring of dueling can be used to teleport to [[Castle Wars]] for easy access to a bank, at which point the process can be repeated.
+
+''With spellbook'': Equip a [[steam battlestaff]], fill your inventory with [[essence pouch]]es, a [[rune pouch]] filled with earth runes and [[astral runes]], and pure essence. The goal is to cast Magic Imbue so that earth talismans are not necessary. 
+
+Players will need to make the emerald jewellery for crafting lava runes; however, high-level players may obtain significant quantities of [[binding necklace]]s while killing the [[Abyssal Sire]] for its unique drops.
+
+===Levels 23–99: Ourania Altar (ZMI Altar)===
+{{Main|Ourania Altar}}
+
+Players can craft random runes at the Ourania Altar starting at {{SCP|Runecraft|1|link=yes}}, but getting there is slow and inefficient without completion of [[Lunar Diplomacy]] for [[Ourania Teleport]] (requiring {{SCP|Magic|71|link=yes}}). Completion of the medium [[Ardougne Diary]] is also highly recommended for bonus runes. Players may take a slow, winding path or faster path filled with low to mid level enemies. Players will not be hit often on official Ourania worlds, but low levels should be cautious. Once the above requirements are met:
+
+# Set your spellbook to the [[Lunar spellbook]] by travelling to [[Lunar Isle]]. Remember to bring a [[Seal of passage]] if you wish to bank on Lunar Isle without completion of [[Dream Mentor]]. Quick transportation to Rellekka (and the boats to Lunar Isle) include [[Fremennik sea boots]] and [[Fairy rings]] nearby, DKS (north, [[Polar Hunter area]]) and AJR ([[Fremennik Slayer Dungeon]]).
+# Wield an [[Earth battlestaff]] or [[Staff of earth]]. Fill your inventory with the following: [[law rune]]s, [[astral rune]]s, [[mind rune]]s (for payment to [[Eniola]]), [[essence pouch]]es (small, medium, large, and/or giant), and [[pure essence]].
+# [[Ourania Teleport]] to the altar. ''The official Worlds for '''Ourania Altar''' are 327, 480 ([[P2P]]).''
+# Run toward the altar and take the ladder down, following the combat path to the altar, and craft your runes. 
+# Teleport back to the altar with [[Ourania Teleport]]. Rinse and repeat, paying 20 [[mind rune]]s to access the bank at the entrance.
+# Once run energy is depleted, replenish at [[Ferox Enclave]], then head back to the altar.
+# When essence pouches decay, use [[NPC Contact]] to the [[Dark Mage (Abyss)|Dark Mage]] to repair them immediately and risk-free.
+
+Optionally, alternate accounts can be used to take the aggression of the enemies in the caves, allowing for skilling on the run to the altar; popular options are fletching arrows and blowing molten glass. This will slightly lower Runecraft experience rates, especially with the latter, but as a whole it is more efficient than training them separately.
+
+===Levels 95–99: Wrath runes===
+At {{SCP|Runecraft|95|link=yes}} and after completing [[Dragon Slayer II]], players can craft [[wrath rune]]s. They are mainly used for casting [[offering spells]] to train [[Prayer]]. Wrath runes are dropped by high-level monsters in relatively small quantities, so generally the best way to get them is to craft them.
+
+To access the [[Wrath Altar]], players will need to wear the [[Runecraft cape]], get a [[wrath talisman]] dropped by [[Vorkath]], [[adamant dragon]]s, or [[rune dragon]]s, use a [[catalytic talisman]] or [[catalytic tiara|tiara]] obtained from [[Guardians of the Rift]], or attune a [[hat of the eye]] with a wrath tiara or catalytic tiara. Players will also need a lot of noted pure essence, which can be obtained through training Slayer. For the fastest rates, players will also need to get all the essence pouches for carrying more pure essence per lap. Using a [[Desert amulet 4|desert amulet]] or having the [[ornate rejuvenation pool]] in the [[player-owned house]] is also recommended for restoring Hitpoints and run energy.
+
+[[File:Hardcore ironman chat badge.png]] This method is potentially '''dangerous''', as players will need to run past high-level dragons. Using a higher render distance to click on the cave exit as soon as possible will decrease your chances of dying to the dragons should you disconnect on the run there.
+
+Experience rates can vary depending on the inventory setup and the available teleport to unnote essence. Players can gain up to around {{SCP|Runecraft}}47,000 experience per hour when wearing the [[Runecraft cape]] and using the [[Crafting cape]] teleport to the [[Crafting Guild]] bank chest.
+
+{{Training guides}}
+[[Category:Ironman Mode]]

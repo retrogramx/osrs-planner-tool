@@ -1,0 +1,64 @@
+{{Iron Guide Links}}
+
+[[File:Firemaking.png|left]]
+[[Firemaking]] is a skill trained simultaneously with [[Woodcutting]] in the lower levels. At level 50, players gain access to [[Wintertodt]], which is ideal for Firemaking training, leaving the logs obtained through Woodcutting available to be used for [[birdhouse trapping]], [[fletching]] or [[construction]].
+
+==Levels 1–50: Burning logs==
+===Levels 1–15: Normal logs===
+To start off, go to the top of the [[Lumbridge Castle]], light the logs that spawn there, hop Worlds and repeat until level 15. The goal is to be able to cut and burn [[oak logs]], which requires {{SCP|Woodcutting|15}} in addition to {{SCP|Firemaking|15}}, and the [[Monk's Friend]] quest will grant enough Woodcutting experience to skip almost all [[Tree|regular tree]] cutting.
+
+===Levels 15–39: Oak logs===
+Cut [[oak logs]] and light them as obtained until level 35 Woodcutting. [[Oak tree]]s are commonplace throughout Gielinor, and the logs will be burned, so proximity to a bank is not necessary.
+
+To be able to cut [[Teak tree]]s, players will need {{SCP|Woodcutting|35|link=yes}}. Since Firemaking gives more experience per log, it's recommended to continue with oak logs to around level 39 Firemaking, at which point Woodcutting should be 35.
+
+===Levels 39–50: Teak logs===
+[[Teak tree]]s can be cut at 35 Woodcutting, requiring 35 Firemaking, south-west of [[Castle Wars]], until level 50 Firemaking. There are also three Teak tree spawns on the north side of the [[Isle of Souls]], or south of [[Civitas illa Fortis]] after completing [[Children of the Sun]].
+
+==Level 50+: Wintertodt==
+[[File:Doors of Dinh.png|thumb|right|The [[Doors of Dinh]], the entrance to Wintertodt's prison.]]
+{{Main|Wintertodt}}
+Subduing Wintertodt becomes the best option from level 50 onwards, as it offers [[coins]], various [[logs]], [[gems]], [[ores]], [[herbs]], [[seeds]], and [[raw fish]] (among other things). It doesn't require any supplies other than some food.
+
+It is advised to train Firemaking at Wintertodt until level 60 Woodcutting (achieved at around level 88–90 Firemaking) for access to the [[Woodcutting Guild]], where the player can buy axes up to rune. The fastest way to gain Firemaking experience from Wintertodt is to be on an official World (307, 309, 311, 389), which have fast games that usually last around 4 minutes.
+
+Players will use most of the logs they get on Fletching and birdhouse runs, so there aren’t many options for Firemaking training outside of Wintertodt.
+
+===Preparation===
+Though {{SCP|Firemaking|50|link=yes}} is the only requirement to enter Wintertodt's prison, players will need a decent axe and warm clothes to effectively subdue him. It's strongly recommended to gain a few levels in {{SCP|Construction|link=yes}} to maximise experience as well.
+
+The speed of chopping [[bruma root]]s effectively caps out with a [[steel axe]], so bringing steel or higher is highly recommended. Steel axes can be purchased from [[Bob's Brilliant Axes.]] in [[Lumbridge]] for {{Currency|Coins|200}}, [[pickpocketing|pickpocketed]] from [[H.A.M. Member]]s with {{SCP|Thieving|15|link=yes}}, or crafted with {{SCP|Smithing|31|link=yes}}.
+
+The [[clue hunter outfit]] counts as [[Wintertodt/Warm clothing|warm clothing]] and can be obtained at any level. Many holiday outfits also count as warm clothing and can be obtained very quickly, should an event be available.
+
+Players will need to own a [[player-owned house|house]] in order to gain Construction experience from repairing the braziers. It is also worthwhile to get at least level 15–20 [[Construction]] beforehand to gain more experience from repairing the braziers. Completing [[Daddy's Home]] will reward a player-owned house and a decent supply of construction materials, however it costs {{Currency|Coins|3,250}}, which can be prohibitively expensive early on.
+
+Should one be unable to make [[games necklace]]s and is forced to leave the area or dies frequently, it is recommended to use [[Arceuus Home Teleport]] or unlock [[the fisher's flute]] teleport on the [[Kharedst's memoirs]] (requires completion of [[The Queen of Thieves]]) to return there faster.
+
+===Strategy===
+{{Main|Wintertodt/Strategies}}
+Fletching the bruma roots into [[Bruma kindling|kindling]] is only recommended when the player would not meet the 500-point mark for the extra experience gained at the end of the round. Otherwise, bruma roots should not be fletched into kindlings, as this significantly hampers experience rates and the few extra points is not worth the experience loss.
+
+===Rewards===
+It doesn't matter too much when you open your Wintertodt crates. Early game the gp, logs for birdhouses, and magic logs for [[Desert Treasure I]] are useful. If you can benefit from those, or any of the other drops, you should be opening them. If you have no use for any of the rewards you can hold them until you do.
+
+High-level players will get better rewards with higher stats, but the rewards do not benefit as much. However, when wearing the [[Hitpoints cape]] along with a [[regen bracelet]] and using an [[ornate rejuvenation pool]] to restore stats, players will need very little (if any) food for doing Wintertodt.
+
+==Other methods==
+===Questing===
+{{Main|Quest experience rewards#Firemaking}}
+
+There are no easily available quests that grant Firemaking experience for a low level player. [[Heroes' Quest]] is the only quest that grants Firemaking experience that has no Firemaking requirement, though it has many other requirements.
+
+[[Enakhra's Lament]] rewards 7,000 Firemaking experience, however it requires {{SCP|Firemaking|45}}, among many other medium-level skill requirements.
+
+===Level 50+: Soloing Wintertodt===
+{{Main|Wintertodt/Strategies#Solo Method}}
+
+Challenging Wintertodt alone will yield less Firemaking experience per hour, but much more {{SCP|Construction|link=yes}} experience and rewards per hour.
+
+===Level 75+: Magic or redwood logs===
+Burning [[Magic logs|magic]] or [[redwood logs]] from Woodcutting or monster drops provides the fastest experience if the player does not have any other use for them. However, they will likely be needed for doing [[birdhouse run]]s, and chopping trees for them is typically inefficient.
+
+{{Training guides}}
+[[Category:Ironman Mode]]

@@ -1,0 +1,224 @@
+{{DISPLAYTITLE:Optimal free-to-play quest guide}}
+{{Otheruses|def=no|the [[Ironman Mode|Ironman]] variant of this guide|Optimal quest guide/Free-to-play/Ironman}}
+
+As few free-to-play quests have skill requirements, quests in this guide can mostly be grouped together by region.
+
+This list does not recommend specific combat level requirements, and experienced players should be able to do all quests except for [[Dragon Slayer I]] without training skills in between doing the quests. This requires knowledge of how to safe spot [[Count Draynor]], however, so inexperienced players may wish to train combat stats before taking on this quest.
+
+After completing all quests except for Dragon Slayer I, it is recommended that players focus on other gameplay, since this final free-to-play quest requires significantly higher stats than any other available quest. See [[Dragon Slayer I|the quest guide]] for an indication of this quest's difficulty.
+
+
+
+==Grand Exchange==
+Some items are recommended to be bought on the [[Grand Exchange]] found in northern [[Varrock]] where possible. For some items, gathering the materials yourself will be more time consuming or require levels you may not have. Alternative methods of obtaining these items may be given throughout the guide. Completing the [[Stronghold of Security]] in nearby [[Barbarian Village]] will reward you with {{Coins|10000}}, enough money to cover the items listed below. Note that this is not a definitive list of the items required to complete all quests, but highlights some of the more difficult to acquire items.
+
+{{CostTableHead|quantity=yes|style=width:40%;}}
+{{CostLine|Red bead|quantity=1|cost={{GEP|Red bead}}}}
+{{CostLine|Black bead|quantity=1|cost={{GEP|Black bead}}}}
+{{CostLine|Yellow bead|quantity=1|cost={{GEP|Yellow bead}}}}
+{{CostLine|White bead|quantity=1|cost={{GEP|White bead}}}}
+{{CostLine|Iron ore|quantity=2|cost={{GEP|Iron ore}}}}
+{{CostLine|Iron bar|quantity=2|cost={{GEP|Iron bar}}}}
+{{CostLine|Redberry pie|quantity=1|cost={{GEP|Redberry pie}}}}
+{{CostLine|Bread|quantity=1|cost={{GEP|Bread}}}}
+{{CostTableBottom|total=y}}
+
+==Guide==
+The ''Bring from bank'' column '''only''' lists items that are required until the next time banking. Items obtained while following this part of the guide, or items obtainable during the quest (such as [[shears]] during [[Sheep Shearer]]) will not be listed.
+
+For the sake of simplicity this guide will not offer advice on multi-questing, but keep in mind that for some quests you may look to save time by completing some steps in sync where you are required to visit the same locations.
+{{Sync}}
+{{#vardefine:colspan|7}}
+{| class="wikitable lighttable sticky-header align-center-2 qc-active oqg-table" data-tableid="OQG-F2P"
+|+Free-to-play optimal quest guide
+! Quest/Activity
+! style="width: 75px;"| Quick Guide
+! New levels after quest
+! Quest points
+! Total QP
+! Additional info
+! Bring from bank
+|- data-rowid="Cook's Assistant"
+|[[Cook's Assistant]]
+|[[Cook's Assistant/Quick guide|QG]]
+|{{Optimal quest|cooking=300}}
+|{{Optimal quest/qp|1}}
+|While collecting cake ingredients, consider collecting several extra pots of flour to bake a [[redberry pie]] for [[The Knight's Sword]], and bread for [[Below Ice Mountain]].
+|
+|-
+|- data-rowid="Sheep Shearer"
+|[[Sheep Shearer]]
+|[[Sheep Shearer/Quick guide|QG]]
+|{{Optimal quest|crafting=150}}
+|{{Optimal quest/qp|1}}
+|If possible, gather three extra [[ball of wool|balls of wool]], which will be needed during [[Prince Ali Rescue]].
+|
+|- data-rowid="X Marks the Spot"
+|[[X Marks the Spot]]
+|[[X Marks the Spot/Quick guide|QG]]
+|{{Optimal quest|prayer=300}}
+|{{Optimal quest/qp|1}}
+| Use 300xp reward on {{SCP|Prayer|link=yes}} to shorten a long future prayer grind for [[Dragon Slayer I]].
+''Optional:'' Buy a [[chronicle]] in Draynor Village for easy teleports to [[Varrock]].
+|{{Coins|3}} Coins or a {{plink|Spade}}
+|- data-rowid="Pirate's Treasure"
+|[[Pirate's Treasure]]
+|[[Pirate's Treasure/Quick guide|QG]]
+|
+|{{Optimal quest/qp|2}}
+|While in Port Sarim, you can defeat a [[giant rat]] for [[raw rat meat]] to burn for [[Witch's Potion]].
+Buy the 3 [[beer]]s from [[Zembo]] to use in Prince Ali Rescue. Optionally, grab a [[bronze scimitar]] in [[Rimmington]].
+|{{Coins|36}} coins
+|- data-rowid="Rune Mysteries"
+|[[Rune Mysteries]]
+|[[Rune Mysteries/Quick guide|QG]]
+|
+|{{Optimal quest/qp|1}}
+|''Optional:'' While in [[Varrock]], this is a good time to complete the [[Stronghold of Security]] for your {{Coins|10000}} so that you may purchase your items from the [[Grand Exchange]] if you wish to do so.
+|{{plink|Research package}}
+|- data-rowid="Romeo & Juliet"
+|[[Romeo & Juliet]]
+|[[Romeo & Juliet/Quick guide|QG]]
+|
+|{{Optimal quest/qp|5}}
+|While in the town square, visit [[Thessalia's Fine Clothes]] to buy a [[pink skirt]] for [[Prince Ali Rescue]]
+
+While gathering the [[cadava berries]], also gather at least 4 [[redberries]] from the nearby [[redberry bush]]es. Gather several more if you do not plan to buy a [[redberry pie]] from the [[Grand Exchange]] to bake one later.
+
+''Optional'': Mine 7 [[clay]] south-west of [[Varrock]] − 6 clay for [[Doric's Quest]] and to create 1 [[soft clay]] using your [[bucket of water]] from earlier
+|{{plink|Chest key (Pirate's Treasure)|txt=Chest key}} <br /> {{Coins|4}} coins <br /> {{plink|Bronze pickaxe}} <br /> {{plink|Bucket of water}}
+|- data-rowid="The Restless Ghost"
+|data-sort-value="Restless Ghost, The"|[[The Restless Ghost]]
+|[[The Restless Ghost/Quick guide|QG]]
+|{{Optimal quest|prayer=1125}}
+|{{Optimal quest/qp|1}}
+|
+|
+|- data-rowid="Prince Ali Rescue"
+|[[Prince Ali Rescue]]
+|[[Prince Ali Rescue/Quick guide|QG]]
+|
+|{{Optimal quest/qp|3}}
+ | Buy 1 [[red dye|red]] and 2 [[yellow dye]] from [[Aggie]]. Combine 1 red and 1 yellow to create 1 [[orange dye]] for [[Goblin Diplomacy]]. 
+|{{plink|Onion}} × 4 <br /> {{plink|Redberries}} × 4 <br /> {{Coins|15}} Coins <br /> {{plink|Ashes}} <br /> {{plink|Pot of flour}} <br /> {{plink|Bucket of water}} <br /> {{plink|Ball of wool}} × 3 <br /> {{plink|Soft clay}} <br /> {{plink|Bronze bar}}
+|- data-rowid="Misthalin Mystery"
+|[[Misthalin Mystery]]
+|[[Misthalin Mystery/Quick guide|QG]]
+|{{Optimal quest|crafting=600}}
+|{{Optimal quest/qp|1}}
+|Mine ore in the nearby mine for [[Doric's Quest]]
+|{{plink|Bronze pickaxe}}
+|- data-rowid="Imp Catcher"
+|[[Imp Catcher]]
+|[[Imp Catcher/Quick guide|QG]]
+|{{Optimal quest|magic=875}}
+|{{Optimal quest/qp|1}}
+|Each bead is obtained as a 1/25.6 drop. For a low level account this will take quite some time, and the beads can be easily purchased from the [[Grand Exchange]]. If looking to gather the beads yourself, [[imp]]s can be found on the [[Karamja volcano]].
+|{{plink|Black bead}} <br /> {{plink|Red bead}} <br /> {{plink|White bead}} <br /> {{plink|Yellow bead}}
+|- data-rowid="Ernest the Chicken"
+|[[Ernest the Chicken]]
+|[[Ernest the Chicken/Quick guide|QG]]
+|
+|{{Optimal quest/qp|4}}
+|Grab a [[bronze med helm]] while exiting [[Draynor Manor]] to use during [[Black Knights' Fortress]].
+|
+|- data-rowid="Vampyre Slayer"
+|[[Vampyre Slayer]]
+|[[Vampyre Slayer/Quick guide|QG]]
+|{{Optimal quest|attack=4825}}
+|{{Optimal quest/qp|3}}
+|Difficult boss fight at very low levels. Either:
+Train some [[melee]] stats before completing this quest, or
+Use the safespot when killing [[Count Draynor]].
+|{{plink|Hammer}} <br /> {{plink|Stake}} <br /> {{plink|Garlic}} <br /> combat equipment and [[food]]
+|- data-rowid="Doric's Quest"
+|[[Doric's Quest]]
+|[[Doric's Quest/Quick guide|QG]]
+|{{Optimal quest|mining=1300}}
+|{{Optimal quest/qp|1}}
+|Pick a cabbage at [[Falador farm]] ('''NOT''' at [[Draynor Manor]]!) on the way to [[Doric]].
+|{{plink|Iron ore}} × 2 <br /> {{plink|Copper ore}} × 4 <br /> {{plink|Clay}} × 6 <br />
+{{plink|Bronze med helm}} <br /> {{plink|Iron chainbody}} <br /> {{plink|Cabbage}}
+|- data-rowid="Black Knights' Fortress"
+|[[Black Knights' Fortress]]
+|[[Black Knights' Fortress/Quick guide|QG]]
+|
+|{{Optimal quest/qp|3}}
+|
+|{{plink|Bronze med helm}} <br /> {{plink|Iron chainbody}} <br /> {{plink|Cabbage}}
+|- data-rowid="Shield of Arrav"
+|[[Shield of Arrav]]
+|[[Shield of Arrav/Quick guide|QG]]
+|
+|{{Optimal quest/qp|1}}
+|
+|
+|- data-rowid="Demon Slayer"
+|[[Demon Slayer]]
+|[[Demon Slayer/Quick guide|QG]]
+|
+|{{Optimal quest/qp|3}}
+|
+|{{plink|Silverlight key (Captain Rovin)}} <br /> {{plink|Silverlight key (Sir Prysin)}} <br /> {{plink|Silverlight key (Wizard Traiborn)}} <br /> Armour and food <br />
+|- data-rowid="Below Ice Mountain"
+|[[Below Ice Mountain]]
+|[[Below Ice Mountain/Quick guide|QG]]
+|
+|{{Optimal quest/qp|1}}
+|
+|{{plink|Bread}} (or ingredients to make one) <br /> {{plink|Cooked meat}} <br /> {{plink|Knife}} <br /> {{Coins|3}}
+|- data-rowid="The Knight's Sword"
+| data-sort-value="Knight's Sword, The"|[[The Knight's Sword]]
+|[[The Knight's Sword/Quick guide|QG]]
+|{{Optimal quest|smithing=12725}}
+|{{Optimal quest/qp|1}}
+|
+|{{Coins|3}} <br /> {{plink|Onion}}
+|- data-rowid="Witch's Potion"
+|[[Witch's Potion]]
+|[[Witch's Potion/Quick guide|QG]]
+|{{Optimal quest|magic=325}}
+|{{Optimal quest/qp|1}}
+|
+|{{plink|Onion}} <br /> {{plink|Eye of newt}} <br /> {{plink|Burnt meat}}
+|- data-rowid="The Corsair Curse"
+|data-sort-value="Corsair Curse, The"|[[The Corsair Curse]]
+|[[The Corsair Curse/Quick guide|QG]]
+|
+|{{Optimal quest/qp|2}}
+| May require training combat stats before the final battle
+|Combat gear and good food.
+|- data-rowid="Goblin Diplomacy"
+|[[Goblin Diplomacy]]
+|[[Goblin Diplomacy/Quick guide|QG]]
+|{{Optimal quest|crafting=200}}
+|{{Optimal quest/qp|5}}
+|
+|{{plink|Orange dye}} <br /> {{plink|Blue dye}}
+|- data-rowid="The Ides of Milk"
+|[[The Ides of Milk]]
+|[[The Ides of Milk/Quick guide|QG]]
+|{{Optimal quest|prayer=1000}}
+|{{Optimal quest/qp|1}}
+|Use the [[Magic lamp (The Ides of Milk)|magic lamp]] on [[Prayer]].
+|
+{{Optimal quest/train|magic|33}}
+{{Optimal quest/train|prayer|37}}
+|- data-rowid="Dragon Slayer I"
+|[[Dragon Slayer I]]
+|[[Dragon Slayer I/Quick guide|QG]]
+|{{Optimal quest|defence=18650|strength=18650}}
+|{{Optimal quest/qp|2}}
+|Fairly high [[combat level|combat stats]] are highly recommended.
+|''See quest guide''
+|}
+
+==See also ==
+*[[Quests/Free-to-play]]
+*[[Quest experience rewards (F2P)]]
+
+{{Free-to-play guides}}
+[[Category:Free-to-play]]
+<noinclude>
+[[Category:Guides]]
+</noinclude>

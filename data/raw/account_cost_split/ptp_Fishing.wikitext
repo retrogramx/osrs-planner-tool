@@ -1,0 +1,799 @@
+{{External|rs|rsc=Fishing training}}
+{{Redirect|Fishing training|the free players' guide|Free-to-play Fishing training}}
+This [[Skill training guides|guide]] outlines the best methods for training the [[Fishing]] [[skill]].
+
+==Equipment==
+Fishing uses two types of items, divided into consumables and [[equipment]]. Consumables are used up at the rate of one item for each fish caught and are stackable, while the equipment is non-stackable and reusable.
+
+*Net fishing: [[Small fishing net]], not consumable.
+*[[Drift net fishing]]: [[Drift net]], consumable. Recommended items: [[Flippers]], [[diving apparatus]], [[fishbowl helmet]], and a [[Trident]], as well as ways to restore run energy.
+*Bait fishing: [[Fishing rod]] and some [[fishing bait]].
+*Fly fishing: [[Fly fishing rod]] and [[feather]]s for bait.
+*Harpooning: [[Harpoon]] (or bare hands if the player has completed [[Barbarian Training]] [[miniquest]]), not consumable. A [[Barb-tail harpoon]] is a wieldable alternative to the harpoon and saves an additional inventory space. The [[Dragon harpoon]]'s special attack boosts fishing by 3 levels, and it can be used in conjunction with the [[Lightbearer]] to spam the special.
+*Cage fishing: [[Lobster pot]], not consumable.
+*Vessel fishing: [[Karambwan vessel]] and usable bait: [[Karambwanji]] (requires a [[Small fishing net]] to catch).
+*[[Barbarian fishing]]: [[Barbarian rod]] and usable baits: [[fishing bait]]s, [[feathers]], [[fish offcuts]], [[roe]], or [[caviar]].
+*Aerial Fishing: Cormorant and usable baits: king worms, fish offcuts
+
+Players who wish to train Fishing while AFK or with minimal effort may prioritize acquiring the [[fish barrel]]. It stores up to 28 raw fish, increasing time between trips to the bank and subsequently allowing for more time spent AFK while training. However, the barrel can '''only''' be emptied at a bank or [[Bank Deposit Box]], therefore it will not extend AFK time if dropping the fish. The barrel can be obtained from the [[reward pool]] after fighting the [[Tempoross]].
+
+Furthermore, for players seeking to earn profit while fishing, it's recommended to acquire [[Rada's blessing]] from the [[Kourend & Kebos Diary|Kourend & Kebos]] diary. The easy, medium, hard, and elite diaries all give a 2%, 4%, 6%, and 8% chance (respectively) of catching two fish at once. However, the player will not receive any experience from the extra fish that is caught. The blessing must be equipped while fishing for this to take effect.
+
+Players may also participate in the [[Fishing Trawler]] [[minigame]] to acquire the full [[Angler's outfit]], granting an additional 2.5% fishing [[experience]] per fish caught. It should be noted it takes ~6 hours on average to obtain all pieces of the set, and may not be worth the time investment depending on current Fishing level and training methods used. 
+
+==Fastest experience==
+===Levels 1–24/33: Questing===
+Early levels can be skipped by completing [[Quest experience rewards#Fishing|quests that give Fishing experience]]. Completing [[Sea Slug]], [[Fishing Contest]], and the [[Recipe for Disaster/Freeing Pirate Pete|Freeing Pirate Pete]] quest of [[Recipe for Disaster]] will grant a total of 10,612 experience, which will get the player up to level 27. All of these quests have few requirements and can be done at a low level, and completing them is a much better route for early Fishing levels than catching fish. Notably, the experience reward from Sea Slug is enough to get the player from level 1 to 24, and it is faster to complete the quest than catch low-level fish.
+
+Completing [[Tai Bwo Wannai Trio]] and [[The Fremennik Trials]] will grant an additional 7,812 experience, which will get the player up to level 33, but they have higher requirements.
+
+===Levels 20–47/58: Fly fishing===
+{{Main|Raw trout|Raw salmon}}
+3-tick [[fly fishing]] [[raw trout|trout]] and [[raw salmon|salmon]] offers the fastest Fishing experience up to level 58 when using [[tick manipulation]]. Players will need a [[fly fishing rod]] and [[feathers]] to catch the fish. 3-tick fishing is done by using a herb on swamp tar (or other suitable items) and clicking on the fishing spot. When timed correctly, the player has a chance of receiving fish every three ticks instead of five. Drop the fish in between catches before clicking on the fishing spot.
+
+Without tick manipulation this method is only recommended as a low-effort alternative past level 35, as [[Tempoross]] offers faster experience. At level 47, drift net fishing becomes better than 3-tick fly fishing if the player also needs to train Hunter.
+
+Recommended fly fishing locations where the fishing spots have minimal movement or are useful otherwise:
+*South-east of the southern gate to [[Prifddinas]]. The fishing spots here never move nor reset, thus allowing for maximum AFK time with only needing to drop fish as necessary. This area requires partial completion of [[Regicide]]; completion of the quest allows for faster access via [[Iorwerth camp teleport]]s. 
+*[[Shilo Village (location)|Shilo Village]] is the best location if banking the fish. The area requires completion of the [[Shilo Village|Shilo Village quest]] to access. Alternatively [[Nemus Retreat]] offers a Bank to Players with Agility Levels of 24 right next to the fishing spots. With Level 36 Agility Players gain easier access to the fishing spots on the other side of the river.
+*[[Lunch by the lancalliums]] teleport is right next to multiple fishing spots and requires completion of [[The Depths of Despair]] quest to use. This location rivals Shilo Village if one has access to a good bank teleport such as the [[Crafting cape]] teleport, or [[Sailors' amulet|Sailor's amulet]] to [[Deepfin Point]] (requires 67 [[Sailing]]). 
+*South-east of the [[Farming Guild]].
+*North of the [[Chaos Druid Tower]] near [[East Ardougne]].
+*[[Barbarian Village]] has a permanent fire nearby where players can cook and drop the fish.
+
+The experience rates shown in the table below assume not wearing the angler's outfit. The AFK rates include the time spent dropping the fish, and the actual rates vary depending on how fast the fish are dropped. Using the spots south-east of Prifddinas will result in about 10% faster experience per hour when using a static spot.
+
+{|class="wikitable align-center-1" style="text-align:right;"
+!{{SCP|Fishing}} level
+! XP/h (AFK)
+! XP/h (3-tick)
+|-
+| 20
+| 13,000
+| 23,000
+|-
+| 30
+| 25,000
+| 45,000
+|-
+| 40
+| 30,000
+| 53,000
+|-
+| 50
+| 34,000
+| 61,000
+|-
+| 60
+| 37,000
+| 68,000
+|-
+| 70
+| 41,000
+| 75,000
+|-
+| 80
+| 44,000
+| 81,000
+|-
+| 90
+| 47,000
+| 87,000
+|-
+| 99
+| 50,000
+| 93,000
+|}
+
+===Levels 47–99: Drift net fishing===
+{{Main|Drift net fishing}}
+{{Equipment
+|align = right
+|head = Fishbowl helmet
+|cape = Diving apparatus
+|neck = Digsite pendant
+|ammo = 
+|weapon = Merfolk trident
+|torso = Graceful top
+|legs = Graceful legs
+|shield = 
+|gloves = Graceful gloves
+|boots = Flippers
+|ring = Ring of endurance
+}}
+[[Drift net fishing]] is the most efficient way to train both [[Fishing]] and [[Hunter]] at the same time. However, it is not the fastest way to train Fishing on its own due to the split rates. The method offers higher Hunter experience rates than Fishing, so once Hunter no longer needs to be trained, switch to a method that offers faster Fishing experience.
+
+Drift net fishing requires level 47 Fishing and level 44 Hunter (both unboostable), and completion of [[Bone Voyage]] to access [[Fossil Island]] [[underwater]]. For optimal rates, players will also need to wear a [[fishbowl helmet]] and a [[diving apparatus]] obtained from the [[Recipe for Disaster/Freeing Pirate Pete|Pirate Pete subquest]] of [[Recipe for Disaster]], as well as [[flippers]] obtained from [[mogres]]. Wearing a [[merfolk trident]], a [[trident of the seas]], a [[trident of the swamp]], or a [[dragon harpoon]] will increase the chance of successfully chasing the fish shoal into the nets. In addition, [[stamina potion]]s (or some other form of run energy restoration) are needed for the fastest rates.
+
+To do this method, speak to [[Ceto]] to enter the fishing area located in the northern part of the Fossil Island underwater. This costs 200 [[numulite]]s per day, or 20,000 numulites for permanent access. Set up [[drift net]]s on the [[drift net anchors]] and click the [[fish shoal]]s once to chase them into the nets. Prioritise fish shoals nearer to the drift nets. The nets will become full after 10 fish shoals caught, after which the player will need to set the drift nets up again. Players can store up to 2,000 drift nets at [[Annette]] by bringing her the nets in banknotes.
+
+Players can optionally bank the fish caught for 5 numulites per full net. This will lower experience rates slightly, but will also offset the money spent on drift nets. The quality of fish obtained scales with the Fishing level, with [[raw lobster]]s starting to be caught at level 50. 
+
+The experience rates in the table below assume 1,150 fish shoal caught per hour. The experience per fish shoal scales until level 70 Fishing and Hunter, where 77 Fishing experience and 101.5 Hunter experience are gained per fish shoal. Expect slightly lower rates if banking the fish. With good practice, it is possible to catch up to 1,200–1,250 fish shoal per hour. Buying the drift nets on the Grand Exchange would cost {{NoCoins|{{#vardefineecho:drift_net_cost|{{#expr:115 * {{GEP|Drift net}}}}}}|c}} per hour.
+
+From level 44 to 99 Hunter, the player will gain 9,842,153 Fishing experience if starting at level 47 Fishing. This would require 12,944 drift nets, which would cost {{Coins|{{GEP|Drift net}}*-12944}}.
+
+{|class="wikitable align-center-1 align-center-2" style="text-align:right;"
+! colspan="2" | Level
+! colspan="2" | XP/shoal
+! colspan="3" | XP/h
+! colspan="3" | GP/XP
+|-
+! {{SCP|Hunter}}
+! {{SCP|Fishing}}
+! {{SCP|Hunter}}
+! {{SCP|Fishing}}
+! {{SCP|Hunter}}
+! {{SCP|Fishing}}
+! {{SCP}} Total
+! {{SCP|Hunter}}
+! {{SCP|Fishing}}
+! {{SCP}} Total
+|-
+| 44
+| 47
+| 52.3
+| 46.2
+| 60,145
+| 53,130
+| 113,275
+| {{Coins| - {{#var:drift_net_cost}} / 60145}}
+| {{Coins| - {{#var:drift_net_cost}} / 53130}}
+| {{Coins| - {{#var:drift_net_cost}} / 113275}}
+|-
+| 50
+| 50
+| 62.5
+| 50.0
+| 71,875
+| 57,500
+| 129,375
+| {{Coins| - {{#var:drift_net_cost}} / 71875}}
+| {{Coins| - {{#var:drift_net_cost}} / 57500}}
+| {{Coins| - {{#var:drift_net_cost}} / 129375}}
+|-
+| 55
+| 55
+| 71.5
+| 56.3
+| 82,225
+| 64,745
+| 146,970
+| {{Coins| - {{#var:drift_net_cost}} / 82225}}
+| {{Coins| - {{#var:drift_net_cost}} / 64745}}
+| {{Coins| - {{#var:drift_net_cost}} / 146970}}
+|-
+| 60
+| 60
+| 81.0
+| 63.0
+| 93,150
+| 72,450
+| 165,600
+| {{Coins| - {{#var:drift_net_cost}} / 93150}}
+| {{Coins| - {{#var:drift_net_cost}} / 72450}}
+| {{Coins| - {{#var:drift_net_cost}} / 165600}}
+|-
+| 65
+| 65
+| 91.0
+| 69.8
+| 104,650
+| 80,270
+| 184,920
+| {{Coins| - {{#var:drift_net_cost}} / 104650}}
+| {{Coins| - {{#var:drift_net_cost}} / 80270}}
+| {{Coins| - {{#var:drift_net_cost}} / 184920}}
+|-
+| 70
+| 70
+| 101.5
+| 77.0
+| 116,725
+| 88,550
+| 205,275
+| {{Coins| - {{#var:drift_net_cost}} / 116725}}
+| {{Coins| - {{#var:drift_net_cost}} / 88550}}
+| {{Coins| - {{#var:drift_net_cost}} / 205275}}
+|}
+
+===Levels 58–71/99: Barbarian Fishing===
+{{Main|Heavy rod fishing}}
+[[File:Tick manipulation - cut-eat Fishing.gif|thumb|3-tick Barbarian Fishing using the cut-eat method.]]
+3-tick [[Barbarian Training#Heavy rod fishing|Barbarian Fishing]] becomes one of the fastest training methods at level 58. This method offers small amounts of passive Agility and Strength experience, which makes it an efficient way to train Fishing for players with low Agility and Strength levels.
+
+Even though Barbarian Fishing becomes available at level 48, it is faster to do [[drift net fishing]] or 3-tick fly fishing until level 58, after which the player can catch [[leaping salmon]]. Without tick manipulation Barbarian Fishing is only recommended as a low-effort alternative that offers decent experience rates.
+
+Players must complete a portion of [[Barbarian Training]] to be able to catch [[leaping fish]]. Having level 30 [[Agility]] and [[Strength]] is required for catching leaping salmon, and level 45 in both for leaping sturgeon. Players will also need suitable bait, such as [[feather]]s, and a [[barbarian rod]] obtained from [[Otto's Grotto]]. For 3-ticking, players will also need suitable items such as herb and tar or knife and teak/mahogany logs, and a knife if also cutting the fish.
+
+The best spot for Barbarian Fishing is at the pond next to the [[Otto's Grotto]]. Players can quickly get there by using a [[games necklace]] or [[Minigame Teleport]] to [[Barbarian Assault]] and running south-west.
+
+The basic method for 3-tick fishing is to drop the fish between catches. To do so, start the 3-tick cycle, drop the fish using shift drop, and click on the fishing spot. This requires accurate clicking and some practice to perform consistently, but it is more efficient than dropping a full inventory.
+
+"Cut-eat" or "eat-cut" fishing (depending on the order) is a more advanced and slightly more click-intensive method. Having at least level 80 Cooking is recommended for a 100% cut rate for leaping salmon and sturgeon. Cut-eat fishing is done by starting a 3-tick cycle with herb and tar, cutting the fish with a knife and eating the roe/caviar to tick manipulate. When you run out of roe/caviar to be eaten and fish to be cut, use herb and tar to continue the 3-tick cycle. The benefits of this method is that it provides some passive [[Cooking]] experience, it does not require players to drop fish, and it is slightly cheaper due to [[fish offcuts]] also being produced which are used as bait over feathers. However, it is less predictable due to randomness being involved, which may take time getting used to. It is also stricter with timing; if the cutting and eating is done too late, the cycle becomes offset.
+
+If looking for a less intensive option, use the fishing spot at [[Mount Quidamortem]] and bank the fish at the [[Chambers of Xeric]] bank chest. Use the [[fish barrel]] for longer trips. Alternatively, use the spot at Otto's Grotto and simply drop the fish.
+
+The experience rates in the table below assume the player is not wearing the [[angler's outfit]]. The AFK rates include the time spent dropping the fish, and the actual rates vary depending on how fast the fish are dropped. The Cooking rates from using the cut-eat method assumes level 99 Cooking; having level 80 Cooking would lower the rate by roughly 1,000 Cooking experience per hour.
+
+{|class="wikitable align-center-1" style="text-align:right;"
+! rowspan="2" | {{SCP|Fishing}} Level
+! colspan="3" | XP/h (AFK)
+! colspan="4" | XP/h (3-tick)
+|-
+! {{SCP|Fishing}}
+! {{SCP|Strength}}/{{SCP|Agility}}
+! {{SCP}} Total
+! {{SCP|Fishing}}
+! {{SCP|Strength}}/{{SCP|Agility}}
+! {{SCP|Cooking}}
+! {{SCP}} Total
+|-
+| 48
+| 23,000
+| 2,300
+| 27,600
+| 41,000
+| 4,100
+| 5,400
+| 54,600
+|-
+| 58
+| 37,000
+| 3,400
+| 43,800
+| 68,000
+| 6,300
+| 9,300
+| 89,900
+|-
+| 70
+| 48,000
+| 4,400
+| 56,800
+| 90,000
+| 8,200
+| 13,800
+| 120,200
+|-
+| 80
+| 52,000
+| 4,700
+| 61,400
+| 97,000
+| 8,800
+| 14,800
+| 129,400
+|-
+| 90
+| 54,000
+| 4,900
+| 63,800
+| 103,000
+| 9,300
+| 15,800
+| 137,400
+|-
+| 99
+| 57,000
+| 5,200
+| 67,400
+| 108,000
+| 9,800
+| 16,800
+| 144,400
+|}
+
+===Levels 71–99: 2-tick harpooning swordfish/tuna===
+{{Main|Raw tuna|Raw swordfish}}
+[[File:Tick manipulation - 2t Fishing.gif|thumb|2-tick harpooning on the shores of Piscarilius]]
+2-tick harpooning swordfish and tuna offers the fastest Fishing experience. Lure two rats west of the [[Port Piscarilius]] bank so that they attack the player every two ticks. Equip a shortbow without ammo and turn on Auto Retaliate. Click the fishing spot on the same tick that a hitsplat appears. When done correctly, the player has a chance of catching fish every two ticks instead of five.
+
+Alternatively, 2-tick harpoon in the [[Fishing Guild]] on a PvP world. Instead of rats, have another account attack the player with darts. This offers around 5% faster experience rates than Port Piscarilius when uninterrupted. However, the player may get attacked by player killers, which will increase the risk and lower the long-term rate closer to the Port Piscarilius rate.
+
+Even though this method becomes available at level 35, other methods offer faster experience until level 61 due to low catch rates of the regular harpoon. The [[crystal harpoon]] is strongly recommended as it has a higher catch rate compared to the [[Dragon harpoon|dragon]] or the [[harpoon|regular harpoon]]. Players with low Agility or Strength levels are advised to train with Barbarian Fishing as the passive experience gained will benefit the player more than having slightly faster Fishing experience. However, 2-tick harpooning sharks is the fastest method on average of obtaining the [[heron]] pet, which can be desirable for some players. This method is not worth doing without tick manipulation, as there are better methods for those who seek fast experience or a low-effort alternative.
+
+The experience rates in the table below assume fishing in Port Piscarilius and having good practice with the method. Expect lower rates when learning. At maximum efficiency, it is possible to gain up to 137,000 experience per hour at level 99. Players who are using the infernal harpoon can expect to gain around 20,000–26,000 passive Cooking experience per hour, depending on the Fishing level.
+
+{|class="wikitable align-center-1" style="text-align:right;"
+! rowspan="2" | {{SCP|Fishing}} level
+! colspan="3" | XP/h
+|-
+! {{plink|Harpoon|txt=Normal}}
+! {{plink|Dragon harpoon|txt=Dragon}}
+! {{plink|Crystal harpoon|txt=Crystal}}
+|-
+| 35
+| 25,400
+| {{NA}}
+| {{NA}}
+|-
+| 50
+| 60,700
+| {{NA}}
+| {{NA}}
+|-
+| 61
+| 69,600
+| 79,900
+| {{NA}}
+|-
+| 71
+| 78,400
+| 91,000
+| 101,800
+|-
+| 85
+| 90,200
+| 104,900
+| 116,900
+|-
+| 99
+| 103,400
+| 120,000
+| 132,800
+|}
+
+==Other methods==
+===Levels 35–99: Tempoross===
+{{Main|Tempoross/Strategies}}
+
+Fighting the [[Tempoross]] offers relatively fast experience and it requires fairly low amount of effort compared to the tick manipulation methods.
+
+'''Not cooking''' the [[Raw harpoonfish|harpoonfish]] means getting lower amounts of points/loot but significantly more Fishing experience. With a [[crystal harpoon]] and a Fishing level near 99, this is the fastest experience in the game if not using tick manipulation methods. With no crystal harpoon or if not near level 99 Fishing, [[drift net fishing]] will yield higher experience rates. 
+
+{| class="wikitable align-center-1" style="text-align:right;"
+! rowspan="2" | {{SCP|Fishing}} Level
+! colspan="4" | XP/h
+|-
+! {{plink|Harpoon|txt=Regular}}<ref group="n">The standard harpoon, the [[barb-tail harpoon]], and [[Barbarian Fishing]] all have the same experience rates.</ref>
+! {{plink|Dragon harpoon|txt=Dragon}}
+! {{plink|Infernal harpoon|txt=Infernal}}
+! {{plink|Crystal harpoon|txt=Crystal}}
+|-
+| 35
+| 30,000
+| {{NA}}
+| {{NA}}
+| {{NA}}
+|-
+| 70
+| 62,000
+| 66,000
+| {{NA}}
+| 77,000
+|-
+| 80
+| 65,000
+| 69,000
+| 71,000
+| 85,000
+|-
+| 90
+| 68,000
+| 72,000
+| 74,000
+| 92,000
+|-
+| 99
+| 70,000
+| 74,000
+| 76,000
+| 95,000<ref group="n">[[Update:Poll 82 Changes|As of 7th August 2024]], a "Solo Start" option has been added. Up to 102,000 experience per hour is possible without using another account.</ref>
+|}
+<references group="n" />
+
+'''Cooking''' the [[Raw harpoonfish|harpoonfish]] means lower experience rate but significantly more points and, therefore, loot. It is recommended for Ironman players and pet hunters to use the infernal harpoon when they reach the level requirements.
+
+{| class="wikitable align-center-1" style="text-align:right;"
+! rowspan="2" | {{SCP|Fishing}} Level
+! colspan="4" | XP/h
+|-
+! {{plink|Harpoon|txt=Regular}}<ref group="n">The standard [[harpoon]], the [[barb-tail harpoon]], and [[Barbarian Fishing]] all have the same experience rates.</ref>
+! {{plink|Dragon harpoon|txt=Dragon}}
+! {{plink|Infernal harpoon|txt=Infernal}}
+! {{plink|Crystal harpoon|txt=Crystal}}
+|-
+| 35
+| 22,000
+| {{NA}}
+| {{NA}}
+| {{NA}}
+|-
+| 70
+| 52,000
+| 54,000
+| {{NA}}
+| 58,000
+|-
+| 80
+| 56,000
+| 58,000
+| 60,000
+| 62,000
+|-
+| 90
+| 60,000
+| 62,000
+| 64,000
+| 66,000
+|-
+| 99
+| 64,000
+| 66,000
+| 68,000
+| 70,000
+|}<references group="n" />
+
+===Levels 43–99: Aerial fishing===
+{{Main|Aerial fishing}}
+[[Aerial fishing]] is a viable alternative method to train both Fishing and [[Hunter]]. However, [[drift net fishing]] offers faster experience in both skills, so this method is only recommended for players who wish to obtain the unique rewards from [[Alry the Angler]]. While the [[angler's outfit]] is a possible reward from Aerial fishing, it is not recommended to get it here since it can be obtained in a much faster way through [[Fishing Trawler]].
+
+Aerial fishing requires level 43 Fishing and level 35 Hunter. The fastest way to reach the island in the centre of [[Lake Molch]] is to use the fairy ring {{fairycode|DJR}}, run south-west, and take the boat to the island.
+
+Experience rates are shown in the table below. The rates assume 1,600 fish are caught per hour. If cutting the fish, players will also get some passive Cooking experience.
+
+{|class="wikitable align-center-1 align-center-2" style="text-align:right;"
+! colspan="2" | Level
+! colspan="3" | XP/h
+|-
+! {{SCP|Fishing}}
+! {{SCP|Hunter}}
+! {{SCP|Fishing}}
+! {{SCP|Hunter}}
+! {{SCP}} Total
+|-
+| 43
+| 35
+| 18,400
+| 26,400
+| 44,800
+|-
+| 56
+| 51
+| 20,088
+| 28,088
+| 48,976
+|-
+| 73
+| 68
+| 32,856
+| 42,659
+| 75,515
+|-
+| 91
+| 87
+| 51,649
+| 68,188
+| 119,837
+|-
+| 99
+| 99
+| 62,593
+| 82,311
+| 144,904
+|}
+
+===Levels 62–99: Monkfish===
+{{Main|Raw monkfish}}
+Catching [[Raw monkfish|monkfish]] at the [[Piscatoris Fishing Colony]] is a profitable low-effort alternative to the faster methods. This method requires completion of [[Swan Song]]. Monkfish are caught with a [[small fishing net]].
+
+{|class="wikitable align-center-1" style="text-align:right;"
+! {{SCP|Fishing}} Level
+! XP/h
+! GP/h
+|-
+| 62
+| 35,800
+| {{Coins|{{GEPT|Raw monkfish|298}}}}
+|-
+| 70
+| 37,000
+| {{Coins|{{GEPT|Raw monkfish|308}}}}
+|-
+| 80
+| 38,500
+| {{Coins|{{GEPT|Raw monkfish|321}}}}
+|-
+| 90
+| 40,000
+| {{Coins|{{GEPT|Raw monkfish|334}}}}
+|-
+| 99
+| 42,000
+| {{Coins|{{GEPT|Raw monkfish|350}}}}
+|}
+
+* Starting experience - 333,804
+* Experience needed - 12,700,627
+* [[Raw monkfish|Monkfish]] needed - 105,839
+* Profit made (62–99): {{Coins|{{GEPT|Raw monkfish|105839}}}}
+
+===Levels 65–99: Karambwan===
+{{Main|Raw karambwan}}
+{{Inventory
+|align=right
+|Karambwan vessel (baited) |Raw karambwanji\100000 |Open fish barrel |Rune pouch
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+| | | |
+|}}
+Catching [[Raw karambwan|karambwan]] is a profitable low-effort alternative to the faster methods. 
+This method requires completion of [[Tai Bwo Wannai Trio]]. Karambwan fishing spots do not move, which allows the player to catch an entire inventory of fish without interaction. When using the [[fish barrel]], catching a full inventory takes around 3–5 minutes.
+
+Karambwan are caught with a [[karambwan vessel]] and [[raw karambwanji]]. Raw karambwanji can be caught north-east of the fairy ring {{Fairycode|ckr}} using a small fishing net. The karambwan fishing spots are located just north of the [[fairy ring]] {{Fairycode|dkp}}.
+
+When banking the fish, having a quick access to [[bank teleport|a bank]] and fairy rings is recommended. Good direct bank teleports include the [[Crafting cape]], [[Karamja gloves 3]] or [[Karamja gloves 4|4]], [[Sailors' amulet|Sailor's amulet]] to [[Deepfin Point]] (requires 67 [[Sailing]]), or a [[ring of dueling]]. For fairy rings, use the [[quest point cape]] or the [[Fairy ring (Construction)|fairy ring]] in the [[player-owned house]]. If using the fairy ring in the player-owned house, players can alternatively bring a rune pouch and bank at Seers' Village (after the [[Kandarin Diary#Hard|hard Kandarin Diary]]) or at the Grand Exchange (after the [[Varrock Diary#Medium|medium Varrock Diary]]). Players who do not have access to these options can use the fairy ring to travel to Zanaris or another fairy ring with close proximity to a bank such as {{Fairycode|djr}}. 
+
+Players who have completed the [[Lumbridge & Draynor Diary#Elite|elite Lumbridge & Draynor Diary]] can equip a [[dragon harpoon]] instead of a dramen staff and use its special attack to boost their Fishing level for slightly better catch rates.
+
+Experience rates are shown in the table below. The rates assume using the fish barrel, not wearing the angler's outfit, and include banking time as well as some idle time. Expect around 10% lower rates if not using the fish barrel.
+With the fish barrel, angler's outfit, 99 fishing, and efficient banking, it's possible to catch upwards of 900 karambwans per hour, gaining up to 46,000 XP per hour.
+
+{|class="wikitable align-center-1" style="text-align:right;"
+! {{SCP|Fishing}} level
+! XP/h
+! {{plinkp|Raw karambwanji}} used/h
+! Avg. XP/h<br>incl. bait
+!GP/h
+|-
+| 65
+| 29,000
+| 1,386
+| 26,500
+|{{Coins|{{GEPT|Raw karambwan|580}}}}
+|-
+| 70
+| 31,000
+| 1,378
+| 28,600
+|{{Coins|{{GEPT|Raw karambwan|620}}}}
+|-
+| 75
+| 32,900
+| 1,370
+| 30,600
+|{{Coins|{{GEPT|Raw karambwan|658}}}}
+|-
+| 80
+| 34,900
+| 1,363
+| 32,700
+|{{Coins|{{GEPT|Raw karambwan|698}}}}
+|-
+| 85
+| 36,800
+| 1,355
+| 34,700
+|{{Coins|{{GEPT|Raw karambwan|736}}}}
+|-
+| 90
+| 38,700
+| 1,347
+| 36,700
+|{{Coins|{{GEPT|Raw karambwan|774}}}}
+|-
+| 95
+| 40,600
+| 1,340
+| 38,600
+|{{Coins|{{GEPT|Raw karambwan|812}}}}
+|-
+| 99
+| 42,000
+| 1,335
+| 40,000
+|{{Coins|{{GEPT|Raw karambwan|840}}}}
+|}
+
+===Levels 80–99: Infernal eel===
+{{Main|Infernal eel}}
+Catching [[infernal eel]]s in the inner part of [[Mor Ul Rek]] is a profitable low-effort alternative to the faster methods. To gain access to the area, the player must show a [[fire cape]] to a [[TzHaar-Ket]] guard (this does not consume the cape). Infernal eels are caught with an [[oily fishing rod]] and [[fishing bait]] while having [[ice gloves]] equipped. Smash the eels with a [[hammer]] to obtain [[Tokkul]], [[onyx bolt tips]], or [[lava scale shard]]s. Use the spot in the south-easternmost area of the city, as the other two areas may have their fishing spots disappear more often.
+
+Experience and profit rates are shown in the table below. The profit rates assume not wearing a Rada's blessing. The profit made from Tokkul assumes buying an uncut onyx with Karamja gloves equipped.
+
+{|class="wikitable align-center-1" style="text-align:right;"
+! rowspan="2" | {{SCP|Fishing}} Level
+! rowspan="2" | XP/h
+! colspan="2" | GP/h
+|-
+!No {{plinkp|Tokkul}}
+!With {{plinkp|Tokkul}}
+|-
+| 80
+| 29,700
+| {{Coins|{{#expr:({{GEPT|Onyx bolt tips|2/35}}+{{GEPT|Lava scale shard|3*4/35}}-{{GEP|Fishing bait}})*312.21 round 0}}}} 
+| {{Coins|{{#expr:({{GEPT|Onyx bolt tips|2/35}}+{{GEPT|Lava scale shard|3*4/35}}+{{GEPT|Uncut onyx|29/35*17/260000}}-{{GEP|Fishing bait}})*312.21 round 0}}}} 
+|-
+| 90
+| 31,800
+| {{Coins|{{#expr:({{GEPT|Onyx bolt tips|2/35}}+{{GEPT|Lava scale shard|3*4/35}}-{{GEP|Fishing bait}})*335.05 round 0}}}} 
+| {{Coins|{{#expr:({{GEPT|Onyx bolt tips|2/35}}+{{GEPT|Lava scale shard|3*4/35}}+{{GEPT|Uncut onyx|29/35*17/260000}}-{{GEP|Fishing bait}})*335.05 round 0}}}} 
+|-
+| 99
+| 34,000
+| {{Coins|{{#expr:({{GEPT|Onyx bolt tips|2/35}}+{{GEPT|Lava scale shard|3*4/35}}-{{GEP|Fishing bait}})*357.89 round 0}}}} 
+| {{Coins|{{#expr:({{GEPT|Onyx bolt tips|2/35}}+{{GEPT|Lava scale shard|3*4/35}}+{{GEPT|Uncut onyx|29/35*17/260000}}-{{GEP|Fishing bait}})*357.89 round 0}}}} 
+|}
+
+===Levels 82–99: Minnows===
+{{Main|Minnow}}
+[[File:Fishing Guild minnow platform.png|right|250px]]
+Catching [[minnow]]s offers relatively slow experience, but it can provide decent profit depending on the Grand Exchange price of [[raw shark]]s. This can be done at [[Kylie Minnow]]'s fishing platform in the [[Fishing Guild]], which requires level 82 Fishing, a [[small fishing net]], completion of the quest [[Fishing Contest]], and having full [[angler's outfit]] to access. Minnows can be exchanged for noted [[raw shark]]s, which can be sold for profit.
+
+Minnow fishing spots move clockwise every 15 seconds. In addition, a fishing spot will occasionally spawn flying fish instead of providing minnows; flying fish will eat 20 minnow directly from the player's inventory as long as they keep fishing there, forcing them to move to another spot. A flying fish will only appear after a fishing spot has changed and will continue to eat the player's minnows until the fishing spot changes position once again. 
+
+Experience and profit rates are shown in the table below. Wearing a [[Rada's blessing]] is recommended for extra profit, as it increases minnows per hour by 2% per tier of diary completed.
+
+{|class="wikitable align-center-1" style="text-align:right;"
+! rowspan="2" | {{SCP|Fishing}} Level
+! rowspan="2" | XP/h
+! colspan="2" | Minnows/h
+! colspan="2" | Sharks/h
+! colspan="2" | GP/h
+|-
+! No blessing
+! {{plinkp|Rada's blessing 4}}
+! No blessing
+! {{plinkp|Rada's blessing 4}}
+! No blessing
+! {{plinkp|Rada's blessing 4}}
+|-
+| 82
+| 40,000
+| 15,000 || 16,200
+| 375 || 405
+| {{Coins|{{#expr:({{GEPT|Raw shark|15000}} / 40) round 0}}}} || {{Coins|{{#expr:({{GEPT|Raw shark|16200}} / 40) round 0}}}}
+|-
+| 85
+| 43,000
+| 17,000 || 18,360
+| 425 || 459
+| {{Coins|{{#expr:({{GEPT|Raw shark|17000}} / 40) round 0}}}} || {{Coins|{{#expr:({{GEPT|Raw shark|18360}} / 40) round 0}}}}
+|-
+| 90
+| 45,000
+| 19,500 || 21,040
+| 487 || 526
+| {{Coins|{{#expr:({{GEPT|Raw shark|19500}} / 40) round 0}}}} || {{Coins|{{#expr:({{GEPT|Raw shark|21040}} / 40) round 0}}}}
+|-
+| 95
+| 48,000
+| 22,000 || 23,760
+| 550 || 594
+| {{Coins|{{#expr:({{GEPT|Raw shark|22000}} / 40) round 0}}}} || {{Coins|{{#expr:({{GEPT|Raw shark|23760}} / 40) round 0}}}}
+|-
+| 99
+| 56,000
+| 25,000 || 27,000
+| 625 || 675
+| {{Coins|{{#expr:({{GEPT|Raw shark|25000}} / 40) round 0}}}} || {{Coins|{{#expr:({{GEPT|Raw shark|27000}} / 40) round 0}}}}
+|}
+
+===Levels 82–99: Anglerfish===
+{{Main|Raw anglerfish}}
+At level 82 Fishing, you can start catching [[anglerfish]] in Port Piscarilius. In order to catch anglerfish, [[sandworms]] and a [[fishing rod]] are required. Sandworms can be purchased from [[Tynan's Fishing Supplies]] nearby or the [[Grand Exchange]].
+
+Players can gain around 15,000 experience per hour at level 82, and 23,000 experience per hour at level 90. If [[diabolic worms]] are used this improves to around 30,000 experience per hour at level 82, and 39,000 experience per hour at level 99.
+
+* Starting experience - 2,421,087
+* Experience needed - 10,613,344
+* Anglerfish needed - 88,445
+* Profit made (82-99): {{Coins|{{GEPT|Raw anglerfish|88445}}}} 
+* If cooked: {{Coins|{{GEPT|anglerfish|88445}}}}
+
+===Levels 85–99: Dark crabs===
+{{Inventory|align=right
+|Dark fishing bait\500 |Lobster pot |Coins 10000\25000 |Blighted super restore(4)
+|Saradomin brew(4) |Saradomin brew(4) |Saradomin brew(4) |Blighted super restore(4)
+| | | | 
+| | | | 
+| | | | 
+| | | | 
+| | | | 
+}}
+Catching [[Raw dark crab|dark crab]]s inside the [[Resource Area]] becomes a viable low-effort option after completing the [[elite Wilderness Diary]]. The diary reward increases the catch rate for dark crabs significantly and provides the player free access to the Resource Area. The fishing spots inside the Resource Area also never move, which makes this method a very low-effort option. However, as the Resource Area is located in deep [[Wilderness]], the player will encounter player killers.
+
+The fish can be noted at [[Piles]] for 50 coins each. It is advised to bank the fish in Edgeville every so often to reduce the risk. To have a good chance of escaping player killers, wear cheap defensive gear while 3- or 4-iteming expensive armour pieces, and bring a few [[Saradomin brew]]s food along with super restores. Players can optionally bring a [[lockpick]] and escape using the nearby [[magic axe hut]]. Equipping an [[Ring of wealth (i)|imbued ring of wealth]] increases the chance of obtaining [[clue bottle]]s. If the fish barrel is a protected item on death the dark crabs inside the fish barrel are retained upon death to a player killer.
+
+Players who do not care about profit can simply drop the fish and risk nothing. Having spare [[Wilderness sword 4|Wilderness swords]] and the Edgeville respawn is recommended if doing this, as the player can expect to eventually die to a player killer. 
+
+Players can gain around 40,000 experience per hour.
+
+* Starting experience - 3,258,594
+* Experience needed - 9,775,837
+* Dark crabs needed - 75,199
+* Profit made (85-99): {{Coins|{{GEPT|Raw dark crab|75199}}}}
+
+===Levels 87–99: Sacred eel===
+{{Main|Sacred eel}}
+At level 87 and after partially completing [[Regicide]], catching [[sacred eel]]s at [[Zul-Andra]] becomes a profitable low-effort alternative to the faster methods. Sacred eels are caught with a [[fishing rod]] and [[fishing bait]]. Dissect the eels with a [[knife]] to extract [[Zulrah's scales]]. Doing so requires at least level 72 [[Cooking]]. The Zulrah's scales obtained, and Cooking experience gained, scale with your Cooking level.
+
+Experience and profit rates are shown in the table below. The expected profit rates assume not wearing a Rada's blessing.
+
+{|class="wikitable align-center-1" style="text-align:right;"
+! rowspan="2" | {{SCP|Fishing}} level
+! rowspan="2" | {{SCP|Fishing}} XP/h
+! colspan="2" | {{SCP|Cooking|72–79}}
+! colspan="2" | {{SCP|Cooking|80–87}}
+! colspan="2" | {{SCP|Cooking|88–95}}
+! colspan="2" | {{SCP|Cooking|96–99}}
+|-
+!{{SCP|Cooking}} XP/h
+!GP/h
+!{{SCP|Cooking}} XP/h
+!GP/h
+!{{SCP|Cooking}} XP/h
+!GP/h
+!{{SCP|Cooking}} XP/h
+!GP/h
+|-
+| 87
+| 20,000
+| 21,300
+| {{Coins|{{#expr:({{GEPT|Zulrah's scales}}*4-{{GEP|Fishing bait}})*190.48 round 0}}}} 
+| 21,900
+| {{Coins|{{#expr:({{GEPT|Zulrah's scales}}*5-{{GEP|Fishing bait}})*190.48 round 0}}}}
+| 22,500
+| {{Coins|{{#expr:({{GEPT|Zulrah's scales}}*6-{{GEP|Fishing bait}})*190.48 round 0}}}}
+| 23,000
+| {{Coins|{{#expr:({{GEPT|Zulrah's scales}}*7-{{GEP|Fishing bait}})*190.48 round 0}}}} 
+|-
+| 99
+| 23,000
+| 24,500
+| {{Coins|{{#expr:({{GEPT|Zulrah's scales}}*4-{{GEP|Fishing bait}})*219.05 round 0}}}} 
+| 25,200
+| {{Coins|{{#expr:({{GEPT|Zulrah's scales}}*5-{{GEP|Fishing bait}})*219.05 round 0}}}}
+| 25,800
+| {{Coins|{{#expr:({{GEPT|Zulrah's scales}}*6-{{GEP|Fishing bait}})*219.05 round 0}}}}
+| 26,500
+| {{Coins|{{#expr:({{GEPT|Zulrah's scales}}*7-{{GEP|Fishing bait}})*219.05 round 0}}}} 
+|}
+
+==Fish==
+{{:Fish}}
+
+==Quests for Fishing experience==
+{{Main|Quest experience rewards}}
+{| class="wikitable sortable lighttable qc-active" style="text-align:center;"
+!Quest
+!Experience<br/>reward
+!data-sort-type="number"|Fishing<br/>requirement
+!Other requirements
+|-
+|[[Recipe for Disaster]] - [[Recipe for Disaster/Freeing Pirate Pete|Freeing Pirate Pete]]||1,000||-||{{SCP|Cooking|31}}
+|-
+|[[Fishing Contest]]||2,437||{{SCP|Fishing|10}}||-
+|-
+|[[Heroes' Quest]]||2,725||{{SCP|Fishing|53}}||{{SCP|Quest|55}}, {{SCP|Cooking|53}}, {{SCP|Herblore|25}}, {{SCP|Mining|50}}
+|-
+|[[The Fremennik Trials]]||2,812.4||-||-
+|-
+|[[Perilous Moons]]||5,000||{{SCP|Fishing|20}}||{{SCP|Construction|10}}, {{SCP|Hunter|20}}, {{SCP|Runecraft|20}}, {{SCP|Slayer|48}}
+|-
+|[[Tai Bwo Wannai Trio]]||5,000||{{SCP|Fishing|5}}||{{SCP|Agility|15}}, {{SCP|Cooking|30}}
+|-
+|[[Rum Deal]]||7,000||{{SCP|Fishing|50}}||{{SCP|Crafting|42}}, {{SCP|Farming|40}}, {{SCP|Prayer|47}}, {{SCP|Slayer|42}}
+|-
+|[[Sea Slug]]||7,175||-||{{SCP|Firemaking|30}}
+|-
+|[[Land of the Goblins]]
+|8,000
+|{{SCP|Fishing|40|sort=y}} 
+|{{SCP|Agility|38}}, {{SCP|Thieving|45}}, {{SCP|Herblore|48}}
+|-
+|[[Swan Song]]||50,000||{{SCP|Fishing|62}}||{{SCP|Quest|100}}, {{SCP|Magic|66}}, {{SCP|Cooking|62}}, {{SCP|Smithing|45}}, {{SCP|Firemaking|42}}, {{SCP|Crafting|40}}
+|-
+!Total
+!91,149.4 
+! colspan="2" |
+|}
+
+{{Training guides}}
+[[Category:Guides]]
+[[Category:Fishing]]
+[[Category:Members]]

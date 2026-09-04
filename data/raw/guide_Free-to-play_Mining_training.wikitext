@@ -1,0 +1,157 @@
+{{External|rs|rsc=Mining training}}
+{{See also|Pay-to-play Mining training}}
+This [[Skill training guides|guide]] outlines the best methods for training the [[Mining]] [[skill]] in [[free-to-play]]. Even though mining [[runite ore]] with 85 Mining is one of the fastest free-to-play money making methods, profit from lower level ores is very low so it is more efficient to drop mined ores when training and use the saved time for other money making methods.
+
+==Pickaxes==
+[[Pickaxe]]s are required to train [[Mining]], ranging from [[bronze pickaxe|bronze]] to [[rune pickaxe|rune]]. Each tier up decreases the [[tick]] interval between rolls to mine an [[ore]] and thus it is recommended to always use the highest tier pickaxe available. If the [[Attack]] level requirement is met, save an inventory space by equipping the pickaxe.
+{|class="wikitable align-center-1 align-left-2" style="text-align: right;"
+! rowspan="2" colspan="2" |Pickaxe
+! colspan="2" |Levels
+! rowspan="2" |[[Grand Exchange|GE]] Price
+! rowspan="2" |Weight
+! rowspan="2" |Mining rate<br/>(in [[tick]]s)
+|-
+!{{SCP|Mining}}
+!{{SCP|Attack}}
+|-
+|{{plinkt|Bronze pickaxe}}||1||1||{{Coins|{{GEP|Bronze pickaxe}}}}||2.267&nbsp;kg||8
+|-
+|{{plinkt|Iron pickaxe}}||1||1||{{Coins|{{GEP|Iron pickaxe}}}}||2.267&nbsp;kg||7
+|-
+|{{plinkt|Steel pickaxe}}||6||5||{{Coins|{{GEP|Steel pickaxe}}}}||2.267&nbsp;kg||6
+|-
+|{{plinkt|Black pickaxe}}||11||10||{{Coins|{{GEP|Black pickaxe}}}}||0.010&nbsp;kg||5
+|-
+|{{plinkt|Mithril pickaxe}}||21||20||{{Coins|{{GEP|Mithril pickaxe}}}}||1.814&nbsp;kg||5
+|-
+|{{plinkt|Adamant pickaxe}}||31||30||{{Coins|{{GEP|Adamant pickaxe}}}}||2.721&nbsp;kg||4
+|-
+|{{plinkt|Rune pickaxe}}||41||40||{{Coins|{{GEP|Rune pickaxe}}}}||2.267&nbsp;kg||3
+|}
+
+==Ores==
+{| class="wikitable align-center-1 align-right-3 align-right-4"
+!rowspan="2" colspan="2"|[[Ore]]!!colspan="2"|{{SCP|Mining|link=yes}}
+|-
+!Level!!Exp
+|-
+|{{plinkt|Rune essence}}||1||5.0
+|-
+|{{plinkt|Clay}}||1||5.0
+|-
+|{{plinkt|Copper ore}}||1||17.5
+|-
+|{{plinkt|Tin ore}}||1||17.5
+|-
+|{{plinkt|Blurite ore}}||10||17.5
+|-
+|{{plinkt|Barronite shards}}||14||16.0
+|-
+|{{plinkt|Barronite deposit}}||14||32.0
+|-
+|{{plinkt|Iron ore}}||15||35.0
+|-
+|{{plinkt|Silver ore}}||20||40.0
+|-
+|{{plinkt|Coal}}||30||50.0
+|-
+|{{plinkt|Gold ore}}||40||65.0
+|-
+|{{plinkt|Mithril ore}}||55||80.0
+|-
+|{{plinkt|Adamantite ore}}||70||95.0
+|-
+|{{plinkt|Runite ore}}||85||125.0
+|}
+
+==Levels 1–99==
+===Level 1–10: Doric's Quest===
+It is recommended to complete [[Doric's Quest]] early on for the reward of 1,300 [[Mining]] [[experience]], enough to level Mining from 1 to 10. It can be completed immediately by already having the required materials, 6 [[clay]], 4 [[copper ore]], and 2 [[iron ore]].
+
+While the clay and copper ore can be mined easily at level 1, the iron ore requires level 15 to mine. However, it can be obtained easily from the [[Grand Exchange]] or as an uncommon drop from [[Dwarf|dwarves]] which can be found near the [[Dwarven Mines]] to the east of Doric's house.
+
+===Levels 1/10–15: Copper ore/Tin ore===
+{{plinkp|Copper ore}}{{plinkp|Tin ore}} Mine [[copper rocks|copper]] and [[tin rocks]] to 15 Mining for 17.5 each. If banking the ores for [[Smithing]], mine at the [[South-east Varrock mine]] and bank in the eastern [[Varrock]] [[bank]], otherwise the safest and easiest location are [[East Lumbridge Swamp mine]] or the northern [[Dwarven Mines]]
+
+* Starting [[experience]]: 0
+* Experience needed for 15 from 0: 2,411
+* [[Copper ore]] or [[tin ore]] required for 15 from 0: 138 (2,415 experience)
+* Starting [[experience]] at 10: 1,300
+* Experience needed for 15 from 10: 1,111
+* [[Copper ore]] or [[tin ore]] required for 15 from 10: 64 (1,120 experience)
+
+===Levels 15–99: Iron ore===
+{{plinkp|Iron ore}} The fastest experience from this point onward is from [[iron rocks]] for 35 experience each. Maximise experience by dropping ores and from mining at locations where one tile is surrounded by three iron rocks for zero travel time while waiting for respawns. At 41 Mining with a [[rune pickaxe]] all three ores can be mined and the player can face back towards the first just before it respawns, allowing for non-stop mining. The only location in free-to-play with one tile surrounded by three iron ores is [[Al Kharid Mine]], which has aggressive level 14 [[scorpion]]s.
+
+At 41 Mining, the maximum experience rate is around 50,000 experience per hour. At 61 Mining, the chance of successfully harvesting the iron ore becomes 100% - as iron rocks take 5.4 seconds (9 ticks) to respawn, this means that three iron ores can be mined every 12 ticks (3 tick mining time and 9 tick respawn time). The maximum experience rate is 52,500 experience per hour. Using [[Tick manipulation]] with food such as cakes the experience rate can increase to a maximum of 68,000 experience per hour<ref>[https://www.youtube.com/watch?v=RGoVX1C-DU4] 3t cake mining example (65k+ xp/hr) (Youtube)</ref> by using an alt or a runner to replenish the food as you run out.
+
+[[Tick manipulation#4-tick Mining|4-tick mining]] can also be performed by using leather and a needle with thread in the inventory. This allows continuously mining 3 iron rocks every 12 ticks in other locations, such as the [[Citharede Abbey mine]], where 3 rocks are located so that each can be reached in 1-2 ticks from the previous in the cycle.
+
+* Starting experience: 2,420
+* Experience required: 13,032,020
+* [[Iron ore]] required: 372,344 (13,032,040 experience)
+* Banking profit: {{Coins|{{GEP|Iron ore|372344}}}}
+
+==Money making methods==
+===Levels 30–99: Superheat Item===
+{{plinkp|Superheat Item}} [[Superheat Item]] can be used at 43 [[Magic]] and the appropriate [[Smithing]] level to smelt a bar without a [[furnace]]. This reduces the need to [[bank]] when Mining, especially for [[coal]]. Equip a [[staff of fire]], and keep [[Nature rune]]s and a [[pickaxe]] in the inventory for 26 open spaces. If purchasing the ore, bring 26 minus the amount of coal required to superheat the bar, otherwise, mine them as you mine coal. This will allow mining of a significant amount of coal between trips to the bank while producing bars:
+
+{| class="wikitable"
+|-
+!colspan=2|Bar
+!# of bars<br>per trip
+!# of coal mined<br/>per trip
+!Profit per bar{{Refn|Profit calculated assuming the ore and runes are purchased.|name=profit}}
+!Profit per trip{{NamedRef|name=profit}}
+!Profit to 99{{NamedRef|name=profit}}
+|-
+|{{plinkt|Steel bar}}||24||48||{{Coins|{{GEP|Steel bar}} - {{GEP|Iron ore}} - {{GEP|Nature rune}}}}||{{Coins|{{GEP|Steel bar|24}} - {{GEP|Iron ore|24}} - {{GEP|Nature rune|24}}}}||{{Coins|{{GEP|Steel bar|130211}} - {{GEP|Iron ore|130211}} - {{GEP|Nature rune|130211}}}}
+|-
+|{{plinkt|Mithril bar}}||22||88||{{Coins|{{GEP|Mithril bar}} - {{GEP|Mithril ore}} - {{GEP|Nature rune}}}}||{{Coins|{{GEP|Mithril bar|22}} - {{GEP|Mithril ore|22}} - {{GEP|Nature rune|22}}}}||{{Coins|{{GEP|Mithril bar|65106}} - {{GEP|Mithril ore|65106}} - {{GEP|Nature rune|65106}}}}
+|-
+|{{plinkt|Adamantite bar}}||20||120||{{Coins|{{GEP|Adamantite bar}} - {{GEP|Adamantite ore}} - {{GEP|Nature rune}}}}||{{Coins|{{GEP|Adamantite bar|20}} - {{GEP|Adamantite ore|20}} - {{GEP|Nature rune|20}}}}||{{Coins|{{GEP|Adamantite bar|43404}} - {{GEP|Adamantite ore|43404}} - {{GEP|Nature rune|43404}}}}
+|-
+|{{plinkt|Runite bar}}||18||144||{{Coins|{{GEP|Runite bar}} - {{GEP|Runite ore}} - {{GEP|Nature rune}}}}||{{Coins|{{GEP|Runite bar|18}} - {{GEP|Runite ore|18}} - {{GEP|Nature rune|18}}}}||{{Coins|{{GEP|Runite bar|32553}} - {{GEP|Runite ore|32553}} - {{GEP|Nature rune|32553}}}}
+|}With an  [[Skull sceptre (i)|imbued Skull sceptre]], the [[Barbarian Village mine]] has the [[closest]] [[Coal rocks#Locations|coal rocks]], and banking can be done with the [[Falador teleport]]. With a high [[Mining]] level, hopping worlds or using a different location may be required due to mining speed and coal respawn time. Otherwise, the time save is significant.
+
+Alternative locations with an abundance of coal included: the [[Mining Guild]], the [[West Lumbridge Swamp mine]], the [[South-west Wilderness mine]], and the [[Dwarven mine]] for additional mining locations. With this method, some mines located farther away than others from a bank become more viable due to bank travel taking up proportionally less time.
+
+===Levels 70–85: Adamantite ore===
+{{plinkp|Adamantite ore}} Mining [[adamantite ore]] can be a good free-to-play money-making method. The best place to mine adamantite is within the [[Mining Guild]], requiring 70 Mining. It has two rocks and ores can be banked at the east Falador bank. Hopping worlds is faster than waiting for them to respawn. Mining adamantite rocks give 95 experience each. See [[Money making guide/Mining adamantite ore (free-to-play)]] for more information.
+
+* Starting experience: 737,627
+* Experience required: 1,935,487
+* [[Adamantite ore]] required: 20,374 (1,935,530 experience)
+* Profit: {{Coins|{{GEP|Adamantite ore|20374}}}}
+
+===Levels 85–99: Runite ore===
+{{plinkp|Runite ore}} Runite mining is highly profitable, but '''extremely''' slow and dangerous because the only [[runite rocks]] are in the [[Wilderness]] at the [[Lava Maze runite mine]]. Like adamantite, it is faster and safer to hop worlds instead of waiting for ores to respawn. Mining runite rocks give 125 experience each. See [[Money making guide/Mining runite ore (free-to-play)]] for more information.
+
+* Starting experience: 3,258,610
+* Experience required: 9,775,821
+* [[Runite ore]] required: 78,207 (9,775,875 experience)
+* Profit: {{Coins|{{GEP|Runite ore|78207}}}}
+
+==Other methods==
+===Levels 1/10–14/15: Rune essence===
+{{plinkp|Rune essence}} With the completion or progression of [[Rune Mysteries]], players can mine [[rune essence]]s at the [[rune essence mine]] to create [[rune]]s for [[Runecraft]] training later or drop them for faster Mining rates. As for training Mining, this is a slow training method with each rune essence giving 5 experience (a total of 140 Mining experience per inventory) but it's the only AFK-able training method until the player can access the [[Ruins of Camdozaal]] after completing [[Below Ice Mountain]].
+
+* Starting [[experience]]: 0
+* Experience needed for 15 from 0: 2,411
+* [[Rune essence]] required for 15 from 0: 483 (2,415 experience)
+* Starting [[experience]] at 10: 1,300
+* Experience needed for 15 from 10: 953 or 1,111
+* [[Rune essence]] required for 15 from 10: 223 (1,115 experience)
+
+===Levels 10–99: Crashed stars===
+[[Crashed Star]]s are part of the [[Shooting Stars]] [[Distraction and Diversion]]. Mining them yields low experience per hour, but is very AFK, as you can mine for seven minutes before having to click again when it degrades a tier. Expect approximately 8,000-13,000 experience per hour at level 70. In [[free-to-play]] it is much more difficult to find stars, so it is recommended to join a group that shares locations, such as the Shooting Stars chat channel on the game's chat interface. There are also several [[RuneLite]] plugins that can help F2P players and members alike in finding stars. Otherwise, for F2P players, world hopping at locations is required to find stars which can be difficult and take a lot of time.
+
+===Levels 14–99: Barronite shards and deposits===
+{{plinkp|Barronite shards}}{{plinkp|Barronite deposit}} Completing the free-to-play [[Below Ice Mountain]] [[quest]] rewards the player with access to the [[Ruins of Camdozaal]] where you can mine [[barronite shards]] from [[barronite rocks]]. Mining barronite shards gives 16 experience each and mining [[barronite deposit]]s gives 32 experience each, making this a slower training method than mining [[iron ore]] but it is very AFK-able compared to [[iron ore]], making barronites a good training alternative to iron ore and an improvement over mining rune essence. Barronite shards can be used to purchase rewards from [[Ramarno]] and while the barronite deposits can be used for Smithing, dropping them is recommended if solely training Mining.
+
+Purchasing the permanent [[Charm of Mining]] buff and the one-hour [[Charm of Boost]] from [[Ramarno's Shard Exchange]] yields higher experience rates.
+
+Observed experience rates at level 75 Mining with both buffs active is around 18,000–20,000 experience per hour.{{Training guides}}
+{{Free-to-play guides}}{{reflist}}
+[[Category:Free-to-play]]
+[[Category:Mining]]
