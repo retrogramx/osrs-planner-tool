@@ -52,7 +52,14 @@
       "Bash(git pull *)",
       "Bash(grep -nA2 \"Legal src\" /Users/adrian/Documents/workspace/github.com/retrogramx/osrs-planner-tool/research/kg-schema-v1.md)",
       "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); [print\\('===',k,'===\\\\n',d[k]\\) for k in ['ardougne:easy','ardougne:medium','ardougne:hard','ardougne:elite']]\")",
-      "Bash(./venv/bin/python -)"
+      "Bash(./venv/bin/python -)",
+      "Bash(./venv/bin/python -c ' *)",
+      "Bash(./venv/bin/python -c \"import json; print\\(' ', len\\([n['id'] for n in json.load\\(open\\('kg/nodes.json'\\)\\) if n['id'].startswith\\('region:'\\)]\\), 'region nodes'\\)\")",
+      "Bash(./venv/bin/python -c \"import json; n=json.load\\(open\\('kg/nodes.json'\\)\\); from collections import Counter; c=Counter\\(x.get\\('kind'\\) for x in \\(n if isinstance\\(n,list\\) else n.get\\('nodes',[]\\)\\)\\); [print\\(f'  {k}: {v}'\\) for k,v in sorted\\(c.items\\(\\), key=lambda x:-x[1]\\)]\")",
+      "Bash(./venv/bin/python -c \"import json; e=json.load\\(open\\('kg/edges.json'\\)\\); es=e if isinstance\\(e,list\\) else e.get\\('edges',[]\\); print\\(' ', len\\(es\\)\\); from collections import Counter; c=Counter\\(x.get\\('type'\\) for x in es\\); [print\\(f'  {k}: {v}'\\) for k,v in sorted\\(c.items\\(\\), key=lambda x:-x[1]\\)]\")",
+      "Bash(command -v gh)",
+      "Bash(python3 -c \"import json;d=json.load\\(open\\('data/raw/recipe_facility_bucket.json'\\)\\);print\\('prov:',json.dumps\\(d['_provenance']\\)\\);print\\('rows:',len\\(d['bucket']\\)\\)\")",
+      "Bash(python3 -c \"import json;d=json.load\\(open\\('data/raw/wiki_facility_infoboxes.json'\\)\\);print\\('infobox count:',len\\(d['infoboxes']\\)\\)\")"
     ]
   }
 }
